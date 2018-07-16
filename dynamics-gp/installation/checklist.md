@@ -4,7 +4,7 @@ description: Microsoft Dynamics GP is a business management solution for small a
 documentationcenter: ''
 author: edupont04
 
-ms.product: dynamicsgp
+ms.product: dynamics-gp
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -22,12 +22,12 @@ reference to where you can find more detailed information.
 
 This chapter contains the following sections:
 
--   [Microsoft Dynamics GP Checklist](#_Microsoft_Dynamics_GP_1)
--   [Reviewing the Readme file](#_Reviewing_the_Readme)
--   [Troubleshooting resources](#_Troubleshooting_resources)
--   [Before you call support](#_Before_you_call)
+- [Microsoft Dynamics GP Checklist](#_Microsoft_Dynamics_GP_1)
+- [Reviewing the Readme file](#_Reviewing_the_Readme)
+- [Troubleshooting resources](#_Troubleshooting_resources)
+- [Before you call support](#_Before_you_call)
 
-### Microsoft Dynamics GP checklist
+## Microsoft Dynamics GP checklist
 
 Use this checklist as your guide to installing and setting up Microsoft Dynamics
 GP.
@@ -92,30 +92,30 @@ SQL-related error messages appear as DBMS errors in Microsoft Dynamics GP. Alway
 
 If you are experiencing a problem when installing Microsoft Dynamics GP, have the answers ready to the following questions to help your support specialist narrow down the source of the problem you’ve experiencing.
 
--   What is the exact error message?
+- What is the exact error message?
 
--   When did the error first occur?
+- When did the error first occur?
 
--   What task were you attempting to perform at the time the error message was displayed?
+- What task were you attempting to perform at the time the error message was displayed?
 
--   Has the task been completed successfully in the past?
+- Has the task been completed successfully in the past?
 
--   What is the name of the window you are you working in?
+- What is the name of the window you are you working in?
 
--   What have you done so far to attempt to fix the problem?
+- What have you done so far to attempt to fix the problem?
 
--   If you are using more than one company, does the problem occur in another company?
+- If you are using more than one company, does the problem occur in another company?
 
--   Does the problem occur on another workstation?
+- Does the problem occur on another workstation?
 
--   What versions of software are you using?
+- What versions of software are you using?
 
 Verify the version numbers for Microsoft Dynamics GP, your Microsoft SQL Server, and Microsoft Windows. Also note updates applied to each product.
 
--   Are you using an integrating product with Microsoft Dynamics GP?
+- Are you using an integrating product with Microsoft Dynamics GP?
 
--   Does the problem occur for the sa or system administrator user?
+- Does the problem occur for the sa or system administrator user?
 
--   Does the problem occur at the database server?
+- Does the problem occur at the database server?
 
 If you use Windows Server 2008 Terminal Server, or Remote Desktop Services, does the same issue happen at the Terminal Server?

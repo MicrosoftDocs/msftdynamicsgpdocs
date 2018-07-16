@@ -1,0 +1,16 @@
+- name: Dynamics 365
+  tocHref: /dynamics365/
+  topicHref: /dynamics365/index
+  items:
+  - name: Dynamics GP
+    tocHref: /dynamics-gp/
+    topicHref: /dynamics-gp/index
+    items:
+    - name: Developer and IT-pro
+      tocHref: /dynamics-gp/dev-itpro
+      topicHref: /dynamics-gp/dev-itpro/index
+      items:
+      - name: Installation
+        tocHref: /dynamics-gp/installation/
+        topicHref: /dynamics-gp/installation/checklist
+
