@@ -64,9 +64,9 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 
 | Option                                                              | What happens                                                                                                             |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![](media/image2.png) Run from My Computer                          | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |
-| ![](media/image2.png) Run all from My Computer                      | Will install the feature and all of its sub–features.                                                                    |
-| ![component icon](media/installed-component.png "Component icon") Not Available | Will not install the selected feature or sub–                                                                            |  
+| ![Component icon](media/installed-component.png "Component icon") Run from My Computer                          | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |
+| ![Component icon](media/installed-component.png "Component icon") Run all from My Computer                      | Will install the feature and all of its sub–features.                                                                    |
+| ![component icon](media/not-installed-component.png "Component icon") Not Available | Will not install the selected feature or sub–                                                                            |  
 
 If you’ve installed a feature in a previous release, be sure that you’ve selected to install that feature in the Select Feature window. See [Microsoft Dynamics GP features](#_Microsoft_Dynamics_GP_1) on page 47 for a list of Microsoft Dynamics GP features. You also can install additional features. You can review the DYNAMICS.SET file for a list of features you have installed.  
 
