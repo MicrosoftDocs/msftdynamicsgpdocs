@@ -1,3 +1,17 @@
+---
+title: "Installation landing page"
+description: "Prepare to install Dynamics GP."
+keywords: ""
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 4ee708d5-030c-475c-aab2-1504295db329
+ms.reviewer: edupont
+---
 |                 |
 |-----------------|
 | 1.  Preparation |

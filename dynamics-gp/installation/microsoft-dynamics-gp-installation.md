@@ -1,3 +1,17 @@
+---
+title: "Installation landing page"
+description: "Get an overview of the steps for installing Dynamics GP."
+keywords: "install"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 3903a892-f009-413f-9504-6696b41f0de6
+ms.reviewer: edupont
+---
 |                                        |
 |----------------------------------------|
 | 1.  Microsoft Dynamics GP Installation |

@@ -1,3 +1,17 @@
+---
+title: "Installation package"
+description: "Prepare the Dynamics GP installation by building an installation package."
+keywords: "install"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 410091e2-9125-45b8-b1fc-69577eab61d9
+ms.reviewer: edupont
+---
 ### 
 
 # Creating an installation package
@@ -72,9 +86,9 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 
 | Option                                                                         | What happens                                                                                                             |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![Chapter 11 Creating an installation package image1](media/Chapter-11-Creating-an-installation-package-image1.PNG) Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![Chapter 11 Creating an installation package image1](media/Chapter-11-Creating-an-installation-package-image1.PNG) Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![Chapter 11 Creating an installation package image2](media/Chapter-11-Creating-an-installation-package-image2.png) Not available            | Will not install the selected feature or sub–features.                                                                   |  
+| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
+| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
 
 We recommend that you install each Microsoft Dynamics GP feature and additional component that you are going to register on all client computers.
 
@@ -94,7 +108,7 @@ Click Next.
 
 11. Specify the location of the OLE Notes files and Letter Wizard files. Click Next.
 
-![Chapter 11 Creating an installation package image3](media/Chapter-11-Creating-an-installation-package-image3.png)Microsoft Dynamics GP uses the Document Attachment Management functionality instead of OLE objects.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")Microsoft Dynamics GP uses the Document Attachment Management functionality instead of OLE objects.  
 
 12. In the Install Program window, click Install.
 

@@ -1,3 +1,17 @@
+---
+title: "Start using Dynamics GP"
+description: "Get up and running with Dynamics GP."
+keywords: "install"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: ec79456b-f8e6-402c-acfa-daaca48c059b
+ms.reviewer: edupont
+---
 <span id="_Toc499731580" class="anchor"></span>
 
 # After installing Microsoft Dynamics GP
@@ -23,13 +37,13 @@ To log in to Microsoft Dynamics GP:
 1. Choose Start &gt; Programs &gt; Microsoft Dynamics &gt; GP 2018 &gt; GP
 The Welcome to Microsoft Dynamics GP window opens.
 
-![Chapter 10 After the installation image1](media/Chapter-10-After-the-installation-image1.png)  
+![login screen using the sa user](media/install-dynamics-gp-setup-01.png "Login screen")  
 
 2. Enter your user ID and password. Passwords are case-sensitive.
 
 3. Click OK. The Company Login window appears.
 
-![Chapter 10 After the installation image2](media/Chapter-10-After-the-installation-image2.png)  
+![screen to choose the company to log into](media/install-dynamics-gp-setup-02.png "Login screen")  
 
 4. Select a company and click OK. The Microsoft Dynamics GP main menu appears.
 

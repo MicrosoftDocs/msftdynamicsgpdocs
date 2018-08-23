@@ -1,8 +1,22 @@
+---
+title: "Requirements for accounts"
+description: "Set up maximum values for the accounts in your Dynamics GP application."
+keywords: ""
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: d8f8ba40-5a92-47ee-9e2d-4a052c3d7acf
+ms.reviewer: edupont
+---
 # Account framework
 
 Use the information in this chapter to plan your account framework for your company. A framework is a set of maximum values, such as maximum segment lengths that each of your company’s account formats must fit within. The account framework is very difficult to change later after it’s set up.
 
-![Chapter 5 Account Framework image1](media/Chapter-5-Account-Framework-image1.png)Note that the account framework you enter in the Microsoft Dynamics GP Utilities will be used for the account format in all companies you’re planning to set up.  
+![displays a triangle with an exclamation point to indicate warning](media/warning.png "Warning symbol")Note that the account framework you enter in the Microsoft Dynamics GP Utilities will be used for the account format in all companies you’re planning to set up.  
 
 ### 
 
@@ -64,7 +78,7 @@ If you decide not to use the default framework, review Planning your account fra
 
 When planning an account framework, think about the account format you’ve used with your previous accounting system and consider future expansions and the account format for additional companies you may add to your system later. Plan the maximum number of segments you’ll use in any company, and the maximum length of each segment.
 
-![Chapter 5 Account Framework image1](media/Chapter-5-Account-Framework-image1.png)It’s important to consider what your current and future needs are for the framework; after you’ve entered the framework, it’s unlikely that you’ll be able to change it. If you find that you need to change your account framework, contact your reseller or Microsoft Dynamics GP Technical Support.  
+![displays a triangle with an exclamation point to indicate warning](media/warning.png "Warning symbol")It’s important to consider what your current and future needs are for the framework; after you’ve entered the framework, it’s unlikely that you’ll be able to change it. If you find that you need to change your account framework, contact your reseller or Microsoft Dynamics GP Technical Support.  
 
 To use one of the default charts of accounts provided with Microsoft Dynamics GP, set up the account framework with maximums that are at least the size listed below. To preview the default charts of accounts for various business and industry types, review the Default Charts of Accounts for Microsoft Dynamics GP article (<http://go.microsoft.com/fwlink/?LinkId=89042>).
 

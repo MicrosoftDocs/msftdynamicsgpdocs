@@ -1,3 +1,17 @@
+---
+title: "Configure SQL Server"
+description: "Set up SQL Server so that you can install Dynamics GP."
+keywords: ""
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: a292895a-a538-4ae6-a3d2-cd8bb93de39a
+ms.reviewer: edupont
+---
 # Microsoft SQL Server configuration
 
 ### 
@@ -44,7 +58,7 @@ The code page for character data is defined by the Windows locale selected when 
 
 It is important to select the correct collation for Microsoft Dynamics GP when you’re installing SQL Server. Using SQL Server collations that include Binary (sort order 50) or Dictionary Order, Case-Insensitive (sort order 52) sorting is required for Microsoft Dynamics GP. To change these settings later, you must reinstall SQL Server and Microsoft Dynamics GP.
 
-![Chapter 4 MS SQL Srvr Configuration image1](media/Chapter-4-MS-SQL-Srvr-Configuration-image1.png)You should check the compatibility of all the products you have that will use SQL Server before deciding on the collation option.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")You should check the compatibility of all the products you have that will use SQL Server before deciding on the collation option.  
 
 ## Understanding sorting options
 
@@ -67,7 +81,7 @@ The following table shows the differences between Dictionary Order, Case- Insens
 
 We recommend that you follow the instructions in this section if you have not yet installed Microsoft SQL Server 2012. For information about upgrading SQL Server, see the SQL Server installation documentation. (In the window that appears when you insert the SQL Server DVD, select Browse Setup/Upgrade Help.)
 
-![Chapter 4 MS SQL Srvr Configuration image1](media/Chapter-4-MS-SQL-Srvr-Configuration-image1.png)With SQL Server 2012, you can have multiple instances of SQL Server on the same physical server. We recommend that you have a dedicated a server. See your SQL Server 2012 documentation for more information about multiple instances.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")With SQL Server 2012, you can have multiple instances of SQL Server on the same physical server. We recommend that you have a dedicated a server. See your SQL Server 2012 documentation for more information about multiple instances.  
 
 To install Microsoft SQL Server 2012:
 
@@ -97,7 +111,7 @@ To install Microsoft SQL Server 2012:
 
 -   Management Tools – Basic
 
-![Chapter 4 MS SQL Srvr Configuration image1](media/Chapter-4-MS-SQL-Srvr-Configuration-image1.png)Select Reporting Services – Native or Reporting Services – SharePoint to use SQL Server Reporting Services reports, display SQL Server Reporting Services metrics on your home page in Microsoft Dynamics GP, and display SQL Server Reporting Services reports in Microsoft Dynamics Business Analyzer. If you have marked Reporting Services – SharePoint, be sure to mark Reporting Services Add-in for SharePoint Products as well. For more information about installing and setting up SQL Server Reporting Services for use with Microsoft Dynamics GP see the Documentation and resources for Microsoft Dynamics GP 2018 Web site (<https://go.microsoft.com/fwlink/?LinkId=249465>) for the most current documentation.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")Select Reporting Services – Native or Reporting Services – SharePoint to use SQL Server Reporting Services reports, display SQL Server Reporting Services metrics on your home page in Microsoft Dynamics GP, and display SQL Server Reporting Services reports in Microsoft Dynamics Business Analyzer. If you have marked Reporting Services – SharePoint, be sure to mark Reporting Services Add-in for SharePoint Products as well. For more information about installing and setting up SQL Server Reporting Services for use with Microsoft Dynamics GP see the Documentation and resources for Microsoft Dynamics GP 2018 Web site (<https://go.microsoft.com/fwlink/?LinkId=249465>) for the most current documentation.  
 
 Click Next.
 
@@ -121,15 +135,15 @@ For information about using instances of SQL Server, see your SQL Server documen
 
 14. In the Customize the SQL Server 2012 Database Engine Collation window, you can select Binary or Dictionary Order, Case-Insensitive as the sorting option. See Selecting a SQL Server collation on page 17 for more information about collation options.
 
-![Chapter 4 MS SQL Srvr Configuration image2](media/Chapter-4-MS-SQL-Srvr-Configuration-image2.png)You should check the compatibility of all the products, such as Business Portal for Microsoft Dynamics GP and Workflow, you have that will use SQL Server before deciding on the collation option.  
+![displays a triangle with an exclamation point to indicate warning](media/warning.png "Warning symbol")You should check the compatibility of all the products, such as Business Portal for Microsoft Dynamics GP and Workflow, you have that will use SQL Server before deciding on the collation option.  
 
 **Binary**   To use Binary sorting, use the Windows Collation designator and sort order option and make the following selections in the window.
 
-![Chapter 4 MS SQL Srvr Configuration image3](media/Chapter-4-MS-SQL-Srvr-Configuration-image3.png)  
+![screenshot of configuration of sql server database collation window with windows collation selected](media/sql-server-collation_01.png "SQL Server collation")  
 
 **Dictionary Order, Case-Insensitive**   To use Dictionary Order, Case- Insensitive sorting, choose SQL collation, used for backwards compatibility option and make the following selections in the window.
 
-![Chapter 4 MS SQL Srvr Configuration image4](media/Chapter-4-MS-SQL-Srvr-Configuration-image4.png)  
+![screenshot of configuration of sql server database collation window with sql collation selected](media/sql-server-collation_02.png "SQL Server collation")  
 
 Click OK after you make your selections, and then click Next.
 

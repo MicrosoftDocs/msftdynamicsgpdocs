@@ -1,3 +1,17 @@
+---
+title: "Prerequisites for Dynamics GP"
+description: "See the specifications of minimum hardware and software requirements to install and run Dynamics GP."
+keywords: "requirements"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: d8d8b73c-60f6-46f4-bb8c-436e94c01501
+ms.reviewer: edupont
+---
 # System requirements
 
 This chapter contains a list of the prerequisites for Microsoft Dynamics GP, as well as the disk space requirements for SQL Server.
@@ -117,7 +131,7 @@ Before you deploy Microsoft Dynamics GP Reporting Services reports, you must ins
 
 To deploy the SQL Server Reporting Services reports, you must modify the Report Server web.config file for the timeout execution and the maximum request length. If you don’t update the Report Server web.config file for the timeout execution, you might receive an error that states that the operation has timed out. If you don’t update the Report Server web.config file for the maximum request length, you will receive an error that the deployment has exceeded the maximum request length allowed by the target server.
 
-![Chapter 2 System Requirements image1](media/Chapter-2-System-Requirements-image1.png)You must be an administrator to modify the Report Server web.config file.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")You must be an administrator to modify the Report Server web.config file.  
 
 To modify the Report Server Web.config file:
 

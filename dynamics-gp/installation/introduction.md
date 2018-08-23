@@ -1,3 +1,17 @@
+---
+title: "Installation process overview"
+description: "Get an overview of the steps for installing Dynamics GP."
+keywords: "install"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 2d0c24d1-0423-4171-8423-c0c9c1a638cd
+ms.reviewer: edupont
+---
 # Introduction
 
 Use this manual to install and prepare Microsoft Dynamics GP for use. Review the introductory information about the resources available to you, then use the Microsoft Dynamics GP checklist on page 7 as your guide to installing Microsoft Dynamics GP.
@@ -32,8 +46,8 @@ This document uses the following symbols and conventions to make specific types 
 
 | Symbol                                                | Description                                                                                      |
 |-------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ![00_Installation Introduction image1](media/00_Installation-Introduction-image1.png) | The light bulb symbol indicates helpful tips, shortcuts and suggestions.                         |  
-| ![00_Installation Introduction image2](media/00_Installation-Introduction-image2.png) | The warning symbol indicates situations you should be especially aware of when completing tasks. |  
+| ![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol") | The light bulb symbol indicates helpful tips, shortcuts and suggestions.                         |  
+| ![displays a triangle with an exclamation point to indicate warning](media/warning.png "Warning symbol") | The warning symbol indicates situations you should be especially aware of when completing tasks. |  
 
 | Convention                                                                                               | Description                                                                                                                                                                                               |
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

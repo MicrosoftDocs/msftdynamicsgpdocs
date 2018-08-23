@@ -1,3 +1,17 @@
+---
+title: "Company setup"
+description: "Create a company in Dynamics GP manually."
+keywords: ""
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: ee700f07-5dd2-44a6-af03-3d2c9647744d
+ms.reviewer: edupont
+---
 <span id="_Toc499731577" class="anchor"></span>
 
 # Creating a company
@@ -49,7 +63,7 @@ To add a company using Microsoft Dynamics GP Utilities:
 
 2. In the Welcome to Microsoft Dynamics GP Utilities window, verify your server name, and enter a system administrator user ID and Password; then click Next.
 
-![Chapter 9 Creating a company image1](media/Chapter-9-Creating-a-company-image1.png)  
+![login screen to dynamics gp utilities](media/gp-utilities-2.png "Login screen")  
 
 3. In the Welcome to Microsoft Dynamics GP Utilities window, review the information and click Next.
 
@@ -65,15 +79,15 @@ To add a company using Microsoft Dynamics GP Utilities:
 
 -   Copy access from another company, except from the sample company, Fabrikam, Inc.
 
-![Chapter 9 Creating a company image2](media/Chapter-9-Creating-a-company-image2.png)  
+![screen for setting up a company](media/create-company-01.png "Company Setup")  
 
-![Chapter 9 Creating a company image3](media/Chapter-9-Creating-a-company-image3.png)If you choose to use wizards to migrate QuickBooks or Peachtree data and enter basic configuration information in step 10, the shipping methods and payment terms and the chart of accounts information you have loaded may change.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")If you choose to use wizards to migrate QuickBooks or Peachtree data and enter basic configuration information in step 10, the shipping methods and payment terms and the chart of accounts information you have loaded may change.  
 
 7. Click Next after entering and selecting company information.
 
 8. The Database Setup window appears. Enter the location where the data and log devices should be created. Click Next.
 
-![Chapter 9 Creating a company image4](media/Chapter-9-Creating-a-company-image4.png)  
+![database setup screen](media/create-company-02.png "Database setup screen")  
 
 9. The Very SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 
@@ -104,7 +118,7 @@ SharePoint Integrated mode location example.
 
 13. Click Next.
 
-![Chapter 9 Creating a company image3](media/Chapter-9-Creating-a-company-image3.png)If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 16. The Excel Reports Setup window appears if you marked to deploy Excel reports. Select the location to deploy the reports to.
 
@@ -127,7 +141,7 @@ SharePoint location example.
 
 17. Click Next.
 
-![Chapter 9 Creating a company image3](media/Chapter-9-Creating-a-company-image3.png)If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 18. The Verify SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 
@@ -143,7 +157,7 @@ The Business Intelligence Deployment Progress window appears. This window displa
 
 To use a tool to migrate or configure data, you must download and install the Rapid Implementation Tools for Microsoft Dynamics GP. If you haven’t installed the Rapid Implementation Tools, click the Download and install the wizards link.
 
-![Chapter 9 Creating a company image5](media/Chapter-9-Creating-a-company-image5.png)  
+![screen to specify when to set up the company with data](media/create-company-03.png "Company Setup Options")  
 
 20. Click Next. If you decided to configure your company later, the Additional Tasks window reappears. You can click Create a company to set up a second company, start Microsoft Dynamics GP, or Exit.
 

@@ -1,3 +1,17 @@
+---
+title: "Add or remove features"
+description: "Customize Dynamics GP by adding or removing functionality."
+keywords: "install"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 3f1d0bb8-4967-4a30-814b-b07c5ea58959
+ms.reviewer: edupont
+---
 ### 
 
 # Installing additional components
@@ -76,7 +90,7 @@ To add or remove additional features:
 
 -   Open the Control Panel &gt; Programs and Features or Uninstall a program Select Microsoft Dynamics GP 2018. Click Change to open the Program Maintenance window.
 
-![Chapter 8 Installing additional components image1](media/Chapter-8-Installing-additional-components-image1.png)  
+![login screen for service based architecture service](media/service-based-architecture-login.png "Login screen")  
 
 2. Click Add/Remove Features.
 
@@ -86,9 +100,9 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 
 | Option                                                                         | What happens                                                                                                             |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![Chapter 8 Installing additional components image2](media/Chapter-8-Installing-additional-components-image2.PNG) Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![Chapter 8 Installing additional components image2](media/Chapter-8-Installing-additional-components-image2.PNG) Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![Chapter 8 Installing additional components image3](media/Chapter-8-Installing-additional-components-image3.png) Not available            | Will not install the selected feature or sub–features.                                                                   |  
+| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
+| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
 
 After you have specified the feature or features, click Next.
 
@@ -100,7 +114,7 @@ After you have specified the feature or features, click Next.
 
 7. Start Microsoft Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
 
-![Chapter 8 Installing additional components image4](media/Chapter-8-Installing-additional-components-image4.png)To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
 8. The Welcome To Microsoft Dynamics GP Utilities window opens when you are logged into the server you selected. Read the message and click Next.
 

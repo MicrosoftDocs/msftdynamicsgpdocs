@@ -1,3 +1,17 @@
+---
+title: "Client installation"
+description: "Get Dynamics GP on the first computer and synchronize data with the server."
+keywords: "install"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 12e47cac-e147-466f-93f5-c09251cbc7a9
+ms.reviewer: edupont
+---
 ### 
 
 # Install Microsoft Dynamics GP on the first computer
@@ -60,15 +74,15 @@ The installation program verifies that your system has the minimum operating sys
 
 8. In the Select Features window, select the features to install.
 
-![Chapter 6 Install MS GP on the First Computer image1](media/Chapter-6-Install-MS-GP-on-the-First-Computer-image1.png)  
+![choose the features to add or remove](media/add-remove-features.png "Feature selector")  
 
 When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
 | Option                                                                         | What happens                                                                                                             |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![Chapter 6 Install MS GP on the First Computer image2](media/Chapter-6-Install-MS-GP-on-the-First-Computer-image2.PNG) Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![Chapter 6 Install MS GP on the First Computer image2](media/Chapter-6-Install-MS-GP-on-the-First-Computer-image2.PNG) Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![Chapter 6 Install MS GP on the First Computer image3](media/Chapter-6-Install-MS-GP-on-the-First-Computer-image3.png) Not available            | Will not install the selected feature or sub–features.                                                                   |  
+| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
+| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
 
 9. Specify the folder where you want the Microsoft Dynamics GP files installed. The default folder is C:\\Program Files\\Microsoft Dynamics\\GP 2018. To select a different folder, click Browse.
 
@@ -88,7 +102,7 @@ Click Next.
 
 13. If you have selected to install the Service Based Architecture feature, provide the Windows account that will be used as the service account for the Service Based Architecture service.
 
-![Chapter 6 Install MS GP on the First Computer image4](media/Chapter-6-Install-MS-GP-on-the-First-Computer-image4.png)  
+![login screen for service based architecture service](media/service-based-architecture-login.png "Login screen")  
 
 The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
 
@@ -100,7 +114,7 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 17. Before you start Microsoft Dynamics GP Utilities, check for and install current update for Microsoft Dynamics GP 2018. See CustomerSource (<https://mbs.microsoft.com/customersource>) for the latest update information.
 
-![Chapter 6 Install MS GP on the First Computer image5](media/Chapter-6-Install-MS-GP-on-the-First-Computer-image5.png)To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
 18. Start Microsoft Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
 

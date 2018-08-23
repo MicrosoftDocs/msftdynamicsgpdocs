@@ -1,3 +1,17 @@
+---
+title: "Client installation"
+description: "Get Dynamics GP on each user's computer and synchronize data with the server."
+keywords: "install"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 7b191c03-4d6c-490e-8257-33888b08f16d
+ms.reviewer: edupont
+---
 # Installing Dynamics GP on subsequent computers
 
 Use the information in this chapter to install Microsoft Dynamics GP 2018 on each client computer. You also use Microsoft Dynamics GP Utilities to synchronize the Microsoft Dynamics GP dictionary on each additional client with your account framework on the server.
@@ -46,9 +60,9 @@ To install Microsoft Dynamics GP, you must accept this agreement.
 
 | **Option**                                                                     | **What happens**                                                                                                         |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![Chapter 12 Installing on subsequent computers image1](media/Chapter-12-Installing-on-subsequent-computers-image1.PNG) Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![Chapter 12 Installing on subsequent computers image1](media/Chapter-12-Installing-on-subsequent-computers-image1.PNG) Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![Chapter 12 Installing on subsequent computers image2](media/Chapter-12-Installing-on-subsequent-computers-image2.png) Not available            | Will not install the selected feature or sub–features.                                                                   |  
+| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
+| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
 
 When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
@@ -74,7 +88,7 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 14. Before you start Microsoft Dynamics GP Utilities, check for and install current update for Microsoft Dynamics GP 2018. See CustomerSource (<http://go.microsoft.com/fwlink/?LinkId=249465>) for the latest update information.
 
-![Chapter 12 Installing on subsequent computers image3](media/Chapter-12-Installing-on-subsequent-computers-image3.png)To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
 15. Start Microsoft Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
 
@@ -88,7 +102,7 @@ Synchronize the account framework of each client where you install Microsoft Dyn
 
 Microsoft Dynamics GP Utilities uses the scripts and files installed previously to complete the client setup. In addition, you can use Microsoft Dynamics GP Utilities to complete various maintenance procedures, now and on an ongoing basis.
 
-![Chapter 12 Installing on subsequent computers image3](media/Chapter-12-Installing-on-subsequent-computers-image3.png)To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
 To synchronize a client’s account framework:
 
@@ -97,7 +111,7 @@ To synchronize a client’s account framework:
 
 2. In the Welcome to Microsoft Dynamics GP Utilities window, verify your server name, and enter a user ID and password. Click Next.
 
-![Chapter 12 Installing on subsequent computers image4](media/Chapter-12-Installing-on-subsequent-computers-image4.png)  
+![login screen to dynamics gp utilities](media/gp-utilities-2.png "Login screen")  
 
 3. In the Welcome To Microsoft Dynamics GP Utilities window, click Next.
 
@@ -105,7 +119,7 @@ The Microsoft Dynamics GP dictionary is synchronized automatically with your acc
 
 4. In the Additional Tasks window, you can choose to complete additional tasks, launch Microsoft Dynamics GP, or end the installation. If you select any task, choose Process; otherwise, click Exit.
 
-![Chapter 12 Installing on subsequent computers image5](media/Chapter-12-Installing-on-subsequent-computers-image5.png)  
+![screen with list of tasks that open setup wizards](media/gp-utilities-15.png "Task selector")  
 
 5. Repeat the client installation process for each computer you’ll use as a client or process server for Microsoft Dynamics GP.
 

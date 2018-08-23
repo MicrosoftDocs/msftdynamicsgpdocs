@@ -1,3 +1,17 @@
+---
+title: "Checklist for installation process"
+description: "Quick run-through of the installation process."
+keywords: "install"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/23/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 46580577-d8e4-4b25-ab9f-8538bcbb84f7
+ms.reviewer: edupont
+---
 # Installation checklist
 
 This chapter provides an overview of information you’ll need during the installation process. It contains tips on gathering information and a checklist to guide you through installing Microsoft Dynamics GP. Next to each step is a reference to where you can find more detailed information.
@@ -97,7 +111,7 @@ You’ll find links to Support Hot Topics and Knowledge Base—the best source o
 
 SQL Server Books Online is a documentation resource installed with Microsoft SQL Server. Use Books Online to troubleshoot SQL error messages and other issues related to SQL. Microsoft’s web site, www.microsoft.com, is also a good source of information for issues related to SQL or your operating system. You also can download Microsoft SQL Server Management Studio and SQL Server Books Online for Microsoft SQL Server Express Edition.
 
-![Chapter 1 Installation Checklist image1](media/Chapter-1-Installation-Checklist-image1.png)SQL-related error messages appear as DBMS errors in Microsoft Dynamics GP. Always use the SQL Server Books Online to troubleshoot DBMS errors. Choose the Search tab and enter the error number, then choose List Topics.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")SQL-related error messages appear as DBMS errors in Microsoft Dynamics GP. Always use the SQL Server Books Online to troubleshoot DBMS errors. Choose the Search tab and enter the error number, then choose List Topics.  
 
 ## Before you call support
 
