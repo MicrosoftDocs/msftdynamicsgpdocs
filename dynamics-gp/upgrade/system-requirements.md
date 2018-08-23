@@ -2,7 +2,7 @@
 
 This chapter contains a list of prerequisites and system requirement changes for Microsoft Dynamics GP, as well as disk space requirements for SQL Server computers.
 
-![Chapter 2 System Requirements image1](media/Chapter-2-System-Requirements-image1.png)Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software will improve performance.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software will improve performance.  
 
 <span id="_Toc498615759" class="anchor"></span>
 
@@ -158,7 +158,7 @@ Before you deploy Microsoft Dynamics GP Reporting Services reports, you must ins
 
 To deploy the SQL Server Reporting Services reports, you must modify the Report Server web.config file for the timeout execution and the maximum request length. If you don’t update the Report Server web.config file for the timeout execution, you might receive an error that states that the operation has timed out. If you don’t update the Report Server web.config file for the maximum request length, you will receive an error that the deployment has exceeded the maximum request length allowed by the target server.
 
-![Chapter 2 System Requirements image1](media/Chapter-2-System-Requirements-image1.png)You must be an administrator to modify the Report Server web config file.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You must be an administrator to modify the Report Server web config file.  
 
 To modify the Report Server Web config file:
 
@@ -192,7 +192,7 @@ For more information about system requirements see <http://go.microsoft.com/fwli
 
 For the upgrade process, be sure that you have enough disk space before you begin. To determine the disk space required for the upgrade, you need to find the size of the largest table for all Microsoft Dynamics GP databases. To determine disk space, use Microsoft SQL Server Management Studio for Microsoft SQL Server.
 
-![Chapter 2 System Requirements image1](media/Chapter-2-System-Requirements-image1.png)You can download an upgrade preparation script that will help you determine the disk space requirements from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You can download an upgrade preparation script that will help you determine the disk space requirements from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>.  
 
 To determine disk space for the upgrade process using Microsoft SQL Server Management Studio:
 
@@ -255,4 +255,4 @@ If the data files (MDF) are located on a different hard disk than the transactio
 
 -   Right-click the TEMPDB database and select Properties. Choose Files and add the additional space needed for the size of the largest table of all Microsoft Dynamics GP databases to the Space Allocated (MB) column. When adding additional space, you are increasing the space for the data file (MDF) and the transaction log file (LDF) as well.
 
-![Chapter 2 System Requirements image1](media/Chapter-2-System-Requirements-image1.png)If the database size is not manual configured, the time needed to upgrade the databases will increase because the database data, transaction log and TEMPDB files will all have to increase.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If the database size is not manual configured, the time needed to upgrade the databases will increase because the database data, transaction log and TEMPDB files will all have to increase.  

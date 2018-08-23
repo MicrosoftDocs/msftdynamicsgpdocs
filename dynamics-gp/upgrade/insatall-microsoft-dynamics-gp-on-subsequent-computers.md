@@ -56,9 +56,9 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 
 | Option                                                                         | What happens                                                                                                             |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![Chapter 9 MS GP on subsequent computers image1](media/Chapter-9-MS-GP-on-subsequent-computers-image1.PNG) Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![Chapter 9 MS GP on subsequent computers image1](media/Chapter-9-MS-GP-on-subsequent-computers-image1.PNG) Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![Chapter 9 MS GP on subsequent computers image2](media/Chapter-9-MS-GP-on-subsequent-computers-image2.png) Not available            | Will not install the selected feature or sub–features.                                                                   |  
+| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
+| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
 
 If you’ve installed a feature in a previous release, use the Select Features window to install that component. See Microsoft Dynamics GP features on page 47 for a list of Microsoft Dynamics GP features.
 
@@ -76,7 +76,7 @@ Click Next.
 
 10. If you have selected to install the Service Based Architecture feature, provide the Windows account that will be used as the service account for the Service Based Architecture service.
 
-![Chapter 9 MS GP on subsequent computers image3](media/Chapter-9-MS-GP-on-subsequent-computers-image3.png)  
+![login screen for service based architecture service.](media/service-based-architecture-login.png "Login screen")  
 
 The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
 
@@ -90,7 +90,7 @@ The Installation Progress window appears, where you can view the status of the i
 
 14. After installing Microsoft Dynamics GP and the most recent update, you can perform the following steps.
 
-![Chapter 9 MS GP on subsequent computers image4](media/Chapter-9-MS-GP-on-subsequent-computers-image4.png)To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system's documentation for more information.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system's documentation for more information.  
 
 -   Start Microsoft Dynamics GP Utilities.
 
@@ -102,7 +102,7 @@ The Installation Progress window appears, where you can view the status of the i
 
 Synchronize the account framework of each client where you install Microsoft Dynamics GP. Scripts and files installed previously on the server are used by Microsoft Dynamics GP Utilities to complete the client setup.
 
-![Chapter 9 MS GP on subsequent computers image4](media/Chapter-9-MS-GP-on-subsequent-computers-image4.png)To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system's documentation for more information.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system's documentation for more information.  
 
 To synchronize a client’s account framework:
 
@@ -110,7 +110,7 @@ To synchronize a client’s account framework:
 
 2. In the Welcome to Microsoft Dynamics GP Utilities window, verify your server name, and enter your User ID and Password. Click OK.
 
-![Chapter 9 MS GP on subsequent computers image5](media/Chapter-9-MS-GP-on-subsequent-computers-image5.png)  
+![login screen to dynamics gp utilities.](media/gp-utilities-2.png "Login screen")  
 
 3. In the Welcome to Microsoft Dynamics GP Utilities window, click Next.
 
@@ -118,7 +118,7 @@ The Microsoft Dynamics GP dictionary is synchronized automatically with your acc
 
 4. After the account framework is synchronized, the Additional Tasks window opens. In the Additional Tasks window, you can choose to complete additional tasks, launch Microsoft Dynamics GP, or end the installation. If you select any task, choose Process; otherwise, choose Exit.
 
-![Chapter 9 MS GP on subsequent computers image6](media/Chapter-9-MS-GP-on-subsequent-computers-image6.png)  
+![screen with list of tasks that open setup wizards.](media/gp-utilities-15.png "Task selector")  
 
 Repeat the client installation process for each computer you’ll use as a client or process server for Microsoft Dynamics GP.
 

@@ -66,7 +66,7 @@ For your SQL database, you should run the following database maintenance routine
 
 If you prefer to perform table maintenance only on the tables that have changed, lists of tables that have changed from previous releases are available on the Microsoft Dynamics GP 2018 media as part of the Software Developers’ Kit (SDK).
 
-![Chapter 4 System Preparation  image1](media/Chapter-4-System-Preparation--image1.png)It’s a good idea to make a second backup after performing table maintenance, but before upgrading to a new version. If you have this backup and an expected problem occurs while upgrading, you won’t have to repeat the table maintenance step.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")It’s a good idea to make a second backup after performing table maintenance, but before upgrading to a new version. If you have this backup and an expected problem occurs while upgrading, you won’t have to repeat the table maintenance step.  
 
 ## Known issues
 
@@ -219,7 +219,7 @@ If the following tables contain incorrect account framework information, the upg
 | GL00200               | Budget Master                           |
 | GL00201               | Budget Summary Master                   |
 
-![Chapter 4 System Preparation  image1](media/Chapter-4-System-Preparation--image1.png)You can download an upgrade preparation script that will help you determine incorrect account framework information from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You can download an upgrade preparation script that will help you determine incorrect account framework information from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>.  
 
 ### To verify account framework information in tables:
 

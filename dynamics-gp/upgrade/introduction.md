@@ -34,8 +34,8 @@ This manual uses the following symbols to make specific types of information sta
 
 | Symbol                                                | Description                                                                                      |
 |-------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ![00_Upgrade Introduction image1](media/00_Upgrade-Introduction-image1.png) | The light bulb symbol indicates helpful tips, shortcuts and suggestions.                         |  
-| ![00_Upgrade Introduction image2](media/00_Upgrade-Introduction-image2.png) | The warning symbol indicates situations you should be especially aware of when completing tasks. |  
+| ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol") | The light bulb symbol indicates helpful tips, shortcuts and suggestions.                         |  
+| ![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol") | The warning symbol indicates situations you should be especially aware of when completing tasks. |  
 
 This manual uses the following conventions to refer to sections, navigation and other information.
 

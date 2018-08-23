@@ -58,15 +58,15 @@ The installation program verifies that your system has the minimum operating sys
 
 6. In the Select Features window, select the features to install.
 
-![Chapter 5 Install Microsoft Dynamics GP on the first computer image1](media/Chapter-5-Install-Microsoft-Dynamics-GP-on-the-first-computer-image1.png)  
+![choose the features to add or remove.](media/add-remove-features.png "Feature selector")  
 
 When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
 | Option                                                              | What happens                                                                                                             |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![](media/Chapter-5-Install-Microsoft-Dynamics-GP-on-the-first-computer-image2.png) Run from My Computer                          | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |
-| ![](media/Chapter-5-Install-Microsoft-Dynamics-GP-on-the-first-computer-image2.png) Run all from My Computer                      | Will install the feature and all of its sub–features.                                                                    |
-| ![Chapter 5 Install Microsoft Dynamics GP on the first computer image3](media/Chapter-5-Install-Microsoft-Dynamics-GP-on-the-first-computer-image3.png) Not Available | Will not install the selected feature or sub–                                                                            |  
+| ![](media/image2.png) Run from My Computer                          | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |
+| ![](media/image2.png) Run all from My Computer                      | Will install the feature and all of its sub–features.                                                                    |
+| ![component icon](media/installed-component.png "Component icon") Not Available | Will not install the selected feature or sub–                                                                            |  
 
 If you’ve installed a feature in a previous release, be sure that you’ve selected to install that feature in the Select Feature window. See [Microsoft Dynamics GP features](#_Microsoft_Dynamics_GP_1) on page 47 for a list of Microsoft Dynamics GP features. You also can install additional features. You can review the DYNAMICS.SET file for a list of features you have installed.  
 
@@ -84,7 +84,7 @@ Click Next.
 
 10. If you have selected to install the Service Based Architecture feature, provide the Windows account that will be used as the service account for the Service Based Architecture service.
 
-![Chapter 5 Install Microsoft Dynamics GP on the first computer image4](media/Chapter-5-Install-Microsoft-Dynamics-GP-on-the-first-computer-image4.png)  
+![login screen for service based architecture service.](media/service-based-architecture-login.png "Login screen")  
 
 The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
 
@@ -96,7 +96,7 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 14. Before you start Microsoft Dynamics GP Utilities, check for and install the most current Microsoft Dynamics GP update for Microsoft Dynamics GP 2018. See CustomerSource (<https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>) for the latest update information.
 
-![Chapter 5 Install Microsoft Dynamics GP on the first computer image5](media/Chapter-5-Install-Microsoft-Dynamics-GP-on-the-first-computer-image5.png)To start Microsoft Dynamics GP Utilities, you must have appropriate privileges. Typically this means being prat of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control, (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system documentation for more information.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start Microsoft Dynamics GP Utilities, you must have appropriate privileges. Typically this means being prat of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control, (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system documentation for more information.  
 
 15. After installing Microsoft Dynamics GP and the most recent update, you can perform the following steps.
 

@@ -6,7 +6,7 @@ Before using Microsoft Dynamics GP Utilities, be sure that you have installed th
 
 <span id="_Toc498615793" class="anchor"></span>
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start Microsoft Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
 Tis chapter contains the following sections:
 
@@ -52,7 +52,7 @@ Use this procedure to upgrade Microsoft Dynamics GP tables on your server comput
 
 Detailed lists of the changes to all tables are available on the Microsoft Dynamics GP media. To access the table changes lists, install the Software Developers’ Kit from the Microsoft Dynamics GP 2018 media.
 
-![Chapter 6 Company Data Conversion image2](media/Chapter-6-Company-Data-Conversion-image2.png)If you are using Connector for Microsoft Dynamics, you must stop the Microsoft Dynamics Adapter Service on the server before starting Microsoft Dynamics GP Utilities. The company database upgrade will fail if the Microsoft Dynamics Adapter Service is not stopped. Connector is not supported for Dynamics GP 2018, so it’s not necessary to restart the service after the service after the upgrade is complete.  
+![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")If you are using Connector for Microsoft Dynamics, you must stop the Microsoft Dynamics Adapter Service on the server before starting Microsoft Dynamics GP Utilities. The company database upgrade will fail if the Microsoft Dynamics Adapter Service is not stopped. Connector is not supported for Dynamics GP 2018, so it’s not necessary to restart the service after the service after the upgrade is complete.  
 
 To upgrade Microsoft Dynamics GP tables:
 
@@ -63,19 +63,19 @@ To upgrade Microsoft Dynamics GP tables:
 
 3. In the Welcome to Microsoft Dynamics GP Utilities window, verify your server name, enter the system administrator user ID and password, and click OK.
 
-![Chapter 6 Company Data Conversion image3](media/Chapter-6-Company-Data-Conversion-image3.png)  
+![login screen to dynamics gp utilities.](media/gp-utilities-2.png "Login screen")  
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)You must be logged in as a system administrator to complete database and system functions within Microsoft Dynamics GP Utilities.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You must be logged in as a system administrator to complete database and system functions within Microsoft Dynamics GP Utilities.  
 
 4. The Welcome To Microsoft Dynamics GP Utilities window opens when you are logged into the server that you selected. Read the message and click Next.
 
 5. In the Upgrade Microsoft Dynamics GP window, click Next to upgrade your system database.
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)The Company Detail window opens if errors occurred while upgrading your system tables. You can use this window to view the errors.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")The Company Detail window opens if errors occurred while upgrading your system tables. You can use this window to view the errors.  
 
 6. In the Upgrade these companies window, click Next. All companies are selected to be upgraded.
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)The process of upgrading tables might take some time.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")The process of upgrading tables might take some time.  
 
 ![Chapter 6 Company Data Conversion image4](media/Chapter-6-Company-Data-Conversion-image4.png)  
 
@@ -85,7 +85,7 @@ Microsoft Dynamics GP Utilities upgrades your company databases. This process ma
 
 8. After the upgrade process is finished and is successful, the Additional Tasks window will open, where you can upgrade your forms and reports dictionaries, start Microsoft Dynamics GP, or exit the installation. To upgrade your forms and reports dictionaries, see [Upgrading modified forms and reports](#upgrading-modified-forms-and-reports) on page 43 for more information. See the following sections for more detailed information about each task.
 
-![Chapter 6 Company Data Conversion image5](media/Chapter-6-Company-Data-Conversion-image5.png)  
+![screen with list of tasks that open setup wizards.](media/gp-utilities-15.png "Task selector")  
 
 If the upgrade process wasn’t successful, the Update Company Tables window opens. See [Understanding upgrade warnings](#understanding-upgrade-warnings) on page 44 for more information.  
 
@@ -138,13 +138,13 @@ SharePoint Integrated mode location example:
 | Location              | Example                           |
 | SharePoint Site       | http://&lt;servername&gt;/Reports |
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration manager to verify the Report Server Mode being and the URL locations.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration manager to verify the Report Server Mode being and the URL locations.  
 
 If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple Microsoft Dynamics GP instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must provide access to the folder.
 
 6. Click Next.
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 7. The CRM Reports Setup window appears, if you marked to deploy SQL Server Reporting Services reports with CRM data. Enter the CRM connection information. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
 
@@ -166,7 +166,7 @@ Network share location example:
 
 9. Click Next.
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 10. The Verify SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 
@@ -219,13 +219,13 @@ SharePoint Integrated mode location example:
 | Location              | Example                           |
 | SharePoint Site       | http://&lt;servername&gt;/Reports |
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
 
 If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple Microsoft Dynamics GP instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must provide access to the folder.
 
 7. Click Next.
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 8. The CRM Reports Setup window appears, if you marked to deploy SQL Server Reporting Services reports with CRM data. Enter the CRM connection information. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
 
@@ -252,7 +252,7 @@ SharePoint location example
 
 10. Click Next.
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)If you don’t have the appropriate permissions to deploy the reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If you don’t have the appropriate permissions to deploy the reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 11. The Verify SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 
@@ -272,7 +272,7 @@ You can use Microsoft Dynamics GP to upgrade the following types of information 
 
 In addition, similar changes are made to modified forms and reports for integrating applications. Consult the documentation for the integrating application for information about whether that application supports automatic form and report upgrades. If you are using Personal Data Keeper, see the Microsoft Dynamics GP technical support for information about synchronizing forms and reports.
 
-![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)If your forms and reports dictionaries are in a shared location, you need only to perform this procedure once.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If your forms and reports dictionaries are in a shared location, you need only to perform this procedure once.  
 
 To upgrade modified forms and reports:
 
@@ -288,7 +288,7 @@ To upgrade modified forms and reports:
 
 6. For each component, choose the Details button, if necessary, to open the Product Details window, where you can select the location of the original dictionary, such as Dynamics.dic or HR.dic. Click OK in the Product Details window.
 
-The original dictionary is the application dictionary from the previous release of Microsoft Dynamics GP. After all forms and reports dictionaries have been upgraded, you can delete the original dictionary.![Chapter 6 Company Data Conversion image1](media/Chapter-6-Company-Data-Conversion-image1.png)  
+The original dictionary is the application dictionary from the previous release of Microsoft Dynamics GP. After all forms and reports dictionaries have been upgraded, you can delete the original dictionary.![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")  
 
 7. In the Update Modified Forms and Reports window, click Update.
 

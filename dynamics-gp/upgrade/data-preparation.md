@@ -68,7 +68,7 @@ If you are using Analytical Accounting, be sure to post all saved batches that y
 
 You may want to reconcile your accounting records before upgrading to Microsoft Dynamics GP 2018 to verify that your accounting records are accurate. Refer to the documentation of the modules you are using for specific information.
 
-Before reconciling, back up your company’s accounting data. For more information about making backups, refer to your System Administrator’s Guide (Help &gt;&gt; Contents &gt;&gt; select System administration)![Chapter 3 Data Preparation image1](media/Chapter-3-Data-Preparation-image1.png).  
+Before reconciling, back up your company’s accounting data. For more information about making backups, refer to your System Administrator’s Guide (Help &gt;&gt; Contents &gt;&gt; select System administration)![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol").  
 
 ## Backups
 
