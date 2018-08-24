@@ -1,3 +1,17 @@
+---
+title: "What's new in Dynamics GP 2016 R2"
+description: "Learn about enhancements that were added to the product since the release of Microsoft Dynamics GP 2016 R2. "
+keywords: ""
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 16b4230b-41ed-4377-87ab-ca46edd6215b
+ms.reviewer: 
+---
 <span id="_Toc499823846" class="anchor"></span>
 
 # What’s new in Dynamics GP 2016 R2

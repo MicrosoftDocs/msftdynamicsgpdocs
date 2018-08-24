@@ -1,3 +1,17 @@
+---
+title: "What's new in Dynamics GP"
+description: "The What�s New document is your guide to enhancements in Microsoft Dynamics GP. "
+keywords: ""
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 63c0f7db-cce5-4cfc-8016-8373359609d5
+ms.reviewer: 
+---
 # Introduction
 
 The What’s New document is your guide to enhancements in Microsoft Dynamics GP. We add enhancements based on feedback we receive from customers, as well as on market research. Your willingness to help us build better products makes this a more complete solution for small and medium-sized businesses, putting you in a better position to manage your organization successfully.

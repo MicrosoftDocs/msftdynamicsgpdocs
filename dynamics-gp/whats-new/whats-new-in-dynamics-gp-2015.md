@@ -1,3 +1,17 @@
+---
+title: "What's new in Dynamics GP 2015"
+description: "Learn about enhancements that were added to the product since the release of Microsoft Dynamics GP 2015. "
+keywords: ""
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 271fffb2-d379-4097-b1f2-47c883c9d026
+ms.reviewer: 
+---
 <span id="_Toc499823860" class="anchor"></span>
 
 # What’s new in Dynamics GP 2015
@@ -119,13 +133,13 @@ You have the ability to mask the employee’s Social Security Number on specific
 
 The SmartLists and Excel Reports for Analytical Accounting (AA) transaction information now include more of the data that is tracked by AA. The SmartLists and Excel Reports are also modified to display each AA dimension as a column in the list, rather than having a single column for all AA dimensions. For example, the below SmartList shows how the list would display for a company tracking Cost Center and Project as AA transaction dimensions. You can summarize and work with the data in Excel using pivot table functionality.
 
-![Chapter 4 GP 2015 R2 Enhancements image1](media/Chapter-4-GP-2015-R2-Enhancements-image1.png)  
+![shows the detailed smartlists report](media/smartlist-inquiry.png "Smartlist Inquiry")  
 
 ### Combine General Ledger Inquiry
 
 In Microsoft Dynamics GP 2015 R2 in General Ledger, you can view open and historical information in the same window for Summary Inquiry, Detail Inquiry and for Account Summary. Any Go Tos or drill backs will now go to the single window instead of the user picking open or history.
 
-![Chapter 4 GP 2015 R2 Enhancements image2](media/Chapter-4-GP-2015-R2-Enhancements-image2.png)  
+![shows the summary inquiry window with the account for cash - operating shown.](media/summary-inquiry.png "Summary Inquiry")  
 
 ## Purchasing and sales enhancements
 
@@ -163,7 +177,7 @@ You can access the Purchasing All-in-One View window from the following windows 
 
 The icon for the Purchasing All-in-One View window is available only if a single record is selected in the navigation list. The data that’s displayed in the Purchasing All-in-One View window depends on your selection in the navigation list. For example, if you select only a vendor record in the navigation list, the vendor ID and name information are displayed in the Purchasing All-in-One View window. If you select a transaction in the navigation list, the vendor ID, name and transaction information are displayed.
 
-![Chapter 4 GP 2015 R2 Enhancements image3](media/Chapter-4-GP-2015-R2-Enhancements-image3.png)  
+![shows the purchasing all-in-one view.](media/purchasing-allinone.png "Purchasing All-in-One")  
 
 When you open the Purchasing All-in-One View window from Purchasing &gt;&gt; Inquiry &gt;&gt; All-in-One View, or Home &gt;&gt; Quick Links &gt;&gt; All-in-One View, the window opens without any data. You can specify the vendor and the details of the information to display in the window. Mark the checkbox in the upper right corner of the document to display only the related documents.
 
@@ -303,7 +317,7 @@ The following table describes the action that follows when you assign a user wit
 
 Employees can now view and print their own W2. With Microsoft Dynamics GP 2015 R2, this functionality is now available as part of Time Management self-service.
 
-![Chapter 4 GP 2015 R2 Enhancements image5](media/Chapter-4-GP-2015-R2-Enhancements-image5.png)  
+![shows the time management self-service screen in dynamics gp.](media/time-management.png "Time Management")  
 
 ### Time Management App
 

@@ -1,3 +1,17 @@
+---
+title: "What's new in Dynamics GP 2018"
+description: "Learn about enhancements that were added to the product since the release of Microsoft Dynamics GP 2018. "
+keywords: ""
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: fba629bc-f271-462f-b980-163c5a0c091b
+ms.reviewer: 
+---
 <span id="_Toc499823838" class="anchor"></span>
 
 # What’s new in GP 2018 
@@ -30,15 +44,15 @@ Now you’ll only need to enter the system password once during an active sessio
 
 This release broadens the availability of the document attachment capability to additional master record windows, inquiries and transaction entry windows. The option to attach new documents in Inquiry windows is also included. Document attachment is available from the ribbon in additional transaction entry windows, as shown in the following illustration.
 
-![Chapter 1 GP 2018 Enhancements image1](media/Chapter-1-GP-2018-Enhancements-image1.png)  
+![shows the window for receivables transations entry.](media/receivables-transaction-entry.png "Receivables Transaction Entry")  
 
 In some master record windows, documents are attached using a button next to the record ID fields, as shown in the following illustration.
 
-![Chapter 1 GP 2018 Enhancements image2](media/Chapter-1-GP-2018-Enhancements-image2.png)  
+![shows the window for employee inquiry.](media/employee-inquiry.png "Employee Inquiry")  
 
 Similar buttons have been added to additional master record windows.
 
-![Chapter 1 GP 2018 Enhancements image3](media/Chapter-1-GP-2018-Enhancements-image3.png)  
+![shows the window for managing employees.](media/employee-maintenance.png "Employee Management")  
 
 Document attachment has been added to the following windows for GP 2018.
 
@@ -154,7 +168,7 @@ Functionality that recognizes partial entries in fields is now part of the web c
 
 A shortcut has been added to the banner in web client windows, allowing one-click navigation to SmartList – for those who have been granted access to SmartList. User whose permissions do not include SmartList won’t see the shortcut.
 
-![Chapter 1 GP 2018 Enhancements image4](media/Chapter-1-GP-2018-Enhancements-image4.png)  
+![shows the purchasing homescreen in dynamics gp in a browser.](media/web-client-homescreen.png "Purchasing homescreen")  
 
 Additional enhancements to the user experience include:
 

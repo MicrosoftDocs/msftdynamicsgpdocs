@@ -1,3 +1,17 @@
+---
+title: "What's new in Dynamics GP 2016"
+description: "Learn about enhancements that were added to the product since the release of Microsoft Dynamics GP 2016. "
+keywords: ""
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 3b34f337-6d08-491c-97ba-508c10b52662
+ms.reviewer: 
+---
 <span id="_Toc499823853" class="anchor"></span>
 
 # What’s new in Dynamics GP 2016
@@ -86,7 +100,7 @@ Now you can export and import SmartList definitions that have been created with 
 
 All the columns that are included in new SmartLists that are created in the SmartList Designer will be displayed in the SmartList Options window by default. From the Options window, you can include or exclude columns from the default view. You can also change order in which the columns display.
 
-![Chapter 3 GP 2016 Enhancements image1](media/Chapter-3-GP-2016-Enhancements-image1.png)  
+![shows the window for setting up your smartlists.](media/smartlist-options.png "SmartLists")  
 
 Prior to this change, new SmartLists could not have default columns defined in the SmartList Options window.
 
@@ -98,7 +112,7 @@ When a report is exported to Excel, numbers will now be formatted as numbers. Pr
 
 A new web part has been added to Home Pages that allow users to easily add Power BI Reports to their workspace. To display a report, check the Power BI box, and then click the blue arrow to go into the Power BI Details window. This window will show you the available reports that you can add to your Home Page.
 
-![Chapter 3 GP 2016 Enhancements image2](media/Chapter-3-GP-2016-Enhancements-image2.png)  
+![shows the window for customizing your home page.](media/customize-homepage.png "Customize Homepage")  
 
 Once you’ve added reports you will have a Power BI section added to the home page. You can scroll through the available reports here. You can expand the size of the window to be larger or smaller as needed. Clicking on a report will launch the report in your browser, as long as Pop-up blocker is disabled. You can’t modify the reports within the Power BI window on the GP Home Page.
 
