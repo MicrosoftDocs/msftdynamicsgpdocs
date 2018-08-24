@@ -1,3 +1,17 @@
+---
+title: "Introduction"
+description: "Get started with upgrading to the latest version of Dynamics GP."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: b0109445-b26f-4a10-9b2a-40d543335c8f
+ms.reviewer: 
+---
 # Introduction
 
 Use this manual to upgrade your Microsoft Dynamics GP system to Microsoft Dynamics GP 2018. Review the introductory information about the resources available to you, then use the [Microsoft Dynamics GP upgrade checklist](#_Microsoft_Dynamics_GP) on page 7 as your guide to the parts of this manual that apply to you.  

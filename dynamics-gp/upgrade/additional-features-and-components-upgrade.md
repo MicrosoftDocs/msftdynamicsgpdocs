@@ -1,3 +1,17 @@
+---
+title: "Additional features and components upgrade"
+description: "Learn about upgrading additional features or components that you may have purchased to bring specialized functionality to your Dynamics GP."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 7e24552e-1515-40ef-9dbf-e10fab7a9215
+ms.reviewer: 
+---
 # Additional features and components upgrade
 
 Depending on your organization’s needs, you may have purchased additional features or components that add specialized functionality to your Microsoft Dynamics GP system. After you’ve installed Microsoft Dynamics GP 2018 and upgraded your data using Microsoft Dynamics GP Utilities, you can install additional features and components that integrate with Microsoft Dynamics GP.
@@ -68,7 +82,7 @@ To add or remove additional features:
 
 -   Open the Control Panel &gt; Programs and Features or Uninstall a program. Select Microsoft Dynamics GP 2018. Click Change to open the Program Maintenance window.
 
-![Chapter 7 Additional features and components upgrade image3](media/Chapter-7-Additional-features-and-components-upgrade-image3.png)  
+![program maintenance window to add/remove program, repair, or uninstall.](media/admin-addremove-installer.png "Program Maintenance")  
 
 2. Click Add/Remove Features.
 

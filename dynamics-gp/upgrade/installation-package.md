@@ -1,3 +1,17 @@
+---
+title: "Installation package"
+description: "Use an installation package to install Dynamics GP on multiple client computers."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: e21af4d9-a4ad-4d55-a002-fd13f15e8f89
+ms.reviewer: 
+---
 <span id="_Toc498615807" class="anchor"></span>
 
 # Installation package

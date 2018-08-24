@@ -1,3 +1,17 @@
+---
+title: "Company data conversion"
+description: "Learn about the additional procedures to upgrade your tables before you can use Microsoft Dynamics GP."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: d6f63af5-9c23-46f9-8f22-4bcee28287be
+ms.reviewer: 
+---
 # Company data conversion
 
 After you’ve upgraded your software, you need to complete a number of additional procedures to upgrade your tables before you can use Microsoft Dynamics GP. To do this, you’ll use an application called Microsoft Dynamics GP Utilities. Follow the instructions in this chapter to use Microsoft Dynamics GP Utilities to upgrade tables on your server and client computers.
@@ -77,7 +91,7 @@ To upgrade Microsoft Dynamics GP tables:
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")The process of upgrading tables might take some time.  
 
-![Chapter 6 Company Data Conversion image4](media/Chapter-6-Company-Data-Conversion-image4.png)  
+![shows screen to specify which companies your want to upgrade.](media/upgrade-company-1.png "Upgrade these companies?")  
 
 7. In the Confirmation window, click Finish.
 
@@ -320,12 +334,12 @@ After the upgrade or if the upgrade fails, the Update Company Tables window will
 
 | Icon                                                    | Status                                                                                 |
 |---------------------------------------------------------|----------------------------------------------------------------------------------------|
-| ![Chapter 6 Company Data Conversion image6](media/Chapter-6-Company-Data-Conversion-image6.png)   | Company tables were upgraded successfully.                                             |  
-| ![Chapter 6 Company Data Conversion image7](media/Chapter-6-Company-Data-Conversion-image7.png)   | Some company tables were not upgraded successfully. Contact Microsoft                    
+| ![shows green checkmark.](media/upgrade-conversion-success.png "Success")   | Company tables were upgraded successfully.                                             |  
+| ![shows read x](media/upgrade-conversion-notsuccess.png "Failure")   | Some company tables were not upgraded successfully. Contact Microsoft                    
                                                                                           
   Dynamics GP Technical Support for further assistance.                                   |
-| ![Chapter 6 Company Data Conversion image8](media/Chapter-6-Company-Data-Conversion-image8.png)   | Some company tables have warnings associated with them.                                |  
-| ![Chapter 6 Company Data Conversion image9](media/Chapter-6-Company-Data-Conversion-image9.png)              | Not converted; someone at another client computer is currently upgrading this company. |  
+| ![shows read yellow exclamation point.](media/upgrade-conversion-warnings.png "Warning")   | Some company tables have warnings associated with them.                                |  
+| ![shows padlock.](media/upgrade-conversion-locked.png "Locked")              | Not converted; someone at another client computer is currently upgrading this company. |  
 
 If no icon appears between the check box and the name of the company, the company needs to be upgraded.
 

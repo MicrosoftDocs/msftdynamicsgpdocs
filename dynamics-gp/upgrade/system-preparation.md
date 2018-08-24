@@ -1,3 +1,17 @@
+---
+title: "System preparation"
+description: "Prepare your system, including client computers before you upgrade to the latest version of Dynamics GP."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 288c5bf3-9273-4a2d-804f-a33f87de69f7
+ms.reviewer: 
+---
 # System Preparation
 
 <span id="_Toc498615780" class="anchor"></span>

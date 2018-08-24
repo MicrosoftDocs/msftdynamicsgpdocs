@@ -1,3 +1,17 @@
+---
+title: "Upgrade from Dynamcis GP 2013"
+description: "See the module upgrade information to verify the upgrade from Microsoft Dynamics GP Release 2013."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 19740bf2-52ba-40c0-af22-a9bc30f03a24
+ms.reviewer: 
+---
 <span id="_Toc498615813" class="anchor"></span>
 
 # Module upgrades from Microsoft Dynamics GP 2013

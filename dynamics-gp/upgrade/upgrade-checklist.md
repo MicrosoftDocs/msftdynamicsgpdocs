@@ -1,3 +1,17 @@
+---
+title: "Upgrade checklist"
+description: "Quick run-through of the process for upgrading to Dynamics GP."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: e246f604-015d-44e8-ab38-3cbf2cc850a3
+ms.reviewer: 
+---
 # Upgrade checklist
 
 You can upgrade to Microsoft Dynamics GP 2018 from Microsoft Dynamics GP 2016 Tax Round 2 or later or GP 2015 R2 (14.0.0725), GP 2013 Tax Round 2 (12.0.1826). For detailed information about which releases and updates you can upgrade from, refer to Releases supported by the upgrade on page 9. If you're using an older release, contact the Microsoft Dynamics GP Technical Support team.

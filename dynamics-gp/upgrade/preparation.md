@@ -1,3 +1,17 @@
+---
+title: "Prepare the upgrade"
+description: "Learn the main steps of upgrading your Dynamics GP solution."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: d5cb16fa-6275-418c-9f72-79471a93abcd
+ms.reviewer: 
+---
 |                 |
 |-----------------|
 | 1.  Preparation |

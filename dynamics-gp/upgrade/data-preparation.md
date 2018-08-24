@@ -1,3 +1,17 @@
+---
+title: "Data preparation"
+description: "Prepare your data before you upgrade your database to the latest version of Dynamics GP."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 4af5a255-4233-4158-b7d7-660a67e226d0
+ms.reviewer: 
+---
 # Data preparation
 
 <span id="_Toc498615770" class="anchor"></span>

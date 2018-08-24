@@ -1,3 +1,17 @@
+---
+title: "After the upgrade"
+description: "Complete the upgrade to Dynamics GP by taking a backup, reconciling financial data, applying security roles, and other important steps."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 15929702-4de8-48c9-9c72-d280553a4676
+ms.reviewer: 
+---
 <span id="_Toc498615820" class="anchor"></span>
 
 # After you upgrade

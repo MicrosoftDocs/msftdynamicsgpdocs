@@ -1,3 +1,17 @@
+---
+title: "Upgrade to Dynamcis GP 2018"
+description: "See the module upgrade information to verify the upgrade to Microsoft Dynamics GP Release 2018."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: b597cc6f-3252-418c-821a-cbdc7b060daf
+ms.reviewer: 
+---
 |                                        |
 |----------------------------------------|
 | 1.  Microsoft Dynamics GP 2018 upgrade |

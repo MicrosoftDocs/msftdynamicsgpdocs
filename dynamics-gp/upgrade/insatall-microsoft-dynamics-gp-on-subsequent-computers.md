@@ -1,3 +1,17 @@
+---
+title: "Client installation"
+description: "Get Dynamics GP on each user's computer and synchronize data with the server."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 6f2f7511-6871-4d78-a9b9-824e479348e5
+ms.reviewer: 
+---
 <span id="_Toc498615810" class="anchor"></span>
 
 # Insatall Microsoft Dynamics GP on subsequent computers

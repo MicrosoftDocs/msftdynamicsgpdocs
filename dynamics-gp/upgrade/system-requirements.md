@@ -1,3 +1,17 @@
+---
+title: "System requirements"
+description: "See the prerequisites and system requirement changes for Microsoft Dynamics GP."
+keywords: "upgrade"
+author: edupont04
+ms.author: edupont
+manager: edupont
+applies_to: 
+ms.date: 08/24/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 3509e92e-d825-4947-8ea2-7e57b7c2a9e0
+ms.reviewer: 
+---
 # System Requirements
 
 This chapter contains a list of prerequisites and system requirement changes for Microsoft Dynamics GP, as well as disk space requirements for SQL Server computers.
