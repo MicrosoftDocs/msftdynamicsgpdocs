@@ -14,7 +14,7 @@ ms.reviewer:
 ---
 <span id="_Toc498615790" class="anchor"></span>
 
-# Install Microsoft Dynamics GP on the first computer
+# Install Microsoft Dynamics GP on tzz first computer
 
 Use the information in this chapter to install Microsoft Dynamics GP 2018. This chapter contains the following sections:
 
@@ -55,8 +55,6 @@ To install Microsoft Dynamics GP (first computer):
 -   Open XML SDK 2.0 for Microsoft Office
 
 -   Visual C++ 2015 Runtime Libraries
-
-<!-- -->
 
 -   Visual Basic for Applications Core
 
