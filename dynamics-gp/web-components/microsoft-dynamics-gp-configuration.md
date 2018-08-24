@@ -36,7 +36,7 @@ When the user signs in to the web client, they simply provide their Windows Logi
 
 Server login (discussed in the previous section) is used to access the SQL Server databases.
 
-![Chapter 4 Microsoft Dynamics GP configuration image1](media/Chapter-4-Microsoft-Dynamics-GP-configuration-image1.png)Be aware that users who do not sign in to the web client using their own SQL Server login cannot send remote processes to the Distributed Process Server.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Be aware that users who do not sign in to the web client using their own SQL Server login cannot send remote processes to the Distributed Process Server.  
 
 ## Web client runtime components
 

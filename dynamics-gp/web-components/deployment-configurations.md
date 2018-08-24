@@ -22,7 +22,7 @@ This configuration is used when the number of users accessing the system is low.
 
 One limitation of the single machine configuration is that there is no redundancy. If the server machine is down, such as when installing an update, no web client users will be able to access Microsoft Dynamics GP.
 
-![Chapter 2 Deployment configurations image2](media/Chapter-2-Deployment-configurations-image2.png)The installation process for this configuration is described in Chapter 10, “Single machine installation.”  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")The installation process for this configuration is described in Chapter 10, “Single machine installation.”  
 
 ## Scale out
 
@@ -34,7 +34,7 @@ A typical scale out configuration is shown in the following illustration.
 
 The scale out configuration has some redundancy. If one of the session host machines must be taken out of service, such as when installing an update, the other session host machines will continue supporting web client users. A fully redundant configuration can be achieved by adding an additional Web Server that is load balanced with the initial Web Server. Additional session host machines can be added as needed to support a higher number of users.
 
-![Chapter 2 Deployment configurations image2](media/Chapter-2-Deployment-configurations-image2.png)The installation process for this configuration is described in Chapter 11, “Scale out installation.”  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")The installation process for this configuration is described in Chapter 11, “Scale out installation.”  
 
 ## Multitenant
 
@@ -48,4 +48,4 @@ The multitenant configuration is typically used by organizations that host Micro
 
 The multitenant configuration has the best redundancy of any of the typical Microsoft Dynamics GP web client configurations. In addition to multiple session host machines, having multiple front-end web servers can allow web client users to access the system even when one of the web servers is unavailable.
 
-![Chapter 2 Deployment configurations image2](media/Chapter-2-Deployment-configurations-image2.png)This is a more complex configuration and is not covered in this documentation.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")This is a more complex configuration and is not covered in this documentation.  
