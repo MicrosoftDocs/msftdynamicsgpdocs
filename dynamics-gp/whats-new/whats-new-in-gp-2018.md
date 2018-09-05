@@ -9,30 +9,11 @@ applies_to:
 ms.date: 08/24/2018
 ms.service: dynamicsgp
 ms.topic: article
-ms.assetid: fba629bc-f271-462f-b980-163c5a0c091b
 ms.reviewer: 
 ---
-<span id="_Toc499823838" class="anchor"></span>
-
-# What’s new in GP 2018 
+    # What’s new in GP 2018 
 
 This chapter lists enhancements to Microsoft Dynamics GP for the GP 2018 release. The GP 2018 release enhances specific areas of the product, while also expanding existing functionality, notably in the document attachment and workflow areas. The user experience has also been enhanced to make finding the information you use to make business decisions faster and easier.
-
-This information is organized in the following sections:
-
--   [Platform and system-wide enhancements](#platform-and-system-wide-enhancements)  
-
--   [Workflow 4.0](#workflow-4.0)  
-
--   [User experience enhancements](#user-experience-enhancements)  
-
--   [BI enhancements](#bi-enhancements)  
-
--   [Financials enhancements](#financials-enhancements)  
-
--   [Distribution and supply chain enhancements](#distribution-and-supply-chain-enhancements)  
-
--   [Human Resources and Payroll enhancements](#human-resources-and-payroll-enhancements)  
 
 ## Platform and system-wide enhancements
 
@@ -76,7 +57,7 @@ Document attachment has been added to the following windows for GP 2018.
 
 ## Workflow 4.0
 
-The capabilities of workflow have been extended in the GP 2018. In addition to new workflows, including general ledger account aprovals and purchase order invoice approval, you can copy a step within a workflow, and send reminder email messages from workflow.
+The capabilities of workflow have been extended in the GP 2018. In addition to new workflows, including general ledger account approvals and purchase order invoice approval, you can copy a step within a workflow, and send reminder email messages from workflow.
 
 ### Reminder emails
 
@@ -126,31 +107,11 @@ A number of enhancements have been added to GP 2018 that make it easier and fast
 
 | Window                                     | New sorting options |
 |--------------------------------------------|---------------------|
-| Receivables Transaction Inquiry – Customer 
-                                             
- Receivables Transaction Inquiry – Document  | By type             
-                       
-  By document number   
-                       
-  By document amount   
-                       
-  By amount remaining  
-                       
-  Document date        |
-| Payables Transaction Inquiry – Vendor      
-                                             
- Payables Transaction Inquiry – Document     | By document number  
-                       
-  By type              
-                       
-  By original amount   
-                       
-  By unapplied amount  
-                       
-  By document date     |
-| Bank Reconciliation window                 | By payment amount   
-                       
-  By deposit amount    |
+| Receivables Transaction Inquiry – Customer ||
+| Receivables Transaction Inquiry – Document  | By type < /br>  By document number  < /br> By document amount < /br> By amount remaining < /br>  Document date        |
+| Payables Transaction Inquiry – Vendor ||
+| Payables Transaction Inquiry – Document     | By document number  < /br>  By type < /br>  By original amount < /br> By unapplied amount < /br> By document date     |
+| Bank Reconciliation window     | By payment amount  < /br>  By deposit amount    |
 
 ### Unique passwords can be entered for individual SmartList favorites. 
 
@@ -168,7 +129,7 @@ Functionality that recognizes partial entries in fields is now part of the web c
 
 A shortcut has been added to the banner in web client windows, allowing one-click navigation to SmartList – for those who have been granted access to SmartList. User whose permissions do not include SmartList won’t see the shortcut.
 
-![shows the purchasing homescreen in dynamics gp in a browser.](media/web-client-homescreen.png "Purchasing homescreen")  
+![shows the purchasing homescreen in dynamics GP in a browser.](media/web-client-homescreen.png "Purchasing homescreen")  
 
 Additional enhancements to the user experience include:
 
@@ -251,3 +212,6 @@ This enhancement lets you restrict the inactive records in lookup windows on a p
 ### Advanced wellness and health insurance integration
 
 This enhancement lets you track employee actions that contribute to lower insurance premiums, such as refraining from smoking or maintaining membership in a gym or health club.
+
+## See Also
+[What's New](introduction.md)  

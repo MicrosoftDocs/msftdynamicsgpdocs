@@ -1,6 +1,10 @@
 # [Welcome to the Developer and IT-Pro Help for Microsoft Dynamics GP](index.md)
-## [What's new]
+## What's new
 ### [Introduction](whats-new/introduction.md)
+### [What's new in Dynamics GP 2018](whats-new/whats-new-in-gp-2018.md)
+### [What's new in Dynamics GP 2016 R2](whats-new/whats-new-in-dynamics-gp-2016-r2.md)
+### [What's new in Dynamics GP 2016](whats-new/whats-new-in-dynamics-gp-2016.md)
+### [What's new in Dynamics GP 2015](whats-new/whats-new-in-dynamics-gp-2015.md)
 ## Installation
 ### [System requirements](upgrade/system-requirements.md)
 ### [Installation checklist](installation/checklist.md)

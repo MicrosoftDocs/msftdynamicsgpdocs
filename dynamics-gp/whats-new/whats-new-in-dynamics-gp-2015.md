@@ -6,29 +6,16 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.date: 08/24/2018
 ms.service: dynamicsgp
 ms.topic: article
-ms.assetid: 271fffb2-d379-4097-b1f2-47c883c9d026
 ms.reviewer: 
+ms.date: 09/05/2018
 ---
 <span id="_Toc499823860" class="anchor"></span>
 
 # What’s new in Dynamics GP 2015
 
 This document describes enhancements that were added to the product since the release of Microsoft Dynamics GP 2015. Some enhancements described in this documentation are optional and can be purchased through your Microsoft partner. If you currently have a license for one of these modules and have an active enhancement program, you automatically will receive the enhancements contained in that module.
-
-The information is organized in the following sections:
-
--   Workflow enhancements
-
--   Platform enhancements
-
--   Reporting enhancements
-
--   Purchasing and sales enhancements
-
--   Other enhancements
 
 ## Workflow enhancements
 
@@ -328,3 +315,7 @@ Before you can use this app to create, view, modify, and/or submit timecards, yo
 If the accrue type is Payroll, the app allows you to enter time codes against vacation or sick time paycodes.
 
 If the accrue type is HR, the app allows you to enter time against Time Codes that are setup as Benefit Time Types. A calendar within the app allows you to see what pay periods are active and shows you which codes and dates a user has entered time off against.
+
+# See Also
+
+[What's New](introduction.md)  
