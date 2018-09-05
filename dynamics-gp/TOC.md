@@ -7,7 +7,7 @@
 ## Web components
 ### [Introduction](web-components/introduction.md)
 ### [Installation overview](web-components/installation-overview.md)
-### [Deployment configurations](web-components/deployment-configuration.md)
+### [Deployment configurations](web-components/deployment-configurations.md)
 ## Upgrade
 ### [Introduction](upgrade/introduction.md)
 ### [Upgrade Checklist](upgrade/upgrade-checklist.md)
