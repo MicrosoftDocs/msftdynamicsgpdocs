@@ -1,3 +1,17 @@
+---
+title: "Installation overview for web components"
+description: "Get an introduction to the Microsoft Dynamics GP web components and introduces the major parts of the installation."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 2351bb7b-8f14-4b7d-b4ed-8b97f7974617
+ms.reviewer: 
+---
 <span id="_Toc498953269" class="anchor"></span>
 
 # Installation overview
@@ -26,7 +40,7 @@ No client application software is installed on the user ’s local system. The M
 
 The following illustration shows the Sales area page in the Microsoft Dynamics GP Web Client.
 
-![Chapter 1 Installation overview image1](media/Chapter-1-Installation-overview-image1.png)  
+![shows the sales area homescreen in dynamics gp in a browser.](media/web-client-homescreen-sales.png "Sales homescreen")  
 
 ## Parts of the web components
 

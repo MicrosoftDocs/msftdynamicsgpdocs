@@ -1,3 +1,17 @@
+---
+title: "Getting started"
+description: "Get started with the installation guide for Dynamics GP."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: acc14b11-45d6-4f70-aac8-6162ac742b57
+ms.reviewer: 
+---
 |                     |
 |---------------------|
 | 1.  Getting Started |

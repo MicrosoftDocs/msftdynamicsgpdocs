@@ -1,3 +1,17 @@
+---
+title: "Manage the logging for Dynamics GP web components"
+description: "Learn how you can troubleshoot Dynamics GP web components."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 6efe635c-3de1-42e0-b23a-a9988979ef1f
+ms.reviewer: 
+---
 <span id="_Toc498953343" class="anchor"></span>
 
 # Logging

@@ -1,3 +1,17 @@
+---
+title: "Security certificates"
+description: "Learn about the security certificates that you use for your Dynamics GP web components deployment."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: bd90d3c1-2593-454a-97a0-316f70f38cff
+ms.reviewer: 
+---
 <span id="_Toc498953302" class="anchor"></span>
 
 # Security certificates and SSL
@@ -32,7 +46,7 @@ It’s essential that the security certificate that you are using for the runtim
 
 To verify that a security certificate has a private key, you can view the details of the certificate file. At the bottom of the details, you should see that the certificate has a private key. If it does not, then the security certificate cannot be used for the runtime service.
 
-![Chapter 9 Security certificates and SSL image1](media/Chapter-9-Security-certificates-and-SSL-image1.PNG)  
+![shows the windows dialog for verifying a certificate's properties.](media/manage-web-certificate-information.png "Deployment")  
 
 ## Externally signed security certificates
 
@@ -72,7 +86,7 @@ To use an externally signed security certificate:
 
 4. In the IIS group, open Server Certificates.
 
-![Chapter 9 Security certificates and SSL image2](media/Chapter-9-Security-certificates-and-SSL-image2.PNG)  
+![shows the iis with server certificates selected.](media/manage-web-certificates-iis.png "Deployment")  
 
 5. Install the certificate, based on the type of file that has been provided:
 
@@ -116,11 +130,11 @@ To configure the web site for SSL
 
 4. In the Site Binding window, click Add.
 
-![Chapter 9 Security certificates and SSL image3](media/Chapter-9-Security-certificates-and-SSL-image3.PNG)  
+![shows the site bindings dialog.](media/manage-web-ssl-site-bindings.png "Deployment")  
 
 5. In the Add Site Bindings window, select https for the type, and then choose an SSL certificate that you installed.
 
-![Chapter 9 Security certificates and SSL image4](media/Chapter-9-Security-certificates-and-SSL-image4.PNG)  
+![shows the add site binding dialog.](media/manage-web-ssl-site-binding-add.png "Deployment")  
 
 Click OK.
 
@@ -136,7 +150,7 @@ To install a security certificate
 
 2. In the Open field, type MMC and then click OK.
 
-![Chapter 9 Security certificates and SSL image5](media/Chapter-9-Security-certificates-and-SSL-image5.PNG)  
+![shows the windows run dialog with the command to run mmc.](media/manage-certificate-run-mmc.png "Certificates")  
 
 3. In the Microsoft Management Console, open the File menu and choose Add/ Remove Snap-in.
 
@@ -150,7 +164,7 @@ To install a security certificate
 
 8. In the left pane, expand the Certificates (Local Computer) node, and then expand the Personal node.
 
-![Chapter 9 Security certificates and SSL image6](media/Chapter-9-Security-certificates-and-SSL-image6.PNG)  
+![shows the certificates console snap-in.](media/manage-certificate-mmc.png "Certificates")  
 
 9. Under Personal, right-click the Certificates node, point to All Tasks, and then click Import.
 

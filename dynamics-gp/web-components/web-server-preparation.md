@@ -1,3 +1,17 @@
+---
+title: "Web server"
+description: "Learn about configuring the web server."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 3124e11d-c5ba-49b4-88d6-3ff8773bc5ed
+ms.reviewer: 
+---
 |                            |
 |----------------------------|
 | 1.  Web server preparation |

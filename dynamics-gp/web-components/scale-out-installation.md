@@ -1,3 +1,17 @@
+---
+title: "Installing on multiple computers"
+description: "Learn how to install the Dynamics GP web components in the scale out configuration."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 91d3c5e3-a1ca-45e6-9a79-3b091921f838
+ms.reviewer: 
+---
 <span id="_Toc498953314" class="anchor"></span>
 
 # Scale out installation
@@ -30,13 +44,13 @@ Use the following procedure to install components on the web server machine.
 
 4. Click **Custom**.
 
-![Chapter 11 Scale out installation image1](media/Chapter-11-Scale-out-installation-image1.PNG)  
+![shows a screen for selecting to install on a single computer or a customer installation.](media/install-web-01.png "Installation options")  
 
 5. Select the features that you want to install. On the web server machine, you will typically install the Web Server, Session Central, Web Site, and the Web Management Console.
 
 The Web Management Console and the management snap-ins, SBA Session Manager, Tenant Manager and Web Client Session Manager, related to the web components you are installing. The GP Service feature for Service Based Architecture.
 
-![Chapter 11 Scale out installation image2](media/Chapter-11-Scale-out-installation-image2.PNG)  
+![shows a screen for selecting which features to install.](media/install-web-02.png "Select features")  
 
 If you are using the Tenant Service, you should mark the Tenant Manager snap- in as well. Use the default location for the installed components or choose a different location.
 
@@ -44,7 +58,7 @@ Click **Next** to continue.
 
 6. Specify the SQL Server that will manage the Web Components database. You must supply credentials that allow you to connect to the SQL Server and create the database.
 
-![Chapter 11 Scale out installation image3](media/Chapter-11-Scale-out-installation-image3.PNG)  
+![shows a screen for installing the web components database.](media/install-web-database.png "Database")  
 
 If the user installing the Microsoft Dynamics GP web components has sufficient privileges, you can use Windows Trusted Authentication. Otherwise, you should use SQL Authentication and supply a SQL Login ID and Password for a SQL user account with sufficient privileges.
 
@@ -52,7 +66,7 @@ Click **Next** to continue.
 
 7. Select the supported Authentication Type.
 
-![Chapter 11 Scale out installation image4](media/Chapter-11-Scale-out-installation-image4.PNG)  
+![shows a screen for choosing the authentication type.](media/install-web-authentication.png "Authentication type")  
 
 Select whether you will allow users to authenticate to the Microsoft Dynamics GP web client and service based architecture using their Windows Account, Organizational Account or Mixed Mode. Since a single Microsoft Dynamics GP system database can be set up for either Windows or Organizational Accounts, select Mixed Mode only if you are using a multitenant configuration with some tenants using Windows and some tenants using Organizational Accounts.
 
@@ -60,11 +74,11 @@ If you have selected Organizational Account or Mixed Mode, provide the Organizat
 
 Click **Next** to continue.
 
-![Chapter 11 Scale out installation image4](media/Chapter-11-Scale-out-installation-image4.PNG)  
+![shows a screen for choosing the authentication type.](media/install-web-authentication.png "Authentication type")  
 
 8. Supply the name of the Windows account configured as the "Log On As" account for the SQL Server service hosting the Microsoft Dynamics GP databases. The dialog is only displayed when selecting Organizational Account or Mixed Mode for the authentication type.
 
-![Chapter 11 Scale out installation image5](media/Chapter-11-Scale-out-installation-image5.PNG)  
+![shows a screen for specifying the account for the dynamics workflow access.](media/install-web-workflow-system-access.png "Workflow system access")  
 
 Provide a Windows security group for a multitenant deployment with different Windows accounts.
 
@@ -74,7 +88,7 @@ Click **Next** to continue.
 
 For machine groups, the name must be prefixed by the machine name. For domain groups, the name must be prefixed by the domain name.
 
-![Chapter 11 Scale out installation image6](media/Chapter-11-Scale-out-installation-image6.PNG)  
+![shows a screen for the windows grous that users must be members of.](media/install-web-windowsusers.png "Windows user groups")  
 
 Click **Next** to continue.
 
@@ -84,7 +98,7 @@ Refer to the Tenant Installation and Administration Guide for complete details a
 
 11. Supply the information about the Microsoft Dynamics GP installation if this is not a multitenant configuration. This information is used to start a Microsoft Dynamics GP runtime process and creates a connection to the Microsoft Dynamics GP databases.
 
-![Chapter 11 Scale out installation image7](media/Chapter-11-Scale-out-installation-image7.PNG)  
+![shows a screen for connecting the web components to dynamics gp data.](media/install-web-gp-connection.png "GP Connection")  
 
 Specify the SQL Login and password for the Web Client SQL Server login that you created for the Microsoft Dynamics GP system database. You created this user when you ran Microsoft Dynamics GP Utilities during the installation of Microsoft Dynamics GP. You must specify the GP instance name to use service based architecture. If you only have a single installation of Microsoft Dynamics GP on your machine, leave the DEFAULT instance name. If you have a named instance, provide the instance name you provided during the installation. You must also specify the locations of the components for the Microsoft Dynamics GP installation. If you are not using the default locations for the Microsoft Dynamics GP components, use the Browse buttons to select the location of each component.
 
@@ -98,7 +112,7 @@ Click **Next** to continue.
 
 13. Configure the Session Central Service.
 
-![Chapter 11 Scale out installation image8](media/Chapter-11-Scale-out-installation-image8.PNG)  
+![shows a screen for configuring the session central service.](media/install-web-sessioncentral.png "Session Central Service")  
 
 Specify the Port (the default is 48650). Optionally, you can specify the security certificate to use. You can use the same certificate that you are using for the Microsoft Dynamics GP web client site as long as the security certificate's common name is the address the Session Host machines can use to communicate with the 10 web server machine.
 
@@ -108,7 +122,7 @@ Click Next to continue.
 
 14. Select the web site that will host the Microsoft Dynamics GP web client. This site must have been configured to use secure sockets layer (SSL).
 
-![Chapter 11 Scale out installation image9](media/Chapter-11-Scale-out-installation-image9.PNG)  
+![shows a screen for configuring the website.](media/install-web-site.png "Website configuration")  
 
 Specify the user account that will run the application pool for the Microsoft Dynamics GP web client.
 
@@ -128,7 +142,7 @@ Click **Next** to continue.
 
 16. Configure the GP Service.
 
-![Chapter 11 Scale out installation image10](media/Chapter-11-Scale-out-installation-image10.PNG)  
+![shows a screen for connecting the web components to the dynamics gp service.](media/install-web-gp-service-connection.png "GP Connection")  
 
 Specify the Port (the default is 443).
 
@@ -174,11 +188,11 @@ Use the following procedure to install components on each session host machine. 
 
 4. Click Custom.
 
-![Chapter 11 Scale out installation image11](media/Chapter-11-Scale-out-installation-image11.PNG)  
+![shows a screen for selecting to install on a single computer or a customer installation.](media/install-web-01.png "Installation options")  
 
 5. Select the Session Server feature if installing the web client. Select the Dex Service Control feature if installing service based architecture.
 
-![Chapter 11 Scale out installation image12](media/Chapter-11-Scale-out-installation-image12.PNG)  
+![shows a screen for selecting which features to install.](media/install-web-02.png "Select features")  
 
 Specify the location where you want to install the web component files.
 
@@ -188,7 +202,7 @@ Click **Next** to continue.
 
 6. Specify the SQL Server that is managing the Web Components database. You must supply credentials that allow you to connect to the SQL Server and access this database.
 
-![Chapter 11 Scale out installation image3](media/Chapter-11-Scale-out-installation-image3.PNG)  
+![shows a screen for installing the web components database.](media/install-web-database.png "Database")  
 
 If the user installing the Microsoft Dynamics GP web components has sufficient privileges, you can use Windows Trusted Authentication. Otherwise, you should use SQL Authentication and supply a SQL Login ID and Password for a SQL user account with sufficient privileges.
 
@@ -196,7 +210,7 @@ Click **Next** to continue.
 
 7. Supply the name of the Windows security group that specifies which users can access the Microsoft Dynamics GP web client. For machine groups, the name must be prefixed by the machine name. For domain groups, the name must be prefixed by the domain name.
 
-![Chapter 11 Scale out installation image14](media/Chapter-11-Scale-out-installation-image14.PNG)  
+![shows a screen for the windows grous that users must be members of.](media/install-web-windowsusers.png "Windows user groups")  
 
 Click **Next** to continue.
 
@@ -208,7 +222,7 @@ Refer to the Tenant Installation and Administration Guide for complete details a
 
 9. Configure the Session Service.
 
-![Chapter 11 Scale out installation image15](media/Chapter-11-Scale-out-installation-image15.PNG)  
+![shows a screen for configuring the session service.](media/install-web-session.png "Session Service")  
 
 Specify the Port (the default is 48651). Optionally, you can specify the security certificate that you want to use. You can use the same certificate that you installed onto the server to use for the runtime service as long as the security certificate's common name is the address the Web Server machines can use to communicate with the session host machine.
 
@@ -218,7 +232,7 @@ Click **Next** to continue.
 
 10. Configure the Runtime Service URL.
 
-![Chapter 11 Scale out installation image16](media/Chapter-11-Scale-out-installation-image16.PNG)  
+![shows a screen for configuring the runtime service url.](media/install-web-runtime-url.png "Runtime service URL")  
 
 Specify the Port (the default is 443).
 
@@ -230,7 +244,7 @@ Click **Next** to continue.
 
 11. Configure the Dex Service Control.
 
-![Chapter 11 Scale out installation image17](media/Chapter-11-Scale-out-installation-image17.PNG)  
+![shows a screen for the dexterity service control service.](media/install-dexeterity-service-control.png "Service Control")  
 
 Specify the Port (the default is 48655). Optionally, you can specify the security certificate that you want to use. You can use the same certificate that you installed onto the server to use for the runtime service as long as the security certificate's common name is the address the Web Server machines can use to communicate with the session host machine.
 
@@ -260,11 +274,11 @@ You can use the Web Management Console to verify that the session host machines 
 
 4. In the Web Management Console, click the Session Management snap-in to verify the web client. You should see the session host machines listed in the pane on the left side of the console.
 
-![Chapter 11 Scale out installation image18](media/Chapter-11-Scale-out-installation-image18.PNG)  
+![shows the session management snap-in in the web management console.](media/install-web-session-management-console.png "Session Management")  
 
 5. In the Web Management Console, click the Dexterity Management snap-in to verify the web client. You should see the session host machines listed in the pane on the left side of the console.
 
-![Chapter 11 Scale out installation image19](media/Chapter-11-Scale-out-installation-image19.PNG)  
+![shows the service management part of the session management console.](media/install-web-dexterity-service-management.png "Service Management")  
 
 ## Creating a session
 
@@ -286,7 +300,7 @@ https://gpuaweb.contoso.com/GP
 
 3. After entering the URL, you will be directed to the logon page. This is the first page that will be displayed to users who are accessing the Microsoft Dynamics GP web client using a Windows Account. A deployment where users will use an Organizational Account for access will be redirected to the Azure sign in page.
 
-![Chapter 11 Scale out installation image20](media/Chapter-11-Scale-out-installation-image20.PNG)  
+![shows the login screen to dynamics gp in the browser.](media/install-web-login-03.png "GP login")  
 
 4. Enter your user credentials. These are domain user credentials or machine user credentials for a user that is part of the security group you created to control access to the Microsoft Dynamics GP web client. This security group is described in Chapter 5, “Security groups and user accounts.” These are not your Microsoft Dynamics GP login name and password. Enter your Organization Account credentials, if prompted, on the Azure sign-in page.
 
@@ -296,7 +310,7 @@ Click **Sign In**.
 
 -   If your Microsoft Dynamics GP user ID has Directory Account information, the Microsoft Dynamics GP login window will be displayed.
 
- ![Chapter 11 Scale out installation image21](media/Chapter-11-Scale-out-installation-image21.PNG)  
+ ![shows the login screen to dynamics gp using sql login.](media/install-web-login-01.png "GP login")  
 
 Log in with your Microsoft Dynamics GP login name and password.
 
@@ -306,7 +320,7 @@ Log in with your Microsoft Dynamics GP login name and password.
 
 **Multiple companies**   If you have access to multiple companies, the Company Login window will be displayed, allowing you to select the company to use.
 
-![Chapter 11 Scale out installation image22](media/Chapter-11-Scale-out-installation-image22.PNG)  
+![shows the login screen to a dynamics gp company.](media/install-web-login-02.png "GP login")  
 
 ## Verify the service based architecture installation
 
@@ -334,4 +348,4 @@ https://gpuaweb.contoso.com/GPService/Tenants(DefaultTenant)/help
 
 4. You should see results in your browser that look like the following image.
 
-![Chapter 11 Scale out installation image23](media/Chapter-11-Scale-out-installation-image23.PNG)  
+![](media/install-web-01.png "NA")  

@@ -1,3 +1,17 @@
+---
+title: "Using the web client"
+description: "Learn about the web client in daily use."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 2b2c1786-43d0-4748-ad6e-ab6646b408a6
+ms.reviewer: 
+---
 |                          |
 |--------------------------|
 | 1.  Using the Web client |

@@ -1,3 +1,17 @@
+---
+title: "Installing the web components"
+description: "Learn about installing the Dynamics GP web components."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 2908bee6-3113-4d7f-857e-1d5e3117a2c2
+ms.reviewer: 
+---
 |                                 |
 |---------------------------------|
 | 1.  Web components installation |

@@ -1,3 +1,17 @@
+---
+title: "Security groups and user accounts"
+description: "Learn which security groups you must set up for users who need access to the web client."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: eeff6d93-ce23-45de-9c8f-9bb43db99468
+ms.reviewer: 
+---
 <span id="_Toc498953288" class="anchor"></span>
 
 # Security groups and user accounts
@@ -12,7 +26,7 @@ To properly secure the Microsoft Dynamics GP web components installation, some s
 
 Security groups are used to control which users are allowed to access the Microsoft Dynamics GP web client and the Web Management Console. These security groups can be machine groups (for the single machine configuration) or domain groups. The domain groups must be security groups, not distribution groups.
 
-![Chapter 5 Security groups and user accounts image1](media/Chapter-5-Security-groups-and-user-accounts-image1.PNG)  
+![shows the windows dialog for creating a new security group.](media/web-client-user-groups.png "Deployment")  
 
 Typically, you should create one security group for the Microsoft Dynamics GP web client, and another security group for the Web Management Console. You can add individual users to these groups. If you have a more complex installation with a large number of users, you may want to create additional groups that you add users to.
 

@@ -1,3 +1,17 @@
+---
+title: 
+description: 
+keywords: 
+author: 
+ms.author: 
+manager: 
+applies_to: 
+ms.date: 09/05/2018
+ms.service: 
+ms.topic: 
+ms.assetid: fe61a18b-29c6-4198-877c-5f5dfa1bbef8
+ms.reviewer: 
+---
 Microsoft Dynamics GP
 
 GP 2018

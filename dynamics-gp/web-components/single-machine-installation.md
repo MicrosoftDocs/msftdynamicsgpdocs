@@ -1,3 +1,17 @@
+---
+title: "Installing on a single computer"
+description: "Learn how to install the Dynamics GP web components on a single computer."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 2d35bc19-6bfe-4284-9870-bb3b5ad6b2b1
+ms.reviewer: 
+---
 <span id="_Toc498953310" class="anchor"></span>
 
 # Single machine installation
@@ -24,11 +38,11 @@ Use the following steps to install the Microsoft Dynamics GP web components on a
 
 4. Click **Single Machine** to perform a single machine installation.
 
-![Chapter 10 Single machine installation image1](media/Chapter-10-Single-machine-installation-image1.PNG)  
+![shows a screen for selecting to install on a single computer or a customer installation.](media/install-web-01.png "Installation options")  
 
 5. Specify the SQL Server that will manage the Session Central database. You must supply credentials that allow you to connect to the SQL Server and create the database.
 
-![Chapter 10 Single machine installation image2](media/Chapter-10-Single-machine-installation-image2.PNG)  
+![shows a screen for installing the web components database.](media/install-web-database.png "Database")  
 
 If the user installing the Microsoft Dynamics GP web client has sufficient privileges, you can use Windows Trusted Authentication. Otherwise, you should use SQL Authentication and supply a SQL Login ID and Password for a SQL user account with sufficient privileges.
 
@@ -36,7 +50,7 @@ Click **Next** to continue.
 
 6. Configure the Session Central Service.
 
-![Chapter 10 Single machine installation image3](media/Chapter-10-Single-machine-installation-image3.PNG)  
+![shows a screen for configuring the session central service.](media/install-web-sessioncentral.png "Session Central Service")  
 
 Specify the Port (the default is 48650). Optionally, you can specify the security certificate that you want to use, however given all communication to the Session Central Service is initiated from other components on this server makes it unnecessary.
 
@@ -48,13 +62,13 @@ Click **Next** to continue.
 
 For machine groups, the name must be prefixed by the machine name. For domain groups, the name must be prefixed by the domain name.
 
-![Chapter 10 Single machine installation image4](media/Chapter-10-Single-machine-installation-image4.PNG)  
+![shows a screen for the windows grous that users must be members of.](media/install-web-windowsusers.png "Windows user groups")  
 
 Click **Next** to continue.
 
 8. Supply the information about the Microsoft Dynamics GP installation. This information is used to start a Microsoft Dynamics GP runtime process and creates a connection to the Microsoft Dynamics GP databases.
 
-![Chapter 10 Single machine installation image5](media/Chapter-10-Single-machine-installation-image5.PNG)  
+![shows a screen for connecting the web components to dynamics gp data.](media/install-web-gp-connection.png "GP Connection")  
 
 Specify the SQL Login and password for the Web Client SQL Server login that you created for the Microsoft Dynamics GP system database. You created this user when you ran Microsoft Dynamics GP Utilities during the installation of Microsoft Dynamics GP. You must specify the GP instance name to use service based architecture. If you only have a single installation of Microsoft Dynamics GP on your machine, leave the DEFAULT instance name. If you have a named instance, provide the instance name you provided during the installation. You must also specify the locations of the components for the Microsoft Dynamics GP installation. If you are not using the default locations for the Microsoft Dynamics GP components, use the Browse buttons to select the location of each component.
 
@@ -62,7 +76,7 @@ Click **Next** to continue. You will be prompted to re-enter the password for th
 
 9. Select the web site that will host the Microsoft Dynamics GP web client. This site must have been configured to use secure sockets layer (SSL).
 
-![Chapter 10 Single machine installation image6](media/Chapter-10-Single-machine-installation-image6.PNG)  
+![shows a screen for configuring the website.](media/install-web-site.png "Website configuration")  
 
 Specify the user account that will run the application pool for the Microsoft Dynamics GP web client.
 
@@ -72,7 +86,7 @@ Click **Next** to continue.
 
 10. Configure the Session Service.
 
-![Chapter 10 Single machine installation image7](media/Chapter-10-Single-machine-installation-image7.PNG)  
+![shows a screen for configuring the session service.](media/install-web-session.png "Session Service")  
 
 Specify the Port (the default is 48651). Optionally, you can specify the security certificate that you want to use, however given all communication to the Session Central Service is initiated from other components on this server makes it unnecessary.
 
@@ -82,7 +96,7 @@ Click **Next** to continue.
 
 11. Configure the Runtime Service URL.
 
-![Chapter 10 Single machine installation image8](media/Chapter-10-Single-machine-installation-image8.PNG)  
+![shows a screen for configuring the runtime service url.](media/install-web-runtime-url.png "Runtime service URL")  
 
 Specify the Port (the default is 443).
 
@@ -94,7 +108,7 @@ Click **Next** to continue.
 
 12. Configure the GP Service.
 
-![Chapter 10 Single machine installation image9](media/Chapter-10-Single-machine-installation-image9.PNG)  
+![shows a screen for connecting the web components to the dynamics gp service.](media/install-web-gp-service-connection.png "GP Connection")  
 
 Specify the Port (the default is 443).
 
@@ -142,7 +156,7 @@ https://gpuaweb.contoso.com/GP
 
 3. After entering the URL, you will be directed to the logon page. This is the first page that will be displayed to users who are accessing the Microsoft Dynamics GP web client.
 
-![Chapter 10 Single machine installation image9](media/Chapter-10-Single-machine-installation-image9.PNG)  
+![shows a screen for connecting the web components to the dynamics gp service.](media/install-web-gp-service-connection.png "GP Connection")  
 
 If you are using a self-signed security certificate and are accessing the Microsoft Dynamics GP web client from another computer, you will see a certificate error. To resolve this error, you must import the security certificate into the certificate store on the machine that is accessing the web client.
 
@@ -154,7 +168,7 @@ Click **Sign In**.
 
 If your Microsoft Dynamics GP user ID has only SQL Server Account information, the Microsoft Dynamics GP login window will be displayed.
 
-![Chapter 10 Single machine installation image10](media/Chapter-10-Single-machine-installation-image10.PNG)  
+![shows the login screen to dynamics gp using sql login.](media/install-web-login-01.png "GP login")  
 
 Log in with your Microsoft Dynamics GP login name and password.
 
@@ -164,7 +178,7 @@ If your Microsoft Dynamics GP user ID has Windows Account information, the Web C
 
 **Multiple companies**   If you have access to multiple companies, the Company Login window will be displayed, allowing you to select the company to use.
 
-![Chapter 10 Single machine installation image11](media/Chapter-10-Single-machine-installation-image11.PNG)  
+![shows the login screen to a dynamics gp company.](media/install-web-login-02.png "GP login")  
 
 ## Verify the Service Based Architecture installation
 
@@ -192,4 +206,4 @@ https://gpuaweb.contoso.com/GPService/Tenants(DefaultTenant)/help
 
 4. You should see results in your browser that look like the following image.
 
-![Chapter 10 Single machine installation image12](media/Chapter-10-Single-machine-installation-image12.PNG)  
+![shows a browser after logging in.](media/install-web-verification.png "Verify the installation")  

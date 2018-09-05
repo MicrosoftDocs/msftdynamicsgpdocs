@@ -1,3 +1,17 @@
+---
+title: "Back office server"
+description: "Learn about the steps for making your Dynamics GP web deployment more secure."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 40f5fc79-4720-4b97-a598-a385d9fc6da6
+ms.reviewer: 
+---
 |                                    |
 |------------------------------------|
 | 1.  Back office server preparation |

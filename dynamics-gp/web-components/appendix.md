@@ -1,3 +1,17 @@
+---
+title: "Appendix"
+description: "Get additional information about deploying Dynamics GP web components."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: da026061-69b2-4ac0-9c24-af40c0aa141f
+ms.reviewer: 
+---
 |          |
 |----------|
 | Appendix |
@@ -8,8 +22,8 @@
 
 The following appendices are included for this documentation:
 
--   [Appendix A, “Importing a Self-signed Security Certificate,”](#_Importing_a_Self-signed) describes how to import the security certificate onto a local computer when you are using a self-signed security certificate for the Microsoft Dynamics GP web client installation.  
+-   [Appendix A, “Importing a Self-signed Security Certificate,”](importing-a-self-signed-security-certificate.md) describes how to import the security certificate onto a local computer when you are using a self-signed security certificate for the Microsoft Dynamics GP web client installation.  
 
--   [Appendix B, “Default domain,”](#_Default_domain) explains how to configure a default domain for a Microsoft Dynamics GP web client installation.  
+-   [Appendix B, “Default domain,”](default_domain.md) explains how to configure a default domain for a Microsoft Dynamics GP web client installation.  
 
 -   

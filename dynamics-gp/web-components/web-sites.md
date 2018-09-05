@@ -1,3 +1,17 @@
+---
+title: "Web sites"
+description: "Get an overview of the websites that your must set up  for the Dynamics GP web components."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 40172c16-c363-49ac-ae76-38c7194e1f76
+ms.reviewer: 
+---
 <span id="_Toc498953299" class="anchor"></span>
 
 # Web sites

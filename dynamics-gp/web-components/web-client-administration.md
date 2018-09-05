@@ -1,3 +1,17 @@
+---
+title: "Managing the web client"
+description: "Learn about administering the web client."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 02d98c8a-35e6-4bf8-9d84-9ed35062acc2
+ms.reviewer: 
+---
 |                               |
 |-------------------------------|
 | 1.  Web client administration |

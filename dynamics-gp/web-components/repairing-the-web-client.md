@@ -1,3 +1,17 @@
+---
+title: "Repearing the Dynamics GP web components"
+description: "Learn how you can repair a deployment of the Dynamics GP web components."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: b962aa1e-8900-4b47-936f-731caf43f5f2
+ms.reviewer: 
+---
 <span id="_Toc498953347" class="anchor"></span>
 
 # Repairing the web client
@@ -36,11 +50,11 @@ To repair the Microsoft Dynamics GP web client installation, complete the follow
 
 4. In Program Maintenance, click **Repair**.
 
-![Chapter 16 Repairing the web client image1](media/Chapter-16-Repairing-the-web-client-image1.PNG)  
+![choose the features to add or remove.](media/add-remove-features.png "Feature selector")  
 
 5. The components to be configured during the repair process will depend upon which components are installed on the machine where the repair is being performed. Supply the required values for each component that will be repaired. For example, if you were replacing an expired security certificate, you would choose the new certificate during the repair process.6. After all of the components have been configured, click **Next** to start the repair actions. The repair steps will be performed.
 
-![Chapter 16 Repairing the web client image2](media/Chapter-16-Repairing-the-web-client-image2.PNG)  
+![shows a screen for configuring the runtime service url.](media/install-web-runtime-url.png "Runtime service URL")  
 
 6. After all of the components have been configured, click **Next** to start the repair actions. The repair steps will be performed.
 

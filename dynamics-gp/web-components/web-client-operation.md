@@ -1,3 +1,17 @@
+---
+title: "Web client runtime"
+description: "Learn how all of the components of the Dynamics GP web client installation work together as a user logs in, performs standard operations, and logs out of the web client."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 5228d0cd-89a9-4611-b3a9-b2d9fe3ac22e
+ms.reviewer: 
+---
 <span id="_Toc498953278" class="anchor"></span>
 
 # Web Client Operation
@@ -14,25 +28,25 @@ It is important to understand how all of the components of the Microsoft Dynamic
 
 The logon process has multiple steps, although most of them are not visible to the web client user. For simplicity, the log on process for a typical scale out configuration is described. The parts of the configuration are shown in the following illustration.
 
-![Chapter 3 Web client operation image1](media/Chapter-3-Web-client-operation-image1.PNG)  
+![shows a sample network topology for a client machine communicating with dynamics gp web components.](media/web-client-runtime-01.png "Deployment")  
 
 *1. User accesses the web client site.*
 
 In the first step of the logon process, the client machine with a web browser accesses the URL for the Microsoft Dynamics GP web client site. The logon page for the site is displayed.
 
-![Chapter 3 Web client operation image2](media/Chapter-3-Web-client-operation-image2.PNG)  
+![shows a sample network topology for a client machine communicating with dynamics gp web components with step 1 for displaying the login screen.](media/web-client-runtime-02.png "Deployment")  
 
 *2. The user supplies their windows account credentials. *
 
 Typically, these will be their domain credentials, but could also be their Organizational Account credentials. If the web site can verify that the user is allowed to access the Microsoft Dynamics GP web client, the logon process is allowed to proceed.
 
-![Chapter 3 Web client operation image3](media/Chapter-3-Web-client-operation-image3.PNG)  
+![shows a sample network topology for a client machine communicating with dynamics gp web components with step 2 for the user logging in.](media/web-client-runtime-03.png "Deployment")  
 
 *3. The Session Central Service directs the session request.*
 
 Session information for the current user is retrieved.
 
-![Chapter 3 Web client operation image4](media/Chapter-3-Web-client-operation-image4.PNG)  
+![shows a sample network topology for a client machine communicating with dynamics gp web components with step 3 for web server sending session information to the user.](media/web-client-runtime-04.png "Deployment")  
 
 The session Central Service performs several action to determine how it will direct the user ’s request.
 
@@ -42,25 +56,25 @@ The session Central Service performs several action to determine how it will dir
 
 *4. The HTML application is loaded into the browser on the client computer.*
 
-![Chapter 3 Web client operation image5](media/Chapter-3-Web-client-operation-image5.PNG)  
+![shows a sample network topology for a client machine communicating with dynamics gp web components with step 3 for session server sending a session through web server and then to the client machine.](media/web-client-runtime-05.png "Deployment")  
 
 *5. The Session Service creates a new runtime session.*
 
 On the session host machine that was chosen by the Session Central Service, the Session Service will create a new instance of the runtime service. This is the process that accesses the business logic in the application dictionaries and the data in the SQL database. It also communicates with the application to display the client user interface.
 
-![Chapter 3 Web client operation image6](media/Chapter-3-Web-client-operation-image6.PNG)  
+![shows a sample network topology for a client machine communicating with dynamics gp web components with step 5 for session service creating a new runtime session.](media/web-client-runtime-06.png "Deployment")  
 
 *6. The Microsoft Dynamics GP application is displayed.*
 
 After the connection is established between the HTML application on the client and the runtime session on the session server machine, the Microsoft Dynamics GP application will start. If the user credentials can be matched to a Microsoft Dynamics GP user account, the user will be signed in. Otherwise, the login window will be displayed.
 
-![Chapter 3 Web client operation image7](media/Chapter-3-Web-client-operation-image7.PNG)  
+![shows a sample network topology for a client machine communicating with dynamics gp web components with step 6 for displaying the dynamics gp application with data from sql server.](media/web-client-runtime-07.png "Deployment")  
 
 ## Standard operations
 
 When a user logs on to the Microsoft Dynamics GP web client, a connection is created between the HTML application that is loaded in the web browser and the runtime session that is created on the session host server. After this connection is established, the web server that hosts the site for the Microsoft Dynamics GP web client does not play any part in the interaction.
 
-![Chapter 3 Web client operation image8](media/Chapter-3-Web-client-operation-image8.PNG)  
+![shows a sample network topology for a client machine communicating with dynamics gp web components with data passing through the tiers during standard operations.](media/web-client-runtime-08.png "Deployment")  
 
 The connection between the HTML application and the runtime session transmits all of the information needed to present the application user interface, as well as any input supplied by the user. The runtime session on the session server machine interacts with the SQL Server database, just as the Microsoft Dynamics GP desktop client would.
 

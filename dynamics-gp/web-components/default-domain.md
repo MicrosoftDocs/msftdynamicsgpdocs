@@ -1,3 +1,17 @@
+---
+title: "Configure a default domain"
+description: "Learn how you can configure a default domain so users don't have to add it manually during log in."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: fa141208-7ffa-423b-a019-2573377a0e74
+ms.reviewer: 
+---
 <span id="_Toc498953380" class="anchor"></span>
 
 # Default domain

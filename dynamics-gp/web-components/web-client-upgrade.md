@@ -1,3 +1,17 @@
+---
+title: "Upgrading the web client"
+description: "Learn about the upgrade process."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 10babfe6-a795-4c11-8808-98d86cc60c40
+ms.reviewer: 
+---
 |                        |
 |------------------------|
 | 1.  Web client upgrade |

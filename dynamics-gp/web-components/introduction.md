@@ -1,3 +1,17 @@
+---
+title: "Web components overview"
+description: "Landing page for content about Dynamics GP web components."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 3d258f3c-e6d6-4d63-a362-2b33db528ae1
+ms.reviewer: 
+---
 |              |
 |--------------|
 | Introduction |

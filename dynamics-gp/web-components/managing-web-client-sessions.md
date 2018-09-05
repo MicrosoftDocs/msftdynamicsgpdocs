@@ -1,3 +1,17 @@
+---
+title: "Manage the Dynamics GP web components"
+description: "Learn how you can manage web component sessions as an administrator of Dynamics GP."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 75a73ebc-01c1-489a-8a15-8bf40badd6a0
+ms.reviewer: 
+---
 <span id="_Toc498953334" class="anchor"></span>
 
 # Managing web client sessions
@@ -40,7 +54,7 @@ https://gpuaweb.contoso.com/WebManagementConsole
 
 4. In the Web Management Console, click the Session Management snap-in.
 
-![Chapter 14 Managing web client sessions image1](media/Chapter-14-Managing-web-client-sessions-image1.PNG)  
+![shows the session management snap-in in the web management console.](media/manage-web-session-management-console.png "Session Management")  
 
 ## Connecting to Session Central
 

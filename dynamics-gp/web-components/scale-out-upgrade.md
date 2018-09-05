@@ -1,3 +1,17 @@
+---
+title: "Upgrade Dynamics GP web components"
+description: "Learn how to upgrade the Dynamics GP web components  in the scale out configuration."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: e9b7fc59-b6af-49c8-b009-62ae19cb5026
+ms.reviewer: 
+---
 <span id="_Toc498953327" class="anchor"></span>
 
 # Scale out upgrade
@@ -36,11 +50,11 @@ To install the upgrade for the web site and the Session Central Service, complet
 
 4. Select to upgrade your existing web client installation.
 
-![Chapter 13 Scale out upgrade image1](media/Chapter-13-Scale-out-upgrade-image1.PNG)  
+![shows the notification that an earlier version of the dynamics gp web components has been detected.](media/upgrade-web.png "Upgrade warning")  
 
 5. The installation wizard will default with the selections from the installation being upgraded. You can change settings as needed. You can also select to add the service based architecture components to the installation. Upgrading the database will ask you for a new database name, defaulting to GPCONFIGURATION. The data will be migrated to the new database when running the configuration wizard.
 
-![Chapter 13 Scale out upgrade image2](media/Chapter-13-Scale-out-upgrade-image2.PNG)  
+![shows the dialog for creating anew database as part of upgrading the web components.](media/upgrade-web-new-database.png "Database")  
 
 6. When the installation is complete, run the Dynamics GP Web Components Configuration Wizard. You can access this from the Start menu.
 

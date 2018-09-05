@@ -1,3 +1,17 @@
+---
+title: "Configuring Dynamics GP"
+description: "Learn how to prepare your Dynamics GP deployment so that you can install the web components."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: f7200048-1617-470d-a01c-8fad05a3a85b
+ms.reviewer: 
+---
 <span id="_Toc498953283" class="anchor"></span>
 
 # Microsoft Dynamics GP configuration

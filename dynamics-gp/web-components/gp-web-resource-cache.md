@@ -1,3 +1,17 @@
+---
+title: "GP Web Resource Cache"
+description: "Learn how the GP Resource Web Cache tool can help you monitor deployments."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 1b4d1c9a-8ad7-497e-9a22-a7206cd1e516
+ms.reviewer: 
+---
 <span id="_Toc498953350" class="anchor"></span>
 
 # GP Web Resource Cache
@@ -40,7 +54,7 @@ To install the GP Web Resource Cache:
 
 3. At the Welcome screen, click **Install**.
 
-![Chapter 17 GP Web Resource Cache image1](media/Chapter-17-GP-Web-Resource-Cache-image1.PNG)  
+![shows the installer for the web resource cache tool.](media/install-web-resource-cache.png "Web Resource Cache tool")  
 
 4. After the installation is complete, click Finish. The GP Web Resource Cache will begin working immediately.
 

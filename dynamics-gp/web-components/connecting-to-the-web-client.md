@@ -1,3 +1,17 @@
+---
+title: "Working with Dynamics GP web client"
+description: "Learn how to safely connect to and signing out from Dynamics GP in a browser."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 6844e057-ca52-4320-a8bc-dba383feb349
+ms.reviewer: 
+---
 <span id="_Toc498953363" class="anchor"></span>
 
 # Connecting to the web client
@@ -36,7 +50,7 @@ A typical URL to access the Microsoft Dynamics GP web client looks similar to th
 
 3. View the sign on page. If the site displays a security certificate error, report the issue to your system administrator, and do not continue the sign on process.
 
-![Chapter 19 Connectin to the web client image1](media/Chapter-19-Connectin-to-the-web-client-image1.PNG)  
+![shows the login screen to dynamics gp in the browser.](media/install-web-login-03.png "GP login")  
 
 4. Enter your user credentials (User Name and Password). These are either domain user credentials or machine user credentials, depending on how the web client installation is configured. The User Name will have the format:
 
@@ -60,7 +74,7 @@ If you are using a single tenant configuration, or have access to only one tenan
 
 -   If your Microsoft Dynamics GP user ID has only SQL Server Account information, the Microsoft Dynamics GP login window will be displayed.
 
-![Chapter 19 Connectin to the web client image3](media/Chapter-19-Connectin-to-the-web-client-image3.PNG)  
+![shows the login screen to dynamics gp using sql login.](media/install-web-login-01.png "GP login")  
 
 Log in with your Microsoft Dynamics GP login name and password.
 
@@ -70,7 +84,7 @@ Log in with your Microsoft Dynamics GP login name and password.
 
 **Multiple companies**   If you have access to multiple companies, the Company Login window will be displayed, allowing you to select the company to use.
 
-![Chapter 19 Connectin to the web client image4](media/Chapter-19-Connectin-to-the-web-client-image4.PNG)  
+![shows the login screen to a dynamics gp company.](media/install-web-login-02.png "GP login")  
 
 ## Disconnecting from a session
 
@@ -78,7 +92,7 @@ In general, you should avoid closing the web browser when you have an active con
 
 To help prevent you from accidentally closing the web browser, the following message is displayed when you attempt to close the web page or navigate away to another web page.
 
-![Chapter 19 Connectin to the web client image5](media/Chapter-19-Connectin-to-the-web-client-image5.PNG)  
+![shows a warning if you close the browser without disconnecting from dynamics gp.](media/using-web-disconnect.png "GP connection warning")  
 
 If you accidentally navigated away from the web client session, click **Cancel** to return to the web client.
 
@@ -100,7 +114,7 @@ To reconnect to a session:
 
 3. At the sign on page, enter your user credentials, and click **Sign In**. The Session Central Service will find any existing session that you had disconnected from. These sessions will be listed.
 
-![Chapter 19 Connectin to the web client image6](media/Chapter-19-Connectin-to-the-web-client-image6.PNG)  
+![shows a screen for reconnectng to earlier sessions of dynamics gp.](media/using-web-reconnect.png "GP connection")  
 
 4. Select the one of the sessions in the list and then click **Connect to Existing Session** to reconnect.
 
@@ -110,7 +124,7 @@ The web client will restore as many of the existing session’s session characte
 
 To exit the web client, click **Exit GP** in the upper-right corner of the web browser. You will be logged out of Microsoft Dynamics GP, the web client session will end on the server, and the exit page will be displayed.
 
-![Chapter 19 Connectin to the web client image7](media/Chapter-19-Connectin-to-the-web-client-image7.PNG)  
+![shows a confirmation that you have signed out from dynamics gp.](media/using-web-signout.png "GP connection warning")  
 
 To go back into Microsoft Dynamics GP, click **Enter Microsoft Dynamics GP**. If you had chosen the option to remember your user name and password on the sign on page, you will not be prompted for them.
 
@@ -132,11 +146,11 @@ If your Windows account information is associated with a Dynamics GP user, you w
 
 1. After the initial sign in operation is complete, click the user name in the lower- left corner of the web client.
 
-![Chapter 19 Connectin to the web client image8](media/Chapter-19-Connectin-to-the-web-client-image8.PNG)  
+![shows the standard dynamics gp log in window.](media/using-web-sa-dynsa.png "GP login")  
 
 2. The login window will be displayed. Choose **SQL Server Account** as the authentication type.
 
-![Chapter 19 Connectin to the web client image3](media/Chapter-19-Connectin-to-the-web-client-image3.PNG)  
+![shows the login screen to dynamics gp using sql login.](media/install-web-login-01.png "GP login")  
 
 3. Specify “sa” or “DYNSA” as the User ID. Enter the appropriate password, and then click **OK**.
 
@@ -144,7 +158,7 @@ If your Windows account information is associated with a Dynamics GP user, you w
 
 You may be accessing the Microsoft Dynamics GP web client through an intranet or over the Internet. Depending on the access method, you may need to adjust your web browser security settings to allow printing and local file access to work properly. Do this in the **Internet Options** window for Internet Explorer.
 
-![Chapter 19 Connectin to the web client image9](media/Chapter-19-Connectin-to-the-web-client-image9.PNG)  
+![shows how you can modify the browser's settings.](media/using-web-browser-settings.png "Internet Options")  
 
 You will have to do one or both of the following actions:
 

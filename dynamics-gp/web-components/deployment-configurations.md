@@ -1,3 +1,17 @@
+---
+title: "Deployment topologies"
+description: "Get an overview of deployment options for Dynamics GP."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 28ac89cc-0a21-456c-a209-39b6ddde3ef7
+ms.reviewer: 
+---
 <span id="_Toc498953274" class="anchor"></span>
 
 # Deployment configurations
@@ -16,7 +30,7 @@ The single machine configuration is the simplest configuration to use when deplo
 
 A typical single machine configuration is shown in the following illustration.
 
-![Chapter 2 Deployment configurations image1](media/Chapter-2-Deployment-configurations-image1.PNG)  
+![deployment topology for deploying to a single computer.](media/deploy-web-single-machine.png "Deployment")  
 
 This configuration is used when the number of users accessing the system is low. It is also commonly used by developers who are creating and testing integrations for Microsoft Dynamics GP.
 
@@ -30,7 +44,7 @@ The scale out configuration is used when an organization has a larger number of 
 
 A typical scale out configuration is shown in the following illustration.
 
-![Chapter 2 Deployment configurations image3](media/Chapter-2-Deployment-configurations-image3.PNG)  
+![deployment topology for deploying to multiple computers.](media/deploy-web-scale-out.png "Deployment")  
 
 The scale out configuration has some redundancy. If one of the session host machines must be taken out of service, such as when installing an update, the other session host machines will continue supporting web client users. A fully redundant configuration can be achieved by adding an additional Web Server that is load balanced with the initial Web Server. Additional session host machines can be added as needed to support a higher number of users.
 

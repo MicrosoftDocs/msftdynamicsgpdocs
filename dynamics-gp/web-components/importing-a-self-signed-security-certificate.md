@@ -1,10 +1,24 @@
+---
+title: "Importing certificates"
+description: "Learn how you can import a self-signed security certificate for Dynamics GP for test reasons."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 220c0681-465b-4887-a41a-597769a786ae
+ms.reviewer: 
+---
 <span id="_Toc498953379" class="anchor"></span>
 
 # Importing a Self-signed Security Certificate
 
 When you are using a self-signed security certificate, there is no certificate authority available to verify the certificate. If you use another computer to connect to the Microsoft Dynamics GP web client installation that is using a self-signed security certificate, you will see a certificate error displayed in the web browser.
 
-![Chapter 22 Appendix Importing self signed secrty cert image1](media/Chapter-22-Appendix-Importing-self-signed-secrty-cert-image1.PNG)  
+![shows the error page in a browser when a dynamics gp deployment uses a certificate with a problem.](media/manage-certificate-error.png "Certificates")  
 
 If the same self-signed security certificate is used for both the web site and for the web client runtime service, the certificate error can prevent you from successfully logging into the Microsoft Dynamics GP web client. The solution is to import the security certificate into the machine that will be accessing the web client. This appendix describes how to do this. First, you must retrieve the security certificate from the server, and then you must install the certificate onto your local machine.
 
@@ -16,7 +30,7 @@ To retrieve the security certificate
 
 3. The URL area of the browser you will appear in red, indicating a security certificate error. Click Certificate error to display the details of the error.
 
-![Chapter 22 Appendix Importing self signed secrty cert image2](media/Chapter-22-Appendix-Importing-self-signed-secrty-cert-image2.PNG)  
+![shows a popup with a warning about an untrusted certificate in the dynamics gp login screen.](media/manage-certificate-unrtusted.png "Certificates")  
 
 4. In the drop-down, click View certificates.
 
@@ -38,7 +52,7 @@ To install the security certificate
 
 2. In the Open field, type MMC and then click OK.
 
-![Chapter 22 Appendix Importing self signed secrty cert image3](media/Chapter-22-Appendix-Importing-self-signed-secrty-cert-image3.PNG)  
+![shows the windows run dialog with the command to run mmc.](media/manage-certificate-run-mmc.png "Certificates")  
 
 3. In the Microsoft Management Console, open the File menu and choose Add/ Remove Snap-in.
 
@@ -52,7 +66,7 @@ To install the security certificate
 
 8. In the left pane, expand the Certificates (Local Computer) node, and then expand the Trusted Root Certification Authorities node.
 
-![Chapter 22 Appendix Importing self signed secrty cert image4](media/Chapter-22-Appendix-Importing-self-signed-secrty-cert-image4.PNG)  
+![shows the certificates console snap-in.](media/manage-certificate-mmc.png "Certificates")  
 
 3. In the Microsoft Management Console, open the File menu and choose Add/ Remove Snap-in.
 
@@ -66,4 +80,4 @@ To install the security certificate
 
 8. In the left pane, expand the Certificates (Local Computer) node, and then expand the Trusted Root Certification Authorities node.
 
-![Chapter 22 Appendix Importing self signed secrty cert image5](media/Chapter-22-Appendix-Importing-self-signed-secrty-cert-image5.PNG)  
+![shows the login screen to dynamics gp in the browser.](media/install-web-login-03.png "GP login")  

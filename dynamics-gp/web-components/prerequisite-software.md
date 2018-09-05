@@ -1,3 +1,17 @@
+---
+title: "System requirements"
+description: "See the prerequisite software that you must install before you can deploy Dynamics GP web components."
+keywords: "web components"
+author: edupont04
+ms.author: edupont
+manager: annbe
+applies_to: 
+ms.date: 09/05/2018
+ms.service: dynamicsgp
+ms.topic: article
+ms.assetid: 219626ce-5dbe-4b61-b67b-6bee6d628e3b
+ms.reviewer: 
+---
 <span id="_Toc498953296" class="anchor"></span>
 
 # Prerequisite software
@@ -80,7 +94,7 @@ To install these items, complete the following steps for Windows Server 2012 and
 
 7. Select the features to install. Be sure that you mark **ASP.NET 4.5**. In the **WCF Services** group under .**NET Framework 4.5 Features**, be sure that you have marked **HTTP Activation**.
 
-![Chapter 7 Prerequisite software image1](media/Chapter-7-Prerequisite-software-image1.PNG)  
+![shows how you can modify the settings for .net framework 4.5.](media/install-dotnet.png "Deployment")  
 
 Click **Next**.
 
