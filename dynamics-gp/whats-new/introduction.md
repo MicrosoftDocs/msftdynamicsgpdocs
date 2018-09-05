@@ -22,13 +22,13 @@ Some enhancements described in this documentation are optional and can be purcha
 
 The What’s New for Microsoft Dynamics GP continues to be updated with descriptions of enhancements that have been added to the product since the release of GP 2015. The enhancements are organized into the following chapters:
 
-- [What’s new in GP 2018](whats_new_in_dynamics-gp-2018.md)  
+- [What’s new in GP 2018](whats-new-in-dynamics-gp-2018.md)  
 
-- [What’s new in Dynamics GP 2016 R2](whats_new_in_dynamics-gp-2016-r2.md)  
+- [What’s new in Dynamics GP 2016 R2](whats-new-in-dynamics-gp-2016-r2.md)  
 
-- [What’s new in Dynamics GP 2016](whats_new_in_dynamics-gp-2016.md)  
+- [What’s new in Dynamics GP 2016](whats-new-in-dynamics-gp-2016.md)  
 
-- [What’s new in Dynamics GP 2015](whats_new_in_dynamics-gp-2015.md)  
+- [What’s new in Dynamics GP 2015](whats-new-in-dynamics-gp-2015.md)  
 
 ## Additional resources
 
