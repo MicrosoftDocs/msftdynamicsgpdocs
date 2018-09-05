@@ -6,29 +6,15 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.date: 08/24/2018
 ms.service: dynamicsgp
 ms.topic: article
-ms.assetid: 3b34f337-6d08-491c-97ba-508c10b52662
 ms.reviewer: 
+ms.date: 09/05/2018
 ---
-<span id="_Toc499823853" class="anchor"></span>
 
 # What’s new in Dynamics GP 2016
 
 The following sections describe enhancements included in Microsoft Dynamics GP 2016.
-
--   [System-wide changes](#system-wide-changes)  
-
--   [Business Intelligence enhancements](#business-intelligence-enhancements)  
-
--   [Financial enhancements](#_Financial_enhancements)  
-
--   [Distribution enhancements](#distribution-enhancements)  
-
--   [Project Accounting enhancements](#project-accounting-enhancements)  
-
--   [Payroll enhancements](#payroll-enhancements)  
 
 ## System-wide changes
 
@@ -197,3 +183,7 @@ There is now an option to exclude inactive pay codes from lookup windows through
 ### Enhanced Payroll posting accounts setup
 
 Now you can see all posting accounts in a navigation list and filter and sort accounts using the functionality that’s typically available for navigation lists. You also can export the accounts to Excel, edit them there, and then import them. On the import, an exception report will print when there are any duplicate accounts, missing accounts or when there are payroll data or other issues that cause the record import to fail.
+
+## See Also
+
+[What's New](introduction.md)  

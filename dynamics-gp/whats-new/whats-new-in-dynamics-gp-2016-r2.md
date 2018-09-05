@@ -6,23 +6,15 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.date: 08/24/2018
 ms.service: dynamicsgp
 ms.topic: article
-ms.assetid: 16b4230b-41ed-4377-87ab-ca46edd6215b
 ms.reviewer: 
+ms.date: 09/05/2018
 ---
-<span id="_Toc499823846" class="anchor"></span>
 
 # What’s new in Dynamics GP 2016 R2
 
 The following sections describe enhancements included in Microsoft Dynamics GP 2016 R2.
-
--   [Business Intelligence changes](#business-intelligence-changes)  
-
--   [System-wide enhancements](#system-wide-enhancements)  
-
--   [Financial enhancements](#financial-enhancements)  
 
 ## Business Intelligence changes 
 
@@ -42,15 +34,15 @@ Enable users to connect to Management Reporter (MR) service using a more secure 
 
 Power BI reports are now available on the web client home page if Dynamics GP must be registered with Power BI App Registration Tool or with Azure Management Portal. With this enhancement, you can make critical business information more readily available than it was previously.
 
-## System-wide enhancements 
+## System-wide enhancements
 
 Indicate the name of person editing a batch in the message "Batch is being edited by another user"
 
 There is now greater visibility for showing which specific users are editing batches. If you try to edit a batch that another user is already working with, that user’s ID appears in the message appears. Previously, the message only indicated that ‘another user’ was editing the batch.
 
-## Financial enhancements 
+## Financial enhancements
 
-### Distribution Line Display opens expanded 
+### Distribution Line Display opens expanded
 
 The General Ledger Transaction Entry and Journal Entry Inquiry windows will default the scrolling window expanded or collapsed based on the previous display state. This allows users to display distribution information in more detail by default. The same functionality has been added to the Payables Transaction Entry Distribution and Sales Transaction Distribution Entry windows and the corresponding inquiry windows. The distribution scrolling window will open expanded or collapsed based on the previous display state. This is a per user, per form automatic setting.
 
@@ -107,3 +99,7 @@ A new report is available for Project Time Entry (PTE) timesheet approvers that 
 ### PA Line Item Distributions added for all transaction entry windows in Project Accounting 
 
 All Project Accounting transaction entry windows have a new window for Line Distributions. This allows you to enter distributions on a per line item basis. Distributions for projects are no longer allowed at the summary level. This will enable the PA Trial Balance report to print the correct distributions for any accounts that were changed during transaction entry.
+
+## See Also
+
+[What's New](introduction.md)  
