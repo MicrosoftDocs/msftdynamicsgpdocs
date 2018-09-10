@@ -1,6 +1,6 @@
 ---
 title: "What's new in Dynamics GP 2016"
-description: "Learn about enhancements that were added to the product since the release of Microsoft Dynamics GP 2016. "
+description: "Learn about enhancements that were added to the product since the release of [!INCLUDE[prodshort](../includes/prodshort.md)] 2016. "
 keywords: ""
 author: edupont04
 ms.author: edupont
@@ -14,13 +14,13 @@ ms.date: 09/05/2018
 
 # What’s new in Dynamics GP 2016
 
-The following sections describe enhancements included in Microsoft Dynamics GP 2016.
+The following sections describe enhancements included in [!INCLUDE[prodshort](../includes/prodshort.md)] 2016.
 
 ## System-wide changes
 
 ### Web Client enhancements
 
-The user interface for the Microsoft Dynamics GP Web Client has been refreshed to provide a more updated appearance. The banner in space now enables users to log in and log out, as well as indicating what company they’re logged into number of enhancements to the user experience.
+The user interface for the [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client has been refreshed to provide a more updated appearance. The banner in space now enables users to log in and log out, as well as indicating what company they’re logged into number of enhancements to the user experience.
 
 ### Support for additional browsers and mobile devices
 
@@ -106,15 +106,15 @@ Once you’ve added reports you will have a Power BI section added to the home p
 
 You can create a new SmartList from a favorite using SmartList Designer. And you can do so without having to remove extra columns from the default SmartList. Currently when you create a copy of a SmartList it takes the default SmartList and uses that to make the new one. With this enhancement, you can create a copy from a favorite which has different columns (usually less) than the default
 
-## Financial enhancements 
+## Financial enhancements
 
 ### Budget import exception report
 
 When you import a budget from Excel, an exception report will list accounts that aren’t set up in General Ledger, as well as any duplicates that are found in the import file. You can use Transaction Entry windows to edit the transactions to use existing accounts, or create the accounts that are listed on the exception report.
 
-### Scotia Bank EFT format added as a default EFT file format 
+### Scotia Bank EFT format added as a default EFT file format
 
-The electronic file format used by the Canada-based Scotia Bank is now one of the default EFT formats available in Microsoft Dynamics GP. Default formats are available for use in electronic transactions for both sales and purchases.
+The electronic file format used by the Canada-based Scotia Bank is now one of the default EFT formats available in [!INCLUDE[prodshort](../includes/prodshort.md)]. Default formats are available for use in electronic transactions for both sales and purchases.
 
 ### Analytical Accounting user access settings
 
@@ -126,7 +126,7 @@ An option has been added that enables payables computer check batches to be paid
 
 ### Edit attachments that flow to transactions
 
-You can edit information in attachments that included on transactions through the document attachment function. This feature allows you to edit the attachment properties of a document that flowed from a master record. For example, in the case where information flowed from customer to a sales Quote, you might then want to send it to the customer via email. Now you can mark the email checkbox to help automate that task.
+You can edit information in attachments that included on transactions through the document attachment function. This feature allows you to edit the attachment properties of a document that flowed from a master record. For example, in the case where information flowed from customer to a sales quote, you might then want to send it to the customer via email. Now you can mark the email checkbox to help automate that task.
 
 In addition, you can manage how information flows to transactions using options that have been added as part of this enhancement. From the Document Attachment Management window, you can open the Attachment Properties window. The option allows you to define and choose whether or not information can flow into document attachments, and whether or not attachments can be sent via email.
 

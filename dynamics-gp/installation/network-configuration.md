@@ -16,7 +16,7 @@ ms.reviewer: edupont
 
 ### 
 
-This chapter contains information about network configuration that must be in place before installing Microsoft Dynamics GP, and includes the following sections:
+This chapter contains information about network configuration that must be in place before installing [!INCLUDE[prodshort](../includes/prodshort.md)], and includes the following sections:
 
 -   [Domain](#domain)  
 
@@ -26,13 +26,13 @@ This chapter contains information about network configuration that must be in pl
 
 ## Domain
 
-To use Microsoft Dynamics GP, your Web server, back office server, Remote Desktop Services (if applicable), and client workstations must belong to a domain.
+To use [!INCLUDE[prodshort](../includes/prodshort.md)], your Web server, back office server, Remote Desktop Services (if applicable), and client workstations must belong to a domain.
 
 A domain is a group of computers that are part of a network and share a common directory database. A domain is administered as a unit with common rules and procedures. Each domain has a unique name.
 
 ## Network protocol tuning
 
-To optimize your network for Microsoft SQL Server and Microsoft Dynamics GP, refer to the following guidelines.
+To optimize your network for Microsoft SQL Server and [!INCLUDE[prodshort](../includes/prodshort.md)], refer to the following guidelines.
 
 -   Limit the network to one protocol. (TCP/IP is required.)
 
@@ -44,13 +44,13 @@ To optimize your network for Microsoft SQL Server and Microsoft Dynamics GP, ref
 
 ## TCP/IP
 
-Transport Control Protocol/Internet Protocol (TCP/IP) is required for Microsoft Dynamics GP.
+Transport Control Protocol/Internet Protocol (TCP/IP) is required for [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-If you’re using TCP/IP, review the information in this section to be sure that the network is set up properly. Then use your networking protocol documentation to install and test the protocol on all clients and servers before you install Microsoft Dynamics GP.
+If you’re using TCP/IP, review the information in this section to be sure that the network is set up properly. Then use your networking protocol documentation to install and test the protocol on all clients and servers before you install [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 ### IP addresses
 
-Each computer that you use with Microsoft Dynamics GP must have a unique IP number (Internet Protocol address) associated with it. For more information about IP addresses, consult your network administrator or refer to your networking protocol software documentation.
+Each computer that you use with [!INCLUDE[prodshort](../includes/prodshort.md)] must have a unique IP number (Internet Protocol address) associated with it. For more information about IP addresses, consult your network administrator or refer to your networking protocol software documentation.
 
 ### TCP/IP name resolution
 
@@ -60,4 +60,4 @@ For more information about name resolution using either a domain name server or 
 
 ### Testing TCP/IP connectivity
 
-To test connectivity between clients and servers, use an application distributed with most TCP/IP packages called ping. The ping application will attempt to send a network message or set of messages to a designated computer and inform you whether the message arrived at that computer. Be sure you ping the host name and the ID address of every computer in your system before installing Microsoft Dynamics GP.
+To test connectivity between clients and servers, use an application distributed with most TCP/IP packages called ping. The ping application will attempt to send a network message or set of messages to a designated computer and inform you whether the message arrived at that computer. Be sure you ping the host name and the ID address of every computer in your system before installing [!INCLUDE[prodshort](../includes/prodshort.md)].

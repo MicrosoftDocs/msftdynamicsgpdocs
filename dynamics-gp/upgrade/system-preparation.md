@@ -16,7 +16,7 @@ ms.reviewer:
 
 <span id="_Toc498615780" class="anchor"></span>
 
-We recommend that you complete the steps in this chapter before you upgrade your system. Be sure to follow the instructions on how to prepare your data in [Chapter 3, Data preparation](#_Data_preparation) before preparing your system. After you’ve completed the steps in this chapter, see [Installing Microsoft Dynamics GP (first computer)](#_Install_Microsoft_Dynamics) on page 31 for instructions to upgrade Microsoft Dynamics GP.  
+We recommend that you complete the steps in this chapter before you upgrade your system. Be sure to follow the instructions on how to prepare your data in [Chapter 3, Data preparation](#_Data_preparation) before preparing your system. After you’ve completed the steps in this chapter, see [Installing [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer)](#_Install_Microsoft_Dynamics) on page 31 for instructions to upgrade [!INCLUDE[prodshort](../includes/prodshort.md)].  
 
 This chapter contains the following sections:
 
@@ -38,19 +38,19 @@ This chapter contains the following sections:
 
 ## Updates
 
-We recommend that you check for and install the most current Microsoft Dynamics GP update for the release you are upgrading to. For the latest update information, see CustomerSource ((<https://mbs.microsoft.com/customersource//northamerica/GP/downloads/service-packs>).
+We recommend that you check for and install the most current [!INCLUDE[prodshort](../includes/prodshort.md)] update for the release you are upgrading to. For the latest update information, see CustomerSource ((<https://mbs.microsoft.com/customersource//northamerica/GP/downloads/service-packs>).
 
-Be sure that you have installed the most current updates for your Microsoft Dynamics GP system before using Microsoft Dynamics GP Utilities to upgrade your databases. If you don’t install the update before using Microsoft Dynamics GP Utilities, the fixes will not take effect. After upgrading your database, install the update on your client computers.
+Be sure that you have installed the most current updates for your [!INCLUDE[prodshort](../includes/prodshort.md)] system before using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities to upgrade your databases. If you don’t install the update before using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, the fixes will not take effect. After upgrading your database, install the update on your client computers.
 
-You can’t log in to Microsoft Dynamics GP on a client computer if a Microsoft Dynamics GP feature or additional component installed on the client has different version information than the server. For more information about upgrading Microsoft Dynamics GP features and additional components, see [Chapter 7, Additional features and components upgrade](#_Additional_features_and).  
+You can’t log in to [!INCLUDE[prodshort](../includes/prodshort.md)] on a client computer if a [!INCLUDE[prodshort](../includes/prodshort.md)] feature or additional component installed on the client has different version information than the server. For more information about upgrading [!INCLUDE[prodshort](../includes/prodshort.md)] features and additional components, see [Chapter 7, Additional features and components upgrade](#_Additional_features_and).  
 
 ## Reviewing the Readme file
 
-To view additional information, use the Readme file on the Microsoft Dynamics GP media. Be sure to review the Readme file (GPReadme.chm) before installing Microsoft Dynamics GP.
+To view additional information, use the Readme file on the [!INCLUDE[prodshort](../includes/prodshort.md)] media. Be sure to review the Readme file (GPReadme.chm) before installing [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 ## Installing components on all client computers
 
-We recommend that you install each registered Microsoft Dynamics GP feature and additional components on all client computers. If you’re using Project Accounting, you should install Project Accounting on every computer that you have installed Microsoft Dynamics GP on. You must install Bank Management on all clients for Direct Debits and Refunds to work properly.
+We recommend that you install each registered [!INCLUDE[prodshort](../includes/prodshort.md)] feature and additional components on all client computers. If you’re using Project Accounting, you should install Project Accounting on every computer that you have installed [!INCLUDE[prodshort](../includes/prodshort.md)] on. You must install Bank Management on all clients for Direct Debits and Refunds to work properly.
 
 ## Upgrading Integration Manager
 
@@ -64,7 +64,7 @@ After you install Integration Manager 2018, you must convert the database you ba
 
 ## Upgrading in a test environment
 
-It is recommended that you use a test environment to practice the process of upgrading Microsoft Dynamics GP, additional components, modified forms and reports, and customizations. By using a test environment, you can resolve any potential issues that may occur before you upgrade your current release of Microsoft Dynamics GP. You also can estimate the time it will take to upgrade your current release to Microsoft Dynamics GP 2018. A test environment also allows users to test their day-to-day tasks to ensure that processes are working properly, and to learn the new features and modules in Microsoft Dynamics GP 2018.
+It is recommended that you use a test environment to practice the process of upgrading [!INCLUDE[prodshort](../includes/prodshort.md)], additional components, modified forms and reports, and customizations. By using a test environment, you can resolve any potential issues that may occur before you upgrade your current release of [!INCLUDE[prodshort](../includes/prodshort.md)]. You also can estimate the time it will take to upgrade your current release to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. A test environment also allows users to test their day-to-day tasks to ensure that processes are working properly, and to learn the new features and modules in [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
 
 A test environment can be a single server or a server with one or more client computers where an upgrade takes place. The client computers can be used for testing and training purposes. There isn’t a required number of computers that need to be involved in a test environment.
 
@@ -78,13 +78,13 @@ If you are upgrading a company that has previously deployed SQL Server Reporting
 
 For your SQL database, you should run the following database maintenance routine against the DYNAMICS database and all company databases in or Microsoft SQL Server Management Studio. The database maintenance routine will help to ensure that your table structure is ready to be upgraded if there are no errors indicated. Be sure that there are no allocation or consistency errors in the results.
 
-If you prefer to perform table maintenance only on the tables that have changed, lists of tables that have changed from previous releases are available on the Microsoft Dynamics GP 2018 media as part of the Software Developers’ Kit (SDK).
+If you prefer to perform table maintenance only on the tables that have changed, lists of tables that have changed from previous releases are available on the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 media as part of the Software Developers’ Kit (SDK).
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")It’s a good idea to make a second backup after performing table maintenance, but before upgrading to a new version. If you have this backup and an expected problem occurs while upgrading, you won’t have to repeat the table maintenance step.  
 
 ## Known issues
 
-Review the following known issues before upgrading to Microsoft Dynamics GP 2018. To be sure that you review the most current known issues, download the latest version of this manual from <https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>.
+Review the following known issues before upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. To be sure that you review the most current known issues, download the latest version of this manual from <https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>.
 
 ### Records that aren’t valid in purchase order tables
 
@@ -100,13 +100,13 @@ To verify purchase order tables:
 
 3.  Run the script against all company databases.
 
-4.  If results aren’t returned after running the script, invalid records don’t exist. You can upgrade to Microsoft Dynamics GP 2018.
+4.  If results aren’t returned after running the script, invalid records don’t exist. You can upgrade to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
 
-If results are returned after running the script, invalid records exist and you can use Microsoft SQL Server Management Studio to remove these records. You also can check links in the Purchasing series before upgrading to Microsoft Dynamics GP 2018 to remove invalid records.
+If results are returned after running the script, invalid records exist and you can use Microsoft SQL Server Management Studio to remove these records. You also can check links in the Purchasing series before upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 to remove invalid records.
 
 ### Microsoft SQL Server 2012 database compatibility level
 
-If you have upgraded to Microsoft SQL Server 2012 before upgrading to Microsoft Dynamics GP 2018, be sure to change your database compatibility level to SQL Server 2012 (110) for all your databases.
+If you have upgraded to Microsoft SQL Server 2012 before upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018, be sure to change your database compatibility level to SQL Server 2012 (110) for all your databases.
 
 To change the database compatibility level:
 
@@ -124,7 +124,7 @@ To change the database compatibility level:
 
 ### Microsoft SQL Server 2014 database compatibility level
 
-If you have upgraded to Microsoft SQL Server 2014 before upgrading to Microsoft Dynamics GP 2018, be sure to change your database compatibility level to SQL Server 2014 (120) for all your databases.
+If you have upgraded to Microsoft SQL Server 2014 before upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018, be sure to change your database compatibility level to SQL Server 2014 (120) for all your databases.
 
 To change the database compatibility level:
 
@@ -142,7 +142,7 @@ To change the database compatibility level:
 
 ### Microsoft SQL Server 2016 database compatibility level
 
-If you have upgraded to Microsoft SQL Server 2016 before upgrading to Microsoft Dynamics GP 2018, be sure to change your database compatibility level to SQL Server 2016 (120) for all your databases.
+If you have upgraded to Microsoft SQL Server 2016 before upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018, be sure to change your database compatibility level to SQL Server 2016 (120) for all your databases.
 
 To change the database compatibility level:
 
@@ -158,11 +158,11 @@ To change the database compatibility level:
 
 6. Repeat steps 4 through 6 until all the databases have been changed.
 
-### The Server drop-down list is blank in Welcome to Microsoft Dynamics GP window
+### The Server drop-down list is blank in Welcome to [!INCLUDE[prodshort](../includes/prodshort.md)] window
 
-If the Server drop-down list is blank in the Welcome to Microsoft Dynamics GP window after you upgrade, you must set up an Open Database Connectivity (ODBC) data source using SQL Native Client 10 or SQL Native Client 11 on your computer.
+If the Server drop-down list is blank in the Welcome to [!INCLUDE[prodshort](../includes/prodshort.md)] window after you upgrade, you must set up an Open Database Connectivity (ODBC) data source using SQL Native Client 10 or SQL Native Client 11 on your computer.
 
-If you are using a 64-bit operating system, you must set up a 32-bit ODBC data source. For instructions on how to set up a data source for a 64-bit operating system, see Microsoft Knowledge Base article, “How to set up an ODBC Data Source on SQL Server for Microsoft Dynamics GP,” (https://mbs.microsoft.com/ knowledgebase/KBDisplay.aspx?scid=kb;en-us;870416).
+If you are using a 64-bit operating system, you must set up a 32-bit ODBC data source. For instructions on how to set up a data source for a 64-bit operating system, see Microsoft Knowledge Base article, “How to set up an ODBC Data Source on SQL Server for [!INCLUDE[prodshort](../includes/prodshort.md)],” (https://mbs.microsoft.com/ knowledgebase/KBDisplay.aspx?scid=kb;en-us;870416).
 
 To set up an ODBC data source using the SQL Native Client 10 driver:
 
@@ -247,15 +247,15 @@ Microsoft SQL Server Management Studio.
 
 4. If results aren’t returned after running the script, the tables are in the correct format.
 
-If results are returned after running the script, the tables do not match the account framework information. Contact the Microsoft Dynamics GP Update Technical Support Team for instructions before upgrading. You can contact Microsoft Dynamics GP Technical Support using one of the following methods.
+If results are returned after running the script, the tables do not match the account framework information. Contact the [!INCLUDE[prodshort](../includes/prodshort.md)] Update Technical Support Team for instructions before upgrading. You can contact [!INCLUDE[prodshort](../includes/prodshort.md)] Technical Support using one of the following methods.
 
 -   Create a Support request (<https://mbs.microsoft.com/support/newstart.aspx>).
 
 -   Contact by telephone at 1-888-477-7877.
 
-### Microsoft Dynamics GP Utilities not responding
+### [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities not responding
 
-During the upgrade process, the Microsoft Dynamics GP Utilities might appear as not responding and a Microsoft Dynamics GP Utilities window might appear as white. Do not cancel Microsoft Dynamics GP Utilities. Microsoft Dynamics GP Utilities is still processing.
+During the upgrade process, the [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities might appear as not responding and a [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities window might appear as white. Do not cancel [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities. [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities is still processing.
 
 ### Budget date records in Analytical Accounting
 
@@ -271,7 +271,7 @@ select distinct(a.PERIODDT) from AAG00904 a, AAG00500 b where a.PERIODDT not in 
 
 2. Run the script against the company database.
 
-3. If results aren’t returned after running the script, you can upgrade to Microsoft Dynamics GP 2018.
+3. If results aren’t returned after running the script, you can upgrade to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
 
 If results show that there are budget date records that do not exist in the AAG00500 table, continue with the next step.
 

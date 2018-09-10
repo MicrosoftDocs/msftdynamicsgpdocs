@@ -16,7 +16,7 @@ ms.reviewer:
 
 <span id="_Toc498615770" class="anchor"></span>
 
-We recommend that you complete the steps in this chapter to prepare your data before you upgrade your system. After you’ve completed these steps, see [Chapter 4, System preparation](#_System_Preparation), for instructions to prepare your system before upgrading to Microsoft Dynamics GP 2018. Be sure to review the [Known issues](#_Known_issues) on page 23 before upgrading to Microsoft Dynamics GP 2018.  
+We recommend that you complete the steps in this chapter to prepare your data before you upgrade your system. After you’ve completed these steps, see [Chapter 4, System preparation](#_System_Preparation), for instructions to prepare your system before upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. Be sure to review the [Known issues](#_Known_issues) on page 23 before upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.  
 
 This chapter contains the following sections:
 
@@ -40,9 +40,9 @@ This chapter contains the following sections:
 
 ## Payroll
 
-If you’re upgrading to Microsoft Dynamics GP 2018, you need to determine whether the payroll tax update tables are current. To do so, check the Last Tax Update field in the Payroll Tax Setup window (Tools &gt;&gt; Setup &gt;&gt; System &gt;&gt; Payroll Tax). If your tax tables are not current, update them after you upgrade to Microsoft Dynamics GP 2018. Review the latest tax update documentation for the date of the last tax update.
+If you’re upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018, you need to determine whether the payroll tax update tables are current. To do so, check the Last Tax Update field in the Payroll Tax Setup window (Tools &gt;&gt; Setup &gt;&gt; System &gt;&gt; Payroll Tax). If your tax tables are not current, update them after you upgrade to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. Review the latest tax update documentation for the date of the last tax update.
 
-Tax tables are not included on the Microsoft Dynamics GP media; to update tax tables, you must download them from CustomerSource (US Payroll <https://mbs.microsoft.com/customersource/northamerica/GP/downloads/taxregulatory-updates/TUGP2018>; Canadian Payroll: <https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/cagptuye2018>). Choose Tax and Regulatory Updates. Follow instructions for installing the tax update to ensure that clients and servers are updated properly.
+Tax tables are not included on the [!INCLUDE[prodshort](../includes/prodshort.md)] media; to update tax tables, you must download them from CustomerSource (US Payroll <https://mbs.microsoft.com/customersource/northamerica/GP/downloads/taxregulatory-updates/TUGP2018>; Canadian Payroll: <https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/cagptuye2018>). Choose Tax and Regulatory Updates. Follow instructions for installing the tax update to ensure that clients and servers are updated properly.
 
 ## 1099 amounts in Payables Management
 
@@ -58,7 +58,7 @@ For example, you enter and post the following transaction in December.
 
 You apply all three documents together in January. The 1099 amount is $25.00 for December.
 
-You upgrade to Microsoft Dynamics GP 2018 in February and reconcile your data. The 1099 amount of $25.00 is moved from December because the later of the apply date or posting date is used to update the 1099 amount.
+You upgrade to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 in February and reconcile your data. The 1099 amount of $25.00 is moved from December because the later of the apply date or posting date is used to update the 1099 amount.
 
 ## Direct Debits and Refunds
 
@@ -70,7 +70,7 @@ You must ship and post all inventory transfers that have a partially shipped, sh
 
 ## Workflow for SharePoint
 
-Workflow for SharePoint is no longer available for GP. There is no upgrade from Workflow for SharePoint to the new Workflow feature in Microsoft Dynamics GP. Workflow types that were created in SharePoint-based workflow feature do not upgrade. Any workflows that you created in the SharePoint-based workflow feature will need to be re-created in the new workflow feature after the upgrade is complete. Note that some workflow types that were available in the SharePoint workflow feature are not yet available in the new workflow feature.
+Workflow for SharePoint is no longer available for GP. There is no upgrade from Workflow for SharePoint to the new Workflow feature in [!INCLUDE[prodshort](../includes/prodshort.md)]. Workflow types that were created in SharePoint-based workflow feature do not upgrade. Any workflows that you created in the SharePoint-based workflow feature will need to be re-created in the new workflow feature after the upgrade is complete. Note that some workflow types that were available in the SharePoint workflow feature are not yet available in the new workflow feature.
 
 ## Posting open transactions
 
@@ -80,7 +80,7 @@ If you are using Analytical Accounting, be sure to post all saved batches that y
 
 ## Reconciling
 
-You may want to reconcile your accounting records before upgrading to Microsoft Dynamics GP 2018 to verify that your accounting records are accurate. Refer to the documentation of the modules you are using for specific information.
+You may want to reconcile your accounting records before upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 to verify that your accounting records are accurate. Refer to the documentation of the modules you are using for specific information.
 
 Before reconciling, back up your company’s accounting data. For more information about making backups, refer to your System Administrator’s Guide (Help &gt;&gt; Contents &gt;&gt; select System administration)![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol").  
 

@@ -16,7 +16,7 @@ ms.reviewer:
 
 # After you upgrade
 
-We recommend that you complete the steps in this chapter after you upgrade all Microsoft Dynamics GP databases. After you’ve completed these steps, see Chapter 10, “Module upgrades from Microsoft Dynamics GP 2013,” to complete additional procedures that are necessary after you’ve upgraded Microsoft Dynamics GP and your company data to Microsoft Dynamics GP 2018.
+We recommend that you complete the steps in this chapter after you upgrade all [!INCLUDE[prodshort](../includes/prodshort.md)] databases. After you’ve completed these steps, see Chapter 10, “Module upgrades from [!INCLUDE[prodshort](../includes/prodshort.md)] 2013,” to complete additional procedures that are necessary after you’ve upgraded [!INCLUDE[prodshort](../includes/prodshort.md)] and your company data to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
 
 This chapter contains the following sections:
 
@@ -32,7 +32,7 @@ This chapter contains the following sections:
 
 -   [Removing the previous release](#removing-the-previous-release)  
 
--   [Security for Microsoft Dynamics GP](#security-for-microsoft-dynamics-gp)  
+-   [Security for [!INCLUDE[prodshort](../includes/prodshort.md)]](#security-for-microsoft-dynamics-gp)  
 
 -   [Create security roles](#create-security-roles)  
 
@@ -40,7 +40,7 @@ This chapter contains the following sections:
 
 ## Backups
 
-You should make at least one complete backup of your system database and each company database after upgrading to Microsoft Dynamics GP 2018.
+You should make at least one complete backup of your system database and each company database after upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
 
 ## Reconciling financial data
 
@@ -63,7 +63,7 @@ Use the Check Links window to check relationships among tables to find informati
 To check links for currency tables:
 
 1. Open the Check Links window.
-(Microsoft Dynamics GP menu &gt;&gt; Maintenance &gt;&gt; Check Links)
+([!INCLUDE[prodshort](../includes/prodshort.md)] menu &gt;&gt; Maintenance &gt;&gt; Check Links)
 
 2. In the Series list, be sure that Financial is displayed.
 
@@ -77,7 +77,7 @@ You should discontinue using the DexSQL.log file after the upgrade process. The 
 
 To discontinue the DexSQL.log:
 
-1. Open the Dex.ini file in the Data folder of the Microsoft Dynamics GP folder.
+1. Open the Dex.ini file in the Data folder of the [!INCLUDE[prodshort](../includes/prodshort.md)] folder.
 
 2. Change the following statements to FALSE.
 
@@ -130,17 +130,17 @@ Print this report only if you’re keeping history.
 
 You should remove the previous release from your computer by using your operating system’s Add/Remove Programs utility. This includes the reports dictionary and program files for integrating products from the previous release. After removing the release, use Windows Explorer to find and delete the folder where the release was installed.
 
-To remove Microsoft Dynamics GP, use your operating system’s Add/Remove Programs utility, and select Microsoft Dynamics GP.
+To remove [!INCLUDE[prodshort](../includes/prodshort.md)], use your operating system’s Add/Remove Programs utility, and select [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-## Security for Microsoft Dynamics GP
+## Security for [!INCLUDE[prodshort](../includes/prodshort.md)]
 
 Refer to the Planning for Security document (Help &gt;&gt; Printable Manuals &gt;&gt; select Planning for Security) or to the System Setup Guide (Help &gt;&gt; Contents &gt;&gt; select Setting up the System) for more information about security.
 
-New users, by default, will not have access to any Microsoft Dynamics GP data. You can use the default security roles and tasks that are available, or you can create your own security roles and tasks to fit your company.
+New users, by default, will not have access to any [!INCLUDE[prodshort](../includes/prodshort.md)] data. You can use the default security roles and tasks that are available, or you can create your own security roles and tasks to fit your company.
 
 ### Create security tasks
 
-For new users, you must create security tasks for Workflow, purchase requisitions, Payroll timecards, and Project timesheets. You can use the Security Task Setup window to create those tasks. As a guide for the new tasks, review the following tasks that are created for new Microsoft Dynamics GP installations.
+For new users, you must create security tasks for Workflow, purchase requisitions, Payroll timecards, and Project timesheets. You can use the Security Task Setup window to create those tasks. As a guide for the new tasks, review the following tasks that are created for new [!INCLUDE[prodshort](../includes/prodshort.md)] installations.
 
 | Field                          | Entry                                                                                                                                     |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -148,7 +148,7 @@ For new users, you must create security tasks for Workflow, purchase requisition
 | Task Name                      | Set up and maintain Workflow                                                                                                              |
 | Description                    | Set up Workflow access, calendars, and workflow definitions.                                                                              |
 | Category                       | Company                                                                                                                                   |
-| Product                        | Microsoft Dynamics GP                                                                                                                     |
+| Product                        | [!INCLUDE[prodshort](../includes/prodshort.md)]                                                                                                                     |
 | Type                           | Windows                                                                                                                                   |
 | Series                         | Company                                                                                                                                   |
 | Select the following resources | Copy workflow                                                                                                                             |
@@ -159,7 +159,7 @@ For new users, you must create security tasks for Workflow, purchase requisition
 |                                | Workflow Condition Editor                                                                                                                 |
 | Description                    | View purchase requisition documents and purchase requisition items. Also includes the Purchase Requisition Transactions list and preview. |
 | Category                       | Purchasing                                                                                                                                |
-| Product                        | Microsoft Dynamics GP                                                                                                                     |
+| Product                        | [!INCLUDE[prodshort](../includes/prodshort.md)]                                                                                                                     |
 | Type                           | Windows                                                                                                                                   |
 | Series                         | Financial                                                                                                                                 |
 | Select the following resource  | PO Commitment for Document Inquiry Zoom                                                                                                   |
@@ -188,7 +188,7 @@ For new users, you must create security tasks for Workflow, purchase requisition
 | Task Name                     | Approve Timecards                                            |
 | Description                   | View and approve submitted timecard data. Delegate approval. |
 | Category                      | Payroll                                                      |
-| Product                       | Microsoft Dynamics GP                                        |
+| Product                       | [!INCLUDE[prodshort](../includes/prodshort.md)]                                        |
 | Type                          | Windows                                                      |
 | Series                        | Payroll                                                      |
 | Select the following resource | Timecard Entry                                               |
@@ -222,7 +222,7 @@ For new users, you must create security tasks for Workflow, purchase requisition
 
 ## Create security roles
 
-For new users, you must create the following security roles for Workflow, purchase requisitions, Payroll timecards, and Project timesheets. As a guide for the new security roles, review the following tasks that are created for new Microsoft Dynamics GP installations
+For new users, you must create the following security roles for Workflow, purchase requisitions, Payroll timecards, and Project timesheets. As a guide for the new security roles, review the following tasks that are created for new [!INCLUDE[prodshort](../includes/prodshort.md)] installations
 
 To create security roles:
 
@@ -273,4 +273,4 @@ If you have deployed reports using the SharePoint integrated mode and have alrea
 
 If you have not assigned permissions, assign user and group accounts to predefined SharePoint groups. You also can create new permission levels and groups or modify existing ones to vary server access permissions as specific needs arise.
 
-You can deploy SQL Server Reporting Services reports for multiple Microsoft Dynamics GP instances to a single Microsoft SQL Server Reporting Server. If you have deployed reports to a folder on a Microsoft SQL Server Reporting Server using the Native mode, you must to provide access to the folder.
+You can deploy SQL Server Reporting Services reports for multiple [!INCLUDE[prodshort](../includes/prodshort.md)] instances to a single Microsoft SQL Server Reporting Server. If you have deployed reports to a folder on a Microsoft SQL Server Reporting Server using the Native mode, you must to provide access to the folder.

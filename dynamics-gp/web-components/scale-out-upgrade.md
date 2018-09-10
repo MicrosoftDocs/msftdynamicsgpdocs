@@ -16,7 +16,7 @@ ms.reviewer:
 
 # Scale out upgrade
 
-This chapter contains the procedures you need to follow to perform an upgrade of the Microsoft Dynamics GP web client in the scale out configuration. The following sections are included:
+This chapter contains the procedures you need to follow to perform an upgrade of the [!INCLUDE[prodshort](../includes/prodshort.md)] web client in the scale out configuration. The following sections are included:
 
 -   [Preparing for the upgrade](#preparing-for-the-upgrade)  
 
@@ -30,21 +30,21 @@ This chapter contains the procedures you need to follow to perform an upgrade of
 
 ## Preparing for the upgrade
 
-The first step to performing the upgrade for a scale out installation is to upgrade for the database and the desktop client components for Microsoft Dynamics GP. Use Dynamics GP Utilities to upgrade the system database and the company databases. Refer to the procedures described in the upgrade documentation for Microsoft Dynamics GP to complete this process.
+The first step to performing the upgrade for a scale out installation is to upgrade for the database and the desktop client components for [!INCLUDE[prodshort](../includes/prodshort.md)]. Use Dynamics GP Utilities to upgrade the system database and the company databases. Refer to the procedures described in the upgrade documentation for [!INCLUDE[prodshort](../includes/prodshort.md)] to complete this process.
 
-You should verify that at least one desktop client installation is working properly before you continue with the Microsoft Dynamics GP web client upgrade. Resolve any issues before you continue.
+You should verify that at least one desktop client installation is working properly before you continue with the [!INCLUDE[prodshort](../includes/prodshort.md)] web client upgrade. Resolve any issues before you continue.
 
 Be sure that all of the users have signed out of the system before you start the web client upgrade process.
 
-If you are using Tenant Services with your Microsoft Dynamics GP web client installation, you must apply the update to Tenant Services before you update the web client components. Refer to the Tenant Services Installation and Administration Guide for information about updating Tenant Services. The Microsoft Dynamics GP upgrade can take place after the upgrade of the web client since older versions of the Microsoft Dynamics GP runtime can be used with the latest version of the web components.
+If you are using Tenant Services with your [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation, you must apply the update to Tenant Services before you update the web client components. Refer to the Tenant Services Installation and Administration Guide for information about updating Tenant Services. The [!INCLUDE[prodshort](../includes/prodshort.md)] upgrade can take place after the upgrade of the web client since older versions of the [!INCLUDE[prodshort](../includes/prodshort.md)] runtime can be used with the latest version of the web components.
 
 ## Updating the web site and Session Central Service
 
 To install the upgrade for the web site and the Session Central Service, complete the following procedure.
 
-1. Log in to the machine that is running the web site and the Session Central Service for the Microsoft Dynamics GP web client installation.
+1. Log in to the machine that is running the web site and the Session Central Service for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation.
 
-2. From the Microsoft Dynamics GP installation media, double-click the Setup.exe file to open the Microsoft Dynamics GP installation window.
+2. From the [!INCLUDE[prodshort](../includes/prodshort.md)] installation media, double-click the Setup.exe file to open the [!INCLUDE[prodshort](../includes/prodshort.md)] installation window.
 
 3. Click Web Components and then click Install.
 
@@ -66,7 +66,7 @@ To install the upgrade for the web site and the Session Central Service, complet
 
 10. Click **Exit**.
 
-11. The Microsoft Dynamics GP Web Client Help installer will be started. Click **Install** to complete the help installation process.
+11. The [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client Help installer will be started. Click **Install** to complete the help installation process.
 
 12. Click **Finish** to close the installer.
 
@@ -76,9 +76,9 @@ To install the upgrade for each session host machine in the scale out installati
 
 1. Log in to the session host machine.
 
-2. If you haven’t already done so, perform the update for the Microsoft Dynamics GP desktop client components. Be sure that the desktop client on the session host machine is working properly before you continue this upgrade procedure.
+2. If you haven’t already done so, perform the update for the [!INCLUDE[prodshort](../includes/prodshort.md)] desktop client components. Be sure that the desktop client on the session host machine is working properly before you continue this upgrade procedure.
 
-3. From the Microsoft Dynamics GP installation media, double-click the Setup.exe file to open the Microsoft Dynamics GP installation window.
+3. From the [!INCLUDE[prodshort](../includes/prodshort.md)] installation media, double-click the Setup.exe file to open the [!INCLUDE[prodshort](../includes/prodshort.md)] installation window.
 
 4. Click Web Components and then click **Install**.
 
@@ -114,11 +114,11 @@ When all of the components of the web client installation have been updated, •
 
 -   In the Session Management snap-in for the Web Management Console, all of the session host machines should be listed. Be sure that each machine is set to allow new web client sessions.
 
-At this point, you can allow users to sign in to the Microsoft Dynamics GP web client installation.
+At this point, you can allow users to sign in to the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation.
 
 ## Client machine update steps
 
-To ensure that the updated Microsoft Dynamics GP web client is working properly, you should perform the following steps on each of the client machines that access the web client.
+To ensure that the updated [!INCLUDE[prodshort](../includes/prodshort.md)] web client is working properly, you should perform the following steps on each of the client machines that access the web client.
 
 1. Clear the Internet Explorer browser cache. This helps to ensure that the updated application and help files are being used for the web client.
 
@@ -130,9 +130,9 @@ Internet files. Click Delete.
 
 3. After the browser cache has been cleared, click OK.
 
-4. In Internet Explorer, go to the Microsoft Dynamics GP web client site. Sign in to the web client.
+4. In Internet Explorer, go to the [!INCLUDE[prodshort](../includes/prodshort.md)] web client site. Sign in to the web client.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If you watch closely, you should see a new Silverlight application is downloaded for the Microsoft Dynamics GP web client.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If you watch closely, you should see a new Silverlight application is downloaded for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client.  
 
 5. Look in the lower-right corner to verify the trust level for the web client. If you see the icon indicating that the web client is running in sandboxed mode, you have an additional step to perform.
 

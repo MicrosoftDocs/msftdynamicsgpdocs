@@ -20,7 +20,7 @@ ms.reviewer:
 
 <span id="_Toc498953263" class="anchor"></span>
 
-Use this manual to install the Microsoft Dynamics GP Web Client. This documentation explains how to install the web components in the most common configurations.
+Use this manual to install the [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client. This documentation explains how to install the web components in the most common configurations.
 
 Documentation on the web
 
@@ -44,13 +44,13 @@ Dynamics GP Web Components. It includes the following parts:
 
 -   [Part 1, Getting started](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%201%20Getting%20Started.dotx), provides an overview of the installation process and describes the supported deployment configurations.  
 
--   [Part 2, Back office server preparation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%202%20Back%20office%20server%20prep.dotx), describes how to configure Microsoft Dynamics GP and other back office server settings to prepare for the web client installation.  
+-   [Part 2, Back office server preparation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%202%20Back%20office%20server%20prep.dotx), describes how to configure [!INCLUDE[prodshort](../includes/prodshort.md)] and other back office server settings to prepare for the web client installation.  
 
 -   [Part 3, Web server preparation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%203%20Web%20server%20prep.dotx), lists the prerequisite software you must install on your web server and explains how to set up the web site that will host the web client.  
 
 -   [Part 4, Web components installation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%204%20Web%20components%20install.dotx), provides the steps you need to follow when running the web client installer.  
 
--   [Part 5, Web client upgrade](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%205%20Web%20client%20upgrade.dotx), explains how to install an upgrade for the Microsoft Dynamics GP web client.  
+-   [Part 5, Web client upgrade](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%205%20Web%20client%20upgrade.dotx), explains how to install an upgrade for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client.  
 
 -   [Part 6, Web client administration](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%206%20Web%20client%20admin.dotx), contains information about administrative tasks you will perform for the web client.  
 
@@ -95,12 +95,12 @@ For support requests that can be handled with e-mail. On average, the response t
 
 Start a year-end discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.
 
-#### Microsoft Dynamics GP support team
+#### [!INCLUDE[prodshort](../includes/prodshort.md)] support team
 
 We have specialized support teams focused on providing service and support to our Human Resources/Payroll customers. If you have Human Resources/Payroll questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code.
 
 ### Send us your suggestions
 
-We welcome comments regarding the usefulness of the Microsoft Dynamics GP. If you have specific suggestions or encounter problems, let us know on the Connect for Microsoft Dynamics (https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
+We welcome comments regarding the usefulness of the [!INCLUDE[prodshort](../includes/prodshort.md)]. If you have specific suggestions or encounter problems, let us know on the Connect for Microsoft Dynamics (https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
 
 An email address was available in previous versions to provide an option for contacting us about the documentation. The most recent address was <adocs@microsoft.com>. Prior to that, <bizdoc@microsoft.com> was available. Both email addresses are being decommissioned.

@@ -1,6 +1,6 @@
 ---
 title: "What's new in Dynamics GP 2018"
-description: "Learn about enhancements that were added to the product since the release of Microsoft Dynamics GP 2018. "
+description: "Learn about enhancements that were added to the product since the release of [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. "
 keywords: ""
 author: edupont04
 ms.author: edupont
@@ -13,7 +13,7 @@ ms.reviewer:
 ---
     # What’s new in GP 2018 
 
-This chapter lists enhancements to Microsoft Dynamics GP for the GP 2018 release. The GP 2018 release enhances specific areas of the product, while also expanding existing functionality, notably in the document attachment and workflow areas. The user experience has also been enhanced to make finding the information you use to make business decisions faster and easier.
+This chapter lists enhancements to [!INCLUDE[prodshort](../includes/prodshort.md)] for the GP 2018 release. The GP 2018 release enhances specific areas of the product, while also expanding existing functionality, notably in the document attachment and workflow areas. The user experience has also been enhanced to make finding the information you use to make business decisions faster and easier.
 
 ## Platform and system-wide enhancements
 
@@ -93,13 +93,13 @@ This enhancement lets you add account descriptions to workflow message that are 
 
 Additional information is now included in the Vendor approval workflow that shows the bank that the vendor uses for electronic funds transfers (EFT). To use the new field, mark it in the Extended fields list option in the Work Maintenance window, and then add it to the workflow in the Workflow Condition Editor. These extended fields are all the EFT banking fields that can be set up on the vendor for EFT information. They include the country, bank name, bank account, and SWIFT code.
 
-### New workflows for new accounts, receivings transactions and purchasing invoices
+### New workflows for new accounts, receipt transactions, and purchasing invoices
 
-New workflows have been added to control the addition of general ledger accounts, purchase receivings transactions and purchasing invoices. The workflow for general ledger accounts can be initiated from any area of the system for any new accounts, or for any accounts that are in a workflow state, for example when an account has been edited, but not yet approved.
+New workflows have been added to control the addition of general ledger accounts, purchase receipt transactions and purchasing invoices. The workflow for general ledger accounts can be initiated from any area of the system for any new accounts, or for any accounts that are in a workflow state, for example when an account has been edited, but not yet approved.
 
 ## User experience enhancements
 
-A number of enhancements improve the experience of working with Microsoft Dynamics GP. The following subsections describe those enhancements.
+A number of enhancements improve the experience of working with [!INCLUDE[prodshort](../includes/prodshort.md)]. The following subsections describe those enhancements.
 
 ### Additional sorting options added
 
@@ -107,17 +107,17 @@ A number of enhancements have been added to GP 2018 that make it easier and fast
 
 | Window                                     | New sorting options |
 |--------------------------------------------|---------------------|
-| Receivables Transaction Inquiry – Customer ||
+| Receivables Transaction Inquiry – Customer | |
 | Receivables Transaction Inquiry – Document  | By type < /br>  By document number  < /br> By document amount < /br> By amount remaining < /br>  Document date        |
-| Payables Transaction Inquiry – Vendor ||
+| Payables Transaction Inquiry – Vendor | |
 | Payables Transaction Inquiry – Document     | By document number  < /br>  By type < /br>  By original amount < /br> By unapplied amount < /br> By document date     |
 | Bank Reconciliation window     | By payment amount  < /br>  By deposit amount    |
 
-### Unique passwords can be entered for individual SmartList favorites. 
+### Unique passwords can be entered for individual SmartList favorites
 
 Users now have the option to assign a unique password to SmartList favorites. The password restricts the users who can modify the favorite to only those that know the password. In previous versions, anyone who knew the system password could modify the favorite.
 
-### A shortcut to SmartList has been added to the web client.
+### A shortcut to SmartList has been added to the web client
 
 Now you can navigate to SmartList directly from the web client, making access to SmartList inquiries and reports faster and easier.
 
@@ -214,4 +214,5 @@ This enhancement lets you restrict the inactive records in lookup windows on a p
 This enhancement lets you track employee actions that contribute to lower insurance premiums, such as refraining from smoking or maintaining membership in a gym or health club.
 
 ## See Also
+
 [What's New](introduction.md)  

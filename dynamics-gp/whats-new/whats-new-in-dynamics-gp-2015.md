@@ -1,6 +1,6 @@
 ---
 title: "What's new in Dynamics GP 2015"
-description: "Learn about enhancements that were added to the product since the release of Microsoft Dynamics GP 2015. "
+description: "Learn about enhancements that were added to the product since the release of [!INCLUDE[prodshort](../includes/prodshort.md)] 2015. "
 keywords: ""
 author: edupont04
 ms.author: edupont
@@ -9,13 +9,12 @@ applies_to:
 ms.service: dynamicsgp
 ms.topic: article
 ms.reviewer: 
-ms.date: 09/05/2018
+ms.date: 09/07/2018
 ---
-<span id="_Toc499823860" class="anchor"></span>
 
 # What’s new in Dynamics GP 2015
 
-This document describes enhancements that were added to the product since the release of Microsoft Dynamics GP 2015. Some enhancements described in this documentation are optional and can be purchased through your Microsoft partner. If you currently have a license for one of these modules and have an active enhancement program, you automatically will receive the enhancements contained in that module.
+This section describes enhancements that were added to the product since the release of [!INCLUDE[prodshort](../includes/prodshort.md)] 2015. Some enhancements described in this documentation are optional and can be purchased through your Microsoft partner. If you currently have a license for one of these modules and have an active enhancement program, you automatically will receive the enhancements contained in that module.
 
 ## Workflow enhancements
 
@@ -25,7 +24,7 @@ A new workflow type for Payables Transaction approval in Workflow Maintenance is
 
 The Payables Transaction Entry window is the primary window for the Payables Transaction Approval workflow type. As soon as the data is entered or modified in the window, you can view the InfoBar, showing the status of the workflow. The Payables Transaction Entry window has Workflow action added to the ribbon.
 
-The workflow process to follow is similar to the other workflow processes available in Microsoft Dynamics GP.
+The workflow process to follow is similar to the other workflow processes available in [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 You can define messages that can be sent out for workflow activities that are specific to the Payables Transaction Approval workflow type using the Message Setup window.
 
@@ -33,7 +32,7 @@ To approve a single transaction in the Payables Transaction Entry window, add th
 
 ### Workflow – Document Attachment
 
-When a document has been added to a transaction or record using the Microsoft Dynamics GP Document Attachment feature, these attachments can now be sent with the workflow task notification email. This feature is available for PM Batch Approval, Purchase Order Approval, Purchase Requisition Approval, Vendor Approval, and Payables Transaction Approval. For example, you can now enter a payables invoice, scan it and attach the record from the vendor, and then submit the invoice for approval. When the approver receives the email, they will get the invoice information and the attachment will show the scanned invoice from the vendor.
+When a document has been added to a transaction or record using the [!INCLUDE[prodshort](../includes/prodshort.md)] Document Attachment feature, these attachments can now be sent with the workflow task notification email. This feature is available for PM Batch Approval, Purchase Order Approval, Purchase Requisition Approval, Vendor Approval, and Payables Transaction Approval. For example, you can now enter a payables invoice, scan it and attach the record from the vendor, and then submit the invoice for approval. When the approver receives the email, they will get the invoice information and the attachment will show the scanned invoice from the vendor.
 
 A new checkbox is added in the Workflow Maintenance window for the specified workflow types, which when selected will allow you to send the document attachment documents for Workflow Assignment type messages.
 
@@ -51,13 +50,13 @@ You can view the status of the document attached in the Document Attachment Stat
 
 ### Service Based Architecture
 
-Service Based Architecture (SBA) is a functionality delivered as a service call over https that adheres to the pattern of Service Oriented Architecture. Service Oriented Architecture (SOA) is a software design and software architecture design pattern based on distinct pieces of software providing application functionality as services to other applications. In layman’s terms, it is a service that exposes functionality in Dynamics GP that can be accessed using a URI (Uniform Resource Identifier). This allows a user to access the modules in Microsoft Dynamics GP.
+Service Based Architecture (SBA) is a functionality delivered as a service call over https that adheres to the pattern of Service Oriented Architecture. Service Oriented Architecture (SOA) is a software design and software architecture design pattern based on distinct pieces of software providing application functionality as services to other applications. In layman’s terms, it is a service that exposes functionality in Dynamics GP that can be accessed using a URI (Uniform Resource Identifier). This allows a user to access the modules in [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-Currently, the Timecard functionality in HR and Payroll in Microsoft Dynamics GP is also available on SBA which allows it to integrate with the Time Management App. The user who wants to use the Time Management App needs to be granted access to the SBA objects in the Security Task Setup window.
+Currently, the Timecard functionality in HR and Payroll in [!INCLUDE[prodshort](../includes/prodshort.md)] is also available on SBA which allows it to integrate with the Time Management App. The user who wants to use the Time Management App needs to be granted access to the SBA objects in the Security Task Setup window.
 
 SBAs allow you to log into the ERP modules through an app, which seamlessly integrates the data flow between them. The app may be installed on any platform.
 
-The following SBA objects are added to facilitate the Timecard Management Application integration into Microsoft Dynamics GP 2015 R2:
+The following SBA objects are added to facilitate the Timecard Management Application integration into [!INCLUDE[prodshort](../includes/prodshort.md)] 2015 R2:
 
 | **Objects**                       | **Module in which the object is added**   |
 |-----------------------------------|-------------------------------------------|
@@ -85,13 +84,13 @@ The following SBA objects are added to facilitate the Timecard Management Applic
 
 ### Scriptable Provisioning & Management
 
-To deliver Microsoft Dynamics GP as a cloud offering, you must be able to centralize and automate the provisioning and management of the application. A number of new cmdlets have been added to the Microsoft Dynamics GP PowerShell module, which make automated provisioning easier. The additions include cmdlets for installing the runtime and other components, creating the GP system and company databases, and adding tenants along, among others. Automating these tasks speeds up delivery and minimizes human involvement, reducing cost and the possibility of human error. View the PowerShell Users Guide for a complete list of the available cmdlets.
+To deliver [!INCLUDE[prodshort](../includes/prodshort.md)] as a cloud offering, you must be able to centralize and automate the provisioning and management of the application. A number of new cmdlets have been added to the [!INCLUDE[prodshort](../includes/prodshort.md)] PowerShell module, which make automated provisioning easier. The additions include cmdlets for installing the runtime and other components, creating the GP system and company databases, and adding tenants along, among others. Automating these tasks speeds up delivery and minimizes human involvement, reducing cost and the possibility of human error. View the PowerShell Users Guide for a complete list of the available cmdlets.
 
 ## Reporting enhancements
 
 ### Display Debits before Credits
 
-In the Microsoft Dynamics GP 2015 R2, the Debit column is moved to display before the Credit column by default in account transaction reporting options in which the Credit column previously displayed before the Debit column. This applies to SmartLists and excel Reports and the associated data connection, as well as the database tables and views on which the reports are based.
+In the [!INCLUDE[prodshort](../includes/prodshort.md)] 2015 R2, the Debit column is moved to display before the Credit column by default in account transaction reporting options in which the Credit column previously displayed before the Debit column. This applies to SmartLists and excel Reports and the associated data connection, as well as the database tables and views on which the reports are based.
 
 ### Default SmartList Visibility 
 
@@ -106,7 +105,7 @@ Administration &gt;&gt; Setup &gt;&gt; System &gt;&gt; System Preferences.
 
 ### Workflow SmartList Designer Create View Approval
 
-You can now define workflow for creating views within a SQL database. Within SmartList Designer you can send a SmartList through workflow to create a SQL view based on the SmartList query. The SmartLists with the workflow status of Completed can then be used to publish refreshable Excel reports. The views which are created can also be used outside of SmartList Designer and Microsoft Dynamics GP 2015 R2 for other reporting needs. The primary purpose of the workflow type is to define the user(s) that can create the view within the SQL database. Only specific users have access to create objects within the SQL database and creating a workflow will allow those users insight into the views needed to be created. You must have setup one active workflow in order for the SQL view to go through the approval process. Set up SmartList workflows from the Administration series within the Workflow Maintenance window.
+You can now define workflow for creating views within a SQL database. Within SmartList Designer you can send a SmartList through workflow to create a SQL view based on the SmartList query. The SmartLists with the workflow status of Completed can then be used to publish refreshable Excel reports. The views which are created can also be used outside of SmartList Designer and [!INCLUDE[prodshort](../includes/prodshort.md)] 2015 R2 for other reporting needs. The primary purpose of the workflow type is to define the user(s) that can create the view within the SQL database. Only specific users have access to create objects within the SQL database and creating a workflow will allow those users insight into the views needed to be created. You must have setup one active workflow in order for the SQL view to go through the approval process. Set up SmartList workflows from the Administration series within the Workflow Maintenance window.
 
 ### Historical Received Not Invoiced Report
 
@@ -124,7 +123,7 @@ The SmartLists and Excel Reports for Analytical Accounting (AA) transaction info
 
 ### Combine General Ledger Inquiry
 
-In Microsoft Dynamics GP 2015 R2 in General Ledger, you can view open and historical information in the same window for Summary Inquiry, Detail Inquiry and for Account Summary. Any Go Tos or drill backs will now go to the single window instead of the user picking open or history.
+In [!INCLUDE[prodshort](../includes/prodshort.md)] 2015 R2 in General Ledger, you can view open and historical information in the same window for Summary Inquiry, Detail Inquiry and for Account Summary. Any Go Tos or drill backs will now go to the single window instead of the user picking open or history.
 
 ![shows the summary inquiry window with the account for cash - operating shown.](media/summary-inquiry.png "Summary Inquiry")  
 
@@ -186,7 +185,7 @@ Follow these steps to create the set up for the date effective tax.
 
 1. Open the Company Setup Options window.
 
-2. Microsoft Dynamics GP &gt;&gt; Tools &gt;&gt; Set up &gt;&gt; Company &gt;&gt; Company &gt;&gt; Options
+2. [!INCLUDE[prodshort](../includes/prodshort.md)] &gt;&gt; Tools &gt;&gt; Set up &gt;&gt; Company &gt;&gt; Company &gt;&gt; Options
 
 3. In the Company Setup Options window, mark the Enable Tax Date checkbox, to allow you to use the tax date option for calculating the tax rate for the transaction based on Tax date.
 
@@ -198,14 +197,14 @@ You must set up the date range for the specified Tax ID for GP 2015, to calculat
 
 1. Open the Date Effective Tax Rates window.
 
-2. Microsoft Dynamics GP &gt;&gt; Tools &gt;&gt; Set up &gt;&gt; Company &gt;&gt; Tax Details &gt;&gt; Select the tax ID in the Tax Detail ID field to set up the date range for &gt;&gt; Date effective Tax Rates.
+2. [!INCLUDE[prodshort](../includes/prodshort.md)] &gt;&gt; Tools &gt;&gt; Set up &gt;&gt; Company &gt;&gt; Tax Details &gt;&gt; Select the tax ID in the Tax Detail ID field to set up the date range for &gt;&gt; Date effective Tax Rates.
 
 3. Specify the date range for the specified tax amount or percentage.
 
 You can mass modify the tax percentage of multiple tax IDs. You can choose to modify the tax percentage or amount for the taxes detail or the tax type based on date range, or for the tax without any specifying any date range, or both. Follow these steps to mass modify the tax percentage.
 
 1. Open the Mass Modify Taxes window.
-Microsoft Dynamics GP &gt;&gt; Tools &gt;&gt; Utilities &gt;&gt; Company &gt;&gt; Mass Modify Tax Percentage
+[!INCLUDE[prodshort](../includes/prodshort.md)] &gt;&gt; Tools &gt;&gt; Utilities &gt;&gt; Company &gt;&gt; Mass Modify Tax Percentage
 
 2. Select the option to modify the tax percentage. You can choose:
 
@@ -224,7 +223,7 @@ Microsoft Dynamics GP &gt;&gt; Tools &gt;&gt; Utilities &gt;&gt; Company &gt;&gt
 You can also regenerate taxes for the transaction batches with the updated tax percentage. You can regenerate taxes for all the saved transactions of all the modules (except GL) or the selected module, only if you mark the use date effective tax in the Company Setup Options window. You can specify the modules and the batches for which you want the taxes to be regenerated or regenerate the taxes for all the batches in all the modules (except GL) at one time. Follow these steps to regenerate the taxes for the saved batch transactions.
 
 1. Open the Regenerate Taxes window.
-Microsoft Dynamics GP &gt;&gt; Tools &gt;&gt; Company &gt;&gt; Utilities &gt;&gt; Regenerate Taxes
+[!INCLUDE[prodshort](../includes/prodshort.md)] &gt;&gt; Tools &gt;&gt; Company &gt;&gt; Utilities &gt;&gt; Regenerate Taxes
 
 2. Select the module to regenerate the updated tax for the batches. You can choose All to update the tax for the saved batch transactions in all the modules (except GL). Or, you can choose the module to update the tax for the saved batch transactions in the selected module.
 
@@ -264,13 +263,13 @@ Follow these steps to set up these options in Receivables Management:
 
 ### Enable Email on All Purchase Orders and Sales orders
 
-Additional email enhancements have been added for Microsoft Dynamics GP 2015 R2. The application now includes the ability to email all document format types (Short, Long, or Other) for all Purchase Order and Sales Order documents.
+Additional email enhancements have been added for [!INCLUDE[prodshort](../includes/prodshort.md)] 2015 R2. The application now includes the ability to email all document format types (Short, Long, or Other) for all Purchase Order and Sales Order documents.
 
 A template must exist for the document you wish to email and it must be assigned to a customer or vendor, or be set as the default template for a particular company.
 
 ### VAT Tax Routine
 
-A new routine called VAT Tax Routine is added in Microsoft Dynamics GP 2015 R2 which will look for any cash receipt overpayments that have been posted and applied to invoices where the discount was not taken but VAT tax was calculated on the original invoice. This routine will print the list of the customers who have not used the discount so that debit memos can be entered to adjust the payments they’ve made. The debit memos, however, must be created manually to adjust the unapplied amount from the cash receipt.
+A new routine called VAT Tax Routine is added in [!INCLUDE[prodshort](../includes/prodshort.md)] 2015 R2 which will look for any cash receipt overpayments that have been posted and applied to invoices where the discount was not taken but VAT tax was calculated on the original invoice. This routine will print the list of the customers who have not used the discount so that debit memos can be entered to adjust the payments they’ve made. The debit memos, however, must be created manually to adjust the unapplied amount from the cash receipt.
 
 Select the Calculate Terms Discount Before Taxes checkbox in the Company Setup Options window to calculate the VAT tax for the payments made after the discount period. You can print the report before running the routine process or run the routine to update the tax details and then print the report.
 
@@ -280,7 +279,7 @@ You can use the Process and Print Report option to run the routine, update the t
 
 ### Self Service User Type
 
-A Self Service user type is added in the Microsoft Dynamics GP 2015 R2 release. This user type will enable users that require very limited access to the system, the ability to perform tasks such as entering payroll time, entering project time and expenses, or creating a requisition.
+A Self Service user type is added in the [!INCLUDE[prodshort](../includes/prodshort.md)] 2015 R2 release. This user type will enable users that require very limited access to the system, the ability to perform tasks such as entering payroll time, entering project time and expenses, or creating a requisition.
 
 Follow these steps to assign the Self-service user type to a user.
 
@@ -292,25 +291,25 @@ Follow these steps to assign the Self-service user type to a user.
 
 The following table describes the action that follows when you assign a user with self-service user type:
 
-| User          | Self-service user type assignment possible | Message displayed                                                                                                                                                              |
-|---------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| User          | Self-service user type assignment possible | Message displayed  |
+|---------------|--------------------------------------------|-------|
 | POWERUSER     | No                                         | This user has been assigned access to the “POWERUSER” security role and cannot be defined as a Self Service Type. Please review the security that has been setup for this user |
-| Existing User | Yes                                        | Setting this user to Self Service type will restrict the user to employee self-service tasks                                                                                   |
-| New User      | Yes                                        | None                                                                                                                                                                           |
+| Existing User | Yes                                        | Setting this user to Self Service type will restrict the user to employee self-service tasks |
+| New User      | Yes                                        | None |
 
 ![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")When an existing user type is changed from self-service to Full or Limited user types, you will get a message to review the security set up for the user.  
 
 ### Employee Self Service – W2
 
-Employees can now view and print their own W2. With Microsoft Dynamics GP 2015 R2, this functionality is now available as part of Time Management self-service.
+Employees can now view and print their own W2. With [!INCLUDE[prodshort](../includes/prodshort.md)] 2015 R2, this functionality is now available as part of Time Management self-service.
 
-![shows the time management self-service screen in dynamics gp.](media/time-management.png "Time Management")  
+![shows the time management self-service screen in Dynamics GP.](media/time-management.png "Time Management")  
 
 ### Time Management App
 
-The Time Management App is available for download from the Windows Store, Google Play Store, or Apple Store. With this app, users can enter timecards within different companies that they access to within Microsoft Dynamics GP 2015 R2. Within the navigation bar, users can see the companies that they have access to. The summary panel displays the pay codes, balances and active pay periods of the selected company.
+The Time Management App is available for download from the Windows Store, Google Play Store, or Apple Store. With this app, users can enter timecards within different companies that they access to within [!INCLUDE[prodshort](../includes/prodshort.md)] 2015 R2. Within the navigation bar, users can see the companies that they have access to. The summary panel displays the pay codes, balances and active pay periods of the selected company.
 
-Before you can use this app to create, view, modify, and/or submit timecards, you must configure your Microsoft Dynamics GP 2015 R2 environment to integrate with the app.
+Before you can use this app to create, view, modify, and/or submit timecards, you must configure your [!INCLUDE[prodshort](../includes/prodshort.md)] 2015 R2 environment to integrate with the app.
 
 If the accrue type is Payroll, the app allows you to enter time codes against vacation or sick time paycodes.
 

@@ -14,29 +14,29 @@ ms.reviewer:
 ---
 <span id="_Toc498615790" class="anchor"></span>
 
-# Install Microsoft Dynamics GP on tzz first computer
+# Install [!INCLUDE[prodshort](../includes/prodshort.md)] on tzz first computer
 
-Use the information in this chapter to install Microsoft Dynamics GP 2018. This chapter contains the following sections:
+Use the information in this chapter to install [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. This chapter contains the following sections:
 
 -   [Installation overview](#installation-overview)  
 
--   [Installing Microsoft Dynamics GP (first computer)](#installing-microsoft-dynamics-gp-first-computer)  
+-   [Installing [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer)](#installing-microsoft-dynamics-gp-first-computer)  
 
 ## Installation overview
 
-In a multiuser local area network environment, Microsoft Dynamics GP applications are typically installed on a server, and then on each client. However, Microsoft Dynamics GP is not required to be installed on the server. You must install the Microsoft Dynamics GP databases on one computer first. After the Microsoft Dynamics GP databases are installed on that computer, you’ll be using the Microsoft Dynamics GP installation media or using an installation package to install on all remaining clients. For more about creating an installation package for your clients, see Chapter 8, “Installation package.”
+In a multiuser local area network environment, [!INCLUDE[prodshort](../includes/prodshort.md)] applications are typically installed on a server, and then on each client. However, [!INCLUDE[prodshort](../includes/prodshort.md)] is not required to be installed on the server. You must install the [!INCLUDE[prodshort](../includes/prodshort.md)] databases on one computer first. After the [!INCLUDE[prodshort](../includes/prodshort.md)] databases are installed on that computer, you’ll be using the [!INCLUDE[prodshort](../includes/prodshort.md)] installation media or using an installation package to install on all remaining clients. For more about creating an installation package for your clients, see Chapter 8, “Installation package.”
 
-The program files of the previous release aren’t removed by the Microsoft Dynamics GP 2018 upgrade process.
+The program files of the previous release aren’t removed by the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 upgrade process.
 
-## Installing Microsoft Dynamics GP (first computer)
+## Installing [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer)
 
 Before you begin, be sure you’ve completed the preparation steps listed in Chapter 3, “Data preparation,” and Chapter 4, “System preparation.” You must be logged in to Windows as a user with system administrator privileges.
 
-To install Microsoft Dynamics GP (first computer):
+To install [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer):
 
-1. From the Microsoft Dynamics GP installation media, double-click the Setup.exe file to open the Microsoft Dynamics GP installation window.
+1. From the [!INCLUDE[prodshort](../includes/prodshort.md)] installation media, double-click the Setup.exe file to open the [!INCLUDE[prodshort](../includes/prodshort.md)] installation window.
 
-2. If one or more of the following components isn’t installed on your computer, the Microsoft Dynamics GP 2018 Bootstrapper Setup window opens and you can choose to install the missing component or components.
+2. If one or more of the following components isn’t installed on your computer, the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
 -   Dexterity Shared Components 18.0
 
@@ -58,15 +58,15 @@ To install Microsoft Dynamics GP (first computer):
 
 -   Visual Basic for Applications Core
 
-After all the components are installed, you may need to restart your computer before continuing the installation of Microsoft Dynamics GP.
+After all the components are installed, you may need to restart your computer before continuing the installation of [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-3. Click Microsoft Dynamics GP.
+3. Click [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-The installation program verifies that your system has the minimum operating system required to run Microsoft Dynamics GP. If your system does not meet requirements, the installation will not continue.
+The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation will not continue.
 
 4. Select the primary country or region where you do business in the Country/ Region Selection window. Click Next.
 
-5. Follow the instructions in the screen to accept the software license agreement. To install Microsoft Dynamics GP, you must accept this agreement and click Next.
+5. Follow the instructions in the screen to accept the software license agreement. To install [!INCLUDE[prodshort](../includes/prodshort.md)], you must accept this agreement and click Next.
 
 6. In the Select Features window, select the features to install.
 
@@ -80,9 +80,9 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 | ![component icon](media/installed-component.png "Component icon") Run all from My Computer                      | Will install the feature and all of its sub–features.                                                                    |
 | ![component icon](media/not-installed-component.png "Component icon") Not Available | Will not install the selected feature or sub–                                                                            |  
 
-If you’ve installed a feature in a previous release, be sure that you’ve selected to install that feature in the Select Feature window. See [Microsoft Dynamics GP features](#_Microsoft_Dynamics_GP_1) on page 47 for a list of Microsoft Dynamics GP features. You also can install additional features. You can review the DYNAMICS.SET file for a list of features you have installed.  
+If you’ve installed a feature in a previous release, be sure that you’ve selected to install that feature in the Select Feature window. See [[!INCLUDE[prodshort](../includes/prodshort.md)] features](#_Microsoft_Dynamics_GP_1) on page 47 for a list of [!INCLUDE[prodshort](../includes/prodshort.md)] features. You also can install additional features. You can review the DYNAMICS.SET file for a list of features you have installed.  
 
-7. Specify a new folder where the Microsoft Dynamics GP files should be installed. To select a different folder, click Browse.
+7. Specify a new folder where the [!INCLUDE[prodshort](../includes/prodshort.md)] files should be installed. To select a different folder, click Browse.
 
 After you have specified the installation location, click Next.
 
@@ -106,16 +106,16 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 13. In the Installation Complete window, click Exit.
 
-14. Before you start Microsoft Dynamics GP Utilities, check for and install the most current Microsoft Dynamics GP update for Microsoft Dynamics GP 2018. See CustomerSource (<https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>) for the latest update information.
+14. Before you start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, check for and install the most current [!INCLUDE[prodshort](../includes/prodshort.md)] update for [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. See CustomerSource (<https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>) for the latest update information.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start Microsoft Dynamics GP Utilities, you must have appropriate privileges. Typically this means being prat of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control, (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system documentation for more information.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, you must have appropriate privileges. Typically this means being prat of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control, (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system documentation for more information.  
 
-15. After installing Microsoft Dynamics GP and the most recent update, you can perform the following steps.
+15. After installing [!INCLUDE[prodshort](../includes/prodshort.md)] and the most recent update, you can perform the following steps.
 
--   Start Microsoft Dynamics GP Utilities.
+-   Start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
 
--   Follow the instructions in the Microsoft Dynamics GP Utilities windows to upgrade tables on your server, upgrade your companies, and upgrade modified forms and reports. See Chapter 6, “Company data conversion,” for more information.
+-   Follow the instructions in the [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities windows to upgrade tables on your server, upgrade your companies, and upgrade modified forms and reports. See Chapter 6, “Company data conversion,” for more information.
 
--   After using Microsoft Dynamics GP Utilities, you can install additional component applications on the server computer. See [Chapter 8, “Installation package,”](#_Installation_package) or [Installing an additional component](#_Installing_an_additional) on page 50 for more information.  
+-   After using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, you can install additional component applications on the server computer. See [Chapter 8, “Installation package,”](#_Installation_package) or [Installing an additional component](#_Installing_an_additional) on page 50 for more information.  
 
 

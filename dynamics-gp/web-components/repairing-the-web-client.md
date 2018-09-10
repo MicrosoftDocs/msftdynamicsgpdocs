@@ -16,7 +16,7 @@ ms.reviewer:
 
 # Repairing the web client
 
-If the Microsoft Dynamics GP web client installation becomes damaged, the repair operations available may help resolve the issues. Information about repairing is divided into the following sections:
+If the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation becomes damaged, the repair operations available may help resolve the issues. Information about repairing is divided into the following sections:
 
 -   [Common repair scenarios](#common-repair-scenarios)  
 
@@ -24,11 +24,11 @@ If the Microsoft Dynamics GP web client installation becomes damaged, the repair
 
 ## Common repair scenarios
 
-When using the Microsoft Dynamics GP web client, there are some common scenarios that can be fixed through using a repair operation.
+When using the [!INCLUDE[prodshort](../includes/prodshort.md)] web client, there are some common scenarios that can be fixed through using a repair operation.
 
 ### Corrupted configuration
 
-The Microsoft Dynamics GP web client has numerous configurable components. If something has corrupted the configuration for one of these components, the repair action can return the component to its originally installed condition.
+The [!INCLUDE[prodshort](../includes/prodshort.md)] web client has numerous configurable components. If something has corrupted the configuration for one of these components, the repair action can return the component to its originally installed condition.
 
 ### Expired security certificates
 
@@ -40,13 +40,13 @@ If the credentials (user name and/or password) have changed for one of the user 
 
 ## Performing a repair
 
-To repair the Microsoft Dynamics GP web client installation, complete the following steps:
+To repair the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation, complete the following steps:
 
 1. Log in to the machine where the repair operation is to be performed.
 
 2. Open the Programs and Features control panel.
 
-3. From the list, select Microsoft Dynamics GP Web Components. Click **Change**.
+3. From the list, select [!INCLUDE[prodshort](../includes/prodshort.md)] Web Components. Click **Change**.
 
 4. In Program Maintenance, click **Repair**.
 

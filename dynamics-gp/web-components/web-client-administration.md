@@ -20,7 +20,7 @@ ms.reviewer:
 
 # Web client administration
 
-This part of the documentation provides information about performing administrative tasks for the Microsoft Dynamics GP web client. The following chapters are included:
+This part of the documentation provides information about performing administrative tasks for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client. The following chapters are included:
 
 -   [Chapter 14, “Managing web client sessions,”](#_Managing_web_client) provides information about the tools available to manage web client sessions.  
 

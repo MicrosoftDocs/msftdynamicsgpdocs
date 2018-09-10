@@ -16,7 +16,7 @@ ms.reviewer:
 
 # GP Web Resource Cache
 
-The Microsoft Dynamics GP Web Resource Cache is an optional component that you can install on the session host machines of your web client installation to help improve the performance and resource utilization. It is a Windows service that runs on the session host machines for the web client installation. Information about caching is divided into the following sections:
+The [!INCLUDE[prodshort](../includes/prodshort.md)] Web Resource Cache is an optional component that you can install on the session host machines of your web client installation to help improve the performance and resource utilization. It is a Windows service that runs on the session host machines for the web client installation. Information about caching is divided into the following sections:
 
 -   [Caching for the web client](#caching-for-the-web-client)  
 
@@ -28,7 +28,7 @@ The Microsoft Dynamics GP Web Resource Cache is an optional component that you c
 
 Any form that is displayed by the web client is first retrieved from the application dictionary and then converted into a format that can be used by the web client. Because the result is the same each time, it is useful to cache the converted form.
 
-In the standard Microsoft Dynamics GP web client installation, form caching is done at the session level. Each user session on the session host machine has its own cache folder that stores cached versions of the forms that the user has opened during that session. If a user re-opens a form that had previously been opened, the cached version is used. When the user closes the session, the contents of the cache are deleted.
+In the standard [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation, form caching is done at the session level. Each user session on the session host machine has its own cache folder that stores cached versions of the forms that the user has opened during that session. If a user re-opens a form that had previously been opened, the cached version is used. When the user closes the session, the contents of the cache are deleted.
 
 The GP Web Resource Cache allows caching at the machine level. When a user accesses a form in the web client, the form is cached on the session host machine. If any other user session running on that machine accesses that same form in the web client, the cached version is used. The content of the machine level cache is persistent. It is not affected when users close their web client sessions.
 
@@ -40,7 +40,7 @@ The machine level cache can help improve performance in three ways:
 
 -   The cached information is shared. The first time a web client user accesses a form, the form is cached. After that time, other web client users will access the cached version of the form.
 
-If a form in the Microsoft Dynamics GP web client installation has changed, such as being customized with the Modifier, the cache is updated automatically the next time the form is accessed.
+If a form in the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation has changed, such as being customized with the Modifier, the cache is updated automatically the next time the form is accessed.
 
 ## Installing the GP Web Resource Cache
 
@@ -48,7 +48,7 @@ You can install the GP Web Resource Cache on any session host machine (a machine
 
 To install the GP Web Resource Cache:
 
-1. From the Microsoft Dynamics GP installation media, double-click the Setup.exe file to open the Microsoft Dynamics GP installation window.
+1. From the [!INCLUDE[prodshort](../includes/prodshort.md)] installation media, double-click the Setup.exe file to open the [!INCLUDE[prodshort](../includes/prodshort.md)] installation window.
 
 2. Click **GP Web Resource Cache** and then click **Install**.
 
@@ -84,4 +84,4 @@ You may want to supply a specific location for the machine level cache for speci
 
 **CleanupMaxAge**   This setting specifies the minimum amount of time that must have elapsed since the content was last accessed before it is removed by the automatic cleanup action. The default value is 30 days. The format for this setting is days:hours:minutes:seconds.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")After you have made any changes to the configuration file, be sure to restart the Microsoft Dynamics GP Web Resource Cache service in the Services control panel.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")After you have made any changes to the configuration file, be sure to restart the [!INCLUDE[prodshort](../includes/prodshort.md)] Web Resource Cache service in the Services control panel.  

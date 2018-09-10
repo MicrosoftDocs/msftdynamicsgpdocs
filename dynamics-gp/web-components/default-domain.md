@@ -16,7 +16,7 @@ ms.reviewer:
 
 # Default domain
 
-When a user signs in to the Microsoft Dynamics GP web client, they must provide their full user name including the domain. Typically, the name will have this format:
+When a user signs in to the [!INCLUDE[prodshort](../includes/prodshort.md)] web client, they must provide their full user name including the domain. Typically, the name will have this format:
 
 *domain*\\username
 
@@ -24,7 +24,7 @@ In the **web.config** file for the web client web site, you can add an applicati
 
 Use the following procedure add the default domain setting.
 
-1. Make a copy of the **web.config** file for the Microsoft Dynamics GP web client installation. This file is typically found in this location:
+1. Make a copy of the **web.config** file for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation. This file is typically found in this location:
 
 C:\\Program Files\\Microsoft Dynamics\\GP Web Client\\GPweb\\
 

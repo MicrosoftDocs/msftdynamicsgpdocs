@@ -20,10 +20,10 @@ ms.reviewer:
 
 # Web components installation
 
-This part of the documentation explains how to use the Microsoft Dynamics GP web components installer to deploy the web components. The following chapters are included:
+This part of the documentation explains how to use the [!INCLUDE[prodshort](../includes/prodshort.md)] web components installer to deploy the web components. The following chapters are included:
 
--   [Chapter 10, “Single machine installation,”](#_Single_machine_installation) provides step-by-step instructions for installing the Microsoft Dynamics GP web components on a single server.  
+-   [Chapter 10, “Single machine installation,”](#_Single_machine_installation) provides step-by-step instructions for installing the [!INCLUDE[prodshort](../includes/prodshort.md)] web components on a single server.  
 
--   [Chapter 11, “Scale out installation,”](#_Scale_out_installation) provides step-by-step instructions for installing the Microsoft Dynamics GP web components in a scale-out configuration.  
+-   [Chapter 11, “Scale out installation,”](#_Scale_out_installation) provides step-by-step instructions for installing the [!INCLUDE[prodshort](../includes/prodshort.md)] web components in a scale-out configuration.  
 
 -   

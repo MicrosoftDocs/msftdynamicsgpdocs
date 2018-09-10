@@ -14,11 +14,11 @@ ms.reviewer:
 ---
 <span id="_Toc498953283" class="anchor"></span>
 
-# Microsoft Dynamics GP configuration
+# [!INCLUDE[prodshort](../includes/prodshort.md)] configuration
 
-Before you can install the Microsoft Dynamics GP web components, you must have Microsoft Dynamics GP installed, including the necessary web client runtime and/ or service based architecture components. The following sections provide the details:
+Before you can install the [!INCLUDE[prodshort](../includes/prodshort.md)] web components, you must have [!INCLUDE[prodshort](../includes/prodshort.md)] installed, including the necessary web client runtime and/ or service based architecture components. The following sections provide the details:
 
--   [Microsoft Dynamics GP installation](#microsoft-dynamics-gp-installation)  
+-   [[!INCLUDE[prodshort](../includes/prodshort.md)] installation](#microsoft-dynamics-gp-installation)  
 
 -   [Web Client SQL Server login](#web-client-sql-server-login)  
 
@@ -26,27 +26,27 @@ Before you can install the Microsoft Dynamics GP web components, you must have M
 
 -   [Web client runtime components](#web-client-runtime-components)  
 
-## Microsoft Dynamics GP installation
+## [!INCLUDE[prodshort](../includes/prodshort.md)] installation
 
-Microsoft Dynamics GP should be installed, configured, and operating properly before you use the web components installation to install the Web Client or Service Based Architecture server components for Microsoft Dynamics GP. While most administrative tasks can be performed with the web client, some important tasks such as creating companies cannot. These actions must be done with the Microsoft Dynamics GP desktop client and GP Utilities.
+[!INCLUDE[prodshort](../includes/prodshort.md)] should be installed, configured, and operating properly before you use the web components installation to install the Web Client or Service Based Architecture server components for [!INCLUDE[prodshort](../includes/prodshort.md)]. While most administrative tasks can be performed with the web client, some important tasks such as creating companies cannot. These actions must be done with the [!INCLUDE[prodshort](../includes/prodshort.md)] desktop client and GP Utilities.
 
-Each server that will be acting as a session host must have a Microsoft Dynamics GP desktop client installation installed. Use the desktop client to verify that the server is able to connect to the Microsoft Dynamics GP database.
+Each server that will be acting as a session host must have a [!INCLUDE[prodshort](../includes/prodshort.md)] desktop client installation installed. Use the desktop client to verify that the server is able to connect to the [!INCLUDE[prodshort](../includes/prodshort.md)] database.
 
 ## Web Client SQL Server login
 
-During the Microsoft Dynamics GP installation, a SQL Server login is created that web client and service based architecture sessions can use to access SQL Server. By using the single Web Client SQL Server login, each web client and service based architecture user doesn't need to have their own SQL Server login. Web client users can access the web client simply by providing their standard Windows login credentials or their Organizational Account. Service Based Architecture users must access Microsoft Dynamics GP using either their Windows login credentials or their Organizational Account.
+During the [!INCLUDE[prodshort](../includes/prodshort.md)] installation, a SQL Server login is created that web client and service based architecture sessions can use to access SQL Server. By using the single Web Client SQL Server login, each web client and service based architecture user doesn't need to have their own SQL Server login. Web client users can access the web client simply by providing their standard Windows login credentials or their Organizational Account. Service Based Architecture users must access [!INCLUDE[prodshort](../includes/prodshort.md)] using either their Windows login credentials or their Organizational Account.
 
-During the Microsoft Dynamics GP web components installation, you will need to know the name and password for the Web Client SQL Server login. You can use Microsoft Dynamics GP Utilities to configure or make changes to the Web Client SQL Server login for your Microsoft Dynamics GP installation.
+During the [!INCLUDE[prodshort](../includes/prodshort.md)] web components installation, you will need to know the name and password for the Web Client SQL Server login. You can use [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities to configure or make changes to the Web Client SQL Server login for your [!INCLUDE[prodshort](../includes/prodshort.md)] installation.
 
 ## Web client only users
 
-It’s likely that you will have some users that will be accessing only the Microsoft Dynamics GP web client and will never use the desktop client. You can set up these users in Microsoft Dynamics GP as web client only users.
+It’s likely that you will have some users that will be accessing only the [!INCLUDE[prodshort](../includes/prodshort.md)] web client and will never use the desktop client. You can set up these users in [!INCLUDE[prodshort](../includes/prodshort.md)] as web client only users.
 
-In the User Setup window, mark the Web Client user only (no SQL Server Account) option. The SQL Server Account tab will be disabled, because the user you are adding to Microsoft Dynamics GP will not have a SQL Server login. In the
+In the User Setup window, mark the Web Client user only (no SQL Server Account) option. The SQL Server Account tab will be disabled, because the user you are adding to [!INCLUDE[prodshort](../includes/prodshort.md)] will not have a SQL Server login. In the
 
 Directory Account tab, you will supply the Windows login information for the user.
 
-When the user signs in to the web client, they simply provide their Windows Login or organizational account credentials. The web client will determine the user ’s Microsoft Dynamics GP user ID based on the credentials. The Web Client SQL
+When the user signs in to the web client, they simply provide their Windows Login or organizational account credentials. The web client will determine the user ’s [!INCLUDE[prodshort](../includes/prodshort.md)] user ID based on the credentials. The Web Client SQL
 
 Server login (discussed in the previous section) is used to access the SQL Server databases.
 
@@ -54,13 +54,13 @@ Server login (discussed in the previous section) is used to access the SQL Serve
 
 ## Web client runtime components
 
-Each session host server must have the Microsoft Dynamics GP web client runtime and service based architecture components. These components are part of the Microsoft Dynamics GP installation. To install these components, complete the following procedure:
+Each session host server must have the [!INCLUDE[prodshort](../includes/prodshort.md)] web client runtime and service based architecture components. These components are part of the [!INCLUDE[prodshort](../includes/prodshort.md)] installation. To install these components, complete the following procedure:
 
 To install the web client runtime components
 
 1. Open the Programs and Features control panel.
 
-2. Select the Microsoft Dynamics GP 2018 application, and then click Change.
+2. Select the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 application, and then click Change.
 
 3. In the Program Maintenance window, click Add/Remove Features.
 
@@ -76,7 +76,7 @@ To install the service based architecture components
 
 1. Open the Programs and Features control panel.
 
-2. Select the Microsoft Dynamics GP 2018 application and then click Change.
+2. Select the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 application and then click Change.
 
 3. In the Program Maintenance window, click Add/Remove Features.
 

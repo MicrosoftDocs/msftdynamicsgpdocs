@@ -14,7 +14,7 @@ ms.reviewer: edupont
 ---
 # System requirements
 
-This chapter contains a list of the prerequisites for Microsoft Dynamics GP, as well as the disk space requirements for SQL Server.
+This chapter contains a list of the prerequisites for [!INCLUDE[prodshort](../includes/prodshort.md)], as well as the disk space requirements for SQL Server.
 
 This chapter contains the following sections:
 
@@ -30,7 +30,7 @@ This chapter contains the following sections:
 
 -   [Modify the Report Server web.config file](#modify-the-report-server-web.config-file)  
 
--   [Microsoft Dynamics GP CRM requirements](#microsoft-dynamics-gp-crm-requirements)  
+-   [[!INCLUDE[prodshort](../includes/prodshort.md)] CRM requirements](#microsoft-dynamics-gp-crm-requirements)  
 
 -   [Supported system requirements](#supported-system-requirements)  
 
@@ -38,7 +38,7 @@ This chapter contains the following sections:
 
 ## Prerequisites
 
-The following components also must be installed before you can install Microsoft Dynamics GP.
+The following components also must be installed before you can install [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 -   Microsoft Windows Installer 4.5
 
@@ -62,33 +62,33 @@ The following components also must be installed before you can install Microsoft
 
 -   Microsoft Lync 2010 SDK Runtime
 
-If one of these components isn’t installed on your computer when you attempt to install Microsoft Dynamics GP using the installation media, the Microsoft Dynamics GP Bootstrapper Setup window opens. This window shows which components need to be installed. Click Install to install the missing component or components. After all the components are installed, the installation of Microsoft Dynamics GP continues.
+If one of these components isn’t installed on your computer when you attempt to install [!INCLUDE[prodshort](../includes/prodshort.md)] using the installation media, the [!INCLUDE[prodshort](../includes/prodshort.md)] Bootstrapper Setup window opens. This window shows which components need to be installed. Click Install to install the missing component or components. After all the components are installed, the installation of [!INCLUDE[prodshort](../includes/prodshort.md)] continues.
 
 ## Home page prerequisites
 
-To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server 2012 Reporting Services or SQL Server 2014 Reporting Services to use with Microsoft Dynamics GP. For more information about installing and setting up Reporting Services for use with Microsoft Dynamics GP, go to the Microsoft Dynamics GP 2018 documentation resource Web site (<http://go.microsoft.com/fwlink/?LinkId=249465>) for the most current documentation.
+To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server 2012 Reporting Services or SQL Server 2014 Reporting Services to use with [!INCLUDE[prodshort](../includes/prodshort.md)]. For more information about installing and setting up Reporting Services for use with [!INCLUDE[prodshort](../includes/prodshort.md)], go to the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 documentation resource Web site (<http://go.microsoft.com/fwlink/?LinkId=249465>) for the most current documentation.
 
 ### 
 
 ## Word templates prerequisites
 
-Predefined Word templates for document types such as sales quotes and purchase orders are provided for you with Microsoft Dynamics GP. The templates are based on standard reports in Microsoft Dynamics GP. You also can create your own template or create a template from an existing template.
+Predefined Word templates for document types such as sales quotes and purchase orders are provided for you with [!INCLUDE[prodshort](../includes/prodshort.md)]. The templates are based on standard reports in [!INCLUDE[prodshort](../includes/prodshort.md)]. You also can create your own template or create a template from an existing template.
 
 The following components are required to modify templates.
 
 -   Microsoft Word 2013 or later to make layout changes such changing the font size
 
--   Microsoft Dynamics GP Add-in for Microsoft Word to add fields and data sources to the template
+-   [!INCLUDE[prodshort](../includes/prodshort.md)] Add-in for Microsoft Word to add fields and data sources to the template
 
--   Visual Studio Tools for Office Runtime 2.0 or later—Visual Studio Tools for Office Runtime 3.0 is installed with Microsoft Dynamics GP Add-in for Microsoft Word
+-   Visual Studio Tools for Office Runtime 2.0 or later—Visual Studio Tools for Office Runtime 3.0 is installed with [!INCLUDE[prodshort](../includes/prodshort.md)] Add-in for Microsoft Word
 
-You can install Microsoft Dynamics GP Add-in for Microsoft Word from the Microsoft Dynamics GP installation media. Double-click the Setup.exe file and then click Microsoft Dynamics GP Add-in for Microsoft Word.
+You can install [!INCLUDE[prodshort](../includes/prodshort.md)] Add-in for Microsoft Word from the [!INCLUDE[prodshort](../includes/prodshort.md)] installation media. Double-click the Setup.exe file and then click [!INCLUDE[prodshort](../includes/prodshort.md)] Add-in for Microsoft Word.
 
-Be sure that the Open XML SDK 2.0 for Microsoft Office (installed as a Microsoft Dynamics GP prerequisite) is installed before you use Word Templates for Microsoft Dynamics GP.
+Be sure that the Open XML SDK 2.0 for Microsoft Office (installed as a [!INCLUDE[prodshort](../includes/prodshort.md)] prerequisite) is installed before you use Word Templates for [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 ## Email requirements
 
-By using the email functionality in Microsoft Dynamics GP, you can embed documents into the body of the email or send documents as attachments. You can send a single document, batches of documents, or send multiple documents from sales and purchasing transaction lists. When setting up the email functionality, you can select which documents you can send and which customers and vendors should receive their documents in email. If you are using Word templates for Microsoft Dynamics GP, you can send predefined or customized forms.
+By using the email functionality in [!INCLUDE[prodshort](../includes/prodshort.md)], you can embed documents into the body of the email or send documents as attachments. You can send a single document, batches of documents, or send multiple documents from sales and purchasing transaction lists. When setting up the email functionality, you can select which documents you can send and which customers and vendors should receive their documents in email. If you are using Word templates for [!INCLUDE[prodshort](../includes/prodshort.md)], you can send predefined or customized forms.
 
 Review the following requirements.
 
@@ -96,7 +96,7 @@ Review the following requirements.
 
 -   If you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services, the Autodiscover service must be enabled to connect to the Exchange server.
 
--   The email functionality in Microsoft Dynamics GP supports the following document types. Depending on the document type and the email service, Microsoft Word 2013 or later and Word templates for Microsoft Dynamics GP are required.
+-   The email functionality in [!INCLUDE[prodshort](../includes/prodshort.md)] supports the following document types. Depending on the document type and the email service, Microsoft Word 2013 or later and Word templates for [!INCLUDE[prodshort](../includes/prodshort.md)] are required.
 
 | File format | Word 2013         | Word templates | Web Client    |
 |-------------|-------------------|----------------|---------------|
@@ -105,7 +105,7 @@ Review the following requirements.
 | DOCX        | Not required      | Enabled        | Available\*   |
 | HTML        | Not required      | Not required   | Available\*   |
 
-\*E-mail for Microsoft Dynamics GP Web Client will only be available if Exchange is your server type in the System Preferences window.
+\*E-mail for [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client will only be available if Exchange is your server type in the System Preferences window.
 
 -   Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window.
 
@@ -121,11 +121,11 @@ Depending on the file format you choose to send your documents in email, your cu
 | PDF                                                                                                                            | Adobe Reader                 |
 | DOCX                                                                                                                           | Microsoft Word Viewer        |
 | HTML\*                                                                                                                         | Internet Explorer 8 or later |
-| If you are using Microsoft Dynamics GP Web Client only, your customers and vendors must be using HTML to view their documents. |
+| If you are using [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client only, your customers and vendors must be using HTML to view their documents. |
 
 ## SQL Server Reporting Services requirements
 
-Before you deploy Microsoft Dynamics GP Reporting Services reports, you must install and configure SQL Server Reporting Services, and then set up security for SQL Server Reporting Services reports.
+Before you deploy [!INCLUDE[prodshort](../includes/prodshort.md)] Reporting Services reports, you must install and configure SQL Server Reporting Services, and then set up security for SQL Server Reporting Services reports.
 
 ## Modify the Report Server web.config file
 
@@ -147,20 +147,20 @@ To modify the Report Server Web.config file:
 
 5. Save and close the Report Server web.config file.
 
-## Microsoft Dynamics GP CRM requirements
+## [!INCLUDE[prodshort](../includes/prodshort.md)] CRM requirements
 
 You must be using SQL Server 2012 R2 Reporting Services or SQL Server 2014 Reporting Services and Microsoft Dynamics CRM 2011 or later to deploy SQL Server Reporting Services reports and metrics that include CRM data. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
 
-You must install the Microsoft Dynamics CRM Reporting Extensions on the Microsoft Dynamics GP report server to render reports. Before you render a SQL Server Reporting Services report with CRM data, be sure to start the Microsoft Dynamics CRM application to initialize data.
+You must install the Microsoft Dynamics CRM Reporting Extensions on the [!INCLUDE[prodshort](../includes/prodshort.md)] report server to render reports. Before you render a SQL Server Reporting Services report with CRM data, be sure to start the Microsoft Dynamics CRM application to initialize data.
 
 ## Supported system requirements
 
-For current system requirements for Microsoft Dynamics GP, see <http://go.microsoft.com/fwlink/?LinkId=521785>. The system requirements include supported databases and operating systems, hardware recommendations, client requirements, and Terminal Server requirements.
+For current system requirements for [!INCLUDE[prodshort](../includes/prodshort.md)], see <http://go.microsoft.com/fwlink/?LinkId=521785>. The system requirements include supported databases and operating systems, hardware recommendations, client requirements, and Terminal Server requirements.
 
 Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software improves performance.
 
 ## About remote access
 
-You can use Windows Server 2012 Terminal Services, Windows Server 2012 R2 Remote Desktop Services, and Windows Server 2012 Remote Desktop Services. Citrix Xenapps can also be used with most database configurations to provide remote access to Microsoft Dynamics GP in a Wide Area Network (WAN) environment.
+You can use Windows Server 2012 Terminal Services, Windows Server 2012 R2 Remote Desktop Services, and Windows Server 2012 Remote Desktop Services. Citrix Xenapps can also be used with most database configurations to provide remote access to [!INCLUDE[prodshort](../includes/prodshort.md)] in a Wide Area Network (WAN) environment.
 
 For more information about system requirements see <http://go.microsoft.com/fwlink/?LinkId=521785>. You also should refer to the documentation provided by Citrix for more information.

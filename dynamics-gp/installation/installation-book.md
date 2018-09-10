@@ -12,7 +12,7 @@ ms.topic:
 ms.assetid: 7e9904d6-be32-4408-bb62-10e554f14f15
 ms.reviewer: 
 ---
-Microsoft Dynamics GP
+[!INCLUDE[prodshort](../includes/prodshort.md)]
 
 GP 2018
 
