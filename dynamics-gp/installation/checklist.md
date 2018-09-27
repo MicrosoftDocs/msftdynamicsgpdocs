@@ -33,7 +33,7 @@ Use this checklist as your guide to installing and setting up Microsoft Dynamics
 GP.
 |Step | For more information|
 |-----|---------------------|
-| 1. Plan the security of your system.| Download the SecurityPlanning.pdf, titled Planning for Security, from the following location: <http://www.microsoft.com/en-us/download/details.aspx?id=45025> by expanding the Details option.  |
+| 1. Plan the security of your system.| Download the SecurityPlanning.pdf, titled Planning for Security, from the following location: <http://www.microsoft.com/en-us/download/details.aspx?id=45025> by expanding the Details option.|
 | 2. Refer to the Documentation and resources web site for new or updated information relating to the installation. You also can use CustomerSource for additional information. | <http://go.microsoft.com/fwlink/?LinkId=249465> For the most current documentation <https://mbs.microsoft.com/customersource> Support Hot Topics or Knowledge Base|
 | 3. View the Readme file and make a note of the items that pertain to you.| \\Media\\GreatPlains\\Documentation\\GPReadme.chm|
 | 4. Obtain your need registration keys for [!INCLUDE[prodshort](../includes/prodshort.md)]2018. | Contact your [!INCLUDE[prodshort](../includes/prodshort.md)] partner before going to CustomerSource/My Account for registration keys for [!INCLUDE[prodshort](../includes/prodshort.md)]2018. <https://mbs.microsoft.com/customersource> My Account|
