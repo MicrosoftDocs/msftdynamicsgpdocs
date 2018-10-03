@@ -36,7 +36,7 @@ The framework you’ll enter includes maximums for the account length, the numbe
 
 Maximums you enter for account framework during installation will apply to additional companies you set up later. For example, you could enter the account framework maximums shown in the following table during the installation process.
 
-| Account framework example  |
+| Account framework example  |     |
 |----------------------------|-----|
 | Maximum account length     | 20  |
 | Maximum number of segments | 3   |
@@ -46,7 +46,7 @@ Maximums you enter for account framework during installation will apply to addit
 
 With these maximums for the account framework defined during installation, you wouldn’t be able to set up the following account format for a company.
 
-| Invalid account format for the corresponding framework |
+| Invalid account format for the corresponding framework ||
 |--------------------------------------------------------|-----|
 | Maximum account length                                 | 20  |
 | Maximum number of segments                             | 3   |
@@ -82,13 +82,13 @@ When planning an account framework, think about the account format you’ve used
 
 To use one of the default charts of accounts provided with [!INCLUDE[prodshort](../includes/prodshort.md)], set up the account framework with maximums that are at least the size listed below. To preview the default charts of accounts for various business and industry types, review the Default Charts of Accounts for [!INCLUDE[prodshort](../includes/prodshort.md)] article (<http://go.microsoft.com/fwlink/?LinkId=89042>).
 
-| Minimum account framework for use with sample company |
-|-------------------------------------------------------|-----------------------|
-| Maximum account length                                | At least 9 characters |
-| Maximum number of segments                            | At least 3 segments   |
-| Length of segment 1                                   | At least 3 characters |
-| Length of segment 2                                   | At least 4 characters |
-| Length of segment 3                                   | At least 2 characters |
+| Minimum account framework for use with sample company |                     |
+|-------------------------|--------------------------------------------|
+| Maximum account length      |At least 9 characters | 
+| Maximum number of segments |At least 3 segments   |
+| Length of segment 1    |At least 3 characters |
+| Length of segment 2   |At least 4 characters |
+| Length of segment 3    |At least 2 characters |
 
 If you have more than one company, you may need to enter maximum segment lengths that exceed the 66-character account length maximum when the segment lengths are added together. Assume that you have two companies using the account formats shown in the following table.
 
@@ -102,8 +102,8 @@ If you have more than one company, you may need to enter maximum segment lengths
 
 In this case, you’d enter the following account framework maximums.
 
-| Account framework accommodating both account formats |
-|------------------------------------------------------|-----|
+| Account framework accommodating both account formats |                     |
+|-------------------------|--------------------------------------------|
 | Maximum account length                               | 66  |
 | Maximum number of segments                           | 3   |
 | Length of segment 1                                  | 20  |

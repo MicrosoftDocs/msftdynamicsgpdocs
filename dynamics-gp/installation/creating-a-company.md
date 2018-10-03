@@ -73,11 +73,11 @@ To add a company using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities
 
 6. The Create Company window opens, where you can enter a database/company ID, and a company name. You also can select the following options.
 
--   Mark to load shipping methods and payment terms.
+   -   Mark to load shipping methods and payment terms.
 
--   Mark the Load Default Chart of Accounts option and click a business and industry type. For more information about charts of accounts, see Chart of accounts overview on page 63.
+    -   Mark the Load Default Chart of Accounts option and click a business and industry type. For more information about charts of accounts, see Chart of accounts overview on page 63.
 
--   Copy access from another company, except from the sample company, Fabrikam, Inc.
+    -   Copy access from another company, except from the sample company, Fabrikam, Inc.
 
 ![screen for setting up a company](media/create-company-01.png "Company Setup")  
 
@@ -91,11 +91,11 @@ To add a company using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities
 
 9. The Very SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 
-The Server Installation Progress window appears, showing progress as tables loaded.
+    The Server Installation Progress window appears, showing progress as tables loaded.
 
 10. In the Business Intelligence Reports Setup window, select the business intelligence components to deploy. Click Next. The window that opens depends on the components you selected.
 
-If you don’t want to deploy business intelligence components, leave the components unmarked and click Next. The Company Setup Options window appears. Skip to step 18.
+    If you don’t want to deploy business intelligence components, leave the components unmarked and click Next. The Company Setup Options window appears. Skip to step 18.
 
 11. The SQL Server Reporting Services Reports Setup window appears if you marked to deploy Reporting Services reports. After selecting your report server mode, enter the locations to deploy the reports to. Be sure that the location you enter does not end with a slash.
 
@@ -108,9 +108,8 @@ Native mode location example:
 
 SharePoint Integrated mode location example.
 
-| SharePoint Integrated |
+| Location |         Example      |
 |-----------------------|----------------|
-| Location              | Example        |
 | SharePoint Site       |                |
 | Report Library        | ReportsLibrary |
 
@@ -145,15 +144,15 @@ SharePoint location example.
 
 18. The Verify SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 
-The Business Intelligence Deployment Progress window appears. This window displays the report deployment progress.
+    The Business Intelligence Deployment Progress window appears. This window displays the report deployment progress.
 
 19. The Company Setup Options window appears, where you can select one of the following options to configure your company.
 
--   Mark the Set up the company later option to set up your company at another time. When you are ready to set up data for your company, you can use wizards to migrate data from QuickBooks or Peachtree and enter basic configuration options, or you can configure the company using the Setup Checklist window in [!INCLUDE[prodshort](../includes/prodshort.md)].
+    -   Mark the Set up the company later option to set up your company at another time. When you are ready to set up data for your company, you can use wizards to migrate data from QuickBooks or Peachtree and enter basic configuration options, or you can configure the company using the Setup Checklist window in [!INCLUDE[prodshort](../includes/prodshort.md)].
 
--   Mark the Set up the company using the configuration wizard option to use the Rapid Configuration Tool for [!INCLUDE[prodshort](../includes/prodshort.md)]. The Rapid Configuration Tool helps you enter the basic setup information required for [!INCLUDE[prodshort](../includes/prodshort.md)]. With the Rapid Configuration Tool, you can start with a standard industry configuration, modify the configuration data, and then import the data into [!INCLUDE[prodshort](../includes/prodshort.md)]. Or, you can import a configuration from a Microsoft Office Excel workbook prepared by a [!INCLUDE[prodshort](../includes/prodshort.md)] partner or business consultant.
+    -   Mark the Set up the company using the configuration wizard option to use the Rapid Configuration Tool for [!INCLUDE[prodshort](../includes/prodshort.md)]. The Rapid Configuration Tool helps you enter the basic setup information required for [!INCLUDE[prodshort](../includes/prodshort.md)]. With the Rapid Configuration Tool, you can start with a standard industry configuration, modify the configuration data, and then import the data into [!INCLUDE[prodshort](../includes/prodshort.md)]. Or, you can import a configuration from a Microsoft Office Excel workbook prepared by a [!INCLUDE[prodshort](../includes/prodshort.md)] partner or business consultant.
 
--   Mark the Migrate existing data using the migration wizard option to use the Rapid Migration Tool for [!INCLUDE[prodshort](../includes/prodshort.md)]. The Rapid Migration Tool migrates QuickBooks data or Peachtree to [!INCLUDE[prodshort](../includes/prodshort.md)]. You can migrate master records, transactions, and configuration settings such as payment terms and shipping methods. Master records include customer records, vendor records, item records, and account records. Transactions include open payables transactions, open receivables transactions, open invoices transactions, and purchase orders. You also can review and edit information before you complete the migration.
+    -   Mark the Migrate existing data using the migration wizard option to use the Rapid Migration Tool for [!INCLUDE[prodshort](../includes/prodshort.md)]. The Rapid Migration Tool migrates QuickBooks data or Peachtree to [!INCLUDE[prodshort](../includes/prodshort.md)]. You can migrate master records, transactions, and configuration settings such as payment terms and shipping methods. Master records include customer records, vendor records, item records, and account records. Transactions include open payables transactions, open receivables transactions, open invoices transactions, and purchase orders. You also can review and edit information before you complete the migration.
 
 To use a tool to migrate or configure data, you must download and install the Rapid Implementation Tools for [!INCLUDE[prodshort](../includes/prodshort.md)]. If you haven’t installed the Rapid Implementation Tools, click the Download and install the wizards link.
 
@@ -161,4 +160,4 @@ To use a tool to migrate or configure data, you must download and install the Ra
 
 20. Click Next. If you decided to configure your company later, the Additional Tasks window reappears. You can click Create a company to set up a second company, start [!INCLUDE[prodshort](../includes/prodshort.md)], or Exit.
 
-If you decided to migrate or configure your company data, the Rapid Migration Tool or the Rapid Configuration Tool starts.
+    If you decided to migrate or configure your company data, the Rapid Migration Tool or the Rapid Configuration Tool starts.

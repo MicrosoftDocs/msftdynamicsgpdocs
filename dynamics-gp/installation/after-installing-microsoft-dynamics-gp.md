@@ -47,9 +47,9 @@ The Welcome to [!INCLUDE[prodshort](../includes/prodshort.md)] window opens.
 
 4. Select a company and click OK. The [!INCLUDE[prodshort](../includes/prodshort.md)] main menu appears.
 
-To switch to a different company while you are working in [!INCLUDE[prodshort](../includes/prodshort.md)], choose [!INCLUDE[prodshort](../includes/prodshort.md)] menu &gt;&gt; User and Company.
+    To switch to a different company while you are working in [!INCLUDE[prodshort](../includes/prodshort.md)], choose [!INCLUDE[prodshort](../includes/prodshort.md)] menu &gt;&gt; User and Company.
 
-To quit [!INCLUDE[prodshort](../includes/prodshort.md)]:
+    To quit [!INCLUDE[prodshort](../includes/prodshort.md)]:
 
 1. Save your work in the window you are working in.
 

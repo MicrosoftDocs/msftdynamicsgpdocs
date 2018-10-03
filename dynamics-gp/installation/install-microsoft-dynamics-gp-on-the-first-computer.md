@@ -36,35 +36,35 @@ To install [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer):
 
 2. From the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 installation media, double-click the
 
-Setup.exe file to open the [!INCLUDE[prodshort](../includes/prodshort.md)] installation window.
+        Setup.exe file to open the [!INCLUDE[prodshort](../includes/prodshort.md)] installation window.
 
 3. If one or more of the following components isn’t installed on your computer, the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
--   Dexterity Shared Components 18.0
+    -   Dexterity Shared Components 18.0
 
--   Microsoft Application Error Reporting 11.0
+    -   Microsoft Application Error Reporting 11.0
 
--   Microsoft Lync 2010 SDK Runtime
+    -   Microsoft Lync 2010 SDK Runtime
 
--   Microsoft SQL Server Native Client 11.0
+    -   Microsoft SQL Server Native Client 11.0
 
--   Microsoft Windows Installer 4.6
+    -   Microsoft Windows Installer 4.6
 
--   Microsoft .NET Framework 3.5
+    -   Microsoft .NET Framework 3.5
 
--   Microsoft .NET Framework 4.5
+    -   Microsoft .NET Framework 4.5
 
--   Open XML SDK 2.0 for Microsoft Office
+    -   Open XML SDK 2.0 for Microsoft Office
 
--   Visual C++ 2015 Runtime Libraries
+    -   Visual C++ 2015 Runtime Libraries
 
--   Visual Basic for Applications Core
+    -   Visual Basic for Applications Core
 
-After all the components are installed, you may need to restart your computer before continuing the installation of [!INCLUDE[prodshort](../includes/prodshort.md)].
+    After all the components are installed, you may need to restart your computer before continuing the installation of [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 4. Click [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation will not continue.
+    The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation will not continue.
 
 5. If you are installing [!INCLUDE[prodshort](../includes/prodshort.md)] on a computer with an existing instance of [!INCLUDE[prodshort](../includes/prodshort.md)] 2018, select the Create new instance option, enter a name for the new instance, and then click Next.
 
@@ -76,7 +76,7 @@ The installation program verifies that your system has the minimum operating sys
 
 ![choose the features to add or remove](media/add-remove-features.png "Feature selector")  
 
-When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
+    When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
 | Option                                                                         | What happens                                                                                                             |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -86,19 +86,19 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 
 9. Specify the folder where you want the [!INCLUDE[prodshort](../includes/prodshort.md)] files installed. The default folder is C:\\Program Files\\Microsoft Dynamics\\GP 2018. To select a different folder, click Browse.
 
-After you have specified the installation folder, click Next.
+    After you have specified the installation folder, click Next.
 
 10. Provide the Windows account that will be used as the service account for the Service Based Architecture feature. This dialog is only displayed if you selected to install the Service Based Architecture feature on the Select Features dialog.
 
 11. In the SQL Server window, you can set up an ODBC data source, enter the name you assigned to the SQL Server when you installed Microsoft SQL Server. A data source name called Dynamics GP also is created using SQL Native Client.
 
-If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
+    If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
 
 12. Select to use DYNAMICS as the system database name or enter a different name for the system database name.
 
-By entering a custom name for the system database, you can have multiple system databases on the same SQL Server instance. You cannot change the system database name in [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
+    By entering a custom name for the system database, you can have multiple system databases on the same SQL Server instance. You cannot change the system database name in [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
 
-Click Next.
+    Click Next.
 
 13. If you have selected to install the Service Based Architecture feature, provide the Windows account that will be used as the service account for the Service Based Architecture service.
 

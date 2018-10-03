@@ -39,9 +39,9 @@ The following table lists the [!INCLUDE[prodshort](../includes/prodshort.md)] fe
 The following table lists the [!INCLUDE[prodshort](../includes/prodshort.md)] features. The features available depends on the country or region you selected when installing [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 For all countries and regions:
-
+|                      |                       |
+|----------------------|-----------------------|
 | A4                        | Manufacturing                       |
-|---------------------------|-------------------------------------|
 | Analysis Cubes Client     | Multilingual Checks                 |
 | Analytical Accounting     | Payment Document Management         |
 | Date Effective Tax Rates  | Professional Services Tools Library |
@@ -53,9 +53,11 @@ For all countries and regions:
 | Web Client Runtime        |                                     |
 
 For all countries and regions except Canada and the United States:
+|                                                                      |                       |
+|---------------------------------------------------------------------------------------|-----------------------|
 
-| Bank Management      | Scheduled Instalments |
-|----------------------|-----------------------|
+| Bank Management      | Scheduled Installments |
+
 | Direct Debit Refunds |                       |
 
 For the United States:
