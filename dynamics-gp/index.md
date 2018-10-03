@@ -9,11 +9,11 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/07/2018
+ms.date: 10/04/2018
 ms.author: edupont
 
 ---
-# Welcome to [!INCLUDE[prodlong](includes/prodlong.md)]
+# Welcome to Dynamics GP!
 
 Dynamics GP is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business.
 
@@ -67,6 +67,3 @@ We have specialized support teams focused on providing service and support to ou
 We welcome comments regarding the usefulness of the [!INCLUDE[prodshort](includes/prodshort.md)]. If you have specific suggestions or encounter problems, let us know on the [Connect for Microsoft Dynamics](https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
 
 An email address was available in previous versions to provide an option for contacting us about the documentation. Both <adocs@microsoft.com> and <bizdoc@microsoft.com> have been decommissioned.
-
-
-## See Also

@@ -1,1 +1,1 @@
-Business Central
+Dynamics GP
