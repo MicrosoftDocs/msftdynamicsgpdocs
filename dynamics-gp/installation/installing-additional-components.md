@@ -52,24 +52,21 @@ For all countries and regions:
 | Grant Management          | VAT Daybook                         |
 | Web Client Runtime        |                                     |
 
+
 For all countries and regions except Canada and the United States:
-|                                                                      |                       |
-|---------------------------------------------------------------------------------------|-----------------------|
-
-| Bank Management      | Scheduled Installments |
-
+|                      |                       |
+|----------------------|-----------------------|
+| Bank Management      | Scheduled Installments|                     
 | Direct Debit Refunds |                       |
 
 For the United States:
-
-|                                   |     |
-|-----------------------------------|-----|
+|                      |                       |
+|----------------------|-----------------------|
 | Human Resources and Payroll suite |     |
 
 For Belgium and France:
-
-|                       |     |
-|-----------------------|-----|
+|                      |                       |
+|----------------------|-----------------------|
 | Export Financial Data |     |
 
 ### We recommend that you install each [!INCLUDE[prodshort](../includes/prodshort.md)] feature and additional component that you are going to register on all client computers.

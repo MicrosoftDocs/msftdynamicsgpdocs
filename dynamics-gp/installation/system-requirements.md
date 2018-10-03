@@ -115,8 +115,8 @@ Review the following requirements.
 
 Depending on the file format you choose to send your documents in email, your customers and vendors must be using the following components to view their documents.
 
-| File format                                                                                                                    | Component                    |
-|--------------------------------------------------------------------------------------------------------------------------------|------------------------------|
+| File format                                                                                                                 | Component                    |
+|---------------------------------------------------------------------|------------------------------|
 | XPS                                                                                                                            | Microsoft XPS Viewer         |
 | PDF                                                                                                                            | Adobe Reader                 |
 | DOCX                                                                                                                           | Microsoft Word Viewer        |
@@ -143,7 +143,7 @@ To modify the Report Server Web.config file:
 
 4. In that line, change executionTimeout=”9000” to executionTimeout=”19000” and add the value maxRequestLength="20960".
 
-(&lt;httpRuntime executionTimeout="19000" maxRequestLength="20960"/&gt;
+    (&lt;httpRuntime executionTimeout="19000" maxRequestLength="20960"/&gt;
 
 5. Save and close the Report Server web.config file.
 

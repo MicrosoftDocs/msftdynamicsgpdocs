@@ -71,11 +71,7 @@ The following table shows the differences between Dictionary Order, Case- Insens
 | Sort order                          | Technical name                    | Sorting result               |
 |-------------------------------------|-----------------------------------|------------------------------|
 | Dictionary Order, Case- Insensitive | SQL\_Latin1\_General\_CP1\_CI\_AS | McMaster MMCompanyName Zebra |
-| Binary                              | Latin1\_General                   | MMCompanyName                
-                                 
-   McMaster                      
-                                 
-   Zebra                         |
+| Binary                              | Latin1\_General                   | MMCompanyName   Zebra                         |
 
 ## Installing Microsoft SQL Server 2012
 
@@ -101,15 +97,15 @@ To install Microsoft SQL Server 2012:
 
 8. In the Feature Selection window, select the features you want to use and specify the location to install SQL Server 2012. You should install at least the following features to use [!INCLUDE[prodshort](../includes/prodshort.md)].
 
--   Database Engine Services
+    -   Database Engine Services
 
--   Client Tools Connectivity
+    -   Client Tools Connectivity
 
--   Client Tools Backwards Compatibility
+    -   Client Tools Backwards Compatibility
 
--   Documentation Components
+    -   Documentation Components
 
--   Management Tools – Basic
+    -   Management Tools – Basic
 
 ![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")Select Reporting Services – Native or Reporting Services – SharePoint to use SQL Server Reporting Services reports, display SQL Server Reporting Services metrics on your home page in [!INCLUDE[prodshort](../includes/prodshort.md)], and display SQL Server Reporting Services reports in Microsoft Dynamics Business Analyzer. If you have marked Reporting Services – SharePoint, be sure to mark Reporting Services Add-in for SharePoint Products as well. For more information about installing and setting up SQL Server Reporting Services for use with [!INCLUDE[prodshort](../includes/prodshort.md)] see the Documentation and resources for [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 Web site (<https://go.microsoft.com/fwlink/?LinkId=249465>) for the most current documentation.  
 
@@ -119,13 +115,13 @@ Click Next.
 
 10. In the Instance Configuration window, select a default or named instance for your installation.
 
--   To install a new default instance (the primary instance on the computer), select Default instance and click Next. There can be only one default instance.
+    -   To install a new default instance (the primary instance on the computer), select Default instance and click Next. There can be only one default instance.
 
--   To install a named instance, select Named instance and then enter a unique instance name. Click Next.
+    -   To install a named instance, select Named instance and then enter a unique instance name. Click Next.
 
--   If a default or named instance is already installed, select the existing instance for your installation and click Next. The instance upgrades and you will have the option to install additional components.
+    -   If a default or named instance is already installed, select the existing instance for your installation and click Next. The instance upgrades and you will have the option to install additional components.
 
-For information about using instances of SQL Server, see your SQL Server documentation. We recommend that you have a dedicated server.
+    For information about using instances of SQL Server, see your SQL Server documentation. We recommend that you have a dedicated server.
 
 11. The required disk space is calculated. Click Next.
 
@@ -149,11 +145,11 @@ Click OK after you make your selections, and then click Next.
 
 15. In the Database Engine Configuration window, select Mixed Mode as the authentication mode in the Server Configuration tab. Mixed Mode is required by [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-With Mixed Mode, users can connect using Windows Authentication or SQL Server Authentication. You must enter and confirm the system administrator password when you select Mixed Mode. You’ll use this is the password to log in to [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities as the system administrator.
+    With Mixed Mode, users can connect using Windows Authentication or SQL Server Authentication. You must enter and confirm the system administrator password when you select Mixed Mode. You’ll use this is the password to log in to [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities as the system administrator.
 
-You must specify at least one system administrator. To add the account, click Add Current User to add accounts to the list of system administrators.
+    You must specify at least one system administrator. To add the account, click Add Current User to add accounts to the list of system administrators.
 
-Click Next.
+    Click Next.
 
 16. If you selected to install Reporting Services, use the Reporting Services Configuration page to specify the type of Reporting Services installation to create. Click Next.
 
@@ -195,23 +191,23 @@ To install Microsoft SQL Server 2012 Express Edition:
 
 8. In the Instance Configuration window, select a default or named instance for your installation.
 
--   To install a new default instance (the primary instance on the computer), select Default instance and click Next. There can be only one default instance.
+    -   To install a new default instance (the primary instance on the computer), select Default instance and click Next. There can be only one default instance.
 
--   To install a named instance, select Named instance and then enter a unique instance name. Click Next.
+    -   To install a named instance, select Named instance and then enter a unique instance name. Click Next.
 
--   If a default or named instance is already installed, select the existing instance for your installation and click Next. The instance upgrades and you will have the option to install additional components.
+    -   If a default or named instance is already installed, select the existing instance for your installation and click Next. The instance upgrades and you will have the option to install additional components.
 
-For information about using instances of SQL Server, see your SQL Server documentation. We recommend that you have a dedicated server.
+    For information about using instances of SQL Server, see your SQL Server documentation. We recommend that you have a dedicated server.
 
 9. In the Services Accounts tab, we recommend that you use the same account for each service and automatically start services. Click Use the same account for all SQL Service services to open a window where you can enter a user name and password. Click OK to return to the Server Configuration window.
 
 10. In the Account Provisioning tab, select Mixed Mode as the authentication mode. Mixed Mode is required by [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-With Mixed Mode, users can connect using Windows Authentication or SQL Server Authentication. You must enter and confirm the system administrator password when you select Mixed Mode. You’ll use this is the password to log in to [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities as the system administrator.
+    With Mixed Mode, users can connect using Windows Authentication or SQL Server Authentication. You must enter and confirm the system administrator password when you select Mixed Mode. You’ll use this is the password to log in to [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities as the system administrator.
 
-You must specify at least one system administrator. To add the account, click Add Current User to add accounts to the list of system administrators.
+    You must specify at least one system administrator. To add the account, click Add Current User to add accounts to the list of system administrators.
 
-Click Next.
+    Click Next.
 
 11. In the Error Reporting window, select to allow error reporting. Click Next.
 
@@ -235,11 +231,9 @@ To set up an ODBC data source using the SQL Native Client driver:
 
 2. Select the System DSN tab and choose Add.
 
-3. In the Create New Data Source window, select SQL Native Client, SQL Native
+3. In the Create New Data Source window, select SQL Native Client, SQL Native Client 10.0, or SQL Native Client 11.0 from the list and choose Finish.
 
-Client 10.0, or SQL Native Client 11.0 from the list and choose Finish.
-
-The options in the list depend on the version of SQL Server you are using.
+    The options in the list depend on the version of SQL Server you are using.
 
 4. In the first Create a New Data Source to SQL Server window, enter the following information.
 
@@ -287,7 +281,7 @@ Management Studio:
 
 3. Expand SQL Server Agent, and click Jobs.
 
-If you are using SQL Server 2012, expand Jobs.
+    If you are using SQL Server 2012, expand Jobs.
 
 4. Right-click on Remove Posted PJournals for your company database and click Properties to open the Properties window.
 

@@ -130,10 +130,9 @@ To prepare [!INCLUDE[prodshort](../includes/prodshort.md)] for use with default 
     | Report Manager URL | http://&lt;servername&gt;/Reports      |
 
     SharePoint Integrated mode location example.
-
-    | SharePoint Integrated |
-    |-----------------------|----------------|
+   
     | Location              | Example        |
+    |-----------------------|----------------|
     | SharePoint Site       |                |
     | Report Library        | ReportsLibrary |
 
@@ -232,7 +231,7 @@ The length of each segment can be no longer than 66 characters. Maximums you ent
 
 9. If you selected Yes in step 8, select each account segment you want to use as a sorting option and click Add. You can define up to nine additional sorting options.
 
-If you select more than one segment, use the Up and Down buttons to specify in what order the segments will be used to sort account information. Sorting options are used to control the way accounts are displayed in [!INCLUDE[prodshort](../includes/prodshort.md)] windows, in all your companies.
+    If you select more than one segment, use the Up and Down buttons to specify in what order the segments will be used to sort account information. Sorting options are used to control the way accounts are displayed in [!INCLUDE[prodshort](../includes/prodshort.md)] windows, in all your companies.
 
 10. When you’ve finished selecting segments, click Next to verify your account framework in the Verify Account Framework window.
 

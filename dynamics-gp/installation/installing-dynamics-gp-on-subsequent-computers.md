@@ -42,19 +42,19 @@ To install [!INCLUDE[prodshort](../includes/prodshort.md)] on an additional comp
 
 2. Click [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation will not continue.
+    The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation will not continue.
 
 3. Select a new [!INCLUDE[prodshort](../includes/prodshort.md)] instance and click Next
 
 ### 
 
-If you are installing [!INCLUDE[prodshort](../includes/prodshort.md)] on a computer with an existing instance of [!INCLUDE[prodshort](../includes/prodshort.md)], select Create a new instance and enter a name for the new instance. See Multiple instances of [!INCLUDE[prodshort](../includes/prodshort.md)] on page 82 for more information.
+    If you are installing [!INCLUDE[prodshort](../includes/prodshort.md)] on a computer with an existing instance of [!INCLUDE[prodshort](../includes/prodshort.md)], select Create a new instance and enter a name for the new instance. See Multiple instances of [!INCLUDE[prodshort](../includes/prodshort.md)] on page 82 for more information.
 
 4. In the Select a Country/Region window, select the primary country or region where you do business. Click Next.
 
 5. Follow the instructions in the window to accept the software license agreement.
 
-To install [!INCLUDE[prodshort](../includes/prodshort.md)], you must accept this agreement.
+    To install [!INCLUDE[prodshort](../includes/prodshort.md)], you must accept this agreement.
 
 6. In the Select Features window, select the features to install.
 
@@ -68,17 +68,17 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 
 7. Specify the folder where you want the [!INCLUDE[prodshort](../includes/prodshort.md)] files installed. The default folder is C:\\Program Files\\Microsoft Dynamics\\GP. To select a different folder, click Browse.
 
-After you have specified the installation folder, click Next.
+    After you have specified the installation folder, click Next.
 
 8. To set up an ODBC data source, enter the name you assigned to the SQL Server when you installed Microsoft SQL Server. A data source name called Dynamics GP also is created using SQL Native Client. If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
 
 9. Select the system database name. If you selected Enter custom name, enter the system database name.
 
-Click Next.
+    Click Next.
 
 10. If you have selected to install the Service Based Architecture feature, provide the Windows account that will be used as the service account for the Service Based Architecture service.
 
-The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
+    The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
 
 11. In the Install Program window, click Install.
 
@@ -115,7 +115,7 @@ To synchronize a client’s account framework:
 
 3. In the Welcome To [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities window, click Next.
 
-The [!INCLUDE[prodshort](../includes/prodshort.md)] dictionary is synchronized automatically with your account framework.
+    The [!INCLUDE[prodshort](../includes/prodshort.md)] dictionary is synchronized automatically with your account framework.
 
 4. In the Additional Tasks window, you can choose to complete additional tasks, launch [!INCLUDE[prodshort](../includes/prodshort.md)], or end the installation. If you select any task, choose Process; otherwise, click Exit.
 
