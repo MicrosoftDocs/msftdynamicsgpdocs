@@ -6,10 +6,10 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.date: 09/05/2018
+ms.date: 10/04/2018
 ms.service: dynamicsgp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer: edupont
 ---
 
 # Introduction
@@ -20,19 +20,11 @@ Some enhancements described in this documentation are optional and can be purcha
 
 ## What’s in this guide?
 
-The What’s New for [!INCLUDE[prodshort](../includes/prodshort.md)] continues to be updated with descriptions of enhancements that have been added to the product since the release of GP 2015. The enhancements are organized into the following chapters:
-
-- [What’s new in GP 2018](whats-new-in-dynamics-gp-2018.md)  
-
-- [What’s new in Dynamics GP 2016 R2](whats-new-in-dynamics-gp-2016-r2.md)  
-
-- [What’s new in Dynamics GP 2016](whats-new-in-dynamics-gp-2016.md)  
-
-- [What’s new in Dynamics GP 2015](whats-new-in-dynamics-gp-2015.md)  
+The What’s New for [!INCLUDE[prodshort](../includes/prodshort.md)] continues to be updated with descriptions of enhancements that have been added to the product since the release of GP 2015.
 
 ## Additional resources
 
-A number of resources are available to help in addition to this document.  
+A number of resources are available to help in addition to this document. 
 
 ### Resource page
 
@@ -42,7 +34,6 @@ The following page shows a list of resources that can help you find the informat
 The page will be updated going forward as new links become available, while some of the target pages will be added to the Docs.microsoft.com site.  
 
 ### Knowledge Base
-
 (<https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx>)
 
 Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
@@ -65,6 +56,4 @@ We have specialized support teams focused on providing service and support to ou
 
 ### Send us your suggestions
 
-We welcome comments regarding the usefulness of the [!INCLUDE[prodshort](../includes/prodshort.md)]. If you have specific suggestions or encounter problems, let us know on the Connect for Microsoft Dynamics (https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
-
-An email address was available in previous versions to provide an option for contacting us about the documentation. The most recent address was adocs@microsoft.com. Prior to that, bizdoc@microsoft.com was available. Both email addresses are being decommissioned.
+We welcome comments regarding the usefulness of the [!INCLUDE[prodshort](../includes/prodshort.md)]. If you have specific suggestions or encounter problems, let us know on the Connect for Microsoft Dynamics (https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.  

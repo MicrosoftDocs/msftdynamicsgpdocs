@@ -1,6 +1,7 @@
 # [Welcome to the Developer and IT-Pro Help for [!INCLUDE[prodshort](../includes/prodshort.md)]](index.md)
 ## What's new
 ### [Introduction](whats-new/introduction.md)
+### [What's new in Dynamics GP 2018 R2](whats-new/whats-new-in-gp-2018-r2.md)
 ### [What's new in Dynamics GP 2018](whats-new/whats-new-in-gp-2018.md)
 ### [What's new in Dynamics GP 2016 R2](whats-new/whats-new-in-dynamics-gp-2016-r2.md)
 ### [What's new in Dynamics GP 2016](whats-new/whats-new-in-dynamics-gp-2016.md)
