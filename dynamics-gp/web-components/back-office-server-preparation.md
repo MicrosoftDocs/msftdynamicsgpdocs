@@ -28,4 +28,4 @@ This portion of the documentation helps you configure [!INCLUDE[prodshort](../in
 
 -   [Chapter 6, “Register application for organizational accounts,”](#_Register_application_for) describes how to register an Azure application for your [!INCLUDE[prodshort](../includes/prodshort.md)] components.  
 
--   
+

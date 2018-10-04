@@ -100,7 +100,7 @@ To install the upgrade for each session host machine in the scale out installati
 
 13. Start the installer for the updated help content. The installer has the following name:
 
-Microsoft\_DynamicsGP18\_GPWebClientHelp.msi.
+    Microsoft\_DynamicsGP18\_GPWebClientHelp.msi.
 
 14. At the Welcome screen, click **Install**. The installation process may take a few minutes.
 
@@ -122,11 +122,11 @@ To ensure that the updated [!INCLUDE[prodshort](../includes/prodshort.md)] web c
 
 1. Clear the Internet Explorer browser cache. This helps to ensure that the updated application and help files are being used for the web client.
 
-To clear the browser cache, open Internet Explorer. In the Tools menu, choose Internet options. In the Browsing history group, click Delete.
+    To clear the browser cache, open Internet Explorer. In the Tools menu, choose Internet options. In the Browsing history group, click Delete.
 
 2. In the Delete Browsing History window, be sure to remove the temporary
 
-Internet files. Click Delete.
+    Internet files. Click Delete.
 
 3. After the browser cache has been cleared, click OK.
 
@@ -136,4 +136,4 @@ Internet files. Click Delete.
 
 5. Look in the lower-right corner to verify the trust level for the web client. If you see the icon indicating that the web client is running in sandboxed mode, you have an additional step to perform.
 
-The Silverlight application included with the updated web client may have been signed with a security certificate that is not available on the client machine. To get this certificate, you must run the DynamicsGPTrustedApp.msi that is included with the updated web client code.
+    The Silverlight application included with the updated web client may have been signed with a security certificate that is not available on the client machine. To get this certificate, you must run the DynamicsGPTrustedApp.msi that is included with the updated web client code.

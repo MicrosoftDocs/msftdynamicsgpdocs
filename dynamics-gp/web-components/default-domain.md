@@ -26,7 +26,7 @@ Use the following procedure add the default domain setting.
 
 1. Make a copy of the **web.config** file for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation. This file is typically found in this location:
 
-C:\\Program Files\\Microsoft Dynamics\\GP Web Client\\GPweb\\
+    C:\\Program Files\\Microsoft Dynamics\\GP Web Client\\GPweb\\
 
 2. Edit the file using a text editor.
 
@@ -34,17 +34,17 @@ C:\\Program Files\\Microsoft Dynamics\\GP Web Client\\GPweb\\
 
 4. Within the &lt;**appSettings**&gt; element, add an additional key element. The element specifies the default value to use for the domain. The following examples show the possible values for the key.
 
-**No value**   This key does not specify a value, so the user must supply a domain when entering their credentials. This is the default behavior when the key is not present.
+    **No value**   This key does not specify a value, so the user must supply a domain when entering their credentials. This is the default behavior when the key is not present.
 
-&lt;add key="DefaultUserDomain" value=""/&gt;
+    &lt;add key="DefaultUserDomain" value=""/&gt;
 
-Standard format This key specifies the value to use for the domain in standard format.
+    Standard format This key specifies the value to use for the domain in standard format.
 
-&lt;add key="DefaultUserDomain" value="CONTOSO"/&gt;
+    &lt;add key="DefaultUserDomain" value="CONTOSO"/&gt;
 
-**UPN format**   This key specifies the value to use for the domain in UPN (User Principal Name) format.
+    **UPN format**   This key specifies the value to use for the domain in UPN (User Principal Name) format.
 
-&lt;add key="DefaultUserDomain" value="@contoso.com"/&gt;
+    &lt;add key="DefaultUserDomain" value="@contoso.com"/&gt;
 
 5. Save the changes that you made to the **web.config** file.
 

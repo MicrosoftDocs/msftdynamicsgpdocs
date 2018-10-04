@@ -40,15 +40,15 @@ The Session Management snap-in for the Web Management Console is the primary too
 
 2. Enter the address of the Web Management Console site. The default address of the site is:
 
-https://ServerName:PortNumber/WebManagementConsole
+    https://ServerName:PortNumber/WebManagementConsole
 
-**ServerName**   is the fully-qualified domain name (FQDN) for the server that is hosting the web management console site. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
+    **ServerName**   is the fully-qualified domain name (FQDN) for the server that is hosting the web management console site. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
 
-**PortNumber**   is the port for the web site that you are using. If you chose to install on the default web site (port 80) then you do not need to supply the port number.
+        **PortNumber**   is the port for the web site that you are using. If you chose to install on the default web site (port 80) then you do not need to supply the port number.
 
-A typical URL to access the Web Management Console looks similar to the following:
+    A typical URL to access the Web Management Console looks similar to the following:
 
-https://gpuaweb.contoso.com/WebManagementConsole
+    https://gpuaweb.contoso.com/WebManagementConsole
 
 3. You may be prompted for your login credentials when you access the Web Management Console. If you are, provide your login name and password.
 
@@ -68,11 +68,11 @@ To connecting to Session Central
 
 2. In the window that is displayed, supply the URL for the Session Central Service. A typical URL to access the service looks like the following:
 
-http://machinename:48650/SessionCentralService
+    http://machinename:48650/SessionCentralService
 
-Substitute machinename with the name of the computer on which the Session Central Service is running. The default port used for the service is 48650. If you have used a different port for the service, you must use that port number in the URL.
+    Substitute machinename with the name of the computer on which the Session Central Service is running. The default port used for the service is 48650. If you have used a different port for the service, you must use that port number in the URL.
 
-If the Session Central Service has been configured to use SSL (secure sockets layer) than the URL must begin with https, instead of http.
+    If the Session Central Service has been configured to use SSL (secure sockets layer) than the URL must begin with https, instead of http.
 
 3. Click **OK**. The value entered will be validated. If the Session Central Service cannot be contacted, an error will be displayed. Correct the URL and then click OK to save the changes.
 

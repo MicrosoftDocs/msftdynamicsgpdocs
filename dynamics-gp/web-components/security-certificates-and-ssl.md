@@ -78,9 +78,9 @@ When an externally signed security certificate is used for a web site, the third
 
 To use an externally signed security certificate:
 
-1 Obtain the security certificate (.cer or .pfx) file from the third-party certificate supplier.
+1.  Obtain the security certificate (.cer or .pfx) file from the third-party certificate supplier.
 
-2 In Administrative Tools on the web server system, open Internet Information Services (IIS) Manager.
+2.  In Administrative Tools on the web server system, open Internet Information Services (IIS) Manager.
 
 3. In the left pane, select the computer name.
 
@@ -90,9 +90,9 @@ To use an externally signed security certificate:
 
 5. Install the certificate, based on the type of file that has been provided:
 
--   If your certificate has been provided as a .cer file, complete these actions. In the Actions pane, click **Complete Certificate Request**. Select the certificate (.cer) file that you obtained from the third-party certificate supplier. In the **Friendly name** field, enter the name that will be displayed for the certificate. Click **OK**.
+    -   If your certificate has been provided as a .cer file, complete these actions. In the Actions pane, click **Complete Certificate Request**. Select the certificate (.cer) file that you obtained from the third-party certificate supplier. In the **Friendly name** field, enter the name that will be displayed for the certificate. Click **OK**.
 
--   If your certificate has been provided a .pfx file, complete these actions. In the Actions pane, click **Import**. Select the certificate (.pfx) file that you obtained from the third-party certificate supplier. Enter the password for the security certificate. Click **OK**.
+    -   If your certificate has been provided a .pfx file, complete these actions. In the Actions pane, click **Import**. Select the certificate (.pfx) file that you obtained from the third-party certificate supplier. Enter the password for the security certificate. Click **OK**.
 
 ## Self-signed security certificates
 

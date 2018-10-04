@@ -38,15 +38,15 @@ To sign in to the web client, use the following procedure.
 
 2. Enter the URL of the [!INCLUDE[prodshort](../includes/prodshort.md)] web client site. The default address of the site is:
 
-[https://ServerName:PortNumber/GP](https://ServerName:PortNumber/GP)  
+    [https://ServerName:PortNumber/GP](https://ServerName:PortNumber/GP)  
 
-**ServerName**   is the fully-qualified domain name (FQDN) for the server that is hosting the web site. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
+    **ServerName**   is the fully-qualified domain name (FQDN) for the server that is hosting the web site. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
 
-**PortNumber**   is the port for the web site that you are using. If you chose to install on the default web site (port 80) then you do not need to supply the port number.
+    **PortNumber**   is the port for the web site that you are using. If you chose to install on the default web site (port 80) then you do not need to supply the port number.
 
-A typical URL to access the [!INCLUDE[prodshort](../includes/prodshort.md)] web client looks similar to the following:
+    A typical URL to access the [!INCLUDE[prodshort](../includes/prodshort.md)] web client looks similar to the following:
 
-<https://gpuaweb.contoso.com/GP>
+    <https://gpuaweb.contoso.com/GP>
 
 3. View the sign on page. If the site displays a security certificate error, report the issue to your system administrator, and do not continue the sign on process.
 
@@ -54,25 +54,25 @@ A typical URL to access the [!INCLUDE[prodshort](../includes/prodshort.md)] web 
 
 4. Enter your user credentials (User Name and Password). These are either domain user credentials or machine user credentials, depending on how the web client installation is configured. The User Name will have the format:
 
-domain\\username or machine\\username
+    domain\\username or machine\\username
 
 ![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")These are not your [!INCLUDE[prodshort](../includes/prodshort.md)] login name and password.  
 
 5. Specify the security level for the session. You can click Show descriptions to display details of the two security options.
 
-This is a public computer   Choose this option if the computer is public or is shared by multiple users. Be sure that you close the browser window when you are finished with your session.
+    This is a public computer   Choose this option if the computer is public or is shared by multiple users. Be sure that you close the browser window when you are finished with your session.
 
-This is a private computer   Choose this option if this is a private computer that only you have access to. When you choose this security level, you can mark the Remember me check box to save your user name and password. These will be used to automatically sign in to [!INCLUDE[prodshort](../includes/prodshort.md)] the next time you access this page for the web client.
+    This is a private computer   Choose this option if this is a private computer that only you have access to. When you choose this security level, you can mark the Remember me check box to save your user name and password. These will be used to automatically sign in to [!INCLUDE[prodshort](../includes/prodshort.md)] the next time you access this page for the web client.
 
 6. Click **Sign In**.
 
 7. If you are using a multitenant configuration, and have access to more than one tenant, you will be prompted to choose the tenant (installation of [!INCLUDE[prodshort](../includes/prodshort.md)]) that you want to connect to. Choose the Create Session action for the tenant.
 
-If you are using a single tenant configuration, or have access to only one tenant, no prompt will be displayed.
+    If you are using a single tenant configuration, or have access to only one tenant, no prompt will be displayed.
 
 8. A session will be created. The window you see first will depend on settings for your Dynamics GP user.
 
--   If your [!INCLUDE[prodshort](../includes/prodshort.md)] user ID has only SQL Server Account information, the [!INCLUDE[prodshort](../includes/prodshort.md)] login window will be displayed.
+    -   If your [!INCLUDE[prodshort](../includes/prodshort.md)] user ID has only SQL Server Account information, the [!INCLUDE[prodshort](../includes/prodshort.md)] login window will be displayed.
 
 ![shows the login screen to dynamics gp using sql login.](media/install-web-login-01.png "GP login")  
 
@@ -166,4 +166,3 @@ You will have to do one or both of the following actions:
 
 -   Reduce the security level for the specified zone. For example, if you are running the [!INCLUDE[prodshort](../includes/prodshort.md)] web client in an intranet setting, reduce the security level for the **Local intranet zone**.
 
--   

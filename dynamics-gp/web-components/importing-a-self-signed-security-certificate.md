@@ -68,16 +68,16 @@ To install the security certificate
 
 ![shows the certificates console snap-in.](media/manage-certificate-mmc.png "Certificates")  
 
-3. In the Microsoft Management Console, open the File menu and choose Add/ Remove Snap-in.
+9. In the Microsoft Management Console, open the File menu and choose Add/ Remove Snap-in.
 
-4. In the Add or Remove Snap-ins window, choose the Certificates snap-in from the Available snap-ins list, and then click Add.
+10. In the Add or Remove Snap-ins window, choose the Certificates snap-in from the Available snap-ins list, and then click Add.
 
-5. In the Certificates snap-in dialog box, choose Computer account and then click Next.
+11. In the Certificates snap-in dialog box, choose Computer account and then click Next.
 
-6. In the Select Computer dialog box, choose Local computer and then click Finish.
+12. In the Select Computer dialog box, choose Local computer and then click Finish.
 
-7. In the Add or Remove Snap-ins window, click OK.
+13. In the Add or Remove Snap-ins window, click OK.
 
-8. In the left pane, expand the Certificates (Local Computer) node, and then expand the Trusted Root Certification Authorities node.
+148. In the left pane, expand the Certificates (Local Computer) node, and then expand the Trusted Root Certification Authorities node.
 
 ![shows the login screen to dynamics gp in the browser.](media/install-web-login-03.png "GP login")  
