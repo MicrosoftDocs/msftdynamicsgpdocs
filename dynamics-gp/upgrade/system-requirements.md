@@ -56,25 +56,17 @@ Review the following table for supported client operating system changes.
 
 | Operating systems supported         | Editions     |
 |-------------------------------------|--------------|
-| Windows 7                           | Pro          
-                
-  Ultimate      
-                
-  Enterprise    |
-| Windows 8 and 8.1                   | Pro          
-                
-  Ultimate      
-                
-  Enterprise    |
-| Windows 10                          | Pro          
-                
-  Enterprise    |
-| Windows Server 2008 R2              | Enterprise   
-                
-  Standard      |
-| Windows Server 2012, Windows Server 
-                                      
- 2012 R2, Windows Server 2016         | Datacenter   |
+| Windows 7                           | Pro|
+|                           | Ultimate|
+|                           |  Enterprise    |
+| Windows 8 and 8.1                          | Pro|
+|                           | Ultimate|
+|                           |  Enterprise    |
+| Windows 10                          | Pro|
+|                           |  Enterprise    |
+| Windows Server 2008 R2              | Enterprise|
+|                           |  Standard    |
+| Windows Server 2012, Windows Server 2012 R2, Windows Server 2016         | Datacenter   |
 | Operating systems not supported     | Editions     |
 | Windows XP                          | All editions |
 | Windows Vista                       | All editions |

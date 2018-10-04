@@ -81,11 +81,11 @@ To discontinue the DexSQL.log:
 
 2. Change the following statements to FALSE.
 
-SQLLogSQLStmt=TRUE
+    SQLLogSQLStmt=TRUE
 
-SQLLogODBCMessages=TRUE
+    SQLLogODBCMessages=TRUE
 
-SQLLogAllODBCMessages=TRUE
+    SQLLogAllODBCMessages=TRUE
 
 3. Save your changes.
 
@@ -99,30 +99,30 @@ After you upgrade, we recommend printing the following reports to a printer or t
 | General Ledger            | Detailed Trial Balance                                                                                          |
 | Receivables Management    | Aged Trial Balance with Option                                                                                  |
 | Payables Management       | Aged Trial Balance with Option                                                                                  |
-| Inventory Control         | Pricing Reports                                                                                                 
-                                                                                                                   
-  Error Reports                                                                                                    
-                                                                                                                   
-  Purchase Receipts                                                                                                |
-| Purchase Order Processing | Purchase orders                                                                                                 
-                                                                                                                   
-  Purchase Order Status Report                                                                                     |
-| Payroll                   | Manual Check Edit List Benefit Summary Deduction Summary                                                        
-                                                                                                                   
-  Department Wage Summary                                                                                          
-                                                                                                                   
-  FUTA Summary Local Tax Summary Payroll Summary Pay Code Summary Position Summary State Tax Summary SUTA Summary  
-                                                                                                                   
-  Workers’ Compensation Summary                                                                                    
-                                                                                                                   
-  Form 941                                                                                                         
-                                                                                                                   
-  Form 941 Schedule B Employee Pay History \* Transaction History Report \* Check History \*                       |
-| Manufacturing             | WIP Report                                                                                                      
-                                                                                                                   
-  Manufacturing Order Summary                                                                                      
-                                                                                                                   
-  Standard Cost Pending                                                                                            |
+| Inventory Control         | Pricing Reports                                           | 
+|          |Error Reports|
+|          |Purchase Receipts|
+| Purchase Order Processing | Purchase orders|
+ |          | Purchase Order Status Report                                                                                     |
+| Payroll                   | Manual Check Edit| 
+|          |List Benefit Summary Deduction Summary|
+ |          | Department Wage Summary|
+|          |  FUTA Summary |
+|          |Local Tax Summary |
+|          |Payroll Summary |
+|          |Pay Code Summary |
+|          |Position Summary |
+|          |State Tax Summary|
+|          | SUTA Summary  |
+|          | Workers’ Compensation Summary|
+ |          | Form 941|  
+ |          |  Form 941 Schedule B |
+|          | Employee Pay History\* | 
+|          | Transaction History Report\*|
+|          |  Check History\*  |                     |
+| Manufacturing             | WIP Report |
+  |          | Manufacturing Order Summary|
+ |          | Standard Cost Pending                                                                                           |
 
 Print this report only if you’re keeping history.
 

@@ -267,20 +267,20 @@ To validate budget date records in the Analytical Accounting:
 
 1. Copy the following script and paste it into Microsoft SQL Server Management Studio.
 
-select distinct(a.PERIODDT) from AAG00904 a, AAG00500 b where a.PERIODDT not in (select b.date1 from AAG00500 b)
+    select distinct(a.PERIODDT) from AAG00904 a, AAG00500 b where a.PERIODDT not in (select b.date1 from AAG00500 b)
 
 2. Run the script against the company database.
 
 3. If results aren’t returned after running the script, you can upgrade to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
 
-If results show that there are budget date records that do not exist in the AAG00500 table, continue with the next step.
+    If results show that there are budget date records that do not exist in the AAG00500 table, continue with the next step.
 
 4. Run the following script to see if there is a fiscal or calendar year set up in the SY40101 (Period Header) table for the budget dates.
 
-select \* from SY40101
+    select \* from SY40101
 
 5. If there a fiscal or calendar year isn’t set up for the date, you must set up the fiscal or calendar year for those budget record dates before you can upgrade.
 
-If there is a fiscal or calendar year set up for the date, the records are missing from the AAG00500 table. Complete the following steps.
+    If there is a fiscal or calendar year set up for the date, the records are missing from the AAG00500 table. Complete the following steps.
 
 6. Run the following script to back up the AAG00500 table.

@@ -52,18 +52,6 @@ Purchasing Prepayments has been added as an origin for the Purchasing series.
 
 The Apply Documents Posting Journal has been added to the Receivings Trx Entry origin and Purchasing Invoice Entry origin in the Purchasing series.
 
-### Window name changes
-
-The following window and navigation path has been changed in [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
-
-| Previous window name                            | New window name                                                |
-|-------------------------------------------------|----------------------------------------------------------------|
-| Workflow                                        
-                                                  
- Administration &gt;&gt; Setup &gt;&gt; Workflow  | Workflow for SharePoint                                        
-                                                                  
-  Administration &gt;&gt; Setup &gt;&gt; Workflow for SharePoint  |
-
 ### Setup Checklist window
 
 The name of the existing Workflow node in the Setup Checklist window has changed to Workflow for SharePoint. A new Workflow node has been added for the new Workflow feature in [!INCLUDE[prodshort](../includes/prodshort.md)]. ([!INCLUDE[prodshort](../includes/prodshort.md)] 2013 R2 and later.)
@@ -92,16 +80,18 @@ The default 1099 address ID for a 1099 vendor is the primary address ID. The ven
 
 Additional 1099 boxes and fields have been added for the 1099 tax types in the following windows.
 
-| 1099 Setup window   |
-|---------------------|-------------------------------------------------------|----------------|
-| Tax type            | 1099 box number                                       | Minimum amount |
+#### 1099 Setup window 
+| Tax type | 1099 box number | Minimum amount   |
+|----------|-----------------|------------------|
 | Dividend            | 10 Exempt Interest Dividends                          | 0.01           |
 |                     | 11 Specified Private Activity Bond Interest Dividends | 0.01           |
 |                     | 14 State Tax Withheld                                 | 0.01           |
 | Individual          | 13 State Tax Withheld                                 | 0.01           |
 | Miscellaneous       | 18 State Income                                       | 0.01           |
-| 1099 Details window |
+
+#### 1099 Details window 
 | Tax type            | 1099 box number or field                              | Amount         |
+|----------|-----------------|------------------|
 | Dividend            | 10 Exempt Interest Dividends                          | 0.00           |
 |                     | 11 Specified Private Activity Bond Interest Dividends | 0.00           |
 |                     | 14 State Tax Withheld                                 | 0.00           |

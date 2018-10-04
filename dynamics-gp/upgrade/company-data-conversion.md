@@ -95,7 +95,7 @@ To upgrade [!INCLUDE[prodshort](../includes/prodshort.md)] tables:
 
 7. In the Confirmation window, click Finish.
 
-[!INCLUDE[prodshort](../includes/prodshort.md)] Utilities upgrades your company databases. This process may take several minutes to complete. The Server Installation Progress window describes the process as it progresses.
+    [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities upgrades your company databases. This process may take several minutes to complete. The Server Installation Progress window describes the process as it progresses.
 
 8. After the upgrade process is finished and is successful, the Additional Tasks window will open, where you can upgrade your forms and reports dictionaries, start [!INCLUDE[prodshort](../includes/prodshort.md)], or exit the installation. To upgrade your forms and reports dictionaries, see [Upgrading modified forms and reports](#upgrading-modified-forms-and-reports) on page 43 for more information. See the following sections for more detailed information about each task.
 
@@ -129,11 +129,11 @@ To re-add sample company data:
 
 3. In the Confirmation window, click Finish.
 
-The Server Installation Progress window appears, showing the progress as the tables are loaded.
+    The Server Installation Progress window appears, showing the progress as the tables are loaded.
 
 4. In the Business Intelligence Reports Setup window, select the business intelligence components to deploy. Click Next. The window that opens depends on the components you selected.
 
-If you don’t want to deploy business intelligence components, leave the components unmarked and click Next. The Additional Tasks window will reappear.
+    If you don’t want to deploy business intelligence components, leave the components unmarked and click Next. The Additional Tasks window will reappear.
 
 5. The SQL Server Reporting Services Reports Setup window appears if you marked to deploy Reporting Services reports. After selecting your report server mode, enter the locations to deploy the reports to.
 
@@ -146,10 +146,9 @@ Native mode location example:
 
 SharePoint Integrated mode location example:
 
-| SharePoint Integrated |
-|-----------------------|-----------------------------------|
-| Location              | Example                           |
-| Location              | Example                           |
+
+| Location             | Example                                  |
+|-------------------------------------|-----------------------------------------------------|
 | SharePoint Site       | http://&lt;servername&gt;/Reports |
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration manager to verify the Report Server Mode being and the URL locations.  
@@ -162,13 +161,13 @@ If you have selected Native as the report server mode, you can enter the name of
 
 7. The CRM Reports Setup window appears, if you marked to deploy SQL Server Reporting Services reports with CRM data. Enter the CRM connection information. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
 
-We recommend that you use Windows Authentication (Integrated Security). If you select to be prompted for credentials, you must mark the Use as Windows credentials when connecting to the data source option on the data source deployed.
+    We recommend that you use Windows Authentication (Integrated Security). If you select to be prompted for credentials, you must mark the Use as Windows credentials when connecting to the data source option on the data source deployed.
 
 8. The Excel Reports Setup window appears if you marked to deploy Excel reports. Select the location to deploy the reports to.
 
-If you have selected SharePoint as the location to deploy reports to, you can mark the Using SharePoint Online option if you are using Microsoft Office 365 and want to deploy Excel reports to a reports library in SharePoint Online 2010. Mark the Using SharePoint Online option to deploy reports only in the [!INCLUDE[prodshort](../includes/prodshort.md)] desktop client. Reports will not be deployed for the [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client.
+    If you have selected SharePoint as the location to deploy reports to, you can mark the Using SharePoint Online option if you are using Microsoft Office 365 and want to deploy Excel reports to a reports library in SharePoint Online 2010. Mark the Using SharePoint Online option to deploy reports only in the [!INCLUDE[prodshort](../includes/prodshort.md)] desktop client. Reports will not be deployed for the [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client.
 
-Be sure to use back slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn’t end in a slash.
+    Be sure to use back slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn’t end in a slash.
 
 Network share location example:
 
@@ -184,9 +183,9 @@ Network share location example:
 
 10. The Verify SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 
-The Business Intelligence Deployment Progress window appears. This window displays the report deployment progress.
+    The Business Intelligence Deployment Progress window appears. This window displays the report deployment progress.
 
-After the reports deployed, the Additional Tasks window will reappear.
+    After the reports deployed, the Additional Tasks window will reappear.
 
 ## Adding sample company data
 
@@ -200,21 +199,21 @@ To add sample company data:
 
 2. In the Database Setup window, enter or accept the sample company database name and then select a default location for new files that will be created for the sample company.
 
-TWO is the default sample company database name if the TWO database doesn’t exist. You can only create LessonUser1 and LessonUser2 as sample users for the TWO sample company database using the [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
+    TWO is the default sample company database name if the TWO database doesn’t exist. You can only create LessonUser1 and LessonUser2 as sample users for the TWO sample company database using the [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
 
-If the sample company database has a different name than TWO, you must use the User Setup window to create lesson users for the sample company and then use the User Access Setup window to set up user access to the sample company.
+    If the sample company database has a different name than TWO, you must use the User Setup window to create lesson users for the sample company and then use the User Access Setup window to set up user access to the sample company.
 
 3. In the Create Sample Users window, enter a password that will be used by the sample users, LessonUser1 and LessonUser2, to access the sample company. Reenter your password exactly as you previously entered it. Click Next.
 
-The Create Sample Users window appears if you are creating sample users for the TWO sample company database. If the sample company database is not the TWO database, you will not be able to create sample users using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
+    The Create Sample Users window appears if you are creating sample users for the TWO sample company database. If the sample company database is not the TWO database, you will not be able to create sample users using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
 
 4. In the Confirmation window, click Finish.
 
-The Server Installation Progress window appears, showing the progress as the tables are loaded.
+    The Server Installation Progress window appears, showing the progress as the tables are loaded.
 
 5. In the Business Intelligence Reports Setup window, select the business intelligence components to deploy. Click Next. The window that opens depends on the components you selected.
 
-If you don’t want to deploy business intelligence components, leave the components unmarked and click Next. The Additional Tasks window will reappear.
+    If you don’t want to deploy business intelligence components, leave the components unmarked and click Next. The Additional Tasks window will reappear.
 
 6. The SQL Server Reporting Services Reports Setup window appears if you marked to deploy Reporting Services reports. After selecting your report server mode, enter the locations to deploy the reports to.
 
@@ -227,10 +226,10 @@ Native mode location example:
 
 SharePoint Integrated mode location example:
 
-| SharePoint Integrated |
+
+
+| Location              | Example                           |
 |-----------------------|-----------------------------------|
-| Location              | Example                           |
-| Location              | Example                           |
 | SharePoint Site       | http://&lt;servername&gt;/Reports |
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
@@ -243,13 +242,13 @@ If you have selected Native as the report server mode, you can enter the name of
 
 8. The CRM Reports Setup window appears, if you marked to deploy SQL Server Reporting Services reports with CRM data. Enter the CRM connection information. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
 
-We recommend that you use Windows Authentication (Integrated Security). If you select to be prompted for credentials, you must mark the Use as Windows credentials when connecting to the data source option on the data source deployed.
+    We recommend that you use Windows Authentication (Integrated Security). If you select to be prompted for credentials, you must mark the Use as Windows credentials when connecting to the data source option on the data source deployed.
 
 9. The Excel Reports Setup window appears if you marked to deploy Excel reports. Select the location to deploy the reports to.
 
-If you have selected SharePoint as the location to deploy reports to, you can mark the Using SharePoint Online option if you are using Microsoft Office 365 and want to deploy Excel reports to a reports library in SharePoint Online 2010. Mark the Using SharePoint Online option to deploy reports only in the [!INCLUDE[prodshort](../includes/prodshort.md)] desktop client. Reports will not be deployed for the [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client.
+    If you have selected SharePoint as the location to deploy reports to, you can mark the Using SharePoint Online option if you are using Microsoft Office 365 and want to deploy Excel reports to a reports library in SharePoint Online 2010. Mark the Using SharePoint Online option to deploy reports only in the [!INCLUDE[prodshort](../includes/prodshort.md)] desktop client. Reports will not be deployed for the [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client.
 
-Be sure to use back slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn’t end in a slash.
+    Be sure to use back slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn’t end in a slash.
 
 Network share location example:
 
@@ -270,7 +269,7 @@ SharePoint location example
 
 11. The Verify SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 
-The Business Intelligence Deployment Progress window appears. This window displays the report deployment progress.
+    The Business Intelligence Deployment Progress window appears. This window displays the report deployment progress.
 
 12. After the reports deployed, the Additional Tasks window will reappear.
 
@@ -306,11 +305,11 @@ The original dictionary is the application dictionary from the previous release 
 
 7. In the Update Modified Forms and Reports window, click Update.
 
-Your modified forms and reports dictionaries are upgraded, and a report named Update2013.txt is generated, which contains information about upgraded modified forms. Be sure to review the report, located in the \\Data folder, to verify that your modified forms have been upgraded correctly.
+    Your modified forms and reports dictionaries are upgraded, and a report named Update2013.txt is generated, which contains information about upgraded modified forms. Be sure to review the report, located in the \\Data folder, to verify that your modified forms have been upgraded correctly.
 
 8. Click Next. The Additional Tasks window reappears.
 
-Be sure to review the Update2013.txt and Update2013.log, for more information about the modified forms and reports upgrade.
+    Be sure to review the Update2013.txt and Update2013.log, for more information about the modified forms and reports upgrade.
 
 ## Managing the Web Client SQL Server login
 

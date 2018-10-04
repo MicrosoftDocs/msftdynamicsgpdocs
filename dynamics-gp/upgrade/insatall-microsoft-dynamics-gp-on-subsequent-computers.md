@@ -34,31 +34,31 @@ To install [!INCLUDE[prodshort](../includes/prodshort.md)] (additional computers
 
 2. If one or more of the following components isn’t installed on your computer, the [!INCLUDE[prodshort](../includes/prodshort.md)] Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
--   • Dexterity Shared Components 18.0
+    -   Dexterity Shared Components 18.0
 
--   • Microsoft Application Error Reporting 11.0
+    -   Microsoft Application Error Reporting 11.0
 
--   • Microsoft Lync 2010 SDK Runtime
+    -   Microsoft Lync 2010 SDK Runtime
 
--   • Microsoft SQL Server Native Client 11.0
+    -   Microsoft SQL Server Native Client 11.0
 
--   • Microsoft Windows Installer 4.5
+    -   Microsoft Windows Installer 4.5
 
--   • Microsoft .NET Framework 4.6
+    -   Microsoft .NET Framework 4.6
 
--   • Microsoft .NET Framework 3.5
+    -   Microsoft .NET Framework 3.5
 
--   • Open XML SDK 2.0 for Microsoft Office
+    -   Open XML SDK 2.0 for Microsoft Office
 
--   • Visual C++ 2015 Runtime Libraries
+    -   Visual C++ 2015 Runtime Libraries
 
--   • Visual Basic for Applications Core
+    -   Visual Basic for Applications Core
 
-After all the components are installed, you may need to restart your computer before continuing the installation of [!INCLUDE[prodshort](../includes/prodshort.md)].
+    After all the components are installed, you may need to restart your computer before continuing the installation of [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 3. Click [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation won’t continue.
+    The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation won’t continue.
 
 4. Select the primary country or region where you do business in the Country/ Region Selection window. Click Next.
 
@@ -66,7 +66,7 @@ The installation program verifies that your system has the minimum operating sys
 
 6. In the Select Features window, select the features to install. We recommend that you install all the features that you are registered to use on all client computers.
 
-When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
+    When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
 | Option                                                                         | What happens                                                                                                             |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -78,15 +78,15 @@ If you’ve installed a feature in a previous release, use the Select Features w
 
 7. Specify the folder where the [!INCLUDE[prodshort](../includes/prodshort.md)] files should be installed. To select a different folder, click Browse.
 
-After you have specified the installation folder, click Next.
+    After you have specified the installation folder, click Next.
 
 8. To set up an ODBC data source, enter the name you assigned to the SQL Server when you installed Microsoft SQL Server. Click Next.
 
-If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
+    If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
 
 9. Select the system database name you are upgrading.
 
-Click Next.
+    Click Next.
 
 10. If you have selected to install the Service Based Architecture feature, provide the Windows account that will be used as the service account for the Service Based Architecture service.
 
@@ -96,7 +96,7 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 11. In the Install Program window, click Install.
 
-The Installation Progress window appears, where you can view the status of the installation.
+        The Installation Progress window appears, where you can view the status of the installation.
 
 12. In the Installation Complete window, click Exit.
 
@@ -128,7 +128,7 @@ To synchronize a client’s account framework:
 
 3. In the Welcome to [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities window, click Next.
 
-The [!INCLUDE[prodshort](../includes/prodshort.md)] dictionary is synchronized automatically with your account framework.
+    The [!INCLUDE[prodshort](../includes/prodshort.md)] dictionary is synchronized automatically with your account framework.
 
 4. After the account framework is synchronized, the Additional Tasks window opens. In the Additional Tasks window, you can choose to complete additional tasks, launch [!INCLUDE[prodshort](../includes/prodshort.md)], or end the installation. If you select any task, choose Process; otherwise, choose Exit.
 

@@ -74,15 +74,15 @@ To create an installation package:
 
 4. In the Installation Location window, enter or select the folder where the installation package will be created. We recommend that you use a Universal Naming Convention (UNC) path or a mapped drive letter that is common across all targeted computers. The network location must be accessible from any computers that will have [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 installed on them using the installation package.
 
-Click Next.
+    Click Next.
 
 5. In the Country/Region Selection window, select the primary country or region where you do business. Click Next.
 
 6. In the Select Features window, select the features to install.
 
-We recommend that you install all the features that you are registered to use on all your client computers.
+    We recommend that you install all the features that you are registered to use on all your client computers.
 
-When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
+    When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
 | Option                                                                         | What happens                                                                                                             |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -92,17 +92,17 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 
 7. Specify the location on the client computer where you want the [!INCLUDE[prodshort](../includes/prodshort.md)] files installed. If you don’t enter the location, the default location is \\Program Files\\Microsoft Dynamics\\GP on the hard disk that has the operating system installed.
 
-Be sure that the location is a valid location for every computer on which the installation package is used to install [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
+    Be sure that the location is a valid location for every computer on which the installation package is used to install [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
 
-After you have specified the installation folder, click Next.
+    After you have specified the installation folder, click Next.
 
 8. To set up an ODBC data source, enter the name you assigned to the SQL Server when you installed Microsoft SQL Server.
 
-If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
+    If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
 
 9. Select the system database name.
 
-Click Next.
+    Click Next.
 
 10. Specify the location of the Reports dictionary and the Forms dictionary. The location where dictionaries are must be a valid location for each client computer. The locations are written to the Dex.ini file. Click Next.
 
@@ -114,30 +114,30 @@ Click Next.
 
 14. In the Create Installation Package Complete window, click Finish.
 
-The installation package is installed in the shared network location you specified. The installation package stores the files, such as Great Plains.msi and Setup.exe, required to install a custom configured [!INCLUDE[prodshort](../includes/prodshort.md)] installation.
+    The installation package is installed in the shared network location you specified. The installation package stores the files, such as Great Plains.msi and Setup.exe, required to install a custom configured [!INCLUDE[prodshort](../includes/prodshort.md)] installation.
 
 15. How [!INCLUDE[prodshort](../includes/prodshort.md)] is installed on the client computer using the installation package depends on the tools and applications you use. You can send an e-mail with a link to the installation package. Or, you can create a deployment package using a software distribution tool such as Systems Management Server so that [!INCLUDE[prodshort](../includes/prodshort.md)] is automatically installed after the user logs into their computer.
 
-We recommend that you install the following components on each client computer if you set up your installation package to install [!INCLUDE[prodshort](../includes/prodshort.md)] using the GreatPlains.msi file. You can install these components from the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 media.
+    We recommend that you install the following components on each client computer if you set up your installation package to install [!INCLUDE[prodshort](../includes/prodshort.md)] using the GreatPlains.msi file. You can install these components from the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 media.
 
--   Microsoft Windows Installer 4.5
+    -   Microsoft Windows Installer 4.5
 
--   Microsoft .NET Framework 3.5
+    -   Microsoft .NET Framework 3.5
 
--   Microsoft .NET Framework 4.6
+    -   Microsoft .NET Framework 4.6
 
--   Microsoft SQL Server Native Client 11.0
+    -   Microsoft SQL Server Native Client 11.0
 
--   Microsoft Dexterity Shared Components 18.0
+    -   Microsoft Dexterity Shared Components 18.0
 
--   Microsoft Application Error Reporting 11.0
+    -   Microsoft Application Error Reporting 11.0
 
--   Microsoft Lync 2010 SDK Runtime
+    -   Microsoft Lync 2010 SDK Runtime
 
--   Open XML SDK 2.0 for Microsoft Office
+    -   Open XML SDK 2.0 for Microsoft Office
 
--   Visual C++ 2015 Runtime Libraries
+    -   Visual C++ 2015 Runtime Libraries
 
--   Visual Basic for Applications Core
+    -   Visual Basic for Applications Core
 
 

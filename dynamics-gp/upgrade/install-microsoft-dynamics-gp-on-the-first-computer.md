@@ -38,31 +38,31 @@ To install [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer):
 
 2. If one or more of the following components isn’t installed on your computer, the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
--   Dexterity Shared Components 18.0
+    -   Dexterity Shared Components 18.0
 
--   Microsoft Application Error Reporting 11.0
+    -   Microsoft Application Error Reporting 11.0
 
--   Microsoft Lync 2010 SDK Runtime
+    -   Microsoft Lync 2010 SDK Runtime
 
--   Microsoft SQL Server Native Client 10.0
+    -   Microsoft SQL Server Native Client 10.0
 
--   Microsoft Windows Installer 4.5
+    -   Microsoft Windows Installer 4.5
 
--   Microsoft .NET Framework 3.5
+    -   Microsoft .NET Framework 3.5
 
--   Microsoft .NET Framework 4.6
+    -   Microsoft .NET Framework 4.6
 
--   Open XML SDK 2.0 for Microsoft Office
+    -   Open XML SDK 2.0 for Microsoft Office
 
--   Visual C++ 2015 Runtime Libraries
+    -   Visual C++ 2015 Runtime Libraries
 
--   Visual Basic for Applications Core
+    -   Visual Basic for Applications Core
 
-After all the components are installed, you may need to restart your computer before continuing the installation of [!INCLUDE[prodshort](../includes/prodshort.md)].
+    After all the components are installed, you may need to restart your computer before continuing the installation of [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 3. Click [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation will not continue.
+    The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation will not continue.
 
 4. Select the primary country or region where you do business in the Country/ Region Selection window. Click Next.
 
@@ -84,15 +84,15 @@ If you’ve installed a feature in a previous release, be sure that you’ve sel
 
 7. Specify a new folder where the [!INCLUDE[prodshort](../includes/prodshort.md)] files should be installed. To select a different folder, click Browse.
 
-After you have specified the installation location, click Next.
+    After you have specified the installation location, click Next.
 
 8. In the SQL Server window, you can set up an ODBC data source in the SQL Server window by entering the name you assigned to the SQL Server when you installed Microsoft SQL Server.
 
-If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
+    If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
 
 9. Select the system database name that you are upgrading.
 
-Click Next.
+    Click Next.
 
 10. If you have selected to install the Service Based Architecture feature, provide the Windows account that will be used as the service account for the Service Based Architecture service.
 
@@ -112,10 +112,10 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 15. After installing [!INCLUDE[prodshort](../includes/prodshort.md)] and the most recent update, you can perform the following steps.
 
--   Start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
+    -   Start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
 
--   Follow the instructions in the [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities windows to upgrade tables on your server, upgrade your companies, and upgrade modified forms and reports. See Chapter 6, “Company data conversion,” for more information.
+    -   Follow the instructions in the [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities windows to upgrade tables on your server, upgrade your companies, and upgrade modified forms and reports. See Chapter 6, “Company data conversion,” for more information.
 
--   After using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, you can install additional component applications on the server computer. See [Chapter 8, “Installation package,”](#_Installation_package) or [Installing an additional component](#_Installing_an_additional) on page 50 for more information.  
+    -   After using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, you can install additional component applications on the server computer. See [Chapter 8, “Installation package,”](#_Installation_package) or [Installing an additional component](#_Installing_an_additional) on page 50 for more information.  
 
 
