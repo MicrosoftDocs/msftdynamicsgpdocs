@@ -26,4 +26,4 @@ The following appendices are included for this documentation:
 
 -   [Appendix B, “Default domain,”](default-domain.md) explains how to configure a default domain for a [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation.  
 
--   
+

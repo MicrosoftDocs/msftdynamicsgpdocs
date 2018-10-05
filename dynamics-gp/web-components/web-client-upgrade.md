@@ -26,4 +26,4 @@ This part of the documentation explains how to apply an upgrade to a web client 
 
 -   [Chapter 13, “Scale out upgrade,”](#_Scale_out_upgrade) provides step-by-step instructions for upgrading the [!INCLUDE[prodshort](../includes/prodshort.md)] web client in a scale out configuration.  
 
--   
+

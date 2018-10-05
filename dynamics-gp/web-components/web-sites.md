@@ -46,8 +46,8 @@ To extend the web site, complete the following procedure:
 
 2. Set the current directory to this location:
 
-C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\
+    C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\
 
 3. Run this command:
 
-aspnet\_regiis -i
+    aspnet\_regiis -i

@@ -28,4 +28,4 @@ Dynamics GP web client. The following chapters are included:
 
 -   [Chapter 20, “Working with the web client,”](#_Working_with_the) describes common actions that users will need to perform while working with the web client.  
 
--   
+

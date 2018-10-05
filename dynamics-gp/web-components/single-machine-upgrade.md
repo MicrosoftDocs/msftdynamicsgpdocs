@@ -92,7 +92,7 @@ To ensure that the updated [!INCLUDE[prodshort](../includes/prodshort.md)] web c
 
 1. Clear the Internet Explorer browser cache. This helps to ensure that the updated application and help files are being used for the web client.
 
-To clear the browser cache, open Internet Explorer. In the Tools menu, choose Internet options. In the Browsing history group, click **Delete**.
+    To clear the browser cache, open Internet Explorer. In the Tools menu, choose Internet options. In the Browsing history group, click **Delete**.
 
 2. In the Delete Browsing History window, be sure to remove the temporary Internet files. Click **Delete**.
 

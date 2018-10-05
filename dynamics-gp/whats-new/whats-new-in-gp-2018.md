@@ -37,23 +37,20 @@ Similar buttons have been added to additional master record windows.
 
 Document attachment has been added to the following windows for GP 2018.
 
-| Transaction entry windows | General Ledger Transaction Entry 
-                                    
-  Receivables Transaction Entry     
-                                    
-  Asset General Information (FA)    |
+| Transaction entry windows |
 |---------------------------|----------------------------------|
-| Inquiry windows           | Employee Inquiry                 
-                                    
-  I-9 Form                          
-                                    
-  Customer Inquiry                  
-                                    
-  Vendor Inquiry                    
-                                    
-  Project Inquiry                   
-                                    
-  PA Project Inquiry                |
+ |General Ledger Transaction Entry|
+ |Receivables Transaction Entry|
+ |Asset General Information (FA)    |
+
+| Inquiry windows           |
+|---------------------------|----------------------------------|
+ |Employee Inquiry|
+ | I-9 Form|
+ |Customer Inquiry|
+ |Vendor Inquiry|
+ |Project Inquiry|
+ | PA Project Inquiry |               |
 
 ## Workflow 4.0
 

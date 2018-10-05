@@ -26,4 +26,4 @@ This part of the documentation explains how to use the [!INCLUDE[prodshort](../i
 
 -   [Chapter 11, “Scale out installation,”](#_Scale_out_installation) provides step-by-step instructions for installing the [!INCLUDE[prodshort](../includes/prodshort.md)] web components in a scale-out configuration.  
 
--   
+
