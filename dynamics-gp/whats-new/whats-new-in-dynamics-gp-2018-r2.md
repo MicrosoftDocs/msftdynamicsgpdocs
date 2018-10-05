@@ -71,19 +71,24 @@ A number of updates have been made to the purchasing area in Dynamics GP.
 
 ### Checkbook ID defaults on computer check batch
 
-The Checkbook ID defaults in when you create a computer check batch. Set up the default in the **Payables Setup** window.
-Select Payments
-Edit Payment Batch
-Batch Entry with computer check
+The Checkbook ID defaults in when you create a computer check batch. Set up the default in the **Payables Management Setup** window.  
 
+![Shows how the default check ID is applied.](media/2018R2_DefaultCheckID.png "Default check ID")  
 
-### Allow partial purchase on a purchase requisition from a PO
+### Allow partial purchase on a purchase requisition from a purchase order
 
+When you create a purchase order, you can now enter a quantity that is less than the total quantity requested. This is also possible if you create a purchase order from one or more requisitions.  
 
-### Add Vendor document number to Purchasing All-in-One
+### Add vendor document number to Purchasing All-in-One View
 
+The vendor's document number now shows in the **Purchasing All-in-One Document View**.  
 
-### Email PO Other Template from PO Entry 
+![Shows the external document number in the all-in-one view.](media/2018R2_ExtDocNo.png "External Document No.")  
+
+### Send a purchase order using another template
+
+A new option to send a purchase order as an email using the format "Other format" has been added to the purchase order entry and in the Purchase Order Inquiry Zoom.  
+
 ### Display Vendor Hold Status
 
 ### Don't display Inactive checkbooks in Lookup
