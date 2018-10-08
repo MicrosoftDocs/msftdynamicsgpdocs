@@ -14,7 +14,7 @@ ms.reviewer:
 ---
 # Introduction
 
-Use this manual to upgrade your [!INCLUDE[prodshort](../includes/prodshort.md)] system to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. Review the introductory information about the resources available to you, then use the [[!INCLUDE[prodshort](../includes/prodshort.md)] upgrade checklist](#_Microsoft_Dynamics_GP) on page 7 as your guide to the parts of this manual that apply to you.  
+Use this section to upgrade your [!INCLUDE[prodshort](../includes/prodshort.md)] system to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. Review the introductory information about the resources available to you, then use the [[!INCLUDE[prodshort](../includes/prodshort.md)] upgrade checklist](#_Microsoft_Dynamics_GP) on page 7 as your guide to the parts of this manual that apply to you.  
 
 To review new [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 features, refer to the What’s New documentation (<https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/10/25/microsoft-dynamics-gp-2018-new-feature-blog-series-schedule>) provided with your software.
 

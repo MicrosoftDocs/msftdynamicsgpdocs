@@ -11,20 +11,22 @@
 
 <!--- installation-->
 ## Installation
-### [Installation overview](installation/introduction.md)
-### [System requirements](installation/system-requirements.md)
-### [Installation checklist](installation/installation-checklist.md)
-### [Using Microsoft Dynamics Utilities](installation/using-microsoft-dynamics-tilities.md)
-### [Creating an installation package](installation/creating-an-installation-package.md)
-### [Install Dynamics GP on the first computer](installation/install-microsoft-dynamics-gp-on-the-first-computer.md)
-### [Installing Dynamics GP on subsequent computers](installation/installing-dynamics-gp-on-subsequent-computers.md)
-### [Client Installation](installation/microsoft-dynamics-gp-client-installation.md)
-### [Installing additional components](installation/installing-additional-components.md)
-### [SQL Server configuration](installation/microsoft-sql-server-configuration.md)
-### [Network configuration](installation/network-configuration.md)
-### [Account framework](installation/account-framework.md)
+### Preparation
+#### [Installation checklist](installation/installation-checklist.md)
+#### [System requirements](installation/system-requirements.md)
+#### [Network configuration](installation/network-configuration.md)
+#### [SQL Server configuration](installation/microsoft-sql-server-configuration.md)
+#### [Account framework](installation/account-framework.md)
+### Installation
+#### [Install Dynamics GP on the first computer](installation/install-microsoft-dynamics-gp-on-the-first-computer.md)
+#### [Installing Dynamics GP on subsequent computers](installation/installing-dynamics-gp-on-subsequent-computers.md)
+#### [Using Microsoft Dynamics Utilities](installation/using-microsoft-dynamics-tilities.md)
+#### [Installing additional components](installation/installing-additional-components.md)
 ### [Creating a company](installation/creating-a-company.md)
 ### [After installing](installation/after-installing.md)
+### Client installation
+#### [Creating an installation package](installation/creating-an-installation-package.md)
+#### [Installing Dynamics GP on subsequent computers](installation/installing-dynamics-gp-on-subsequent-computers.md)
 
 <!--- web components-->
 ## Web components
