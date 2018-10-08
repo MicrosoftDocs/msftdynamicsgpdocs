@@ -12,19 +12,10 @@ ms.topic: article
 ms.assetid: f7200048-1617-470d-a01c-8fad05a3a85b
 ms.reviewer: 
 ---
-<span id="_Toc498953283" class="anchor"></span>
 
-# [!INCLUDE[prodshort](../includes/prodshort.md)] configuration
+# Dynamics GP environment configuration
 
-Before you can install the [!INCLUDE[prodshort](../includes/prodshort.md)] web components, you must have [!INCLUDE[prodshort](../includes/prodshort.md)] installed, including the necessary web client runtime and/ or service based architecture components. The following sections provide the details:
-
--   [[!INCLUDE[prodshort](../includes/prodshort.md)] installation](#microsoft-dynamics-gp-installation)  
-
--   [Web Client SQL Server login](#web-client-sql-server-login)  
-
--   [Web client only users](#web-client-only-users)  
-
--   [Web client runtime components](#web-client-runtime-components)  
+Before you can install the [!INCLUDE[prodshort](../includes/prodshort.md)] web components, you must have [!INCLUDE[prodshort](../includes/prodshort.md)] installed, including the necessary web client runtime and/ or service based architecture components. T
 
 ## [!INCLUDE[prodshort](../includes/prodshort.md)] installation
 

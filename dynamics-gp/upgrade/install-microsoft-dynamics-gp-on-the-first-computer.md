@@ -12,15 +12,10 @@ ms.topic: article
 ms.assetid: fa4dc1b1-bff3-453b-b5c0-0761098a23c5
 ms.reviewer: 
 ---
-<span id="_Toc498615790" class="anchor"></span>
 
-# Install [!INCLUDE[prodshort](../includes/prodshort.md)] on tzz first computer
+# Install Dynamics GP on the first computer
 
-Use the information in this chapter to install [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. This chapter contains the following sections:
-
--   [Installation overview](#installation-overview)  
-
--   [Installing [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer)](#installing-microsoft-dynamics-gp-first-computer)  
+Use the information in this chapter to install [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 R2.  
 
 ## Installation overview
 
@@ -74,11 +69,11 @@ To install [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer):
 
 When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
-| Option                                                              | What happens                                                                                                             |
-|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![component icon](media/installed-component.png "Component icon") Run from My Computer                          | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |
-| ![component icon](media/installed-component.png "Component icon") Run all from My Computer                      | Will install the feature and all of its sub–features.                                                                    |
-| ![component icon](media/not-installed-component.png "Component icon") Not Available | Will not install the selected feature or sub–                                                                            |  
+| Option      | What happens          |
+|-------------|-----------------------|
+| ![component icon](media/installed-component.png "Component icon") Run from My Computer      | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |
+| ![component icon](media/installed-component.png "Component icon") Run all from My Computer       | Will install the feature and all of its sub–features.|
+| ![component icon](media/not-installed-component.png "Component icon") Not Available | Will not install the selected feature or sub–feature.|  
 
 If you’ve installed a feature in a previous release, be sure that you’ve selected to install that feature in the Select Feature window. See [[!INCLUDE[prodshort](../includes/prodshort.md)] features](#_Microsoft_Dynamics_GP_1) on page 47 for a list of [!INCLUDE[prodshort](../includes/prodshort.md)] features. You also can install additional features. You can review the DYNAMICS.SET file for a list of features you have installed.  
 

@@ -18,16 +18,6 @@ ms.reviewer:
 
 This chapter briefly describes the [!INCLUDE[prodshort](../includes/prodshort.md)] web components and introduces the major parts of the installation. It also provides an installation checklist.
 
-The following sections are included:
-
--   [What are the web components](#what-are-the-web-components)?  
-
--   [What is the web client?](#what-is-the-web-client)  
-
--   [Parts of the web components](#parts-of-the-web-components)  
-
--   [Installation checklist](#installation-checklist)  
-
 ## What are the web components?
 
 The [!INCLUDE[prodshort](../includes/prodshort.md)] web components include the web client, service based architecture and web management console. These components can be installed together on the same server or installed separately on different servers as needed.
@@ -100,19 +90,17 @@ The Dexterity Service is a component of the [!INCLUDE[prodshort](../includes/pro
 
 To install the [!INCLUDE[prodshort](../includes/prodshort.md)] web components, complete the following tasks in the order shown.
 
-| Task                                                                                                                                                                  | For more information see                                                                                                                                                                                                                                    |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1. Select a deployment configuration. Select whether you want to install the [!INCLUDE[prodshort](../includes/prodshort.md)] web components on a single machine or as a scale-out installation. | [Chapter 2, “Deployment configurations](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Chapter%202%20Deployment%20configurations.dotx)”             |  
+| Task    | For more information see   |
+|--------|---------------------------|
+| 1. Select a deployment configuration. Select whether you want to install the [!INCLUDE[prodshort](../includes/prodshort.md)] web components on a single machine or as a scale-out installation. | [Deployment configurations](deployment-configurations.md)|  
 | 2. Check the [!INCLUDE[prodshort](../includes/prodshort.md)] installation.
- Verify that the [!INCLUDE[prodshort](../includes/prodshort.md)] installation is running properly and that the required web client runtime components are installed.                              | Chapter 4, “[!INCLUDE[prodshort](../includes/prodshort.md)] configuration”                                                                                                                                                                                                                                               |
+ Verify that the [!INCLUDE[prodshort](../includes/prodshort.md)] installation is running properly and that the required web client runtime components are installed.  | [Environment configuration](environment-configuration.md) |
 | 3. Create the security groups and user accounts.
- Determine which users will access the [!INCLUDE[prodshort](../includes/prodshort.md)] web client and the Web Management Console.                                                                 | Chapter 5, “Security groups and user accounts”                                                                                                                                                                                                                                                    |
-| 4. Verify the prerequisite software. Install the software needed to support the [!INCLUDE[prodshort](../includes/prodshort.md)] web components.                                                 | [Chapter 7, “Prerequisite software”](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Chapter%207%20Prerequisite%20software.dotx)                     |  
+ Determine which users will access the [!INCLUDE[prodshort](../includes/prodshort.md)] web client and the Web Management Console.  | [Security groups and user accounts](security-groups-and-user-accounts.md)  |
+| 4. Verify the prerequisite software. Install the software needed to support the [!INCLUDE[prodshort](../includes/prodshort.md)] web components.  | [Prerequisite software](prerequisite-software.md) |  
 | 5. Create and configure web sites.
- Create and configure the web sites that will host the [!INCLUDE[prodshort](../includes/prodshort.md)] web client and the Web Management Console.                                                 | [Chapter 8, “Web sites”](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Chapter%208%20Web%20sites.dotx)                                             |  
+ Create and configure the web sites that will host the [!INCLUDE[prodshort](../includes/prodshort.md)] web client and the Web Management Console. | [Web sites](web-sites.md) |  
 | 6. Obtain security certificates and configure SSL.
- Determine the type of security certificate you want to use. Configure the web site to use SSL.                                                                         | [Chapter 9, “Security certificates and SSL”](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Chapter%209%20Security%20certificates%20and%20SSL.dotx) |  
+ Determine the type of security certificate you want to use. Configure the web site to use SSL. | [Security certificates and SSL](security-certificates-and-SSL.md) |  
 | 7. Install the web components.
- Complete the installation procedure based on the type of deployment that you chose.                                                                                    | [Part 4, Web components installation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%204%20Web%20components%20install.dotx)                    |  
-
-
+ Complete the installation procedure based on the type of deployment that you chose. | [Web components installation](web-components-installation.md)|  

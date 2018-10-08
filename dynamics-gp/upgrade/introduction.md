@@ -22,16 +22,6 @@ Check for current instructions
 
 The documentation may be updated as new information becomes available. For the most current documentation, visit <https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>
 
-This introduction is divided into the following sections:
-
--   [What’s in this guide?](#whats-in-this-guide)  
-
--   [Symbols and conventions](#symbols-and-conventions)  
-
--   [Additional resources](#additional-resources)  
-
--   [Send us your suggestions](#send-us-your-suggestions)  
-
 ### What’s in this guide?
 
 This upgrade guide provides guidelines for upgrading your [!INCLUDE[prodshort](../includes/prodshort.md)] system to a newer version. It lists the latest system requirements, contains a step-by-step look at the upgrade process, and provides tips for troubleshooting your upgrade. The manual is divided into the following parts:
