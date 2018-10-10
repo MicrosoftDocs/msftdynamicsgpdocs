@@ -16,7 +16,7 @@ ms.reviewer:
 
 # Single machine installation
 
-This chapter contains the procedures you need to follow to install and verify the [!INCLUDE[prodshort](../includes/prodshort.md)] web components on a single machine installation. Using the single machine installation option performs a simple installation of all components using default settings for a single tenant configuration and Windows authentication. If you want to only install specific components, a multitenant configuration or use Organizational Accounts, use the Custom installation option to perform the installation.
+This chapter contains the procedures you need to follow to install and verify the Dynamics GP web components on a single machine installation. Using the single machine installation option performs a simple installation of all components using default settings for a single tenant configuration and Windows authentication. If you want to only install specific components, a multitenant configuration or use Organizational Accounts, use the Custom installation option to perform the installation.
 
 The following sections are included:
 
@@ -28,9 +28,9 @@ The following sections are included:
 
 ## Install the web components
 
-Use the following steps to install the [!INCLUDE[prodshort](../includes/prodshort.md)] web components on a single machine.
+Use the following steps to install the Dynamics GP web components on a single machine.
 
-1. From the [!INCLUDE[prodshort](../includes/prodshort.md)] installation media, double-click the **Setup.exe** file to open the [!INCLUDE[prodshort](../includes/prodshort.md)] installation window.
+1. From the Dynamics GP installation media, double-click the **Setup.exe** file to open the Dynamics GP installation window.
 
 2. Click **Web** components and then click **Install**.
 
@@ -44,7 +44,7 @@ Use the following steps to install the [!INCLUDE[prodshort](../includes/prodshor
 
 ![shows a screen for installing the web components database.](media/install-web-database.png "Database")  
 
-If the user installing the [!INCLUDE[prodshort](../includes/prodshort.md)] web client has sufficient privileges, you can use Windows Trusted Authentication. Otherwise, you should use SQL Authentication and supply a SQL Login ID and Password for a SQL user account with sufficient privileges.
+If the user installing the Dynamics GP web client has sufficient privileges, you can use Windows Trusted Authentication. Otherwise, you should use SQL Authentication and supply a SQL Login ID and Password for a SQL user account with sufficient privileges.
 
 Click **Next** to continue.
 
@@ -58,7 +58,7 @@ Supply the credentials for the user account that will be running the Session Cen
 
 Click **Next** to continue.
 
-7. Supply the names of the Windows security groups that specify which users can access the [!INCLUDE[prodshort](../includes/prodshort.md)] web client and which users can access the Web Management Console.
+7. Supply the names of the Windows security groups that specify which users can access the Dynamics GP web client and which users can access the Web Management Console.
 
 For machine groups, the name must be prefixed by the machine name. For domain groups, the name must be prefixed by the domain name.
 
@@ -66,19 +66,19 @@ For machine groups, the name must be prefixed by the machine name. For domain gr
 
 Click **Next** to continue.
 
-8. Supply the information about the [!INCLUDE[prodshort](../includes/prodshort.md)] installation. This information is used to start a [!INCLUDE[prodshort](../includes/prodshort.md)] runtime process and creates a connection to the [!INCLUDE[prodshort](../includes/prodshort.md)] databases.
+8. Supply the information about the Dynamics GP installation. This information is used to start a Dynamics GP runtime process and creates a connection to the Dynamics GP databases.
 
 ![shows a screen for connecting the web components to dynamics gp data.](media/install-web-gp-connection.png "GP Connection")  
 
-Specify the SQL Login and password for the Web Client SQL Server login that you created for the [!INCLUDE[prodshort](../includes/prodshort.md)] system database. You created this user when you ran [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities during the installation of [!INCLUDE[prodshort](../includes/prodshort.md)]. You must specify the GP instance name to use service based architecture. If you only have a single installation of [!INCLUDE[prodshort](../includes/prodshort.md)] on your machine, leave the DEFAULT instance name. If you have a named instance, provide the instance name you provided during the installation. You must also specify the locations of the components for the [!INCLUDE[prodshort](../includes/prodshort.md)] installation. If you are not using the default locations for the [!INCLUDE[prodshort](../includes/prodshort.md)] components, use the Browse buttons to select the location of each component.
+Specify the SQL Login and password for the Web Client SQL Server login that you created for the Dynamics GP system database. You created this user when you ran Dynamics GP Utilities during the installation of Dynamics GP. You must specify the GP instance name to use service based architecture. If you only have a single installation of Dynamics GP on your machine, leave the DEFAULT instance name. If you have a named instance, provide the instance name you provided during the installation. You must also specify the locations of the components for the Dynamics GP installation. If you are not using the default locations for the Dynamics GP components, use the Browse buttons to select the location of each component.
 
 Click **Next** to continue. You will be prompted to re-enter the password for the SQL login that you specified. Enter the password and click **OK**.
 
-9. Select the web site that will host the [!INCLUDE[prodshort](../includes/prodshort.md)] web client. This site must have been configured to use secure sockets layer (SSL).
+9. Select the web site that will host the Dynamics GP web client. This site must have been configured to use secure sockets layer (SSL).
 
 ![shows a screen for configuring the website.](media/install-web-site.png "Website configuration")  
 
-Specify the user account that will run the application pool for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client.
+Specify the user account that will run the application pool for the Dynamics GP web client.
 
 Decide whether the same web site will be used to host the Web Management Console. If you do not mark the option to use the same site, you will be prompted to select the web site and provide credentials to run the application pool for the site.
 
@@ -100,7 +100,7 @@ Click **Next** to continue.
 
 Specify the Port (the default is 443).
 
-Specify the security certificate to use. This is required for the runtime service. You can use the same certificate that you are using for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client site.
+Specify the security certificate to use. This is required for the runtime service. You can use the same certificate that you are using for the Dynamics GP web client site.
 
 Verify the host name. The host name must match the common name (CN) or the subject alternative name (SAN) on the security certificate. If you are using a wild card certificate, replace the \* on the host name with the address that the client machines will use to access this machine.
 
@@ -112,7 +112,7 @@ Click **Next** to continue.
 
 Specify the Port (the default is 443).
 
-Specify the security certificate to use. This is required for the GP service. You can use the same certificate that you are using for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client site.
+Specify the security certificate to use. This is required for the GP service. You can use the same certificate that you are using for the Dynamics GP web client site.
 
 Verify the host name. The host name must match the common name (CN) or the subject alternative name (SAN) on the security certificate. If you are using a wild card certificate, replace the \* in the host name with the address that the client machines will use to access this machine.
 
@@ -130,19 +130,19 @@ Click **Next** to continue.
 
 18. Click **Exit**.
 
-19. The [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client Help installer will be started. Click Install to complete the help installation process.
+19. The Dynamics GP Web Client Help installer will be started. Click Install to complete the help installation process.
 
 20. Click **Finish** to close the installer.
 
 ## Verify the web client installation
 
-After the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation is complete, verify that you can access the web client.
+After the Dynamics GP web client installation is complete, verify that you can access the web client.
 
 To verify the web client installation:
 
 1. Open Internet Explorer.
 
-2. Enter the URL of the [!INCLUDE[prodshort](../includes/prodshort.md)] web client site. The default address of the site is:
+2. Enter the URL of the Dynamics GP web client site. The default address of the site is:
 
 https://ServerName:PortNumber/GP
 
@@ -150,31 +150,31 @@ https://ServerName:PortNumber/GP
 
 **PortNumber**   is the port for the web site that you are using. If you chose to install on the default web site (port 443) then you do not need to supply the port number.
 
-A typical URL to access the [!INCLUDE[prodshort](../includes/prodshort.md)] web client looks similar to the following:
+A typical URL to access the Dynamics GP web client looks similar to the following:
 
 https://gpuaweb.contoso.com/GP
 
-3. After entering the URL, you will be directed to the logon page. This is the first page that will be displayed to users who are accessing the [!INCLUDE[prodshort](../includes/prodshort.md)] web client.
+3. After entering the URL, you will be directed to the logon page. This is the first page that will be displayed to users who are accessing the Dynamics GP web client.
 
 ![shows a screen for connecting the web components to the dynamics gp service.](media/install-web-gp-service-connection.png "GP Connection")  
 
-If you are using a self-signed security certificate and are accessing the [!INCLUDE[prodshort](../includes/prodshort.md)] web client from another computer, you will see a certificate error. To resolve this error, you must import the security certificate into the certificate store on the machine that is accessing the web client.
+If you are using a self-signed security certificate and are accessing the Dynamics GP web client from another computer, you will see a certificate error. To resolve this error, you must import the security certificate into the certificate store on the machine that is accessing the web client.
 
-4. Enter your user credentials. These are domain user credentials or machine user credentials for a user that is part of the security group you created to control access to the [!INCLUDE[prodshort](../includes/prodshort.md)] web client. This security group is described in Chapter 5, “Security groups and user accounts”. These are not your [!INCLUDE[prodshort](../includes/prodshort.md)] login name and password.
+4. Enter your user credentials. These are domain user credentials or machine user credentials for a user that is part of the security group you created to control access to the Dynamics GP web client. This security group is described in Chapter 5, “Security groups and user accounts”. These are not your Dynamics GP login name and password.
 
 Click **Sign In**.
 
 5. A session will be created. The window you see first will depend on settings for your Dynamics GP user.
 
-If your [!INCLUDE[prodshort](../includes/prodshort.md)] user ID has only SQL Server Account information, the [!INCLUDE[prodshort](../includes/prodshort.md)] login window will be displayed.
+If your Dynamics GP user ID has only SQL Server Account information, the Dynamics GP login window will be displayed.
 
 ![shows the login screen to dynamics gp using sql login.](media/install-web-login-01.png "GP login")  
 
-Log in with your [!INCLUDE[prodshort](../includes/prodshort.md)] login name and password.
+Log in with your Dynamics GP login name and password.
 
-If your [!INCLUDE[prodshort](../includes/prodshort.md)] user ID has Windows Account information, the Web Client SQL User will be used to access [!INCLUDE[prodshort](../includes/prodshort.md)] data.
+If your Dynamics GP user ID has Windows Account information, the Web Client SQL User will be used to access Dynamics GP data.
 
-**One company   **If you have access to only one company, that company will automatically be used. The first page you see in [!INCLUDE[prodshort](../includes/prodshort.md)] will be the Home page.
+**One company   **If you have access to only one company, that company will automatically be used. The first page you see in Dynamics GP will be the Home page.
 
 **Multiple companies**   If you have access to multiple companies, the Company Login window will be displayed, allowing you to select the company to use.
 
@@ -182,7 +182,7 @@ If your [!INCLUDE[prodshort](../includes/prodshort.md)] user ID has Windows Acco
 
 ## Verify the Service Based Architecture installation
 
-After the [!INCLUDE[prodshort](../includes/prodshort.md)] service based architecture installation is complete, verify that you can access service based architecture.
+After the Dynamics GP service based architecture installation is complete, verify that you can access service based architecture.
 
 To verify the Service Based Architecture installation:
 
@@ -198,7 +198,7 @@ PortNumber is the port for the web site that you are using. If you chose to inst
 
 DefaultTenant is the tenant name in a single tenant deployment.
 
-A typical URL to access the [!INCLUDE[prodshort](../includes/prodshort.md)] service based architecture looks similar to the following:
+A typical URL to access the Dynamics GP service based architecture looks similar to the following:
 
 https://gpuaweb.contoso.com/GPService/Tenants(DefaultTenant)/help
 

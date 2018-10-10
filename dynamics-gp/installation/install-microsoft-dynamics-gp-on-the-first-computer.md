@@ -14,31 +14,31 @@ ms.reviewer: edupont
 ---
 ### 
 
-# Install [!INCLUDE[prodshort](../includes/prodshort.md)] on the first computer
+# Install Dynamics GP on the first computer
 
-Use the information in this chapter to install [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 on the first computer. This chapter contains the following sections:
+Use the information in this chapter to install Dynamics GP 2018 on the first computer. This chapter contains the following sections:
 
 -   [Installation overview](#installation-overview)  
 
--   [Installing [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer)](#installing-microsoft-dynamics-gp-first-computer)  
+-   [Installing Dynamics GP (first computer)](#installing-microsoft-dynamics-gp-first-computer)  
 
 ## Installation overview
 
-In a multiuser local area network environment, [!INCLUDE[prodshort](../includes/prodshort.md)] applications are typically installed on a server, and then on each client. However, [!INCLUDE[prodshort](../includes/prodshort.md)] is not required to be installed on the server. Each client will have access to data stored on the server. You can install your clients using the [!INCLUDE[prodshort](../includes/prodshort.md)] media or using a client installation package. For more about creating an installation package for your clients, see [Chapter 11, “Creating an installation package.”](#_Creating_an_installation_1)  
+In a multiuser local area network environment, Dynamics GP applications are typically installed on a server, and then on each client. However, Dynamics GP is not required to be installed on the server. Each client will have access to data stored on the server. You can install your clients using the Dynamics GP media or using a client installation package. For more about creating an installation package for your clients, see [Chapter 11, “Creating an installation package.”](#_Creating_an_installation_1)  
 
-## Installing [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer)
+## Installing Dynamics GP (first computer)
 
 Before beginning the installation, be sure you’ve completed the installation preparation steps listed in Part 1, Preparation, and that no other applications are running.
 
-To install [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer):
+To install Dynamics GP (first computer):
 
 1. Be sure that you’re logged in to Windows as a user with system administrator privileges.
 
-2. From the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 installation media, double-click the
+2. From the Dynamics GP 2018 installation media, double-click the
 
-        Setup.exe file to open the [!INCLUDE[prodshort](../includes/prodshort.md)] installation window.
+        Setup.exe file to open the Dynamics GP installation window.
 
-3. If one or more of the following components isn’t installed on your computer, the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 Bootstrapper Setup window opens and you can choose to install the missing component or components.
+3. If one or more of the following components isn’t installed on your computer, the Dynamics GP 2018 Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
     -   Dexterity Shared Components 18.0
 
@@ -60,17 +60,17 @@ To install [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer):
 
     -   Visual Basic for Applications Core
 
-    After all the components are installed, you may need to restart your computer before continuing the installation of [!INCLUDE[prodshort](../includes/prodshort.md)].
+    After all the components are installed, you may need to restart your computer before continuing the installation of Dynamics GP.
 
-4. Click [!INCLUDE[prodshort](../includes/prodshort.md)].
+4. Click Dynamics GP.
 
-    The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation will not continue.
+    The installation program verifies that your system has the minimum operating system required to run Dynamics GP. If your system does not meet requirements, the installation will not continue.
 
-5. If you are installing [!INCLUDE[prodshort](../includes/prodshort.md)] on a computer with an existing instance of [!INCLUDE[prodshort](../includes/prodshort.md)] 2018, select the Create new instance option, enter a name for the new instance, and then click Next.
+5. If you are installing Dynamics GP on a computer with an existing instance of Dynamics GP 2018, select the Create new instance option, enter a name for the new instance, and then click Next.
 
 6. In the Country/Region Selection window, select the primary country or region where you do business. Your selection affects which features are available to install. Some features are available only in selected countries or regions. Click Next.
 
-7. Follow the instructions in the window to accept the software license agreement. To install [!INCLUDE[prodshort](../includes/prodshort.md)], you must accept this agreement and click Next.
+7. Follow the instructions in the window to accept the software license agreement. To install Dynamics GP, you must accept this agreement and click Next.
 
 8. In the Select Features window, select the features to install.
 
@@ -84,7 +84,7 @@ To install [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer):
 | ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
 | ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
 
-9. Specify the folder where you want the [!INCLUDE[prodshort](../includes/prodshort.md)] files installed. The default folder is C:\\Program Files\\Microsoft Dynamics\\GP 2018. To select a different folder, click Browse.
+9. Specify the folder where you want the Dynamics GP files installed. The default folder is C:\\Program Files\\Microsoft Dynamics\\GP 2018. To select a different folder, click Browse.
 
     After you have specified the installation folder, click Next.
 
@@ -96,7 +96,7 @@ To install [!INCLUDE[prodshort](../includes/prodshort.md)] (first computer):
 
 12. Select to use DYNAMICS as the system database name or enter a different name for the system database name.
 
-    By entering a custom name for the system database, you can have multiple system databases on the same SQL Server instance. You cannot change the system database name in [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
+    By entering a custom name for the system database, you can have multiple system databases on the same SQL Server instance. You cannot change the system database name in Dynamics GP Utilities.
 
     Click Next.
 
@@ -112,12 +112,12 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 16. In the Installation Complete window, click Exit.
 
-17. Before you start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, check for and install current update for [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. See CustomerSource (<https://mbs.microsoft.com/customersource>) for the latest update information.
+17. Before you start Dynamics GP Utilities, check for and install current update for Dynamics GP 2018. See CustomerSource (<https://mbs.microsoft.com/customersource>) for the latest update information.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
-18. Start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
+18. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
 
-19. Follow the instructions in Chapter 7, “Using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.” You can use the [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities windows to set up your account framework and the [!INCLUDE[prodshort](../includes/prodshort.md)] system data tables, and to create your companies.
+19. Follow the instructions in Chapter 7, “Using Dynamics GP Utilities.” You can use the Dynamics GP Utilities windows to set up your account framework and the Dynamics GP system data tables, and to create your companies.
 
-20. After using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, you can install additional features or components that add specialized functionality to your [!INCLUDE[prodshort](../includes/prodshort.md)] system on the server computer. See Chapter 8, “Installing additional components,” for more information.
+20. After using Dynamics GP Utilities, you can install additional features or components that add specialized functionality to your Dynamics GP system on the server computer. See Chapter 8, “Installing additional components,” for more information.

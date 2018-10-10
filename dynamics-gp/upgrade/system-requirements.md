@@ -1,6 +1,6 @@
 ---
 title: "System requirements"
-description: "See the prerequisites and system requirement changes for [!INCLUDE[prodshort](../includes/prodshort.md)]."
+description: "See the prerequisites and system requirement changes for Dynamics GP."
 keywords: "upgrade"
 author: edupont04
 ms.author: edupont
@@ -14,7 +14,7 @@ ms.reviewer:
 ---
 # System Requirements
 
-This chapter contains a list of prerequisites and system requirement changes for [!INCLUDE[prodshort](../includes/prodshort.md)], as well as disk space requirements for SQL Server computers.
+This chapter contains a list of prerequisites and system requirement changes for Dynamics GP, as well as disk space requirements for SQL Server computers.
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software will improve performance.  
 
@@ -34,7 +34,7 @@ This chapter contains the following sections:
 
 -   [Modify the Report Server web.config file](#modify-the-report-server-web.config-file)  
 
--   [[!INCLUDE[prodshort](../includes/prodshort.md)] CRM requirements](#_Microsoft_Dynamics_GP)  
+-   [Dynamics GP CRM requirements](#_Microsoft_Dynamics_GP)  
 
 -   [About remote access](#about-remote-access)  
 
@@ -42,13 +42,13 @@ This chapter contains the following sections:
 
 ## Releases supported by the upgrade
 
-You can upgrade to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 from selected previous releases. To review whether or not you can upgrade your release, see <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>
+You can upgrade to Dynamics GP 2018 from selected previous releases. To review whether or not you can upgrade your release, see <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>
 
-If you are upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018, you must install the latest update or hotfix for [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 before starting [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities. See CustomerSource (<https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>) for the latest update information.
+If you are upgrading to Dynamics GP 2018, you must install the latest update or hotfix for Dynamics GP 2018 before starting Dynamics GP Utilities. See CustomerSource (<https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>) for the latest update information.
 
 ## System requirement changes
 
-The following changes are new with [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. For a complete list of all system requirements, see <http://go.microsoft.com/fwlink/?LinkId=521785>. You may want to consider upgrading your hardware for improved performance.
+The following changes are new with Dynamics GP 2018. For a complete list of all system requirements, see <http://go.microsoft.com/fwlink/?LinkId=521785>. You may want to consider upgrading your hardware for improved performance.
 
 ### Operating system requirement changes
 
@@ -88,7 +88,7 @@ Microsoft Office 2013 and Microsoft Office 2016 are supported. All previous vers
 
 ## Home page prerequisites
 
-To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with [!INCLUDE[prodshort](../includes/prodshort.md)]. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with [!INCLUDE[prodshort](../includes/prodshort.md)], go to the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 documentation resource Web site (<https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>) for the most current documentation.
+To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with Dynamics GP. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the Dynamics GP 2018 documentation resource Web site (<https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>) for the most current documentation.
 
 The following versions of SQL Server Reporting Services are supported.
 
@@ -100,21 +100,21 @@ The following versions of SQL Server Reporting Services are supported.
 
 ## Word templates prerequisites
 
-The following components must be installed before you can use Word Templates for [!INCLUDE[prodshort](../includes/prodshort.md)].
+The following components must be installed before you can use Word Templates for Dynamics GP.
 
 -   Microsoft Word 2013 or later to make layout changes such changing the font size
 
--   Open XML SDK 2.0 for Microsoft Office (installed as a [!INCLUDE[prodshort](../includes/prodshort.md)] prerequisite)
+-   Open XML SDK 2.0 for Microsoft Office (installed as a Dynamics GP prerequisite)
 
 If a component isn't installed, you can download the component from <http://www.microsoft.com>.
 
 Additional components are required to modify templates.
 
--   [!INCLUDE[prodshort](../includes/prodshort.md)] Add-in for Microsoft Word
+-   Dynamics GP Add-in for Microsoft Word
 
--   Visual Studio Tools for Office Runtime 2.0 or later (Visual Studio Tools for Office Runtime 3.0 is installed with [!INCLUDE[prodshort](../includes/prodshort.md)] Add-in for Microsoft Word.)
+-   Visual Studio Tools for Office Runtime 2.0 or later (Visual Studio Tools for Office Runtime 3.0 is installed with Dynamics GP Add-in for Microsoft Word.)
 
-You can install [!INCLUDE[prodshort](../includes/prodshort.md)] Add-in for Microsoft Word from the [!INCLUDE[prodshort](../includes/prodshort.md)] installation media. Double-click the Setup.exe file and then click [!INCLUDE[prodshort](../includes/prodshort.md)] Add-in for Microsoft Word.
+You can install Dynamics GP Add-in for Microsoft Word from the Dynamics GP installation media. Double-click the Setup.exe file and then click Dynamics GP Add-in for Microsoft Word.
 
 ## Email requirements
 
@@ -124,7 +124,7 @@ Review the following requirements.
 
 -   If you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services, the Autodiscover service must be enabled to connect to the Exchange server.
 
--   The email functionality in [!INCLUDE[prodshort](../includes/prodshort.md)] supports the following document types. Depending on the document type and the email service, Microsoft Word 2010 or later and Word templates for [!INCLUDE[prodshort](../includes/prodshort.md)] are required.
+-   The email functionality in Dynamics GP supports the following document types. Depending on the document type and the email service, Microsoft Word 2010 or later and Word templates for Dynamics GP are required.
 
 | File format                                                                                                                           | Word 2013         | Word templates | Web Client    |
 |---------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------------|---------------|
@@ -132,7 +132,7 @@ Review the following requirements.
 | PDF                                                                                                                                   | Required for MAPI | Enabled        | Not available |
 | DOCX                                                                                                                                  | Not required      | Enabled        | Available\*   |
 | HTML                                                                                                                                  | Not required      | Not required   | Available\*   |
-| \*Email for [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client will only be available if Exchange is your server type in the System Preferences window. |
+| \*Email for Dynamics GP Web Client will only be available if Exchange is your server type in the System Preferences window. |
 
 -   Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window.
 
@@ -148,11 +148,11 @@ Review the following requirements.
 | PDF                                                                                                                                 | Adobe Reader                  |
 | DOCS                                                                                                                                | Microsoft Word Viewer         |
 | HTML\*                                                                                                                              | Internet Explorer 11 and Edge |
-| \*If you are using [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client only for your customers and vendors must be using HTML to view their documents. |
+| \*If you are using Dynamics GP Web Client only for your customers and vendors must be using HTML to view their documents. |
 
 ## SQL Server Reporting Services requirements
 
-Before you deploy [!INCLUDE[prodshort](../includes/prodshort.md)] Reporting Services reports, you must install and configure SQL Server Reporting Services, and then set up security for SQL Server Reporting Services reports. Review the following table for the version of SQL Server Reporting Services and the report type available for that version.
+Before you deploy Dynamics GP Reporting Services reports, you must install and configure SQL Server Reporting Services, and then set up security for SQL Server Reporting Services reports. Review the following table for the version of SQL Server Reporting Services and the report type available for that version.
 
 | SQL Server Reporting Services version                                                                                                        | Report type available                                   |
 |----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -180,15 +180,15 @@ To modify the Report Server Web config file:
 
 1.  Save and close the Report Server web.config file.
 
-## [!INCLUDE[prodshort](../includes/prodshort.md)] CRM requirements
+## Dynamics GP CRM requirements
 
 You must be using SQL Server 2012 Reporting Services or later and Microsoft Dynamics CRM 2011 or later to deploy SQL Server Reporting Services reports and metrics that includes CRM data. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
 
-If Microsoft Dynamics CRM and [!INCLUDE[prodshort](../includes/prodshort.md)] are using different report servers, you must install the Microsoft Dynamics CRM Reporting Extensions on the [!INCLUDE[prodshort](../includes/prodshort.md)] report server to render reports.
+If Microsoft Dynamics CRM and Dynamics GP are using different report servers, you must install the Microsoft Dynamics CRM Reporting Extensions on the Dynamics GP report server to render reports.
 
 ## About remote access
 
-You can use Windows Server 2012 Remote Desktop Services, Windows Server 2012 R2 Remote Desktop Services, and Windows Server 2016 Remote Desktop Services. Citrix Xenapps can also be used with most database configurations to provide remote access to [!INCLUDE[prodshort](../includes/prodshort.md)] in a Wide Area Network (WAN) environment.
+You can use Windows Server 2012 Remote Desktop Services, Windows Server 2012 R2 Remote Desktop Services, and Windows Server 2016 Remote Desktop Services. Citrix Xenapps can also be used with most database configurations to provide remote access to Dynamics GP in a Wide Area Network (WAN) environment.
 
 A Windows Server 2008 Terminal Server is supported only as a client. You also can use Remote Desktop Services.
 
@@ -196,7 +196,7 @@ For more information about system requirements see <http://go.microsoft.com/fwli
 
 ## Determine disk space for the upgrade process
 
-For the upgrade process, be sure that you have enough disk space before you begin. To determine the disk space required for the upgrade, you need to find the size of the largest table for all [!INCLUDE[prodshort](../includes/prodshort.md)] databases. To determine disk space, use Microsoft SQL Server Management Studio for Microsoft SQL Server.
+For the upgrade process, be sure that you have enough disk space before you begin. To determine the disk space required for the upgrade, you need to find the size of the largest table for all Dynamics GP databases. To determine disk space, use Microsoft SQL Server Management Studio for Microsoft SQL Server.
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You can download an upgrade preparation script that will help you determine the disk space requirements from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>.  
 
@@ -208,9 +208,9 @@ To determine disk space for the upgrade process using Microsoft SQL Server Manag
 
 1.  Copy all of the contents of the script.
 
-2.  In Microsoft SQL Server Management Studio, select a [!INCLUDE[prodshort](../includes/prodshort.md)] database, click New Query and paste the contents. Then, execute the query.
+2.  In Microsoft SQL Server Management Studio, select a Dynamics GP database, click New Query and paste the contents. Then, execute the query.
 
-3.  Run the script for each [!INCLUDE[prodshort](../includes/prodshort.md)] database.
+3.  Run the script for each Dynamics GP database.
 
 4.  The largest table will be the first record in the result set. You will need to convert the table size from kilobytes to megabytes by using the following calculation. This will determine the amount of space that will be allocated to the data file (MDF) and the transaction log file (LDF) for each database.
 
@@ -257,8 +257,8 @@ If the data files (MDF) are located on a different hard disk than the transactio
 
 -   In the properties window for each database, choose Files and add the additional space needed for the size of the largest table for that database to the Initial Size column. When adding additional space, you are increasing the space for the data file (MDF) and the transaction log file (LDF) as well.
 
--   Repeat for the remaining [!INCLUDE[prodshort](../includes/prodshort.md)] databases.
+-   Repeat for the remaining Dynamics GP databases.
 
--   Right-click the TEMPDB database and select Properties. Choose Files and add the additional space needed for the size of the largest table of all [!INCLUDE[prodshort](../includes/prodshort.md)] databases to the Space Allocated (MB) column. When adding additional space, you are increasing the space for the data file (MDF) and the transaction log file (LDF) as well.
+-   Right-click the TEMPDB database and select Properties. Choose Files and add the additional space needed for the size of the largest table of all Dynamics GP databases to the Space Allocated (MB) column. When adding additional space, you are increasing the space for the data file (MDF) and the transaction log file (LDF) as well.
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If the database size is not manual configured, the time needed to upgrade the databases will increase because the database data, transaction log and TEMPDB files will all have to increase.  

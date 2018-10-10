@@ -16,7 +16,7 @@ ms.reviewer:
 
 # Prerequisite software
 
-Before you can install the [!INCLUDE[prodshort](../includes/prodshort.md)] web components, you must install other software on the web server and the session host servers. The prerequisite software to install will depend on the components you will be installing on the server. The following sections describe these software prerequisites:
+Before you can install the Dynamics GP web components, you must install other software on the web server and the session host servers. The prerequisite software to install will depend on the components you will be installing on the server. The following sections describe these software prerequisites:
 
 -   [Server operating system](#server-operating-system)  
 
@@ -24,7 +24,7 @@ Before you can install the [!INCLUDE[prodshort](../includes/prodshort.md)] web c
 
 ## Server operating system
 
-To install the [!INCLUDE[prodshort](../includes/prodshort.md)] web components, the web server and the session host servers must be running one of the following operating systems:
+To install the Dynamics GP web components, the web server and the session host servers must be running one of the following operating systems:
 
 -   Microsoft Windows Server 2016
 
@@ -34,11 +34,11 @@ To install the [!INCLUDE[prodshort](../includes/prodshort.md)] web components, t
 
 -   Windows Server 2008 SP1
 
-You cannot install any of the [!INCLUDE[prodshort](../includes/prodshort.md)] web client components on a server that is also being used as a domain controller.
+You cannot install any of the Dynamics GP web client components on a server that is also being used as a domain controller.
 
 ## Internet Information Services (IIS) and ASP.NET
 
-Internet Information Services (IIS) and ASP.NET must be installed on the web server on which you will be installing the [!INCLUDE[prodshort](../includes/prodshort.md)] web client.
+Internet Information Services (IIS) and ASP.NET must be installed on the web server on which you will be installing the Dynamics GP web client.
 
 ### Windows Server 2008 R2
 

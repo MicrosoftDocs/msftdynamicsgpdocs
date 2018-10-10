@@ -14,9 +14,9 @@ ms.reviewer:
 ---
 # Introduction
 
-Use this section to upgrade your [!INCLUDE[prodshort](../includes/prodshort.md)] system to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. Review the introductory information about the resources available to you, then use the [[!INCLUDE[prodshort](../includes/prodshort.md)] upgrade checklist](#_Microsoft_Dynamics_GP) on page 7 as your guide to the parts of this manual that apply to you.  
+Use this section to upgrade your Dynamics GP system to Dynamics GP 2018. Review the introductory information about the resources available to you, then use the [Dynamics GP upgrade checklist](#_Microsoft_Dynamics_GP) on page 7 as your guide to the parts of this manual that apply to you.  
 
-To review new [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 features, refer to the What’s New documentation (<https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/10/25/microsoft-dynamics-gp-2018-new-feature-blog-series-schedule>) provided with your software.
+To review new Dynamics GP 2018 features, refer to the What’s New documentation (<https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/10/25/microsoft-dynamics-gp-2018-new-feature-blog-series-schedule>) provided with your software.
 
 Check for current instructions
 
@@ -24,11 +24,11 @@ The documentation may be updated as new information becomes available. For the m
 
 ### What’s in this guide?
 
-This upgrade guide provides guidelines for upgrading your [!INCLUDE[prodshort](../includes/prodshort.md)] system to a newer version. It lists the latest system requirements, contains a step-by-step look at the upgrade process, and provides tips for troubleshooting your upgrade. The manual is divided into the following parts:
+This upgrade guide provides guidelines for upgrading your Dynamics GP system to a newer version. It lists the latest system requirements, contains a step-by-step look at the upgrade process, and provides tips for troubleshooting your upgrade. The manual is divided into the following parts:
 
--   Part 1, Preparation, contains information about preparing to upgrade your system to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
+-   Part 1, Preparation, contains information about preparing to upgrade your system to Dynamics GP 2018.
 
--   Part 2, [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 upgrade, describes the data conversion process for [!INCLUDE[prodshort](../includes/prodshort.md)] and contains additional procedures to upgrade specific modules and integrating products.
+-   Part 2, Dynamics GP 2018 upgrade, describes the data conversion process for Dynamics GP and contains additional procedures to upgrade specific modules and integrating products.
 
 ### Symbols and conventions
 
@@ -71,12 +71,12 @@ For support requests that can be handled with e-mail. On average, the response t
 
 Start a year-end discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.
 
-#### [!INCLUDE[prodshort](../includes/prodshort.md)] support team
+#### Dynamics GP support team
 
 We have specialized support teams focused on providing service and support to our Human Resources/Payroll customers. If you have Human Resources/Payroll questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code.
 
 ### Send us your suggestions
 
-We welcome comments regarding the usefulness of the [!INCLUDE[prodshort](../includes/prodshort.md)]. If you have specific suggestions or encounter problems, let us know on the Connect for Microsoft Dynamics (https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
+We welcome comments regarding the usefulness of the Dynamics GP. If you have specific suggestions or encounter problems, let us know on the Connect for Microsoft Dynamics (https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
 
 ### An email address was available in previous versions to provide an option for contacting us about the documentation. The most recent address was <adocs@microsoft.com>. Prior to that, <bizdoc@microsoft.com> was available. Both email addresses are being decommissioned.

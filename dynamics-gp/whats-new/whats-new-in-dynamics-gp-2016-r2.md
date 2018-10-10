@@ -1,6 +1,6 @@
 ---
 title: "What's new in Dynamics GP 2016 R2"
-description: "Learn about enhancements that were added to the product since the release of [!INCLUDE[prodshort](../includes/prodshort.md)] 2016 R2. "
+description: "Learn about enhancements that were added to the product since the release of Dynamics GP 2016 R2. "
 keywords: ""
 author: edupont04
 ms.author: edupont
@@ -14,7 +14,7 @@ ms.date: 09/05/2018
 
 # What’s new in Dynamics GP 2016 R2
 
-The following sections describe enhancements included in [!INCLUDE[prodshort](../includes/prodshort.md)] 2016 R2.
+The following sections describe enhancements included in Dynamics GP 2016 R2.
 
 ## Business Intelligence changes 
 

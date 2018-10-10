@@ -16,7 +16,7 @@ ms.reviewer:
 
 # Managing web client sessions
 
-The administrator of the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation has the responsibility to monitor and manage the web client sessions. Information about his task is divided into the following topics:
+The administrator of the Dynamics GP web client installation has the responsibility to monitor and manage the web client sessions. Information about his task is divided into the following topics:
 
 -   [Session Management snap-in](#session-management-snap-in)  
 
@@ -58,9 +58,9 @@ The Session Management snap-in for the Web Management Console is the primary too
 
 ## Connecting to Session Central
 
-To use the Session Management snap-in to monitor [!INCLUDE[prodshort](../includes/prodshort.md)] web client session, the snap-in must be configured to access the Session Central Service. The Session Central Service is the component of the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation that creates and tracks web client sessions.
+To use the Session Management snap-in to monitor Dynamics GP web client session, the snap-in must be configured to access the Session Central Service. The Session Central Service is the component of the Dynamics GP web client installation that creates and tracks web client sessions.
 
-To connect to the Session Central Service, the Session Management snap-in must have the URL for the service. In most cases, this will be automatically configured when the [!INCLUDE[prodshort](../includes/prodshort.md)] web client components were installed. Use the following procedure to manually configure the connection to the Session Central Service.
+To connect to the Session Central Service, the Session Management snap-in must have the URL for the service. In most cases, this will be automatically configured when the Dynamics GP web client components were installed. Use the following procedure to manually configure the connection to the Session Central Service.
 
 To connecting to Session Central
 
@@ -78,7 +78,7 @@ To connecting to Session Central
 
 ## Session host machines
 
-The left pane of the Session Management snap-in lists the session host machines that are configured to host [!INCLUDE[prodshort](../includes/prodshort.md)] web client sessions. Select the machine name to see the detailed information about that machine. The following details are provided:
+The left pane of the Session Management snap-in lists the session host machines that are configured to host Dynamics GP web client sessions. Select the machine name to see the detailed information about that machine. The following details are provided:
 
 **Last Status Update**   Indicates the last time that the status information was updated. Click Refresh in the ribbon to retrieve the latest information from the Session Central Service.
 
@@ -108,13 +108,13 @@ When a session host machine is selected in the left pane of the Session Manageme
 
 **Created Date**   Indicates the date and time that the web client session was created.
 
-**Dynamics GP Company Name**   Displays the company in the [!INCLUDE[prodshort](../includes/prodshort.md)] installation that the user logged in to.
+**Dynamics GP Company Name**   Displays the company in the Dynamics GP installation that the user logged in to.
 
-**Dynamics GP User**   Displays the [!INCLUDE[prodshort](../includes/prodshort.md)] user name that the web client user supplied when they signed into the company.
+**Dynamics GP User**   Displays the Dynamics GP user name that the web client user supplied when they signed into the company.
 
-**Dynamics GP Version**   Provides the version number of [!INCLUDE[prodshort](../includes/prodshort.md)] that is being used for the web client session.
+**Dynamics GP Version**   Provides the version number of Dynamics GP that is being used for the web client session.
 
-**User ID**   Displays the user ID supplied when the user signed in to the [!INCLUDE[prodshort](../includes/prodshort.md)] web client.
+**User ID**   Displays the user ID supplied when the user signed in to the Dynamics GP web client.
 
 **Host Machine Name** Displays the name of the machine that is hosting the web client session.
 
@@ -128,7 +128,7 @@ When a session host machine is selected in the left pane of the Session Manageme
 
 A web client session ends when the user signs out. However, situations occur in which a session may be left running on the session host machine. For example, the web client user may have closed their web browser without signing out first. You may have a need to manually end a session that a web client user has left running on a session host machine.
 
-When you manually end a session, there is a risk of data corruption, because the [!INCLUDE[prodshort](../includes/prodshort.md)] session was not closed down normally.
+When you manually end a session, there is a risk of data corruption, because the Dynamics GP session was not closed down normally.
 
 To manually end a web client session:
 
@@ -144,7 +144,7 @@ You can configure whether inactive web client sessions are automatically closed 
 
 ### Single tenant
 
-If you are using the [!INCLUDE[prodshort](../includes/prodshort.md)] web client in a single tenant configuration (not using the Tenant Service), a settings in the TenantConfiguration.xml file of the web client installation controls the session timeout. This file is typically found in this location on the machine that is hosting the web site for the web client installation:
+If you are using the Dynamics GP web client in a single tenant configuration (not using the Tenant Service), a settings in the TenantConfiguration.xml file of the web client installation controls the session timeout. This file is typically found in this location on the machine that is hosting the web site for the web client installation:
 
 C:\\Program Files\\Microsoft Dynamics\\GP Web Client\\GPweb\\
 

@@ -16,7 +16,7 @@ ms.reviewer:
 
 # Logging
 
-The logging capability provided by the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation can help you troubleshoot issues that users may experience with the [!INCLUDE[prodshort](../includes/prodshort.md)] web client. Information about logging is divided into the following topics:
+The logging capability provided by the Dynamics GP web client installation can help you troubleshoot issues that users may experience with the Dynamics GP web client. Information about logging is divided into the following topics:
 
 -   [Logging overview](#logging-overview)  
 
@@ -44,11 +44,11 @@ The following types of logs are available:
 
 **Runtime Log**   Provides details about the actions performed by the web client runtime process.
 
-**Script Log**   Contains a record of all of the sanScript scripts that are run by the [!INCLUDE[prodshort](../includes/prodshort.md)] web client runtime process.
+**Script Log**   Contains a record of all of the sanScript scripts that are run by the Dynamics GP web client runtime process.
 
 **Timing Log**   Contains timing details for web client operations. Microsoft can analyze this information to isolate issues with web client performance.
 
-**SQL Log**   Contains a record of all of the SQL statements there were issues by the [!INCLUDE[prodshort](../includes/prodshort.md)] web client runtime process.
+**SQL Log**   Contains a record of all of the SQL statements there were issues by the Dynamics GP web client runtime process.
 
 ### Log location
 
@@ -64,7 +64,7 @@ The tenant configuration you are using determines how you enable logging for the
 
 ### Single tenant
 
-If you are using the [!INCLUDE[prodshort](../includes/prodshort.md)] web client in a single tenant configuration (not using the Tenant Service), you can enable logging for all users of the installation. Settings in the TenantConfiguration.xml file of the web client installation control the logging. This file is typically found in this location on the machine that is hosting the the web site for the web client installation:
+If you are using the Dynamics GP web client in a single tenant configuration (not using the Tenant Service), you can enable logging for all users of the installation. Settings in the TenantConfiguration.xml file of the web client installation control the logging. This file is typically found in this location on the machine that is hosting the the web site for the web client installation:
 
 C:\\Program Files\\Microsoft Dynamics\\GP Web Client\\GPweb\\
 

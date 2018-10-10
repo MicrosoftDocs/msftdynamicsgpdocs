@@ -1,6 +1,6 @@
 ---
 title: "What's new in Dynamics GP"
-description: "Learn about updates and enhancements in [!INCLUDE[prodshort](../includes/prodshort.md)]."
+description: "Learn about updates and enhancements in Dynamics GP."
 keywords: ""
 author: edupont04
 ms.author: edupont
@@ -14,13 +14,13 @@ ms.reviewer: edupont
 
 # Introduction
 
-The What’s New section is your guide to enhancements in [!INCLUDE[prodshort](../includes/prodshort.md)]. We add tax updates as required and other enhancements based on feedback we receive from customers, as well as on market research. Your willingness to help us build better products makes this a more complete solution for small and medium-sized businesses, putting you in a better position to manage your organization successfully.
+The What’s New section is your guide to enhancements in Dynamics GP. We add tax updates as required and other enhancements based on feedback we receive from customers, as well as on market research. Your willingness to help us build better products makes this a more complete solution for small and medium-sized businesses, putting you in a better position to manage your organization successfully.
 
 Some enhancements described in this documentation are optional and can be purchased through your Microsoft partner. If you currently have a license for one of these modules and have an active enhancement program, you automatically will receive the enhancements contained in that module.
 
 ## What’s in this guide?
 
-The What’s New for [!INCLUDE[prodshort](../includes/prodshort.md)] continues to be updated with descriptions of enhancements that have been added to the product since the release of GP 2015.
+The What’s New for Dynamics GP continues to be updated with descriptions of enhancements that have been added to the product since the release of GP 2015.
 
 ## Additional resources
 
@@ -50,10 +50,10 @@ For support requests that can be handled with e-mail. On average, the response t
 
 Start a year-end discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.
 
-### [!INCLUDE[prodshort](../includes/prodshort.md)] support team
+### Dynamics GP support team
 
 We have specialized support teams focused on providing service and support to our Human Resources/Payroll customers. If you have Human Resources/Payroll questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code.
 
 ### Send us your suggestions
 
-We welcome comments regarding the usefulness of the [!INCLUDE[prodshort](../includes/prodshort.md)]. If you have specific suggestions or encounter problems, let us know on the Connect for Microsoft Dynamics (https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.  
+We welcome comments regarding the usefulness of the Dynamics GP. If you have specific suggestions or encounter problems, let us know on the Connect for Microsoft Dynamics (https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.  

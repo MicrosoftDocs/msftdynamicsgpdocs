@@ -14,7 +14,7 @@ ms.reviewer:
 ---
 # Register application for organizational accounts
 
-To set up the [!INCLUDE[prodshort](../includes/prodshort.md)] web components for user access using Organizational Accounts, you must register the application in your Microsoft Azure Active Directory. This information is divided into the following sections:
+To set up the Dynamics GP web components for user access using Organizational Accounts, you must register the application in your Microsoft Azure Active Directory. This information is divided into the following sections:
 
 -   [Add application](#add-application)  
 
@@ -26,11 +26,11 @@ To set up the [!INCLUDE[prodshort](../includes/prodshort.md)] web components for
 
 For an application to use Azure AD for sign in and authorization you must first register it with Azure AD by providing information about that application.
 
-To successfully register the application with Azure AD, you will need to know the URL that you will be using when you deploy the [!INCLUDE[prodshort](../includes/prodshort.md)] web components. A typical URL to access the [!INCLUDE[prodshort](../includes/prodshort.md)] web client looks similar to the following:
+To successfully register the application with Azure AD, you will need to know the URL that you will be using when you deploy the Dynamics GP web components. A typical URL to access the Dynamics GP web client looks similar to the following:
 
 https://gpuaweb.contoso.com/GP
 
-Use the following steps to register your [!INCLUDE[prodshort](../includes/prodshort.md)] web components installation with Azure AD.
+Use the following steps to register your Dynamics GP web components installation with Azure AD.
 
 1. Sign on to the Azure Management Portal.
 
@@ -56,7 +56,7 @@ When finished, click the arrow icon on the bottom-right corner of the page.
 
 ## Configure for sign on
 
-Once the application has been added to Azure Active Directory, you will need to configure the application to support sign on to [!INCLUDE[prodshort](../includes/prodshort.md)]. You will need to capture the configuration information for use when deploying the [!INCLUDE[prodshort](../includes/prodshort.md)] web components.
+Once the application has been added to Azure Active Directory, you will need to configure the application to support sign on to Dynamics GP. You will need to capture the configuration information for use when deploying the Dynamics GP web components.
 
 Use the following steps in order to configure the application for sign on.
 
@@ -64,7 +64,7 @@ Use the following steps in order to configure the application for sign on.
 
 ![shows the keys section in the azure management portal.](media/manage-web-org-accounts-key.png "Deployment")  
 
-2. In the permissions to other application section, select the Read directory data checkbox for the Application Permissions drop-down for the Microsoft Azure Active Directory row. This allows [!INCLUDE[prodshort](../includes/prodshort.md)] to look up user accounts in the Azure Active Directory when setting up GP users.
+2. In the permissions to other application section, select the Read directory data checkbox for the Application Permissions drop-down for the Microsoft Azure Active Directory row. This allows Dynamics GP to look up user accounts in the Azure Active Directory when setting up GP users.
 
 ![shows the permissions to other applications section in the azure management portal.](media/manage-web-org-accounts-permissions.png "Deployment")  
 
@@ -86,7 +86,7 @@ Use the following steps to configure the application as mulitenant.
 
 2. Select Save to save your changes.
 
-For an administrator to enable their organization's users to use the application, the administrator will need to sign up for the application using a special URL to your [!INCLUDE[prodshort](../includes/prodshort.md)] web client deployment. A typical sign up URL looks similar to the following:
+For an administrator to enable their organization's users to use the application, the administrator will need to sign up for the application using a special URL to your Dynamics GP web client deployment. A typical sign up URL looks similar to the following:
 
 https://gpuaweb.contoso.com/GP/tenant
 

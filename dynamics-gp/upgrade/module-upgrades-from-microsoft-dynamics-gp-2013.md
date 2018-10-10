@@ -1,6 +1,6 @@
 ---
 title: "Upgrade from Dynamcis GP 2013"
-description: "See the module upgrade information to verify the upgrade from [!INCLUDE[prodshort](../includes/prodshort.md)] Release 2013."
+description: "See the module upgrade information to verify the upgrade from Dynamics GP Release 2013."
 keywords: "upgrade"
 author: edupont04
 ms.author: edupont
@@ -14,9 +14,9 @@ ms.reviewer:
 ---
 <span id="_Toc498615813" class="anchor"></span>
 
-# Module upgrades from [!INCLUDE[prodshort](../includes/prodshort.md)] 2013
+# Module upgrades from Dynamics GP 2013
 
-Use the module upgrade information in this chapter to verify the upgrade from [!INCLUDE[prodshort](../includes/prodshort.md)] Release 2013. The information in this chapter also provides information about module upgrades from [!INCLUDE[prodshort](../includes/prodshort.md)] 2013 to [!INCLUDE[prodshort](../includes/prodshort.md)] 2018.
+Use the module upgrade information in this chapter to verify the upgrade from Dynamics GP Release 2013. The information in this chapter also provides information about module upgrades from Dynamics GP 2013 to Dynamics GP 2018.
 
 This chapter contains the following sections:
 
@@ -32,7 +32,7 @@ This chapter contains the following sections:
 
 ## System upgrade
 
-The following change has been made in [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. For more information, refer to your System User ’s Guide (Help &gt;&gt; Contents &gt;&gt; select Setting up the system).
+The following change has been made in Dynamics GP 2018. For more information, refer to your System User ’s Guide (Help &gt;&gt; Contents &gt;&gt; select Setting up the system).
 
 ### Posting Accounts Setup window
 
@@ -54,17 +54,17 @@ The Apply Documents Posting Journal has been added to the Receivings Trx Entry o
 
 ### Setup Checklist window
 
-The name of the existing Workflow node in the Setup Checklist window has changed to Workflow for SharePoint. A new Workflow node has been added for the new Workflow feature in [!INCLUDE[prodshort](../includes/prodshort.md)]. ([!INCLUDE[prodshort](../includes/prodshort.md)] 2013 R2 and later.)
+The name of the existing Workflow node in the Setup Checklist window has changed to Workflow for SharePoint. A new Workflow node has been added for the new Workflow feature in Dynamics GP. (Dynamics GP 2013 R2 and later.)
 
 ### Message Setup window
 
-All existing messages will be updated to have Standard as the message type in the Message Setup window. The Standard message type is for messages that you send to customers or vendors when sending documents in e-mail. The new Workflow feature has Workflow Assignment and Workflow Action Completed as message types. ([!INCLUDE[prodshort](../includes/prodshort.md)] 2013 R2)
+All existing messages will be updated to have Standard as the message type in the Message Setup window. The Standard message type is for messages that you send to customers or vendors when sending documents in e-mail. The new Workflow feature has Workflow Assignment and Workflow Action Completed as message types. (Dynamics GP 2013 R2)
 
 ### Note window
 
 You can use the Document Attachment Management window to attach documents to record level notes instead of OLE objects. If there is an existing OLE object is attached to a note record, the Attach button in the Note window is a drop-down list where you can select OLE Object or Document Attach. By selecting OLE Object, you can open the OLE container. If you select Document Attach, the Document Attachment Management window opens. A checkmark displays next to the option that has a file attached to the note.
 
-If there isn't an existing OLE object is attached to the note, the Attach button in the Note window opens the Document Attachment Management window. ([!INCLUDE[prodshort](../includes/prodshort.md)] 2013 R2)
+If there isn't an existing OLE object is attached to the note, the Attach button in the Note window opens the Document Attachment Management window. (Dynamics GP 2013 R2)
 
 You can use the OLE Notes Migration Utility to migrate the documents already attached to notes from OLE objects to the new document attachment functionality. For more information refer to Microsoft Dynamics CustomerSource or PartnerSource.
 
@@ -113,7 +113,7 @@ The following changes have been made. For more information, refer to your Purcha
 
 ### Drop-ship or drop-ship blanket line items that track serial or lot numbers
 
-If you have purchasing invoice receipts saved in a batch prior to upgrading to [!INCLUDE[prodshort](../includes/prodshort.md)] 2013, drop-ship or drop-ship blanket line items that track serial or lot numbers assigned to the invoices will not be marked to track serial or lot numbers after you upgrade. You can track serial or lot numbers for these items by selecting each invoice in the Purchasing Invoice Entry window and marking the S/L option for each item.
+If you have purchasing invoice receipts saved in a batch prior to upgrading to Dynamics GP 2013, drop-ship or drop-ship blanket line items that track serial or lot numbers assigned to the invoices will not be marked to track serial or lot numbers after you upgrade. You can track serial or lot numbers for these items by selecting each invoice in the Purchasing Invoice Entry window and marking the S/L option for each item.
 
 ### Posting Accounts Setup window
 
@@ -135,9 +135,9 @@ The Apply Documents Posting Journal has been added to the Receivings Trx Entry o
 
 ### Purchase order approval workflow
 
-When you upgrade to [!INCLUDE[prodshort](../includes/prodshort.md)] 2013 R2 or later, there will no longer be the option to use the Purchase Order Approval workflow type in Workflow for SharePoint.
+When you upgrade to Dynamics GP 2013 R2 or later, there will no longer be the option to use the Purchase Order Approval workflow type in Workflow for SharePoint.
 
-If you were using the Purchase Order Approval workflow in Workflow for SharePoint, the workflow status for each purchase order with an Open status is updated to the Workflow Not Activated status in the new Workflow feature. After setting up a new the purchase order approval workflow in [!INCLUDE[prodshort](../includes/prodshort.md)], you can resubmit the purchase orders using the Purchase Order Entry window or the Purchase Order Transactions navigation list.
+If you were using the Purchase Order Approval workflow in Workflow for SharePoint, the workflow status for each purchase order with an Open status is updated to the Workflow Not Activated status in the new Workflow feature. After setting up a new the purchase order approval workflow in Dynamics GP, you can resubmit the purchase orders using the Purchase Order Entry window or the Purchase Order Transactions navigation list.
 
 The workflow status for each historical purchase order is updated to the statuses used in the new Workflow feature. Review the following table for the new statuses.
 
@@ -152,7 +152,7 @@ The workflow status for each historical purchase order is updated to the statuse
 | Rejected                       | Rejected               |
 | Workflow Deactivated           | Workflow Not Activated |
 
-If you were not using the Purchase Order Approval workflow in Workflow for SharePoint, the workflow status for each purchase order, including those in history, is updated to the Workflow Not Activated status in the new Workflow feature. ([!INCLUDE[prodshort](../includes/prodshort.md)] 2013 R2)
+If you were not using the Purchase Order Approval workflow in Workflow for SharePoint, the workflow status for each purchase order, including those in history, is updated to the Workflow Not Activated status in the new Workflow feature. (Dynamics GP 2013 R2)
 
 ## Project Accounting upgrade
 

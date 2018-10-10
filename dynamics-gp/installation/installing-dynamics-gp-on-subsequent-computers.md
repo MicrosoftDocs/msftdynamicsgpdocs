@@ -14,47 +14,47 @@ ms.reviewer: edupont
 ---
 # Installing Dynamics GP on subsequent computers
 
-Use the information in this chapter to install [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 on each client computer. You also use [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities to synchronize the [!INCLUDE[prodshort](../includes/prodshort.md)] dictionary on each additional client with your account framework on the server.
+Use the information in this chapter to install Dynamics GP 2018 on each client computer. You also use Dynamics GP Utilities to synchronize the Dynamics GP dictionary on each additional client with your account framework on the server.
 
 This chapter contains the following sections:
 
 -   [Installation overview](#installation-overview)  
 
--   [Installing [!INCLUDE[prodshort](../includes/prodshort.md)] on an additional computer](#installing-microsoft-dynamics-gp-on-an-additional-computer)  
+-   [Installing Dynamics GP on an additional computer](#installing-microsoft-dynamics-gp-on-an-additional-computer)  
 
 -   [Synchronizing a client’s account framework](#synchronizing-a-clients-account-framework)  
 
--   [Multiple instances of [!INCLUDE[prodshort](../includes/prodshort.md)]](#_Multiple_instances_of)  
+-   [Multiple instances of Dynamics GP](#_Multiple_instances_of)  
 
 ## Installation overview
 
-In a multiuser local area network environment, [!INCLUDE[prodshort](../includes/prodshort.md)] applications are typically installed on a server, and then on each client. However, [!INCLUDE[prodshort](../includes/prodshort.md)] is not required to be installed on the server. Each client will have access to data stored on the server. You can install clients using the [!INCLUDE[prodshort](../includes/prodshort.md)] media or using a client installation package. For more about creating an installation package for your clients, see Chapter 11, “Creating an installation package.”
+In a multiuser local area network environment, Dynamics GP applications are typically installed on a server, and then on each client. However, Dynamics GP is not required to be installed on the server. Each client will have access to data stored on the server. You can install clients using the Dynamics GP media or using a client installation package. For more about creating an installation package for your clients, see Chapter 11, “Creating an installation package.”
 
-When you install [!INCLUDE[prodshort](../includes/prodshort.md)], the Distributed Process Server (DPS) and the Distributed Process Manager (DPM) are installed automatically. You can specify which computers in your system are process servers, and which tasks will be completed on those process servers. A process server is an application that allows users to direct the processing such as posting or printing checks and maintenance procedures to another computer on the network. The Distributed Process Manager is the application that tracks activity on all clients and process servers. See your System Administrator ’s Guide (Help &gt;&gt; Contents &gt;&gt; select System administration) for more information.
+When you install Dynamics GP, the Distributed Process Server (DPS) and the Distributed Process Manager (DPM) are installed automatically. You can specify which computers in your system are process servers, and which tasks will be completed on those process servers. A process server is an application that allows users to direct the processing such as posting or printing checks and maintenance procedures to another computer on the network. The Distributed Process Manager is the application that tracks activity on all clients and process servers. See your System Administrator ’s Guide (Help &gt;&gt; Contents &gt;&gt; select System administration) for more information.
 
-## Installing [!INCLUDE[prodshort](../includes/prodshort.md)] on an additional computer
+## Installing Dynamics GP on an additional computer
 
-Use the information in this section to install a client in a multiuser system after you’ve installed [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 on the server or the first computer and created your first company.
+Use the information in this section to install a client in a multiuser system after you’ve installed Dynamics GP 2018 on the server or the first computer and created your first company.
 
-To install [!INCLUDE[prodshort](../includes/prodshort.md)] on an additional computer:
+To install Dynamics GP on an additional computer:
 
-1. From the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 installation media, double-click the Setup.exe file to open the [!INCLUDE[prodshort](../includes/prodshort.md)] installation window.
+1. From the Dynamics GP 2018 installation media, double-click the Setup.exe file to open the Dynamics GP installation window.
 
-2. Click [!INCLUDE[prodshort](../includes/prodshort.md)].
+2. Click Dynamics GP.
 
-    The installation program verifies that your system has the minimum operating system required to run [!INCLUDE[prodshort](../includes/prodshort.md)]. If your system does not meet requirements, the installation will not continue.
+    The installation program verifies that your system has the minimum operating system required to run Dynamics GP. If your system does not meet requirements, the installation will not continue.
 
-3. Select a new [!INCLUDE[prodshort](../includes/prodshort.md)] instance and click Next
+3. Select a new Dynamics GP instance and click Next
 
 ### 
 
-    If you are installing [!INCLUDE[prodshort](../includes/prodshort.md)] on a computer with an existing instance of [!INCLUDE[prodshort](../includes/prodshort.md)], select Create a new instance and enter a name for the new instance. See Multiple instances of [!INCLUDE[prodshort](../includes/prodshort.md)] on page 82 for more information.
+    If you are installing Dynamics GP on a computer with an existing instance of Dynamics GP, select Create a new instance and enter a name for the new instance. See Multiple instances of Dynamics GP on page 82 for more information.
 
 4. In the Select a Country/Region window, select the primary country or region where you do business. Click Next.
 
 5. Follow the instructions in the window to accept the software license agreement.
 
-    To install [!INCLUDE[prodshort](../includes/prodshort.md)], you must accept this agreement.
+    To install Dynamics GP, you must accept this agreement.
 
 6. In the Select Features window, select the features to install.
 
@@ -66,7 +66,7 @@ To install [!INCLUDE[prodshort](../includes/prodshort.md)] on an additional comp
 
 When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
-7. Specify the folder where you want the [!INCLUDE[prodshort](../includes/prodshort.md)] files installed. The default folder is C:\\Program Files\\Microsoft Dynamics\\GP. To select a different folder, click Browse.
+7. Specify the folder where you want the Dynamics GP files installed. The default folder is C:\\Program Files\\Microsoft Dynamics\\GP. To select a different folder, click Browse.
 
     After you have specified the installation folder, click Next.
 
@@ -86,47 +86,47 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 
 13. In the Installation Complete window, click Finish.
 
-14. Before you start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, check for and install current update for [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. See CustomerSource (<http://go.microsoft.com/fwlink/?LinkId=249465>) for the latest update information.
+14. Before you start Dynamics GP Utilities, check for and install current update for Dynamics GP 2018. See CustomerSource (<http://go.microsoft.com/fwlink/?LinkId=249465>) for the latest update information.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
-15. Start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
+15. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
 
-16. Follow the instructions in the [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities windows to synchronize your account framework. See Synchronizing a client’s account framework on page 81 for more information.
+16. Follow the instructions in the Dynamics GP Utilities windows to synchronize your account framework. See Synchronizing a client’s account framework on page 81 for more information.
 
-17. After using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, you can install additional component applications. See Chapter 8, “Installing additional components,” for more information.
+17. After using Dynamics GP Utilities, you can install additional component applications. See Chapter 8, “Installing additional components,” for more information.
 
 ## Synchronizing a client’s account framework
 
-Synchronize the account framework of each client where you install [!INCLUDE[prodshort](../includes/prodshort.md)].
+Synchronize the account framework of each client where you install Dynamics GP.
 
-[!INCLUDE[prodshort](../includes/prodshort.md)] Utilities uses the scripts and files installed previously to complete the client setup. In addition, you can use [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities to complete various maintenance procedures, now and on an ongoing basis.
+Dynamics GP Utilities uses the scripts and files installed previously to complete the client setup. In addition, you can use Dynamics GP Utilities to complete various maintenance procedures, now and on an ongoing basis.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
 To synchronize a client’s account framework:
 
-1. Start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
+1. Start Dynamics GP Utilities.
 (Start &gt;&gt; Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities)
 
-2. In the Welcome to [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities window, verify your server name, and enter a user ID and password. Click Next.
+2. In the Welcome to Dynamics GP Utilities window, verify your server name, and enter a user ID and password. Click Next.
 
 ![login screen to dynamics gp utilities](media/gp-utilities-2.png "Login screen")  
 
-3. In the Welcome To [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities window, click Next.
+3. In the Welcome To Dynamics GP Utilities window, click Next.
 
-    The [!INCLUDE[prodshort](../includes/prodshort.md)] dictionary is synchronized automatically with your account framework.
+    The Dynamics GP dictionary is synchronized automatically with your account framework.
 
-4. In the Additional Tasks window, you can choose to complete additional tasks, launch [!INCLUDE[prodshort](../includes/prodshort.md)], or end the installation. If you select any task, choose Process; otherwise, click Exit.
+4. In the Additional Tasks window, you can choose to complete additional tasks, launch Dynamics GP, or end the installation. If you select any task, choose Process; otherwise, click Exit.
 
 ![screen with list of tasks that open setup wizards](media/gp-utilities-15.png "Task selector")  
 
-5. Repeat the client installation process for each computer you’ll use as a client or process server for [!INCLUDE[prodshort](../includes/prodshort.md)].
+5. Repeat the client installation process for each computer you’ll use as a client or process server for Dynamics GP.
 
 <span id="_Multiple_instances_of" class="anchor"></span>
 
-## Multiple instances of [!INCLUDE[prodshort](../includes/prodshort.md)]
+## Multiple instances of Dynamics GP
 
-You can have multiple instances—installations—of [!INCLUDE[prodshort](../includes/prodshort.md)] on the same computer. Multiple instances are typically installed on client computers. You may want to use an additional instance of [!INCLUDE[prodshort](../includes/prodshort.md)] for testing purposes.
+You can have multiple instances—installations—of Dynamics GP on the same computer. Multiple instances are typically installed on client computers. You may want to use an additional instance of Dynamics GP for testing purposes.
 
-When you install [!INCLUDE[prodshort](../includes/prodshort.md)] on a computer with an existing instance of [!INCLUDE[prodshort](../includes/prodshort.md)], you’ll enter a name for the new instance during the installation process. Each instance will be displayed in the Add or Remove Programs control panel. For example, if you entered TEST as an instance name, [!INCLUDE[prodshort](../includes/prodshort.md)] (TEST) will be displayed in the Add or Remove Programs control panel. The instance also will appear in the program group for Microsoft Dynamics and in the folder where Microsoft Dynamics is installed. The default folder location is C:\\Program Files\\Microsoft Dynamics\\GP$TEST. The first instance of [!INCLUDE[prodshort](../includes/prodshort.md)] on a computer is considered the default instance. The default instance of [!INCLUDE[prodshort](../includes/prodshort.md)] isn’t assigned an instance name.
+When you install Dynamics GP on a computer with an existing instance of Dynamics GP, you’ll enter a name for the new instance during the installation process. Each instance will be displayed in the Add or Remove Programs control panel. For example, if you entered TEST as an instance name, Dynamics GP (TEST) will be displayed in the Add or Remove Programs control panel. The instance also will appear in the program group for Microsoft Dynamics and in the folder where Microsoft Dynamics is installed. The default folder location is C:\\Program Files\\Microsoft Dynamics\\GP$TEST. The first instance of Dynamics GP on a computer is considered the default instance. The default instance of Dynamics GP isn’t assigned an instance name.

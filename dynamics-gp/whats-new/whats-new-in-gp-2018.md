@@ -1,6 +1,6 @@
 ---
 title: "What's new in Dynamics GP 2018"
-description: "Learn about enhancements that were added to the product since the release of [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. "
+description: "Learn about enhancements that were added to the product since the release of Dynamics GP 2018. "
 keywords: ""
 author: edupont04
 ms.author: edupont
@@ -13,7 +13,7 @@ ms.reviewer:
 ---
     # What’s new in GP 2018 
 
-This chapter lists enhancements to [!INCLUDE[prodshort](../includes/prodshort.md)] for the GP 2018 release. The GP 2018 release enhances specific areas of the product, while also expanding existing functionality, notably in the document attachment and workflow areas. The user experience has also been enhanced to make finding the information you use to make business decisions faster and easier.
+This chapter lists enhancements to Dynamics GP for the GP 2018 release. The GP 2018 release enhances specific areas of the product, while also expanding existing functionality, notably in the document attachment and workflow areas. The user experience has also been enhanced to make finding the information you use to make business decisions faster and easier.
 
 ## Platform and system-wide enhancements
 
@@ -96,7 +96,7 @@ New workflows have been added to control the addition of general ledger accounts
 
 ## User experience enhancements
 
-A number of enhancements improve the experience of working with [!INCLUDE[prodshort](../includes/prodshort.md)]. The following subsections describe those enhancements.
+A number of enhancements improve the experience of working with Dynamics GP. The following subsections describe those enhancements.
 
 ### Additional sorting options added
 

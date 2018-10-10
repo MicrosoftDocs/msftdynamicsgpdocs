@@ -1,6 +1,6 @@
 ---
 title: "What's new in Dynamics GP 2018 R2"
-description: "Learn about enhancements that were added to the product since the release of [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. "
+description: "Learn about enhancements that were added to the product since the release of Dynamics GP 2018. "
 keywords: ""
 author: edupont04
 ms.author: edupont
@@ -14,7 +14,7 @@ ms.reviewer: edupont
 
 # What’s New in Dynamics GP 2018 R2
 
-This chapter lists enhancements to [!INCLUDE[prodshort](../includes/prodshort.md)] for the Dynamics GP 2018 R2 release. The Dynamics GP 2018 R2 release enhances specific areas of the product.
+This chapter lists enhancements to Dynamics GP for the Dynamics GP 2018 R2 release. The Dynamics GP 2018 R2 release enhances specific areas of the product.
 
 ## Financial enhancements
 

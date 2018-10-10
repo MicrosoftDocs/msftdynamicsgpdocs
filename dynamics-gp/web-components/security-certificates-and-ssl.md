@@ -16,7 +16,7 @@ ms.reviewer:
 
 # Security certificates and SSL
 
-Security certificates and secure sockets layer (SSL) are used to help improve the security of the data being transmitted by the [!INCLUDE[prodshort](../includes/prodshort.md)] web components. The web site that hosts the web client and web management console must be configured to use SSL. The GP Service and Web Client runtime service must be configured to use a security certificate. Optionally, the Session Central Service, Session Service and Dex Service Control can be configured to use a security certificate to improve their security in a scale out deployment where cross-machine communication is happening.
+Security certificates and secure sockets layer (SSL) are used to help improve the security of the data being transmitted by the Dynamics GP web components. The web site that hosts the web client and web management console must be configured to use SSL. The GP Service and Web Client runtime service must be configured to use a security certificate. Optionally, the Session Central Service, Session Service and Dex Service Control can be configured to use a security certificate to improve their security in a scale out deployment where cross-machine communication is happening.
 
 Information about security certificates is divided into the following sections:
 
@@ -34,11 +34,11 @@ Information about security certificates is divided into the following sections:
 
 ## Security certificate requirements
 
-The security certificates that you use for your [!INCLUDE[prodshort](../includes/prodshort.md)] web components installation must meet some requirements to work properly.
+The security certificates that you use for your Dynamics GP web components installation must meet some requirements to work properly.
 
 ### Certificate purpose
 
-To be used for the [!INCLUDE[prodshort](../includes/prodshort.md)] web components, the security certificate must have “Server Authentication” listed as one of its intended purposes. You can use the Certificates snap-in for the Microsoft Management Console to view the Intended Purpose column for the certificate.
+To be used for the Dynamics GP web components, the security certificate must have “Server Authentication” listed as one of its intended purposes. You can use the Certificates snap-in for the Microsoft Management Console to view the Intended Purpose column for the certificate.
 
 ### Private key
 
@@ -50,7 +50,7 @@ To verify that a security certificate has a private key, you can view the detail
 
 ## Externally signed security certificates
 
-Externally signed security certificates are the easiest way to implement SSL for the [!INCLUDE[prodshort](../includes/prodshort.md)] web components. They must be purchased from the third- party supplier. Due to the additional cost, externally signed security certificates are typically used in a production environments.
+Externally signed security certificates are the easiest way to implement SSL for the Dynamics GP web components. They must be purchased from the third- party supplier. Due to the additional cost, externally signed security certificates are typically used in a production environments.
 
 There are three basic types of externally signed security certificates:
 
@@ -58,7 +58,7 @@ There are three basic types of externally signed security certificates:
 
 -   GPweb.contoso.com.
 
-You would typically use this type of certificate when installing the [!INCLUDE[prodshort](../includes/prodshort.md)] web components in a single machine configuration. This is the least- expensive type of certificate to purchase.
+You would typically use this type of certificate when installing the Dynamics GP web components in a single machine configuration. This is the least- expensive type of certificate to purchase.
 
 **Multiple domain**   This type of security certificate is issued for a set of specific machines. You must know the machine names at the time that you are purchasing the security certificate. For example, you could get a security certificate issued that could be used for machines with the following names:
 
@@ -70,11 +70,11 @@ You would typically use this type of certificate when installing the [!INCLUDE[p
 
 - **ServiceHost3.contoso.com**
 
-You would typically use the multiple domain certificate when installing the [!INCLUDE[prodshort](../includes/prodshort.md)] web components in a scale out configuration. The certificate would contain entries for each of the machines that will be part of your web client installation. This security certificate is more expensive, because the same certificate can be used on multiple machines.
+You would typically use the multiple domain certificate when installing the Dynamics GP web components in a scale out configuration. The certificate would contain entries for each of the machines that will be part of your web client installation. This security certificate is more expensive, because the same certificate can be used on multiple machines.
 
 ## Using an externally signed security certificate for a web site
 
-When an externally signed security certificate is used for a web site, the third-party certificate authority handles the certificate validation when users connect to the web client site. No additional action is needed by the [!INCLUDE[prodshort](../includes/prodshort.md)] web client users.
+When an externally signed security certificate is used for a web site, the third-party certificate authority handles the certificate validation when users connect to the web client site. No additional action is needed by the Dynamics GP web client users.
 
 To use an externally signed security certificate:
 
@@ -96,11 +96,11 @@ To use an externally signed security certificate:
 
 ## Self-signed security certificates
 
-Self-signed security certificates are the least expensive way to implement SSL for the [!INCLUDE[prodshort](../includes/prodshort.md)] web components. You can generate these security certificates from within IIS Manager. They are typically used when you are setting up a [!INCLUDE[prodshort](../includes/prodshort.md)] web components installation for testing or development purposes.
+Self-signed security certificates are the least expensive way to implement SSL for the Dynamics GP web components. You can generate these security certificates from within IIS Manager. They are typically used when you are setting up a Dynamics GP web components installation for testing or development purposes.
 
 Self-signed security certificates have some limitations. You must use the default subject alternative name (SAN) that is assigned when the security certificate is created. Self-signed security certificates have a limited lifespan, typically one year.
 
-When you use a self-signed security certificate, there is no external authority to handle the certificate validation when users connect to the web client site. Because of this, a certificate error will be displayed when users access the [!INCLUDE[prodshort](../includes/prodshort.md)] web client site. To prevent the certificate error, users must import the security certificate onto their own machine. Refer to [Appendix A, “Importing a Self- signed Security Certificate,”](#_Importing_a_Self-signed_1) for details about importing a self-signed security certificate.  
+When you use a self-signed security certificate, there is no external authority to handle the certificate validation when users connect to the web client site. Because of this, a certificate error will be displayed when users access the Dynamics GP web client site. To prevent the certificate error, users must import the security certificate onto their own machine. Refer to [Appendix A, “Importing a Self- signed Security Certificate,”](#_Importing_a_Self-signed_1) for details about importing a self-signed security certificate.  
 
 To use a self-signed security certificate
 
@@ -118,7 +118,7 @@ To use a self-signed security certificate
 
 ## Configuring the web site to use SSL
 
-The web site used for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client must be configured to use SSL. Before configuring the web site, be sure that you have imported an externally signed security certificate or have created a self-signed security certificate.
+The web site used for the Dynamics GP web client must be configured to use SSL. Before configuring the web site, be sure that you have imported an externally signed security certificate or have created a self-signed security certificate.
 
 To configure the web site for SSL
 
@@ -142,7 +142,7 @@ Click OK.
 
 ## Installing a security certificate on a server
 
-If you are setting up the scale out configuration for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation, the session host machines must have a security certificate that can be used when configuring the runtime session. You will also need to use these steps to install a security certificate in a Service Based Architecture only deployment. If you are using an externally signed security certificate, you will need to install the security certificate onto each session host machine so that the certificate is available to be used.
+If you are setting up the scale out configuration for the Dynamics GP web client installation, the session host machines must have a security certificate that can be used when configuring the runtime session. You will also need to use these steps to install a security certificate in a Service Based Architecture only deployment. If you are using an externally signed security certificate, you will need to install the security certificate onto each session host machine so that the certificate is available to be used.
 
 To install a security certificate
 

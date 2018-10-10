@@ -1,6 +1,6 @@
 ---
 title: "What's new in Dynamics GP 2016"
-description: "Learn about enhancements that were added to the product since the release of [!INCLUDE[prodshort](../includes/prodshort.md)] 2016. "
+description: "Learn about enhancements that were added to the product since the release of Dynamics GP 2016. "
 keywords: ""
 author: edupont04
 ms.author: edupont
@@ -14,13 +14,13 @@ ms.date: 09/05/2018
 
 # What’s new in Dynamics GP 2016
 
-The following sections describe enhancements included in [!INCLUDE[prodshort](../includes/prodshort.md)] 2016.
+The following sections describe enhancements included in Dynamics GP 2016.
 
 ## System-wide changes
 
 ### Web Client enhancements
 
-The user interface for the [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client has been refreshed to provide a more updated appearance. The banner in space now enables users to log in and log out, as well as indicating what company they’re logged into number of enhancements to the user experience.
+The user interface for the Dynamics GP Web Client has been refreshed to provide a more updated appearance. The banner in space now enables users to log in and log out, as well as indicating what company they’re logged into number of enhancements to the user experience.
 
 ### Support for additional browsers and mobile devices
 
@@ -114,7 +114,7 @@ When you import a budget from Excel, an exception report will list accounts that
 
 ### Scotia Bank EFT format added as a default EFT file format
 
-The electronic file format used by the Canada-based Scotia Bank is now one of the default EFT formats available in [!INCLUDE[prodshort](../includes/prodshort.md)]. Default formats are available for use in electronic transactions for both sales and purchases.
+The electronic file format used by the Canada-based Scotia Bank is now one of the default EFT formats available in Dynamics GP. Default formats are available for use in electronic transactions for both sales and purchases.
 
 ### Analytical Accounting user access settings
 

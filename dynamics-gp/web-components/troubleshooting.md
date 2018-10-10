@@ -16,7 +16,7 @@ ms.reviewer:
 
 # Troubleshooting
 
-Use the information in this chapter to help you troubleshoot issues you may have when you are installing or using the [!INCLUDE[prodshort](../includes/prodshort.md)] web client. The following topics are discussed:
+Use the information in this chapter to help you troubleshoot issues you may have when you are installing or using the Dynamics GP web client. The following topics are discussed:
 
 -   [Errors reported on the main page](#errors-reported-on-the-main-page)  
 
@@ -70,7 +70,7 @@ If you choose to use different security certificates for the web site and for th
 
 ## Port issues
 
-For the web client to work properly, the appropriate ports must be opened in the computer ’s firewall. The [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client installer opens the appropriate ports when components of the web client are installed. You can use the following command to list the ports that are open on a system:
+For the web client to work properly, the appropriate ports must be opened in the computer ’s firewall. The Dynamics GP Web Client installer opens the appropriate ports when components of the web client are installed. You can use the following command to list the ports that are open on a system:
 
 netstat - anob
 
@@ -84,7 +84,7 @@ In a typical installation of the web client, the performance of the web client i
 
 ### Session host performance
 
-To gauge the overall system performance, verify the performance that you see when you run the [!INCLUDE[prodshort](../includes/prodshort.md)] desktop client on each session host machine. If the desktop client does not have optimal performance, the web client sessions that are hosted on that machine will also have sub-optimal performance. When you resolve the desktop client performance issues, the web client performance should also improve.
+To gauge the overall system performance, verify the performance that you see when you run the Dynamics GP desktop client on each session host machine. If the desktop client does not have optimal performance, the web client sessions that are hosted on that machine will also have sub-optimal performance. When you resolve the desktop client performance issues, the web client performance should also improve.
 
 ### Real-time virus scanning
 
@@ -120,9 +120,9 @@ When a web client user prints a report that uses a Word template, and chooses to
 
 To solve this problem, perform one or both of these actions in the Internet Options window for Internet Explorer:
 
--   Display the Security tab. Add the URL for the [!INCLUDE[prodshort](../includes/prodshort.md)] web client site to the Trusted sites list.
+-   Display the Security tab. Add the URL for the Dynamics GP web client site to the Trusted sites list.
 
--   Reduce the security level for the specified zone. For example, if you are running the [!INCLUDE[prodshort](../includes/prodshort.md)] web client in an intranet setting, reduce the security level for the Local intranet zone.
+-   Reduce the security level for the specified zone. For example, if you are running the Dynamics GP web client in an intranet setting, reduce the security level for the Local intranet zone.
 
 ## Help not available
 

@@ -1,1 +1,1 @@
-[!INCLUDE[prodshort](../includes/prodshort.md)]
+Dynamics GP

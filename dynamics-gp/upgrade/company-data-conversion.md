@@ -1,6 +1,6 @@
 ---
 title: "Company data conversion"
-description: "Learn about the additional procedures to upgrade your tables before you can use [!INCLUDE[prodshort](../includes/prodshort.md)]."
+description: "Learn about the additional procedures to upgrade your tables before you can use Dynamics GP."
 keywords: "upgrade"
 author: edupont04
 ms.author: edupont
@@ -14,19 +14,19 @@ ms.reviewer:
 ---
 # Company data conversion
 
-After you’ve upgraded your software, you need to complete a number of additional procedures to upgrade your tables before you can use [!INCLUDE[prodshort](../includes/prodshort.md)]. To do this, you’ll use an application called [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities. Follow the instructions in this chapter to use [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities to upgrade tables on your server and client computers.
+After you’ve upgraded your software, you need to complete a number of additional procedures to upgrade your tables before you can use Dynamics GP. To do this, you’ll use an application called Dynamics GP Utilities. Follow the instructions in this chapter to use Dynamics GP Utilities to upgrade tables on your server and client computers.
 
-Before using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, be sure that you have installed the most current update for your [!INCLUDE[prodshort](../includes/prodshort.md)] system. You also should make a backup of your databases.
+Before using Dynamics GP Utilities, be sure that you have installed the most current update for your Dynamics GP system. You also should make a backup of your databases.
 
 <span id="_Toc498615793" class="anchor"></span>
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
 Tis chapter contains the following sections:
 
 -   [Enabling a DexSQL.log](#enabling-a-dexsql.log)  
 
--   [Upgrading [!INCLUDE[prodshort](../includes/prodshort.md)] tables](#upgrading-microsoft-dynamics-gp-tables)  
+-   [Upgrading Dynamics GP tables](#upgrading-microsoft-dynamics-gp-tables)  
 
 -   [Additional upgrade tasks](#additional-upgrade-tasks)  
 
@@ -46,9 +46,9 @@ If an error occurs during the upgrade process, you should change several setting
 
 To enable a DexSQL.log:
 
-You’ll have to restart [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities after you made the changes.
+You’ll have to restart Dynamics GP Utilities after you made the changes.
 
-1.  Open the Dex.ini file in the Data folder of the current [!INCLUDE[prodshort](../includes/prodshort.md)] folder.
+1.  Open the Dex.ini file in the Data folder of the current Dynamics GP folder.
 
 2.  Change the following statements to TRUE.
 
@@ -60,30 +60,30 @@ You’ll have to restart [!INCLUDE[prodshort](../includes/prodshort.md)] Utiliti
 
 3.  Save your changes.
 
-## Upgrading [!INCLUDE[prodshort](../includes/prodshort.md)] tables
+## Upgrading Dynamics GP tables
 
-Use this procedure to upgrade [!INCLUDE[prodshort](../includes/prodshort.md)] tables on your server computer using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities. You will not need to complete all of these procedures on subsequent computers. When you start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities for subsequent computers, the Additional Tasks window will immediately open, where you can complete additional tasks, such as upgrading your modified forms and reports. The process of upgrading tables may take some time.
+Use this procedure to upgrade Dynamics GP tables on your server computer using Dynamics GP Utilities. You will not need to complete all of these procedures on subsequent computers. When you start Dynamics GP Utilities for subsequent computers, the Additional Tasks window will immediately open, where you can complete additional tasks, such as upgrading your modified forms and reports. The process of upgrading tables may take some time.
 
-Detailed lists of the changes to all tables are available on the [!INCLUDE[prodshort](../includes/prodshort.md)] media. To access the table changes lists, install the Software Developers’ Kit from the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 media.
+Detailed lists of the changes to all tables are available on the Dynamics GP media. To access the table changes lists, install the Software Developers’ Kit from the Dynamics GP 2018 media.
 
-![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")If you are using Connector for Microsoft Dynamics, you must stop the Microsoft Dynamics Adapter Service on the server before starting [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities. The company database upgrade will fail if the Microsoft Dynamics Adapter Service is not stopped. Connector is not supported for Dynamics GP 2018, so it’s not necessary to restart the service after the service after the upgrade is complete.  
+![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")If you are using Connector for Microsoft Dynamics, you must stop the Microsoft Dynamics Adapter Service on the server before starting Dynamics GP Utilities. The company database upgrade will fail if the Microsoft Dynamics Adapter Service is not stopped. Connector is not supported for Dynamics GP 2018, so it’s not necessary to restart the service after the service after the upgrade is complete.  
 
-To upgrade [!INCLUDE[prodshort](../includes/prodshort.md)] tables:
+To upgrade Dynamics GP tables:
 
 1 Back up your system database and all company databases.
 
-2. Start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
+2. Start Dynamics GP Utilities.
 (Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities)
 
-3. In the Welcome to [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities window, verify your server name, enter the system administrator user ID and password, and click OK.
+3. In the Welcome to Dynamics GP Utilities window, verify your server name, enter the system administrator user ID and password, and click OK.
 
 ![login screen to dynamics gp utilities.](media/gp-utilities-2.png "Login screen")  
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You must be logged in as a system administrator to complete database and system functions within [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.  
+![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You must be logged in as a system administrator to complete database and system functions within Dynamics GP Utilities.  
 
-4. The Welcome To [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities window opens when you are logged into the server that you selected. Read the message and click Next.
+4. The Welcome To Dynamics GP Utilities window opens when you are logged into the server that you selected. Read the message and click Next.
 
-5. In the Upgrade [!INCLUDE[prodshort](../includes/prodshort.md)] window, click Next to upgrade your system database.
+5. In the Upgrade Dynamics GP window, click Next to upgrade your system database.
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")The Company Detail window opens if errors occurred while upgrading your system tables. You can use this window to view the errors.  
 
@@ -95,9 +95,9 @@ To upgrade [!INCLUDE[prodshort](../includes/prodshort.md)] tables:
 
 7. In the Confirmation window, click Finish.
 
-    [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities upgrades your company databases. This process may take several minutes to complete. The Server Installation Progress window describes the process as it progresses.
+    Dynamics GP Utilities upgrades your company databases. This process may take several minutes to complete. The Server Installation Progress window describes the process as it progresses.
 
-8. After the upgrade process is finished and is successful, the Additional Tasks window will open, where you can upgrade your forms and reports dictionaries, start [!INCLUDE[prodshort](../includes/prodshort.md)], or exit the installation. To upgrade your forms and reports dictionaries, see [Upgrading modified forms and reports](#upgrading-modified-forms-and-reports) on page 43 for more information. See the following sections for more detailed information about each task.
+8. After the upgrade process is finished and is successful, the Additional Tasks window will open, where you can upgrade your forms and reports dictionaries, start Dynamics GP, or exit the installation. To upgrade your forms and reports dictionaries, see [Upgrading modified forms and reports](#upgrading-modified-forms-and-reports) on page 43 for more information. See the following sections for more detailed information about each task.
 
 ![screen with list of tasks that open setup wizards.](media/gp-utilities-15.png "Task selector")  
 
@@ -105,7 +105,7 @@ If the upgrade process wasn’t successful, the Update Company Tables window ope
 
 ## Additional upgrade tasks
 
-You’ll use the following selections from the Additional Tasks window to upgrade your [!INCLUDE[prodshort](../includes/prodshort.md)] files.
+You’ll use the following selections from the Additional Tasks window to upgrade your Dynamics GP files.
 
 -   Re-add or Add sample company data
 
@@ -113,11 +113,11 @@ You’ll use the following selections from the Additional Tasks window to upgrad
 
 For more information about upgrading forms and reports, see [Upgrading modified forms and reports](#upgrading-modified-forms-and-reports) on page 43.  
 
-Start [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities if you haven’t already and follow the instructions in the [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities windows until you open the Additional Tasks window. The following procedures assume that the Additional Tasks window is open.
+Start Dynamics GP Utilities if you haven’t already and follow the instructions in the Dynamics GP Utilities windows until you open the Additional Tasks window. The following procedures assume that the Additional Tasks window is open.
 
 ## Re-adding sample company data
 
-If you’ve upgraded the sample company from a previous release, you can add the sample data again. If you’ve used the sample data in a previous release, you may want to re-add the data to practice procedures in [!INCLUDE[prodshort](../includes/prodshort.md)] 2018. If a [!INCLUDE[prodshort](../includes/prodshort.md)] feature is installed, the sample data for that feature will be included when adding or re-adding sample data. The process of reinstalling sample company data may take some time.
+If you’ve upgraded the sample company from a previous release, you can add the sample data again. If you’ve used the sample data in a previous release, you may want to re-add the data to practice procedures in Dynamics GP 2018. If a Dynamics GP feature is installed, the sample data for that feature will be included when adding or re-adding sample data. The process of reinstalling sample company data may take some time.
 
 If you are adding sample data again and haven’t previously deployed business components for the sample company, you can deploy business intelligence components, such as SQL Server Reporting Services reports.
 
@@ -153,7 +153,7 @@ SharePoint Integrated mode location example:
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration manager to verify the Report Server Mode being and the URL locations.  
 
-If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple [!INCLUDE[prodshort](../includes/prodshort.md)] instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must provide access to the folder.
+If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple Dynamics GP instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must provide access to the folder.
 
 6. Click Next.
 
@@ -165,7 +165,7 @@ If you have selected Native as the report server mode, you can enter the name of
 
 8. The Excel Reports Setup window appears if you marked to deploy Excel reports. Select the location to deploy the reports to.
 
-    If you have selected SharePoint as the location to deploy reports to, you can mark the Using SharePoint Online option if you are using Microsoft Office 365 and want to deploy Excel reports to a reports library in SharePoint Online 2010. Mark the Using SharePoint Online option to deploy reports only in the [!INCLUDE[prodshort](../includes/prodshort.md)] desktop client. Reports will not be deployed for the [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client.
+    If you have selected SharePoint as the location to deploy reports to, you can mark the Using SharePoint Online option if you are using Microsoft Office 365 and want to deploy Excel reports to a reports library in SharePoint Online 2010. Mark the Using SharePoint Online option to deploy reports only in the Dynamics GP desktop client. Reports will not be deployed for the Dynamics GP Web Client.
 
     Be sure to use back slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn’t end in a slash.
 
@@ -189,7 +189,7 @@ Network share location example:
 
 ## Adding sample company data
 
-If the sample company has never been installed before, you can add data for the sample company to your [!INCLUDE[prodshort](../includes/prodshort.md)] system to practice procedures. If a [!INCLUDE[prodshort](../includes/prodshort.md)] feature is installed, the sample data for that feature will be included when adding or re-adding sample data. The name of the sample company is Fabrikam, Inc. When you are adding the sample company, you can create LessonUser1 and LessonUser2 as sample users. These users will have access only to Fabrikam, Inc. The process of adding sample company data may take some time.
+If the sample company has never been installed before, you can add data for the sample company to your Dynamics GP system to practice procedures. If a Dynamics GP feature is installed, the sample data for that feature will be included when adding or re-adding sample data. The name of the sample company is Fabrikam, Inc. When you are adding the sample company, you can create LessonUser1 and LessonUser2 as sample users. These users will have access only to Fabrikam, Inc. The process of adding sample company data may take some time.
 
 When you create the sample company, you can deploy business intelligence components, such as SQL Server Reporting Services reports. If you deployed reports for your system database, you can use the default report locations for the sample company.
 
@@ -199,13 +199,13 @@ To add sample company data:
 
 2. In the Database Setup window, enter or accept the sample company database name and then select a default location for new files that will be created for the sample company.
 
-    TWO is the default sample company database name if the TWO database doesn’t exist. You can only create LessonUser1 and LessonUser2 as sample users for the TWO sample company database using the [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
+    TWO is the default sample company database name if the TWO database doesn’t exist. You can only create LessonUser1 and LessonUser2 as sample users for the TWO sample company database using the Dynamics GP Utilities.
 
     If the sample company database has a different name than TWO, you must use the User Setup window to create lesson users for the sample company and then use the User Access Setup window to set up user access to the sample company.
 
 3. In the Create Sample Users window, enter a password that will be used by the sample users, LessonUser1 and LessonUser2, to access the sample company. Reenter your password exactly as you previously entered it. Click Next.
 
-    The Create Sample Users window appears if you are creating sample users for the TWO sample company database. If the sample company database is not the TWO database, you will not be able to create sample users using [!INCLUDE[prodshort](../includes/prodshort.md)] Utilities.
+    The Create Sample Users window appears if you are creating sample users for the TWO sample company database. If the sample company database is not the TWO database, you will not be able to create sample users using Dynamics GP Utilities.
 
 4. In the Confirmation window, click Finish.
 
@@ -234,7 +234,7 @@ SharePoint Integrated mode location example:
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
 
-If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple [!INCLUDE[prodshort](../includes/prodshort.md)] instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must provide access to the folder.
+If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple Dynamics GP instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must provide access to the folder.
 
 7. Click Next.
 
@@ -246,7 +246,7 @@ If you have selected Native as the report server mode, you can enter the name of
 
 9. The Excel Reports Setup window appears if you marked to deploy Excel reports. Select the location to deploy the reports to.
 
-    If you have selected SharePoint as the location to deploy reports to, you can mark the Using SharePoint Online option if you are using Microsoft Office 365 and want to deploy Excel reports to a reports library in SharePoint Online 2010. Mark the Using SharePoint Online option to deploy reports only in the [!INCLUDE[prodshort](../includes/prodshort.md)] desktop client. Reports will not be deployed for the [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client.
+    If you have selected SharePoint as the location to deploy reports to, you can mark the Using SharePoint Online option if you are using Microsoft Office 365 and want to deploy Excel reports to a reports library in SharePoint Online 2010. Mark the Using SharePoint Online option to deploy reports only in the Dynamics GP desktop client. Reports will not be deployed for the Dynamics GP Web Client.
 
     Be sure to use back slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn’t end in a slash.
 
@@ -275,7 +275,7 @@ SharePoint location example
 
 ## Upgrading modified forms and reports
 
-You can use [!INCLUDE[prodshort](../includes/prodshort.md)] to upgrade the following types of information for modified forms and reports:
+You can use Dynamics GP to upgrade the following types of information for modified forms and reports:
 
 -   Fields where the data type has been changed are upgraded automatically on modified forms and reports.
 
@@ -283,25 +283,25 @@ You can use [!INCLUDE[prodshort](../includes/prodshort.md)] to upgrade the follo
 
 -   Fields that have been removed from tables are removed from corresponding forms and reports.
 
-In addition, similar changes are made to modified forms and reports for integrating applications. Consult the documentation for the integrating application for information about whether that application supports automatic form and report upgrades. If you are using Personal Data Keeper, see the [!INCLUDE[prodshort](../includes/prodshort.md)] technical support for information about synchronizing forms and reports.
+In addition, similar changes are made to modified forms and reports for integrating applications. Consult the documentation for the integrating application for information about whether that application supports automatic form and report upgrades. If you are using Personal Data Keeper, see the Dynamics GP technical support for information about synchronizing forms and reports.
 
 ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If your forms and reports dictionaries are in a shared location, you need only to perform this procedure once.  
 
 To upgrade modified forms and reports:
 
-1. Make a backup of each reports dictionary or forms dictionary to upgrade. The name of the reports dictionary for [!INCLUDE[prodshort](../includes/prodshort.md)] is Reports.dic and the name of the forms dictionary for [!INCLUDE[prodshort](../includes/prodshort.md)] is Forms.dic.
+1. Make a backup of each reports dictionary or forms dictionary to upgrade. The name of the reports dictionary for Dynamics GP is Reports.dic and the name of the forms dictionary for Dynamics GP is Forms.dic.
 
-2. Open the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 launch file (Dynamics.set) and verify that the paths to the modified reports and forms are correct. The paths must be the location of the reports dictionary and forms dictionary from the previous release.
+2. Open the Dynamics GP 2018 launch file (Dynamics.set) and verify that the paths to the modified reports and forms are correct. The paths must be the location of the reports dictionary and forms dictionary from the previous release.
 
 3. In the Additional Tasks window, select Update modified forms and reports and click Process. The Locate Launch File window appears.
 
-4. Select the [!INCLUDE[prodshort](../includes/prodshort.md)] 2018 launch file (Dynamics.set) that you use to start [!INCLUDE[prodshort](../includes/prodshort.md)] on this client, then click Next. The Update Modified Forms and Reports window appears.
+4. Select the Dynamics GP 2018 launch file (Dynamics.set) that you use to start Dynamics GP on this client, then click Next. The Update Modified Forms and Reports window appears.
 
-5. Select [!INCLUDE[prodshort](../includes/prodshort.md)] and any additional components whose modified forms and reports dictionaries you’re upgrading.
+5. Select Dynamics GP and any additional components whose modified forms and reports dictionaries you’re upgrading.
 
 6. For each component, choose the Details button, if necessary, to open the Product Details window, where you can select the location of the original dictionary, such as Dynamics.dic or HR.dic. Click OK in the Product Details window.
 
-The original dictionary is the application dictionary from the previous release of [!INCLUDE[prodshort](../includes/prodshort.md)]. After all forms and reports dictionaries have been upgraded, you can delete the original dictionary.![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")  
+The original dictionary is the application dictionary from the previous release of Dynamics GP. After all forms and reports dictionaries have been upgraded, you can delete the original dictionary.![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")  
 
 7. In the Update Modified Forms and Reports window, click Update.
 
@@ -313,9 +313,9 @@ The original dictionary is the application dictionary from the previous release 
 
 ## Managing the Web Client SQL Server login
 
-Use the Manage Web Client SQL Server Login window to create or modify a SQL Server login for [!INCLUDE[prodshort](../includes/prodshort.md)] Web Client. By using the single Web Client SQL Server login, each web client user can access the web client by providing their standard Windows login credentials instead of using their own SQL Server login.
+Use the Manage Web Client SQL Server Login window to create or modify a SQL Server login for Dynamics GP Web Client. By using the single Web Client SQL Server login, each web client user can access the web client by providing their standard Windows login credentials instead of using their own SQL Server login.
 
-During the initial [!INCLUDE[prodshort](../includes/prodshort.md)] installation, you can create the SQL Server login. Each web client session can use the login to access SQL Server.
+During the initial Dynamics GP installation, you can create the SQL Server login. Each web client session can use the login to access SQL Server.
 
 To manage the Web Client SQL Server login:
 
@@ -342,8 +342,8 @@ After the upgrade or if the upgrade fails, the Update Company Tables window will
 
 If no icon appears between the check box and the name of the company, the company needs to be upgraded.
 
-If errors do occur, download the Failed\_Tables\_List.txt script from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>, and save it to your hard disk. Copy all of the contents of the script and paste the contents them into Microsoft SQL Server Management Studio. Run the script and save the results to a file before you contact [!INCLUDE[prodshort](../includes/prodshort.md)] for further assistance.
+If errors do occur, download the Failed\_Tables\_List.txt script from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>, and save it to your hard disk. Copy all of the contents of the script and paste the contents them into Microsoft SQL Server Management Studio. Run the script and save the results to a file before you contact Dynamics GP for further assistance.
 
 You also should have the results of the DexSQL.log file ready, as well, if you decided to use the DexSQL.log file. (The DexSQL.log file is located in the same folder as the Dex.ini file.)
 
-If warnings appear for temporary files or for modules that the company does not currently use, the warnings can be ignored. If warnings appear for modules that the company currently uses, note the warnings. You can attempt the upgrade again or contact [!INCLUDE[prodshort](../includes/prodshort.md)] Technical Support for further assistance.
+If warnings appear for temporary files or for modules that the company does not currently use, the warnings can be ignored. If warnings appear for modules that the company currently uses, note the warnings. You can attempt the upgrade again or contact Dynamics GP Technical Support for further assistance.

@@ -16,17 +16,17 @@ ms.reviewer:
 
 # Importing a Self-signed Security Certificate
 
-When you are using a self-signed security certificate, there is no certificate authority available to verify the certificate. If you use another computer to connect to the [!INCLUDE[prodshort](../includes/prodshort.md)] web client installation that is using a self-signed security certificate, you will see a certificate error displayed in the web browser.
+When you are using a self-signed security certificate, there is no certificate authority available to verify the certificate. If you use another computer to connect to the Dynamics GP web client installation that is using a self-signed security certificate, you will see a certificate error displayed in the web browser.
 
 ![shows the error page in a browser when a dynamics gp deployment uses a certificate with a problem.](media/manage-certificate-error.png "Certificates")  
 
-If the same self-signed security certificate is used for both the web site and for the web client runtime service, the certificate error can prevent you from successfully logging into the [!INCLUDE[prodshort](../includes/prodshort.md)] web client. The solution is to import the security certificate into the machine that will be accessing the web client. This appendix describes how to do this. First, you must retrieve the security certificate from the server, and then you must install the certificate onto your local machine.
+If the same self-signed security certificate is used for both the web site and for the web client runtime service, the certificate error can prevent you from successfully logging into the Dynamics GP web client. The solution is to import the security certificate into the machine that will be accessing the web client. This appendix describes how to do this. First, you must retrieve the security certificate from the server, and then you must install the certificate onto your local machine.
 
 To retrieve the security certificate
 
-1. Open Internet Explorer on the computer that will be used to connect to the [!INCLUDE[prodshort](../includes/prodshort.md)] web client.
+1. Open Internet Explorer on the computer that will be used to connect to the Dynamics GP web client.
 
-2. Connect to the [!INCLUDE[prodshort](../includes/prodshort.md)] web client site. The browser will display a message indicating that there is a problem with the web site’s security certificate. Click Continue to this website.
+2. Connect to the Dynamics GP web client site. The browser will display a message indicating that there is a problem with the web site’s security certificate. Click Continue to this website.
 
 3. The URL area of the browser you will appear in red, indicating a security certificate error. Click Certificate error to display the details of the error.
 
