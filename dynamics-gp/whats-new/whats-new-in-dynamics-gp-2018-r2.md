@@ -36,10 +36,10 @@ Also, a new field,  **Use last day of the month** has been added underneath the 
 
 To open these windows, on the Microsoft Dynamics GP menu, point to **Transactions**, choose the relevant area, and then click **Batches**.  
 
-> ![NOTE]
+> [!NOTE]
 > In earlier versions of Dynamics GP, the next posting date associated with a monthly batch frequency defaulted to 30 days from the previous posting date. Similarly, the next posting date associated with a bi-monthly batch frequency defaults to 60 days from the previous posting date.  
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > The first time a user enters transactions associated with a batch marked to **Use the last day of the month**, the **Document Date** field for those transactions will default to the value of the **GP User Date** (shown in the lower left hand corner of Dynamics GP). As such, if users want the document date to match the posting date, they must update the **Document Date** field accordingly in the **Transaction Entry** window. For every recurrence after the first posting, Dynamics GP will automatically update the transaction document dates to match the posting date that is associated with the recurring batch.  
 
 ### Exclude items on the HITB report with zero quantity or value
@@ -55,7 +55,7 @@ To select these options in the Inventory Activity Reporting Options window, go t
 |Items With Zero Quantity |Selecting this option will include inventory items on the Historical Inventory Trial Balance even if they have 0 quantity. If this option is not marked, then inventory items that do not have quantity will not be printed on the report. |
 |Items With Zero Value  |Selecting this option will include inventory items on the Historical Inventory Trial Balance even if they have 0 value.  If this option is not marked, then inventory items that do not have value will not be printed on the report. |
 
-> ![NOTE]
+> [!NOTE]
 > Item with 0 quantity and 0 value that do not have any transaction history in the SEE30303 (Inventory Transaction History Detail) table will not be included on the report regardless of selection.
 
 
@@ -91,7 +91,7 @@ For each of the different types of master records, Dynamics GP checks that the r
 
 Options with the names **Inactivate** and **Reactivate** have been added to the **Modify** section of the **Accounts Navigation List**,  **Checkbooks Navigation List**, **Customers Navigation List**, **Salespeople Navigation List**, **Vendors Navigation List**, **Items Navigation List**, and **Employees Navigation List** windows.  
 
-> ![NOTE]
+> [!NOTE]
 > Employees must be inactivated/reactivated one at a time. If more than one Employee ID is selected, the **Inactivate** and **Reactivate** options are grayed out. When a user clicks the **Inactivate** or **Reactivate** option, the **Employee Maintenance** window will automatically open.  
 
 ### Payroll check register FICA totals
@@ -130,9 +130,8 @@ For example, if you have a quantity of 70 of the item *128 SDRAM* on a requisiti
 
 If you drill back on the transaction in the **Purchase Requisition Inquiry** zoom, there will be a red icon as a visual indicator to show that the quantity was only partially ordered.  
 
-> ![NOTE]
+> [!NOTE]
 > Historic purchase requisitions will have a status of **Partially Purchased** to reflect that part of the original quantity on the requisition was canceled during the purchase process. By clicking on the link button next to **Quantity Ordered**, you can see the partial quantity that is on the purchase order and the quantity not purchased what was canceled.  
-   
 
 ### Add vendor document number to Purchasing All-in-One View
 
@@ -187,7 +186,7 @@ With Dynamics GP 2018 R2, there is a new option when printing documents from the
 
 We have added the ability to both print and email sales documents at the same time in three areas. This feature will be useful in allowing you to print and email sales invoices all in one process. Previously you would have been required to print the document or range of documents, and then once that process was completed, you would have to go back into the window, mark the documents again and email the documents.  
 
-> ![NOTE]
+> [!NOTE]
 > Email functionality is dependent on Word Templates being enabled and properly configured in your company.  
 
 In the **Sales Document Print Options** and **Print Sales Document** windows, new fields specify if you want to print or email the document. In the **Sales Order Transactions Navigation List** window, when you choose the action to send a transaction in email, you can now choose to print a copy.  

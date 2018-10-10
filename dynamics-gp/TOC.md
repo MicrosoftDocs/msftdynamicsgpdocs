@@ -9,7 +9,7 @@
 ### [What's new in Dynamics GP 2016](whats-new/whats-new-in-dynamics-gp-2016.md)
 ### [What's new in Dynamics GP 2015](whats-new/whats-new-in-dynamics-gp-2015.md)
 
-<!--- installation-->
+<!--- installation
 ## Installation
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)
@@ -28,7 +28,7 @@
 #### [Creating an installation package](installation/creating-an-installation-package.md)
 #### [Installing Dynamics GP on subsequent computers](installation/installing-dynamics-gp-on-subsequent-computers.md)
 
-<!--- web components-->
+<!--- web components
 ## Web components
 ### [Introduction](web-components/introduction.md)
 ### [Glossary](web-components/glossary.md)
@@ -59,7 +59,7 @@
 #### [Single machine upgrade](web-components/single-machine-upgrade.md)
 #### [Scale out upgrade](web-components/scale-out-upgrade.md)
 
-<!--- upgrade-->
+<!--- upgrade
 ## Upgrade
 ### [Introduction](upgrade/introduction.md)
 ### Preparation
@@ -71,4 +71,4 @@
 #### [Install Dynamics GP on the first computer](upgrade/install-dynamics-gp-on-the-first-computer.md)
 #### [Install Dynamics GP on subsequent computers](upgrade/install-dynamics-gp-on-subsequent-computers.md)
 #### [Installation package](upgrade/install-dynamics-gp-on-the-first-computer.md)
-
+-->
