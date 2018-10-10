@@ -40,7 +40,7 @@
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "searchScope": ["DynamicsGP"],
       "titleSuffix": "Dynamics GP",
-      "breadcrumb_path": "/dynamics-gp/breadcrumbs/toc.json",
+      "breadcrumb_path": "/dynamics-gp/breadcrumb/toc.json",
       "extendBreadcrumb": true
 },
     "fileMetadata": {},
