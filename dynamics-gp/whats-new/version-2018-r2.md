@@ -316,4 +316,4 @@ SET Visible = 0
 WHERE SectionID = 2
 ```
 
-For more information, see [Frequently Asked Questions about Connecting to the Intelligent Cloud](dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud) in the docs for Dynamics 365 Business Central.
+For more information, see [Frequently Asked Questions about Connecting to the Intelligent Cloud](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud) in the docs for Dynamics 365 Business Central.
