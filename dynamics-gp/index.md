@@ -27,8 +27,8 @@ The articles in this section use the following symbols and conventions to make s
 
 | Symbol  | Description  |
 |-----------|--|
-| ![displays a lightbulb to indication tips and tricks](installation/media/lightbulb.png "Lightbulb symbol") | The light bulb symbol indicates helpful tips, shortcuts and suggestions.                         |  
-| ![displays a triangle with an exclamation point to indicate warning](installation/media/warning.png "Warning symbol") | The warning symbol indicates situations you should be especially aware of when completing tasks. |  
+| ![displays a lightbulb to indication tips and tricks](whats-new/media/lightbulb.png "Lightbulb symbol") | The light bulb symbol indicates helpful tips, shortcuts and suggestions.                         |  
+| ![displays a triangle with an exclamation point to indicate warning](whats-new/media/warning.png "Warning symbol") | The warning symbol indicates situations you should be especially aware of when completing tasks. |  
 
 | Convention   | Description   |
 |-|---|
@@ -42,28 +42,28 @@ A number of resources are available to help in addition to this document.
 
 ### Knowledge Base
 
-(<https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx>)
+<https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx>
 
 Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
 
 ### eSupport
 
-(<https://mbs.microsoft.com/support/newstart.aspx>)
+<https://mbs.microsoft.com/support/newstart.aspx>
 
 For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.
 
 ### Community
 
-(<https://mbs.microsoft.com/customersource/communities/>)
+<https://mbs.microsoft.com/customersource/communities/>
 
 Start a year-end discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.
 
-### [!INCLUDE[prodshort](includes/prodshort.md)] support team
+### Dynamics GP support team
 
 We have specialized support teams focused on providing service and support to our Human Resources/Payroll customers. If you have Human Resources/Payroll questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code.
 
 ### Send us your suggestions
 
-We welcome comments regarding the usefulness of the [!INCLUDE[prodshort](includes/prodshort.md)]. If you have specific suggestions or encounter problems, let us know on the [Connect for Microsoft Dynamics](https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
+We welcome comments regarding the usefulness of the Dynamics GP. If you have specific suggestions or encounter problems, let us know on the [Connect for Microsoft Dynamics](https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
 
 An email address was available in previous versions to provide an option for contacting us about the documentation. Both <adocs@microsoft.com> and <bizdoc@microsoft.com> have been decommissioned.
