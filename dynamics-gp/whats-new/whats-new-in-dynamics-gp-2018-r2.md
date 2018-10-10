@@ -48,6 +48,17 @@ Additional options are added to the **Historical Inventory Trial Balance** repor
 
 ![Shows the window for the historical trial balance details report.](media/2018R2_HITB.png "HITB report")  
 
+To select these options in the Inventory Activity Reporting Options window, go to the Reports Menu point to Inventory, click on Activity and click on the New or Modify button.   In this window you will see two new options which can be selected individually or both at the same time as described in the following table:
+
+|Option  |Description|
+|---------|---------|
+|Items With Zero Quantity |Selecting this option will include inventory items on the Historical Inventory Trial Balance even if they have 0 quantity. If this option is not marked, then inventory items that do not have quantity will not be printed on the report. |
+|Items With Zero Value  |Selecting this option will include inventory items on the Historical Inventory Trial Balance even if they have 0 value.  If this option is not marked, then inventory items that do not have value will not be printed on the report. |
+
+> ![NOTE]
+> Item with 0 quantity and 0 value that do not have any transaction history in the SEE30303 (Inventory Transaction History Detail) table will not be included on the report regardless of selection.
+
+
 ### Transaction level post through G/L
 
 Users can now post through the general ledger at the transaction level in several windows. A new option has been added to **Posting Setup** to allow transactions to post through the general ledger if marked to post through.  
@@ -56,9 +67,32 @@ Users can now post through the general ledger at the transaction level in severa
 
 ### Duplicate check numbers
 
-In the **Checkbook Maintenance** window, you can now allow bank transaction entry, payroll manual checks, and miscellaneous checks.  
+You can now prevent or enable the use of duplicate check numbers by setting or clearing the **Duplicate Check Numbers** field in the **Checkbook Maintenance** window. If the field is cleared, then Dynamics GP will prevent users from using a duplicate check number in the **Bank Transaction Entry**, **Miscellaneous Checks**, and **Payroll Manual Check-Adjustment Entry** windows.  
 
 ![Shows the window for Check Maintenance.](media/2018R2_CheckMaintenance.png "Check Maintenance")  
+
+If the check number has already been used, the user will receive the following error: "This check number has been used". The user will have to enter an unused check number to successfully post the transaction.  
+
+### Don't display inactive checkbooks in lookup
+
+Users can choose to exclude inactive checkbooks in the **Checkbooks Lookup** window with this new feature in Dynamics GP 2018 R2. We are simplifying the default checkbook on batches and making the lookup easier with an option to not see inactive checkbooks.  
+
+The new action is added as a view in the **Checkbooks Lookup** window. To exclude inactive checkbook IDs,choose the black drop-down arrow next to **View**, and then choose **Exclude Inactive Checkbooks**. To save as the default view, simply choose **Set as Default View** in the same list. The **Checkbooks Lookup** window can be accessed from any window in Dynamics GP that has a **Checkbook ID** field with a magnifying glass next to it.  
+
+The **Default View** field in the ASIEXP99 table (DYNAMICS database) will be set to *2* when **Exclude Inactive Checkbooks** is the default view. There are no changes to table structure with this new functionality.  
+
+### Mark master records as inactivate or reactivated from navigation lists
+
+In Dynamics GP 2018 R2, users can inactive and reactivate master records for accounts, checkbooks, customers, sales people, vendors, employees, and items from Navigation Lists. Additionally, users can inactive one employee at a time from navigation lists.  
+
+The **Inactivate** option becomes available when the user has selected one or more master records on the navigation list. The **Reactivate** option becomes available when the user has selected one or more inactive master records on the navigation list. If a master record is marked as inactive, a visual indicator shows to the right of the *Select* checkbox on the navigation list to indicate that the record is blocked.  
+
+For each of the different types of master records, Dynamics GP checks that the record meets the relevant criteria to be marked as inactive. The **Inactivate** option follows existing rules and logic in Dynamics GP for each master record type. Users will be notified if the change succeeded or failed through the yellow status bar at the top of the list. If the record could not be marked as inactive or reactivated, users can print a **Status Message Detail** report to get more information around why the change failed.  
+
+Options with the names **Inactivate** and **Reactivate** have been added to the **Modify** section of the **Accounts Navigation List**,  **Checkbooks Navigation List**, **Customers Navigation List**, **Salespeople Navigation List**, **Vendors Navigation List**, **Items Navigation List**, and **Employees Navigation List** windows.  
+
+> ![NOTE]
+> Employees must be inactivated/reactivated one at a time. If more than one Employee ID is selected, the **Inactivate** and **Reactivate** options are grayed out. When a user clicks the **Inactivate** or **Reactivate** option, the **Employee Maintenance** window will automatically open.  
 
 ### Payroll check register FICA totals
 
@@ -90,9 +124,21 @@ The Checkbook ID defaults in when you create a computer check batch. Set up the 
 
 When you create a purchase order, you can now enter a quantity that is less than the total quantity requested. This is also possible if you create a purchase order from one or more requisitions.  
 
+When you create a purchase order from one or more purchase requisitions, you now have the option to purchase a quantity less than what was initially requested in the **Purchase Order Preview** window. The remaining quantity on the requisition will then be canceled.  
+
+For example, if you have a quantity of 70 of the item *128 SDRAM* on a requisition, but you only want to purchase 35 items, you can now adjust that quantity in the **Purchase Order Preview** window. When you adjust the **Qty To Purchase** field to 35, you receive a warning that the remaining quantity ordered will be cancelled. When the purchase order is generated, the purchase requisition will move to history if all lines on the requisition have been fully or partially ordered with the remaining quantity on the partially ordered lines cancelled.  
+
+If you drill back on the transaction in the **Purchase Requisition Inquiry** zoom, there will be a red icon as a visual indicator to show that the quantity was only partially ordered.  
+
+> ![NOTE]
+> Historic purchase requisitions will have a status of **Partially Purchased** to reflect that part of the original quantity on the requisition was canceled during the purchase process. By clicking on the link button next to **Quantity Ordered**, you can see the partial quantity that is on the purchase order and the quantity not purchased what was canceled.  
+   
+
 ### Add vendor document number to Purchasing All-in-One View
 
-The vendor's document number now shows in the **Purchasing All-in-One Document View**.  
+The vendor's document number now shows in the **Purchasing All-in-One Document View**. With the release of Microsoft Dynamics GP 2018 R2, users can now view the **Applied-To Document Number** that is associated with payments, credit memos, and returns in the **Purchasing All-In-One View** window.  The all-in-one view is great for viewing related documents but most times the vendor document number is the one known, not the document number. Therefore, it has been added in the payments and credit documents columns for easy reference.  
+
+To open the **Purchasing All-In-One View** window, in the Dynamics GP menu, point to **Inquiry**, choose **Purchasing**, and choose **Purchasing All-In-One View**. To view the document number of an invoice, fFinance charge, or miscellaneous change, simply click the black arrow in the lower right-hand corner of the payment, return, or credit memo to expand the view.  
 
 ![Shows the external document number in the all-in-one view.](media/2018R2_ExtDocNo.png "External Document No.")  
 
@@ -102,7 +148,7 @@ A new option to send a purchase order as an email using the format "Other format
 
 ### Warning when the vendor is on hold
 
-If you are entering a payables transaction for a vendor that is marked as on hold, you now get a warning.  
+If you are entering a payables transaction for a vendor that is marked as on hold, you now get a warning. This is similar to the customer hold status that was implemented in an earlier version of Dynamics GP. Additionally, Dynamics GP throws a warning message when a user attempts to enter a transaction when the vendor is on hold.  
 
 ![Display vendor hold status.](media/2018R2_VendorOnHold.png "Vendor On Hold")  
 
@@ -113,7 +159,38 @@ You can see the vendor hold status in the following pages:
 - Purchasing All-in-One Viewer
 - Payables Transaction Entry Zoom
 
-### Don't display Inactive checkbooks in Lookup
+In these windows, a red dot now displays next to the vendor name or ID if the vendor is on hold.  
+
+## Sales
+
+A number of updates have been made to the sales area in Dynamics GP.  
+
+### Retain Ship-To-Address Name with Customer Modifier
+
+In Dynamics GP 2018 R2, the **Ship-To-Address Name** value is retained when a customer is modified with the **Customer Combiner and Modifier Utility**. To open the **Customer Combiner and Modifier Utility**, in the Dynamics GP menu,choose **Tools**, point to **Utilities**, choose **Sales**, and then choose **Customer Combiner and Modifier**.  
+
+The **Ship-To-Address Name** field is shown in the **Customer Address Maintenance** window. To open the **Customer Address Maintenance** window, in the Dynamics GP menu, choose **Cards**, point to **Sales**, and then choose **Addresses**.  
+
+### New SmartList for deposits associated with unposted sales transactions
+
+In Dynamics GP 2018 R2, users can easily view deposit amounts associated with unposted sales invoices and orders through the new **Deposits on Unposted Sales Transactions** SmartList. This SmartList is a new option under Sales Transactions so you can quickly see customers that have put a deposit on a sales transaction, but the sales transaction hasn't been posted. No more searching through the sales records to see the deposits, now you have a new SmartList to view the details. This new default SmartList is filtered to look at Sales Order WORK transactions (SOP10100) with a **Deposit Received** amount (DEPRECVD field) greater than zero.  
+
+## Distribution
+
+A number of updates have been made to the distribution area in Dynamics GP.  
+
+### Sales Order Transaction Navigation List-Print Document option for Functional or Originating Currency
+
+With Dynamics GP 2018 R2, there is a new option when printing documents from the **Sales Order Transactions Navigation List** window that allows you to choose if you want to print the document in the Originating or Functional currency. In the **Currency to Print** field, a new option for **Functional** lets you print the invoice in the customer's currency. This saves time since you don't have to navigate to the historical window to print the document. The default currency is still *Originating* but now you have the option to print in *Functional* currency from the navigation list. After you mark a document or documents on the **Sales Order Transactions Navigation List** window, you can select the **Print Documents** action dropdown on the Action Pane. In this window you will see a new option labeled **Currency To Print**.  
+
+### Print and email sales documents at the same time
+
+We have added the ability to both print and email sales documents at the same time in three areas. This feature will be useful in allowing you to print and email sales invoices all in one process. Previously you would have been required to print the document or range of documents, and then once that process was completed, you would have to go back into the window, mark the documents again and email the documents.  
+
+> ![NOTE]
+> Email functionality is dependent on Word Templates being enabled and properly configured in your company.  
+
+In the **Sales Document Print Options** and **Print Sales Document** windows, new fields specify if you want to print or email the document. In the **Sales Order Transactions Navigation List** window, when you choose the action to send a transaction in email, you can now choose to print a copy.  
 
 ## Sales Optimization
 
