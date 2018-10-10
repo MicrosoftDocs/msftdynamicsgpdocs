@@ -48,7 +48,7 @@ Additional options are added to the **Historical Inventory Trial Balance** repor
 
 ![Shows the window for the historical trial balance details report.](media/2018R2_HITB.png "HITB report")  
 
-To select these options in the Inventory Activity Reporting Options window, go to the Reports Menu point to Inventory, click on Activity and click on the New or Modify button.   In this window you will see two new options which can be selected individually or both at the same time as described in the following table:
+To select these options in the **Inventory Activity Reporting Options** window, go to the **Reports** menu, point to **Inventory**, choose **Activity**, and the choose the New or Modify button. In this window, you will see two new options which can be selected individually or both at the same time as described in the following table:
 
 |Option  |Description|
 |---------|---------|
@@ -57,7 +57,6 @@ To select these options in the Inventory Activity Reporting Options window, go t
 
 > [!NOTE]
 > Item with 0 quantity and 0 value that do not have any transaction history in the SEE30303 (Inventory Transaction History Detail) table will not be included on the report regardless of selection.
-
 
 ### Transaction level post through G/L
 
@@ -94,9 +93,6 @@ Options with the names **Inactivate** and **Reactivate** have been added to the 
 > [!NOTE]
 > Employees must be inactivated/reactivated one at a time. If more than one Employee ID is selected, the **Inactivate** and **Reactivate** options are grayed out. When a user clicks the **Inactivate** or **Reactivate** option, the **Employee Maintenance** window will automatically open.  
 
-### Payroll check register FICA totals
-
-The report has employee and employer FICA amounts and a total for both.  
 
 ### Start date/end date for pay code  
 
@@ -143,7 +139,12 @@ To open the **Purchasing All-In-One View** window, in the Dynamics GP menu, poin
 
 ### Send a purchase order using another template
 
-A new option to send a purchase order as an email using the format "Other format" has been added to the purchase order entry and in the Purchase Order Inquiry Zoom.  
+A new option to send a purchase order as an email using the format "Other format" has been added to the **Purchase Order Entry** and **Purchase Order Inquiry Zoom** windows. this means that users can choose if they want to email the Blank Paper or the Other form. This can be useful if you are using different purchase order formats depending on the type of vendor that the purchase order is being emailed to.  
+
+After selecting a purchase order format, you can click the Send button at the bottom of the window. The vendor's email address and the message ID entered on the purchase order transaction will be used and the email will be sent in the format selected.  
+
+> [!NOTE]
+> Email functionality is dependent on Word Templates being enabled and properly configured in your company.  
 
 ### Warning when the vendor is on hold
 
@@ -174,9 +175,9 @@ The **Ship-To-Address Name** field is shown in the **Customer Address Maintenanc
 
 In Dynamics GP 2018 R2, users can easily view deposit amounts associated with unposted sales invoices and orders through the new **Deposits on Unposted Sales Transactions** SmartList. This SmartList is a new option under Sales Transactions so you can quickly see customers that have put a deposit on a sales transaction, but the sales transaction hasn't been posted. No more searching through the sales records to see the deposits, now you have a new SmartList to view the details. This new default SmartList is filtered to look at Sales Order WORK transactions (SOP10100) with a **Deposit Received** amount (DEPRECVD field) greater than zero.  
 
-## Distribution
+### Additional sort options in Sales Order Processing Item Inquiry
 
-A number of updates have been made to the distribution area in Dynamics GP.  
+In the **Sales Order Processing Item Inquiry** window, a new field with sort options has been added to the window so that you can change the display within the scrolling window. The sort options include Item Number, Document Number, Document Type, Document Date, and Customer ID. Item Number will be the default sort when the window is opened.
 
 ### Sales Order Transaction Navigation List-Print Document option for Functional or Originating Currency
 
@@ -191,23 +192,128 @@ We have added the ability to both print and email sales documents at the same ti
 
 In the **Sales Document Print Options** and **Print Sales Document** windows, new fields specify if you want to print or email the document. In the **Sales Order Transactions Navigation List** window, when you choose the action to send a transaction in email, you can now choose to print a copy.  
 
-## Sales Optimization
+### Email customer statements
 
-Print Invoice in Functional from SOP Navigation List
-Sales Transaction Workflow 
-Print and email SOP document at the same time
-Customer/Combiner retain ship to addresses
-Additional Sort options in SOP Item Inquiry 
-Email customer statements
+In the **Customer Maintenance** window, you can now email statements with the click of a button. A new email button can be found on the Menu bar of the **Customer Maintenance** window.  
 
-## Top Feature Requests
+When you click the email button, Dynamics GP will email a customer statement to the customer that you have selected in the window. The settings from your 'BLANK FORM' statement ID will be used for this functionality. If a Statement ID of 'BLANK FORM' does not already exist in your company, then Dynamics GP will create a new Statement ID with the name 'BLANK FORM' with the following settings:
 
-Hide Business Analyzer for all users 
-SmartList Designer Favorites display in navigation lists
-Mass update inactive from navigation list
-Increase Dynamics GP password maximum length
-Password expiration notification
-Web client with workflow org accounts (June tax release) 
-SmartList for Deposits on Unposted Documents 
-SmartList Letter Writing Assistant in web client 
+|Field |Value  |
+|---------|---------|
+|Date to Print |End of Month |
+|Form  |On Blank Paper Print |
+|For|All Options Marked|
 
+> [!NOTE]
+> Email functionality is dependent on Word Templates being enabled and properly configured in your company.  
+
+## Human resources & payroll enhancements
+A number of updates have been made to the HR and payroll areas in Dynamics GP.  
+
+### Payroll check register FICA totals
+
+The report has employee and employer FICA amounts and a total for both. The following FICA totals have been added to the **Payroll Check Register** report: 
+FICA Medicare = Employee FICA Medicare total + Employer FICA Medicare total
+FICA Social Security = Employee Social Security total + Employer Social Security total
+
+In earlier versions of Dynamics GP, the **Employee Medicare** and **Employer Medicare** values were totaled separately. Additionally, the **Employee Social Security** and **Employer Social Security** values were totaled separately.  
+
+### Changes to Payroll Check Register Report
+
+Two new calculated fields added to the **Payroll Check Register** report to accommodate the ability to view these totals: **FICA Med Total Owed**, **FICA Soc Total Owed**. The **Payroll Check Register** report can be printed after checks are 'calculated' (pre-posting report), and/or during the Payroll Computer Check posting process.  
+
+> [!NOTE]
+> If you are printing a modified version of this report, you may not see the new fields, you will need to set your security back to the original report to see this new feature.
+
+### Start and end dates for pay codes
+
+With the release of Dynamics GP 2018 R2, users can assign a start date and/or an end date to pay codes in the **Employee Maintenance** window. This functionality is similar to the start/end dates that are already used for benefits and deductions in the Payroll module. This new feature will allow users to setup new pay codes without having to worry about when to start using them, or when to inactivate those they no longer wish to use. This will be very useful to you when you are activating a new hire and terminating an existing salary employee.  
+
+> [!NOTE]
+> In earlier versions of Dynamics GP, it was not possible to restrict whether a pay code is included in a pay run via start and/or end dates. Instead, users would generally 'inactive' a pay code (most often a salary type pay code) to ensure it's not included in a pay run.
+
+The **Start Date** and **End Date** fields are not required in the **Employee Pay Code Maintenance** window. The following table describes the effect of the settings of these fields:
+
+|Settings|Effect  |
+|---------|---------|
+|Both the **Start Date** and **End Date** fields are empty | There are no date restrictions for the pay code, and Dynamics GP will treat the pay code as it did in earlier versions.|
+|**Start Date** is set|Dynamics GP will check if the **Start Date** field in the **Employee Pay Code Maintenance** window falls on or after the date in the **Pay Period From Date** field in the **Build Payroll Checks** window.|
+|**End Date** is set|Dynamics GP will check if the **End Date** field in the **Employee Pay Code Maintenance** window falls on or before the date in the **Pay Period To Date** field in the **Build Payroll Checks** window.|
+|Both the **Start Date** and **End Date** fields are set|Dynamics GP will check if the **Start Date** field in the **Employee Pay Code Maintenance** window falls on or after the date in the **Pay Period From Date** field in the **Build Payroll Checks** window, and if the **End Date** field in the **Employee Pay Code Maintenance** window falls on or before the date in the **Pay Period To Date** field in the **Build Payroll Checks** window.|
+
+The **Payroll Transaction Entry** window has been updated to accommodate the new start and end dates for pay codes. When a user enters transactions for a pay code, and the **Pay Period From** and **Pay Period To** dates do not fall on or between the pay code start/end dates, the pay code will not be available in the **Pay Code Lookup** window. Also, Dynamics GP will generate the following error message:"The transaction is outside of the pay code start/end date" when either the user manually enters the pay code in the **Code** field, or the user edits an existing transaction, and the pay code start/end dates do not fall on or between the pay code start/end dates.  
+
+The **Payroll Build Checks** window has been updated to accommodate the new start and end dates for pay codes. Dynamics GP compares the pay code start and end dates from the **Employee Pay Code Maintenance** window to the pay period from/to dates in the **Build Payroll Checks** window to determine whether pay code transactions should be included in the pay run. For automatic pay types, when the start/end dates in the **Employee Pay Code Maintenance** window do not fall on or between the pay period from/to dates in the **Build Payroll Checks** window, Dynamics GP will not include the pay code for that specific employee in the pay run. For pay codes entered as transactions as part of a batch, when a pay code transaction in a batch has a start/end date in the **Employee Pay Code Maintenance** window that does not fall on or between the pay period from/to dates in the **Build Payroll Checks** window, Dynamics GP will throw the following warning on the **Build Checks** report: "The transaction is outside of the pay code start/end date". The transaction for that pay code/employee will not be included in the rest of the pay run.  
+
+The batch will remain available after the pay run has been posted. The pay code transactions not included in the pay run will remain in the batch until they are successfully posted.  
+
+### Shared maximums for benefits and deductions
+
+It is now possible to assign a shared calendar year maximum for groups of benefits and/or groups of deductions. This will be a huge benefit to your organization for employees who may contribute to two 401K plans.  
+
+A new window has been added to accommodate the new deduction and benefit shared maximum functionality, the **Ded/Ben Shared Limit** window.  
+
+> [!NOTE]
+> When a deduction/benefit group code is saved in the **Ded/Ben Shared Limit Setup** window, the shared yearly maximum will be applied to all employees who are assigned to those deductions. Each deduction or benefit can be assigned to one group code.  
+> All deductions/benefits under the selected column will be subject to the shared calendar year maximum.  
+> If an employee is assigned only one or some of the deductions/benefits under the selected column, they will still be subject to the shared calendar year maximum assigned in the **Ded/Ben Shared Limit Setup** window.  
+
+All deductions included in the pay run will show on the **Build Checks** report, which hasn't changed.  
+
+Also, when the pay run is run as *Calculated*, and the **Calendar Year Maximum** has been met for a group of deductions during the pay run,Dynamics GP will try to take the full deduction amount(s) for all TSA deductions first (those deductions with more TSA's get priority). Next, Dynamics GP will try to take the full deduction amount(s) for sequenced deductions. Finally, Dynamics GP will try to take the full deduction amount(s) for non-sequenced/non-TSA deductions (alphanumerically).  
+
+When the pay run is run as *Calculated*, and the **Calendar Year Maximum** has been met for a group of benefits during the pay run, Dynamics GP will first try to take the full benefit amount for taxable benefits alphanumerically, and then try to take the full benefit amount for non-taxable benefits alphanumerically.  
+
+## Workflow
+
+Dynamics GP 2018 R2 includes a new **Sales Transaction Approval** workflow where you can create approvals based on several conditions such as whether a customer credit limit is exceeded on the transaction or not. Not only can you set workflow approval on customer credit limits, but you can set workflow approvals on all transaction types in Sales Transaction Entry. We added a new email message to work with sales transactions, just like the other workflow types. Workflow history is displayed in inquiry windows too.  
+
+The default WF ASSIGN SOP APPROVAL* email message for the **Sales Transaction Approval** workflow will have the option to add many customer and transaction related fields, such as the customer credit limit information so that you can write in the email if the customer credit limit has been exceeded. This way there is high visibility for the approver when they receive the E-Mail notification to approve the transaction. The wording and fields on the email Message ID can also be customized to your preference.  
+
+The workflow history for the **Sales Transactions Approval** workflow is also displayed on inquiry windows and navigation lists.  
+
+## System enhancements
+
+A number of general enhancements have been made in this release.
+
+### Password maximum length
+
+In Dynamics GP 2018 R2, the maximum length for a user's password is increased to 21 characters, from the previous 15 characters.  his is very similar to other Microsoft products, example Microsoft SQL Server.  
+
+This will allow more complexity with Dynamics GP user passwords with the added characters being allowed, to add more security to your Dynamics GP environment.  
+
+### Password expiration notification
+
+Dynamics GP 2018 R2 now provides users with a notification 7 days in advance of their login password expiring. This allows users to proactively update their passwords before the expiration date specified in the password policy configured by the system administrator.  
+
+### Hide Business Analyzer in navigation lists for all users and all lists
+
+System administrators can now turn off Business Analyzer for the Home Page and/or navigation lists at the system level in the **System Preferences** window. These are global settings to make it easier to turn off the feature if companies are not using Business Analyzer.  
+
+Individual users can still choose to turn on Business Analyzer using customization options to display Business Analyzer on their Home Page or in navigation list pages. This is managed in the **Customize Home Page** window and in the Show/Hide menu for navigation list pages, respectively.  
+
+### SmartList Designer favorites display in navigation lists
+
+SmartList Favorites created via SmartList Designer will now appear in the SmartList Favorites navigation lists.  
+
+### Intelligent Edge - Intelligent Cloud Insights
+
+With the release of Dynamics GP 2018 R2, you will notice a new tab on your home page: **Intelligent Cloud Insights**. Essentially, you can connect your Dynamics GP to a Dynamics 365 Business Central cloud tenant that you can synchronize data to. This enables cloud scenarios for your Dynamics GP that will then show in the **Intelligent Cloud Insights** tab with insights from machine learning and other cloud scenarios.  
+
+When you upgrade to GP 2018 R2 with an existing install, the users' Home Page tab will default as usual, but you will see a new tab called **Intelligent Cloud Insights**. If you do a new install of Dynamics GP 2018 R2, the Home Page will default to the **Intelligent Cloud Insights** tab.  
+
+The **Intelligent Cloud Insights** home page is controlled by the SY08100 table. You can use the following scripts to set what page ALL users will see when they log in: (It is recommended to test scripts prior to live environment and have a good backup if needed).
+
+```
+/*To set Intelligent Cloud Insights as the default page on launch*/
+UPDATE DYNAMICS.SY08100
+SET Visible = 1
+WHERE SectionID = 2
+
+/*To set each user’s Home page as the default page on launch*/
+UPDATE DYNAMICS.SY08100
+SET Visible = 0
+WHERE SectionID = 2
+```
+
+For more information, see [Frequently Asked Questions about Connecting to the Intelligent Cloud](dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud) in the docs for Dynamics 365 Business Central.
