@@ -30,11 +30,11 @@ Three windows have been changed to accommodate the new monthly and bi-monthly re
 - Payables Batch Entry
 - Inventory Batch Entry
 
-Also, a new field,  **Use last day of the month** has been added underneath the **Frequency** field in all three windows. The **Use last day of the month** option is available only when the **Frequency** field has been set to **Monthly** or **Bi-Monthly**. When the **Use last day of the month** option is marked for a monthly recurring batch, the **Posting Date** will be the last day of each month (EOM). When the **Use last day of the month** option is marked for a bi-monthly recurring batch, the **Posting Date** will be the last day of every other month (EOM). 
+A new field,  **Use last day of the month** has been added underneath the **Frequency** field in all three windows. The **Use last day of the month** option is available only when the **Frequency** field has been set to **Monthly** or **Bi-Monthly**. When the **Use last day of the month** option is marked for a monthly recurring batch, the **Posting Date** will be the last day of each month (EOM). When the **Use last day of the month** option is marked for a bi-monthly recurring batch, the **Posting Date** will be the last day of every other month (EOM). 
 
 ![Shows the window for Receivables Batch Entry.](media/2018R2_ReceivablesBatchEntry.png "Batch Entry")  
 
-To open these windows, on the Microsoft Dynamics GP menu, point to **Transactions**, choose the relevant area, and then click **Batches**.  
+To open these windows, on the Microsoft Dynamics GP menu, point to **Transactions**, choose the relevant area, and then click **Batches**. For Receivables choose Receivables Batches.
 
 > [!NOTE]
 > In earlier versions of Dynamics GP, the next posting date associated with a monthly batch frequency defaulted to 30 days from the previous posting date. Similarly, the next posting date associated with a bi-monthly batch frequency defaults to 60 days from the previous posting date.  
@@ -44,7 +44,7 @@ To open these windows, on the Microsoft Dynamics GP menu, point to **Transaction
 
 ### Exclude items on the HITB report with zero quantity or value
 
-Additional options are added to the **Historical Inventory Trial Balance** report so that you can include items with zero quantity or zero value.  
+Additional options are added to the **Historical Inventory Trial Balance** report so that you can exclude items with zero quantity or zero value.  
 
 ![Shows the window for the historical trial balance details report.](media/2018R2_HITB.png "HITB report")  
 
@@ -66,7 +66,7 @@ Users can now post through the general ledger at the transaction level in severa
 
 ### Duplicate check numbers
 
-You can now prevent or enable the use of duplicate check numbers by setting or clearing the **Duplicate Check Numbers** field in the **Checkbook Maintenance** window. If the field is cleared, then Dynamics GP will prevent users from using a duplicate check number in the **Bank Transaction Entry**, **Miscellaneous Checks**, and **Payroll Manual Check-Adjustment Entry** windows.  
+You can now prevent or enable the use of duplicate check numbers for more than just Payables Checks by setting or clearing the **Duplicate Check Numbers** field in the **Checkbook Maintenance** window. If the field is cleared, then Dynamics GP will prevent users from using a duplicate check number in the **Bank Transaction Entry**, **Miscellaneous Checks**, and **Payroll Manual Check-Adjustment Entry** windows.  
 
 ![Shows the window for Check Maintenance.](media/2018R2_CheckMaintenance.png "Check Maintenance")  
 
@@ -80,15 +80,17 @@ The new action is added as a view in the **Checkbooks Lookup** window. To exclud
 
 The **Default View** field in the ASIEXP99 table (DYNAMICS database) will be set to *2* when **Exclude Inactive Checkbooks** is the default view. There are no changes to table structure with this new functionality.  
 
-### Mark master records as inactivate or reactivated from navigation lists
+### Mass update master records as inactive from navigation lists
 
-In Dynamics GP 2018 R2, users can inactive and reactivate master records for accounts, checkbooks, customers, sales people, vendors, employees, and items from Navigation Lists. Additionally, users can inactive one employee at a time from navigation lists.  
+In Dynamics GP 2018 R2, users can inactivate and reactivate master records for accounts, checkbooks, customers, sales people, vendors, employees, and items from Navigation Lists. Additionally, users can inactivate one employee at a time from navigation lists.  
 
-The **Inactivate** option becomes available when the user has selected one or more master records on the navigation list. The **Reactivate** option becomes available when the user has selected one or more inactive master records on the navigation list. If a master record is marked as inactive, a visual indicator shows to the right of the *Select* checkbox on the navigation list to indicate that the record is blocked.  
+The **Inactivate** option becomes available when the user has selected one or more master records on the navigation list. The **Reactivate** option becomes available when the user has selected one or more inactive master records on the navigation list. If a master record is marked as inactive, a visual indicator shows to the right of the *Select* checkbox on the navigation list to indicate that the record is inactive.  
 
 For each of the different types of master records, Dynamics GP checks that the record meets the relevant criteria to be marked as inactive. The **Inactivate** option follows existing rules and logic in Dynamics GP for each master record type. Users will be notified if the change succeeded or failed through the yellow status bar at the top of the list. If the record could not be marked as inactive or reactivated, users can print a **Status Message Detail** report to get more information around why the change failed.  
 
-Options with the names **Inactivate** and **Reactivate** have been added to the **Modify** section of the **Accounts Navigation List**,  **Checkbooks Navigation List**, **Customers Navigation List**, **Salespeople Navigation List**, **Vendors Navigation List**, **Items Navigation List**, and **Employees Navigation List** windows.  
+Options with the names **Inactivate** and **Reactivate** have been added to the **Modify** section of the **Accounts Navigation List**,  **Checkbooks Navigation List**, **Customers Navigation List**, **Salespeople Navigation List**, **Vendors Navigation List**, **Items Navigation List**, and **Employees Navigation List** windows. 
+
+Additionally, vendors can be marked as **Temporary** in the **Vendors Navigation List** window and a different visual indicator shows to the right of the *Select* checkbox.
 
 > [!NOTE]
 > Employees must be inactivated/reactivated one at a time. If more than one Employee ID is selected, the **Inactivate** and **Reactivate** options are grayed out. When a user clicks the **Inactivate** or **Reactivate** option, the **Employee Maintenance** window will automatically open.  
@@ -100,9 +102,9 @@ The **Employee Pay Code Maintenance** window now includes a start date and end d
 
 ![Shows the window for Employee Pay Code Maintenance.](media/2018R2_EmployeePayCodeMaintenance.png "Employee Pay Code Maintenance")  
 
-### Shared max for benefit and deduction codes
+### Shared maxiumum for benefit and deduction codes
 
-A new window has been added for the maximum shared amount for benefit and deduction codes. In the **Ded/Ben Shared Limit Setup** window, you can see the YTD max and compare it to calendar year max amount.  
+A new window has been added for the maximum shared amount for benefit and deduction codes. In the **Ded/Ben Shared Limit Setup** window, you can set the Calendar Year Max for multiple codes. This is amount is will not be exceeded for those combined codes during a pay run as it compares the year-to-date total.   
 
 ![Shows the window for Deductible and Benefits Limit Setup.](media/2018R2_EmployeePayCodeMaintenance.png "Ded/Ben Limit Setup")  
 
@@ -112,7 +114,7 @@ A number of updates have been made to the purchasing area in Dynamics GP.
 
 ### Checkbook ID defaults on computer check batch
 
-The Checkbook ID defaults in when you create a computer check batch. Set up the default in the **Payables Management Setup** window.  
+The Checkbook ID defaults in when you create a check batch in the **Select Payments** window, **Edit Payment Batch** window and **Batch Entry** window when computer check is the origin. Set up the default in the **Payables Management Setup** window.  
 
 ![Shows how the default check ID is applied.](media/2018R2_DefaultCheckID.png "Default check ID")  
 
@@ -122,7 +124,7 @@ When you create a purchase order, you can now enter a quantity that is less than
 
 When you create a purchase order from one or more purchase requisitions, you now have the option to purchase a quantity less than what was initially requested in the **Purchase Order Preview** window. The remaining quantity on the requisition will then be canceled.  
 
-For example, if you have a quantity of 70 of the item *128 SDRAM* on a requisition, but you only want to purchase 35 items, you can now adjust that quantity in the **Purchase Order Preview** window. When you adjust the **Qty To Purchase** field to 35, you receive a warning that the remaining quantity ordered will be cancelled. When the purchase order is generated, the purchase requisition will move to history if all lines on the requisition have been fully or partially ordered with the remaining quantity on the partially ordered lines cancelled.  
+For example, if you have a quantity of 70 of the item *128 SDRAM* on a requisition, but you only want to purchase 35 items, you can now adjust that quantity in the **Purchase Order Preview** window. When you adjust the **Qty To Purchase** field to 35, you receive a warning that the remaining quantity ordered will be canceled. When the purchase order is generated, the purchase requisition will move to history if all lines on the requisition have been fully or partially ordered with the remaining quantity on the partially ordered lines canceled.  
 
 If you drill back on the transaction in the **Purchase Requisition Inquiry** zoom, there will be a red icon as a visual indicator to show that the quantity was only partially ordered.  
 
@@ -133,7 +135,7 @@ If you drill back on the transaction in the **Purchase Requisition Inquiry** zoo
 
 The vendor's document number now shows in the **Purchasing All-in-One Document View**. With the release of Microsoft Dynamics GP 2018 R2, users can now view the **Applied-To Document Number** that is associated with payments, credit memos, and returns in the **Purchasing All-In-One View** window.  The all-in-one view is great for viewing related documents but most times the vendor document number is the one known, not the document number. Therefore, it has been added in the payments and credit documents columns for easy reference.  
 
-To open the **Purchasing All-In-One View** window, in the Dynamics GP menu, point to **Inquiry**, choose **Purchasing**, and choose **Purchasing All-In-One View**. To view the document number of an invoice, fFinance charge, or miscellaneous change, simply click the black arrow in the lower right-hand corner of the payment, return, or credit memo to expand the view.  
+To open the **Purchasing All-In-One View** window, in the Dynamics GP menu, point to **Inquiry**, choose **Purchasing**, and choose **Purchasing All-In-One View**. To view the document number of an invoice, finance charge, or miscellaneous change, simply click the black arrow in the lower right-hand corner of the payment, return, or credit memo to expand the view.  
 
 ![Shows the external document number in the all-in-one view.](media/2018R2_ExtDocNo.png "External Document No.")  
 
@@ -148,7 +150,7 @@ After selecting a purchase order format, you can click the Send button at the bo
 
 ### Warning when the vendor is on hold
 
-If you are entering a payables transaction for a vendor that is marked as on hold, you now get a warning. This is similar to the customer hold status that was implemented in an earlier version of Dynamics GP. Additionally, Dynamics GP throws a warning message when a user attempts to enter a transaction when the vendor is on hold.  
+If you are entering a payables transaction for a vendor that is marked as on hold, you now get a visual indicator. This is similar to the customer hold status that was implemented in an earlier version of Dynamics GP. Additionally, Dynamics GP throws a warning message when a user attempts to enter a transaction when the vendor is on hold.  
 
 ![Display vendor hold status.](media/2018R2_VendorOnHold.png "Vendor On Hold")  
 
@@ -181,7 +183,7 @@ In the **Sales Order Processing Item Inquiry** window, a new field with sort opt
 
 ### Sales Order Transaction Navigation List-Print Document option for Functional or Originating Currency
 
-With Dynamics GP 2018 R2, there is a new option when printing documents from the **Sales Order Transactions Navigation List** window that allows you to choose if you want to print the document in the Originating or Functional currency. In the **Currency to Print** field, a new option for **Functional** lets you print the invoice in the customer's currency. This saves time since you don't have to navigate to the historical window to print the document. The default currency is still *Originating* but now you have the option to print in *Functional* currency from the navigation list. After you mark a document or documents on the **Sales Order Transactions Navigation List** window, you can select the **Print Documents** action dropdown on the Action Pane. In this window you will see a new option labeled **Currency To Print**.  
+With Dynamics GP 2018 R2, there is a new option when printing documents from the **Sales Order Transactions Navigation List** window that allows you to choose if you want to print the document in the Originating or Functional currency. In the **Currency to Print** field, a new option for **Functional** lets you print the invoice in the company's currency. The default currency is still *Originating* but now you have the option to print in *Functional* currency from the navigation list. After you mark a document or documents on the **Sales Order Transactions Navigation List** window, you can select the **Print Documents** action dropdown on the Action Pane. In this window you will see a new option labeled **Currency To Print**.  
 
 ### Print and email sales documents at the same time
 
@@ -230,7 +232,7 @@ Two new calculated fields added to the **Payroll Check Register** report to acco
 With the release of Dynamics GP 2018 R2, users can assign a start date and/or an end date to pay codes in the **Employee Maintenance** window. This functionality is similar to the start/end dates that are already used for benefits and deductions in the Payroll module. This new feature will allow users to setup new pay codes without having to worry about when to start using them, or when to inactivate those they no longer wish to use. This will be very useful to you when you are activating a new hire and terminating an existing salary employee.  
 
 > [!NOTE]
-> In earlier versions of Dynamics GP, it was not possible to restrict whether a pay code is included in a pay run via start and/or end dates. Instead, users would generally 'inactive' a pay code (most often a salary type pay code) to ensure it's not included in a pay run.
+> In earlier versions of Dynamics GP, it was not possible to restrict whether a pay code is included in a pay run via start and/or end dates. Instead, users would generally 'inactivate' a pay code (most often a salary type pay code) to ensure it's not included in a pay run.
 
 The **Start Date** and **End Date** fields are not required in the **Employee Pay Code Maintenance** window. The following table describes the effect of the settings of these fields:
 
@@ -278,7 +280,7 @@ A number of general enhancements have been made in this release.
 
 ### Password maximum length
 
-In Dynamics GP 2018 R2, the maximum length for a user's password is increased to 21 characters, from the previous 15 characters.  his is very similar to other Microsoft products, example Microsoft SQL Server.  
+In Dynamics GP 2018 R2, the maximum length for a user's password is increased to 21 characters, from the previous 15 characters.  This is very similar to other Microsoft products, example Microsoft SQL Server.  
 
 This will allow more complexity with Dynamics GP user passwords with the added characters being allowed, to add more security to your Dynamics GP environment.  
 
