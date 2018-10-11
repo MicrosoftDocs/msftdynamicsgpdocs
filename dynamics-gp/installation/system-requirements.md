@@ -16,26 +16,6 @@ ms.reviewer: edupont
 
 This chapter contains a list of the prerequisites for Dynamics GP, as well as the disk space requirements for SQL Server.
 
-This chapter contains the following sections:
-
--   [Prerequisites](#prerequisites)  
-
--   [Home page prerequisites](#home-page-prerequisites)  
-
--   [Word templates prerequisites](#word-templates-prerequisites)  
-
--   [Email requirements](#email-requirements)  
-
--   [SQL Server Reporting Services requirements](#sql-server-reporting-services-requirements)  
-
--   [Modify the Report Server web.config file](#modify-the-report-server-web.config-file)  
-
--   [Dynamics GP CRM requirements](#microsoft-dynamics-gp-crm-requirements)  
-
--   [Supported system requirements](#supported-system-requirements)  
-
--   [About remote access](#about-remote-access)  
-
 ## Prerequisites
 
 The following components also must be installed before you can install Dynamics GP.
@@ -66,7 +46,7 @@ If one of these components isn’t installed on your computer when you attempt t
 
 ## Home page prerequisites
 
-To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server 2012 Reporting Services or SQL Server 2014 Reporting Services to use with Dynamics GP. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the Dynamics GP 2018 documentation resource Web site (<http://go.microsoft.com/fwlink/?LinkId=249465>) for the most current documentation.
+To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server 2012 Reporting Services or SQL Server 2014 Reporting Services to use with Dynamics GP. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP 2018 documentation resource website](https://go.microsoft.com/fwlink/?LinkId=249465) for the most current documentation.
 
 ### 
 
@@ -98,7 +78,7 @@ Review the following requirements.
 
 -   The email functionality in Dynamics GP supports the following document types. Depending on the document type and the email service, Microsoft Word 2013 or later and Word templates for Dynamics GP are required.
 
-| File format | Word 2013         | Word templates | Web Client    |
+| File format | Word         | Word templates | Web Client    |
 |-------------|-------------------|----------------|---------------|
 | XPS         | Required for MAPI | Enabled        | Not available |
 | PDF         | Required for MAPI | Enabled        | Not available |
@@ -109,18 +89,18 @@ Review the following requirements.
 
 -   Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window.
 
--   The email functionality is supported on the 32-bit edition of Microsoft Office 2013.
+-   The email functionality is supported on the 32-bit edition of Microsoft Office.
 
--   The email functionality is supported on the 64-bit edition of Microsoft Office 2013 if you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services and Exchange is your server type in the System Preferences window.
+-   The email functionality is supported on the 64-bit edition of Microsoft Office if you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services and Exchange is your server type in the System Preferences window.
 
 Depending on the file format you choose to send your documents in email, your customers and vendors must be using the following components to view their documents.
 
-| File format                                                                                                                 | Component                    |
-|---------------------------------------------------------------------|------------------------------|
-| XPS                                                                                                                            | Microsoft XPS Viewer         |
-| PDF                                                                                                                            | Adobe Reader                 |
-| DOCX                                                                                                                           | Microsoft Word Viewer        |
-| HTML\*                                                                                                                         | Internet Explorer 8 or later |
+| File format   | Component                    |
+|----------------|------------------------------|
+| XPS       | Microsoft XPS Viewer         |
+| PDF           | Adobe Reader                 |
+| DOCX          | Microsoft Word Viewer        |
+| HTML\*          | Internet Explorer 8 or later |
 | If you are using Dynamics GP Web Client only, your customers and vendors must be using HTML to view their documents. |
 
 ## SQL Server Reporting Services requirements
@@ -155,7 +135,7 @@ You must install the Microsoft Dynamics CRM Reporting Extensions on the Dynamics
 
 ## Supported system requirements
 
-For current system requirements for Dynamics GP, see <http://go.microsoft.com/fwlink/?LinkId=521785>. The system requirements include supported databases and operating systems, hardware recommendations, client requirements, and Terminal Server requirements.
+For current system requirements for Dynamics GP, see <https://go.microsoft.com/fwlink/?LinkId=521785>. The system requirements include supported databases and operating systems, hardware recommendations, client requirements, and Terminal Server requirements.
 
 Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software improves performance.
 
@@ -163,4 +143,4 @@ Recommended system requirements depend on the number of users and transactions. 
 
 You can use Windows Server 2012 Terminal Services, Windows Server 2012 R2 Remote Desktop Services, and Windows Server 2012 Remote Desktop Services. Citrix Xenapps can also be used with most database configurations to provide remote access to Dynamics GP in a Wide Area Network (WAN) environment.
 
-For more information about system requirements see <http://go.microsoft.com/fwlink/?LinkId=521785>. You also should refer to the documentation provided by Citrix for more information.
+For more information about system requirements see <https://go.microsoft.com/fwlink/?LinkId=521785>. You also should refer to the documentation provided by Citrix for more information.

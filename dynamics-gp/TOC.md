@@ -18,25 +18,22 @@
 #### [SQL Server configuration](installation/microsoft-sql-server-configuration.md)
 #### [Account framework](installation/account-framework.md)
 ### Installation
-#### [Install Dynamics GP on the first computer](installation/install-microsoft-dynamics-gp-on-the-first-computer.md)
-#### [Installing Dynamics GP on subsequent computers](installation/installing-dynamics-gp-on-subsequent-computers.md)
-#### [Using Microsoft Dynamics Utilities](installation/using-microsoft-dynamics-tilities.md)
+#### [Install Dynamics GP on the first computer](installation/installing-on-first-computer.md)
+#### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
+#### [Using Microsoft Dynamics Utilities](installation/using-microsoft-dynamics-utilities.md)
 #### [Installing additional components](installation/installing-additional-components.md)
 ### [Creating a company](installation/creating-a-company.md)
 ### [After installing](installation/after-installing.md)
 ### Client installation
 #### [Creating an installation package](installation/creating-an-installation-package.md)
-#### [Installing Dynamics GP on subsequent computers](installation/installing-dynamics-gp-on-subsequent-computers.md)
+#### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
 
 <!--- web components-->
 ## Web components
-### [Introduction](web-components/introduction.md)
-### [Glossary](web-components/glossary.md)
 ### [Installation overview](web-components/installation-overview.md)
 ### [Deployment configurations](web-components/deployment-configurations.md)
 ### [Environment configuration](web-components/environment-configuration.md)
 ### [Security groups and user accounts](web-components/security-groups-and-user-accounts.md)
-### [Web components installation](web-components/web-components-installation.md)
 ### [Importing a Self-signed Security Certificate](web-components/importing-a-self-signed-security-certificate.md)
 ### [Register application for organizational accounts](web-components/register-application-for-organizational-accounts.md)
 ### Web server preparation
@@ -58,6 +55,7 @@
 ### Web client upgrade
 #### [Single machine upgrade](web-components/single-machine-upgrade.md)
 #### [Scale out upgrade](web-components/scale-out-upgrade.md)
+### [Glossary](web-components/glossary.md)
 
 <!--- upgrade-->
 ## Upgrade

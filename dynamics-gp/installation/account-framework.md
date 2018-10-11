@@ -18,18 +18,6 @@ Use the information in this chapter to plan your account framework for your comp
 
 ![displays a triangle with an exclamation point to indicate warning](media/warning.png "Warning symbol")Note that the account framework you enter in the Dynamics GP Utilities will be used for the account format in all companies you’re planning to set up.  
 
-### 
-
-This chapter contains the following sections:
-
--   [Understanding the account framework](#understanding-the-account-framework)  
-
--   [Using a custom or default account framework](#using-a-custom-or-default-account-framework)  
-
--   [Planning your account framework](#planning-your-account-framework)  
-
--   [Choosing account framework storage size](#choosing-account-framework-storage-size)  
-
 ## Understanding the account framework
 
 The framework you’ll enter includes maximums for the account length, the number of account segments, and the length of each segment. These maximums will be used for the account format in all companies you’re planning to set up. You’ll enter the specific account format for each company when you access Dynamics GP and set up the company.
@@ -80,7 +68,7 @@ When planning an account framework, think about the account format you’ve used
 
 ![displays a triangle with an exclamation point to indicate warning](media/warning.png "Warning symbol")It’s important to consider what your current and future needs are for the framework; after you’ve entered the framework, it’s unlikely that you’ll be able to change it. If you find that you need to change your account framework, contact your reseller or Dynamics GP Technical Support.  
 
-To use one of the default charts of accounts provided with Dynamics GP, set up the account framework with maximums that are at least the size listed below. To preview the default charts of accounts for various business and industry types, review the Default Charts of Accounts for Dynamics GP article (<http://go.microsoft.com/fwlink/?LinkId=89042>).
+To use one of the default charts of accounts provided with Dynamics GP, set up the account framework with maximums that are at least the size listed below. To preview the default charts of accounts for various business and industry types, review the [Default Charts of Accounts for Dynamics GP](https://go.microsoft.com/fwlink/?LinkId=89042) article.
 
 | Minimum account framework for use with sample company |                     |
 |-------------------------|--------------------------------------------|
@@ -118,18 +106,18 @@ You will need to consider the storage size that is required by each segment. The
 
 Each segment uses one or two segment units for storage, depending upon whether it’s an odd or an even-numbered segment. These units will be added to the total length of all segments. When the maximum account length is set, the total of all segments units must be 82 or less. For example, assume that an account has two 5- character segments and seven 8-character segments, the total storage size will be 82 (one unit is added to each of the five character segments because 5 is an odd number and two units must be added to each of the 8-character segments because 8 is an even number). This example would be calculated as shown in the following table.
 
-| <span id="_Hlk493081277" class="anchor"></span>Segment | Segment length | Segment units | Total size |
-|--------------------------------------------------------|----------------|---------------|------------|
-| 1                                                      | 5              | 1             | 6          |
-| 2                                                      | 5              | 1             | 6          |
-| 3                                                      | 5              | 1             | 6          |
-| 4                                                      | 8              | 2             | 10         |
-| 5                                                      | 8              | 2             | 10         |
-| 6                                                      | 8              | 2             | 10         |
-| 7                                                      | 8              | 2             | 10         |
-| 8                                                      | 8              | 2             | 10         |
-| 9                                                      | 8              | 2             | 10         |
-| Total                                                  | 66             | 16            | 82         |
+| Segment | Segment length | Segment units | Total size |
+|---------|----------------|---------------|------------|
+| 1       | 5              | 1             | 6          |
+| 2       | 5              | 1             | 6          |
+| 3       | 5              | 1             | 6          |
+| 4       | 8              | 2             | 10         |
+| 5       | 8              | 2             | 10         |
+| 6       | 8              | 2             | 10         |
+| 7       | 8              | 2             | 10         |
+| 8       | 8              | 2             | 10         |
+| 9       | 8              | 2             | 10         |
+| Total   | 66             | 16            | 82         |
 
 Based on the previous example, if you use an account framework with two 5- character segments and eight 8-character segments, it would not be valid because the total would be 92, or ten greater than the maximum allowed, as shown in the following table.
 

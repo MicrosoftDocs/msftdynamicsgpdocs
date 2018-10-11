@@ -12,17 +12,10 @@ ms.topic: article
 ms.assetid: ee700f07-5dd2-44a6-af03-3d2c9647744d
 ms.reviewer: edupont
 ---
-<span id="_Toc499731577" class="anchor"></span>
 
 # Creating a company
 
 Use the instructions in this chapter to create a company if you didn’t create one when you first used Dynamics GP Utilities. You must set up at least one company before you can start Dynamics GP. See your System Setup instructions (Help &gt;&gt; Contents &gt;&gt; select Setting up the system) for information about setting up users and companies in Dynamics GP.
-
-This chapter contains the following sections:
-
--   [Chart of accounts overview](#chart-of-accounts-overview)  
-
--   [Adding a company using Dynamics GP Utilities](#adding-a-company-using-microsoft-dynamics-gp-utilities)  
 
 ## Chart of accounts overview
 
@@ -40,7 +33,7 @@ Based on the business and industry types you choose for your company, you can in
 
 If you use a default chart of accounts, you won’t be able to shorten the account format. However, it can be lengthened to the maximum length you established in the Account Definition Setup window of Dynamics GP Utilities, earlier in the installation process. Refer to the System Setup instructions (Help &gt;&gt; Contents &gt;&gt; select Setting up the system) for more information about lengthening account formats.
 
-To preview the default chart of accounts for various business and industry types, review the Default Charts of Accounts for Dynamics GP article (http:// go.microsoft.com/fwlink/?LinkId=89042).
+To preview the default chart of accounts for various business and industry types, review the [Default Charts of Accounts for Dynamics GP](http:// go.microsoft.com/fwlink/?LinkId=89042)  article.
 
 The default chart of accounts you choose for your company in this procedure is designed to be an accurate estimate of your company’s business practices. However, we recommend that you review the accounts and make any necessary additions or changes. You’ll be directed to the General Ledger documentation later in the setup process, if you need to modify the accounts.
 
@@ -59,7 +52,7 @@ To start Dynamics GP Utilities, you must have appropriate user privileges. Typic
 To add a company using Dynamics GP Utilities:
 
 1. Start Dynamics GP Utilities.
-(Start &gt;&gt; Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities)
+(Start &gt;&gt; Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP&gt;&gt; GP Utilities)
 
 2. In the Welcome to Dynamics GP Utilities window, verify your server name, and enter a system administrator user ID and Password; then click Next.
 

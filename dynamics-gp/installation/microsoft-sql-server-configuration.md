@@ -165,7 +165,7 @@ Click OK after you make your selections, and then click Next.
 
 22. Restart the computer if you are instructed to do so.
 
-23. Install the current SQL Server 2012 service pack. See the Microsoft Download Center (<http://www.microsoft.com/downloads/en/default.aspx>) for the latest service pack information.
+23. Install the current SQL Server 2012 service pack. See the Microsoft Download Center (<https://www.microsoft.com/downloads/en/default.aspx>) for the latest service pack information.
 
 ## Installing Microsoft SQL Server 2012 Express Edition
 
@@ -217,7 +217,7 @@ To install Microsoft SQL Server 2012 Express Edition:
 
 14. Restart the computer if you are instructed to do so.
 
-15. Install the current SQL Server 2012 Express service pack. See the Microsoft Download Center (<http://www.microsoft.com/downloads/en/default.aspx>) for the latest service pack information.
+15. Install the current SQL Server 2012 Express service pack. See the Microsoft Download Center (<https://www.microsoft.com/downloads/en/default.aspx>) for the latest service pack information.
 
 ## Setting up an ODBC data source using the SQL Native Client driver
 
@@ -263,7 +263,7 @@ Be sure that the SQL Server Agent service is set up to start automatically with 
 
 Jobs are customizable, and you can select how frequently they should be completed. You may want certain jobs to run every half hour, while others should run once at night. For more information on scheduling jobs, refer to Microsoft SQL Server Books Online.
 
-SQL Server Agent is not available for SQL Server Express. For information about how to schedule backups for SQL Server Express, see Microsoft Knowledge Base article, “How to schedule and automate backups of SQL Server databases in SQL Server Express” (<http://support.microsoft.com/kb/2019698/en-us>).
+SQL Server Agent is not available for SQL Server Express. For information about how to schedule backups for SQL Server Express, see Microsoft Knowledge Base article, “How to schedule and automate backups of SQL Server databases in SQL Server Express” (<https://support.microsoft.com/kb/2019698/en-us>).
 
 Microsoft SQL Server 2008 Express doesn’t include SQL Server Agent. Refer to Support Hot Topic on CustomerSource <https://mbs.microsoft.com/customersource> for more information about scheduling a backup.
 

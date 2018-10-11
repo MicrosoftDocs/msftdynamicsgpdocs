@@ -197,7 +197,7 @@ To prepare Dynamics GP for use with custom settings:
 
 4. The Installation Options window appears. Mark Advanced and then click Next.
 
-5. In the Database Setup window, enter the location to create the data and log devices (files). For more information about disk and RAID configuration, see <http://go.microsoft.com/fwlink/?LinkId=263763>. Click Next.
+5. In the Database Setup window, enter the location to create the data and log devices (files). For more information about disk and RAID configuration, see <https://go.microsoft.com/fwlink/?LinkId=263763>. Click Next.
 
 ![database setup screen](media/gp-utilities-8.png "Database setup screen")  
 
@@ -563,7 +563,7 @@ Login and password for the Web Client SQL Server login.
 
 Use the Manage user authentication process to change the authentication type for this Dynamics GP instance. If there are accounts assigned for the current authentication type, the assigned accounts will be removed when the authentication type is changed. You cannot change the authentication type if there is an active workflow or a workflow that is currently pending user action.
 
-During the initial Dynamics GP installation, you selected an authentication type. If you upgraded to GP 2018 from a previous release, the authentication type was set to Windows Account automatically.
+During the initial Dynamics GP installation, you selected an authentication type. If you upgraded to this version of Dynamics GP from a previous release, the authentication type was set to Windows Account automatically.
 
 To manage the user authentication
 
@@ -573,10 +573,6 @@ To manage the user authentication
 
 3. If you have selected Organizational Account, provide the required configuration information for using Organizational Accounts.
 
-Provide the Azure AD domain name for the user accounts. An example is contoso.onmicrosoft.com. Provide the name of the SQL Server where the web components database is stored and the name of the web components database.
+Provide the Azure AD domain name for the user accounts. An example is *contoso.onmicrosoft.com*. Provide the name of the SQL Server instance where the web components database is stored and the name of the web components database.
 
 4. Click OK. The Additional Tasks window reappears.
-
-## See also
-
-[Introduction](introduction.md)  

@@ -48,7 +48,7 @@ If you are upgrading to Dynamics GP 2018, you must install the latest update or 
 
 ## System requirement changes
 
-The following changes are new with Dynamics GP 2018. For a complete list of all system requirements, see <http://go.microsoft.com/fwlink/?LinkId=521785>. You may want to consider upgrading your hardware for improved performance.
+The following changes are new with Dynamics GP 2018. For a complete list of all system requirements, see <https://go.microsoft.com/fwlink/?LinkId=521785>. You may want to consider upgrading your hardware for improved performance.
 
 ### Operating system requirement changes
 
@@ -106,7 +106,7 @@ The following components must be installed before you can use Word Templates for
 
 -   Open XML SDK 2.0 for Microsoft Office (installed as a Dynamics GP prerequisite)
 
-If a component isn't installed, you can download the component from <http://www.microsoft.com>.
+If a component isn't installed, you can download the component from <https://www.microsoft.com>.
 
 Additional components are required to modify templates.
 
@@ -192,7 +192,7 @@ You can use Windows Server 2012 Remote Desktop Services, Windows Server 2012 R2 
 
 A Windows Server 2008 Terminal Server is supported only as a client. You also can use Remote Desktop Services.
 
-For more information about system requirements see <http://go.microsoft.com/fwlink/?LinkId=521785>. You also should refer to the documentation provided by Citrix for more information.
+For more information about system requirements see <https://go.microsoft.com/fwlink/?LinkId=521785>. You also should refer to the documentation provided by Citrix for more information.
 
 ## Determine disk space for the upgrade process
 

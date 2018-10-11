@@ -14,15 +14,7 @@ ms.reviewer: edupont
 ---
 # Network configuration
 
-### 
-
-This chapter contains information about network configuration that must be in place before installing Dynamics GP, and includes the following sections:
-
--   [Domain](#domain)  
-
--   [Network protocol tuning](#network-protocol-tuning)  
-
--   [TCP/IP](#tcpip)  
+This chapter contains information about network configuration that must be in place before installing Dynamics GP.  
 
 ## Domain
 
@@ -38,7 +30,7 @@ To optimize your network for Microsoft SQL Server and Dynamics GP, refer to the 
 
 -   Remove unused network protocols.
 
--   Use 1 GB Ethernet for optimal performance. For more information about system requirements, see <http://go.microsoft.com/fwlink/?LinkId=263763>.
+-   Use 1 GB Ethernet for optimal performance. For more information, see [System requirements](https://go.microsoft.com/fwlink/?LinkId=263763).
 
 -   Use switches rather than hubs, if optimal performance is required.
 

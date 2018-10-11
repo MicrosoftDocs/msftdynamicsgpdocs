@@ -12,11 +12,10 @@ ms.topic: article
 ms.assetid: 2351bb7b-8f14-4b7d-b4ed-8b97f7974617
 ms.reviewer: 
 ---
-<span id="_Toc498953269" class="anchor"></span>
 
 # Installation overview
 
-This chapter briefly describes the Dynamics GP web components and introduces the major parts of the installation. It also provides an installation checklist.
+This section describes the Dynamics GP web components and introduces the major parts of the installation. It also provides an installation checklist.
 
 ## What are the web components?
 
@@ -103,4 +102,4 @@ To install the Dynamics GP web components, complete the following tasks in the o
 | 6. Obtain security certificates and configure SSL.
  Determine the type of security certificate you want to use. Configure the web site to use SSL. | [Security certificates and SSL](security-certificates-and-SSL.md) |  
 | 7. Install the web components.
- Complete the installation procedure based on the type of deployment that you chose. | [Web components installation](web-components-installation.md)|  
+ Complete the installation procedure based on the type of deployment that you chose. | [Scale out installation](scale-out-installation.md)|  

@@ -22,8 +22,8 @@ Use this checklist as your guide to installing and setting up Dynamics GP
 
 | Step | For more information,see |
 |------|--------------------------|
-| 1. Plan the security of your system.  | Download the SecurityPlanning.pdf, titled Planning for Security, from the following location: <http://www.microsoft.com/en-us/download/details.aspx?id=45025> by expanding the Details option.                     |
-| 2. Refer to the Documentation and resources web site for new or updated information relating to the installation. You also can use CustomerSource for additional information. | <http://go.microsoft.com/fwlink/?LinkId=249465> |
+| 1. Plan the security of your system.  | Download the SecurityPlanning.pdf, titled Planning for Security, from the following location: <https://www.microsoft.com/en-us/download/details.aspx?id=45025> by expanding the Details option.                     |
+| 2. Refer to the Documentation and resources web site for new or updated information relating to the installation. You also can use CustomerSource for additional information. | <https://go.microsoft.com/fwlink/?LinkId=249465> |
 | 3. View the Readme file and make a note of the items that pertain to you. | \\Media\\GreatPlains\\Documentation\\GPReadme.chm |
 | 4. Obtain your need registration keys for Dynamics GP2018.   | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP2018. <https://mbs.microsoft.com/customersource>  My Account  |
 | 5. Verify system requirements. | [System Requirements](system-requirements.md)   |
@@ -62,7 +62,7 @@ If you’ve installed Dynamics GP, you can use help to access context- sensitive
 
 You can choose Help &gt;&gt; Printable Manuals to find a printable version of procedural or overview information for specific modules.
 
-To view and download documentation, visit the Documentation Resources for Dynamics GP2018 Web site (<http://go.microsoft.com/fwlink/?LinkId=249465> .)
+To view and download documentation, visit the Documentation Resources for Dynamics GP2018 Web site (<https://go.microsoft.com/fwlink/?LinkId=249465> .)
 
 ### CustomerSource
 

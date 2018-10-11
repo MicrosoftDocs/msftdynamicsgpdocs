@@ -12,27 +12,16 @@ ms.topic: article
 ms.assetid: 3f1d0bb8-4967-4a30-814b-b07c5ea58959
 ms.reviewer: edupont
 ---
-### 
 
 # Installing additional components
 
 Depending on your organization’s needs, you may have purchased additional features that add specialized functionality to your Dynamics GP system. A Dynamics GP feature can be a single function or a complete a range of related business and accounting tasks that use one or more modules. Several products that integrate with Dynamics GP are included on the Dynamics GP media.
 
-This chapter contains the following sections:
-
--   [Dynamics GP features](#_Microsoft_Dynamics_GP)  
-
--   [Adding or removing additional features](#adding-or-removing-additional-features)  
-
--   [Additional components](#additional-components)  
-
--   [Installing an additional component](#installing-an-additional-component)  
-
 ## Dynamics GP features
 
-After you’ve installed Dynamics GP 2018, you may decide to purchase an additional feature or remove a feature. Some features add a single function to your Dynamics GP system while some, such as Manufacturing, allow you to complete a range of related business and accounting tasks that use one or more modules. You can use the Select Features window to install or uninstall a feature. For more information about accessing this window, see Adding or removing additional features.
+After you’ve installed Dynamics GP, you may decide to purchase an additional feature or remove a feature. Some features add a single function to your Dynamics GP system while some, such as Manufacturing, allow you to complete a range of related business and accounting tasks that use one or more modules. You can use the Select Features window to install or uninstall a feature. For more information about accessing this window, see Adding or removing additional features.
 
-You can register Dynamics GP using the Registration window (Administration &gt;&gt; Setup &gt;&gt; System &gt;&gt; Registration) after you install. For more information about registration, see Registering Dynamics GP on page 70. All features are registered for the sample company, Fabrikam, Inc. For more information about the sample company, see Adding sample company data on page 49.
+You can register Dynamics GP using the Registration window (Administration &gt;&gt; Setup &gt;&gt; System &gt;&gt; Registration) after you install. For more information about registration, see [Registering Dynamics GP](/dynamics-gp/installation/after-installing#registering-microsoft-dynamics-gp). All features are registered for the sample company, Fabrikam, Inc. For more information about the sample company, see [Adding sample company data](/dynamics-gp/installation/using-microsoft-dynamics-utilities#adding-sample-company-data).
 
 The following table lists the Dynamics GP features. The features available depends on the country or region you selected when installing Dynamics GP.
 
@@ -56,7 +45,7 @@ For all countries and regions:
 For all countries and regions except Canada and the United States:
 |                      |                       |
 |----------------------|-----------------------|
-| Bank Management      | Scheduled Installments|                     
+| Bank Management      | Scheduled Installments|
 | Direct Debit Refunds |                       |
 
 For the United States:
@@ -69,7 +58,8 @@ For Belgium and France:
 |----------------------|-----------------------|
 | Export Financial Data |     |
 
-### We recommend that you install each Dynamics GP feature and additional component that you are going to register on all client computers.
+> [!NOTE]
+> We recommend that you install each Dynamics GP feature and additional component that you are going to register on all client computers.
 
 ## Adding or removing additional features
 
@@ -83,7 +73,7 @@ To add or remove additional features:
 
 1. Start the installation wizard. You can use either of the following methods.
 
--   From the Dynamics GP 2018 installation media, double-click the Setup.exe file to open the Dynamics GP installation window. Select the existing instance of Dynamics GP in the Instance Selection window and click Next.
+-   From the Dynamics GP installation media, double-click the Setup.exe file to open the Dynamics GP installation window. Select the existing instance of Dynamics GP in the Instance Selection window and click Next.
 
 —or—
 
@@ -97,8 +87,8 @@ To add or remove additional features:
 
 When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
-| Option                                                                         | What happens                                                                                                             |
-|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Option   | What happens |
+|----------|-------------|
 | ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
 | ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
 | ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
@@ -111,7 +101,7 @@ After you have specified the feature or features, click Next.
 
 6. In the Installation Complete window, click Exit.
 
-7. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
+7. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP&gt;&gt; GP Utilities.
 
 ![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
@@ -125,22 +115,22 @@ After you have specified the feature or features, click Next.
 
 A smaller set of additional components are separate installations available on the Dynamics GP media. These additional components are listed on the main Dynamics GP installation window for media. For more information about accessing this window, see Installing an additional component on page 61.
 
-| Additional components                           | Description                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Analysis Cubes Server                           | Installs Analysis Cube Server configuration wizards for SQL Server 2012, SQL Server 2014, and SQL Server 2016.                                                                                                                                                                                                                                                 |
-| Dynamics GP Add-in for Microsoft Word | Installs the code necessary to enable template mapping so you can create and modify Word templates for Dynamics GP.                                                                                                                                                                                                                                  |
-| eConnect                                        | A document integration tool that enables high volume, high speed programmatic integration to and from applications and the Dynamics GP back office solution.                                                                                                                                                                                         |
-| Integration Manager                             | Allows you to perform a one-time data conversion from your existing system to Dynamics GP products, or to perform ongoing integrations from other applications.                                                                                                                                                                                      |
-| Tenant Service                                  | A service that will provide tenant and user configuration information to applications. This service is required if you are setting up Dynamics GP Web Client for multiple tenants.                                                                                                                                                                   |
-| Web Client                                      | The web server components that will provide browser access to Dynamics GP.                                                                                                                                                                                                                                                                           |
-| GP Web Resource Cache                           | Install on each session server to improve performance by enabling web client caching.                                                                                                                                                                                                                                                                          |
-| Web Services Runtime                            | The runtime engine that adds a Web Services interface to Dynamics GP. Install this component if you want to run integrations that access Dynamics GP data through Web Services. Several prerequisites must be met before you can install this component. Refer to the Web Services Installation and Administration Guide for more details. |
-| Web Services Management Tools                   | Installs the Security Console and Exceptions Management Console, which you can use to administer security and exception information for Web Services for Dynamics GP. Install this component if you want to manage Web Services from a workstation separate from where the Web Services Runtime is installed.                                        |
-| Companion Application Services                  | A tool that enables you to connect your Dynamics GP application to a data source.                                                                                                                                                                                                                                                                    |
-| GP PowerShell                                   | PowerShell cmdlets that perform various configuration tasks for a Dynamics GP web client installation.                                                                                                                                                                                                                                               |
-| OData Services                                  |                                                                                                                                                                                                                                                                                                                                                                |
+| Additional components    | Description    |
+|------------------------|---------------------------|
+| Analysis Cubes Server         | Installs Analysis Cube Server configuration wizards for SQL Server 2012, SQL Server 2014, and SQL Server 2016. |
+| Dynamics GP Add-in for Microsoft Word | Installs the code necessary to enable template mapping so you can create and modify Word templates for Dynamics GP.   |
+| eConnect    | A document integration tool that enables high volume, high speed programmatic integration to and from applications and the Dynamics GP back office solution.  |
+| Integration Manager       | Allows you to perform a one-time data conversion from your existing system to Dynamics GP products, or to perform ongoing integrations from other applications.   |
+| Tenant Service     | A service that will provide tenant and user configuration information to applications. This service is required if you are setting up Dynamics GP Web Client for multiple tenants.  |
+| Web Client   | The web server components that will provide browser access to Dynamics GP.   |
+| GP Web Resource Cache   | Install on each session server to improve performance by enabling web client caching. |
+| Web Services Runtime     | The runtime engine that adds a Web Services interface to Dynamics GP. Install this component if you want to run integrations that access Dynamics GP data through Web Services. Several prerequisites must be met before you can install this component. Refer to the Web Services Installation and Administration Guide for more details. |
+| Web Services Management Tools | Installs the Security Console and Exceptions Management Console, which you can use to administer security and exception information for Web Services for Dynamics GP. Install this component if you want to manage Web Services from a workstation separate from where the Web Services Runtime is installed.  |
+| Companion Application Services   | A tool that enables you to connect your Dynamics GP application to a data source.   |
+| GP PowerShell     | PowerShell cmdlets that perform various configuration tasks for a Dynamics GP web client installation.  |
+| OData Services    |   |
 
-There are some additional components that are released only on the CustomerSource Web site (<https://mbs.microsoft.com/customersource/support/downloads/servicepacks/>).
+There are some additional components that are released only on [CustomerSource](https://mbs.microsoft.com/customersource/support/downloads/servicepacks/).
 
 ## Installing an additional component
 
@@ -150,7 +140,7 @@ Each additional component has its own installation instructions and documentatio
 
 To install an additional component:
 
-1. From the Dynamics GP 2018 installation media, double-click the Setup.exe file to open the Dynamics GP installation window.
+1. From the Dynamics GP installation media, double-click the Setup.exe file to open the Dynamics GP installation window.
 
 2. Click the additional component you want to install and then click View Documentation.
 
@@ -159,3 +149,7 @@ To install an additional component:
 4. Depending on the component you installed, you may be instructed to restart your computer.
 
 5. When installation of the additional component is complete, you can either install another component or close the main Dynamics GP installation window.
+
+## See Also
+
+[Using Microsoft Dynamics Utilities](using-microsoft-dynamics-utilities.md)

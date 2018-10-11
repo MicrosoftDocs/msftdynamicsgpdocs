@@ -14,17 +14,7 @@ ms.reviewer: edupont
 ---
 # Installing Dynamics GP on subsequent computers
 
-Use the information in this chapter to install Dynamics GP 2018 on each client computer. You also use Dynamics GP Utilities to synchronize the Dynamics GP dictionary on each additional client with your account framework on the server.
-
-This chapter contains the following sections:
-
--   [Installation overview](#installation-overview)  
-
--   [Installing Dynamics GP on an additional computer](#installing-microsoft-dynamics-gp-on-an-additional-computer)  
-
--   [Synchronizing a client’s account framework](#synchronizing-a-clients-account-framework)  
-
--   [Multiple instances of Dynamics GP](#_Multiple_instances_of)  
+Use the information in this chapter to install Dynamics GP on each client computer. You also use Dynamics GP Utilities to synchronize the Dynamics GP dictionary on each additional client with your account framework on the server.
 
 ## Installation overview
 
@@ -38,7 +28,7 @@ Use the information in this section to install a client in a multiuser system af
 
 To install Dynamics GP on an additional computer:
 
-1. From the Dynamics GP 2018 installation media, double-click the Setup.exe file to open the Dynamics GP installation window.
+1. From the Dynamics GP installation media, double-click the Setup.exe file to open the Dynamics GP installation window.
 
 2. Click Dynamics GP.
 
@@ -58,8 +48,8 @@ To install Dynamics GP on an additional computer:
 
 6. In the Select Features window, select the features to install.
 
-| **Option**                                                                     | **What happens**                                                                                                         |
-|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Option**   | **What happens**  |
+|--------------|-----------------|
 | ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
 | ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
 | ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
@@ -86,15 +76,15 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 
 13. In the Installation Complete window, click Finish.
 
-14. Before you start Dynamics GP Utilities, check for and install current update for Dynamics GP 2018. See CustomerSource (<http://go.microsoft.com/fwlink/?LinkId=249465>) for the latest update information.
+14. Before you start Dynamics GP Utilities, check for and install current update for Dynamics GP. See [CustomerSource](https://go.microsoft.com/fwlink/?LinkId=249465) for the latest update information.
 
 ![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
 15. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
 
-16. Follow the instructions in the Dynamics GP Utilities windows to synchronize your account framework. See Synchronizing a client’s account framework on page 81 for more information.
+16. Follow the instructions in the Dynamics GP Utilities windows to synchronize your account framework. For more information, see [Synchronizing a client’s account framework](#synchronizing-a-clients-account-framework).
 
-17. After using Dynamics GP Utilities, you can install additional component applications. See Chapter 8, “Installing additional components,” for more information.
+17. After using Dynamics GP Utilities, you can install additional component applications. For more information, see [Installing additional components](installing-additional-components.md).
 
 ## Synchronizing a client’s account framework
 
@@ -107,7 +97,7 @@ Dynamics GP Utilities uses the scripts and files installed previously to complet
 To synchronize a client’s account framework:
 
 1. Start Dynamics GP Utilities.
-(Start &gt;&gt; Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities)
+(Start &gt;&gt; Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP &gt;&gt; GP Utilities)
 
 2. In the Welcome to Dynamics GP Utilities window, verify your server name, and enter a user ID and password. Click Next.
 
@@ -123,10 +113,8 @@ To synchronize a client’s account framework:
 
 5. Repeat the client installation process for each computer you’ll use as a client or process server for Dynamics GP.
 
-<span id="_Multiple_instances_of" class="anchor"></span>
-
 ## Multiple instances of Dynamics GP
 
-You can have multiple instances—installations—of Dynamics GP on the same computer. Multiple instances are typically installed on client computers. You may want to use an additional instance of Dynamics GP for testing purposes.
+You can have multiple instances or installations of Dynamics GP on the same computer. Multiple instances are typically installed on client computers. You may want to use an additional instance of Dynamics GP for testing purposes.
 
 When you install Dynamics GP on a computer with an existing instance of Dynamics GP, you’ll enter a name for the new instance during the installation process. Each instance will be displayed in the Add or Remove Programs control panel. For example, if you entered TEST as an instance name, Dynamics GP (TEST) will be displayed in the Add or Remove Programs control panel. The instance also will appear in the program group for Microsoft Dynamics and in the folder where Microsoft Dynamics is installed. The default folder location is C:\\Program Files\\Microsoft Dynamics\\GP$TEST. The first instance of Dynamics GP on a computer is considered the default instance. The default instance of Dynamics GP isn’t assigned an instance name.

@@ -12,19 +12,14 @@ ms.topic: article
 ms.assetid: 12e47cac-e147-466f-93f5-c09251cbc7a9
 ms.reviewer: edupont
 ---
-### 
 
 # Install Dynamics GP on the first computer
 
-Use the information in this chapter to install Dynamics GP 2018 on the first computer. This chapter contains the following sections:
-
--   [Installation overview](#installation-overview)  
-
--   [Installing Dynamics GP (first computer)](#installing-microsoft-dynamics-gp-first-computer)  
+Use the information in this chapter to install Dynamics GP on the first computer.  
 
 ## Installation overview
 
-In a multiuser local area network environment, Dynamics GP applications are typically installed on a server, and then on each client. However, Dynamics GP is not required to be installed on the server. Each client will have access to data stored on the server. You can install your clients using the Dynamics GP media or using a client installation package. For more about creating an installation package for your clients, see [Chapter 11, “Creating an installation package.”](#_Creating_an_installation_1)  
+In a multiuser local area network environment, Dynamics GP applications are typically installed on a server, and then on each client. However, Dynamics GP is not required to be installed on the server. Each client will have access to data stored on the server. You can install your clients using the Dynamics GP media or using a client installation package. For more about creating an installation package for your clients, see [Creating an installation package](creating-an-installation-package.md).  
 
 ## Installing Dynamics GP (first computer)
 
@@ -34,11 +29,11 @@ To install Dynamics GP (first computer):
 
 1. Be sure that you’re logged in to Windows as a user with system administrator privileges.
 
-2. From the Dynamics GP 2018 installation media, double-click the
+2. From the Dynamics GP installation media, double-click the
 
         Setup.exe file to open the Dynamics GP installation window.
 
-3. If one or more of the following components isn’t installed on your computer, the Dynamics GP 2018 Bootstrapper Setup window opens and you can choose to install the missing component or components.
+3. If one or more of the following components isn’t installed on your computer, the Dynamics GP Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
     -   Dexterity Shared Components 18.0
 
@@ -66,7 +61,7 @@ To install Dynamics GP (first computer):
 
     The installation program verifies that your system has the minimum operating system required to run Dynamics GP. If your system does not meet requirements, the installation will not continue.
 
-5. If you are installing Dynamics GP on a computer with an existing instance of Dynamics GP 2018, select the Create new instance option, enter a name for the new instance, and then click Next.
+5. If you are installing Dynamics GP on a computer with an existing instance of Dynamics GP, select the Create new instance option, enter a name for the new instance, and then click Next.
 
 6. In the Country/Region Selection window, select the primary country or region where you do business. Your selection affects which features are available to install. Some features are available only in selected countries or regions. Click Next.
 
@@ -78,8 +73,8 @@ To install Dynamics GP (first computer):
 
     When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
-| Option                                                                         | What happens                                                                                                             |
-|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Option   | What happens   |
+|---------|-------------|
 | ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
 | ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
 | ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
@@ -112,12 +107,12 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 16. In the Installation Complete window, click Exit.
 
-17. Before you start Dynamics GP Utilities, check for and install current update for Dynamics GP 2018. See CustomerSource (<https://mbs.microsoft.com/customersource>) for the latest update information.
+17. Before you start Dynamics GP Utilities, check for and install current update for Dynamics GP. See [CustomerSource](https://mbs.microsoft.com/customersource) for the latest update information.
 
 ![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
-18. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
+18. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 R2&gt;&gt; GP Utilities.
 
-19. Follow the instructions in Chapter 7, “Using Dynamics GP Utilities.” You can use the Dynamics GP Utilities windows to set up your account framework and the Dynamics GP system data tables, and to create your companies.
+19. Follow the instructions in [Using Dynamics GP Utilities](using-microsoft-dynamics-utilities.md). You can use the Dynamics GP Utilities windows to set up your account framework and the Dynamics GP system data tables, and to create your companies.
 
-20. After using Dynamics GP Utilities, you can install additional features or components that add specialized functionality to your Dynamics GP system on the server computer. See Chapter 8, “Installing additional components,” for more information.
+20. After using Dynamics GP Utilities, you can install additional features or components that add specialized functionality to your Dynamics GP system on the server computer. See [Installing additional components](installing-additional-components.md) for more information.  

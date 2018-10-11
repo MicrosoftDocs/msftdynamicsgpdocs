@@ -12,21 +12,10 @@ ms.topic: article
 ms.assetid: ec79456b-f8e6-402c-acfa-daaca48c059b
 ms.reviewer: edupont
 ---
-<span id="_Toc499731580" class="anchor"></span>
 
 # After installing Dynamics GP
 
 Use the information in this chapter to log in to Dynamics GP for the first time and register Dynamics GP. You also may have to grant user access to alternate Dynamics GP windows and reports.
-
-This chapter contains the following sections:
-
--   [Logging in to and quitting Dynamics GP](#logging-in-to-and-quitting-microsoft-dynamics-gp)  
-
--   [Registering Dynamics GP](#registering-microsoft-dynamics-gp)  
-
--   [Security for Dynamics GP](#security-for-microsoft-dynamics-gp)  
-
--   [Tasks for SQL Server Reporting Services reports](#tasks-for-sql-server-reporting-services-reports)  
 
 ## Logging in to and quitting Dynamics GP
 
@@ -34,7 +23,7 @@ If you have trouble starting Dynamics GP, contact your network administrator.
 
 To log in to Dynamics GP:
 
-1. Choose Start &gt; Programs &gt; Microsoft Dynamics &gt; GP 2018 &gt; GP
+1. Choose Start &gt; Programs &gt; Microsoft Dynamics &gt; GP
 The Welcome to Dynamics GP window opens.
 
 ![login screen using the sa user](media/install-dynamics-gp-setup-01.png "Login screen")  

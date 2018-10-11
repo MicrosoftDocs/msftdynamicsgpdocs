@@ -120,4 +120,4 @@ We recommend that you install each Dynamics GP feature and additional component 
 
 15. How Dynamics GP is installed on the client computer using the installation package depends on the tools and applications you use. You can send an email with a link to the installation package. Or, you can create a deployment package using a software distribution tool such as Systems Management Server so that Dynamics GP is automatically installed after the user logs into their computer.
 
-For more information about deployment, see the Documentation and resources for Dynamics GP 2018 Web site (<http://go.microsoft.com/fwlink/?LinkId=249465>).
+For more information about deployment, see the Documentation and resources for Dynamics GP 2018 Web site (<https://go.microsoft.com/fwlink/?LinkId=249465>).
