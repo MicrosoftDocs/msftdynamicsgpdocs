@@ -80,7 +80,7 @@ The new action is added as a view in the **Checkbooks Lookup** window. To exclud
 
 The **Default View** field in the ASIEXP99 table (DYNAMICS database) will be set to *2* when **Exclude Inactive Checkbooks** is the default view. There are no changes to table structure with this new functionality.  
 
-### Mass update master records as inactive from navigation lists
+### Bulk update master records as inactive from navigation lists
 
 In Dynamics GP 2018 R2, users can inactivate and reactivate master records for accounts, checkbooks, customers, sales people, vendors, employees, and items from Navigation Lists. Additionally, users can inactivate one employee at a time from navigation lists.  
 
@@ -94,19 +94,6 @@ Additionally, vendors can be marked as **Temporary** in the **Vendors Navigation
 
 > [!NOTE]
 > Employees must be inactivated/reactivated one at a time. If more than one Employee ID is selected, the **Inactivate** and **Reactivate** options are grayed out. When a user clicks the **Inactivate** or **Reactivate** option, the **Employee Maintenance** window will automatically open.  
-
-
-### Start date/end date for pay code  
-
-The **Employee Pay Code Maintenance** window now includes a start date and end date. This is used when building the pay checks to specify if the selected pay codes must be included.  
-
-![Shows the window for Employee Pay Code Maintenance.](media/2018R2_EmployeePayCodeMaintenance.png "Employee Pay Code Maintenance")  
-
-### Shared maxiumum for benefit and deduction codes
-
-A new window has been added for the maximum shared amount for benefit and deduction codes. In the **Ded/Ben Shared Limit Setup** window, you can set the Calendar Year Max for multiple codes. This is amount is will not be exceeded for those combined codes during a pay run as it compares the year-to-date total.   
-
-![Shows the window for Deductible and Benefits Limit Setup.](media/2018R2_EmployeePayCodeMaintenance.png "Ded/Ben Limit Setup")  
 
 ## Purchasing
 
@@ -210,6 +197,7 @@ When you click the email button, Dynamics GP will email a customer statement to 
 > Email functionality is dependent on Word Templates being enabled and properly configured in your company.  
 
 ## Human resources & payroll enhancements
+
 A number of updates have been made to the HR and payroll areas in Dynamics GP.  
 
 ### Payroll check register FICA totals
@@ -234,6 +222,8 @@ With the release of Dynamics GP 2018 R2, users can assign a start date and/or an
 > [!NOTE]
 > In earlier versions of Dynamics GP, it was not possible to restrict whether a pay code is included in a pay run via start and/or end dates. Instead, users would generally 'inactivate' a pay code (most often a salary type pay code) to ensure it's not included in a pay run.
 
+![Shows the window for Employee Pay Code Maintenance.](media/2018R2_EmployeePayCodeMaintenance.png "Employee Pay Code Maintenance")  
+
 The **Start Date** and **End Date** fields are not required in the **Employee Pay Code Maintenance** window. The following table describes the effect of the settings of these fields:
 
 |Settings|Effect  |
@@ -254,6 +244,8 @@ The batch will remain available after the pay run has been posted. The pay code 
 It is now possible to assign a shared calendar year maximum for groups of benefits and/or groups of deductions. This will be a huge benefit to your organization for employees who may contribute to two 401K plans.  
 
 A new window has been added to accommodate the new deduction and benefit shared maximum functionality, the **Ded/Ben Shared Limit** window.  
+
+![Shows the window for Deductible and Benefits Limit Setup.](media/2018R2_BenefitDeduction.png "Ded/Ben Limit Setup")  
 
 > [!NOTE]
 > When a deduction/benefit group code is saved in the **Ded/Ben Shared Limit Setup** window, the shared yearly maximum will be applied to all employees who are assigned to those deductions. Each deduction or benefit can be assigned to one group code.  
@@ -303,19 +295,5 @@ SmartList Favorites created via SmartList Designer will now appear in the SmartL
 With the release of Dynamics GP 2018 R2, you will notice a new tab on your home page: **Intelligent Cloud Insights**. Essentially, you can connect your Dynamics GP to a Dynamics 365 Business Central cloud tenant that you can synchronize data to. This enables cloud scenarios for your Dynamics GP that will then show in the **Intelligent Cloud Insights** tab with insights from machine learning and other cloud scenarios.  
 
 When you upgrade to GP 2018 R2 with an existing install, the users' Home Page tab will default as usual, but you will see a new tab called **Intelligent Cloud Insights**. If you do a new install of Dynamics GP 2018 R2, the Home Page will default to the **Intelligent Cloud Insights** tab.  
-
-The **Intelligent Cloud Insights** home page is controlled by the SY08100 table. You can use the following scripts to set what page ALL users will see when they log in: (It is recommended to test scripts prior to live environment and have a good backup if needed).
-
-```
-/*To set Intelligent Cloud Insights as the default page on launch*/
-UPDATE DYNAMICS.SY08100
-SET Visible = 1
-WHERE SectionID = 2
-
-/*To set each user’s Home page as the default page on launch*/
-UPDATE DYNAMICS.SY08100
-SET Visible = 0
-WHERE SectionID = 2
-```
 
 For more information, see [Frequently Asked Questions about Connecting to the Intelligent Cloud](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud) in the docs for Dynamics 365 Business Central.
