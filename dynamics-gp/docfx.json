@@ -33,10 +33,10 @@
     "externalReference": [],
     "globalMetadata": { 
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/msftdynamicsgpdocs",
+      "feedback_github_repo": "MicrosoftDocs/nav-content",
       "feedback_product_url": "https://experience.dynamics.com/ideas/list/?forum=e288ef32-82ed-e611-8101-5065f38b21f1",
       "ms.author": "edupont",
-      "ms.product": "dynamics-gp",
+      "ms.prod": "dynamicsgp",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "searchScope": ["DynamicsGP"],
       "titleSuffix": "Dynamics GP",

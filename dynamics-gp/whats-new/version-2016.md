@@ -6,10 +6,10 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.reviewer: 
-ms.date: 09/05/2018
+ms.date: 10/12/2018
 ---
 
 # What’s new in Dynamics GP 2016
