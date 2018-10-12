@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: aa6e26de-b312-4a56-b877-4cf2fd0393fe
 ms.reviewer: 
@@ -54,7 +54,8 @@ You can click the error icon to display the details of the error that occurred. 
 
 Search functionality provides an option for accessing and opening windows in the web client as an alternative to the standard navigation. The search window is opened from an icon at the top of the navigation pane.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Note that you’ll use the search window to locate and open multiple windows at the same time in the web client.  
+> [!NOTE]
+> Note that you’ll use the search window to locate and open multiple windows at the same time in the web client.  
 
 ![shows the navigation pane options dialog.](media/using-web-navigation-options.png "Navigation pane")  
 

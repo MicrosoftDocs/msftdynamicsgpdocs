@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 1b4d1c9a-8ad7-497e-9a22-a7206cd1e516
 ms.reviewer: 
@@ -66,7 +66,8 @@ In most cases, you won’t need to do any configuration or management actions fo
 
 The GP Web Resource Cache is a Windows service, so you can use the Services control panel to start or stop the cache. As soon as you stop the cache, any new web client sessions will fall back to session level caching.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Any time the GP Web Resource Cache is not available, session level caching is used.  
+> [!NOTE]
+> Any time the GP Web Resource Cache is not available, session level caching is used.  
 
 ### Cache configuration file
 
@@ -84,4 +85,5 @@ You may want to supply a specific location for the machine level cache for speci
 
 **CleanupMaxAge**   This setting specifies the minimum amount of time that must have elapsed since the content was last accessed before it is removed by the automatic cleanup action. The default value is 30 days. The format for this setting is days:hours:minutes:seconds.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")After you have made any changes to the configuration file, be sure to restart the Dynamics GP Web Resource Cache service in the Services control panel.  
+> [!NOTE]
+> After you have made any changes to the configuration file, be sure to restart the Dynamics GP Web Resource Cache service in the Services control panel.  

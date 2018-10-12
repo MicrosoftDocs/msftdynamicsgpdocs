@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 12e47cac-e147-466f-93f5-c09251cbc7a9
 ms.reviewer: edupont
@@ -109,7 +109,8 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 17. Before you start Dynamics GP Utilities, check for and install current update for Dynamics GP. See [CustomerSource](https://mbs.microsoft.com/customersource) for the latest update information.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+> [!NOTE]
+> To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
 18. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 R2&gt;&gt; GP Utilities.
 

@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 3f1d0bb8-4967-4a30-814b-b07c5ea58959
 ms.reviewer: edupont
@@ -103,7 +103,8 @@ After you have specified the feature or features, click Next.
 
 7. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP&gt;&gt; GP Utilities.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+> [!NOTE]
+> To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
 8. The Welcome To Dynamics GP Utilities window opens when you are logged into the server you selected. Read the message and click Next.
 

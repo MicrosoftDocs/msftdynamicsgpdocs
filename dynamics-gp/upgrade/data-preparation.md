@@ -7,42 +7,20 @@ ms.author: edupont
 manager: edupont
 applies_to: 
 ms.date: 08/24/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 4af5a255-4233-4158-b7d7-660a67e226d0
 ms.reviewer: 
 ---
 # Data preparation
 
-<span id="_Toc498615770" class="anchor"></span>
-
-We recommend that you complete the steps in this chapter to prepare your data before you upgrade your system. After you’ve completed these steps, see [Chapter 4, System preparation](#_System_Preparation), for instructions to prepare your system before upgrading to Dynamics GP 2018. Be sure to review the [Known issues](#_Known_issues) on page 23 before upgrading to Dynamics GP 2018.  
-
-This chapter contains the following sections:
-
--   [Payroll](#payroll)  
-
--   [1099 amounts in Payables Management](#amounts-in-payables-management)  
-
--   [Direct Debits and Refunds](#direct-debits-and-refunds)  
-
--   [Field Service Series](#field-service-series)  
-
--   [Workflow for SharePoint](#workflow-for-sharepoint)  
-
--   [Posting open transactions](#posting-open-transactions)  
-
--   [Reconciling](#reconciling)  
-
--   [Backups](#backups)  
-
--   [Reports you should print](#reports-you-should-print)  
+We recommend that you complete the steps in this section to prepare your data before you upgrade your system. After you’ve completed these steps, see [System preparation](system-preparation.md), for instructions to prepare your system before upgrading to the latest version of Dynamics GP. Be sure to review the known issues before upgrade.  
 
 ## Payroll
 
-If you’re upgrading to Dynamics GP 2018, you need to determine whether the payroll tax update tables are current. To do so, check the Last Tax Update field in the Payroll Tax Setup window (Tools &gt;&gt; Setup &gt;&gt; System &gt;&gt; Payroll Tax). If your tax tables are not current, update them after you upgrade to Dynamics GP 2018. Review the latest tax update documentation for the date of the last tax update.
+If you’re upgrading to Dynamics GP 2018 or Dynamics GP 2018 R2, you need to determine whether the payroll tax update tables are current. To do so, check the Last Tax Update field in the Payroll Tax Setup window (Tools &gt;&gt; Setup &gt;&gt; System &gt;&gt; Payroll Tax). If your tax tables are not current, update them after you upgrade to Dynamics GP 2018. Review the latest tax update documentation for the date of the last tax update.
 
-Tax tables are not included on the Dynamics GP media; to update tax tables, you must download them from CustomerSource (US Payroll <https://mbs.microsoft.com/customersource/northamerica/GP/downloads/taxregulatory-updates/TUGP2018>; Canadian Payroll: <https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/cagptuye2018>). Choose Tax and Regulatory Updates. Follow instructions for installing the tax update to ensure that clients and servers are updated properly.
+Tax tables are not included on the Dynamics GP media; to update tax tables, you must download them from CustomerSource [US Payroll](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/taxregulatory-updates/TUGP2018); [Canadian Payroll](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/cagptuye2018). Choose Tax and Regulatory Updates. Follow instructions for installing the tax update to ensure that clients and servers are updated properly.
 
 ## 1099 amounts in Payables Management
 
@@ -82,7 +60,7 @@ If you are using Analytical Accounting, be sure to post all saved batches that y
 
 You may want to reconcile your accounting records before upgrading to Dynamics GP 2018 to verify that your accounting records are accurate. Refer to the documentation of the modules you are using for specific information.
 
-Before reconciling, back up your company’s accounting data. For more information about making backups, refer to your System Administrator’s Guide (Help &gt;&gt; Contents &gt;&gt; select System administration)![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol").  
+Before reconciling, back up your company’s accounting data.  
 
 ## Backups
 

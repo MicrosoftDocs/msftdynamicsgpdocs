@@ -7,22 +7,15 @@ ms.author: edupont
 manager: edupont
 applies_to: 
 ms.date: 08/24/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 6f2f7511-6871-4d78-a9b9-824e479348e5
 ms.reviewer: 
 ---
-<span id="_Toc498615810" class="anchor"></span>
 
-# Insatall Dynamics GP on subsequent computers
+# Install Dynamics GP on subsequent computers
 
 Use the information in this chapter to install to Dynamics GP 2018 on each client computer. You also can use Dynamics GP Utilities to synchronize the Dynamics GP dictionary on each additional client with your account framework.
-
-This chapter contains the following sections:
-
--   [Installing Dynamics GP (additional computers)](#_Installing_Microsoft_Dynamics)  
-
--   [Synchronizing a client’s account framework](#synchronizing-a-clients-account-framework)  
 
 ## Installing Dynamics GP (additional computers)
 
@@ -104,7 +97,8 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 14. After installing Dynamics GP and the most recent update, you can perform the following steps.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system's documentation for more information.  
+> [!NOTE]
+> To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system's documentation for more information.  
 
 -   Start Dynamics GP Utilities.
 
@@ -116,7 +110,8 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 Synchronize the account framework of each client where you install Dynamics GP. Scripts and files installed previously on the server are used by Dynamics GP Utilities to complete the client setup.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system's documentation for more information.  
+> [!NOTE]
+> To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system's documentation for more information.  
 
 To synchronize a client’s account framework:
 

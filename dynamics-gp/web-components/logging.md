@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 6efe635c-3de1-42e0-b23a-a9988979ef1f
 ms.reviewer: 
@@ -96,4 +96,5 @@ The Session Management snap-in of the Web Management Console is used to enable l
 
 4. Click OK. The logging for the session will begin.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Be sure that you disable logging when you have finished creating the logs.  
+> [!NOTE]
+> Be sure that you disable logging when you have finished creating the logs.  

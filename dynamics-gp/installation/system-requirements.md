@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: d8d8b73c-60f6-46f4-bb8c-436e94c01501
 ms.reviewer: edupont
@@ -111,7 +111,8 @@ Before you deploy Dynamics GP Reporting Services reports, you must install and c
 
 To deploy the SQL Server Reporting Services reports, you must modify the Report Server web.config file for the timeout execution and the maximum request length. If you don’t update the Report Server web.config file for the timeout execution, you might receive an error that states that the operation has timed out. If you don’t update the Report Server web.config file for the maximum request length, you will receive an error that the deployment has exceeded the maximum request length allowed by the target server.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")You must be an administrator to modify the Report Server web.config file.  
+> [!NOTE]
+> You must be an administrator to modify the Report Server web.config file.  
 
 To modify the Report Server Web.config file:
 

@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 410091e2-9125-45b8-b1fc-69577eab61d9
 ms.reviewer: edupont
@@ -108,7 +108,8 @@ We recommend that you install each Dynamics GP feature and additional component 
 
 11. Specify the location of the OLE Notes files and Letter Wizard files. Click Next.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")Dynamics GP uses the Document Attachment Management functionality instead of OLE objects.  
+> [!NOTE]
+> Dynamics GP uses the Document Attachment Management functionality instead of OLE objects.  
 
 12. In the Install Program window, click Install.
 

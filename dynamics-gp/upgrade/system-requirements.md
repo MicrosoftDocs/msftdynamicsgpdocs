@@ -7,7 +7,7 @@ ms.author: edupont
 manager: edupont
 applies_to: 
 ms.date: 08/24/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 3509e92e-d825-4947-8ea2-7e57b7c2a9e0
 ms.reviewer: 
@@ -16,39 +16,18 @@ ms.reviewer:
 
 This chapter contains a list of prerequisites and system requirement changes for Dynamics GP, as well as disk space requirements for SQL Server computers.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software will improve performance.  
-
-<span id="_Toc498615759" class="anchor"></span>
-
-This chapter contains the following sections:
-
--   [Releases supported by the upgrade](#releases-supported-by-the-upgrade)  
-
--   [Home page prerequisites](#home-page-prerequisites)  
-
--   [Word templates prerequisites](#word-templates-prerequisites)  
-
--   [Email requirements](#email-requirements)  
-
--   [SQL Server Reporting Services requirements](#sql-server-reporting-services-requirements)  
-
--   [Modify the Report Server web.config file](#modify-the-report-server-web.config-file)  
-
--   [Dynamics GP CRM requirements](#_Microsoft_Dynamics_GP)  
-
--   [About remote access](#about-remote-access)  
-
--   [Determine disk space for the upgrade process](#determine-disk-space-for-the-upgrade-process)  
+> [!NOTE]
+> Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software will improve performance.  
 
 ## Releases supported by the upgrade
 
-You can upgrade to Dynamics GP 2018 from selected previous releases. To review whether or not you can upgrade your release, see <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>
+You can upgrade to Dynamics GP 2018 from selected previous releases. To review whether or not you can upgrade your release, see [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade).
 
-If you are upgrading to Dynamics GP 2018, you must install the latest update or hotfix for Dynamics GP 2018 before starting Dynamics GP Utilities. See CustomerSource (<https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>) for the latest update information.
+If you are upgrading to Dynamics GP 2018, you must install the latest update or hotfix for Dynamics GP 2018 before starting Dynamics GP Utilities. See [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018) for the latest update information.
 
 ## System requirement changes
 
-The following changes are new with Dynamics GP 2018. For a complete list of all system requirements, see <https://go.microsoft.com/fwlink/?LinkId=521785>. You may want to consider upgrading your hardware for improved performance.
+The following changes are new with Dynamics GP 2018. For a complete list of all system requirements, see [https://go.microsoft.com/fwlink/?LinkId=521785](https://go.microsoft.com/fwlink/?LinkId=521785). You may want to consider upgrading your hardware for improved performance.
 
 ### Operating system requirement changes
 
@@ -88,7 +67,7 @@ Microsoft Office 2013 and Microsoft Office 2016 are supported. All previous vers
 
 ## Home page prerequisites
 
-To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with Dynamics GP. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the Dynamics GP 2018 documentation resource Web site (<https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>) for the most current documentation.
+To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with Dynamics GP. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP 2018 documentation resource Web site](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018) for the most current documentation.
 
 The following versions of SQL Server Reporting Services are supported.
 
@@ -106,7 +85,7 @@ The following components must be installed before you can use Word Templates for
 
 -   Open XML SDK 2.0 for Microsoft Office (installed as a Dynamics GP prerequisite)
 
-If a component isn't installed, you can download the component from <https://www.microsoft.com>.
+If a component isn't installed, you can download the component from [microsoft.com](https://www.microsoft.com).
 
 Additional components are required to modify templates.
 
@@ -164,7 +143,8 @@ Before you deploy Dynamics GP Reporting Services reports, you must install and c
 
 To deploy the SQL Server Reporting Services reports, you must modify the Report Server web.config file for the timeout execution and the maximum request length. If you don’t update the Report Server web.config file for the timeout execution, you might receive an error that states that the operation has timed out. If you don’t update the Report Server web.config file for the maximum request length, you will receive an error that the deployment has exceeded the maximum request length allowed by the target server.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You must be an administrator to modify the Report Server web config file.  
+> [!NOTE]
+> You must be an administrator to modify the Report Server web config file.  
 
 To modify the Report Server Web config file:
 
@@ -198,7 +178,8 @@ For more information about system requirements see <https://go.microsoft.com/fwl
 
 For the upgrade process, be sure that you have enough disk space before you begin. To determine the disk space required for the upgrade, you need to find the size of the largest table for all Dynamics GP databases. To determine disk space, use Microsoft SQL Server Management Studio for Microsoft SQL Server.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You can download an upgrade preparation script that will help you determine the disk space requirements from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>.  
+> [!NOTE]
+> You can download an upgrade preparation script that will help you determine the disk space requirements from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>.  
 
 To determine disk space for the upgrade process using Microsoft SQL Server Management Studio:
 
@@ -261,4 +242,5 @@ If the data files (MDF) are located on a different hard disk than the transactio
 
 -   Right-click the TEMPDB database and select Properties. Choose Files and add the additional space needed for the size of the largest table of all Dynamics GP databases to the Space Allocated (MB) column. When adding additional space, you are increasing the space for the data file (MDF) and the transaction log file (LDF) as well.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If the database size is not manual configured, the time needed to upgrade the databases will increase because the database data, transaction log and TEMPDB files will all have to increase.  
+> [!NOTE]
+> If the database size is not manual configured, the time needed to upgrade the databases will increase because the database data, transaction log and TEMPDB files will all have to increase.  

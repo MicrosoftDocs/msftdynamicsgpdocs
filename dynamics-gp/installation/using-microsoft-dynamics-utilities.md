@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/07/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.reviewer: edupont
 ---
@@ -191,7 +191,8 @@ To prepare Dynamics GP for use with custom settings:
 
 ![login screen to dynamics gp utilities](media/gp-utilities-2.png "Login screen")  
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")You must be logged in as a system administrator to complete database and system functions within [!INCLUDE[gputilities](../includes/gputilities.md)].  
+> [!NOTE]
+> You must be logged in as a system administrator to complete database and system functions within [!INCLUDE[gputilities](../includes/gputilities.md)].  
 
 3. The Welcome To [!INCLUDE[gputilities](../includes/gputilities.md)] window opens when you are logged into the server you selected. Read the message and click Next.
 
@@ -217,7 +218,8 @@ You should use descriptive names that clearly indicate how each segment will be 
 
 The length of each segment can be no longer than 66 characters. Maximums you enter now will apply to companies you set up later.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")If you have more than one company, you may need to enter maximum segment lengths that exceed the 66-character account length maximum when the segment lengths are added together. The total size must be 82 or less. See Choosing account framework storage size on page 27 for more information.  
+> [!NOTE]
+> If you have more than one company, you may need to enter maximum segment lengths that exceed the 66-character account length maximum when the segment lengths are added together. The total size must be 82 or less. See Choosing account framework storage size on page 27 for more information.  
 
 8. Select sorting options in the Define Additional Sorting Options window. This window displays the predefined sorting options available in Dynamics GP to sort account information in windows and on reports.
 
@@ -235,7 +237,8 @@ The length of each segment can be no longer than 66 characters. Maximums you ent
 
 10. When you’ve finished selecting segments, click Next to verify your account framework in the Verify Account Framework window.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")To make corrections if necessary, click Back until the appropriate window is displayed, then click Next in each window until the Verify Account Framework window is displayed again.  
+> [!NOTE]
+> To make corrections if necessary, click Back until the appropriate window is displayed, then click Next in each window until the Verify Account Framework window is displayed again.  
 
 A report file called Acctfram.txt is created in the Data folder inside of the GP folder, which contains the same account framework information. This file, which is created only on the first client, stores account framework information for your reference. Be sure to make a backup of the Acctfram.txt file.
 

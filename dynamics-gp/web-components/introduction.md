@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 3d258f3c-e6d6-4d63-a362-2b33db528ae1
 ms.reviewer: 
@@ -55,23 +55,6 @@ Dynamics GP Web Components. It includes the following parts:
 -   [Part 6, Web client administration](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%206%20Web%20client%20admin.dotx), contains information about administrative tasks you will perform for the web client.  
 
 -   [Part 7, Using the Web client](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%207%20Using%20the%20Web%20client.dotx), provides information for end-users of the web client.  
-
-### Symbols and conventions
-
-This documentation uses the following symbols and conventions to make specific types of information stand out.
-
-| **Symbol**                                            | **Description**                                                                                  |
-|-------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol") | The light bulb symbol indicates helpful tips, shortcuts and suggestions.                         |  
-| ![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol") | The warning symbol indicates situations you should be especially aware of when completing tasks. |  
-
-|  **Convention**                                            | **Description**                                                                                                                                                                                           |
-|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Creating a batch*                                                                                       | Italicized type indicates the name of a section or procedure.                                                                                                                                             |
-| File &gt;&gt; Print                                                                                      | The (&gt;&gt;) symbol indicates a sequence of actions, such as selecting items from a menu or toolbar, or pressing buttons in a window. This example directs you to go to the File menu and choose Print. |
-| tab###  or enter###  | All capital letters indicate a key or a key sequence.                                                                                                                                                     |
-
-<span id="_Send_us_your" class="anchor"><span id="_Additional_resources" class="anchor"></span></span>
 
 ### Additional resources
 

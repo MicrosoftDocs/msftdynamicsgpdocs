@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 40172c16-c363-49ac-ae76-38c7194e1f76
 ms.reviewer: 
@@ -26,7 +26,8 @@ This portion of the documentation discusses the web sites that are needed for th
 
 Two web sites – one for the web client and another for web management console – are used for the Dynamics GP web components installation. These two web sites can be hosted in a single IIS web site, or on separate IIS web sites.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")The IIS web sites must be configured for SSL (secure sockets layer). This means each must have a security certificate. If you use two separate IIS web sites, then you will need two security certificates. If both web sites are hosted on the same web site, then only one security certificate is required.  
+> [!NOTE]
+> The IIS web sites must be configured for SSL (secure sockets layer). This means each must have a security certificate. If you use two separate IIS web sites, then you will need two security certificates. If both web sites are hosted on the same web site, then only one security certificate is required.  
 
 ### Dynamics GP Web Client site
 

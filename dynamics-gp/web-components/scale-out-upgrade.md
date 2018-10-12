@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: e9b7fc59-b6af-49c8-b009-62ae19cb5026
 ms.reviewer: 
@@ -132,7 +132,8 @@ To ensure that the updated Dynamics GP web client is working properly, you shoul
 
 4. In Internet Explorer, go to the Dynamics GP web client site. Sign in to the web client.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")If you watch closely, you should see a new Silverlight application is downloaded for the Dynamics GP web client.  
+> [!NOTE]
+> If you watch closely, you should see a new Silverlight application is downloaded for the Dynamics GP web client.  
 
 5. Look in the lower-right corner to verify the trust level for the web client. If you see the icon indicating that the web client is running in sandboxed mode, you have an additional step to perform.
 

@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: f7200048-1617-470d-a01c-8fad05a3a85b
 ms.reviewer: 
@@ -41,7 +41,8 @@ When the user signs in to the web client, they simply provide their Windows Logi
 
 Server login (discussed in the previous section) is used to access the SQL Server databases.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")Be aware that users who do not sign in to the web client using their own SQL Server login cannot send remote processes to the Distributed Process Server.  
+> [!NOTE]
+> Be aware that users who do not sign in to the web client using their own SQL Server login cannot send remote processes to the Distributed Process Server.  
 
 ## Web client runtime components
 
@@ -56,8 +57,6 @@ To install the web client runtime components
 3. In the Program Maintenance window, click Add/Remove Features.
 
 4. Be sure that the Web Client Runtime feature is marked to be installed.
-
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")  
 
 5. Click Next to continue, and then click Install to complete the installation process.
 

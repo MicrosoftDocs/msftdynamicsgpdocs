@@ -7,7 +7,7 @@ ms.author: edupont
 manager: edupont
 applies_to: 
 ms.date: 08/24/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 7e24552e-1515-40ef-9dbf-e10fab7a9215
 ms.reviewer: 
@@ -15,18 +15,6 @@ ms.reviewer:
 # Additional features and components upgrade
 
 Depending on your organization’s needs, you may have purchased additional features or components that add specialized functionality to your Dynamics GP system. After you’ve installed Dynamics GP 2018 and upgraded your data using Dynamics GP Utilities, you can install additional features and components that integrate with Dynamics GP.
-
-This chapter contains the following sections:
-
--   [Dynamics GP features](#_Microsoft_Dynamics_GP)  
-
--   [Adding or removing additional features](#adding-or-removing-additional-features)  
-
--   [Additional components](#additional-components)  
-
--   [Installing an additional component](#installing-an-additional-component)  
-
-<span id="_Toc498615802" class="anchor"></span>
 
 ## Dynamics GP features
 

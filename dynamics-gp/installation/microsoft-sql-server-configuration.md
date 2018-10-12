@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: a292895a-a538-4ae6-a3d2-cd8bb93de39a
 ms.reviewer: edupont
@@ -58,7 +58,8 @@ The code page for character data is defined by the Windows locale selected when 
 
 It is important to select the correct collation for Dynamics GP when you’re installing SQL Server. Using SQL Server collations that include Binary (sort order 50) or Dictionary Order, Case-Insensitive (sort order 52) sorting is required for Dynamics GP. To change these settings later, you must reinstall SQL Server and Dynamics GP.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")You should check the compatibility of all the products you have that will use SQL Server before deciding on the collation option.  
+> [!NOTE]
+> You should check the compatibility of all the products you have that will use SQL Server before deciding on the collation option.  
 
 ## Understanding sorting options
 
@@ -77,7 +78,8 @@ The following table shows the differences between Dictionary Order, Case- Insens
 
 We recommend that you follow the instructions in this section if you have not yet installed Microsoft SQL Server 2012. For information about upgrading SQL Server, see the SQL Server installation documentation. (In the window that appears when you insert the SQL Server DVD, select Browse Setup/Upgrade Help.)
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")With SQL Server 2012, you can have multiple instances of SQL Server on the same physical server. We recommend that you have a dedicated a server. See your SQL Server 2012 documentation for more information about multiple instances.  
+> [!NOTE]
+> With SQL Server 2012, you can have multiple instances of SQL Server on the same physical server. We recommend that you have a dedicated a server. See your SQL Server 2012 documentation for more information about multiple instances.  
 
 To install Microsoft SQL Server 2012:
 
@@ -107,7 +109,8 @@ To install Microsoft SQL Server 2012:
 
     -   Management Tools – Basic
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")Select Reporting Services – Native or Reporting Services – SharePoint to use SQL Server Reporting Services reports, display SQL Server Reporting Services metrics on your home page in Dynamics GP, and display SQL Server Reporting Services reports in Microsoft Dynamics Business Analyzer. If you have marked Reporting Services – SharePoint, be sure to mark Reporting Services Add-in for SharePoint Products as well. For more information about installing and setting up SQL Server Reporting Services for use with Dynamics GP see the Documentation and resources for Dynamics GP 2018 Web site (<https://go.microsoft.com/fwlink/?LinkId=249465>) for the most current documentation.  
+> [!NOTE]
+> Select Reporting Services – Native or Reporting Services – SharePoint to use SQL Server Reporting Services reports, display SQL Server Reporting Services metrics on your home page in Dynamics GP, and display SQL Server Reporting Services reports in Microsoft Dynamics Business Analyzer. If you have marked Reporting Services – SharePoint, be sure to mark Reporting Services Add-in for SharePoint Products as well. For more information about installing and setting up SQL Server Reporting Services for use with Dynamics GP see the [Documentation and resources for Dynamics GP 2018](https://go.microsoft.com/fwlink/?LinkId=249465) site for the most current documentation.  
 
 Click Next.
 

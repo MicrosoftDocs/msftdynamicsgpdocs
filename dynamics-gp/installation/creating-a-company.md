@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: ee700f07-5dd2-44a6-af03-3d2c9647744d
 ms.reviewer: edupont
@@ -74,7 +74,8 @@ To add a company using Dynamics GP Utilities:
 
 ![screen for setting up a company](media/create-company-01.png "Company Setup")  
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")If you choose to use wizards to migrate QuickBooks or Peachtree data and enter basic configuration information in step 10, the shipping methods and payment terms and the chart of accounts information you have loaded may change.  
+> [!NOTE]
+>If you choose to use wizards to migrate QuickBooks or Peachtree data and enter basic configuration information in step 10, the shipping methods and payment terms and the chart of accounts information you have loaded may change.  
 
 7. Click Next after entering and selecting company information.
 
@@ -110,7 +111,8 @@ SharePoint Integrated mode location example.
 
 13. Click Next.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+> [!NOTE]
+> If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 16. The Excel Reports Setup window appears if you marked to deploy Excel reports. Select the location to deploy the reports to.
 
@@ -133,7 +135,8 @@ SharePoint location example.
 
 17. Click Next.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+> [!NOTE]
+> If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 18. The Verify SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 

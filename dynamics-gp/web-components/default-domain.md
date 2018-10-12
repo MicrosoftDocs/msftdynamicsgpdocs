@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: fa141208-7ffa-423b-a019-2573377a0e74
 ms.reviewer: 
@@ -50,4 +50,5 @@ Use the following procedure add the default domain setting.
 
 6. Copy the updated **web.config** file into the web client site, replacing the existing file.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You might need to restart IIS for the change to take effect.  
+> [!NOTE]
+> You might need to restart IIS for the change to take effect.  

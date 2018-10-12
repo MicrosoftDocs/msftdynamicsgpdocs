@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 2351bb7b-8f14-4b7d-b4ed-8b97f7974617
 ms.reviewer: 
@@ -55,7 +55,8 @@ The Session Central Service controls the communication between the web site and 
 
 The Dynamics GP Web Client runtime is a component of the Dynamics GP installation. A web client runtime process is created by the Session Service each time a user logs into the Dynamics GP web client. Like the Dynamics.exe process used by the desktop client, the web client runtime process accesses the business logic in the application dictionaries and the data in the SQL database. Instead of displaying the user interface in a Windows application, the web client runtime displays the user interface in a browser.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You might hear this component referred to as the runtime service.  
+> [!NOTE]
+> You might hear this component referred to as the runtime service.  
 
 ### Web Management Console
 

@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 28ac89cc-0a21-456c-a209-39b6ddde3ef7
 ms.reviewer: 
@@ -36,7 +36,8 @@ This configuration is used when the number of users accessing the system is low.
 
 One limitation of the single machine configuration is that there is no redundancy. If the server machine is down, such as when installing an update, no web client users will be able to access Dynamics GP.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")The installation process for this configuration is described in Chapter 10, “Single machine installation.”  
+> [!NOTE]
+> The installation process for this configuration is described in Chapter 10, “Single machine installation.”  
 
 ## Scale out
 
@@ -48,7 +49,8 @@ A typical scale out configuration is shown in the following illustration.
 
 The scale out configuration has some redundancy. If one of the session host machines must be taken out of service, such as when installing an update, the other session host machines will continue supporting web client users. A fully redundant configuration can be achieved by adding an additional Web Server that is load balanced with the initial Web Server. Additional session host machines can be added as needed to support a higher number of users.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")The installation process for this configuration is described in Chapter 11, “Scale out installation.”  
+> [!NOTE]
+> The installation process for this configuration is described in Chapter 11, “Scale out installation.”  
 
 ## Multitenant
 
@@ -62,4 +64,5 @@ The multitenant configuration is typically used by organizations that host Dynam
 
 The multitenant configuration has the best redundancy of any of the typical Dynamics GP web client configurations. In addition to multiple session host machines, having multiple front-end web servers can allow web client users to access the system even when one of the web servers is unavailable.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")This is a more complex configuration and is not covered in this documentation.  
+> [!NOTE]
+> This is a more complex configuration and is not covered in this documentation.  

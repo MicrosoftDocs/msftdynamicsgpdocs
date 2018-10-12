@@ -7,36 +7,15 @@ ms.author: edupont
 manager: edupont
 applies_to: 
 ms.date: 08/24/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 15929702-4de8-48c9-9c72-d280553a4676
 ms.reviewer: 
 ---
-<span id="_Toc498615820" class="anchor"></span>
 
 # After you upgrade
 
-We recommend that you complete the steps in this chapter after you upgrade all Dynamics GP databases. After you’ve completed these steps, see Chapter 10, “Module upgrades from Dynamics GP 2013,” to complete additional procedures that are necessary after you’ve upgraded Dynamics GP and your company data to Dynamics GP 2018.
-
-This chapter contains the following sections:
-
--   [Backups](#_Backups)  
-
--   [Reconciling financial data](#reconciling-financial-data)  
-
--   [Checking links for currency tables](#checking-links-for-currency-tables)  
-
--   [Discontinuing the DexSQL.log](#discontinuing-the-dexsql.log)  
-
--   [Reports you should print after upgrading](#reports-you-should-print-after-upgrading)  
-
--   [Removing the previous release](#removing-the-previous-release)  
-
--   [Security for Dynamics GP](#security-for-microsoft-dynamics-gp)  
-
--   [Create security roles](#create-security-roles)  
-
--   [Security for SQL Server Reporting Services reports](#security-for-sql-server-reporting-services-reports)  
+We recommend that you complete the steps in this chapter after you upgrade all Dynamics GP databases. After you’ve completed these steps, see [Module upgrades from Dynamics GP 2013](module-upgrades-from-microsoft-dynamics-gp-2013.md) to complete additional procedures that are necessary after you’ve upgraded Dynamics GP and your company data to the latest version of Dynamics GP.
 
 ## Backups
 

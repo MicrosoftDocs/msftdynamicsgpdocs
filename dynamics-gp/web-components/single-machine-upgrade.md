@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 1d8b87e1-27ea-48b7-95f5-b302bdf600c7
 ms.reviewer: 
@@ -49,8 +49,6 @@ To upgrade a web client deployment from a Dynamics GP 2013 deployment in the sin
 ![shows the notification that an earlier version of the dynamics gp web components has been detected.](media/upgrade-web.png "Upgrade warning")  
 
 4. The installation wizard will default with the selections from the installation being upgraded. You can change settings as needed. You can also select to add the service based architecture components to the installation. Upgrading the database will ask you for a new database name, defaulting to GPCONFIGURATION. The data will be migrated to the new database when running the configuration wizard.
-
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")  
 
 5. When the installation is complete, run the Dynamics GP Web Components Configuration Wizard. You can access this from the Start menu.
 

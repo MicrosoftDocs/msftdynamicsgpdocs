@@ -7,7 +7,7 @@ ms.author: edupont
 manager: edupont
 applies_to: 
 ms.date: 08/24/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 288c5bf3-9273-4a2d-804f-a33f87de69f7
 ms.reviewer: 
@@ -16,33 +16,15 @@ ms.reviewer:
 
 <span id="_Toc498615780" class="anchor"></span>
 
-We recommend that you complete the steps in this chapter before you upgrade your system. Be sure to follow the instructions on how to prepare your data in [Chapter 3, Data preparation](#_Data_preparation) before preparing your system. After you’ve completed the steps in this chapter, see [Installing Dynamics GP (first computer)](#_Install_Microsoft_Dynamics) on page 31 for instructions to upgrade Dynamics GP.  
-
-This chapter contains the following sections:
-
--   [Updates](#updates)  
-
--   [Reviewing the Readme file](#reviewing-the-readme-file)  
-
--   [Installing components on all client computers](#installing-components-on-all-client-computers)  
-
--   [Upgrading Integration Manager](#upgrading-integration-manager)  
-
--   [Upgrading in a test environment](#upgrading-in-a-test-environment)  
-
--   [Backups](#backups)  
-
--   [Database maintenance](#database-maintenance)  
-
--   [Known issues](#known-issues)  
+We recommend that you complete the steps in this chapter before you upgrade your system. Be sure to follow the instructions on how to prepare your data in [Data preparation](data-preparation.md) before preparing your system. After you’ve completed the steps in this chapter, see [Installing Dynamics GP on the first computer](installing-on-first-computer.md) for instructions to upgrade Dynamics GP.  
 
 ## Updates
 
-We recommend that you check for and install the most current Dynamics GP update for the release you are upgrading to. For the latest update information, see CustomerSource ((<https://mbs.microsoft.com/customersource//northamerica/GP/downloads/service-packs>).
+We recommend that you check for and install the most current Dynamics GP update for the release you are upgrading to. For the latest update information, see [CustomerSource]((https://mbs.microsoft.com/customersource/northamerica/GP/downloads/service-packs).
 
 Be sure that you have installed the most current updates for your Dynamics GP system before using Dynamics GP Utilities to upgrade your databases. If you don’t install the update before using Dynamics GP Utilities, the fixes will not take effect. After upgrading your database, install the update on your client computers.
 
-You can’t log in to Dynamics GP on a client computer if a Dynamics GP feature or additional component installed on the client has different version information than the server. For more information about upgrading Dynamics GP features and additional components, see [Chapter 7, Additional features and components upgrade](#_Additional_features_and).  
+You can’t log in to Dynamics GP on a client computer if a Dynamics GP feature or additional component installed on the client has different version information than the server. For more information about upgrading Dynamics GP features and additional components, see [Additional features and components upgrade]additional-features-and-components-upgrade.md).  
 
 ## Reviewing the Readme file
 
@@ -80,17 +62,18 @@ For your SQL database, you should run the following database maintenance routine
 
 If you prefer to perform table maintenance only on the tables that have changed, lists of tables that have changed from previous releases are available on the Dynamics GP 2018 media as part of the Software Developers’ Kit (SDK).
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")It’s a good idea to make a second backup after performing table maintenance, but before upgrading to a new version. If you have this backup and an expected problem occurs while upgrading, you won’t have to repeat the table maintenance step.  
+> [!NOTE]
+> It’s a good idea to make a second backup after performing table maintenance, but before upgrading to a new version. If you have this backup and an expected problem occurs while upgrading, you won’t have to repeat the table maintenance step.  
 
 ## Known issues
 
-Review the following known issues before upgrading to Dynamics GP 2018. To be sure that you review the most current known issues, download the latest version of this manual from <https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>.
+Review the following known issues before upgrading to Dynamics GP 2018. To be sure that you review the most current known issues, download the latest version of this manual from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018).
 
 ### Records that aren’t valid in purchase order tables
 
 If records that aren’t valid exist in the Purchase Order Line table (POP10110), or in the Purchase Order Line History table (POP30110), or in both tables, the upgrade can fail.
 
-You can download an upgrade preparation script that will help you determine the disk space requirements from this location: <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>.
+You can download an upgrade preparation script that will help you determine the disk space requirements from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade).
 
 To verify purchase order tables:
 
@@ -162,7 +145,7 @@ To change the database compatibility level:
 
 If the Server drop-down list is blank in the Welcome to Dynamics GP window after you upgrade, you must set up an Open Database Connectivity (ODBC) data source using SQL Native Client 10 or SQL Native Client 11 on your computer.
 
-If you are using a 64-bit operating system, you must set up a 32-bit ODBC data source. For instructions on how to set up a data source for a 64-bit operating system, see Microsoft Knowledge Base article, “How to set up an ODBC Data Source on SQL Server for Dynamics GP,” (https://mbs.microsoft.com/ knowledgebase/KBDisplay.aspx?scid=kb;en-us;870416).
+If you are using a 64-bit operating system, you must set up a 32-bit ODBC data source. For instructions on how to set up a data source for a 64-bit operating system, see Microsoft Knowledge Base article, [How to set up an ODBC Data Source on SQL Server for Dynamics GP](https://mbs.microsoft.com/knowledgebase/KBDisplay.aspx?scid=kb;en-us;870416).
 
 To set up an ODBC data source using the SQL Native Client 10 driver:
 
@@ -233,7 +216,8 @@ If the following tables contain incorrect account framework information, the upg
 | GL00200               | Budget Master                           |
 | GL00201               | Budget Summary Master                   |
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")You can download an upgrade preparation script that will help you determine incorrect account framework information from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>.  
+> [!NOTE]
+> You can download an upgrade preparation script that will help you determine incorrect account framework information from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>.  
 
 ### To verify account framework information in tables:
 
@@ -249,7 +233,7 @@ Microsoft SQL Server Management Studio.
 
 If results are returned after running the script, the tables do not match the account framework information. Contact the Dynamics GP Update Technical Support Team for instructions before upgrading. You can contact Dynamics GP Technical Support using one of the following methods.
 
--   Create a Support request (<https://mbs.microsoft.com/support/newstart.aspx>).
+-   Create a [Support request](https://mbs.microsoft.com/support/newstart.aspx).
 
 -   Contact by telephone at 1-888-477-7877.
 

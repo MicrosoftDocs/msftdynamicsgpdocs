@@ -7,7 +7,7 @@ ms.author: edupont
 manager: edupont
 applies_to: 
 ms.date: 08/24/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: fa4dc1b1-bff3-453b-b5c0-0761098a23c5
 ms.reviewer: 
@@ -101,9 +101,10 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 13. In the Installation Complete window, click Exit.
 
-14. Before you start Dynamics GP Utilities, check for and install the most current Dynamics GP update for Dynamics GP 2018. See CustomerSource (<https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>) for the latest update information.
+14. Before you start Dynamics GP Utilities, check for and install the most current Dynamics GP update for Dynamics GP 2018. See [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018) for the latest update information.
 
-![displays a lightbulb to indication tips and tricks.](media/lightbulb.png "Lightbulb symbol")To start Dynamics GP Utilities, you must have appropriate privileges. Typically this means being prat of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control, (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system documentation for more information.  
+> [!NOTE]
+> To start Dynamics GP Utilities, you must have appropriate privileges. Typically this means being prat of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control, (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system documentation for more information.  
 
 15. After installing Dynamics GP and the most recent update, you can perform the following steps.
 
@@ -111,6 +112,4 @@ The Service Based Architecture feature will create a Windows service on the comp
 
     -   Follow the instructions in the Dynamics GP Utilities windows to upgrade tables on your server, upgrade your companies, and upgrade modified forms and reports. See Chapter 6, “Company data conversion,” for more information.
 
-    -   After using Dynamics GP Utilities, you can install additional component applications on the server computer. See [Chapter 8, “Installation package,”](#_Installation_package) or [Installing an additional component](#_Installing_an_additional) on page 50 for more information.  
-
-
+    -   After using Dynamics GP Utilities, you can install additional component applications on the server computer. See [Creating an Installation package](creating-an-installation-package.md) or [Installing an additional component](installing-additional-components.md) for more information.  

@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: 46580577-d8e4-4b25-ab9f-8538bcbb84f7
 ms.reviewer: edupont
@@ -22,24 +22,24 @@ Use this checklist as your guide to installing and setting up Dynamics GP
 
 | Step | For more information,see |
 |------|--------------------------|
-| 1. Plan the security of your system.  | Download the SecurityPlanning.pdf, titled Planning for Security, from the following location: <https://www.microsoft.com/en-us/download/details.aspx?id=45025> by expanding the Details option.                     |
+| 1. Plan the security of your system.  | Download the SecurityPlanning.pdf, titled Planning for Security, from the [Download Center] (https://www.microsoft.com/en-us/download/details.aspx?id=45025) by expanding the Details option.                     |
 | 2. Refer to the Documentation and resources web site for new or updated information relating to the installation. You also can use CustomerSource for additional information. | <https://go.microsoft.com/fwlink/?LinkId=249465> |
 | 3. View the Readme file and make a note of the items that pertain to you. | \\Media\\GreatPlains\\Documentation\\GPReadme.chm |
 | 4. Obtain your need registration keys for Dynamics GP2018.   | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP2018. <https://mbs.microsoft.com/customersource>  My Account  |
 | 5. Verify system requirements. | [System Requirements](system-requirements.md)   |
-| 6. Install a networking protocol.    | TCP/IP on page 15   |
+| 6. Install a networking protocol.    | [Network Requirements](network-requirements.md)   |
 | 7. Install and set up Microsoft SQL Server.    | Note: Make sure that you install Microsoft SharePoint if you want to use SharePoint Integrated Mode when deploying SQL Server Reporting Services reports. |
 | 8. Configure SQL Server Reporting Services.  | This step is required if you didn’t configure SQL Server Reporting Services 2012 in Native mode when installing SQL Server and you want to deploy SQL Server Reporting Services reports for Dynamics GP. If you installed SQL Server Reporting Services 2012 in SharePoint Integrated mode, use the SharePoint Central Administration to complete the configuration.     |
 | 9. Design the account framework.  | [Account framework](account-framework.md) |
 | 10. Install Dynamics GP Tenant Services. | This step is required if you want to host Dynamics GP for multiple, unrelated organizations. Tenant Services Installation and Administration Guide  |
-| 11. Install the data server and initial client.  | [Install Dynamics GP on the first computer](install-microsoft-dynamics-gp-on-the-first-computer.md)
+| 11. Install the data server and initial client.  | [Install Dynamics GP on the first computer](installing-on-first-computer.md)
 |
 | 12. Be sure to download and install the latest Dynamics GP2018 update.     | <https://mbs.microsoft.com/customersource/northamerica/gp/downloads>    |
-| 13. Set up the account framework and Dynamics GP system data tables.  | Preparing Dynamics GP for use with custom settings on page 41 |
-| 14. Create your first company. | Adding a company using Dynamics GP Utilities on page 63      |
-| 15. Install additional components.  | Installing an additional component on page 61  |
+| 13. Set up the account framework and Dynamics GP system data tables.  | [Preparing Dynamics GP for use](account-framework.md) |
+| 14. Create your first company. | Adding a company using [Dynamics GP Utilities](using-microsoft-dynamics-utilities.md)      |
+| 15. Install additional components.  | [Installing an additional component](installing-additional-components.md)  |
 | 16. Set up your company. | System Setup instructions (Help &gt;&gt; Contents &gt;&gt; select Setting up the system)  |
-| 17. Install Dynamics GP applications on clients.    | Creating an installation package on page 76  Installing [!INCLUDE[prodshort]/includes/prodshort.md)] on an additional computer on page 79  Synchronizing a client’s account framework on page 81  Installing an additional component on page 61       |
+| 17. Install Dynamics GP applications on clients.    | [Creating an installation package](creating-an-installation-package.md)</br>  [Installing Dynamics GP on additional computers](installing-on-subsequent-computers.md) </br> [Synchronizing a client’s account framework] (account-framework.md) </br> [Installing additional components](installing-additional-components.md)       |
 | 18. Identify the sources of any errors. | Knowledge Base on CustomerSource  |
 
 ## Reviewing the Readme file
@@ -76,7 +76,8 @@ You’ll find links to Support Hot Topics and Knowledge Base—the best source o
 
 SQL Server Books Online is a documentation resource installed with Microsoft SQL Server. Use Books Online to troubleshoot SQL error messages and other issues related to SQL. Microsoft’s web site, www.microsoft.com, is also a good source of information for issues related to SQL or your operating system. You also can download Microsoft SQL Server Management Studio and SQL Server Books Online for Microsoft SQL Server Express Edition.
 
-![displays a lightbulb to indication tips and tricks](media/lightbulb.png "Lightbulb symbol")SQL-related error messages appear as DBMS errors in Dynamics GP. Always use the SQL Server Books Online to troubleshoot DBMS errors. Choose the Search tab and enter the error number, then choose List Topics.  
+> [!NOTE]
+> SQL-related error messages appear as DBMS errors in Dynamics GP. Always use the SQL Server Books Online to troubleshoot DBMS errors. Choose the Search tab and enter the error number, then choose List Topics.  
 
 ## Before you call support
 

@@ -7,22 +7,15 @@ ms.author: edupont
 manager: edupont
 applies_to: 
 ms.date: 08/24/2018
-ms.service: dynamicsgp
+ms.prod: dynamicsgp
 ms.topic: article
 ms.assetid: e21af4d9-a4ad-4d55-a002-fd13f15e8f89
 ms.reviewer: 
 ---
-<span id="_Toc498615807" class="anchor"></span>
 
 # Installation package
 
 Instead of physically going to each client computer to install Dynamics GP, you can use an installation package to install Dynamics GP 2018 on multiple client computers. An installation package stores the files required to install a custom configured installation in a shared network location you set up. How Dynamics GP is installed on the client computer using the installation package depends on the tools and applications you use.
-
-This chapter contains the following sections:
-
--   [Installation package overview](#installation-package-overview)  
-
--   [Creating an installation package](#creating-an-installation-package)  
 
 ## Installation package overview
 
@@ -139,5 +132,3 @@ To create an installation package:
     -   Visual C++ 2015 Runtime Libraries
 
     -   Visual Basic for Applications Core
-
-
