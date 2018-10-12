@@ -6,7 +6,7 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.date: 10/04/2018
+ms.date: 10/12/2018
 ms.prod: dynamicsgp
 ms.topic: article
 ms.reviewer: edupont
@@ -95,7 +95,7 @@ Additionally, vendors can be marked as **Temporary** in the **Vendors Navigation
 > [!NOTE]
 > Employees must be inactivated/reactivated one at a time. If more than one Employee ID is selected, the **Inactivate** and **Reactivate** options are grayed out. When a user clicks the **Inactivate** or **Reactivate** option, the **Employee Maintenance** window will automatically open.  
 
-## Purchasing
+## Purchasing enhancements
 
 A number of updates have been made to the purchasing area in Dynamics GP.
 
@@ -150,7 +150,7 @@ You can see the vendor hold status in the following pages:
 
 In these windows, a red dot now displays next to the vendor name or ID if the vendor is on hold.  
 
-## Sales
+## Sales enhancements
 
 A number of updates have been made to the sales area in Dynamics GP.  
 
