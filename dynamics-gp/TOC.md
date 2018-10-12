@@ -68,7 +68,7 @@
 ### Installation
 #### [Install Dynamics GP on the first computer](upgrade/installing-on-first-computer.md)
 #### [Additional features and components upgrade](upgrade/additional-features-and-components-upgrade.md)
-#### [Installation package](upgrade/install-dynamics-gp-on-the-first-computer.md)
+#### [Installation package](upgrade/installation-package.md)
 #### [Install Dynamics GP on subsequent computers](upgrade/installing-on-subsequent-computers.md)
 #### [Module upgrades from Dynamics GP 2013](upgrade/module-upgrades-from-microsoft-dynamics-gp-2013.md)
 ### [After you upgrade](upgrade/after-you-upgrade.md)

@@ -27,7 +27,7 @@ Use this checklist as your guide to installing and setting up Dynamics GP
 | 3. View the Readme file and make a note of the items that pertain to you. | \\Media\\GreatPlains\\Documentation\\GPReadme.chm |
 | 4. Obtain your need registration keys for Dynamics GP2018.   | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP2018. <https://mbs.microsoft.com/customersource>  My Account  |
 | 5. Verify system requirements. | [System Requirements](system-requirements.md)   |
-| 6. Install a networking protocol.    | [Network Requirements](network-requirements.md)   |
+| 6. Install a networking protocol.    | [Network Requirements](network-configuration.md)   |
 | 7. Install and set up Microsoft SQL Server.    | Note: Make sure that you install Microsoft SharePoint if you want to use SharePoint Integrated Mode when deploying SQL Server Reporting Services reports. |
 | 8. Configure SQL Server Reporting Services.  | This step is required if you didn’t configure SQL Server Reporting Services 2012 in Native mode when installing SQL Server and you want to deploy SQL Server Reporting Services reports for Dynamics GP. If you installed SQL Server Reporting Services 2012 in SharePoint Integrated mode, use the SharePoint Central Administration to complete the configuration.     |
 | 9. Design the account framework.  | [Account framework](account-framework.md) |

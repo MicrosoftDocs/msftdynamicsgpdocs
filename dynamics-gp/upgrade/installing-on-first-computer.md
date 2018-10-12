@@ -19,13 +19,13 @@ Use the information in this chapter to install Dynamics GP 2018 R2.
 
 ## Installation overview
 
-In a multiuser local area network environment, Dynamics GP applications are typically installed on a server, and then on each client. However, Dynamics GP is not required to be installed on the server. You must install the Dynamics GP databases on one computer first. After the Dynamics GP databases are installed on that computer, you’ll be using the Dynamics GP installation media or using an installation package to install on all remaining clients. For more about creating an installation package for your clients, see Chapter 8, “Installation package.”
+In a multiuser local area network environment, Dynamics GP applications are typically installed on a server, and then on each client. However, Dynamics GP is not required to be installed on the server. You must install the Dynamics GP databases on one computer first. After the Dynamics GP databases are installed on that computer, you’ll be using the Dynamics GP installation media or using an installation package to install on all remaining clients. For more about creating an installation package for your clients, see [Installation package](installation-package.md).
 
 The program files of the previous release aren’t removed by the Dynamics GP 2018 upgrade process.
 
 ## Installing Dynamics GP (first computer)
 
-Before you begin, be sure you’ve completed the preparation steps listed in Chapter 3, “Data preparation,” and Chapter 4, “System preparation.” You must be logged in to Windows as a user with system administrator privileges.
+Before you begin, be sure you’ve completed the preparation steps listed in [Data preparation](data-preparation.md) and [System preparation](system-preparation.md). You must be logged in to Windows as a user with system administrator privileges.
 
 To install Dynamics GP (first computer):
 
@@ -75,7 +75,7 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 | ![component icon](media/installed-component.png "Component icon") Run all from My Computer       | Will install the feature and all of its sub–features.|
 | ![component icon](media/not-installed-component.png "Component icon") Not Available | Will not install the selected feature or sub–feature.|  
 
-If you’ve installed a feature in a previous release, be sure that you’ve selected to install that feature in the Select Feature window. See [Dynamics GP features](#_Microsoft_Dynamics_GP_1) on page 47 for a list of Dynamics GP features. You also can install additional features. You can review the DYNAMICS.SET file for a list of features you have installed.  
+If you’ve installed a feature in a previous release, be sure that you’ve selected to install that feature in the Select Feature window. You can review the DYNAMICS.SET file for a list of features you have installed.  
 
 7. Specify a new folder where the Dynamics GP files should be installed. To select a different folder, click Browse.
 
@@ -110,6 +110,6 @@ The Service Based Architecture feature will create a Windows service on the comp
 
     -   Start Dynamics GP Utilities.
 
-    -   Follow the instructions in the Dynamics GP Utilities windows to upgrade tables on your server, upgrade your companies, and upgrade modified forms and reports. See Chapter 6, “Company data conversion,” for more information.
+    -   Follow the instructions in the Dynamics GP Utilities windows to upgrade tables on your server, upgrade your companies, and upgrade modified forms and reports. See [Company data conversion](company-data-conversion.md) for more information.
 
-    -   After using Dynamics GP Utilities, you can install additional component applications on the server computer. See [Creating an Installation package](creating-an-installation-package.md) or [Installing an additional component](installing-additional-components.md) for more information.  
+    -   After using Dynamics GP Utilities, you can install additional component applications on the server computer. See [Creating an Installation package](installation-package.md) or [Installing an additional component](additional-features-and-components-upgrade.md) for more information.  
