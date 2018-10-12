@@ -1,6 +1,6 @@
 ---
 title: "What's new in Dynamics GP 2018"
-description: "Learn about enhancements that were added to the product since the release of Dynamics GP 2018. "
+description: "Learn about enhancements that were added to the product since the release of Dynamics GP 2016 R2. "
 keywords: ""
 author: edupont04
 ms.author: edupont
@@ -12,7 +12,7 @@ ms.topic: article
 ms.reviewer: 
 ---
 
-# What’s new in GP 2018
+# What’s New in Dynamics GP 2018
 
 This chapter lists enhancements to Dynamics GP for the GP 2018 release. The GP 2018 release enhances specific areas of the product, while also expanding existing functionality, notably in the document attachment and workflow areas. The user experience has also been enhanced to make finding the information you use to make business decisions faster and easier.
 
@@ -39,19 +39,19 @@ Similar buttons have been added to additional master record windows.
 Document attachment has been added to the following windows for GP 2018.
 
 | Transaction entry windows |
-|---------------------------|----------------------------------|
+|---------------------------|
  |General Ledger Transaction Entry|
  |Receivables Transaction Entry|
  |Asset General Information (FA)    |
 
 | Inquiry windows           |
-|---------------------------|----------------------------------|
+|---------------------------|
  |Employee Inquiry|
  | I-9 Form|
  |Customer Inquiry|
  |Vendor Inquiry|
  |Project Inquiry|
- | PA Project Inquiry |               |
+ | PA Project Inquiry |
 
 ## Workflow 4.0
 
@@ -73,15 +73,15 @@ A new workflow history report has been added for GP 2018. The report can be filt
 
 Additional fields have been added to the Payables transaction workflow. To use the new fields, mark the Extended fields list option in the Work Maintenance window, and then select the fields you want to use in the Workflow Condition Editor. The new fields include:
 
--   Vendor account
+- Vendor account
 
--   Comment 1
+- Comment 1
 
--   Comment 2
+- Comment 2
 
--   Vendor class ID
+- Vendor class ID
 
--   Payment priority
+- Payment priority
 
 ### Additional messages are available for purchase order workflow
 
@@ -131,9 +131,9 @@ A shortcut has been added to the banner in web client windows, allowing one-clic
 
 Additional enhancements to the user experience include:
 
--   Help icons have been updated to link to online support documents.
+- Help icons have been updated to link to online support documents.
 
--   Option to maximize the Bank reconciliation window in the web client
+- Option to maximize the Bank reconciliation window in the web client
 
 ## BI enhancements
 
@@ -181,19 +181,19 @@ Now you can print a purchase requisition report from the Requisition Entry and f
 
 Now you can display a Hold status, on transactions that have that status, from the Sales Transaction Entry and Sales Transaction Inquiry Zoom windows. An icon will display and can be selected to zoom to the sales process Hold window.
 
-## Human Resources and Payroll enhancements 
+## Human Resources and Payroll enhancements
 
 ### Roll down payroll setup options from setup to inactive records
 
 Now you have an option to roll down changes to inactive employee records. The options that are included in this feature include: changes to
 
--   Pay codes
+- Pay codes
 
--   Deductions
+- Deductions
 
--   Benefits
+- Benefits
 
--   Shift codes
+- Shift codes
 
 ### Turn off garnishment reports in posting setup
 

@@ -40,7 +40,7 @@ Available at [https://mbs.microsoft.com/support](https://mbs.microsoft.com/suppo
 
 ### Community
 
-Available at [https://mbs.microsoft.com/customersource/](https://mbs.microsoft.com/customersource/communities/), the Dynamics GP community is where you can start a year-end discussion with other members of the Microsoft customer community, for example. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.  
+Available at [https://community.dynamics.com/gp/](https://community.dynamics.com/gp/), the Dynamics GP community is where you can start a year-end discussion with other members of the Microsoft customer community, for example. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.  
 
 ### Dynamics GP support team
 
