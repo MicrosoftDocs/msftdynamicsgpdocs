@@ -3,11 +3,14 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -19,19 +22,34 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**"
         ]
       }
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": { 
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/nav-content",
+      "feedback_product_url": "https://community.dynamics.com/gp/",
+      "ms.author": "edupont",
+      "ms.prod": "dynamicsgp",
+      "uhfHeaderId": "MSDocsHeader-Dynamics365",
+      "searchScope": ["DynamicsGP"],
+      "titleSuffix": "Dynamics GP",
+      "breadcrumb_path": "/dynamics-gp/breadcrumb/toc.json",
+      "extendBreadcrumb": true
+},
     "fileMetadata": {},
     "template": [],
-    "dest": "dynamics-gp"
+    "dest": "dynamics-gp",
+    "markdownEngineName": "markdig"
   }
 }

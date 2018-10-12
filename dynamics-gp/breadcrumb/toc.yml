@@ -1,0 +1,11 @@
+- name: Dynamics 365
+  tocHref: /dynamics365/
+  topicHref: /dynamics365/index
+  items:
+  - name: Dynamics GP
+    tocHref: /dynamics-gp/
+    topicHref: /dynamics-gp/index
+    items:
+    - name: What's new in Dynamics GP
+      tocHref: /dynamics-gp/whats-new/
+      topicHref: /dynamics-gp/whats-new/introduction
