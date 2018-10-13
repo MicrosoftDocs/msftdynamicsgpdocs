@@ -5,13 +5,13 @@ author: edupont04
 
 ms.prod: dynamicsgp
 ms.topic: get-started-article
-ms.date: 10/12/2018
+ms.date: 10/13/2018
 ms.author: edupont
 
 ---
 # Welcome to Dynamics GP!
 
-Dynamics GP is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business. Dynamics GP has a long history, and you can find information about functionality on the installation media for your version of Dynamics GP. But we have strted moving some of the existing content to the Docs.microsoft.com site, and we will be adding more content here at the new location in the future.  
+Dynamics GP is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business. Dynamics GP has a long history, and you can find information about functionality on the installation media for your version of Dynamics GP. But we have started moving some of the existing content to the Docs.microsoft.com site, and we will be adding more content here at the new location in the future.  
 
 The PDF files that you may have seen for earlier versions of Dynamics GP contains symbols to indicate notes, tips, and warnings, for example. Here on the Docs.microsoft.com site, such visual alerts are provided in other ways. So if you're looking for a lightbulb, then this is now a note, and warning triangles are replaced by warnings.
 
@@ -44,7 +44,7 @@ Available at [https://community.dynamics.com/gp/](https://community.dynamics.com
 
 ### Dynamics GP support team
 
-We have specialized support teams focused on providing service and support to our Human Resources/Payroll customers. If you have Human Resources/Payroll questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code.
+We have specialized support teams focused on providing service and support to Dynamics GP customers. If you have questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code.
 
 ### Send us your suggestions
 
