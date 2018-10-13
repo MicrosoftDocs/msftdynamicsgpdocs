@@ -35,9 +35,9 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": { 
+    "globalMetadata": {
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/nav-content",
+      "feedback_github_repo": "MicrosoftDocs/msftdynamicsgpdocs",
       "feedback_product_url": "https://community.dynamics.com/gp/",
       "ms.author": "edupont",
       "ms.prod": "dynamicsgp",
