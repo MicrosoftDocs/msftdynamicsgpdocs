@@ -7,7 +7,7 @@ ms.author: edupont
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.prod: dynamicsgp
+ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: eeff6d93-ce23-45de-9c8f-9bb43db99468
 ms.reviewer: 
