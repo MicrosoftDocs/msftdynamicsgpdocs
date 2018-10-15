@@ -6,7 +6,7 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.prod: dynamicsgp
+ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: 
 ms.date: 10/12/2018
