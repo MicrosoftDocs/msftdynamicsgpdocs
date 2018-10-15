@@ -5,15 +5,10 @@ keywords: ""
 author: edupont04
 ms.author: edupont
 manager: annbe
-applies_to: 
-<<<<<<< HEAD:dynamics-gp/whats-new/whats-new-in-gp-2018.md
-ms.date: 08/24/2018
-=======
 ms.date: 10/12/2018
->>>>>>> master:dynamics-gp/whats-new/version-2018.md
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # What’s New in Dynamics GP 2018
@@ -167,9 +162,9 @@ In the User Access to Trx Dimensions window, you can specify which users have ac
 
 Payables Management Checks windows have been renamed to reflect the ability to payments through credit cards, electronic funds transfers, or potentially other methods.
 
-## Distribution and supply chain enhancements 
+## Distribution and supply chain enhancements
 
-### Purchase order generation list opens with newest POs 
+### Purchase order generation list opens with newest POs
 
 When you create purchase orders from the Purchase Orders Preview window using the Generate button, the new purchase orders can be displayed in the purchase order transactions list. When you use the Generate button, the PO Navigation List will automatically open with the newly generated purchase orders displayed.
 

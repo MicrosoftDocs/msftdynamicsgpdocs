@@ -5,12 +5,8 @@ keywords: ""
 author: edupont04
 ms.author: edupont
 manager: annbe
-applies_to: 
-<<<<<<< HEAD
-ms.date: 10/04/2018
-=======
+applies_to:
 ms.date: 10/12/2018
->>>>>>> master
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
