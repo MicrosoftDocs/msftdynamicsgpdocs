@@ -9,7 +9,7 @@ applies_to:
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: 
-ms.date: 09/05/2018
+ms.date: 10/12/2018
 ---
 
 # What’s new in Dynamics GP 2016 R2

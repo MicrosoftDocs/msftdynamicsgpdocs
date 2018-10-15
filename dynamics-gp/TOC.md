@@ -3,13 +3,13 @@
 <!--- what's new-->
 ## What's new
 ### [Introduction](whats-new/introduction.md)
-### [What's new in Dynamics GP 2018 R2](whats-new/whats-new-in-dynamics-gp-2018-r2.md)
-### [What's new in Dynamics GP 2018](whats-new/whats-new-in-gp-2018.md)
-### [What's new in Dynamics GP 2016 R2](whats-new/whats-new-in-dynamics-gp-2016-r2.md)
-### [What's new in Dynamics GP 2016](whats-new/whats-new-in-dynamics-gp-2016.md)
-### [What's new in Dynamics GP 2015](whats-new/whats-new-in-dynamics-gp-2015.md)
+### [What's new in Dynamics GP 2018 R2](whats-new/version-2018-r2.md)
+### [What's new in Dynamics GP 2018](whats-new/version-2018.md)
+### [What's new in Dynamics GP 2016 R2](whats-new/version-2016-r2.md)
+### [What's new in Dynamics GP 2016](whats-new/version-2016.md)
+### [What's new in Dynamics GP 2015](whats-new/version-2015.md)
 
-<!--- installation-->
+<!--- installation
 ## Installation
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)
@@ -28,7 +28,7 @@
 #### [Creating an installation package](installation/creating-an-installation-package.md)
 #### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
 
-<!--- web components-->
+<!--- web components
 ## Web components
 ### [Installation overview](web-components/installation-overview.md)
 ### [Deployment configurations](web-components/deployment-configurations.md)
@@ -57,7 +57,7 @@
 #### [Scale out upgrade](web-components/scale-out-upgrade.md)
 ### [Glossary](web-components/glossary.md)
 
-<!--- upgrade-->
+<!--- upgrade
 ## Upgrade
 ### [Introduction](upgrade/introduction.md)
 ### Preparation
@@ -66,6 +66,7 @@
 #### [Data preparation](upgrade/data-preparation.md)
 #### [System preparation](upgrade/system-preparation.md)
 ### Installation
+<<<<<<< HEAD
 #### [Install Dynamics GP on the first computer](upgrade/installing-on-first-computer.md)
 #### [Additional features and components upgrade](upgrade/additional-features-and-components-upgrade.md)
 #### [Installation package](upgrade/installation-package.md)
@@ -74,3 +75,9 @@
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
 
+=======
+#### [Install Dynamics GP on the first computer](upgrade/install-dynamics-gp-on-the-first-computer.md)
+#### [Install Dynamics GP on subsequent computers](upgrade/install-dynamics-gp-on-subsequent-computers.md)
+#### [Installation package](upgrade/install-dynamics-gp-on-the-first-computer.md)
+-->
+>>>>>>> master

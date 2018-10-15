@@ -9,7 +9,7 @@ applies_to:
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: 
-ms.date: 09/07/2018
+ms.date: 10/12/2018
 ---
 
 # What’s new in Dynamics GP 2015
@@ -191,7 +191,8 @@ Follow these steps to create the set up for the date effective tax.
 
 4. Mark the Use Date-effective Tax checkbox. Select the option to calculate the tax. The option that you select here is used for updating the taxes for saved transactions within the tax effective date range. Transactions that are corrected will be based on the date you select here. You can select the Document date, or Posting date or the Tax date to calculate the tax.
 
-![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")Select posting date if you want to calculate tax based on the posting date that you specify. Select Tax date if you want to calculate tax based on the tax date that you specify. Select Document date if you want to calculate tax based on the document date that you specify.  
+> [!WARNING]
+> Select posting date if you want to calculate tax based on the posting date that you specify. Select Tax date if you want to calculate tax based on the tax date that you specify. Select Document date if you want to calculate tax based on the document date that you specify.  
 
 You must set up the date range for the specified Tax ID for GP 2015, to calculate the tax amount or percentage for the transaction. Follow these steps to create the date range for the tax ID.
 
@@ -216,7 +217,8 @@ Dynamics GP &gt;&gt; Tools &gt;&gt; Utilities &gt;&gt; Company &gt;&gt; Mass Mod
 
 3. Click Insert to view the list of the tax IDs listed for the modification.
 
-![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")Within the specified Tax IDs, if you do not want to modify any Tax ID, you can select the Tax ID record, and click Remove.  
+> [!WARNING]
+> Within the specified Tax IDs, if you do not want to modify any Tax ID, you can select the Tax ID record, and click Remove.  
 
 4. Click Modify to modify the listed Tax IDs based on your specifications.
 
@@ -231,7 +233,8 @@ Dynamics GP &gt;&gt; Tools &gt;&gt; Company &gt;&gt; Utilities &gt;&gt; Regenera
 
 4. Click Insert to view the list of the batches that will be updated with the modified tax percentage.
 
-![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")You can select a batch ID record and click Remove, to prevent updating the transactions with the modified tax percentage.  
+> [!WARNING]
+> You can select a batch ID record and click Remove, to prevent updating the transactions with the modified tax percentage.  
 
 5. Click Process to recalculate the tax for the transaction in the module and batch specified.
 
@@ -259,7 +262,8 @@ Follow these steps to set up these options in Receivables Management:
 
 3. Mark the Warn if Customer Over Credit checkbox.
 
-![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")Though you set up these options in Receivable Management, the warning is displayed in all the modules for all the transactions of the customer who exceeds the credit limit.  
+> [!WARNING]
+> Though you set up these options in Receivable Management, the warning is displayed in all the modules for all the transactions of the customer who exceeds the credit limit.  
 
 ### Enable Email on All Purchase Orders and Sales orders
 
@@ -297,7 +301,8 @@ The following table describes the action that follows when you assign a user wit
 | Existing User | Yes                                        | Setting this user to Self Service type will restrict the user to employee self-service tasks |
 | New User      | Yes                                        | None |
 
-![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")When an existing user type is changed from self-service to Full or Limited user types, you will get a message to review the security set up for the user.  
+> [!WARNING]
+> When an existing user type is changed from self-service to Full or Limited user types, you will get a message to review the security set up for the user.  
 
 ### Employee Self Service – W2
 
@@ -315,6 +320,6 @@ If the accrue type is Payroll, the app allows you to enter time codes against va
 
 If the accrue type is HR, the app allows you to enter time against Time Codes that are setup as Benefit Time Types. A calendar within the app allows you to see what pay periods are active and shows you which codes and dates a user has entered time off against.
 
-# See Also
+## See Also
 
 [What's New](introduction.md)  
