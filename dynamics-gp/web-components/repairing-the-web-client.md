@@ -18,9 +18,9 @@ ms.reviewer:
 
 If the Dynamics GP web client installation becomes damaged, the repair operations available may help resolve the issues. Information about repairing is divided into the following sections:
 
--   [Common repair scenarios](#common-repair-scenarios)  
+- [Common repair scenarios](#common-repair-scenarios)  
 
--   [Performing a repair](#performing-a-repair)  
+- [Performing a repair](#performing-a-repair)  
 
 ## Common repair scenarios
 

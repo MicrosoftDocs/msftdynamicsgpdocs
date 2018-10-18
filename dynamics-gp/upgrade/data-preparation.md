@@ -18,7 +18,7 @@ We recommend that you complete the steps in this section to prepare your data be
 
 ## Payroll
 
-If you’re upgrading to Dynamics GP 2018 or Dynamics GP 2018 R2, you need to determine whether the payroll tax update tables are current. To do so, check the Last Tax Update field in the Payroll Tax Setup window (Tools &gt;&gt; Setup &gt;&gt; System &gt;&gt; Payroll Tax). If your tax tables are not current, update them after you upgrade to Dynamics GP 2018. Review the latest tax update documentation for the date of the last tax update.
+If you’re upgrading to Dynamics GP or Dynamics GP 2018 R2, you need to determine whether the payroll tax update tables are current. To do so, check the Last Tax Update field in the Payroll Tax Setup window (Tools &gt;&gt; Setup &gt;&gt; System &gt;&gt; Payroll Tax). If your tax tables are not current, update them after you upgrade to Dynamics GP. Review the latest tax update documentation for the date of the last tax update.
 
 Tax tables are not included on the Dynamics GP media; to update tax tables, you must download them from CustomerSource [US Payroll](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/taxregulatory-updates/TUGP2018); [Canadian Payroll](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/cagptuye2018). Choose Tax and Regulatory Updates. Follow instructions for installing the tax update to ensure that clients and servers are updated properly.
 
@@ -28,15 +28,15 @@ After you upgrade, the 1099 amounts might be transferred to a different month if
 
 For example, you enter and post the following transaction in December.
 
--   An invoice for $100.00 that has a 1099 amount of $100.00.
+- An invoice for $100.00 that has a 1099 amount of $100.00.
 
--   A credit memo for $75.00 that has a 1099 amount of $75.00.
+- A credit memo for $75.00 that has a 1099 amount of $75.00.
 
--   A payment for $25.00.
+- A payment for $25.00.
 
 You apply all three documents together in January. The 1099 amount is $25.00 for December.
 
-You upgrade to Dynamics GP 2018 in February and reconcile your data. The 1099 amount of $25.00 is moved from December because the later of the apply date or posting date is used to update the 1099 amount.
+You upgrade to Dynamics GP in February and reconcile your data. The 1099 amount of $25.00 is moved from December because the later of the apply date or posting date is used to update the 1099 amount.
 
 ## Direct Debits and Refunds
 
@@ -58,7 +58,7 @@ If you are using Analytical Accounting, be sure to post all saved batches that y
 
 ## Reconciling
 
-You may want to reconcile your accounting records before upgrading to Dynamics GP 2018 to verify that your accounting records are accurate. Refer to the documentation of the modules you are using for specific information.
+You may want to reconcile your accounting records before upgrading to Dynamics GP to verify that your accounting records are accurate. Refer to the documentation of the modules you are using for specific information.
 
 Before reconciling, back up your company’s accounting data.  
 

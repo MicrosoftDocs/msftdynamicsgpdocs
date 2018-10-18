@@ -16,7 +16,8 @@ ms.reviewer: edupont
 
 Use the information in this chapter to plan your account framework for your company. A framework is a set of maximum values, such as maximum segment lengths that each of your company’s account formats must fit within. The account framework is very difficult to change later after it’s set up.
 
-![displays a triangle with an exclamation point to indicate warning](media/warning.png "Warning symbol")Note that the account framework you enter in the Dynamics GP Utilities will be used for the account format in all companies you’re planning to set up.  
+> [!WARNING]
+> The account framework you enter in the Dynamics GP Utilities will be used for the account format in all companies you’re planning to set up.  
 
 ## Understanding the account framework
 
@@ -48,7 +49,7 @@ Although the maximum account length and number of segments is within the limit, 
 
 You can design your account framework or use a default account framework. The account framework applies to all companies in your Dynamics GP system, and represents the maximum length of your accounts, number of segments, and segment lengths. The account framework is very difficult to change later after you set it up using Dynamics GP Utilities.
 
-To use the default account framework, you’ll select Basic as the installation option in Dynamics GP Utilities after you install Dynamics GP. The Basic option also provides default settings for your system database and system password. For more information, see Installation options in Dynamics GP Utilities on page 36.
+To use the default account framework, you’ll select Basic as the installation option in Dynamics GP Utilities after you install Dynamics GP. The Basic option also provides default settings for your system database and system password. For more information, see [Installation options in Dynamics Utilities](/dynamics-gp/installation/using-microsoft-dynamics-utilities#installation-options-in-dynamics-utilities).
 
 The following is the account framework for a basic installation.
 
@@ -60,13 +61,14 @@ The following is the account framework for a basic installation.
 
 If you decide that the basic installation’s default account framework fits your business needs, you don’t need to plan your account framework before you install Dynamics GP and use Dynamics GP Utilities.
 
-If you decide not to use the default framework, review Planning your account framework on page 26 and Choosing account framework storage size on page 27 to plan your account framework before you install Dynamics GP. After you design your account framework and install Dynamics GP, you’ll select Advanced as the installation option in Dynamics GP Utilities. Use Dynamics GP Utilities to enter a framework for the account formats that will be used by all companies you’ll set up in Dynamics GP.
+If you decide not to use the default framework, review the sections [Planning your account framework](#planning-your-account-framework) and [Choosing account framework storage size](#choosing-account-framework-storage-size)  to plan your account framework before you install Dynamics GP. After you design your account framework and install Dynamics GP, you’ll select Advanced as the installation option in Dynamics GP Utilities. Use Dynamics GP Utilities to enter a framework for the account formats that will be used by all companies you’ll set up in Dynamics GP.
 
 ## Planning your account framework
 
 When planning an account framework, think about the account format you’ve used with your previous accounting system and consider future expansions and the account format for additional companies you may add to your system later. Plan the maximum number of segments you’ll use in any company, and the maximum length of each segment.
 
-![displays a triangle with an exclamation point to indicate warning](media/warning.png "Warning symbol")It’s important to consider what your current and future needs are for the framework; after you’ve entered the framework, it’s unlikely that you’ll be able to change it. If you find that you need to change your account framework, contact your reseller or Dynamics GP Technical Support.  
+> [!WARNING]
+> It’s important to consider what your current and future needs are for the framework; after you’ve entered the framework, it’s unlikely that you’ll be able to change it. If you find that you need to change your account framework, contact your reseller or Dynamics GP Technical Support.  
 
 To use one of the default charts of accounts provided with Dynamics GP, set up the account framework with maximums that are at least the size listed below. To preview the default charts of accounts for various business and industry types, review the [Default Charts of Accounts for Dynamics GP](https://go.microsoft.com/fwlink/?LinkId=89042) article.
 
@@ -135,4 +137,8 @@ Based on the previous example, if you use an account framework with two 5- chara
 | 10      | 8              | 2             | 10         |
 | Total   | 66             | 16            | 82         |
 
-However, if you use all odd-numbered segment lengths, you can incorporate larger segments in your account framework because odd-numbered segment lengths use only one segment unit each. For example, you could use ten 7-character segments in your account framework, which provides a total length of 70 characters, and a total size of 80.
+However, if you use all odd-numbered segment lengths, you can incorporate larger segments in your account framework because odd-numbered segment lengths use only one segment unit each. For example, you could use ten 7-character segments in your account framework, which provides a total length of 70 characters, and a total size of 80.  
+
+## See also
+
+[Installation checklist](installation-checklist.md)  

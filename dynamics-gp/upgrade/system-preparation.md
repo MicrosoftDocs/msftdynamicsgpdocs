@@ -46,7 +46,7 @@ After you install Integration Manager 2018, you must convert the database you ba
 
 ## Upgrading in a test environment
 
-It is recommended that you use a test environment to practice the process of upgrading Dynamics GP, additional components, modified forms and reports, and customizations. By using a test environment, you can resolve any potential issues that may occur before you upgrade your current release of Dynamics GP. You also can estimate the time it will take to upgrade your current release to Dynamics GP 2018. A test environment also allows users to test their day-to-day tasks to ensure that processes are working properly, and to learn the new features and modules in Dynamics GP 2018.
+It is recommended that you use a test environment to practice the process of upgrading Dynamics GP, additional components, modified forms and reports, and customizations. By using a test environment, you can resolve any potential issues that may occur before you upgrade your current release of Dynamics GP. You also can estimate the time it will take to upgrade your current release to Dynamics GP. A test environment also allows users to test their day-to-day tasks to ensure that processes are working properly, and to learn the new features and modules in Dynamics GP.
 
 A test environment can be a single server or a server with one or more client computers where an upgrade takes place. The client computers can be used for testing and training purposes. There isn’t a required number of computers that need to be involved in a test environment.
 
@@ -60,14 +60,14 @@ If you are upgrading a company that has previously deployed SQL Server Reporting
 
 For your SQL database, you should run the following database maintenance routine against the DYNAMICS database and all company databases in or Microsoft SQL Server Management Studio. The database maintenance routine will help to ensure that your table structure is ready to be upgraded if there are no errors indicated. Be sure that there are no allocation or consistency errors in the results.
 
-If you prefer to perform table maintenance only on the tables that have changed, lists of tables that have changed from previous releases are available on the Dynamics GP 2018 media as part of the Software Developers’ Kit (SDK).
+If you prefer to perform table maintenance only on the tables that have changed, lists of tables that have changed from previous releases are available on the Dynamics GP media as part of the Software Developers’ Kit (SDK).
 
 > [!NOTE]
 > It’s a good idea to make a second backup after performing table maintenance, but before upgrading to a new version. If you have this backup and an expected problem occurs while upgrading, you won’t have to repeat the table maintenance step.  
 
 ## Known issues
 
-Review the following known issues before upgrading to Dynamics GP 2018. To be sure that you review the most current known issues, download the latest version of this manual from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018).
+Review the following known issues before upgrading to Dynamics GP. To be sure that you review the most current known issues, download the latest version of this manual from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018).
 
 ### Records that aren’t valid in purchase order tables
 
@@ -83,13 +83,13 @@ To verify purchase order tables:
 
 3.  Run the script against all company databases.
 
-4.  If results aren’t returned after running the script, invalid records don’t exist. You can upgrade to Dynamics GP 2018.
+4.  If results aren’t returned after running the script, invalid records don’t exist. You can upgrade to Dynamics GP.
 
-If results are returned after running the script, invalid records exist and you can use Microsoft SQL Server Management Studio to remove these records. You also can check links in the Purchasing series before upgrading to Dynamics GP 2018 to remove invalid records.
+If results are returned after running the script, invalid records exist and you can use Microsoft SQL Server Management Studio to remove these records. You also can check links in the Purchasing series before upgrading to Dynamics GP to remove invalid records.
 
 ### Microsoft SQL Server 2012 database compatibility level
 
-If you have upgraded to Microsoft SQL Server 2012 before upgrading to Dynamics GP 2018, be sure to change your database compatibility level to SQL Server 2012 (110) for all your databases.
+If you have upgraded to Microsoft SQL Server 2012 before upgrading to Dynamics GP, be sure to change your database compatibility level to SQL Server 2012 (110) for all your databases.
 
 To change the database compatibility level:
 
@@ -107,7 +107,7 @@ To change the database compatibility level:
 
 ### Microsoft SQL Server 2014 database compatibility level
 
-If you have upgraded to Microsoft SQL Server 2014 before upgrading to Dynamics GP 2018, be sure to change your database compatibility level to SQL Server 2014 (120) for all your databases.
+If you have upgraded to Microsoft SQL Server 2014 before upgrading to Dynamics GP, be sure to change your database compatibility level to SQL Server 2014 (120) for all your databases.
 
 To change the database compatibility level:
 
@@ -125,7 +125,7 @@ To change the database compatibility level:
 
 ### Microsoft SQL Server 2016 database compatibility level
 
-If you have upgraded to Microsoft SQL Server 2016 before upgrading to Dynamics GP 2018, be sure to change your database compatibility level to SQL Server 2016 (120) for all your databases.
+If you have upgraded to Microsoft SQL Server 2016 before upgrading to Dynamics GP, be sure to change your database compatibility level to SQL Server 2016 (120) for all your databases.
 
 To change the database compatibility level:
 
@@ -233,9 +233,9 @@ Microsoft SQL Server Management Studio.
 
 If results are returned after running the script, the tables do not match the account framework information. Contact the Dynamics GP Update Technical Support Team for instructions before upgrading. You can contact Dynamics GP Technical Support using one of the following methods.
 
--   Create a [Support request](https://mbs.microsoft.com/support/newstart.aspx).
+- Create a [Support request](https://mbs.microsoft.com/support/newstart.aspx).
 
--   Contact by telephone at 1-888-477-7877.
+- Contact by telephone at 1-888-477-7877.
 
 ### Dynamics GP Utilities not responding
 
@@ -255,7 +255,7 @@ To validate budget date records in the Analytical Accounting:
 
 2. Run the script against the company database.
 
-3. If results aren’t returned after running the script, you can upgrade to Dynamics GP 2018.
+3. If results aren’t returned after running the script, you can upgrade to Dynamics GP.
 
     If results show that there are budget date records that do not exist in the AAG00500 table, continue with the next step.
 

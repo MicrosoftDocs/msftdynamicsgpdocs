@@ -18,11 +18,11 @@ ms.reviewer:
 
 The logging capability provided by the Dynamics GP web client installation can help you troubleshoot issues that users may experience with the Dynamics GP web client. Information about logging is divided into the following topics:
 
--   [Logging overview](#logging-overview)  
+- [Logging overview](#logging-overview)  
 
--   [Enabling logging for a tenant](#enabling-logging-for-a-tenant)  
+- [Enabling logging for a tenant](#enabling-logging-for-a-tenant)  
 
--   [Enabling logging for a session](#enabling-logging-for-a-session)  
+- [Enabling logging for a session](#enabling-logging-for-a-session)  
 
 ## Logging overview
 
@@ -32,11 +32,11 @@ To effectively use logging, a basic understanding of the logging features is hel
 
 Logging can be configured at multiple levels for a web client installation:
 
--   At the top level, you can enable logging for all of the users of a specific tenant.
+- At the top level, you can enable logging for all of the users of a specific tenant.
 
--   If you are using multitenant environment, you can enable logging for specific users of a tenant.
+- If you are using multitenant environment, you can enable logging for specific users of a tenant.
 
--   At the lowest level, you can enable logging for a specific web client session.
+- At the lowest level, you can enable logging for a specific web client session.
 
 ### Types of logs
 

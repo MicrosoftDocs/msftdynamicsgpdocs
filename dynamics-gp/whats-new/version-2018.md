@@ -1,5 +1,5 @@
 ---
-title: "What's new in Dynamics GP 2018"
+title: "What's new in Dynamics GP"
 description: "Learn about enhancements that were added to the product since the release of Dynamics GP 2016 R2. "
 keywords: ""
 author: edupont04
@@ -13,7 +13,7 @@ ms.reviewer:
 
 # What’s New in Dynamics GP 2018
 
-This chapter lists enhancements to Dynamics GP for the GP 2018 release. The GP 2018 release enhances specific areas of the product, while also expanding existing functionality, notably in the document attachment and workflow areas. The user experience has also been enhanced to make finding the information you use to make business decisions faster and easier.
+This chapter lists enhancements to Dynamics GP for the GP 2018 release. The Dynamics GP 2018 release enhances specific areas of the product, while also expanding existing functionality, notably in the document attachment and workflow areas. The user experience has also been enhanced to make finding the information you use to make business decisions faster and easier.
 
 ## Platform and system-wide enhancements
 

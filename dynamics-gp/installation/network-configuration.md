@@ -26,13 +26,13 @@ A domain is a group of computers that are part of a network and share a common d
 
 To optimize your network for Microsoft SQL Server and Dynamics GP, refer to the following guidelines.
 
--   Limit the network to one protocol. (TCP/IP is required.)
+- Limit the network to one protocol. (TCP/IP is required.)
 
--   Remove unused network protocols.
+- Remove unused network protocols.
 
--   Use 1 GB Ethernet for optimal performance. For more information, see [System requirements](https://go.microsoft.com/fwlink/?LinkId=263763).
+- Use 1 GB Ethernet for optimal performance. For more information, see [System requirements](https://go.microsoft.com/fwlink/?LinkId=263763).
 
--   Use switches rather than hubs, if optimal performance is required.
+- Use switches rather than hubs, if optimal performance is required.
 
 ## TCP/IP
 

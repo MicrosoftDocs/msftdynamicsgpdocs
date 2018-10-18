@@ -35,25 +35,25 @@ To install Dynamics GP (first computer):
 
 3. If one or more of the following components isn’t installed on your computer, the Dynamics GP Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
-    -   Dexterity Shared Components 18.0
+    - Dexterity Shared Components 18.0
 
-    -   Microsoft Application Error Reporting 11.0
+    - Microsoft Application Error Reporting 11.0
 
-    -   Microsoft Lync 2010 SDK Runtime
+    - Microsoft Lync 2010 SDK Runtime
 
-    -   Microsoft SQL Server Native Client 11.0
+    - Microsoft SQL Server Native Client 11.0
 
-    -   Microsoft Windows Installer 4.6
+    - Microsoft Windows Installer 4.6
 
-    -   Microsoft .NET Framework 3.5
+    - Microsoft .NET Framework 3.5
 
-    -   Microsoft .NET Framework 4.5
+    - Microsoft .NET Framework 4.5
 
-    -   Open XML SDK 2.0 for Microsoft Office
+    - Open XML SDK 2.0 for Microsoft Office
 
-    -   Visual C++ 2015 Runtime Libraries
+    - Visual C++ 2015 Runtime Libraries
 
-    -   Visual Basic for Applications Core
+    - Visual Basic for Applications Core
 
     After all the components are installed, you may need to restart your computer before continuing the installation of Dynamics GP.
 

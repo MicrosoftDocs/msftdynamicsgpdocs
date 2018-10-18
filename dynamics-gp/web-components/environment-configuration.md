@@ -52,7 +52,7 @@ To install the web client runtime components
 
 1. Open the Programs and Features control panel.
 
-2. Select the Dynamics GP 2018 application, and then click Change.
+2. Select the Dynamics GP application, and then click Change.
 
 3. In the Program Maintenance window, click Add/Remove Features.
 
@@ -66,7 +66,7 @@ To install the service based architecture components
 
 1. Open the Programs and Features control panel.
 
-2. Select the Dynamics GP 2018 application and then click Change.
+2. Select the Dynamics GP application and then click Change.
 
 3. In the Program Maintenance window, click Add/Remove Features.
 

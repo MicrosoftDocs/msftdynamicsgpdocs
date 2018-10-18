@@ -18,17 +18,17 @@ ms.reviewer:
 
 Working with the Dynamics GP web client is very similar to working with the desktop client. This chapter provide information about functionality that is specific to the web client. It is divided into the following topics:
 
--   [Connection status](#connection-status)  
+- [Connection status](#connection-status)  
 
--   [Web client errors](#web-client-errors)  
+- [Web client errors](#web-client-errors)  
 
--   [Accessing windows in the web client](#accessing-windows-in-the-web-client)  
+- [Accessing windows in the web client](#accessing-windows-in-the-web-client)  
 
--   [Changing the order of items in the navigation pane](#changing-the-order-of-items-in-the-navigation-pane)  
+- [Changing the order of items in the navigation pane](#changing-the-order-of-items-in-the-navigation-pane)  
 
--   [Accessing help](#accessing-help)  
+- [Accessing help](#accessing-help)  
 
--   [Reports and Printing](#reports-and-printing)  
+- [Reports and Printing](#reports-and-printing)  
 
 ## Connection status
 
@@ -107,7 +107,8 @@ When you print a Report Writer report and choose the Template report type, Dynam
 
 You will be prompted for a location where you want to safe the local report. If you have configured the application to run in trusted mode, you will be asked this only one time for your web client session.
 
-![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")The Dynamics GP web client doesn’t remove any content from the location you specify. It’s up to you to be sure that any sensitive information is removed from the location that you choose on your local workstation.  
+> [!WARNING]
+> The Dynamics GP web client doesn’t remove any content from the location you specify. It’s up to you to be sure that any sensitive information is removed from the location that you choose on your local workstation.  
 
 ### SSRS reports
 

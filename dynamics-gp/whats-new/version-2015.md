@@ -38,9 +38,9 @@ A new checkbox is added in the Workflow Maintenance window for the specified wor
 
 The prerequisites to make this checkbox available are:
 
--   The Allow Document Attachments checkbox must be marked in the Document Attachment Setup window (Administration – Setup – Company – Document Attachment Setup).
+- The Allow Document Attachments checkbox must be marked in the Document Attachment Setup window (Administration – Setup – Company – Document Attachment Setup).
 
--   The Send Message checkbox above it in the Workflow Maintenance window is marked.
+- The Send Message checkbox above it in the Workflow Maintenance window is marked.
 
 You can now email Document Attachment documents when the messages are sent through workflow. All attachments will be sent in the order they are attached. Attachments from the header will be first, then attachments from line items.
 
@@ -135,31 +135,31 @@ A Purchasing All-in-One View window is now available for locating vendor records
 
 You can access the Purchasing All-in-One View window from the following windows and navigation lists:
 
--   Your home page
+- Your home page
 
--   Vendor Maintenance
+- Vendor Maintenance
 
--   Purchase Order Processing Document Inquiry
+- Purchase Order Processing Document Inquiry
 
--   Vendor Inquiry
+- Vendor Inquiry
 
--   Payables Transaction Inquiry - Vendor
+- Payables Transaction Inquiry - Vendor
 
--   Payables Transaction Inquiry – Document
+- Payables Transaction Inquiry – Document
 
--   Purchase Order Processing Document Inquiry
+- Purchase Order Processing Document Inquiry
 
--   Purchase Order Processing Item Inquiry
+- Purchase Order Processing Item Inquiry
 
--   Navigation Lists and any views of these lists
+- Navigation Lists and any views of these lists
 
--   Vendors
+- Vendors
 
--   All Purchasing Transactions
+- All Purchasing Transactions
 
--   Payables Transactions
+- Payables Transactions
 
--   Purchase Order Transactions
+- Purchase Order Transactions
 
 The icon for the Purchasing All-in-One View window is available only if a single record is selected in the navigation list. The data that’s displayed in the Purchasing All-in-One View window depends on your selection in the navigation list. For example, if you select only a vendor record in the navigation list, the vendor ID and name information are displayed in the Purchasing All-in-One View window. If you select a transaction in the navigation list, the vendor ID, name and transaction information are displayed.
 
@@ -209,11 +209,11 @@ Dynamics GP &gt;&gt; Tools &gt;&gt; Utilities &gt;&gt; Company &gt;&gt; Mass Mod
 
 2. Select the option to modify the tax percentage. You can choose:
 
--   Date effective Tax – To update the dates specified in the date range, and the percentage that you have specified in the Date effective Tax rates window.
+- Date effective Tax – To update the dates specified in the date range, and the percentage that you have specified in the Date effective Tax rates window.
 
--   Tax details – To update the tax percentage that you have specified in the Tax Detail Maintenance window.
+- Tax details – To update the tax percentage that you have specified in the Tax Detail Maintenance window.
 
--   Both – To update the tax percentage that you have specified in the Date effective Tax rates window, and in the Tax Detail Maintenance window.
+- Both – To update the tax percentage that you have specified in the Date effective Tax rates window, and in the Tax Detail Maintenance window.
 
 3. Click Insert to view the list of the tax IDs listed for the modification.
 

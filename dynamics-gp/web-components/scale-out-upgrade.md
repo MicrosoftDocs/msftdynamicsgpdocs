@@ -18,15 +18,15 @@ ms.reviewer:
 
 This chapter contains the procedures you need to follow to perform an upgrade of the Dynamics GP web client in the scale out configuration. The following sections are included:
 
--   [Preparing for the upgrade](#preparing-for-the-upgrade)  
+- [Preparing for the upgrade](#preparing-for-the-upgrade)  
 
--   [Updating the web site and Session Central Service](#updating-the-web-site-and-session-central-service)  
+- [Updating the web site and Session Central Service](#updating-the-web-site-and-session-central-service)  
 
--   [Updating session host machines](#updating-session-host-machines)  
+- [Updating session host machines](#updating-session-host-machines)  
 
--   [Verifying the services](#verifying-the-services)  
+- [Verifying the services](#verifying-the-services)  
 
--   [Client machine update steps](#client-machine-update-steps)  
+- [Client machine update steps](#client-machine-update-steps)  
 
 ## Preparing for the upgrade
 
@@ -110,9 +110,9 @@ To install the upgrade for each session host machine in the scale out installati
 
 When all of the components of the web client installation have been updated, • On the machine that is hosting the web site for the web client installation, verify that the Session Central Service is running.
 
--   On each session host machine, verify that the Session Service is running.
+- On each session host machine, verify that the Session Service is running.
 
--   In the Session Management snap-in for the Web Management Console, all of the session host machines should be listed. Be sure that each machine is set to allow new web client sessions.
+- In the Session Management snap-in for the Web Management Console, all of the session host machines should be listed. Be sure that each machine is set to allow new web client sessions.
 
 At this point, you can allow users to sign in to the Dynamics GP web client installation.
 

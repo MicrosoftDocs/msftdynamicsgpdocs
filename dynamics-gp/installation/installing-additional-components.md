@@ -23,40 +23,41 @@ After you’ve installed Dynamics GP, you may decide to purchase an additional f
 
 You can register Dynamics GP using the Registration window (Administration &gt;&gt; Setup &gt;&gt; System &gt;&gt; Registration) after you install. For more information about registration, see [Registering Dynamics GP](/dynamics-gp/installation/after-installing#registering-microsoft-dynamics-gp). All features are registered for the sample company, Fabrikam, Inc. For more information about the sample company, see [Adding sample company data](/dynamics-gp/installation/using-microsoft-dynamics-utilities#adding-sample-company-data).
 
-The following table lists the Dynamics GP features. The features available depends on the country or region you selected when installing Dynamics GP.
-
-The following table lists the Dynamics GP features. The features available depends on the country or region you selected when installing Dynamics GP.
+The following lists shows the Dynamics GP features. The features available depends on the country or region you selected when installing Dynamics GP.
 
 For all countries and regions:
-|                      |                       |
-|----------------------|-----------------------|
-| A4                        | Manufacturing                       |
-| Analysis Cubes Client     | Multilingual Checks                 |
-| Analytical Accounting     | Payment Document Management         |
-| Date Effective Tax Rates  | Professional Services Tools Library |
-| Electronic Bank Reconcile | Project Accounting                  |
-| Encumbrance Management    | Revenue/Expense Deferrals           |
-| Enhanced Intrastat        | Safe Pay                            |
-| Fixed Asset Management    | Service Based Architecture          |
-| Grant Management          | VAT Daybook                         |
-| Web Client Runtime        |                                     |
 
+- A4  
+- Analysis Cubes Client  
+- Analytical Accounting 
+- Date Effective Tax Rates  
+- Electronic Bank Reconcile  
+- Encumbrance Management  
+- Enhanced Intrastat  
+- Fixed Asset Management  
+- Grant Management  
+- Manufacturing  
+- Multilingual Checks  
+- Payment Document Management  
+- Professional Services Tools Library  
+- Project Accounting  
+- Revenue/Expense Deferrals  
+- Safe Pay  
+- Service Based Architecture  
+- VAT Daybook  
+- Web Client Runtime  
 
 For all countries and regions except Canada and the United States:
-|                      |                       |
-|----------------------|-----------------------|
-| Bank Management      | Scheduled Installments|
-| Direct Debit Refunds |                       |
+
+- Bank Management  
+- Direct Debit Refunds  
+- Scheduled Installments  
 
 For the United States:
-|                      |                       |
-|----------------------|-----------------------|
-| Human Resources and Payroll suite |     |
+- Human Resources and Payroll suite  
 
 For Belgium and France:
-|                      |                       |
-|----------------------|-----------------------|
-| Export Financial Data |     |
+- Export Financial Data  
 
 > [!NOTE]
 > We recommend that you install each Dynamics GP feature and additional component that you are going to register on all client computers.
@@ -73,11 +74,11 @@ To add or remove additional features:
 
 1. Start the installation wizard. You can use either of the following methods.
 
--   From the Dynamics GP installation media, double-click the Setup.exe file to open the Dynamics GP installation window. Select the existing instance of Dynamics GP in the Instance Selection window and click Next.
+- From the Dynamics GP installation media, double-click the Setup.exe file to open the Dynamics GP installation window. Select the existing instance of Dynamics GP in the Instance Selection window and click Next.
 
 —or—
 
--   Open the Control Panel &gt; Programs and Features or Uninstall a program Select Dynamics GP 2018. Click Change to open the Program Maintenance window.
+- Open the Control Panel &gt; Programs and Features or Uninstall a program Select Dynamics GP. Click Change to open the Program Maintenance window.
 
 ![login screen for service based architecture service](media/service-based-architecture-login.png "Login screen")  
 
@@ -114,7 +115,7 @@ After you have specified the feature or features, click Next.
 
 ## Additional components
 
-A smaller set of additional components are separate installations available on the Dynamics GP media. These additional components are listed on the main Dynamics GP installation window for media. For more information about accessing this window, see Installing an additional component on page 61.
+A smaller set of additional components are separate installations available on the Dynamics GP media. These additional components are listed on the main Dynamics GP installation window for media. For more information about accessing this window, see [Installing an additional component](#installing-an-additional-component).
 
 | Additional components    | Description    |
 |------------------------|---------------------------|

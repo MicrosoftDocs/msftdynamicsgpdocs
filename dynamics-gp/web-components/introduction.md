@@ -28,13 +28,13 @@ This information was current as of December 1, 2017. The documentation may be up
 
 This introduction is divided into the following sections:
 
--   [What’s in this manual](#whats-in-this-manual)  
+- [What’s in this manual](#whats-in-this-manual)  
 
--   [Symbols and conventions](#symbols-and-conventions)  
+- [Symbols and conventions](#symbols-and-conventions)  
 
--   [Additional resources](#_Additional_resources)  
+- [Additional resources](#_Additional_resources)  
 
--   [Send us your suggestions](#send-us-your-suggestions)  
+- [Send us your suggestions](#send-us-your-suggestions)  
 
 ### What’s in this manual
 
@@ -42,19 +42,19 @@ This manual provides step-by-step instructions for installing the Microsoft
 
 Dynamics GP Web Components. It includes the following parts:
 
--   [Part 1, Getting started](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%201%20Getting%20Started.dotx), provides an overview of the installation process and describes the supported deployment configurations.  
+- [Part 1, Getting started](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%201%20Getting%20Started.dotx), provides an overview of the installation process and describes the supported deployment configurations.  
 
--   [Part 2, Back office server preparation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%202%20Back%20office%20server%20prep.dotx), describes how to configure Dynamics GP and other back office server settings to prepare for the web client installation.  
+- [Part 2, Back office server preparation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%202%20Back%20office%20server%20prep.dotx), describes how to configure Dynamics GP and other back office server settings to prepare for the web client installation.  
 
--   [Part 3, Web server preparation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%203%20Web%20server%20prep.dotx), lists the prerequisite software you must install on your web server and explains how to set up the web site that will host the web client.  
+- [Part 3, Web server preparation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%203%20Web%20server%20prep.dotx), lists the prerequisite software you must install on your web server and explains how to set up the web site that will host the web client.  
 
--   [Part 4, Web components installation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%204%20Web%20components%20install.dotx), provides the steps you need to follow when running the web client installer.  
+- [Part 4, Web components installation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%204%20Web%20components%20install.dotx), provides the steps you need to follow when running the web client installer.  
 
--   [Part 5, Web client upgrade](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%205%20Web%20client%20upgrade.dotx), explains how to install an upgrade for the Dynamics GP web client.  
+- [Part 5, Web client upgrade](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%205%20Web%20client%20upgrade.dotx), explains how to install an upgrade for the Dynamics GP web client.  
 
--   [Part 6, Web client administration](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%206%20Web%20client%20admin.dotx), contains information about administrative tasks you will perform for the web client.  
+- [Part 6, Web client administration](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%206%20Web%20client%20admin.dotx), contains information about administrative tasks you will perform for the web client.  
 
--   [Part 7, Using the Web client](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%207%20Using%20the%20Web%20client.dotx), provides information for end-users of the web client.  
+- [Part 7, Using the Web client](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%207%20Using%20the%20Web%20client.dotx), provides information for end-users of the web client.  
 
 ### Additional resources
 

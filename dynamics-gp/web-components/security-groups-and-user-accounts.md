@@ -18,9 +18,9 @@ ms.reviewer:
 
 To properly secure the Dynamics GP web components installation, some security groups and specific user accounts are required. Information is divided into the following sections:
 
--   [Security groups](#security-groups)  
+- [Security groups](#security-groups)  
 
--   [User accounts](#user-accounts)  
+- [User accounts](#user-accounts)  
 
 ## Security groups
 

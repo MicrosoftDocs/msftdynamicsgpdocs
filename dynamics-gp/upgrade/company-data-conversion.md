@@ -45,9 +45,10 @@ You’ll have to restart Dynamics GP Utilities after you made the changes.
 
 Use this procedure to upgrade Dynamics GP tables on your server computer using Dynamics GP Utilities. You will not need to complete all of these procedures on subsequent computers. When you start Dynamics GP Utilities for subsequent computers, the Additional Tasks window will immediately open, where you can complete additional tasks, such as upgrading your modified forms and reports. The process of upgrading tables may take some time.
 
-Detailed lists of the changes to all tables are available on the Dynamics GP media. To access the table changes lists, install the Software Developers’ Kit from the Dynamics GP 2018 media.
+Detailed lists of the changes to all tables are available on the Dynamics GP media. To access the table changes lists, install the Software Developers’ Kit from the Dynamics GP media.
 
-![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")If you are using Connector for Microsoft Dynamics, you must stop the Microsoft Dynamics Adapter Service on the server before starting Dynamics GP Utilities. The company database upgrade will fail if the Microsoft Dynamics Adapter Service is not stopped. Connector is not supported for Dynamics GP 2018, so it’s not necessary to restart the service after the service after the upgrade is complete.  
+> [!WARNING]
+> If you are using Connector for Microsoft Dynamics, you must stop the Microsoft Dynamics Adapter Service on the server before starting Dynamics GP Utilities. The company database upgrade will fail if the Microsoft Dynamics Adapter Service is not stopped. Connector is not supported for Dynamics GP, so it’s not necessary to restart the service after the service after the upgrade is complete.  
 
 To upgrade Dynamics GP tables:
 
@@ -81,27 +82,27 @@ To upgrade Dynamics GP tables:
 
     Dynamics GP Utilities upgrades your company databases. This process may take several minutes to complete. The Server Installation Progress window describes the process as it progresses.
 
-8. After the upgrade process is finished and is successful, the Additional Tasks window will open, where you can upgrade your forms and reports dictionaries, start Dynamics GP, or exit the installation. To upgrade your forms and reports dictionaries, see [Upgrading modified forms and reports](#upgrading-modified-forms-and-reports) on page 43 for more information. See the following sections for more detailed information about each task.
+8. After the upgrade process is finished and is successful, the Additional Tasks window will open, where you can upgrade your forms and reports dictionaries, start Dynamics GP, or exit the installation. To upgrade your forms and reports dictionaries, see [Upgrading modified forms and reports](#upgrading-modified-forms-and-reports) for more information. See the following sections for more detailed information about each task.
 
 ![screen with list of tasks that open setup wizards.](media/gp-utilities-15.png "Task selector")  
 
-If the upgrade process wasn’t successful, the Update Company Tables window opens. See [Understanding upgrade warnings](#understanding-upgrade-warnings) on page 44 for more information.  
+If the upgrade process wasn’t successful, the Update Company Tables window opens. See [Understanding upgrade warnings](#understanding-upgrade-warnings) for more information.  
 
 ## Additional upgrade tasks
 
 You’ll use the following selections from the Additional Tasks window to upgrade your Dynamics GP files.
 
--   Re-add or Add sample company data
+- Re-add or Add sample company data
 
--   • Update modified forms and reports
+- • Update modified forms and reports
 
-For more information about upgrading forms and reports, see [Upgrading modified forms and reports](#upgrading-modified-forms-and-reports) on page 43.  
+For more information about upgrading forms and reports, see [Upgrading modified forms and reports](#upgrading-modified-forms-and-reports).  
 
 Start Dynamics GP Utilities if you haven’t already and follow the instructions in the Dynamics GP Utilities windows until you open the Additional Tasks window. The following procedures assume that the Additional Tasks window is open.
 
 ## Re-adding sample company data
 
-If you’ve upgraded the sample company from a previous release, you can add the sample data again. If you’ve used the sample data in a previous release, you may want to re-add the data to practice procedures in Dynamics GP 2018. If a Dynamics GP feature is installed, the sample data for that feature will be included when adding or re-adding sample data. The process of reinstalling sample company data may take some time.
+If you’ve upgraded the sample company from a previous release, you can add the sample data again. If you’ve used the sample data in a previous release, you may want to re-add the data to practice procedures in Dynamics GP. If a Dynamics GP feature is installed, the sample data for that feature will be included when adding or re-adding sample data. The process of reinstalling sample company data may take some time.
 
 If you are adding sample data again and haven’t previously deployed business components for the sample company, you can deploy business intelligence components, such as SQL Server Reporting Services reports.
 
@@ -267,11 +268,11 @@ SharePoint location example
 
 You can use Dynamics GP to upgrade the following types of information for modified forms and reports:
 
--   Fields where the data type has been changed are upgraded automatically on modified forms and reports.
+- Fields where the data type has been changed are upgraded automatically on modified forms and reports.
 
--   Fields that have been moved from one table to another are upgraded automatically on forms and reports that use those fields.
+- Fields that have been moved from one table to another are upgraded automatically on forms and reports that use those fields.
 
--   Fields that have been removed from tables are removed from corresponding forms and reports.
+- Fields that have been removed from tables are removed from corresponding forms and reports.
 
 In addition, similar changes are made to modified forms and reports for integrating applications. Consult the documentation for the integrating application for information about whether that application supports automatic form and report upgrades. If you are using Personal Data Keeper, see the Dynamics GP technical support for information about synchronizing forms and reports.
 
@@ -282,11 +283,11 @@ To upgrade modified forms and reports:
 
 1. Make a backup of each reports dictionary or forms dictionary to upgrade. The name of the reports dictionary for Dynamics GP is Reports.dic and the name of the forms dictionary for Dynamics GP is Forms.dic.
 
-2. Open the Dynamics GP 2018 launch file (Dynamics.set) and verify that the paths to the modified reports and forms are correct. The paths must be the location of the reports dictionary and forms dictionary from the previous release.
+2. Open the Dynamics GP launch file (Dynamics.set) and verify that the paths to the modified reports and forms are correct. The paths must be the location of the reports dictionary and forms dictionary from the previous release.
 
 3. In the Additional Tasks window, select Update modified forms and reports and click Process. The Locate Launch File window appears.
 
-4. Select the Dynamics GP 2018 launch file (Dynamics.set) that you use to start Dynamics GP on this client, then click Next. The Update Modified Forms and Reports window appears.
+4. Select the Dynamics GP launch file (Dynamics.set) that you use to start Dynamics GP on this client, then click Next. The Update Modified Forms and Reports window appears.
 
 5. Select Dynamics GP and any additional components whose modified forms and reports dictionaries you’re upgrading.
 

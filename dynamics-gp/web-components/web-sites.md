@@ -18,9 +18,9 @@ ms.reviewer:
 
 This portion of the documentation discusses the web sites that are needed for the Dynamics GP web components installation. Information is divided into the following sections:
 
--   [Required web sites](#required-web-sites)  
+- [Required web sites](#required-web-sites)  
 
--   [Extending sites with ASP.NET](#extending-sites-with-asp.net)  
+- [Extending sites with ASP.NET](#extending-sites-with-asp.net)  
 
 ## Required web sites
 

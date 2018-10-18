@@ -20,13 +20,13 @@ This chapter contains the procedures you need to follow to perform an upgrade of
 
 The following sections are included:
 
--   [Preparing for the upgrade](#preparing-for-the-upgrade)  
+- [Preparing for the upgrade](#preparing-for-the-upgrade)  
 
--   [Upgrading Web Components from a Dynamics GP 2013, or GP 2013 R2 deployment](#upgrading-web-components-from-a-microsoft-dynamics-gp-2013-or-gp-2013-r2-deployment)  
+- [Upgrading Web Components from a Dynamics GP 2013, or GP 2013 R2 deployment](#upgrading-web-components-from-a-microsoft-dynamics-gp-2013-or-gp-2013-r2-deployment)  
 
--   [Upgrading Web Components from a Dynamics GP 2015 Web Components deployment](#upgrading-web-components-from-a-microsoft-dynamics-gp-2015-web-components-deployment)  
+- [Upgrading Web Components from a Dynamics GP 2015 Web Components deployment](#upgrading-web-components-from-a-microsoft-dynamics-gp-2015-web-components-deployment)  
 
--   [Client machine update steps](#client-machine-update-steps)  
+- [Client machine update steps](#client-machine-update-steps)  
 
 ## Preparing for the upgrade
 

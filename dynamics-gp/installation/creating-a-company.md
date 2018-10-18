@@ -23,17 +23,17 @@ Several default charts of accounts are included with your Dynamics GP
 
 system. You may want to use a default chart of accounts for the following reasons:
 
--   The charts of accounts we’ve provided reflect sound accounting practices.
+- The charts of accounts we’ve provided reflect sound accounting practices.
 
--   Extensive research was done to determine the most commonly used account types for the industries we’ve included.
+- Extensive research was done to determine the most commonly used account types for the industries we’ve included.
 
--   Even if changes need to be made after a default chart of accounts is copied for the company, setup time will be greatly reduced by using a default chart.
+- Even if changes need to be made after a default chart of accounts is copied for the company, setup time will be greatly reduced by using a default chart.
 
 Based on the business and industry types you choose for your company, you can install the chart of accounts best tailored for your company’s business needs. For instance, if your company is a retail corporation, select Corporation from the Business Type list, as shown in the previous illustration, then select Retail from the Industry Type list. Accounts specific to corporations, such as stock accounts, will then be added to the chart of accounts specifically designed for retail industries.
 
 If you use a default chart of accounts, you won’t be able to shorten the account format. However, it can be lengthened to the maximum length you established in the Account Definition Setup window of Dynamics GP Utilities, earlier in the installation process. Refer to the System Setup instructions (Help &gt;&gt; Contents &gt;&gt; select Setting up the system) for more information about lengthening account formats.
 
-To preview the default chart of accounts for various business and industry types, review the [Default Charts of Accounts for Dynamics GP](http:// go.microsoft.com/fwlink/?LinkId=89042)  article.
+To preview the default chart of accounts for various business and industry types, review the [Default Charts of Accounts for Dynamics GP](https://go.microsoft.com/fwlink/?LinkId=89042) article.
 
 The default chart of accounts you choose for your company in this procedure is designed to be an accurate estimate of your company’s business practices. However, we recommend that you review the accounts and make any necessary additions or changes. You’ll be directed to the General Ledger documentation later in the setup process, if you need to modify the accounts.
 
@@ -66,16 +66,16 @@ To add a company using Dynamics GP Utilities:
 
 6. The Create Company window opens, where you can enter a database/company ID, and a company name. You also can select the following options.
 
-   -   Mark to load shipping methods and payment terms.
+   - Mark to load shipping methods and payment terms.
 
-    -   Mark the Load Default Chart of Accounts option and click a business and industry type. For more information about charts of accounts, see Chart of accounts overview on page 63.
+    - Mark the Load Default Chart of Accounts option and click a business and industry type. For more information about charts of accounts, see [Chart of accounts overview](#chart-of-accounts-overview).
 
-    -   Copy access from another company, except from the sample company, Fabrikam, Inc.
+    - Copy access from another company, except from the sample company, Fabrikam, Inc.
 
 ![screen for setting up a company](media/create-company-01.png "Company Setup")  
 
 > [!NOTE]
->If you choose to use wizards to migrate QuickBooks or Peachtree data and enter basic configuration information in step 10, the shipping methods and payment terms and the chart of accounts information you have loaded may change.  
+> If you choose to use wizards to migrate QuickBooks or Peachtree data and enter basic configuration information in step 10, the shipping methods and payment terms and the chart of accounts information you have loaded may change.  
 
 7. Click Next after entering and selecting company information.
 
@@ -144,11 +144,11 @@ SharePoint location example.
 
 19. The Company Setup Options window appears, where you can select one of the following options to configure your company.
 
-    -   Mark the Set up the company later option to set up your company at another time. When you are ready to set up data for your company, you can use wizards to migrate data from QuickBooks or Peachtree and enter basic configuration options, or you can configure the company using the Setup Checklist window in Dynamics GP.
+    - Mark the Set up the company later option to set up your company at another time. When you are ready to set up data for your company, you can use wizards to migrate data from QuickBooks or Peachtree and enter basic configuration options, or you can configure the company using the Setup Checklist window in Dynamics GP.
 
-    -   Mark the Set up the company using the configuration wizard option to use the Rapid Configuration Tool for Dynamics GP. The Rapid Configuration Tool helps you enter the basic setup information required for Dynamics GP. With the Rapid Configuration Tool, you can start with a standard industry configuration, modify the configuration data, and then import the data into Dynamics GP. Or, you can import a configuration from a Microsoft Office Excel workbook prepared by a Dynamics GP partner or business consultant.
+    - Mark the Set up the company using the configuration wizard option to use the Rapid Configuration Tool for Dynamics GP. The Rapid Configuration Tool helps you enter the basic setup information required for Dynamics GP. With the Rapid Configuration Tool, you can start with a standard industry configuration, modify the configuration data, and then import the data into Dynamics GP. Or, you can import a configuration from a Microsoft Office Excel workbook prepared by a Dynamics GP partner or business consultant.
 
-    -   Mark the Migrate existing data using the migration wizard option to use the Rapid Migration Tool for Dynamics GP. The Rapid Migration Tool migrates QuickBooks data or Peachtree to Dynamics GP. You can migrate master records, transactions, and configuration settings such as payment terms and shipping methods. Master records include customer records, vendor records, item records, and account records. Transactions include open payables transactions, open receivables transactions, open invoices transactions, and purchase orders. You also can review and edit information before you complete the migration.
+    - Mark the Migrate existing data using the migration wizard option to use the Rapid Migration Tool for Dynamics GP. The Rapid Migration Tool migrates QuickBooks data or Peachtree to Dynamics GP. You can migrate master records, transactions, and configuration settings such as payment terms and shipping methods. Master records include customer records, vendor records, item records, and account records. Transactions include open payables transactions, open receivables transactions, open invoices transactions, and purchase orders. You also can review and edit information before you complete the migration.
 
 To use a tool to migrate or configure data, you must download and install the Rapid Implementation Tools for Dynamics GP. If you haven’t installed the Rapid Implementation Tools, click the Download and install the wizards link.
 

@@ -16,11 +16,11 @@ ms.reviewer:
 
 To set up the Dynamics GP web components for user access using Organizational Accounts, you must register the application in your Microsoft Azure Active Directory. This information is divided into the following sections:
 
--   [Add application](#add-application)  
+- [Add application](#add-application)  
 
--   [Configure for sign on](#configure-for-sign-on)  
+- [Configure for sign on](#configure-for-sign-on)  
 
--   [Configure for multiple tenants](#configure-for-multiple-tenants)  
+- [Configure for multiple tenants](#configure-for-multiple-tenants)  
 
 ## Add application
 

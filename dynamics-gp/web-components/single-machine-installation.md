@@ -20,11 +20,11 @@ This chapter contains the procedures you need to follow to install and verify th
 
 The following sections are included:
 
--   [Install the web components](#install-the-web-components)  
+- [Install the web components](#install-the-web-components)  
 
--   [Verify the web client installation](#verify-the-web-client-installation)  
+- [Verify the web client installation](#verify-the-web-client-installation)  
 
--   [Verify the Service Based Architecture installation](#verify-the-service-based-architecture-installation)  
+- [Verify the Service Based Architecture installation](#verify-the-service-based-architecture-installation)  
 
 ## Install the web components
 

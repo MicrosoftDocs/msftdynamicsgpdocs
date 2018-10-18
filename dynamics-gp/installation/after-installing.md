@@ -38,7 +38,7 @@ The Welcome to Dynamics GP window opens.
 
     To switch to a different company while you are working in Dynamics GP, choose Dynamics GP menu &gt;&gt; User and Company.
 
-    To quit Dynamics GP:
+To quit Dynamics GP:
 
 1. Save your work in the window you are working in.
 

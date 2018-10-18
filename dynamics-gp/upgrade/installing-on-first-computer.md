@@ -15,13 +15,13 @@ ms.reviewer:
 
 # Install Dynamics GP on the first computer
 
-Use the information in this chapter to install Dynamics GP 2018 R2.  
+Use the information in this chapter to install Dynamics GP.  
 
 ## Installation overview
 
 In a multiuser local area network environment, Dynamics GP applications are typically installed on a server, and then on each client. However, Dynamics GP is not required to be installed on the server. You must install the Dynamics GP databases on one computer first. After the Dynamics GP databases are installed on that computer, you’ll be using the Dynamics GP installation media or using an installation package to install on all remaining clients. For more about creating an installation package for your clients, see [Installation package](installation-package.md).
 
-The program files of the previous release aren’t removed by the Dynamics GP 2018 upgrade process.
+The program files of the previous release aren’t removed by the Dynamics GP upgrade process.
 
 ## Installing Dynamics GP (first computer)
 
@@ -31,27 +31,27 @@ To install Dynamics GP (first computer):
 
 1. From the Dynamics GP installation media, double-click the Setup.exe file to open the Dynamics GP installation window.
 
-2. If one or more of the following components isn’t installed on your computer, the Dynamics GP 2018 Bootstrapper Setup window opens and you can choose to install the missing component or components.
+2. If one or more of the following components isn’t installed on your computer, the Dynamics GP Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
-    -   Dexterity Shared Components 18.0
+    - Dexterity Shared Components 18.0
 
-    -   Microsoft Application Error Reporting 11.0
+    - Microsoft Application Error Reporting 11.0
 
-    -   Microsoft Lync 2010 SDK Runtime
+    - Microsoft Lync 2010 SDK Runtime
 
-    -   Microsoft SQL Server Native Client 10.0
+    - Microsoft SQL Server Native Client 10.0
 
-    -   Microsoft Windows Installer 4.5
+    - Microsoft Windows Installer 4.5
 
-    -   Microsoft .NET Framework 3.5
+    - Microsoft .NET Framework 3.5
 
-    -   Microsoft .NET Framework 4.6
+    - Microsoft .NET Framework 4.6
 
-    -   Open XML SDK 2.0 for Microsoft Office
+    - Open XML SDK 2.0 for Microsoft Office
 
-    -   Visual C++ 2015 Runtime Libraries
+    - Visual C++ 2015 Runtime Libraries
 
-    -   Visual Basic for Applications Core
+    - Visual Basic for Applications Core
 
     After all the components are installed, you may need to restart your computer before continuing the installation of Dynamics GP.
 
@@ -101,15 +101,15 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 13. In the Installation Complete window, click Exit.
 
-14. Before you start Dynamics GP Utilities, check for and install the most current Dynamics GP update for Dynamics GP 2018. See [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018) for the latest update information.
+14. Before you start Dynamics GP Utilities, check for and install the most current Dynamics GP update for Dynamics GP. See [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018) for the latest update information.
 
 > [!NOTE]
 > To start Dynamics GP Utilities, you must have appropriate privileges. Typically this means being prat of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control, (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system documentation for more information.  
 
 15. After installing Dynamics GP and the most recent update, you can perform the following steps.
 
-    -   Start Dynamics GP Utilities.
+    - Start Dynamics GP Utilities.
 
-    -   Follow the instructions in the Dynamics GP Utilities windows to upgrade tables on your server, upgrade your companies, and upgrade modified forms and reports. See [Company data conversion](company-data-conversion.md) for more information.
+    - Follow the instructions in the Dynamics GP Utilities windows to upgrade tables on your server, upgrade your companies, and upgrade modified forms and reports. See [Company data conversion](company-data-conversion.md) for more information.
 
-    -   After using Dynamics GP Utilities, you can install additional component applications on the server computer. See [Creating an Installation package](installation-package.md) or [Installing an additional component](additional-features-and-components-upgrade.md) for more information.  
+    - After using Dynamics GP Utilities, you can install additional component applications on the server computer. See [Creating an Installation package](installation-package.md) or [Installing an additional component](additional-features-and-components-upgrade.md) for more information.  

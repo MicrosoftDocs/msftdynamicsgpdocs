@@ -18,19 +18,19 @@ ms.reviewer:
 
 The administrator of the Dynamics GP web client installation has the responsibility to monitor and manage the web client sessions. Information about his task is divided into the following topics:
 
--   [Session Management snap-in](#session-management-snap-in)  
+- [Session Management snap-in](#session-management-snap-in)  
 
--   [Connecting to Session Central](#connecting-to-session-central)  
+- [Connecting to Session Central](#connecting-to-session-central)  
 
--   [Session host machines](#session-host-machines)  
+- [Session host machines](#session-host-machines)  
 
--   [Suspending a session host machine](#suspending-a-session-host-machine)  
+- [Suspending a session host machine](#suspending-a-session-host-machine)  
 
--   [Sessions](#sessions)  
+- [Sessions](#sessions)  
 
--   [Ending a session](#ending-a-session)  
+- [Ending a session](#ending-a-session)  
 
--   [Session timeout](#session-timeout)  
+- [Session timeout](#session-timeout)  
 
 ## Session Management snap-in
 

@@ -20,17 +20,17 @@ Security certificates and secure sockets layer (SSL) are used to help improve th
 
 Information about security certificates is divided into the following sections:
 
--   [Security certificate requirements](#security-certificate-requirements)  
+- [Security certificate requirements](#security-certificate-requirements)  
 
--   [Externally signed security certificates](#externally-signed-security-certificates)  
+- [Externally signed security certificates](#externally-signed-security-certificates)  
 
--   [Using an externally signed security certificate for a web site](#using-an-externally-signed-security-certificate-for-a-web-site)  
+- [Using an externally signed security certificate for a web site](#using-an-externally-signed-security-certificate-for-a-web-site)  
 
--   [Self-signed security certificates](#self-signed-security-certificates)  
+- [Self-signed security certificates](#self-signed-security-certificates)  
 
--   [Configuring the web site to use SSL](#configuring-the-web-site-to-use-ssl)  
+- [Configuring the web site to use SSL](#configuring-the-web-site-to-use-ssl)  
 
--   [Installing a security certificate on a server](#installing-a-security-certificate-on-a-server)  
+- [Installing a security certificate on a server](#installing-a-security-certificate-on-a-server)  
 
 ## Security certificate requirements
 
@@ -56,7 +56,7 @@ There are three basic types of externally signed security certificates:
 
 **Single domain**   This type of security certificate is issued for a specific machine. For example you could get a security certificate issued for the machine with the following name:
 
--   GPweb.contoso.com.
+- GPweb.contoso.com.
 
 You would typically use this type of certificate when installing the Dynamics GP web components in a single machine configuration. This is the least- expensive type of certificate to purchase.
 
@@ -90,9 +90,9 @@ To use an externally signed security certificate:
 
 5. Install the certificate, based on the type of file that has been provided:
 
-    -   If your certificate has been provided as a .cer file, complete these actions. In the Actions pane, click **Complete Certificate Request**. Select the certificate (.cer) file that you obtained from the third-party certificate supplier. In the **Friendly name** field, enter the name that will be displayed for the certificate. Click **OK**.
+    - If your certificate has been provided as a .cer file, complete these actions. In the Actions pane, click **Complete Certificate Request**. Select the certificate (.cer) file that you obtained from the third-party certificate supplier. In the **Friendly name** field, enter the name that will be displayed for the certificate. Click **OK**.
 
-    -   If your certificate has been provided a .pfx file, complete these actions. In the Actions pane, click **Import**. Select the certificate (.pfx) file that you obtained from the third-party certificate supplier. Enter the password for the security certificate. Click **OK**.
+    - If your certificate has been provided a .pfx file, complete these actions. In the Actions pane, click **Import**. Select the certificate (.pfx) file that you obtained from the third-party certificate supplier. Enter the password for the security certificate. Click **OK**.
 
 ## Self-signed security certificates
 

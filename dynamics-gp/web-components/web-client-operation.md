@@ -18,11 +18,11 @@ ms.reviewer:
 
 It is important to understand how all of the components of the Dynamics GP web client installation work together as a user logs in, performs standard operations, and logs out of the web client. This information can be helpful when you are troubleshooting any issues with the web client. The following topics are discussed:
 
--   [Logon](#logon)  
+- [Logon](#logon)  
 
--   [Standard operations](#standard-operations)  
+- [Standard operations](#standard-operations)  
 
--   [Logoff](#logoff)  
+- [Logoff](#logoff)  
 
 ## Logon
 
@@ -50,9 +50,9 @@ Session information for the current user is retrieved.
 
 The session Central Service performs several action to determine how it will direct the user ’s request.
 
--   It will determine whether the user has existing sessions already running on the session host machines. If one or more sessions exist, they are presented in a list for the user. The user can re-connect to an existing session or create a new session.
+- It will determine whether the user has existing sessions already running on the session host machines. If one or more sessions exist, they are presented in a list for the user. The user can re-connect to an existing session or create a new session.
 
--   If no previous sessions exist, the Session Central Service will determine on which session host machine the new session will be created.
+- If no previous sessions exist, the Session Central Service will determine on which session host machine the new session will be created.
 
 *4. The HTML application is loaded into the browser on the client computer.*
 

@@ -18,17 +18,17 @@ ms.reviewer:
 
 To have the Dynamics GP web client installation work as efficiently as possible, it’s important that users follow the proper process for connecting to the web client. Information about this is divided into the following topics:
 
--   [Signing in](#signing-in)  
+- [Signing in](#signing-in)  
 
--   [Disconnecting from a session](#disconnecting-from-a-session)  
+- [Disconnecting from a session](#disconnecting-from-a-session)  
 
--   [Reconnecting to a session](#reconnecting-to-a-session)  
+- [Reconnecting to a session](#reconnecting-to-a-session)  
 
--   [Signing out](#signing-out)  
+- [Signing out](#signing-out)  
 
--   [Signing in as the sa or DYNSA user](#signing-in-as-the-sa-or-dynsa-user)  
+- [Signing in as the sa or DYNSA user](#signing-in-as-the-sa-or-dynsa-user)  
 
--   [Web browser security settings](#web-browser-security-settings)  
+- [Web browser security settings](#web-browser-security-settings)  
 
 ## Signing in
 
@@ -48,7 +48,7 @@ To sign in to the web client, use the following procedure.
 
     <https://gpuaweb.contoso.com/GP>
 
-3. View the sign on page. If the site displays a security certificate error, report the issue to your system administrator, and do not continue the sign on process.
+3. View the sign-in page. If the site displays a security certificate error, report the issue to your system administrator, and do not continue the sign on process.
 
 ![shows the login screen to dynamics gp in the browser.](media/install-web-login-03.png "GP login")  
 
@@ -56,7 +56,8 @@ To sign in to the web client, use the following procedure.
 
     domain\\username or machine\\username
 
-![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")These are not your Dynamics GP login name and password.  
+> [!WARNING]
+> These are not your Dynamics GP login name and password.  
 
 5. Specify the security level for the session. You can click Show descriptions to display details of the two security options.
 
@@ -72,13 +73,13 @@ To sign in to the web client, use the following procedure.
 
 8. A session will be created. The window you see first will depend on settings for your Dynamics GP user.
 
-    -   If your Dynamics GP user ID has only SQL Server Account information, the Dynamics GP login window will be displayed.
+    - If your Dynamics GP user ID has only SQL Server Account information, the Dynamics GP login window will be displayed.
 
 ![shows the login screen to dynamics gp using sql login.](media/install-web-login-01.png "GP login")  
 
 Log in with your Dynamics GP login name and password.
 
--   If your Dynamics GP user ID has Windows Account information, the Web Client SQL User will be used to access Dynamics GP data.
+- If your Dynamics GP user ID has Windows Account information, the Web Client SQL User will be used to access Dynamics GP data.
 
 **One company**   If you have access to only one company, that company will automatically be used. The first page you see in Dynamics GP will be the Home page.
 
@@ -98,9 +99,9 @@ If you accidentally navigated away from the web client session, click **Cancel**
 
 Sometimes, disconnecting from a session by closing the web browser can be useful. The following are two examples:
 
--   Assume you need to shut down your computer, but you have multiple windows open in the Dynamics GP web client with data displayed in them. Disconnecting from the session allows those windows to remain open. When you reconnect to the session, which is discussed in the next section, the windows will have maintained their state information.
+- Assume you need to shut down your computer, but you have multiple windows open in the Dynamics GP web client with data displayed in them. Disconnecting from the session allows those windows to remain open. When you reconnect to the session, which is discussed in the next section, the windows will have maintained their state information.
 
--   A long-running process that you want to allow to finish is another reason to close the web browser and leave the session running on the server. After the process has started, it will continue processing, even after the web browser has been closed.
+- A long-running process that you want to allow to finish is another reason to close the web browser and leave the session running on the server. After the process has started, it will continue processing, even after the web browser has been closed.
 
 ## Reconnecting to a session
 
@@ -112,7 +113,7 @@ To reconnect to a session:
 
 2. Enter the URL of the Dynamics GP web client site.
 
-3. At the sign on page, enter your user credentials, and click **Sign In**. The Session Central Service will find any existing session that you had disconnected from. These sessions will be listed.
+3. At the sign-in page, enter your user credentials, and click **Sign In**. The Session Central Service will find any existing session that you had disconnected from. These sessions will be listed.
 
 ![shows a screen for reconnectng to earlier sessions of dynamics gp.](media/using-web-reconnect.png "GP connection")  
 
@@ -126,17 +127,17 @@ To exit the web client, click **Exit GP** in the upper-right corner of the web b
 
 ![shows a confirmation that you have signed out from dynamics gp.](media/using-web-signout.png "GP connection warning")  
 
-To go back into Dynamics GP, click **Enter Dynamics GP**. If you had chosen the option to remember your user name and password on the sign on page, you will not be prompted for them.
+To go back into Dynamics GP, click **Enter Dynamics GP**. If you had chosen the option to remember your user name and password on the sign-in page, you will not be prompted for them.
 
 If you want to remove the stored user name and password from the machine, click **Sign Out**, in the upper-right corner of the page.
 
 When you have finished working with Dynamics GP, it’s a good idea to exit Dynamics GP, rather than to just disconnect from the session. Some of the advantages of exiting include the following:
 
--   System resources are made available for other web client sessions.
+- System resources are made available for other web client sessions.
 
--   It releases a Dynamics GP user in the system, so you are less likely to encounter the user limit.
+- It releases a Dynamics GP user in the system, so you are less likely to encounter the user limit.
 
--   It reduces the possibility of data loss that might be caused the web client session had to be forcibly ended.
+- It reduces the possibility of data loss that might be caused the web client session had to be forcibly ended.
 
 ## Signing in as the sa or DYNSA user
 
@@ -162,7 +163,7 @@ You may be accessing the Dynamics GP web client through an intranet or over the 
 
 You will have to do one or both of the following actions:
 
--   Display the **Security** tab. Add the URL for the Dynamics GP web client site to the **Trusted sites** list.
+- Display the **Security** tab. Add the URL for the Dynamics GP web client site to the **Trusted sites** list.
 
--   Reduce the security level for the specified zone. For example, if you are running the Dynamics GP web client in an intranet setting, reduce the security level for the **Local intranet zone**.
+- Reduce the security level for the specified zone. For example, if you are running the Dynamics GP web client in an intranet setting, reduce the security level for the **Local intranet zone**.
 

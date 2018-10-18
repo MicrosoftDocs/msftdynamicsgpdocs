@@ -24,7 +24,7 @@ When you install Dynamics GP, the Distributed Process Server (DPS) and the Distr
 
 ## Installing Dynamics GP on an additional computer
 
-Use the information in this section to install a client in a multiuser system after you’ve installed Dynamics GP 2018 on the server or the first computer and created your first company.
+Use the information in this section to install a client in a multiuser system after you’ve installed Dynamics GP on the server or the first computer and created your first company.
 
 To install Dynamics GP on an additional computer:
 
@@ -36,9 +36,7 @@ To install Dynamics GP on an additional computer:
 
 3. Select a new Dynamics GP instance and click Next
 
-### 
-
-    If you are installing Dynamics GP on a computer with an existing instance of Dynamics GP, select Create a new instance and enter a name for the new instance. See Multiple instances of Dynamics GP on page 82 for more information.
+    If you are installing Dynamics GP on a computer with an existing instance of Dynamics GP, select Create a new instance and enter a name for the new instance. For more information, see [Multiple instances of Dynamics GP](#multiple-instances-of-dynamics-gp).
 
 4. In the Select a Country/Region window, select the primary country or region where you do business. Click Next.
 
@@ -81,7 +79,7 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 > [!NOTE]
 > To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
 
-15. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities.
+15. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP &gt;&gt; GP Utilities.
 
 16. Follow the instructions in the Dynamics GP Utilities windows to synchronize your account framework. For more information, see [Synchronizing a client’s account framework](#synchronizing-a-clients-account-framework).
 

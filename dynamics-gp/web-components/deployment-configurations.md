@@ -18,11 +18,11 @@ ms.reviewer:
 
 There are three common deployment configurations for the Dynamics GP web components. This chapter discusses these configurations. It is divided into the following sections:
 
--   [Single machine](#single-machine)  
+- [Single machine](#single-machine)  
 
--   [Scale out](#scale-out)  
+- [Scale out](#scale-out)  
 
--   [Multitenant](#multitenant)  
+- [Multitenant](#multitenant)  
 
 ## Single machine
 
@@ -56,11 +56,11 @@ The scale out configuration has some redundancy. If one of the session host mach
 
 The multitenant configuration is typically used by organizations that host Dynamics GP for other customers. This configuration can support a large number of users. This configuration has the following characteristics:
 
--   There are multiple front-end web servers that are each running the Session Central Service and the GP Service. These web servers are load balanced for redundancy.
+- There are multiple front-end web servers that are each running the Session Central Service and the GP Service. These web servers are load balanced for redundancy.
 
--   Multiple session host machines host the sessions of the Dynamics GP web client and service-based architecture. Each of these session host machines contains the Session Service, Dexterity Service Control, and the Dynamics GP web client runtime and service-based architecture.
+- Multiple session host machines host the sessions of the Dynamics GP web client and service-based architecture. Each of these session host machines contains the Session Service, Dexterity Service Control, and the Dynamics GP web client runtime and service-based architecture.
 
--   The Tenant Service is used with this configuration to allow multiple Dynamics GP installations to be run on the same physical server.
+- The Tenant Service is used with this configuration to allow multiple Dynamics GP installations to be run on the same physical server.
 
 The multitenant configuration has the best redundancy of any of the typical Dynamics GP web client configurations. In addition to multiple session host machines, having multiple front-end web servers can allow web client users to access the system even when one of the web servers is unavailable.
 

@@ -12,25 +12,10 @@ ms.topic: article
 ms.assetid: 91d3c5e3-a1ca-45e6-9a79-3b091921f838
 ms.reviewer: 
 ---
-<span id="_Toc498953314" class="anchor"></span>
 
 # Scale out installation
 
 This chapter contains the procedures you need to follow to install and verify the Dynamics GP web components in the scale out configuration.
-
-The following sections are included:
-
--   [Install the web server](#install-the-web-server)  
-
--   [Install the host machines](#install-the-host-machines)  
-
--   [Verify the web client installation](#verify-the-web-client-installation.)  
-
--   [Web management console](#web-management-console)  
-
--   [Creating a session](#creating-a-session)  
-
--   [Verify the service based architecture installation](#verify-the-service-based-architecture-installation)  
 
 ## Install the web server
 
@@ -172,11 +157,11 @@ Click **Next** to continue.
 
 It is assumed that you have installed a Dynamics GP desktop client onto the session host machine, and that the desktop client is able to log in to Dynamics GP. The following prerequisites must have been completed:
 
--   The web client runtime components for the Dynamics GP installation must also have been installed on the session host machine to use the web client. Refer to [Web client runtime components](#_Web_client_runtime) on page 24 for more information.  
+- The web client runtime components for the Dynamics GP installation must also have been installed on the session host machine to use the web client. Refer to [Web client runtime components](/dynamics-gp/web-components/installation-overview#dynamics-gp-web-client-runtime) for more information.  
 
--   The service based architecture components for the Dynamics GP installation must also have been installed on the session host machine to use service based architecture.
+- The service based architecture components for the Dynamics GP installation must also have been installed on the session host machine to use service based architecture.
 
--   It is also assumed that you have installed the security certificate on each session host machine as described in Installing a security certificate on a server on page 46.
+- It is also assumed that you have installed the security certificate on each session host machine as described in the **Installing a security certificate on a server**.
 
 Use the following procedure to install components on each session host machine. You will repeat this process for each session host machine that you add to the web components deployment.
 
@@ -196,7 +181,8 @@ Use the following procedure to install components on each session host machine. 
 
 Specify the location where you want to install the web component files.
 
-If you don't install to the default location, pay attention to the path length you specify for the install location. If the path length exceeds 100 characters, you may get application errors, such as not being able to re-open forms in the web client.![displays a triangle with an exclamation point to indicate warning.](media/warning.png "Warning symbol")  
+> [!WARNING]
+> If you don't install to the default location, pay attention to the path length you specify for the install location. If the path length exceeds 100 characters, you may get application errors, such as not being able to re-open forms in the web client.  
 
 Click **Next** to continue.
 
@@ -210,7 +196,7 @@ Click **Next** to continue.
 
 7. Supply the name of the Windows security group that specifies which users can access the Dynamics GP web client. For machine groups, the name must be prefixed by the machine name. For domain groups, the name must be prefixed by the domain name.
 
-![shows a screen for the windows grous that users must be members of.](media/install-web-windowsusers.png "Windows user groups")  
+![shows a screen for the windows groups that users must be members of.](media/install-web-windowsusers.png "Windows user groups")  
 
 Click **Next** to continue.
 
@@ -308,13 +294,13 @@ Click **Sign In**.
 
 5. A session will be created. The window you see first will depend on settings for your Dynamics GP user. Log in with your Dynamics GP login name and password.
 
--   If your Dynamics GP user ID has Directory Account information, the Dynamics GP login window will be displayed.
+- If your Dynamics GP user ID has Directory Account information, the Dynamics GP login window will be displayed.
 
  ![shows the login screen to dynamics gp using sql login.](media/install-web-login-01.png "GP login")  
 
 Log in with your Dynamics GP login name and password.
 
--   If your Dynamics GP user ID has Directory Account information, the Web Client SQL User will be used to access Dynamics GP data.
+- If your Dynamics GP user ID has Directory Account information, the Web Client SQL User will be used to access Dynamics GP data.
 
 **One company**   If you have access to only one company, that company will automatically be used. The first page you see in Dynamics GP will be
 

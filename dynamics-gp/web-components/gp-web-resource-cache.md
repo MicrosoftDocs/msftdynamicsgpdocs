@@ -18,11 +18,11 @@ ms.reviewer:
 
 The Dynamics GP Web Resource Cache is an optional component that you can install on the session host machines of your web client installation to help improve the performance and resource utilization. It is a Windows service that runs on the session host machines for the web client installation. Information about caching is divided into the following sections:
 
--   [Caching for the web client](#caching-for-the-web-client)  
+- [Caching for the web client](#caching-for-the-web-client)  
 
--   [Installing the GP Web Resource Cache](#installing-the-gp-web-resource-cache)  
+- [Installing the GP Web Resource Cache](#installing-the-gp-web-resource-cache)  
 
--   [Managing the cache](#managing-the-cache)  
+- [Managing the cache](#managing-the-cache)  
 
 ## Caching for the web client
 
@@ -34,11 +34,11 @@ The GP Web Resource Cache allows caching at the machine level. When a user acces
 
 The machine level cache can help improve performance in three ways:
 
--   It’s faster to use the cached version of a form, rather than to retrieve and convert the form definition from the application dictionary.
+- It’s faster to use the cached version of a form, rather than to retrieve and convert the form definition from the application dictionary.
 
--   Because it is persistent beyond the life of individual user sessions, the cached information does not have to be re-created for each session.
+- Because it is persistent beyond the life of individual user sessions, the cached information does not have to be re-created for each session.
 
--   The cached information is shared. The first time a web client user accesses a form, the form is cached. After that time, other web client users will access the cached version of the form.
+- The cached information is shared. The first time a web client user accesses a form, the form is cached. After that time, other web client users will access the cached version of the form.
 
 If a form in the Dynamics GP web client installation has changed, such as being customized with the Modifier, the cache is updated automatically the next time the form is accessed.
 

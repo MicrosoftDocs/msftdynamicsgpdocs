@@ -15,37 +15,37 @@ ms.reviewer:
 
 # Install Dynamics GP on subsequent computers
 
-Use the information in this chapter to install to Dynamics GP 2018 on each client computer. You also can use Dynamics GP Utilities to synchronize the Dynamics GP dictionary on each additional client with your account framework.
+Use the information in this chapter to install to Dynamics GP on each client computer. You also can use Dynamics GP Utilities to synchronize the Dynamics GP dictionary on each additional client with your account framework.
 
 ## Installing Dynamics GP (additional computers)
 
-Use the information in this section to install a client in a multiuser system after you’ve installed Dynamics GP 2018 on the first computer, and created company data using Dynamics GP Utilities.
+Use the information in this section to install a client in a multiuser system after you’ve installed Dynamics GP on the first computer, and created company data using Dynamics GP Utilities.
 
 To install Dynamics GP (additional computers):
 
-1. From the Dynamics GP 2018 media, double-click the Setup.exe file.
+1. From the Dynamics GP media, double-click the Setup.exe file.
 
 2. If one or more of the following components isn’t installed on your computer, the Dynamics GP Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
-    -   Dexterity Shared Components 18.0
+    - Dexterity Shared Components 18.0
 
-    -   Microsoft Application Error Reporting 11.0
+    - Microsoft Application Error Reporting 11.0
 
-    -   Microsoft Lync 2010 SDK Runtime
+    - Microsoft Lync 2010 SDK Runtime
 
-    -   Microsoft SQL Server Native Client 11.0
+    - Microsoft SQL Server Native Client 11.0
 
-    -   Microsoft Windows Installer 4.5
+    - Microsoft Windows Installer 4.5
 
-    -   Microsoft .NET Framework 4.6
+    - Microsoft .NET Framework 4.6
 
-    -   Microsoft .NET Framework 3.5
+    - Microsoft .NET Framework 3.5
 
-    -   Open XML SDK 2.0 for Microsoft Office
+    - Open XML SDK 2.0 for Microsoft Office
 
-    -   Visual C++ 2015 Runtime Libraries
+    - Visual C++ 2015 Runtime Libraries
 
-    -   Visual Basic for Applications Core
+    - Visual Basic for Applications Core
 
     After all the components are installed, you may need to restart your computer before continuing the installation of Dynamics GP.
 
@@ -67,7 +67,7 @@ To install Dynamics GP (additional computers):
 | ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
 | ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
 
-If you’ve installed a feature in a previous release, use the Select Features window to install that component. See Dynamics GP features on page 47 for a list of Dynamics GP features.
+If you’ve installed a feature in a previous release, use the Select Features window to install that component. See [Dynamics GP features](/dynamics-gp/installation/installing-additional-components#dynamics-gp-features) for a list of Dynamics GP features.
 
 7. Specify the folder where the Dynamics GP files should be installed. To select a different folder, click Browse.
 
@@ -93,18 +93,18 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 12. In the Installation Complete window, click Exit.
 
-13. Before you start Dynamics GP Utilities, check for and install the most current Dynamics GP update for Dynamics GP 2018. See CustomerSource ([*https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource\#GP2018*](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018)) for the latest update information.
+13. Before you start Dynamics GP Utilities, check for and install the most current Dynamics GP update for Dynamics GP. See CustomerSource ([*https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource\#GP2018*](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018)) for the latest update information.
 
 14. After installing Dynamics GP and the most recent update, you can perform the following steps.
 
 > [!NOTE]
 > To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system's documentation for more information.  
 
--   Start Dynamics GP Utilities.
+- Start Dynamics GP Utilities.
 
--   Follow the instructions in the Dynamics GP Utilities windows to synchronize your account framework. See Synchronizing a client’s account framework for more information about synchronizing your account framework.
+- Follow the instructions in the Dynamics GP Utilities windows to synchronize your account framework. See Synchronizing a client’s account framework for more information about synchronizing your account framework.
 
--   After using Dynamics GP Utilities, you can install additional component applications on the server computer. See Installing an additional component on page 51 for more information.
+- After using Dynamics GP Utilities, you can install additional component applications on the server computer. See the **Installing an additional component** section for more information.
 
 ## Synchronizing a client’s account framework
 

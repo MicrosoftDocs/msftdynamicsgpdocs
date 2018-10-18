@@ -19,7 +19,7 @@ We recommend that you complete the steps in this chapter after you upgrade all D
 
 ## Backups
 
-You should make at least one complete backup of your system database and each company database after upgrading to Dynamics GP 2018.
+You should make at least one complete backup of your system database and each company database after upgrading to Dynamics GP.
 
 ## Reconciling financial data
 

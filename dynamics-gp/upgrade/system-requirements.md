@@ -21,13 +21,13 @@ This chapter contains a list of prerequisites and system requirement changes for
 
 ## Releases supported by the upgrade
 
-You can upgrade to Dynamics GP 2018 from selected previous releases. To review whether or not you can upgrade your release, see [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade).
+You can upgrade to Dynamics GP from selected previous releases. To review whether or not you can upgrade your release, see [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade).
 
-If you are upgrading to Dynamics GP 2018, you must install the latest update or hotfix for Dynamics GP 2018 before starting Dynamics GP Utilities. See [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018) for the latest update information.
+If you are upgrading to Dynamics GP, you must install the latest update or hotfix for Dynamics GP before starting Dynamics GP Utilities. See [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018) for the latest update information.
 
 ## System requirement changes
 
-The following changes are new with Dynamics GP 2018. For a complete list of all system requirements, see [https://go.microsoft.com/fwlink/?LinkId=521785](https://go.microsoft.com/fwlink/?LinkId=521785). You may want to consider upgrading your hardware for improved performance.
+The following changes are new with Dynamics GP. For a complete list of all system requirements, see [https://go.microsoft.com/fwlink/?LinkId=521785](https://go.microsoft.com/fwlink/?LinkId=521785). You may want to consider upgrading your hardware for improved performance.
 
 ### Operating system requirement changes
 
@@ -67,31 +67,31 @@ Microsoft Office 2013 and Microsoft Office 2016 are supported. All previous vers
 
 ## Home page prerequisites
 
-To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with Dynamics GP. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP 2018 documentation resource Web site](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018) for the most current documentation.
+To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with Dynamics GP. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP documentation resource Web site](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018) for the most current documentation.
 
 The following versions of SQL Server Reporting Services are supported.
 
--   SQL Server 2012 Reporting Services
+- SQL Server 2012 Reporting Services
 
--   SQL Server 2014 Reporting Services
+- SQL Server 2014 Reporting Services
 
--   SQ” Server 2016 Reporting Services
+- SQ” Server 2016 Reporting Services
 
 ## Word templates prerequisites
 
 The following components must be installed before you can use Word Templates for Dynamics GP.
 
--   Microsoft Word 2013 or later to make layout changes such changing the font size
+- Microsoft Word 2013 or later to make layout changes such changing the font size
 
--   Open XML SDK 2.0 for Microsoft Office (installed as a Dynamics GP prerequisite)
+- Open XML SDK 2.0 for Microsoft Office (installed as a Dynamics GP prerequisite)
 
 If a component isn't installed, you can download the component from [microsoft.com](https://www.microsoft.com).
 
 Additional components are required to modify templates.
 
--   Dynamics GP Add-in for Microsoft Word
+- Dynamics GP Add-in for Microsoft Word
 
--   Visual Studio Tools for Office Runtime 2.0 or later (Visual Studio Tools for Office Runtime 3.0 is installed with Dynamics GP Add-in for Microsoft Word.)
+- Visual Studio Tools for Office Runtime 2.0 or later (Visual Studio Tools for Office Runtime 3.0 is installed with Dynamics GP Add-in for Microsoft Word.)
 
 You can install Dynamics GP Add-in for Microsoft Word from the Dynamics GP installation media. Double-click the Setup.exe file and then click Dynamics GP Add-in for Microsoft Word.
 
@@ -99,11 +99,11 @@ You can install Dynamics GP Add-in for Microsoft Word from the Dynamics GP insta
 
 Review the following requirements.
 
--   You can send documents by email if you’re using a MAPI-compliant e-mail service or Exchange 2007 Service Pack 1 or greater with Exchange Web Services.
+- You can send documents by email if you’re using a MAPI-compliant e-mail service or Exchange 2007 Service Pack 1 or greater with Exchange Web Services.
 
--   If you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services, the Autodiscover service must be enabled to connect to the Exchange server.
+- If you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services, the Autodiscover service must be enabled to connect to the Exchange server.
 
--   The email functionality in Dynamics GP supports the following document types. Depending on the document type and the email service, Microsoft Word 2010 or later and Word templates for Dynamics GP are required.
+- The email functionality in Dynamics GP supports the following document types. Depending on the document type and the email service, Microsoft Word 2010 or later and Word templates for Dynamics GP are required.
 
 | File format                                                                                                                           | Word 2013         | Word templates | Web Client    |
 |---------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------------|---------------|
@@ -113,13 +113,13 @@ Review the following requirements.
 | HTML                                                                                                                                  | Not required      | Not required   | Available\*   |
 | \*Email for Dynamics GP Web Client will only be available if Exchange is your server type in the System Preferences window. |
 
--   Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window.
+- Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window.
 
--   The email functionality is supported on the 32-bit edition of Microsoft Office2013.
+- The email functionality is supported on the 32-bit edition of Microsoft Office2013.
 
--   The email functionality is supported on the 64-bit edition of Microsoft Office2013 if you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services and Exchange is your server type in the System Preferences window.
+- The email functionality is supported on the 64-bit edition of Microsoft Office2013 if you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services and Exchange is your server type in the System Preferences window.
 
--   Depending on the file format you choose to send your documents in e-mail, your customers and vendors must be using the following components to view their documents.
+- Depending on the file format you choose to send your documents in e-mail, your customers and vendors must be using the following components to view their documents.
 
 | File format                                                                                                                         | Component                     |
 |-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
@@ -234,13 +234,13 @@ If the data files (MDF) are located on a different hard disk than the transactio
 
 2.  Use Microsoft SQL Server Management Studio to manually increase the space allocated for the data file and the transaction log file for the DYNAMICS database and each company database.
 
--   Right-click each database in Microsoft SQL Server Management Studio and select Properties.
+- Right-click each database in Microsoft SQL Server Management Studio and select Properties.
 
--   In the properties window for each database, choose Files and add the additional space needed for the size of the largest table for that database to the Initial Size column. When adding additional space, you are increasing the space for the data file (MDF) and the transaction log file (LDF) as well.
+- In the properties window for each database, choose Files and add the additional space needed for the size of the largest table for that database to the Initial Size column. When adding additional space, you are increasing the space for the data file (MDF) and the transaction log file (LDF) as well.
 
--   Repeat for the remaining Dynamics GP databases.
+- Repeat for the remaining Dynamics GP databases.
 
--   Right-click the TEMPDB database and select Properties. Choose Files and add the additional space needed for the size of the largest table of all Dynamics GP databases to the Space Allocated (MB) column. When adding additional space, you are increasing the space for the data file (MDF) and the transaction log file (LDF) as well.
+- Right-click the TEMPDB database and select Properties. Choose Files and add the additional space needed for the size of the largest table of all Dynamics GP databases to the Space Allocated (MB) column. When adding additional space, you are increasing the space for the data file (MDF) and the transaction log file (LDF) as well.
 
 > [!NOTE]
 > If the database size is not manual configured, the time needed to upgrade the databases will increase because the database data, transaction log and TEMPDB files will all have to increase.  

@@ -18,21 +18,21 @@ ms.reviewer:
 
 Before you can install the Dynamics GP web components, you must install other software on the web server and the session host servers. The prerequisite software to install will depend on the components you will be installing on the server. The following sections describe these software prerequisites:
 
--   [Server operating system](#server-operating-system)  
+- [Server operating system](#server-operating-system)  
 
--   [Internet Information Services (IIS) and ASP.NET](#internet-information-services-iis-and-asp.net)  
+- [Internet Information Services (IIS) and ASP.NET](#internet-information-services-iis-and-asp.net)  
 
 ## Server operating system
 
 To install the Dynamics GP web components, the web server and the session host servers must be running one of the following operating systems:
 
--   Microsoft Windows Server 2016
+- Microsoft Windows Server 2016
 
--   Microsoft Windows Server 2012
+- Microsoft Windows Server 2012
 
--   Microsoft Windows Server 2012 R2
+- Microsoft Windows Server 2012 R2
 
--   Windows Server 2008 SP1
+- Windows Server 2008 SP1
 
 You cannot install any of the Dynamics GP web client components on a server that is also being used as a domain controller.
 
@@ -58,13 +58,13 @@ To install these items, complete the following steps for Windows Server 2008 R2:
 
 In **Common HTTP Features**:
 
--   Static Content
+- Static Content
 
--   Default Document
+- Default Document
 
 In Application Development:
 
--   ASP.NET
+- ASP.NET
 
 In **Security**:
 
@@ -104,9 +104,9 @@ Click **Next**.
 
 In **Common HTTP Features**:
 
--   Static Content
+- Static Content
 
--   Default Document
+- Default Document
 
 In **Security**:
 

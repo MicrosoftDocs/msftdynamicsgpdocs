@@ -16,23 +16,23 @@ ms.reviewer:
 
 # Module upgrades from Dynamics GP 2013
 
-Use the module upgrade information in this chapter to verify the upgrade from Dynamics GP Release 2013. The information in this chapter also provides information about module upgrades from Dynamics GP 2013 to Dynamics GP 2018.
+Use the module upgrade information in this chapter to verify the upgrade from Dynamics GP Release 2013. The information in this chapter also provides information about module upgrades from Dynamics GP 2013 to Dynamics GP.
 
 This chapter contains the following sections:
 
--   [System upgrade](#system-upgrade)  
+- [System upgrade](#system-upgrade)  
 
--   [Payables Management upgrade](#payables-management-upgrade)  
+- [Payables Management upgrade](#payables-management-upgrade)  
 
--   [Purchase Order Processing upgrade](#purchase-order-processing-upgrade)  
+- [Purchase Order Processing upgrade](#purchase-order-processing-upgrade)  
 
--   [Fixed Assets upgrade](#fixed-assets-upgrade)  
+- [Fixed Assets upgrade](#fixed-assets-upgrade)  
 
--   [Payment Services for Microsoft Dynamics ERP upgrade](#_Payment_Services_for)  
+- [Payment Services for Microsoft Dynamics ERP upgrade](#_Payment_Services_for)  
 
 ## System upgrade
 
-The following change has been made in Dynamics GP 2018. For more information, refer to your System User ’s Guide (Help &gt;&gt; Contents &gt;&gt; select Setting up the system).
+The following change has been made in Dynamics GP. For more information, refer to your System User ’s Guide (Help &gt;&gt; Contents &gt;&gt; select Setting up the system).
 
 ### Posting Accounts Setup window
 
@@ -172,15 +172,15 @@ The following changes have been made. For more information, refer to your Fixed 
 
 If you have created a Fixed Assets fiscal calendar in a previous release, the following updates occur to the calendar.
 
--   The calendar ID of DEFAULT is assigned to the calendar.
+- The calendar ID of DEFAULT is assigned to the calendar.
 
--   The description of Default FA Calendar is assigned to the calendar.
+- The description of Default FA Calendar is assigned to the calendar.
 
--   The Short/Long Year option is unmarked in the Fixed Assets Calendar Setup window for each year in the calendar.
+- The Short/Long Year option is unmarked in the Fixed Assets Calendar Setup window for each year in the calendar.
 
--   The Depreciation Percentage is 100% in the Fixed Assets Calendar Setup window for each year in the calendar.
+- The Depreciation Percentage is 100% in the Fixed Assets Calendar Setup window for each year in the calendar.
 
--   The DEFAULT calendar is assigned to the existing asset books.
+- The DEFAULT calendar is assigned to the existing asset books.
 
 ### Next Asset ID
 

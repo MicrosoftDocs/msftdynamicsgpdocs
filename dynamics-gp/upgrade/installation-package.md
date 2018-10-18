@@ -15,33 +15,33 @@ ms.reviewer:
 
 # Installation package
 
-Instead of physically going to each client computer to install Dynamics GP, you can use an installation package to install Dynamics GP 2018 on multiple client computers. An installation package stores the files required to install a custom configured installation in a shared network location you set up. How Dynamics GP is installed on the client computer using the installation package depends on the tools and applications you use.
+Instead of physically going to each client computer to install Dynamics GP, you can use an installation package to install Dynamics GP on multiple client computers. An installation package stores the files required to install a custom configured installation in a shared network location you set up. How Dynamics GP is installed on the client computer using the installation package depends on the tools and applications you use.
 
 ## Installation package overview
 
-You can use a client installation package to install Dynamics GP 2018 on additional client computers without having to physically go to each client computer and use the Dynamics GP installation wizard. When you create an installation package, the installation package stores the files required to install a Dynamics GP installation. To install Dynamics GP 2018, your package can install Dynamics GP using the GreatPlains.msi file or the Setup.exe.
+You can use a client installation package to install Dynamics GP on additional client computers without having to physically go to each client computer and use the Dynamics GP installation wizard. When you create an installation package, the installation package stores the files required to install a Dynamics GP installation. To install Dynamics GP, your package can install Dynamics GP using the GreatPlains.msi file or the Setup.exe.
 
-We recommend that you install the following components on each client computer. You can install these components from the Dynamics GP 2018 media.
+We recommend that you install the following components on each client computer. You can install these components from the Dynamics GP media.
 
--   Microsoft Windows Installer 4.5
+- Microsoft Windows Installer 4.5
 
--   Microsoft .NET Framework 3.5
+- Microsoft .NET Framework 3.5
 
--   Microsoft .NET Framework 4.6
+- Microsoft .NET Framework 4.6
 
--   Microsoft SQL Server Native Client 11.0
+- Microsoft SQL Server Native Client 11.0
 
--   Microsoft Dexterity Shared Components 18.0
+- Microsoft Dexterity Shared Components 18.0
 
--   Microsoft Application Error Reporting 11.0
+- Microsoft Application Error Reporting 11.0
 
--   Microsoft Lync 2010 SDK Runtime
+- Microsoft Lync 2010 SDK Runtime
 
--   Open XML SDK 2.0 for Microsoft Office
+- Open XML SDK 2.0 for Microsoft Office
 
--   Visual C++ 2015 Runtime Libraries
+- Visual C++ 2015 Runtime Libraries
 
--   Visual Basic for Applications Core
+- Visual Basic for Applications Core
 
 These components aren’t installed for you if you set up your installation package to install Dynamics GP using the GreatPlains.msi file. If these components are not installed on the client computer, Dynamics GP won’t be installed. These components are installed for you if you set up your installation package to install Dynamics GP using the Setup.exe.
 
@@ -55,17 +55,17 @@ How Dynamics GP is installed on the client computer using the installation packa
 
 ## Creating an installation package
 
-You can use an installation package to install Dynamics GP 2018 on your client computers. An installation package contains all the information required to install Dynamics GP.
+You can use an installation package to install Dynamics GP on your client computers. An installation package contains all the information required to install Dynamics GP.
 
 To create an installation package:
 
 1. Create a shared network location or verify that the client computers have access to a shared network location.
 
-2. From the Dynamics GP 2018 media, double-click the Setup.exe file.
+2. From the Dynamics GP media, double-click the Setup.exe file.
 
 3. Click Create Installation Package.
 
-4. In the Installation Location window, enter or select the folder where the installation package will be created. We recommend that you use a Universal Naming Convention (UNC) path or a mapped drive letter that is common across all targeted computers. The network location must be accessible from any computers that will have Dynamics GP 2018 installed on them using the installation package.
+4. In the Installation Location window, enter or select the folder where the installation package will be created. We recommend that you use a Universal Naming Convention (UNC) path or a mapped drive letter that is common across all targeted computers. The network location must be accessible from any computers that will have Dynamics GP installed on them using the installation package.
 
     Click Next.
 
@@ -85,7 +85,7 @@ To create an installation package:
 
 7. Specify the location on the client computer where you want the Dynamics GP files installed. If you don’t enter the location, the default location is \\Program Files\\Microsoft Dynamics\\GP on the hard disk that has the operating system installed.
 
-    Be sure that the location is a valid location for every computer on which the installation package is used to install Dynamics GP 2018.
+    Be sure that the location is a valid location for every computer on which the installation package is used to install Dynamics GP.
 
     After you have specified the installation folder, click Next.
 
@@ -111,24 +111,24 @@ To create an installation package:
 
 15. How Dynamics GP is installed on the client computer using the installation package depends on the tools and applications you use. You can send an e-mail with a link to the installation package. Or, you can create a deployment package using a software distribution tool such as Systems Management Server so that Dynamics GP is automatically installed after the user logs into their computer.
 
-    We recommend that you install the following components on each client computer if you set up your installation package to install Dynamics GP using the GreatPlains.msi file. You can install these components from the Dynamics GP 2018 media.
+    We recommend that you install the following components on each client computer if you set up your installation package to install Dynamics GP using the GreatPlains.msi file. You can install these components from the Dynamics GP media.
 
-    -   Microsoft Windows Installer 4.5
+    - Microsoft Windows Installer 4.5
 
-    -   Microsoft .NET Framework 3.5
+    - Microsoft .NET Framework 3.5
 
-    -   Microsoft .NET Framework 4.6
+    - Microsoft .NET Framework 4.6
 
-    -   Microsoft SQL Server Native Client 11.0
+    - Microsoft SQL Server Native Client 11.0
 
-    -   Microsoft Dexterity Shared Components 18.0
+    - Microsoft Dexterity Shared Components 18.0
 
-    -   Microsoft Application Error Reporting 11.0
+    - Microsoft Application Error Reporting 11.0
 
-    -   Microsoft Lync 2010 SDK Runtime
+    - Microsoft Lync 2010 SDK Runtime
 
-    -   Open XML SDK 2.0 for Microsoft Office
+    - Open XML SDK 2.0 for Microsoft Office
 
-    -   Visual C++ 2015 Runtime Libraries
+    - Visual C++ 2015 Runtime Libraries
 
-    -   Visual Basic for Applications Core
+    - Visual Basic for Applications Core

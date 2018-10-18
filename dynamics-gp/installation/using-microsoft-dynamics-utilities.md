@@ -22,35 +22,35 @@ After you’ve installed Dynamics GP, you need to complete a number of additiona
 
 You’ll use [!INCLUDE[gputilities](../includes/gputilities.md)] to complete the following tasks after you’ve installed software and data on a server computer.
 
--   Select whether to use default or custom settings to configure the system database.
+- Select whether to use default or custom settings to configure the system database.
 
--   Create SQL Server databases for Dynamics GP.
+- Create SQL Server databases for Dynamics GP.
 
--   Deploy predefined SQL Server Reporting Services reports that are included in Dynamics GP.
+- Deploy predefined SQL Server Reporting Services reports that are included in Dynamics GP.
 
--   Deploy predefined Microsoft Excel reports that are included in Dynamics GP.
+- Deploy predefined Microsoft Excel reports that are included in Dynamics GP.
 
--   Create your account framework and synchronize the Dynamics GP dictionary, if you are providing custom settings.
+- Create your account framework and synchronize the Dynamics GP dictionary, if you are providing custom settings.
 
--   Select a default account framework and synchronize the Dynamics GP dictionary, if you decide to use default settings.
+- Select a default account framework and synchronize the Dynamics GP dictionary, if you decide to use default settings.
 
--   Define account sorting options, if you are providing custom settings.
+- Define account sorting options, if you are providing custom settings.
 
--   Enter the password for the DYNSA user.
+- Enter the password for the DYNSA user.
 
--   Set up the system password, which controls access to system management functions in Dynamics GP, if you are providing custom settings.
+- Set up the system password, which controls access to system management functions in Dynamics GP, if you are providing custom settings.
 
--   Synchronize sample data with your account framework, if you installed the sample company.
+- Synchronize sample data with your account framework, if you installed the sample company.
 
--   Remove SOP and Invoicing message. This lets you removes a message that appears every time you enter a transaction in Sales Order Processing or Invoicing, if both modules are registered.
+- Remove SOP and Invoicing message. This lets you removes a message that appears every time you enter a transaction in Sales Order Processing or Invoicing, if both modules are registered.
 
--   Create a SQLServer login for Dynamics GP Web Client
+- Create a SQLServer login for Dynamics GP Web Client
 
--   Select the authentication type for the Dynamics GP Web Client.
+- Select the authentication type for the Dynamics GP Web Client.
 
--   Create additional companies, as needed.
+- Create additional companies, as needed.
 
-## Installation options in [!INCLUDE[gputilities](../includes/gputilities.md)]
+## Installation options in Dynamics Utilities
 
 When using [!INCLUDE[gputilities](../includes/gputilities.md)], you can select an installation option to use default settings or to provide your own custom settings. If you select the Basic option, the default settings for the system database, the account framework, and system password are provided. If you select the Advanced option, you’ll provide the settings to create the database, the account framework, and system password.
 
@@ -66,9 +66,9 @@ The following table compares the default settings of the Basic option with the c
 
 Use [!INCLUDE[gputilities](../includes/gputilities.md)] to prepare Dynamics GP for use. Complete this procedure when you install Dynamics GP for the first time. You need to do this only once.
 
-With this procedure, you’ll select the Basic option in the Installation Options window to use default settings for the system database, account framework, and system password. For more information about the Basic option, see Installation options in [!INCLUDE[gputilities](../includes/gputilities.md)] on page 36.
+With this procedure, you’ll select the Basic option in the Installation Options window to use default settings for the system database, account framework, and system password. For more information about the Basic option, see the **Installation options** section.
 
-Before you use [!INCLUDE[gputilities](../includes/gputilities.md)], check for and install the most current update for Dynamics GP 2018. See [CustomerSource] (<https://mbs.microsoft.com/customersource>) for the latest update information. After installing the update, start [!INCLUDE[gputilities](../includes/gputilities.md)].
+Before you use [!INCLUDE[gputilities](../includes/gputilities.md)], check for and install the most current update for Dynamics GP. See [CustomerSource] (https://mbs.microsoft.com/customersource) for the latest update information. After installing the update, start [!INCLUDE[gputilities](../includes/gputilities.md)].
 
 To prepare Dynamics GP for use with default settings:
 
@@ -104,7 +104,7 @@ To prepare Dynamics GP for use with default settings:
 
     ![screen to specify authentication type for gp users](media/gp-utilities-5.png "Authentication setup")  
 
-    When selecting Organizational Account, additional settings will be required complete the setup. Provide the Azure AD domain name for the user accounts. An example is contoso.onmicrosoft.com. Provide the name of the SQL Server where the web components database is stored and the name of the web components database.
+    When selecting Organizational Account, additional settings will be required complete the setup. Provide the Azure AD domain name for the user accounts. An example is *contoso.onmicrosoft.com*. Provide the name of the SQL Server where the web components database is stored and the name of the web components database.
 
 8. In the Confirmation window, click Finish.
 
@@ -178,14 +178,14 @@ For more information, see [Additional installation tasks](#additional-installati
 
 Use [!INCLUDE[gputilities](../includes/gputilities.md)] to prepare Dynamics GP for use. Complete this procedure when you install Dynamics GP for the first time. You need to do this only once.
 
-With this procedure, you’ll select the Advanced option in the Installation Options window to use custom settings for the system database, account framework, and system password. For more information about the Advanced option, see Installation options in [!INCLUDE[gputilities](../includes/gputilities.md)] on page 36.
+With this procedure, you’ll select the Advanced option in the Installation Options window to use custom settings for the system database, account framework, and system password. For more information about the Advanced option, see the **Installation options** section.
 
-Before you use [!INCLUDE[gputilities](../includes/gputilities.md)], check for and install the most current update for Dynamics GP 2018. See CustomerSource (<https://mbs.microsoft.com/customersource>) for the latest update information. After installing the update, start [!INCLUDE[gputilities](../includes/gputilities.md)].
+Before you use [!INCLUDE[gputilities](../includes/gputilities.md)], check for and install the most current update for Dynamics GP. See CustomerSource (<https://mbs.microsoft.com/customersource>) for the latest update information. After installing the update, start [!INCLUDE[gputilities](../includes/gputilities.md)].
 
 To prepare Dynamics GP for use with custom settings:
 
 1. Start [!INCLUDE[gputilities](../includes/gputilities.md)].
-(Start &gt;&gt; Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities)
+(Start &gt;&gt; Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP &gt;&gt; GP Utilities)
 
 2. In the Welcome to [!INCLUDE[gputilities](../includes/gputilities.md)] window, verify your server name, and enter a system administrator user ID and password; then click OK.
 
@@ -208,7 +208,7 @@ To prepare Dynamics GP for use with custom settings:
 
 Enter the maximum account length (up to 66 characters) and the maximum number of segments (up to 10) that you’ll need for the charts of accounts in companies you set up now or in the future. Maximums you enter now will apply to all companies you plan to set up.
 
-See Planning your account framework on page 26 for more information.
+For more information, see [Planning your account framework](account-framework.md).
 
 7. In the Set Up Account Segment Lengths window, enter a name for each segment of the account, as well as the maximum length you’ll use for each segment in the charts of accounts for your companies.
 
@@ -219,15 +219,15 @@ You should use descriptive names that clearly indicate how each segment will be 
 The length of each segment can be no longer than 66 characters. Maximums you enter now will apply to companies you set up later.
 
 > [!NOTE]
-> If you have more than one company, you may need to enter maximum segment lengths that exceed the 66-character account length maximum when the segment lengths are added together. The total size must be 82 or less. See Choosing account framework storage size on page 27 for more information.  
+> If you have more than one company, you may need to enter maximum segment lengths that exceed the 66-character account length maximum when the segment lengths are added together. The total size must be 82 or less. For more information, see [Choosing account framework storage size](account-framework.md).  
 
 8. Select sorting options in the Define Additional Sorting Options window. This window displays the predefined sorting options available in Dynamics GP to sort account information in windows and on reports.
 
 ![set up sorting](media/gp-utilities-11.png "Account framework")  
 
--   If the displayed sorting options include the ways you’ll need to sort account information, leave the No option marked and click Next, then continue to step 10.
+- If the displayed sorting options include the ways you’ll need to sort account information, leave the No option marked and click Next, then continue to step 10.
 
--   To select segments of your account framework to sort by, as well, mark Yes, then click Next. The Set Up Additional Sorting Options window appears. Continue to step 9.
+- To select segments of your account framework to sort by, as well, mark Yes, then click Next. The Set Up Additional Sorting Options window appears. Continue to step 9.
 
 ![set up sorting for segments](media/gp-utilities-12.png "Account framework")  
 
@@ -334,19 +334,19 @@ A report file called Acctfram.txt is created in the Data folder inside of the GP
 
 The Additional Tasks window in [!INCLUDE[gputilities](../includes/gputilities.md)] contains the following selections:
 
--   Add sample company data
+- Add sample company data
 
--   Create a company
+- Create a company
 
--   Remove SOP and Invoicing message
+- Remove SOP and Invoicing message
 
--   Update modified forms and reports
+- Update modified forms and reports
 
--   Synchronize forms and reports dictionaries
+- Synchronize forms and reports dictionaries
 
--   Manage Web Client SQL Server login
+- Manage Web Client SQL Server login
 
--   Manage user authentication
+- Manage user authentication
 
 The Update modified forms and reports option is used when upgrading from a previous release; it isn’t used when you initially install Dynamics GP. The Synchronize forms and report dictionaries option can be used at anytime when you want to synchronize your forms and reports to your account framework.
 

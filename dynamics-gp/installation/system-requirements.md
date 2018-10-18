@@ -20,33 +20,33 @@ This chapter contains a list of the prerequisites for Dynamics GP, as well as th
 
 The following components also must be installed before you can install Dynamics GP.
 
--   Microsoft Windows Installer 4.5
+- Microsoft Windows Installer 4.5
 
--   Microsoft .NET Framework 3.5
+- Microsoft .NET Framework 3.5
 
--   Microsoft .NET Framework 4.6
+- Microsoft .NET Framework 4.6
 
--   Visual C++ 2015 Runtime Libraries (x64)
+- Visual C++ 2015 Runtime Libraries (x64)
 
--   Visual C++ 2015 Runtime Libraries (x86)
+- Visual C++ 2015 Runtime Libraries (x86)
 
--   Visual Basic for Applications Core
+- Visual Basic for Applications Core
 
--   Microsoft SQL Server Native Client 10.0
+- Microsoft SQL Server Native Client 10.0
 
--   Dexterity Shared Components 18.0
+- Dexterity Shared Components 18.0
 
--   Microsoft Application Error Reporting 11.0
+- Microsoft Application Error Reporting 11.0
 
--   Open XML SDK 2.0 for Microsoft Office
+- Open XML SDK 2.0 for Microsoft Office
 
--   Microsoft Lync 2010 SDK Runtime
+- Microsoft Lync 2010 SDK Runtime
 
 If one of these components isn’t installed on your computer when you attempt to install Dynamics GP using the installation media, the Dynamics GP Bootstrapper Setup window opens. This window shows which components need to be installed. Click Install to install the missing component or components. After all the components are installed, the installation of Dynamics GP continues.
 
 ## Home page prerequisites
 
-To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server 2012 Reporting Services or SQL Server 2014 Reporting Services to use with Dynamics GP. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP 2018 documentation resource website](https://go.microsoft.com/fwlink/?LinkId=249465) for the most current documentation.
+To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server 2012 Reporting Services or SQL Server 2014 Reporting Services to use with Dynamics GP. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP documentation resource website](https://go.microsoft.com/fwlink/?LinkId=249465) for the most current documentation.
 
 ### 
 
@@ -56,11 +56,11 @@ Predefined Word templates for document types such as sales quotes and purchase o
 
 The following components are required to modify templates.
 
--   Microsoft Word 2013 or later to make layout changes such changing the font size
+- Microsoft Word 2013 or later to make layout changes such changing the font size
 
--   Dynamics GP Add-in for Microsoft Word to add fields and data sources to the template
+- Dynamics GP Add-in for Microsoft Word to add fields and data sources to the template
 
--   Visual Studio Tools for Office Runtime 2.0 or later—Visual Studio Tools for Office Runtime 3.0 is installed with Dynamics GP Add-in for Microsoft Word
+- Visual Studio Tools for Office Runtime 2.0 or later—Visual Studio Tools for Office Runtime 3.0 is installed with Dynamics GP Add-in for Microsoft Word
 
 You can install Dynamics GP Add-in for Microsoft Word from the Dynamics GP installation media. Double-click the Setup.exe file and then click Dynamics GP Add-in for Microsoft Word.
 
@@ -72,11 +72,11 @@ By using the email functionality in Dynamics GP, you can embed documents into th
 
 Review the following requirements.
 
--   You can send documents by email if you’re using a MAPI-compliant e-mail service or Exchange 2007 Service Pack 1 or greater with Exchange Web Services.
+- You can send documents by email if you’re using a MAPI-compliant e-mail service or Exchange 2007 Service Pack 1 or greater with Exchange Web Services.
 
--   If you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services, the Autodiscover service must be enabled to connect to the Exchange server.
+- If you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services, the Autodiscover service must be enabled to connect to the Exchange server.
 
--   The email functionality in Dynamics GP supports the following document types. Depending on the document type and the email service, Microsoft Word 2013 or later and Word templates for Dynamics GP are required.
+- The email functionality in Dynamics GP supports the following document types. Depending on the document type and the email service, Microsoft Word 2013 or later and Word templates for Dynamics GP are required.
 
 | File format | Word         | Word templates | Web Client    |
 |-------------|-------------------|----------------|---------------|
@@ -87,11 +87,11 @@ Review the following requirements.
 
 \*E-mail for Dynamics GP Web Client will only be available if Exchange is your server type in the System Preferences window.
 
--   Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window.
+- Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window.
 
--   The email functionality is supported on the 32-bit edition of Microsoft Office.
+- The email functionality is supported on the 32-bit edition of Microsoft Office.
 
--   The email functionality is supported on the 64-bit edition of Microsoft Office if you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services and Exchange is your server type in the System Preferences window.
+- The email functionality is supported on the 64-bit edition of Microsoft Office if you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services and Exchange is your server type in the System Preferences window.
 
 Depending on the file format you choose to send your documents in email, your customers and vendors must be using the following components to view their documents.
 
