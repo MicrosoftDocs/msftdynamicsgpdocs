@@ -20,7 +20,7 @@ This section provides an overview of information you’ll need during the instal
 
 Use this checklist as your guide to installing and setting up Dynamics GP
 
-| Step | For more information,see |
+| Step | For more information, see |
 |------|--------------------------|
 | 1. Plan the security of your system.  | Download the SecurityPlanning.pdf, titled Planning for Security, from the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45025) by expanding the Details option.                     |
 | 2. Refer to the Documentation and resources web site for new or updated information relating to the installation. You also can use CustomerSource for additional information. | [https://go.microsoft.com/fwlink/?LinkId=249465]([https://go.microsoft.com/fwlink/?LinkId=249465) |
@@ -39,7 +39,7 @@ Use this checklist as your guide to installing and setting up Dynamics GP
 | 14. Create your first company. | Adding a company using [Dynamics GP Utilities](using-microsoft-dynamics-utilities.md)      |
 | 15. Install additional components.  | [Installing an additional component](installing-additional-components.md)  |
 | 16. Set up your company. | System Setup instructions (Help &gt;&gt; Contents &gt;&gt; select Setting up the system)  |
-| 17. Install Dynamics GP applications on clients.    | [Creating an installation package](creating-an-installation-package.md)</br>  [Installing Dynamics GP on additional computers](installing-on-subsequent-computers.md) </br> [Synchronizing a client’s account framework] (account-framework.md) </br> [Installing additional components](installing-additional-components.md)       |
+| 17. Install Dynamics GP applications on clients.    | [Creating an installation package](creating-an-installation-package.md)</br>  [Installing Dynamics GP on additional computers](installing-on-subsequent-computers.md) </br> [Synchronizing a client’s account framework](account-framework.md) </br> [Installing additional components](installing-additional-components.md)       |
 | 18. Identify the sources of any errors. | Knowledge Base on CustomerSource  |
 
 ## Reviewing the Readme file

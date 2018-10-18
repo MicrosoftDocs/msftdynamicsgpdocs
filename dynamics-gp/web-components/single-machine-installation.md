@@ -142,43 +142,41 @@ To verify the web client installation:
 
 1. Open Internet Explorer.
 
-2. Enter the URL of the Dynamics GP web client site. The default address of the site is:
+2. Enter the URL of the Dynamics GP web client site. The default address of the site is `https://ServerName:PortNumber/GP`
 
-https://ServerName:PortNumber/GP
+    *ServerName* is the fully-qualified domain name (FQDN) for the server that is hosting the web site. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
 
-**ServerName***   *is the fully-qualified domain name (FQDN) for the server that is hosting the web site. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
+    *PortNumber* is the port for the web site that you are using. If you chose to install on the default web site (port 443) then you do not need to supply the port number.
 
-**PortNumber**   is the port for the web site that you are using. If you chose to install on the default web site (port 443) then you do not need to supply the port number.
+    A typical URL to access the Dynamics GP web client looks similar to the following:
 
-A typical URL to access the Dynamics GP web client looks similar to the following:
-
-https://gpuaweb.contoso.com/GP
+    `https://gpuaweb.contoso.com/GP`
 
 3. After entering the URL, you will be directed to the logon page. This is the first page that will be displayed to users who are accessing the Dynamics GP web client.
 
-![shows a screen for connecting the web components to the dynamics gp service.](media/install-web-gp-service-connection.png "GP Connection")  
+    ![shows a screen for connecting the web components to the dynamics gp service.](media/install-web-gp-service-connection.png "GP Connection")  
 
-If you are using a self-signed security certificate and are accessing the Dynamics GP web client from another computer, you will see a certificate error. To resolve this error, you must import the security certificate into the certificate store on the machine that is accessing the web client.
+    If you are using a self-signed security certificate and are accessing the Dynamics GP web client from another computer, you will see a certificate error. To resolve this error, you must import the security certificate into the certificate store on the machine that is accessing the web client.
 
-4. Enter your user credentials. These are domain user credentials or machine user credentials for a user that is part of the security group you created to control access to the Dynamics GP web client. This security group is described in Chapter 5, “Security groups and user accounts”. These are not your Dynamics GP login name and password.
+4. Enter your user credentials. These are domain user credentials or machine user credentials for a user that is part of the security group you created to control access to the Dynamics GP web client. This security group is described in [Security groups and user accounts](security-groups-and-user-accounts.md). These are not your Dynamics GP login name and password.
 
-Click **Sign In**.
+    Click **Sign In**.
 
 5. A session will be created. The window you see first will depend on settings for your Dynamics GP user.
 
-If your Dynamics GP user ID has only SQL Server Account information, the Dynamics GP login window will be displayed.
+    If your Dynamics GP user ID has only SQL Server Account information, the Dynamics GP login window will be displayed.
 
-![shows the login screen to dynamics gp using sql login.](media/install-web-login-01.png "GP login")  
+    ![shows the login screen to dynamics gp using sql login.](media/install-web-login-01.png "GP login")  
 
-Log in with your Dynamics GP login name and password.
+    Log in with your Dynamics GP login name and password.
 
-If your Dynamics GP user ID has Windows Account information, the Web Client SQL User will be used to access Dynamics GP data.
+    If your Dynamics GP user ID has Windows Account information, the Web Client SQL User will be used to access Dynamics GP data.
 
-**One company   **If you have access to only one company, that company will automatically be used. The first page you see in Dynamics GP will be the Home page.
+    **One company**: If you have access to only one company, that company will automatically be used. The first page you see in Dynamics GP will be the Home page.
 
-**Multiple companies**   If you have access to multiple companies, the Company Login window will be displayed, allowing you to select the company to use.
+    **Multiple companies**: If you have access to multiple companies, the Company Login window will be displayed, allowing you to select the company to use.
 
-![shows the login screen to a dynamics gp company.](media/install-web-login-02.png "GP login")  
+    ![shows the login screen to a dynamics gp company.](media/install-web-login-02.png "GP login")  
 
 ## Verify the Service Based Architecture installation
 
@@ -190,20 +188,20 @@ To verify the Service Based Architecture installation:
 
 2. Enter the URL to the discovery service. The default address is:
 
-https://ServerName:PortNumber/GPService/Tenants(DefaultTenant)/help
+    `https://ServerName:PortNumber/GPService/Tenants(DefaultTenant)/help`
 
-ServerName is the fully-qualified domain name (FQDN) for the server that is hosting the web components. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
+    *ServerName* is the fully-qualified domain name (FQDN) for the server that is hosting the web components. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
 
-PortNumber is the port for the web site that you are using. If you chose to install on the default port (port 443) then you do not need to supply the port number.
+    *PortNumber* is the port for the web site that you are using. If you chose to install on the default port (port 443) then you do not need to supply the port number.
 
-DefaultTenant is the tenant name in a single tenant deployment.
+    *DefaultTenant* is the tenant name in a single tenant deployment.
 
-A typical URL to access the Dynamics GP service based architecture looks similar to the following:
+    A typical URL to access the Dynamics GP service based architecture looks similar to the following:
 
-https://gpuaweb.contoso.com/GPService/Tenants(DefaultTenant)/help
+    `https://gpuaweb.contoso.com/GPService/Tenants(DefaultTenant)/help`
 
 3. After entering the URL, you may be prompted for your Windows credentials. Enter your user credentials. These are domain user credentials or machine user credentials that has been assigned to your GP user ID.
 
 4. You should see results in your browser that look like the following image.
 
-![shows a browser after logging in.](media/install-web-verification.png "Verify the installation")  
+    ![shows a browser after logging in.](media/install-web-verification.png "Verify the installation")  

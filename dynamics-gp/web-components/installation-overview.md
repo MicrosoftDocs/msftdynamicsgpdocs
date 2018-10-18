@@ -92,15 +92,10 @@ To install the Dynamics GP web components, complete the following tasks in the o
 
 | Task    | For more information see   |
 |--------|---------------------------|
-| 1. Select a deployment configuration. Select whether you want to install the Dynamics GP web components on a single machine or as a scale-out installation. | [Deployment configurations](deployment-configurations.md)|  
-| 2. Check the Dynamics GP installation.
- Verify that the Dynamics GP installation is running properly and that the required web client runtime components are installed.  | [Environment configuration](environment-configuration.md) |
-| 3. Create the security groups and user accounts.
- Determine which users will access the Dynamics GP web client and the Web Management Console.  | [Security groups and user accounts](security-groups-and-user-accounts.md)  |
-| 4. Verify the prerequisite software. Install the software needed to support the Dynamics GP web components.  | [Prerequisite software](prerequisite-software.md) |  
-| 5. Create and configure web sites.
- Create and configure the web sites that will host the Dynamics GP web client and the Web Management Console. | [Web sites](web-sites.md) |  
-| 6. Obtain security certificates and configure SSL.
- Determine the type of security certificate you want to use. Configure the web site to use SSL. | [Security certificates and SSL](security-certificates-and-SSL.md) |  
-| 7. Install the web components.
- Complete the installation procedure based on the type of deployment that you chose. | [Scale out installation](scale-out-installation.md)|  
+| 1. Select a deployment configuration. </br> Specify if you want to install the Dynamics GP web components on a single machine or as a scale-out installation. | [Deployment configurations](deployment-configurations.md)|  
+| 2. Check the Dynamics GP installation. </br> Verify that the Dynamics GP installation is running properly and that the required web client runtime components are installed.  | [Environment configuration](environment-configuration.md) |
+| 3. Create the security groups and user accounts.</br> Determine which users will access the Dynamics GP web client and the Web Management Console.  | [Security groups and user accounts](security-groups-and-user-accounts.md)  |
+| 4. Verify the prerequisite software. </br> Install the software needed to support the Dynamics GP web components.  | [Prerequisite software](prerequisite-software.md) |  
+| 5. Create and configure web sites. </br> Create and configure the web sites that will host the Dynamics GP web client and the Web Management Console. | [Web sites](web-sites.md) |  
+| 6. Obtain security certificates and configure SSL. </br> Determine the type of security certificate you want to use. Configure the web site to use SSL. | [Security certificates and SSL](security-certificates-and-SSL.md) |  
+| 7. Install the web components. </br> Complete the installation procedure based on the type of deployment that you chose. | [Scale out installation](scale-out-installation.md)|  

@@ -36,6 +36,6 @@ Use this checklist as your guide to upgrading to Dynamics GP.
 | 8. Complete pre-upgrade procedures in the release of Dynamics GP that you are currently using and review known issues. | <https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentat20ion/system-requirements/dynamicsgpresource#GP2018>      |
 | 9. Install Dynamics GP on the server and upgrade your accounting data.       | [Installing Dynamics GP (first computer)](installing-on-first-computer.md) |  
 | 10. Complete post-upgrade procedures for Dynamics GP modules.     | [Module upgrades from Dynamics GP 2013](module-upgrades-from-microsoft-dynamics-gp-2013.md)|  
-| 11. Upgrade additional components and verify customized reports.   | [Installing an additional components](additional-features-and-components.md) |  
-| 12. Install Dynamics GP on the clients.    | [Installing Dynamics GP (additional computers)](installing-on-subsequent-computers.md)</br>[Creating an installation package]installation-package.md) |  
+| 11. Upgrade additional components and verify customized reports.   | [Installing an additional components](additional-features-and-components-upgrade.md) |  
+| 12. Install Dynamics GP on the clients.    | [Installing Dynamics GP (additional computers)](installing-on-subsequent-computers.md)</br>[Creating an installation package](installation-package.md) |  
 | 13. Identify the sources of any errors.    | Knowledge Base on CustomerSource   |

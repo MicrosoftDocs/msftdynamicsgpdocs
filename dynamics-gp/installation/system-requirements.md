@@ -48,8 +48,6 @@ If one of these components isn’t installed on your computer when you attempt t
 
 To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server 2012 Reporting Services or SQL Server 2014 Reporting Services to use with Dynamics GP. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP documentation resource website](https://go.microsoft.com/fwlink/?LinkId=249465) for the most current documentation.
 
-### 
-
 ## Word templates prerequisites
 
 Predefined Word templates for document types such as sales quotes and purchase orders are provided for you with Dynamics GP. The templates are based on standard reports in Dynamics GP. You also can create your own template or create a template from an existing template.

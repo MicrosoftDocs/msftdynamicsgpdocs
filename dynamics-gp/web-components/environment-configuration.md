@@ -15,7 +15,7 @@ ms.reviewer:
 
 # Dynamics GP environment configuration
 
-Before you can install the Dynamics GP web components, you must have Dynamics GP installed, including the necessary web client runtime and/ or service based architecture components. T
+Before you can install the Dynamics GP web components, you must have Dynamics GP installed, including the necessary web client runtime and/ or service based architecture components.
 
 ## Dynamics GP installation
 
@@ -33,13 +33,9 @@ During the Dynamics GP web components installation, you will need to know the na
 
 It’s likely that you will have some users that will be accessing only the Dynamics GP web client and will never use the desktop client. You can set up these users in Dynamics GP as web client only users.
 
-In the User Setup window, mark the Web Client user only (no SQL Server Account) option. The SQL Server Account tab will be disabled, because the user you are adding to Dynamics GP will not have a SQL Server login. In the
+In the **User Setup** window, mark the **Web Client user only (no SQL Server Account)** option. The **SQL Server Account** tab will be disabled, because the user you are adding to Dynamics GP will not have a SQL Server login. On the **Directory Account** tab, you will supply the Windows login information for the user.
 
-Directory Account tab, you will supply the Windows login information for the user.
-
-When the user signs in to the web client, they simply provide their Windows Login or organizational account credentials. The web client will determine the user ’s Dynamics GP user ID based on the credentials. The Web Client SQL
-
-Server login (discussed in the previous section) is used to access the SQL Server databases.
+When the user signs in to the web client, they simply provide their Windows Login or organizational account credentials. The web client will determine the user ’s Dynamics GP user ID based on the credentials. The Web Client SQL Server login (discussed in the previous section) is used to access the SQL Server databases.
 
 > [!NOTE]
 > Be aware that users who do not sign in to the web client using their own SQL Server login cannot send remote processes to the Distributed Process Server.  
