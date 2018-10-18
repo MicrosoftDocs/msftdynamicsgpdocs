@@ -50,7 +50,11 @@ We have specialized support teams focused on providing service and support to Dy
 
 We welcome comments regarding the usefulness of the Dynamics GP. If you have specific suggestions or encounter problems, let us know on the [Connect for Microsoft Dynamics](https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
 
-An email address was available in previous versions to provide an option for contacting us about the documentation. Both <adocs@microsoft.com> and <bizdoc@microsoft.com> have been decommissioned.
+An email address was available in previous versions to provide an option for contacting us about the documentation. Both <adocs@microsoft.com> and <bizdoc@microsoft.com> have been decommissioned.  
+
+### Contributions to the Dynamics GP content
+
+We welcome contributions to the Dynamics GP content. You can find the source files in GitHub at [https://github.com/MicrosoftDocs/msftdynamicsgpdocs/](https://github.com/MicrosoftDocs/msftdynamicsgpdocs), and the ReadMe.md file in the root of the repo contains tips and tricks for working with the content. If you want to add a new article, then the repo contains a template.md file that can help you get started.  
 
 ## See Also
 

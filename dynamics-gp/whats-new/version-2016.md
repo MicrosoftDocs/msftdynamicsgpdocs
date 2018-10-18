@@ -26,13 +26,13 @@ The user interface for the Dynamics GP Web Client has been refreshed to provide 
 
 Web Client now includes support for multiple devices, including iPad and Android tablets, as well as using multiple web browsers. The supported browsers include:
 
--   Internet Explorer
+- Internet Explorer
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Safari
+- Safari
 
--   Chrome
+- Chrome
 
 ### Open Web Client windows using search
 
@@ -46,11 +46,11 @@ When you’re using the scan function that’s part of the Document Attachment f
 
 Workflow batch approvals now have a default Word template for the edit list for the following batches in the following areas:
 
--   General Ledger
+- General Ledger
 
--   Payables
+- Payables
 
--   Receivables
+- Receivables
 
 The edit lists can be emailed to an approver to provide complete information about the transactions in the batches before approving the workflow step.
 
@@ -162,11 +162,11 @@ Two new fields have been added to the Purchase Requisition Entry window that sho
 
 A field has been added to the Project Time and Expense window (PTE Employee Expense entry) that you can use to view and edit expense transactions. Other fields in this window are renamed to make window easier to use.
 
--   The Item field is renamed to Cost Category ID.
+- The Item field is renamed to Cost Category ID.
 
--   The Billing field is renamed to Bill Type
+- The Billing field is renamed to Bill Type
 
--   The Amount field is renamed to Purchases
+- The Amount field is renamed to Purchases
 
 The new fields include the Unit Cost and U of M fields.
 

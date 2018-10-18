@@ -1,20 +1,19 @@
 ---
-title: "What's new in Dynamics GP 2018"
+title: "What's new in Dynamics GP"
 description: "Learn about enhancements that were added to the product since the release of Dynamics GP 2016 R2. "
 keywords: ""
 author: edupont04
 ms.author: edupont
 manager: annbe
-applies_to: 
 ms.date: 10/12/2018
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # What’s New in Dynamics GP 2018
 
-This chapter lists enhancements to Dynamics GP for the GP 2018 release. The GP 2018 release enhances specific areas of the product, while also expanding existing functionality, notably in the document attachment and workflow areas. The user experience has also been enhanced to make finding the information you use to make business decisions faster and easier.
+This chapter lists enhancements to Dynamics GP for the GP 2018 release. The Dynamics GP 2018 release enhances specific areas of the product, while also expanding existing functionality, notably in the document attachment and workflow areas. The user experience has also been enhanced to make finding the information you use to make business decisions faster and easier.
 
 ## Platform and system-wide enhancements
 
@@ -163,9 +162,9 @@ In the User Access to Trx Dimensions window, you can specify which users have ac
 
 Payables Management Checks windows have been renamed to reflect the ability to payments through credit cards, electronic funds transfers, or potentially other methods.
 
-## Distribution and supply chain enhancements 
+## Distribution and supply chain enhancements
 
-### Purchase order generation list opens with newest POs 
+### Purchase order generation list opens with newest POs
 
 When you create purchase orders from the Purchase Orders Preview window using the Generate button, the new purchase orders can be displayed in the purchase order transactions list. When you use the Generate button, the PO Navigation List will automatically open with the newly generated purchase orders displayed.
 
