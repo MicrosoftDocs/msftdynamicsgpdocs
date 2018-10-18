@@ -32,10 +32,9 @@ Use this checklist as your guide to installing and setting up Dynamics GP
 | 8. Configure SQL Server Reporting Services.  | This step is required if you didn’t configure SQL Server Reporting Services 2012 in Native mode when installing SQL Server and you want to deploy SQL Server Reporting Services reports for Dynamics GP. If you installed SQL Server Reporting Services 2012 in SharePoint Integrated mode, use the SharePoint Central Administration to complete the configuration.     |
 | 9. Design the account framework.  | [Account framework](account-framework.md) |
 | 10. Install Dynamics GP Tenant Services. | This step is required if you want to host Dynamics GP for multiple, unrelated organizations. Tenant Services Installation and Administration Guide  |
-| 11. Install the data server and initial client.  | [Install Dynamics GP on the first computer](installing-on-first-computer.md)
-|
+| 11. Install the data server and initial client.  | [Install Dynamics GP on the first computer](installing-on-first-computer.md)|
 | 12. Be sure to download and install the latest Dynamics GP update.     | [Dynamics GP Downloads](https://mbs.microsoft.com/customersource/northamerica/gp/downloads)    |
-| 13. Set up the account framework and Dynamics GP system data tables.  | [Preparing Dynamics GP for use](account-framework.md) |
+| 13. Set up the account framework and Dynamics GP system data tables.  | [Account framework](account-framework.md) |
 | 14. Create your first company. | Adding a company using [Dynamics GP Utilities](using-microsoft-dynamics-utilities.md)      |
 | 15. Install additional components.  | [Installing an additional component](installing-additional-components.md)  |
 | 16. Set up your company. | System Setup instructions (Help &gt;&gt; Contents &gt;&gt; select Setting up the system)  |
@@ -44,9 +43,7 @@ Use this checklist as your guide to installing and setting up Dynamics GP
 
 ## Reviewing the Readme file
 
-To view additional information that was not available when this manual was written, use the Readme file on the Dynamics GP media. Be sure to review the Readme file (GPReadme.chm) before installing Dynamics GP. You can view the Readme by double-clicking the file in \\Media\\GreatPlains
-
-\\Documentation\\GPReadme.chm.
+To view additional information that was not available when this manual was written, use the Readme file on the Dynamics GP media. Be sure to review the Readme file (GPReadme.chm) before installing Dynamics GP. You can view the Readme by double-clicking the file in \\Media\\GreatPlains\\Documentation\\GPReadme.chm.
 
 ## Troubleshooting resources
 

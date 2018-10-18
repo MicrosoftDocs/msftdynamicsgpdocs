@@ -134,7 +134,7 @@ You must install the Microsoft Dynamics CRM Reporting Extensions on the Dynamics
 
 ## Supported system requirements
 
-For current system requirements for Dynamics GP, see <https://go.microsoft.com/fwlink/?LinkId=521785>. The system requirements include supported databases and operating systems, hardware recommendations, client requirements, and Terminal Server requirements.
+For detailed system requirements for Dynamics GP, see [System requirements for Dynamics GP 2016](https://go.microsoft.com/fwlink/?LinkId=521785). The system requirements include supported databases and operating systems, hardware recommendations, client requirements, and Terminal Server requirements.
 
 Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software improves performance.
 

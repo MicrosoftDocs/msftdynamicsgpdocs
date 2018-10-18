@@ -6,7 +6,7 @@ author: edupont04
 ms.author: edupont
 manager: edupont
 applies_to: 
-ms.date: 08/24/2018
+ms.date: 10/18/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: e246f604-015d-44e8-ab38-3cbf2cc850a3
@@ -14,7 +14,7 @@ ms.reviewer:
 ---
 # Upgrade checklist
 
-You can upgrade to Dynamics GP 2018 and later from Dynamics GP 2016 Tax Round 2 or later or GP 2015 R2 (14.0.0725), GP 2013 Tax Round 2 (12.0.1826). If you're using an older release, contact the Dynamics GP Technical Support team.
+You can upgrade to Dynamics GP 2018 and later from specific versions of Dynamics GP. For the supported upgrade paths, see [Upgrading to Microsoft Dynamics GP 2018](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade) (requires access to CustomerSource).  
 
 ## When to upgrade
 
@@ -39,3 +39,6 @@ Use this checklist as your guide to upgrading to Dynamics GP.
 | 11. Upgrade additional components and verify customized reports.   | [Installing an additional components](additional-features-and-components-upgrade.md) |  
 | 12. Install Dynamics GP on the clients.    | [Installing Dynamics GP (additional computers)](installing-on-subsequent-computers.md)</br>[Creating an installation package](installation-package.md) |  
 | 13. Identify the sources of any errors.    | Knowledge Base on CustomerSource   |
+
+## See also
+[Microsoft Dynamics GP 2018 R2 and Year-End Upgrade Blog Series Schedule](https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/08/20/microsoft-dynamics-gp-2018-r2-and-year-end-update-upgrade-blog-series-schedule)  
