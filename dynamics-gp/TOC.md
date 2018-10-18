@@ -9,7 +9,7 @@
 ### [What's new in Dynamics GP 2016](whats-new/version-2016.md)
 ### [What's new in Dynamics GP 2015](whats-new/version-2015.md)
 
-<!--- installation
+<!--- installation -->
 ## Installation
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)
@@ -18,25 +18,22 @@
 #### [SQL Server configuration](installation/microsoft-sql-server-configuration.md)
 #### [Account framework](installation/account-framework.md)
 ### Installation
-#### [Install Dynamics GP on the first computer](installation/install-microsoft-dynamics-gp-on-the-first-computer.md)
-#### [Installing Dynamics GP on subsequent computers](installation/installing-dynamics-gp-on-subsequent-computers.md)
-#### [Using Microsoft Dynamics Utilities](installation/using-microsoft-dynamics-tilities.md)
+#### [Install Dynamics GP on the first computer](installation/installing-on-first-computer.md)
+#### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
+#### [Using Microsoft Dynamics Utilities](installation/using-microsoft-dynamics-utilities.md)
 #### [Installing additional components](installation/installing-additional-components.md)
 ### [Creating a company](installation/creating-a-company.md)
 ### [After installing](installation/after-installing.md)
 ### Client installation
 #### [Creating an installation package](installation/creating-an-installation-package.md)
-#### [Installing Dynamics GP on subsequent computers](installation/installing-dynamics-gp-on-subsequent-computers.md)
+#### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
 
-<!--- web components
+<!--- web components -->
 ## Web components
-### [Introduction](web-components/introduction.md)
-### [Glossary](web-components/glossary.md)
 ### [Installation overview](web-components/installation-overview.md)
 ### [Deployment configurations](web-components/deployment-configurations.md)
 ### [Environment configuration](web-components/environment-configuration.md)
 ### [Security groups and user accounts](web-components/security-groups-and-user-accounts.md)
-### [Web components installation](web-components/web-components-installation.md)
 ### [Importing a Self-signed Security Certificate](web-components/importing-a-self-signed-security-certificate.md)
 ### [Register application for organizational accounts](web-components/register-application-for-organizational-accounts.md)
 ### Web server preparation
@@ -58,8 +55,9 @@
 ### Web client upgrade
 #### [Single machine upgrade](web-components/single-machine-upgrade.md)
 #### [Scale out upgrade](web-components/scale-out-upgrade.md)
+### [Glossary](web-components/glossary.md)
 
-<!--- upgrade
+<!--- upgrade -->
 ## Upgrade
 ### [Introduction](upgrade/introduction.md)
 ### Preparation
@@ -68,7 +66,10 @@
 #### [Data preparation](upgrade/data-preparation.md)
 #### [System preparation](upgrade/system-preparation.md)
 ### Installation
-#### [Install Dynamics GP on the first computer](upgrade/install-dynamics-gp-on-the-first-computer.md)
-#### [Install Dynamics GP on subsequent computers](upgrade/install-dynamics-gp-on-subsequent-computers.md)
-#### [Installation package](upgrade/install-dynamics-gp-on-the-first-computer.md)
--->
+#### [Install Dynamics GP on the first computer](upgrade/installing-on-first-computer.md)
+#### [Additional features and components upgrade](upgrade/additional-features-and-components-upgrade.md)
+#### [Installation package](upgrade/installation-package.md)
+#### [Install Dynamics GP on subsequent computers](upgrade/installing-on-subsequent-computers.md)
+#### [Module upgrades from Dynamics GP 2013](upgrade/module-upgrades-from-microsoft-dynamics-gp-2013.md)
+### [After you upgrade](upgrade/after-you-upgrade.md)
+#### [Company data conversion](upgrade/company-data-conversion.md)
