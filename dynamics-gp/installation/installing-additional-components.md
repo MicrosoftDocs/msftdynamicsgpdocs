@@ -21,7 +21,7 @@ Depending on your organization’s needs, you may have purchased additional feat
 
 After you’ve installed Dynamics GP, you may decide to purchase an additional feature or remove a feature. Some features add a single function to your Dynamics GP system while some, such as Manufacturing, allow you to complete a range of related business and accounting tasks that use one or more modules. You can use the Select Features window to install or uninstall a feature. For more information about accessing this window, see Adding or removing additional features.
 
-You can register Dynamics GP using the Registration window (Administration &gt;&gt; Setup &gt;&gt; System &gt;&gt; Registration) after you install. For more information about registration, see [Registering Dynamics GP](/dynamics-gp/installation/after-installing#registering-microsoft-dynamics-gp). All features are registered for the sample company, Fabrikam, Inc. For more information about the sample company, see [Adding sample company data](/dynamics-gp/installation/using-microsoft-dynamics-utilities#adding-sample-company-data).
+You can register Dynamics GP using the Registration window (Administration &gt;&gt; Setup &gt;&gt; System &gt;&gt; Registration) after you install. For more information about registration, see [Registering Dynamics GP](/dynamics-gp/installation/after-installing#registering-dynamics-gp). All features are registered for the sample company, Fabrikam, Inc. For more information about the sample company, see [Adding sample company data](/dynamics-gp/installation/using-microsoft-dynamics-utilities#adding-sample-company-data).
 
 The following lists shows the Dynamics GP features. The features available depends on the country or region you selected when installing Dynamics GP.
 
@@ -132,7 +132,7 @@ A smaller set of additional components are separate installations available on t
 | GP PowerShell     | PowerShell cmdlets that perform various configuration tasks for a Dynamics GP web client installation.  |
 | OData Services    |   |
 
-There are some additional components that are released only on [CustomerSource](https://mbs.microsoft.com/customersource/support/downloads/servicepacks/).
+There are some additional components that are released only on [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/).
 
 ## Installing an additional component
 

@@ -23,7 +23,7 @@ Use this checklist as your guide to installing and setting up Dynamics GP
 | Step | For more information, see |
 |------|--------------------------|
 | 1. Plan the security of your system.  | Download the SecurityPlanning.pdf, titled Planning for Security, from the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45025) by expanding the Details option.                     |
-| 2. Refer to the Documentation and resources web site for new or updated information relating to the installation. You also can use CustomerSource for additional information. | [https://go.microsoft.com/fwlink/?LinkId=249465]([https://go.microsoft.com/fwlink/?LinkId=249465) |
+| 2. Refer to the this content for new or updated information relating to the installation. You also can use CustomerSource for additional information. | [https://docs.microsoft.com/en-us/dynamics-gp/](../index.md) |
 | 3. View the Readme file and make a note of the items that pertain to you. | \\Media\\GreatPlains\\Documentation\\GPReadme.chm |
 | 4. Obtain your need registration keys for Dynamics GP.   | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP. [https://mbs.microsoft.com/customersource](https://mbs.microsoft.com/customersource)  My Account  |
 | 5. Verify system requirements. | [System Requirements](system-requirements.md)   |
@@ -74,7 +74,7 @@ You’ll find links to Support Hot Topics and Knowledge Base—the best source o
 
 ### Microsoft SQL Server troubleshooting resources
 
-SQL Server Books Online is a documentation resource installed with Microsoft SQL Server. Use Books Online to troubleshoot SQL error messages and other issues related to SQL. Microsoft’s web site, www.microsoft.com, is also a good source of information for issues related to SQL or your operating system. You also can download Microsoft SQL Server Management Studio and SQL Server Books Online for Microsoft SQL Server Express Edition.
+Go to [the section for SQL here on the Docs.microsoft.com site](/sql/?view=sql-server-2017) and find guidance for troubleshooting SQL error messages and other issues related to SQL. Microsoft’s web site, [www.microsoft.com](https://www.microsoft.com), is also a good source of information for issues related to SQL or your operating system. You also can download Microsoft SQL Server Management Studio and SQL Server Books Online for Microsoft SQL Server Express Edition.
 
 > [!NOTE]
 > SQL-related error messages appear as DBMS errors in Dynamics GP. Always use the SQL Server Books Online to troubleshoot DBMS errors. Choose the Search tab and enter the error number, then choose List Topics.  

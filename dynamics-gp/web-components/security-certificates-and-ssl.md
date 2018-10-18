@@ -12,25 +12,10 @@ ms.topic: article
 ms.assetid: bd90d3c1-2593-454a-97a0-316f70f38cff
 ms.reviewer: 
 ---
-<span id="_Toc498953302" class="anchor"></span>
 
 # Security certificates and SSL
 
 Security certificates and secure sockets layer (SSL) are used to help improve the security of the data being transmitted by the Dynamics GP web components. The web site that hosts the web client and web management console must be configured to use SSL. The GP Service and Web Client runtime service must be configured to use a security certificate. Optionally, the Session Central Service, Session Service and Dex Service Control can be configured to use a security certificate to improve their security in a scale out deployment where cross-machine communication is happening.
-
-Information about security certificates is divided into the following sections:
-
-- [Security certificate requirements](#security-certificate-requirements)  
-
-- [Externally signed security certificates](#externally-signed-security-certificates)  
-
-- [Using an externally signed security certificate for a web site](#using-an-externally-signed-security-certificate-for-a-web-site)  
-
-- [Self-signed security certificates](#self-signed-security-certificates)  
-
-- [Configuring the web site to use SSL](#configuring-the-web-site-to-use-ssl)  
-
-- [Installing a security certificate on a server](#installing-a-security-certificate-on-a-server)  
 
 ## Security certificate requirements
 
@@ -78,9 +63,9 @@ When an externally signed security certificate is used for a web site, the third
 
 To use an externally signed security certificate:
 
-1.  Obtain the security certificate (.cer or .pfx) file from the third-party certificate supplier.
+1. Obtain the security certificate (.cer or .pfx) file from the third-party certificate supplier.
 
-2.  In Administrative Tools on the web server system, open Internet Information Services (IIS) Manager.
+2. In Administrative Tools on the web server system, open Internet Information Services (IIS) Manager.
 
 3. In the left pane, select the computer name.
 
@@ -100,7 +85,7 @@ Self-signed security certificates are the least expensive way to implement SSL f
 
 Self-signed security certificates have some limitations. You must use the default subject alternative name (SAN) that is assigned when the security certificate is created. Self-signed security certificates have a limited lifespan, typically one year.
 
-When you use a self-signed security certificate, there is no external authority to handle the certificate validation when users connect to the web client site. Because of this, a certificate error will be displayed when users access the Dynamics GP web client site. To prevent the certificate error, users must import the security certificate onto their own machine. Refer to [Appendix A, “Importing a Self- signed Security Certificate,”](#_Importing_a_Self-signed_1) for details about importing a self-signed security certificate.  
+When you use a self-signed security certificate, there is no external authority to handle the certificate validation when users connect to the web client site. Because of this, a certificate error will be displayed when users access the Dynamics GP web client site. To prevent the certificate error, users must import the security certificate onto their own machine. Refer to [Importing a Self- signed Security Certificate](importing-a-self-signed-security-certificate.md) for details about importing a self-signed security certificate.  
 
 To use a self-signed security certificate
 
@@ -130,13 +115,13 @@ To configure the web site for SSL
 
 4. In the Site Binding window, click Add.
 
-![shows the site bindings dialog.](media/manage-web-ssl-site-bindings.png "Deployment")  
+    ![shows the site bindings dialog.](media/manage-web-ssl-site-bindings.png "Deployment")  
 
 5. In the Add Site Bindings window, select https for the type, and then choose an SSL certificate that you installed.
 
-![shows the add site binding dialog.](media/manage-web-ssl-site-binding-add.png "Deployment")  
+    ![shows the add site binding dialog.](media/manage-web-ssl-site-binding-add.png "Deployment")  
 
-Click OK.
+    Click OK.
 
 6. Click Close.
 
@@ -150,7 +135,7 @@ To install a security certificate
 
 2. In the Open field, type MMC and then click OK.
 
-![shows the windows run dialog with the command to run mmc.](media/manage-certificate-run-mmc.png "Certificates")  
+    ![shows the windows run dialog with the command to run mmc.](media/manage-certificate-run-mmc.png "Certificates")  
 
 3. In the Microsoft Management Console, open the File menu and choose Add/ Remove Snap-in.
 
@@ -164,7 +149,7 @@ To install a security certificate
 
 8. In the left pane, expand the Certificates (Local Computer) node, and then expand the Personal node.
 
-![shows the certificates console snap-in.](media/manage-certificate-mmc.png "Certificates")  
+    ![shows the certificates console snap-in.](media/manage-certificate-mmc.png "Certificates")  
 
 9. Under Personal, right-click the Certificates node, point to All Tasks, and then click Import.
 

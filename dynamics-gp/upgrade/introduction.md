@@ -14,7 +14,7 @@ ms.reviewer:
 ---
 # Introduction
 
-Use this section to upgrade your Dynamics GP system. Review the introductory information about the resources available to you, then use the [Dynamics GP upgrade checklist](#_Microsoft_Dynamics_GP) as your guide to the parts that apply to you.  
+Use this section to upgrade your Dynamics GP system. Review the introductory information about the resources available to you, then use the [Dynamics GP upgrade checklist](upgrade-checklist.md) as your guide to the parts that apply to you.  
 
 To review new Dynamics GP features, refer to the [What’s New section](../whats-new/introduction.md).
 
@@ -52,7 +52,7 @@ For support requests that can be handled with e-mail. On average, the response t
 
 #### Community
 
-[https://mbs.microsoft.com/customersource/communities/](https://mbs.microsoft.com/customersource/communities/)
+[https://community.dynamics.com/gp](https://community.dynamics.com/gp)
 
 Start a year-end discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.
 

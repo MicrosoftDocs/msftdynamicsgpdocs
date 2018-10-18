@@ -1,6 +1,6 @@
 - name: Dynamics 365
   tocHref: /dynamics365/
-  topicHref: /dynamics365/index
+  topicHref: /dynamics365/
   items:
   - name: Dynamics GP
     tocHref: /dynamics-gp/

@@ -169,11 +169,11 @@ Click OK after you make your selections, and then click Next.
 
 22. Restart the computer if you are instructed to do so.
 
-23. Install the current SQL Server 2012 service pack. See the Microsoft Download Center (<https://www.microsoft.com/downloads/en/default.aspx>) for the latest service pack information.
+23. Install the current SQL Server 2012 service pack. See the [Microsoft Download Center](https://www.microsoft.com/downloads/en/default.aspx) for the latest service pack information.
 
 ## Installing Microsoft SQL Server 2012 Express Edition
 
-Microsoft SQL Server 2012 Express Edition has a maximum database size of 10 GB. You can download Microsoft SQL Server 2012 Express from www.microsoft.com. Be sure to download SQL Server 2012 Express with data management tools. You can download SQL Server 2012 Books Online for SQL Server Express from www.microsoft.com.
+Microsoft SQL Server 2012 Express Edition has a maximum database size of 10 GB. You can download Microsoft SQL Server 2012 Express from [www.microsoft.com](https://www.microsoft.com). Be sure to download SQL Server 2012 Express with data management tools. You can download SQL Server 2012 Books Online for SQL Server Express from [www.microsoft.com](https://www.microsoft.com).
 
 Use the information in this section to install Microsoft SQL Server 2012 Express on your computer.
 
@@ -221,7 +221,7 @@ To install Microsoft SQL Server 2012 Express Edition:
 
 14. Restart the computer if you are instructed to do so.
 
-15. Install the current SQL Server 2012 Express service pack. See the Microsoft Download Center (<https://www.microsoft.com/downloads/en/default.aspx>) for the latest service pack information.
+15. Install the current SQL Server 2012 Express service pack. See the [Microsoft Download Center](https://www.microsoft.com/downloads/en/default.aspx) for the latest service pack information.
 
 ## Setting up an ODBC data source using the SQL Native Client driver
 

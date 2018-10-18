@@ -29,9 +29,7 @@ To install Dynamics GP (first computer):
 
 1. Be sure that you’re logged in to Windows as a user with system administrator privileges.
 
-2. From the Dynamics GP installation media, double-click the
-
-        Setup.exe file to open the Dynamics GP installation window.
+2. From the Dynamics GP installation media, double-click the Setup.exe file to open the Dynamics GP installation window.
 
 3. If one or more of the following components isn’t installed on your computer, the Dynamics GP Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
@@ -69,15 +67,15 @@ To install Dynamics GP (first computer):
 
 8. In the Select Features window, select the features to install.
 
-![choose the features to add or remove](media/add-remove-features.png "Feature selector")  
+    ![choose the features to add or remove](media/add-remove-features.png "Feature selector")  
 
     When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
-| Option   | What happens   |
-|---------|-------------|
-| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
+    | Option   | What happens   |
+    |---------|-------------|
+    | ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+    | ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features. |  
+    | ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features. |  
 
 9. Specify the folder where you want the Dynamics GP files installed. The default folder is C:\\Program Files\\Microsoft Dynamics\\GP 2018. To select a different folder, click Browse.
 

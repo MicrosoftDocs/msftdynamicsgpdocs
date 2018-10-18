@@ -70,11 +70,11 @@ When planning an account framework, think about the account format you’ve used
 > [!WARNING]
 > It’s important to consider what your current and future needs are for the framework; after you’ve entered the framework, it’s unlikely that you’ll be able to change it. If you find that you need to change your account framework, contact your reseller or Dynamics GP Technical Support.  
 
-To use one of the default charts of accounts provided with Dynamics GP, set up the account framework with maximums that are at least the size listed below. To preview the default charts of accounts for various business and industry types, review the [Default Charts of Accounts for Dynamics GP](https://go.microsoft.com/fwlink/?LinkId=89042) article.
+To use one of the default charts of accounts provided with Dynamics GP, set up the account framework with maximums that are at least the size listed below.  
 
-| Minimum account framework for use with sample company |                     |
-|-------------------------|--------------------------------------------|
-| Maximum account length      |At least 9 characters | 
+| Minimum account framework for use with sample company |Size|
+|-------------------------------------------------------|----|
+| Maximum account length      |At least 9 characters |
 | Maximum number of segments |At least 3 segments   |
 | Length of segment 1    |At least 3 characters |
 | Length of segment 2   |At least 4 characters |

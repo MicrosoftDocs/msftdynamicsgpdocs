@@ -33,8 +33,6 @@ Based on the business and industry types you choose for your company, you can in
 
 If you use a default chart of accounts, you won’t be able to shorten the account format. However, it can be lengthened to the maximum length you established in the Account Definition Setup window of Dynamics GP Utilities, earlier in the installation process. Refer to the System Setup instructions (Help &gt;&gt; Contents &gt;&gt; select Setting up the system) for more information about lengthening account formats.
 
-To preview the default chart of accounts for various business and industry types, review the [Default Charts of Accounts for Dynamics GP](https://go.microsoft.com/fwlink/?LinkId=89042) article.
-
 The default chart of accounts you choose for your company in this procedure is designed to be an accurate estimate of your company’s business practices. However, we recommend that you review the accounts and make any necessary additions or changes. You’ll be directed to the General Ledger documentation later in the setup process, if you need to modify the accounts.
 
 ## Adding a company using Dynamics GP Utilities

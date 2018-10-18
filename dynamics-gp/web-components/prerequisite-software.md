@@ -12,15 +12,10 @@ ms.topic: article
 ms.assetid: 219626ce-5dbe-4b61-b67b-6bee6d628e3b
 ms.reviewer: 
 ---
-<span id="_Toc498953296" class="anchor"></span>
 
 # Prerequisite software
 
-Before you can install the Dynamics GP web components, you must install other software on the web server and the session host servers. The prerequisite software to install will depend on the components you will be installing on the server. The following sections describe these software prerequisites:
-
-- [Server operating system](#server-operating-system)  
-
-- [Internet Information Services (IIS) and ASP.NET](#internet-information-services-iis-and-asp.net)  
+Before you can install the Dynamics GP web components, you must install other software on the web server and the session host servers. The prerequisite software to install will depend on the components you will be installing on the server.  
 
 ## Server operating system
 
@@ -56,21 +51,21 @@ To install these items, complete the following steps for Windows Server 2008 R2:
 
 6. Select the role services to install. The following items must be marked:
 
-In **Common HTTP Features**:
+    In **Common HTTP Features**:
 
-- Static Content
+        - Static Content
 
-- Default Document
+        - Default Document
 
-In Application Development:
+    In Application Development:
 
-- ASP.NET
+        - ASP.NET
 
-In **Security**:
+    In **Security**:
 
-- **Windows Authentication**
+        - **Windows Authentication**
 
-Other role services will already be marked. Some are marked by default. Others are marked depending on how the web server is configured. Click **Next**.
+    Other role services will already be marked. Some are marked by default. Others are marked depending on how the web server is configured. Click **Next**.
 
 7. Click **Install**. The roles and role services will be added.
 
@@ -94,29 +89,29 @@ To install these items, complete the following steps for Windows Server 2012 and
 
 7. Select the features to install. Be sure that you mark **ASP.NET 4.5**. In the **WCF Services** group under .**NET Framework 4.5 Features**, be sure that you have marked **HTTP Activation**.
 
-![shows how you can modify the settings for .net framework 4.5.](media/install-dotnet.png "Deployment")  
+    ![shows how you can modify the settings for .net framework 4.5.](media/install-dotnet.png "Deployment")  
 
-Click **Next**.
+    Click **Next**.
 
 8. The screen for the Web Server Role (IIS) is displayed. Click **Next**.
 
 9. Select the role services to install for the web server. The following items must be marked:
 
-In **Common HTTP Features**:
+    In **Common HTTP Features**:
 
-- Static Content
+        - Static Content
 
-- Default Document
+        - Default Document
 
-In **Security**:
+    In **Security**:
 
-- **Windows Authentication**
+        - **Windows Authentication**
 
-In **Application Development**:
+    In **Application Development**:
 
-- **ASP.NET 4.5**
+        - **ASP.NET 4.5**
 
-Other role services will already be marked. Some are marked by default. Others are marked depending on how the web server is configured. Click **Next**.
+    Other role services will already be marked. Some are marked by default. Others are marked depending on how the web server is configured. Click **Next**.
 
 10. Click **Install**. The roles, features, and role services will be added.
 

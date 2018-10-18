@@ -80,7 +80,7 @@ To prepare Dynamics GP for use with default settings:
 2. In the Welcome to [!INCLUDE[gputilities](../includes/gputilities.md)] window, verify your server name, and enter a system administrator user ID and password; then click OK.
 
     > [!NOTE]  
-      You must be logged in as a system administrator to complete database and system functions within [!INCLUDE[gputilities](../includes/gputilities.md)].  
+    > You must be logged in as a system administrator to complete database and system functions within [!INCLUDE[gputilities](../includes/gputilities.md)].  
 
 3. The Welcome To [!INCLUDE[gputilities](../includes/gputilities.md)] window opens when you are logged into the server you selected. Read the message and click Next.
 
@@ -137,14 +137,14 @@ To prepare Dynamics GP for use with default settings:
     | Report Library        | ReportsLibrary |
 
     >[!NOTE]  
-      Make sure that your locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
+    > Make sure that your locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
 
 11. If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple Dynamics GP instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must to provide access to the folder.
 
 12. Click Next.
 
     >[!NOTE]  
-      If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
       The Excel Reports Setup window appears if you marked to deploy Microsoft Excel reports.
 
@@ -168,7 +168,7 @@ To prepare Dynamics GP for use with default settings:
     Make sure that you use backwards slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn’t end in a slash.
 
     > [!NOTE]  
-      If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 13. In the Additional Tasks window, you can choose to perform additional procedures, start Dynamics GP, or end the installation. If you select any task, click Process; otherwise, click Exit.
 
@@ -189,10 +189,10 @@ To prepare Dynamics GP for use with custom settings:
 
 2. In the Welcome to [!INCLUDE[gputilities](../includes/gputilities.md)] window, verify your server name, and enter a system administrator user ID and password; then click OK.
 
-![login screen to dynamics gp utilities](media/gp-utilities-2.png "Login screen")  
+    ![login screen to dynamics gp utilities](media/gp-utilities-2.png "Login screen")  
 
-> [!NOTE]
-> You must be logged in as a system administrator to complete database and system functions within [!INCLUDE[gputilities](../includes/gputilities.md)].  
+    > [!NOTE]
+    > You must be logged in as a system administrator to complete database and system functions within [!INCLUDE[gputilities](../includes/gputilities.md)].  
 
 3. The Welcome To [!INCLUDE[gputilities](../includes/gputilities.md)] window opens when you are logged into the server you selected. Read the message and click Next.
 
@@ -300,7 +300,7 @@ A report file called Acctfram.txt is created in the Data folder inside of the GP
 19. Click Next.
 
     > [!NOTE]  
-      If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 20. The Excel Reports Setup window appears if you marked to deploy Excel reports.
 
@@ -324,7 +324,7 @@ A report file called Acctfram.txt is created in the Data folder inside of the GP
     Click Next.
 
     > [!NOTE]  
-      If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 22. In the Additional Tasks window, you can choose to perform additional procedures, start Dynamics GP, or end the installation. If you select any task, click Process; otherwise, click Exit.
 
@@ -400,14 +400,14 @@ To add sample company data:
     | Report Library        | ReportsLibrary |
 
     > [!NOTE]  
-      Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
+    > Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
 
 8. If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple Dynamics GP instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must provide access to the folder.
 
 9. Click Next.
 
     > [!NOTE]  
-      If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 10. The CRM Reports Setup window appears, if you marked to deploy SQL Server Reporting Services reports with CRM data. Enter the CRM connection information. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
 
@@ -459,7 +459,7 @@ To create a company:
 2. In the Create Company window, enter a company ID and name and select additional options.
 
     > [!NOTE]  
-      The additional options, such as shipping methods and payment terns, may be overwritten if you choose to use the wizards to migrate QuickBooks or Peachtree data and enter basic configuration information in step 6.  
+    > The additional options, such as shipping methods and payment terns, may be overwritten if you choose to use the wizards to migrate QuickBooks or Peachtree data and enter basic configuration information in step 6.  
 
 3. Click Next.
 
@@ -491,14 +491,14 @@ If you don’t want to deploy business intelligence components, leave the compon
     | Report Library        | ReportsLibrary |
 
     > [!NOTE]  
-      Make sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
+    > Make sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
 
 8. If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple Dynamics GP instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must provide access to the folder.
 
 9. Click Next.
 
     > [!NOTE]  
-      If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 10. The CRM Reports Setup window appears, if you marked to deploy SQL Server Reporting Services reports with CRM data. Enter the CRM connection information. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
 
@@ -526,7 +526,7 @@ If you don’t want to deploy business intelligence components, leave the compon
 12. Click Next.
 
     > [!NOTE]  
-      If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 13. The Verify SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 

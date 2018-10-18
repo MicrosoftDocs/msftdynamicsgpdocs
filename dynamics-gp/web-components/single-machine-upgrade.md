@@ -12,21 +12,10 @@ ms.topic: article
 ms.assetid: 1d8b87e1-27ea-48b7-95f5-b302bdf600c7
 ms.reviewer: 
 ---
-<span id="_Toc498953322" class="anchor"></span>
 
 # Single machine upgrade
 
 This chapter contains the procedures you need to follow to perform an upgrade of the Dynamics GP web client on a single machine installation.
-
-The following sections are included:
-
-- [Preparing for the upgrade](#preparing-for-the-upgrade)  
-
-- [Upgrading Web Components from a Dynamics GP 2013, or GP 2013 R2 deployment](#upgrading-web-components-from-a-microsoft-dynamics-gp-2013-or-gp-2013-r2-deployment)  
-
-- [Upgrading Web Components from a Dynamics GP 2015 Web Components deployment](#upgrading-web-components-from-a-microsoft-dynamics-gp-2015-web-components-deployment)  
-
-- [Client machine update steps](#client-machine-update-steps)  
 
 ## Preparing for the upgrade
 
@@ -46,7 +35,7 @@ To upgrade a web client deployment from a Dynamics GP 2013 deployment in the sin
 
 3. Select to upgrade your existing web client installation.
 
-![shows the notification that an earlier version of the dynamics gp web components has been detected.](media/upgrade-web.png "Upgrade warning")  
+    ![shows the notification that an earlier version of the dynamics gp web components has been detected.](media/upgrade-web.png "Upgrade warning")  
 
 4. The installation wizard will default with the selections from the installation being upgraded. You can change settings as needed. You can also select to add the service based architecture components to the installation. Upgrading the database will ask you for a new database name, defaulting to GPCONFIGURATION. The data will be migrated to the new database when running the configuration wizard.
 

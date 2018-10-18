@@ -12,15 +12,10 @@ ms.topic: article
 ms.assetid: 40172c16-c363-49ac-ae76-38c7194e1f76
 ms.reviewer: 
 ---
-<span id="_Toc498953299" class="anchor"></span>
 
 # Web sites
 
-This portion of the documentation discusses the web sites that are needed for the Dynamics GP web components installation. Information is divided into the following sections:
-
-- [Required web sites](#required-web-sites)  
-
-- [Extending sites with ASP.NET](#extending-sites-with-asp.net)  
+This portion of the documentation discusses the web sites that are needed for the Dynamics GP web components installation.  
 
 ## Required web sites
 

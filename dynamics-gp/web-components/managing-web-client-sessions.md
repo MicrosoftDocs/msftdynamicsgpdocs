@@ -12,25 +12,10 @@ ms.topic: article
 ms.assetid: 75a73ebc-01c1-489a-8a15-8bf40badd6a0
 ms.reviewer: 
 ---
-<span id="_Toc498953334" class="anchor"></span>
 
 # Managing web client sessions
 
-The administrator of the Dynamics GP web client installation has the responsibility to monitor and manage the web client sessions. Information about his task is divided into the following topics:
-
-- [Session Management snap-in](#session-management-snap-in)  
-
-- [Connecting to Session Central](#connecting-to-session-central)  
-
-- [Session host machines](#session-host-machines)  
-
-- [Suspending a session host machine](#suspending-a-session-host-machine)  
-
-- [Sessions](#sessions)  
-
-- [Ending a session](#ending-a-session)  
-
-- [Session timeout](#session-timeout)  
+The administrator of the Dynamics GP web client installation has the responsibility to monitor and manage the web client sessions.  
 
 ## Session Management snap-in
 
@@ -40,15 +25,15 @@ The Session Management snap-in for the Web Management Console is the primary too
 
 2. Enter the address of the Web Management Console site. The default address of the site is:
 
-    https://ServerName:PortNumber/WebManagementConsole
+    `https://ServerName:PortNumber/WebManagementConsole`
 
-    **ServerName**   is the fully-qualified domain name (FQDN) for the server that is hosting the web management console site. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
+    *ServerName* is the fully-qualified domain name (FQDN) for the server that is hosting the web management console site. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
 
-        **PortNumber**   is the port for the web site that you are using. If you chose to install on the default web site (port 80) then you do not need to supply the port number.
+    *PortNumber* is the port for the web site that you are using. If you chose to install on the default web site (port 80) then you do not need to supply the port number.
 
     A typical URL to access the Web Management Console looks similar to the following:
 
-    https://gpuaweb.contoso.com/WebManagementConsole
+    `https://gpuaweb.contoso.com/WebManagementConsole`
 
 3. You may be prompted for your login credentials when you access the Web Management Console. If you are, provide your login name and password.
 
