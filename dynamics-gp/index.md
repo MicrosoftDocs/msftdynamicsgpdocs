@@ -48,7 +48,7 @@ We have specialized support teams focused on providing service and support to Dy
 
 ### Send us your suggestions
 
-We welcome comments regarding the usefulness of the Dynamics GP. If you have specific suggestions or encounter problems, let us know on the [Connect for Microsoft Dynamics](https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
+We welcome comments regarding the usefulness of the Dynamics GP. If you have specific suggestions or encounter problems, let us know on the [Product Idea for Microsoft Dynamics](https://experience.dynamics.com/ideas/list/?forum=771cc5ac-c117-e811-8105-3863bb2e0320) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
 
 An email address was available in previous versions to provide an option for contacting us about the documentation. Both <adocs@microsoft.com> and <bizdoc@microsoft.com> have been decommissioned.  
 
