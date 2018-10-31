@@ -30,7 +30,7 @@ Use this checklist as your guide to upgrading to Dynamics GP.
 | 2. Refer to these Web sites for new or updated information relating to the upgrade.  | [System Requirements](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018)  |
 | 3. Ensure that you have the latest version of the Upgrade Guide.   | <https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>   |
 | 4. View the Readme file and make a note of the items that pertain to you.    | Media\\GreatPlains\\Documentation\\GPReadme.chm      |
-| 5. Obtain your need registration keys for Dynamics GP.     | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP. <https://mbs.microsoft.com/customersource>              |
+| 5. Obtain your new registration keys for Dynamics GP.     | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP. <https://mbs.microsoft.com/customersource>              |
 | 6. Verify system requirements and expand your SQL database size, if necessary.    | <https://go.microsoft.com/fwlink/?LinkId=521785>  |
 | 7. Identify all integrating products and customizations and ensure that they are compatible with Dynamics GP.     | Contact the provider of the integrating products and customizations.       |
 | 8. Complete pre-upgrade procedures in the release of Dynamics GP that you are currently using and review known issues. | <https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentat20ion/system-requirements/dynamicsgpresource#GP2018>      |
