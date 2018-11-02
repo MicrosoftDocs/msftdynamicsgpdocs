@@ -87,7 +87,7 @@ The following steps describe how to add a service administrator or delegating us
     Click Add in the ribbon of the Web Management Console. The Add User
     window opens.
 
-    ![config one](media/tenant-services-config-admin-01.png "config one")
+    ![config one](media/tenant-services-config-admin-01.PNG "config one")
 
     Field | Description
     -|-
@@ -122,7 +122,7 @@ delegating user.
     Click the name of the user, and then click Edit in the ribbon of the Web
     Management Console. The User Properties window opens.
 
-    ![config two](media/tenant-services-config-admin-02.png "config two")
+    ![config two](media/tenant-services-config-admin-02.PNG "config two")
 
 4. Update the properties for the user.
 
@@ -224,7 +224,7 @@ a tenant.
     Click the Add button in the tenant manager ribbon of the Web Management
     Console. The Add Application window opens.
 
-    ![config three](media/tenant-services-config-admin-03.png "config three")
+    ![config three](media/tenant-services-config-admin-03.PNG "config three")
 
 4. Specify whether to add the default applications or another application.
 
@@ -438,13 +438,13 @@ Selection window from the install. To add a new GP instance to your multitenant
 environment, click Create new instance, and then type a name that uniquely
 identifies that instance. Notice how the instance name is specified as CONTOSO.
 
-![config four](media/tenant-services-config-admin-04.png "config four")
+![config four](media/tenant-services-config-admin-04.PNG "config four")
 
 You also have to specify a name for the system database for the new instance. The
 following illustration shows how to specify the SQL Server and the name of the
 system database for the Contoso instance of GP.
 
-![config five](media/tenant-services-config-admin-05.png "config five")
+![config five](media/tenant-services-config-admin-05.PNG "config five")
 
 Typically, you use the GP instance name in the application property of an
 multitenant application for a tenant. For example, the Microsoft Dynamics GP Web
@@ -472,14 +472,14 @@ The following steps describe how to add and configure a tenant.
     Click Tenant Manager in the navigation pane. The snap-in opens in the Web
     Management Console. Click Tenants in the navigation pane.
 
-    ![config six](media/tenant-services-config-admin-06.png "config six")
+    ![config six](media/tenant-services-config-admin-06.PNG "config six")
 
 3. Click Add.
 
     Click Add in the ribbon of the Web Management Console. The Add Tenant
     window opens.
 
-    ![config seven](media/tenant-services-config-admin-07.png "config seven")
+    ![config seven](media/tenant-services-config-admin-07.PNG "config seven")
 
 4. Specify the tenant properties.
 
@@ -505,7 +505,7 @@ the Tenant Manager snap-in.
     Click the Tenant Users button in the ribbon of the Web Management Console.
     The Tenant Users window opens.
 
-    ![config eight](media/tenant-services-config-admin-08.png "config eight")
+    ![config eight](media/tenant-services-config-admin-08.PNG "config eight")
 
 2. Click the Add button above the Add the tenant users section.
 
@@ -581,7 +581,7 @@ application that you specified in the previous section.
     The following illustration shows the properties for the Microsoft Dynamics GP
     Web Client application.
 
-    ![config nine](media/tenant-services-config-admin-09.png "config nine")
+    ![config nine](media/tenant-services-config-admin-09.PNG "config nine")
 
 2. Specify the value for each property.
 
@@ -821,7 +821,7 @@ multitenant application.
     application for the specified tenant. Notice how the other properties keep their
     existing values.
 
-    ![config ten](media/tenant-services-config-admin-10.png "config ten")
+    ![config ten](media/tenant-services-config-admin-10.PNG "config ten")
 
 4. Click Save.
 
@@ -1037,7 +1037,7 @@ administrator.
 When you attempt to open the Tenant Manager in the Web Management Console,
 you see the following error message:
 
-![config eleven](media/tenant-services-config-admin-11.png "config eleven")
+![config eleven](media/tenant-services-config-admin-11.PNG "config eleven")
 
 Verify the Microsoft Dynamics GP Tenant Management Service is running. You will
 not be able to use Tenant Manager until the service is started.
@@ -1059,7 +1059,7 @@ The Tenant Manager of the Microsoft Dynamics GP Web Management Console
 includes a list of tenant services exceptions. The following illustration shows the
 console.
 
-![config twelve](media/tenant-services-config-admin-12.png "config twelve")
+![config twelve](media/tenant-services-config-admin-12.PNG "config twelve")
 
 To view detailed error information, click the error in the list you want to view more
 information. Click the Error Details button at the bottom of the page. The Error

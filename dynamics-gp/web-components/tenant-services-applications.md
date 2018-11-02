@@ -340,7 +340,7 @@ a tenant:
 
     When you click Web Services for Microsoft Dynamics GP, the web service application properties appear as a list. The following illustration shows the properties for Web Services for Microsoft Dynamics GP.
 
-    ![applications one](media/tenant-services-applications-01.png "applications one")
+    ![applications one](media/tenant-services-applications-01.PNG "applications one")
 
     You have to specify the value for each application property. The following table
     shows the properties and describes how to specify a value for each property.
@@ -482,7 +482,7 @@ for GP Services.
 When you click GP Services, the gp services application properties appears as a
 list. The following illustration shows the properties for Web Services for
 Microsoft Dynamics GP.
-![applications two](media/tenant-services-applications-02.png "applications two")
+![applications two](media/tenant-services-applications-02.PNG "applications two")
 
 You have to specify the value for each application property. The following table
 shows the properties and describes how to specify a value for each property.
@@ -530,7 +530,7 @@ on a single machine. In a typical hosting configuration, one Microsoft Dynamics 
 instance is assigned to one tenant. The following illustration shows how an
 installation with five tenants would be configured.
 
-![applications three](media/tenant-services-applications-03.png "applications three")
+![applications three](media/tenant-services-applications-03.PNG "applications three")
 
 The Session Host server has the five instances of Microsoft Dynamics GP installed.
 The Tenant Services server has a tenant defined for each GP instance. When a user
@@ -555,7 +555,7 @@ assigned to a specific scale group. The session hosts in that scale group have t
 instances needed to support those tenants. The following illustration shows one
 way the previous hosting installation could be configured with scale groups.
 
-![applications four](media/tenant-services-applications-04.png "applications four")
+![applications four](media/tenant-services-applications-04.PNG "applications four")
 
 In this example, two scale groups (Scale Group A and Scale Group B) are defined.
 Tenants 1, 2, and 3 are assigned to Scale Group A. Tenants 4 and 5 are assigned to
