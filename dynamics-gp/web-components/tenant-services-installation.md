@@ -242,7 +242,7 @@ To install Tenant Services, complete the following procedure:
 
     Select the features you would like to install. The install allows you to select from the following features:
 
-    ![installation one](media/tenant-services-install-01.png "installation one")
+    ![installation one](media/tenant-services-install-01.PNG "installation one")
 
     Name | Description
     -|-

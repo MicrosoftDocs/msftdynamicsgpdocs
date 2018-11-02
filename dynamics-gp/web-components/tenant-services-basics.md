@@ -117,7 +117,7 @@ Tenant user | A user that is assigned to a tenant. When you assign a user to a t
 ## Tenant Services architecture
 Microsoft Dynamics GP Tenant Services is a collection of WCF services that help a multitenant application to access Microsoft Dynamics GP for a tenant. Tenant Services run on a server in your data center. You have to install Tenant Services before you can use any multitenant application. The following diagram shows how a multitenant application uses Tenant Services:
 
-![multitenant overview](media/tenant-services-01.png "multitenant diagram")
+![multitenant overview](media/tenant-services-01.PNG "multitenant diagram")
 
 ### Client and the multitenant service 
 A multitenant application includes a client and a multitenant service. The multitenant application enables you to perform operations that use Microsoft Dynamics GP data for a specified tenant. You can use the following multitenant applications:
@@ -159,7 +159,7 @@ To get information from any of the Tenant Services, you must provide an authenti
 ### Web client example 
 The following illustration shows an example of how Tenant Services works with a multitenant application. The example shows Tenant Services and the Microsoft Dynamics GP Web Client.
 
-![multitenant web client overview](media/tenant-services-02.png "multitenant web client diagram")
+![multitenant web client overview](media/tenant-services-02.PNG "multitenant web client diagram")
 
 To begin, you use a web browser to start the Dynamics GP web client. The browser contacts the GP web site on your IIS web server. You are prompted to enter your login credentials and click Sign In. The service behind the GP web site queries the Tenant Discovery Service to determine whether your login credentials are authorized to use the web client. The service is called the Session Central Service.
 
@@ -180,7 +180,7 @@ Tenant Manager is the application you use to manage your multitenant environment
 
 The following illustration shows the architecture of the Tenant Manager. Notice how the Tenant Manager uses Tenant Management Service and Tenant Discovery Services to get and save information about tenants, multitenant applications, tenant users, and service administrators in the DYNGPDISCOVERY database.
 
-![SQL connection overview](media/tenant-services-03.png "SQL connection overview")
+![SQL connection overview](media/tenant-services-03.PNG "SQL connection overview")
 
 You might also notice that the Tenant Manager uses a service named Tenant Proxy Service. The Tenant Proxy Service is an intermediate service that helps the Silverlight Tenant Manager application to use the operations of the WCF Tenant Services. 
 Tenant 
@@ -203,7 +203,7 @@ You use the scale-out configuration when you expect to host more than one organi
 
 The following illustration shows a basic scale-out configuration that you would use for Microsoft Dynamics GP Web Client. Notice that Tenant Services is installed on a separate server, and accesses the SQL Server over the local network. 
 
-![Scale Out overview](media/tenant-services-04.png "Scale Out overview")
+![Scale Out overview](media/tenant-services-04.PNG "Scale Out overview")
 
 Typically, you install Tenant Services onto a separate server. However, you can put Tenant Services on any server that can be accessed by the other servers in your deployment.
 
@@ -224,7 +224,7 @@ For additional security you can also have a firewall between the tenant service,
 ### Single-server 
 An alternate configuration adds Tenant services to a single-server deployment. In this configuration, you install Tenant Services on the same server as Microsoft Dynamics GP and the SQL Server. The following illustration shows the configuration for a single server:
 
-![Single Server overview](media/tenant-services-05.png "Single Server overview")
+![Single Server overview](media/tenant-services-05.PNG "Single Server overview")
 
 This configuration is best suited for development and evaluation environments where the number of tenants and users is expected to be small.
 
