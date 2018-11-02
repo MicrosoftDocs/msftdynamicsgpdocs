@@ -273,7 +273,7 @@ To install Tenant Services, complete the following procedure:
     User name | Specify the login name for the service. 
     Password | Enter the password for the specified login ID.
 
-    ![install two](media\tenant-services-install-02.PNG "installation two")
+    ![install two](media/tenant-services-install-02.PNG "installation two")
 
 6. Configure the Tenant Management Service settings.
 
@@ -287,7 +287,7 @@ To install Tenant Services, complete the following procedure:
     User name | Specify the login name for the service.
     Password | Enter the password for the specified login ID.
 
-    ![install three](media\tenant-services-install-03.PNG "installation three")
+    ![install three](media/tenant-services-install-03.PNG "installation three")
 
     Click Next to continue.
 
@@ -304,7 +304,7 @@ To install Tenant Services, complete the following procedure:
     User name | Specify the login name for the service.
     Password | Enter the password for the specified login ID.
 
-    ![install four](media\tenant-services-install-04.PNG "installation four")
+    ![install four](media/tenant-services-install-04.PNG "installation four")
 
     Click Next to continue.
 
@@ -343,7 +343,7 @@ Services database.
 
     The wizard adds the DYNGPDISCOVERY database to the specified server.
 
-    ![install five](media\tenant-services-install-05.PNG "installation five")
+    ![install five](media/tenant-services-install-05.PNG "installation five")
 
 4. Specify the type of authentication you use with the SQL server.
 
@@ -481,7 +481,7 @@ the site. To add the certificate, complete the following steps:
 
     In the IIS group, double-click Server Certificates.
 
-    ![install six](media\tenant-services-install-06.PNG "installation six")
+    ![install six](media/tenant-services-install-06.PNG "installation six")
 
   5. Click Complete Certificate Request.
 
@@ -561,7 +561,7 @@ following steps:
     The following illustration shows how to install the Web Management Console
     and the Tenant Manager.
 
-    ![install seven](media\tenant-services-install-07.PNG "installation seven")
+    ![install seven](media/tenant-services-install-07.PNG "installation seven")
     
         If you add Tenant Manager to an existing Web Management Console, do not make changes that set Session Central, Web Site, Web Client Session Manager, or Session Server to Not Available. You should leave the existing values.
     
@@ -601,7 +601,7 @@ following steps:
     Management Console. The Web Site Configuration shows the settings for the
     web client web site.
     
-    ![install eight](media\tenant-services-install-08.PNG "installation eight")
+    ![install eight](media/tenant-services-install-08.PNG "installation eight")
 
     Enter the domain, name, and password for login identity you want to use for the application pool. Click Next.
 
@@ -774,7 +774,7 @@ want to manage. To configure the Tenant Manager, complete the following steps:
     Navigation pane that shows the snap-ins that the console contains. The Tenant
     Manager should appear at the bottom of the Navigation Pane.
 
-    ![install nine](media\tenant-services-install-09.PNG "installation nine")
+    ![install nine](media/tenant-services-install-09.PNG "installation nine")
 
 4. Click Tenant Manager.
 
@@ -790,7 +790,7 @@ want to manage. To configure the Tenant Manager, complete the following steps:
 
         http://<servername>:<port>/TenantManagementService
 
-    ![install ten](media\tenant-services-install-10.PNG "installation 10")
+    ![install ten](media/tenant-services-install-10.PNG "installation 10")
 
     To get the URL, use the Microsoft.Dynamics.MultitenantServices.Management.config
     file. The baseAddress node contains the URL of the service. The file is found in the
@@ -806,7 +806,7 @@ want to manage. To configure the Tenant Manager, complete the following steps:
     and Exceptions. To view or update manage tenants, you use the buttons in the
     ribbon.
 
-    ![install eleven](media\tenant-services-install-11.PNG "installation eleven")
+    ![install eleven](media/tenant-services-install-11.PNG "installation eleven")
 
 ## What to do next
 After you install and configure Microsoft Dynamics GP Tenant Services, consider
