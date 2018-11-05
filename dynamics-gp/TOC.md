@@ -73,3 +73,8 @@
 #### [Module upgrades from Dynamics GP 2013](upgrade/module-upgrades-from-microsoft-dynamics-gp-2013.md)
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
+<!--- payroll -->
+## Payroll 
+### [U.S. Year-End] (payroll/us-year-end.md)
+### [Canadian Year-End]
+### [Payroll Taxes]
