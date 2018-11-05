@@ -56,6 +56,11 @@
 #### [Single machine upgrade](web-components/single-machine-upgrade.md)
 #### [Scale out upgrade](web-components/scale-out-upgrade.md)
 ### [Glossary](web-components/glossary.md)
+### Tenant Services
+#### [Tenant Services Basics](web-components/tenant-services-basics.md)
+#### [Tenant Services Installation](web-components/tenant-services-installation.md)
+#### [Tenant Services Configuration and Administration](web-components/tenant-services-config-admin.md)
+#### [Tenant Services Multitenant Applications](web-components/tenant-services-applications.md)
 
 <!--- upgrade -->
 ## Upgrade
