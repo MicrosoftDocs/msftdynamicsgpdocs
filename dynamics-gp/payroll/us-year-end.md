@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/18/2018
+ms.date: 11/06/2018
 ---
 
 # U.S. 2018 Year-end Update in Dynamics GP
@@ -42,25 +42,25 @@ If you have questions about Payroll year-end closing procedures and your Microso
 
 **Year-end information on CustomerSource**
 
-[(https://mbs.microsoft.com/customersource/northamerica/GP/downloads/)](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/)
+[https://mbs.microsoft.com/customersource/northamerica/GP/downloads/](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/)
 
 Look here to find year-end updates, instructions, and tax updates. Instructions for downloading and installing the updates are also provided here.
 
 **Knowledge Base**
 
-[(https://mbs.microsoft.com/knowledgebase/search.aspx)](https://mbs.microsoft.com/knowledgebase/search.aspx)
+[https://mbs.microsoft.com/knowledgebase/search.aspx](https://mbs.microsoft.com/knowledgebase/search.aspx)
 
 Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations. 
 
 **eSupport**
 
-[(https://mbs.microsoft.com/support/newstart.aspx)](https://mbs.microsoft.com/support/newstart.aspx)
+[https://mbs.microsoft.com/support/newstart.aspx](https://mbs.microsoft.com/support/newstart.aspx)
 
 For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.
 
 **Community**
 
-[(https://mbs.microsoft.com/customersource/communities/)](https://mbs.microsoft.com/customersource/communities/)
+[https://mbs.microsoft.com/customersource/communities/](https://mbs.microsoft.com/customersource/communities/)
 
 Start a year-end discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.
 
@@ -177,10 +177,9 @@ To identify the release that you’re using, start Microsoft Dynamics GP. Choose
 
 If you’re not using one of the supported releases, upgrade to a supported version before installing this update.
 
-*For more information about product discontinuation dates, refer to the discontinuation chart on CustomerSource*
+For more information about product discontinuation dates, refer to the discontinuation chart on [CustomerSource](https://mbs.microsoft.com/customersource/support)
 
-[(https://mbs.microsoft.com/customersource/support)](https://mbs.microsoft.com/customersource/support)
-*\>\> Support Information. Select *“Effectively predict support availability with the Microsoft Support Lifecycle Policy.”*
+Look for *Effectively predict support availability with the Microsoft Support Lifecycle Policy.*.
 
 ### Obtaining the year-end update
 
@@ -192,8 +191,8 @@ If you plan to submit W-2 statements electronically using the EFW2 format, you m
 
 Use one of the following options to obtain a User Identification Number:
 
-Internet: [www.socialsecurity.gov/bso/bsowelcome.htm](http://www.socialsecurity.gov/bso/bsowelcome.htm)
-Telephone: 1-800-772-6270 Monday through Friday, 7 a.m. to 7 p.m. (EST)
+- Internet: [www.socialsecurity.gov/bso/bsowelcome.htm](http://www.socialsecurity.gov/bso/bsowelcome.htm)  
+- Telephone: 1-800-772-6270 Monday through Friday, 7 a.m. to 7 p.m. (EST)  
 
 ### Non-supported electronic filing
 
@@ -201,44 +200,46 @@ Microsoft Dynamics GP currently supports electronic filing of W-2 information in
 
 Microsoft Dynamics GP does not support electronic filing of 1099-R forms, State Unemployment Tax (SUTA) forms, or state W-2 forms in formats other than EFW2. You will need to use separate software or services for filing these items. Contact a Microsoft Developer that offers compatible electronic filing products.
 
-This is the contact information for some Microsoft Developers:
+This is the contact information for two Microsoft Dynamics partners:
 
-Greenshades Software, Inc.
-7020 AC Skinner Parkway
-Suite 100
-Jacksonville FL 32256
-Telephone: (888) 255-3815
-E-mail: *sales\@greenshades.com*
-Web site: [www.greenshades.com](http://www.greenshades.com/)
+Greenshades Software, Inc.  
+7020 AC Skinner Parkway  
+Suite 100  
+Jacksonville FL 32256  
+Telephone: (888) 255-3815  
+E-mail: *sales\@greenshades.com*  
+Web site: [www.greenshades.com]  (http://www.greenshades.com/)
 
-MasterTax, LLC
-7150 East Camelback Road, Suite 160
-Scottsdale, AZ 85251
-Telephone: (480) 778-8723
-E-mail: *emailus\@mastertax.net*
+MasterTax, LLC  
+7150 East Camelback Road, Suite 160  
+Scottsdale, AZ 85251  
+Telephone: (480) 778-8723  
+E-mail: *emailus\@mastertax.net*  
 Web site: [www.mastertax.net](http://www.mastertax.net/)
 
 ### Frequently asked questions
 
 As you complete year-end tasks, refer to the answers in this section.
 
-**Q: What will happen if I’ve already closed the 2018 Payroll tax year and don’t install the 2019 tax update right away?**
+**Q: What will happen if I’ve already closed the 2018 Payroll tax year and don’t install the 2019 tax update right away?**  
 **A:** Until you install the 2019 tax update containing FICA, federal, and state tax changes, the tax calculations for your 2019 pay runs may be incorrect.
 
-**Q: If I use multiple companies with my accounting system, do I have to install the year-end tax update for each company?**
+**Q: If I use multiple companies with my accounting system, do I have to install the year-end tax update for each company?**  
 **A:** No. The update will be reflected in all companies. However, you do need to install the update on each workstation using Microsoft Dynamics GP.
 
-**Q: I need to print my 2019 checks before I can print W-2s. What should I do?**
+**Q: I need to print my 2019 checks before I can print W-2s. What should I do?**  
 **A:** After you create the Year-end Wage file, close the year. Install the 2019 tax update, and you can print checks. Follow the checklist for *Processing 2019 pay runs before printing 2018 statements*.
 
-**Q: How do I print multiple W-2 statements for each employee?**
+**Q: How do I print multiple W-2 statements for each employee?**  
 **A:** There are two ways:
 
-- **Using Laser form “sets”** To print all the required forms for each employee at a time (you’re using laser form “sets”), simply enter the number of copies you need to print in the “number of copies” field in the Print dialog box that appears after you choose Print in the Print W-2 Forms window. For example, to print four copies of the W-2 statement for each employee, enter “4” in the Print dialog box. Information for two employees will be printed per page: Copy A for two employees, Copy B for two employees, Copy C for two employees, Copy D for two employees, etc. until the required number of copies has been printed for all employees.
+- **Using Laser form “sets”**  
+    To print all the required forms for each employee at a time (you’re using laser form “sets”), simply enter the number of copies you need to print in the “number of copies” field in the Print dialog box that appears after you choose Print in the Print W-2 Forms window. For example, to print four copies of the W-2 statement for each employee, enter “4” in the Print dialog box. Information for two employees will be printed per page: Copy A for two employees, Copy B for two employees, Copy C for two employees, Copy D for two employees, etc. until the required number of copies has been printed for all employees.
 
-- **Using Laser form “sheets”** To print all forms for all employees, repeat the Printing W-2 Statements procedure as many times as necessary to print the required number of copies. For example, to print copies of the W-2 statements, put the Copy A sheets into the printer and follow the procedure. Copy A W-2 statements will be printed for each employee. Then, put the Copy B sheets into the printer and repeat the procedure, and so on, until all required forms are printed for all employees.
+- **Using Laser form “sheets”**  
+    To print all forms for all employees, repeat the Printing W-2 Statements procedure as many times as necessary to print the required number of copies. For example, to print copies of the W-2 statements, put the Copy A sheets into the printer and follow the procedure. Copy A W-2 statements will be printed for each employee. Then, put the Copy B sheets into the printer and repeat the procedure, and so on, until all required forms are printed for all employees.
 
-**Q: I can’t make W-2 forms align correctly. What can I do?**
+**Q: I can’t make W-2 forms align correctly. What can I do?**  
 **A:** Try the following method to correct alignment issues:
 
 1. Print the W-2s to the screen.
@@ -252,36 +253,37 @@ As you complete year-end tasks, refer to the answers in this section.
 | Form prints too far right | Enter a negative horizontal adjustment.                  |
 | Form prints too far left  | Enter a positive horizontal adjustment.                  |
 
-**Q: I have closed the year and I want to print the 941 for the prior year, but it is blank. Why?**
+**Q: I have closed the year and I want to print the 941 for the prior year, but it is blank. Why?**  
 **A:** The 941 report is date sensitive, so you need to be sure the Microsoft Dynamics GP user date and the year you’re printing the 941 for are the same.
 
-**Q: The amounts on my benefit, deduction or pay code amounts display as twice the amount they should be. What causes this?**
-**A:** You might have duplicated the label on a code, which cause the amount that’s displayed to be doubled. Review the blog post   [Benefit, Deduction and/or Pay Code Amounts are Doubled on My W-2s](https://community.dynamics.com/gp/b/dynamicsgp/archive/2014/01/14/benefit-and-or-deduction-amounts-are-doubled-on-my-w-2s.aspx) for information on how to fix this.  
+**Q: The amounts on my benefit, deduction or pay code amounts display as twice the amount they should be. What causes this?**  
+**A:** You might have duplicated the label on a code, which cause the amount that’s displayed to be doubled. Review the blog post [Benefit, Deduction and/or Pay Code Amounts are Doubled on My W-2s](https://community.dynamics.com/gp/b/dynamicsgp/archive/2014/01/14/benefit-and-or-deduction-amounts-are-doubled-on-my-w-2s.aspx) for information on how to fix this.  
 
-**Q: How do I verify federal withholding taxes?**
+**Q: How do I verify federal withholding taxes?**  
 **A:** If an employee’s federal withholding taxes seem incorrect or you want to verify the amounts, follow these steps to help pinpoint the error source.
 
 Verify your employee’s records in the Payroll Employee Tax Maintenance window (Cards \>\> Payroll \>\> Tax). Check to see if any additional amounts have been entered in the Additional Withholding and Estimated Withholding fields.
 
 1. Open the Deduction Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\>  Setup \>\> Payroll \>\> Deduction. Verify that all deductions are marked as TSA are marked correctly.
-2. Be sure that the pay frequency of the employee’s pay codes matches the pay period of your company. For example, if you pay your employees semimonthly, the pay frequency for the employee’s pay code, deduction, and benefit should also be semimonthly. For additional information, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx). See the Dynamics GP Support and Service blog “How to Verify Microsoft Dynamics GP is Calculating Payroll Taxes Correctly.”
+2. Be sure that the pay frequency of the employee’s pay codes matches the pay period of your company.  
+    For example, if you pay your employees semimonthly, the pay frequency for the employee’s pay code, deduction, and benefit should also be semimonthly. For additional information, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx). See the Dynamics GP Support and Service blog “How to Verify Microsoft Dynamics GP is Calculating Payroll Taxes Correctly.”
 
-**Q: What will happen if I have deductions and/or benefits set to print in the same box on the W-2 statement with the same label?**
+**Q: What will happen if I have deductions and/or benefits set to print in the same box on the W-2 statement with the same label?**  
 **A:** The amounts will be combined and print as one.
 
-**Q: How do I print W-2 statements for Medicare Qualified Government employees?**
+**Q: How do I print W-2 statements for Medicare Qualified Government employees?**  
 **A:** In the Print W-2 Forms window (Microsoft Dynamics GP menu \>\> Tools  \>\> Routines \>\> Payroll \>\> Print W-2s), select the Medicare Qualified Government Employee option in the Employee Type box. The W-2 statements for Medicare Qualified Government Employees are printed separately.
 
-**Q: What is the source of the Employer Identification Number that appears as a default in the Print W-2 Forms window?**
+**Q: What is the source of the Employer Identification Number that appears as a default in the Print W-2 Forms window?**  
 **A:** The number is the federal or state ID entered in the Unemployment Tax Setup window (Microsoft Dynamics GP menu \>\> Setup \>\> Payroll \>\>Unemployment Tax) in the Unemployment Tax ID field.
 
-**Q: In both the Edit W-2 Information and the Print W-2 Forms windows, there is a list used to select the year. Is there a limit to the number of years available? Also, is each year added to the year-end wage file, or does each year have separate year-end wage files created during the year-end closing process?**
+**Q: In both the Edit W-2 Information and the Print W-2 Forms windows, there is a list used to select the year. Is there a limit to the number of years available? Also, is each year added to the year-end wage file, or does each year have separate year-end wage files created during the year-end closing process?**  
 **A:** During the Payroll year-end closing process, the Year-end Wage File is created. Multiple years of history can be saved. If you choose the same year twice when performing the process, the previous file will be replaced by the new file. As long as the correct year is entered each time, the new year’s information will be added to the file. This information can be cleared using the Remove Payroll Year-end Information window.
 
-**Q: If I add information in the Edit W-2 Special Information window (Special button in the Edit W-2 Information window) without entering information in the Edit W-2 Information window, where will that information appear?**
+**Q: If I add information in the Edit W-2 Special Information window (Special button in the Edit W-2 Information window) without entering information in the Edit W-2 Information window, where will that information appear?**  
 **A:** It will print this information on the additional W-2.
 
-**Q: The correct Last Year-end Update date doesn’t appear in the Payroll Setup window, even though I installed the 2018 year-end update and see the changes included in the update. Is there something I need to do?**
+**Q: The correct Last Year-end Update date doesn’t appear in the Payroll Setup window, even though I installed the 2018 year-end update and see the changes included in the update. Is there something I need to do?**  
 **A:** The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Microsoft Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn’t update each user’s Dex.ini file. In these situations, you should manually update each user’s Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/16/2018.
 
 For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/en-us/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
@@ -292,61 +294,59 @@ Use the instructions in this chapter to start your Payroll year-end closing task
 
 ### Payroll year-end closing
 
-Use this procedure to close the 2018 Payroll year. After closing the year, you need to install the 2019 Payroll tax update before processing 2019 pay runs. There are two year-end checklists you can use to close the year for payroll. The steps in this section correspond most closely to *Printing 2018 statements before processing 2019 pay runs* on page 5. For more information, see the checklists in *Chapter 2, "Payroll year-end checklists."*
+Use this procedure to close the 2018 Payroll year. After closing the year, you need to install the 2019 Payroll tax update before processing 2019 pay runs. There are two year-end checklists you can use to close the year for payroll. The steps in this section correspond most closely to [Printing 2018 statements before processing 2019 pay runs](#printing-2018-statements-before-processing-2019-pay-runs) section. For more information, see the checklists in [Chapter 2, "Payroll year-end checklists](#chapter-2-payroll-year-end-checklists).
 
 **To complete payroll year-end closing:**
 
-1.  You already should have completed the tasks in *Chapter 3, "Preparation and FAQs."*
-2.  Complete all 2018 pay runs. The information created during the pay runs is used for month-end or period-end, quarter-end, and any additional year-end reports that you print. You can reprint period-end, quarter-end, or additional reports and re-create the Year-end Wage file at any time.
+1. You already should have completed the tasks in [Chapter 3, "Preparation and FAQs](#chapter-3-preparation-and-faqs).
+2. Complete all 2018 pay runs. The information created during the pay runs is used for month-end or period-end, quarter-end, and any additional year-end reports that you print. You can reprint period-end, quarter-end, or additional reports and re-create the Year-end Wage file at any time.
 
-![](media/6230e96ff4a8a0dfd645c8c83e5b3411.png)
+    > [!IMPORTANT]
+    > It’s important that you complete all pay runs for 2017 before you install a 2018 Payroll tax update. If you install a 2018 Payroll tax update before completing your pay runs, taxes will be calculated at 2018 rates for the remainder of the 2017 pay runs.
 
-> [!IMPORTANT]
-> It’s important that you complete all pay runs for 2017 before you install a 2018 Payroll tax update. If you install a 2018 Payroll tax update before completing your pay runs, taxes will be calculated at 2018 rates for the remainder of the 2017 pay runs.
+3. Complete your company’s standard payroll month-end or period-end, and quarter-end procedures (optional). These procedures might include printing several month-end or period-end and quarter-end reports. You can reprint these reports at any time.
+4. Back up your 2018 Microsoft Dynamics GP data. Label the backup “2018 Pre Year-end Wage file.” If you encounter a problem while creating the Year-end Wage file, you can restore information from this backup. The Internal Revenue Service requires you to keep these records for at least four years.
+5. Install the U.S. 2018 Year-end Update on each client workstation that will use Microsoft Dynamics GP. Before installing the update, ask all Microsoft Dynamics GP users to exit the application until the update is complete on every workstation. For more information, see [Installing the year-end update](#installing-the-year-end-update).
 
-1.  Complete your company’s standard payroll month-end or period-end, and quarter-end procedures (optional). These procedures might include printing several month-end or period-end and quarter-end reports. You can reprint these reports at any time.
-2.  Back up your 2018 Microsoft Dynamics GP data. Label the backup “2018 Pre Year-end Wage file.” If you encounter a problem while creating the Year-end Wage file, you can restore information from this backup. The Internal Revenue Service requires you to keep these records for at least four years.
-3.  Install the U.S. 2018 Year-end Update on each client workstation that will use Microsoft Dynamics GP. Before installing the update, ask all Microsoft Dynamics GP users to exit the application until the update is complete on every workstation. For more information, see *Installing the year-end update* on page 17.
+    > [!NOTE]
+    > This step can be done any time, even if you haven’t completed all your 2018 pay runs. This step must be done before you create the Year-end wage file.
 
-![](media/6230e96ff4a8a0dfd645c8c83e5b3411.png)
+6. Create the Year-end Wage file. For information, see [Creating the Year-end Wage file](#creating-the-year-end-wage-file).
 
-*This step can be done any time, even if you haven’t completed all your 2018 pay runs. This step must be done before you create the Year-end wage file.*
+    > [!NOTE]
+    > 2019 Payroll tax updates can be installed any time after the Year-end Wage file has been created. However, if you create the Year-end Wage file, then install 2019 updates and re-create the 2018 year-end file, your FICA limits may be incorrect.
 
-1.  Create the Year-end Wage file. For information, see *Creating the Year-end Wage file* on page 5.
+7. Back up your 2018 Microsoft Dynamics GP. This backup must be separate from the “2018 Pre Year-end Wage file” backup. Label the backup “2018 Post Year-end Wage file.” You can use this backup if you encounter problems while printing W-2 statements. The Internal Revenue Service requires you to keep these records for at least four years.
 
-![](media/6230e96ff4a8a0dfd645c8c83e5b3411.png)
+8. Verify W-2 and 1099-R statement information. If you’re printing W-2 statements before closing the year 2018 or after processing a 2019 pay run, we suggest that you verify that the W-2 and 1099-R statement information is correct before you close the payroll year. For information, see *[Printing the Year-end Wage Report](#printing-the-year-end-wage-report). You also might want to make changes to Your W-2 records. For information, see [Editing W-2 records](#editing-w-2-records).
 
-*2019 Payroll tax updates can be installed any time after the Year-end Wage file has been created. However, if you create the Year-end Wage file, then install 2019 updates and re-create the 2018 year-end file, your FICA limits may be incorrect.*   
+9. To verify 1099-R statement information, you can print 1099-R statements using the Print 1099-R Forms window. If you make changes to your 1099-R records, we recommend that you make another backup. For information, see [Editing 1099-R statement information](#editing-1099-r-statement-information).
 
-1.  Back up your 2018 Microsoft Dynamics GP. This backup must be separate from the “2018 Pre Year-end Wage file” backup. Label the backup “2018 Post Year-end Wage file.” You can use this backup if you encounter problems while printing W-2 statements. The Internal Revenue Service requires you to keep these records for at least four years.
+    > [!NOTE]
+    > For more information about validation report warnings, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx) and view article number 872100.
 
-2.  Verify W-2 and 1099-R statement information. If you’re printing W-2 statements before closing the year 2018 or after processing a 2019 pay run, we suggest that you verify that the W-2 and 1099-R statement information is correct before you close the payroll year. For information, see *Printing the Yearend Wage Report* on page 35. You also might want to make changes to Your W-2 records. For information, see *Editing W-2 records* on page 22.
+Next, print the W-2 statements and W-3 Transmittal form. You should print a W-2 statement for each employee who has worked for the company during the year. For more information, see [Printing W-2 forms and reports](#printing-w-2-forms-and-reports).
 
-3.  To verify 1099-R statement information, you can print 1099-R statements using the Print 1099-R Forms window. If you make changes to your 1099-R records, we recommend that you make another backup. For information, see *Editing 1099-R statement information* on page 24.
+1. Print the W-2 Validation Report to verify that the information to be printed on W-2 statements is correct. The report displays warnings if there are employee record errors, except for employees with no wages, tips, or withholding information entered on their W-2 forms. W-2 forms will not be printed for employees with no earnings or withholding information. For instructions, see [Printing W-2 forms and reports](#printing-w-2-forms-and-reports).
 
-![](media/6230e96ff4a8a0dfd645c8c83e5b3411.png)
+2. Create an EFW2 transmission file, if required. If your company has more than 250 employees, the Social Security Administration requires you to create and submit federal W-2 wage reports electronically. For information, see [Chapter 5: Submitting W-2 reports electronically](#chapter-5-submitting-w-2-reports-electronically).
 
-For more information about validation report warnings, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx) and view article number 872100.
+3. Archive inactive employee Human Resources information (optional). If you’re using Human Resources with Payroll and you want to save inactive employee information while removing Payroll history records, you can archive the information. Archiving information is beneficial if you need to provide information for references, re-hiring, or other reporting purposes. For more information, see [Archiving Human Resources information for inactive employees](#archiving-human-resources-information-for-inactive-employees
+).
 
-Next, print the W-2 statements and W-3 Transmittal form. You should print a W-2 statement for each employee who has worked for the company during the year. For information, see *Printing W-2 forms and reports* on page 35.
+4. Set up fiscal periods for 2019. Enter the number and length of each company’s open fiscal periods for 2019 in the Fiscal Periods Setup window. For more information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
 
-1.  Print the W-2 Validation Report to verify that the information to be printed on W-2 statements is correct. The report displays warnings if there are employee record errors, except for employees with no wages, tips, or withholding information entered on their W-2 forms. W-2 forms will not be printed for employees with no earnings or withholding information. For instructions, see *Printing W-2 forms and reports* on page 35.
+5. Delete inactive employee Human Resources information (optional).
+    Deleting Human Resources information saves hard disk space and ensures that unused data is not available in lookup lists. For information, see [Deleting information for inactive employees](#deleting-information-for-inactive-employees).
 
-2.  Create an EFW2 transmission file, if required. If your company has more than 250 employees, the Social Security Administration requires you to create and submit federal W-2 wage reports electronically. For information, see *Chapter 5, "Submitting W-2 reports electronically."*
+    To accrue time using the Human Resources attendance system, see [Setting up attendance](#setting-up-attendance).
 
-3.  Archive inactive employee Human Resources information (optional). If you’re using Human Resources with Payroll and you want to save inactive employee information while removing Payroll history records, you can archive the information. Archiving information is beneficial if you need to provide information for references, re-hiring, or other reporting purposes. For more information, see *Archiving Human Resources information for inactive employees* on page 25.
+6. Close the fiscal periods for the year 2018 (optional).
+    Closing any Payroll periods that are still open for the year 2018 keeps transactions from being accidentally posted to the wrong period. For information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
 
-4.  Set up fiscal periods for 2019. Enter the number and length of each company’s open fiscal periods for 2019 in the Fiscal Periods Setup window. For more information, see *Setting up fiscal periods* on page 26.
+    If you need to post Payroll transactions to a fiscal period you’ve already closed, use the Fiscal Periods Setup window to reopen the period before posting the transaction.
 
-5.  Delete inactive employee Human Resources information (optional). Deleting Human Resources information saves hard disk space and ensures that unused data is not available in lookup lists. For information, see *Deleting information for inactive employees* on page 29.
-
-To accrue time using the Human Resources attendance system, see *Setting up attendance* on page 27.
-
-6.  Close the fiscal periods for the year 2018 (optional). Closing any Payroll periods that are still open for the year 2018 keeps transactions from being accidentally posted to the wrong period. For information, see *Setting up fiscal periods* on page 26.
-
-If you need to post Payroll transactions to a fiscal period you’ve already closed, use the Fiscal Periods Setup window to reopen the period before posting the transaction.
-
-7.  Install the 2019 Payroll tax update. For additional information and step-by-step instructions to follow, download the latest 2019 U.S. Payroll Tax Update documentation from CustomerSource at [(https://mbs.microsoft.com/customersource/northamerica/GP/downloads)](https://mbs.microsoft.com/customersource/northamerica/GP/downloads). Choose the link for the Microsoft Dynamics GP version you are using.
+7. Install the 2019 Payroll tax update. For additional information and step-by-step instructions to follow, download the latest 2019 U.S. Payroll Tax Update documentation from CustomerSource at [(https://mbs.microsoft.com/customersource/northamerica/GP/downloads)](https://mbs.microsoft.com/customersource/northamerica/GP/downloads). Choose the link for the Microsoft Dynamics GP version you are using.
 
 You also can print W-2 statements and 1099-R forms and create an EFW2 transmission file after you’ve installed the 2019 Tax Update and performed pay runs for the year 2019. To view the checklist, see Processing 2019 pay runs before printing 2018 statements on page 8.
 
@@ -363,55 +363,54 @@ You will need to install the year-end update on every workstation that runs Micr
 1. Download the update from CustomerSource at [https://mbs.microsoft.com/customersource/northamerica/GP/downloads](https://mbs.microsoft.com/customersource/northamerica/GP/downloads).
     The filenames for the supported versions are as follows:
 
-| **Language**    | **Microsoft Dynamics GP 2018**   | **Microsoft Dynamics GP 2016** | **Microsoft Dynamics GP 2015**  |
-|-----------------|----------------------------------|--------------------------------|----------------------------------|
-| English (U.S)   | MicrosoftDynamicsGP18-KB4468818-ENU.msp | MicrosoftDynamicsGP16-KB4468815-ENU.msp | MicrosoftDynamicsGP14-KB4468812-ENU.msp|
-| Spanish         | MicrosoftDynamicsGP18-KB4468820-ESLA.msp | MicrosoftDynamicsGP16-KB4468817-ESLA.msp| MicrosoftDynamicsGP14-KB4468814-ESLA.msp|
-| French (Canada) | MicrosoftDynamicsGP18-KB4468819-FRCA.msp| MicrosoftDynamicsGP16-KB4468816-FRCA.msp| MicrosoftDynamicsGP14-KB4468813-FRCA.msp|
+    | **Language**    | **Microsoft Dynamics GP 2018**   | **Microsoft Dynamics GP 2016** | **Microsoft Dynamics GP 2015**  |
+    |-----------------|----------------------------------|--------------------------------|----------------------------------|
+    | English (U.S)   | MicrosoftDynamicsGP18-KB4468818-ENU.msp | MicrosoftDynamicsGP16-KB4468815-ENU.msp | MicrosoftDynamicsGP14-KB4468812-ENU.msp|
+    | Spanish         | MicrosoftDynamicsGP18-KB4468820-ESLA.msp | MicrosoftDynamicsGP16-KB4468817-ESLA.msp| MicrosoftDynamicsGP14-KB4468814-ESLA.msp|
+    | French (Canada) | MicrosoftDynamicsGP18-KB4468819-FRCA.msp| MicrosoftDynamicsGP16-KB4468816-FRCA.msp| MicrosoftDynamicsGP14-KB4468813-FRCA.msp|
 
-Save the relevant file to a folder on the local disk drive of the server workstation that runs Microsoft Dynamics GP.
+    Save the relevant file to a folder on the local disk drive of the server workstation that runs Microsoft Dynamics GP.
 
-![](media/6230e96ff4a8a0dfd645c8c83e5b3411.png)
+    > [!NOTE]
+    > The year-end update file also includes all prior Microsoft Dynamics updates, such as Microsoft Dynamics GP 2016 R2, Microsoft Dynamics GP 2015 R2 or Microsoft Dynamics GP 2018 R2. Documents describing the service packs are available from CustomerSource.
 
-*The year-end update file also includes all prior Microsoft Dynamics updates, such as Microsoft Dynamics GP 2016 R2, Microsoft Dynamics GP 2015 R2 or Microsoft Dynamics GP 2018 R2. Documents describing the service packs are available from CustomerSource.* 
+2. Double-click the file that you just downloaded. Progress windows appear as space requirements are verified and files are installed.
 
-1. Double-click the file that you just downloaded. Progress windows appear as space requirements are verified and files are installed.
+3. A message may appear, asking if you want to restart now or later. Click Yes to restart now, you will need to run the update file again after restarting.
 
-2. A message may appear, asking if you want to restart now or later. Click Yes to restart now, you will need to run the update file again after restarting.
+4. Start Microsoft Dynamics GP Utilities.
 
-3. Start Microsoft Dynamics GP Utilities.
+5. In the Welcome to Microsoft Dynamics GP Utilities window, verify your server name, enter the system administrator user ID and password, and click OK.
 
-4. In the Welcome to Microsoft Dynamics GP Utilities window, verify your server name, enter the system administrator user ID and password, and click OK.
+6. In the second welcome window, click Next.
 
-5. In the second welcome window, click Next.
-
-6. In the Upgrade Microsoft Dynamics GP window, click Next.
+7. In the Upgrade Microsoft Dynamics GP window, click Next.
 
     The Server Installation Progress window describes the process as it progresses.
 
-7. In the Confirmation window, click Finish.
+8. In the Confirmation window, click Finish.
 
     Microsoft Dynamics GP Utilities updates your company databases. This process may take several minutes to complete. The Server Installation Progress window describes the process as it progresses.
 
-8. After the update process is finished and is successful, the Additional Tasks
+9. After the update process is finished and is successful, the Additional Tasks
     window opens.
 
-    If the update process wasn’t successful, the Update Company Tables window opens and a red x appears next to the name of the company. You must contact Microsoft Dynamics GP Technical Support. See *Year-end resources* for more information.
+    If the update process wasn’t successful, the Update Company Tables window opens and a red x appears next to the name of the company. You must contact Microsoft Dynamics GP Technical Support. More more information, see [Year-end resources](#year-end-resources).
 
-9. In the Additional Tasks window, choose Update modified forms and reports and click Process. The Locate Launch File window appears.
+10. In the Additional Tasks window, choose Update modified forms and reports and click Process. The Locate Launch File window appears.
 
 11. Select the location of the launch file (Dynamics.set). In most cases you can accept the default location. Click Next. The Update Modified Forms and Reports window appears.
 
 12. Mark the check box next to Microsoft Dynamics GP and any additional components listed.
 
-13.  When you mark a component’s check box, a Product Details window may appear, allowing you to select the location of the component’s original code dictionary. You also can open the Product Details window by selecting a component and clicking Details.
+13. When you mark a component’s check box, a Product Details window may appear, allowing you to select the location of the component’s original code dictionary. You also can open the Product Details window by selecting a component and clicking Details.
 
-> [!NOTE]
-> When you apply an update (.msp file), any dictionaries whose compatibility ID has changed are backed up to a folder named  “Version\<Version Number\>Backup”. This folder is located in the same folder as Dynamics.exe. The \<Version Number\> value is the version you were using before applying the update. If the original dictionary exists in the backup folder, Microsoft Dynamics GP Utilities will automatically display its location in the Product Details window, and you can click OK to accept the location. If the location is missing or incorrect, click the file folder icon and browse to the appropriate location.
+    > [!NOTE]
+    > When you apply an update (.msp file), any dictionaries whose compatibility ID has changed are backed up to a folder named  “Version\<Version Number\>Backup”. This folder is located in the same folder as Dynamics.exe. The \<Version Number\> value is the version you were using before applying the update. If the original dictionary exists in the backup folder, Microsoft Dynamics GP Utilities will automatically display its location in the Product Details window, and you can click OK to accept the location. If the location is missing or incorrect, click the file folder icon and browse to the appropriate location.
 
 14. When you have finished selecting components, click Update. A Report Upgrade Progress window displays the status of the update. When the process finishes, click Close.
 
-Log files containing detailed information about the update are saved in the \\Data folder. For each component, a report named “Update\<Version_Name\>.log” is generated. An update summary named “Update\<Version\>.txt” is also generated.
+    Log files containing detailed information about the update are saved in the \\Data folder. For each component, a report named “Update\<Version_Name\>.log” is generated. An update summary named “Update\<Version\>.txt” is also generated.
 
 15. In the Modified Forms and Reports window, click Next. The Additional Tasks window opens, where you can start Microsoft Dynamics GP, or exit Microsoft Dynamics GP Utilities.
 
@@ -419,13 +418,12 @@ Log files containing detailed information about the update are saved in the \\Da
 
 17. After installing the U.S. 2017 Year-end Update on a server for Microsoft Dynamics GP, install the U.S. 2017 Year-end Update on all remaining client computers or Terminal Services.
 
-You can set up Automated Client Update to update all client workstations. For information about setting up the automatic updates,  refer to your System Administrator manual.
+    You can set up Automated Client Update to update all client workstations. For information about setting up the automatic updates,  refer to your System Administrator manual.
 
-![](media/6230e96ff4a8a0dfd645c8c83e5b3411.png)
+    > [!NOTE]
+    > To install the update on an operating system with User Account Control (UAC) activated, a user must be running Microsoft Dynamics GP with administrative privileges. (From the Start menu, select and right-click the Microsoft Dynamics GP shortcut, and then select Run as Administrator.) For other ways to install the update on Windows clients with UAC activated, see Installing with UAC activated.
 
-To install the update on an operating system with User Account Control (UAC) activated, a user must be running Microsoft Dynamics GP with administrative privileges. (From the Start menu, select and right-click the Microsoft Dynamics GP shortcut, and then select Run as Administrator.) For other ways to install the update on Windows clients with UAC activated, see Installing with UAC activated.   
-
-18.  To confirm that the update is installed, open the Payroll Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll \>\> Payroll). Check the Last Year-end Update date. It should be 11/16/2018.
+18. To confirm that the update is installed, open the Payroll Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll \>\> Payroll). Check the Last Year-end Update date. It should be 11/16/2018.
 
 If the date does not appear changed to 11/16/2018, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx) and view article number 981312.
 
@@ -433,15 +431,15 @@ If the date does not appear changed to 11/16/2018, search the [Microsoft Dynamic
 
 User Account Control (UAC) is an enhanced security feature in Windows 7 and later versions. UAC is activated by default. Before performing actions that could affect your computer’s operation, such as installing software updates, UAC asks for permission. To install the update on a client computer when UAC is active, copy the .msp file to each client workstation, then use one of the following methods:
 
--  Start Microsoft Dynamics GP as a user that has administrative privileges on the local computer. (To do this, right-click on the Microsoft Dynamics GP shortcut and choose Run as administrator.) Double-click the .msp file to install it.
+- Start Microsoft Dynamics GP as a user that has administrative privileges on the local computer. (To do this, right-click on the Microsoft Dynamics GP shortcut and choose Run as administrator.) Double-click the .msp file to install it.
 
--  Start the Command Prompt (located in the Accessories group) as a user that has administrative privileges on the local computer. (To do this, right-click on the Command Prompt shortcut and select Run as administrator.) Set the current directory to the location where you copied the .msp file.
+- Start the Command Prompt (located in the Accessories group) as a user that has administrative privileges on the local computer. (To do this, right-click on the Command Prompt shortcut and select Run as administrator.) Set the current directory to the location where you copied the .msp file.
 
-For Microsoft Dynamics GP 2018, as an example, enter the following command for U.S. English installs:
+    For Microsoft Dynamics GP 2018, as an example, enter the following command for U.S. English installs:
 
-```Msiexec /p MicrosoftDynamicsGP18-KB4468818-ENU.msp /1\*v C:\\MSPErrorlog.txt```
+    ```Msiexec /p MicrosoftDynamicsGP18-KB4468818-ENU.msp /1\*v C:\\MSPErrorlog.txt```
 
--  If you want the user to install updates and service packs without having administrative privileges on the local computer, you can change permissions for the folder where Microsoft Dynamics GP is installed. Be aware that doing this makes your computer less secure.
+- If you want the user to install updates and service packs without having administrative privileges on the local computer, you can change permissions for the folder where Microsoft Dynamics GP is installed. Be aware that doing this makes your computer less secure.
 
 View properties for the folder and display the Security tab. Grant Modify permissions to an appropriate group, such as Users or Authenticated Users. Once the folder permissions are changed, any user in the group can install the .msp file by double-clicking it.
 
@@ -465,15 +463,15 @@ Use the Payroll Year-end Closing window to create a table of annual wage informa
 
 1. Open the Payroll Year-end Closing window. (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll \>\> Year-end Closing)
 
-![A screenshot of a cell phone Description automatically generated](media/e90a4bb19ddde66e966913bc656d2781.png)
+    ![Payroll year-End Closing window](media/e90a4bb19ddde66e966913bc656d2781.png)
 
 2. Enter 2018 for the reporting year.
 
 3. Choose Process to create the Year-end Wage file that will be used for printing W-2 statements and 1099-R forms. You can store multiple years of year-end wage information in Microsoft Dynamics GP. To clear previous year-end wage information, use the Remove Payroll Year-end Information window (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Payroll\>\> Remove Year-end Information).
 
-![](media/a4d9e20a94bd7bdf275d5a701f20fbdb.jpg)
+    ![Remove Inactive Records window](media/a4d9e20a94bd7bdf275d5a701f20fbdb.jpg)
 
-You can install 2019 tax tables any time after you’ve created the Year-end Wage file. You also may need to process 2019 pay runs before printing 2018 wage statements. For more information, see the checklist *Processing 2019 pay runs before printing 2018 statements* on page 8.
+You can install 2019 tax tables any time after you’ve created the Year-end Wage file. You also may need to process 2019 pay runs before printing 2018 wage statements. For more information, see the checklist [Processing 2019 pay runs before printing 2018 statements](#printing-2018-statements-before-processing-2019-pay-runs).
 
 ### Editing W-2 records
 
@@ -485,7 +483,7 @@ However, when you make changes in this window, only the information in the Year-
 
 1. Open the Edit W-2 Information window. (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll \>\> Edit W-2s)
 
-![A screenshot of a cell phone Description automatically generated](media/d82a0116f4c6685328ad23e68fa36619.jpg)
+    ![Edit W-2 information window](media/d82a0116f4c6685328ad23e68fa36619.jpg)
 
 2. Select 2018 and select an employee. The employee’s Social Security number and address are displayed in editable fields.
 
@@ -502,11 +500,11 @@ However, when you make changes in this window, only the information in the Year-
 
 5. Specify the type of employee for whom you’re editing W-2 information. Information from the Employee Tax Maintenance window will appear as default entries. Settings include:
 
-    >   **Statutory Employee** Mark this box if the employee is subject to FICA
-    >   withholding but not federal withholding.
+    **Statutory Employee**  
+        Mark this box if the employee is subject to FICA withholding but not federal withholding.
 
-    >   **Retirement Plan** Mark this box if the employee is an active
-    >   participant in a retirement plan.
+    **Retirement Plan**  
+        Mark this box if the employee is an active participant in a retirement plan.
 
 6. Edit optional information, as needed. Choose State or Local to open the Edit State Tax Information or the Edit Local Tax Information windows. Use these windows to view state and local tax information that will be printed on the main W-2 statement and supporting W-2 statements for the employee.
 
@@ -524,7 +522,7 @@ When you make changes in the Edit 1099-R window, only the information in the Yea
 
 1. Open the Edit 1099-R window. (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll \>\> Edit 1099Rs)
 
-![A screenshot of a computer Description automatically generated](media/d3210406076487f1b0554484e04b57f0.jpg)
+    ![Edit 1099-R Information window](media/d3210406076487f1b0554484e04b57f0.jpg)
 
 2. Select 2018 for the calendar year and select an employee. The employee’s Social Security number and address are displayed in editable fields.
 
@@ -546,7 +544,7 @@ It’s important to archive inactive employee Human Resources information before
 
 1. Open the Employee Archive window. (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Human Resources\>\> Archive Employee)
 
-![A screenshot of a cell phone Description automatically generated](media/abcbe843dec6b5e24b6f9d52be7f2576.jpg)
+    ![Employee Archive window](media/abcbe843dec6b5e24b6f9d52be7f2576.jpg)
 
 2. Select the inactive employee whose information you want to archive.
 
@@ -560,15 +558,15 @@ Setting up periods for the future fiscal year allows you to enter transactions i
 
 After clearing financial information, you also can use the Fiscal Periods Setup window to:
 
-Close any Payroll periods that are still open for the year, which helps to keep transactions from being posted to the wrong period or year.
+- Close any Payroll periods that are still open for the year, which helps to keep transactions from being posted to the wrong period or year.
 
-Reopen a fiscal period that you’ve already closed.
+- Reopen a fiscal period that you’ve already closed.
 
 **To set up fiscal periods:**
 
 1. Open the Fiscal Periods Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Company \>\> Fiscal Periods)
 
-![A screenshot of a cell phone Description automatically generated](media/5d89ab7faca588b16120e25e6609f746.jpg)
+    ![Fiscal Periods Setup window](media/5d89ab7faca588b16120e25e6609f746.jpg)
 
 2. Enter the year. Also enter the first and last days of the fiscal year. The fiscal year isn’t limited to a calendar year; it can be any length.
 
@@ -578,11 +576,9 @@ Reopen a fiscal period that you’ve already closed.
 
 5. Choose Calculate to calculate first and last days for each period. The beginning date of each period appears in the scrolling window.
 
-![](media/6230e96ff4a8a0dfd645c8c83e5b3411.png)
-
-*You can reenter information and recalculate periods as many times as
-necessary.*  
-
+    > [!NOTE]
+    > You can reenter information and recalculate periods as many times as
+necessary.
 
 6. Review the beginning dates of each period in the Date column. Make changes as needed.
 
@@ -600,13 +596,15 @@ Use the Attendance Setup window to specify if your company accrues time using Pa
 
 1. Open the Attendance Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Human Resources \>\> Attendance \>\> Setup)
 
-![A screenshot of a cell phone Description automatically generated](media/30cd3027f837642f55e44f1bcf36cef7.jpg)
+    ![Attendance window](media/30cd3027f837642f55e44f1bcf36cef7.jpg)
 
 2. Specify how your company accrues benefit time.
 
-    >   **Human Resources** Mark Human Resources to use the Human Resources attendance system.
+    - **Human Resources**  
+        Mark Human Resources to use the Human Resources attendance system.
 
-    >   **Payroll** Mark Payroll to use your accounting system to track attendance. Proceed to step 7.
+    - **Payroll**  
+        Mark Payroll to use your accounting system to track attendance. Proceed to step 7.
 
 3. Mark the Print Available Time on Payroll Checks option in the Employee Attendance Maintenance window (Cards \>\> Human Resources \>\> Employee - Attendance \>\> Maintenance) to print available vacation and/or sick time on payroll checks.
 
@@ -620,27 +618,27 @@ Use the Attendance Setup window to specify if your company accrues time using Pa
 
 7. You can choose to update the Vacation Calendar with attendance transactions. Mark the Update Vacation Calendar option.
 
-    1. Reset benefit time available. </br>
-        For instance, an employee has 12.75 vacation hours available and you want the balance to be zero; you’d create an adjusting transaction for -12.75 hours for the vacation time code. If you don’t reset vacation and sick time available, the hours that were available at the end of the year are carried over to the next year.
+    Reset benefit time available. For instance, an employee has 12.75 vacation hours available and you want the balance to be zero; you’d create an adjusting transaction for -12.75 hours for the vacation time code. If you don’t reset vacation and sick time available, the hours that were available at the end of the year are carried over to the next year.
 
-    **Accruing with Human Resources** If you marked Human Resources as your accrual type in step 2, you can reset benefit time available by creating an Hours Available Adjustment in the Attendance Transaction Entry window (Transactions \>\> Human Resources \>\> Transaction Entry).
+    - **Accruing with Human Resources**  
+        If you marked Human Resources as your accrual type in step 2, you can reset benefit time available by creating an Hours Available Adjustment in the Attendance Transaction Entry window (Transactions \>\> Human Resources \>\> Transaction Entry).
 
-    ![](media/2ba47052805e7f27d276a88b2252bc77.jpg)
+        ![](media/2ba47052805e7f27d276a88b2252bc77.jpg)
 
-    For more information, see the Human Resources documentation included in
-Microsoft Dynamics GP.
+        For more information, see the Human Resources documentation included in Microsoft Dynamics GP.
 
-    **Accruing with Payroll** If you marked Payroll as your accrual type in step 2, (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Payroll \>\> Mass Update) and reset benefit time available. In the Update list, choose Vacation Time Available or Sick Time Available.
+    - **Accruing with Payroll**  
+        If you marked Payroll as your accrual type in step 2, (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Payroll \>\> Mass Update) and reset benefit time available. In the Update list, choose Vacation Time Available or Sick Time Available.
 
 8. In the Attendance Setup window, enter the number of days that equal a week and the number of hours that equal a day to define your organization’s work schedule. For example, a standard 40-hour work week might be Number of days in a week = 5 and Number of hours in a day = 8.
 
 9. Choose Options to open the Attendance Setup Options window.
 
-10.  Enter an attendance reason for absence—such as Jury Duty—and add it to the Reason list by choosing the insert button. Then, enter an attendance type for the reason—such as Miscellaneous—and add it to the Type list.
+10. Enter an attendance reason for absence—such as Jury Duty—and add it to the Reason list by choosing the insert button. Then, enter an attendance type for the reason—such as Miscellaneous—and add it to the Type list.
 
     The reasons and types that you enter will be displayed in the Attendance Transaction Entry window. If you marked the Allow entry of attendance type and reason in Payroll option in the Attendance Setup window, then the reasons and types will be displayed in the Payroll Transaction Entry window.
 
-    To remove an attendance reason or type from a list, select it and choose Remove. Predefined reasons and types cannot be removed.*
+    To remove an attendance reason or type from a list, select it and choose Remove. Predefined reasons and types cannot be removed.
 
 11. Choose OK to save your changes and return to the Attendance Setup window.
 
@@ -657,37 +655,38 @@ The Remove Inactive Records window deletes inactive records in both Payroll and 
 
 1. Open the Remove Inactive Records window. (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Payroll \>\>Remove Inactive Records)
 
-![A screenshot of a cell phone Description automatically generated](media/a4d9e20a94bd7bdf275d5a701f20fbdb.jpg)
+    ![Remove inactive records](media/a4d9e20a94bd7bdf275d5a701f20fbdb.jpg)
 
 2. Choose the type of information to delete. If you mark Remove Inactive Employee Records and do not mark Remove History for Inactive Employees, information for Payroll history reports will be retained.
 
-3. Choose Process. When processing is complete, the Remove Inactive Employee Records Utility Log will be printed.
+3. Choose Process.
+
+When processing is complete, the Remove Inactive Employee Records Utility Log will be printed.
 
 ## Chapter 5: Submitting W-2 reports electronically
 
 If your company has more than 250 employees, the Social Security Administration (SSA) requires you to create and submit federal W-2 wage reports electronically. If your company has fewer than 250 employees, you can submit W-2 wage reports either manually or electronically.
 
-Microsoft Dynamics GP currently supports electronic filing of W-2 information in the federal EFW2 format. Some states also accept this format for state W-2 electronic filing. For states that require other electronic formats for W-2 filing, see *Non-supported electronic filing* on page 9.
+Microsoft Dynamics GP currently supports electronic filing of W-2 information in the federal EFW2 format. Some states also accept this format for state W-2 electronic filing. For states that require other electronic formats for W-2 filing, see [Non-supported electronic filing](#non-supported-electronic-filing).
 
-For more information about the electronics *submission* formats and free accuracychecking tools, visit the SSA website at   [https://www.ssa.gov/bso/bsowelcome.htm.](https://www.ssa.gov/bso/bsowelcome.htm).
+For more information about the electronics *submission* formats and free accuracy checking tools, visit the SSA website at [https://www.ssa.gov/bso/bsowelcome.htm.](https://www.ssa.gov/bso/bsowelcome.htm).
 
 ### Creating EFW2 files
 
 Use the W-2 Electronic Filing window to create the EFW2 transmission file and to select which companies to include in the file.
 
-You must register with the SSA to submit the file. For information on how to register and obtain a User Identification Number with the SSA, see *Obtaining a User Identification Number to submit EFW2 files electronically* on page 9.
+You must register with the SSA to submit the file. For information on how to register and obtain a User Identification Number with the SSA, see [Obtaining a User Identification Number to submit EFW2 files electronically](#obtaining-a-user-identification-number-to-submit-efw2-files-electronically).
 
 Before you begin, be sure you have completed these procedures:
 
--  Completed all pay runs for the year.
+- Completed all pay runs for the year.
 
--  Created the Year-end Wage file. For more information, see *Creating the Yearend Wage file* on page 21.
+- Created the Year-end Wage file. For more information, see [Creating the Year-end Wage file](#creating-the-year-end-wage-file).
 
--  Verified W-2 amounts on the Year-end Employee Wage report. For more information, see *Printing the Year-end Wage Report* on page 35.
+- Verified W-2 amounts on the Year-end Employee Wage report. For more information, see [Printing the Year-end Wage Report](#printing-the-year-end-wage-report).
 
-![](media/6230e96ff4a8a0dfd645c8c83e5b3411.png)
-
-*Be sure no one edits W-2 information while you’re working in the W-2 Electronic Filing window.*
+> [!IMPORTANT]
+> Make sure no one edits W-2 information while you’re working in the W-2 Electronic Filing window.
 
 **To create the EFW2 file:**
 
@@ -695,7 +694,7 @@ Before you begin, be sure you have completed these procedures:
 
     When you first open the window, a message prompts you to register with the SSA to submit W-2 information electronically.
 
-    ![A screenshot of a social media post Description automatically generated](media/cf99fb6ede6de86b98a9e4816be3b006.jpg)
+    ![A screenshot of a social media post ](media/cf99fb6ede6de86b98a9e4816be3b006.jpg)
 
 2. Enter the reporting year.
 
@@ -709,13 +708,13 @@ Before you begin, be sure you have completed these procedures:
 
 6. Enter the destination and file name for the EFW2 file. The default file name is W2Report, without an extension. If you add an extension, the SSA requires that it be a valid extension, such as “.txt”.
 
-7. Enter the User Identification Number assigned to you by the SSA when you registered to submit EFW2 files electronically. You must enter your User Identification Number before you can choose Create File. For information, see *Obtaining a User Identification Number to submit EFW2 files electronically* on page 9.
+7. Enter the User Identification Number assigned to you by the SSA when you registered to submit EFW2 files electronically. You must enter your User Identification Number before you can choose Create File. For more information, see [Obtaining a User Identification Number to submit EFW2 files electronically](#obtaining-a-user-identification-number-to-submit-efw2-files-electronically).
 
 8. Choose Submitter to enter submitter information in the Electronic Filer Submitter Information window. To ensure that your file is valid, you must enter an e-mail address.
 
-    ![A screenshot of a cell phone Description automatically generated](media/a46418ecb58f57c36692981e689d7631.jpg)
+    ![Electronic File Submitter](media/a46418ecb58f57c36692981e689d7631.jpg)
 
-    *Address information should be no more than 22 characters per line. Excess characters will be cut off in the file.*
+    Address information should be no more than 22 characters per line. Excess characters will be cut off in the file.
 
     Choose OK to save the changes and return to the W-2 Electronic Filing window.
 
@@ -729,7 +728,7 @@ Before you begin, be sure you have completed these procedures:
 
 The following guidelines summarize the filing instructions provided by the SSA. Read the SSA’s instructions carefully before submitting your EFW2 file.
 
-For information on Microsoft developers that provide electronic filing services for state taxes, see *Non-supported electronic filing* on page 9.
+For information on Microsoft developers that provide electronic filing services for state taxes, see [Non-supported electronic filing](#non-supported-electronic-filing).
 
 **BSO filing**
 
@@ -751,7 +750,7 @@ Print the Year-end Wage Report from the Year-end Wage Report window to verify W-
 
 1. Open the Year-end Wage Report window: (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll \>\>Year-end Wage Report)
 
-    ![A screenshot of a cell phone Description automatically generated](media/2c2296ebb02f986dbb208027f0a103de.jpg)
+    ![Print form](media/2c2296ebb02f986dbb208027f0a103de.jpg)
 
 2. Enter 2018 as the year.
 
@@ -782,7 +781,7 @@ If you’re submitting W-2 wage reports electronically, you can also use AccuWag
 
 1. Open the Print W-2 Forms window. (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll \>\> Print W-2s)
 
-    ![A screenshot of a cell phone Description automatically generated](media/9e6e4bda64b079f0be50f366b9f8c9d1.jpg)
+    ![Print W-2 forms](media/9e6e4bda64b079f0be50f366b9f8c9d1.jpg)
 
 2. Enter 2018 as the reporting year.
 
@@ -818,16 +817,15 @@ If you’re submitting W-2 wage reports electronically, you can also use AccuWag
 
 You can print as many copies of W-2 statements as needed. To print all the required forms for each employee (using laser form sets), enter the number of copies you need in the Print dialog box. Information for two employees will be printed per page, on each form, Copy A through Copy D, until the required number of copies have been printed. For more information, refer to the “How do I print multiple W-2 statements for each employee?” question in *Frequently asked questions* on page 10.
 
-![](media/6230e96ff4a8a0dfd645c8c83e5b3411.png)
-
-*If you need to reprint W-2s for any reason, you can reprint them as a group or individually. Use the Employee ID field to restrict the range of W-2 statements printed.*
+> [!NOTE]
+> If you need to reprint W-2s for any reason, you can reprint them as a group or individually. Use the Employee ID field to restrict the range of W-2 statements printed.
 
 ### Printing 1099-R forms and reports
 
 Use the Print 1099-R Forms window to print the following forms and reports.
 
-| **Reports**           | **Descriptions**                                                                                                                                                        |
-|-----------------------|-----------------------------|
+| **Reports**           | **Descriptions**    |
+|-----------------------|---------------------|
 | 1099-R Validation     | Shows 1099-R information before printing 1099-R statements, usually to ensure the information printed on the 1099-R statements is correct.  |
 | 1099-R Alignment      | Shows if the forms are aligned correctly in the printer before printing statements. Print this before printing 1099-R statements.   |
 | 1099-R Statements     | Shows the distribution of pension payments for use in preparing federal, state, and local tax returns. It also shows an employee’s distribution from a retirement plan. |
@@ -837,7 +835,7 @@ Use the Print 1099-R Forms window to print the following forms and reports.
 
 1. Open the Print 1099-R Forms window. (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll \>\> Print 1099Rs)
 
-    ![A screenshot of a cell phone Description automatically generated](media/95196f36cdb4dbdcce5d37dbc9552912.jpg)
+    ![Print 1099-R Forms](media/95196f36cdb4dbdcce5d37dbc9552912.jpg)
 
 2. Enter 2018 for the calendar year. The default year is the current system year.
 
@@ -847,10 +845,10 @@ Use the Print 1099-R Forms window to print the following forms and reports.
 
 5. Enter the company name, and select the appropriate company address ID. Also verify the federal government employer identification number (EIN).
 
-6.  Select a form type to print: Continuous or Single Feed.
+6. Select a form type to print: Continuous or Single Feed.
 
-7.  Select the form or report to print.
+7. Select the form or report to print.
 
-8.  Verify that you’ve loaded the correct form in the printer.
+8. Verify that you’ve loaded the correct form in the printer.
 
-9.  Choose Print.
+9. Choose Print.
