@@ -80,7 +80,8 @@
 #### [Company data conversion](upgrade/company-data-conversion.md)
 <!--- payroll -->
 ## Payroll 
-### [U.S. Year-End](payroll/us-year-end.md)
-<!-->
+### [U.S. Year-End] (payroll/us-year-end.md)
+### [W-2 Source] (payroll/W-2Statement.md)
+<!--
 ### [Canadian Year-End]
 ### [Payroll Taxes]-->
