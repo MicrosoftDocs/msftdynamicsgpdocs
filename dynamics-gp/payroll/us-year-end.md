@@ -82,7 +82,7 @@ Payroll 1099-R (Pension) additional Distribution Codes C and M for Box 7 allowed
 
 ### Updates for ACA reporting, form 1094-C
 
-For the Affordable Care Act (ACA), checkboxes in box 22 Certifications of Eligibility have shifted on form 1094-C.
+For the Affordable Care Act (ACA), checkboxes in box 22 Certifications of Eligibility have shifted on form 1094-C.  There were also a few format changes to the 1095-C.  If you plan to print the ACA forms in Microsoft Dynamics GP, the year end should be installed.
 
 ### Forms whose format is not changing for 2018
 
@@ -98,7 +98,6 @@ The formats of a number of forms are not changing for the 2018 tax year. The for
 
 - 1099-MISC
 
-- 1095-C
 
 ### Year-end blog
 
