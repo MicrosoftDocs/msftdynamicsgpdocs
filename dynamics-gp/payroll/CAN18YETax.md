@@ -73,9 +73,7 @@ If you have questions about Canadian Payroll year-end closing procedures and you
 
 #### 2018 year-end information on CustomerSource
 
-Look at the following location to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided here:
-
-[https://mbs.microsoft.com/customersource/northamerica/GP/downloads](https://mbs.microsoft.com/customersource/northamerica/GP/downloads)
+Look at [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/downloads) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
 
 Look for "2018 Canadian Payroll Year End Update for Microsoft Dynamics GP".
 
@@ -96,7 +94,7 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 | 1.       | Complete all 2018 pay runs. |
 | 2.       | Note: Any batch with a cheque date of 2019 should be processed after the Year End File Reset. For example, if the cheque date of your final pay period for 2018 is January 1, 2019, the 2019 tax tables must be used for that pay run. |
 | 3.       | Complete any necessary 2018 payroll reports.        |
-| 4.       | Install the 2018 Canadian Payroll Year-End Update. See *Installing the update* on page 8      |
+| 4.       | Install the 2018 Canadian Payroll Year-End Update. See [Installing the update](#installing-the-update).      |
 | 5.       | Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application.       |
 | 6.       | Complete the Year End File Reset.                                       |
 | 7.       | Note: To ensure that all tables are available for resetting, make sure that the Year End File Reset window is the only window open in Microsoft Dynamics GP.|
@@ -329,7 +327,7 @@ Contribution rates for both employers and employees for 2019 remains at 5.1%. Th
 
 - The Max Premium is \$402.39 from \$405.52.
 
--  he Employer Premium Rate is 0.736%. The maximum employer amount will change to \$563.04 from \$567.58.
+- The Employer Premium Rate is 0.736%. The maximum employer amount will change to \$563.04 from \$567.58.
 
 ### Federal tax rates and income thresholds
 
