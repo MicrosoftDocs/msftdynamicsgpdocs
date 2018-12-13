@@ -192,7 +192,8 @@ The update must be installed on each client workstation where Microsoft Dynamics
     The **Server Installation Progress** window describes the process as it progresses.
 
 11. After the update process is finished and is successful, the **Additional Tasks** window opens. If the update process wasn’t successful, the **Update Company Tables** window opens.  
-    To contact Microsoft Dynamics GP Technical Support, see *Resources* for more information. For more information about the Microsoft Dynamics GP Utilities, see [Using Microsoft Dynamics Utilities](../installation/using-microsoft-dynamics-utilities).
+
+    To contact Microsoft Dynamics GP Technical Support, see [Resources](#resources) for more information. For more information about the Microsoft Dynamics GP Utilities, see [Using Microsoft Dynamics Utilities](../installation/using-microsoft-dynamics-utilities.md).
 
 12. In the **Additional Tasks** window, choose **Update modified forms and reports**, and then click **Process**. The **Locate Launch File** window appears.
 
@@ -223,13 +224,15 @@ For the tax update, check the Last Tax Update field in the Payroll Control Setup
 
 User Account Control (UAC) is an enhanced security feature in Windows. UAC is activated by default. Before performing actions that could affect your computer’s operation, such as installing software updates, UAC asks for permission. To install the update on a client computer when UAC is active, copy the .msp file to each client workstation, then use one of the following methods:
 
--   Start Microsoft Dynamics GP as a user that has administrative privileges on the local computer. (To do this, right-click on the Microsoft Dynamics GP shortcut and choose Run as administrator.) Double-click the .msp file to install it.
+- Start Microsoft Dynamics GP as a user that has administrative privileges on the local computer. (To do this, right-click on the Microsoft Dynamics GP shortcut and choose Run as administrator.) Double-click the .msp file to install it.
 
--   Start the Command Prompt (located in the Accessories group) as a user that has administrative privileges on the local computer. (To do this,right-click on the Command Prompt shortcut and select Run as administrator.) Set the current directory to the location where you copied the .msp file.
+- Start the Command Prompt (located in the Accessories group) as a user that has administrative privileges on the local computer. (To do this,right-click on the Command Prompt shortcut and select Run as administrator.) Set the current directory to the location where you copied the .msp file.
 
 Example, for Microsoft Dynamics GP 2016 (English), enter the following command.
 
+```
 Msiexec /p MicrosoftDynamicsGP16-KB4468822-ENU.msp /l\*v C:\\MSPErrorlog.txt
+```
 
 If you want the user to install updates and service packs without having administrative privileges on the local computer, you can change permissions for the folder where Microsoft Dynamics GP is installed. Be aware that doing this makes your computer less secure.
 
@@ -469,41 +472,41 @@ The deduction for Employment income has been increased to \$1,170, formerly \$1,
 
 ### Updating basic personal amounts
 
->   To update the Basic Personal amounts go to: Tools\>\> Routines\>\> PayrollCanada\>\> Year End File Reset
+To update the Basic Personal amounts go to: Tools\>\> Routines\>\> PayrollCanada\>\> Year End File Reset
 
--   When the message, “This process will reset YTD totals in the Employee Master file. Do you want to continue?” displays, click Yes.
+- When the message, “This process will reset YTD totals in the Employee Master file. Do you want to continue?” displays, click Yes.
 
--   When the message, “Do you want to update Basic Personal Amounts in the Control Setup File?” displays, click Yes.
+- When the message, “Do you want to update Basic Personal Amounts in the Control Setup File?” displays, click Yes.
 
 The personal tax credit amounts specified in the P_CPY_Control table will be updated to:
 
--   The federal Basic Personal amount = \$12,069
+- The federal Basic Personal amount = \$12,069
 
--   Quebec TP-105.3-V Base amount = \$15,269
+- Quebec TP-105.3-V Base amount = \$15,269
 
--   Alberta basic personal amount = \$19,369
+- Alberta basic personal amount = \$19,369
 
--   British Columbia basic personal amount = \$10,682
+- British Columbia basic personal amount = \$10,682
 
--   Manitoba Basic Personal amount remains at \$9,626
+- Manitoba Basic Personal amount remains at \$9,626
 
--   New Brunswick Basic Personal amount = \$10,264
+- New Brunswick Basic Personal amount = \$10,264
 
--   Newfoundland Basic Personal amount = \$9,414
+- Newfoundland Basic Personal amount = \$9,414
 
--   Northwest Territories basic personal amount = \$14,811
+- Northwest Territories basic personal amount = \$14,811
 
--   Nova Scotia basic personal amount remains at \$8,481
+- Nova Scotia basic personal amount remains at \$8,481
 
--   Nunavut basic personal amount = \$13,618
+- Nunavut basic personal amount = \$13,618
 
--   Ontario Basic Personal amount = \$10,582
+- Ontario Basic Personal amount = \$10,582
 
--   Prince Edward Island basic personal amount = \$9,160
+- Prince Edward Island basic personal amount = \$9,160
 
--   Saskatchewan Basic Personal amount remains at \$16,065
+- Saskatchewan Basic Personal amount remains at \$16,065
 
--   Yukon basic personal amount = \$12,069
+- Yukon basic personal amount = \$12,069
 
 You can view these amounts in the Tax Credits window by going to: Tools \>\> Setup \>\> Payroll-Canada \>\> Control \>\> Tax Credits
 
