@@ -299,7 +299,7 @@ Status’
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 5,000            | 0              | 0%           | 0                  |
-| 5,000       | 100,000          | 0              | 7.95%        | 5,000              |
+| 5,000       | 100,000          | 0              | 7.95%        | 0                  |
 | 100,000     | 125,000          | 7,950          | 8.20%        | 100,000            |
 | 125,000     | 150,000          | 10,000         | 8.45%        | 125,000            |
 | 150,000     | 250,000          | 12,112.50      | 8.70%        | 150,000            |
@@ -310,7 +310,7 @@ Status’
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 5,000            | 0              | .%           | 0                  |
-| 5,000       | 150,000          | 0              | 7.95%        | 5,000              |
+| 5,000       | 150,000          | 0              | 7.95%        | 0                  |
 | 150,000     | 175,000          | 11,925.00      | 8.20%        | 150,000            |
 | 175,000     | 225,000          | 13,795.00      | 8.45%        | 175,000            |
 | 225,000     | 300,000          | 18,200.00      | 8.70%        | 225,000            |
@@ -321,7 +321,7 @@ Status’
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 5,000            | 0              | 0%           | 0                  |
-| 5,000       | 100,000          | 0              | 7.75%        | 5,000              |
+| 5,000       | 100,000          | 0              | 7.75%        | 0                  |
 | 100,000     | 125,000          | 7,750.00       | 8.00%        | 100,000            |
 | 125,000     | 150,000          | 9,750          | 8.25%        | 125,000            |
 | 150,000     | 250,000          | 11,812.50      | 8.50%        | 150,000            |
@@ -332,7 +332,7 @@ Status’
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 5,000            | 0              | .%           | 0                  |
-| 5,000       | 150,000          | 0              | 7.75%        | 5,000              |
+| 5,000       | 150,000          | 0              | 7.75%        | 0                  |
 | 150,000     | 175,000          | 11,625.00      | 8.00%        | 150,000            |
 | 175,000     | 225,000          | 13,625.00      | 8.25%        | 175,000            |
 | 225,000     | 300,000          | 17,750.00      | 8.50%        | 225,000            |
@@ -431,7 +431,7 @@ The Standard Deduction Amount is \$4,545 for MS3 and S3 Filing Status.
 
 The Standard Deduction Amount is \$2,270 for S2 Filing Status.
 
-*Special Tax Type rates for all taxpayers filing*
+*Special Tax Type rates for MS3 Filing Status*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -443,6 +443,18 @@ The Standard Deduction Amount is \$2,270 for S2 Filing Status.
 | 279,999     | 289,999          | 1,350          | 0%           | 0                  |
 | 289,999     | And over         | 0              | 0%           | 0                  |
 |             |                  |                |              |                    |
+
+*Special Tax Type rates for S2 and S3 Filing Status*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 49,999           | 6,800          | 0%           | 0                  |
+| 49,999      | 124,999          | 6,800          | 0%           | 0                  |
+| 124,999     | 129,999          | 5,450          | 0%           | 0                  |
+| 129,999     | 134,999          | 4,100          | 0%           | 0                  |
+| 134,999     | 139,999          | 2,700          | 0%           | 0                  |
+| 139,999     | 144,999          | 1,350          | 0%           | 0                  |
+| 144,999     | And over         | 0              | 0%           | 0                  |
 
 *Tax Type rates for MS3 and S3 Filing Status*
 
@@ -611,6 +623,8 @@ Dynamics.vba if they exist) before you proceed with the installation.
 1.  Select an update method, and then choose Next.
 
 ![A screenshot of a cell phone Description automatically generated](media/a6b6f3f85d529f49182c1e66d23df8b5.jpg)
+
+A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
