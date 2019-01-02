@@ -299,8 +299,8 @@ Status’
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 81,450           | 0              | 0            | 9,350              |
-| 81,450      | 156,450          | 75,000         | 0            | 0                  |
+| 0           | 162,950          | 0              | 0            | 21,550             |
+| 162,950     | 312,950          | 150,000        | 0            | 0                  |
 
 ### Withholding changes for Maryland
 
@@ -633,6 +633,8 @@ Dynamics.vba if they exist) before you proceed with the installation.
 1.  Select an update method, and then choose Next.
 
 ![A screenshot of a cell phone Description automatically generated](media/a6b6f3f85d529f49182c1e66d23df8b5.jpg)
+
+A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
