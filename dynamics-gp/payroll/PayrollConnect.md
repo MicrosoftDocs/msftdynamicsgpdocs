@@ -46,7 +46,7 @@ When you use Payroll Connect, Microsoft Dynamics GP expects a comma-delimited AS
 The following is a sample ADP file showing the correct format:
 
 "QC911","208015","PR","04302007","33222.11","","GROSS","","","02"
-"QC911","208003","PR","04302007","-2696.34","","ER SOCIAL SECURITY","","","02" 
+"QC911","208003","PR","04302007","-2696.34","","ER SOCIAL SECURITY","","","02"
 "QC911","208004","PR","04302007","-630.59","","ER MEDICARE","","","02"
 "QC911","208005","PR","04302007","-2696.34","","EE SOCIAL SECURITY","","","02"
 "QC911","208006","PR","04302007","-630.59","","EE MEDICARE","","","02"
