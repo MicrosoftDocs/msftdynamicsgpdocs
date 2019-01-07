@@ -1,75 +1,50 @@
-**U.S. 2019 January Payroll Tax Update**
+---
+title: "US payroll tax update"
+description: "US 2019 January payroll tax update."
+keywords: "payroll"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 01/07/2018
+---
+# U.S. 2019 January Payroll Tax Update
 
-For Microsoft Dynamics GP Round 1
-=================================
+This tax update applies to:
 
-Applies to:
+- Microsoft Dynamics GP 2018 on Microsoft SQL Server
+- Microsoft Dynamics GP 2016 on Microsoft SQL Server
+- Microsoft Dynamics GP 2015 on Microsoft SQL Server
 
->   Microsoft Dynamics GP 2018 on Microsoft SQL Server
+**Summary:** This document contains instructions for installing the January 2019 Round 1 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
->   Microsoft Dynamics GP 2016 on Microsoft SQL Server
+This is the first tax update for 2019. It includes federal and state tax table changes that take effect January 1, 2019. You’ll need to install this update before processing your first payroll runs for 2019.
 
->   Microsoft Dynamics GP 2015 on Microsoft SQL Server
+This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
-**Summary:** This document contains instructions for installing the January 2019
-Round 1 U.S. Payroll Tax Update for Microsoft Dynamics GP.
+## Changes in this update
 
-This is the first tax update for 2019. It includes federal and state tax table
-changes that take effect January 1, 2019. You’ll need to install this update
-before processing your first payroll runs for 2019.
+- Federal changes and FICA Limit
+- California
+- Georgia
+- Iowa
+- Illinois
+- Kentucky
+- Maine
+- Maryland
+- Minnesota
+- New York
+- New York – Yonkers
+- North Carolina
+- Ohio
+- Oregon
+- South Carolina
 
-This document assumes that you are familiar with the Microsoft Dynamics GP U.S.
-Payroll module.
+## 2019 Federal tax changes
 
-Contents
---------
-
-*Changes in this update*
-
-*Resources to assist you*
-
-*Preparing for installation*
-
-*Installing the tax update Copyright and legal notices*
-
-Changes in this update
-======================
-
--   Federal changes and FICA Limit
-
--   California
-
--   Georgia
-
--   Iowa
-
--   Illinois
-
--   Kentucky
-
--   Maine
-
--   Maryland
-
--   Minnesota
-
--   New York
-
--   New York – Yonkers
-
--   North Carolina
-
--   Ohio
-
--   Oregon
-
--   South Carolina
-
-2019 Federal tax changes
-------------------------
-
-The maximum taxable earnings for Social Security increase in 2019 to \$132,900
-from \$128,400
+The maximum taxable earnings for Social Security increase in 2019 to \$132,900 from \$128,400
 
 The Personal Exemption is \$4,200 from \$4,150 for MAR and SINGLE filing status.
 
@@ -111,8 +86,7 @@ The Personal Exemption is \$4,200 from \$4,150 for MAR and SINGLE filing status.
 | 207,900     | 514,100          | 46,628.50      | 35%          | 207,900            |
 | 514,100     | And Over         | 153,798.50     | 37%          | 514,100            |
 
-2019 state or territorial tax changes
--------------------------------------
+## 2019 state or territorial tax changes
 
 The following tax changes are included in this update:
 
@@ -198,13 +172,13 @@ Low Income Limit is \$14,573 from \$14,048
 The Dependent Allowance remains at \$3,000  
 The Personal Allowance remains unchanged, Standard Deductions changed
 
-Standard Deductions
+Standard Deductions:
 
-HOH \$4600.00  
-MFJ1I \$6000.00  
-MFJ2I \$3000.00  
-MFS \$3000.00  
-SINGLE \$4600.00
+- HOH \$4600.00  
+- MFJ1I \$6000.00  
+- MFJ2I \$3000.00  
+- MFS \$3000.00  
+- SINGLE \$4600.00
 
 *Withholding rates for taxpayers filing as HOH and MFJ1I*
 
@@ -241,8 +215,7 @@ SINGLE \$4600.00
 
 ### Withholding changes for Iowa
 
-The Standard Deduction Amount for Filing Status EXP1 is \$1690.00 and Filing
-Status EXP2 is \$4160.00
+The Standard Deduction Amount for Filing Status EXP1 is \$1690.00, and Filing Status EXP2 is \$4160.00
 
 *Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:*
 
@@ -269,8 +242,7 @@ The Flat Tax Rate remains at 5%
 
 ### Withholding changes for Maine
 
-The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing
-Status’
+The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status’
 
 *Withholding rates for taxpayers filing as SINGLE, Tax table type*
 
@@ -412,11 +384,9 @@ Status’
 
 ### Withholding changes for North Carolina
 
-The Standard Deduction amount changed to \$15,000 from \$14,000 for Filing
-Status of HOH
+The Standard Deduction amount changed to \$15,000 from \$14,000 for Filing Status of HOH
 
-The Standard Deduction amount changed to \$10,000 from \$8,7500 for Filing
-Status of MAR and SINGLE
+The Standard Deduction amount changed to \$10,000 from \$8,7500 for Filing Status of MAR and SINGLE
 
 The tax rate for all Filing Statues’ is 5.35% from 5.599%
 
@@ -517,155 +487,77 @@ The Standard Deduction Maximum is \$3,470 for ONE Filing Status.
 | 9,800       | 12,250           | (267.05)       | 6%           | 9,800              |
 | 12,250      | And over         | (389.55)       | 7%           | 12,250             |
 
-Resources to assist you
-=======================
+## Resources to assist you
 
-If you have questions about U.S. Payroll tax updates and your Microsoft Partner
-isn’t available, there are several resources, in addition to this document, to
-assist in answering your questions.
+If you have questions about U.S. Payroll tax updates and your Microsoft Partner isn’t available, there are several resources, in addition to this document, to assist in answering your questions.
 
-U.S. Payroll Tax Updates on CustomerSource
-------------------------------------------
+### U.S. Payroll Tax Updates on CustomerSource
 
-[(https://mbs.microsoft.com/customersource/support/downloads/taxupdates/)](https://mbs.microsoft.com/customersource/support/downloads/taxupdates/)
+Take a look at [CustomerSource](https://mbs.microsoft.com/customersource/support/downloads/taxupdates/) to find out the tax changes included in each update and to download the update. All instructions for downloading and installing the tax updates also are provided here.
 
-Look here to find out the tax changes included in each update and to download
-the update. All instructions for downloading and installing the tax updates also
-are provided here.
+### Knowledge Base
 
-Knowledge Base
---------------
+[https://mbs.microsoft.com/knowledgebase/search.aspx](https://mbs.microsoft.com/knowledgebase/search.aspx) provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
 
-[(https://mbs.microsoft.com/knowledgebase/search.aspx)](https://mbs.microsoft.com/knowledgebase/search.aspx)
+### eSupport
 
-Provides you with instant access to the same database our support engineers use.
-You can find answers to common questions, along with technical tips and
-performance recommendations.
+For support requests that can be handled with email, go to [https://mbs.microsoft.com/support/newstart.aspx](https://mbs.microsoft.com/support/newstart.aspx). On average, the response time is nearly twice as fast as telephone support.
 
-eSupport
---------
+### Discussion
 
-[(https://mbs.microsoft.com/support/newstart.aspx)](https://mbs.microsoft.com/support/newstart.aspx)
+On the [Dynamics GP community site](https://community.dynamics.com/gp), you can start a tax update discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to questions about tax updates.
 
-For support requests that can be handled with email. On average, the response
-time is nearly twice as fast as telephone support.
+### Microsoft Business Solutions Human Resources/Payroll support team
 
-Discussion
-----------
+We have a support team focused 100 percent on providing service and support to our Payroll customers. If you have questions, dial toll free 888-GPS-SUPP (888-477-7877).
 
-[(https://community.dynamics.com/gp)](https://community.dynamics.com/gp)
+## Preparing for installation
 
-Start a tax update discussion with other members of the Microsoft customer
-community. This database provides you with the opportunity to exchange
-information with other customers, which is perfect for providing tips and
-answers to questions about tax updates.
-
-Microsoft Business Solutions Human Resources/Payroll support team
------------------------------------------------------------------
-
-We have a support team focused 100 percent on providing service and support to
-our Payroll customers. If you have questions, dial toll free 888-GPS-SUPP
-(888-477-7877).
-
-Preparing for installation
-==========================
-
-Use the instructions in this section to prepare for the U.S. Payroll Tax Update.
-For detailed information about the changes in the current tax update round, see
-*Changes in this update*.
+Use the instructions in this section to prepare for the U.S. Payroll Tax Update. For detailed information about the changes in the current tax update round, see *Changes in this update*.
 
 **Are you using a supported version?**
 
-To identify the version, you’re using, start Microsoft Dynamics GP. Choose Help
-\>\> About Microsoft Dynamics GP. The information window displays the version
-number in the lower right corner.
+To identify the version, you’re using, start Microsoft Dynamics GP. Choose Help\>\> About Microsoft Dynamics GP. The information window displays the version number in the lower right corner.
 
-This U.S. Payroll Tax Update is supported for Microsoft Dynamics GP 2018,
-Microsoft Dynamics GP 2016, and Microsoft Dynamics GP 2015 on Microsoft SQL
-Server.
+This U.S. Payroll Tax Update is supported for Microsoft Dynamics GP 2018, Microsoft Dynamics GP 2016, and Microsoft Dynamics GP 2015 on Microsoft SQL Server.
 
-If you’re not using one of the supported versions, you must upgrade to a
-supported version before installing this tax update.
+If you’re not using one of the supported versions, you must upgrade to a supported version before installing this tax update.
 
 **Have you obtained the update files?**
 
-If your computer is connected to the Internet, the Payroll Update Utility (PUE)
-automatically can download the tax table update file (TX.cab) from the Internet.
+If your computer is connected to the Internet, the Payroll Update Utility (PUE) automatically can download the tax table update file (TX.cab) from the Internet.
 
-If your computer isn’t connected to the Internet, you can obtain the file from
-CustomerSource
+If your computer isn’t connected to the Internet, you can obtain the file from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/downloads) or your Microsoft Partner and copy it to your computer before running what’s known as a “manual” installation.
 
-[(https://mbs.microsoft.com/customersource/northamerica/GP/downloads)](https://mbs.microsoft.com/customersource/northamerica/GP/downloads)
-or your Microsoft
+Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a folder that you can readily access, such as the folder that contains Dynamics.exe. Copying the .CAB file to your computer does not complete the installation. Refer to the following section for instructions on how to install the tax update.
 
-Partner and copy it to your computer before running what’s known as a “manual”
-installation.
+## Installing the tax update
 
-Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a
-folder that you can readily access, such as the folder that contains
-Dynamics.exe. Copying the .CAB file to your computer does not complete the
-installation. Refer to the following section for instructions on how to install
-the tax update.
+The Round 1 January 2019 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
-Installing the tax update
-=========================
-
-The Round 1 January 2019 tax update installation can be run from any
-workstation. The update installs payroll tax table data on the server computer
-where your existing Microsoft Dynamics GP application data is located. You need
-to install the tax table update only once.
-
-If you have issues installing the update, review the article on [Tips to install
-the U.S. Payroll Tax
+If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
 
-Before you begin, ask all Microsoft Dynamics GP users to exit the application
-until the update is complete. Exit all other applications, turn off the screen
-saver, and back up important data (including Forms.dic, Reports.dic, and
-Dynamics.vba if they exist) before you proceed with the installation.
+Before you begin, ask all Microsoft Dynamics GP users to exit the application until the update is complete. Exit all other applications, turn off the screen saver, and back up important data (including Forms.dic, Reports.dic, and Dynamics.vba if they exist) before you proceed with the installation.
 
-1.  Log onto Microsoft Dynamics GP with the system administrator rights, and
-    open the Payroll Tax Update window.
+1. Log onto Microsoft Dynamics GP with the system administrator rights, and open the Payroll Tax Update window.
+    (Microsoft Dynamics GP menu \>\> Maintenance \>\> U.S. Payroll Updates \>\> Check for Tax Updates)
 
->   (Microsoft Dynamics GP menu \>\> Maintenance \>\> U.S. Payroll Updates \>\>
->   Check for Tax Updates)
+2. Select an update method, and then choose Next.
 
-1.  Select an update method, and then choose Next.
+    ![A screenshot](media/a6b6f3f85d529f49182c1e66d23df8b5.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/a6b6f3f85d529f49182c1e66d23df8b5.jpg)
+    - The Automatic option downloads the current tax table update from the Internet to the default location. An Internet connection is required.
+    - The Manual option processes the tax table update from a location you choose. You might choose Manual if you need to update a computer that isn’t connected to the Internet. To use this method, you should already have obtained the tax table update file, TX.cab, and copied it to a location your computer can readily access.
 
-A screenshot of a cell phone Description automatically generated
+3. If you selected Automatic, enter your 10-digit authorized telephone number. Choose Log in to start the download.
 
-A screenshot of a cell phone Description automatically generated
+    If you selected Manual, specify the location where the tax table update file is located.
 
-A screenshot of a cell phone Description automatically generated
+4.  Choose Process to start the update.
 
--   The Automatic option downloads the current tax table update from the
-    Internet to the default location. An Internet connection is required.
+5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 12/21/2018.
 
--   The Manual option processes the tax table update from a location you choose.
-    You might choose Manual if you need to update a computer that isn’t
-    connected to the Internet. To use this method, you should already have
-    obtained the tax table update file, TX.cab, and copied it to a location your
-    computer can readily access.
+## What’s next
 
-1.  If you selected Automatic, enter your 10-digit authorized telephone number.
-    Choose Log in to start the download.
-
->   If you selected Manual, specify the location where the tax table update file
->   is located.
-
-1.  Choose Process to start the update.
-
-2.  Verify that the latest Payroll tax table update has been installed.
-
->   Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\>
->   Payroll Tax. The Last Tax Update value should be 12/21/2018.
-
-What’s next
------------
-
-If you upgrade to another version of Microsoft Dynamics GP, you must install the
-most recent service pack (if any), as well as the most recent tax table updates
-for that release, to ensure you have the latest tax information. Newer releases
-of Microsoft Dynamics GP do not include current payroll tax information.
+If you upgrade to another version of Microsoft Dynamics GP, you must install the most recent service pack (if any), as well as the most recent tax table updates for that release, to ensure you have the latest tax information. Newer releases of Microsoft Dynamics GP do not include current payroll tax information.
