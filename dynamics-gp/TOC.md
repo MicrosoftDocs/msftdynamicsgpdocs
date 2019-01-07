@@ -78,10 +78,18 @@
 #### [Module upgrades from Dynamics GP 2013](upgrade/module-upgrades-from-microsoft-dynamics-gp-2013.md)
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
+<!--- financial -->
+## Financial
+### [Bank Reconciliation] (Financials/BankReconciliation.md)
+<!--
+<!--- distribution -->
+## Distribution
+<!--
 <!--- payroll -->
 ## Payroll 
 ### [U.S. Year-End] (payroll/us-year-end.md)
 ### [W-2 Source] (payroll/W-2Statement.md)
+### [Payroll Tax] (US19JanTaxR1.md)
 <!--
 ### [Canadian Year-End]
 ### [Payroll Taxes]-->
