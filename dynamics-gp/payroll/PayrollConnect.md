@@ -35,36 +35,27 @@ When you use Payroll Connect, Microsoft Dynamics GP expects a comma-delimited AS
 | Journal Source Code                                              | 2                |
 | Date (format is MMDDYYYY)                                        | 8                |
 | Amount (Negative numbers (credit amounts) are preceded by a ‘-’. | 13               |
+| Contains an explicit decimal point.)
 | Reference number 1                                               | 6                |
 | Description                                                      | 20               |
 | Reference number 2                                               | 6                |
 | Reference number 3                                               | 6                |
 | Record Code                                                      | 2                |
 
-Contains an explicit decimal point.)
 
 The following is a sample ADP file showing the correct format:
 
 "QC911","208015","PR","04302007","33222.11","","GROSS","","","02"
-
-"QC911","208003","PR","04302007","-2696.34","","ER SOCIAL SECURITY","","","02" "QC911","208004","PR","04302007","-630.59","","ER MEDICARE","","","02"
-
+"QC911","208003","PR","04302007","-2696.34","","ER SOCIAL SECURITY","","","02" 
+"QC911","208004","PR","04302007","-630.59","","ER MEDICARE","","","02"
 "QC911","208005","PR","04302007","-2696.34","","EE SOCIAL SECURITY","","","02"
-
 "QC911","208006","PR","04302007","-630.59","","EE MEDICARE","","","02"
-
 "QC911","208010","PR","04302007","-29051.95","","NET PAY","","","02"
-
 "QC911","208011","PR","04302007","-8590.10","","EE FEDERAL TAX","","","02"
-
 "QC911","208012","PR","04302007","-348.07","","FUTA TAX","","","02"
-
 "QC911","208013","PR","04302007","-59.63","","EE SUI TAX","","","02"
-
 "QC911","208106","PR","04302007","-398.49","","MEALS","","","02"
-
 "QC911","","PR","04302007","1612.60","","","","","02"
-
 "QC911","ABCDEFGHIJKL","PR","04302007","-999999999.99","","TEST LINE","","","02"
 
 Once the batch is imported and you select the imported Journal Entry in General Ledger Transaction Entry, the source document and reference depend on how you imported the transactions. If you create a batch for the import, the source document will be GJ and the reference will be Payroll Connect. If you add the ADP transactions to an existing batch, the source document will be whatever was originally assigned to the batch. In either case, the currency ID will be the functional currency from the Multicurrency Setup window.
