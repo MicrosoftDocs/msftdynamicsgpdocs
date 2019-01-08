@@ -659,7 +659,7 @@ Use the Edit Purchase Order Status window to modify purchase orders. The Approva
 
 5. Close the Edit Purchase Order Status window. You will have the option to print the Purchase Order Approval Audit Report—a report which details all of the purchase orders you approved.
 
-## Chapter 4: Approvals inquiries, reports, and maintenance
+### Chapter 4: Approvals inquiries, reports, and maintenance
 
 With purchase order approvals, you can use maintain approval information for each company. You also can view or print purchase order approval information.The following reports allow you to view or print approval status, name of the approver, date and time of approval for applicable purchase orders:
 
