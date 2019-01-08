@@ -296,7 +296,7 @@ This chapter lists changes to federal, provincial, and territorial tax rates for
 
 #### CPP
 
-Contribution rates for both employers and employees for 2019 remains at 5.1%. The following changes are in effect for CPP for 2019:
+Contribution rates for both employers and employees for 2019 is 5.1%. The following changes are in effect for CPP for 2019:
 
 - The maximum pensionable earnings amount will be updated to \$57,400, from \$55,900.
 
@@ -308,7 +308,7 @@ Contribution rates for both employers and employees for 2019 remains at 5.1%. Th
 
 - The EI Maximum Annual Insurable Earnings amount increases to \$53,100, from \$51,700.
 
-- The EI premium amount will be 1.62% from 1.66%. The EI maximum annual premium amount will be \$860.22 from \$858.22.
+- The EI premium amount will be 1.66%. The EI maximum annual premium amount will be \$860.22 from \$858.22.
 
 - The EI Employer Premium Rate amount will change to 2.282%. The employer EI premium is set using the Employer EI Factor field in the Payroll Employer Number Setup – Canada window (Tools \>\> Setup \>\> Payroll-Canada \>\> Employer). This factor must be set to 1.4 to meet the official EI Employer Premium.
 
