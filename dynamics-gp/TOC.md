@@ -78,10 +78,17 @@
 #### [Module upgrades from Dynamics GP 2013](upgrade/module-upgrades-from-microsoft-dynamics-gp-2013.md)
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
+
+<!--- distribution -->
+## Distribution 
+### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
+
 <!--- payroll -->
 ## Payroll 
 ### [Canadian Year-End](payroll/CAN18YETax.md)
+### [Payroll Connect](payroll/PayrollConnect.md)
 ### [U.S. Year-End](payroll/us-year-end.md)
 ### [W-2 Source](payroll/W-2-statement.md)
+### [Payroll Tax](payroll/US19JanTaxR1.md)
 <!--
 ### [Payroll Taxes]-->
