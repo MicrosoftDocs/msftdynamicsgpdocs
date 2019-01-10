@@ -79,7 +79,7 @@
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
 <!--- financial -->
-## Financial
+## financial
 ### [Bank Reconciliation] (Financials/BankReconciliation.md)
 <!--
 <!--- distribution -->
