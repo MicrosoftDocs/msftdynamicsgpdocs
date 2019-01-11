@@ -80,7 +80,8 @@
 #### [Company data conversion](upgrade/company-data-conversion.md)
 <!--- financial -->
 ## financial
-### [Bank Reconciliation] (Financials/BankReconciliation.md)
+### [Bank Reconciliation] (financials/BankReconciliation.md)
+### [Inter Company Processing] (financials/Intercompanyprocessing.md)
 <!--
 <!--- distribution -->
 ## Distribution
