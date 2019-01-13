@@ -81,7 +81,7 @@
 <!--- financial -->
 ## financial
 ### [Bank Reconciliation] (financials/BankReconciliation.md)
-### [Inter Company Processing] (financials/Intercompanyprocessing.md)
+### [Inter Company Processing] (financials/IntercompanyProcessing.md)
 <!--
 <!--- distribution -->
 ## Distribution
