@@ -1,133 +1,30 @@
-Microsoft Dynamics® GP Bank Reconciliation
+---
+title: "Bank reconciliation in Dynamics GP"
+description: "Bank reconcillation in Dynamics GP."
+keywords: "banking, bank reconciliation"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 01/14/2019
+---
+
+# Microsoft Dynamics GP Bank Reconciliation
 ==========================================
 
-**Contents**
-
->   **Introduction**
->   .................................................................................................................................................**2**
-
->   What’s in this
->   manual.................................................................................................................................2
-
->   Symbols and
->   conventions.............................................................................................................................3  
->   Resources available from the Help
->   menu.....................................................................................................3
-
->   Send us your documentation
->   comments......................................................................................................5
-
->   **Part 1: Setup**
->   ................................................................................................................................................**8**
-
->   **Chapter 1: Setup
->   preparation**.....................................................................................................................
->   **9**  
->   Bank Reconciliation
->   overview......................................................................................................................9  
->   Existing system
->   preparation.........................................................................................................................9
-
->   Before you set up Bank Reconciliation
->   .......................................................................................................10
-
->   **Chapter 2: Setup and default
->   entries**.........................................................................................................**11**
-
->   Default entries
->   overview.............................................................................................................................11
-
->   Setting up Bank Reconciliation default
->   entries...........................................................................................12
-
->   **Chapter 3:
->   Checkbooks**.............................................................................................................................
->   **15**  
->   Checkbook setup requirements
->   ................................................................................................................15  
->   Credit card
->   setup.......................................................................................................................................15  
->   Checkbooks and cash
->   accounts.................................................................................................................16  
->   Check and deposit
->   numbers......................................................................................................................16  
->   Last reconciled date and
->   balance..............................................................................................................16
-
->   Setting up a new
->   checkbook......................................................................................................................16
-
->   Using an existing
->   checkbook.....................................................................................................................18  
->   Inactivating a checkbook
->   .........................................................................................................................19
-
->   Deleting a checkbook
->   ..............................................................................................................................19
-
->   **Part 2: Transactions**
->   ................................................................................................................................**22**
-
->   **Chapter 4: Bank transaction requirements**
->   ..........................................................................................
->   **23**
-
->   Bank Reconciliation integration with other
->   modules..............................................................................23  
->   Voided transactions that affect Bank
->   Reconciliation...............................................................................23
-
->   Bank Reconciliation
->   posting......................................................................................................................24
-
->   **Chapter 5: Multicurrency transactions**
->   ..................................................................................................
->   **25**
-
->   Rules for multicurrency
->   transactions.......................................................................................................25  
->   Exchange rate and document
->   date...........................................................................................................26  
->   Multicurrency account
->   distributions........................................................................................................26
-
->   Rounding differences
->   ..............................................................................................................................27
-
->   **Chapter 6: Checks, withdrawals, and adjustments**
->   ..............................................................................
->   **29**
-
->   Entering a check, withdrawal, or adjustment
->   transaction......................................................................29  
->   Entering a miscellaneous
->   check..............................................................................................................31  
->   Bank transaction voids overview
->   ...........................................................................................................32
-
->   Voiding a bank
->   transaction.....................................................................................................................33
-
-**Introduction**
-
-You can use Bank Reconciliation to enter and maintain checkbooks used to pay
-vendors, employees, distribute petty cash, and to reconcile bank statements. If
-you’re using Payables Management and Payroll, checks printed and posted from
-those modules update checkbooks in Bank Reconciliation.
+You can use Bank Reconciliation to enter and maintain checkbooks used to pay vendors, employees, distribute petty cash, and to reconcile bank statements. If you’re using Payables Management and Payroll, checks printed and posted from those modules update checkbooks in Bank Reconciliation.
 
 You also can use Bank Reconciliation to complete the following tasks:
 
--   Write checks without having to set up a vendor record or complete a computer
-    check run
+- Write checks without having to set up a vendor record or complete a computer check run
 
--   Control reconciliation processes by creating default settings and choosing
-    between transaction types, including checks, receipts and adjustments
+- Control reconciliation processes by creating default settings and choosing between transaction types, including checks, receipts and adjustments
 
--   Begin reconciling one checkbook before finishing the reconcile process in a
-    different checkbook
+- Begin reconciling one checkbook before finishing the reconcile process in a different checkbook
 
--   View details needed to reconcile, including deposit number, transaction
-    number, type, payment amount, and description
+- View details needed to reconcile, including deposit number, transaction number, type, payment amount, and description
 
 >   This introduction is divided into the following sections:
 
@@ -156,650 +53,409 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 and which modules or features you are registered to use, choose Help \>\> About
 Microsoft Dynamics GP.
 
->   The manual is divided into the following parts:
+The manual is divided into the following parts:
 
--   *Part 1, Setup*, contains procedures that are required to set up Bank
-    Reconciliation.
+- *Part 1, Setup*, contains procedures that are required to set up Bank Reconciliation.
 
--   *Part 2, Transactions*, explains how to enter transactions to update your
-    Cash account and checkbook balances.
+- *Part 2, Transactions*, explains how to enter transactions to update your Cash account and checkbook balances.
 
--   *Part 3, Inquiries, reports, and routines*, explains how to view and analyze
-    transaction information, and includes procedures for removing history.
+- *Part 3, Inquiries, reports, and routines*, explains how to view and analyze transaction information, and includes procedures for removing history.
 
->   **Resources available from the Help menu**
+## Part 1: Setup
 
->   The Microsoft Dynamics GP Help menu gives you access to user assistance
->   resources on your computer, as well as on the Web.
-
->   **Contents**
-
->   Opens the Help file for the active Microsoft Dynamics GP component, and
->   displays the main “contents” topic. To browse a more detailed table of
->   contents, click the Contents tab above the Help navigation pane. Items in
->   the contents topic and tab are arranged by module. If the contents for the
->   active component includes an “Additional Help files” topic, click the links
->   to view separate Help files that describe additional components.
-
->   To find information in Help by using the index or full-text search, click
->   the appropriate tab above the navigation pane, and type the keyword to find.
-
->   To save the link to a topic in the Help, select a topic and then select the
->   Favorites tab. Click Add.
-
->   **Index**
-
->   Opens the Help file for the active Microsoft Dynamics GP component, with the
->   Index tab active. To find information about a window that’s not currently
->   displayed, type the name of the window, and click Display.
-
->   **About this window**
-
->   Displays overview information about the current window. To view related
->   topics and descriptions of the fields, buttons, and menus for the window,
->   choose the appropriate link in the topic. You also can press F1 to display
->   Help about the current window.
-
-**Lookup**
-
-Opens a lookup window, if a window that you are viewing has a lookup window. For
-example, if the Checkbook Maintenance window is open, you can choose this item
-to open the Checkbooks lookup window.
-
-**Show Required Fields**
-
-Highlights fields that are required to have entries. Required fields must
-contain information before you can save the record and close the window. To
-change the way required fields are highlighted, choose Microsoft Dynamics GP
-menu \>\> Tools \>\> Setup \>\> User Preferences \>\> Display, and specify a
-different color and type style.
-
-Part 1: Setup
-=============
-
-This part of the documentation provides the procedures required to set up Bank
-Reconciliation, and for moving your existing reconciliation information into
-your Microsoft Dynamics GP system. Setup procedures generally need to be
-completed only once, but you might want to refer to this information again when
-verifying your setup information, and when maintaining your checkbooks.
+This part of the documentation provides the procedures required to set up Bank Reconciliation, and for moving your existing reconciliation information into your Microsoft Dynamics GP system. Setup procedures generally need to be completed only once, but you might want to refer to this information again when verifying your setup information, and when maintaining your checkbooks.
 
 The following topics are discussed:
 
--   *Chapter 1, “Setup preparation,”* describes how to set up your bank
-    reconciliation system.
+- *Chapter 1, “Setup preparation,”* describes how to set up your bank reconciliation system.
 
--   *Chapter 2, “Setup and default entries,”* explains how to set up default
-    entries for your bank reconciliation system.
+- *Chapter 2, “Setup and default entries,”* explains how to set up default entries for your bank reconciliation system.
 
--   *Chapter 3, “Checkbooks,”* explains how to set up and use checkbooks and
-    Cash accounts.
+- *Chapter 3, “Checkbooks,”* explains how to set up and use checkbooks and Cash accounts.
 
-**Chapter 1: Setup preparation**
+### Chapter 1: Setup preparation
 
->   You must set up several options in System Manager, General Ledger, and
->   Multicurrency Management before setting up Bank Reconciliation.
+You must set up several options in System Manager, General Ledger, and Multicurrency Management before setting up Bank Reconciliation.
 
->   You must complete these setup procedures before you can enter or post
->   transactions, or reconcile your checkbooks. Once you register Bank
->   Reconciliation, your system immediately begins tracking checkbook-related
->   transactions entered in other modules, and updates Bank Reconciliation.
->   Don’t register Bank Reconciliation until you’ve set up the checkbooks and
->   Cash accounts.
+You must complete these setup procedures before you can enter or post transactions, or reconcile your checkbooks. Once you register Bank Reconciliation, your system immediately begins tracking checkbook-related transactions entered in other modules, and updates Bank Reconciliation.
 
->   This information is divided into the following sections:
+Don’t register Bank Reconciliation until you’ve set up the checkbooks and cash accounts.
 
--   *Bank Reconciliation overview*
+This information is divided into the following sections:
 
--   *Existing system preparation*
+- *Bank Reconciliation overview*
 
--   *Before you set up Bank Reconciliation*
+- *Existing system preparation*
+
+- *Before you set up Bank Reconciliation*
 
 #### Bank Reconciliation overview
 
->   When you set up Bank Reconciliation, you can enter or void transactions and
->   deposits. After posting, you can print audit trail reports and transaction
->   reports to analyze the accuracy of your records, and to simplify edits. You
->   can review the report information before reconciling your checkbook.
+When you set up Bank Reconciliation, you can enter or void transactions and deposits. After posting, you can print audit trail reports and transaction reports to analyze the accuracy of your records, and to simplify edits. You can review the report information before reconciling your checkbook.
 
->   When you reconcile your checkbook, you’ll enter reconciliation dates, mark
->   cleared transactions, enter adjusting entries, and enter any cleared
->   differences.
+When you reconcile your checkbook, you’ll enter reconciliation dates, mark cleared transactions, enter adjusting entries, and enter any cleared differences.
 
 #### Existing system preparation
 
->   Whether you’re setting up your system for the first time or upgrading an
->   existing system, you must reconcile the checkbooks in your existing system
->   before using Bank Reconciliation.
+Whether you’re setting up your system for the first time or upgrading an existing system, you must reconcile the checkbooks in your existing system before using Bank Reconciliation.
 
--   For new Microsoft Dynamics GP implementations, reconcile your checkbooks in
-    your existing system. This way, you’ll have fewer outstanding checks and
-    transactions to enter, and your balances will be more accurate when you
-    begin using Bank Reconciliation.
+- For new Microsoft Dynamics GP implementations, reconcile your checkbooks in your existing system. This way, you’ll have fewer outstanding checks and transactions to enter, and your balances will be more accurate when you begin using Bank Reconciliation.
 
--   If you’re adding Bank Reconciliation to your Microsoft Dynamics GP solution,
-    post all transactions in other modules to ensure that your General Ledger
-    Cash account balances are correct for your checkbooks. Then, reconcile your
-    checkbooks in your existing system before registering Bank Reconciliation.
+- If you’re adding Bank Reconciliation to your Microsoft Dynamics GP solution, post all transactions in other modules to ensure that your General Ledger Cash account balances are correct for your checkbooks. Then, reconcile your checkbooks in your existing system before registering Bank Reconciliation.
 
 **Before you set up Bank Reconciliation**
 
 Before you begin setting up Bank Reconciliation, be sure to set up the following
 information:
 
--   Companies
+- Companies
 
--   Credit cards
+- Credit cards
 
--   Fiscal periods
+- Fiscal periods
 
--   Account formats
+- Account formats
 
--   Banks
+- Banks
 
--   Posting
+- Posting
 
--   Source documents
+- Source documents
 
--   Audit trail codes
+- Audit trail codes
 
--   Accounts
+- Accounts
 
--   Unit accounts
+- Unit accounts
 
--   Variable allocation accounts
+- Variable allocation accounts
 
--   Fixed allocation accounts
+- Fixed allocation accounts
 
->   To print multicurrency information on your posting journals and reports,
->   mark Include Multicurrency Info in the Posting Setup window.
+> [TIP]
+> To print multicurrency information on your posting journals and reports, mark Include Multicurrency Info in the Posting Setup window.
 
 See the System Setup instructions (Help \>\> Contents \>\> select Setting Up the
 System) or the General Ledger documentation (Help \>\> Printable Manuals) for
 more information about completing these setup tasks.
 
-**Chapter 2: Setup and default entries**
+### Chapter 2: Setup and default entries
 
->   Setting up default entries for Bank Reconciliation saves you time when you
->   enter and analyze data, and enables you to customize your transactions.
+Setting up default entries for Bank Reconciliation saves you time when you enter and analyze data, and enables you to customize your transactions.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
--   *Default entries overview*
+- *Default entries overview*
 
--   *Setting up Bank Reconciliation default entries*
+- *Setting up Bank Reconciliation default entries*
 
 #### Default entries overview
 
->   Use the Bank Reconciliation Setup window to set up information that makes
->   data entry and tracking easier. You should post all transactions in other
->   modules, and reconcile existing checkbooks in your previous system, before
->   entering information in this window.
+Use the Bank Reconciliation Setup window to set up information that makes data entry and tracking easier. You should post all transactions in other modules, and reconcile existing checkbooks in your previous system, before entering information in this window.
 
->   **Next transaction number**  
->   This number appears as the default number for the transactions and receipts
->   you enter using the Bank Transaction Entry, Bank Transfer Entry, and
->   Reconcile Bank Adjustments windows. The transaction number automatically
->   increments to the next available number after you post a transaction or
->   receipt, but you can change the number.
+**Next transaction number**  
+This number appears as the default number for the transactions and receipts you enter using the Bank Transaction Entry, Bank Transfer Entry, and Reconcile Bank Adjustments windows. The transaction number automatically increments to the next available number after you post a transaction or receipt, but you can change the number.
 
->   **Transaction descriptions and default codes**
+**Transaction descriptions and default codes**
 
-| Use the transaction type description to distinguish among the transactions you enter in Bank Reconciliation. For example, if your company refers to interest income as interest gained, you could change the description to Interest Gained, which would then appear in the Reconcile Bank Adjustments window. However, even if you change the description, the underlying functionality stays the same. The code is a short description of the transaction type, which appears as a prefix to the numbers in Bank Reconciliation windows and on transaction reports. The code, next number, and leading zeros create a 12-character number for all transaction types, except for checks and deposits. Default check and deposit numbers are entered using the Checkbook Maintenance window. For example, suppose you’re entering a withdrawal using the Bank Transaction Entry window. If you set up WDL as the code for withdrawal transactions and 100 as the next number, the number would be WDL000000100 for your first withdrawal transaction. You can change any code or description to match your business. The following table explains where each item appears: |   |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
+Use the transaction type description to distinguish among the transactions you enter in Bank Reconciliation. For example, if your company refers to interest income as interest gained, you could change the description to Interest Gained, which would then appear in the Reconcile Bank Adjustments window. However, even if you change the description, the underlying functionality stays the same. The code is a short description of the transaction type, which appears as a prefix to the numbers in Bank Reconciliation windows and on transaction reports. The code, next number, and leading zeros create a 12-character number for all transaction types, except for checks and deposits. Default check and deposit numbers are entered using the Checkbook Maintenance window.
 
+For example, suppose you’re entering a withdrawal using the Bank Transaction Entry window. If you set up WDL as the code for withdrawal transactions and 100 as the next number, the number would be WDL000000100 for your first withdrawal transaction. You can change any code or description to match your business. The following table explains where each item appears:
 
-![A screenshot of a cell phone Description automatically generated](media/62d71e8db153bfeef7446d19ed358f20.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![A screenshot ](media/62d71e8db153bfeef7446d19ed358f20.jpg)
 
 **History**
 
-If you keep transaction/reconciliation history, all account distribution
-information and posted transactions are stored, so you can reprint posting
-journals and view the original transaction using the inquiry windows.
+If you keep transaction/reconciliation history, all account distribution information and posted transactions are stored, so you can reprint posting journals and view the original transaction using the inquiry windows.
 
 **Default checkbook ID**
 
-Use this field to select a checkbook ID to appear as the default checkbook ID
-when you’re entering transactions using the Bank Transaction Entry window. You
-should select the checkbook you use most often when entering transactions.
+Use this field to select a checkbook ID to appear as the default checkbook ID when you’re entering transactions using the Bank Transaction Entry window. You should select the checkbook you use most often when entering transactions.
 
-You can select any checkbook as the default checkbook, regardless of whether it
-is active or has a Cash account assigned to it. You also can inactivate or
-delete the checkbook that has been selected as the default checkbook in the Bank
-Reconciliation Setup window.
+You can select any checkbook as the default checkbook, regardless of whether it is active or has a Cash account assigned to it. You also can inactivate or delete the checkbook that has been selected as the default checkbook in the Bank Reconciliation Setup window.
 
->   *Although any checkbook can be selected as the default checkbook, you can’t
->   enter or post transactions in a checkbook that’s inactive, or that doesn’t
->   have a Cash account assigned to it.*
+> [!NOTE]
+> Although any checkbook can be selected as the default checkbook, you can’t enter or post transactions in a checkbook that’s inactive, or that doesn’t have a Cash account assigned to it.*
 
->   If you’re using Multicurrency Management, you can select any checkbook as
->   the default checkbook, regardless of the following situations. However, you
->   can’t enter or post transactions in a checkbook in these situations:
+If you’re using Multicurrency Management, you can select any checkbook as the default checkbook, regardless of the following situations. However, you can’t enter or post transactions in a checkbook in these situations:
 
--   The checkbook has an inactive currency assigned to it
+- The checkbook has an inactive currency assigned to it
 
--   The currency assigned to the checkbook doesn’t exist
+- The currency assigned to the checkbook doesn’t exist
 
--   The currency assigned to the checkbook hasn’t been granted access to the
-    company
+- The currency assigned to the checkbook hasn’t been granted access to the company
 
--   The Cash account assigned to the checkbook hasn’t been granted access to the
-    currency ID assigned to the checkbook
+- The Cash account assigned to the checkbook hasn’t been granted access to the currency ID assigned to the checkbook
 
 **User-defined fields**
 
-Use these fields to track additional information about your checkbooks. These
-fields are displayed in the Checkbook Maintenance window.
+Use these fields to track additional information about your checkbooks. These fields are displayed in the Checkbook Maintenance window.
 
 #### Setting up Bank Reconciliation default entries
 
-Use the Bank Reconciliation Setup window to set up your default entries in Bank
-Reconciliation.
+Use the Bank Reconciliation Setup window to set up your default entries in Bank Reconciliation.
 
->   **To set up Bank Reconciliation default entries:**
+**To set up Bank Reconciliation default entries:**
 
-1.  Open the Bank Reconciliation Setup window.
+1. Open the Bank Reconciliation Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Financial \>\> Bank Reconciliation)
 
->   (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Financial \>\> Bank
->   Reconciliation)
+    ![A screenshot ](media/61e0e22293445af8ffa8e629d6f9fbb8.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/61e0e22293445af8ffa8e629d6f9fbb8.jpg)
+2. Enter the next number for bank transactions, receipts, transfers, and reconcile adjustments.
 
-1.  Enter the next number for bank transactions, receipts, transfers, and
-    reconcile adjustments.
+3. Enter the transaction type descriptions and codes. See *Default entries overview* on page 11 for more information.
 
-2.  Enter the transaction type descriptions and codes. See *Default entries
-    overview* on page 11 for more information.
+4. Mark whether to keep history.
 
-3.  Mark whether to keep history.
+5. Enter or select a checkbook ID to appear as the default checkbook ID in the Bank Transaction Entry window.
 
-4.  Enter or select a checkbook ID to appear as the default checkbook ID in the
-    Bank Transaction Entry window.
+6. If you’ll be using user-defined fields, enter labels for the fields.
 
-5.  If you’ll be using user-defined fields, enter labels for the fields.
+7. To print the Bank Reconciliation Setup List, choose File \>\> Print.
 
-6.  To print the Bank Reconciliation Setup List, choose File \>\> Print.
+8. Choose OK to save your entries and close the window.
 
-7.  Choose OK to save your entries and close the window.
+### Chapter 3: Checkbooks
 
-**Chapter 3: Checkbooks**
+Checkbooks enable you to keep records of your bank deposits and cash paid out so that you can reconcile them with your bank statements. Checkbooks are available throughout the system, regardless of what other modules you purchased.
 
->   Checkbooks enable you to keep records of your bank deposits and cash paid
->   out so that you can reconcile them with your bank statements. Checkbooks are
->   available throughout the system, regardless of what other modules you
->   purchased.
+If you have Multicurrency Management registered, you can use Bank Reconciliation to set up checkbooks for each currency you use.
 
->   If you have Multicurrency Management registered, you can use Bank
->   Reconciliation to set up checkbooks for each currency you use.
+This information is divided into the following sections:
 
->   This information is divided into the following sections:
+- *Checkbook setup requirements* • *Credit card setup*
 
--   *Checkbook setup requirements* • *Credit card setup*
+- *Checkbooks and cash accounts*
 
--   *Checkbooks and cash accounts*
+- *Check and deposit numbers*
 
--   *Check and deposit numbers*
+- *Last reconciled date and balance*
 
--   *Last reconciled date and balance*
+- *Setting up a new checkbook*
 
--   *Setting up a new checkbook*
+- *Using an existing checkbook*
 
--   *Using an existing checkbook*
+- *Inactivating a checkbook*
 
--   *Inactivating a checkbook*
-
--   *Deleting a checkbook*
+- *Deleting a checkbook*
 
 #### Checkbook setup requirements
 
->   You can set up an unlimited number of checkbooks to manage your company’s
->   cash. We recommend that you set up separate checkbooks for each Cash account
->   so you can more accurately track payments and receipts. For example, you
->   might want to set up separate checkbooks for payroll checks, credit card
->   payments from customers, and payments to vendors.
+You can set up an unlimited number of checkbooks to manage your company’s cash. We recommend that you set up separate checkbooks for each Cash account so you can more accurately track payments and receipts. For example, you might want to set up separate checkbooks for payroll checks, credit card payments from customers, and payments to vendors.
 
->   You can use checkbooks throughout your system to track cash transactions.
->   Because of this integration, new customers must set up their checkbooks and
->   register Bank Reconciliation before posting transactions in other modules.
->   However, existing Microsoft Dynamics GP customers who are setting up Bank
->   Reconciliation have two options for setting up checkbooks:
+You can use checkbooks throughout your system to track cash transactions. Because of this integration, new customers must set up their checkbooks and register Bank Reconciliation before posting transactions in other modules. However, existing Microsoft Dynamics GP customers who are setting up Bank Reconciliation have two options for setting up checkbooks:
 
--   Post all your transactions entered in other modules and reconcile your
-    checkbooks before registering Bank Reconciliation.
+- Post all your transactions entered in other modules and reconcile your checkbooks before registering Bank Reconciliation.
 
--   Create new checkbook IDs and make existing checkbooks inactive. The new
-    checkbooks you create will replace the old checkbooks in any future
-    transactions. You won’t have to post transactions entered in other modules
-    before you begin to use Bank Reconciliation. See *Setting up a new
-    checkbook* on page 16 and *Inactivating a checkbook* on page 19 for more
-    information.
+- Create new checkbook IDs and make existing checkbooks inactive. The new checkbooks you create will replace the old checkbooks in any future transactions. You won’t have to post transactions entered in other modules before you begin to use Bank Reconciliation. See *Setting up a new checkbook* on page 16 and *Inactivating a checkbook* on page 19 for more information.
 
 #### Credit card setup
 
->   Before you can post credit card transactions to Bank Reconciliation, you
->   must set up the card using one of two ways, depending on how you’re using
->   it.
+Before you can post credit card transactions to Bank Reconciliation, you must set up the card using one of two ways, depending on how you’re using it.
 
--   If a customer is using the card, set it up as a bank card.
+- If a customer is using the card, set it up as a bank card.
 
--   If your company is using the card, set it up as a check card. You can change
-    your settings using the Credit Card Setup window.
+- If your company is using the card, set it up as a check card. You can change your settings using the Credit Card Setup window.
 
 #### Checkbooks and cash accounts
 
-Assign each checkbook to its own Cash account to prevent confusion and to make
-it easier to reconcile checkbooks to the Cash account in General Ledger. The
-Cash account must be a posting or allocation account that does not have any unit
-accounts assigned as one of the distributions.
+Assign each checkbook to its own Cash account to prevent confusion and to make it easier to reconcile checkbooks to the Cash account in General Ledger. The Cash account must be a posting or allocation account that does not have any unit accounts assigned as one of the distributions.
 
->   If you’re using Multicurrency Management, assign each currency its own
->   checkbooks and Cash accounts. You can assign each currency to unlimited
->   checkbooks.
+If you’re using Multicurrency Management, assign each currency its own checkbooks and Cash accounts. You can assign each currency to unlimited checkbooks.
 
-If you’re using Receivables Management, Payables Management, or Payroll, verify
-that your Customer Account Maintenance, Vendor Account Maintenance, and Employee
-Maintenance windows are set up to use the Cash accounts from the correct
-checkbook. Doing so makes it easier to reconcile your Cash account to the
-checkbook.
+If you’re using Receivables Management, Payables Management, or Payroll, verify that your Customer Account Maintenance, Vendor Account Maintenance, and Employee Maintenance windows are set up to use the Cash accounts from the correct checkbook. Doing so makes it easier to reconcile your Cash account to the checkbook.
 
 #### Check and deposit numbers
 
-Check and deposit numbers can be alphanumeric. If you enter alphabetic
-characters, the numerals—not the letters—will increment as you process checks
-and enter deposits.
+Check and deposit numbers can be alphanumeric. If you enter alphabetic characters, the numerals—not the letters—will increment as you process checks and enter deposits.
 
-By defining the next number in the Checkbook Maintenance window, you also are
-determining the number of unique numbers that will be available. For example, if
-you enter CK001 as the next check number, you can enter only up to 999 unique
-checks. Be sure to enter a number that’s large enough to accommodate your
-organization’s needs.
+By defining the next number in the Checkbook Maintenance window, you also are determining the number of unique numbers that will be available. For example, if you enter CK001 as the next check number, you can enter only up to 999 unique checks. Be sure to enter a number that’s large enough to accommodate your organization’s needs.
 
-If alphabetic characters are entered between numbers, only the numbers to the
-right of the last letter you entered will be incremented. For example, if the
-next check number is CK00M18888, the following check number will be CK00M18889.
+If alphabetic characters are entered between numbers, only the numbers to the right of the last letter you entered will be incremented. For example, if the next check number is CK00M18888, the following check number will be CK00M18889.
 
 #### Last reconciled date and balance
 
-When you set up new checkbooks, the last reconciled balance is the checkbook’s
-current balance. You can make changes to this amount until you reconcile the
-checkbook for the first time. If you change the last reconciled balance after
-saving the checkbook, you must enter an adjustment in General Ledger for the
-Cash account, because an adjusting entry won’t be automatically entered.
+When you set up new checkbooks, the last reconciled balance is the checkbook’s current balance. You can make changes to this amount until you reconcile the checkbook for the first time. If you change the last reconciled balance after saving the checkbook, you must enter an adjustment in General Ledger for the Cash account, because an adjusting entry won’t be automatically entered.
 
-After you reconcile a checkbook, the amount in the Last Reconciled Balance field
-is the same as the bank statement’s ending balance in the Reconcile Bank
-Statements window. You can’t change this amount using the Checkbook Maintenance
-window.
+After you reconcile a checkbook, the amount in the Last Reconciled Balance field is the same as the bank statement’s ending balance in the Reconcile Bank Statements window. You can’t change this amount using the Checkbook Maintenance window.
 
 #### Setting up a new checkbook
 
-Use the Checkbook Maintenance window to set up checkbooks. You can add
-checkbooks at any time, and you can select one as the default checkbook in other
-modules’ setup windows. Selecting a default checkbook streamlines your data
-entry process.
+Use the Checkbook Maintenance window to set up checkbooks. You can add checkbooks at any time, and you can select one as the default checkbook in other modules’ setup windows. Selecting a default checkbook streamlines your data entry process.
 
->   **To set up a new checkbook:**
+**To set up a new checkbook:**
 
-1.  Open the Checkbook Maintenance window.
+1. Open the Checkbook Maintenance window. (Cards \>\> Financial \>\> Checkbook)
 
->   (Cards \>\> Financial \>\> Checkbook)
+     ![A screenshot ](media/5240f5f2d9b9d1cfe4029e8cb1ca7b44.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/5240f5f2d9b9d1cfe4029e8cb1ca7b44.jpg)
+2. Enter or select a checkbook ID and enter a checkbook description.
 
-1.  Enter or select a checkbook ID and enter a checkbook description.
+3. If you’re using Multicurrency Management, enter the currency, payment rate type, and deposit rate type IDs. You must enter a currency ID if you are using Multicurrency Management. You can’t change the currency ID after you’ve saved the checkbook. The Currency ID lookup window displays only the active currencies a company has access to.
 
-2.  If you’re using Multicurrency Management, enter the currency, payment rate
-    type, and deposit rate type IDs. You must enter a currency ID if you are
-    using Multicurrency Management. You can’t change the currency ID after
-    you’ve saved the checkbook. The Currency ID lookup window displays only the
-    active currencies a company has access to.
+4. Assign a Cash account to the checkbook.
 
-3.  Assign a Cash account to the checkbook.
+5. Enter the default entry for the next check and next deposit numbers. Be sure to include leading zeros so you don’t run out of check and deposit numbers. For example, if you entered a check number of CK001, you would be able to enter only 999 unique checks.
 
-4.  Enter the default entry for the next check and next deposit numbers. Be sure
-    to include leading zeros so you don’t run out of check and deposit numbers.
-    For example, if you entered a check number of CK001, you would be able to
-    enter only 999 unique checks.
+    You can use alphanumeric characters in the check or deposit number fields, but the number must end in a numeral or it won’t increment properly.
 
->   You can use alphanumeric characters in the check or deposit number fields,
->   but the number must end in a numeral or it won’t increment properly.
+6. Enter the company and bank information. The bank account number should match the account number for the checking account at the bank.
 
-1.  Enter the company and bank information. The bank account number should match
-    the account number for the checking account at the bank.
+7. Enter any user-defined information. If you entered user-defined field labels in the Bank Reconciliation Setup window, those labels appear here. You can use them to track information specific to this checkbook.
 
-2.  Enter any user-defined information. If you entered user-defined field labels
-    in the Bank Reconciliation Setup window, those labels appear here. You can
-    use them to track information specific to this checkbook.
+8. Enter the balance and date from the last bank statement you reconciled. You can change the balance or the date until you reconcile your checkbook for the first time in Bank Reconciliation. However, if you change the last reconciled balance, which is reflected in the checkbook balance, you might need to enter an adjustment transaction in General Ledger to update the Cash account.
 
-3.  Enter the balance and date from the last bank statement you reconciled. You
-    can change the balance or the date until you reconcile your checkbook for
-    the first time in Bank Reconciliation. However, if you change the last
-    reconciled balance, which is reflected in the checkbook balance, you might
-    need to enter an adjustment transaction in General Ledger to update the Cash
-    account.
+    > [!NOTE]
+    > After reconciling the first time, the date and balance fields are updated each time you reconcile. You can’t make changes to these fields using this window.
 
->   *After reconciling the first time, the date and balance fields are updated
->   each time you reconcile. You can’t make changes to these fields using this
->   window.*
+9. If you’re using Payables Management, enter the payables options.
 
-1.  If you’re using Payables Management, enter the payables options.
+10. Choose Save to save the checkbook.
 
-2.  Choose Save to save the checkbook.
-
-3.  To print a Checkbook List, choose File \>\> Print.
+11. To print a Checkbook List, choose File \>\> Print.
 
 #### Using an existing checkbook
 
-Use this procedure if you have an existing checkbook that you want to continue
-using in Bank Reconciliation. Any checkbooks you previously set up appear in
-Bank Reconciliation when you register the module.
+Use this procedure if you have an existing checkbook that you want to continue using in Bank Reconciliation. Any checkbooks you previously set up appear in Bank Reconciliation when you register the module.
 
-As soon as you register Bank Reconciliation, any transactions assigned to a
-checkbook are posted to Bank Reconciliation. For this reason, we recommend that
-you post all transactions and reconcile your existing checkbooks before
-registering Bank Reconciliation.
+As soon as you register Bank Reconciliation, any transactions assigned to a checkbook are posted to Bank Reconciliation. For this reason, we recommend that you post all transactions and reconcile your existing checkbooks before registering Bank Reconciliation.
 
 **To use an existing checkbook:**
 
-1.  Post all transactions that use existing checkbooks.
+1. Post all transactions that use existing checkbooks.
 
-2.  Reconcile your existing checkbooks in your old reconciliation system.
+2. Reconcile your existing checkbooks in your old reconciliation system.
 
-3.  Verify the checkbook information using the Checkbook Maintenance window.
+3. Verify the checkbook information using the Checkbook Maintenance window. (Cards \>\> Financial \>\> Checkbook)
 
->   (Cards \>\> Financial \>\> Checkbook)
+    If you are using reporting ledgers, the amount shown in the Cash Account Balance field is based on the ledgers selected in the General Ledger Setup window in the Account Balance for Subsidary Windows list. For more information on using reporting ledgers, see the General Ledger documentation.
 
->   If you are using reporting ledgers, the amount shown in the Cash Account
->   Balance field is based on the ledgers selected in the General Ledger Setup
->   window in the Account Balance for Subsidary Windows list. For more
->   information on using reporting ledgers, see the General Ledger
->   documentation.
+4. Enter the last reconciled date and balance from step 2.
 
-1.  Enter the last reconciled date and balance from step 2.
+5. Enter new registration keys that include access to Bank Reconciliation.
 
-2.  Enter new registration keys that include access to Bank Reconciliation.
+6. Open the Posting Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Posting \>\> Posting)
 
-3.  Open the Posting Setup window.
+    If you have transactions that were entered and posted in other modules before you registered Bank Reconciliation, those transactions might have already updated General Ledger. If so, be sure you don’t post those transactions to General Ledger because duplicate entries will result.
 
->   (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Posting \>\> Posting)
+7. Select Financial for the Series and Bank Transaction Entry for the origin, and unmark Post to General Ledger.
 
->   If you have transactions that were entered and posted in other modules
->   before you registered Bank Reconciliation, those transactions might have
->   already updated General Ledger. If so, be sure you don’t post those
->   transactions to General Ledger because duplicate entries will result.
+8. Select Bank Deposit Entry for the origin and unmark Post to General Ledger. Choose OK to close the window.
 
-1.  Select Financial for the Series and Bank Transaction Entry for the origin,
-    and unmark Post to General Ledger.
+9. Enter and post outstanding checks and deposits using the Bank Transaction Entry and Bank Deposit Entry windows.
 
-2.  Select Bank Deposit Entry for the origin and unmark Post to General Ledger.
-    Choose OK to close the window.
+10. Compare your checkbook balance in the Checkbook Maintenance window to your Cash account balance in General Ledger to ensure the amounts match.
 
-3.  Enter and post outstanding checks and deposits using the Bank Transaction
-    Entry and Bank Deposit Entry windows.
+11. Reopen the Posting Setup window and mark Post to General Ledger for the Bank Transaction Entry and Bank Deposit Entry origins.
 
-4.  Compare your checkbook balance in the Checkbook Maintenance window to your
-    Cash account balance in General Ledger to ensure the amounts match.
-
-5.  Reopen the Posting Setup window and mark Post to General Ledger for the Bank
-    Transaction Entry and Bank Deposit Entry origins.
-
->   Verify that your customers, vendors, and employees are set up to use the
->   Cash accounts from the appropriate checkbooks.
+    Verify that your customers, vendors, and employees are set up to use the Cash accounts from the appropriate checkbooks.
 
 #### Inactivating a checkbook
 
->   Use the Checkbook Maintenance window to make a checkbook inactive, which
->   prevents new checks or receipts from being entered for that checkbook. You
->   can still complete the following tasks when the checkbook is inactive:
+Use the Checkbook Maintenance window to make a checkbook inactive, which prevents new checks or receipts from being entered for that checkbook. You can still complete the following tasks when the checkbook is inactive:
 
--   Post transactions previously entered in any module.
+- Post transactions previously entered in any module.
 
--   Void receipts, transactions, or deposits in any module.
+- Void receipts, transactions, or deposits in any module.
 
--   Enter deposits with receipts or deposits to clear receipts transactions
-    using the Bank Deposit Entry window.
+- Enter deposits with receipts or deposits to clear receipts transactions using the Bank Deposit Entry window.
 
--   Enter adjustment transactions using the Reconcile Bank Adjustments window.
+- Enter adjustment transactions using the Reconcile Bank Adjustments window.
 
--   Reconcile the checkbook.
+- Reconcile the checkbook.
 
->   **To inactive a checkbook:**
+**To inactive a checkbook:**
 
-1.  Open the Checkbook Maintenance window.
+1. Open the Checkbook Maintenance window. (Cards \>\> Financial \>\> Checkbook)
 
->   (Cards \>\> Financial \>\> Checkbook)
+2. Enter or select a checkbook ID.
 
-1.  Enter or select a checkbook ID.
+3. Mark Inactive.
 
-2.  Mark Inactive.
-
-3.  Choose Save to save the checkbook.
+4. Choose Save to save the checkbook.
 
 #### Deleting a checkbook
 
->   If a checkbook has become obsolete and you’re no longer planning to use it,
->   you can delete it under the following circumstances.
+If a checkbook has become obsolete and you’re no longer planning to use it, you can delete it under the following circumstances.
 
--   The checkbook balance is zero.
+- The checkbook balance is zero.
 
--   The checkbook is not associated with any unposted batches or transactions.
+- The checkbook is not associated with any unposted batches or transactions.
 
--   The checkbook isn’t assigned to a bank card or a check card in the Credit
-    Card Setup window.
+- The checkbook isn’t assigned to a bank card or a check card in the Credit Card Setup window.
 
--   All outstanding checks and deposits have been reconciled.
+- All outstanding checks and deposits have been reconciled.
 
--   No Bank Reconciliation history is available for the checkbook.
+- No Bank Reconciliation history is available for the checkbook.
 
->   **To delete a checkbook:**
+**To delete a checkbook:**
 
-1.  Back up your company’s data. See the System Setup instructions (Help \>\>
-    Contents \>\> select Setting Up the System) for more information about
-    backing up your system.
+1. Back up your company’s data. See the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System) for more information about backing up your system.
 
-2.  Use the Checkbook Reports window to print an Undeposited Receipts Report, so
-    you can verify that there are no undeposited receipts for the checkbook
-    you’re deleting. See *Chapter 12, “Reports,”* for more information about
-    creating report options and printing reports.
+2. Use the Checkbook Reports window to print an Undeposited Receipts Report, so you can verify that there are no undeposited receipts for the checkbook you’re deleting. See *Chapter 12, “Reports,”* for more information about creating report options and printing reports.
 
-3.  Enter or select the checkbook ID in the Reconcile Bank Statements window to
-    ensure that all transactions have been reconciled for the checkbook. See
-    *Reconciling a bank statement with a checkbook* on page 53 for more
-    information.
+3. Enter or select the checkbook ID in the Reconcile Bank Statements window to ensure that all transactions have been reconciled for the checkbook. See *Reconciling a bank statement with a checkbook* on page 53 for more information.
 
-4.  Using the Checkbook Maintenance window, verify that the checkbook’s current
-    balance and last reconciled balance are zero.
+4. Using the Checkbook Maintenance window, verify that the checkbook’s current balance and last reconciled balance are zero.
 
--   If the current balance is not zero, you must enter an increase or decrease
-    adjustment transaction and reconcile the transaction. See *Entering a check,
-    withdrawal, or adjustment transaction* on page 29 for more information about
-    entering adjustment transactions.
+    - If the current balance is not zero, you must enter an increase or decrease adjustment transaction and reconcile the transaction. See *Entering a check, withdrawal, or adjustment transaction* on page 29 for more information about entering adjustment transactions.
 
--   If the last reconciled balance is not zero, you must reconcile your
-    checkbook with a bank statement ending balance of zero using the Reconcile
-    Bank Statements window. See *Reconciling a bank statement with a checkbook*
-    on page 53 for more information.
+    - If the last reconciled balance is not zero, you must reconcile your checkbook with a bank statement ending balance of zero using the Reconcile Bank Statements window. See *Reconciling a bank statement with a checkbook* on page 53 for more information.
 
-1.  Using the Credit Card Setup window, remove the checkbook from all bank cards
-    and check cards. See the System Setup instructions (Help \>\> Contents \>\>
-    Setting Up the System) for more information about setting up credit cards.
+5. Using the Credit Card Setup window, remove the checkbook from all bank cards and check cards. See the System Setup instructions (Help \>\> Contents \>\> Setting Up the System) for more information about setting up credit cards.
 
-2.  Verify that the checkbook is not assigned to any batches or transactions in
-    any other modules, unless the transaction is in the module’s history.
+6. Verify that the checkbook is not assigned to any batches or transactions in any other modules, unless the transaction is in the module’s history.
 
-3.  Open the Remove Bank History window.
+7. Open the Remove Bank History window. (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Financial \>\> Remove Bank History)
 
->   (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Financial \>\>
->   Remove Bank History)
+    ![A screenshot](media/4a85e0616726ca6beca8226bc44cf3fb.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/4a85e0616726ca6beca8226bc44cf3fb.jpg)
+8. Mark the type of history to remove, and mark any other options. Select a checkbook ID range and choose Insert to insert the range restriction.
 
-1.  Mark the type of history to remove, and mark any other options. Select a
-    checkbook ID range and choose Insert to insert the range restriction.
+9. Choose Process to remove Bank Reconciliation history for all the transactions in this checkbook.
 
-2.  Choose Process to remove Bank Reconciliation history for all the
-    transactions in this checkbook.
+    > [!WARNING]
+    > Once you remove history, you can’t print any historical information for this checkbook.
 
-*Once you remove history, you can’t print any historical information for this
-checkbook.*
+10. Open the Checkbook Maintenance window. (Cards \>\> Financial \>\> Checkbook) 11. Enter or select the checkbook ID to delete.
 
-1.  Open the Checkbook Maintenance window.
+11. Choose Delete.
 
->   (Cards \>\> Financial \>\> Checkbook) 11. Enter or select the checkbook ID
->   to delete.
+## Part 2: Transactions
 
-1.  Choose Delete.
+Use the information in this part of the documentation to ensure that your checkbooks accurately reflect the transaction detail that appears on your monthly bank statements. You can enter transactions to update your Cash account and checkbook balances, to enter receipts and deposits, and to reconcile your checkbook.
 
-**Part 2: Transactions**
+The following topics are discussed:
 
->   Use the information in this part of the documentation to ensure that your
->   checkbooks accurately reflect the transaction detail that appears on your
->   monthly bank statements. You can enter transactions to update your Cash
->   account and checkbook balances, to enter receipts and deposits, and to
->   reconcile your checkbook.
+- *Chapter 4, “Bank transaction requirements,”* describes transaction requirements and posting in Bank Reconciliation.
 
->   The following topics are discussed:
+- *Chapter 5, “Multicurrency transactions,”* explains multicurrency options you can use in Bank Reconciliation.
 
--   *Chapter 4, “Bank transaction requirements,”* describes transaction
-    requirements and posting in Bank Reconciliation.
+- *Chapter 6, “Checks, withdrawals, and adjustments,”* contains information about recording and posting check, withdrawal, and adjustment transactions.
 
--   *Chapter 5, “Multicurrency transactions,”* explains multicurrency options
-    you can use in Bank Reconciliation.
+- *Chapter 7, “Receipts,”* explains how to enter receipt information in Bank Reconciliation.
 
--   *Chapter 6, “Checks, withdrawals, and adjustments,”* contains information
-    about recording and posting check, withdrawal, and adjustment transactions.
+- *Chapter 8, “Deposits,”* describes how to enter deposits.
 
--   *Chapter 7, “Receipts,”* explains how to enter receipt information in Bank
-    Reconciliation.
+- *Chapter 9, “Bank account transfers,”* explains how to transfer funds from one checkbook to another.
 
--   *Chapter 8, “Deposits,”* describes how to enter deposits.
+- *Chapter 10, “Bank statement reconciliation,”* includes information about reconciling checkbooks.
 
--   *Chapter 9, “Bank account transfers,”* explains how to transfer funds from
-    one checkbook to another.
+### Chapter 4: Bank transaction requirements
 
--   *Chapter 10, “Bank statement reconciliation,”* includes information about
-    reconciling checkbooks.
+Because Bank Reconciliation integrates with several other modules and has multicurrency functionality, there are some transaction requirements and recommendations you should understand before using this module.
 
-**Chapter 4: Bank transaction requirements**
+This information is divided into the following sections:
 
->   Because Bank Reconciliation integrates with several other modules and has
->   multicurrency functionality, there are some transaction requirements and
->   recommendations you should understand before using this module.
+- *Bank Reconciliation integration with other modules*
 
->   This information is divided into the following sections:
+- *Voided transactions that affect Bank Reconciliation*
 
--   *Bank Reconciliation integration with other modules*
-
--   *Voided transactions that affect Bank Reconciliation*
-
--   *Bank Reconciliation posting*
+- *Bank Reconciliation posting*
 
 #### Bank Reconciliation integration with other modules
 
->   Whenever you enter a transaction in another module that uses a checkbook,
->   Bank Reconciliation is updated. Therefore, you should use the Bank
->   Reconciliation transactions only to record those miscellaneous transactions,
+Whenever you enter a transaction in another module that uses a checkbook, Bank Reconciliation is updated. Therefore, you should use the Bank Reconciliation transactions only to record those miscellaneous transactions,
 >   receipts, and deposits not recorded elsewhere.
 
 >   If you enter a transaction in another module and then enter it again in Bank
