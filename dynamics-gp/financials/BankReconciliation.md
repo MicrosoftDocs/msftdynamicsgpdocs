@@ -431,10 +431,6 @@ Whenever you enter a transaction in another module that uses a checkbook, Bank R
 > [!NOTE]
 > If you enter a transaction in another module and then enter it again in Bank Reconciliation, the checkbook and Cash account will be updated twice and your accounts won’t reconcile properly.
 
-The following table shows the transactions that update General Ledger Cash accounts, and the ones that update the checkbook balance in Bank Reconciliation.
-
-| [./media/image5.jpg](./media/image5.jpg) |   |   |
-|------------------------------------------|---|---|
 
 #### Voided transactions that affect Bank Reconciliation
 
