@@ -261,8 +261,8 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 81,450           | 0              | 0            | 9,350              |
-| 81,450      | 156,450          | 75,000         | 0            | 0                  |
+| 0           | 162,950          | 0              | 0            | 21,550             |
+| 162,950     | 312,950          | 150,000        | 0            | 0                  |
 
 ### Withholding changes for Maryland
 
