@@ -533,14 +533,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 1. Log onto Microsoft Dynamics GP with the system administrator rights, and open the Payroll Tax Update window.
     (Microsoft Dynamics GP menu \>\> Maintenance \>\> U.S. Payroll Updates \>\> Check for Tax Updates)
 
-<<<<<<< HEAD
-A screenshot of a cell phone Description automatically generated
-
--   The Automatic option downloads the current tax table update from the
-    Internet to the default location. An Internet connection is required.
-=======
 2. Select an update method, and then choose Next.
->>>>>>> f67ec7a2e3c1bb21663930cdcd46dc2870966977
 
     ![A screenshot](media/a6b6f3f85d529f49182c1e66d23df8b5.jpg)
 
