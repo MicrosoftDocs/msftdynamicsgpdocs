@@ -3,7 +3,6 @@ title: "Bank reconciliation in Dynamics GP"
 description: "Bank reconcillation in Dynamics GP."
 keywords: "banking, bank reconciliation"
 author: theley502
-manager: edupont
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
@@ -1322,640 +1321,264 @@ You can print preview reports before reconciling to verify the transactions you 
 
 Choose File \>\> Print in the Select Bank Transactions window to print any or all the reports. The Print Reconciliation Reports window opens, where you can mark the reports to be printed.
 
-Part 3: Inquiries, reports, and routines
-========================================
+## Part 3: Inquiries, reports, and routines
 
->   Your system stores a vast amount of detailed information about your
->   cash-related transactions. You can use inquiries and reports to view and
->   analyze information about a specific transaction, or to obtain general
->   information about a group of transactions.
+Your system stores a vast amount of detailed information about your cash-related transactions. You can use inquiries and reports to view and analyze information about a specific transaction, or to obtain general information about a group of transactions.
 
->   This part of the documentation contains procedures for removing history from
->   Bank Reconciliation, and explains the routine checklists.
+This part of the documentation contains procedures for removing history from Bank Reconciliation, and explains the routine checklists.
 
->   The following topics are discussed:
+The following topics are discussed:
 
--   *Chapter 11, “Inquiries,”* explains how to use inquiries to view checkbook
-    information.
+- *Chapter 11, “Inquiries,”* explains how to use inquiries to view checkbook information.
 
--   *Chapter 12, “Reports,”* describes how to set up report options and print
-    reports.
+- *Chapter 12, “Reports,”* describes how to set up report options and print reports.
 
--   *Chapter 13, “History,”* includes information about storing and removing
-    transaction and reconciliation history.
+- *Chapter 13, “History,”* includes information about storing and removing transaction and reconciliation history.
 
-Chapter 11: Inquiries
----------------------
+### Chapter 11: Inquiries
 
->   Use inquiries to view checkbook register information. Because the inquiry
->   windows provide efficient access to information, you always can view your
->   current checkbook activity.
+Use inquiries to view checkbook register information. Because the inquiry windows provide efficient access to information, you always can view your current checkbook activity.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
--   *Multicurrency inquiries*
+- *Multicurrency inquiries*
 
--   *Reporting currency*
+- *Reporting currency*
 
--   *Inquiries overview*
+- *Inquiries overview*
 
--   *Viewing checkbook information*
+- *Viewing checkbook information*
 
--   *Viewing historical checkbook balances*
+- *Viewing historical checkbook balances*
 
-### Multicurrency inquiries
+#### Multicurrency inquiries
 
->   You can view multicurrency amounts in the originating, functional, or
->   reporting currency. Choose View \>\> Currency \>\> Functional, Originating,
->   or Reporting while viewing an inquiry window. The option is saved on a per
->   user, per window basis.
+You can view multicurrency amounts in the originating, functional, or reporting currency. Choose View \>\> Currency \>\> Functional, Originating, or Reporting while viewing an inquiry window. The option is saved on a per user, per window basis.
 
->   You also can use the Currency list button in windows that support changing
->   the currency view. The View menu and currency list button are available in
->   the Checkbook Register Inquiry and Bank Transaction Entry Zoom windows.
+You also can use the Currency list button in windows that support changing the currency view. The View menu and currency list button are available in the Checkbook Register Inquiry and Bank Transaction Entry Zoom windows.
 
->   The first time you open these windows after registering Multicurrency
+The first time you open these windows after registering Multicurrency Management, all the transactions are displayed in the originating currency. If you change the currency view, the option you used last is the default view the next time you open that window.
 
->   Management, all the transactions are displayed in the originating currency.
->   If you change the currency view, the option you used last is the default
->   view the next time you open that window.
+#### Reporting currency
 
-### Reporting currency
+A reporting currency converts functional currency amounts to another currency on inquiries and reports. For example, suppose the U.S. dollar is the functional currency for your company. You can set up the euro as your reporting currency to view an inquiry window with currency amounts displayed in the euro currency.
 
->   A reporting currency converts functional currency amounts to another
->   currency on inquiries and reports. For example, suppose the U.S. dollar is
->   the functional currency for your company. You can set up the euro as your
->   reporting currency to view an inquiry window with currency amounts displayed
->   in the euro currency.
+During the reporting currency setup process in Multicurrency Management, you’ll set up a reporting currency and enter a default exchange rate and rate calculation method. Depending on how your system is set up, you might be able to override the default reporting currency exchange rate or rate calculation method on inquiries and reports. To change the default reporting currency exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate to open the Modify Reporting Rate window.
 
->   During the reporting currency setup process in Multicurrency Management,
->   you’ll set up a reporting currency and enter a default exchange rate and
->   rate calculation method. Depending on how your system is set up, you might
->   be able to override the default reporting currency exchange rate or rate
->   calculation method on inquiries and reports. To change the default reporting
->   currency exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate
->   to open the Modify Reporting Rate window.
+See the Multicurrency Management documentation for more information about the reporting currency.
 
->   See the Multicurrency Management documentation for more information about
->   the reporting currency.
+#### Inquiries overview
 
-### Inquiries overview
+You can use the Checkbook Register Inquiry window to view reconciled and unreconciled transactions that have been posted for a checkbook. You also can sort transactions by number or by date, and further limit the transactions that appear by selecting a range of document numbers or document dates.
 
->   You can use the Checkbook Register Inquiry window to view reconciled and
->   unreconciled transactions that have been posted for a checkbook. You also
->   can sort transactions by number or by date, and further limit the
->   transactions that appear by selecting a range of document numbers or
->   document dates.
+You also can view transactions as they were originally entered, using the different links in the Checkbook Register Inquiry window. You can view more detailed information about the transactions displayed in the scrolling window by selecting a transaction and choosing the Number link. You can’t view the original transaction entry window if you’re not keeping history for that module, or if history has been removed.
 
->   You also can view transactions as they were originally entered, using the
->   different links in the Checkbook Register Inquiry window. You can view more
->   detailed information about the transactions displayed in the scrolling
->   window by selecting a transaction and choosing the Number link. You can’t
->   view the original transaction entry window if you’re not keeping history for
->   that module, or if history has been removed.
+#### Viewing checkbook information
 
-### Viewing checkbook information
+Use the Checkbook Register Inquiry window to find out more information about transactions posted to your checkbooks.
 
->   Use the Checkbook Register Inquiry window to find out more information about
->   transactions posted to your checkbooks.
+**To view checkbook information:**
 
->   **To view checkbook information:**
+1. Open the Checkbook Register Inquiry window. (Inquiry \>\> Financial \>\> Checkbook Register)
 
-1.  Open the Checkbook Register Inquiry window.
+    ![A screenshot](media/15f918b63ffbb752eae9a78a16049019.jpg)
 
->   (Inquiry \>\> Financial \>\> Checkbook Register)
+2. Enter or select a checkbook ID.
 
-![A screenshot of a cell phone Description automatically generated](media/15f918b63ffbb752eae9a78a16049019.jpg)
+3. Select a transaction and choose the Number link to view detailed information about that transaction.
 
-A screenshot of a cell phone Description automatically generated
+    The window that opens depends on what type of transaction you selected from the scrolling window, as is described in the following table:
 
-1.  Enter or select a checkbook ID.
+    | **Transaction type**                   | **Window**                           |
+    |----------------------------------------|--------------------------------------|
+    | Deposit                                | Bank Deposit Entry Zoom              |
+    | Bank Transaction                       | Bank Transaction Entry Zoom          |
+    | Transfer                               | Bank Transfer Entry Zoom             |
+    | Payables payments                      | Payables Payments Zoom               |
+    | Receivables return with check amount   | Receivables Transaction Inquiry Zoom |
+    | NSF checks received                    | Cash Receipts Inquiry Zoom           |
+    | Check payment on return in Invoicing   | Invoice Inquiry                      |
+    | Check payment on return in Sales Order | Sales Transaction Inquiry            |
+    | Check payment in Payroll               | Payroll Check Inquiry                |
 
-2.  Select a transaction and choose the Number link to view detailed information
-    about that transaction.
+    Processing
 
->   The window that opens depends on what type of transaction you selected from
->   the scrolling window, as is described in the following table:
+4. To print the Checkbook Register Report for the selected checkbook, choose File \>\> Print.
 
-| **Transaction type**                   | **Window**                           |
-|----------------------------------------|--------------------------------------|
-| Deposit                                | Bank Deposit Entry Zoom              |
-| Bank Transaction                       | Bank Transaction Entry Zoom          |
-| Transfer                               | Bank Transfer Entry Zoom             |
-| Payables payments                      | Payables Payments Zoom               |
-| Receivables return with check amount   | Receivables Transaction Inquiry Zoom |
-| NSF checks received                    | Cash Receipts Inquiry Zoom           |
-| Check payment on return in Invoicing   | Invoice Inquiry                      |
-| Check payment on return in Sales Order | Sales Transaction Inquiry            |
-| Check payment in Payroll               | Payroll Check Inquiry                |
+5. Choose OK to close the window.
 
->   Processing
+#### Viewing historical checkbook balances
 
-1.  To print the Checkbook Register Report for the selected checkbook, choose
-    File \>\> Print.
+Use the Checkbook Balance Inquiry window to view a checkbook balance for a specific date.
 
-2.  Choose OK to close the window.
+If you are using reporting ledgers, the amount shown in the Current Cash Account Balance field is based on the ledgers selected in the General Ledger Setup window in the Account Balance for Subsidiary Windows list. For more information on using reporting ledgers, see the General Ledger documentation.
 
-### Viewing historical checkbook balances
+**To view historical checkbook balances:**
 
->   Use the Checkbook Balance Inquiry window to view a checkbook balance for a
->   specific date.
+1. Open the Checkbook Balance Inquiry window. (Inquiry \>\> Financial \>\> Checkbook Balance)
 
->   If you are using reporting ledgers, the amount shown in the Current Cash
->   Account Balance field is based on the ledgers selected in the General Ledger
->   Setup window in the Account Balance for Subsidary Windows list. For more
->   information on using reporting ledgers, see the General Ledger
->   documentation.
+    ![A screenshot ](media/04e3a48f50b9f1885c9209654b50fff2.jpg)
 
->   **To view historical checkbook balances:**
+2. Enter or select a checkbook ID to view balances for. The current checkbook balance will be displayed in the Current Checkbook Balance field. Transactions for the checkbook will appear in the scrolling window.
 
-1.  Open the Checkbook Balance Inquiry window.
+3. You can enter or select a range of dates to view transactions for and choose Redisplay. Transactions for the selected dates will appear in the scrolling window. The running balance for the checkbook will be displayed in the Balance column. The balance for the checkbook as of the ending date in the range will be displayed in the Balance As of field.
 
->   (Inquiry \>\> Financial \>\> Checkbook Balance)
+4. You can select a transaction and click the Number link to view detailed information about that transaction.
 
-![A screenshot of a social media post Description automatically generated](media/04e3a48f50b9f1885c9209654b50fff2.jpg)
+    The window that opens depends on the type of transaction you selected from the scrolling window, as is described in the following table.
 
-A screenshot of a social media post Description automatically generated
+    | **Transaction type**                              | **Window**                           |
+    |---------------------------------------------------|--------------------------------------|
+    | Deposit                                           | Bank Deposit Entry Zoom              |
+    | Bank Transaction                                  | Bank Transaction Entry Zoom          |
+    | Transfer                                          | Bank Transfer Entry Zoom             |
+    | Payables payments                                 | Payables Payments Zoom               |
+    | Receivables return with check amount              | Receivables Transaction Inquiry Zoom |
+    | NSF checks received                               | Cash Receipts Inquiry Zoom           |
+    | Check payment on return in Invoicing              | Invoice Inquiry                      |
+    | Check payment on return in Sales Order Processing | Sales Transaction Inquiry            |
+    | Check payment in Payroll                          | Payroll Check Inquiry                |
 
-1.  Enter or select a checkbook ID to view balances for. The current checkbook
-    balance will be displayed in the Current Checkbook Balance field.
-    Transactions for the checkbook will appear in the scrolling window.
+5. To print the Checkbook Balance Inquiry Report for the selected checkbook, choose File \>\> Print.
 
-2.  You can enter or select a range of dates to view transactions for and choose
-    Redisplay. Transactions for the selected dates will appear in the scrolling
-    window. The running balance for the checkbook will be displayed in the
-    Balance column. The balance for the checkbook as of the ending date in the
-    range will be displayed in the Balance As of field.
+6. Choose OK to close the window.
 
-3.  You can select a transaction and click the Number link to view detailed
-    information about that transaction.
+### Chapter 12: Reports
 
->   The window that opens depends on the type of transaction you selected from
->   the scrolling window, as is described in the following table.
+You can use Bank Reconciliation reports to analyze checkbook activity and identify errors in transaction entry. Use this information to guide you through printing reports and working with report options. For more information about creating and printing reports, and the various reporting tools that you can use with Microsoft Dynamics GP, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
-| **Transaction type**                              | **Window**                           |
-|---------------------------------------------------|--------------------------------------|
-| Deposit                                           | Bank Deposit Entry Zoom              |
-| Bank Transaction                                  | Bank Transaction Entry Zoom          |
-| Transfer                                          | Bank Transfer Entry Zoom             |
-| Payables payments                                 | Payables Payments Zoom               |
-| Receivables return with check amount              | Receivables Transaction Inquiry Zoom |
-| NSF checks received                               | Cash Receipts Inquiry Zoom           |
-| **Transaction type**                              | **Window**                           |
-| Check payment on return in Invoicing              | Invoice Inquiry                      |
-| Check payment on return in Sales Order Processing | Sales Transaction Inquiry            |
-| Check payment in Payroll                          | Payroll Check Inquiry                |
+Reports information is divided into the following sections:
 
-1.  To print the Checkbook Balance Inquiry Report for the selected checkbook,
-    choose File \>\> Print.
+- *Bank Reconciliation report summary*
 
-2.  Choose OK to close the window.
+- *Specifying a Bank Reconciliation report option*
 
-Chapter 12: Reports
--------------------
+#### Bank Reconciliation report summary
 
->   You can use Bank Reconciliation reports to analyze checkbook activity and
->   identify errors in transaction entry. Use this information to guide you
->   through printing reports and working with report options. For more
->   information about creating and printing reports, and the various reporting
->   tools that you can use with Microsoft Dynamics GP, refer to your System
->   User's Guide (Help \>\> Contents \>\> select Using The System).
+You can print several types of reports using Bank Reconciliation. Some reports automatically are printed when you complete certain procedures; for example, posting journals can automatically be printed when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Specifying a Bank Reconciliation report option* on page 66.
 
->   Reports information is divided into the following sections:
+The following table lists the report types available in Bank Reconciliation and the reports that fall into those categories. Reports printed using General Ledger are printed using many of the same windows. See the General Ledger documentation for information about reports printed in that module.
 
--   *Bank Reconciliation report summary*
+![A screenshot](media/6026ae8e7144429d2a6aa859c540f304.jpg)
 
--   *Specifying a Bank Reconciliation report option*
+#### Specifying a Bank Reconciliation report option
 
-### Bank Reconciliation report summary
+Report options include specifications for sorting options and range restrictions for a particular report. In order to print Bank Reconciliation reports, you must first create a report option. Each report can have several different options so you can easily print the information you need. For example, you can create report options for the Checkbook Register to include any combination of reconciled, unreconciled, and voided transactions.
 
->   You can print several types of reports using Bank Reconciliation. Some
->   reports automatically are printed when you complete certain procedures; for
->   example, posting journals can automatically be printed when you post
->   transactions, depending on how your posting options are set up. You can
->   choose to print some reports during procedures; for example, you can print
->   an edit list when entering transactions by choosing the Print button in the
->   batch entry window. In order to print some reports, such as analysis or
->   history reports, you must set up report options to specify sorting options
->   and ranges of information to include on the report. For more information,
->   refer to *Specifying a Bank Reconciliation report option* on page 66.
+> [!NOTE]
+> A single report option can’t be included in multiple reports. If you want identical options for several reports, you must create them separately.
 
->   The following table lists the report types available in Bank Reconciliation
->   and the reports that fall into those categories. Reports printed using
->   General Ledger are printed using many of the same windows. See the General
->   Ledger documentation for information about reports printed in that module.
+Use the Financial report options windows to create sorting, restriction, and printing options for the reports that are included in Bank Reconciliation.
 
-![A screenshot of text Description automatically generated](media/6026ae8e7144429d2a6aa859c540f304.jpg)
+**To specify a Bank Reconciliation report option:**
 
-A screenshot of text Description automatically generated
+1. Open a Financial reports window. There are separate windows for each report type.
 
-### Specifying a Bank Reconciliation report option
+    - Reports \>\> Financial \>\> Setup
 
->   Report options include specifications for sorting options and range
->   restrictions for a particular report. In order to print Bank Reconciliation
->   reports, you must first create a report option. Each report can have several
->   different options so you can easily print the information you need. For
->   example, you can create report options for the Checkbook Register to include
->   any combination of reconciled, unreconciled, and voided transactions.
+    - Reports \>\> Financial \>\> Checkbook
 
->   *A single report option can’t be included in multiple reports. If you want
->   identical options for several reports, you must create them separately.*
+    - Reports \>\> Financial \>\> Bank Posting Journals
 
->   Use the Financial report options windows to create sorting, restriction, and
->   printing options for the reports that are included in Bank Reconciliation.
+    - Reports \>\> Financial \>\> Bank History
 
->   **To specify a Bank Reconciliation report option:**
+2. Select a report from the Reports list.
 
-1.  Open a Financial reports window. There are separate windows for each report
-    type.
+3. Choose New or Modify to open the report options window. Your selection in step 2 determines which report options window appears.
 
->   (Reports \>\> Financial \>\> Setup)
+4. Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
 
->   (Reports \>\> Financial \>\> Checkbook)
+5. Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
->   (Reports \>\> Financial \>\> Bank Posting Journals)
+    > [!NOTE]
+    > You can enter only one restriction for each restriction type. For instance, you can insert one Checkbook ID restriction (CASH to PAYROLL) and one Description restriction (Z-AUSTRALIA to Z-CANADA).
 
->   (Reports \>\> Financial \>\> Bank History)
+6. Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-1.  Select a report from the Reports list.
+7. Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
 
-2.  Choose New or Modify to open the report options window. Your selection in
-    step 2 determines which report options window appears.
+8. To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
-3.  Name the option and enter information to define the option. The name you
-    choose for the option won’t appear on the report. The selections available
-    for defining report options vary, depending on the report type you’ve
-    selected.
+### Chapter 13: History
 
-4.  Enter range restrictions. The Ranges list shows the available options for
-    each report. The available ranges vary, depending on the type of report.
+Historical records provide useful information for auditing. You can keep records of transaction and reconciliation history for an unlimited number of years. Once you decide how much historical information is necessary, you can remove information when it’s no longer useful, or when you need to make hard disk space available.
 
->   *You can enter only one restriction for each restriction type. For instance,
->   you can insert one Checkbook ID restriction (CASH to PAYROLL) and one
->   Description restriction (Z-AUSTRALIA to Z-CANADA).*
+This information is divided into the following sections:
 
-1.  Choose Insert to insert the range in the Restrictions List. To remove an
-    existing range from the list, select the range and choose Remove.
+- *Bank history removal overview*
 
-2.  Choose Destination to select a printing destination. Reports can be printed
-    to the screen, to the printer, to a file, or to any combination of these
-    options. If you select Ask Each Time, you can select printing options each
-    time you print this report option.
+- *Removing bank history*
 
-3.  To print the report option from the report options window, choose Print
-    before saving it. If you don’t want to print the option now, choose Save and
-    close the window. The report window will be redisplayed.
+#### Bank history removal overview
 
-Chapter 13: History
--------------------
+When you’re using Bank Reconciliation, you can store transaction and reconciliation history, which contains records of transactions that have been entered, posted, and reconciled. If you keep Transaction/Reconciliation history, account distribution information is saved and reprint posting journals are available, as long as you chose to reprint the posting journals in the Audit Trail Codes Setup window.
 
->   Historical records provide useful information for auditing. You can keep
->   records of transaction and reconciliation history for an unlimited number of
->   years. Once you decide how much historical information is necessary, you can
->   remove information when it’s no longer useful, or when you need to make hard
->   disk space available.
+If you didn’t choose to keep history in the Bank Reconciliation Setup window, documents are removed after they’ve been reconciled or voided, and reprint posting journals are not available.
 
->   This information is divided into the following sections:
+> [!IMPORTANT]
+> Before removing history, back up your company’s accounting data. Removing history permanently deletes the historical information from your company data. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
--   *Bank history removal overview*
+Because historical records increase the amount of hard disk space needed to run your system, you should remove history periodically. You can remove the following types of Bank Reconciliation history:
 
--   *Removing bank history*
+- **Transaction/reconciliation history**
+    Removes detailed records of each reconciled transaction in the range you specify, including distributions and multicurrency information. Removing transaction history also removes transfer history.
 
-### Bank history removal overview
+- **Voided transactions**
+    Removes records of voided transactions, including distributions and multicurrency information. Voided transactions aren’t removed during the reconciliation process and aren’t removed when you remove transaction/reconciliation history.
 
->   When you’re using Bank Reconciliation, you can store transaction and
->   reconciliation history, which contains records of transactions that have
->   been entered, posted, and reconciled. If you keep Transaction/Reconciliation
->   history, account distribution information is saved and reprint posting
->   journals are available, as long as you chose to reprint the posting journals
->   in the Audit Trail Codes Setup window.
+- **Voided receipts**
+    Removes records of voided receipts, including distributions. Voided receipts aren’t assigned to a deposit and aren’t removed when you remove transaction/reconciliation history.
 
->   If you didn’t choose to keep history in the Bank Reconciliation Setup
->   window, documents are removed after they’ve been reconciled or voided, and
->   reprint posting journals are not available.
+#### Removing bank history
 
->   *Before removing history, back up your company’s accounting data. Removing
->   history permanently deletes the historical information from your company
->   data. See the System Administrator’s Guide (Help \>\> Contents \>\> select
->   System Administration) for more information about making backups.*
-
->   Because historical records increase the amount of hard disk space needed to
->   run your system, you should remove history periodically. You can remove the
->   following types of Bank Reconciliation history:
-
->   **Transaction/reconciliation history** Removes detailed records of each
->   reconciled transaction in the range you specify, including distributions and
->   multicurrency information. Removing transaction history also removes
->   transfer history.
-
->   **Voided transactions** Removes records of voided transactions, including
->   distributions and multicurrency information. Voided transactions aren’t
->   removed during the reconciliation process and aren’t removed when you remove
->   transaction/reconciliation history.
-
->   **Voided receipts** Removes records of voided receipts, including
->   distributions. Voided receipts aren’t assigned to a deposit and aren’t
->   removed when you remove transaction/reconciliation history.
-
-### Removing bank history
-
->   Use the Remove Bank History window to remove history, and increase the
->   amount of available space on your hard disk. After you remove history, you
->   won’t be able to print reports that list the information that was removed,
->   nor view the information in inquiry windows.
+Use the Remove Bank History window to remove history, and increase the amount of available space on your hard disk. After you remove history, you won’t be able to print reports that list the information that was removed, nor view the information in inquiry windows.
 
 **To remove bank history:**
 
-1.  Open the Remove Bank History window.
+1. Open the Remove Bank History window. (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Financial \>\> Remove Bank History)
 
->   (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Financial \>\>
->   Remove Bank History)
+2. Mark the type of history to remove.
 
-1.  Mark the type of history to remove.
+3. Mark whether to remove history, print a report, or both. The report shows the information to be removed when you choose Process.
 
-2.  Mark whether to remove history, print a report, or both. The report shows
-    the information to be removed when you choose Process.
+    > [!NOTE]
+    > Once you remove history for a range of transactions, you can’t reprint the Remove History Report for the selected range.
 
->   *Once you remove history for a range of transactions, you can’t reprint the
->   Remove History Report for the selected range.*
+4. Select the range of information to remove. Choose Insert to insert the range into the Restrictions list.
 
-1.  Select the range of information to remove. Choose Insert to insert the range
-    into the Restrictions list.
+    You can enter only one restriction for each range type. For example, if you enter a restriction specifying that only document numbers RCT000000001 through RCT000000100 should be removed, you can’t enter another restriction for document numbers RCT000000200 through RCT000000500.
 
->   You can enter only one restriction for each range type. For example, if you
->   enter a restriction specifying that only document numbers RCT000000001
->   through RCT000000100 should be removed, you can’t enter another restriction
->   for document numbers RCT000000200 through RCT000000500.
+    Repeat this step for each range to remove.
 
->   Repeat this step for each range to remove.
+5. Choose Process to remove history, print the report, or both.
 
-1.  Choose Process to remove history, print the report, or both.
+    The report that’s printed after you remove history depends on the type of history you removed, as is described in the following table:
 
->   The report that’s printed after you remove history depends on the type of
->   history you removed, as is described in the following table:
+    | **History removed**        | **Report printed**                        |
+    |----------------------------|-------------------------------------------|
+    | Transaction/Reconciliation | Transaction/Reconciliation Removal Report |
+    | Voided transactions        | Voided Transactions Removal Report        |
+    | Voided receipts            | Voided Receipts Removal Report            |
 
-| **History removed**        | **Report printed**                        |
-|----------------------------|-------------------------------------------|
-| Transaction/Reconciliation | Transaction/Reconciliation Removal Report |
-| Voided transactions        | Voided Transactions Removal Report        |
-| Voided receipts            | Voided Receipts Removal Report            |
-
-Additional Feature Functionality added to Bank Reconciliation<br>
-=================================================================
+## Additional Feature Functionality added to Bank Reconciliation
 
 To review detailed information about each feature click the link below.
 
 [Automatically Deposit Cash
 Receipts](https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/06/23/microsoft-dynamics-gp-2015-r2-new-features-auto-deposit-cash-receipts-in-bank-rec)  
-Previously in Microsoft Dynamics GP, to use the Auto Deposit functionality, the
-user was required to have Analytical Accounting installed. In GP2015 R2, the
-Auto Deposit functionality can be used with or without Analytical Accounting
-installed. This company setup option allows for cash receipts entered in
-Receivables Management to directly update the checkbook balance when posted. You
-will not be required to post the cash receipt again from the Bank Deposit Entry
-window (Transactions \>\>Financial \>\> Bank Deposits) in Bank Reconciliation if
-you mark this option.
+Previously in Dynamics GP, to use the Auto Deposit functionality, the user was required to have Analytical Accounting installed. In Dynamics GP 2015 R2 and later versions, the Auto Deposit functionality can be used with or without Analytical Accounting installed. This company setup option allows for cash receipts entered in Receivables Management to directly update the checkbook balance when posted. You will not be required to post the cash receipt again from the Bank Deposit Entry window (Transactions \>\>Financial \>\> Bank Deposits) in Bank Reconciliation if you mark this option.
 
 [Bank Reconciliation history tracking and transaction remove capability which =
 better
-performance!!](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/12/22/microsoft-dynamics-gp-2016-r2-bank-reconciliation-reconciled-transaction-maintenance)  
-With the release of Dynamics GP 2016 R2 comes a great new feature that will help
-the customers that use Bank Reconciliation heavily, or have been using Dynamics
-GP with Bank Reconciliation for a long time.  The new feature is the addition of
-the Reconciled Transaction Maintenance process!  The goal for this additional
-routine for Bank Reconciliation will be increased performance for various Bank
-Reconciliation processes after moving the bulk of Reconciled Transactions to
-History.
+performance](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/12/22/microsoft-dynamics-gp-2016-r2-bank-reconciliation-reconciled-transaction-maintenance)  
+With the release of Dynamics GP 2016 R2 came a great new feature that will help the customers that use Bank Reconciliation heavily, or have been using Dynamics GP with Bank Reconciliation for a long time.  The new feature is the addition of the Reconciled Transaction Maintenance process! The goal for this additional routine for Bank Reconciliation will be increased performance for various Bank Reconciliation processes after moving the bulk of Reconciled Transactions to History.
 
 [Don't display inactive checkbooks in
 Lookups](https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/10/26/microsoft-dynamics-gp-2018-r2-option-not-to-show-inactive-checkbooks-in-lookup-windows)  
-With the release of Microsoft Dynamics GP 2018 R2, users can choose to exclude
-'Inactive Checkbooks' in the Checkbooks Lookup window. In prior versions of
-Microsoft Dynamics GP, all Checkbook IDs are displayed in the Checkbooks Lookup
-window. The 'Exclude Inactive Checkbooks' option has been added to the
-Checkbooks Lookup window to accommodate this new functionality.  
+With the release of Dynamics GP 2018 R2, users can choose to exclude 'Inactive Checkbooks' in the Checkbooks Lookup window. In earlier versions of Dynamics GP, all Checkbook IDs are displayed in the Checkbooks Lookup window. The 'Exclude Inactive Checkbooks' option has been added to the Checkbooks Lookup window to accommodate this new functionality.  
   
 [Prevent duplicate check
 numbers](https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/11/07/microsoft-dynamics-gp-2018-r2-prevent-duplicate-check-numbers-for-bank-transaction-entry-miscellaneous-checks-and-payroll-manual-checks)  
-With the release of Microsoft Dynamics GP 2018 R2, it is possible to prevent
-using a duplicate check number in the Bank Transaction Entry, Miscellaneous
-Checks, and the Payroll Manual Check-Adjustment Entry windows.  
-In prior versions of Microsoft Dynamics GP, it was not possible to prevent users
-from using duplicate check numbers in the Bank Transaction Entry, Miscellaneous
-Checks, and the Payroll Manual Check-Adjustment Entry windows.  
-When the 'Duplicate Check Numbers' option is unmarked: Microsoft Dynamics GP
-will prevent users from using a duplicate check number in the Bank Transaction
-Entry, Miscellaneous Checks, and the Payroll Manual Check-Adjustment Entry
-windows.
-
-Glossary
-========
-
-#### Alternate currency
-
->   Any currency that is not a functional currency.
-
-#### Bank card
-
->   A card for which payments might be treated as cash by the business receiving
->   the payment.
-
-#### Bank reconciliation
-
->   The process of making the cash balance shown on the bank statement and the
->   cash balance entered in Bank Reconciliation match as of a certain date.
-
-#### Bank statement
-
->   A statement issued by a bank describing the activities in checking accounts
->   and other bank accounts over a period of time.
-
-#### Check
-
->   A written order on a bank to pay a sum of money from funds in an account.
->   Checks show the name of the company or individual receiving payment, the
->   signature and account number of the person issuing the check, the payment
->   amount, and the current date. Checks usually are numbered in sequence.
-
-#### Check card
-
->   A type of credit card. When purchases are made with a check card, the amount
->   of purchase will immediately be withdrawn from the user’s bank account.
->   Check cards also are known as debit cards.
-
-#### Checkbook
-
->   An account that keeps a currency balance and tracks the receiving and
->   disbursing of cash.
-
-#### Cleared amount
-
->   The amount a bank statement shows a transaction cleared for.
-
-#### Cleared difference
-
->   The difference between what you entered for a transaction in your checkbook
->   and the amount the transaction cleared for on the bank statement.
-
-#### Decrease adjustment
-
->   An entry that decreases the checkbook amount.
-
-**Deposit**
-
->   Money added to an account.
-
-#### Deposit slip
-
->   A form that shows the date and the items that make up a deposit, including
->   receipt and payment information, the currency, check, and coin totals, and
->   the amount of cash received.
-
-#### Deposit in transit
-
->   Deposit that has been entered but hasn’t cleared the bank.
-
-#### Euro
-
->   A trading currency for participating countries/regions in the European
->   Monetary Union.
-
-#### Exchange rate
-
->   The rate of exchange between two currencies on a particular date and time.
-
-#### Functional amount
-
->   The equivalent transaction amount in the functional currency for a
->   multicurrency transaction amount that was entered using an originating
->   currency. This amount sometimes is referred to as the functional equivalent
->   of the originating amount.
-
-#### Functional currency
-
->   The primary currency a company keeps its financial records in. Typically,
->   the functional currency is the currency for the country/ region where the
->   company is located.
-
-**Functional equivalent**
-
->   *See Functional amount*.
-
-#### Group printing
-
->   Creating and printing report options in groups. For example, you could use a
->   report group to print the Checkbook Register Report and the Undeposited
->   Receipts Report.
-
-#### Increase adjustment
-
->   An entry that increases the checkbook amount.
-
-#### Last reconciled balance
-
->   The balance of a checkbook on the bank statement. This is the amount to
->   reconcile to.
-
-#### Originating amount
-
->   The transaction amount in the originating currency for a multicurrency
->   transaction. Originating amounts are posted using their corresponding
->   functional amounts, sometimes referred to as functional equivalents.
-
-#### Outstanding check
-
->   Check that has been written, entered, and sent to payees but hasn’t yet been
->   received, paid, and canceled by the bank.
-
-#### Posting
-
->   A procedure to make temporary transactions a part of a business’s permanent
->   records; to update the checkbook and the General Ledger accounts.
-
-#### Posting account
-
->   A financial account that tracks assets, liabilities, revenue, or expenses.
->   These accounts will appear on financial statements and on other reports
->   created in the financial series.
-
-#### Posting journal
-
->   A report printed following the posting process that shows the detail for
->   each transaction that’s been posted. Posting journals also include the audit
->   trail code, which is a precise record of where each transaction has been
->   posted.
-
-**Real-time posting**
-
->   *See Transaction-level posting*.
-
-#### Realized gain
-
->   Gain realized due to the difference in exchange rates between when the
->   receipt was posted and when the receipt was deposited.
-
-#### Realized loss
-
->   Loss realized due to the difference in exchange rates between when the
->   receipt was posted and when the receipt was deposited.
-
-#### Receipt
-
->   Any type of payment a business might receive.
-
-#### Reconciling
-
->   A procedure that compares a checkbook to a bank statement.
-
-#### Report option
-
->   A collection of entries that specify the amount or type of information that
->   will appear on a report. You can create multiple report options.
-
-#### Removing history
-
->   A procedure that erases ranges of account or transaction history. Removing
->   history will remove ranges of history that are no longer useful, making
->   additional hard disk space available.
-
-#### Rounding difference account
-
->   A multicurrency posting account that recognizes a difference between debit
->   and credit amounts for originating transaction amounts. The difference might
->   be because of how accounts are split to update posting accounts using the
->   exchange rate for the transaction.
-
-#### Source document code
-
->   A code that identifies the type of journal or entry that you can examine for
->   more information about a specific transaction. For example, you could use
->   the source document code BRDEP for Bank Reconciliation deposits.
-
-#### Transaction
-
->   An event or condition that is entered in asset, liability, expense, revenue,
->   or equity accounts. Checks and withdrawals are two types of transactions.
-
-#### Transaction history
-
->   Transactions that have been reconciled or voided.
-
-#### Transaction-level posting
-
->   A posting method in which you can enter and post transactions without having
->   to create a batch. Also known as real-time posting.
-
-#### Transfer
-
->   A transaction used to enter a transfer of funds from one checkbook to
->   another.
-
-#### Typical balance
-
->   The type of balance, either debit or credit, an account has under ordinary
->   circumstances. Asset and expense accounts normally have debit balances,
->   while liability, revenue, and equity accounts normally have credit balances.
-
-#### Withdrawal
-
->   A removal of cash from a checkbook for business or personal use.
+With the release of Dynamics GP 2018 R2, it is possible to prevent using a duplicate check number in the Bank Transaction Entry, Miscellaneous Checks, and the Payroll Manual Check-Adjustment Entry windows.  
+In earlier versions of Dynamics GP, it was not possible to prevent users from using duplicate check numbers in the Bank Transaction Entry, Miscellaneous Checks, and the Payroll Manual Check-Adjustment Entry windows.  
+When the 'Duplicate Check Numbers' option is unmarked: Dynamics GP will prevent users from using a duplicate check number in the Bank Transaction Entry, Miscellaneous Checks, and the Payroll Manual Check-Adjustment Entry windows.

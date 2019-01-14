@@ -1,306 +1,36 @@
->   Microsoft Dynamics® GP **Intercompany Processing**
+---
+title: "Intercompany Processing in Dynamics GP"
+description: "Intercompany Processing in Dynamics GP."
+keywords: "intercompany"
+author: theley502
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 01/14/2019
+---
 
-**Contents**
+# Microsoft Dynamics GP Intercompany Processing
 
->   **Introduction**
->   .................................................................................................................................................**2**
+You can use Intercompany Processing to set up, enter, and maintain relationships between companies so revenues or expenses incurred in one company (the originating company) can be tracked as “due to” or “due from” amounts in other companies (destination companies).
 
->   What’s in this
->   manual...................................................................................................................................2
+This manual is designed to give you an understanding of how to use the features of Intercompany Processing, and how it integrates with the Microsoft Dynamics GP system.
 
->   Symbols and
->   conventions............................................................................................................................3
+To make best use of Intercompany Processing, you should be familiar with systemwide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
 
->   Resources available from the Help
->   menu..................................................................................................3
+Some features described in the documentation are optional and can be purchased through your Microsoft Dynamics GP partner.
 
->   Send us your documentation
->   comments...................................................................................................5
+To view information about the release of Microsoft Dynamics GP that you’re using and which modules or features you are registered to use, choose Help \>\> About Microsoft Dynamics GP.
 
->   **Part 1: Setup**
->   ...............................................................................................................................................**8**
+The manual is divided into the following parts:
 
->   **Chapter 1: Intercompany Processing
->   setup**.................................................................
->   **9**
+- *Part 1, Setup* walks you through setting up company relationships for Intercompany Processing.
 
->   Intercompany Processing
->   terms..................................................................................................................9
+- *Part 2, Transactions* provides a step-by-step guide for recording transactions in one company that will create transactions in the General Ledger of another company. It also describes the process of posting intercompany transactions so they become permanent records.
 
->   Before you set up Intercompany
->   Processing.............................................................................................9
+- *Part 3, Inquiries and Reports* describes procedures that help you analyze intercompany financial information.
 
->   Setting up intercompany
->   relationships....................................................................................................10
-
->   **Part 2: Transactions**
->   ......................................................................................................................
->   **14**
-
->   **Chapter 2: Multicurrency transactions**
->   .........................................................................
->   **15**
-
->   Viewing multiple currencies
->   .....................................................................................................................15
-
->   Exchange rate and document
->   date...........................................................................................................15
-
->   Multicurrency account
->   distributions........................................................................................................15
-
->   **Chapter 3: Intercompany
->   transactions**..........................................................................
->   **17**
-
->   Understanding intercompany transactions
->   ............................................................................................17
-
->   Entering General Ledger intercompany
->   transactions............................................................................17
-
->   Entering Payables Management intercompany
->   transactions...............................................................19
-
->   Voiding Payables Management intercompany transactions
->   ................................................................21
-
->   **Chapter 4:
->   Posting**............................................................................................................................
->   **23**
-
->   Posting intercompany
->   transactions..........................................................................................................23
-
->   Intercompany transaction amounts
->   .........................................................................................................23
-
->   Intercompany audit trail
->   codes.................................................................................................................24
-
->   Distributions to unit
->   accounts...................................................................................................................24
-
->   Transactions with
->   errors.............................................................................................................................24
-
->   **Part 3: Inquiries and Reports**
->   ..........................................................................................**26**
-
->   **Chapter 5:
->   Inquiries**.........................................................................................................................
->   **27**
-
->   About reporting currency
->   .........................................................................................................................27
-
->   Viewing transactions for a posted General Ledger journal
->   entry........................................................27
-
->   Viewing intercompany information for a transaction in a destination company
->   .............................28
-
->   Viewing exchange rate information for an intercompany multicurrency voucher
->   ..........................29
-
->   Viewing exchange rate information for all destination companies on a
->   voucher.............................30
-
->   **Chapter 6: Reports**
->   ...........................................................................................................................
->   **31**
-
->   Intercompany Processing report
->   summary.............................................................................................31
-
->   Creating a report
->   option.............................................................................................................................32
-
-I N T E R C O M P A N Y P R O C E S S I N G iii
------------------------------------------------
-
-**Introduction**
-
-You can use Intercompany Processing to set up, enter, and maintain relationships
-between companies so revenues or expenses incurred in one company (the
-originating company) can be tracked as “due to” or “due from” amounts in other
-companies (destination companies).
-
->   This introduction is divided into the following sections:
-
--   *What’s in this manual*
-
--   *Symbols and conventions*
-
--   *Resources available from the Help menu*
-
--   *Send us your documentation comments*
-
-What’s in this manual
----------------------
-
-This manual is designed to give you an understanding of how to use the features
-of Intercompany Processing, and how it integrates with the Microsoft Dynamics®
-GP system.
-
-To make best use of Intercompany Processing, you should be familiar with
-systemwide features described in the System User’s Guide, the System Setup
-Guide, and the System Administrator’s Guide.
-
-Some features described in the documentation are optional and can be purchased
-through your Microsoft Dynamics GP partner.
-
-To view information about the release of Microsoft Dynamics GP that you’re using
-and which modules or features you are registered to use, choose Help \>\> About
-Microsoft Dynamics GP.
-
->   **The manual is divided into the following parts:**
-
--   *Part 1, Setup*, walks you through setting up company relationships for
-    Intercompany Processing.
-
--   *Part 2, Transactions*, provides a step-by-step guide for recording
-    transactions in one company that will create transactions in the General
-    Ledger of another company. It also describes the process of posting
-    intercompany transactions so they become permanent records.
-
--   *Part 3, Inquiries and Reports*, describes procedures that help you analyze
-    intercompany financial information.
-
->   **I N T R O D U C T I O N**
-
-Symbols and conventions
------------------------
-
->   For definitions of unfamiliar terms, see the glossary in the manual or refer
->   to the glossary in Help.
-
-| **Symbol**                               | **Description**                                                                                  |
-|------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [.](./media/image1.gif)                  | The light bulb symbol indicates helpful tips, shortcuts and suggestions.                         |
-| [./media/image2.gif](./media/image2.gif) | The warning symbol indicates situations you should be especially aware of when completing tasks. |
-
->   This manual uses the following conventions to refer to sections, navigation
->   and other information.
-
-| **Convention**                       | **Description**                                                                                                                                                                                                   |
-|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Creating a batch*                   | Italicized type indicates the name of a section or procedure.                                                                                                                                                     |
-| File \>\> Print or **File \> Print** | The (\>\>) or (**\>**) symbol indicates a sequence of actions, such as selecting items from a menu or toolbar, or pressing buttons in a window. This example directs you to go to the File menu and choose Print. |
-| TAB or ENTER                         | All capital letters indicate a key or a key sequence.                                                                                                                                                             |
-
-*Resources available from the Help menu*
-----------------------------------------
-
->   *The Microsoft Dynamics GP Help menu gives you access to user assistance
->   resources on your computer, as well as on the Web.*
-
->   *Contents*
-
->   *Opens the Help file for the active Microsoft Dynamics GP component, and
->   displays the main “contents” topic. To browse a more detailed table of
->   contents, click the Contents tab above the Help navigation pane. Items in
->   the contents topic and tab are arranged by module. If the contents for the
->   active component includes an “Additional Help files” topic, click the links
->   to view separate Help files that describe additional components.*
-
->   *To find information in Help by using the index or full-text search, click
->   the appropriate tab above the navigation pane, and type the keyword to
->   find.*
-
->   *To save the link to a topic in the Help, select a topic and then select the
->   Favorites tab. Click Add.*
-
->   *Index*
-
->   *Opens the Help file for the active Microsoft Dynamics GP component, with
->   the Index tab active. To find information about a window that’s not
->   currently displayed, type the name of the window, and click Display.*
-
->   *About this window*
-
->   *Displays overview information* about the current window. To view related
->   topics and descriptions of the fields, buttons, and menus for the window,
->   choose the appropriate link in the topic. You also can press F1 to display
->   Help about the current window.
-
-**I N T R O D U C T I O N**
-
-**Lookup**
-
-Opens a lookup window, if a window that you are viewing has a lookup window. For
-example, if the Checkbook Maintenance window is open, you can choose this item
-to open the Checkbooks lookup window.
-
-**Show Required Fields**
-
-Highlights fields that are required to have entries. Required fields must
-contain information before you can save the record and close the window. You can
-change the font color and style used to highlight required fields. On the
-Microsoft Dynamics GP menu, choose User Preferences, and then choose Display.
-
-**Printable Manuals**
-
-Displays a list of manuals in Adobe Acrobat .pdf format, which you can print or
-view.
-
-**What’s New**
-
-Provides information about enhancements that were added to Microsoft Dynamics GP
-since the last major release.
-
-### Microsoft Dynamics GP Online
-
-Opens a Web page that provides links to a variety of Web-based user assistance
-resources. Access to some items requires registration for a paid support plan.
-
->   **Current implementation and upgrade information** The most recent revisions
->   of upgrade and implementation documentation, plus documentation for service
->   packs and payroll tax updates.
-
->   **User documentation and resources** The most recent user guides, howto
->   articles, and white papers for users.
-
->   **Developer documentation and resources** The most recent documentation and
->   updated information for developers.
-
->   **Product support information** Information about the Microsoft Dynamics GP
->   product support plans and options that are available, along with information
->   about peer support and self-support resources.
-
->   **Services information** Information about Microsoft Dynamics GP support,
->   training, and consulting services.
-
->   **Microsoft Dynamics GP Community** Access to newsgroups, where you can ask
->   questions or share your expertise with other Microsoft Dynamics GP users.
-
->   **CustomerSource home page** A wide range of resources available to
->   customers who are registered for a paid support plan. Includes access to
->   Customer Feedback Options
-
-### Customer feedback options
-
-Provides information about how you can join the Customer Experience Improvement
-Program to improve the quality, reliability, and performance of Microsoft®
-software and services.
-
-Send us your documentation comments
------------------------------------
-
->   We welcome comments regarding the usefulness of the Microsoft Dynamics GP
->   documentation. If you have specific suggestions or find any errors in this
->   manual, send your comments by e-mail to the following address:
->   *bizdoc\@microsoft.com*.
-
->   To send comments about specific topics from within Help, click the
->   Documentation Feedback link, which is located at the bottom of each Help
->   topic.
-
->   *Note: By offering any suggestions to Microsoft, you give Microsoft full
->   permission to use them freely.*
-
->   **Part 1: Setup**
+## Part 1: Setup
 
 Use this part of the documentation to familiarize yourself with Intercompany
 Processing terms and set up intercompany relationships.
@@ -365,8 +95,6 @@ Chapter 1: Intercompany Processing setup
 
 >   Processing setup tasks, you’ll be ready to begin performing the tasks
 >   described in *Chapter 3, “Intercompany transactions.”*
-
-**P A R T 1** S E T U P
 
 ### Setting up intercompany relationships
 
@@ -438,7 +166,7 @@ General Ledger for the destination company.
 >   established for the selected range of companies will print on the
 >   Intercompany Setup List when you print the report from this window.
 
-**Part 2: Transactions**
+## Part 2: Transactions
 
 >   Use this part of the documentation to record transactions in the General
 >   Ledger or Payables Management module of one company that will create
@@ -455,8 +183,7 @@ General Ledger for the destination company.
 -   *Chapter 4, “Posting,”* contains information about posting intercompany
     transactions.
 
-Chapter 2: Multicurrency transactions
--------------------------------------
+### Chapter 2: Multicurrency transactions
 
 >   If you’re using Multicurrency Management with Intercompany Processing, you
 >   can choose the currency to enter on transactions.
@@ -469,7 +196,7 @@ Chapter 2: Multicurrency transactions
 
 -   *Multicurrency account distributions*
 
-### Viewing multiple currencies
+#### Viewing multiple currencies
 
 >   You can choose whether to view multicurrency transactions in the originating
 >   or the functional currency. Choose View \>\> Currency \>\> Functional or
@@ -495,7 +222,7 @@ Chapter 2: Multicurrency transactions
 >   *You also can enter a multicurrency transaction in the Payables Transaction
 >   Entry window, but the View menu and Currency list button are not available.*
 
-### Exchange rate and document date
+#### Exchange rate and document date
 
 >   If the currency ID for a transaction is not in the functional currency, a
 >   rate type and associated exchange rate table are assigned to the
@@ -514,7 +241,7 @@ Chapter 2: Multicurrency transactions
 >   that’s different from the document date, the exchange rate expiration date
 >   must be after the posting date.
 
-### Multicurrency account distributions
+#### Multicurrency account distributions
 
 >   For multicurrency transactions, distribution amounts are displayed in both
 >   the functional and originating currencies. However, you can change only the
@@ -541,8 +268,7 @@ Chapter 2: Multicurrency transactions
 | Rounding Difference |                |                 |                      | \$0.01                |
 | Totals              | 30,886.59 EUR  | 30,886.59 EUR   | \$33,734.34          | \$33,734.34           |
 
-Chapter 3: Intercompany transactions
-------------------------------------
+### Chapter 3: Intercompany transactions
 
 >   Intercompany Processing enables you to record transactions in the General
 >   Ledger or Payables Management module for one company that will create
@@ -558,7 +284,7 @@ Chapter 3: Intercompany transactions
 
 -   *Voiding Payables Management intercompany transactions*
 
-### Understanding intercompany transactions
+#### Understanding intercompany transactions
 
 >   Intercompany transactions are like any other transactions in the system,
 >   with the following exceptions:
@@ -585,7 +311,7 @@ Chapter 3: Intercompany transactions
 >   show the due to/due from account breakout; however, this breakout is printed
 >   on edit lists and posting journals.
 
-### Entering General Ledger intercompany transactions
+#### Entering General Ledger intercompany transactions
 
 >   Use the Transaction Entry window in General Ledger to enter intercompany
 >   transactions.
@@ -646,7 +372,7 @@ Chapter 3: Intercompany transactions
 3.  Use any batch-level posting method to post intercompany batches. See
     *Chapter 4, “Posting,”* for more information.
 
-### Entering Payables Management intercompany transactions
+#### Entering Payables Management intercompany transactions
 
 >   Use the Payables Transaction Entry window and the Payables Transaction Entry
 >   Distribution window to enter and distribute intercompany transactions.
@@ -738,8 +464,7 @@ Chapter 3: Intercompany transactions
 >   See the Payables Management documentation for more detailed information
 >   about voiding vouchers and payments.
 
-Chapter 4: Posting
-------------------
+### Chapter 4: Posting
 
 >   Posting transfers intercompany transactions to permanent records. Until
 >   they’re posted, transactions can be changed or deleted. In General Ledger,
@@ -765,7 +490,7 @@ Chapter 4: Posting
 
 -   *Transactions with errors*
 
-### Posting intercompany transactions
+#### Posting intercompany transactions
 
 >   You can post intercompany batches from the Batch Entry, Series Posting, or
 >   Master Posting windows, depending on your access to the system.
@@ -793,20 +518,11 @@ Chapter 4: Posting
 >   your System Administrator’s Guide (Help \>\> Contents \>\> select System
 >   Administration).
 
-### Intercompany transaction amounts
+#### Intercompany transaction amounts
 
->   In General Ledger, Batch Total Actual amounts for intercompany debits and
->   intercompany credits are not included in the batch total shown on the Batch
->   Entry window and on edit lists and posting journals. The number of journal
->   entries, however, is updated for intercompany transactions. In destination
->   companies, the transactions created will not be marked as intercompany and
->   will be included in the batch totals. However, these transactions are
->   assigned an intercompany audit trail
+In General Ledger, Batch Total Actual amounts for intercompany debits and intercompany credits are not included in the batch total shown on the Batch Entry window and on edit lists and posting journals. The number of journal entries, however, is updated for intercompany transactions. In destination companies, the transactions created will not be marked as intercompany and will be included in the batch totals. However, these transactions are assigned an intercompany audit trail code. (The unique intercompany audit trail code gives you the ability to print reports for all intercompany-generated transactions.)
 
-code. (The unique intercompany audit trail code gives you the ability to print
-reports for all intercompany-generated transactions.)
-
-### Intercompany audit trail codes
+#### Intercompany audit trail codes
 
 If you are viewing an intercompany transaction in the General Ledger Transaction
 Entry window of the destination company, the Batch ID assigned is ICTRX, ICTHS,
@@ -823,7 +539,7 @@ The
 ICREV audit trail code is assigned to reversing transactions posted to open
 years.
 
-### Distributions to unit accounts
+#### Distributions to unit accounts
 
 You might make distributions to unit accounts on intercompany transactions, but
 they will not generate a breakout of due to/due from accounts during the posting
@@ -833,7 +549,7 @@ intercompany transaction in company A, this distribution would go to company B
 as 10 units to account 1000-1000 for company B. (No due to or due from accounts
 would be specified.)
 
-### Transactions with errors
+#### Transactions with errors
 
 Transactions with errors will remain in the originating company batch if any of
 the following conditions exist:
@@ -864,7 +580,7 @@ company, but if you try to post the transaction in the General Ledger of the
 destination company, you’ll get a message stating that the account is inactive
 or does not exist.
 
-**Part 3: Inquiries and Reports**
+## Part 3: Inquiries and Reports
 
 >   This part of the documentation explains how to use inquiries and reports to
 >   analyze intercompany activity. The inquiry windows and reports in
@@ -879,8 +595,7 @@ or does not exist.
 -   *Chapter 6, “Reports,”* describes how to use reports to analyze intercompany
     activity.
 
-Chapter 5: Inquiries
---------------------
+### Chapter 5: Inquiries
 
 >   Inquiry features help you analyze intercompany financial information.
 >   Analyzing data contained in your accounting system will let you make
@@ -901,7 +616,7 @@ Chapter 5: Inquiries
 -   *Viewing exchange rate information for all destination companies on a
     voucher*
 
-### About reporting currency
+#### About reporting currency
 
 >   A reporting currency is used to convert functional or originating currency
 >   amounts to another currency on inquiries and reports. For example, if the
@@ -920,7 +635,7 @@ Chapter 5: Inquiries
 >   For more information about the reporting currency, see the Multicurrency
 >   Management documentation.
 
-### Viewing transactions for a posted General Ledger journal entry
+#### Viewing transactions for a posted General Ledger journal entry
 
 >   Use the Journal Entry Inquiry window to view transaction detail for General
 >   Ledger posted journal entries in an open fiscal year.
@@ -957,7 +672,7 @@ Chapter 5: Inquiries
 >   account, debit, credit, distribution reference, and difference information
 >   are displayed.
 
-### Viewing intercompany information for a transaction in a destination company
+#### Viewing intercompany information for a transaction in a destination company
 
 >   Use the Intercompany Audit Trail Code Inquiry window in destination
 >   companies to view the originating company, originating audit trail code, and
@@ -987,7 +702,7 @@ another company.*
     You can view the originating company ID, originating company name,
     originating audit trail code, and originating journal entry number.
 
-### Viewing exchange rate information for an intercompany multicurrency voucher
+#### Viewing exchange rate information for an intercompany multicurrency voucher
 
 >   Use the Exchange Rate Entry Zoom window to view the exchange rate
 >   information for the selected intercompany voucher in Payables Management.
@@ -1010,7 +725,7 @@ another company.*
     to open the Exchange Rate Entry Zoom window to view exchange rate
     information.
 
-### Viewing exchange rate information for all destination companies on a voucher
+#### Viewing exchange rate information for all destination companies on a voucher
 
 >   Use the Intercompany Destination Exchange Rate Inquiry window to view the
 >   exchange rate information for all destination companies on an intercompany
@@ -1033,8 +748,7 @@ another company.*
 3.  In the Payables Distribution Zoom window, choose the Rates button to open
     the Intercompany Destination Exchange Rate Inquiry window.
 
-Chapter 6: Reports
-------------------
+### Chapter 6: Reports
 
 >   You can use Intercompany Processing reports to analyze records of your
 >   intercompany transactions in the General Ledger and Payables Management
@@ -1046,7 +760,7 @@ Chapter 6: Reports
 
 -   *Creating a report option*
 
-### Intercompany Processing report summary
+#### Intercompany Processing report summary
 
 >   You can print several types of reports using Intercompany Processing. Some
 >   reports automatically are printed when you complete certain procedures; for
@@ -1065,16 +779,16 @@ Chapter 6: Reports
 >   same windows. See the General Ledger or Payables Management documentation
 >   for information about reports printed in those modules.)
 
-| **Report type**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | **Report**                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Printing method**                                                                                                                               |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Setup reports                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Intercompany Setup List                                                                                                                                                                                                                                                                                                                                                                                                                                      | Choose File \>\> Print in the setup window **or** create report options in the General System Reports window.                                     |
-| Edit lists                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Transaction Edit List (intercompany information added)\* or Payables Transaction Edit List (intercompany information added)\*                                                                                                                                                                                                                                                                                                                                | Choose File \>\> Print in the                                                                                                                     |
-| **Report type**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                   |
-| Posting reports                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | **Report**                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Printing method**                                                                                                                               |
-| Reprint Journals                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Transaction Posting Journal\*† (intercompany information added) Intercompany Distribution Detail (replaces Distribution Breakdown Register) Intercompany Distribution Breakdown Register – Detail\* (replaces Payables Distribution Breakdown Register – Detail) Intercompany Distribution Summary (replaces GL Distribution Summary) Intercompany Distribution Breakdown Register – Summary\* (replaces Payables Distribution Breakdown Register - Summary) | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure. |
-| \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. Intercompany Distribution Detail – Reprint (replaces Payables Distribution Detail – Reprint) Transaction Reprint Journal (intercompany information added) Create a report option in the Purchasing Posting Journals window. |                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                   |
+| **Report type**  | **Report**  | **Printing method**     |
+|----|-|--|
+| Setup reports    | Intercompany Setup List   | Choose File \>\> Print in the setup window **or** create report options in the General System Reports window.  |
+| Edit lists   | Transaction Edit List (intercompany information added)\* or Payables Transaction Edit List (intercompany information added)\*   | Choose File \>\> Print in the   |
+| **Report type**     |     |    |
+| Posting reports     | **Report**       | **Printing method**  |
+| Reprint Journals   | Transaction Posting Journal\*† (intercompany information added) Intercompany Distribution Detail (replaces Distribution Breakdown Register) Intercompany Distribution Breakdown Register – Detail\* (replaces Payables Distribution Breakdown Register – Detail) Intercompany Distribution Summary (replaces GL Distribution Summary) Intercompany Distribution Breakdown Register – Summary\* (replaces Payables Distribution Breakdown Register - Summary) | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure. |
+| \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. Intercompany Distribution Detail – Reprint (replaces Payables Distribution Detail – Reprint) Transaction Reprint Journal (intercompany information added) Create a report option in the Purchasing Posting Journals window. |  |
 
-### Creating a report option
+#### Creating a report option
 
 >   Report options include specifications for sorting options and range
 >   restrictions for a particular report. In order to print several Intercompany
@@ -1135,349 +849,3 @@ Chapter 6: Reports
     before saving it. If you don’t want to print the option now, choose Save and
     close the window. The report window will be redisplayed.
 
-Glossary
-========
-
-### Audit trail
-
->   A series of permanent records used to track a transaction to the point where
->   it was originally entered in the accounting system. The audit trail can be
->   used to verify the accuracy of financial statements by outside accountants
->   or auditors.
-
-### Audit trail code
-
->   A series of alphanumeric characters providing a precise record of each
->   transaction and where it has been posted within Microsoft Dynamics GP.
-
-### Background processing
-
->   Background processing enables users to continue working while transactions
->   are being posted or reports are being printed.
-
-### Batch
-
->   A group of transactions identified by a unique name or number. Batches are
->   used in computerized accounting to conveniently group transactions, both for
->   identification purposes and to speed up the posting process.
-
-### Batch-level posting
-
->   A posting method that enables transactions to be saved in batches that can
->   be posted whenever convenient. There are three types of batch-level posting:
->   batch posting, series posting, and master posting.
-
-### Breakout of due to/due from accounts
-
->   Detail created by Microsoft Dynamics GP showing the distribution account you
->   enter and the offset due to account or due from account for each
->   intercompany distribution.
-
->   This breakout prints only on edit lists (in
-
->   Payables Management) and posting journals (in General Ledger and Payables
->   Management).
-
-### Destination company
-
->   A company that will be the recipient of an intercompany transaction.
-
-### Due to/due from accounts
-
->   General Ledger accounts used by Microsoft Dynamics GP to track amounts to be
->   paid or to be collected among companies.
-
->   The due to/due from accounts are often called Intercompany Payable and
->   Intercompany Receivable in the Chart of Accounts.
-
-### Expansion button
-
->   A button used to open a window where information for the field next to the
->   button can be added, changed, or viewed.
-
-### History
-
->   Transaction activity from a previous year. Maintaining history files enables
->   users to print detailed reports, comparing currentyear activity to activity
->   in a previous year.
-
-### Inquiry
-
->   A feature that enables users to view openyear and historical information.
-
-### Intercompany transaction
-
->   Any transaction that contains distributions to another company.
-
-### Intercompany-generated transaction
-
->   Any transaction that originated in another company.
-
-### Journal
-
->   A chronological list of transactions, in the form of debits and credits, for
->   a particular account or group of accounts, such as sales or cash
->   disbursements.
-
-### Journal entry
-
->   A transaction recorded in a formalized manner by entering an account and the
->   amounts to be debited and credited.
-
-### Master posting
-
->   A posting process in which marked batches from different series can be
->   posted simultaneously.
-
-### Origin
-
->   A transaction entry window within a specific Microsoft Dynamics GP module.
->   Certain options, such as verifying batch controls and closing fiscal periods
->   can be selected for each transaction origin. Also, the transaction origin
->   will appear as part of the audit trail code on all posting reports in
->   Microsoft Dynamics GP.
-
-### Originating company
-
->   The company in which you initiate (or originate) an intercompany
->   transaction.
-
-### Posting
-
->   A procedure to make temporary transactions a part of permanent records or to
->   update accounts by transaction amounts. In manual accounting, posting
->   transfers journal entries to the proper accounts in a general ledger.
-
-### Posting account
-
->   A financial account that tracks assets, liabilities, revenue, or expenses.
->   These accounts will appear on the financial statements and other reports
->   created in the financial series.
-
-### Posting journal
-
->   A report printed following the posting process that shows the detail for
->   each transaction that has been posted. Posting journals also include the
->   audit trail code, which is a precise record of where each transaction has
->   been posted within Microsoft Dynamics GP.
-
-### Recurring batch
-
->   A batch that will be posted repeatedly, according to the selected frequency.
->   An example of a recurring batch would be one to record monthly rent expense.
->   In Australia and New Zealand, transactions entered in a recurring batch are
->   referred to as standing transactions.
-
-### Report option
-
->   A collection of entries that specify the amount of information or the type
->   of information that will appear on a report.
-
->   Multiple report options can be created.
-
-### Report Writer
-
->   A Microsoft application that can be used to create customized reports.
-
-### Series posting
-
->   A posting process in which marked batches from the same series can be posted
->   simultaneously.
-
-### Source document code
-
->   A code that identifies the type of journal or entry that can be examined for
->   more information about a specific transaction. For example, the source
->   document code GJ, could be used for general journal entries, while BBAL
->   could be used for beginning balance entries.
-
-### Tab-delimited format
-
->   A tab-separated ASCII character file format used when exporting a report so
->   that it can be read by programs that use this format.
-
-### Text-only format
-
->   A file format that saves reports as text without formatting. This format is
->   used when exporting reports to applications that are unable to read other
->   formats available in Microsoft Dynamics GP.
-
-Index
-=====
-
-**A**
-
-accounts in Intercompany Processing breakout of due from accounts 9 breakout of
-due to accounts 9 distributing to unit accounts 24 due from accounts 9 due to
-accounts 9 unit accounts 11 unit allocation accounts 11
-
-audit trail codes historical years 24
-
->   ICREV 24 ICTHS 24 ICTRX 24
-
->   inserting restrictions 33 open years 24
-
-**B**
-
-Batch Entry window batch total 24 intercompany credits 24 intercompany debits 24
-
-**C**
-
-changes since last release, information about 4
-
-currencies in Intercompany Processing account distributions 15 basis of exchange
-rate types 15 changing currency view 15 converting 15 document date 15 entering
-in single-use batches 17 euro triangulation 15 exchange rate inquiry 29 exchange
-rates 15 how exchange rates are calculated 15 multicurrency transactions 15
-reporting currency 27 specifying originating currency 20 viewing functional
-currency 15 viewing originating currency 15
-
-current upgrade information, accessing on
-
->   the Web 4
-
-**D**
-
-destination companies definition 9 distribution types 19 viewing posted
-transactions 28 Distributed Process Server (DPS), using 31 distribution amounts
-balancing amounts 16 changing 15 distributing to destination company
-
->   accounts 17
-
->   rounding differences 16
-
-distribution types, destination companies
-
->   19
-
-documentation, symbols and conventions 3
-
-DPS Setup window, selecting reports to process remotely 31
-
-**G**
-
-General Ledger Transaction Entry window, printing Transaction Edit List
-
->   31
-
-General Transaction Edit List, printing 18
-
-**H**
-
-help, displaying 3 Help menu, described 3 **I**
-
-icons, used in manual 3 Intercompany Audit Trail Code Inquiry
-
->   Window
-
->   displaying 29
-
->   viewing info from originating company 29
-
-Intercompany Processing reports 31 intercompany relationships
-
->   printing a list 11 setting up 10
-
-Intercompany Setup List, printing 11
-
-Intercompany Setup window displaying 10 specifying due from account 24
-specifying due to account 24
-
-intercompany transactions
-
->   audit trail codes 24 distributing to unit accounts 24 overview 17 posting
->   errors 24
-
-**J**
-
-Journal Entry Inquiry window displaying 28 view transaction detail 27
-
-**L**
-
-lookup window, displaying 4
-
-**M**
-
-Modify Reporting Rate window, changing default reporting currency exchange rate
-27
-
-multidimensional analysis codes 17
-
-**N**
-
-navigation, symbols used for 3 new features, information about 4
-
-**O**
-
-originating company, described 9
-
-**P**
-
-Payables Transaction Edit List, printing 20
-
-Payables Transaction Entry Distribution window
-
->   displaying 20
-
-Payables Transaction Entry Distribution window (*continued*) distributing
-intercompany transactions 19
-
-Payables Transaction Entry window displaying 19 entering intercompany
-transactions
-
->   19 printing Payables Transaction Edit
-
-List 31 posting in Intercompany Processing
-
->   batch total amounts 23 errors 24 intercompany batches 23 overview 23 viewing
->   posted journal entries 27
-
-**R**
-
-reports
-
->   samples of customized reports 31 samples of reports 31 samples with
->   technical names 31
-
-required fields, described 4 resources, documentation 3
-
-**S**
-
-setup in Intercompany Processing before you begin 9 intercompany relationships
-10 overview 9
-
-symbols, used in manual 3
-
-**T**
-
-Transaction Entry window displaying 18 entering intercompany transactions
-
-17 transactions in General Ledger, intercompany transactions 17
-
-transactions in Intercompany Processing
-
-audit trail codes 24 batch total amounts 23 distributing to unit accounts 24
-exchange rate inquiries 29 overview 17 posting errors 24 posting intercompany
-transactions 23 viewing for destination companies 28 viewing posted journal
-entries 27 transactions in Payables Management intercompany transactions 19
-voiding intercompany transactions 21
-
-**U**
-
-upgrade information, accessing on the Web 4
-
-**V**
-
-vendors in Intercompany Processing,
-
->   exchange rates 15
-
-Void Historical Payables Transactions window, voiding originating company’s
-portion of transaction 21
-
-Void Open Payables Transactions window, voiding originating company’s portion of
-transaction 21
-
-**W**
-
-what’s new, accessing 4
