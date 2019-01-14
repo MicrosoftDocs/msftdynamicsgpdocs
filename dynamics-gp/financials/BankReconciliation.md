@@ -12,7 +12,6 @@ ms.date: 01/14/2019
 ---
 
 # Microsoft Dynamics GP Bank Reconciliation
-==========================================
 
 You can use Bank Reconciliation to enter and maintain checkbooks used to pay vendors, employees, distribute petty cash, and to reconcile bank statements. If you’re using Payables Management and Payroll, checks printed and posted from those modules update checkbooks in Bank Reconciliation.
 
@@ -25,33 +24,6 @@ You also can use Bank Reconciliation to complete the following tasks:
 - Begin reconciling one checkbook before finishing the reconcile process in a different checkbook
 
 - View details needed to reconcile, including deposit number, transaction number, type, payment amount, and description
-
->   This introduction is divided into the following sections:
-
--   *What’s in this manual*
-
--   *Symbols and conventions*
-
--   *Resources available from the Help menu*
-
--   *Send us your documentation comments*
-
->   **What’s in this manual**
-
-This manual is designed to give you an understanding of how to use the features
-of Bank Reconciliation, and how it integrates with the Microsoft Dynamics® GP
-system.
-
-To make best use of Bank Reconciliation, you should be familiar with systemwide
-features described in the System User’s Guide, the System Setup Guide, and the
-System Administrator’s Guide.
-
-Some features described in the documentation are optional and can be purchased
-through your Microsoft Dynamics GP partner.
-
-To view information about the release of Microsoft Dynamics GP that you’re using
-and which modules or features you are registered to use, choose Help \>\> About
-Microsoft Dynamics GP.
 
 The manual is divided into the following parts:
 
@@ -455,205 +427,108 @@ This information is divided into the following sections:
 
 #### Bank Reconciliation integration with other modules
 
-Whenever you enter a transaction in another module that uses a checkbook, Bank Reconciliation is updated. Therefore, you should use the Bank Reconciliation transactions only to record those miscellaneous transactions,
->   receipts, and deposits not recorded elsewhere.
+Whenever you enter a transaction in another module that uses a checkbook, Bank Reconciliation is updated. Therefore, you should use the Bank Reconciliation transactions only to record those miscellaneous transactions, receipts, and deposits not recorded elsewhere.
 
->   If you enter a transaction in another module and then enter it again in Bank
->   Reconciliation, the checkbook and Cash account will be updated twice and
->   your accounts won’t reconcile properly.
+> [!NOTE]
+> If you enter a transaction in another module and then enter it again in Bank Reconciliation, the checkbook and Cash account will be updated twice and your accounts won’t reconcile properly.
 
->   The following table shows the transactions that update General Ledger Cash
->   accounts, and the ones that update the checkbook balance in Bank
->   Reconciliation.
+The following table shows the transactions that update General Ledger Cash accounts, and the ones that update the checkbook balance in Bank Reconciliation.
 
 | [./media/image5.jpg](./media/image5.jpg) |   |   |
 |------------------------------------------|---|---|
 
-
-\~ A screenshot of a cell phone Description automatically generated
-
 #### Voided transactions that affect Bank Reconciliation
 
->   Transactions that are voided in other modules will be listed on Bank
->   Reconciliation reports. Transactions that were originally entered before the
->   reconciliation cutoff date and that were voided after the cutoff date are
->   listed as outstanding transactions. (The reconcile cutoff date is entered in
->   the Reconcile Bank Statements window.)
+Transactions that are voided in other modules will be listed on Bank Reconciliation reports. Transactions that were originally entered before the reconciliation cutoff date and that were voided after the cutoff date are listed as outstanding transactions. (The reconcile cutoff date is entered in the Reconcile Bank Statements window.)
 
-The Checkbook Register Inquiry window and the Checkbook Inquiry Report list
-transactions that were voided after the date range entered for the report as
-outstanding transactions.
+The Checkbook Register Inquiry window and the Checkbook Inquiry Report list transactions that were voided after the date range entered for the report as outstanding transactions.
 
 #### Bank Reconciliation posting
 
-Posting moves transactions to permanent records. In Bank Reconciliation, posted
-transactions and reconciliation adjustments update the General Ledger Cash
-accounts and checkbook balances. When you post deposits, only Bank
+Posting moves transactions to permanent records. In Bank Reconciliation, posted transactions and reconciliation adjustments update the General Ledger Cash accounts and checkbook balances. When you post deposits, only Bank Reconciliation is updated, unless you have gains or losses. When you post receipts either in Bank Reconciliation or in other modules, the General Ledger Cash account is updated. When you post transfers, the Cash accounts and the checkbook balance all are updated.
 
-Reconciliation is updated, unless you have gains or losses. When you post
-receipts either in Bank Reconciliation or in other modules, the General Ledger
-Cash account is updated. When you post transfers, the Cash accounts and the
-checkbook balance all are updated.
+> [!NOTE]
+> If you’re using Multicurrency Management, any gains or losses associated with a deposit are posted to the Realized Gains/Losses account.
 
->   If you’re using Multicurrency Management, any gains or losses associated
->   with a deposit are posted to the Realized Gains/Losses account.
+Bank Reconciliation uses only transaction-level posting, which means you must enter and post bank transactions individually. Your settings in the Posting Setup window also must enable transaction-level posting for Bank Reconciliation. See the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System) for more information about posting setup. You can post only to an open period that’s been set up using the Fiscal Periods Setup window. Bank Reconciliation records are updated using the date you entered in the Bank Transaction Entry, Bank Transfer Entry, Reconcile Bank Adjustments, or Bank Deposit Entry windows.
 
-Bank Reconciliation uses only transaction-level posting, which means you must
-enter and post bank transactions individually. Your settings in the Posting
-Setup window also must enable transaction-level posting for Bank Reconciliation.
-See the System Setup instructions (Help \>\> Contents \>\> select Setting Up the
-System) for more information about posting setup. You can post only to an open
-period that’s been set up using the Fiscal Periods Setup window. Bank
-Reconciliation records are updated using the date you entered in the Bank
-Transaction Entry, Bank Transfer Entry, Reconcile Bank Adjustments, or Bank
-Deposit Entry windows.
+You can enter and save deposits for posting later, but you can save only one deposit with receipts transaction or one deposit to clear receipts transaction for each checkbook at any given time.
 
-You can enter and save deposits for posting later, but you can save only one
-deposit with receipts transaction or one deposit to clear receipts transaction
-for each checkbook at any given time.
+If you choose to post to General Ledger, the transactions appear in a batch in the General Ledger Batch Entry, Series Posting, and Master Posting windows. If necessary, you can edit the transactions using the Transaction Entry window in General Ledger. Your General Ledger accounts are updated when you post the batch in General Ledger.
 
-If you choose to post to General Ledger, the transactions appear in a batch in
-the General Ledger Batch Entry, Series Posting, and Master Posting windows. If
-necessary, you can edit the transactions using the Transaction Entry window in
-General Ledger. Your General Ledger accounts are updated when you post the batch
-in General Ledger.
+If you’re posting to General Ledger, the audit trail code for the transaction identifies the transaction origin. Receipts from other modules follow the General Ledger posting specifications set up for the originating modules.
 
-If you’re posting to General Ledger, the audit trail code for the transaction
-identifies the transaction origin. Receipts from other modules follow the
-General Ledger posting specifications set up for the originating modules.
+All transactions posted during a single data entry session use the same audit trail code. For example, if you enter and post five deposits with receipts using the Bank Deposit Entry window, and you close the window, all five deposits have the same audit trail code and are printed on the same posting journal. Use the audit trail code to trace the posting sequence of any transaction back to the originating journal.
 
-All transactions posted during a single data entry session use the same audit
-trail code. For example, if you enter and post five deposits with receipts using
-the Bank Deposit Entry window, and you close the window, all five deposits have
-the same audit trail code and are printed on the same posting journal. Use the
-audit trail code to trace the posting sequence of any transaction back to the
-originating journal.
+When you post transactions, deposits, or transfers, and you close the window, the Bank Transaction Posting Journal, Bank Deposit Posting Journal, or Bank Transfer Posting Journal is printed automatically, if you selected to print those reports in the Posting Setup window. These posting journals provide details about the transactions or deposits you posted. After posting, you can view the transaction and deposit information on reprinted posting journals, or using the Bank Transaction Entry Zoom, Bank Deposit Entry Zoom, or Bank Transfer Entry Zoom windows.
 
-When you post transactions, deposits, or transfers, and you close the window,
-the
+> [!NOTE]
+> To include Multicurrency information on posting journals and other reports, mark Include Multicurrency Info in the Posting Setup window.
 
-Bank Transaction Posting Journal, Bank Deposit Posting Journal, or Bank Transfer
+### Chapter 5: Multicurrency transactions
 
-Posting Journal is printed automatically, if you selected to print those reports
-in the Posting Setup window. These posting journals provide details about the
-transactions or deposits you posted. After posting, you can view the transaction
-and deposit information on reprinted posting journals, or using the Bank
-Transaction Entry Zoom, Bank Deposit Entry Zoom, or Bank Transfer Entry Zoom
-windows.
+If you’re using Multicurrency Management with Bank Reconciliation, you can choose the currency to enter on checks.
 
->   To include Multicurrency information on posting journals and other reports,
->   mark Include Multicurrency Info in the Posting Setup window.
+This information is divided into the following sections:
 
-**Chapter 5: Multicurrency transactions**
+- *Rules for multicurrency transactions*
 
->   If you’re using Multicurrency Management with Bank Reconciliation, you can
->   choose the currency to enter on checks.
+- *Exchange rate and document date*
 
->   This information is divided into the following sections:
+- *Multicurrency account distributions*
 
--   *Rules for multicurrency transactions*
-
--   *Exchange rate and document date*
-
--   *Multicurrency account distributions*
-
--   *Rounding differences*
+- *Rounding differences*
 
 #### Rules for multicurrency transactions
 
->   If you’re using Multicurrency Management, the following rules apply when
->   entering transactions.
+If you’re using Multicurrency Management, the following rules apply when entering transactions.
 
--   You must set up a functional currency for the company before entering
-    transactions. See the Multicurrency Setup window for more information.
+- You must set up a functional currency for the company before entering transactions. See the Multicurrency Setup window for more information.
 
--   Both the transaction and posting dates must fall within a valid exchange
-    rate period, or you can’t post the transaction.
+- Both the transaction and posting dates must fall within a valid exchange rate period, or you can’t post the transaction.
 
--   Realized gains or losses due to rounding differences are posted to the
-    Realized
+- Realized gains or losses due to rounding differences are posted to the Realized
 
->   Gain and Loss accounts you set up using the Multicurrency Posting Account
->   Setup by Rate Type window. If no Realized Gain or Loss accounts have been
->   set up using this window, the accounts set up using the Multicurrency
->   Posting Accounts Setup window or Posting Accounts Setup window are used.
+Gain and Loss accounts you set up using the Multicurrency Posting Account Setup by Rate Type window. If no Realized Gain or Loss accounts have been set up using this window, the accounts set up using the Multicurrency Posting Accounts Setup window or Posting Accounts Setup window are used.
 
--   Both the original and functional amounts appear in the scrolling window.
+- Both the original and functional amounts appear in the scrolling window.
 
--   Regardless of whether the checkbook is assigned to the functional or
-    nonfunctional currency, you can make payments only in the checkbook
-    currency.
+- Regardless of whether the checkbook is assigned to the functional or nonfunctional currency, you can make payments only in the checkbook currency.
 
->   *If you’re using Payables Management, you can make payments in any currency
->   for a checkbook with an assigned functional currency. If the checkbook being
->   used doesn’t have an assigned functional currency, you can make payments
->   only in the checkbook currency.*
+> [!NOTE]
+> If you’re using Payables Management, you can make payments in any currency for a checkbook with an assigned functional currency. If the checkbook being used doesn’t have an assigned functional currency, you can make payments only in the checkbook currency.
 
->   The following rules apply to deposit and receipt transactions.
+The following rules apply to deposit and receipt transactions.
 
--   For checkbooks assigned to the functional currency, you can enter and post
-    deposits with receipts in any currency that is valid for the company.
+- For checkbooks assigned to the functional currency, you can enter and post deposits with receipts in any currency that is valid for the company.
 
--   When a deposit is voided, the system uses the exchange rate for the original
-    transaction so that the amounts for the void are calculated correctly.
+- When a deposit is voided, the system uses the exchange rate for the original transaction so that the amounts for the void are calculated correctly.
 
 #### Exchange rate and document date
 
-If a transaction’s currency ID is not in the functional currency, a rate type
-and associated exchange rate table are assigned to the transaction. The rate
-type is the default rate type from the selected checkbook. If one isn’t assigned
-to the checkbook, the default rate type for the Financial series specified in
-the Multicurrency Setup window is used. You also can choose the Currency ID
-expansion button to open the Exchange Rate Entry window, where you can view or
-modify the default exchange rate.
+If a transaction’s currency ID is not in the functional currency, a rate type and associated exchange rate table are assigned to the transaction. The rate type is the default rate type from the selected checkbook. If one isn’t assigned to the checkbook, the default rate type for the Financial series specified in the Multicurrency Setup window is used. You also can choose the Currency ID expansion button to open the Exchange Rate Entry window, where you can view or modify the default exchange rate.
 
-The document date assigned to a transaction determines the exchange rate to use,
-based on the currency ID and associated rate type entered for the transaction.
-Each time you change the document date on a multicurrency transaction, the
-system searches for a valid exchange rate. If a valid rate doesn’t exist, you
-can enter an exchange rate using the Exchange Rate Entry window. If you entered
-a General Ledger posting date that’s different from the document date, the
-exchange rate expiration date must be after the posting date.
+The document date assigned to a transaction determines the exchange rate to use, based on the currency ID and associated rate type entered for the transaction. Each time you change the document date on a multicurrency transaction, the system searches for a valid exchange rate. If a valid rate doesn’t exist, you can enter an exchange rate using the Exchange Rate Entry window. If you entered a General Ledger posting date that’s different from the document date, the exchange rate expiration date must be after the posting date.
 
 #### Multicurrency account distributions
 
-For multicurrency transactions, distribution amounts are displayed in both the
-functional and originating currencies. However, you can change only the
-originating amounts.
+For multicurrency transactions, distribution amounts are displayed in both the functional and originating currencies. However, you can change only the originating amounts.
 
-When you’re entering a multicurrency transaction, the originating debit and
-credit amounts must balance. If the functional equivalents don’t balance, the
-difference is
-
-posted to a Rounding Difference account, which is displayed on the Bank
-Transaction Posting Journal.
+When you’re entering a multicurrency transaction, the originating debit and credit amounts must balance. If the functional equivalents don’t balance, the difference is posted to a Rounding Difference account, which is displayed on the Bank Transaction Posting Journal.
 
 **Example**
 
-You entered a check to pay for supplies in the euro currency for 30,886.59 EUR,
-which includes marketing supplies for 15,755.41 EUR, sales supplies for 9,876.89
-EUR, and administrative supplies for 5,254.29 EUR. The exchange rate is 1.0922.
-The distributions are described in the following table:
+You entered a check to pay for supplies in the euro currency for 30,886.59 EUR, which includes marketing supplies for 15,755.41 EUR, sales supplies for 9,876.89 EUR, and administrative supplies for 5,254.29 EUR. The exchange rate is 1.0922. The distributions are described in the following table:
 
-![A screenshot of a cell phone Description automatically generated](media/e3b1d693c72370b184f2ed74579ede82.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![A screenshot ](media/e3b1d693c72370b184f2ed74579ede82.jpg)
 
 #### Rounding differences
 
->   If you’re using Multicurrency Management, your system might calculate a
->   rounding difference and post that amount to the Rounding Difference account
->   if a transaction’s originating debits and credits balance, but the converted
->   functional debits and credits don’t balance. The distribution for the
->   rounding difference doesn’t show on the window, but does show in the posting
->   journal.
+If you’re using Multicurrency Management, your system might calculate a rounding difference and post that amount to the Rounding Difference account if a transaction’s originating debits and credits balance, but the converted functional debits and credits don’t balance. The distribution for the rounding difference doesn’t show on the window, but does show in the posting journal.
 
->   **Example**
+**Example**
 
->   You use US dollars as your functional currency and you have a checkbook that
->   uses Swiss francs. The exchange rate is 1.5 using the divide method, and you
->   enter a transaction for CHF 1,500 that’s going to a Cash account (\$1,000
->   US). The distributions are described in the following table:
+You use US dollars as your functional currency and you have a checkbook that uses Swiss francs. The exchange rate is 1.5 using the divide method, and you enter a transaction for CHF 1,500 that’s going to a Cash account (\$1,000 US). The distributions are described in the following table:
 
 | **Distribution** | **Amount**            |
 |------------------|-----------------------|
@@ -661,482 +536,286 @@ A screenshot of a cell phone Description automatically generated
 | Account \#2      | 500 CHF (\$333.33 US) |
 | Account \#3      | 500 CHF (\$333.33 US) |
 
->   The total amount distributed is \$999.99 US, while the converted amount in
->   the Cash account is \$1,000.00 US, which leaves \$0.01 US as a rounding
->   difference.
+The total amount distributed is \$999.99 US, while the converted amount in the Cash account is \$1,000.00 US, which leaves \$0.01 US as a rounding difference.
 
-**Chapter 6: Checks, withdrawals, and adjustments**
+### Chapter 6: Checks, withdrawals, and adjustments
 
->   You can record and post transactions related to checks, withdrawals, and
->   other adjustments.
+You can record and post transactions related to checks, withdrawals, and other adjustments.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
--   *Entering a check, withdrawal, or adjustment transaction*
+- *Entering a check, withdrawal, or adjustment transaction*
 
--   *Entering a miscellaneous check*
+- *Entering a miscellaneous check*
 
--   *Bank transaction voids overview*
+- *Bank transaction voids overview*
 
--   *Voiding a bank transaction*
+- *Voiding a bank transaction*
 
 #### Entering a check, withdrawal, or adjustment transaction
 
->   Use the Bank Transaction Entry window to enter checks, withdrawals, and
->   increase or decrease adjustments.
+Use the Bank Transaction Entry window to enter checks, withdrawals, and increase or decrease adjustments.
 
->   Use withdrawal transactions to record cash withdrawals from a checkbook. For
->   example, you can record an insurance payment that is automatically deducted
->   from your checkbook on a monthly basis as a withdrawal transaction.
->   Withdrawal transactions decrease the checkbook balance when you post.
+Use withdrawal transactions to record cash withdrawals from a checkbook. For example, you can record an insurance payment that is automatically deducted from your checkbook on a monthly basis as a withdrawal transaction. Withdrawal transactions decrease the checkbook balance when you post.
 
->   For adjustments, use the Bank Transaction Entry window to record debit
->   amounts— other than deposits—that increase the checkbook balance when
->   they’re posted (increase adjustment transactions). Use decrease adjustment
->   transactions to record amounts that decrease the checkbook balance when
->   they’re posted, such as bank service charges. See *Entering a miscellaneous
->   bank adjustment transaction* on page 55 for information about entering an
->   adjusting amount after reconciling.
+For adjustments, use the Bank Transaction Entry window to record debit amounts— other than deposits—that increase the checkbook balance when they’re posted (increase adjustment transactions). Use decrease adjustment transactions to record amounts that decrease the checkbook balance when they’re posted, such as bank service charges. See *Entering a miscellaneous bank adjustment transaction* on page 55 for information about entering an adjusting amount after reconciling.
 
->   If you’re using other modules such as Payables Management to track certain
->   kinds of checks, you should enter those check transactions in those modules,
->   not in Bank Reconciliation. Entering them in both places duplicates the
->   credit from the Cash account and creates an extra check in Bank
->   Reconciliation.
+If you’re using other modules such as Payables Management to track certain kinds of checks, you should enter those check transactions in those modules, not in Bank Reconciliation. Entering them in both places duplicates the credit from the Cash account and creates an extra check in Bank Reconciliation.
 
->   Use the following procedure only to enter transactions that haven’t
->   originated in another module. These transactions update both the checkbook
->   balance and the General Ledger Cash account when you post.
+Use the following procedure only to enter transactions that haven’t originated in another module. These transactions update both the checkbook balance and the General Ledger Cash account when you post.
 
->   To transfer funds from one checkbook to another, use the Bank Transfer Entry
->   window. See *Chapter 7, “Receipts,”* and *Chapter 8, “Deposits,”* for
->   information about entering receipts and deposits.
+To transfer funds from one checkbook to another, use the Bank Transfer Entry window. See *Chapter 7, “Receipts,”* and *Chapter 8, “Deposits,”* for information about entering receipts and deposits.
 
 **To enter a check, withdrawal, or adjustment transaction:**
 
-1.  Open the Bank Transaction Entry window.
+1. Open the Bank Transaction Entry window. (Transactions \>\> Financial \>\> Bank Transactions)
 
->   (Transactions \>\> Financial \>\> Bank Transactions)
+    ![A screenshot](media/607b3fa85fd76b9ac2606d582187191a.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/607b3fa85fd76b9ac2606d582187191a.jpg)
+2. Select Enter Transaction, then select a type.
 
-A screenshot of a cell phone Description automatically generated
+3.  Enter the transaction date. To enter a different posting date, choose the Transaction Date expansion button to open the Bank Transaction Date window. Choose OK to close the window when you finish.
 
-1.  Select Enter Transaction, then select a type.
+    If the transaction date and posting date are the same and you change the transaction date, the posting date changes, as well. If these two dates aren’t the same, changing the transaction date doesn’t affect the posting date.
 
-2.  Enter the transaction date. To enter a different posting date, choose the
-    Transaction Date expansion button to open the Bank Transaction Date window.
-    Choose OK to close the window when you finish.
+4. Enter or select the checkbook ID for this transaction. The default checkbook ID, check or transaction number, and Cash account information appears automatically.
 
->   If the transaction date and posting date are the same and you change the
->   transaction date, the posting date changes, as well. If these two dates
->   aren’t the same, changing the transaction date doesn’t affect the posting
->   date.
+    If you’re using Multicurrency Management, the currency ID also appears, and you can choose the Currency expansion button to view or change the exchange rate for the transaction.
 
-1.  Enter or select the checkbook ID for this transaction. The default checkbook
-    ID, check or transaction number, and Cash account information appears
-    automatically.
+5. Enter the name of the payee or payor, the description, and the transaction amount. For the default Cash account, you can change only the distribution reference.
 
->   If you’re using Multicurrency Management, the currency ID also appears, and
->   you can choose the Currency expansion button to view or change the exchange
->   rate for the transaction.
+    This transaction amount that appears on the first line of the scrolling window will be posted to the Cash account for the checkbook. To record a voided check, or to track an alignment form or a damaged check, you can enter a zero amount for the check amount.
 
-1.  Enter the name of the payee or payor, the description, and the transaction
-    amount. For the default Cash account, you can change only the distribution
-    reference.
+    To view information about your multicurrency bank transactions, choose the Amount expansion button to open the Multicurrency Bank Amounts window.
 
->   This transaction amount that appears on the first line of the scrolling
->   window will be posted to the Cash account for the checkbook. To record a
->   voided check, or to track an alignment form or a damaged check, you can
->   enter a zero amount for the check amount.
+6. Enter the offset posting accounts and amounts for the transaction.
 
->   To view information about your multicurrency bank transactions, choose the
->   Amount expansion button to open the Multicurrency Bank Amounts window.
+    You can enter either a posting account or a unit account as an offset account to track non-financial amounts for your bank transactions. An entry to a unit account affects the balance of the selected unit account; however, it has no effect on the totals or difference displayed at the bottom of the scrolling window.
 
-1.  Enter the offset posting accounts and amounts for the transaction.
+7. Choose Post to post the transaction. The checkbook balance is updated, and the information is posted to or through General Ledger, depending on your selection in the Posting Setup window.
 
->   You can enter either a posting account or a unit account as an offset
->   account to track non-financial amounts for your bank transactions. An entry
->   to a unit
+8. Close the window. The Bank Transaction Posting Journal is printed if you selected that option in the Posting Setup window. If you’re keeping history, you can reprint the posting journals using the report options windows.
 
->   account affects the balance of the selected unit account; however, it has no
->   effect on the totals or difference displayed at the bottom of the scrolling
->   window.
-
-1.  Choose Post to post the transaction. The checkbook balance is updated, and
-    the information is posted to or through General Ledger, depending on your
-    selection in the Posting Setup window.
-
-2.  Close the window. The Bank Transaction Posting Journal is printed if you
-    selected that option in the Posting Setup window. If you’re keeping history,
-    you can reprint the posting journals using the report options windows.
-
->   If you’re registered for Multicurrency Management, any rounding differences
->   are posted to the Rounding Differences account and appear on the posting
->   journals, if the Include Multicurrency Info option is marked in the Posting
->   Setup window.
+    If you’re registered for Multicurrency Management, any rounding differences are posted to the Rounding Differences account and appear on the posting journals, if the Include Multicurrency Info option is marked in the Posting Setup window.
 
 #### Entering a miscellaneous check
 
->   You can create individual checks to make a one-time payment when you don’t
->   want to create a vendor record for the person or business you’re paying. Use
->   the Miscellaneous Check window to print checks for one-time purchases that
->   are not recorded as transactions anywhere else. You can print and post a
->   check from this window, or you can post checks from this window without
->   printing them.
+You can create individual checks to make a one-time payment when you don’t want to create a vendor record for the person or business you’re paying. Use the Miscellaneous Check window to print checks for one-time purchases that are not recorded as transactions anywhere else. You can print and post a check from this window, or you can post checks from this window without printing them.
 
->   **To enter a miscellaneous check:**
+**To enter a miscellaneous check:**
 
-1.  Open the Miscellaneous Check window.
+1. Open the Miscellaneous Check window. (Transactions \>\> Financial \>\> Miscellaneous Check)
 
->   (Transactions \>\> Financial \>\> Miscellaneous Check)
+    ![A screenshot](media/503c9a4c89bc0b970b34e3099ae5ab0e.jpg)
 
-![A screenshot of a social media post Description automatically generated](media/503c9a4c89bc0b970b34e3099ae5ab0e.jpg)
+2. Enter or select a checkbook ID.
 
-A screenshot of a social media post Description automatically generated
+3. Enter or accept the default check number and the date.
 
-1.  Enter or select a checkbook ID.
+4. Enter the recipient name in the Pay to field.
 
-2.  Enter or accept the default check number and the date.
+5. Enter the amount of the check in the \$ field. The amount entered will be converted to words in the Dollars field. The amount will be the credit entry for the cash account assigned to the checkbook, which can’t be changed.
 
-3.  Enter the recipient name in the Pay to field.
+6. Enter the recipient address in the Address fields, and type any additional information in the Memo field.
 
-4.  Enter the amount of the check in the \$ field. The amount entered will be
-    converted to words in the Dollars field. The amount will be the credit entry
-    for the cash account assigned to the checkbook, which can’t be changed.
+7. Select the check format, and select to print an alignment form or a check.
 
-5.  Enter the recipient address in the Address fields, and type any additional
-    information in the Memo field.
+    The transaction amount that appears on the first line of the scrolling window will be posted to the cash account for the checkbook.
 
-6.  Select the check format, and select to print an alignment form or a check.
+8. Select an offset account using the account lookup button. Type a debit or credit for the account. Press TAB to move to the next line. Repeat this step  for each account you’re entering debits or credits for until the difference is zero.
 
->   The transaction amount that appears on the first line of the scrolling
->   window will be posted to the cash account for the checkbook.
+    If you type a debit and a credit on the same line, the most recent entry will be kept and the previous entry will be reset to zero.
 
-1.  Select an offset account using the account lookup button. Type a debit or
-    credit for the account. Press TAB to move to the next line. Repeat this step
-    for each account you’re entering debits or credits for until the difference
-    is zero.
+9. Click Print Check, and then click Post to complete the procedure. You can post the check without printing it, but you cannot print a check after it has been posted. You can void the check later, if necessary. See *Voiding a bank transaction* on page 33 for more information.
 
->   If you type a debit and a credit on the same line, the most recent entry
->   will be kept and the previous entry will be reset to zero.
-
-1.  Click Print Check, and then click Post to complete the procedure. You can
-    post the check without printing it, but you cannot print a check after it
-    has been posted. You can void the check later, if necessary. See *Voiding a
-    bank transaction* on page 33 for more information.
-
-2.  Close the window. Depending on your selections in the Posting Setup window,
-    some posting journals might be printed. Refer to the System Setup Guide for
-    information about setting up posting options (Help \>\> Printable Manuals
-    \>\> System \>\> System Setup).
+10. Close the window. Depending on your selections in the Posting Setup window, some posting journals might be printed. Refer to the System Setup Guide for information about setting up posting options (Help \>\> Printable Manuals \>\> System \>\> System Setup).
 
 #### Bank transaction voids overview
 
-When you void a posted transaction entered in Bank Reconciliation, the amounts
-posted to accounts are reversed and the checkbook balance is updated by the
-voided transaction amount.
+When you void a posted transaction entered in Bank Reconciliation, the amounts posted to accounts are reversed and the checkbook balance is updated by the voided transaction amount.
 
--   If you’re not keeping history, voided transactions are deleted after
-    posting.
+- If you’re not keeping history, voided transactions are deleted after posting.
 
--   If you are keeping history, voided transactions are stored for auditing
-    purposes. For example, you might want to track all checks that have been
-    voided so you know why a check number is missing or out of sequence.
+- If you are keeping history, voided transactions are stored for auditing purposes. For example, you might want to track all checks that have been voided so you know why a check number is missing or out of sequence.
 
-If you must void a transaction you entered in another module, you should use
-that module to void the transaction so you keep accurate accounting records
-throughout the system. When you void the transaction in the originating module,
-the checkbook is updated in Bank Reconciliation.
+If you must void a transaction you entered in another module, you should use that module to void the transaction so you keep accurate accounting records throughout the system. When you void the transaction in the originating module, the checkbook is updated in Bank Reconciliation.
 
 The following conditions must exist before you can void a transaction:
 
--   The transaction must exist in Bank Reconciliation. You can use the Checkbook
-    Register Inquiry window to verify whether the transaction exists. If it
-    does, it appears in the window.
+- The transaction must exist in Bank Reconciliation. You can use the Checkbook Register Inquiry window to verify whether the transaction exists. If it does, it appears in the window.
 
--   The transaction can’t have been reconciled or previously voided.
+- The transaction can’t have been reconciled or previously voided.
 
--   The transaction can’t be marked for reconciliation.
+- The transaction can’t be marked for reconciliation.
 
--   The checkbook assigned to the transaction must exist, and a Cash account
-    must be assigned to it.
+- The checkbook assigned to the transaction must exist, and a Cash account must be assigned to it.
 
--   The transaction must be fully distributed.
+- The transaction must be fully distributed.
 
->   • If you’re using Multicurrency Management, the currency ID for the
->   checkbook must be active.
+    If you’re using Multicurrency Management, the currency ID for the checkbook must be active.
 
->   Once a transaction has been voided, you can’t reconcile it.
+    Once a transaction has been voided, you can’t reconcile it.
 
->   If you’re using Multicurrency Management, your system uses the original
->   exchange rate for the void transaction to ensure that the General Ledger
->   amounts are the same as the original transaction.
+    If you’re using Multicurrency Management, your system uses the original exchange rate for the void transaction to ensure that the General Ledger amounts are the same as the original transaction.
 
 #### Voiding a bank transaction
 
->   Use the Bank Transaction Entry window to void transactions that were entered
->   and posted in Bank Reconciliation. If you entered and posted a transaction
->   in another module, see that module’s documentation for information about how
->   to void the transaction.
+Use the Bank Transaction Entry window to void transactions that were entered and posted in Bank Reconciliation. If you entered and posted a transaction in another module, see that module’s documentation for information about how to void the transaction.
 
->   **To void a bank transaction:**
+**To void a bank transaction:**
 
-1.  Open the Bank Transaction Entry window.
+1. Open the Bank Transaction Entry window. (Transactions \>\> Financial \>\> Bank Transactions)
 
->   (Transactions \>\> Financial \>\> Bank Transactions)
+2. Select Void Transaction.
 
-1.  Select Void Transaction.
+3. Enter or select the checkbook ID for the transaction you’re voiding. The default checkbook ID was set up using the Bank Reconciliation Setup window.
 
-2.  Enter or select the checkbook ID for the transaction you’re voiding. The
-    default checkbook ID was set up using the Bank Reconciliation Setup window.
+4. Enter or select the transaction number to void. Verify that the transaction is fully distributed.
 
-3.  Enter or select the transaction number to void. Verify that the transaction
-    is fully distributed.
+5. Choose Void to void the transaction. The checkbook is updated and the distributions in the scrolling window are posted to General Ledger. The debits and credits for the account distributions appear in reverse order from the transaction that was originally entered.
 
-4.  Choose Void to void the transaction. The checkbook is updated and the
-    distributions in the scrolling window are posted to General Ledger. The
-    debits and credits for the account distributions appear in reverse order
-    from the transaction that was originally entered.
+6. Close the Bank Transaction Entry window. The Bank Transaction Posting Journal is printed. Transactions that have been voided since you opened the window are marked with an asterisk (\*) on the report.
 
-5.  Close the Bank Transaction Entry window. The Bank Transaction Posting
-    Journal is printed. Transactions that have been voided since you opened the
-    window are marked with an asterisk (\*) on the report.
+### Chapter 7: Receipts
 
-Chapter 7: Receipts
--------------------
+Receipts are any type of payment a business might receive. Once receipts are entered in Bank Reconciliation or posted in other modules, they are available for deposit. Use the deposit entry procedures to enter deposits for transactions with and without receipts. You also can clear receipts if you identify individual receipts that should be removed.
 
->   Receipts are any type of payment a business might receive. Once receipts are
->   entered in Bank Reconciliation or posted in other modules, they are
->   available for deposit. Use the deposit entry procedures to enter deposits
->   for transactions with and without receipts. You also can clear receipts if
->   you identify individual receipts that should be removed.
+Receipt transactions appear in Bank Reconciliation once they’ve been posted in other modules. However, you might need to enter cash receipts that aren’t related to a specific customer. For example, your business might receive an annual utility rebate from your electrical service provider.
 
->   Receipt transactions appear in Bank Reconciliation once they’ve been posted
->   in other modules. However, you might need to enter cash receipts that aren’t
->   related to a specific customer. For example, your business might receive an
->   annual utility rebate from your electrical service provider.
+This information is divided into the following sections:
 
->   This information is divided into the following sections:
+- *Entering miscellaneous receipts*
 
--   *Entering miscellaneous receipts*
+- *Receipt voids overview*
 
--   *Receipt voids overview*
+- *Voiding a receipt*
 
--   *Voiding a receipt*
+- *Differences between voiding and clearing receipts*
 
--   *Differences between voiding and clearing receipts*
+- *Multicurrency receipts and their effects on deposits*
 
--   *Multicurrency receipts and their effects on deposits*
+- *Multicurrency receipt and deposit examples*
 
--   *Multicurrency receipt and deposit examples*
+#### Entering miscellaneous receipts
 
-### Entering miscellaneous receipts
+Use the Bank Transaction Entry window to enter funds received by your company from another party. Typically, receipts appear in Bank Reconciliation when cash receipt transactions are posted in other modules. However, you might need to enter transactions for miscellaneous amounts that weren’t entered in other modules, such as payments received from employees for employee stock purchases.
 
->   Use the Bank Transaction Entry window to enter funds received by your
->   company from another party. Typically, receipts appear in Bank
->   Reconciliation when cash receipt transactions are posted in other modules.
->   However, you might need to enter transactions for miscellaneous amounts that
->   weren’t entered in other modules, such as payments received from employees
->   for employee stock purchases.
+When you post a receipt, the Cash account in General Ledger is updated by the amount of the receipt, depending on your posting setup, but the checkbook balance isn’t updated. When you assign receipts to deposits using the Bank Deposit Entry window, the checkbook balance is updated by the receipt amounts when the deposit is posted.
 
->   When you post a receipt, the Cash account in General Ledger is updated by
->   the amount of the receipt, depending on your posting setup, but the
->   checkbook balance isn’t updated. When you assign receipts to deposits using
->   the Bank Deposit Entry window, the checkbook balance is updated by the
->   receipt amounts when the deposit is posted.
+**To enter a miscellaneous receipt:**
 
->   **To enter a miscellaneous receipt:**
+1. Open the Bank Transaction Entry window. (Transactions \>\> Financial \>\> Bank Transactions)
 
-1.  Open the Bank Transaction Entry window.
+2. Select Enter Receipt and a type of Cash, Check, or Credit Card.
 
->   (Transactions \>\> Financial \>\> Bank Transactions)
+3. Enter the transaction date of the receipt. This date appears on posting journals and other reports. To enter a different posting date, choose the Transaction Date expansion button.
 
-1.  Select Enter Receipt and a type of Cash, Check, or Credit Card.
+    If the transaction date and posting date are the same and you change the transaction date, the posting date changes, as well. If these two dates aren’t the same, changing the transaction date doesn’t affect the posting date.
 
-2.  Enter the transaction date of the receipt. This date appears on posting
-    journals and other reports. To enter a different posting date, choose the
-    Transaction Date expansion button.
+4. Enter or select the checkbook ID for this receipt. The default checkbook ID, receipt number, and Cash account information will appear automatically. For the default Cash account, you can change only the distribution reference.
 
->   If the transaction date and posting date are the same and you change the
->   transaction date, the posting date changes, as well. If these two dates
->   aren’t the same, changing the transaction date doesn’t affect the posting
->   date.
+    If you’re using Multicurrency Management, the currency ID also appears, and you can choose the Currency ID expansion button to view or change the exchange rate for the receipt.
 
-1.  Enter or select the checkbook ID for this receipt. The default checkbook ID,
-    receipt number, and Cash account information will appear automatically. For
-    the default Cash account, you can change only the distribution reference.
+5. If you’re entering a credit card receipt, enter a card name. (Bank cards are the only credit cards you can enter in Bank Reconciliation.) The checkbook ID assigned to the receipt and to the credit card must be the same before you can post.
 
->   If you’re using Multicurrency Management, the currency ID also appears, and
->   you can choose the Currency ID expansion button to view or change the
->   exchange rate for the receipt.
+6. Enter the name of the payer, a description, and a receipt amount. This amount appears on the first line of the scrolling window as a debit amount to be posted to the Cash account for the checkbook.
 
-1.  If you’re entering a credit card receipt, enter a card name. (Bank cards are
-    the only credit cards you can enter in Bank Reconciliation.) The checkbook
-    ID assigned to the receipt and to the credit card must be the same before
-    you can post.
+    To view information about your multicurrency bank transactions, choose the Amount expansion button to open the Multicurrency Bank Amounts window.
 
-2.  Enter the name of the payer, a description, and a receipt amount. This
-    amount appears on the first line of the scrolling window as a debit amount
-    to be posted to the Cash account for the checkbook.
+7. Enter the offset posting accounts and amounts for the receipt.
 
->   To view information about your multicurrency bank transactions, choose the
->   Amount expansion button to open the Multicurrency Bank Amounts window.
+8. Choose Post to post the receipt. The information is posted to or through General Ledger, depending on your selection in the Posting Setup window. The checkbook balance isn’t updated until the receipt is assigned to a deposit and the deposit is posted.
 
-1.  Enter the offset posting accounts and amounts for the receipt.
+9. Close the window. The Bank Transaction Posting Journal is printed if you selected that option in the Posting Setup window. If you’re keeping history, you can reprint the posting journals using the report options windows.
 
-2.  Choose Post to post the receipt. The information is posted to or through
-    General Ledger, depending on your selection in the Posting Setup window. The
-    checkbook balance isn’t updated until the receipt is assigned to a deposit
-    and the deposit is posted.
+    If you’re registered for Multicurrency Management, any rounding differences are posted to the Rounding Differences account, and appear on the posting journals, if you chose to include Multicurrency Info in the Posting Setup window.
 
-3.  Close the window. The Bank Transaction Posting Journal is printed if you
-    selected that option in the Posting Setup window. If you’re keeping history,
-    you can reprint the posting journals using the report options windows.
+#### Receipt voids overview
 
->   If you’re registered for Multicurrency Management, any rounding differences
->   are posted to the Rounding Differences account, and appear on the posting
->   journals, if you chose to include Multicurrency Info in the Posting Setup
->   window.
+You can void receipts using the Bank Transaction Entry window. When you void a receipt in Bank Reconciliation, the amounts posted to accounts when the receipt was posted are reversed.
 
-### Receipt voids overview
+- If you aren’t keeping history, voided receipts are deleted after posting.
 
->   You can void receipts using the Bank Transaction Entry window. When you void
->   a receipt in Bank Reconciliation, the amounts posted to accounts when the
->   receipt was posted are reversed.
+- If you are keeping history, voided receipts are stored for auditing purposes.
 
--   If you aren’t keeping history, voided receipts are deleted after posting.
+    See *Differences between voiding and clearing receipts* on page 37 for more information about the differences between clearing and voiding a receipt.
 
--   If you are keeping history, voided receipts are stored for auditing
-    purposes.
+    If you enter a receipt in another module, you should use that originating module when voiding the receipt to keep accurate accounting records throughout the system. Bank Reconciliation is then updated.
 
->   See *Differences between voiding and clearing receipts* on page 37 for more
->   information about the differences between clearing and voiding a receipt.
+The following conditions must exist before you can void a receipt:
 
->   If you enter a receipt in another module, you should use that originating
->   module when voiding the receipt to keep accurate accounting records
->   throughout the system. Bank Reconciliation is then updated.
+- The receipt must exist in the CM Receipt Table.
+    Receipts are stored in the CM Receipt Table after they’ve been posted. You can use the Bank Deposit Entry window to verify whether the receipt exists in the Table. If it does, it appears in the window.
 
->   The following conditions must exist before you can void a receipt:
+- The receipt can’t be deposited or previously voided.
 
--   The receipt must exist in the CM Receipt Table. Receipts are stored in the
-    CM Receipt Table after they’ve been posted. You can use the Bank Deposit
-    Entry window to verify whether the receipt exists in the Table. If it does,
-    it appears in the window.
+- The receipt can’t be marked for deposit.
 
--   The receipt can’t be deposited or previously voided.
+- The checkbook assigned to the receipt must exist, and a Cash account must be assigned to the checkbook.
 
--   The receipt can’t be marked for deposit.
+- The receipt must be fully distributed.
 
--   The checkbook assigned to the receipt must exist, and a Cash account must be
-    assigned to the checkbook.
+- If you’re using Multicurrency Management, the currency ID for the checkbook must be active.
 
--   The receipt must be fully distributed.
+Once a receipt is voided, you can’t deposit it. If you’re using Multicurrency Management, your system uses the original exchange rate for the void receipt to ensure that the General Ledger amounts are the same as the original receipt.
 
--   If you’re using Multicurrency Management, the currency ID for the checkbook
-    must be active.
+#### Voiding a receipt
 
->   Once a receipt is voided, you can’t deposit it. If you’re using
->   Multicurrency Management, your system uses the original exchange rate for
->   the void receipt to ensure that the General Ledger amounts are the same as
->   the original receipt.
+Use the Bank Transaction Entry window to void a receipt in Bank Reconciliation. If you entered and posted a receipt in another module, see that module’s documentation for instructions about how to void the receipt.
 
-### Voiding a receipt
+**To void a receipt:**
 
->   Use the Bank Transaction Entry window to void a receipt in Bank
->   Reconciliation. If you entered and posted a receipt in another module, see
->   that module’s documentation for instructions about how to void the receipt.
+1. Open the Bank Transaction Entry window. (Transactions \>\> Financial \>\> Bank Transactions)
 
->   **To void a receipt:**
+2. Select Void Receipt.
 
-1.  Open the Bank Transaction Entry window.
+3. Enter or select a checkbook ID for the receipt you’re voiding. The default checkbook ID was set up using the Bank Reconciliation Setup window.
 
->   (Transactions \>\> Financial \>\> Bank Transactions)
+4. Enter or select the receipt number to void. The receipt information appears in the appropriate fields. The original transaction date and posting date appear as default entries.
 
-1.  Select Void Receipt.
+5. Verify that the receipt is fully distributed.
 
-2.  Enter or select a checkbook ID for the receipt you’re voiding. The default
-    checkbook ID was set up using the Bank Reconciliation Setup window.
+6. Choose Void to void the receipt. The distributions in the scrolling window are posted to General Ledger.
 
-3.  Enter or select the receipt number to void. The receipt information appears
-    in the appropriate fields. The original transaction date and posting date
-    appear as default entries.
+7. Close the window. The Bank Transaction Posting Journal is printed. Receipts that have been voided since you opened the window are marked with an asterisk (\*) on the report.
 
-4.  Verify that the receipt is fully distributed.
+#### Differences between voiding and clearing receipts
 
-5.  Choose Void to void the receipt. The distributions in the scrolling window
-    are posted to General Ledger.
+Voiding a receipt reverses the General Ledger distributions for the receipt, including the Cash account distribution. If you’re keeping history, the voided receipt still appears on reports and in inquiry windows, so you can accurately track information about the voided receipt. For example, if you accidentally entered and posted the same receipt twice, you would void one of the receipt transactions to help ensure your data was correct. Remember to void the receipt in the module where it was originally entered.
 
-6.  Close the window. The Bank Transaction Posting Journal is printed. Receipts
-    that have been voided since you opened the window are marked with an
-    asterisk (\*) on the report.
+Clearing a receipt using the Bank Deposit Entry window removes the receipt from the list of receipts available for deposit. The account distributions are not affected and the receipt information appears on the posting journal, and in the inquiry windows, so you can view what was cleared from the checkbook. For example, you might have posted a single deposit without receipts that covered the amounts for several receipts. Once you receive those receipts, you must clear them without posting another deposit.
 
-### Differences between voiding and clearing receipts
+#### Multicurrency receipts and their effects on deposits
 
->   Voiding a receipt reverses the General Ledger distributions for the receipt,
->   including the Cash account distribution. If you’re keeping history, the
->   voided receipt still appears on reports and in inquiry windows, so you can
->   accurately track information about the voided receipt. For example, if you
->   accidentally entered and posted the same receipt twice, you would void one
->   of the receipt transactions to help ensure your data was correct. Remember
->   to void the receipt in the module where it was originally entered.
+If you’re using Multicurrency Management, you can enter receipts that use a different currency from the ones assigned to your checkbooks, based on the following rules:
 
->   Clearing a receipt using the Bank Deposit Entry window removes the receipt
->   from the list of receipts available for deposit. The account distributions
->   are not affected and the receipt information appears on the posting journal,
->   and in the inquiry windows, so you can view what was cleared from the
->   checkbook. For example, you might have posted a single deposit without
->   receipts that covered the amounts for several receipts. Once you receive
->   those receipts, you must clear them without posting another deposit.
+- If your checkbook is assigned to the functional currency, you can enter receipts in any currency that’s set up for your company.
 
-### Multicurrency receipts and their effects on deposits
+- If your checkbook is assigned to a currency that is not the functional currency, you can enter receipts in either the checkbook currency or in the functional currency for your company.
 
->   If you’re using Multicurrency Management, you can enter receipts that use a
->   different currency from the ones assigned to your checkbooks, based on the
->   following rules:
+When you create a deposit for receipts that use non-functional currencies, both the originating and checkbook amounts appear in the scrolling window of the Bank Deposit Entry window. You might have realized gains or losses associated with the converted amount. If the exchange rate changes between the date when the receipt is posted and the date when it’s deposited, the realized gains and losses appear after the receipt is marked for deposit.
 
--   If your checkbook is assigned to the functional currency, you can enter
-    receipts in any currency that’s set up for your company.
+The following terms explain how the amounts are displayed in the window:
 
--   If your checkbook is assigned to a currency that is not the functional
-    currency, you can enter receipts in either the checkbook currency or in the
-    functional currency for your company.
+- **Originating Amount**
+    The receipt’s amount in the original currency of the receipt.
 
->   When you create a deposit for receipts that use non-functional currencies,
->   both the originating and checkbook amounts appear in the scrolling window of
->   the Bank Deposit Entry window. You might have realized gains or losses
->   associated with the converted amount. If the exchange rate changes between
->   the date when the receipt is posted and the date when it’s deposited, the
->   realized gains and losses appear after the receipt is marked for deposit.
+- **Checkbook Amount**
+    The receipt’s amount converted to the currency the checkbook uses.
 
->   The following terms explain how the amounts are displayed in the window:
+- **Realized gains or losses**
+    The difference between the calculated functional amount of the originating receipt, and the functional amount calculated using the deposit exchange rate. A realized gain or loss is entered in the functional currency and it updates General Ledger, but not the checkbook balance.
 
->   **Originating Amount** The receipt’s amount in the original currency of the
->   receipt.
+> [!NOTE]
+> All the marked receipts for a particular currency use the same exchange rate. You can change the exchange rate for a receipt by marking the receipt, then choosing the Currency ID expansion button.
 
->   **Checkbook Amount** The receipt’s amount converted to the currency the
->   checkbook uses.
+#### Multicurrency receipt and deposit examples
 
->   **Realized gains or losses** The difference between the calculated
->   functional amount of the originating receipt, and the functional amount
->   calculated using the deposit exchange rate. A realized gain or loss is
->   entered in the functional currency and it updates General Ledger, but not
->   the checkbook balance.
+The following examples show what happens with the receipt amounts for a checkbook using the functional currency, and for a checkbook using a nonfunctional currency.
 
->   *All the marked receipts for a particular currency use the same exchange
->   rate. You can change the exchange rate for a receipt by marking the receipt,
->   then choosing the Currency ID expansion button.*
+**Functional currency assigned to checkbook**
 
-### Multicurrency receipt and deposit examples
-
->   The following examples show what happens with the receipt amounts for a
->   checkbook using the functional currency, and for a checkbook using a
->   nonfunctional currency.
-
->   **Functional currency assigned to checkbook**
-
->   The functional and checkbook currencies both are in US dollars. The
->   following receipts are posted:
+The functional and checkbook currencies both are in US dollars. The following receipts are posted:
 
 | **Original receipt amount** | **Exchange rate (multiply rate)** | **Functional amount** |
 |-----------------------------|-----------------------------------|-----------------------|
@@ -1144,8 +823,7 @@ Chapter 7: Receipts
 | CA\$100.00                  | 1.3                               | \$130.00              |
 | US\$100.00                  | (functional)                      | \$100.00              |
 
->   The amounts displayed in the Bank Deposit Entry window before marking
->   receipts are described in the following table:
+The amounts displayed in the Bank Deposit Entry window before marking receipts are described in the following table:
 
 | **Originating amount** | **Checkbook amount** | **Realized gain/loss** |
 |------------------------|----------------------|------------------------|
@@ -1153,11 +831,7 @@ Chapter 7: Receipts
 | CA\$100.00             | \$130.00             | \$0.00                 |
 | US\$100.00             | \$100.00             | \$0.00                 |
 
->   When you mark receipts for deposit, your system searches for an exchange
->   rate based on the deposit date and the currency ID, then calculates the
->   checkbook and functional amounts based on the rate found. If the functional
->   amount value changes based on the new calculation, you have realized gains
->   or losses, as displayed in the following table:
+When you mark receipts for deposit, your system searches for an exchange rate based on the deposit date and the currency ID, then calculates the checkbook and functional amounts based on the rate found. If the functional amount value changes based on the new calculation, you have realized gains or losses, as displayed in the following table:
 
 | **Originating amount** | **Exchange rate** | **Checkbook amount and functional amount** | **Realized gain/ loss** |
 |------------------------|-------------------|--------------------------------------------|-------------------------|
@@ -1165,196 +839,124 @@ Chapter 7: Receipts
 | CA\$100.00             | 1.25              | \$125.00                                   | (\$5.00)                |
 | US\$100.00             | (functional)      | \$100.00                                   | \$0.00                  |
 
->   If you unmark a receipt, the checkbook amount reverts back to the amount
->   before the receipt was marked, and the realized gains/losses become zero.
+If you unmark a receipt, the checkbook amount reverts back to the amount before the receipt was marked, and the realized gains/losses become zero.
 
->   **Alternate currency assigned to checkbook**
+**Alternate currency assigned to checkbook**
 
->   The checkbook amount for each receipt shows the amount calculated using the
->   deposit exchange rate, regardless of whether the receipts have been marked.
->   For a receipt that originated in an alternate currency, any realized gains
->   or losses appear after you mark the receipts.
+The checkbook amount for each receipt shows the amount calculated using the deposit exchange rate, regardless of whether the receipts have been marked. For a receipt that originated in an alternate currency, any realized gains or losses appear after you mark the receipts.
 
->   The functional currency is US dollars and the checkbook currency is Canadian
->   dollars. The following receipts are posted:
+The functional currency is US dollars and the checkbook currency is Canadian dollars. The following receipts are posted:
 
 | **Original receipt amount** | **Exchange Rate** | **Functional amount** |
 |-----------------------------|-------------------|-----------------------|
 | \$100.00                    | \---              | \$100.00              |
 | CA\$140.00                  | 0.65              | \$91.00               |
 
->   The amounts displayed in the Bank Deposit Entry window before marking the
->   receipt, assuming a deposit exchange rate of \$0.80 US to one Canadian
->   dollar, are described in the following table:
+The amounts displayed in the Bank Deposit Entry window before marking the receipt, assuming a deposit exchange rate of \$0.80 US to one Canadian dollar, are described in the following table:
 
 | **Originating amount** | **GL functional amount** | **Checkbook amount** | **Realized gain/ loss** |
 |------------------------|--------------------------|----------------------|-------------------------|
 | \$100.00               | \$100.00                 | CA\$125.00           | \$0.00                  |
 | CA\$140.00             | \$112.00                 | CA\$140.00           | \$0.00                  |
 
->   The amounts displayed in the Bank Deposit Entry window after marking the
->   receipt, assuming a deposit exchange rate of \$0.80 US to one Canadian
->   dollar, are described in the following table:
+The amounts displayed in the Bank Deposit Entry window after marking the receipt, assuming a deposit exchange rate of \$0.80 US to one Canadian dollar, are described in the following table:
 
 | **Originating amount** | **GL functional amount** | **Checkbook amount** | **Realized gain/ loss** |
 |------------------------|--------------------------|----------------------|-------------------------|
 | \$100.00               | \$100.00                 | CA\$125.00           | \$0.00                  |
 | CA\$140.00             | \$112.00                 | CA\$140.00           | \$21.00                 |
 
-Chapter 8: Deposits
--------------------
+### Chapter 8: Deposits
 
->   Bank Reconciliation enables you to manage your deposits by entering deposits
->   with receipts, without receipts, and to clear receipts. You also can void
->   deposits.
+Bank Reconciliation enables you to manage your deposits by entering deposits with receipts, without receipts, and to clear receipts. You also can void deposits.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
--   *Bank deposits overview*
+- *Bank deposits overview*
 
--   *Entering a deposit with receipts*
+- *Entering a deposit with receipts*
 
--   *Deposit totals overview*
+- *Deposit totals overview*
 
--   *Entering a deposit without receipts*
+- *Entering a deposit without receipts*
 
--   *Clearing a receipt from a deposit*
+- *Clearing a receipt from a deposit*
 
--   *Voiding a deposit*
+- *Voiding a deposit*
 
--   *Deleting a deposit*
+- *Deleting a deposit*
 
-### Bank deposits overview
+#### Bank deposits overview
 
->   You can enter the following deposit types in Bank Reconciliation:
+You can enter the following deposit types in Bank Reconciliation:
 
--   Use Deposit with Receipts to enter a deposit for receipts that were posted
-    in Bank Reconciliation, or from another module.
+- Use Deposit with Receipts to enter a deposit for receipts that were posted in Bank Reconciliation, or from another module.
 
--   Use Deposit without Receipts to enter a deposit without assigning receipts.
+- Use Deposit without Receipts to enter a deposit without assigning receipts.
 
--   Use Deposit to Clear Receipts to remove a receipt from a list of receipts
-    available for deposit. You also can use this transaction type to clear
-    individual receipts made as part of a lump-sum deposit.
+- Use Deposit to Clear Receipts to remove a receipt from a list of receipts available for deposit. You also can use this transaction type to clear individual receipts made as part of a lump-sum deposit.
 
--   Use Void Deposit to remove deposits that were entered and posted
-    incorrectly.
+- Use Void Deposit to remove deposits that were entered and posted incorrectly.
 
->   Deposits both with and without receipts update the checkbook balance, but
->   not the General Ledger Cash account. For deposits with receipts, the Cash
->   account is updated when the receipt is posted.
+    Deposits both with and without receipts update the checkbook balance, but not the General Ledger Cash account. For deposits with receipts, the Cash account is updated when the receipt is posted.
 
->   If you’re using Multicurrency Management, however, and you have a realized
->   gain or loss due to an exchange rate calculation, the Realized Gain or Loss
->   account is updated.
+    If you’re using Multicurrency Management, however, and you have a realized gain or loss due to an exchange rate calculation, the Realized Gain or Loss account is updated.
 
->   If you need to enter a transaction to update your General Ledger account and
->   your checkbook balance, enter an increase adjustment in the Bank Transaction
->   Entry window instead of entering a deposit without receipts. See *Entering a
->   check, withdrawal, or adjustment transaction* on page 29 for more
->   information.
+    If you need to enter a transaction to update your General Ledger account and your checkbook balance, enter an increase adjustment in the Bank Transaction Entry window instead of entering a deposit without receipts. See *Entering a check, withdrawal, or adjustment transaction* on page 29 for more information.
 
->   You can save deposits to post later; however, you can save only one deposit
->   with receipts or deposit to clear receipts transaction for each checkbook at
->   a time.
+    You can save deposits to post later; however, you can save only one deposit with receipts or deposit to clear receipts transaction for each checkbook at a time.
 
-### Entering a deposit with receipts
+#### Entering a deposit with receipts
 
->   Use the Bank Deposit Entry window to choose the receipts to deposit. All the
->   selected checkbook’s receipts that are available for deposit appear in the
->   window, including receipts entered in other modules. After you post a
->   deposit with receipts transaction, the receipts aren’t available for future
->   deposits.
+Use the Bank Deposit Entry window to choose the receipts to deposit. All the selected checkbook’s receipts that are available for deposit appear in the window, including receipts entered in other modules. After you post a deposit with receipts transaction, the receipts aren’t available for future deposits.
 
->   The checkbook balance is updated by the deposit amount when you post.
->   General
+The checkbook balance is updated by the deposit amount when you post. General Ledger isn’t updated, because the Cash account was updated when the receipts were posted in other modules or in the Bank Transaction Entry window. To enter a transaction to update General Ledger, you could enter an increase adjustment in the Bank Transaction Entry window.
 
->   Ledger isn’t updated, because the Cash account was updated when the receipts
+Negative receipts might appear as selections in the scrolling window if you have a sales deposit that has been removed from an order or back order in Sales Order Processing; a cash refund for a merchandise return in Sales Order Processing or Receivables Management; or if the receipt for the original transaction already has been deposited.
 
->   were posted in other modules or in the Bank Transaction Entry window. To
->   enter a transaction to update General Ledger, you could enter an increase
->   adjustment in the Bank Transaction Entry window.
+If you’re doing business in Australia or New Zealand and you’re required to include bank and branch information on the Bank Deposit Worksheet, or if you want to change the bank or branch name for each receipt, you can enter the information in the Bank Deposit Entry window and use Report Writer to modify the report. See the Report Writer documentation for more information.
 
->   Negative receipts might appear as selections in the scrolling window if you
->   have a sales deposit that has been removed from an order or back order in
->   Sales Order Processing; a cash refund for a merchandise return in Sales
->   Order Processing or Receivables Management; or if the receipt for the
->   original transaction already has been deposited.
+**To enter a deposit with receipts:**
 
->   If you’re doing business in Australia or New Zealand and you’re required to
->   include bank and branch information on the Bank Deposit Worksheet, or if you
->   want to change the bank or branch name for each receipt, you can enter the
->   information in the Bank Deposit Entry window and use Report Writer to modify
->   the report. See the Report Writer documentation for more information.
+1. Open the Bank Deposit Entry window. (Transactions \>\> Financial \>\> Bank Deposits)
 
->   **To enter a deposit with receipts:**
+    ![A screenshot](media/e849b400114879af850b1fa0d0d3475c.jpg)
 
-1.  Open the Bank Deposit Entry window.
+2. Select Enter/Edit and the Deposit with Receipts type.
 
->   (Transactions \>\> Financial \>\> Bank Deposits)
+3. Enter the deposit date. If you’re using Multicurrency Management, the deposit date and currency ID determine the exchange rate.
 
-![A screenshot of a cell phone Description automatically generated](media/e849b400114879af850b1fa0d0d3475c.jpg)
+    To use a different posting date, choose the Deposit Date expansion button to open the Bank Deposit Date Entry window. Choose OK to close the window when you finish.
 
-A screenshot of a cell phone Description automatically generated
+4. Enter or select the checkbook ID and description. The next available deposit number and all receipts posted to the checkbook appear when you select the checkbook ID.
 
-1.  Select Enter/Edit and the Deposit with Receipts type.
+    If you’re using Multicurrency Management, the currency ID also appears. To verify your exchange rates, choose the Currency ID expansion button.
 
-2.  Enter the deposit date. If you’re using Multicurrency Management, the
-    deposit date and currency ID determine the exchange rate.
+   If you previously saved a deposit with receipts for the selected checkbook, that deposit transaction appears. You can have only one saved deposit for each checkbook.
 
->   To use a different posting date, choose the Deposit Date expansion button to
->   open the Bank Deposit Date Entry window. Choose OK to close the window when
->   you finish.
+5. To restrict the number of receipts that appear in the scrolling window, enter a range, then choose Redisplay.
 
-1.  Enter or select the checkbook ID and description. The next available deposit
-    number and all receipts posted to the checkbook appear when you select the
-    checkbook ID.
+6. Mark each receipt to include in the deposit. To mark or unmark a group of receipts, choose Mark All or Unmark All.
 
->   If you’re using Multicurrency Management, the currency ID also appears. To
->   verify your exchange rates, choose the Currency ID expansion button.
+    If you mark a group of receipts, and then you change the receipt type, date range, or currency ID and choose Redisplay, the previously marked group of receipts remains marked and you can mark additional receipts.
 
->   If you previously saved a deposit with receipts for the selected checkbook,
->   that deposit transaction appears. You can have only one saved deposit for
->   each checkbook.
+    The deposit amount at the bottom of the window is updated each time you mark or unmark a receipt.
 
-1.  To restrict the number of receipts that appear in the scrolling window,
-    enter a range, then choose Redisplay.
+7. To change the individual currency and coin amounts or to view total amounts for each receipt type, choose the Deposit Amount expansion button to open the Deposit Totals window. Choose OK to close the window when you finish.
 
-2.  Mark each receipt to include in the deposit. To mark or unmark a group of
-    receipts, choose Mark All or Unmark All.
+8. To print a Bank Deposit Worksheet so you can verify your receipts, choose File \>\> Print.
 
->   If you mark a group of receipts, and then you change the receipt type, date
->   range, or currency ID and choose Redisplay, the previously marked group of
->   receipts remains marked and you can mark additional receipts.
+9. Choose Save or Post. If you post a deposit, the Bank Deposit Posting Journal is printed when you close the window, depending on your selections in the Posting Setup window. The posting journal displays deposit information and all receipts marked for each deposit posted since you opened the window.
 
->   The deposit amount at the bottom of the window is updated each time you mark
->   or unmark a receipt.
+#### Deposit totals overview
 
-1.  To change the individual currency and coin amounts or to view total amounts
-    for each receipt type, choose the Deposit Amount expansion button to open
-    the Deposit Totals window. Choose OK to close the window when you finish.
+The Deposit Totals window displays the number of checks, credit cards, and cash receipts you marked for deposit, and the total monetary amounts for each type. You can enter separate totals for coin and currency.
 
-2.  To print a Bank Deposit Worksheet so you can verify your receipts, choose
-    File \>\> Print.
+**Example 1**
 
-3.  Choose Save or Post. If you post a deposit, the Bank Deposit Posting Journal
-    is printed when you close the window, depending on your selections in the
-    Posting Setup window. The posting journal displays deposit information and
-    all receipts marked for each deposit posted since you opened the window.
+You entered a cash receipt total of \$117.65. The amount of \$117.00 appears in the Currency Total Amounts field and \$0.65 appears in the Coin Total Amounts field, as shown in the following table:
 
-### Deposit totals overview
-
->   The Deposit Totals window displays the number of checks, credit cards, and
->   cash receipts you marked for deposit, and the total monetary amounts for
->   each type. You can enter separate totals for coin and currency.
-
->   **Example 1**
-
->   You entered a cash receipt total of \$117.65. The amount of \$117.00 appears
->   in the Currency Total Amounts field and \$0.65 appears in the Coin Total
->   Amounts field, as shown in the following table:
-
-| **Number of** |   | **Total amounts\*** |
+| **Number of** |   | **Total amounts** |
 |---------------|---|---------------------|
 | Checks        | 4 | \$28,000.00         |
 | Credit Cards  | 1 | \$52.00             |
@@ -1362,17 +964,13 @@ A screenshot of a cell phone Description automatically generated
 | Coin          |   | \$0.65              |
 | Total         | 6 | \$28,169.65         |
 
->   *\*If Multicurrency Management is registered, you can browse through this
->   information for each currency.*
+If Multicurrency Management is registered, you can browse through this information for each currency.
 
->   **Example 2**
+**Example 2**
 
->   You entered a cash receipt total of \$117.65. The actual coin amount is
->   \$16.65, and the total for the paper money is \$101.00. If you enter
->   \$101.00 in the Currency Total Amounts field, the coin amount is adjusted to
->   display \$16.65, as shown in the following table.
+You entered a cash receipt total of \$117.65. The actual coin amount is \$16.65, and the total for the paper money is \$101.00. If you enter \$101.00 in the Currency Total Amounts field, the coin amount is adjusted to display \$16.65, as shown in the following table.
 
-| **Number of** |   | **Total amounts\*** |
+| **Number of** |   | **Total amounts** |
 |---------------|---|---------------------|
 | Checks        | 4 | \$28,000.00         |
 | Credit Cards  | 1 | \$52.00             |
@@ -1380,595 +978,349 @@ A screenshot of a cell phone Description automatically generated
 | Coin          |   | \$16.65             |
 | Total         | 6 | \$28,169.65         |
 
->   *\*If Multicurrency Management is registered, you can browse through this
->   information for each currency.*
+If Multicurrency Management is registered, you can browse through this information for each currency.
 
-### Entering a deposit without receipts
+#### Entering a deposit without receipts
 
->   Use the Bank Deposit Entry window to enter deposits without receipts to
->   record a lump-sum deposit without assigning receipts.
+Use the Bank Deposit Entry window to enter deposits without receipts to record a lump-sum deposit without assigning receipts.
 
->   For example, suppose you entered a deposit to clear receipts because you
->   didn’t want to assign individual receipts to a deposit. You can then enter a
->   deposit without receipts transaction for the total amount of the receipts
->   you just cleared. Unlike deposits with receipts and deposits to clear
->   receipts, you can enter and save an unlimited number of deposit without
->   receipts transactions for each checkbook.
+For example, suppose you entered a deposit to clear receipts because you didn’t want to assign individual receipts to a deposit. You can then enter a deposit without receipts transaction for the total amount of the receipts you just cleared. Unlike deposits with receipts and deposits to clear receipts, you can enter and save an unlimited number of deposit without receipts transactions for each checkbook.
 
->   When you enter a deposit without receipts transaction, the total amount of
->   the deposit appears in the Checks Total Amounts field in the Deposit Totals
->   window. To enter individual totals for check, credit card, currency, and
->   coin amounts, choose the Deposit Amount expansion button in the Bank Deposit
->   Entry window to open the Deposit Totals window.
+When you enter a deposit without receipts transaction, the total amount of the deposit appears in the Checks Total Amounts field in the Deposit Totals window. To enter individual totals for check, credit card, currency, and coin amounts, choose the Deposit Amount expansion button in the Bank Deposit Entry window to open the Deposit Totals window.
 
->   When you post a deposit without receipts transaction, the checkbook balance
->   is updated by the deposit amount. If you need to enter a transaction to
->   update General Ledger, enter an adjustment, instead of a deposit without
->   receipts, in the Bank Transaction Entry window to ensure that the checkbook
->   balance isn’t updated twice. See *Entering a check, withdrawal, or
->   adjustment transaction* on page 29 for more information.
+When you post a deposit without receipts transaction, the checkbook balance is updated by the deposit amount. If you need to enter a transaction to update General Ledger, enter an adjustment, instead of a deposit without receipts, in the Bank Transaction Entry window to ensure that the checkbook balance isn’t updated twice. See *Entering a check, withdrawal, or adjustment transaction* on page 29 for more information.
 
->   **To enter a deposit without receipts:**
+**To enter a deposit without receipts:**
 
-1.  Open the Bank Deposit Entry window.
+1. Open the Bank Deposit Entry window. (Transactions \>\> Financial \>\> Bank Deposits)
 
->   (Transactions \>\> Financial \>\> Bank Deposits)
+    Select Enter/Edit and the Deposit without Receipts type. Enter the deposit date.
 
->   Select Enter/Edit and the Deposit without Receipts type. Enter the deposit
->   date.
+    If you’re using Multicurrency Management, the deposit date and currency ID determine the exchange rate. To use a different posting date, choose the Deposit Date expansion button to open the Bank Deposit Date Entry window. Choose OK to close the window when you finish.
 
->   If you’re using Multicurrency Management, the deposit date and currency ID
->   determine the exchange rate. To use a different posting date, choose the
->   Deposit Date expansion button to open the Bank Deposit Date Entry window.
->   Choose OK to close the window when you finish.
+2. Enter or select the checkbook ID and the description. The next available deposit number appears when you select the checkbook ID.
 
-1.  Enter or select the checkbook ID and the description. The next available
-    deposit number appears when you select the checkbook ID.
+    If you’re using Multicurrency Management, the currency ID also appears. To verify your exchange rates, choose the Currency ID expansion button.
 
->   If you’re using Multicurrency Management, the currency ID also appears. To
->   verify your exchange rates, choose the Currency ID expansion button.
+3. Enter the deposit amount. To break down the deposit into its component monetary types, choose the Deposit Amount expansion button to open the Deposit Totals window, and enter the correct amounts for checks, credit cards, currency, and coin. Choose OK to close the window when you finish.
 
-1.  Enter the deposit amount. To break down the deposit into its component
-    monetary types, choose the Deposit Amount expansion button to open the
-    Deposit Totals window, and enter the correct amounts for checks, credit
-    cards, currency, and coin. Choose OK to close the window when you finish.
+4. To print a Bank Deposit Worksheet so you can verify the information, choose File \>\> Print.
 
-2.  To print a Bank Deposit Worksheet so you can verify the information, choose
-    File \>\> Print.
+    To print the Multicurrency version of the report, mark Include Multicurrency Info in the Posting Setup window.
 
->   To print the Multicurrency version of the report, mark Include Multicurrency
->   Info in the Posting Setup window.
+5. Choose Save or Post. If you post the deposit, the Bank Deposit Posting Journal is printed when you close the window, depending on your selections in the Posting Setup window. The posting journal displays deposit information for each deposit posted since you opened the window.
 
-1.  Choose Save or Post. If you post the deposit, the Bank Deposit Posting
-    Journal is printed when you close the window, depending on your selections
-    in the Posting Setup window. The posting journal displays deposit
-    information for each deposit posted since you opened the window.
+#### Clearing a receipt from a deposit
 
-### Clearing a receipt from a deposit
+Use the Bank Deposit Entry window to remove receipts you don’t want to assign individually to a deposit. For example, if you entered a deposit without receipts transaction because you don’t want to assign individual receipts to a deposit, you can remove the receipts by entering a deposit to clear receipts transaction. You can save only one deposit to clear receipts or deposit with receipts transaction at a time for each checkbook.
 
->   Use the Bank Deposit Entry window to remove receipts you don’t want to
->   assign individually to a deposit. For example, if you entered a deposit
->   without receipts transaction because you don’t want to assign individual
->   receipts to a deposit, you can remove the receipts by entering a deposit to
->   clear receipts transaction. You can save only one deposit to clear receipts
->   or deposit with receipts transaction at a time for each checkbook.
+Use a deposit to clear receipts transaction to remove the receipts from the system, if you have existing receipts that won’t be assigned to a specific deposit because the amount has already been deposited. When you enter a deposit to clear receipts transaction, the deposit amount is zero, and the  checkbook balance and General Ledger Cash account aren’t updated when you post. The Cash account was updated when the receipts were posted in subsidiary modules or in the Bank Transaction Entry window.
 
->   Use a deposit to clear receipts transaction to remove the receipts from the
->   system, if you have existing receipts that won’t be assigned to a specific
->   deposit because the amount has already been deposited. When you enter a
->   deposit to clear receipts transaction, the deposit amount is zero, and the
->   checkbook balance and General Ledger Cash account aren’t updated when you
->   post. The Cash account was updated when the receipts were posted in
->   subsidiary modules or in the Bank Transaction Entry window.
+**To clear a receipt from a deposit:**
 
->   **To clear a receipt from a deposit:**
+1. Open the Bank Deposit Entry window. (Transactions \>\> Financial \>\> Bank Deposits)
 
-1.  Open the Bank Deposit Entry window.
+    Select Enter/Edit and the Deposit to Clear Receipts type.
 
->   (Transactions \>\> Financial \>\> Bank Deposits)
+2. Enter the deposit date.
 
->   Select Enter/Edit and the Deposit to Clear Receipts type.
+3. Enter or select the checkbook ID and description. The next available deposit number appears when you select the checkbook ID. If you’re using Multicurrency Management, the currency ID also appears.
 
-1.  Enter the deposit date.
+    If you already entered and saved a deposit to clear receipts transaction, that deposit is displayed, because you can save only one deposit to clear receipts transaction for each checkbook. To enter a new deposit to clear receipts or deposit with receipts transaction, you must post or delete the existing deposit first.
 
-2.  Enter or select the checkbook ID and description. The next available deposit
-    number appears when you select the checkbook ID. If you’re using
-    Multicurrency Management, the currency ID also appears.
+4. To restrict the number of receipts visible in the scrolling window, enter a range for the receipts and choose Redisplay.
 
->   If you already entered and saved a deposit to clear receipts transaction,
->   that deposit is displayed, because you can save only one deposit to clear
->   receipts transaction for each checkbook. To enter a new deposit to clear
->   receipts or deposit with receipts transaction, you must post or delete the
->   existing deposit first.
+5. Mark each receipt to clear. If you mark a group of receipts, and then you change the receipt type, date range, or currency ID and choose Redisplay, the previously marked group of receipts remains marked and you can mark additional receipts.
 
-1.  To restrict the number of receipts visible in the scrolling window, enter a
-    range for the receipts and choose Redisplay.
+    To view total amounts for each receipt type, choose the Deposit Amount expansion button to open the Deposit Totals window. To print a Bank Deposit Worksheet so you can verify your receipts, choose File \>\> Print. To print the Multicurrency version of the report, mark Include Multicurrency Info in the Posting Setup window.
 
-2.  Mark each receipt to clear. If you mark a group of receipts, and then you
-    change the receipt type, date range, or currency ID and choose Redisplay,
-    the previously marked group of receipts remains marked and you can mark
-    additional receipts.
+6. Choose Save or Post. If you post a deposit, the Bank Deposit Posting Journal is printed when you close the Bank Deposit Entry window, depending on your selections in the Posting Setup window. The posting journal displays deposit information and all receipts marked for each deposit posted since you opened the window.
 
->   To view total amounts for each receipt type, choose the Deposit Amount
->   expansion button to open the Deposit Totals window. To print a Bank Deposit
->   Worksheet so you can verify your receipts, choose File \>\> Print. To print
->   the Multicurrency version of the report, mark Include Multicurrency Info in
->   the Posting Setup window.
+#### Voiding a deposit
 
-1.  Choose Save or Post. If you post a deposit, the Bank Deposit Posting Journal
-    is printed when you close the Bank Deposit Entry window, depending on your
-    selections in the Posting Setup window. The posting journal displays deposit
-    information and all receipts marked for each deposit posted since you opened
-    the window.
+Use the Bank Deposit Entry window to void a deposit. Unlike deleted deposits, voided deposits are kept in history, if you’re keeping bank transaction history. The following table explains what happens when you void the different deposit types:
 
-### Voiding a deposit
-
->   Use the Bank Deposit Entry window to void a deposit. Unlike deleted
->   deposits, voided deposits are kept in history, if you’re keeping bank
->   transaction history. The following table explains what happens when you void
->   the different deposit types:
-
-| **Voided transaction**    | **What happens**                                                                                                                                                                                            |
-|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Deposit with receipt      | Any receipts assigned to the deposit are unmarked and you can reassign them to another deposit. The checkbook balance is updated by the voided deposit amount.                                              |
-| Deposit without receipt   | The checkbook balance is updated by the voided deposit amount.                                                                                                                                              |
+| **Voided transaction**    | **What happens**  |
+|---------------------------|--------|
+| Deposit with receipt      | Any receipts assigned to the deposit are unmarked and you can reassign them to another deposit. The checkbook balance is updated by the voided deposit amount.   |
+| Deposit without receipt   | The checkbook balance is updated by the voided deposit amount.   |
 | Deposit to clear receipts | Any receipts assigned to the deposit are unmarked and you can reassign them to another deposit. The checkbook balance is not changed because the balance wasn’t updated when the actual deposit was posted. |
 
->   If Multicurrency Management is registered and the receipts on the original
->   deposit had a realized gain or loss, the amount of the gain or loss is
->   reversed. Your system uses the exchange rate from the original deposit to
->   ensure that the amounts are updated correctly. If you’re not keeping
->   history, the deposit information is deleted.
+If Multicurrency Management is registered and the receipts on the original deposit had a realized gain or loss, the amount of the gain or loss is reversed. Your system uses the exchange rate from the original deposit to ensure that the amounts are updated correctly. If you’re not keeping history, the deposit information is deleted.
 
->   The following conditions must exist before a you can void a deposit:
+The following conditions must exist before a you can void a deposit:
 
--   The deposit appears in the Checkbook Register Inquiry window.
+- The deposit appears in the Checkbook Register Inquiry window.
 
--   The deposit hasn’t been reconciled or voided.
+- The deposit hasn’t been reconciled or voided.
 
--   The deposit hasn’t been marked for reconciliation.
+- The deposit hasn’t been marked for reconciliation.
 
--   The checkbook assigned to the deposit exists and a Cash account is assigned
-    to it.
+- The checkbook assigned to the deposit exists and a Cash account is assigned to it.
 
--   If you’re using Multicurrency Management, the currency ID for the checkbook
-    is active.
+- If you’re using Multicurrency Management, the currency ID for the checkbook is active.
 
->   **To void a deposit:**
+**To void a deposit:**
 
-1.  Open the Bank Deposit Entry window.
+1. Open the Bank Deposit Entry window. (Transactions \>\> Financial \>\> Bank Deposits)
 
->   (Transactions \>\> Financial \>\> Bank Deposits)
+2. Select Void.
 
-1.  Select Void.
+3. Enter or select the checkbook ID and deposit number to void. The original deposit information is displayed.
 
-2.  Enter or select the checkbook ID and deposit number to void. The original
-    deposit information is displayed.
+4. Choose Void to void the deposit.
 
-3.  Choose Void to void the deposit.
+5. Close the window. The Bank Deposit Posting Journal is printed. Deposits voided since you opened the window are marked with an asterisk (\*) on the report. To print the Multicurrency version of the report, mark Include Multicurrency Info in the Posting Setup window.
 
-4.  Close the window. The Bank Deposit Posting Journal is printed. Deposits
-    voided since you opened the window are marked with an asterisk (\*) on the
-    report. To print the Multicurrency version of the report, mark Include
-    Multicurrency Info in the Posting Setup window.
+#### Deleting a deposit
 
-### Deleting a deposit
+Use the Bank Deposit Entry window to delete deposits. You can delete a deposit that has been saved, but not posted. All receipts assigned to the deposit are unmarked and become available for deposit. When you delete a deposit, historical records are not updated.
 
->   Use the Bank Deposit Entry window to delete deposits. You can delete a
->   deposit that has been saved, but not posted. All receipts assigned to the
->   deposit are unmarked and become available for deposit. When you delete a
->   deposit, historical records are not updated.
+**To delete a deposit:**
 
->   **To delete a deposit:**
+1. Open the Bank Deposit Entry window. (Transactions \>\> Financial \>\> Bank Deposits)
 
-1.  Open the Bank Deposit Entry window.
+2. Enter or select the checkbook ID and deposit number to delete.
 
->   (Transactions \>\> Financial \>\> Bank Deposits)
+3. Choose Delete.
 
-1.  Enter or select the checkbook ID and deposit number to delete.
+### Chapter 9: Bank account transfers
 
-2.  Choose Delete.
+Transferring funds from one checkbook to another ensures that your accounts contain the correct amounts for your accounting activities. For example, you might want to transfer funds from your general checkbook account to your payroll checkbook account before each payday.
 
-Chapter 9: Bank account transfers
----------------------------------
+This information is divided into the following sections:
 
->   Transferring funds from one checkbook to another ensures that your accounts
->   contain the correct amounts for your accounting activities. For example, you
->   might want to transfer funds from your general checkbook account to your
->   payroll checkbook account before each payday.
+- *Transferring funds between checkbooks*
 
->   This information is divided into the following sections:
+- *Voiding a bank account transfer*
 
--   *Transferring funds between checkbooks*
+#### Transferring funds between checkbooks
 
--   *Voiding a bank account transfer*
+Use the Bank Transfer Entry window to transfer funds from one checkbook to another. The default transfer number for each transaction increments from the previous number, and the three-letter code is based on your selections in the Bank Reconciliation Setup window. You can use duplicate transfer numbers.
 
-### Transferring funds between checkbooks
+To transfer funds, both checkbooks must be assigned the same currency, or one checkbook must be assigned to the functional currency. The multicurrency transfer date and currency ID determine the exchange rate for transfers.
 
->   Use the Bank Transfer Entry window to transfer funds from one checkbook to
->   another. The default transfer number for each transaction increments from
->   the previous number, and the three-letter code is based on your selections
->   in the Bank Reconciliation Setup window. You can use duplicate transfer
->   numbers.
+**To transfer funds between checkbooks:**
 
->   To transfer funds, both checkbooks must be assigned the same currency, or
->   one checkbook must be assigned to the functional currency. The multicurrency
->   transfer date and currency ID determine the exchange rate for transfers.
+1. Open the Bank Transfer Entry window. (Transactions \>\> Financial \>\> Bank Transfers)
 
->   **To transfer funds between checkbooks:**
+    ![A screenshot](media/370e903392c878fd60a95aa79d507793.jpg)
 
-1.  Open the Bank Transfer Entry window.
+2. Select Enter Transfer.
 
->   (Transactions \>\> Financial \>\> Bank Transfers)
+3. Enter the transfer number.
 
-![A screenshot of a cell phone Description automatically generated](media/370e903392c878fd60a95aa79d507793.jpg)
+4. Enter the transfer date. To use a posting date that’s different from the transfer date, choose the Transfer Date expansion button to open the Bank Transfer Date window and enter a posting date. Choose OK to close the window when you finish.
 
-A screenshot of a cell phone Description automatically generated
+5. Enter the transfer description, which states why you’re transferring the funds. For example, suppose you need to cover the payroll for December 2019. You might enter Pay December 2019.
 
-1.  Select Enter Transfer.
+6. Enter or select the checkbook ID for the checkbook you’re transferring funds from. The Cash account that’s set up for the checkbook appears and is the account that’s updated in General Ledger.
 
-2.  Enter the transfer number.
+7. Enter the distribution reference for the Cash account that you’re transferring funds from.
 
-3.  Enter the transfer date. To use a posting date that’s different from the
-    transfer date, choose the Transfer Date expansion button to open the Bank
-    Transfer Date window and enter a posting date. Choose OK to close the window
-    when you finish.
+8. Enter the amount to be transferred.
 
-4.  Enter the transfer description, which states why you’re transferring the
-    funds. For example, suppose you need to cover the payroll for December 2004.
-    You might enter Pay December 2004.
+    If you’re using Multicurrency Management and you’re transferring funds between checkbooks that are assigned to the functional currency, the amount appears in both the Functional Amount and the Amount fields in the Transfer To column. If you’re transferring funds between checkbooks that aren’t assigned to the functional currency, the equivalent amount in the functional currency also is displayed.
 
-5.  Enter or select the checkbook ID for the checkbook you’re transferring funds
-    from. The Cash account that’s set up for the checkbook appears and is the
-    account that’s updated in General Ledger.
+9. Enter or select the checkbook ID for the checkbook you’re transferring funds to. The Cash account that’s set up for the checkbook appears and is the account that’s updated in General Ledger.
 
-6.  Enter the distribution reference for the Cash account that you’re
-    transferring funds from.
+    If you’re using Multicurrency Management, the currency ID also appears. To verify your exchange rates, choose the currency ID expansion button.
 
-7.  Enter the amount to be transferred.
+10. Enter the distribution reference for the Cash account that you’re transferring funds to.
 
->   If you’re using Multicurrency Management and you’re transferring funds
->   between checkbooks that are assigned to the functional currency, the amount
->   appears in both the Functional Amount and the Amount fields in the Transfer
->   To column. If you’re transferring funds between checkbooks that aren’t
->   assigned to the functional currency, the equivalent amount in the functional
->   currency also is displayed.
+    If you’re using Multicurrency Management, the Transfer To and Functional amounts are displayed.
 
-1.  Enter or select the checkbook ID for the checkbook you’re transferring funds
-    to. The Cash account that’s set up for the checkbook appears and is the
-    account that’s updated in General Ledger.
+11. Choose Post. The Bank Transfers Posting Journal is printed when you close the window, based on settings in the Posting Setup window. Both checkbook balances and Cash accounts are updated to reflect the posted transfer. The posting journal displays all transfer transactions posted since you opened the window.
 
->   If you’re using Multicurrency Management, the currency ID also appears. To
->   verify your exchange rates, choose the currency ID expansion button.
+#### Voiding a bank account transfer
 
-1.  Enter the distribution reference for the Cash account that you’re
-    transferring funds to.
+When you void transfers, the original transfer date appears. The transfer transaction must meet the following conditions before it you can void it:
 
->   If you’re using Multicurrency Management, the Transfer To and Functional
->   amounts are displayed.
+- It hasn’t been reconciled or marked for reconciliation in either checkbook.
 
-1.  Choose Post. The Bank Transfers Posting Journal is printed when you close
-    the window, based on settings in the Posting Setup window. Both checkbook
-    balances and Cash accounts are updated to reflect the posted transfer. The
-    posting journal displays all transfer transactions posted since you opened
-    the window.
+- No other users are editing the transaction.
 
-### Voiding a bank account transfer
+If you use duplicate transfer numbers, be sure to select the correct transaction from the list in the lookup window.
 
-When you void transfers, the original transfer date appears. The transfer
-transaction must meet the following conditions before it you can void it:
+**To void a bank account transfer:**
 
--   It hasn’t been reconciled or marked for reconciliation in either checkbook.
+1. Open the Bank Transfer Entry window. (Transactions \>\> Financial \>\> Bank Transfers)
 
--   No other users are editing the transaction.
+    Select Void Transfer.
 
-If you use duplicate transfer numbers, be sure to select the correct transaction
-from the list in the lookup window.
+2. Enter or select the transfer number to void. If you’re using Multicurrency Management, your system uses the exchange rate from the original transfer transaction to ensure that the amounts are updated correctly.
 
->   **To void a bank account transfer:**
+3. Enter or select the transfer number to void.
 
-1.  Open the Bank Transfer Entry window.
+    If you’re using Multicurrency Management, your system uses the exchange rate from the original transfer transaction to ensure that the amounts are updated correctly.
 
->   (Transactions \>\> Financial \>\> Bank Transfers)
+4. Enter the transfer date, description, and distribution references for the Cash accounts.
 
->   Select Void Transfer.
+5. Choose Void to void the transfer.
 
-1.  Enter or select the transfer number to void. If you’re using Multicurrency
-    Management, your system uses the exchange rate from the original transfer
-    transaction to ensure that the amounts are updated correctly.
+6. Close the window. The checkbook balances and Cash accounts are updated to reflect the voided transaction. The Bank Transfers Posting Journal is printed based on your settings in the Posting Setup window. Transfer transactions voided since you opened the window are marked with an asterisk.
 
-2.  Enter or select the transfer number to void.
+### Chapter 10: Bank statement reconciliation
 
->   If you’re using Multicurrency Management, your system uses the exchange rate
->   from the original transfer transaction to ensure that the amounts are
->   updated correctly.
+Reconciling is the process that identifies discrepancies that might exist between a checkbook’s register and the bank statement for that checkbook. Once you review your bank statement and enter adjusting amounts, you can reconcile to ensure that the balance in your checkbook matches the balance reported on your bank statement. If you’re keeping history, transactions become historical records once they’ve been reconciled.
 
-1.  Enter the transfer date, description, and distribution references for the
-    Cash accounts.
+This information is divided into the following sections:
 
-2.  Choose Void to void the transfer.
+- *Bank statement reconciliation overview*
 
-3.  Close the window. The checkbook balances and Cash accounts are updated to
-    reflect the voided transaction. The Bank Transfers Posting Journal is
-    printed based on your settings in the Posting Setup window. Transfer
-    transactions voided since you opened the window are marked with an asterisk.
+- *Reconciling a bank statement with a checkbook*
 
-Chapter 10: Bank statement reconciliation
------------------------------------------
+- *Entering a miscellaneous bank adjustment transaction*
 
->   Reconciling is the process that identifies discrepancies that might exist
->   between a checkbook’s register and the bank statement for that checkbook.
->   Once you review your bank statement and enter adjusting amounts, you can
->   reconcile to ensure that the balance in your checkbook matches the balance
->   reported on your bank statement. If you’re keeping history, transactions
->   become historical records once they’ve been reconciled.
+- *Entering cleared differences*
 
->   This information is divided into the following sections:
+- *Preview reports*
 
--   *Bank statement reconciliation overview*
+#### Bank statement reconciliation overview
 
--   *Reconciling a bank statement with a checkbook*
+To reconcile your checkbook with your bank statement, mark the transactions that have cleared the bank and check the amounts against those that appear on the statement. If a transaction cleared the bank for a different amount than was entered, you can enter the difference and distribute the amount to the posting account of your choice. You also can enter adjusting entries to track interest income, other expenses or income, and service charges, so that you can reconcile the checkbook properly. If you’re not keeping history, the transaction information is deleted after reconciling.
 
--   *Entering a miscellaneous bank adjustment transaction*
+The checks you mark as cleared are reclassified as historical records (if you’re keeping history), and appear on historical transaction reports after you reconcile.
 
--   *Entering cleared differences*
+#### Reconciling a bank statement with a checkbook
 
--   *Preview reports*
+Use the Reconcile Bank Statements window to reconcile the cash-related transaction information you entered with the transaction information recorded by the banking institution.
 
-### Bank statement reconciliation overview
+> [!NOTE]
+> Before reconciling, back up all your company’s accounting data. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
->   To reconcile your checkbook with your bank statement, mark the transactions
->   that have cleared the bank and check the amounts against those that appear
->   on the statement. If a transaction cleared the bank for a different amount
->   than was entered, you can enter the difference and distribute the amount to
->   the posting account of your choice. You also can enter adjusting entries to
->   track interest income, other expenses or income, and service charges, so
->   that you can reconcile the checkbook properly. If you’re not keeping
->   history, the transaction information is deleted after reconciling.
+**To reconcile a bank statement with a checkbook:**
 
->   The checks you mark as cleared are reclassified as historical records (if
->   you’re keeping history), and appear on historical transaction reports after
->   you reconcile.
+1. Open the Reconcile Bank Statements window. (Transactions \>\> Financial \>\> Reconcile Bank Statement)
 
-### Reconciling a bank statement with a checkbook
+    ![A screenshot](media/0002920b9afe9b744c41579a04467921.jpg)
 
->   Use the Reconcile Bank Statements window to reconcile the cash-related
->   transaction information you entered with the transaction information
->   recorded by the banking institution.
+2. Enter or select a checkbook to reconcile. You can reconcile both active and inactive checkbooks. If you previously saved reconciliation information for this checkbook, that information is displayed and you can edit it.
 
->   *Before reconciling, back up all your company’s accounting data. See the
->   System Administrator’s Guide (Help \>\> Contents \>\> select System
->   Administration) for more information about making backups.*
+3. Enter the ending balance and ending date reported on your bank statement.
 
->   **To reconcile a bank statement with a checkbook:**
+4. Enter a cutoff date for this reconciliation. Transactions with dates that fall on or before the cutoff date appear in the scrolling window of the Select Bank Transactions window. If you leave the cutoff date blank, all posted transactions that haven’t been reconciled or voided are displayed in the Select Bank Transactions window.
 
-1.  Open the Reconcile Bank Statements window.
+    The reconcile process will list voided transactions that were created before the cutoff date and voided after the cutoff date as outstanding transactions.
 
->   (Transactions \>\> Financial \>\> Reconcile Bank Statement)
+5. Choose Transactions to open the Select Bank Transactions window.
 
-![A screenshot of a cell phone Description automatically generated](media/0002920b9afe9b744c41579a04467921.jpg)
+    ![A screenshot](media/55f33bfd6b07c61eb4c9aedcce82cfa8.jpg)
 
-A screenshot of a cell phone Description automatically generated
+    If you’re editing saved reconciliation information, the transactions you marked previously remain marked. The totals for the payments and deposits in the cleared transaction section of the Select Bank Transactions window include only payments and deposits. The totals do not include adjustment transactions.
 
-1.  Enter or select a checkbook to reconcile. You can reconcile both active and
-    inactive checkbooks. If you previously saved reconciliation information for
-    this checkbook, that information is displayed and you can edit it.
+6. Mark the C column for the transactions that have been cleared by the bank. To enter cleared differences—transactions that have a cleared amount different from the amount entered in the checkbook—see *Entering cleared differences* on page 56.
 
-2.  Enter the ending balance and ending date reported on your bank statement.
+    > [!TIP]
+    > Use the spacebar to mark the check box. The arrows on the sides of the scrolling window are visual indicators that show which line you’re currently focused on.
 
-3.  Enter a cutoff date for this reconciliation. Transactions with dates that
-    fall on or before the cutoff date appear in the scrolling window of the
-    Select Bank Transactions window. If you leave the cutoff date blank, all
-    posted transactions that haven’t been reconciled or voided are displayed in
-    the Select Bank Transactions window.
+    The number of cleared transactions and the total amount are updated as you mark each transaction. You can view the original entries by selecting a transaction and choosing the Number link.
 
->   The reconcile process will list voided transactions that were created before
->   the cutoff date and voided after the cutoff date as outstanding
->   transactions.
+    To mark or unmark a range of documents, select the first transaction to include and choose Range \>\> Begin Range. A left arrow symbol (\<) appears next to the transaction in the Type column, identifying the beginning of the range. Select the last transaction to include in the range and choose Range \>\> End Range. A right arrow symbol (\>) appears next to the transaction in the Type column, indicating the end of the range. An asterisk appears next to each transaction included in the range. Choose Range \>\> Mark to mark those transactions as cleared. Choose Range \>\> Unmark to unmark a range of transactions.
 
-1.  Choose Transactions to open the Select Bank Transactions window.
+    > [!NOTE]
+    > The Cleared Transactions section of this window includes only payments and deposits. Adjustments are not included in the totals.
 
-![A screenshot of a social media post Description automatically generated](media/55f33bfd6b07c61eb4c9aedcce82cfa8.jpg)
+    To enter adjusting amounts, choose Adjustments to open the Reconcile Bank Adjustments window. See *Entering a miscellaneous bank adjustment transaction* on page 55 for more information. Choose OK to close the window when you finish.
 
-A screenshot of a social media post Description automatically generated
+7. Choose File \>\> Print and select the reports to print.
 
->   If you’re editing saved reconciliation information, the transactions you
->   marked previously remain marked. The totals for the payments and deposits in
->   the cleared transaction section of the Select Bank Transactions window
->   include only payments and deposits. The totals do not include adjustment
->   transactions.
+    The following table describes the reports that you can print:
 
-1.  Mark the C column for the transactions that have been cleared by the bank.
-    To enter cleared differences—transactions that have a cleared amount
-    different from the amount entered in the checkbook—see *Entering cleared
-    differences* on page 56.
+    | **Report**                 | **Displays**             |
+    |----------------------------|--------------------------|
+    | Reconciliation Edit List   | Checkbook and bank statement balance information  |
+    | Bank Adjustments Edit List | Adjustment transactions entered using the Reconcile Bank   |
+    | Marked Transactions Report | Transactions that have been marked as cleared  |
+    | Outstanding Transactions   | Transactions that haven’t cleared the bank, and that fall between the bank statement ending date and the cutoff date entered in the Reconcile Bank Statements window|
 
->   *Use the spacebar to mark the check box. The arrows on the sides of the
->   scrolling window are visual indicators that show which line you’re currently
->   focused on.*
+    Adjustments window
 
->   The number of cleared transactions and the total amount are updated as you
->   mark each transaction. You can view the original entries by selecting a
->   transaction and choosing the Number link.
+    Report
 
->   To mark or unmark a range of documents, select the first transaction to
->   include and choose Range \>\> Begin Range. A left arrow symbol (\<) appears
->   next to the transaction in the Type column, identifying the beginning of the
->   range. Select the last transaction to include in the range and choose Range
->   \>\> End Range. A right arrow symbol (\>) appears next to the transaction in
->   the Type column,
+    If you’re using Multicurrency Management, you can print the Bank Adjustments Edit List with both originating and functional information if you marked Include Multicurrency Info in the Posting Setup window.
 
->   indicating the end of the range. An asterisk appears next to each
->   transaction included in the range. Choose Range \>\> Mark to mark those
->   transactions as cleared. Choose Range \>\> Unmark to unmark a range of
->   transactions.
+8. Choose Reconcile to reconcile the checkbook. The difference between the adjusted checkbook balance and the adjusted bank balance must be zero before the system reconciles the checkbook with the bank statement. The adjustment transactions update Bank Reconciliation, General Ledger, and the checkbook balance. All cleared transactions and any adjusting entries are transferred to history, if you’re keeping history.
 
->   *The Cleared Transactions section of this window includes only payments and
->   deposits. Adjustments are not included in the totals.*
+When the process is complete, the Reconciliation Posting Journal, Bank Adjustments Posting Journal, and Cleared Transactions Journal are printed. The Last Reconciled Balance and Last Reconciled Date fields for this checkbook in the Checkbook Maintenance window are updated with the bank statement ending balance and the bank statement ending date.
 
->   To enter adjusting amounts, choose Adjustments to open the Reconcile Bank
->   Adjustments window. See *Entering a miscellaneous bank adjustment
->   transaction* on page 55 for more information. Choose OK to close the window
->   when you finish.
+#### Entering a miscellaneous bank adjustment transaction
 
-1.  Choose File \>\> Print and select the reports to print.
+Use the Reconcile Bank Adjustments window to enter adjustment transactions—such as service charges, interest income received, and other income or expenses—to adjust the checkbook balances. These adjustments must be entered in the same currency as the checkbook.
 
->   The following table describes the reports that you can print:
+**To enter a miscellaneous bank adjustment transaction:**
 
-| **Report**                 | **Displays**                                                                                                                                                         |
-|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reconciliation Edit List   | Checkbook and bank statement balance information                                                                                                                     |
-| Bank Adjustments Edit List | Adjustment transactions entered using the Reconcile Bank                                                                                                             |
-| Marked Transactions Report | Transactions that have been marked as cleared                                                                                                                        |
-| Outstanding Transactions   | Transactions that haven’t cleared the bank, and that fall between the bank statement ending date and the cutoff date entered in the Reconcile Bank Statements window |
+1. Open the Reconcile Bank Statements window. (Transactions \>\> Financial \>\> Reconcile Bank Statement)
 
->   Adjustments window
+2. Enter or select a checkbook ID, and enter bank statement information.
 
->   Report
+3. Choose Transactions to open the Select Bank Transactions window.
 
->   If you’re using Multicurrency Management, you can print the Bank Adjustments
->   Edit List with both originating and functional information if you marked
->   Include Multicurrency Info in the Posting Setup window.
+4. Choose Adjustments to open the Reconcile Bank Adjustments window.
 
-1.  Choose Reconcile to reconcile the checkbook. The difference between the
-    adjusted checkbook balance and the adjusted bank balance must be zero before
-    the system reconciles the checkbook with the bank statement. The adjustment
-    transactions update Bank Reconciliation, General Ledger, and the checkbook
-    balance. All cleared transactions and any adjusting entries are transferred
-    to history, if you’re keeping history.
+    ![A screenshot ](media/1bae8593653e330280591c45c26195d1.jpg)
 
->   When the process is complete, the Reconciliation Posting Journal, Bank
+5. Select the transaction type to enter.
 
->   Adjustments Posting Journal, and Cleared Transactions Journal are printed.
->   The Last Reconciled Balance and Last Reconciled Date fields for this
->   checkbook in the Checkbook Maintenance window are updated with the bank
->   statement ending balance and the bank statement ending date.
+6. Enter a transaction date. The bank statement ending date you entered in the Reconcile Bank Statements window appears as a default entry. If you’re using Multicurrency Management, the transaction date and currency ID determine the exchange rate for the transaction.
 
-### Entering a miscellaneous bank adjustment transaction
+7. Enter or select an account to offset the Cash account.
 
->   Use the Reconcile Bank Adjustments window to enter adjustment transactions—
->   such as service charges, interest income received, and other income or
->   expenses—to adjust the checkbook balances. These adjustments must be entered
->   in the same currency as the checkbook.
+    For example, if you’re entering interest income, you can use an Interest Income account. The adjustment updates General Ledger and Bank Reconciliation when you reconcile checkbook balances.
 
->   **To enter a miscellaneous bank adjustment transaction:**
+    The 12-character transaction number appears when you select the transaction type.
 
-1.  Open the Reconcile Bank Statements window.
+8. Enter the adjustment amount. You can enter only positive numbers. The offset and Cash accounts are debited or credited by this amount, depending on the type of transaction.
 
->   (Transactions \>\> Financial \>\> Reconcile Bank Statement)
+9. Repeat steps 5 through 8 until you finish entering the adjusting entries, then choose OK to close the Reconcile Bank Adjustments window.
 
-1.  Enter or select a checkbook ID, and enter bank statement information.
+#### Entering cleared differences
 
-2.  Choose Transactions to open the Select Bank Transactions window.
+Sometimes a check might clear the bank for an amount that’s different than the amount you recorded. When transactions clear the bank for a different amount than what was posted, and a different cleared amount is entered in the Cleared Amount Entry window, an information icon appears for those transaction amounts in the Select Bank Transactions window. This indicates that the cleared amount for the transaction is different from the amount entered in the checkbook. The posted amount appears in the Select Bank Transactions window, and the cleared amount appears as the total amount for cleared transactions.
 
-3.  Choose Adjustments to open the Reconcile Bank Adjustments window.
+**To enter cleared differences:**
 
-![A screenshot of a cell phone Description automatically generated](media/1bae8593653e330280591c45c26195d1.jpg)
+1. Open the Reconcile Bank Statements window. (Transactions \>\> Financial \>\> Reconcile Bank Statement)
 
-A screenshot of a cell phone Description automatically generated
+2. Enter or select a checkbook ID, and enter bank statement information.
 
-1.  Select the transaction type to enter.
+3. Choose Transactions to open the Select Bank Transactions window.
 
-2.  Enter a transaction date. The bank statement ending date you entered in the
-    Reconcile Bank Statements window appears as a default entry. If you’re using
-    Multicurrency Management, the transaction date and currency ID determine the
-    exchange rate for the transaction.
+4. Select the transaction with the differing amount and choose the Payment or Deposit expansion button to open the Cleared Amount Entry window.
 
-3.  Enter or select an account to offset the Cash account.
+    ![A screenshot](media/03d1dc7aac56a7d852ec1a589ec168df.jpg)
 
->   For example, if you’re entering interest income, you can use an Interest
->   Income account. The adjustment updates General Ledger and Bank
->   Reconciliation when you reconcile checkbook balances.
+5. Enter the cleared amount for the transaction. For example, suppose a check was recorded for \$17,567.11, but it cleared the bank for \$17,567.13. You would enter \$17,567.13 in the Cleared Amount field, and a \$0.02 difference would appear in the Difference field.
 
->   The 12-character transaction number appears when you select the transaction
->   type.
+6. Choose OK to save your changes and close the window. The Select Bank Transactions window is displayed.
 
-1.  Enter the adjustment amount. You can enter only positive numbers. The offset
-    and Cash accounts are debited or credited by this amount, depending on the
-    type of transaction.
+7. Choose Adjustments to open the Reconcile Bank Adjustments window.
 
-2.  Repeat steps 5 through 8 until you finish entering the adjusting entries,
-    then choose OK to close the Reconcile Bank Adjustments window.
+8. Enter an adjustment for the amount of the difference. Both the checkbook and the Cash account are updated when you reconcile. As you enter account information and adjusting entries, the reconcile difference is subtracted from the net adjustment. See *Entering a miscellaneous bank adjustment transaction* on page 55 for more information.
 
-### Entering cleared differences
+    Choose OK to close the window and return to the Select Bank Transactions window.
 
->   Sometimes a check might clear the bank for an amount that’s different than
->   the amount you recorded. When transactions clear the bank for a different
->   amount than what was posted, and a different cleared amount is entered in
->   the Cleared Amount Entry window, an information icon appears for those
->   transaction amounts in the Select Bank Transactions window. This indicates
->   that the cleared amount for the transaction is different from the amount
->   entered in the checkbook. The posted amount appears in the Select Bank
->   Transactions window, and the cleared amount appears as the total amount for
->   cleared transactions.
+When you finish, the difference should be zero. If the difference isn’t zero, you should complete the following tasks:
 
->   **To enter cleared differences:**
+- Verify that the correct transactions are marked.
 
-1.  Open the Reconcile Bank Statements window.
+- Verify that the transactions were entered correctly.
 
->   (Transactions \>\> Financial \>\> Reconcile Bank Statement)
+- Enter additional adjusting entries, if necessary.
 
-1.  Enter or select a checkbook ID, and enter bank statement information.
+#### Preview reports
 
-2.  Choose Transactions to open the Select Bank Transactions window.
+You can print preview reports before reconciling to verify the transactions you marked as cleared, or the adjustments you entered. Use the Select Bank Transactions window to print preview reports:
 
-3.  Select the transaction with the differing amount and choose the Payment or
-    Deposit expansion button to open the Cleared Amount Entry window.
+- The Reconciliation Edit List displays checkbook and bank statement balance information.
 
-![A screenshot of a cell phone Description automatically generated](media/03d1dc7aac56a7d852ec1a589ec168df.jpg)
+- The Bank Adjustments Edit List displays the adjustment transactions you entered.
 
-A screenshot of a cell phone Description automatically generated
+- The Marked Transactions Report displays the transactions you marked as cleared.
 
-1.  Enter the cleared amount for the transaction. For example, suppose a check
-    was recorded for \$17,567.11, but it cleared the bank for \$17,567.13. You
-    would enter \$17,567.13 in the Cleared Amount field, and a \$0.02 difference
-    would appear in the Difference field.
+- The Outstanding Transactions Report displays the transactions that haven’t cleared the bank, and that fall between the cutoff dates entered in the Reconcile Bank Statements window.
 
-2.  Choose OK to save your changes and close the window. The Select Bank
-    Transactions window is displayed.
-
-3.  Choose Adjustments to open the Reconcile Bank Adjustments window.
-
-4.  Enter an adjustment for the amount of the difference. Both the checkbook and
-    the Cash account are updated when you reconcile. As you enter account
-    information and adjusting entries, the reconcile difference is subtracted
-    from the net adjustment. See *Entering a miscellaneous bank adjustment
-    transaction* on page 55 for more information.
-
->   Choose OK to close the window and return to the Select Bank Transactions
->   window.
-
->   When you finish, the difference should be zero. If the difference isn’t
->   zero, you should complete the following tasks:
-
--   Verify that the correct transactions are marked.
-
--   Verify that the transactions were entered correctly.
-
--   Enter additional adjusting entries, if necessary.
-
-### Preview reports
-
->   You can print preview reports before reconciling to verify the transactions
->   you marked as cleared, or the adjustments you entered. Use the Select Bank
->   Transactions window to print preview reports:
-
--   The Reconciliation Edit List displays checkbook and bank statement balance
-    information.
-
--   The Bank Adjustments Edit List displays the adjustment transactions you
-    entered.
-
--   The Marked Transactions Report displays the transactions you marked as
-    cleared.
-
--   The Outstanding Transactions Report displays the transactions that haven’t
-    cleared the bank, and that fall between the cutoff dates entered in the
-    Reconcile Bank Statements window.
-
->   Choose File \>\> Print in the Select Bank Transactions window to print any
->   or all the reports. The Print Reconciliation Reports window opens, where you
->   can mark the reports to be printed.
+Choose File \>\> Print in the Select Bank Transactions window to print any or all the reports. The Print Reconciliation Reports window opens, where you can mark the reports to be printed.
 
 Part 3: Inquiries, reports, and routines
 ========================================
