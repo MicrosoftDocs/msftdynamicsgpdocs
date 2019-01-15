@@ -33,31 +33,31 @@ This is the second tax update for 2019. It includes state tax table changes that
 - Rhode Island
 - Vermont
 
-## 2019 Federal tax changes
+### 2019 Federal tax changes
 There are no federal changes in the Round 2 tax table update.
 
-## 2019 state or territorial tax changes
+### 2019 state or territorial tax changes
 
 The following tax changes are included in this update:
 
-### Withholding changes for Colorado
+#### Withholding changes for Colorado
 
-### Withholding changes for Connecticut
+#### Withholding changes for Connecticut
 
-### Withholding changes for Massachusetts
+#### Withholding changes for Massachusetts
 The Flat Tax Rate is 5.05% for Filing Status of HOH and OTHERS
 
-### Withholding changes for Michigan
+#### Withholding changes for Michigan
 
-### Withholding changes for Missouri
+#### Withholding changes for Missouri
 
-### Withholding changes for New Jersey
+#### Withholding changes for New Jersey
 
-### Withholding changes for North Dakota
+#### Withholding changes for North Dakota
 
-### Withholding changes for Rhode Island
+#### Withholding changes for Rhode Island
 
-### Withholding changes for Vermont
+#### Withholding changes for Vermont
 
 
 ## Changes in January Round 1 update
@@ -78,7 +78,7 @@ The Flat Tax Rate is 5.05% for Filing Status of HOH and OTHERS
 - Oregon
 - South Carolina
 
-## 2019 Federal tax changes
+### 2019 Federal tax changes
 
 The maximum taxable earnings for Social Security increase in 2019 to \$132,900 from \$128,400
 
@@ -122,11 +122,11 @@ The Personal Exemption is \$4,200 from \$4,150 for MAR and SINGLE filing status.
 | 207,900     | 514,100          | 46,628.50      | 35%          | 207,900            |
 | 514,100     | And Over         | 153,798.50     | 37%          | 514,100            |
 
-## 2019 state or territorial tax changes
+### 2019 state or territorial tax changes
 
 The following tax changes are included in this update:
 
-### Withholding changes for California
+#### Withholding changes for California
 
 For Filing Status of HOH  
 Personal Exemption is \$129.80 from \$125.40  
@@ -193,7 +193,7 @@ Low Income Limit is \$14,573 from \$14,048
 | 572,980     | 1,000,000        | 61,267.12      | 13.53%       | 572,980            |
 | 1,000,000   | And Over         | 119,042.93     | 14.63%       | 1,000,000          |
 
-### Withholding changes for Georgia
+#### Withholding changes for Georgia
 
 The Dependent Allowance remains at \$3,000  
 The Personal Allowance remains unchanged, Standard Deductions changed
@@ -239,7 +239,7 @@ Standard Deductions:
 | 5,250       | 7,000            | 142.50         | 5.0%         | 5,250              |
 | 7,000       |                  | 230.00         | 5.75%        | 7,000              |
 
-### Withholding changes for Iowa
+#### Withholding changes for Iowa
 
 The Standard Deduction Amount for Filing Status EXP1 is \$1690.00, and Filing Status EXP2 is \$4160.00
 
@@ -257,16 +257,16 @@ The Standard Deduction Amount for Filing Status EXP1 is \$1690.00, and Filing St
 | 39,984      | 59,976           | 2,029.58       | 7.44%        | 39,984             |
 | 59,976      |                  | 3,516.98       | 8.53%        | 59,976             |
 
-### Withholding changes for Illinois
+#### Withholding changes for Illinois
 
 The Dependent Exemptions is \$2,275
 
-### Withholding changes for Kentucky
+#### Withholding changes for Kentucky
 
 The Standard Deduction changed to \$2590 from \$2530  
 The Flat Tax Rate remains at 5%
 
-### Withholding changes for Maine
+#### Withholding changes for Maine
 
 The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status’
 
@@ -300,7 +300,7 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 0           | 162,950          | 0              | 0            | 21,550             |
 | 162,950     | 312,950          | 150,000        | 0            | 0                  |
 
-### Withholding changes for Maryland
+#### Withholding changes for Maryland
 
 *Withholding rates for taxpayers filing as CARLNE*
 
@@ -346,7 +346,7 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 225,000     | 300,000          | 17,750.00      | 8.50%        | 225,000            |
 | 300,000     | And over         | 24,125.00      | 8.75%        | 300,000            |
 
-### Withholding changes for Minnesota
+#### Withholding changes for Minnesota
 
 *Withholding rates for taxpayers filing as MAR*
 
@@ -368,7 +368,7 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 89,510      | 166,290          | 5,690.42       | 7.85%        | 89,510             |
 | 166,290     | And over         | 11,717.65      | 9.85%        | 166,290            |
 
-### Withholding changes for New York and New York-Yonkers
+#### Withholding changes for New York and New York-Yonkers
 
 *Withholding rates for taxpayers filing as MAR*
 
@@ -408,7 +408,7 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 1,077,550   | 1,127,550        | 78,775.00      | .5208        | 1,077,550          |
 | 1,127,550   | And over         | 104,815.00     | .0962        | 1,127,550          |
 
-### Withholding changes for North Carolina
+#### Withholding changes for North Carolina
 
 The Standard Deduction amount changed to \$15,000 from \$14,000 for Filing Status of HOH
 
@@ -416,7 +416,7 @@ The Standard Deduction amount changed to \$10,000 from \$8,7500 for Filing Statu
 
 The tax rate for all Filing Statues’ is 5.35% from 5.599%
 
-### Withholding changes for Ohio
+#### Withholding changes for Ohio
 
 *Withholding rates for taxpayers filing as NA*
 
@@ -431,7 +431,7 @@ The tax rate for all Filing Statues’ is 5.35% from 5.599%
 | 80,000      | 100,000          | 2474.40        | 4.304%       | 80,000             |
 | 100,000     | And over         | 3335.20        | 5.379%       | 100,000            |
 
-### Withholding changes for Oregon
+#### Withholding changes for Oregon
 
 The Standard Deduction Amount is \$4,545 for MS3 and S3 Filing Status.
 
@@ -496,7 +496,7 @@ The Standard Deduction Amount is \$2,270 for S2 Filing Status.
 | 3,550       | 8,900            | 383.50         | 7%           | 3,550              |
 | 8,900       | 50,000           | 758            | 9%           | 8,900              |
 
-### <br>Withholding changes for South Carolina
+#### Withholding changes for South Carolina
 
 The Personal Exemption is \$2,510 for Filing Status ONE.
 
@@ -559,7 +559,7 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 1 January 2019 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The payroll tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
