@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/07/2018
+ms.date: 01/15/2018
 ---
 # U.S. 2019 Payroll Tax Update
 
@@ -18,11 +18,9 @@ This tax update applies to:
 - Microsoft Dynamics GP 2016 on Microsoft SQL Server
 - Microsoft Dynamics GP 2015 on Microsoft SQL Server
 
-**Summary:** This document contains instructions for installing the 2019 U.S. Payroll Tax Update for Microsoft Dynamics GP.
+On this page, you can read about how to install the 2019 U.S. Payroll Tax Update for Microsoft Dynamics GP. This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
-This is the second tax update for 2019. It includes state tax table changes that take effect January 1, 2019. It is recommended you install this update before processing payrolls for the 2019 year.
-
-This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+This is the second tax update for 2019. It includes state tax table changes that take effect January 1, 2019. We recommend that you install this update before processing payrolls for the calendar year 2019.
 
 ## Changes in Janaury Round 2 update
 - Colorado
