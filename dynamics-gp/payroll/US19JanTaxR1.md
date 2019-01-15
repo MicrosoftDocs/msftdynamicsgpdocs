@@ -10,7 +10,7 @@ ms.reviewer: edupont
 ms.author: theley
 ms.date: 01/07/2018
 ---
-# U.S. 2019 January Payroll Tax Update
+# U.S. 2019 Payroll Tax Update
 
 This tax update applies to:
 
@@ -18,13 +18,51 @@ This tax update applies to:
 - Microsoft Dynamics GP 2016 on Microsoft SQL Server
 - Microsoft Dynamics GP 2015 on Microsoft SQL Server
 
-**Summary:** This document contains instructions for installing the January 2019 Round 1 U.S. Payroll Tax Update for Microsoft Dynamics GP.
+**Summary:** This document contains instructions for installing the 2019 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-This is the first tax update for 2019. It includes federal and state tax table changes that take effect January 1, 2019. You’ll need to install this update before processing your first payroll runs for 2019.
+This is the second tax update for 2019. It includes state tax table changes that take effect January 1, 2019. It is recommended you install this update before processing payrolls for the 2019 year.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
-## Changes in this update
+## Changes in Janaury Round 2 update
+- Colorado
+- Connecticut
+- Massachusetts
+- Michigan
+- Missouri
+- New Jersey
+- North Dakota
+- Rhode Island
+- Vermont
+
+## 2019 Federal tax changes
+There are no federal changes in the Round 2 tax table update.
+
+## 2019 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+### Withholding changes for Colorado
+
+### Withholding changes for Connecticut
+
+### Withholding changes for Massachusetts
+The Flat Tax Rate is 5.05% for Filing Status of HOH and OTHERS
+
+### Withholding changes for Michigan
+
+### Withholding changes for Missouri
+
+### Withholding changes for New Jersey
+
+### Withholding changes for North Dakota
+
+### Withholding changes for Rhode Island
+
+### Withholding changes for Vermont
+
+
+## Changes in January Round 1 update
 
 - Federal changes and FICA Limit
 - California
