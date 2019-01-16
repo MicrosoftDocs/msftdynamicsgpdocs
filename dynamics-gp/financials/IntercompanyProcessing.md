@@ -78,8 +78,6 @@ When you’ve completed setting up those modules and the Intercompany Processing
 
 Use the Intercompany Setup window to define relationships between companies that can have intercompany transaction interaction. Setting up an intercompany relationship enables you to record transactions in General Ledger or Payables Management for the originating company that will create transactions in the General Ledger for the destination company.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
 > [!NOTE]
 > If you’re not using Multicurrency Management, originating and destination companies must have the same functional currency.
 
@@ -87,13 +85,11 @@ Use the Intercompany Setup window to define relationships between companies that
 
 1. Open the Intercompany Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Intercompany)
 
-    ![](media/f3d667f09a2801944391b7a131b0101c.jpg)
+    ![](media/SS.jpg)
 
 2. Enter or select an Originating Company ID. When you select an originating company ID, other companies you have access to appear in the Destination Company Name list.
 
-    ![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-    *Once you've chosen an originating company ID, that field is locked; that is, you must save or clear the intercompany relationship before you can enter another originating company ID.*
+    *Once you've chosen an originating company ID, that field is locked; that is, you must save or clear the intercompany relationship  before you can enter another originating company ID.*
 
 3. Select a Destination Company Name. This is the company you establish an intercompany relationship with. The Company ID for the company you select appears below the list box.
 
@@ -101,9 +97,8 @@ Use the Intercompany Setup window to define relationships between companies that
 
     For example, if the Originating Company Due To account number is 1000-00000000-2101, you would enter it as 1000000000002101; Intercompany Processing adds the correct account separators for your account format when you leave the field.
 
-    ![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-    *For each intercompany relationship, you can specify only one due to/due from account for each company.*
+    > [!NOTE]
+    > For each intercompany relationship, you can specify only one due to/due from account for each company.
 
     The Originating and Destination Due To/Due From accounts cannot be inactive accounts, unit accounts, or unit allocation accounts.
 
@@ -123,11 +118,11 @@ Use this part of the documentation to record transactions in the General Ledger 
 
 The following information is discussed:
 
-- *Chapter 2, “Multicurrency transactions,”* explains how multicurrency functionality affects Intercompany Processing.
+- *Chapter 2, “Multicurrency transactions”* explains how multicurrency functionality affects Intercompany Processing.
 
-- *Chapter 3, “Intercompany transactions,”* describes how to enter and void intercompany transactions.
+- *Chapter 3, “Intercompany transactions”* describes how to enter and void intercompany transactions.
 
-- *Chapter 4, “Posting,”* contains information about posting intercompany transactions.
+- *Chapter 4, “Posting”* contains information about posting intercompany transactions.
 
 ### Chapter 2: Multicurrency transactions
 
@@ -152,8 +147,6 @@ You also can use the Currency list button in the windows that support changing t
 - Journal Entry Inquiry windows
 
 The first time you open these windows after registering Multicurrency Management, all the transactions will be displayed in the originating currency. If you change the currency view, the option you last used will be the default view the next time you open that window.
-
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
 > [!NOTE]
 > You also can enter a multicurrency transaction in the Payables Transaction Entry window, but the View menu and Currency list button are not available.
@@ -208,7 +201,7 @@ Intercompany transactions are like any other transactions in the system, with th
 
 - Multicurrency intercompany transactions must be saved to a batch. Standard intercompany transactions are entered in single-use batches or recurring batches. Intercompany multicurrency transactions must be entered in single-use batches.
 
-> Intercompany distributions entered in transaction entry windows will not show the due to/due from account breakout; however, this breakout is printed on edit lists and posting journals.
+- Intercompany distributions entered in transaction entry windows will not show the due to/due from account breakout; however, this breakout is printed on edit lists and posting journals.
 
 #### Entering General Ledger intercompany transactions
 
@@ -222,13 +215,11 @@ Reversing intercompany transactions can be used in situations where cash will be
 
 1. Open the Transaction Entry window. (Transactions \>\> Financial \>\> General)
 
-    ![](media/fde224829f15b04f553d9908a0a69dfc.jpg)
+    ![](media/TT.jpg)
 
 2. Enter or select a journal entry number.
 
 3. Mark the Intercompany option.
-
-    ![](media/03d96e0cc4a7d1371041d4f4854abb50.gif)
 
     > [!TIP]
     > You can unmark this option only if you haven’t entered distributions to companies other than the originating company; that is, the one in which you are entering the transactions.
@@ -242,8 +233,6 @@ Reversing intercompany transactions can be used in situations where cash will be
 7. Enter company IDs, accounts, transaction amounts, distribution reference, and corresponding company ID.
 
     You’ll be able to enter a corresponding company ID only if the Enter Corresponding Company ID option is marked in the Intercompany Setup window.
-
-    ![](media/212e6722fea423d30b97ec56cdf75e47.gif)
 
     > [!NOTE]
     > Intercompany transactions will not be included in the batch total. Total debit and credit amounts will appear only when viewing the originating currency.
@@ -266,7 +255,7 @@ For more information about entering various types of Payables Management transac
 
 1. Open the Payables Transaction Entry window. (Transactions \>\> Purchasing \>\> Transaction Entry)
 
-    ![](media/3c2a705c71f5ba07dc52d675995064eb.jpg)
+    ![](media/PP.jpg)
 
 2. Enter a voucher number and mark the Intercompany option. You can unmark the Intercompany option only if you haven’t entered distributions to companies other than the originating company; that is, the one in which you are entering the transaction.
 
@@ -280,7 +269,7 @@ For more information about entering various types of Payables Management transac
 
 7. Choose the Distributions button to open the Payables Transaction Entry Distribution window.
 
-    ![](media/3f7bb694e8103c7fd96ee9bdbb6f05c5.jpg)
+    ![](media/DIS.jpg)
 
     By default, the scrolling window displays the distributions that were created automatically based on the posting accounts assigned to the vendor you chose in the Payables Transaction Entry window or on posting accounts assigned in the Posting Accounts Setup window.
 
@@ -290,14 +279,10 @@ For more information about entering various types of Payables Management transac
 
     You’ll be able to modify a corresponding company ID only if the Enter Corresponding Company ID option is marked in the Intercompany Setup window.
 
-    ![](media/810a584eab95bca97aaf6c4939bd54c1.gif)
-
     > [!NOTE]
     > All intercompany distributions must be entered in the originating currency; that is, the currency specified in the Payables Transaction Entry window. In addition, if Multicurrency Management is not registered, all originating and destination companies must have the same functional currency.
 
 9. Continue entering distribution accounts until your transaction is fully distributed, and choose OK.
-
-    ![](media/810a584eab95bca97aaf6c4939bd54c1.gif)
 
     > [!NOTE]
     > If you’ve entered several distributions to one particular distribution type, you can choose Redisplay to sort the accounts in the scrolling window by distribution type.
@@ -409,166 +394,99 @@ This information is divided into the following sections:
 
 #### About reporting currency
 
->   A reporting currency is used to convert functional or originating currency
->   amounts to another currency on inquiries and reports. For example, if the
->   German mark is the functional currency for a company, you can set up the
->   euro as your reporting currency to view an inquiry window with currency
->   amounts displayed in the euro currency.
+A reporting currency is used to convert functional or originating currency amounts to another currency on inquiries and reports. For example, if the German mark is the functional currency for a company, you can set up the euro as your reporting currency to view an inquiry window with currency amounts displayed in the euro currency.
 
->   During the reporting currency setup in Multicurrency Management, you’ll set
->   up a reporting currency and enter a default exchange rate and rate
->   calculation method. Depending on how your system is set up, you might be
->   able to override the default reporting currency exchange rate or rate
->   calculation method on inquiries and reports. To change the default reporting
->   currency exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate
->   to open the Modify Reporting Rate window.
+During the reporting currency setup in Multicurrency Management, you’ll set up a reporting currency and enter a default exchange rate and rate calculation method. Depending on how your system is set up, you might be able to override the default reporting currency exchange rate or rate calculation method on inquiries and reports. To change the default reporting currency exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate to open the Modify Reporting Rate window.
 
->   For more information about the reporting currency, see the Multicurrency
->   Management documentation.
+For more information about the reporting currency, see the Multicurrency Management documentation.
 
 #### Viewing transactions for a posted General Ledger journal entry
 
->   Use the Journal Entry Inquiry window to view transaction detail for General
->   Ledger posted journal entries in an open fiscal year.
+Use the Journal Entry Inquiry window to view transaction detail for General Ledger posted journal entries in an open fiscal year.
 
->   Multiple journal entries with the same number might exist if a recurring
->   batch is posted or a reversing transaction is posted. If you enter a journal
->   entry for which multiple entries exist, the journal entry with the oldest
->   posting date in the open year will be displayed. If you use the Journal
->   Entry lookup button, all unique journal entries will be displayed, and you
->   can select the journal entry you’d like to view.
+Multiple journal entries with the same number might exist if a recurring batch is posted or a reversing transaction is posted. If you enter a journal entry for which multiple entries exist, the journal entry with the oldest posting date in the open year will be displayed. If you use the Journal Entry lookup button, all unique journal entries will be displayed, and you can select the journal entry you’d like to view.
 
->   The Intercompany button is enabled only if the currently displayed journal
->   entry originated from an intercompany-generated transaction.
+The Intercompany button is enabled only if the currently displayed journal entry originated from an intercompany-generated transaction.
 
-![](media/810a584eab95bca97aaf6c4939bd54c1.gif)
+> [!NOTE]
+> The Journal Entry Inquiry window displays posted journal entries in any open year in General Ledger, so you don’t need to keep transaction history to be able to view journal entries in this window.
 
->   *The Journal Entry Inquiry window displays posted journal entries in any
->   open year in General Ledger, so you don’t need to keep transaction history
->   to be able to view journal entries in this window.*
+**To view transactions for a posted General Ledger journal entry:**
 
->   **To view transactions for a posted General Ledger journal entry:**
+1. Open the Journal Entry Inquiry window.
 
-1.  Open the Journal Entry Inquiry window.
+   (Inquiry \>\> Financial \>\> Journal Entry Inquiry)
 
->   (Inquiry \>\> Financial \>\> Journal Entry Inquiry)
+2. Enter or select the journal entry number to view.
 
-![](media/fe84b49c7cbd0b6ad8b7e762c385fbc7.jpg)
-
-1.  Enter or select the journal entry number to view.
-
->   You can view any posted journal entry number that has not been moved to
->   history with distributions for the company you’re logged into. Audit trail
->   code, transaction date, source document, batch ID, reference, currency ID,
->   account, debit, credit, distribution reference, and difference information
->   are displayed.
+    You can view any posted journal entry number that has not been moved to history with distributions for the company you’re logged into. Audit trail code, transaction date, source document, batch ID, reference, currency ID, account, debit, credit, distribution reference, and difference information are displayed.
 
 #### Viewing intercompany information for a transaction in a destination company
 
->   Use the Intercompany Audit Trail Code Inquiry window in destination
->   companies to view the originating company, originating audit trail code, and
->   journal entry for posted intercompany transactions.
+Use the Intercompany Audit Trail Code Inquiry window in destination companies to view the originating company, originating audit trail code, and journal entry for posted intercompany transactions.
 
-![](media/bea57bcdd7f292372fa95af4f5646bdd.gif)
+> [!NOTE]
+> You can view this information only for journal entries that originated in another company.
 
-*You can view this information only for journal entries that originated in
-another company.*
+**To view intercompany information for a transaction in a destination company:**
 
->   **To view intercompany information for a transaction in a destination
->   company:**
+1. Open the Journal Entry Inquiry window.
 
-1.  Open the Journal Entry Inquiry window.
+    (Inquiry \>\> Financial \>\> Journal Entry Inquiry)
 
->   (Inquiry \>\> Financial \>\> Journal Entry Inquiry)
+2. Enter or select the journal entry number to view.
 
-![](media/fe84b49c7cbd0b6ad8b7e762c385fbc7.jpg)
+    If the journal entry is an intercompany-generated transaction, the Intercompany button will be enabled.
 
-1.  Enter or select the journal entry number to view.
-
->   If the journal entry is an intercompany-generated transaction, the
->   Intercompany button will be enabled.
-
-1.  Choose the Intercompany button to open the Intercompany Audit Trail Code
-    Inquiry window, where you can view information from the originating company.
-    You can view the originating company ID, originating company name,
-    originating audit trail code, and originating journal entry number.
+3.  Choose the Intercompany button to open the Intercompany Audit Trail Code Inquiry window, where you can view information from the originating company. You can view the originating company ID, originating company name, originating audit trail code, and originating journal entry number.
 
 #### Viewing exchange rate information for an intercompany multicurrency voucher
 
->   Use the Exchange Rate Entry Zoom window to view the exchange rate
->   information for the selected intercompany voucher in Payables Management.
+Use the Exchange Rate Entry Zoom window to view the exchange rate information for the selected intercompany voucher in Payables Management.
 
->   **To view exchange rate information for an intercompany multicurrency
->   voucher:**
+**To view exchange rate information for an intercompany multicurrency voucher:**
 
-1.  Open the Payables Inquiry - Document window.
+1. Open the Payables Inquiry - Document window.
 
->   (Inquiry \>\> Purchasing \>\> Transaction by Document)
+    (Inquiry \>\> Purchasing \>\> Transaction by Document)
 
-1.  Select the intercompany multicurrency document to view exchange rate
-    information for, then click the Document Number or Voucher/Payment Number
-    link to open the Payables Transaction Entry Zoom window.
+2. Select the intercompany multicurrency document to view exchange rate information for, then click the Document Number or Voucher/Payment Number link to open the Payables Transaction Entry Zoom window.
 
-2.  In the Payables Transaction Entry Zoom window, choose the Distribution
-    button to open the Payables Distribution Zoom window.
+3. In the Payables Transaction Entry Zoom window, choose the Distribution button to open the Payables Distribution Zoom window.
 
-3.  In the Payables Distribution Zoom window, choose the Co. ID expansion button
-    to open the Exchange Rate Entry Zoom window to view exchange rate
-    information.
+4. In the Payables Distribution Zoom window, choose the Co. ID expansion button to open the Exchange Rate Entry Zoom window to view exchange rate information.
 
 #### Viewing exchange rate information for all destination companies on a voucher
 
->   Use the Intercompany Destination Exchange Rate Inquiry window to view the
->   exchange rate information for all destination companies on an intercompany
->   voucher in Payables Management.
+Use the Intercompany Destination Exchange Rate Inquiry window to view the exchange rate information for all destination companies on an intercompany voucher in Payables Management.
 
->   **To view exchange rate information for all destination companies on a
->   voucher:**
+**To view exchange rate information for all destination companies on a voucher:**
 
-1.  Open the Payables Inquiry - Document window.
+1. Open the Payables Inquiry - Document window.
 
->   (Inquiry \>\> Purchasing \>\> Transaction by Document)
+    (Inquiry \>\> Purchasing \>\> Transaction by Document)
 
-1.  Select the intercompany multicurrency document to view exchange rate
-    information for, then click the Document Number or Voucher/Payment Number
-    link to open the Payables Transaction Entry Zoom window.
+2. Select the intercompany multicurrency document to view exchange rate information for, then click the Document Number or Voucher/Payment Number link to open the Payables Transaction Entry Zoom window.
 
-2.  In the Payables Transaction Entry Zoom window, choose the Distribution
-    button to open the Payables Distribution Zoom window.
+3. In the Payables Transaction Entry Zoom window, choose the Distribution button to open the Payables Distribution Zoom window.
 
-3.  In the Payables Distribution Zoom window, choose the Rates button to open
-    the Intercompany Destination Exchange Rate Inquiry window.
+4. In the Payables Distribution Zoom window, choose the Rates button to open the Intercompany Destination Exchange Rate Inquiry window.
 
 ### Chapter 6: Reports
 
->   You can use Intercompany Processing reports to analyze records of your
->   intercompany transactions in the General Ledger and Payables Management
->   modules.
+You can use Intercompany Processing reports to analyze records of your intercompany transactions in the General Ledger and Payables Management modules.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
--   *Intercompany Processing report summary*
+- *Intercompany Processing report summary*
 
--   *Creating a report option*
+- *Creating a report option*
 
 #### Intercompany Processing report summary
 
->   You can print several types of reports using Intercompany Processing. Some
->   reports automatically are printed when you complete certain procedures; for
->   example, posting journals can automatically be printed when you post
->   transactions, depending on how your posting options are set up. You can
->   choose to print some reports during procedures; for example, you can print
->   an edit list when entering transactions by choosing the Print button in the
->   batch entry window. In order to print some reports, such as analysis or
->   history reports, you must set up report options to specify sorting options
->   and ranges of information to include on the report. For more information,
->   refer to *Creating a report option* on page 32.
+You can print several types of reports using Intercompany Processing. Some reports automatically are printed when you complete certain procedures; for example, posting journals can automatically be printed when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Creating a report option* on page 32.
 
->   The following table lists the report types available in Intercompany
->   Processing and the reports that fall into those categories. (Reports printed
->   using General Ledger or Payables Management are printed using many of the
->   same windows. See the General Ledger or Payables Management documentation
->   for information about reports printed in those modules.)
+The following table lists the report types available in Intercompany Processing and the reports that fall into those categories. (Reports printed using General Ledger or Payables Management are printed using many of the same windows. See the General Ledger or Payables Management documentation for information about reports printed in those modules.)
 
 | **Report type**  | **Report**  | **Printing method**     |
 |----|-|--|
@@ -581,62 +499,37 @@ another company.*
 
 #### Creating a report option
 
->   Report options include specifications for sorting options and range
->   restrictions for a particular report. In order to print several Intercompany
->   Processing reports, you must first create a report option. Each report can
->   have several different options so that you can easily print the information
->   you need. For example, you can create report options for the Intercompany
->   Distribution Breakdown Register that show either detailed or summary
->   information.
+Report options include specifications for sorting options and range restrictions for a particular report. In order to print several Intercompany Processing reports, you must first create a report option. Each report can have several different options so that you can easily print the information you need. For example, you can create report options for the Intercompany Distribution Breakdown Register that show either detailed or summary information.
 
-![](media/22d108c5bc55f59c60ace465dcf21e0b.gif)
+> [!NOTE]
+> A single report option can’t be used by multiple reports. If you need identical options for several reports, you must create them separately.
 
->   *A single report option can’t be used by multiple reports. If you need
->   identical options for several reports, you must create them separately.*
+Use the Financial, Purchasing, or System report options windows to create sorting, restriction, and printing options for the reports that have been included with Intercompany Processing.
 
->   Use the Financial, Purchasing, or System report options windows to create
->   sorting, restriction, and printing options for the reports that have been
->   included with Intercompany Processing.
-
->   **To create a report option:**
+**To create a report option:**
 
 1.  Open a Financial, Purchasing, or System reports window. There are separate
     windows for each report type.
 
->   (Reports \>\> System \>\> General) (for the Intercompany Setup List)
+    (Reports \>\> System \>\> General) (for the Intercompany Setup List)
 
->   (Reports \>\> Financial \>\> Bank Posting Journals)
+    (Reports \>\> Financial \>\> Bank Posting Journals)
 
->   (Reports \>\> Purchasing \>\> Posting Journals)
+    (Reports \>\> Purchasing \>\> Posting Journals)
 
-1.  Select a report from the Reports list.
+2.  Select a report from the Reports list.
 
-2.  Choose New to open the report options window. Your selection in step 2
-    determines which report options window appears.
+3.  Choose New to open the report options window. Your selection in step 2 determines which report options window appears.
 
-3.  Name the option and enter information to define the option. The name you
-    choose for the option won’t appear on the report. The selections available
-    for defining report options vary, depending on the report type you’ve
-    selected.
+4. Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
 
-4.  Enter range restrictions. The Ranges list shows the available options for
-    each report. The available ranges vary, depending on the type of report.
+4.  Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
-![](media/22d108c5bc55f59c60ace465dcf21e0b.gif)
+    > [!NOTE]
+    > You can enter only one restriction for each restriction type. For instance, you can insert one batch ID restriction (LCM621A to LCM628A) and one audit trail code restriction.
 
->   *You can enter only one restriction for each restriction type. For instance,
->   you can insert one batch ID restriction (LCM621A to LCM628A) and one audit
->   trail code restriction.*
+5. Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-1.  Choose Insert to insert the range in the Restrictions List. To remove an
-    existing range from the list, select the range and choose Remove.
-
-2.  Choose Destination to select a printing destination. Reports can be printed
-    to the screen, to the printer, to a file, or to any combination of these
-    options. If you select Ask Each Time, you can select printing options each
-    time you print this report option.
-
-3.  To print the report option from the report options window, choose Print
-    before saving it. If you don’t want to print the option now, choose Save and
-    close the window. The report window will be redisplayed.
+6. Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
+7. To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
