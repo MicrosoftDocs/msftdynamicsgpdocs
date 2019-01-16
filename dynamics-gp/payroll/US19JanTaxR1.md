@@ -115,10 +115,50 @@ The Personal Exemption amount is $4,200
 | 440,000     | And Over         | 9,539.90       | 2.90%        | 440,000            |
 
 
+*Withholding rates for taxpayers filing as SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 4,500            | 0              | 0%           | 0                  |
+| 4,500       | 43,000           | 0              | 1.10%        | 4,500              |
+| 43,000      | 87,000           | 423.50         | 2.04%        | 43,000             |
+| 87,000      | 202,000          | 1,312.10       | 2.27%        | 87,000             |
+| 202,000     | 432,000          | 3,391.60       | 2.64%        | 202,000            |
+| 432,000     | And Over         | 10,003.60      | 2.90%        | 432,000            |
+
 ### Withholding changes for Rhode Island
+For all Filing Status the Personal Exemption ($1,000) wage limit increased from $221,800 to $227,050
+
+*Withholding rates for taxpayers filing as MAR and SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 64,050           | 0              | 3.75%        | 0                  |
+| 64,050      | 145,600          | 2,401.88       | 4.75%        | 64,050             |
+| 145,600     | And Over         | 6,275.50       | 5.99%        | 145,600            |
+
 
 ### Withholding changes for Vermont
+The Personal Exemption amount is $4,250
+*Withholding rates for taxpayers filing as MAR*
 
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 9,225            | 0              | 0%           | 0                  |
+| 9,225       | 75,375           | 0              | 3.35%        | 9,225              |
+| 75,375      | 169,175          | 2,216.03       | 6.60%        | 75,375             |
+| 169,175     | 252,975          | 8,406.83       | 7.60%        | 169,175            |
+| 252,975     | And Over         | 14,775.63      | 8.75%        | 252,975            |
+
+*Withholding rates for taxpayers filing as SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,075            | 0              | 0%           | 0                  |
+| 3,075       | 42,675           | 0              | 3.35%        | 3,075              |
+| 42,675      | 99,075           | 1,326.60       | 6.60%        | 42,675             |
+| 99,075      | 203,275          | 5,049.00       | 7.60%        | 99,075             |
+| 203,275     | And Over         | 12,968.20      | 8.75%        | 203,275            |
 
 ## Changes in January Round 1 update
 
