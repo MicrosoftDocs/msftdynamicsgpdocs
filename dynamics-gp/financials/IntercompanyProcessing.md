@@ -491,11 +491,13 @@ The following table lists the report types available in Intercompany Processing 
 | **Report type**  | **Report**  | **Printing method**     |
 |----|-|--|
 | Setup reports    | Intercompany Setup List   | Choose File \>\> Print in the setup window **or** create report options in the General System Reports window.  |
-| Edit lists   | Transaction Edit List (intercompany information added)\* or Payables Transaction Edit List (intercompany information added)\*   | Choose File \>\> Print in the   |
-| **Report type**     |     |    |
+| Edit lists   | Transaction Edit List (intercompany information added)\* or Payables Transaction Edit List (intercompany information added)\*   | Choose File \>\> Print in the window you use to complete the procedure.  |
 | Posting reports     | **Report**       | **Printing method**  |
 | Reprint Journals   | Transaction Posting Journal\*† (intercompany information added) Intercompany Distribution Detail (replaces Distribution Breakdown Register) Intercompany Distribution Breakdown Register – Detail\* (replaces Payables Distribution Breakdown Register – Detail) Intercompany Distribution Summary (replaces GL Distribution Summary) Intercompany Distribution Breakdown Register – Summary\* (replaces Payables Distribution Breakdown Register - Summary) | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure. |
-| \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. Intercompany Distribution Detail – Reprint (replaces Payables Distribution Detail – Reprint) Transaction Reprint Journal (intercompany information added) Create a report option in the Purchasing Posting Journals window. |  |
+||Intercompany Distribution Detail – Reprint (replaces Payables Distribution Detail – Reprint)</br> Transaction Reprint Journal (intercompany information added)|Create a report option in the Purchasing Posting Journals window.|
+
+\* Indicates reports that can be printed with multicurrency information displayed. 
+† Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.
 
 #### Creating a report option
 
