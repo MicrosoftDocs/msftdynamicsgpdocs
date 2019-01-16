@@ -78,8 +78,6 @@ When you’ve completed setting up those modules and the Intercompany Processing
 
 Use the Intercompany Setup window to define relationships between companies that can have intercompany transaction interaction. Setting up an intercompany relationship enables you to record transactions in General Ledger or Payables Management for the originating company that will create transactions in the General Ledger for the destination company.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
 > [!NOTE]
 > If you’re not using Multicurrency Management, originating and destination companies must have the same functional currency.
 
@@ -87,21 +85,17 @@ Use the Intercompany Setup window to define relationships between companies that
 
 1. Open the Intercompany Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Intercompany)
 
-    ![](media/f3d667f09a2801944391b7a131b0101c.jpg)
+    ![](media/SS.jpg)
 
 2. Enter or select an Originating Company ID. When you select an originating company ID, other companies you have access to appear in the Destination Company Name list.
 
-    ![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-    *Once you've chosen an originating company ID, that field is locked; that is, you must save or clear the intercompany relationship before you can enter another originating company ID.*
+    *Once you've chosen an originating company ID, that field is locked; that is, you must save or clear the intercompany relationship  before you can enter another originating company ID.*
 
 3. Select a Destination Company Name. This is the company you establish an intercompany relationship with. The Company ID for the company you select appears below the list box.
 
 4. Enter or select Originating Company Due To/Due From accounts. If you enter the account number, enter it as an unformatted string. Intercompany Processing automatically formats the account according to the account format of the specified company.
 
     For example, if the Originating Company Due To account number is 1000-00000000-2101, you would enter it as 1000000000002101; Intercompany Processing adds the correct account separators for your account format when you leave the field.
-
-    ![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
     *For each intercompany relationship, you can specify only one due to/due from account for each company.*
 
@@ -152,8 +146,6 @@ You also can use the Currency list button in the windows that support changing t
 - Journal Entry Inquiry windows
 
 The first time you open these windows after registering Multicurrency Management, all the transactions will be displayed in the originating currency. If you change the currency view, the option you last used will be the default view the next time you open that window.
-
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
 > [!NOTE]
 > You also can enter a multicurrency transaction in the Payables Transaction Entry window, but the View menu and Currency list button are not available.
@@ -222,13 +214,11 @@ Reversing intercompany transactions can be used in situations where cash will be
 
 1. Open the Transaction Entry window. (Transactions \>\> Financial \>\> General)
 
-    ![](media/fde224829f15b04f553d9908a0a69dfc.jpg)
+    ![](media/TT.jpg)
 
 2. Enter or select a journal entry number.
 
 3. Mark the Intercompany option.
-
-    ![](media/03d96e0cc4a7d1371041d4f4854abb50.gif)
 
     > [!TIP]
     > You can unmark this option only if you haven’t entered distributions to companies other than the originating company; that is, the one in which you are entering the transactions.
@@ -242,8 +232,6 @@ Reversing intercompany transactions can be used in situations where cash will be
 7. Enter company IDs, accounts, transaction amounts, distribution reference, and corresponding company ID.
 
     You’ll be able to enter a corresponding company ID only if the Enter Corresponding Company ID option is marked in the Intercompany Setup window.
-
-    ![](media/212e6722fea423d30b97ec56cdf75e47.gif)
 
     > [!NOTE]
     > Intercompany transactions will not be included in the batch total. Total debit and credit amounts will appear only when viewing the originating currency.
@@ -266,7 +254,7 @@ For more information about entering various types of Payables Management transac
 
 1. Open the Payables Transaction Entry window. (Transactions \>\> Purchasing \>\> Transaction Entry)
 
-    ![](media/3c2a705c71f5ba07dc52d675995064eb.jpg)
+    ![](media/PP.jpg)
 
 2. Enter a voucher number and mark the Intercompany option. You can unmark the Intercompany option only if you haven’t entered distributions to companies other than the originating company; that is, the one in which you are entering the transaction.
 
@@ -280,7 +268,7 @@ For more information about entering various types of Payables Management transac
 
 7. Choose the Distributions button to open the Payables Transaction Entry Distribution window.
 
-    ![](media/3f7bb694e8103c7fd96ee9bdbb6f05c5.jpg)
+    ![](media/DIS.jpg)
 
     By default, the scrolling window displays the distributions that were created automatically based on the posting accounts assigned to the vendor you chose in the Payables Transaction Entry window or on posting accounts assigned in the Posting Accounts Setup window.
 
@@ -290,14 +278,10 @@ For more information about entering various types of Payables Management transac
 
     You’ll be able to modify a corresponding company ID only if the Enter Corresponding Company ID option is marked in the Intercompany Setup window.
 
-    ![](media/810a584eab95bca97aaf6c4939bd54c1.gif)
-
     > [!NOTE]
     > All intercompany distributions must be entered in the originating currency; that is, the currency specified in the Payables Transaction Entry window. In addition, if Multicurrency Management is not registered, all originating and destination companies must have the same functional currency.
 
 9. Continue entering distribution accounts until your transaction is fully distributed, and choose OK.
-
-    ![](media/810a584eab95bca97aaf6c4939bd54c1.gif)
 
     > [!NOTE]
     > If you’ve entered several distributions to one particular distribution type, you can choose Redisplay to sort the accounts in the scrolling window by distribution type.
@@ -441,8 +425,6 @@ This information is divided into the following sections:
 >   The Intercompany button is enabled only if the currently displayed journal
 >   entry originated from an intercompany-generated transaction.
 
-![](media/810a584eab95bca97aaf6c4939bd54c1.gif)
-
 >   *The Journal Entry Inquiry window displays posted journal entries in any
 >   open year in General Ledger, so you don’t need to keep transaction history
 >   to be able to view journal entries in this window.*
@@ -452,8 +434,6 @@ This information is divided into the following sections:
 1.  Open the Journal Entry Inquiry window.
 
 >   (Inquiry \>\> Financial \>\> Journal Entry Inquiry)
-
-![](media/fe84b49c7cbd0b6ad8b7e762c385fbc7.jpg)
 
 1.  Enter or select the journal entry number to view.
 
@@ -469,8 +449,6 @@ This information is divided into the following sections:
 >   companies to view the originating company, originating audit trail code, and
 >   journal entry for posted intercompany transactions.
 
-![](media/bea57bcdd7f292372fa95af4f5646bdd.gif)
-
 *You can view this information only for journal entries that originated in
 another company.*
 
@@ -480,8 +458,6 @@ another company.*
 1.  Open the Journal Entry Inquiry window.
 
 >   (Inquiry \>\> Financial \>\> Journal Entry Inquiry)
-
-![](media/fe84b49c7cbd0b6ad8b7e762c385fbc7.jpg)
 
 1.  Enter or select the journal entry number to view.
 
@@ -589,8 +565,6 @@ another company.*
 >   Distribution Breakdown Register that show either detailed or summary
 >   information.
 
-![](media/22d108c5bc55f59c60ace465dcf21e0b.gif)
-
 >   *A single report option can’t be used by multiple reports. If you need
 >   identical options for several reports, you must create them separately.*
 
@@ -621,8 +595,6 @@ another company.*
 
 4.  Enter range restrictions. The Ranges list shows the available options for
     each report. The available ranges vary, depending on the type of report.
-
-![](media/22d108c5bc55f59c60ace465dcf21e0b.gif)
 
 >   *You can enter only one restriction for each restriction type. For instance,
 >   you can insert one batch ID restriction (LCM621A to LCM628A) and one audit
