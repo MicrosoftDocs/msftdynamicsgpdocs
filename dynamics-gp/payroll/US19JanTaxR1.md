@@ -22,7 +22,7 @@ On this page, you can read about how to install the 2019 U.S. Payroll Tax Update
 
 This is the second tax update for 2019. It includes state tax table changes that take effect January 1, 2019. We recommend that you install this update before processing payrolls for the calendar year 2019.
 
-## Changes in Janaury Round 2 update
+## Changes in January Round 2 update
 - Colorado
 - Connecticut
 - Massachusetts
