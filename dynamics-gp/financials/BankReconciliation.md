@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/14/2019
+ms.date: 01/16/2019
 ---
 
 # Microsoft Dynamics GP Bank Reconciliation
@@ -103,7 +103,7 @@ information:
 
 - Fixed allocation accounts
 
-> [TIP]
+> [!TIP]
 > To print multicurrency information on your posting journals and reports, mark Include Multicurrency Info in the Posting Setup window.
 
 See the System Setup instructions (Help \>\> Contents \>\> select Setting Up the
@@ -1558,7 +1558,7 @@ Use the Remove Bank History window to remove history, and increase the amount of
 
 ## Additional Feature Functionality added to Bank Reconciliation
 
-To review detailed information about each feature click the link below.
+To review detailed information about each feature, click the relevant link below.
 
 [Automatically Deposit Cash
 Receipts](https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/06/23/microsoft-dynamics-gp-2015-r2-new-features-auto-deposit-cash-receipts-in-bank-rec)  
