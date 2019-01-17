@@ -55,7 +55,8 @@ The T4A, T4 and RL-1 XML has changed for the 2018 reporting year. The T4 forms h
 
 British Columbia EHT for the 2019 reporting year is included in this update.  
 
-Software Development Number for XML - RQ-18-01-186 RL-1 Slip Authorization number Coming Soon!  (enter in the Payroll T4/R1 Print window)  
+Software Development Number for XML - RQ-18-01-186 
+RL-1 Slip Authorization number FS1801188  (enter in the Payroll T4/R1 Print window)  
 
 #### Installation notes
 
