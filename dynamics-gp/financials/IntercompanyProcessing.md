@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/14/2019
+ms.date: 01/17/2019
 ---
 
 # Microsoft Dynamics GP Intercompany Processing
@@ -492,8 +492,7 @@ The following table lists the report types available in Intercompany Processing 
 |----|-|--|
 | Setup reports    | Intercompany Setup List   | Choose File \>\> Print in the setup window **or** create report options in the General System Reports window.  |
 | Edit lists   | Transaction Edit List (intercompany information added)\* or Payables Transaction Edit List (intercompany information added)\*   | Choose File \>\> Print in the window you use to complete the procedure.  |
-|  **Report type**    | **Report**       | **Printing method**  |
-|  Posting reports    | Transaction Posting Journal\*† (intercompany information added) Intercompany Distribution Detail (replaces Distribution Breakdown Register) Intercompany Distribution Breakdown Register – Detail\* (replaces Payables Distribution Breakdown Register – Detail) Intercompany Distribution Summary (replaces GL Distribution Summary) Intercompany Distribution Breakdown Register – Summary\* (replaces Payables Distribution Breakdown Register - Summary) | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure. |
+|  Posting reports    | Transaction Posting Journal\*† (intercompany information added) Intercompany Distribution Detail (replaces Distribution Breakdown Register)</br>Intercompany Distribution Breakdown Register – Detail\* (replaces Payables Distribution Breakdown Register – Detail)</br>Intercompany Distribution Summary (replaces GL Distribution Summary)</br>Intercompany Distribution Breakdown Register – Summary\* (replaces Payables Distribution Breakdown Register - Summary) | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure. |
 | Reprint Journals   | |Intercompany Distribution Detail – Reprint (replaces Payables Distribution Detail – Reprint)</br> Transaction Reprint Journal (intercompany information added)|Create a report option in the Purchasing Posting Journals window.|
 
 \* Indicates reports that can be printed with multicurrency information displayed. 
