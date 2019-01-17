@@ -32,12 +32,12 @@ Some features described in the documentation are optional and can be purchased t
 
 To view information about the release of Microsoft Dynamics GP that you’re using and which modules or features you are registered to use, choose Help \>\> About Microsoft Dynamics GP.
 
->   The manual is divided into the following parts:
+This content is divided into the following parts:
 
--   *Part 1, Purchase order commitments*, includes information about setting up
+-   [Part 1, Purchase order commitments](#part-1-purchase-order-commitments) includes information about setting up
     and using purchase order commitments.
 
--   *Part 2, Purchase order approvals*, includes information about setting up
+-   [Part 2, Purchase order approvals](#part-2-purchase-order-approvals) includes information about setting up
     and using purchase order approvals.
 
 ### Resources available from the Help menu
@@ -89,10 +89,10 @@ Provides information about how you can join the Customer Experience Improvement 
 This part of the documentation includes information about setting up and using
 purchase order commitments. The following topics are discussed:
 
--   *Chapter 1, “Commitments transactions,”* describes how to set up purchase
+-   [Chapter 1, "Commitments transactions"](#chapter-1-commitments-transactions) describes how to set up purchase
     order commitments and track commitments.
 
--   *Chapter 2, “Commitments inquiries, reports, and maintenance,”* contains
+-   [Chapter 2, “Commitments inquiries, reports, and maintenance”](#chapter-2-commitments-inquiries-reports-and-maintenance) contains
     information about the reports, inquiries, and maintenance options available
     to you in purchase order commitments.
 
@@ -115,7 +115,8 @@ Commitments are amounts from purchase order documents that are committed to be p
 
     If both purchase order commitments and purchase order approvals are activated, all purchase orders with a status of New must be approved before commitment can take place. If only purchase order commitments is activated, all purchase orders with a status of New will automatically be committed.
 
-    *If the purchase order commitments is activated, fixed or variable allocation accounts cannot be used in the Purchase Order Processing. The system will not allow you to save transactions that use those accounts because fixed and variable allocation accounts are not supported in this release of purchase order commitments.*
+    > [!NOTE]
+    > If the purchase order commitments is activated, fixed or variable allocation accounts cannot be used in the Purchase Order Processing. The system will not allow you to save transactions that use those accounts because fixed and variable allocation accounts are not supported in this release of purchase order commitments.
 
     If you mark Activate Commitments, the system will automatically reconcile your existing data when you close the PO Enhancements Setup window.
 
@@ -138,9 +139,10 @@ Commitments are amounts from purchase order documents that are committed to be p
 
 5. Enter a budget ID to identify the budget to compare commitments against.
 
-    *Budget ID Commityyyy is reserved for purchase order commitments (yyyy represents a valid and open fiscal year, for example 2007 or 2008). If you have a Budget ID named Commityyyy, copy this budget information to a new Budget ID name and delete the Commityyyy Budget ID before activating purchase order commitments. While using purchase order commitments, do not set up a budget using the name Commityyyy.*
+    > [!NOTE]
+    > Budget ID Commityyyy is reserved for purchase order commitments (yyyy represents a valid and open fiscal year, for example 2007 or 2008). If you have a Budget ID named Commityyyy, copy this budget information to a new Budget ID name and delete the Commityyyy Budget ID before activating purchase order commitments. While using purchase order commitments, do not set up a budget using the name Commityyyy.
 
-6. To assign more than one budget to a fiscal year, select a fiscal year by clicking the Budget ID field for the corresponding year. Choose the Budget ID expansion button to open the Select Budgets window. Mark each budget that you want to assign to the selected fiscal year. Choose OK to return to the PO Commitments Setup window. If more than one budget is assigned to the fiscal year, \*Multiple appears in the Budget ID field.
+6. To assign more than one budget to a fiscal year, select a fiscal year by clicking the Budget ID field for the corresponding year. Choose the Budget ID expansion button to open the Select Budgets window. Mark each budget that you want to assign to the selected fiscal year. Choose OK to return to the PO Commitments Setup window. If more than one budget is assigned to the fiscal year, ```\*Multiple``` appears in the Budget ID field.
 
     To assign additional budgets to another fiscal year, repeat step 6. A budget can be assigned to more than one year.
 
@@ -174,11 +176,13 @@ Commitments are amounts from purchase order documents that are committed to be p
 
     - If purchase order approvals is activated, purchase orders with a status of New must be approved before commitment can take place.
 
-    *These requirements do not apply to the control line of Purchase Orders that are entered as Blanket or Drop-Ship Blanket.*
+    > [!NOTE]
+    > These requirements do not apply to the control line of Purchase Orders that are entered as Blanket or Drop-Ship Blanket.
 
 11. Review the list of rejected purchase orders on the PO Exception Report and make any necessary changes to those purchase orders.
 
-    *We recommend that you save and print the PO Exception Report now in case you need to review this list and make further changes later.*
+    > [!NOTE]
+    > We recommend that you save and print the PO Exception Report now in case you need to review this list and make further changes later.
 
 12. If applicable, advise any active users to log off and log in again.
 
@@ -186,7 +190,8 @@ Commitments are amounts from purchase order documents that are committed to be p
 
 Use the Purchase Order Entry window to create and authorize commitments. As you enter each item, purchase order commitments will validate the item against the available budget.
 
-*The Allow Sales Documents Commitments option in the Purchase Order Entry window is used to commit purchase orders to sales documents. This is not directly related to purchase order commitments. For more information about the Allow Sales Documents Commitments option, please refer to the Purchase Order Processing documentation.*
+> [!NOTE]
+> The Allow Sales Documents Commitments option in the Purchase Order Entry window is used to commit purchase orders to sales documents. This is not directly related to purchase order commitments. For more information about the Allow Sales Documents Commitments option, please refer to the Purchase Order Processing documentation.
 
 The following information applies to purchase order commitments:
 
@@ -212,7 +217,8 @@ The following information applies to purchase order commitments:
 
     As you add items to a purchase order, a calculation is performed to determine if adding the item will result in an exceeded budget.
 
-    *The purchase order amount must be less than the amount calculated as: (Total Budgeted Amount + Variance Allowance) – (Total Actual Amount + Total Committed Amounts). In the calculation the total actual amount includes posted and unposted transactions.*
+    > [!NOTE]
+    > The purchase order amount must be less than the amount calculated as: (Total Budgeted Amount + Variance Allowance) – (Total Actual Amount + Total Committed Amounts). In the calculation the total actual amount includes posted and unposted transactions.
 
     For example, if an annual budget is set at \$10,000 and a purchase order is created for \$2,000, the available budget is then \$8,000 — that is \$10,000 reduced by the \$2000 commitment. A new purchase order for \$8,500 would exceed the budget and require authorization.
 
@@ -225,7 +231,8 @@ When you receive a shipment of goods or an invoice, each item’s committed amou
 It is recommended that you mark the Post Through General Ledger Files option in the Posting Setup window before posting entries to update actual amounts.
 To post through General Ledger, you must post in batches. Transaction level posting will only post to General Ledger.
 
-*When you save to a batch ID, commitments will not be updated until the specific receivings transaction batch is posted.*
+> [!NOTE]
+> When you save to a batch ID, commitments will not be updated until the specific receivings transaction batch is posted.
 
 #### Editing the status of a purchase order
 
@@ -237,15 +244,16 @@ Use the Edit Purchase Order Status window to change the status of a purchase ord
 
 #### Authorizing multiple purchase orders
 
-If both purchase order commitments and purchase order approvals are activated, you can authorize and approve multiple purchase orders at the same time. See *Authorizing and approving multiple purchase orders* for more information.
+If both purchase order commitments and purchase order approvals are activated, you can authorize and approve multiple purchase orders at the same time. For more information, see [Authorizing and approving multiple purchase orders](#authorizing-and-approving-multiple-purchase-orders).
 
 If only purchase order commitments is activated, the Purchase Order Enhancements Entry window will display all unauthorized purchase orders. Use the Purchase Order Enhancements Entry window to authorize multiple purchase orders.
 
-*If a purchase order line item’s required date is in a fiscal period or a fiscal year that doesn’t have a budget assigned to the year in the PO Commitments Setup window, the purchase order will not be displayed in the Purchase Order Enhancements Entry window.*
+> [!NOTE]
+> If a purchase order line item’s required date is in a fiscal period or a fiscal year that doesn’t have a budget assigned to the year in the PO Commitments Setup window, the purchase order will not be displayed in the Purchase Order Enhancements Entry window.
 
 **To authorize multiple purchase orders:**
 
-1.Open the Purchase Order Enhancements Entry window. (Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry)
+1. Open the Purchase Order Enhancements Entry window. (Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry)
 
     ![](media/2402595e5a94de9cf22197e7185ae038.jpg)
 
@@ -266,7 +274,8 @@ If only purchase order commitments is activated, the Purchase Order Enhancements
 
     If you choose Mark All when any purchase orders are over budget, you will receive a message asking if you would like to authorize all of the purchase orders. If you choose Yes, all marked purchase orders will be authorized including any that are over budget.
 
-    *You can print an edit list by choosing File \>\> Print or choosing the Print button. An edit list outlines the changes that will take place if you authorize the selected documents.*
+    > [!NOTE]
+    > You can print an edit list by choosing File \>\> Print or choosing the Print button. An edit list outlines the changes that will take place if you authorize the selected documents.
 
 4. Choose Commit.
 
@@ -278,12 +287,14 @@ Both purchase order commitments and purchase order approvals must be activated t
 
 If both purchase order commitments and purchase order approvals are activated, the Purchase Order Enhancements Entry window will display all unauthorized and all unapproved purchase orders that the current user can approve. When both purchase order commitments and purchase order approvals are activated, use the Purchase Order Enhancements Entry window to authorize and approve multiple purchase orders. All purchase orders must be authorized before they can be approved.
 
-*If a purchase order line item’s required date is in a fiscal period or a fiscal year that doesn’t have a budget assigned to the year in the PO Commitments Setup window, the purchase order will not be displayed in the Purchase Order Enhancements Entry window.*
+> [!NOTE]
+> If a purchase order line item’s required date is in a fiscal period or a fiscal year that doesn’t have a budget assigned to the year in the PO Commitments Setup window, the purchase order will not be displayed in the Purchase Order Enhancements Entry window.
 
 **To authorize and approve multiple purchase orders:**
 
 1. Open the Purchase Order Enhancements Entry window. (Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry) 
-    *Only subtotal amounts within your approval authority will display in this window.*
+    > [!NOTE]
+    > Only subtotal amounts within your approval authority will display in this window.
 
 2. Select your purchase order restriction preference.
 
@@ -302,11 +313,13 @@ If both purchase order commitments and purchase order approvals are activated, t
 
     If you choose Mark All when any purchase orders are over budget, you will receive a message asking if you want to authorize all of the purchase orders. If you choose Yes, all marked purchase orders will be authorized including any that are over budget. All purchase orders must be authorized before they can be approved.
 
-    *You can print an edit list by choosing File \>\> Print or choosing the Print button. An edit list outlines the changes that will take place if you authorize the selected documents.*
+    > [!NOTE]
+    > You can print an edit list by choosing File \>\> Print or choosing the Print button. An edit list outlines the changes that will take place if you authorize the selected documents.
 
 4. Choose Approve (top left corner of screen).
 
-    *For purchase orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from commitments and approval limits. Trade Discounts, Freight, Miscellaneous and Taxes also are excluded from the approval calculation.*
+    > [!NOTE]
+    > For purchase orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from commitments and approval limits. Trade Discounts, Freight, Miscellaneous and Taxes also are excluded from the approval calculation.
 
 5. Close the Purchase Order Enhancements Entry window.
 
@@ -336,7 +349,8 @@ Use the Budget vs Actual and Committed Inquiry window to view the following info
 
 - Purchase request line amounts that have received final approval, but haven’t been transferred to a purchase order, if you are using commitments in Business Portal Requisition Management
 
-*For purchase orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from inquiries and reports.*
+> [!NOTE]
+> For purchase orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from inquiries and reports.
 
 **To view budget vs. actual and committed information:**
 
@@ -370,7 +384,8 @@ Use the Budget vs Actual and Committed Inquiry window to view the following info
 
 Use the Committed Detail Inquiry window to view committed detail information. No printed reports are available from this window.
 
-*For Purchase Orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from inquiries and reports.*
+> [!NOTE]
+> For Purchase Orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from inquiries and reports.
 
 **To view committed detail information:**
 
@@ -404,8 +419,7 @@ Occasionally, hardware failures, power surges, and other problems can damage or 
 
 1. Create a backup copy of your data.
 
-2. Open the PO Enhancements Maintenance window. (Microsoft Dynamics GP menu \>\> Maintenance \>\> Purchase Order
->   Enhancements)
+2. Open the PO Enhancements Maintenance window. (Microsoft Dynamics GP menu \>\> Maintenance \>\> Purchase Order Enhancements)
 
     ![](media/40866ff98d14066a6094659f0809de3e.jpg)
 
@@ -436,9 +450,9 @@ A PO Exception Report is automatically generated, listing all uncommitted purcha
 ## Part 2: Purchase order approvals
 This part of the documentation includes information about setting up and using purchase order approvals. The following topics are discussed:
 
--  *Chapter 3, “Approvals transactions,”* describes how to set up purchase order approvals and approve purchase orders.
+-  [Chapter 3, “Approvals transactions”](#chapter-3-approvals-transactions) describes how to set up purchase order approvals and approve purchase orders.
 
--  *Chapter 4, “Approvals inquiries, reports, and maintenance,”* contains information about the reports, inquiries, and maintenance options available to you in purchase order approvals.
+-  [Chapter 4, “Approvals inquiries, reports, and maintenance”](#chapter-4-approvals-inquiries-reports-and-maintenance) contains information about the reports, inquiries, and maintenance options available to you in purchase order approvals.
 
 ### Chapter 3: Approvals transactions
 
@@ -468,8 +482,7 @@ To use purchase order approvals, be sure that purchase order approval workflow i
 
 **To set up purchase order approvals:**
 
-1. Open the PO Enhancements Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\>
->   Purchase Order Enhancements)
+1. Open the PO Enhancements Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Enhancements)
 
 2. Mark Activate Approvals under purchase order approvals in the lower part of the window. Select this option to use the features of Purchase Order Approvals.
 
@@ -493,7 +506,8 @@ To use purchase order approvals, be sure that purchase order approval workflow i
 
 6. If you want the current user to be required to report to another user for purchase order approvals, select a Report To User ID. This option will only be available if you selected Approval Authority Amount as the Approval Type for the user in step 5.
 
-    *You must choose a Report to User ID with either unlimited approval authority or a greater approval amount than the current user.*
+    > [!NOTE]
+    > You must choose a Report to User ID with either unlimited approval authority or a greater approval amount than the current user.
 
 7. Select a Security Type. The Security Type option will be available only when you select Approval Authority Amount as the Approval Type for the user.
 
@@ -521,7 +535,8 @@ Enter purchase orders using the Purchase Order Entry window. Use the Approvals S
 
 If you are using Encumbrance Management, you can specify how line items are encumbered when purchase orders are approved. For more information, see the Encumbrance Management documentation.
 
-*If purchase order commitments is activated, the purchase order must be authorized for commitments before you can approve it.*
+> [!NOTE]
+> If purchase order commitments is activated, the purchase order must be authorized for commitments before you can approve it.
 
 **To enter and approve purchase orders:**
 
@@ -537,17 +552,19 @@ If you are using Encumbrance Management, you can specify how line items are encu
 
     When you approve a purchase order, your Approval Authority Amount will be compared to the Remaining PO Subtotal amount. If the subtotal amount exceeds your approval authority, the Approval Status will change to Unapproved and the related approval information will be cleared. If the subtotal amount is within your approval authority, the purchase order will be approved. For information on setting a user’s Approval Authority Amount, please refer to *Setting up purchase order approvals*.
 
-    *For Purchase Orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from commitments and approval limits. As well, Trade Discounts, Freight, Miscellaneous and Taxes are excluded from the approval calculation.*
+    > [!NOTE]
+    > For Purchase Orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from commitments and approval limits. As well, Trade Discounts, Freight, Miscellaneous and Taxes are excluded from the approval calculation.
 
 4. Choose Save.
 
-       *You cannot receive against, invoice against, or print unapproved purchase orders. You can place or remove holds for approved and unapproved purchase orders.*
+    > [!NOTE]
+    > You cannot receive against, invoice against, or print unapproved purchase orders. You can place or remove holds for approved and unapproved purchase orders.
 
 5. Close the Purchase Order Entry window. You will have the option to print the Purchase Order Approval Audit Report—a report which details all of the purchase orders you approved.
 
 #### Approving multiple purchase orders
 
-If both purchase order approvals and purchase order commitments are activated, you can authorize and approve multiple purchase orders at once. See *Authorizing and approving multiple purchase orders* on page 25 for more information.
+If both purchase order approvals and purchase order commitments are activated, you can authorize and approve multiple purchase orders at once. See [Authorizing and approving multiple purchase orders](#authorizing-and-approving-multiple-purchase-orders-1) for more information.
 
 Use the Purchase Order Enhancements Entry window to view and approve multiple unapproved purchase orders. The Purchase Order Enhancements Entry window displays all unapproved purchase orders that the current user can approve. Unapproved purchase orders with totals exceeding the current user’s approval authority will not be displayed.
 
@@ -568,13 +585,15 @@ Use the Purchase Order Enhancements Entry window to view and approve multiple un
 
 3. Mark each purchase order you want to approve in the Approve column, or choose Mark All if you want to mark every purchase order in the window.
 
-*You can print an edit list by choosing File \>\> Print or choosing the Print button. An edit list outlines the changes that will take place if you approve the selected documents.*
+    > [!NOTE]
+    > You can print an edit list by choosing File \>\> Print or choosing the Print button. An edit list outlines the changes that will take place if you approve the selected documents.
 
 4. Choose Approve (top left corner of screen).
 
     When you approve a purchase order, your Approval Authority Amount will be compared to the Remaining PO Subtotal amount of the purchase order. If the subtotal amount exceeds your approval authority, the Approval Status will change to Unapproved and the related approval information will be cleared. If the subtotal amount is within your approval authority, the purchase orders will be approved.
 
-    *For Purchase Orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from commitments and approval limits. In addition, Trade Discounts, Freight, Miscellaneous, and Taxes are excluded from the approval calculation.*
+    > [!NOTE]
+    > For Purchase Orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from commitments and approval limits. In addition, Trade Discounts, Freight, Miscellaneous, and Taxes are excluded from the approval calculation.
 
 5. Close the Purchase Order Enhancements Entry window. You will have the option to print the Purchase Order Approval Audit Report—a report which details all of the purchase orders you approved.
 
@@ -603,11 +622,13 @@ If both purchase order commitments and purchase order approvals are activated, t
 
     If you choose Mark All including purchase orders that are over budget, you will receive a message asking if you want to authorize all of the purchase orders. If you choose Yes, all marked purchase orders will be authorized. All purchase orders must be authorized before they can be approved.
 
-    *You can print an edit list by choosing File \>\> Print or choosing the Print button. An edit list outlines the changes that will take place if you approve the selected documents.*
+    > [!NOTE]
+    > You can print an edit list by choosing File \>\> Print or choosing the Print button. An edit list outlines the changes that will take place if you approve the selected documents.
 
 3. Choose Approve.
 
-    *For Purchase Orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from commitments and approval limits. In addition, Trade Discounts, Freight, Miscellaneous, and Taxes are excluded from the approval calculation.*
+    > [!NOTE]
+    > For Purchase Orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from commitments and approval limits. In addition, Trade Discounts, Freight, Miscellaneous, and Taxes are excluded from the approval calculation.
 
 4. Close the Purchase Order Enhancements Entry window.
 
@@ -631,13 +652,14 @@ Use the Edit Purchase Order Status window to modify purchase orders. The Approva
 
     When you approve a purchase order, your Approval Authority Amount will be compared to the Remaining PO Subtotal amount. If the subtotal amount exceeds your approval authority, the Approval Status will change to Unapproved and the related approval information will be cleared. If the subtotal amount is within your approval authority, the purchase order will be approved.
 
-    *If purchase order commitments is activated, the purchase order must be authorized for commitments before you can approve it. To authorize the purchase order for commitments, go to the Purchase Order Entry window. When you approve the purchase order from that window you will be asked whether you want to authorize the committed budget amount.*
+    > [!NOTE]
+    > If purchase order commitments is activated, the purchase order must be authorized for commitments before you can approve it. To authorize the purchase order for commitments, go to the Purchase Order Entry window. When you approve the purchase order from that window you will be asked whether you want to authorize the committed budget amount.
 
 4. Choose Process.
 
 5. Close the Edit Purchase Order Status window. You will have the option to print the Purchase Order Approval Audit Report—a report which details all of the purchase orders you approved.
 
-## Chapter 4: Approvals inquiries, reports, and maintenance
+### Chapter 4: Approvals inquiries, reports, and maintenance
 
 With purchase order approvals, you can use maintain approval information for each company. You also can view or print purchase order approval information.The following reports allow you to view or print approval status, name of the approver, date and time of approval for applicable purchase orders:
 
@@ -647,9 +669,10 @@ With purchase order approvals, you can use maintain approval information for eac
 
 - Purchase Order History Detail Report
 
--  urchase Order History Summary Report
+- Purchase Order History Summary Report
 
-*These are modified reports. If you need to print or view the original reports without the Approval Status line, you must remove access to modified reports using the Alternate/ Modified Forms and Reports window.*
+ > [!NOTE]
+ > These are modified reports. If you need to print or view the original reports without the Approval Status line, you must remove access to modified reports using the Alternate/ Modified Forms and Reports window.
 
 This information is divided into the following sections:
 
@@ -671,141 +694,104 @@ The Purchase Order Approvals Setup List Report details all the users you have se
 
 **To view or print the Purchase Order Approvals User Setup List:**
 
-1.  Open the PO Enhancement Setup window.
+1.  Open the PO Enhancement Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Enhancements)
 
->   (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\>
->   Purchase Order Enhancements)
+2.  Verify that the Activate Approvals check box is marked.
 
-1.  Verify that the Activate Approvals check box is marked.
+3.  Choose Approval Setup. The Purchase Order Approval User Setup window will open.
 
-2.  Choose Approval Setup. The Purchase Order Approval User Setup window will
-    open.
-
-3.  Choose File \>\> Print, or click the Print button.
+4.  Choose File \>\> Print, or click the Print button.
 
 #### Viewing unapproved purchase orders
 
->   Use the Unapproved Purchase Order Inquiry window to view and report
->   unapproved purchase orders. The Unapproved Purchase Order Inquiry window
->   displays all unapproved purchase orders created by the current user.
+Use the Unapproved Purchase Order Inquiry window to view and report unapproved purchase orders. The Unapproved Purchase Order Inquiry window displays all unapproved purchase orders created by the current user.
 
->   **To view unapproved purchase orders:**
+**To view unapproved purchase orders:**
 
-1.  Open the Unapproved Purchase Order Document Inquiry window.
+1. Open the Unapproved Purchase Order Document Inquiry window. (Inquiry \>\> Purchasing \>\> Unapproved Purchase Order Document)
 
->   (Inquiry \>\> Purchasing \>\> Unapproved Purchase Order Document)
+    ![](media/364245ddb56c0893ee11201ba8703560.jpg)
 
-![](media/364245ddb56c0893ee11201ba8703560.jpg)
+2. Select from the following purchase order filter preferences on the Restricted By drop-down menu.
 
-1.  Select from the following purchase order filter preferences on the
-    Restricted By drop-down menu.
+    - **PO Number**
+        Unapproved purchase orders with purchase order numbers within the range you specify will be displayed.
 
->   **PO Number** Unapproved purchase orders with purchase order numbers within
->   the range you specify will be displayed.
+    - **Vendor ID**
+        Unapproved purchase orders with Vendor IDs within the range of Vendor IDs you specify will be displayed.
 
->   **Vendor ID** Unapproved purchase orders with Vendor IDs within the range of
->   Vendor IDs you specify will be displayed.
+    -   **PO Date**
+        Unapproved purchase orders with purchase order dates within the range you specify will be displayed.
 
->   **PO Date** Unapproved purchase orders with purchase order dates within the
->   range you specify will be displayed.
+3.  Choose Redisplay to display all unapproved purchase orders created by the current user.
 
-1.  Choose Redisplay to display all unapproved purchase orders created by the
-    current user.
+4.  To print the Purchase Order Approvals Unapproved PO Report, a report that lists unapproved purchase orders, choose File \>\> Print, or click the Print button.
 
-2.  To print the Purchase Order Approvals Unapproved PO Report, a report that
-    lists unapproved purchase orders, choose File \>\> Print, or click the Print
-    button.
-
-3.  When you are finished viewing the information, choose OK.
+5.  When you are finished viewing the information, choose OK.
 
 ### Viewing purchase order detail information
 
->   You can view detailed purchase order information using the Purchase Order
->   Inquiry Zoom window. The PO Approvals Detail Zoom window is an additional
->   window that will open automatically. This window displays the purchase order
->   approval information. You can close this window only by closing the Purchase
->   Order Inquiry Zoom window.
+You can view detailed purchase order information using the Purchase Order Inquiry Zoom window. The PO Approvals Detail Zoom window is an additional window that will open automatically. This window displays the purchase order approval information. You can close this window only by closing the Purchase Order Inquiry Zoom window.
 
->   **To view purchase order detail information:**
+**To view purchase order detail information:**
 
-1.  Open the Purchase Order Processing Document Inquiry window.
+1. Open the Purchase Order Processing Document Inquiry window. (Inquiry \>\> Purchasing \>\> Purchase Order Documents)
 
->   (Inquiry \>\> Purchasing \>\> Purchase Order Documents)
+    ![](media/dc29fd5659dace718c5d16a7c8d3903e.jpg)
 
-![](media/dc29fd5659dace718c5d16a7c8d3903e.jpg)
+2.  Select the applicable fields to complete your inquiry—refer to the Purchase Order Processing documentation for complete instructions.
 
-1.  Select the applicable fields to complete your inquiry—refer to the Purchase
-    Order Processing documentation for complete instructions.
+3. Choose Redisplay to display the documents in the scrolling window.
 
-2.  Choose Redisplay to display the documents in the scrolling window.
+    > [!NOTE]
+    > For Purchase Orders that are entered as Blanket or Drop-Ship Blanket, the control line amount is excluded from inquiries and reports.
 
->   *For Purchase Orders that are entered as Blanket or Drop-Ship Blanket, the
->   control line amount is excluded from inquiries and reports.*
+4. To print the Purchasing Document Inquiry Report, choose File \>\> Print, or click the Print button.
 
-1.  To print the Purchasing Document Inquiry Report, choose File \>\> Print, or
-    click the Print button.
+5. Highlight a record and click on the link to view more detailed information (optional).
 
-2.  Highlight a record and click on the link to view more detailed information
-    (optional).
-
-3.  When you are finished viewing the information, choose OK.
+6. When you are finished viewing the information, choose OK.
 
 #### Viewing item information for purchasing documents
 
->   You can obtain detailed item information for purchasing documents using the
->   Purchase Order Processing Item Inquiry Zoom window. The Approvals Status
->   field displays the purchase order approval status.
+You can obtain detailed item information for purchasing documents using the Purchase Order Processing Item Inquiry Zoom window. The Approvals Status field displays the purchase order approval status.
 
->   **To view item information for purchasing documents:**
+**To view item information for purchasing documents:**
 
-1.  Open the Purchase Order Processing Item Inquiry window.
+1. Open the Purchase Order Processing Item Inquiry window. (Inquiry \>\> Purchasing \>\> Purchase Order Items)
 
->   (Inquiry \>\> Purchasing \>\> Purchase Order Items)
+    ![](media/295acc1004ff721313498f3c0e51a855.jpg)
 
-![](media/295acc1004ff721313498f3c0e51a855.jpg)
+2. Select the applicable fields to complete your inquiry. For information on Purchase Order Inquiry, refer to the Purchase Order Processing documentation.
 
-1.  Select the applicable fields to complete your inquiry. For information on
-    Purchase Order Inquiry, refer to the Purchase Order Processing
-    documentation.
+3. Choose Redisplay to display the items in the scrolling window.
 
-2.  Choose Redisplay to display the items in the scrolling window.
+4. To print the Purchase Order Processing Item Inquiry Report, choose File \>\> Print, or click the Print button.
 
-3.  To print the Purchase Order Processing Item Inquiry Report, choose File \>\>
-    Print, or click the Print button.
+5. To view more detailed information, highlight a record and click on the PO Number heading link—the Purchase Order Inquiry Zoom window will open. The Approvals Status field displays the purchase order approval status.
 
-4.  To view more detailed information, highlight a record and click on the PO
-    Number heading link—the Purchase Order Inquiry Zoom window will open. The
-    Approvals Status field displays the purchase order approval status.
+    ![](media/8e5ae6ce7d88c0f843b715512f2a0375.jpg)
 
-![](media/8e5ae6ce7d88c0f843b715512f2a0375.jpg)
+6.  When you are finished viewing the information, choose OK.
 
-1.  When you are finished viewing the information, choose OK.
+#### Printing purchasing documents
 
-### Printing purchasing documents
+Use the Print Purchasing Documents window to print purchasing documents.
 
->   Use the Print Purchasing Documents window to print purchasing documents.
+> [!NOTE]
+> Unapproved purchase orders will not be printed. The PO Approvals Exception report will be generated if any unapproved purchase orders are found in the selected printing range.
 
->   *Unapproved purchase orders will not be printed. The PO Approvals Exception
->   report will be generated if any unapproved purchase orders are found in the
->   selected printing range.*
+**To print purchasing documents:**
 
->   **To print purchasing documents:**
+1.  Open the Print Purchasing Documents window. (Transactions \>\> Purchasing \>\> Print Purchasing Documents)
 
-1.  Open the Print Purchasing Documents window.
+    ![](media/e809d9550ce2b440e3529498a92698e7.jpg)
 
->   (Transactions \>\> Purchasing \>\> Print Purchasing Documents)
+    Select your printing preferences. For more information on printing preferences, refer to the Purchase Order Processing documentation.
 
-![](media/e809d9550ce2b440e3529498a92698e7.jpg)
+2. Choose Print. The Purchasing Document and Exception report, which includes only approved purchase orders, will be printed.
 
->   Select your printing preferences. For more information on printing
->   preferences, refer to the Purchase Order Processing documentation.
-
-1.  Choose Print. The Purchasing Document and Exception report, which includes
-    only approved purchase orders, will be printed.
-
->   If any unapproved purchase orders are found in the selected printing range,
->   the PO Approvals Exception report which lists unapproved purchase orders
->   will be generated.
+    If any unapproved purchase orders are found in the selected printing range, the PO Approvals Exception report which lists unapproved purchase orders will be generated.
 
 #### Maintaining purchase order approvals data
 

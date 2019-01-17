@@ -10,7 +10,7 @@ ms.reviewer: edupont
 ms.author: theley
 ms.date: 01/07/2018
 ---
-# U.S. 2019 January Payroll Tax Update
+# U.S. 2019 Payroll Tax Update
 
 This tax update applies to:
 
@@ -18,13 +18,149 @@ This tax update applies to:
 - Microsoft Dynamics GP 2016 on Microsoft SQL Server
 - Microsoft Dynamics GP 2015 on Microsoft SQL Server
 
-**Summary:** This document contains instructions for installing the January 2019 Round 1 U.S. Payroll Tax Update for Microsoft Dynamics GP.
+**Summary:** This document contains instructions for installing the 2019 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-This is the first tax update for 2019. It includes federal and state tax table changes that take effect January 1, 2019. You’ll need to install this update before processing your first payroll runs for 2019.
+This is the second tax update for 2019. It includes state tax table changes that take effect January 1, 2019. It is recommended you install this update before processing payrolls for the 2019 year.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
-## Changes in this update
+## Changes in January Round 2 update
+- Colorado
+- Connecticut
+- Massachusetts
+- Michigan
+- Missouri
+- New Jersey
+- North Dakota
+- Rhode Island
+- Vermont
+
+## 2019 Federal tax changes
+There are no federal changes in the Round 2 tax table update.
+
+## 2019 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+### Withholding changes for Colorado
+
+### Withholding changes for Connecticut
+*Withholding rates for taxpayers filing as A, D, and F changes made to tax amount on wages over $100,000, only those changed brackets shown in table below*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 100,000     |200,000           | 5,050.00       | 6%           | 100,000            |
+| 200,000     |250,000           | 11,050.00      | 6.5%         | 200,000            |
+| 250,000     |500,000           | 14,300.00      | 6.9%         | 250,000            |
+| 500,000     |                  | 31,550.00      | 6.99%        | 500,000            |
+
+
+*Withholding rates for taxpayers filing as B, changes made to tax amount on wages over $160,000, only those changed brackets shown in table below*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 160,000     |320,000           | 8,080.00       | 6%           | 160,000            |
+| 320,000     |400,000           | 17,680.00      | 6.5%         | 320,000            |
+| 400,000     |800,000           | 22,880.00      | 6.9%         | 400,000            |
+| 800,000     |                  | 50,480.00      | 6.99%        | 800,000            |
+
+*Withholding rates for taxpayers filing as C, changes made to tax amount on wages over $200,000, only those changed brackets shown in table below*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 200,000     |400,000           | 10,100.00      | 6%           | 200,000            |
+| 400,000     |500,000           | 22,100.00      | 6.5%         | 400,000            |
+| 500,000     |1,000,000         | 28,600.00      | 6.9%         | 500,000            |
+| 1,000,000   |                  | 63,100.00      | 6.99%        | 1,000,000          |
+
+### Withholding changes for Massachusetts
+The Flat Tax Rate is 5.05% for Filing Status of HOH and OTHERS
+
+### Withholding changes for Michigan
+The Personal Exemption is $4,400
+
+### Withholding changes for Missouri
+Removed from Sequence Subtract Personal Exemptiona and Subtract Annualized Federal Tax
+Standard Deduction Amount for all Filing Status is $18,350
+The tax table is used for all filing status 
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 1,053            | 0              | 1.5%         | 0                  |
+| 1,053       | 2,106            | 16.00          | 2.0%         | 1,053              |
+| 2,106       | 3,159            | 37.00          | 2.5%         | 2,106              |
+| 3,159       | 4,212            | 63.00          | 3.0%         | 3,159              |
+| 4,212       | 5,265            | 95.00          | 3.5%         | 4,212              |
+| 5,265       | 6,318            | 132.00         | 4.0%         | 5,265              |
+| 6,318       | 7,371            | 174.00         | 4.5%         | 6,318              |
+| 7,371       | 8,424            | 221.00         | 5.0%         | 7,371              |
+| 8,424       |                  | 274.00         | 5.4%         | 8,424              |
+
+
+
+### Withholding changes for New Jersey
+For all Filing Status the tax rate for employees making over $5,000,000 is 11.80%
+
+### Withholding changes for North Dakota
+The Personal Exemption amount is $4,200
+*Withholding rates for taxpayers filing as MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 10,400           | 0              | 0%           | 0                  |
+| 10,400      | 75,000           | 0              | 1.10%        | 10,400             |
+| 75,000      | 141,000          | 710.60         | 2.04%        | 75,000             |
+| 141,000     | 252,000          | 2,057.00       | 2.27%        | 141,000            |
+| 252,000     | 440,000          | 4,576.70       | 2.64%        | 252,000            |
+| 440,000     | And Over         | 9,539.90       | 2.90%        | 440,000            |
+
+
+*Withholding rates for taxpayers filing as SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 4,500            | 0              | 0%           | 0                  |
+| 4,500       | 43,000           | 0              | 1.10%        | 4,500              |
+| 43,000      | 87,000           | 423.50         | 2.04%        | 43,000             |
+| 87,000      | 202,000          | 1,312.10       | 2.27%        | 87,000             |
+| 202,000     | 432,000          | 3,391.60       | 2.64%        | 202,000            |
+| 432,000     | And Over         | 10,003.60      | 2.90%        | 432,000            |
+
+### Withholding changes for Rhode Island
+For all Filing Status the Personal Exemption ($1,000) wage limit increased from $221,800 to $227,050
+
+*Withholding rates for taxpayers filing as MAR and SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 64,050           | 0              | 3.75%        | 0                  |
+| 64,050      | 145,600          | 2,401.88       | 4.75%        | 64,050             |
+| 145,600     | And Over         | 6,275.50       | 5.99%        | 145,600            |
+
+
+### Withholding changes for Vermont
+The Personal Exemption amount is $4,250
+*Withholding rates for taxpayers filing as MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 9,225            | 0              | 0%           | 0                  |
+| 9,225       | 75,375           | 0              | 3.35%        | 9,225              |
+| 75,375      | 169,175          | 2,216.03       | 6.60%        | 75,375             |
+| 169,175     | 252,975          | 8,406.83       | 7.60%        | 169,175            |
+| 252,975     | And Over         | 14,775.63      | 8.75%        | 252,975            |
+
+*Withholding rates for taxpayers filing as SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,075            | 0              | 0%           | 0                  |
+| 3,075       | 42,675           | 0              | 3.35%        | 3,075              |
+| 42,675      | 99,075           | 1,326.60       | 6.60%        | 42,675             |
+| 99,075      | 203,275          | 5,049.00       | 7.60%        | 99,075             |
+| 203,275     | And Over         | 12,968.20      | 8.75%        | 203,275            |
+
+## Changes in January Round 1 update
 
 - Federal changes and FICA Limit
 - California
@@ -261,8 +397,8 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 81,450           | 0              | 0            | 9,350              |
-| 81,450      | 156,450          | 75,000         | 0            | 0                  |
+| 0           | 162,950          | 0              | 0            | 21,550             |
+| 162,950     | 312,950          | 150,000        | 0            | 0                  |
 
 ### Withholding changes for Maryland
 
