@@ -79,8 +79,14 @@
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
 
+<!--- financials -->
+## Financials
+### [Bank Reconciliation](financials/BankReconciliation.md)
+### [Inter Company Processing](financials/IntercompanyProcessing.md)
+### [Glossary](financials/glossary.md)
+
 <!--- distribution -->
-## Distribution 
+## Distribution
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
 
 <!--- payroll -->
@@ -90,5 +96,3 @@
 ### [U.S. Year-End](payroll/us-year-end.md)
 ### [W-2 Source](payroll/W-2-statement.md)
 ### [Payroll Tax](payroll/US19JanTaxR1.md)
-<!--
-### [Payroll Taxes]-->
