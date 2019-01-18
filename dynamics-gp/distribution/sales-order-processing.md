@@ -1508,37 +1508,19 @@ Use the Remove Customer/Item Substitutes window to remove customer/item substitu
 
 #### Available to promise overview
 
->   Available to promise (ATP) means that an item is in stock and can be
->   promised to a customer. You can see how much inventory or projected
->   inventory is not committed to customer orders and is available. ATP is
->   calculated for an item from the latest document date to the earliest
->   document date for all supply orders, including sales orders, sales
->   fulfillment orders/invoices, purchase orders, inventory transactions,
->   inventory adjustments, inventory transfers, assembly transactions, and
->   manufacturing orders.
+>   Available to promise (ATP) means that an item is in stock and can be promised to a customer. You can see how much inventory or projected inventory is not committed to customer orders and is available. ATP is calculated for an item from the latest document date to the earliest document date for all supply orders, including sales orders, sales fulfillment orders/invoices, purchase orders, inventory transactions, inventory adjustments, inventory transfers, assembly transactions, and manufacturing orders.
 
->   To determine the item quantities available to promise, you must consider
->   both the actual demand of the item and meeting that demand as efficiently as
->   possible.
+>   To determine the item quantities available to promise, you must consider both the actual demand of the item and meeting that demand as efficiently as possible.
 
->   For example, if an order is entered for February 15, 2006, it would be most
->   efficient to fulfill that commitment from supply expected to be replenished
->   as near to February 15, 2006 as possible.
+>   For example, if an order is entered for February 15, 2006, it would be most efficient to fulfill that commitment from supply expected to be replenished as near to February 15, 2006 as possible.
 
->   By knowing how much of each product you have on hand and how much is
->   committed to customer orders, you can better control your inventory. You
->   also can give customers a firm promise of when a product is deliverable by
->   viewing existing commitments and eliminating the risk of overselling a
->   product.
+>   By knowing how much of each product you have on hand and how much is committed to customer orders, you can better control your inventory. You also can give customers a firm promise of when a product is deliverable by viewing existing commitments and eliminating the risk of overselling a product.
 
->   You can use the Inventory Available to Promise Inquiry window to view
->   available to promise information for an item.
+>   You can use the Inventory Available to Promise Inquiry window to view available to promise information for an item.
 
 **Chapter 8: Multicurrency transactions**
 
->   If you’re using Multicurrency Management with Sales Order Processing, you
->   can choose the currency you want to enter on quotes, orders, fulfillment
->   orders, invoices, back orders, and returns.
+>   If you’re using Multicurrency Management with Sales Order Processing, you can choose the currency you want to enter on quotes, orders, fulfillment orders, invoices, back orders, and returns.
 
 >   This information is divided into the following sections:
 
@@ -1552,128 +1534,59 @@ Use the Remove Customer/Item Substitutes window to remove customer/item substitu
 
 #### Viewing multiple currencies for sales transactions
 
->   You can choose whether you want to view multicurrency transactions in the
->   originating or the functional currency. Choose View \>\> Currency \>\>
->   Functional or Originating while entering a quote, order, fulfillment order,
->   invoice, back order, or return. The option will be saved on a per user, per
->   window basis.
+>   You can choose whether you want to view multicurrency transactions in the originating or the functional currency. Choose View \>\> Currency \>\> Functional or Originating while entering a quote, order, fulfillment order, invoice, back order, or return. The option will be saved on a per user, per window basis.
 
->   The Options menu and Currency list button are available in the Sales
->   Transaction Entry window. You also can use the Currency list button in other
->   windows that support changing the currency view.
+>   The Options menu and Currency list button are available in the Sales Transaction Entry window. You also can use the Currency list button in other windows that support changing the currency view.
 
->   The first time you open these windows, all the transactions will be
->   displayed in the originating currency. If you change the currency view, the
->   option you last used will be the default view the next time you open that
->   window.
+>   The first time you open these windows, all the transactions will be displayed in the originating currency. If you change the currency view, the option you last used will be the default view the next time you open that window.
 
 #### Exchange rate and document date
 
->   If a transaction’s currency ID is not in the functional currency, the rate
->   type and associated exchange rate table assigned to the selected customer
->   are assigned to the transaction. If a rate type isn’t assigned to the
->   customer, the default rate type for the Sales series specified in the
->   Multicurrency Setup window is used.
+>   If a transaction’s currency ID is not in the functional currency, the rate type and associated exchange rate table assigned to the selected customer are assigned to the transaction. If a rate type isn’t assigned to the customer, the default rate type for the Sales series specified in the Multicurrency Setup window is used.
 
->   The document date assigned to a transaction determines which exchange rate
->   is used, based on the currency ID and associated rate type that’s entered
->   for the transaction. Each time you change the document date on a
->   multicurrency transaction, the system searches for a valid exchange rate. If
->   a valid rate doesn’t exist, you can use the currency expansion button to
->   enter an exchange rate using the Exchange Rate Entry window. You also can
->   use the Exchange Rate Entry window to view or modify the default exchange
->   rate. If you’ve entered a General Ledger posting date that’s different from
->   the document date, the exchange rate expiration date must be after the
->   posting date.
+>   The document date assigned to a transaction determines which exchange rate is used, based on the currency ID and associated rate type that’s entered for the transaction. Each time you change the document date on a multicurrency transaction, the system searches for a valid exchange rate. If a valid rate doesn’t exist, you can use the currency expansion button to enter an exchange rate using the Exchange Rate Entry window. You also can use the Exchange Rate Entry window to view or modify the default exchange rate. If you’ve entered a General Ledger posting date that’s different from the document date, the exchange rate expiration date must be after the posting date.
 
->   *If you choose a currency ID for the transaction that is not your functional
->   currency and have the view set to functional, functional amounts entered
->   might change slightly. This is because the system calculates the originating
->   value of the functional amount and then recalculates the functional
->   equivalent of the originating amount. This is done so that the originating
->   amounts will total correctly.*
+>   *If you choose a currency ID for the transaction that is not your functional currency and have the view set to functional, functional amounts entered might change slightly. This is because the system calculates the originating value of the functional amount and then recalculates the functional equivalent of the originating amount. This is done so that the originating amounts will total correctly.*
 
 #### Multicurrency account distributions
 
->   For multicurrency transactions, distribution amounts are displayed in both
->   the functional and originating currencies. However, you can change only the
->   originating amounts.
+>   For multicurrency transactions, distribution amounts are displayed in both the functional and originating currencies. However, you can change only the originating amounts.
 
->   When you’re entering a multicurrency transaction, the originating debit and
->   credit amounts must balance. If the functional equivalents don’t balance,
->   the difference is posted automatically to a Rounding Difference account and
->   a distribution type of Round identifies the distribution amount in the Sales
->   Distribution Entry window.
+>   When you’re entering a multicurrency transaction, the originating debit and credit amounts must balance. If the functional equivalents don’t balance, the difference is posted automatically to a Rounding Difference account and a distribution type of Round identifies the distribution amount in the Sales Distribution Entry window.
 
->   For example, assume you’ve entered an invoice in the euro currency, with a
->   sale amount of 30,886.59 EUR, a trade discount of 586.84 EUR, a discount
->   available of 1544.33 EUR and the exchange rate is 1.0922. The distributions
->   would be calculated as follows:
+>   For example, assume you’ve entered an invoice in the euro currency, with a sale amount of 30,886.59 EUR, a trade discount of 586.84 EUR, a discount available of 1544.33 EUR and the exchange rate is 1.0922. The distributions would be calculated as follows:
 
 | **Account**    | **Euro debit** | **Euro credit** | **US dollars debit** | **US dollars credit** |
 |----------------|----------------|-----------------|----------------------|-----------------------|
-| Accounts       | 28,755.42 EUR  |                 | \$31,406.67          |                       |
+| Accounts Receivable      | 28,755.42 EUR  |                 | \$31,406.67          |                       |
 | Trade Discount | 586.84 EUR     |                 | \$640.95             |                       |
-| Discount       | 1544.33 EUR    |                 | \$1686.72            |                       |
+| Discount Available     | 1544.33 EUR    |                 | \$1686.72            |                       |
 | Sales          |                | 30,886.59 EUR   |                      | \$33,734.33           |
 | Totals         | 30,886.59 EUR  | 30,886.59 EUR   | \$33,734.34          | \$33,734.33           |
-| Rounding       |                |                 |                      | \$0.01                |
+| Rounding Difference      |                |                 |                      | \$0.01                |
 | Totals         | 30,886.59 EUR  | 30,886.59 EUR   | \$33,734.34          | \$33,734.34           |
-
->   Receivable
-
->   Available
-
->   Difference
 
 #### Sales Order Processing amounts
 
->   All amounts on a multicurrency Sales Order Processing document are
->   calculated in the originating and functional currencies. If you change an
->   exchange rate, the originating amounts are assumed to be correct and the
->   functional amounts will be recalculated using the new rate. The amounts are
->   calculated as follows:
+>   All amounts on a multicurrency Sales Order Processing document are calculated in the originating and functional currencies. If you change an exchange rate, the originating amounts are assumed to be correct and the functional amounts will be recalculated using the new rate. The amounts are calculated as follows:
 
->   **Subtotal** The subtotal is calculated automatically by adding the extended
->   prices in the originating currency for items. The subtotal in the
->   originating currency is then converted to the functional amount. Thus, the
->   subtotal in the originating currency will always equal the sum of the
->   extended prices, but the subtotal in the functional currency might not equal
->   the sum of the items’ extended price in the functional currency.
+>   **Subtotal** The subtotal is calculated automatically by adding the extended prices in the originating currency for items. The subtotal in the originating currency is then converted to the functional amount. Thus, the subtotal in the originating currency will always equal the sum of the extended prices, but the subtotal in the functional currency might not equal the sum of the items’ extended price in the functional currency.
 
->   **Taxes** Taxes are calculated in the originating currency and then
->   converted into the functional currency. The tax details are updated only in
->   the functional currency.
+>   **Taxes** Taxes are calculated in the originating currency and then converted into the functional currency. The tax details are updated only in the functional currency.
 
->   **Amount Received** If you receive a deposit or payment, the amount can be
->   entered in the originating or functional currency. The exchange rate used
->   for the deposit or payment must be the same rate used for the document.
+>   **Amount Received** If you receive a deposit or payment, the amount can be entered in the originating or functional currency. The exchange rate used for the deposit or payment must be the same rate used for the document.
 
->   **Commissions** Commissions are calculated using originating amounts, then
->   converted to functional amounts.
+>   **Commissions** Commissions are calculated using originating amounts, then converted to functional amounts.
 
->   **Distributions** The distribution accounts must be assigned to the
->   originating currency before the transaction can be posted in General Ledger.
->   You can post the transaction in Sales Order Processing but it won’t be
->   posted in General Ledger until the account is assigned to the currency.
+>   **Distributions** The distribution accounts must be assigned to the originating currency before the transaction can be posted in General Ledger. You can post the transaction in Sales Order Processing but it won’t be posted in General Ledger until the account is assigned to the currency.
 
->   **Multidimensional Analysis (MDA)** If a transaction includes analysis
->   information, it is updated only in the functional currency. If the
->   functional amounts are recalculated, the MDA amounts will be recalculated
->   and any changes made to MDA accounts will be lost.
+>   **Multidimensional Analysis (MDA)** If a transaction includes analysis information, it is updated only in the functional currency. If the functional amounts are recalculated, the MDA amounts will be recalculated and any changes made to MDA accounts will be lost.
 
->   **Rounding** When converting amounts from one currency to another, there is
->   the possibility of rounding differences. Rounding adjustments are posted in
->   the functional currency and are posted to the rounding account specified for
->   the originating currency. The account can be changed but the rounding amount
->   can’t be changed.
+>   **Rounding** When converting amounts from one currency to another, there is the possibility of rounding differences. Rounding adjustments are posted in the functional currency and are posted to the rounding account specified for the originating currency. The account can be changed but the rounding amount can’t be changed.
 
 **Chapter 9: Batches**
 
->   Batches are groups of transactions with something in common that are
->   identified by a unique name or a number. For example, batches can be a group
->   of transactions entered by a specific employee, or they can be a group of
->   transactions entered on a particular date.
+>   Batches are groups of transactions with something in common that are identified by a unique name or a number. For example, batches can be a group of transactions entered by a specific employee, or they can be a group of transactions entered on a particular date.
 
 >   This information is divided into the following sections:
 
@@ -1683,8 +1596,7 @@ Use the Remove Customer/Item Substitutes window to remove customer/item substitu
 
 #### Creating a batch
 
->   Use the Sales Batch Entry window to create a batch. You must save quotes,
->   orders, and back orders to a batch.
+>   Use the Sales Batch Entry window to create a batch. You must save quotes, orders, and back orders to a batch.
 
 >   **To create a batch:**
 
@@ -1694,56 +1606,35 @@ Use the Remove Customer/Item Substitutes window to remove customer/item substitu
 
 ![](media/b051a5a64886934fcbf6a3eef8260ea3.jpg)
 
-1.  Enter a batch ID, such as your name or the date, to identify the batch.
+2.  Enter a batch ID, such as your name or the date, to identify the batch.
 
-2.  Select the batch origin of Sales Transaction Entry and enter a batch
-    comment, such as a brief description of the transactions that will be
-    entered in the batch.
+3.  Select the batch origin of Sales Transaction Entry and enter a batch comment, such as a brief description of the transactions that will be entered in the batch.
 
-3.  Enter or accept the posting date. This field will be available only if your
-    system is set up to use the batch date for posting. If this field is
-    unavailable, the posting date from the Sales Date Entry window for each
-    transaction will be the posting date for each transaction.
+4.  Enter or accept the posting date. This field will be available only if your system is set up to use the batch date for posting. If this field is unavailable, the posting date from the Sales Date Entry window for each transaction will be the posting date for each transaction.
 
->   The date you enter is the date the General Ledger records will use. Sales
->   Order Processing records will be updated according to the document date
->   entered in the Sales Transaction Entry window.
+>   The date you enter is the date the General Ledger records will use. Sales Order Processing records will be updated according to the document date entered in the Sales Transaction Entry window.
 
->   *The General Ledger posting date only applies to invoices and returns
->   because those are the only document types that are posted.*
+>   *The General Ledger posting date only applies to invoices and returns because those are the only document types that are posted.*
 
->   For more information about posting settings, see the System Setup
->   instructions (Help \>\> Contents \>\> select Setting Up the System).
+>   For more information about posting settings, see the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
-1.  Select the Checkbook ID that will be affected by the transactions in this
-    batch.
+5.  Select the Checkbook ID that will be affected by the transactions in this batch.
 
-##### **P A R T 2** T R A N S A C T I O N E N T R Y
+6.  If your system uses batch verification, enter the required number of transactions that must be entered before this batch can be posted.
 
-1.  If your system uses batch verification, enter the required number of
-    transactions that must be entered before this batch can be posted.
+7.  If your system uses batch verification, enter the required currency amount for all transactions you’ll enter in this batch.
 
-2.  If your system uses batch verification, enter the required currency amount
-    for all transactions you’ll enter in this batch.
+8.  Choose Save.
 
-3.  Choose Save.
+9.  When you have entered all your transactions in a batch, you can choose File \>\> Print or the printer icon button to print an edit list or batch list to verify your entries.
 
-4.  When you have entered all your transactions in a batch, you can choose File
-    \>\> Print or the printer icon button to print an edit list or batch list to
-    verify your entries.
+>   **Edit list** Contains the transactions that can be posted—invoices and returns.
 
->   **Edit list** Contains the transactions that can be posted—invoices and
->   returns.
-
->   **Batch list** Contains all the transactions saved in the batch, including
->   quotes, orders, back orders, invoices, and returns.
+>   **Batch list** Contains all the transactions saved in the batch, including quotes, orders, back orders, invoices, and returns.
 
 #### Modifying a batch
 
-Use the Sales Batch Entry window to make changes to an unposted batch.
-Transactions can be added only to batches that have an Available or Unapproved
-status; you can’t add transactions to batches that have been approved for
-posting.
+Use the Sales Batch Entry window to make changes to an unposted batch. Transactions can be added only to batches that have an Available or Unapproved status; you can’t add transactions to batches that have been approved for posting.
 
 **To modify a batch:**
 
@@ -1751,18 +1642,15 @@ posting.
 
 >   (Sales \>\> Transactions \>\> Sales Batches)
 
-1.  Enter or select a batch ID. If you enter the batch ID, you must also select
-    the origin.
+2.  Enter or select a batch ID. If you enter the batch ID, you must also select the origin.
 
-2.  Make your corrections and choose Save.
+3.  Make your corrections and choose Save.
 
 #### Deleting a batch
 
-Use the Sales Batch Entry window to delete an unposted batch of sales documents.
-You can’t delete batches that have been approved for posting.
+Use the Sales Batch Entry window to delete an unposted batch of sales documents. You can’t delete batches that have been approved for posting.
 
-If a batch contains documents that can’t be deleted, these documents will remain
-in the batch. Documents that can’t be deleted are:
+If a batch contains documents that can’t be deleted, these documents will remain in the batch. Documents that can’t be deleted are:
 
 -   Documents that have been printed (except for quotes)
 
@@ -1774,13 +1662,9 @@ in the batch. Documents that can’t be deleted are:
 
 -   Quotes that have been submitted to sales quote workflow
 
--   Orders, fulfillment orders, and invoices that haven’t been submitted to
-    customer credit limit override workflow
+-   Orders, fulfillment orders, and invoices that haven’t been submitted to customer credit limit override workflow
 
--   Orders, fulfillment orders, and invoices that have been submitted to
-    customer credit limit override workflow
-
->   **C H A P T E R 9** B A T C H E S
+-   Orders, fulfillment orders, and invoices that have been submitted to customer credit limit override workflow
 
 >   **To delete a batch:**
 
@@ -1788,19 +1672,13 @@ in the batch. Documents that can’t be deleted are:
 
 >   (Sales \>\> Transactions \>\> Sales Batches)
 
-1.  Enter or select the batch ID you want to delete. If you enter the batch ID,
-    you must also select the origin.
+2.  Enter or select the batch ID you want to delete. If you enter the batch ID, you must also select the origin.
 
-2.  Choose Delete.
+3.  Choose Delete.
 
 **Chapter 10: Quotes**
 
->   Quotes are valuable sales tools because customers or potential customers
->   might request estimates—or quotes—for the cost of items before they make
->   purchase decisions. You can include items from inventory on a quote, as well
->   as items that aren’t tracked in inventory, such as installation, labor, and
->   mileage. Your cost and the price to the customer will be calculated
->   automatically.
+>   Quotes are valuable sales tools because customers or potential customers might request estimates—or quotes—for the cost of items before they make purchase decisions. You can include items from inventory on a quote, as well as items that aren’t tracked in inventory, such as installation, labor, and mileage. Your cost and the price to the customer will be calculated automatically.
 
 >   This information is divided into the following sections:
 
@@ -1816,247 +1694,138 @@ in the batch. Documents that can’t be deleted are:
 
 #### Prospect customers
 
->   Prospect customers are potential customers that you maintain records for,
->   but don’t add to your customer base. To enter prospects, you must set up the
->   quote ID to allow prospects. Only quotes can be entered for prospect
->   customers.
+>   Prospect customers are potential customers that you maintain records for, but don’t add to your customer base. To enter prospects, you must set up the quote ID to allow prospects. Only quotes can be entered for prospect customers.
 
->   To transfer a quote for a prospect customer to an order or to an invoice,
->   you must add the prospect to your customer base or assign the prospect to an
->   existing customer. The Prospect To Customer window opens when transferring a
->   quote to an invoice or order so you can transfer a prospect record to a
->   customer record. You can use the prospect information to create a customer
->   record in the Customer Maintenance window. If you add the prospect as a
->   customer, the prospect record
+>   To transfer a quote for a prospect customer to an order or to an invoice, you must add the prospect to your customer base or assign the prospect to an existing customer. The Prospect To Customer window opens when transferring a quote to an invoice or order so you can transfer a prospect record to a customer record. You can use the prospect information to create a customer record in the Customer Maintenance window. If you add the prospect as a customer, the prospect record won’t be deleted automatically. You must delete it in the Sales Prospect Maintenance window.
 
->   won’t be deleted automatically. You must delete it in the Sales Prospect
->   Maintenance window.
-
->   For information about creating prospect customer records, see *Entering a
->   prospect record* on page 73.
+>   For information about creating prospect customer records, see *Entering a prospect record* on page 73.
 
 #### Entering a prospect record
 
->   Use the Sales Prospect Maintenance window to enter prospect customer
->   records. For more information about prospects, see *Prospect customers* on
->   page 73.
+>   Use the Sales Prospect Maintenance window to enter prospect customer records. For more information about prospects, see *Prospect customers* on page 73.
 
 >   **To enter a prospect record:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the
-    Prospect list.
+1.  In the navigation pane, choose the Sales button, and then choose the Prospect list.
 
 2.  In the New group, choose Prospect to open the Sales Prospect Maintenance
     window.
 
 ![](media/febd7af1864272294b24809d934a2f51.jpg)
 
-1.  Enter a prospect ID, name, and contact for the prospect customer.
+3.  Enter a prospect ID, name, and contact for the prospect customer.
 
-2.  Enter address information for the prospect customer including the street
-    address, city, state, and ZIP code.
+4.  Enter address information for the prospect customer including the street address, city, state, and ZIP code.
 
-3.  You can enter or select a class for the prospect customer. For more
-    information about customer classes, see the Receivables Management
-    documentation.
+5.  You can enter or select a class for the prospect customer. For more information about customer classes, see the Receivables Management documentation.
 
-4.  Enter the phone and fax numbers for the prospect customer.
+6.  Enter the phone and fax numbers for the prospect customer.
 
-5.  Enter or select a shipping method. Because taxes are assessed at the point
-    of exchange, the shipping method is used to calculate tax amounts.
+7.  Enter or select a shipping method. Because taxes are assessed at the point of exchange, the shipping method is used to calculate tax amounts.
 
-6.  Enter or select a tax schedule that will be used on quotes you enter for
-    this prospect. For more information about tax schedules, see *Setting up
-    taxes and options* on page 15.
+8.  Enter or select a tax schedule that will be used on quotes you enter for this prospect. For more information about tax schedules, see *Setting up taxes and options* on page 15.
 
-7.  Enter a price level for the prospect. The price level will be used as the
-    sales document price level when you enter a quote for this prospect.
+9.  Enter a price level for the prospect. The price level will be used as the sales document price level when you enter a quote for this prospect.
 
-8.  If you‘ve set up user-defined fields for prospects in the Sales User-Defined
-    Fields Setup window, you can enter additional information in those fields.
-    For more information, see *Setting up user-defined fields* on page 20*.*
+10.  If you‘ve set up user-defined fields for prospects in the Sales User-Defined Fields Setup window, you can enter additional information in those fields. For more information, see *Setting up user-defined fields* on page 20*.*
 
-9.  Save the prospect record.
+11.  Save the prospect record.
 
->   To review the entries and selections you‘ve made for a specific prospect
->   customer, print the Prospect Setup List by choosing File \>\> Print or the
->   printer button while the Sales Prospect Maintenance window is displayed.
+>   To review the entries and selections you‘ve made for a specific prospect customer, print the Prospect Setup List by choosing File \>\> Print or the printer button while the Sales Prospect Maintenance window is displayed.
 
->   To review the entries for all prospective customers, print the Prospect
->   Setup List from the Sales Setup Reports window (Sales \>\> Reports \>\>
->   Setup).
+>   To review the entries for all prospective customers, print the Prospect Setup List from the Sales Setup Reports window (Sales \>\> Reports \>\> Setup).
 
 #### Sales quote approval workflow
 
->   Your company can use the sales quote workflow feature as part of its
->   business controls. If you use this feature, you can define how quotes have
->   to be approved before transferring the quotes to invoices or orders. The
->   rules for approving quotes can be defined to fit your organization's needs.
+>   Your company can use the sales quote workflow feature as part of its business controls. If you use this feature, you can define how quotes have to be approved before transferring the quotes to invoices or orders. The rules for approving quotes can be defined to fit your organization's needs.
 
->   When a quote is ready to be approved, approvers can be notified and the
->   quotes can be approved, using Outlook, Microsoft Dynamics GP, or SharePoint.
->   After a quote completes the Workflow process, it can be printed, sent in
->   e-mail, or transferred to an order or invoice.
+>   When a quote is ready to be approved, approvers can be notified and the quotes can be approved, using Outlook, Microsoft Dynamics GP, or SharePoint. After a quote completes the Workflow process, it can be printed, sent in e-mail, or transferred to an order or invoice.
 
 #### Entering a quote
 
->   You can use the Sales Transaction Entry window to enter and print quotes for
->   your prospects and customers and to view, void, delete, or transfer existing
->   quotes. You also can send quotes in e-mail.
+>   You can use the Sales Transaction Entry window to enter and print quotes for your prospects and customers and to view, void, delete, or transfer existing quotes. You also can send quotes in e-mail.
 
->   Sales quotes are saved but not posted, and distributions aren’t calculated
->   on quotes. If a customer decides to make a purchase based on the quoted
->   price, you can transfer the quote to an order or invoice. When you transfer
->   a quote to an invoice or order, information about the document, customer,
->   and items will be transferred to the new document. To transfer a quote for a
->   prospect customer to an order or to an invoice, you must add the prospect to
->   your customer base or assign the prospect to an existing customer.
+>   Sales quotes are saved but not posted, and distributions aren’t calculated on quotes. If a customer decides to make a purchase based on the quoted price, you can transfer the quote to an order or invoice. When you transfer a quote to an invoice or order, information about the document, customer, and items will be transferred to the new document. To transfer a quote for a prospect customer to an order or to an invoice, you must add the prospect to your customer base or assign the prospect to an existing customer.
 
->   You can use the Copy button in the Sales Transaction Entry window to copy
->   line items from one sales document to another. See *Copying sales document
->   items* on page 85 for more information.
+>   You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* on page 85 for more information.
 
 >   **To enter a quote:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-2.  In the New group or its overflow menu, choose Quote to open the Sales
-    Transaction Entry window.
+2.  In the New group or its overflow menu, choose Quote to open the Sales Transaction Entry window.
 
 ![](media/8f4da20a4722769c9bdd5cb795d2cc3b.jpg)
 
-1.  Select the ID of the type of quote you want to enter.
+3.  Select the ID of the type of quote you want to enter.
 
-2.  Enter a document number or accept the default entry.
+4.  Enter a document number or accept the default entry.
 
-3.  Enter the document date. If you want the quote to expire in a specified
-    number of days, choose the Date expansion button and enter an expiration
-    date.
+5.  Enter the document date. If you want the quote to expire in a specified number of days, choose the Date expansion button and enter an expiration date.
 
->   *After a quote expires it can’t be transferred to an order or invoice. The
->   quote will remain in the system until you delete or void it.*
+>   *After a quote expires it can’t be transferred to an order or invoice. The quote will remain in the system until you delete or void it.*
 
-1.  Enter or select the Site ID from which the items will be sold. The site ID
-    is used to allocate items from inventory and might be used to calculate
-    taxes.
+6.  Enter or select the Site ID from which the items will be sold. The site ID is used to allocate items from inventory and might be used to calculate taxes.
 
-2.  Enter or select a batch ID. Quotes must be saved in a batch and will remain
-    there until you void, delete, or transfer them to another document.
+7.  Enter or select a batch ID. Quotes must be saved in a batch and will remain there until you void, delete, or transfer them to another document.
 
-3.  Enter or select a customer or prospect ID and enter the purchase order
-    number if the customer has provided you with one. The purchase order number
-    will appear on the quote.
+8.  Enter or select a customer or prospect ID and enter the purchase order number if the customer has provided you with one. The purchase order number will appear on the quote.
 
-4.  Choose the Customer E-mail Detail Entry expansion button to open the Sales
-    Email Detail Entry window to update a customer's e-mail information for a
-    transaction. See *Updating a customer’s e-mail information for a sales
-    transaction* on page 109 for more information.
+9.  Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
 
->   The document type to send in e-mail must be available for the customer
->   before you can open the Sales E-mail Detail Entry window.
+>   The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
-1.  Enter or select a currency ID. If the customer record has a currency ID
-    assigned to it, the customer’s currency ID will appear as the default entry.
+10.  Enter or select a currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.
 
->   Use the Currency ID expansion button to open the Exchange Rate Entry window,
->   where you can change the Rate Type ID or the exchange rate. For information
->   about how exchange rates affect the transaction, see *Chapter 8,*
+>   Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the Rate Type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8,**“Multicurrency transactions.”*
 
->   *“Multicurrency transactions.”*
+11.  Enter or select item numbers, units of measure, and item quantities for the quote. To view additional lines of information for each item, choose the hide and show button next to the Extended Price prompt.
 
-1.  Enter or select item numbers, units of measure, and item quantities for the
-    quote. To view additional lines of information for each item, choose the
-    hide and show button next to the Extended Price prompt.
+    -   To view additional lines of information for each item, choose the hide and show button next to the Extended Price field.
 
-    -   To view additional lines of information for each item, choose the hide
-        and show button next to the Extended Price field.
+    -   To view available to promise information about the item if you’re using ATP, choose the Quantity Quoted expansion button to open the Inventory Available to Promise Inquiry window.
 
-    -   To view available to promise information about the item if you’re using
-        ATP, choose the Quantity Quoted expansion button to open the Inventory
-        Available to Promise Inquiry window.
+    -   Only active items can be entered on a quote. You can continue processing a quote if an item has been inactivated, but you can’t change the quantity.
 
-    -   Only active items can be entered on a quote. You can continue processing
-        a quote if an item has been inactivated, but you can’t change the
-        quantity.
+    -   If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the quote. You also can enter the suggested quantity and the site ID for each suggested sales item.
 
-    -   If an item has suggested sales items assigned to it for the document
-        type, the Suggest Sales Item Entry window opens when you press TAB to
-        move to the next line in the scrolling window. You can use the window to
-        mark the suggested sales items to add to the quote. You also can enter
-        the suggested quantity and the site ID for each suggested sales item.
+    -   To remove an item from the quote, select the item and choose Edit \>\> Delete Row.
 
-    -   To remove an item from the quote, select the item and choose Edit \>\>
-        Delete Row.
+    -   To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
-    -   To add an attachment to the item, select the item and choose the
-        Attachment Management icon to open the Document Attachment Management
-        window.
+>   *To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.*
 
->   *To change the shipping address for a single line item, select the item,
->   expand to the detail view of the scrolling window, and choose the Ship to
->   Address ID expansion button to open the Sales Ship To Address Entry window.
->   The changes will apply only to the current line item.*
+12.  Enter the trade discount, freight, and miscellaneous amounts for this quote.
 
-1.  Enter the trade discount, freight, and miscellaneous amounts for this quote.
+>   Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
->   Use the Trade Discount expansion button to open the Sales Trade Discount
->   Entry window, where you can enter or edit a trade discount for the document.
->   The discount can be a percentage or an amount. Use the freight and
->   miscellaneous expansion buttons to open the Sales Tax Schedule Entry window,
->   where you can select the tax details used to tax freight and miscellaneous
->   amounts.
+13.  Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
 
-1.  Taxes will be calculated automatically as you enter items and changes made
-    to the tax details will be transferred to the new document if the document
-    is transferred in full. For more information about transferring documents,
-    see *Transferring totals, deposits, and payments* on page 210.
+14.  To add a comment on the quote, enter the comment ID or a one-time comment. For more information about adding comments, refer to *Adding a comment to sales documents* on page 190.
 
-2.  To add a comment on the quote, enter the comment ID or a one-time comment.
-    For more information about adding comments, refer to *Adding a comment to
-    sales documents* on page 190.
+15.  Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
-3.  Choose the Attachment Management icon to attach documents to the quote, if
-    applicable.
+16.  Choose Holds, User-Defined, or Commissions to view or enter additional information about the quote. If a hold has been assigned to the quote, a stop icon will appear on the Hold button.
 
-4.  Choose Holds, User-Defined, or Commissions to view or enter additional
-    information about the quote. If a hold has been assigned to the quote, a
-    stop icon will appear on the Hold button.
+>   For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
 
->   For more information about commissions, see *Modifying commission
->   information* on page 200 and *Splitting commissions* on page 201.
+17.  To print the quote or send the quote in e-mail, choose File \>\> Print. You also can print the quote by choosing the printer button or send the quote in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending sales documents in e-mail, see *Chapter 24, “Printing and sending documents in email.”*
 
-1.  To print the quote or send the quote in e-mail, choose File \>\> Print. You
-    also can print the quote by choosing the printer button or send the quote in
-    e-mail by choosing the Send in e-mail button in the upper right of the Sales
-    Transaction Entry window. For more information about printing and sending
-    sales documents in e-mail, see *Chapter 24, “Printing and sending documents
-    in email.”*
+>   *If you are using sales quote workflow, the quote must be approved before you can print it or send it in e-mail. You can print a quote or send a quote in e-mail that doesn’t need approval.*
 
->   *If you are using sales quote workflow, the quote must be approved before
->   you can print it or send it in e-mail. You can print a quote or send a quote
->   in e-mail that doesn’t need approval.*
-
-1.  Save the quote or submit the quote, if you are using sales quote workflow.
+18.  Save the quote or submit the quote, if you are using sales quote workflow.
 
 #### Entering a repeating quote
 
->   You can create repeating quotes if the quote ID is set up to allow repeating
->   documents. Repeating quotes are useful if you want to create a template
->   document for a customer that requests the same information multiple times.
->   Repeating quotes must be set up per customer; you can’t set up one document
->   and use it as a template for other customers.
+>   You can create repeating quotes if the quote ID is set up to allow repeating documents. Repeating quotes are useful if you want to create a template document for a customer that requests the same information multiple times. Repeating quotes must be set up per customer; you can’t set up one document and use it as a template for other customers.
 
->   You can’t have repeating multicurrency documents. Only documents whose
->   currency ID is the functional currency can be marked as repeating.
+>   You can’t have repeating multicurrency documents. Only documents whose currency ID is the functional currency can be marked as repeating.
 
 >   **To enter a repeating quote:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-2.  In the New group or its overflow menu, choose Quote to open the Sales
-    Transaction Entry window.
+2.  In the New group or its overflow menu, choose Quote to open the Sales Transaction Entry window.
 
 3.  Enter or select the type ID.
 
@@ -2069,23 +1838,19 @@ in the batch. Documents that can’t be deleted are:
 
 ![](media/b8e3cc173f13103c20672efd13f206cb.jpg)
 
-1.  Mark Repeating. Enter how many times to repeat the quote and the frequency.
+7.  Mark Repeating. Enter how many times to repeat the quote and the frequency.
 
->   Leave the Frequency field blank to use the quote an unlimited number of
->   times.
+>   Leave the Frequency field blank to use the quote an unlimited number of times.
 
-1.  Choose OK to close the Sales Document Detail Entry window.
+8.  Choose OK to close the Sales Document Detail Entry window.
 
-2.  Continue to enter item and total information on the quote.
+9.  Continue to enter item and total information on the quote.
 
-3.  Save the quote or submit the quote, if you are using sales quote workflow.
+10.  Save the quote or submit the quote, if you are using sales quote workflow.
 
 **Chapter 11: Orders**
 
->   Sales orders typically are used in businesses where items or services are
->   agreed upon and then exchanged. When the goods or services are delivered to
->   a customer, you can transfer the order to an invoice. The cost to you and
->   the price the customer will pay is calculated automatically.
+>   Sales orders typically are used in businesses where items or services are agreed upon and then exchanged. When the goods or services are delivered to a customer, you can transfer the order to an invoice. The cost to you and the price the customer will pay is calculated automatically.
 
 >   This information is divided into the following sections:
 
@@ -2099,19 +1864,11 @@ in the batch. Documents that can’t be deleted are:
 
 #### Entering a sales order
 
->   You can use the Sales Transaction Entry window to enter and print orders for
->   your customers and to view, void, delete, or transfer existing orders. You
->   also can send orders in e-mail.
+>   You can use the Sales Transaction Entry window to enter and print orders for your customers and to view, void, delete, or transfer existing orders. You also can send orders in e-mail.
 
->   Sales orders are saved, but not posted; distributions aren’t calculated on
->   orders. When you ship the items to a customer, you can transfer the order to
->   an invoice. If ordered items aren’t available in inventory, you can transfer
->   the order to a fulfillment order or a back order.
+>   Sales orders are saved, but not posted; distributions aren’t calculated on orders. When you ship the items to a customer, you can transfer the order to an invoice. If ordered items aren’t available in inventory, you can transfer the order to a fulfillment order or a back order.
 
->   You also can create an order by transferring a quote or a back order to an
->   order. When you transfer a quote or back order document to an order,
->   information about the document, customer, and items will be transferred to
->   the order.
+>   You also can create an order by transferring a quote or a back order to an order. When you transfer a quote or back order document to an order, information about the document, customer, and items will be transferred to the order.
 
 >   An order will have one of the following document statuses.
 
@@ -2121,181 +1878,93 @@ in the batch. Documents that can’t be deleted are:
 | In Process          | One or more line items have been transferred to another document type. |
 | Complete            | The order has been moved to history.                                   |
 
->   You can change the shipping address or the site ID for a single line item by
->   choosing the Ship to Address ID lookup button or the Default Site lookup
->   button in the Sales Transaction Entry window or the Sales Item Detail Entry
->   window and selecting a new ship-to address ID or site ID. The changes will
->   apply only to the selected line item. If you enter a new line item, the
->   ship-to address ID or site ID will come from the previously entered item.
+>   You can change the shipping address or the site ID for a single line item by choosing the Ship to Address ID lookup button or the Default Site lookup button in the Sales Transaction Entry window or the Sales Item Detail Entry window and selecting a new ship-to address ID or site ID. The changes will apply only to the selected line item. If you enter a new line item, the ship-to address ID or site ID will come from the previously entered item.
 
->   You can use the Copy button in the Sales Transaction Entry window to copy
->   line items from one sales order to another. See *Copying sales document
->   items* on page 85 for more information.
+>   You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales order to another. See *Copying sales document items* on page 85 for more information.
 
 >   **To enter a sales order:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-2.  In the New group or its overflow menu, choose Order to open the Sales
-    Transaction Entry window.
+2.  In the New group or its overflow menu, choose Order to open the Sales Transaction Entry window.
 
 ![](media/6f4d15994f2f5bf9690f9b46952f100f.jpg)
 
-1.  Enter or select the ID of the type of order to enter.
+3.  Enter or select the ID of the type of order to enter.
 
-2.  Enter a document number or accept the default entry.
+4.  Enter a document number or accept the default entry.
 
-3.  Enter or select a customer ID and enter the purchase order number if the
-    customer has provided you with one. The purchase order number will appear on
-    the order.
+5.  Enter or select a customer ID and enter the purchase order number if the customer has provided you with one. The purchase order number will appear on the order.
 
-4.  Choose the Customer E-mail Detail Entry expansion button to open the Sales
-    Email Detail Entry window to update a customer's e-mail information for a
-    transaction. See *Updating a customer’s e-mail information for a sales
-    transaction* on page 109 for more information.
+6.  Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
 
->   The document type to send in e-mail must be available for the customer
->   before you can open the Sales E-mail Detail Entry window.
+>   The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
-1.  Enter the document date. The date you enter will be used to update your
-    sales records. To enter a requested ship date, choose the Date expansion
-    button.
+7.  Enter the document date. The date you enter will be used to update your sales records. To enter a requested ship date, choose the Date expansion button.
 
-2.  Enter or select a Batch ID. Orders must be saved in a batch and will remain
-    there until you void, delete, or transfer them to another document.
+8.  Enter or select a Batch ID. Orders must be saved in a batch and will remain there until you void, delete, or transfer them to another document.
 
-3.  Enter or select the Site ID from which the items on the order will be sold.
-    The site ID is used to allocate items from inventory and might be used to
-    calculate taxes.
+9.  Enter or select the Site ID from which the items on the order will be sold. The site ID is used to allocate items from inventory and might be used to calculate taxes.
 
->   If you’re using multiple bins and you change the Site ID after selecting
->   bins, lot numbers, or serial numbers for an item, your previous bin, lot
->   number, or serial number selections are discarded.
+>   If you’re using multiple bins and you change the Site ID after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
 
->   **C H A P T E R 1 1** O R D E R S
+10.  Enter or select a Currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.  Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the Rate Type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8,**“Multicurrency transactions.”*
 
-1.  Enter or select a Currency ID. If the customer record has a currency ID
-    assigned to it, the customer’s currency ID will appear as the default entry.
+11.  Enter or select item numbers, units of measure, and item quantities for the order. To view additional lines of information for each item, choose the hide and show button next to the Extended Price prompt.
 
->   Use the Currency ID expansion button to open the Exchange Rate Entry window,
->   where you can change the Rate Type ID or the exchange rate. For information
->   about how exchange rates affect the transaction, see *Chapter 8,*
+>   If you’re using multiple bins and you change the quantity ordered or the unit of measure after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
 
->   *“Multicurrency transactions.”*
+-   To view available to promise information about the item if you’re using ATP, choose the Qty Ordered expansion button to open the Inventory Available to Promise Inquiry window.
 
-1.  Enter or select item numbers, units of measure, and item quantities for the
-    order. To view additional lines of information for each item, choose the
-    hide and show button next to the Extended Price prompt.
+-   Only active items can be entered on an order. You can continue processing an order if an item has been inactivated, but you can’t change the quantity.
 
->   If you’re using multiple bins and you change the quantity ordered or the
->   unit of measure after selecting bins, lot numbers, or serial numbers for an
->   item, your previous bin, lot number, or serial number selections are
->   discarded.
+-   If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the order. You also can enter the suggested quantity and the site ID for each suggested sales item.
 
--   To view available to promise information about the item if you’re using ATP,
-    choose the Qty Ordered expansion button to open the Inventory Available to
-    Promise Inquiry window.
+-   To remove an item from the order, select the item and choose Edit \>\> Delete Row.
 
--   Only active items can be entered on an order. You can continue processing an
-    order if an item has been inactivated, but you can’t change the quantity.
+-   To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
--   If an item has suggested sales items assigned to it for the document type,
-    the Suggest Sales Item Entry window opens when you press TAB to move to the
-    next line in the scrolling window. You can use the window to mark the
-    suggested sales items to add to the order. You also can enter the suggested
-    quantity and the site ID for each suggested sales item.
+>   *To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.*
 
--   To remove an item from the order, select the item and choose Edit \>\>
-    Delete Row.
+12.  If you’re using extended pricing and a promotion exists for the item you entered, the Promotion Alert window will open, where you can select whether to apply the promotion to the line. If you accept a free item promotion, the free item will be added to the order automatically.
 
--   To add an attachment to the item, select the item and choose the Attachment
-    Management icon to open the Document Attachment Management window.
+13.  Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
 
->   *To change the shipping address for a single line item, select the item,
->   expand to the detail view of the scrolling window, and choose the Ship to
->   Address ID expansion button to open the Sales Ship To Address Entry window.
->   The changes will apply only to the current line item.*
+14.  If the customer makes a deposit or payment on the order, enter the amount in the Amount Received field. For more information about deposits and payments, see *Entering deposits and payments on orders or back orders* on page 117.
 
-1.  If you’re using extended pricing and a promotion exists for the item you
-    entered, the Promotion Alert window will open, where you can select whether
-    to apply the promotion to the line. If you accept a free item promotion, the
-    free item will be added to the order automatically.
+15.  To add a comment on the order, enter the comment ID or a one-time comment. For more information about adding comments, refer to *Adding a comment to sales documents* on page 190.
 
-2.  Taxes will be calculated automatically as you enter items and changes made
-    to the tax details will be transferred to the new document if the document
-    is transferred in full. For more information about transferring documents,
-    see *Transferring totals, deposits, and payments* on page 210.
+16.  Enter the trade discount, freight, miscellaneous, and tax amounts for the order.
 
-3.  If the customer makes a deposit or payment on the order, enter the amount in
-    the Amount Received field. For more information about deposits and payments,
-    see *Entering deposits and payments on orders or back orders* on page 117.
+>   Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
-4.  To add a comment on the order, enter the comment ID or a one-time comment.
-    For more information about adding comments, refer to *Adding a comment to
-    sales documents* on page 190.
+17.  Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
-5.  Enter the trade discount, freight, miscellaneous, and tax amounts for the
-    order.
+18.  Choose Holds, User-Defined or Commissions to enter additional information about the order. If a hold has been assigned to the order, a stop icon will appear on the Hold button.
 
->   Use the Trade Discount expansion button to open the Sales Trade Discount
->   Entry window, where you can enter or edit a trade discount for the document.
->   The discount can be a percentage or an amount. Use the freight and
->   miscellaneous expansion buttons to open the Sales Tax Schedule Entry window,
->   where you can select the tax details used to tax freight and miscellaneous
->   amounts.
+>   For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
 
-1.  Choose the Attachment Management icon to attach documents to the quote, if
-    applicable.
+19.  To print the order or send the order in e-mail, choose File \>\> Print. You also can print the order by choosing the printer button or send the order in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending documents in e-mail, see *Chapter 24, “Printing and sending documents in e-mail.”*
 
-2.  Choose Holds, User-Defined or Commissions to enter additional information
-    about the order. If a hold has been assigned to the order, a stop icon will
-    appear on the Hold button.
+>   *If the order exceeds the customer’s credit limit and you are using customer credit limit override workflow, the order must be approved before you can print it or send it in e-mail. You can print an order or send an order in e-mail that doesn’t need approval.*
 
->   For more information about commissions, see *Modifying commission
->   information* on page 200 and *Splitting commissions* on page 201.
+20.  Save the order.
 
-1.  To print the order or send the order in e-mail, choose File \>\> Print. You
-    also can print the order by choosing the printer button or send the order in
-    e-mail by choosing the Send in e-mail button in the upper right of the Sales
-    Transaction Entry window. For more information about printing and sending
-    documents in e-mail, see *Chapter 24, “Printing and sending documents in
-    e-mail.”*
+>   Submit the order for approval if the order exceeds the customer’s credit limit and you are using customer credit limit override workflow.
 
->   *If the order exceeds the customer’s credit limit and you are using customer
->   credit limit override workflow, the order must be approved before you can
->   print it or send it in e-mail. You can print an order or send an order in
->   e-mail that doesn’t need approval.*
-
-1.  Save the order.
-
->   Submit the order for approval if the order exceeds the customer’s credit
->   limit and you are using customer credit limit override workflow.
-
->   *National accounts provide the ability to restrict payments for child
->   customers and apply credit checking, holds and finance charges at a
->   consolidated national account level, depending on how the account was set
->   up. If you can’t save or post a transaction, check the status of the options
->   in the National Accounts Maintenance window.*
+>   *National accounts provide the ability to restrict payments for child customers and apply credit checking, holds and finance charges at a consolidated national account level, depending on how the account was set up. If you can’t save or post a transaction, check the status of the options in the National Accounts Maintenance window.*
 
 #### Entering a repeating order
 
->   You can create repeating orders if the order ID is set up to allow repeating
->   documents. Repeating orders are useful if you want to create a template
->   document for a customer that requests the same information multiple times.
->   Repeating orders must be set up per customer; you can’t set up one document
->   and use it as a template for other customers.
+>   You can create repeating orders if the order ID is set up to allow repeating documents. Repeating orders are useful if you want to create a template document for a customer that requests the same information multiple times. Repeating orders must be set up per customer; you can’t set up one document and use it as a template for other customers.
 
->   You can’t have repeating multicurrency documents. Only documents whose
->   currency ID is the functional currency can be marked as repeating.
+>   You can’t have repeating multicurrency documents. Only documents whose currency ID is the functional currency can be marked as repeating.
 
 >   **To enter a repeating order:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-2.  In the New group or its overflow menu, choose Order to open the Sales
-    Transaction Entry window.
+2.  In the New group or its overflow menu, choose Order to open the Sales Transaction Entry window.
 
 3.  Enter or select the type ID.
 
@@ -2303,38 +1972,23 @@ in the batch. Documents that can’t be deleted are:
 
 5.  Enter or select a customer ID and enter or accept the currency ID.
 
-6.  Choose the document expansion button to open the Sales Document Detail Entry
-    window.
+6.  Choose the document expansion button to open the Sales Document Detail Entry window.
 
 7.  Mark Repeating. Enter how many times to repeat the order and the frequency.
 
->   Leave the Frequency field blank to use the order an unlimited number of
->   times.
+>   Leave the Frequency field blank to use the order an unlimited number of times.
 
-1.  Choose OK to close the Sales Document Detail Entry window.
+8.  Choose OK to close the Sales Document Detail Entry window.
 
 #### Copying sales document items
 
->   Use the Copy a Sales Order window to copy line items from one sales document
->   to another. You can copy negative line items to Invoice documents and line
->   items with negative prices. You cannot copy discontinued items.If you are
->   using Analytical Accounting, you can copy analysis information assigned to
->   invoices or returns.
+>   Use the Copy a Sales Order window to copy line items from one sales document to another. You can copy negative line items to Invoice documents and line items with negative prices. You cannot copy discontinued items.If you are using Analytical Accounting, you can copy analysis information assigned to invoices or returns.
 
->   You can copy a quote if you are using sales quote workflow. The new quote is
->   assigned a status of Not Submitted. You can copy from a quote that is
->   pending approval, but you can’t copy to a quote that is pending approval.
+>   You can copy a quote if you are using sales quote workflow. The new quote is assigned a status of Not Submitted. You can copy from a quote that is pending approval, but you can’t copy to a quote that is pending approval.
 
->   You can copy an order, fulfillment order, or invoice if you are using
->   customer credit limit override workflow. The new document is assigned a
->   status of No Approval Needed. You can copy from an order, fulfillment order,
->   or invoice that is pending approval, but you can’t copy to an order,
->   fulfillment order, or invoice that is pending approval.
+>   You can copy an order, fulfillment order, or invoice if you are using customer credit limit override workflow. The new document is assigned a status of No Approval Needed. You can copy from an order, fulfillment order, or invoice that is pending approval, but you can’t copy to an order, fulfillment order, or invoice that is pending approval.
 
->   If the new and existing documents have different currencies and neither is
->   the functional currency, amounts will be converted from the currency of the
->   existing document to the functional currency and then to the currency for
->   the new document.
+>   If the new and existing documents have different currencies and neither is the functional currency, amounts will be converted from the currency of the existing document to the functional currency and then to the currency for the new document.
 
 >   **To copy sales document line items:**
 
@@ -2342,93 +1996,61 @@ in the batch. Documents that can’t be deleted are:
 
 >   (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Enter or select a document to add line items to. To create a new document,
-    select a type and type ID, then enter a new document number, customer ID,
-    and currency ID.
+2.  Enter or select a document to add line items to. To create a new document, select a type and type ID, then enter a new document number, customer ID, and currency ID.
 
-2.  Choose Copy to open the Copy a Sales Order window.
+3.  Choose Copy to open the Copy a Sales Order window.
 
-3.  Enter or select the document number for the document that contains the
-    information to copy.
+4.  Enter or select the document number for the document that contains the information to copy.
 
-4.  Select a price option. If you choose Use Current Pricing, you can unmark the
-    Use Price Level from Target Document option to use the price level from the
-    existing sales document.
+5.  Select a price option. If you choose Use Current Pricing, you can unmark the Use Price Level from Target Document option to use the price level from the existing sales document.
 
-5.  Select a site option. If you choose Use Site, enter or select a site.
+6.  Select a site option. If you choose Use Site, enter or select a site.
 
-6.  Mark the desired copy options.
+7.  Mark the desired copy options.
 
-7.  You can choose Preview to open the Preview Line Items window, where you can
-    mark and modify line items before you copy them. See *Previewing sales
-    document line items* on page 86 for more information.
+8.  You can choose Preview to open the Preview Line Items window, where you can mark and modify line items before you copy them. See *Previewing sales document line items* on page 86 for more information.
 
-8.  Choose Copy.
+9.  Choose Copy.
 
 #### Previewing sales document line items
 
->   Use the Preview Line Items window to mark and modify line items on sales
->   documents before you copy them. You also can view warnings and correct error
->   messages. You can’t mark a line item that contains an error (red symbol)
->   until you correct the error. You can mark a line item that contains a
->   warning (yellow symbol).
+>   Use the Preview Line Items window to mark and modify line items on sales documents before you copy them. You also can view warnings and correct error messages. You can’t mark a line item that contains an error (red symbol) until you correct the error. You can mark a line item that contains a warning (yellow symbol).
 
 >   **To preview sales document line items:**
 
 1.  Open the Copy a Sales Order window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a document
->   \>\> Copy)
+>   (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a document \>\> Copy)
 
-1.  Enter an order number.
+2.  Enter an order number.
 
-2.  Mark the desired copy options.
+3.  Mark the desired copy options.
 
-3.  Choose Preview.
+4.  Choose Preview.
 
-4.  If you are previewing a sales order containing a kit item, you can mark
-    Display Kit Components to view line items included in the kit.
+5.  If you are previewing a sales order containing a kit item, you can mark Display Kit Components to view line items included in the kit.
 
-5.  If you selected the Mark All Line Items for Copy option, all line items will
-    be marked. You can unmark any line item you do not want to copy.
+6.  If you selected the Mark All Line Items for Copy option, all line items will be marked. You can unmark any line item you do not want to copy.
 
-6.  If a line item contains an error, select the line item and click the
-    expansion button to view the error. Then you can correct the error and mark
-    the line item.
+7.  If a line item contains an error, select the line item and click the expansion button to view the error. Then you can correct the error and mark the line item.
 
-7.  You can change the order quantity of any line item. You can change the unit
-    price of sales document line items if the Override Prices option in the
-    Sales Order Processing Setup Options window is marked (Sales \>\> Setup \>\>
-    Sales Order Processing \>\> Options).
+8.  You can change the order quantity of any line item. You can change the unit price of sales document line items if the Override Prices option in the Sales Order Processing Setup Options window is marked (Sales \>\> Setup \>\> Sales Order Processing \>\> Options).
 
-8.  Choose OK to save your changes and close the Preview Line Items window.
+9.  Choose OK to save your changes and close the Preview Line Items window.
 
-9.  Choose Copy to copy the line items to the target document.
+10. Choose Copy to copy the line items to the target document.
 
-10. Continue to enter item and total information on the document.
+11. Continue to enter item and total information on the document.
 
-11. Choose Save.
+12. Choose Save.
 
 **Chapter 12: Fulfillment orders and invoices**
 
->   If you’re using sales fulfillment workflow, you can create fulfillment
->   orders. A fulfillment order is a type of sales document. You can enter a
->   fulfillment order in the Sales Transaction Entry window. You also can create
->   a fulfillment order from a quote, a back order, or an order and you can
->   create an invoice from a fulfillment order. Fulfillment orders cannot be
->   posted. If items on a fulfillment order can’t be filled from inventory, you
->   can transfer the fulfillment order items to a back order.
+>   If you’re using sales fulfillment workflow, you can create fulfillment orders. A fulfillment order is a type of sales document. You can enter a fulfillment order in the Sales Transaction Entry window. You also can create a fulfillment order from a quote, a back order, or an order and you can create an invoice from a fulfillment order. Fulfillment orders cannot be posted. If items on a fulfillment order can’t be filled from inventory, you can transfer the fulfillment order items to a back order.
 
->   When the document status of a fulfillment order reaches Status 6, the
->   fulfillment order becomes an invoice. To view the details about the document
->   status for a fulfillment order, click the Document Status link in the Sales
->   Transaction Entry window. For more information about document statuses,
->   refer to *Setting up fulfillment workflow for sales* on page 46.
+>   When the document status of a fulfillment order reaches Status 6, the fulfillment order becomes an invoice. To view the details about the document status for a fulfillment order, click the Document Status link in the Sales Transaction Entry window. For more information about document statuses, refer to *Setting up fulfillment workflow for sales* on page 46.
 
->   Because a sales invoice is a legally binding document, it should be posted.
->   The cost of goods sold and the price for the customer will be calculated
->   automatically. If items on an invoice can’t be filled from inventory, you
->   can transfer the invoice items to a back order.
+>   Because a sales invoice is a legally binding document, it should be posted. The cost of goods sold and the price for the customer will be calculated automatically. If items on an invoice can’t be filled from inventory, you can transfer the invoice items to a back order.
 
 >   This information is divided into the following sections:
 
@@ -2440,35 +2062,19 @@ in the batch. Documents that can’t be deleted are:
 
 #### Understanding fulfillment orders
 
->   If you’re using sales fulfillment workflow, you can use the Sales
->   Transaction Entry window to create a fulfillment order. A fulfillment order
->   is a type of sales document that uses document statuses to provide
->   additional structure and control over typical sales processes, such as
->   printing the picking ticket, picking the goods, printing the packing slip,
->   packing and shipping the goods, and invoicing the customer.
+>   If you’re using sales fulfillment workflow, you can use the Sales Transaction Entry window to create a fulfillment order. A fulfillment order is a type of sales document that uses document statuses to provide additional structure and control over typical sales processes, such as printing the picking ticket, picking the goods, printing the packing slip, packing and shipping the goods, and invoicing the customer.
 
->   You can create a fulfillment order from a quote, a back order, or an order,
->   and you can create an invoice from a fulfillment order.
+>   You can create a fulfillment order from a quote, a back order, or an order, and you can create an invoice from a fulfillment order.
 
->   When you create a fulfillment order, the document status for the fulfillment
->   order will be the first status that you track for that type ID. You can’t
->   post a fulfillment order.
+>   When you create a fulfillment order, the document status for the fulfillment order will be the first status that you track for that type ID. You can’t post a fulfillment order.
 
->   You can advance the document status of a fulfillment order by confirming
->   that items on fulfillment orders have been picked, packed, and shipped in
->   the Sales Transaction Entry window, the Sales Order Fulfillment window, or
->   the Sales Bulk Confirmation window.
+>   You can advance the document status of a fulfillment order by confirming that items on fulfillment orders have been picked, packed, and shipped in the Sales Transaction Entry window, the Sales Order Fulfillment window, or the Sales Bulk Confirmation window.
 
 #### Entering a fulfillment order or invoice
 
->   Use this information to enter a fulfillment order or invoice. If you’re not
->   using sales fulfillment workflow refer to *Entering an invoice* on page 93.
+>   Use this information to enter a fulfillment order or invoice. If you’re not using sales fulfillment workflow refer to *Entering an invoice* on page 93.
 
->   If you’re using sales fulfillment workflow, you can use the Sales
->   Transaction Entry window to enter, print and send fulfillment orders and
->   invoices in e-mail to your customers. You can view and void existing
->   fulfillment orders. You can view, void, post, and delete existing invoices.
->   For more information, see *Understanding fulfillment orders* on page 87.
+>   If you’re using sales fulfillment workflow, you can use the Sales Transaction Entry window to enter, print and send fulfillment orders and invoices in e-mail to your customers. You can view and void existing fulfillment orders. You can view, void, post, and delete existing invoices. For more information, see *Understanding fulfillment orders* on page 87.
 
 >   You can use the Copy button in the Sales Transaction Entry window to copy
 >   line items from one sales document to another. See *Copying sales document
@@ -2476,92 +2082,55 @@ in the batch. Documents that can’t be deleted are:
 
 >   **To enter a fulfillment order or invoice:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-2.  In the New group or its overflow menu, choose Fulfillment Order or Invoice
-    to open the Sales Transaction Entry window.
+2.  In the New group or its overflow menu, choose Fulfillment Order or Invoice to open the Sales Transaction Entry window.
 
 ![](media/e9545482a183bc887c4c22d127ba65c3.jpg)
 
-1.  Enter or select the ID of the type of fulfillment order or invoice to enter.
+3.  Enter or select the ID of the type of fulfillment order or invoice to enter.
 
-2.  Enter a document number or accept the default entry.
+4.  Enter a document number or accept the default entry.
 
-3.  Enter or select a customer ID and ship-to address.
+5.  Enter or select a customer ID and ship-to address.
 
-4.  Choose the Customer E-mail Detail Entry expansion button to open the Sales
-    Email Detail Entry window to update a customer's e-mail information for a
-    transaction. See *Updating a customer’s e-mail information for a sales
-    transaction* on page 109 for more information.
+6.  Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
 
->   The document type to send in e-mail must be available for the customer
->   before you can open the Sales E-mail Detail Entry window.
+>   The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
-1.  Enter the document date. The date you enter will be used to update your
-    sales records. To change the posting date or enter a requested ship date,
-    choose the Date expansion button.
+7.  Enter the document date. The date you enter will be used to update your sales records. To change the posting date or enter a requested ship date, choose the Date expansion button.
 
-2.  You can create or select a batch ID to assign to the fulfillment order or
-    invoice.
+8.  You can create or select a batch ID to assign to the fulfillment order or invoice.
 
-3.  Enter or select the site ID that the items will be sold from. The site ID
-    will be used to allocate items from inventory and might be used to calculate
-    taxes.
+9.  Enter or select the site ID that the items will be sold from. The site ID will be used to allocate items from inventory and might be used to calculate taxes.
 
-##### **C H A P T E R 1 2** F U L F I L L M E N T O R D E R S A N D I N V O I C E S
+10.  Enter the purchase order number if the customer has provided you with one.
 
-1.  Enter the purchase order number if the customer has provided you with one.
+>   The purchase order number will be printed on the fulfillment order or invoice.
 
->   The purchase order number will be printed on the fulfillment order or
->   invoice.
+11.  Enter or select a currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.
 
-1.  Enter or select a currency ID. If the customer record has a currency ID
-    assigned to it, the customer’s currency ID will appear as the default entry.
-
->   Use the Currency ID expansion button to open the Exchange Rate Entry window,
->   where you can change the rate type ID or the exchange rate. For information
->   about how exchange rates affect the transaction, see *Chapter 8,*
+>   Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the rate type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8,*
 
 >   *“Multicurrency transactions.”*
 
-1.  Enter or select item numbers, units of measure, and item quantities for the
-    fulfillment order or invoice. To view additional lines of information for
-    each item, choose the hide and show button next to the Extended Price field.
+12.  Enter or select item numbers, units of measure, and item quantities for the fulfillment order or invoice. To view additional lines of information for each item, choose the hide and show button next to the Extended Price field.
 
->   Only active items can be entered. You can continue processing if an item has
->   been inactivated, but you can’t change the quantity.
+>   Only active items can be entered. You can continue processing if an item has been inactivated, but you can’t change the quantity.
 
->   If you’re using multiple bins and you change the site ID, quantity, or unit
->   of measure after selecting bins, lot numbers, or serial numbers for an item,
->   your previous bin, lot number, or serial number selections are discarded.
+>   If you’re using multiple bins and you change the site ID, quantity, or unit of measure after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
 
->   If an item has suggested sales items assigned to it for the document type,
->   the Suggest Sales Item Entry window opens when you press TAB to move to the
->   next line in the scrolling window. You can use the window to mark the
->   suggested sales items to add to the fulfillment order. You also can enter
->   the suggested quantity and the site ID for each suggested sales item.
+>   If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the fulfillment order. You also can enter the suggested quantity and the site ID for each suggested sales item.
 
->   To add an attachment to the item, select the item and choose the Attachment
->   Management icon to open the Document Attachment Management window.
+>   To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
->   To remove an item from the fulfillment order or invoice, select the item and
->   choose Edit \>\> Delete Row.
+>   To remove an item from the fulfillment order or invoice, select the item and choose Edit \>\> Delete Row.
 
->   *To change the shipping address for a single line item, select the item,
->   expand to the detail view of the scrolling window, and choose the Ship to
->   Address ID expansion button to open the Sales Ship To Address Entry window.
->   The changes will apply only to the current line item.*
+>   *To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.*
 
-1.  Enter the trade discount, freight, miscellaneous, and tax amounts for this
-    fulfillment order or invoice.
+13.  Enter the trade discount, freight, miscellaneous, and tax amounts for this fulfillment order or invoice.
 
->   Use the Trade Discount expansion button to open the Sales Trade Discount
->   Entry window, where you can enter or edit a trade discount for the document.
->   The discount can be a percentage or an amount. Use the freight and
->   miscellaneous expansion buttons to open the Sales Tax Schedule Entry window,
->   where you can select the tax details used to tax freight and miscellaneous
->   amounts.
+>   Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
 1.  If you’re using extended pricing and a promotion exists for the item you
     entered, the Promotion Alert window will open, where you can select to apply
@@ -8440,84 +8009,53 @@ created.*
 
 1.  Choose a process hold to view.
 
-2.  Mark to display assigned or removed holds and mark to include unposted
-    documents or documents that have been moved to history.
+2.  Mark to display assigned or removed holds and mark to include unposted documents or documents that have been moved to history.
 
->   **Unposted** These documents are still in process. They can be quotes,
->   orders, or back orders that haven’t been transferred or invoices and returns
->   that haven’t been posted.
+>   **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
 
->   **History** These documents have been completely processed and moved to
->   history. They include quotes, orders, and back orders that have been
->   completely transferred, cancelled, or voided, and invoices and returns that
->   have been posted or voided.
+>   **History** These documents have been completely processed and moved to history. They include quotes, orders, and back orders that have been completely transferred, cancelled, or voided, and invoices and returns that have been posted or voided.
 
 1.  You can enter or select a range of documents to view.
 
-2.  Choose Redisplay. The documents assigned to the process hold will appear in
-    the scrolling window. To view more information about a document or customer
-    ID in the list, select the record, and link to a window showing more
-    information.
+2.  Choose Redisplay. The documents assigned to the process hold will appear in the scrolling window. To view more information about a document or customer ID in the list, select the record, and link to a window showing more information.
 
->   If you click the Customer ID link, you can view the information about the
->   customer in the Customer Inquiry or Sales Prospect Maintenance window. If
->   you click the Document Number link, you can view the original sales document
->   in the Sales Transaction Inquiry Zoom window.
+>   If you click the Customer ID link, you can view the information about the customer in the Customer Inquiry or Sales Prospect Maintenance window. If you click the Document Number link, you can view the original sales document in the Sales Transaction Inquiry Zoom window.
 
-1.  To print the contents of this window, choose File \>\> Print or the printer
-    icon button or press CTRL+P. The Process Holds Inquiry Report will be
-    printed.
+3.  To print the contents of this window, choose File \>\> Print or the printer icon button or press CTRL+P. The Process Holds Inquiry Report will be printed.
 
 #### Viewing bulk picking ticket details
 
->   If you’re using advanced picking, use the Sales Bulk Pick Detail window to
->   view the details of groups of picking tickets that have already been
->   printed. This is useful if the physical picking ticket is unavailable and
->   you don’t want to reprint the ticket.
+>   If you’re using advanced picking, use the Sales Bulk Pick Detail window to view the details of groups of picking tickets that have already been printed. This is useful if the physical picking ticket is unavailable and you don’t want to reprint the ticket.
 
 >   **To view bulk picking ticket details:**
 
 1.  Open the Sales Bulk Pick Detail window.
 
->   (Sales \>\> Transactions \>\> Bulk Print \>\> select an available pick \>\>
->   click the Available Pick link)
+>   (Sales \>\> Transactions \>\> Bulk Print \>\> select an available pick \>\> click the Available Pick link)
 
 ![](media/1fbbeac0bf57b8725c6011f3ba257f97.jpg)
 
-1.  Choose OK to close the window.
+2.  Choose OK to close the window.
 
 #### Viewing document status details for a document
 
->   If you’re using sales fulfillment workflow, use the Sales Document Status
->   Inquiry window to view the document status details for a document. You can
->   view information such as the date and time that a document status was
->   changed. You can open this window from the Sales Document Range Inquiry
->   window, the Sales Transaction Entry window, and the Sales Order Fulfillment
->   window.
+>   If you’re using sales fulfillment workflow, use the Sales Document Status Inquiry window to view the document status details for a document. You can view information such as the date and time that a document status was changed. You can open this window from the Sales Document Range Inquiry window, the Sales Transaction Entry window, and the Sales Order Fulfillment window.
 
 >   **To view document status details for a document:**
 
 1.  Open the Sales Document Status Inquiry window.
 
->   (Sales \>\> Inquiry \>\> Sales Range Inquiry \>\> click the Document Status
->   Link)
+>   (Sales \>\> Inquiry \>\> Sales Range Inquiry \>\> click the Document Status Link)
 
 ![](media/2edb0950c1386d4463f22f157ede9486.jpg)
 
-1.  When you’ve finished, close the window.
+2.  When you’ve finished, close the window.
 
 **Chapter 29: Reports**
 
->   You can use Sales Order Processing reports to analyze sales activity and
->   identify errors in transaction entry. You can also use reports to review
->   setup, posting, and historical information. Other Sales Order Processing
->   reports are important for the audit trail to ensure that you’re accurately
->   tracking financial data. Use this information to guide you through printing
->   reports and working with report options.
+>   You can use Sales Order Processing reports to analyze sales activity and identify errors in transaction entry. You can also use reports to review setup, posting, and historical information. Other Sales Order Processing reports are important for the audit trail to ensure that you’re accurately tracking financial data. Use this information to guide you through printing reports and working with report options.
 
->   For more information about creating and printing reports and the various
->   reporting tools that you can use with Microsoft Dynamics GP, refer to your
->   System User's Guide (Help \>\> Contents \>\> select Using The System).
+>   For more information about creating and printing reports and the various reporting tools that you can use with Microsoft Dynamics GP, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
 >   Reports information is divided into the following sections:
 
@@ -8525,24 +8063,13 @@ created.*
 
 -   *Specifying a Sales Order Processing report option*
 
--   *Microsoft SQL Server® Reporting Services reports for Sales Order
-    Processing*
+-   *Microsoft SQL Server® Reporting Services reports for Sales Order Processing*
 
 #### Sales Order Processing report summary
 
->   You can print several types of reports using Sales Order Processing. Some
->   reports automatically are printed when you complete certain procedures; for
->   example, posting journals can be printed automatically when you post
->   transactions, depending on how your posting options are set up. You can
->   choose to print some reports during procedures; for example, you can print
->   an edit list when entering transactions by choosing the Print button in the
->   batch entry window. In order to print some reports, such as analysis or
->   history reports, you must set up report options to specify sorting options
->   and ranges of information to include on the report. For more information,
->   refer to *Specifying a Sales Order Processing report option* on page 233.
+>   You can print several types of reports using Sales Order Processing. Some reports automatically are printed when you complete certain procedures; for example, posting journals can be printed automatically when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Specifying a Sales Order Processing report option* on page 233.
 
->   The following table lists the report types available in Sales Order
->   Processing and the reports included in those categories.
+>   The following table lists the report types available in Sales Order Processing and the reports included in those categories.
 
 | **Report type**                                                                                                                                                                                                                                                                | **Report**                                                                                                                                                                                                                                                                                                                                                                                               | **Printing method**                                                                                                                                                                                                                                                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
