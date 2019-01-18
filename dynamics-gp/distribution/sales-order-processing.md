@@ -1,895 +1,534 @@
-**Introduction**
+---
+title: Sales order processing | Microsoft Docs
+description: Learn about selling to customers in Dynamics GP.
+author: tnistler
 
-You can use Sales Order Processing to enter and print quotes, orders, invoices,
-back orders, and returns individually or in batches.
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.date: 01/18/2019
+ms.author: tnistler
 
-When necessary, you can enter drop-ship items on sales documents and determine
-how quantity shortages will be handled for individual items or for entire
-documents or batches.
+---
+# Sales Order Processing in Dynamics GP
+
+You can use Sales Order Processing to enter and print quotes, orders, invoices, back orders, and returns individually or in batches.
+
+When necessary, you can enter drop-ship items on sales documents and determine how quantity shortages will be handled for individual items or for entire documents or batches.
 
 You also can use Sales Order Processing to complete the following tasks:
 
--   Transfer customer information from one document type to another
+- Transfer customer information from one document type to another
 
--   Transfer item information and quantities from one document type to another
+- Transfer item information and quantities from one document type to another
 
--   Enter and post sales deposits
+- Enter and post sales deposits
 
--   Allocate and fulfill items on orders, fulfillment orders, and invoices
+- Allocate and fulfill items on orders, fulfillment orders, and invoices
 
--   Fulfill items separately from item allocation
+- Fulfill items separately from item allocation
 
-If you use Purchase Order Processing, you can generate purchase orders from
-sales documents.
+If you use Purchase Order Processing, you can generate purchase orders from sales documents.
 
-If you use Receivables Management, customer balances are updated after the sales
-transactions are posted.
+If you use Receivables Management, customer balances are updated after the sales transactions are posted.
 
-If you use Inventory Control, item prices are calculated automatically on sales
-documents and inventory quantities are adjusted when the sales documents are
-posted.
+If you use Inventory Control, item prices are calculated automatically on sales documents and inventory quantities are adjusted when the sales documents are posted.
 
->   The manual is divided into the following parts:
+The manual is divided into the following parts:
 
--   *Part 1, Setup*, introduces Sales Order Processing and explains the setup of
-    the module.
+- *Part 1, Setup*, introduces Sales Order Processing and explains the setup of the module.
 
--   *Part 2, Transaction entry*, explains how to enter sales documents.
+- *Part 2, Transaction entry*, explains how to enter sales documents.
 
--   *Part 3, Allocation, fulfillment, and purchasing*, explains how inventory
-    items are allocated and fulfilled, and how to create purchase orders from
-    sales documents.
+- *Part 3, Allocation, fulfillment, and purchasing*, explains how inventory items are allocated and fulfilled, and how to create purchase orders from sales documents.
 
--   *Part 4, Transaction activity*, explains how to post, print and transfer
-    sales documents.
+- *Part 4, Transaction activity*, explains how to post, print and transfer sales documents.
 
--   *Part 5, Inquiries and reports*, explains how to use inquiries and reports
-    to analyze your sales information.
+- *Part 5, Inquiries and reports*, explains how to use inquiries and reports to analyze your sales information.
 
--   *Part 6, Utilities*, describes procedures you can use to reconcile sales
-    documents or remove sales history.
+- *Part 6, Utilities*, describes procedures you can use to reconcile sales documents or remove sales history.
 
->   **Part 1: Setup**
+## Part 1: Setup
 
-This part of the documentation includes information that will help you set up
-Sales Order Processing. The setup procedures generally need to be completed
-once, but you can refer to this information at other times for instructions on
-modifying or viewing existing entries. The following topics are discussed:
+This part of the documentation includes information that will help you set up Sales Order Processing. The setup procedures generally need to be completed once, but you can refer to this information at other times for instructions on modifying or viewing existing entries. The following topics are discussed:
 
--   *Chapter 1, “Setup overview,”* lists the setup tasks you need to complete in
-    other modules and describes the Sales Order Processing setup routine.
+- *Chapter 1, “Setup overview,”* lists the setup tasks you need to complete in other modules and describes the Sales Order Processing setup routine.
 
--   *Chapter 2, “Module setup,”* provides instructions for setting up the Sales
-    Order Processing module.
+- *Chapter 2, “Module setup,”* provides instructions for setting up the Sales Order Processing module.
 
--   *Chapter 3, “Document setup,”* provides instructions for setting up the
-    document types—quotes, orders, fulfillment orders/invoices, back orders and
-    returns—used in Sales Order Processing.
+- *Chapter 3, “Document setup,”* provides instructions for setting up the document types—quotes, orders, fulfillment orders/invoices, back orders and returns—used in Sales Order Processing.
 
--   *Chapter 4, “Sales fulfillment workflow setup,”* explains how to set up
-    document statuses to assign to fulfillment orders.
+- *Chapter 4, “Sales fulfillment workflow setup,”* explains how to set up document statuses to assign to fulfillment orders.
 
--   *Chapter 5, “Document ID maintenance,”* explains how to modify or delete
-    document types.
+- *Chapter 5, “Document ID maintenance,”* explains how to modify or delete document types.
 
--   *Chapter 6, “Customer item and substitute item maintenance,”* explains how
-    to create or delete item numbers for customers and substitutes.
+- *Chapter 6, “Customer item and substitute item maintenance,”* explains how to create or delete item numbers for customers and substitutes.
 
-**Chapter 1: Setup overview**
+### Chapter 1: Setup overview**
 
->   Use this information to learn about and set up Sales Order Processing. The
->   setup procedures are organized in an order that will ensure Sales Order
->   Processing is set up properly.
+Use this information to learn about and set up Sales Order Processing. The setup procedures are organized in an order that will ensure Sales Order Processing is set up properly.
 
->   When you set up Sales Order Processing, you can open each setup window and
->   enter information, or you can use the Setup Checklist window (Administration
->   \>\> Setup \>\> Setup Checklist) to guide you through the setup process. See
->   your System Setup Guide (Help \>\> Contents \>\> select Setting up the
->   System) for more information about the Setup Checklist window.
+When you set up Sales Order Processing, you can open each setup window and enter information, or you can use the Setup Checklist window (Administration \>\> Setup \>\> Setup Checklist) to guide you through the setup process. See your System Setup Guide (Help \>\> Contents \>\> select Setting up the System) for more information about the Setup Checklist window.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
--   *Sales Order Processing document types*
+- *Sales Order Processing document types*
 
--   *Before you set up Sales Order Processing*
+- *Before you set up Sales Order Processing*
 
--   *Customer credit limit override approval workflow*
+- *Customer credit limit override approval workflow*
 
 #### Sales Order Processing document types
 
->   Use Sales Order Processing to enter, print, and post sales documents. You
->   can transfer sales documents from one type to another and, if you’re using
->   Purchase Order Processing, you can create purchase orders from orders and
->   back orders. You can set up the following types of documents to use in Sales
->   Order Processing:
+Use Sales Order Processing to enter, print, and post sales documents. You can transfer sales documents from one type to another and, if you’re using Purchase Order Processing, you can create purchase orders from orders and back orders. You can set up the following types of documents to use in Sales Order Processing:
 
->   **Quote** A proposal for a specified sale or transaction at some point in
->   the future for a specified price. Quotes aren‘t posted, but the information
->   on them can be transferred to orders, invoices, or fulfillment orders.
+- **Quote**
+    A proposal for a specified sale or transaction at some point in the future for a specified price. Quotes aren‘t posted, but the information on them can be transferred to orders, invoices, or fulfillment orders.
 
->   **Order** A document used when the customer has agreed to make a purchase.
->   You can transfer sales information from a quote or back order to an order.
->   Orders aren‘t posted but the information on them can be transferred to
->   invoices, back orders, or fulfillment orders. Purchase orders also can be
->   created from sales orders.
+- **Order**
+    A document used when the customer has agreed to make a purchase. You can transfer sales information from a quote or back order to an order. Orders aren‘t posted but the information on them can be transferred to invoices, back orders, or fulfillment orders. Purchase orders also can be created from sales orders.
 
->   **Back Order** A document used when an item quantity shortage is discovered
->   during transaction entry. You can transfer information from orders,
->   invoices, or fulfillment orders to back orders. Back orders aren‘t posted
->   but the information on them can be transferred to invoices or orders when
->   the shortage items are available. Purchase orders also can be created from
->   back orders.
+- **Back Order**
+    A document used when an item quantity shortage is discovered during transaction entry. You can transfer information from orders, invoices, or fulfillment orders to back orders. Back orders aren‘t posted but the information on them can be transferred to invoices or orders when the shortage items are available. Purchase orders also can be created from back orders.
 
->   **Fulfillment Order** A document used to track workflow capability when a
->   customer has agreed to make a purchase. You can transfer sales information
->   from a quote, back order, or order to a fulfillment order. After you’ve
->   tracked the fulfillment order through workflow, the fulfillment order
->   becomes an invoice. You also can transfer a fulfillment order to a back
->   order. This document is available only if you’re using sales fulfillment
->   workflow.
+- **Fulfillment Order**
+    A document used to track workflow capability when a customer has agreed to make a purchase. You can transfer sales information from a quote, back order, or order to a fulfillment order. After you’ve tracked the fulfillment order through workflow, the fulfillment order becomes an invoice. You also can transfer a fulfillment order to a back order. This document is available only if you’re using sales fulfillment workflow.
 
->   **Invoice** A legally binding document that records the price and details of
->   the transaction. You can transfer sales information from a quote, order, or
->   back order to an invoice. Invoices are posted and the information from them
->   can be transferred to back orders.
+- **Invoice**
+    A legally binding document that records the price and details of the transaction. You can transfer sales information from a quote, order, or back order to an invoice. Invoices are posted and the information from them can be transferred to back orders.
 
->   **Return** A document used to record the return of a previously sold item.
->   Returns are posted and can‘t be transferred to other documents.
+- **Return**
+    A document used to record the return of a previously sold item. Returns are posted and can‘t be transferred to other documents.
 
 #### Before you set up Sales Order Processing
 
->   Before setting up Sales Order Processing, you should complete the setup
->   procedures for Receivables Management and Inventory Control, including the
->   following tasks:
+Before setting up Sales Order Processing, you should complete the setup procedures for Receivables Management and Inventory Control, including the following tasks:
 
--   Enter Receivables Management and Inventory Control settings
+- Enter Receivables Management and Inventory Control settings
 
--   Enter customer records, salesperson records, and sales territories
+- Enter customer records, salesperson records, and sales territories
 
--   Enter items (including price lists and vendor items)
+- Enter items (including price lists and vendor items)
 
--   Set up item sites
+- Set up item sites
 
--   Enter beginning quantities for inventory items
+- Enter beginning quantities for inventory items
 
--   Set up inventory and sales posting accounts in the Posting Accounts Setup
-    window
+- Set up inventory and sales posting accounts in the Posting Accounts Setup window
 
->   For more information, see the Receivables Management and Inventory Control
->   documentation.
+For more information, see the Receivables Management and Inventory Control documentation.
 
->   *Choose Administration \>\> Setup \>\> Posting \>\> Posting Accounts to open
->   the Posting Accounts Setup window, where you can select to view Inventory or
->   Sales accounts.*
+> [!TIP]
+> Choose Administration \>\> Setup \>\> Posting \>\> Posting Accounts to open the Posting Accounts Setup window, where you can select to view Inventory or Sales accounts.
 
->   You also must complete the setup procedures for your company, currency,
->   accounts, checkbooks, and posting options. Tax schedules and tax details
->   also should be set up. For more information, see the System Setup
->   instructions (Help \>\> Contents \>\> select Setting Up the System).
+You also must complete the setup procedures for your company, currency, accounts, checkbooks, and posting options. Tax schedules and tax details also should be set up. For more information, see the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
->   If you‘re using Sales Order Processing with Multicurrency Management, be
->   sure you‘ve also set up currencies, exchange rate tables, exchange rates,
->   access to currencies and exchange rate tables, and Multicurrency default
->   entries. For more information about using and setting up Multicurrency
->   Management, refer to the Multicurrency Management documentation.
+If you‘re using Sales Order Processing with Multicurrency Management, be sure you‘ve also set up currencies, exchange rate tables, exchange rates, access to currencies and exchange rate tables, and Multicurrency default entries. For more information about using and setting up Multicurrency Management, refer to the Multicurrency Management documentation.
 
->   If you plan to print multicurrency versions of your posting journals and
->   reports, be sure to mark Include Multicurrency Info for the Sales series in
->   the Posting Setup window (Administration \>\> Setup \>\> Posting \>\>
->   Posting).
+If you plan to print multicurrency versions of your posting journals and reports, be sure to mark Include Multicurrency Info for the Sales series in the Posting Setup window (Administration \>\> Setup \>\> Posting \>\> Posting).
 
 #### Customer credit limit override approval workflow
 
->   Your company can use the customer credit limit override workflow feature as
->   part of its business controls. If you use this feature, you can define how
->   orders, fulfillment orders, and invoices must be approved if the documents
->   exceed the set credit limits for customers. You can define the credit limit
->   for each customer in the Customer Maintenance Options window. The rules for
->   approving orders, fulfillment orders, and invoices can be defined to fit
->   your organization’s needs.
+Your company can use the customer credit limit override workflow feature as part of its business controls. If you use this feature, you can define how orders, fulfillment orders, and invoices must be approved if the documents exceed the set credit limits for customers. You can define the credit limit for each customer in the Customer Maintenance Options window. The rules for approving orders, fulfillment orders, and invoices can be defined to fit your organization’s needs.
 
->   When an order, fulfillment order, or invoice is ready to be approved,
->   approvers can be notified and the document can be approved, using Microsoft
->   Office Outlook®, Microsoft Dynamics GP, or SharePoint®. When a document
->   completes Workflow, you can print, transfer, or post the document.
+When an order, fulfillment order, or invoice is ready to be approved, approvers can be notified and the document can be approved, using Microsoft Office Outlook, Microsoft Dynamics GP, or SharePoint. When a document completes Workflow, you can print, transfer, or post the document.
 
->   Before you can use the customer credit limit override approval workflow for
->   Sales Order Processing, you must remove the password from the Exceed Credit
->   Limit option in the Receivables Management Setup window (Sales \>\> Setup
->   \>\> Receivables).
+Before you can use the customer credit limit override approval workflow for Sales Order Processing, you must remove the password from the Exceed Credit Limit option in the Receivables Management Setup window (Sales \>\> Setup \>\> Receivables).
 
-**Chapter 2: Module setup**
+### Chapter 2: Module setup
 
->   Module setup involves setting up your Sales Order Processing preferences
->   such as default entries, tax calculation options, starting document numbers,
->   and whether to maintain document history.
+Module setup involves setting up your Sales Order Processing preferences such as default entries, tax calculation options, starting document numbers, and whether to maintain document history.
 
->   The module setup information contains the following sections:
+The module setup information contains the following sections:
 
--   *Setting up Sales Order Processing default entries*
+- *Setting up Sales Order Processing default entries*
 
--   *Setting up currency decimal places for non-inventoried items*
+- *Setting up currency decimal places for non-inventoried items*
 
--   *Setting up taxes and options*
+- *Setting up taxes and options*
 
--   *Setting up document numbers*
+- *Setting up document numbers*
 
--   *Setting up user-defined fields*
+- *Setting up user-defined fields*
 
--   *Setting up process holds*
+- *Setting up process holds*
 
--   *Selecting a pricing method*
+- *Selecting a pricing method*
 
--   *Enabling extended pricing*
+- *Enabling extended pricing*
 
--   *Setting up advanced picking*
+- *Setting up advanced picking*
 
 #### Setting up Sales Order Processing default entries
 
->   Use the Sales Order Processing Setup window to set up preferences, default
->   entries, the types of history to maintain, and which posting accounts to use
->   when distributing sales amounts. You also can open additional windows to set
->   up sales documents, taxes, default entries for purchase orders, and options
->   to use with daily sales transactions.
+Use the Sales Order Processing Setup window to set up preferences, default entries, the types of history to maintain, and which posting accounts to use when distributing sales amounts. You also can open additional windows to set up sales documents, taxes, default entries for purchase orders, and options to use with daily sales transactions.
 
->   **To set up Sales Order Processing default entries:**
+**To set up Sales Order Processing default entries:**
 
-1.  Open the Sales Order Processing Setup window.
+1. Open the Sales Order Processing Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing)
+    (Sales \>\> Setup \>\> Sales Order Processing)
 
-![](media/f194b55b6e50568ffb303d788c6ac9dd.jpg)
+    ![](media/f194b55b6e50568ffb303d788c6ac9dd.jpg)
 
-1.  Specify how Sales Order Processing transactions will be tracked and
-    displayed during transaction entry. You can select the following options.
+2. Specify how Sales Order Processing transactions will be tracked and displayed during transaction entry. You can select the following options.
 
->   **Display Item Unit Cost** Mark to display the unit cost of each item on the
->   document during transaction entry. The unit cost displayed will be the
->   current cost or the standard cost of the item, depending on the inventory
->   valuation method assigned to each item.
+    - **Display Item Unit Cost**
+        Mark to display the unit cost of each item on the document during transaction entry. The unit cost displayed will be the current cost or the standard cost of the item, depending on the inventory valuation method assigned to each item.
 
->   For more information about item cost, see the Inventory Control
->   documentation.
+        For more information about item cost, see the Inventory Control documentation.
 
->   **Track Voided Transactions in History** Mark to maintain a historical
->   record of voided transactions. If you don‘t mark this option, voided
->   documents will be removed after posting and won‘t be included on reports.
->   Voided document numbers cannot be used again.
+    - **Track Voided Transactions in History**
+        Mark to maintain a historical record of voided transactions. If you don‘t mark this option, voided documents will be removed after posting and won‘t be included on reports. Voided document numbers cannot be used again.
 
->   **Calculate Kit Price Based on Component Cost** If you‘re using a percent
->   markup or percent margin pricing method and you mark this option, the
->   current or standard cost of the kit components will be used to calculate the
->   total cost for the kit. The percent markup or percent margin will be
->   calculated on that cost.
+    - **Calculate Kit Price Based on Component Cost**
+        If you‘re using a percent markup or percent margin pricing method and you mark this option, the current or standard cost of the kit components will be used to calculate the total cost for the kit. The percent markup or percent margin will be calculated on that cost.
 
->   **Display Quantity Distribution Warning** If you mark this option, an alert
->   message will be displayed during transaction entry when the quantity
->   ordered, invoiced, back ordered, or quoted hasn‘t been fully distributed. If
->   you don‘t mark this option, a message won‘t be displayed.
+    - **Display Quantity Distribution Warning**
+        If you mark this option, an alert message will be displayed during transaction entry when the quantity ordered, invoiced, back ordered, or quoted hasn‘t been fully distributed. If you do not mark this option, a message won‘t be displayed.
 
->   **Search for New Rates During Transfer Process** When marked, the system
->   will determine if a different exchange rate should be used when the document
->   is transferred to a new document. If this option is not marked, the new
->   document will use the same exchange rate as the document it was transferred
->   from.
+    - **Search for New Rates During Transfer Process**
+        When marked, the system will determine if a different exchange rate should be used when the document is transferred to a new document. If this option is not marked, the new document will use the same exchange rate as the document it was transferred from.
 
->   For more information about exchange rates and transferring, see
->   *Multicurrency and transfers* on page 209.
+        For more information about exchange rates and transferring, see *Multicurrency and transfers* on page 209.
 
->   **Track Master Numbers** Mark to track master numbers that identify original
->   documents and track the flow of documents. Each subsequent document created
->   from that original document will have the same master number.
+    - **Track Master Numbers**
+        Mark to track master numbers that identify original documents and track the flow of documents. Each subsequent document created from that original document will have the same master number.
 
->   Enter the next master number in the Next Master Number field. This field
->   will be available only if you’ve marked Track Master Numbers.
+        Enter the next master number in the Next Master Number field. This field will be available only if you’ve marked Track Master Numbers.
 
->   **Prices Not Required in Price List** This option is available only if
->   you’re using Inventory Control. Mark this option if you don‘t maintain
->   prices for every item.
+    - **Prices Not Required in Price List**
+        This option is available only if you’re using Inventory Control. Mark this option if you don‘t maintain prices for every item.
 
->   When this option is marked and a price isn‘t found for the item during
->   transaction entry, the price will be zero and you can enter a price. You can
->   enter a password for this option if you want to limit the users who can
->   enter item prices. If this option is not marked, you can’t enter items that
->   don’t have prices in the system.
+        When this option is marked and a price isn‘t found for the item during transaction entry, the price will be zero and you can enter a price. You can enter a password for this option if you want to limit the users who can enter item prices. If this option is not marked, you can’t enter items that don’t have prices in the system.
 
->   **Convert Functional Price** Mark this option if you want the functional
->   currency price to be converted if a price can’t be found in the originating
->   currency for an item. If a functional currency price isn‘t available, the
->   price will be zero. This field is available only if you‘ve marked Prices Not
->   Required in Price List.
+    - **Convert Functional Price**
+        Mark this option if you want the functional currency price to be converted if a price can’t be found in the originating currency for an item. If a functional currency price isn‘t available, the price will be zero. This field is available only if you‘ve marked Prices Not Required in Price List.
 
-1.  Select data entry default settings.
+3. Select data entry default settings.
 
->   **Quantity Shortage** Select the default option to use when you have fewer
->   items in inventory than a customer requests.
+    - **Quantity Shortage**
+        Select the default option to use when you have fewer items in inventory than a customer requests.
 
->   **Document Date** Select which date to use as a default date when you open
->   the Sales Transaction Entry window. You can use the date from the last
->   document you entered or the User Date.
+    - **Document Date**
+        Select which date to use as a default date when you open the Sales Transaction Entry window. You can use the date from the last document you entered or the User Date.
 
->   **Price Warning** Select a price warning to alert users when the default
->   price for the item is used on a sales document instead of the default price
->   for the customer.
+    - **Price Warning**
+        Select a price warning to alert users when the default price for the item is used on a sales document instead of the default price for the customer.
 
-*This option does not apply if you’re using extended pricing.*
+        > [!NOTE]
+        > This option does not apply if you’re using extended pricing.
 
->   The price of an item on a sales document is determined by the price level
->   for the customer in the Customer Maintenance window. If one isn‘t available,
->   the default price level in Receivables Management Setup window is used. If a
->   default price level is not found there, the default price level for the item
->   will be used.
+        The price of an item on a sales document is determined by the price level for the customer in the Customer Maintenance window. If one isn‘t available, the default price level in Receivables Management Setup window is used. If a default price level is not found there, the default price level for the item will be used.
 
->   **Requested Ship Date** Select the default requested ship date for line
->   items in the Sales Date Entry window. If you select Days After Doc. Date,
->   enter the number of days after the document date that the items should be
->   shipped.
+    - **Requested Ship Date**
+        Select the default requested ship date for line items in the Sales Date Entry window. If you select Days After Doc. Date, enter the number of days after the document date that the items should be shipped.
 
-1.  Enter document default information, including the IDs of the site,
-    checkbook, quote, order, fulfillment order—if you’re using sales fulfillment
-    workflow— invoice, back order, and return you use most often. The entries
-    you make here will appear as the default entries in the Sales Transaction
-    Entry window.
+4. Enter document default information, including the IDs of the site, checkbook, quote, order, fulfillment order—if you’re using sales fulfillment workflow— invoice, back order, and return you use most often. The entries you make here will appear as the default entries in the Sales Transaction Entry window.
 
->   If you haven‘t set up quotes, orders, back orders, fulfillment orders,
->   invoices, and returns, skip the document default entries at this time.
->   Later, after you‘ve set up at least one type of quote, order, back order,
->   fulfillment order, invoice, and return, you can complete these entries. For
->   more information about setting up document types, see *Chapter 3, “Document
->   setup.”*
+    If you haven‘t set up quotes, orders, back orders, fulfillment orders, invoices, and returns, skip the document default entries at this time. Later, after you‘ve set up at least one type of quote, order, back order, fulfillment order, invoice, and return, you can complete these entries. For more information about setting up document types, see *Chapter 3, “Document setup.”*
 
-1.  Mark Customer or Item to specify whether the posting accounts associated
-    with the customer or with the item should appear as the default entries
-    during transaction entry. This option determines which Sales and Cost of
-    Goods Sold accounts to use for a sales transaction.
+5. Mark Customer or Item to specify whether the posting accounts associated with the customer or with the item should appear as the default entries during transaction entry. This option determines which Sales and Cost of Goods Sold accounts to use for a sales transaction.
 
-2.  Mark whether to maintain history for sales documents and account
-    distributions. If you choose to maintain history, a detailed copy of the
-    sales document will be kept after it is transferred, voided, or posted.
+6. Mark whether to maintain history for sales documents and account distributions. If you choose to maintain history, a detailed copy of the sales document will be kept after it is transferred, voided, or posted.
 
->   For account distributions, a detailed record of transaction distributions
->   that are posted through General Ledger will be kept. Account distribution
->   history includes the audit trail code, account, account description, debit
->   or credit amount, and other information about each transaction.
+    For account distributions, a detailed record of transaction distributions that are posted through General Ledger will be kept. Account distribution history includes the audit trail code, account, account description, debit or credit amount, and other information about each transaction.
 
->   If you don‘t select to maintain history, quotes, orders, and back orders
->   will be deleted when they‘re transferred or voided. Invoices and returns
->   will be deleted when they‘re posted.
+    If you don‘t select to maintain history, quotes, orders, and back orders will be deleted when they‘re transferred or voided. Invoices and returns will be deleted when they‘re posted.
 
->   *Keeping history will increase the amount of hard disk space needed to run
->   Microsoft Dynamics GP. Periodically, you can remove history to ensure that
->   you‘re keeping only the records you need. For more information, see Chapter
->   31, “Sales history removal.”*
+    > [!NOTE]
+    > Keeping history will increase the amount of hard disk space needed to run Microsoft Dynamics GP. Periodically, you can remove history to ensure that you‘re keeping only the records you need. For more information, see Chapter 31, “Sales history removal.”
 
-1.  Enter the number of decimal places to use when displaying and entering
-    quantity amounts for non-inventoried items.
+7. Enter the number of decimal places to use when displaying and entering quantity amounts for non-inventoried items.
 
-2.  If you aren‘t using Multicurrency Management, enter the number of decimal
-    places to use when displaying and entering currency amounts for
-    noninventoried items.
+8. If you aren‘t using Multicurrency Management, enter the number of decimal places to use when displaying and entering currency amounts for noninventoried items.
 
->   If you‘re using Multicurrency Management, choose the expansion button to
->   open the Sales Non-Inventoried Currency Decimals Setup window where you can
->   define currency decimal places for each currency to which you have access.
->   For more information, see *Setting up currency decimal places for
->   non-inventoried items* on page 14.
+    If you‘re using Multicurrency Management, choose the expansion button to open the Sales Non-Inventoried Currency Decimals Setup window where you can define currency decimal places for each currency to which you have access. For more information, see *Setting up currency decimal places for non-inventoried items* on page 14.
 
-1.  Choose File \>\> Print or the printer icon button to print the Sales Order
-    Processing Setup List. You also can print the report using the Sales Setup
-    Reports window.
+9. Choose File \>\> Print or the printer icon button to print the Sales Order Processing Setup List. You also can print the report using the Sales Setup Reports window.
 
-2.  Choose OK to save your setup options.
+10. Choose OK to save your setup options.
 
 #### Setting up currency decimal places for noninventoried items
 
->   If you are using Multicurrency Management, you can use the Sales
->   Non-Inventoried Currency Decimals Setup window to define currency decimal
->   places for noninventoried items for each currency that your company uses.
->   Amounts will appear in the format defined in this window whenever you enter
->   a non-inventoried item for a specific currency.
+If you are using Multicurrency Management, you can use the Sales Non-Inventoried Currency Decimals Setup window to define currency decimal places for noninventoried items for each currency that your company uses. Amounts will appear in the format defined in this window whenever you enter a non-inventoried item for a specific currency.
 
->   If you aren‘t using Multicurrency Management, use the Sales Order Processing
->   Setup window to define the number of decimal places when displaying currency
->   amounts for non-inventoried items.
+If you aren‘t using Multicurrency Management, use the Sales Order Processing Setup window to define the number of decimal places when displaying currency amounts for non-inventoried items.
 
->   You can change the non-inventoried currency decimal places for a currency at
->   any time. Changing the decimal place setting for a currency won’t change the
->   decimal place settings of non-inventoried items already entered on existing
->   sales documents. The settings will be applied to new items added to existing
->   transactions or to new transactions.
+You can change the non-inventoried currency decimal places for a currency at any time. Changing the decimal place setting for a currency won’t change the decimal place settings of non-inventoried items already entered on existing sales documents. The settings will be applied to new items added to existing transactions or to new transactions.
 
->   **To set up currency decimal places for non-inventoried items:**
+**To set up currency decimal places for non-inventoried items:**
 
-1.  Open the Sales Non-Inventoried Currency Decimals Setup window.
+1. Open the Sales Non-Inventoried Currency Decimals Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Currency expansion
->   button)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Currency expansion button)
 
-![](media/6003892219c643c872f7c5dc997ccf18.jpg)
+    ![](media/6003892219c643c872f7c5dc997ccf18.jpg)
 
-1.  Enter or select the number of decimal places to use when displaying currency
-    amounts for non-inventoried items.
+2. Enter or select the number of decimal places to use when displaying currency amounts for non-inventoried items.
 
-2.  Continue defining decimal places for all the currencies displayed in the
-    window.
+3. Continue defining decimal places for all the currencies displayed in the window.
 
-3.  Choose File \>\> Print to print the Sales Non-Inventoried Currency Decimals
-    Setup List.
+4. Choose File \>\> Print to print the Sales Non-Inventoried Currency Decimals Setup List.
 
-4.  Choose OK to close the window.
+5. Choose OK to close the window.
 
 #### Setting up taxes and options
 
->   You can use the Sales Order Processing Setup Options window to specify a
->   method for calculating taxes, preferences for generating purchase orders (if
->   you’re using Purchase Order Processing), and to set up other sales options.
+You can use the Sales Order Processing Setup Options window to specify a method for calculating taxes, preferences for generating purchase orders (if you’re using Purchase Order Processing), and to set up other sales options.
 
->   You can further restrict each option by assigning a password to it. If the
->   option is marked but no password is entered, anyone who has access to the
->   related windows can use the option.
+You can further restrict each option by assigning a password to it. If the option is marked but no password is entered, anyone who has access to the related windows can use the option.
 
->   If you’re using advanced picking, you can select to sort individual picking
->   tickets by bin sequence. If you’re using advanced picking and multiple bins,
->   you can select to print default bins or all available bins when a default
->   bin isn’t found.
+If you’re using advanced picking, you can select to sort individual picking tickets by bin sequence. If you’re using advanced picking and multiple bins, you can select to print default bins or all available bins when a default bin isn’t found.
 
->   **To set up taxes and options:**
+**To set up taxes and options:**
 
-1.  Open the Sales Order Processing Setup Options window.
+1. Open the Sales Order Processing Setup Options window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Options button)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Options button)
 
-![](media/5b10efc750d53903e6bc5fba9ae31ffc.jpg)
+    ![](media/5b10efc750d53903e6bc5fba9ae31ffc.jpg)
 
-1.  Mark the type of tax calculation to use on sales documents.
+2. Mark the type of tax calculation to use on sales documents.
 
->   **Advanced** Mark Advanced to specify a tax schedule to use for
->   noninventoried items and freight and miscellaneous charges. For inventory
->   items, the tax schedule you chose for each item in the Item Maintenance
->   window will be used.
+    - **Advanced**
+        Mark Advanced to specify a tax schedule to use for noninventoried items and freight and miscellaneous charges. For inventory items, the tax schedule you chose for each item in the Item Maintenance window will be used.
 
->   **Single Schedule** Mark Single Schedule to specify one tax schedule for all
->   items on all documents. Items on each sales document will be taxed using the
->   tax details in the schedule you specify here, even if the item is nontaxable
->   or if the customer is tax exempt. Taxes won‘t be calculated on freight or
->   miscellaneous charges.
+    - **Single Schedule**
+        Mark Single Schedule to specify one tax schedule for all items on all documents. Items on each sales document will be taxed using the tax details in the schedule you specify here, even if the item is nontaxable or if the customer is tax exempt. Taxes won‘t be calculated on freight or miscellaneous charges.
 
->   For more information about calculating and distributing sales tax amounts,
->   see *Chapter 18, “Sales Order Processing taxes.”*
+        For more information about calculating and distributing sales tax amounts, see *Chapter 18, “Sales Order Processing taxes.”*
 
-1.  If you selected to use advanced tax calculations, enter or select tax
-    options for non-inventoried items, freight, and miscellaneous charges. You
-    can change the tax schedules used for a transaction in the Sales Tax
-    Schedule Entry window during transaction entry. The tax options are:
+3. If you selected to use advanced tax calculations, enter or select tax options for non-inventoried items, freight, and miscellaneous charges. You can change the tax schedules used for a transaction in the Sales Tax Schedule Entry window during transaction entry. The tax options are:
 
->   **Taxable** The default tax details for the customer or site will be
->   compared to the tax details in the tax schedule you specify here.
+    - **Taxable**
+        The default tax details for the customer or site will be compared to the tax details in the tax schedule you specify here.
 
->   **Nontaxable** No taxes will be calculated.
+    - **Nontaxable**
+        No taxes will be calculated.
 
->   **Base on customers** The tax details from the customer tax schedule or the
->   site tax schedule will be the default, depending on whether the shipping
->   method is delivery or pickup.
+    - **Base on customers**
+        The tax details from the customer tax schedule or the site tax schedule will be the default, depending on whether the shipping method is delivery or pickup.
 
-1.  Select a default sorting option for picking tickets. Your selection
-    determines how information is printed on picking tickets. The sorting
-    options are:
+4. Select a default sorting option for picking tickets. Your selection determines how information is printed on picking tickets. The sorting options are:
 
->   **Standard Pick Ticket** Items will be printed on the picking ticket in the
->   order that they were entered in the Sales Transaction Entry window.
+    - **Standard Pick Ticket**
+        Items will be printed on the picking ticket in the order that they were entered in the Sales Transaction Entry window.
 
->   **Bin Sequence** Items will be printed on the picking ticket sorted by bins
->   and then items.
+    - **Bin Sequence**
+        Items will be printed on the picking ticket sorted by bins and then items.
 
-1.  If you’re using multiple bins, select when to print bins on blank individual
-    picking tickets. The options are:
+5. If you’re using multiple bins, select when to print bins on blank individual picking tickets. The options are:
 
->   **Always** Default bin information and additional available bin information
->   always will be printed on the picking ticket.
+    - **Always**
+        Default bin information and additional available bin information always will be printed on the picking ticket.
 
->   **When Default Bin can’t be Found** Additional available bin information
->   will be printed on the picking ticket only when a default bin can’t be found
->   for an item.
+    - **When Default Bin can’t be Found**
+        Additional available bin information will be printed on the picking ticket only when a default bin can’t be found for an item.
 
-1.  If you’re using Purchase Order Processing, select a default site to use when
-    generating purchase orders from sales orders and back orders. Your selection
-    determines how purchase orders and purchase order line items are created.
-    The choices are:
+6. If you’re using Purchase Order Processing, select a default site to use when generating purchase orders from sales orders and back orders. Your selection determines how purchase orders and purchase order line items are created. The choices are:
 
->   **Don’t Combine Items with Different Sites on Same PO** If you select this
->   option, items with different sites on a sales order document will be listed
->   on separate purchase orders. For example, on a sales order document, ITEMA
->   is assigned to the NORTH site and ITEMB is assigned the SOUTH site. When you
->   generate the purchase orders, ITEMA and ITEMB would be listed on two
->   separate purchase orders.
+    - **Don’t Combine Items with Different Sites on Same PO**
+        If you select this option, items with different sites on a sales order document will be listed on separate purchase orders. For example, on a sales order document, ITEMA is assigned to the NORTH site and ITEMB is assigned the SOUTH site. When you generate the purchase orders, ITEMA and ITEMB would be listed on two separate purchase orders.
 
->   **Combine Items with Different Sites on Same PO** If you select this
+    - **Combine Items with Different Sites on Same PO** If you select this option, items with different sites on a sales order document will be listed on the same purchase order if they have the same vendor. For example, on a sales order document, ITEMA is assigned to the NORTH site, ITEMB is assigned to the SOUTH site and ITEMA and ITEMB have the same primary vendor. When you generate the purchase order, ITEMA and ITEMB would be listed as two line items on a single purchase order.
 
->   option, items with different sites on a sales order document will be listed
->   on the same purchase order if they have the same vendor. For example, on a
->   sales order document, ITEMA is assigned to the NORTH site, ITEMB is assigned
->   to the SOUTH site and ITEMA and ITEMB have the same primary vendor. When you
->   generate the purchase order, ITEMA and ITEMB would be listed as two line
->   items on a single purchase order.
+    - **Use a Single Site for All POs**
+        If you select Use a Single Site for All POs, you can enter the site where all items will be received in the Site ID field. After the quantities are received, you must transfer the quantities from the receiving site to the sites listed on the sales order document.
 
->   **Use a Single Site for All POs** If you select Use a Single Site for All
->   POs, you can enter the site where all items will be received in the Site ID
->   field. After the quantities are received, you must transfer the quantities
->   from the receiving site to the sites listed on the sales order document.
+7. If you’re using Purchase Order Processing, select a default required date. This date is set for each line item and is the date by which you must receive the item on a purchase order. This date can be viewed or changed in the Purchasing Item Detail Entry window.
 
-1.  If you’re using Purchase Order Processing, select a default required date.
-    This date is set for each line item and is the date by which you must
-    receive the item on a purchase order. This date can be viewed or changed in
-    the Purchasing Item Detail Entry window.
+    If you select Days Prior to Requested Ship Date, enter the number of days you want to receive the purchase order line items before the requested ship date of the sales line items. For example, if you enter 2 as the number of days before the requested ship date and a sales item has a requested ship date of April 29, the required date of the purchase order line item will be April 27. The user date will be used as the required date when the required date could be calculated in the past.
 
->   If you select Days Prior to Requested Ship Date, enter the number of days
->   you want to receive the purchase order line items before the requested ship
->   date of the sales line items. For example, if you enter 2 as the number of
->   days before the requested ship date and a sales item has a requested ship
->   date of April 29, the required date of the purchase order line item will be
->   April 27. The user date will be used as the required date when the required
->   date could be calculated in the past.
+8. If you’re using Purchase Order Processing, select the default unit of measure that will be used when purchase orders are generated from orders and back orders. You can use the U of M from the sales line item or use the item‘s default purchasing U of M.
 
-1.  If you’re using Purchase Order Processing, select the default unit of
-    measure that will be used when purchase orders are generated from orders and
-    back orders. You can use the U of M from the sales line item or use the
-    item‘s default purchasing U of M.
+9. If you’re using Purchase Order Processing, mark Combine Similar Line Items Into a Single PO Line to combine an item listed several times on a purchase order into one purchase order line item. If this option isn‘t marked, an item could be listed on the purchase order multiple times—once for each sales document that includes a shortage for the item and is linked to the purchase order.
 
-2.  If you’re using Purchase Order Processing, mark Combine Similar Line Items
-    Into a Single PO Line to combine an item listed several times on a purchase
-    order into one purchase order line item. If this option isn‘t marked, an
-    item could be listed on the purchase order multiple times—once for each
-    sales document that includes a shortage for the item and is linked to the
-    purchase order.
+    For example, suppose Order11 has a quantity to purchase of 2 for ITEMA for the NORTH Site and Order15 has a quantity to purchase of 3 for ITEMA for the NORTH Site. If you mark this option, ITEMA will be listed once on a purchase order for a quantity of 5. If you don‘t mark this option, ITEMA will be listed twice on the purchase order.
 
->   For example, suppose Order11 has a quantity to purchase of 2 for ITEMA for
->   the NORTH Site and Order15 has a quantity to purchase of 3 for ITEMA for the
->   NORTH Site. If you mark this option, ITEMA will be listed once on a purchase
->   order for a quantity of 5. If you don‘t mark this option, ITEMA will be
->   listed twice on the purchase order.
+10. If you’re using Purchase Order Processing, you can combine drop ship items onto one purchase order, rather than creating separate purchase orders for the same item. There are two options for drop ship items:
 
-1.  If you’re using Purchase Order Processing, you can combine drop ship items
-    onto one purchase order, rather than creating separate purchase orders for
-    the same item. There are two options for drop ship items:
+    - **Combine Different Ship-To Addresses into one PO**
+        Mark this option to create one purchase order from one sales order with multiple lines that contains different ship-to addresses. This is useful when you have a sales order for one company and you’re drop shipping to multiple locations. When used in conjunction with the Combine Similar Items into a Single PO Line option, similar items with the same ship to address are combined into one line. If this option is not marked, individual purchase orders are created for each item.
 
->   **Combine Different Ship-To Addresses into one PO** Mark this option to
->   create one purchase order from one sales order with multiple lines that
->   contains different ship-to addresses. This is useful when you have a sales
->   order for one company and you’re drop shipping to multiple locations. When
->   used in conjunction with the Combine Similar Items into a Single PO Line
->   option, similar items with the same ship to address are combined into one
->   line. If this option is not marked, individual purchase orders are created
->   for each item.
+    For example, ORDER01 contains ITEM A with a quantity of 2 to the SHIPPING 1 ship-to address. Line 2 is for ITEM A with a quantity of 3 to the SHIPPING 2 ship-to address, and you are drop shipping all items. One purchase order with two lines will be created. The shipping address will print with the corresponding lines.
 
->   For example, ORDER01 contains ITEM A with a quantity of 2 to the SHIPPING 1
->   ship-to address. Line 2 is for ITEM A with a quantity of 3 to the SHIPPING 2
->   ship-to address, and you are drop shipping all items. One purchase order
->   with two lines will be created. The shipping address will print with the
->   corresponding lines.
+    - **Combine Different Ship-To Addresses from Different Sales Orders into one PO**
+        Mark to create one purchase order from multiple sales orders when drop shipping to multiple shipping addresses. This is useful when you have several sales orders and you’re drop shipping the same item to multiple locations, only one purchase order is necessary to purchase the correct quantity of the items. When used in conjunction with the Combine Similar Items into a Single PO Line option, the item quantities with the same shipping address are summed onto one line on the PO.
 
->   **Combine Different Ship-To Addresses from Different Sales Orders into one
->   PO** Mark to create one purchase order from multiple sales orders when drop
->   shipping to multiple shipping addresses. This is useful when you have
->   several sales orders and you’re drop shipping the same item to multiple
->   locations, only one purchase order is necessary to purchase the correct
->   quantity of the items. When used in conjunction with the Combine Similar
->   Items into a Single PO Line option, the item quantities with the same
->   shipping address are summed onto one line on the PO.
+        For example, with all the options marked, you have ORDER01 for ITEM A with a quantity of 2 to SHIPPING 1 ship-to address, ORDER02 is for ITEM A with a quantity of 1 to SHIPPING 2 ship-to address, and ORDER03 is for ITEM A with a quantity of 2 to SHIPPING 1 ship-to address, and you are drop shipping all items. On the purchase order, you’ll see Line 1 for ITEM A with a quantity of 4, and Line 2 for ITEM A with a quantity of 1. The shipping address will print with the corresponding lines.
 
->   For example, with all the options marked, you have ORDER01 for ITEM A with a
->   quantity of 2 to SHIPPING 1 ship-to address, ORDER02 is for ITEM A with a
->   quantity of 1 to SHIPPING 2 ship-to address, and ORDER03 is for ITEM A with
->   a quantity of 2 to SHIPPING 1 ship-to address, and you are drop shipping all
->   items. On the purchase order, you’ll see Line 1 for ITEM A with a quantity
->   of 4, and Line 2 for ITEM A with a quantity of 1. The shipping address will
->   print with the corresponding lines.
+        Mark sales options. You can further restrict each option by assigning a password to it.
 
->   Mark sales options. You can further restrict each option by assigning a
->   password to it.
+    - **Allow Markdown**
+        Mark to allow users to enter a currency amount or percentage by which the extended price of individual line items will be reduced using the Sales Markdown Entry window.
 
->   **Allow Markdown** Mark to allow users to enter a currency amount or
->   percentage by which the extended price of individual line items will be
->   reduced using the Sales Markdown Entry window.
+    - **Auto-Assign Lot Numbers**
+        Mark to automatically assign lot numbers to items. Lot numbers can be assigned by receipt date or by expiration date, depending on how you selected to automatically assign lot numbers in the Inventory Control Setup window. If lot numbers are assigned by receipt date, the assignment is based on the valuation method when the items are entered or fulfilled on a sales document. If lot numbers are assigned by expiration date, the lot numbers nearing expiration are used first. Lot numbers without an expiration date aren’t assigned. Lot numbers can be changed after they‘ve been assigned and before posting using the Sales Lot Number Entry window.
 
->   **Auto-Assign Lot Numbers** Mark to automatically assign lot numbers to
->   items. Lot numbers can be assigned by receipt date or by expiration date,
->   depending on how you selected to automatically assign lot numbers in the
->   Inventory Control Setup window. If lot numbers are assigned by receipt date,
->   the assignment is based on the valuation method when the items are entered
->   or fulfilled on a sales document. If lot numbers are assigned by expiration
->   date, the lot numbers nearing expiration are used first. Lot numbers without
->   an expiration date aren’t assigned. Lot numbers can be changed after they‘ve
->   been assigned and before posting using the Sales Lot Number Entry window.
+        When automatically assigning lot numbers, expired lots aren’t used even if you marked the Other Transactions option in the Inventory Control Setup window.
 
->   When automatically assigning lot numbers, expired lots aren’t used even if
->   you marked the Other Transactions option in the Inventory Control Setup
->   window.
+    -**Auto-Assign Serial Numbers**
+        Mark to automatically assign serial numbers to items according to their valuation method when the items are entered or fulfilled on a sales document. Serial numbers can be changed after they‘ve been assigned and before posting using the Sales Serial Number Entry window.
 
->   **Auto-Assign Serial Numbers** Mark to automatically assign serial numbers
->   to items according to their valuation method when the items are entered or
->   fulfilled on a sales document. Serial numbers can be changed after they‘ve
->   been assigned and before posting using the Sales Serial Number Entry window.
+    - **Enter Non-Inventoried Items**
+        Mark to allow users to enter noninventoried items in the Sales Transaction Entry window or Sales Item Detail Entry window without first creating records for those items. If you don‘t mark this option, only items that exist in your inventory can be sold.
 
->   **Enter Non-Inventoried Items** Mark to allow users to enter noninventoried
->   items in the Sales Transaction Entry window or Sales Item Detail Entry
->   window without first creating records for those items. If you don‘t mark
->   this option, only items that exist in your inventory can be sold.
+    - **Allow Price Below Cost**
+        Mark to allow users to enter prices in the Sales Transaction Entry window that are lower than the current cost of an item. If you don‘t mark this option, prices below the current cost won't be allowed.
 
->   **Allow Price Below Cost** Mark to allow users to enter prices in the Sales
->   Transaction Entry window that are lower than the current cost of an item. If
->   you don‘t mark this option, prices below the current cost won‘t be allowed.
+    - **Override Prices**
+        Mark to allow users to override the default unit price and the extended price that is automatically calculated when you enter items in the Sales Transaction Entry window or Sales Item Detail Entry window. If you don‘t mark this option, you can‘t change either amount.
 
->   **Override Prices** Mark to allow users to override the default unit price
->   and the extended price that is automatically calculated when you enter items
->   in the Sales Transaction Entry window or Sales Item Detail Entry window. If
->   you don‘t mark this option, you can‘t change either amount.
+    - **Override Quantity Shortages**
+        Mark to allow users to sell more items than are currently available in inventory. If you mark this option and a quantity entered in the Sales Transaction Entry window is greater than the quantity available, the Sales Quantity Shortage Options window will open and you can select to override the quantity available. If you don‘t mark this option, only the quantity available can be sold.
 
->   **Override Quantity Shortages** Mark to allow users to sell more items than
->   are currently available in inventory. If you mark this option and a quantity
->   entered in the Sales Transaction Entry window is greater than the quantity
->   available, the Sales Quantity Shortage Options window will open and you can
->   select to override the quantity available. If you don‘t mark this option,
->   only the quantity available can be sold.
+    - **Override Price Levels**
+        Mark this option to allow users to override price levels for customers or items on a sales document. If you don‘t mark Override Price Levels, you can‘t change the price levels. This could cause problems if no prices are set up in the price list for the price level.
 
->   **Override Price Levels** Mark this option to allow users to override price
->   levels for customers or items on a sales document. If you don‘t mark
->   Override Price Levels, you can‘t change the price levels. This could cause
->   problems if no prices are set up in the price list for the price level.
+        For example, suppose you select a customer that is assigned to a retail price level and you only have prices set up in the price list for the wholesale price level. You can‘t complete the transaction because you can‘t change the price level on the transaction for the customer.
 
->   For example, suppose you select a customer that is assigned to a retail
->   price level and you only have prices set up in the price list for the
->   wholesale price level. You can‘t complete the transaction because you can‘t
->   change the price level on the transaction for the customer.
+        > [!NOTE]
+        > This option does not apply if you’re using extended pricing.
 
-*This option does not apply if you’re using extended pricing.*
+    - **Allow Deletion of PO Commitments**
+        Mark to allows users to break the commitment between a sales document and a purchase order in Sales Order Processing. If this option isn‘t marked, you can only break the commitment in Purchase Order Processing.
 
->   **Allow Deletion of PO Commitments** Mark to allows users to break the
->   commitment between a sales document and a purchase order in Sales Order
->   Processing. If this option isn‘t marked, you can only break the commitment
->   in Purchase Order Processing.
+    - **Allow Sale of Discontinued Items**
+        Unmark if you don’t want to sell discontinued items. If this option is marked, you can sell discontinued items.
 
->   **Allow Sale of Discontinued Items** Unmark if you don’t want to sell
->   discontinued items. If this option is marked, you can sell discontinued
->   items.
+11 Choose File \>\> Print to print the Sales Order Processing Setup List.
 
-1.  Choose File \>\> Print to print the Sales Order Processing Setup List.
-
-2.  Choose OK.
+12. Choose OK.
 
 #### Setting up document numbers
 
->   Use the Sales Document Numbers Setup window to enter document numbers,
->   codes, and printing formats for quotes, orders, fulfillment orders, back
->   orders, invoices, and returns.
+Use the Sales Document Numbers Setup window to enter document numbers, codes, and printing formats for quotes, orders, fulfillment orders, back orders, invoices, and returns.
 
->   **To set up document numbers:**
+**To set up document numbers:**
 
-1.  Open the Sales Document Numbers Setup window.
+1. Open the Sales Document Numbers Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Numbers button)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Numbers button)
 
-![](media/9e292bc69e9a7e2c5fed8859a7e67aeb.jpg)
+    ![](media/9e292bc69e9a7e2c5fed8859a7e67aeb.jpg)
 
-1.  Enter or accept the default document codes, next numbers, and printing
-    formats for quotes, orders, fulfillment orders/invoices, returns, and back
-    orders.
+2. Enter or accept the default document codes, next numbers, and printing formats for quotes, orders, fulfillment orders/invoices, returns, and back orders.
 
->   **Code** The code is a three-character prefix that will be printed on
->   posting journals and edit lists to identify the type of document entered.
+    - **Code**
+        The code is a three-character prefix that will be printed on posting journals and edit lists to identify the type of document entered.
 
->   **Next Number** These numbers will be used as the document numbers in the
->   Sales Transaction Entry window if the document ID you‘re using has not been
->   set up to use its own numbering system. Each time you enter a transaction,
->   the number will increase by one to the next available number.
+    - **Next Number**
+        These numbers will be used as the document numbers in the Sales Transaction Entry window if the document ID you‘re using has not been set up to use its own numbering system. Each time you enter a transaction, the number will increase by one to the next available number.
 
->   For example, assume you set up three types of invoice IDs—retail, wholesale,
->   and catalog—and you enter an invoice next number for the retail invoice ID
->   in the Sales Invoice Setup window. Invoices using the wholesale and catalog
->   invoice IDs will use the next number from the Sales Document Numbers Setup
->   window, but invoices based on the retail invoice ID will be assigned the
->   number you entered in the Sales Invoice Setup window. For more information
->   about document IDs, see *Chapter 3, “Document setup.”*
+        For example, assume you set up three types of invoice IDs—retail, wholesale, and catalog—and you enter an invoice next number for the retail invoice ID in the Sales Invoice Setup window. Invoices using the wholesale and catalog invoice IDs will use the next number from the Sales Document Numbers Setup window, but invoices based on the retail invoice ID will be assigned the number you entered in the Sales Invoice Setup window. For more information about document IDs, see *Chapter 3, “Document setup.”*
 
->   *Be sure to enter a next number that is large enough to accommodate your
->   business volume. For example, if you enter ORD001 as the next order number,
->   you‘ll be able to enter up to 999 orders. If you enter ORD00001, you‘ll be
->   able to enter 99,999 orders.*
+        > [!IMPORTANT]
+        > Be sure to enter a next number that is large enough to accommodate your business volume. For example, if you enter ORD001 as the next order number, you‘ll be able to enter up to 999 orders. If you enter ORD00001, you‘ll be able to enter 99,999 orders.
 
->   **Format** Select the default format for each type of document—blank paper,
->   short form, long form, or other form. You can change the format before
->   printing the document.
+    - **Format**
+        Select the default format for each type of document—blank paper, short form, long form, or other form. You can change the format before printing the document.
 
-1.  Enter or accept the default document codes, next numbers, and formats, and
-    the document numbers you want to use for packing slips and picking tickets.
+3. Enter or accept the default document codes, next numbers, and formats, and the document numbers you want to use for packing slips and picking tickets.
 
-    -   If you select Document, the document numbers from the orders or invoices
-        will be used.
+    - If you select Document, the document numbers from the orders or invoices will be used.
 
-    -   If you select Packing Slip or Picking Ticket, the next number you‘ve
-        entered here for packing slips and picking tickets will be used.
+    - If you select Packing Slip or Picking Ticket, the next number you‘ve entered here for packing slips and picking tickets will be used.
 
->   *Typically, businesses use the same document numbers on packing slips and
->   picking tickets that were used on the orders or invoices from which they
->   were created. For this reason, the same document numbers will be used unless
->   you specify a different next number here.*
+    > [!NOTE]
+    > Typically, businesses use the same document numbers on packing slips and picking tickets that were used on the orders or invoices from which they were created. For this reason, the same document numbers will be used unless you specify a different next number here.
 
-1.  Choose OK.
+4.  Choose OK.
 
 #### Setting up user-defined fields
 
->   Use the Sales User-Defined Fields Setup window to enter names for up to ten
->   userdefined fields to further identify quotes, orders, back orders,
->   invoices, and returns. Later, when you enter sales transactions, the names
->   will appear in the Sales UserDefined Fields Entry window, where you can
->   enter information that is unique to the transaction. You can set up the
->   following types of user-defined fields.
+Use the Sales User-Defined Fields Setup window to enter names for up to ten userdefined fields to further identify quotes, orders, back orders, invoices, and returns. Later, when you enter sales transactions, the names will appear in the Sales UserDefined Fields Entry window, where you can enter information that is unique to the transaction. You can set up the following types of user-defined fields.
 
->   **List** Use list fields to predefine options to track information that is
->   specific to your business. For example, to track the origin of orders, you
->   could name the list Order Origin and enter Fax, Phone, and Mail as values
->   for the list. When you enter transactions, Order Origin will appear as a
->   field in the Sales User-Defined Fields Entry window and you can specify
->   where the order originated or include additional values.
+- **List** Use list fields to predefine options to track information that is specific to your business. For example, to track the origin of orders, you could name the list Order Origin and enter Fax, Phone, and Mail as values for the list. When you enter transactions, Order Origin will appear as a field in the Sales User-Defined Fields Entry window and you can specify where the order originated or include additional values.
 
->   **Date** Use date fields to record additional dates that affect your sales
->   documents. For instance, if you want to track the date that an installation
->   was complete, enter Install Date in a date field.
+- **Date** Use date fields to record additional dates that affect your sales documents. For instance, if you want to track the date that an installation was complete, enter Install Date in a date field.
 
->   **Text** Use text fields to record additional information about the
->   transactions you enter in the Sales Transaction Entry window. For example,
->   to track special ID numbers for shipped equipment, you can enter Shipping ID
->   in the text field.
+- **Text** Use text fields to record additional information about the transactions you enter in the Sales Transaction Entry window. For example, to track special ID numbers for shipped equipment, you can enter Shipping ID in the text field.
 
->   **Prospect Maintenance** Use Prospect Maintenance to track additional
->   information about your prospective customers. For example, to track which
->   prospects are good, very good, and excellent, enter Lead Status in a
->   prospect maintenance field. You can enter information in these fields in the
->   Sales Prospect Maintenance window.
+- **Prospect Maintenance** Use Prospect Maintenance to track additional information about your prospective customers. For example, to track which prospects are good, very good, and excellent, enter Lead Status in a prospect maintenance field. You can enter information in these fields in the Sales Prospect Maintenance window.
 
->   **Customer/Item Maintenance** Use Customer/Item Maintenance to track
->   additional information about your customer item numbers. For example, to
->   track the distributor with the fastest delivery time for an item, enter
->   Quickest Distributor in a customer/item maintenance field. You can enter
->   information in these fields in the Customer Item Maintenance window.
+- **Customer/Item Maintenance** Use Customer/Item Maintenance to track additional information about your customer item numbers. For example, to track the distributor with the fastest delivery time for an item, enter Quickest Distributor in a customer/item maintenance field. You can enter information in these fields in the Customer Item Maintenance window.
 
->   **To set up user-defined fields:**
+**To set up user-defined fields:**
 
-1.  Open the Sales User-Defined Fields Setup window.
+1. Open the Sales User-Defined Fields Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> User-Defined button)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> User-Defined button)
 
-![](media/6af5270f86ccf9f05a0694a9a04aaf67.jpg)
+    ![](media/6af5270f86ccf9f05a0694a9a04aaf67.jpg)
 
-1.  Enter names for as many as three list fields. Choose the expansion button
-    next to each this window to enter values for each list.
+2. Enter names for as many as three list fields. Choose the expansion button next to each this window to enter values for each list.
 
-2.  Enter names for one or two date fields to record additional dates that
-    affect your sales documents.
+3. Enter names for one or two date fields to record additional dates that affect your sales documents.
 
-3.  Enter names for as many as five text fields to track additional information
-    about your customers.
+4. Enter names for as many as five text fields to track additional information about your customers.
 
-4.  Enter names for one or two prospect maintenance text fields.
+5. Enter names for one or two prospect maintenance text fields.
 
-5.  Enter names for as many as five customer/item maintenance text fields.
+6. Enter names for as many as five customer/item maintenance text fields.
 
-6.  Choose File \>\> Print to print the Sales User-Defined Fields Setup List.
+7. Choose File \>\> Print to print the Sales User-Defined Fields Setup List.
 
-7.  Choose OK to save your changes.
+8. Choose OK to save your changes.
 
 #### Setting up process holds
 
->   You can use the Sales Process Holds Setup window to create process holds to
->   assign to your sales documents. Process holds are user-defined restrictions
->   that control the processing of sales documents at different stages of the
->   sales cycle. For example, you can set up process holds to:
+You can use the Sales Process Holds Setup window to create process holds to assign to your sales documents. Process holds are user-defined restrictions that control the processing of sales documents at different stages of the sales cycle. For example, you can set up process holds to:
 
--   Require a manager‘s approval before a return can be posted.
+- Require a manager‘s approval before a return can be posted.
 
--   Prevent posting of documents until a manager approves the transactions.
+- Prevent posting of documents until a manager approves the transactions.
 
--   Restrict the printing of invoices until addresses have been verified.
+- Restrict the printing of invoices until addresses have been verified.
 
--   Stop the order fulfillment process because a part has been recalled by the
-    manufacturer.
+- Stop the order fulfillment process because a part has been recalled by the manufacturer.
 
--   Prevent the transferring of a quote to an order if the customer is over its
-    credit limit.
+- Prevent the transferring of a quote to an order if the customer is over its credit limit.
 
--   Stop a document status from advancing to the next tracked status.
+- Stop a document status from advancing to the next tracked status.
 
->   For more information about using process holds, see *Assigning process holds
->   to a document* on page 195.
+For more information about using process holds, see *Assigning process holds to a document* on page 195.
 
->   You can set up passwords to further restrict processing. The user must enter
->   the password to remove holds from documents. If you don‘t use passwords, you
->   can set up a process hold to remind the user to complete a task before
->   processing a sales document. Once the task is completed, the user must
->   remove the hold from the document before processing occurs. You can apply
->   process holds to any document type.
+You can set up passwords to further restrict processing. The user must enter the password to remove holds from documents. If you don‘t use passwords, you can set up a process hold to remind the user to complete a task before processing a sales document. Once the task is completed, the user must remove the hold from the document before processing occurs. You can apply process holds to any document type.
 
->   **To set up process holds:**
+**To set up process holds:**
 
-1.  Open the Sales Process Holds Setup window. (Sales \>\> Setup \>\> Process
-    Holds)
+1. Open the Sales Process Holds Setup window. (Sales \>\> Setup \>\> Process Holds)
 
-![](media/b07825b719b331bc42e57c59cb649b3d.jpg)
+    ![](media/b07825b719b331bc42e57c59cb649b3d.jpg)
 
-1.  Enter a name and description for a process hold. You can assign a password
-    to remove this process hold.
+2. Enter a name and description for a process hold. You can assign a password to remove this process hold.
 
-2.  Mark any of the processes you want to restrict with this process hold.
+3. Mark any of the processes you want to restrict with this process hold.
 
->   **Transferring Documents** Mark to stop the transfer of documents from one
->   document type to another until the hold is removed. (This option has no
->   effect on return documents since they cannot be transferred to other
->   document types.) **Posting** Mark to stop the posting of invoices or returns
->   until the hold is removed. If you have orders that contain a deposit amount,
->   the deposit amount will be posted when the document is saved, regardless of
->   whether a posting hold has been assigned.
+    - **Transferring Documents** Mark to stop the transfer of documents from one document type to another until the hold is removed. (This option has no effect on return documents since they cannot be transferred to other document types.) **Posting** Mark to stop the posting of invoices or returns until the hold is removed. If you have orders that contain a deposit amount, the deposit amount will be posted when the document is saved, regardless of whether a posting hold has been assigned.
 
->   **Fulfillment Advancement** Mark to stop the advancement of fulfillment
->   order document statuses until the hold is removed.
+    - **Fulfillment Advancement** Mark to stop the advancement of fulfillment order document statuses until the hold is removed.
 
->   **Fulfilling Documents** Mark to stop the fulfillment of orders or invoices
->   until the hold is removed.
+    - **Fulfilling Documents** Mark to stop the fulfillment of orders or invoices until the hold is removed.
 
->   **Printing Documents** Mark to stop the printing of documents until the hold
->   is removed. If you restrict the printing of an order, invoice, or
->   fulfillment order, the picking ticket and packing slip won‘t be printed
->   either. This will eliminate the possibility of shipping items for documents
->   that are on hold.
+    - **Printing Documents** Mark to stop the printing of documents until the hold is removed. If you restrict the printing of an order, invoice, or fulfillment order, the picking ticket and packing slip won‘t be printed either. This will eliminate the possibility of shipping items for documents that are on hold.
 
-1.  Choose Save to save the information you’ve entered.
+4. Choose Save to save the information you’ve entered.
 
->   To review the entries and selections you’ve made for a specific process
->   hold, print the Sales Process Holds Setup Report by choosing File \>\> Print
->   or the printer icon button while the Sales Process Holds Setup window is
->   displayed.
+    To review the entries and selections you’ve made for a specific process hold, print the Sales Process Holds Setup Report by choosing File \>\> Print or the printer icon button while the Sales Process Holds Setup window is displayed.
 
->   To review the entries for all process holds, print the Sales Process Holds
->   Setup Report (Sales \>\> Reports \>\> Setup).
+    To review the entries for all process holds, print the Sales Process Holds Setup Report (Sales \>\> Reports \>\> Setup).
 
 #### Selecting a pricing method
 
->   You can use either standard or extended pricing. In both pricing systems,
->   you can set up different pricing structures—price levels in standard
->   pricing, or price sheets and price books in extended pricing. You can create
->   different pricing for different currencies and different units of measure.
->   Either system can be used to create pricing structures with quantity breaks.
->   However, you must choose one pricing system and use it exclusively; you
->   can’t use both systems simultaneously.
+You can use either standard or extended pricing. In both pricing systems, you can set up different pricing structures—price levels in standard pricing, or price sheets and price books in extended pricing. You can create different pricing for different currencies and different units of measure. Either system can be used to create pricing structures with quantity breaks. However, you must choose one pricing system and use it exclusively; you can’t use both systems simultaneously.
 
->   **Standard pricing**
 
->   Standard pricing might be a better option for your company if any of the
->   following conditions are true:
-
--   You’re using Invoicing. (Extended pricing doesn’t work with Invoicing.)
-
--   You want price lists to be updated automatically when the current cost or
-    standard cost of an item changes.
-
--   You have a fairly simple pricing structure, and don’t need additional tiers.
-
->   For more information about standard pricing structures, see the Inventory
->   Control documentation.
-
->   **Extended pricing**
-
->   Extended pricing might be a better option for your company if any of the
->   following conditions are true:
-
--   You want to use date-specific pricing.
-
--   You want to create promotions for special pricing, for value-off pricing, or
-    for free items with the purchase of another item.
-
--   You have a complex pricing structure: you want to use more tiers or you want
-    to apply multiple promotions simultaneously.
-
->   For more information about extended pricing, see the Inventory Control
->   documentation.
+|Pricing method  |Description|
+|---------|---------|
+|**Standard pricing** |Standard pricing might be a better option for your company if any of the following conditions are true: </br>- You’re using Invoicing. (Extended pricing doesn’t work with Invoicing.)</br>- You want price lists to be updated automatically when the current cost or standard cost of an item changes.</br>- You have a fairly simple pricing structure, and don’t need additional tiers.</br> For more information about standard pricing structures, see the Inventory Control documentation.|
+|**Extended pricing**|Extended pricing might be a better option for your company if any of the following conditions are true:</br>- You want to use date-specific pricing.</br>- You want to create promotions for special pricing, for value-off pricing, or for free items with the purchase of another item.</br>- You have a complex pricing structure: you want to use more tiers or you want to apply multiple promotions simultaneously.</br> For more information about extended pricing, see the Inventory Control documentation.|
 
 #### Enabling extended pricing
 
@@ -10068,702 +9707,3 @@ Sales Distribution History Sales Transaction History Tax Details
 >   so, mark only Print Report and choose OK.*
 
 1.  Choose Process to remove the selected history records.
-
-**Glossary**
-
-#### Account alias
-
->   A “short name” for a posting account in the chart of accounts. If the
->   account format has a large number of segments, using aliases can speed data
->   entry.
-
-#### Active customer
-
->   A customer with whom business is conducted on a regular basis.
-
-#### Advanced picking
-
->   Allows you to group picking tickets by specific criteria, print bulk picking
->   tickets, print the customer item on the packing slip and invoice, and define
->   customer specific picking instructions that are printed on the picking
->   ticket.
-
-#### Alert message
-
->   A message that appears when inappropriate, inadequate or unclear data or
->   instructions are issued, when data is not accessible or when a confirmation
->   is sought.
-
-#### Alignment form
-
->   A document that ensures text will be properly aligned when documents are
->   printed.
-
-#### Allocating
-
->   The process of reserving the item in inventory. The item remains in
->   inventory until fulfillment but isn’t available for sale.
-
-#### Audit trail
-
->   A series of permanent records used to track a transaction to the point where
->   it was originally entered. The audit trail can be used to verify the
->   accuracy of financial statements by outside accountants or auditors.
-
-#### Audit trail code
-
->   A series of alphanumeric characters providing a precise record of each
->   transaction and where it has been posted.
-
-#### Available to promise
-
->   The quantity available for a customer on a specific day by calculating
->   on-hand inventory and transactions that increase or decrease inventory, such
->   as sales orders, inventory adjustments, and purchase orders.
-
-#### Back order
-
->   Orders that you place without adequate quantities on hand. For example, if
->   you want to allocate five items from your inventory, but have only three on
->   hand, you can back order the remaining two.
-
-#### Backing up
-
->   The process of storing data on a secondary medium, usually on diskettes or
->   magnetic tape, in order to minimize the difficulty of recovering from data
->   loss. Backups should be performed routinely.
-
-#### Bank card
-
->   A type of credit card. Bank cards include ATM cards that when used by a
->   customer, funds are transferred directly into your bank account. Bank cards
->   also include cards issued by a bank based on a credit rating and typically
->   do not carry a credit limit. The bank that issued the card will see to it
->   that the seller receives payment. Payments received from these cards are
->   treated as check or cash payments.
-
-#### Base unit of measure
-
->   The unit of measure that is common to all units of measure on a unit of
->   measure schedule. The base is the smallest unit of measure on the schedule.
->   For example, if a unit of measure schedule includes the following units of
->   measure: each, pair and dozen, each would be the base unit of measure.
-
-#### Batch
-
->   A group of transactions identified by a unique name or number. Batches are
->   used to conveniently group transactions, both for identification purposes
->   and to speed the posting process.
-
-#### Batch approval
-
->   Allows users to choose whether to approve batches of transactions before
->   posting. If the batch approval option is being used, the ID of the user who
->   approved the batch and the approval date will appear on posting reports.
-
-#### Batch controls
-
->   Values for both the number of transactions in a batch and the total currency
->   amount of the batch. As transactions are entered, the actual totals will be
->   displayed. These totals can be verified periodically as transactions are
->   entered to ensure that the required number and amount of transactions match
->   the actual number and amount that was entered.
-
-#### Batch list
-
->   A list of all the transactions—quotes, orders, invoices, back orders and
->   returns—in an unposted batch. This report can be printed to verify the
->   accuracy of transactions.
-
-#### Batch-level posting
-
->   A posting method you can use to save transactions in batches and post the
->   batches whenever it’s convenient. There are three types of batch-level
->   posting: batch posting, series posting and master posting.
-
-#### Bin
-
->   A location within a site where you store items.
-
-#### Bulk picking ticket
-
->   A picking ticket that displays the items and quantities needed to fulfill
->   more than one fulfillment order or invoice and the location of each item for
->   a batch of items. You can print bulk picking tickets for fulfillment orders
->   and invoices only.
-
-#### Charge card
-
->   A type of credit card. Charge cards are issued by banks and authorize the
->   holder to buy goods or services on credit. Payments received from charge
->   cards are treated as accounts receivable amounts because you must submit
->   them to the card companies for reimbursement. You must receive reimbursement
->   to consider the charged amounts paid.
-
-#### Check card
-
->   A type of credit card. When purchases are made with a check card, the amount
->   of purchase will be immediately withdrawn from the user’s bank account.
-
-#### Checkbook
-
->   An account used to maintain a currency balance and track the receiving and
->   disbursing of cash.
-
-#### Class
-
->   A feature that allows customers, vendors, users or items to be grouped
->   according to common characteristics. For example, a customer class could be
->   created to group customers according to credit limit or location.
-
-#### Comma-delimited fields
-
->   The standard comma-separated ASCII character format used when exporting a
->   report so that it can be read by database programs.
-
-#### Comment ID
-
->   Identifies a particular comment that will be printed on a sales document.
->   Comments for each line item can be entered also.
-
-#### Credit card
-
->   Cards used to pay for items instead of a check, cash or other method. The
->   amount due is then billed by the credit card company. Using the Credit Card
->   Setup window, cards used to make payments can be classified as credit cards
->   or check cards. Cards accepted as payment by a company can be classified as
->   bank cards or charge cards.
-
-#### Credit terms
-
->   Conditions agreed upon when credit is granted.
-
-#### Customer item
-
->   The name that the customer uses for an item. For example, suppose the
->   customer calls an item a White Board, but the item in your inventory is a
->   Dry-Erase Board. White Board would be the customer item.
-
-#### Default entry
-
->   A value that is displayed in a window automatically, and that will be used
->   unless a different value is entered.
-
-#### Default site
-
->   A site ID selected in Sales Order Processing Setup that identifies the
->   location from which the most items are sold.
-
-#### Deposit
-
->   An amount received when the customer places an order. Deposits are posted
->   when they are entered on the order or back order and can be transferred to
->   an invoice.
-
-#### Discount available
-
->   A reduction in the amount receivable, typically offered to a customer if the
->   payment is made by a certain date.
-
-#### Discount date
-
->   The date an invoice must be paid for a discount to be valid.
-
-#### Distributing
-
->   The process of allocating to separate accounts a percentage or part of
->   transaction amounts.
-
-#### Distribution accounts
-
->   Accounts designated to receive a percentage of transaction amounts posted to
->   a fixed or variable allocation account or accounts designated to receive a
->   percentage or part of posted transactions.
-
-#### Distribution history
-
->   A record of the debits and credits for each document that was distributed to
->   individual posting accounts.
-
-#### Document status
-
->   Describes the step in the sales fulfillment workflow process that
->   fulfillment orders and orders are at. Fulfillment order document statuses
->   include:
-
-1.  Ready to Print Picking Ticket
-
-2.  Unconfirmed Pick
-
-3.  Confirm Pick/Ready to Pack
-
-4.  Unconfirmed Pack
-
-5.  Shipped
-
-6.  Ready to Print/Post
-
->   You can change the fulfillment order status descriptions, and activate or
->   inactivate them.
-
->   Order document statuses include New, In Process, and Complete.
-
-#### Document type
-
->   A selection that identifies a document’s purpose and how document amounts
->   will be posted. In Sales Order Processing, the document types include
->   quotes, orders, invoices, back orders, and returns.
-
-#### Drop-ship
-
->   A sale where the items are sent directly to the customer from your supplier.
->   Drop-ship transactions have no effect on your inventory because the
->   inventory is never adjusted to reflect increases or decreases in quantities.
-
-#### Edit list
-
->   A list of transactions—invoices and returns—in an unposted batch that can be
->   printed to verify the accuracy of transactions before posting.
-
-**Error message**
-
->   *See Alert message*.
-
-#### Expansion button
-
->   A button next to certain fields that opens another window. This window shows
->   additional information related to the field. For example, the customer
->   expansion button opens a window that contains additional information about
->   the customer.
-
-#### Extended price
-
->   The total price for each line item on a document calculated using the
->   following formula for quotes, orders, returns and back orders: (Unit Price –
->   Markdown) x Document Quantity = Extended Price and the following formula for
->   invoices: (Unit Price - Markdown) x Billed Quantity = Extended Price.
-
-#### Extended quantity
-
->   The quantity for the unit of measure restated in the base unit of measure.
->   For example, if the base U of M is each, the U of M on the transaction is
->   pair and the quantity is 3, the extended quantity will be 6.
-
-#### Flat fee
-
->   An item type assigned to items with current costs but no quantities. For
->   example, the fee for an extended warranty might be assigned a flat fee item
->   type.
-
-#### Free-forward
-
->   The total of available and pending quantities of an item, plus any
->   additional quantities from purchase orders, assembly receipts, manufacturing
->   orders, and sales returns that are displayed in the Inventory Available to
->   Promise Inquiry window. The total sum is reduced by the item quantities from
->   unallocated sales orders, sales back orders, and unallocated manufacturing
->   components displayed in the Inventory Available to Promise Inquiry window.
-
-#### Freight
-
->   An additional charge for shipping the item to the customer. You must
->   manually enter freight amounts on a sales document.
-
-#### Fulfill
-
->   Updates bin, serial-number, and lot-number information, but not item
->   quantities.
-
-#### Fulfillment
-
->   The process of identifying and verifying the items to satisfy an order or
->   invoice. When you fulfill serial or lot numbers items, you must select the
->   serial or lot number for the item. Items on an invoice must be fulfilled
->   before the invoice can be posted.
-
-#### Fulfillment order
-
->   A type of sales document that uses document statuses to provide additional
->   structure and control over typical sales processes, such as printing the
->   picking ticket, picking the goods, printing the packing slip, packing and
->   shipping the goods, and sending the invoice to the customer. You can create
->   a fulfillment order from a quote, a back order, or an order. You can create
->   an invoice from a fulfillment order.
-
-#### Functional currency
-
->   The primary currency in which a company maintains its financial records.
->   Typically, the functional currency is the currency for the country or region
->   where the company is located.
-
-#### Group printing
-
->   Creating and printing report options in groups. For example, a report group
->   could be used to print all the financial statements and the Trial Balance
->   before closing a month, quarter or fiscal year.
-
-#### History
-
->   A record of completed transactions or account balances. In Sales Order
->   Processing, once a document has been transferred, voided or posted, it is
->   automatically moved to history.
-
-**Hold**
-
->   *See Process hold*.
-
-#### Inactive customer
-
->   A customer with whom you no longer conduct business. Typically, records for
->   these customers can’t be deleted because historical records are being
->   maintained.
-
-#### Inquiry
-
->   A feature that allows users to view posted and unposted customer, item or
->   document information.
-
-#### Intrastat
-
->   The system for collecting statistics on the trade of goods between European
->   Union countries.
-
-#### Invoice
-
->   A document that records the prices and other details of goods and services
->   sold or supplied. Invoices also are used to serve as part of the audit
->   trail.
-
-#### Item print option
-
->   Determines which items that are printed on bulk picking tickets, individual
->   picking tickets, or both.
-
-#### Kit
-
->   An item type that is assigned to items made up of components (other
->   inventory items). Kits are not tracked in inventory. They are assembled at
->   the time of sales and are sold as an individual item.
-
-#### Linking
-
->   The process of associating a sales line item with a line item on a purchase
->   order. If you generate a purchase order from Sales Order Processing, the
->   items are linked automatically. You also can link sales line items to
->   existing purchase orders.
-
-#### Lookup window
-
->   A window that displays a list of accounts, customers, jobs or other items.
->   Lookup windows for a specific field are displayed by choosing the lookup
->   button next to the field.
-
-#### Lot number
-
->   A number that identifies items that were created at the same time and have
->   the same characteristics, such as the dye used when manufacturing fabrics
->   and carpet.
-
-#### Markdown
-
->   The currency amount or percentage that is subtracted from the unit price of
->   an item to determine a discounted selling price.
-
-#### Master number
-
->   A single number assigned to a series of documents that is used to track
->   related documents. For example, when a customer requests a quote, then
->   places an order and receives an invoice for the items on the quote, each
->   document will be assigned the same master number. (However, each document
->   also maintains its own document number.)
-
-#### Master posting
-
->   A posting process in which marked batches from different series can be
->   posted simultaneously.
-
-#### Miscellaneous charge
-
->   A charge that isn’t part of a normal purchasing process. A miscellaneous
->   charge may be a service charge such as installation or repair of
->   merchandise. You must manually enter miscellaneous charges on sales
->   documents.
-
-#### Miscellaneous charge item
-
->   An item type assigned to items that aren’t being tracked by quantity or
->   current cost, such as shipping costs, customizing costs, or other costs that
->   occur infrequently.
-
-#### Non-inventoried item
-
->   An item that is not set up and is not tracked in Inventory Control. If you
->   enter a noninventoried item on a sales document, the item will appear on
->   sales reports but not inventory reports.
-
-#### Note
-
->   A feature used to attach messages to windows and records. The note button
->   shows whether a note is attached to a window. Notes can be edited and
->   reattached, deleted or printed.
-
-#### Object
-
->   An element of the tree view in the Purchase Orders Preview window. Each line
->   in the tree is an object—and the objects are organized first by vendor, then
->   by purchase order, then item, and finally sales document.
-
-#### Order
-
->   A document that expresses a commitment by a customer to purchase items from
->   you. Orders also are used as part of the audit trail.
-
-#### Origin
-
->   A transaction entry window within a specific module. Certain options, such
->   as closing fiscal periods can be selected for each transaction origin. Also,
->   the transaction origin will appear as part of the audit trail code on all
->   posting reports.
-
-#### Originating currency
-
->   The currency that a multicurrency transaction is conducted in.
-
-#### Packing slip
-
->   A document that displays the items and quantities that have been included in
->   a shipment. Packing slips are often attached directly to the shipment when
->   it is sent to the customer and can be used to verify that all invoiced items
->   were included in the shipment.
-
-#### Payment
-
->   An amount received that can’t be realized until after the order is shipped
->   to the customer. Payment amounts are posted when the invoice or return is
->   posted.
-
-#### Payment terms
-
->   Conditions for payment agreed upon when a sales transaction takes place.
->   Payment terms might include a discount to the selling price if the payment
->   is received within a certain time period.
-
-#### Pending purchase order
-
->   A purchase order that would be created from a sales order or back order but
->   hasn’t been generated yet. You can view pending purchase orders in the
->   Purchase Order Preview window.
-
-#### Picking instruction
-
->   Information that you can assign to a customer record or item record that
->   might include information such as the sequence that items should be picked
->   or that a forklift is required to pick an item.
-
-#### Picking ticket
-
->   A document that displays the items and quantities on an order as well as the
->   site and bin number. Picking tickets typically aren’t sent with the order,
->   but are used by warehouse personnel when assembling the items on an order.
-
-#### Posting
-
->   A procedure to make temporary transactions a part of permanent records or to
->   update accounts with specific transaction amounts. In manual accounting,
->   posting transfers journal entries to the appropriate accounts in a general
->   ledger.
-
-#### Posting account
-
->   A financial account that tracks assets, liabilities, revenue or expenses.
->   These accounts will appear on the financial statements and other reports
->   created in the financial series.
-
-#### Posting journal
-
->   A report printed after the posting process that shows the detail for each
->   transaction posted. Posting journals also include the audit trail code,
->   which provides a precise record of where each transaction has been posted.
-
-#### Primary vendor
-
->   The vendor you order the selected item from most often. The primary vendor
->   is the default vendor when you generate purchase orders from Sales Order
->   Processing.
-
-#### Process hold
-
->   A user-defined restriction that prevents a document from further processing.
->   In Sales Order Processing, you can set up an unlimited number of holds and
->   assign them to various processes. For example, you can set up a hold that
->   restricts posting until a manager has approved the documents.
-
-#### Prospect customer
-
->   A customer that may become part of your customer base sometime in the
->   future; a potential customer. Prospect customer records can be entered on
->   quote documents only.
-
-#### Purchase order
-
->   A document authorizing a seller to deliver goods with payment to be made
->   later.
-
-#### Quote
-
->   A document that lists prices for items that a customer is interested in
->   purchasing. Items on quotes are not allocated in inventory.
-
->   Quotes also are a part of the audit trail.
-
-#### Real-time posting
-
->   *See Transaction-level posting*.
-
-#### Reconciling
-
->   A procedure used to verify that Sales Order Processing data is accurate.
->   Reconciling only involves unposted sales documents and verifies the quantity
->   amounts and totals on the documents.
-
-#### Removing history
-
->   A procedure used to erase ranges of historical information. Additional hard
->   disk space will become available when history has been removed and files
->   have been shrunk.
-
-#### Report option
-
->   A collection of entries that specify the amount of information or the type
->   of information that will appear on a report. Multiple report options can be
->   created for each report.
-
-#### Return
-
->   A transaction that records the return of merchandise after the invoice has
->   been posted. Return amounts are applied to the original invoice (for open
->   item customers) or to the customer’s balance (for balance forward
->   customers).
-
-#### Return quantity type
-
->   A general category that returned items are assigned to. The categories are
->   On Hand, In Use, In Service, Damaged or Returned. You can return items to
->   any quantity type, but you can sell items only from the on hand quantity
->   type.
-
-**Sales tax detail**
-
->   *See Tax detail*.
-
-**Sales tax schedule**
-
->   *See Tax schedule*.
-
-#### Serial number
-
->   A number that is one of a series and is assigned to a specific inventory
->   item to identify it and differentiate it from similar items with the same
->   item number.
-
-#### Series posting
-
->   A posting process in which marked batches from the same series can be posted
->   simultaneously.
-
-#### Site
-
->   A store, warehouse or other building from which you do business or store
->   items.
-
-#### Substitute item
-
->   An inventoried item that can be sold in place of another inventoried item.
-
-#### Tab-delimited field
-
->   The tab-separated ASCII character format used when exporting a report.
-
-#### Tax detail
-
->   A definition of a tax that may apply to customers. Tax details are grouped
->   into tax schedules. *See also Tax schedule*.
-
-#### Tax schedule
-
->   Groups of tax details that define each tax that may apply to customers,
->   items or other taxable costs. Tax schedules are used to determine which
->   taxes apply to individual sales.
-
-#### Terms discount taken
-
->   The discount amount customers take from their available payment terms
->   discount.
-
-#### Text-only format
-
->   A file format that saves reports as text without formatting. This format is
->   used when exporting reports to applications that are unable to read other
->   formats available.
-
-#### Trade discount
-
->   A discount a customer always receives. The rate is calculated at the time of
->   a sale and is given in addition to any payment term discounts that also may
->   be offered. Trade discounts are set up for a customer in the Customer
->   Maintenance window.
-
-#### Transaction-level posting
-
->   A posting method in which transactions can be entered and posted without
->   having to create a batch. Also known as *real-time posting*. *See also
->   Batch-level posting*.
-
-#### Transferring
-
->   The process of transferring customer and item information from an existing
->   document to a new document of a another type.
-
-#### Tree view
-
->   The Purchase Orders Preview window uses a tree view to show pending or
->   existing purchase orders. The tree view appears on the left side of the
->   window. Each line in the tree is an object. Items selected in the tree view
->   determine what is displayed in the other portion of the window.
-
-#### Unit account
-
->   An account that tracks statistical or non financial quantities, like the
->   number of customers with past-due balances or the number of invoices
->   generated over a specific time period.
-
-#### Unit cost
-
->   The amount per unit that you paid for an item you’re planning to sell or
->   consume.
-
-#### Unit of measure (U of M)
-
->   A user-defined unit in which you purchase or sell an item, such as each,
->   pair or case. You can sell an item in multiple units of measure.
-
-#### Unit price
-
->   The amount per unit you sell an item for. For example, if you sell a case of
->   oil, the unit price is the price per can of oil.
-
-#### VAT (Value-Added Tax)
-
->   A sales tax used in Europe and elsewhere in the world.
-
-#### Workflow
-
->   The defining and tracking of a business process, during which tasks are
->   completed and documents are passed from one individual or department to
->   another to complete the next task in the process.
-
-#### ZIP code
-
->   In the United States, the postal code assigned to business and residential
->   addresses. In other countries/regions, it may be referred to as *post code*
->   or *postal code.*
