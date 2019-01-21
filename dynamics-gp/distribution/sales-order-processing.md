@@ -6,7 +6,7 @@ author: tnistler
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
-ms.date: 01/18/2019
+ms.date: 01/21/2019
 ms.author: tnistler
 
 ---
@@ -532,526 +532,528 @@ You can use either standard or extended pricing. In both pricing systems, you ca
 
 #### Enabling extended pricing
 
->   Use the Enable Extended Pricing window to activate or inactivate extended pricing functionality.
+Use the Enable Extended Pricing window to activate or inactivate extended pricing functionality.
 
->   You can use either standard or extended pricing. You must choose one pricing system and use it exclusively; you can’t use both systems simultaneously. For more information on selecting a pricing method, see *Selecting a pricing method* on page 23. For more information on how each pricing method works, see the Inventory Control documentation.
+You can use either standard or extended pricing. You must choose one pricing system and use it exclusively; you can’t use both systems simultaneously. For more information on selecting a pricing method, see *Selecting a pricing method* on page 23. For more information on how each pricing method works, see the Inventory Control documentation.
 
->   **To enable extended pricing:**
+**To enable extended pricing:**
 
-1.  Open the Enable Extended Pricing window.
+1. Open the Enable Extended Pricing window.
 
->   (Sales \>\> Setup \>\> Extended Pricing)
+    (Sales \>\> Setup \>\> Extended Pricing)
 
-![](media/f82260c6c9e26996cdbb4b371630c3bb.jpg)
+    ![](media/f82260c6c9e26996cdbb4b371630c3bb.jpg)
 
-2.  Select whether to use standard or extended pricing. Standard pricing is the default method.
+2. Select whether to use standard or extended pricing. Standard pricing is the default method.
 
-3.  Choose OK to save your changes and close the window.
+3. Choose OK to save your changes and close the window.
 
 #### Setting up advanced picking
 
->   If you’re using advanced picking, use the Advanced Picking Setup window to assign a picking ticket printing option to a selected site and items that are assigned to that site. For example, if a site has small items that can be picked in bulk, you could select Bulk for that site. If a site has items that are picked only individually, you could select Individual for that site. And, if a site has items that are picked both individually and in bulk, you could select Both for that site.
+If you’re using advanced picking, use the Advanced Picking Setup window to assign a picking ticket printing option to a selected site and items that are assigned to that site. For example, if a site has small items that can be picked in bulk, you could select Bulk for that site. If a site has items that are picked only individually, you could select Individual for that site. And, if a site has items that are picked both individually and in bulk, you could select Both for that site.
 
->   If you select Both for a site, you can use the Item Print Option Preview window or the Item Quantities Maintenance window to change the item print option for selected items within the site. For more information, refer to the Inventory Control documentation.
+If you select Both for a site, you can use the Item Print Option Preview window or the Item Quantities Maintenance window to change the item print option for selected items within the site. For more information, refer to the Inventory Control documentation.
 
->   You also can indicate the character of the bin number to create a page break on. The character string—up to and including the selected character—is sorted alphabetically. Characters after the selected character will not be considered in the sort.
+You also can indicate the character of the bin number to create a page break on. The character string—up to and including the selected character—is sorted alphabetically. Characters after the selected character will not be considered in the sort.
 
->   **To set up advanced picking:**
+**To set up advanced picking:**
 
-1.  Open the Advanced Picking Setup window.
+1. Open the Advanced Picking Setup window.
 
->   (Sales \>\> Setup \>\> Advanced Picking Setup)
+    (Sales \>\> Setup \>\> Advanced Picking Setup)
 
-![](media/7b8b84d17dde1d62b77501d9b288dc8e.jpg)
+    ![](media/7b8b84d17dde1d62b77501d9b288dc8e.jpg)
 
-2.  Enter or select a site ID.
+2. Enter or select a site ID.
 
-3.  Select a general print option for the site.
+3. Select a general print option for the site.
 
->   **Individual** When the selected site is included on a fulfillment order, order, invoice, or return, individual picking tickets will be printed. Items assigned to the selected site will be printed only on individual picking tickets.
+    - **Individual** When the selected site is included on a fulfillment order, order, invoice, or return, individual picking tickets will be printed. Items assigned to the selected site will be printed only on individual picking tickets.
 
->   **Bulk** When the selected site is included on a fulfillment order/invoice, bulk picking tickets will be printed. Items assigned to the selected site will be printed only on bulk picking tickets. You can print bulk picking tickets for fulfillment orders only.
+    - **Bulk** When the selected site is included on a fulfillment order/invoice, bulk picking tickets will be printed. Items assigned to the selected site will be printed only on bulk picking tickets. You can print bulk picking tickets for fulfillment orders only.
 
->   **Both** When the selected site is included on a fulfillment order, order, invoice, or return, you can select to print individual picking tickets or bulk picking tickets. Items assigned to the selected site will be printed on both individual and bulk picking tickets.
+    - **Both** When the selected site is included on a fulfillment order, order, invoice, or return, you can select to print individual picking tickets or bulk picking tickets. Items assigned to the selected site will be printed on both individual and bulk picking tickets.
 
-1.  Select the bin character to indicate a page break on the picking ticket.
+4. Select the bin character to indicate a page break on the picking ticket.
 
->   For example, suppose that a warehouse names bins by warehouse, aisle, rack, and shelf. Bin A123 reflects warehouse A, aisle 1, rack 2, and shelf 3, and the following bins are included on a picking ticket: A116, A123, A127, A224, A226, and A267. To print a separate picking ticket for each rack, you would select the third character of the bin number for the site.
+    For example, suppose that a warehouse names bins by warehouse, aisle, rack, and shelf. Bin A123 reflects warehouse A, aisle 1, rack 2, and shelf 3, and the following bins are included on a picking ticket: A116, A123, A127, A224, A226, and A267. To print a separate picking ticket for each rack, you would select the third character of the bin number for the site.
 
->   The following table lists the bins in alphabetical order with the page that will be displayed on the picking tickets.
+    The following table lists the bins in alphabetical order with the page that will be displayed on the picking tickets.
 
-| **Page number** | **Bin numbers** |
-|-----------------|-----------------|
-| Page 1          | A116            |
-| Page 2          | A123, A127      |
-| Page 3          | A224, A226      |
-| Page 4          | A267            |
+    | **Page number** | **Bin numbers** |
+    |-----------------|-----------------|
+    | Page 1          | A116            |   
+    | Page 2          | A123, A127      |
+    | Page 3          | A224, A226      |
+    | Page 4          | A267            |
 
-2.  Choose Save.
+5. Choose Save.
 
-**Chapter 3: Document setup**
+### Chapter 3: Document setup
 
->   You can set up and customize an unlimited number of quote, order, back order, fulfillment order, invoice, and return document IDs and specify different options for each document ID. You must set up at least one document ID for each document type that you’ll use in your organization.
+You can set up and customize an unlimited number of quote, order, back order, fulfillment order, invoice, and return document IDs and specify different options for each document ID. You must set up at least one document ID for each document type that you’ll use in your organization.
 
->   You can modify a document ID at any time. The changes will affect future transactions that use the document ID but won’t change the information for existing transactions. There are several settings that can’t be changed if there are unposted documents using the document ID. For more information about modifying document IDs, see *Chapter 5, “Document ID maintenance.”*
+You can modify a document ID at any time. The changes will affect future transactions that use the document ID but won’t change the information for existing transactions. There are several settings that can’t be changed if there are unposted documents using the document ID. For more information about modifying document IDs, see *Chapter 5, “Document ID maintenance.”*
 
->   The document setup information contains the following sections:
+The document setup information contains the following sections:
 
--   *Setting up quotes*
+- *Setting up quotes*
 
--   *Setting up orders*
+- *Setting up orders*
 
--   *Setting up fulfillment orders or invoices*
+- *Setting up fulfillment orders or invoices*
 
--   *Setting up back orders*
+- *Setting up back orders*
 
--   *Setting up invoices*
+- *Setting up invoices*
 
--   *Setting up returns*
+- *Setting up returns*
 
--   *Assigning process holds to sales document IDs*
+- *Assigning process holds to sales document IDs*
 
 #### Setting up quotes
 
->   Use the Sales Quote Setup window to set up and customize an unlimited number of quote IDs, which you can use for different situations. For example, if you need separate quote IDs for your wholesale, retail, and catalog customers, you can set up separate quote IDs for each of these customer groups. When you enter a quote in the Sales Transaction Entry window, you can select the type of quote from the list of quote IDs you’ve set up.
+Use the Sales Quote Setup window to set up and customize an unlimited number of quote IDs, which you can use for different situations. For example, if you need separate quote IDs for your wholesale, retail, and catalog customers, you can set up separate quote IDs for each of these customer groups. When you enter a quote in the Sales Transaction Entry window, you can select the type of quote from the list of quote IDs you’ve set up.
 
->   You can set up a quote ID to expire in a certain number of days. The number you enter will be added to the quote date in the Sales Date Entry window to determine the date the quote will expire. After a quote expires, it can’t be transferred to an order or to an invoice, and it will remain in the system until it is voided or deleted.
+You can set up a quote ID to expire in a certain number of days. The number you enter will be added to the quote date in the Sales Date Entry window to determine the date the quote will expire. After a quote expires, it can’t be transferred to an order or to an invoice, and it will remain in the system until it is voided or deleted.
 
->   You can choose whether to use a quote ID for repeating quotes. A repeating quote is a quote that is saved in a batch and used more than once. When you transfer a quote to an order or invoice, the quote will remain in the batch so it can be used again. Using repeating quotes saves time if you frequently print quotes with the same line item information for the same customer.
+You can choose whether to use a quote ID for repeating quotes. A repeating quote is a quote that is saved in a batch and used more than once. When you transfer a quote to an order or invoice, the quote will remain in the batch so it can be used again. Using repeating quotes saves time if you frequently print quotes with the same line item information for the same customer.
 
 **To set up quotes:**
 
-1.  Open the Sales Quote Setup window.
+1. Open the Sales Quote Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote option)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote option)
 
-![](media/2b3a298619e3a7686024ddbed0df8082.jpg)
+    ![](media/2b3a298619e3a7686024ddbed0df8082.jpg)
 
-2.  Enter a Quote ID and, if you want this quote ID to have a unique document numbering system, enter a Quote ID Next Number.
+2. Enter a Quote ID and, if you want this quote ID to have a unique document numbering system, enter a Quote ID Next Number.
 
->   You can set up a different next number for each quote ID. When you enter a quote in the Sales Transaction Entry window, the next number for the quote ID is used as the document number. If you don’t enter a next number for the quote ID, the next quote number from the Sales Document Numbers Setup window is used.
+    You can set up a different next number for each quote ID. When you enter a quote in the Sales Transaction Entry window, the next number for the quote ID is used as the document number. If you don’t enter a next number for the quote ID, the next quote number from the Sales Document Numbers Setup window is used.
 
-3.  Enter the days to expire. If you don’t want the quote to expire, leave the value at zero.
+3. Enter the days to expire. If you don’t want the quote to expire, leave the value at zero.
 
-4.  You can enter a Comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
+4. You can enter a Comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
 
-5.  You can select the format to use when you print a quote with this quote ID— blank paper, short form, long form, or other form. You can change the format before printing the document.
+5. You can select the format to use when you print a quote with this quote ID— blank paper, short form, long form, or other form. You can change the format before printing the document.
 
-6.  Mark the options to transfer this quote ID to orders, invoices, or both, and select an ID for each document. The order and invoice IDs you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the quote.
+6. Mark the options to transfer this quote ID to orders, invoices, or both, and select an ID for each document. The order and invoice IDs you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the quote.
 
->   If you’re using sales fulfillment workflow, you can transfer this quote ID to fulfillment orders and select a fulfillment order ID.
+    If you’re using sales fulfillment workflow, you can transfer this quote ID to fulfillment orders and select a fulfillment order ID.
 
-7.  If you marked a transfer option, you can specify whether item quantities will appear in the Quantity to Order or Quantity to Invoice fields on the quote in the Sales Transaction Entry window.
+7. If you marked a transfer option, you can specify whether item quantities will appear in the Quantity to Order or Quantity to Invoice fields on the quote in the Sales Transaction Entry window.
 
->   **To Order** Item quantities will appear as the quantity to order in the Sales Transaction Entry window when you use this quote ID. This selection is the best choice if you transfer a quote to an order more often than you transfer a quote to an invoice.
+    - **To Order** Item quantities will appear as the quantity to order in the Sales Transaction Entry window when you use this quote ID. This selection is the best choice if you transfer a quote to an order more often than you transfer a quote to an invoice.
 
->   **To Invoice** Item quantities will appear as the quantity to invoice in the Sales Transaction Entry window when you use this quote ID.
+    - **To Invoice** Item quantities will appear as the quantity to invoice in the Sales Transaction Entry window when you use this quote ID.
 
->   **None** You will need to enter item quantities manually in the Sales Transaction Entry window.
+    - **None** You will need to enter item quantities manually in the Sales Transaction Entry window.
 
-8.  You can mark options to use this quote ID for prospective customers and to allow repeating quotes.
+8. You can mark options to use this quote ID for prospective customers and to allow repeating quotes.
 
->   **Use Prospects** Mark to allow users to enter documents with this quote ID for prospective customers.
+    - **Use Prospects** Mark to allow users to enter documents with this quote ID for prospective customers.
 
->   **Allow Repeating Documents** Mark to allow users to set up repeating quotes with this ID. You can assign repeating information, such as the number of times to repeat and days to increment, in the Sales Document Detail Entry window.
+    - **Allow Repeating Documents** Mark to allow users to set up repeating quotes with this ID. You can assign repeating information, such as the number of times to repeat and days to increment, in the Sales Document Detail Entry window.
 
-9.  Mark the options for entering documents using this quote ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but no password is entered, anyone who has access to the window can use the option.
+9. Mark the options for entering documents using this quote ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but no password is entered, anyone who has access to the window can use the option.
 
->   You can set up these options differently for each quote ID.
+    You can set up these options differently for each quote ID.
 
->   **Delete Documents** Mark to allow users to delete quotes. If you delete a quote, all the information associated with the quote will be removed. If unmarked, you can’t delete quotes in the Sales Transaction Entry window.
+    - **Delete Documents** Mark to allow users to delete quotes. If you delete a quote, all the information associated with the quote will be removed. If unmarked, you can’t delete quotes in the Sales Transaction Entry window.
 
->   **Edit Printed Documents** Mark to allow users to make changes to quotes after they’ve been printed.
+    - **Edit Printed Documents** Mark to allow users to make changes to quotes after they’ve been printed.
 
->   **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available quote number will be assigned and you can’t change it.
+    - **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available quote number will be assigned and you can’t change it.
 
->   **Void Documents** Mark to allow users to void quotes after they’ve been entered. If marked and you’ve selected to track voided transaction history in the Sales Order Processing Setup window, voided quotes will be saved in history. If unmarked, you can’t void quotes in the Sales Transaction Entry window.
+    - **Void Documents** Mark to allow users to void quotes after they’ve been entered. If marked and you’ve selected to track voided transaction history in the Sales Order Processing Setup window, voided quotes will be saved in history. If unmarked, you can’t void quotes in the Sales Transaction Entry window.
 
-10.  Choose Holds and assign process holds to the quote ID to stop processing on particular document IDs or documents. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42*.*
+10. Choose **Holds** and assign process holds to the quote ID to stop processing on particular document IDs or documents. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
 
-11.  Choose Save to save the quote information you’ve entered.
+11. Choose Save to save the quote information you’ve entered.
 
->   To review the entries and selections you’ve made for a specific quote ID, print the Sales Quote Setup List by choosing File \>\> Print or the printer button while the Sales Quote Setup window is displayed.
+ To review the entries and selections you’ve made for a specific quote ID, print the Sales Quote Setup List by choosing File \>\> Print or the printer button while the Sales Quote Setup window is displayed.
 
->   To review the entries for all quote IDs, print the Sales Quote Setup List (Reports \>\> Sales \>\> Setup).
+To review the entries for all quote IDs, print the Sales Quote Setup List (Reports \>\> Sales \>\> Setup).
 
 #### Setting up orders
 
->   Use the Sales Order Setup window to set up and customize an unlimited number of order IDs, which you can use for different situations. For example, if you need separate order IDs for your wholesale, retail, and catalog order customers, you can set up separate order IDs for each of these customer groups. When you enter an order in the Sales Transaction Entry window, you’ll select the type of order from the list of order IDs you’ve set up.
+Use the Sales Order Setup window to set up and customize an unlimited number of order IDs, which you can use for different situations. For example, if you need separate order IDs for your wholesale, retail, and catalog order customers, you can set up separate order IDs for each of these customer groups. When you enter an order in the Sales Transaction Entry window, you’ll select the type of order from the list of order IDs you’ve set up.
 
->   You can choose whether to use an order ID for repeating orders. A repeating order is an order that is saved in a batch and used more than once. When you transfer an order to a back order or invoice, the order will remain in the batch so it can be used again. Using repeating orders saves time if you frequently print orders with the same line item information for the same customer.
+You can choose whether to use an order ID for repeating orders. A repeating order is an order that is saved in a batch and used more than once. When you transfer an order to a back order or invoice, the order will remain in the batch so it can be used again. Using repeating orders saves time if you frequently print orders with the same line item information for the same customer.
 
->   **To set up orders:**
+**To set up orders:**
 
-1.  Open the Sales Order Setup window.
+1. Open the Sales Order Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Order button)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Order button)
 
-![](media/75e4701f7df192df062c792caa2f1011.jpg)
+    ![](media/75e4701f7df192df062c792caa2f1011.jpg)
 
-2.  Enter an Order ID and, if you want this order ID to have a unique document numbering system, enter an Order ID Next Number.
+2. Enter an Order ID and, if you want this order ID to have a unique document numbering system, enter an Order ID Next Number.
 
->   You can set up a different next number for each order ID. When you enter an order in the Sales Transaction Entry window, the next number for the order ID is used as the document number. If you don’t enter a next number for the order ID, the next order number from the Sales Document Numbers Setup window is used.
+    You can set up a different next number for each order ID. When you enter an order in the Sales Transaction Entry window, the next number for the order ID is used as the document number. If you don’t enter a next number for the order ID, the next order number from the Sales Document Numbers Setup window is used.
 
-3.  You can enter a Comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
+3. You can enter a Comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
 
-4.  You can select the format to use when you print an order with this order ID— blank paper, short form, long form, or other form. You can change the format before printing the document.
+4. You can select the format to use when you print an order with this order ID— blank paper, short form, long form, or other form. You can change the format before printing the document.
 
-5.  Mark Transfer Order to Back Order to allow transferring this order ID to back orders, and enter a back order ID. If you don’t mark this option, you can’t enter back order quantities on an order using this order ID.
+5. Mark Transfer Order to Back Order to allow transferring this order ID to back orders, and enter a back order ID. If you don’t mark this option, you can’t enter back order quantities on an order using this order ID.
 
->   The back order ID you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the order.
+    The back order ID you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the order.
 
-6.  Enter the Invoice ID to use when transferring orders to invoices.
+6. Enter the Invoice ID to use when transferring orders to invoices.
 
->   If you’re using sales fulfillment workflow, enter the fulfillment order ID to use when transferring orders to fulfillment orders.
+    If you’re using sales fulfillment workflow, enter the fulfillment order ID to use when transferring orders to fulfillment orders.
 
->   The invoice ID you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the order.
+    The invoice ID you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the order.
 
-7.  You can mark to allow repeating documents. You might want to do this if, for example, you have a customer who orders the same items on a regular basis.
+7. You can mark to allow repeating documents. You might want to do this if, for example, you have a customer who orders the same items on a regular basis.
 
->   If you mark this option, the Frequency and Times to Repeat fields in the Sales Document Detail Entry window will be available and you can enter repeating information as you enter orders.
+    If you mark this option, the Frequency and Times to Repeat fields in the Sales Document Detail Entry window will be available and you can enter repeating information as you enter orders.
 
->   *You can select Allow Repeating Documents only if you’re allocating by Document/ Batch or None.*
+    > [!NOTE]
+    > You can select Allow Repeating Documents only if you’re allocating by Document/ Batch or None.
 
-8.  Mark the Use Separate Fulfillment Process option to use a separate fulfillment process to verify the items that are picked to fill the order. If this option is not marked, the fulfillment is done when the item is allocated. For more information about allocating and fulfilling, see *Chapter 19, “Allocating item quantities.”*
+8. Mark the Use Separate Fulfillment Process option to use a separate fulfillment process to verify the items that are picked to fill the order. If this option is not marked, the fulfillment is done when the item is allocated. For more information about allocating and fulfilling, see *Chapter 19, “Allocating item quantities.”*
 
-9.  You can mark Allow all Back Ordered Items to Print on Invoice to print backordered items on the invoice created from an order.
+9. You can mark Allow all Back Ordered Items to Print on Invoice to print backordered items on the invoice created from an order.
 
-10.  You can enter or select a Credit Limit Hold ID to apply to the order ID to stop processing a sales document that will result in a customer’s receivables balance exceeding their credit limit.
+10. You can enter or select a Credit Limit Hold ID to apply to the order ID to stop processing a sales document that will result in a customer’s receivables balance exceeding their credit limit.
 
-11.  You can mark the Override Quantity to Invoice with Quantity Fulfilled option to display the same quantity in the Quantity to Invoice field in the Sales Transaction Entry window as the Quantity Fulfilled field in the Sales Order Fulfillment window. This ensures that the quantity invoiced equals the quantity fulfilled.
+11. You can mark the Override Quantity to Invoice with Quantity Fulfilled option to display the same quantity in the Quantity to Invoice field in the Sales Transaction Entry window as the Quantity Fulfilled field in the Sales Order Fulfillment window. This ensures that the quantity invoiced equals the quantity fulfilled.
 
->   You can set up additional options differently for each order ID.
+    You can set up additional options differently for each order ID.
 
->   **Enable Quantity to Back Order in Sales Order Fulfillment** Mark this option to enter or change information in the Qty to Back Order field in the Sales Order Fulfillment window.
+    - **Enable Quantity to Back Order in Sales Order Fulfillment** Mark this option to enter or change information in the Qty to Back Order field in the Sales Order Fulfillment window.
 
->   **Enable Quantity Canceled in Sales Order Fulfillment** Mark this option to enter or change information in the Qty Canceled field in the Sales Order Fulfillment window.
+    - **Enable Quantity Canceled in Sales Order Fulfillment** Mark this option to enter or change information in the Qty Canceled field in the Sales Order Fulfillment window.
 
->   For example, suppose you create an order for widgets and enter 10 in the Original Quantity field, 10 in the Qty Ready to Fulfill field, and 0 in the Qty Fulfilled field. However, when you fulfill the order, there are only 8 widgets available to fill the order, so you enter 8 in the Qty Fulfilled field. The Qty Ready to Fulfill field also will display 8. The remaining quantity will be back ordered or canceled, depending on the option you select here and in the Customer Maintenance Options window. For more information, refer to the Receivables Management documentation.
+    For example, suppose you create an order for widgets and enter 10 in the Original Quantity field, 10 in the Qty Ready to Fulfill field, and 0 in the Qty Fulfilled field. However, when you fulfill the order, there are only 8 widgets available to fill the order, so you enter 8 in the Qty Fulfilled field. The Qty Ready to Fulfill field also will display 8. The remaining quantity will be back ordered or canceled, depending on the option you select here and in the Customer Maintenance Options window. For more information, refer to the Receivables Management documentation.
 
-12.  Select a method for allocating item quantities—the process of reserving inventory items so the available quantity is reduced by the quantity ordered.
+12. Select a method for allocating item quantities—the process of reserving inventory items so the available quantity is reduced by the quantity ordered.
 
->   **Line Item** Item quantities are allocated as you enter them on an order. If this option is marked, you’ll be required to make quantity shortage decisions as each item is entered.
+    - **Line Item** Item quantities are allocated as you enter them on an order. If this option is marked, you’ll be required to make quantity shortage decisions as each item is entered.
 
->   If marked and you’re not using a separate fulfillment process, item quantities will be fulfilled as well.
+        If marked and you’re not using a separate fulfillment process, item quantities will be fulfilled as well.
 
->   **Document/Batch** Entire orders or batches of orders are allocated using the Sales Allocation/Fulfillment Options window. This option allows for faster data entry because items won’t be checked for quantity shortages as they’re entered on sales documents.
+    - **Document/Batch** Entire orders or batches of orders are allocated using the Sales Allocation/Fulfillment Options window. This option allows for faster data entry because items won’t be checked for quantity shortages as they’re entered on sales documents.
 
->   **None** Item quantities are allocated when you transfer an order to an invoice using the allocation options for the invoice ID. You won’t be able to allocate item quantities for orders.
+    - **None** Item quantities are allocated when you transfer an order to an invoice using the allocation options for the invoice ID. You won’t be able to allocate item quantities for orders.
 
-13.   Mark the options for entering documents using this order ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but a password hasn’t been entered, anyone who has access to the window can use the option.
+13. Mark the options for entering documents using this order ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but a password hasn’t been entered, anyone who has access to the window can use the option.
 
->   You can set up these options differently for each order ID.
+    You can set up these options differently for each order ID.
 
->   **Allow Invoicing of Unfulfilled or Partially Fulfilled Orders** Mark to allow users to transfer an order to an invoice when the order is partially fulfilled. If unmarked, only completely allocated or fulfilled orders will be transferred to invoices.
+    - **Allow Invoicing of Unfulfilled or Partially Fulfilled Orders** Mark to allow users to transfer an order to an invoice when the order is partially fulfilled. If unmarked, only completely allocated or fulfilled orders will be transferred to invoices.
 
->   **Delete Documents** Mark to allow users to delete orders after they’ve been saved. If you delete an order, all the information associated with the order will be erased. If unmarked, you can’t delete orders in the Sales Transaction Entry window.
+    - **Delete Documents** Mark to allow users to delete orders after they’ve been saved. If you delete an order, all the information associated with the order will be erased. If unmarked, you can’t delete orders in the Sales Transaction Entry window.
 
->   **Edit Printed Documents** Mark to allow users to make changes to orders after they’ve been printed.
+    - **Edit Printed Documents** Mark to allow users to make changes to orders after they’ve been printed.
 
->   **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available order number will be assigned and you can’t change it.
+    - **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available order number will be assigned and you can’t change it.
 
->   **Void Documents** Mark to allow users to void orders after they’ve been entered. If marked and you’ve selected to track voided transaction history in the Sales Order Processing Setup window, voided orders will be saved in history. If unmarked, you can’t void orders in the Sales Transaction Entry window.
+    - **Void Documents** Mark to allow users to void orders after they’ve been entered. If marked and you’ve selected to track voided transaction history in the Sales Order Processing Setup window, voided orders will be saved in history. If unmarked, you can’t void orders in the Sales Transaction Entry window.
 
-14.  Choose Holds to assign process holds to the order ID to stop processing. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
+14. Choose Holds to assign process holds to the order ID to stop processing. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
 
-15.  Choose Save to save the order information you’ve entered.
+15. Choose Save to save the order information you’ve entered.
 
->   To review the entries and selections you’ve made for a specific order ID, print the Sales Order Setup List by choosing File \>\> Print or the printer button while the Sales Order Setup window is displayed.
+    To review the entries and selections you’ve made for a specific order ID, print the Sales Order Setup List by choosing File \>\> Print or the printer button while the Sales Order Setup window is displayed.
 
->   To review the entries for all order IDs, print the Sales Order Setup List (Reports \>\> Sales \>\> Setup).
+    To review the entries for all order IDs, print the Sales Order Setup List (Reports \>\> Sales \>\> Setup).
 
 #### Setting up fulfillment orders or invoices
 
->   If you’re using sales fulfillment workflow, use the Sales Fulfillment Order/Invoice Setup window to set up an unlimited number of fulfillment order IDs and invoice IDs, which you can use for different situations. For example, you can set up separate fulfillment order IDs or invoice IDs for wholesale, retail, and catalog customers. When you enter a fulfillment order or an invoice in the Sales Transaction Entry window, you can select the type of fulfillment order or invoice from the list of fulfillment order IDs and invoice IDs you’ve set up.
+If you’re using sales fulfillment workflow, use the Sales Fulfillment Order/Invoice Setup window to set up an unlimited number of fulfillment order IDs and invoice IDs, which you can use for different situations. For example, you can set up separate fulfillment order IDs or invoice IDs for wholesale, retail, and catalog customers. When you enter a fulfillment order or an invoice in the Sales Transaction Entry window, you can select the type of fulfillment order or invoice from the list of fulfillment order IDs and invoice IDs you’ve set up.
 
->   If you’re not using sales fulfillment workflow, the window name will be Sales Invoice Setup. Refer to *Setting up invoices* on page 38 for more information.
+If you’re not using sales fulfillment workflow, the window name will be Sales Invoice Setup. Refer to *Setting up invoices* on page 38 for more information.
 
->   **To set up fulfillment orders or invoices:**
+**To set up fulfillment orders or invoices:**
 
-1.  Open the Sales Fulfillment Order/Invoice Setup window.
+1. Open the Sales Fulfillment Order/Invoice Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Fulfillment Order/Invoice option)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Fulfillment Order/Invoice option)
 
-![](media/40ef7eb4a80dbda5b7bff04ad5127f6a.jpg)
+    ![](media/40ef7eb4a80dbda5b7bff04ad5127f6a.jpg)
 
-2.  Enter a fulfillment order/invoice ID. If the ID should have a unique document numbering system, enter a Fulfillment Order/Invoice ID Next Number.
+2. Enter a fulfillment order/invoice ID. If the ID should have a unique document numbering system, enter a Fulfillment Order/Invoice ID Next Number.
 
->   You can set up a different next number for each fulfillment order/invoice ID. When you enter a fulfillment order or invoice in the Sales Transaction Entry window, the next number for the fulfillment order/invoice ID is used as the document number. If you don’t enter a next number for the fulfillment order/ invoice ID, the next fulfillment order number or invoice number from the Sales Document Numbers Setup window is used.
+    You can set up a different next number for each fulfillment order/invoice ID. When you enter a fulfillment order or invoice in the Sales Transaction Entry window, the next number for the fulfillment order/invoice ID is used as the document number. If you don’t enter a next number for the fulfillment order/ invoice ID, the next fulfillment order number or invoice number from the Sales Document Numbers Setup window is used.
 
-3.  You can enter a comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
+3. You can enter a comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
 
-4.  You can select the format to use when you print a fulfillment order or an invoice with this fulfillment order/invoice ID. You can use blank paper, short form, long form, or other form, and you can change the format before printing the document.
+4. You can select the format to use when you print a fulfillment order or an invoice with this fulfillment order/invoice ID. You can use blank paper, short form, long form, or other form, and you can change the format before printing the document.
 
-5.  Select the method used to allocate item quantities—the process of reserving inventory items so the available quantity is reduced by the quantity billed.
+5. Select the method used to allocate item quantities—the process of reserving inventory items so the available quantity is reduced by the quantity billed.
 
->   **Line Item** Select this method to allocate item quantities as you enter them on a fulfillment order or an invoice. If you select this method, you’ll be required to make quantity shortage decisions as each item is entered.
+    - **Line Item** Select this method to allocate item quantities as you enter them on a fulfillment order or an invoice. If you select this method, you’ll be required to make quantity shortage decisions as each item is entered.
 
->   If you’ve selected to allocate by line item and you’re not using a separate fulfillment process, item quantities will be fulfilled, as well.
+        If you’ve selected to allocate by line item and you’re not using a separate fulfillment process, item quantities will be fulfilled, as well.
 
->   **Document/Batch** Select this method to allocate entire fulfillment orders, invoices, batches of fulfillment orders, or batches of invoices using the Sales Allocation/Fulfillment Options window. This option allows for faster data entry because items won’t be checked for quantity shortages as they’re entered on sales documents.
+    - **Document/Batch** Select this method to allocate entire fulfillment orders, invoices, batches of fulfillment orders, or batches of invoices using the Sales Allocation/Fulfillment Options window. This option allows for faster data entry because items won’t be checked for quantity shortages as they’re entered on sales documents.
 
-6.  Mark Transfer Fulfillment Order/Invoice to Back Order to be able to transfer this fulfillment order or invoice to a back order and enter the back order ID that will be used.
+6. Mark Transfer Fulfillment Order/Invoice to Back Order to be able to transfer this fulfillment order or invoice to a back order and enter the back order ID that will be used.
 
->   The back order ID you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the fulfillment order or invoice.
+    The back order ID you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the fulfillment order or invoice.
 
-7.  Mark the Use Separate Fulfillment Process option if item quantities should not be fulfilled during allocation. If this option is not marked, the fulfillment is completed when the item is allocated. For more information about allocating and fulfilling items, see *Chapter 19, “Allocating item quantities.”*
+7. Mark the Use Separate Fulfillment Process option if item quantities should not be fulfilled during allocation. If this option is not marked, the fulfillment is completed when the item is allocated. For more information about allocating and fulfilling items, see *Chapter 19, “Allocating item quantities.”*
 
-8.  You can enter or select a Credit Limit Hold ID to apply to the order ID to stop processing on documents that exceed the set credit limit for the customer.
+8. You can enter or select a Credit Limit Hold ID to apply to the order ID to stop processing on documents that exceed the set credit limit for the customer.
 
-9.  Mark the Enable Fulfillment Workflow option to track document statuses. You can enter or select a fulfillment workflow hold ID. For more information, refer to *Setting up fulfillment workflow for sales* on page 46.
+9. Mark the Enable Fulfillment Workflow option to track document statuses. You can enter or select a fulfillment workflow hold ID. For more information, refer to *Setting up fulfillment workflow for sales* on page 46.
 
-10.  If you marked the Enable Fulfillment Workflow option, you can mark other options.
+10. If you marked the Enable Fulfillment Workflow option, you can mark other options.
 
->   This table describes each option that you can mark.
+    This table describes each option that you can mark.
 
-| **Option**                                               | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Update Actual Ship Date During Confirm Ship              | If you marked the Enable Fulfillment Workflow option, you can mark this option to display the date that you confirmed shipment of the items. The date that you chose Confirm \>\> Ship in the Sales Transaction Entry window will be displayed in the Date Shipped field in the Sales Transaction Entry window.                                                                                                                                                    |
-| Override Billed Quantity with Quantity Fulfilled         | You can mark this option to display the same quantity in the Quantity Billed field in the Sales Transaction Entry window as the Quantity Fulfilled field in the Sales Order Fulfillment window. This option is marked automatically when the Enable Fulfillment Workflow option is marked.                                                                                                                                                                         |
-| Enable Quantity Canceled in Sales Order Fulfillment      | You can mark this option to enter or change information in the Qty Canceled field in the Sales Order Fulfillment window. Refer to *Setting up fulfillment orders or invoices* on page 33 for more information.                                                                                                                                                                                                                                                     |
-| Enable Quantity to Back Order in Sales Order Fulfillment | You can mark this option to enter or change information in the Qty to Back Order field in the Sales Order Fulfillment window. This option is available only when you’ve selected the Transfer Order to Back Order option in the Sales Order Setup window or the Transfer Fulfillment Order/Invoice to Back Order option in the Sales Fulfillment Order/Invoice Setup window. Refer to *Setting up fulfillment orders or invoices* on page 33 for more information. |
-| Update Invoice Date on First Print                       | If you marked the Enable Fulfillment Workflow option, you can mark this option to display the date that the invoice is printed in the Invoice Date field in the Sales Date Entry window. This option is marked automatically when sales fulfillment workflow is registered.                                                                                                                                                                                        |
+    | **Option**                                               | **Description**    |
+    |----------------------------------------------------------|---------------------|
+    | Update Actual Ship Date During Confirm Ship              | If you marked the Enable Fulfillment Workflow option, you can mark this option to display the date that you confirmed shipment of the items. The date that you chose Confirm \>\> Ship in the Sales Transaction Entry window will be displayed in the Date Shipped field in the Sales Transaction Entry window. |
+    | Override Billed Quantity with Quantity Fulfilled         | You can mark this option to display the same quantity in the Quantity Billed field in the Sales Transaction Entry window as the Quantity Fulfilled field in the Sales Order Fulfillment window. This option is marked automatically when the Enable Fulfillment Workflow option is marked. |
+    | Enable Quantity Canceled in Sales Order Fulfillment      | You can mark this option to enter or change information in the Qty Canceled field in the Sales Order Fulfillment window. Refer to *Setting up fulfillment orders or invoices* on page 33 for more information.    |
+    | Enable Quantity to Back Order in Sales Order Fulfillment | You can mark this option to enter or change information in the Qty to Back Order field in the Sales Order Fulfillment window. This option is available only when you’ve selected the Transfer Order to Back Order option in the Sales Order Setup window or the Transfer Fulfillment Order/Invoice to Back Order option in the Sales Fulfillment Order/Invoice Setup window. Refer to *Setting up fulfillment orders or invoices* on page 33 for more information. |
+    | Update Invoice Date on First Print                       | If you marked the Enable Fulfillment Workflow option, you can mark this option to display the date that the invoice is printed in the Invoice Date field in the Sales Date Entry window. This option is marked automatically when sales fulfillment workflow is registered.  |
 
-11.  If you marked the Transfer Fulfillment Order/Invoice to Back Order option, you can mark the Enable Quantity to Back Order in Sales Order Fulfillment option to enter or change information in the Qty to Back Order field in the Sales Order Fulfillment window.
+11. If you marked the Transfer Fulfillment Order/Invoice to Back Order option, you can mark the Enable Quantity to Back Order in Sales Order Fulfillment option to enter or change information in the Qty to Back Order field in the Sales Order Fulfillment window.
 
-12.  Mark options for documents using this fulfillment order ID or invoice ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but no password is entered, anyone who has access to the window can use the option.
+12. Mark options for documents using this fulfillment order ID or invoice ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but no password is entered, anyone who has access to the window can use the option.
 
->   You can mark options for any or all of the fulfillment order IDs or invoice IDs.
+    You can mark options for any or all of the fulfillment order IDs or invoice IDs.
 
->   **Delete Documents** Mark to allow users to delete fulfillment orders or invoices after they’ve been saved. If you delete a fulfillment order or an invoice, all the information associated with the fulfillment order or invoice will be deleted. If unmarked, you can’t delete fulfillment orders or invoices in the Sales Transaction Entry window.
+    - **Delete Documents** Mark to allow users to delete fulfillment orders or invoices after they’ve been saved. If you delete a fulfillment order or an invoice, all the information associated with the fulfillment order or invoice will be deleted. If unmarked, you can’t delete fulfillment orders or invoices in the Sales Transaction Entry window.
 
->   **Edit Printed Documents** Mark to allow users to make changes to fulfillment orders or invoices after they’ve been printed.
+    - **Edit Printed Documents** Mark to allow users to make changes to fulfillment orders or invoices after they’ve been printed.
 
->   **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available fulfillment order number or invoice number will be assigned and you can’t change it.
+    - **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available fulfillment order number or invoice number will be assigned and you can’t change it.
 
->   **Void Invoice Documents** Mark to allow users to void invoices after they’ve been entered. If marked and you’ve selected to track voided transaction history in the Sales Order Processing Setup window, voided invoices will be saved in history. If unmarked, you can’t void invoices in the Sales Transaction Entry window.
+    - **Void Invoice Documents** Mark to allow users to void invoices after they’ve been entered. If marked and you’ve selected to track voided transaction history in the Sales Order Processing Setup window, voided invoices will be saved in history. If unmarked, you can’t void invoices in the Sales Transaction Entry window.
 
-13.  Choose Holds to assign process holds to the fulfillment order ID or invoice ID. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
+13. Choose Holds to assign process holds to the fulfillment order ID or invoice ID. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
 
-14.  Choose Workflow to select the document statuses to track. For more information, see *Setting up fulfillment workflow for sales* on page 46.
+14. Choose Workflow to select the document statuses to track. For more information, see *Setting up fulfillment workflow for sales* on page 46.
 
-15.  Choose Save to save the fulfillment order or invoice information you’ve entered.
+15. Choose Save to save the fulfillment order or invoice information you’ve entered.
 
->   To review the entries and selections you’ve made for a specific fulfillment order ID or invoice ID, choose File \>\> Print in the Sales Fulfillment Order/Invoice Setup window to print the Sales Invoice Setup List.
+To review the entries and selections you’ve made for a specific fulfillment order ID or invoice ID, choose File \>\> Print in the Sales Fulfillment Order/Invoice Setup window to print the Sales Invoice Setup List.
 
->   To review the entries for all fulfillment order IDs or invoice IDs, print the Sales Invoice Setup List (Sales \>\> Reports \>\> Setup).
+To review the entries for all fulfillment order IDs or invoice IDs, print the Sales Invoice Setup List (Sales \>\> Reports \>\> Setup).
 
 #### Setting up back orders
 
->   Use the Sales Back Order Setup window to set up and customize an unlimited number of back order IDs, which you can use for different situations. For example, you can set up separate back order IDs for retail sales and wholesale sales. When you enter a back order in the Sales Transaction Entry window, you can select the back order ID from the list of back order IDs you’ve set up.
+Use the Sales Back Order Setup window to set up and customize an unlimited number of back order IDs, which you can use for different situations. For example, you can set up separate back order IDs for retail sales and wholesale sales. When you enter a back order in the Sales Transaction Entry window, you can select the back order ID from the list of back order IDs you’ve set up.
 
->   **To set up back orders:**
+**To set up back orders:**
 
-1.  Open the Sales Back Order Setup window.
+1. Open the Sales Back Order Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Back Order option)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Back Order option)
 
-![](media/47470ff7d62eb428f97ef1483eff1bed.jpg)
+    ![](media/47470ff7d62eb428f97ef1483eff1bed.jpg)
 
-2.  Enter a Back Order ID and, if you want this order ID to have a unique document numbering system, enter a Back Order ID Next Number.
+2. Enter a Back Order ID and, if you want this order ID to have a unique document numbering system, enter a Back Order ID Next Number.
 
->   You can set up a different next number for each back order ID. When you enter a back order in the Sales Transaction Entry window, the next number for the back order ID is used as the document number. If you don’t enter a next number for the back order ID, the next back order number from the Sales Document Numbers Setup window is used.
+    You can set up a different next number for each back order ID. When you enter a back order in the Sales Transaction Entry window, the next number for the back order ID is used as the document number. If you don’t enter a next number for the back order ID, the next back order number from the Sales Document Numbers Setup window is used.
 
-3.  You can enter a Comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
+3. You can enter a Comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
 
-4.  You can select the format to use when you print a back order with this back order ID—blank paper, short form, long form, or other form. You can change the format before printing the document.
+4. You can select the format to use when you print a back order with this back order ID—blank paper, short form, long form, or other form. You can change the format before printing the document.
 
-5.  Mark the options to transfer this back order ID to orders, invoices, or both, and select an ID for each document.
+5. Mark the options to transfer this back order ID to orders, invoices, or both, and select an ID for each document.
 
->   If you’re using sales fulfillment workflow, you can transfer this back order ID to fulfillment orders and select a fulfillment order ID.
+    If you’re using sales fulfillment workflow, you can transfer this back order ID to fulfillment orders and select a fulfillment order ID.
 
->   The order and invoice IDs you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the back order.
+    The order and invoice IDs you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the back order.
 
-6.  If you marked a transfer option, you can specify whether item quantities will appear in the Quantity to Order or Quantity to Invoice fields on the back order in the Sales Transaction Entry window.
+6. If you marked a transfer option, you can specify whether item quantities will appear in the Quantity to Order or Quantity to Invoice fields on the back order in the Sales Transaction Entry window.
 
->   **To Order** Item quantities will appear as the quantity to order in the Sales Transaction Entry window when you use this back order ID. This selection is the best choice if you transfer a back order to an order more often than you transfer a back order to an invoice.
+    - **To Order** Item quantities will appear as the quantity to order in the Sales Transaction Entry window when you use this back order ID. This selection is the best choice if you transfer a back order to an order more often than you transfer a back order to an invoice.
 
->   **To Invoice** Item quantities will appear as the quantity to invoice in the Sales Transaction Entry window when you use this back order ID.
+    - **To Invoice** Item quantities will appear as the quantity to invoice in the Sales Transaction Entry window when you use this back order ID.
 
->   **None** You will need to enter item quantities manually in the Sales Transaction Entry window.
+    - **None** You will need to enter item quantities manually in the Sales Transaction Entry window.
 
-7.  Mark the options for entering documents using this back order ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but no password is entered, anyone who has access to the window can use the option.
+7. Mark the options for entering documents using this back order ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but no password is entered, anyone who has access to the window can use the option.
 
->   You can set up these options differently for each back order ID.
+    You can set up these options differently for each back order ID.
 
->   **Delete Documents** Mark to allow users to delete back orders after they’ve been saved. If you delete a back order, all the information associated with the back order will be erased. If unmarked, you can’t delete back orders in the Sales Transaction Entry window.
+    - **Delete Documents** Mark to allow users to delete back orders after they’ve been saved. If you delete a back order, all the information associated with the back order will be erased. If unmarked, you can’t delete back orders in the Sales Transaction Entry window.
 
->   **Edit Printed Documents** Mark to allow users to make changes to back orders after they’ve been printed.
+    - **Edit Printed Documents** Mark to allow users to make changes to back orders after they’ve been printed.
 
->   **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available back order number will be assigned and you can’t change it.
+    - **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available back order number will be assigned and you can’t change it.
 
->   **Void Documents** Mark to allow users to void back orders after they’ve been entered. If marked and you’ve selected to track voided transaction history, voided back orders will be saved in history. If unmarked, you can’t void back orders in the Sales Transaction Entry window.
+    - **Void Documents** Mark to allow users to void back orders after they’ve been entered. If marked and you’ve selected to track voided transaction history, voided back orders will be saved in history. If unmarked, you can’t void back orders in the Sales Transaction Entry window.
 
-8.  Choose Holds to assign process holds to the back order ID to stop processing. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
+8. Choose Holds to assign process holds to the back order ID to stop processing. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
 
-9.  Choose Save to save the back order information you’ve entered.
+9. Choose Save to save the back order information you’ve entered.
 
->   To review the entries and selections you’ve made for a specific back order ID, print the Sales Back Order Setup List by choosing File \>\> Print or the printer button while the Sales Back Order Setup window is displayed.
+To review the entries and selections you’ve made for a specific back order ID, print the Sales Back Order Setup List by choosing File \>\> Print or the printer button while the Sales Back Order Setup window is displayed.
 
->   To review the entries for all back order IDs, print the Sales Back Order Setup List (Sales \>\> Reports \>\> Setup).
+To review the entries for all back order IDs, print the Sales Back Order Setup List (Sales \>\> Reports \>\> Setup).
 
 #### Setting up invoices
 
->   Use the Sales Invoice Setup window to set up and customize an unlimited number of invoice IDs, which you can use for different situations. For example, you can set up separate invoice IDs for wholesale, retail, and catalog customers. When you enter an invoice in the Sales Transaction Entry window, you can select the type of invoice from the list of invoice IDs you’ve set up.
+Use the Sales Invoice Setup window to set up and customize an unlimited number of invoice IDs, which you can use for different situations. For example, you can set up separate invoice IDs for wholesale, retail, and catalog customers. When you enter an invoice in the Sales Transaction Entry window, you can select the type of invoice from the list of invoice IDs you’ve set up.
 
->   If you’re using sales fulfillment workflow, the window name will be Sales Fulfillment Order/Invoice Setup. Refer to *Setting up fulfillment orders or invoices* on page 33 for more information.
+If you’re using sales fulfillment workflow, the window name will be Sales Fulfillment Order/Invoice Setup. Refer to *Setting up fulfillment orders or invoices* on page 33 for more information.
 
->   **To set up invoices:**
+**To set up invoices:**
 
-1.  Open the Sales Invoice Setup window.
+1. Open the Sales Invoice Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Invoice option)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Invoice option)
 
-![](media/a6336d3be9dd7c998e1354a6a657d3e3.jpg)
+    ![](media/a6336d3be9dd7c998e1354a6a657d3e3.jpg)
 
-2.  Enter an Invoice ID and, if you want this invoice ID to have a unique document numbering system, enter an Invoice ID Next Number.
+2. Enter an Invoice ID and, if you want this invoice ID to have a unique document numbering system, enter an Invoice ID Next Number.
 
->   You can set up a different next number for each invoice ID. When you enter an invoice in the Sales Transaction Entry window, the next number for the invoice ID is used as the document number. If you don’t enter a next number for the invoice ID, the next invoice number from the Sales Document Numbers Setup window is used.
+    You can set up a different next number for each invoice ID. When you enter an invoice in the Sales Transaction Entry window, the next number for the invoice ID is used as the document number. If you don’t enter a next number for the invoice ID, the next invoice number from the Sales Document Numbers Setup window is used.
 
-3.  You can enter a Comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
+3. You can enter a Comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
 
-4.  You can select the format to use when you print an invoice with this invoice ID—blank paper, short form, long form, or other form. You can change the format before printing the document.
+4. You can select the format to use when you print an invoice with this invoice ID—blank paper, short form, long form, or other form. You can change the format before printing the document.
 
-5.  Mark Transfer Invoice to Back Order if you want to be able to transfer this invoice to a back order and enter the back order ID that will be used.
+5. Mark Transfer Invoice to Back Order if you want to be able to transfer this invoice to a back order and enter the back order ID that will be used.
 
->   The back order ID you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the invoice.
+    The back order ID you enter will appear in the Sales Document Detail Entry window as the default document type, but can be changed before transferring the invoice.
 
-6.  Mark the Use Separate Fulfillment Process option if you don’t want item quantities to be fulfilled during allocation. If this option is not marked, the fulfillment is done when the item is allocated. For more information about allocating and fulfilling, see *Chapter 19, “Allocating item quantities.”*
+6. Mark the Use Separate Fulfillment Process option if you don’t want item quantities to be fulfilled during allocation. If this option is not marked, the fulfillment is done when the item is allocated. For more information about allocating and fulfilling, see *Chapter 19, “Allocating item quantities.”*
 
-7.  You can enter or select a Credit Limit Hold ID to place a hold on documents that exceed the set credit limit for the customer.
+7. You can enter or select a Credit Limit Hold ID to place a hold on documents that exceed the set credit limit for the customer.
 
-8.  You can mark other options for the invoice ID.
+8. You can mark other options for the invoice ID.
 
->   This table describes each option that you can mark.
+    This table describes each option that you can mark.
 
-| **Option**                                               | **Description**                                                                                                       |
-|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Override Billed Quantity with Quantity Fulfilled         | Mark this option to display the same quantity in the Quantity to Invoice field as the Quantity Fulfilled field.       |
-| Enable Quantity Canceled in Sales Order Fulfillment      | Mark this option to enter or change information in the Qty Canceled field in the Sales Order Fulfillment window.      |
-| Enable Quantity to Back Order in Sales Order Fulfillment | Mark this option to enter or change information in the Qty to Back Order field in the Sales Order Fulfillment window. |
+    | **Option**                                          | **Description**   |
+    |----------------------------------------------------------|-------------------|
+    | Override Billed Quantity with Quantity Fulfilled    | Mark this option to display the same quantity in the Quantity to Invoice field as the Quantity Fulfilled field. |
+    | Enable Quantity Canceled in Sales Order Fulfillment | Mark this option to enter or change information in the Qty Canceled field in the Sales Order Fulfillment window.      |
+    | Enable Quantity to Back Order in Sales Order Fulfillment | Mark this option to enter or change information in the Qty to Back Order field in the Sales Order Fulfillment window. |
 
-9.  Select the method used to allocate item quantities—the process of reserving inventory items so the available quantity is reduced by the quantity billed.
+9. Select the method used to allocate item quantities—the process of reserving inventory items so the available quantity is reduced by the quantity billed.
 
->   **Line Item** Item quantities are allocated as you enter them on an invoice. If this option is marked, you’ll be required to make quantity shortage decisions as each item is entered.
+    - **Line Item** Item quantities are allocated as you enter them on an invoice. If this option is marked, you’ll be required to make quantity shortage decisions as each item is entered.
 
->   If you’ve selected to allocate by line item and you’re not using a separate fulfillment process, item quantities will be fulfilled as well.
+        If you’ve selected to allocate by line item and you’re not using a separate fulfillment process, item quantities will be fulfilled as well.
 
->   **Document/Batch** Entire invoices or batches of invoices are allocated using the Sales Allocation/Fulfillment Options window. This option allows for faster data entry because items won’t be checked for quantity shortages as they’re entered on sales documents.
+    - **Document/Batch** Entire invoices or batches of invoices are allocated using the Sales Allocation/Fulfillment Options window. This option allows for faster data entry because items won’t be checked for quantity shortages as they’re entered on sales documents.
 
-10.  Mark the options for entering documents using this invoice ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but no password is entered, anyone who has access to the window can use the option.
+10. Mark the options for entering documents using this invoice ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but no password is entered, anyone who has access to the window can use the option.
 
->   You can set up these options differently for each invoice ID.
+    You can set up these options differently for each invoice ID.
 
->   **Delete Documents** Mark to allow users to delete invoices after they’ve been saved. If you delete an invoice, all the information associated with the invoice will be erased. If unmarked, you can’t delete invoices in the Sales Transaction Entry window.
+    - **Delete Documents** Mark to allow users to delete invoices after they’ve been saved. If you delete an invoice, all the information associated with the invoice will be erased. If unmarked, you can’t delete invoices in the Sales Transaction Entry window.
 
->   **Edit Printed Documents** Mark to allow users to make changes to invoices after they’ve been printed.
+    - **Edit Printed Documents** Mark to allow users to make changes to invoices after they’ve been printed.
 
->   **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available invoice number will be assigned and you can’t change it.
+    - **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available invoice number will be assigned and you can’t change it.
 
->   **Void Invoice Documents** Mark to allow users to void invoices after they’ve been entered. If marked and you’ve selected to track voided transaction history in the Sales Order Processing Setup window, voided invoices will be saved in history. If unmarked, you can’t void invoices in the Sales Transaction Entry window.
+    - **Void Invoice Documents** Mark to allow users to void invoices after they’ve been entered. If marked and you’ve selected to track voided transaction history in the Sales Order Processing Setup window, voided invoices will be saved in history. If unmarked, you can’t void invoices in the Sales Transaction Entry window.
 
-11.  Choose Holds to assign process holds to the invoice ID to stop processing. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
+11. Choose Holds to assign process holds to the invoice ID to stop processing. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
 
-12.  Choose Save to save the invoice information you’ve entered.
+12. Choose Save to save the invoice information you’ve entered.
 
->   To review the entries and selections you’ve made for a specific invoice ID, print the Sales Invoice Setup List by choosing File \>\> Print or the printer button while the Sales Invoice Setup window is displayed.
+To review the entries and selections you’ve made for a specific invoice ID, print the Sales Invoice Setup List by choosing File \>\> Print or the printer button while the Sales Invoice Setup window is displayed.
 
->   To review the entries for all invoice IDs, print the Sales Invoice Setup List (Sales \>\> Reports \>\> Setup).
+To review the entries for all invoice IDs, print the Sales Invoice Setup List (Sales \>\> Reports \>\> Setup).
 
 #### Setting up returns
 
->   Use the Sales Return Setup window to set up and customize an unlimited number of return IDs, which you can use for different situations. For example, if you use different types of returns for your wholesale, retail, and catalog customers, you can set up a separate return ID for each type of customer. When you enter a return in the Sales Transaction Entry window, you can select the type of return from the list of return IDs you’ve set up.
+Use the Sales Return Setup window to set up and customize an unlimited number of return IDs, which you can use for different situations. For example, if you use different types of returns for your wholesale, retail, and catalog customers, you can set up a separate return ID for each type of customer. When you enter a return in the Sales Transaction Entry window, you can select the type of return from the list of return IDs you’ve set up.
 
->   **To set up returns:**
+**To set up returns:**
 
-1.  Open the Sales Return Setup window.
+1. Open the Sales Return Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Return option)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Return option)
 
-![](media/4b6f93791106b45e871ac9ea3125ea30.jpg)
+    ![](media/4b6f93791106b45e871ac9ea3125ea30.jpg)
 
-2.  Enter a Return ID and, if you want this return ID to have a unique document numbering system, enter a Return ID Next Number.
+2. Enter a Return ID and, if you want this return ID to have a unique document numbering system, enter a Return ID Next Number.
 
->   You can set up a different next number for each return ID. When you enter a return in the Sales Transaction Entry window, the next number for the return ID is used as the document number. If you don’t enter a next number for the return ID, the next return number from the Sales Document Numbers Setup window is used.
+    You can set up a different next number for each return ID. When you enter a return in the Sales Transaction Entry window, the next number for the return ID is used as the document number. If you don’t enter a next number for the return ID, the next return number from the Sales Document Numbers Setup window is used.
 
-3.  You can enter a comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
+3. You can enter a comment ID. The comment ID you enter will appear as the default comment ID in the Sales Transaction Entry window, where you can change it, if necessary.
 
-4.  You can select the format to use when you print a return with this return ID— blank paper, short form, long form, or other form. You can change the format before printing the document.
+4. You can select the format to use when you print a return with this return ID— blank paper, short form, long form, or other form. You can change the format before printing the document.
 
-5.  Mark the Use next number from Invoice ID option if you want your return and invoice documents to use the same sequential numbering system, and enter the invoice ID.
+5. Mark the Use next number from Invoice ID option if you want your return and invoice documents to use the same sequential numbering system, and enter the invoice ID.
 
->   If an Invoice Next Number isn’t entered in the Sales Invoice Setup window, the next number specified for invoices in the Sales Document Numbers Setup window will be used.
+    If an Invoice Next Number isn’t entered in the Sales Invoice Setup window, the next number specified for invoices in the Sales Document Numbers Setup window will be used.
 
-6.  Mark the options for entering documents using this return ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but no password is entered, anyone who has access to the window can use the option.
+6. Mark the options for entering documents using this return ID. You can enter a password to restrict a user from using the option during transaction entry. If an option is marked but no password is entered, anyone who has access to the window can use the option.
 
->   You can set up these options differently for each return ID.
+    You can set up these options differently for each return ID.
 
->   **Delete Documents** Mark to allow users to delete returns after they’ve been saved. If you delete a return, all the information associated with the return will be erased. If unmarked, you can’t delete returns in the Sales Transaction Entry window.
+    - **Delete Documents** Mark to allow users to delete returns after they’ve been saved. If you delete a return, all the information associated with the return will be erased. If unmarked, you can’t delete returns in the Sales Transaction Entry window.
 
->   **Edit Printed Documents** Mark to allow users to make changes to returns after they’ve been printed.
+    - **Edit Printed Documents** Mark to allow users to make changes to returns after they’ve been printed.
 
->   **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available return number will be assigned and you can’t change it.
+    - **Override Document Numbers** Mark to allow users to change the document number that is assigned in the Sales Transaction Entry window. If unmarked, the next available return number will be assigned and you can’t change it.
 
->   **Override Item Unit Cost for Returns** Mark to allow users to change the unit cost of a returned item. The default unit cost for returned items will be the item’s current cost. If unmarked, you can’t change the cost for returned items.
+    - **Override Item Unit Cost for Returns** Mark to allow users to change the unit cost of a returned item. The default unit cost for returned items will be the item’s current cost. If unmarked, you can’t change the cost for returned items.
 
->   **Void Documents** Mark to allow users to void returns after they’ve been entered. If marked and you’ve also selected to track voided transaction history in the Sales Order Processing Setup window, voided returns will be saved in history. If unmarked, you can’t void returns in the Sales Transaction Entry window.
+    - **Void Documents** Mark to allow users to void returns after they’ve been entered. If marked and you’ve also selected to track voided transaction history in the Sales Order Processing Setup window, voided returns will be saved in history. If unmarked, you can’t void returns in the Sales Transaction Entry window.
 
-7.  Choose Holds to assign process holds to the return ID to stop processing. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
+7. Choose Holds to assign process holds to the return ID to stop processing. For more information about assigning process holds, see *Assigning process holds to sales document IDs* on page 42.
 
-8.  Choose Save to save the return information you’ve entered.
+8. Choose Save to save the return information you’ve entered.
 
->   To review the entries and selections you’ve made for a specific return ID, print the Sales Return Setup List by choosing File \>\> Print or the printer button while the Sales Return Setup window is displayed.
+To review the entries and selections you’ve made for a specific return ID, print the Sales Return Setup List by choosing File \>\> Print or the printer button while the Sales Return Setup window is displayed.
 
->   To review the entries for all return IDs, print the Sales Return Setup List (Sales \>\> Reports \>\> Setup).
+To review the entries for all return IDs, print the Sales Return Setup List (Sales \>\> Reports \>\> Setup).
 
 #### Assigning process holds to sales document IDs
 
->   Process holds are user-defined restrictions that control the processing of sales documents at different stages of the sales cycle. You can use process holds to restrict the transfer, fulfillment, printing, or posting of documents. You can manually assign process holds to individual documents or automatically assign them to documents based on their document ID. If you assign process holds to a document ID, the process holds will be assigned to each document that uses the document ID.
+Process holds are user-defined restrictions that control the processing of sales documents at different stages of the sales cycle. You can use process holds to restrict the transfer, fulfillment, printing, or posting of documents. You can manually assign process holds to individual documents or automatically assign them to documents based on their document ID. If you assign process holds to a document ID, the process holds will be assigned to each document that uses the document ID.
 
->   For example, a manager’s approval might be required before a return is posted. You can set up a process hold called Manager Approval, assign a password and apply it to all return documents. Once the process hold is applied, you must enter the password before the return can be posted.
+For example, a manager’s approval might be required before a return is posted. You can set up a process hold called Manager Approval, assign a password and apply it to all return documents. Once the process hold is applied, you must enter the password before the return can be posted.
 
->   *You can’t assign process holds until you’ve set them up using the Sales Process Holds Setup window. For more information, see Setting up process holds on page 22*.
+> [!NOTE]
+> You can’t assign process holds until you’ve set them up using the Sales Process Holds Setup window. For more information, see Setting up process holds on page 22.
 
->   For more information about assigning a process hold to an individual document, see *Assigning process holds to a document* on page 195*.*
+For more information about assigning a process hold to an individual document, see *Assigning process holds to a document* on page 195.
 
->   **To assign process holds to sales document IDs:**
+**To assign process holds to sales document IDs:**
 
-1.  Open the Sales Process Holds Assignment window.
+1. Open the Sales Process Holds Assignment window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Invoice, or Return option \>\> Holds button)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Invoice, or Return option \>\> Holds button)
 
-![](media/1fee0b6dccaafa77bac4ce2c1bf8b7bc.jpg)
+    ![](media/1fee0b6dccaafa77bac4ce2c1bf8b7bc.jpg)
 
-2.  Select a hold from the Available Process Holds list and choose Insert.
+2. Select a hold from the Available Process Holds list and choose Insert.
 
-3.  Continue this process until all process holds you want to apply are displayed in the Selected Process Holds list.
+3. Continue this process until all process holds you want to apply are displayed in the Selected Process Holds list.
 
-4.  Choose OK to save changes and close the window.
+4. Choose OK to save changes and close the window.
 
-**Chapter 4: Sales fulfillment workflow setup**
+### Chapter 4: Sales fulfillment workflow setup
 
->   If you’re using sales fulfillment workflow, you must set up document statuses to assign to fulfillment orders. These document statuses indicate typical document processes, such as printing picking tickets, picking out goods from inventory, printing packing slips, packing and shipping goods, and sending invoices to customers. To use sales fulfillment workflow, use the Sales Fulfillment Order/ Invoice Setup window to activate workflow for sales.
+If you’re using sales fulfillment workflow, you must set up document statuses to assign to fulfillment orders. These document statuses indicate typical document processes, such as printing picking tickets, picking out goods from inventory, printing packing slips, packing and shipping goods, and sending invoices to customers. To use sales fulfillment workflow, use the Sales Fulfillment Order/ Invoice Setup window to activate workflow for sales.
 
->   You can set up picking instruction IDs that you can assign to a customer or an item and then print on a picking ticket.
+You can set up picking instruction IDs that you can assign to a customer or an item and then print on a picking ticket.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
--   *Sales fulfillment workflow overview*
+- *Sales fulfillment workflow overview*
 
--   *Setting up fulfillment workflow for sales*
+- *Setting up fulfillment workflow for sales*
 
--   *Changing fulfillment workflow document status descriptions*
+- *Changing fulfillment workflow document status descriptions*
 
--   *Setting up picking instruction IDs*
+- *Setting up picking instruction IDs*
 
 #### Sales fulfillment workflow overview
 
->   Workflow refers to the automation of a business process, during which tasks are completed and documents are passed from one participant to another to complete the next task in the process. You can implement workflow capability into your sales cycle by using a type of sales document called a fulfillment order. You can create a fulfillment order from a quote, back order, or order, and you can create an invoice from a fulfillment order. For more information about fulfillment orders, refer to *Understanding fulfillment orders* on page 87.
+Workflow refers to the automation of a business process, during which tasks are completed and documents are passed from one participant to another to complete the next task in the process. You can implement workflow capability into your sales cycle by using a type of sales document called a fulfillment order. You can create a fulfillment order from a quote, back order, or order, and you can create an invoice from a fulfillment order. For more information about fulfillment orders, refer to *Understanding fulfillment orders* on page 87.
 
->   You can assign up to six workflow document statuses to a fulfillment order. You can use these statuses to track the document processes, such as printing a picking ticket, retrieving items from inventory, printing a packing slip, packing and shipping the goods, and sending an invoice to the customer. You must mark Status 6 and at least one other status to track workflow information.
+You can assign up to six workflow document statuses to a fulfillment order. You can use these statuses to track the document processes, such as printing a picking ticket, retrieving items from inventory, printing a packing slip, packing and shipping the goods, and sending an invoice to the customer. You must mark Status 6 and at least one other status to track workflow information.
 
->   Each workflow status that you use must have a description. The following descriptions are provided, but you can change them.
+Each workflow status that you use must have a description. The following descriptions are provided, but you can change them.
 
 -   1 = Ready to Print Picking Ticket
 
@@ -1065,16 +1067,15 @@ You can use either standard or extended pricing. In both pricing systems, you ca
 
 -   6 = Ready to Print/Post
 
->   You can advance the status for one document at a time in the Sales Transaction Entry window by completing the following appropriate tasks.
+You can advance the status for one document at a time in the Sales Transaction Entry window by completing the following appropriate tasks.
 
-| **Status** | **Action to advance to the next tracked status**                                                                                                                                                                                                                                                                                                                      |
-|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Status** | **Action to advance to the next tracked status**   |
+|------------|----------------------------------------------------|
 | 1          | Print a picking ticket for the fulfillment order that includes all line items—except drop-ship—that are not fully canceled or back ordered. You can print the picking ticket from one of the following windows: the Sales Transaction Entry window, the Sales Order Fulfillment window, the Print Sales Documents window, or the Sales Document Print Options window. |
-| 2          | Choose Confirm \>\> Pick in the Sales Transaction Entry window, the Sales Order Fulfillment window, or the Sales Bulk Confirmation window.                                                                                                                                                                                                                            |
-| **Status** | **Action to advance to the next tracked status**                                                                                                                                                                                                                                                                                                                      |
-| 3          | Print a packing slip for the fulfillment order in the Sales Transaction Entry window, the Sales Order Fulfillment window, the Print Sales Documents window, or the Sales Document Print Options window.                                                                                                                                                               |
-| 4          | Choose Confirm \>\> Pack in the Sales Transaction Entry window, the Sales Order Fulfillment window, or the Sales Bulk Confirmation window.                                                                                                                                                                                                                            |
-| 5          | Choose Confirm \>\> Ship in the Sales Transaction Entry window or the Sales Order Fulfillment window.                                                                                                                                                                                                                                                                 |
+| 2          | Choose Confirm \>\> Pick in the Sales Transaction Entry window, the Sales Order Fulfillment window, or the Sales Bulk Confirmation window. |
+| 3          | Print a packing slip for the fulfillment order in the Sales Transaction Entry window, the Sales Order Fulfillment window, the Print Sales Documents window, or the Sales Document Print Options window.  |
+| 4          | Choose Confirm \>\> Pack in the Sales Transaction Entry window, the Sales Order Fulfillment window, or the Sales Bulk Confirmation window.  |
+| 5          | Choose Confirm \>\> Ship in the Sales Transaction Entry window or the Sales Order Fulfillment window. |
 
 For example, if you’re tracking all six document statuses and you’ve printed the picking ticket for the items on a fulfillment order, the current document status is 2. To advance the document status to Status 3, you can choose Confirm \>\>Pick in the Sales Transaction Entry window.
 
@@ -1088,77 +1089,77 @@ Setup window to activate workflow for sales. Use the Sales Fulfillment Document 
 
 **To set up fulfillment workflow for sales:**
 
-1.  Open the Sales Fulfillment Order/Invoice Setup window.
+1. Open the Sales Fulfillment Order/Invoice Setup window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Fulfillment Order/Invoice option)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Fulfillment Order/Invoice option)
 
-2.  Enter or select a fulfillment order ID/invoice ID for the workflow you’re setting up.
+2. Enter or select a fulfillment order ID/invoice ID for the workflow you’re setting up.
 
-3.  Mark the Enable Fulfillment Workflow option.
+3. Mark the Enable Fulfillment Workflow option.
 
-4.  Choose Workflow to open the Sales Fulfillment Document Workflow Setup window.
+4. Choose Workflow to open the Sales Fulfillment Document Workflow Setup window.
 
-![](media/c18b064597d2704ddb1be489602ee2d3.jpg)
+    ![](media/c18b064597d2704ddb1be489602ee2d3.jpg)
 
-5.  To exclude a document status from the workflow process, unmark the Active option for the status. To change the status descriptions, refer to *Changing fulfillment workflow document status descriptions* on page 47.
+5. To exclude a document status from the workflow process, unmark the Active option for the status. To change the status descriptions, refer to *Changing fulfillment workflow document status descriptions* on page 47.
 
-6.  Choose OK in the Sales Fulfillment Document Workflow Setup window. Choose Save in the Sales Fulfillment Order/Invoice Setup window.
+6. Choose OK in the Sales Fulfillment Document Workflow Setup window. Choose Save in the Sales Fulfillment Order/Invoice Setup window.
 
 #### Changing fulfillment workflow document status descriptions
 
->   If you’re using sales fulfillment workflow, use the Sales Fulfillment Workflow Setup window to change the descriptions of document statuses displayed in the Sales Fulfillment Document Workflow Setup window. For more information, refer to *Setting up fulfillment workflow for sales* on page 46.
+If you’re using sales fulfillment workflow, use the Sales Fulfillment Workflow Setup window to change the descriptions of document statuses displayed in the Sales Fulfillment Document Workflow Setup window. For more information, refer to *Setting up fulfillment workflow for sales* on page 46.
 
->   The workflow process that’s used to move from one document status to another won’t change. For example, if your company uses the term “dispatch” rather than the term “ship”, you could change the description for Status 5 to Dispatched in the Sales Fulfillment Workflow Setup window. However, to advance the status of a document to status 6, you need to select Confirm \>\> Ship in the Sales Transaction Entry window, the Sales Order Fulfillment window, or the Bulk Confirmation window.
+The workflow process that’s used to move from one document status to another won’t change. For example, if your company uses the term “dispatch” rather than the term “ship”, you could change the description for Status 5 to Dispatched in the Sales Fulfillment Workflow Setup window. However, to advance the status of a document to status 6, you need to select Confirm \>\> Ship in the Sales Transaction Entry window, the Sales Order Fulfillment window, or the Bulk Confirmation window.
 
->   **To change fulfillment workflow document status descriptions:**
+**To change fulfillment workflow document status descriptions:**
 
-1.  Open the Sales Fulfillment Workflow Setup window.
+1. Open the Sales Fulfillment Workflow Setup window.
 
->   (Sales \>\> Setup \>\> Fulfillment Workflow Setup)
+    (Sales \>\> Setup \>\> Fulfillment Workflow Setup)
 
-![](media/1d138c12d3da5ddf97c8d2d89d508bc2.jpg)
+    ![](media/1d138c12d3da5ddf97c8d2d89d508bc2.jpg)
 
-2.  You can select the description text and change it.
+2. You can select the description text and change it.
 
-3.  Choose OK to save your changes and close the window.
+3. Choose OK to save your changes and close the window.
 
 #### Setting up picking instruction IDs
 
->   If you’re using advanced picking, use the Picking Instruction Maintenance window to set up instruction IDs and enter picking instructions. Picking instructions can include information such as the sequence that an item should be picked or that a forklift is required to pick an item.
+If you’re using advanced picking, use the Picking Instruction Maintenance window to set up instruction IDs and enter picking instructions. Picking instructions can include information such as the sequence that an item should be picked or that a forklift is required to pick an item.
 
->   You can assign the instruction IDs to a customer record and item record in the Picking Instruction Preview window. When you print a picking ticket that includes the customer ID and item ID, and you marked the Print Picking Instructions option in the Print Sales Documents window or the Sales Document Print Options window, the instructions also will be printed.
+You can assign the instruction IDs to a customer record and item record in the Picking Instruction Preview window. When you print a picking ticket that includes the customer ID and item ID, and you marked the Print Picking Instructions option in the Print Sales Documents window or the Sales Document Print Options window, the instructions also will be printed.
 
 **To set up picking instruction IDs:**
 
-1.  Open the Picking Instruction Maintenance window. (Sales \>\> Cards \>\> Picking Instructions)
+1. Open the Picking Instruction Maintenance window. (Sales \>\> Cards \>\> Picking Instructions)
 
-![](media/70e4e8c16cb767fa498085f5647fdf52.jpg)
+    ![](media/70e4e8c16cb767fa498085f5647fdf52.jpg)
 
-2.  Enter an ID to describe the picking instructions you’re creating.
+2. Enter an ID to describe the picking instructions you’re creating.
 
-3.  In the Instructions field, enter the picking instructions.
+3. In the Instructions field, enter the picking instructions.
 
->   For example, to specify that the item should be picked in a specific sequence, you could enter “Pick this item first-in, first-out (FIFO) order.” Picking instruction for a specific customer could be “Pick blue-handled paint brushes only.”
+    For example, to specify that the item should be picked in a specific sequence, you could enter “Pick this item first-in, first-out (FIFO) order.” Picking instruction for a specific customer could be “Pick blue-handled paint brushes only.”
 
-4.  Choose Save to save the picking instructions you’ve entered.
+4 Choose Save to save the picking instructions you’ve entered.
 
-**Chapter 5: Document ID maintenance**
+### Chapter 5: Document ID maintenance
 
->   After you’ve set up a quote, order, fulfillment order, back order, invoice, or return ID in Sales Order Processing, you can revise it as your needs change. You can also delete a document ID if you no longer need it.
+After you’ve set up a quote, order, fulfillment order, back order, invoice, or return ID in Sales Order Processing, you can revise it as your needs change. You can also delete a document ID if you no longer need it.
 
->   The information is divided into the following sections:
+The information is divided into the following sections:
 
--   *Modifying a sales document ID*
+- *Modifying a sales document ID*
 
--   *Deleting a sales document ID*
+- *Deleting a sales document ID*
 
--   *Removing process holds assigned to a sales document ID*
+- *Removing process holds assigned to a sales document ID*
 
 #### Modifying a sales document ID
 
->   You can change most existing document ID settings at any time. The changes will affect future transactions that use the document ID but won’t change the information in existing transactions.
+You can change most existing document ID settings at any time. The changes will affect future transactions that use the document ID but won’t change the information in existing transactions.
 
->   The following table lists the settings that can’t be changed if there are unposted documents for a document ID. These settings will be dimmed until you transfer, post, void, or delete the documents.
+The following table lists the settings that can’t be changed if there are unposted documents for a document ID. These settings will be dimmed until you transfer, post, void, or delete the documents.
 
 | **Document type** | **Settings**                |
 |-------------------|-----------------------------|
@@ -1166,7 +1167,7 @@ Setup window to activate workflow for sales. Use the Sales Fulfillment Document 
 | Order             | Allow Repeating Documents   |
 | Invoice           | Allocate By                 |
 | Fulfillment Order | Enable Fulfillment Workflow |
-
+<!-- Something wrong here-->
 >   Allow Repeating Documents
 
 >   Allocate By
@@ -1175,17 +1176,17 @@ Setup window to activate workflow for sales. Use the Sales Fulfillment Document 
 
 >   Use Separate Fulfillment Process
 
->   **To modify a sales document ID:**
+**To modify a sales document ID:**
 
-1.  Open the setup window for the document type.
+1. Open the setup window for the document type.
 
->   (Sales\>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Fulfillment Order/Invoice, or Return option)
+    (Sales\>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Fulfillment Order/Invoice, or Return option)
 
-![](media/75e4701f7df192df062c792caa2f1011.jpg)
+    ![](media/75e4701f7df192df062c792caa2f1011.jpg)
 
-2.  Select the document ID you want to modify and make changes as needed.
+2. Select the document ID you want to modify and make changes as needed.
 
-3.  Choose Save. The changes will affect new documents that use this document ID.
+3. Choose Save. The changes will affect new documents that use this document ID.
 
 #### Deleting a sales document ID
 
@@ -1193,73 +1194,73 @@ A document ID can be deleted if there are no unposted documents that use the doc
 
 **To delete a sales document ID:**
 
-1.  Open the setup window for the document type.
+1. Open the setup window for the document type.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Fulfillment Order/Invoice, or Return option)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Fulfillment Order/Invoice, or Return option)
 
-2.  Select the document ID you want to delete.
+2. Select the document ID you want to delete.
 
-3.  Choose Delete.
+3. Choose Delete.
 
 #### Removing process holds assigned to a sales document ID
 
 Use the Sales Process Holds Assignments window to remove process holds assigned to specific document IDs. Process holds are user-defined restrictions that control the processing of sales documents at different stages of the sales cycle. Removing a process hold will affect future transactions that use the document ID but won’t change holds on existing transactions.
 
-For information about setting up process holds, see *Setting up process holds* on page 22. For more information about removing a process hold from an individual document, see *Removing process holds from a document* on page 197*.*
+For information about setting up process holds, see *Setting up process holds* on page 22. For more information about removing a process hold from an individual document, see *Removing process holds from a document* on page 197*.
 
 **To remove process holds assigned to a sales document ID:**
 
-1.  Open the Sales Process Holds Assignment window.
+1. Open the Sales Process Holds Assignment window.
 
->   (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Fulfillment Order/Invoice, or Return option \>\> Holds button)
+    (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Fulfillment Order/Invoice, or Return option \>\> Holds button)
 
-![](media/1fee0b6dccaafa77bac4ce2c1bf8b7bc.jpg)
+    ![](media/1fee0b6dccaafa77bac4ce2c1bf8b7bc.jpg)
 
-2.  Select a process hold from the Selected Process Holds list and choose Remove.
+2. Select a process hold from the Selected Process Holds list and choose Remove.
 
->   Choose Remove All if you want to remove all the process holds assigned to the document ID.
+    Choose Remove All if you want to remove all the process holds assigned to the document ID.
 
-3.  Continue this process to remove additional process holds.
+3. Continue this process to remove additional process holds.
 
-4.  Choose OK to save your changes.
+4. Choose OK to save your changes.
 
->   **Chapter 6: Customer item and substitute item maintenance**
+### Chapter 6: Customer item and substitute item maintenance
 
->   You can set up customer item numbers and substitute item numbers and delete them when they’ve expired. You can set up substitute item numbers for customers only when you’re using sales fulfillment workflow.
+You can set up customer item numbers and substitute item numbers and delete them when they’ve expired. You can set up substitute item numbers for customers only when you’re using sales fulfillment workflow.
 
->   The information is divided into the following sections:
+The information is divided into the following sections:
 
--   *Setting up customer item numbers and substitute item numbers*
+- *Setting up customer item numbers and substitute item numbers*
 
--   *Removing customer/item substitute items*
+- *Removing customer/item substitute items*
 
 #### Setting up customer item numbers and substitute item numbers
 
->   Use the Customer Item Maintenance window to set up customer item numbers, substitute item numbers for customers, and user-defined information.
+Use the Customer Item Maintenance window to set up customer item numbers, substitute item numbers for customers, and user-defined information.
 
->   Some customers use different names for items than your company uses. The name that the customer uses is a customer item. You can set up customer item numbers to make entering orders easier. For example, suppose the customer calls an item a USB/PS2 Connector, but the item in your inventory is a PS2/USB Connector. Enter USB/PS2 Connector here. When you enter an order for the customer and type USB/ PS2 Connector in the Item Number field, the appropriate inventory item number will be displayed in place of the customer item number.
+Some customers use different names for items than your company uses. The name that the customer uses is a customer item. You can set up customer item numbers to make entering orders easier. For example, suppose the customer calls an item a USB/PS2 Connector, but the item in your inventory is a PS2/USB Connector. Enter USB/PS2 Connector here. When you enter an order for the customer and type USB/ PS2 Connector in the Item Number field, the appropriate inventory item number will be displayed in place of the customer item number.
 
->   You also can use this window to set up substitute item numbers to sell an item in place of another item. For example, suppose a specific keyboard is on sale, but your inventory is sold out before the sale is over. You can substitute another keyboard rather than back ordering the keyboard that is on sale.
+You also can use this window to set up substitute item numbers to sell an item in place of another item. For example, suppose a specific keyboard is on sale, but your inventory is sold out before the sale is over. You can substitute another keyboard rather than back ordering the keyboard that is on sale.
 
->   **To set up customer item numbers and substitute item numbers:**
+**To set up customer item numbers and substitute item numbers:**
 
-1.  Open the Customer Item Maintenance window. (Sales \>\> Cards \>\> Customer Items)
+1. Open the Customer Item Maintenance window. (Sales \>\> Cards \>\> Customer Items)
 
-![](media/b6d6331c95adf8551bb89a677ce868c2.jpg)
+    ![](media/b6d6331c95adf8551bb89a677ce868c2.jpg)
 
-2.  Enter or select a customer and an item number.
+2. Enter or select a customer and an item number.
 
-3.  Enter the item name that the customer uses. When you create a sales order and enter the customer item, the inventory item number will be displayed.
+3. Enter the item name that the customer uses. When you create a sales order and enter the customer item, the inventory item number will be displayed.
 
-4.  You can enter a customer item description, short name, and generic name.
+4. You can enter a customer item description, short name, and generic name.
 
-5.  You can enter additional information in the text fields.
+5. You can enter additional information in the text fields.
 
-6.  To assign a substitute item, you can enter or select an item to substitute for the item displayed in the Item Number field.
+6. To assign a substitute item, you can enter or select an item to substitute for the item displayed in the Item Number field.
 
-7.  You can enter a date range for when the substitute item is effective. This date also can be used to remove customer/item substitute records in the Remove Customer/Item Substitutes window.
+7. You can enter a date range for when the substitute item is effective. This date also can be used to remove customer/item substitute records in the Remove Customer/Item Substitutes window.
 
-8.  Choose Save.
+8. Choose Save.
 
 #### Removing customer/item substitute items
 
@@ -1267,111 +1268,112 @@ Use the Remove Customer/Item Substitutes window to remove customer/item substitu
 
 **To remove customer/item substitute items:**
 
-1.  Open the Remove Customer/Item Substitutes window. (Sales \>\> Utilities \>\> Remove Substitute Items)
+1. Open the Remove Customer/Item Substitutes window. (Sales \>\> Utilities \>\> Remove Substitute Items)
 
-![](media/1f4d77141c5f9d11fe1e1c1db7f6815d.jpg)
+    ![](media/1f4d77141c5f9d11fe1e1c1db7f6815d.jpg)
 
-2.  Enter the date to remove customer/item substitute records that expired on or earlier than the date.
+2. Enter the date to remove customer/item substitute records that expired on or earlier than the date.
 
-3.  Choose Process. The Customer/Item Substitutes Removed report will be printed.
+3. Choose Process. The Customer/Item Substitutes Removed report will be printed.
 
-**Part 2: Transaction entry**
+## Part 2: Transaction entry
 
->   This part of the documentation explains how to enter sales documents and sales batches. The data entry windows were designed to resemble actual sales documents, with customer, line item, tax, and total information. The following topics are discussed:
+This part of the documentation explains how to enter sales documents and sales batches. The data entry windows were designed to resemble actual sales documents, with customer, line item, tax, and total information. The following topics are discussed:
 
--   *Chapter 7, “Item information,”* describes item tracking and pricing related to Sales Order Processing.
+- *Chapter 7, “Item information,”* describes item tracking and pricing related to Sales Order Processing.
 
--   *Chapter 8, “Multicurrency transactions,”* explains the multicurrency features in Sales Order Processing.
+- *Chapter 8, “Multicurrency transactions,”* explains the multicurrency features in Sales Order Processing.
 
--   *Chapter 9, “Batches,”* explains how to use batches to group sales documents for transferring or posting.
+- *Chapter 9, “Batches,”* explains how to use batches to group sales documents for transferring or posting.
 
--   *Chapter 10, “Quotes,”* explains how to enter quotes—including repeating quotes.
+- *Chapter 10, “Quotes,”* explains how to enter quotes—including repeating quotes.
 
--   *Chapter 11, “Orders,”* explains how to enter orders—including repeating orders.
+- *Chapter 11, “Orders,”* explains how to enter orders—including repeating orders.
 
--   *Chapter 12, “Fulfillment orders and invoices,”* explains how to enter fulfillment orders,
+- *Chapter 12, “Fulfillment orders and invoices,”* explains how to enter fulfillment orders,
 
--   *Chapter 13, “Invoices,”* explains how to enter invoices.
+- *Chapter 13, “Invoices,”* explains how to enter invoices.
 
--   *Chapter 14, “Back orders,”* explains how to enter back orders.
+- *Chapter 14, “Back orders,”* explains how to enter back orders.
 
--   *Chapter 15, “Returns,”* explains how to enter returns and how to use return quantity types.
+- *Chapter 15, “Returns,”* explains how to enter returns and how to use return quantity types.
 
--   *Chapter 16, “Transaction detail entry,”* describes how to enter detailed information about a document, customer, line item, or other element of a transaction.
+- *Chapter 16, “Transaction detail entry,”* describes how to enter detailed information about a document, customer, line item, or other element of a transaction.
 
--   *Chapter 17, “Payments and deposits,”* contains information on entering payments or deposits received for a document.
+- *Chapter 17, “Payments and deposits,”* contains information on entering payments or deposits received for a document.
 
--   *Chapter 18, “Sales Order Processing taxes,”* explains how sales tax is calculated, modified, and distributed in Sales Order Processing.
+- Chapter 18, “Sales Order Processing taxes,”* explains how sales tax is calculated, modified, and distributed in Sales Order Processing.
 
-**Chapter 7: Item information**
+### Chapter 7: Item information
 
->   Use this information to learn more about handling items in Sales Order Processing. This information is divided into the following sections:
+Use this information to learn more about handling items in Sales Order Processing. This information is divided into the following sections:
 
--   *Drop-ship transactions*
+- *Drop-ship transactions*
 
--   *Standard pricing calculations*
+- *Standard pricing calculations*
 
--   *Extended pricing calculations*
+- *Extended pricing calculations*
 
--   *Unit cost*
+- *Unit cost*
 
--   *Multiple bins overview*
+- *Multiple bins overview*
 
--   *Non-inventoried items*
+- *Non-inventoried items*
 
--   *Adding items*
+- *Adding items*
 
--   *Serial- or lot-numbered items*
+- *Serial- or lot-numbered items*
 
--   *Kit items*
+- *Kit items*
 
--   *Assigning instruction IDs to customer and item records*
+- *Assigning instruction IDs to customer and item records*
 
--   *Available to promise overview*
+- *Available to promise overview*
 
 #### Drop-ship transactions
 
->   Drop-ship transactions are for items that are shipped from your vendor directly to the customer. The item isn’t received into or sold from your inventory.
+Drop-ship transactions are for items that are shipped from your vendor directly to the customer. The item isn’t received into or sold from your inventory.
 
->   To mark all line items on a sales document as drop-ship, choose Options \>\> Drop Ship Item in the Sales Transaction Entry window before entering items. When this option is marked, items on the sales document will be marked as drop-ship as they are entered.
+- To mark all line items on a sales document as drop-ship, choose Options \>\> Drop Ship Item in the Sales Transaction Entry window before entering items. When this option is marked, items on the sales document will be marked as drop-ship as they are entered.
 
->   To mark an individual line item as drop-ship, mark the drop-ship box next to the item number in the Sales Transaction Entry window or the Sales Item Detail Entry window. Kit items can’t be drop-shipped.
+- To mark an individual line item as drop-ship, mark the drop-ship box next to the item number in the Sales Transaction Entry window or the Sales Item Detail Entry window. Kit items can’t be drop-shipped.
 
->   *To change the shipping address for a single line item, choose the Ship to Address ID lookup button in the Sales Transaction Entry window or the Sales Item Detail Entry window and select a new ship-to address ID. The changes will apply only to the selected line item. If you enter a new line item, the ship-to address ID will come from the previously entered item.*
+> [!NOTE]
+> To change the shipping address for a single line item, choose the Ship to Address ID lookup button in the Sales Transaction Entry window or the Sales Item Detail Entry window and select a new ship-to address ID. The changes will apply only to the selected line item. If you enter a new line item, the ship-to address ID will come from the previously entered item.
 
->   You can’t enter a return in Sales Order Processing for a drop-ship item. If a customer returns an item, enter a credit memo in Receivables Management to reduce the customer balance and a credit memo in Payables Management to reduce the balance you owe the vendor.
+You can’t enter a return in Sales Order Processing for a drop-ship item. If a customer returns an item, enter a credit memo in Receivables Management to reduce the customer balance and a credit memo in Payables Management to reduce the balance you owe the vendor.
 
->   You can create a purchase order in Purchase Order Processing automatically for drop-ship items on an order or back order. There are options in the Sales Order Processing Setup window for combining items on a drop ship order based on the ship-to address. For more information about creating a purchase order, see *Chapter 21, “New purchase orders.”* For more information about drop ship setup options, see *Chapter 2, “Module setup.”*
+You can create a purchase order in Purchase Order Processing automatically for drop-ship items on an order or back order. There are options in the Sales Order Processing Setup window for combining items on a drop ship order based on the ship-to address. For more information about creating a purchase order, see *Chapter 21, “New purchase orders.”* For more information about drop ship setup options, see *Chapter 2, “Module setup.”*
 
 #### Standard pricing calculations
 
->   If you’re using standard pricing and entering an inventoried item in the Sales Transaction Entry window, the unit price*—*the price at which each item is being sold—will be calculated using the information entered for the item in the Item Price List Maintenance window.
+If you’re using standard pricing and entering an inventoried item in the Sales Transaction Entry window, the unit price*—*the price at which each item is being sold—will be calculated using the information entered for the item in the Item Price List Maintenance window.
 
->   The price for an item is determined by price levels. The system will first check the price level selected on the customer card. If a price level hasn’t been assigned to the customer, the price level from the Receivables Management Setup window is used. If there isn’t a price level set up for the customer or for Receivables Management, the default price level for the item is used.
+The price for an item is determined by price levels. The system will first check the price level selected on the customer card. If a price level hasn’t been assigned to the customer, the price level from the Receivables Management Setup window is used. If there isn’t a price level set up for the customer or for Receivables Management, the default price level for the item is used.
 
->   When you enter an item, the price from the item price list is determined by the price level and the unit of measure selected on the sales document for the item. If a price hasn’t been set up for the price level, the default price level for the item will be used to determine the price. You can view the price level used for the item in the Sales Item Detail Entry window.
+When you enter an item, the price from the item price list is determined by the price level and the unit of measure selected on the sales document for the item. If a price hasn’t been set up for the price level, the default price level for the item will be used to determine the price. You can view the price level used for the item in the Sales Item Detail Entry window.
 
->   Depending on how Sales Order Processing is set up, you may be able to change the unit price on the document or enter a unit price that is below cost. For more information, see *Chapter 2, “Module setup.”*
+Depending on how Sales Order Processing is set up, you may be able to change the unit price on the document or enter a unit price that is below cost. For more information, see *Chapter 2, “Module setup.”*
 
->   For information on selecting and activating a pricing method, see *Selecting a pricing method* on page 23 and *Enabling extended pricing* on page 24. You can also find more information in the Inventory Control documentation.
+For information on selecting and activating a pricing method, see *Selecting a pricing method* on page 23 and *Enabling extended pricing* on page 24. You can also find more information in the Inventory Control documentation.
 
 #### Extended pricing calculations
 
->   If you are using extended pricing, when you create an order or other sales transaction for a customer, the following process is used to select the price for each item on the transaction. First, the system searches for item-specific pricing information, beginning in price sheets assigned directly to the customer (which must be active and include the current date), followed by price sheets in the price book assigned to the customer, and then the base price book.
+If you are using extended pricing, when you create an order or other sales transaction for a customer, the following process is used to select the price for each item on the transaction. First, the system searches for item-specific pricing information, beginning in price sheets assigned directly to the customer (which must be active and include the current date), followed by price sheets in the price book assigned to the customer, and then the base price book.
 
->   If no item-specific pricing is found, the system searches for a price group that includes the item, beginning in price sheets assigned directly to the customer, followed by price sheets in the customer’s price book, and finally the base price book.
+If no item-specific pricing is found, the system searches for a price group that includes the item, beginning in price sheets assigned directly to the customer, followed by price sheets in the customer’s price book, and finally the base price book.
 
->   If an adjusted value-off or percent-of-list price is found, the rest of the pricing structure is searched for a list price to apply the discount to. For example, if there’s a value-off price in a price sheet assigned to the customer, the customer’s price book and the base price book are searched for a list price.
+If an adjusted value-off or percent-of-list price is found, the rest of the pricing structure is searched for a list price to apply the discount to. For example, if there’s a value-off price in a price sheet assigned to the customer, the customer’s price book and the base price book are searched for a list price.
 
->   It is possible for the final price to be the result of two adjustments applied to the base price. For example, a customer sheet might give 2% off the customer price book price, which is itself 5% off the base price. If multiple promotions are applied, they are applied in the order they are discovered: first the promotions from the first step of the search, then from the second step, and so on.
+It is possible for the final price to be the result of two adjustments applied to the base price. For example, a customer sheet might give 2% off the customer price book price, which is itself 5% off the base price. If multiple promotions are applied, they are applied in the order they are discovered: first the promotions from the first step of the search, then from the second step, and so on.
 
->   For information on selecting and activating a pricing method, see *Selecting a pricing method* on page 23 and *Enabling extended pricing* on page 24. For more information on setting up and using extended pricing, see the Inventory Control documentation.
+For information on selecting and activating a pricing method, see *Selecting a pricing method* on page 23 and *Enabling extended pricing* on page 24. For more information on setting up and using extended pricing, see the Inventory Control documentation.
 
 #### Unit cost
 
->   If Sales Order Processing was set up to display unit costs, the unit cost will be displayed in the Sales Transaction Entry window for each sales inventory type item. The unit cost will not be displayed for items that are assigned the type of service, flat fee, or miscellaneous charge.
+If Sales Order Processing was set up to display unit costs, the unit cost will be displayed in the Sales Transaction Entry window for each sales inventory type item. The unit cost will not be displayed for items that are assigned the type of service, flat fee, or miscellaneous charge.
 
->   The unit cost is the current cost or the standard cost of the item, depending on the inventory valuation method. The following table shows the default cost that appears as the Unit Cost for each valuation method.
+The unit cost is the current cost or the standard cost of the item, depending on the inventory valuation method. The following table shows the default cost that appears as the Unit Cost for each valuation method.
 
 | **Valuation method** | **Unit cost displayed** |
 |----------------------|-------------------------|
@@ -1381,7 +1383,7 @@ Use the Remove Customer/Item Substitutes window to remove customer/item substitu
 | FIFO periodic        | Standard cost           |
 | LIFO periodic        | Standard cost           |
 
->   The cost displayed might not be the cost used to adjust inventory and cost of goods sold when the document is posted; this will depend on the valuation method used.
+The cost displayed might not be the cost used to adjust inventory and cost of goods sold when the document is posted; this will depend on the valuation method used.
 
 | **Valuation method** | **Unit cost used in posting**         |
 |----------------------|---------------------------------------|
@@ -1391,76 +1393,78 @@ Use the Remove Customer/Item Substitutes window to remove customer/item substitu
 | FIFO periodic        | Standard cost                         |
 | LIFO periodic        | Standard cost                         |
 
->   For the Average Perpetual valuation method, the current cost represents the average cost of the item and is updated whenever the item quantity is increased.
+For the Average Perpetual valuation method, the current cost represents the average cost of the item and is updated whenever the item quantity is increased.
 
->   If you enter a return, the default entry for the unit cost of a line item is the current cost for the item from the Item Maintenance window. If returns are set up to allow overriding item cost, you can change the unit cost of the item, which is the cost used to return the item to inventory.
+If you enter a return, the default entry for the unit cost of a line item is the current cost for the item from the Item Maintenance window. If returns are set up to allow overriding item cost, you can change the unit cost of the item, which is the cost used to return the item to inventory.
 
 #### Multiple bins overview
 
->   Use multiple bins to add another level of detail to item quantity tracking. Besides tracking items within inventory sites, with multiple bins you can track item quantities in bins at each site. Bin quantities are processed and displayed in the item’s base unit of measure.
+Use multiple bins to add another level of detail to item quantity tracking. Besides tracking items within inventory sites, with multiple bins you can track item quantities in bins at each site. Bin quantities are processed and displayed in the item’s base unit of measure.
 
->   *You can set up bin information when multiple bins functionality has been installed and registered. However, you must also enable this feature in Inventory Control before you can use bins to track items. For more information on enabling multiple bins, see the Inventory Control documentation.*
+> [!NOTE]
+> You can set up bin information when multiple bins functionality has been installed and registered. However, you must also enable this feature in Inventory Control before you can use bins to track items. For more information on enabling multiple bins, see the Inventory Control documentation.
 
->   Default bins for transaction types at each site can be identified for use in transactions. For example, a default bin could be created for sales order transactions at your warehouse site. Default bins can also be identified for a particular item and transaction type at a site. For example, if you always use Bin A when selling a certain item from your main site, you can set up Bin A as the default sales order bin for the item at the main site. Microsoft Dynamics GP automatically creates item-sitebin relationships the first time a bin is used for a transaction.
+Default bins for transaction types at each site can be identified for use in transactions. For example, a default bin could be created for sales order transactions at your warehouse site. Default bins can also be identified for a particular item and transaction type at a site. For example, if you always use Bin A when selling a certain item from your main site, you can set up Bin A as the default sales order bin for the item at the main site. Microsoft Dynamics GP automatically creates item-sitebin relationships the first time a bin is used for a transaction.
 
->   When you enter a transaction, the default bin for the transaction type at the itemsite or the site is used automatically. If there isn’t a default bin at the item-site or at the site, you will be required to enter a bin. If the site’s default bin is used, an itemsite-bin record is created automatically. If you delete the line or document after the item-site-bin record is automatically created, that item-site-bin relationship is not deleted.
+When you enter a transaction, the default bin for the transaction type at the itemsite or the site is used automatically. If there isn’t a default bin at the item-site or at the site, you will be required to enter a bin. If the site’s default bin is used, an item-site-bin record is created automatically. If you delete the line or document after the item-site-bin record is automatically created, that item-site-bin relationship is not deleted.
 
->   If serial or lot numbers are assigned to an item on a transaction, the bins for the selected serial or lot numbers will be assigned to the transaction automatically.
+If serial or lot numbers are assigned to an item on a transaction, the bins for the selected serial or lot numbers will be assigned to the transaction automatically.
 
->   For more information on setting up and using multiple bins, see the Inventory Control documentation.
+For more information on setting up and using multiple bins, see the Inventory Control documentation.
 
 #### Non-inventoried items
 
->   You can set up Sales Order Processing to allow entering items that don’t exist in your inventory records.
+You can set up Sales Order Processing to allow entering items that don’t exist in your inventory records.
 
->   When you enter a non-inventoried item you must enter the item description, unit price, and unit cost. The item won’t be tracked in inventory, but it will appear on Sales Order Processing analysis and history reports.
+When you enter a non-inventoried item you must enter the item description, unit price, and unit cost. The item won’t be tracked in inventory, but it will appear on Sales Order Processing analysis and history reports.
 
->   The following default accounts are used for non-inventoried items.
+The following default accounts are used for non-inventoried items.
 
-| **Account**                               | **Source**                                                                                                                                           |
-|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Inventory                                 | The account assigned to non-inventoried items for the Sales series in the Posting Account Setup window.                                              |
-| Returned, In Use, In Service, and Damaged | The account assigned to non-inventoried items for the Sales series in the Posting Account Setup window.                                              |
-| Cost of Goods Sold                        | The account assigned to the customer, if you are using posting accounts from the customer.                                                           |
-| Sales                                     | The account assigned to the customer, if you are using posting accounts from the customer.                                                           |
+| **Account**                               | **Source**    |
+|-------------------------------------------|---------------|
+| Inventory                                 | The account assigned to non-inventoried items for the Sales series in the Posting Account Setup window.|
+| Returned, In Use, In Service, and Damaged | The account assigned to non-inventoried items for the Sales series in the Posting Account Setup window. |
+| Cost of Goods Sold                        | The account assigned to the customer, if you are using posting accounts from the customer.   |
+| Sales                                     | The account assigned to the customer, if you are using posting accounts from the customer.  |
 | Accounts Receivable                       | The customer card. If no account is assigned to the customer, the system uses the account from the Sales series in the Posting Account Setup window. |
-| Markdown                                  | The Inventory series in the Posting Account Setup window.                                                                                            |
+| Markdown                                  | The Inventory series in the Posting Account Setup window.   |
 
->   The account from the Inventory series in the Posting Account Setup window, if you are not using posting accounts from the customer.
+The account from the Inventory series in the Posting Account Setup window, if you are not using posting accounts from the customer.
 
->   The account from the Inventory series in the Posting Account Setup window, if you are not using posting accounts from the customer.
+The account from the Inventory series in the Posting Account Setup window, if you are not using posting accounts from the customer.
 
 #### Adding items
 
->   If you enter an item number that doesn’t exist in inventory, you can select Options \>\> Add Item in the Sales Transaction Entry window to be prompted to either add the item to your inventory or to choose a different item. Selecting Add Item can help prevent data entry errors that inadvertently create non-inventoried items. You will be able to use this option only if Sales Order Processing is set up to allow entering non-inventoried items.
+If you enter an item number that doesn’t exist in inventory, you can select Options \>\> Add Item in the Sales Transaction Entry window to be prompted to either add the item to your inventory or to choose a different item. Selecting Add Item can help prevent data entry errors that inadvertently create non-inventoried items. You will be able to use this option only if Sales Order Processing is set up to allow entering non-inventoried items.
 
->   If you select Add Item and you enter an item that isn’t in your inventory, a message will be displayed and you’ll have the option to add the item. If you choose Add in the message window, the Item Maintenance window will open and you can enter the item information. Choose Cancel in the message window to delete the item number and enter a different one.
+If you select Add Item and you enter an item that isn’t in your inventory, a message will be displayed and you’ll have the option to add the item. If you choose Add in the message window, the Item Maintenance window will open and you can enter the item information. Choose Cancel in the message window to delete the item number and enter a different one.
 
->   Add Item will remain marked as long as the Sales Transaction Entry window is open. If you close the window and open it again, you must select Add Item again.
+Add Item will remain marked as long as the Sales Transaction Entry window is open. If you close the window and open it again, you must select Add Item again.
 
 #### Serial- or lot-numbered items
 
->   If an item is tracked by serial or lot numbers, you must identify the specific item or items being sold, and you must assign the serial or lot number before you ship the item.
+If an item is tracked by serial or lot numbers, you must identify the specific item or items being sold, and you must assign the serial or lot number before you ship the item.
 
->   Serial and lot numbers may be automatically assigned to items, depending on how Sales Order Processing is configured. The serial or lot number will be assigned according to the item’s valuation method.
+Serial and lot numbers may be automatically assigned to items, depending on how Sales Order Processing is configured. The serial or lot number will be assigned according to the item’s valuation method.
 
->   If Sales Order Processing is not set up to automatically assign serial and lot numbers to items, you can enter or select a serial or lot number. When the item is fulfilled, the Sales Serial Number Entry window or the Sales Lot Number Entry window will open and you can assign the serial or lot number to the item. If your system is set up to automatically assign lot numbers, a message won’t be displayed if the expiration date for the lot number has expired.
+If Sales Order Processing is not set up to automatically assign serial and lot numbers to items, you can enter or select a serial or lot number. When the item is fulfilled, the Sales Serial Number Entry window or the Sales Lot Number Entry window will open and you can assign the serial or lot number to the item. If your system is set up to automatically assign lot numbers, a message won’t be displayed if the expiration date for the lot number has expired.
 
->   If you’re using multiple bins and serial or lot numbers are assigned to an item on a transaction, the bins for the selected serial or lot numbers will be assigned to the transaction automatically.
+If you’re using multiple bins and serial or lot numbers are assigned to an item on a transaction, the bins for the selected serial or lot numbers will be assigned to the transaction automatically.
 
->   If you add a serial- or lot-numbered item to a return document, the Sales Serial Number Entry or Sales Lot Number Entry window will open and you can enter the serial or lot number for the item.
+If you add a serial- or lot-numbered item to a return document, the Sales Serial Number Entry or Sales Lot Number Entry window will open and you can enter the serial or lot number for the item.
 
->   *Don’t override shortages on serial- and lot-numbered items. Your inventory will be overstated when the quantity is replenished.*
+> [!NOTE]
+> Don’t override shortages on serial- and lot-numbered items. Your inventory will be overstated when the quantity is replenished.
 
->   You can view or change the serial or lot numbers that are assigned to an item. For more information, see *Changing a serial or lot number* on page 191. You can also view or change the bins that are assigned to an item. For more information, see *Changing bins in Sales Order Processing* on page 192.
+You can view or change the serial or lot numbers that are assigned to an item. For more information, see *Changing a serial or lot number* on page 191. You can also view or change the bins that are assigned to an item. For more information, see *Changing bins in Sales Order Processing* on page 192.
 
 #### Kit items
 
->   Kit items aren’t tracked in inventory; their components are. If you’re using multiple bins, a kit’s component items are assigned to bins, but the kit item itself is not. When a kit is allocated, the quantity available in inventory for each component item is checked for shortages.
+Kit items aren’t tracked in inventory; their components are. If you’re using multiple bins, a kit’s component items are assigned to bins, but the kit item itself is not. When a kit is allocated, the quantity available in inventory for each component item is checked for shortages.
 
->   Kits are treated differently from other items in Sales Order Processing. You can’t partially transfer kits from one document to another. For example, if you add a kit item to an order, you must transfer the entire quantity for the kit item to either an invoice or a back order. Also, you can’t drop-ship a kit item.
+Kits are treated differently from other items in Sales Order Processing. You can’t partially transfer kits from one document to another. For example, if you add a kit item to an order, you must transfer the entire quantity for the kit item to either an invoice or a back order. Also, you can’t drop-ship a kit item.
 
->   The distribution accounts for kits come from several different sources and are summarized in the following table.
+The distribution accounts for kits come from several different sources and are summarized in the following table.
 
 | **Account type**         | **Posting account from**                                      |
 |--------------------------|---------------------------------------------------------------|
@@ -1469,168 +1473,170 @@ Use the Remove Customer/Item Substitutes window to remove customer/item substitu
 | Commission expense       | Posting Account Setup for Sales                               |
 | Commission payable       | Posting Account Setup for Sales                               |
 | Inventory                | Kit component or customer, depending on Sales Order Processing setup          |
-| Return types (In Use, In Service, Damaged, and  Returned) | Kit component or customer, depending on Sales Order Processing setup          |
+| Return types (In Use, In Service, Damaged, and  Returned) | Kit component or customer, depending on Sales Order Processing setup|
 | Cost of goods sold       | Kit component, kit item or customer, depending on Sales Order Processing setup |
 
 #### Assigning instruction IDs to customer and item records
 
->   If you’re using advanced picking, use the Instruction ID Processing window to select the customer/address/item combination or the customer/item combination to assign an instruction ID to.
+If you’re using advanced picking, use the Instruction ID Processing window to select the customer/address/item combination or the customer/item combination to assign an instruction ID to.
 
->   Use the Picking Instruction Preview window to assign the instruction ID to the records that match the selected combinations. For more information about instruction IDs, refer to *Setting up picking instruction IDs* on page 47.
+Use the Picking Instruction Preview window to assign the instruction ID to the records that match the selected combinations. For more information about instruction IDs, refer to *Setting up picking instruction IDs* on page 47.
 
->   **To assign instruction IDs to customer and item records:**
+**To assign instruction IDs to customer and item records:**
 
-1.  Open the Instruction ID Processing window.
+1. Open the Instruction ID Processing window.
 
->   (Sales \>\> Cards \>\> Process Instructions)
+    (Sales \>\> Cards \>\> Process Instructions)
 
-![](media/7d1080c975330ec3d94d191f255b1794.jpg)
+    ![](media/7d1080c975330ec3d94d191f255b1794.jpg)
 
-2.  Enter or select an instruction ID.
+2. Enter or select an instruction ID.
 
-3.  To assign the instruction ID to a customer record or an item record, select Assign. To remove the instruction ID from a customer record or an item record, select Remove.
+3. To assign the instruction ID to a customer record or an item record, select Assign. To remove the instruction ID from a customer record or an item record, select Remove.
 
-4.  Enter or select a customer ID or range of customer IDs.
+4. Enter or select a customer ID or range of customer IDs.
 
-5.  You can enter or select additional options to display records for, such as customer addresses, item numbers, item class IDs, and generic descriptions of items.
+5. You can enter or select additional options to display records for, such as customer addresses, item numbers, item class IDs, and generic descriptions of items.
 
->   For example, suppose you have 40 different types of paint brushes in inventory and some of the paint brushes have a generic description of Watercolor Brush. To assign a specific instruction ID to all brushes that have a generic description of Watercolor Brush, select From in the Generic Description field and enter or select Watercolor Brush in the From and To fields.
+    For example, suppose you have 40 different types of paint brushes in inventory and some of the paint brushes have a generic description of Watercolor Brush. To assign a specific instruction ID to all brushes that have a generic description of Watercolor Brush, select From in the Generic Description field and enter or select Watercolor Brush in the From and To fields.
 
-6.  Choose Preview to open the Picking Instruction Preview window and view the records that match your restrictions.
+6. Choose Preview to open the Picking Instruction Preview window and view the records that match your restrictions.
 
-![](media/1117868c10853ed05843caa10af980a3.jpg)
+    ![](media/1117868c10853ed05843caa10af980a3.jpg)
 
->   Unmark records that shouldn’t be assigned to the instruction ID or choose Unmark All.
+    Unmark records that shouldn’t be assigned to the instruction ID or choose Unmark All.
 
-7.  Choose Process to assign the selected instruction ID to the marked item records.
+7. Choose Process to assign the selected instruction ID to the marked item records.
 
-8.  Close the window.
+8. Close the window.
 
 #### Available to promise overview
 
->   Available to promise (ATP) means that an item is in stock and can be promised to a customer. You can see how much inventory or projected inventory is not committed to customer orders and is available. ATP is calculated for an item from the latest document date to the earliest document date for all supply orders, including sales orders, sales fulfillment orders/invoices, purchase orders, inventory transactions, inventory adjustments, inventory transfers, assembly transactions, and manufacturing orders.
+Available to promise (ATP) means that an item is in stock and can be promised to a customer. You can see how much inventory or projected inventory is not committed to customer orders and is available. ATP is calculated for an item from the latest document date to the earliest document date for all supply orders, including sales orders, sales fulfillment orders/invoices, purchase orders, inventory transactions, inventory adjustments, inventory transfers, assembly transactions, and manufacturing orders.
 
->   To determine the item quantities available to promise, you must consider both the actual demand of the item and meeting that demand as efficiently as possible.
+To determine the item quantities available to promise, you must consider both the actual demand of the item and meeting that demand as efficiently as possible.
 
->   For example, if an order is entered for February 15, 2006, it would be most efficient to fulfill that commitment from supply expected to be replenished as near to February 15, 2006 as possible.
+For example, if an order is entered for February 15, 2006, it would be most efficient to fulfill that commitment from supply expected to be replenished as near to February 15, 2006 as possible.
 
->   By knowing how much of each product you have on hand and how much is committed to customer orders, you can better control your inventory. You also can give customers a firm promise of when a product is deliverable by viewing existing commitments and eliminating the risk of overselling a product.
+By knowing how much of each product you have on hand and how much is committed to customer orders, you can better control your inventory. You also can give customers a firm promise of when a product is deliverable by viewing existing commitments and eliminating the risk of overselling a product.
 
->   You can use the Inventory Available to Promise Inquiry window to view available to promise information for an item.
+You can use the Inventory Available to Promise Inquiry window to view available to promise information for an item.
 
-**Chapter 8: Multicurrency transactions**
+### Chapter 8: Multicurrency transactions
 
->   If you’re using Multicurrency Management with Sales Order Processing, you can choose the currency you want to enter on quotes, orders, fulfillment orders, invoices, back orders, and returns.
+If you’re using Multicurrency Management with Sales Order Processing, you can choose the currency you want to enter on quotes, orders, fulfillment orders, invoices, back orders, and returns.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
--   *Viewing multiple currencies for sales transactions*
+- *Viewing multiple currencies for sales transactions*
 
--   *Exchange rate and document date*
+- *Exchange rate and document date*
 
--   *Multicurrency account distributions*
+-  *Multicurrency account distributions*
 
--   *Sales Order Processing amounts*
+- *Sales Order Processing amounts*
 
 #### Viewing multiple currencies for sales transactions
 
->   You can choose whether you want to view multicurrency transactions in the originating or the functional currency. Choose View \>\> Currency \>\> Functional or Originating while entering a quote, order, fulfillment order, invoice, back order, or return. The option will be saved on a per user, per window basis.
+You can choose whether you want to view multicurrency transactions in the originating or the functional currency. Choose View \>\> Currency \>\> Functional or Originating while entering a quote, order, fulfillment order, invoice, back order, or return. The option will be saved on a per user, per window basis.
 
->   The Options menu and Currency list button are available in the Sales Transaction Entry window. You also can use the Currency list button in other windows that support changing the currency view.
+The Options menu and Currency list button are available in the Sales Transaction Entry window. You also can use the Currency list button in other windows that support changing the currency view.
 
->   The first time you open these windows, all the transactions will be displayed in the originating currency. If you change the currency view, the option you last used will be the default view the next time you open that window.
+The first time you open these windows, all the transactions will be displayed in the originating currency. If you change the currency view, the option you last used will be the default view the next time you open that window.
 
 #### Exchange rate and document date
 
->   If a transaction’s currency ID is not in the functional currency, the rate type and associated exchange rate table assigned to the selected customer are assigned to the transaction. If a rate type isn’t assigned to the customer, the default rate type for the Sales series specified in the Multicurrency Setup window is used.
+If a transaction’s currency ID is not in the functional currency, the rate type and associated exchange rate table assigned to the selected customer are assigned to the transaction. If a rate type isn’t assigned to the customer, the default rate type for the Sales series specified in the Multicurrency Setup window is used.
 
->   The document date assigned to a transaction determines which exchange rate is used, based on the currency ID and associated rate type that’s entered for the transaction. Each time you change the document date on a multicurrency transaction, the system searches for a valid exchange rate. If a valid rate doesn’t exist, you can use the currency expansion button to enter an exchange rate using the Exchange Rate Entry window. You also can use the Exchange Rate Entry window to view or modify the default exchange rate. If you’ve entered a General Ledger posting date that’s different from the document date, the exchange rate expiration date must be after the posting date.
+The document date assigned to a transaction determines which exchange rate is used, based on the currency ID and associated rate type that’s entered for the transaction. Each time you change the document date on a multicurrency transaction, the system searches for a valid exchange rate. If a valid rate doesn’t exist, you can use the currency expansion button to enter an exchange rate using the Exchange Rate Entry window. You also can use the Exchange Rate Entry window to view or modify the default exchange rate. If you’ve entered a General Ledger posting date that’s different from the document date, the exchange rate expiration date must be after the posting date.
 
->   *If you choose a currency ID for the transaction that is not your functional currency and have the view set to functional, functional amounts entered might change slightly. This is because the system calculates the originating value of the functional amount and then recalculates the functional equivalent of the originating amount. This is done so that the originating amounts will total correctly.*
+> [!NOTE]
+> If you choose a currency ID for the transaction that is not your functional currency and have the view set to functional, functional amounts entered might change slightly. This is because the system calculates the originating value of the functional amount and then recalculates the functional equivalent of the originating amount. This is done so that the originating amounts will total correctly.
 
 #### Multicurrency account distributions
 
->   For multicurrency transactions, distribution amounts are displayed in both the functional and originating currencies. However, you can change only the originating amounts.
+For multicurrency transactions, distribution amounts are displayed in both the functional and originating currencies. However, you can change only the originating amounts.
 
->   When you’re entering a multicurrency transaction, the originating debit and credit amounts must balance. If the functional equivalents don’t balance, the difference is posted automatically to a Rounding Difference account and a distribution type of Round identifies the distribution amount in the Sales Distribution Entry window.
+When you’re entering a multicurrency transaction, the originating debit and credit amounts must balance. If the functional equivalents don’t balance, the difference is posted automatically to a Rounding Difference account and a distribution type of Round identifies the distribution amount in the Sales Distribution Entry window.
 
->   For example, assume you’ve entered an invoice in the euro currency, with a sale amount of 30,886.59 EUR, a trade discount of 586.84 EUR, a discount available of 1544.33 EUR and the exchange rate is 1.0922. The distributions would be calculated as follows:
+For example, assume you’ve entered an invoice in the euro currency, with a sale amount of 30,886.59 EUR, a trade discount of 586.84 EUR, a discount available of 1544.33 EUR and the exchange rate is 1.0922. The distributions would be calculated as follows:
 
-| **Account**    | **Euro debit** | **Euro credit** | **US dollars debit** | **US dollars credit** |
-|----------------|----------------|-----------------|----------------------|-----------------------|
-| Accounts Receivable      | 28,755.42 EUR  |                 | \$31,406.67          |                       |
-| Trade Discount | 586.84 EUR     |                 | \$640.95             |                       |
-| Discount Available     | 1544.33 EUR    |                 | \$1686.72            |                       |
-| Sales          |                | 30,886.59 EUR   |                      | \$33,734.33           |
-| Totals         | 30,886.59 EUR  | 30,886.59 EUR   | \$33,734.34          | \$33,734.33           |
-| Rounding Difference      |                |                 |                      | \$0.01                |
-| Totals         | 30,886.59 EUR  | 30,886.59 EUR   | \$33,734.34          | \$33,734.34           |
+| **Account**               | **Euro debit** | **Euro credit** | **US dollars debit** | **US dollars credit** |
+|---------------------------|----------------|-----------------|----------------------|-----------------------|
+| Accounts Receivable       | 28,755.42 EUR  |                 | \$31,406.67          |                       |
+| Trade Discount            | 586.84 EUR     |                 | \$640.95             |                       |
+| Discount Available        | 1544.33 EUR    |                 | \$1686.72            |                       |
+| Sales                     |                | 30,886.59 EUR   |                      | \$33,734.33           |
+| Totals                    | 30,886.59 EUR  | 30,886.59 EUR   | \$33,734.34          | \$33,734.33           |
+| Rounding Difference       |                |                 |                      | \$0.01                |
+| Totals                    | 30,886.59 EUR  | 30,886.59 EUR   | \$33,734.34          | \$33,734.34           |
 
 #### Sales Order Processing amounts
 
->   All amounts on a multicurrency Sales Order Processing document are calculated in the originating and functional currencies. If you change an exchange rate, the originating amounts are assumed to be correct and the functional amounts will be recalculated using the new rate. The amounts are calculated as follows:
+All amounts on a multicurrency Sales Order Processing document are calculated in the originating and functional currencies. If you change an exchange rate, the originating amounts are assumed to be correct and the functional amounts will be recalculated using the new rate. The amounts are calculated as follows:
 
->   **Subtotal** The subtotal is calculated automatically by adding the extended prices in the originating currency for items. The subtotal in the originating currency is then converted to the functional amount. Thus, the subtotal in the originating currency will always equal the sum of the extended prices, but the subtotal in the functional currency might not equal the sum of the items’ extended price in the functional currency.
+- **Subtotal** The subtotal is calculated automatically by adding the extended prices in the originating currency for items. The subtotal in the originating currency is then converted to the functional amount. Thus, the subtotal in the originating currency will always equal the sum of the extended prices, but the subtotal in the functional currency might not equal the sum of the items’ extended price in the functional currency.
 
->   **Taxes** Taxes are calculated in the originating currency and then converted into the functional currency. The tax details are updated only in the functional currency.
+- **Taxes** Taxes are calculated in the originating currency and then converted into the functional currency. The tax details are updated only in the functional currency.
 
->   **Amount Received** If you receive a deposit or payment, the amount can be entered in the originating or functional currency. The exchange rate used for the deposit or payment must be the same rate used for the document.
+- **Amount Received** If you receive a deposit or payment, the amount can be entered in the originating or functional currency. The exchange rate used for the deposit or payment must be the same rate used for the document.
 
->   **Commissions** Commissions are calculated using originating amounts, then converted to functional amounts.
+- **Commissions** Commissions are calculated using originating amounts, then converted to functional amounts.
 
->   **Distributions** The distribution accounts must be assigned to the originating currency before the transaction can be posted in General Ledger. You can post the transaction in Sales Order Processing but it won’t be posted in General Ledger until the account is assigned to the currency.
+- **Distributions** The distribution accounts must be assigned to the originating currency before the transaction can be posted in General Ledger. You can post the transaction in Sales Order Processing but it won’t be posted in General Ledger until the account is assigned to the currency.
 
->   **Multidimensional Analysis (MDA)** If a transaction includes analysis information, it is updated only in the functional currency. If the functional amounts are recalculated, the MDA amounts will be recalculated and any changes made to MDA accounts will be lost.
+- **Multidimensional Analysis (MDA)** If a transaction includes analysis information, it is updated only in the functional currency. If the functional amounts are recalculated, the MDA amounts will be recalculated and any changes made to MDA accounts will be lost.
 
->   **Rounding** When converting amounts from one currency to another, there is the possibility of rounding differences. Rounding adjustments are posted in the functional currency and are posted to the rounding account specified for the originating currency. The account can be changed but the rounding amount can’t be changed.
+- **Rounding** When converting amounts from one currency to another, there is the possibility of rounding differences. Rounding adjustments are posted in the functional currency and are posted to the rounding account specified for the originating currency. The account can be changed but the rounding amount can’t be changed.
 
-**Chapter 9: Batches**
+### Chapter 9: Batches
 
->   Batches are groups of transactions with something in common that are identified by a unique name or a number. For example, batches can be a group of transactions entered by a specific employee, or they can be a group of transactions entered on a particular date.
+Batches are groups of transactions with something in common that are identified by a unique name or a number. For example, batches can be a group of transactions entered by a specific employee, or they can be a group of transactions entered on a particular date.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
--   *Creating a batch*
+- *Creating a batch*
 
--   *Modifying a batch • Deleting a batch*
+- *Modifying a batch • Deleting a batch*
 
 #### Creating a batch
 
->   Use the Sales Batch Entry window to create a batch. You must save quotes, orders, and back orders to a batch.
+Use the Sales Batch Entry window to create a batch. You must save quotes, orders, and back orders to a batch.
 
->   **To create a batch:**
+**To create a batch:**
 
-1.  Open the Sales Batch Entry window.
+1 Open the Sales Batch Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Batches)
+    (Sales \>\> Transactions \>\> Sales Batches)
 
-![](media/b051a5a64886934fcbf6a3eef8260ea3.jpg)
+    ![](media/b051a5a64886934fcbf6a3eef8260ea3.jpg)
 
-2.  Enter a batch ID, such as your name or the date, to identify the batch.
+2. Enter a batch ID, such as your name or the date, to identify the batch.
 
-3.  Select the batch origin of Sales Transaction Entry and enter a batch comment, such as a brief description of the transactions that will be entered in the batch.
+3. Select the batch origin of Sales Transaction Entry and enter a batch comment, such as a brief description of the transactions that will be entered in the batch.
 
-4.  Enter or accept the posting date. This field will be available only if your system is set up to use the batch date for posting. If this field is unavailable, the posting date from the Sales Date Entry window for each transaction will be the posting date for each transaction.
+4. Enter or accept the posting date. This field will be available only if your system is set up to use the batch date for posting. If this field is unavailable, the posting date from the Sales Date Entry window for each transaction will be the posting date for each transaction.
 
->   The date you enter is the date the General Ledger records will use. Sales Order Processing records will be updated according to the document date entered in the Sales Transaction Entry window.
+    The date you enter is the date the General Ledger records will use. Sales Order Processing records will be updated according to the document date entered in the Sales Transaction Entry window.
 
->   *The General Ledger posting date only applies to invoices and returns because those are the only document types that are posted.*
+    > [!NOTE]
+    > The General Ledger posting date only applies to invoices and returns because those are the only document types that are posted.
 
->   For more information about posting settings, see the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
+    For more information about posting settings, see the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
-5.  Select the Checkbook ID that will be affected by the transactions in this batch.
+5. Select the Checkbook ID that will be affected by the transactions in this batch.
 
-6.  If your system uses batch verification, enter the required number of transactions that must be entered before this batch can be posted.
+6. If your system uses batch verification, enter the required number of transactions that must be entered before this batch can be posted.
 
-7.  If your system uses batch verification, enter the required currency amount for all transactions you’ll enter in this batch.
+7. If your system uses batch verification, enter the required currency amount for all transactions you’ll enter in this batch.
 
-8.  Choose Save.
+8. Choose Save.
 
-9.  When you have entered all your transactions in a batch, you can choose File \>\> Print or the printer icon button to print an edit list or batch list to verify your entries.
+9. When you have entered all your transactions in a batch, you can choose File \>\> Print or the printer icon button to print an edit list or batch list to verify your entries.
 
->   **Edit list** Contains the transactions that can be posted—invoices and returns.
+    - **Edit list** Contains the transactions that can be posted—invoices and returns.
 
->   **Batch list** Contains all the transactions saved in the batch, including quotes, orders, back orders, invoices, and returns.
+    - **Batch list** Contains all the transactions saved in the batch, including quotes, orders, back orders, invoices, and returns.
 
 #### Modifying a batch
 
@@ -1638,13 +1644,13 @@ Use the Sales Batch Entry window to make changes to an unposted batch. Transacti
 
 **To modify a batch:**
 
-1.  Open the Sales Batch Entry window.
+1. Open the Sales Batch Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Batches)
+    (Sales \>\> Transactions \>\> Sales Batches)
 
-2.  Enter or select a batch ID. If you enter the batch ID, you must also select the origin.
+2. Enter or select a batch ID. If you enter the batch ID, you must also select the origin.
 
-3.  Make your corrections and choose Save.
+3. Make your corrections and choose Save.
 
 #### Deleting a batch
 
@@ -1666,21 +1672,21 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 -   Orders, fulfillment orders, and invoices that have been submitted to customer credit limit override workflow
 
->   **To delete a batch:**
+**To delete a batch:**
 
 1.  Open the Sales Batch Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Batches)
+    (Sales \>\> Transactions \>\> Sales Batches)
 
 2.  Enter or select the batch ID you want to delete. If you enter the batch ID, you must also select the origin.
 
 3.  Choose Delete.
 
-**Chapter 10: Quotes**
+### Chapter 10: Quotes
 
->   Quotes are valuable sales tools because customers or potential customers might request estimates—or quotes—for the cost of items before they make purchase decisions. You can include items from inventory on a quote, as well as items that aren’t tracked in inventory, such as installation, labor, and mileage. Your cost and the price to the customer will be calculated automatically.
+Quotes are valuable sales tools because customers or potential customers might request estimates—or quotes—for the cost of items before they make purchase decisions. You can include items from inventory on a quote, as well as items that aren’t tracked in inventory, such as installation, labor, and mileage. Your cost and the price to the customer will be calculated automatically.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Prospect customers*
 
@@ -1694,24 +1700,24 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 #### Prospect customers
 
->   Prospect customers are potential customers that you maintain records for, but don’t add to your customer base. To enter prospects, you must set up the quote ID to allow prospects. Only quotes can be entered for prospect customers.
+Prospect customers are potential customers that you maintain records for, but don’t add to your customer base. To enter prospects, you must set up the quote ID to allow prospects. Only quotes can be entered for prospect customers.
 
->   To transfer a quote for a prospect customer to an order or to an invoice, you must add the prospect to your customer base or assign the prospect to an existing customer. The Prospect To Customer window opens when transferring a quote to an invoice or order so you can transfer a prospect record to a customer record. You can use the prospect information to create a customer record in the Customer Maintenance window. If you add the prospect as a customer, the prospect record won’t be deleted automatically. You must delete it in the Sales Prospect Maintenance window.
+To transfer a quote for a prospect customer to an order or to an invoice, you must add the prospect to your customer base or assign the prospect to an existing customer. The Prospect To Customer window opens when transferring a quote to an invoice or order so you can transfer a prospect record to a customer record. You can use the prospect information to create a customer record in the Customer Maintenance window. If you add the prospect as a customer, the prospect record won’t be deleted automatically. You must delete it in the Sales Prospect Maintenance window.
 
->   For information about creating prospect customer records, see *Entering a prospect record* on page 73.
+For information about creating prospect customer records, see *Entering a prospect record* on page 73.
 
 #### Entering a prospect record
 
->   Use the Sales Prospect Maintenance window to enter prospect customer records. For more information about prospects, see *Prospect customers* on page 73.
+Use the Sales Prospect Maintenance window to enter prospect customer records. For more information about prospects, see *Prospect customers* on page 73.
 
->   **To enter a prospect record:**
+**To enter a prospect record:**
 
 1.  In the navigation pane, choose the Sales button, and then choose the Prospect list.
 
 2.  In the New group, choose Prospect to open the Sales Prospect Maintenance
     window.
 
-![](media/febd7af1864272294b24809d934a2f51.jpg)
+    ![](media/febd7af1864272294b24809d934a2f51.jpg)
 
 3.  Enter a prospect ID, name, and contact for the prospect customer.
 
@@ -1731,31 +1737,31 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 11.  Save the prospect record.
 
->   To review the entries and selections you‘ve made for a specific prospect customer, print the Prospect Setup List by choosing File \>\> Print or the printer button while the Sales Prospect Maintenance window is displayed.
+To review the entries and selections you‘ve made for a specific prospect customer, print the Prospect Setup List by choosing File \>\> Print or the printer button while the Sales Prospect Maintenance window is displayed.
 
->   To review the entries for all prospective customers, print the Prospect Setup List from the Sales Setup Reports window (Sales \>\> Reports \>\> Setup).
+To review the entries for all prospective customers, print the Prospect Setup List from the Sales Setup Reports window (Sales \>\> Reports \>\> Setup).
 
 #### Sales quote approval workflow
 
->   Your company can use the sales quote workflow feature as part of its business controls. If you use this feature, you can define how quotes have to be approved before transferring the quotes to invoices or orders. The rules for approving quotes can be defined to fit your organization's needs.
+Your company can use the sales quote workflow feature as part of its business controls. If you use this feature, you can define how quotes have to be approved before transferring the quotes to invoices or orders. The rules for approving quotes can be defined to fit your organization's needs.
 
->   When a quote is ready to be approved, approvers can be notified and the quotes can be approved, using Outlook, Microsoft Dynamics GP, or SharePoint. After a quote completes the Workflow process, it can be printed, sent in e-mail, or transferred to an order or invoice.
+When a quote is ready to be approved, approvers can be notified and the quotes can be approved, using Outlook, Dynamics GP, or SharePoint. After a quote completes the Workflow process, it can be printed, sent in e-mail, or transferred to an order or invoice.
 
 #### Entering a quote
 
->   You can use the Sales Transaction Entry window to enter and print quotes for your prospects and customers and to view, void, delete, or transfer existing quotes. You also can send quotes in e-mail.
+You can use the Sales Transaction Entry window to enter and print quotes for your prospects and customers and to view, void, delete, or transfer existing quotes. You also can send quotes in e-mail.
 
->   Sales quotes are saved but not posted, and distributions aren’t calculated on quotes. If a customer decides to make a purchase based on the quoted price, you can transfer the quote to an order or invoice. When you transfer a quote to an invoice or order, information about the document, customer, and items will be transferred to the new document. To transfer a quote for a prospect customer to an order or to an invoice, you must add the prospect to your customer base or assign the prospect to an existing customer.
+Sales quotes are saved but not posted, and distributions aren’t calculated on quotes. If a customer decides to make a purchase based on the quoted price, you can transfer the quote to an order or invoice. When you transfer a quote to an invoice or order, information about the document, customer, and items will be transferred to the new document. To transfer a quote for a prospect customer to an order or to an invoice, you must add the prospect to your customer base or assign the prospect to an existing customer.
 
->   You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* on page 85 for more information.
+You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* on page 85 for more information.
 
->   **To enter a quote:**
+**To enter a quote:**
 
 1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
 2.  In the New group or its overflow menu, choose Quote to open the Sales Transaction Entry window.
 
-![](media/8f4da20a4722769c9bdd5cb795d2cc3b.jpg)
+    ![](media/8f4da20a4722769c9bdd5cb795d2cc3b.jpg)
 
 3.  Select the ID of the type of quote you want to enter.
 
@@ -1763,7 +1769,8 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 5.  Enter the document date. If you want the quote to expire in a specified number of days, choose the Date expansion button and enter an expiration date.
 
->   *After a quote expires it can’t be transferred to an order or invoice. The quote will remain in the system until you delete or void it.*
+    > [!NOTE]
+    > After a quote expires it can’t be transferred to an order or invoice. The quote will remain in the system until you delete or void it.
 
 6.  Enter or select the Site ID from which the items will be sold. The site ID is used to allocate items from inventory and might be used to calculate taxes.
 
@@ -1773,19 +1780,19 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 9.  Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
 
->   The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
+    The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
 10.  Enter or select a currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.
 
->   Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the Rate Type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8,**“Multicurrency transactions.”*
+    Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the Rate Type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8,**“Multicurrency transactions.”*
 
 11.  Enter or select item numbers, units of measure, and item quantities for the quote. To view additional lines of information for each item, choose the hide and show button next to the Extended Price prompt.
 
-    -   To view additional lines of information for each item, choose the hide and show button next to the Extended Price field.
+    - To view additional lines of information for each item, choose the hide and show button next to the Extended Price field.
 
-    -   To view available to promise information about the item if you’re using ATP, choose the Quantity Quoted expansion button to open the Inventory Available to Promise Inquiry window.
+    - To view available to promise information about the item if you’re using ATP, choose the Quantity Quoted expansion button to open the Inventory Available to Promise Inquiry window.
 
-    -   Only active items can be entered on a quote. You can continue processing a quote if an item has been inactivated, but you can’t change the quantity.
+    - Only active items can be entered on a quote. You can continue processing a quote if an item has been inactivated, but you can’t change the quantity.
 
     -   If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the quote. You also can enter the suggested quantity and the site ID for each suggested sales item.
 
@@ -1793,11 +1800,12 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
     -   To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
->   *To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.*
+    > [!NOTE]
+    > To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.
 
 12.  Enter the trade discount, freight, and miscellaneous amounts for this quote.
 
->   Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
+    Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
 13.  Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
 
@@ -1807,21 +1815,22 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 16.  Choose Holds, User-Defined, or Commissions to view or enter additional information about the quote. If a hold has been assigned to the quote, a stop icon will appear on the Hold button.
 
->   For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
+    For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
 
 17.  To print the quote or send the quote in e-mail, choose File \>\> Print. You also can print the quote by choosing the printer button or send the quote in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending sales documents in e-mail, see *Chapter 24, “Printing and sending documents in email.”*
 
->   *If you are using sales quote workflow, the quote must be approved before you can print it or send it in e-mail. You can print a quote or send a quote in e-mail that doesn’t need approval.*
+    > [!NOTE)
+    > If you are using sales quote workflow, the quote must be approved before you can print it or send it in e-mail. You can print a quote or send a quote in e-mail that doesn’t need approval.
 
 18.  Save the quote or submit the quote, if you are using sales quote workflow.
 
 #### Entering a repeating quote
 
->   You can create repeating quotes if the quote ID is set up to allow repeating documents. Repeating quotes are useful if you want to create a template document for a customer that requests the same information multiple times. Repeating quotes must be set up per customer; you can’t set up one document and use it as a template for other customers.
+You can create repeating quotes if the quote ID is set up to allow repeating documents. Repeating quotes are useful if you want to create a template document for a customer that requests the same information multiple times. Repeating quotes must be set up per customer; you can’t set up one document and use it as a template for other customers.
 
->   You can’t have repeating multicurrency documents. Only documents whose currency ID is the functional currency can be marked as repeating.
+You can’t have repeating multicurrency documents. Only documents whose currency ID is the functional currency can be marked as repeating.
 
->   **To enter a repeating quote:**
+**To enter a repeating quote:**
 
 1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
@@ -1836,7 +1845,7 @@ If a batch contains documents that can’t be deleted, these documents will rema
 6.  Choose the document expansion button to open the Sales Document Detail Entry
     window.
 
-![](media/b8e3cc173f13103c20672efd13f206cb.jpg)
+    ![](media/b8e3cc173f13103c20672efd13f206cb.jpg)
 
 7.  Mark Repeating. Enter how many times to repeat the quote and the frequency.
 
@@ -1848,11 +1857,11 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 10.  Save the quote or submit the quote, if you are using sales quote workflow.
 
-**Chapter 11: Orders**
+### Chapter 11: Orders
 
->   Sales orders typically are used in businesses where items or services are agreed upon and then exchanged. When the goods or services are delivered to a customer, you can transfer the order to an invoice. The cost to you and the price the customer will pay is calculated automatically.
+Sales orders typically are used in businesses where items or services are agreed upon and then exchanged. When the goods or services are delivered to a customer, you can transfer the order to an invoice. The cost to you and the price the customer will pay is calculated automatically.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Entering a sales order*
 
@@ -1864,13 +1873,13 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 #### Entering a sales order
 
->   You can use the Sales Transaction Entry window to enter and print orders for your customers and to view, void, delete, or transfer existing orders. You also can send orders in e-mail.
+You can use the Sales Transaction Entry window to enter and print orders for your customers and to view, void, delete, or transfer existing orders. You also can send orders in e-mail.
 
->   Sales orders are saved, but not posted; distributions aren’t calculated on orders. When you ship the items to a customer, you can transfer the order to an invoice. If ordered items aren’t available in inventory, you can transfer the order to a fulfillment order or a back order.
+Sales orders are saved, but not posted; distributions aren’t calculated on orders. When you ship the items to a customer, you can transfer the order to an invoice. If ordered items aren’t available in inventory, you can transfer the order to a fulfillment order or a back order.
 
->   You also can create an order by transferring a quote or a back order to an order. When you transfer a quote or back order document to an order, information about the document, customer, and items will be transferred to the order.
+You also can create an order by transferring a quote or a back order to an order. When you transfer a quote or back order document to an order, information about the document, customer, and items will be transferred to the order.
 
->   An order will have one of the following document statuses.
+An order will have one of the following document statuses.
 
 | **Document Status** | **Description**                                                        |
 |---------------------|------------------------------------------------------------------------|
@@ -1878,17 +1887,17 @@ If a batch contains documents that can’t be deleted, these documents will rema
 | In Process          | One or more line items have been transferred to another document type. |
 | Complete            | The order has been moved to history.                                   |
 
->   You can change the shipping address or the site ID for a single line item by choosing the Ship to Address ID lookup button or the Default Site lookup button in the Sales Transaction Entry window or the Sales Item Detail Entry window and selecting a new ship-to address ID or site ID. The changes will apply only to the selected line item. If you enter a new line item, the ship-to address ID or site ID will come from the previously entered item.
+You can change the shipping address or the site ID for a single line item by choosing the Ship to Address ID lookup button or the Default Site lookup button in the Sales Transaction Entry window or the Sales Item Detail Entry window and selecting a new ship-to address ID or site ID. The changes will apply only to the selected line item. If you enter a new line item, the ship-to address ID or site ID will come from the previously entered item.
 
->   You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales order to another. See *Copying sales document items* on page 85 for more information.
+You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales order to another. See *Copying sales document items* on page 85 for more information.
 
->   **To enter a sales order:**
+**To enter a sales order:**
 
 1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
 2.  In the New group or its overflow menu, choose Order to open the Sales Transaction Entry window.
 
-![](media/6f4d15994f2f5bf9690f9b46952f100f.jpg)
+    ![](media/6f4d15994f2f5bf9690f9b46952f100f.jpg)
 
 3.  Enter or select the ID of the type of order to enter.
 
@@ -1898,7 +1907,7 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 6.  Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
 
->   The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
+    The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
 7.  Enter the document date. The date you enter will be used to update your sales records. To enter a requested ship date, choose the Date expansion button.
 
@@ -1906,25 +1915,26 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 9.  Enter or select the Site ID from which the items on the order will be sold. The site ID is used to allocate items from inventory and might be used to calculate taxes.
 
->   If you’re using multiple bins and you change the Site ID after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
+    If you’re using multiple bins and you change the Site ID after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
 
 10.  Enter or select a Currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.  Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the Rate Type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8,**“Multicurrency transactions.”*
 
 11.  Enter or select item numbers, units of measure, and item quantities for the order. To view additional lines of information for each item, choose the hide and show button next to the Extended Price prompt.
 
->   If you’re using multiple bins and you change the quantity ordered or the unit of measure after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
+    If you’re using multiple bins and you change the quantity ordered or the unit of measure after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
 
--   To view available to promise information about the item if you’re using ATP, choose the Qty Ordered expansion button to open the Inventory Available to Promise Inquiry window.
+    - To view available to promise information about the item if you’re using ATP, choose the Qty Ordered expansion button to open the Inventory Available to Promise Inquiry window.
 
--   Only active items can be entered on an order. You can continue processing an order if an item has been inactivated, but you can’t change the quantity.
+    - Only active items can be entered on an order. You can continue processing an order if an item has been inactivated, but you can’t change the quantity.
 
--   If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the order. You also can enter the suggested quantity and the site ID for each suggested sales item.
+    - If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the order. You also can enter the suggested quantity and the site ID for each suggested sales item.
 
--   To remove an item from the order, select the item and choose Edit \>\> Delete Row.
+    - To remove an item from the order, select the item and choose Edit \>\> Delete Row.
 
--   To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
+    - To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
->   *To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.*
+    > [!NOTE]
+    > To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.
 
 12.  If you’re using extended pricing and a promotion exists for the item you entered, the Promotion Alert window will open, where you can select whether to apply the promotion to the line. If you accept a free item promotion, the free item will be added to the order automatically.
 
@@ -1936,31 +1946,33 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 16.  Enter the trade discount, freight, miscellaneous, and tax amounts for the order.
 
->   Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
+    Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
 17.  Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
 18.  Choose Holds, User-Defined or Commissions to enter additional information about the order. If a hold has been assigned to the order, a stop icon will appear on the Hold button.
 
->   For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
+    For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
 
 19.  To print the order or send the order in e-mail, choose File \>\> Print. You also can print the order by choosing the printer button or send the order in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending documents in e-mail, see *Chapter 24, “Printing and sending documents in e-mail.”*
 
->   *If the order exceeds the customer’s credit limit and you are using customer credit limit override workflow, the order must be approved before you can print it or send it in e-mail. You can print an order or send an order in e-mail that doesn’t need approval.*
+    > [!NOTE]
+    > If the order exceeds the customer’s credit limit and you are using customer credit limit override workflow, the order must be approved before you can print it or send it in e-mail. You can print an order or send an order in e-mail that doesn’t need approval.
 
 20.  Save the order.
 
->   Submit the order for approval if the order exceeds the customer’s credit limit and you are using customer credit limit override workflow.
+Submit the order for approval if the order exceeds the customer’s credit limit and you are using customer credit limit override workflow.
 
->   *National accounts provide the ability to restrict payments for child customers and apply credit checking, holds and finance charges at a consolidated national account level, depending on how the account was set up. If you can’t save or post a transaction, check the status of the options in the National Accounts Maintenance window.*
+> [!NOTE]
+> National accounts provide the ability to restrict payments for child customers and apply credit checking, holds and finance charges at a consolidated national account level, depending on how the account was set up. If you can’t save or post a transaction, check the status of the options in the National Accounts Maintenance window.
 
 #### Entering a repeating order
 
->   You can create repeating orders if the order ID is set up to allow repeating documents. Repeating orders are useful if you want to create a template document for a customer that requests the same information multiple times. Repeating orders must be set up per customer; you can’t set up one document and use it as a template for other customers.
+You can create repeating orders if the order ID is set up to allow repeating documents. Repeating orders are useful if you want to create a template document for a customer that requests the same information multiple times. Repeating orders must be set up per customer; you can’t set up one document and use it as a template for other customers.
 
->   You can’t have repeating multicurrency documents. Only documents whose currency ID is the functional currency can be marked as repeating.
+You can’t have repeating multicurrency documents. Only documents whose currency ID is the functional currency can be marked as repeating.
 
->   **To enter a repeating order:**
+**To enter a repeating order:**
 
 1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
@@ -1976,25 +1988,25 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 7.  Mark Repeating. Enter how many times to repeat the order and the frequency.
 
->   Leave the Frequency field blank to use the order an unlimited number of times.
+    Leave the Frequency field blank to use the order an unlimited number of times.
 
 8.  Choose OK to close the Sales Document Detail Entry window.
 
 #### Copying sales document items
 
->   Use the Copy a Sales Order window to copy line items from one sales document to another. You can copy negative line items to Invoice documents and line items with negative prices. You cannot copy discontinued items.If you are using Analytical Accounting, you can copy analysis information assigned to invoices or returns.
+Use the Copy a Sales Order window to copy line items from one sales document to another. You can copy negative line items to Invoice documents and line items with negative prices. You cannot copy discontinued items.If you are using Analytical Accounting, you can copy analysis information assigned to invoices or returns.
 
->   You can copy a quote if you are using sales quote workflow. The new quote is assigned a status of Not Submitted. You can copy from a quote that is pending approval, but you can’t copy to a quote that is pending approval.
+You can copy a quote if you are using sales quote workflow. The new quote is assigned a status of Not Submitted. You can copy from a quote that is pending approval, but you can’t copy to a quote that is pending approval.
 
->   You can copy an order, fulfillment order, or invoice if you are using customer credit limit override workflow. The new document is assigned a status of No Approval Needed. You can copy from an order, fulfillment order, or invoice that is pending approval, but you can’t copy to an order, fulfillment order, or invoice that is pending approval.
+You can copy an order, fulfillment order, or invoice if you are using customer credit limit override workflow. The new document is assigned a status of No Approval Needed. You can copy from an order, fulfillment order, or invoice that is pending approval, but you can’t copy to an order, fulfillment order, or invoice that is pending approval.
 
->   If the new and existing documents have different currencies and neither is the functional currency, amounts will be converted from the currency of the existing document to the functional currency and then to the currency for the new document.
+If the new and existing documents have different currencies and neither is the functional currency, amounts will be converted from the currency of the existing document to the functional currency and then to the currency for the new document.
 
->   **To copy sales document line items:**
+**To copy sales document line items:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2.  Enter or select a document to add line items to. To create a new document, select a type and type ID, then enter a new document number, customer ID, and currency ID.
 
@@ -2014,13 +2026,13 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 #### Previewing sales document line items
 
->   Use the Preview Line Items window to mark and modify line items on sales documents before you copy them. You also can view warnings and correct error messages. You can’t mark a line item that contains an error (red symbol) until you correct the error. You can mark a line item that contains a warning (yellow symbol).
+Use the Preview Line Items window to mark and modify line items on sales documents before you copy them. You also can view warnings and correct error messages. You can’t mark a line item that contains an error (red symbol) until you correct the error. You can mark a line item that contains a warning (yellow symbol).
 
->   **To preview sales document line items:**
+**To preview sales document line items:**
 
 1.  Open the Copy a Sales Order window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a document \>\> Copy)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a document \>\> Copy)
 
 2.  Enter an order number.
 
@@ -2044,15 +2056,15 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 12. Choose Save.
 
-**Chapter 12: Fulfillment orders and invoices**
+### Chapter 12: Fulfillment orders and invoices
 
->   If you’re using sales fulfillment workflow, you can create fulfillment orders. A fulfillment order is a type of sales document. You can enter a fulfillment order in the Sales Transaction Entry window. You also can create a fulfillment order from a quote, a back order, or an order and you can create an invoice from a fulfillment order. Fulfillment orders cannot be posted. If items on a fulfillment order can’t be filled from inventory, you can transfer the fulfillment order items to a back order.
+If you’re using sales fulfillment workflow, you can create fulfillment orders. A fulfillment order is a type of sales document. You can enter a fulfillment order in the Sales Transaction Entry window. You also can create a fulfillment order from a quote, a back order, or an order and you can create an invoice from a fulfillment order. Fulfillment orders cannot be posted. If items on a fulfillment order can’t be filled from inventory, you can transfer the fulfillment order items to a back order.
 
->   When the document status of a fulfillment order reaches Status 6, the fulfillment order becomes an invoice. To view the details about the document status for a fulfillment order, click the Document Status link in the Sales Transaction Entry window. For more information about document statuses, refer to *Setting up fulfillment workflow for sales* on page 46.
+When the document status of a fulfillment order reaches Status 6, the fulfillment order becomes an invoice. To view the details about the document status for a fulfillment order, click the Document Status link in the Sales Transaction Entry window. For more information about document statuses, refer to *Setting up fulfillment workflow for sales* on page 46.
 
->   Because a sales invoice is a legally binding document, it should be posted. The cost of goods sold and the price for the customer will be calculated automatically. If items on an invoice can’t be filled from inventory, you can transfer the invoice items to a back order.
+Because a sales invoice is a legally binding document, it should be posted. The cost of goods sold and the price for the customer will be calculated automatically. If items on an invoice can’t be filled from inventory, you can transfer the invoice items to a back order.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Understanding fulfillment orders*
 
@@ -2062,31 +2074,29 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 #### Understanding fulfillment orders
 
->   If you’re using sales fulfillment workflow, you can use the Sales Transaction Entry window to create a fulfillment order. A fulfillment order is a type of sales document that uses document statuses to provide additional structure and control over typical sales processes, such as printing the picking ticket, picking the goods, printing the packing slip, packing and shipping the goods, and invoicing the customer.
+If you’re using sales fulfillment workflow, you can use the Sales Transaction Entry window to create a fulfillment order. A fulfillment order is a type of sales document that uses document statuses to provide additional structure and control over typical sales processes, such as printing the picking ticket, picking the goods, printing the packing slip, packing and shipping the goods, and invoicing the customer.
 
->   You can create a fulfillment order from a quote, a back order, or an order, and you can create an invoice from a fulfillment order.
+You can create a fulfillment order from a quote, a back order, or an order, and you can create an invoice from a fulfillment order.
 
->   When you create a fulfillment order, the document status for the fulfillment order will be the first status that you track for that type ID. You can’t post a fulfillment order.
+When you create a fulfillment order, the document status for the fulfillment order will be the first status that you track for that type ID. You can’t post a fulfillment order.
 
->   You can advance the document status of a fulfillment order by confirming that items on fulfillment orders have been picked, packed, and shipped in the Sales Transaction Entry window, the Sales Order Fulfillment window, or the Sales Bulk Confirmation window.
+You can advance the document status of a fulfillment order by confirming that items on fulfillment orders have been picked, packed, and shipped in the Sales Transaction Entry window, the Sales Order Fulfillment window, or the Sales Bulk Confirmation window.
 
 #### Entering a fulfillment order or invoice
 
->   Use this information to enter a fulfillment order or invoice. If you’re not using sales fulfillment workflow refer to *Entering an invoice* on page 93.
+Use this information to enter a fulfillment order or invoice. If you’re not using sales fulfillment workflow refer to *Entering an invoice* on page 93.
 
->   If you’re using sales fulfillment workflow, you can use the Sales Transaction Entry window to enter, print and send fulfillment orders and invoices in e-mail to your customers. You can view and void existing fulfillment orders. You can view, void, post, and delete existing invoices. For more information, see *Understanding fulfillment orders* on page 87.
+If you’re using sales fulfillment workflow, you can use the Sales Transaction Entry window to enter, print and send fulfillment orders and invoices in e-mail to your customers. You can view and void existing fulfillment orders. You can view, void, post, and delete existing invoices. For more information, see *Understanding fulfillment orders* on page 87.
 
->   You can use the Copy button in the Sales Transaction Entry window to copy
->   line items from one sales document to another. See *Copying sales document
->   items* on page 85 for more information.
+You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* on page 85 for more information.
 
->   **To enter a fulfillment order or invoice:**
+**To enter a fulfillment order or invoice:**
 
 1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
 2.  In the New group or its overflow menu, choose Fulfillment Order or Invoice to open the Sales Transaction Entry window.
 
-![](media/e9545482a183bc887c4c22d127ba65c3.jpg)
+    ![](media/e9545482a183bc887c4c22d127ba65c3.jpg)
 
 3.  Enter or select the ID of the type of fulfillment order or invoice to enter.
 
@@ -2096,7 +2106,7 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 6.  Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
 
->   The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
+    The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
 7.  Enter the document date. The date you enter will be used to update your sales records. To change the posting date or enter a requested ship date, choose the Date expansion button.
 
@@ -2106,97 +2116,64 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 10.  Enter the purchase order number if the customer has provided you with one.
 
->   The purchase order number will be printed on the fulfillment order or invoice.
+    The purchase order number will be printed on the fulfillment order or invoice.
 
 11.  Enter or select a currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.
 
->   Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the rate type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8,*
-
->   *“Multicurrency transactions.”*
+    Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the rate type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8, “Multicurrency transactions.”*
 
 12.  Enter or select item numbers, units of measure, and item quantities for the fulfillment order or invoice. To view additional lines of information for each item, choose the hide and show button next to the Extended Price field.
 
->   Only active items can be entered. You can continue processing if an item has been inactivated, but you can’t change the quantity.
+    Only active items can be entered. You can continue processing if an item has been inactivated, but you can’t change the quantity.
 
->   If you’re using multiple bins and you change the site ID, quantity, or unit of measure after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
+    If you’re using multiple bins and you change the site ID, quantity, or unit of measure after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
 
->   If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the fulfillment order. You also can enter the suggested quantity and the site ID for each suggested sales item.
+    If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the fulfillment order. You also can enter the suggested quantity and the site ID for each suggested sales item.
 
->   To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
+    To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
->   To remove an item from the fulfillment order or invoice, select the item and choose Edit \>\> Delete Row.
+   To remove an item from the fulfillment order or invoice, select the item and choose Edit \>\> Delete Row.
 
->   *To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.*
+    > [!NOTE]
+    > To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.
 
 13.  Enter the trade discount, freight, miscellaneous, and tax amounts for this fulfillment order or invoice.
 
->   Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
+Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
-1.  If you’re using extended pricing and a promotion exists for the item you
-    entered, the Promotion Alert window will open, where you can select to apply
-    the promotion to the line. If you accept a free item promotion, the free
-    item will be added to the fulfillment order or invoice automatically.
+1.  If you’re using extended pricing and a promotion exists for the item you entered, the Promotion Alert window will open, where you can select to apply the promotion to the line. If you accept a free item promotion, the free item will be added to the fulfillment order or invoice automatically.
 
-2.  Taxes will be calculated automatically as you enter items and changes made
-    to the tax details will be transferred to the new document if the document
-    is transferred in full. For more information about transferring documents,
-    see *Transferring totals, deposits, and payments* on page 210.
+2.  Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
 
-3.  Enter the amount received and the terms discount taken on the fulfillment
-    order or invoice. For more information about entering an amount received,
-    see *Entering a payment for an invoice, fulfillment order, or return* on
-    page 119.
+3.  Enter the amount received and the terms discount taken on the fulfillment order or invoice. For more information about entering an amount received, see *Entering a payment for an invoice, fulfillment order, or return* on page 119.
 
-4.  To add a comment on the fulfillment order or invoice, enter the comment ID
-    or a one-time comment. For more information about adding comments, see
-    *Adding a comment to sales documents* on page 190.
+4.  To add a comment on the fulfillment order or invoice, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents* on page 190.
 
-5.  Choose the Attachment Management icon to attach documents to the quote, if
-    applicable.
+5.  Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
-6.  Choose Holds or User-Defined to enter additional information about the
-    fulfillment order or invoice. If a hold has been assigned to the fulfillment
-    order or invoice, a stop icon will appear on the Hold button.
+6.  Choose Holds or User-Defined to enter additional information about the fulfillment order or invoice. If a hold has been assigned to the fulfillment order or invoice, a stop icon will appear on the Hold button.
 
 7.  Choose Distributions to verify or change distribution accounts.
 
->   *You can distribute amounts to unit accounts to record increases to
->   non-financial accounts. The amounts you distribute to unit accounts won’t be
->   totaled with other distributions. For more information about unit accounts,
->   see the General Ledger documentation.*
+    > [!NOTE]
+    > You can distribute amounts to unit accounts to record increases to non-financial accounts. The amounts you distribute to unit accounts won’t be totaled with other distributions. For more information about unit accounts, see the General Ledger documentation.
 
-1.  Choose Commissions to verify or change the commission amounts. For more
-    information about commissions, see *Modifying commission information* on
-    page 200 and *Splitting commissions* on page 201.
+1.  Choose Commissions to verify or change the commission amounts. For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
 
-2.  You can print the fulfillment order or invoice or send the fulfillment order
-    or invoice by choosing File \>\> Print. You also can print the fulfillment
-    order or invoice by choosing the printer button or send the fulfillment
-    order or invoice in e-mail by choosing the Send in e-mail button in the
-    upper right of the Sales Transaction Entry window. For more information
-    about printing and sending documents in e-mail, see *Chapter 24, “Printing
-    and sending documents in email.”*
+2.  You can print the fulfillment order or invoice or send the fulfillment order or invoice by choosing File \>\> Print. You also can print the fulfillment order or invoice by choosing the printer button or send the fulfillment order or invoice in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending documents in e-mail, see *Chapter 24, “Printing and sending documents in email.”*
 
->   *If the fulfillment order or invoice exceeds the customer’s credit limit and
->   you are using customer credit limit override workflow, the document must be
->   approved before you can print it or send it in e-mail. You can print or send
->   a fulfillment order or invoice in e-mail that doesn’t need approval.*
+    > [!NOTE]
+    > If the fulfillment order or invoice exceeds the customer’s credit limit and you are using customer credit limit override workflow, the document must be approved before you can print it or send it in e-mail. You can print or send a fulfillment order or invoice in e-mail that doesn’t need approval.
 
-1.  Save the fulfillment order or save or post the invoice.
+3. Save the fulfillment order or save or post the invoice.
 
->   Submit the fulfillment order or invoice for approval if the document has
->   exceeds the customer’s credit limit and you are using customer credit limit
->   override workflow. The document must be approved before you can post it.
+Submit the fulfillment order or invoice for approval if the document has exceeds the customer’s credit limit and you are using customer credit limit override workflow. The document must be approved before you can post it.
 
->   If you’re using multiple bins and posting fails, bin quantities revert to
->   their previous values.
+If you’re using multiple bins and posting fails, bin quantities revert to their previous values.
 
 #### Combine multiple fulfillment orders to a single invoice
 
->   If you’re using sales fulfillment workflow, you can use the Sales Bulk
->   Confirmation window to combine several fulfillment orders for the same
->   customer to a single invoice. In order to combine fulfillment orders, the
->   following information must also be the same on the fulfillment orders:
+If you’re using sales fulfillment workflow, you can use the Sales Bulk Confirmation window to combine several fulfillment orders for the same customer to a single invoice. In order to combine fulfillment orders, the following information must also be the same on the fulfillment orders:
 
 -   Shipped status
 
@@ -2208,54 +2185,37 @@ If a batch contains documents that can’t be deleted, these documents will rema
 
 -   Commission apply information
 
->   Other details for the fulfillment orders, such as the amount received, terms
->   discount taken, tracking numbers, account distributions, trade discounts,
->   comments, and taxes will be combined on the new invoice.
+Other details for the fulfillment orders, such as the amount received, terms discount taken, tracking numbers, account distributions, trade discounts, comments, and taxes will be combined on the new invoice.
 
->   **To combine fulfillment orders on a single invoice:**
+**To combine fulfillment orders on a single invoice:**
 
 1.  Open the Sales Bulk Confirmation window.
 
->   (Sales \>\> Transactions \>\> Bulk Confirmation)
+    (Sales \>\> Transactions \>\> Bulk Confirmation)
 
 1.  Select Confirm Ship as the action to complete.
 
-2.  To restrict the documents displayed in the window, select the range of
-    documents.
+2.  To restrict the documents displayed in the window, select the range of documents.
 
-3.  Choose Redisplay. The documents that match your range selection will appear
-    in the scrolling window.
+3.  Choose Redisplay. The documents that match your range selection will appear in the scrolling window.
 
-4.  Mark Create Combined Invoice. Then, select the Type ID that will be used to
-    determine the next number and default entries for the invoice that is
-    created.
+4.  Mark Create Combined Invoice. Then, select the Type ID that will be used to determine the next number and default entries for the invoice that is created.
 
 5.  Enter or select a destination batch ID for the new invoice.
 
 6.  Mark the documents you want to invoice.
 
-7.  Choose Process. The fulfillment orders will be combined according to
-    customer ID, then, the other criteria listed above. If fulfillment orders
-    for multiple customers are marked, the orders will be grouped and invoiced
-    according to customer. The fulfillment orders and the new invoice are
-    assigned the same new master number.
+7.  Choose Process. The fulfillment orders will be combined according to customer ID, then, the other criteria listed above. If fulfillment orders for multiple customers are marked, the orders will be grouped and invoiced according to customer. The fulfillment orders and the new invoice are assigned the same new master number.
 
->   Once the process is complete, print the Sales Bulk Confirmation - Combined
->   Invoice Report. This report will display the invoice number and list the
->   fulfillment orders that were combined onto it.
+Once the process is complete, print the Sales Bulk Confirmation - Combined Invoice Report. This report will display the invoice number and list the fulfillment orders that were combined onto it.
 
->   You can use your usual invoicing process to invoice the customer.
+You can use your usual invoicing process to invoice the customer.
 
-Chapter 13: Invoices
---------------------
+### Chapter 13: Invoices
 
->   Because sales invoices are legally binding documents that record the prices
->   and details of transactions, they should be posted. The cost of goods sold
->   and the price for the customer will be calculated automatically. If items on
->   an invoice can’t be filled from inventory, you can transfer the invoice
->   items to a back order.
+Because sales invoices are legally binding documents that record the prices and details of transactions, they should be posted. The cost of goods sold and the price for the customer will be calculated automatically. If items on an invoice can’t be filled from inventory, you can transfer the invoice items to a back order.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Understanding invoices*
 
@@ -2263,61 +2223,27 @@ Chapter 13: Invoices
 
 ### Understanding invoices
 
->   You can use the Sales Transaction Entry window to enter, print, and send
->   invoices in e-mail to your customers and to view, void, post, delete, or
->   transfer existing invoices.
+You can use the Sales Transaction Entry window to enter, print, and send invoices in e-mail to your customers and to view, void, post, delete, or transfer existing invoices.
 
->   You also can create an invoice by transferring a quote, order, or back order
->   to an invoice. When you transfer a document to an invoice, information about
->   the document, customer, and items will be transferred to the invoice.
+You also can create an invoice by transferring a quote, order, or back order to an invoice. When you transfer a document to an invoice, information about the document, customer, and items will be transferred to the invoice.
 
->   If you’re using sales fulfillment workflow, an invoice is created from a
->   fulfillment order when you advance the document status to status six. Refer
->   to *Understanding fulfillment orders* on page 87 and *Entering a fulfillment
->   order or invoice* on page 87.
+If you’re using sales fulfillment workflow, an invoice is created from a fulfillment order when you advance the document status to status six. Refer to *Understanding fulfillment orders* on page 87 and *Entering a fulfillment order or invoice* on page 87.
 
->   Transaction amounts on an invoice will be distributed automatically to
->   posting accounts. The distribution accounts and amounts won’t be displayed
->   for Inventory and Cost of Goods Sold. The actual cost will be determined
->   when you post the invoice and the cost and distribution accounts will be
->   displayed on the posting journal. To verify the accounts that will be used
->   for each item, choose the Item Number expansion button to open the Sales
->   Item Detail Entry window. Choose Distribution to view or change the accounts
->   used for that item.
+Transaction amounts on an invoice will be distributed automatically to posting accounts. The distribution accounts and amounts won’t be displayed for Inventory and Cost of Goods Sold. The actual cost will be determined when you post the invoice and the cost and distribution accounts will be displayed on the posting journal. To verify the accounts that will be used for each item, choose the Item Number expansion button to open the Sales Item Detail Entry window. Choose Distribution to view or change the accounts used for that item.
 
->   You can enter a negative invoice quantity for a line item, but the negative
->   quantity won’t be allocated or fulfilled. The negative invoice quantity is
->   assigned the return quantity type of On Hand automatically. You can’t enter
->   a negative invoice quantity for a drop-ship line item.
+You can enter a negative invoice quantity for a line item, but the negative quantity won’t be allocated or fulfilled. The negative invoice quantity is assigned the return quantity type of On Hand automatically. You can’t enter a negative invoice quantity for a drop-ship line item.
 
->   If you’re using Multicurrency Management, you can change the distribution
->   amounts only in the originating currency. If you change an amount in the
->   originating currency, the functional amount will be recalculated.
+If you’re using Multicurrency Management, you can change the distribution amounts only in the originating currency. If you change an amount in the originating currency, the functional amount will be recalculated.
 
-### Entering an invoice
+#### Entering an invoice
 
->   Use this information to enter an invoice. If you’re using sales fulfillment
->   workflow, refer to *Entering a fulfillment order or invoice* on page 87.
+Use this information to enter an invoice. If you’re using sales fulfillment workflow, refer to *Entering a fulfillment order or invoice* on page 87.
 
->   You can use the Sales Transaction Entry window to enter and print invoices
->   for your customers and to view, void, post, delete, or transfer existing
->   invoices. You also can send invoices in e-mail. For more information, see
->   *Understanding invoices* on page 93.
+You can use the Sales Transaction Entry window to enter and print invoices for your customers and to view, void, post, delete, or transfer existing invoices. You also can send invoices in e-mail. For more information, see *Understanding invoices* on page 93.
 
->   You can change the shipping address or the site ID for a single line item by
->   choosing the Ship to Address ID lookup button or the Default Site lookup
->   button in the Sales
+You can change the shipping address or the site ID for a single line item by choosing the Ship to Address ID lookup button or the Default Site lookup button in the Sales Transaction Entry window or the Sales Item Detail Entry window and selecting a new ship-to address ID or site ID. The changes will apply only to the selected line item. If you enter a new line item, the ship-to address ID or site ID will come from the previously entered item.
 
-##### **P A R T 2** T R A N S A C T I O N E N T R Y
-
-Transaction Entry window or the Sales Item Detail Entry window and selecting a
-new ship-to address ID or site ID. The changes will apply only to the selected
-line item. If you enter a new line item, the ship-to address ID or site ID will
-come from the previously entered item.
-
-You can use the Copy button in the Sales Transaction Entry window to copy line
-items from one sales document to another. See *Copying sales document items* on
-page 85 for more information.
+You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* on page 85 for more information.
 
 **To enter an invoice:**
 
@@ -2327,152 +2253,83 @@ page 85 for more information.
 2.  In the New group or its overflow menu, choose Invoice to open the Sales
     Transaction Entry window.
 
-![](media/c0036cba6dc9f2acd2c37d6b764ffc07.jpg)
+    ![](media/c0036cba6dc9f2acd2c37d6b764ffc07.jpg)
 
 1.  Enter or select the ID of the type of invoice to enter.
 
 2.  Enter a document number or accept the default entry.
 
-3.  Enter the document date. The date you enter will be used to update your
-    sales records. To change the posting date or enter a requested ship date,
-    choose the Date expansion button.
+3.  Enter the document date. The date you enter will be used to update your sales records. To change the posting date or enter a requested ship date, choose the Date expansion button.
 
-4.  Enter or select the Site ID from which the items will be sold. The site ID
-    will be used to allocate items from inventory and might be used to calculate
-    taxes.
+4.  Enter or select the Site ID from which the items will be sold. The site ID will be used to allocate items from inventory and might be used to calculate taxes.
 
->   If you’re using multiple bins and you change the Site ID after selecting
->   bins, lot numbers, or serial numbers for an item, your previous bin, lot
->   number, or serial number selections are discarded.
+    If you’re using multiple bins and you change the Site ID after selecting  bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
 
 1.  You can create or select a Batch ID to assign to the invoice.
 
-2.  Enter or select a customer ID and enter the purchase order number if the
-    customer has provided you with one. The purchase order number will appear on
-    the invoice.
+2.  Enter or select a customer ID and enter the purchase order number if the customer has provided you with one. The purchase order number will appear on the invoice.
 
->   **C H A P T E R 1 3** I N V O I C E S
+1.  Choose the Customer E-mail expansion button to open the Sales E-mail Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
 
-1.  Choose the Customer E-mail expansion button to open the Sales E-mail Detail
-    Entry window to update a customer's e-mail information for a transaction.
-    See *Updating a customer’s e-mail information for a sales transaction* on
-    page 109 for more information.
+    The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
->   The document type to send in e-mail must be available for the customer
->   before you can open the Sales E-mail Detail Entry window.
+1.  Enter or select a Currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.
 
-1.  Enter or select a Currency ID. If the customer record has a currency ID
-    assigned to it, the customer’s currency ID will appear as the default entry.
+    Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the Rate Type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8, “Multicurrency transactions.”*
 
->   Use the Currency ID expansion button to open the Exchange Rate Entry window,
->   where you can change the Rate Type ID or the exchange rate. For information
->   about how exchange rates affect the transaction, see *Chapter 8,*
+1.  Enter or select item numbers, units of measure, site ID, and item quantities for the invoice. To view additional lines of information for each item, choose the hide and show button next to the Extended Price prompt.
 
->   *“Multicurrency transactions.”*
+    If you’re using multiple bins and you change the quantity or unit of measure after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
 
-1.  Enter or select item numbers, units of measure, site ID, and item quantities
-    for the invoice. To view additional lines of information for each item,
-    choose the hide and show button next to the Extended Price prompt.
+-   To view available to promise information about the item if you’re using ATP, choose the Invoice Quantity expansion button to open the Inventory Available to Promise Inquiry window.
 
->   If you’re using multiple bins and you change the quantity or unit of measure
->   after selecting bins, lot numbers, or serial numbers for an item, your
->   previous bin, lot number, or serial number selections are discarded.
+-   Only active items can be entered on an invoice. You can continue processing an invoice if an item has been inactivated, but you can’t change the quantity.
 
--   To view available to promise information about the item if you’re using ATP,
-    choose the Invoice Quantity expansion button to open the Inventory Available
-    to Promise Inquiry window.
+-   If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the invoice. You also can enter the suggested quantity and the site ID for each suggested sales item.
 
--   Only active items can be entered on an invoice. You can continue processing
-    an invoice if an item has been inactivated, but you can’t change the
-    quantity.
+-   To remove an item from the invoice, select the item and choose Edit \>\> Delete Row.
 
--   If an item has suggested sales items assigned to it for the document type,
-    the Suggest Sales Item Entry window opens when you press TAB to move to the
-    next line in the scrolling window. You can use the window to mark the
-    suggested sales items to add to the invoice. You also can enter the
-    suggested quantity and the site ID for each suggested sales item.
+-   To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
--   To remove an item from the invoice, select the item and choose Edit \>\>
-    Delete Row.
-
--   To add an attachment to the item, select the item and choose the Attachment
-    Management icon to open the Document Attachment Management window.
-
->   *To change the shipping address for a single line item, select the item,
->   expand to the detail view of the scrolling window, and choose the Ship to
->   Address ID expansion button to open the Sales Ship To Address Entry window.
->   The changes will apply only to the current line item.*
+    > [!NOTE]
+    > To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.
 
 1.  Enter the trade discount, freight, miscellaneous, and tax amounts for this
     invoice.
 
-##### **P A R T 2** T R A N S A C T I O N E N T R Y
+Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
->   Use the Trade Discount expansion button to open the Sales Trade Discount
->   Entry window, where you can enter or edit a trade discount for the document.
->   The discount can be a percentage or an amount. Use the freight and
->   miscellaneous expansion buttons to open the Sales Tax Schedule Entry window,
->   where you can select the tax details used to tax freight and miscellaneous
->   amounts.
+1.  If you’re using extended pricing and a promotion exists for the item you entered, the Promotion Alert window will open, where you can select whether to apply the promotion to the line. If you accept a free item promotion, the free item will be added to the invoice automatically.
 
-1.  If you’re using extended pricing and a promotion exists for the item you
-    entered, the Promotion Alert window will open, where you can select whether
-    to apply the promotion to the line. If you accept a free item promotion, the
-    free item will be added to the invoice automatically.
+2.  Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
 
-2.  Taxes will be calculated automatically as you enter items and changes made
-    to the tax details will be transferred to the new document if the document
-    is transferred in full. For more information about transferring documents,
-    see *Transferring totals, deposits, and payments* on page 210.
+3.  Enter the amount received and the terms discount taken on the invoice. For more information about entering an amount received, see *Entering a payment for an invoice, fulfillment order, or return* on page 119.
 
-3.  Enter the amount received and the terms discount taken on the invoice. For
-    more information about entering an amount received, see *Entering a payment
-    for an invoice, fulfillment order, or return* on page 119.
+4.  To add a comment on the invoice, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents* on page 190.
 
-4.  To add a comment on the invoice, enter the comment ID or a one-time comment.
-    For more information about adding comments, see *Adding a comment to sales
-    documents* on page 190.
+5.  Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
-5.  Choose the Attachment Management icon to attach documents to the quote, if
-    applicable.
-
-6.  Choose Holds or User-Defined to enter additional information about the
-    invoice. If a hold has been assigned to the invoice, a stop icon will appear
-    on the Hold button.
+6.  Choose Holds or User-Defined to enter additional information about the invoice. If a hold has been assigned to the invoice, a stop icon will appear on the Hold button.
 
 7.  Choose Distributions to verify or change distribution accounts.
 
->   *You can distribute amounts to unit accounts to record increases to
->   non-financial accounts. The amounts you distribute to unit accounts won’t be
->   totaled with other distributions. For more information about unit accounts,
->   see the General Ledger documentation.*
+    > [!NOTE]
+    > You can distribute amounts to unit accounts to record increases to non-financial accounts. The amounts you distribute to unit accounts won’t be totaled with other distributions. For more information about unit accounts, see the General Ledger documentation.
 
-1.  Choose Commissions to verify or change the commission amounts. For more
-    information about commissions, see *Modifying commission information* on
-    page 200 and *Splitting commissions* on page 201.
+1.  Choose Commissions to verify or change the commission amounts. For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
 
-2.  You can print the invoice or send the invoice in e-mail by choosing File
-    \>\> Print. You also can print the invoice by choosing the printer button or
-    send the invoice in e-mail by choosing the Send in e-mail button in the
-    upper right of the Sales Transaction Entry window. For more information
-    about printing and sending documents in e-mail, see *Chapter 24, “Printing
-    and sending documents in email.”*
+2.  You can print the invoice or send the invoice in e-mail by choosing File \>\> Print. You also can print the invoice by choosing the printer button or send the invoice in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending documents in e-mail, see *Chapter 24, “Printing and sending documents in email.”*
 
->   *If the invoice exceeds the customer’s credit limit and you are using
->   customer credit limit override workflow, the invoice must be approved before
->   you can print it or send it in email. You can print or send an invoice in
->   e-mail that doesn’t need approval.*
+    > [!NOTE]
+    > If the invoice exceeds the customer’s credit limit and you are using customer credit limit override workflow, the invoice must be approved before you can print it or send it in email. You can print or send an invoice in e-mail that doesn’t need approval.
 
 1.  Save or post the invoice.
 
->   Submit the invoice for approval if the invoice exceeds the customer’s credit
->   limit and you are using customer credit limit override workflow. You must
->   approve the document before you can post it.
+    Submit the invoice for approval if the invoice exceeds the customer’s credit limit and you are using customer credit limit override workflow. You must approve the document before you can post it.
 
->   If you’re using multiple bins and posting fails, bin quantities revert to
->   their previous values.
+    If you’re using multiple bins and posting fails, bin quantities revert to  their previous values.
 
-Chapter 14: Back orders
+### Chapter 14: Back orders
 -----------------------
 
 >   Enter a back order when you encounter an item shortage while entering an
@@ -3604,31 +3461,23 @@ Chapter 18: Sales Order Processing taxes
 
 >   Choose Default to restore the default tax information.
 
-Part 3: Allocation, fulfillment, and purchasing
-===============================================
+## Part 3: Allocation, fulfillment, and purchasing
 
->   This part of the documentation explains allocating and fulfilling items, and
->   creating or linking to purchase orders for items with quantity shortages.
+This part of the documentation explains allocating and fulfilling items, and creating or linking to purchase orders for items with quantity shortages.
 
->   The following topics are discussed:
+The following topics are discussed:
 
--   *Chapter 19, “Allocating item quantities,”* describes how items are
-    allocated and fulfilled on orders, fulfillment orders, and invoices.
+-   *Chapter 19, “Allocating item quantities,”* describes how items are allocated and fulfilled on orders, fulfillment orders, and invoices.
 
--   *Chapter 20, “Separate fulfillment,”* describes the fulfillment methods if
-    you have chosen to fulfill items separately from allocation.
+-   *Chapter 20, “Separate fulfillment,”* describes the fulfillment methods if you have chosen to fulfill items separately from allocation.
 
--   *Chapter 21, “New purchase orders,”* describes how to preview, modify, and
-    create purchase orders from sales orders and back orders.
+-   *Chapter 21, “New purchase orders,”* describes how to preview, modify, and create purchase orders from sales orders and back orders.
 
--   *Chapter 22, “Links to existing purchase orders,”* explains how to add or
-    remove a link from a sales order or back order to a purchase order.
+-   *Chapter 22, “Links to existing purchase orders,”* explains how to add or remove a link from a sales order or back order to a purchase order.
 
--   *Chapter 23, “Receiving purchase orders,”* describes the allocation and
-    fulfillment of sales documents that are linked to purchase orders.
+-   *Chapter 23, “Receiving purchase orders,”* describes the allocation and fulfillment of sales documents that are linked to purchase orders.
 
-Chapter 19: Allocating item quantities
---------------------------------------
+### Chapter 19: Allocating item quantities
 
 >   When you allocate an item, it is reserved in inventory and the quantity
 >   available for the item and for the site is reduced in inventory. You must
@@ -4152,8 +4001,7 @@ Chapter 19: Allocating item quantities
 >   can allocate the kit again, substitute components, or decrease component
 >   quantities.
 
-Chapter 20: Separate fulfillment
---------------------------------
+### Chapter 20: Separate fulfillment
 
 >   Fulfillment is the process of verifying that the correct number of items are
 >   taken out of inventory to fill item requests on an order or invoice after
@@ -4211,10 +4059,7 @@ Chapter 20: Separate fulfillment
 >   Allocation/ Fulfillment Exception report notifies you that you must select
 >   additional bins.
 
-**P A R T 3** A L L O C A T I O N , F U L F I L L M E N T , A N D P U R C H A S
-I N G
-
-### Fulfilling quantities for individual items
+#### Fulfilling quantities for individual items
 
 You can fulfill item quantities using the Sales Transaction Entry window when
 you add items to an order or invoice by entering the quantity in the Quantity
@@ -4243,7 +4088,7 @@ to be fulfilled and you leave the Bin Quantity Entry window or the serial or lot
 number entry window, the quantity fulfilled changes to equal the actual bin
 quantity selected.
 
-### Fulfilling quantities for all items on a document
+#### Fulfilling quantities for all items on a document
 
 You can enter all the items on a document and then use the
 Allocation-Fulfillment Options window to fulfill all item quantities on the
@@ -5351,8 +5196,7 @@ Chapter 23: Receiving purchase orders
     window or the Purchasing Analysis Reports window. You also can save the
     report option and print it later.
 
-Part 4: Transaction activity
-============================
+## Part 4: Transaction activity
 
 >   This part of the documentation includes information that will help manage
 >   your sales documents once they are entered. You can transfer, modify,
@@ -5372,8 +5216,7 @@ Part 4: Transaction activity
 -   *Chapter 27, “Transferring documents,”* explains how to transfer sales
     documents as a part of the sales cycle.
 
-Chapter 24: Printing and sending documents in email
----------------------------------------------------
+### Chapter 24: Printing and sending documents in email
 
 >   After you enter a quote, order, fulfillment order, invoice, back order, or
 >   return, you can print the document and send it to a customer. You also can
@@ -5410,7 +5253,7 @@ Chapter 24: Printing and sending documents in email
 
 -   *Printing shipping labels or COD tags*
 
-### Packing slips and picking tickets overview
+#### Packing slips and picking tickets overview
 
 >   You can print packing slips for orders, fulfillment orders, and invoices and
 >   include them in each shipment. A packing slip displays the items and
@@ -5461,7 +5304,7 @@ Chapter 24: Printing and sending documents in email
 >   process hold also applies to the picking ticket and packing slip associated
 >   with the sales document.
 
-### Printing options for packing slips and picking tickets
+#### Printing options for packing slips and picking tickets
 
 >   When you print packing slips or picking tickets, you can select several
 >   printing options in the Sales Document Print Options window. Depending on
@@ -5525,7 +5368,7 @@ Chapter 24: Printing and sending documents in email
 >   address with the corresponding line item when it’s different than the ship
 >   to address for the document. This option is available for picking tickets.
 
-### Printing options for sales documents
+#### Printing options for sales documents
 
 >   When you print a sales document (a quote, order, fulfillment order, invoice,
 >   back order, or return), you can select several printing options in the Sales
@@ -5562,7 +5405,7 @@ Chapter 24: Printing and sending documents in email
 >   **Currency to Print** For multicurrency transactions, you can print
 >   documents in either the functional or originating currency.
 
-### Requirements for sending sales documents in e-mail
+#### Requirements for sending sales documents in e-mail
 
 >   You can send quotes, orders, fulfillment orders, or invoices in e-mail if
 >   the following conditions are met.
@@ -6200,7 +6043,7 @@ Chapter 24: Printing and sending documents in email
     can save the report option and print it later from either the Mailing Labels
     window or the Mailing Labels Report Options window.
 
-**Chapter 25: Sales document maintenance**
+### Chapter 25: Sales document maintenance
 
 >   Before you transfer or post a document, you can modify the item, commission,
 >   and total information. For example, you can change quantities, add items,
@@ -6940,7 +6783,7 @@ document.*
 
 2.  Choose Delete.
 
-**Chapter 26: Posting**
+### Chapter 26: Posting
 
 >   Posting is the process of transferring unposted transactions to permanent
 >   records and updating accounts with specific transaction amounts. When you
@@ -6995,8 +6838,6 @@ document.*
     your system is set up. For more information about setting up posting
     options, see the System Setup instructions (Help \>\> Contents \>\> select
     Setting up the System).
-
-##### **P A R T 4** T R A N S A C T I O N A C T I V I T Y
 
 >   *National accounts provide the ability to restrict payments for child
 >   customers and apply credit checking, holds and finance charges at a
@@ -7118,7 +6959,7 @@ posted if anyone is making changes to it.
 >   become zero. After you’ve corrected the transaction, you’ll need to enter a
 >   new control total and post again.
 
-**Chapter 27: Transferring documents**
+### Chapter 27: Transferring documents
 
 >   You can transfer customer and item information from an existing document to
 >   a newly created document of another type. For example, if a customer decides
@@ -7608,7 +7449,7 @@ created.*
 6.  Choose Transfer and close the window. The Sales Transfer Log will be
     printed.
 
-**Part 5: Inquiries and reports**
+## Part 5: Inquiries and reports
 
 >   This part of the documentation explains how to use inquiries and reports to
 >   analyze your sales activity. The inquiry windows and reports in Sales Order
@@ -7622,7 +7463,7 @@ created.*
 -   *Chapter 29, “Reports,”* describes how to use reports to analyze sales
     activity and determine the status of sales documents.
 
-**Chapter 28: Inquiries**
+### Chapter 28: Inquiries
 
 >   Analyzing your sales activity is an important part of your accounting
 >   system. You can use inquiry windows to view transaction, document, item,
@@ -8051,7 +7892,7 @@ created.*
 
 2.  When you’ve finished, close the window.
 
-**Chapter 29: Reports**
+### Chapter 29: Reports
 
 >   You can use Sales Order Processing reports to analyze sales activity and identify errors in transaction entry. You can also use reports to review setup, posting, and historical information. Other Sales Order Processing reports are important for the audit trail to ensure that you’re accurately tracking financial data. Use this information to guide you through printing reports and working with report options.
 
@@ -8071,24 +7912,18 @@ created.*
 
 >   The following table lists the report types available in Sales Order Processing and the reports included in those categories.
 
-| **Report type**                                                                                                                                                                                                                                                                | **Report**                                                                                                                                                                                                                                                                                                                                                                                               | **Printing method**                                                                                                                                                                                                                                                                                                                                                                           |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Activity reports                                                                                                                                                                                                                                                               | Sales Quote Report \* Sales Open Order Report \* Sales Back Order Report \* Sales Order Fulfillment Report Sales Document Status Report                                                                                                                                                                                                                                                                  | Create report options in the Sales Activity Reports window.                                                                                                                                                                                                                                                                                                                                   |
-| \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. |                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Report type**                                                                                                                                                                                                                                                                | **Report**                                                                                                                                                                                                                                                                                                                                                                                               | **Printing method**                                                                                                                                                                                                                                                                                                                                                                           |
-| Setup reports                                                                                                                                                                                                                                                                  | Sales Order Processing Setup List Sales Quote Setup List Sales Order Setup List Sales Invoice Setup List Sales Back Order Setup List Sales Return Setup List Sales Process Holds Setup List Prospect Setup List Prospect List-Detailed Sales User-defined Fields Setup Lists Picking Instructions Report Customer Picking Instructions List Advanced Picking Setup Sales Fulfillment Workflow Setup List | Choose \>\> Print in the setup windows **or** create report options in the Sales Setup Reports window.                                                                                                                                                                                                                                                                                        |
-| Documents                                                                                                                                                                                                                                                                      | Quote \*† Order \*† Invoice \*† Back order \*† Return \*† Picking ticket † Packing slip † Bulk Picking ticket † Fulfillment order †                                                                                                                                                                                                                                                                      | Select a document in the Sales Transaction Entry window and choose File \>\> Print to print a single document, select a batch in the Sales Batch Entry window and choose File \>\> Print to print an entire batch **or** choose Sales \>\> Transactions \>\> Print Sales Documents to print a range of documents **or** choose Sales \>\> Inquiry \>\> Sales Documents to print from history. |
-| Labels                                                                                                                                                                                                                                                                         | Address labels COD labels Prospect mailing labels                                                                                                                                                                                                                                                                                                                                                        | Choose Administration \>\> Reports \>\> Company \>\> Mailing labels and choose a label type from the reports list.                                                                                                                                                                                                                                                                            |
-| Posting reports                                                                                                                                                                                                                                                                | Sales Edit List \* Sales Batch List \* Sales Posting Journal \*† Sales Voided Journal \*† Distribution Breakdown Register \*† Inventory Sales Register \*† Salesperson Register \*† Sales Deposits Journal \*†                                                                                                                                                                                           | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure.                                                                                                                                                                                                                                             |
-| Edit lists                                                                                                                                                                                                                                                                    | Sales Edit List\* Sales Batch List\* Sales Edit List Currency Summary\*† Edit Sales Document Status                                                                                                                                                                            | Choose File \>\> Print in the window you used to complete the procedure.                                                                                                                                                                                                                                                                                                                      |
-| History reports                                                                                                                                                                                                                                                                | Sales Transaction History Report\* Sales History Register\* Distribution Detail History Report\* Sales Quote History Report\* Sales Order History Report\* Sales Serial/Lot History Report\*                                                                                | Create report options in the Sales History Reports window.                                                                                                                                                                                                                                                                                                                                    |
-| \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. |                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Report type**                                                                                                                                                                                                                                                                | **Report**                                                                                                                                                                                                                                                                                                                                                                                               | **Printing method**                                                                                                                                                                                                                                                                                                                                                                           |
-| Utility reports                                                                                                                                                                                                                                                                | Transaction Removal Report                                                                                                                                                                                                                                                  | These reports will be printed when you complete the corresponding procedure.                                                                                                                                                                                                                                                                                                                  |
-| Analysis reports                                                                                                                                                                                                                                                              | Sales Document Analysis Reports †                                                                                                                                                                                                                                              | Create report options in the                                                                                                                                                                                                                                                                                                                                                                  |
-| Processing reports                                                                                                                                                                                                                                                           | Holds Processing Preview List                                                                                                                                                                                                                                                 | These reports will be printed when you complete the corresponding procedure.                                                                                                                                                                                                                                                                                                                  |
-| Inquiry reports                                                                                                                                                                                                                                                                | Sales Document Inquiry Report                                                                                                                                                                                                                                                  | Choose File \>\> Print in the corresponding Inquiry window.                                                                                                                                                                                                                                                                                                                                   |
-| \* Indicates reports that can be printed with multicurrency information displayed.                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Report type**| **Report**   | **Printing method**   |
+|----------------|--------------|------------------------|
+| Activity reports   | Sales Quote Report \* Sales Open Order Report \* Sales Back Order Report \* Sales Order Fulfillment Report Sales Document Status Report   | Create report options in the Sales Activity Reports window.   </br> </br> \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.|
+| Setup reports | Sales Order Processing Setup List </br>Sales Quote Setup List </br>Sales Order Setup List</br> Sales Invoice Setup List</br> Sales Back Order Setup List</br> Sales Return Setup List</br> Sales Process Holds Setup List</br> Prospect Setup List</br> Prospect List-Detailed Sales User-defined Fields Setup Lists Picking Instructions Report Customer Picking Instructions List Advanced Picking Setup Sales Fulfillment Workflow Setup List | Choose \>\> Print in the setup windows **or** create report options in the Sales Setup Reports window.   |
+| Documents | Quote \*† Order \*† Invoice \*† Back order \*† Return \*† Picking ticket † Packing slip † Bulk Picking ticket † Fulfillment order †  | Select a document in the Sales Transaction Entry window and choose File \>\> Print to print a single document, select a batch in the Sales Batch Entry window and choose File \>\> Print to print an entire batch **or** choose Sales \>\> Transactions \>\> Print Sales Documents to print a range of documents **or** choose Sales \>\> Inquiry \>\> Sales Documents to print from history. |
+| Labels   | Address labels COD labels Prospect mailing labels | Choose Administration \>\> Reports \>\> Company \>\> Mailing labels and choose a label type from the reports list. |
+| Posting reports | Sales Edit List \* Sales Batch List \* Sales Posting Journal \*† Sales Voided Journal \*† Distribution Breakdown Register \*† Inventory Sales Register \*† Salesperson Register \*† Sales Deposits Journal \*† | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure.  |
+| Edit lists| Sales Edit List\* Sales Batch List\* Sales Edit List Currency Summary\*† Edit Sales Document Status| Choose File \>\> Print in the window you used to complete the procedure. |
+| History reports | Sales Transaction History Report\* Sales History Register\* Distribution Detail History Report\* Sales Quote History Report\* Sales Order History Report\* Sales Serial/Lot History Report\*| Create report options in the Sales History Reports window. </br> \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. |                                                                                                                 | Utility reports | Transaction Removal Report | These reports will be printed when you complete the corresponding procedure.  |
+| Analysis reports  | Sales Document Analysis Reports †  | Create report options in the MISSINGCONTENT|
+| Processing reports | Holds Processing Preview List   | These reports will be printed when you complete the corresponding procedure. |
+| Inquiry reports | Sales Document Inquiry Report | Choose File \>\> Print in the corresponding Inquiry window. </br> \* Indicates reports that can be printed with multicurrency information displayed.  |
 
 >   Journal Removal Report
 
@@ -8213,21 +8048,22 @@ Sales Distribution History Sales Transaction History Tax Details
 
 5.  After viewing the report, select a format and print the report.
 
-**Part 6: Utilities**
+## Part 6: Utilities
 
->   This part of the documentation contains information about removing sales history and reconciling sales information. Once you’ve determined how much historical information to retain, you can remove the information that’s no longer needed. Reconciling is the process of verifying that your unposted sales documents are accurate. This following topics are discussed:
+This part of the documentation contains information about removing sales history and reconciling sales information. Once you’ve determined how much historical information to retain, you can remove the information that’s no longer needed. Reconciling is the process of verifying that your unposted sales documents are accurate. This following topics are discussed:
 
 -   *Chapter 30, “Reconciling and removing sales documents,”* explains reconciliation—the process of verifying amounts on your sales documents— and how to move sales documents to history.
 
 -   *Chapter 31, “Sales history removal,”* describes how to remove account, transaction, deposit, journal, and tax history that is no longer needed.
 
-**Chapter 30: Reconciling and removing sales documents**
+### Chapter 30: Reconciling and removing sales documents
 
->   Use the Reconcile-Remove Sales Documents window to reconcile your sales records and remove any documents that have no remaining quantities but haven’t been moved to history.
+Use the Reconcile-Remove Sales Documents window to reconcile your sales records and remove any documents that have no remaining quantities but haven’t been moved to history.
 
->   *Before reconciling or removing sales documents, back up all your company data. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
+> [!NOTE]
+> Before reconciling or removing sales documents, back up all your company data. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).
 
->   This information contains the following sections:
+This information contains the following sections:
 
 -   *Reconciling sales documents*
 
@@ -8235,7 +8071,7 @@ Sales Distribution History Sales Transaction History Tax Details
 
 #### Reconciling sales documents
 
->   Reconcile your sales documents to verify the item quantities and totals on your sales documents. When you reconcile sales documents, the following quantities and information will be recalculated and adjusted as needed:
+Reconcile your sales documents to verify the item quantities and totals on your sales documents. When you reconcile sales documents, the following quantities and information will be recalculated and adjusted as needed:
 
 -   Document item quantities
 
@@ -8291,9 +8127,9 @@ Sales Distribution History Sales Transaction History Tax Details
 
 4.  Choose Process to remove the documents. The Reconcile-Remove Sales Document Report will be printed automatically and will list the sales documents that were removed.
 
-**Chapter 31: Sales history removal**
+### Chapter 31: Sales history removal
 
->   History records provide useful information for audit purposes. If you’re keeping history records in Sales Order Processing, the records can be maintained for an unlimited number of years. For more information about keeping history records, see *Setting up Sales Order Processing default entries* on page 11.
+History records provide useful information for audit purposes. If you’re keeping history records in Sales Order Processing, the records can be maintained for an unlimited number of years. For more information about keeping history records, see *Setting up Sales Order Processing default entries* on page 11.
 
 >   Because historical records increase the amount of hard disk space needed, you should remove history periodically to keep only the information you need. If you no longer need certain history records, you can remove all the records or a range of records. If you specify a range to remove, only the documents in the range that have been moved to history will be removed.
 
