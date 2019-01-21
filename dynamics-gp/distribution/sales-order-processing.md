@@ -2481,21 +2481,17 @@ Use the Trade Discount expansion button to open the Sales Trade Discount Entry w
 
 2.  Choose Save.
 
-Chapter 15: Returns
--------------------
+### Chapter 15: Returns
 
->   Return documents record the return of items you previously sold. Returns
->   decrease the customer’s balance on account and may increase inventory
->   quantities. Because returns record an increase to inventory and a refund of
->   sales, they should be posted.
+Return documents record the return of items you previously sold. Returns decrease the customer’s balance on account and may increase inventory quantities. Because returns record an increase to inventory and a refund of sales, they should be posted.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Return quantity types*
 
 -   *Entering a return*
 
-### Return quantity types
+#### Return quantity types
 
 >   When a customer returns an item, you must enter the returned item into one
 >   or more return quantity types. Quantity types are used to track whether an
@@ -2540,8 +2536,6 @@ Chapter 15: Returns
 >   kit, change the site that a component will be returned to and change the
 >   extended kit quantity of a component.
 
-##### **P A R T 2** T R A N S A C T I O N E N T R Y
-
 If you change the extended kit quantity for a component, the Sales Returned
 Quantities Entry window will open and you can enter the quantity and quantity
 type for the component. You can choose a quantity type for the component that is
@@ -2551,7 +2545,7 @@ from the Sales Transaction Entry window by highlighting the kit item, then
 choosing the item expansion button to open the Sales Item Detail Entry window.
 In that window, choose Kits to open the Sales Kit Return Options window.
 
-### Entering a return
+#### Entering a return
 
 You can use the Sales Transaction Entry window to enter and print returns for
 your customers and to view, void, post, or delete existing returns.
@@ -2678,27 +2672,14 @@ Distribution to view or change the accounts used for that item.
 2.  Choose the Attachment Management icon to attach documents to the quote, if
     applicable.
 
->   **C H A P T E R 1 5** R E T U R N S
-
-1.  Enter additional information about the return by choosing Holds or User-
-
->   Defined. If a hold has been assigned to the return, a stop icon will appear
->   on the Hold button.
+1.  Enter additional information about the return by choosing Holds or User-Defined. If a hold has been assigned to the return, a stop icon will appear on the Hold button.
 
 1.  Choose Distributions to verify or change distribution accounts.
 
->   The distribution accounts and amounts will be displayed for Inventory and
+    The distribution accounts and amounts will be displayed for Inventory and Cost of Goods Sold. The unit cost for the returned item will appear in the Sales Transaction Entry window and the default amount will be the current cost of the item from the Item Maintenance window. You can change the unit cost in the Sales Transaction Entry window if the return ID is set up to allow overriding item costs.
 
->   Cost of Goods Sold. The unit cost for the returned item will appear in the
->   Sales Transaction Entry window and the default amount will be the current
->   cost of the item from the Item Maintenance window. You can change the unit
->   cost in the Sales Transaction Entry window if the return ID is set up to
->   allow overriding item costs.
-
->   *You can distribute amounts to unit accounts to record increases to
->   non-financial accounts. The amounts you distribute to unit accounts won’t be
->   totaled with other distributions. For more information about unit accounts,
->   see the General Ledger documentation.*
+    > [!Note]
+    > You can distribute amounts to unit accounts to record increases to non-financial accounts. The amounts you distribute to unit accounts won’t be totaled with other distributions. For more information about unit accounts, see the General Ledger documentation.
 
 1.  Choose Commissions to verify or change the commission amounts. For more
     information about commissions, see *Modifying commission information* on
@@ -2713,16 +2694,11 @@ Distribution to view or change the accounts used for that item.
 >   If you’re using multiple bins and posting fails, bin quantities revert to
 >   their previous values.
 
-Chapter 16: Transaction detail entry
-------------------------------------
+### Chapter 16: Transaction detail entry
 
->   The Sales Transaction Entry window is designed to resemble a physical sales
->   document and includes customer, line item, and total information. Use the
->   expansion buttons in the Sales Transaction Entry window to open windows
->   where you can enter detailed information about a document, customer, line
->   item, or other element of a transaction.
+The Sales Transaction Entry window is designed to resemble a physical sales document and includes customer, line item, and total information. Use the expansion buttons in the Sales Transaction Entry window to open windows where you can enter detailed information about a document, customer, line item, or other element of a transaction.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Entering document detail information*
 
@@ -2989,7 +2965,7 @@ of the type of transaction to enter.
 | Account C MARK  | \$10      |            |
 | Account D RECV  | \$75      |            |
 
-### Entering Intrastat trade statistics
+#### Entering Intrastat trade statistics
 
 >   Use the Sales Intrastat Entry window to enter the information required to
 >   create the Intrastat Trade Report you submit to your government, and the EC
@@ -3057,13 +3033,11 @@ of the type of transaction to enter.
 
 5.  Choose OK to save the record.
 
-Chapter 17: Payments and deposits
----------------------------------
+### Chapter 17: Payments and deposits
 
->   Use the Sales Payment Entry window to enter information about payments or
->   deposits received for a document.
+Use the Sales Payment Entry window to enter information about payments or deposits received for a document.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Distributing payments separately*
 
@@ -3077,7 +3051,7 @@ Chapter 17: Payments and deposits
 
 -   *Removing a deposit or payment*
 
-### Distributing payments separately
+#### Distributing payments separately
 
 >   If Sales Order Processing is set up to use separate payment distributions,
 >   document and payment distributions entered on the same transaction will be
@@ -3109,7 +3083,7 @@ Chapter 17: Payments and deposits
 | Account B CASH  | \$20      |            |
 | Account C RECV  | \$80      |            |
 
-### Entering deposits and payments on orders or back orders
+#### Entering deposits and payments on orders or back orders
 
 >   You can enter a deposit or payment amount received from a customer for an
 >   order or back order in the Amount Received field in the Sales Transaction
@@ -3159,8 +3133,6 @@ Chapter 17: Payments and deposits
 >   However, you can’t transfer a payment amount greater than the invoice amount
 >   to an invoice. You can transfer any deposit amount to an invoice.
 
->   **C H A P T E R 1 7** P A Y M E N T S A N D D E P O S I T S
-
 1.  Select the payment or deposit type and enter the amount. Enter the remaining
     information about the payment or deposit, such as the check number or credit
     card number.
@@ -3186,7 +3158,7 @@ Chapter 17: Payments and deposits
 >   up. If you can’t save or post a transaction, check the status of the options
 >   in the National Accounts Maintenance window.*
 
-### Entering a payment for an invoice, fulfillment order, or return
+#### Entering a payment for an invoice, fulfillment order, or return
 
 >   Use the Sales Payment Entry window to return payments you’ve received for
 >   returned items.You can also use this window to enter payments on invoices
@@ -3240,7 +3212,7 @@ Chapter 17: Payments and deposits
 >   up. If you can’t save or post a transaction, check the status of the options
 >   in the National Accounts Maintenance window.*
 
-### Posting deposits
+#### Posting deposits
 
 >   A deposit amount on an order or back order will be posted immediately when
 >   you close the Sales Payment Entry window. Deposit amounts will be posted to
@@ -3266,7 +3238,7 @@ Chapter 17: Payments and deposits
 >   when you close the Sales Payment Entry window. The difference will also be
 >   reflected in Receivables Management.
 
-### Posting payments
+#### Posting payments
 
 >   A payment amount on an order or back order won’t be posted until the order
 >   or back order is transferred to an invoice and the invoice is posted.
@@ -3286,7 +3258,7 @@ Chapter 17: Payments and deposits
 >   transferred to an invoice and posted. Credit card payment amounts will not
 >   appear in the Customer Payment Summary Inquiry window.
 
-### Removing a deposit or payment
+#### Removing a deposit or payment
 
 >   You can remove a deposit or payment from a sales order, back order, or
 >   invoice before transferring or deleting the document.
@@ -3308,17 +3280,11 @@ Chapter 17: Payments and deposits
 >   the amount will be removed from the current transaction in the Sales Payment
 >   Entry window, but you will be able to view the full amount in inquiries.
 
-Chapter 18: Sales Order Processing taxes
-----------------------------------------
+### Chapter 18: Sales Order Processing taxes
 
->   Sales tax can be calculated, modified, and distributed in Sales Order
->   Processing. Use the Sales Tax Summary Entry window to view tax distributions
->   and to change distribution accounts, if your system is set up to allow
->   editing summary-level taxes. To change tax details or the amounts
->   distributed to tax details for individual line items, use the Sales Line
->   Item Tax Detail Entry window.
+Sales tax can be calculated, modified, and distributed in Sales Order Processing. Use the Sales Tax Summary Entry window to view tax distributions and to change distribution accounts, if your system is set up to allow editing summary-level taxes. To change tax details or the amounts distributed to tax details for individual line items, use the Sales Line Item Tax Detail Entry window.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Sales tax calculations*
 
@@ -3326,7 +3292,7 @@ Chapter 18: Sales Order Processing taxes
 
 -   *Calculating and distributing detail taxes*
 
-### Sales tax calculations
+#### Sales tax calculations
 
 >   When you set up Sales Order Processing, you can choose to use a single tax
 >   schedule for all items on all documents or you can mark the advanced option
@@ -3377,7 +3343,7 @@ Chapter 18: Sales Order Processing taxes
 >   Calculated Tax expansion button to open the Sales Line Item Tax Detail Entry
 >   window.
 
-### Calculating and distributing summary taxes
+#### Calculating and distributing summary taxes
 
 >   Use the Sales Tax Summary Entry window to add, change, delete, or view
 >   summarized tax amounts for a document, as well as the accounts to which the
@@ -3412,8 +3378,6 @@ Chapter 18: Sales Order Processing taxes
 
 3.  Enter total information.
 
->   **C H A P T E R 1 8** S A L E S O R D E R P R O C E S S I N G T A X E S
-
 1.  Choose the Tax expansion button in the Sales Transaction Entry window to
     open the Sales Tax Summary Entry window, where you can view or edit the tax
     distribution accounts and amounts.
@@ -3428,7 +3392,7 @@ Chapter 18: Sales Order Processing taxes
 
 >   Choose Default to restore the default tax information.
 
-### Calculating and distributing detail taxes
+#### Calculating and distributing detail taxes
 
 >   Use the Sales Line Item Tax Detail Entry window to add, change, delete, or
 >   view tax amounts calculated on an individual line item. If the tax amount
@@ -3467,7 +3431,7 @@ This part of the documentation explains allocating and fulfilling items, and cre
 
 The following topics are discussed:
 
--   *Chapter 19, “Allocating item quantities,”* describes how items are allocated and fulfilled on orders, fulfillment orders, and invoices.
+-   *Chapter 19, “Allocating item quantities,”* describes how items areIf there is a shortage on a sales line item allocated and fulfilled on orders, fulfillment orders, and invoices.
 
 -   *Chapter 20, “Separate fulfillment,”* describes the fulfillment methods if you have chosen to fulfill items separately from allocation.
 
@@ -4224,8 +4188,6 @@ you that you must select additional bins.
     you can assign holds to or remove holds from the document. A stop icon will
     appear on the Holds button if a hold has been assigned to the document.
 
->   **C H A P T E R 2 0** S E P A R A T E F U L F I L L M E N T
-
 1.  Choose the User-Defined button to open the Sales User-Defined Fields Entry
     window, where you can enter user-defined information for this document.
 
@@ -4239,16 +4201,11 @@ you that you must select additional bins.
 1.  Choose Save and close the window. The Order Fulfillment Status Report will
     be printed.
 
-Chapter 21: New purchase orders
--------------------------------
+### Chapter 21: New purchase orders
 
->   If there is a shortage on a sales line item or an item is back ordered, you
->   can generate a purchase order for the item. You also can generate purchase
->   orders for drop-ship and non-inventoried items. You can create purchase
->   orders from orders or back orders in Sales Order Processing or you can link
->   sales documents to existing purchase orders.
+If there is a shortage on a sales line item or an item is back ordered, you can generate a purchase order for the item. You also can generate purchase orders for drop-ship and non-inventoried items. You can create purchase orders from orders or back orders in Sales Order Processing or you can link sales documents to existing purchase orders.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Purchase orders from sales documents*
 
@@ -4270,7 +4227,7 @@ Chapter 21: New purchase orders
 
 -   *Generating purchase orders from multiple sales documents*
 
-### Purchase orders from sales documents
+#### Purchase orders from sales documents
 
 >   You can use the Purchase Orders Preview window to view and modify pending
 >   purchase orders or to generate purchase orders from orders or back orders.
@@ -4343,7 +4300,7 @@ Chapter 21: New purchase orders
 >   A sales line item can be linked to only one purchase order line item. For
 >   example, you can’t split the sales line item quantity between two vendors.
 
-### Parts of the Purchase Orders Preview window
+#### Parts of the Purchase Orders Preview window
 
 >   The Purchase Orders Preview window shows the pending purchase orders that
 >   can be created from selected sales documents. You can view information about
@@ -4370,17 +4327,17 @@ Chapter 21: New purchase orders
 >   help you view and change information in the window. These buttons and icons
 >   are listed below.
 
-| **Button or icon**                         | **Description**                                                                                                                                                                                                   |
-|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Button or icon**                         | **Description**  |
+|--------------------------------------------|------------------|
 | [./media/image47.jpg](./media/image47.jpg) | Error—Appears beside objects in the tree view. You must correct the error before you can create the purchase order. For more information on errors, see *Pending purchase order errors and warnings* on page 149. |
 | [./media/image48.jpg](./media/image48.jpg) | Warning—Appears beside objects in the tree view. You can create a purchase order even if it contains a warning. For more information on warnings, see *Pending purchase order errors and warnings* on page 149.   |
-| [./media/image49.png](./media/image49.png) | Expand all objects—Choose to expand the tree view to display all objects.                                                                                                                                         |
-| [./media/image50.png](./media/image50.png) | Collapse all objects—Choose to collapse the tree view to display only the purchase order objects.                                                                                                                 |
-| [./media/image51.png](./media/image51.png) | Add vendor—Choose to add a new vendor in the tree view. A new purchase order will be created under the new vendor and you can assign line items to the new purchase order.                                        |
-| [./media/image52.jpg](./media/image52.jpg) | Organize—Choose to move objects in the tree view. For example, you can move an item from one vendor to another.                                                                                                   |
-| [./media/image53.png](./media/image53.png) | Ascending/Descending sort button—Use to sort documents in ascending or descending order in the window view.                                                                                                       |
+| [./media/image49.png](./media/image49.png) | Expand all objects—Choose to expand the tree view to display all objects.   |
+| [./media/image50.png](./media/image50.png) | Collapse all objects—Choose to collapse the tree view to display only the purchase order objects.   |
+| [./media/image51.png](./media/image51.png) | Add vendor—Choose to add a new vendor in the tree view. A new purchase order will be created under the new vendor and you can assign line items to the new purchase order.   |
+| [./media/image52.jpg](./media/image52.jpg) | Organize—Choose to move objects in the tree view. For example, you can move an item from one vendor to another.|
+| [./media/image53.png](./media/image53.png) | Ascending/Descending sort button—Use to sort documents in ascending or descending order in the window view. |
 
-### Pending purchase order errors and warnings
+#### Pending purchase order errors and warnings
 
 >   If a problem is detected on a pending purchase order, an error or warning
 >   icon will appear next to the object in the tree view and an alert message
@@ -4412,7 +4369,7 @@ Chapter 21: New purchase orders
 >   a vendor is on hold or if the quantity to purchase is more than the maximum
 >   order quantity for the item.
 
-### The tree view
+#### The tree view
 
 >   The Purchase Orders Preview window uses a tree view to show pending or
 >   existing purchase orders. Each line in the tree is an object—and the objects
@@ -4439,7 +4396,7 @@ Chapter 21: New purchase orders
 >   purchase order information in the tree view, as well as any errors and
 >   warnings.
 
-### Purchase Order Preview window tabs
+#### Purchase Order Preview window tabs
 
 >   The Purchase Orders Preview window uses tabs to organize the information
 >   relating to the pending purchase orders. Each tab contains a window that
@@ -4505,7 +4462,7 @@ Chapter 21: New purchase orders
 
 ![](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
 
-### Changing a vendor
+#### Changing a vendor
 
 >   You can add a vendor to the tree using the tree view, regardless of which
 >   tab you are viewing in the Purchase Orders Preview window. A new purchase
@@ -4543,7 +4500,7 @@ Chapter 21: New purchase orders
     or the item tab. For more information about the Organize button, see
     *Modifying a purchase order in the tree view* on page 153.
 
-### Modifying a purchase order in the tree view
+#### Modifying a purchase order in the tree view
 
 >   You can move items from one pending purchase order to another or change the
 >   vendor on a pending purchase order using the tree view. For example, if the
@@ -4599,7 +4556,7 @@ Chapter 21: New purchase orders
 >   must generate purchase orders that include your changes before closing the
 >   window.*
 
-### Modifying a purchase order using the tabs
+#### Modifying a purchase order using the tabs
 
 >   Use the Purchase Orders Preview window tabs to modify information such as
 >   vendor ID and quantity to purchase on pending purchase orders. The tree view
@@ -4645,7 +4602,7 @@ Chapter 21: New purchase orders
 >   must generate purchase orders that include your changes before closing the
 >   window.*
 
-### Generating a purchase order from a single sales document
+#### Generating a purchase order from a single sales document
 
 >   After you have viewed and modified a pending purchase order, you must
 >   generate the purchase order in the Purchase Orders Preview window.
@@ -4685,7 +4642,7 @@ Chapter 21: New purchase orders
 >   Taxes will be automatically calculated when you generate purchase orders
 >   from the Purchase Orders Preview window.
 
-### Generating purchase orders from multiple sales documents
+#### Generating purchase orders from multiple sales documents
 
 >   After you have viewed and modified pending purchase orders, you must
 >   generate the purchase orders in the Purchase Orders Preview window.
@@ -4733,22 +4690,13 @@ Chapter 21: New purchase orders
 >   Taxes will be automatically calculated when you generate purchase orders
 >   from the Purchase Orders Preview window.
 
-Chapter 22: Links to existing purchase orders
----------------------------------------------
+### Chapter 22: Links to existing purchase orders
 
->   Depending on how Purchase Order Processing was set up, the system can
->   attempt to link sales line items with quantity shortages to existing
->   purchase orders. If a purchase order exists for the line item, the purchase
->   order will be listed in the Purchase Orders Preview window. If an existing
->   purchase order doesn’t contain the line item, a pending purchase order will
->   be created.
+Depending on how Purchase Order Processing was set up, the system can attempt to link sales line items with quantity shortages to existing purchase orders. If a purchase order exists for the line item, the purchase order will be listed in the Purchase Orders Preview window. If an existing purchase order doesn’t contain the line item, a pending purchase order will be created.
 
->   You also can manually link a sales line item to an existing purchase order,
->   change existing links or delete existing links. Once a sales line item has
->   been linked to a purchase order, you can check the status of that purchase
->   order in the PO Commitment for Sales Document window.
+You also can manually link a sales line item to an existing purchase order, change existing links or delete existing links. Once a sales line item has been linked to a purchase order, you can check the status of that purchase order in the PO Commitment for Sales Document window.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Linking an item to an existing purchase order*
 
@@ -4879,7 +4827,7 @@ Chapter 22: Links to existing purchase orders
     added, the link purchase order icon will appear next to the line item in the
     Purchase Order Entry window and the Sales Transaction Entry window.
 
-### Removing an existing link to a purchase order
+#### Removing an existing link to a purchase order
 
 >   Once you link a sales line item to a purchase order, the link purchase order
 >   icon will be displayed next to the quantity for the sales line item in the
@@ -4932,7 +4880,7 @@ Chapter 22: Links to existing purchase orders
     removed, the link icon will be removed from the line item in the Sales
     Transaction Entry window and the Purchase Order Entry window.
 
-### Changing the link to a purchase order
+#### Changing the link to a purchase order
 
 >   You can change the link to an existing purchase order by deleting the
 >   existing link and then adding a link to a different purchase order using the
@@ -4963,7 +4911,7 @@ Chapter 22: Links to existing purchase orders
 
 5.  Choose Save.
 
-### Checking the commitment status
+#### Checking the commitment status
 
 >   For any item on a sales order or back order, you can check the commitment
 >   status, which indicates if the item is committed to a purchase order and
@@ -5005,8 +4953,7 @@ Chapter 22: Links to existing purchase orders
 
 1.  Close the window.
 
-Chapter 23: Receiving purchase orders
--------------------------------------
+### Chapter 23: Receiving purchase orders
 
 >   If you have created a purchase order from a sales document or have linked a
 >   sales line item to an existing purchase order, the quantities can be
@@ -5031,7 +4978,7 @@ Chapter 23: Receiving purchase orders
 
 -   *Printing the Back-Ordered Items Received report*
 
-### Allocating and fulfilling inventory items
+#### Allocating and fulfilling inventory items
 
 >   When you post a shipment or shipment/invoice that has a commitment to a
 >   sales order line item, the site ID will be checked. If the site IDs match,
@@ -5088,7 +5035,7 @@ Chapter 23: Receiving purchase orders
 >   *If a sales line item is committed to a purchase order and the purchase
 >   order hasn’t been received against, the sales line item can’t be allocated.*
 
-### Fulfilling non-inventoried items
+#### Fulfilling non-inventoried items
 
 >   When you post a shipment or shipment/invoice that is linked to a
 >   non-inventoried item on a sales document, the quantity fulfilled for the
@@ -5118,7 +5065,7 @@ Chapter 23: Receiving purchase orders
 >   items. For more information about separate fulfillment, see *Chapter 20,
 >   “Separate fulfillment.”*
 
-### Fulfilling drop-ship items
+#### Fulfilling drop-ship items
 
 >   When you post an invoice for a drop-ship purchase order, the quantity
 >   fulfilled will be updated on the sales order based on the quantity invoiced
@@ -5143,7 +5090,7 @@ Chapter 23: Receiving purchase orders
 >   information about separate fulfillment, see *Chapter 20, “Separate
 >   fulfillment.”*
 
-### Purchase orders created from back orders
+#### Purchase orders created from back orders
 
 >   For a purchase order created from a back order, use the Back-Ordered Items
 >   Received report to determine which back orders can be transferred to orders
@@ -5152,7 +5099,7 @@ Chapter 23: Receiving purchase orders
 >   For more information, see *Printing the Back-Ordered Items Received report*
 >   on page 167 and *Chapter 27, “Transferring documents.”*
 
-### Printing the Back-Ordered Items Received report
+#### Printing the Back-Ordered Items Received report
 
 >   The Back-Ordered Items Received report is an important resource for tracking
 >   the items received on a purchase order. This Purchase Order Processing
