@@ -1605,7 +1605,7 @@ Use the Sales Batch Entry window to create a batch. You must save quotes, orders
 
 **To create a batch:**
 
-1 Open the Sales Batch Entry window.
+1. Open the Sales Batch Entry window.
 
     (Sales \>\> Transactions \>\> Sales Batches)
 
@@ -1794,17 +1794,16 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
     - Only active items can be entered on a quote. You can continue processing a quote if an item has been inactivated, but you can’t change the quantity.
 
-    -   If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the quote. You also can enter the suggested quantity and the site ID for each suggested sales item.
+    - If an item has suggested sales items assigned to it for the document type, the Suggest Sales Item Entry window opens when you press TAB to move to the next line in the scrolling window. You can use the window to mark the suggested sales items to add to the quote. You also can enter the suggested quantity and the site ID for each suggested sales item.
 
-    -   To remove an item from the quote, select the item and choose Edit \>\> Delete Row.
+    - To remove an item from the quote, select the item and choose Edit \>\> Delete Row.
 
-    -   To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
+    - To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
-    > [!NOTE]
-    > To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.
+        > [!NOTE]
+        > To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.
 
 12.  Enter the trade discount, freight, and miscellaneous amounts for this quote.
-
     Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
 13.  Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
@@ -1814,12 +1813,10 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 15.  Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
 16.  Choose Holds, User-Defined, or Commissions to view or enter additional information about the quote. If a hold has been assigned to the quote, a stop icon will appear on the Hold button.
-
     For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
 
 17.  To print the quote or send the quote in e-mail, choose File \>\> Print. You also can print the quote by choosing the printer button or send the quote in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending sales documents in e-mail, see *Chapter 24, “Printing and sending documents in email.”*
-
-    > [!NOTE)
+    > [!NOTE]
     > If you are using sales quote workflow, the quote must be approved before you can print it or send it in e-mail. You can print a quote or send a quote in e-mail that doesn’t need approval.
 
 18.  Save the quote or submit the quote, if you are using sales quote workflow.
@@ -1920,7 +1917,6 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 10.  Enter or select a Currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.  Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the Rate Type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8,**“Multicurrency transactions.”*
 
 11.  Enter or select item numbers, units of measure, and item quantities for the order. To view additional lines of information for each item, choose the hide and show button next to the Extended Price prompt.
-
     If you’re using multiple bins and you change the quantity ordered or the unit of measure after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
 
     - To view available to promise information about the item if you’re using ATP, choose the Qty Ordered expansion button to open the Inventory Available to Promise Inquiry window.
@@ -1945,17 +1941,14 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 15.  To add a comment on the order, enter the comment ID or a one-time comment. For more information about adding comments, refer to *Adding a comment to sales documents* on page 190.
 
 16.  Enter the trade discount, freight, miscellaneous, and tax amounts for the order.
-
     Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
 17.  Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
 18.  Choose Holds, User-Defined or Commissions to enter additional information about the order. If a hold has been assigned to the order, a stop icon will appear on the Hold button.
-
     For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
 
 19.  To print the order or send the order in e-mail, choose File \>\> Print. You also can print the order by choosing the printer button or send the order in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending documents in e-mail, see *Chapter 24, “Printing and sending documents in e-mail.”*
-
     > [!NOTE]
     > If the order exceeds the customer’s credit limit and you are using customer credit limit override workflow, the order must be approved before you can print it or send it in e-mail. You can print an order or send an order in e-mail that doesn’t need approval.
 
@@ -2115,15 +2108,12 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 9.  Enter or select the site ID that the items will be sold from. The site ID will be used to allocate items from inventory and might be used to calculate taxes.
 
 10.  Enter the purchase order number if the customer has provided you with one.
-
     The purchase order number will be printed on the fulfillment order or invoice.
 
 11.  Enter or select a currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.
-
     Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the rate type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8, “Multicurrency transactions.”*
 
 12.  Enter or select item numbers, units of measure, and item quantities for the fulfillment order or invoice. To view additional lines of information for each item, choose the hide and show button next to the Extended Price field.
-
     Only active items can be entered. You can continue processing if an item has been inactivated, but you can’t change the quantity.
 
     If you’re using multiple bins and you change the site ID, quantity, or unit of measure after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
@@ -2330,154 +2320,85 @@ Use the Trade Discount expansion button to open the Sales Trade Discount Entry w
     If you’re using multiple bins and posting fails, bin quantities revert to  their previous values.
 
 ### Chapter 14: Back orders
------------------------
 
->   Enter a back order when you encounter an item shortage while entering an
->   order or invoice in the Sales Transaction Entry window.
+Enter a back order when you encounter an item shortage while entering an order or invoice in the Sales Transaction Entry window.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
--   *Understanding back orders*
+- *Understanding back orders*
 
--   *Entering a back order*
+- *Entering a back order*
 
-### Understanding back orders
+#### Understanding back orders
 
->   You can use the Sales Transaction Entry window to enter and print back
->   orders for your customers and to view, void, delete, or transfer existing
->   back orders.
+You can use the Sales Transaction Entry window to enter and print back orders for your customers and to view, void, delete, or transfer existing back orders.
 
->   Back orders are saved but not posted and distributions aren’t calculated on
->   back orders. When an item that has been back ordered is in stock, you can
->   transfer the back order to an order or an invoice. When you transfer a back
->   order to an invoice, fulfillment order, or order, information about the
->   document, customer, and items will be transferred to the new document.
+Back orders are saved but not posted and distributions aren’t calculated on back orders. When an item that has been back ordered is in stock, you can transfer the back order to an order or an invoice. When you transfer a back order to an invoice, fulfillment order, or order, information about the document, customer, and items will be transferred to the new document.
 
->   You also can create a back order by transferring an order, fulfillment
->   order, or invoice to a back order. When you transfer an order or invoice
->   document to a back order, information about the document, customer, and
->   items will be transferred to the back order. For more information about
->   transferring documents, see *Transferring an individual sales document* on
->   page 214.
+You also can create a back order by transferring an order, fulfillment order, or invoice to a back order. When you transfer an order or invoice document to a back order, information about the document, customer, and items will be transferred to the back order. For more information about transferring documents, see *Transferring an individual sales document* on page 214.
 
->   You can link a back order to an existing purchase order or create a new
->   purchase order for back-ordered items. For more information, see *Linking an
->   item to an existing purchase order* on page 159 and *Purchase orders from
->   sales documents* on page 147.
+ You can link a back order to an existing purchase order or create a new purchase order for back-ordered items. For more information, see *Linking an item to an existing purchase order* on page 159 and *Purchase orders from sales documents* on page 147.
 
-### Entering a back order
+#### Entering a back order
 
->   You can use the Sales Transaction Entry window to enter and print back
->   orders. For more information about back orders, see *Understanding back
->   orders* on page 99.
+You can use the Sales Transaction Entry window to enter and print back orders. For more information about back orders, see *Understanding back orders* on page 99.
 
->   You can use the Copy button in the Sales Transaction Entry window to copy
->   line items from one sales document to another. See *Copying sales document
->   items* on page 85 for more information.
+You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* on page 85 for more information.
 
->   **To enter a back order:**
+**To enter a back order:**
 
->   In the navigation pane, choose the Sales button, and then choose the Sales
->   Order Transactions list.
+1. In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-##### **P A R T 2** T R A N S A C T I O N E N T R Y
+2. In the New group or its overflow menu, choose Back Order to open the Sales Transaction Entry window.
 
-1.  In the New group or its overflow menu, choose Back Order to open the Sales
-    Transaction Entry window.
+    ![](media/6cb56557aa7535b46f30210334e27284.jpg)
 
-![](media/6cb56557aa7535b46f30210334e27284.jpg)
-
-1.  Select Back Order and enter or select the ID of the type of back order to
-    enter.
+1. Select Back Order and enter or select the ID of the type of back order to enter.
 
 2.  Enter a document number or accept the default entry.
 
-3.  Enter the document date. The date you enter will be used to update your
-    sales records. If you want to enter a requested ship date, choose the Date
-    expansion button.
+3.  Enter the document date. The date you enter will be used to update your sales records. If you want to enter a requested ship date, choose the Date expansion button.
 
-4.  Enter the Site ID from which the items will be sold. The site ID will be
-    used to allocate items from inventory and might be used to calculate taxes.
+4.  Enter the Site ID from which the items will be sold. The site ID will be used to allocate items from inventory and might be used to calculate taxes.
 
-5.  Create or select a Batch ID. Back orders must be saved in a batch and will
-    remain in the batch until you void, delete, or transfer them to another
-    document.
+5.  Create or select a Batch ID. Back orders must be saved in a batch and will remain in the batch until you void, delete, or transfer them to another document.
 
-6.  Enter or select a customer ID and enter the purchase order number if the
-    customer has provided you with one. The purchase order number will be
-    printed on the back order.
+6.  Enter or select a customer ID and enter the purchase order number if the customer has provided you with one. The purchase order number will be printed on the back order.
 
-7.  Enter or select a Currency ID. If the customer record has a currency ID
-    assigned to it, the customer’s currency ID will appear as the default entry.
+7.  Enter or select a Currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.
 
->   Use the Currency ID expansion button to open the Exchange Rate Entry window,
->   where you can change the Rate Type ID or the exchange rate. For information
->   about how exchange rates affect the transaction, see *Chapter 8,
->   “Multicurrency transactions.”*
+    Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the Rate Type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8, “Multicurrency transactions.”*
 
-1.  Enter or select item numbers, units of measure, and item quantities for the
-    back order. To view additional lines of information for each item, choose
-    the hide and show button next to the Extended Price prompt.
+1.  Enter or select item numbers, units of measure, and item quantities for the back order. To view additional lines of information for each item, choose the hide and show button next to the Extended Price prompt.
 
->   • To view available to promise information about the item if you’re using
->   ATP, choose the Qty Back Ordered expansion button to open the Inventory
->   Available to Promise Inquiry window.
+    - To view available to promise information about the item if you’re using ATP, choose the Qty Back Ordered expansion button to open the Inventory Available to Promise Inquiry window.
 
->   **C H A P T E R 1 4** B A C K O R D E R S
+    - To remove an item from the back order, select the item and choose Edit \>\> Delete Row.
 
--   To remove an item from the back order, select the item and choose Edit \>\>
-    Delete Row.
+    - To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
--   To add an attachment to the item, select the item and choose the Attachment
-    Management icon to open the Document Attachment Management window.
+    > [!NOTE]
+    > To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.*
 
->   *To change the shipping address for a single line item, select the item,
->   expand to the detail view of the scrolling window, and choose the Ship to
->   Address ID expansion button to open the Sales Ship To Address Entry window.
->   The changes will apply only to the current line item.*
+1.  Enter the trade discount, freight, miscellaneous, and tax amounts for the back order.
 
-1.  Enter the trade discount, freight, miscellaneous, and tax amounts for the
-    back order.
+    Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
->   Use the Trade Discount expansion button to open the Sales Trade Discount
->   Entry window, where you can enter or edit a trade discount for the document.
->   The discount can be a percentage or an amount. Use the freight and
->   miscellaneous expansion buttons to open the Sales Tax Schedule Entry window,
->   where you can select the tax details used to tax freight and miscellaneous
->   amounts.
+1.  If you’re using extended pricing and a promotion exists for the item you entered, the Promotion Alert window will open, where you can select whether to apply the promotion to the line. If you accept a free item promotion, the free item will be added to the back order automatically.
 
-1.  If you’re using extended pricing and a promotion exists for the item you
-    entered, the Promotion Alert window will open, where you can select whether
-    to apply the promotion to the line. If you accept a free item promotion, the
-    free item will be added to the back order automatically.
+2.  Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
 
-2.  Taxes will be calculated automatically as you enter items and changes made
-    to the tax details will be transferred to the new document if the document
-    is transferred in full. For more information about transferring documents,
-    see *Transferring totals, deposits, and payments* on page 210.
+3.  If the customer makes a deposit or payment on the back order, enter the deposit or payment received. For more information about deposits and payments, see *Entering deposits and payments on orders or back orders* on page 117.
 
-3.  If the customer makes a deposit or payment on the back order, enter the
-    deposit or payment received. For more information about deposits and
-    payments, see *Entering deposits and payments on orders or back orders* on
-    page 117.
+4.  To print a comment on the back order, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents* on page 190.
 
-4.  To print a comment on the back order, enter the comment ID or a one-time
-    comment. For more information about adding comments, see *Adding a comment
-    to sales documents* on page 190.
+5.  Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
-5.  Choose the Attachment Management icon to attach documents to the quote, if
-    applicable.
+6.  Enter additional information about the back order by choosing Holds, UserDefined, or Commissions. If a hold has been assigned to the back order, a stop icon will appear on the Hold button.
 
-6.  Enter additional information about the back order by choosing Holds,
-    UserDefined, or Commissions. If a hold has been assigned to the back order,
-    a stop icon will appear on the Hold button.
+    For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
 
->   For more information about commissions, see *Modifying commission
->   information* on page 200 and *Splitting commissions* on page 201.
-
-1.  To print the back order, choose File \>\> Print or the printer icon button.
-    For more information about printing documents, see *Chapter 24, “Printing
-    and sending documents in e-mail.”*
+1.  To print the back order, choose File \>\> Print or the printer icon button. For more information about printing documents, see *Chapter 24, “Printing and sending documents in e-mail.”*
 
 2.  Choose Save.
 
@@ -2493,184 +2414,93 @@ This information is divided into the following sections:
 
 #### Return quantity types
 
->   When a customer returns an item, you must enter the returned item into one
->   or more return quantity types. Quantity types are used to track whether an
->   item is ready for resale or whether it is damaged, being serviced, or in
->   use.
+When a customer returns an item, you must enter the returned item into one or more return quantity types. Quantity types are used to track whether an item is ready for resale or whether it is damaged, being serviced, or in use.
 
->   The return quantity types are On Hand, Returned, In Use, In Service, and
->   Damaged. If you enter a return that increases more than one quantity type,
->   separate purchase receipts are created to record the increase for each
->   quantity type. For example, suppose a customer returns five telephones.
->   Three need service before you can resell them and the other two are damaged
->   and can’t be repaired. In this case, you’d return three to the In Service
->   quantity type and two to Damaged. Two purchase receipts are created to track
->   the information. For more information about purchase receipts, see the
->   Inventory Control documentation.
+The return quantity types are On Hand, Returned, In Use, In Service, and Damaged. If you enter a return that increases more than one quantity type, separate purchase receipts are created to record the increase for each quantity type. For example, suppose a customer returns five telephones. Three need service before you can resell them and the other two are damaged and can’t be repaired. In this case, you’d return three to the In Service quantity type and two to Damaged. Two purchase receipts are created to track the information. For more information about purchase receipts, see the Inventory Control documentation.
 
->   *If you return an item to a return quantity type other than On Hand, you
->   can’t resell the item. You must transfer the item to On Hand before it can
->   be sold again. If the item was returned to the Damaged quantity type and you
->   want to return the item to the vendor, you must transfer the item to On Hand
->   and then enter a decrease adjustment for the item.*
+    > [!NOTE]
+    > If you return an item to a return quantity type other than On Hand, you can’t resell the item. You must transfer the item to On Hand before it can be sold again. If the item was returned to the Damaged quantity type and you want to return the item to the vendor, you must transfer the item to On Hand and then enter a decrease adjustment for the item.
 
->   If you’re using multiple bins, you must enter a bin quantity and select a
->   bin for each quantity type you enter. For example, if the quantity returned
->   is 10 and you entered 8 with a quantity type of On Hand, and 2 with a
->   quantity type of Damaged, two bin selection records are created: one for 8
->   on hand at the sales returns default bin, and one for 2 damaged at the sales
->   returns default bin. For serial- and lot-tracked items, you can change bins
->   or split the line’s extended quantity among two or more bins for each site
->   and quantity type.
+If you’re using multiple bins, you must enter a bin quantity and select a bin for each quantity type you enter. For example, if the quantity returned is 10 and you entered 8 with a quantity type of On Hand, and 2 with a quantity type of Damaged, two bin selection records are created: one for 8 on hand at the sales returns default bin, and one for 2 damaged at the sales returns default bin. For serial- and lot-tracked items, you can change bins or split the line’s extended quantity among two or more bins for each site and quantity type.
 
->   If you enter a kit item on a return document, the Sales Returned Quantities
->   Entry window will open and you can enter the amount returned for a quantity
->   type. You can’t return a kit to multiple return quantity types. For example,
->   suppose a customer returns two kits. When you enter the item in the Sales
->   Transaction Entry window with a quantity returned of 2, the Sales Returned
->   Quantity Entry window opens. You must return the entire quantity to one
->   quantity type. You can’t return one kit to On Hand and the other to Damaged.
+If you enter a kit item on a return document, the Sales Returned Quantities Entry window will open and you can enter the amount returned for a quantity type. You can’t return a kit to multiple return quantity types. For example, suppose a customer returns two kits. When you enter the item in the Sales Transaction Entry window with a quantity returned of 2, the Sales Returned Quantity Entry window opens. You must return the entire quantity to one quantity type. You can’t return one kit to On Hand and the other to Damaged.
 
->   You can use the Sales Kit Return Options window to change the component
->   information for the returned kit. You can add or delete components from the
->   kit, change the site that a component will be returned to and change the
->   extended kit quantity of a component.
+You can use the Sales Kit Return Options window to change the component information for the returned kit. You can add or delete components from the kit, change the site that a component will be returned to and change the extended kit quantity of a component.
 
-If you change the extended kit quantity for a component, the Sales Returned
-Quantities Entry window will open and you can enter the quantity and quantity
-type for the component. You can choose a quantity type for the component that is
-different from the type chosen for the kit. You can also return the component to
-more than one quantity type. You can open the Sales Kit Return Options window
-from the Sales Transaction Entry window by highlighting the kit item, then
-choosing the item expansion button to open the Sales Item Detail Entry window.
-In that window, choose Kits to open the Sales Kit Return Options window.
+If you change the extended kit quantity for a component, the Sales Returned Quantities Entry window will open and you can enter the quantity and quantity type for the component. You can choose a quantity type for the component that is different from the type chosen for the kit. You can also return the component to more than one quantity type. You can open the Sales Kit Return Options window from the Sales Transaction Entry window by highlighting the kit item, then choosing the item expansion button to open the Sales Item Detail Entry window. In that window, choose Kits to open the Sales Kit Return Options window.
 
 #### Entering a return
 
-You can use the Sales Transaction Entry window to enter and print returns for
-your customers and to view, void, post, or delete existing returns.
+You can use the Sales Transaction Entry window to enter and print returns for your customers and to view, void, post, or delete existing returns.
 
-You can’t enter a return in Sales Order Processing for a drop-ship item. If a
-customer returns a drop-ship item, enter a credit memo in Receivables Management
-to reduce the customer balance and a credit memo in Payables Management to
-reduce the balance you owe the vendor.
+You can’t enter a return in Sales Order Processing for a drop-ship item. If a customer returns a drop-ship item, enter a credit memo in Receivables Management to reduce the customer balance and a credit memo in Payables Management to reduce the balance you owe the vendor.
 
-If you enter a serial-numbered or lot-numbered item on the return document, the
-Sales Serial Number Entry window or the Sales Lot Number Entry window will open
-and you can enter the serial or lot numbers for the items being returned.
+If you enter a serial-numbered or lot-numbered item on the return document, the Sales Serial Number Entry window or the Sales Lot Number Entry window will open and you can enter the serial or lot numbers for the items being returned.
 
-If you’re using multiple bins and a default sales returns bin exists at either
-the itemsite or the site, the quantity at the default bin will increase by the
-extended quantity for an item not tracked by serial or lot numbers. You can edit
-the default bin selections. For serial- and lot-numbered items, the default
-sales returns bin is the default bin for the first serial or lot number you
-enter. If a default sales returns bin can’t be found, you will be required to
-create one.
+If you’re using multiple bins and a default sales returns bin exists at either the itemsite or the site, the quantity at the default bin will increase by the extended quantity for an item not tracked by serial or lot numbers. You can edit the default bin selections. For serial- and lot-numbered items, the default sales returns bin is the default bin for the first serial or lot number you enter. If a default sales returns bin can’t be found, you will be required to create one.
 
-Transaction amounts on a return will be distributed automatically to posting
-accounts. To verify the accounts that will be used for each item, select the
-item expansion button to open the Sales Item Detail Entry window. Choose
-Distribution to view or change the accounts used for that item.
+Transaction amounts on a return will be distributed automatically to posting accounts. To verify the accounts that will be used for each item, select the item expansion button to open the Sales Item Detail Entry window. Choose Distribution to view or change the accounts used for that item.
 
->   If you’re using Multicurrency Management, you can only change the
->   distribution amounts in the originating currency. If you change an amount in
->   the originating currency, the functional amount will be recalculated.
+If you’re using Multicurrency Management, you can only change the distribution amounts in the originating currency. If you change an amount in the originating currency, the functional amount will be recalculated.
 
 **To enter a return:**
 
->   In the navigation pane, choose the Sales button, and then choose the Sales
->   Order Transactions list.
+1. In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-1.  In the New group or its overflow menu, choose Return to open the Sales
-    Transaction Entry window.
+2. In the New group or its overflow menu, choose Return to open the Sales Transaction Entry window.
 
-![](media/8a4c9e77b013510b89510dea87f6a574.jpg)
+    ![](media/8a4c9e77b013510b89510dea87f6a574.jpg)
 
 1.  Select Return and enter or select the ID of the type of return to enter.
 
 2.  Enter a document number or accept the default entry.
 
-3.  Enter the document date. The date you enter will be used to update your
-    sales records.
+3.  Enter the document date. The date you enter will be used to update your sales records.
 
 4.  Enter the ID of the site to which the items will be returned.
-
->   *If you’re using multiple bins and you change a line’s Site ID after
->   entering bin quantities, the bins and quantities entered for the previous
->   site are discarded. If the item is serial- or lot-numbered, the previously
->   entered serial or lot numbers are discarded, as well.*
+    > [!NOTE]
+    > If you’re using multiple bins and you change a line’s Site ID after>   entering bin quantities, the bins and quantities entered for the previous site are discarded. If the item is serial- or lot-numbered, the previously entered serial or lot numbers are discarded, as well.
 
 1.  You can create or select a Batch ID to assign to the return.
 
-2.  Enter or select a customer ID and enter the purchase order number if the
-    customer has provided you with one.
+2.  Enter or select a customer ID and enter the purchase order number if the customer has provided you with one.
 
-3.  Enter or select a currency ID. If the customer record has a currency ID
-    assigned to it, the customer’s currency ID will appear as the default entry.
+3.  Enter or select a currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.
 
->   Use the Currency ID expansion button to open the Exchange Rate Entry window,
->   where you can change the Rate Type ID or the exchange rate. For information
->   about how exchange rates affect the transaction, see *Chapter 8,
->   “Multicurrency transactions.”*
+    Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the Rate Type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8, “Multicurrency transactions.”*
 
-1.  Enter or select item numbers, units of measure, and item quantities for the
-    return. To view additional lines of information for each item, choose the
-    hide and show button next to the Extended Price prompt.
+1.  Enter or select item numbers, units of measure, and item quantities for the return. To view additional lines of information for each item, choose the hide and show button next to the Extended Price prompt.
 
->   When you enter an item on a return, the Sales Returned Quantities Entry
->   window will open and you must enter the quantity being returned to each
->   return quantity type. For more information, see *Return quantity types* on
->   page 103.
+    When you enter an item on a return, the Sales Returned Quantities Entry window will open and you must enter the quantity being returned to each return quantity type. For more information, see *Return quantity types* on page 103.
 
->   If you’re using multiple bins, the total quantity selected at bins must
->   equal the line’s extended quantity.
+    If you’re using multiple bins, the total quantity selected at bins must equal the line’s extended quantity.
 
--   To view available to promise information about the item if you’re using ATP,
-    choose the Quantity Returned expansion button to open the Inventory
-    Available to Promise Inquiry window.
+    - To view available to promise information about the item if you’re using ATP, choose the Quantity Returned expansion button to open the Inventory Available to Promise Inquiry window.
 
--   To remove an item from the return, select the item and choose Edit \>\>
-    Delete Row.
+    - To remove an item from the return, select the item and choose Edit \>\> Delete Row.
 
--   To add an attachment to the item, select the item and choose the Attachment
-    Management icon to open the Document Attachment Management window.
+    - To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
-1.  Enter the trade discount, freight, miscellaneous, and tax amounts for this
-    return.
+1.  Enter the trade discount, freight, miscellaneous, and tax amounts for this return.
 
->   Use the Trade Discount expansion button to open the Sales Trade Discount
->   Entry window, where you can enter or edit a trade discount for the document.
->   The discount can be a percentage or an amount. Use the freight and
->   miscellaneous expansion buttons to open the Sales Tax Schedule Entry window,
->   where you can select the tax details used to tax freight and miscellaneous
->   amounts.
+    Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
-1.  Taxes for the return will be calculated automatically as you enter items.13.
-    Enter the amount received and the discount returned on the document.
+1.  Taxes for the return will be calculated automatically as you enter items.
 
->   The amount received is treated as a return of cash or credit to the
->   customer. The Sales Payment Entry window will open and you can enter
->   information about the payment, such as the payment method. The payment
->   amount will be posted when you post the return.
+13. Enter the amount received and the discount returned on the document.
 
->   *If you enter an amount received on the return, a voucher or check for the
->   customer won’t be created automatically. You need to process the amount
->   returned as a separate transaction in Payables Management if a computer
->   generated check is needed.*
+    The amount received is treated as a return of cash or credit to the customer. The Sales Payment Entry window will open and you can enter information about the payment, such as the payment method. The payment amount will be posted when you post the return.
 
-1.  If you’ve entered payment terms for this customer and a payment was made at
-    the time of the sale, enter the terms discount related to the payment.
+    > [!NOTE]
+    > If you enter an amount received on the return, a voucher or check for the customer won’t be created automatically. You need to process the amount returned as a separate transaction in Payables Management if a computer-generated check is needed.
 
->   Use the Discount Returned expansion button to open the Sales Payment Terms
->   Entry window, where you can view or change the terms discount dates and
->   amounts for the document.
+1.  If you’ve entered payment terms for this customer and a payment was made at the time of the sale, enter the terms discount related to the payment.
 
-1.  To print a comment on the return, enter the comment ID or a one-time
-    comment. For more information about adding comments, see *Adding a comment
-    to sales documents* on page 190.
+    Use the Discount Returned expansion button to open the Sales Payment Terms Entry window, where you can view or change the terms discount dates and amounts for the document.
 
-2.  Choose the Attachment Management icon to attach documents to the quote, if
-    applicable.
+1.  To print a comment on the return, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents* on page 190.
+
+2.  Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
 1.  Enter additional information about the return by choosing Holds or User-Defined. If a hold has been assigned to the return, a stop icon will appear on the Hold button.
 
@@ -2681,18 +2511,13 @@ Distribution to view or change the accounts used for that item.
     > [!Note]
     > You can distribute amounts to unit accounts to record increases to non-financial accounts. The amounts you distribute to unit accounts won’t be totaled with other distributions. For more information about unit accounts, see the General Ledger documentation.
 
-1.  Choose Commissions to verify or change the commission amounts. For more
-    information about commissions, see *Modifying commission information* on
-    page 200 and *Splitting commissions* on page 201.
+1.  Choose Commissions to verify or change the commission amounts. For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
 
-2.  To print the return, choose File \>\> Print or the printer icon button. For
-    more information about printing documents, see *Chapter 24, “Printing and
-    sending documents in e-mail.”*
+2.  To print the return, choose File \>\> Print or the printer icon button. For more information about printing documents, see *Chapter 24, “Printing and sending documents in e-mail.”*
 
 3.  Save or post the return.
 
->   If you’re using multiple bins and posting fails, bin quantities revert to
->   their previous values.
+If you’re using multiple bins and posting fails, bin quantities revert to their previous values.
 
 ### Chapter 16: Transaction detail entry
 
@@ -2714,249 +2539,172 @@ This information is divided into the following sections:
 
 -   *Entering Intrastat trade statistics*
 
-### Entering document detail information
+#### Entering document detail information
 
->   Use the Sales Document Detail Entry window to view or enter information for
->   a repeating quote or order. This window also contains transfer information
->   about the document.
+Use the Sales Document Detail Entry window to view or enter information for a repeating quote or order. This window also contains transfer information about the document.
 
->   Documents with the same master number as the current document will be listed
->   in the Sales Document Detail Entry window. A master number is a single
->   number assigned to a series of documents that is used to track related
->   documents. For example, when you issue a quote, then transfer it to an
->   order, and then an invoice, each document will be assigned the same master
->   number. Each document also maintains its own document number.
+Documents with the same master number as the current document will be listed in the Sales Document Detail Entry window. A master number is a single number assigned to a series of documents that is used to track related documents. For example, when you issue a quote, then transfer it to an order, and then an invoice, each document will be assigned the same master number. Each document also maintains its own document number.
 
->   **To enter document detail information:**
+**To enter document detail information:**
 
 1.  Open the Sales Document Detail Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Document No.
->   expansion button)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Document No. expansion button)
 
-1.  In the GL Reference field, enter a General Ledger reference number, if
-    necessary.
+1.  In the GL Reference field, enter a General Ledger reference number, if necessary.
 
 2.  Enter repeating information, if you’re entering a repeating document.
 
->   *You can mark this option only if you marked the Allow Repeating option in
->   the Sales Quote Setup window or Sales Order Setup window, and if the
->   document does not have a deposit on it.*
+    > [!NOTE]
+    > You can mark this option only if you marked the Allow Repeating option in the Sales Quote Setup window or Sales Order Setup window, and if the document does not have a deposit on it.
 
-1.  Enter or change the document type ID and the batch ID that will be used when
-    the current document is transferred.
+1.  Enter or change the document type ID and the batch ID that will be used when the current document is transferred.
 
 2.  Choose OK to save changes and return to the Sales Transaction Entry window.
 
-### Updating a customer’s e-mail information for a sales transaction
+#### Updating a customer’s e-mail information for a sales transaction
 
->   Use the Sales E-mail Detail Entry window to update a customer's e-mail
->   information for a transaction. The changes you enter in this window will
->   affect only
+Use the Sales E-mail Detail Entry window to update a customer's e-mail information for a transaction. The changes you enter in this window will affect only the current transaction. To make permanent changes to the customer record for email settings, use the Customer E-mail Options window.
 
->   the current transaction. To make permanent changes to the customer record
->   for email settings, use the Customer E-mail Options window.
+You can change the subject, message ID, and message if the Allow Update of E-mail at Entry option in the Sales E-mail Setup window is marked. You can update the reply to address if the Changing ’Reply to’ Address option in the Sales E-mail Setup window is marked.
 
->   You can change the subject, message ID, and message if the Allow Update of
->   E-mail at Entry option in the Sales E-mail Setup window is marked. You can
->   update the reply to address if the Changing ’Reply to’ Address option in the
->   Sales E-mail Setup window is marked.
-
->   **To update customer’s e-mail information for a sales transaction:**
+**To update customer’s e-mail information for a sales transaction:**
 
 1.  Open the Sales Transaction Entry window.
 
-(Sales \>\> Transactions \>\> Sales Transaction Entry) 2. Enter or select the ID
-of the type of transaction to enter.
+    (Sales \>\> Transactions \>\> Sales Transaction Entry) 
+
+2. Enter or select the ID of the type of transaction to enter.
 
 1.  Enter a document number or accept the default entry.
 
 2.  Enter or select a customer ID.
 
-3.  Choose the E-mail expansion button to open the Sales E-mail Detail Entry
-    window.
+3.  Choose the E-mail expansion button to open the Sales E-mail Detail Entry window.
 
-![](media/c5c1197e93c65fa551c94714377ddd0d.jpg)
+    ![](media/c5c1197e93c65fa551c94714377ddd0d.jpg)
 
-1.  Enter a To, Cc, or Bcc address to send the transaction in e-mail. You must
-    enter at least one e-mail address to send transactions in e-mail. The e-mail
-    addresses displayed in the window are assigned to the address you entered on
-    the transaction. You can update the To, Cc, and Bcc e-mail addresses, if
-    applicable.
+1.  Enter a To, Cc, or Bcc address to send the transaction in e-mail. You must enter at least one e-mail address to send transactions in e-mail. The e-mail addresses displayed in the window are assigned to the address you entered on the transaction. You can update the To, Cc, and Bcc e-mail addresses, if applicable.
 
 2.  Enter or select a message ID if you want to use a predefined message.
 
-3.  Enter a subject line for the message. If you don’t enter a subject for the
-    message, the document number of the transaction you are sending is used.
+3.  Enter a subject line for the message. If you don’t enter a subject for the message, the document number of the transaction you are sending is used.
 
-4.  Edit the message that will appear in the e-mail when sending the
-    transaction.
+4.  Edit the message that will appear in the e-mail when sending the transaction.
 
 5.  Update the address that a customer can use to send a reply e-mail.
 
 6.  Choose OK to save your changes.
 
->   Choose Default to restore the default e-mail settings entered for the
->   customer in the Customer E-mail Options window.
+7. Choose Default to restore the default e-mail settings entered for the customer in the Customer E-mail Options window.
 
-### Entering item detail information
+#### Entering item detail information
 
->   Use the Sales Item Detail Entry window to view or edit item information such
->   as the price level, requested ship date, and site ID. Changes made in this
->   window will apply only to the current document; they won’t affect
->   information in the Item Maintenance window.
+Use the Sales Item Detail Entry window to view or edit item information such as the price level, requested ship date, and site ID. Changes made in this window will apply only to the current document; they won’t affect information in the Item Maintenance window.
 
->   **To enter item detail information:**
+**To enter item detail information:**
 
 1.  Open the Sales Item Detail Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Item Number
->   expansion button)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Item Number expansion button)
 
-![](media/eb3a872da13da7c3181fe557a28bbaef.jpg)
+    ![](media/eb3a872da13da7c3181fe557a28bbaef.jpg)
 
-*You also can press CTRL+E to open this window.*
+    > [TIP]
+    > You also can press CTRL+E to open this window.
 
 1.  Change item information, if necessary.
 
-2.  To add an attachment to the item, select the item and choose the Attachment
-    Management icon to open the Document Attachment Management window.
+2.  To add an attachment to the item, select the item and choose the Attachment  Management icon to open the Document Attachment Management window.
 
-3.  If you’re using multiple bins and an item not tracked by serial or lot
-    numbers is displayed, choose the Bins button to open the Bin Quantity Entry
-    window, where you can view or change bin information for the line item.
+3.  If you’re using multiple bins and an item not tracked by serial or lot numbers is displayed, choose the Bins button to open the Bin Quantity Entry window, where you can view or change bin information for the line item.
 
-4.  Choose the Item Inquiry button to open the Item Inquiry window, where you
-    can view detailed information about the item.
+4.  Choose the Item Inquiry button to open the Item Inquiry window, where you can view detailed information about the item.
 
-5.  Choose the Kits button to open the Sales Kit Options window, where you can
-    view or enter information about components of kit items.
+5.  Choose the Kits button to open the Sales Kit Options window, where you can view or enter information about components of kit items.
 
->   For more information about kit items, see *Kit items* on page 61 or the
->   Inventory Control documentation.
+    For more information about kit items, see *Kit items* on page 61 or the Inventory Control documentation.
 
-1.  Choose the Serial/Lot button to open the Sales Serial Number Entry window or
-    the Sales Lot Number Entry window, where you can assign numbers to serial-
-    or lot-numbered items.
+1.  Choose the Serial/Lot button to open the Sales Serial Number Entry window or the Sales Lot Number Entry window, where you can assign numbers to serial- or lot-numbered items.
 
->   For more information about serial- or lot-numbered items, see *Serial- or
->   lotnumbered items* on page 61 or the Inventory Control documentation.
+    For more information about serial- or lot-numbered items, see *Serial- or lotnumbered items* on page 61 or the Inventory Control documentation.
 
-1.  Choose the Distributions button to open the Sales Line Item Distribution
-    Entry window, where you can view the posting accounts that will be used for
-    the item.
+1.  Choose the Distributions button to open the Sales Line Item Distribution Entry window, where you can view the posting accounts that will be used for the item.
 
 2.  Choose Save to save the item information.
 
->   Choose Delete to delete the current item.
+    Choose Delete to delete the current item.
 
-### Entering customer detail information
+#### Entering customer detail information
 
->   Use the Sales Customer Detail Entry window to view and edit information
->   about the customer, such as the ship-to and bill-to address, salesperson,
->   territory, and tax and shipping information. Any changes you make to the
->   information in this window will only apply to the current document; they
->   won’t affect the information in the Customer Maintenance window.
+Use the Sales Customer Detail Entry window to view and edit information about the customer, such as the ship-to and bill-to address, salesperson, territory, and tax and shipping information. Any changes you make to the information in this window will only apply to the current document; they won’t affect the information in the Customer Maintenance window.
 
->   **To enter customer detail information:**
+**To enter customer detail information:**
 
 1.  Open the Sales Customer Detail Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Customer ID
->   expansion button)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Customer ID expansion button)
 
-![](media/a1ae1bd37cf31d68c9a8c7dd40f1fb90.jpg)
+     ![](media/a1ae1bd37cf31d68c9a8c7dd40f1fb90.jpg)
 
-1.  Choose the expansion button next to Ship To Address ID to open the Sales
-    Ship To Address Entry window, where you can make changes to the ship-to
-    address for the document.
+1.  Choose the expansion button next to Ship To Address ID to open the Sales Ship To Address Entry window, where you can make changes to the ship-to address for the document.
 
->   The changes will apply only to the current document. When you change a
->   document’s ship to address, you can roll down the changes to line items with
->   the same ship to address ID.
+    The changes will apply only to the current document. When you change a document’s ship to address, you can roll down the changes to line items with the same ship to address ID.
 
-1.  Choose the Holds button to open the Sales Process Holds Entry window, where
-    you can assign holds to or remove holds from the document. A stop icon will
-    appear on the Holds button if a hold has been assigned to the document.
+1.  Choose the Holds button to open the Sales Process Holds Entry window, where you can assign holds to or remove holds from the document. A stop icon will appear on the Holds button if a hold has been assigned to the document.
 
->   For more information about holds, see *Setting up process holds* on page 22
->   and *Assigning process holds to a document* on page 195.
+    For more information about holds, see *Setting up process holds* on page 22 and *Assigning process holds to a document* on page 195.
 
-1.  Choose the User-Defined button to open the Sales User-Defined Fields Entry
-    window, where you can enter user-defined information for this document.
+1.  Choose the User-Defined button to open the Sales User-Defined Fields Entry window, where you can enter user-defined information for this document.
 
->   For more information about user-defined fields, see *Setting up user-defined
->   fields* on page 20.
+    For more information about user-defined fields, see *Setting up user-defined fields* on page 20.
 
-1.  Choose the Customer button to open the Customer Inquiry window, where you
-    can view payment, shipping, and billing information about a customer.
+1.  Choose the Customer button to open the Customer Inquiry window, where you can view payment, shipping, and billing information about a customer.
 
-2.  Choose the Activity button to open the Receivables Transaction
-    InquiryCustomer window, where you can view summary document information for
-    each customer.
+2.  Choose the Activity button to open the Receivables Transaction InquiryCustomer window, where you can view summary document information for each customer.
 
-3.  Choose the Period button to open the Customer Period Summary Inquiry window,
-    where you can view customer balances and finance charges by fiscal or
-    calendar period.
+3.  Choose the Period button to open the Customer Period Summary Inquiry window, where you can view customer balances and finance charges by fiscal or calendar period.
 
-4.  Choose the Year button to open the Customer Yearly Summary Inquiry window,
-    where you can view annual sales totals for each customer.
+4.  Choose the Year button to open the Customer Yearly Summary Inquiry window, where you can view annual sales totals for each customer.
 
-5.  Choose the Payments button to open the Customer Payment Summary Inquiry
-    window, where you can view aging period amounts and payment information for
-    each customer.
+5.  Choose the Payments button to open the Customer Payment Summary Inquiry window, where you can view aging period amounts and payment information for each customer.
 
-6.  Choose Save to save your changes and close the window. Choose Cancel to
-    close the window without saving changes.
+6.  Choose Save to save your changes and close the window. Choose Cancel to close the window without saving changes.
 
-### Adding a markdown for an item
+#### Adding a markdown for an item
 
->   Use the Sales Markdown Entry window to enter a markdown for an individual
->   line item. A markdown is a price reduction and can be a set amount or a
->   percentage of the item price.
+Use the Sales Markdown Entry window to enter a markdown for an individual line item. A markdown is a price reduction and can be a set amount or a percentage of the item price.
 
->   **To add a markdown for an item:**
+**To add a markdown for an item:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 1.  Select a document.
 
-2.  Select an item and choose the Markdown expansion button to open the Sales
-    Markdown Entry window.
+2.  Select an item and choose the Markdown expansion button to open the Sales Markdown Entry window.
 
-![](media/519e2b5224d85076af387f7785741262.jpg)
+    ![](media/519e2b5224d85076af387f7785741262.jpg)
 
-1.  Select the markdown type—percentage or amount—and enter the percentage or
-    amount. The unit price, markdown amount, adjusted unit price, and revised
-    extended price are shown in the window.
+1.  Select the markdown type—percentage or amount—and enter the percentage or amount. The unit price, markdown amount, adjusted unit price, and revised extended price are shown in the window.
 
-2.  Choose OK. The markdown amount and the revised extended price are displayed
-    in the Sales Transaction Entry window.
+2.  Choose OK. The markdown amount and the revised extended price are displayed in the Sales Transaction Entry window.
 
 3.  Choose Save.
 
-### Merging trade discounts and markdowns with sales distributions
+#### Merging trade discounts and markdowns with sales distributions
 
->   If Microsoft Dynamics GP is set up to merge trade discount and markdown
->   distributions, the trade discount and markdown distributions will be merged
->   with the sales distribution for invoices and returns. If a quote, order, or
->   back order with a deposit is transferred to an invoice, the trade discount
->   and markdown distributions will be merged with the sales distributions.
+If Microsoft Dynamics GP is set up to merge trade discount and markdown distributions, the trade discount and markdown distributions will be merged with the sales distribution for invoices and returns. If a quote, order, or back order with a deposit is transferred to an invoice, the trade discount and markdown distributions will be merged with the sales distributions.
 
->   For example, assume that you’ve entered a sales transaction of \$100.00 with
->   a trade discount of \$15.00 and a markdown of \$10.00. If Microsoft Dynamics
->   GP is set up to merge trade discount and markdown distributions, the
->   distributions are merged as in the following example.
+For example, assume that you’ve entered a sales transaction of \$100.00 with a trade discount of \$15.00 and a markdown of \$10.00. If Dynamics GP is set up to merge trade discount and markdown distributions, the distributions are merged as in the following example.
 
 | **Account**     | **Debit** | **Credit** |
 |-----------------|-----------|------------|
 | Account A SALES |           | \$75       |
 | Account D RECV  | \$75      |            |
 
->   If Microsoft Dynamics GP is not set up to merge trade discount and markdown
->   distributions, the distributions are separated from the sales distribution.
+If Dynamics GP is not set up to merge trade discount and markdown distributions, the distributions are separated from the sales distribution.
 
 | **Account**     | **Debit** | **Credit** |
 |-----------------|-----------|------------|
@@ -2967,69 +2715,44 @@ of the type of transaction to enter.
 
 #### Entering Intrastat trade statistics
 
->   Use the Sales Intrastat Entry window to enter the information required to
->   create the Intrastat Trade Report you submit to your government, and the EC
->   Sales List, which displays cumulative goods value totals by each vendor or
->   customer Tax Registration number. You can enter Intrastat statistics for
->   each line item.
+Use the Sales Intrastat Entry window to enter the information required to create the Intrastat Trade Report you submit to your government, and the EC Sales List, which displays cumulative goods value totals by each vendor or customer Tax Registration number. You can enter Intrastat statistics for each line item.
 
->   Intrastat is the system for collecting statistics on the trade of goods
->   between European Union (EU) countries. Intrastat data is required for all
->   items either bought from EU vendors or sold to EU customers, and must be
->   provided on a monthly basis. Requirements for Intrastat are similar in all
->   EU countries. The government uses these statistics as an economic indicator.
+Intrastat is the system for collecting statistics on the trade of goods between European Union (EU) countries. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries. The government uses these statistics as an economic indicator.
 
->   If Intrastat information was entered for the customer’s ship-to address ID,
->   that information appears in this window. You can use the Sales Intrastat
->   Entry window to change Intrastat information for an individual transaction,
->   or to enter Intrastat information if none was entered for the customer.
+If Intrastat information was entered for the customer’s ship-to address ID, that information appears in this window. You can use the Sales Intrastat Entry window to change Intrastat information for an individual transaction, or to enter Intrastat information if none was entered for the customer.
 
->   Be sure the EU Transaction option is marked in the Sales Customer Detail
->   Entry window. If the country code assigned to the customer’s shipping
->   address is designated an EU country, this option is marked automatically.
+Be sure the EU Transaction option is marked in the Sales Customer Detail Entry window. If the country code assigned to the customer’s shipping address is designated an EU country, this option is marked automatically.
 
->   *You can enter Intrastat statistics only if Intrastat tracking is enabled in
->   the Company Setup Options window.*
+    > [!NOTE]
+    > You can enter Intrastat statistics only if Intrastat tracking is enabled in the Company Setup Options window.*
 
->   **To enter Intrastat trade statistics:**
+**To enter Intrastat trade statistics:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 1.  Enter the EU transaction.
 
->   When you press TAB on the Unit Price field after you enter the first line
->   item, the Sales Intrastat Entry window opens, if you’ve chosen the EU
->   Transaction option. You can also use the EU expansion button on the Item
->   field to open Sales Intrastat Entry.
+    When you press TAB on the Unit Price field after you enter the first line item, the Sales Intrastat Entry window opens, if you’ve chosen the EU Transaction option. You can also use the EU expansion button on the Item field to open Sales Intrastat Entry.
 
 1.  Enter Intrastat information, or change the default entries, if necessary.
 
 2.  In the Net Unit Mass field, enter the weight of the goods in kilograms.
 
->   The item’s shipping weight from the Item Maintenance window is the default
->   weight. You can change this information.
+    The item’s shipping weight from the Item Maintenance window is the default weight. You can change this information.
 
 1.  Change the line mass, if necessary.
 
->   The line mass is the total mass per item. The line mass total is equal to
->   the amount entered in the Unit Mass field multiplied by the amount entered
->   in the Quantity field.
+    The line mass is the total mass per item. The line mass total is equal to the amount entered in the Unit Mass field multiplied by the amount entered in the Quantity field.
 
-1.  Enter a supplementary units amount, if applicable. The supplementary units
-    amount is simply a second quantity. Supplementary unit amounts are required
-    by the EU Combined Nomenclature for certain goods.
+1.  Enter a supplementary units amount, if applicable. The supplementary units amount is simply a second quantity. Supplementary unit amounts are required by the EU Combined Nomenclature for certain goods.
 
-2.  In the Traders Reference field, enter a reference code, such as an invoice
-    or dispatch number, or any other information that will identify the
-    transaction.
+2.  In the Traders Reference field, enter a reference code, such as an invoice or dispatch number, or any other information that will identify the transaction.
 
-3.  Change the goods value, if necessary. The default goods value is the
-    extended price of the item.
+3.  Change the goods value, if necessary. The default goods value is the extended price of the item.
 
-4.  Change the statistical value, if necessary. The default statistical value is
-    the extended price of the item.
+4.  Change the statistical value, if necessary. The default statistical value is the extended price of the item.
 
 5.  Choose OK to save the record.
 
@@ -3053,19 +2776,11 @@ This information is divided into the following sections:
 
 #### Distributing payments separately
 
->   If Sales Order Processing is set up to use separate payment distributions,
->   document and payment distributions entered on the same transaction will be
->   separated as if the document and payment were entered as separate
->   transactions. You’ll also be able to enter multiple distributions with the
->   same distribution type and account in the distribution entry window.
+If Sales Order Processing is set up to use separate payment distributions, document and payment distributions entered on the same transaction will be separated as if the document and payment were entered as separate transactions. You’ll also be able to enter multiple distributions with the same distribution type and account in the distribution entry window.
 
->   This option applies to both invoices and returns. If a quote, order, or back
->   order with a deposit is transferred to an invoice, the deposit will have
->   separate distributions from the invoice when this option is marked.
+This option applies to both invoices and returns. If a quote, order, or back order with a deposit is transferred to an invoice, the deposit will have separate distributions from the invoice when this option is marked.
 
->   For example, assume that you’ve entered a sales transaction of \$100.00 with
->   a cash payment of \$20.00. If you are using separate payment distributions,
->   the payment will be distributed as in the following example.
+For example, assume that you’ve entered a sales transaction of \$100.00 with a cash payment of \$20.00. If you are using separate payment distributions, the payment will be distributed as in the following example.
 
 | **Account**     | **Debit** | **Credit** |
 |-----------------|-----------|------------|
@@ -3074,8 +2789,7 @@ This information is divided into the following sections:
 | Account C RECV  | \$100     |            |
 | Account C RECV  |           | \$20       |
 
->   If you aren’t using separate payment distributions, the distributions that
->   are of the same type with the same account number are combined.
+If you aren’t using separate payment distributions, the distributions that are of the same type with the same account number are combined.
 
 | **Account**     | **Debit** | **Credit** |
 |-----------------|-----------|------------|
@@ -3085,200 +2799,118 @@ This information is divided into the following sections:
 
 #### Entering deposits and payments on orders or back orders
 
->   You can enter a deposit or payment amount received from a customer for an
->   order or back order in the Amount Received field in the Sales Transaction
->   Entry window. Choose the Amount Received expansion button to open the Sales
->   Payment Entry window where you can enter information about the received
->   amount, such as the payment method.
+You can enter a deposit or payment amount received from a customer for an order or back order in the Amount Received field in the Sales Transaction Entry window. Choose the Amount Received expansion button to open the Sales Payment Entry window where you can enter information about the received amount, such as the payment method.
 
->   For information about removing payments and deposits, see *Removing a
->   deposit or payment* on page 121.
+For information about removing payments and deposits, see *Removing a deposit or payment* on page 121.
 
->   Enter a credit card payment amount if you want to charge the customer’s
->   credit card when the order ships. If you enter a payment and a partial order
->   is shipped, the customer will be charged only for the shipped portion of the
->   order.
+Enter a credit card payment amount if you want to charge the customer’s credit card when the order ships. If you enter a payment and a partial order is shipped, the customer will be charged only for the shipped portion of the order.
 
->   Enter a deposit if you want the amount to be available to you when the
->   deposit is taken, regardless of when the order ships. For example, you could
->   use a deposit for an amount received toward a layaway order.
+Enter a deposit if you want the amount to be available to you when the deposit is taken, regardless of when the order ships. For example, you could use a deposit for an amount received toward a layaway order.
 
->   You can split an amount received between payment and deposit types. For
->   example, a payment can consist of a check deposit for part of the amount and
->   a credit card payment for the remainder.
+You can split an amount received between payment and deposit types. For example, a payment can consist of a check deposit for part of the amount and a credit card payment for the remainder.
 
-*You can’t enter a deposit or payment amount on repeating orders.*
+> [!NOTE]
+> You can’t enter a deposit or payment amount on repeating orders.
 
->   You can’t delete or void an order or back order until all deposits on the
->   document have been removed or transferred. Deposits and payments can be
->   transferred with the order or back order. For more information about
->   transferring deposits and payments, see *Chapter 27, “Transferring
->   documents.”*
+You can’t delete or void an order or back order until all deposits on the document have been removed or transferred. Deposits and payments can be transferred with the order or back order. For more information about transferring deposits and payments, see *Chapter 27, “Transferring documents.”*
 
->   **To enter deposits and payments on orders or back orders:**
+**To enter deposits and payments on orders or back orders:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Select the document and enter the entire deposit or payment amount in the
-    Amount Received field or choose the Amount Received expansion button to open
-    the Sales Payment Entry window.
+1.  Select the document and enter the entire deposit or payment amount in the Amount Received field or choose the Amount Received expansion button to open the Sales Payment Entry window.
 
-![](media/6d8119e0f695c3cf650433b22abd2961.jpg)
+    ![](media/6d8119e0f695c3cf650433b22abd2961.jpg)
 
 1.  Enter or accept the amount in the Amount Received field.
 
->   You can enter a payment or deposit amount greater than the document total.
->   However, you can’t transfer a payment amount greater than the invoice amount
->   to an invoice. You can transfer any deposit amount to an invoice.
+    You can enter a payment or deposit amount greater than the document total. However, you can’t transfer a payment amount greater than the invoice amount to an invoice. You can transfer any deposit amount to an invoice.
 
-1.  Select the payment or deposit type and enter the amount. Enter the remaining
-    information about the payment or deposit, such as the check number or credit
-    card number.
+1.  Select the payment or deposit type and enter the amount. Enter the remaining information about the payment or deposit, such as the check number or credit card number.
 
 2.  Enter or accept the posting accounts, if you’re entering a deposit.
 
-3.  Choose Insert to add the payment or deposit to the list at the bottom of the
-    window.
+3.  Choose Insert to add the payment or deposit to the list at the bottom of the window.
 
-4.  If you are splitting the amount received, select a second payment or deposit
-    type. The amount remaining from the original amount will appear as a default
-    entry in the Amount field. Enter the remaining information such as the check
-    number or credit card number. Then choose Insert.
+4.  If you are splitting the amount received, select a second payment or deposit type. The amount remaining from the original amount will appear as a default entry in the Amount field. Enter the remaining information such as the check number or credit card number. Then choose Insert.
 
 5.  Choose OK to save your entries and close the window.
 
->   For information on posting deposits, see *Posting deposits* on page 121; for
->   information on posting payments, see *Posting payments* on page 121.
+    For information on posting deposits, see *Posting deposits* on page 121; for information on posting payments, see *Posting payments* on page 121.
 
->   *National accounts provide the ability to restrict payments for child
->   customers and apply credit checking, holds and finance charges at a
->   consolidated national account level, depending on how the account was set
->   up. If you can’t save or post a transaction, check the status of the options
->   in the National Accounts Maintenance window.*
+    > [!NOTE]
+    > National accounts provide the ability to restrict payments for child customers and apply credit checking, holds and finance charges at a consolidated national account level, depending on how the account was set up. If you can’t save or post a transaction, check the status of the options in the National Accounts Maintenance window.*
 
 #### Entering a payment for an invoice, fulfillment order, or return
 
->   Use the Sales Payment Entry window to return payments you’ve received for
->   returned items.You can also use this window to enter payments on invoices
->   and fulfillment orders.
+Use the Sales Payment Entry window to return payments you’ve received for returned items.You can also use this window to enter payments on invoices and fulfillment orders.
 
->   For information about removing payments and deposits, see *Removing a
->   deposit or payment* on page 121.
+For information about removing payments and deposits, see *Removing a deposit or payment* on page 121.
 
->   If a customer pays all or a portion of an invoice balance before the items
->   are shipped, you can enter the amount in the Amount Received field in the
->   Sales Transaction Entry window. Choose the Amount Received expansion button
->   to open the Sales Payment Entry window where you can enter information about
->   the payment, such as the payment method. The amount is posted as a cash
->   receipt in Receivables Management when you post the invoice.
+If a customer pays all or a portion of an invoice balance before the items are shipped, you can enter the amount in the Amount Received field in the Sales Transaction Entry window. Choose the Amount Received expansion button to open the Sales Payment Entry window where you can enter information about the payment, such as the payment method. The amount is posted as a cash receipt in Receivables Management when you post the invoice.
 
->   **To enter a payment for an invoice, fulfillment order, or return:**
+**To enter a payment for an invoice, fulfillment order, or return:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Select a document and enter the payment amount in the Amount Received field
-    or choose the expansion button for the Amount Received field to open the
-    Sales Payment Entry window.
+1.  Select a document and enter the payment amount in the Amount Received field or choose the expansion button for the Amount Received field to open the Sales Payment Entry window.
 
-![](media/43f7a2ee0d9e890dd527b207277bfe06.jpg)
+    ![](media/43f7a2ee0d9e890dd527b207277bfe06.jpg)
 
 1.  Enter or accept the amount in the Amount Received field.
 
-2.  Select the payment type and enter the payment amount. Enter the remaining
-    information about the payment such as the check number or credit card
-    number.
+2.  Select the payment type and enter the payment amount. Enter the remaining information about the payment such as the check number or credit card number.
 
 3.  Choose Insert to add the payment to the list at the bottom of the window.
 
-4.  If you are splitting the amount between payment types, select a second
-    payment type. The amount remaining from the original payment amount will
-    appear as a default entry in the Payment Amount field. Enter the remaining
-    information such as the check number or credit card number. Then choose
-    Insert.
+4.  If you are splitting the amount between payment types, select a second payment type. The amount remaining from the original payment amount will appear as a default entry in the Payment Amount field. Enter the remaining information such as the check number or credit card number. Then choose Insert.
 
 5.  Choose OK to save your entries and close the window.
 
-6.  You can change the posting accounts used for the payment. In the Sales
-    Transaction Entry window, choose Distributions to view and change the
-    posting accounts.
+6.  You can change the posting accounts used for the payment. In the Sales Transaction Entry window, choose Distributions to view and change the posting accounts.
 
->   *National accounts provide the ability to restrict payments for child
->   customers and apply credit checking, holds and finance charges at a
->   consolidated national account level, depending on how the account was set
->   up. If you can’t save or post a transaction, check the status of the options
->   in the National Accounts Maintenance window.*
+    > [!NOTE]
+    > National accounts provide the ability to restrict payments for child customers and apply credit checking, holds and finance charges at a consolidated national account level, depending on how the account was set up. If you can’t save or post a transaction, check the status of the options in the National Accounts Maintenance window.*
 
 #### Posting deposits
 
->   A deposit amount on an order or back order will be posted immediately when
->   you close the Sales Payment Entry window. Deposit amounts will be posted to
->   the Cash account and Deposits Received account in General Ledger. For
->   example, if you enter a \$100.00 deposit, the Cash account entered in the
->   Sales Payment Entry window will be debited \$100.00 and the Deposits
->   Received account entered will be credited \$100.00. The Sales Deposits
->   Journal will be printed when you close the Sales Transaction Entry window.
->   This report displays the deposits entered for each order or back order and
->   the General Ledger account distributions.
+A deposit amount on an order or back order will be posted immediately when you close the Sales Payment Entry window. Deposit amounts will be posted to the Cash account and Deposits Received account in General Ledger. For example, if you enter a \$100.00 deposit, the Cash account entered in the Sales Payment Entry window will be debited \$100.00 and the Deposits Received account entered will be credited \$100.00. The Sales Deposits Journal will be printed when you close the Sales Transaction Entry window. This report displays the deposits entered for each order or back order and the General Ledger account distributions.
 
->   You can change the posting accounts used for the deposit. If you enter a
->   cash deposit, the cash account from the Checkbook ID will be the default
->   account. If you enter a credit card deposit, the cash account chosen for the
->   credit card will be the default account.
+You can change the posting accounts used for the deposit. If you enter a cash deposit, the cash account from the Checkbook ID will be the default account. If you enter a credit card deposit, the cash account chosen for the credit card will be the default account.
 
->   If you’re using Receivables Management, the deposit won’t be listed in the
->   Receivables Customer Inquiry window until the order or back order is
->   transferred to an invoice and posted. The deposit amount will appear in the
->   Customer Payment Summary Inquiry window.
+If you’re using Receivables Management, the deposit won’t be listed in the Receivables Customer Inquiry window until the order or back order is transferred to an invoice and posted. The deposit amount will appear in the Customer Payment Summary Inquiry window.
 
->   If you remove a deposit, a reversing entry will be posted in General Ledger
->   when you close the Sales Payment Entry window. The difference will also be
->   reflected in Receivables Management.
+If you remove a deposit, a reversing entry will be posted in General Ledger when you close the Sales Payment Entry window. The difference will also be reflected in Receivables Management.
 
 #### Posting payments
 
->   A payment amount on an order or back order won’t be posted until the order
->   or back order is transferred to an invoice and the invoice is posted.
->   Payment amounts will be posted to the Cash account and Sales account in
->   General Ledger. For example, if you enter a \$100.00 payment, the Cash
->   account will be debited \$100.00 and the Sales account will be credited
->   \$100.00.
+A payment amount on an order or back order won’t be posted until the order or back order is transferred to an invoice and the invoice is posted. Payment amounts will be posted to the Cash account and Sales account in General Ledger. For example, if you enter a \$100.00 payment, the Cash account will be debited \$100.00 and the Sales account will be credited \$100.00.
 
->   You can change the posting accounts used for the payment after it is
->   transferred to an invoice. If you enter a cash payment, the cash account
->   from the Checkbook ID will be the default account. If you enter a credit
->   card payment, the cash account chosen for the credit card will be the
->   default account.
+You can change the posting accounts used for the payment after it is transferred to an invoice. If you enter a cash payment, the cash account from the Checkbook ID will be the default account. If you enter a credit card payment, the cash account chosen for the credit card will be the default account.
 
->   If you’re using Receivables Management, the payment won’t be listed in the
->   Receivables Customer Inquiry window until the order or back order is
->   transferred to an invoice and posted. Credit card payment amounts will not
->   appear in the Customer Payment Summary Inquiry window.
+If you’re using Receivables Management, the payment won’t be listed in the Receivables Customer Inquiry window until the order or back order is transferred to an invoice and posted. Credit card payment amounts will not appear in the Customer Payment Summary Inquiry window.
 
 #### Removing a deposit or payment
 
->   You can remove a deposit or payment from a sales order, back order, or
->   invoice before transferring or deleting the document.
+You can remove a deposit or payment from a sales order, back order, or invoice before transferring or deleting the document.
 
->   **To remove a deposit or payment:**
+**To remove a deposit or payment:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Select a document and choose the Amount Received expansion button to open
-    the Sales Payment Entry window.
+1.  Select a document and choose the Amount Received expansion button to open the Sales Payment Entry window.
 
 2.  Select the payment or deposit in the scrolling window.
 
 3.  Choose Remove.
 
->   If you remove a partially transferred payment from an order or back order,
->   the amount will be removed from the current transaction in the Sales Payment
->   Entry window, but you will be able to view the full amount in inquiries.
+If you remove a partially transferred payment from an order or back order, the amount will be removed from the current transaction in the Sales Payment Entry window, but you will be able to view the full amount in inquiries.
 
 ### Chapter 18: Sales Order Processing taxes
 
@@ -3294,136 +2926,86 @@ This information is divided into the following sections:
 
 #### Sales tax calculations
 
->   When you set up Sales Order Processing, you can choose to use a single tax
->   schedule for all items on all documents or you can mark the advanced option
->   to determine the tax for inventory items, non-inventoried items, freight,
->   and miscellaneous charges individually. For more information on Sales Order
->   Processing tax setup, see *Setting up taxes and options* on page 15.
+When you set up Sales Order Processing, you can choose to use a single tax schedule for all items on all documents or you can mark the advanced option to determine the tax for inventory items, non-inventoried items, freight, and miscellaneous charges individually. For more information on Sales Order Processing tax setup, see *Setting up taxes and options* on page 15.
 
->   Here are the components of the sales tax calculation if you selected to use
->   an advanced tax schedule when you set up Sales Order Processing:
+Here are the components of the sales tax calculation if you selected to use an advanced tax schedule when you set up Sales Order Processing:
 
->   **Item** The tax option for each item on the invoice is used. To view the
->   tax option for an item, choose the Item Number expansion button to open the
->   Sales Item Detail Entry window.
+    - **Item** The tax option for each item on the invoice is used. To view the tax option for an item, choose the Item Number expansion button to open the Sales Item Detail Entry window.
 
--   If the tax option for the item is Nontaxable, no tax is calculated for that
-    item.
+        - If the tax option for the item is Nontaxable, no tax is calculated for that item.
 
--   If the tax option for the item is Taxable, the tax schedule for the line
-    item is compared to the default tax schedule from the Item Maintenance
-    window. Taxes will be calculated for tax details found in both schedules.
+        - If the tax option for the item is Taxable, the tax schedule for the line item is compared to the default tax schedule from the Item Maintenance window. Taxes will be calculated for tax details found in both schedules.
 
--   If the tax option for the item is Base on Customers, the line item’s tax
-    schedule is used.
+    - If the tax option for the item is Base on Customers, the line item’s tax schedule is used.
 
->   **Shipping method** The shipping method specified for the Ship To Address
->   for each line will be used, if your system is set up to use the shipping
->   method in tax calculations. For more information on this option, see the
->   System Setup instructions (Help \>\> Contents \>\> select Setting up the
->   System).
+    - **Shipping method** The shipping method specified for the Ship To Address for each line will be used, if your system is set up to use the shipping method in tax calculations. For more information on this option, see the System Setup instructions (Help \>\> Contents \>\> select Setting up the System).
 
->   To view the shipping method used for a line, expand the Sales Transaction
->   Entry scrolling window and click the Ship To Address ID link to open the
->   Sales Ship To Address Entry window.
+         To view the shipping method used for a line, expand the Sales Transaction Entry scrolling window and click the Ship To Address ID link to open the Sales Ship To Address Entry window.
 
--   If the shipping method is a Pickup type, the tax schedule from the Site ID
-    on the line is used.
+        - If the shipping method is a Pickup type, the tax schedule from the Site ID on the line is used.
 
--   If the shipping method is a Delivery type, the tax schedule from the Ship To
-    Address for the line is used.
+        - If the shipping method is a Delivery type, the tax schedule from the Ship To Address for the line is used.
 
->   The system compares the two tax schedules—the tax schedule for the item and
->   either the tax schedule for the ship-to address or the schedule for the
->   site. Any details that are in common will be the tax details used to
->   calculate the sales tax for the item.
+        The system compares the two tax schedules—the tax schedule for the item and either the tax schedule for the ship-to address or the schedule for the site. Any details that are in common will be the tax details used to calculate the sales tax for the item.
 
->   To view the tax calculation for an item, choose the Item Number expansion
->   button to open the Sales Item Detail Entry window. Then choose the
->   Calculated Tax expansion button to open the Sales Line Item Tax Detail Entry
->   window.
+To view the tax calculation for an item, choose the Item Number expansion button to open the Sales Item Detail Entry window. Then choose the Calculated Tax expansion button to open the Sales Line Item Tax Detail Entry window.
 
 #### Calculating and distributing summary taxes
 
->   Use the Sales Tax Summary Entry window to add, change, delete, or view
->   summarized tax amounts for a document, as well as the accounts to which the
->   amounts will be posted.
+Use the Sales Tax Summary Entry window to add, change, delete, or view summarized tax amounts for a document, as well as the accounts to which the amounts will be posted.
 
->   You can’t change the Tax amount in the Sales Transaction Entry window or the
->   tax information in the Sales Tax Summary Entry window if your system is not
->   set up to allow editing summary-level taxes. For more information on this
->   setup option, see the System Setup instructions (Help \>\> Contents \>\>
->   select Setting Up the System).
+You can’t change the Tax amount in the Sales Transaction Entry window or the tax information in the Sales Tax Summary Entry window if your system is not set up to allow editing summary-level taxes. For more information on this setup option, see the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
->   **To calculate and distribute summary taxes:**
+**To calculate and distribute summary taxes:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Enter document information, including the document number, the document
-    date, and the site ID.
+1.  Enter document information, including the document number, the document date, and the site ID.
 
->   Choose the Date expansion button to open the Sales Date Entry window, where
->   you can enter a tax date and posting date that differ from the document
->   date. The tax date you enter is the date your tax records will be updated.
+    Choose the Date expansion button to open the Sales Date Entry window, where you can enter a tax date and posting date that differ from the document date. The tax date you enter is the date your tax records will be updated.
 
-1.  Enter or select a customer ID. Choose the Customer ID expansion button to
-    view address and tax information about the customer in the Sales Customer
-    Detail Entry window.
+1.  Enter or select a customer ID. Choose the Customer ID expansion button to view address and tax information about the customer in the Sales Customer Detail Entry window.
 
-2.  Enter line item information. To change either the price of a line item or
-    the tax amount, choose the Item Number expansion button to open the Sales
-    Item Detail Entry window.
+2.  Enter line item information. To change either the price of a line item or the tax amount, choose the Item Number expansion button to open the Sales Item Detail Entry window.
 
 3.  Enter total information.
 
-1.  Choose the Tax expansion button in the Sales Transaction Entry window to
-    open the Sales Tax Summary Entry window, where you can view or edit the tax
-    distribution accounts and amounts.
+1.  Choose the Tax expansion button in the Sales Transaction Entry window to open the Sales Tax Summary Entry window, where you can view or edit the tax distribution accounts and amounts.
 
-![](media/8747f96bb4ae3753ecb975764cc21971.jpg)
+    ![](media/8747f96bb4ae3753ecb975764cc21971.jpg)
 
-1.  When you’re finished, choose OK to save changes and return to the Sales
-    Transaction Entry window.
+1.  When you’re finished, choose OK to save changes and return to the Sales Transaction Entry window.
 
->   Choose Delete to delete the tax information in the Sales Tax Summary Entry
->   window.
+    Choose Delete to delete the tax information in the Sales Tax Summary Entry window.
 
->   Choose Default to restore the default tax information.
+    Choose Default to restore the default tax information.
 
 #### Calculating and distributing detail taxes
 
->   Use the Sales Line Item Tax Detail Entry window to add, change, delete, or
->   view tax amounts calculated on an individual line item. If the tax amount
->   you enter on the document is different than the tax amount that’s been
->   distributed, the line item can’t be posted.
+Use the Sales Line Item Tax Detail Entry window to add, change, delete, or view tax amounts calculated on an individual line item. If the tax amount you enter on the document is different than the tax amount that’s been distributed, the line item can’t be posted.
 
->   **To calculate and distribute detail taxes:**
+**To calculate and distribute detail taxes:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Enter document information, including the document number, the document
-    date, the customer ID, and the site ID.
+1.  Enter document information, including the document number, the document date, the customer ID, and the site ID.
 
-2.  Enter or select a line item and choose the Item Number expansion button to
-    open the Sales Item Detail Entry window.
+2.  Enter or select a line item and choose the Item Number expansion button to open the Sales Item Detail Entry window.
 
-3.  Choose the Calculated Tax expansion button in the Sales Item Detail Entry
-    window to open the Sales Line Item Tax Detail Entry window, where you can
-    view or edit tax distribution accounts and amounts.
+3.  Choose the Calculated Tax expansion button in the Sales Item Detail Entry window to open the Sales Line Item Tax Detail Entry window, where you can view or edit tax distribution accounts and amounts.
 
-![](media/e95d367811c46c623403997ecbb21c7f.jpg)
+    ![](media/e95d367811c46c623403997ecbb21c7f.jpg)
 
 1.  When you’re finished, choose OK to save changes and return to the Sales Item
     Detail Entry window.
 
->   Choose Delete to delete the tax information in the Sales Line Item Tax
->   Detail Entry window.
+    Choose Delete to delete the tax information in the Sales Line Item Tax Detail Entry window.
 
->   Choose Default to restore the default tax information.
+    Choose Default to restore the default tax information.
 
 ## Part 3: Allocation, fulfillment, and purchasing
 
@@ -3443,17 +3025,11 @@ The following topics are discussed:
 
 ### Chapter 19: Allocating item quantities
 
->   When you allocate an item, it is reserved in inventory and the quantity
->   available for the item and for the site is reduced in inventory. You must
->   allocate items before you can fulfill them.
+When you allocate an item, it is reserved in inventory and the quantity available for the item and for the site is reduced in inventory. You must allocate items before you can fulfill them.
 
->   If the order ID, fulfillment order/invoice ID, or invoice ID you’re using
->   was not set up to use a separate fulfillment process, item quantities also
->   will be fulfilled when they’re allocated. For more information about setting
->   up an order ID or an invoice ID, see *Setting up orders* on page 30 or
->   *Setting up invoices* on page 38.
+If the order ID, fulfillment order/invoice ID, or invoice ID you’re using was not set up to use a separate fulfillment process, item quantities also will be fulfilled when they’re allocated. For more information about setting up an order ID or an invoice ID, see *Setting up orders* on page 30 or *Setting up invoices* on page 38.
 
->   This information contains the following sections:
+This information contains the following sections:
 
 -   *Setup options and allocation*
 
@@ -3477,145 +3053,80 @@ The following topics are discussed:
 
 -   *Quantity allocation problems*
 
-### Setup options and allocation
+#### Setup options and allocation
 
->   You can allocate order, fulfillment order, and invoice documents using
->   several methods—by line item, by document or batch, or none. The allocation
->   options you select when setting up document IDs determine how item
->   quantities will be allocated during transaction entry.
+You can allocate order, fulfillment order, and invoice documents using several methods—by line item, by document or batch, or none. The allocation options you select when setting up document IDs determine how item quantities will be allocated during transaction entry.
 
->   **Line item**
+- **Line item**
 
->   When you allocate by line item, quantities are reserved in inventory when
->   you enter the item and item quantity in the Sales Transaction Entry window.
->   You must handle each quantity shortage as it arises.
+    When you allocate by line item, quantities are reserved in inventory when you enter the item and item quantity in the Sales Transaction Entry window. You must handle each quantity shortage as it arises.
 
->   **Document/Batch**
+- **Document/Batch**
 
->   Allocating by document/batch allows for faster data entry because the
->   quantity available isn’t checked as the items are entered in the Sales
->   Transaction Entry window. When you allocate by document or batch, the
->   quantities aren‘t set aside in inventory for the line items and the quantity
->   available isn’t checked for shortages until you allocate the entire document
->   or batch.
+    Allocating by document/batch allows for faster data entry because the quantity available isn’t checked as the items are entered in the Sales Transaction Entry window. When you allocate by document or batch, the quantities aren‘t set aside in inventory for the line items and the quantity available isn’t checked for shortages until you allocate the entire document or batch.
 
->   When you allocate item quantities for a document, each item on the document
->   is checked for the quantity available. If there is a shortage, you can
->   select a quantity shortage option for each item.
+    When you allocate item quantities for a document, each item on the document is checked for the quantity available. If there is a shortage, you can select a quantity shortage option for each item.
 
->   When you allocate item quantities for an entire batch, you can select a
->   quantity shortage option that will be used for all quantity shortages in the
->   batch.
+    When you allocate item quantities for an entire batch, you can select a quantity shortage option that will be used for all quantity shortages in the batch.
 
->   If documents are set up to be allocated by document or batch, additional
->   items entered on the document after you have allocated the document will be
->   allocated by line, and you must address quantity shortages as they arise.
+    If documents are set up to be allocated by document or batch, additional items entered on the document after you have allocated the document will be allocated by line, and you must address quantity shortages as they arise.
 
-*If you’re entering a repeating order, you must allocate by document/batch.*
+    > [!NOTE]
+    > If you’re entering a repeating order, you must allocate by document/batch.
 
->   **None**
+- **None**
 
->   You can choose not to allocate items on orders. Item quantities will be
->   allocated according to the selection you make when you transfer the order to
->   an invoice. Quantity shortages are addressed based on the allocation option
->   selected for the invoice ID used.
+    You can choose not to allocate items on orders. Item quantities will be allocated according to the selection you make when you transfer the order to an invoice. Quantity shortages are addressed based on the allocation option selected for the invoice ID used.
 
->   For more information about setup options, see *Setting up orders* or
->   *Setting up invoices*. For more information about allocating items, see
->   *Allocating by line item* or *Allocating items by document or batch*.
+For more information about setup options, see *Setting up orders* or *Setting up invoices*. For more information about allocating items, see *Allocating by line item* or *Allocating items by document or batch*.
 
-### Quantity shortage indicators
+#### Quantity shortage indicators
 
->   If there is a quantity shortage and allocation is unsuccessful, an icon
->   appears on the quantity field. When the icon appears, the Quantity Alert
->   button will become available.
+If there is a quantity shortage and allocation is unsuccessful, an icon appears on the quantity field. When the icon appears, the Quantity Alert button will become available.
 
->   **Quantity Alert icon**
+- **Quantity Alert icon**
 
->   The quantity alert icon appears next to a quantity field, indicating that
->   allocation has been attempted but the quantity entered for the item is
->   greater than the quantity that was successfully allocated. The Quantity
->   Alert icon will also appear if you selected None as the default quantity
->   shortage option and allocation is unsuccessful.
+    The quantity alert icon appears next to a quantity field, indicating that allocation has been attempted but the quantity entered for the item is greater than the quantity that was successfully allocated. The Quantity Alert icon will also appear if you selected None as the default quantity shortage option and allocation is unsuccessful.
 
->   **Quantity Alert button**
+- **Quantity Alert button**
 
->   The Quantity Alert button opens the Sales Quantity Shortage Options window,
->   where you can select quantity shortage options such as selling the balance,
->   overriding the shortage or back ordering the balance.
+    The Quantity Alert button opens the Sales Quantity Shortage Options window, where you can select quantity shortage options such as selling the balance, overriding the shortage or back ordering the balance.
 
->   If you’re working with a kit item, this button opens the Sales Kit Options
->   window, where you can attempt allocation again, substitute components, or
->   decrease component quantities.
+    If you’re working with a kit item, this button opens the Sales Kit Options window, where you can attempt allocation again, substitute components, or decrease component quantities.
 
-### Quantity shortage options
+#### Quantity shortage options
 
->   Depending on how Sales Order Processing was configured, you may be able to
->   enter a quantity greater than the quantity that’s available in inventory.
->   Item quantities are checked when an item is allocated. If there is a
->   quantity shortage, the Sales Quantity Shortage Options window will open and
->   you can select how to treat the quantity shortage. You can select from the
->   following options.
+Depending on how Sales Order Processing was configured, you may be able to enter a quantity greater than the quantity that’s available in inventory. Item quantities are checked when an item is allocated. If there is a quantity shortage, the Sales Quantity Shortage Options window will open and you can select how to treat the quantity shortage. You can select from the following options.
 
->   **Sell Balance** The quantity available in inventory for the site will be
->   allocated to the document. For example, if you entered 5 for the quantity
->   ordered on a sales order but have 3 available in inventory, the quantity
->   ordered and the quantity invoiced for the item is set to 3. The quantity
->   available in inventory for the item will be zero.
+- **Sell Balance** The quantity available in inventory for the site will be allocated to the document. For example, if you entered 5 for the quantity ordered on a sales order but have 3 available in inventory, the quantity ordered and the quantity invoiced for the item is set to 3. The quantity available in inventory for the item will be zero.
 
->   **Override Shortage** The shortage will be ignored and the entire quantity
->   will be sold. The quantity available in inventory will be negative. This
->   option isn’t available if you are selling discontinued items.
+- **Override Shortage** The shortage will be ignored and the entire quantity will be sold. The quantity available in inventory will be negative. This option isn’t available if you are selling discontinued items.
 
->   *You shouldn’t override a shortage on an item that is tracked by serial or
->   lot numbers. Your inventory will be overstated when the quantity is
->   replenished.*
+    > [!IMPORTANT]
+    > You shouldn’t override a shortage on an item that is tracked by serial or lot numbers. Your inventory will be overstated when the quantity is replenished.
 
->   **Back Order All** The entire quantity will appear in the Quantity to Back
->   Order field. To create the back order document, you must transfer the
->   document to a back order.
+- **Back Order All** The entire quantity will appear in the Quantity to Back Order field. To create the back order document, you must transfer the document to a back order.
 
->   Depending on how Purchase Order Processing is set up, you may be able to
->   link back-ordered quantities on sales documents to existing purchase order
->   line items with uncommitted quantities.
+    Depending on how Purchase Order Processing is set up, you may be able to link back-ordered quantities on sales documents to existing purchase order line items with uncommitted quantities.
 
->   For more information about setting up Purchase Order Processing, see the
->   Purchase Order Processing documentation.
+    For more information about setting up Purchase Order Processing, see the Purchase Order Processing documentation.
 
->   **Back Order Balance** The quantity shortage will appear in the Quantity to
->   Back Order field and the quantity you have available will be sold. To create
->   the back order document, you must transfer the document to a back order.
+- **Back Order Balance** The quantity shortage will appear in the Quantity to Back Order field and the quantity you have available will be sold. To create the back order document, you must transfer the document to a back order.
 
->   *The Back Order All and Back Order Balance options won*’*t be available for
->   the item if the item isn*’*t marked to allow back orders. To mark this
->   option, choose Inventory \>\> Cards \>\> Items \>\> Options.*
+    > [!NOTE]
+    >The Back Order All and Back Order Balance options are not available for the item if the item isn not marked to allow back orders. To mark this option, choose Inventory \>\> Cards \>\> Items \>\> Options.
 
->   Depending on how Purchase Order Processing is set up, you may be able to
->   link back-ordered quantities on sales documents to existing purchase order
->   line items with uncommitted quantities.
+    Depending on how Purchase Order Processing is set up, you may be able to link back-ordered quantities on sales documents to existing purchase order line items with uncommitted quantities.
 
->   **Cancel All** The entire quantity for the item will be canceled.
+- **Cancel All** The entire quantity for the item will be canceled.
 
->   **Cancel Balance** The quantity shortage amount will be canceled and the
->   quantity you have available at the site will be sold. For example, if you
->   entered 5 for the quantity ordered for an item but have 3 available in
->   inventory, the quantity ordered remains at 5, the quantity invoiced is set
->   to 3, the quantity canceled is set to 2.
+- **Cancel Balance** The quantity shortage amount will be canceled and the quantity you have available at the site will be sold. For example, if you entered 5 for the quantity ordered for an item but have 3 available in inventory, the quantity ordered remains at 5, the quantity invoiced is set to 3, the quantity canceled is set to 2.
 
->   **Distribute** When you select Distribute and close the Sales Quantity
->   Shortage Options window, the Sales Item Quantity Distribution Entry window
->   opens. In this window, you can substitute items and sell items from another
->   site. For more information, see *Selling an item from another site* on page
->   132 or *Substituting an item* on page 133.
+- **Distribute** When you select Distribute and close the Sales Quantity Shortage Options window, the Sales Item Quantity Distribution Entry window opens. In this window, you can substitute items and sell items from another site. For more information, see *Selling an item from another site* on page 132 or *Substituting an item* on page 133.
 
->   If you’re using extended pricing and you choose to distribute the shortage,
->   and if a promotion exists for the item and quantity you entered, the
->   Promotion Alert window will open, where you can accept or reject the
->   promotion. If the promotion is for a free item, the Promotion Alert window
->   will not open.
+If you’re using extended pricing and you choose to distribute the shortage, and if a promotion exists for the item and quantity you entered, the Promotion Alert window will open, where you can accept or reject the promotion. If the promotion is for a free item, the Promotion Alert window will not open.
 
->   The Distribute option appears in the Sales Quantity Shortage Options window
->   only if one of the following conditions is true.
+The Distribute option appears in the Sales Quantity Shortage Options window only if one of the following conditions is true.
 
 -   The item is not a kit or a kit component.
 
@@ -3623,347 +3134,188 @@ The following topics are discussed:
 
 -   The quantity previously invoiced equals zero.
 
--   You opened the Sales Quantity Shortage Options window from the Sales
-    Transaction Entry window or the Sales Item Detail Entry window, or you
-    pressed TAB on a line with an item that needed to be allocated.
+-   You opened the Sales Quantity Shortage Options window from the Sales Transaction Entry window or the Sales Item Detail Entry window, or you pressed TAB on a line with an item that needed to be allocated.
 
--   You didn’t open the Sales Quantity Shortage Options window from the Sales
-    Allocation-Fulfillment Options window.
+-   You didn’t open the Sales Quantity Shortage Options window from the Sales Allocation-Fulfillment Options window.
 
-### Quantity shortages and bins
+#### Quantity shortages and bins
 
->   Bin selections are needed to keep bin quantity information up-to-date, but
->   they don’t affect posting. From an accounting perspective, it doesn’t matter
->   if you have 100 widgets at the North site in one bin or in 100 bins: what
->   matters is that you have 100 widgets at the North site.
+Bin selections are needed to keep bin quantity information up-to-date, but they don’t affect posting. From an accounting perspective, it doesn’t matter if you have 100 widgets at the North site in one bin or in 100 bins: what matters is that you have 100 widgets at the North site.
 
->   Because of this, quantity overrides at the bin level are allowed, even if
->   you haven’t marked the option to allow overrides.
+Because of this, quantity overrides at the bin level are allowed, even if you haven’t marked the option to allow overrides.
 
->   If you’re using multiple bins and you override a quantity shortage at the
->   site, the system automatically allocates the default sales order fulfillment
->   bin’s quantity available, and the Bin Quantity Entry window opens so you can
->   make additional bin selections.
+If you’re using multiple bins and you override a quantity shortage at the site, the system automatically allocates the default sales order fulfillment bin’s quantity available, and the Bin Quantity Entry window opens so you can make additional bin selections.
 
->   If there is not a quantity shortage at the site but there is a shortage at
->   the default bin, and you choose to override the bin shortage, the default
->   bin’s quantity available is allocated and the Bin Quantity Entry window
->   opens so you can make additional bin selections.
+If there is not a quantity shortage at the site but there is a shortage at the default bin, and you choose to override the bin shortage, the default bin’s quantity available is allocated and the Bin Quantity Entry window opens so you can make additional bin selections.
 
->   If you override a serial- or lot-numbered item’s quantity shortage, you must
->   enter serial or lot numbers for the additional item quantity. Because
->   allocation happens at the site, and fulfillment allocates quantities at the
->   bin, selecting serial or lot numbers and bins does not cause additional site
->   allocations.
+If you override a serial- or lot-numbered item’s quantity shortage, you must enter serial or lot numbers for the additional item quantity. Because allocation happens at the site, and fulfillment allocates quantities at the bin, selecting serial or lot numbers and bins does not cause additional site allocations.
 
->   *You shouldn’t override a shortage on an item that is tracked by serial or
->   lot numbers. Your inventory will be overstated when the quantity is
->   replenished.*
+> [!NOTE]
+> You shouldn’t override a shortage on an item that is tracked by serial or lot numbers. Your inventory will be overstated when the quantity is replenished.
 
->   For more information on multiple bins functionality, see the Inventory
->   Control documentation.
+For more information on multiple bins functionality, see the Inventory Control documentation.
 
-### Selling an item from another site
+#### Selling an item from another site
 
->   When you enter a document in the Sales Transaction Entry window, you select
->   a default site. If there is a quantity shortage for an item at the default
->   site, the Sales Quantity Shortage Options window will open and you can
->   choose the Distribute shortage option to check the quantity available at
->   other sites and allocate the item from other sites.
+When you enter a document in the Sales Transaction Entry window, you select a default site. If there is a quantity shortage for an item at the default site, the Sales Quantity Shortage Options window will open and you can choose the Distribute shortage option to check the quantity available at other sites and allocate the item from other sites.
 
->   **To sell an item from another site:**
+**To sell an item from another site:**
 
-1.  In the Sales Quantity Shortage Options window, select Distribute to open the
-    Sales Item Quantity Distribution Entry window.
+1.  In the Sales Quantity Shortage Options window, select Distribute to open the Sales Item Quantity Distribution Entry window.
 
-![](media/d1cf2467f42d86d66ba6e6194337965b.jpg)
+    ![](media/d1cf2467f42d86d66ba6e6194337965b.jpg)
 
 1.  Change the Site ID.
 
-2.  In the Quantities Available section of the window, see if there is a
-    quantity available for that site. If there is, enter the quantity needed for
-    the document in the Quantity Selected field.
+2.  In the Quantities Available section of the window, see if there is a quantity available for that site. If there is, enter the quantity needed for the document in the Quantity Selected field.
 
-3.  Choose Insert. An entry will appear in the Quantities Selected section of
-    the window.
+3.  Choose Insert. An entry will appear in the Quantities Selected section of the window.
 
->   If you’re using extended pricing and a promotion exists for the item and
->   quantity you entered, the Promotion Alert window will open, where you can
->   accept or reject the promotion.
+    If you’re using extended pricing and a promotion exists for the item and quantity you entered, the Promotion Alert window will open, where you can accept or reject the promotion.
 
-1.  Repeat the process to choose additional sites to fill the quantity needed.
-    The total quantity selected less the quantity back ordered and quantity
-    canceled should equal the Original Item Extended Quantity.
+1.  Repeat the process to choose additional sites to fill the quantity needed. The total quantity selected less the quantity back ordered and quantity canceled should equal the Original Item Extended Quantity.
 
 2.  Choose OK to close the window and save your entries.
 
-### Substituting an item
+#### Substituting an item
 
->   When you enter a document in the Sales Transaction Entry window, you select
->   a default site. If there is a quantity shortage for an item at the default
->   site, the Sales Quantity Shortage Options window will open and you can
->   select the Distribute shortage option and choose a substitute item.
->   Substitute items must be set up in inventory and you can set up two
->   substitute items for each inventory item. For more information about
->   substitute items, see the Inventory Control documentation.
+When you enter a document in the Sales Transaction Entry window, you select a default site. If there is a quantity shortage for an item at the default site, the Sales Quantity Shortage Options window will open and you can select the Distribute shortage option and choose a substitute item. Substitute items must be set up in inventory and you can set up two substitute items for each inventory item. For more information about substitute items, see the Inventory Control documentation.
 
->   **To substitute an item:**
+**To substitute an item:**
 
-1.  In the Sales Quantity Shortage Options window, select the Distribute option
-    to open the Sales Item Quantity Distribution Entry window.
+1.  In the Sales Quantity Shortage Options window, select the Distribute option to open the Sales Item Quantity Distribution Entry window.
 
-2.  Choose Substitute to open the Sales Substitute Item window. Select a
-    substitute item from the drop-down list and choose OK.
+2.  Choose Substitute to open the Sales Substitute Item window. Select a substitute item from the drop-down list and choose OK.
 
-![](media/e852535e5ec703414c20a0598847327c.jpg)
+    ![](media/e852535e5ec703414c20a0598847327c.jpg)
 
-1.  In the Quantities Available section of the Sales Item Quantity Distribution
-    Entry window, check the site to see the quantity available for the
-    substitute item. Enter an amount for the quantity selected. You can also
-    enter a quantity canceled and quantity back ordered.
+1.  In the Quantities Available section of the Sales Item Quantity Distribution Entry window, check the site to see the quantity available for the substitute item. Enter an amount for the quantity selected. You can also enter a quantity canceled and quantity back ordered.
 
-2.  Choose Insert. An entry will appear in the Quantities Selected section of
-    the window.
+2.  Choose Insert. An entry will appear in the Quantities Selected section of the window.
 
->   If you’re using extended pricing and a promotion exists for the item and
->   quantity you entered, the Promotion Alert window will open, where you can
->   accept or reject the promotion.
+    If you’re using extended pricing and a promotion exists for the item and quantity you entered, the Promotion Alert window will open, where you can accept or reject the promotion.
 
-1.  Repeat the process to choose an additional substitute item or site to fill
-    the quantity needed. The total quantity selected less the quantity back
-    ordered and quantity canceled must equal the Original Item Extended
-    Quantity.
+1.  Repeat the process to choose an additional substitute item or site to fill the quantity needed. The total quantity selected less the quantity back ordered and quantity canceled must equal the Original Item Extended Quantity.
 
 2.  Choose OK to close the window and save your entries.
 
-### Processing kit shortages
+#### Processing kit shortages
 
->   When you allocate a kit item and there is a quantity shortage for a
->   component of the kit, the Sales Quantity Shortage Options window will open
->   and you can choose how to treat the quantity shortage. When you’re
->   allocating a kit, you’re actually allocating the kit components because kit
->   quantities are tracked for the components, not the kit item as a whole.
+When you allocate a kit item and there is a quantity shortage for a component of the kit, the Sales Quantity Shortage Options window will open and you can choose how to treat the quantity shortage. When you’re allocating a kit, you’re actually allocating the kit components because kit quantities are tracked for the components, not the kit item as a whole.
 
->   *You shouldn’t override a shortage on a component item that is tracked by
->   serial or lot numbers. Your inventory will be overstated when the quantity
->   is replenished.*
+> [!NOTE]
+> You shouldn’t override a shortage on a component item that is tracked by serial or lot numbers. Your inventory will be overstated when the quantity is replenished.
 
->   The shortage options available for a kit are different than those for other
->   inventory items. For a kit item, you can’t split the quantities; therefore,
->   Back Order Balance and Cancel Balance aren’t shortage options for a kit.
+The shortage options available for a kit are different than those for other inventory items. For a kit item, you can’t split the quantities; therefore, Back Order Balance and Cancel Balance aren’t shortage options for a kit.
 
->   *You can invoice a kit item and back order some of the components. For
->   example, if you’re selling a computer kit, and have all of the kit
->   components except the mouse pad, you can bill the customer for the entire
->   kit and back order the mouse pad. To do so, create an invoice for the kit
->   item, and in the Sales Kit Options window, enter a quantity to back order
->   for the mouse pad. You won’t be able to post the invoice until a back order
->   document has been created. If you invoice the kit without creating a back
->   order, you won’t be able to change any of the components.*
+> [!NOTE]
+> You can invoice a kit item and back order some of the components. For example, if you’re selling a computer kit, and have all of the kit components except the mouse pad, you can bill the customer for the entire kit and back order the mouse pad. To do so, create an invoice for the kit item, and in the Sales Kit Options window, enter a quantity to back order for the mouse pad. You won’t be able to post the invoice until a back order document has been created. If you invoice the kit without creating a back order, you won’t be able to change any of the components.
 
->   The Back Order All option won’t be available for the kit item or component
->   item if the item isn’t marked to allow back orders. You can mark the Allow
->   Back Orders option in the Item Maintenance Options window (Inventory \>\>
->   Cards \>\> Items \>\> Options).
+The Back Order All option won’t be available for the kit item or component item if the item isn’t marked to allow back orders. You can mark the Allow Back Orders option in the Item Maintenance Options window (Inventory \>\> Cards \>\> Items \>\> Options).
 
->   The following shortage options are available for kit items.
+The following shortage options are available for kit items.
 
-| **Shortage option** | **Description**                                                                                                                                                                                                                                                                                                                             |
-|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sell Balance        | The balance you have in inventory will be allocated. For example, if you entered two for the quantity ordered for kit items on an order but have components to fill only one kit, the quantity ordered on the kit will be reduced to one and the components needed for one kit will be allocated in inventory.                              |
+| **Shortage option** | **Description**     |
+|---------------------|---------------------|
+| Sell Balance        | The balance you have in inventory will be allocated. For example, if you entered two for the quantity ordered for kit items on an order but have components to fill only one kit, the quantity ordered on the kit will be reduced to one and the components needed for one kit will be allocated in inventory.  |
 | Override Shortage   | The quantity shortage for every component will be overridden. The quantity available in inventory will be a negative number for each component with a quantity shortage. This option isn’t available if you are selling discontinued items. The quantity allocated for discontinued items will be the balance of the quantity in inventory. |
-| Back Order All      | The entire quantity will be back ordered, including each kit component.                                                                                                                                                                                                                                                                     |
-| Cancel All          | The entire quantity will be canceled, including each kit component.                                                                                                                                                                                                                                                                         |
-| Allocate Available  | All components that can be allocated will be allocated. A Quantity Alert icon will appear next to the quantities for each component that has a quantity shortage. You can then handle each component shortage individually with the following shortage options:                                                                             |
+| Back Order All      | The entire quantity will be back ordered, including each kit component.   |
+| Cancel All          | The entire quantity will be canceled, including each kit component.       |
+| Allocate Available  | All components that can be allocated will be allocated. A Quantity Alert icon will appear next to the quantities for each component that has a quantity shortage. You can then handle each component shortage individually with the following shortage options: </br> **Sell Balance** — The quantity you have available in inventory for the site will be sold. </br> **Override Shortage** — The shortage will be ignored and the entire quantity will be sold. The quantity available in inventory will be negative. This option isn’t available if you are selling discontinued items. </br> **Back Order All** — The entire quantity will appear in the Quantity to Back Order field. To create the back order document, you must transfer this document to a back order. </br> **Cancel All** — The entire quantity for the item will be canceled.    |
 
->   Components
+#### Allocating by line item
 
->   **Sell Balance** — The quantity you have available in inventory for the site
->   will be sold.
+In the Sales Transaction Entry window, when you enter an amount in the Quantity Ordered field (on an order) or the Quantity Invoiced field (on an invoice) for each item, the quantity entered will be allocated. If the order ID or invoice ID is not set up to use a separate fulfillment process, the item also will be fulfilled at this time.
 
->   **Override Shortage** — The shortage will be ignored and the entire quantity
->   will be sold. The quantity available in inventory will be negative. This
->   option isn’t available if you are selling discontinued items.
+If Sales Order Processing is not set up to automatically assign serial and lot numbers, you can enter or select a serial or lot number. When the item is fulfilled, the Sales Serial Number Entry or Sales Lot Number Entry window will open and you can assign the serial or lot number to the item sold. If a lot-numbered item is fulfilled and your system is set up to automatically assign lot numbers, a message won’t be displayed if the expiration date for the lot number has expired.
 
->   **Back Order All** — The entire quantity will appear in the Quantity to Back
->   Order field. To create the back order document, you must transfer this
->   document to a back order.
+If there is a quantity shortage on the item, the Sales Quantity Shortage Option window will open and you must select a shortage option for the item. For more information about shortages, see *Quantity shortage options* on page 130.
 
->   **Cancel All** — The entire quantity for the item will be canceled.
+If you back order or cancel a quantity, the quantity that was allocated will be reduced by the quantity back ordered or canceled.
 
-### Allocating by line item
+If a Sales Order Processing line item is contained on a purchase order that hasn’t been received against, the line item cannot be allocated. (You would have to break the link between the sales line item and the purchase order line item in order to allocate prior to receiving the goods.)
 
->   In the Sales Transaction Entry window, when you enter an amount in the
->   Quantity Ordered field (on an order) or the Quantity Invoiced field (on an
->   invoice) for each item, the quantity entered will be allocated. If the order
->   ID or invoice ID is not set up to use a separate fulfillment process, the
->   item also will be fulfilled at this time.
+#### Allocating items by document or batch
 
->   If Sales Order Processing is not set up to automatically assign serial and
->   lot numbers, you can enter or select a serial or lot number. When the item
->   is fulfilled, the Sales Serial Number Entry or Sales Lot Number Entry window
->   will open and you can assign the serial or lot number to the item sold. If a
->   lot-numbered item is fulfilled and your system is set up to automatically
->   assign lot numbers, a message won’t be displayed if the expiration date for
->   the lot number has expired.
+If you select to allocate by document/batch for order IDs and invoice IDs, you’ll use the Sales Allocation-Fulfillment Options window to allocate all the item quantities for a document or a batch. If the order ID or invoice ID is not set up to use a separate fulfillment process, the item also will be fulfilled at this time. For more information about setting up allocation options, see *Chapter 3, “Document setup.”*
 
->   If there is a quantity shortage on the item, the Sales Quantity Shortage
->   Option window will open and you must select a shortage option for the item.
->   For more information about shortages, see *Quantity shortage options* on
->   page 130.
+If the items on a document have been allocated and you allocate again, the allocated line items won’t be affected. For example, if the items on a document were previously allocated and the document is assigned to a batch that you select to allocate, the items on the document won’t be reallocated.
 
->   If you back order or cancel a quantity, the quantity that was allocated will
->   be reduced by the quantity back ordered or canceled.
+If you back order or cancel an item quantity after you have allocated the document or batch, the quantity that was allocated will be reduced by the quantity back ordered or canceled.
 
->   If a Sales Order Processing line item is contained on a purchase order that
->   hasn’t been received against, the line item cannot be allocated. (You would
->   have to break the link between the sales line item and the purchase order
->   line item in order to allocate prior to receiving the goods.)
+If you mark the Override Billed Quantity with Quantity Fulfilled option in the Sales Invoice Setup window, the billed quantity on a fulfillment order will always be equal to the quantity fulfilled when the quantity fulfilled is greater than zero.
 
-### Allocating items by document or batch
+If an order, invoice, or fulfillment order exceeds the customer’s credit limit and you are using customer credit limit override workflow, the document must be approved before you can allocate items. Orders, invoices, and fulfillment orders that don’t need approval can be allocated. You can allocate items for orders, invoices, and fulfillment orders in the Sales Transaction Entry window that are pending approval if you are the current approver of the documents.
 
->   If you select to allocate by document/batch for order IDs and invoice IDs,
->   you’ll use the Sales Allocation-Fulfillment Options window to allocate all
->   the item quantities for a document or a batch. If the order ID or invoice ID
->   is not set up to use a separate fulfillment process, the item also will be
->   fulfilled at this time. For more information about setting up allocation
->   options, see *Chapter 3, “Document setup.”*
-
->   If the items on a document have been allocated and you allocate again, the
->   allocated line items won’t be affected. For example, if the items on a
->   document were previously allocated and the document is assigned to a batch
->   that you select to allocate, the items on the document won’t be reallocated.
-
->   If you back order or cancel an item quantity after you have allocated the
->   document or batch, the quantity that was allocated will be reduced by the
->   quantity back ordered or canceled.
-
->   If you mark the Override Billed Quantity with Quantity Fulfilled option in
->   the Sales Invoice Setup window, the billed quantity on a fulfillment order
->   will always be equal to the quantity fulfilled when the quantity fulfilled
->   is greater than zero.
-
->   If an order, invoice, or fulfillment order exceeds the customer’s credit
->   limit and you are using customer credit limit override workflow, the
->   document must be approved before you can allocate items. Orders, invoices,
->   and fulfillment orders that don’t need approval can be allocated. You can
->   allocate items for orders, invoices, and fulfillment orders in the Sales
->   Transaction Entry window that are pending approval if you are the current
->   approver of the documents.
-
->   **To allocate items by document or batch:**
+**To allocate items by document or batch:**
 
 1.  Open the Sales Allocation-Fulfillment Options window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a
->   transaction \>\>
+    (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a transaction \>\> Options \>\> Allocate or Fulfill)
 
->   Options \>\> Allocate or Fulfill)
+    (Sales \>\> Transactions \>\> Sales Batches \>\> select a batch \>\> Options \>\> Allocate or Fulfill)
 
->   (Sales \>\> Transactions \>\> Sales Batches \>\> select a batch \>\> Options
->   \>\> Allocate or Fulfill)
+    ![](media/e4ff570fbfe00eee602a679bc2a4fcce.jpg)
 
-![](media/e4ff570fbfe00eee602a679bc2a4fcce.jpg)
+1.  Mark Allocate. If you aren’t using a separate fulfillment process, the item will be fulfilled when it is allocated.
 
-1.  Mark Allocate. If you aren’t using a separate fulfillment process, the item
-    will be fulfilled when it is allocated.
+2.  If you are using a separate fulfillment process, you can mark Fulfill in this window or fulfill the document quantities at a later time. For more information about separate fulfillment, see *Chapter 20, “Separate fulfillment.”*
 
-2.  If you are using a separate fulfillment process, you can mark Fulfill in
-    this window or fulfill the document quantities at a later time. For more
-    information about separate fulfillment, see *Chapter 20, “Separate
-    fulfillment.”*
-
-3.  Select a default quantity shortage option for items and kits. The kit
-    quantity shortage option will be used for all shortages on kit items on the
-    document. You can change the option for each item shortage on the document.
+3.  Select a default quantity shortage option for items and kits. The kit quantity shortage option will be used for all shortages on kit items on the document. You can change the option for each item shortage on the document.
 
 4.  Choose OK to close the window and complete the allocation.
 
-### Allocating back-ordered items for orders and fulfillment orders
+#### Allocating back-ordered items for orders and fulfillment orders
 
->   Use the Sales Automatic Order Allocation window to select the documents with
->   items on back order to allocate. Use the Sales Automatic Order Allocation
->   Preview window to allocate the items.
+Use the Sales Automatic Order Allocation window to select the documents with items on back order to allocate. Use the Sales Automatic Order Allocation Preview window to allocate the items.
 
->   If you’re using sales fulfillment workflow, you can select a group of
->   documents and then allocate items for those documents at the same time. To
->   allocate items for only one document, refer to *Allocating items by document
->   or batch* on page 136.
+If you’re using sales fulfillment workflow, you can select a group of documents and then allocate items for those documents at the same time. To allocate items for only one document, refer to *Allocating items by document or batch* on page 136.
 
->   If an order or fulfillment order exceeds the customer’s credit limit and you
->   are using customer credit limit override workflow, the document must be
->   approved before you can allocate items. Orders and fulfillment orders that
->   don’t need approval can be allocated. You can allocate items for orders and
->   fulfillment orders in the Sales Transaction Entry window that are pending
->   approval if you can approve the documents.
+If an order or fulfillment order exceeds the customer’s credit limit and you are using customer credit limit override workflow, the document must be approved before you can allocate items. Orders and fulfillment orders that don’t need approval can be allocated. You can allocate items for orders and fulfillment orders in the Sales Transaction Entry window that are pending approval if you can approve the documents.
 
->   You also can select to allocate items by customer priority or requested ship
->   date. For more information, refer to the Receivables Management
->   documentation.
+You also can select to allocate items by customer priority or requested ship date. For more information, refer to the Receivables Management documentation.
 
->   **To allocate back-ordered items for orders and fulfillment orders:**
+**To allocate back-ordered items for orders and fulfillment orders:**
 
 1.  Open the Sales Automatic Order Allocation window.
 
->   (Sales \>\> Transactions \>\> Automatic Order Allocation)
+    (Sales \>\> Transactions \>\> Automatic Order Allocation)
 
-![](media/28386856184c37fd12ec678ec115a173.jpg)
+    ![](media/28386856184c37fd12ec678ec115a173.jpg)
 
-1.  Select to allocate documents or preview back orders. To allocate documents,
-    mark to allocate orders, fulfillment orders, or both.
+1.  Select to allocate documents or preview back orders. To allocate documents, mark to allocate orders, fulfillment orders, or both.
 
 2.  Select how to allocate documents.
 
->   **Priority** Select to allocate documents by customer priority. A priority
->   of None is the lowest priority and a priority of 1 is the highest priority.
+    - **Priority** Select to allocate documents by customer priority. A priority of None is the lowest priority and a priority of 1 is the highest priority.
 
->   **Requested Ship Date** Select to allocate documents by the date in the Req
->   Ship Date field in the Sales Transaction Entry window.
+    - **Requested Ship Date** Select to allocate documents by the date in the Req Ship Date field in the Sales Transaction Entry window.
 
-1.  Enter or select a range of documents to allocate items for and choose
-    Insert.
+1.  Enter or select a range of documents to allocate items for and choose Insert.
 
-2.  Choose Preview to open the Sales Automatic Order Allocation Preview window
-    and view the documents that match the selected range.
+2.  Choose Preview to open the Sales Automatic Order Allocation Preview window and view the documents that match the selected range.
 
-![](media/52286b8ebe7157d7c3d26d39b1916dc0.jpg)
+    ![](media/52286b8ebe7157d7c3d26d39b1916dc0.jpg)
 
->   The documents with items to be allocated will be displayed, depending on
->   whether you selected Customer Priority or Requested Ship Date in the Sales
->   Automatic Order Allocation window.
+    The documents with items to be allocated will be displayed, depending on whether you selected Customer Priority or Requested Ship Date in the Sales Automatic Order Allocation window.
 
-1.  Mark the Include option to select additional documents with items to
-    allocate.
+1.  Mark the Include option to select additional documents with items to allocate.
 
->   Unmark the Include option for documents with items that shouldn’t be
->   allocated.
+    Unmark the Include option for documents with items that shouldn’t be allocated.
 
->   Choose Update Quantities to update the quantity to allocate and the quantity
->   left on back order fields.
+    Choose Update Quantities to update the quantity to allocate and the quantity left on back order fields.
 
 1.  Choose Allocate to allocate items and update item information.
 
-### Quantity allocation problems
+#### Quantity allocation problems
 
->   Items on orders and invoices must be successfully allocated before they can
->   be fulfilled. The quantity alert icon indicates that the quantity entered
->   for an item is greater than the quantity that was successfully allocated.
->   For example, if a customer ordered 20 answering machines, but only 12 were
->   successfully allocated, the quantity alert icon will appear next to the
->   quantity ordered.
+Items on orders and invoices must be successfully allocated before they can be fulfilled. The quantity alert icon indicates that the quantity entered for an item is greater than the quantity that was successfully allocated. For example, if a customer ordered 20 answering machines, but only 12 were successfully allocated, the quantity alert icon will appear next to the quantity ordered.
 
 ![](media/bf5ad5004255f3d9d53f1e62a814b499.jpg)
 
->   If a quantity alert appears, choose the quantity alert icon button to
->   allocate the item again. If the allocation is unsuccessful, the Sales
->   Quantity Shortage Options window will open and you can determine how to
->   handle the shortage. For more information about quantity shortages, see
->   *Quantity shortage options* on page 130.
+If a quantity alert appears, choose the quantity alert icon button to allocate the item again. If the allocation is unsuccessful, the Sales Quantity Shortage Options window will open and you can determine how to handle the shortage. For more information about quantity shortages, see *Quantity shortage options* on page 130.
 
->   If you enter a kit item and the quantity alert icon appears, choose the
->   quantity alert icon button to open the Sales Kit Options window where you
->   can allocate the kit again, substitute components, or decrease component
->   quantities.
+If you enter a kit item and the quantity alert icon appears, choose the quantity alert icon button to open the Sales Kit Options window where you can allocate the kit again, substitute components, or decrease component quantities.
 
 ### Chapter 20: Separate fulfillment
 
