@@ -64,7 +64,7 @@ This part of the documentation includes information that will help you set up Sa
 
 - *Chapter 6, “Customer item and substitute item maintenance,”* explains how to create or delete item numbers for customers and substitutes.
 
-### Chapter 1: Setup overview**
+### Chapter 1: Setup overview
 
 Use this information to learn about and set up Sales Order Processing. The setup procedures are organized in an order that will ensure Sales Order Processing is set up properly.
 
@@ -438,7 +438,7 @@ Use the Sales Document Numbers Setup window to enter document numbers, codes, an
     > [!NOTE]
     > Typically, businesses use the same document numbers on packing slips and picking tickets that were used on the orders or invoices from which they were created. For this reason, the same document numbers will be used unless you specify a different next number here.
 
-4.  Choose OK.
+4. Choose OK.
 
 #### Setting up user-defined fields
 
@@ -524,7 +524,6 @@ You can set up passwords to further restrict processing. The user must enter the
 
 You can use either standard or extended pricing. In both pricing systems, you can set up different pricing structures—price levels in standard pricing, or price sheets and price books in extended pricing. You can create different pricing for different currencies and different units of measure. Either system can be used to create pricing structures with quantity breaks. However, you must choose one pricing system and use it exclusively; you can’t use both systems simultaneously.
 
-
 |Pricing method  |Description|
 |---------|---------|
 |**Standard pricing** |Standard pricing might be a better option for your company if any of the following conditions are true: </br>- You’re using Invoicing. (Extended pricing doesn’t work with Invoicing.)</br>- You want price lists to be updated automatically when the current cost or standard cost of an item changes.</br>- You have a fairly simple pricing structure, and don’t need additional tiers.</br> For more information about standard pricing structures, see the Inventory Control documentation.|
@@ -582,7 +581,7 @@ You also can indicate the character of the bin number to create a page break on.
 
     | **Page number** | **Bin numbers** |
     |-----------------|-----------------|
-    | Page 1          | A116            |   
+    | Page 1          | A116            |
     | Page 2          | A123, A127      |
     | Page 3          | A224, A226      |
     | Page 4          | A267            |
@@ -1055,17 +1054,17 @@ You can assign up to six workflow document statuses to a fulfillment order. You 
 
 Each workflow status that you use must have a description. The following descriptions are provided, but you can change them.
 
--   1 = Ready to Print Picking Ticket
+- 1 = Ready to Print Picking Ticket
 
--   2 = Unconfirmed Pick
+- 2 = Unconfirmed Pick
 
--   3 = Confirm Pick/Ready to Pack
+- 3 = Confirm Pick/Ready to Pack
 
--   4 = Unconfirmed Pack
+- 4 = Unconfirmed Pack
 
--   5 = Shipped
+- 5 = Shipped
 
--   6 = Ready to Print/Post
+- 6 = Ready to Print/Post
 
 You can advance the status for one document at a time in the Sales Transaction Entry window by completing the following appropriate tasks.
 
@@ -1167,14 +1166,10 @@ The following table lists the settings that can’t be changed if there are unpo
 | Order             | Allow Repeating Documents   |
 | Invoice           | Allocate By                 |
 | Fulfillment Order | Enable Fulfillment Workflow |
-<!-- Something wrong here-->
->   Allow Repeating Documents
-
->   Allocate By
-
->   Use Separate Fulfillment Process
-
->   Use Separate Fulfillment Process
+<!-- Something wrong here--> Allow Repeating Documents
+ Allocate By
+ Use Separate Fulfillment Process
+ Use Separate Fulfillment Process
 
 **To modify a sales document ID:**
 
@@ -1845,8 +1840,7 @@ You can’t have repeating multicurrency documents. Only documents whose currenc
     ![](media/b8e3cc173f13103c20672efd13f206cb.jpg)
 
 7.  Mark Repeating. Enter how many times to repeat the quote and the frequency.
-
->   Leave the Frequency field blank to use the quote an unlimited number of times.
+ Leave the Frequency field blank to use the quote an unlimited number of times.
 
 8.  Choose OK to close the Sales Document Detail Entry window.
 
@@ -2059,11 +2053,11 @@ Because a sales invoice is a legally binding document, it should be posted. The 
 
 This information is divided into the following sections:
 
--   *Understanding fulfillment orders*
+- *Understanding fulfillment orders*
 
--   *Entering a fulfillment order or invoice*
+- *Entering a fulfillment order or invoice*
 
--   *Combine multiple fulfillment orders to a single invoice*
+- *Combine multiple fulfillment orders to a single invoice*
 
 #### Understanding fulfillment orders
 
@@ -2085,35 +2079,37 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 **To enter a fulfillment order or invoice:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
+1. In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-2.  In the New group or its overflow menu, choose Fulfillment Order or Invoice to open the Sales Transaction Entry window.
+2. In the New group or its overflow menu, choose Fulfillment Order or Invoice to open the Sales Transaction Entry window.
 
     ![](media/e9545482a183bc887c4c22d127ba65c3.jpg)
 
-3.  Enter or select the ID of the type of fulfillment order or invoice to enter.
+3. Enter or select the ID of the type of fulfillment order or invoice to enter.
 
-4.  Enter a document number or accept the default entry.
+4. Enter a document number or accept the default entry.
 
-5.  Enter or select a customer ID and ship-to address.
+5. Enter or select a customer ID and ship-to address.
 
-6.  Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
+6. Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
 
     The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
-7.  Enter the document date. The date you enter will be used to update your sales records. To change the posting date or enter a requested ship date, choose the Date expansion button.
+7. Enter the document date. The date you enter will be used to update your sales records. To change the posting date or enter a requested ship date, choose the Date expansion button.
 
-8.  You can create or select a batch ID to assign to the fulfillment order or invoice.
+8. You can create or select a batch ID to assign to the fulfillment order or invoice.
 
-9.  Enter or select the site ID that the items will be sold from. The site ID will be used to allocate items from inventory and might be used to calculate taxes.
+9. Enter or select the site ID that the items will be sold from. The site ID will be used to allocate items from inventory and might be used to calculate taxes.
 
-10.  Enter the purchase order number if the customer has provided you with one.
+10. Enter the purchase order number if the customer has provided you with one.
+
     The purchase order number will be printed on the fulfillment order or invoice.
 
-11.  Enter or select a currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.
+11. Enter or select a currency ID. If the customer record has a currency ID assigned to it, the customer’s currency ID will appear as the default entry.
+
     Use the Currency ID expansion button to open the Exchange Rate Entry window, where you can change the rate type ID or the exchange rate. For information about how exchange rates affect the transaction, see *Chapter 8, “Multicurrency transactions.”*
 
-12.  Enter or select item numbers, units of measure, and item quantities for the fulfillment order or invoice. To view additional lines of information for each item, choose the hide and show button next to the Extended Price field.
+12. Enter or select item numbers, units of measure, and item quantities for the fulfillment order or invoice. To view additional lines of information for each item, choose the hide and show button next to the Extended Price field.
     Only active items can be entered. You can continue processing if an item has been inactivated, but you can’t change the quantity.
 
     If you’re using multiple bins and you change the site ID, quantity, or unit of measure after selecting bins, lot numbers, or serial numbers for an item, your previous bin, lot number, or serial number selections are discarded.
@@ -2127,7 +2123,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
     > [!NOTE]
     > To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.
 
-13.  Enter the trade discount, freight, miscellaneous, and tax amounts for this fulfillment order or invoice.
+Enter the trade discount, freight, miscellaneous, and tax amounts for this fulfillment order or invoice.
 
 Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
@@ -2179,23 +2175,23 @@ Other details for the fulfillment orders, such as the amount received, terms dis
 
 **To combine fulfillment orders on a single invoice:**
 
-1.  Open the Sales Bulk Confirmation window.
+1. Open the Sales Bulk Confirmation window.
 
     (Sales \>\> Transactions \>\> Bulk Confirmation)
 
-1.  Select Confirm Ship as the action to complete.
+2. Select Confirm Ship as the action to complete.
 
-2.  To restrict the documents displayed in the window, select the range of documents.
+3. To restrict the documents displayed in the window, select the range of documents.
 
-3.  Choose Redisplay. The documents that match your range selection will appear in the scrolling window.
+4. Choose Redisplay. The documents that match your range selection will appear in the scrolling window.
 
-4.  Mark Create Combined Invoice. Then, select the Type ID that will be used to determine the next number and default entries for the invoice that is created.
+5. Mark Create Combined Invoice. Then, select the Type ID that will be used to determine the next number and default entries for the invoice that is created.
 
-5.  Enter or select a destination batch ID for the new invoice.
+6. Enter or select a destination batch ID for the new invoice.
 
-6.  Mark the documents you want to invoice.
+7. Mark the documents you want to invoice.
 
-7.  Choose Process. The fulfillment orders will be combined according to customer ID, then, the other criteria listed above. If fulfillment orders for multiple customers are marked, the orders will be grouped and invoiced according to customer. The fulfillment orders and the new invoice are assigned the same new master number.
+8. Choose Process. The fulfillment orders will be combined according to customer ID, then, the other criteria listed above. If fulfillment orders for multiple customers are marked, the orders will be grouped and invoiced according to customer. The fulfillment orders and the new invoice are assigned the same new master number.
 
 Once the process is complete, print the Sales Bulk Confirmation - Combined Invoice Report. This report will display the invoice number and list the fulfillment orders that were combined onto it.
 
@@ -2723,8 +2719,8 @@ If Intrastat information was entered for the customer’s ship-to address ID, th
 
 Be sure the EU Transaction option is marked in the Sales Customer Detail Entry window. If the country code assigned to the customer’s shipping address is designated an EU country, this option is marked automatically.
 
-    > [!NOTE]
-    > You can enter Intrastat statistics only if Intrastat tracking is enabled in the Company Setup Options window.*
+> [!NOTE]
+> You can enter Intrastat statistics only if Intrastat tracking is enabled in the Company Setup Options window.
 
 **To enter Intrastat trade statistics:**
 
@@ -2930,17 +2926,17 @@ When you set up Sales Order Processing, you can choose to use a single tax sched
 
 Here are the components of the sales tax calculation if you selected to use an advanced tax schedule when you set up Sales Order Processing:
 
-    - **Item** The tax option for each item on the invoice is used. To view the tax option for an item, choose the Item Number expansion button to open the Sales Item Detail Entry window.
+- **Item** The tax option for each item on the invoice is used. To view the tax option for an item, choose the Item Number expansion button to open the Sales Item Detail Entry window.
 
-        - If the tax option for the item is Nontaxable, no tax is calculated for that item.
+    - If the tax option for the item is Nontaxable, no tax is calculated for that item.
 
-        - If the tax option for the item is Taxable, the tax schedule for the line item is compared to the default tax schedule from the Item Maintenance window. Taxes will be calculated for tax details found in both schedules.
+    - If the tax option for the item is Taxable, the tax schedule for the line item is compared to the default tax schedule from the Item Maintenance window. Taxes will be calculated for tax details found in both schedules.
 
     - If the tax option for the item is Base on Customers, the line item’s tax schedule is used.
 
-    - **Shipping method** The shipping method specified for the Ship To Address for each line will be used, if your system is set up to use the shipping method in tax calculations. For more information on this option, see the System Setup instructions (Help \>\> Contents \>\> select Setting up the System).
+- **Shipping method** The shipping method specified for the Ship To Address for each line will be used, if your system is set up to use the shipping method in tax calculations. For more information on this option, see the System Setup instructions (Help \>\> Contents \>\> select Setting up the System).
 
-         To view the shipping method used for a line, expand the Sales Transaction Entry scrolling window and click the Ship To Address ID link to open the Sales Ship To Address Entry window.
+    To view the shipping method used for a line, expand the Sales Transaction Entry scrolling window and click the Ship To Address ID link to open the Sales Ship To Address Entry window.
 
         - If the shipping method is a Pickup type, the tax schedule from the Site ID on the line is used.
 
@@ -3319,239 +3315,123 @@ If you enter a kit item and the quantity alert icon appears, choose the quantity
 
 ### Chapter 20: Separate fulfillment
 
->   Fulfillment is the process of verifying that the correct number of items are
->   taken out of inventory to fill item requests on an order or invoice after
->   they have been allocated. You must fulfill an invoice completely before it
->   can be posted.
+Fulfillment is the process of verifying that the correct number of items are taken out of inventory to fill item requests on an order or invoice after they have been allocated. You must fulfill an invoice completely before it can be posted.
 
->   How items quantities are fulfilled is determined when you set up the order
->   ID and invoice ID. If the order ID or invoice ID you’re using doesn’t use a
->   separate fulfillment process, item quantities will be fulfilled
->   automatically when they are allocated. For more information about setup
->   options, see *Chapter 3, “Document setup.”*
+How items quantities are fulfilled is determined when you set up the order ID and invoice ID. If the order ID or invoice ID you’re using doesn’t use a separate fulfillment process, item quantities will be fulfilled automatically when they are allocated. For more information about setup options, see *Chapter 3, “Document setup.”*
 
->   Before you attempt to fulfill item quantities, the items must be allocated.
->   For more information about allocation, see *Chapter 19, “Allocating item
->   quantities.”*
+Before you attempt to fulfill item quantities, the items must be allocated. For more information about allocation, see *Chapter 19, “Allocating item quantities.”*
 
->   If you’ve selected to use a separate fulfillment process, you can fulfill
->   item quantities in one of three ways. These methods are explained in the
->   following sections:
+If you’ve selected to use a separate fulfillment process, you can fulfill item quantities in one of three ways. These methods are explained in the following sections:
 
--   *Fulfillment and bins*
+- Fulfillment and bins*
 
--   *Fulfilling quantities for individual items*
+- *Fulfilling quantities for individual items*
 
--   *Fulfilling quantities for all items on a document*
+- *Fulfilling quantities for all items on a document*
 
--   *Fulfilling quantities for items on previously entered documents*
+- *Fulfilling quantities for items on previously entered documents*
 
-### Fulfillment and bins
+#### Fulfillment and bins
 
->   When you fulfill a sales order or invoice (by line, by document, by batch,
->   or as part of a document transfer), quantities are allocated at the default
->   sales order fulfillment bin for the item-site or the site. If the default
->   bin’s quantity available is greater than or equal to the quantity to be
->   fulfilled, the default bin is automatically selected and the quantity to be
->   fulfilled is allocated at the bin.
+When you fulfill a sales order or invoice (by line, by document, by batch, or as part of a document transfer), quantities are allocated at the default sales order fulfillment bin for the item-site or the site. If the default bin’s quantity available is greater than or equal to the quantity to be fulfilled, the default bin is automatically selected and the quantity to be fulfilled is allocated at the bin.
 
->   If you fulfill by line and the line item’s quantity to be fulfilled is
->   greater than the quantity available at the bin, the default bin’s quantity
->   available is allocated and the Bin Quantity Entry window opens, where you
->   must manually select additional bins. If a serial- or lot-numbered item’s
->   quantity to be fulfilled is greater than the bin’s quantity available, you
->   must select bins and serial or lot numbers at the same time.
+If you fulfill by line and the line item’s quantity to be fulfilled is greater than the quantity available at the bin, the default bin’s quantity available is allocated and the Bin Quantity Entry window opens, where you must manually select additional bins. If a serial- or lot-numbered item’s quantity to be fulfilled is greater than the bin’s quantity available, you must select bins and serial or lot numbers at the same time.
 
->   In the Bin Quantity Entry window, bin selections are made in the base unit
->   of measure; when you leave the Bin Quantity Entry window, quantities are
->   updated according to the unit of measure for the transaction.
+In the Bin Quantity Entry window, bin selections are made in the base unit of measure; when you leave the Bin Quantity Entry window, quantities are updated according to the unit of measure for the transaction.
 
->   If you fulfill by document or batch and a line item’s quantity to be
->   fulfilled is greater than the quantity available at the bin, the default
->   bin’s quantity available is allocated, and the Allocation/Fulfillment
->   Exception report notifies you that you must select additional bins.
+If you fulfill by document or batch and a line item’s quantity to be fulfilled is greater than the quantity available at the bin, the default bin’s quantity available is allocated, and the Allocation/Fulfillment Exception report notifies you that you must select additional bins.
 
->   If a default bin can’t be found, the line quantity isn’t fulfilled. The
->   Allocation/ Fulfillment Exception report notifies you that you must select
->   additional bins.
+If a default bin can’t be found, the line quantity isn’t fulfilled. The Allocation/ Fulfillment Exception report notifies you that you must select additional bins.
 
 #### Fulfilling quantities for individual items
 
-You can fulfill item quantities using the Sales Transaction Entry window when
-you add items to an order or invoice by entering the quantity in the Quantity
-Fulfilled field for the each item. You must allocate items before they can be
-fulfilled.
+You can fulfill item quantities using the Sales Transaction Entry window when you add items to an order or invoice by entering the quantity in the Quantity Fulfilled field for the each item. You must allocate items before they can be fulfilled.
 
-If a serial- or lot-numbered item is fulfilled and your system isn’t set up to
-automatically assign serial numbers and lot numbers, the Sales Lot Number Entry
-or Sales Serial Number Entry window will open when you fulfill the item. You’ll
-be asked to select serial or lot numbers for the item. If a lot-numbered item is
-fulfilled and your system is set up to automatically assign lot numbers, a
-message won’t be displayed if the expiration date for the lot number has
-expired.
+If a serial- or lot-numbered item is fulfilled and your system isn’t set up to automatically assign serial numbers and lot numbers, the Sales Lot Number Entry or Sales Serial Number Entry window will open when you fulfill the item. You’ll be asked to select serial or lot numbers for the item. If a lot-numbered item is fulfilled and your system is set up to automatically assign lot numbers, a message won’t be displayed if the expiration date for the lot number has expired.
 
-If you’re using multiple bins and the quantity for a serial-numbered or
-lotnumbered item to be fulfilled is greater than the bin’s quantity available,
-the Sales Serial Number Entry window or Sales Lot Number Entry window will open
-automatically. You must select serial or lot numbers and bins at the same time.
-If you’re using multiple bins and further bin selections are necessary for an
-item not tracked by serial or lot numbers, the Bin Quantity Entry window will
-open automatically, and you’ll be required to enter bins.
+If you’re using multiple bins and the quantity for a serial-numbered or lotnumbered item to be fulfilled is greater than the bin’s quantity available, the Sales Serial Number Entry window or Sales Lot Number Entry window will open automatically. You must select serial or lot numbers and bins at the same time. If you’re using multiple bins and further bin selections are necessary for an item not tracked by serial or lot numbers, the Bin Quantity Entry window will open automatically, and you’ll be required to enter bins.
 
-With multiple bins, a line’s quantity fulfilled must equal the total quantity
-allocated at bins. If the quantity allocated at bins is less than the quantity
-to be fulfilled and you leave the Bin Quantity Entry window or the serial or lot
-number entry window, the quantity fulfilled changes to equal the actual bin
-quantity selected.
+With multiple bins, a line’s quantity fulfilled must equal the total quantity allocated at bins. If the quantity allocated at bins is less than the quantity to be fulfilled and you leave the Bin Quantity Entry window or the serial or lot number entry window, the quantity fulfilled changes to equal the actual bin quantity selected.
 
 #### Fulfilling quantities for all items on a document
 
-You can enter all the items on a document and then use the
-Allocation-Fulfillment Options window to fulfill all item quantities on the
-document at once. You also can use the Allocation-Fulfillment Options window to
-fulfill all the items in a batch at once.
+You can enter all the items on a document and then use the Allocation-Fulfillment Options window to fulfill all item quantities on the document at once. You also can use the Allocation-Fulfillment Options window to fulfill all the items in a batch at once.
 
-If you fulfill by document or batch and a line item’s quantity to be fulfilled
-is greater than the quantity available at the bin, the default bin’s quantity
-available is allocated, and the Allocation/Fulfillment Exception report notifies
-you that you must select additional bins.
+If you fulfill by document or batch and a line item’s quantity to be fulfilled is greater than the quantity available at the bin, the default bin’s quantity available is allocated, and the Allocation/Fulfillment Exception report notifies you that you must select additional bins.
 
 **To fulfill quantities for all items on a document:**
 
 1.  Open the Sales Allocation-Fulfillment Options window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a
->   transaction \>\> Options \>\> Allocate or Fulfill)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a transaction \>\> Options \>\> Allocate or Fulfill)
 
->   (Sales \>\> Transactions \>\> Sales Batches \>\> select a batch \>\> Options
->   \>\> Allocate or Fulfill)
+    (Sales \>\> Transactions \>\> Sales Batches \>\> select a batch \>\> Options \>\> Allocate or Fulfill)
 
-1.  Mark Fulfill and choose OK to fulfill the item and close the window. The
-    Allocation/Fulfillment Exception Report will be printed.
+1.  Mark Fulfill and choose OK to fulfill the item and close the window. The Allocation/Fulfillment Exception Report will be printed.
 
->   If a lot-numbered item is fulfilled and your system is set up to
->   automatically assign lot numbers, a message won’t be displayed if the
->   expiration date for the lot number has expired.
+    If a lot-numbered item is fulfilled and your system is set up to automatically assign lot numbers, a message won’t be displayed if the expiration date for the lot number has expired.
 
->   If you are fulfilling a document and Sales Order Processing isn’t set up to
->   automatically assign serial or lot numbers, you’ll be asked to select serial
->   or lot numbers.
+    If you are fulfilling a document and Sales Order Processing isn’t set up to automatically assign serial or lot numbers, you’ll be asked to select serial or lot numbers.
 
->   **C H A P T E R 2 0** S E P A R A T E F U L F I L L M E N T
+    If you are fulfilling a batch and Sales Order Processing is not set up to automatically assign serial or lot numbers, an alert message will appear on the Allocation/Fulfillment Exception Report. You must manually assign the serial and lot numbers and fulfill the item.
 
->   If you are fulfilling a batch and Sales Order Processing is not set up to
->   automatically assign serial or lot numbers, an alert message will appear on
->   the Allocation/Fulfillment Exception Report. You must manually assign the
->   serial and lot numbers and fulfill the item.
+#### Fulfilling quantities for items on previously entered documents
 
-### Fulfilling quantities for items on previously entered documents
+You can use the Sales Order Fulfillment window to fulfill items on orders, fulfillment orders, or invoices after they’ve been entered and saved. This is useful if one person in your organization is responsible for data entry and someone else is responsible for recording the fulfillment of items from inventory.
 
->   You can use the Sales Order Fulfillment window to fulfill items on orders,
->   fulfillment orders, or invoices after they’ve been entered and saved. This
->   is useful if one person in your organization is responsible for data entry
->   and someone else is responsible for recording the fulfillment of items from
->   inventory.
+However, if you don’t fulfill the entire order quantity and don’t want the entire quantity displayed on the invoice, you must change the billed quantity in the Sales Transaction Entry window.
 
->   However, if you don’t fulfill the entire order quantity and don’t want the
->   entire quantity displayed on the invoice, you must change the billed
->   quantity in the Sales Transaction Entry window.
+If you are using customer credit limit override workflow, orders, fulfillment orders, and invoices must be approved before you can fulfill items. Orders and fulfillment orders that don’t need approval can be fulfilled. You can fulfill items for orders and fulfillment orders that are pending approval in the Sales Transaction Entry window if you can approve the documents.
 
->   If you are using customer credit limit override workflow, orders,
->   fulfillment orders, and invoices must be approved before you can fulfill
->   items. Orders and fulfillment orders that don’t need approval can be
->   fulfilled. You can fulfill items for orders and fulfillment orders that are
->   pending approval in the Sales Transaction Entry window if you can approve
->   the documents.
-
->   **To fulfill quantities for items on previously entered documents:**
+**To fulfill quantities for items on previously entered documents:**
 
 1.  Open the Sales Order Fulfillment window.
 
->   (Sales \>\> Transactions \>\> Order Fulfillment)
+    (Sales \>\> Transactions \>\> Order Fulfillment)
 
-![](media/94bfa32153fbd8044f14d5f04f56a1df.jpg)
+    ![](media/94bfa32153fbd8044f14d5f04f56a1df.jpg)
 
 1.  Select Order, Invoice, or Fulfillment Order as the Type.
 
-2.  Enter or select a document number. The items from the document will be
-    displayed in the window.
+2.  Enter or select a document number. The items from the document will be displayed in the window.
 
->   *To add or remove an attachment to the item, select the item and choose the
->   Attachment Management icon to open the Document Attachment Management
->   window.*
+    > [!TIP]
+    > To add or remove an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
-##### **P A R T 3** A L L O C A T I O N , F U L F I L L M E N T , A N D P U R C H A S I N G
+1.  Verify the date fulfilled and actual ship date. The default date is the user date, but you can change it. The dates you enter will update the Date Fulfilled and Actual Ship Date fields in the Sales Date Entry window and Sales Item Detail Entry window.
 
-1.  Verify the date fulfilled and actual ship date. The default date is the user
-    date, but you can change it. The dates you enter will update the Date
-    Fulfilled and Actual Ship Date fields in the Sales Date Entry window and
-    Sales Item Detail Entry window.
+    If the sales document is linked to a purchase order, the default date is the date you received the purchase order.
 
->   If the sales document is linked to a purchase order, the default date is the
->   date you received the purchase order.
+1.  Enter a Quantity Fulfilled for each item. The quantity entered can’t be greater than the amount in the Quantity Ready to Fulfill field. To fulfill all item quantities on the document, choose Fulfill All.
 
-1.  Enter a Quantity Fulfilled for each item. The quantity entered can’t be
-    greater than the amount in the Quantity Ready to Fulfill field. To fulfill
-    all item quantities on the document, choose Fulfill All.
+    If a lot-numbered item is fulfilled and your system is set up to automatically assign lot numbers, a message won’t be displayed if the expiration date for the lot number has expired.
 
->   If a lot-numbered item is fulfilled and your system is set up to
->   automatically assign lot numbers, a message won’t be displayed if the
->   expiration date for the lot number has expired.
+    Lot numbers are assigned automatically by receipt date or the expiration date, depending on how you selected to automatically assign lot numbers in the Inventory Control Setup window.
 
->   Lot numbers are assigned automatically by receipt date or the expiration
->   date, depending on how you selected to automatically assign lot numbers in
->   the Inventory Control Setup window.
+    If the quantity fulfilled is less than the quantity ordered, you can change the billed quantity, if necessary. For example, if the order is for 10 items, but only seven items were fulfilled, you could change the billed quantity to “7” if you’re not going to fulfill the other three items.
 
->   If the quantity fulfilled is less than the quantity ordered, you can change
->   the billed quantity, if necessary. For example, if the order is for 10
->   items, but only seven items were fulfilled, you could change the billed
->   quantity to “7” if you’re not going to fulfill the other three items.
+    If you marked the Enable Quantity to Back Order in Sales Order Fulfillment option or the Enable Quantity Canceled in Sales Order Fulfillment option in the Sales Order Setup window or the Sales Fulfillment Order/Invoice Setup window you could also change the quantity back ordered or canceled to “3”.
 
->   If you marked the Enable Quantity to Back Order in Sales Order Fulfillment
->   option or the Enable Quantity Canceled in Sales Order Fulfillment option in
->   the Sales Order Setup window or the Sales Fulfillment Order/Invoice Setup
->   window you could also change the quantity back ordered or canceled to “3”.
+    If a serial- or lot-numbered item is fulfilled and Sales Order Processing is not set up to automatically assign serial or lot numbers, you’ll be asked to select serial or lot numbers.
 
->   If a serial- or lot-numbered item is fulfilled and Sales Order Processing is
->   not set up to automatically assign serial or lot numbers, you’ll be asked to
->   select serial or lot numbers.
+    > [!NOTE]
+    > If you select serial or lot numbers that aren’t equal to the quantity you entered in the Quantity Fulfilled field, the quantity fulfilled will be changed to the number of serial or lot numbers you entered. For example, if you enter a quantity fulfilled of 3 and only enter two serial numbers, the quantity fulfilled will be changed to 2.*
 
->   *If you select serial or lot numbers that aren’t equal to the quantity you
->   entered in the Quantity Fulfilled field, the quantity fulfilled will be
->   changed to the number of serial or lot numbers you entered. For example, if
->   you enter a quantity fulfilled of 3 and only enter two serial numbers, the
->   quantity fulfilled will be changed to 2.*
+1.  If you’re using multiple bins and you want to view or change bin information for an item not tracked by serial or lot numbers, choose the Bins button to open the Bin Quantity Entry window.
 
-1.  If you’re using multiple bins and you want to view or change bin information
-    for an item not tracked by serial or lot numbers, choose the Bins button to
-    open the Bin Quantity Entry window.
+    If further bin selections are necessary, the Bin Quantity Entry window will open automatically. With multiple bins, a line’s quantity fulfilled must equal the total quantity allocated at bins. If the quantity allocated at bins is less than the quantity to be fulfilled and you leave the Bin Quantity Entry window, the quantity fulfilled changes to equal the actual bin quantity selected.
 
->   If further bin selections are necessary, the Bin Quantity Entry window will
->   open automatically. With multiple bins, a line’s quantity fulfilled must
->   equal the total quantity allocated at bins. If the quantity allocated at
->   bins is less than the quantity to be fulfilled and you leave the Bin
->   Quantity Entry window, the quantity fulfilled changes to equal the actual
->   bin quantity selected.
+1.  Choose the Attachment Management icon to attach documents to or remove documents from the order, invoice, or fulfillment order, if applicable.
 
-1.  Choose the Attachment Management icon to attach documents to or remove
-    documents from the order, invoice, or fulfillment order, if applicable.
+2.  Choose the Holds button to open the Sales Process Holds Entry window, where you can assign holds to or remove holds from the document. A stop icon will appear on the Holds button if a hold has been assigned to the document.
 
-2.  Choose the Holds button to open the Sales Process Holds Entry window, where
-    you can assign holds to or remove holds from the document. A stop icon will
-    appear on the Holds button if a hold has been assigned to the document.
+1.  Choose the User-Defined button to open the Sales User-Defined Fields Entry window, where you can enter user-defined information for this document.
 
-1.  Choose the User-Defined button to open the Sales User-Defined Fields Entry
-    window, where you can enter user-defined information for this document.
+2.  Choose the Serial/Lot button to open the Sales Serial Number Entry window or the Sales Lot Number Entry window, where you can assign numbers and bins to serial- or lot-numbered items.
 
-2.  Choose the Serial/Lot button to open the Sales Serial Number Entry window or
-    the Sales Lot Number Entry window, where you can assign numbers and bins to
-    serial- or lot-numbered items.
+    For more information about serial- or lot-numbered items, see *Serial- or lotnumbered items* on page 61 or the Inventory Control documentation.
 
->   For more information about serial- or lot-numbered items, see *Serial- or
->   lotnumbered items* on page 61 or the Inventory Control documentation.
-
-1.  Choose Save and close the window. The Order Fulfillment Status Report will
-    be printed.
+1.  Choose Save and close the window. The Order Fulfillment Status Report will be printed.
 
 ### Chapter 21: New purchase orders
 
@@ -3581,103 +3461,50 @@ This information is divided into the following sections:
 
 #### Purchase orders from sales documents
 
->   You can use the Purchase Orders Preview window to view and modify pending
->   purchase orders or to generate purchase orders from orders or back orders.
->   You can also link sales documents to existing purchase orders, if Sales
->   Order Processing is set up to allow it.
+You can use the Purchase Orders Preview window to view and modify pending purchase orders or to generate purchase orders from orders or back orders. You can also link sales documents to existing purchase orders, if Sales Order Processing is set up to allow it.
 
->   For example, suppose you enter a sales order with three line items. One of
->   the line items is in stock but you need to order the other two. If you back
->   order the quantities for the two items, you can create a purchase order
->   using the back-ordered quantity from the sales order instead of reentering
->   the items on a purchase order in Purchase Order Processing. You can review
->   the purchase order information and make changes before generating the
->   purchase order for the items.
+For example, suppose you enter a sales order with three line items. One of the line items is in stock but you need to order the other two. If you back order the quantities for the two items, you can create a purchase order using the back-ordered quantity from the sales order instead of reentering the items on a purchase order in Purchase Order Processing. You can review the purchase order information and make changes before generating the purchase order for the items.
 
->   If you already have entered a purchase order for the back-ordered items, you
->   can link the sales line items to the purchase order. For more information on
->   linking sales documents to existing purchase orders, see *Chapter 22, “Links
->   to existing purchase orders.”*
+If you already have entered a purchase order for the back-ordered items, you can link the sales line items to the purchase order. For more information on linking sales documents to existing purchase orders, see *Chapter 22, “Links to existing purchase orders.”*
 
->   When the items on the purchase order are received, they are allocated or
->   fulfilled on the sales document automatically. For more information, see
->   *Chapter 23, “Receiving purchase orders.”*
+When the items on the purchase order are received, they are allocated or fulfilled on the sales document automatically. For more information, see *Chapter 23, “Receiving purchase orders.”*
 
->   *For information on setup options related to linking sales orders and
->   purchase orders, see Setting up taxes and options on page 15.*
+> [!NOTE]
+> For information on setup options related to linking sales orders and purchase orders, see Setting up taxes and options on page 15.
 
->   **View pending purchase orders** In the Purchase Orders Preview window, you
->   can view the purchase orders that could be created from the sales documents
->   you chose.
+- **View pending purchase orders** In the Purchase Orders Preview window, you can view the purchase orders that could be created from the sales documents you chose.
 
->   **Modify pending purchase orders** You can make changes to the purchase
->   orders shown in the Purchase Orders Preview window before you generate the
->   purchase orders. You can also modify any pending purchase orders that
->   contain errors or warnings.
+- **Modify pending purchase orders** You can make changes to the purchase orders shown in the Purchase Orders Preview window before you generate the purchase orders. You can also modify any pending purchase orders that contain errors or warnings.
 
->   **Generate purchase orders** You can generate some or all of the purchase
->   orders shown in the Purchase Orders Preview window.
+- **Generate purchase orders** You can generate some or all of the purchase orders shown in the Purchase Orders Preview window.
 
--   You can generate more than one purchase order from a sales order or back
-    order. For example, if you need to order several items for a sales order and
-    you need to use different vendors for different items, you can generate a
-    purchase order for each vendor from the sales order.
+  - You can generate more than one purchase order from a sales order or back order. For example, if you need to order several items for a sales order and you need to use different vendors for different items, you can generate a purchase order for each vendor from the sales order.
 
--   You can’t generate more than one purchase order for each sales line item.
-    For example, if you have an item back ordered on a sales order, you can’t
-    order the item from two vendors. You can generate only one purchase order
-    for one vendor for that sales line item.
+  - You can’t generate more than one purchase order for each sales line item. For example, if you have an item back ordered on a sales order, you can’t order the item from two vendors. You can generate only one purchase order for one vendor for that sales line item.
 
--   If the sales document contains a drop-ship item, you can create a separate
-    dropship purchase order for that item. Drop-ship items will always be on
-    separate purchase orders because they won’t be received into inventory.
+  - If the sales document contains a drop-ship item, you can create a separate dropship purchase order for that item. Drop-ship items will always be on separate purchase orders because they won’t be received into inventory.
 
--   You can’t generate a purchase order for a kit item but you can generate a
-    purchase order for the kit components. Quantities won’t be tracked for the
-    kit but will be tracked for the components.
+  - You can’t generate a purchase order for a kit item but you can generate a purchase order for the kit components. Quantities won’t be tracked for the kit but will be tracked for the components.
 
--   If a sales document contains a shortage for a discontinued item, you can’t
-    create a new purchase order for that item from Sales Order Processing, but
-    you can link the item to an existing purchase order that contains the
-    discontinued item.
+  - If a sales document contains a shortage for a discontinued item, you can’t create a new purchase order for that item from Sales Order Processing, but you can link the item to an existing purchase order that contains the discontinued item.
 
--   If a sales document contains an inactive item, no purchase order will be
-    created for the item.
+  - If a sales document contains an inactive item, no purchase order will be created for the item.
 
->   **Link items to existing purchase orders** You can manually link sales line
->   items to existing purchase orders in the Purchase Orders Preview window. For
->   more information, refer to *Chapter 22, “Links to existing purchase
->   orders.”*
+- **Link items to existing purchase orders** You can manually link sales line items to existing purchase orders in the Purchase Orders Preview window. For more information, refer to *Chapter 22, “Links to existing purchase orders.”*
 
->   A sales line item can be linked to only one purchase order line item. For
->   example, you can’t split the sales line item quantity between two vendors.
+A sales line item can be linked to only one purchase order line item. For example, you can’t split the sales line item quantity between two vendors.
 
 #### Parts of the Purchase Orders Preview window
 
->   The Purchase Orders Preview window shows the pending purchase orders that
->   can be created from selected sales documents. You can view information about
->   the vendor, purchase order, item, or sales document.
+The Purchase Orders Preview window shows the pending purchase orders that can be created from selected sales documents. You can view information about the vendor, purchase order, item, or sales document.
 
->   If you open the Purchase Orders Preview window from a sales document in the
->   Sales Transaction Entry window, you will see the purchase orders that can be
->   generated from that sales document.
+If you open the Purchase Orders Preview window from a sales document in the Sales Transaction Entry window, you will see the purchase orders that can be generated from that sales document.
 
->   If you open the Purchase Orders Preview window from the Sales Range Inquiry
->   window, you will see the purchase orders that can be generated from the
->   sales documents that are defined in the inquiry window and that have a Needs
->   purchase commitment status. For more information about commitment statuses,
->   see *Checking the commitment status* on page 164.
+If you open the Purchase Orders Preview window from the Sales Range Inquiry window, you will see the purchase orders that can be generated from the sales documents that are defined in the inquiry window and that have a Needs purchase commitment status. For more information about commitment statuses, see *Checking the commitment status* on page 164.
 
->   There are several views you can use to display information in the Purchase
->   Orders Preview window. You can use these views to examine the information on
->   the pending purchase orders and make changes before generating the purchase
->   orders. Each option includes a tree view and a window. For more information,
->   see *Purchase Order Preview window tabs* on page 150 and *The tree view* on
->   page 150.
+There are several views you can use to display information in the Purchase Orders Preview window. You can use these views to examine the information on the pending purchase orders and make changes before generating the purchase orders. Each option includes a tree view and a window. For more information, see *Purchase Order Preview window tabs* on page 150 and *The tree view* on page 150.
 
->   The Purchase Orders Preview window contains several buttons and icons to
->   help you view and change information in the window. These buttons and icons
->   are listed below.
+The Purchase Orders Preview window contains several buttons and icons to help you view and change information in the window. These buttons and icons are listed below.
 
 | **Button or icon**                         | **Description**  |
 |--------------------------------------------|------------------|
@@ -3691,356 +3518,215 @@ This information is divided into the following sections:
 
 #### Pending purchase order errors and warnings
 
->   If a problem is detected on a pending purchase order, an error or warning
->   icon will appear next to the object in the tree view and an alert message
->   will be displayed when you attempt to generate the purchase orders.
->   Additional information about the error or warning will be at the bottom of
->   the window.
+If a problem is detected on a pending purchase order, an error or warning icon will appear next to the object in the tree view and an alert message will be displayed when you attempt to generate the purchase orders. Additional information about the error or warning will be at the bottom of the window.
 
->   For more information about the tree view, see *The tree view* on page 150.
+For more information about the tree view, see *The tree view* on page 150.
 
->   **Errors** A pending purchase order that contains an error won’t be
->   generated. You must correct the error before generating the purchase order.
->   Examples of errors include no vendor ID, an inactive vendor or no purchasing
->   unit of measure.
+- **Errors** A pending purchase order that contains an error won’t be generated. You must correct the error before generating the purchase order. Examples of errors include no vendor ID, an inactive vendor or no purchasing unit of measure.
 
->   If a primary vendor is not assigned to the item in Item Quantities
->   Maintenance window, an error and (NO VENDOR) will be displayed in the tree
->   view for the vendor in the Purchase Orders Preview window. You must assign a
->   vendor to the pending purchase order by using the purchase order or item tab
->   before you can generate the purchase order.
+    If a primary vendor is not assigned to the item in Item Quantities Maintenance window, an error and (NO VENDOR) will be displayed in the tree view for the vendor in the Purchase Orders Preview window. You must assign a vendor to the pending purchase order by using the purchase order or item tab before you can generate the purchase order.
 
->   If you select a vendor and the item is not assigned to the vendor, an error
->   will be displayed and you can add the vendor item number. For more
->   information about assigning vendors to items and assigning a primary vendor
->   to an item, see the Inventory Control documentation.
+    If you select a vendor and the item is not assigned to the vendor, an error will be displayed and you can add the vendor item number. For more information about assigning vendors to items and assigning a primary vendor to an item, see the Inventory Control documentation.
 
->   **Warnings** Pending purchase orders that contain warnings will be generated
->   or can be linked to existing purchase orders. The warnings will appear on
->   the Purchase Orders Preview list. For example, you will receive a warning if
->   a vendor is on hold or if the quantity to purchase is more than the maximum
->   order quantity for the item.
+- **Warnings** Pending purchase orders that contain warnings will be generated or can be linked to existing purchase orders. The warnings will appear on the Purchase Orders Preview list. For example, you will receive a warning if a vendor is on hold or if the quantity to purchase is more than the maximum order quantity for the item.
 
 #### The tree view
 
->   The Purchase Orders Preview window uses a tree view to show pending or
->   existing purchase orders. Each line in the tree is an object—and the objects
->   are organized first by vendor, then by purchase order, then item, and
->   finally sales document.
+The Purchase Orders Preview window uses a tree view to show pending or  existing purchase orders. Each line in the tree is an object—and the objects are organized first by vendor, then by purchase order, then item, and finally sales document.
 
->   A check mark next to the object—vendor, purchase order, item, or sales
->   document— means that the object will be included when purchase orders are
->   generated. You can mark or unmark an object before generating the purchase
->   orders. If you mark or unmark an object, all of the objects associated with
->   that object will be marked or unmarked also. For example, if you unmark a
->   vendor, all of the purchase orders listed under the vendor in the tree view
->   will be unmarked.
+A check mark next to the object—vendor, purchase order, item, or sales document— means that the object will be included when purchase orders are generated. You can mark or unmark an object before generating the purchase orders. If you mark or unmark an object, all of the objects associated with that object will be marked or unmarked also. For example, if you unmark a vendor, all of the purchase orders listed under the vendor in the tree view will be unmarked.
 
->   If an error or warning icon appears next to an object in the tree view,
->   additional information will be displayed at the bottom of the window. In the
->   Purchase Orders Preview window, you can modify the pending purchase orders
->   to address the errors and warnings. For more information, see *Pending
->   purchase order errors and warnings* on page 149.
+If an error or warning icon appears next to an object in the tree view, additional information will be displayed at the bottom of the window. In the Purchase Orders Preview window, you can modify the pending purchase orders to address the errors and warnings. For more information, see *Pending purchase order errors and warnings* on page 149.
 
->   You can print the Purchase Orders Preview list before generating purchase
->   orders by choosing the Print icon button or by choosing File \>\> Print in
->   the Purchase Orders Preview window. This report will list all of the pending
->   purchase order information in the tree view, as well as any errors and
->   warnings.
+You can print the Purchase Orders Preview list before generating purchase orders by choosing the Print icon button or by choosing File \>\> Print in the Purchase Orders Preview window. This report will list all of the pending purchase order information in the tree view, as well as any errors and warnings.
 
 #### Purchase Order Preview window tabs
 
->   The Purchase Orders Preview window uses tabs to organize the information
->   relating to the pending purchase orders. Each tab contains a window that
->   displays information about the pending purchase order. You can choose the
->   tab or choose an object in the tree view to display the information you
->   want.
+The Purchase Orders Preview window uses tabs to organize the information relating to the pending purchase orders. Each tab contains a window that displays information about the pending purchase order. You can choose the tab or choose an object in the tree view to display the information you want.
 
->   **Vendor tab**
+- **Vendor tab**
 
->   Use the vendor tab to view information about the vendor that is highlighted
->   in the tree view. You can’t change the information in this view.
+    Use the Vendor tab to view information about the vendor that is highlighted in the tree view. You can’t change the information in this view.
 
-![](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
+    ![](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
 
->   If a primary vendor isn’t assigned to an item, (NO VENDOR) will appear in
->   the vendor ID and an error will appear next to the vendor in the tree. You
->   must assign a vendor using either the PO tab or Item tab before a purchase
->   order can be generated. For information about assigning a vendor, see
->   *Modifying a purchase order using the tabs* on page 154.
+    If a primary vendor isn’t assigned to an item, (NO VENDOR) will appear in the vendor ID and an error will appear next to the vendor in the tree. You must assign a vendor using either the PO tab or Item tab before a purchase order can be generated. For information about assigning a vendor, see *Modifying a purchase order using the tabs* on page 154.
 
->   The most recent purchase orders for this vendor are listed at the bottom of
->   the window. You can sort the purchase orders in ascending or descending
->   order by clicking the column heading. The ascending/descending sort option
->   can be used in any column.
+    The most recent purchase orders for this vendor are listed at the bottom of the window. You can sort the purchase orders in ascending or descending order by clicking the column heading. The ascending/descending sort option can be used in any column.
 
->   **Purchase Order tab**
+- **Purchase Order tab**
 
->   Use the purchase order tab to view information about the pending purchase
->   order that is highlighted in the tree view, including the vendor ID,
->   purchase order date, currency, and shipping method.
+    Use the purchase order tab to view information about the pending purchase order that is highlighted in the tree view, including the vendor ID, purchase order date, currency, and shipping method.
 
-![](media/da6cb99067d7671bdd239fc031d398a5.jpg)
+    ![](media/da6cb99067d7671bdd239fc031d398a5.jpg)
 
->   If a primary vendor wasn’t assigned to an item, the vendor ID will be blank.
->   You must assign a vendor before a purchase order can be generated.
+    If a primary vendor wasn’t assigned to an item, the vendor ID will be blank. You must assign a vendor before a purchase order can be generated.
 
->   You can change the information in this window. For more information, see
->   *Modifying a purchase order using the tabs* on page 154.
+    You can change the information in this window. For more information, see *Modifying a purchase order using the tabs* on page 154.
 
->   **Item tab**
+- **Item tab**
 
->   Use the item tab to view information about the item that is highlighted in
->   the tree view. You can change the quantity to purchase, vendor ID, vendor
->   item, unit cost, extended cost, and required date on the pending purchase
->   order. You also can link the item to an existing purchase order by using the
->   purchase order lookup button. For more information, see *Modifying a
->   purchase order using the tabs* on page 154.
+    Use the item tab to view information about the item that is highlighted in the tree view. You can change the quantity to purchase, vendor ID, vendor item, unit cost, extended cost, and required date on the pending purchase order. You also can link the item to an existing purchase order by using the purchase order lookup button. For more information, see *Modifying a purchase order using the tabs* on page 154.
 
-![](media/cc3125a8300af0e91e89fc805e2b78f3.jpg)
+    ![](media/cc3125a8300af0e91e89fc805e2b78f3.jpg)
 
->   If a primary vendor wasn’t assigned to an item, the vendor ID will be blank.
->   You must assign a vendor before a purchase order can be generated.
+    If a primary vendor wasn’t assigned to an item, the vendor ID will be blank. You must assign a vendor before a purchase order can be generated.
 
->   The most recent purchase orders for this item are listed by vendor at the
->   bottom of the window. You can sort the vendors in ascending or descending
->   order by clicking the column heading. The ascending/depending sort option
->   can be used in any column.
+    The most recent purchase orders for this item are listed by vendor at the bottom of the window. You can sort the vendors in ascending or descending order by clicking the column heading. The ascending/depending sort option can be used in any column.
 
->   **Sales tab**
+- **Sales tab**
 
->   Use the sales tab to view information about the sales document that is
->   highlighted in the tree view. You can’t change the information in this view.
+    Use the sales tab to view information about the sales document that is highlighted in the tree view. You can’t change the information in this view.
 
-![](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
+    ![](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
 
 #### Changing a vendor
 
->   You can add a vendor to the tree using the tree view, regardless of which
->   tab you are viewing in the Purchase Orders Preview window. A new purchase
->   order will be created for the new vendor and you can transfer the items from
->   existing pending purchase orders in the tree view to the new vendor.
+You can add a vendor to the tree using the tree view, regardless of which tab you are viewing in the Purchase Orders Preview window. A new purchase order will be created for the new vendor and you can transfer the items from existing pending purchase orders in the tree view to the new vendor.
 
->   *If you make changes to a pending purchase order in the Purchase Orders
->   Preview window, your changes won’t be saved when you close the window. You
->   must generate purchase orders that include your changes before closing the
->   window.*
+> [!NOTE]
+> If you make changes to a pending purchase order in the Purchase Orders Preview window, your changes won’t be saved when you close the window. You must generate purchase orders that include your changes before closing the window.
 
->   **To change a vendor:**
+**To change a vendor:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Enter or select a sales document with a back-ordered quantity and choose the
-    Purchase button to open the Purchase Orders Preview window.
+1.  Enter or select a sales document with a back-ordered quantity and choose the Purchase button to open the Purchase Orders Preview window.
 
-2.  Choose the add vendor icon button. A message will be displayed and you’ll
-    have the option to create a standard or drop-ship purchase order.
+2.  Choose the add vendor icon button. A message will be displayed and you’ll have the option to create a standard or drop-ship purchase order.
 
-3.  A new vendor object will be inserted into the tree view and the vendor ID
-    will be (NO VENDOR). A new purchase order object with no line items will be
-    inserted in the tree view for the new vendor.
+3.  A new vendor object will be inserted into the tree view and the vendor ID will be (NO VENDOR). A new purchase order object with no line items will be inserted in the tree view for the new vendor.
 
-![](media/ba47c7bec10f4ba187738215555fd5c5.jpg)
+    ![](media/ba47c7bec10f4ba187738215555fd5c5.jpg)
 
-1.  In the purchase order tab, enter or select a vendor ID for the new vendor
-    object in the tree view.
+1.  In the purchase order tab, enter or select a vendor ID for the new vendor object in the tree view.
 
-2.  Use the Organize button to move line items from other pending purchase
-    orders to the new purchase order. You can also move items using the vendor
-    or the item tab. For more information about the Organize button, see
-    *Modifying a purchase order in the tree view* on page 153.
+2.  Use the Organize button to move line items from other pending purchase orders to the new purchase order. You can also move items using the vendor or the item tab. For more information about the Organize button, see *Modifying a purchase order in the tree view* on page 153.
 
 #### Modifying a purchase order in the tree view
 
->   You can move items from one pending purchase order to another or change the
->   vendor on a pending purchase order using the tree view. For example, if the
->   vendor you usually order an item from is unable to deliver the product by
->   the requested date, you can add a different vendor to the tree view and
->   reassign the item to the new vendor.
+You can move items from one pending purchase order to another or change the vendor on a pending purchase order using the tree view. For example, if the vendor you usually order an item from is unable to deliver the product by the requested date, you can add a different vendor to the tree view and reassign the item to the new vendor.
 
->   Use the Organize button to move objects in the tree view. It doesn’t matter
->   what tab you are viewing in the Purchase Orders Preview window. You can move
->   the objects as follows:
+Use the Organize button to move objects in the tree view. It doesn’t matter what tab you are viewing in the Purchase Orders Preview window. You can move the objects as follows:
 
->   **Purchase order** You can move a pending purchase order from one vendor to
->   another. A new pending purchase order with a new PO number will be created
->   for the vendor and all items associated with the pending purchase order will
->   move to the new pending purchase order.
+- **Purchase order** You can move a pending purchase order from one vendor to another. A new pending purchase order with a new PO number will be created for the vendor and all items associated with the pending purchase order will move to the new pending purchase order.
 
->   **Item** You can move an item from one vendor to another. A new pending
->   purchase order will be created for the vendor and the item will be added to
->   the new purchase order.
+- **Item** You can move an item from one vendor to another. A new pending purchase order will be created for the vendor and the item will be added to the new purchase order.
 
->   You can move an item from one pending purchase order to another. The item
->   will be added to the existing pending purchase order.
+    You can move an item from one pending purchase order to another. The item will be added to the existing pending purchase order.
 
->   **Sales document** You can move a sales document from one vendor to another.
->   A new pending purchase order will be created for the vendor and the items
->   associated with the sales document will be added to the new purchase order.
+- **Sales document** You can move a sales document from one vendor to another. A new pending purchase order will be created for the vendor and the items associated with the sales document will be added to the new purchase order.
 
->   You can move a sales document to a different pending purchase order. New
->   items will be created on the pending purchase order for the items associated
->   with the sales document.
+    You can move a sales document to a different pending purchase order. New items will be created on the pending purchase order for the items associated with the sales document.
 
->   **To modify a purchase order in the tree view:**
+**To modify a purchase order in the tree view:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Enter or select the sales document and choose the Purchase button to open
-    the Purchase Orders Preview window.
+1.  Enter or select the sales document and choose the Purchase button to open the Purchase Orders Preview window.
 
-2.  Choose the organize icon button above the tree view. A message will appear
-    telling you to select a source and destination object.
+2.  Choose the organize icon button above the tree view. A message will appear telling you to select a source and destination object.
 
 3.  Select the source object you want to move.
 
-4.  Select the destination object in the tree that you want to move the object
-    to.
+4.  Select the destination object in the tree that you want to move the object to.
 
 5.  When you have made all the needed changes, choose Generate.
 
->   *If you make changes to a pending purchase order in the Purchase Orders
->   Preview window, your changes won’t be saved when you close the window. You
->   must generate purchase orders that include your changes before closing the
->   window.*
+    > [!NOTE]
+    > If you make changes to a pending purchase order in the Purchase Orders Preview window, your changes won’t be saved when you close the window. You must generate purchase orders that include your changes before closing the window.
 
 #### Modifying a purchase order using the tabs
 
->   Use the Purchase Orders Preview window tabs to modify information such as
->   vendor ID and quantity to purchase on pending purchase orders. The tree view
->   will be updated with the changes automatically.
+Use the Purchase Orders Preview window tabs to modify information such as vendor ID and quantity to purchase on pending purchase orders. The tree view will be updated with the changes automatically.
 
->   For example, assume you are short ten items to satisfy a sales order. The
->   pending purchase order will show 10 as the default quantity to purchase. If
->   you want to stock some extra items, you can increase the quantity to
->   purchase on the Item tab.
+For example, assume you are short ten items to satisfy a sales order. The pending purchase order will show 10 as the default quantity to purchase. If you want to stock some extra items, you can increase the quantity to purchase on the Item tab.
 
->   If there are errors or warnings in the tree view relating to a pending
->   purchase order, you can make corrections to the information before
->   generating the purchase order. For more information about errors and
->   warnings, see *Pending purchase order errors and warnings* on page 149.
+If there are errors or warnings in the tree view relating to a pending purchase order, you can make corrections to the information before generating the purchase order. For more information about errors and warnings, see *Pending purchase order errors and warnings* on page 149.
 
->   You can change the information on the PO tab and the Item tab, but not the
->   Vendor tab or the Sales tab.
+You can change the information on the PO tab and the Item tab, but not the Vendor tab or the Sales tab.
 
->   **Purchase order tab** You can change the vendor ID, purchase order date,
->   currency ID, and the shipping method used for the purchase order.
+- **Purchase order tab** You can change the vendor ID, purchase order date, currency ID, and the shipping method used for the purchase order.
 
->   **Item tab** You can change the quantity to purchase, vendor ID, vendor
->   item, unit of measure, unit cost, extended cost, and required date. The
->   primary vendor will be the default vendor ID.
+- **Item tab** You can change the quantity to purchase, vendor ID, vendor item, unit of measure, unit cost, extended cost, and required date. The primary vendor will be the default vendor ID.
 
->   **To modify a purchase order using the tabs:**
+**To modify a purchase order using the tabs:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Enter or select a sales document with a back-ordered quantity and choose
-    Purchase to open the Purchase Orders Preview window. Only sales documents
-    that contain items with a Needs Purchase commitment status appear in the
-    Purchase Orders Preview window.
+1.  Enter or select a sales document with a back-ordered quantity and choose Purchase to open the Purchase Orders Preview window. Only sales documents that contain items with a Needs Purchase commitment status appear in the Purchase Orders Preview window.
 
 2.  Select either the Item or PO tab and make the changes.
 
 3.  When you have made all the needed changes, choose Generate.
 
->   *If you make changes to a pending purchase order in the Purchase Orders
->   Preview window, your changes won’t be saved when you close the window. You
->   must generate purchase orders that include your changes before closing the
->   window.*
+> [!NOTE]
+> If you make changes to a pending purchase order in the Purchase Orders Preview window, your changes won’t be saved when you close the window. You must generate purchase orders that include your changes before closing the window.
 
 #### Generating a purchase order from a single sales document
 
->   After you have viewed and modified a pending purchase order, you must
->   generate the purchase order in the Purchase Orders Preview window.
+After you have viewed and modified a pending purchase order, you must generate the purchase order in the Purchase Orders Preview window.
 
->   **To generate a purchase order from a single sales document:**
+**To generate a purchase order from a single sales document:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 1.  Enter or select a sales document with a back-ordered quantity.
 
-2.  Choose Purchase to open the Purchase Orders Preview window. Only sales
-    documents that contain items with a Needs Purchase commitment status appear
-    in the Purchase Orders Preview window.
+2.  Choose Purchase to open the Purchase Orders Preview window. Only sales documents that contain items with a Needs Purchase commitment status appear in the Purchase Orders Preview window.
 
-![](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
+    ![](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
 
-1.  Review the information and make any changes to the pending purchase order
-    information.
+1.  Review the information and make any changes to the pending purchase order information.
 
-2.  Review the objects in the tree view. A check mark next to an object means
-    that the object will be included when purchase orders are generated. Click
-    the check mark to remove objects you don’t want to include when generating
-    purchase orders.
+2.  Review the objects in the tree view. A check mark next to an object means that the object will be included when purchase orders are generated. Click the check mark to remove objects you don’t want to include when generating purchase orders.
 
->   To preview the marked pending purchase order information before you generate
->   purchase orders, print the Purchase Orders Preview list by choosing File
->   \>\> Print. The list also shows any errors and warnings.
+    To preview the marked pending purchase order information before you generate purchase orders, print the Purchase Orders Preview list by choosing File \>\> Print. The list also shows any errors and warnings.
 
->   *The purchase order numbers listed in the Purchase Orders Preview window are
->   temporary. When purchase orders are generated, the system will assign the
->   next purchase order number from the Purchase Order Processing Setup window.*
+    > [!NOTE]
+    > The purchase order numbers listed in the Purchase Orders Preview window are temporary. When purchase orders are generated, the system will assign the next purchase order number from the Purchase Order Processing Setup window.
 
 1.  Choose Generate.
 
->   Taxes will be automatically calculated when you generate purchase orders
->   from the Purchase Orders Preview window.
+Taxes will be automatically calculated when you generate purchase orders from the Purchase Orders Preview window.
 
 #### Generating purchase orders from multiple sales documents
 
->   After you have viewed and modified pending purchase orders, you must
->   generate the purchase orders in the Purchase Orders Preview window.
->   Depending on how Sales Order Processing is set up, like items may be
->   combined on the same purchase order.
+After you have viewed and modified pending purchase orders, you must generate the purchase orders in the Purchase Orders Preview window. Depending on how Sales Order Processing is set up, like items may be combined on the same purchase order.
 
->   **To generate purchase orders from multiple sales documents:**
+**To generate purchase orders from multiple sales documents:**
 
 1.  Open the Sales Document Range Inquiry window.
 
->   (Sales \>\> Inquiry \>\> Sales Range Inquiry)
+    (Sales \>\> Inquiry \>\> Sales Range Inquiry)
 
-![](media/fceafe28bd570cf2a06103f439441535.jpg)
+    ![](media/fceafe28bd570cf2a06103f439441535.jpg)
 
-1.  Choose an existing Inquiry ID or create a new Inquiry ID to select a range
-    of sales documents. For more information about creating an inquiry ID, see
-    *Creating inquiries for sales documents* on page 224.
+1.  Choose an existing Inquiry ID or create a new Inquiry ID to select a range of sales documents. For more information about creating an inquiry ID, see *Creating inquiries for sales documents* on page 224.
 
 2.  Choose Redisplay to update the window.
 
-3.  Choose Purchase to open the Purchase Orders Preview window. Only sales
-    documents that contain items with a Needs Purchase commitment status appear
-    in the Purchase Orders Preview window. For more information about commitment
-    status, see *Checking the commitment status* on page 164.
+3.  Choose Purchase to open the Purchase Orders Preview window. Only sales documents that contain items with a Needs Purchase commitment status appear in the Purchase Orders Preview window. For more information about commitment status, see *Checking the commitment status* on page 164.
 
-4.  Review the information and make any changes to the pending purchase order
-    information.
+4.  Review the information and make any changes to the pending purchase order information.
 
-5.  Review the objects in the tree view. A check mark next to an object means
-    that the object will be included when purchase orders are generated. Click
-    the check mark to remove objects you don’t want to include when generating
-    purchase orders.
+5.  Review the objects in the tree view. A check mark next to an object means that the object will be included when purchase orders are generated. Click the check mark to remove objects you don’t want to include when generating purchase orders.
 
->   To preview the marked pending purchase order information before you generate
->   purchase orders, print the Purchase Orders Preview list by choosing File
->   \>\> Print. The list also shows any errors and warnings.
+    To preview the marked pending purchase order information before you generate purchase orders, print the Purchase Orders Preview list by choosing File \>\> Print. The list also shows any errors and warnings.
 
-1.  Choose Generate. The Purchase Orders Generation Register will be printed.
-    This report will list the purchase orders created and the items and
-    quantities included on the purchase orders.
+1.  Choose Generate. The Purchase Orders Generation Register will be printed. This report will list the purchase orders created and the items and quantities included on the purchase orders.
 
->   You can view and print the purchase orders by choosing Purchasing \>\>
->   Transactions \>\> Purchase Order Entry.
+    You can view and print the purchase orders by choosing Purchasing \>\> Transactions \>\> Purchase Order Entry.
 
->   Taxes will be automatically calculated when you generate purchase orders
->   from the Purchase Orders Preview window.
+    Taxes will be automatically calculated when you generate purchase orders from the Purchase Orders Preview window.
 
 ### Chapter 22: Links to existing purchase orders
 
@@ -4058,43 +3744,31 @@ This information is divided into the following sections:
 
 -   *Checking the commitment status*
 
-### Linking an item to an existing purchase order
+#### Linking an item to an existing purchase order
 
->   You can manually link a line item to an existing purchase order in the PO
->   Commitment for Sales Document window or PO Assignment for Sales Document
->   window if the following conditions are met:
+You can manually link a line item to an existing purchase order in the PO Commitment for Sales Document window or PO Assignment for Sales Document window if the following conditions are met:
 
 -   The purchase order line item has an uncommitted quantity.
 
--   The purchase order allows commitments. Allow Sales Documents
+-   The purchase order allows commitments. Allow Sales Documents Commitments must be marked for the purchase order in the Purchase Order Entry window.
 
->   Commitments must be marked for the purchase order in the Purchase Order
->   Entry window.
-
--   The uncommitted quantity on the purchase order must be equal to or greater
-    than the quantity needed for the sales document.
+-   The uncommitted quantity on the purchase order must be equal to or greater than the quantity needed for the sales document.
 
 -   The item numbers match.
 
--   The site IDs match (unless Sales Order Processing is set up to use a single
-    site for all purchase orders).
+-   The site IDs match (unless Sales Order Processing is set up to use a single site for all purchase orders).
 
--   For drop-ship items, the ship-to address on the sales order matches the
-    ship-to address on the purchase order.
+-   For drop-ship items, the ship-to address on the sales order matches the ship-to address on the purchase order.
 
--   For drop-ship items, the ship-to address and shipping method on the sales
-    order line item matches the ship-to address and shipping method on the
-    purchase order line item.
+-   For drop-ship items, the ship-to address and shipping method on the sales order line item matches the ship-to address and shipping method on the purchase order line item.
 
->   You can link drop-ship line items to existing drop-ship purchase orders. You
->   can link non-inventoried items and discontinued items to existing purchase
->   orders. You must commit the entire line item quantity to one purchase order.
+You can link drop-ship line items to existing drop-ship purchase orders. You can link non-inventoried items and discontinued items to existing purchase orders. You must commit the entire line item quantity to one purchase order.
 
->   **To link a line item from the Purchase Orders Preview window:**
+**To link a line item from the Purchase Orders Preview window:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 1.  Enter or select the sales document and highlight a line item to link.
 
@@ -4105,159 +3779,116 @@ This information is divided into the following sections:
 4.  Use the PO Number lookup button to open the PO Assignment for Sales Document
     window.
 
-![](media/e5bab6f1d4e67cb4b65b5d0d239d0747.jpg)
+    ![](media/e5bab6f1d4e67cb4b65b5d0d239d0747.jpg)
 
 1.  Highlight an existing purchase order to link to the sales line item.
 
->   *Only purchase orders that allow sales order commitments and have an
->   uncommitted quantity equal to or greater than the quantity to purchase on
->   the sales document will appear in the window, because you can only link one
->   purchase order to a sales line item.*
+    > [!NOTE]
+    > Only purchase orders that allow sales order commitments and have an uncommitted quantity equal to or greater than the quantity to purchase on the sales document will appear in the window, because you can only link one purchase order to a sales line item.
 
 1.  Choose Select to close the PO Assignment for Sales Document window.
 
 2.  Choose Generate.
 
->   *If you make changes to the pending purchase orders in the Purchase Orders
->   Preview window, your changes won’t be saved when you close the window. You
->   must generate the purchase orders that include your changes before closing
->   the window.*
+    > [!NOTE]
+    > If you make changes to the pending purchase orders in the Purchase Orders Preview window, your changes won’t be saved when you close the window. You must generate the purchase orders that include your changes before closing the window.
 
->   **To link a line item from the sales document:**
+*To link a line item from the sales document:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Enter or select a sales document with a back-ordered quantity and highlight
-    the line item to link.
+1.  Enter or select a sales document with a back-ordered quantity and highlight the line item to link.
 
-2.  Choose the link purchase order button next to the Quantity Ordered prompt to
-    open the PO Commitment for Sales Document window.
+2.  Choose the link purchase order button next to the Quantity Ordered prompt to open the PO Commitment for Sales Document window.
 
-![](media/282f789533238f43b7e0e78602835cfd.jpg)
+    ![](media/282f789533238f43b7e0e78602835cfd.jpg)
 
 1.  Enter or select the existing purchase order to link to the sales line item.
 
->   *Only purchase orders that allow sales order commitments and have an
->   uncommitted quantity equal to or greater than the quantity to purchase on
->   the sales document will appear in the window, because you can only link one
->   purchase order to a sales line item.*
+    > [!NOTE]
+    > Only purchase orders that allow sales order commitments and have an uncommitted quantity equal to or greater than the quantity to purchase on the sales document will appear in the window, because you can only link one purchase order to a sales line item.
 
-1.  Choose Save to save the link and close the window. When the link has been
-    added, the link purchase order icon will appear next to the line item
-    quantity in the Sales Transaction Entry window and the Purchase Order Entry
-    window.
+1.  Choose Save to save the link and close the window. When the link has been added, the link purchase order icon will appear next to the line item quantity in the Sales Transaction Entry window and the Purchase Order Entry window.
 
->   **To link a line item from the purchase order:**
+**To link a line item from the purchase order:**
 
 1.  Open the Purchase Order Entry window.
 
->   (Purchasing \>\> Transactions \>\> Purchase Order Entry)
+    (Purchasing \>\> Transactions \>\> Purchase Order Entry)
 
-1.  Enter or select a purchase order that allows sales order commitments and
-    highlight the line item you want to link.
+1.  Enter or select a purchase order that allows sales order commitments and highlight the line item you want to link.
 
-2.  Choose the link purchase order button next to the Quantity Ordered prompt to
-    open the Sales Commitments for Purchase Order window.
+2.  Choose the link purchase order button next to the Quantity Ordered prompt to open the Sales Commitments for Purchase Order window.
 
-![](media/28a00837c3dad62297cb055922ef4d20.jpg)
+    ![](media/28a00837c3dad62297cb055922ef4d20.jpg)
 
-1.  Choose Add Sales Doc to open the Sales Assignments for Purchase Order
-    window.
+1.  Choose Add Sales Doc to open the Sales Assignments for Purchase Order window.
 
-![](media/f9fc544bfaed64e2bb891187efe3af94.jpg)
+    ![](media/f9fc544bfaed64e2bb891187efe3af94.jpg)
 
-1.  Highlight the existing sales document to link to the purchase order line
-    item and choose Select.
+1.  Highlight the existing sales document to link to the purchase order line item and choose Select.
 
->   *Only sales documents with a quantity to purchase that is equal to or less
->   than the uncommitted quantity on the purchase order will appear in the
->   window because you can only link one purchase order to a sales line item.*
+    > [!NOTE]
+    > Only sales documents with a quantity to purchase that is equal to or less than the uncommitted quantity on the purchase order will appear in the window because you can only link one purchase order to a sales line item.*
 
-1.  Choose OK to save the link and close the window. When the link has been
-    added, the link purchase order icon will appear next to the line item in the
-    Purchase Order Entry window and the Sales Transaction Entry window.
+1.  Choose OK to save the link and close the window. When the link has been added, the link purchase order icon will appear next to the line item in the Purchase Order Entry window and the Sales Transaction Entry window.
 
 #### Removing an existing link to a purchase order
 
->   Once you link a sales line item to a purchase order, the link purchase order
->   icon will be displayed next to the quantity for the sales line item in the
->   Sales Transaction Entry window. There are two ways to remove a link to a
->   purchase order:
+Once you link a sales line item to a purchase order, the link purchase order icon will be displayed next to the quantity for the sales line item in the Sales Transaction Entry window. There are two ways to remove a link to a purchase order:
 
--   You can remove the link from Purchase Order Processing using the Sales
-    Commitments for Purchase Order window.
+- You can remove the link from Purchase Order Processing using the Sales Commitments for Purchase Order window.
 
--   You can remove the link from Sales Order Processing using the PO
+- You can remove the link from Sales Order Processing using the PO Commitment for Sales Document window if Sales Order Processing is set up to allow deletion of commitments. For more information on setup options, see *Setting up taxes and options* on page 15.
 
->   Commitment for Sales Document window if Sales Order Processing is set up to
->   allow deletion of commitments. For more information on setup options, see
->   *Setting up taxes and options* on page 15.
+    > [!NOTE]
+    > If the purchase order has been received against, the item will still be allocated on the sales order after you remove the link.
 
->   *If the purchase order has been received against, the item will still be
->   allocated on the sales order after you remove the link.*
-
->   **To remove a link in Purchase Order Processing:**
+**To remove a link in Purchase Order Processing:**
 
 1.  Open the Purchase Order Entry window.
 
->   (Transactions \> Purchasing \> Purchase Order Entry)
+    (Transactions \> Purchasing \> Purchase Order Entry)
 
-1.  Enter or select the purchase order and highlight the line item for which you
-    want to remove the link.
+1.  Enter or select the purchase order and highlight the line item for which you want to remove the link.
 
-2.  Choose the link purchase order button next to the Quantity Ordered field to
-    open the Sales Commitments for Purchase Order window.
+2.  Choose the link purchase order button next to the Quantity Ordered field to open the Sales Commitments for Purchase Order window.
 
-3.  Select the sales document and choose Delete Sales Doc. Once the link is
-    removed, the link icon will be removed from the line item in the Sales
-    Transaction Entry window and the Purchase Order Entry window.
+3.  Select the sales document and choose Delete Sales Doc. Once the link is removed, the link icon will be removed from the line item in the Sales Transaction Entry window and the Purchase Order Entry window.
 
->   **To remove a link in Sales Order Processing:**
+**To remove a link in Sales Order Processing:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Transactions \> Sales \> Sales Transaction Entry)
+    (Transactions \> Sales \> Sales Transaction Entry)
 
-1.  Enter or select the sales document and highlight the line item for which you
-    want to remove the link.
+1.  Enter or select the sales document and highlight the line item for which you want to remove the link.
 
-2.  Choose the link purchase order button next to the Quantity Ordered field to
-    open the PO Commitment for Sales Document window.
+2.  Choose the link purchase order button next to the Quantity Ordered field to open the PO Commitment for Sales Document window.
 
-![](media/4fddbcd02a9b3ab89dbc209ea4e1d7fe.jpg)
+    ![](media/4fddbcd02a9b3ab89dbc209ea4e1d7fe.jpg)
 
-1.  Verify the purchase order number and choose Delete. Once the link is
-    removed, the link icon will be removed from the line item in the Sales
-    Transaction Entry window and the Purchase Order Entry window.
+1.  Verify the purchase order number and choose Delete. Once the link is removed, the link icon will be removed from the line item in the Sales Transaction Entry window and the Purchase Order Entry window.
 
 #### Changing the link to a purchase order
 
->   You can change the link to an existing purchase order by deleting the
->   existing link and then adding a link to a different purchase order using the
->   PO Commitment for Sales Document window. To delete the existing link in this
->   window, Sales Order Processing must be set up to allow deletion of purchase
->   order commitments.
+You can change the link to an existing purchase order by deleting the existing link and then adding a link to a different purchase order using the PO Commitment for Sales Document window. To delete the existing link in this window, Sales Order Processing must be set up to allow deletion of purchase order commitments.
 
->   You can also delete the link from the Sales Commitments for Purchase Order
->   window in Purchase Order Processing. For more information, see *Removing an
->   existing link to a purchase order* on page 162.
+You can also delete the link from the Sales Commitments for Purchase Order window in Purchase Order Processing. For more information, see *Removing an existing link to a purchase order* on page 162.
 
->   **To change the link to a purchase order:**
+**To change the link to a purchase order:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Transactions \> Sales \> Sales Transaction Entry)
+    (Transactions \> Sales \> Sales Transaction Entry)
 
-1.  Enter or select the sales document and highlight the line item for which you
-    want to change the link.
+1.  Enter or select the sales document and highlight the line item for which you want to change the link.
 
-2.  Choose the link purchase order button next to the Quantity Ordered field to
-    open the PO Commitment for Sales Document window.
+2.  Choose the link purchase order button next to the Quantity Ordered field to open the PO Commitment for Sales Document window.
 
-3.  The purchase order that is linked to the item will be displayed. Choose
-    Delete to remove this link.
+3.  The purchase order that is linked to the item will be displayed. Choose Delete to remove this link.
 
 4.  Enter or select a different purchase order to link to the sales line item.
 
@@ -4265,60 +3896,39 @@ This information is divided into the following sections:
 
 #### Checking the commitment status
 
->   For any item on a sales order or back order, you can check the commitment
->   status, which indicates if the item is committed to a purchase order and
->   what the status of the purchase order is. The commitment status types are:
+For any item on a sales order or back order, you can check the commitment status, which indicates if the item is committed to a purchase order and what the status of the purchase order is. The commitment status types are:
 
->   **None** The line item has neither a commitment nor a pending commitment on
->   a purchase order.
+- **None** The line item has neither a commitment nor a pending commitment on a purchase order.
 
->   **Needs purchase** The line item is available for commitment and the
->   purchase order hasn’t been generated.
+- **Needs purchase** The line item is available for commitment and the purchase order hasn’t been generated.
 
->   **Purchased** The line item has a commitment on a purchase order that has
->   been generated, but no receipts have been posted for the purchase order.
+- **Purchased** The line item has a commitment on a purchase order that has been generated, but no receipts have been posted for the purchase order.
 
->   **Partially received** The line item has a commitment on a purchase that has
->   been generated and receipts have been posted for the purchase order, but the
->   quantity received on the purchase order is less than the quantity needed for
->   the sales document.
+- **Partially received** The line item has a commitment on a purchase that has been generated and receipts have been posted for the purchase order, but the quantity received on the purchase order is less than the quantity needed for the sales document.
 
->   **Fully received** The line item has a commitment on a purchase order that
->   has been generated and receipts have been posted for the purchase order. The
->   quantity received on the purchase order is enough to complete the sales
->   document.
+- **Fully received** The line item has a commitment on a purchase order that has been generated and receipts have been posted for the purchase order. The quantity received on the purchase order is enough to complete the sales document.
 
->   **To check the commitment status:**
+**To check the commitment status:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Enter or select the sales document in the Sales Transaction Entry window and
-    highlight the line item you want to link.
+1.  Enter or select the sales document in the Sales Transaction Entry window and highlight the line item you want to link.
 
-2.  Choose the link purchase order button next to the Qty Ordered field to open
-    the PO Commitment for Sales Document window, where the commitment status
-    appears.
+2.  Choose the link purchase order button next to the Qty Ordered field to open the PO Commitment for Sales Document window, where the commitment status appears.
 
-![](media/4fddbcd02a9b3ab89dbc209ea4e1d7fe.jpg)
+    ![](media/4fddbcd02a9b3ab89dbc209ea4e1d7fe.jpg)
 
 1.  Close the window.
 
 ### Chapter 23: Receiving purchase orders
 
->   If you have created a purchase order from a sales document or have linked a
->   sales line item to an existing purchase order, the quantities can be
->   automatically allocated or fulfilled on the sales order when a shipment or
->   shipment/invoice is posted for the purchase order. Whether the item is
->   allocated and fulfilled depends on what type of item it is—an inventory
->   item, a non-inventoried item, or a drop-ship item.
+If you have created a purchase order from a sales document or have linked a sales line item to an existing purchase order, the quantities can be automatically allocated or fulfilled on the sales order when a shipment or shipment/invoice is posted for the purchase order. Whether the item is allocated and fulfilled depends on what type of item it is—an inventory item, a non-inventoried item, or a drop-ship item.
 
->   For more information about creating purchase orders or linking to existing
->   purchase orders, see *Chapter 21, “New purchase orders,”* or *Chapter 22,
->   “Links to existing purchase orders.”*
+For more information about creating purchase orders or linking to existing purchase orders, see *Chapter 21, “New purchase orders,”* or *Chapter 22, “Links to existing purchase orders.”*
 
->   The information is divided into the following sections:
+The information is divided into the following sections:
 
 -   *Allocating and fulfilling inventory items*
 
@@ -4332,197 +3942,94 @@ This information is divided into the following sections:
 
 #### Allocating and fulfilling inventory items
 
->   When you post a shipment or shipment/invoice that has a commitment to a
->   sales order line item, the site ID will be checked. If the site IDs match,
->   the sales order line item will be allocated for the quantity shipped. If the
->   order ID doesn’t use a separate fulfillment process, the line item also will
->   be fulfilled. Also, the quantity back ordered is decreased and quantity to
->   invoice is increased on the sales order, based on the quantity shipped.
+When you post a shipment or shipment/invoice that has a commitment to a sales order line item, the site ID will be checked. If the site IDs match, the sales order line item will be allocated for the quantity shipped. If the order ID doesn’t use a separate fulfillment process, the line item also will be fulfilled. Also, the quantity back ordered is decreased and quantity to invoice is increased on the sales order, based on the quantity shipped.
 
->   If the purchase order shipment and the sales order site IDs don’t match, the
->   items will not be allocated. You must transfer the item from the site ID
->   where you received the item to the site where you are selling the item and
->   then allocate the item manually. For more information about transferring
->   items to a different site, see the Inventory Control documentation. Any
->   allocation problems will be listed on the
+If the purchase order shipment and the sales order site IDs don’t match, the items will not be allocated. You must transfer the item from the site ID where you received the item to the site where you are selling the item and then allocate the item manually. For more information about transferring items to a different site, see the Inventory Control documentation. Any allocation problems will be listed on the Back-Ordered Items Received report. For more information about this report, see *Printing the Back-Ordered Items Received report* on page 167 or the Purchase Order Processing documentation.
 
->   Back-Ordered Items Received report. For more information about this report,
->   see
+If an item on the sales order can’t be allocated, the Quantity Alert icon will appear for the item when you select the sales document in the Sales Transaction Entry window. If the item is fully received in Purchase Order Processing, you can choose the quantity alert icon button and complete the allocation. For more information about the quantity alert icon button, see *Quantity allocation problems* on page 138.
 
->   *Printing the Back-Ordered Items Received report* on page 167 or the
->   Purchase Order Processing documentation.
+When a shipment or shipment/invoice is posted in Purchase Order Processing for service, flat fee, or miscellaneous charge items, the quantity fulfilled is updated on the sales order based on the quantity shipped on the purchase order. However, if the sales order ID uses separate fulfillment, you will have to fulfill the item manually.
 
->   If an item on the sales order can’t be allocated, the Quantity Alert icon
->   will appear for the item when you select the sales document in the Sales
->   Transaction Entry window. If the item is fully received in Purchase Order
->   Processing, you can choose the quantity alert icon button and complete the
->   allocation. For more information about the quantity alert icon button, see
->   *Quantity allocation problems* on page 138.
+If you’re using separate fulfillment, service, flat fee, and miscellaneous charge items will not be fulfilled when the items are received on the purchase order. For more information about separate fulfillment, see *Chapter 20, “Separate fulfillment.”*
 
->   When a shipment or shipment/invoice is posted in Purchase Order Processing
->   for service, flat fee, or miscellaneous charge items, the quantity fulfilled
->   is updated on the sales order based on the quantity shipped on the purchase
->   order. However, if the sales order ID uses separate fulfillment, you will
->   have to fulfill the item manually.
+The unit cost for a service, flat fee, or miscellaneous charge item on the sales order is updated when an invoice or shipment/invoice is posted in Purchase Order Processing.
 
->   If you’re using separate fulfillment, service, flat fee, and miscellaneous
->   charge items will not be fulfilled when the items are received on the
->   purchase order. For more information about separate fulfillment, see
->   *Chapter 20, “Separate fulfillment.”*
+When a purchase order shipment or shipment/invoice is posted and Sales Order Processing is not set up to automatically assign serial or lot numbers, you must manually fulfill the item.
 
->   The unit cost for a service, flat fee, or miscellaneous charge item on the
->   sales order is updated when an invoice or shipment/invoice is posted in
->   Purchase Order Processing.
+When a shipment or shipment/invoice is posted in Purchase Order Processing for service, flat fee, or miscellaneous items, if the item is received at a site that is different from the site on the sales document, the item is fulfilled and a message regarding the location of the item appears on the Back-Ordered Items Received report.
 
->   When a purchase order shipment or shipment/invoice is posted and Sales Order
->   Processing is not set up to automatically assign serial or lot numbers, you
->   must manually fulfill the item.
-
->   When a shipment or shipment/invoice is posted in Purchase Order Processing
->   for service, flat fee, or miscellaneous items, if the item is received at a
->   site that is different from the site on the sales document, the item is
->   fulfilled and a message regarding the location of the item appears on the
->   Back-Ordered Items Received report.
-
->   *If a sales line item is committed to a purchase order and the purchase
->   order hasn’t been received against, the sales line item can’t be allocated.*
+> [!NOTE]
+> If a sales line item is committed to a purchase order and the purchase order hasn’t been received against, the sales line item can’t be allocated.
 
 #### Fulfilling non-inventoried items
 
->   When you post a shipment or shipment/invoice that is linked to a
->   non-inventoried item on a sales document, the quantity fulfilled for the
->   item will be updated on the sales order, based on the quantity shipped on
->   the purchase order. Also, when you select the document in the Sales
->   Transaction Entry window, the quantity back ordered will be decreased and
->   quantity to invoice will be increased on the sales order, based on the
->   quantity shipped.
+When you post a shipment or shipment/invoice that is linked to a non-inventoried item on a sales document, the quantity fulfilled for the item will be updated on the sales order, based on the quantity shipped on the purchase order. Also, when you select the document in the Sales Transaction Entry window, the quantity back ordered will be decreased and quantity to invoice will be increased on the sales order, based on the quantity shipped.
 
->   If you are using separate fulfillment for the document ID, the
->   non-inventoried items will not be fulfilled when the items are received on
->   the purchase order. You must use the Separate Fulfillment window to fulfill
->   these items.
+If you are using separate fulfillment for the document ID, the non-inventoried items will not be fulfilled when the items are received on the purchase order. You must use the Separate Fulfillment window to fulfill these items.
 
->   The unit cost for a non-inventoried line item on the sales order is updated
->   when a shipment or shipment/invoice is posted in Purchase Order Processing.
+The unit cost for a non-inventoried line item on the sales order is updated when a shipment or shipment/invoice is posted in Purchase Order Processing.
 
->   When a shipment or shipment/invoice is posted for a non-inventoried item, if
->   the item is received at a site that is different from the site chosen on the
->   sales document, the item is fulfilled on the sales document and a message
->   regarding the location of the item appears on the Back-Ordered Items
->   Received report.
+When a shipment or shipment/invoice is posted for a non-inventoried item, if the item is received at a site that is different from the site chosen on the sales document, the item is fulfilled on the sales document and a message regarding the location of the item appears on the Back-Ordered Items Received report.
 
->   If a non-inventoried line item is contained on a purchase order that hasn’t
->   been received against, the sales line item cannot be fulfilled automatically
->   by the system. You must use a separate fulfillment process to fulfill these
->   items. For more information about separate fulfillment, see *Chapter 20,
->   “Separate fulfillment.”*
+If a non-inventoried line item is contained on a purchase order that hasn’t been received against, the sales line item cannot be fulfilled automatically by the system. You must use a separate fulfillment process to fulfill these items. For more information about separate fulfillment, see *Chapter 20, “Separate fulfillment.”*
 
 #### Fulfilling drop-ship items
 
->   When you post an invoice for a drop-ship purchase order, the quantity
->   fulfilled will be updated on the sales order based on the quantity invoiced
->   on the purchase order. The drop-ship item won’t be allocated because the
->   item is never received into your inventory. Also, when you select the
->   document in the Sales Transaction Entry window, the quantity back ordered
->   will be decreased and quantity to invoice will be increased on the sales
->   order based on the quantity shipped.
+When you post an invoice for a drop-ship purchase order, the quantity fulfilled will be updated on the sales order based on the quantity invoiced on the purchase order. The drop-ship item won’t be allocated because the item is never received into your inventory. Also, when you select the document in the Sales Transaction Entry window, the quantity back ordered will be decreased and quantity to invoice will be increased on the sales order based on the quantity shipped.
 
->   The unit cost for a drop-ship line item on the sales order is updated when
->   an invoice is posted in Purchase Order Processing, if the item does not use
->   a periodic valuation method.
+The unit cost for a drop-ship line item on the sales order is updated when an invoice is posted in Purchase Order Processing, if the item does not use a periodic valuation method.
 
->   For more information about valuation methods, see the Inventory Control
->   documentation.
+For more information about valuation methods, see the Inventory Control documentation.
 
->   If a drop-ship item is contained on a purchase order that hasn’t been
->   received against, the sales line item cannot be fulfilled automatically by
->   the system. You must use a separate fulfillment process to fulfill these
->   items. If you’re using separate fulfillment, drop-ship items will not be
->   fulfilled when the items are invoiced on the purchase order. For more
->   information about separate fulfillment, see *Chapter 20, “Separate
->   fulfillment.”*
+If a drop-ship item is contained on a purchase order that hasn’t been received against, the sales line item cannot be fulfilled automatically by the system. You must use a separate fulfillment process to fulfill these items. If you’re using separate fulfillment, drop-ship items will not be fulfilled when the items are invoiced on the purchase order. For more information about separate fulfillment, see *Chapter 20, “Separate fulfillment.”*
 
 #### Purchase orders created from back orders
 
->   For a purchase order created from a back order, use the Back-Ordered Items
->   Received report to determine which back orders can be transferred to orders
->   or invoices. After you transfer the back order to an order or invoice, you
->   must manually allocate and fulfill the items on the new order or invoice.
->   For more information, see *Printing the Back-Ordered Items Received report*
->   on page 167 and *Chapter 27, “Transferring documents.”*
+For a purchase order created from a back order, use the Back-Ordered Items Received report to determine which back orders can be transferred to orders or invoices. After you transfer the back order to an order or invoice, you must manually allocate and fulfill the items on the new order or invoice. For more information, see *Printing the Back-Ordered Items Received report* on page 167 and *Chapter 27, “Transferring documents.”*
 
 #### Printing the Back-Ordered Items Received report
 
->   The Back-Ordered Items Received report is an important resource for tracking
->   the items received on a purchase order. This Purchase Order Processing
->   report shows the open sales documents that contain the items received on
->   each purchase order.
+The Back-Ordered Items Received report is an important resource for tracking the items received on a purchase order. This Purchase Order Processing report shows the open sales documents that contain the items received on each purchase order.
 
->   The Back-Ordered Items Received report shows updated costs and the
->   quantities successfully allocated and fulfilled on sales orders. The report
->   also shows any problems encountered when allocating and fulfilling items
->   that are linked to sales orders. If you encounter errors when you print the
->   Back-Ordered Items Received report, you should reconcile Sales Order
->   Processing records.
+The Back-Ordered Items Received report shows updated costs and the quantities successfully allocated and fulfilled on sales orders. The report also shows any problems encountered when allocating and fulfilling items that are linked to sales orders. If you encounter errors when you print the Back-Ordered Items Received report, you should reconcile Sales Order Processing records.
 
->   The sales documents shown on this report will depend on where the report was
->   printed. If it’s printed from the Purchasing Invoice Entry window (File \>\>
->   Print), the report will display only invoiced quantities for sales documents
->   that were linked with a purchase order.
+The sales documents shown on this report will depend on where the report was printed. If it’s printed from the Purchasing Invoice Entry window (File \>\> Print), the report will display only invoiced quantities for sales documents that were linked with a purchase order.
 
->   If you print the report from the reports menu, the report will show
->   receiving information for sales documents that were linked to purchase
->   orders and then sales documents that were not linked to purchase orders.
+If you print the report from the reports menu, the report will show receiving information for sales documents that were linked to purchase orders and then sales documents that were not linked to purchase orders.
 
->   You also can print the report for all unposted receipts in Purchase Order
->   Processing from the Purchasing Analysis Reports window.
+You also can print the report for all unposted receipts in Purchase Order Processing from the Purchasing Analysis Reports window.
 
->   **To print the Back-Ordered Items Received report:**
+**To print the Back-Ordered Items Received report:**
 
 1.  Open the Purchasing Analysis Reports window.
 
->   (Purchasing \>\> Reports \>\> Analysis)
+    (Purchasing \>\> Reports \>\> Analysis)
 
-1.  Select the Back-Ordered Items Received report and choose New to open the
-    Purchasing Analysis Report Options window.
+1.  Select the Back-Ordered Items Received report and choose New to open the Purchasing Analysis Report Options window.
 
-2.  Enter an option name and create a report option to sort and restrict the
-    report.
+2.  Enter an option name and create a report option to sort and restrict the report.
 
 3.  Choose Destination to specify a printing destination and choose Print.
 
-4.  You can print the report from either the Purchasing Analysis Report Options
-    window or the Purchasing Analysis Reports window. You also can save the
-    report option and print it later.
+4.  You can print the report from either the Purchasing Analysis Report Options window or the Purchasing Analysis Reports window. You also can save the report option and print it later.
 
 ## Part 4: Transaction activity
 
->   This part of the documentation includes information that will help manage
->   your sales documents once they are entered. You can transfer, modify,
->   delete, post, and print sales documents. The following topics are discussed:
+This part of the documentation includes information that will help manage your sales documents once they are entered. You can transfer, modify, delete, post, and print sales documents. The following topics are discussed:
 
--   *Chapter 24, “Printing and sending documents in e-mail,”* describes how to
-    print sales documents—quotes, orders, back orders, invoices, returns,
-    picking tickets, and packing slips. It also explains how to print shipping
-    labels and COD tags.
+-   *Chapter 24, “Printing and sending documents in e-mail,”* describes how to print sales documents—quotes, orders, back orders, invoices, returns, picking tickets, and packing slips. It also explains how to print shipping labels and COD tags.
 
--   *Chapter 26, “Posting,”* explains how to post an individual sales
-    transaction or a batch of transactions.
+-   *Chapter 26, “Posting,”* explains how to post an individual sales transaction or a batch of transactions.
 
--   *Chapter 25, “Sales document maintenance,”* explains how to correct, delete,
-    and void sales documents. It also explains process holds.
+-   *Chapter 25, “Sales document maintenance,”* explains how to correct, delete, and void sales documents. It also explains process holds.
 
--   *Chapter 27, “Transferring documents,”* explains how to transfer sales
-    documents as a part of the sales cycle.
+-   *Chapter 27, “Transferring documents,”* explains how to transfer sales documents as a part of the sales cycle.
 
 ### Chapter 24: Printing and sending documents in email
 
->   After you enter a quote, order, fulfillment order, invoice, back order, or
->   return, you can print the document and send it to a customer. You also can
->   print packing slips, picking tickets, shipping labels, and cash on delivery
->   (COD) tags.
+After you enter a quote, order, fulfillment order, invoice, back order, or return, you can print the document and send it to a customer. You also can print packing slips, picking tickets, shipping labels, and cash on delivery (COD) tags.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Packing slips and picking tickets overview*
 
@@ -4554,280 +4061,130 @@ This information is divided into the following sections:
 
 #### Packing slips and picking tickets overview
 
->   You can print packing slips for orders, fulfillment orders, and invoices and
->   include them in each shipment. A packing slip displays the items and
->   quantities included on an order or invoice. If items on an invoice have
->   negative invoice quantities, those items will not be printed on the packing
->   slip. If all the items on an invoice have a Services item type, a packing
->   slip is not printed. If items on an invoice have
+You can print packing slips for orders, fulfillment orders, and invoices and include them in each shipment. A packing slip displays the items and quantities included on an order or invoice. If items on an invoice have negative invoice quantities, those items will not be printed on the packing slip. If all the items on an invoice have a Services item type, a packing slip is not printed. If items on an invoice have Miscellaneous Charges or Flat Fee item type, a packing slip is printed. If an item on an invoice has a Kit item type and the kit has no items, a packing slip is not printed. See *Printing options for packing slips and picking tickets* for printing more information.
 
->   Miscellaneous Charges or Flat Fee item type, a packing slip is printed. If
->   an item on an invoice has a Kit item type and the kit has no items, a
->   packing slip is not printed. See *Printing options for packing slips and
->   picking tickets* for printing more information.
+You can print picking tickets for orders, fulfillment orders, invoices, and returns. Warehouse personnel use picking tickets when assembling the items for a shipment. A picking ticket displays the items and quantities needed to fulfill an order, fulfillment order, or invoice and the location for each item. A picking ticket for a return displays the items and quantities returned and the site they were returned to. If you reprint a picking ticket, the words REPRINT will be displayed across the top of the report. Items will not be printed on the picking ticket if they are drop-ship items, have negative invoice quantities, or have zero quantities. See *Printing options for packing slips and picking tickets* for more information.
 
->   You can print picking tickets for orders, fulfillment orders, invoices, and
->   returns.
+You can print bulk picking tickets for fulfillment orders and invoices created from fulfillment orders. A bulk picking ticket displays the items and quantities needed to fulfill more than one fulfillment order or invoice and the location of each item for a batch of items. A summary line for each item and the total quantity required is displayed on the picking ticket. If you print a bulk picking ticket and then an individual picking ticket, items displayed on both picking tickets will be displayed with two asterisks (\*\*) and a reprint icon.
 
->   Warehouse personnel use picking tickets when assembling the items for a
->   shipment. A picking ticket displays the items and quantities needed to
->   fulfill an order, fulfillment order, or invoice and the location for each
->   item. A picking ticket for a return displays the items and quantities
->   returned and the site they were returned to. If you reprint a picking
->   ticket, the words REPRINT will be displayed across the top of the report.
->   Items will not be printed on the picking ticket if they are drop-ship items,
->   have negative invoice quantities, or have zero quantities. See *Printing
->   options for packing slips and picking tickets* for more information.
+You can print packing slips and picking tickets at the same time you print the sales document and can use three predefined document formats—blank paper, short form, or long form. A separate packing slip will be printed for each unique ship-to address and shipping method combination on a sales document.
 
->   You can print bulk picking tickets for fulfillment orders and invoices
->   created from fulfillment orders. A bulk picking ticket displays the items
->   and quantities needed to fulfill more than one fulfillment order or invoice
->   and the location of each item for a batch of items. A summary line for each
->   item and the total quantity required is displayed on the picking ticket. If
->   you print a bulk picking ticket and then an individual picking ticket, items
->   displayed on both picking tickets will be displayed with two asterisks
->   (\*\*) and a reprint icon.
+You can define a default document format when you set up Sales Order Processing and you can change the format before you print a document. For more information about setting up default document formats, see *Setting up document numbers* on page 19 or *Chapter 3, “Document setup.”*
 
->   You can print packing slips and picking tickets at the same time you print
->   the sales document and can use three predefined document formats—blank
->   paper, short form, or long form. A separate packing slip will be printed for
->   each unique ship-to address and shipping method combination on a sales
->   document.
-
->   You can define a default document format when you set up Sales Order
->   Processing and you can change the format before you print a document. For
->   more information about setting up default document formats, see *Setting up
->   document numbers* on page 19 or *Chapter 3, “Document setup.”*
-
->   If you assigned a print process hold to an order, invoice, or return, this
->   process hold also applies to the picking ticket and packing slip associated
->   with the sales document.
+If you assigned a print process hold to an order, invoice, or return, this process hold also applies to the picking ticket and packing slip associated with the sales document.
 
 #### Printing options for packing slips and picking tickets
 
->   When you print packing slips or picking tickets, you can select several
->   printing options in the Sales Document Print Options window. Depending on
->   the document you print, different printing options will be available. You
->   can print packing slips or picking tickets at the same time as you print
->   sales documents.
+When you print packing slips or picking tickets, you can select several printing options in the Sales Document Print Options window. Depending on the document you print, different printing options will be available. You can print packing slips or picking tickets at the same time as you print sales documents.
 
->   **Print Separate Picking Ticket Per Site** If the items from a document are
->   stored at different inventory sites, you can choose to print a picking
->   ticket for each site. If you’re using named printers, refer to the System
->   Administrator’s Guide (Help \>\> Contents \>\> select System Administration)
->   for more information.
-
->   **Print Separate Packing Slip Per Site** If the items from a document are
->   stored at different inventory sites, you can choose to print a packing slip
->   for each site. If line items on the document have different ship-to
->   addresses or shipping methods and different inventory sites, you can choose
->   to print a packing slip for each ship-to address, shipping method, and
->   inventory site combination. If you’re using named printers, refer to the
->   System Administrator’s Guide (Help \>\> Contents \>\> select System
->   Administration) for more information.
-
->   **Include Line Item Comments** Mark this option to include the comments
->   entered for each item on the packing slip or picking ticket.
-
->   **Reprint Previously Printed** If picking tickets or packing slips have been
->   printed before, you can choose to reprint those picking tickets or packing
->   slips. If you choose not to reprint previously printed picking tickets or
->   packing slips, only the picking tickets or packing slips that haven’t been
->   printed before will be printed.
-
->   **Print Picking Instructions** If you’re using advanced picking, have
->   created picking instruction IDs, and assigned the IDs to customers and
->   items, you can choose to print the instructions on the picking tickets.
-
->   **Include Drop-ship Items** Mark this option to print the drop-ship items on
->   packing slips.
-
->   **Include Kit Components** Mark this option to print the components of the
->   kit on the packing slips or picking tickets.
-
->   **Include Incomplete Docs** If items from a document that has been marked
->   Ship Complete Document in the Sales Customer Detail Entry window are to be
->   partially shipped, you can choose to print the partial shipments on packing
->   slips and picking tickets. If this option isn’t marked, packing slips and
->   picking tickets won’t be printed for partially shipped documents.
-
->   **Bin Sequenced** Mark this option to sort the items on the picking tickets
->   by site, bin, and item.
-
->   **Sort Kit Components** Mark this option to sort kit components on the
->   picking tickets by site, bin, and item.
-
->   **Print Customer Item** If you use customer item names, you can choose to
->   print the customer item on the packing slips.
-
->   **Print Back-Ordered Items** Mark this option to print back-ordered items on
->   picking tickets.
-
->   **Print Ship To Addresses with Lines** Mark this option to print the ship to
->   address with the corresponding line item when it’s different than the ship
->   to address for the document. This option is available for picking tickets.
+- **Print Separate Picking Ticket Per Site** If the items from a document are stored at different inventory sites, you can choose to print a picking ticket for each site. If you’re using named printers, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.
+- **Print Separate Packing Slip Per Site** If the items from a document are stored at different inventory sites, you can choose to print a packing slip for each site. If line items on the document have different ship-to addresses or shipping methods and different inventory sites, you can choose to print a packing slip for each ship-to address, shipping method, and inventory site combination. If you’re using named printers, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.
+- **Include Line Item Comments** Mark this option to include the comments entered for each item on the packing slip or picking ticket.
+- **Reprint Previously Printed** If picking tickets or packing slips have been printed before, you can choose to reprint those picking tickets or packing slips. If you choose not to reprint previously printed picking tickets or packing slips, only the picking tickets or packing slips that haven’t been printed before will be printed.
+- **Print Picking Instructions** If you’re using advanced picking, have created picking instruction IDs, and assigned the IDs to customers and items, you can choose to print the instructions on the picking tickets.
+- **Include Drop-ship Items** Mark this option to print the drop-ship items on packing slips.
+- **Include Kit Components** Mark this option to print the components of the kit on the packing slips or picking tickets.
+- **Include Incomplete Docs** If items from a document that has been marked Ship Complete Document in the Sales Customer Detail Entry window are to be partially shipped, you can choose to print the partial shipments on packing slips and picking tickets. If this option isn’t marked, packing slips and picking tickets won’t be printed for partially shipped documents.
+- **Bin Sequenced** Mark this option to sort the items on the picking tickets by site, bin, and item.
+- **Sort Kit Components** Mark this option to sort kit components on the picking tickets by site, bin, and item.
+- **Print Customer Item** If you use customer item names, you can choose to print the customer item on the packing slips.
+- **Print Back-Ordered Items** Mark this option to print back-ordered items on picking tickets.
+- **Print Ship To Addresses with Lines** Mark this option to print the ship to address with the corresponding line item when it’s different than the ship to address for the document. This option is available for picking tickets.
 
 #### Printing options for sales documents
 
->   When you print a sales document (a quote, order, fulfillment order, invoice,
->   back order, or return), you can select several printing options in the Sales
->   Document Print Options window. You also can send quotes, orders, fulfillment
->   orders, or invoices in e-mail. Depending on the document you print or send
->   in e-mail, different printing options will be available.
+When you print a sales document (a quote, order, fulfillment order, invoice, back order, or return), you can select several printing options in the Sales Document Print Options window. You also can send quotes, orders, fulfillment orders, or invoices in e-mail. Depending on the document you print or send in e-mail, different printing options will be available.
 
->   **Reprint Previously Printed/Sent** If you are printing or sending a batch
->   or range of documents in e-mail, all of the documents will be printed or
->   sent in e-mail. If you don’t mark this option, only documents that haven’t
->   been printed or sent in e-mail before will be printed or sent in e-mail.
+- **Reprint Previously Printed/Sent** If you are printing or sending a batch or range of documents in e-mail, all of the documents will be printed or sent in e-mail. If you don’t mark this option, only documents that haven’t been printed or sent in e-mail before will be printed or sent in e-mail.
+- **Include Kit Components** The kit item and its components will be printed on the document. If you don’t mark this option, only the kit item will be printed.
+- **Print Customer Item** If the customer uses a different name for an item than your company uses for the same item, you can choose to print the customer item name on the packing slips and invoices.
+- **Print Ship To Addresses with Lines** Mark this option to print the ship to address with the corresponding line item when it’s different than the ship to address for the document.
+- **Include Tax Details** Mark this option and select either Line Item and Summary or Summary Taxes Only. The tax details that were used to calculate the tax will be printed directly beneath the item on the document.
 
->   **Include Kit Components** The kit item and its components will be printed
->   on the document. If you don’t mark this option, only the kit item will be
->   printed.
-
->   **Print Customer Item** If the customer uses a different name for an item
->   than your company uses for the same item, you can choose to print the
->   customer item name on the packing slips and invoices.
-
->   **Print Ship To Addresses with Lines** Mark this option to print the ship to
->   address with the corresponding line item when it’s different than the ship
->   to address for the document.
-
->   **Include Tax Details** Mark this option and select either Line Item and
->   Summary or Summary Taxes Only. The tax details that were used to calculate
->   the tax will be printed directly beneath the item on the document.
-
->   Mark Line Item and Summary if you want to include details for line items as
->   well as summary tax information. Mark Summary Taxes Only if you want to
->   include only the summary of tax detail information for each printed
->   document.
-
->   **Currency to Print** For multicurrency transactions, you can print
->   documents in either the functional or originating currency.
+    Mark Line Item and Summary if you want to include details for line items as well as summary tax information. Mark Summary Taxes Only if you want to include only the summary of tax detail information for each printed document.
+- **Currency to Print** For multicurrency transactions, you can print documents in either the functional or originating currency.
 
 #### Requirements for sending sales documents in e-mail
 
->   You can send quotes, orders, fulfillment orders, or invoices in e-mail if
->   the following conditions are met.
+You can send quotes, orders, fulfillment orders, or invoices in e-mail if the following conditions are met.
 
 -   The document type to send in e-mail must be available for the customer.
 
--   One e-mail address, To, Cc, or Bcc, must be assigned to the customer using
-    the Internet Information window or the Sales E-mail Detail Entry window.
+-   One e-mail address, To, Cc, or Bcc, must be assigned to the customer using the Internet Information window or the Sales E-mail Detail Entry window.
 
--   You can send documents by email if you're using a MAPI-compliant e-mail
-    service or Exchange 2007 Service Pack 1 or greater with Exchange Web
+-   You can send documents by email if you're using a MAPI-compliant e-mail service or Exchange 2007 Service Pack 1 or greater with Exchange Web
     Services.
 
--   If you are using Exchange 2007 Service Pack 1 or greater with Exchange Web
-    Services, the Autodiscover service must be enabled to connect to the
-    Exchange server.
+-   If you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services, the Autodiscover service must be enabled to connect to the Exchange server.
 
--   Word templates for Microsoft Dynamics GP for the customer and document type
-    must be enabled in the Template Configuration Manager window before you can
-    send documents as DOCX, PDF, or XPS attachments.
+-   Word templates for Microsoft Dynamics GP for the customer and document type must be enabled in the Template Configuration Manager window before you can send documents as DOCX, PDF, or XPS attachments.
 
--   Depending on the document type and email service, Microsoft Word 2010 or
-    later and Word templates for Microsoft Dynamics GP are required.
+-   Depending on the document type and email service, Microsoft Word 2010 or later and Word templates for Dynamics GP are required.
 
-| **File format**                                                                                                               | **Word 2010 or later** | **Word templates** | **Web Client** |
-|-------------------------------------------------------------------------------------------------------------------------------|------------------------|--------------------|----------------|
-| XPS                                                                                                                           | Required for MAPI      | Enabled            | Not available  |
-| PDF                                                                                                                           | Required for MAPI      | Enabled            | Not available  |
-| DOCX                                                                                                                          | Not required           | Enabled            | Available\*    |
-| HTML                                                                                                                          | Not required           | Not required       | Available\*    |
-| \*Email for Web Client will only be available if you are using Exchange as your server type in the System Preferences window. |                        |                    |                |
+    | **File format**  | **Word 2010 or later** | **Word templates** | **Web Client** |
+    |------------------|--------------------|----------------|
+    | XPS     | Required for MAPI      | Enabled            | Not available  |
+    | PDF      | Required for MAPI      | Enabled            | Not available  |
+    | DOCX     | Not required           | Enabled            | Available\*    |
+    | HTML    | Not required           | Not required       | Available\*    |
 
--   The file size of the document must not be greater than the maximum file size
-    set in the Customer E-mail Options window.
+ \*Email for Web Client will only be available if you are using Exchange as your server type in the System Preferences window. 
 
--   Depending on the file format you choose to send your documents in e-mail,
-    your customers must be using the following components to view their
-    documents.
+-   The file size of the document must not be greater than the maximum file size set in the Customer E-mail Options window.
 
-| **File format**                                                                                                                  | **Component**                           |
-|----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| XPS                                                                                                                              | Microsoft XPS Viewer                    |
-| PDF                                                                                                                              | Adobe Reader                            |
-| DOCX                                                                                                                             | Microsoft Word Viewer                   |
-| HTML\*                                                                                                                           | Internet Explorer 8 Internet Explorer 9 |
-| \*If you are only using Microsoft Dynamics GP Web Client, your customers and vendors must be using HTML to view their documents. |                                         |
+-   Depending on the file format you choose to send your documents in e-mail, your customers must be using the following components to view their  documents.
 
-### Printing or sending an individual document in e-mail
+| **File format**      | **Component**                           |
+|---------------------|-----------------------------------------|
+| XPS                | Microsoft XPS Viewer                    |
+| PDF                | Adobe Reader                            |
+| DOCX               | Microsoft Word Viewer                   |
+| HTML\*            | Internet Explorer 8 Internet Explorer 9 |
 
->   You can print a single quote, order, fulfillment order, invoice, back order,
->   or return when you enter the document in the Sales Transaction Entry window
->   or the Sales Order Fulfillment window. You also can send quotes, orders,
->   fulfillment orders or invoices in e-mail.
+\*If you are only using Microsoft Dynamics GP Web Client, your customers and vendors must be using HTML to view their documents. 
 
->   If the order, fulfillment order, or invoice exceeds the customer’s credit
->   limit and you are using credit limit override workflow, the document must be
->   approved before you can print it and its picking ticket and packing slip. A
->   document also must be approved before you can send it in e-mail. You can
->   print a document, picking ticket, and packing slip that doesn’t need
->   approval. You also can send a document in e-mail that doesn’t need approval.
+#### Printing or sending an individual document in e-mail
 
->   To print or send quotes individually in e-mail, you must mark Edit Printed
->   Documents in the Sales Quote Setup window. If you don’t mark this option,
->   you can print or send quotes in e-mail only if they’ve been entered into a
->   batch. Quotes also must be approved before you can print them or send them
->   in e-mail if you are using sales quote workflow. You can print or send a
->   quote in e-mail that doesn’t need approval.
+You can print a single quote, order, fulfillment order, invoice, back order, or return when you enter the document in the Sales Transaction Entry window or the Sales Order Fulfillment window. You also can send quotes, orders, fulfillment orders or invoices in e-mail.
 
->   Before you print documents, you can print an alignment form to ensure that
->   the information is printed in the correct fields on the document. To print
->   an alignment form, mark Alignment Form in the Sales Document Print Options
->   window. You can use four predefined document formats to print
->   documents—blank paper, short form, long form, or other form.
+If the order, fulfillment order, or invoice exceeds the customer’s credit limit and you are using credit limit override workflow, the document must be approved before you can print it and its picking ticket and packing slip. A document also must be approved before you can send it in e-mail. You can print a document, picking ticket, and packing slip that doesn’t need approval. You also can send a document in e-mail that doesn’t need approval.
 
->   You also can print packing slips or picking tickets at the same time as you
->   print the sales document. For more information, see *Packing slips and
->   picking tickets overview* on page 171 and *Printing options for packing
->   slips and picking tickets* on page 172.
+To print or send quotes individually in e-mail, you must mark Edit Printed Documents in the Sales Quote Setup window. If you don’t mark this option, you can print or send quotes in e-mail only if they’ve been entered into a batch. Quotes also must be approved before you can print them or send them in e-mail if you are using sales quote workflow. You can print or send a quote in e-mail that doesn’t need approval.
 
->   **To print an individual document:**
+Before you print documents, you can print an alignment form to ensure that the information is printed in the correct fields on the document. To print an alignment form, mark Alignment Form in the Sales Document Print Options window. You can use four predefined document formats to print documents—blank paper, short form, long form, or other form.
 
-1.  Open the Sales Transaction Entry window (Sales \>\> Transactions \>\> Sales
+You also can print packing slips or picking tickets at the same time as you print the sales document. For more information, see *Packing slips and picking tickets overview* on page 171 and *Printing options for packing slips and picking tickets* on page 172.
 
->   Transaction Entry) or the Sales Order Fulfillment window. (Sales \>\>
->   Transactions \>\> Order Fulfillment)
+**To print an individual document:**
 
-1.  Enter or select a sales document and open the Sales Document Print Options
-    window by choosing File \>\> Print or the printer icon button.
+1. Open the Sales Transaction Entry window (Sales \>\> Transactions \>\> Sales
+ Transaction Entry) or the Sales Order Fulfillment window. (Sales \>\> Transactions \>\> Order Fulfillment)
 
-![](media/f2427575da4dfd427a01b0d48ea929d1.jpg)
+2. Enter or select a sales document and open the Sales Document Print Options window by choosing File \>\> Print or the printer icon button.
 
-1.  Select the document type, a sorting option, and the currency to print.
+    ![](media/f2427575da4dfd427a01b0d48ea929d1.jpg)
 
-2.  Mark the documents to include and the document formats to use.
+3. Select the document type, a sorting option, and the currency to print.
 
->   *To send a document in e-mail, the document format must be Blank Paper.
->   Also, at least one e-mail address, To, Cc, or Bcc, must be assigned to the
->   customer using the Internet Information window or the Sales E-mail Detail
->   Entry window.*
+4. Mark the documents to include and the document formats to use. 
+    > [!NOTE]
+    > To send a document in e-mail, the document format must be Blank Paper. Also, at least one e-mail address, To, Cc, or Bcc, must be assigned to the customer using the Internet Information window or the Sales E-mail Detail Entry window.
 
-1.  Select to print, send the document in e-mail, or both.
+1. Select to print, send the document in e-mail, or both.
 
-2.  To print packing slips or picking tickets, mark Packing Slips or Picking
-    Tickets and select a document format. Packing slips and picking tickets
-    won’t be sent in e-mail.
+2. To print packing slips or picking tickets, mark Packing Slips or Picking Tickets and select a document format. Packing slips and picking tickets won’t be sent in e-mail.
 
-3.  Mark whether to reprint or send previously printed or sent documents. You
-    also can choose to include kit components, tax details, and dual currencies.
+3.  Mark whether to reprint or send previously printed or sent documents. You also can choose to include kit components, tax details, and dual currencies.
 
-4.  If you’re printing packing slips or picking tickets, mark the options to
-    include.
+4.  If you’re printing packing slips or picking tickets, mark the options to include.
+    > [!NOTE]
+    > If a tax detail doesn’t appear on a document, check the Tax Detail Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax Details). The Print on Documents option should be marked.
 
->   *If a tax detail doesn’t appear on a document, check the Tax Detail
->   Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax
->   Details). The Print on Documents option should be marked.*
+1.  Choose Print. Depending on the destination options you selected, the document is printed, sent in e-mail, or both.
 
-1.  Choose Print. Depending on the destination options you selected, the
-    document is printed, sent in e-mail, or both.
+**To print an individual document using the action pane:**
 
->   **To print an individual document using the action pane:**
-
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
 2.  Mark the document that you want to print.
 
@@ -4837,22 +4194,18 @@ This information is divided into the following sections:
 
 5.  Select a document format.
 
-6.  Mark to include kit components, tax details, and the functional and
-    originating currencies.
-
->   *If a tax detail doesn’t appear on a document, check the Tax Detail
->   Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax
->   Details). The Print on Documents option should be marked.*
+6.  Mark to include kit components, tax details, and the functional and originating currencies.
+ 
+> [!NOTE]
+> If a tax detail doesn’t appear on a document, check the Tax Detail Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax Details). The Print on Documents option should be marked.
 
 1.  Print the document.
 
->   **To send an individual document in e-mail using the action pane:**
+**To send an individual document in e-mail using the action pane:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-2.  Mark the quote, order, fulfillment order, or invoice that you want to send
-    in email.
+2.  Mark the quote, order, fulfillment order, or invoice that you want to send in email.
 
 3.  In the Actions group, choose Send in E-mail.
 
@@ -4860,141 +4213,88 @@ This information is divided into the following sections:
 
 5.  Send the document.
 
-### Printing all documents in a batch
+#### Printing all documents in a batch
 
->   You can print some or all of the documents in a batch. For example, you can
->   print all of the orders you assigned to a batch, or all of the quotes and
->   orders you assigned to a batch. You also can send a batch of quotes, orders,
->   fulfillment orders or invoices in e-mail.
+You can print some or all of the documents in a batch. For example, you can print all of the orders you assigned to a batch, or all of the quotes and orders you assigned to a batch. You also can send a batch of quotes, orders, fulfillment orders or invoices in e-mail.
 
->   If an order, fulfillment order, or invoice exceeds the customer’s credit
->   limit and you are using credit limit override workflow, the document must be
->   approved before you can print it and its picking ticket, and the packing
->   slip. A document also must be approved before you can send it in e-mail. You
->   can print a document, picking ticket, and packing slip that doesn’t need
->   approval. Quotes must be approved before you can print them if you are using
->   sales quote workflow. You can print a quote that doesn’t need approval. You
->   also can send a document in e-mail that doesn’t need approval.
+If an order, fulfillment order, or invoice exceeds the customer’s credit limit and you are using credit limit override workflow, the document must be approved before you can print it and its picking ticket, and the packing slip. A document also must be approved before you can send it in e-mail. You can print a document, picking ticket, and packing slip that doesn’t need approval. Quotes must be approved before you can print them if you are using sales quote workflow. You can print a quote that doesn’t need approval. You also can send a document in e-mail that doesn’t need approval.
 
->   Print an alignment form to ensure that the information is printed in the
->   correct fields on the document. You can use four predefined document
->   formats—blank paper, short form, long form, or other form.
+Print an alignment form to ensure that the information is printed in the correct fields on the document. You can use four predefined document formats—blank paper, short form, long form, or other form.
 
->   You also can print packing slips or picking tickets at the same time as you
->   print the sales document. For more information, see *Packing slips and
->   picking tickets overview* on page 171 and *Printing options for packing
->   slips and picking tickets* on page 172.
+You also can print packing slips or picking tickets at the same time as you print the sales document. For more information, see *Packing slips and picking tickets overview* on page 171 and *Printing options for packing slips and picking tickets* on page 172.
 
->   The sorting option determines the order the documents are printed. The
->   documents will always be sorted by document type first. You can then choose
->   whether the documents will be sorted and printed by document number or by
->   customer ID.
+The sorting option determines the order the documents are printed. The documents will always be sorted by document type first. You can then choose whether the documents will be sorted and printed by document number or by customer ID.
 
->   **To print all documents in a batch:**
+**To print all documents in a batch:**
 
 1.  Open the Sales Batch Entry window.
+    (Sales \>\> Transactions \>\> Sales Batches)
 
->   (Sales \>\> Transactions \>\> Sales Batches)
-
-1.  Select a batch and choose File \>\> Print or the printer icon button to open
-    the Sales Document Print Options window.
+1.  Select a batch and choose File \>\> Print or the printer icon button to open the Sales Document Print Options window.
 
 2.  Select the document type, a sorting option, and the currency to print.
 
 3.  Mark the documents to include and the document formats to use.
+    > [!NOTE]
+    > To send a quote, order, fulfillment order, or invoice in e-mail, the document format must be Blank Paper.
 
->   *To send a quote, order, fulfillment order, or invoice in e-mail, the
->   document format must be Blank Paper.*
-
-1.  To print packing slips or picking tickets, mark Packing Slips or Picking
-    Tickets and select a document format.
+1.  To print packing slips or picking tickets, mark Packing Slips or Picking Tickets and select a document format.
 
 2.  Select to print, send the document in e-mail, or both.
 
-3.  Mark whether to reprint or send previously printed or sent documents. You
-    also can choose to include kit components, tax details, and dual currencies.
+3.  Mark whether to reprint or send previously printed or sent documents. You also can choose to include kit components, tax details, and dual currencies.
 
-4.  If you’re printing packing slips or picking tickets, mark the options to
-    include.
+4.  If you’re printing packing slips or picking tickets, mark the options to include.
 
->   *If a tax detail doesn’t appear on a document, check the Tax Detail
->   Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax
->   Details). The Print on Documents option should be marked.*
+    > [!NOTE]
+    > If a tax detail doesn’t appear on a document, check the Tax Detail Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax Details). The Print on Documents option should be marked.
 
-1.  Choose Print. Depending on the destination options you selected, the
-    document you've selected is printed, sent in e-mail, or both.
+1.  Choose Print. Depending on the destination options you selected, the document you've selected is printed, sent in e-mail, or both.
 
-### Printing a range of documents
+#### Printing a range of documents
 
->   You can print a range of documents; however, documents that have been
->   completely transferred won’t be included in the range. For example, you
->   could print a range of documents to view how many returns were entered in a
->   day. You also can send a batch of quotes, orders, fulfillment orders or
->   invoices in e-mail.
+You can print a range of documents; however, documents that have been completely transferred won’t be included in the range. For example, you could print a range of documents to view how many returns were entered in a day. You also can send a batch of quotes, orders, fulfillment orders or invoices in e-mail.
 
->   If an order, fulfillment order, or invoice exceeds the customer’s credit
->   limit and you are using credit limit override workflow, the document must be
->   approved before you can print it, send the document in e-mail, print the
->   document’s picking ticket, and the packing slip. You can print a document,
->   picking ticket, and packing slip that doesn’t need approval. Quotes must be
->   approved before you can print them or send them in e-mail if you are using
->   sales quote workflow. You can print a quote that doesn’t need approval. You
->   also can send a document in e mail that doesn't need approval.
+If an order, fulfillment order, or invoice exceeds the customer’s credit limit and you are using credit limit override workflow, the document must be approved before you can print it, send the document in e-mail, print the document’s picking ticket, and the packing slip. You can print a document, picking ticket, and packing slip that doesn’t need approval. Quotes must be approved before you can print them or send them in e-mail if you are using sales quote workflow. You can print a quote that doesn’t need approval. You also can send a document in e mail that doesn't need approval.
 
->   Print an alignment form to ensure that the information is printed in the
->   correct fields on the document. You can use four predefined document
->   formats—blank paper, short form, long form, or other form.
+Print an alignment form to ensure that the information is printed in the correct fields on the document. You can use four predefined document formats—blank paper, short form, long form, or other form.
 
->   You also can print packing slips or picking tickets at the same time as you
->   print the sales document. For more information, see *Packing slips and
->   picking tickets overview* on page 171 and *Printing options for packing
->   slips and picking tickets* on page 172.
+You also can print packing slips or picking tickets at the same time as you print the sales document. For more information, see *Packing slips and picking tickets overview* on page 171 and *Printing options for packing slips and picking tickets* on page 172.
 
->   The sorting option determines the order the documents are printed. The
->   documents will always be sorted by document type first. You can then choose
->   whether the documents will be sorted and printed by document number or by
->   customer ID.
+The sorting option determines the order the documents are printed. The documents will always be sorted by document type first. You can then choose whether the documents will be sorted and printed by document number or by customer ID.
 
->   **To print a range of documents:**
+**To print a range of documents:**
 
 1.  Open the Print Sales Documents window.
+    (Sales \>\> Transactions \>\> Print Sales Documents)
 
->   (Sales \>\> Transactions \>\> Print Sales Documents)
+    ![](media/5bb85726e1fc9d9b944dfe9022d8c121.jpg)
 
-![](media/5bb85726e1fc9d9b944dfe9022d8c121.jpg)
-
-1.  Select the document type and select whether to print documents, historical
-    documents, or an alignment form.
+1.  Select the document type and select whether to print documents, historical documents, or an alignment form.
 
 2.  Select a sorting option and the currency.
 
-3.  Mark to include documents, picking tickets, or packing slips, or a
-    combination, and select the document formats to use.
+3.  Mark to include documents, picking tickets, or packing slips, or a combination, and select the document formats to use.
 
->   *To send a quote, order, fulfillment order, or invoice in e-mail, the
->   document format must be Blank Paper.*
+    > [!NOTE]
+    > To send a quote, order, fulfillment order, or invoice in e-mail, the document format must be Blank Paper.
 
 1.  Select to print, send the document in e-mail, or both.
 
-2.  Mark whether to reprint or send previously printed or sent documents. You
-    also can choose to include kit components, tax details, and dual currencies.
+2. Mark whether to reprint or send previously printed or sent documents. You also can choose to include kit components, tax details, and dual currencies.
 
-3.  If you’re printing packing slips or picking tickets, mark the options you
-    want to include.
+3. If you’re printing packing slips or picking tickets, mark the options you want to include.
 
->   *If a tax detail doesn’t appear on a document, check the Tax Detail
->   Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax
->   Details). The Print on Documents option should be marked.*
+    > [!NOTE]
+    > If a tax detail doesn’t appear on a document, check the Tax Detail Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax Details). The Print on Documents option should be marked.
 
 1.  Enter a range of documents and choose Insert.
 
-2.  Choose Print. Depending on the destination options you selected, the
-    document you've selected is printed, sent in e-mail, or both.
+Choose Print. Depending on the destination options you selected, the document you've selected is printed, sent in e-mail, or both.
 
->   **To print a range of documents using the action pane:**
+**To print a range of documents using the action pane:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
 2.  Mark the documents that you want to print.
 
@@ -5004,22 +4304,18 @@ This information is divided into the following sections:
 
 5.  Select a document format.
 
-6.  Mark to include kit components, tax details, and the functional and
-    originating currencies.
+6.  Mark to include kit components, tax details, and the functional and originating currencies.
 
->   *If a tax detail doesn’t appear on a document, check the Tax Detail
->   Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax
->   Details). The Print on Documents option should be marked.*
+    > [!NOTE]
+    > If a tax detail doesn’t appear on a document, check the Tax Detail Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax Details). The Print on Documents option should be marked.
 
 1.  Print the document.
 
->   **To send a range of documents in e-mail using the action pane:**
+**To send a range of documents in e-mail using the action pane:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-2.  Mark the quote, order, fulfillment order, or invoice that you want to send
-    in email.
+2.  Mark the quote, order, fulfillment order, or invoice that you want to send in email.
 
 3.  In the Actions group, choose Send in E-mail.
 
@@ -5027,99 +4323,73 @@ This information is divided into the following sections:
 
 5.  Send the document.
 
-### Printing a posted document
+#### Printing a posted document
 
->   You can reprint individual sales documents from historical records. You also
->   can resend quotes, orders, fulfillment orders, or invoices in e-mail.
->   Documents are moved to history when they are transferred to another
->   document, posted, or voided. You can’t reprint packing slips and picking
->   tickets for documents that have been moved to history*.*
+You can reprint individual sales documents from historical records. You also can resend quotes, orders, fulfillment orders, or invoices in e-mail. Documents are moved to history when they are transferred to another document, posted, or voided. You can’t reprint packing slips and picking tickets for documents that have been moved to history*.*
 
->   Print an alignment form to ensure that the information is printed in the
->   correct fields on the document. You can use four predefined document
->   formats—blank paper, short form, long form, or other form.
+Print an alignment form to ensure that the information is printed in the correct fields on the document. You can use four predefined document formats—blank paper, short form, long form, or other form.
 
->   *If you modified the sales document in Report Writer, your changes will not
->   appear when you print a posted document because a different report is used
->   to print posted documents.*
+> [!NOTE]
+> If you modified the sales document in Report Writer, your changes will not appear when you print a posted document because a different report is used to print posted documents.
 
->   **To print a posted document:**
+**To print a posted document:**
 
 1.  Open the Sales Order Processing Document Inquiry window.
+    (Sales \>\> Inquiry \>\> Sales Documents)
 
->   (Sales \>\> Inquiry \>\> Sales Documents)
-
-![](media/1f3c6e721c15591cadfa0cdcf29a05d9.jpg)
+    ![](media/1f3c6e721c15591cadfa0cdcf29a05d9.jpg)
 
 1.  Select a sorting option or a range of documents.
 
 2.  Mark to include history and choose Redisplay.
 
-3.  Highlight a document and click on the Document Number link to open the Sales
-    Transaction Inquiry Zoom window.
+3.  Highlight a document and click on the Document Number link to open the Sales Transaction Inquiry Zoom window.
 
-4.  Choose File \>\> Print or the printer icon button to open the Sales Document
-    Print Options window.
+4.  Choose File \>\> Print or the printer icon button to open the Sales Document Print Options window.
 
 5.  Select the document type, a sorting option, and the currency to print.
 
 6.  Mark the documents to include and the document formats to use.
 
-*To send a document in e-mail, the document format must be Blank Paper.*
+    > [!NOTE]
+    > To send a document in e-mail, the document format must be Blank Paper.
 
 1.  Select to print, send the document in e-mail, or both.
 
-2.  Mark to reprint or send previously printed or sent documents. You also can
-    choose to include kit components, and tax details.
+2.  Mark to reprint or send previously printed or sent documents. You also can choose to include kit components, and tax details.
 
-3.  Choose Print. Depending on the destination options you selected, the
-    document you've selected is printed, sent in e-mail, or both.
+3.  Choose Print. Depending on the destination options you selected, the document you've selected is printed, sent in e-mail, or both.
 
-### Setting up the sales quick print option
+#### Setting up the sales quick print option
 
->   You can use the sales quick print option to print a sales order or invoice
->   from the Sales Transaction Entry, Sales Order Fulfillment, or Sales
->   Transaction Inquiry windows using a keyboard shortcut. You must first set up
->   the option using the Quick Print Setup window.
+You can use the sales quick print option to print a sales order or invoice from the Sales Transaction Entry, Sales Order Fulfillment, or Sales Transaction Inquiry windows using a keyboard shortcut. You must first set up the option using the Quick Print Setup window.
 
->   **To set up the sales quick print option:**
+**To set up the sales quick print option:**
 
 1.  Open the Quick Print Setup window.
+    (Sales \>\> Transactions \>\> Sales Transaction Entry or Order Fulfillment \>\> Options \>\> Quick Print Setup)
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry or Order Fulfillment
->   \>\> Options \>\> Quick Print Setup)
-
-![](media/f4d2b7aebdd363a03e2e33aa38b818a2.jpg)
+    ![](media/f4d2b7aebdd363a03e2e33aa38b818a2.jpg)
 
 1.  Mark the documents, print options, and print destination.
 
 2.  Choose OK.
 
->   **To print using the sales quick print option:**
+**To print using the sales quick print option:**
 
-1.  Open the Sales Transaction Entry window (Sales \>\> Transactions \>\> Sales
-    Transaction Entry), the Sales Order Fulfillment window (Sales \>\>
-    Transactions \>\> Sales Order Fulfillment) or the Sales Transaction Inquiry
-    Zoom window (Sales \>\> Inquiry \>\> Sales Documents).
+1.  Open the Sales Transaction Entry window (Sales \>\> Transactions \>\> Sales Transaction Entry), the Sales Order Fulfillment window (Sales \>\> Transactions \>\> Sales Order Fulfillment), or the Sales Transaction Inquiry Zoom window (Sales \>\> Inquiry \>\> Sales Documents).
 
 2.  Enter or select the order or invoice you want to print.
 
->   If the order, fulfillment order, or invoice exceeds the customer’s credit
->   limit and you are using customer credit limit override workflow, the
->   document must be approved before you can print it. You can print a document
->   that doesn’t need approval.
+    If the order, fulfillment order, or invoice exceeds the customer’s credit limit and you are using customer credit limit override workflow, the document must be approved before you can print it. You can print a document that doesn’t need approval.
 
-1.  Choose CTRL+Q to print the document.
+3.  Choose CTRL+Q to print the document.
 
-### Print packing slips using the action pane
+#### Print packing slips using the action pane
 
->   You can print packing slips using the action pane for orders, fulfillment
->   orders, and invoices and include them in each shipment. A packing slip
->   displays the items and quantities included on an order or invoice. For more
->   information about packing slips, see *Packing slips and picking tickets
->   overview* on page 171.
+You can print packing slips using the action pane for orders, fulfillment orders, and invoices and include them in each shipment. A packing slip displays the items and quantities included on an order or invoice. For more information about packing slips, see *Packing slips and picking tickets overview* on page 171.
 
->   **To print packing slips using the action pane:**
+**To print packing slips using the action pane:**
 
 1.  In the navigation pane, choose the Sales button, and then choose the Sales
     Order Transactions list.
@@ -5134,70 +4404,41 @@ This information is divided into the following sections:
 
 5.  You can mark the following options.
 
->   **Print packing slip per site** Mark to print a packing slip for each site
->   on the document.
+    - **Print packing slip per site** Mark to print a packing slip for each site on the document.
+    - **Include item comments** Mark to print comments that were entered for items on a packing slip.
+    - **Include kit components** Mark to print kit components on the picking ticket.
 
->   **Include item comments** Mark to print comments that were entered for items
->   on a packing slip.
+6.  Print the packing slips.
 
->   **Include kit components** Mark to print kit components on the picking
->   ticket.
+#### Print picking tickets using the action pane
 
-1.  Print the packing slips.
+You can print picking tickets using the action pane for orders, fulfillment orders, invoices, and returns. Warehouse personnel use picking tickets when assembling the items for a shipment. For more information about picking tickets, see *Packing slips and picking tickets overview* on page 171.
 
-### Print picking tickets using the action pane
+**To print picking tickets using the action pane:**
 
->   You can print picking tickets using the action pane for orders, fulfillment
->   orders, invoices, and returns. Warehouse personnel use picking tickets when
->   assembling the items for a shipment. For more information about picking
->   tickets, see *Packing slips and picking tickets overview* on page 171.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
->   **To print picking tickets using the action pane:**
+2.  Mark the orders, fulfillment orders, returns, and invoices that you want to print picking tickets for.
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
-
-2.  Mark the orders, fulfillment orders, returns, and invoices that you want to
-    print picking tickets for.
-
-3.  In the Adv. Distribution group or Actions group, choose Print Picking
-    Ticket.
+3.  In the Adv. Distribution group or Actions group, choose Print Picking Ticket.
 
 4.  Select the document format.
 
 5.  You can mark the following options.
 
->   **Print separate picking ticket per site** Mark to print a picking ticket
->   for each site on the document.
+    - **Print separate picking ticket per site** Mark to print a picking ticket for each site on the document.
+    - **Include kit components** Mark to print kit components on the picking ticket.
+    - **Print bulk picking tickets** Mark to print bulk picking tickets. After marking this option, the Include Document Breakdown option and the For site ID option are available. The Print separate picking ticket per site option isn’t available for bulk picking tickets.
+    - **Include Document Breakdown** Mark to include the requested shipping date for the item, the document number, customer ID, picking quantity, unit of measure, line item detail, and customer ship-to address for the item on the bulk picking ticket.
+    - **For site ID:** Select the site ID to print picking tickets for.
 
->   **Include kit components** Mark to print kit components on the picking
->   ticket.
+6.  Print the picking tickets.
 
->   **Print bulk picking tickets** Mark to print bulk picking tickets. After
->   marking this option, the Include Document Breakdown option and the For site
->   ID option are available. The Print separate picking ticket per site option
->   isn’t available for bulk picking tickets.
+#### Printing bulk picking tickets
 
->   **Include Document Breakdown** Mark to include the requested shipping date
->   for the item, the document number, customer ID, picking quantity, unit of
->   measure, line item detail, and customer ship-to address for the item on the
->   bulk picking ticket.
+If you’re using advanced picking, use the Bulk Picking Print window to print bulk picking tickets. A bulk picking ticket includes the items and quantities for multiple fulfillment orders or invoices, along with the location of each item, a summary line for each item, and the total quantity required.
 
->   **For site ID:** Select the site ID to print picking tickets for.
-
-1.  Print the picking tickets.
-
-### Printing bulk picking tickets
-
->   If you’re using advanced picking, use the Bulk Picking Print window to print
->   bulk picking tickets. A bulk picking ticket includes the items and
->   quantities for multiple fulfillment orders or invoices, along with the
->   location of each item, a summary line for each item, and the total quantity
->   required.
-
->   You can print bulk picking tickets for items only when the following
->   conditions exist for the fulfillment orders and invoices that you are
->   printing a picking ticket for.
+You can print bulk picking tickets for items only when the following conditions exist for the fulfillment orders and invoices that you are printing a picking ticket for.
 
 -   The Enable Fulfillment Workflow option is marked for the type ID in the
     Sales Fulfillment Order/Invoice Setup window.
@@ -5212,97 +4453,59 @@ This information is divided into the following sections:
     orders/invoices must approved or the fulfillment orders/invoices must not
     need approval to print picking tickets.
 
->   **To print bulk picking tickets:**
+**To print bulk picking tickets:**
 
 1.  Open the Bulk Picking Print window.
+ (Sales \>\> Transactions \>\> Bulk Print)
 
->   (Sales \>\> Transactions \>\> Bulk Print)
+    ![](media/9fa04936d2f4a04c980395e3922bc7c3.jpg)
 
-![](media/9fa04936d2f4a04c980395e3922bc7c3.jpg)
+2.  Enter or select a batch ID and site ID to print picking tickets for.
 
-1.  Enter or select a batch ID and site ID to print picking tickets for.
+3.  You can mark the following options.
 
-2.  You can mark the following options.
+    - **Include Document Breakdown** Mark to include the requested shipping date for the item, the document number, customer ID, picking quantity, unit of measure, line item detail, and customer ship-to address for the item on the bulk picking ticket.
+    - **Print Picking Instructions** Mark to print the picking instructions for the item on the picking ticket.
+    - **Include Kit Components** Mark to print kit components on the picking ticket.
+    - **Include Incomplete Docs** If items from a document that has been marked Ship Complete Document in the Sales Customer Detail Entry window are to be partially shipped, you can choose to print the partial shipments on picking tickets. If this option isn’t marked, picking tickets won’t be printed for partially shipped documents. This option applies for documents that have unprinted picking tickets.
+    - **Print Back-Ordered Items** Mark this option to print back-ordered items on picking tickets.
 
->   **Include Document Breakdown** Mark to include the requested shipping date
->   for the item, the document number, customer ID, picking quantity, unit of
->   measure, line item detail, and customer ship-to address for the item on the
->   bulk picking ticket.
+1.  You can select to include all item numbers, or enter or select a range of item numbers. Picking tickets will be printed for only the selected items.
 
->   **Print Picking Instructions** Mark to print the picking instructions for
->   the item on the picking ticket.
+2.  Select one or more available picks and choose Insert. Picking tickets will be printed for the group of sales documents in the available pick.
 
->   **Include Kit Components** Mark to print kit components on the picking
->   ticket.
-
->   **Include Incomplete Docs** If items from a document that has been marked
->   Ship Complete Document in the Sales Customer Detail Entry window are to be
->   partially shipped, you can choose to print the partial shipments on picking
->   tickets. If this option isn’t marked, picking tickets won’t be printed for
->   partially shipped documents. This option applies for documents that have
->   unprinted picking tickets.
-
->   **Print Back-Ordered Items** Mark this option to print back-ordered items on
->   picking tickets.
-
-1.  You can select to include all item numbers, or enter or select a range of
-    item numbers. Picking tickets will be printed for only the selected items.
-
-2.  Select one or more available picks and choose Insert. Picking tickets will
-    be printed for the group of sales documents in the available pick.
-
-3.  Select one or more document statuses and choose Insert. Picking tickets will
-    be printed for sales documents that match the selected document statuses.
+3.  Select one or more document statuses and choose Insert. Picking tickets will be printed for sales documents that match the selected document statuses.
 
 4.  Choose Print.
 
 5.  Close the window.
 
->   **To print bulk picking tickets using the action pane:**
+**To print bulk picking tickets using the action pane:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
-2.  Mark the fulfillment orders and invoices that you want to print picking
-    tickets for.
+2.  Mark the fulfillment orders and invoices that you want to print picking tickets for.
 
 3.  In the Adv. Distribution group, choose Print Picking Ticket.
 
 4.  You can mark the following options.
 
->   **Include Kit Components** Mark to print kit components on the picking
->   ticket.
+    - **Include Kit Components** Mark to print kit components on the picking ticket.
+    - **Print bulk picking tickets** Mark to print bulk picking tickets. The Print separate picking ticket per site option isn’t available for bulk picking tickets.
+    - **Include Document Breakdown** Mark to include the requested shipping date for the item, the document number, customer ID, picking quantity, unit of measure, line item detail, and customer ship-to address for the item on the bulk picking ticket.
+    - **For site ID:** Select the site ID to print picking tickets for.
 
->   **Print bulk picking tickets** Mark to print bulk picking tickets. The Print
->   separate picking ticket per site option isn’t available for bulk picking
->   tickets.
-
->   **Include Document Breakdown** Mark to include the requested shipping date
->   for the item, the document number, customer ID, picking quantity, unit of
->   measure, line item detail, and customer ship-to address for the item on the
->   bulk picking ticket.
-
->   **For site ID:** Select the site ID to print picking tickets for.
-
-1.  Print the picking tickets.
+5.  Print the picking tickets.
 
 #### Printing a batch list
 
->   A batch list is a list of all transactions—quotes, orders, fulfillment
->   orders, invoices, back orders, and returns—in an unposted batch. You can
->   print a batch list to verify the transactions in the batch. You can print a
->   batch list from the Sales Batch Entry window or the Sales Transaction Entry
->   window if a batch ID is displayed.
+A batch list is a list of all transactions—quotes, orders, fulfillment orders, invoices, back orders, and returns—in an unposted batch. You can print a batch list to verify the transactions in the batch. You can print a batch list from the Sales Batch Entry window or the Sales Transaction Entry window if a batch ID is displayed.
 
->   **To print a batch list:**
+**To print a batch list:**
 
 1.  Open the Sales Document Print Options window.
-
->   (Sales \>\> Transactions \>\> Batches \>\> select a batch \>\> File \>\>
->   Print)
-
->   (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a
->   transaction \>\> File \>\> Print)
+    (Sales \>\> Transactions \>\> Batches \>\> select a batch \>\> File \>\> Print)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a transaction \>\> File \>\> Print)
 
 1.  Mark Batch List and choose Print.
 
@@ -5310,55 +4513,35 @@ This information is divided into the following sections:
 
 #### Printing shipping labels or COD tags
 
->   You can use the Mailing Labels window to print shipping labels for a range
->   of unposted transactions in Sales Order Processing. You can print labels for
->   orders and invoices and can select a range by batch, document ID, state, ZIP
->   or postal code, customer, or date.
+You can use the Mailing Labels window to print shipping labels for a range of unposted transactions in Sales Order Processing. You can print labels for orders and invoices and can select a range by batch, document ID, state, ZIP or postal code, customer, or date.
 
->   You also can print cash on delivery (COD) tags for a range of unposted
->   transactions in Sales Order Processing. An amount must be entered in the COD
->   amount field in the Sales Payment Entry window for a COD transaction.
+You also can print cash on delivery (COD) tags for a range of unposted transactions in Sales Order Processing. An amount must be entered in the COD amount field in the Sales Payment Entry window for a COD transaction.
 
->   **To print shipping labels or COD tags:**
+**To print shipping labels or COD tags:**
 
 1.  Open the Mailing Labels window.
+    (Administration \>\> Reports \>\> Company \>\> Mailing Labels)
 
->   (Administration \>\> Reports \>\> Company \>\> Mailing Labels)
+1.  Select Shipping Labels or COD Tags from the Reports list and choose New to open the Mailing Label Report Options window.
 
-1.  Select Shipping Labels or COD Tags from the Reports list and choose New to
-    open the Mailing Label Report Options window.
+    ![](media/211053782f13d6152df95d948f726c87.jpg)
 
-![](media/211053782f13d6152df95d948f726c87.jpg)
+1.  Enter an option name, select sorting options, enter restrictions, and mark printing options.
 
-1.  Enter an option name, select sorting options, enter restrictions, and mark
-    printing options.
+    If you’re printing shipping labels, mark a format to use, enter the number of copies to be printed, and mark which address should be used.
 
->   If you’re printing shipping labels, mark a format to use, enter the number
->   of copies to be printed, and mark which address should be used.
+    > [!NOTE]
+    > If you mark Laser, the labels will be printed two addresses across.
 
-*If you mark Laser, the labels will be printed two addresses across.*
-
-1.  Choose Destination to select a printing destination and choose Print. You
-    can save the report option and print it later from either the Mailing Labels
-    window or the Mailing Labels Report Options window.
+1.  Choose Destination to select a printing destination and choose Print. You can save the report option and print it later from either the Mailing Labels window or the Mailing Labels Report Options window.
 
 ### Chapter 25: Sales document maintenance
 
->   Before you transfer or post a document, you can modify the item, commission,
->   and total information. For example, you can change quantities, add items,
->   correct addresses, split commissions, or add freight charges. If the
->   document was entered in error, you can void or delete the document. You also
->   can assign a process hold to a document to prevent it from being processed
->   further.
+Before you transfer or post a document, you can modify the item, commission, and total information. For example, you can change quantities, add items, correct addresses, split commissions, or add freight charges. If the document was entered in error, you can void or delete the document. You also can assign a process hold to a document to prevent it from being processed further.
 
->   If you are entering transactions for customers who are part of a national
->   account, changing the hold or inactive status can be at an individual
->   customer level or across the national account. If you can’t enter a
->   transaction for a customer ID, check the status of the Apply Hold/Inactive
->   Status of Parent Across National Account option in the National Accounts
->   Maintenance window.
+If you are entering transactions for customers who are part of a national account, changing the hold or inactive status can be at an individual customer level or across the national account. If you can’t enter a transaction for a customer ID, check the status of the Apply Hold/Inactive Status of Parent Across National Account option in the National Accounts Maintenance window.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Modifying an existing sales document*
 
@@ -5394,79 +4577,49 @@ This information is divided into the following sections:
 
 #### Modifying an existing sales document
 
->   You can add items, delete items, or change item quantities on a sales
->   document. You also can increase the item quantity on items that have been
->   transferred.
+You can add items, delete items, or change item quantities on a sales document. You also can increase the item quantity on items that have been transferred.
 
->   *You can’t modify an invoice or return that has been posted. If you discover
->   a mistake after posting a document, you’ll need to enter a transaction to
->   reverse the original transaction. For example, enter a return to reverse an
->   invoice.*
+> [!NOTE]
+> You can’t modify an invoice or return that has been posted. If you discover a mistake after posting a document, you’ll need to enter a transaction to reverse the original transaction. For example, enter a return to reverse an invoice.
 
->   If you are using sales quote workflow or customer credit limit override
->   workflow, you can’t modify a quote, order, fulfillment order, or invoice
->   that is pending approval. You can modify a document that is pending approval
->   if you are the current approver of the document. You must resubmit a quote,
->   order, fulfillment order, or invoice after modifying an approved document or
->   a document that doesn’t need approval.
+If you are using sales quote workflow or customer credit limit override workflow, you can’t modify a quote, order, fulfillment order, or invoice that is pending approval. You can modify a document that is pending approval if you are the current approver of the document. You must resubmit a quote, order, fulfillment order, or invoice after modifying an approved document or a document that doesn’t need approval.
 
->   **To modify an existing sales document:**
+**To modify an existing sales document:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
 2.  Select a sales document to edit.
 
 3.  In the Modify group, choose Edit to open the Sales Transaction Entry window.
 
-4.  Highlight the item to change and enter the correct information. If documents
-    are set up to be allocated by document or batch, additional items entered on
-    the document after you have allocated the document will be allocated by line
-    and you must address each quantity shortage that arises.
+4.  Highlight the item to change and enter the correct information.
 
->   If you decrease a Quantity to Back Order or a Quantity Canceled on a
->   document, the item won’t be reallocated automatically. The Quantity Alert
->   icon will appear next to the quantity and you’ll have to allocate the
->   quantity again. For more information about allocation, see *Chapter 19,
->   “Allocating item quantities.”*
+    If documents are set up to be allocated by document or batch, additional items entered on the document after you have allocated the document will be allocated by line and you must address each quantity shortage that arises.
 
->   *To delete an item, highlight the item and choose Edit \>\> Delete Row. You
->   can’t delete an item that has been transferred to another document.*
+    If you decrease a Quantity to Back Order or a Quantity Canceled on a document, the item won’t be reallocated automatically. The Quantity Alert icon will appear next to the quantity and you’ll have to allocate the quantity again. For more information about allocation, see *Chapter 19, “Allocating item quantities.”*
+    > [!NOTE]
+    > To delete an item, highlight the item and choose Edit \>\> Delete Row. You can’t delete an item that has been transferred to another document.
 
 1.  Save the document.
 
->   You might have to resubmit a quote, if you are using sales quote workflow.
+You might have to resubmit a quote, if you are using sales quote workflow.
 
->   If the document exceeds the customer’s credit limit and you are using
->   customer credit limit override workflow, you can submit the document for
->   approval.
+If the document exceeds the customer’s credit limit and you are using customer credit limit override workflow, you can submit the document for approval.
 
 #### Adding a comment to sales documents
 
->   You can add comments to sales documents—quotes, orders, back orders,
->   invoices, or returns—or to individual line items on a sales document. These
->   comments can be printed on sales documents, including picking tickets and
->   packing slips. Comments can be predefined on a company-wide basis, and used
->   on Sales Order Processing, Invoicing, or Purchase Order Processing
->   documents. You can enter the ID of a predefined comment in the Sales
->   Transaction Entry or Sales Item Detail Entry windows.
+You can add comments to sales documents—quotes, orders, back orders, invoices, or returns—or to individual line items on a sales document. These comments can be printed on sales documents, including picking tickets and packing slips. Comments can be predefined on a company-wide basis, and used on Sales Order Processing, Invoicing, or Purchase Order Processing documents. You can enter the ID of a predefined comment in the Sales Transaction Entry or Sales Item Detail Entry windows.
 
->   *You can enter up to 200 characters, which will appear on the sales document
->   as four lines of 50 characters each. If you want longer comments to appear,
->   use Report Writer to modify the document layout.*
+> [!NOTE]
+> You can enter up to 200 characters, which will appear on the sales document as four lines of 50 characters each. If you want longer comments to appear, use Report Writer to modify the document layout.
 
->   You can create new comments while you are entering transactions. You can
->   also create custom comments for a particular document or line item, or
->   modify existing comments. One-time comments or modified comments won’t be
->   available for other documents or line items.
+You can create new comments while you are entering transactions. You can also create custom comments for a particular document or line item, or modify existing comments. One-time comments or modified comments won’t be available for other documents or line items.
 
->   **To create a new comment:**
+**To create a new comment:**
 
-1.  In the Sales Transaction Entry window or the Sales Item Detail Entry window,
-    enter a new Comment ID, then press TAB.
+1.  In the Sales Transaction Entry window or the Sales Item Detail Entry window, enter a new Comment ID, then press TAB.
 
-2.  A message will ask if you want to add this comment ID. Choose Add to display
-    the Comment Setup window.
+2.  A message will ask if you want to add this comment ID. Choose Add to display the Comment Setup window.
 
 3.  Select the series this comment will be associated with.
 
@@ -5474,17 +4627,13 @@ This information is divided into the following sections:
 
 5.  Choose Save, then close the Comment Setup window.
 
->   **To create a one-time comment:**
+**To create a one-time comment:**
 
-1.  In the Sales Transaction Entry window or the Sales Item Detail Entry window,
-    choose the Comment ID expansion button to open the Sales Comment Entry
-    window.
+1.  In the Sales Transaction Entry window or the Sales Item Detail Entry window, choose the Comment ID expansion button to open the Sales Comment Entry window.
 
-![](media/5bc2ca83ac942ad4c89df9e0b4564a98.jpg)
+    ![](media/5bc2ca83ac942ad4c89df9e0b4564a98.jpg)
 
->   If the Comment ID field contained a value, you’ll be able to modify the
->   existing comment. If the Comment ID field was blank, you’ll be able to
->   create a new, one-time comment.
+    If the Comment ID field contained a value, you’ll be able to modify the existing comment. If the Comment ID field was blank, you’ll be able to create a new, one-time comment.
 
 1.  Enter the comment text.
 
@@ -5492,72 +4641,49 @@ This information is divided into the following sections:
 
 #### Changing a serial or lot number
 
->   You can verify or change the serial or lot number assigned to an item before
->   the sale is posted.
+You can verify or change the serial or lot number assigned to an item before the sale is posted.
 
->   **To change a serial or lot number:**
+**To change a serial or lot number:**
 
 1.  Open the Sales Transaction Entry window.
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
-
-1.  Select an item and choose the Quantity Fulfilled expansion button to open
-    the Sales Lot Number Entry window or Sales Serial Number Entry window.
-
->   You can also select an item, choose the item expansion button to open the
->   Sales Item Detail Entry window and choose Serial/Lot.
+1.  Select an item and choose the Quantity Fulfilled expansion button to open the Sales Lot Number Entry window or Sales Serial Number Entry window. You can also select an item, choose the item expansion button to open the Sales Item Detail Entry window and choose Serial/Lot.
 
 1.  Select the serial or lot number to change and choose Remove.
 
-2.  From the list of available serial or lot numbers, select one to use and
-    choose Insert.
+2.  From the list of available serial or lot numbers, select one to use and choose Insert. You can also enter a serial or lot number that hasn’t been entered. To do so, enter the number in the Serial Number or Lot Number field and choose Insert.
 
->   You can also enter a serial or lot number that hasn’t been entered. To do
->   so, enter the number in the Serial Number or Lot Number field and choose
->   Insert.
-
-*An icon appears in the Lot Number field if you select a lot number that has
-expired.*
+    > [!NOTE]
+    > An icon appears in the Lot Number field if you select a lot number that has
+expired.
 
 1.  Choose OK to save your changes and close the lot number or serial number
     entry window.
 
-2.  Save your changes and close the Sales Item Detail Entry window or the Sales
-    Transaction Entry window.
+2.  Save your changes and close the Sales Item Detail Entry window or the Sales Transaction Entry window.
 
 #### Changing bins in Sales Order Processing
 
->   If you’re using multiple bins, use the Bin Quantity Entry window to verify
->   or change bin allocations for items not tracked by serial or lot numbers.
->   For serial- or lot-numbered items, you can verify or change bins in the
->   Sales Serial Number Entry window or the Sales Lot Number Entry window. For
->   more information, see *Changing a serial or lot number* on page 191.
+If you’re using multiple bins, use the Bin Quantity Entry window to verify or change bin allocations for items not tracked by serial or lot numbers. For serial- or lot-numbered items, you can verify or change bins in the Sales Serial Number Entry window or the Sales Lot Number Entry window. For more information, see *Changing a serial or lot number* on page 191.
 
->   You can select more than one bin per site. For example, if the quantity
->   fulfilled is 20, you can select 15 from Site A, Bin 1 and 5 from Site A, Bin
->   2. You may be required to change bin selections manually if you change
->   quantities, the unit of measure, or the site after bins have been selected.
+You can select more than one bin per site. For example, if the quantity fulfilled is 20, you can select 15 from Site A, Bin 1 and 5 from Site A, Bin 2. You may be required to change bin selections manually if you change quantities, the unit of measure, or the site after bins have been selected.
 
->   **To change bins in Sales Order Processing:**
+**To change bins in Sales Order Processing:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Select an item and choose the Quantity Fulfilled expansion button. For items
-    not tracked by serial or lot numbers, the Bin Quantity Entry window will
-    open. For serial- or lot-numbered items, the Sales Serial Number Entry
-    window or Sales Lot Number Entry window will open.
+1.  Select an item and choose the Quantity Fulfilled expansion button.
 
->   You can also select an item and choose the item expansion button to open the
->   Sales Item Detail Entry window. Choose Bins for an item not tracked by
->   serial or lot numbers. For serial- or lot-numbered items also tracked in
->   bins, choose Serial/Lot.
+    For items not tracked by serial or lot numbers, the Bin Quantity Entry window will open. For serial- or lot-numbered items, the Sales Serial Number Entry window or Sales Lot Number Entry window will open.
+
+    You can also select an item and choose the item expansion button to open the Sales Item Detail Entry window. Choose Bins for an item not tracked by serial or lot numbers. For serial- or lot-numbered items also tracked in bins, choose Serial/Lot.
 
 1.  Select the bin you want to change and choose Remove.
 
-2.  From the list of available bins, select one to use. You can also enter a bin
-    that hasn’t been created yet.
+2.  From the list of available bins, select one to use. You can also enter a bin that hasn’t been created yet.
 
 3.  Enter a quantity for the item.
 
@@ -5565,115 +4691,78 @@ expired.*
 
 5.  Choose OK to save your changes and close the Bin Quantity Entry window.
 
-6.  Save your changes and close the Sales Item Detail Entry window or the Sales
-    Transaction Entry window.
+6.  Save your changes and close the Sales Item Detail Entry window or the Sales Transaction Entry window.
 
 #### Changing a kit component
 
->   Even though you assign components to a kit in the Item Kit Maintenance
->   window, you can change the components for a kit item on a specific document
->   in the Sales Kit Options window. If you’re using multiple bins, a kit’s
->   component items are assigned to bins, but the kit item itself is not.
+Even though you assign components to a kit in the Item Kit Maintenance window, you can change the components for a kit item on a specific document in the Sales Kit Options window. If you’re using multiple bins, a kit’s component items are assigned to bins, but the kit item itself is not.
 
->   **To change a kit component:**
+**To change a kit component:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Select the kit item, choose the item expansion button to open the Sales Item
-    Detail Entry window, and choose Kits to open the Sales Kit Options window.
+1.  Select the kit item, choose the item expansion button to open the Sales Item Detail Entry window, and choose Kits to open the Sales Kit Options window.
 
-![](media/cae2d011fcc46b3f27080d161b8edc1e.jpg)
+    ![](media/cae2d011fcc46b3f27080d161b8edc1e.jpg)
 
 1.  Add or delete components or change the quantities of the components.
 
-*To remove a component, select the component and choose Edit \>\> Delete Row.*
+    > [!NOTE]
+    > To remove a component, select the component and choose Edit \>\> Delete Row.
 
 1.  Choose OK to save the changes and close the window. Choose Save to close the
     Sales Item Detail Entry window.
 
 #### Advancing the document status of a fulfillment order
 
->   As you complete each step in your sales fulfillment workflow process, such
->   as printing picking tickets, picking items, and printing packing slips, you
->   should advance the document status for a fulfillment order to the next
->   tracked status. Use the Sales Transaction Entry window or the Sales Order
->   Fulfillment window to advance the document status of a fulfillment order.
+As you complete each step in your sales fulfillment workflow process, such as printing picking tickets, picking items, and printing packing slips, you should advance the document status for a fulfillment order to the next tracked status. Use the Sales Transaction Entry window or the Sales Order Fulfillment window to advance the document status of a fulfillment order.
 
->   For more information about the document statuses, refer to *Setting up
->   fulfillment workflow for sales* on page 46.
+For more information about the document statuses, refer to *Setting up fulfillment workflow for sales* on page 46.
 
->   **To advance the document status of a fulfillment order:**
+**To advance the document status of a fulfillment order:**
 
-1.  Open the Sales Transaction Entry window or the Sales Order Fulfillment
-    window.
+1. Open the Sales Transaction Entry window or the Sales Order Fulfillment window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry or Sales \>\>
->   Transactions \>\> Order Fulfillment)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry or Sales \>\> Transactions \>\> Order Fulfillment)
 
-1.  Enter or select a fulfillment order.
+2. Enter or select a fulfillment order.
 
-2.  If you’re tracking document Status 1, you can choose the printer button to
-    print the picking ticket and advance the document status from Status 1 to
-    the next document status that you’re tracking.
+3. If you’re tracking document Status 1, you can choose the printer button to print the picking ticket and advance the document status from Status 1 to the next document status that you’re tracking.
 
->   *You must print a bulk picking ticket before you can print an individual
->   picking ticket with one or more line items that print only on bulk picking
->   tickets.*
+    > [!NOTE]
+    > You must print a bulk picking ticket before you can print an individual picking ticket with one or more line items that print only on bulk picking tickets.
 
->   If you’re tracking document Status 2, you can choose Confirm \>\> Pick to
->   advance the document status from Status 2 to the next document status that
->   you’re tracking.
+    If you’re tracking document Status 2, you can choose Confirm \>\> Pick to advance the document status from Status 2 to the next document status that you’re tracking.
 
->   If you’re tracking document Status 3, you can choose the printer button to
->   print the packing slip and advance the document status from Status 3 to the
->   next document status that you’re tracking.
+    If you’re tracking document Status 3, you can choose the printer button to print the packing slip and advance the document status from Status 3 to the next document status that you’re tracking.
 
->   If you’re tracking document Status 4, you can choose Confirm \>\> Pack to
->   advance the document status from Status 4 to the next document status that
->   you’re tracking.
+    If you’re tracking document Status 4, you can choose Confirm \>\> Pack to advance the document status from Status 4 to the next document status that you’re tracking.
 
->   If you’re tracking document Status 5, you can choose Confirm \>\> Ship to
->   advance the document status from Status 5 to Status 6. The fulfillment order
->   will become an invoice.
+    If you’re tracking document Status 5, you can choose Confirm \>\> Ship to advance the document status from Status 5 to Status 6. The fulfillment order will become an invoice.
 
-1.  Choose Save.
+4. Choose Save.
 
 #### Advancing the document status of one or more fulfillment orders
 
->   Typically, a document status will advance to the next tracked status as you
->   complete each step in the sales fulfillment workflow process. Occasionally,
->   however, you might need to advance the status of a document outside of the
->   sales fulfillment workflow process.
+Typically, a document status will advance to the next tracked status as you complete each step in the sales fulfillment workflow process. Occasionally, however, you might need to advance the status of a document outside of the sales fulfillment workflow process.
 
->   For example, suppose you’re tracking all six document statuses and you
->   printed picking tickets for multiple fulfillment orders. The delivery truck
->   arrives early to pick up the orders, so you pack the picking tickets and
->   send them with the orders. You can advance the document status for multiple
->   documents from 2 to 5, one status at a time, to update the fulfillment order
->   document status.
+For example, suppose you’re tracking all six document statuses and you printed picking tickets for multiple fulfillment orders. The delivery truck arrives early to pick up the orders, so you pack the picking tickets and send them with the orders. You can advance the document status for multiple documents from 2 to 5, one status at a time, to update the fulfillment order document status.
 
->   Use the Sales Bulk Confirmation window to advance the status of one or more
->   fulfillment orders to Status 3, 4, 5, or 6.
+Use the Sales Bulk Confirmation window to advance the status of one or more fulfillment orders to Status 3, 4, 5, or 6.
 
->   If you are using customer credit limit override workflow, the fulfillment
->   orders must be approved or the fulfillment order must not need approval to
->   advance the document status. You can advance the document status if the
->   fulfillment order is pending approval and you are the current approver of
->   the order.
+If you are using customer credit limit override workflow, the fulfillment orders must be approved or the fulfillment order must not need approval to advance the document status. You can advance the document status if the fulfillment order is pending approval and you are the current approver of the order.
 
->   **To advance the document status of one or more fulfillment orders:**
+**To advance the document status of one or more fulfillment orders:**
 
-1.  Open the Sales Bulk Confirmation window.
+1. Open the Sales Bulk Confirmation window.
 
->   (Sales \>\> Transactions \>\> Bulk Confirmation)
+    (Sales \>\> Transactions \>\> Bulk Confirmation)
 
-![](media/fd57071f5dd6346438b0baa79d01f7d8.jpg)
+    ![](media/fd57071f5dd6346438b0baa79d01f7d8.jpg)
 
-1.  Select the action to complete. The actions available will depend on the
-    statuses you selected to track in the Sales Fulfillment Document Workflow
-    Setup window, and can include the following actions.
+2. Select the action to complete. The actions available will depend on the statuses you selected to track in the Sales Fulfillment Document Workflow Setup window, and can include the following actions.
 
     -   Confirm Pick
 
@@ -5683,73 +4772,50 @@ expired.*
 
     -   Confirm Ship
 
-2.  To restrict the information displayed in this window, select the appropriate
-    option and enter or select the starting and ending ranges.
+3. To restrict the information displayed in this window, select the appropriate option and enter or select the starting and ending ranges.
 
-3.  Choose Redisplay. The documents that match your selections will be displayed
-    in the scrolling window.
+4. Choose Redisplay. The documents that match your selections will be displayed in the scrolling window.
 
-4.  Documents that are marked will be processed. You can unmark specific
-    documents or choose Unmark All.
+5. Documents that are marked will be processed. You can unmark specific documents or choose Unmark All.
 
-5.  To confirm pick, confirm pack, or confirm ship, choose Process. The document
-    status for the selected documents will be advanced to the next status
-    tracked.
+6. To confirm pick, confirm pack, or confirm ship, choose Process. The document status for the selected documents will be advanced to the next status tracked.
 
->   To print packing slips, choose the printer button.
+    To print packing slips, choose the printer button.
 
-1.  Close the window.
+7. Close the window.
 
 #### Assigning process holds to a document
 
->   You can assign process holds to individual documents. Process holds are
->   userdefined restrictions that control the processing of sales documents at
->   different stages of the sales cycle. You can use process holds to restrict
->   the transfer, fulfillment, printing, or posting of a document. Process holds
->   assigned to an order, invoice, or return also apply to the picking ticket
->   and packing slip associated with the document.
+You can assign process holds to individual documents. Process holds are userdefined restrictions that control the processing of sales documents at different stages of the sales cycle. You can use process holds to restrict the transfer, fulfillment, printing, or posting of a document. Process holds assigned to an order, invoice, or return also apply to the picking ticket and packing slip associated with the document.
 
->   If you are using sales quote workflow, you can’t apply a hold for a quote
->   that is pending approval.
+If you are using sales quote workflow, you can’t apply a hold for a quote that is pending approval.
+ If you are using customer credit limit override workflow, you can apply a hold to an order, fulfillment order, or invoice that doesn’t require approval or that has been approved. You can’t apply a hold for an order, fulfillment order, or invoice that is pending approval unless you can approve the document.
 
->   If you are using customer credit limit override workflow, you can apply a
->   hold to an order, fulfillment order, or invoice that doesn’t require
->   approval or that has been approved. You can’t apply a hold for an order,
->   fulfillment order, or invoice that is pending approval unless you can
->   approve the document.
+If you’re using sales fulfillment workflow, you also can use process holds to restrict the advancement of a document status of a fulfillment order.
 
->   If you’re using sales fulfillment workflow, you also can use process holds
->   to restrict the advancement of a document status of a fulfillment order.
+You must set up process holds in Sales Order Processing before they can be assigned to a document. For more information about setting up process holds, see *Setting up process holds* on page 22.
 
->   You must set up process holds in Sales Order Processing before they can be
->   assigned to a document. For more information about setting up process holds,
->   see *Setting up process holds* on page 22.
+A process hold also can be assigned to a document ID when you set it up. For more information about assigning process holds to a document ID, see *Assigning process holds to sales document IDs* on page 42.
 
->   A process hold also can be assigned to a document ID when you set it up. For
->   more information about assigning process holds to a document ID, see
->   *Assigning process holds to sales document IDs* on page 42.
-
->   **To assign process holds to a document:**
+**To assign process holds to a document:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Enter or select a document.
+2.  Enter or select a document.
 
-2.  Choose Holds to open the Sales Process Holds Entry window.
+3.  Choose Holds to open the Sales Process Holds Entry window.
 
-![](media/88f5b2af4bdb1a22d6a9a0c7315d192d.jpg)
+    ![](media/88f5b2af4bdb1a22d6a9a0c7315d192d.jpg)
 
-1.  Enter or select the process hold to assign to the document and choose
-    Assign. The process hold will be added to the Assigned Holds list.
+4.  Enter or select the process hold to assign to the document and choose Assign. The process hold will be added to the Assigned Holds list.
 
-2.  Choose OK to close the window.
+5.  Choose OK to close the window.
 
->   **To assign process holds from a document using the action pane:**
+**To assign process holds from a document using the action pane:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
 2.  Mark the document that you want to assign a hold.
 
@@ -5759,44 +4825,31 @@ expired.*
 
 #### Removing process holds from a document
 
->   If you have assigned a process hold to a sales document, you must remove it
->   before you can complete the processing. You can use process holds to
->   restrict the transfer, fulfillment, printing, or posting of a document.
+If you have assigned a process hold to a sales document, you must remove it before you can complete the processing. You can use process holds to restrict the transfer, fulfillment, printing, or posting of a document.
 
->   If you’re using sales fulfillment workflow, you also can use process holds
->   to restrict the advancement of a document status of a fulfillment order.
+If you’re using sales fulfillment workflow, you also can use process holds to restrict the advancement of a document status of a fulfillment order.
 
->   If you are using sales quote workflow, you can’t remove a hold for a quote
->   that is pending approval unless you are the current approver.
+If you are using sales quote workflow, you can’t remove a hold for a quote that is pending approval unless you are the current approver.
 
->   If you are using customer credit limit override workflow, you can remove a
->   hold to an order, fulfillment order, or invoice that doesn’t require
->   approval or that has been approved. You can’t remove a hold for an order,
->   fulfillment order, or invoice that is pending approval unless you can
->   approve the document.
+If you are using customer credit limit override workflow, you can remove a hold to an order, fulfillment order, or invoice that doesn’t require approval or that has been approved. You can’t remove a hold for an order, fulfillment order, or invoice that is pending approval unless you can approve the document.
 
->   **To remove process holds from a document:**
+**To remove process holds from a document:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 1.  Enter or select a document.
 
 2.  Choose Holds to open the Sales Process Holds Entry window.
 
-3.  In the Assigned Holds list, choose a process hold to remove and choose
-    Remove. This process hold will be added to the Removed Holds list in the
-    window.
+3.  In the Assigned Holds list, choose a process hold to remove and choose Remove. This process hold will be added to the Removed Holds list in the window.
 
-4.  Choose OK to close the window. A record of removal is stored with the
-    document, along with the user ID who removed the hold and the date and time
-    it was removed.
+4.  Choose OK to close the window. A record of removal is stored with the document, along with the user ID who removed the hold and the date and timeit was removed.
 
->   **To remove process holds from a document using the action pane:**
+**To remove process holds from a document using the action pane:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
 2.  Mark the document that you want to release from hold.
 
@@ -5808,107 +4861,73 @@ expired.*
 
 #### Assigning process holds to multiple documents
 
->   You can assign process holds to multiple sales documents. Process holds are
->   userdefined restrictions that control the processing of sales documents at
->   different stages of the sales cycle. You can use process holds to restrict
->   the transfer, fulfillment, printing, or posting of documents. If you’re
->   using sales fulfillment workflow, you also can use process holds to restrict
->   the advancement of a document status of a fulfillment order. Process holds
->   assigned to an order, fulfillment order, invoice, or return also apply to
->   the picking ticket and packing slip associated with the document.
+You can assign process holds to multiple sales documents. Process holds are userdefined restrictions that control the processing of sales documents at different stages of the sales cycle. You can use process holds to restrict the transfer, fulfillment, printing, or posting of documents. If you’re using sales fulfillment workflow, you also can use process holds to restrict the advancement of a document status of a fulfillment order. Process holds assigned to an order, fulfillment order, invoice, or return also apply to the picking ticket and packing slip associated with the document.
 
->   You must set up process holds in Sales Order Processing before they can be
->   assigned to a document. For more information about setting up process holds,
->   see *Setting up process holds* on page 22.
+You must set up process holds in Sales Order Processing before they can be assigned to a document. For more information about setting up process holds, see *Setting up process holds* on page 22.
 
->   A process hold also can be assigned to a document ID when you set it up. For
->   more information about assigning process holds to a document ID, see
->   *Assigning process holds to sales document IDs* on page 42.
+A process hold also can be assigned to a document ID when you set it up. For more information about assigning process holds to a document ID, see *Assigning process holds to sales document IDs* on page 42.
 
->   If you are using sales quote workflow, you can’t apply a hold to quotes that
->   are pending approval unless you are the current approver.
+If you are using sales quote workflow, you can’t apply a hold to quotes that are pending approval unless you are the current approver.
 
->   **To assign process holds to multiple documents:**
+**To assign process holds to multiple documents:**
 
 1.  Open the Sales Holds Processing window.
 
->   (Sales \>\> Transactions \>\> Holds Processing)
+    (Sales \>\> Transactions \>\> Holds Processing)
 
 1.  Enter or select a process hold.
 
 2.  Mark Assign.
 
-3.  Define a range restriction of documents to assign the hold to and choose
-    Insert.
+3.  Define a range restriction of documents to assign the hold to and choose Insert.
 
-4.  Choose Restrictions to view the range of the documents you’ve chosen. You
-    can remove an individual document from the range by unmarking Process for
-    the document.
+4.  Choose Restrictions to view the range of the documents you’ve chosen. You can remove an individual document from the range by unmarking Process for the document.
 
-5.  You can choose File \>\> Print or the printer icon button to print the Holds
-    Processing Preview report before processing the holds.
+5.  You can choose File \>\> Print or the printer icon button to print the Holds Processing Preview report before processing the holds.
 
 6.  Choose Process to assign the process hold.
 
 #### Removing process holds from multiple documents
 
->   If you have assigned a process hold to sales documents, you must remove it
->   before you can complete the processing. You can use process holds to
->   restrict the transfer, fulfillment, printing, or posting of documents.
+If you have assigned a process hold to sales documents, you must remove it before you can complete the processing. You can use process holds to restrict the transfer, fulfillment, printing, or posting of documents.
 
->   If you’re using sales fulfillment workflow, you also can use process holds
->   to restrict the advancement of a document status of a fulfillment order.
+If you’re using sales fulfillment workflow, you also can use process holds to restrict the advancement of a document status of a fulfillment order.
 
->   If you are using sales quote workflow, you can’t remove a hold to quotes
->   that are pending approval unless the current approver.
+If you are using sales quote workflow, you can’t remove a hold to quotes that are pending approval unless the current approver.
 
->   **To remove process holds from multiple documents:**
+**To remove process holds from multiple documents:**
 
 1.  Open the Sales Holds Processing window.
 
->   (Sales \>\> Transactions \>\> Holds Processing)
+    (Sales \>\> Transactions \>\> Holds Processing)
 
 1.  Enter or select a process hold.
 
 2.  Mark Remove.
 
-3.  Define a range restriction of documents to remove the hold from and choose
-    Insert.
+3.  Define a range restriction of documents to remove the hold from and choose Insert.
 
-4.  Choose Restrictions to view the range of the documents you’ve chosen. You
-    can remove an individual document from the range by unmarking Process for
-    the document.
+4.  Choose Restrictions to view the range of the documents you’ve chosen. You can remove an individual document from the range by unmarking Process for the document.
 
-5.  You can choose File \>\> Print or the printer icon button to print the Holds
-    Processing Preview report before processing the holds.
+5.  You can choose File \>\> Print or the printer icon button to print the Holds Processing Preview report before processing the holds.
 
 6.  Choose Process to remove the process hold.
 
->   A record of removal is stored with each document, along with the user ID of
->   the user who removed the hold and the date and time it was removed. You can
->   view this record in the Sales Process Holds Entry window.
+A record of removal is stored with each document, along with the user ID of the user who removed the hold and the date and time it was removed. You can view this record in the Sales Process Holds Entry window.
 
 #### Reversing the document status of fulfillment orders
 
->   If you’re using sales fulfillment workflow, use the Edit Sales Document
->   Status window to reverse the document status of fulfillment orders. You can
->   move the document status back one status at a time. For example, suppose you
->   printed a picking ticket for a customer order—but had not confirmed the
->   pick—and the customer called to add an item to the order. You could reverse
->   the document status from Status 2 to Status 1, and then continue with the
->   regular process. You cannot reverse a document status when the fulfillment
->   order document has become an invoice and the document status is Status 6.
+If you’re using sales fulfillment workflow, use the Edit Sales Document Status window to reverse the document status of fulfillment orders. You can move the document status back one status at a time. For example, suppose you printed a picking ticket for a customer order—but had not confirmed the pick—and the customer called to add an item to the order. You could reverse the document status from Status 2 to Status 1, and then continue with the regular process. You cannot reverse a document status when the fulfillment order document has become an invoice and the document status is Status 6.
 
->   Reversing document statuses does not back out quantity fulfilled or quantity
->   allocated values.
+Reversing document statuses does not back out quantity fulfilled or quantity allocated values.
 
->   **To reverse the document status of fulfillment orders:**
+**To reverse the document status of fulfillment orders:**
 
 1.  Open the Edit Sales Document Status window.
 
->   (Sales \>\> Utilities \>\> Edit Sales Status)
+    (Sales \>\> Utilities \>\> Edit Sales Status)
 
-![](media/995ff3e28c1ef606c18daa4f420905f3.jpg)
+    ![](media/995ff3e28c1ef606c18daa4f420905f3.jpg)
 
 1.  Select how to choose documents using the Documents field.
 
@@ -5916,167 +4935,122 @@ expired.*
 
 3.  Select the current document status to change from.
 
-4.  Choose Redisplay. Documents that match the criteria specified will be
-    displayed.
+4.  Choose Redisplay. Documents that match the criteria specified will be displayed.
 
-5.  Documents that are marked will be processed. You can unmark specific
-    documents or choose Unmark All.
+5.  Documents that are marked will be processed. You can unmark specific documents or choose Unmark All.
 
-6.  Choose the printer icon to print a report and view the documents that you’ve
-    selected to reverse statuses for.
+6.  Choose the printer icon to print a report and view the documents that you’ve selected to reverse statuses for.
 
 7.  Choose Process.
 
 #### Modifying commission information
 
->   Commission amounts on sales documents are calculated using the commission
->   information from the Salesperson Maintenance window. Commission amounts on
->   return documents will decrease the commissions payable to a salesperson.
+Commission amounts on sales documents are calculated using the commission information from the Salesperson Maintenance window. Commission amounts on return documents will decrease the commissions payable to a salesperson.
 
->   You can modify commission amounts, percentages, and commission sales amounts
->   on invoices and returns. The commission amounts will be posted when the
->   transaction is posted.
+You can modify commission amounts, percentages, and commission sales amounts on invoices and returns. The commission amounts will be posted when the transaction is posted.
 
->   You can modify the commission percent and percent of sale for a salesperson
->   on quotes, orders, and back orders. However, you can’t modify the commission
->   sales amount or commission amount.
+You can modify the commission percent and percent of sale for a salesperson on quotes, orders, and back orders. However, you can’t modify the commission sales amount or commission amount.
 
-*Commission amounts on these documents are recalculated when you transfer the
-document.*
+> [!NOTE]
+> Commission amounts on these documents are recalculated when you transfer the
+document.
 
->   **To modify commission information:**
+**To modify commission information:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
-1.  Enter or select a sales document. Choose Commissions to open the Sales
-    Commission Entry window.
+1.  Enter or select a sales document. Choose Commissions to open the Sales Commission Entry window.
 
 2.  Choose the hide and show button to expand the scrolling window.
 
-![](media/7eb06f579e45627b3f211b273c6d6f99.jpg)
+    ![](media/7eb06f579e45627b3f211b273c6d6f99.jpg)
 
-1.  Make your changes to the commission information. You also can enter or
-    select a different salesperson ID.
+1.  Make your changes to the commission information. You also can enter or select a different salesperson ID.
 
->   *To remove a commission distribution, select the line and choose Edit \>\>
->   Delete Row.*
+    > [!NOTE]
+    > To remove a commission distribution, select the line and choose Edit \>\> Delete Row.
 
->   If you increase the commission amount rather than the commission percentage,
->   the commission percentage will remain the same. This way, if you enter
->   another item, the salesperson will receive the regular commission percentage
->   on the next item.
+    If you increase the commission amount rather than the commission percentage, the commission percentage will remain the same. This way, if you enter another item, the salesperson will receive the regular commission percentage on the next item.
 
 1.  Choose OK to save changes and close the window.
 
 #### Splitting commissions
 
->   You can split the commission on invoices and returns between multiple
->   salespeople. Commission amounts on return documents will decrease the
->   commissions payable to a salesperson.
+You can split the commission on invoices and returns between multiple salespeople. Commission amounts on return documents will decrease the commissions payable to a salesperson.
 
->   You can add salespeople in the Sales Commission Entry window for quotes,
->   orders, and back orders. However, you can’t change the commission sales
->   amount or commission amount for salespeople.
+You can add salespeople in the Sales Commission Entry window for quotes, orders, and back orders. However, you can’t change the commission sales amount or commission amount for salespeople.
 
->   *The commission amounts on these documents are recalculated when you
->   transfer the document. If you added a salesperson, the new salesperson won’t
->   be transferred and must be entered again on the new document.*
+> [!NOTE]
+> The commission amounts on these documents are recalculated when you transfer the document. If you added a salesperson, the new salesperson won’t be transferred and must be entered again on the new document.
 
->   **To split commissions:**
+**To split commissions:**
 
 1.  Open the Sales Transaction Entry window.
-
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 1.  Enter or select a sales document.
 
-2.  Choose Commissions to open the Sales Commission Entry window. Choose the
-    hide and show button to expand the scrolling window.
+2.  Choose Commissions to open the Sales Commission Entry window. Choose the hide and show button to expand the scrolling window.
 
-![](media/7eb06f579e45627b3f211b273c6d6f99.jpg)
+    ![](media/7eb06f579e45627b3f211b273c6d6f99.jpg)
 
-1.  Change the Percent of Sale amount for the first salesperson listed to the
-    appropriate percentage.
+1.  Change the Percent of Sale amount for the first salesperson listed to the appropriate percentage.
 
-2.  In the next available line, enter or select an additional salesperson. Enter
-    an amount in the Percent of Sale and Commission Sale Amount fields for the
-    additional salesperson. The Commission amount will be calculated
-    automatically.
+2.  In the next available line, enter or select an additional salesperson. Enter an amount in the Percent of Sale and Commission Sale Amount fields for the additional salesperson. The Commission amount will be calculated automatically.
 
->   You don’t have to fully distribute a sale to individual salespeople; you can
->   distribute any amount, up to 100 percent of the sale.
+    You don’t have to fully distribute a sale to individual salespeople; you can distribute any amount, up to 100 percent of the sale.
 
 1.  Choose OK to save the changes and close the window.
 
 #### Voiding a document
 
->   You can void a sales document if the document ID is set up to allow voiding.
->   For more information about document IDs, see *Chapter 3, “Document setup.”*
+You can void a sales document if the document ID is set up to allow voiding. For more information about document IDs, see *Chapter 3, “Document setup.”*
 
->   If you void a document, the document number can’t be reused. If you have
->   marked to track voided documents in history, you can view the document after
->   it has been voided. By tracking voided documents, you’ll know why a document
->   number is missing or out of sequence for auditing and security purposes.
+If you void a document, the document number can’t be reused. If you have marked to track voided documents in history, you can view the document after it has been voided. By tracking voided documents, you’ll know why a document number is missing or out of sequence for auditing and security purposes.  
 
->   You can only void unposted documents. You must void a sales document—not
->   delete it—if the document has been printed (except for quotes) or if the
->   document has items that have been partially transferred.
+You can only void unposted documents. You must void a sales document—not delete it—if the document has been printed (except for quotes) or if the document has items that have been partially transferred.  
 
->   You can’t void documents with deposits, documents that have been posted, or
->   documents with line items linked to purchase orders. You can’t void quotes
->   that are pending approval or pending changes if you are using sales quote
->   workflow. You can’t void orders or invoices that are pending approval or
->   pending changes if you are using customer credit limit override workflow.
+You can’t void documents with deposits, documents that have been posted, or documents with line items linked to purchase orders. You can’t void quotes that are pending approval or pending changes if you are using sales quote workflow. You can’t void orders or invoices that are pending approval or pending changes if you are using customer credit limit override workflow.  
 
->   **To void a document:**
+**To void a document:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 1.  Enter or select the document number you want to void.
 
-2.  Choose Void. When you close the Sales Transaction Entry window, the Sales
-    Voided Journal may be printed, depending on how your system is set up.
+2.  Choose Void. When you close the Sales Transaction Entry window, the Sales Voided Journal may be printed, depending on how your system is set up.
 
 #### Deleting a document
 
->   You can delete a sales document if the document ID is set up to allow
->   deleting. For more information about document IDs, see *Chapter 3, “Document
->   setup.”*
+You can delete a sales document if the document ID is set up to allow deleting. For more information about document IDs, see *Chapter 3, “Document setup.”*
 
->   If you delete a document, the document number can be used again and the
->   document won’t be saved in history.
+If you delete a document, the document number can be used again and the document won’t be saved in history.
 
->   You can’t delete a sales document if any of the following conditions exist.
+You can’t delete a sales document if any of the following conditions exist.
 
--   The document has been printed (except for quotes). You must void documents
-    that have been printed.
+- The document has been printed (except for quotes). You must void documents that have been printed.
 
--   The document has items that have been partially transferred. You must void
-    the document.
+- The document has items that have been partially transferred. You must void the document.
 
--   The document is assigned to a batch that is marked for posting. You must
-    unmark the batch before you can delete the document.
+- The document is assigned to a batch that is marked for posting. You must unmark the batch before you can delete the document.
 
--   The document contains a posted deposit.
+- The document contains a posted deposit.
 
--   A line item is linked to a saved purchase order.
+- A line item is linked to a saved purchase order.
 
--   The quote must have a Workflow status of Not Submitted or Submitted if you
-    are using sales quote workflow.
+- The quote must have a Workflow status of Not Submitted or Submitted if you are using sales quote workflow.
 
--   The order, fulfillment order, or invoice must have a Workflow status of Not
-    Submitted or Submitted if you are using customer credit limit override
-    workflow.
+- The order, fulfillment order, or invoice must have a Workflow status of Not Submitted or Submitted if you are using customer credit limit override workflow.
 
->   **To delete a document:**
+**To delete a document:**
 
 1.  Open the Sales Transaction Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+    (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 1.  Enter or select the document number to delete.
 
@@ -6084,21 +5058,13 @@ document.*
 
 ### Chapter 26: Posting
 
->   Posting is the process of transferring unposted transactions to permanent
->   records and updating accounts with specific transaction amounts. When you
->   enter transactions, they are stored. Until transactions are posted, they can
->   be changed, voided, or deleted. When you post transactions in Sales Order
->   Processing, they are transferred to history and can’t be changed or voided.
+Posting is the process of transferring unposted transactions to permanent records and updating accounts with specific transaction amounts. When you enter transactions, they are stored. Until transactions are posted, they can be changed, voided, or deleted. When you post transactions in Sales Order Processing, they are transferred to history and can’t be changed or voided.
 
->   Posting reports will be printed when you post transactions, either
->   individually or in batches. For more information about posting reports for
->   Sales Order Processing, refer to *Sales Order Processing report summary* on
->   page 231.
+Posting reports will be printed when you post transactions, either individually or in batches. For more information about posting reports for Sales Order Processing, refer to *Sales Order Processing report summary* on page 231.
 
->   For more information about setting up posting, see the System Setup Guide
->   (Help \>\> Contents \>\> select Setting up the System).
+For more information about setting up posting, see the System Setup Guide (Help \>\> Contents \>\> select Setting up the System).
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Posting overview for Sales Order Processing*
 
@@ -6108,74 +5074,48 @@ document.*
 
 #### Posting overview for Sales Order Processing
 
->   When you post a batch in Sales Order Processing, the invoices and returns
->   are posted, moved to history and removed from the batch. Quotes, orders, or
->   back orders will remain in batches until you void, delete, or transfer them
->   to another document.
+When you post a batch in Sales Order Processing, the invoices and returns are posted, moved to history and removed from the batch. Quotes, orders, or back orders will remain in batches until you void, delete, or transfer them to another document.
 
->   When you post an invoice or return in Sales Order Processing, the following
->   transactions and records will be updated:
+When you post an invoice or return in Sales Order Processing, the following transactions and records will be updated:
 
 -   Inventory quantities will be adjusted for the items sold or returned.
 
--   If you’re using multiple bins, the item’s on-hand quantity and allocated
-    quantity decrease in each bin at the site when you post an invoice.
+-   If you’re using multiple bins, the item’s on-hand quantity and allocated quantity decrease in each bin at the site when you post an invoice.
 
--   If you’re using multiple bins and you post a return, bin quantities increase
-    by the quantity specified in the Sales Returned Quantities Entry window.
+-   If you’re using multiple bins and you post a return, bin quantities increase by the quantity specified in the Sales Returned Quantities Entry window.
 
--   The customer balance and salesperson commission will be updated in
-    Receivables Management. A transaction will be added in Receivables
-    Management so you can apply payments to the documents.
+-   The customer balance and salesperson commission will be updated in Receivables Management. A transaction will be added in Receivables Management so you can apply payments to the documents.
 
 -   Sales tax records will be updated for the transaction.
 
--   If you’re using Bank Reconciliation, your checkbook will be updated if the
-    transaction has an amount received or returned.
+-   If you’re using Bank Reconciliation, your checkbook will be updated if the transaction has an amount received or returned.
 
--   Transactions will be posted to or through General Ledger, depending on how
-    your system is set up. For more information about setting up posting
-    options, see the System Setup instructions (Help \>\> Contents \>\> select
-    Setting up the System).
+-   Transactions will be posted to or through General Ledger, depending on how your system is set up. For more information about setting up posting options, see the System Setup instructions (Help \>\> Contents \>\> select Setting up the System).
 
->   *National accounts provide the ability to restrict payments for child
->   customers and apply credit checking, holds and finance charges at a
->   consolidated national account level, depending on how the account was set
->   up. If you can’t save or post a transaction, check the status of the options
->   in the National Accounts Maintenance window.*
+> [!NOTE]
+> National accounts provide the ability to restrict payments for child customers and apply credit checking, holds and finance charges at a consolidated national account level, depending on how the account was set up. If you can’t save or post a transaction, check the status of the options in the National Accounts Maintenance window.
 
 #### Posting a single transaction
 
-After you enter a sales invoice or return, you can post the document or save it
-to a batch. For more information about entering invoices or returns, see
-*Entering an invoice* on page 93 or *Entering a return* on page 104. You must
-approve invoices that exceeded the customer’s credit limit if you are using
-customer credit limit override workflow.
+After you enter a sales invoice or return, you can post the document or save it to a batch. For more information about entering invoices or returns, see *Entering an invoice* on page 93 or *Entering a return* on page 104. You must approve invoices that exceeded the customer’s credit limit if you are usingcustomer credit limit override workflow.
 
->   **To post a single transaction:**
+**To post a single transaction:**
 
-1.  Open the Sales Transaction Entry window.
+1. Open the Sales Transaction Entry window.
+ (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
->   (Sales \>\> Transactions \>\> Sales Transaction Entry)
+2. Select or enter the sales transaction information. To enter and post a single transaction, don’t enter a batch ID. If you select an existing transaction, clear the Batch ID field.
 
-1.  Select or enter the sales transaction information. To enter and post a
-    single transaction, don’t enter a batch ID. If you select an existing
-    transaction, clear the Batch ID field.
+3. Choose Post to post the transaction.
 
-2.  Choose Post to post the transaction.
+4. Close the window and select which posting reports to print.
 
-3.  Close the window and select which posting reports to print.
-
->   *When transactions are posted using transaction-level posting, the batch
->   control fields on the posting journal always contain zero amounts. The
->   transactions have been posted, however, even though zeros are displayed. If
->   the transactions hadn’t been posted, a message would appear on the posting
->   journal.*
+> [!NOTE]
+> When transactions are posted using transaction-level posting, the batch control fields on the posting journal always contain zero amounts. The transactions have been posted, however, even though zeros are displayed. If the transactions hadn’t been posted, a message would appear on the posting journal.
 
 **To post a single transaction using the action pane:**
 
-1.  In the navigation pane, choose the Sales button, and then choose the Sales
-    Order Transactions list.
+1.  In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
 2.  Mark the invoice or return that you want to post.
 
@@ -6185,88 +5125,50 @@ customer credit limit override workflow.
 
 #### Posting a single batch
 
-Batch-level posting is one method of posting transactions. Within batch- level
-posting, there are three types—batch, series, and master. The only difference
-among these posting types is the number and types of batches you post at once.
-Batch and series posting are explained in the following procedures. For
-information about master posting, refer to the System User’s Guide (Help \>\>
-Contents \>\> select Using the System).
+Batch-level posting is one method of posting transactions. Within batch- level posting, there are three types—batch, series, and master. The only difference among these posting types is the number and types of batches you post at once.
 
-You can use the Sales Batch Entry window to post a single batch. More than one
-person can enter transactions in the same batch; however, a batch can’t be
-posted if anyone is making changes to it.
+Batch and series posting are explained in the following procedures. For information about master posting, refer to the System User’s Guide (Help \>\> Contents \>\> select Using the System).
 
->   When you post a batch, your Receivables Management records will be updated
->   to reflect the information from the transactions. Your General Ledger
->   accounts will be updated, depending on your posting setup selections.
+You can use the Sales Batch Entry window to post a single batch. More than one person can enter transactions in the same batch; however, a batch can’t be posted if anyone is making changes to it.
+ When you post a batch, your Receivables Management records will be updated to reflect the information from the transactions. Your General Ledger accounts will be updated, depending on your posting setup selections.
 
--   If your system is set up to post to General Ledger, the batch will appear in
-    the Financial Series Posting and Master Posting windows. You can edit the
-    transactions in the General Ledger Transaction Entry window before posting
-    them again. Your accounts will be updated when you post the transactions in
-    General Ledger.
+-   If your system is set up to post to General Ledger, the batch will appear in the Financial Series Posting and Master Posting windows. You can edit the transactions in the General Ledger Transaction Entry window before posting them again. Your accounts will be updated when you post the transactions in General Ledger.
 
--   If your system is set up to post through General Ledger, your accounts will
-    be updated at once and you won’t need to post the batch again in General
-    Ledger.
+-   If your system is set up to post through General Ledger, your accounts will be updated at once and you won’t need to post the batch again in General Ledger.
 
->   *If there are batch total or batch approval requirements in Sales Order
->   Processing and you post a batch through General Ledger, the batch will be
->   posted through General Ledger regardless of the batch requirements in
->   General Ledger.*
+    > [!NOTE]
+    > If there are batch total or batch approval requirements in Sales Order Processing and you post a batch through General Ledger, the batch will be posted through General Ledger regardless of the batch requirements in General Ledger.
 
->   Before you post a batch you should:
+Before you post a batch you should:
 
--   Print an edit list and review the transactions in the batch. When you choose
-    to print an edit list, the Sales Document Print Options window opens where
-    you select to print an edit list. If you need to make corrections to the
-    transactions or the batch, do so at this time. For more information about
-    printing an edit list, see the System Setup Guide (Help \>\> Contents \>\>
-    select Setting up the System).
+-   Print an edit list and review the transactions in the batch. When you choose to print an edit list, the Sales Document Print Options window opens where you select to print an edit list. If you need to make corrections to the transactions or the batch, do so at this time. For more information about printing an edit list, see the System Setup Guide (Help \>\> Contents \>\> select Setting up the System).
 
--   Make a backup of your company’s data. Refer to the System Administrator’s
-    Guide (Help \>\> Contents \>\> select System Administration) for more
-    information about making backups.
+-   Make a backup of your company’s data. Refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
--   Approve invoices that exceeded the customer’s credit limit if you are using
-    customer credit limit override workflow.
+-   Approve invoices that exceeded the customer’s credit limit if you are using customer credit limit override workflow.
 
->   **To post a single batch:**
+**To post a single batch:**
 
-1.  Open the Sales Batch Entry window.
+1. Open the Sales Batch Entry window.
 
->   (Sales \>\> Transactions \>\> Sales Batches)
+    (Sales \>\> Transactions \>\> Sales Batches)
 
-1.  Enter or select the batch ID and origin for the batch.
+2. Enter or select the batch ID and origin for the batch.
 
-2.  Approve the batch for posting, if required. Once approved, a batch can’t be
-    edited unless you unmark Approved.
+3. Approve the batch for posting, if required. Once approved, a batch can’t be edited unless you unmark Approved.
 
->   *Once a batch containing recurring documents has been posted, the status
->   automatically will become Unapproved. If you want to post the recurring
->   documents again, you must approve the batch again before posting it.*
+    > [!NOTE]
+    > Once a batch containing recurring documents has been posted, the status automatically will become Unapproved. If you want to post the recurring documents again, you must approve the batch again before posting it.
 
-1.  Choose Post. One or more posting journals will be printed, depending on how
-    your system is set up. A Report Destination window might appear for each
-    posting journal that is printed.
+4. Choose Post. One or more posting journals will be printed, depending on how your system is set up. A Report Destination window might appear for each posting journal that is printed.
 
->   If you’re verifying batch totals and post a batch that contains erroneous
->   transactions, the control totals will be adjusted to reflect the
->   transactions that weren’t posted. Any transactions that contain errors will
->   remain in the batch after posting is complete. The actual number of
->   transactions in the batch will be recalculated and the control total will
->   become zero. After you’ve corrected the transaction, you’ll need to enter a
->   new control total and post again.
+If you’re verifying batch totals and post a batch that contains erroneous transactions, the control totals will be adjusted to reflect the transactions that weren’t posted. Any transactions that contain errors will remain in the batch after posting is complete. The actual number of transactions in the batch will be recalculated and the control total will become zero. After you’ve corrected the transaction, you’ll need to enter a new control total and post again.
 
 ### Chapter 27: Transferring documents
 
->   You can transfer customer and item information from an existing document to
->   a newly created document of another type. For example, if a customer decides
->   to place an order based on a quote you provided, you can transfer the
->   information from the existing quote to a new order. You don’t have to
->   reenter the information.
+You can transfer customer and item information from an existing document to a newly created document of another type. For example, if a customer decides to place an order based on a quote you provided, you can transfer the information from the existing quote to a new order. You don’t have to reenter the information.
 
->   The following document types can be transferred:
+The following document types can be transferred:
 
 | **Document type**  | **Transfer to**          |
 |--------------------|--------------------------|
@@ -6276,7 +5178,7 @@ posted if anyone is making changes to it.
 | Invoices           | Back orders              |
 | Back orders        | Orders and invoices      |
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Multicurrency and transfers*
 
@@ -6296,184 +5198,86 @@ posted if anyone is making changes to it.
 
 #### Multicurrency and transfers
 
->   If Sales Order Processing is set up to search for new exchange rates during
->   transfer, the system will use the exchange rate table to determine if a
->   valid exchange rate is available.
+If Sales Order Processing is set up to search for new exchange rates during transfer, the system will use the exchange rate table to determine if a valid exchange rate is available.
 
->   If Sales Order Processing is not set up to search for new rates, the
->   existing exchange rate for the document will be used when it is transferred.
+If Sales Order Processing is not set up to search for new rates, the existing exchange rate for the document will be used when it is transferred.
 
->   Regardless of how Sales Order Processing was set up, the document date of
->   the new document will be compared to the expiration date of the exchange
->   rate. If you’re transferring the document to an invoice, the posting date
->   also will be compared to the expiration date of the exchange rate. If a
->   valid exchange rate can’t be found or if the rate has expired, you can still
->   transfer the document but the transaction can’t be posted until you enter a
->   valid exchange rate. A message regarding the expired rate will appear on the
->   Sales Transfer Log.
+Regardless of how Sales Order Processing was set up, the document date of the new document will be compared to the expiration date of the exchange rate. If you’re transferring the document to an invoice, the posting date also will be compared to the expiration date of the exchange rate. If a valid exchange rate can’t be found or if the rate has expired, you can still transfer the document but the transaction can’t be posted until you enter a valid exchange rate. A message regarding the expired rate will appear on the Sales Transfer Log.
 
->   The only exceptions to this setup option is if the document has a deposit,
->   the system won’t search for a new rate, regardless of how Sales Order
->   Processing is set up. If the exchange rate has expired, you still can
->   transfer the document and the date for the exchange rate will be set to
->   00/00/00. This allows you to post the transaction to General Ledger and
->   Sales Order Processing.
+The only exceptions to this setup option is if the document has a deposit, the system won’t search for a new rate, regardless of how Sales Order Processing is set up. If the exchange rate has expired, you still can transfer the document and the date for the exchange rate will be set to 00/00/00. This allows you to post the transaction to General Ledger and Sales Order Processing.
 
 #### Transfers and setup
 
->   When you transfer a document in Sales Order Processing, several setup
->   options for the document type ID are verified to determine if the transfer
->   can be completed and whether the items on the document will be allocated and
->   fulfilled.
+When you transfer a document in Sales Order Processing, several setup options for the document type ID are verified to determine if the transfer can be completed and whether the items on the document will be allocated and fulfilled.
 
->   When you set up a type ID in Sales Order Processing setup for a quote,
->   order, fulfillment order, invoice, or back order, you can select the
->   document types and type IDs the document will be transferred to. You can
->   choose the document expansion button in the Sales Transaction Entry window
->   to check the document types that will be used when a document is
->   transferred.
+When you set up a type ID in Sales Order Processing setup for a quote, order, fulfillment order, invoice, or back order, you can select the document types and type IDs the document will be transferred to. You can choose the document expansion button in the Sales Transaction Entry window to check the document types that will be used when a document is transferred.
 
->   For example, if you set up a quote type and mark Transfer to Order and
->   Transfer to Invoice, you can transfer documents with that quote type to
->   invoices and orders. You also can select the order type and invoice type
->   used for the new documents. If you marked only Transfer to Invoice, you
->   can’t transfer the quote to an order.
+For example, if you set up a quote type and mark Transfer to Order and Transfer to Invoice, you can transfer documents with that quote type to invoices and orders. You also can select the order type and invoice type used for the new documents. If you marked only Transfer to Invoice, you can’t transfer the quote to an order.
 
->   The Allocate By fields for order and invoice types also is checked. If this
->   option is set to None, the item won’t be allocated on the original document.
->   When you transfer the document, the Allocate By option for the new document
->   type will be used to determine if the item should be allocated and checked
->   for shortages.
+The Allocate By fields for order and invoice types also is checked. If this option is set to None, the item won’t be allocated on the original document. When you transfer the document, the Allocate By option for the new document type will be used to determine if the item should be allocated and checked for shortages.
 
->   For more information about setting up type IDs, refer to *Chapter 3,
->   “Document setup.”*
+For more information about setting up type IDs, refer to *Chapter 3, “Document setup.”*
 
 #### Transferring totals, deposits, and payments
 
->   When you transfer a document, you can mark Include Totals and Deposits in
->   the Sales Transfer Entry window to transfer the deposits, freight, and
->   miscellaneous charges to the new document.
+When you transfer a document, you can mark Include Totals and Deposits in the Sales Transfer Entry window to transfer the deposits, freight, and miscellaneous charges to the new document.
+ **Deposits** If you receive a deposit before you ship an order, you can transfer the deposit to the invoice or back order. If you partially transfer the order, you can transfer more than one deposit. For example, you can enter a sales order and transfer a deposit and some of the items to an invoice. When you are ready to ship the remaining items, you can enter a second deposit and transfer the remaining items and the second received amount to a second invoice. You can’t transfer partial deposit amounts.
 
->   **Deposits** If you receive a deposit before you ship an order, you can
->   transfer the deposit to the invoice or back order. If you partially transfer
->   the order, you can transfer more than one deposit. For example, you can
->   enter a sales order and transfer a deposit and some of the items to an
->   invoice. When you are ready to ship the remaining items, you can enter a
->   second deposit and transfer the remaining items and the second received
->   amount to a second invoice. You can’t transfer partial deposit amounts.
+If you transfer all of the quantities on the document and don’t mark Include Totals and Deposits, the deposit will remain on the original document. You can’t transfer just the deposit. The only way to move just the deposit is to delete it on the order and enter it on the new document.
 
->   If you transfer all of the quantities on the document and don’t mark Include
->   Totals and Deposits, the deposit will remain on the original document. You
->   can’t transfer just the deposit. The only way to move just the deposit is to
->   delete it on the order and enter it on the new document.
+- **Payments** If you receive a credit card payment before you ship an order, you can transfer the payment to the invoice or back order. If you partially transfer the order, you can transfer more than one payment. For example, you can enter a sales order and transfer a payment and some of the items to an invoice. When you are ready to ship the remaining items, you can enter a second payment and transfer the remaining items and the second received amount to a second invoice.
+    Deposit amounts are considered before payments during transfer. Payments over the invoice amount will be partially transferred or not transferred at all. You can’t transfer a payment greater than the invoice amount.
+     Payments will be transferred regardless of whether you mark Include Totals and Deposits. You can’t transfer just the payment. The only way to move just the payment is to delete it on the order and enter it on the new document.
+- **Freight and miscellaneous charges** You can transfer freight and miscellaneous charges only once. If you transfer part of a document, the freight and miscellaneous charges will be transferred, as well. When you transfer the remaining line items, freight, and miscellaneous charges can’t be changed or transferred again.
+- **Taxes** Taxes will be calculated automatically as you enter items. If you make changes to the tax information in the Sales Tax Summary Entry window, the changes will be transferred to the new document if the document is transferred in full.
+    If the order is partially transferred, the taxes will be recalculated and any changes made to tax details will not be transferred to the new document. You must reenter the changes on the new back order or invoice created during the transfer.
+- **Trade discounts** Trade discounts are transferred differently depending on whether you offer a discount based on a percentage or amount.
 
->   **Payments** If you receive a credit card payment before you ship an order,
->   you can transfer the payment to the invoice or back order. If you partially
->   transfer the order, you can transfer more than one payment. For example, you
->   can enter a sales order and transfer a payment and some of the items to an
->   invoice. When you are ready to ship the remaining items, you can enter a
->   second payment and transfer the remaining items and the second received
->   amount to a second invoice.
-
->   Deposit amounts are considered before payments during transfer. Payments
->   over the invoice amount will be partially transferred or not transferred at
->   all. You can’t transfer a payment greater than the invoice amount.
-
->   Payments will be transferred regardless of whether you mark Include Totals
->   and Deposits. You can’t transfer just the payment. The only way to move just
->   the payment is to delete it on the order and enter it on the new document.
-
->   **Freight and miscellaneous charges** You can transfer freight and
->   miscellaneous charges only once. If you transfer part of a document, the
->   freight and miscellaneous charges will be transferred, as well. When you
->   transfer the remaining line items, freight, and miscellaneous charges can’t
->   be changed or transferred again.
-
->   **Taxes** Taxes will be calculated automatically as you enter items. If you
->   make changes to the tax information in the Sales Tax Summary Entry window,
->   the changes will be transferred to the new document if the document is
->   transferred in full.
-
->   If the order is partially transferred, the taxes will be recalculated and
->   any changes made to tax details will not be transferred to the new document.
->   You must reenter the changes on the new back order or invoice created during
->   the transfer.
-
->   **Trade discounts** Trade discounts are transferred differently depending on
->   whether you offer a discount based on a percentage or amount.
-
--   Trade discounts based on a percentage of the total are transferred each time
+  - Trade discounts based on a percentage of the total are transferred each time
     you transfer the document, regardless of the option to include totals.
 
--   Trade discounts based on a flat amount rather than a percentage of the total
-    are transferred only once if you’ve marked the option to include totals and
-    deposits.
+  - Trade discounts based on a flat amount rather than a percentage of the total are transferred only once if you’ve marked the option to include totals and deposits.
 
 #### Quantity transfers
 
->   When you choose Transfer in the Sales Transaction Entry or Sales Batch Entry
->   window, each document will be transferred to the transfer document types you
->   specified for the document type ID. The new documents will be created if you
->   entered quantities on the original document.
+When you choose Transfer in the Sales Transaction Entry or Sales Batch Entry window, each document will be transferred to the transfer document types you specified for the document type ID. The new documents will be created if you entered quantities on the original document.
 
->   For example, suppose you transfer a quote to both an invoice and an order.
->   The amount you entered for the Quantity to Order field on the quote becomes
->   the Quantity Ordered on the new order. The amount entered for the Quantity
->   to Invoice on the quote becomes the Invoice Quantity on the new invoice.
+For example, suppose you transfer a quote to both an invoice and an order. The amount you entered for the Quantity to Order field on the quote becomes the Quantity Ordered on the new order. The amount entered for the Quantity to Invoice on the quote becomes the Invoice Quantity on the new invoice.
 
-*The user date will be the document date for the new documents that are
-created.*
+> [!NOTE]
+> The user date will be the document date for the new documents that are created.
 
->   The following illustration shows how the order and invoice are created.
+The following example illustrateshow the order and invoice are created.
 
->   **New order**
-
->   Quantity ordered: 2
-
->   Quantity to invoice: 2
+**New order**
+ Quantity ordered: 2
+ Quantity to invoice: 2
 
 | **Original quote** |
 |--------------------|
 
+ Quantity quoted: 10
+ Quantity to invoice: 8
+ Quantity to order: 2
+ **New invoice**
+ Invoice quantity: 8
+ Billed quantity: 8
+ **Total quantity transfers**
+ You can transfer some or all of the quantities on a sales document. The following table describes what happens when you transfer all quantities on a document.
 
->   Quantity quoted: 10
-
->   Quantity to invoice: 8
-
->   Quantity to order: 2
-
->   **New invoice**
-
->   Invoice quantity: 8
-
->   Billed quantity: 8
-
->   **Total quantity transfers**
-
->   You can transfer some or all of the quantities on a sales document. The
->   following table describes what happens when you transfer all quantities on a
->   document.
-
-| **Type**    | **Action**                                                                                                                                                                                                                                                                                                                                                        |
-|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Quotes      | Individual quotes will be moved to history once the transfer is complete if you marked the option to maintain history in the Sales Order Processing Setup window. If you aren’t maintaining history, the quote will be deleted.                                                                                                                                   |
+| **Type**    | **Action**   |
+|-------------|--------------------------------|
+| Quotes      | Individual quotes will be moved to history once the transfer is complete if you marked the option to maintain history in the Sales Order Processing Setup window. If you aren’t maintaining history, the quote will be deleted.     |
 | Orders      | Individual orders will be moved to history once all of the lines items have been transferred if you marked the option to maintain history in the Sales Order Processing Setup window. If you aren’t maintaining history, the order will be deleted. Repeating orders are moved to history when the documents have been transferred the specified number of times. |
-| Back Orders | Individual back orders will be moved to history once all line items are transferred if you marked the option to maintain history in the Sales Order Processing Setup window. If you aren’t maintaining history, the back order will be deleted.                                                                                                                   |
+| Back Orders | Individual back orders will be moved to history once all line items are transferred if you marked the option to maintain history in the Sales Order Processing Setup window. If you aren’t maintaining history, the back order will be deleted.   |
 
->   Repeating quotes are moved to history when the documents have been
->   transferred the specified number of times.
+Repeating quotes are moved to history when the documents have been transferred the specified number of times.
 
->   **Partial quantity transfers**
+**Partial quantity transfers**
 
->   If you transfer only some of the line item quantities, the original document
->   won’t be removed and the amounts in the quantity fields in the original
->   document will be updated to reflect the transfer. In addition, the amount in
->   the Previously Invoiced field in the Sales Quantity Status window will be
->   updated for each line item.
+If you transfer only some of the line item quantities, the original document won’t be removed and the amounts in the quantity fields in the original document will be updated to reflect the transfer. In addition, the amount in the Previously Invoiced field in the Sales Quantity Status window will be updated for each line item.
 
->   For example, a customer orders 10 answering machines. He wants 6 this week
->   but can wait for the other 4. You enter the following amounts in the Sales
->   Transaction Entry window:
+For example, a customer orders 10 answering machines. He wants 6 this week but can wait for the other 4. You enter the following amounts in the Sales Transaction Entry window:
 
 -   Order Quantity 10
 
@@ -6481,8 +5285,7 @@ created.*
 
 -   Quantity to Back Order 4
 
->   After transferring the order to an invoice, the order has the remaining
->   quantities:
+After transferring the order to an invoice, the order has the remaining quantities:
 
 -   Order Quantity 10
 
@@ -6490,65 +5293,34 @@ created.*
 
 -   Quantity to Back Order 4
 
->   Even though the Order Quantity is still 10, the system tracks the quantities
->   that have been transferred and the quantity remaining to be transferred is
->   4.
+Even though the Order Quantity is still 10, the system tracks the quantities that have been transferred and the quantity remaining to be transferred is 4.
 
->   *Non-repeating quotes can be transferred only once. If you transfer some of
->   the line item quantities, the quote is moved to history and you won’t be
->   able to transfer the remaining quantities.*
+> [!NOTE]
+> Non-repeating quotes can be transferred only once. If you transfer some of the line item quantities, the quote is moved to history and you won’t be able to transfer the remaining quantities.
 
->   The line item information icon will appear next to the item because the
->   Quantity to Back Order of 4 hasn’t been transferred to a back order
->   document. You will need to cancel, back order, or invoice the remaining
->   quantities.
+The line item information icon will appear next to the item because the Quantity to Back Order of 4 hasn’t been transferred to a back order document. You will need to cancel, back order, or invoice the remaining quantities.
 
 ![](media/bf5ad5004255f3d9d53f1e62a814b499.jpg)
 
->   You can choose the line item information button to open the Sales Quantity
->   Status window and view information about the selected item, such as the
->   quantities remaining and quantities canceled. You can use the Sales Quantity
->   Status window to view the status of items if you’ve partially transferred a
->   document or need to know if the item has been allocated.
+You can choose the line item information button to open the Sales Quantity Status window and view information about the selected item, such as the quantities remaining and quantities canceled. You can use the Sales Quantity Status window to view the status of items if you’ve partially transferred a document or need to know if the item has been allocated.
 
->   Partial line item quantities aren’t transferred if the customer doesn’t
->   accept partial shipments. To allow partial shipments, unmark the Ship
->   Complete Document option in the Sales Customer Detail Entry window.
+Partial line item quantities aren’t transferred if the customer doesn’t accept partial shipments. To allow partial shipments, unmark the Ship Complete Document option in the Sales Customer Detail Entry window.
 
 #### Document attachments and transfers
 
->   When you choose Transfer in the Sales Transaction Entry or Sales Batch Entry
->   window, attachments assigned to a document will be transferred to the
->   transfer document types you specified for the document type ID. Attachments
->   assigned to line items of a document will be transferred to the line items
->   for the new document type.
+When you choose Transfer in the Sales Transaction Entry or Sales Batch Entry window, attachments assigned to a document will be transferred to the transfer document types you specified for the document type ID. Attachments assigned to line items of a document will be transferred to the line items for the new document type.
 
->   For example, a quote has two line items. The quote has an attachment and
->   each line item has an attachment. When you transfer the second line item of
->   the quote to an order, the attachment assigned to the quote is transferred
->   to the order and the attachment assigned to the second line item of the
->   quote is transferred to the line item of the order.
+For example, a quote has two line items. The quote has an attachment and each line item has an attachment. When you transfer the second line item of the quote to an order, the attachment assigned to the quote is transferred to the order and the attachment assigned to the second line item of the quote is transferred to the line item of the order.
 
->   When the first item from the quote is transferred to a different order, the
->   attachment assigned to the quote is transferred to the new order and the
->   attachment assigned to the first line item of the quote is transferred to
->   the line item of the new order
+When the first item from the quote is transferred to a different order, the attachment assigned to the quote is transferred to the new order and the attachment assigned to the first line item of the quote is transferred to the line item of the new order
 
 #### Transferring an individual sales document
 
->   Use the Sales Transfer Documents window to transfer item quantities from an
->   existing document to a newly created document of another type. You can
->   include totals and deposit information, which includes the freight and
->   miscellaneous charges, when the document is transferred.
+Use the Sales Transfer Documents window to transfer item quantities from an existing document to a newly created document of another type. You can include totals and deposit information, which includes the freight and miscellaneous charges, when the document is transferred.
 
->   If the exchange rate for a transaction has expired, you can’t post the new
->   document. You must enter or select a valid exchange rate for the document in
->   the Exchange
+If the exchange rate for a transaction has expired, you can’t post the new document. You must enter or select a valid exchange rate for the document in the Exchange Rate Maintenance window. For more information about exchange rates, see *Chapter 8, “Multicurrency transactions.”*
 
->   Rate Maintenance window. For more information about exchange rates, see
->   *Chapter 8, “Multicurrency transactions.”*
-
->   Before a you transfer a document, you must:
+Before a you transfer a document, you must:
 
 -   Verify that there are quantities to transfer to an order, invoice, or back
     order.
@@ -6558,29 +5330,15 @@ created.*
 
 -   Enter a batch ID for the document.
 
--   Approve the document, if required, if you are using sales quote workflow or
-    customer credit limit override workflow.
+-   Approve the document, if required, if you are using sales quote workflow or customer credit limit override workflow.
 
->   A document with partial quantities won’t be transferred if the Ship Complete
->   Document option is marked in the Sales Customer Detail Entry window. If a
->   document with the Ship Complete Document Option marked has a line item that
->   is discontinued and a quantity shortage is overridden, the quantity of the
->   line item that can’t be allocated will be cancelled when the batch is
->   transferred.
+A document with partial quantities won’t be transferred if the Ship Complete Document option is marked in the Sales Customer Detail Entry window. If a document with the Ship Complete Document Option marked has a line item that is discontinued and a quantity shortage is overridden, the quantity of the line item that can’t be allocated will be cancelled when the batch is transferred.
 
->   If you’re using multiple bins, quantities are allocated at a default sales
->   order fulfillment bin for sales line items. If you’re using multiple bins
->   and serial or lot numbers are assigned to an item on a transaction, the bins
->   for the selected serial or lot numbers will be assigned to the transaction
->   automatically.
+If you’re using multiple bins, quantities are allocated at a default sales order fulfillment bin for sales line items. If you’re using multiple bins and serial or lot numbers are assigned to an item on a transaction, the bins for the selected serial or lot numbers will be assigned to the transaction automatically.
 
->   If you’re using multiple bins and the default sales order fulfillment bin is
->   not found or has a quantity shortage, you will be required to select
->   additional bins. If you continue the transfer without selecting additional
->   bins, the line item’s quantity fulfilled will be adjusted to equal the total
->   quantity selected at the default bin.
+If you’re using multiple bins and the default sales order fulfillment bin is not found or has a quantity shortage, you will be required to select additional bins. If you continue the transfer without selecting additional bins, the line item’s quantity fulfilled will be adjusted to equal the total quantity selected at the default bin.
 
->   **To transfer an individual document:**
+**To transfer an individual document:**
 
 1.  In the navigation pane, choose the Sales button, and then choose the Sales
     Order Transactions list.
@@ -6590,171 +5348,101 @@ created.*
 3.  In the Actions group, choose Transfer to open the Sales Transfer Documents
     window.
 
-![](media/9c98534bbdccc6703841333b10880f4d.jpg)
+    ![](media/9c98534bbdccc6703841333b10880f4d.jpg)
 
-1.  Select transfer options. The transfer options are limited to the document
+4.  Select transfer options. The transfer options are limited to the document
     type that was displayed in the Sales Transaction Entry window.
 
-2.  Specify quantity shortage options. The default quantity shortage options in
-    the Sales Transfer Documents window will be used when transferring a single
-    document.
+5.  Specify quantity shortage options. The default quantity shortage options in the Sales Transfer Documents window will be used when transferring a single document.
 
->   *If you select Back Order All or Back Order Balance, the back order for
->   these quantities won’t be created when you transfer the original document.
->   You must open the new document and transfer the back ordered quantity to a
->   back order.*
+    > [!NOTE]
+    > If you select Back Order All or Back Order Balance, the back order for these quantities won’t be created when you transfer the original document. You must open the new document and transfer the back ordered quantity to a back order.
 
->   You also can select how to process item quantity shortages for kit items.
->   For more information about quantity shortage options, see *Chapter 19,
->   “Allocating item quantities.”*
+    You also can select how to process item quantity shortages for kit items. For more information about quantity shortage options, see *Chapter 19, “Allocating item quantities.”*
 
-1.  Choose Preview to open the Sales Preview Transfer Quantities window to view
-    the quantities that will be transferred to the different document types.
+6.  Choose Preview to open the Sales Preview Transfer Quantities window to view the quantities that will be transferred to the different document types.
 
-2.  Choose Transfer to transfer the document. The Sales Transfer Log will be
-    printed and any errors encountered during the transfer process can be
-    reviewed using this report. The newly created document will be displayed in
-    the Sales Transaction Entry window.
+7.  Choose Transfer to transfer the document. The Sales Transfer Log will be  prnted and any errors encountered during the transfer process can be reviewed using this report. The newly created document will be displayed in the Sales Transaction Entry window.
 
->   *If you are transferring a document for a customer who is part of a national
->   account, credit checking and hold or inactive status can be done at an
->   individual customer level or across the national account. If you can’t
->   transfer a document, check the status of the options in the National
->   Accounts Maintenance window.*
+> [!NOTE]
+> If you are transferring a document for a customer who is part of a national account, credit checking and hold or inactive status can be done at an individual customer level or across the national account. If you can’t transfer a document, check the status of the options in the National Accounts Maintenance window.
 
 #### Transferring a batch of sales documents
 
->   You can transfer an entire batch of documents to new documents using the
->   Sales Transfer Documents window. A batch can contain any combination of
->   quotes, orders, invoices, back orders, and returns. You can transfer one
->   type of document or all documents using this window. You can include totals
->   and deposit information, which includes freight and miscellaneous charges,
->   when the document is transferred.
+You can transfer an entire batch of documents to new documents using the Sales Transfer Documents window. A batch can contain any combination of quotes, orders, invoices, back orders, and returns. You can transfer one type of document or all documents using this window. You can include totals and deposit information, which includes freight and miscellaneous charges, when the document is transferred.
 
->   If you are using sales quote workflow, quotes must be approved or they won’t
->   be transferred. If you are using customer credit limit override workflow,
->   orders, fulfillment orders, and invoices must be approved or they won’t be
->   transferred. You can transfer documents that don’t need approval.
+If you are using sales quote workflow, quotes must be approved or they won’t be transferred. If you are using customer credit limit override workflow, orders, fulfillment orders, and invoices must be approved or they won’t be transferred. You can transfer documents that don’t need approval.
 
->   When you transfer a batch, the new documents will be stored in the same
->   batch as the original documents. You can transfer individual documents to a
->   new batch by choosing the Document Number expansion button to open the Sales
->   Document Detail Entry window and assigning a new batch ID. The documents
->   will be assigned to the new batch when the transfer is complete.
+When you transfer a batch, the new documents will be stored in the same batch as the original documents. You can transfer individual documents to a new batch by choosing the Document Number expansion button to open the Sales Document Detail Entry window and assigning a new batch ID. The documents will be assigned to the new batch when the transfer is complete.
 
->   The Customer Payment Summary Inquiry window and the Customer Summary window
->   will be updated immediately to reflect deposit amounts that are transferred
->   to invoices. Payment amounts won’t be updated until invoices are posted.
+The Customer Payment Summary Inquiry window and the Customer Summary window will be updated immediately to reflect deposit amounts that are transferred to invoices. Payment amounts won’t be updated until invoices are posted.
 
->   If the exchange rate for a transaction has expired, you can’t post the new
->   document. You must enter or select a valid exchange rate for the document in
->   the Exchange
+If the exchange rate for a transaction has expired, you can’t post the new document. You must enter or select a valid exchange rate for the document in the Exchange Rate Maintenance window. For more information about exchange rates, see *Chapter 8, “Multicurrency transactions.”*
 
->   Rate Maintenance window. For more information about exchange rates, see
->   *Chapter 8, “Multicurrency transactions.”*
+A document with partial quantities won’t be transferred if the Ship Complete Document option is marked in the Sales Customer Detail Entry window. If a document with the Ship Complete Document Option marked has a line item that is discontinued and the quantity shortage is overridden, the quantity of the line item that can’t be allocated will be cancelled when the batch is transferred.
 
->   A document with partial quantities won’t be transferred if the Ship Complete
->   Document option is marked in the Sales Customer Detail Entry window. If a
->   document with the Ship Complete Document Option marked has a line item that
->   is discontinued and the quantity shortage is overridden, the quantity of the
->   line item that can’t be allocated will be cancelled when the batch is
->   transferred.
+If you’re using multiple bins, quantities are allocated at a default sales order fulfillment bin for sales line items. If a default sales order fulfillment bin is not found, quantities will not be automatically allocated at a bin, and the line item will have a quantity fulfilled of zero. The transfer will continue and the Sales Transfer Log will indicate that bins must be manually selected.
 
->   If you’re using multiple bins, quantities are allocated at a default sales
->   order fulfillment bin for sales line items. If a default sales order
->   fulfillment bin is not found, quantities will not be automatically allocated
->   at a bin, and the line item will have a quantity fulfilled of zero. The
->   transfer will continue and the Sales Transfer Log will indicate that bins
->   must be manually selected.
+If you’re using multiple bins and serial or lot numbers are assigned to an item on a transaction, the bins for the selected serial or lot numbers will be assigned to the transaction automatically.
 
->   If you’re using multiple bins and serial or lot numbers are assigned to an
->   item on a transaction, the bins for the selected serial or lot numbers will
->   be assigned to the transaction automatically.
+> [!NOTE]
+> If you are transferring documents for customers who are part of a national account, credit checking and hold or inactive status can be done at an individual customer level or across the national account. If you can’t transfer a document, check the status of the options in the National Accounts Maintenance window.
 
->   *If you are transferring documents for customers who are part of a national
->   account, credit checking and hold or inactive status can be done at an
->   individual customer level or across the national account. If you can’t
->   transfer a document, check the status of the options in the National
->   Accounts Maintenance window.*
-
->   **To transfer a batch of sales documents:**
+**To transfer a batch of sales documents:**
 
 1.  Open the Sales Batch Entry window.
+    (Sales \>\> Transactions \>\> Sales Batches)
 
->   (Sales \>\> Transactions \>\> Sales Batches)
-
-1.  Select a batch to transfer and choose Transfer. The Sales Transfer Documents
+2.  Select a batch to transfer and choose Transfer. The Sales Transfer Documents
     window will open.
 
-![](media/9c98534bbdccc6703841333b10880f4d.jpg)
+    ![](media/9c98534bbdccc6703841333b10880f4d.jpg)
 
-1.  Select transfer options. The transfer options are not limited to the
+3.  Select transfer options. The transfer options are not limited to the
     document types contained in the batch.
 
-2.  Specify quantity shortage options.
+4.  Specify quantity shortage options.
 
->   If you choose to transfer a batch of documents, you must decide what to do
->   with quantity shortages before the new documents are created. The option you
->   select will be used for all quantity shortages in the batch.
+     If you choose to transfer a batch of documents, you must decide what to do with quantity shortages before the new documents are created. The option you select will be used for all quantity shortages in the batch.
 
->   *If you mark Back Order All or Back Order Balance, the back order for these
->   quantities won’t be created when you transfer the original document. You
->   must open the new document and transfer it to a back order.*
+    > [!NOTE]
+    > If you mark Back Order All or Back Order Balance, the back order for these quantities won’t be created when you transfer the original document. You must open the new document and transfer it to a back order.
 
->   You also can select how to process item quantity shortages for kit items.
->   For more information about quantity shortage options, see *Chapter 19,
->   “Allocating item quantities.”*
+    You also can select how to process item quantity shortages for kit items. For more information about quantity shortage options, see *Chapter 19, “Allocating item quantities.”*
 
-1.  Choose Preview to open the Sales Preview Transfer Quantities window to view
-    the quantities that will be transferred to the different document types.
+5.  Choose Preview to open the Sales Preview Transfer Quantities window to view the quantities that will be transferred to the different document types.
 
-2.  Choose Transfer to transfer the document. The Sales Transfer Log will be
-    printed and any errors encountered during the transfer process can be
-    reviewed using this report.
+6.  Choose Transfer to transfer the document. The Sales Transfer Log will be printed and any errors encountered during the transfer process can be reviewed using this report.
 
 #### Transferring orders and back orders to invoices
 
->   If you’re using sales fulfillment workflow, use the Sales Multiple Orders to
->   Invoices Transfer window to transfer orders and back orders to invoices.
->   Instead of transferring one document at a time, you can transfer groups of
->   documents with the same characteristics, such as batch ID, customer ID, or
->   requested ship date. A separate invoice is created for each order or back
->   order. You also can choose how to handle item quantity shortages and kit
->   quantity shortages.
+If you’re using sales fulfillment workflow, use the Sales Multiple Orders to Invoices Transfer window to transfer orders and back orders to invoices. Instead of transferring one document at a time, you can transfer groups of documents with the same characteristics, such as batch ID, customer ID, or requested ship date. A separate invoice is created for each order or back order. You also can choose how to handle item quantity shortages and kit quantity shortages.
 
->   If you are using customer credit limit override workflow, orders that exceed
->   the customer’s credit limit won’t be transferred if they aren’t approved.
->   You can transfer orders that don’t need approval.
+If you are using customer credit limit override workflow, orders that exceed the customer’s credit limit won’t be transferred if they aren’t approved. You can transfer orders that don’t need approval.
 
->   **To transfer orders and back orders to invoices:**
+**To transfer orders and back orders to invoices:**
 
 1.  Open the Sales Multiple Orders to Invoices Transfer window.
+    (Sales \>\> Transactions \>\> Transfer Multiple Orders)
 
->   (Sales \>\> Transactions \>\> Transfer Multiple Orders)
+    ![](media/c07319b2efc05719581e0e4e7a6e0dbc.jpg)
 
-![](media/c07319b2efc05719581e0e4e7a6e0dbc.jpg)
+2.  Mark to transfer Orders, Back Orders, or both.
 
-1.  Mark to transfer Orders, Back Orders, or both.
+3.  Enter a batch ID to transfer the orders and back orders into.
 
-2.  Enter a batch ID to transfer the orders and back orders into.
-
-3.  Select options for when there is an item quantity shortage or a kit quantity
+4.  Select options for when there is an item quantity shortage or a kit quantity
     shortage.
 
-4.  Enter or select a range of documents to transfer.
+5.  Enter or select a range of documents to transfer.
 
-5.  Choose Insert to display the range of documents in the restrictions list.
+6.  Choose Insert to display the range of documents in the restrictions list.
 
-6.  Choose Transfer and close the window. The Sales Transfer Log will be
-    printed.
+7.  Choose Transfer and close the window. The Sales Transfer Log will be printed.
 
 ## Part 5: Inquiries and reports
 
->   This part of the documentation explains how to use inquiries and reports to
->   analyze your sales activity. The inquiry windows and reports in Sales Order
->   Processing allow you to access information quickly and to display the
->   information either on screen or on a printed report. The following topics
->   are discussed:
+This part of the documentation explains how to use inquiries and reports to analyze your sales activity. The inquiry windows and reports in Sales Order Processing allow you to access information quickly and to display the information either on screen or on a printed report. The following topics are discussed:
 
 -   *Chapter 28, “Inquiries,”* explains how to use the Sales Order Processing
     inquiry windows to view document and item information.
@@ -6764,19 +5452,11 @@ created.*
 
 ### Chapter 28: Inquiries
 
->   Analyzing your sales activity is an important part of your accounting
->   system. You can use inquiry windows to view transaction, document, item,
->   customer, or salesperson activity. The inquiry windows provide easy access
->   to detailed or summarized transaction information. You also can create and
->   view customized inquiries based on multiple range restrictions.
+Analyzing your sales activity is an important part of your accounting system. You can use inquiry windows to view transaction, document, item, customer, or salesperson activity. The inquiry windows provide easy access to detailed or summarized transaction information. You also can create and view customized inquiries based on multiple range restrictions.
 
->   Many of the inquiry windows have a feature that allows you to link to
->   transactions as they were originally entered. For example, you can select a
->   document number in the Sales Document Inquiry window, then link to the
->   Transaction Inquiry Zoom window to view the transaction, including
->   distribution and commission information.
+Many of the inquiry windows have a feature that allows you to link to transactions as they were originally entered. For example, you can select a document number in the Sales Document Inquiry window, then link to the Transaction Inquiry Zoom window to view the transaction, including distribution and commission information.
 
->   The inquiry information is divided into the following sections:
+The inquiry information is divided into the following sections:
 
 -   *Viewing multiple currencies in sales inquiries*
 
@@ -6802,402 +5482,256 @@ created.*
 
 #### Viewing multiple currencies in sales inquiries
 
->   You can choose whether you want to view multicurrency amounts in the
->   originating, functional, or reporting currency. Choose View \>\> Currency
->   \>\> Functional, Originating, or Reporting while viewing an inquiry window.
->   The option will be saved on a per user, per window basis.
+You can choose whether you want to view multicurrency amounts in the originating, functional, or reporting currency. Choose View \>\> Currency \>\> Functional, Originating, or Reporting while viewing an inquiry window. The option will be saved on a per user, per window basis.
 
->   You also can use the Currency list button in the windows that support
->   changing the currency view. View \>\> Currency and the Currency list button
->   are available in the following windows:
+You also can use the Currency list button in the windows that support changing the currency view. View \>\> Currency and the Currency list button are available in the following windows:
 
 -   Sales Order Processing Document Inquiry
 
 -   Sales Order Processing Item Inquiry
 
 -   Sales Transaction Inquiry Zoom
-
->   The first time you open these windows after registering Multicurrency
-
->   Management, all the transactions will be displayed in the originating
->   currency. If you change the currency view, the option you last used will be
->   the default view the next time you open that window.
+ The first time you open these windows after registering Multicurrency
+ Management, all the transactions will be displayed in the originating currency. If you change the currency view, the option you last used will be the default view the next time you open that window.
 
 #### About reporting currency
 
->   A reporting currency is used to convert functional currency amounts to
->   another currency on inquiries and reports. For example, if the British pound
->   is the functional currency for a company, you can set up the euro as your
->   reporting currency to view an inquiry window with currency amounts displayed
->   in the euro currency.
+A reporting currency is used to convert functional currency amounts to another currency on inquiries and reports. For example, if the British pound is the functional currency for a company, you can set up the euro as your reporting currency to view an inquiry window with currency amounts displayed in the euro currency.
 
->   During the reporting currency setup in Multicurrency Management, you’ll set
->   up a reporting currency and enter a default exchange rate and rate
->   calculation method. Depending on how your system is set up, you may be able
->   to override the default reporting currency exchange rate or rate calculation
->   method on inquiries and reports. To change the default reporting currency
->   exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate to open
->   the Modify Reporting Rate window.
+During the reporting currency setup in Multicurrency Management, you’ll set up a reporting currency and enter a default exchange rate and rate calculation method. Depending on how your system is set up, you may be able to override the default reporting currency exchange rate or rate calculation method on inquiries and reports. To change the default reporting currency exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate to open the Modify Reporting Rate window.
 
->   For more information about reporting currency, see the Multicurrency
->   Management documentation.
+For more information about reporting currency, see the Multicurrency Management documentation.
 
 #### Viewing salesperson information
 
->   Use the Salesperson Inquiry window to view sales and commission information
->   for your salespeople from posted and unposted invoices and returns. You also
->   can view records for all salespeople, or for a range of salespeople.
+Use the Salesperson Inquiry window to view sales and commission information for your salespeople from posted and unposted invoices and returns. You also can view records for all salespeople, or for a range of salespeople.
 
->   You can view information as it was originally entered by clicking on link
->   fields. For example, you can select a sales document and link to the Sales
->   Transaction Inquiry Zoom window to view the original document.
+You can view information as it was originally entered by clicking on link fields. For example, you can select a sales document and link to the Sales Transaction Inquiry Zoom window to view the original document.
 
->   **To view salesperson information:**
+**To view salesperson information:**
 
-1.  Open the Salesperson Inquiry window.
+1. Open the Salesperson Inquiry window.
 
->   (Sales \>\> Inquiry \>\> Salesperson)
+    (Sales \>\> Inquiry \>\> Salesperson)
 
-![](media/d9ffc28fc7095a21f51d0f38c91d5499.jpg)
+    ![](media/d9ffc28fc7095a21f51d0f38c91d5499.jpg)
 
-1.  Select the Sales Order Processing module.
+2. Select the Sales Order Processing module.
 
-2.  Select a sorting option for range of salesperson records. You can sort by
+3. Select a sorting option for range of salesperson records. You can sort by
     salesperson ID, sales territory ID, document number, or audit trail code.
 
-3.  Choose Redisplay. To view more information about the salesperson, territory,
-    or document in the list, highlight a record and click a link to open a
-    window displaying the original record.
+4. Choose Redisplay. To view more information about the salesperson, territory, or document in the list, highlight a record and click a link to open a window displaying the original record.
 
->   The following table lists the link fields in the Salesperson Inquiry window.
+    The following table lists the link fields in the Salesperson Inquiry window.
 
-| **Link field**     | **Window that opens**          |
-|--------------------|--------------------------------|
-| Salesperson ID     | Salesperson Maintenance        |
-| Sales Territory ID | Sales Territory Maintenance    |
-| Document Number    | Sales Transaction Inquiry Zoom |
+    | **Link field**     | **Window that opens**          |
+    |--------------------|--------------------------------|
+    | Salesperson ID     | Salesperson Maintenance        |
+    | Sales Territory ID | Sales Territory Maintenance    |
+    | Document Number    | Sales Transaction Inquiry Zoom |
 
-1.  To print the contents of this window, choose File \>\> Print or the printer
-    button.
+5. To print the contents of this window, choose File \>\> Print or the printer button.
 
->   The Salesperson Inquiry Report will be printed.
+    The Salesperson Inquiry Report will be printed.
 
 #### Viewing sales documents
 
->   Use the Sales Order Processing Document Inquiry window to view documents
->   entered in Sales Order Processing. You can view records for all documents or
->   for a range of documents.
+Use the Sales Order Processing Document Inquiry window to view documents entered in Sales Order Processing. You can view records for all documents or for a range of documents.
 
->   You can view information as it was originally entered by clicking on link
->   fields. For example, you can select a sales document and link to the Sales
->   Transaction Inquiry Zoom window to view the original document.
+You can view information as it was originally entered by clicking on link fields. For example, you can select a sales document and link to the Sales Transaction Inquiry Zoom window to view the original document.
 
->   **To view sales documents:**
+**To view sales documents:**
 
-1.  Open the Sales Order Processing Document Inquiry window. (Sales \>\> Inquiry
-    \>\> Sales Documents)
+1.  Open the Sales Order Processing Document Inquiry window. (Sales \>\> Inquiry \>\> Sales Documents)
 
-2.  Select a sorting option for the documents. You can sort by document number,
-    customer ID, document date, batch ID, document type, or master number.
+2. Select a sorting option for the documents. You can sort by document number, customer ID, document date, batch ID, document type, or master number.
 
-3.  Mark to include unposted documents or documents that have been moved to
-    history.
+3. Mark to include unposted documents or documents that have been moved to history.
 
->   **Unposted** These documents are still in process. They can be quotes,
->   orders, or back orders that haven’t been transferred or invoices and returns
->   that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
 
->   **History** These documents have been completely processed and moved to
->   history. They include quotes, orders, and back orders that have been
->   completely transferred, cancelled, or voided, and invoices and returns that
->   have been posted or voided.
+    - **History** These documents have been completely processed and moved to history. They include quotes, orders, and back orders that have been completely transferred, cancelled, or voided, and invoices and returns that have been posted or voided.
 
-1.  Choose Redisplay. The documents included in the inquiry range will be
-    displayed in the scrolling window. To view more information about a document
-    or customer ID in the list, highlight the record and link to a window
-    displaying the original record.
+4. Choose Redisplay. The documents included in the inquiry range will be displayed in the scrolling window. To view more information about a document or customer ID in the list, highlight the record and link to a window displaying the original record.
 
->   If you click the Customer ID link, you can view the information about the
->   customer in the Customer Inquiry or Sales Prospect Maintenance window. If
->   you click the Document Number link, you can view the original sales document
->   in the Sales Transaction Inquiry Zoom window.
+    If you click the Customer ID link, you can view the information about the customer in the Customer Inquiry or Sales Prospect Maintenance window. If you click the Document Number link, you can view the original sales document in the Sales Transaction Inquiry Zoom window.
 
-1.  To print the contents of this window, choose File \>\> Print or the printer
-    icon button or press CTRL+P. The Document Inquiry Report will be printed.
+5. To print the contents of this window, choose File \>\> Print or the printer icon button or press CTRL+P. The Document Inquiry Report will be printed.
 
 #### Creating inquiries for sales documents
 
->   Use the Sales Inquiry Restrictions window to set up custom inquiries for
->   your sales information. This is useful if you frequently view the same
->   document information. For example, you can set up an inquiry to display the
->   quotes for the month of January that include a particular item.
+Use the Sales Inquiry Restrictions window to set up custom inquiries for your sales information. This is useful if you frequently view the same document information. For example, you can set up an inquiry to display the quotes for the month of January that include a particular item.
 
->   You can set up an inquiry with multiple restrictions, save it, and use this
->   inquiry whenever you want, instead of reentering the range restrictions each
->   time you need the information. You can process the inquiry from this window,
->   or you can use the inquiry in the Sales Document Range Inquiry window.
+You can set up an inquiry with multiple restrictions, save it, and use this inquiry whenever you want, instead of reentering the range restrictions each time you need the information. You can process the inquiry from this window, or you can use the inquiry in the Sales Document Range Inquiry window.
 
->   **To create inquiries for sales documents:**
+**To create inquiries for sales documents:**
 
 1.  Open the Sales Inquiry Restrictions window.
 
->   (Sales \>\> Inquiry \>\> Restrict Sales Documents)
+    (Sales \>\> Inquiry \>\> Restrict Sales Documents)
 
-![](media/e3ff5d842d4a8cd07df9546c263652af.jpg)
+    ![](media/e3ff5d842d4a8cd07df9546c263652af.jpg)
 
-1.  Enter or select an Inquiry ID.
+2.  Enter or select an Inquiry ID.
 
-2.  Mark to include unposted documents or documents that have been moved to
-    history.
+3.  Mark to include unposted documents or documents that have been moved to history.
 
->   **Unposted** These documents are still in process. They can be quotes,
->   orders, or back orders that haven’t been transferred or invoices and returns
->   that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **History** These documents have been completely processed and moved to history. They can include quotes, orders, and back orders that have been completely transferred, cancelled, or voided, and invoices and returns that have been posted or voided.
 
->   **History** These documents have been completely processed and moved to
->   history. They can include quotes, orders, and back orders that have been
->   completely transferred, cancelled, or voided, and invoices and returns that
->   have been posted or voided.
+4.  Select a sorting option and a range restriction for this inquiry ID. You can sort by document type, customer ID, document date, or document number. Choose Insert after defining each restriction. You can enter an unlimited number of restrictions.
 
-1.  Select a sorting option and a range restriction for this inquiry ID. You can
-    sort by document type, customer ID, document date, or document number.
-    Choose Insert after defining each restriction. You can enter an unlimited
-    number of restrictions.
+    > [!NOTE]
+    > You can enter only one restriction for each restriction type. For example, if you enter a restriction for document numbers INV1000 through INV1010, you can’t enter another restriction for document numbers INV1100 through INV1150. To specify multiple ranges, you must create separate inquiry IDs for each range.
+    > To enter the range for a restriction during the actual inquiry, insert a restriction without entering a range. When you use the Inquiry ID, you’ll be asked to enter the starting and ending values. For example, you can insert a range restriction for the master number. When you use the Inquiry ID, you will be asked to enter a starting and ending master number.
 
->   *You can enter only one restriction for each restriction type. For example,
->   if you enter a restriction for document numbers INV1000 through INV1010, you
->   can’t enter another restriction for document numbers INV1100 through
->   INV1150. To specify multiple ranges, you must create separate inquiry IDs
->   for each range.*
-
->   To enter the range for a restriction during the actual inquiry, insert a
->   restriction without entering a range. When you use the Inquiry ID, you’ll be
->   asked to enter the starting and ending values. For example, you can insert a
->   range restriction for the master number. When you use the Inquiry ID, you
->   will be asked to enter a starting and ending master number.
-
-1.  Choose Inquiry to process the inquiry or choose Save to save the inquiry ID.
+5.  Choose Inquiry to process the inquiry or choose Save to save the inquiry ID.
 
 #### Viewing sales information from a custom inquiry
 
->   Use the Sales Document Range Inquiry window to view customized inquiries
->   based on multiple range restrictions. This is useful if you frequently view
->   the same document information. For example, you can set up an inquiry ID to
->   display the quotes for the month of January that contain a particular item.
+Use the Sales Document Range Inquiry window to view customized inquiries based on multiple range restrictions. This is useful if you frequently view the same document information. For example, you can set up an inquiry ID to display the quotes for the month of January that contain a particular item.
 
->   You can set up inquiry IDs in the Sales Inquiry Restriction window. For more
->   information about customized inquiries, see *Creating inquiries for sales
->   documents* on page 224.
+You can set up inquiry IDs in the Sales Inquiry Restriction window. For more information about customized inquiries, see *Creating inquiries for sales documents* on page 224.
 
->   **To view sales information from a custom inquiry:**
+**To view sales information from a custom inquiry:**
 
 1.  Open the Sales Document Range Inquiry window.
 
->   (Sales \>\> Inquiry \>\> Sales Range Inquiry)
+    (Sales \>\> Inquiry \>\> Sales Range Inquiry)
 
-1.  Choose an Inquiry ID. The documents included in the inquiry range will
-    appear in the scrolling window.
+1.  Choose an Inquiry ID. The documents included in the inquiry range will appear in the scrolling window.
 
->   If the inquiry ID has a restriction without a range, you’ll be asked to
->   enter the starting and ending values. For example, you can insert a range
->   restriction for the master number. When you use the Inquiry ID to process an
->   inquiry, you’ll be asked to enter a starting and ending master number.
+    If the inquiry ID has a restriction without a range, you’ll be asked to enter the starting and ending values. For example, you can insert a range restriction for the master number. When you use the Inquiry ID to process an inquiry, you’ll be asked to enter a starting and ending master number.
 
->   To view more information about a document or customer ID in the list, select
->   the record and click a link to a window showing more information. If you
->   click the Customer ID link, you can view the information about the customer
->   in the Customer Inquiry or Sales Prospect Maintenance window. If you click
->   the Document Number link, you can view the original sales document in the
->   Sales Transaction Inquiry Zoom window.
+    To view more information about a document or customer ID in the list, select the record and click a link to a window showing more information. If you click the Customer ID link, you can view the information about the customer in the Customer Inquiry or Sales Prospect Maintenance window. If you click the Document Number link, you can view the original sales document in the Sales Transaction Inquiry Zoom window.
 
-1.  You can further restrict the documents in the scrolling window by marking
-    Unposted or History and choosing Redisplay to include unposted documents or
-    documents that have been moved to history.
+1.  You can further restrict the documents in the scrolling window by marking Unposted or History and choosing Redisplay to include unposted documents or documents that have been moved to history.
 
->   **Unposted** These documents are still in process. They can be quotes,
->   orders, or back orders that haven’t been transferred or invoices and returns
->   that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **History** These documents have been completely processed and moved to history. They can include quotes, orders, and back orders that have been completely transferred, cancelled, or voided, and invoices and returns that have been posted or voided.
+    If you want to see the purchase orders that would be created from these documents, choose the Purchase button. For more information about creating purchase orders, see *Chapter 21, “New purchase orders.”*
 
->   **History** These documents have been completely processed and moved to
->   history. They can include quotes, orders, and back orders that have been
->   completely transferred, cancelled, or voided, and invoices and returns that
->   have been posted or voided.
-
->   If you want to see the purchase orders that would be created from these
->   documents, choose the Purchase button. For more information about creating
->   purchase orders, see *Chapter 21, “New purchase orders.”*
-
-1.  To print the contents of this window, choose File \>\> Print or the printer
-    icon button or press CTRL+P. The Sales Document Inquiry Report by Range will
-    be printed.
+1.  To print the contents of this window, choose File \>\> Print or the printer icon button or press CTRL+P. The Sales Document Inquiry Report by Range will be printed.
 
 #### Viewing items sold
 
->   Use the Sales Order Processing Item Inquiry window to view all documents
->   entered in Sales Order Processing that include a particular item or range of
->   items. For example, you might want to target a group of customers who
->   purchased a particular item for an upcoming sales promotion. You can limit
->   the items displayed by specifying a range of item numbers, document numbers,
->   or document types. You also can limit the number of items displayed by
->   selecting specific document types and selecting whether you want to view
->   posted or unposted documents.
+Use the Sales Order Processing Item Inquiry window to view all documents entered in Sales Order Processing that include a particular item or range of items. For example, you might want to target a group of customers who purchased a particular item for an upcoming sales promotion. You can limit the items displayed by specifying a range of item numbers, document numbers, or document types. You also can limit the number of items displayed by selecting specific document types and selecting whether you want to view posted or unposted documents.
 
->   **To view items sold:**
+**To view items sold:**
 
 1.  Open the Sales Order Processing Item Inquiry window.
 
->   (Sales \>\> Inquiry \>\> Sales Items)
+    (Sales \>\> Inquiry \>\> Sales Items)
 
-![](media/2c1734a4f875158f98fa8339d0b9dd1b.jpg)
+    ![](media/2c1734a4f875158f98fa8339d0b9dd1b.jpg)
 
-1.  Choose a range of item numbers, document numbers, or document types to view.
+2.  Choose a range of item numbers, document numbers, or document types to view.
 
-2.  Choose which document types to include in the inquiry by using the SHIFT or
-    CTRL key in conjunction with the arrow keys. Mark to include unposted
-    documents or documents that have been moved to history.
+3.  Choose which document types to include in the inquiry by using the SHIFT or CTRL key in conjunction with the arrow keys. Mark to include unposted documents or documents that have been moved to history.
 
->   **Unposted** These documents are still in process. They can be quotes,
->   orders, or back orders that haven’t been transferred or invoices and returns
->   that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **History** These documents have been completely processed and moved to history. They include quotes, orders, and back orders that have been completely transferred, cancelled, or voided and invoices and returns that have been posted or voided.
 
->   **History** These documents have been completely processed and moved to
->   history. They include quotes, orders, and back orders that have been
->   completely transferred, cancelled, or voided and invoices and returns that
->   have been posted or voided.
+4.  Choose Redisplay. The documents included in the inquiry range will be displayed in the scrolling window.
 
-1.  Choose Redisplay. The documents included in the inquiry range will be
-    displayed in the scrolling window.
+    Highlight a record and link to a window displaying more information to view more information about the item, customer, or document in the list. The following table lists the link fields in the Sales Order Item Inquiry window.
 
->   Highlight a record and link to a window displaying more information to view
->   more information about the item, customer, or document in the list. The
->   following table lists the link fields in the Sales Order Item Inquiry
->   window.
+    | **Link field**  | **Window that opens**                          |
+    |-----------------|------------------------------------------------|
+    | Item Number     | Item Inquiry                                   |
+    | Document Number | Sales Transaction Inquiry Zoom                 |
+    | Customer ID     | Customer Inquiry or Sales Prospect Maintenance |
 
-| **Link field**  | **Window that opens**                          |
-|-----------------|------------------------------------------------|
-| Item Number     | Item Inquiry                                   |
-| Document Number | Sales Transaction Inquiry Zoom                 |
-| Customer ID     | Customer Inquiry or Sales Prospect Maintenance |
-
-1.  To print the contents of this window, choose File \>\> Print or the printer
-    icon button or press CTRL+P. The Item Inquiry Report will be printed.
+5.  To print the contents of this window, choose File \>\> Print or the printer icon button or press CTRL+P. The Item Inquiry Report will be printed.
 
 #### Viewing serial or lot numbers of items sold
 
->   You can use the Sales Serial-Lot Number Inquiry window to view sold items
->   that are tracked by serial or lot numbers. For example, you might have been
->   notified by a manufacturer that a specific lot-numbered item is defective.
->   You can identify every invoice on which items with the specific lot number
->   were sold.
+You can use the Sales Serial-Lot Number Inquiry window to view sold items that are tracked by serial or lot numbers. For example, you might have been notified by a manufacturer that a specific lot-numbered item is defective. You can identify every invoice on which items with the specific lot number were sold.
 
->   **To view serial or lot numbers of items sold:**
+**To view serial or lot numbers of items sold:**
 
 1.  Open the Sales Serial-Lot Number Inquiry window.
 
->   (Sales \>\> Inquiry \>\> Sales Serial/Lots)
+    (Sales \>\> Inquiry \>\> Sales Serial/Lots)
 
-![](media/d62ae069df897a2c4c5c332fd2284ce4.jpg)
+    ![](media/d62ae069df897a2c4c5c332fd2284ce4.jpg)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Select the sites to include and mark to include unposted documents or
-    documents that have been moved to history.
+3.  Select the sites to include and mark to include unposted documents or documents that have been moved to history.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **History** These documents have been completely processed and moved to history. They can include quotes, orders, and back orders that have been completely transferred, cancelled, or voided and invoices and returns that have been posted or voided.
 
->   **Unposted** These documents are still in process. They can be quotes,
->   orders, or back orders that haven’t been transferred or invoices and returns
->   that haven’t been posted.
+4.  Choose to view all the serial/lot number information for this item or choose a range of serial/lot numbers, customers, or document types. You also can choose a specific site and a date range.
 
->   **History** These documents have been completely processed and moved to
->   history. They can include quotes, orders, and back orders that have been
->   completely transferred, cancelled, or voided and invoices and returns that
->   have been posted or voided.
+5.  Choose Redisplay. The documents included in the inquiry range will be displayed in the scrolling window. To view more information about a document or customer ID in the list, select the record and link to a window showing more information.
 
-1.  Choose to view all the serial/lot number information for this item or choose
-    a range of serial/lot numbers, customers, or document types. You also can
-    choose a specific site and a date range.
+    If you click the Customer ID link, you can view the information about the customer in the Customer Inquiry window. If you click the Document Number link, you can view the original sales document in the Sales Transaction Inquiry Zoom window.
 
-2.  Choose Redisplay. The documents included in the inquiry range will be
-    displayed in the scrolling window. To view more information about a document
-    or customer ID in the list, select the record and link to a window showing
-    more information.
-
->   If you click the Customer ID link, you can view the information about the
->   customer in the Customer Inquiry window. If you click the Document Number
->   link, you can view the original sales document in the Sales Transaction
->   Inquiry Zoom window.
-
-1.  To print the contents of this window, choose File \>\> Print or the printer
-    icon button or press CTRL+P. The Serial-Lot Number Inquiry Report will be
-    printed.
+6.  To print the contents of this window, choose File \>\> Print or the printer icon button or press CTRL+P. The Serial-Lot Number Inquiry Report will be printed.
 
 #### Viewing sales process holds
 
->   Use the Sales Process Holds Inquiry window to view documents that have a
->   process hold assigned to them. For example, your company might assign a
->   process hold to all discounted orders, which prevents them from being
->   transferred to an invoice until the transaction is approved. If you’re
->   responsible for approving orders, this window can provide you with a list of
->   orders that have been assigned that particular process hold.
+Use the Sales Process Holds Inquiry window to view documents that have a process hold assigned to them. For example, your company might assign a process hold to all discounted orders, which prevents them from being transferred to an invoice until the transaction is approved. If you’re responsible for approving orders, this window can provide you with a list of orders that have been assigned that particular process hold.
 
->   **To view sales process holds:**
+**To view sales process holds:**
 
 1.  Open the Sales Process Holds Inquiry window.
 
->   (Sales \>\> Inquiry \>\> Sales Process Holds)
+    (Sales \>\> Inquiry \>\> Sales Process Holds)
 
-![](media/c8917e3cc5a747f0a5545911a82ea75c.jpg)
+    ![](media/c8917e3cc5a747f0a5545911a82ea75c.jpg)
 
-1.  Choose a process hold to view.
+2.  Choose a process hold to view.
 
-2.  Mark to display assigned or removed holds and mark to include unposted documents or documents that have been moved to history.
+3.  Mark to display assigned or removed holds and mark to include unposted documents or documents that have been moved to history.
 
->   **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **History** These documents have been completely processed and moved to history. They include quotes, orders, and back orders that have been completely transferred, cancelled, or voided, and invoices and returns that have been posted or voided.
 
->   **History** These documents have been completely processed and moved to history. They include quotes, orders, and back orders that have been completely transferred, cancelled, or voided, and invoices and returns that have been posted or voided.
+4.  You can enter or select a range of documents to view.
 
-1.  You can enter or select a range of documents to view.
+5.  Choose Redisplay. The documents assigned to the process hold will appear in the scrolling window. To view more information about a document or customer ID in the list, select the record, and link to a window showing more information.
 
-2.  Choose Redisplay. The documents assigned to the process hold will appear in the scrolling window. To view more information about a document or customer ID in the list, select the record, and link to a window showing more information.
+    If you click the Customer ID link, you can view the information about the customer in the Customer Inquiry or Sales Prospect Maintenance window. If you click the Document Number link, you can view the original sales document in the Sales Transaction Inquiry Zoom window.
 
->   If you click the Customer ID link, you can view the information about the customer in the Customer Inquiry or Sales Prospect Maintenance window. If you click the Document Number link, you can view the original sales document in the Sales Transaction Inquiry Zoom window.
-
-3.  To print the contents of this window, choose File \>\> Print or the printer icon button or press CTRL+P. The Process Holds Inquiry Report will be printed.
+6.  To print the contents of this window, choose File \>\> Print or the printer icon button or press CTRL+P. The Process Holds Inquiry Report will be printed.
 
 #### Viewing bulk picking ticket details
 
->   If you’re using advanced picking, use the Sales Bulk Pick Detail window to view the details of groups of picking tickets that have already been printed. This is useful if the physical picking ticket is unavailable and you don’t want to reprint the ticket.
+If you’re using advanced picking, use the Sales Bulk Pick Detail window to view the details of groups of picking tickets that have already been printed. This is useful if the physical picking ticket is unavailable and you don’t want to reprint the ticket.
 
->   **To view bulk picking ticket details:**
+**To view bulk picking ticket details:**
 
 1.  Open the Sales Bulk Pick Detail window.
 
->   (Sales \>\> Transactions \>\> Bulk Print \>\> select an available pick \>\> click the Available Pick link)
+    (Sales \>\> Transactions \>\> Bulk Print \>\> select an available pick \>\> click the Available Pick link)
 
-![](media/1fbbeac0bf57b8725c6011f3ba257f97.jpg)
+    ![](media/1fbbeac0bf57b8725c6011f3ba257f97.jpg)
 
 2.  Choose OK to close the window.
 
 #### Viewing document status details for a document
 
->   If you’re using sales fulfillment workflow, use the Sales Document Status Inquiry window to view the document status details for a document. You can view information such as the date and time that a document status was changed. You can open this window from the Sales Document Range Inquiry window, the Sales Transaction Entry window, and the Sales Order Fulfillment window.
-
->   **To view document status details for a document:**
+If you’re using sales fulfillment workflow, use the Sales Document Status Inquiry window to view the document status details for a document. You can view information such as the date and time that a document status was changed. You can open this window from the Sales Document Range Inquiry window, the Sales Transaction Entry window, and the Sales Order Fulfillment window.
+ **To view document status details for a document:**
 
 1.  Open the Sales Document Status Inquiry window.
 
->   (Sales \>\> Inquiry \>\> Sales Range Inquiry \>\> click the Document Status Link)
+    (Sales \>\> Inquiry \>\> Sales Range Inquiry \>\> click the Document Status Link)
 
-![](media/2edb0950c1386d4463f22f157ede9486.jpg)
+    ![](media/2edb0950c1386d4463f22f157ede9486.jpg)
 
 2.  When you’ve finished, close the window.
 
 ### Chapter 29: Reports
 
->   You can use Sales Order Processing reports to analyze sales activity and identify errors in transaction entry. You can also use reports to review setup, posting, and historical information. Other Sales Order Processing reports are important for the audit trail to ensure that you’re accurately tracking financial data. Use this information to guide you through printing reports and working with report options.
+You can use Sales Order Processing reports to analyze sales activity and identify errors in transaction entry. You can also use reports to review setup, posting, and historical information. Other Sales Order Processing reports are important for the audit trail to ensure that you’re accurately tracking financial data. Use this information to guide you through printing reports and working with report options.
 
->   For more information about creating and printing reports and the various reporting tools that you can use with Microsoft Dynamics GP, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
+For more information about creating and printing reports and the various reporting tools that you can use with Microsoft Dynamics GP, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
->   Reports information is divided into the following sections:
+Reports information is divided into the following sections:
 
 -   *Sales Order Processing report summary*
 
@@ -7207,9 +5741,9 @@ created.*
 
 #### Sales Order Processing report summary
 
->   You can print several types of reports using Sales Order Processing. Some reports automatically are printed when you complete certain procedures; for example, posting journals can be printed automatically when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Specifying a Sales Order Processing report option* on page 233.
+You can print several types of reports using Sales Order Processing. Some reports automatically are printed when you complete certain procedures; for example, posting journals can be printed automatically when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Specifying a Sales Order Processing report option* on page 233.
 
->   The following table lists the report types available in Sales Order Processing and the reports included in those categories.
+The following table lists the report types available in Sales Order Processing and the reports included in those categories.
 
 | **Report type**| **Report**   | **Printing method**   |
 |----------------|--------------|------------------------|
@@ -7219,101 +5753,69 @@ created.*
 | Labels   | Address labels COD labels Prospect mailing labels | Choose Administration \>\> Reports \>\> Company \>\> Mailing labels and choose a label type from the reports list. |
 | Posting reports | Sales Edit List \* Sales Batch List \* Sales Posting Journal \*† Sales Voided Journal \*† Distribution Breakdown Register \*† Inventory Sales Register \*† Salesperson Register \*† Sales Deposits Journal \*† | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure.  |
 | Edit lists| Sales Edit List\* Sales Batch List\* Sales Edit List Currency Summary\*† Edit Sales Document Status| Choose File \>\> Print in the window you used to complete the procedure. |
-| History reports | Sales Transaction History Report\* Sales History Register\* Distribution Detail History Report\* Sales Quote History Report\* Sales Order History Report\* Sales Serial/Lot History Report\*| Create report options in the Sales History Reports window. </br> \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. |                                                                                                                 | Utility reports | Transaction Removal Report | These reports will be printed when you complete the corresponding procedure.  |
+| History reports | Sales Transaction History Report\* Sales History Register\* Distribution Detail History Report\* Sales Quote History Report\* Sales Order History Report\* Sales Serial/Lot History Report\*| Create report options in the Sales History Reports window. </br> \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. |
+| Utility reports | Transaction Removal Report | These reports will be printed when you complete the corresponding procedure.  |
 | Analysis reports  | Sales Document Analysis Reports †  | Create report options in the MISSINGCONTENT|
 | Processing reports | Holds Processing Preview List   | These reports will be printed when you complete the corresponding procedure. |
 | Inquiry reports | Sales Document Inquiry Report | Choose File \>\> Print in the corresponding Inquiry window. </br> \* Indicates reports that can be printed with multicurrency information displayed.  |
-
->   Journal Removal Report
-
->   Account Distribution Removal Report
-
->   Deposits Removal Report
-
->   Reconcile-Remove Sales Documents Report
-
->   Edit Sales Document Status Report
-
->   Salesperson Report \*†
-
->   Inventory Sales Report \*†
-
->   Sales Analysis Reports window.
-
->   Sales Holds Processing Journal
-
->   Sales Transfer Log
-
->   Order Fulfillment Status Report
-
->   Allocation/Fulfillment Exception Report
-
->   Print Documents Exception Report
-
->   Purchase Orders Preview List †
-
->   Purchase Orders Generation Register †
-
->   Instruction ID Preview List
-
->   Instruction ID Processing Journal
-
->   Item Print Option Preview List
-
->   Item Print Option Processing Journal
-
->   Sales Bulk Exception Report
-
->   Automatic Order Allocation Report
-
->   Document Inquiry Report
-
->   Item Inquiry Report
-
->   Serial-Lot Number Inquiry Report
-
->   Process Holds Inquiry Report
-
->   Sales Document Status Inquiry Report
-
->   Automatic Allocation Preview Report
-
->   † Indicates reports that can be assigned to named printers. See “Printers” in the System
-
->   Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.
+ Journal Removal Report
+ Account Distribution Removal Report
+ Deposits Removal Report
+ Reconcile-Remove Sales Documents Report
+ Edit Sales Document Status Report
+ Salesperson Report \*†
+ Inventory Sales Report \*†
+ Sales Analysis Reports window.
+ Sales Holds Processing Journal
+ Sales Transfer Log
+ Order Fulfillment Status Report
+ Allocation/Fulfillment Exception Report
+ Print Documents Exception Report
+ Purchase Orders Preview List †
+ Purchase Orders Generation Register †
+ Instruction ID Preview List
+ Instruction ID Processing Journal
+ Item Print Option Preview List
+ Item Print Option Processing Journal
+ Sales Bulk Exception Report
+ Automatic Order Allocation Report
+ Document Inquiry Report
+ Item Inquiry Report
+ Serial-Lot Number Inquiry Report
+ Process Holds Inquiry Report
+ Sales Document Status Inquiry Report
+ Automatic Allocation Preview Report
+ † Indicates reports that can be assigned to named printers. See “Printers” in the System
+ Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.
 
 #### Specifying a Sales Order Processing report option
 
->   Report options include specifications for sorting options and range restrictions for a particular report. In order to print Sales Order Processing reports, you must first create a report option. Each report can have several different options so that you can easily print the information you need. For example, you can create report options for the Sales Quote Report that show either detailed or summary information.
+Report options include specifications for sorting options and range restrictions for a particular report. In order to print Sales Order Processing reports, you must first create a report option. Each report can have several different options so that you can easily print the information you need. For example, you can create report options for the Sales Quote Report that show either detailed or summary information.
 
->   *A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.*
+> [!NOTE]
+> A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.*
 
->   Use the Sales report options windows to create sorting, restriction, printing and emailing options for the reports that have been included with Sales Order Processing.
+Use the Sales report options windows to create sorting, restriction, printing and emailing options for the reports that have been included with Sales Order Processing.
 
->   **To specify a Sales Order Processing report option:**
+**To specify a Sales Order Processing report option:**
 
-1.  Open a Sales reports window. There are separate windows for each report
-    type.
-
->   (Sales \>\> Reports \>\> Setup)
-
->   (Sales \>\> Reports \>\> Posting Journals)
-
->   (Sales \>\> Reports \>\> History)
-
->   (Sales \>\> Reports \>\> Activity) (Sales \>\> Reports \>\> Analysis)
+1.  Open a Sales reports window. There are separate windows for each report type.
+    (Sales \>\> Reports \>\> Setup)
+    (Sales \>\> Reports \>\> Posting Journals)
+    (Sales \>\> Reports \>\> History)
+    (Sales \>\> Reports \>\> Activity) (Sales \>\> Reports \>\> Analysis)
 
 2.  Select a report from the Reports list.
 
 3.  Choose New to open the report options window. Your selection in step 2 determines which report options window appears.
-
->   For report options window information choose Help \>\> Index; then enter the name of the specific report options window.
+    For report options window information choose Help \>\> Index; then enter the name of the specific report options window.
 
 4.  Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
 
 5.  Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
->   *You can enter only one restriction for each restriction type. For instance, you can insert one document number restriction (Order001 to Order099) and one customer ID restriction (AARONFIT0001 to CELLULAR0001).*
+    >[!NOTE]
+    > You can enter only one restriction for each restriction type. For instance, you can insert one document number restriction (Order001 to Order099) and one customer ID restriction (AARONFIT0001 to CELLULAR0001).
 
 6.  Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
@@ -7321,21 +5823,26 @@ created.*
 
 8.  Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file or to any combination of these options. If you mark Ask Each Time, you can select printing options each time you print this report option.
 
->   For more information about creating and printing reports, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
+    For more information about creating and printing reports, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
 9.  To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
 #### Microsoft SQL Server® Reporting Services reports for Sales Order Processing
 
->   You can view Sales Order Processing Reporting Services reports from the Reporting Services Reports list. If you are using Reporting Services 2008 or later, sales metrics for your home page also appear in the Reporting Services Reports list. You can access the Reporting Services Reports list from the navigation pane or from an area page in the Microsoft Dynamics GP application window. This report list appears if you specified the location of your Reporting Services reports using the Reporting Tools Setup window. See your System Setup Guide (Help \>\> Contents \>\> select Setting up the System) for more information.
+You can view Sales Order Processing Reporting Services reports from the Reporting Services Reports list. If you are using Reporting Services 2008 or later, sales metrics for your home page also appear in the Reporting Services Reports list. You can access the Reporting Services Reports list from the navigation pane or from an area page in the Microsoft Dynamics GP application window. This report list appears if you specified the location of your Reporting Services reports using the Reporting Tools Setup window. See your System Setup Guide (Help \>\> Contents \>\> select Setting up the System) for more information.
 
->   The following Reporting Services reports are available for Sales Order Processing.
+The following Reporting Services reports are available for Sales Order Processing.
 
-Sales Distribution History Sales Transaction History Tax Details
+- Sales Distribution History
+- Sales Transaction History Tax Details
+- Sales Document Status
+- SOP Document Analysis
+- Sales Transaction History
+- SOP Document Analysis by Customer
+- Sales Transaction History Payment Details
+- SOP Inventory Sales Report Subreport
 
-##### Sales Document Status SOP Document Analysis Sales Transaction History SOP Document Analysis by Customer Sales Transaction History Payment Details SOP Inventory Sales Report Subreport
-
->   **To print a Sales Order Processing Reporting Services report:**
+**To print a Sales Order Processing Reporting Services report:**
 
 1.  In the navigation pane, choose the Sales button, and then choose the Reporting Services Reports list.
 
@@ -7390,39 +5897,38 @@ Reconcile your sales documents to verify the item quantities and totals on your 
 
 -   Amount remaining
 
->   **To reconcile sales documents:**
+**To reconcile sales documents:**
 
 1.  Open the Reconcile-Remove Sales Documents window.
 
->   (Sales \>\> Utilities \>\> Reconcile-Remove Sales Documents)
+    (Sales \>\> Utilities \>\> Reconcile-Remove Sales Documents)
 
-![](media/96f5bbe4cf650af01d80a3c04928c5dc.jpg)
+    ![](media/96f5bbe4cf650af01d80a3c04928c5dc.jpg)
 
 2.  Select a range of documents to reconcile.
 
 3.  Mark Reconcile Sales Documents.
 
->   *Before you reconcile, you can print the Reconcile-Remove Sales Document Report to verify information about the document ranges you’ve entered by marking the Print Report Only option. If you mark this option, the report will be printed but the documents won’t be reconciled.*
+    > [!NOTE]
+    > Before you reconcile, you can print the Reconcile-Remove Sales Document Report to verify information about the document ranges you’ve entered by marking the Print Report Only option. If you mark this option, the report will be printed but the documents won’t be reconciled.
 
 4.  Choose Process to reconcile the documents. The Reconcile-Remove Sales Document Report will be printed automatically and will list the sales documents that were reconciled.
 
 #### Removing completed documents
 
->   Typically, documents with no remaining quantities are moved to history when the document is transferred, voided, or posted. Occasionally, you might need to remove sales documents that have a remaining quantity of zero and haven’t been moved to history.
+Typically, documents with no remaining quantities are moved to history when the document is transferred, voided, or posted. Occasionally, you might need to remove sales documents that have a remaining quantity of zero and haven’t been moved to history.
 
->   For example, suppose you transfer some of the item quantities from an order to an invoice. Later, you cancel the remaining quantities on that same order. The order won’t be moved to history, even though there are no remaining quantities. You’ll need to move this document to history using the Remove Completed Documents window.
+For example, suppose you transfer some of the item quantities from an order to an invoice. Later, you cancel the remaining quantities on that same order. The order won’t be moved to history, even though there are no remaining quantities. You’ll need to move this document to history using the Remove Completed Documents window.
 
->   **To remove completed documents:**
+**To remove completed documents:**
 
 1.  Open the Reconcile-Remove Sales Documents window.
-
->   (Sales \>\> Utilities \>\> Reconcile-Remove Sales Documents)
+ (Sales \>\> Utilities \>\> Reconcile-Remove Sales Documents)
 
 2.  Select a range of documents to remove.
 
 3.  Mark Remove Completed Documents.
-
->   *Mark Print Report Only to print the Reconcile-Remove Sales Document Report to verify the information about the document ranges you’ve entered before you remove documents.*
+ *Mark Print Report Only to print the Reconcile-Remove Sales Document Report to verify the information about the document ranges you’ve entered before you remove documents.*
 
 4.  Choose Process to remove the documents. The Reconcile-Remove Sales Document Report will be printed automatically and will list the sales documents that were removed.
 
@@ -7430,11 +5936,10 @@ Reconcile your sales documents to verify the item quantities and totals on your 
 
 History records provide useful information for audit purposes. If you’re keeping history records in Sales Order Processing, the records can be maintained for an unlimited number of years. For more information about keeping history records, see *Setting up Sales Order Processing default entries* on page 11.
 
->   Because historical records increase the amount of hard disk space needed, you should remove history periodically to keep only the information you need. If you no longer need certain history records, you can remove all the records or a range of records. If you specify a range to remove, only the documents in the range that have been moved to history will be removed.
+Because historical records increase the amount of hard disk space needed, you should remove history periodically to keep only the information you need. If you no longer need certain history records, you can remove all the records or a range of records. If you specify a range to remove, only the documents in the range that have been moved to history will be removed.
 
->   When you remove history, any corresponding multicurrency information will be removed, as well.
-
->   This information contains the following sections:
+When you remove history, any corresponding multicurrency information will be removed, as well.
+ This information contains the following sections:
 
 -   *Removing Sales Order Processing history*
 
@@ -7444,29 +5949,24 @@ History records provide useful information for audit purposes. If you’re keepi
 
 #### Removing Sales Order Processing history
 
->   You can use the Remove Sales History window to remove the following types of Sales Order Processing history.
+You can use the Remove Sales History window to remove the following types of Sales Order Processing history.
+- **Transaction history** When you remove transaction history for invoices and returns, the transactions won’t appear on sales and salesperson reports in Sales Order Processing. If you have a sales document linked to a purchase order, the link will be removed with the document.
+- **Distribution history** You can remove distribution history for posted invoices or returns. When you remove distribution history, the audit trail code, account, account description, and debit and credit amounts will be removed from Sales Order Processing.
+- **Attachments history** You can remove attachments with transaction history or remove attachments from posted invoices or returns. When you remove attachments, the attachments are removed from the transactions and not removed from where they are stored. This option is available if you are using document attachments.
+- **Journal history** You can remove journal history for posted invoices or returns. When you remove journal history, you won’t be able to reprint posting journals for the information you’re removing.
+- **Deposit history** You can remove deposit history for orders and back orders. When you remove deposit history, detailed information about deposits received will be removed from Sales Order Processing.
 
->   **Transaction history** When you remove transaction history for invoices and returns, the transactions won’t appear on sales and salesperson reports in Sales Order Processing. If you have a sales document linked to a purchase order, the link will be removed with the document.
+When you remove history, transaction information stored in other modules, such as Bank Reconciliation, Receivables Management, and General Ledger, won’t be affected. However, you won’t be able to link to the original Sales Order Processing transaction from these modules.
 
->   **Distribution history** You can remove distribution history for posted invoices or returns. When you remove distribution history, the audit trail code, account, account description, and debit and credit amounts will be removed from Sales Order Processing.
+> [!NOTE]
+> Before removing history, back up all your company’s data. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).
 
->   **Attachments history** You can remove attachments with transaction history or remove attachments from posted invoices or returns. When you remove attachments, the attachments are removed from the transactions and not removed from where they are stored. This option is available if you are using document attachments.
-
->   **Journal history** You can remove journal history for posted invoices or returns. When you remove journal history, you won’t be able to reprint posting journals for the information you’re removing.
-
->   **Deposit history** You can remove deposit history for orders and back orders. When you remove deposit history, detailed information about deposits received will be removed from Sales Order Processing.
-
->   When you remove history, transaction information stored in other modules, such as Bank Reconciliation, Receivables Management, and General Ledger, won’t be affected. However, you won’t be able to link to the original Sales Order Processing transaction from these modules.
-
->   *Before removing history, back up all your company’s data. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
-
->   **To remove Sales Order Processing history:**
+**To remove Sales Order Processing history:**
 
 1.  Open the Remove Sales History window.
+    (Sales \>\> Utilities \>\> Remove Sales History)
 
->   (Sales \>\> Utilities \>\> Remove Sales History)
-
-![](media/d345c36bb75ecf0d19d5eb5719469b4c.jpg)
+    ![](media/d345c36bb75ecf0d19d5eb5719469b4c.jpg)
 
 2.  Select the history type you want to remove.
 
@@ -7474,31 +5974,33 @@ History records provide useful information for audit purposes. If you’re keepi
 
 4.  Choose Insert; the range restriction will be displayed in the Restrictions list. You can select another range type and insert another restriction.
 
->   *You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that document numbers INV1000 through INV1010 should be removed, you can’t enter another restriction for document numbers INV1100 through INV1150. To remove multiple ranges of history, you must remove each range separately.*
+    > [!NOTE]
+    > You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that document numbers INV1000 through INV1010 should be removed, you can’t enter another restriction for document numbers INV1100 through INV1150. To remove multiple ranges of history, you must remove each range separately.
 
 5.  Mark the type of records you want to remove. If you’re removing Transaction history you can mark Distributions to remove distribution records at the same time.
 
->   If you are using document attachments and want to remove attachments without removing transaction history, unmark Transaction and then mark Attachments.
+    If you are using document attachments and want to remove attachments without removing transaction history, unmark Transaction and then mark Attachments.
 
 6.  Mark Print Report to print the Transaction Removal Report after history has been removed.
 
->   *You can print the Transaction Removal Report to verify the ranges you’ve entered before you remove history. Unmark your Remove selections, select Print Report, and choose Process.*
+    > [!TIP]
+    > You can print the Transaction Removal Report to verify the ranges you’ve entered before you remove history. Unmark your Remove selections, select Print Report, and choose Process.*
 
 7.  Choose Process to begin removing history.
 
 #### Removing tax history
 
->   Use the Tax History Removal window to remove tax detail transactions. Only the tax history for the range you specify will be removed. Once tax history has been removed, the tax details in the range you’ve removed won’t be printed on tax reports.
+Use the Tax History Removal window to remove tax detail transactions. Only the tax history for the range you specify will be removed. Once tax history has been removed, the tax details in the range you’ve removed won’t be printed on tax reports.
 
->   *Before removing history, back up your company’s accounting data. For more information on making backups in Microsoft Dynamics GP, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
+> [!NOTE]
+> Before removing history, back up your company’s accounting data. For more information on making backups in Microsoft Dynamics GP, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).
 
->   **To remove tax history:**
+**To remove tax history:**
 
 1.  Open the Tax History Removal window.
+    (Administration \>\> Utilities \>\> Company \>\> Remove Tax History)
 
->   (Administration \>\> Utilities \>\> Company \>\> Remove Tax History)
-
-![](media/1f872ef94674924ce03a7468c983a376.jpg)
+    ![](media/1f872ef94674924ce03a7468c983a376.jpg)
 
 2.  Select whether you want to remove tax detail transactions and print the Tax History Removal Report, remove the tax detail transactions, or print the Tax History Removal Report.
 
@@ -7510,26 +6012,29 @@ History records provide useful information for audit purposes. If you’re keepi
 
 #### Removing Intrastat history
 
->   Use the Remove Intrastat History window to remove Intrastat history records that are no longer necessary. Only the Intrastat records for the range you specify will be removed.
+Use the Remove Intrastat History window to remove Intrastat history records that are no longer necessary. Only the Intrastat records for the range you specify will be removed.
 
->   *Before removing history, back up your company’s accounting data. For more information on making backups in Microsoft Dynamics GP, see the System Administrator’s Guide \>\> Contents \>\> select System Administration).*
+> [!NOTE]
+> Before removing history, back up your company’s accounting data. For more information on making backups in Microsoft Dynamics GP, see the System Administrator’s Guide \>\> Contents \>\> select System Administration).
 
->   Once history has been removed, you won’t be able to print the Intrastat removal reports for the ranges of information you’ve removed.
+Once history has been removed, you won’t be able to print the Intrastat removal reports for the ranges of information you’ve removed.
 
->   **To remove Intrastat history:**
+**To remove Intrastat history:**
 
 1.  Open the Remove Intrastat History window.
 
->   (Administration \>\> Utilities \>\> Company \>\> Remove Intrastat History)
+    (Administration \>\> Utilities \>\> Company \>\> Remove Intrastat History)
 
-![](media/c01f6498db0b24e9d4fb67e033d83f22.jpg)
+    ![](media/c01f6498db0b24e9d4fb67e033d83f22.jpg)
 
 2.  Select a range type for the historical information you want to remove. Define the beginning and the end of the range, then choose Insert to display the range.
 
->   *You can enter and insert additional ranges. However, you can enter only one range for each range type. For example, if you enter a restriction specifying that history should be deleted for customer records COMPUTER0003 through GRAHAMAR0001, you can’t enter another restriction for customer IDs CONTINEN0001 through EXECUTIV0001.*
+    > [!NOTE]
+    > You can enter and insert additional ranges. However, you can enter only one range for each range type. For example, if you enter a restriction specifying that history should be deleted for customer records COMPUTER0003 through GRAHAMAR0001, you can’t enter another restriction for customer IDs CONTINEN0001 through EXECUTIV0001.
 
 3.  Mark Remove Transactions, then mark Print Report to print the Intrastat removal reports for the range of customer records or vendor records you’ve specified. Print these reports to retain a permanent record of your past Intrastat records after you’ve cleared history.
 
->   *You can print the Intrastat removal reports without removing history. To do so, mark only Print Report and choose OK.*
+    > [!NOTE]
+    > You can print the Intrastat removal reports without removing history. To do so, mark only Print Report and choose OK.
 
 4.  Choose Process to remove the selected history records.
