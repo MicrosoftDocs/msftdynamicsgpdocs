@@ -89,6 +89,7 @@
 ## Distribution
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
 ### [Sales Order Processing](distribution/sales-order-processing.md)
+### [Glossary](distribution/glossary.md)
 
 <!--- payroll -->
 ## Payroll 
