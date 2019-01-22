@@ -89,6 +89,12 @@
 ## Distribution
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
 ### [Sales Order Processing](distribution/sales-order-processing.md)
+#### [Sales Order Processing Part 1: Setup](distribution/sales-order-processing.md#part-1-setup)
+#### [Sales Order Processing Part 2: Transaction entry](distribution/sales-order-processing-part2-transaction-entry.md)
+#### [Sales Order Processing Part 3: Allocation, Fulfillment, and Purchasing](distribution/sales-order-processing-part3-allocation-fulfillment-purchasing.md)
+#### [Sales Order Processing Part 4: Transaction activity](distribution/sales-order-processing-part4-transaction-activity.md)
+#### [Sales Order Processing Part 5: Inquiries and reports](distribution/sales-order-processing-part5-inquiries-reports.md)
+#### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utlities.md)
 ### [Glossary](distribution/glossary.md)
 
 <!--- payroll -->
