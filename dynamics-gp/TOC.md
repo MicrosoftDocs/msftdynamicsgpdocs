@@ -94,7 +94,7 @@
 #### [Sales Order Processing Part 3: Allocation, Fulfillment, and Purchasing](distribution/sales-order-processing-part3-allocation-fulfillment-purchasing.md)
 #### [Sales Order Processing Part 4: Transaction activity](distribution/sales-order-processing-part4-transaction-activity.md)
 #### [Sales Order Processing Part 5: Inquiries and reports](distribution/sales-order-processing-part5-inquiries-reports.md)
-#### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utlities.md)
+#### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utilities.md)
 ### [Glossary](distribution/glossary.md)
 
 <!--- payroll -->

@@ -317,6 +317,9 @@ The following table lists the report types available in Sales Order Processing a
 
 | **Report type**    | **Report**                                       | **Printing method**               |
 |--------------------|--------------------------------------------------|-----------------------------------|
+|TEST|TEST-|-TEST----|
+
+| **Report type**    | **Report**                                       | **Printing method**               |
 | Activity reports   | Sales Quote Report \* Sales Open Order Report \* Sales Back Order Report \* Sales Order Fulfillment Report Sales Document Status Report   | Create report options in the Sales Activity Reports window.   </br> \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.|
 | Setup reports | Sales Order Processing Setup List </br>Sales Quote Setup List </br>Sales Order Setup List</br> Sales Invoice Setup List</br> Sales Back Order Setup List</br> Sales Return Setup List</br> Sales Process Holds Setup List</br> Prospect Setup List</br> Prospect List-Detailed Sales User-defined Fields Setup Lists Picking Instructions Report Customer Picking Instructions List Advanced Picking Setup Sales Fulfillment Workflow Setup List | Choose \>\> Print in the setup windows **or** create report options in the Sales Setup Reports window.   |
 | Documents | Quote \*† Order \*† Invoice \*† Back order \*† Return \*† Picking ticket † Packing slip † Bulk Picking ticket † Fulfillment order †  | Select a document in the Sales Transaction Entry window and choose File \>\> Print to print a single document, select a batch in the Sales Batch Entry window and choose File \>\> Print to print an entire batch **or** choose Sales \>\> Transactions \>\> Print Sales Documents to print a range of documents **or** choose Sales \>\> Inquiry \>\> Sales Documents to print from history. |
@@ -430,5 +433,5 @@ The following Reporting Services reports are available for Sales Order Processin
 [Sales Order Processing Part 2: Transaction entry](sales-order-processing-part2-transaction-entry.md)  
 [Sales Order Processing Part 3: Allocation, Fulfillment, and Purchasing](sales-order-processing-part3-allocation-fulfillment-purchasing.md)  
 [Sales Order Processing Part 4: Transaction activity](sales-order-processing-part4-transaction-activity.md)  
-[Sales Order Processing Part 6: Utilities](sales-order-processing-part6-utlities.md)  
+[Sales Order Processing Part 6: Utilities](sales-order-processing-part6-utilities.md)  
 [Glossary](glossary.md)  

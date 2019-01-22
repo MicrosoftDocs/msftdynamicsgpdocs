@@ -1437,5 +1437,5 @@ If you are using customer credit limit override workflow, orders that exceed the
 [Sales Order Processing Part 2: Transaction entry](sales-order-processing-part2-transaction-entry.md)  
 [Sales Order Processing Part 3: Allocation, Fulfillment, and Purchasing](sales-order-processing-part3-allocation-fulfillment-purchasing.md)  
 [Sales Order Processing Part 5: Inquiries and reports](sales-order-processing-part5-inquiries-reports.md)  
-[Sales Order Processing Part 6: Utilities](sales-order-processing-part6-utlities.md)  
+[Sales Order Processing Part 6: Utilities](sales-order-processing-part6-utilities.md)  
 [Glossary](glossary.md)  

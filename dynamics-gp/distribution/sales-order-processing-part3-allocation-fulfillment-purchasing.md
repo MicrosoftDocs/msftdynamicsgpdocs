@@ -1027,5 +1027,5 @@ You also can print the report for all unposted receipts in Purchase Order Proces
 [Sales Order Processing Part 2: Transaction entry](sales-order-processing-part2-transaction-entry.md)  
 [Sales Order Processing Part 4: Transaction activity](sales-order-processing-part4-transaction-activity.md)  
 [Sales Order Processing Part 5: Inquiries and reports](sales-order-processing-part5-inquiries-reports.md)  
-[Sales Order Processing Part 6: Utilities](sales-order-processing-part6-utlities.md)  
+[Sales Order Processing Part 6: Utilities](sales-order-processing-part6-utilities.md)  
 [Glossary](glossary.md)  
