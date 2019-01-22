@@ -161,7 +161,7 @@ You can set up an inquiry with multiple restrictions, save it, and use this inqu
 
 Use the Sales Document Range Inquiry window to view customized inquiries based on multiple range restrictions. This is useful if you frequently view the same document information. For example, you can set up an inquiry ID to display the quotes for the month of January that contain a particular item.
 
-You can set up inquiry IDs in the Sales Inquiry Restriction window. For more information about customized inquiries, see *Creating inquiries for sales documents* on page 224.
+You can set up inquiry IDs in the Sales Inquiry Restriction window. For more information about customized inquiries, see [Creating inquiries for sales documents](#creating-inquiries-for-sales-documents).
 
 #### To view sales information from a custom inquiry
 
@@ -311,54 +311,24 @@ Reports information is divided into the following sections:
 
 ### Sales Order Processing report summary
 
-You can print several types of reports using Sales Order Processing. Some reports automatically are printed when you complete certain procedures; for example, posting journals can be printed automatically when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Specifying a Sales Order Processing report option* on page 233.
+You can print several types of reports using Sales Order Processing. Some reports automatically are printed when you complete certain procedures; for example, posting journals can be printed automatically when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to [Specifying a Sales Order Processing report option](#specifying-a-sales-order-processing-report-option).
 
 The following table lists the report types available in Sales Order Processing and the reports included in those categories.
 
 | **Report type**    | **Report**                                       | **Printing method**               |
 |--------------------|--------------------------------------------------|-----------------------------------|
-|Activity reports|Sales Quote Report \* Sales Open Order Report \* Sales Back Order Report \* Sales Order Fulfillment Report Sales Document Status Report |Create report options in the Sales Activity Reports window.   </br> \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.|
+|Activity reports|Sales Quote Report \* </br>Sales Open Order Report \*</br> Sales Back Order Report \* </br>Sales Order Fulfillment Report Sales Document Status Report |Create report options in the Sales Activity Reports window.   </br> \* Indicates reports that can be printed with multicurrency information displayed. </br>† Indicates reports that can be assigned to named printers. </br>See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.|
 |Setup reports|Sales Order Processing Setup List </br>Sales Quote Setup List </br>Sales Order Setup List</br> Sales Invoice Setup List</br> Sales Back Order Setup List</br> Sales Return Setup List</br> Sales Process Holds Setup List</br> Prospect Setup List</br> Prospect List-Detailed Sales User-defined Fields Setup Lists Picking Instructions Report Customer Picking Instructions List Advanced Picking Setup Sales Fulfillment Workflow Setup List|Choose \>\> Print in the setup windows **or** create report options in the Sales Setup Reports window.|
-
-| **Report type**    | **Report**                                       | **Printing method**               |
-| Documents | Quote \*† Order \*† Invoice \*† Back order \*† Return \*† Picking ticket † Packing slip † Bulk Picking ticket † Fulfillment order †  | Select a document in the Sales Transaction Entry window and choose File \>\> Print to print a single document, select a batch in the Sales Batch Entry window and choose File \>\> Print to print an entire batch **or** choose Sales \>\> Transactions \>\> Print Sales Documents to print a range of documents **or** choose Sales \>\> Inquiry \>\> Sales Documents to print from history. |
-| Labels   | Address labels COD labels Prospect mailing labels | Choose Administration \>\> Reports \>\> Company \>\> Mailing labels and choose a label type from the reports list. |
-| Posting reports | Sales Edit List \* Sales Batch List \* Sales Posting Journal \*† Sales Voided Journal \*† Distribution Breakdown Register \*† Inventory Sales Register \*† Salesperson Register \*† Sales Deposits Journal \*† | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure.  |
-| Edit lists| Sales Edit List\* Sales Batch List\* Sales Edit List Currency Summary\*† Edit Sales Document Status| Choose File \>\> Print in the window you used to complete the procedure. |
-| History reports | Sales Transaction History Report\* Sales History Register\* Distribution Detail History Report\* Sales Quote History Report\* Sales Order History Report\* Sales Serial/Lot History Report\*| Create report options in the Sales History Reports window. </br> \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. |
-| Utility reports | Transaction Removal Report | These reports will be printed when you complete the corresponding procedure.  |
-| Analysis reports  | Sales Document Analysis Reports †  | Create report options in the MISSINGCONTENT|
-| Processing reports | Holds Processing Preview List   | These reports will be printed when you complete the corresponding procedure. |
-| Inquiry reports | Sales Document Inquiry Report | Choose File \>\> Print in the corresponding Inquiry window. </br> \* Indicates reports that can be printed with multicurrency information displayed.  |
- Journal Removal Report<!--something wrong here-->
- Account Distribution Removal Report
- Deposits Removal Report
- Reconcile-Remove Sales Documents Report
- Edit Sales Document Status Report
- Salesperson Report \*†
- Inventory Sales Report \*†
- Sales Analysis Reports window.
- Sales Holds Processing Journal
- Sales Transfer Log
- Order Fulfillment Status Report
- Allocation/Fulfillment Exception Report
- Print Documents Exception Report
- Purchase Orders Preview List †
- Purchase Orders Generation Register †
- Instruction ID Preview List
- Instruction ID Processing Journal
- Item Print Option Preview List
- Item Print Option Processing Journal
- Sales Bulk Exception Report
- Automatic Order Allocation Report
- Document Inquiry Report
- Item Inquiry Report
- Serial-Lot Number Inquiry Report
- Process Holds Inquiry Report
- Sales Document Status Inquiry Report
- Automatic Allocation Preview Report
-
-† Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.
+|Documents|Quote \*†</br> Order \*†</br> Invoice \*†</br> Back order \*†</br> Return \*†</br> Picking ticket †</br> Packing slip †</br> Bulk Picking ticket †</br> Fulfillment order †|Select a document in the Sales Transaction Entry window and choose File \>\> Print to print a single document, select a batch in the Sales Batch Entry window and choose File \>\> Print to print an entire batch **or** choose Sales \>\> Transactions \>\> Print Sales Documents to print a range of documents **or** choose Sales \>\> Inquiry \>\> Sales Documents to print from history.|
+|Labels|Address labels COD labels Prospect mailing labels|Choose Administration \>\> Reports \>\> Company \>\> Mailing labels and choose a label type from the reports list.|
+|Posting reports|Sales Edit List \*</br> Sales Batch List \*</br> Sales Posting Journal \*†</br> Sales Voided Journal \*†</br> Distribution Breakdown Register \*†</br> Inventory Sales Register \*†</br> Salesperson Register \*†</br> Sales Deposits Journal \*† |Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure.|
+|Edit lists|Sales Edit List\*</br> Sales Batch List\*</br> Sales Edit List Currency Summary\*†</br> Edit Sales Document Status|Choose File \>\> Print in the window you used to complete the procedure.|
+|History reports|Sales Transaction History Report\*</br> Sales History Register\*</br> Distribution Detail History Report\*</br> Sales Quote History Report\*</br> Sales Order History Report\*</br> Sales Serial/Lot History Report\*|Create report options in the Sales History Reports window. </br> \* Indicates reports that can be printed with multicurrency information displayed. </br>† Indicates reports that can be assigned to named printers. </br>See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.|
+|Utility reports|Transaction Removal Report|These reports will be printed when you complete the corresponding procedure.|
+|Analysis reports|Sales Document Analysis Reports †|Create report options in the MISSINGCONTENT|
+|Processing reports|Holds Processing Preview List |These reports will be printed when you complete the corresponding procedure.|
+|Inquiry reports|Sales Document Inquiry Report|Choose File \>\> Print in the corresponding Inquiry window. </br> \* Indicates reports that can be printed with multicurrency information displayed.|
+|<!--something wrong here-->|Journal Removal Report</br> Account Distribution Removal Report</br> Deposits Removal Report</br> Reconcile-Remove Sales Documents Report</br> Edit Sales Document Status Report</br> Salesperson Report \*†</br>Inventory Sales Report \*†</br> Sales Analysis Reports window</br> Sales Holds Processing Journal</br> Sales Transfer Log</br> Order Fulfillment Status Report</br> Allocation/Fulfillment Exception Report</br> Print Documents Exception Report</br> Purchase Orders Preview List †</br> Purchase Orders Generation Register †</br> Instruction ID Preview List</br> Instruction ID Processing Journal</br> Item Print Option Preview List</br> Item Print Option Processing Journal</br> Sales Bulk Exception Report</br> Automatic Order Allocation Report</br> Document Inquiry Report</br> Item Inquiry Report</br> Serial-Lot Number Inquiry Report</br> Process Holds Inquiry Report</br> Sales Document Status Inquiry Report</br> Automatic Allocation Preview Report|† Indicates reports that can be assigned to named printers.</br> See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.|
 
 ### Specifying a Sales Order Processing report option
 

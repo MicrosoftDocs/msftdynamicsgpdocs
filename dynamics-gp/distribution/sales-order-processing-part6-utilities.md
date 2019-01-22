@@ -93,7 +93,7 @@ For example, suppose you transfer some of the item quantities from an order to a
 
 ## Chapter 31: Sales history removal
 
-History records provide useful information for audit purposes. If you’re keeping history records in Sales Order Processing, the records can be maintained for an unlimited number of years. For more information about keeping history records, see *Setting up Sales Order Processing default entries* on page 11.
+History records provide useful information for audit purposes. If you’re keeping history records in Sales Order Processing, the records can be maintained for an unlimited number of years. For more information about keeping history records, see [Setting up Sales Order Processing default entries](sales-order-processing.md#setting-up-sales-order-processing-default-entries).
 
 Because historical records increase the amount of hard disk space needed, you should remove history periodically to keep only the information you need. If you no longer need certain history records, you can remove all the records or a range of records. If you specify a range to remove, only the documents in the range that have been moved to history will be removed.
 

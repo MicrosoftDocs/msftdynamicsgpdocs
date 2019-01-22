@@ -31,7 +31,7 @@ The following topics are discussed:
 
 When you allocate an item, it is reserved in inventory and the quantity available for the item and for the site is reduced in inventory. You must allocate items before you can fulfill them.
 
-If the order ID, fulfillment order/invoice ID, or invoice ID you’re using was not set up to use a separate fulfillment process, item quantities also will be fulfilled when they’re allocated. For more information about setting up an order ID or an invoice ID, see *Setting up orders* on page 30 or *Setting up invoices* on page 38.
+If the order ID, fulfillment order/invoice ID, or invoice ID you’re using was not set up to use a separate fulfillment process, item quantities also will be fulfilled when they’re allocated. For more information about setting up an order ID or an invoice ID, see [Setting up orders](sales-order-processing.md#setting-up-orders) or [Setting up invoices](sales-order-processing.md#setting-up-invoices).
 
 This information contains the following sections:
 
@@ -126,7 +126,7 @@ Depending on how Sales Order Processing was configured, you may be able to enter
 
 - **Cancel Balance** The quantity shortage amount will be canceled and the quantity you have available at the site will be sold. For example, if you entered 5 for the quantity ordered for an item but have 3 available in inventory, the quantity ordered remains at 5, the quantity invoiced is set to 3, the quantity canceled is set to 2.
 
-- **Distribute** When you select Distribute and close the Sales Quantity Shortage Options window, the Sales Item Quantity Distribution Entry window opens. In this window, you can substitute items and sell items from another site. For more information, see *Selling an item from another site* on page 132 or *Substituting an item* on page 133.
+- **Distribute** When you select Distribute and close the Sales Quantity Shortage Options window, the Sales Item Quantity Distribution Entry window opens. In this window, you can substitute items and sell items from another site. For more information, see [Selling an item from another site](#selling-an-item-from-another-site) or [Substituting an item](#substituting-an-item).
 
 If you’re using extended pricing and you choose to distribute the shortage, and if a promotion exists for the item and quantity you entered, the Promotion Alert window will open, where you can accept or reject the promotion. If the promotion is for a free item, the Promotion Alert window will not open.
 
@@ -233,7 +233,7 @@ In the Sales Transaction Entry window, when you enter an amount in the Quantity 
 
 If Sales Order Processing is not set up to automatically assign serial and lot numbers, you can enter or select a serial or lot number. When the item is fulfilled, the Sales Serial Number Entry or Sales Lot Number Entry window will open and you can assign the serial or lot number to the item sold. If a lot-numbered item is fulfilled and your system is set up to automatically assign lot numbers, a message won’t be displayed if the expiration date for the lot number has expired.
 
-If there is a quantity shortage on the item, the Sales Quantity Shortage Option window will open and you must select a shortage option for the item. For more information about shortages, see *Quantity shortage options* on page 130.
+If there is a quantity shortage on the item, the Sales Quantity Shortage Option window will open and you must select a shortage option for the item. For more information about shortages, see [Quantity shortage options](#quantity-shortage-options).
 
 If you back order or cancel a quantity, the quantity that was allocated will be reduced by the quantity back ordered or canceled.
 
@@ -273,7 +273,7 @@ If an order, invoice, or fulfillment order exceeds the customer’s credit limit
 
 Use the Sales Automatic Order Allocation window to select the documents with items on back order to allocate. Use the Sales Automatic Order Allocation Preview window to allocate the items.
 
-If you’re using sales fulfillment workflow, you can select a group of documents and then allocate items for those documents at the same time. To allocate items for only one document, refer to *Allocating items by document or batch* on page 136.
+If you’re using sales fulfillment workflow, you can select a group of documents and then allocate items for those documents at the same time. To allocate items for only one document, refer to [Allocating items by document or batch](#allocating-items-by-document-or-batch).
 
 If an order or fulfillment order exceeds the customer’s credit limit and you are using customer credit limit override workflow, the document must be approved before you can allocate items. Orders and fulfillment orders that don’t need approval can be allocated. You can allocate items for orders and fulfillment orders in the Sales Transaction Entry window that are pending approval if you can approve the documents.
 
@@ -317,7 +317,7 @@ Items on orders and invoices must be successfully allocated before they can be f
 
 ![screenshot](media/bf5ad5004255f3d9d53f1e62a814b499.jpg)
 
-If a quantity alert appears, choose the quantity alert icon button to allocate the item again. If the allocation is unsuccessful, the Sales Quantity Shortage Options window will open and you can determine how to handle the shortage. For more information about quantity shortages, see *Quantity shortage options* on page 130.
+If a quantity alert appears, choose the quantity alert icon button to allocate the item again. If the allocation is unsuccessful, the Sales Quantity Shortage Options window will open and you can determine how to handle the shortage. For more information about quantity shortages, see [Quantity shortage options](#quantity-shortage-options).
 
 If you enter a kit item and the quantity alert icon appears, choose the quantity alert icon button to open the Sales Kit Options window where you can allocate the kit again, substitute components, or decrease component quantities.
 
@@ -437,7 +437,7 @@ If you are using customer credit limit override workflow, orders, fulfillment or
 
 10. Choose the Serial/Lot button to open the Sales Serial Number Entry window or the Sales Lot Number Entry window, where you can assign numbers and bins to serial- or lot-numbered items.
 
-    For more information about serial- or lot-numbered items, see *Serial- or lotnumbered items* on page 61 or the Inventory Control documentation.
+    For more information about serial- or lot-numbered items, see [Serial- or lotnumbered items](sales-order-processing-part2-transaction-entry.md#serial--or-lot-numbered-items) or the Inventory Control documentation.
 
 11. Choose Save and close the window. The Order Fulfillment Status Report will be printed.
 
@@ -473,12 +473,12 @@ You can use the Purchase Orders Preview window to view and modify pending purcha
 
 For example, suppose you enter a sales order with three line items. One of the line items is in stock but you need to order the other two. If you back order the quantities for the two items, you can create a purchase order using the back-ordered quantity from the sales order instead of reentering the items on a purchase order in Purchase Order Processing. You can review the purchase order information and make changes before generating the purchase order for the items.
 
-If you already have entered a purchase order for the back-ordered items, you can link the sales line items to the purchase order. For more information on linking sales documents to existing purchase orders, see *Chapter 22, “Links to existing purchase orders.”*
+If you already have entered a purchase order for the back-ordered items, you can link the sales line items to the purchase order. For more information on linking sales documents to existing purchase orders, see [Chapter 22: Links to existing purchase orders](#chapter-22-links-to-existing-purchase-orders).
 
-When the items on the purchase order are received, they are allocated or fulfilled on the sales document automatically. For more information, see *Chapter 23, “Receiving purchase orders.”*
+When the items on the purchase order are received, they are allocated or fulfilled on the sales document automatically. For more information, see [Chapter 23: Receiving purchase orders](#chapter-23-receiving-purchase-orders)
 
 > [!NOTE]
-> For information on setup options related to linking sales orders and purchase orders, see Setting up taxes and options on page 15.
+> For information on setup options related to linking sales orders and purchase orders, see [Setting up taxes and options](sales-order-processing.md#setting-up-taxes-and-options).
 
 - **View pending purchase orders** In the Purchase Orders Preview window, you can view the purchase orders that could be created from the sales documents you chose.
 
@@ -508,16 +508,16 @@ The Purchase Orders Preview window shows the pending purchase orders that can be
 
 If you open the Purchase Orders Preview window from a sales document in the Sales Transaction Entry window, you will see the purchase orders that can be generated from that sales document.
 
-If you open the Purchase Orders Preview window from the Sales Range Inquiry window, you will see the purchase orders that can be generated from the sales documents that are defined in the inquiry window and that have a Needs purchase commitment status. For more information about commitment statuses, see *Checking the commitment status* on page 164.
+If you open the Purchase Orders Preview window from the Sales Range Inquiry window, you will see the purchase orders that can be generated from the sales documents that are defined in the inquiry window and that have a Needs purchase commitment status. For more information about commitment statuses, see [Checking the commitment status](#checking-the-commitment-status).
 
-There are several views you can use to display information in the Purchase Orders Preview window. You can use these views to examine the information on the pending purchase orders and make changes before generating the purchase orders. Each option includes a tree view and a window. For more information, see *Purchase Order Preview window tabs* on page 150 and *The tree view* on page 150.
+There are several views you can use to display information in the Purchase Orders Preview window. You can use these views to examine the information on the pending purchase orders and make changes before generating the purchase orders. Each option includes a tree view and a window. For more information, see [Purchase Order Preview window tabs](#purchase-order-preview-window-tabs) and [The tree view](#the-tree-view).
 
 The Purchase Orders Preview window contains several buttons and icons to help you view and change information in the window. These buttons and icons are listed below.
 
 | **Button or icon**                         | **Description**  |
 |--------------------------------------------|------------------|
-| [./media/image47.jpg](./media/image47.jpg) | Error—Appears beside objects in the tree view. You must correct the error before you can create the purchase order. For more information on errors, see *Pending purchase order errors and warnings* on page 149. |
-| [./media/image48.jpg](./media/image48.jpg) | Warning—Appears beside objects in the tree view. You can create a purchase order even if it contains a warning. For more information on warnings, see *Pending purchase order errors and warnings* on page 149.   |
+| [./media/image47.jpg](./media/image47.jpg) | Error—Appears beside objects in the tree view. You must correct the error before you can create the purchase order. For more information on errors, see [Pending purchase order errors and warnings](#pending-purchase-order-errors-and-warnings). |
+| [./media/image48.jpg](./media/image48.jpg) | Warning—Appears beside objects in the tree view. You can create a purchase order even if it contains a warning. For more information on warnings, see [Pending purchase order errors and warnings](#pending-purchase-order-errors-and-warnings).   |
 | [./media/image49.png](./media/image49.png) | Expand all objects—Choose to expand the tree view to display all objects.   |
 | [./media/image50.png](./media/image50.png) | Collapse all objects—Choose to collapse the tree view to display only the purchase order objects.   |
 | [./media/image51.png](./media/image51.png) | Add vendor—Choose to add a new vendor in the tree view. A new purchase order will be created under the new vendor and you can assign line items to the new purchase order.   |
@@ -528,7 +528,7 @@ The Purchase Orders Preview window contains several buttons and icons to help yo
 
 If a problem is detected on a pending purchase order, an error or warning icon will appear next to the object in the tree view and an alert message will be displayed when you attempt to generate the purchase orders. Additional information about the error or warning will be at the bottom of the window.
 
-For more information about the tree view, see *The tree view* on page 150.
+For more information about the tree view, see [The tree view](#the-tree-view).
 
 - **Errors** A pending purchase order that contains an error won’t be generated. You must correct the error before generating the purchase order. Examples of errors include no vendor ID, an inactive vendor or no purchasing unit of measure.
 
@@ -544,7 +544,7 @@ The Purchase Orders Preview window uses a tree view to show pending or  existing
 
 A check mark next to the object—vendor, purchase order, item, or sales document— means that the object will be included when purchase orders are generated. You can mark or unmark an object before generating the purchase orders. If you mark or unmark an object, all of the objects associated with that object will be marked or unmarked also. For example, if you unmark a vendor, all of the purchase orders listed under the vendor in the tree view will be unmarked.
 
-If an error or warning icon appears next to an object in the tree view, additional information will be displayed at the bottom of the window. In the Purchase Orders Preview window, you can modify the pending purchase orders to address the errors and warnings. For more information, see *Pending purchase order errors and warnings* on page 149.
+If an error or warning icon appears next to an object in the tree view, additional information will be displayed at the bottom of the window. In the Purchase Orders Preview window, you can modify the pending purchase orders to address the errors and warnings. For more information, see [Pending purchase order errors and warnings](#pending-purchase-order-errors-and-warnings).
 
 You can print the Purchase Orders Preview list before generating purchase orders by choosing the Print icon button or by choosing File \>\> Print in the Purchase Orders Preview window. This report will list all of the pending purchase order information in the tree view, as well as any errors and warnings.
 
@@ -558,7 +558,7 @@ The Purchase Orders Preview window uses tabs to organize the information relatin
 
     ![screenshot](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
 
-    If a primary vendor isn’t assigned to an item, (NO VENDOR) will appear in the vendor ID and an error will appear next to the vendor in the tree. You must assign a vendor using either the PO tab or Item tab before a purchase order can be generated. For information about assigning a vendor, see *Modifying a purchase order using the tabs* on page 154.
+    If a primary vendor isn’t assigned to an item, (NO VENDOR) will appear in the vendor ID and an error will appear next to the vendor in the tree. You must assign a vendor using either the PO tab or Item tab before a purchase order can be generated. For information about assigning a vendor, see [Modifying a purchase order using the tabs](#modifying-a-purchase-order-using-the-tabs).
 
     The most recent purchase orders for this vendor are listed at the bottom of the window. You can sort the purchase orders in ascending or descending order by clicking the column heading. The ascending/descending sort option can be used in any column.
 
@@ -570,11 +570,11 @@ The Purchase Orders Preview window uses tabs to organize the information relatin
 
     If a primary vendor wasn’t assigned to an item, the vendor ID will be blank. You must assign a vendor before a purchase order can be generated.
 
-    You can change the information in this window. For more information, see *Modifying a purchase order using the tabs* on page 154.
+    You can change the information in this window. For more information, see *[Modifying a purchase order using the tabs](#modifying-a-purchase-order-using-the-tabs).
 
 - **Item tab**
 
-    Use the item tab to view information about the item that is highlighted in the tree view. You can change the quantity to purchase, vendor ID, vendor item, unit cost, extended cost, and required date on the pending purchase order. You also can link the item to an existing purchase order by using the purchase order lookup button. For more information, see *Modifying a purchase order using the tabs* on page 154.
+    Use the item tab to view information about the item that is highlighted in the tree view. You can change the quantity to purchase, vendor ID, vendor item, unit cost, extended cost, and required date on the pending purchase order. You also can link the item to an existing purchase order by using the purchase order lookup button. For more information, see [Modifying a purchase order using the tabs](#modifying-a-purchase-order-using-the-tabs).
 
     ![screenshot](media/cc3125a8300af0e91e89fc805e2b78f3.jpg)
 
@@ -611,7 +611,7 @@ You can add a vendor to the tree using the tree view, regardless of which tab yo
 
 5. In the purchase order tab, enter or select a vendor ID for the new vendor object in the tree view.
 
-6. Use the Organize button to move line items from other pending purchase orders to the new purchase order. You can also move items using the vendor or the item tab. For more information about the Organize button, see *Modifying a purchase order in the tree view* on page 153.
+6. Use the Organize button to move line items from other pending purchase orders to the new purchase order. You can also move items using the vendor or the item tab. For more information about the Organize button, see [Modifying a purchase order in the tree view](#modifying-a-purchase-order-in-the-tree-view).
 
 ### Modifying a purchase order in the tree view
 
@@ -654,7 +654,7 @@ Use the Purchase Orders Preview window tabs to modify information such as vendor
 
 For example, assume you are short ten items to satisfy a sales order. The pending purchase order will show 10 as the default quantity to purchase. If you want to stock some extra items, you can increase the quantity to purchase on the Item tab.
 
-If there are errors or warnings in the tree view relating to a pending purchase order, you can make corrections to the information before generating the purchase order. For more information about errors and warnings, see *Pending purchase order errors and warnings* on page 149.
+If there are errors or warnings in the tree view relating to a pending purchase order, you can make corrections to the information before generating the purchase order. For more information about errors and warnings, see [Pending purchase order errors and warnings](#pending-purchase-order-errors-and-warnings).
 
 You can change the information on the PO tab and the Item tab, but not the Vendor tab or the Sales tab.
 
@@ -718,11 +718,11 @@ After you have viewed and modified pending purchase orders, you must generate th
 
     ![screenshot](media/fceafe28bd570cf2a06103f439441535.jpg)
 
-2. Choose an existing Inquiry ID or create a new Inquiry ID to select a range of sales documents. For more information about creating an inquiry ID, see *Creating inquiries for sales documents* on page 224.
+2. Choose an existing Inquiry ID or create a new Inquiry ID to select a range of sales documents. For more information about creating an inquiry ID, see [Creating inquiries for sales documents](#creating-inquiries-for-sales-documents).
 
 3. Choose Redisplay to update the window.
 
-4. Choose Purchase to open the Purchase Orders Preview window. Only sales documents that contain items with a Needs Purchase commitment status appear in the Purchase Orders Preview window. For more information about commitment status, see *Checking the commitment status* on page 164.
+4. Choose Purchase to open the Purchase Orders Preview window. Only sales documents that contain items with a Needs Purchase commitment status appear in the Purchase Orders Preview window. For more information about commitment status, see [Checking the commitment status](#checking-the-commitment-status).
 
 5. Review the information and make any changes to the pending purchase order information.
 
@@ -849,7 +849,7 @@ Once you link a sales line item to a purchase order, the link purchase order ico
 
 - You can remove the link from Purchase Order Processing using the Sales Commitments for Purchase Order window.
 
-- You can remove the link from Sales Order Processing using the PO Commitment for Sales Document window if Sales Order Processing is set up to allow deletion of commitments. For more information on setup options, see *Setting up taxes and options* on page 15.
+- You can remove the link from Sales Order Processing using the PO Commitment for Sales Document window if Sales Order Processing is set up to allow deletion of commitments. For more information on setup options, see [Setting up taxes and options](sales-order-processing.md#setting-up-taxes-and-options).
 
     > [!NOTE]
     > If the purchase order has been received against, the item will still be allocated on the sales order after you remove the link.
@@ -884,7 +884,7 @@ Once you link a sales line item to a purchase order, the link purchase order ico
 
 You can change the link to an existing purchase order by deleting the existing link and then adding a link to a different purchase order using the PO Commitment for Sales Document window. To delete the existing link in this window, Sales Order Processing must be set up to allow deletion of purchase order commitments.
 
-You can also delete the link from the Sales Commitments for Purchase Order window in Purchase Order Processing. For more information, see *Removing an existing link to a purchase order* on page 162.
+You can also delete the link from the Sales Commitments for Purchase Order window in Purchase Order Processing. For more information, see [Removing an existing link to a purchase order](#removing-an-existing-link-to-a-purchase-order).
 
 #### To change the link to a purchase order
 
@@ -952,13 +952,13 @@ The information is divided into the following sections:
 
 When you post a shipment or shipment/invoice that has a commitment to a sales order line item, the site ID will be checked. If the site IDs match, the sales order line item will be allocated for the quantity shipped. If the order ID doesn’t use a separate fulfillment process, the line item also will be fulfilled. Also, the quantity back ordered is decreased and quantity to invoice is increased on the sales order, based on the quantity shipped.
 
-If the purchase order shipment and the sales order site IDs don’t match, the items will not be allocated. You must transfer the item from the site ID where you received the item to the site where you are selling the item and then allocate the item manually. For more information about transferring items to a different site, see the Inventory Control documentation. Any allocation problems will be listed on the Back-Ordered Items Received report. For more information about this report, see *Printing the Back-Ordered Items Received report* on page 167 or the Purchase Order Processing documentation.
+If the purchase order shipment and the sales order site IDs don’t match, the items will not be allocated. You must transfer the item from the site ID where you received the item to the site where you are selling the item and then allocate the item manually. For more information about transferring items to a different site, see the Inventory Control documentation. Any allocation problems will be listed on the Back-Ordered Items Received report. For more information about this report, see [Printing the Back-Ordered Items Received report](#printing-the-back-ordered-items-received-report) or the Purchase Order Processing documentation.
 
-If an item on the sales order can’t be allocated, the Quantity Alert icon will appear for the item when you select the sales document in the Sales Transaction Entry window. If the item is fully received in Purchase Order Processing, you can choose the quantity alert icon button and complete the allocation. For more information about the quantity alert icon button, see *Quantity allocation problems* on page 138.
+If an item on the sales order can’t be allocated, the Quantity Alert icon will appear for the item when you select the sales document in the Sales Transaction Entry window. If the item is fully received in Purchase Order Processing, you can choose the quantity alert icon button and complete the allocation. For more information about the quantity alert icon button, see [Quantity allocation problems](#quantity-allocation-problems).
 
 When a shipment or shipment/invoice is posted in Purchase Order Processing for service, flat fee, or miscellaneous charge items, the quantity fulfilled is updated on the sales order based on the quantity shipped on the purchase order. However, if the sales order ID uses separate fulfillment, you will have to fulfill the item manually.
 
-If you’re using separate fulfillment, service, flat fee, and miscellaneous charge items will not be fulfilled when the items are received on the purchase order. For more information about separate fulfillment, see *Chapter 20, “Separate fulfillment.”*
+If you’re using separate fulfillment, service, flat fee, and miscellaneous charge items will not be fulfilled when the items are received on the purchase order. For more information about separate fulfillment, see [Chapter 20: Separate fulfillment](#chapter-20-separate-fulfillment).
 
 The unit cost for a service, flat fee, or miscellaneous charge item on the sales order is updated when an invoice or shipment/invoice is posted in Purchase Order Processing.
 
@@ -993,7 +993,7 @@ If a drop-ship item is contained on a purchase order that hasn’t been received
 
 ### Purchase orders created from back orders
 
-For a purchase order created from a back order, use the Back-Ordered Items Received report to determine which back orders can be transferred to orders or invoices. After you transfer the back order to an order or invoice, you must manually allocate and fulfill the items on the new order or invoice. For more information, see *Printing the Back-Ordered Items Received report* on page 167 and *Chapter 27, “Transferring documents.”*
+For a purchase order created from a back order, use the Back-Ordered Items Received report to determine which back orders can be transferred to orders or invoices. After you transfer the back order to an order or invoice, you must manually allocate and fulfill the items on the new order or invoice. For more information, see [Printing the Back-Ordered Items Received report](#printing-the-back-ordered-items-received-report) and [Chapter 27: Transferring documents](sales-order-processing-part4-transaction-activity.md#chapter-27-transferring-documents).
 
 ### Printing the Back-Ordered Items Received report
 

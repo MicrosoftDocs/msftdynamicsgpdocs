@@ -1363,7 +1363,7 @@ Use the Sales Item Detail Entry window to view or edit item information such as 
 
 7. Choose the Serial/Lot button to open the Sales Serial Number Entry window or the Sales Lot Number Entry window, where you can assign numbers to serial- or lot-numbered items.
 
-    For more information about serial- or lot-numbered items, see *Serial- or lotnumbered items* on page 61 or the Inventory Control documentation.
+    For more information about serial- or lot-numbered items, see * [Serial- or lotnumbered items](#serial--or-lot-numbered-items) or the Inventory Control documentation.
 
 8. Choose the Distributions button to open the Sales Line Item Distribution Entry window, where you can view the posting accounts that will be used for the item.
 
