@@ -374,7 +374,7 @@ verify the accuracy of the changes that were made.*
 
 ## See Also
 
-[Part 1: Setup and cards](purchase-order-processing.md#setup-and-cards)  
+[Part 1: Setup and cards](purchase-order-processing.md#part-1-setup-and-cards)  
 [Part 2: Purchase orders](purchase-order-processing-part2-orders.md)  
 [Part 3: Receipts](purchase-order-processing-part3-receipts.md)  
 [Part 4: Purchase order returns](purchase-order-processing-part4-returns.md)  

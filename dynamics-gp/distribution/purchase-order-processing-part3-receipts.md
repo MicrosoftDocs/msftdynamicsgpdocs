@@ -5868,7 +5868,7 @@ to jobs.
 
 ## See Also
 
-[Part 1: Setup and cards](purchase-order-processing.md#setup-and-cards)  
+[Part 1: Setup and cards](purchase-order-processing.md#part-1-setup-and-cards)  
 [Part 2: Purchase orders](purchase-order-processing-part2-orders.md)  
 [Part 4: Purchase order returns](purchase-order-processing-part4-returns.md)  
 [Part 5: Inquiries and reports](purchase-order-processing-part5-inquiries-reports.md)  

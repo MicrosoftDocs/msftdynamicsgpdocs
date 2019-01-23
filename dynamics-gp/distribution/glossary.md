@@ -7,16 +7,17 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/18/2019
+ms.date: 01/23/2019
 ---
 
 # Glossary of Terms in the Distribution Area in Dynamics GP
 
-#### Account alias
- A “short name” for a posting account in the chart of accounts. If the account format has a large number of segments, using aliases can speed data entry.
+The following table explains the terminology used in the Distribution area in Dynamics GP.
 
-#### Active customer
- A customer with whom business is conducted on a regular basis.
+|Term  |Definition |
+|---------|---------|
+|Account alias|A “short name” for a posting account in the chart of accounts. If the account format has a large number of segments, using aliases can speed data entry.|
+|Active customer| A customer with whom business is conducted on a regular basis.|
 
 #### Advanced picking
  Allows you to group picking tickets by specific criteria, print bulk picking tickets, print the customer item on the packing slip and invoice, and define customer specific picking instructions that are printed on the picking ticket.

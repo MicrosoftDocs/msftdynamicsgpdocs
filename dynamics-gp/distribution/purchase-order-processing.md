@@ -49,7 +49,7 @@ To view information about the release of Dynamics GP that you’re using and whi
 
 The content is divided into the following parts:
 
-- [Part 1: Setup and cards](#setup-and-cards) introduces Purchase Order Processing and gives detailed instructions on setting it up.
+- [Part 1: Setup and cards](#part-1-setup-and-cards) introduces Purchase Order Processing and gives detailed instructions on setting it up.
 
 - [Part 2: Purchase orders](purchase-order-processing-part2-orders.md), explains how to enter, print, issue, and manage purchase orders.
 
@@ -1156,7 +1156,7 @@ Choose OK.
 
 ## See Also
 
-[Part 1: Setup and cards](purchase-order-processing.md#setup-and-cards)  
+[Part 1: Setup and cards](purchase-order-processing.md#part-1-setup-and-cards)  
 [Part 2: Purchase orders](purchase-order-processing-part2-orders.md)  
 [Part 3: Receipts](purchase-order-processing-part3-receipts.md)  
 [Part 4: Purchase order returns](purchase-order-processing-part4-returns.md)  

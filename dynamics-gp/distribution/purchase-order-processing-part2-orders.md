@@ -4178,7 +4178,7 @@ the purchase orders that were removed from the Purchase Order Work Table.
 
 ## See Also
 
-[Part 1: Setup and cards](purchase-order-processing.md#setup-and-cards)  
+[Part 1: Setup and cards](purchase-order-processing.md#part-1-setup-and-cards)  
 [Part 3: Receipts](purchase-order-processing-part3-receipts.md)  
 [Part 4: Purchase order returns](purchase-order-processing-part4-returns.md)  
 [Part 5: Inquiries and reports](purchase-order-processing-part5-inquiries-reports.md)  
