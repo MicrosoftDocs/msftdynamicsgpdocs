@@ -88,6 +88,13 @@
 <!--- distribution -->
 ## Distribution
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
+### [Purchase Order Processing](distribution/purchase-order-processing.md)
+#### [Part 1: Setup and cards](distribution/purchase-order-processing.md#setup-and-cards)
+#### [Part 2: Purchase orders](distribution/purchase-order-processing-part2-orders.md)
+#### [Part 3: Receipts](distribution/purchase-order-processing-part3-receipts.md)
+#### [Part 4: Purchase order returns](distribution/purchase-order-processing-part4-returns.md)
+#### [Part 5: Inquiries and reports](distribution/purchase-order-processing-part5-inquiries-reports.md)
+#### [Part 6: Utilities](distribution/purchase-order-processing-part6-utilities.md)
 ### [Sales Order Processing](distribution/sales-order-processing.md)
 #### [Sales Order Processing Part 1: Setup](distribution/sales-order-processing.md#part-1-setup)
 #### [Sales Order Processing Part 2: Transaction entry](distribution/sales-order-processing-part2-transaction-entry.md)

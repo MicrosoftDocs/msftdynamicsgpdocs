@@ -10,7 +10,7 @@ ms.author: theley
 ms.date: 01/18/2019
 ---
 
-# Glossary of Terms in the Distribution Area in Dynamics GP**Glossary**
+# Glossary of Terms in the Distribution Area in Dynamics GP
 
 #### Account alias
  A “short name” for a posting account in the chart of accounts. If the account format has a large number of segments, using aliases can speed data entry.
@@ -377,3 +377,614 @@ ms.date: 01/18/2019
 
 #### ZIP code
  In the United States, the postal code assigned to business and residential addresses. In other countries/regions, it may be referred to as *post code* or *postal code.*
+
+**Glossary**
+
+#### 1099 statement
+
+A report required by the US Internal Revenue Service for each vendor from
+whom goods and services worth \$600 or more have been purchased within a
+calendar year. There are three possible formats for a 1099: miscellaneous
+(1099-MISC), interest (1099-INT) and dividend (1099-DIV).
+
+#### 1099 vendor
+
+A vendor from whom goods and services worth \$600 or more have been
+purchased within a calendar year.
+
+#### Active vendor
+
+A vendor with whom business is being conducted on a regular basis.
+
+#### Alert message
+
+A message that appears when inappropriate, inadequate or unclear data or
+instructions are issued, when data is not accessible or when a confirmation
+is sought. Additional information about some alert messages and their causes
+can be viewed by clicking the Help button in the alert message dialog box.
+You can also choose Help \>\> About this item from the window where you
+received the message and select the Messages tab.
+
+#### Alignment form
+
+A document that ensures text will be properly aligned when documents are
+printed.
+
+#### Audit trail
+
+A series of permanent records used to track a transaction to the point where
+it was originally entered in the accounting system. The audit trail can be
+used to verify the accuracy of financial statements by outside accountants
+or auditors.
+
+#### Audit trail code
+
+A series of alphanumeric characters providing a precise record of each
+transaction and where it has been posted.
+
+#### Backing up
+
+The process of storing data on a secondary medium, usually on diskettes or
+magnetic tape, in order to minimize the difficulty of recovering from data
+loss. Backups should be performed routinely.
+
+#### Batch
+
+A group of transactions identified by a unique name or number. Batches are
+used in computerized accounting to conveniently group transactions, both for
+identification purposes and to speed up the posting process.
+
+#### Batch inquiry
+
+A window that shows which users are currently working with batches and the
+status of those batches.
+
+#### Batch-level posting
+
+A posting method that allows transactions to be saved in batches so you can
+post a batch whenever convenient. There are three types of batch-level
+posting: batch posting, series posting, and master posting.
+
+**Bin**
+
+A storage device to hold discrete items.
+
+#### Blanket purchase order
+
+A document that lists a single item and the quantities that will be
+delivered in a series of shipments, usually on specific dates. The item
+quantities will be shipped to your business to be received into your
+inventory.
+
+#### BOL (Bill of Lading)
+
+Identification number assigned to a shipment by the carrier.
+
+#### Buyer
+
+A person whose job includes vendor selection, negotiation, and purchase
+order placement and follow-up.
+
+#### Calendar year
+
+An accounting period running from January 1 to December 31.
+
+#### Calendar year history
+
+Transaction history records maintained in a calendar-year format.
+
+#### Canceled status
+
+A purchase order is assigned Canceled status when all of the line items have
+been canceled and haven’t been received against. If you change the purchase
+order status to Canceled, then all of the line items will be canceled.
+
+A line item with this status doesn’t have shipped or invoiced quantities. A
+line item with a Canceled status can be changed to New or Change Order, but
+not Closed.
+
+#### Change Order status
+
+This status occurs when a purchase order with a Released status has been
+edited. A purchase order’s revision number increases every time its status
+becomes Change Order. A Change Order status purchase order can’t be deleted
+or voided, but it can be received against in the Receivings Transaction
+Entry window. To remove a purchase order with a Change Order status, close
+or cancel the purchase order and then transfer it to history.
+
+A line item with this status has also been changed since it was released.
+Change Order line items become Released when the purchase order is printed
+again.
+
+#### Closed status
+
+A purchase order is assigned this status when all of the line items for the
+purchase order have been closed or canceled.
+
+A line item with a Closed status can’t be reopened or change its status to
+Canceled.
+
+#### Control blanket line item
+
+The first line item entered for a blanket or drop-ship blanket purchase
+order is and has the line number 0. Blanket line items are based on this is
+the line item. It can’t be received or invoiced against.
+
+#### Comma-delimited field
+
+The standard comma-separated ASCII character format used when exporting a
+report so that it can be read by database programs.
+
+#### Comment ID
+
+Identifies a particular comment that will be printed on a purchase order.
+Comments for each line item can be entered also.
+
+#### Default entry
+
+A value that is displayed in a window automatically, and that will be used
+unless a different value is entered.
+
+#### Default site
+
+A site ID selected in the Item Quantities Maintenance window that identifies
+an item’s primary storage location.
+
+#### Detailed report
+
+A report that displays detailed transaction information for each account.
+
+#### Discount available
+
+A reduction in the amount payable, typically offered if the payment is made
+by a certain date.
+
+#### Discount date
+
+The date an invoice must be paid for a discount to be valid.
+
+#### Discount taken
+
+A valid discount applied to a vendor document. *See also Discount
+available*.
+
+#### Distributing
+
+The process of allocating to separate accounts a percentage or part of
+transaction amounts.
+
+#### Distribution accounts
+
+Accounts designated to receive a percentage or part of a posted transaction.
+
+#### Distribution history
+
+A record of the debits and credits for each document that was distributed to
+individual posting accounts.
+
+#### Document type
+
+A selection that identifies a document’s purpose and how document amounts
+will be posted.
+
+#### Drop-ship blanket purchase order
+
+A document that lists a single item and the quantities that will be
+delivered to the customer in a series of shipments, usually on specific
+dates. The vendor sends you an invoice and you, in turn, send an invoice to
+the customer.
+
+#### Drop-ship purchase order
+
+A document whose items will be shipped directly to the customer. The vendor
+will invoice your business and you, in turn, will invoice the customer.
+
+#### Edit list
+
+A list of transactions in an unposted batch that can be printed to verify
+the accuracy of transactions before posting. Edit lists can be printed from
+the Batch Entry window or any transaction entry window as long as a batch ID
+has been entered.
+
+#### EOM (End of Month)
+
+A payment term requiring payment at month-end for all purchases made during
+that month.
+
+**Error message**
+
+*See Alert message*.
+
+**Financial year**
+
+*See Fiscal year*.
+
+#### Fiscal period
+
+Division of the fiscal year, usually monthly, quarterly, or semiannually,
+when transaction information can be summarized and financial statements are
+prepared.
+
+#### Fiscal year
+
+An annual accounting cycle of up to 54 consecutive periods, ordinarily
+beginning with the first day of a month and ending on the last day of the
+twelfth month. In Australia and New Zealand, this is referred to as a
+financial year.
+
+#### Fiscal year history
+
+A record of purchases, payments and other transactions for a historical
+year.
+
+#### FOB (Free on Board)
+
+Terms of sale that identify when ownership passes to the buyer. An FOB of
+Origin means that ownership transfers to the buyer when the vendor delivers
+the goods to the carrier. An FOB of Destination means that ownership
+transfers to the buyer when the goods are received from the carrier. The FOB
+is especially important when in-transit damages occur.
+
+#### Group printing
+
+Creating and printing report options in groups. For example, a report group
+could be used to print all the financial statements and the Trial Balance
+before closing a month, quarter, or fiscal year.
+
+#### GST (Goods and Services Tax)
+
+A federal tax on the consumption of goods and services used in Canada, New
+Zealand and other countries.
+
+#### Hold
+
+A way to temporarily stop further processing on a purchase order.
+
+#### Inactive vendor
+
+A vendor with whom business isn’t being conducted. Typically, these vendors
+can’t be deleted because historical records are being maintained.
+
+#### Inquiry
+
+A feature that allows users to view currentyear and historical information.
+
+#### In-transit inventory receipt
+
+A document used to record the receipt of the material into the final
+destination site.
+
+#### Intrastat statistics
+
+The system for collecting statistics on the trade of goods between European
+Union countries.
+
+#### Invoice
+
+The bill provided by the seller to the buyer for items that have been
+purchased.
+
+#### Landed cost
+
+The cost of an item that includes the cost from the vendor plus any
+additional costs, such as duty, freight, import taxes, handling fees, and so
+on, to get the item into inventory.
+
+#### Lookup window
+
+A window that displays a list of accounts, customers, documents, or other
+items in the system. Lookup windows for a specific field are displayed by
+clicking the lookup button next to the field.
+
+#### Lot number
+
+A number that describes items that were created at the same time and have
+the same characteristics, such as the dye used when manufacturing fabrics
+and carpet.
+
+#### Master posting
+
+A posting process in which marked batches from different series can be
+posted simultaneously.
+
+#### Miscellaneous charge
+
+A charge that isn’t part of the normal purchasing process. A miscellaneous
+charge may be a service charge such as installation or repair of
+merchandise.
+
+#### New status
+
+A purchase order or line item is assigned to this status when it is saved
+for the first time. A purchase order or line item that has a New status can
+be deleted or voided. A New purchase order or line item will automatically
+change from New to Released when the purchase order is printed.
+
+When a shipment, shipment/invoice or invoice is posted against a line item,
+the purchase order status and line item status will change from New to
+Released.
+
+#### Note
+
+A feature that is used to attach messages to windows and fields throughout
+the system. The Note button also shows whether a note is attached to a
+window. Notes can be edited, reattached, and deleted.
+
+#### Payment terms
+
+Conditions for payment agreed upon when a purchase transaction takes place.
+For example, a vendor might extend a discount if payment is received within
+a specified time period.
+
+#### Periodic valuation method
+
+Detailed information for the cost of all items is maintained. The current
+cost for an item is the cost the last time it was received. Items are valued
+at standard cost.
+
+#### Perpetual valuation method
+
+Detailed information for the cost of all items is maintained. The current
+cost for an item is the cost the last time it was received. Items are valued
+at actual cost.
+
+#### Posting
+
+A procedure to make transactions a part of permanent records or to update
+accounts by transaction amounts. In manual accounting, posting transfers
+journal entries to the proper accounts in a general ledger.
+
+#### Posting account
+
+A financial account that tracks assets, liabilities, revenue, or expenses.
+These accounts will appear on the financial statements and other reports
+created in the financial series.
+
+#### Posting journal
+
+A report printed following the posting process that shows the detail for
+each transaction that has been posted. Posting journals also include the
+audit trail code, which is a precise record of where each transaction has
+been posted.
+
+#### Pro No. (Progressive Number)
+
+Identification number assigned to a shipment by the carrier.
+
+#### Promised date
+
+Date the vendor promised that you would receive merchandise or services.
+
+#### Promised ship date
+
+Date the vendor promised to ship the merchandise or services you’ve ordered.
+
+#### PST (Provincial Sales Tax)
+
+A tax for the Canadian provinces that is set by each province.
+
+#### Purchase order
+
+A document authorizing a seller to deliver goods with payment to be made
+later.
+
+#### Purchase order status
+
+The status of a purchase order indicates whether all line items on a
+purchase order have been received. You can change the status of the purchase
+order in the Edit Purchase Order Status window. Refer to the definitions of
+individual statuses.
+
+#### QST (Québec Sales Tax)
+
+The Provincial Sales Tax for the province of Québec. *See also PST
+(Provincial Sales Tax)*.
+
+#### Range
+
+A selection used to narrow the amount of records that will be printed on a
+report. For example, a selected range of vendor IDs could be those between
+5000 and 6000.
+
+**Real-time posting**
+
+*See Transaction-level posting*.
+
+#### Receipt
+
+A document recording the shipment of items that have been ordered from a
+vendor via a purchase order. Also refers to a document for invoicing the
+items received.
+
+#### Receiving
+
+Recording the receipt (shipment) of items that have been ordered from a
+vendor via a purchase order. Receiving also can refer to recording the
+invoice for the items received.
+
+#### Received status
+
+When items for a purchase order have been fully received, but not invoiced,
+the purchase order is assigned this status. A Received purchase order can’t
+be deleted or voided, but it can be received against in the Purchasing
+Invoice Entry window. To remove a purchase order with a Received status,
+close the purchase order and then transfer it to history.
+
+A line item with this status has fully received shipments, but no invoice
+receipts.
+
+#### Reconciling
+
+A procedure used to verify that Purchase Order Processing data is accurate.
+Reconciling in Purchase Order Processing involves only purchase order
+documents. Reconciling is often performed after rebuilding a file, and is
+necessary after changing fiscal periods.
+
+#### Release by date
+
+Date a purchase order line item should be released to the vendor.
+
+#### Released status
+
+When a purchase order is printed or received against, it’s assigned this
+status. A Released purchase order can’t be deleted or voided, but it can be
+received against in the Receivings Transaction Entry window. To remove a
+purchase order with a Released status, close or cancel the purchase order
+and then transfer it to history.
+
+A line item with this status either doesn’t have quantities shipped or
+invoiced or has partially shipped or invoiced quantities.
+
+#### Remove history
+
+A procedure used to erase ranges of historical information that are no
+longer useful.
+
+#### Report option
+
+A collection of entries that specify the amount of information or the type
+of information that will appear on a report.
+
+Multiple report options can be created.
+
+**Required date**
+
+Date you must receive items.
+
+#### Serial number
+
+A number that is one of a series and is assigned to a specific inventory
+item to identify it and differentiate it from similar items with the same
+item number. Serial numbers allow you to track an individual item from the
+time you receive it until you sell it.
+
+#### Serial number mask
+
+A pre-defined format for serial numbers of Inventory items. If an item has
+been identified as being tracked by serial numbers, the mask is used to
+generate the starting serial number used when you automatically generate
+serial numbers.
+
+#### Series
+
+A group of modules that form an interrelated set of applications. For
+example, Purchase Order Processing is part of the Purchasing series.
+
+#### Series posting
+
+A posting process in which marked batches from the same series can be posted
+simultaneously.
+
+#### Shipment receipt
+
+The document used to record merchandise received from a vendor.
+
+#### Shipping method
+
+The means used to send goods from a vendor. Also, the expected arrival time
+of a shipment.
+
+#### Site
+
+A store, warehouse or other building from which you do business or store
+items.
+
+#### Standard cost
+
+A predetermined cost associated with an item that has a periodic valuation
+method. Standard costs are compared to actual costs to compute price
+variances.
+
+#### Standard purchase order
+
+A document whose items will be shipped to your business to be received into
+your inventory.
+
+#### Summary report
+
+A report summarizing the transactions made to a particular record.
+
+#### Tab-delimited field
+
+The tab-separated ASCII character format used for exporting a report.
+
+#### Tax detail
+
+A definition of a tax that may apply to customers. Tax details are grouped
+into tax schedules. *See also Tax schedule*.
+
+#### Tax schedule
+
+Groups of tax details that define each tax that may apply to customers,
+items, or other taxable costs. Tax schedules are used to determine which
+taxes apply to individual sales.
+
+#### Temporary vendor
+
+A vendor used on a one-time or occasional basis. An example might be a
+caterer for a company party.
+
+#### Text-only format
+
+A file format that saves reports as text without formatting. This format is
+used when exporting reports to applications that are unable to read other
+formats available in Microsoft Dynamics GP.
+
+#### Trade discount
+
+A discount given by a vendor. The rate is calculated at the time of a
+purchase.
+
+#### Transaction date
+
+The date a transaction occurred; not necessarily the date it was entered in
+the system.
+
+**Transaction history**
+
+A record of a fully applied transaction.
+
+#### Transaction-level posting
+
+A posting method in which transactions can be entered and posted without
+having to create a batch. Also know as real-time posting. *See also
+Batch-level posting*.
+
+**Unit cost**
+
+The amount per unit paid for an item.
+
+#### Unit of measure
+
+A user-defined unit in which you purchase or sell an item, such as each,
+pair or case.
+
+#### Valuation method
+
+The method by which you track the cost of an item from the time you receive
+it until you sell it. Different businesses and industries use different
+valuation methods, which are sometimes specified by law.
+
+#### VAT (Value-Added Tax)
+
+A sales tax used in Europe and elsewhere in the world.
+
+#### Vendor
+
+A person or company providing goods or services in return for payment.
+
+#### Vendor ID
+
+An alphanumeric identification assigned to a vendor in Payables Management
+setup. The vendor ID can be used to sort information for reports.
+
+#### Voiding
+
+The process of recording a transaction to reverse the effect of an original
+transaction.
+
+#### ZIP code
+
+In the United States, the postal code assigned to business and residential
+addresses. In other countries/regions, it may be referred to as post code or
+postal code.
