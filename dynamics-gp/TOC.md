@@ -83,8 +83,13 @@
 ## Financials
 ### [Bank Reconciliation](financials/BankReconciliation.md)
 ### [Inter Company Processing](financials/IntercompanyProcessing.md)
-### [ReceivablesManagement](financials/ReceivablesManagement.md)
-### [Payables Management] (financials/PayablesManagement.md)
+### [Receivables Management](financials/receivables-management.md)
+#### [Part 1: Setup and cards](financials/receivables-management.md#part-1-setup-and-cards)
+#### [Part 2: Transaction entry](financials/receivables-management-part2-transaction-entry.md)
+#### [Part 3: Transaction activity](financials/receivables-management-part3-transaction-activity.md)
+#### [Part 4: Inquiries and reports](financials/receivables-management-part4-inquiries-reports.md)
+#### [Part 5: Utilities and routines](financials/receivables-management-part5-utilities-routines.md)
+### [Payables Management](financials/PayablesManagement.md)
 ### [Glossary](financials/glossary.md)
 
 <!--- distribution -->
