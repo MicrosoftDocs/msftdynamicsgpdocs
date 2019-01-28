@@ -83,6 +83,7 @@
 ## Financials
 ### [Bank Reconciliation](financials/BankReconciliation.md)
 ### [Inter Company Processing](financials/IntercompanyProcessing.md)
+### [ReceivablesManagement](financials/ReceivablesManagement.md)
 ### [Payables Management] (financials/PayablesManagement.md)
 ### [Glossary](financials/glossary.md)
 
