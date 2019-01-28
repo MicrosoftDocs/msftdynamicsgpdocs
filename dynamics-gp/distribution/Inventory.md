@@ -1002,24 +1002,15 @@ Chapter 7: Item classes
 
 >   When you create an item class, the options and selections you specify for the item class are inherited by any new items that are created and assigned to the class. Some changes that you might make to an item class can be rolled down to the items assigned to the class—other changes are reflected only in new item records assigned to the class. Refer to *Effects of changing item class information* for more information about what item class changes can be rolled down to items.
 
->   When you change an item record, carefully consider the relationship of the
->   item to its item class. If you change an item that is assigned to a class,
->   then change the information for the class and roll down those changes, the
->   changes to the item record will be removed—and the item information will
->   match the class information.
+>   When you change an item record, carefully consider the relationship of the item to its item class. If you change an item that is assigned to a class, then change the information for the class and roll down those changes, the changes to the item record will be removed—and the item information will match the class information.
 
->   **If you need to roll down item class changes** Clear the class ID from any
->   item record that shouldn’t be updated when the class information changes.
+>   **If you need to roll down item class changes** Clear the class ID from any item record that shouldn’t be updated when the class information changes.
 
->   **If you don’t need to roll down item class changes** Use classes as a
->   starting point for creating item records. Rather than rolling down changes
->   to all items in the class, use updated item classes only to base new item
->   records on.
+>   **If you don’t need to roll down item class changes** Use classes as a starting point for creating item records. Rather than rolling down changes to all items in the class, use updated item classes only to base new item records on.
 
 ### Removing a currency from an item class
 
->   Use the Item Class Currency Setup window to remove a currency from an item
->   class.
+>   Use the Item Class Currency Setup window to remove a currency from an item class.
 
 >   **To remove a currency from an item class:**
 
@@ -1027,19 +1018,15 @@ Chapter 7: Item classes
 
 >   (Inventory \>\> Setup \>\> Item Class Currency)
 
-1.  Enter or select a class ID.
+2.  Enter or select a class ID.
 
-2.  Enter or select the currency to be removed.
+3.  Enter or select the currency to be removed.
 
-3.  Choose Delete. An alert message appears, asking if you’re sure you want to
-    delete the currency from the item class. Choose Yes, then close the window.
+4.  Choose Delete. An alert message appears, asking if you’re sure you want to delete the currency from the item class. Choose Yes, then close the window.
 
 ### Deleting an item class
 
->   If an item class has become obsolete, you can delete it from Inventory
->   Control. Because item classes are used only to make maintenance easier and
->   faster, existing item records aren’t affected when you delete the class. You
->   can delete an item class at any time.
+>   If an item class has become obsolete, you can delete it from Inventory Control. Because item classes are used only to make maintenance easier and faster, existing item records aren’t affected when you delete the class. You can delete an item class at any time.
 
 >   **To delete an item class:**
 
@@ -1047,42 +1034,24 @@ Chapter 7: Item classes
 
 >   (Inventory \>\> Setup \>\> Item Class)
 
-1.  Enter or select the class you want to delete.
+2.  Enter or select the class you want to delete.
 
-2.  Choose Delete. An alert message appears, asking if you’re sure you want to
-    delete the class. Choose Yes.
+3.  Choose Delete. An alert message appears, asking if you’re sure you want to delete the class. Choose Yes.
 
 Chapter 8: Stock count calendar
 -------------------------------
 
->   A stock count calendar identifies the days when a stock count can be
->   performed. Days when counts can be performed are called up days; days when
->   counts can’t be performed are called down days. For example, you might
->   choose to designate all Saturdays and Sundays as down days. You also can
->   designate other days—such as company holidays—to be down days.
+>   A stock count calendar identifies the days when a stock count can be performed. Days when counts can be performed are called up days; days when counts can’t be performed are called down days. For example, you might choose to designate all Saturdays and Sundays as down days. You also can designate other days—such as company holidays—to be down days.
 
 >   The stock count calendar serves these functions.
 
--   First, the stock count calendar is used to determine the next suggested
-    count date for each item-site (or, if you’re using multiple bins,
-    item-site-bin) combination. For example, if you define an item on June 1 and
-    specify that it should be counted every 30 days, you’re actually specifying
-    that it should be counted every 30 *up days*. So, if you’ve specified down
-    days within the month of June, the first suggested count date for the item
-    at the site might be well into July.
+-   First, the stock count calendar is used to determine the next suggested count date for each item-site (or, if you’re using multiple bins, item-site-bin) combination. For example, if you define an item on June 1 and specify that it should be counted every 30 days, you’re actually specifying that it should be counted every 30 *up days*. So, if you’ve specified down days within the month of June, the first suggested count date for the item at the site might be well into July.
 
 *Refer to How stock count dates are calculated for more information.*
 
--   Second, when you use cycle counting, the suggested count dates are spread
-    over the length of the cycle. For example, if you specify 300 items you want
-    counted at a specific site every 30 days, stock count dates for the items
-    will be calculated so that you’re counting quantities for 10 item numbers
-    each of the 30 *up* days in the cycle. (If the number of items can’t be
-    evenly divided by the number of days in the cycle, the remainder is spread
-    as evenly as possible over the cycle.)
+-   Second, when you use cycle counting, the suggested count dates are spread over the length of the cycle. For example, if you specify 300 items you want counted at a specific site every 30 days, stock count dates for the items will be calculated so that you’re counting quantities for 10 item numbers each of the 30 *up* days in the cycle. (If the number of items can’t be evenly divided by the number of days in the cycle, the remainder is spread as evenly as possible over the cycle.)
 
-*For more information about cycle-counting, refer to Chapter 18, “Count
-intervals.”*
+*For more information about cycle-counting, refer to Chapter 18, “Count intervals.”*
 
 >   The following information is discussed:
 
@@ -1104,43 +1073,29 @@ intervals.”*
 
 >   The window opens with the current month and year displayed.
 
-1.  Enter the number of shifts that can complete stock counts, and the number of
-    hours per shift that are available for the stock count tasks. Enter the
-    start time for the first shift.
+1.  Enter the number of shifts that can complete stock counts, and the number of hours per shift that are available for the stock count tasks. Enter the start time for the first shift.
 
->   *The number of shifts, number of hours per shift, and the start times for
->   the shifts are optional—the fields are informational only.*
+>   *The number of shifts, number of hours per shift, and the start times for the shifts are optional—the fields are informational only.*
 
-1.  Select the companywide days off. For example, if your company does not have
-    a weekend shift, you would select Saturdays and Sundays.
+1.  Select the companywide days off. For example, if your company does not have a weekend shift, you would select Saturdays and Sundays.
 
->   *If your company is usually closed on Saturdays and Sundays but you set
->   aside one day each year or quarter to do the stock counts, you can select
->   the Saturdays and Sundays option and then choose the date of the stock
->   count.*
+>   *If your company is usually closed on Saturdays and Sundays but you set aside one day each year or quarter to do the stock counts, you can select the Saturdays and Sundays option and then choose the date of the stock count.*
 
-1.  To select additional company holidays or other down days, select the month,
-    then select the day. (To change the day back to the original setting, select
-    the day again.)
+2.  To select additional company holidays or other down days, select the month, then select the day. (To change the day back to the original setting, select the day again.)
 
     -   Days that appear black with white text are designated down days.
 
-    -   Days that appear white with black text are designated up days (days when
-        counts can be performed).
+    -   Days that appear white with black text are designated up days (days when counts can be performed).
 
-2.  Choose File \>\> Print to print the Stock Count Calendar List.
+3.  Choose File \>\> Print to print the Stock Count Calendar List.
 
->   This report shows you which days are designated as companywide down days.
->   You also can print the report from the Inventory Setup Reports window.
->   Choose Inventory \>\> Reports \>\> Setup to open that window.
+>   This report shows you which days are designated as companywide down days. You also can print the report from the Inventory Setup Reports window. Choose Inventory \>\> Reports \>\> Setup to open that window.
 
-1.  Choose OK to save your changes and close the window.
+4.  Choose OK to save your changes and close the window.
 
 ### Changing stock count calendar settings
 
-Use the Stock Calendar Maintenance window to change the stock count calendar, if
-needed. Changes to the stock count calendar won’t affect the suggested stock
-count dates for items until the suggested dates are recalculated.
+Use the Stock Calendar Maintenance window to change the stock count calendar, if needed. Changes to the stock count calendar won’t affect the suggested stock count dates for items until the suggested dates are recalculated.
 
 >   **To change stock count calendar settings:**
 
@@ -1148,19 +1103,14 @@ count dates for items until the suggested dates are recalculated.
 
 >   (Inventory \>\> Setup \>\> Stock Calendar)
 
-1.  Make changes as needed. If you change the status of any day—changing an up
-    day into a down day, for example—an alert message appears, warning that the
-    changes won’t be reflected in any current dates for stock counts. Choose Yes
-    to continue.
+2.  Make changes as needed. If you change the status of any day—changing an up day into a down day, for example—an alert message appears, warning that the changes won’t be reflected in any current dates for stock counts. Choose Yes to continue.
 
-2.  Choose OK to save your changes and close the window.
+3.  Choose OK to save your changes and close the window.
 
 Chapter 9: Reason codes
 -----------------------
 
->   A reason code is used to identify causes for item stock movements and
->   adjustments. Once reason codes are set up they can be assigned to a line
->   item on inventory adjustments, variances, transfers and stock counts.
+>   A reason code is used to identify causes for item stock movements and adjustments. Once reason codes are set up they can be assigned to a line item on inventory adjustments, variances, transfers and stock counts.
 
 >   This information is divided into the following sections:
 
@@ -1174,8 +1124,7 @@ Chapter 9: Reason codes
 
 ### Creating reason codes
 
->   Before you can begin using reason codes on inventory transactions, define
->   the settings you want to use.
+>   Before you can begin using reason codes on inventory transactions, define the settings you want to use.
 
 >   **To create a reason code**
 
@@ -1183,35 +1132,21 @@ Chapter 9: Reason codes
 
 >   (Inventory \>\> Setup \>\> Reason Code Setup)
 
-1.  Enter an identifier, such as Spoilage, and a description for the reason
-    code.
+2.  Enter an identifier, such as Spoilage, and a description for the reason code.
 
-2.  Select which inventory transactions this reason code will be entered on. The
-    transaction type will limit the reason codes available in a lookup window to
-    only those that apply to the specific transaction you’re entering.
+3.  Select which inventory transactions this reason code will be entered on. The transaction type will limit the reason codes available in a lookup window to only those that apply to the specific transaction you’re entering.
 
-3.  Select the types of adjustment and variance transactions to more
-    specifically broaden or limit the use of this reason code.
+3.  Select the types of adjustment and variance transactions to more specifically broaden or limit the use of this reason code.
 
->   If you select Adjustment or Variance, select a default offset account which
->   will be used to track amounts posted with this reason code. For example, if
->   you use Spoilage as a reason code, and enter it every time you enter a
->   decrease adjustment for spoiled items, you will be able to identify the
->   costs of all spoiled items distributed to this account at the end of the
->   year. If you do not specify an offset account, the item amount will be
->   posted using the standard account distributions for the item.
+>   If you select Adjustment or Variance, select a default offset account which will be used to track amounts posted with this reason code. For example, if you use Spoilage as a reason code, and enter it every time you enter a decrease adjustment for spoiled items, you will be able to identify the costs of all spoiled items distributed to this account at the end of the year. If you do not specify an offset account, the item amount will be posted using the standard account distributions for the item.
 
-1.  Select the types of transfer transactions you’ll use the reason code on. The
-    reason code can be assigned to any combination of inventory and transfer
-    transactions.
+4.  Select the types of transfer transactions you’ll use the reason code on. The reason code can be assigned to any combination of inventory and transfer transactions.
 
-2.  Choose Save.
+5.  Choose Save.
 
 ### Modifying reason codes
 
->   You may find as you’re using reason codes that you need to expand the use,
->   or more further limit the future use of a reason code. Changes you make do
->   not affect existing transactions containing the reason code.
+>   You may find as you’re using reason codes that you need to expand the use, or more further limit the future use of a reason code. Changes you make do not affect existing transactions containing the reason code.
 
 **To modify a reason code**
 
@@ -1219,35 +1154,31 @@ Chapter 9: Reason codes
 
 >   (Inventory \>\> Setup \>\> Reason Code Setup)
 
-1.  Select the reason code you want to change.
+2.  Select the reason code you want to change.
 
-2.  Make changes as needed. Existing transactions are not affected by your
-    changes.
+3.  Make changes as needed. Existing transactions are not affected by your changes.
 
-3.  Choose Save.
+4.  Choose Save.
 
 ### Inactivating reason codes
 
-A reason code can be inactivated at any time. Once it is inactivated, you won’t
-be able to enter it on any new transactions. Existing transactions are not
-affected by inactivating a reason code.
+A reason code can be inactivated at any time. Once it is inactivated, you won’t be able to enter it on any new transactions. Existing transactions are not affected by inactivating a reason code.
 
 >   **To inactivate a reason code**
 
 1.  Open the Reason Code Setup window.
 
->   (Inventory \>\> Setup \>\> Reason Code Setup) 2. Select the reason code you
->   want to inactivate.
+>   (Inventory \>\> Setup \>\> Reason Code Setup) 
 
-1.  Mark Inactive.
+2. Select the reason code you want to inactivate.
 
-2.  Choose Save.
+3.  Mark Inactive.
+
+4.  Choose Save.
 
 ### Deleting reason codes
 
-A reason code can be deleted at any time. Existing transactions are not affected
-by deleting a reason code. The code will remain on the transaction as a means of
-maintaining history.
+A reason code can be deleted at any time. Existing transactions are not affected by deleting a reason code. The code will remain on the transaction as a means of maintaining history.
 
 **To delete a reason code**
 
@@ -1255,65 +1186,45 @@ maintaining history.
 
 >   (Inventory \>\> Setup \>\> Reason Code Setup)
 
-1.  Select the reason code you want to delete.
+2.  Select the reason code you want to delete.
 
-2.  Choose Delete.
+3.  Choose Delete.
 
 Part 2: Cards
 =============
 
->   This part of the documentation includes information that will help you
->   create and modify cards for Inventory Control. You can refer to these
->   procedures whenever you need to create or modify a record for a new item or
->   site. Information about viewing and deleting records also is included in
->   this document.
+>   This part of the documentation includes information that will help you create and modify cards for Inventory Control. You can refer to these procedures whenever you need to create or modify a record for a new item or site. Information about viewing and deleting records also is included in this document.
 
-*You*’*ll need to complete these setup procedures before you enter
-transactions.*
+*You*’*ll need to complete these setup procedures before you enter transactions.*
 
 >   The following information is discussed:
 
 -   *Chapter 10, “Item cards,”* describes how to create and modify item records.
 
--   *Chapter 11, “Standard price lists,”* describes how to specify costing and
-    pricing information for items for standard pricing.
+-   *Chapter 11, “Standard price lists,”* describes how to specify costing and pricing information for items for standard pricing.
 
--   *Chapter 12, “Extended pricing,”* discusses how to set up extended pricing
-    information.
+-   *Chapter 12, “Extended pricing,”* discusses how to set up extended pricing information.
 
--   *Chapter 13, “Purchasing options, vendors, and planners,”* contains
-    information about purchasing options, including specifying vendors.
+-   *Chapter 13, “Purchasing options, vendors, and planners,”* contains information about purchasing options, including specifying vendors.
 
--   *Chapter 14, “Sites and beginning quantities,”* includes information about
-    setting up sites and creating item-site relationships.
+-   *Chapter 14, “Sites and beginning quantities,”* includes information about setting up sites and creating item-site relationships.
 
--   *Chapter 15, “Item-site details,”* explains how to enter information about
-    sites for items.
+-   *Chapter 15, “Item-site details,”* explains how to enter information about sites for items.
 
--   *Chapter 16, “Kits,”* explains how you can use kits to work with collections
-    of items that are sold as a unit.
+-   *Chapter 16, “Kits,”* explains how you can use kits to work with collections of items that are sold as a unit.
 
--   *Chapter 17, “History,”* contains information about keeping history for your
-    item records.
+-   *Chapter 17, “History,”* contains information about keeping history for your item records.
 
--   *Chapter 18, “Count intervals,”* includes information about specifying how
-    frequently an item should be counted at a specific site.
+-   *Chapter 18, “Count intervals,”* includes information about specifying how frequently an item should be counted at a specific site.
 
--   *Chapter 19, “Landed cost cards,”* describes how to create and group landed
-    cost records, and how to assign the groups to item-site (or item-site-bin)
-    combinations.
+-   *Chapter 19, “Landed cost cards,”* describes how to create and group landed cost records, and how to assign the groups to item-site (or item-site-bin) combinations.
 
 Chapter 10: Item cards
 ----------------------
 
->   When you enter an item record in Inventory Control, you can enter much more
->   information than just an item number and description. You can use Inventory
->   Control to add Internet information, to choose what types of history to
->   keep, to specify posting accounts, and to designate substitute items.
+>   When you enter an item record in Inventory Control, you can enter much more information than just an item number and description. You can use Inventory Control to add Internet information, to choose what types of history to keep, to specify posting accounts, and to designate substitute items.
 
->   If you’re using Multicurrency Management, you also can assign currencies to
->   items. To be able to purchase or sell items in currencies other than your
->   own, you must first assign the currencies to the items.
+>   If you’re using Multicurrency Management, you also can assign currencies to items. To be able to purchase or sell items in currencies other than your own, you must first assign the currencies to the items.
 
 >   The following information is discussed:
 
@@ -1359,119 +1270,65 @@ Chapter 10: Item cards
 
 ### Setting up a numbering system for items
 
->   As you begin setting up your items, consider how you want to number existing
->   and new items. For example, you can assign specific groups of numbers to
->   different types of items. Once you’ve determined the most appropriate
->   numbering system for your company’s inventoried items, use it consistently
->   for the best results when printing reports or completing maintenance
->   procedures.
+>   As you begin setting up your items, consider how you want to number existing and new items. For example, you can assign specific groups of numbers to different types of items. Once you’ve determined the most appropriate numbering system for your company’s inventoried items, use it consistently for the best results when printing reports or completing maintenance procedures.
 
->   Be sure that the numbers you enter to identify items all have the same
->   number of characters. You should consider including leading zeros in your
->   item numbers, if possible. Including leading zeros helps ensure that enough
->   item numbers will be available in your scheme for the addition of new item
->   numbers, and that the item numbers will be sorted appropriately in reports
->   and scrolling windows.
+>   Be sure that the numbers you enter to identify items all have the same number of characters. You should consider including leading zeros in your item numbers, if possible. Including leading zeros helps ensure that enough item numbers will be available in your scheme for the addition of new item numbers, and that the item numbers will be sorted appropriately in reports and scrolling windows.
 
->   For example, as an electronics manufacturer, you might want to use WIRE as a
->   prefix for item numbers for different types of wire. In reports and
->   scrolling windows, the items would be in the following order.
+>   For example, as an electronics manufacturer, you might want to use WIRE as a prefix for item numbers for different types of wire. In reports and scrolling windows, the items would be in the following order.
 
 ### Creating an item record
 
->   Use the Item Maintenance window to set up records for inventoried items. The
->   item records serve as the foundation of Inventory Control, providing
->   detailed item information that can help you control your current inventory
->   and plan for the future.
+>   Use the Item Maintenance window to set up records for inventoried items. The item records serve as the foundation of Inventory Control, providing detailed item information that can help you control your current inventory and plan for the future.
 
->   Information you can enter for items includes vendors, valuation methods,
->   cost information, and whether you are tracking serial or lot numbers for the
->   items.
+>   Information you can enter for items includes vendors, valuation methods, cost information, and whether you are tracking serial or lot numbers for the items.
 
->   You can use the Copy button in the Item Maintenance window to create a new
->   inventory item record from a copy of an existing inventory item. See
->   *Copying an inventory item* for more information.
+>   You can use the Copy button in the Item Maintenance window to create a new inventory item record from a copy of an existing inventory item. See *Copying an inventory item* for more information.
 
 >   **To create an item record:**
 
-1.  In the navigation pane, choose the Inventory button, and then choose the
-    Items list.
+1.  In the navigation pane, choose the Inventory button, and then choose the Items list.
 
 2.  In the New group, choose Item to open the Item Maintenance window.
 
 ![](media/09fc580c4ab7ac00490b3a80d3b5a458.jpg)
 
-1.  Enter an alphanumeric item number. You can’t change the item number after
-    the item number has been saved. To change the item number, you must delete
-    the item and reenter it.
+3.  Enter an alphanumeric item number. You can’t change the item number after the item number has been saved. To change the item number, you must delete the item and reenter it.
 
->   *Refer to Setting up a numbering system for items for more information about
->   considerations for item numbers.*
+>   *Refer to Setting up a numbering system for items for more information about considerations for item numbers.*
 
-1.  Enter a description, short description, and generic description for the
-    item.
+4.  Enter a description, short description, and generic description for the item.
 
-2.  If you’re using item classes, enter or select an item class. Default
-    information will appear in many of the fields once you select the item
-    class. Refer to *Chapter 7, “Item classes,”* for more information.
+5.  If you’re using item classes, enter or select an item class. Default information will appear in many of the fields once you select the item class. Refer to *Chapter 7, “Item classes,”* for more information.
 
-3.  Select the item type and valuation method.
+6.  Select the item type and valuation method.
 
->   *Refer to Item types and Valuation methods for more information about the
->   options for these fields.*
+>   *Refer to Item types and Valuation methods for more information about the options for these fields.*
 
-1.  Enter or select the Sales/Payables Tax Option. If you select Taxable, enter
-    or select the tax schedule ID to be used to calculate taxes on the item.
+7.  Enter or select the Sales/Payables Tax Option. If you select Taxable, enter or select the tax schedule ID to be used to calculate taxes on the item.
 
-2.  Enter or select the Purchasing Tax Option. If you select Taxable, enter or
-    select the tax schedule ID to be used to calculate taxes on the item.
+8.  Enter or select the Purchasing Tax Option. If you select Taxable, enter or select the tax schedule ID to be used to calculate taxes on the item.
 
-3.  You can enter shipping weight information. The shipping weight you enter
-    should be the weight of the base unit of measure for the item.
+9.  You can enter shipping weight information. The shipping weight you enter should be the weight of the base unit of measure for the item.
 
-4.  If you’re tracking Intrastat statistics, enter the tax commodity code and
-    its description for the item. This field is available when you’ve marked the
-    Enable Intrastat Tracking option in the Company Setup Options window.
+10.  If you’re tracking Intrastat statistics, enter the tax commodity code and its description for the item. This field is available when you’ve marked the Enable Intrastat Tracking option in the Company Setup Options window.
 
-5.  Enter or select the number of decimal places that should be used for
-    quantities for the item information.
+5.  Enter or select the number of decimal places that should be used for quantities for the item information.
 
 6.  Select the number of decimals to be used to track currency information.
 
->   **If you’re not using Multicurrency Management** Enter or select the number
->   of decimal places that should be used for currency information for the item.
+>   **If you’re not using Multicurrency Management** Enter or select the number of decimal places that should be used for currency information for the item.
 
->   **If you’re using Multicurrency Management** You’ll specify the number of
->   decimal places for tracking currency information as you assign currencies to
->   the item.
+>   **If you’re using Multicurrency Management** You’ll specify the number of decimal places for tracking currency information as you assign currencies to the item.
 
->   The functional currency—the currency in which your company conducts most of
->   its business—automatically is assigned to each item. When you completed
->   Multicurrency Management setup tasks, you specified the default number of
->   decimal places for tracking information in the functional currency. To use a
->   different number for this item, choose the Go To button, and select Item
->   Currency to open the Item Currency Maintenance window. Use the browse
->   buttons to display the functional currency, and select the appropriate
->   number of decimal places. Choose Save, then close the window.
+>   The functional currency—the currency in which your company conducts most of its business—automatically is assigned to each item. When you completed Multicurrency Management setup tasks, you specified the default number of decimal places for tracking information in the functional currency. To use a different number for this item, choose the Go To button, and select Item Currency to open the Item Currency Maintenance window. Use the browse buttons to display the functional currency, and select the appropriate number of decimal places. Choose Save, then close the window.
 
->   *To change the number of currency decimals used for the functional currency
->   for the item, you must make the change before the item record is saved for
->   the first time. If you decide later that you need to change the number of
->   currency decimals for an item in the functional currency, you must use the
->   Change Currency Decimals utility. Refer to Changing currency or quantity
->   decimal places for items for more information.*
+>   *To change the number of currency decimals used for the functional currency for the item, you must make the change before the item record is saved for the first time. If you decide later that you need to change the number of currency decimals for an item in the functional currency, you must use the Change Currency Decimals utility. Refer to Changing currency or quantity decimal places for items for more information.*
 
-1.  Enter or select a unit of measure schedule. The item and the unit of measure
-    schedule must use the same number of decimals to track quantity amounts.
+7.  Enter or select a unit of measure schedule. The item and the unit of measure schedule must use the same number of decimals to track quantity amounts.
 
-2.  Enter costing information for the item. Refer to the table for information
-    about the Standard Cost, Current Cost and List Price fields. You need to
-    enter information only in the field required for the price method you plan
-    to use for the item, if you’re using standard pricing. (These fields aren’t
-    used with extended pricing.)
+8.  Enter costing information for the item. Refer to the table for information about the Standard Cost, Current Cost and List Price fields. You need to enter information only in the field required for the price method you plan to use for the item, if you’re using standard pricing. (These fields aren’t used with extended pricing.)
 
->   Refer to *Valuation methods* and *Price methods* for more information about
->   valuation methods and price methods.
+>   Refer to *Valuation methods* and *Price methods* for more information about valuation methods and price methods.
 
 | **Fields**    | **Price method** | **Notes**                                                                                                                                                                                                                      |
 |---------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1491,16 +1348,11 @@ Chapter 10: Item cards
 
 >   Cost
 
->   If an item’s valuation method is not Average Perpetual, you can enter a
->   value in the field before the first time you save the item. The amount will
->   be updated after each increase transaction for the item.
+>   If an item’s valuation method is not Average Perpetual, you can enter a value in the field before the first time you save the item. The amount will be updated after each increase transaction for the item.
 
->   If you’re using Multicurrency Management, you must use the List Price field
->   in the Item Currency Maintenance window to enter different list prices for
->   different currencies.
+>   If you’re using Multicurrency Management, you must use the List Price field in the Item Currency Maintenance window to enter different list prices for different currencies.
 
-1.  You can use the Internet information icon button, and the windows you open
-    with the Go To button to complete other tasks to define the item record.
+9.  You can use the Internet information icon button, and the windows you open with the Go To button to complete other tasks to define the item record.
 
 >   Refer to the table to find more information about specific tasks.
 
@@ -1519,20 +1371,15 @@ Chapter 10: Item cards
 | Specify what kinds of history information you want to track for this item | *Chapter 17, “History”*                                                                                                            |
 | Attach documents to an item                                               | Refer to the System User’s Guide (Help \>\> Contents \>\> select Using the System) for more information about attaching documents. |
 
-1.  Choose Save.
+10.  Choose Save.
 
->   When you’ve entered all the item records, you can verify your entries with a
->   Detailed Item List report. For information about printing this and other
->   item reports, choose Help \>\> Index, then search for Inventory Item
->   Reports.
+>   When you’ve entered all the item records, you can verify your entries with a Detailed Item List report. For information about printing this and other item reports, choose Help \>\> Index, then search for Inventory Item Reports.
 
 ### Entering Internet information for an item
 
->   Use the Internet Information window to track Internet-related information
->   about your company, employees, customers, vendors and items.
+>   Use the Internet Information window to track Internet-related information about your company, employees, customers, vendors and items.
 
->   *Refer to your System User’s Guide (Help \>\> Contents \>\> select Using the
->   System) for more information about Internet options.*
+>   *Refer to your System User’s Guide (Help \>\> Contents \>\> select Using the System) for more information about Internet options.*
 
 >   **To enter Internet information for an item:**
 
@@ -1540,14 +1387,13 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Choose the Internet information icon in the Description field to open the
-    Internet Information window.
+3.  Choose the Internet information icon in the Description field to open the Internet Information window.
 
 ![](media/6bc7a94aa645001ae71f017acc5d43fa.jpg)
 
-1.  Enter Internet information for the item.
+4.  Enter Internet information for the item.
 
 >   Refer to the table for more information about how each field can be used.
 
@@ -1563,21 +1409,15 @@ Chapter 10: Item cards
 
 >   Information window
 
->   (Administration \>\> Setup \>\> Company \>\> Internet Information). Refer to
->   your
+>   (Administration \>\> Setup \>\> Company \>\> Internet Information). Refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System) for more information.
 
->   System Setup instructions (Help \>\> Contents \>\> select Setting Up the
->   System) for more information.
+5.  Enter a login and password, if they’re required to open the Web site.
 
-1.  Enter a login and password, if they’re required to open the Web site.
-
-2.  Choose Save.
+6.  Choose Save.
 
 ### Entering item options
 
->   Use the Item Maintenance Options window to enter additional information
->   about items. Optional item information includes substitute items, category
->   information, and history options for a specific item.
+>   Use the Item Maintenance Options window to enter additional information about items. Optional item information includes substitute items, category information, and history options for a specific item.
 
 >   **To enter item options:**
 
@@ -1585,88 +1425,51 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item)
 
-1.  Enter or select an item.
+2.  Enter or select an item.
 
 >   Choose Options to open the Item Maintenance Options window.
 
 ![](media/a0feba184b1823410e608c9d6559c902.jpg)
 
-1.  Enter or select up to two substitutes for the item. The substitutes are
-    suggested replacements for the item.
+3.  Enter or select up to two substitutes for the item. The substitutes are suggested replacements for the item.
 
-    -   If you aren’t using a bill of materials module, the substitute item
-        won’t affect any processes.
+    -   If you aren’t using a bill of materials module, the substitute item won’t affect any processes.
 
-    -   If you’re using Microsoft Dynamics GP Bill of Materials, you must enter
-        substitute items here to be able to make a substitution for an assembly
-        transaction.
+    -   If you’re using Microsoft Dynamics GP Bill of Materials, you must enter substitute items here to be able to make a substitution for an assembly transaction.
 
-    -   If you’re using Manufacturing Bill of Materials, you must use the
-        Alternate
+    -   If you’re using Manufacturing Bill of Materials, you must use the Alternate Items window to specify substitutes. Refer to the Manufacturing Core Functions documentation for more information.
 
->   Items window to specify substitutes. Refer to the Manufacturing Core
->   Functions documentation for more information.
-
-1.  Indicate if serial or lot numbers should be used to track the item. If you
-    choose Lot Numbers, you can enter or select a lot category.
+4.  Indicate if serial or lot numbers should be used to track the item. If you choose Lot Numbers, you can enter or select a lot category.
 
 *Refer to Chapter 6, “Lot category setup,” for more information.*
 
-1.  If the lot-numbered item has a shelf life, enter the number of days that
-    will be used to determine whether or not the item meets the acceptable
-    minimum shelf life when you enter the receipt of the item in the Receivings
-    Transaction Entry window. Don’t enter the number of days if you aren’t
-    tracking the minimum shelf life of an item. See *Minimum shelf life* for
-    more information.
+5.  If the lot-numbered item has a shelf life, enter the number of days that will be used to determine whether or not the item meets the acceptable minimum shelf life when you enter the receipt of the item in the Receivings Transaction Entry window. Don’t enter the number of days if you aren’t tracking the minimum shelf life of an item. See *Minimum shelf life* for more information.
 
->   The Days fields are available only if you are using sales fulfillment
->   workflow.
+>   The Days fields are available only if you are using sales fulfillment workflow.
 
-1.  If you selected to track lot numbers, you can select to be warned before a
-    lot number expires. After marking the Warn option, you can enter the number
-    of days you want to warned before the lot number expires. You won’t receive
-    a warning message if you leave the days before lot expires field blank.
+6.  If you selected to track lot numbers, you can select to be warned before a lot number expires. After marking the Warn option, you can enter the number of days you want to warned before the lot number expires. You won’t receive a warning message if you leave the days before lot expires field blank.
 
->   If you marked the Lot Due to Expire reminder in the Reminder Preferences
->   window, the number of days you enter is used when generating the reminder
->   that a lot is nearing its expiration date.
+>   If you marked the Lot Due to Expire reminder in the Reminder Preferences window, the number of days you enter is used when generating the reminder that a lot is nearing its expiration date.
 
-1.  Indicate if back orders will be allowed for this item if there is a quantity
-    shortage during a sales transaction in Sales Order Processing.
+7.  Indicate if back orders will be allowed for this item if there is a quantity shortage during a sales transaction in Sales Order Processing.
 
-2.  Enter the number of days the item is under warranty.
+8.  Enter the number of days the item is under warranty.
 
-3.  If you want to classify items by category, enter or select user category
-    values for the item. The categories you set up in the Inventory Control
-    Setup window—as well as any values you assigned to the categories—are
-    available.
+9.  If you want to classify items by category, enter or select user category values for the item. The categories you set up in the Inventory Control Setup window—as well as any values you assigned to the categories—are available.
 
->   You can select an existing value or enter a different one. If you enter a
->   different value, an alert message appears, asking if you want to create the
->   value. Choose Yes.
+>   You can select an existing value or enter a different one. If you enter a different value, an alert message appears, asking if you want to create the value. Choose Yes.
 
 *Refer to Defining a user category for more information.*
 
-1.  Select the types of history to keep for this item.
+10.  Select the types of history to keep for this item.
 
->   You must keep transaction history to print the Transaction History Report or
->   to print details for the Historical Stock Status Report, and you must keep
->   distribution history to print the Distribution History Report. Both
->   transaction and distribution history are kept automatically if you specify
->   in the Audit Trail Codes Setup window that you want to reprint posting
->   journals.
+>   You must keep transaction history to print the Transaction History Report or to print details for the Historical Stock Status Report, and you must keep distribution history to print the Distribution History Report. Both transaction and distribution history are kept automatically if you specify in the Audit Trail Codes Setup window that you want to reprint posting journals.
 
-1.  When you’ve finished entering information, choose OK.
+11.  When you’ve finished entering information, choose OK.
 
 ### Defining a serial number mask
 
->   Use the Item Serial/Lot Number Definition window to set up serial number
->   masks for serial-tracked items. A serial number mask is a pre-defined serial
->   number format used to generate serial numbers automatically. With a serial
->   number mask, you can specify starting and ending serial numbers for an item,
->   create incrementing segments, and control the character type. You must
->   create a serial number mask before you can generate serial numbers
->   automatically in Purchase Order Processing.
+>   Use the Item Serial/Lot Number Definition window to set up serial number masks for serial-tracked items. A serial number mask is a pre-defined serial number format used to generate serial numbers automatically. With a serial number mask, you can specify starting and ending serial numbers for an item, create incrementing segments, and control the character type. You must create a serial number mask before you can generate serial numbers automatically in Purchase Order Processing.
 
 >   **To define a serial number mask:**
 
@@ -1674,84 +1477,49 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item)
 
-1.  Select an item tracked by serial numbers, and then choose Options to open
-    the Item Maintenance Options window.
+2.  Select an item tracked by serial numbers, and then choose Options to open the Item Maintenance Options window.
 
->   Choose the Track expansion button to open the Item Serial/Lot Number
->   Definition window.
+>   Choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
 ![](media/3183fe81593268fac38bb351ca10cb3b.jpg)
 
->   *You also can open this window by clicking the Serial Number Mask field
->   label in the Purchasing Serial Number Entry window.*
+>   *You also can open this window by clicking the Serial Number Mask field label in the Purchasing Serial Number Entry window.*
 
->   Information for the item you selected, including the last serial number that
->   was generated and any current mask information, will appear.
+>   Information for the item you selected, including the last serial number that was generated and any current mask information, will appear.
 
-1.  Select a character type for the first segment: Numeric, Alpha, Symbol, User
-    Date, or Space. The character type will determine which of the remaining
-    fields are editable.
+3.  Select a character type for the first segment: Numeric, Alpha, Symbol, User Date, or Space. The character type will determine which of the remaining fields are editable.
 
-2.  Enter a size, if you selected a character type of Alpha or Numeric.
+4.  Enter a size, if you selected a character type of Alpha or Numeric.
 
->   *Symbol and Space character types must have a size of 1. The size of a User
->   Date segment depends on the date format you select.*
+>   *Symbol and Space character types must have a size of 1. The size of a User Date segment depends on the date format you select.*
 
-1.  Mark Increment if you want this segment to increase each time a serial
-    number is generated. You must have at least one segment marked to increment
-    in order to generate serial numbers automatically for an item.
+5.  Mark Increment if you want this segment to increase each time a serial number is generated. You must have at least one segment marked to increment in order to generate serial numbers automatically for an item.
 
->   You can use the Increment check box only if the character type is Alpha or
->   Numeric. Symbol and space characters do not change. User date segments
->   automatically increment when the user date changes.
+>   You can use the Increment check box only if the character type is Alpha or Numeric. Symbol and space characters do not change. User date segments automatically increment when the user date changes.
 
->   If more than one segment is marked to increment, the segments increment from
->   right to left. For example, assume you have incrementing segments 0001-0001.
->   The next serial number contains the segments 0001-0002. The first segment
->   increments when the second reaches its maximum value (from 0001-9999 to
->   0002-0000). If the mask contains a date segment, other incrementing segments
->   will reset when the date segment changes—that is, when the date is different
->   from the date in the Last Generated Serial Number field.
+>   If more than one segment is marked to increment, the segments increment from right to left. For example, assume you have incrementing segments 0001-0001. The next serial number contains the segments 0001-0002. The first segment increments when the second reaches its maximum value (from 0001-9999 to 0002-0000). If the mask contains a date segment, other incrementing segments will reset when the date segment changes—that is, when the date is different from the date in the Last Generated Serial Number field.
 
-1.  Enter starting and ending values.
+6.  Enter starting and ending values.
 
->   If you selected a type of User Date or Space, you won’t be able to set
->   starting and ending values. If you selected a type of Symbol, you will be
->   able to enter a single character in the starting value field.
+>   If you selected a type of User Date or Space, you won’t be able to set starting and ending values. If you selected a type of Symbol, you will be able to enter a single character in the starting value field.
 
-1.  If you selected a character type of User Date, select a date format.
+7.  If you selected a character type of User Date, select a date format.
 
-2.  Choose the Insert button to add the segment to the serial number mask. The
-    segment’s starting value appears in the Serial Number Mask field.
+8.  Choose the Insert button to add the segment to the serial number mask. The segment’s starting value appears in the Serial Number Mask field.
 
-3.  Define and insert the remaining segments. Serial number masks can be a
-    maximum of 20 characters long.
+9.  Define and insert the remaining segments. Serial number masks can be a maximum of 20 characters long.
 
-4.  To move a segment to a different position in the serial number mask, select
-    the segment, then choose Up or Down.
+10.  To move a segment to a different position in the serial number mask, select the segment, then choose Up or Down.
 
->   Choose Remove to delete the selected segment or choose Modify to change the
->   selected segment’s information.
+>   Choose Remove to delete the selected segment or choose Modify to change the selected segment’s information.
 
-1.  Choose OK to save the serial number mask.
+11.  Choose OK to save the serial number mask.
 
 ### Defining a lot number mask
 
->   Use the Item Serial/Lot Number Definition window to set up lot number masks
->   for lot-tracked items. A lot number mask is a pre-defined lot number format
->   used to generate lot numbers automatically. With a lot number mask, you can
->   specify starting and ending lot numbers for an item, create incrementing
->   segments, and control the character type. You must create a lot number mask
->   before you can generate lot numbers automatically in Purchase Order
->   Processing.
+>   Use the Item Serial/Lot Number Definition window to set up lot number masks for lot-tracked items. A lot number mask is a pre-defined lot number format  used to generate lot numbers automatically. With a lot number mask, you can specify starting and ending lot numbers for an item, create incrementing segments, and control the character type. You must create a lot number mask before you can generate lot numbers automatically in Purchase Order Processing.
 
->   You also can enter a lot split quantity, which is the breakpoint for
->   creating separate lots for a lot-tracked item. For example, assume that you
->   enter a lot split quantity of 50. If you receive 120 units for a lot-tracked
->   item, two lots of 50 and one lot of 20 are created. If the starting value
->   for the mask is AA-001, the first lot is AA-001, the second lot is AA-002,
->   and the third lot for the remainder is AA-003. If the lot split quantity is
->   zero, the total quantity is treated as a single lot.
+>   You also can enter a lot split quantity, which is the breakpoint for creating separate lots for a lot-tracked item. For example, assume that you enter a lot split quantity of 50. If you receive 120 units for a lot-tracked item, two lots of 50 and one lot of 20 are created. If the starting value for the mask is AA-001, the first lot is AA-001, the second lot is AA-002, and the third lot for the remainder is AA-003. If the lot split quantity is zero, the total quantity is treated as a single lot.
 
 >   **To define a lot number mask:**
 
@@ -1759,80 +1527,51 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item)
 
-1.  Select an item tracked by lot numbers, and then choose Options to open the
-    Item Maintenance Options window.
+2.  Select an item tracked by lot numbers, and then choose Options to open the Item Maintenance Options window.
 
->   Choose the Track expansion button to open the Item Serial/Lot Number
->   Definition window.
+>   Choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
 ![](media/34d88e83dca8bbcf180372ebf2d25dd8.jpg)
 
->   *You also can open this window by clicking the Lot Number Mask field label
->   in the Purchasing Lot Number Entry window.*
+>   *You also can open this window by clicking the Lot Number Mask field label in the Purchasing Lot Number Entry window.*
 
->   Information for the item you selected, including the last lot number that
->   was generated and any current mask information, will appear.
+>   Information for the item you selected, including the last lot number that was generated and any current mask information, will appear.
 
-1.  Enter a lot split quantity, if applicable.
+3.  Enter a lot split quantity, if applicable.
 
-2.  Select a character type for the first segment: Numeric, Alpha, Symbol, User
-    Date, or Space. The character type will determine which of the remaining
-    fields are editable.
+4.  Select a character type for the first segment: Numeric, Alpha, Symbol, User Date, or Space. The character type will determine which of the remaining fields are editable.
 
-3.  Enter a size, if you selected a character type of Alpha or Numeric.
+5.  Enter a size, if you selected a character type of Alpha or Numeric.
 
->   *Symbol and Space character types must have a size of 1. The size of a User
->   Date segment depends on the date format you select.*
+>   *Symbol and Space character types must have a size of 1. The size of a User Date segment depends on the date format you select.*
 
-1.  Mark Increment if you want this segment to increase each time a lot number
-    is generated. You must have at least one segment marked to increment in
-    order to generate lot numbers automatically for an item.
+6.  Mark Increment if you want this segment to increase each time a lot number is generated. You must have at least one segment marked to increment in order to generate lot numbers automatically for an item.
 
->   You can use the Increment check box only if the character type is Alpha or
->   Numeric. Symbol and space characters do not change. User date segments
->   automatically increment when the user date changes.
+>   You can use the Increment check box only if the character type is Alpha or Numeric. Symbol and space characters do not change. User date segments automatically increment when the user date changes.
 
->   If more than one segment is marked to increment, the segments increment from
->   right to left. For example, assume you have incrementing segments 0001-0001.
->   The next lot number contains the segments 0001-0002. The first segment
->   increments when the second reaches its maximum value (from 0001-9999 to
->   0002-0000). If the mask contains a date segment, other incrementing segments
->   will reset when the date segment changes—that is, when the date is different
->   from the date in the Last Generated Lot Number field.
+>   If more than one segment is marked to increment, the segments increment from right to left. For example, assume you have incrementing segments 0001-0001. The next lot number contains the segments 0001-0002. The first segment increments when the second reaches its maximum value (from 0001-9999 to 0002-0000). If the mask contains a date segment, other incrementing segments will reset when the date segment changes—that is, when the date is different from the date in the Last Generated Lot Number field.
 
-1.  Enter starting and ending values.
+7.  Enter starting and ending values.
 
->   If you selected a type of User Date or Space, you won’t be able to set
->   starting and ending values. If you selected a type of Symbol, you will be
->   able to enter a single character in the starting value field.
+>   If you selected a type of User Date or Space, you won’t be able to set starting and ending values. If you selected a type of Symbol, you will be able to enter a single character in the starting value field.
 
-1.  If you selected a character type of User Date, select a date format.
+8.  If you selected a character type of User Date, select a date format.
 
-2.  Choose the Insert button to add the segment to the lot number mask. The
-    segment’s starting value appears in the Lot Number Mask field.
+9.  Choose the Insert button to add the segment to the lot number mask. The segment’s starting value appears in the Lot Number Mask field.
 
-3.  Define and insert the remaining segments. Lot number masks can be a maximum
-    of 20 characters long.
+10.  Define and insert the remaining segments. Lot number masks can be a maximum of 20 characters long.
 
-4.  To move a segment to a different position in the lot number mask, select the
-    segment, and then choose Up or Down.
+11.  To move a segment to a different position in the lot number mask, select the segment, and then choose Up or Down.
 
->   Choose Remove to delete the selected segment or choose Modify to change the
->   selected segment’s information.
+>   Choose Remove to delete the selected segment or choose Modify to change the selected segment’s information.
 
-1.  Choose OK to save the lot number mask.
+12.  Choose OK to save the lot number mask.
 
 ### Assigning posting accounts to items
 
->   You must specify posting accounts for every inventoried item. If the item is
->   assigned to a class, the posting accounts of the item class appear in the
->   Item Account Maintenance window as default accounts. If you’re posting
->   *through* General Ledger, Microsoft Dynamics GP posts transaction amounts to
->   these accounts.
+>   You must specify posting accounts for every inventoried item. If the item is assigned to a class, the posting accounts of the item class appear in the Item Account Maintenance window as default accounts. If you’re posting *through* General Ledger, Microsoft Dynamics GP posts transaction amounts to these accounts.
 
->   If you don’t enter posting accounts in the Item Account Maintenance window,
->   the accounts entered in the Posting Accounts Setup window or in the Item
->   Class Setup window are used during transaction entry.
+>   If you don’t enter posting accounts in the Item Account Maintenance window, the accounts entered in the Posting Accounts Setup window or in the Item Class Setup window are used during transaction entry.
 
 >   **To assign posting accounts to an item:**
 
@@ -1840,35 +1579,23 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item)
 
-1.  Enter or select an item.
+2.  Enter or select an item.
 
 >   Choose Accounts to open the Item Account Maintenance window.
 
 ![](media/276ea12842fee082251a00651260a51e.jpg)
 
-1.  Review the default accounts. You can accept or change each default account.
+3.  Review the default accounts. You can accept or change each default account.
 
->   *If you specify an account site segment when you define sites, the
->   appropriate site segment will be substituted into your posting account
->   number. Refer to Defining a site for more information about entering site
->   segment information. Refer to Posting accounts and site segment substitution
->   for more information about how the segments are used.*
+>   *If you specify an account site segment when you define sites, the appropriate site segment will be substituted into your posting account number. Refer to Defining a site for more information about entering site segment information. Refer to Posting accounts and site segment substitution for more information about how the segments are used.*
 
-1.  Choose OK to save your changes.
+4.  Choose OK to save your changes.
 
 ### Assigning suggested sales items to an item
 
->   Use the Suggest Sales Item Maintenance window to specify default suggested
->   line items to sell with an item when entering a Sales Order Processing
->   invoice, quote, order, or fulfillment order. You can select up to five
->   suggested line items.
+>   Use the Suggest Sales Item Maintenance window to specify default suggested line items to sell with an item when entering a Sales Order Processing invoice, quote, order, or fulfillment order. You can select up to five suggested line items.
 
->   For example, a backup power supply, additional memory, or a surge protector
->   can be suggested sales items for a computer when entering a sales invoice.
->   If you enter a sales invoice for a computer in the Sales Transaction Entry
->   window, the suggested items display in the Suggest Sales Item Entry window.
->   You can suggest that a customer might want to add a backup power supply or a
->   surge protector to the sale of a computer.
+>   For example, a backup power supply, additional memory, or a surge protector can be suggested sales items for a computer when entering a sales invoice. If you enter a sales invoice for a computer in the Sales Transaction Entry window, the suggested items display in the Suggest Sales Item Entry window. You can suggest that a customer might want to add a backup power supply or a surge protector to the sale of a computer.
 
 >   **To assign suggested sales items to an item:**
 
@@ -1876,32 +1603,25 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item)
 
-1.  Enter or select an item.
+2.  Enter or select an item.
 
-2.  Choose Suggest Items to open the Suggest Sales Item Maintenance window.
+3.  Choose Suggest Items to open the Suggest Sales Item Maintenance window.
 
-3.  Mark the Sales Order Processing document types that you want to suggest line
-    items to sell with the selected item.
+4.  Mark the Sales Order Processing document types that you want to suggest line items to sell with the selected item.
 
-4.  Enter or select the item you want to suggest to sell with the selected item
-    number.
+5.  Enter or select the item you want to suggest to sell with the selected item number.
 
-5.  Enter the quantity of the item you are suggesting to sell.
+6.  Enter the quantity of the item you are suggesting to sell.
 
-6.  Repeat steps 5 and 6 until you entered all of the suggested items. You can
-    select up to five suggested line items.
+7.  Repeat steps 5 and 6 until you entered all of the suggested items. You can select up to five suggested line items.
 
-7.  Choose OK.
+8.  Choose OK.
 
 ### Assigning a currency to an item
 
->   Use the Item Currency Maintenance window to assign each currency to the
->   items you’ll purchase or sell with that currency. If you’re not using
->   Multicurrency Management, you don’t need to complete this procedure.
+>   Use the Item Currency Maintenance window to assign each currency to the items you’ll purchase or sell with that currency. If you’re not using Multicurrency Management, you don’t need to complete this procedure.
 
->   *Before you begin assigning currencies to an item, be sure the currencies
->   you want to use have been defined and that they have been assigned to your
->   company.*
+>   *Before you begin assigning currencies to an item, be sure the currencies you want to use have been defined and that they have been assigned to your company.*
 
 >   **To assign a currency to an item:**
 
@@ -1911,57 +1631,35 @@ Chapter 10: Item cards
 
 ![](media/4b12d7ecd939eb30621c23077a7a1192.jpg)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Enter or select a currency ID.
+3.  Enter or select a currency ID.
 
-3.  Enter or select the number of decimal places to be used for transactions for
-    this item and currency.
+4.  Enter or select the number of decimal places to be used for transactions for this item and currency.
 
->   *Once the item record has been saved, you must use the Change Currency
->   Decimals window to change the number of decimals used to track currency
->   information. Refer to Changing currency or quantity decimal places for items
->   for more information.*
+>   *Once the item record has been saved, you must use the Change Currency Decimals window to change the number of decimals used to track currency information. Refer to Changing currency or quantity decimal places for items for more information.*
 
-1.  If you’re using standard pricing and the pricing method is Percent of List,
-    enter the List Price in the currency you’re assigning to the item.
+5.  If you’re using standard pricing and the pricing method is Percent of List, enter the List Price in the currency you’re assigning to the item.
 
-2.  Choose Save.
+6.  Choose Save.
 
-3.  To assign other currencies to the item, repeat steps 3 through 6.
+7.  To assign other currencies to the item, repeat steps 3 through 6.
 
-4.  When you’ve finished assigning currencies, close the window.
+8.  When you’ve finished assigning currencies, close the window.
 
 ### Item numbers and substitute items for customers
 
->   Some customers use different names for items than your company uses. The
->   name that the customer uses is a customer item. You can set up customer item
->   numbers to make entering orders easier. You also can set up substitute item
->   numbers to sell an item in place of another item.
+>   Some customers use different names for items than your company uses. The name that the customer uses is a customer item. You can set up customer item numbers to make entering orders easier. You also can set up substitute item numbers to sell an item in place of another item.
 
->   To set up customer item numbers, substitute item numbers, and user-defined
->   information, use the Customer Item Maintenance window. For more information
->   about customer item numbers and customer substitute items, refer to the
->   Sales Order Processing documentation.
+>   To set up customer item numbers, substitute item numbers, and user-defined information, use the Customer Item Maintenance window. For more information about customer item numbers and customer substitute items, refer to the Sales Order Processing documentation.
 
 ### Changing the item print option for an item
 
->   If you’re using advanced picking, use the Override Item Print Option window
->   to select the site for one or more items to change the item print option
->   for. You can select items by item number, generic description, and item
->   class IDs.
+>   If you’re using advanced picking, use the Override Item Print Option window to select the site for one or more items to change the item print option for. You can select items by item number, generic description, and item class IDs.
 
->   For example, suppose that you selected the item print option Both for a
->   site, but you don’t want to print bulk picking tickets for large items that
->   are picked individually. You can change the item print option for just that
->   item at that site to Individual and keep the item print option for all the
->   other items at Both. For more information about item print options, refer to
->   Sales Order Processing documentation.
+>   For example, suppose that you selected the item print option Both for a site, but you don’t want to print bulk picking tickets for large items that are picked individually. You can change the item print option for just that item at that site to Individual and keep the item print option for all the other items at Both. For more information about item print options, refer to Sales Order Processing documentation.
 
->   Use the Item Print Option Preview window to change the item print option
->   that you selected for a item in the Item Quantities Maintenance window. For
->   more information, refer to *Entering basic item-site combination
->   information*.
+>   Use the Item Print Option Preview window to change the item print option that you selected for a item in the Item Quantities Maintenance window. For more information, refer to *Entering basic item-site combination information*.
 
 >   **To change the item print option for an item:**
 
@@ -1971,41 +1669,29 @@ Chapter 10: Item cards
 
 ![](media/cbaec99aef569be29fdaee941a41432b.jpg)
 
-1.  Enter or select a site ID.
+2.  Enter or select a site ID.
 
-2.  Select an item print option and enter or select additional criteria to
-    display specific records.
+3.  Select an item print option and enter or select additional criteria to display specific records.
 
->   For example, suppose you have many different types of paint in inventory.
->   Although the item print option selected for the paint is Both for the site
->   Warehouse, paint that is included in the Indoor Paint class needs to be
->   printed only on individual picking tickets.
+>   For example, suppose you have many different types of paint in inventory. Although the item print option selected for the paint is Both for the site Warehouse, paint that is included in the Indoor Paint class needs to be printed only on individual picking tickets.
 
->   To change the item print option for all paint assigned to the class ID
->   Indoor Paint, select From in the Generic Description field and enter or
->   select Indoor Paint in the From and To fields.
+>   To change the item print option for all paint assigned to the class ID Indoor Paint, select From in the Generic Description field and enter or select Indoor Paint in the From and To fields.
 
-1.  Choose Preview to open the Item Print Option Preview window and view the
-    records that match your criteria.
+4.  Choose Preview to open the Item Print Option Preview window and view the records that match your criteria.
 
 ![](media/ecef106c3a9be73d591d27df447c1eb9.jpg)
 
->   The printing option for the item will be saved with the item record as
->   displayed.
+>   The printing option for the item will be saved with the item record as displayed.
 
-1.  Choose Process to save the item print options for each item record.
+5.  Choose Process to save the item print options for each item record.
 
-2.  Close the window.
+6.  Close the window.
 
 ### Copying an inventory item
 
->   Use the Item Copy window to create a new inventory item from a copy of an
->   existing item.
+>   Use the Item Copy window to create a new inventory item from a copy of an existing item.
 
->   If the new and existing items have different currencies and neither is the
->   functional currency, amounts will be converted from the currency for the
->   existing item to the functional currency and then to the currency for the
->   new item.
+>   If the new and existing items have different currencies and neither is the functional currency, amounts will be converted from the currency for the existing item to the functional currency and then to the currency for the new item.
 
 >   **To copy an inventory item:**
 
@@ -2013,32 +1699,23 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item)
 
-1.  Enter a new alphanumeric item number.
+2.  Enter a new alphanumeric item number.
 
-2.  Choose Copy to open the Item Copy window.
+3.  Choose Copy to open the Item Copy window.
 
 *You also can press ALT+Y to open the Item Copy window.*
 
-1.  Enter or select an item to copy.
+4.  Enter or select an item to copy.
 
-2.  Mark the desired copy attributes.
+5.  Mark the desired copy attributes.
 
->   If you’re using extended pricing and have installed and registered
+>   If you’re using extended pricing and have installed and registered Manufacturing, additional fields will be displayed in the Item Copy window. You can use these fields to copy the price group, price sheets, drawing group, and the effective date to the new item. You also can select the Receive Purchase Orders to QA Site option to route incoming items to a quality assurance site. Refer to help for more information about these fields.
 
->   Manufacturing, additional fields will be displayed in the Item Copy window.
->   You can use these fields to copy the price group, price sheets, drawing
->   group, and the effective date to the new item. You also can select the
->   Receive Purchase Orders to QA Site option to route incoming items to a
->   quality assurance site. Refer to help for more information about these
->   fields.
-
-1.  Choose Copy.
+6.  Choose Copy.
 
 ### Understanding item record modifications
 
->   You can use the Item Maintenance window to complete most changes to item
->   information, but some changes require special processes. Refer to the table
->   to find more information about special processes.
+>   You can use the Item Maintenance window to complete most changes to item information, but some changes require special processes. Refer to the table to find more information about special processes.
 
 | **To do this ...**                                                          | **Refer to ...**                                                                         |
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
@@ -2051,29 +1728,17 @@ Chapter 10: Item cards
 | Set up or changing site information for an item                             | *Chapter 14, “Sites and beginning quantities”*                                           |
 | Changing the cycle for counting an item at a site                           | *Changing the cycle-count intervals for an item*                                         |
 
->   Before beginning to change an item record, you also should be aware of these
->   limitations:
+>   Before beginning to change an item record, you also should be aware of these limitations:
 
--   If the item has a type of Sales Inventory, you can change the item type only
-    to Discontinued, and vice versa. If the item has a type of Flat Fee,
-    Discontinued, Miscellaneous Charges, or Services, it can’t be changed.
+-   If the item has a type of Sales Inventory, you can change the item type only to Discontinued, and vice versa. If the item has a type of Flat Fee, Discontinued, Miscellaneous Charges, or Services, it can’t be changed.
 
--   You can’t change the decimal place or valuation method selections for the
-    item in this window. If you want to change either of these options, you must
-    use the Change Decimal Places window or the Change Valuation Method window
-    to do so.
+-   You can’t change the decimal place or valuation method selections for the item in this window. If you want to change either of these options, you must use the Change Decimal Places window or the Change Valuation Method window to do so.
 
--   A site assigned to an item can’t be removed from the item record unless all
-    quantities at that site have been removed. To remove a site, enter a
-    transfer transaction, to transfer all quantities for the item at the site
-    you want to remove, and then assign the item to a different site.
+-   A site assigned to an item can’t be removed from the item record unless all quantities at that site have been removed. To remove a site, enter a transfer transaction, to transfer all quantities for the item at the site you want to remove, and then assign the item to a different site.
 
 ### Modifying an item record
 
->   You can use the Item Maintenance window to complete most changes to item
->   information, but some changes require special processes. Use this procedure
->   for basic changes, or refer to *Understanding item record modifications* to
->   find more information about special processes.
+>   You can use the Item Maintenance window to complete most changes to item information, but some changes require special processes. Use this procedure for basic changes, or refer to *Understanding item record modifications* to find more information about special processes.
 
 >   **To modify an item record:**
 
@@ -2081,17 +1746,15 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item) 2. Enter or select an item number.
 
-1.  Make changes as needed.
+2.  Make changes as needed.
 
-2.  Choose Save.
+3.  Choose Save.
 
 ### Removing a currency from an item
 
 >   Use the Item Currency Maintenance window to remove a currency from an item.
 
->   *Removing a currency from an item will remove the currency from price lists
->   for the item if you’re using standard pricing, or from price sheets for the
->   item if you’re using extended pricing.*
+>   *Removing a currency from an item will remove the currency from price lists for the item if you’re using standard pricing, or from price sheets for the item if you’re using extended pricing.*
 
 >   **To remove a currency from an item:**
 
@@ -2099,47 +1762,35 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item Currency)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Enter or select the currency to remove.
+3.  Enter or select the currency to remove.
 
->   *You can’t remove a currency if it is the functional currency, or if the
->   currency is used in Sales Order Processing or Purchase Order Processing
->   transactions.*
+>   *You can’t remove a currency if it is the functional currency, or if the currency is used in Sales Order Processing or Purchase Order Processing transactions.*
 
-1.  Choose Delete. An alert message will appear, warning that removing the
-    currency will also remove the associated price list for the item and asking
-    if you’re sure you want to remove the currency. Choose Yes.
+4.  Choose Delete. An alert message will appear, warning that removing the currency will also remove the associated price list for the item and asking if you’re sure you want to remove the currency. Choose Yes.
 
 ### Inactivating an item
 
->   You can inactivate item records in order to prevent the sale, purchase or
->   processing of an item, while maintaining history for the item.
+>   You can inactivate item records in order to prevent the sale, purchase or processing of an item, while maintaining history for the item.
 
 >   Before you can inactivate an item, the following conditions must be met:
 
--   If the item is assigned to an active kit, you must remove the item from the
-    kit.
+-   If the item is assigned to an active kit, you must remove the item from the kit.
 
--   If the item exists on an active bill of materials or finished good, you must
-    remove the item from the assembly.
+-   If the item exists on an active bill of materials or finished good, you must remove the item from the assembly.
 
 >   Before you inactivate an item record, you should be aware of the following:
 
--   Existing, unposted transactions or documents that contain inactivate items
-    can be processed. For example, you can transfer an inactive item on an order
-    to an invoice, but you can’t change the quantity.
+-   Existing, unposted transactions or documents that contain inactivate items can be processed. For example, you can transfer an inactive item on an order to an invoice, but you can’t change the quantity.
 
 -   Manufacturing transactions that contain an inactive item can’t be released.
 
 -   Inactive items can’t be added to existing transactions or documents.
 
--   If the kit item or bill of materials item is inactive, you can inactivate
-    the components, but you won’t be able to activate the item again if there
-    are inactive components.
+-   If the kit item or bill of materials item is inactive, you can inactivate the components, but you won’t be able to activate the item again if there are inactive components.
 
--   If an assembly transaction is released when there are inactive components
-    for the bill of materials item, the inactive components are processed.
+-   If an assembly transaction is released when there are inactive components for the bill of materials item, the inactive components are processed.
 
 >   You can enter new transactions with inactive items for the following:
 
@@ -2159,36 +1810,29 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item)
 
-1.  Enter or select the item number to inactivate.
+2.  Enter or select the item number to inactivate.
 
-2.  Mark the Inactive box.
+3.  Mark the Inactive box.
 
-3.  Choose Save.
+4.  Choose Save.
 
-4.  Print the Component Where Used report to verify if the item is a component
-    for a bill of materials item. If the item exists on an active bill of
-    materials or finished good, you must remove the item from the assembly.
+5.  Print the Component Where Used report to verify if the item is a component for a bill of materials item. If the item exists on an active bill of materials or finished good, you must remove the item from the assembly.
 
 ### Deleting an item
 
->   You can delete an item from your records. Before you can delete an item
->   record, the following conditions must be met.
+>   You can delete an item from your records. Before you can delete an item record, the following conditions must be met.
 
 -   No quantities of the item are available at any site.
 
--   The item is no longer assigned to any site. Refer to *Deleting an item-site
-    relationship* for more information.
+-   The item is no longer assigned to any site. Refer to *Deleting an item-site relationship* for more information.
 
 -   No unposted transactions for the item exist.
 
--   The item isn’t a component in any Microsoft Dynamics GP bills of materials.
-    Refer to the Bill of Materials documentation for more information.
+-   The item isn’t a component in any Microsoft Dynamics GP bills of materials. Refer to the Bill of Materials documentation for more information.
 
--   No inventory history exists for the item. Refer to *Chapter 34, “History
-    utilities,”* for more information about removing history.
+-   No inventory history exists for the item. Refer to *Chapter 34, “History utilities,”* for more information about removing history.
 
->   *If you’re using a series such as Manufacturing, you might have additional
->   prerequisites for deleting item records.*
+>   *If you’re using a series such as Manufacturing, you might have additional prerequisites for deleting item records.*
 
 >   **To delete an item:**
 
@@ -2196,15 +1840,13 @@ Chapter 10: Item cards
 
 >   (Inventory \>\> Cards \>\> Item)
 
-1.  Enter or select the item number you want to delete.
+2.  Enter or select the item number you want to delete.
 
-2.  Choose Delete. A message appears, asking if you’re sure you want to delete
-    the item. Choose Yes.
+3.  Choose Delete. A message appears, asking if you’re sure you want to delete the item. Choose Yes.
 
 >   **To delete an item using the action pane:**
 
-1.  In the navigation pane, choose the Inventory button, and then choose the
-    Items list.
+1.  In the navigation pane, choose the Inventory button, and then choose the Items list.
 
 2.  Mark the item number you want to delete.
 
@@ -2213,24 +1855,13 @@ Chapter 10: Item cards
 Chapter 11: Standard price lists
 --------------------------------
 
->   You can use the standard pricing system in Inventory Control with other
->   Microsoft Dynamics GP modules to create complex pricing structures. The
->   number of options you’ll have depends on the other modules you’re using with
->   Inventory Control. *For more information about extended pricing, refer to
->   Chapter 12, “Extended pricing.”*
+>   You can use the standard pricing system in Inventory Control with other Microsoft Dynamics GP modules to create complex pricing structures. The number of options you’ll have depends on the other modules you’re using with Inventory Control. *For more information about extended pricing, refer to Chapter 12, “Extended pricing.”*
 
->   For example, if you’re using Multicurrency Management, you can define
->   different pricing in each currency for each inventoried item, as long as the
->   price method is Currency Amount or Percent of List.
+>   For example, if you’re using Multicurrency Management, you can define different pricing in each currency for each inventoried item, as long as the price method is Currency Amount or Percent of List.
 
->   Inventory Control also helps you to create multiple price levels, which you
->   can assign to items, customers, and prospects. If you’re using Sales Order
->   Processing or Invoicing, that information is reflected in your sales order
->   and invoice documents.
+>   Inventory Control also helps you to create multiple price levels, which you can assign to items, customers, and prospects. If you’re using Sales Order Processing or Invoicing, that information is reflected in your sales order and invoice documents.
 
->   *Refer to Standard pricing price structures for a detailed example of how
->   you can use currencies, price levels, and units of measure to create complex
->   pricing structures.*
+>   *Refer to Standard pricing price structures for a detailed example of how you can use currencies, price levels, and units of measure to create complex pricing structures.*
 
 >   The following information is discussed:
 
@@ -2262,15 +1893,9 @@ Chapter 11: Standard price lists
 
 ### Price methods
 
->   Price methods are used to calculate prices in the price list. The price
->   method you select also will control which values—either percentages or
->   amounts—can be entered to determine pricing for an item.
+>   Price methods are used to calculate prices in the price list. The price method you select also will control which values—either percentages or amounts—can be entered to determine pricing for an item.
 
->   If you’re using Multicurrency Management and want to create pricing
->   information for different currencies, you must use the Currency Amount or
->   Percent of List price method for that item. However, you might define prices
->   in only one currency for some items, even if you’re using Multicurrency
->   Management. You can use any price method for those items.
+>   If you’re using Multicurrency Management and want to create pricing information for different currencies, you must use the Currency Amount or Percent of List price method for that item. However, you might define prices in only one currency for some items, even if you’re using Multicurrency Management. You can use any price method for those items.
 
 >   The following table explains how each price method calculates prices.
 
@@ -2285,14 +1910,9 @@ Chapter 11: Standard price lists
 
 ### Standard pricing price structures
 
->   Currencies, price levels, units of measure, and quantity ranges combine in
->   price lists to give you different options for pricing your inventory for
->   customers.
+>   Currencies, price levels, units of measure, and quantity ranges combine in price lists to give you different options for pricing your inventory for customers.
 
->   If you’re using Multicurrency Management, the basic pricing structure for an
->   item has currency at the top level, then price level, unit of measure, and
->   quantity range. If you’re not using Multicurrency Management, the structure
->   is price level, then unit of measure, then quantity range.
+>   If you’re using Multicurrency Management, the basic pricing structure for an item has currency at the top level, then price level, unit of measure, and quantity range. If you’re not using Multicurrency Management, the structure is price level, then unit of measure, then quantity range.
 
 >   **Currencies**
 
@@ -2303,45 +1923,30 @@ Chapter 11: Standard price lists
 
 >   *multiple currencies in a price list.*
 
->   Examples: US dollars, Canadian dollars,
-
->   Japanese yen
+>   Examples: US dollars, Canadian dollars, Japanese yen
 
 >   **Price Levels**
 
->   *Multiple price levels are available only if you're using Sales Order
->   Processing or Invoicing*
+>   *Multiple price levels are available only if you're using Sales Order Processing or Invoicing*
 
 >   Examples: Retail, Wholesale, Preferred, Employee
 
 >   **Units of Measure**
 
->   Examples: Unit, Each, Case, Kilogram,
-
->   Liter
+>   Examples: Unit, Each, Case, Kilogram, Liter
 
 >   **Quantity Ranges**
 
->   As you plan your pricing structure, you’ll probably start with a single
->   item, then consider the different layers of pricing information you’ll want
->   to add. Currencies, price levels, units of measure and quantity ranges can
->   help you create a complex pricing structure.
+>   As you plan your pricing structure, you’ll probably start with a single item, then consider the different layers of pricing information you’ll want to add. Currencies, price levels, units of measure and quantity ranges can help you create a complex pricing structure.
 
->   **Currencies** If you’re using Multicurrency Management and the price method
->   for an item is Currency Amount or Percent of List, you can create different
->   pricing for different currencies.
+>   **Currencies** If you’re using Multicurrency Management and the price method for an item is Currency Amount or Percent of List, you can create different pricing for different currencies.
 
 | **Item** | **Currencies** |
 |----------|----------------|
 | Item ABC | US dollars     |
 |          | British pounds |
 
->   **Price levels** You can use price levels to create different pricing
->   structures for items. You can create different pricing levels for different
->   customers. For example, you might want to create Wholesale and Retail
->   pricing levels for different sales situations—you might sell a single unit
->   of Item ABC for \$1.25 to a wholesale customer, or for \$2 to a retail
->   customer.
+>   **Price levels** You can use price levels to create different pricing structures for items. You can create different pricing levels for different customers. For example, you might want to create Wholesale and Retail pricing levels for different sales situations—you might sell a single unit of Item ABC for \$1.25 to a wholesale customer, or for \$2 to a retail customer.
 
 | **Item** | **Currencies** | **Price levels** |
 |----------|----------------|------------------|
@@ -2350,12 +1955,7 @@ Chapter 11: Standard price lists
 |          | British pounds | Wholesale        |
 |          |                | Retail           |
 
-**Units of measure and unit of measure (U of M) schedules** Use units of
-
->   measure to define different pricing for different sizes or quantities of
->   products. For example, you might define an Each unit of measure for items
->   you sell, but you also might want to define a Six-pack unit of measure so
->   you can sell the items in sets of six.
+**Units of measure and unit of measure (U of M) schedules** Use units of measure to define different pricing for different sizes or quantities of products. For example, you might define an Each unit of measure for items you sell, but you also might want to define a Six-pack unit of measure so you can sell the items in sets of six.
 
 | **Item** | **Currencies** | **Price levels** | **Units of measure** |
 |----------|----------------|------------------|----------------------|
@@ -2368,9 +1968,7 @@ Chapter 11: Standard price lists
 |          |                | Retail           | Single               |
 |          |                |                  | Six-pack             |
 
->   **Quantity ranges** Finally, you can add quantity ranges to the overall
->   pricing structure. With quantity ranges, you can give better pricing to
->   customers who purchase larger quantities of items.
+>   **Quantity ranges** Finally, you can add quantity ranges to the overall pricing structure. With quantity ranges, you can give better pricing to customers who purchase larger quantities of items.
 
 | **Item** | **Currencies** | **Price levels** | **Units** | **Quantities**  |
 |----------|----------------|------------------|-----------|-----------------|
@@ -2391,12 +1989,7 @@ Chapter 11: Standard price lists
 |          |                |                  | Six-pack  | 1-500           |
 |          |                |                  |           | 501-999,999,999 |
 
->   **Price lists and price list records** When you add actual prices to the
->   structure—the amounts you’ll charge customers—the entire structure for one
->   item is called a price list. Each row in the price list—each combination of
->   currency, price level, unit of measure, quantity range and price—is a price
->   list record. Pricing information for Sales Order Processing and Invoicing
->   come from the price lists.
+>   **Price lists and price list records** When you add actual prices to the structure—the amounts you’ll charge customers—the entire structure for one item is called a price list. Each row in the price list—each combination of currency, price level, unit of measure, quantity range and price—is a price list record. Pricing information for Sales Order Processing and Invoicing come from the price lists.
 
 | **Item** | **Currencies** | **Price levels** | **Units** | **Quantities**  | **Prices** |
 |----------|----------------|------------------|-----------|-----------------|------------|
@@ -2419,41 +2012,21 @@ Chapter 11: Standard price lists
 
 ### Multicurrency Management: Items and currencies
 
->   If you’re using Multicurrency Management, you can define multiple currencies
->   for each company and then assign as many currencies as you like to each
->   inventoried item. If an item’s price method is Percent of List or Currency
->   Amount, you can define different pricing for different currencies.
+>   If you’re using Multicurrency Management, you can define multiple currencies for each company and then assign as many currencies as you like to each inventoried item. If an item’s price method is Percent of List or Currency Amount, you can define different pricing for different currencies.
 
->   **If you’re not using Multicurrency Management** The currency you set up for
->   each company will be the currency used for all transactions.
+>   **If you’re not using Multicurrency Management** The currency you set up for each company will be the currency used for all transactions.
 
->   **If you’re using Multicurrency Management** The currencies you’ll work with
->   can be divided into two groups: functional currency—the main currency of
->   your business—and originating currency—the currency used for selling and
->   purchasing transactions in currencies other than your own.
+>   **If you’re using Multicurrency Management** The currencies you’ll work with can be divided into two groups: functional currency—the main currency of your business—and originating currency—the currency used for selling and purchasing transactions in currencies other than your own.
 
->   While you can define different pricing for different currencies, only sales
->   transactions are stored in the originating currencies. All history
->   information is kept in the functional currency.
+>   While you can define different pricing for different currencies, only sales transactions are stored in the originating currencies. All history information is kept in the functional currency.
 
 ### Using the price list tree view
 
->   The Item Price List Maintenance window has two main parts: the upper part of
->   the window, where you complete tasks such as selecting the default price
->   level, and the lower part of the window, where you define and view price
->   list information. The lower part includes a tree view and a scrolling
->   window. The Item Price List Inquiry window—where you can view information
->   entered in the Item Price List Maintenance window—has a similar arrangement.
+>   The Item Price List Maintenance window has two main parts: the upper part of the window, where you complete tasks such as selecting the default price level, and the lower part of the window, where you define and view price list information. The lower part includes a tree view and a scrolling window. The Item Price List Inquiry window—where you can view information entered in the Item Price List Maintenance window—has a similar arrangement.
 
->   The tree view is a graphic view of an item’s price list. It works much like
->   a Windows® Explorer or My Documents: if a label—such as a currency or price
->   level—is marked with a plus sign, you can expand the view to see more levels
->   of pricing information. Click the minus signs to collapse the tree view. You
->   also can use the arrow keys to expand and collapse parts of the tree view.
+>   The tree view is a graphic view of an item’s price list. It works much like a Windows® Explorer or My Documents: if a label—such as a currency or price level—is marked with a plus sign, you can expand the view to see more levels of pricing information. Click the minus signs to collapse the tree view. You also can use the arrow keys to expand and collapse parts of the tree view.
 
->   The highest level in the tree view is the item number. Subsequent levels
->   depend on whether or not Multicurrency Management is registered. Refer to
->   the table for more information.
+>   The highest level in the tree view is the item number. Subsequent levels depend on whether or not Multicurrency Management is registered. Refer to the table for more information.
 
 | **If Multicurrency Management is:** | **Then the tree view includes:** |
 |-------------------------------------|----------------------------------|
@@ -2470,24 +2043,14 @@ Chapter 11: Standard price lists
 
 >   Unit of measure
 
->   You can use the tree view to control the information displayed in the
->   scrolling window. If you highlight a currency or price level, only the
->   pricing information for that branch of the overall pricing structure is
->   displayed in the scrolling window. For example, if you highlight the Retail
->   price level in the tree view, only the pricing information for that price
->   level is displayed—no pricing information for a Wholesale price level would
->   be included. Any changes you make in the scrolling window—such as adding a
->   price level or currency—automatically are reflected in the tree view.
+>   You can use the tree view to control the information displayed in the scrolling window. If you highlight a currency or price level, only the pricing information for that branch of the overall pricing structure is displayed in the scrolling window. For example, if you highlight the Retail price level in the tree view, only the pricing information for that price level is displayed—no pricing information for a Wholesale price level would be included. Any changes you make in the scrolling window—such as adding a price level or currency—automatically are reflected in the tree view.
 
 Creating a price list for an item
 ---------------------------------
 
->   Use the Item Price List Maintenance window to create a price list for an
->   item.
+>   Use the Item Price List Maintenance window to create a price list for an item.
 
->   *You don’t need to create price lists if you’re using extended pricing. For
->   more information about extended pricing, refer to Chapter 12, “Extended
->   pricing.”*
+>   *You don’t need to create price lists if you’re using extended pricing. For more information about extended pricing, refer to Chapter 12, “Extended pricing.”*
 
 >   **To create a price list for an item:**
 
@@ -2497,82 +2060,54 @@ Creating a price list for an item
 
 ![](media/fff05db34a27f7737c20c6d164ef8486.jpg)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Enter or select the price method. If the item is assigned to a class, a
-    default price method might be displayed. You can accept it or change it.
+3.  Enter or select the price method. If the item is assigned to a class, a default price method might be displayed. You can accept it or change it.
 
->   If you’re using Multicurrency Management, the price method must be Currency
->   Amount or Percent of List if you want to create different pricing for
->   multiple currencies.
+>   If you’re using Multicurrency Management, the price method must be Currency Amount or Percent of List if you want to create different pricing for multiple currencies.
 
-1.  If you want to organize item information by grouping items with similar
-    price lists, you can enter or select a price group.
+4.  If you want to organize item information by grouping items with similar price lists, you can enter or select a price group.
 
-2.  Enter or select a default selling unit of measure, if you like. The default
-    selling unit of measure is the default unit of measure for Sales Order
-    Processing or Invoicing transactions.
+5.  Enter or select a default selling unit of measure, if you like. The default selling unit of measure is the default unit of measure for Sales Order Processing or Invoicing transactions.
 
->   *The default selling unit of measure must be in the unit of measure schedule
->   for the item, and must be defined in the price list for the item.*
+>   *The default selling unit of measure must be in the unit of measure schedule for the item, and must be defined in the price list for the item.*
 
-1.  Enter or select a default price level.
+6.  Enter or select a default price level.
 
->   If you enter a sales transaction for a customer that isn’t assigned a price
->   level (such as Wholesale or Retail), the default price level you specify
->   will be the default price level for the transaction entry. The default price
->   level must be defined in the item’s price list.
+>   If you enter a sales transaction for a customer that isn’t assigned a price level (such as Wholesale or Retail), the default price level you specify will be the default price level for the transaction entry. The default price level must be defined in the item’s price list.
 
-1.  In the scrolling window, enter or select a price level.
+7.  In the scrolling window, enter or select a price level.
 
-2.  Enter or select a unit of measure. The available units of measure come from
-    the unit of measure schedule assigned to the item.
+8.  Enter or select a unit of measure. The available units of measure come from the unit of measure schedule assigned to the item.
 
-3.  Accept or change the quantity range information.
+9.  Accept or change the quantity range information.
 
->   The All option is marked automatically, signifying that the pricing
->   information for that combination of currency, price level and unit of
->   measure applies no matter what quantity is sold.
+>   The All option is marked automatically, signifying that the pricing information for that combination of currency, price level and unit of measure applies no matter what quantity is sold.
 
->   *Refer to Adding quantity breaks to a price list record for more information
->   about creating quantity price breaks.*
+>   *Refer to Adding quantity breaks to a price list record for more information about creating quantity price breaks.*
 
-1.  Enter pricing information.
+10.  Enter pricing information.
 
->   If you’re using the Currency Amount price method, enter the price in the
->   appropriate line in the scrolling window.
+>   If you’re using the Currency Amount price method, enter the price in the appropriate line in the scrolling window.
 
->   If you’re using another price method, enter the percentage of list or cost
->   to be used to calculate the selling price.
+>   If you’re using another price method, enter the percentage of list or cost to be used to calculate the selling price.
 
-1.  If you’re using Multicurrency Management and the price method is Currency
-    Amount or Percent of List, enter or select the currency ID for this price
-    list record.
+11.  If you’re using Multicurrency Management and the price method is Currency Amount or Percent of List, enter or select the currency ID for this price list record.
 
->   If you’re not using Multicurrency Management or if the price method isn’t
->   Currency Amount or Percent of List, the entire price list automatically will
->   be in your company’s assigned currency.
+>   If you’re not using Multicurrency Management or if the price method isn’t Currency Amount or Percent of List, the entire price list automatically will be in your company’s assigned currency.
 
-1.  Choose Save to clear the window, or you can continue to add to the price
-    list—entering pricing information for other currencies, other price levels
-    and other units of measure as needed. Refer to *Adding a price list record
-    for an item* or *Adding quantity breaks to a price list record* for more
-    information.
+12  Choose Save to clear the window, or you can continue to add to the price list—entering pricing information for other currencies, other price levels and other units of measure as needed. Refer to *Adding a price list record for an item* or *Adding quantity breaks to a price list record* for more information.
 
-2.  When you’ve finished entering price list information, choose File \>\> Print
-    to generate the Item Price List report and verify your entries.
+13.  When you’ve finished entering price list information, choose File \>\> Print to generate the Item Price List report and verify your entries.
 
-3.  Close the window.
+14.  Close the window.
 
 Adding a price list record for an item
 --------------------------------------
 
->   Use the Item Price List Maintenance window to add more price list
->   information to an existing price list.
+>   Use the Item Price List Maintenance window to add more price list information to an existing price list.
 
->   *You don’t need to complete this procedure if you’re using extended pricing.
->   For more information about extended pricing, refer to Chapter 12, “Extended
->   pricing.”*
+>   *You don’t need to complete this procedure if you’re using extended pricing. For more information about extended pricing, refer to Chapter 12, “Extended pricing.”*
 
 >   **To add a price list record for an item:**
 
@@ -2580,75 +2115,36 @@ Adding a price list record for an item
 
 >   (Inventory \>\> Cards \>\> Price List)
 
-1.  Enter or select an item number with an existing price list.
+2.  Enter or select an item number with an existing price list.
 
-2.  In the tree view, expand the item price list information. You can click the
-    plus sign to see more price list information. If you highlight a currency,
-    price list, or unit of measure you can see only the associated price list
-    records in the scrolling window.
+3.  In the tree view, expand the item price list information. You can click the plus sign to see more price list information. If you highlight a currency, price list, or unit of measure you can see only the associated price list records in the scrolling window.
 
->   *Refer to Using the price list tree view for more information about the
->   levels of information in the tree view.*
+>   *Refer to Using the price list tree view for more information about the levels of information in the tree view.*
 
-1.  Decide where in the pricing structure you want to add a price list record.
+4.  Decide where in the pricing structure you want to add a price list record.
 
->   For example, to add a price list record for a new unit of measure for an
->   existing price level, you can highlight the price level, then put the
->   pointer in the first blank line in the scrolling window. Information about
->   the currency automatically will be displayed in the new scrolling window
->   line.
+>   For example, to add a price list record for a new unit of measure for an existing price level, you can highlight the price level, then put the pointer in the first blank line in the scrolling window. Information about the currency automatically will be displayed in the new scrolling window line.
 
->   **To add a price list record for a new currency** You must be using
+>   **To add a price list record for a new currency** You must be using Multicurrency Management and the item’s price method must be Currency Amount or Percent of List. Highlight the item number, then put your pointer in the first blank line in the scrolling window. Enter or select a currency, price level and unit of measure in the scrolling window. Enter pricing information.
 
->   Multicurrency Management and the item’s price method must be Currency Amount
->   or Percent of List. Highlight the item number, then put your pointer in the
->   first blank line in the scrolling window. Enter or select a currency, price
->   level and unit of measure in the scrolling window. Enter pricing
->   information.
+>   **To add a price list record for a new price level** If the price list includes pricing for multiple currencies, highlight the currency you want to add the price level to. If the price list includes only one currency, highlight the item number in the tree view. Put your pointer in the first blank line in the scrolling window, and then enter or select a price level and unit of measure. Enter pricing information.
 
->   **To add a price list record for a new price level** If the price list
->   includes pricing for multiple currencies, highlight the currency you want to
->   add the price level to. If the price list includes only one currency,
->   highlight the item number in the tree view. Put your pointer in the first
->   blank line in the scrolling window, and then enter or select a price level
->   and unit of measure. Enter pricing information.
+>   **To add a price list record for a new unit of measure** The unit of measure must be included in the unit of measure schedule assigned to the item. Highlight the appropriate price level, then put your pointer in the first blank line in the scrolling window. Enter or select the price level and unit of measure. Enter pricing information.
 
->   **To add a price list record for a new unit of measure** The unit of measure
->   must be included in the unit of measure schedule assigned to the item.
->   Highlight the appropriate price level, then put your pointer in the first
->   blank line in the scrolling window. Enter or select the price level and unit
->   of measure. Enter pricing information.
+5.  Your entries automatically are saved as soon as they’re entered in the scrolling window. You can choose Save to clear the window, or you can continue to add to the price list—entering pricing information for other units of measure, other price levels and other currencies as needed.
 
-1.  Your entries automatically are saved as soon as they’re entered in the
-    scrolling window. You can choose Save to clear the window, or you can
-    continue to add to the price list—entering pricing information for other
-    units of measure, other price levels and other currencies as needed.
+6.  When you’ve finished entering price list information, choose File \>\> Print to generate the Item Price List report and verify your entries.
 
-2.  When you’ve finished entering price list information, choose File \>\> Print
-    to generate the Item Price List report and verify your entries.
-
-3.  Choose Save and close the window.
+7.  Choose Save and close the window.
 
 Adding quantity breaks to a price list record
 ---------------------------------------------
 
->   Use the Item Price List Maintenance window to add quantity breaks to price
->   lists. Quantity breaks are typically used to give better pricing to
->   customers who purchase many units of an item.
+>   Use the Item Price List Maintenance window to add quantity breaks to price lists. Quantity breaks are typically used to give better pricing to customers who purchase many units of an item.
 
->   You can create different quantity breaks for each combination of currency,
->   price level and unit of measure. For example, customers purchasing your
->   items in US dollars might see the first quantity break at 50 units, while
->   customers purchasing the item with German marks might see the first quantity
->   break at 100 units.
+>   You can create different quantity breaks for each combination of currency, price level and unit of measure. For example, customers purchasing your items in US dollars might see the first quantity break at 50 units, while customers purchasing the item with German marks might see the first quantity break at 100 units.
 
->   *If you’re using quantity breaks for a combination of currency, price level
->   and unit of measure, the ranges you define—such as 0-50 units, 51-100 units
->   and so on—must cover all possible quantities from 0 to 999,999,999,999. If
->   you’re using one or more decimals to track quantity information, the ranges
->   must cover the decimal quantities as well. For example, if you’re using two
->   decimals to track quantity information, the quantity ranges must cover all
->   possible quantities from 0.00 to 999,999,999,999.99.*
+>   *If you’re using quantity breaks for a combination of currency, price level and unit of measure, the ranges you define—such as 0-50 units, 51-100 units and so on—must cover all possible quantities from 0 to 999,999,999,999. If you’re using one or more decimals to track quantity information, the ranges must cover the decimal quantities as well. For example, if you’re using two decimals to track quantity information, the quantity ranges must cover all possible quantities from 0.00 to 999,999,999,999.99.*
 
 >   **To add quantity breaks to a price list record:**
 
@@ -2656,47 +2152,34 @@ Adding quantity breaks to a price list record
 
 >   (Inventory \>\> Cards \>\> Price List)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  In the tree view, highlight the unit of measure that includes the currency
-    and price level combination that you want to add quantity breaks to.
+3.  In the tree view, highlight the unit of measure that includes the currency and price level combination that you want to add quantity breaks to.
 
->   The information in the scrolling window will include just those price list
->   records for this combination.
+>   The information in the scrolling window will include just those price list records for this combination.
 
-1.  In the first blank scrolling window line, position the insertion point in
-    the End Quantity field and enter the maximum quantity to be sold for a
-    certain price.
+4.  In the first blank scrolling window line, position the insertion point in the End Quantity field and enter the maximum quantity to be sold for a certain price.
 
-2.  Enter or select a currency, price level and unit of measure.
+5.  Enter or select a currency, price level and unit of measure.
 
-3.  Enter the price for the quantity range.
+6.  Enter the price for the quantity range.
 
->   If you’re using the Currency Amount price method enter the
->   per-unit-ofmeasure price for each quantity range.
+>   If you’re using the Currency Amount price method enter the per-unit-ofmeasure price for each quantity range.
 
->   If you’re using another price method enter the percentage to be used to
->   calculate pricing for each quantity range.
+>   If you’re using another price method enter the percentage to be used to calculate pricing for each quantity range.
 
-1.  Continue, repeating steps 4 through 6 until you’ve entered all the quantity
-    groups needed for the combination of currency, price level and unit of
-    measure.
+7.  Continue, repeating steps 4 through 6 until you’ve entered all the quantity groups needed for the combination of currency, price level and unit of measure.
 
->   *The End Quantity for the last quantity range must be 999,999,999,999 with
->   additional 9’s if one or more decimals are used to track the item’s quantity
->   information.*
+>   *The End Quantity for the last quantity range must be 999,999,999,999 with additional 9’s if one or more decimals are used to track the item’s quantity information.*
 
-1.  Choose Save and close the window.
+8.  Choose Save and close the window.
 
 Specifying options for a price list
 -----------------------------------
 
->   Use the Item Price List Options Maintenance window to specify rounding
->   options and to select selling options.
+>   Use the Item Price List Options Maintenance window to specify rounding options and to select selling options.
 
->   *You don’t need to complete this procedure if you’re using extended pricing.
->   Refer to Chapter 12, “Extended pricing,” for more information about setting
->   up extended pricing.*
+>   *You don’t need to complete this procedure if you’re using extended pricing. Refer to Chapter 12, “Extended pricing,” for more information about setting up extended pricing.*
 
 >   **To specify options for a price list:**
 
@@ -2704,34 +2187,25 @@ Specifying options for a price list
 
 >   (Inventory \>\> Cards \>\> Price List)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Choose Options to open the Item Price List Options Maintenance window.
+3.  Choose Options to open the Item Price List Options Maintenance window.
 
 ![](media/41be94db8d9e52249802460234bf2b8d.jpg)
 
->   Each record in the scrolling window represents a combination of a currency
->   (if you’re using Multicurrency Management), price level, unit of measure and
->   pricing—also known as a price list record.
+>   Each record in the scrolling window represents a combination of a currency (if you’re using Multicurrency Management), price level, unit of measure and pricing—also known as a price list record.
 
-1.  For each record in the scrolling window, accept the default selling option
-    or change it. Selling options include:
+4.  For each record in the scrolling window, accept the default selling option or change it. Selling options include:
 
->   **Not Available** Select Not Available if the item isn’t available for sale
->   in this combination of currency, price level and unit of measure.
+>   **Not Available** Select Not Available if the item isn’t available for sale in this combination of currency, price level and unit of measure.
 
->   **Whole** Select Whole if the item is available for sale only in whole
->   units.
+>   **Whole** Select Whole if the item is available for sale only in whole units.
 
->   **Whole and Fractional** Select Whole and Fractional if the item is
->   available for sale in both whole and fractional units of this unit of
->   measure for this currency and price level.
+>   **Whole and Fractional** Select Whole and Fractional if the item is available for sale in both whole and fractional units of this unit of measure for this currency and price level.
 
-1.  If the price method is Currency Amount, skip to step 8.
+5.  If the price method is Currency Amount, skip to step 8.
 
->   If the price method isn’t Currency Amount, accept the default rounding
->   policy for each record in the scrolling window, or change it. Rounding
->   policies include:
+>   If the price method isn’t Currency Amount, accept the default rounding policy for each record in the scrolling window, or change it. Rounding policies include:
 
 >   **None** Select None if pricing information shouldn’t be rounded.
 
@@ -2739,36 +2213,24 @@ Specifying options for a price list
 
 >   **Down** Select Down if pricing information should always be rounded down.
 
->   **To nearest** Select To nearest if pricing information should be rounded to
->   the nearest currency unit.
+>   **To nearest** Select To nearest if pricing information should be rounded to the nearest currency unit.
 
-1.  If the item’s price method is calculated with a percentage—such as Percent
-    of List—accept the default round option for each record in the scrolling
-    window, or change it. Rounding options include:
+6.  If the item’s price method is calculated with a percentage—such as Percent of List—accept the default round option for each record in the scrolling window, or change it. Rounding options include:
 
->   **Multiple of** Select Multiple of to have pricing amounts rounded to a
->   multiple of an amount you enter. For example, you might have pricing rounded
->   to multiples of five cents.
+>   **Multiple of** Select Multiple of to have pricing amounts rounded to a multiple of an amount you enter. For example, you might have pricing rounded to multiples of five cents.
 
->   **Ends in** Select Ends in to have pricing rounded to amounts that end in a
->   set of numbers you specify. For example, you might have pricing rounded to
->   amounts that end with “\$.99.”
+>   **Ends in** Select Ends in to have pricing rounded to amounts that end in a set of numbers you specify. For example, you might have pricing rounded to amounts that end with “\$.99.”
 
-1.  For each record in the scrolling window, accept the default round amount or
-    change it. You can enter any amount.
+7.  For each record in the scrolling window, accept the default round amount or change it. You can enter any amount.
 
-2.  Entries automatically are saved as you enter them in the scrolling window.
-    To generate the Item Price List Options List report to verify your entries,
-    you can choose File \>\> Print, or you can choose the print icon button.
+8.  Entries automatically are saved as you enter them in the scrolling window. To generate the Item Price List Options List report to verify your entries, you can choose File \>\> Print, or you can choose the print icon button.
 
-3.  When you’ve finished, choose OK to close the window and return to the Item
-    Price List Maintenance window. Close the window.
+9.  When you’ve finished, choose OK to close the window and return to the Item Price List Maintenance window. Close the window.
 
 Removing quantity breaks from a price list record
 -------------------------------------------------
 
->   Use the Item Price List Maintenance window to remove quantity breaks from a
->   price list record.
+>   Use the Item Price List Maintenance window to remove quantity breaks from a price list record.
 
 >   **To remove quantity breaks from a price list record:**
 
@@ -2776,43 +2238,30 @@ Removing quantity breaks from a price list record
 
 >   (Inventory \>\> Cards \>\> Price List)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  In the tree view, highlight the combination of currency, price level and
-    unit of measure that you want to remove price breaks from. The price list
-    record is displayed in the scrolling window.
+3.  In the tree view, highlight the combination of currency, price level and unit of measure that you want to remove price breaks from. The price list record is displayed in the scrolling window.
 
-3.  Mark the All option in that line of the scrolling window.
+4.  Mark the All option in that line of the scrolling window.
 
-4.  Choose Save. An alert message appears, asking if you’re sure you want to
-    remove remaining quantity ranges. Choose Yes.
+5.  Choose Save. An alert message appears, asking if you’re sure you want to remove remaining quantity ranges. Choose Yes.
 
->   *Quantity ranges for other combinations of currency, price level and unit of
->   measure won’t be affected by this.*
+>   *Quantity ranges for other combinations of currency, price level and unit of measure won’t be affected by this.*
 
-1.  Close the window.
+6.  Close the window.
 
 Requirements and effects of copying price lists
 -----------------------------------------------
 
->   You can use the Item Price List Copy Maintenance window to copy the existing
->   price list of one item for use on another item. The source item is the item
->   that has a price list to be copied for use with other items. The destination
->   item is the item that will be given a copy of the existing price list.
+>   You can use the Item Price List Copy Maintenance window to copy the existing price list of one item for use on another item. The source item is the item that has a price list to be copied for use with other items. The destination item is the item that will be given a copy of the existing price list.
 
->   *To copy a price list to several other items, use the Price List Utilities
->   wizard. Refer to Copying a price list from one item to others for more
->   information.*
+>   *To copy a price list to several other items, use the Price List Utilities wizard. Refer to Copying a price list from one item to others for more information.*
 
 >   To do this, these conditions must be met:
 
--   The source and destination items must have the same unit of measure schedule
-    assigned.
+-   The source and destination items must have the same unit of measure schedule assigned.
 
--   No other users can edit the unit of measure schedule or the price list of
-    the source item. For example, if another use has the Item Price List
-    Maintenance window open and is displaying the source item number, the
-    copying process will fail.
+-   No other users can edit the unit of measure schedule or the price list of the source item. For example, if another use has the Item Price List Maintenance window open and is displaying the source item number, the copying process will fail.
 
 >   When a price list is copied, these rules apply:
 
@@ -2820,20 +2269,13 @@ Requirements and effects of copying price lists
 
 -   The price method and price group are copied to the destination item.
 
--   The default price level is copied to the destination item if the price level
-    is part of the price list information that’s copied to the destination item.
+-   The default price level is copied to the destination item if the price level is part of the price list information that’s copied to the destination item.
 
--   The default selling unit of measure is copied to the destination item if the
-    unit of measure is included in the price list information that’s copied to
-    the destination item.
+-   The default selling unit of measure is copied to the destination item if the unit of measure is included in the price list information that’s copied to the destination item.
 
--   If the currency decimals for a currency are different for the source and
-    destination item, then prices will be padded with zeros or rounded to
-    accommodate the destination item’s currency decimals setting.
+-   If the currency decimals for a currency are different for the source and destination item, then prices will be padded with zeros or rounded to accommodate the destination item’s currency decimals setting.
 
--   Price list records from the source item’s price list are copied for each
-    currency that also is assigned to the destination item. Refer to the table
-    for an example.
+-   Price list records from the source item’s price list are copied for each currency that also is assigned to the destination item. Refer to the table for an example.
 
 | **Source item currencies** | **Destination item currencies** | **Copied?** |
 |----------------------------|---------------------------------|-------------|
@@ -2844,14 +2286,9 @@ Requirements and effects of copying price lists
 Copying a price list
 --------------------
 
->   Use the Item Price List Copy Maintenance window to copy an existing price
->   list from one item over the price list of another item. To copy a price list
->   to several other items, use the Price List Utilities wizard. Refer to
->   *Copying a price list from one item to others* for more information.
+>   Use the Item Price List Copy Maintenance window to copy an existing price list from one item over the price list of another item. To copy a price list to several other items, use the Price List Utilities wizard. Refer to *Copying a price list from one item to others* for more information.
 
->   When you copy a price list to a destination item, any existing price list
->   for the destination item is removed. The copied information replaces the
->   existing destination item price list—it doesn’t add to it.
+>   When you copy a price list to a destination item, any existing price list for the destination item is removed. The copied information replaces the existing destination item price list—it doesn’t add to it.
 
 >   **To copy a price list:**
 
@@ -2859,42 +2296,28 @@ Copying a price list
 
 >   (Inventory \>\> Cards \>\> Price List)
 
-1.  Enter or select an item number to copy a price list to*.*
+2.  Enter or select an item number to copy a price list to*.*
 
-2.  Choose Copy to open the Item Price List Copy Maintenance window.
+3.  Choose Copy to open the Item Price List Copy Maintenance window.
 
 ![](media/b3fc5db7a86cd78a4d979490fd52bc87.jpg)
 
-1.  Enter or select a Source Item Number—the item number that has the price list
-    you want to copy.
+4.  Enter or select a Source Item Number—the item number that has the price list you want to copy.
 
-2.  Choose File \>\> Print or choose the print icon button to generate the Copy
-    Price List Preview Report. You can use the report to verify the information
-    that will be copied before you actually change the destination record.
+5.  Choose File \>\> Print or choose the print icon button to generate the Copy Price List Preview Report. You can use the report to verify the information that will be copied before you actually change the destination record.
 
-3.  Choose Process.
+6.  Choose Process.
 
->   If the copying can’t occur—for example, because there are no common
->   currencies assigned to both the source item and the destination item—the
->   existing price lists of both the source and destination item will be left
->   intact, and the Copy Price List Audit Report will be generated.
+>   If the copying can’t occur—for example, because there are no common currencies assigned to both the source item and the destination item—the existing price lists of both the source and destination item will be left intact, and the Copy Price List Audit Report will be generated.
 
->   *To refresh the information in the tree view, collapse the tree view and
->   then expand it again. You’ll need to refresh the tree view to see the proper
->   hierarchy of price list records if you copy price list records.*
+>   *To refresh the information in the tree view, collapse the tree view and then expand it again. You’ll need to refresh the tree view to see the proper hierarchy of price list records if you copy price list records.*
 
 Removing part of a price list from an item
 ------------------------------------------
 
->   Use the Item Price List Maintenance window to remove a part of a price list
->   from an item. For example, suppose you’re ending a program that offered
->   special pricing to employees. Before you can delete the Employee price
->   level, you must remove the price level from all items and item classes that
->   are assigned that price level.
+>   Use the Item Price List Maintenance window to remove a part of a price list from an item. For example, suppose you’re ending a program that offered special pricing to employees. Before you can delete the Employee price level, you must remove the price level from all items and item classes that are assigned that price level.
 
->   You also can use this procedure to remove units of measure from a price
->   list—for example, if you’re no longer going to sell items singly, you might
->   want to delete the price list records for selling one unit.
+>   You also can use this procedure to remove units of measure from a price list—for example, if you’re no longer going to sell items singly, you might want to delete the price list records for selling one unit.
 
 >   **To remove part of a price list from an item:**
 
@@ -2902,24 +2325,20 @@ Removing part of a price list from an item
 
 >   (Inventory \>\> Cards \>\> Price List)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Expand the tree view. You can click the plus signs to see more information.
+3.  Expand the tree view. You can click the plus signs to see more information.
 
-3.  Highlight the name of the price level or unit of measure in the tree view.
+4.  Highlight the name of the price level or unit of measure in the tree view.
 
->   *Be sure the object you highlight is in the appropriate spot in the tree
->   view. For example, be sure the price level or unit of measure is under the
->   appropriate currency.*
+>   *Be sure the object you highlight is in the appropriate spot in the tree view. For example, be sure the price level or unit of measure is under the appropriate currency.*
 
-1.  Choose the Remove button below the tree view. An alert message appears,
-    asking if you’re sure you want to delete the price list. Choose Yes.
+5.  Choose the Remove button below the tree view. An alert message appears, asking if you’re sure you want to delete the price list. Choose Yes.
 
 Removing an entire price list from an item
 ------------------------------------------
 
->   Use the Item Price List Maintenance window to remove an entire price list
->   from an item.
+>   Use the Item Price List Maintenance window to remove an entire price list from an item.
 
 >   **To remove an entire price list from an item:**
 
@@ -2927,19 +2346,16 @@ Removing an entire price list from an item
 
 >   (Inventory \>\> Cards \>\> Price List)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Choose Delete. An alert message appears, asking if you want to delete the
-    entire price list. Choose Yes.
+3.  Choose Delete. An alert message appears, asking if you want to delete the entire price list. Choose Yes.
 
 Chapter 12: Extended pricing
 ============================
 
->   If you’re using extended pricing, you can set up price groups, price sheets,
->   and price books, and then assign items, customers, and prospects to them.
+>   If you’re using extended pricing, you can set up price groups, price sheets, and price books, and then assign items, customers, and prospects to them.
 
->   For a comparison of basic and extended pricing, refer to *Standard and
->   extended pricing*.
+>   For a comparison of basic and extended pricing, refer to *Standard and extended pricing*.
 
 >   The following information is discussed:
 
@@ -2988,78 +2404,41 @@ Chapter 12: Extended pricing
 Extended pricing terms and definitions
 --------------------------------------
 
->   Use the following definitions, along with the pricing hierarchy in *How
->   prices are calculated* to understand how extended pricing works.
+>   Use the following definitions, along with the pricing hierarchy in *How prices are calculated* to understand how extended pricing works.
 
->   **Price group** A group of items that share common pricing calculations.
->   Prices set up for the price group will apply to every item in the group,
->   unless overridden by item-specific prices.
+>   **Price group** A group of items that share common pricing calculations. Prices set up for the price group will apply to every item in the group, unless overridden by item-specific prices.
 
->   **Price sheet** A list of prices that will apply only during a specified
->   period. Each price sheet can be created for different combinations of items,
->   price groups, or both. You can assign a price sheet to price books,
->   customers, and prospects. For more information about price sheets, refer to
->   *Price sheets overview* o.
+>   **Price sheet** A list of prices that will apply only during a specified period. Each price sheet can be created for different combinations of items, price groups, or both. You can assign a price sheet to price books, customers, and prospects. For more information about price sheets, refer to *Price sheets overview* o.
 
->   *For prices to be calculated, every item must have a net price on a price
->   sheet, or must be part of a price group that has a net price on a price
->   sheet.*
+>   *For prices to be calculated, every item must have a net price on a price sheet, or must be part of a price group that has a net price on a price sheet.*
 
->   **Promotion or promotional price sheet** A price sheet that contains special
->   offers for individual products. Promotions can be set up for free products,
->   for special prices, or for an amount or percentage of the list price.
+>   **Promotion or promotional price sheet** A price sheet that contains special offers for individual products. Promotions can be set up for free products, for special prices, or for an amount or percentage of the list price.
 
->   **Price book** A collection of one or more price sheets. You can assign one
->   price book to each customer, but each price book can be assigned to multiple
->   customers.
+>   **Price book** A collection of one or more price sheets. You can assign one price book to each customer, but each price book can be assigned to multiple customers.
 
->   **Base price book** The base price book that is automatically created and is
->   called BASEBOOK. Prices are taken from the base price book if a price cannot
->   be located anywhere else in the pricing hierarchy. Prices are not
->   automatically added to the base price book; you must assign net price sheets
->   to this book. For more information about the base price book, refer to *The
->   base price book*.
+>   **Base price book** The base price book that is automatically created and is called BASEBOOK. Prices are taken from the base price book if a price cannot be located anywhere else in the pricing hierarchy. Prices are not automatically added to the base price book; you must assign net price sheets to this book. For more information about the base price book, refer to *The base price book*.
 
 How prices are calculated
 -------------------------
 
->   When an order or other sales transaction is created for a customer, the
->   following process is used to select the price for each item on the
->   transaction.
+>   When an order or other sales transaction is created for a customer, the following process is used to select the price for each item on the transaction.
 
->   First, the system searches for item-specific pricing information. The system
->   searches for a price in the price sheets (which must be active and which
->   must include the current date) assigned directly to the customer first.
->   Then, the system searches the price sheets in the price book assigned to the
->   customer, and finally it searches base price book.
+>   First, the system searches for item-specific pricing information. The system searches for a price in the price sheets (which must be active and which must include the current date) assigned directly to the customer first. Then, the system searches the price sheets in the price book assigned to the customer, and finally it searches base price book.
 
->   If no item-specific pricing is found, the system searches for a price group
->   that includes the item. Price sheets assigned directly to the customer are
->   searched first, followed by price sheets in the customer’s price book, and
->   finally the base price book.
+>   If no item-specific pricing is found, the system searches for a price group that includes the item. Price sheets assigned directly to the customer are searched first, followed by price sheets in the customer’s price book, and finally the base price book.
 
 >   Refer to the illustration for more information.
 
->   If an adjusted value-off or percent of list price is found, the rest of the
->   pricing structure is searched for a list price to apply the discount to. For
->   example, if there’s a value-off price in a price sheet assigned to the
->   customer, the customer’s price book and the base price book are searched for
->   a list price.
+>   If an adjusted value-off or percent of list price is found, the rest of the pricing structure is searched for a list price to apply the discount to. For example, if there’s a value-off price in a price sheet assigned to the customer, the customer’s price book and the base price book are searched for a list price.
 
->   It is possible for the final price to be the result of two adjustments
->   applied to the base price. For example, a customer sheet might give 2
->   percent off the customer price book price, which is itself 5 percent off the
->   base price.
+>   It is possible for the final price to be the result of two adjustments applied to the base price. For example, a customer sheet might give 2 percent off the customer price book price, which is itself 5 percent off the base price.
 
->   If multiple promotions are applied, they are applied in the order they are
->   discovered: first the promotions from the first step of the search, then
->   from the second step, and so on.
+>   If multiple promotions are applied, they are applied in the order they are  discovered: first the promotions from the first step of the search, then from the second step, and so on.
 
 Preparing to use extended pricing
 ---------------------------------
 
->   Refer to the following checklist for an overview of the tasks you’ll need to
->   complete before you can begin to use extended pricing.
+>   Refer to the following checklist for an overview of the tasks you’ll need to complete before you can begin to use extended pricing.
 
 | **Task**                                                     | **Reference**                                                                                                                                                           |
 |--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3073,14 +2452,9 @@ Preparing to use extended pricing
 Creating and editing price groups
 ---------------------------------
 
->   Use the Price Group Maintenance window to create price groups. A price group
->   is a group of similar items with common prices. Prices set up for the price
->   group will apply to every item in the group, unless overridden by
->   item-specific prices.
+>   Use the Price Group Maintenance window to create price groups. A price group is a group of similar items with common prices. Prices set up for the price group will apply to every item in the group, unless overridden by item-specific prices.
 
->   Price groups and individual item prices can be combined to create price
->   sheets. For more information about price sheets, refer to *Price sheets
->   overview*.
+>   Price groups and individual item prices can be combined to create price sheets. For more information about price sheets, refer to *Price sheets overview*.
 
 >   **To create and edit price groups:**
 
@@ -3090,49 +2464,32 @@ Creating and editing price groups
 
 ![](media/759d38cbefedc5deb3e64f3340a2134a.jpg)
 
-1.  Enter or select a price group ID.
+2.  Enter or select a price group ID.
 
-2.  Enter a description for the price group.
+3.  Enter a description for the price group.
 
-3.  Enter or select a unit of measure schedule.
+4.  Enter or select a unit of measure schedule.
 
->   *Once items have been assigned to a price group, the unit of measure
->   schedule ID for the group cannot be changed. If you’re using Multicurrency
->   Management, the Quantity Decimals field is set according to the unit of
->   measure schedule and also cannot be changed.*
+>   *Once items have been assigned to a price group, the unit of measure schedule ID for the group cannot be changed. If you’re using Multicurrency Management, the Quantity Decimals field is set according to the unit of measure schedule and also cannot be changed.*
 
-1.  Enter currency information.
+5.  Enter currency information.
 
->   **If you’re not using Multicurrency Management** Select values from the
+>   **If you’re not using Multicurrency Management** Select values from the Currency Decimals list. These values will be used for prices and in this price group.
 
->   Currency Decimals list. These values will be used for prices and in this
->   price group.
+>   **If you’re using Multicurrency Management** Choose the Currency button to open the Price Group Currency Maintenance window. Use this window to select the currency ID and number of currency decimal places for the price group. When you’re finished, choose Save and close the window.
 
->   **If you’re using Multicurrency Management** Choose the Currency button to
->   open the Price Group Currency Maintenance window. Use this window to select
->   the currency ID and number of currency decimal places for the price group.
->   When you’re finished, choose Save and close the window.
+>   If a price group is created without selecting currency decimal places for the originating currency, the default decimal places for the functional currency will be used.
 
->   If a price group is created without selecting currency decimal places for
->   the originating currency, the default decimal places for the functional
->   currency will be used.
+6.  Choose Assign to open the Price Group Items Maintenance window, where you can assign items to the price group. For more information, see *Assigning multiple items to a price group*.
 
-1.  Choose Assign to open the Price Group Items Maintenance window, where you
-    can assign items to the price group. For more information, see *Assigning
-    multiple items to a price group*.
-
-2.  Choose Save to save the price group.
+7.  Choose Save to save the price group.
 
 Assigning an individual item to a price group
 ---------------------------------------------
 
->   Use the Price Group Assignment window to assign individual items to price
->   groups. Once an item has been assigned to a price group, you can reassign it
->   to another price group only if the new price group has the same unit of
->   measure schedule. An item can be assigned to only one price group at a time.
+>   Use the Price Group Assignment window to assign individual items to price groups. Once an item has been assigned to a price group, you can reassign it to another price group only if the new price group has the same unit of measure schedule. An item can be assigned to only one price group at a time.
 
->   To be assigned to a price group, the quantity decimals and currency decimals
->   of the item must match those of the price group.
+>   To be assigned to a price group, the quantity decimals and currency decimals of the item must match those of the price group.
 
 >   **To assign an individual item to a price group:**
 
@@ -3142,23 +2499,18 @@ Assigning an individual item to a price group
 
 ![](media/9470e2c54daa32543957a1445ebd54f2.jpg)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Enter or select a price group ID.
+3.  Enter or select a price group ID.
 
-3.  Enter or select a default selling unit of measure.
+4.  Enter or select a default selling unit of measure.
 
-4.  Choose Save to assign the current item to the price group.
+5.  Choose Save to assign the current item to the price group.
 
 Assigning multiple items to a price group
 -----------------------------------------
 
->   Use the Price Group Items Maintenance window to assign multiple items to a
->   price group. Once an item has been assigned to a price group, you can
->   reassign it to another price group only if you unassign it from the original
->   price group and then assign it to another price group that has the same unit
->   of measure schedule. An item can be assigned to only one price group at a
->   time.
+>   Use the Price Group Items Maintenance window to assign multiple items to a price group. Once an item has been assigned to a price group, you can reassign it to another price group only if you unassign it from the original price group and then assign it to another price group that has the same unit of measure schedule. An item can be assigned to only one price group at a time.
 
 >   **To assign multiple items to a price group:**
 
@@ -3168,34 +2520,22 @@ Assigning multiple items to a price group
 
 ![](media/9edc702fad3c020892e76b006d557297.jpg)
 
-1.  Enter or select a price group ID.
+2.  Enter or select a price group ID.
 
-2.  Enter or select an item number for each item to assign to the price group.
+3.  Enter or select an item number for each item to assign to the price group.
 
->   Items will be added to the price group in the order you select them. The
->   order items are displayed doesn’t affect processing, but you can choose Sort
->   to sort the items by item number. This is helpful if you’re looking for a
->   specific item.
+>   Items will be added to the price group in the order you select them. The order items are displayed doesn’t affect processing, but you can choose Sort to sort the items by item number. This is helpful if you’re looking for a specific item.
 
->   If no price sheet has been set up for the price group, you can choose Edit
->   \>\> Delete Row to remove an item from a price group. If a price sheet has
->   been set up for the price group, you’ll need to create a new price group
->   that doesn’t include the item you want to remove, add that price group to
->   the price sheet, and then remove the old price group from the price sheet.
+>   If no price sheet has been set up for the price group, you can choose Edit \>\> Delete Row to remove an item from a price group. If a price sheet has been set up for the price group, you’ll need to create a new price group that doesn’t include the item you want to remove, add that price group to the price sheet, and then remove the old price group from the price sheet.
 
-1.  Choose Ranges to open the Price Group Item Ranges window, where you can
-    assign ranges of items to the price group. For more information, refer to
-    *Assigning a range of items to a price group*.
+4.  Choose Ranges to open the Price Group Item Ranges window, where you can assign ranges of items to the price group. For more information, refer to *Assigning a range of items to a price group*.
 
-2.  Choose Save to save changes to the price group.
+5.  Choose Save to save changes to the price group.
 
 Assigning a range of items to a price group
 -------------------------------------------
 
->   Use the Price Group Item Ranges window to assign a range of items to a price
->   group. You can select a range of item numbers, generic descriptions, or
->   class IDs that have the same unit of measure schedule as the selected price
->   group. An item can be assigned to only one price group at a time.
+>   Use the Price Group Item Ranges window to assign a range of items to a price group. You can select a range of item numbers, generic descriptions, or class IDs that have the same unit of measure schedule as the selected price group. An item can be assigned to only one price group at a time.
 
 >   **To assign a range of items to a price group:**
 
@@ -3203,94 +2543,56 @@ Assigning a range of items to a price group
 
 >   (Inventory \>\> Cards \>\> Extended Pricing \>\> Group Items)
 
-1.  Enter or select a price group ID. Any items already assigned to the price
-    group will be displayed in the scrolling window.
+2.  Enter or select a price group ID. Any items already assigned to the price group will be displayed in the scrolling window.
 
-2.  Choose Ranges to open the Price Group Item Ranges window.
+3.  Choose Ranges to open the Price Group Item Ranges window.
 
 ![](media/d3bd62eefeea5908be97318cfbd42092.jpg)
 
-1.  Enter or select the item numbers, generic descriptions, and class IDs to
-    assign to the price group.
+4.  Enter or select the item numbers, generic descriptions, and class IDs to assign to the price group.
 
-2.  Mark the Unassigned Items Only option to add only unassigned items to the
-    price group, or unmark this option to add all items in the range you
-    specified. If you unmark this option, items previously assigned to price
-    groups with the same unit of measure schedule will be reassigned to this
-    price group.
+5.  Mark the Unassigned Items Only option to add only unassigned items to the price group, or unmark this option to add all items in the range you specified. If you unmark this option, items previously assigned to price groups with the same unit of measure schedule will be reassigned to this price group.
 
-3.  Choose Preview to view the items that fit your criteria. The item numbers
-    and item descriptions will be listed in the scrolling window.
+6.  Choose Preview to view the items that fit your criteria. The item numbers and item descriptions will be listed in the scrolling window.
 
->   If no price sheet has been set up for the price group, you can choose Edit
->   \>\> Delete Row to remove an item from a price group. If a price sheet has
->   been set up for the price group, you’ll need to create a new price group
->   that doesn’t include the item you want to remove, add that price group to
->   the price sheet, and then remove the old price group from the price sheet.
+>   If no price sheet has been set up for the price group, you can choose Edit \>\> Delete Row to remove an item from a price group. If a price sheet has been set up for the price group, you’ll need to create a new price group that doesn’t include the item you want to remove, add that price group to the price sheet, and then remove the old price group from the price sheet.
 
-1.  Choose Transfer to assign the items to the price group.
+7.  Choose Transfer to assign the items to the price group.
 
 Price sheets overview
 ---------------------
 
->   A price sheet is a list of prices that will apply only during a specified
->   date range.
+>   A price sheet is a list of prices that will apply only during a specified date range.
 
->   Each price sheet can be created for different combinations of items and
->   price groups. With extended pricing, you can create and edit price sheets,
->   and set up price details for each item or price group in the price sheet.
->   You can use price sheets to set up promotions and customer-specific pricing
->   arrangements.
+>   Each price sheet can be created for different combinations of items and price groups. With extended pricing, you can create and edit price sheets, and set up price details for each item or price group in the price sheet. You can use price sheets to set up promotions and customer-specific pricing arrangements.
 
->   *For more information about assigning price sheets to specific customers or
->   prospects, refer to Assigning a price sheet to multiple price books,
->   customers, or prospects.*
+>   *For more information about assigning price sheets to specific customers or prospects, refer to Assigning a price sheet to multiple price books, customers, or prospects.*
 
->   Use price sheets to set up date-specific price adjustments for multiple
->   items and price groups. You can set up a price sheet for a promotion, as
->   part of a customer price book, or as part of the base price book. To be
->   included in a sales transaction, an item must have a net price on an active
->   price sheet, or must be part of a price group that has a net price on an
->   active price sheet.
+>   Use price sheets to set up date-specific price adjustments for multiple items and price groups. You can set up a price sheet for a promotion, as part of a customer price book, or as part of the base price book. To be included in a sales transaction, an item must have a net price on an active price sheet, or must be part of a price group that has a net price on an active price sheet.
 
->   The same item can exist in multiple price sheets as part of the same price
->   book if the price sheets have different date ranges. For example, the
->   Wholesale price book could contain the following price sheets:
+>   The same item can exist in multiple price sheets as part of the same price book if the price sheets have different date ranges. For example, the Wholesale price book could contain the following price sheets:
 
 | **Price sheet**  | **Start date**  | **End date**      |
 |------------------|-----------------|-------------------|
 | Prices 2017      | January 1, 2017 | December 31, 2017 |
 | Summer Promotion | June 1, 2017    | August 31, 2017   |
 
->   If there is more than one current price sheet, the one which starts most
->   recently is used in price calculations. In the above example, on June 15,
->   2017, the Summer Promotion prices will be used for items that belong to both
->   price sheets.
+>   If there is more than one current price sheet, the one which starts most recently is used in price calculations. In the above example, on June 15, 2017, the Summer Promotion prices will be used for items that belong to both price sheets.
 
->   If two price sheets start on the same date, the one which finishes earlier
->   is used in price calculations. If the same item is found in two price sheets
->   with identical start and end dates, you will receive an alert message
->   because Microsoft Dynamics GP will be unable to calculate a price.
+>   If two price sheets start on the same date, the one which finishes earlier is used in price calculations. If the same item is found in two price sheets with identical start and end dates, you will receive an alert message because Microsoft Dynamics GP will be unable to calculate a price.
 
 Creating or editing a price sheet
 ---------------------------------
 
->   Use the Price Sheet Maintenance window to create price sheets. A price sheet
->   is a list of prices that will apply only during a specified date range.
->   Price sheets can be created for combinations of items and price groups.
+>   Use the Price Sheet Maintenance window to create price sheets. A price sheet is a list of prices that will apply only during a specified date range. Price sheets can be created for combinations of items and price groups.
 
->   If you’re using Multicurrency Management, currency is specified at the price
->   sheet level; all the prices on a price sheet must have the same currency.
+>   If you’re using Multicurrency Management, currency is specified at the price sheet level; all the prices on a price sheet must have the same currency.
 
->   If you don’t set up a price sheet for a particular currency, the price of
->   the item will be converted from the functional currency price during
->   transaction entry if either of the following is true:
+>   If you don’t set up a price sheet for a particular currency, the price of the item will be converted from the functional currency price during transaction entry if either of the following is true:
 
--   You marked the Convert Functional Price option in Sales Order Processing
-    Setup window.
+-   You marked the Convert Functional Price option in Sales Order Processing Setup window.
 
--   You did not mark the Prices Not Required in Price List option in the Sales
-    Order Processing Setup window.
+-   You did not mark the Prices Not Required in Price List option in the Sales Order Processing Setup window.
 
 >   **To create or edit a price sheet:**
 
@@ -3300,96 +2602,61 @@ Creating or editing a price sheet
 
 ![](media/153e182c6f7287af8c711d7f7b31ebf5.jpg)
 
-1.  Enter or select a price sheet ID and description.
+2.  Enter or select a price sheet ID and description.
 
-2.  Mark the Promotion option if the price sheet is for a promotion.
+3.  Mark the Promotion option if the price sheet is for a promotion.
 
->   Promotions are temporary special offers on individual products. Marking a
->   price sheet as a promotion helps you differentiate promotion price sheets
->   from your regular price sheets. For more information about setting up
->   promotions, see *Creating a promotional price sheet*.
+>   Promotions are temporary special offers on individual products. Marking a price sheet as a promotion helps you differentiate promotion price sheets from your regular price sheets. For more information about setting up promotions, see *Creating a promotional price sheet*.
 
-1.  Enter or select a currency ID, if you’re using Multicurrency Management.
+4.  Enter or select a currency ID, if you’re using Multicurrency Management.
 
-2.  Enter dates in the Date Range fields. The prices in the price sheet will
-    apply during this date range. Active price sheets must have a date range.
+5.  Enter dates in the Date Range fields. The prices in the price sheet will apply during this date range. Active price sheets must have a date range.
 
-3.  Mark the Net Price Only option if the price sheet will contain net prices
-    only.
+6.  Mark the Net Price Only option if the price sheet will contain net prices only.
 
->   *A Net Price Only price sheet cannot contain Value Off and type prices.
->   Price sheets that are part of the base price book must be specified as Net
->   Price Only.*
+>   *A Net Price Only price sheet cannot contain Value Off and type prices. Price sheets that are part of the base price book must be specified as Net Price Only.*
 
-1.  In the scrolling window, select the items or price groups to include on the
-    price sheet. You can include both items and price groups in a price sheet.
+7.  In the scrolling window, select the items or price groups to include on the price sheet. You can include both items and price groups in a price sheet.
 
     -   Select a line type (item or price group).
 
     -   Enter or select an item number or price group ID.
 
-2.  Choose the Item Number/Price Group ID expansion button to open the Price
-    Sheet Detail Maintenance window, where you can enter pricing details. Until
-    pricing details are selected for an item or price group, a warning icon will
-    be displayed next to the item number or price group ID.
+8.  Choose the Item Number/Price Group ID expansion button to open the Price Sheet Detail Maintenance window, where you can enter pricing details. Until pricing details are selected for an item or price group, a warning icon will be displayed next to the item number or price group ID.
 
->   For more information, refer to *Creating and editing price sheet details*
->   and *Price sheet warnings*.
+>   For more information, refer to *Creating and editing price sheet details* and *Price sheet warnings*.
 
-1.  Set the line as active or inactive. Inactive lines will not be used in price
-    calculation. You must set up pricing details for a line in the Price Sheet
-    Detail Maintenance window before the line can be activated.
+9.  Set the line as active or inactive. Inactive lines will not be used in price calculation. You must set up pricing details for a line in the Price Sheet Detail Maintenance window before the line can be activated.
 
-2.  Mark the Active option next to the price sheet ID to set the price sheet as
-    active. You must activate at least one line before you can activate the
-    price sheet. If a price sheet is not active, its prices aren’t used.
+10.  Mark the Active option next to the price sheet ID to set the price sheet as active. You must activate at least one line before you can activate the price sheet. If a price sheet is not active, its prices aren’t used.
 
->   *Items and groups will be added to the price sheet in the order in which you
->   select them. Choose the Sort button to sort the records using options in the
->   Price Sheet Sort Options window.*
+>   *Items and groups will be added to the price sheet in the order in which you select them. Choose the Sort button to sort the records using options in the Price Sheet Sort Options window.*
 
-1.  Choose Assign to open the Price Sheet Assignment window, where you can
-    assign the price sheet to price books, customers, or prospects. For more
-    information, refer to *Assigning a price sheet to multiple price books,
-    customers, or prospects* or *Assigning a price book to customers and
-    prospects*.
+11.  Choose Assign to open the Price Sheet Assignment window, where you can assign the price sheet to price books, customers, or prospects. For more information, refer to *Assigning a price sheet to multiple price books, customers, or prospects* or *Assigning a price book to customers and prospects*.
 
-2.  Choose Save to save the price sheet.
+12.  Choose Save to save the price sheet.
 
-3.  To print a price sheet report from the Price Sheet Maintenance window,
-    select File \>\> Print to open the Report Destination window. Select a print
-    destination and choose OK. Details of all items, price groups, prices, and
-    quantity breaks for the price sheet will be printed.
+13.  To print a price sheet report from the Price Sheet Maintenance window, select File \>\> Print to open the Report Destination window. Select a print destination and choose OK. Details of all items, price groups, prices, and quantity breaks for the price sheet will be printed.
 
 Price sheet warnings
 --------------------
 
->   Until pricing details are selected for an item or price group on a price
->   sheet, a warning icon will be displayed next to the item number or price
->   group ID in the Price Sheet Maintenance window. A warning also might be
->   displayed in the following situations.
+>   Until pricing details are selected for an item or price group on a price sheet, a warning icon will be displayed next to the item number or price group ID in the Price Sheet Maintenance window. A warning also might be displayed in the following situations.
 
--   The net price isn’t found using the pricing hierarchy. The pricing hierarchy
-    is the records that are searched when an item is entered in a sales
-    transaction. Refer to *How prices are calculated* for more information.
+-   The net price isn’t found using the pricing hierarchy. The pricing hierarchy is the records that are searched when an item is entered in a sales transaction. Refer to *How prices are calculated* for more information.
 
--   The item is listed on two price sheets that have the same start and end
-    dates.
+-   The item is listed on two price sheets that have the same start and end dates.
 
--   The item is included in a price group that is listed on two price sheets
-    that have the same start and end dates.
+-   The item is included in a price group that is listed on two price sheets that have the same start and end dates.
 
--   There isn’t a price in the price list for the combination of item, unit of
-    measure, and currency.
+-   There isn’t a price in the price list for the combination of item, unit of measure, and currency.
 
 -   There isn’t a currency record for the item for the selected currency.
 
 Creating and editing price sheet details
 ----------------------------------------
 
->   Use the Price Sheet Detail Maintenance window to set up net price,
->   percentage of list, or value off price details for individual items or
->   groups of items.
+>   Use the Price Sheet Detail Maintenance window to set up net price, percentage of list, or value off price details for individual items or groups of items.
 
 >   **To create or edit price sheet details:**
 
@@ -3397,57 +2664,38 @@ Creating and editing price sheet details
 
 >   (Inventory \>\> Cards \>\> Extended Pricing \>\> Price Sheets)
 
-1.  Enter or select a price sheet ID and description.
+2.  Enter or select a price sheet ID and description.
 
-2.  Highlight an item or price group in the scrolling window and choose the Item
-    Number/Price Group ID expansion button to open the Price Sheet Detail
-    Maintenance window.
+3.  Highlight an item or price group in the scrolling window and choose the Item Number/Price Group ID expansion button to open the Price Sheet Detail Maintenance window.
 
 ![](media/8249947d72b48ab082591d0ff994c1e7.jpg)
 
->   The item or price group you selected in the Price Sheet Maintenance window
->   will be displayed.
+>   The item or price group you selected in the Price Sheet Maintenance window will be displayed.
 
-1.  Select a price type. If you are entering details for a Net Price Only price
-    sheet, Net Price will be displayed and you won’t be able to change it.
+4.  Select a price type. If you are entering details for a Net Price Only price sheet, Net Price will be displayed and you won’t be able to change it.
 
->   The price type determines the values you can enter in the scrolling window.
->   If you select Percent of List or Value Off, you must enter adjustment values
->   in the scrolling window; if Net Price is selected, you must enter net
->   prices.
+>   The price type determines the values you can enter in the scrolling window. If you select Percent of List or Value Off, you must enter adjustment values in the scrolling window; if Net Price is selected, you must enter net prices.
 
-1.  You can mark Quantity Break Pricing to create quantity break pricing for
-    this item or price group. Use quantity breaks to give discounts based on the
-    size of the sale.
+5.  You can mark Quantity Break Pricing to create quantity break pricing for this item or price group. Use quantity breaks to give discounts based on the size of the sale.
 
-2.  Use the Base Adjusted Price On options to verify the effects of price
-    adjustment.
+6.  Use the Base Adjusted Price On options to verify the effects of price adjustment.
 
->   *This selection will not be saved; it is for inquiry purposes only. For
->   example, you might want to see a value off the base price at a future date,
->   or you might want to see prices for a customer who receives discounts from a
->   price book other than the base book.*
+>   *This selection will not be saved; it is for inquiry purposes only. For example, you might want to see a value off the base price at a future date, or you might want to see prices for a customer who receives discounts from a price book other than the base book.*
 
-1.  For net and value off pricing, specify the unit of measure that will be used
-    for entering prices.
+7.  For net and value off pricing, specify the unit of measure that will be used for entering prices.
 
-2.  If you’re using quantity-break pricing, enter a Start Quantity and an End
-    Quantity.
+8.  If you’re using quantity-break pricing, enter a Start Quantity and an End Quantity.
 
-3.  Enter a percentage of list or a currency amount off, depending on your Price
-    Type selection.
+9.  Enter a percentage of list or a currency amount off, depending on your Price Type selection.
 
-4.  In the Price Sheet Detail Maintenance window, price details will be listed
-    in the order you enter them. Choose the Sort button to sort the details in
-    quantitybreak order.
+10.  In the Price Sheet Detail Maintenance window, price details will be listed in the order you enter them. Choose the Sort button to sort the details in quantitybreak order.
 
-5.  Choose Save to save the price details.
+11.  Choose Save to save the price details.
 
 Creating a promotional price sheet
 ----------------------------------
 
->   Use the Price Sheet Detail Maintenance window to set up promotions for
->   individual items or groups of items.
+>   Use the Price Sheet Detail Maintenance window to set up promotions for individual items or groups of items.
 
 >   **To create a promotional price sheet:**
 
@@ -3455,109 +2703,66 @@ Creating a promotional price sheet
 
 >   (Inventory \>\> Cards \>\> Extended Pricing \>\> Price Sheets)
 
-1.  Enter or select a price sheet ID and description. Be sure the price sheet is
-    marked as a promotion.
+2.  Enter or select a price sheet ID and description. Be sure the price sheet is marked as a promotion.
 
-2.  Select an item or price group and choose the Item Number/Price Group ID
-    expansion button to open the Price Sheet Detail Maintenance window.
+3.  Select an item or price group and choose the Item Number/Price Group ID expansion button to open the Price Sheet Detail Maintenance window.
 
->   *The item or price group you selected in the Price Sheet Maintenance window
->   will be displayed. The fields in the window will be slightly different if
->   the price sheet is a promotion.*
+>   *The item or price group you selected in the Price Sheet Maintenance window will be displayed. The fields in the window will be slightly different if the price sheet is a promotion.*
 
-1.  Select a promotion type. You can select Quantity Free, Net Price, Value Off,
-    or Percent of List.
+4.  Select a promotion type. You can select Quantity Free, Net Price, Value Off, or Percent of List.
 
->   The promotion type determines the values you can enter in the scrolling
->   window. If you select Percent of List or Value Off, you must enter
->   adjustment values in the scrolling window; if Net Price is selected, you
->   must enter net prices; if Quantity Free is selected, you must specify a free
->   item.
+>   The promotion type determines the values you can enter in the scrolling window. If you select Percent of List or Value Off, you must enter adjustment values in the scrolling window; if Net Price is selected, you must enter net prices; if Quantity Free is selected, you must specify a free item.
 
-1.  Choose the price book or price sheet that the promotion will be applied to.
-    You can choose Base Price Book, Customer Price Book, or Customer Price Sheet
-    ID. If you choose Base Price Book, for example, the promotion would apply to
-    purchases of items in the base price book.
+5.  Choose the price book or price sheet that the promotion will be applied to. You can choose Base Price Book, Customer Price Book, or Customer Price Sheet ID. If you choose Base Price Book, for example, the promotion would apply to purchases of items in the base price book.
 
-2.  Select the Base Adjusted Price on options to verify the effects of the
-    promotion on the price book or the base price book.
+6.  Select the Base Adjusted Price on options to verify the effects of the promotion on the price book or the base price book.
 
->   Your selection determines the list price displayed in the scrolling window.
->   This selection will not be saved; it is for inquiry purposes only.
+>   Your selection determines the list price displayed in the scrolling window. This selection will not be saved; it is for inquiry purposes only.
 
-1.  Select Quantity Break Pricing if you want to create quantity break pricing
-    for this item or price group. Use quantity breaks to give discounts based on
-    the size of the sale.
+7.  Select Quantity Break Pricing if you want to create quantity break pricing for this item or price group. Use quantity breaks to give discounts based on the size of the sale.
 
->   *If you use quantity-break pricing, you must be sure that there are no gaps
->   in the quantity breaks.*
+>   *If you use quantity-break pricing, you must be sure that there are no gaps in the quantity breaks.*
 
-1.  For net and value-off pricing, specify the unit of measure that will be used
-    for entering prices.
+8.  For net and value-off pricing, specify the unit of measure that will be used for entering prices.
 
-2.  If you’re using quantity-break pricing, enter a Start Quantity and an End
-    Quantity.
+9.  If you’re using quantity-break pricing, enter a Start Quantity and an End Quantity.
 
-3.  Enter a price adjustment, depending on your Price Type selection.
+10.  Enter a price adjustment, depending on your Price Type selection.
 
-4.  If the promotion type is Quantity Free, enter the quantity of free items
-    that buyers can get with a purchase. When you tab out of the Quantity Free
-    field or if you choose the Quantity Free expansion button, the Price Sheet
-    Assign Free Item window opens. Use that window to enter more information
-    about the giveaway items. Refer to *Entering details for free-item
-    promotions* for more information.
+11.  If the promotion type is Quantity Free, enter the quantity of free items that buyers can get with a purchase. When you tab out of the Quantity Free field or if you choose the Quantity Free expansion button, the Price Sheet Assign Free Item window opens. Use that window to enter more information about the giveaway items. Refer to *Entering details for free-item promotions* for more information.
 
->   *If the Quantity Free is zero, the Price Sheet Assign Free Item window won’t
->   open because you don’t need to add information if no item will be given
->   away.*
+>   *If the Quantity Free is zero, the Price Sheet Assign Free Item window won’t open because you don’t need to add information if no item will be given away.*
 
-1.  Choose Save to save the price details.
+12.  Choose Save to save the price details.
 
 Entering details for free-item promotions
 -----------------------------------------
 
->   If you’re creating a promotion where customers get free items when they make
->   a purchase, you can use the Price Sheet Assign Free Item window to specify
->   the free item, its unit of measure, and the maximum number of free items
->   that a customer can receive. If the quantity of free items is zero—for
->   example, if customers must purchase 10 items to get a free item, you’d have
->   zero free items for purchase quantities up to 10—then you don’t need to
->   enter additional information.
+>   If you’re creating a promotion where customers get free items when they make a purchase, you can use the Price Sheet Assign Free Item window to specify the free item, its unit of measure, and the maximum number of free items that a customer can receive. If the quantity of free items is zero—for example, if customers must purchase 10 items to get a free item, you’d have zero free items for purchase quantities up to 10—then you don’t need to enter additional information.
 
->   This procedure assumes that you’re setting up a price sheet that is a
->   promotion, and that you’ve already completed the tasks described in
->   *Creating or editing a price sheet* and *Creating a promotional price sheet*
->   o.
+>   This procedure assumes that you’re setting up a price sheet that is a promotion, and that you’ve already completed the tasks described in *Creating or editing a price sheet* and *Creating a promotional price sheet* o.
 
 >   **To enter details for free-item promotions:**
 
 1.  Open the Price Sheet Assign Free Item window.
 
->   (Inventory \>\> Cards \>\> Extended Pricing \>\> Price Sheets \>\> Item
->   Number/ Price Group ID expansion button \>\> Quantity Free expansion button)
+>   (Inventory \>\> Cards \>\> Extended Pricing \>\> Price Sheets \>\> Item Number/ Price Group ID expansion button \>\> Quantity Free expansion button)
 
 ![](media/4c31fdb794e12c8a6023c83caaad9481.jpg)
 
-1.  Enter or select the Free Item Number, the item to be given away with the
-    promotion.
+2.  Enter or select the Free Item Number, the item to be given away with the promotion.
 
-*You can specify a different free item for each unit of measure of the purchased
-item.*
+*You can specify a different free item for each unit of measure of the purchased item.*
 
-1.  Enter or select the unit of measure for the free item.
+3.  Enter or select the unit of measure for the free item.
 
-2.  Enter the Maximum Quantity Free.
+4.  Enter the Maximum Quantity Free.
 
->   The Maximum Quantity Free is the ceiling on the number of free items that a
->   customer can get. For example, suppose you’re having a “buy one, get one
->   free” promotion. You might want to limit customers to one free item—or you
->   might not want to limit the number of free items.
+>   The Maximum Quantity Free is the ceiling on the number of free items that a customer can get. For example, suppose you’re having a “buy one, get one free” promotion. You might want to limit customers to one free item—or you might not want to limit the number of free items.
 
->   If you leave this blank or if you enter a zero, then there is no maximum
->   number of free items.
+>   If you leave this blank or if you enter a zero, then there is no maximum number of free items.
 
->   Refer to the table for an example of how the Maximum Quantity Free is used
->   with a “buy one, get one free” promotion.
+>   Refer to the table for an example of how the Maximum Quantity Free is used with a “buy one, get one free” promotion.
 
 | **Maximum free items**    | **Purchase quantity** | **Number of free items**      |
 |---------------------------|-----------------------|-------------------------------|
@@ -3568,26 +2773,16 @@ item.*
 |                           | 10                    | 10 free items                 |
 |                           | 20                    |                               |
 
-1.  Choose Save and close the window.
+15  Choose Save and close the window.
 
 Examples: Advanced free-item promotions
 ---------------------------------------
 
->   With extended pricing, you can set up many different kinds of giveaway
->   promotions. For example, you can give away different items depending on the
->   quantity of an item purchased by the customer. You also can create
->   promotions that give away different quantities of free items based on the
->   quantity of an item purchased by the customer.
+>   With extended pricing, you can set up many different kinds of giveaway promotions. For example, you can give away different items depending on the quantity of an item purchased by the customer. You also can create promotions that give away different quantities of free items based on the quantity of an item purchased by the customer.
 
->   You can give away different free items, but you can give away different free
->   items if the unit of measure for the purchased item is different.
+>   You can give away different free items, but you can give away different free items if the unit of measure for the purchased item is different.
 
->   Many promotions are “buy one, get one free,” but other promotions offer
->   different quantities of free items. For example, suppose you want to set up
->   a promotion to have customers receive one free item when they purchase two
->   items. In this price sheet, customers can receive an unlimited number of
->   free items. (That is, if they purchase 2,000 items, they would receive 1,000
->   free items.) You could set up the promotional price sheet like this:
+>   Many promotions are “buy one, get one free,” but other promotions offer different quantities of free items. For example, suppose you want to set up a promotion to have customers receive one free item when they purchase two items. In this price sheet, customers can receive an unlimited number of free items. (That is, if they purchase 2,000 items, they would receive 1,000 free items.) You could set up the promotional price sheet like this:
 
 | **Purchase quantity** | **Quantity of free items** | **Maximum quantity** |
 |-----------------------|----------------------------|----------------------|
@@ -3597,11 +2792,9 @@ Examples: Advanced free-item promotions
 | 8 to 9                | 3 free items               | 3                    |
 | 10 to 11              | 4 free items               | 4                    |
 
->   You’d need to continue adding lines to this price sheet so that there are no
->   gaps.
+>   You’d need to continue adding lines to this price sheet so that there are no gaps.
 
->   To limit customers to two free items, the price sheet would be set up like
->   this:
+>   To limit customers to two free items, the price sheet would be set up like this:
 
 | **Purchase quantity** | **Free item** | **Maximum quantity** |
 |-----------------------|---------------|----------------------|
@@ -3612,51 +2805,24 @@ Examples: Advanced free-item promotions
 The base price book
 -------------------
 
->   A price book consists of one or more price sheets. One price book—called
->   BASEBOOK—is created automatically when you use extended pricing. As you’re
->   developing your pricing hierarchy, you can assign only net-price price
->   sheets to the base price book.
+>   A price book consists of one or more price sheets. One price book—called BASEBOOK—is created automatically when you use extended pricing. As you’re developing your pricing hierarchy, you can assign only net-price price sheets to the base price book.
 
->   The base price book is a sort of safety net for the extended pricing system.
->   When you enter an item on a sales transaction line, the system searches for
->   a price for that item. If no price for the item can be found in the price
->   sheets or price book assigned directly to the customer or prospect, the
->   system searches for a price for the item in the base price book. If no price
->   can be found there, the system searches for a price group (that includes the
->   sales item) in the price sheets and price book assigned to the customer or
->   prospect. If no price for the price group can be found, the system searches
->   the base price book for a price group that includes the sales item.
+>   The base price book is a sort of safety net for the extended pricing system. When you enter an item on a sales transaction line, the system searches for a price for that item. If no price for the item can be found in the price sheets or price book assigned directly to the customer or prospect, the system searches for a price for the item in the base price book. If no price can be found there, the system searches for a price group (that includes the sales item) in the price sheets and price book assigned to the customer or prospect. If no price for the price group can be found, the system searches the base price book for a price group that includes the sales item.
 
->   When you set up extended pricing, you should create one or more net-price
->   only price sheets and assign them to the base price book. Doing so will help
->   to ensure that the system can always located a net price to apply any
->   promotional pricing to.
+>   When you set up extended pricing, you should create one or more net-price only price sheets and assign them to the base price book. Doing so will help to ensure that the system can always located a net price to apply any promotional pricing to.
 
->   The base price book cannot be deleted, and it can contain only net prices.
->   The base price book is automatically available to all customers and
->   prospects.
+>   The base price book cannot be deleted, and it can contain only net prices. The base price book is automatically available to all customers and prospects.
 
->   To assign multiple price sheets to the base price book, use the Price Book
->   Maintenance window. Use the Price Sheet Assignment window to assign price
->   sheets to the base price book one at a time.
+>   To assign multiple price sheets to the base price book, use the Price Book Maintenance window. Use the Price Sheet Assignment window to assign price sheets to the base price book one at a time.
 
 Creating price books
 --------------------
 
->   A price book contains one or more price sheets; a price book is valid only
->   after a price sheet has been assigned to it.
+>   A price book contains one or more price sheets; a price book is valid only after a price sheet has been assigned to it.
 
->   Use the Price Book Maintenance window to create price books and to assign
->   price sheets to them. You also can use the Price Sheet Assignment window to
->   assign price sheets to price books. If you’re using Multicurrency
->   Management, a price book can include different price sheets for different
->   currencies.
+>   Use the Price Book Maintenance window to create price books and to assign price sheets to them. You also can use the Price Sheet Assignment window to assign price sheets to price books. If you’re using Multicurrency Management, a price book can include different price sheets for different currencies.
 
->   *If you’re creating a new price book and want to add multiple price sheets
->   to it, use the Price Book Maintenance window. If you’ve created a new price
->   sheet and want to assign it to multiple price books, use the Price Sheet
->   Assignment window. For more information, refer to Assigning a price sheet to
->   multiple price books, customers, or prospects.*
+>   *If you’re creating a new price book and want to add multiple price sheets to it, use the Price Book Maintenance window. If you’ve created a new price sheet and want to assign it to multiple price books, use the Price Sheet Assignment window. For more information, refer to Assigning a price sheet to multiple price books, customers, or prospects.*
 
 >   **To create price books:**
 
@@ -3666,35 +2832,26 @@ Creating price books
 
 ![](media/9f861346ed1fedb8473666fadf133b3a.jpg)
 
-1.  Enter or select a price book ID.
+2.  Enter or select a price book ID.
 
->   If you selected the base price book, the Base Price Book option will be
->   marked. Only net price sheets can be added to the base price book.
+>   If you selected the base price book, the Base Price Book option will be marked. Only net price sheets can be added to the base price book.
 
-1.  Enter a price book description.
+3.  Enter a price book description.
 
-2.  In the scrolling window, enter or select price sheets to add to the price
-    book.
+4.  In the scrolling window, enter or select price sheets to add to the price book.
 
->   *Price sheets will be displayed in the scrolling window in the same order
->   you select them. Choose the Sort button to open the Price Book Sort Options
->   window, where you can specify how to sort the records in this scrolling
->   window.*
+>   *Price sheets will be displayed in the scrolling window in the same order you select them. Choose the Sort button to open the Price Book Sort Options window, where you can specify how to sort the records in this scrolling window.*
 
-1.  Choose Assign to open the Price Book Assignment window, where you can assign
-    the price book to customers or prospects. For more information, refer to
-    *Assigning a price book to customers and prospects*.
+5.  Choose Assign to open the Price Book Assignment window, where you can assign the price book to customers or prospects. For more information, refer to *Assigning a price book to customers and prospects*.
 
-2.  Choose Save and close the window.
+6.  Choose Save and close the window.
 
 Assigning a price sheet to multiple price books, customers, or prospects
 ------------------------------------------------------------------------
 
->   You can use the Price Sheet Assignment window to assign price sheets to
->   price books, customers, or prospects one at a time.
+>   You can use the Price Sheet Assignment window to assign price sheets to price books, customers, or prospects one at a time.
 
->   **To assign a price sheet to multiple price books, customers, or
->   prospects:**
+>   **To assign a price sheet to multiple price books, customers, or prospects:**
 
 1.  Open the Price Sheet Assignment window.
 
@@ -3702,108 +2859,76 @@ Assigning a price sheet to multiple price books, customers, or prospects
 
 ![](media/6f4d2b500d7192d4e42aec267f9a855e.jpg)
 
-1.  Enter or select a price sheet ID.
+2.  Enter or select a price sheet ID.
 
-2.  Mark Price Books, Customers, or Prospects, depending on the kind of records
-    you want to assign the price sheet to.
+3.  Mark Price Books, Customers, or Prospects, depending on the kind of records you want to assign the price sheet to.
 
->   Price books, customers, or prospects that this price sheet is already
->   assigned to are displayed in the scrolling window.
+>   Price books, customers, or prospects that this price sheet is already assigned to are displayed in the scrolling window.
 
-1.  In the scrolling window, enter or select price book IDs, customer IDs, or
-    prospects to assign the price sheet to.
+4.  In the scrolling window, enter or select price book IDs, customer IDs, or prospects to assign the price sheet to.
 
->   *If you’d prefer to assign the price sheet to a range of price books,
->   customers, or prospects, choose Ranges to open the Price Sheet Assignment
->   Ranges window. Refer to Assigning a price sheet to a range of price books,
->   customers, or prospects for more information.*
+>   *If you’d prefer to assign the price sheet to a range of price books, customers, or prospects, choose Ranges to open the Price Sheet Assignment Ranges window. Refer to Assigning a price sheet to a range of price books, customers, or prospects for more information.*
 
-1.  Choose Save and close the window.
+5.  Choose Save and close the window.
 
 Assigning a price sheet to a range of price books, customers, or prospects
 --------------------------------------------------------------------------
 
->   Use the Price Sheet Assignment Ranges window to assign a price sheet to a
->   range of price books, customers, or prospects.
+>   Use the Price Sheet Assignment Ranges window to assign a price sheet to a range of price books, customers, or prospects.
 
->   **To assign a price sheet to a range of price books, customers, or
->   prospects:**
+>   **To assign a price sheet to a range of price books, customers, or prospects:**
 
 1.  Open the Price Sheet Assignment window.
 
 >   (Inventory \>\> Cards \>\> Extended Pricing \>\> Sheet Assignment)
 
-1.  Enter or select a price sheet ID.
+2.  Enter or select a price sheet ID.
 
-2.  Choose Ranges to open the Price Sheet Assignment Ranges window.
+3.  Choose Ranges to open the Price Sheet Assignment Ranges window.
 
 ![](media/29f27610ca0ed67a479946aa595e5105.jpg)
 
-1.  Mark Price Books, Customers, or Prospects, depending on the type or record
-    you want to assign the price sheet to.
+4.  Mark Price Books, Customers, or Prospects, depending on the type or record you want to assign the price sheet to.
 
-2.  If needed, use the range fields to restrict the price books, customers, or
-    prospects that the price sheet should be assigned to.
+5.  If needed, use the range fields to restrict the price books, customers, or prospects that the price sheet should be assigned to.
 
-3.  Choose Preview to view the records that fit your criteria in the scrolling
-    window.
+6.  Choose Preview to view the records that fit your criteria in the scrolling window.
 
-4.  Choose Transfer to add the price sheet to the price books.
+7.  Choose Transfer to add the price sheet to the price books.
 
 Setting up pricing for a customer or prospect
 ---------------------------------------------
 
->   Use the Customer Pricing Maintenance window or the Prospect Pricing
+>   Use the Customer Pricing Maintenance window or the Prospect Pricing Maintenance window to create pricing information for a customer or prospect. You can use existing price sheets and price books to set up customer pricing; the difference is that you create associations starting from the customer or prospect rather than starting from the price sheet or price book.
 
->   Maintenance window to create pricing information for a customer or prospect.
->   You can use existing price sheets and price books to set up customer
->   pricing; the difference is that you create associations starting from the
->   customer or prospect rather than starting from the price sheet or price
->   book.
+>   *Use the Price Sheet Assignment window to assign a price sheet to multiple customers or prospects.*
 
->   *Use the Price Sheet Assignment window to assign a price sheet to multiple
->   customers or prospects.*
+>   A customer or prospect can be assigned one price book and one or more price sheets. When searching for a price for a specific customer or prospect, price sheets directly assigned to the customer or prospect are searched first, followed by price sheets assigned to the customer or prospect’s price book, followed finally by the base price book.
 
->   A customer or prospect can be assigned one price book and one or more price
->   sheets. When searching for a price for a specific customer or prospect,
->   price sheets directly assigned to the customer or prospect are searched
->   first, followed by price sheets assigned to the customer or prospect’s price
->   book, followed finally by the base price book.
-
->   If you’re using Multicurrency Management, you can assign price sheets with
->   different currencies to a customer or prospect.
+>   If you’re using Multicurrency Management, you can assign price sheets with different currencies to a customer or prospect.
 
 >   **To set up pricing for a customer or prospect:**
 
-1.  Open the Customer Pricing Maintenance window or the Prospect Pricing
-    Maintenance window.
+1.  Open the Customer Pricing Maintenance window or the Prospect Pricing Maintenance window.
 
->   (Inventory \>\> Cards \>\> Extended Pricing \>\> Customer Pricing or
->   Prospect Pricing)
+>   (Inventory \>\> Cards \>\> Extended Pricing \>\> Customer Pricing or Prospect Pricing)
 
 ![](media/b1550ab479666301b12413a2e1bf716c.jpg)
 
-1.  Enter or select a customer ID or prospect ID.
+2.  Enter or select a customer ID or prospect ID.
 
-2.  Enter or select a price book ID for this customer or prospect. You can leave
-    this field blank if base book prices apply.
+3.  Enter or select a price book ID for this customer or prospect. You can leave this field blank if base book prices apply.
 
-3.  Enter or select price sheet IDs for the price sheets to use for this
-    customer or prospect. The prices on these sheets will override the list
-    prices for items sold to the selected customer or prospect.
+4.  Enter or select price sheet IDs for the price sheets to use for this customer or prospect. The prices on these sheets will override the list prices for items sold to the selected customer or prospect.
 
->   *Price sheet IDs are added in the order you select them. Choose the Sort
->   button to open the Customer Pricing Sort Options window, where you can
->   choose a sort order for the price sheets.*
+>   *Price sheet IDs are added in the order you select them. Choose the Sort button to open the Customer Pricing Sort Options window, where you can choose a sort order for the price sheets.*
 
-1.  Choose Save and close the window.
+5.  Choose Save and close the window.
 
 Assigning a price book to customers and prospects
 -------------------------------------------------
 
->   Use the Price Book Assignment window to assign a price book ID to multiple
->   customers or prospects. This method is particularly useful for a new price
->   book that is not yet assigned to customers or prospects.
+>   Use the Price Book Assignment window to assign a price book ID to multiple customers or prospects. This method is particularly useful for a new price book that is not yet assigned to customers or prospects.
 
 >   **To assign a price book to customers and prospects:**
 
@@ -3813,29 +2938,22 @@ Assigning a price book to customers and prospects
 
 ![](media/0ba36deafa7be81c75ce7b9d0e21b114.jpg)
 
-1.  Enter or select a price book ID.
+2.  Enter or select a price book ID.
 
-2.  Mark Customers to assign the price book to customers or Prospects to assign
-    the price book to prospects.
+3.  Mark Customers to assign the price book to customers or Prospects to assign the price book to prospects.
 
-3.  Enter or select customer IDs or prospect IDs.
+4.  Enter or select customer IDs or prospect IDs.
 
->   *Customer or prospect IDs will be added in the order you select them. Choose
->   the Sort button if you want to sort the customers or prospects by Customer
->   ID or Prospect ID.*
+>   *Customer or prospect IDs will be added in the order you select them. Choose the Sort button if you want to sort the customers or prospects by Customer ID or Prospect ID.*
 
-1.  You can choose Ranges to open the Price Book Assignment Ranges window, where
-    you can assign the price book to a range of customers or prospects. For more
-    information, refer to *Assigning a price book to a range of customers or
-    prospects*.
+5.  You can choose Ranges to open the Price Book Assignment Ranges window, where you can assign the price book to a range of customers or prospects. For more  information, refer to *Assigning a price book to a range of customers or prospects*.
 
-2.  Choose Save and close the window.
+6.  Choose Save and close the window.
 
 Assigning a price book to a range of customers or prospects
 -----------------------------------------------------------
 
->   Use the Price Book Assignment Ranges window to assign a price book to a
->   range of customers or prospects.
+>   Use the Price Book Assignment Ranges window to assign a price book to a range of customers or prospects.
 
 >   **To assign a price book to a range of customers or prospects:**
 
@@ -3843,46 +2961,30 @@ Assigning a price book to a range of customers or prospects
 
 >   (Inventory \>\> Cards \>\> Extended Pricing \>\> Book Assignment)
 
-1.  Enter or select a price book ID.
+2.  Enter or select a price book ID.
 
-2.  Select Ranges to open the Price Book Assignment Ranges window.
+3.  Select Ranges to open the Price Book Assignment Ranges window.
 
 ![](media/cad4543eb32fa16460f8201a11227186.jpg)
 
-1.  Mark Customers or Prospects.
+4.  Mark Customers or Prospects.
 
-2.  Enter or select the customer or prospect IDs, territory IDs, and class IDs
-    of the customers or prospects to assign the price book to.
+5.  Enter or select the customer or prospect IDs, territory IDs, and class IDs of the customers or prospects to assign the price book to.
 
-3.  Mark the Unassigned Customers/Prospects Only option to assign the price book
-    only to customers and prospects who aren’t already assigned price books. If
-    you clear this option, customers or prospects already assigned to other
-    price books will be reassigned to this price book.
+6.  Mark the Unassigned Customers/Prospects Only option to assign the price book only to customers and prospects who aren’t already assigned price books. If you clear this option, customers or prospects already assigned to other price books will be reassigned to this price book.
 
-4.  Choose the Preview button to view the customers or prospects that fit your
-    criteria.
+8.  Choose the Preview button to view the customers or prospects that fit your criteria.
 
-5.  Choose the Transfer button to assign the price book to the customers or
-    prospects you selected.
+9.  Choose the Transfer button to assign the price book to the customers or prospects you selected.
 
 Chapter 13: Purchasing options, vendors, and planners
 =====================================================
 
->   One of the tasks you’ll need to complete to fully define your items is to
->   enter purchasing information for item records. For example, you’ll need to
->   specify the appropriate units of measure for purchasing items. You also can
->   specify whether the purchase receipts of items with cost variances should be
->   revalued. These tasks are part of Inventory Control.
+>   One of the tasks you’ll need to complete to fully define your items is to enter purchasing information for item records. For example, you’ll need to specify the appropriate units of measure for purchasing items. You also can specify whether the purchase receipts of items with cost variances should be revalued. These tasks are part of Inventory Control.
 
->   If you’ve already defined your company’s vendors, you can assign vendors to
->   items. You can designate primary vendors for each item-site relationship you
->   create, enabling you to specify a different primary vendors for restocking
->   the same item at different sites. You also can specify a different default
->   unit of measure for purchases of the same item from different vendors.
+>   If you’ve already defined your company’s vendors, you can assign vendors to items. You can designate primary vendors for each item-site relationship you create, enabling you to specify a different primary vendors for restocking the same item at different sites. You also can specify a different default unit of measure for purchases of the same item from different vendors.
 
->   You can define planner IDs—identifiers that represent a person, department,
->   or other entity—and assign planner IDs to show which planner has the
->   responsibility and authority to plan the item-site combination.
+>   You can define planner IDs—identifiers that represent a person, department, or other entity—and assign planner IDs to show which planner has the responsibility and authority to plan the item-site combination.
 
 >   The following information is discussed:
 
@@ -3907,85 +3009,43 @@ Chapter 13: Purchasing options, vendors, and planners
 Entering purchasing options for an item
 ---------------------------------------
 
->   Use the Item Purchasing Options Maintenance window to specify what fractions
->   of each unit of measure in an item’s unit of measure schedule can be used
->   for purchasing. For example, if a unit of measure for nails is pounds, you
->   might set up purchasing options for the nails so that you also can purchase
->   nails in half- or even quarter-pound increments.
+>   Use the Item Purchasing Options Maintenance window to specify what fractions of each unit of measure in an item’s unit of measure schedule can be used for purchasing. For example, if a unit of measure for nails is pounds, you might set up purchasing options for the nails so that you also can purchase nails in half- or even quarter-pound increments.
 
->   You can use the Item Purchasing Options Maintenance window to specify
->   whether to revalue inventory for cost variance and enter a tolerance
->   percentage to determine how large a cost variance must be before the
->   purchase receipt is revalued. You also can specify quantity tolerances for
->   shortages and overages for the quantity ordered for the items with an item
->   type of Sales Inventory or Discontinued.
+>   You can use the Item Purchasing Options Maintenance window to specify whether to revalue inventory for cost variance and enter a tolerance percentage to determine how large a cost variance must be before the purchase receipt is revalued. You also can specify quantity tolerances for shortages and overages for the quantity ordered for the items with an item type of Sales Inventory or Discontinued.
 
 >   **To enter purchasing options for an item:**
 
-1.  Open the Item Purchasing Options Maintenance window. (Inventory \>\> Cards
-    \>\> Item Purchasing Options)
+1.  Open the Item Purchasing Options Maintenance window. (Inventory \>\> Cards \>\> Item Purchasing Options)
 
 2.  Enter or select an item number.
 
->   To enter manufacturer item numbers for the item, choose the Manufacturer’s
->   Item Number expansion button.
+>   To enter manufacturer item numbers for the item, choose the Manufacturer’s Item Number expansion button.
 
-1.  Enter or select a default purchasing unit of measure.
+3.  Enter or select a default purchasing unit of measure.
 
-2.  Decide which units of measure from the unit of measure schedule assigned to
-    the item can be used to purchase the item. For each unit of measure, you can
-    choose Not Available, Whole, or Whole and Fractional.
+4.  Decide which units of measure from the unit of measure schedule assigned to the item can be used to purchase the item. For each unit of measure, you can choose Not Available, Whole, or Whole and Fractional.
 
->   **Not Available** Choose Not Available if the item shouldn’t be purchased in
->   that unit of measure.
+>   **Not Available** Choose Not Available if the item shouldn’t be purchased in that unit of measure.
 
->   **Whole** Choose Whole if the item can be purchased in the unit of measure,
->   but not in fractional quantities of the unit of measure. For example, if the
->   unit of measure is Pound and you don’t want to allow purchases of ounces,
->   you would choose Whole.
+>   **Whole** Choose Whole if the item can be purchased in the unit of measure, but not in fractional quantities of the unit of measure. For example, if the unit of measure is Pound and you don’t want to allow purchases of ounces, you would choose Whole.
 
->   **Whole and Fractional** Choose Whole and Fractional if the item can be
->   purchased in the unit of measure and in portions of the unit of measure.
+>   **Whole and Fractional** Choose Whole and Fractional if the item can be purchased in the unit of measure and in portions of the unit of measure.
 
-1.  If the item is a Sales Inventory or Discontinued item, and if the item’s
-    valuation method is FIFO perpetual, LIFO perpetual, or average perpetual,
-    you can determine if the purchase receipt for the item should be revalued
-    when cost variances exceed certain levels. Mark Revalue Inventory for Cost
-    Variance if this should occur.
+5.  If the item is a Sales Inventory or Discontinued item, and if the item’s valuation method is FIFO perpetual, LIFO perpetual, or average perpetual, you can determine if the purchase receipt for the item should be revalued when cost variances exceed certain levels. Mark Revalue Inventory for Cost Variance if this should occur.
 
->   *This setting is a default setting that applies only if you’re matching
->   invoices and shipments. When you’re matching invoices, you’ll have the
->   option to mark or clear the revalue option for individual receipt lines.*
+>   *This setting is a default setting that applies only if you’re matching invoices and shipments. When you’re matching invoices, you’ll have the option to mark or clear the revalue option for individual receipt lines.*
 
-1.  If you mark Revalue Inventory for Cost Variance, enter a Tolerance
-    Percentage. The tolerance percentage determines how large a cost variance
-    must be— greater or less than the shipment receipt amount—before the
-    purchase receipt is revalued. Refer to *Cost variance tolerances* for more
-    information.
+6.  If you mark Revalue Inventory for Cost Variance, enter a Tolerance Percentage. The tolerance percentage determines how large a cost variance must be— greater or less than the shipment receipt amount—before the purchase receipt is revalued. Refer to *Cost variance tolerances* for more information.
 
->   For information about how cost variances affect accounts, refer to *How
->   purchase receipts are updated for cost variances*.
+>   For information about how cost variances affect accounts, refer to *How purchase receipts are updated for cost variances*.
 
-1.  If the item has an item type of a Sales Inventory or Discontinued, you can
-    allow quantity tolerances for shortages and overages for the quantity
-    ordered when receiving against a standard or blanket purchase order.
+7.  If the item has an item type of a Sales Inventory or Discontinued, you can allow quantity tolerances for shortages and overages for the quantity ordered when receiving against a standard or blanket purchase order.
 
->   **Shortage** Mark Shortage and then enter the percentage to use when the
->   quantity received is less than the quantity ordered. If the difference
->   between the quantity received and quantity ordered falls within the quantity
->   tolerance percentage, the difference between the quantities is canceled and
->   the status of a line item is automatically changed to change order,
->   received, or closed. The status of the line item depends on whether or not
->   the line item has been invoiced.
+>   **Shortage** Mark Shortage and then enter the percentage to use when the quantity received is less than the quantity ordered. If the difference between the quantity received and quantity ordered falls within the quantity tolerance percentage, the difference between the quantities is canceled and the status of a line item is automatically changed to change order, received, or closed. The status of the line item depends on whether or not the line item has been invoiced.
 
->   **Overage** Mark Overage and then enter the percentage to use when the
->   quantity received is more than the quantity ordered. If the quantity
->   received is over the overage tolerance, you will receive a message that you
->   can't enter a quantity greater than the combined total of the Remaining to
->   Receive quantity and the overage tolerance set up for the item.
+>   **Overage** Mark Overage and then enter the percentage to use when the quantity received is more than the quantity ordered. If the quantity received is over the overage tolerance, you will receive a message that you can't enter a quantity greater than the combined total of the Remaining to Receive quantity and the overage tolerance set up for the item.
 
-1.  When you’ve finished selecting purchasing options for all units of measure,
-    choose Save and close the window.
+8.  When you’ve finished selecting purchasing options for all units of measure, choose Save and close the window.
 
 Entering a manufacturer’s item numbers
 --------------------------------------
@@ -9399,11 +8459,7 @@ LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 
 >   **Produced from the serial/lot trace type example**
 
->   If you selected Produced from the serial/lot, you can expand a manufacturing
->   or assembly transaction to display all documents that were involved with
->   taking the serial or lot numbered item from inventory. The following is an
->   example of how information is displayed in the tree view if you selected
->   Produced from the serial/ lot as the trace type.
+>   If you selected Produced from the serial/lot, you can expand a manufacturing or assembly transaction to display all documents that were involved with taking the serial or lot numbered item from inventory. The following is an example of how information is displayed in the tree view if you selected Produced from the serial/ lot as the trace type.
 
 | **Tree view**               | **Description**                                |
 |-----------------------------|------------------------------------------------|
@@ -9416,18 +8472,9 @@ LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 
 ### Viewing a bill of materials trace
 
->   If a transaction in a life cycle trace is a manufacturing or assembly
->   transaction, you can use the Serial/Lot Bill of Materials Trace window to
->   view the serial- or lotnumbered items that were consumed (used) in creating
->   a serial- or lot-numbered item. You also can view serial- or lot-numbered
->   items that were produced (assembled) from a serial- or lot-numbered item.
->   This window is available if a transaction in a life cycle trace is a
->   manufacturing or assembly transaction.
+>   If a transaction in a life cycle trace is a manufacturing or assembly transaction, you can use the Serial/Lot Bill of Materials Trace window to view the serial- or lotnumbered items that were consumed (used) in creating a serial- or lot-numbered item. You also can view serial- or lot-numbered items that were produced (assembled) from a serial- or lot-numbered item. This window is available if a transaction in a life cycle trace is a manufacturing or assembly transaction.
 
->   The Serial/Lot Bill of Materials Trace window uses a tree view to show the
->   serial numbers, lot numbers, and transactions in a bill of materials trace.
->   For more information about the tree view, see *The bill of materials trace
->   tree view*.
+>   The Serial/Lot Bill of Materials Trace window uses a tree view to show the serial numbers, lot numbers, and transactions in a bill of materials trace. For more information about the tree view, see *The bill of materials trace tree view*.
 
 >   **To view a bill of materials trace:**
 
@@ -9435,45 +8482,27 @@ LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 
 >   (Inventory \>\> Inquiry \>\> Serial/Lot Trace)
 
-1.  Create a life cycle trace. See *Viewing a life cycle serial or lot number
-    trace* for more information.
+1.  Create a life cycle trace. See *Viewing a life cycle serial or lot number trace* for more information.
 
-2.  Highlight a manufacturing or assembly transaction in the scrolling window
-    and choose the View BOM Trace button to open the Serial/Lot Bill of
-    Materials Trace window.
+2.  Highlight a manufacturing or assembly transaction in the scrolling window and choose the View BOM Trace button to open the Serial/Lot Bill of Materials Trace window.
 
 ![](media/500357041985537b1c3c610ef3d0a270.jpg)
 
-1.  Select Consumed into the serial/lot or Produced from the serial/lot as the
-    serial/lot trace.
+1.  Select Consumed into the serial/lot or Produced from the serial/lot as the serial/lot trace.
 
-2.  You can highlight a serial number, a lot number, or a transaction in the
-    tree view to view additional information.You also can collapse and expand
-    the tree view to control the amount of information you see.
+2.  You can highlight a serial number, a lot number, or a transaction in the tree view to view additional information.You also can collapse and expand the tree view to control the amount of information you see.
 
-    -   For an item that doesn’t track serial or lot numbers, \<Not Tracked\>
-        will be displayed next to the item number.
+    -   For an item that doesn’t track serial or lot numbers, \<Not Tracked\> will be displayed next to the item number.
 
-    -   For assembly transactions, a link icon might appear next to a specific
-        serial or lot number that is matched to another serial or lot number.
-        Refer to the Bill of Materials documentation for more information about
-        linking serial and lot numbers.
+    -   For assembly transactions, a link icon might appear next to a specific serial or lot number that is matched to another serial or lot number. Refer to the Bill of Materials documentation for more information about linking serial and lot numbers.
 
 3.  When you’ve finished reviewing information, close the window.
 
 ### Viewing a recall serial or lot number trace
 
->   You can use the Serial/Lot Trace Inquiry window to trace the recall of
->   serial or lot numbers. A recall trace can show which customers purchased an
->   item with a specific serial or lot number. You also can use a recall trace
->   to show where the items with serial or lot numbers are located, including
->   the bin.
+>   You can use the Serial/Lot Trace Inquiry window to trace the recall of serial or lot numbers. A recall trace can show which customers purchased an item with a specific serial or lot number. You also can use a recall trace to show where the items with serial or lot numbers are located, including the bin.
 
->   If you are going to recall serial or lot numbers, you can choose the Go To
->   button to open the Item Transfer Entry window, where you can change the On
->   Hand quantity type of the item to another quantity type. For more
->   information about changing quantity types, see *Changing the quantity type
->   of an item*.
+>   If you are going to recall serial or lot numbers, you can choose the Go To button to open the Item Transfer Entry window, where you can change the On Hand quantity type of the item to another quantity type. For more information about changing quantity types, see *Changing the quantity type of an item*.
 
 >   **To view a recall serial and lot number trace:**
 
@@ -9491,30 +8520,21 @@ LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 
     -   Recall lot numbers where stocked
 
->   The type of recall trace you select determines the type of information
->   displayed in the window.
+>   The type of recall trace you select determines the type of information displayed in the window.
 
 1.  Select or enter an item number.
 
-2.  Enter or select a vendor ID if you know the vendor that you want to trace
-    serial or lot information for.
+2.  Enter or select a vendor ID if you know the vendor that you want to trace serial or lot information for.
 
-3.  Enter or select the range of serial or lot numbers to trace. Select All to
-    include all lot or serial numbers.
+3.  Enter or select the range of serial or lot numbers to trace. Select All to include all lot or serial numbers.
 
-4.  You can select a range of dates to restrict the information in the scrolling
-    window by date.
+4.  You can select a range of dates to restrict the information in the scrolling window by date.
 
-5.  Choose Resdisplay to display the serial and lot number information in the
-    scrolling window.
+5.  Choose Resdisplay to display the serial and lot number information in the scrolling window.
 
->   All of the serial or lot numbers found during the trace are displayed in the
->   scrolling window. To view information about a specific serial or lot number,
->   select the serial or lot number from the Serial/Lot field.
+>   All of the serial or lot numbers found during the trace are displayed in the scrolling window. To view information about a specific serial or lot number, select the serial or lot number from the Serial/Lot field.
 
-1.  To view additional information, select the transaction and click on a link
-    to open another window. The window that opens depends on the transaction
-    source and the link that you click.
+1.  To view additional information, select the transaction and click on a link to open another window. The window that opens depends on the transaction source and the link that you click.
 
 >   Refer to the table for more information.
 
@@ -9525,32 +8545,19 @@ LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 | Serial or lot numbers shipped to customers | Document Number                        | Sales Transaction Inquiry Zoom |
 | Serial or lot numbers where stocked        | Site ID                                | Item Inquiry                   |
 
-1.  You can choose the Go To button to open the Item Transfer Entry window to
-    change the On Hand quantity type of the item to another quantity type. For
-    more information about changing quantity types, see *Changing the quantity
-    type of an item*.
+1.  You can choose the Go To button to open the Item Transfer Entry window to change the On Hand quantity type of the item to another quantity type. For more information about changing quantity types, see *Changing the quantity type of an item*.
 
-2.  In the Serial/Lot Trace Inquiry window, you can choose File \>\> Print to
-    print the Serial/Lot Trace Inquiry Report.
+2.  In the Serial/Lot Trace Inquiry window, you can choose File \>\> Print to print the Serial/Lot Trace Inquiry Report.
 
 3.  When you’ve finished reviewing information, close the window.
 
 ### Viewing inventory available to promise information
 
->   If you’re using Available To Promise, use the Inventory Available to Promise
->   Inquiry window to view available to promise information, such as inventory
->   onhand quantity, allocated quantity, available quantity, and free-forward
->   quantity.
+>   If you’re using Available To Promise, use the Inventory Available to Promise Inquiry window to view available to promise information, such as inventory onhand quantity, allocated quantity, available quantity, and free-forward quantity.
 
->   Free-forward quantity is the total of available and pending quantities of an
->   item, plus any additional quantities from purchase orders, assembly
->   receipts, manufacturing orders, and sales returns displayed in the scrolling
->   window. The total sum is reduced by the item quantities from unallocated
->   sales orders, sales back orders, and unallocated manufacturing components
->   displayed in the scrolling window.
+>   Free-forward quantity is the total of available and pending quantities of an item, plus any additional quantities from purchase orders, assembly receipts, manufacturing orders, and sales returns displayed in the scrolling window. The total sum is reduced by the item quantities from unallocated sales orders, sales back orders, and unallocated manufacturing components displayed in the scrolling window.
 
->   You also can view pending purchase orders, pending purchase order receipts,
->   and pending inventory receipts.
+>   You also can view pending purchase orders, pending purchase order receipts, and pending inventory receipts.
 
 >   **To view inventory available to promise information:**
 
@@ -9560,11 +8567,9 @@ LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 
 ![](media/f0496b96880cd19b7adb7962b389b6fc.jpg)
 
-1.  You can select to view items by various units of measure and at various
-    sites.
+1.  You can select to view items by various units of measure and at various sites.
 
-2.  Choose the Calc. Available Date button to view the date that the quantity of
-    inventory will be available.
+2.  Choose the Calc. Available Date button to view the date that the quantity of inventory will be available.
 
 *Available dates are not shown for inactive items.*
 
@@ -9573,24 +8578,11 @@ LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 Chapter 27: Standard pricing inquiries
 --------------------------------------
 
->   If you’re using standard pricing, you can use the Item Price List Inquiry
->   window to view information about the pricing structures you’ve set up for
->   your items. You can use the window to view high-level price list information
->   for an item—such as the unit of measure schedule, base unit of measure, and
->   standard and current cost of the item. You also can use the tree view to
->   control how much information is displayed in the scrolling window. For
->   example, you can highlight the item number in the tree view to see all price
->   list records for an item, or only those price list records for a specific
->   currency, price level, or unit of measure. If you’re using Multicurrency
->   Management, you also can check pricing in different currencies, if that’s
->   been set up.
+>   If you’re using standard pricing, you can use the Item Price List Inquiry window to view information about the pricing structures you’ve set up for your items. You can use the window to view high-level price list information for an item—such as the unit of measure schedule, base unit of measure, and standard and current cost of the item. You also can use the tree view to control how much information is displayed in the scrolling window. For example, you can highlight the item number in the tree view to see all price list records for an item, or only those price list records for a specific currency, price level, or unit of measure. If you’re using Multicurrency Management, you also can check pricing in different currencies, if that’s been set up.
 
->   *If you’re using extended pricing, refer to Chapter 28, “Extended pricing
->   inquiries,” for information about viewing pricing information.*
+>   *If you’re using extended pricing, refer to Chapter 28, “Extended pricing inquiries,” for information about viewing pricing information.*
 
->   To review the rounding options for price list calculations, you can use the
->   Item Price List Options Inquiry window. Price list records in the Item Price
->   List Inquiry window also reflect the rounding options.
+>   To review the rounding options for price list calculations, you can use the Item Price List Options Inquiry window. Price list records in the Item Price List Inquiry window also reflect the rounding options.
 
 >   The following information is discussed:
 
@@ -9600,11 +8592,7 @@ Chapter 27: Standard pricing inquiries
 
 ### Viewing price list information
 
->   If you’re using standard pricing, use the Item Price List Inquiry window to
->   view price levels and quantity breaks for a particular item. For example, if
->   you wanted to offer different pricing alternatives to customers, you could
->   use this window to view the different price levels available for a
->   particular item.
+>   If you’re using standard pricing, use the Item Price List Inquiry window to view price levels and quantity breaks for a particular item. For example, if you wanted to offer different pricing alternatives to customers, you could use this window to view the different price levels available for a particular item.
 
 >   **To view price list information:**
 
@@ -9616,42 +8604,29 @@ Chapter 27: Standard pricing inquiries
 
 1.  Enter or select an item number.
 
-2.  In the tree view, you can click the plus and minus signs to expand and
-    collapse the information. If you highlight an object in the tree view, the
-    information for all levels at or below that level is displayed in the
-    scrolling window. Refer to *Using the price list tree view* for more
-    information about tree views.
+2.  In the tree view, you can click the plus and minus signs to expand and collapse the information. If you highlight an object in the tree view, the information for all levels at or below that level is displayed in the scrolling window. Refer to *Using the price list tree view* for more information about tree views.
 
-3.  If needed, you can go to other windows to view more information, or to make
-    changes.
+3.  If needed, you can go to other windows to view more information, or to make changes.
 
->   **To view or change item record information** Click the Item Number link to
->   open the Item Maintenance window.
+>   **To view or change item record information** Click the Item Number link to open the Item Maintenance window.
 
->   **To view or change price group information** Click the Price Group link to
->   open the Price Group Setup window.
+>   **To view or change price group information** Click the Price Group link to open the Price Group Setup window.
 
->   **To view or change the default selling unit of measure** Click the Default
->   Selling U of M link to open the Unit of Measure Schedule Setup window.
+>   **To view or change the default selling unit of measure** Click the Default Selling U of M link to open the Unit of Measure Schedule Setup window.
 
->   **To view or change the default price level** Click the Default Price Level
->   link to open the Price Level Setup window.
+>   **To view or change the default price level** Click the Default Price Level link to open the Price Level Setup window.
 
->   **To view or change a price level** Click the Price Level link to open the
->   Price Level Setup window, if you’re using Multicurrency Management.
+>   **To view or change a price level** Click the Price Level link to open the Price Level Setup window, if you’re using Multicurrency Management.
 
->   **To view or change a currency ID** Click the Currency ID link to open the
->   Item Currency Maintenance window.
+>   **To view or change a currency ID** Click the Currency ID link to open the Item Currency Maintenance window.
 
-1.  To print the Item Price List Report, which displays the information
-    displayed in the window, choose File \>\> Print.
+1.  To print the Item Price List Report, which displays the information displayed in the window, choose File \>\> Print.
 
 2.  When you’ve finished viewing information, close the windows.
 
 ### Viewing pricing option information
 
-If you’re using standard pricing, you can use the Item Price List Option Inquiry
-window to view the rounding rules set up for a pricing calculation.
+If you’re using standard pricing, you can use the Item Price List Option Inquiry window to view the rounding rules set up for a pricing calculation.
 
 >   **To view pricing option information:**
 
