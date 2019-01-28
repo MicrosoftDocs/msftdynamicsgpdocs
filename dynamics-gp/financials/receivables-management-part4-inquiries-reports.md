@@ -483,7 +483,7 @@ in e-mail.
 
 ## See Also
 
-[Part 1: Setup and cards](receivables-management.md#part-1-setup-and-cards)
+[Part 1: Setup and cards](receivables-management.md#part-1-setup-and-cards)  
 [Part 2: Transaction entry](receivables-management-part2-transaction-entry.md)  
 [Part 3: Transaction activity](receivables-management-part3-transaction-activity.md)  
 [Part 4: Inquiries and reports](receivables-management-part4-inquiries-reports.md)  
