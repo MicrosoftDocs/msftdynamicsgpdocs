@@ -57,10 +57,9 @@ Reconcile your sales documents to verify the item quantities and totals on your 
 #### To reconcile sales documents
 
 1. Open the Reconcile-Remove Sales Documents window.
-
     (Sales \>\> Utilities \>\> Reconcile-Remove Sales Documents)
 
-    ![screenshot](media/96f5bbe4cf650af01d80a3c04928c5dc.jpg)
+    ![screenshot](media/SOage203.jpg)
 
 2. Select a range of documents to reconcile.
 
@@ -126,7 +125,7 @@ When you remove history, transaction information stored in other modules, such a
 1. Open the Remove Sales History window.
     (Sales \>\> Utilities \>\> Remove Sales History)
 
-    ![screenshot](media/d345c36bb75ecf0d19d5eb5719469b4c.jpg)
+    ![screenshot](media/SOage205.jpg)
 
 2. Select the history type you want to remove.
 
@@ -160,7 +159,7 @@ Use the Tax History Removal window to remove tax detail transactions. Only the t
 1. Open the Tax History Removal window.
     (Administration \>\> Utilities \>\> Company \>\> Remove Tax History)
 
-    ![screenshot](media/1f872ef94674924ce03a7468c983a376.jpg)
+    ![screenshot](media/SOage207.jpg)
 
 2. Select whether you want to remove tax detail transactions and print the Tax History Removal Report, remove the tax detail transactions, or print the Tax History Removal Report.
 
@@ -182,10 +181,9 @@ Once history has been removed, you won’t be able to print the Intrastat remova
 #### To remove Intrastat history
 
 1. Open the Remove Intrastat History window.
-
     (Administration \>\> Utilities \>\> Company \>\> Remove Intrastat History)
 
-    ![screenshot](media/c01f6498db0b24e9d4fb67e033d83f22.jpg)
+    ![screenshot](media/SOage209.jpg)
 
 2. Select a range type for the historical information you want to remove. Define the beginning and the end of the range, then choose Insert to display the range.
 
