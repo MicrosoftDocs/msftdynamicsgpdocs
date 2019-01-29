@@ -254,9 +254,7 @@ If an order, invoice, or fulfillment order exceeds the customer’s credit limit
 #### To allocate items by document or batch
 
 1. Open the Sales Allocation-Fulfillment Options window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a transaction \>\> Options \>\> Allocate or Fulfill)
-
     (Sales \>\> Transactions \>\> Sales Batches \>\> select a batch \>\> Options \>\> Allocate or Fulfill)
 
     ![screenshot](media/SOage110.jpg)
@@ -282,7 +280,6 @@ You also can select to allocate items by customer priority or requested ship dat
 #### To allocate back-ordered items for orders and fulfillment orders
 
 1. Open the Sales Automatic Order Allocation window.
-
     (Sales \>\> Transactions \>\> Automatic Order Allocation)
 
     ![screenshot](media/SOage112.jpg)
@@ -370,9 +367,7 @@ If you fulfill by document or batch and a line item’s quantity to be fulfilled
 #### To fulfill quantities for all items on a document
 
 1. Open the Sales Allocation-Fulfillment Options window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a transaction \>\> Options \>\> Allocate or Fulfill)
-
     (Sales \>\> Transactions \>\> Sales Batches \>\> select a batch \>\> Options \>\> Allocate or Fulfill)
 
 2. Mark **Fulfill** and choose OK to fulfill the item and close the window. The Allocation/Fulfillment Exception Report will be printed.
@@ -394,7 +389,6 @@ If you are using customer credit limit override workflow, orders, fulfillment or
 #### To fulfill quantities for items on previously entered documents
 
 1. Open the Sales Order Fulfillment window.
-
     (Sales \>\> Transactions \>\> Order Fulfillment)
 
     ![screenshot](media/SOage118.jpg)
@@ -598,7 +592,6 @@ You can add a vendor to the tree using the tree view, regardless of which tab yo
 #### To change a vendor
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select a sales document with a back-ordered quantity and choose the Purchase button to open the Purchase Orders Preview window.
@@ -632,7 +625,6 @@ Use the Organize button to move objects in the tree view. It doesn’t matter wh
 #### To modify a purchase order in the tree view
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select the sales document and choose the Purchase button to open the Purchase Orders Preview window.
@@ -665,7 +657,6 @@ You can change the information on the PO tab and the Item tab, but not the Vendo
 #### To modify a purchase order using the tabs
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select a sales document with a back-ordered quantity and choose Purchase to open the Purchase Orders Preview window. Only sales documents that contain items with a Needs Purchase commitment status appear in the Purchase Orders Preview window.
@@ -684,7 +675,6 @@ After you have viewed and modified a pending purchase order, you must generate t
 #### To generate a purchase order from a single sales document
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select a sales document with a back-ordered quantity.
@@ -713,7 +703,6 @@ After you have viewed and modified pending purchase orders, you must generate th
 #### To generate purchase orders from multiple sales documents
 
 1. Open the Sales Document Range Inquiry window.
-
     (Sales \>\> Inquiry \>\> Sales Range Inquiry)
 
     ![screenshot](media/SOage1425.jpg)
@@ -775,7 +764,6 @@ You can link drop-ship line items to existing drop-ship purchase orders. You can
 #### To link a line item from the Purchase Orders Preview window
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select the sales document and highlight a line item to link.
@@ -804,7 +792,6 @@ You can link drop-ship line items to existing drop-ship purchase orders. You can
 #### To link a line item from the sales document
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select a sales document with a back-ordered quantity and highlight the line item to link.
@@ -876,7 +863,7 @@ Once you link a sales line item to a purchase order, the link purchase order ico
 
 3. Choose the link purchase order button next to the Quantity Ordered field to open the PO Commitment for Sales Document window.
 
-    ![screenshot](media/4fddbcd02a9b3ab89dbc209ea4e1d7fe.jpg)
+    ![screenshot](media/SOage150a.jpg)
 
 4. Verify the purchase order number and choose Delete. Once the link is removed, the link icon will be removed from the line item in the Sales Transaction Entry window and the Purchase Order Entry window.
 
@@ -919,7 +906,6 @@ For any item on a sales order or back order, you can check the commitment status
 #### To check the commitment status
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select the sales document in the Sales Transaction Entry window and highlight the line item you want to link.
