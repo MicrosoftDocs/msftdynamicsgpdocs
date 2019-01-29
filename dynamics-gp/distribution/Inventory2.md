@@ -8,7 +8,6 @@
 >   **To view promotions for a prospect or customer:**
 
 1.  Open the Promotion Price Sheet Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Extended Pricing \>\> Promotions)
 
 ![](media/0ffc411d9bc41144af82ff8f34b2d557.jpg)
@@ -83,7 +82,6 @@ Chapter 29: Transaction inquiries
 >   **To view item transaction information:**
 
 1.  Open the Item Transaction Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Item Transaction)
 
 ![](media/800e8df5dfa8c70fe00a49daf7d01b87.jpg)
@@ -139,7 +137,6 @@ date.*
 >   **To view inventory transaction information:**
 
 1.  Open the Inventory Transaction Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Transaction)
 
 ![](media/007374bdc0cdfce70c59c9c5ac2860d2.jpg)
@@ -195,7 +192,6 @@ date.*
 >   **To view in-transit transfer transaction information:**
 
 1.  Open the In-Transit Transfer History Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> In-Transit Transfer History)
 
 ![](media/6796b891c285c41198c0a6bcc4170365.jpg)
@@ -232,7 +228,6 @@ date.*
 >   **To view purchase receipt information:**
 
 1.  Open the Purchase Receipts Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Receipts)
 
 ![](media/607cfbb997ce2e2f3dfd66c6153be9fa.jpg)
@@ -631,7 +626,6 @@ Chapter 30: Reports
 >   **To check for missing prices:**
 
 1.  Open the Extended Pricing Error Report window.
-
 >   (Inventory \>\> Reports \>\> Extended Pricing \>\> Error Reports)
 
 ![](media/546c8a7ba62e2dd0ee1feabc97e157cd.jpg)
@@ -685,7 +679,6 @@ Chapter 30: Reports
 >   **To print extended pricing summary reports:**
 
 1.  Open the Extended Pricing Report window.
-
 >   (Inventory \>\> Reports \>\> Extended Pricing \>\> Pricing Reports)
 
 ![](media/ee9c7b195ca5b21478533bb52969e19a.jpg)
@@ -700,18 +693,13 @@ Chapter 30: Reports
 
 2.  Enter the date that information in the report should be based on.
 
-3.  Mark Print Errors if problems in calculating prices should be included in
-    the report.
+3.  Mark Print Errors if problems in calculating prices should be included in the report.
 
->   If you don’t mark this option, the first net price that is found will be
->   printed on the report.
+>   If you don’t mark this option, the first net price that is found will be printed on the report.
 
-1.  If you’re using Multicurrency Management, enter or select the currency ID
-    for the report. If you don’t select a currency, information about all
-    currencies will be included on the report.
+1.  If you’re using Multicurrency Management, enter or select the currency ID for the report. If you don’t select a currency, information about all currencies will be included on the report.
 
-2.  Enter additional information for the report, based on the kind of report
-    you’re printing.
+2.  Enter additional information for the report, based on the kind of report you’re printing.
 
 >   Refer to the table for more information.
 
@@ -727,11 +715,9 @@ Chapter 30: Reports
 
 2.  Choose the report destination.
 
->   *If you don’t choose a destination for the report at this point, you’ll be
->   prompted to select a destination when the report is generated.*
+>   *If you don’t choose a destination for the report at this point, you’ll be prompted to select a destination when the report is generated.*
 
-1.  Choose OK to save the report destination and close the Report Destination
-    window.
+1.  Choose OK to save the report destination and close the Report Destination window.
 
 2.  In the Extended Pricing Report window, choose Print to generate the report.
 
@@ -739,69 +725,44 @@ Chapter 30: Reports
 
 ### Printing a purchase order generator item report
 
->   You can use the Purchase Order Generator Item Report to print the Purchase
->   Order Generator Item Report, which summarizes the purchase order generator
->   options you’ve set up for items.
+>   You can use the Purchase Order Generator Item Report to print the Purchase Order Generator Item Report, which summarizes the purchase order generator options you’ve set up for items.
 
 >   **To print a purchase order generator item report:**
 
 1.  Open the Purchase Order Generator Item Report window.
-
 >   (Inventory \>\> Reports \>\> Purchase Order Generator Item)
 
 ![](media/1e74020f0aa91b4d664c33d425e46bcc.jpg)
 
-1.  Use the range fields to select the group of items to include in the report.
-    You can select a range of items, sites, classes, or generic descriptions.
+1.  Use the range fields to select the group of items to include in the report. You can select a range of items, sites, classes, or generic descriptions.
 
-2.  Choose how information in the report should be sorted. Choices are Item,
-    Description, Site, Class, and Generic Description.
+2.  Choose how information in the report should be sorted. Choices are Item, Description, Site, Class, and Generic Description.
 
-3.  Choose Print. The Report Destination window opens, where you can choose
-    where the report should be printed. For more information about report
-    destinations and formats, refer to your System User's Guide (Help \>\>
-    Contents \>\> select Using The System).
+3.  Choose Print. The Report Destination window opens, where you can choose where the report should be printed. For more information about report destinations and formats, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
-4.  In the Report Destination window, choose OK. The report will be printed to
-    the destination you selected.
+4.  In the Report Destination window, choose OK. The report will be printed to the destination you selected.
 
 5.  When you’ve finished, close the window.
 
 ### Specifying an Inventory Control report option
 
->   Report options include specifications for sorting options and range
->   restrictions for a particular report. In order to print several Inventory
->   Control reports, you must first create a report option. Each report can have
->   several different options so that you can easily print the information you
->   need. For example, you can create report options for the Purchase Receipts
->   Report that show either detailed or summary information.
+>   Report options include specifications for sorting options and range restrictions for a particular report. In order to print several Inventory Control reports, you must first create a report option. Each report can have several different options so that you can easily print the information you need. For example, you can create report options for the Purchase Receipts Report that show either detailed or summary information.
 
->   *A single report option can’t be used by multiple reports. If you want
->   identical options for several reports, you must create them separately.*
+>   *A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.*
 
->   Use the Inventory Control report options windows to create sorting,
->   restriction, printing, and email options for the reports that have been
->   included with Inventory Control.
+>   Use the Inventory Control report options windows to create sorting, restriction, printing, and email options for the reports that have been included with Inventory Control.
 
 >   **To specify an Inventory Control report option:**
 
 1.  Open an Inventory Control reports window. There are separate windows for
     each report type.
-
 >   (Inventory \>\> Reports \>\> Setup)
-
 >   (Inventory \>\> Reports \>\> Item)
-
 >   (Inventory \>\> Reports \>\> Serial/Lots)
-
 >   (Inventory \>\> Reports \>\> Activity)
-
 >   (Inventory \>\> Reports \>\> Analysis)
-
 >   (Inventory \>\> Reports \>\> History)
-
 >   (Inventory \>\> Reports \>\> Posting Journals)
-
 >   (Inventory \>\> Reports \>\> Resource Planning)
 
 1.  Select a report from the Reports list.
@@ -944,7 +905,6 @@ Chapter 31: Item cost adjustments
 >   **To adjust the purchase receipt cost of an item:**
 
 1.  Open the Inventory Adjust Costs window.
-
 >   (Inventory \>\> Utilities \>\> Adjust Costs)
 
 ![](media/bafa6625fb134cda815132b3a94b1412.jpg)
@@ -1033,7 +993,6 @@ The average cost of an item will be recalculated under the following situations.
 >   **To update the standard cost of an item:**
 
 1.  Open the Change Item Standard Cost window.
-
 >   (Inventory \>\> Utilities \>\> Change Item Standard Cost)
 
 1.  Enter or select the item. The quantity on hand and current standard cost
@@ -1089,7 +1048,6 @@ Chapter 32: Standard pricing wizards
 >   **To get started with a price list wizard:**
 
 1.  Open the Price List Utilities - Welcome window.
-
 >   (Inventory \>\> Utilities \>\> Price List Utilities)
 
 1.  Choose Next to open the Price List Utilities Main Menu.
@@ -1611,7 +1569,6 @@ Chapter 33: Extended pricing utilities
 >   **To transfer price sheet details:**
 
 1.  Open the Price Sheet Transfer window.
-
 >   (Inventory \>\> Utilities \>\> Extended Pricing \>\> Price Sheet Transfer)
 
 ![](media/78e5101f7ea3fe86a11dc54464428ba9.jpg)
@@ -1711,7 +1668,6 @@ Chapter 33: Extended pricing utilities
 >   **To remove price sheets:**
 
 1.  Open the Mass Remove Price Sheets window.
-
 >   (Inventory \>\> Utilities \>\> Extended Pricing \>\> Mass Remove Sheets)
 
 ![](media/0d2e7a53f0e5b59cadba0f00616f210e.jpg)
@@ -1815,7 +1771,6 @@ Chapter 34: History utilities
 >   **To remove inventory transaction history:**
 
 1.  Open the Remove Inventory Transaction History window.
-
 >   (Inventory \>\> Utilities \>\> Remove Transaction History)
 
 ![](media/4ca51dbea411b9cec507ec5cdc8c65cf.jpg)
@@ -1851,7 +1806,6 @@ Chapter 34: History utilities
 >   **To remove inventory distribution history:**
 
 1.  Open the Remove Inventory Distribution History window.
-
 >   (Inventory \>\> Utilities \>\> Remove Distributions)
 
 ![](media/935e543bcf6c6e75a66dd05afd9d4177.jpg)
@@ -1893,7 +1847,6 @@ Chapter 34: History utilities
 >   **To remove inventory journal history:**
 
 1.  Open the Remove Inventory Posting Journal History window.
-
 >   (Inventory \>\> Utilities \>\> Remove Journal History)
 
 ![](media/a439b36725e13e90b6ea214e7b23bd3e.jpg)
@@ -1923,7 +1876,6 @@ Chapter 34: History utilities
 >   **To remove stock count history:**
 
 1.  Open the Remove Stock Count History window.
-
 >   (Inventory \>\> Utilities \>\> Remove Count History)
 
 ![](media/c529054dd35c0c879648756a688965d5.jpg)
@@ -1949,7 +1901,6 @@ Chapter 34: History utilities
 >   **To remove in-transit transfer history:**
 
 1.  Open the Transfer Purge Utility window.
-
 >   (Inventory \>\> Utilities \>\> Purge In-Transit Transfer)
 
 ![](media/18a476720c4365c8df896f68d2ee6c5e.jpg)
@@ -1969,7 +1920,6 @@ Chapter 34: History utilities
 >   **To remove bin transfer history:**
 
 1.  Open the Remove Bin Transfer History window.
-
 >   (Inventory \>\> Utilities \>\> Remove Bin Transfer History)
 
 1.  Enter the date. When you remove history, the bin transfers dated on or
@@ -2092,7 +2042,6 @@ accounting data. You should reconcile modules in this order:
 >   **To reconcile inventory records:**
 
 1.  Open the Reconcile Inventory Quantities window.
-
 >   (Inventory \>\> Utilities \>\> Reconcile)
 
 ![](media/d5301f146698d8bec0f69a8b55618bb8.jpg)
@@ -2153,7 +2102,6 @@ settings.*
 >   **To change currency or quantity decimal places for items:**
 
 1.  Open the Change Decimal Places window.
-
 >   (Inventory \>\> Utilities \>\> Change Decimal Places)
 
 ![](media/13f72af1e7c333bb0ec3efb271cfe2ed.jpg)
@@ -2257,7 +2205,6 @@ settings.*
 >   **To change valuation methods:**
 
 1.  Open the Change Valuation Method window.
-
 >   (Inventory \>\> Utilities \>\> Change Valuation)
 
 ![](media/6732e2452f42cdd6eec5754f22c1acad.jpg)
@@ -2316,7 +2263,6 @@ settings.*
 >   **To remove bins:**
 
 1.  Open the Remove Bins window.
-
 >   (Inventory \>\> Utilities \>\> Remove Bins)
 
 ![](media/1a5bd43e7c32bc7711b8cc3bfb82e00a.jpg)
@@ -2350,7 +2296,6 @@ settings.*
 >   **To replace all buyers or planners:**
 
 1.  Open the Replace Resource Planning Buyer/Planner window.
-
 >   (Inventory \>\> Utilities \>\> Replace Resource Planning Buyer/Planner)
 
 ![](media/6ffa62336b0b9d45d0adaa939f9e85f2.jpg)
@@ -2382,7 +2327,6 @@ settings.*
 >   **To update purchase order generator options for several items:**
 
 1.  Open the Purchase Order Item Mass Update window.
-
 >   (Inventory \>\> Utilities \>\> Purchase Order Item Mass Update)
 
 ![](media/310927adcc696800e2295b987ef29276.jpg)
@@ -2429,7 +2373,6 @@ settings.*
 >   **To modify lot number attributes:**
 
 1.  Open the Edit Lot Number Attributes window.
-
 >   (Inventory \>\> Utilities \>\> Edit Lot Number Attributes)
 
 ![](media/0cca75ad0e85c4868f5dc679a1d520c3.jpg)
@@ -2558,7 +2501,6 @@ Chapter 37: ABC analysis
 >   **To perform ABC analysis of inventoried items:**
 
 1.  Open the ABC analysis wizard, then choose Next.
-
 >   (Inventory \>\> Routines \>\> Item ABC Analysis)
 
 1.  In the ABC Analysis Options window, select the type of information you want
@@ -2903,7 +2845,6 @@ Chapter 38: Year-end closing
 >   **To close a year:**
 
 1.  Open the Inventory Year-end Closing window.
-
 >   (Inventory \>\> Routines \>\> Year-End Close)
 
 ![](media/93643a0bc651667e8e6d3f0c5641eb01.jpg)
@@ -3042,7 +2983,6 @@ Chapter 39: Inventory control checklists
 >   **To use an Inventory Control checklist:**
 
 1.  Open the Inventory Checklists window.
-
 >   (Inventory \>\> Routines \>\> Checklists)
 
 ![](media/d39b0148f63f0b59398dfb0ad2328917.jpg)
@@ -3597,52 +3537,35 @@ Glossary
 
 #### Minimum shelf life
 
->   A limited length of time that an item can be stored to meet specification
->   requirements and to remain suitable for its intended purpose. *See also
->   Shelf life*.
+>   A limited length of time that an item can be stored to meet specification requirements and to remain suitable for its intended purpose. *See also Shelf life*.
 
 #### Miscellaneous charges
 
->   An item type assigned to items that aren’t being tracked by quantity or
->   current cost, such as shipping costs, customizing costs, or other costs that
->   occur infrequently.
+>   An item type assigned to items that aren’t being tracked by quantity or current cost, such as shipping costs, customizing costs, or other costs that occur infrequently.
 
 #### Module
 
->   An application that can be used to perform a specific set of tasks. Modules
->   are combined to form a series. For example, the Inventory Control and the
->   Bill of Materials modules are members of the Inventory series.
+>   An application that can be used to perform a specific set of tasks. Modules are combined to form a series. For example, the Inventory Control and the Bill of Materials modules are members of the Inventory series.
 
 #### Non-inventoried item
 
->   An Item that doesn’t have card set up in Inventory Control. This item is not
->   usually carried in your inventory, but is stocked or ordered on a one-time
->   basis.
+>   An Item that doesn’t have card set up in Inventory Control. This item is not usually carried in your inventory, but is stocked or ordered on a one-time basis.
 
 #### Note
 
->   A feature that is used to attach messages to windows and fields throughout
->   the system. The Note button also shows whether a note is attached to a
->   window. A note can be edited and reattached, deleted, or printed.
+>   A feature that is used to attach messages to windows and fields throughout the system. The Note button also shows whether a note is attached to a window. A note can be edited and reattached, deleted, or printed.
 
 #### Offset account
 
->   In double-entry accounting, the second account used to balance a transaction
->   so that debits equal credits.
+>   In double-entry accounting, the second account used to balance a transaction so that debits equal credits.
 
 #### Order-up-to level
 
->   The order-up-to level is the sum of the order point and an amount you
->   choose. It is also known as the target inventory level in some systems.
+>   The order-up-to level is the sum of the order point and an amount you choose. It is also known as the target inventory level in some systems.
 
 #### Origin
 
->   The location where a transaction is entered in Microsoft Dynamics GP,
->   usually a transaction entry window within a specific module. Certain
->   options, such as verifying batch controls and closing fiscal periods can be
->   selected for each transaction origin. Also, the transaction origin appears
->   as part of the audit trail code on all posting reports in Microsoft Dynamics
->   GP.
+>   The location where a transaction is entered in Microsoft Dynamics GP, usually a transaction entry window within a specific module. Certain options, such as verifying batch controls and closing fiscal periods can be selected for each transaction origin. Also, the transaction origin appears as part of the audit trail code on all posting reports in Microsoft Dynamics GP.
 
 #### Originating currency
 
@@ -3650,46 +3573,31 @@ Glossary
 
 #### Override
 
->   To ignore a quantity shortage warning by entering more quantity than is
->   available for an item in Inventory. *See also Shortage*.
+>   To ignore a quantity shortage warning by entering more quantity than is available for an item in Inventory. *See also Shortage*.
 
 #### Percent margin
 
->   A price method used to automatically determine item prices based on a
->   desired profit margin. You can set up this method to calculate prices using
->   either current or standard costs, depending on your valuation method.
+>   A price method used to automatically determine item prices based on a desired profit margin. You can set up this method to calculate prices using either current or standard costs, depending on your valuation method.
 
 #### Percent markup
 
->   A pricing method in which an item’s price is determined by the item’s
->   current cost plus a fixed percentage. You can set up this method to
->   calculate prices using either current or standard costs, depending on your
->   valuation method.
+>   A pricing method in which an item’s price is determined by the item’s current cost plus a fixed percentage. You can set up this method to calculate prices using either current or standard costs, depending on your valuation method.
 
 #### Percent of list
 
->   A price method in which an item’s price is determined by a percentage of the
->   item’s list price.
+>   A price method in which an item’s price is determined by a percentage of the item’s list price.
 
 #### Phantom bill
 
->   A list of parts commonly used together when assembling a finished good. To
->   create a phantom bill, you must have a Kit item set up in Inventory.
->   However, you should not use the same item for both a kit and a phantom bill.
->   *See also Kit*.
+>   A list of parts commonly used together when assembling a finished good. To create a phantom bill, you must have a Kit item set up in Inventory. However, you should not use the same item for both a kit and a phantom bill. *See also Kit*.
 
 #### Physical inventory count
 
->   Periodic counts of items at a site. A physical inventory count also can be
->   based on a defined interval for each item. Usually, inventory personnel
->   count many or all items at once. For example, a business that completes a
->   count of all items at the end of each month would be performing a physical
->   inventory count.
+>   Periodic counts of items at a site. A physical inventory count also can be based on a defined interval for each item. Usually, inventory personnel count many or all items at once. For example, a business that completes a count of all items at the end of each month would be performing a physical inventory count.
 
 #### Playback
 
->   To run a macro. Playing a macro back performs the procedure exactly as it
->   was recorded.
+>   To run a macro. Playing a macro back performs the procedure exactly as it was recorded.
 
 **Postal code**
 
@@ -3697,35 +3605,23 @@ Glossary
 
 #### Posting
 
->   A procedure to make temporary transactions a part of permanent records or to
->   update accounts by transaction amounts. In manual accounting, posting
->   transfers journal entries to the proper accounts in a general ledger. In
->   Microsoft Dynamics GP, posting transfers transaction and batch information
->   into history.
+>   A procedure to make temporary transactions a part of permanent records or to update accounts by transaction amounts. In manual accounting, posting transfers journal entries to the proper accounts in a general ledger. In Microsoft Dynamics GP, posting transfers transaction and batch information into history.
 
 #### Posting account
 
->   A financial account that tracks assets, liabilities, revenue, or expenses.
->   These accounts appear on the financial statements and other reports created
->   in the financial series. *See also Account*.
+>   A financial account that tracks assets, liabilities, revenue, or expenses. These accounts appear on the financial statements and other reports created in the financial series. *See also Account*.
 
 #### Posting journal
 
->   A report printed following the posting process that shows the detail for
->   each transaction posted. Posting journals also include the audit trail code,
->   which is a precise record of where each transaction has been posted within
->   Microsoft Dynamics GP.
+>   A report printed following the posting process that shows the detail for each transaction posted. Posting journals also include the audit trail code, which is a precise record of where each transaction has been posted within Microsoft Dynamics GP.
 
 #### Price
 
->   A value, usually a currency amount, that is assigned to goods or to
->   services.
+>   A value, usually a currency amount, that is assigned to goods or to services.
 
 #### Price book
 
->   A collection of one or more extended pricing price sheets. You can assign
->   one price book to each customer, but each price book can be assigned to
->   multiple customers.
+>   A collection of one or more extended pricing price sheets. You can assign one price book to each customer, but each price book can be assigned to multiple customers.
 
 #### Price group
 
@@ -3733,41 +3629,27 @@ Glossary
 
 #### Price level
 
->   For use with standard pricing. Allows you to set up additional detail for
->   each price list, so that each unit of measure can have unlimited price
->   breaks for different price levels, such as a retail price level, a wholesale
->   price level, and so on.
+>   For use with standard pricing. Allows you to set up additional detail for each price list, so that each unit of measure can have unlimited price breaks for different price levels, such as a retail price level, a wholesale price level, and so on.
 
 #### Price list
 
->   For use with standard pricing. All of the pricing information for an item,
->   including the different currencies, price levels, units of measure, and
->   quantity breaks. Each item has one price list.
+>   For use with standard pricing. All of the pricing information for an item, including the different currencies, price levels, units of measure, and quantity breaks. Each item has one price list.
 
 #### Price list record
 
->   For use with standard pricing. Each combination of currency, unit of
->   measure, price level, and quantity break information for pricing an item,
->   including the price for that combination.
+>   For use with standard pricing. Each combination of currency, unit of measure, price level, and quantity break information for pricing an item, including the price for that combination.
 
 #### Price method
 
->   For use with standard pricing. Used to determine the amount that is charged
->   for an item.
+>   For use with standard pricing. Used to determine the amount that is charged for an item.
 
 #### Price sheet
 
->   A list of extended pricing prices that will apply only during a specified
->   period. Each price sheet can be created for different combinations of items,
->   price groups, or both. You can assign a price sheet to price books,
->   customers, and prospects.
+>   A list of extended pricing prices that will apply only during a specified period. Each price sheet can be created for different combinations of items, price groups, or both. You can assign a price sheet to price books, customers, and prospects.
 
 #### Process server
 
->   An application that allows users to direct the processing of some accounting
->   functions and maintenance procedures to another computer on a network. No
->   additional actions are required by the user. Once tasks have been sent to a
->   process server, users immediately can begin other tasks.
+>   An application that allows users to direct the processing of some accounting functions and maintenance procedures to another computer on a network. No additional actions are required by the user. Once tasks have been sent to a process server, users immediately can begin other tasks.
 
 **Product**
 
@@ -3775,20 +3657,13 @@ Glossary
 
 #### Promotional price sheet
 
->   A price sheet that contains special offers for individual products.
->   Promotions can be set up for free products, for special prices, for an
->   amount, or for a percentage of the list price.
+>   A price sheet that contains special offers for individual products. Promotions can be set up for free products, for special prices, for an amount, or for a percentage of the list price.
 
 >   *See also Price sheet*.
 
 #### Purchase receipt
 
->   A “document” created by Microsoft Dynamics GP each time you enter an
->   increase transaction for an item. The system uses this “document” internally
->   to track the quantity and the cost of an item, which allows you to
->   accurately assess the value of your entire inventory and of individual
->   items. You can view information about individual purchase receipts using the
->   Purchase Receipt Inquiry window.
+>   A “document” created by Microsoft Dynamics GP each time you enter an increase transaction for an item. The system uses this “document” internally to track the quantity and the cost of an item, which allows you to accurately assess the value of your entire inventory and of individual items. You can view information about individual purchase receipts using the Purchase Receipt Inquiry window.
 
 #### Quantity allocated
 
@@ -3796,26 +3671,19 @@ Glossary
 
 #### Quantity available
 
->   Total amount of an item that is available for sale. Quantity on hand -
->   Quantity allocated.
+>   Total amount of an item that is available for sale. Quantity on hand - Quantity allocated.
 
 #### Quantity on hand
 
->   The total amount of an item that is available, including allocated
->   quantities. Quantity available + Quantity allocated.
+>   The total amount of an item that is available, including allocated quantities. Quantity available + Quantity allocated.
 
 #### Quantity type
 
->   A general category that determines how Microsoft Dynamics GP tracks the
->   quantities of an item in Inventory Control. Specific quantity types include
->   On Hand, Available, In Service, In Use, and Damaged. See specific quantity
->   types for more specific information.
+>   A general category that determines how Microsoft Dynamics GP tracks the quantities of an item in Inventory Control. Specific quantity types include On Hand, Available, In Service, In Use, and Damaged. See specific quantity types for more specific information.
 
 #### Range
 
->   A selection used to narrow the number of records that are printed on a
->   report. For example, a selected range of items could be those between 5000
->   and 6000.
+>   A selection used to narrow the number of records that are printed on a report. For example, a selected range of items could be those between 5000 and 6000.
 
 **Real-time posting**
 
@@ -3827,18 +3695,11 @@ Glossary
 
 #### Reconciling
 
->   A procedure used to verify whether data is correct. In Inventory Control
->   reconciling adjusts incorrect quantities between various inventory files,
->   such as the Item Quantities File, Purchase Receipts File, Serial Number
->   File, and Lot Number File.
+>   A procedure used to verify whether data is correct. In Inventory Control reconciling adjusts incorrect quantities between various inventory files, such as the Item Quantities File, Purchase Receipts File, Serial Number File, and Lot Number File.
 
 #### Record
 
->   A collection of related fields within a file. Records typically comprise
->   most or all of the data entered in the fields in a given window. For
->   instance, all the information entered about a specific item in the Item
->   Maintenance window make up a single record. A single transaction entered in
->   a transaction entry window also constitutes a record.
+>   A collection of related fields within a file. Records typically comprise most or all of the data entered in the fields in a given window. For instance, all the information entered about a specific item in the Item Maintenance window make up a single record. A single transaction entered in a transaction entry window also constitutes a record.
 
 #### Receipt cost
 
@@ -3846,53 +3707,35 @@ Glossary
 
 #### Recurring batch
 
->   A batch that is posted repeatedly, according to the selected frequency. For
->   example, you may set up a recurring batch to record monthly rent expense.
->   With recurring batches, you still need to manually update the transaction
->   information before you post the batch each time. In Australia and New
->   Zealand, transactions entered in a recurring batch are referred to as
->   standing transactions.
+>   A batch that is posted repeatedly, according to the selected frequency. For example, you may set up a recurring batch to record monthly rent expense. With recurring batches, you still need to manually update the transaction information before you post the batch each time. In Australia and New Zealand, transactions entered in a recurring batch are referred to as standing transactions.
 
 #### Removing history
 
->   A procedure used to erase ranges of historical information. Additional hard
->   disk space becomes available when history has been removed. You should back
->   up your data before performing this procedure.
+>   A procedure used to erase ranges of historical information. Additional hard disk space becomes available when history has been removed. You should back up your data before performing this procedure.
 
 #### Report group
 
->   A collection of report options that are printed simultaneously. You can also
->   combine groups from different series and print them simultaneously.
+>   A collection of report options that are printed simultaneously. You can also combine groups from different series and print them simultaneously.
 
 #### Report option
 
->   A collection of entries that specify the amount of information or the type
->   of information that appears on a report. Multiple report options can be
->   created.
+>   A collection of entries that specify the amount of information or the type of information that appears on a report. Multiple report options can be created.
 
 #### Return
 
->   The act of giving back merchandise to the seller after the sales invoice has
->   been posted. The seller must then either exchange the merchandise or give
->   back the customer’s money.
+>   The act of giving back merchandise to the seller after the sales invoice has been posted. The seller must then either exchange the merchandise or give back the customer’s money.
 
 #### Rolldown
 
->   The process of applying changes made in one class record to all item records
->   assigned to that class. For example, if the generic description for one item
->   in a class is changed, the rolldown applies the same change to all items in
->   that item class.
+>   The process of applying changes made in one class record to all item records assigned to that class. For example, if the generic description for one item in a class is changed, the rolldown applies the same change to all items in that item class.
 
 #### Sales inventory
 
->   An item type for items that may be sold and reordered. Quantities and cost
->   information are tracked for sales inventory items.
+>   An item type for items that may be sold and reordered. Quantities and cost information are tracked for sales inventory items.
 
 #### Sample data
 
->   Data that can be used with the lessons to practice Microsoft Dynamics GP
->   procedures. Sample data can be accessed using the lesson company, Fabrikam,
->   Inc.
+>   Data that can be used with the lessons to practice Microsoft Dynamics GP procedures. Sample data can be accessed using the lesson company, Fabrikam, Inc.
 
 **Segment number**
 
@@ -3900,19 +3743,15 @@ Glossary
 
 #### Serial number
 
->   An identifier assigned to a specific inventory item to differentiate it from
->   all other similar items with the same item number.
+>   An identifier assigned to a specific inventory item to differentiate it from all other similar items with the same item number.
 
 #### Series
 
->   A group of modules that form an interrelated set of applications. For
->   example, Inventory Control and Bill of Materials are part of the
->   Distribution series.
+>   A group of modules that form an interrelated set of applications. For example, Inventory Control and Bill of Materials are part of the Distribution series.
 
 #### Series posting
 
->   A posting process in which marked batches from the same series can be posted
->   simultaneously.
+>   A posting process in which marked batches from the same series can be posted simultaneously.
 
 #### Services
 
@@ -3920,21 +3759,15 @@ Glossary
 
 #### Setup routine
 
->   A series of procedures that can be used to open the windows where options
->   and defaults for a specific module are modified or set up.
+>   A series of procedures that can be used to open the windows where options and defaults for a specific module are modified or set up.
 
 #### Shelf life
 
->   The length of time that an item can be stored to meet specification
->   requirements and to remain suitable for its intended purpose. Shelf life
->   applies to finished goods, as well as to raw materials. *See also Minimum
->   shelf life*.
+>   The length of time that an item can be stored to meet specification requirements and to remain suitable for its intended purpose. Shelf life applies to finished goods, as well as to raw materials. *See also Minimum shelf life*.
 
 #### Shipping method
 
->   A method of transportation for goods or services, such as Air or Truck.
->   Default shipping methods are provided with Microsoft Dynamics GP and can be
->   modified for a specific business.
+>   A method of transportation for goods or services, such as Air or Truck. Default shipping methods are provided with Microsoft Dynamics GP and can be modified for a specific business.
 
 #### Shop calendar
 
@@ -3942,41 +3775,27 @@ Glossary
 
 #### Shortage
 
->   Occurs when you have less quantity available in Inventory for an item than
->   you enter on a transaction. For example, if you have 5 recorded in inventory
->   and create an assembly transaction that requires 10, you will receive a
->   message saying that you have a shortage. Depending on how you’ve set up your
->   system, you may not be able to override the shortage. *See also Override*.
+>   Occurs when you have less quantity available in Inventory for an item than you enter on a transaction. For example, if you have 5 recorded in inventory and create an assembly transaction that requires 10, you will receive a message saying that you have a shortage. Depending on how you’ve set up your system, you may not be able to override the shortage. *See also Override*.
 
 #### Single-use batch
 
->   A batch that is created, posted once and then automatically deleted from the
->   system after all transactions in the batch are posted.
+>   A batch that is created, posted once and then automatically deleted from the system after all transactions in the batch are posted.
 
 #### Site
 
->   A store, warehouse, or other location from which items are sold or
->   manufactured.
+>   A store, warehouse, or other location from which items are sold or manufactured.
 
 #### Sorting
 
->   A method of arranging data based on the order of specified information. For
->   example, records sorted by class would list all records within a class
->   before moving to records in the next class.
+>   A method of arranging data based on the order of specified information. For example, records sorted by class would list all records within a class before moving to records in the next class.
 
 #### Sorting segment
 
->   Segments of posting accounts that can be used for sorting reports. Sixteen
->   sorting segments can be used; seven are predefined and the remaining nine
->   can be selected by the user.
+>   Segments of posting accounts that can be used for sorting reports. Sixteen sorting segments can be used; seven are predefined and the remaining nine can be selected by the user.
 
 #### Standard cost
 
->   The cost at which an item is removed from the inventory. Also the typical
->   cost for an item. Standard cost is used with periodic LIFO and periodic FIFO
->   valuation methods. You enter this amount manually on the item card, and can
->   update from current cost during your year-end procedures. *See also FIFO
->   periodic*.
+>   The cost at which an item is removed from the inventory. Also the typical cost for an item. Standard cost is used with periodic LIFO and periodic FIFO valuation methods. You enter this amount manually on the item card, and can update from current cost during your year-end procedures. *See also FIFO periodic*.
 
 **Standard costing**
 
@@ -3984,30 +3803,19 @@ Glossary
 
 #### Start date
 
->   The date that assembly began for a particular transaction; or, the date a
->   stock count is started.
+>   The date that assembly began for a particular transaction; or, the date a stock count is started.
 
 #### Stock count
 
->   A generic term that includes both cycle counts and physical inventory
->   counts. See specific entries for more information.
+>   A generic term that includes both cycle counts and physical inventory counts. See specific entries for more information.
 
 #### Stock count calendar
 
->   Calendar of days when counting tasks—for cycle counts or physical stock
->   counts—can be performed. If count intervals are assigned to items, suggested
->   Next Stock Count dates are calculated based on the up days in the stock
->   count calendar, the count interval and the date the item was counted last.
->   For cycle counting, suggested Next Count Dates are spread over the length of
->   the cycle. For example, suppose you have 300 items at a site that are to be
->   counted every 30 days. The suggested Next Stock Count Dates would be spread
->   over the 30-day cycle: 10 items would be due to be counted the first day, 10
->   other items the second day, and so on.
+>   Calendar of days when counting tasks—for cycle counts or physical stock counts—can be performed. If count intervals are assigned to items, suggested Next Stock Count dates are calculated based on the up days in the stock count calendar, the count interval and the date the item was counted last. For cycle counting, suggested Next Count Dates are spread over the length of the cycle. For example, suppose you have 300 items at a site that are to be counted every 30 days. The suggested Next Stock Count Dates would be spread over the 30-day cycle: 10 items would be due to be counted the first day, 10 other items the second day, and so on.
 
 #### Stock count variance
 
->   The difference between on-hand inventory quantities according to inventory
->   records, and actual results from a stock count.
+>   The difference between on-hand inventory quantities according to inventory records, and actual results from a stock count.
 
 #### Summary report
 
@@ -4015,8 +3823,7 @@ Glossary
 
 #### Tab-delimited fields
 
->   A tab-separated ASCII character file format used when exporting a report so
->   that it can be read by programs that use this format.
+>   A tab-separated ASCII character file format used when exporting a report so that it can be read by programs that use this format.
 
 **Target inventory level**
 
@@ -4024,30 +3831,23 @@ Glossary
 
 #### Tax detail
 
->   A definition of a tax that may applied to an item at the time of sale. Tax
->   details are grouped into schedules. *See also Tax schedule*.
+>   A definition of a tax that may applied to an item at the time of sale. Tax details are grouped into schedules. *See also Tax schedule*.
 
 #### Tax schedule
 
->   A collection of sales tax details that is applied to customers, items,
->   adjustments, and other taxable costs. *See also Tax detail*.
+>   A collection of sales tax details that is applied to customers, items, adjustments, and other taxable costs. *See also Tax detail*.
 
 #### Text-only format
 
->   A file format that saves reports as text without formatting. This format is
->   used when exporting reports to applications that are unable to read other
->   formats available in Microsoft Dynamics GP.
+>   A file format that saves reports as text without formatting. This format is used when exporting reports to applications that are unable to read other formats available in Microsoft Dynamics GP.
 
 #### Transaction
 
->   An event or condition that is recorded in asset, liability, expense, revenue
->   and/or equity accounts. Adjustments to inventory are defined as
->   transactions.
+>   An event or condition that is recorded in asset, liability, expense, revenue and/or equity accounts. Adjustments to inventory are defined as transactions.
 
 #### Transaction date
 
->   The date a transaction is posted if you selected to post by transaction date
->   in the Posting Setup window.
+>   The date a transaction is posted if you selected to post by transaction date in the Posting Setup window.
 
 #### Transaction history
 
@@ -4055,9 +3855,7 @@ Glossary
 
 #### Transaction-level posting
 
->   A posting method in which transactions can be entered and posted without
->   having to create a batch. Also know as real-time posting. *See also
->   Batch-level posting*.
+>   A posting method in which transactions can be entered and posted without having to create a batch. Also know as real-time posting. *See also Batch-level posting*.
 
 #### Transfer
 
@@ -4065,16 +3863,11 @@ Glossary
 
 #### Unit of measure
 
->   A part or set defined by the users in which an item can be bought or sold.
->   Items can be sold in multiple units of measure. For example, if you sell
->   wine, you could have a unit of measure of Each and Magnum. The customer
->   would then be able to purchase a single bottle (each) or four bottles
->   (magnum).
+>   A part or set defined by the users in which an item can be bought or sold. Items can be sold in multiple units of measure. For example, if you sell wine, you could have a unit of measure of Each and Magnum. The customer would then be able to purchase a single bottle (each) or four bottles (magnum).
 
 #### Unit of measure schedule
 
->   A series of equivalencies that define how you can convert measurements of an
->   item from one unit of measure to another.
+>   A series of equivalencies that define how you can convert measurements of an item from one unit of measure to another.
 
 #### Up day
 
@@ -4082,9 +3875,7 @@ Glossary
 
 #### Usage quantity
 
->   In ABC analysis, the number of units of an item to be consumed over a period
->   of time. Usage quantity can be based on history, projections or a
->   combination of both.
+>   In ABC analysis, the number of units of an item to be consumed over a period of time. Usage quantity can be based on history, projections or a combination of both.
 
 **Usage value**
 
@@ -4092,14 +3883,11 @@ Glossary
 
 #### Valuation method
 
->   The procedure used to determine how costs and profits are calculated for a
->   company or item.
+>   The procedure used to determine how costs and profits are calculated for a company or item.
 
 #### Variance
 
->   The difference between the number of items recorded in Inventory Control and
->   the number of items actually in physical inventory. Variance may occur as a
->   result of data entry errors, theft, spoilage, or other issues.
+>   The difference between the number of items recorded in Inventory Control and the number of items actually in physical inventory. Variance may occur as a result of data entry errors, theft, spoilage, or other issues.
 
 #### Vendor
 
@@ -4115,19 +3903,12 @@ Glossary
 
 #### Wizard
 
->   A series of windows that lead you through decisions you need to make to
->   complete a procedure. A wizard narrows your options as you go, so that you
->   aren’t overwhelmed with options. You’ll also have the option to move
->   backward in the decision-making process, so that if you make a mistake you
->   can undo it before any changes are saved.
+>   A series of windows that lead you through decisions you need to make to complete a procedure. A wizard narrows your options as you go, so that you aren’t overwhelmed with options. You’ll also have the option to move backward in the decision-making process, so that if you make a mistake you can undo it before any changes are saved.
 
 #### Year-end closing
 
->   A process used to move current year figures to last year, remove
->   discontinued items, update standard costs, remove sold receipts, and remove
->   lot attributes.
+>   A process used to move current year figures to last year, remove discontinued items, update standard costs, remove sold receipts, and remove lot attributes.
 
 #### ZIP code
 
->   In the United States, the postal code assigned to all addresses. In other
->   countries or regions, it may be referred to as post code or postal code.
+>   In the United States, the postal code assigned to all addresses. In other countries or regions, it may be referred to as post code or postal code.
