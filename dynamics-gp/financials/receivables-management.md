@@ -263,7 +263,7 @@ receivables options that affect how Receivables Management tracks discounts,
 prints reports and documents, assesses finance charges, and pays
 commissions.
 
-#### Track Discounts Available in GL**
+#### Track Discounts Available in GL
 
 Mark this option to track discounts, which are posted to the account you
 assign to Terms Discounts Available using the Customer Maintenance window.
@@ -272,8 +272,8 @@ Accounts Receivable account, not to a separate account. The difference
 between these tracking methods is illustrated in the following table, using
 an invoice for \$100 with a \$2 discount available:
 
-| #### Tracking discounts**              | **Not tracking discounts**      |
-|-------------------------------------|---------------------------------|
+| Tracking discounts              | Not tracking discounts      |
+|---------------------------------|-----------------------------|
 | \$98 Accounts Receivable debit      | \$100 Accounts Receivable debit |
 | \$2 Sales Discounts Available debit |                                 |
 | \$100 Sales credit                  | \$100 Sales credit              |
@@ -281,26 +281,26 @@ an invoice for \$100 with a \$2 discount available:
 The following table illustrates the difference between tracking methods when
 a payment is recorded for the \$100 invoice with a \$2 discount available:
 
-| #### Tracking discounts**               | **Not tracking discounts**       |
-|--------------------------------------|----------------------------------|
+| Tracking discounts               | Not tracking discounts       |
+|----------------------------------|------------------------------|
 | \$98 Cash debit                      | \$98 Cash debit                  |
 | \$2 Sales Discounts Taken debit      | \$2 Sales Discounts Taken debit  |
 | \$98 Accounts Receivable credit      | \$100 Accounts Receivable credit |
 | \$2 Sales Discounts Available credit |                                  |
 
-**Print Historical Aged Trial Balance**
+#### Print Historical Aged Trial Balance
 
 Mark this option to be able to print the Historical Aged Trial Balance. When
 this option is marked, transaction history is kept regardless of your entry
 for this history option for individual customers in the Customer Maintenance
 window.
 
-**Delete Unposted Printed Documents**
+#### Delete Unposted Printed Documents
 
 Mark this option to be able to delete an unposted printed document from the
 Receivables Transaction Entry window or the Receivables Batch Entry window.
 
-**Compound Finance Charge**
+#### Compound Finance Charge
 
 Mark this option to assess finance charges on finance charge documents. This
 option isn’t allowed in some jurisdictions, so we recommend that you contact
@@ -311,7 +311,7 @@ balances to be assessed a finance charge. If you don’t mark this option,
 unapplied finance charges will not be included in the balances to be
 assessed a finance charge.
 
-**Pay Commissions After Invoice**
+#### Pay Commissions After Invoice
 
 Mark this option to pay commissions to salespeople only after invoices are
 paid. If you don’t mark this option, you can pay commissions once the
@@ -329,12 +329,12 @@ Statement data will be saved each time you print statements, so each
 statement will be available for reprinting. See *Reprinting or removing
 statements* for more information.
 
-**Print Tax Details on Documents**
+#### Print Tax Details on Documents
 
 Mark this option to include summary tax information on all documents printed
 from the Sales Transaction Entry and Sales Transaction Entry Zoom windows.
 
-**Print Dual Currencies**
+#### Print Dual Currencies
 
 If you’re using Multicurrency Management, and you mark Print Tax Details on
 Documents in the Receivables Management Setup window, you can mark this
@@ -348,7 +348,7 @@ documents will display the following information:
 
 - The amount of tax at each taxation rate in both currencies
 
-**Auto-apply to Finance Charges First**
+#### Auto-apply to Finance Charges First
 
 Mark this option to automatically apply credit documents to finance charge
 documents first. When you auto-apply a credit document in the Apply Sales
@@ -356,7 +356,7 @@ Documents or Cash Receipts Entry windows, Receivables Management will apply
 credit documents first to any unapplied finance charge documents using the
 Apply by option you mark in the Receivables Management Setup window.
 
-**Example**
+#### Example
 
 You recorded the following transactions for a customer:
 
@@ -397,7 +397,7 @@ of the entire national account or specific customers, depending on whether
 you mark National Account or Specific Customer in the Apply Sales Documents
 window.
 
-**Age Unapplied Credit Amounts**
+#### Age Unapplied Credit Amounts#### 
 
 If you mark this option, the Receivables Management aging process will age
 unapplied credit amounts based on the document date in relation to the aging
@@ -409,47 +409,23 @@ Aging unapplied credit amounts does not affect how portions of credit
 documents are aged with the debit documents they’re fully or partially
 settled against.
 
-### Default entries
+#### Default entries
 
 You can enter a default entry for an NSF charge, checkbook ID, price level,
 and document format. These entries appear during transaction entry; you can
 change them, if necessary.
 
-**NSF Charge** Enter a default service charge amount for checks marked as
-having non-sufficient funds (NSF). You can change the NSF charge on a
-per-customer basis using the Receivables Posted Transaction Maintenance
-window.
+- **NSF Charge** Enter a default service charge amount for checks marked as having non-sufficient funds (NSF). You can change the NSF charge on a per-customer basis using the Receivables Posted Transaction Maintenance window.
 
-**Checkbook ID** Enter the ID for the checkbook to be displayed as the
-default entry throughout this module. If you’re using Bank Reconciliation
-and you select a checkbook that is marked as inactive using the Checkbook
-Maintenance window, the checkbook isn’t verified at this time.
+- **Checkbook ID** Enter the ID for the checkbook to be displayed as the default entry throughout this module. If you’re using Bank Reconciliation and you select a checkbook that is marked as inactive using the Checkbook Maintenance window, the checkbook isn’t verified at this time.
 
-**Price Level** Enter a price level to be used as the price level for all
-items on a sales document, if one hasn’t already been assigned to a customer
-or prospect. We recommend you enter the price level you use most often; you
-can override the price level during transaction entry. If you use a
-particular price level for most customers, enter that price level here.
-Then, for customers you sell items to at other price levels, enter each
-customer’s price level using the Customer Class Setup or Customer
-Maintenance windows.
+- **Price Level** Enter a price level to be used as the price level for all items on a sales document, if one hasn’t already been assigned to a customer or prospect. We recommend you enter the price level you use most often; you can override the price level during transaction entry. If you use a particular price level for most customers, enter that price level here. Then, for customers you sell items to at other price levels, enter each customer’s price level using the Customer Class Setup or Customer Maintenance windows.
 
-This information doesn’t apply if you’re using extended pricing. For more
-information about extending pricing, refer to the Inventory Control and
-Sales Order Processing documentation.
+  This information doesn’t apply if you’re using extended pricing. For more information about extending pricing, refer to the Inventory Control and Sales Order Processing documentation.
 
-**Document Format** Select Blank Paper, User-Defined 1, or User-Defined 2.
-The document format you select is the default format for documents you print
-using the Receivables Transaction Entry and Receivables Transaction Inquiry
-Zoom windows.
+- **Document Format** Select Blank Paper, User-Defined 1, or User-Defined 2. The document format you select is the default format for documents you print using the Receivables Transaction Entry and Receivables Transaction Inquiry Zoom windows.
 
-**Default Summary View** Select a summary view to appear as the default
-summary view in the Customer Summary and Customer Yearly Summary Inquiry
-windows. If you select Amounts Since Last Close, the selected customer’s
-current summary information will be displayed. If you select Fiscal Year,
-the selected customer’s summary information for the fiscal year will be
-displayed. If you select Calendar Year, the selected customer’s summary
-information for the calendar year will be displayed.
+- **Default Summary View** Select a summary view to appear as the default summary view in the Customer Summary and Customer Yearly Summary Inquiry windows. If you select Amounts Since Last Close, the selected customer’s current summary information will be displayed. If you select Fiscal Year, the selected customer’s summary information for the fiscal year will be displayed. If you select Calendar Year, the selected customer’s summary information for the calendar year will be displayed.
 
 ### E-mail statements
 
@@ -497,8 +473,8 @@ data, and additional receivables options.
     leave any of the password fields blank, no password will be required for
     those activities. See *Passwords* for more information.
 
-*To use the credit limit override approval workflow in Sales Order
-Processing, don’t enter a password for the Exceed Credit Limit field.*
+  > [!NOTE]
+  > To use the credit limit override approval workflow in Sales Order Processing, don’t enter a password for the Exceed Credit Limit field.
 
 1. Specify whether to apply credit memos, returns, and payments by due date or
     document number when you automatically apply. See *Apply preferences* for
@@ -589,7 +565,7 @@ that was Customer Master User-Defined 1. You also will see Customer Type as
 a sorting method on most customer reports. There are also two user defined
 fields specifically for customer address information.
 
-**Sales history includes**
+### Sales history includes
 
 Mark whether to post sales amounts, trade discount amounts, amounts charged
 for freight, miscellaneous charges, and tax amounts to sales history. For
@@ -1428,23 +1404,9 @@ You can use the Customer Maintenance Options window (Sales \>\> Cards \>\>
 Customer \>\> Select a customer ID \>\> Options) to specify credit and
 transaction options for customers, such as the following options:
 
-**Finance charges** Mark whether to assess finance charges for this
-customer. The finance charge amounts you enter here are assessed each time
-you use the Assess Finance Charges window, typically on a monthly basis. For
-this reason, you should enter the amount or percentage charged monthly. For
-example, if the customer is required to pay an annual percentage rate (APR)
-of 18%, enter 1.5% (18 / 12 = 1.5).
+- **Finance charges** Mark whether to assess finance charges for this customer. The finance charge amounts you enter here are assessed each time you use the Assess Finance Charges window, typically on a monthly basis. For this reason, you should enter the amount or percentage charged monthly. For example, if the customer is required to pay an annual percentage rate (APR) of 18%, enter 1.5% (18 / 12 = 1.5).
 
-**Credit limits** Customers can have no credit, unlimited credit, or a
-specified amount of credit. You can’t define separate credit limits for
-different aging periods using this window. However, you can use the Display
-Credit Limit Warning window to specify that an alert message be displayed
-when the customer’s balance exceeds a particular sum, either in total or
-during a specific aging period. For example, you might use the Display
-Credit Limit Warning window to specify that a message be displayed if the
-customer’s balance exceeds \$5000 for the periods of 6190 days and beyond,
-even if the customer’s credit limit is \$6000. To open the Display Credit
-Limit Warning window, choose the expansion button on this field.
+- **Credit limits** Customers can have no credit, unlimited credit, or a specified amount of credit. You can’t define separate credit limits for different aging periods using this window. However, you can use the Display Credit Limit Warning window to specify that an alert message be displayed when the customer’s balance exceeds a particular sum, either in total or during a specific aging period. For example, you might use the Display Credit Limit Warning window to specify that a message be displayed if the customer’s balance exceeds \$5000 for the periods of 6190 days and beyond, even if the customer’s credit limit is \$6000. To open the Display Credit Limit Warning window, choose the expansion button on this field.
 
 ### Setting up customer credit, payment, and history options
 
@@ -1462,34 +1424,21 @@ Maintenance Options window.
 
 1. Open the Customer Maintenance Options window.
 
-(Sales \>\> Cards \>\> Customer \>\> Select a customer ID \>\> Options)
+    (Sales \>\> Cards \>\> Customer \>\> Select a customer ID \>\> Options)
 
-![A screenshot of a cell phone Description automatically generated](media/7284ab89ed33f1e7b54bbdeedd175148.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/7284ab89ed33f1e7b54bbdeedd175148.jpg)
 
+2. Set up the credit options to apply to the customer, such as balance type, finance charge, minimum payment, credit limit, and writeoff.
 
-1. Set up the credit options to apply to the customer, such as balance type,
-    finance charge, minimum payment, credit limit, and writeoff.
+    If the customer uses multicurrency transactions, you must select Open Item as the balance type. Multicurrency transactions can’t be entered for balance forward customers, and balance forward customers can’t be part of a national account.
 
-If the customer uses multicurrency transactions, you must select Open Item
-as the balance type. Multicurrency transactions can’t be entered for balance
-forward customers, and balance forward customers can’t be part of a national
-account.
+    If the customer is part of a national account, you must select Open Item as the balance type.
 
-If the customer is part of a national account, you must select Open Item as
-the balance type.
+3. Mark Revalue Customer to include the customer’s posted transactions when  you’re revaluing the Sales series using the Multicurrency Revaluation window.
 
-1. Mark Revalue Customer to include the customer’s posted transactions when
-    you’re revaluing the Sales series using the Multicurrency Revaluation
-    window.
+    Mark whether to post the revaluation results to each transaction’s Accounts Receivable and Terms Discounts Available accounts, or to a Sales offset account.
 
-Mark whether to post the revaluation results to each transaction’s Accounts
-Receivable and Terms Discounts Available accounts, or to a Sales offset
-account.
-
-1. Select a default order fulfillment shortage option for this customer. You
-    can choose None, Back Order Remaining, or Cancel Remaining. If you select
-    None, you will have to allocate any shortages manually. See the Sales Order
-    Processing documentation for more information.
+1. Select a default order fulfillment shortage option for this customer. You  can choose None, Back Order Remaining, or Cancel Remaining. If you select None, you will have to allocate any shortages manually. See the Sales Order Processing documentation for more information.
 
 2. Enter payment information for this customer, including credit card and bank
     information.
@@ -1508,10 +1457,8 @@ currency only for those customers who typically use a foreign currency. See
 the Multicurrency Management documentation for more information about
 currencies and rate types.
 
-*If a rate type isn’t assigned to a customer on a multicurrency transaction,
-the default rate type you’ve entered for the Sales Series using the
-Multicurrency Setup window appears instead. Therefore, be sure you’ve
-entered a Sales series default rate type.*
+> [!NOTE]
+> If a rate type isn’t assigned to a customer on a multicurrency transaction, the default rate type you’ve entered for the Sales Series using the Multicurrency Setup window appears instead. Therefore, be sure you’ve entered a Sales series default rate type.
 
 1. Select a statement cycle for printing statements for this customer. If you
     don’t send statements to the customer, select No Statement.
@@ -1553,12 +1500,11 @@ information.
 
 1. Open the Customer E-mail Options window.
 
-(Sales \>\> Cards \>\> Customer \>\> Select a customer ID \>\> E-mail)
+    (Sales \>\> Cards \>\> Customer \>\> Select a customer ID \>\> E-mail)
 
-![A screenshot of a cell phone Description automatically generated](media/e37074ea483afcfb34c563ed5c450815.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/e37074ea483afcfb34c563ed5c450815.jpg)
 
-
-1. Select to send documents as attachments or embed documents in the message
+2. Select to send documents as attachments or embed documents in the message
     body. The options available depend on the selections in the Company E-mail
     Setup window.
 
@@ -1908,25 +1854,13 @@ This information is divided into the following sections:
 You should keep several points in mind before you begin entering your
 beginning balance transactions, such as the following options:
 
-**Posting date** When entering transactions for noncurrent balances, change
-the transaction date to a date that falls before the beginning of the
-current period. When you repeat the procedure for your current balances, use
-the actual transaction date.
+- **Posting date** When entering transactions for noncurrent balances, change the transaction date to a date that falls before the beginning of the current period. When you repeat the procedure for your current balances, use the actual transaction date.
 
-**Salesperson ID** If you entered beginning salesperson commission
-information when you set up your salesperson cards, do not enter a
-salesperson ID when entering a beginning balance transaction. Otherwise, the
-commission and sales amounts will be posted twice, causing them to be
-overstated on the salesperson card.
+- **Salesperson ID** If you entered beginning salesperson commission information when you set up your salesperson cards, do not enter a salesperson ID when entering a beginning balance transaction. Otherwise, the commission and sales amounts will be posted twice, causing them to be overstated on the salesperson card.
 
-### Trade discount** If you enter the balance in summary and the customer is
-eligible for a trade discount, a discount amount is displayed as a default
-entry. Change the amount to zero.
+- **Trade discount** If you enter the balance in summary and the customer is eligible for a trade discount, a discount amount is displayed as a default entry. Change the amount to zero.
 
-**Freight, miscellaneous, and tax** If you enter the balance in summary, no
-amounts should be entered for freight, miscellaneous charges, and taxes. If
-you enter the beginning balance in detail, include the trade discount,
-freight, miscellaneous charges, and taxes.
+- **Freight, miscellaneous, and tax** If you enter the balance in summary, no amounts should be entered for freight, miscellaneous charges, and taxes. If you enter the beginning balance in detail, include the trade discount, freight, miscellaneous charges, and taxes.
 
 To correctly post your beginning balance transactions, you must complete the
 following procedures in order:
@@ -2611,7 +2545,7 @@ Exception Report will be printed.
 
 ## See Also
 
-[Part 1: Setup and cards](receivables-management.md#part-1-setup-and-cards)
+[Part 1: Setup and cards](receivables-management.md#part-1-setup-and-cards)  
 [Part 2: Transaction entry](receivables-management-part2-transaction-entry.md)  
 [Part 3: Transaction activity](receivables-management-part3-transaction-activity.md)  
 [Part 4: Inquiries and reports](receivables-management-part4-inquiries-reports.md)  
