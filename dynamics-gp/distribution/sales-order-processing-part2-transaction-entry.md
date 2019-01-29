@@ -220,7 +220,6 @@ Use the Picking Instruction Preview window to assign the instruction ID to the r
 #### To assign instruction IDs to customer and item records
 
 1. Open the Instruction ID Processing window.
-
     (Sales \>\> Cards \>\> Process Instructions)
 
     ![screenshot](media/SOage0634.jpg)
@@ -341,7 +340,6 @@ Use the Sales Batch Entry window to create a batch. You must save quotes, orders
 #### To create a batch
 
 1. Open the Sales Batch Entry window.
-
     (Sales \>\> Transactions \>\> Sales Batches)
 
     ![screenshot](media/SOage068.jpg)
@@ -380,7 +378,6 @@ Use the Sales Batch Entry window to make changes to an unposted batch. Transacti
 #### To modify a batch
 
 1. Open the Sales Batch Entry window.
-
     (Sales \>\> Transactions \>\> Sales Batches)
 
 2. Enter or select a batch ID. If you enter the batch ID, you must also select the origin.
@@ -410,7 +407,6 @@ If a batch contains documents that can’t be deleted, these documents will rema
 #### To delete a batch
 
 1. Open the Sales Batch Entry window.
-
     (Sales \>\> Transactions \>\> Sales Batches)
 
 2. Enter or select the batch ID you want to delete. If you enter the batch ID, you must also select the origin.
@@ -732,7 +728,6 @@ If the new and existing documents have different currencies and neither is the f
 #### To copy sales document line items
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select a document to add line items to. To create a new document, select a type and type ID, then enter a new document number, customer ID, and currency ID.
@@ -758,7 +753,6 @@ Use the Preview Line Items window to mark and modify line items on sales documen
 #### To preview sales document line items
 
 1. Open the Copy a Sales Order window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a document \>\> Copy)
 
 2. Enter an order number.
@@ -916,7 +910,6 @@ Other details for the fulfillment orders, such as the amount received, terms dis
 #### To combine fulfillment orders on a single invoice
 
 1. Open the Sales Bulk Confirmation window.
-
     (Sales \>\> Transactions \>\> Bulk Confirmation)
 
 2. Select Confirm Ship as the action to complete.
@@ -1307,7 +1300,6 @@ You can change the subject, message ID, and message if the Allow Update of E-mai
 #### To update customer’s e-mail information for a sales transaction
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select the ID of the type of transaction to enter.
@@ -1341,7 +1333,6 @@ Use the Sales Item Detail Entry window to view or edit item information such as 
 #### To enter item detail information
 
 1. Open the Sales Item Detail Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Item Number expansion button)
 
     ![screenshot](media/SOage091.jpg)
@@ -1378,7 +1369,6 @@ Use the Sales Customer Detail Entry window to view and edit information about th
 #### To enter customer detail information
 
 1. Open the Sales Customer Detail Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Customer ID expansion button)
 
      ![screenshot](media/SOage093.jpg)
@@ -1414,7 +1404,6 @@ Use the Sales Markdown Entry window to enter a markdown for an individual line i
 #### To add a markdown for an item
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Select a document.
@@ -1465,7 +1454,6 @@ Be sure the EU Transaction option is marked in the Sales Customer Detail Entry w
 #### To enter Intrastat trade statistics
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter the EU transaction.
@@ -1553,7 +1541,6 @@ You can’t delete or void an order or back order until all deposits on the docu
 #### To enter deposits and payments on orders or back orders
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Select the document and enter the entire deposit or payment amount in the Amount Received field or choose the Amount Received expansion button to open the Sales Payment Entry window.
@@ -1590,7 +1577,6 @@ If a customer pays all or a portion of an invoice balance before the items are s
 #### To enter a payment for an invoice, fulfillment order, or return
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Select a document and enter the payment amount in the Amount Received field or choose the expansion button for the Amount Received field to open the Sales Payment Entry window.
@@ -1637,7 +1623,6 @@ You can remove a deposit or payment from a sales order, back order, or invoice b
 #### To remove a deposit or payment
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Select a document and choose the Amount Received expansion button to open the Sales Payment Entry window.
@@ -1695,7 +1680,6 @@ You can’t change the Tax amount in the Sales Transaction Entry window or the t
 #### To calculate and distribute summary taxes
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter document information, including the document number, the document date, and the site ID.
@@ -1725,7 +1709,6 @@ Use the Sales Line Item Tax Detail Entry window to add, change, delete, or view 
 #### To calculate and distribute detail taxes
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter document information, including the document number, the document date, the customer ID, and the site ID.
