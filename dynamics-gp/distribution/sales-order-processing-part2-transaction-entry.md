@@ -90,7 +90,7 @@ When you enter an item, the price from the item price list is determined by the 
 
 Depending on how Sales Order Processing is set up, you may be able to change the unit price on the document or enter a unit price that is below cost. For more information, see *Chapter 2, “Module setup.”*
 
-For information on selecting and activating a pricing method, see *Selecting a pricing method* on page 23 and *Enabling extended pricing* on page 24. You can also find more information in the Inventory Control documentation.
+For information on selecting and activating a pricing method, see *Selecting a pricing method* and *Enabling extended pricing*. You can also find more information in the Inventory Control documentation.
 
 ### Extended pricing calculations
 
@@ -102,7 +102,7 @@ If an adjusted value-off or percent-of-list price is found, the rest of the pric
 
 It is possible for the final price to be the result of two adjustments applied to the base price. For example, a customer sheet might give 2% off the customer price book price, which is itself 5% off the base price. If multiple promotions are applied, they are applied in the order they are discovered: first the promotions from the first step of the search, then from the second step, and so on.
 
-For information on selecting and activating a pricing method, see *Selecting a pricing method* on page 23 and *Enabling extended pricing* on page 24. For more information on setting up and using extended pricing, see the Inventory Control documentation.
+For information on selecting and activating a pricing method, see *Selecting a pricing method* and *Enabling extended pricing*. For more information on setting up and using extended pricing, see the Inventory Control documentation.
 
 ### Unit cost
 
@@ -191,7 +191,7 @@ If you add a serial- or lot-numbered item to a return document, the Sales Serial
 > [!NOTE]
 > Don’t override shortages on serial- and lot-numbered items. Your inventory will be overstated when the quantity is replenished.
 
-You can view or change the serial or lot numbers that are assigned to an item. For more information, see *Changing a serial or lot number* on page 191. You can also view or change the bins that are assigned to an item. For more information, see *Changing bins in Sales Order Processing* on page 192.
+You can view or change the serial or lot numbers that are assigned to an item. For more information, see *Changing a serial or lot number*. You can also view or change the bins that are assigned to an item. For more information, see *Changing bins in Sales Order Processing*.
 
 ### Kit items
 
@@ -215,15 +215,14 @@ The distribution accounts for kits come from several different sources and are s
 
 If you’re using advanced picking, use the Instruction ID Processing window to select the customer/address/item combination or the customer/item combination to assign an instruction ID to.
 
-Use the Picking Instruction Preview window to assign the instruction ID to the records that match the selected combinations. For more information about instruction IDs, refer to *Setting up picking instruction IDs* on page 47.
+Use the Picking Instruction Preview window to assign the instruction ID to the records that match the selected combinations. For more information about instruction IDs, refer to *Setting up picking instruction IDs*.
 
 #### To assign instruction IDs to customer and item records
 
 1. Open the Instruction ID Processing window.
-
     (Sales \>\> Cards \>\> Process Instructions)
 
-    ![screenshot](media/7d1080c975330ec3d94d191f255b1794.jpg)
+    ![screenshot](media/SOage0634.jpg)
 
 2. Enter or select an instruction ID.
 
@@ -237,7 +236,7 @@ Use the Picking Instruction Preview window to assign the instruction ID to the r
 
 6. Choose Preview to open the Picking Instruction Preview window and view the records that match your restrictions.
 
-    ![screenshot](media/1117868c10853ed05843caa10af980a3.jpg)
+    ![screenshot](media/SOage065.jpg)
 
     Unmark records that shouldn’t be assigned to the instruction ID or choose Unmark All.
 
@@ -341,10 +340,9 @@ Use the Sales Batch Entry window to create a batch. You must save quotes, orders
 #### To create a batch
 
 1. Open the Sales Batch Entry window.
-
     (Sales \>\> Transactions \>\> Sales Batches)
 
-    ![screenshot](media/b051a5a64886934fcbf6a3eef8260ea3.jpg)
+    ![screenshot](media/SOage068.jpg)
 
 2. Enter a batch ID, such as your name or the date, to identify the batch.
 
@@ -380,7 +378,6 @@ Use the Sales Batch Entry window to make changes to an unposted batch. Transacti
 #### To modify a batch
 
 1. Open the Sales Batch Entry window.
-
     (Sales \>\> Transactions \>\> Sales Batches)
 
 2. Enter or select a batch ID. If you enter the batch ID, you must also select the origin.
@@ -410,7 +407,6 @@ If a batch contains documents that can’t be deleted, these documents will rema
 #### To delete a batch
 
 1. Open the Sales Batch Entry window.
-
     (Sales \>\> Transactions \>\> Sales Batches)
 
 2. Enter or select the batch ID you want to delete. If you enter the batch ID, you must also select the origin.
@@ -439,11 +435,11 @@ Prospect customers are potential customers that you maintain records for, but do
 
 To transfer a quote for a prospect customer to an order or to an invoice, you must add the prospect to your customer base or assign the prospect to an existing customer. The Prospect To Customer window opens when transferring a quote to an invoice or order so you can transfer a prospect record to a customer record. You can use the prospect information to create a customer record in the Customer Maintenance window. If you add the prospect as a customer, the prospect record won’t be deleted automatically. You must delete it in the Sales Prospect Maintenance window.
 
-For information about creating prospect customer records, see *Entering a prospect record* on page 73.
+For information about creating prospect customer records, see *Entering a prospect record*.
 
 ### Entering a prospect record
 
-Use the Sales Prospect Maintenance window to enter prospect customer records. For more information about prospects, see *Prospect customers* on page 73.
+Use the Sales Prospect Maintenance window to enter prospect customer records. For more information about prospects, see *Prospect customers*.
 
 **To enter a prospect record:**
 
@@ -452,7 +448,7 @@ Use the Sales Prospect Maintenance window to enter prospect customer records. Fo
 2. In the New group, choose Prospect to open the Sales Prospect Maintenance
     window.
 
-    ![screenshot](media/febd7af1864272294b24809d934a2f51.jpg)
+    ![screenshot](media/SOage070.jpg)
 
 3. Enter a prospect ID, name, and contact for the prospect customer.
 
@@ -464,11 +460,11 @@ Use the Sales Prospect Maintenance window to enter prospect customer records. Fo
 
 7. Enter or select a shipping method. Because taxes are assessed at the point of exchange, the shipping method is used to calculate tax amounts.
 
-8. Enter or select a tax schedule that will be used on quotes you enter for this prospect. For more information about tax schedules, see *Setting up taxes and options* on page 15.
+8. Enter or select a tax schedule that will be used on quotes you enter for this prospect. For more information about tax schedules, see *Setting up taxes and options*.
 
 9. Enter a price level for the prospect. The price level will be used as the sales document price level when you enter a quote for this prospect.
 
-10. If you‘ve set up user-defined fields for prospects in the Sales User-Defined Fields Setup window, you can enter additional information in those fields. For more information, see *Setting up user-defined fields* on page 20*.*
+10. If you‘ve set up user-defined fields for prospects in the Sales User-Defined Fields Setup window, you can enter additional information in those fields. For more information, see *Setting up user-defined fields*.
 
 11. Save the prospect record.
 
@@ -488,7 +484,7 @@ You can use the Sales Transaction Entry window to enter and print quotes for you
 
 Sales quotes are saved but not posted, and distributions aren’t calculated on quotes. If a customer decides to make a purchase based on the quoted price, you can transfer the quote to an order or invoice. When you transfer a quote to an invoice or order, information about the document, customer, and items will be transferred to the new document. To transfer a quote for a prospect customer to an order or to an invoice, you must add the prospect to your customer base or assign the prospect to an existing customer.
 
-You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* on page 85 for more information.
+You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* for more information.
 
 #### To enter a quote
 
@@ -496,7 +492,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Quote to open the Sales Transaction Entry window.
 
-    ![screenshot](media/8f4da20a4722769c9bdd5cb795d2cc3b.jpg)
+    ![screenshot](media/SOage070.jpg)
 
 3. Select the ID of the type of quote you want to enter.
 
@@ -513,7 +509,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 8. Enter or select a customer or prospect ID and enter the purchase order number if the customer has provided you with one. The purchase order number will appear on the quote.
 
-9. Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
+9. Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* for more information.
 
     The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
@@ -541,14 +537,14 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 12. Enter the trade discount, freight, and miscellaneous amounts for this quote.
     Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
 
-13. Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
+13. Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments*.
 
-14. To add a comment on the quote, enter the comment ID or a one-time comment. For more information about adding comments, refer to *Adding a comment to sales documents* on page 190.
+14. To add a comment on the quote, enter the comment ID or a one-time comment. For more information about adding comments, refer to *Adding a comment to sales documents*.
 
 15. Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
 16. Choose Holds, User-Defined, or Commissions to view or enter additional information about the quote. If a hold has been assigned to the quote, a stop icon will appear on the Hold button.
-    For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
+    For more information about commissions, see *Modifying commission information* and *Splitting commissions*.
 
 17. To print the quote or send the quote in e-mail, choose File \>\> Print. You also can print the quote by choosing the printer button or send the quote in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending sales documents in e-mail, see *Chapter 24, “Printing and sending documents in email.”*
     > [!NOTE]
@@ -577,7 +573,7 @@ You can’t have repeating multicurrency documents. Only documents whose currenc
 6. Choose the document expansion button to open the Sales Document Detail Entry
     window.
 
-    ![screenshot](media/b8e3cc173f13103c20672efd13f206cb.jpg)
+    ![screenshot](media/SOage075.jpg)
 
 7. Mark **Repeating**. Enter how many times to repeat the quote and the frequency.
  Leave the Frequency field blank to use the quote an unlimited number of times.
@@ -620,7 +616,7 @@ An order will have one of the following document statuses.
 
 You can change the shipping address or the site ID for a single line item by choosing the Ship to Address ID lookup button or the Default Site lookup button in the Sales Transaction Entry window or the Sales Item Detail Entry window and selecting a new ship-to address ID or site ID. The changes will apply only to the selected line item. If you enter a new line item, the ship-to address ID or site ID will come from the previously entered item.
 
-You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales order to another. See *Copying sales document items* on page 85 for more information.
+You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales order to another. See *Copying sales document items* for more information.
 
 #### To enter a sales order
 
@@ -628,7 +624,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Order to open the Sales Transaction Entry window.
 
-    ![screenshot](media/6f4d15994f2f5bf9690f9b46952f100f.jpg)
+    ![screenshot](media/SOage077.jpg)
 
 3. Enter or select the ID of the type of order to enter.
 
@@ -636,7 +632,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 5. Enter or select a customer ID and enter the purchase order number if the customer has provided you with one. The purchase order number will appear on the order.
 
-6. Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
+6. Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* for more information.
 
     The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
@@ -668,11 +664,11 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 12. If you’re using extended pricing and a promotion exists for the item you entered, the Promotion Alert window will open, where you can select whether to apply the promotion to the line. If you accept a free item promotion, the free item will be added to the order automatically.
 
-13. Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
+13. Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments*.
 
-14. If the customer makes a deposit or payment on the order, enter the amount in the Amount Received field. For more information about deposits and payments, see *Entering deposits and payments on orders or back orders* on page 117.
+14. If the customer makes a deposit or payment on the order, enter the amount in the Amount Received field. For more information about deposits and payments, see *Entering deposits and payments on orders or back orders*.
 
-15. To add a comment on the order, enter the comment ID or a one-time comment. For more information about adding comments, refer to *Adding a comment to sales documents* on page 190.
+15. To add a comment on the order, enter the comment ID or a one-time comment. For more information about adding comments, refer to *Adding a comment to sales documents*.
 
 16. Enter the trade discount, freight, miscellaneous, and tax amounts for the order.
     Use the Trade Discount expansion button to open the Sales Trade Discount Entry window, where you can enter or edit a trade discount for the document. The discount can be a percentage or an amount. Use the freight and miscellaneous expansion buttons to open the Sales Tax Schedule Entry window, where you can select the tax details used to tax freight and miscellaneous amounts.
@@ -680,7 +676,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 17. Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
 18. Choose Holds, User-Defined or Commissions to enter additional information about the order. If a hold has been assigned to the order, a stop icon will appear on the Hold button.
-    For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
+    For more information about commissions, see *Modifying commission information* and *Splitting commissions*.
 
 19. To print the order or send the order in e-mail, choose File \>\> Print. You also can print the order by choosing the printer button or send the order in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending documents in e-mail, see *Chapter 24, “Printing and sending documents in e-mail.”*
     > [!NOTE]
@@ -732,7 +728,6 @@ If the new and existing documents have different currencies and neither is the f
 #### To copy sales document line items
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select a document to add line items to. To create a new document, select a type and type ID, then enter a new document number, customer ID, and currency ID.
@@ -747,7 +742,7 @@ If the new and existing documents have different currencies and neither is the f
 
 7. Mark the desired copy options.
 
-8. You can choose Preview to open the Preview Line Items window, where you can mark and modify line items before you copy them. See *Previewing sales document line items* on page 86 for more information.
+8. You can choose Preview to open the Preview Line Items window, where you can mark and modify line items before you copy them. See *Previewing sales document line items* for more information.
 
 9. Choose Copy.
 
@@ -758,7 +753,6 @@ Use the Preview Line Items window to mark and modify line items on sales documen
 #### To preview sales document line items
 
 1. Open the Copy a Sales Order window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a document \>\> Copy)
 
 2. Enter an order number.
@@ -787,7 +781,7 @@ Use the Preview Line Items window to mark and modify line items on sales documen
 
 If you’re using sales fulfillment workflow, you can create fulfillment orders. A fulfillment order is a type of sales document. You can enter a fulfillment order in the Sales Transaction Entry window. You also can create a fulfillment order from a quote, a back order, or an order and you can create an invoice from a fulfillment order. Fulfillment orders cannot be posted. If items on a fulfillment order can’t be filled from inventory, you can transfer the fulfillment order items to a back order.
 
-When the document status of a fulfillment order reaches Status 6, the fulfillment order becomes an invoice. To view the details about the document status for a fulfillment order, click the Document Status link in the Sales Transaction Entry window. For more information about document statuses, refer to *Setting up fulfillment workflow for sales* on page 46.
+When the document status of a fulfillment order reaches Status 6, the fulfillment order becomes an invoice. To view the details about the document status for a fulfillment order, click the Document Status link in the Sales Transaction Entry window. For more information about document statuses, refer to *Setting up fulfillment workflow for sales*.
 
 Because a sales invoice is a legally binding document, it should be posted. The cost of goods sold and the price for the customer will be calculated automatically. If items on an invoice can’t be filled from inventory, you can transfer the invoice items to a back order.
 
@@ -811,11 +805,11 @@ You can advance the document status of a fulfillment order by confirming that it
 
 ### Entering a fulfillment order or invoice
 
-Use this information to enter a fulfillment order or invoice. If you’re not using sales fulfillment workflow refer to *Entering an invoice* on page 93.
+Use this information to enter a fulfillment order or invoice. If you’re not using sales fulfillment workflow refer to *Entering an invoice*.
 
-If you’re using sales fulfillment workflow, you can use the Sales Transaction Entry window to enter, print and send fulfillment orders and invoices in e-mail to your customers. You can view and void existing fulfillment orders. You can view, void, post, and delete existing invoices. For more information, see *Understanding fulfillment orders* on page 87.
+If you’re using sales fulfillment workflow, you can use the Sales Transaction Entry window to enter, print and send fulfillment orders and invoices in e-mail to your customers. You can view and void existing fulfillment orders. You can view, void, post, and delete existing invoices. For more information, see *Understanding fulfillment orders*.
 
-You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* on page 85 for more information.
+You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* for more information.
 
 #### To enter a fulfillment order or invoice
 
@@ -823,7 +817,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Fulfillment Order or Invoice to open the Sales Transaction Entry window.
 
-    ![screenshot](media/e9545482a183bc887c4c22d127ba65c3.jpg)
+    ![screenshot](media/SOage079.jpg)
 
 3. Enter or select the ID of the type of fulfillment order or invoice to enter.
 
@@ -831,7 +825,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 5. Enter or select a customer ID and ship-to address.
 
-6. Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
+6. Choose the Customer E-mail Detail Entry expansion button to open the Sales Email Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* for more information.
 
     The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
@@ -869,11 +863,11 @@ Use the **Trade Discount** expansion button to open the Sales Trade Discount Ent
 
 1. If you’re using extended pricing and a promotion exists for the item you entered, the Promotion Alert window will open, where you can select to apply the promotion to the line. If you accept a free item promotion, the free item will be added to the fulfillment order or invoice automatically.
 
-2. Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
+2. Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments*.
 
-3. Enter the amount received and the terms discount taken on the fulfillment order or invoice. For more information about entering an amount received, see *Entering a payment for an invoice, fulfillment order, or return* on page 119.
+3. Enter the amount received and the terms discount taken on the fulfillment order or invoice. For more information about entering an amount received, see *Entering a payment for an invoice, fulfillment order, or return*.
 
-4. To add a comment on the fulfillment order or invoice, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents* on page 190.
+4. To add a comment on the fulfillment order or invoice, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents*.
 
 5. Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
@@ -884,7 +878,7 @@ Use the **Trade Discount** expansion button to open the Sales Trade Discount Ent
     > [!NOTE]
     > You can distribute amounts to unit accounts to record increases to non-financial accounts. The amounts you distribute to unit accounts won’t be totaled with other distributions. For more information about unit accounts, see the General Ledger documentation.
 
-8. Choose Commissions to verify or change the commission amounts. For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
+8. Choose Commissions to verify or change the commission amounts. For more information about commissions, see *Modifying commission information* and *Splitting commissions*.
 
 9. You can print the fulfillment order or invoice or send the fulfillment order or invoice by choosing File \>\> Print. You also can print the fulfillment order or invoice by choosing the printer button or send the fulfillment order or invoice in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending documents in e-mail, see *Chapter 24, “Printing and sending documents in email.”*
 
@@ -916,7 +910,6 @@ Other details for the fulfillment orders, such as the amount received, terms dis
 #### To combine fulfillment orders on a single invoice
 
 1. Open the Sales Bulk Confirmation window.
-
     (Sales \>\> Transactions \>\> Bulk Confirmation)
 
 2. Select Confirm Ship as the action to complete.
@@ -953,7 +946,7 @@ You can use the Sales Transaction Entry window to enter, print, and send invoice
 
 You also can create an invoice by transferring a quote, order, or back order to an invoice. When you transfer a document to an invoice, information about the document, customer, and items will be transferred to the invoice.
 
-If you’re using sales fulfillment workflow, an invoice is created from a fulfillment order when you advance the document status to status six. Refer to *Understanding fulfillment orders* on page 87 and *Entering a fulfillment order or invoice* on page 87.
+If you’re using sales fulfillment workflow, an invoice is created from a fulfillment order when you advance the document status to status six. Refer to *Understanding fulfillment orders* and *Entering a fulfillment order or invoice*.
 
 Transaction amounts on an invoice will be distributed automatically to posting accounts. The distribution accounts and amounts won’t be displayed for Inventory and Cost of Goods Sold. The actual cost will be determined when you post the invoice and the cost and distribution accounts will be displayed on the posting journal. To verify the accounts that will be used for each item, choose the Item Number expansion button to open the Sales Item Detail Entry window. Choose Distribution to view or change the accounts used for that item.
 
@@ -963,13 +956,13 @@ If you’re using Multicurrency Management, you can change the distribution amou
 
 ### Entering an invoice
 
-Use this information to enter an invoice. If you’re using sales fulfillment workflow, refer to *Entering a fulfillment order or invoice* on page 87.
+Use this information to enter an invoice. If you’re using sales fulfillment workflow, refer to *Entering a fulfillment order or invoice*.
 
-You can use the Sales Transaction Entry window to enter and print invoices for your customers and to view, void, post, delete, or transfer existing invoices. You also can send invoices in e-mail. For more information, see *Understanding invoices* on page 93.
+You can use the Sales Transaction Entry window to enter and print invoices for your customers and to view, void, post, delete, or transfer existing invoices. You also can send invoices in e-mail. For more information, see *Understanding invoices*.
 
 You can change the shipping address or the site ID for a single line item by choosing the Ship to Address ID lookup button or the Default Site lookup button in the Sales Transaction Entry window or the Sales Item Detail Entry window and selecting a new ship-to address ID or site ID. The changes will apply only to the selected line item. If you enter a new line item, the ship-to address ID or site ID will come from the previously entered item.
 
-You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* on page 85 for more information.
+You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* for more information.
 
 #### To enter an invoice
 
@@ -979,7 +972,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 2. In the New group or its overflow menu, choose Invoice to open the Sales
     Transaction Entry window.
 
-    ![screenshot](media/c0036cba6dc9f2acd2c37d6b764ffc07.jpg)
+    ![screenshot](media/SOage082.jpg)
 
 3. Enter or select the ID of the type of invoice to enter.
 
@@ -995,7 +988,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 8. Enter or select a customer ID and enter the purchase order number if the customer has provided you with one. The purchase order number will appear on the invoice.
 
-9. Choose the Customer E-mail expansion button to open the Sales E-mail Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* on page 109 for more information.
+9. Choose the Customer E-mail expansion button to open the Sales E-mail Detail Entry window to update a customer's e-mail information for a transaction. See *Updating a customer’s e-mail information for a sales transaction* for more information.
 
     The document type to send in e-mail must be available for the customer before you can open the Sales E-mail Detail Entry window.
 
@@ -1027,11 +1020,11 @@ Use the **Trade Discount** expansion button to open the Sales Trade Discount Ent
 
 1. If you’re using extended pricing and a promotion exists for the item you entered, the Promotion Alert window will open, where you can select whether to apply the promotion to the line. If you accept a free item promotion, the free item will be added to the invoice automatically.
 
-2. Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
+2. Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments*.
 
-3. Enter the amount received and the terms discount taken on the invoice. For more information about entering an amount received, see *Entering a payment for an invoice, fulfillment order, or return* on page 119.
+3. Enter the amount received and the terms discount taken on the invoice. For more information about entering an amount received, see *Entering a payment for an invoice, fulfillment order, or return*.
 
-4. To add a comment on the invoice, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents* on page 190.
+4. To add a comment on the invoice, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents*.
 
 5. Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
@@ -1042,7 +1035,7 @@ Use the **Trade Discount** expansion button to open the Sales Trade Discount Ent
     > [!NOTE]
     > You can distribute amounts to unit accounts to record increases to non-financial accounts. The amounts you distribute to unit accounts won’t be totaled with other distributions. For more information about unit accounts, see the General Ledger documentation.
 
-8. Choose Commissions to verify or change the commission amounts. For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
+8. Choose Commissions to verify or change the commission amounts. For more information about commissions, see *Modifying commission information* and *Splitting commissions*.
 
 9. You can print the invoice or send the invoice in e-mail by choosing File \>\> Print. You also can print the invoice by choosing the printer button or send the invoice in e-mail by choosing the Send in e-mail button in the upper right of the Sales Transaction Entry window. For more information about printing and sending documents in e-mail, see *Chapter 24, “Printing and sending documents in email.”*
 
@@ -1071,15 +1064,15 @@ You can use the Sales Transaction Entry window to enter and print back orders fo
 
 Back orders are saved but not posted and distributions aren’t calculated on back orders. When an item that has been back ordered is in stock, you can transfer the back order to an order or an invoice. When you transfer a back order to an invoice, fulfillment order, or order, information about the document, customer, and items will be transferred to the new document.
 
-You also can create a back order by transferring an order, fulfillment order, or invoice to a back order. When you transfer an order or invoice document to a back order, information about the document, customer, and items will be transferred to the back order. For more information about transferring documents, see *Transferring an individual sales document* on page 214.
+You also can create a back order by transferring an order, fulfillment order, or invoice to a back order. When you transfer an order or invoice document to a back order, information about the document, customer, and items will be transferred to the back order. For more information about transferring documents, see *Transferring an individual sales document*.
 
- You can link a back order to an existing purchase order or create a new purchase order for back-ordered items. For more information, see *Linking an item to an existing purchase order* on page 159 and *Purchase orders from sales documents* on page 147.
+ You can link a back order to an existing purchase order or create a new purchase order for back-ordered items. For more information, see *Linking an item to an existing purchase order* and *Purchase orders from sales documents*.
 
 ### Entering a back order
 
-You can use the Sales Transaction Entry window to enter and print back orders. For more information about back orders, see *Understanding back orders* on page 99.
+You can use the Sales Transaction Entry window to enter and print back orders. For more information about back orders, see *Understanding back orders*.
 
-You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* on page 85 for more information.
+You can use the Copy button in the Sales Transaction Entry window to copy line items from one sales document to another. See *Copying sales document items* for more information.
 
 #### To enter a back order
 
@@ -1087,7 +1080,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Back Order to open the Sales Transaction Entry window.
 
-    ![screenshot](media/6cb56557aa7535b46f30210334e27284.jpg)
+    ![screenshot](media/SOage084.jpg)
 
 3. Select Back Order and enter or select the ID of the type of back order to enter.
 
@@ -1122,17 +1115,17 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 12. If you’re using extended pricing and a promotion exists for the item you entered, the Promotion Alert window will open, where you can select whether to apply the promotion to the line. If you accept a free item promotion, the free item will be added to the back order automatically.
 
-13. Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments* on page 210.
+13. Taxes will be calculated automatically as you enter items and changes made to the tax details will be transferred to the new document if the document is transferred in full. For more information about transferring documents, see *Transferring totals, deposits, and payments*.
 
-14. If the customer makes a deposit or payment on the back order, enter the deposit or payment received. For more information about deposits and payments, see *Entering deposits and payments on orders or back orders* on page 117.
+14. If the customer makes a deposit or payment on the back order, enter the deposit or payment received. For more information about deposits and payments, see *Entering deposits and payments on orders or back orders*.
 
-15. To print a comment on the back order, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents* on page 190.
+15. To print a comment on the back order, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents*.
 
 16. Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
 17. Enter additional information about the back order by choosing Holds, UserDefined, or Commissions. If a hold has been assigned to the back order, a stop icon will appear on the Hold button.
 
-    For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
+    For more information about commissions, see *Modifying commission information* and *Splitting commissions*.
 
 18. To print the back order, choose File \>\> Print or the printer icon button. For more information about printing documents, see *Chapter 24, “Printing and sending documents in e-mail.”*
 
@@ -1185,7 +1178,7 @@ If you’re using Multicurrency Management, you can only change the distribution
 
 2. In the New group or its overflow menu, choose Return to open the Sales Transaction Entry window.
 
-    ![screenshot](media/8a4c9e77b013510b89510dea87f6a574.jpg)
+    ![screenshot](media/SOage087.jpg)
 
 3. Select Return and enter or select the ID of the type of return to enter.
 
@@ -1207,7 +1200,7 @@ If you’re using Multicurrency Management, you can only change the distribution
 
 10. Enter or select item numbers, units of measure, and item quantities for the return. To view additional lines of information for each item, choose the hide and show button next to the Extended Price prompt.
 
-    When you enter an item on a return, the Sales Returned Quantities Entry window will open and you must enter the quantity being returned to each return quantity type. For more information, see *Return quantity types* on page 103.
+    When you enter an item on a return, the Sales Returned Quantities Entry window will open and you must enter the quantity being returned to each return quantity type. For more information, see *Return quantity types*.
 
     If you’re using multiple bins, the total quantity selected at bins must equal the line’s extended quantity.
 
@@ -1234,7 +1227,7 @@ If you’re using Multicurrency Management, you can only change the distribution
 
     Use the Discount Returned expansion button to open the Sales Payment Terms Entry window, where you can view or change the terms discount dates and amounts for the document.
 
-15. To print a comment on the return, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents* on page 190.
+15. To print a comment on the return, enter the comment ID or a one-time comment. For more information about adding comments, see *Adding a comment to sales documents*.
 
 16. Choose the Attachment Management icon to attach documents to the quote, if applicable.
 
@@ -1247,7 +1240,7 @@ If you’re using Multicurrency Management, you can only change the distribution
     > [!Note]
     > You can distribute amounts to unit accounts to record increases to non-financial accounts. The amounts you distribute to unit accounts won’t be totaled with other distributions. For more information about unit accounts, see the General Ledger documentation.
 
-19. Choose Commissions to verify or change the commission amounts. For more information about commissions, see *Modifying commission information* on page 200 and *Splitting commissions* on page 201.
+19. Choose Commissions to verify or change the commission amounts. For more information about commissions, see *Modifying commission information* and *Splitting commissions*.
 
 20. To print the return, choose File \>\> Print or the printer icon button. For more information about printing documents, see *Chapter 24, “Printing and sending documents in e-mail.”*
 
@@ -1307,7 +1300,6 @@ You can change the subject, message ID, and message if the Allow Update of E-mai
 #### To update customer’s e-mail information for a sales transaction
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select the ID of the type of transaction to enter.
@@ -1318,7 +1310,7 @@ You can change the subject, message ID, and message if the Allow Update of E-mai
 
 5. Choose the E-mail expansion button to open the Sales E-mail Detail Entry window.
 
-    ![screenshot](media/c5c1197e93c65fa551c94714377ddd0d.jpg)
+    ![screenshot](media/SOage089.jpg)
 
 6. Enter a To, Cc, or Bcc address to send the transaction in e-mail. You must enter at least one e-mail address to send transactions in e-mail. The e-mail addresses displayed in the window are assigned to the address you entered on the transaction. You can update the To, Cc, and Bcc e-mail addresses, if applicable.
 
@@ -1341,10 +1333,9 @@ Use the Sales Item Detail Entry window to view or edit item information such as 
 #### To enter item detail information
 
 1. Open the Sales Item Detail Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Item Number expansion button)
 
-    ![screenshot](media/eb3a872da13da7c3181fe557a28bbaef.jpg)
+    ![screenshot](media/SOage091.jpg)
 
     > [TIP]
     > You also can press CTRL+E to open this window.
@@ -1359,7 +1350,7 @@ Use the Sales Item Detail Entry window to view or edit item information such as 
 
 6. Choose the Kits button to open the Sales Kit Options window, where you can view or enter information about components of kit items.
 
-    For more information about kit items, see *Kit items* on page 61 or the Inventory Control documentation.
+    For more information about kit items, see *Kit items* or the Inventory Control documentation.
 
 7. Choose the Serial/Lot button to open the Sales Serial Number Entry window or the Sales Lot Number Entry window, where you can assign numbers to serial- or lot-numbered items.
 
@@ -1378,10 +1369,9 @@ Use the Sales Customer Detail Entry window to view and edit information about th
 #### To enter customer detail information
 
 1. Open the Sales Customer Detail Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Customer ID expansion button)
 
-     ![screenshot](media/a1ae1bd37cf31d68c9a8c7dd40f1fb90.jpg)
+     ![screenshot](media/SOage093.jpg)
 
 2. Choose the expansion button next to Ship To Address ID to open the Sales Ship To Address Entry window, where you can make changes to the ship-to address for the document.
 
@@ -1389,11 +1379,11 @@ Use the Sales Customer Detail Entry window to view and edit information about th
 
 3. Choose the Holds button to open the Sales Process Holds Entry window, where you can assign holds to or remove holds from the document. A stop icon will appear on the Holds button if a hold has been assigned to the document.
 
-    For more information about holds, see *Setting up process holds* on page 22 and *Assigning process holds to a document* on page 195.
+    For more information about holds, see *Setting up process holds* and *Assigning process holds to a document*.
 
 4. Choose the User-Defined button to open the Sales User-Defined Fields Entry window, where you can enter user-defined information for this document.
 
-    For more information about user-defined fields, see *Setting up user-defined fields* on page 20.
+    For more information about user-defined fields, see *Setting up user-defined fields*.
 
 5. Choose the Customer button to open the Customer Inquiry window, where you can view payment, shipping, and billing information about a customer.
 
@@ -1414,14 +1404,13 @@ Use the Sales Markdown Entry window to enter a markdown for an individual line i
 #### To add a markdown for an item
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Select a document.
 
 3. Select an item and choose the Markdown expansion button to open the Sales Markdown Entry window.
 
-    ![screenshot](media/519e2b5224d85076af387f7785741262.jpg)
+    ![screenshot](media/SOage095.jpg)
 
 4. Select the markdown type—percentage or amount—and enter the percentage or amount. The unit price, markdown amount, adjusted unit price, and revised extended price are shown in the window.
 
@@ -1465,7 +1454,6 @@ Be sure the EU Transaction option is marked in the Sales Customer Detail Entry w
 #### To enter Intrastat trade statistics
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter the EU transaction.
@@ -1537,7 +1525,7 @@ If you aren’t using separate payment distributions, the distributions that are
 
 You can enter a deposit or payment amount received from a customer for an order or back order in the Amount Received field in the Sales Transaction Entry window. Choose the Amount Received expansion button to open the Sales Payment Entry window where you can enter information about the received amount, such as the payment method.
 
-For information about removing payments and deposits, see *Removing a deposit or payment* on page 121.
+For information about removing payments and deposits, see *Removing a deposit or payment*.
 
 Enter a credit card payment amount if you want to charge the customer’s credit card when the order ships. If you enter a payment and a partial order is shipped, the customer will be charged only for the shipped portion of the order.
 
@@ -1553,12 +1541,11 @@ You can’t delete or void an order or back order until all deposits on the docu
 #### To enter deposits and payments on orders or back orders
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Select the document and enter the entire deposit or payment amount in the Amount Received field or choose the Amount Received expansion button to open the Sales Payment Entry window.
 
-    ![screenshot](media/6d8119e0f695c3cf650433b22abd2961.jpg)
+    ![screenshot](media/SOage097.jpg)
 
 3. Enter or accept the amount in the Amount Received field.
 
@@ -1574,7 +1561,7 @@ You can’t delete or void an order or back order until all deposits on the docu
 
 8. Choose OK to save your entries and close the window.
 
-    For information on posting deposits, see *Posting deposits* on page 121; for information on posting payments, see *Posting payments* on page 121.
+    For information on posting deposits, see *Posting deposits*; for information on posting payments, see *Posting payments*.
 
     > [!NOTE]
     > National accounts provide the ability to restrict payments for child customers and apply credit checking, holds and finance charges at a consolidated national account level, depending on how the account was set up. If you can’t save or post a transaction, check the status of the options in the National Accounts Maintenance window.
@@ -1583,19 +1570,18 @@ You can’t delete or void an order or back order until all deposits on the docu
 
 Use the Sales Payment Entry window to return payments you’ve received for returned items.You can also use this window to enter payments on invoices and fulfillment orders.
 
-For information about removing payments and deposits, see *Removing a deposit or payment* on page 121.
+For information about removing payments and deposits, see *Removing a deposit or payment*.
 
 If a customer pays all or a portion of an invoice balance before the items are shipped, you can enter the amount in the Amount Received field in the Sales Transaction Entry window. Choose the Amount Received expansion button to open the Sales Payment Entry window where you can enter information about the payment, such as the payment method. The amount is posted as a cash receipt in Receivables Management when you post the invoice.
 
 #### To enter a payment for an invoice, fulfillment order, or return
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Select a document and enter the payment amount in the Amount Received field or choose the expansion button for the Amount Received field to open the Sales Payment Entry window.
 
-    ![screenshot](media/43f7a2ee0d9e890dd527b207277bfe06.jpg)
+    ![screenshot](media/SOage099.jpg)
 
 3. Enter or accept the amount in the Amount Received field.
 
@@ -1637,7 +1623,6 @@ You can remove a deposit or payment from a sales order, back order, or invoice b
 #### To remove a deposit or payment
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Select a document and choose the Amount Received expansion button to open the Sales Payment Entry window.
@@ -1662,7 +1647,7 @@ This information is divided into the following sections:
 
 ### Sales tax calculations
 
-When you set up Sales Order Processing, you can choose to use a single tax schedule for all items on all documents or you can mark the advanced option to determine the tax for inventory items, non-inventoried items, freight, and miscellaneous charges individually. For more information on Sales Order Processing tax setup, see *Setting up taxes and options* on page 15.
+When you set up Sales Order Processing, you can choose to use a single tax schedule for all items on all documents or you can mark the advanced option to determine the tax for inventory items, non-inventoried items, freight, and miscellaneous charges individually. For more information on Sales Order Processing tax setup, see *Setting up taxes and options*.
 
 Here are the components of the sales tax calculation if you selected to use an advanced tax schedule when you set up Sales Order Processing:
 
@@ -1695,7 +1680,6 @@ You can’t change the Tax amount in the Sales Transaction Entry window or the t
 #### To calculate and distribute summary taxes
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter document information, including the document number, the document date, and the site ID.
@@ -1710,7 +1694,7 @@ You can’t change the Tax amount in the Sales Transaction Entry window or the t
 
 6. Choose the Tax expansion button in the Sales Transaction Entry window to open the Sales Tax Summary Entry window, where you can view or edit the tax distribution accounts and amounts.
 
-    ![screenshot](media/8747f96bb4ae3753ecb975764cc21971.jpg)
+    ![screenshot](media/SOage101.jpg)
 
 7. When you’re finished, choose OK to save changes and return to the Sales Transaction Entry window.
 
@@ -1725,7 +1709,6 @@ Use the Sales Line Item Tax Detail Entry window to add, change, delete, or view 
 #### To calculate and distribute detail taxes
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter document information, including the document number, the document date, the customer ID, and the site ID.
@@ -1734,7 +1717,7 @@ Use the Sales Line Item Tax Detail Entry window to add, change, delete, or view 
 
 4. Choose the Calculated Tax expansion button in the Sales Item Detail Entry window to open the Sales Line Item Tax Detail Entry window, where you can view or edit tax distribution accounts and amounts.
 
-    ![screenshot](media/e95d367811c46c623403997ecbb21c7f.jpg)
+    ![screenshot](media/SOage103.jpg)
 
 5. When you’re finished, choose OK to save changes and return to the Sales Item
     Detail Entry window.

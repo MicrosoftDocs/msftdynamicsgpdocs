@@ -125,7 +125,6 @@ The following tax changes are included in this update:
 
 ### Withholding changes for Colorado
 The Personal Exemption is $4,200
-
 *Withholding rates for taxpayers filing as MAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |

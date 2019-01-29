@@ -80,15 +80,13 @@ You can view information as it was originally entered by clicking on link fields
 #### To view salesperson information
 
 1. Open the Salesperson Inquiry window.
-
     (Sales \>\> Inquiry \>\> Salesperson)
 
-    ![](media/d9ffc28fc7095a21f51d0f38c91d5499.jpg)
+    ![](media/SOage189.jpg)
 
 2. Select the Sales Order Processing module.
 
-3. Select a sorting option for range of salesperson records. You can sort by
-    salesperson ID, sales territory ID, document number, or audit trail code.
+3. Select a sorting option for range of salesperson records. You can sort by salesperson ID, sales territory ID, document number, or audit trail code.
 
 4. Choose Redisplay. To view more information about the salesperson, territory, or document in the list, highlight a record and click a link to open a window displaying the original record.
 
@@ -137,10 +135,9 @@ You can set up an inquiry with multiple restrictions, save it, and use this inqu
 #### To create inquiries for sales documents
 
 1. Open the Sales Inquiry Restrictions window.
-
     (Sales \>\> Inquiry \>\> Restrict Sales Documents)
 
-    ![](media/e3ff5d842d4a8cd07df9546c263652af.jpg)
+    ![](media/SOage191.jpg)
 
 2. Enter or select an Inquiry ID.
 
@@ -166,7 +163,6 @@ You can set up inquiry IDs in the Sales Inquiry Restriction window. For more inf
 #### To view sales information from a custom inquiry
 
 1. Open the Sales Document Range Inquiry window.
-
     (Sales \>\> Inquiry \>\> Sales Range Inquiry)
 
 2. Choose an Inquiry ID. The documents included in the inquiry range will appear in the scrolling window.
@@ -190,10 +186,9 @@ Use the Sales Order Processing Item Inquiry window to view all documents entered
 #### To view items sold
 
 1. Open the Sales Order Processing Item Inquiry window.
-
     (Sales \>\> Inquiry \>\> Sales Items)
 
-    ![](media/2c1734a4f875158f98fa8339d0b9dd1b.jpg)
+    ![](media/SOage193.jpg)
 
 2. Choose a range of item numbers, document numbers, or document types to view.
 
@@ -221,10 +216,9 @@ You can use the Sales Serial-Lot Number Inquiry window to view sold items that a
 #### To view serial or lot numbers of items sold
 
 1. Open the Sales Serial-Lot Number Inquiry window.
-
     (Sales \>\> Inquiry \>\> Sales Serial/Lots)
 
-    ![](media/d62ae069df897a2c4c5c332fd2284ce4.jpg)
+    ![](media/SOage195.jpg)
 
 2. Enter or select an item number.
 
@@ -247,10 +241,9 @@ Use the Sales Process Holds Inquiry window to view documents that have a process
 #### To view sales process holds
 
 1. Open the Sales Process Holds Inquiry window.
-
     (Sales \>\> Inquiry \>\> Sales Process Holds)
 
-    ![](media/c8917e3cc5a747f0a5545911a82ea75c.jpg)
+    ![](media/SOage197.jpg)
 
 2. Choose a process hold to view.
 
@@ -274,10 +267,9 @@ If you’re using advanced picking, use the Sales Bulk Pick Detail window to vie
 #### To view bulk picking ticket details
 
 1. Open the Sales Bulk Pick Detail window.
-
     (Sales \>\> Transactions \>\> Bulk Print \>\> select an available pick \>\> click the Available Pick link)
 
-    ![](media/1fbbeac0bf57b8725c6011f3ba257f97.jpg)
+    ![](media/SOage199.jpg)
 
 2. Choose OK to close the window.
 
@@ -288,10 +280,9 @@ If you’re using sales fulfillment workflow, use the Sales Document Status Inqu
 #### To view document status details for a document
 
 1. Open the Sales Document Status Inquiry window.
-
     (Sales \>\> Inquiry \>\> Sales Range Inquiry \>\> click the Document Status Link)
 
-    ![](media/2edb0950c1386d4463f22f157ede9486.jpg)
+    ![](media/SOage201.jpg)
 
 2. When you’ve finished, close the window.
 

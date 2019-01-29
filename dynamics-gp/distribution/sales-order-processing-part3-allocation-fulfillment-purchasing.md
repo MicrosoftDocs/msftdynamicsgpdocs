@@ -167,7 +167,7 @@ When you enter a document in the Sales Transaction Entry window, you select a de
 
 1. In the Sales Quantity Shortage Options window, select Distribute to open the Sales Item Quantity Distribution Entry window.
 
-    ![screenshot](media/d1cf2467f42d86d66ba6e6194337965b.jpg)
+    ![screenshot](media/SOage130b.jpg)
 
 2. Change the Site ID.
 
@@ -191,7 +191,7 @@ When you enter a document in the Sales Transaction Entry window, you select a de
 
 2. Choose Substitute to open the Sales Substitute Item window. Select a substitute item from the drop-down list and choose OK.
 
-    ![screenshot](media/e852535e5ec703414c20a0598847327c.jpg)
+    ![screenshot](media/SOage108.jpg)
 
 3. In the Quantities Available section of the Sales Item Quantity Distribution Entry window, check the site to see the quantity available for the substitute item. Enter an amount for the quantity selected. You can also enter a quantity canceled and quantity back ordered.
 
@@ -254,12 +254,10 @@ If an order, invoice, or fulfillment order exceeds the customer’s credit limit
 #### To allocate items by document or batch
 
 1. Open the Sales Allocation-Fulfillment Options window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a transaction \>\> Options \>\> Allocate or Fulfill)
-
     (Sales \>\> Transactions \>\> Sales Batches \>\> select a batch \>\> Options \>\> Allocate or Fulfill)
 
-    ![screenshot](media/e4ff570fbfe00eee602a679bc2a4fcce.jpg)
+    ![screenshot](media/SOage110.jpg)
 
 2. Mark Allocate. If you aren’t using a separate fulfillment process, the item will be fulfilled when it is allocated.
 
@@ -282,10 +280,9 @@ You also can select to allocate items by customer priority or requested ship dat
 #### To allocate back-ordered items for orders and fulfillment orders
 
 1. Open the Sales Automatic Order Allocation window.
-
     (Sales \>\> Transactions \>\> Automatic Order Allocation)
 
-    ![screenshot](media/28386856184c37fd12ec678ec115a173.jpg)
+    ![screenshot](media/SOage112.jpg)
 
 2. Select to allocate documents or preview back orders. To allocate documents, mark to allocate orders, fulfillment orders, or both.
 
@@ -299,7 +296,7 @@ You also can select to allocate items by customer priority or requested ship dat
 
 5. Choose Preview to open the Sales Automatic Order Allocation Preview window and view the documents that match the selected range.
 
-    ![screenshot](media/52286b8ebe7157d7c3d26d39b1916dc0.jpg)
+    ![screenshot](media/SOage114.jpg)
 
     The documents with items to be allocated will be displayed, depending on whether you selected Customer Priority or Requested Ship Date in the Sales Automatic Order Allocation window.
 
@@ -315,7 +312,7 @@ You also can select to allocate items by customer priority or requested ship dat
 
 Items on orders and invoices must be successfully allocated before they can be fulfilled. The quantity alert icon indicates that the quantity entered for an item is greater than the quantity that was successfully allocated. For example, if a customer ordered 20 answering machines, but only 12 were successfully allocated, the quantity alert icon will appear next to the quantity ordered.
 
-![screenshot](media/bf5ad5004255f3d9d53f1e62a814b499.jpg)
+![screenshot](media/SOage116.jpg)
 
 If a quantity alert appears, choose the quantity alert icon button to allocate the item again. If the allocation is unsuccessful, the Sales Quantity Shortage Options window will open and you can determine how to handle the shortage. For more information about quantity shortages, see [Quantity shortage options](#quantity-shortage-options).
 
@@ -370,9 +367,7 @@ If you fulfill by document or batch and a line item’s quantity to be fulfilled
 #### To fulfill quantities for all items on a document
 
 1. Open the Sales Allocation-Fulfillment Options window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> select a transaction \>\> Options \>\> Allocate or Fulfill)
-
     (Sales \>\> Transactions \>\> Sales Batches \>\> select a batch \>\> Options \>\> Allocate or Fulfill)
 
 2. Mark **Fulfill** and choose OK to fulfill the item and close the window. The Allocation/Fulfillment Exception Report will be printed.
@@ -394,10 +389,9 @@ If you are using customer credit limit override workflow, orders, fulfillment or
 #### To fulfill quantities for items on previously entered documents
 
 1. Open the Sales Order Fulfillment window.
-
     (Sales \>\> Transactions \>\> Order Fulfillment)
 
-    ![screenshot](media/94bfa32153fbd8044f14d5f04f56a1df.jpg)
+    ![screenshot](media/SOage118.jpg)
 
 2. Select Order, Invoice, or Fulfillment Order as the Type.
 
@@ -516,13 +510,13 @@ The Purchase Orders Preview window contains several buttons and icons to help yo
 
 | **Button or icon**                         | **Description**  |
 |--------------------------------------------|------------------|
-| [./media/image47.jpg](./media/image47.jpg) | Error—Appears beside objects in the tree view. You must correct the error before you can create the purchase order. For more information on errors, see [Pending purchase order errors and warnings](#pending-purchase-order-errors-and-warnings). |
-| [./media/image48.jpg](./media/image48.jpg) | Warning—Appears beside objects in the tree view. You can create a purchase order even if it contains a warning. For more information on warnings, see [Pending purchase order errors and warnings](#pending-purchase-order-errors-and-warnings).   |
-| [./media/image49.png](./media/image49.png) | Expand all objects—Choose to expand the tree view to display all objects.   |
-| [./media/image50.png](./media/image50.png) | Collapse all objects—Choose to collapse the tree view to display only the purchase order objects.   |
-| [./media/image51.png](./media/image51.png) | Add vendor—Choose to add a new vendor in the tree view. A new purchase order will be created under the new vendor and you can assign line items to the new purchase order.   |
-| [./media/image52.jpg](./media/image52.jpg) | Organize—Choose to move objects in the tree view. For example, you can move an item from one vendor to another.|
-| [./media/image53.png](./media/image53.png) | Ascending/Descending sort button—Use to sort documents in ascending or descending order in the window view. |
+| [./media/image47.jpg](./media/SOage120.jpg) | Error—Appears beside objects in the tree view. You must correct the error before you can create the purchase order. For more information on errors, see [Pending purchase order errors and warnings](#pending-purchase-order-errors-and-warnings). |
+| [./media/image48.jpg](./media/SOage121.jpg) | Warning—Appears beside objects in the tree view. You can create a purchase order even if it contains a warning. For more information on warnings, see [Pending purchase order errors and warnings](#pending-purchase-order-errors-and-warnings).   |
+| [./media/image49.png](./media/SOage122.png) | Expand all objects—Choose to expand the tree view to display all objects.   |
+| [./media/image50.png](./media/SOage124.png) | Collapse all objects—Choose to collapse the tree view to display only the purchase order objects.   |
+| [./media/image51.png](./media/SOage126.png) | Add vendor—Choose to add a new vendor in the tree view. A new purchase order will be created under the new vendor and you can assign line items to the new purchase order.   |
+| [./media/image52.jpg](./media/SOage128.jpg) | Organize—Choose to move objects in the tree view. For example, you can move an item from one vendor to another.|
+| [./media/image53.png](./media/SOage129.png) | Ascending/Descending sort button—Use to sort documents in ascending or descending order in the window view. |
 
 ### Pending purchase order errors and warnings
 
@@ -556,7 +550,7 @@ The Purchase Orders Preview window uses tabs to organize the information relatin
 
     Use the Vendor tab to view information about the vendor that is highlighted in the tree view. You can’t change the information in this view.
 
-    ![screenshot](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
+    ![screenshot](media/SOage131.jpg)
 
     If a primary vendor isn’t assigned to an item, (NO VENDOR) will appear in the vendor ID and an error will appear next to the vendor in the tree. You must assign a vendor using either the PO tab or Item tab before a purchase order can be generated. For information about assigning a vendor, see [Modifying a purchase order using the tabs](#modifying-a-purchase-order-using-the-tabs).
 
@@ -566,7 +560,7 @@ The Purchase Orders Preview window uses tabs to organize the information relatin
 
     Use the purchase order tab to view information about the pending purchase order that is highlighted in the tree view, including the vendor ID, purchase order date, currency, and shipping method.
 
-    ![screenshot](media/da6cb99067d7671bdd239fc031d398a5.jpg)
+    ![screenshot](media/SOage133.jpg)
 
     If a primary vendor wasn’t assigned to an item, the vendor ID will be blank. You must assign a vendor before a purchase order can be generated.
 
@@ -576,7 +570,7 @@ The Purchase Orders Preview window uses tabs to organize the information relatin
 
     Use the item tab to view information about the item that is highlighted in the tree view. You can change the quantity to purchase, vendor ID, vendor item, unit cost, extended cost, and required date on the pending purchase order. You also can link the item to an existing purchase order by using the purchase order lookup button. For more information, see [Modifying a purchase order using the tabs](#modifying-a-purchase-order-using-the-tabs).
 
-    ![screenshot](media/cc3125a8300af0e91e89fc805e2b78f3.jpg)
+    ![screenshot](media/SOage135.jpg)
 
     If a primary vendor wasn’t assigned to an item, the vendor ID will be blank. You must assign a vendor before a purchase order can be generated.
 
@@ -598,7 +592,6 @@ You can add a vendor to the tree using the tree view, regardless of which tab yo
 #### To change a vendor
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select a sales document with a back-ordered quantity and choose the Purchase button to open the Purchase Orders Preview window.
@@ -607,7 +600,7 @@ You can add a vendor to the tree using the tree view, regardless of which tab yo
 
 4. A new vendor object will be inserted into the tree view and the vendor ID will be (NO VENDOR). A new purchase order object with no line items will be inserted in the tree view for the new vendor.
 
-    ![screenshot](media/ba47c7bec10f4ba187738215555fd5c5.jpg)
+    ![screenshot](media/SOage138.jpg)
 
 5. In the purchase order tab, enter or select a vendor ID for the new vendor object in the tree view.
 
@@ -632,7 +625,6 @@ Use the Organize button to move objects in the tree view. It doesn’t matter wh
 #### To modify a purchase order in the tree view
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select the sales document and choose the Purchase button to open the Purchase Orders Preview window.
@@ -665,7 +657,6 @@ You can change the information on the PO tab and the Item tab, but not the Vendo
 #### To modify a purchase order using the tabs
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select a sales document with a back-ordered quantity and choose Purchase to open the Purchase Orders Preview window. Only sales documents that contain items with a Needs Purchase commitment status appear in the Purchase Orders Preview window.
@@ -684,14 +675,13 @@ After you have viewed and modified a pending purchase order, you must generate t
 #### To generate a purchase order from a single sales document
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select a sales document with a back-ordered quantity.
 
 3. Choose Purchase to open the Purchase Orders Preview window. Only sales documents that contain items with a Needs Purchase commitment status appear in the Purchase Orders Preview window.
 
-    ![screenshot](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
+    ![screenshot](media/SOage140.jpg)
 
 4. Review the information and make any changes to the pending purchase order information.
 
@@ -713,10 +703,9 @@ After you have viewed and modified pending purchase orders, you must generate th
 #### To generate purchase orders from multiple sales documents
 
 1. Open the Sales Document Range Inquiry window.
-
     (Sales \>\> Inquiry \>\> Sales Range Inquiry)
 
-    ![screenshot](media/fceafe28bd570cf2a06103f439441535.jpg)
+    ![screenshot](media/SOage1425.jpg)
 
 2. Choose an existing Inquiry ID or create a new Inquiry ID to select a range of sales documents. For more information about creating an inquiry ID, see [Creating inquiries for sales documents](#creating-inquiries-for-sales-documents).
 
@@ -775,7 +764,6 @@ You can link drop-ship line items to existing drop-ship purchase orders. You can
 #### To link a line item from the Purchase Orders Preview window
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select the sales document and highlight a line item to link.
@@ -787,7 +775,7 @@ You can link drop-ship line items to existing drop-ship purchase orders. You can
 5. Use the PO Number lookup button to open the PO Assignment for Sales Document
     window.
 
-    ![screenshot](media/e5bab6f1d4e67cb4b65b5d0d239d0747.jpg)
+    ![screenshot](media/SOage144.jpg)
 
 6. Highlight an existing purchase order to link to the sales line item.
 
@@ -804,14 +792,13 @@ You can link drop-ship line items to existing drop-ship purchase orders. You can
 #### To link a line item from the sales document
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select a sales document with a back-ordered quantity and highlight the line item to link.
 
 3. Choose the link purchase order button next to the Quantity Ordered prompt to open the PO Commitment for Sales Document window.
 
-    ![screenshot](media/282f789533238f43b7e0e78602835cfd.jpg)
+    ![screenshot](media/SOage146.jpg)
 
 4. Enter or select the existing purchase order to link to the sales line item.
 
@@ -830,11 +817,11 @@ You can link drop-ship line items to existing drop-ship purchase orders. You can
 
 3. Choose the link purchase order button next to the Quantity Ordered prompt to open the Sales Commitments for Purchase Order window.
 
-    ![screenshot](media/28a00837c3dad62297cb055922ef4d20.jpg)
+    ![screenshot](media/SOage148.jpg)
 
 4. Choose Add Sales Doc to open the Sales Assignments for Purchase Order window.
 
-    ![screenshot](media/f9fc544bfaed64e2bb891187efe3af94.jpg)
+    ![screenshot](media/SOage150.jpg)
 
 5. Highlight the existing sales document to link to the purchase order line item and choose Select.
 
@@ -876,7 +863,7 @@ Once you link a sales line item to a purchase order, the link purchase order ico
 
 3. Choose the link purchase order button next to the Quantity Ordered field to open the PO Commitment for Sales Document window.
 
-    ![screenshot](media/4fddbcd02a9b3ab89dbc209ea4e1d7fe.jpg)
+    ![screenshot](media/SOage150a.jpg)
 
 4. Verify the purchase order number and choose Delete. Once the link is removed, the link icon will be removed from the line item in the Sales Transaction Entry window and the Purchase Order Entry window.
 
@@ -919,14 +906,13 @@ For any item on a sales order or back order, you can check the commitment status
 #### To check the commitment status
 
 1. Open the Sales Transaction Entry window.
-
     (Sales \>\> Transactions \>\> Sales Transaction Entry)
 
 2. Enter or select the sales document in the Sales Transaction Entry window and highlight the line item you want to link.
 
 3. Choose the link purchase order button next to the Qty Ordered field to open the PO Commitment for Sales Document window, where the commitment status appears.
 
-    ![screenshot](media/4fddbcd02a9b3ab89dbc209ea4e1d7fe.jpg)
+    ![screenshot](media/SOage153.jpg)
 
 4. Close the window.
 
