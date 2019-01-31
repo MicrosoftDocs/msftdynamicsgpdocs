@@ -4027,36 +4027,17 @@ Setting up an item for purchase order generator
 How quantities are calculated for suggested purchase orders
 -----------------------------------------------------------
 
->   If you’re using the purchase order generator, it’s helpful to understand how
->   quantities are calculated because they are used to determine the quantities
->   for suggested purchase orders. The suggested quantity for an item on a
->   purchase order is based on the quantity available for the item at a site and
->   on which demands are to be included in the calculation indicated by how you
->   set up items using the Purchase Order Generator Item Maintenance window. In
->   addition, if you are using Use PO Gen as the order policy of an item, the
->   suggested quantity can be calculated as a multiple of the number entered as
->   the order multiple in the Item Vendors Maintenance window. For example,
->   assume that you need 50 widgets and the order multiple for widgets is 8. The
->   suggested order quantity for the purchase order would be 56.
+>   If you’re using the purchase order generator, it’s helpful to understand how quantities are calculated because they are used to determine the quantities for suggested purchase orders. The suggested quantity for an item on a purchase order is based on the quantity available for the item at a site and on which demands are to be included in the calculation indicated by how you set up items using the Purchase Order Generator Item Maintenance window. In addition, if you are using Use PO Gen as the order policy of an item, the suggested quantity can be calculated as a multiple of the number entered as the order multiple in the Item Vendors Maintenance window. For example, assume that you need 50 widgets and the order multiple for widgets is 8. The suggested order quantity for the purchase order would be 56.
 
 >   **Available quantity**
 
->   The available quantity is the amount of the item that is on hand now—or that
->   is already on order—for the item-site combination. The quantity is
->   calculated this way:
+>   The available quantity is the amount of the item that is on hand now—or that is already on order—for the item-site combination. The quantity is calculated this way:
 
->   (Quantity On Hand + Quantity On Order + Quantity On Order from purchase
->   order lines with New status) - (Quantity Allocated + Quantity Requisitioned
->   + Quantity Back Ordered + Quantity required by subordinate sites)
+>   (Quantity On Hand + Quantity On Order + Quantity On Order from purchase order lines with New status) - (Quantity Allocated + Quantity Requisitioned + Quantity Back Ordered + Quantity required by subordinate sites)
 
->   The quantity allocated, quantity requisitioned, and quantity back ordered
->   will be included in the available quantity calculation only if you mark
->   those options in the Purchase Order Generator Item Maintenance window. If
->   you are using eRequisition, the quantity requisitioned doesn’t include
->   requisitions from eRequisition.
+>   The quantity allocated, quantity requisitioned, and quantity back ordered will be included in the available quantity calculation only if you mark those options in the Purchase Order Generator Item Maintenance window. If you are using eRequisition, the quantity requisitioned doesn’t include requisitions from eRequisition.
 
->   Refer to the table for information about when the quantities are included in
->   the calculation.
+>   Refer to the table for information about when the quantities are included in the calculation.
 
 | **Quantity:**                                                                    | **Is included:**                                                                   |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
@@ -4070,16 +4051,11 @@ How quantities are calculated for suggested purchase orders
 
 >   **Required quantity**
 
->   If you’re using master sites with the purchase order generator, quantities
->   for subordinate sites are reflected in quantities for the master site.
+>   If you’re using master sites with the purchase order generator, quantities for subordinate sites are reflected in quantities for the master site.
 
->   Basically, the required quantity of an item for each subordinate site is the
->   difference between what’s needed and what’s available. Calculating the
->   required quantity depends on the replenishment level selected for the
->   item-site combination.
+>   Basically, the required quantity of an item for each subordinate site is the difference between what’s needed and what’s available. Calculating the required quantity depends on the replenishment level selected for the item-site combination.
 
->   Refer to the table for information about how required quantities are
->   calculated for each type of replenishment level.
+>   Refer to the table for information about how required quantities are calculated for each type of replenishment level.
 
 | **Replenishment level** | **Availability**                                          | **Order quantity calculation**                                                                                                                                                                                                                                                                                                                   |
 |-------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -4090,19 +4066,11 @@ How quantities are calculated for suggested purchase orders
 Entering default values for resource planning
 ---------------------------------------------
 
->   You can use the Resource Planning Site Maintenance window to enter default
->   resource planning values. You can enter the default values for the all site,
->   or for item-site information for specific sites. You can select buyers and
->   planners, order policies, replenishment methods, and more.
+>   You can use the Resource Planning Site Maintenance window to enter default resource planning values. You can enter the default values for the all site, or for item-site information for specific sites. You can select buyers and planners, order policies, replenishment methods, and more.
 
->   You can enter resource planning information for any company, but the
->   information will be used in calculations only if you’re using the purchase
->   order generator or the Manufacturing Series. Even if you’re not using one of
->   those products, however, you might want to enter information in these
->   windows and refer to it as part of your business practices.
+>   You can enter resource planning information for any company, but the information will be used in calculations only if you’re using the purchase order generator or the Manufacturing Series. Even if you’re not using one of those products, however, you might want to enter information in these windows and refer to it as part of your business practices.
 
->   *Refer to Resource planning windows for information about how the
->   information in this window is used in other windows.*
+>   *Refer to Resource planning windows for information about how the information in this window is used in other windows.*
 
 >   **To enter default values for resource planning:**
 
@@ -4111,24 +4079,17 @@ Entering default values for resource planning
 
 ![](media/83aa0b3623ba4ad3eb16ddbe509948c5.jpg)
 
-1.  Determine whether to enter default information for the all site—also known
-    as the default values—or for a specific site.
+2.  Determine whether to enter default information for the all site—also known as the default values—or for a specific site.
 
--   Mark Default Values if you’re entering planning information to be used as
-    default values when adding a new site.
+-   Mark Default Values if you’re entering planning information to be used as default values when adding a new site.
 
--   Mark Site ID if you’re entering planning information for the purchase order
-    generator. Enter or select a site.
+-   Mark Site ID if you’re entering planning information for the purchase order generator. Enter or select a site.
 
-1.  Enter information that should be the default planning information. You can
-    enter information in as many or as few fields as you like.
+3.  Enter information that should be the default planning information. You can enter information in as many or as few fields as you like.
 
-2.  Choose Save.
+4.  Choose Save.
 
->   An alert message appears, asking how much of the information you want to
->   “roll down” for a site ID. Refer to the table for information about how
->   records will be updated. Information doesn’t roll down for the default
->   values.
+>   An alert message appears, asking how much of the information you want to “roll down” for a site ID. Refer to the table for information about how records will be updated. Information doesn’t roll down for the default values.
 
 | **Option** | **Site ID**                                                                                                                                                              |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -4136,20 +4097,14 @@ Entering default values for resource planning
 | Changes    | All *changed* values in the window will replace the associated values in the Item Resource Planning Maintenance window for all items assigned to the site.               |
 | None       | No information is rolled down to item-site combinations. Only new item-site combination for the site will reflect the changes.                                           |
 
->   If any records couldn’t be updated, the Resource Planning Site Roll Down
->   Exception Report will be generated. The report lists the records that
->   couldn’t be updated. You can use the Item Resource Planning Maintenance
->   window to update those records, if needed.
+>   If any records couldn’t be updated, the Resource Planning Site Roll Down Exception Report will be generated. The report lists the records that  couldn’t be updated. You can use the Item Resource Planning Maintenance window to update those records, if needed.
 
-1.  Close the window.
+5.  Close the window.
 
 Chapter 16: Kits
 ================
 
->   Kits are one of the special item types included in Inventory Control. Use a
->   kit to define a group of items sold together as a unit. For example, a
->   sporting goods store might market a basic camping kit that included a tent,
->   a pair of sleeping bags, and other basic necessities.
+>   Kits are one of the special item types included in Inventory Control. Use a kit to define a group of items sold together as a unit. For example, a sporting goods store might market a basic camping kit that included a tent, a pair of sleeping bags, and other basic necessities.
 
 >   The following information is discussed:
 
@@ -4162,16 +4117,9 @@ Chapter 16: Kits
 Kits and phantom bills of materials
 -----------------------------------
 
->   A kit is different from a bill of materials. Bills of materials—which you
->   can create in the Microsoft Dynamics GP Bill of Materials module—are lists
->   of materials needed to produce an item. Sometimes a bill of materials will
->   include another bill of materials for a subassembly item that isn’t stocked
->   or inventoried as a separate item. That subsidiary bill of materials is
->   called a phantom bill of materials.
+>   A kit is different from a bill of materials. Bills of materials—which you can create in the Microsoft Dynamics GP Bill of Materials module—are lists of materials needed to produce an item. Sometimes a bill of materials will include another bill of materials for a subassembly item that isn’t stocked or inventoried as a separate item. That subsidiary bill of materials is called a phantom bill of materials.
 
->   If you’re using Microsoft Dynamics GP Bill of Materials, it’s important to
->   understand how phantom bills are created and used. Refer to the table for
->   information about kits and phantom bills of materials.
+>   If you’re using Microsoft Dynamics GP Bill of Materials, it’s important to understand how phantom bills are created and used. Refer to the table for information about kits and phantom bills of materials.
 
 |                    | **Kits**                                                   | **Phantom bills of materials**                                                                  |
 |--------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -4182,39 +4130,20 @@ Kits and phantom bills of materials
 
 >   **Phantom bills**
 
->   A phantom bill is a list of parts commonly used together when assembling a
->   finished good—for example, all the screws, brackets, nails and other
->   hardware needed to assemble a desk. The phantom bill item isn’t stocked in
->   inventory, though it must have an item number before you can create it using
->   the Bill of Materials Maintenance window. The components of a phantom bill
->   aren’t typically sold separately. Because quantities aren’t tracked for
->   phantoms, you can’t use them as a finished good.
+>   A phantom bill is a list of parts commonly used together when assembling a finished good—for example, all the screws, brackets, nails and other hardware needed to assemble a desk. The phantom bill item isn’t stocked in inventory, though it must have an item number before you can create it using the Bill of Materials Maintenance window. The components of a phantom bill aren’t typically sold separately. Because quantities aren’t tracked for phantoms, you can’t use them as a finished good.
 
 >   **Kits**
 
->   A kit is a group of items that also can be sold separately. For example, if
->   you have a computer system that is composed of a computer, monitor, printer
->   and software, you can either sell these items as a kit, or individually.
+>   A kit is a group of items that also can be sold separately. For example, if you have a computer system that is composed of a computer, monitor, printer and software, you can either sell these items as a kit, or individually.
 
->   Quantities aren’t tracked for items you designate as kits. However, current
->   costs are associated with the items associated with the kit, and the
->   quantity sold is tracked when these items are used at the time of sale. When
->   you post a transaction that contains a kit item, amounts are posted to the
->   Cost of Goods Sold account specified—you can choose to use the Cost of Goods
->   Sold account for each component item in the kit, or a separate Cost of Goods
->   Sold account defined for the kit itself.
+>   Quantities aren’t tracked for items you designate as kits. However, current costs are associated with the items associated with the kit, and the quantity sold is tracked when these items are used at the time of sale. When you post a transaction that contains a kit item, amounts are posted to the Cost of Goods Sold account specified—you can choose to use the Cost of Goods Sold account for each component item in the kit, or a separate Cost of Goods Sold account defined for the kit itself.
 
 Assigning kit components
 ------------------------
 
->   Use the Item Kit Maintenance window to assign component items to the kit.
->   You can assign any item to a kit except another kit. When you enter the kit
->   item number, the current cost and standard cost are displayed above the
->   scrolling window.
+>   Use the Item Kit Maintenance window to assign component items to the kit. You can assign any item to a kit except another kit. When you enter the kit item number, the current cost and standard cost are displayed above the scrolling window.
 
->   *If you’re using Microsoft Dynamics GP Bill of Materials, and want to use a
->   kit type item as a phantom bill, you shouldn’t assign components to the
->   kit.*
+>   *If you’re using Microsoft Dynamics GP Bill of Materials, and want to use a kit type item as a phantom bill, you shouldn’t assign components to the kit.*
 
 >   **To assign kit components:**
 
@@ -4223,69 +4152,48 @@ Assigning kit components
 
 ![](media/2d21e2523afbe035d8984737cf674971.jpg)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Decide if sales transactions for the kit item should be posted to Cost of
-    Goods Sold accounts for the components of the kit, or for the kit itself.
+3.  Decide if sales transactions for the kit item should be posted to Cost of Goods Sold accounts for the components of the kit, or for the kit itself.
 
->   *The Cost of Good Sold accounts are obtained from the kit or from the
->   components, depending on your selection. If no Cost of Good Sold account
->   exists for the kit or component items, the Cost of Good Sold accounts are
->   based on the Posting Accounts Setup selections.*
+>   *The Cost of Good Sold accounts are obtained from the kit or from the components, depending on your selection. If no Cost of Good Sold account exists for the kit or component items, the Cost of Good Sold accounts are based on the Posting Accounts Setup selections.*
 
-1.  In the scrolling window, enter or select a component item number.
+4.  In the scrolling window, enter or select a component item number.
 
->   If the component item number is an inactive item, you will not be able to
->   add it to the kit.
+>   If the component item number is an inactive item, you will not be able to add it to the kit.
 
-1.  Enter the unit of measure and quantity for the component item.
+5.  Enter the unit of measure and quantity for the component item.
 
->   For example, if you have a kitchen set with a table and four chairs, the
->   unit of measure for the chairs might be Each, with a quantity of 4.
+>   For example, if you have a kitchen set with a table and four chairs, the unit of measure for the chairs might be Each, with a quantity of 4.
 
-1.  Continue, repeating steps 4 and 5 for each component item that is included
-    in the kit.
+6.  Continue, repeating steps 4 and 5 for each component item that is included in the kit.
 
->   *To delete a component item from a kit, highlight the line in the scrolling
->   window and choose Edit \>\> Delete Row.*
+>   *To delete a component item from a kit, highlight the line in the scrolling window and choose Edit \>\> Delete Row.*
 
-1.  When you’ve finished assigning items to the kit, choose Save and close the
-    window.
+7.  When you’ve finished assigning items to the kit, choose Save and close the window.
 
->   When you’ve entered all your kit records, you can verify your entries with a
->   Kit List. For information about printing this and other item reports, see
->   Help \>\> Inventory Item Reports window.
+>   When you’ve entered all your kit records, you can verify your entries with a Kit List. For information about printing this and other item reports, see Help \>\> Inventory Item Reports window.
 
 Deleting a component from a kit
 -------------------------------
 
->   Use the Item Kit Maintenance window to delete kit components from a kit. To
->   delete the kit itself, you need to use the Item Maintenance window.
+>   Use the Item Kit Maintenance window to delete kit components from a kit. To delete the kit itself, you need to use the Item Maintenance window.
 
 >   **To delete a component from a kit:**
 
 1.  Open the Item Kit Maintenance window.
 >   (Inventory \>\> Cards \>\> Kits)
 
-1.  Enter or select a kit item number.
+2.  Enter or select a kit item number.
 
-2.  Choose Delete. An alert message appears, asking if you’re sure you want to
-    delete the record. Choose Yes.
+3.  Choose Delete. An alert message appears, asking if you’re sure you want to delete the record. Choose Yes.
 
 Chapter 17: History
 ===================
 
->   Enter fiscal-year or calendar-year history information to maintain
->   historical information about the quantity sold, sales amount, and cost
->   amount for items in Microsoft Dynamics GP. You might already have this
->   information in manual records or another computerized accounting system, but
->   if you enter that information, you can analyze and compare current-year
->   records with previous-year records on the Sales Summary Report and in the
->   Item Inquiry window.
+>   Enter fiscal-year or calendar-year history information to maintain historical information about the quantity sold, sales amount, and cost amount for items in Microsoft Dynamics GP. You might already have this information in manual records or another computerized accounting system, but if you enter that information, you can analyze and compare current-year records with previous-year records on the Sales Summary Report and in the Item Inquiry window.
 
->   You also can enter information about the projected demand for items.
->   Projections can be used to perform ABC analysis. Refer to *Chapter 37, “ABC
->   analysis,”* for more information.
+>   You also can enter information about the projected demand for items. Projections can be used to perform ABC analysis. Refer to *Chapter 37, “ABC analysis,”* for more information.
 
 >   The following information is discussed:
 
@@ -4298,21 +4206,14 @@ Chapter 17: History
 Item history requirements
 -------------------------
 
->   Summary history records can’t be created if the history year you want to
->   create doesn’t exist for the company you’re currently working in. Be sure to
->   set up each year for historical information in the Fiscal Periods Setup
->   window.
+>   Summary history records can’t be created if the history year you want to create doesn’t exist for the company you’re currently working in. Be sure to set up each year for historical information in the Fiscal Periods Setup window.
 
->   If you’re using Invoicing or Sales Order Processing, history information for
->   Inventory Control is updated automatically on items for which you’re
->   tracking calendar, fiscal, or transaction history. Purchase Order Processing
->   and Bill of Materials update transaction history only.
+>   If you’re using Invoicing or Sales Order Processing, history information for Inventory Control is updated automatically on items for which you’re  tracking calendar, fiscal, or transaction history. Purchase Order Processing and Bill of Materials update transaction history only.
 
 Entering item history
 ---------------------
 
->   Use the Item History window to enter beginning history for items.You can
->   enter information about sales quantities, costs, and amounts.
+>   Use the Item History window to enter beginning history for items.You can enter information about sales quantities, costs, and amounts.
 
 >   **To enter item history:**
 
@@ -4321,93 +4222,62 @@ Entering item history
 
 ![](media/5e646ae95d89b00c8b0476696f524a6b.jpg)
 
-1.  Select an item number.
+2.  Select an item number.
 
-2.  Enter the quantity sold, sales amount, and cost of sales information for the
-    current and the previous years.
+3.  Enter the quantity sold, sales amount, and cost of sales information for the current and the previous years.
 
-3.  Choose whether to track item history by calendar or fiscal year. The
-    information in the scrolling window is displayed by either month or fiscal
-    period, depending on your selection.
+4.  Choose whether to track item history by calendar or fiscal year. The information in the scrolling window is displayed by either month or fiscal period, depending on your selection.
 
-4.  Choose whether to display history for all years or for a single year.
+5.  Choose whether to display history for all years or for a single year.
 
-5.  Choose whether you want information maintained for all sites or for a
-    specific site. To enter history for a specific site, select Site, then enter
-    or select the ID for that site.
+6.  Choose whether you want information maintained for all sites or for a specific site. To enter history for a specific site, select Site, then enter or select the ID for that site.
 
-6.  Enter the historical information in the scrolling window.
+7.  Enter the historical information in the scrolling window.
 
->   To track more than one previous year, select the year, then enter the
->   information in the scrolling window for each month or fiscal period.
+>   To track more than one previous year, select the year, then enter the information in the scrolling window for each month or fiscal period.
 
->   To add more periods to the scrolling window, choose the Add Period button.
->   Enter information to select the appropriate period and close the window.
+>   To add more periods to the scrolling window, choose the Add Period button. Enter information to select the appropriate period and close the window.
 
 ![](media/07fa3c720ebdc5bad74c53a65d50d09d.jpg)
 
->   *You can enter history only for periods that have been set up in the Fiscal
->   Periods Setup or Item History Periods windows.*
+>   *You can enter history only for periods that have been set up in the Fiscal Periods Setup or Item History Periods windows.*
 
-1.  Repeat steps 2 through 7 for each item you want to enter history for.
+8.  Repeat steps 2 through 7 for each item you want to enter history for.
 
-2.  Save the information, then choose File \>\> Print to print a Sales Summary
-    Report.
+9.  Save the information, then choose File \>\> Print to print a Sales Summary Report.
 
 Entering item projections
 -------------------------
 
-Use the Item History window to enter projections for demand for items on a
-site-bysite basis. For example, if you anticipate that you will sell 500 units
-of an item in the next month at the North store, you could enter that amount as
-a projection.
+Use the Item History window to enter projections for demand for items on a site-bysite basis. For example, if you anticipate that you will sell 500 units of an item in the next month at the North store, you could enter that amount as a projection.
 
->   *If you enter projections for parent items—items that have a bill of
->   materials—don’t enter projections for the component items. Those will be
->   calculated for you.*
+>   *If you enter projections for parent items—items that have a bill of materials—don’t enter projections for the component items. Those will be calculated for you.*
 
 **To enter item projections:**
 
 1.  Open the Item History window.
 >   (Inventory \>\> Cards \>\> History) 2. Select an item number.
 
-1.  Select a site ID.
+2.  Select a site ID.
 
-2.  Review the contents of the scrolling window. If the period you want to enter
-    projection information for isn’t in the scrolling window, choose Add Period.
-    Enter information for the appropriate period and close the window.
+3.  Review the contents of the scrolling window. If the period you want to enter projection information for isn’t in the scrolling window, choose Add Period. Enter information for the appropriate period and close the window.
 
-3.  Use the hide and show buttons so you can see two lines of information for
-    each record in the scrolling window.
+4.  Use the hide and show buttons so you can see two lines of information for each record in the scrolling window.
 
-4.  Select the appropriate line in the scrolling window and enter the projection
-    for that site and period in the Projected Quantity field.
+5.  Select the appropriate line in the scrolling window and enter the projection for that site and period in the Projected Quantity field.
 
-5.  Repeat steps 3 through 6, if needed, to add more projection information for
-    the item. For example, you might want to enter projection quantities for
-    other sites.
+6.  Repeat steps 3 through 6, if needed, to add more projection information for the item. For example, you might want to enter projection quantities for other sites.
 
-6.  Choose Save and close the window.
+7.  Choose Save and close the window.
 
 Chapter 18: Count intervals
 ===========================
 
->   You can use stock counts to more effectively manage your inventory. With
->   frequent, regular counts, you can keep a closer watch on inventory levels
->   than you can with annual inventory counts. The results of stock counts can
->   help you be proactive with ordering policies, and can help you to identify
->   inventory inaccuracies.
+>   You can use stock counts to more effectively manage your inventory. With frequent, regular counts, you can keep a closer watch on inventory levels than you can with annual inventory counts. The results of stock counts can help you be proactive with ordering policies, and can help you to identify inventory inaccuracies.
 
->   You can specify how frequently certain items should be counted at a specific
->   site. You can set up count intervals so that expensive items that are
->   critical to your business are counted frequently, while relatively cheap,
->   non-essential items are rarely counted.
+>   You can specify how frequently certain items should be counted at a specific site. You can set up count intervals so that expensive items that are critical to your business are counted frequently, while relatively cheap, non-essential items are rarely counted.
 
->   Typically, cycle counting means that your inventory personnel are counting a
->   few items each day. With cycle counting, counts are spread evenly over the
->   cycle. For example, if you set up a 30-day cycle count for 300 items, the
->   counts will be spread over the 30 days. This helps minimize the count work
->   for your inventory personnel on any one day.
+>   Typically, cycle counting means that your inventory personnel are counting a few items each day. With cycle counting, counts are spread evenly over the cycle. For example, if you set up a 30-day cycle count for 300 items, the counts will be spread over the 30 days. This helps minimize the count work for your inventory personnel on any one day.
 
 >   The following information is discussed:
 
@@ -4422,21 +4292,11 @@ Chapter 18: Count intervals
 Setting up count intervals for several items
 --------------------------------------------
 
->   Use the Stock Count Cycle Assignment window to specify how frequently
->   certain items should be counted. You can specify different count frequencies
->   for different item-site combinations—for example, you might want to have
->   some counts done more frequently at a newer location, where inventory
->   control procedures might not be fully implemented.
+>   Use the Stock Count Cycle Assignment window to specify how frequently certain items should be counted. You can specify different count frequencies for different item-site combinations—for example, you might want to have some counts done more frequently at a newer location, where inventory control procedures might not be fully implemented.
 
->   When you specify the count intervals for items, you can begin by selecting
->   items that share a certain attribute—such as being at the same site or
->   having the same ABC classification. (Refer to *Chapter 37, “ABC analysis,”*
->   for more information.) Then you can consider the items on a case-by-case
->   basis, removing certain items from the list to be scheduled for counting.
+>   When you specify the count intervals for items, you can begin by selecting items that share a certain attribute—such as being at the same site or having the same ABC classification. (Refer to *Chapter 37, “ABC analysis,”* for more information.) Then you can consider the items on a case-by-case basis, removing certain items from the list to be scheduled for counting.
 
->   *You will probably want to set up count intervals once, reviewing them every
->   year or so. If you need to set up cycle counting for a new item, refer to
->   Setting up a count interval for one item.*
+>   *You will probably want to set up count intervals once, reviewing them every year or so. If you need to set up cycle counting for a new item, refer to Setting up a count interval for one item.*
 
 >   **To set up count intervals for several items:**
 
@@ -4445,145 +4305,88 @@ Setting up count intervals for several items
 
 ![](media/0cd306013fb7f5ae6f25e12e4beac2c9.jpg)
 
-1.  Enter the number of days for the stock count interval.
+2.  Enter the number of days for the stock count interval.
 
->   The number of days should be based on the up days in the stock count
->   calendar; down days aren’t counted. For example, if you wanted to count an
->   item every Monday and had specified in the stock count calendar that
->   Saturdays and Sundays are company down days, the stock count interval should
->   be 5. If no company down days occur in the week, the stock count interval
->   should be 7.
+>   The number of days should be based on the up days in the stock count calendar; down days aren’t counted. For example, if you wanted to count an item every Monday and had specified in the stock count calendar that Saturdays and Sundays are company down days, the stock count interval should be 5. If no company down days occur in the week, the stock count interval should be 7.
 
->   *Refer to Chapter 8, “Stock count calendar,” for more information about up
->   days and down days. Refer to How stock count dates are calculated for more
->   information about stock count dates.*
+>   *Refer to Chapter 8, “Stock count calendar,” for more information about up days and down days. Refer to How stock count dates are calculated for more information about stock count dates.*
 
-1.  Accept the default start date and time for counting days, or change it.
+3.  Accept the default start date and time for counting days, or change it.
 
-2.  Choose the items to be counted with this frequency. Select a range—such as
-    site ID or ABC code—and then select the starting and ending values for the
-    range. Choose Insert.
+4.  Choose the items to be counted with this frequency. Select a range—such as site ID or ABC code—and then select the starting and ending values for the  range. Choose Insert.
 
->   *The Inventory Control stock count information is based on the number of
->   items at each particular site. If you select a group of items and don’t use
->   any further restrictions on that selection, it’s assumed that you’ll want to
->   count that item at each of its assigned sites.*
+>   *The Inventory Control stock count information is based on the number of items at each particular site. If you select a group of items and don’t use any further restrictions on that selection, it’s assumed that you’ll want to count that item at each of its assigned sites.*
 
-1.  You can narrow the group of items to include in the stock count by adding as
-    many restrictions as you like. Each restriction is calculated on top of the
-    earlier restrictions. For example, if you limit the group of items to just
-    those at the North site, and then add another restriction that limits the
-    group to just those that have Discontinued for the item type, then the
-    resulting group is Discontinued items at the North site.
+5.  You can narrow the group of items to include in the stock count by adding as many restrictions as you like. Each restriction is calculated on top of the earlier restrictions. For example, if you limit the group of items to just those at the North site, and then add another restriction that limits the group to just those that have Discontinued for the item type, then the resulting group is Discontinued items at the North site.
 
-2.  You can remove items from the resulting list, if you like. Choose Details to
-    open the Cycle Assignment Details window.
+6.  You can remove items from the resulting list, if you like. Choose Details to open the Cycle Assignment Details window.
 
 ![](media/817b983556aa2127fa526650a1081adb.jpg)
 
-1.  To remove any item from the cycle-count group, clear the appropriate Include
-    option in the scrolling window.
+7.  To remove any item from the cycle-count group, clear the appropriate Include option in the scrolling window.
 
-2.  When you’ve finished reviewing the items in the Cycle Assignment Details
-    window, choose OK. The window will close, returning you to the Stock Count
-    Cycle Assignment window.
+8.  When you’ve finished reviewing the items in the Cycle Assignment Details window, choose OK. The window will close, returning you to the Stock Count Cycle Assignment window.
 
-3.  When you’ve finished selecting items for this frequency, choose Process. The
-    Stock Count Cycle Assignment Report will be printed so you can verify your
-    entries.
+9.  When you’ve finished selecting items for this frequency, choose Process. The Stock Count Cycle Assignment Report will be printed so you can verify your entries.
 
-4.  Close the Stock Count Cycle Assignment window.
+10.  Close the Stock Count Cycle Assignment window.
 
 Setting up a count interval for one item
 ----------------------------------------
 
->   Use the Item Quantities Stock Count window to specify the cycle counting
->   intervals for one item at a specific site. You’ll need to repeat this
->   procedure for each site where the item is to be counted.
+>   Use the Item Quantities Stock Count window to specify the cycle counting intervals for one item at a specific site. You’ll need to repeat this procedure for each site where the item is to be counted.
 
 >   **To set up a count interval for one item:**
 
 1.  Open the Item Quantities Maintenance window.
 >   (Inventory \>\> Cards \>\> Quantities/Sites)
 
-1.  Enter or select an item.
+2.  Enter or select an item.
 
-2.  Enter or select a site.
+3.  Enter or select a site.
 
-3.  Choose Stock Count to open the Item Quantities Stock Count window.
+4.  Choose Stock Count to open the Item Quantities Stock Count window.
 
 ![](media/0e6b25763c0c4d34b2549f4d2e84a6b3.jpg)
 
-1.  Enter the Last Stock Count Date and Time. The first scheduled stock count
-    for the item at this site will be based on this date and the interval.
+5.  Enter the Last Stock Count Date and Time. The first scheduled stock count for the item at this site will be based on this date and the interval.
 
-2.  Enter the number of days for the stock count interval.
+6.  Enter the number of days for the stock count interval.
 
->   The number of days should be based on the up days in the stock count
->   calendar; down days aren’t counted. For example, if you wanted to count an
->   item every Monday and had specified in the stock count calendar that
->   Saturdays and Sundays are company down days, the stock count interval should
->   be 5. If no company down days occur in the week, the stock count interval
->   should be 7.
+>   The number of days should be based on the up days in the stock count calendar; down days aren’t counted. For example, if you wanted to count an item every Monday and had specified in the stock count calendar that Saturdays and Sundays are company down days, the stock count interval should be 5. If no company down days occur in the week, the stock count interval should be 7.
 
->   *Refer to Chapter 8, “Stock count calendar,” for more information about the
->   stock calendar.*
+>   *Refer to Chapter 8, “Stock count calendar,” for more information about the stock calendar.*
 
-1.  Choose OK to close the Item Quantities Stock Count window.
+7.  Choose OK to close the Item Quantities Stock Count window.
 
-2.  Choose Save and close the Item Quantities Maintenance window.
+8.  Choose Save and close the Item Quantities Maintenance window.
 
 How stock count dates are calculated
 ------------------------------------
 
->   When you set up a stock count calendar, you’re specifying the days when a
->   count can be performed. You’re also specifying the days to be considered
->   when suggested Next Stock Count dates are calculated.
+>   When you set up a stock count calendar, you’re specifying the days when a count can be performed. You’re also specifying the days to be considered when suggested Next Stock Count dates are calculated.
 
->   If you use the Cycle Assignment Details window to set the count interval for
->   several items, suggested Next Stock Count Dates will be based on the number
->   of items and the number of days in the interval. For example, suppose you
->   have 60 items that are to be counted every 60 days. The suggested count
->   dates would be spread over the next 60 up days—one item per day—so that the
->   work is evenly distributed over the cycle.
+>   If you use the Cycle Assignment Details window to set the count interval for several items, suggested Next Stock Count Dates will be based on the number of items and the number of days in the interval. For example, suppose you have 60 items that are to be counted every 60 days. The suggested count dates would be spread over the next 60 up days—one item per day—so that the work is evenly distributed over the cycle.
 
->   Once you process a stock count, however, new stock count dates are based on
->   the date of the last stock count for the item-site combination, the count
->   interval and the stock calendar. The new count date will be the date of the
->   last count, plus the count interval (in up days). If the date of the last
->   stock count is June 1, the count interval is 10 and there are no down days
->   in the stock calendar, then the suggested Next Stock
+>   Once you process a stock count, however, new stock count dates are based on the date of the last stock count for the item-site combination, the count interval and the stock calendar. The new count date will be the date of the last count, plus the count interval (in up days). If the date of the last stock count is June 1, the count interval is 10 and there are no down days in the stock calendar, then the suggested Next Stock
 
->   Count Date will be June 11. Use the Item Quantities Stock Count window
->   (Inventory \>\> Cards \>\> Quantities/Sites \>\> select item and site \>\>
->   choose Stock Count button) to view the suggested Next Stock Count Date.
+>   Count Date will be June 11. Use the Item Quantities Stock Count window (Inventory \>\> Cards \>\> Quantities/Sites \>\> select item and site \>\> choose Stock Count button) to view the suggested Next Stock Count Date.
 
 *If the count interval is 0, no suggested stock count date will be calculated.*
 
 Changing the cycle-count intervals for an item
 ----------------------------------------------
 
->   Each item-site combination can have only one stock-count frequency. If you
->   want to change the frequency an item is counted for a specific site, use the
->   procedure describe in *Setting up a count interval for one item*. The new
->   information will override the older entry.
+>   Each item-site combination can have only one stock-count frequency. If you want to change the frequency an item is counted for a specific site, use the procedure describe in *Setting up a count interval for one item*. The new information will override the older entry.
 
 Chapter 19: Landed cost cards
 =============================
 
->   Landed costs are the additional costs that might be associated with
->   purchasing a product. For example, if you purchase items from another
->   country or region, the amount you must pay also might include freight costs,
->   or duties.
+>   Landed costs are the additional costs that might be associated with purchasing a product. For example, if you purchase items from another country or region, the amount you must pay also might include freight costs, or duties.
 
->   If you’re using landed costs, you can define different landed costs,
->   including information such as the vendor the landed cost is for, the cost
->   calculation method used, and whether invoices must be matched. Later, you
->   can group landed costs, and then assign a group of landed costs to an
->   item-site combination.
+>   If you’re using landed costs, you can define different landed costs, including information such as the vendor the landed cost is for, the cost calculation method used, and whether invoices must be matched. Later, you can group landed costs, and then assign a group of landed costs to an item-site combination.
 
->   More information about landed costs is included in the Purchase Order
->   Processing documentation.
+>   More information about landed costs is included in the Purchase Order Processing documentation.
 
 >   This information is divided into the following sections:
 
@@ -4602,10 +4405,7 @@ Chapter 19: Landed cost cards
 Creating or modifying a landed cost record
 ------------------------------------------
 
->   Use the Landed Cost Maintenance window to define a landed cost record. Each
->   landed cost record can be tied to a specific vendor, but you can change the
->   vendor when you use the information for a transaction. You can create as
->   many landed cost records as you like.
+>   Use the Landed Cost Maintenance window to define a landed cost record. Each landed cost record can be tied to a specific vendor, but you can change the vendor when you use the information for a transaction. You can create as many landed cost records as you like.
 
 >   **To create or modify a landed cost record:**
 
@@ -4614,54 +4414,40 @@ Creating or modifying a landed cost record
 
 ![](media/7652ef66f617100cc03be33afdd93031.jpg)
 
-1.  Enter or select a landed cost ID.
+2.  Enter or select a landed cost ID.
 
-2.  Enter a brief description for the landed cost.
+3.  Enter a brief description for the landed cost.
 
-3.  Enter or select a vendor.
+4.  Enter or select a vendor.
 
-4.  If you’re using Multicurrency Management, enter or select the Currency ID—
-    the currency that will be used to record the landed cost amounts—and the
-    Rate Type ID.
+5.  If you’re using Multicurrency Management, enter or select the Currency ID— the currency that will be used to record the landed cost amounts—and the Rate Type ID.
 
-5.  Select a cost calculation method to determine how the landed cost will be
-    calculated for a receipt. Refer to *Cost calculation methods* for more
-    information.
+6.  Select a cost calculation method to determine how the landed cost will be calculated for a receipt. Refer to *Cost calculation methods* for more information.
 
-6.  Enter other information for the cost calculation.
+7.  Enter other information for the cost calculation.
 
--   If the cost calculation method is Flat Amount or Flat Amount Per Unit, enter
-    an Originating Amount.
+-   If the cost calculation method is Flat Amount or Flat Amount Per Unit, enter an Originating Amount.
 
--   If the cost calculation method is Percent of Extended Cost, enter a
-    percentage.
+-   If the cost calculation method is Percent of Extended Cost, enter a percentage.
 
 *Refer to Cost calculation methods for more information.*
 
-1.  To require users to match invoices to shipments, mark Invoice Match. Refer
-    to *Example: Invoice matching and distributions*.
+8.  To require users to match invoices to shipments, mark Invoice Match. Refer to *Example: Invoice matching and distributions*.
 
-2.  Specify whether inventory should be revalued. You can enter a Tolerance
-    Percentage, if needed. Refer to *Cost variance tolerances* for more
-    information.
+9.  Specify whether inventory should be revalued. You can enter a Tolerance Percentage, if needed. Refer to *Cost variance tolerances* for more information.
 
-3.  Enter or select accounts. Refer to *Example: Invoice matching and
-    distributions*.
+10.  Enter or select accounts. Refer to *Example: Invoice matching and distributions*.
 
->   You need to specify a purchase price variance account only if Invoice Match
->   is marked.
+>   You need to specify a purchase price variance account only if Invoice Match is marked.
 
->   *You can choose File \>\> Print to print the Landed Cost List, if needed.
->   Information about only the displayed landed cost record is included in the
->   report.*
+>   *You can choose File \>\> Print to print the Landed Cost List, if needed. Information about only the displayed landed cost record is included in the report.*
 
-1.  Choose Save.
+11.  Choose Save.
 
 Cost calculation methods
 ------------------------
 
->   Three methods are available for calculating landed costs. Refer to the table
->   for more information.
+>   Three methods are available for calculating landed costs. Refer to the table for more information.
 
 | **Calculation method**   | **Equation and description**                                                                                                                                                                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -4672,10 +4458,7 @@ Cost calculation methods
 Example: Invoice matching and distributions
 -------------------------------------------
 
->   Marking the Invoice Match option for a landed cost record will affect
->   account distributions. For example, suppose that a shipment is recorded for
->   10 items at \$1 each. The landed cost uses the Flat Amount cost calculation
->   method, and the flat amount is \$0.50.
+>   Marking the Invoice Match option for a landed cost record will affect account distributions. For example, suppose that a shipment is recorded for 10 items at \$1 each. The landed cost uses the Flat Amount cost calculation method, and the flat amount is \$0.50.
 
 >   The distributions for the shipment would look like this:
 
@@ -4685,9 +4468,7 @@ Example: Invoice matching and distributions
 | Accrued Purchases - Landed Cost |                  | \$0.50            |
 | Accrued Purchases - Inventory   |                  | \$10.00           |
 
->   Suppose that when the invoice is received, the cost of the goods is
->   unchanged, but the landed cost has increased to \$0.75. If Invoice Match is
->   not marked, the account distributions would be as follows.
+>   Suppose that when the invoice is received, the cost of the goods is unchanged, but the landed cost has increased to \$0.75. If Invoice Match is not marked, the account distributions would be as follows.
 
 | **Account**                     | **Debit amount** | **Credit amount** |
 |---------------------------------|------------------|-------------------|
@@ -4695,8 +4476,7 @@ Example: Invoice matching and distributions
 | Accrued Purchases - Inventory   | \$10.00          |                   |
 | Accounts Payable                |                  | \$10.75           |
 
->   If Invoice Match is marked and the Revalue Inventory option is marked for
->   the cost variance, the account distributions would be as follows:
+>   If Invoice Match is marked and the Revalue Inventory option is marked for the cost variance, the account distributions would be as follows:
 
 | **Account**                     | **Debit amount** | **Credit amount** |
 |---------------------------------|------------------|-------------------|
@@ -4708,29 +4488,15 @@ Example: Invoice matching and distributions
 Effects of deleting a landed cost record
 ----------------------------------------
 
->   You can delete a landed cost record at any time, even if it is part of a
->   landed cost group or if it has been assigned to a purchasing transaction.
->   Transactions that already include information from the landed cost record
->   won’t be affected when you delete the record.
+>   You can delete a landed cost record at any time, even if it is part of a landed cost group or if it has been assigned to a purchasing transaction. Transactions that already include information from the landed cost record won’t be affected when you delete the record.
 
->   If the landed cost record you’re deleting is part of a landed cost group,
->   the landed cost record is removed from the landed cost group when the landed
->   cost record is deleted.
+>   If the landed cost record you’re deleting is part of a landed cost group, the landed cost record is removed from the landed cost group when the landed cost record is deleted.
 
->   To delete a landed cost record, select the landed cost record in the Landed
->   Cost Maintenance window and choose Delete.
+>   To delete a landed cost record, select the landed cost record in the Landed Cost Maintenance window and choose Delete.
 
 ### Creating a landed cost group
 
->   Once you’ve created landed cost records, you can create landed cost groups.
->   A landed cost group is simply a collection of several landed cost records.
->   Each landed cost record can exist in multiple landed cost groups. Each
->   landed cost group can include as many landed cost records as you like. By
->   creating a landed cost group and assigning it to item-site combinations, you
->   can associate many different landed cost records with an item-site
->   combination. When the item-site combination is entered on a purchase order,
->   the landed cost group information automatically is reflected in the
->   transaction.
+>   Once you’ve created landed cost records, you can create landed cost groups. A landed cost group is simply a collection of several landed cost records. Each landed cost record can exist in multiple landed cost groups. Each landed cost group can include as many landed cost records as you like. By creating a landed cost group and assigning it to item-site combinations, you can associate many different landed cost records with an item-site combination. When the item-site combination is entered on a purchase order, the landed cost group information automatically is reflected in the transaction.
 
 >   **To create a landed cost group:**
 
@@ -4739,96 +4505,64 @@ Effects of deleting a landed cost record
 
 ![](media/8860169b1033d727b6ee0c8a93fe4260.jpg)
 
-1.  Enter or select an identifier for the landed cost group.
+2.  Enter or select an identifier for the landed cost group.
 
-2.  Put your pointer in the first blank line in the scrolling window, and enter
-    or select a landed cost record. Information about the landed cost is
-    displayed in the scrolling window.
+3.  Put your pointer in the first blank line in the scrolling window, and enter or select a landed cost record. Information about the landed cost is displayed in the scrolling window.
 
-3.  Continue, repeating step 3 until you’ve added as many landed cost records as
-    you like.
+4.  Continue, repeating step 3 until you’ve added as many landed cost records as you like.
 
->   *You can choose File \>\> Print to print the Landed Cost Group List, if
->   needed.*
+>   *You can choose File \>\> Print to print the Landed Cost Group List, if needed.*
 
->   *Information about only the displayed landed cost group is included in the
->   report.*
+>   *Information about only the displayed landed cost group is included in the report.*
 
-1.  Choose Save.
+5.  Choose Save.
 
->   Once you’ve created a landed cost group, you can assign it to an item-site
->   combination. Refer to *Entering basic all-site information for an item* for
->   more information.
+>   Once you’ve created a landed cost group, you can assign it to an item-site combination. Refer to *Entering basic all-site information for an item* for more information.
 
 ### Deleting a landed cost from a landed cost group
 
->   You can delete a landed cost record from a landed cost group at any time. If
->   you delete a landed cost record that is part of a landed cost group, the
->   landed cost record automatically will be deleted from the landed cost group.
->   Deleting a landed cost group won’t affect unposted transactions.
+>   You can delete a landed cost record from a landed cost group at any time. If you delete a landed cost record that is part of a landed cost group, the landed cost record automatically will be deleted from the landed cost group. Deleting a landed cost group won’t affect unposted transactions.
 
->   Use the Landed Cost Group Maintenance window to remove a landed cost from a
->   landed cost group.
+>   Use the Landed Cost Group Maintenance window to remove a landed cost from a landed cost group.
 
 >   **To delete a landed cost from a landed cost group:**
 
 1.  Open the Landed Cost Group Maintenance window.
 >   (Inventory \>\> Cards \>\> Landed Cost Group)
 
-1.  Enter or select a landed cost group.
+2.  Enter or select a landed cost group.
 
-2.  Highlight the line in the scrolling window that includes the landed cost to
-    be deleted.
+3.  Highlight the line in the scrolling window that includes the landed cost to be deleted.
 
-3.  From the Edit menu, choose Delete Row.
+4.  From the Edit menu, choose Delete Row.
 
-4.  Choose Save.
+5.  Choose Save.
 
 Part 3: Transactions
 ====================
 
->   This part of the documentation includes information about Inventory Control
->   transactions. If you have set up only one site, the transactions you enter
->   are increase or decrease adjustments to your inventory, or transfers of
->   quantities between different quantity types at your main site. If you’ve set
->   up more than one site, you also can enter transactions that transfer
->   inventory quantities between sites or change quantity types.
+>   This part of the documentation includes information about Inventory Control transactions. If you have set up only one site, the transactions you enter are increase or decrease adjustments to your inventory, or transfers of quantities between different quantity types at your main site. If you’ve set up more than one site, you also can enter transactions that transfer inventory quantities between sites or change quantity types.
 
->   Transactions entered in batches can be saved, edited if necessary, and then
->   posted so that they become part of your permanent accounting records. If you
->   decide to post transactions through to the posting accounts you’ve named in
->   General Ledger, the balances in those accounts are updated by the currency
->   amounts based on the quantities entered during transaction entry. In
->   addition, you have the option of overriding quantities during transaction
->   entry, by entering a quantity that is greater than the quantity available.
+>   Transactions entered in batches can be saved, edited if necessary, and then posted so that they become part of your permanent accounting records. If you decide to post transactions through to the posting accounts you’ve named in General Ledger, the balances in those accounts are updated by the currency amounts based on the quantities entered during transaction entry. In addition, you have the option of overriding quantities during transaction entry, by entering a quantity that is greater than the quantity available.
 
 >   The following information is discussed:
 
--   *Chapter 20, “Batches,”* describes how to define, edit, and delete batches.
-    You can use batches to group and post several transactions at once.
+-   *Chapter 20, “Batches,”* describes how to define, edit, and delete batches. You can use batches to group and post several transactions at once.
 
--   *Chapter 21, “Transaction entry,”* includes information about entering
-    different types of transactions.
+-   *Chapter 21, “Transaction entry,”* includes information about entering different types of transactions.
 
--   *Chapter 22, “Stock count schedules,”* contains information about starting a
-    stock count and entering the results of the count.
+-   *Chapter 22, “Stock count schedules,”* contains information about starting a stock count and entering the results of the count.
 
--   *Chapter 23, “Stock count processing,”* describes how to enter stock count
-    results for items, including ones tracked by serial or lot numbers.
+-   *Chapter 23, “Stock count processing,”* describes how to enter stock count results for items, including ones tracked by serial or lot numbers.
 
--   *Chapter 24, “Posting,”* includes information about posting individual
-    transactions, batches, and the transactions automatically generated when
-    stock count information is entered
+-   *Chapter 24, “Posting,”* includes information about posting individual transactions, batches, and the transactions automatically generated when stock count information is entered
 
--   *Chapter 25, “Transaction corrections,”* includes procedures you can use to
-    correct the information from posted transactions.
+-   *Chapter 25, “Transaction corrections,”* includes procedures you can use to correct the information from posted transactions.
 
 Chapter 20: Batches
 -------------------
 
->   Batches are groups of transactions identified by a unique name or number. By
->   entering and posting transactions in batches, you can group similar
->   transactions during data entry and review them before posting.
+>   Batches are groups of transactions identified by a unique name or number. By entering and posting transactions in batches, you can group similar transactions during data entry and review them before posting.
 
 >   The following information is discussed:
 
@@ -4842,53 +4576,21 @@ Chapter 20: Batches
 
 ### Using batches to group inventory transactions
 
->   Inventory transactions can be entered individually or in batches. Individual
->   transactions are entered and posted immediately, so your records are always
->   up to date. You can’t print edit lists for transactions that aren’t entered
->   in a batch. Batches can be used to group and save transactions, allowing you
->   to review the transactions and make corrections before they’re posted. More
->   than one person can enter transactions in the same batch; however, a batch
->   can’t be posted if anyone is making changes to it.
+>   Inventory transactions can be entered individually or in batches. Individual transactions are entered and posted immediately, so your records are always up to date. You can’t print edit lists for transactions that aren’t entered in a batch. Batches can be used to group and save transactions, allowing you to review the transactions and make corrections before they’re posted. More than one person can enter transactions in the same batch; however, a batch can’t be posted if anyone is making changes to it.
 
->   Recurring batches remain in Inventory Control after posting. However, the
->   batches won’t post again automatically. For example, if you’ve created a
->   recurring batch for all monthly transactions, the batch won’t post
->   automatically each month. To post a recurring batch, you must update your
->   transaction information for each transaction in the batch, then mark and
->   post the batch manually. Batches that have been marked as single-use are
->   deleted when the posting process is complete.
+>   Recurring batches remain in Inventory Control after posting. However, the batches won’t post again automatically. For example, if you’ve created a recurring batch for all monthly transactions, the batch won’t post automatically each month. To post a recurring batch, you must update your transaction information for each transaction in the batch, then mark and post the batch manually. Batches that have been marked as single-use are deleted when the posting process is complete.
 
->   Inventory Control batches originate in either Item Transaction Entry or Item
->   Transfer Entry. A batch with an Item Transaction Entry origin can contain a
->   mix of variance and adjustment document types. A batch with an Item Transfer
->   Entry origin can contain only transfer documents. Since batches can have
->   only one origin, you can have batches with the same name, but different
->   origins.
+>   Inventory Control batches originate in either Item Transaction Entry or Item Transfer Entry. A batch with an Item Transaction Entry origin can contain a mix of variance and adjustment document types. A batch with an Item Transfer Entry origin can contain only transfer documents. Since batches can have only one origin, you can have batches with the same name, but different origins.
 
->   **Transaction Entry** The origin of the batch should be Transaction Entry if
->   the batch will be used to group and post information about inventory
->   adjustments. For information about entering transactions with the
->   Transaction Entry origin, refer to *Entering an adjustment or variance
->   transaction*.
+>   **Transaction Entry** The origin of the batch should be Transaction Entry if the batch will be used to group and post information about inventory adjustments. For information about entering transactions with the Transaction Entry origin, refer to *Entering an adjustment or variance transaction*.
 
->   **Transfer Entry** The origin of the batch should be Transfer Entry if the
->   batch will be used to group and post information about movement of items
->   from one site or type to another site or type. For information about
->   entering transactions with the Item Transfer Entry origin, refer to
->   *Transferring an item to a different site* or *Changing the quantity type of
->   an item*.
+>   **Transfer Entry** The origin of the batch should be Transfer Entry if the batch will be used to group and post information about movement of items from one site or type to another site or type. For information about entering transactions with the Item Transfer Entry origin, refer to *Transferring an item to a different site* or *Changing the quantity type of an item*.
 
->   **Assembly Entry** The origin of the batch should be Assembly Entry if the
->   batch will be used to group and post information about assembly transactions
->   entered in Bill of Materials to create finished goods from component items.
->   For more information about assembly transactions, refer to your Bill of
->   Materials documentation.
+>   **Assembly Entry** The origin of the batch should be Assembly Entry if the batch will be used to group and post information about assembly transactions entered in Bill of Materials to create finished goods from component items. For more information about assembly transactions, refer to your Bill of Materials documentation.
 
 ### Creating a batch
 
->   Use the Inventory Batch Entry window to create batches that you use just
->   once (single-use), or recurring batches for transactions you enter
->   regularly.
+>   Use the Inventory Batch Entry window to create batches that you use just once (single-use), or recurring batches for transactions you enter regularly.
 
 >   **To create a batch:**
 
@@ -4897,115 +4599,77 @@ Chapter 20: Batches
 
 ![](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
 
-1.  Enter the batch ID and origin.
+2.  Enter the batch ID and origin.
 
->   *The origin for an existing batch won’t be displayed automatically if you
->   enter the batch ID manually rather than selecting it from the lookup window.
->   Since batches with different origins can have the same ID, you must select
->   the appropriate origin before the information about the batch is displayed.*
+>   *The origin for an existing batch won’t be displayed automatically if you enter the batch ID manually rather than selecting it from the lookup window. Since batches with different origins can have the same ID, you must select the appropriate origin before the information about the batch is displayed.*
 
-1.  Select a batch frequency, unless you’re creating a batch for assembly
-    transactions.
+3.  Select a batch frequency, unless you’re creating a batch for assembly transactions.
 
-2.  Mark Post to General Ledger if you want this batch to post to General
-    Ledger. (If you select Assembly Entry as the origin, this option isn’t
-    available. Assembly transactions will post to or through General Ledger
-    based on your selection in the Posting Setup window.)
+4.  Mark Post to General Ledger if you want this batch to post to General Ledger. (If you select Assembly Entry as the origin, this option isn’t available. Assembly transactions will post to or through General Ledger based on your selection in the Posting Setup window.)
 
-3.  Enter the posting date. For more information about selecting posting dates,
-    choose Help \>\> Index \>\> Posting.
+5.  Enter the posting date. For more information about selecting posting dates, choose Help \>\> Index \>\> Posting.
 
->   If you selected to post by transaction date in the Posting Setup window, the
->   posting date you enter in the transaction entry window is used. If you don’t
->   enter a date here, the user date is used as the default posting date.
+>   If you selected to post by transaction date in the Posting Setup window, the posting date you enter in the transaction entry window is used. If you don’t enter a date here, the user date is used as the default posting date.
 
-1.  Enter any requirements for posting the batch, such as quantity totals or
-    number of transactions. The batch must meet these requirements before you
-    can post it.
+6.  Enter any requirements for posting the batch, such as quantity totals or number of transactions. The batch must meet these requirements before you can post it.
 
-2.  Choose Save.
+7.  Choose Save.
 
-3.  When you have entered and saved all the transactions for a batch, return to
-    the Inventory Batch Entry window, select the batch, and print an edit list
-    (File \>\> Print) to verify your entries.
+8.  When you have entered and saved all the transactions for a batch, return to the Inventory Batch Entry window, select the batch, and print an edit list (File \>\> Print) to verify your entries.
 
 ### Modifying a batch
 
->   Use the Inventory Batch Entry window to make changes to the transactions in
->   a batch, if needed. Before posting a batch, you might want to print an edit
->   list by displaying the batch in the Inventory Batch Entry window, then
->   choosing File \>\> Print. The edit list summarizes the transactions that are
->   part of the batch. You can then edit the transactions, if needed, before
->   they’re posted.
+>   Use the Inventory Batch Entry window to make changes to the transactions in a batch, if needed. Before posting a batch, you might want to print an edit list by displaying the batch in the Inventory Batch Entry window, then choosing File \>\> Print. The edit list summarizes the transactions that are part of the batch. You can then edit the transactions, if needed, before they’re posted.
 
->   Once the batch is posted, the transactions are part of your company’s
->   permanent records. To edit those transactions, you must use the procedures
->   outlined in *Chapter 25, “Transaction corrections.”*
+>   Once the batch is posted, the transactions are part of your company’s permanent records. To edit those transactions, you must use the procedures outlined in *Chapter 25, “Transaction corrections.”*
 
->   *This procedure assumes that you’ve already added transaction information to
->   the batch. For more information refer to Entering an adjustment or variance
->   transaction and Transferring an item to a different site.*
+>   *This procedure assumes that you’ve already added transaction information to the batch. For more information refer to Entering an adjustment or variance transaction and Transferring an item to a different site.*
 
 >   **To modify a batch:**
 
 1.  Open the Inventory Batch Entry window.
 >   (Inventory \>\> Transactions \>\> Batches)
 
-1.  Enter or select the batch ID and origin.
+2.  Enter or select the batch ID and origin.
 
 >   *The origin for an existing batch won’t be displayed automatically if you
 >   enter the batch ID manually rather than selecting it from the lookup window.
 >   Since batches with different origins can have the same ID, you must select
 >   the appropriate origin before the information about the batch is displayed.*
 
-1.  Make any required changes in the Inventory Batch Entry window.
+3.  Make any required changes in the Inventory Batch Entry window.
 
-2.  To modify a transaction or to enter new transactions, choose Transactions.
-    The transaction entry window opens.
+4.  To modify a transaction or to enter new transactions, choose Transactions. The transaction entry window opens.
 
-3.  In the transaction entry window, enter or select a document number.
+5.  In the transaction entry window, enter or select a document number.
 
-4.  When you have finished making transaction changes, save the information and
-    close the window to display the Inventory Batch Entry window.
+6.  When you have finished making transaction changes, save the information and close the window to display the Inventory Batch Entry window.
 
-5.  To print an edit list, select the batch ID and origin, and choose File \>\>
-    Print. This edit list shows information for the entire batch.
+7.  To print an edit list, select the batch ID and origin, and choose File \>\> Print. This edit list shows information for the entire batch.
 
-6.  Check your entries for accuracy, make any additional changes, then save the
-    batch.
+6.  Check your entries for accuracy, make any additional changes, then save the batch.
 
 ### Deleting a batch
 
->   Use the Inventory Batch Entry window to delete a batch. Deleting a batch
->   also deletes the transactions in the batch.
+>   Use the Inventory Batch Entry window to delete a batch. Deleting a batch also deletes the transactions in the batch.
 
 >   **To delete a batch:**
 
 1.  Open the Inventory Batch Entry window.
 >   (Inventory \>\> Transactions \>\> Batches)
 
-1.  Enter or select a batch ID and the appropriate origin.
+2.  Enter or select a batch ID and the appropriate origin.
 
-2.  Choose Delete. An alert message appears, asking if you’re sure you want to
-    delete the batch. Choose Yes.
+3.  Choose Delete. An alert message appears, asking if you’re sure you want to delete the batch. Choose Yes.
 
 Chapter 21: Transaction entry
 -----------------------------
 
->   Use item transactions to complete inventory management activities such as
->   inventory adjustments and transfers. Inventory Control also helps you to
->   enter and post transactions, enter serial or lot numbers for items, and void
->   transactions.
+>   Use item transactions to complete inventory management activities such as inventory adjustments and transfers. Inventory Control also helps you to enter and post transactions, enter serial or lot numbers for items, and void transactions.
 
->   If you’ve decided to enter transactions individually, you must post each
->   transaction before you can enter the next. If you choose to use batches, you
->   can add several transactions to a batch and then post the batch at your
->   convenience. Refer to *Chapter 20, “Batches,”* for more information about
->   using batches to group and post transactions.
+>   If you’ve decided to enter transactions individually, you must post each transaction before you can enter the next. If you choose to use batches, you can add several transactions to a batch and then post the batch at your convenience. Refer to *Chapter 20, “Batches,”* for more information about using batches to group and post transactions.
 
->   *Procedures for entering and voiding transactions are discussed here. Refer
->   to Chapter 24, “Posting,” and Chapter 25, “Transaction corrections,” for
->   more information about posting or modifying transactions.*
+>   *Procedures for entering and voiding transactions are discussed here. Refer to Chapter 24, “Posting,” and Chapter 25, “Transaction corrections,” for more information about posting or modifying transactions.*
 
 >   The following information is discussed:
 
@@ -5053,45 +4717,25 @@ Chapter 21: Transaction entry
 
 ### Inventory Control transactions
 
->   Inventory Control includes three types of inventory transactions:
->   adjustment, variance, and transfer transactions.
+>   Inventory Control includes three types of inventory transactions: adjustment, variance, and transfer transactions.
 
->   *Refer to the Microsoft Dynamics GP Bill of Materials documentation for more
->   information about assembly transactions.*
+>   *Refer to the Microsoft Dynamics GP Bill of Materials documentation for more information about assembly transactions.*
 
->   You’ll use the different types of transactions to record different types of
->   information. You can use these transaction types only for items whose type
->   is Sales Inventory or Discontinued.
+>   You’ll use the different types of transactions to record different types of information. You can use these transaction types only for items whose type is Sales Inventory or Discontinued.
 
->   **Adjustment transactions** Use adjustment transactions to account for
->   changes in inventory due to the purchase or sale of inventoried items.
+>   **Adjustment transactions** Use adjustment transactions to account for changes in inventory due to the purchase or sale of inventoried items.
 
->   **Variance transactions** Use variance transactions to account for
->   differences between quantities recorded in Inventory Control and the results
->   of stock counts.
+>   **Variance transactions** Use variance transactions to account for differences between quantities recorded in Inventory Control and the results of stock counts.
 
->   **Transfer transactions** Use transfer transactions to account for moving
->   items from one site to another, or changing items from one type to another.
+>   **Transfer transactions** Use transfer transactions to account for moving items from one site to another, or changing items from one type to another.
 
->   **In-transit transfer transactions** Use in-transit transfer transactions to
->   account for the location of items that are being moved from one site to
->   another. Once the goods are fulfilled and shipped from the from site to the
->   via site, an inventory transfer transaction is posted, creating a purchase
->   receipt of the goods in the via location.
+>   **In-transit transfer transactions** Use in-transit transfer transactions to account for the location of items that are being moved from one site to another. Once the goods are fulfilled and shipped from the from site to the via site, an inventory transfer transaction is posted, creating a purchase receipt of the goods in the via location.
 
 ### How bins affect transactions
 
->   If you’re using multiple bins, a bin must be specified for every transaction
->   that involves inventory quantities: item transfers, sales order
->   fulfillments, purchase receipts, assembly transactions, and so on. Bin
->   selections are needed to keep bin quantity information up-to-date, but they
->   don’t affect posting. From an accounting perspective, it doesn’t matter if
->   you have 100 widgets at the North site in one bin or in 100 bins: what
->   matters is that you have 100 widgets at the North site.
+>   If you’re using multiple bins, a bin must be specified for every transaction that involves inventory quantities: item transfers, sales order fulfillments, purchase receipts, assembly transactions, and so on. Bin selections are needed to keep bin quantity information up-to-date, but they don’t affect posting. From an accounting perspective, it doesn’t matter if you have 100 widgets at the North site in one bin or in 100 bins: what matters is that you have 100 widgets at the North site.
 
->   Bins do not affect cost layers. For example, suppose the widgets at the
->   North site have a FIFO Perpetual valuation method, and your receipts of
->   widgets occurred like this:
+>   Bins do not affect cost layers. For example, suppose the widgets at the North site have a FIFO Perpetual valuation method, and your receipts of widgets occurred like this:
 
 | **Receipt date** | **Quantity** | **Cost** | **Bin** |
 |------------------|--------------|----------|---------|
@@ -5099,79 +4743,51 @@ Chapter 21: Transaction entry
 | June 3, 2016     | 100          | \$4.50   | Bin B   |
 | June 5, 2016     | 50           | \$6      | Bin A   |
 
->   If you remove 25 widgets from Bin B, the value for the items in the
->   transaction would be \$5, because the cost layers are kept only at the site
->   level.
+>   If you remove 25 widgets from Bin B, the value for the items in the transaction would be \$5, because the cost layers are kept only at the site level.
 
 ### Document dates and posting dates
 
->   The document date is the date that is shown in the Item Transaction Entry
->   window or the Item Transfer Entry window. This is the date your Inventory
->   Control records are updated.
+>   The document date is the date that is shown in the Item Transaction Entry window or the Item Transfer Entry window. This is the date your Inventory Control records are updated.
 
->   The posting date is when your General Ledger files are updated. The posting
->   date is either assigned for the batch or can be entered by choosing the
->   expansion button in the Document Date field of the Item Transaction Entry
->   window or the Item Transfer Entry window.
+>   The posting date is when your General Ledger files are updated. The posting date is either assigned for the batch or can be entered by choosing the expansion button in the Document Date field of the Item Transaction Entry window or the Item Transfer Entry window.
 
 ### Entering an adjustment or variance transaction
 
->   Use the Item Transaction Entry window to enter transactions about
->   adjustments and variances of inventory quantities. For example, if you
->   purchase items to add to inventory, you’d enter an adjustment transaction.
->   For more information about adjustments and variances, refer to *Inventory
->   Control transactions*.
+>   Use the Item Transaction Entry window to enter transactions about adjustments and variances of inventory quantities. For example, if you purchase items to add to inventory, you’d enter an adjustment transaction. For more information about adjustments and variances, refer to *Inventory Control transactions*.
 
->   *You should not open the Item Maintenance Options window while using the
->   Item Transaction Entry window.*
+>   *You should not open the Item Maintenance Options window while using the Item Transaction Entry window.*
 
 >   **To enter an adjustment or variance transaction:**
 
-1.  In the navigation pane, choose the Inventory button, and then choose the
-    Item Transactions list.
+1.  In the navigation pane, choose the Inventory button, and then choose the Item Transactions list.
 
 2.  Choose Adjustment or Variance to open the Item Transaction Entry window.
 
 ![](media/30240561ca150826302ea019631b2128.jpg)
 
-1.  Enter the document type and date. The document number appears automatically
-    when you move to the field.
+3.  Enter the document type and date. The document number appears automatically when you move to the field.
 
-2.  Enter or select a batch ID.
+4.  Enter or select a batch ID.
 
-3.  If all items on this transaction are for the same site, enter or select a
-    default site ID.
+5.  If all items on this transaction are for the same site, enter or select a default site ID.
 
->   If you don’t select a site, you’ll need to select a Site ID for each of the
->   items in the scrolling window.
+>   If you don’t select a site, you’ll need to select a Site ID for each of the items in the scrolling window.
 
-1.  In the scrolling window, enter or select an item number.
+6.  In the scrolling window, enter or select an item number.
 
 *You will not be able to enter an increase adjustment for an inactive item.*
 
-1.  Enter or select a reason code. Reason codes are optional, and are used to
-    help identify specific causes for item movement.
+7.  Enter or select a reason code. Reason codes are optional, and are used to help identify specific causes for item movement.
 
-2.  Enter the adjustment or variance quantity. To enter a decrease adjustment,
-    enter a negative number.
+8.  Enter the adjustment or variance quantity. To enter a decrease adjustment, enter a negative number.
 
->   When you enter the item number, the unit cost is displayed for the base unit
->   of measure. However, the unit cost displayed in the window might be
->   different than the amount posted for the transaction, depending on the
->   valuation method used for the item.
+>   When you enter the item number, the unit cost is displayed for the base unit of measure. However, the unit cost displayed in the window might be different than the amount posted for the transaction, depending on the valuation method used for the item.
 
->   *Cost information for decrease transactions will be displayed only if you
->   marked the*
+>   *Cost information for decrease transactions will be displayed only if you marked the *Display Cost for Decrease Adjustments option in the Inventory Control Setup window. For more information, refer to Specifying preferences and default entries.*
 
->   *Display Cost for Decrease Adjustments option in the Inventory Control Setup
->   window. For more information, refer to Specifying preferences and default
->   entries.*
+>   If the default site ID doesn’t apply for a particular item, you can change the site ID in the scrolling window.
 
->   If the default site ID doesn’t apply for a particular item, you can change
->   the site ID in the scrolling window.
-
-1.  When you move off the line, another window will open if more information is
-    needed.
+9.  When you move off the line, another window will open if more information is needed.
 
 >   Refer to the table.
 
@@ -5181,75 +4797,51 @@ Chapter 21: Transaction entry
 | The item is tracked by serial numbers                                            | The Item Serial Number Entry window opens, where you can specify the serial numbers of the items you’re entering. If you’re using multiple bins, you also can specify the bin for each item. Refer to *Specifying serial numbers for inventory quantities*. |
 | The item is not tracked by lot or serial numbers, but you’re using multiple bins | The Bin Quantity Entry window opens, where you can specify how much of the total quantity should be added to each bin. Refer to *Specifying bins for inventory quantities*.                                                                                 |
 
->   *You can choose Distributions to change or verify the accounts affected by
->   the transaction, if necessary. Refer to Changing distributions for a
->   transaction for more information.*
+>   *You can choose Distributions to change or verify the accounts affected by the transaction, if necessary. Refer to Changing distributions for a transaction for more information.*
 
-1.  Continue, repeating steps 5 through 8 to add more transaction lines as
-    needed.
+10.  Continue, repeating steps 5 through 8 to add more transaction lines as needed.
 
-2.  Save or post the transaction.
+11.  Save or post the transaction.
 
->   Once you’ve saved a transaction, you can print an edit list to verify your
->   entries by selecting the document number, then choosing File \>\> Print.
+>   Once you’ve saved a transaction, you can print an edit list to verify your entries by selecting the document number, then choosing File \>\> Print.
 
-1.  When you’ve finished, close the window and print posting journals, if
-    needed. Depending on how posting options in the Posting Setup window have
-    been set up, the posting journals might appear for printing when you close
-    the window.
+12.  When you’ve finished, close the window and print posting journals, if needed. Depending on how posting options in the Posting Setup window have been set up, the posting journals might appear for printing when you close the window.
 
 ### Transferring an item to a different site
 
->   Use the Item Transfer Entry window to enter transactions to move inventoried
->   items from one site to another. For example, use this procedure to transfer
->   an item from the East warehouse to the West warehouse. You can transfer only
->   items whose type is Sales Inventory or Discontinued.
+>   Use the Item Transfer Entry window to enter transactions to move inventoried items from one site to another. For example, use this procedure to transfer an item from the East warehouse to the West warehouse. You can transfer only items whose type is Sales Inventory or Discontinued.
 
->   *The allocated quantity of the item at the “from” site is updated as soon as
->   you enter the transfer, but the on-hand quantity of the item at the “to”
->   site isn’t updated until you post the transaction or the batch that it is
->   part of.*
+>   *The allocated quantity of the item at the “from” site is updated as soon as you enter the transfer, but the on-hand quantity of the item at the “to” site isn’t updated until you post the transaction or the batch that it is part of.*
 
 >   **To transfer an item to a different site:**
 
-1.  In the navigation pane, choose the Inventory button, and then choose the
-    Item Transactions list.
+1.  In the navigation pane, choose the Inventory button, and then choose the Item Transactions list.
 
 2.  Choose Site Transfer to open the Item Transfer Entry window.
 
 ![](media/9847e7e74b678d003cffbd19772ec29e.jpg)
 
-1.  Enter the document number and date.
+3.  Enter the document number and date.
 
-2.  Enter or select a batch ID.
+4.  Enter or select a batch ID.
 
-3.  If all the items are being transferred from or to the same site, you can
-    enter or select default site IDs.
+5.  If all the items are being transferred from or to the same site, you can enter or select default site IDs.
 
-*You can change the site ID for individual items in the scrolling window, if
-necessary.*
+*You can change the site ID for individual items in the scrolling window, if necessary.*
 
-1.  In the scrolling window, enter or select the item number to transfer.
+6.  In the scrolling window, enter or select the item number to transfer.
 
->   When you enter the item number, the unit cost for the selected unit of
->   measure is displayed.
+>   When you enter the item number, the unit cost for the selected unit of measure is displayed.
 
-1.  Enter or select a reason code. Reason codes are optional, and are used to
-    help identify specific causes for item movement.
+7.  Enter or select a reason code. Reason codes are optional, and are used to help identify specific causes for item movement.
 
-2.  Enter the unit of measure and number of items being transferred.
+8.  Enter the unit of measure and number of items being transferred.
 
-3.  In the scrolling window, enter or select the site IDs of the sites you’re
-    transferring items from and to.
+9.  In the scrolling window, enter or select the site IDs of the sites you’re transferring items from and to.
 
->   To view additional information about the item at the selected site if you’re
->   using
+>   To view additional information about the item at the selected site if you’re using ATP, click the Quantity Available link to open the Inventory Available to Promise window.
 
->   ATP, click the Quantity Available link to open the Inventory Available to
->   Promise window.
-
-1.  When you move off the line, another window will open if more information is
-    needed.
+10.  When you move off the line, another window will open if more information is needed.
 
 >   Refer to the table.
 
@@ -5260,64 +4852,46 @@ necessary.*
 | The item is tracked by serial numbers                                            | The Item Transfer Serial Number Entry window opens, where you can specify the serial numbers of the items you’re entering. If you’re using multiple bins, you also can specify the bin for each item. Refer to *Specifying serial numbers for a transfer*. |
 | The item is not tracked by lot or serial numbers, but you’re using multiple bins | The Bin Quantity Transfer Entry window opens, where you can specify how much of the total quantity should be removed from and added to a bin. Refer to *Specifying bins for item transfers*.                                                               |
 
-1.  Repeat steps 5 through 9 until you’ve entered all the items for this
-    document.
+11.  Repeat steps 5 through 9 until you’ve entered all the items for this document.
 
-2.  Save or post the transaction.
+12.  Save or post the transaction.
 
->   Once you’ve saved a transaction, you can print an edit list to verify your
->   entries by selecting the document number, then choosing File \>\> Print.
+>   Once you’ve saved a transaction, you can print an edit list to verify your entries by selecting the document number, then choosing File \>\> Print.
 
-1.  When you’ve finished, close the window and print posting journals, if
-    needed. Depending on how posting options in the Posting Setup window have
-    been set up, the posting journals might appear for printing when you close
-    the window.
+13.  When you’ve finished, close the window and print posting journals, if needed. Depending on how posting options in the Posting Setup window have been set up, the posting journals might appear for printing when you close the window.
 
 ### Changing the quantity type of an item
 
->   Use the Item Transfer Entry window to enter transactions to change the
->   quantity type of inventoried items. For example, you can use this procedure
->   to change the quantity type of component items from On Hand to In Use. You
->   can change the quantity type only of items whose type is Sales Inventory or
->   Discontinued.
+>   Use the Item Transfer Entry window to enter transactions to change the quantity type of inventoried items. For example, you can use this procedure to change the quantity type of component items from On Hand to In Use. You can change the quantity type only of items whose type is Sales Inventory or Discontinued.
 
 >   **To change the quantity type of an item:**
 
 1.  Open the Item Transfer Entry window.
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
-1.  Enter the document number and date.
+2.  Enter the document number and date.
 
-2.  Enter or select a batch ID.
+3.  Enter or select a batch ID.
 
-3.  If all the items you’re changing are from and to the same site, you can
-    enter or select a default site ID. The sites can be the same or
-    different—for example, you can transfer items from site to site with the
-    same transaction you use to change the items’ quantity type.
+4.  If all the items you’re changing are from and to the same site, you can enter or select a default site ID. The sites can be the same or different—for example, you can transfer items from site to site with the same transaction you use to change the items’ quantity type.
 
-*You can change the site ID for individual items in the scrolling window, if
-necessary.*
+*You can change the site ID for individual items in the scrolling window, if necessary.*
 
-1.  In the scrolling window, enter or select the item number with the quantity
-    type to change.
+5.  In the scrolling window, enter or select the item number with the quantity type to change.
 
-2.  Enter or select a reason code. Reason codes are optional, and are used to
-    help identify specific causes for item movement.
+6.  Enter or select a reason code. Reason codes are optional, and are used to help identify specific causes for item movement.
 
-3.  Enter the unit of measure and number of items to be transferred to a
-    different quantity type.
+7.  Enter the unit of measure and number of items to be transferred to a different quantity type.
 
-4.  Choose Quantity Type. The Item Transfer Quantity Type Entry window opens.
+8.  Choose Quantity Type. The Item Transfer Quantity Type Entry window opens.
 
 ![](media/4ef2f4135920ccc3ae6b5277f1b9ce8f.jpg)
 
-1.  Enter or select the quantity type for the item at the sites. Choices include
-    On Hand, Returned, In Use, In Service, and Damaged.
+9.  Enter or select the quantity type for the item at the sites. Choices include On Hand, Returned, In Use, In Service, and Damaged.
 
-2.  Choose OK to save the information and close the window.
+10.  Choose OK to save the information and close the window.
 
-3.  When you move off the line, another window will open if more information is
-    needed.
+11.  When you move off the line, another window will open if more information is needed.
 
 >   Refer to the table.
 
@@ -5327,438 +4901,289 @@ necessary.*
 | The item is tracked by serial numbers                                            | The Item Transfer Serial Number Entry window opens, where you can specify the serial numbers of the items you’re entering. If you’re using multiple bins, you also can specify the bin for each item. Refer to *Specifying serial numbers for a transfer*. |
 | The item is not tracked by lot or serial numbers, but you’re using multiple bins | The Bin Quantity Transfer Entry window opens, where you can specify how much of the total quantity should be added to or removed from a bin. Refer to *Specifying bins for item transfers*.                                                                |
 
-1.  Repeat steps 5 through 10 until you’ve entered all the items for this
-    document.
+12.  Repeat steps 5 through 10 until you’ve entered all the items for this document.
 
-2.  Save or post the transaction.
+13.  Save or post the transaction.
 
->   Once you’ve saved a transaction, you can print an edit list to verify your
->   entries by selecting the document number, then choosing File \>\> Print.
+>   Once you’ve saved a transaction, you can print an edit list to verify your entries by selecting the document number, then choosing File \>\> Print.
 
-1.  When you’ve finished, close the window and print posting journals, if
-    needed. Depending on how posting options in the Posting Setup window have
-    been set up, the posting journals might appear for printing when you close
-    the window.
+14.  When you’ve finished, close the window and print posting journals, if needed. Depending on how posting options in the Posting Setup window have been set up, the posting journals might appear for printing when you close the window.
 
 ### Entering an in-transit transfer
 
->   If you are transferring material from one site to another, you may want to
->   use a via site, an interim location, to prevent the material from being sold
->   while in transit to the destination site. You can use the In-Transit
->   Transfer Entry window to enter intransit transfer transactions to account
->   for the location of items that are being moved from one site to another. You
->   also can enter landed costs for the in-transit transfer. Once the goods are
->   fulfilled and shipped from the starting site to the via site, an inventory
->   transfer transaction is posted, creating a purchase receipt of the goods in
->   the via location.
+>   If you are transferring material from one site to another, you may want to use a via site, an interim location, to prevent the material from being sold while in transit to the destination site. You can use the In-Transit Transfer Entry window to enter intransit transfer transactions to account for the location of items that are being moved from one site to another. You also can enter landed costs for the in-transit transfer. Once the goods are fulfilled and shipped from the starting site to the via site, an inventory transfer transaction is posted, creating a purchase receipt of the goods in the via location.
 
->   You can choose File \>\> Print to print picking tickets and packing slips.
->   The customer and address information entered for the in-transit transfer
->   prints on the packing slip.
+>   You can choose File \>\> Print to print picking tickets and packing slips. The customer and address information entered for the in-transit transfer prints on the packing slip.
 
 >   **To enter an in-transit transfer:**
 
-1.  In the navigation pane, choose the Inventory button, and then choose the
-    InTransit Transfers list.
+1.  In the navigation pane, choose the Inventory button, and then choose the InTransit Transfers list.
 
-2.  In the New group, choose Transfer to open the In-Transit Transfer Entry
-    window.
+2.  In the New group, choose Transfer to open the In-Transit Transfer Entry window.
 
 ![](media/0cde0d919ac2585bde1711ee959d0805.jpg)
 
-1.  Enter a document number or choose New and accept the default document
-    number.
+3.  Enter a document number or choose New and accept the default document number.
 
-2.  Enter or accept the default order date.
+4.  Enter or accept the default order date.
 
-3.  Enter a the date you expect the merchandise to be at the to site.
+5.  Enter a the date you expect the merchandise to be at the to site.
 
-4.  Enter or select the site you are shipping the merchandise from site
+6.  Enter or select the site you are shipping the merchandise from site
 
-5.  Enter or select a via site, an interim location when an item is in the
-    physical process of being transferred to one site from another.
+7.  Enter or select a via site, an interim location when an item is in the physical process of being transferred to one site from another.
 
-6.  Enter or select the site that the merchandise is shipping to.
+8.  Enter or select the site that the merchandise is shipping to.
 
->   The to site’s address information displays in the address fields after you
->   leave the To Site ID field.
+>   The to site’s address information displays in the address fields after you leave the To Site ID field.
 
-1.  Enter or select the shipping method to be used when transferring merchandise
+9.  Enter or select the shipping method to be used when transferring merchandise
     between locations.
 
-2.  Accept or enter the customer name and address information. The default
-    customer name is the description of the to site. The address is printed on
-    the packing slip.
+10.  Accept or enter the customer name and address information. The default customer name is the description of the to site. The address is printed on the packing slip.
 
-3.  Enter or select the item number you are transferring.
+11.  Enter or select the item number you are transferring.
 
-4.  Enter or select a reason code. Reason codes are optional, and are used to
-    help identify specific causes for item movement.
+12.  Enter or select a reason code. Reason codes are optional, and are used to help identify specific causes for item movement.
 
-5.  Accept the default unit of measure or enter a unit of measure for the line
-    item.
+13.  Accept the default unit of measure or enter a unit of measure for the line item.
 
-6.  Enter the quantity of the item to transfer.
+14.  Enter the quantity of the item to transfer.
 
-7.  Enter the quantity to be picked from inventory. You can enter a quantity
-    that is lower than the quantity ordered, but not more than the quantity
-    ordered.
+15.  Enter the quantity to be picked from inventory. You can enter a quantity that is lower than the quantity ordered, but not more than the quantity ordered.
 
-8.  Enter a landed cost group ID, or accept the default if you’re using landed
-    cost. The landed cost IDs that are part of the group will be assigned
-    automatically when the shipment is received.
+16.  Enter a landed cost group ID, or accept the default if you’re using landed cost. The landed cost IDs that are part of the group will be assigned automatically when the shipment is received.
 
-9.  If you are using multiple bins and lot or serial numbers aren’t tracked for
-    an item, the Bin Quantity Transfer Entry window opens automatically after
-    you leave the line. You can use the Bin Quantity Transfer Entry window to
-    specify bin quantities to move from one bin to another.
+17.  If you are using multiple bins and lot or serial numbers aren’t tracked for an item, the Bin Quantity Transfer Entry window opens automatically after you leave the line. You can use the Bin Quantity Transfer Entry window to specify bin quantities to move from one bin to another.
 
->   If you are using multiple bins and lot or serial numbers are tracked for an
->   item, the Transfer Lot Number Entry window or the Transfer Line Entry –
->   Serial window opens. You can enter bin numbers and select lot or serial
->   numbers for the item.
+>   If you are using multiple bins and lot or serial numbers are tracked for an item, the Transfer Lot Number Entry window or the Transfer Line Entry – Serial window opens. You can enter bin numbers and select lot or serial numbers for the item.
 
-1.  Continue, repeating steps 11 through 16, to enter items that you want to
-    transfer.
+18.  Continue, repeating steps 11 through 16, to enter items that you want to transfer.
 
-2.  If lot or serial numbers are tracked for an item, select the item and choose
-    Serial/Lot to open the Transfer Lot Number Entry window or the Transfer Line
-    Entry – Serial window. You can use these windows to view or select lot or
-    serial numbers. If you are using multiple bins, you also can enter bin
-    numbers for the serial or lot number.
+19.  If lot or serial numbers are tracked for an item, select the item and choose Serial/Lot to open the Transfer Lot Number Entry window or the Transfer Line Entry – Serial window. You can use these windows to view or select lot or serial numbers. If you are using multiple bins, you also can enter bin numbers for the serial or lot number.
 
-3.  Choose Distribution to view the account distributions.
+20.  Choose Distribution to view the account distributions.
 
-4.  Choose Save or Ship. If you ship the receipt, one or more posting journals
-    and distribution breakdown registers may be printed, depending on the
-    options selected in the Posting Setup window.
+21.  Choose Save or Ship. If you ship the receipt, one or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window.
 
 ### Specifying lot numbers for a transfer
 
->   Use the Item Transfer Lot Number Entry window to specify which items—from
->   which lots—should be transferred when you enter a transfer transaction.
+>   Use the Item Transfer Lot Number Entry window to specify which items—from which lots—should be transferred when you enter a transfer transaction.
 
 >   **To specify lot numbers for a transfer:**
 
 1.  Open the Item Transfer Entry window.
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
-1.  Enter a transfer transaction for a lot-numbered item. Refer to *Transferring
-    an item to a different site* or *Changing the quantity type of an item* for
-    more information.
+2.  Enter a transfer transaction for a lot-numbered item. Refer to *Transferring an item to a different site* or *Changing the quantity type of an item* for more information.
 
->   When you move off the scrolling window line, the Item Transfer Lot Number
->   Entry window opens.
+>   When you move off the scrolling window line, the Item Transfer Lot Number Entry window opens.
 
 ![](media/0ea517b1c890abe988589a39fe13d0ac.jpg)
 
-1.  Enter or select a lot number.
+3.  Enter or select a lot number.
 
->   Refer to *Entering lot attribute information* for information about entering
->   additional lot information, if needed.
+>   Refer to *Entering lot attribute information* for information about entering additional lot information, if needed.
 
-*An icon appears in the Lot Number field if you selected a lot number that has
-expired.*
+*An icon appears in the Lot Number field if you selected a lot number that has expired.*
 
-1.  Enter quantity information.
+4.  Enter quantity information.
 
->   **If you’re not using multiple bins** Enter the quantity to transfer in the
->   Quantity Selected field, and choose Insert to add the lot number and
->   quantity to the lower scrolling window.
+>   **If you’re not using multiple bins** Enter the quantity to transfer in the Quantity Selected field, and choose Insert to add the lot number and quantity to the lower scrolling window.
 
->   **If you’re using multiple bins** Enter or select a From Bin and a To Bin.
->   Enter the Quantity Selected—the quantity to be transferred from a bin at one
->   site to a bin at a different site—and choose Insert to add the information
->   to the lower scrolling window.
+>   **If you’re using multiple bins** Enter or select a From Bin and a To Bin. Enter the Quantity Selected—the quantity to be transferred from a bin at one site to a bin at a different site—and choose Insert to add the information to the lower scrolling window.
 
-1.  Continue, repeating steps 3 and 4 until you’ve specified the lot numbers of
-    all items to be transferred. Be sure the Extended Quantity matches the Lots
-    Selected.
+5.  Continue, repeating steps 3 and 4 until you’ve specified the lot numbers of all items to be transferred. Be sure the Extended Quantity matches the Lots Selected.
 
-2.  Choose OK to save your entries and return to the Item Transfer Entry window.
+6.  Choose OK to save your entries and return to the Item Transfer Entry window.
 
 ### Specifying serial numbers for a transfer
 
->   Use the Item Transfer Serial Number Entry window to specify which items—by
->   their serial numbers—should be transferred when you enter a transfer
->   transaction.
+>   Use the Item Transfer Serial Number Entry window to specify which items—by their serial numbers—should be transferred when you enter a transfer transaction.
 
 >   **To specify serial numbers for a transfer:**
 
 1.  Open the Item Transfer Entry window.
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
-1.  Enter a transfer transaction for a serial-numbered item. Refer to
-    *Transferring an item to a different site* or *Changing the quantity type of
-    an item* for more information.
+2.  Enter a transfer transaction for a serial-numbered item. Refer to *Transferring an item to a different site* or *Changing the quantity type of an item* for more information.
 
->   When you move off the scrolling window line, the Item Transfer Serial Number
->   Entry window opens.
+>   When you move off the scrolling window line, the Item Transfer Serial Number Entry window opens.
 
 ![](media/7feef2f1f9cde78aa3c244846fbf047d.jpg)
 
-1.  Choose serial number information to view.
+3.  Choose serial number information to view.
 
->   **If you’re not using multiple bins** Information about the available serial
->   numbers is displayed in the Available scrolling window.
+>   **If you’re not using multiple bins** Information about the available serial numbers is displayed in the Available scrolling window.
 
->   **If you’re using multiple bins** You can view information about all
->   available serial numbers in the Available scrolling window, or you can
->   choose Restrict to Bin and enter or select a bin to limit information in the
->   scrolling window to only those serial numbers for items in a specific bin.
+>   **If you’re using multiple bins** You can view information about all available serial numbers in the Available scrolling window, or you can choose Restrict to Bin and enter or select a bin to limit information in the scrolling window to only those serial numbers for items in a specific bin.
 
-1.  In the Available scrolling window, highlight a serial number to be
-    transferred.
+4.  In the Available scrolling window, highlight a serial number to be transferred.
 
-2.  Choose Insert to move the serial number to the Selected scrolling window.
+5.  Choose Insert to move the serial number to the Selected scrolling window.
 
-3.  Continue, repeating steps 4 and 5 until you’ve specified the serial numbers
-    of all items to be transferred. Be sure the Extended Quantity matches the
-    Serial Numbers Selected.
+6.  Continue, repeating steps 4 and 5 until you’ve specified the serial numbers of all items to be transferred. Be sure the Extended Quantity matches the Serial Numbers Selected.
 
-4.  Choose OK to save your entries and return to the Item Transfer Entry window.
+7.  Choose OK to save your entries and return to the Item Transfer Entry window.
 
 ### Changing lot numbers for an in-transit transfer
 
->   Use the Transfer Lot Number Entry window to specify which items—from which
->   lots—should be transferred when you enter an in-transit transfer
->   transaction.
+>   Use the Transfer Lot Number Entry window to specify which items—from which lots—should be transferred when you enter an in-transit transfer transaction.
 
 >   **To change lot numbers for an in-transit transfer:**
 
 1.  Open the In-Transit Transfer Entry window.
 >   (Inventory \>\> Transactions \>\> In-Transit Transfer Entry)
 
-1.  Enter an in-transit transfer transaction for a lot-numbered item. Refer to
-    *Entering an in-transit transfer* for more information.
+2.  Enter an in-transit transfer transaction for a lot-numbered item. Refer to *Entering an in-transit transfer* for more information.
 
-2.  Select an item for which lot numbers are tracked and choose Serial/Lot to
-    open the Transfer Lot Number Entry window.
+3.  Select an item for which lot numbers are tracked and choose Serial/Lot to open the Transfer Lot Number Entry window.
 
 ![](media/6395ef9b31d4feb12390410ce5fabfed.jpg)
 
-1.  Select a lot number to change and choose Remove.
+4.  Select a lot number to change and choose Remove.
 
-2.  From the list of available lot numbers, select one to use, enter quantity
-    information, and choose Insert.
+5.  From the list of available lot numbers, select one to use, enter quantity information, and choose Insert.
 
->   You can also enter a lot number that hasn’t been entered. To do so, enter
->   the number in the Lot Number field, a enter quantity in the Quantity
->   Selected field, and choose Insert.
+>   You can also enter a lot number that hasn’t been entered. To do so, enter the number in the Lot Number field, a enter quantity in the Quantity Selected field, and choose Insert.
 
-*An icon appears in the Lot Number field if you selected a lot number that has
-expired.*
+*An icon appears in the Lot Number field if you selected a lot number that has expired.*
 
->   Refer to *Entering lot attribute information* for information about entering
->   additional lot information, if needed.
+>   Refer to *Entering lot attribute information* for information about entering additional lot information, if needed.
 
-1.  If you’re not using multiple bins, enter the quantity to transfer in the
-    Quantity Selected field, and choose Insert to add the lot number and
-    quantity to the lower scrolling window.
+6.  If you’re not using multiple bins, enter the quantity to transfer in the Quantity Selected field, and choose Insert to add the lot number and quantity to the lower scrolling window.
 
->   If you’re using multiple bins, enter or select a From Bin and a To Bin.
->   Enter the Quantity Selected—the quantity to be transferred from a bin at one
->   site to a bin at a different site—and choose Insert to add the information
->   to the lower scrolling window.
+>   If you’re using multiple bins, enter or select a From Bin and a To Bin. Enter the Quantity Selected—the quantity to be transferred from a bin at one site to a bin at a different site—and choose Insert to add the information to the lower scrolling window.
 
-1.  Continue, repeating steps 4 and 6 until you’ve specified the lot numbers of
-    all items to be transferred. Be sure the Extended Quantity matches the Lots
-    Selected.
+7.  Continue, repeating steps 4 and 6 until you’ve specified the lot numbers of all items to be transferred. Be sure the Extended Quantity matches the Lots Selected.
 
-2.  Choose OK to save your entries and return to the In-Transit Transfer Entry
-    window.
+8.  Choose OK to save your entries and return to the In-Transit Transfer Entry window.
 
 ### Changing serial numbers for an in-transit transfer
 
->   Use the Transfer Line Entry – Serial window to view or specify which
->   items—by their serial numbers—should be transferred when you enter a
->   in-transit transfer transaction.
+>   Use the Transfer Line Entry – Serial window to view or specify which items—by their serial numbers—should be transferred when you enter a in-transit transfer transaction.
 
->   If you’re not using multiple bins, information about the available serial
->   numbers is displayed in the Available scrolling window. If you’re using
->   multiple bins, you can view information about all available serial numbers
->   in the Available scrolling window, or you can choose Restrict to Bin and
->   enter or select a bin to limit information in the scrolling window to only
->   those serial numbers for items in a specific bin.
+>   If you’re not using multiple bins, information about the available serial numbers is displayed in the Available scrolling window. If you’re using multiple bins, you can view information about all available serial numbers in the Available scrolling window, or you can choose Restrict to Bin and enter or select a bin to limit information in the scrolling window to only those serial numbers for items in a specific bin.
 
 >   **To change serial numbers for an in-transit transfer:**
 
 1.  Open the In-Transit Transfer Entry window.
 >   (Inventory \>\> Transactions \>\> In-Transit Transfer Entry)
 
-1.  Enter an in-transit transfer transaction for a serial-numbered item. Refer
-    to *Entering an in-transit transfer* for more information.
+2.  Enter an in-transit transfer transaction for a serial-numbered item. Refer to *Entering an in-transit transfer* for more information.
 
-2.  Select an item for which serial numbers are tracked and choose Serial/Lot to
-    open the Transfer Line Entry – Serial window.
+3.  Select an item for which serial numbers are tracked and choose Serial/Lot to open the Transfer Line Entry – Serial window.
 
 ![](media/8a7f147a5d04387a557f6b3a6a8a9193.jpg)
 
-1.  Select the serial number to change and choose Remove.
+4.  Select the serial number to change and choose Remove.
 
-2.  In the Available scrolling window, highlight a serial number to transfer and
-    choose Insert.
+5.  In the Available scrolling window, highlight a serial number to transfer and choose Insert.
 
->   You can also enter a serial number that hasn’t been entered. To do so, enter
->   the number in the Serial Number field and choose Insert.
+>   You can also enter a serial number that hasn’t been entered. To do so, enter the number in the Serial Number field and choose Insert.
 
-1.  Continue, repeating steps 4 and 5 until you’ve specified the serial numbers
-    of all items to be transferred. Be sure the Extended Quantity matches the
-    Serial Numbers Selected.
+6.  Continue, repeating steps 4 and 5 until you’ve specified the serial numbers of all items to be transferred. Be sure the Extended Quantity matches the Serial Numbers Selected.
 
-2.  Choose OK to save your entries and return to the In-Transit Transfer Entry
-    window.
+7.  Choose OK to save your entries and return to the In-Transit Transfer Entry window.
 
 ### Specifying bins for item transfers
 
->   If you’re entering an item transfer and you’re using multiple bins, you’ll
->   need to specify bins for the quantities if the item is not tracked by lot or
->   serial numbers. (If the item is tracked by lot or serial numbers, the bin
->   information is included when you select the lot or serial number.) Use the
->   Bin Quantity Transfer Entry window to complete this procedure.
+>   If you’re entering an item transfer and you’re using multiple bins, you’ll need to specify bins for the quantities if the item is not tracked by lot or serial numbers. (If the item is tracked by lot or serial numbers, the bin information is included when you select the lot or serial number.) Use the Bin Quantity Transfer Entry window to complete this procedure.
 
->   *If you’re entering a transfer for lot- or serial-numbered items, you’ll
->   specify the bins when you specify the lot or serial numbers. Refer to
->   Specifying lot numbers for a transfer and Specifying serial numbers for a
->   transfer for more information.*
+>   *If you’re entering a transfer for lot- or serial-numbered items, you’ll specify the bins when you specify the lot or serial numbers. Refer to Specifying lot numbers for a transfer and Specifying serial numbers for a transfer for more information.*
 
 >   **To specify bins for item transfers:**
 
-1.  In the navigation pane, choose the Inventory button, and then choose the
-    Item Transactions list.
+1.  In the navigation pane, choose the Inventory button, and then choose the Item Transactions list.
 
 2.  Choose Bin Transfer to open the Item Transfer Entry window.
 
-3.  Enter a transfer for an item that is not tracked by lot or serial numbers.
-    Choose Bins to open the Bin Quantity Transfer Entry window.
+3.  Enter a transfer for an item that is not tracked by lot or serial numbers. Choose Bins to open the Bin Quantity Transfer Entry window.
 
 ![](media/8d9e50aef2e71f7c67adfac378575532.jpg)
 
->   The window also will open automatically when you move out of the transaction
->   line.
+>   The window also will open automatically when you move out of the transaction line.
 
-1.  Enter or select the From Bin. Information about the bin quantities will be
-    displayed in the upper scrolling window.
+4.  Enter or select the From Bin. Information about the bin quantities will be displayed in the upper scrolling window.
 
-2.  Enter the quantity to transfer in the Quantity Selected field.
+5.  Enter the quantity to transfer in the Quantity Selected field.
 
-3.  Enter or select the To Bin.
+6.  Enter or select the To Bin.
 
-4.  Choose Insert to add the information to the lower scrolling window.
+7.  Choose Insert to add the information to the lower scrolling window.
 
->   *You also can specify bins for transfers by entering the quantities directly
->   in the scrolling window and choose Insert.*
+>   *You also can specify bins for transfers by entering the quantities directly in the scrolling window and choose Insert.*
 
-1.  Continue, repeating steps 3 through 6 until the Selected Quantity equals the
-    Extended Quantity.
+8.  Continue, repeating steps 3 through 6 until the Selected Quantity equals the Extended Quantity.
 
-2.  When you’ve finished, choose OK to save the information and close the
-    window.
+9.  When you’ve finished, choose OK to save the information and close the window.
 
 ### Specifying bins for in-transit transfers
 
->   If you’re entering an in-transit transfer and you’re using multiple bins,
->   you’ll need to specify bins for the quantities if the item is not tracked by
->   lot or serial numbers. (If the item is tracked by lot or serial numbers, the
->   bin information is included when you select the lot or serial number.) Use
->   the Bin Quantity Transfer Entry window to complete this procedure.
+>   If you’re entering an in-transit transfer and you’re using multiple bins, you’ll need to specify bins for the quantities if the item is not tracked by lot or serial numbers. (If the item is tracked by lot or serial numbers, the bin information is included when you select the lot or serial number.) Use the Bin Quantity Transfer Entry window to complete this procedure.
 
->   *If you’re entering a transfer for lot- or serial-numbered items, you’ll
->   specify the bins when you specify the lot or serial numbers. Refer to
->   Changing lot numbers for an in-transit transfer and Changing serial numbers
->   for an in-transit transfer for more information.*
+>   *If you’re entering a transfer for lot- or serial-numbered items, you’ll specify the bins when you specify the lot or serial numbers. Refer to Changing lot numbers for an in-transit transfer and Changing serial numbers for an in-transit transfer for more information.*
 
 >   **To specify bins for in-transit transfers:**
 
-1.  In the navigation pane, choose the Inventory button, and then choose the
-    InTransit Transfer list.
+1.  In the navigation pane, choose the Inventory button, and then choose the InTransit Transfer list.
 
-2.  In the New group, choose Transfer to open the In-Transit Transfer Entry
-    window.
+2.  In the New group, choose Transfer to open the In-Transit Transfer Entry window.
 
-3.  Enter an in-transit transfer for an item that is not tracked by lot or
-    serial numbers. Choose Bins to open the Bin Quantity Transfer Entry window.
+3.  Enter an in-transit transfer for an item that is not tracked by lot or serial numbers. Choose Bins to open the Bin Quantity Transfer Entry window.
 
->   The window also will open automatically when you move out of the transaction
->   line.
+>   The window also will open automatically when you move out of the transaction line.
 
-1.  Enter or select the From Bin. Information about the bin quantities will be
-    displayed in the upper scrolling window.
+4.  Enter or select the From Bin. Information about the bin quantities will be displayed in the upper scrolling window.
 
-2.  Enter the quantity to transfer in the Quantity Selected field.
+5.  Enter the quantity to transfer in the Quantity Selected field.
 
-3.  Enter or select the To Bin.
+6.  Enter or select the To Bin.
 
-4.  Choose Insert to add the information to the lower scrolling window.
+7.  Choose Insert to add the information to the lower scrolling window.
 
->   *You also can specify bins for transfers by entering the quantities directly
->   in the scrolling window and choose Insert.*
+>   *You also can specify bins for transfers by entering the quantities directly in the scrolling window and choose Insert.*
 
-1.  Continue, repeating steps 3 through 7 until the Selected Quantity equals the
-    Extended Quantity.
+8.  Continue, repeating steps 3 through 7 until the Selected Quantity equals the Extended Quantity.
 
-2.  When you’ve finished, choose OK to save the information and close the
-    window.
+9.  When you’ve finished, choose OK to save the information and close the window.
 
 ### Changing distributions for a transaction
 
->   Use the Item Transaction Distribution Entry window or the Item Transfer
->   Distribution Entry window to view posting accounts for transactions. You
->   also can change the posting accounts, if needed.
+>   Use the Item Transaction Distribution Entry window or the Item Transfer Distribution Entry window to view posting accounts for transactions. You also can change the posting accounts, if needed.
 
->   When inventory transactions are posted, the posting accounts you select are
->   updated with amounts that reflect the quantity that’s been posted. For
->   example, if you transfer an item from site A to site B, the cost used is
->   based on your valuation method for the item, and is used to determine the
->   currency amount that is posted to the posting accounts for sites A and B.
+>   When inventory transactions are posted, the posting accounts you select are updated with amounts that reflect the quantity that’s been posted. For example, if you transfer an item from site A to site B, the cost used is based on your valuation method for the item, and is used to determine the currency amount that is posted to the posting accounts for sites A and B.
 
 *Refer to Valuation methods for more information about valuation methods.*
 
 >   **To change distributions for a transaction:**
 
-1.  Open a transaction entry window. You can use the Item Transaction Entry
-    window or the Item Transfer Entry window.
+1.  Open a transaction entry window. You can use the Item Transaction Entry window or the Item Transfer Entry window.
 >   (Inventory \>\> Transactions \>\> Transaction Entry or Transfer Entry)
 
-1.  Enter or select a transaction.
+2.  Enter or select a transaction.
 
-2.  Select the item in the scrolling window you want to change distributions
-    for.
+3.  Select the item in the scrolling window you want to change distributions for.
 
-3.  Choose Distributions. If you’re entering a transaction in the Item
-    Transaction Entry window, the Item Transaction Distribution Entry window
-    opens.
+4.  Choose Distributions. If you’re entering a transaction in the Item Transaction Entry window, the Item Transaction Distribution Entry window opens.
 
 ![](media/c1f76f1686cd80920e8ad4c0953c40db.jpg)
 
->   If you’re entering a transfer transaction in the Item Transfer Entry window,
->   the Item Transfer Distribution window opens.
+>   If you’re entering a transfer transaction in the Item Transfer Entry window, the Item Transfer Distribution window opens.
 
 ![](media/a66b6ee366f9284bee2fd44c523880e8.jpg)
 
-1.  Review the account information, making any necessary changes.
+5.  Review the account information, making any necessary changes.
 
->   When the transaction that contains this item is posted, the posting accounts
->   you select are updated with amounts that reflect the quantity that’s been
->   posted. For example, if you transfer an item from site A to site B, the cost
->   used is based on your valuation method for the item, and is used to
->   determine the currency amount that is posted to the posting accounts for
->   sites A and B. Refer to *Valuation methods* for more information.
+>   When the transaction that contains this item is posted, the posting accounts you select are updated with amounts that reflect the quantity that’s been posted. For example, if you transfer an item from site A to site B, the cost used is based on your valuation method for the item, and is used to determine the currency amount that is posted to the posting accounts for sites A and B. Refer to *Valuation methods* for more information.
 
-1.  Choose OK to save the information and close the distribution entry window.
-    You’ll be returned to the Item Transaction Entry window or the Item Transfer
-    Entry window, where you can complete steps for entering and saving or
-    posting transaction information.
+6.  Choose OK to save the information and close the distribution entry window. You’ll be returned to the Item Transaction Entry window or the Item Transfer Entry window, where you can complete steps for entering and saving or posting transaction information.
 
 ### Transferring quantities from one bin to another
 
->   Use the Item Bin Transfer Entry window to transfer items from one bin to
->   another within a site.
+>   Use the Item Bin Transfer Entry window to transfer items from one bin to another within a site.
 
->   *To transfer items from one site to another, refer to Transferring an item
->   to a different site. If the items are tracked by lot or serial numbers,
->   refer to Specifying lot numbers for a bin-to-bin transfer or Specifying
->   serial numbers for a bin-to-bin transfer.*
+>   *To transfer items from one site to another, refer to Transferring an item to a different site. If the items are tracked by lot or serial numbers, refer to Specifying lot numbers for a bin-to-bin transfer or Specifying serial numbers for a bin-to-bin transfer.*
 
 >   **To transfer quantities from one bin to another:**
 
@@ -5767,172 +5192,123 @@ expired.*
 
 ![](media/fd70bf0222dc1fa265c3418becc038b3.jpg)
 
-1.  Bin Transfer appears as the document type. Enter a document number and date.
+2.  Bin Transfer appears as the document type. Enter a document number and date.
 
-2.  Enter or select an item number.
+3.  Enter or select an item number.
 
-3.  Enter or select a site ID.
+4.  Enter or select a site ID.
 
-4.  Select a quantity type.
+5.  Select a quantity type.
 
-5.  Enter a reason code. Reason codes are optional and are used to help identify
-    specific causes for item movement.
+6.  Enter a reason code. Reason codes are optional and are used to help identify specific causes for item movement.
 
-6.  Enter or select a unit of measure.
+7.  Enter or select a unit of measure.
 
-7.  Enter the quantity to transfer.
+8.  Enter the quantity to transfer.
 
-8.  Enter or select the From Bin.
+9.  Enter or select the From Bin.
 
->   If the quantity you entered is greater than the available quantity for the
->   quantity type you selected, an alert message appears and you’ll have the
->   option to use the available quantity or cancel.
+>   If the quantity you entered is greater than the available quantity for the quantity type you selected, an alert message appears and you’ll have the option to use the available quantity or cancel.
 
-1.  Enter or select the To Bin.
+10.  Enter or select the To Bin.
 
-2.  If the item is tracked by serial or lot numbers, a window for choosing the
-    lot or serial numbers opens automatically.
+11.  If the item is tracked by serial or lot numbers, a window for choosing the lot or serial numbers opens automatically.
 
-    -   If the item is tracked by lot numbers, the Item Bin Transfer Lot Number
-        Entry window opens. Refer to *Specifying lot numbers for a bin-to-bin
-        transfer*.
+    -   If the item is tracked by lot numbers, the Item Bin Transfer Lot Number Entry window opens. Refer to *Specifying lot numbers for a bin-to-bin transfer*.
 
-    -   If the item is tracked by serial numbers, the Item Bin Transfer Serial
-        Number Entry window opens. Refer to *Specifying serial numbers for a
-        bin-to bin transfer*.
+    -   If the item is tracked by serial numbers, the Item Bin Transfer Serial Number Entry window opens. Refer to *Specifying serial numbers for a bin-to bin transfer*.
 
-3.  Choose Transfer, and then close the window.
+12.  Choose Transfer, and then close the window.
 
 ### Specifying lot numbers for a bin-to-bin transfer
 
->   Use the Item Bin Transfer Lot Number Entry window to specify the lot numbers
->   of the items to be transferred from one bin to another.
+>   Use the Item Bin Transfer Lot Number Entry window to specify the lot numbers of the items to be transferred from one bin to another.
 
 >   **To specify lot numbers for a bin-to-bin transfer:**
 
 1.  Open the Item Bin Transfer Entry window.
 >   (Inventory \>\> Transactions \>\> Bin Transfer Entry)
 
-1.  Enter basic information about the transfer of an item tracked by lot
-    numbers. Refer to *Transferring quantities from one bin to another*
+2.  Enter basic information about the transfer of an item tracked by lot numbers. Refer to *Transferring quantities from one bin to another*
 
->   The Item Bin Transfer Lot Number Entry window opens automatically for an
->   item tracked by lot numbers.
+>   The Item Bin Transfer Lot Number Entry window opens automatically for an item tracked by lot numbers.
 
 ![](media/edcbe1ffa8cf2e2be96182e54f07594d.jpg)
 
-1.  Select a lot number to transfer. You can use either of the following
-    methods:
+3.  Select a lot number to transfer. You can use either of the following methods:
 
-    -   Enter or select a lot number in the Lot Number field, and then enter the
-        quantity to transfer in the Quantity Selected field.
+    -   Enter or select a lot number in the Lot Number field, and then enter the quantity to transfer in the Quantity Selected field.
 
-    -   Highlight a lot number in the Available list, and then enter the
-        quantity to transfer in the Quantity Selected column.
+    -   Highlight a lot number in the Available list, and then enter the quantity to transfer in the Quantity Selected column.
 
-*An icon appears in the Lot Number field if you select a lot number that has
-expired.*
+*An icon appears in the Lot Number field if you select a lot number that has expired.*
 
-1.  Choose Insert to move the lot number information to the Selected list.
+4.  Choose Insert to move the lot number information to the Selected list.
 
-2.  Continue, repeating steps 3 and 4 until the Lots Selected equals the
-    Extended Quantity.
+5.  Continue, repeating steps 3 and 4 until the Lots Selected equals the Extended Quantity.
 
-3.  Choose OK to close the window and return to the Item Bin Transfer Entry
-    window.
+6.  Choose OK to close the window and return to the Item Bin Transfer Entry window.
 
-4.  Choose Transfer in the Item Bin Transfer Entry window. When processing is
-    finished, close the window.
+7.  Choose Transfer in the Item Bin Transfer Entry window. When processing is finished, close the window.
 
 ### Specifying serial numbers for a bin-to-bin transfer
 
->   Use the Item Bin Transfer Serial Number Entry window to specify the serial
->   numbers of the items to be transferred from one bin to another.
+>   Use the Item Bin Transfer Serial Number Entry window to specify the serial numbers of the items to be transferred from one bin to another.
 
 >   **To specify serial numbers for a bin-to-bin transfer:**
 
 1.  Open the Item Bin Transfer Entry window.
 >   (Inventory \>\> Transactions \>\> Bin Transfer Entry)
 
-1.  Enter basic information about the transfer of an item tracked by serial
-    numbers. Refer to *Transferring quantities from one bin to another*
+2.  Enter basic information about the transfer of an item tracked by serial numbers. Refer to *Transferring quantities from one bin to another*
 
->   The Item Bin Transfer Serial Number Entry window opens automatically for
->   items tracked by serial numbers.
+>   The Item Bin Transfer Serial Number Entry window opens automatically for items tracked by serial numbers.
 
 ![](media/42c06a75bbfcc3135039a52127c73b8e.jpg)
 
-1.  Select a serial number to transfer. You can use either of the following
-    methods:
+3.  Select a serial number to transfer. You can use either of the following methods:
 
     -   Enter or select a serial number in the Serial Number field.
 
     -   Highlight a serial number in the Available list.
 
-2.  Choose Insert to move the serial number to the Selected list.
+4.  Choose Insert to move the serial number to the Selected list.
 
-3.  Continue, repeating steps 3 and 4 until the Serial Numbers Selected equals
-    the Extended Quantity.
+5.  Continue, repeating steps 3 and 4 until the Serial Numbers Selected equals the Extended Quantity.
 
-4.  Choose OK to close the window and return to the Item Bin Transfer Entry
-    window.
+6.  Choose OK to close the window and return to the Item Bin Transfer Entry window.
 
-5.  Choose Transfer in the Item Bin Transfer Entry window. When processing is
-    finished, close the window.
+7.  Choose Transfer in the Item Bin Transfer Entry window. When processing is finished, close the window.
 
 ### Entering lot attribute information
 
->   Use the Lot Attribute Entry window to enter a manufactured date, an
->   expiration date, and the lot category characteristics assigned to the item.
->   If you are using lot categories, you must complete this procedure. If you
->   aren’t using lot categories, you still can enter a manufactured date and an
->   expiration date. Refer to *Chapter 6, “Lot category setup,”* for more
->   information about lot categories.
+>   Use the Lot Attribute Entry window to enter a manufactured date, an expiration date, and the lot category characteristics assigned to the item. If you are using lot categories, you must complete this procedure. If you aren’t using lot categories, you still can enter a manufactured date and an expiration date. Refer to *Chapter 6, “Lot category setup,”* for more information about lot categories.
 
->   If you assign an expiration date to a lot, a message will be displayed if
->   the expiration date has passed when you are manually entering lot numbers in
->   Inventory Control, Sales Order Processing, and Microsoft Dynamics GP Bill of
->   Materials. A message won’t be displayed when lot numbers are assigned
->   automatically.
+>   If you assign an expiration date to a lot, a message will be displayed if the expiration date has passed when you are manually entering lot numbers in Inventory Control, Sales Order Processing, and Microsoft Dynamics GP Bill of Materials. A message won’t be displayed when lot numbers are assigned automatically.
 
->   *Before beginning this procedure, you should have the Item Transfer Lot
->   Number Entry window or the Item Lot Number Entry window open. Those windows
->   open automatically if you enter a transaction for an item tracked by lot
->   numbers.*
+>   *Before beginning this procedure, you should have the Item Transfer Lot Number Entry window or the Item Lot Number Entry window open. Those windows open automatically if you enter a transaction for an item tracked by lot numbers.*
 
 >   **To enter lot attribute information:**
 
 1.  Open the Lot Attribute Entry window.
 
->   (In the Item Transfer Lot Number Entry window, enter or select a lot, then
->   choose the expansion button on the Lot Number field.)
+>   (In the Item Transfer Lot Number Entry window, enter or select a lot, then choose the expansion button on the Lot Number field.)
 
 ![](media/15f4081baf23e8b8e92e6898843c7c02.jpg)
 
-1.  Enter a manufactured date and an expiration date, if applicable.
+2.  Enter a manufactured date and an expiration date, if applicable.
 
-2.  Enter lot attribute information in the fields.
+3.  Enter lot attribute information in the fields.
 
-3.  Choose OK to save the information and close the window.
+4.  Choose OK to save the information and close the window.
 
 ### Split purchase receipts
 
->   If you enter a transaction and the extended cost calculated for the base
->   unit of measure results in an unequal value for all items on the purchase
->   receipt, Microsoft Dynamics GP creates a separate receipt for one of the
->   items so that the total cost of the receipt equals the total of the cost for
->   each of the items. The resulting set of entries is called a split purchase
->   receipt.
+>   If you enter a transaction and the extended cost calculated for the base unit of measure results in an unequal value for all items on the purchase receipt, Microsoft Dynamics GP creates a separate receipt for one of the items so that the total cost of the receipt equals the total of the cost for each of the items. The resulting set of entries is called a split purchase receipt.
 
->   For example, suppose you receive a three-pack of serial-numbered items (item
->   number IV5015; serial numbers 701, 402, and 218) at a total cost of \$10.49
->   for the three-pack. Because the base unit of measure for the items is single
->   units, the system creates two purchase receipts with the same receipt
->   number: one for two of the units at \$3.50 and one for one unit at \$3.49.
->   The table illustrates how that split receipt might appear in your records.
+>   For example, suppose you receive a three-pack of serial-numbered items (item number IV5015; serial numbers 701, 402, and 218) at a total cost of \$10.49 for the three-pack. Because the base unit of measure for the items is single units, the system creates two purchase receipts with the same receipt number: one for two of the units at \$3.50 and one for one unit at \$3.49. The table illustrates how that split receipt might appear in your records.
 
->   When you sell the items, they’re removed from inventory according to the
->   item’s valuation method.
+>   When you sell the items, they’re removed from inventory according to the item’s valuation method.
 
 | **Item Number** | **Receipt Number** | **Qty Received** | **Cost** | **Serial Numbers** |
 |-----------------|--------------------|------------------|----------|--------------------|
@@ -5941,11 +5317,9 @@ expired.*
 
 ### Deleting an inventory transaction
 
->   Use the Item Transaction Entry window or the Item Transfer Entry window to
->   delete an unposted transaction.
+>   Use the Item Transaction Entry window or the Item Transfer Entry window to delete an unposted transaction.
 
->   *For information about deleting posted transactions, refer to Chapter 25,
->   “Transaction corrections.”*
+>   *For information about deleting posted transactions, refer to Chapter 25, “Transaction corrections.”*
 
 >   **To delete an inventory transaction:**
 
@@ -5953,46 +5327,35 @@ expired.*
 >   (Inventory \>\> Transactions \>\> Transaction Entry)
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
-1.  Enter or select the document type and number.
+2.  Enter or select the document type and number.
 
-2.  Choose Delete. An alert message appears, asking if you’re sure you want to
-    delete the record. Choose Yes.
+3.  Choose Delete. An alert message appears, asking if you’re sure you want to delete the record. Choose Yes.
 
->   If you’re using multiple bins, any bin selections for the transaction are
->   deleted when the transaction is deleted.
+>   If you’re using multiple bins, any bin selections for the transaction are deleted when the transaction is deleted.
 
-1.  Close the window.
+4.  Close the window.
 
 ### Deleting an in-transit transfer transaction
 
->   You can use the In-Transit Transfer Entry window to delete an in-transit
->   transfer that has an Open status.
+>   You can use the In-Transit Transfer Entry window to delete an in-transit transfer that has an Open status.
 
 >   **To delete an in-transit transfer transaction:**
 
 1.  Open the In-Transit Transfer Entry window.
 >   (Inventory \>\> Transactions \>\> In-Transit Transfer Entry)
 
-1.  Enter or select the document number of an in-transit transfer that has an
-    Open status.
+2.  Enter or select the document number of an in-transit transfer that has an Open status.
 
-2.  Choose Delete. An alert message appears, asking if you’re sure you want to
-    delete the record. Choose Yes.
+3.  Choose Delete. An alert message appears, asking if you’re sure you want to delete the record. Choose Yes.
 
->   If you’re using multiple bins, any bin selections for the transaction are
->   deleted when the transaction is deleted.
+>   If you’re using multiple bins, any bin selections for the transaction are deleted when the transaction is deleted.
 
-1.  Close the window.
+4.  Close the window.
 
 Chapter 22: Stock count schedules
 ---------------------------------
 
->   When you’re ready to begin work on a stock count at a specific site, you
->   create a stock count schedule—you specify which item-site combinations are
->   to be included in this stock count. (If you’re using multiple bins, you
->   specify which item-site-bin combinations are included.) You can save the
->   stock count schedule or you can choose to start it. You also can reuse stock
->   counts.
+>   When you’re ready to begin work on a stock count at a specific site, you create a stock count schedule—you specify which item-site combinations are to be included in this stock count. (If you’re using multiple bins, you specify which item-site-bin combinations are included.) You can save the stock count schedule or you can choose to start it. You also can reuse stock counts.
 
 >   The following information is discussed:
 
@@ -6018,54 +5381,29 @@ Chapter 22: Stock count schedules
 
 ### Stock count requirements
 
->   Before you set up and use stock counts, you should be aware of the
->   requirements and restrictions.
+>   Before you set up and use stock counts, you should be aware of the requirements and restrictions.
 
->   **Item types** Only Sales Inventory or Discontinued items can be assigned to
->   a stock count.
+>   **Item types** Only Sales Inventory or Discontinued items can be assigned to a stock count.
 
->   **“Freeze” inventory when starting a stock count** It’s a good business
-
->   practice to restrict access to the inventoried items that are being counted
->   during a stock count.
+>   **“Freeze” inventory when starting a stock count** It’s a good business practice to restrict access to the inventoried items that are being counted during a stock count.
 
 ### Statuses for stock count schedules
 
->   A stock count can have any of three statuses: Available, Started and
->   Entered.
+>   A stock count can have any of three statuses: Available, Started and Entered.
 
->   **Available** A stock count schedule has an Available status as soon as it’s
->   entered and saved. You can add or remove items from a stock count schedule
->   with Available status.
+>   **Available** A stock count schedule has an Available status as soon as it’s entered and saved. You can add or remove items from a stock count schedule with Available status.
 
->   **Started** When you choose the Start Count button in the Stock Count
->   Schedule window, the system checks the validity of each item-site
->   combination in the stock count schedule. If all entries are valid, the
->   current on-hand quantities of each combination and the user ID of the person
->   who starts the stock count are recorded. Later, these stored values—also
->   called “captured quantities”—are compared to the actual stock count results.
->   You can’t add items to or remove items from a stock count schedule if its
->   status is Started. However, you can cancel a Started stock count, edit it if
->   needed, and then restart the count process.
+>   **Started** When you choose the Start Count button in the Stock Count Schedule window, the system checks the validity of each item-site combination in the stock count schedule. If all entries are valid, the current on-hand quantities of each combination and the user ID of the person who starts the stock count are recorded. Later, these stored values—also called “captured quantities”—are compared to the actual stock count results. You can’t add items to or remove items from a stock count schedule if its status is Started. However, you can cancel a Started stock count, edit it if needed, and then restart the count process.
 
->   *You can still enter and post transactions for item-site combinations
->   included in a Started stock count.*
+>   *You can still enter and post transactions for item-site combinations included in a Started stock count.*
 
->   **Entered** The status of a stock count automatically changes to Entered as
->   soon as the first stock count results are entered. Once an Entered stock
->   count is processed and the resulting inventory variance transactions are
->   created, one of two things can happen. If the stock count schedule is set to
->   be reused (the Reuse option is marked in the Stock Count Schedule window),
->   then the status of the stock count is changed to Available. If the Reuse
->   option isn’t marked, the stock count schedule is deleted.
+>   **Entered** The status of a stock count automatically changes to Entered as soon as the first stock count results are entered. Once an Entered stock count is processed and the resulting inventory variance transactions are created, one of two things can happen. If the stock count schedule is set to be reused (the Reuse option is marked in the Stock Count Schedule window), then the status of the stock count is changed to Available. If the Reuse option isn’t marked, the stock count schedule is deleted.
 
->   You can’t add items to or remove items from a stock count schedule if its
->   status is Entered.
+>   You can’t add items to or remove items from a stock count schedule if its status is Entered.
 
 ### Creating or modifying a stock count schedule
 
->   When you’re ready to begin a stock count, use the Stock Count Schedule
->   window to determine which items at which sites will be counted.
+>   When you’re ready to begin a stock count, use the Stock Count Schedule window to determine which items at which sites will be counted.
 
 >   **To create or modify a stock count schedule:**
 
@@ -6074,51 +5412,35 @@ Chapter 22: Stock count schedules
 
 ![](media/a2473bfba6a58a2fbcb8ac0c4858caa1.jpg)
 
-1.  Enter or select a stock count ID.
+2.  Enter or select a stock count ID.
 
->   *If you enter or select a stock count ID that was created when the multiple
->   bins feature wasn’t enabled and the feature is enabled now, an alert message
->   is displayed. You’ll have the option to continue or cancel. Regardless of
->   the option you select, the stock count will be updated so you can enter bin
->   information.*
+>   *If you enter or select a stock count ID that was created when the multiple bins feature wasn’t enabled and the feature is enabled now, an alert message is displayed. You’ll have the option to continue or cancel. Regardless of the option you select, the stock count will be updated so you can enter bin information.*
 
-1.  Enter a description and select a default site ID.
+3.  Enter a description and select a default site ID.
 
-2.  To create a reusable stock schedule, mark the Reuse option.
+4.  To create a reusable stock schedule, mark the Reuse option.
 
->   *If the Reuse option is marked, the status of the stock count schedule will
->   be changed to Available after the count is processed. Otherwise, the stock
->   count schedule will be removed once it’s processed.*
+>   *If the Reuse option is marked, the status of the stock count schedule will be changed to Available after the count is processed. Otherwise, the stock count schedule will be removed once it’s processed.*
 
-1.  Decide how items listed in the stock count schedule should be sorted.
-    Choices include by Site ID, by Item Number, by Description and by Next Count
-    Date.
+5.  Decide how items listed in the stock count schedule should be sorted. Choices include by Site ID, by Item Number, by Description and by Next Count Date.
 
-2.  Add item-site combinations to the stock count schedule.
+6.  Add item-site combinations to the stock count schedule.
 
->   **To add one item-site combination** Put the pointer in the first empty line
->   of the scrolling window, then enter or select an item number and a site ID.
->   If you’re using multiple bins, you also must enter or select a bin.
+>   **To add one item-site combination** Put the pointer in the first empty line of the scrolling window, then enter or select an item number and a site ID. If you’re using multiple bins, you also must enter or select a bin.
 
->   **To add many item-site combinations** Refer to *Adding many items to a
->   stock count schedule*.
+>   **To add many item-site combinations** Refer to *Adding many items to a stock count schedule*.
 
-1.  Review the information as needed.
+7.  Review the information as needed.
 
->   *You can use the hide and show buttons to expand the scrolling window lines,
->   if needed. The expanded view of the scrolling window includes an option that
->   indicates if an itemsite combination is overdue for a stock count.*
+>   *You can use the hide and show buttons to expand the scrolling window lines, if needed. The expanded view of the scrolling window includes an option that indicates if an itemsite combination is overdue for a stock count.*
 
-1.  Choose Save to save the stock count schedule. The stock count schedule now
-    has an Available status.
+8.  Choose Save to save the stock count schedule. The stock count schedule now has an Available status.
 
->   You can choose File \>\> Print to print the Stock Count List to verify the
->   items listed in the stock count schedule, if needed.
+>   You can choose File \>\> Print to print the Stock Count List to verify the items listed in the stock count schedule, if needed.
 
 ### Adding many items to a stock count schedule
 
->   Use the Stock Count Mass Add window to add many item-site combinations to a
->   stock count schedule.
+>   Use the Stock Count Mass Add window to add many item-site combinations to a stock count schedule.
 
 *You can add items only to a stock count that has Available status.*
 
@@ -6127,94 +5449,67 @@ Chapter 22: Stock count schedules
 1.  Open the Stock Count Maintenance window.
 >   (Inventory \>\> Transactions \>\> Stock Count Schedule)
 
-1.  Enter or select a stock count ID. The status of the stock count must be
-    Available.
+2.  Enter or select a stock count ID. The status of the stock count must be Available.
 
-2.  Choose Mass Add to open the Stock Count Mass Add window.
+3.  Choose Mass Add to open the Stock Count Mass Add window.
 
 ![](media/b32e03db7370a1ccffe90f49a7f0305d.jpg)
 
-1.  Define the range of items to add to the stock count. Select a Stock Count
-    Range, and then enter or select the beginning and end of the range for that
-    type of range.
+4.  Define the range of items to add to the stock count. Select a Stock Count Range, and then enter or select the beginning and end of the range for that type of range.
 
->   For example, to add all the items whose suggested stock count date is today,
->   you’d select Next Stock Count Date for the Stock Count Range, and then enter
->   the current date in the From and To fields.
+>   For example, to add all the items whose suggested stock count date is today, you’d select Next Stock Count Date for the Stock Count Range, and then enter the current date in the From and To fields.
 
-1.  Choose Insert to add the restriction.
+5.  Choose Insert to add the restriction.
 
-2.  Continue, repeating steps 4 and 5 until you’ve entered restrictions to
-    narrow the group of item-site combinations to just those to be added to the
-    stock count schedule. You can create as many restrictions as you like, but
-    you can use each type of Stock Count Range only once. For example, you can
-    define only one range of Next Stock Count Dates for this stock count.
+6.  Continue, repeating steps 4 and 5 until you’ve entered restrictions to narrow the group of item-site combinations to just those to be added to the stock count schedule. You can create as many restrictions as you like, but you can use each type of Stock Count Range only once. For example, you can define only one range of Next Stock Count Dates for this stock count.
 
-3.  Choose Add. The Stock Count Mass Add window closes and you’re returned to
-    the Stock Count Schedule window.
+7.  Choose Add. The Stock Count Mass Add window closes and you’re returned to the Stock Count Schedule window.
 
-4.  Choose Save and close the window.
+8.  Choose Save and close the window.
 
-5.  You can choose File \>\> Print to print the Stock Count List to verify the
-    items listed in the stock count schedule, if needed.
+9.  You can choose File \>\> Print to print the Stock Count List to verify the items listed in the stock count schedule, if needed.
 
 ### Removing items from a stock count schedule
 
->   Use the Stock Count Schedule window to remove item-site combinations from a
->   stock count schedule. If you’re using multiple bins, you’ll remove
->   item-site-bin combinations.
+>   Use the Stock Count Schedule window to remove item-site combinations from a stock count schedule. If you’re using multiple bins, you’ll remove item-site-bin combinations.
 
-*You can remove items only from stock count schedules whose status is
-Available.*
+*You can remove items only from stock count schedules whose status is Available.*
 
 >   **To remove items from a stock count schedule:**
 
 1.  Open the Stock Count Schedule window.
 >   (Inventory \>\> Transactions \>\> Stock Count Schedule)
 
-1.  Enter or select a stock count ID.
+2.  Enter or select a stock count ID.
 
-2.  Use the hide and show button to expand the lines in the scrolling window.
+3.  Use the hide and show button to expand the lines in the scrolling window.
 
-3.  Highlight the record to remove.
+4.  Highlight the record to remove.
 
-4.  From the Edit menu, choose Delete Row. An alert message appears, asking if
-    you’re sure you want to delete the row. Choose Yes.
+5.  From the Edit menu, choose Delete Row. An alert message appears, asking if you’re sure you want to delete the row. Choose Yes.
 
-5.  Continue, repeating steps 4 and 5 to remove other items, if needed.
+6.  Continue, repeating steps 4 and 5 to remove other items, if needed.
 
-6.  When you’ve finished, choose Save and close the window.
+7.  When you’ve finished, choose Save and close the window.
 
 ### Starting a stock count schedule
 
->   Use the Stock Count Schedule window to start a stock count. If the stock
->   count can be started—if there are no exceptions—the status of the count will
->   be changed to Started, stock count forms will be printed and information
->   about the on-hand quantity of each item-site combination will be captured.
+>   Use the Stock Count Schedule window to start a stock count. If the stock count can be started—if there are no exceptions—the status of the count will be changed to Started, stock count forms will be printed and information about the on-hand quantity of each item-site combination will be captured.
 
 >   **To start a stock count schedule:**
 
 1.  Open the Stock Count Schedule window.
 >   (Inventory \>\> Transactions \>\> Stock Count Schedule)
 
-1.  Enter or select a stock count ID with Available status.
+2.  Enter or select a stock count ID with Available status.
 
->   *If you enter or select a stock count ID that was created when the multiple
->   bins feature wasn’t enabled and the feature is enabled now, an alert message
->   is displayed, telling you that the stock count ID has been converted. Any
->   bin information in the existing stock count ID will be cleared. You must use
->   the Stock Count Schedule window to add valid bin information to each line of
->   the stock count.*
+>   *If you enter or select a stock count ID that was created when the multiple bins feature wasn’t enabled and the feature is enabled now, an alert message is displayed, telling you that the stock count ID has been converted. Any bin information in the existing stock count ID will be cleared. You must use the Stock Count Schedule window to add valid bin information to each line of the stock count.*
 
-1.  Choose Start Count.
+3.  Choose Start Count.
 
->   When you start a stock count schedule, the quantity on hand for each line in
->   the stock count schedule is captured. Later, the actual count number
->   quantities will be compared to the captured values to create default
->   variance transactions.
+>   When you start a stock count schedule, the quantity on hand for each line in the stock count schedule is captured. Later, the actual count number quantities will be compared to the captured values to create default variance transactions.
 
-1.  The report destination window for the Stock Count Exceptions report appears.
-    Choose the destination for the Stock Count Exceptions report.
+4.  The report destination window for the Stock Count Exceptions report appears. Choose the destination for the Stock Count Exceptions report.
 
 >   If you have exceptions that prevent the count from being started, they’ll be
 >   listed in the report, and the status of the stock count will remain
