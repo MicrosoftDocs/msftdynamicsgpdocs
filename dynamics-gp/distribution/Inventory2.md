@@ -1,9 +1,6 @@
 ### Viewing promotions for a prospect or customer
 
->   You can use the Promotion Price Sheet Inquiry window to view all the
->   promotions that are in effect for a prospect or customer as of a certain
->   date. You can choose to view information for all items or you can choose to
->   view information for a range of items.
+>   You can use the Promotion Price Sheet Inquiry window to view all the promotions that are in effect for a prospect or customer as of a certain date. You can choose to view information for all items or you can choose to view information for a range of items.
 
 >   **To view promotions for a prospect or customer:**
 
@@ -12,51 +9,32 @@
 
 ![](media/0ffc411d9bc41144af82ff8f34b2d557.jpg)
 
-1.  Mark Customer or Prospect, depending on who’s promotions you want to view.
+2.  Mark Customer or Prospect, depending on who’s promotions you want to view.
 
-2.  Enter or select a customer or prospect.
+3.  Enter or select a customer or prospect.
 
-3.  If you’re using Multicurrency Management, you can enter or select a Currency
-    ID.
+4.  If you’re using Multicurrency Management, you can enter or select a Currency ID.
 
-4.  Choose the items to view. Mark All to see promotions for all items, or mark
-    From and enter a range of items to view.
+5.  Choose the items to view. Mark All to see promotions for all items, or mark From and enter a range of items to view.
 
-5.  Enter a date in the Show Promotions as of field. Only promotions that are
-    effective on that date will be displayed in the scrolling window.
+6.  Enter a date in the Show Promotions as of field. Only promotions that are effective on that date will be displayed in the scrolling window.
 
-6.  Choose Redisplay to update the scrolling window, and then view the
-    information in the scrolling window.
+7.  Choose Redisplay to update the scrolling window, and then view the information in the scrolling window.
 
-7.  When you’ve finished, close the window.
+8.  When you’ve finished, close the window.
 
 Chapter 29: Transaction inquiries
 ---------------------------------
 
->   You can use the inquiry windows to view information about your adjustment
->   and variance transactions, transfers, and purchase receipts. If you’re using
->   other Microsoft Dynamics GP modules, you also can use links to open other
->   windows that display more details about specific transactions.
+>   You can use the inquiry windows to view information about your adjustment and variance transactions, transfers, and purchase receipts. If you’re using other Microsoft Dynamics GP modules, you also can use links to open other windows that display more details about specific transactions.
 
->   The inquiry window you’ll use to view transactions depends on the source of
->   the transaction information you want to see.
+>   The inquiry window you’ll use to view transactions depends on the source of the transaction information you want to see.
 
->   **To view transactions entered throughout the system** Use the Item
->   Transaction Inquiry window. Any posted transaction for an item—such as
->   transactions from Sales Order Processing—will be available. Inventory
->   Control transactions also can be viewed in the Item Transaction Inquiry
->   window.
+>   **To view transactions entered throughout the system** Use the Item Transaction Inquiry window. Any posted transaction for an item—such as transactions from Sales Order Processing—will be available. Inventory Control transactions also can be viewed in the Item Transaction Inquiry window.
 
->   **To view transactions entered in Inventory Control** Use the Inventory
+>   **To view transactions entered in Inventory Control** Use the Inventory Transaction Inquiry window to see transactions that are specific to Inventory Control: adjustments, variances, and transfers. If you’re using multiple bins, you also can view information about the bins used for a transaction. You can use the InTransit Transfer History Inquiry window to view in-transit transfers.
 
->   Transaction Inquiry window to see transactions that are specific to
->   Inventory Control: adjustments, variances, and transfers. If you’re using
->   multiple bins, you also can view information about the bins used for a
->   transaction. You can use the InTransit Transfer History Inquiry window to
->   view in-transit transfers.
-
->   **To view transactions resulting from purchase receipts** Use the Purchase
->   Receipts Inquiry window.
+>   **To view transactions resulting from purchase receipts** Use the Purchase Receipts Inquiry window.
 
 >   The following information is discussed:
 
@@ -70,14 +48,9 @@ Chapter 29: Transaction inquiries
 
 ### Viewing item transaction information
 
->   Use the Item Transaction Inquiry window to view posted inventory
->   transactions for specific items. For example, you can view transactions for
->   an item at a specific site— or you can see all transactions of a certain
->   type that have been posted for a particular item number.
+>   Use the Item Transaction Inquiry window to view posted inventory transactions for specific items. For example, you can view transactions for an item at a specific site— or you can see all transactions of a certain type that have been posted for a particular item number.
 
->   Transactions entered in Sales Order Processing, Purchase Order Processing,
->   Bill of Materials, Inventory Control, and Invoicing are displayed in the
->   window.
+>   Transactions entered in Sales Order Processing, Purchase Order Processing, Bill of Materials, Inventory Control, and Invoicing are displayed in the window.
 
 >   **To view item transaction information:**
 
@@ -86,31 +59,23 @@ Chapter 29: Transaction inquiries
 
 ![](media/800e8df5dfa8c70fe00a49daf7d01b87.jpg)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Determine which transaction records you want to view. You can select a range
-    of records based on any of the following record attributes.
+3.  Determine which transaction records you want to view. You can select a range of records based on any of the following record attributes.
 
 >   **To see all item records** Mark All.
 
->   **To see a specific range of records** Mark From. Select a type of document
->   range—such as document number or module—and then select the beginning and
->   ending values for the range.
+>   **To see a specific range of records** Mark From. Select a type of document range—such as document number or module—and then select the beginning and ending values for the range.
 
-1.  Specify a document date range to restrict information. You can select to
-    view all documents or mark From and then select the beginning and ending
-    dates for the range.
+4.  Specify a document date range to restrict information. You can select to view all documents or mark From and then select the beginning and ending dates for the range.
 
-2.  Review information in the scrolling window.
+5.  Review information in the scrolling window.
 
-*Mark the Sort by Date check box to sort information in the scrolling window by
-date.*
+*Mark the Sort by Date check box to sort information in the scrolling window by date.*
 
-1.  To view more detailed information about a transaction, select the
-    transaction and click the Number label to open another window.
+6.  To view more detailed information about a transaction, select the transaction and click the Number label to open another window.
 
->   Refer to the table for information about which window will open, based on
->   the transaction type.
+>   Refer to the table for information about which window will open, based on the transaction type.
 
 | **Click this type transaction ...**    | **... to open this window:**               |
 |----------------------------------------|--------------------------------------------|
@@ -120,19 +85,15 @@ date.*
 | Invoicing transactions                 | Invoice Inquiry window                     |
 | Bill of Materials transactions         | Assembly Inquiry Zoom window               |
 
->   You can use any of these windows to view the transaction information as it
->   was entered.
+>   You can use any of these windows to view the transaction information as it was entered.
 
-1.  You can choose File \>\> Print to print the Item Transaction Inquiry Report.
+7.  You can choose File \>\> Print to print the Item Transaction Inquiry Report.
 
-2.  When you’ve finished viewing information, close the windows.
+8.  When you’ve finished viewing information, close the windows.
 
 ### Viewing inventory transaction information
 
->   Use the Inventory Transaction Inquiry window to view any transaction that
->   has been entered in Inventory Control. For example, you can use the window
->   to view the transactions that have been posted to reflect stock count
->   variance transactions.
+>   Use the Inventory Transaction Inquiry window to view any transaction that has been entered in Inventory Control. For example, you can use the window to view the transactions that have been posted to reflect stock count variance transactions.
 
 >   **To view inventory transaction information:**
 
@@ -141,35 +102,23 @@ date.*
 
 ![](media/007374bdc0cdfce70c59c9c5ac2860d2.jpg)
 
-1.  Select the transaction type you want to view. You can choose from these
-    inventory transaction types:
+2.  Select the transaction type you want to view. You can choose from these inventory transaction types:
 
->   **Adjustment** Select Adjustment to view adjustment transactions for an
->   item—transactions to record an increase or decrease to inventory levels.
+>   **Adjustment** Select Adjustment to view adjustment transactions for an item—transactions to record an increase or decrease to inventory levels.
 
->   **Variance** Select Variance to view variance transactions for an item—
->   transactions to bring inventory records in line with inventory levels. For
->   example, if you’re using stock counts, you might have variance transactions
->   to record transactions made so inventory accounting records match actual
->   inventory levels.
+>   **Variance** Select Variance to view variance transactions for an item— transactions to bring inventory records in line with inventory levels. For example, if you’re using stock counts, you might have variance transactions to record transactions made so inventory accounting records match actual inventory levels.
 
->   **Transfer** Select Transfer to view transfer transactions for an item—
->   transactions that record the movement of items from one site to another,
->   from one quantity type to another, or both.
+>   **Transfer** Select Transfer to view transfer transactions for an item— transactions that record the movement of items from one site to another, from one quantity type to another, or both.
 
-1.  Enter or select the document number of the specific transaction to view.
+3.  Enter or select the document number of the specific transaction to view.
 
-2.  Review information in the window. You can open other windows, if needed, to
-    view more detailed information or to make changes to records.
+4.  Review information in the window. You can open other windows, if needed, to view more detailed information or to make changes to records.
 
->   **To view or change item records** Select a transaction and click the Item
->   Number field label to open the Item Maintenance window.
+>   **To view or change item records** Select a transaction and click the Item Number field label to open the Item Maintenance window.
 
->   **To view or change site records** Select the transaction and click the
->   field label for the Site ID or for the To Site ID to open the Site
->   Maintenance window.
+>   **To view or change site records** Select the transaction and click the field label for the Site ID or for the To Site ID to open the Site Maintenance window.
 
-1.  You also can open other windows for viewing transaction information.
+5.  You also can open other windows for viewing transaction information.
 
 >   Refer to the table for more information.
 
@@ -180,14 +129,13 @@ date.*
 | Distributions    | Inventory Transaction Distribution Inquiry window, where you can view information about the accounts that were used when distributing the original transaction.                                                                                                                                                                                                                                     |
 | Serial/Lot       | **If the item is tracked by lot numbers** Inventory Transaction Lot Inquiry window, where you can view information about the lot number and quantity for each bin involved in the transaction. **If the item is tracked by serial numbers** Inventory Transaction Serial Inquiry window, where you can view information about the serial numbers and bins for each bin involved in the transaction. |
 
-1.  You can choose File \>\> Print to print the Transaction Inquiry Report.
+6.  You can choose File \>\> Print to print the Transaction Inquiry Report.
 
-2.  When you’ve finished viewing information, close the windows.
+7.  When you’ve finished viewing information, close the windows.
 
 ### Viewing in-transit transfer transaction information
 
->   Use the In-Transit Transfer History Inquiry window to view an in-transit
->   transfer that exists in history.
+>   Use the In-Transit Transfer History Inquiry window to view an in-transit transfer that exists in history.
 
 >   **To view in-transit transfer transaction information:**
 
@@ -196,11 +144,11 @@ date.*
 
 ![](media/6796b891c285c41198c0a6bcc4170365.jpg)
 
-1.  Enter or select the document number of the specific transaction to view.
+2.  Enter or select the document number of the specific transaction to view.
 
-2.  Review information in the window.
+3.  Review information in the window.
 
-3.  You also can open other windows for viewing transaction information.
+4.  You also can open other windows for viewing transaction information.
 
 >   Refer to the table for more information.
 
@@ -210,20 +158,15 @@ date.*
 | Distributions    | Inventory Transfer Distribution History Inquiry window, where you can view information about the accounts that were used when distributing the original transfer.                                                                                                                                                                                                                               |
 | Serial/Lot       | **If the item is tracked by lot numbers** In-Transit Transfer Lot Inquiry window, where you can view information about the lot number and quantity for each bin involved in the transaction. **If the item is tracked by serial numbers** In-Transit Transfer Serial Inquiry window, where you can view information about the serial numbers and bins for each bin involved in the transaction. |
 
-1.  You can print the Service Inventory Pack List - Reprint report.
+4.  You can print the Service Inventory Pack List - Reprint report.
 
-2.  When you’ve finished viewing information, close the windows.
+5.  When you’ve finished viewing information, close the windows.
 
 ### Viewing purchase receipt information
 
->   Use the Purchase Receipts Inquiry window to view all the purchase receipts
->   that exist for a particular item. For example, you might use this window to
->   find out the actual costs and quantities on a specific receipt. Or, if you
->   suspect an item cost was entered incorrectly, you could use this window to
->   verify the cost.
+>   Use the Purchase Receipts Inquiry window to view all the purchase receipts that exist for a particular item. For example, you might use this window to find out the actual costs and quantities on a specific receipt. Or, if you suspect an item cost was entered incorrectly, you could use this window to verify the cost.
 
->   *Information about split purchase receipts also is displayed in the window.
->   Refer to Split purchase receipts for more information.*
+>   *Information about split purchase receipts also is displayed in the window. Refer to Split purchase receipts for more information.*
 
 >   **To view purchase receipt information:**
 
@@ -232,25 +175,19 @@ date.*
 
 ![](media/607cfbb997ce2e2f3dfd66c6153be9fa.jpg)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Enter or select a site.
+3.  Enter or select a site.
 
-3.  Decide if you want to view transaction information for all dates or for a
-    specific range of dates.
+4.  Decide if you want to view transaction information for all dates or for a specific range of dates.
 
 >   **To view information for all dates** Mark All.
 
->   **To view information for a range of dates** Mark From, then enter starting
->   and ending dates for the period that includes the transactions you want to
->   view.
+>   **To view information for a range of dates** Mark From, then enter starting and ending dates for the period that includes the transactions you want to view.
 
-1.  Review information in the window.
+5.  Review information in the window.
 
-2.  To view additional information for a specific transaction, select the
-    transaction and click on the Receipt Number link, Purchase Order No. link,
-    or the Quantity Sold link to open a window with detailed information. The
-    window that opens depends on the transaction source and the link you click.
+6.  To view additional information for a specific transaction, select the transaction and click on the Receipt Number link, Purchase Order No. link, or the Quantity Sold link to open a window with detailed information. The window that opens depends on the transaction source and the link you click.
 
 >   Refer to the table for more information.
 
@@ -272,21 +209,16 @@ date.*
 
 >   Details
 
-1.  You can choose File \>\> Print to print the Purchase Receipts Inquiry
-    Report.
+7.  You can choose File \>\> Print to print the Purchase Receipts Inquiry Report.
 
-2.  When you’ve finished reviewing information, close the windows.
+8.  When you’ve finished reviewing information, close the windows.
 
 Chapter 30: Reports
 -------------------
 
->   You can use Inventory Control reports to analyze inventory activity and
->   identify errors in transaction entry. Use this information to guide you
->   through printing reports and working with report options.
+>   You can use Inventory Control reports to analyze inventory activity and identify errors in transaction entry. Use this information to guide you through printing reports and working with report options.
 
->   For more information about creating and printing reports, and the various
->   reporting tools that you can use with Microsoft Dynamics GP, refer to your
->   System User's Guide (Help \>\> Contents \>\> select Using The System).
+>   For more information about creating and printing reports, and the various reporting tools that you can use with Microsoft Dynamics GP, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
 >   The following information is discussed:
 
@@ -308,23 +240,11 @@ Chapter 30: Reports
 
 ### Inventory Control report summary
 
->   You can print several types of reports using Inventory Control. Some reports
->   automatically are printed when you complete certain procedures; for example,
->   posting journals can be printed automatically when you post transactions,
->   depending on how your posting options are set up. You can choose to print
->   some reports during procedures; for example, you can print an edit list when
->   entering transactions by choosing the Print button in the batch entry
->   window. In order to print some reports, such as analysis or history reports,
->   you must set up report options to specify sorting options and ranges of
->   information to include on the report. For more information, refer to
->   *Specifying an Inventory Control report option*.
+>   You can print several types of reports using Inventory Control. Some reports automatically are printed when you complete certain procedures; for example, posting journals can be printed automatically when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Specifying an Inventory Control report option*.
 
->   *If you’re using extended pricing, standard item price list reports won’t
->   contain up-to-date pricing information. To print an accurate pricing report,
->   you must use the Extended Pricing Reports window.*
+>   *If you’re using extended pricing, standard item price list reports won’t contain up-to-date pricing information. To print an accurate pricing report, you must use the Extended Pricing Reports window.*
 
->   The following table lists the report types available in Inventory Control
->   and the reports in each category.
+>   The following table lists the report types available in Inventory Control and the reports in each category.
 
 | **Report Type**                                                                    | **Report**                   | **Printing method**                                                                                                                                                      |
 |------------------------------------------------------------------------------------|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -420,9 +340,7 @@ Chapter 30: Reports
 
 >   Serial/Lot Trace Inquiry Report
 
->   † Indicates reports that can be assigned to named printers. See your System
->   Administrator’s Guide (Help \>\> Contents \>\> select System Administration)
->   for more information.
+>   † Indicates reports that can be assigned to named printers. See your System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.
 
 | **Report Type**                                                                                                                                                                                                                                                   | **Report**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | **Printing method**                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -437,89 +355,37 @@ Chapter 30: Reports
 
 ### Accuracy Comparison report
 
->   The Accuracy Comparison report can be the most valuable result of performing
->   stock counts. The report helps you spot trends in the accuracy of your
->   inventory records over time, measured by the results of your stock counts.
+>   The Accuracy Comparison report can be the most valuable result of performing stock counts. The report helps you spot trends in the accuracy of your inventory records over time, measured by the results of your stock counts.
 
->   For example, suppose your business has several warehouses and stores. For
->   each site, you implement cycle counting and stock counts. Once you’ve
->   completed several counts, you print the Accuracy Comparison report, which
->   shows that all sites and warehouses have about the same inventory-record
->   accuracy.
+>   For example, suppose your business has several warehouses and stores. For each site, you implement cycle counting and stock counts. Once you’ve completed several counts, you print the Accuracy Comparison report, which shows that all sites and warehouses have about the same inventory-record accuracy.
 
->   If you notice a sharp decrease in the accuracy at one site, you might need
->   to investigate further. The change could be caused by changes in how
->   inventory is managed at that site—perhaps more training is needed for those
->   inventory personnel—or might be caused by employee theft. If you implement
->   new inventory management policies, the Accuracy comparison report also can
->   help you measure the success of those changes.
+>   If you notice a sharp decrease in the accuracy at one site, you might need to investigate further. The change could be caused by changes in how inventory is managed at that site—perhaps more training is needed for those inventory personnel—or might be caused by employee theft. If you implement new inventory management policies, the Accuracy comparison report also can help you measure the success of those changes.
 
->   The Accuracy Comparison report is printed from the Inventory Analysis
->   Reports window. You can print the report any time, but you must have
->   processed at least one stock count for the report to include any data.
+>   The Accuracy Comparison report is printed from the Inventory Analysis Reports window. You can print the report any time, but you must have processed at least one stock count for the report to include any data.
 
->   The following fields are of particular importance when analyzing your
->   accuracy.
+>   The following fields are of particular importance when analyzing your accuracy.
 
->   **To Reconcile** This field displays the absolute difference between the
->   captured quantity and the counted quantity. Ideally, this difference should
->   be zero, meaning that the captured quantity and the counted quantity are the
->   same. A large number in this field doesn’t necessarily mean that there was a
->   large variance, however. If unposted transactions or transaction history
->   showed that other entries in the system accounted for the amount, then your
->   inventory records are still accurate.
+>   **To Reconcile** This field displays the absolute difference between the captured quantity and the counted quantity. Ideally, this difference should be zero, meaning that the captured quantity and the counted quantity are the same. A large number in this field doesn’t necessarily mean that there was a large variance, however. If unposted transactions or transaction history showed that other entries in the system accounted for the amount, then your inventory records are still accurate.
 
->   **Net Variance** This field is the item quantity that was actually included
->   in the variance transaction. A large number in this field might signify
->   inventory control problems.
+>   **Net Variance** This field is the item quantity that was actually included in the variance transaction. A large number in this field might signify inventory control problems.
 
->   **Accuracy % [Accuracy Percent]** The Accuracy Percent is 100% - Relative
->   Error Percent, where Relative Error Percent is Variance / Counted Quantity x
->   100. An accuracy percentage of 100.00% is perfect accuracy.
+>   **Accuracy % [Accuracy Percent]** The Accuracy Percent is 100% - Relative Error Percent, where Relative Error Percent is Variance / Counted Quantity x 100. An accuracy percentage of 100.00% is perfect accuracy.
 
->   **Approx Value** Extended values for all quantities—captured, counted, to
->   reconcile, and net variance—are the current cost of the item when the stock
->   count was processed.
+>   **Approx Value** Extended values for all quantities—captured, counted, to reconcile, and net variance—are the current cost of the item when the stock count was processed.
 
 ### Historical stock status report
 
->   The Historical Stock Status Report can be printed at any time for a report
->   of the status of your inventory on a certain day. You can print the report
->   using the Inventory Activity Reports window. To automatically print the
->   report, you can use
+>   The Historical Stock Status Report can be printed at any time for a report of the status of your inventory on a certain day. You can print the report using the Inventory Activity Reports window. To automatically print the report, you can use Named Printers or the Distributed Process Server (DPS). Refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.
 
->   Named Printers or the Distributed Process Server (DPS). Refer to your System
->   Administrator's Guide (Help \>\> Contents \>\> select System Administration)
->   for more information.
+>   The report can be used to report information about Sales Inventory and Discontinued items only. The report shows the quantity on hand, the unit cost, and the extended cost for each item. Information about returned, damaged, in use, and service quantities is not reflected in the report.
 
->   The report can be used to report information about Sales Inventory and
->   Discontinued items only. The report shows the quantity on hand, the unit
->   cost, and the extended cost for each item. Information about returned,
->   damaged, in use, and service quantities is not reflected in the report.
+>   *To generate a Historical Stock Status Report, you must be maintaining transaction history for the items in the report. To set options to maintain history for an item class, refer to Creating an item class. To set options to maintain history for an item, refer to Entering item options.*
 
->   *To generate a Historical Stock Status Report, you must be maintaining
->   transaction history for the items in the report. To set options to maintain
->   history for an item class, refer to Creating an item class. To set options
->   to maintain history for an item, refer to Entering item options.*
+>   For an item with a LIFO Perpetual valuation method or a FIFO Perpetual valuation method, the extended cost of inventory as of a certain day is calculated in two steps. First, the extended cost is calculated *at the time the report is run*, much like the regular Stock Status Report. Then, transactions posted since the “as of date” are added to or subtracted from the extended cost. However, only transactions that affect the quantity on hand are listed in the report. A transaction that affected a different quantity type—such as a sales return document that added items to the returned quantity—would not be included in the report.
 
->   For an item with a LIFO Perpetual valuation method or a FIFO Perpetual
->   valuation method, the extended cost of inventory as of a certain day is
->   calculated in two steps. First, the extended cost is calculated *at the time
->   the report is run*, much like the regular Stock Status Report. Then,
->   transactions posted since the “as of date” are added to or subtracted from
->   the extended cost. However, only transactions that affect the quantity on
->   hand are listed in the report. A transaction that affected a different
->   quantity type—such as a sales return document that added items to the
->   returned quantity—would not be included in the report.
+>   Inventory cost (extended cost) calculations for the Historical Stock Status Report are influenced by the valuation method for an item. For more information about valuation methods and item costs, refer to *Valuation methods*.
 
->   Inventory cost (extended cost) calculations for the Historical Stock Status
->   Report are influenced by the valuation method for an item. For more
->   information about valuation methods and item costs, refer to *Valuation
->   methods*.
-
->   *If you change the valuation method for an item sometime between the point
->   in time you choose for the report—the As of Date—and the date you generate
->   the report, values in the report might not be accurate.*
+>   *If you change the valuation method for an item sometime between the point in time you choose for the report—the As of Date—and the date you generate the report, values in the report might not be accurate.*
 
 >   Refer to the following table for more information.
 
@@ -531,21 +397,9 @@ Chapter 30: Reports
 | FIFO periodic        | Quantity x Item’s historical standard cost for a selected date |
 | LIFO periodic        | Quantity x Item’s historical standard cost for a selected date |
 
->   When the current cost of an item that uses average perpetual valuation
->   method changes or when the standard cost of a LIFO periodic or FIFO periodic
->   item changes, the new value is saved to history. When an item that uses LIFO
->   perpetual or FIFO perpetual valuation method is received into stock, the
->   transaction is valued at the actual cost. This becomes the “historical cost”
->   for the item. The historical cost is always used for both increase
->   transactions (receipts) and decrease transactions (issues) for items that
->   have a LIFO Perpetual or FIFO Perpetual valuation method.
+>   When the current cost of an item that uses average perpetual valuation method changes or when the standard cost of a LIFO periodic or FIFO periodic item changes, the new value is saved to history. When an item that uses LIFO perpetual or FIFO perpetual valuation method is received into stock, the transaction is valued at the actual cost. This becomes the “historical cost” for the item. The historical cost is always used for both increase transactions (receipts) and decrease transactions (issues) for items that have a LIFO Perpetual or FIFO Perpetual valuation method.
 
->   If your report includes items with an Average Perpetual or periodic
->   valuation methods, however, you can choose to use either the historical cost
->   or the standard cost (for items with periodic valuation methods) or the
->   average cost (for items with the Average Cost valuation method). In those
->   cases, the unit costs and extended values are calculated according to the
->   following table:
+>   If your report includes items with an Average Perpetual or periodic valuation methods, however, you can choose to use either the historical cost or the standard cost (for items with periodic valuation methods) or the average cost (for items with the Average Cost valuation method). In those cases, the unit costs and extended values are calculated according to the following table:
 
 | **Valuation method**                                                   | **Cost type used** | **Calculations \***                                                                          |
 |------------------------------------------------------------------------|--------------------|----------------------------------------------------------------------------------------------|
@@ -595,11 +449,9 @@ Chapter 30: Reports
 
 >   Average
 
->   Extended cost: Standard cost for item on the selected date x Quantity on
->   Hand on the user date
+>   Extended cost: Standard cost for item on the selected date x Quantity on Hand on the user date
 
->   Extended cost: Standard cost for item on the selected date x Quantity on
->   Hand on the selected date
+>   Extended cost: Standard cost for item on the selected date x Quantity on Hand on the selected date
 
 >   Standard/
 
@@ -609,19 +461,11 @@ Chapter 30: Reports
 
 ### Checking for missing prices
 
->   If you’re using extended pricing, you can use the Extended Pricing Error
->   Report to identify the items for which prices cannot be calculated.
+>   If you’re using extended pricing, you can use the Extended Pricing Error Report to identify the items for which prices cannot be calculated.
 
->   For example, if an item has a value-off price in a price sheet but no net
->   price in the base price book, or if an item has entries in two price sheets
->   with the same date range in the same price book, prices can’t be calculated
->   and errors will be reported.
+>   For example, if an item has a value-off price in a price sheet but no net price in the base price book, or if an item has entries in two price sheets with the same date range in the same price book, prices can’t be calculated and errors will be reported.
 
->   You can view price error results on screen or on a printed report. When a
->   pricing error report is generated, a complete price book is calculated for
->   the date you enter. This price book is recalculated when an Extended Pricing
->   report is generated for a different date or if the Refresh Pricing Tables
->   option is marked.
+>   You can view price error results on screen or on a printed report. When a pricing error report is generated, a complete price book is calculated for the date you enter. This price book is recalculated when an Extended Pricing report is generated for a different date or if the Refresh Pricing Tables option is marked.
 
 >   **To check for missing prices:**
 
@@ -630,24 +474,19 @@ Chapter 30: Reports
 
 ![](media/546c8a7ba62e2dd0ee1feabc97e157cd.jpg)
 
-1.  Choose to report on errors for customers or price books.
+2.  Choose to report on errors for customers or price books.
 
-2.  Enter a date for which prices will be calculated.
+3.  Enter a date for which prices will be calculated.
 
-3.  Mark the Refresh Pricing Tables option to recalculate the prices in the
-    price book when you generate the Extended Pricing error report.
+4.  Mark the Refresh Pricing Tables option to recalculate the prices in the price book when you generate the Extended Pricing error report.
 
->   *If you intend to produce multiple price book reports for the same date,
->   clear this option to reduce processing time. Select this option only if you
->   have made changes to pricing setup since the last report was printed.*
+>   *If you intend to produce multiple price book reports for the same date, clear this option to reduce processing time. Select this option only if you have made changes to pricing setup since the last report was printed.*
 
-1.  If you selected a Customer report type, choose to report on customers or
-    prospects.
+5.  If you selected a Customer report type, choose to report on customers or prospects.
 
-2.  Enter or select the range of customers, prospects, or price books you want
-    to print the report for.
+6.  Enter or select the range of customers, prospects, or price books you want to print the report for.
 
-3.  Choose where to look for prices.
+7.  Choose where to look for prices.
 
 >   A customer report can be printed using the following options:
 
@@ -664,17 +503,13 @@ Chapter 30: Reports
 | Price Book Only          | Prices will be reported for price sheets assigned to the price book.                                                  |
 | Price Book and Base Book | Prices will be reported for price sheets assigned to the price book and price sheets assigned to the base price book. |
 
-1.  To view the information on-screen, choose the Redisplay button. Highlight a
-    record to display error details.
+8.  To view the information on-screen, choose the Redisplay button. Highlight a record to display error details.
 
->   To print a report, choose Destination to select a report destination, then
->   choose Print to print the report.
+>   To print a report, choose Destination to select a report destination, then choose Print to print the report.
 
 ### Printing extended pricing summary reports
 
->   If you’re using extended pricing, you can use the Extended Pricing Report
->   window to print reports that summarize pricing information for a customer or
->   for a price book.
+>   If you’re using extended pricing, you can use the Extended Pricing Report window to print reports that summarize pricing information for a customer or for a price book.
 
 >   **To print extended pricing summary reports:**
 
@@ -683,13 +518,11 @@ Chapter 30: Reports
 
 ![](media/ee9c7b195ca5b21478533bb52969e19a.jpg)
 
-1.  Choose the report type: Customer or Price Book.
+2.  Choose the report type: Customer or Price Book.
 
 *You can use the customer report type to print reports for prospects, as well.*
 
-1.  Mark Refresh Pricing Tables to recalculate pricing in a price book. You
-    shouldn’t have to mark this option unless you have made changes to pricing
-    information since the last time you generated the report.
+3.  Mark Refresh Pricing Tables to recalculate pricing in a price book. You shouldn’t have to mark this option unless you have made changes to pricing information since the last time you generated the report.
 
 2.  Enter the date that information in the report should be based on.
 
@@ -697,9 +530,9 @@ Chapter 30: Reports
 
 >   If you don’t mark this option, the first net price that is found will be printed on the report.
 
-1.  If you’re using Multicurrency Management, enter or select the currency ID for the report. If you don’t select a currency, information about all currencies will be included on the report.
+4.  If you’re using Multicurrency Management, enter or select the currency ID for the report. If you don’t select a currency, information about all currencies will be included on the report.
 
-2.  Enter additional information for the report, based on the kind of report you’re printing.
+5.  Enter additional information for the report, based on the kind of report you’re printing.
 
 >   Refer to the table for more information.
 
@@ -711,17 +544,17 @@ Chapter 30: Reports
 | Price Book      | Enter or select a range of price books to include in the report. To include all price books, mark All.                                                                                                               |
 |                 | Mark the information to include in the report. The report can be based on information for each price book only, or on information for the price book and the base price book.                                        |
 
-1.  Choose Destination to open the Report Destination window.
+6.  Choose Destination to open the Report Destination window.
 
-2.  Choose the report destination.
+7.  Choose the report destination.
 
 >   *If you don’t choose a destination for the report at this point, you’ll be prompted to select a destination when the report is generated.*
 
-1.  Choose OK to save the report destination and close the Report Destination window.
+8.  Choose OK to save the report destination and close the Report Destination window.
 
-2.  In the Extended Pricing Report window, choose Print to generate the report.
+9.  In the Extended Pricing Report window, choose Print to generate the report.
 
-3.  When you’ve finished, close the window.
+10.  When you’ve finished, close the window.
 
 ### Printing a purchase order generator item report
 
@@ -734,15 +567,15 @@ Chapter 30: Reports
 
 ![](media/1e74020f0aa91b4d664c33d425e46bcc.jpg)
 
-1.  Use the range fields to select the group of items to include in the report. You can select a range of items, sites, classes, or generic descriptions.
+2.  Use the range fields to select the group of items to include in the report. You can select a range of items, sites, classes, or generic descriptions.
 
-2.  Choose how information in the report should be sorted. Choices are Item, Description, Site, Class, and Generic Description.
+3.  Choose how information in the report should be sorted. Choices are Item, Description, Site, Class, and Generic Description.
 
-3.  Choose Print. The Report Destination window opens, where you can choose where the report should be printed. For more information about report destinations and formats, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
+4.  Choose Print. The Report Destination window opens, where you can choose where the report should be printed. For more information about report destinations and formats, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
-4.  In the Report Destination window, choose OK. The report will be printed to the destination you selected.
+5.  In the Report Destination window, choose OK. The report will be printed to the destination you selected.
 
-5.  When you’ve finished, close the window.
+6.  When you’ve finished, close the window.
 
 ### Specifying an Inventory Control report option
 
@@ -754,8 +587,7 @@ Chapter 30: Reports
 
 >   **To specify an Inventory Control report option:**
 
-1.  Open an Inventory Control reports window. There are separate windows for
-    each report type.
+1.  Open an Inventory Control reports window. There are separate windows for each report type.
 >   (Inventory \>\> Reports \>\> Setup)
 >   (Inventory \>\> Reports \>\> Item)
 >   (Inventory \>\> Reports \>\> Serial/Lots)
@@ -765,57 +597,31 @@ Chapter 30: Reports
 >   (Inventory \>\> Reports \>\> Posting Journals)
 >   (Inventory \>\> Reports \>\> Resource Planning)
 
-1.  Select a report from the Reports list.
+2.  Select a report from the Reports list.
 
-2.  Choose New to open the report options window. Your selection in step 2
-    determines which report options window appears.
+3.  Choose New to open the report options window. Your selection in step 2 determines which report options window appears.
 
-3.  Name the option and enter information to define the option. The name you
-    choose for the option won’t appear on the report. The selections available
-    for defining report options vary, depending on the report type you’ve
-    selected.
+4.  Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
 
-4.  Enter range restrictions. The Ranges list shows the available options for
-    each report. The available ranges vary, depending on the type of report.
+5.  Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
->   *You can enter only one restriction for each restriction type. For instance,
->   you can insert one item number restriction (item ABC-001 to ABC-999) and one
->   date restriction (10/ 15/05 to 11/15/05).*
+>   *You can enter only one restriction for each restriction type. For instance, you can insert one item number restriction (item ABC-001 to ABC-999) and one date restriction (10/ 15/05 to 11/15/05).*
 
-1.  Choose Insert to insert the range in the Restrictions List. To remove an
-    existing range from the list, select the range and choose Remove.
+6.  Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-2.  Choose Email Options to enter email options for the report option. Once the
-    email options are set up, you’ll be able to send the report in an email
-    message from this window by choosing Email. You can also send this report
-    from any list view where the report option is displayed.
+7.  Choose Email Options to enter email options for the report option. Once the email options are set up, you’ll be able to send the report in an email message from this window by choosing Email. You can also send this report from any list view where the report option is displayed.
 
-3.  Choose Destination to select a printing destination. Reports can be printed
-    to the screen, to the printer, to a file, or to any combination of these
-    options. If you select Ask Each Time, you can select printing options each
-    time you print this report option.
+8.  Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
 
->   For more information about printing report options, refer to your System
->   User's Guide (Help \>\> Contents \>\> select Using The System).
+>   For more information about printing report options, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
-1.  To print the report option from the report options window, choose Print
-    before saving it. If you don’t want to print the option now, choose Save and
-    close the window. The report window will be redisplayed.
+9.  To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
 ### Microsoft SQL Server® Reporting Services reports for Inventory Control
 
->   You can view Inventory Control Reporting Services reports from the Reporting
->   Services Reports list. If you are using Reporting Services 2008, inventory
->   metrics for your home page also appear in the Reporting Services Reports
->   list. You can access the Reporting Services Reports list from the navigation
->   pane or from an area page in the Microsoft Dynamics GP application window.
->   This report list appears if you specified the location of your Reporting
->   Services reports using the Reporting Tools Setup window. For more
->   information, see your System Setup Guide (Help \>\> Contents \>\> select
->   Setting up the System).
+>   You can view Inventory Control Reporting Services reports from the Reporting Services Reports list. If you are using Reporting Services 2008, inventory metrics for your home page also appear in the Reporting Services Reports list. You can access the Reporting Services Reports list from the navigation pane or from an area page in the Microsoft Dynamics GP application window. This report list appears if you specified the location of your Reporting Services reports using the Reporting Tools Setup window. For more information, see your System Setup Guide (Help \>\> Contents \>\> select Setting up the System).
 
->   The following Reporting Services reports are available for Inventory
->   Control.
+>   The following Reporting Services reports are available for Inventory Control.
 
 | Purchase Advice Report | Sales Summary |
 |------------------------|---------------|
@@ -825,69 +631,43 @@ Chapter 30: Reports
 
 >   **To print an Inventory Control Reporting Services report:**
 
-1.  In the navigation pane, choose the Inventory button, and then choose the
-    Reporting Services Reports list.
+1.  In the navigation pane, choose the Inventory button, and then choose the Reporting Services Reports list.
 
 2.  Mark the Inventory Control report that you want to print.
 
 3.  In the Actions group, choose View to open the Report Viewer.
 
-4.  In the Report Viewer, select the specifications for the report, and then
-    choose View Report.
+4.  In the Report Viewer, select the specifications for the report, and then choose View Report.
 
 5.  After viewing the report, select a format, and then print the report.
 
 Part 5: Utilities
 =================
 
->   This part of the documentation contains the procedures you need for
->   maintaining setup options, correcting transaction errors, and maintaining
->   your data. Always back up your accounting data before performing these
->   procedures.
+>   This part of the documentation contains the procedures you need for maintaining setup options, correcting transaction errors, and maintaining your data. Always back up your accounting data before performing these procedures.
 
 >   The following information is discussed:
 
--   *Chapter 31, “Item cost adjustments,”* contains information about updating
-    cost information on posted purchase receipts, and about updating average or
-    standard cost information for an item.
+-   *Chapter 31, “Item cost adjustments,”* contains information about updating cost information on posted purchase receipts, and about updating average or standard cost information for an item.
 
--   *Chapter 32, “Standard pricing wizards,”* describes how you can use wizards
-    to work with price list records, if you’re using standard pricing. You can
-    add, copy, update, and remove price lists. You also can assign a currency to
-    a range of items, if you’re using Multicurrency Management.
+-   *Chapter 32, “Standard pricing wizards,”* describes how you can use wizards to work with price list records, if you’re using standard pricing. You can add, copy, update, and remove price lists. You also can assign a currency to a range of items, if you’re using Multicurrency Management.
 
--   *Chapter 33, “Extended pricing utilities,”* contains information about
-    utilities you can use to transfer and remove price sheets.
+-   *Chapter 33, “Extended pricing utilities,”* contains information about utilities you can use to transfer and remove price sheets.
 
--   *Chapter 34, “History utilities,”* includes information about removing
-    fiscal- and calendar-year history, as well as removing other inventory
-    history information: for transactions, distributions, posting journals, and
-    stock counts.
+-   *Chapter 34, “History utilities,”* includes information about removing fiscal- and calendar-year history, as well as removing other inventory history information: for transactions, distributions, posting journals, and stock counts.
 
--   *Chapter 35, “Reconciling inventory records,”* explains how you can
-    reconcile inventory records so posted quantity information matches actual
-    inventory levels.
+-   *Chapter 35, “Reconciling inventory records,”* explains how you can reconcile inventory records so posted quantity information matches actual inventory levels.
 
--   *Chapter 36, “Inventory Control setup changes,”* contains information about
-    changing the number of decimal places used to track currency and quantity
-    information for items. You also can change the valuation method assigned to
-    an item, or replace the buyer or planner IDs that have been assigned in
-    resource planning windows. You also can remove bins from sites, from
-    item-site combinations, or both.
+-   *Chapter 36, “Inventory Control setup changes,”* contains information about changing the number of decimal places used to track currency and quantity information for items. You also can change the valuation method assigned to an item, or replace the buyer or planner IDs that have been assigned in resource planning windows. You also can remove bins from sites, from item-site combinations, or both.
 
 Chapter 31: Item cost adjustments
 ---------------------------------
 
->   You might need to adjust the costs of inventoried items in certain
->   circumstances. For example, if you learn that the cost of an item in a
->   posted transaction was entered incorrectly, you’ll want to correct the
->   information.
+>   You might need to adjust the costs of inventoried items in certain circumstances. For example, if you learn that the cost of an item in a posted transaction was entered incorrectly, you’ll want to correct the information.
 
->   Certain situations also can cause inventory to be revalued. Those situations
->   and their effect on accounts are included in this document.
+>   Certain situations also can cause inventory to be revalued. Those situations and their effect on accounts are included in this document.
 
->   *Refer to the General Ledger documentation for information about correcting
->   General Ledger entries.*
+>   *Refer to the General Ledger documentation for information about correcting General Ledger entries.*
 
 >   The following information is discussed:
 
@@ -899,8 +679,7 @@ Chapter 31: Item cost adjustments
 
 ### Adjusting the purchase receipt cost of an item
 
->   Use the Inventory Adjust Costs window to change the cost information for a
->   purchase receipt transaction.
+>   Use the Inventory Adjust Costs window to change the cost information for a purchase receipt transaction.
 
 >   **To adjust the purchase receipt cost of an item:**
 
@@ -909,77 +688,53 @@ Chapter 31: Item cost adjustments
 
 ![](media/bafa6625fb134cda815132b3a94b1412.jpg)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Enter or select a site ID.
+3.  Enter or select a site ID.
 
-3.  Determine the dates of the transactions you want to work with.
+4.  Determine the dates of the transactions you want to work with.
 
 >   **To see transactions for all dates** Mark All.
 
->   **To see transactions for a specified period** Mark From, then enter
->   starting and ending dates.
+>   **To see transactions for a specified period** Mark From, then enter starting and ending dates.
 
->   Once you’ve entered a range, detailed information for all receipts within
->   the range are displayed in the scrolling window.
+>   Once you’ve entered a range, detailed information for all receipts within the range are displayed in the scrolling window.
 
-1.  Find a transaction that has incorrect cost information. In the Cost column
-    for the transaction line, enter the correct cost.
+5.  Find a transaction that has incorrect cost information. In the Cost column for the transaction line, enter the correct cost.
 
-2.  Continue, repeating step 5 to enter corrected costs for other transactions,
-    if needed.
+6.  Continue, repeating step 5 to enter corrected costs for other transactions, if needed.
 
-3.  Choose Process.
+7.  Choose Process.
 
->   The General Posting Journal will be printed if there are cost changes posted
->   to the Inventory and Cost of Goods accounts in General Ledger. Cost changes
->   can occur if a quantity of the receipt has already been sold or consumed.
+>   The General Posting Journal will be printed if there are cost changes posted to the Inventory and Cost of Goods accounts in General Ledger. Cost changes can occur if a quantity of the receipt has already been sold or consumed.
 
 ### Average cost updates
 
-When you create a record for an item that uses the average perpetual valuation
-method, you can enter an average cost for the item. The average cost is called
-the current cost in the Item Maintenance window. After you save the item record,
-the current cost will be updated when you post transactions for the item.
+When you create a record for an item that uses the average perpetual valuation method, you can enter an average cost for the item. The average cost is called the current cost in the Item Maintenance window. After you save the item record, the current cost will be updated when you post transactions for the item.
 
-Microsoft Dynamics GP uses the moving average cost method. This means that when
-you post a transaction that increases the inventory quantity, the average cost
-will be calculated using the following formula.
+Microsoft Dynamics GP uses the moving average cost method. This means that when you post a transaction that increases the inventory quantity, the average cost will be calculated using the following formula.
 
-(Previous On-Hand Quantity x Previous Adjusted Unit Cost) + [(Receipt Quantity -
+(Previous On-Hand Quantity x Previous Adjusted Unit Cost) + [(Receipt Quantity - Quantity Returned) x Receipt Unit Cost]/Previous Quantity On-Hand + (Receipt's Quantity On-Hand - Quantity Returned)
 
-Quantity Returned) x Receipt Unit Cost]/Previous Quantity On-Hand + (Receipt's
-Quantity On-Hand - Quantity Returned)
-
->   *All calculations are based on quantities and costs that are first converted
->   to the base unit of measure.*
+>   *All calculations are based on quantities and costs that are first converted to the base unit of measure.*
 
 The average cost of an item will be recalculated under the following situations.
 
--   Posting an invoice receipt in Purchase Order Processing that has an item
-    marked to be revalued in inventory and has a unit cost that is different
-    from the unit cost on the shipment
+-   Posting an invoice receipt in Purchase Order Processing that has an item marked to be revalued in inventory and has a unit cost that is different from the unit cost on the shipment
 
--   Using the Inventory Adjust Costs window to change the cost of a purchase
-    receipt
+-   Using the Inventory Adjust Costs window to change the cost of a purchase receipt
 
--   Closing a purchase order line item when you haven’t invoiced the entire
-    quantity of the item
+-   Closing a purchase order line item when you haven’t invoiced the entire quantity of the item
 
 -   Posting a purchase order return
 
--   Posting an increase or decrease transaction with a document date that causes
-    the purchase receipt to appear before another purchase receipt in the
-    Purchase Receipts Inquiry window
+-   Posting an increase or decrease transaction with a document date that causes the purchase receipt to appear before another purchase receipt in the Purchase Receipts Inquiry window
 
--   Changing the quantity type of an item to On Hand when the unit cost for the
-    transaction is different from the current cost of the item.
+-   Changing the quantity type of an item to On Hand when the unit cost for the transaction is different from the current cost of the item.
 
 ### Updating the standard cost of an item
 
->   Use the Change Item Standard Cost window utility to change the standard cost
->   of an item and automatically create an adjustment in General Ledger keeping
->   the inventory and accounts in balance.
+>   Use the Change Item Standard Cost window utility to change the standard cost of an item and automatically create an adjustment in General Ledger keeping the inventory and accounts in balance.
 
 >   Only certain items can be changed in this window:
 
@@ -987,37 +742,29 @@ The average cost of an item will be recalculated under the following situations.
 
 -   Item status must be sales inventory or discontinued
 
--   If you have the Manufacturing module registered, you will not be able to use
-    this window. Use the windows available in that module instead.
+-   If you have the Manufacturing module registered, you will not be able to use this window. Use the windows available in that module instead.
 
 >   **To update the standard cost of an item:**
 
 1.  Open the Change Item Standard Cost window.
 >   (Inventory \>\> Utilities \>\> Change Item Standard Cost)
 
-1.  Enter or select the item. The quantity on hand and current standard cost
-    will be displayed.
+2.  Enter or select the item. The quantity on hand and current standard cost will be displayed.
 
-2.  Enter the new standard cost.
+3.  Enter the new standard cost.
 
-3.  Choose Process.
+4.  Choose Process.
 
->   An adjusting transaction will be created for updating Inventory and General
->   Ledger, and the standard cost will be changed. A posting journal will be
->   printed with information about the change.
+>   An adjusting transaction will be created for updating Inventory and General Ledger, and the standard cost will be changed. A posting journal will be printed with information about the change.
 
 Chapter 32: Standard pricing wizards
 ------------------------------------
 
->   Inventory Control includes a series of wizards you can use to work with item
->   price lists if you’re using standard pricing. You can add a price list to a
->   group of items, copy a price list from one item to another, and so on.
+>   Inventory Control includes a series of wizards you can use to work with item price lists if you’re using standard pricing. You can add a price list to a group of items, copy a price list from one item to another, and so on.
 
->   *For information about utilities available if you’re using extended pricing,
->   refer to Chapter 33, “Extended pricing utilities.”*
+>   *For information about utilities available if you’re using extended pricing, refer to Chapter 33, “Extended pricing utilities.”*
 
->   Most of the information you need to use a wizard is included in the window,
->   but you can refer to this information as needed for more information.
+>   Most of the information you need to use a wizard is included in the window, but you can refer to this information as needed for more information.
 
 >   The following information is discussed:
 
@@ -1041,24 +788,20 @@ Chapter 32: Standard pricing wizards
 
 ### Getting started with a price list wizard
 
->   To use any of the price list wizards available in Microsoft Dynamics GP, you
->   open a welcome window, move to a menu window, and select a price list
->   procedure. All price list wizard features begin with these steps.
+>   To use any of the price list wizards available in Microsoft Dynamics GP, you open a welcome window, move to a menu window, and select a price list procedure. All price list wizard features begin with these steps.
 
 >   **To get started with a price list wizard:**
 
 1.  Open the Price List Utilities - Welcome window.
 >   (Inventory \>\> Utilities \>\> Price List Utilities)
 
-1.  Choose Next to open the Price List Utilities Main Menu.
+2.  Choose Next to open the Price List Utilities Main Menu.
 
->   *If you’re not using Multicurrency Management, the last option—Assign
->   Currency Wizard—won’t be displayed.*
+>   *If you’re not using Multicurrency Management, the last option—Assign Currency Wizard—won’t be displayed.*
 
-1.  Select the price list procedure to complete.
+3.  Select the price list procedure to complete.
 
->   Refer to the following table to find more specific information about the
->   procedures.
+>   Refer to the following table to find more specific information about the procedures.
 
 | **To do this:**                       | **Refer to this section:**                       |
 |---------------------------------------|--------------------------------------------------|
@@ -1070,210 +813,127 @@ Chapter 32: Standard pricing wizards
 
 ### Adding a price list to several items
 
->   You can use a price list wizard to add price list information to several
->   items at once. To be able to do this, the items must be assigned the same
->   price method. Refer to *Price methods* for more information.
+>   You can use a price list wizard to add price list information to several items at once. To be able to do this, the items must be assigned the same price method. Refer to *Price methods* for more information.
 
->   You can end a price list wizard session at any time by choosing Cancel. Your
->   records will be unchanged until you choose Finish in the last price list
->   wizard window.
+>   You can end a price list wizard session at any time by choosing Cancel. Your records will be unchanged until you choose Finish in the last price list wizard window.
 
->   *Use this procedure only if you’re using standard pricing. For information
->   about pricing utilities you can use with extended pricing, refer to Chapter
->   33, “Extended pricing utilities.”*
+>   *Use this procedure only if you’re using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, “Extended pricing utilities.”*
 
 >   **To add a price list to several items:**
 
-1.  Refer to *Getting started with a price list wizard*, selecting the option
-    for adding a price list to several items. The Add Price List Wizard - Price
-    Method window opens.
+1.  Refer to *Getting started with a price list wizard*, selecting the option for adding a price list to several items. The Add Price List Wizard - Price Method window opens.
 
-2.  Select a price method from the list. All items you’re adding a price list to
-    must share the same price method. Choose Next.
+2.  Select a price method from the list. All items you’re adding a price list to must share the same price method. Choose Next.
 
->   *To add price list records for multiple currencies to an item, you must be
->   using Multicurrency Management and you must select Currency Amount or
->   Percent of List for the price method, and the items must already have the
->   appropriate currencies assigned to them.*
+>   *To add price list records for multiple currencies to an item, you must be using Multicurrency Management and you must select Currency Amount or Percent of List for the price method, and the items must already have the appropriate currencies assigned to them.*
 
->   The window that appears depends on whether you’re using multicurrency
->   features and the price method you selected.
+>   The window that appears depends on whether you’re using multicurrency features and the price method you selected.
 
->   **If you’re using Multicurrency Management and you selected percent of list
->   or currency amount** The Add Price List Wizard - Currency and Price Level
->   window opens.
+>   **If you’re using Multicurrency Management and you selected percent of list or currency amount** The Add Price List Wizard - Currency and Price Level window opens.
 
->   **If you’re not using multicurrency features** The Add Price List Wizard -
->   Price Level window opens.
+>   **If you’re not using multicurrency features** The Add Price List Wizard - Price Level window opens.
 
 ![](media/5cd1f027687470fbc824f114374c4e14.jpg)
 
-1.  Enter or select a currency (if you’re using Multicurrency Management and
-    have selected a price method of Current Amount or Percent of List) and price
-    level. Choose Next.
+3.  Enter or select a currency (if you’re using Multicurrency Management and have selected a price method of Current Amount or Percent of List) and price level. Choose Next.
 
 >   The window that appears depends on the price method you selected earlier.
 
->   **If you selected currency amount** The Add Price List Wizard - Initial
->   Price window opens.
+>   **If you selected currency amount** The Add Price List Wizard - Initial Price window opens.
 
->   **If you selected another price method** The Add Price List Wizard - Initial
->   Percentage window opens.
+>   **If you selected another price method** The Add Price List Wizard - Initial Percentage window opens.
 
 ![](media/af90614fcd54c262d4bc2ab818f16479.jpg)
 
-1.  Enter information to calculate the default price for the items you’re adding
-    the price list to.
+4.  Enter information to calculate the default price for the items you’re adding the price list to.
 
->   **If you selected currency amount earlier** Enter an amount to be the
->   default price for the items. Choose Next.
+>   **If you selected currency amount earlier** Enter an amount to be the default price for the items. Choose Next.
 
->   **If you selected another price method** Enter a default percentage to be
->   used to calculate pricing for items. Choose Next.
+>   **If you selected another price method** Enter a default percentage to be used to calculate pricing for items. Choose Next.
 
->   *This is default pricing for the items that you’re adding price lists to.
->   Later, you can adjust the pricing for specific items in the group.*
+>   *This is default pricing for the items that you’re adding price lists to. Later, you can adjust the pricing for specific items in the group.*
 
-1.  In the Add Price List Wizard - Restrictions window, enter restrictions to
-    define the items to be included in the group that you’re adding the price
-    list to. You can add as many restrictions as you like, but you can use each
-    range type only once. For example, you can define only one range of item
-    numbers.
+5.  In the Add Price List Wizard - Restrictions window, enter restrictions to define the items to be included in the group that you’re adding the price list to. You can add as many restrictions as you like, but you can use each range type only once. For example, you can define only one range of item numbers.
 
 ![](media/eec7f923650251582aab4763c9fa4b85.jpg)
 
->   You can use item numbers, descriptions, short descriptions, generic
->   descriptions, class IDs, and price groups to define the group of items that
->   you’re adding the price list to.
-
-*Refer to Items updated by price list wizards for more information.*
-
->   Choose Next.
+>   You can use item numbers, descriptions, short descriptions, generic descriptions, class IDs, and price groups to define the group of items that you’re adding the price list to. *Refer to Items updated by price list wizards for more information.* Choose Next.
 
 ![](media/fd662f1148d27e21b43b72df15fb0736.jpg)
 
-1.  Review the information in the scrolling window. Make any modifications as
-    needed.
+6.  Review the information in the scrolling window. Make any modifications as needed.
 
-*To print a preview report, choose File \>\> Print or choose the print icon
-button.*
+*To print a preview report, choose File \>\> Print or choose the print icon button.*
 
->   **To remove an item from the list to be updated** Clear the check box at the
->   beginning of the appropriate line.
+>   **To remove an item from the list to be updated** Clear the check box at the beginning of the appropriate line.
 
->   **To adjust the price for an item** Change the amount or percentage directly
->   in the scrolling window.
+>   **To adjust the price for an item** Change the amount or percentage directly in the scrolling window. Choose Next.
 
->   Choose Next.
-
-1.  In the Add Price List Wizard - Finish window, review the summary of the
-    price list modification you’re making.
+7.  In the Add Price List Wizard - Finish window, review the summary of the price list modification you’re making.
 
 ![](media/a42adfe0435da5d3a0daa6dfd3285b46.jpg)
 
->   Choose Finish to add the price lists to the items. The Add Price List Audit
->   Report automatically will be generated.
+>   Choose Finish to add the price lists to the items. The Add Price List Audit Report automatically will be generated.
 
 ### Updating price lists for several items
 
->   You can update price list records for a group of items that share a common
->   price method. To be updated, the combination of currency, price level, unit
->   of measure, and quantity breaks must already exist in each item’s price
->   list.
+>   You can update price list records for a group of items that share a common price method. To be updated, the combination of currency, price level, unit of measure, and quantity breaks must already exist in each item’s price list.
 
->   You can end a price list wizard session at any time by choosing Cancel. Your
->   records will be unchanged until you choose Finish in the last price list
->   wizard window.
+>   You can end a price list wizard session at any time by choosing Cancel. Your records will be unchanged until you choose Finish in the last price list wizard window.
 
->   *Use this procedure only if you’re using standard pricing. For information
->   about pricing utilities you can use with extended pricing, refer to Chapter
->   33, “Extended pricing utilities.”*
+>   *Use this procedure only if you’re using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, “Extended pricing utilities.”*
 
 >   **To update price lists for several items:**
 
-1.  Refer to *Getting started with a price list wizard*, selecting the wizard
-    for updating a price list to several items. The Update Price List Wizard -
-    Price Method window opens.
+1.  Refer to *Getting started with a price list wizard*, selecting the wizard for updating a price list to several items. The Update Price List Wizard - Price Method window opens.
 
 2.  Select a price method, then choose Next.
 
-3.  In the Update Price List Wizard - Update Information window, indicate how
-    the price list information should be updated.
+3.  In the Update Price List Wizard - Update Information window, indicate how the price list information should be updated.
 
->   **To adjust prices by a percentage** Mark Percentage and enter the
->   percentage change. Choose Next.
+>   **To adjust prices by a percentage** Mark Percentage and enter the percentage change. Choose Next.
 
->   **To adjust prices by a fixed percentage** Mark Fixed Percentage and enter
->   the percentage change. Choose Next. This option isn’t available if you’re
->   using the Currency Amount price method.
+>   **To adjust prices by a fixed percentage** Mark Fixed Percentage and enter the percentage change. Choose Next. This option isn’t available if you’re using the Currency Amount price method.
 
->   **To adjust prices by a fixed amount** This option is available only if
->   you’re using the Currency Amount price method. Mark Fixed Amount and enter
->   the amount of increase or decrease. Choose Next.
+>   **To adjust prices by a fixed amount** This option is available only if you’re using the Currency Amount price method. Mark Fixed Amount and enter the amount of increase or decrease. Choose Next.
 
 *Refer to Fixed percentages versus percentages for more information.*
 
-1.  If you selected the Currency Amount price method, use the Update Price List
-    Wizard - Rounding Information window to enter and select rounding options
-    for the records you’re updating. If you don’t want rounding to occur, select
-    None for the Round Policy.
-
->   Choose Next.
+4.  If you selected the Currency Amount price method, use the Update Price List Wizard - Rounding Information window to enter and select rounding options for the records you’re updating. If you don’t want rounding to occur, select None for the Round Policy. Choose Next.
 
 ![](media/6c13fc5387a78a3eaf216fd748da2b27.jpg)
 
->   *Refer to Rounding calculations for updating price lists for more
->   information about how rounding options affect pricing.*
+>   *Refer to Rounding calculations for updating price lists for more information about how rounding options affect pricing.*
 
-1.  In the Update Price List Wizard - Restrictions window, select the ranges of
-    price list records to be updated. You can define as many range restrictions
-    as needed, but only items that meet all restrictions will be updated. Choose
-    Next.
+5.  In the Update Price List Wizard - Restrictions window, select the ranges of price list records to be updated. You can define as many range restrictions as needed, but only items that meet all restrictions will be updated. Choose Next.
 
 ![](media/d0030d26a70f259a770dcf78049d8ce2.jpg)
 
->   When you’re updating price list records for a group of items, you can choose
->   the specific items and the specific price list records to be updated. For
->   example, if you’re using Multicurrency Management, you might want to update
->   all price lists for a specific currency. To do this, you’d include that
->   currency in the restrictions list.
+>   When you’re updating price list records for a group of items, you can choose the specific items and the specific price list records to be updated. For example, if you’re using Multicurrency Management, you might want to update all price lists for a specific currency. To do this, you’d include that currency in the restrictions list.
 
 *Refer to Items updated by price list wizards for more information.*
 
-1.  In the Update Price List Wizard - Preview window, review the information in
-    the scrolling window. Make any modifications as needed.
+6.  In the Update Price List Wizard - Preview window, review the information in the scrolling window. Make any modifications as needed.
 
-*To print a preview report, choose File \>\> Print or choose the print icon
-button.*
+*To print a preview report, choose File \>\> Print or choose the print iconton.*
 
 ![](media/17a52fb7cbd00619d53cb48d203c64b9.jpg)
 
->   **To remove an item from the list to be updated** Clear the check box at the
->   beginning of the appropriate line. Choose Next.
+>   **To remove an item from the list to be updated** Clear the check box at the beginning of the appropriate line. Choose Next.
 
->   **To adjust the price for an item** Change the amount or percentage directly
->   in the scrolling window. Choose Next.
+>   **To adjust the price for an item** Change the amount or percentage directly in the scrolling window. Choose Next.
 
-1.  In the Update Price List Wizard - Finish window, review the summary of the
-    price list modification you’re making.
+7.  In the Update Price List Wizard - Finish window, review the summary of the price list modification you’re making.
 
 ![](media/f7187498cbb5034e754e43c2b3c43686.jpg)
 
->   Choose Finish to update the price lists. The Update Price List Audit Report
->   automatically will be generated.
+>   Choose Finish to update the price lists. The Update Price List Audit Report automatically will be generated.
 
 ### Fixed percentages versus percentages
 
->   If you’re updating price lists that have a price method based on a
->   percentage—any price method other than Currency Amount—you can choose to
->   specify either a fixed percentage or a percentage change. If you use the
->   Fixed Percent update option, the percentage you enter is added to the
->   percentage in each price list. If you use the Percent update option, the
->   percentage in each price list is multiplied by the percentage you enter, and
->   the result is added to the percentage in each price list.
+>   If you’re updating price lists that have a price method based on a percentage—any price method other than Currency Amount—you can choose to specify either a fixed percentage or a percentage change. If you use the Fixed Percent update option, the percentage you enter is added to the percentage in each price list. If you use the Percent update option, the percentage in each price list is multiplied by the percentage you enter, and the result is added to the percentage in each price list.
 
->   Refer to the table for information about how those options will affect your
->   price lists.
+>   Refer to the table for information about how those options will affect your price lists.
 
 |                                                               | **Fixed percentage** | **Percentage**                                     |
 |---------------------------------------------------------------|----------------------|----------------------------------------------------|
@@ -1283,10 +943,7 @@ button.*
 
 ### Rounding calculations for updating price lists
 
->   You can use rounding options to make your pricing seem more even and
->   consistent if you’re using the Currency Amount price method. Refer to the
->   table for information about how different rounding options will affect
->   pricing for items.
+>   You can use rounding options to make your pricing seem more even and consistent if you’re using the Currency Amount price method. Refer to the table for information about how different rounding options will affect pricing for items.
 
 | **Calculated price** | **Rounding policy** | **Round option** | **Round amount** | **New price** |
 |----------------------|---------------------|------------------|------------------|---------------|
@@ -1300,185 +957,119 @@ button.*
 
 ### Copying a price list from one item to others
 
->   You can copy a price list from one item to others as needed, as long as all
->   items share the same unit of measure schedule. In the preview window, you
->   can adjust the prices for the individual items in the update list. Refer to
->   *Requirements and effects of copying price lists* for more information about
->   copying price lists.
+>   You can copy a price list from one item to others as needed, as long as all items share the same unit of measure schedule. In the preview window, you can adjust the prices for the individual items in the update list. Refer to *Requirements and effects of copying price lists* for more information about copying price lists.
 
->   You can end a price list wizard session at any time by choosing Cancel. Your
->   records will be unchanged until you choose Finish in the last price list
->   wizard window.
+>   You can end a price list wizard session at any time by choosing Cancel. Your records will be unchanged until you choose Finish in the last price list wizard window.
 
->   *Use this procedure only if you’re using standard pricing. For information
->   about pricing utilities you can use with extended pricing, refer to Chapter
->   33, “Extended pricing utilities.”*
+>   *Use this procedure only if you’re using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, “Extended pricing utilities.”*
 
 >   **To copy a price list from one item to others:**
 
-1.  Refer to *Getting started with a price list wizard*, selecting the wizard
-    for copying a price list that exists for one item to several other items.
-    The Copy Price List Wizard - Source Item Number window opens.
+8.  Refer to *Getting started with a price list wizard*, selecting the wizard for copying a price list that exists for one item to several other items. The Copy Price List Wizard - Source Item Number window opens.
 
 ![](media/36e55fee0f07a2a6a19de57624bc5fd7.jpg)
 
-1.  Enter or select an item number that includes the price list information you
-    want to copy. Choose Next.
+9.  Enter or select an item number that includes the price list information you want to copy. Choose Next.
 
-2.  In the Copy Price List Wizard - Restrictions window, choose the restrictions
-    that define which items you’re adding the price list to. You can add as many
-    restrictions as you like, but you can use each range type only once. For
-    example, you can define only one range of item numbers. Choose Next.
+10.  In the Copy Price List Wizard - Restrictions window, choose the restrictions that define which items you’re adding the price list to. You can add as many restrictions as you like, but you can use each range type only once. For example, you can define only one range of item numbers. Choose Next.
 
 *Refer to Items updated by price list wizards for more information.*
 
 ![](media/405132875d568bc7e98b4db63aa0d97c.jpg)
 
-1.  In the Copy Price List Wizard - Preview window, review the information in
-    the scrolling window. Only items that had the same unit of measure schedule
-    as the source item number, and that met all the restrictions you defined are
-    listed in the scrolling window. Make any modifications as needed.
+11.  In the Copy Price List Wizard - Preview window, review the information in the scrolling window. Only items that had the same unit of measure schedule as the source item number, and that met all the restrictions you defined are listed in the scrolling window. Make any modifications as needed.
 
->   *Be sure to carefully review the information in the preview window, because
->   the price lists of all destination items are deleted before the copying
->   process begins. You must be sure that the Include option is cleared for all
->   price lists that you don’t want to change.*
+>   *Be sure to carefully review the information in the preview window, because the price lists of all destination items are deleted before the copying process begins. You must be sure that the Include option is cleared for all price lists that you don’t want to change.*
 
 ![](media/0b9b2bc1e1693352f530b5cebabf70ec.jpg)
 
->   **To remove an item from the list to be updated** Clear the check box at the
->   beginning of the appropriate line. Choose Next.
+>   **To remove an item from the list to be updated** Clear the check box at the beginning of the appropriate line. Choose Next.
 
->   **To adjust the price for an item** Change the amount or percentage directly
->   in the scrolling window. Choose Next.
+>   **To adjust the price for an item** Change the amount or percentage directly in the scrolling window. Choose Next.
 
-1.  In the Copy Price List Wizard - Finish window, review the summary of the
-    price list modification you’re making.
+12.  In the Copy Price List Wizard - Finish window, review the summary of the price list modification you’re making.
 
 ![](media/93e3bc8f072bfe359536f85181254f5c.jpg)
 
->   Choose Finish to copy the price list of the source item to the other items.
->   The Copy Price List Audit Report automatically will be generated.
+>   Choose Finish to copy the price list of the source item to the other items. The Copy Price List Audit Report automatically will be generated.
 
 ### Removing price list records from several items
 
->   You can remove price list records from several items, if needed. For
->   example, suppose you’ve always offered special pricing to employees for all
->   products, but then you decide to cut the program, offering special pricing
->   to employees only for certain items. You can use the Remove Price List
->   Wizard to remove the Employee price list records from certain items.
+>   You can remove price list records from several items, if needed. For example, suppose you’ve always offered special pricing to employees for all products, but then you decide to cut the program, offering special pricing to employees only for certain items. You can use the Remove Price List Wizard to remove the Employee price list records from certain items.
 
->   *You can end a price list wizard session at any time by choosing Cancel.
->   Your records will be unchanged until you choose Finish in the last price
->   list wizard window.*
+>   *You can end a price list wizard session at any time by choosing Cancel. Your records will be unchanged until you choose Finish in the last price list wizard window.*
 
 >   **To remove price list records from several items:**
 
-1.  Refer to *Getting started with a price list wizard*, selecting the wizard
-    for removing price list records from several items. The Remove Price List
-    Wizard - Restrictions window opens.
+1.  Refer to *Getting started with a price list wizard*, selecting the wizard for removing price list records from several items. The Remove Price List Wizard - Restrictions window opens.
 
 ![](media/94d5fa78d50140de17016b129445e825.jpg)
 
-1.  Define the ranges of price list records you to remove from items. For
-    example, you might want to remove price list records for a certain currency
-    from all item price lists. You must define at least one range before you can
-    continue. Choose Next.
+2.  Define the ranges of price list records you to remove from items. For example, you might want to remove price list records for a certain currency from all item price lists. You must define at least one range before you can continue. Choose Next.
 
 *Refer to Items updated by price list wizards for more information.*
 
-1.  In the Remove Price List Wizard - Preview window, review the information in
-    the scrolling window. To print a preview report, choose File \>\> Print or
-    choose the print icon button. Clear the check box at the beginning of the
-    scrolling window lines that you don’t want to be removed. Choose Next.
+3.  In the Remove Price List Wizard - Preview window, review the information in the scrolling window. To print a preview report, choose File \>\> Print or choose the print icon button. Clear the check box at the beginning of the scrolling window lines that you don’t want to be removed. Choose Next.
 
 ![](media/e7b139cdeaca32ca47acde6aad1a5d8e.jpg)
 
-1.  In the Remove Price List Wizard - Finish window, review the summary of the
-    price list modification you’re making.
+4.  In the Remove Price List Wizard - Finish window, review the summary of the price list modification you’re making.
 
 ![](media/e0d1c6c2537671008876511e2670bea4.jpg)
 
->   Choose Finish to remove the price list records. The Remove Price List Audit
->   Report automatically will be generated.
+>   Choose Finish to remove the price list records. The Remove Price List Audit Report automatically will be generated.
 
 ### Assigning a currency to a group of items
 
->   Before you can add price list information in multiple currencies to items or
->   purchase items in a different currency, you must assign the alternate
->   currencies to the items. You can use this price list wizard to add a
->   currency to several items at once.
+>   Before you can add price list information in multiple currencies to items or purchase items in a different currency, you must assign the alternate currencies to the items. You can use this price list wizard to add a currency to several items at once.
 
->   *You can assign a currency to a group of items only if you’re using
->   Multicurrency Management.*
+>   *You can assign a currency to a group of items only if you’re using Multicurrency Management.*
 
->   You can end a price list wizard session at any time by choosing Cancel. Your
->   records will be unchanged until you choose Finish in the last price list
->   wizard window.
+>   You can end a price list wizard session at any time by choosing Cancel. Your records will be unchanged until you choose Finish in the last price list wizard window.
 
->   *Use this procedure only if you’re using standard pricing. For information
->   about pricing utilities you can use with extended pricing, refer to Chapter
->   33, “Extended pricing utilities.”*
+>   *Use this procedure only if you’re using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, “Extended pricing utilities.”*
 
 >   **To assign a currency to a group of items:**
 
-1.  Refer to *Getting started with a price list wizard*, selecting the wizard
-    for assigning a currency to several items, to open the Assign Currency
-    Wizard - Currency window.
+1.  Refer to *Getting started with a price list wizard*, selecting the wizard for assigning a currency to several items, to open the Assign Currency Wizard - Currency window.
 
 ![](media/b8c9d061ec5c66a6dce24ca83c89c75d.jpg)
 
-1.  Enter or select the currency ID of the currency you want to assign to items.
+2.  Enter or select the currency ID of the currency you want to assign to items.
 
-2.  Determine the default number of currency decimals to be used in pricing
-    calculations. You can change the number of currency decimals for specific
-    items later, if needed.
+3.  Determine the default number of currency decimals to be used in pricing calculations. You can change the number of currency decimals for specific items later, if needed.
 
 >   **To use the decimals defined in currency setup** Mark From Currency ID.
 
->   **To use a different number of currency decimals** Mark Enter and select the
->   number of currency decimals to be used.
+>   **To use a different number of currency decimals** Mark Enter and select the number of currency decimals to be used.
 
-1.  Enter an initial list price for the items you’re assigning the currency to.
-    Choose Next.
+4.  Enter an initial list price for the items you’re assigning the currency to. Choose Next.
 
->   *This is the default list price for the items that you’re adding a currency
->   to. Later, you can adjust the list price for specific items in the group.*
+>   *This is the default list price for the items that you’re adding a currency to. Later, you can adjust the list price for specific items in the group.*
 
-1.  In the Assign Currency Wizard - Select Restrictions window, choose the items
-    to be included in the group that you’re assigning the currency to. You can
-    add as many restrictions as you like, but you can use each range type only
-    once. For example, you can define only one range of item numbers. Choose
-    Next.
+5.  In the Assign Currency Wizard - Select Restrictions window, choose the items to be included in the group that you’re assigning the currency to. You can add as many restrictions as you like, but you can use each range type only once. For example, you can define only one range of item numbers. Choose Next.
 
 *Refer to Items updated by price list wizards for more information.*
 
 ![](media/cbed4d0866133ccb1167bbbcc5208035.jpg)
 
-1.  In the Assign Currency Wizard - Preview window, review the information in
-    the scrolling window. Make any modifications as needed.
+6.  In the Assign Currency Wizard - Preview window, review the information in the scrolling window. Make any modifications as needed.
 
->   To print a preview report, choose File \>\> Print or choose the print icon
->   button.
+>   To print a preview report, choose File \>\> Print or choose the print icon button.
 
 ![](media/5d29d5409479a5c76b900f1b4c1f6417.jpg)
 
->   *If a currency is already assigned to an item, that item won’t appear in the
->   scrolling window.*
+>   *If a currency is already assigned to an item, that item won’t appear in the scrolling window.*
 
->   **To adjust the number of currency decimals** Select a different number from
->   the Decimals list in the appropriate scrolling window line.
+>   **To adjust the number of currency decimals** Select a different number from the Decimals list in the appropriate scrolling window line.
 
->   **To adjust the list price for an item** Enter a different list price for
->   each item, as needed.
+>   **To adjust the list price for an item** Enter a different list price for each item, as needed.
 
->   **To exclude an item from being assigned the currency** Clear the check box
->   at the beginning of the scrolling window line.
+>   **To exclude an item from being assigned the currency** Clear the check box at the beginning of the scrolling window line.
 
 >   Choose Next.
 
-1.  In the Assign Currency Wizard - Finish window, review the summary of the
-    price list modification you’re making.
+7.  In the Assign Currency Wizard - Finish window, review the summary of the price list modification you’re making.
 
 ![](media/73e5a82defea1a73a23f42f285c6082a.jpg)
 
