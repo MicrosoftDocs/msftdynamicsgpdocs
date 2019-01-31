@@ -5511,147 +5511,86 @@ Chapter 22: Stock count schedules
 
 4.  The report destination window for the Stock Count Exceptions report appears. Choose the destination for the Stock Count Exceptions report.
 
->   If you have exceptions that prevent the count from being started, they’ll be
->   listed in the report, and the status of the stock count will remain
->   Available. Refer to *Exceptions for starting a stock count* for more
->   information.
+>   If you have exceptions that prevent the count from being started, they’ll be listed in the report, and the status of the stock count will remain Available. Refer to *Exceptions for starting a stock count* for more information.
 
-1.  If the stock count can be started, the Stock Count Print Options window
-    appears. Choose OK and select your print destination. Refer to *Options for
-    stock count forms* for more information.
+5.  If the stock count can be started, the Stock Count Print Options window appears. Choose OK and select your print destination. Refer to *Options for stock count forms* for more information.
 
->   If you have exceptions that prevent the count from starting, an alert
->   message will warn you that exceptions exist, and the status of the count
->   will remain Available.
+>   If you have exceptions that prevent the count from starting, an alert message will warn you that exceptions exist, and the status of the count will remain Available.
 
 ### Exceptions for starting a stock count
 
->   Two exception reports for stock counts are included in Inventory Control.
->   One is generated when you choose Start Count in the Stock Count Schedule
->   window. That report lists any issues that prevent the stock count from being
->   started, but is generated even if no problems exist. The other exception
->   report is generated when you process a stock count. For more information
->   about that report, refer to *Effects of processing a stock count*.
+>   Two exception reports for stock counts are included in Inventory Control. One is generated when you choose Start Count in the Stock Count Schedule window. That report lists any issues that prevent the stock count from being started, but is generated even if no problems exist. The other exception report is generated when you process a stock count. For more information about that report, refer to *Effects of processing a stock count*.
 
->   If the exception report for starting a stock count lists no problems, the
->   status of the stock count is set to Started and stock count forms are
->   printed. Refer to *Options for stock count forms* for more information.
+>   If the exception report for starting a stock count lists no problems, the status of the stock count is set to Started and stock count forms are printed. Refer to *Options for stock count forms* for more information.
 
 >   Two exceptions can prevent a stock count from being started.
 
--   An item-site combination in the stock count schedule is already included in
-    another stock count that is Started or Entered. (If you’re using multiple
-    bins, an item-site-bin combination that is part of another stock count
-    schedule can prevent the stock count from being started.)
+-   An item-site combination in the stock count schedule is already included in another stock count that is Started or Entered. (If you’re using multiple bins, an item-site-bin combination that is part of another stock count schedule can prevent the stock count from being started.)
 
--   If you’re using multiple bins, the stock count can’t be started if any bin
-    information is missing.
+-   If you’re using multiple bins, the stock count can’t be started if any bin information is missing.
 
->   Before you can start the newer stock count, you must handle the exceptions.
->   No stock count forms will be generated and the status of the stock count
->   schedule will remain Available until you fix all exceptions and choose Start
->   Count again.
+>   Before you can start the newer stock count, you must handle the exceptions. No stock count forms will be generated and the status of the stock count schedule will remain Available until you fix all exceptions and choose Start Count again.
 
 >   To handle these exceptions, you have these options:
 
->   **Remove the combination** You can remove the combination from the newer
+>   **Remove the combination** You can remove the combination from the newer stock count schedule. Refer to *Removing items from a stock count schedule* for more information.
 
->   stock count schedule. Refer to *Removing items from a stock count schedule*
->   for more information.
+>   **Process the older stock count** If you process the existing stock count before starting the newer stock count, the combination will be available to be included in your newer stock count. Refer to *Effects of processing a stock count* for more information.
 
->   **Process the older stock count** If you process the existing stock count
->   before starting the newer stock count, the combination will be available to
->   be included in your newer stock count. Refer to *Effects of processing a
->   stock count* for more information.
-
->   **Recreate the stock count ID** If a stock count can’t be started because
->   you’ve begun using the multiple bins feature since the stock count was
->   created, you need to add bin information to the stock count. To do this, you
->   can edit the existing stock count ID or you can delete the existing stock
->   count ID and recreate it. The bin information automatically will be included
->   in the new stock count. Refer to *Creating or modifying a stock count
->   schedule* for more information.
+>   **Recreate the stock count ID** If a stock count can’t be started because you’ve begun using the multiple bins feature since the stock count was created, you need to add bin information to the stock count. To do this, you can edit the existing stock count ID or you can delete the existing stock count ID and recreate it. The bin information automatically will be included in the new stock count. Refer to *Creating or modifying a stock count schedule* for more information.
 
 ### Options for stock count forms
 
->   When you successfully start a stock count, stock forms are generated for you
->   to use to record count information. Inventory personnel can use these forms
->   to note their counting activities. They can write the time and date each
->   item was counted. If an item is tracked by lot or serial numbers, they also
->   can note those identifiers.
+>   When you successfully start a stock count, stock forms are generated for you to use to record count information. Inventory personnel can use these forms to note their counting activities. They can write the time and date each item was counted. If an item is tracked by lot or serial numbers, they also can note those identifiers.
 
->   Use the Stock Count Print Options window to specify how you want the stock
->   count forms formatted. You can choose how the items will be sorted on the
->   report. Item can be sorted by site ID, then bin and then item number, or
->   they can be sorted by item number, then bin and then site ID.
+>   Use the Stock Count Print Options window to specify how you want the stock count forms formatted. You can choose how the items will be sorted on the report. Item can be sorted by site ID, then bin and then item number, or they can be sorted by item number, then bin and then site ID.
 
 ![](media/74c79f3ddf13ba90495e3389fb27c58d.jpg)
 
->   You can determine if page breaks should occur between items. If you have
->   several warehouse personnel who will be counting items, this can make it
->   easier for you to split up the task.
+>   You can determine if page breaks should occur between items. If you have several warehouse personnel who will be counting items, this can make it easier for you to split up the task.
 
->   You also can determine what’s included on the forms. You can choose whether
->   to include the on-hand quantities, and you can choose whether to include
->   identifiers for items tracked by lot or serial numbers.
+>   You also can determine what’s included on the forms. You can choose whether to include the on-hand quantities, and you can choose whether to include identifiers for items tracked by lot or serial numbers.
 
 ### Canceling a stock count schedule
 
->   Use the Stock Count Schedule window to cancel a Started stock count. When
->   you cancel a stock count, captured quantity information is cleared. If you
->   restart the count later, new captured quantity information will be saved and
->   new stock count forms will be printed.
+>   Use the Stock Count Schedule window to cancel a Started stock count. When you cancel a stock count, captured quantity information is cleared. If you restart the count later, new captured quantity information will be saved and new stock count forms will be printed.
 
->   *If the status of the count is Entered, you must first clear the count.
->   Refer to Clearing stock count entries for more information.*
+>   *If the status of the count is Entered, you must first clear the count. Refer to Clearing stock count entries for more information.*
 
 >   **To cancel a stock count schedule:**
 
 1.  Open the Stock Count Schedule window.
 >   (Inventory \>\> Transactions \>\> Stock Count Schedule) 
+
 2.  Enter or select a stock count schedule that has a Started status.
 
-1.  Choose Cancel Count.
+3.  Choose Cancel Count.
 
->   When you cancel a stock count, the status of the count is reset to
->   Available, and all captured quantity information is discarded.
+>   When you cancel a stock count, the status of the count is reset to Available, and all captured quantity information is discarded.
 
 ### Deleting a stock count schedule
 
->   Use the Stock Count Schedule window to delete a stock count schedule. You
->   can delete a stock count only if its status is Available.
+>   Use the Stock Count Schedule window to delete a stock count schedule. You can delete a stock count only if its status is Available.
 
->   *If a stock count isn’t set to be reused, it automatically will be deleted
->   from the system after all results are entered, the stock count is processed,
->   and any inventory variance transactions are created.*
+>   *If a stock count isn’t set to be reused, it automatically will be deleted from the system after all results are entered, the stock count is processed, and any inventory variance transactions are created.*
 
 >   **To delete a stock count schedule:**
 
 1.  Open the Stock Count Schedule window.
 >   (Inventory \>\> Transactions \>\> Stock Count Schedule)
 
-1.  Enter or select a stock count schedule with Available status.
+2.  Enter or select a stock count schedule with Available status.
 
-2.  Choose Delete. An alert message appears, asking if you’re sure you want to
-    delete the stock count record. Choose Yes.
+3.  Choose Delete. An alert message appears, asking if you’re sure you want to delete the stock count record. Choose Yes.
 
-3.  Close the window.
+4.  Close the window.
 
 Chapter 23: Stock count processing
 ----------------------------------
 
->   Once inventory personnel have counted the items in a stock count schedule,
->   you can enter stock count results. You can enter results all at once, or as
->   each item is counted. Those results are compared to the captured quantities
->   for each combination in the stock count schedule, and then default variance
->   amounts are calculated. (Transactions aren’t actually created until you
->   process the stock count.) You can accept the variance amounts or change
->   them, and create and post transactions based on the variance amounts.
+>   Once inventory personnel have counted the items in a stock count schedule, you can enter stock count results. You can enter results all at once, or as each item is counted. Those results are compared to the captured quantities for each combination in the stock count schedule, and then default variance amounts are calculated. (Transactions aren’t actually created until you process the stock count.) You can accept the variance amounts or change them, and create and post transactions based on the variance amounts.
 
->   You don’t have to count items in the base unit of measure. For example, you
->   might purchase widgets in cases of 10 units. If you count six cases of
->   widgets and four single widgets, you can enter that as 6 cases and 4
->   singles—and Inventory Control automatically will convert that to 64 widgets.
+>   You don’t have to count items in the base unit of measure. For example, you might purchase widgets in cases of 10 units. If you count six cases of widgets and four single widgets, you can enter that as 6 cases and 4 singles—and Inventory Control automatically will convert that to 64 widgets.
 
 >   The following information is discussed:
 
@@ -5683,64 +5622,35 @@ Chapter 23: Stock count processing
 
 >   When you process a stock count, several things happen:
 
--   Variance transactions are created. If the Autopost Stock Count Variances
-    option is marked, the transactions also will be posted.
+-   Variance transactions are created. If the Autopost Stock Count Variances option is marked, the transactions also will be posted.
 
->   *Cost information for variance transactions will be based on the cost of the
->   items at the time of the stock count. Cost information is based on the
->   item’s cost trends, so variance transactions might not match the true cost
->   of the items. Refer to Stock counts and dates and Changing the default stock
->   count date for more information.*
+>   *Cost information for variance transactions will be based on the cost of the items at the time of the stock count. Cost information is based on the item’s cost trends, so variance transactions might not match the true cost of the items. Refer to Stock counts and dates and Changing the default stock count date for more information.*
 
--   New Next Stock Count Dates are calculated for the items in the stock count
-    schedule. Refer to *Chapter 18, “Count intervals,”* for more information.
+-   New Next Stock Count Dates are calculated for the items in the stock count schedule. Refer to *Chapter 18, “Count intervals,”* for more information.
 
--   History information about the results of the stock count is stored. History
-    is kept to be the basis of the Accuracy Comparison report, which helps you
-    monitor the accuracy of your stock counts over time. Refer to *Accuracy
-    Comparison report* for more information.
+-   History information about the results of the stock count is stored. History is kept to be the basis of the Accuracy Comparison report, which helps you monitor the accuracy of your stock counts over time. Refer to *Accuracy Comparison report* for more information.
 
--   If the stock count wasn’t marked to be reused, it’s deleted. If it was
-    marked to be reused, the stock count results are cleared and the status of
-    the count is set to Available.
+-   If the stock count wasn’t marked to be reused, it’s deleted. If it was marked to be reused, the stock count results are cleared and the status of the count is set to Available.
 
--   The exceptions report for processing a stock count is printed. The report
-    lists the problems, if any, that prevent the stock count information from
-    being processed.
+-   The exceptions report for processing a stock count is printed. The report lists the problems, if any, that prevent the stock count information from being processed.
 
->   Even if a stock count is successfully processed, the exceptions report is
->   printed. If the stock count had no variance transactions, that is noted in
->   the exception report; otherwise, the report lists the batch number and
->   variance transaction numbers used.
+>   Even if a stock count is successfully processed, the exceptions report is printed. If the stock count had no variance transactions, that is noted in the exception report; otherwise, the report lists the batch number and variance transaction numbers used.
 
 ### Stock counts and dates
 
->   Several dates are tracked for stock counts. Complete stock count records can
->   include a start date, a document date, a count date and a posting date.
->   Refer to *Changing the default stock count date* for more information.
+>   Several dates are tracked for stock counts. Complete stock count records can include a start date, a document date, a count date and a posting date. Refer to *Changing the default stock count date* for more information.
 
->   **Count Start Date and Time** The count start date and time are when the
->   count was started—when the stock count schedule’s status was changed from
->   Available to Started.
+>   **Count Start Date and Time** The count start date and time are when the count was started—when the stock count schedule’s status was changed from Available to Started.
 
->   **Document Date** The document date is the date of the entry of the stock
->   count results.
+>   **Document Date** The document date is the date of the entry of the stock count results.
 
->   **Count Date and Time** The count date and time is when the stock count of a
->   specific item was actually performed. You can specify a default count date
->   and time, and then accept or change that date and time for specific entries,
->   if needed.
+>   **Count Date and Time** The count date and time is when the stock count of a specific item was actually performed. You can specify a default count date and time, and then accept or change that date and time for specific entries, if needed.
 
->   **Posting date** The posting date for a stock count is the date the
->   inventory variance transactions resulting from a stock count are posted. If
->   you’ve marked the Autopost Stock Count Variances option, the posting date
->   will be the date the stock count is processed. If you post your transactions
->   manually, it will be the date the last transaction is posted.
+>   **Posting date** The posting date for a stock count is the date the inventory variance transactions resulting from a stock count are posted. If you’ve marked the Autopost Stock Count Variances option, the posting date will be the date the stock count is processed. If you post your transactions manually, it will be the date the last transaction is posted.
 
 ### Entering stock count results
 
->   Use the Stock Count Entry window to enter the results of the stock count,
->   based on information recorded on the stock count forms.
+>   Use the Stock Count Entry window to enter the results of the stock count, based on information recorded on the stock count forms.
 
 >   **To enter stock count results:**
 
@@ -5749,111 +5659,63 @@ Chapter 23: Stock count processing
 
 ![](media/a2473bfba6a58a2fbcb8ac0c4858caa1.jpg)
 
-1.  Enter or select a stock count ID with Started or Entered status. The
-    combinations included in the stock count are displayed in the scrolling
-    window.
+2.  Enter or select a stock count ID with Started or Entered status. The combinations included in the stock count are displayed in the scrolling window.
 
->   *If you enter or select a stock count ID that was started when the multiple
->   bins feature wasn’t enabled and the feature is enabled now, an alert message
->   is displayed. The stock count will be updated to include bin information.
->   You must use the Stock Count Entry window to add bin information for each
->   line in the stock count. If you’ve entered stock count results for the stock
->   count ID, those results will be cleared.*
+>   *If you enter or select a stock count ID that was started when the multiple bins feature wasn’t enabled and the feature is enabled now, an alert message is displayed. The stock count will be updated to include bin information. You must use the Stock Count Entry window to add bin information for each line in the stock count. If you’ve entered stock count results for the stock count ID, those results will be cleared.*
 
-1.  Accept or change the default document date.
+3.  Accept or change the default document date.
 
->   The default document date appears in each line of the scrolling window as
->   you enter count results. The user date is the default document date, but you
->   can change it.
+>   The default document date appears in each line of the scrolling window as you enter count results. The user date is the default document date, but you can change it.
 
->   *Refer to Changing the default stock count date for more information about
->   changing stock count dates.*
+>   *Refer to Changing the default stock count date for more information about changing stock count dates.*
 
-1.  Accept or change the default count date.
+4.  Accept or change the default count date.
 
->   The user date also will be the default stock count date in each line of the
->   scrolling window. Refer to *Changing the default stock count date* for more
->   information about changing stock count dates.
+>   The user date also will be the default stock count date in each line of the scrolling window. Refer to *Changing the default stock count date* for more information about changing stock count dates.
 
-1.  Select the sorting order for the scrolling window.
+5.  Select the sorting order for the scrolling window.
 
-2.  Enter the counted quantity for each item in the item’s base unit of measure.
+6.  Enter the counted quantity for each item in the item’s base unit of measure.
 
->   *To enter count results in other units of measure, refer to Entering results
->   in a different unit of measure.*
+>   *To enter count results in other units of measure, refer to Entering results in a different unit of measure.*
 
-1.  When you move off the field, Inventory Control automatically calculates the
-    variance quantity, updates the date and time with the default count date and
-    time, and marks the verified option. (If no default count date and time is
-    available, the user date and time are used.) You can accept or change the
-    default date and time. You also can clear the Verified option if you want to
-    check the entries before transactions are created.
+7.  When you move off the field, Inventory Control automatically calculates the variance quantity, updates the date and time with the default count date and time, and marks the verified option. (If no default count date and time is available, the user date and time are used.) You can accept or change the default date and time. You also can clear the Verified option if you want to check the entries before transactions are created.
 
-2.  Enter or select a reason code. This reason code will be transferred with the
-    item on the variance transaction created after the stock count. If the
-    reason code you entered has an offset account assigned, that account will be
-    used when the variance is posted.
+8.  Enter or select a reason code. This reason code will be transferred with the item on the variance transaction created after the stock count. If the reason code you entered has an offset account assigned, that account will be used when the variance is posted.
 
-3.  If the item is tracked by lot or serial numbers, you must enter information
-    about the lot or serial numbers of the items that were counted.
+9.  If the item is tracked by lot or serial numbers, you must enter information about the lot or serial numbers of the items that were counted.
 
-    -   To enter lot number information, refer to *Entering stock count lot
-        number information*.
+    -   To enter lot number information, refer to *Entering stock count lot number information*.
 
-    -   To enter serial number information, refer to *Entering stock count
-        serial number information*.
+    -   To enter serial number information, refer to *Entering stock count serial number information*.
 
-4.  Continue, repeating steps 6 through 9 for each combination.
+10.  Continue, repeating steps 6 through 9 for each combination.
 
-5.  Once you’ve entered a counted quantity for an item in the scrolling window,
-    the options for Autopost Stock Count Variances and Reuse Stock Count are
-    available. You can mark or unmark those options as needed.
+11.  Once you’ve entered a counted quantity for an item in the scrolling window, the options for Autopost Stock Count Variances and Reuse Stock Count areavailable. You can mark or unmark those options as needed.
 
->   *The default setting for the Autopost Stock Count Variances option comes
->   from the Inventory Control Setup window. Refer to Specifying preferences and
->   default entries for more information. The default setting for the Reuse
->   Stock Count option comes from the Stock Count Schedule window. Refer to
->   Creating or modifying a stock count schedule for more information.*
+>   *The default setting for the Autopost Stock Count Variances option comes from the Inventory Control Setup window. Refer to Specifying preferences and default entries for more information. The default setting for the Reuse Stock Count option comes from the Stock Count Schedule window. Refer to Creating or modifying a stock count schedule for more information.*
 
-1.  View distribution accounts for each combination in the scrolling window, and
-    make changes, if needed. Refer to *Changing accounts for posting a count
-    variance*.
+12.  View distribution accounts for each combination in the scrolling window, and make changes, if needed. Refer to *Changing accounts for posting a count variance*.
 
-2.  View unposted transactions and transaction history to see if there is an
-    accounting reason for a variance.
+13.  View unposted transactions and transaction history to see if there is an accounting reason for a variance.
 
->   For example, suppose the count for Item A was 34 and the captured quantity
->   for the item was 40. The default variance will be 6. If you check unposted
->   transactions and find an unposted transaction for 6 units of item A, then
->   you probably won’t want to process the default variance transaction because
->   the difference between the count quantity and the captured quantity can be
->   attributed to other entries in the system. Refer to *Verifying variance
->   amounts*.
+>   For example, suppose the count for Item A was 34 and the captured quantity for the item was 40. The default variance will be 6. If you check unposted transactions and find an unposted transaction for 6 units of item A, then you probably won’t want to process the default variance transaction because the difference between the count quantity and the captured quantity can be attributed to other entries in the system. Refer to *Verifying variance amounts*.
 
->   *You should view unposted transactions and transaction history for any stock
->   count result that has a variance.*
+>   *You should view unposted transactions and transaction history for any stock count result that has a variance.*
 
-1.  Save or process the stock count information.
+14.  Save or process the stock count information.
 
->   If you choose Process, inventory variance transactions will be created.
->   Refer to *Effects of processing a stock count* for more information.
+>   If you choose Process, inventory variance transactions will be created. Refer to *Effects of processing a stock count* for more information.
 
->   If you choose Save, no transactions will be posted now, and you’ll be able
->   to enter more stock count results for this stock count schedule later.
+>   If you choose Save, no transactions will be posted now, and you’ll be able to enter more stock count results for this stock count schedule later.
 
-1.  When you’ve finished, close the window.
+15.  When you’ve finished, close the window.
 
->   *If you didn’t choose the Autopost Stock Count Variances option, you must
->   use the*
-
->   *Inventory Batch Entry window to post the transactions. Refer to Chapter 24,
->   “Posting,” for more information.*
+>   *If you didn’t choose the Autopost Stock Count Variances option, you must use the Inventory Batch Entry window to post the transactions. Refer to Chapter 24, “Posting,” for more information.*
 
 ### Changing the default stock count date
 
->   Use the Stock Count Date Entry window to change the document date or the
->   default stock count date and time for a stock count. You also can use the
->   window to view the date and time a stock count was started.
+>   Use the Stock Count Date Entry window to change the document date or the default stock count date and time for a stock count. You also can use the window to view the date and time a stock count was started.
 
 >   **To change the default stock count date:**
 
@@ -5862,76 +5724,50 @@ Chapter 23: Stock count processing
 
 ![](media/74efbd378e81338bc4900de489ebc5ce.jpg)
 
-1.  Enter a document date. This date appears in the Document Date field in the
-    Stock Count Entry window.
+2.  Enter a document date. This date appears in the Document Date field in the Stock Count Entry window.
 
-2.  Enter a default stock count date and time. This information appears as the
-    default date and time for each line in the scrolling window in the Stock
-    Count Entry scrolling window.
+3.  Enter a default stock count date and time. This information appears as the default date and time for each line in the scrolling window in the Stock Count Entry scrolling window.
 
-3.  Choose OK to save your changes and close the window.
+4.  Choose OK to save your changes and close the window.
 
 ### Entering results in a different unit of measure
 
->   Use the Stock Count Unit of Measure Entry window to select a different unit
->   of measure (U of M) for counted items not tracked by lot or serial numbers.
->   You also can use this window to enter stock count information for an item in
->   different units of measure as part of the same count. For example, suppose
->   you buy item XYZ in 100-piece boxes, but you use the items one at a time. If
->   your stock count shows that you have 17 single XYZ items in an opened box,
->   plus three unopened cases of the item, you can enter the stock count results
->   as 17 singles and 3 cases. Inventory Control will convert the entries to the
->   base unit of measure: 317 XYZ items.
+>   Use the Stock Count Unit of Measure Entry window to select a different unit of measure (U of M) for counted items not tracked by lot or serial numbers. You also can use this window to enter stock count information for an item in different units of measure as part of the same count. For example, suppose you buy item XYZ in 100-piece boxes, but you use the items one at a time. If your stock count shows that you have 17 single XYZ items in an opened box, plus three unopened cases of the item, you can enter the stock count results as 17 singles and 3 cases. Inventory Control will convert the entries to the base unit of measure: 317 XYZ items.
 
->   *Before you begin this procedure, be sure you’ve already completed the
->   beginning steps for entering stock count results. Refer to Entering stock
->   count results for more information.*
+>   *Before you begin this procedure, be sure you’ve already completed the beginning steps for entering stock count results. Refer to Entering stock count results for more information.*
 
 >   **To enter results in a different unit of measure:**
 
 1.  Open the Stock Count Entry window.
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
-1.  Enter or select the stock count ID.
+2.  Enter or select the stock count ID.
 
-2.  In the scrolling window, select the combination to enter results for. Be
-    sure your insertion point is in that line in the scrolling window.
+3.  In the scrolling window, select the combination to enter results for. Be sure your insertion point is in that line in the scrolling window.
 
-3.  Choose the U of M expansion button to open the Stock Count Unit of Measure
-    Entry window.
+4.  Choose the U of M expansion button to open the Stock Count Unit of Measure Entry window.
 
 ![](media/30e00a1a0065b8fb307aed7582c91549.jpg)
 
-1.  Enter or select a unit of measure for the results, and then enter the
-    counted quantity for that unit of measure.
+5.  Enter or select a unit of measure for the results, and then enter the counted quantity for that unit of measure.
 
-2.  Repeat step 5 until you’ve entered all count results for the combination. As
-    you move off each line, the extended quantity—the equivalent in the base
-    unit of measure, according to the assigned unit of measure schedule—is
-    calculated and displayed.
+6.  Repeat step 5 until you’ve entered all count results for the combination. As you move off each line, the extended quantity—the equivalent in the base unit of measure, according to the assigned unit of measure schedule—is calculated and displayed.
 
-3.  Choose OK to close the Stock Count Unit of Measure Entry window.
+7.  Choose OK to close the Stock Count Unit of Measure Entry window.
 
->   The counted quantity and variance quantity are updated automatically in the
->   Stock Count Entry scrolling window.
+>   The counted quantity and variance quantity are updated automatically in the Stock Count Entry scrolling window.
 
-1.  Continue, adding other stock count results as needed.
+8.  Continue, adding other stock count results as needed.
 
-2.  Process or save the stock count.
+9.  Process or save the stock count.
 
-3.  When you’ve finished, close the window.
+10.  When you’ve finished, close the window.
 
 ### Entering stock count lot number information
 
->   Use the Stock Count Lot Number Entry window to enter lot number information
->   for a stock count. If an item is tracked by lot numbers, the window
->   automatically opens when you move off the scrolling window line in the Stock
->   Count Entry window. An icon appears in the Lot Number field for each lot
->   number that has expired.
+>   Use the Stock Count Lot Number Entry window to enter lot number information for a stock count. If an item is tracked by lot numbers, the window automatically opens when you move off the scrolling window line in the Stock Count Entry window. An icon appears in the Lot Number field for each lot number that has expired.
 
->   *Before beginning this procedure, be sure you’ve completed the beginning
->   steps for entering stock count results. Refer to Entering stock count
->   results for more information.*
+>   *Before beginning this procedure, be sure you’ve completed the beginning steps for entering stock count results. Refer to Entering stock count results for more information.*
 
 >   **To enter stock count lot number information:**
 
@@ -5940,43 +5776,23 @@ Chapter 23: Stock count processing
 
 ![](media/af3f9a5559d8d1c2ba05e91e4e6ba301.jpg)
 
->   *When you enter results for a lot- or serial-numbered item, a small S/L
->   symbol appears in the item number field in the Stock Count Entry scrolling
->   window.*
+>   *When you enter results for a lot- or serial-numbered item, a small S/L symbol appears in the item number field in the Stock Count Entry scrolling window.*
 
-1.  To enter count results for lots listed in the scrolling window, enter the
-    counted quantity in the appropriate line in the scrolling window.
+2.  To enter count results for lots listed in the scrolling window, enter the counted quantity in the appropriate line in the scrolling window.
 
-2.  To enter count results for lots not listed in the scrolling window, enter
-    the lot number in the first blank line in the scrolling window, and then
-    enter the count quantity.
+3.  To enter count results for lots not listed in the scrolling window, enter the lot number in the first blank line in the scrolling window, and then enter the count quantity.
 
->   If the system calculates a variance for a lot-numbered item, view unposted
->   transactions and transaction history to see if you can find a reason for the
->   variance. Select the lot number and choose Unposted Trx or Trx History. If
->   you find an explanation for a variance—such as an unposted quantity to
->   remove items from inventory—you can change the variance quantity as needed.
+>   If the system calculates a variance for a lot-numbered item, view unposted transactions and transaction history to see if you can find a reason for the variance. Select the lot number and choose Unposted Trx or Trx History. If you find an explanation for a variance—such as an unposted quantity to remove items from inventory—you can change the variance quantity as needed.
 
->   *Be sure to check the unposted transactions and the transaction history for
->   items that show variances. Processing a stock count creates inventory
->   variance transactions for every variance quantity in the stock count. If
->   some of those variances exist only because certain transactions are
->   unposted, you should override the variance quantities so you don’t create
->   additional discrepancies.*
+>   *Be sure to check the unposted transactions and the transaction history for items that show variances. Processing a stock count creates inventory variance transactions for every variance quantity in the stock count. If some of those variances exist only because certain transactions are unposted, you should override the variance quantities so you don’t create additional discrepancies.*
 
-1.  Choose OK to save the lot number information and return to the Stock Count
-    Entry window.
+4.  Choose OK to save the lot number information and return to the Stock Count Entry window.
 
 ### Entering stock count serial number information
 
->   Use the Stock Count Serial Number Entry window to enter serial number
->   information for a stock count. If you enter stock count results for a
->   serial-numbered item, the Stock Count Serial Number Entry window opens when
->   you move off the line in the scrolling window.
+>   Use the Stock Count Serial Number Entry window to enter serial number information for a stock count. If you enter stock count results for a serial-numbered item, the Stock Count Serial Number Entry window opens when you move off the line in the scrolling window.
 
->   *Before beginning this procedure, be sure you’ve completed the beginning
->   steps for entering stock count results. Refer to Entering stock count
->   results for more information.*
+>   *Before beginning this procedure, be sure you’ve completed the beginning steps for entering stock count results. Refer to Entering stock count results for more information.*
 
 >   **To enter stock count serial number information:**
 
@@ -5985,222 +5801,135 @@ Chapter 23: Stock count processing
 
 ![](media/bd7d3ca31a788f329f66630d0522e915.jpg)
 
->   *When you enter results for a lot- or serial-numbered item, a small S/L
->   symbol appears in the item number field in the Stock Count Entry scrolling
->   window.*
+>   *When you enter results for a lot- or serial-numbered item, a small S/L symbol appears in the item number field in the Stock Count Entry scrolling window.*
 
-1.  To enter information for serial numbers listed in the scrolling window,
-    select Counted from the appropriate Count Status list.
+2.  To enter information for serial numbers listed in the scrolling window, select Counted from the appropriate Count Status list.
 
-2.  To enter information for serial numbers not listed in the scrolling window,
-    enter the serial number in the first blank line in the scrolling window, and
-    then select Counted from the appropriate Count Status list.
+3.  To enter information for serial numbers not listed in the scrolling window, enter the serial number in the first blank line in the scrolling window, and then select Counted from the appropriate Count Status list.
 
-3.  To enter information about serial numbers listed in the scrolling window but
-    not counted, select Not Found from the appropriate Count Status list.
+4.  To enter information about serial numbers listed in the scrolling window but not counted, select Not Found from the appropriate Count Status list.
 
->   If the system calculates a variance for a serial-numbered item, view
->   unposted transactions and transaction history to see if you can find a
->   reason for the variance. Select the serial number and choose Unposted Trx or
->   Trx History. If you find an explanation for a variance—such as an unposted
->   quantity to remove items from inventory—you can change the variance quantity
->   as needed.
+>   If the system calculates a variance for a serial-numbered item, view unposted transactions and transaction history to see if you can find a reason for the variance. Select the serial number and choose Unposted Trx or Trx History. If you find an explanation for a variance—such as an unposted quantity to remove items from inventory—you can change the variance quantity as needed.
 
->   *Be sure to check the unposted transactions and the transaction history for
->   items that show variances. Processing a stock count creates inventory
->   variance transactions for every variance quantity in the stock count. If
->   some of those variances exist only because certain transactions are
->   unposted, you should override the variance quantities so you don’t create
->   additional discrepancies.*
+>   *Be sure to check the unposted transactions and the transaction history for items that show variances. Processing a stock count creates inventory variance transactions for every variance quantity in the stock count. If some of those variances exist only because certain transactions are unposted, you should override the variance quantities so you don’t create additional discrepancies.*
 
-1.  Choose OK to save the serial number information and return to the Stock
-    Count Entry window.
+5.  Choose OK to save the serial number information and return to the Stock Count Entry window.
 
 ### Changing serial or lot number information
 
->   If you add a lot or serial number to a scrolling window, you can’t change
->   the lot or serial number once you move out of the field. If you enter the
->   wrong lot number or serial number when adding stock count results for lot-
->   or serial-numbered items, you must delete the existing row and add a new
->   row.
+>   If you add a lot or serial number to a scrolling window, you can’t change the lot or serial number once you move out of the field. If you enter the wrong lot number or serial number when adding stock count results for lot- or serial-numbered items, you must delete the existing row and add a new row.
 
 >   **To change serial or lot number information:**
 
-1.  Open the Stock Count Lot Number Entry window or the Stock Count Serial
-    Number Entry window.
+1.  Open the Stock Count Lot Number Entry window or the Stock Count Serial Number Entry window.
 >   (Inventory \>\> Transactions \>\> Stock Count Entry \>\> select an item that tracks lot or serial numbers \>\> Serial/Lot button)
 
-1.  Put the insertion pointer in the line with the incorrect lot or serial
-    number.
+2.  Put the insertion pointer in the line with the incorrect lot or serial number.
 
-2.  Choose Edit \>\> Delete Row. An alert message appears, asking if you’re sure
-    you want to delete the record. Choose Yes.
+3.  Choose Edit \>\> Delete Row. An alert message appears, asking if you’re sure you want to delete the record. Choose Yes.
 
-3.  Refer to *Entering stock count lot number information* or *Entering stock
-    count serial number information* for more information about adding new
-    information for lot- or serial-numbered items.
+4.  Refer to *Entering stock count lot number information* or *Entering stock count serial number information* for more information about adding new information for lot- or serial-numbered items.
 
 ### Changing accounts for posting a count variance
 
->   Use the Stock Count Distribution Entry window to change the inventory and
->   variance distribution accounts for posting variance transactions. If you set
->   up default distribution accounts when you created the item, those accounts
->   will be your default account selections.
+>   Use the Stock Count Distribution Entry window to change the inventory and variance distribution accounts for posting variance transactions. If you set up default distribution accounts when you created the item, those accounts will be your default account selections.
 
->   *You can complete this procedure as you’re entering stock count results, or
->   you can open an Entered stock count and change distribution accounts, if
->   needed.*
+>   *You can complete this procedure as you’re entering stock count results, or you can open an Entered stock count and change distribution accounts, if needed.*
 
 >   **To change accounts for posting a count variance:**
 
 1.  Open the Stock Count Entry window.
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
-1.  Enter or select a stock count ID.
+2.  Enter or select a stock count ID.
 
-2.  Select an item-site combination with the accounts you want to view or
-    change.
+3.  Select an item-site combination with the accounts you want to view or change.
 
-3.  Choose Distribution to open the Stock Count Distribution Entry window. If
-    you’ve set up default accounts, those accounts are displayed. Enter or
-    select the accounts to use.
+4.  Choose Distribution to open the Stock Count Distribution Entry window. If you’ve set up default accounts, those accounts are displayed. Enter or select the accounts to use.
 
 ![](media/747d3569bae2162c1f7bd9140319e531.jpg)
 
-1.  Choose OK to save your changes and return to the Stock Count Entry window.
+5.  Choose OK to save your changes and return to the Stock Count Entry window.
 
 ### Verifying variance amounts
 
->   If you enter a stock count number that is different from the captured
->   quantity for an item-site combination, Inventory Control calculates the
->   default variance amount as the absolute difference between the two values,
->   as long as the resulting default variance transaction is a valid
->   transaction. The default variance transaction might vary if it would
->   otherwise cause an invalid transaction—that is, if posting the transaction
->   would cause the on hand quantity to be less than the allocated quantity.
+>   If you enter a stock count number that is different from the captured quantity for an item-site combination, Inventory Control calculates the default variance amount as the absolute difference between the two values, as long as the resulting default variance transaction is a valid transaction. The default variance transaction might vary if it would otherwise cause an invalid transaction—that is, if posting the transaction would cause the on hand quantity to be less than the allocated quantity.
 
->   When a stock count is processed, Inventory Control creates default inventory
->   variance transactions to adjust inventory for the variance amounts. This is
->   helpful if the variance is a legitimate finding of differences between the
->   captured and counted amounts, but if the variance exists because of
->   transactions that haven’t been posted yet or because transactions were
->   posted after the stock count was started, then the default inventory
->   variance transactions can cause additional discrepancies.
+>   When a stock count is processed, Inventory Control creates default inventory variance transactions to adjust inventory for the variance amounts. This is helpful if the variance is a legitimate finding of differences between the captured and counted amounts, but if the variance exists because of transactions that haven’t been posted yet or because transactions were posted after the stock count was started, then the default inventory variance transactions can cause additional discrepancies.
 
->   Each time a variance amount is identified, you should check the unposted
->   transactions and the transaction history for the item-site combination. If
->   necessary, you can adjust the variance amount accordingly before processing
->   the stock count.
+>   Each time a variance amount is identified, you should check the unposted transactions and the transaction history for the item-site combination. If necessary, you can adjust the variance amount accordingly before processing the stock count.
 
->   Use the Unposted Item Transactions window to view unposted inventory
->   transactions. Use the Item Transaction Inquiry by Date window to view
->   transaction history. You could find that another user has posted a
->   transaction since the stock count was started, for example.
+>   Use the Unposted Item Transactions window to view unposted inventory transactions. Use the Item Transaction Inquiry by Date window to view transaction history. You could find that another user has posted a transaction since the stock count was started, for example.
 
 >   **To verify variance amounts:**
 
 1.  Open the Stock Count Entry window.
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
->   *You also can open the Unposted Item Transactions window and the Item
->   Transaction Inquiry by Date window from the Stock Count Lot Number Entry
->   window and the Stock Count Serial Number Entry window.*
+>   *You also can open the Unposted Item Transactions window and the Item Transaction Inquiry by Date window from the Stock Count Lot Number Entry window and the Stock Count Serial Number Entry window.*
 
-1.  Enter or select a stock count ID. The stock count must have Entered status.
+2.  Enter or select a stock count ID. The stock count must have Entered status.
 
-2.  Select an item-site combination that has a variance amount.
+3.  Select an item-site combination that has a variance amount.
 
-3.  Check unposted transactions and transaction history to see if there is a
-    reason for the inventory variance.
+4.  Check unposted transactions and transaction history to see if there is a reason for the inventory variance.
 
->   To view unposted transactions, choose Unposted Trx to open the Unposted Item
->   Transactions window. Review the information as needed. To view information
->   about the quantities for specific transactions, select a document and then
->   click the Document Number label.
+>   To view unposted transactions, choose Unposted Trx to open the Unposted Item Transactions window. Review the information as needed. To view information about the quantities for specific transactions, select a document and then click the Document Number label.
 
 ![](media/5b942040ca5f46ca7bc5c6db572a8fa4.jpg)
 
->   To view transaction history, choose Trx History to open the Item Transaction
->   Inquiry by Date window. Information about transactions for the item-site
->   combination posted after the stock count was started and before the stock
->   count results were entered are displayed in the scrolling window. Review the
->   information as needed. To view information about the quantities for specific
->   transactions, select a document and then click the Document Number label.
+>   To view transaction history, choose Trx History to open the Item Transaction Inquiry by Date window. Information about transactions for the item-site combination posted after the stock count was started and before the stock count results were entered are displayed in the scrolling window. Review the information as needed. To view information about the quantities for specific transactions, select a document and then click the Document Number label.
 
 ![](media/5d8510407c9367b2ce76c7bd2b775de4.jpg)
 
-1.  If you find an unposted transaction or a transaction in inventory history
-    that would account for all or a portion of the variance, select the variance
-    amount for the item-site combination and change it as needed.
+5.  If you find an unposted transaction or a transaction in inventory history that would account for all or a portion of the variance, select the variance amount for the item-site combination and change it as needed.
 
-2.  Choose Save and close the window.
+6.  Choose Save and close the window.
 
 ### Clearing stock count entries
 
->   Use the Stock Count Entry window to clear stock count results. For example,
->   if you discovered that you’d entered several incorrect count results, you
->   might want to clear your entries and then reenter the information. You also
->   must clear an Entered stock count before you can cancel it. Refer to
->   *Canceling a stock count schedule* for more information.
+>   Use the Stock Count Entry window to clear stock count results. For example, if you discovered that you’d entered several incorrect count results, you might want to clear your entries and then reenter the information. You also must clear an Entered stock count before you can cancel it. Refer to *Canceling a stock count schedule* for more information.
 
->   When you clear a stock count, the status of the stock count is set to
->   Started and information about counted quantities is cleared. Captured
->   quantity information is kept.
+>   When you clear a stock count, the status of the stock count is set to Started and information about counted quantities is cleared. Captured quantity information is kept.
 
 >   **To clear stock count entries:**
 
 1.  Open the Stock Count Entry window.
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
-1.  Enter or select a stock count ID.
+2.  Enter or select a stock count ID.
 
-2.  Choose Clear Count. An alert message appears, asking if you’re sure you want
-    to clear the count. Choose Yes.
+3.  Choose Clear Count. An alert message appears, asking if you’re sure you want to clear the count. Choose Yes.
 
-3.  Close the window.
+4.  Close the window.
 
 ### Processing a stock count
 
->   Use the Stock Count Entry window to process a stock count. If you’re using
->   autoposting options for stock count variances, variance transactions will be
->   posted and reports will be printed when you process a stock count. If you’re
->   not using autoposting, variance transactions are saved in a batch; you’ll
->   need to post the batch. Refer to *Effects of processing a stock count* for
->   more information.
+>   Use the Stock Count Entry window to process a stock count. If you’re using autoposting options for stock count variances, variance transactions will be posted and reports will be printed when you process a stock count. If you’re not using autoposting, variance transactions are saved in a batch; you’ll need to post the batch. Refer to *Effects of processing a stock count* for more information.
 
->   *Before you begin this procedure, be sure you’ve verified the variance
->   amounts. Refer to Verifying variance amounts for more information.*
+>   *Before you begin this procedure, be sure you’ve verified the variance amounts. Refer to Verifying variance amounts for more information.*
 
 >   **To process a stock count:**
 
 1.  Open the Stock Count Entry window.
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
-1.  Enter or select a stock count ID.
+2.  Enter or select a stock count ID.
 
-2.  Choose Process.
+3.  Choose Process.
 
 *Refer to Effects of processing a stock count for more information.*
 
 Chapter 24: Posting
 -------------------
 
->   Posting is the process of transferring transactions to permanent records.
->   Microsoft Dynamics GP includes several options for posting. You can use any
->   of these or all of these, depending on your situation.
+>   Posting is the process of transferring transactions to permanent records. Microsoft Dynamics GP includes several options for posting. You can use any of these or all of these, depending on your situation.
 
->   Until transactions are posted, they can be changed or deleted. When you post
->   transactions, they become permanent information and will update quantity
->   information for items, the balances of your vendor accounts, and the
->   balances of the posting accounts in your chart of accounts. Posted
->   transactions can’t be changed or deleted.
+>   Until transactions are posted, they can be changed or deleted. When you post transactions, they become permanent information and will update quantity information for items, the balances of your vendor accounts, and the balances of the posting accounts in your chart of accounts. Posted transactions can’t be changed or deleted.
 
->   Posting reports will be printed when you post transactions, either
->   individually or in batches. For more information about posting reports for
->   Inventory Control, refer to *Inventory Control report summary*.
+>   Posting reports will be printed when you post transactions, either individually or in batches. For more information about posting reports for Inventory Control, refer to *Inventory Control report summary*.
 
->   *For more information about setting up posting, see the System Setup Guide
->   (Help \>\> Contents \>\> select Setting up the System).*
+>   *For more information about setting up posting, see the System Setup Guide (Help \>\> Contents \>\> select Setting up the System).*
 
 >   The following information is discussed:
 
@@ -6212,12 +5941,7 @@ Chapter 24: Posting
 
 ### Posting a single transaction
 
->   If you choose to use transaction-level posting, you must post each
->   transaction as it is completed, and the level of detail posted is always set
->   to detail. You can save only those transactions that are part of a batch.
->   When you post to General Ledger, transactions entered and posted
->   individually are saved in a batch in General Ledger. You’ll be able to
->   identify the transactions in General Ledger by the audit trail code.
+>   If you choose to use transaction-level posting, you must post each transaction as it is completed, and the level of detail posted is always set to detail. You can save only those transactions that are part of a batch. When you post to General Ledger, transactions entered and posted individually are saved in a batch in General Ledger. You’ll be able to identify the transactions in General Ledger by the audit trail code.
 
 >   **To post a single transaction:**
 
@@ -6226,125 +5950,74 @@ Chapter 24: Posting
 >   (Inventory \>\> Transactions \>\> Transaction Entry)
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
-1.  Enter the transaction. Refer to *Chapter 21, “Transaction entry,”* for more
-    information.
+2.  Enter the transaction. Refer to *Chapter 21, “Transaction entry,”* for more information.
 
-2.  Choose Post.
+3.  Choose Post.
 
->   When posting transfer transactions for which an override document exists, a
->   Cost Variance Journal might be printed during the posting process, if you
->   selected that option in the Posting Setup window. The variance represents
->   the difference in the cost of the override receipt and the cost on the
->   increase transaction for the item. The variance appears in parentheses if
->   the override unit cost is less than the document unit cost.
+>   When posting transfer transactions for which an override document exists, a Cost Variance Journal might be printed during the posting process, if you selected that option in the Posting Setup window. The variance represents the difference in the cost of the override receipt and the cost on the increase transaction for the item. The variance appears in parentheses if the override unit cost is less than the document unit cost.
 
->   The General Posting Journal will be printed if there are adjusting entries
->   created because the unit cost of the transfer transaction is different from
->   the unit cost of the quantity sold transaction of the override receipt.
+>   The General Posting Journal will be printed if there are adjusting entries created because the unit cost of the transfer transaction is different from the unit cost of the quantity sold transaction of the override receipt.
 
 ### Posting a single batch
 
->   You can use batch-level posting to post batches within Inventory Control one
->   at a time. Batches marked as single-use are deleted automatically when the
->   posting process is complete. Recurring batches are created for transactions
->   that are posted at regular intervals, such as weekly, monthly, or yearly.
->   Recurring batches can be posted repeatedly, requiring you only to reenter
->   transaction information each time. You can delete recurring batches at any
->   time.
+>   You can use batch-level posting to post batches within Inventory Control one at a time. Batches marked as single-use are deleted automatically when the posting process is complete. Recurring batches are created for transactions that are posted at regular intervals, such as weekly, monthly, or yearly. Recurring batches can be posted repeatedly, requiring you only to reenter transaction information each time. You can delete recurring batches at any time.
 
->   Because batch posting is a background process, you can enter new
->   transactions while posting is underway; however, you can’t add transactions
->   to batches that currently are being posted, or to batches that are marked
->   for posting. In addition, more than one person can enter transactions in the
->   same batch; however, the batch can’t be posted if it’s being edited.
+>   Because batch posting is a background process, you can enter new transactions while posting is underway; however, you can’t add transactions to batches that currently are being posted, or to batches that are marked for posting. In addition, more than one person can enter transactions in the same batch; however, the batch can’t be posted if it’s being edited.
 
->   Depending on your fiscal period setup, you might not be able to post to a
->   closed period from a specific Microsoft Dynamics GP series or transaction
->   origin. Also, you can’t post to a year that hasn’t been set up in the Fiscal
->   Periods Setup window.
+>   Depending on your fiscal period setup, you might not be able to post to a closed period from a specific Microsoft Dynamics GP series or transaction origin. Also, you can’t post to a year that hasn’t been set up in the Fiscal Periods Setup window.
 
 >   **To post a single batch:**
 
-1.  Before posting, it’s always a good practice to make a backup of your
-    company’s data.
+1.  Before posting, it’s always a good practice to make a backup of your company’s data.
 
 2.  Open the Inventory Batch Entry window.
 >   (Inventory \>\> Transactions \>\> Batches)
 
 ![](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
 
-1.  Select an existing batch ID.
+3.  Select an existing batch ID.
 
-2.  To verify the contents of the batch, you can choose File \>\> Print to print
-    an edit list.
+4.  To verify the contents of the batch, you can choose File \>\> Print to print an edit list.
 
-3.  Choose Post.
+5.  Choose Post.
 
->   Depending on how you’ve set up posting options in the Posting Setup window,
->   posting journals might be printed automatically. These journals provide
->   detailed information about transactions that were posted. Microsoft Dynamics
->   GP automatically assigns audit trail codes to batches of transactions as
->   they’re posted. The audit trail code enables you to trace the posting
->   sequence of any transaction back to the originating journal.
+>   Depending on how you’ve set up posting options in the Posting Setup window, posting journals might be printed automatically. These journals provide detailed information about transactions that were posted. Microsoft Dynamics GP automatically assigns audit trail codes to batches of transactions as they’re posted. The audit trail code enables you to trace the posting sequence of any transaction back to the originating journal.
 
 ### Posting multiple Inventory Control batches
 
->   Inventory Control transactions also can be posted using series posting. When
->   you post by series, all batches that have been marked in the Inventory
->   Series Posting window are posted. Because batches are groups of related
->   transactions, series posting can be useful when you want to post several
->   batches that have something in common. For example, you can use series
->   posting to post all the batches entered on a particular day.
+>   Inventory Control transactions also can be posted using series posting. When you post by series, all batches that have been marked in the Inventory Series Posting window are posted. Because batches are groups of related transactions, series posting can be useful when you want to post several batches that have something in common. For example, you can use series posting to post all the batches entered on a particular day.
 
->   Series posting is performed as a background process, so you can enter, add,
->   edit, or delete transactions while posting is underway; however, you can’t
->   enter transactions in batches that currently are being posted, that are
->   marked for posting, or that are being edited.
+>   Series posting is performed as a background process, so you can enter, add, edit, or delete transactions while posting is underway; however, you can’t enter transactions in batches that currently are being posted, that are marked for posting, or that are being edited.
 
->   Use the Inventory Series Posting window to post several Inventory Control
->   batches.
+>   Use the Inventory Series Posting window to post several Inventory Control batches.
 
 >   **To post multiple Inventory Control batches:**
 
-1.  Before posting, it’s always a good practice to make a backup of your
-    company’s data.
+1.  Before posting, it’s always a good practice to make a backup of your company’s data.
 
 2.  Open the Inventory Series Posting window.
 >   (Inventory \>\> Transactions \>\> Series Post)
 
 ![](media/d6dbcbed9e12a1cf037d2130848003f9.jpg)
 
-1.  Choose whether to view all batches or just the ones marked for posting.
+3.  Choose whether to view all batches or just the ones marked for posting.
 
-2.  Mark any batches to post.
+4.  Mark any batches to post.
 
->   *If you’re using Microsoft Dynamics GP on a network, choose Redisplay before
->   posting. The contents of the window will be updated to show any batches that
->   have been added or changed by your coworkers since you opened the window.
->   With series posting, you can post only those batches that you’ve marked. If
->   a batch was marked previously, the User ID column identifies the person who
->   marked it. To post that batch, unmark it and mark it again so the batch is
->   assigned to you.*
+>   *If you’re using Microsoft Dynamics GP on a network, choose Redisplay before posting. The contents of the window will be updated to show any batches that have been added or changed by your coworkers since you opened the window. With series posting, you can post only those batches that you’ve marked. If a batch was marked previously, the User ID column identifies the person who marked it. To post that batch, unmark it and mark it again so the batch is assigned to you.*
 
-1.  Choose Post to post all batches you have marked for Inventory Control.
+5.  Choose Post to post all batches you have marked for Inventory Control.
 
-    -   If you set batch requirements in the Inventory Batch Entry window, you
-        won’t be able to post the batch until those requirements are met.
+    -   If you set batch requirements in the Inventory Batch Entry window, you won’t be able to post the batch until those requirements are met.
 
-    -   Posting journals may be printed, depending on how you set up posting
-        options in the Posting Setup window.
+    -   Posting journals may be printed, depending on how you set up posting options in the Posting Setup window.
 
 Chapter 25: Transaction corrections
 -----------------------------------
 
->   Throughout the accounting process, you can print reports you can use to
->   verify transactions you’ve entered. When you identify errors on these
->   reports, the errors must be corrected to ensure accurate reporting of your
->   financial activity.
+>   Throughout the accounting process, you can print reports you can use to verify transactions you’ve entered. When you identify errors on these reports, the errors must be corrected to ensure accurate reporting of your financial activity.
 
->   Errors found after you’ve posted the batch or transaction, however, may
->   require that you enter transactions to “back out” the error. Then you can
->   reenter it correctly.
+>   Errors found after you’ve posted the batch or transaction, however, may require that you enter transactions to “back out” the error. Then you can reenter it correctly.
 
 >   The following information is discussed:
 
@@ -6364,14 +6037,9 @@ Chapter 25: Transaction corrections
 
 ### Modifying an unposted transaction
 
->   Use the Item Transaction Entry window to correct unposted transactions
->   entered that record an adjustment or variance to your inventory. Use the
->   Item Transfer Entry window to correct unposted transactions entered that
->   record a transfer of inventory items between sites or from one quantity type
->   to another.
+>   Use the Item Transaction Entry window to correct unposted transactions entered that record an adjustment or variance to your inventory. Use the Item Transfer Entry window to correct unposted transactions entered that record a transfer of inventory items between sites or from one quantity type to another.
 
->   Transactions that haven’t been posted can be easily modified or deleted.
->   Transaction entry errors can often be found on edit lists.
+>   Transactions that haven’t been posted can be easily modified or deleted. Transaction entry errors can often be found on edit lists.
 
 >   **To modify an unposted transaction:**
 
@@ -6379,64 +6047,44 @@ Chapter 25: Transaction corrections
 >   (Inventory \>\> Transactions \>\> Transaction Entry)
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
-1.  Enter or select the document number assigned to the transaction you want to
-    change. The number should appear on the edit list.
+2.  Enter or select the document number assigned to the transaction you want to change. The number should appear on the edit list.
 
-2.  Delete the incorrect information and reenter it correctly.
+3.  Delete the incorrect information and reenter it correctly.
 
->   *You also can edit the information in windows related to the transaction
->   window. For example, if you’re using multiple bins you can choose the Bins
->   button to open a window where you can enter bin information.*
+>   *You also can edit the information in windows related to the transaction window. For example, if you’re using multiple bins you can choose the Bins button to open a window where you can enter bin information.*
 
-1.  Choose File \>\> Print to print an edit list and verify your changes.
+4.  Choose File \>\> Print to print an edit list and verify your changes.
 
-2.  Choose Save.
+5.  Choose Save.
 
 ### Modifying an in-transit transfer transaction
 
->   Use the In-Transit Transfer Entry window to correct in-transit transfers
->   that haven’t been shipped.
+>   Use the In-Transit Transfer Entry window to correct in-transit transfers that haven’t been shipped.
 
 **To modify an in-transit transfer transaction:**
 
 1.  Open the In-Transit Transfer Entry window.
 >   (Inventory \>\> Transactions \>\> In-Transit Transfer Entry)
 
-1.  Enter or select the document number assigned to the transaction you want to
-    change.
+2.  Enter or select the document number assigned to the transaction you want to change.
 
-2.  Delete the incorrect information and reenter it correctly.
+3.  Delete the incorrect information and reenter it correctly.
 
->   *You also can edit the information in windows related to the transaction
->   window. For example, if you’re using multiple bins you can choose the Bins
->   button to open a window where you can enter bin information.*
+>   *You also can edit the information in windows related to the transaction window. For example, if you’re using multiple bins you can choose the Bins button to open a window where you can enter bin information.*
 
-1.  Choose File \>\> Print to print a packing slip.
+4.  Choose File \>\> Print to print a packing slip.
 
-2.  Choose Save or Ship.
+5.  Choose Save or Ship.
 
 ### Corrections for posted transfers and transactions
 
-If you’ve identified an error in a transaction that’s been posted, you must
-correct the error in order to keep your accounting information accurate. The
-steps you follow depend on the type of change you need to make.
+If you’ve identified an error in a transaction that’s been posted, you must correct the error in order to keep your accounting information accurate. The steps you follow depend on the type of change you need to make.
 
-Inventory transaction errors usually involve either quantities or costs. You can
-reprint a posting journal to pinpoint quantity errors in posted transactions. If
-the error involves costs, you can use the Purchase Receipts Report or the
-Purchase Receipts Inquiry window to review details of the adjustment, variance,
-or transfer transactions that have been posted.
+Inventory transaction errors usually involve either quantities or costs. You can reprint a posting journal to pinpoint quantity errors in posted transactions. If the error involves costs, you can use the Purchase Receipts Report or the Purchase Receipts Inquiry window to review details of the adjustment, variance, or transfer transactions that have been posted.
 
->   *Use reason codes such as QTY CORRECT or COST CORRECT to identify causes for
->   corrections. Refer to Creating reason codes for information about setting up
->   and using reason codes.*
+>   *Use reason codes such as QTY CORRECT or COST CORRECT to identify causes for corrections. Refer to Creating reason codes for information about setting up and using reason codes.*
 
-**To correct a transaction or transfer that contains quantity error** Make
-
-an adjusting entry to correct the transaction or transfer. If necessary, after
-the adjusting transaction has been entered, you can enter the transaction as it
-should have been entered originally and post. Refer to the table for more
-information.
+**To correct a transaction or transfer that contains quantity error** Make an adjusting entry to correct the transaction or transfer. If necessary, after the adjusting transaction has been entered, you can enter the transaction as it should have been entered originally and post. Refer to the table for more information.
 
 | **Entry type**                  | **Is used if:**                                            | **Refer to:**                                |
 |---------------------------------|------------------------------------------------------------|----------------------------------------------|
@@ -6445,220 +6093,151 @@ information.
 | Transfer increase adjustment    | Quantity entered in the original transfer was too small    | *Entering a transfer increase adjustment*    |
 | Transfer decrease adjustment    | Quantity entered in the original transfer was too large    | *Entering a transfer decrease adjustment*    |
 
-**To correct a transaction that contains a cost error** You can adjust the cost
-using the Inventory Adjust Costs window. For more information about adjusting a
-purchase receipt, refer to *Chapter 31, “Item cost adjustments.”*
+**To correct a transaction that contains a cost error** You can adjust the cost using the Inventory Adjust Costs window. For more information about adjusting a purchase receipt, refer to *Chapter 31, “Item cost adjustments.”*
 
 ### Entering a transaction increase adjustment
 
->   Use the Inventory Batch Entry window and the Item Transaction Entry window
->   to make an increase adjustment entry.
+>   Use the Inventory Batch Entry window and the Item Transaction Entry window to make an increase adjustment entry.
 
->   If you discover that the quantity information in a posted transaction was
->   too small, you’ll need to enter an increase adjustment. For example, suppose
->   you enter and post a transaction to add 15 units to inventory, and then find
->   that the quantity should have been 25 units. A second entry to add 10 units
->   to inventory should be entered and posted.
+>   If you discover that the quantity information in a posted transaction was too small, you’ll need to enter an increase adjustment. For example, suppose you enter and post a transaction to add 15 units to inventory, and then find that the quantity should have been 25 units. A second entry to add 10 units to inventory should be entered and posted.
 
 >   **To enter a transaction increase adjustment:**
 
 1.  Open the Inventory Batch Entry window.
 >   (Inventory \>\> Transactions \>\> Batches)
 
-1.  Enter a descriptive name and comment that includes the document number of
-    the incorrect transaction.
+2.  Enter a descriptive name and comment that includes the document number of the incorrect transaction.
 
-2.  Select Transaction Entry as the origin.
+3.  Select Transaction Entry as the origin.
 
-3.  Select a frequency of single-use.
+4.  Select a frequency of single-use.
 
-4.  Choose Transactions to open the Inventory Transaction Entry window.
+5.  Choose Transactions to open the Inventory Transaction Entry window.
 
-5.  Enter a new increase adjustment. For example, if you mistakenly posted a
-    quantity of 8, when you should have posted a quantity of 10, you can enter
-    an adjusting transaction to increase the amount by 2.
+6.  Enter a new increase adjustment. For example, if you mistakenly posted a quantity of 8, when you should have posted a quantity of 10, you can enter an adjusting transaction to increase the amount by 2.
 
->   *If you changed distribution accounts for the original transaction, be sure
->   you also use those accounts for this entry.*
+>   *If you changed distribution accounts for the original transaction, be sure you also use those accounts for this entry.*
 
-1.  Choose Save.
+7.  Choose Save.
 
-2.  Choose File \>\> Print to print an edit list to verify your entries.
+8.  Choose File \>\> Print to print an edit list to verify your entries.
 
 ### Entering a transaction decrease adjustment
 
->   Use the Inventory Batch Entry window and the Item Transaction Entry window
->   to enter a transaction decrease adjustment.
+>   Use the Inventory Batch Entry window and the Item Transaction Entry window to enter a transaction decrease adjustment.
 
->   If you discover an error in the quantities for an item after you have posted
->   a transaction, you must enter a transaction that reverses the original
->   transaction, then reenter and post the original transaction information
->   correctly.
+>   If you discover an error in the quantities for an item after you have posted a transaction, you must enter a transaction that reverses the original transaction, then reenter and post the original transaction information correctly.
 
->   To make an adjusting entry, you first must know how the initial transaction
->   was entered and posted, including dates, quantities, valuation method,
->   costs, as well as the posting accounts that were debited and credited.
+>   To make an adjusting entry, you first must know how the initial transaction was entered and posted, including dates, quantities, valuation method, costs, as well as the posting accounts that were debited and credited.
 
->   *Depending on the item’s valuation method, your receipts may be reversed in
->   a different order than the original transaction. Print the Purchase Receipts
->   report to determine which receipts will be affected.*
+>   *Depending on the item’s valuation method, your receipts may be reversed in a different order than the original transaction. Print the Purchase Receipts report to determine which receipts will be affected.*
 
 **To enter a transaction decrease adjustment:**
 
 1.  Open the Inventory Batch Entry window.
 >   (Inventory \>\> Transactions \>\> Batches)
 
-1.  Enter a descriptive name and comment that includes the document number of
-    the incorrect transaction.
+2.  Enter a descriptive name and comment that includes the document number of the incorrect transaction.
 
-2.  Select Transaction Entry as the origin.
+3.  Select Transaction Entry as the origin.
 
-3.  Select a frequency of single-use.
+4.  Select a frequency of single-use.
 
-4.  Choose Transactions to open the Item Transaction Entry window.
+5.  Choose Transactions to open the Item Transaction Entry window.
 
-5.  Enter an increase adjustment that exactly matches the incorrect decrease
-    adjustment.
+6.  Enter an increase adjustment that exactly matches the incorrect decrease adjustment.
 
->   For example, if you entered a decrease adjustment of (–10) for item A and
->   posted it to account 100-1300, then you need to enter an increase adjustment
->   of 10 for item A and post it to 100-1300 at the same cost as the decrease
->   adjustment.
+>   For example, if you entered a decrease adjustment of (–10) for item A and posted it to account 100-1300, then you need to enter an increase adjustment of 10 for item A and post it to 100-1300 at the same cost as the decrease adjustment.
 
->   *If you changed distribution accounts for the original transaction, be sure
->   you also use those accounts for this entry.*
+>   *If you changed distribution accounts for the original transaction, be sure you also use those accounts for this entry.*
 
-1.  Enter a new decrease adjustment for the correct quantity, item number and
-    cost.
+7.  Enter a new decrease adjustment for the correct quantity, item number and cost.
 
-2.  Choose Save.
+8.  Choose Save.
 
-3.  Choose File \>\> Print to print an edit list to verify your entries.
+9.  Choose File \>\> Print to print an edit list to verify your entries.
 
 ### Entering a transfer increase adjustment
 
-Use the Inventory Batch Entry window and the Item Transfer Entry window to enter
-increase adjustments for posted transfers. For example, suppose you transferred
-20 items from the North warehouse to the South store, and then found that you
-should have transferred 25 items. You should enter and post another transfer to
-move five items to the South store.
+Use the Inventory Batch Entry window and the Item Transfer Entry window to enter increase adjustments for posted transfers. For example, suppose you transferred 20 items from the North warehouse to the South store, and then found that you should have transferred 25 items. You should enter and post another transfer to move five items to the South store.
 
 >   **To enter a transfer increase adjustment:**
 
 1.  Open the Inventory Batch Entry window.
 >   (Inventory \>\> Transactions \>\> Batches)
 
-1.  Enter a descriptive name and comment that includes the document number of
-    the incorrect transaction.
+2.  Enter a descriptive name and comment that includes the document number of the incorrect transaction.
 
-2.  Select Transfer Entry as the origin.
+3.  Select Transfer Entry as the origin.
 
-3.  Select a frequency of single-use.
+4.  Select a frequency of single-use.
 
-4.  Choose Transactions to open the Inventory Transfer Entry window.
+5.  Choose Transactions to open the Inventory Transfer Entry window.
 
-5.  Enter an adjusting entry.
+6.  Enter an adjusting entry.
 
->   For example, if you mistakenly posted a quantity of 8, when you should have
->   posted a quantity of 10, you can enter an adjusting transaction to increase
->   the amount by 2.
+>   For example, if you mistakenly posted a quantity of 8, when you should have posted a quantity of 10, you can enter an adjusting transaction to increase the amount by 2.
 
-1.  Choose Save.
+7.  Choose Save.
 
-2.  Choose File \>\> Print to print an edit list to verify your entries.
+8.  Choose File \>\> Print to print an edit list to verify your entries.
 
 ### Entering a transfer decrease adjustment
 
->   Use the Inventory Batch Entry window and the Item Transfer Entry window to
->   enter decrease transfer adjustments.
+>   Use the Inventory Batch Entry window and the Item Transfer Entry window to enter decrease transfer adjustments.
 
->   If you discover that the quantity in a posted transfer was too large—for
->   example, you transferred 25 items but should have posted only 20—you’ll need
->   to undo the transaction, then reenter and post it correctly.
+>   If you discover that the quantity in a posted transfer was too large—for example, you transferred 25 items but should have posted only 20—you’ll need to undo the transaction, then reenter and post it correctly.
 
->   To make an adjusting entry, you first must know how the initial transaction
->   was entered and posted, including dates, quantities, valuation method,
->   costs, as well as the posting accounts that were debited and credited.
+>   To make an adjusting entry, you first must know how the initial transaction was entered and posted, including dates, quantities, valuation method, costs, as well as the posting accounts that were debited and credited.
 
->   *Depending on the item’s valuation method, your receipts might be reversed
->   in a different order than the original transaction. Reprint the Transfer
->   Posting Journal report to determine which transfers will be affected.*
+>   *Depending on the item’s valuation method, your receipts might be reversed in a different order than the original transaction. Reprint the Transfer Posting Journal report to determine which transfers will be affected.*
 
 >   **To enter a transfer decrease adjustment:**
 
 1.  Open the Inventory Batch Entry window.
 >   (Inventory \>\> Transactions \>\> Batches)
 
-1.  Enter a descriptive name and comment that includes the document number of
-    the incorrect transaction.
+2.  Enter a descriptive name and comment that includes the document number of the incorrect transaction.
 
-2.  Select Transfer Entry as the origin.
+3.  Select Transfer Entry as the origin.
 
-3.  Select a frequency of single-use.
+4.  Select a frequency of single-use.
 
-4.  Choose Transactions to open the Item Transfer Entry window.
+5.  Choose Transactions to open the Item Transfer Entry window.
 
-5.  Enter an increase adjustment that exactly matches the incorrect decrease
-    adjustment.
+6.  Enter an increase adjustment that exactly matches the incorrect decrease adjustment.
 
->   For example, if you transferred 25 items from the South store to the Main
->   store when only 20 items should have been transferred, you should transfer
->   the 25 items back to the South store, then enter and post a transfer for 20
->   items.
+>   For example, if you transferred 25 items from the South store to the Main store when only 20 items should have been transferred, you should transfer the 25 items back to the South store, then enter and post a transfer for 20 items.
 
-1.  Enter a new transfer adjustment for the correct quantity, item number and
-    cost.
+7.  Enter a new transfer adjustment for the correct quantity, item number and cost.
 
-2.  Choose Save.
+8.  Choose Save.
 
-3.  Choose File \>\> Print to print an edit list to verify your entries.
+9.  Choose File \>\> Print to print an edit list to verify your entries.
 
 Part 4: Inquiries and reports
 =============================
 
->   This part of the documentation includes information about Inventory Control
->   inquiries and reports. Analyzing your item records and transactions is an
->   important part of your computerized accounting system. With Inventory
->   Control, you can view important information about your item activity
->   on-screen using the Inquiry windows. These windows provide easy access to
->   detailed and summarized Inventory Control information.
+>   This part of the documentation includes information about Inventory Control inquiries and reports. Analyzing your item records and transactions is an  important part of your computerized accounting system. With Inventory Control, you can view important information about your item activity on-screen using the Inquiry windows. These windows provide easy access to detailed and summarized Inventory Control information.
 
->   Inventory Control also includes several reports that summarize information
->   about your inventory records. You can use Inventory Control reports to
->   verify transaction entry and posting. You also can print reports that
->   analyze inventory activities.
+>   Inventory Control also includes several reports that summarize information about your inventory records. You can use Inventory Control reports to verify transaction entry and posting. You also can print reports that analyze inventory activities.
 
 >   The following information is discussed:
 
--   *Chapter 26, “Item inquiries,”* includes information about viewing item
-    records, including windows for viewing more detailed information about items
-    tracked by lot and serial numbers. If you’re using multiple bins, you also
-    can view information about bin quantities.
+-   *Chapter 26, “Item inquiries,”* includes information about viewing item records, including windows for viewing more detailed information about items tracked by lot and serial numbers. If you’re using multiple bins, you also can view information about bin quantities.
 
--   *Chapter 27, “Standard pricing inquiries,”* describes how you can use the
-    Item Price List Inquiry window to view information about the pricing
-    structures you’ve set up for your inventoried items, if you’re using
-    standard pricing.
+-   *Chapter 27, “Standard pricing inquiries,”* describes how you can use the Item Price List Inquiry window to view information about the pricing structures you’ve set up for your inventoried items, if you’re using standard pricing.
 
--   *Chapter 28, “Extended pricing inquiries,”* describes how you can view
-    information about the extended pricing structures you’ve set up for your
-    items.
+-   *Chapter 28, “Extended pricing inquiries,”* describes how you can view information about the extended pricing structures you’ve set up for your items.
 
--   *Chapter 29, “Transaction inquiries,”* contains information about viewing
-    records for inventory transactions and transfers. Information about viewing
-    purchase receipt information also is included.
+-   *Chapter 29, “Transaction inquiries,”* contains information about viewing records for inventory transactions and transfers. Information about viewing purchase receipt information also is included.
 
--   *Chapter 30, “Reports,”* describes how you can print reports based on
-    inventory records. Key reports for the module also are listed.
+-   *Chapter 30, “Reports,”* describes how you can print reports based on inventory records. Key reports for the module also are listed.
 
 Chapter 26: Item inquiries
 --------------------------
 
->   If you want to find information in your system but don’t need to change the
->   information, you can use the windows in the Inquiry menu. With those
->   windows, you can search your inventory records to see quantity information
->   for inventoried items, to view the lot and serial numbers assigned to items
->   at specific sites, and to review pricing information.
+>   If you want to find information in your system but don’t need to change the information, you can use the windows in the Inquiry menu. With those windows, you can search your inventory records to see quantity information for inventoried items, to view the lot and serial numbers assigned to items at specific sites, and to review pricing information.
 
 >   The following information is discussed:
 
@@ -6690,11 +6269,7 @@ Chapter 26: Item inquiries
 
 ### Viewing item information
 
->   To view general information about items, use the inquiry windows. You can
->   view quantity information for inventoried items, lot and serial numbers
->   assigned to items at specific sites, pricing, and stock count information.
->   If you’re using multiple bins, you also can view information about the
->   quantities of items in bins.
+>   To view general information about items, use the inquiry windows. You can view quantity information for inventoried items, lot and serial numbers assigned to items at specific sites, pricing, and stock count information. If you’re using multiple bins, you also can view information about the quantities of items in bins.
 
 >   **To view item information:**
 
@@ -6705,63 +6280,35 @@ Chapter 26: Item inquiries
 
 3.  Decide which site’s information to view.
 
->   **To view quantity information for all sites** Mark All. Information in the
->   window will include quantity information across all sites.
+>   **To view quantity information for all sites** Mark All. Information in the window will include quantity information across all sites.
 
->   **To view site-specific information** Mark Site ID, then select a specific
->   site. Information about the item quantities for the specific item-site
->   combination are displayed in the window.
+>   **To view site-specific information** Mark Site ID, then select a specific site. Information about the item quantities for the specific item-site combination are displayed in the window.
 
-1.  Review the information. If needed, you also can review serial number
-    information, or go to related windows to make changes. If you’re using
-    multiple bins, you can view information about bin quantities.
+4.  Review the information. If needed, you also can review serial number information, or go to related windows to make changes. If you’re using multiple bins, you can view information about bin quantities.
 
->   **To view serial or lot number information** If the item is tracked by
->   serial or lot numbers, choose the expansion button on the Track field to
->   open the Item Serial/Lot Number Definition Inquiry Zoom window.
+>   **To view serial or lot number information** If the item is tracked by serial or lot numbers, choose the expansion button on the Track field to open the Item Serial/Lot Number Definition Inquiry Zoom window.
 
 ![](media/97fa4a6778b0119f89da91d5ed9c05db.jpg)
 
->   **To go to the Item Maintenance window** If you need to change item
->   information, click the Item Number link to open the Item Maintenance window.
->   Refer to *Chapter 10, “Item cards,”* for more information about using the
->   Item Maintenance window.
+>   **To go to the Item Maintenance window** If you need to change item information, click the Item Number link to open the Item Maintenance window. Refer to *Chapter 10, “Item cards,”* for more information about using the Item Maintenance window.
 
->   **To go to the Site Maintenance window** If you need to change site
->   information, click the Site ID link to open the Site Maintenance window.
->   Refer to *Chapter 14, “Sites and beginning quantities,”* for more
->   information about using the Site Maintenance window.
+>   **To go to the Site Maintenance window** If you need to change site information, click the Site ID link to open the Site Maintenance window. Refer to *Chapter 14, “Sites and beginning quantities,”* for more information about using the Site Maintenance window.
 
->   **To view item allocation information** If you need to view where item
->   quantities have been allocated, click the Allocated link to open the Item
->   Allocation Inquiry window. Refer to *Viewing item allocation information*
->   for more information.
+>   **To view item allocation information** If you need to view where item quantities have been allocated, click the Allocated link to open the Item Allocation Inquiry window. Refer to *Viewing item allocation information* for more information.
 
->   **To view on-order information** If you need to view the on-order quantity
->   on purchase orders, click the On Order link to open the Purchase Order
->   Processing Item Inquiry window. Refer to the Purchase Order Processing
->   documentation for more information.
+>   **To view on-order information** If you need to view the on-order quantity on purchase orders, click the On Order link to open the Purchase Order Processing Item Inquiry window. Refer to the Purchase Order Processing documentation for more information.
 
->   **To view attachments** If you need to view attachments for an item, choose
->   the Attachment Management icon to open the Document Attachment Inquiry
->   window. Refer to the System Manager documentation for more information.
+>   **To view attachments** If you need to view attachments for an item, choose the Attachment Management icon to open the Document Attachment Inquiry window. Refer to the System Manager documentation for more information.
 
->   **To view bin quantity information** If you’re using multiple bins, you can
->   use the Bin Quantity Inquiry window to view information about the quantities
->   in bins at a specific site. From the Go To button, choose Bin Quantity
->   Inquiry to open the Bin Quantity Inquiry window. Refer to *Viewing bin
->   quantity information* for more information.
+>   **To view bin quantity information** If you’re using multiple bins, you can use the Bin Quantity Inquiry window to view information about the quantities in bins at a specific site. From the Go To button, choose Bin Quantity Inquiry to open the Bin Quantity Inquiry window. Refer to *Viewing bin quantity information* for more information.
 
->   **To view stock count information** If you need to view stock count
->   information for an item, choose Stock Count to open the Item Stock Count
->   Inquiry window.
+>   **To view stock count information** If you need to view stock count information for an item, choose Stock Count to open the Item Stock Count Inquiry window.
 
-1.  When you’ve finished reviewing information, close the windows.
+5.  When you’ve finished reviewing information, close the windows.
 
 ### Viewing item allocation information
 
->   Use the Item Allocation Inquiry window to view where item quantities have
->   been allocated.
+>   Use the Item Allocation Inquiry window to view where item quantities have been allocated.
 
 >   **To view item allocation information:**
 
@@ -6770,28 +6317,25 @@ Chapter 26: Item inquiries
 
 ![](media/285fd579eab9fea4a6d19211868528d5.jpg)
 
-1.  Select All to view all items or select a range of items.
+2.  Select All to view all items or select a range of items.
 
-2.  Select a range of dates to restrict the information in the scrolling window.
+3.  Select a range of dates to restrict the information in the scrolling window.
 
-3.  Select which modules to view allocated item information for. You can select
-    any or all of the modules listed.
+4.  Select which modules to view allocated item information for. You can select any or all of the modules listed.
 
-4.  Select whether to display items at all sites or a specific site.
+5.  Select whether to display items at all sites or a specific site.
 
-5.  Select a sorting order for the items displayed in the scrolling window.
+6.  Select a sorting order for the items displayed in the scrolling window.
 
-6.  Choose Redisplay to display the items in the scrolling window.
+7.  Choose Redisplay to display the items in the scrolling window.
 
-7.  You can choose File \>\> Print to print the Item Allocation Inquiry Report,
-    if needed.
+8.  You can choose File \>\> Print to print the Item Allocation Inquiry Report, if needed.
 
-8.  When you’ve finished reviewing information, close the window.
+9.  When you’ve finished reviewing information, close the window.
 
 ### Viewing bin quantity information
 
->   If you’re using multiple bins, you can use the Bin Quantity Inquiry window
->   to view information about the quantities in bins at a specific site.
+>   If you’re using multiple bins, you can use the Bin Quantity Inquiry window to view information about the quantities in bins at a specific site.
 
 >   **To view bin quantity information:**
 
@@ -6800,59 +6344,44 @@ Chapter 26: Item inquiries
 
 ![](media/edf42f16e96e7f5066c67d97515454ee.jpg)
 
-1.  Specify a range to restrict information. You can limit the items, sites,
-    bins, and quantity type information that is displayed.
+2.  Specify a range to restrict information. You can limit the items, sites, bins, and quantity type information that is displayed.
 
-2.  Choose Redisplay to update information in the scrolling window.
+3.  Choose Redisplay to update information in the scrolling window.
 
-3.  To view information about the serial and lot numbers of items, highlight a
-    record in the scrolling window and choose Serial/Lot.
+4.  To view information about the serial and lot numbers of items, highlight a record in the scrolling window and choose Serial/Lot.
 
-    -   If the item is tracked by serial numbers, the Inventory Serial
-        Number/Bin Inquiry window opens.
+    -   If the item is tracked by serial numbers, the Inventory Serial Number/Bin Inquiry window opens.
 
-    -   If the item is tracked by lot numbers, the Inventory Lot Number/Bin
-        Inquiry window opens.
+    -   If the item is tracked by lot numbers, the Inventory Lot Number/Bin Inquiry window opens.
 
-4.  When you’ve finished viewing information, close the windows.
+5.  When you’ve finished viewing information, close the windows.
 
 ### Viewing item stock information
 
->   Use the Item Stock Inquiry window to view the transactions that affected the
->   stock quantity of an inventoried item and to view the total stock quantity
->   balance of that item. You also can view the balance of each quantity type
->   for the item, such as the quantity on hand and quantity allocated.
+>   Use the Item Stock Inquiry window to view the transactions that affected the stock quantity of an inventoried item and to view the total stock quantity balance of that item. You also can view the balance of each quantity type for the item, such as the quantity on hand and quantity allocated.
 
->   Stock information can be displayed for all the sites that the item is
->   assigned to or for a specific site. You also can select the unit of measure
->   to display the stock information in.
+>   Stock information can be displayed for all the sites that the item is assigned to or for a specific site. You also can select the unit of measure to display the stock information in.
 
 >   **To view item stock information:**
 
 1.  Open the Item Stock Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Item Stock)
 
 ![](media/6f62e6cf6e37e7f688638904c2961b77.jpg)
 
-1.  Enter or select the item to view.
+2.  Enter or select the item to view.
 
-2.  Select whether to display all sites or at a specific site for the item.
+3.  Select whether to display all sites or at a specific site for the item.
 
-3.  Select the unit of measure to display the item stock information in.
+4.  Select the unit of measure to display the item stock information in.
 
-4.  You can choose File \>\> Print to print the Item Stock Inquiry Report, if
-    needed.
+5.  You can choose File \>\> Print to print the Item Stock Inquiry Report, if needed.
 
-5.  When you’ve finished reviewing information, close the window.
+6.  When you’ve finished reviewing information, close the window.
 
 ### Viewing serial number information
 
->   If you’re using serial-numbered items, you can use the Serial Number Inquiry
->   window to view information about the items. For example, you can use this
->   window to view the serial numbers of available items at a specific site. If
->   you’re using multiple bins, you also can view the bin where each item is
->   stored.
+>   If you’re using serial-numbered items, you can use the Serial Number Inquiry window to view information about the items. For example, you can use this window to view the serial numbers of available items at a specific site. If you’re using multiple bins, you also can view the bin where each item is stored.
 
 >   **To view serial number information:**
 
@@ -6861,59 +6390,39 @@ Chapter 26: Item inquiries
 
 ![](media/f7154d7891501fb003187c5be82d4f3a.jpg)
 
-1.  Enter or select an item.
+2.  Enter or select an item.
 
 *Use the browse buttons to move among only serial-numbered items.*
 
-1.  Decide which site information you want to view.
+3.  Decide which site information you want to view.
 
 >   **To view information for all sites** For the Site ID, mark All.
 
->   **To view information for a specific site** For the Site ID, mark Site ID,
->   then select a site.
+>   **To view information for a specific site** For the Site ID, mark Site ID, then select a site.
 
-1.  Select a range of dates to restrict the information in the scrolling window
-    by date, if needed.
+4.  Select a range of dates to restrict the information in the scrolling window by date, if needed.
 
-2.  If you’re viewing information for a specific site, decide if you want to see
-    serial number information for all items at the site, or for only those items
-    whose item type is Available.
+5.  If you’re viewing information for a specific site, decide if you want to see serial number information for all items at the site, or for only those items whose item type is Available.
 
 >   **To view all serial numbers** For Display, mark All.
 
->   **To view serial numbers of Available items only** For Display, mark
->   Available.
+>   **To view serial numbers of Available items only** For Display, mark Available.
 
-1.  Review information as needed. You also can go to other windows to make
-    changes, if needed.
+6.  Review information as needed. You also can go to other windows to make changes, if needed.
 
->   **To make changes to the item record** Click the Item Number link to open
->   the Item Maintenance window, where you can modify the item record. Refer to
->   *Chapter 10, “Item cards,”* for more information about using the Item
->   Maintenance window.
+>   **To make changes to the item record** Click the Item Number link to open the Item Maintenance window, where you can modify the item record. Refer to *Chapter 10, “Item cards,”* for more information about using the Item Maintenance window.
 
->   **To make changes to the site record** Click the Site ID link to open the
+>   **To make changes to the site record** Click the Site ID link to open the Site Maintenance window, where you can modify the site record. Refer to *Chapter 14, “Sites and beginning quantities,”* for more information about using the Site Maintenance window.
 
->   Site Maintenance window, where you can modify the site record. Refer to
->   *Chapter 14, “Sites and beginning quantities,”* for more information about
->   using the Site Maintenance window.
+7.  You can choose File \>\> Print to print the Serial Number Inquiry Report, if needed.
 
-1.  You can choose File \>\> Print to print the Serial Number Inquiry Report, if
-    needed.
-
-2.  When you’ve finished reviewing information, close the window.
+8.  When you’ve finished reviewing information, close the window.
 
 ### Viewing lot number information
 
->   If you use lot-numbered items, you can use the Lot Number Inquiry window to
->   view information about those items. For example, you can use this window to
->   view the available quantity in a particular lot. If you’re using multiple
->   bins, you also can view information about the bins where lot quantities are
->   stored.
+>   If you use lot-numbered items, you can use the Lot Number Inquiry window to view information about those items. For example, you can use this window to view the available quantity in a particular lot. If you’re using multiple bins, you also can view information about the bins where lot quantities are stored.
 
->   You also can consolidate lot numbers by selecting to sort them by lot. Lot
->   numbers can be consolidated if the lot number, site, bin, quantity type,
->   manufactured date, and expiration date are the same.
+>   You also can consolidate lot numbers by selecting to sort them by lot. Lot numbers can be consolidated if the lot number, site, bin, quantity type, manufactured date, and expiration date are the same.
 
 >   **To view lot number information:**
 
@@ -6922,78 +6431,60 @@ Chapter 26: Item inquiries
 
 ![](media/c3495d95212a72360f1240f7b2d2226c.jpg)
 
-1.  Enter or select the item to view.
+2.  Enter or select the item to view.
 
 *Use the browse buttons to move among lot-numbered items only.*
 
-1.  Decide which site information to view.
+3.  Decide which site information to view.
 
 >   **To view information for all sites** For the Site ID, mark All.
 
->   **To view information for a specific site** For the Site ID, mark Site ID,
->   then select a site.
+>   **To view information for a specific site** For the Site ID, mark Site ID, then select a site.
 
-1.  If you’re viewing information for a specific site, decide if you want to see
-    lot number information for all items at the site, or for only those items
-    whose item type is Available.
+4.  If you’re viewing information for a specific site, decide if you want to see lot number information for all items at the site, or for only those items whose item type is Available.
 
 >   **To view all lot numbers** For Display, mark All.
 
 >   **To view lot numbers of Available items only** For Display, mark Available.
 
-1.  Select a range of receipt dates and expiration dates to restrict the
-    information in the scrolling window by date, if needed.
+5.  Select a range of receipt dates and expiration dates to restrict the information in the scrolling window by date, if needed.
 
-2.  Select the order to display information in the scrolling window
+6.  Select the order to display information in the scrolling window
 
-3.  Review information as needed. You also can go to other windows to make
-    changes, if needed.
+7.  Review information as needed. You also can go to other windows to make changes, if needed.
 
->   **To make changes to the item record** Click the Item Number link to open
->   the Item Maintenance window, where you can modify the item record. Refer to
->   *Chapter 10, “Item cards,”* for more information about using the Item
->   Maintenance window.
+>   **To make changes to the item record** Click the Item Number link to open the Item Maintenance window, where you can modify the item record. Refer to *Chapter 10, “Item cards,”* for more information about using the Item Maintenance window.
 
->   **To make changes to the site record** Click the Site ID link to open the
+>   **To make changes to the site record** Click the Site ID link to open the  Site Maintenance window, where you can modify the site record. Refer to *Chapter 14, “Sites and beginning quantities,”* for more information about using the Site Maintenance window.
 
->   Site Maintenance window, where you can modify the site record. Refer to
->   *Chapter 14, “Sites and beginning quantities,”* for more information about
->   using the Site Maintenance window.
+8.  You can choose File \>\> Print to print the Lot Number Inquiry Report, if needed.
 
-1.  You can choose File \>\> Print to print the Lot Number Inquiry Report, if
-    needed.
-
-2.  When you’ve finished reviewing information, close the window.
+9.  When you’ve finished reviewing information, close the window.
 
 ### Viewing lot attribute information
 
->   You can use the Lot Attribute Inquiry window to see a manufactured date, an
->   expiration date, and lot category characteristics for a specific lot.
+>   You can use the Lot Attribute Inquiry window to see a manufactured date, an expiration date, and lot category characteristics for a specific lot.
 
 >   **To view lot attribute information:**
 
 1.  Open the Lot Number Inquiry window.
 >   (Inventory \>\> Inquiry \>\> Lots)
 
-1.  Enter or select a lot numbered item.
+2.  Enter or select a lot numbered item.
 
-2.  Use options in the Lot Number Inquiry window to find the specific lot you
-    want to review. Refer to *Viewing lot number information* for more
-    information.
+3.  Use options in the Lot Number Inquiry window to find the specific lot you want to review. Refer to *Viewing lot number information* for more information.
 
-3.  Select the lot and choose the Lot Number expansion button to open the Lot
-    Attribute Inquiry window.
+4.  Select the lot and choose the Lot Number expansion button to open the Lot Attribute Inquiry window.
 
 ![](media/b7aeb2c55340d491c4f6307a80412fed.jpg)
 
-1.  Review the information as needed.
+5.  Review the information as needed.
 
-2.  When you’ve finished, close the windows.
+6.  When you’ve finished, close the windows.
 
 ### Viewing planning information for an item
 
->   Use the Item Resource Planning Inquiry window to view planning information
->   for a site.
+>   Use the Item Resource Planning Inquiry window to view planning information for a site.
 
 >   **To view planning information for an item:**
 
@@ -7002,28 +6493,19 @@ Chapter 26: Item inquiries
 
 ![](media/762b2055c48f426594deb577ffc8455b.jpg)
 
-1.  Enter or select an item.
+2.  Enter or select an item.
 
->   Information about the item that is the same for all sites—such as the item’s
->   order policy—will be displayed.
+>   Information about the item that is the same for all sites—such as the item’s order policy—will be displayed.
 
-1.  To view site-specific information, be sure the Site ID option in the Sites
-    field is marked, and then enter or select a site.
+3.  To view site-specific information, be sure the Site ID option in the Sites field is marked, and then enter or select a site.
 
-2.  When you’ve finished viewing the information, close the window.
+4.  When you’ve finished viewing the information, close the window.
 
 ### Viewing a life cycle serial or lot number trace
 
->   You can use the Serial/Lot Trace Inquiry window to trace the life cycle of
->   serial or lot numbers. For instance, you can view how a serial- or
->   lot-numbered item is used from the day it was received or assembled by your
->   business to the day it left your business.
+>   You can use the Serial/Lot Trace Inquiry window to trace the life cycle of serial or lot numbers. For instance, you can view how a serial- or lot-numbered item is used from the day it was received or assembled by your business to the day it left your business.
 
->   A life cycle trace allows you to view all the transactions that have serial-
->   or lotnumbered items by their document date. You can use a life cycle trace
->   to find a specific serial or lot number, find items with serial or lot
->   numbers received from a specific vendor, or find items with serial or lot
->   numbers shipped to a specific customer.
+>   A life cycle trace allows you to view all the transactions that have serial- or lotnumbered items by their document date. You can use a life cycle trace to find a specific serial or lot number, find items with serial or lot numbers received from a specific vendor, or find items with serial or lot numbers shipped to a specific customer.
 
 >   **To view a life cycle serial or lot number trace:**
 
@@ -7032,8 +6514,7 @@ Chapter 26: Item inquiries
 
 ![](media/de4327bb1c81954f3b5815d68e72ad4b.jpg)
 
-1.  Select one of the following life cycle trace options from the I Need To
-    field.
+2.  Select one of the following life cycle trace options from the I Need To field.
 
     -   Find all transactions for a serial number
 
@@ -7047,35 +6528,23 @@ Chapter 26: Item inquiries
 
     -   Find lot numbers received from a vendor
 
->   The type of life cycle trace you select determines the type of information
->   displayed in the window.
+>   The type of life cycle trace you select determines the type of information displayed in the window.
 
-1.  Select or enter an item number if you know the number of the item to trace
-    serial or lot information for.
+3.  Select or enter an item number if you know the number of the item to trace serial or lot information for.
 
-2.  Depending on the life cycle trace you’ve selected in the I Need To field,
-    enter or select a customer ID or vendor ID.
+4.  Depending on the life cycle trace you’ve selected in the I Need To field, enter or select a customer ID or vendor ID.
 
-3.  Enter or select the range of serial or lot numbers to trace. Select All to
-    include all lot or serial numbers.
+5.  Enter or select the range of serial or lot numbers to trace. Select All to include all lot or serial numbers.
 
->   The time it takes to process the serial and lot information will depend on
->   if you selected to trace all serial or lot numbers without an item number.
+>   The time it takes to process the serial and lot information will depend on if you selected to trace all serial or lot numbers without an item number.
 
-1.  You can select a range of dates to restrict the information in the scrolling
-    window by date.
+6.  You can select a range of dates to restrict the information in the scrolling window by date.
 
-2.  Choose Resdisplay to display the serial and lot number information in the
-    scrolling window.
+7.  Choose Resdisplay to display the serial and lot number information in the scrolling window.
 
->   The first serial or lot number found during the trace is displayed in the
->   Serial/ Lot field and the transactions associated with that serial or lot
->   number will be displayed in the scrolling window. To view different serial
->   or lot information, select another serial or lot from the Serial/Lot field.
+>   The first serial or lot number found during the trace is displayed in the Serial/ Lot field and the transactions associated with that serial or lot number will be displayed in the scrolling window. To view different serial or lot information, select another serial or lot from the Serial/Lot field.
 
-1.  To view additional information, select the transaction and click on a link
-    to open another window. The window that opens depends on the transaction
-    source and the link that you click.
+8.  To view additional information, select the transaction and click on a link to open another window. The window that opens depends on the transaction source and the link that you click.
 
 >   Refer to the table for more information.
 
@@ -7124,69 +6593,43 @@ Chapter 26: Item inquiries
 
 >   Entry
 
->   The Document Number link isn’t available for the Purchasing Return Entry and
->   Stock Count Entry transaction sources.
+>   The Document Number link isn’t available for the Purchasing Return Entry and Stock Count Entry transaction sources.
 
-1.  If a transaction is a manufacturing or assembly transaction, choose the View
-    BOM Trace button to open the Serial/Lot Bill of Materials Trace window,
-    where you can view additional serial- or lot numbered items used by or
-    assembled from the serial or lot number that you are tracing. Refer to
-    *Viewing a bill of materials trace* for more information.
+9.  If a transaction is a manufacturing or assembly transaction, choose the View BOM Trace button to open the Serial/Lot Bill of Materials Trace window, where you can view additional serial- or lot numbered items used by or assembled from the serial or lot number that you are tracing. Refer to *Viewing a bill of materials trace* for more information.
 
-2.  You can choose File \>\> Print to print the Serial/Lot Trace Inquiry Report.
+10.  You can choose File \>\> Print to print the Serial/Lot Trace Inquiry Report.
 
-3.  When you’ve finished reviewing information, close the window.
+11.  When you’ve finished reviewing information, close the window.
 
 ### The bill of materials trace tree view
 
->   The Serial/Lot Bill of Materials Trace window uses a tree view to show the
->   serial numbers, lot numbers, and transactions in a bill of materials trace.
->   To view information in the tree view, select a trace type and choose
->   Redisplay.
+>   The Serial/Lot Bill of Materials Trace window uses a tree view to show the serial numbers, lot numbers, and transactions in a bill of materials trace. To view information in the tree view, select a trace type and choose Redisplay.
 
->   The trace type you select determines the information that is displayed in
->   the tree view.
+>   The trace type you select determines the information that is displayed in the tree view.
 
--   If you select Consumed into the serial/lot as the trace type, you can view
-    serial- or lot-numbered items that were consumed (used) in a serial- or
-    lot-numbered item.
+-   If you select Consumed into the serial/lot as the trace type, you can view serial- or lot-numbered items that were consumed (used) in a serial- or lot-numbered item.
 
--   If you select Produced from the serial/lot as the trace type, you can view
-    serial- or lot-numbered items that were produced (assembled) from a serial-
-    or lotnumbered item.
+-   If you select Produced from the serial/lot as the trace type, you can view serial- or lot-numbered items that were produced (assembled) from a serial- or lotnumbered item.
 
 >   **Objects in the tree view**
 
->   Each line in the tree is called an object. When you select an object in the
->   tree view, the information to the right of the window displays the
->   information about the selected object.
+>   Each line in the tree is called an object. When you select an object in the tree view, the information to the right of the window displays the information about the selected object.
 
->   The first object in the tree view is the serial or lot number that you are
->   tracing, followed by the item number. The next object or objects are the
->   transactions that consumed (used) or produced (assembled) serial- and
->   lot-numbered items for the serial or lot number being traced. The following
->   is an example of a tree view.
+>   The first object in the tree view is the serial or lot number that you are tracing, followed by the item number. The next object or objects are the transactions that consumed (used) or produced (assembled) serial- and lot-numbered items for the serial or lot number being traced. The following is an example of a tree view.
 
 ##### \- SERIAL10 : CIRCUIT BOARD + ASM00078
 
->   You can choose the + symbol next to a manufacturing or assembly transaction
->   object to view additional levels in the tree view. You can collapse and
->   expand the entire tree or just portions of it.
+>   You can choose the + symbol next to a manufacturing or assembly transaction object to view additional levels in the tree view. You can collapse and expand the entire tree or just portions of it.
 
->   If a lot number is used multiple times on a transaction, each occurrence of
->   the lot number will be displayed in the tree view, as shown in the following
->   example.
+>   If a lot number is used multiple times on a transaction, each occurrence of the lot number will be displayed in the tree view, as shown in the following example.
 
 ##### \- LOT 10 : CIRCUIT BOARD - ASM00038 - LOT 55 : SWITCH SYSTEM ORDER005 INV015 ADJ029 + LOT 55 : SWITCH SYSTEM
 
->   If an item doesn’t track serial or lot numbers, that information will be
->   displayed in the tree view, as shown in the following example.
+>   If an item doesn’t track serial or lot numbers, that information will be displayed in the tree view, as shown in the following example.
 
 ##### \- LOT 12 : ITEM - ASM00038 \<Not Tracked\> : Brush
 
->   For assembly transactions, a link icon might appear next to a specific
->   serial or lot number that is matched to another serial or lot number, as
->   shown in the following example.
+>   For assembly transactions, a link icon might appear next to a specific serial or lot number that is matched to another serial or lot number, as shown in the following example.
 
 ##### \- LOT 10 : CIRCUIT BOARD - ASM00038 +
 
@@ -7194,16 +6637,11 @@ Chapter 26: Item inquiries
 
 LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 
->   For more information about linking serial and lot numbers, refer to the Bill
->   of Materials documentation.
+>   For more information about linking serial and lot numbers, refer to the Bill of Materials documentation.
 
 >   **Consumed into the serial/lot trace type example**
 
->   If you selected Consumed into the serial/lot, you can expand a manufacturing
->   or assembly transaction object to display all documents that were involved
->   with placing the serial- or lot-numbered item into inventory. The following
->   is an example of how information is displayed in the tree view if you
->   selected Consumed into the serial/lot as the trace type.
+>   If you selected Consumed into the serial/lot, you can expand a manufacturing or assembly transaction object to display all documents that were involved with placing the serial- or lot-numbered item into inventory. The following is an example of how information is displayed in the tree view if you selected Consumed into the serial/lot as the trace type.
 
 | **Tree view**                | **Description**                                |
 |------------------------------|------------------------------------------------|
