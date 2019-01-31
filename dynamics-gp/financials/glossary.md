@@ -82,7 +82,7 @@ The following table explains the terminology used in the Financials area in Dyna
 |Withdrawal|A removal of cash from a checkbook for business or personal use.|
 
 
-**Glossary**
+## More terms
 
 #### Accounting period
 
