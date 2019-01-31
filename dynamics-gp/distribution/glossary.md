@@ -185,6 +185,6 @@ The following table explains the terminology used in the Distribution area in Dy
 
 ## See Also
 
-[Purchase Order Processing](purchase-order-processing)  
-[Purchase Order Enhancements](purchase-order-enhancements)  
-[Sales Order Processing](sales-order-processing)  
+[Purchase Order Processing](purchase-order-processing.md)  
+[Purchase Order Enhancements](purchase-order-enhancements.md)  
+[Sales Order Processing](sales-order-processing.md)  
