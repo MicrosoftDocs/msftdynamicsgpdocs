@@ -1,4 +1,18 @@
-**Introduction**
+---
+title: "General Ledger"
+description: "The general ledger in Dynamics GP"
+keywords: "purchase order"
+author: tnistler
+manager: edupont
+
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: tnistler
+ms.date: 01/30/2019
+
+---
+# Dynamics GP General Ledger
 
 You can use General Ledger to enter a chart of accounts and post beginning
 balances. You can set up budgets in Microsoft Dynamics® GP or use Microsoft®
