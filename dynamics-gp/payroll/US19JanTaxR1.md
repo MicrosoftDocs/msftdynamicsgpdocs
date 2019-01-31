@@ -132,7 +132,7 @@ The Personal Exemption is $4,200
 | 0           | 11,800           | 0              | 0.00%        | 0                  |
 | 11,800      | And Over         | 0              | 4.63%        | 11,800             |
 
-*Withholding rates for taxpayers filing as MAR and SINGLE*
+*Withholding rates for taxpayers filing as SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
