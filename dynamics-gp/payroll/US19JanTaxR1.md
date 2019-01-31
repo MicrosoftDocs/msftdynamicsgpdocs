@@ -25,6 +25,7 @@ This is the second tax update for 2019. It includes state tax table changes that
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
 ## Changes in January Round 2 update
+- Alabama
 - Colorado
 - Connecticut
 - Massachusetts
@@ -42,7 +43,101 @@ There are no federal changes in the Round 2 tax table update.
 
 The following tax changes are included in this update:
 
+### Withholding changes for Alabama
+
+*Personal Exemption for taxpayers filing HOF*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 23,500           | 4,700          | 0%           | 0                  |
+| 23,500      | 24,000           | 4,565          | 0%           | 0                  |
+| 24,000      | 24,500           | 4,430          | 0%           | 0                  |
+| 24,500      | 25,000           | 4,295          | 0%           | 0                  |
+| 25,000      | 25,500           | 4,160          | 0%           | 0                  |
+| 25,500      | 26,000           | 4,025          | 0%           | 0                  |
+| 26,000      | 26,500           | 3,890          | 0%           | 0                  |
+| 26,500      | 27,000           | 3,755          | 0%           | 0                  |
+| 27,000      | 27,500           | 3,620          | 0%           | 0                  |
+| 27,500      | 28,000           | 3,485          | 0%           | 0                  |
+| 28,000      | 28,500           | 3,350          | 0%           | 0                  |
+| 28,500      | 29,000           | 3,215          | 0%           | 0                  |
+| 29,000      | 29,500           | 3,080          | 0%           | 0                  |
+| 29,500      | 30,000           | 2,945          | 0%           | 0                  |
+| 30,000      | 30,500           | 2,810          | 0%           | 0                  |
+| 30,500      | 31,000           | 2,675          | 0%           | 0                  |
+| 31,000      | 31,500           | 2,540          | 0%           | 0                  |
+| 31,500      | 32,000           | 2,405          | 0%           | 0                  |
+| 32,000      | 32,500           | 2,270          | 0%           | 0                  |
+| 32,500      | 33,000           | 2,135          | 0%           | 0                  |
+| 33,000      |                  | 2,000          | 0%           | 0                  |
+
+*Personal Exemption for taxpayers filing MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 23,500           | 7,500          | 0%           | 0                  |
+| 23,500      | 24,000           | 7,325          | 0%           | 0                  |
+| 24,000      | 24,500           | 7,150          | 0%           | 0                  |
+| 24,500      | 25,000           | 6,975          | 0%           | 0                  |
+| 25,000      | 25,500           | 6,800          | 0%           | 0                  |
+| 25,500      | 26,000           | 6,625          | 0%           | 0                  |
+| 26,000      | 26,500           | 6,450          | 0%           | 0                  |
+| 26,500      | 27,000           | 6,275          | 0%           | 0                  |
+| 27,000      | 27,500           | 6,100          | 0%           | 0                  |
+| 27,500      | 28,000           | 5,925          | 0%           | 0                  |
+| 28,000      | 28,500           | 5,750          | 0%           | 0                  |
+| 28,500      | 29,000           | 5,575          | 0%           | 0                  |
+| 29,000      | 29,500           | 5,400          | 0%           | 0                  |
+| 29,500      | 30,000           | 5,225          | 0%           | 0                  |
+| 30,000      | 30,500           | 5,050          | 0%           | 0                  |
+| 30,500      | 31,000           | 4,875          | 0%           | 0                  |
+| 31,000      | 31,500           | 4,700          | 0%           | 0                  |
+| 31,500      | 32,000           | 4,525          | 0%           | 0                  |
+| 32,000      | 32,500           | 4,350          | 0%           | 0                  |
+| 32,500      | 33,000           | 4,175          | 0%           | 0                  |
+| 33,000      |                  | 4,000          | 0%           | 0                  |
+
+*Personal Exemption for taxpayers filing MFS*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 10,750           | 3,750          | 0%           | 0                  |
+| 10,750      | 11,000           | 3,662          | 0%           | 0                  |
+| 11,000      | 11,250           | 3,574          | 0%           | 0                  |
+| 11,250      | 11,500           | 3,486          | 0%           | 0                  |
+| 11,500      | 11,750           | 3,398          | 0%           | 0                  |
+| 11,750      | 12,000           | 3,310          | 0%           | 0                  |
+| 12,000      | 12,250           | 3,222          | 0%           | 0                  |
+| 12,250      | 12,500           | 3,134          | 0%           | 0                  |
+| 12,500      | 12,750           | 3,046          | 0%           | 0                  |
+| 12,750      | 13,000           | 2,958          | 0%           | 0                  |
+| 13,000      | 13,250           | 2,870          | 0%           | 0                  |
+| 13,250      | 13,500           | 2,782          | 0%           | 0                  |
+| 13,500      | 13,750           | 2,694          | 0%           | 0                  |
+| 13,750      | 14,000           | 2,606          | 0%           | 0                  |
+| 14,000      | 14,250           | 2,518          | 0%           | 0                  |
+| 14,250      | 14,500           | 2,430          | 0%           | 0                  |
+| 14,500      | 14,750           | 2,342          | 0%           | 0                  |
+| 14,750      | 15,000           | 2,254          | 0%           | 0                  |
+| 15,000      | 15,250           | 2,166          | 0%           | 0                  |
+| 15,250      | 15,500           | 2,078          | 0%           | 0                  |
+| 15,500      |                  | 2,000          | 0%           | 0                  |
+
 ### Withholding changes for Colorado
+The Personal Exemption is $4,200
+*Withholding rates for taxpayers filing as MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 11,800           | 0              | 0.00%        | 0                  |
+| 11,800      | And Over         | 0              | 4.63%        | 11,800             |
+
+*Withholding rates for taxpayers filing as MAR and SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,800            | 0              | 0.00%        | 0                  |
+| 3,800       | And Over         | 0              | 4.63%        | 3,800              |
 
 ### Withholding changes for Connecticut
 *Withholding rates for taxpayers filing as A, D, and F changes made to tax amount on wages over $100,000, only those changed brackets shown in table below*
@@ -123,7 +218,7 @@ The Personal Exemption amount is $4,200
 | 4,500       | 43,000           | 0              | 1.10%        | 4,500              |
 | 43,000      | 87,000           | 423.50         | 2.04%        | 43,000             |
 | 87,000      | 202,000          | 1,312.10       | 2.27%        | 87,000             |
-| 202,000     | 432,000          | 3,391.60       | 2.64%        | 202,000            |
+| 202,000     | 432,000          | 3,931.60       | 2.64%        | 202,000            |
 | 432,000     | And Over         | 10,003.60      | 2.90%        | 432,000            |
 
 ### Withholding changes for Rhode Island
@@ -659,7 +754,7 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 1 January 2019 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The Round 2 January 2019 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -682,7 +777,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4.  Choose Process to start the update.
 
-5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 12/21/2018.
+5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 1/25/2019.
 
 ## What’s next
 
