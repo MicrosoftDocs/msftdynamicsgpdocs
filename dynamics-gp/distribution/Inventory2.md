@@ -1073,59 +1073,40 @@ Chapter 32: Standard pricing wizards
 
 ![](media/73e5a82defea1a73a23f42f285c6082a.jpg)
 
->   Choose Finish to assign currencies to items. The Assign Currency Audit
->   Report automatically will be generated.
+>   Choose Finish to assign currencies to items. The Assign Currency Audit Report automatically will be generated.
 
 ### Items updated by price list wizards
 
->   When you’re completing any of the price list wizards, you have the option to
->   select groups of items to change. For example, you can add a price list to
->   several items, or copy a price list from an existing item to several other
->   items.
+>   When you’re completing any of the price list wizards, you have the option to select groups of items to change. For example, you can add a price list to several items, or copy a price list from an existing item to several other items.
 
->   You can select a large group of items using a restrictions window. Each of
->   the price list wizards includes a restrictions window. The Add Price List
->   Wizard - Restrictions window—shown here—is typical. You can use the window
->   to select groups of items based on item numbers, class IDs, and other
->   attributes. Items that meet all restrictions in the window are included in
->   the list of candidate items to be changed.
+>   You can select a large group of items using a restrictions window. Each of the price list wizards includes a restrictions window. The Add Price List Wizard - Restrictions window—shown here—is typical. You can use the window to select groups of items based on item numbers, class IDs, and other attributes. Items that meet all restrictions in the window are included in the list of candidate items to be changed.
 
 ![](media/eec7f923650251582aab4763c9fa4b85.jpg)
 
->   Depending on the price list wizard you’re using, however, the items might
->   also need to meet other criteria before the items can be updated. For
->   example, you can add a price list only to items that have the same price
->   method as the price list you’re adding.
+>   Depending on the price list wizard you’re using, however, the items might also need to meet other criteria before the items can be updated. For example, you can add a price list only to items that have the same price method as the price list you’re adding.
 
->   Refer to the table for more information about the criteria items must meet
->   to be updated.
+>   Refer to the table for more information about the criteria items must meet to be updated.
 
 | **If you’re using this price list wizard...** | **... items must meet these requirements:**                                                                                           |
-|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Adding a price list                           | The item has the same price method as selected in the wizard.                                                                         |
-| Copying a price list                          | The destination items must have the same unit of measure schedule as the source item.                                                 |
-| Updating a price list                         | The item has the same price method as selected in the wizard.                                                                         |
+|-----------------------------------------------|-------------------------------------------------------------------------------------|
+| Adding a price list                           | The item has the same price method as selected in the wizard.                       |
+| Copying a price list                          | The destination items must have the same unit of measure schedule as the source item|
+| Updating a price list                         | The item has the same price method as selected in the wizard.                       |
 | Removing a price list                         | The combination of currency, price level, unit of measure, and quantity breaks to be updated already exists in the item’s price list. |
-| Assigning a currency                          | The currency can’t already be assigned to the item.                                                                                   |
+| Assigning a currency                          | The currency can’t already be assigned to the item.                                 |
 
->   If you’re using Multicurrency Management, the currency must already be
->   assigned to the item.
+>   If you’re using Multicurrency Management, the currency must already be assigned to the item.
 
->   The unit of measure can’t already exist for the currency-price level
->   combination.
+>   The unit of measure can’t already exist for the currency-price level combination.
 
->   The source item price list and destination item must have at least one
->   currency in common.
+>   The source item price list and destination item must have at least one currency in common.
 
->   The combination of currency, price level, unit of measure, and quantity
->   breaks to be updated already exists in the item’s price list.
+>   The combination of currency, price level, unit of measure, and quantity breaks to be updated already exists in the item’s price list.
 
 Chapter 33: Extended pricing utilities
 --------------------------------------
 
->   This part of the documentation contains the procedures you need for
->   transferring and removing price sheet information. Always back up your
->   accounting data before performing these procedures.
+>   This part of the documentation contains the procedures you need for transferring and removing price sheet information. Always back up your accounting data before performing these procedures.
 
 >   This information is divided into the following sections:
 
@@ -1135,27 +1116,15 @@ Chapter 33: Extended pricing utilities
 
 ### Transferring price sheet details
 
->   Use the Price Sheet Transfer window to transfer items from one price sheet
->   to another. You can transfer all items, active items only, or selected
->   items. If an item already exists on the destination price sheet, you can
->   overwrite the existing item or leave it unchanged.
+>   Use the Price Sheet Transfer window to transfer items from one price sheet to another. You can transfer all items, active items only, or selected items. If an item already exists on the destination price sheet, you can overwrite the existing item or leave it unchanged.
 
->   You can transfer customer, prospect, or price book assignments—or all of
->   these— from one price sheet to another. For example, if an existing price
->   sheet is assigned to multiple price books, you can transfer its price book
->   assignments to a new price sheet to automatically assign the new price sheet
->   to the same price books.
+>   You can transfer customer, prospect, or price book assignments—or all of these— from one price sheet to another. For example, if an existing price sheet is assigned to multiple price books, you can transfer its price book assignments to a new price sheet to automatically assign the new price sheet to the same price books.
 
->   To prevent some pricing errors that could occur, there are restrictions on
->   transfers to the base price book.
+>   To prevent some pricing errors that could occur, there are restrictions on transfers to the base price book.
 
->   **Items** If the price sheet details for an item are not net-price details,
->   that information can’t be transferred to the base price book. For example,
->   you can’t transfer promotional price information to the base price book.
->   This is because the base price book contains only net prices.
+>   **Items** If the price sheet details for an item are not net-price details, that information can’t be transferred to the base price book. For example, you can’t transfer promotional price information to the base price book. This is because the base price book contains only net prices.
 
->   **Assignments** Non-net price sheets can’t be assigned to the base price
->   book by transferring assignments.
+>   **Assignments** Non-net price sheets can’t be assigned to the base price book by transferring assignments.
 
 >   **To transfer price sheet details:**
 
@@ -1164,97 +1133,53 @@ Chapter 33: Extended pricing utilities
 
 ![](media/78e5101f7ea3fe86a11dc54464428ba9.jpg)
 
-1.  Enter or select a source price sheet ID.
+2.  Enter or select a source price sheet ID.
 
-2.  Enter or select a destination price sheet ID. If the price sheet does not
-    already exist, it will be created when you transfer information.
+3.  Enter or select a destination price sheet ID. If the price sheet does not already exist, it will be created when you transfer information.
 
-3.  If you’re using Multicurrency Management and the destination price sheet
-    will be a new price sheet, enter or select the currency for the new price
-    sheet.
+4.  If you’re using Multicurrency Management and the destination price sheet will be a new price sheet, enter or select the currency for the new price sheet.
 
->   If the currency you select is not the same as the currency of the source
->   price sheet, Exchange Rate and Calculation Method fields will appear. If you
->   have set up an exchange table for the currency conversion, that information
->   will be displayed in the fields. You can accept the default values, or
->   change them.
+>   If the currency you select is not the same as the currency of the source price sheet, Exchange Rate and Calculation Method fields will appear. If you have set up an exchange table for the currency conversion, that information will be displayed in the fields. You can accept the default values, or change them.
 
->   Refer to the Multicurrency Management documentation for more information
->   about exchange rates.
+>   Refer to the Multicurrency Management documentation for more information about exchange rates.
 
-1.  Indicate whether to transfer assignment details, item details, or both.
+5.  Indicate whether to transfer assignment details, item details, or both.
 
->   **Transfer Assignment Details** Mark this option to have the destination
->   price sheet assigned to the same customers, prospects, or price books as the
->   source price sheet.
+>   **Transfer Assignment Details** Mark this option to have the destination price sheet assigned to the same customers, prospects, or price books as the source price sheet.
 
->   **Transfer Item Details** Mark this option to have price sheet details from
->   the source price sheet transferred to the destination price sheet.
+>   **Transfer Item Details** Mark this option to have price sheet details from the source price sheet transferred to the destination price sheet.
 
->   *If the destination price sheet is a new price sheet, you must transfer
->   details for at least one item.*
+>   *If the destination price sheet is a new price sheet, you must transfer details for at least one item.*
 
-1.  If you marked Transfer Assignment Details, choose what information will be
-    transferred and how it will be transferred.
+6.  If you marked Transfer Assignment Details, choose what information will be transferred and how it will be transferred.
 
->   **Price Sheet Assignments** Mark Copy to leave the assignments of the source
->   price sheet unchanged, or mark Move to remove the assignments of the source
->   price sheet.
+>   **Price Sheet Assignments** Mark Copy to leave the assignments of the source price sheet unchanged, or mark Move to remove the assignments of the source price sheet.
 
->   **Assignments to Transfer** Mark as many options as you like. Mark
+>   **Assignments to Transfer** Mark as many options as you like. Mark Customers to transfer customer assignments, Prospects to transfer prospect assignments, or Price Books to transfer price book assignments.
 
->   Customers to transfer customer assignments, Prospects to transfer prospect
->   assignments, or Price Books to transfer price book assignments.
+>   If you marked Transfer Price Sheet Item Details, choose what information will be transferred and how it will affect the source price sheet.
 
->   If you marked Transfer Price Sheet Item Details, choose what information
->   will be transferred and how it will affect the source price sheet.
+>   **Transfer Overwrite Mode** Mark Overwrite Existing Items if the new price sheet information should replace existing price sheet information. Mark New Item Only if information only about items that aren’t already on the destination price sheet should be transferred.
 
->   **Transfer Overwrite Mode** Mark Overwrite Existing Items if the new price
->   sheet information should replace existing price sheet information. Mark New
->   Item Only if information only about items that aren’t already on the
->   destination price sheet should be transferred.
+>   **Items to Transfer** Mark All Items to transfer information about all items from the source price list to the destination price list. Mark Active Items to transfer only price sheet lines that are active. Mark Selected Items to transfer only price sheet lines that you specify. Refer to step 8 for information about specifying the lines to transfer.
 
->   **Items to Transfer** Mark All Items to transfer information about all items
->   from the source price list to the destination price list. Mark Active Items
->   to transfer only price sheet lines that are active. Mark Selected Items to
->   transfer only price sheet lines that you specify. Refer to step 8 for
->   information about specifying the lines to transfer.
+>   **Change Transferred Items Active Status to** Mark Unchanged if the status of the transferred lines should be the same on both the source price sheet and the destination price sheet. Mark Active if the status of the transferred lines should be active on the destination price sheet. Mark Inactive if the status of the transferred lines should be inactive on the destination price sheet.
 
->   **Change Transferred Items Active Status to** Mark Unchanged if the
+>   **Transfer Price Sheet Item Details** Mark Transfer Price Sheet Item Details if the pricing details—such as quantity breaks, net prices, value-off amounts, or percentage of list—should be transferred.
 
->   status of the transferred lines should be the same on both the source price
->   sheet and the destination price sheet. Mark Active if the status of the
->   transferred lines should be active on the destination price sheet. Mark
->   Inactive if the status of the transferred lines should be inactive on the
->   destination price sheet.
+>   *If you select to transfer price sheet details, prices will be converted as necessary during the transfer. You might be required to select an exchange rate.*
 
->   **Transfer Price Sheet Item Details** Mark Transfer Price Sheet Item Details
->   if the pricing details—such as quantity breaks, net prices, value-off
->   amounts, or percentage of list—should be transferred.
+7.  If you marked the option to transfer item details for selected items, choose the items to transfer.
 
->   *If you select to transfer price sheet details, prices will be converted as
->   necessary during the transfer. You might be required to select an exchange
->   rate.*
+>   The items that are assigned to the source price sheet will be displayed in the Items in Source Price Sheet list. To select an item, highlight it in the list and choose Insert to move it to the Selected Items to Transfer list.
 
-1.  If you marked the option to transfer item details for selected items, choose
-    the items to transfer.
+8.  Choose Transfer to process the price sheet transfer.
 
->   The items that are assigned to the source price sheet will be displayed in
->   the Items in Source Price Sheet list. To select an item, highlight it in the
->   list and choose Insert to move it to the Selected Items to Transfer list.
-
-1.  Choose Transfer to process the price sheet transfer.
-
->   The Price Sheet Maintenance window will open, displaying information about
->   the destination price sheet. You can review the information that was
->   transferred, using the Price Sheet Detail Maintenance window to verify and
->   edit details as needed. Refer to *Creating and editing price sheet details*
->   for more information.
+>   The Price Sheet Maintenance window will open, displaying information about the destination price sheet. You can review the information that was transferred, using the Price Sheet Detail Maintenance window to verify and edit details as needed. Refer to *Creating and editing price sheet details* for more information.
 
 ### Removing price sheets
 
->   Use the Mass Remove Price Sheets window to remove price sheet information
->   from Inventory Control.
+>   Use the Mass Remove Price Sheets window to remove price sheet information from Inventory Control.
 
 >   **To remove price sheets:**
 
@@ -1263,29 +1188,22 @@ Chapter 33: Extended pricing utilities
 
 ![](media/0d2e7a53f0e5b59cadba0f00616f210e.jpg)
 
-1.  Enter a cut-off date. Price sheets ending on or before this date will be
-    removed.
+2.  Enter a cut-off date. Price sheets ending on or before this date will be removed.
 
-2.  Enter or select the range of price sheet IDs to remove.
+3.  Enter or select the range of price sheet IDs to remove.
 
-3.  Select to remove inactive price sheets, active price sheets, or both.
+4.  Select to remove inactive price sheets, active price sheets, or both.
 
 *Active price sheets without an end date will not be removed.*
 
-1.  Select to remove promotion price sheets, non-promotion price sheets, or
-    both.
+5.  Select to remove promotion price sheets, non-promotion price sheets, or both.
 
-2.  Choose Remove. Price sheets matching your selection will be deleted.
+6.  Choose Remove. Price sheets matching your selection will be deleted.
 
 Chapter 34: History utilities
 -----------------------------
 
->   History records provide useful information for audit purposes, and can be
->   maintained for an unlimited number of years. In Inventory Control, history
->   can be kept for calendar or fiscal years. You can keep history for
->   transactions, posting journals, and account distributions (debits and
->   credits that have been posted to posting accounts). When you remove history
->   records, the system removes the records only for the year you specify.
+>   History records provide useful information for audit purposes, and can be maintained for an unlimited number of years. In Inventory Control, history can be kept for calendar or fiscal years. You can keep history for transactions, posting journals, and account distributions (debits and credits that have been posted to posting accounts). When you remove history records, the system removes the records only for the year you specify.
 
 *For more information about history, refer to Chapter 17, “History.”*
 
@@ -1307,14 +1225,9 @@ Chapter 34: History utilities
 
 ### Removing calendar- or fiscal-year history
 
->   Use the Remove Inventory Calendar-Fiscal Summary History window to remove
->   calendar- or fiscal-year history.
+>   Use the Remove Inventory Calendar-Fiscal Summary History window to remove calendar- or fiscal-year history.
 
->   Cost, quantity, and sales information is recorded for each item you’ve
->   chosen to keep history for. If you’re keeping calendar-year history, the
->   information is displayed in month-by-month summaries. If you’re keeping
->   fiscal-year history, the information is displayed in the fiscal periods
->   defined in the Fiscal Periods Setup window.
+>   Cost, quantity, and sales information is recorded for each item you’ve chosen to keep history for. If you’re keeping calendar-year history, the information is displayed in month-by-month summaries. If you’re keeping fiscal-year history, the information is displayed in the fiscal periods defined in the Fiscal Periods Setup window.
 
 >   You can remove calendar-year history, fiscal-year history, or both.
 
@@ -1326,38 +1239,25 @@ Chapter 34: History utilities
 
 ![](media/d223ec61128a0e851661d630ebd9997b.jpg)
 
-1.  Mark the kind of history to remove: calendar year or fiscal year.
+2.  Mark the kind of history to remove: calendar year or fiscal year.
 
-2.  Create range restrictions to define the group of history records to be
-    removed. You can add as many restrictions as you like, but you can use each
-    range only once. For example, you can define only one range of item numbers.
+3.  Create range restrictions to define the group of history records to be removed. You can add as many restrictions as you like, but you can use each range only once. For example, you can define only one range of item numbers.
 
->   *Only history records that meet all the restrictions you’ve defined and
->   added to the list will be removed. If you don’t define any restrictions, all
->   calendar-year or fiscal-year history records will be removed.*
+>   *Only history records that meet all the restrictions you’ve defined and added to the list will be removed. If you don’t define any restrictions, all calendar-year or fiscal-year history records will be removed.*
 
-1.  Decide whether to remove history now, print a report based on the records,
-    or both.
+4.  Decide whether to remove history now, print a report based on the records, or both.
 
->   *Once history is removed for an item, you can’t generate the Sales Summary
->   Report for the item.*
+>   *Once history is removed for an item, you can’t generate the Sales Summary Report for the item.*
 
-1.  Choose Process to remove history, print the report or both.
+5.  Choose Process to remove history, print the report or both.
 
->   *When you’ve finished removing history records, you can shrink the Inventory
->   Sales Summary History table to free disk space. Refer to your System
->   Administrator's Guide (Help \>\> Contents \>\> select System Administration)
->   for more information.*
+>   *When you’ve finished removing history records, you can shrink the Inventory Sales Summary History table to free disk space. Refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.*
 
 ### Removing inventory transaction history
 
->   Use the Remove Inventory Transaction History window to remove transaction
->   history information. When removing transaction history, cost change history
->   is also removed.
+>   Use the Remove Inventory Transaction History window to remove transaction history information. When removing transaction history, cost change history is also removed.
 
->   Transaction history is detailed information about transactions posted in the
->   Inventory Control module, or posted in other modules affecting Inventory
->   Control.
+>   Transaction history is detailed information about transactions posted in the Inventory Control module, or posted in other modules affecting Inventory Control.
 
 >   **To remove inventory transaction history:**
 
@@ -1366,33 +1266,21 @@ Chapter 34: History utilities
 
 ![](media/4ca51dbea411b9cec507ec5cdc8c65cf.jpg)
 
-1.  Create range restrictions to define the group of history records to be
-    removed. You can add as many restrictions as you like, but you can use each
-    range only once. For example, you can define only one range of item numbers.
+2.  Create range restrictions to define the group of history records to be removed. You can add as many restrictions as you like, but you can use each range only once. For example, you can define only one range of item numbers.
 
->   *Only history records that meet all the restrictions you’ve defined and
->   added to the list will be removed.*
+>   *Only history records that meet all the restrictions you’ve defined and added to the list will be removed.*
 
-1.  Decide whether to remove transaction and transaction distribution history,
-    print a report based on the records, or both. You can mark as many options
-    as you like.
+3.  Decide whether to remove transaction and transaction distribution history, print a report based on the records, or both. You can mark as many options as you like.
 
->   *Once you remove transaction history for a range of items, you can’t print
->   the Transaction History Report or reprint journals for those items.*
+>   *Once you remove transaction history for a range of items, you can’t print the Transaction History Report or reprint journals for those items.*
 
-1.  Choose Process to remove history, print the report, or both.
+4.  Choose Process to remove history, print the report, or both.
 
->   *When you’ve finished removing history records, you can shrink the
->   Transaction History table to free disk space. Refer to your System
->   Administrator's Guide (Help \>\> Contents \>\> select System Administration)
->   for more information.*
+>   *When you’ve finished removing history records, you can shrink the Transaction History table to free disk space. Refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.*
 
 ### Removing inventory distribution history
 
->   Distribution history is a detailed record of how Inventory Control
->   transactions have affected posting accounts. You can use the Remove
->   Inventory Distribution History window to remove General Ledger distribution
->   history records.
+>   Distribution history is a detailed record of how Inventory Control transactions have affected posting accounts. You can use the Remove Inventory Distribution History window to remove General Ledger distribution history records.
 
 >   **To remove inventory distribution history:**
 
@@ -1401,39 +1289,21 @@ Chapter 34: History utilities
 
 ![](media/935e543bcf6c6e75a66dd05afd9d4177.jpg)
 
-1.  Create range restrictions to define the group of history records to be
-    removed. You can add as many restrictions as you like, but you can use each
-    range only once. For example, you can define only one range of item numbers.
+2.  Create range restrictions to define the group of history records to be removed. You can add as many restrictions as you like, but you can use each range only once. For example, you can define only one range of item numbers.
 
->   *Only history records that meet all the restrictions you’ve defined and
->   added to the list will be removed.*
+>   *Only history records that meet all the restrictions you’ve defined and added to the list will be removed.*
 
-1.  Decide whether to remove history, print a report based on the records, or
-    both.
+3.  Decide whether to remove history, print a report based on the records, or both.
 
->   *Once you remove transaction history for a range of items, you can’t print
->   the Distribution History Report for those items.*
+>   *Once you remove transaction history for a range of items, you can’t print the Distribution History Report for those items.*
 
-1.  Choose Process to remove history, print the report, or both.
+4.  Choose Process to remove history, print the report, or both.
 
->   *When you’ve finished removing history records, you can shrink the Inventory
->   Transaction History table to free disk space. Refer to your System
->   Administrator’s Guide for more information.*
+>   *When you’ve finished removing history records, you can shrink the Inventory Transaction History table to free disk space. Refer to your System Administrator’s Guide for more information.*
 
 ### Removing inventory journal history
 
->   Use the Remove Inventory Posting Journal History window to remove inventory
->   posting journal history.
-
->   If you keep journal history for items, you can reprint posting journals for
->   Inventory
-
->   Control transactions that affect those items. Posting journals include the
->   audit trail
-
->   code assigned to each transaction during the posting process. Using posting
->   journals, you can trace any transaction to the point where it was entered in
->   Microsoft Dynamics GP.
+>   Use the Remove Inventory Posting Journal History window to remove inventory posting journal history. If you keep journal history for items, you can reprint posting journals for Inventory  Control transactions that affect those items. Posting journals include the audit trail  code assigned to each transaction during the posting process. Using posting journals, you can trace any transaction to the point where it was entered in Microsoft Dynamics GP.
 
 >   **To remove inventory journal history:**
 
@@ -1442,27 +1312,19 @@ Chapter 34: History utilities
 
 ![](media/a439b36725e13e90b6ea214e7b23bd3e.jpg)
 
-1.  Create range restrictions to define the group of history records to be
-    removed. You can add as many restrictions as you like, but you can use each
-    range only once. For example, you can define only one range of item numbers.
+2.  Create range restrictions to define the group of history records to be removed. You can add as many restrictions as you like, but you can use each range only once. For example, you can define only one range of item numbers.
 
->   *Only history records that meet all the restrictions you’ve defined and
->   added to the list will be removed.*
+>   *Only history records that meet all the restrictions you’ve defined and added to the list will be removed.*
 
-1.  Decide if you want to remove history now, print a report based on the
-    records, or both.
+3.  Decide if you want to remove history now, print a report based on the records, or both.
 
->   *Once you remove transaction history for a range of items, you can’t print
->   the Transaction Posting Journal–Reprint or the Transfer Posting
->   Journal–Reprint reports for those items.*
+>   *Once you remove transaction history for a range of items, you can’t print the Transaction Posting Journal–Reprint or the Transfer Posting Journal–Reprint reports for those items.*
 
-1.  Choose Process to remove history, print the report, or both.
+4.  Choose Process to remove history, print the report, or both.
 
 ### Removing stock count history
 
->   You can use the Remove Stock Count History window to remove information
->   about the results of stock counts. You also can generate a Removed Stock
->   Count History report.
+>   You can use the Remove Stock Count History window to remove information about the results of stock counts. You also can generate a Removed Stock Count History report.
 
 >   **To remove stock count history:**
 
@@ -1471,23 +1333,17 @@ Chapter 34: History utilities
 
 ![](media/c529054dd35c0c879648756a688965d5.jpg)
 
-1.  Create range restrictions to define the stock count records to be removed.
-    You can add as many restrictions as you like, but you can use each range
-    only once. For example, you can define only one range of stock count start
-    dates.
+2.  Create range restrictions to define the stock count records to be removed. You can add as many restrictions as you like, but you can use each range only once. For example, you can define only one range of stock count start dates.
 
->   *Only stock count records that meet all the restrictions you’ve defined and
->   added to the list will be removed.*
+>   *Only stock count records that meet all the restrictions you’ve defined and added to the list will be removed.*
 
-1.  Decide if you want to remove history now, print a report based on the
-    records, or both.
+3.  Decide if you want to remove history now, print a report based on the records, or both.
 
-2.  Choose Process to remove history, print the report, or both.
+4.  Choose Process to remove history, print the report, or both.
 
 ### Removing in-transit transfer history
 
->   Use the Transfer Purge Utility window to remove in-transit transfer history.
->   You also can print the Transfer History Purge report.
+>   Use the Transfer Purge Utility window to remove in-transit transfer history. You also can print the Transfer History Purge report.
 
 >   **To remove in-transit transfer history:**
 
@@ -1496,38 +1352,31 @@ Chapter 34: History utilities
 
 ![](media/18a476720c4365c8df896f68d2ee6c5e.jpg)
 
-1.  Enter the date. When you remove history, the in-transit transfers dated on
-    or before the date you specify are removed.
+2.  Enter the date. When you remove history, the in-transit transfers dated on or before the date you specify are removed.
 
-2.  Choose Print to print the Transfer History Purge report.
+3.  Choose Print to print the Transfer History Purge report.
 
-3.  Choose Remove to remove history.
+4.  Choose Remove to remove history.
 
 ### Removing bin transfer history
 
->   Use the Remove Bin Transfer History window to remove historical information
->   for bin transfer transactions.
+>   Use the Remove Bin Transfer History window to remove historical information for bin transfer transactions.
 
 >   **To remove bin transfer history:**
 
 1.  Open the Remove Bin Transfer History window.
 >   (Inventory \>\> Utilities \>\> Remove Bin Transfer History)
 
-1.  Enter the date. When you remove history, the bin transfers dated on or
-    before the date you enter are removed.
+2.  Enter the date. When you remove history, the bin transfers dated on or before the date you enter are removed.
 
-2.  Choose Preview to open the Remove Bin Transfer History Preview window. This
-    provides a view of all the bin transfers that will be removed.
+3.  Choose Preview to open the Remove Bin Transfer History Preview window. This provides a view of all the bin transfers that will be removed.
 
-3.  Choose Remove to remove history.
+4.  Choose Remove to remove history.
 
 Chapter 35: Reconciling inventory records
 -----------------------------------------
 
->   Reconciling is a process that recalculates inventory quantities for a range
->   of item numbers so inventory quantities match posted quantities. You might
->   need to reconcile inventory records if one of the following situations
->   occurs:
+>   Reconciling is a process that recalculates inventory quantities for a range of item numbers so inventory quantities match posted quantities. You might need to reconcile inventory records if one of the following situations occurs:
 
 -   Your data has been damaged.
 
@@ -1537,11 +1386,7 @@ Chapter 35: Reconciling inventory records
 
 -   You’re preparing to use multiple bins.
 
->   You also might need to reconcile inventory quantities if inventory reports
->   show conflicting quantity information, or if you suspect that quantities
->   might not be in balance. However, you shouldn’t have to reconcile inventory
->   quantities unless your data has been damaged, or some other unusual problem
->   has occurred.
+>   You also might need to reconcile inventory quantities if inventory reports show conflicting quantity information, or if you suspect that quantities might not be in balance. However, you shouldn’t have to reconcile inventory quantities unless your data has been damaged, or some other unusual problem has occurred.
 
 >   The following information is discussed:
 
@@ -1551,78 +1396,41 @@ Chapter 35: Reconciling inventory records
 
 ### Effects of reconciling inventory records
 
->   When quantities are reconciled, the quantities recorded for the item will be
->   reset to match purchase receipt and serial number or lot number quantities.
->   Purchase receipts won’t be removed during the reconcile procedures. Item
->   quantities for unposted transactions are included in the reconciliation.
+>   When quantities are reconciled, the quantities recorded for the item will be reset to match purchase receipt and serial number or lot number quantities. Purchase receipts won’t be removed during the reconcile procedures. Item quantities for unposted transactions are included in the reconciliation.
 
 >   The following rules also apply.
 
 >   **Multiple bins**
 
->   If you’re using multiple bins, the quantities in the bins can be adjusted to
->   match the quantity for the site. For example, suppose that the receipt
->   quantity of Item A at the Warehouse is 45, the quantity at the Warehouse
->   site is 50, and the total of the bin quantities for the item-site
->   combination is 51. In this case, the site quantity would be adjusted to 45
->   and the bin quantity would be adjusted by six units.
+>   If you’re using multiple bins, the quantities in the bins can be adjusted to match the quantity for the site. For example, suppose that the receipt quantity of Item A at the Warehouse is 45, the quantity at the Warehouse site is 50, and the total of the bin quantities for the item-site combination is 51. In this case, the site quantity would be adjusted to 45 and the bin quantity would be adjusted by six units.
 
->   However, the allocated quantities for bins are not reconciled to the
->   allocated quantities for the site, but to the allocated quantities in
->   unposted transactions. This is because items can be allocated at the site
->   level before they are allocated at the bin level. Generally, items are
->   allocated at the site level at the instant the allocation occurs, but items
->   are allocated at the bin level when the fulfillment of the allocation
->   occurs.
+>   However, the allocated quantities for bins are not reconciled to the allocated quantities for the site, but to the allocated quantities in unposted transactions. This is because items can be allocated at the site level before they are allocated at the bin level. Generally, items are allocated at the site level at the instant the allocation occurs, but items are allocated at the bin level when the fulfillment of the allocation occurs.
 
->   After you mark the option to enable multiple bins, you should reconcile
->   inventory records. Doing so will create a bin for every item-site quantity
->   that hasn’t already been assigned to a bin. For more information about what
->   happens when you reconcile inventory after marking the options, refer to
->   *Handling existing quantities for multiple bins*.
+>   After you mark the option to enable multiple bins, you should reconcile inventory records. Doing so will create a bin for every item-site quantity that hasn’t already been assigned to a bin. For more information about what happens when you reconcile inventory after marking the options, refer to *Handling existing quantities for multiple bins*.
 
 >   **Serial and lot numbers**
 
->   If serial numbers or lot numbers are missing, new serial numbers or lot
->   numbers will be added during the reconciliation process. If you don’t want
->   to use the numbers that have been added, you can enter decrease transactions
->   to “back out” those changes, and then enter increase transactions for the
->   correct numbers in the Item Transaction Entry window.
+>   If serial numbers or lot numbers are missing, new serial numbers or lot numbers will be added during the reconciliation process. If you don’t want to use the numbers that have been added, you can enter decrease transactions to “back out” those changes, and then enter increase transactions for the correct numbers in the Item Transaction Entry window.
 
 *Refer to Entering an adjustment or variance transaction for more information.*
 
 >   **Purchase order information**
 
-Items entered on drop-ship purchase orders or drop-ship blanket purchase orders
-are reconciled to the Drop-Ship PO quantity in Inventory Control. The on-order
-quantities for items on a drop-ship purchase order or a drop-ship blanket
-purchase order aren’t reconciled. The remaining on-order quantity of released
-and change order purchase order line items and blanket line items are reconciled
-to the on-order quantity for the all-site of an item and each item-site
-combination of an item.
+Items entered on drop-ship purchase orders or drop-ship blanket purchase orders are reconciled to the Drop-Ship PO quantity in Inventory Control. The on-order quantities for items on a drop-ship purchase order or a drop-ship blanket purchase order aren’t reconciled. The remaining on-order quantity of released and change order purchase order line items and blanket line items are reconciled to the on-order quantity for the all-site of an item and each item-site combination of an item.
 
->   Blanket line items are included in the reconcile process. The control line
->   item for blanket purchase orders and drop-ship blanket purchase orders
->   aren’t included.
+>   Blanket line items are included in the reconcile process. The control line item for blanket purchase orders and drop-ship blanket purchase orders aren’t included.
 
-If you’re using Purchase Order Processing, reconcile purchasing information
-using the Reconcile Purchasing Documents window before reconciling inventory
-quantities. It’s important that purchasing documents are correct because
-purchasing information might be altered and will be used when reconciling
-quantities for inventoried items.
+If you’re using Purchase Order Processing, reconcile purchasing information using the Reconcile Purchasing Documents window before reconciling inventory quantities. It’s important that purchasing documents are correct because purchasing information might be altered and will be used when reconciling quantities for inventoried items.
 
 **Sales order information**
 
-If you’re using Sales Order Processing, you also should reconcile that module
-before reconciling inventory.
+If you’re using Sales Order Processing, you also should reconcile that module before reconciling inventory.
 
 ### Reconciling inventory records
 
-You can use the Reconcile Inventory Quantities window to reconcile inventory
-records.
+You can use the Reconcile Inventory Quantities window to reconcile inventory records.
 
-Before reconciling quantities in Inventory Control, back up all your company’s
-accounting data. You should reconcile modules in this order:
+Before reconciling quantities in Inventory Control, back up all your company’s accounting data. You should reconcile modules in this order:
 
 -   Sales Order Processing
 
@@ -1637,28 +1445,19 @@ accounting data. You should reconcile modules in this order:
 
 ![](media/d5301f146698d8bec0f69a8b55618bb8.jpg)
 
-1.  Enter or select the range of item numbers to reconcile.
+2.  Enter or select the range of item numbers to reconcile.
 
-2.  If you’re reconciling inventory because you’ve changed the number of
-    quantity decimals for an item, mark the Include Item History option so the
-    item’s history records also are updated.
+3.  If you’re reconciling inventory because you’ve changed the number of quantity decimals for an item, mark the Include Item History option so the item’s history records also are updated.
 
-3.  Choose Process to reconcile inventory quantities.
+4.  Choose Process to reconcile inventory quantities.
 
->   Actual quantities and the quantities resulting from posted transactions are
->   compared, and adjusted if needed. The Reconcile Report automatically is
->   printed.
+>   Actual quantities and the quantities resulting from posted transactions are compared, and adjusted if needed. The Reconcile Report automatically is printed.
 
 Chapter 36: Inventory Control setup changes
 -------------------------------------------
 
->   When you define each item, you can specify the number of decimal places that
->   should be tracked for the currency and quantity information of the item, and
->   you select the valuation method to be used to track item costs. Once these
->   selections are made, they aren’t often changed. You might need to change
->   them, however, if an error was made during setup. You might want to change
->   the number of decimal places used to track item quantities if an item’s base
->   unit of measure has changed.
+>   When you define each item, you can specify the number of decimal places that should be tracked for the currency and quantity information of the item, and you select the valuation method to be used to track item costs. Once these selections are made, they aren’t often changed. You might need to change them, however, if an error was made during setup. You might want to change
+>   the number of decimal places used to track item quantities if an item’s base unit of measure has changed.
 
 >   The following information is discussed:
 
@@ -1682,13 +1481,9 @@ Chapter 36: Inventory Control setup changes
 
 ### Changing currency or quantity decimal places for items
 
->   Use the Change Decimal Places window to change the number of decimal places
->   used for keeping quantity or currency amounts for items. You might need to
->   complete this procedure if an item was set up improperly, or if you’re
->   changing the units of measurement for an item.
+>   Use the Change Decimal Places window to change the number of decimal places used for keeping quantity or currency amounts for items. You might need to complete this procedure if an item was set up improperly, or if you’re changing the units of measurement for an item.
 
-*If an item is on an unposted transaction, you can’t change its decimal place
-settings.*
+*If an item is on an unposted transaction, you can’t change its decimal place settings.*
 
 >   **To change currency or quantity decimal places for items:**
 
@@ -1697,55 +1492,29 @@ settings.*
 
 ![](media/13f72af1e7c333bb0ec3efb271cfe2ed.jpg)
 
-1.  To change the number of decimal places used to track quantity information,
-    mark Change Quantity Decimal Places and select the number of quantity
-    decimal places.
+2.  To change the number of decimal places used to track quantity information, mark Change Quantity Decimal Places and select the number of quantity decimal places.
 
->   When you mark the Change Quantity Decimal Places window, an alert message
->   appears, warning that changing the number of quantity decimal places will
+>   When you mark the Change Quantity Decimal Places window, an alert message appears, warning that changing the number of quantity decimal places will  clear the unit of measure schedule, the price list, and the purchasing options for the item. If you choose to continue, you can refer to *Handling effects of changing quantity decimals for items* for more information.
 
->   clear the unit of measure schedule, the price list, and the purchasing
->   options for the item. If you choose to continue, you can refer to *Handling
->   effects of changing quantity decimals for items* for more information.
+3.  To change the number of decimal places used to track currency information, mark Change Currency Decimal Places and select the number of currency decimal places.
 
-1.  To change the number of decimal places used to track currency information,
-    mark Change Currency Decimal Places and select the number of currency
-    decimal places.
+>   When you mark the Change Currency Decimal Places window, an alert message appears, warning that changing the number of currency decimal places will mean that prices are rounded or padded with zeros. If you choose to continue, you can refer to *Effects of changing decimal places for currencies for items* for more information.
 
->   When you mark the Change Currency Decimal Places window, an alert message
->   appears, warning that changing the number of currency decimal places will
->   mean that prices are rounded or padded with zeros. If you choose to
->   continue, you can refer to *Effects of changing decimal places for
->   currencies for items* for more information.
+4.  If you’re using Multicurrency Management, specify which currency the change will apply to.
 
-1.  If you’re using Multicurrency Management, specify which currency the change
-    will apply to.
+5.  Enter or select the range of items you want to change. You can select items by specifying a range of item numbers, descriptions, generic descriptions, and class IDs. You can set as many of the ranges as needed. If you enter more than one range restriction, Microsoft Dynamics GP changes the decimal places only for the items that meet all the selected criteria.
 
-2.  Enter or select the range of items you want to change. You can select items
-    by specifying a range of item numbers, descriptions, generic descriptions,
-    and class IDs. You can set as many of the ranges as needed. If you enter
-    more than one range restriction, Microsoft Dynamics GP changes the decimal
-    places only for the items that meet all the selected criteria.
+>   *Changing quantity decimal places changes all instances of that item across all quantities, and the numbers are rounded to the nearest decimal place.*
 
->   *Changing quantity decimal places changes all instances of that item across
->   all quantities, and the numbers are rounded to the nearest decimal place.*
+6.  Verify your changes by choosing File \>\> Print to print the Decimal Places Change Audit List.
 
-1.  Verify your changes by choosing File \>\> Print to print the Decimal Places
-    Change Audit List.
+7.  Choose Process to update item records.
 
-2.  Choose Process to update item records.
-
-3.  Reconcile item quantities. Refer to *Reconciling inventory records* for more
-    information.
+8.  Reconcile item quantities. Refer to *Reconciling inventory records* for more information.
 
 ### Handling effects of changing quantity decimals for items
 
->   If you change quantity decimal places for an item, the unit of measure
->   schedule, price list, and purchasing options for the item are cleared. You
->   might need to create a new unit of measure schedule, if a suitable one
->   doesn’t already exist. For each of the items with changed quantity decimal
->   place settings, you must assign a unit of measure schedule, create a price
->   list, and set purchasing options. Refer to the table for more information.
+>   If you change quantity decimal places for an item, the unit of measure schedule, price list, and purchasing options for the item are cleared. You might need to create a new unit of measure schedule, if a suitable one doesn’t already exist. For each of the items with changed quantity decimal place settings, you must assign a unit of measure schedule, create a price list, and set purchasing options. Refer to the table for more information.
 
 | **To do this ...**                           | **...refer to this section:**             |
 |----------------------------------------------|-------------------------------------------|
@@ -1756,15 +1525,9 @@ settings.*
 
 ### Effects of changing decimal places for currencies for items
 
->   If you change the number of decimal places used to keep currency information
->   for an item, the effect of your change will depend on whether you’re
->   increasing or decreasing the number of decimal places.
+>   If you change the number of decimal places used to keep currency information for an item, the effect of your change will depend on whether you’re increasing or decreasing the number of decimal places.
 
->   **If you’re decreasing the number of decimal places** All receipts are
->   rounded, and all item records, purchase receipts, quantities, vendor
->   information, and kits are updated. Refer to the table for information about
->   how currency amounts are rounded when the number of decimal places is
->   decreased.
+>   **If you’re decreasing the number of decimal places** All receipts are rounded, and all item records, purchase receipts, quantities, vendor information, and kits are updated. Refer to the table for information about how currency amounts are rounded when the number of decimal places is decreased.
 
 | **Original amount** | **Rounded to**     | **Result** |
 |---------------------|--------------------|------------|
@@ -1772,26 +1535,15 @@ settings.*
 | .6045               | Two decimal places | .60        |
 | .6455               | Two decimal places | .65        |
 
->   **If you’re increasing the number of decimal places** Zeros are added for
->   all amounts on the purchase receipts. For example, moving from two to three
->   decimal places would change cost information from \$4.57 to \$4.570.
+>   **If you’re increasing the number of decimal places** Zeros are added for all amounts on the purchase receipts. For example, moving from two to three decimal places would change cost information from \$4.57 to \$4.570.
 
 ### Changing valuation methods
 
->   You also can change the valuation method used for a single item or for a
->   group of items—as long as the item or items aren’t on an unposted
->   transaction. Refer to *Valuation methods* for more information.
+>   You also can change the valuation method used for a single item or for a group of items—as long as the item or items aren’t on an unposted transaction. Refer to *Valuation methods* for more information.
 
->   *You should use the Change Valuation Method window only when you want to
->   correct an item record that was set up with the wrong valuation method. If
->   you want to change valuation methods for other reasons, we recommend that
->   you consult your tax adviser, because changing valuation methods has legal
->   restrictions in some areas.*
+>   *You should use the Change Valuation Method window only when you want to correct an item record that was set up with the wrong valuation method. If you want to change valuation methods for other reasons, we recommend that you consult your tax adviser, because changing valuation methods has legal restrictions in some areas.*
 
->   If you change the valuation method for an item and then generate the
->   historical stock status report, be aware that reports for dates that precede
->   the change might not be accurate because of how costs are calculated for the
->   report.
+>   If you change the valuation method for an item and then generate the historical stock status report, be aware that reports for dates that precede the change might not be accurate because of how costs are calculated for the report.
 
 >   **To change valuation methods:**
 
@@ -1800,28 +1552,21 @@ settings.*
 
 ![](media/6732e2452f42cdd6eec5754f22c1acad.jpg)
 
-1.  Select a new valuation method.
+2.  Select a new valuation method.
 
-2.  Enter or select the range of items you want to change. You can select items
-    by specifying a range of item numbers, descriptions, generic descriptions,
-    and class IDs. You can set as many of the ranges as needed. If you enter
-    more than one range restriction, Microsoft Dynamics GP changes the valuation
-    method only for the items that meet all the selected criteria.
+3.  Enter or select the range of items you want to change. You can select items by specifying a range of item numbers, descriptions, generic descriptions, and class IDs. You can set as many of the ranges as needed. If you enter more than one range restriction, Microsoft Dynamics GP changes the valuation method only for the items that meet all the selected criteria.
 
->   *You can change valuation methods only for those Sales Inventory or
->   Discontinued items that aren’t on an unposted transaction.*
+>   *You can change valuation methods only for those Sales Inventory or Discontinued items that aren’t on an unposted transaction.*
 
-1.  You can choose File \>\> Print to generate the Valuation Method Change Audit
-    report to verify the ranges before processing the changes.
+4.  You can choose File \>\> Print to generate the Valuation Method Change Audit report to verify the ranges before processing the changes.
 
-2.  Choose Process to update the selected item records.
+5.  Choose Process to update the selected item records.
 
 >   The Valuation Methods Change Audit Report is printed for the updated range.
 
 ### Effects of changing valuation methods
 
->   You should be aware of how changing the valuation method for an item will
->   affect the item record. Refer to the table for more information.
+>   You should be aware of how changing the valuation method for an item will affect the item record. Refer to the table for more information.
 
 | **Old method**        | **New method**        | **Effect on item information**                                                                                                                                                                         |
 |-----------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1836,11 +1581,7 @@ settings.*
 
 ### Removing bins
 
->   If you’re using multiple bins, you can use the Remove Bins window to remove
->   bins. You can remove them from the item-site combinations they’re assigned
->   to, or from the sites entirely. You can remove all bins or a range of bins
->   for all sites or for a range of sites. You also can choose to remove bins
->   from all items or from a range of items.
+>   If you’re using multiple bins, you can use the Remove Bins window to remove bins. You can remove them from the item-site combinations they’re assigned to, or from the sites entirely. You can remove all bins or a range of bins for all sites or for a range of sites. You also can choose to remove bins from all items or from a range of items.
 
 >   To be removed, a bin must meet the following requirements:
 
@@ -1848,8 +1589,7 @@ settings.*
 
 -   The item quantities of the bin must be zero.
 
--   The bin cannot be the default bin for a site or for an item-site
-    combination.
+-   The bin cannot be the default bin for a site or for an item-site combination.
 
 >   **To remove bins:**
 
@@ -1858,31 +1598,23 @@ settings.*
 
 ![](media/1a5bd43e7c32bc7711b8cc3bfb82e00a.jpg)
 
-1.  Choose the bins to remove. You can remove all bins or a range of bins.
+2.  Choose the bins to remove. You can remove all bins or a range of bins.
 
-2.  Choose whether to remove the bins entirely, or to remove them (unassign
-    them) from item-site combinations.
+3.  Choose whether to remove the bins entirely, or to remove them (unassign them) from item-site combinations.
 
-3.  Choose the sites to remove bins from.
+4.  Choose the sites to remove bins from.
 
-4.  If you’re removing bins from item-site combinations, choose the items to
-    remove bins from.
+5.  If you’re removing bins from item-site combinations, choose the items to remove bins from.
 
-5.  Choose Process. A progress window will display the progress of the process.
+6.  Choose Process. A progress window will display the progress of the process.
 
-6.  When you’ve finished, close the window.
+7.  When you’ve finished, close the window.
 
 ### Replacing all buyers or planners
 
->   If you’ve assigned buyers or planners to sites or to item-site combinations,
->   then you can use the Replace Resource Planning Buyer/Planner window to
->   change all instances of one buyer with another buyer, or one planner with
->   another.
+>   If you’ve assigned buyers or planners to sites or to item-site combinations, then you can use the Replace Resource Planning Buyer/Planner window to change all instances of one buyer with another buyer, or one planner with another.
 
->   *This procedure affects only the buyer and planner selections made in the
->   Item Resource Planning Maintenance window and the Resource Planning Site
->   Maintenance window. It doesn’t affect any buyer or planner selections that
->   might exist in Purchase Order Processing.*
+>   *This procedure affects only the buyer and planner selections made in the Item Resource Planning Maintenance window and the Resource Planning Site Maintenance window. It doesn’t affect any buyer or planner selections that might exist in Purchase Order Processing.*
 
 >   **To replace all buyers or planners:**
 
@@ -1891,29 +1623,21 @@ settings.*
 
 ![](media/6ffa62336b0b9d45d0adaa939f9e85f2.jpg)
 
-1.  Mark Buyer to change one buyer record for another, or mark Planner if to
-    change one planner record for another.
+2.  Mark Buyer to change one buyer record for another, or mark Planner if to change one planner record for another.
 
-2.  Enter or select the Existing buyer or planner.
+3.  Enter or select the Existing buyer or planner.
 
-3.  Enter or select the New buyer or planner.
+4.  Enter or select the New buyer or planner.
 
-4.  Choose Replace.
+5.  Choose Replace.
 
->   If any records couldn’t be updated, the Replace Resource Buyer/Planner
->   Exception report will be generated. The report will list all records that
->   couldn’t be updated. You can change those using the Item Resource Planning
->   Maintenance window or the Resource Planning Site Maintenance window, or you
->   can repeat the replacement later, when other users are no longer working
->   with the records that need to be changed.
+>   If any records couldn’t be updated, the Replace Resource Buyer/Planner Exception report will be generated. The report will list all records that couldn’t be updated. You can change those using the Item Resource Planning Maintenance window or the Resource Planning Site Maintenance window, or you can repeat the replacement later, when other users are no longer working with the records that need to be changed.
 
-1.  Close the window.
+6.  Close the window.
 
 ### Updating purchase order generator options for several items
 
->   You can use the Purchase Order Item Mass Update window to modify how items
->   are set up for the purchase order generator. For example, you could update a
->   range of items to change their order method or replenishment level.
+>   You can use the Purchase Order Item Mass Update window to modify how items are set up for the purchase order generator. For example, you could update a range of items to change their order method or replenishment level.
 
 >   **To update purchase order generator options for several items:**
 
@@ -1922,44 +1646,25 @@ settings.*
 
 ![](media/310927adcc696800e2295b987ef29276.jpg)
 
-1.  Use the Restrictions fields to choose the items that will be updated. You
-    can use as many restrictions as you like.
+2.  Use the Restrictions fields to choose the items that will be updated. You can use as many restrictions as you like.
 
->   *If items with the Discontinued item type are included in the group of items
->   you choose, those records will be updated even though no purchase orders
->   will be suggested for those items.*
+>   *If items with the Discontinued item type are included in the group of items you choose, those records will be updated even though no purchase orders will be suggested for those items.*
 
-1.  Select a Report Sort Option. After you update the items, a report about the
-    changes will be generated. The sort option determines the order for the
-    information on the report.
+3.  Select a Report Sort Option. After you update the items, a report about the changes will be generated. The sort option determines the order for the information on the report.
 
-2.  Choose the values to update. To select a value, mark the Update checkbox,
-    and then enter the information that should be used for that value.
+4.  Choose the values to update. To select a value, mark the Update checkbox, and then enter the information that should be used for that value.
 
->   For example, you can mark the Update checkbox for the Order Method value,
->   and then select the order method that the items should have when they’re
->   updated.
+>   For example, you can mark the Update checkbox for the Order Method value, and then select the order method that the items should have when they’re updated.
 
->   *Item information won’t be updated if the change would cause the item record
->   to be invalid. Refer to Overview of the purchase order generator and How
->   quantities are calculated for suggested purchase orders.*
+>   *Item information won’t be updated if the change would cause the item record to be invalid. Refer to Overview of the purchase order generator and How quantities are calculated for suggested purchase orders.*
 
-1.  Choose Process. A status window will display information about the records
-    as they’re updated. When the changes are complete, a report destination
-    window appears so you can select how the Purchase Order Generator Item Mass
-    Update report is printed.
+5.  Choose Process. A status window will display information about the records as they’re updated. When the changes are complete, a report destination window appears so you can select how the Purchase Order Generator Item Mass Update report is printed.
 
->   *The report won’t include information for items that have the Not Planned
->   order method, but will include items that have the Discontinued item type.*
+>   *The report won’t include information for items that have the Not Planned order method, but will include items that have the Discontinued item type.*
 
 ### Modifying lot number attributes
 
->   You can use the Edit Lot Number Attributes window to modify the lot
->   attributes of a lot number assigned to an item number. There may be five
->   attributes, including as many as three alphanumeric and two date attributes,
->   that are displayed in the window. Attribute labels are assigned in the Lot
->   Category Setup window for the lot category. You also can modify the
->   manufactured date and expiration date.
+>   You can use the Edit Lot Number Attributes window to modify the lot attributes of a lot number assigned to an item number. There may be five attributes, including as many as three alphanumeric and two date attributes, that are displayed in the window. Attribute labels are assigned in the Lot Category Setup window for the lot category. You also can modify the manufactured date and expiration date.
 
 >   **To modify lot number attributes:**
 
@@ -1968,55 +1673,37 @@ settings.*
 
 ![](media/0cca75ad0e85c4868f5dc679a1d520c3.jpg)
 
-1.  Enter or select an item number for which lot numbers are tracked.
+2.  Enter or select an item number for which lot numbers are tracked.
 
-2.  Enter or select the lot number that you want to modify.
+3.  Enter or select the lot number that you want to modify.
 
-3.  If lot attributes were assigned to the lot number, you can modify the
-    attributes.
+4.  If lot attributes were assigned to the lot number, you can modify the attributes.
 
-4.  You also can enter or modify the expiration date and the manufactured date.
+5.  You also can enter or modify the expiration date and the manufactured date.
 
 >   An icon appears in the Expiration Date field if the lot has already expired.
 
-1.  Choose Process to update the lot attributes.
+6.  Choose Process to update the lot attributes.
 
 Part 6: Routines
 ================
 
->   This part of the documentation includes information about Inventory Control
->   routines. Use these routines to perform regularly scheduled tasks, such as
->   closing a year or fiscal period, or to standardize other regularly scheduled
->   maintenance procedures using the checklists.
+>   This part of the documentation includes information about Inventory Control routines. Use these routines to perform regularly scheduled tasks, such as closing a year or fiscal period, or to standardize other regularly scheduled maintenance procedures using the checklists.
 
 >   The following information is discussed:
 
--   *Chapter 37, “ABC analysis,”* describes how you can perform an ABC analysis
-    on inventoried items, so you can adjust your business practices to more
-    closely monitor those items that are most important to your organization.
+-   *Chapter 37, “ABC analysis,”* describes how you can perform an ABC analysis on inventoried items, so you can adjust your business practices to more closely monitor those items that are most important to your organization.
 
--   *Chapter 38, “Year-end closing,”* includes information about the tasks and
-    procedures you need to complete to close your inventory records for a fiscal
-    period or for a year.
+-   *Chapter 38, “Year-end closing,”* includes information about the tasks and procedures you need to complete to close your inventory records for a fiscal period or for a year.
 
--   *Chapter 39, “Inventory control checklists,”* contains information about
-    using Inventory Control Checklists.
+-   *Chapter 39, “Inventory control checklists,”* contains information about using Inventory Control Checklists.
 
 Chapter 37: ABC analysis
 ------------------------
 
->   ABC analysis is a method of prioritizing items based on parameters that you
->   specify. ABC analysis is based on the Pareto principle, a broad
->   generalization that recognizes “predictable imbalance”—that, for example, 80
->   percent of the value of your inventory might come from 20 percent of the
->   items. With ABC analysis, you can identify which items are most critical to
->   your business, which are somewhat critical and which are least important.
->   Then you can manage those items accordingly.
+>   ABC analysis is a method of prioritizing items based on parameters that you specify. ABC analysis is based on the Pareto principle, a broad generalization that recognizes “predictable imbalance”—that, for example, 80 percent of the value of your inventory might come from 20 percent of the items. With ABC analysis, you can identify which items are most critical to your business, which are somewhat critical and which are least important. Then you can manage those items accordingly.
 
->   Inventory Control includes a wizard you can use to complete ABC analysis of
->   Sales Inventory and Discontinued items. Most of the information you need to
->   use a wizard is built into the windows, but you can refer to this
->   information as needed.
+>   Inventory Control includes a wizard you can use to complete ABC analysis of Sales Inventory and Discontinued items. Most of the information you need to use a wizard is built into the windows, but you can refer to this information as needed.
 
 >   The following information is discussed:
 
@@ -2042,38 +1729,25 @@ Chapter 37: ABC analysis
 
 ### ABC analysis overview
 
->   You can sort items into A, B, and C classifications. “A” items are the most
->   important items in your inventory. They should be tightly controlled, with
->   accurate records. “B” items might be less controlled, with good records, and
->   “C” items might have minimal records with periodic review. If the on-hand
->   quantities and usage of some items is zero or negative, an ABC code doesn't
->   need to be assigned to them.
+>   You can sort items into A, B, and C classifications. “A” items are the most important items in your inventory. They should be tightly controlled, with accurate records. “B” items might be less controlled, with good records, and “C” items might have minimal records with periodic review. If the on-hand quantities and usage of some items is zero or negative, an ABC code doesn't need to be assigned to them.
 
->   ABC analysis helps you group the type of information that the ABC analysis
->   of items will be based on. You can group items using the following options
->   in the ABC Analysis Options window.
+>   ABC analysis helps you group the type of information that the ABC analysis of items will be based on. You can group items using the following options in the ABC Analysis Options window.
 
 -   Usage quantity (the number of units consumed over a period of time)
 
 -   Usage value (usage quantity times unit cost)
 
--   On-hand inventory value (on-hand quantity in the Items Quantity Maintenance
-    window times unit cost)
+-   On-hand inventory value (on-hand quantity in the Items Quantity Maintenance window times unit cost)
 
--   Unit cost (the current cost or standard cost depending on the valuation
-    method of each item)
+-   Unit cost (the current cost or standard cost depending on the valuation method of each item)
 
->   You can base the classifications on historical or projected numbers—or a
->   combination of both. Refer to *Using ABC analysis information* for more
->   information about how you can use ABC classifications.
+>   You can base the classifications on historical or projected numbers—or a combination of both. Refer to *Using ABC analysis information* for more information about how you can use ABC classifications.
 
 ### Requirements for ABC analysis
 
->   Before beginning an ABC analysis, be sure that no one is performing any of
->   these activities:
+>   Before beginning an ABC analysis, be sure that no one is performing any of these activities:
 
--   Using any Inventory Control utility, such as a price list wizard or removing
-    history records
+-   Using any Inventory Control utility, such as a price list wizard or removing history records
 
 -   Completing year-end closing procedures
 
@@ -2081,102 +1755,66 @@ Chapter 37: ABC analysis
 
 ### Performing ABC analysis of inventoried items
 
->   Use the ABC Analysis wizard to analyze your item usage and prioritize items,
->   helping you to manage inventory more effectively. We recommend that you
->   perform this procedure at least once a year.
+>   Use the ABC Analysis wizard to analyze your item usage and prioritize items, helping you to manage inventory more effectively. We recommend that you perform this procedure at least once a year.
 
->   *You might want to use the process server to make the ABC calculations and
->   updates a remote process. Refer to ABC analysis and large inventories for
->   more information.*
+>   *You might want to use the process server to make the ABC calculations and updates a remote process. Refer to ABC analysis and large inventories for more information.*
 
 >   **To perform ABC analysis of inventoried items:**
 
 1.  Open the ABC analysis wizard, then choose Next.
 >   (Inventory \>\> Routines \>\> Item ABC Analysis)
 
-1.  In the ABC Analysis Options window, select the type of information you want
-    the analysis to be based on. Choose Next.
+2.  In the ABC Analysis Options window, select the type of information you want the analysis to be based on. Choose Next.
 
 ![](media/4aa49215b83ee48b3a5faa967614ee0d.jpg)
 
->   *Refer to ABC analysis ranking value calculations for information about how
->   these options affect ABC analysis calculations.*
+>   *Refer to ABC analysis ranking value calculations for information about how these options affect ABC analysis calculations.*
 
-1.  In the ABC System Options window, determine if items with zero on-hand
-    quantities and zero usage should be assigned no ABC code. To have items with
-    negative on-hand and usage quantities treated as if they had zero on-hand
-    quantities, mark the second option.
+3.  In the ABC System Options window, determine if items with zero on-hand quantities and zero usage should be assigned no ABC code. To have items with negative on-hand and usage quantities treated as if they had zero on-hand quantities, mark the second option.
 
->   *Refer to ABC analysis and zero or negative item quantities for more
->   information.*
+>   *Refer to ABC analysis and zero or negative item quantities for more information.*
 
 ![](media/dc9e612576bf5243d5661fa586fe2bbe.jpg)
 
 >   Choose Next.
 
->   **If your analysis is based on on-hand inventory value or unit cost** Skip
->   to step 7. The on-hand inventory value and unit cost methods assume that
->   calculations will be based on historical annual usage for calendar years.
+>   **If your analysis is based on on-hand inventory value or unit cost** Skip to step 7. The on-hand inventory value and unit cost methods assume that calculations will be based on historical annual usage for calendar years.
 
->   **If your ABC analysis is based on usage value or quantity** The ABC
->   Calendar Option window opens. Continue with the next step.
+>   **If your ABC analysis is based on usage value or quantity** The ABC Calendar Option window opens. Continue with the next step.
 
-1.  In the ABC Calendar Options window, select the periods to be used to
-    calculate ABC information. You can choose Fiscal Periods or Calendar Months.
-    Choose Next.
+4.  In the ABC Calendar Options window, select the periods to be used to calculate ABC information. You can choose Fiscal Periods or Calendar Months. Choose Next.
 
 ![](media/54d05bda2ba2ced317a796f8b050f0b2.jpg)
 
-1.  In the ABC Usage Quantity window, select how you want to control the
-    calculation based on usage quantity or usage value. You can choose to use
-    historical or projected numbers, or a combination of both.
+5.  In the ABC Usage Quantity window, select how you want to control the calculation based on usage quantity or usage value. You can choose to use historical or projected numbers, or a combination of both.
 
->   If you select Weighted Average, enter the weighting percentage for
->   historical and projected usage. Choose Next.
+>   If you select Weighted Average, enter the weighting percentage for historical and projected usage. Choose Next.
 
 ![](media/85f4a1272ea87cffcb50d93b82262608.jpg)
 
-1.  In the ABC Breakpoints window, specify if percentages, currency amounts, or
-    quantities will be used to define breakpoints for the analysis. (Options
-    depend on the type of analysis option you selected earlier.)
+6.  In the ABC Breakpoints window, specify if percentages, currency amounts, or quantities will be used to define breakpoints for the analysis. (Options depend on the type of analysis option you selected earlier.)
 
 ![](media/d0e94b1421e0d29602b3a89a0620df1f.jpg)
 
->   A breakpoint is the boundary between two adjacent ABC classifications—for
->   example, if you want A items to be those that reflect 80 percent of
->   inventory value, 80 percent would be the breakpoint. Enter the percentages
->   or amounts for the A and B breakpoints.
+>   A breakpoint is the boundary between two adjacent ABC classifications—for example, if you want A items to be those that reflect 80 percent of inventory value, 80 percent would be the breakpoint. Enter the percentages or amounts for the A and B breakpoints.
 
->   *If you’re using percentages to define breakpoints, be sure to enter the
->   percentage of inventory value. For example, if you want your A items to be
->   those that make up 75 percent of your inventory valuation, you’d enter 75 as
->   the A Breakpoint.*
+>   *If you’re using percentages to define breakpoints, be sure to enter the percentage of inventory value. For example, if you want your A items to be those that make up 75 percent of your inventory valuation, you’d enter 75 as the A Breakpoint.*
 
-1.  Decide if you want to preview the results of the analysis before having item
-    records updated with new ABC codes.
+7.  Decide if you want to preview the results of the analysis before having item records updated with new ABC codes.
 
->   **To preview suggested ABC codes** Refer to *Previewing and adjusting ABC
->   analysis results* for more information.
+>   **To preview suggested ABC codes** Refer to *Previewing and adjusting ABC analysis results* for more information.
 
->   *If you have a large number of item records, opening the Preview window
->   might take some time.*
+>   *If you have a large number of item records, opening the Preview window might take some time.*
 
->   **To finalize item records without previewing** Refer to *Finalizing ABC
->   analysis results* for more information.
+>   **To finalize item records without previewing** Refer to *Finalizing ABC analysis results* for more information.
 
 ### ABC analysis ranking value calculations
 
->   ABC analysis ranks items depending on the options you selected for the
->   analysis.
+>   ABC analysis ranks items depending on the options you selected for the analysis.
 
->   Dependent demand is demand for component items in bills of materials. For
->   example, suppose you assemble Item ABC, which is built with two widgets and
->   a base. If you entered projected demand for item ABC, the system would
->   calculate the dependent demand for the widgets and bases, based on the bill
->   of materials.
+>   Dependent demand is demand for component items in bills of materials. For example, suppose you assemble Item ABC, which is built with two widgets and a base. If you entered projected demand for item ABC, the system would calculate the dependent demand for the widgets and bases, based on the bill of materials.
 
->   *Use the Item History window to enter projections for items. Refer to
->   Entering item projections for more information.*
+>   *Use the Item History window to enter projections for items. Refer to Entering item projections for more information.*
 
 >   Refer to the following table for more information.
 
@@ -2191,108 +1829,73 @@ Chapter 37: ABC analysis
 
 ### ABC analysis and large inventories
 
->   If you have many inventoried items—10,000 or more—calculating ABC analysis
->   information can take several minutes. If you’re using a process server, you
->   might want to consider using it to make the analysis process a remote
->   process—one that will allow you to continue working with your computer while
->   the analysis is being completed.
+>   If you have many inventoried items—10,000 or more—calculating ABC analysis information can take several minutes. If you’re using a process server, you might want to consider using it to make the analysis process a remote process—one that will allow you to continue working with your computer while the analysis is being completed.
 
->   *If you’re using a process server, go to Administration \>\> Setup \>\>
->   System \>\> Process Server, and be sure to mark the option for Inventory:
->   Item ABC Analysis. Refer to the process server documentation for more
->   information about using process server functions.*
+>   *If you’re using a process server, go to Administration \>\> Setup \>\> System \>\> Process Server, and be sure to mark the option for Inventory: Item ABC Analysis. Refer to the process server documentation for more information about using process server functions.*
 
 ### Previewing and adjusting ABC analysis results
 
->   Use the ABC Analysis Preview window to preview analysis results, and to make
->   changes, if needed.
+>   Use the ABC Analysis Preview window to preview analysis results, and to make changes, if needed.
 
->   *If you have a large number of item numbers, opening the Preview window
->   might take several minutes.*
+>   *If you have a large number of item numbers, opening the Preview window might take several minutes.*
 
 >   **To preview and adjust ABC analysis results:**
 
-1.  Complete ABC analysis as described in *Performing ABC analysis of
-    inventoried items*. The ABC Analysis Breakpoints window should be open.
+1.  Complete ABC analysis as described in *Performing ABC analysis of inventoried items*. The ABC Analysis Breakpoints window should be open.
 
 2.  Choose Preview to open the ABC Analysis Preview window.
 
 ![](media/2475643412f60eb791f434a9222e44ff.jpg)
 
-1.  Review information in the scrolling window, making changes as needed.
+3.  Review information in the scrolling window, making changes as needed.
 
->   **To change the ABC code for an item** Select a different classification in
->   the appropriate scrolling window line.
+>   **To change the ABC code for an item** Select a different classification in the appropriate scrolling window line.
 
->   **To remove an item so it isn’t updated** Clear the Include option in the
->   appropriate scrolling window line.
+>   **To remove an item so it isn’t updated** Clear the Include option in the appropriate scrolling window line.
 
-1.  You can choose File \>\> Print to generate the Item ABC Analysis Preview
-    report. The report includes information about the effects of changes.
+4.  You can choose File \>\> Print to generate the Item ABC Analysis Preview report. The report includes information about the effects of changes.
 
-2.  When you’ve finished adjusting the ABC classifications, select a sorting
-    order for the final report.
+5.  When you’ve finished adjusting the ABC classifications, select a sorting order for the final report.
 
-3.  Choose OK to save your changes. You’ll be returned to the ABC Analysis
-    Breakpoints window.
+6.  Choose OK to save your changes. You’ll be returned to the ABC Analysis Breakpoints window.
 
-4.  Refer to *Finalizing ABC analysis results* to update item records with the
-    new ABC codes and to generate the Item ABC Analysis Breakpoints Report.
+7.  Refer to *Finalizing ABC analysis results* to update item records with the new ABC codes and to generate the Item ABC Analysis Breakpoints Report.
 
 ### Finalizing ABC analysis results
 
->   Use the ABC Print Options window when you’re ready to complete your ABC
->   analysis. Finalizing the ABC analysis results updates item records with new
->   ABC codes, and generates the Item ABC Analysis Results Report.
+>   Use the ABC Print Options window when you’re ready to complete your ABC analysis. Finalizing the ABC analysis results updates item records with new ABC codes, and generates the Item ABC Analysis Results Report.
 
 >   **To finalize ABC analysis results:**
 
-1.  Complete ABC analysis as described in *Performing ABC analysis of
-    inventoried items*. The ABC Analysis Breakpoints window should be open.
-    Choose Next.
+1.  Complete ABC analysis as described in *Performing ABC analysis of inventoried items*. The ABC Analysis Breakpoints window should be open. Choose Next.
 
-2.  In the ABC Print Options window, select a sorting order for the Item ABC
-    Analysis Results Report. Choose Next.
+2.  In the ABC Print Options window, select a sorting order for the Item ABC Analysis Results Report. Choose Next.
 
 ![](media/2fc3e322d8eeb2e24bbd9ce8231eb621.jpg)
 
-1.  In the ABC Analysis Summary window, review information about the results of
-    the ABC analysis.
+3.  In the ABC Analysis Summary window, review information about the results of the ABC analysis.
 
 ![](media/9c050363fab746d3f3fec67a2a75e5a6.jpg)
 
-1.  To update item records and generate the Item ABC Analysis Results Report,
-    choose Finish.
+4.  To update item records and generate the Item ABC Analysis Results Report, choose Finish.
 
->   When the analysis is complete, the Item ABC Analysis Results Report is
->   printed. You can use this report view the analysis results and to ensure
->   that items were prioritized correctly.
+>   When the analysis is complete, the Item ABC Analysis Results Report is printed. You can use this report view the analysis results and to ensure that items were prioritized correctly.
 
 *The report can’t be reprinted.*
 
 ### ABC analysis and zero or negative item quantities
 
->   If you have items with zero or negative on-hand quantities and usage, you
->   can use options in the ABC wizard so those items aren’t assigned an ABC
->   code. This can be helpful because you might use ABC codes to establish
->   business practices such as the frequency of cycle counts. If an item has no
->   usage—or negative usage—it might be better to omit it from your cycle-count
->   plans entirely.
+>   If you have items with zero or negative on-hand quantities and usage, you can use options in the ABC wizard so those items aren’t assigned an ABC code. This can be helpful because you might use ABC codes to establish business practices such as the frequency of cycle counts. If an item has no usage—or negative usage—it might be better to omit it from your cycle-count plans entirely.
 
 *Refer to Chapter 18, “Count intervals,” for more information.*
 
->   If you don’t use these options, however, the items with zero or negative
->   on-hand quantities are included in the analysis. This can lead to unexpected
->   results when you preview the analysis results or review the Item ABC
->   Analysis Results Report, because then cumulative percentages are based on
->   rankings for all items—even items with negative usage or on-hand quantities.
+>   If you don’t use these options, however, the items with zero or negative on-hand quantities are included in the analysis. This can lead to unexpected results when you preview the analysis results or review the Item ABC Analysis Results Report, because then cumulative percentages are based on rankings for all items—even items with negative usage or on-hand quantities.
 
 >   To avoid this, mark both options in the ABC System Options window.
 
 ### Modifying an item’s ABC code
 
->   Use the Item Maintenance Options window to verify or modify the ABC code
->   assigned to a specific item.
+>   Use the Item Maintenance Options window to verify or modify the ABC code assigned to a specific item.
 
 >   **To modify an item’s ABC code:**
 
@@ -2300,40 +1903,28 @@ Chapter 37: ABC analysis
 
 >   (Inventory \>\> Cards \>\> Item)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Choose Options to open the Item Maintenance Options window.
+3.  Choose Options to open the Item Maintenance Options window.
 
 ![](media/dec38551e80b0bcf9c81bb395a7b35c4.jpg)
 
-1.  Select an ABC code for the item.
+4.  Select an ABC code for the item.
 
-2.  Choose OK to return to the Item Maintenance window.
+5.  Choose OK to return to the Item Maintenance window.
 
-3.  Choose Save and close the window.
+6.  Choose Save and close the window.
 
 ### Using ABC analysis information
 
->   The value of completing an ABC analysis is more than just the report that’s
->   generated when the results are finalized. You’ll get the most use from
->   completing the analysis if you use the ABC codes in your business practices.
+>   The value of completing an ABC analysis is more than just the report that’s generated when the results are finalized. You’ll get the most use from completing the analysis if you use the ABC codes in your business practices.
 
->   For example, you might want to set up cycle counts to monitor the accuracy
->   of inventory records. You can set up different frequencies for counting
->   different items. You might set up one cycle for counting items every 30
->   days, another for counting items every 60 days, and so on. If you’ve
->   completed the ABC analysis procedure, you can easily assign all “A” items to
->   the 30-day cycle count, and all “B” items to the 60-day cycle count. You
->   might set up a 120-day cycle count for “C” items—or you might not count them
->   at all.
+>   For example, you might want to set up cycle counts to monitor the accuracy of inventory records. You can set up different frequencies for counting different items. You might set up one cycle for counting items every 30 days, another for counting items every 60 days, and so on. If you’ve completed the ABC analysis procedure, you can easily assign all “A” items to the 30-day cycle count, and all “B” items to the 60-day cycle count. You might set up a 120-day cycle count for “C” items—or you might not count them at all.
 
 Chapter 38: Year-end closing
 ----------------------------
 
->   When you close inventory records for a calendar or fiscal year, all
->   Inventory Control records for the current year are moved to history.
->   Year-end procedures also might include other tasks, such as updating
->   standard costs or removing items that are no longer purchased or sold.
+>   When you close inventory records for a calendar or fiscal year, all Inventory Control records for the current year are moved to history. Year-end procedures also might include other tasks, such as updating standard costs or removing items that are no longer purchased or sold.
 
 >   The following information is discussed:
 
@@ -2349,13 +1940,9 @@ Chapter 38: Year-end closing
 
 ### Closing a fiscal period
 
->   Closing fiscal periods prevents transactions from being posted inadvertently
->   to the wrong period or year. Some companies also might complete a physical
->   inventory before closing a period.
+>   Closing fiscal periods prevents transactions from being posted inadvertently to the wrong period or year. Some companies also might complete a physical inventory before closing a period.
 
->   Before closing a fiscal period, be sure you’ve posted all the transactions
->   for the period. To post transactions to a fiscal period you’ve already
->   closed, you must reopen the period before the transaction can be posted.
+>   Before closing a fiscal period, be sure you’ve posted all the transactions for the period. To post transactions to a fiscal period you’ve already closed, you must reopen the period before the transaction can be posted.
 
 >   **To close a fiscal period:**
 
@@ -2365,48 +1952,33 @@ Chapter 38: Year-end closing
 
 ![](media/9775c248000580588e21978103e1652a.jpg)
 
-1.  Mark the option in the Inventory column for each period you want to close.
+2.  Mark the option in the Inventory column for each period you want to close.
 
-2.  Choose OK to save your changes.
+3.  Choose OK to save your changes.
 
 ### Preparing to close a year
 
->   Before you can close the Inventory Control module for the year, you must
->   complete several preliminary tasks.
+>   Before you can close the Inventory Control module for the year, you must complete several preliminary tasks.
 
 >   **To prepare to close a year:**
 
-1.  Enter and post all transactions for Sales Order Processing, Invoicing,
-    Purchase Order Processing, Inventory Control, and Bill of Materials.
+1.  Enter and post all transactions for Sales Order Processing, Invoicing, Purchase Order Processing, Inventory Control, and Bill of Materials.
 
->   You must complete this step to ensure that historical information is
->   accurate and that year-to-date amounts are updated correctly.
+>   You must complete this step to ensure that historical information is accurate and that year-to-date amounts are updated correctly.
 
->   *You can enter transactions for a new year before closing the previous year
->   by entering them in separate batches, however, you should not post these
->   batches until you’ve closed the year. Refer to other module documentation
->   for information about entering and posting transactions in those modules.
->   Refer to Chapter 21, “Transaction entry,” and Chapter 24, “Posting,” for
->   more information about completing these tasks for Inventory Control.*
+>   *You can enter transactions for a new year before closing the previous year by entering them in separate batches, however, you should not post these batches until you’ve closed the year. Refer to other module documentation for information about entering and posting transactions in those modules. Refer to Chapter 21, “Transaction entry,” and Chapter 24, “Posting,” for more information about completing these tasks for Inventory Control.*
 
-1.  If you need to enter future-period transactions before closing a year,
-    create a new batch for those transactions.
+2.  If you need to enter future-period transactions before closing a year, create a new batch for those transactions.
 
-2.  Reconcile inventory quantities. Refer to *Reconciling inventory records*.
+3.  Reconcile inventory quantities. Refer to *Reconciling inventory records*.
 
-3.  Print the Physical Inventory Checklist. Choose Inventory \>\> Reports \>\>
-    Activity to open the Inventory Activity Reports window. Refer to your System
-    User’s Guide (Help \>\> Contents \>\> select Using The System) for more
-    information about printing reports.
+4.  Print the Physical Inventory Checklist. Choose Inventory \>\> Reports \>\> Activity to open the Inventory Activity Reports window. Refer to your System User’s Guide (Help \>\> Contents \>\> select Using The System) for more information about printing reports.
 
-4.  If needed, complete a stock count, then enter and post any adjustments.
-    Refer to *Chapter 23, “Stock count processing,”* for more information.
+5.  If needed, complete a stock count, then enter and post any adjustments. Refer to *Chapter 23, “Stock count processing,”* for more information.
 
-5.  Print the following reports for your permanent records. Refer to the table
-    for information about navigating to the reports.
+6.  Print the following reports for your permanent records. Refer to the table for information about navigating to the reports.
 
->   Refer to your System User’s Guide (Help \>\> Contents \>\> select Using The
->   System) for more information about printing reports.
+>   Refer to your System User’s Guide (Help \>\> Contents \>\> select Using The System) for more information about printing reports.
 
 | **Report**                 | **Path**                                |
 |----------------------------|-----------------------------------------|
@@ -2417,21 +1989,15 @@ Chapter 38: Year-end closing
 | Serial Number List         | Inventory \>\> Reports \>\> Serial/Lots |
 | Lot Number List            | Inventory \>\> Reports \>\> Serial/Lots |
 
-1.  Make a complete backup of your company data, following your company’s backup
-    procedures.
+7.  Make a complete backup of your company data, following your company’s backup procedures.
 
->   Once you’ve completed these preliminary steps, you’re ready to close the
->   year. Refer to *Closing a year*.
+>   Once you’ve completed these preliminary steps, you’re ready to close the year. Refer to *Closing a year*.
 
 ### Closing a year
 
->   Closing a year transfers all summarized current-year quantity, cost, and
->   sales amounts to transaction history for the items that have summarized
->   sales history. When you close a year, you also have the options to remove
->   certain records and update standard costs.
+>   Closing a year transfers all summarized current-year quantity, cost, and sales amounts to transaction history for the items that have summarized sales history. When you close a year, you also have the options to remove certain records and update standard costs.
 
->   *Before continuing, be sure you’ve completed the tasks described in
->   Preparing to close a year.*
+>   *Before continuing, be sure you’ve completed the tasks described in Preparing to close a year.*
 
 >   **To close a year:**
 
@@ -2440,60 +2006,37 @@ Chapter 38: Year-end closing
 
 ![](media/93643a0bc651667e8e6d3f0c5641eb01.jpg)
 
-1.  Choose records to remove. You can remove records for discontinued items,
-    sold lot attributes, and sold receipts and historical cost changes, as
-    needed.
+2.  Choose records to remove. You can remove records for discontinued items, sold lot attributes, and sold receipts and historical cost changes, as needed.
 
->   *Discontinued items aren’t removed if they are assigned to kits, if they are
->   components of bills of materials, or if they have bills of materials of
->   their own. Refer to Removal of discontinued items for more information.*
+>   *Discontinued items aren’t removed if they are assigned to kits, if they are components of bills of materials, or if they have bills of materials of their own. Refer to Removal of discontinued items for more information.*
 
->   Sold lot attributes is the information that you might have kept for items
->   tracked by lot numbers—for example, if you track the expiration dates for
->   items tracked by lots. In this case, deleting the sold lot attributes would
->   remove the information about the expiration dates of the sold items.
+>   Sold lot attributes is the information that you might have kept for items tracked by lot numbers—for example, if you track the expiration dates for items tracked by lots. In this case, deleting the sold lot attributes would remove the information about the expiration dates of the sold items.
 
->   Sold receipts are records of items that have been both received and then
->   sold. Cost change information is saved to history when the standard cost is
->   changed for a LIFO periodic item or a FIFO periodic item, or when the
->   current cost is changed for an average perpetual item.
+>   Sold receipts are records of items that have been both received and then sold. Cost change information is saved to history when the standard cost is changed for a LIFO periodic item or a FIFO periodic item, or when the current cost is changed for an average perpetual item.
 
-1.  To update the standard cost information for items with FIFO Periodic or LIFO
-    Periodic valuation methods, mark Item’s Standard Cost.
+3.  To update the standard cost information for items with FIFO Periodic or LIFO Periodic valuation methods, mark Item’s Standard Cost.
 
->   The updated standard cost of each item automatically is adjusted to the
->   current cost, or the amount you most recently paid for the item.
+>   The updated standard cost of each item automatically is adjusted to the current cost, or the amount you most recently paid for the item.
 
-1.  Choose Process to close the year.
+4.  Choose Process to close the year.
 
->   While the year-end closing is in process, you won’t be able to post
->   transactions or batches, reconcile quantities, change valuation methods, or
->   change decimal places. If you attempt to begin one of these procedures, an
->   alert message will appear, warning you that you must wait until the year-end
->   closing process has been completed.
+>   While the year-end closing is in process, you won’t be able to post transactions or batches, reconcile quantities, change valuation methods, or change decimal places. If you attempt to begin one of these procedures, an alert message will appear, warning you that you must wait until the year-end closing process has been completed.
 
->   *After you’ve closed the year, you can close fiscal periods for inventory,
->   if you like. Refer to Closing a fiscal period.*
+>   *After you’ve closed the year, you can close fiscal periods for inventory, if you like. Refer to Closing a fiscal period.*
 
-1.  After you’ve closed the year, you should make a final backup of your company
-    data.
+5.  After you’ve closed the year, you should make a final backup of your company data.
 
 ### Effects of closing a year
 
 >   Processing that occurs when you close a year will complete these tasks:
 
--   All summarized current-year quantities, costs, and sales information of
-    items you’ve been keeping summarized sales history are transferred to
-    transaction history.
+-   All summarized current-year quantities, costs, and sales information of items you’ve been keeping summarized sales history are transferred to transaction history.
 
--   The Beginning Quantity of each item is updated to be the On Hand quantity at
-    each site. (Some reports—such as the Turnover Report—use the beginning
-    quantity field in calculations.)
+-   The Beginning Quantity of each item is updated to be the On Hand quantity at each site. (Some reports—such as the Turnover Report—use the beginning quantity field in calculations.)
 
 -   The Quantity Sold field for each item is reset to zero.
 
->   The following tasks might be accomplished, depending on the options you
->   select when you begin processing:
+>   The following tasks might be accomplished, depending on the options you select when you begin processing:
 
 -   Purchase receipts of items that have been completely sold are removed.
 
@@ -2501,56 +2044,30 @@ Chapter 38: Year-end closing
 
 -   Discontinued items that have been completely sold are removed.
 
--   Lot attributes of items that are tracked by lot numbers and that have been
-    completely sold are removed.
+-   Lot attributes of items that are tracked by lot numbers and that have been completely sold are removed.
 
--   The standard cost of each item is updated to the current cost for items
-    using FIFO Periodic or LIFO Periodic valuation methods.
+-   The standard cost of each item is updated to the current cost for items using FIFO Periodic or LIFO Periodic valuation methods.
 
 ### Removal of discontinued items
 
->   When you close a year, you have the option to remove discontinued items—that
->   is, items that have the Discontinued item type. If the item is assigned to a
->   kit, is a component of a bill of materials, or has a bill of materials of
->   its own, it won’t be removed.
+>   When you close a year, you have the option to remove discontinued items—that is, items that have the Discontinued item type. If the item is assigned to a kit, is a component of a bill of materials, or has a bill of materials of its own, it won’t be removed.
 
->   **Assigned to a kit** Print the Component Report from the Inventory Item
->   Reports window to see if the item is assigned to a kit. Refer to your System
->   User's Guide (Help \>\> Contents \>\> select Using The System) for more
->   information about printing reports. Refer to *Assigning kit components* for
->   information about removing component items from a kit.
+>   **Assigned to a kit** Print the Component Report from the Inventory Item Reports window to see if the item is assigned to a kit. Refer to your System User's Guide (Help \>\> Contents \>\> select Using The System) for more information about printing reports. Refer to *Assigning kit components* for information about removing component items from a kit.
 
->   **Component of a bill of materials** Print the BM Component Where-Used
+>   **Component of a bill of materials** Print the BM Component Where-Used  Report from the Inventory Setup Reports window to see if the item is a component of a bill of materials. Refer to the Microsoft Dynamics GP Bill of Materials documentation for information about removing a component from a bill of materials.
 
->   Report from the Inventory Setup Reports window to see if the item is a
->   component of a bill of materials. Refer to the Microsoft Dynamics GP Bill of
->   Materials documentation for information about removing a component from a
->   bill of materials.
+>   **Has a bill of materials** Print the BM Bill of Materials Report from the Inventory Setup Reports window to see if the discontinued item has bills of materials of its own. Refer to the Microsoft Dynamics GP Bill of Materials documentation for information about deleting bills of materials.
 
->   **Has a bill of materials** Print the BM Bill of Materials Report from the
->   Inventory Setup Reports window to see if the discontinued item has bills of
->   materials of its own. Refer to the Microsoft Dynamics GP Bill of Materials
->   documentation for information about deleting bills of materials.
-
->   *If the item is a component of a bill of materials or has its own bill of
->   materials, be sure to consider all bills of materials. A single finished
->   item can have multiple bills of materials. Also, an item can be a component
->   of bills of materials for several items.*
+>   *If the item is a component of a bill of materials or has its own bill of materials, be sure to consider all bills of materials. A single finished item can have multiple bills of materials. Also, an item can be a component of bills of materials for several items.*
 
 Chapter 39: Inventory control checklists
 ----------------------------------------
 
->   Use Inventory Control checklists to ensure that your business practices are
->   being consistently completed. When checklists are used, the date and time
->   when a specific task was done are recorded, along with the user ID of the
->   person who completed the task.
+>   Use Inventory Control checklists to ensure that your business practices are being consistently completed. When checklists are used, the date and time when a specific task was done are recorded, along with the user ID of the person who completed the task.
 
->   Inventory Control includes basic checklists, but you can tailor them to the
->   needs of your business. You also can create your own checklists for tasks
->   that are specific to your business.
+>   Inventory Control includes basic checklists, but you can tailor them to the needs of your business. You also can create your own checklists for tasks that are specific to your business.
 
->   *Refer to your System Administrator’s Guide (Help \>\> Contents \>\> select
->   System Administration) for more information about customizing checklists.*
+>   *Refer to your System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about customizing checklists.*
 
 >   The following information is discussed:
 
@@ -2560,16 +2077,11 @@ Chapter 39: Inventory control checklists
 
 ### Standard Inventory Control checklists
 
->   Inventory Control includes a checklist for year-end closing and you also can
->   create your own customized checklists. For example, you could create a
->   user-defined checklist for creating and starting a stock count schedule, and
->   then for entering the results of the stock count and posting variance
->   transactions, if needed.
+>   Inventory Control includes a checklist for year-end closing and you also can create your own customized checklists. For example, you could create a user-defined checklist for creating and starting a stock count schedule, and then for entering the results of the stock count and posting variance transactions, if needed.
 
 ### Using an Inventory Control checklist
 
->   Use the Inventory Checklists window to open specific Inventory Control
->   checklists.
+>   Use the Inventory Checklists window to open specific Inventory Control checklists.
 
 >   **To use an Inventory Control checklist:**
 
@@ -2578,187 +2090,124 @@ Chapter 39: Inventory control checklists
 
 ![](media/d39b0148f63f0b59398dfb0ad2328917.jpg)
 
-1.  Select the Frequency of the routine to use.
+2.  Select the Frequency of the routine to use.
 
-2.  In the Routine scrolling window, highlight the procedure you want to
-    complete.
+3.  In the Routine scrolling window, highlight the procedure you want to complete.
 
-3.  Choose Open to begin performing the selected routine.
+4.  Choose Open to begin performing the selected routine.
 
->   Depending on the routine you’ve selected, choosing Open will open a window
->   or start a macro in the Microsoft Dynamics GP system, or start an external
->   application.
+>   Depending on the routine you’ve selected, choosing Open will open a window or start a macro in the Microsoft Dynamics GP system, or start an external application.
 
 Glossary
 ========
 
 #### ABC analysis
 
->   A review of inventory records that helps you to classify your inventoried
->   items according to their importance to your business.
+>   A review of inventory records that helps you to classify your inventoried items according to their importance to your business.
 
 #### ABC code
 
->   The code assigned to each item—A, B, or C— that denotes the importance of
->   that item in your business. ABC codes can be assigned though use of the ABC
->   Analysis wizard, or on an item-by-item basis. ABC codes should be used to
->   help you determine the amount of monitoring each item requires: you should
->   monitor A items most closely, B items less closely, and C items least
->   closely.
+>   The code assigned to each item—A, B, or C— that denotes the importance of that item in your business. ABC codes can be assigned though use of the ABC Analysis wizard, or on an item-by-item basis. ABC codes should be used to help you determine the amount of monitoring each item requires: you should monitor A items most closely, B items less closely, and C items least closely.
 
 #### Account
 
->   The type of record—asset, liability, revenue, expense, or owner’s
->   equity—traditionally used for recording individual transactions in an
->   accounting system. Also, the identifying alphanumeric characters assigned to
->   the record. *See also Posting account*.
+>   The type of record—asset, liability, revenue, expense, or owner’s equity—traditionally used for recording individual transactions in an accounting system. Also, the identifying alphanumeric characters assigned to the record. *See also Posting account*.
 
 #### Account alias
 
->   A 20-character “short name” for a posting account in the chart of accounts.
->   If the account format has a large number of segments, using aliases can
->   speed data entry.
+>   A 20-character “short name” for a posting account in the chart of accounts. If the account format has a large number of segments, using aliases can speed data entry.
 
 #### Account segment
 
->   A portion of the account format that can be used to represent a specific
->   aspect of a business. For example, accounts can be divided into segments
->   that represent business locations, divisions, or profit centers.
+>   A portion of the account format that can be used to represent a specific aspect of a business. For example, accounts can be divided into segments that represent business locations, divisions, or profit centers.
 
 #### Account segment number
 
->   A number that represents a particular area of a business or an account
->   category. For example, if you have account 01-200-1100, the account segment
->   01 might represent a particular site, 200 might represent a department
->   located at that site, and 1100 might represent the Cash account for that
->   site and that department. You can enter descriptions for each account
->   segment number; these descriptions then appear on General Ledger reports.
+>   A number that represents a particular area of a business or an account category. For example, if you have account 01-200-1100, the account segment 01 might represent a particular site, 200 might represent a department located at that site, and 1100 might represent the Cash account for that site and that department. You can enter descriptions for each account segment number; these descriptions then appear on General Ledger reports.
 
 #### Accounting
 
->   The process of recording, classifying, reporting, and interpreting financial
->   information for a company or a business.
+>   The process of recording, classifying, reporting, and interpreting financial information for a company or a business.
 
 #### Adjusting entry
 
->   Transactions that increase or decrease inventory quantities. For example,
->   variance transactions entered after a physical count are adjusting entries.
+>   Transactions that increase or decrease inventory quantities. For example, variance transactions entered after a physical count are adjusting entries.
 
 #### Alert message
 
->   Text that appears when inappropriate, inadequate, or unclear data or
->   instructions are issued, when data is not accessible, or when a confirmation
->   is sought. You can view additional information about some alert messages and
->   their causes by choosing the Help button in the alert message dialog box.
+>   Text that appears when inappropriate, inadequate, or unclear data or instructions are issued, when data is not accessible, or when a confirmation is sought. You can view additional information about some alert messages and their causes by choosing the Help button in the alert message dialog box.
 
 #### Allocate
 
->   To reserve an item quantity for sale or assembly at the specified site.
->   Allocating an item reduces the quantity available for the item.
+>   To reserve an item quantity for sale or assembly at the specified site. Allocating an item reduces the quantity available for the item.
 
 #### Attribute descriptions
 
->   A one-word characteristic used to further describe an attribute for a
->   lot-numbered item.
+>   A one-word characteristic used to further describe an attribute for a lot-numbered item.
 
 #### Audit trail
 
->   A series of permanent records that can be used to track a transaction to the
->   point where it was originally entered in the accounting system. The audit
->   trail can be used to verify the accuracy of financial statements by outside
->   accountants or auditors.
+>   A series of permanent records that can be used to track a transaction to the point where it was originally entered in the accounting system. The audit trail can be used to verify the accuracy of financial statements by outside accountants or auditors.
 
 #### Audit trail code
 
->   A series of alphanumeric characters providing a precise record of each
->   transaction and where it has been posted within Microsoft Dynamics GP.
+>   A series of alphanumeric characters providing a precise record of each transaction and where it has been posted within Microsoft Dynamics GP.
 
 #### Average cost
 
->   The cost assigned to an item. The average cost is a weighted average that is
->   updated each time an item is received. Average cost is calculated based on
->   the base unit of measure.
+>   The cost assigned to an item. The average cost is a weighted average that is updated each time an item is received. Average cost is calculated based on the base unit of measure.
 
 #### Average perpetual
 
->   An inventory valuation method in which the cost of all items with the same
->   item number is added and then divided by the total number of items with that
->   item number. Items using this valuation method are revalued each time they
->   are entered on an increase adjustment.
+>   An inventory valuation method in which the cost of all items with the same item number is added and then divided by the total number of items with that item number. Items using this valuation method are revalued each time they are entered on an increase adjustment.
 
 #### Back orders
 
->   Orders that are placed without adequate quantities on hand. For example, if
->   five items are ordered and three are on hand, two items can be backordered.
+>   Orders that are placed without adequate quantities on hand. For example, if five items are ordered and three are on hand, two items can be backordered.
 
 #### Background processing
 
->   A processing system that allows users to continue working while transactions
->   are being posted or reports are being printed.
+>   A processing system that allows users to continue working while transactions are being posted or reports are being printed.
 
 #### Backing up
 
->   The process of storing data on a secondary medium, usually on diskettes or
->   magnetic tape, to minimize the difficulty of recovering from data loss.
->   Backups should be performed routinely.
+>   The process of storing data on a secondary medium, usually on diskettes or magnetic tape, to minimize the difficulty of recovering from data loss. Backups should be performed routinely.
 
 #### Base price book
 
->   A price book that is automatically created, called BASEBOOK. Prices are
->   taken from the base price book if a price cannot be located anywhere else in
->   the extended pricing hierarchy.
+>   A price book that is automatically created, called BASEBOOK. Prices are taken from the base price book if a price cannot be located anywhere else in the extended pricing hierarchy.
 
 #### Base unit of measure
 
->   The unit of measure that is common to all units of measure on a unit of
->   measure schedule. The base is the smallest unit of measure in which an item
->   can be sold.
+>   The unit of measure that is common to all units of measure on a unit of measure schedule. The base is the smallest unit of measure in which an item can be sold.
 
 #### Batch
 
->   A group of transactions identified by a unique name or number. Batches are
->   used in computerized accounting to conveniently group transactions, both for
->   identification purposes and to speed up the posting process.
+>   A group of transactions identified by a unique name or number. Batches are used in computerized accounting to conveniently group transactions, both for identification purposes and to speed up the posting process.
 
 #### Batch approval
 
->   Allows users to choose whether to approve batches of transactions before
->   posting. If the batch approval option is being used, the ID of the user who
->   approved the batch and the approval date appear on posting reports.
+>   Allows users to choose whether to approve batches of transactions before posting. If the batch approval option is being used, the ID of the user who approved the batch and the approval date appear on posting reports.
 
 #### Batch controls
 
->   Values for both the number of transactions in a batch and the total currency
->   amount of the batch. As transactions are entered, the actual totals are
->   displayed. These totals can be verified periodically as transactions are
->   entered to ensure that the required number and amount of transactions match
->   the actual number and amount that was entered.
+>   Values for both the number of transactions in a batch and the total currency amount of the batch. As transactions are entered, the actual totals are displayed. These totals can be verified periodically as transactions are entered to ensure that the required number and amount of transactions match the actual number and amount that was entered.
 
 #### Batch frequency
 
->   A selection in the Batch Entry window that determines how often a recurring
->   batch is posted, such as weekly, monthly, or quarterly. *See also Recurring
->   batch*.
+>   A selection in the Batch Entry window that determines how often a recurring batch is posted, such as weekly, monthly, or quarterly. *See also Recurring batch*.
 
 #### Batch posting
 
->   An option used to post a group of transactions identified by a unique name
->   or number in the Batch Entry window. *See also Batch-level posting*.
+>   An option used to post a group of transactions identified by a unique name or number in the Batch Entry window. *See also Batch-level posting*.
 
 #### Batch-level posting
 
->   A posting method that allows transactions to be saved in batches and post
->   the batch whenever convenient. There are three types of batch-level posting:
->   batch posting, series posting, and master posting.
+>   A posting method that allows transactions to be saved in batches and post the batch whenever convenient. There are three types of batch-level posting: batch posting, series posting, and master posting.
 
 #### Bill of materials
 
->   A list of components and subassemblies used to create finished good.
->   Commonly
-
->   referred to as a bill. Entering a bill in the Bill of Materials Maintenance
->   window creates a master record for that bill. The combination of bill status
->   and bill number identifies the bill. *See also Component*.
+>   A list of components and subassemblies used to create finished good. Commonly referred to as a bill. Entering a bill in the Bill of Materials Maintenance window creates a master record for that bill. The combination of bill status and bill number identifies the bill. *See also Component*.
 
 **Bin**
 
@@ -2766,8 +2215,7 @@ Glossary
 
 #### Breakpoints (in ABC analysis)
 
->   The boundaries between ABC classifications. For example, if your A items are
->   80% of the value of your inventory, then 80% is the first breakpoint.
+>   The boundaries between ABC classifications. For example, if your A items are 80% of the value of your inventory, then 80% is the first breakpoint.
 
 #### Calendar year
 
@@ -2775,44 +2223,31 @@ Glossary
 
 #### Calendar year history
 
->   History records maintained in a month-bymonth format that mirrors the
->   calendar year.
+>   History records maintained in a month-bymonth format that mirrors the calendar year.
 
 #### Captured quantity
 
->   The current on-hand quantity of an item at the site when a stock count is
->   started. The captured quantity is later compared to the counted quantity to
->   create a default variance transaction.
+>   The current on-hand quantity of an item at the site when a stock count is started. The captured quantity is later compared to the counted quantity to create a default variance transaction.
 
 #### Category
 
->   User-defined descriptions that identify groups of items. Categories also can
->   be used as a method of sorting inventory reports.
+>   User-defined descriptions that identify groups of items. Categories also can be used as a method of sorting inventory reports.
 
 #### Category value
 
->   The characteristics of a user category that describe the items assigned to
->   that category. For example, the values teal, blue, and green could be
->   assigned to the user category
-
->   “Color.”
+>   The characteristics of a user category that describe the items assigned to that category. For example, the values teal, blue, and green could be assigned to the user category “Color.”
 
 #### Class
 
->   A feature that allows customers, vendors, users, or items to be grouped
->   according to common characteristics. For example, an item class could be
->   created to group items according to style or location.
+>   A feature that allows customers, vendors, users, or items to be grouped according to common characteristics. For example, an item class could be created to group items according to style or location.
 
 #### Comma-delimited fields
 
->   The standard comma-separated ASCII character format used when exporting a
->   report so that database programs, such as dBASE and 4th Dimension can read
->   it.
+>   The standard comma-separated ASCII character format used when exporting a report so that database programs, such as dBASE and 4th Dimension can read it.
 
 #### Component
 
->   Any raw material, ingredient, part, or item used to assemble a subassembly,
->   finished good, or used as part of a kit.
+>   Any raw material, ingredient, part, or item used to assemble a subassembly, finished good, or used as part of a kit.
 
 **Cost**
 
@@ -2820,24 +2255,15 @@ Glossary
 
 #### Currency amount
 
->   A pricing method in which a monetary amount is specified as the item’s
->   price.
+>   A pricing method in which a monetary amount is specified as the item’s price.
 
 #### Current cost
 
->   The current cost is the item’s cost as stated on the most recent invoice if
->   a company uses the LIFO or FIFO valuation method. For companies using the
->   weighted average valuation method, the current cost is the average cost of
->   the entire inventory of this item. In Australia and New Zealand, current
->   cost is known as last/average cost.
+>   The current cost is the item’s cost as stated on the most recent invoice if a company uses the LIFO or FIFO valuation method. For companies using the weighted average valuation method, the current cost is the average cost of the entire inventory of this item. In Australia and New Zealand, current cost is known as last/average cost.
 
 #### Cycle count
 
->   On-going counts of items at a site. A cycle count is based on a defined
->   interval for each item—more frequent counts for fastermoving or more
->   critical components, less frequent counts for slower-moving, less critical
->   items—and usually has inventory personnel counting some items every work
->   day.
+>   On-going counts of items at a site. A cycle count is based on a defined interval for each item—more frequent counts for fastermoving or more critical components, less frequent counts for slower-moving, less critical items—and usually has inventory personnel counting some items every work day.
 
 **Damaged**
 
@@ -2845,8 +2271,7 @@ Glossary
 
 #### Default
 
->   A value that is displayed in a window automatically, and that is used unless
->   a different value is entered.
+>   A value that is displayed in a window automatically, and that is used unless a different value is entered.
 
 #### Detailed report
 
@@ -2854,47 +2279,35 @@ Glossary
 
 #### Discontinued
 
->   An item type assigned to items that can be sold, but not reordered.
->   Quantities and cost information are tracked for discontinued items.
+>   An item type assigned to items that can be sold, but not reordered. Quantities and cost information are tracked for discontinued items.
 
 #### Distribution history
 
->   A historical record of how Inventory Control or Bill of Materials
->   transactions have updated posting accounts.
+>   A historical record of how Inventory Control or Bill of Materials transactions have updated posting accounts.
 
 #### Document number
 
->   A number that identifies a group of entries that have been posted as a
->   single, complete transaction.
+>   A number that identifies a group of entries that have been posted as a single, complete transaction.
 
 #### Document type
 
->   A selection that identifies a document’s purpose and how document amounts
->   are posted. In Inventory Control, the document types include adjustment,
->   variance and transfer transactions.
+>   A selection that identifies a document’s purpose and how document amounts are posted. In Inventory Control, the document types include adjustment, variance and transfer transactions.
 
 #### Double-entry accounting
 
->   An accounting process whereby equal credit and debit amounts are entered for
->   each transaction.
+>   An accounting process whereby equal credit and debit amounts are entered for each transaction.
 
 #### Down day
 
->   A day when no work is done. For example, if you set up a stock count
->   calendar so that all Saturdays and Sundays are down days, then no stock
->   counts would be performed on those days. *See also Up day*.
+>   A day when no work is done. For example, if you set up a stock count calendar so that all Saturdays and Sundays are down days, then no stock counts would be performed on those days. *See also Up day*.
 
 #### Edit list
 
->   A list of transactions in an unposted batch that can be printed to verify
->   the accuracy of transactions before posting. Edit lists can be printed from
->   the Batch Entry window or any transaction entry window, as long as a batch
->   ID has been entered.
+>   A list of transactions in an unposted batch that can be printed to verify the accuracy of transactions before posting. Edit lists can be printed from the Batch Entry window or any transaction entry window, as long as a batch ID has been entered.
 
 #### Equivalency
 
->   The amount of one unit of measure that equals another unit of measure. For
->   example, 24 items equal—or are equivalent to—one case.
+>   The amount of one unit of measure that equals another unit of measure. For example, 24 items equal—or are equivalent to—one case.
 
 **Error message**
 
@@ -2902,24 +2315,15 @@ Glossary
 
 #### FIFO
 
->   An abbreviation for the first in, first out inventory valuation method. With
->   this valuation method, inventory is assumed to move in the order it was
->   received. Using FIFO, inventory may be valued on a periodic or perpetual
->   basis. In Australia and New Zealand, FIFO periodic is known as standard
->   costing, and FIFO perpetual is known as FIFO.
+>   An abbreviation for the first in, first out inventory valuation method. With this valuation method, inventory is assumed to move in the order it was received. Using FIFO, inventory may be valued on a periodic or perpetual basis. In Australia and New Zealand, FIFO periodic is known as standard costing, and FIFO perpetual is known as FIFO.
 
 #### FIFO periodic
 
->   Inventory is assumed to move on a first in, first out basis. Items are sold
->   at one standard cost, based on a selected cost for the period.
-
->   *See also FIFO perpetual*.
+>   Inventory is assumed to move on a first in, first out basis. Items are sold at one standard cost, based on a selected cost for the period. *See also FIFO perpetual*.
 
 #### FIFO perpetual
 
->   Inventory is assumed to move on a first in, first out basis with this
->   valuation method. Items are sold at the cost at which they were actually
->   received into inventory. *See also FIFO periodic*.
+>   Inventory is assumed to move on a first in, first out basis with this valuation method. Items are sold at the cost at which they were actually received into inventory. *See also FIFO periodic*.
 
 **Financial year**
 
@@ -2927,17 +2331,11 @@ Glossary
 
 #### Fiscal periods
 
->   Divisions of the fiscal year, usually monthly, quarterly, or semiannually,
->   when transaction information can be summarized and financial statements are
->   prepared.
+>   Divisions of the fiscal year, usually monthly, quarterly, or semiannually, when transaction information can be summarized and financial statements are prepared.
 
 #### Fiscal year
 
->   An annual accounting cycle of consecutive periods, ordinarily beginning with
->   the first day of a month and ending on the last day of the twelfth month. In
->   Australia and New
-
->   Zealand, this is referred to as a financial year.
+>   An annual accounting cycle of consecutive periods, ordinarily beginning with the first day of a month and ending on the last day of the twelfth month. In Australia and New Zealand, this is referred to as a financial year.
 
 #### Fiscal year history
 
@@ -2945,52 +2343,39 @@ Glossary
 
 #### Flat fee
 
->   An item type assigned to items with current costs but no quantities. For
->   example, the fee for an extended warranty might be assigned a flat fee item
->   type.
+>   An item type assigned to items with current costs but no quantities. For example, the fee for an extended warranty might be assigned a flat fee item type.
 
 #### Functional currency
 
->   The primary currency in which a company maintains its financial records.
->   Typically, the functional currency is the currency for the country or region
->   where the company is located.
+>   The primary currency in which a company maintains its financial records. Typically, the functional currency is the currency for the country or region where the company is located.
 
 #### Group printing
 
->   Creating and printing report options in groups. For example, a report group
->   could be used to print all the financial statements and the Trial Balance
->   before closing a month, quarter, or fiscal year.
+>   Creating and printing report options in groups. For example, a report group could be used to print all the financial statements and the Trial Balance before closing a month, quarter, or fiscal year.
 
 #### HTML file
 
->   A file format that can be viewed using a Web browser. With this file format,
->   you can publish your reports directly to your intranet or Web Site.
+>   A file format that can be viewed using a Web browser. With this file format, you can publish your reports directly to your intranet or Web Site.
 
 #### In service
 
->   Item that is currently being used or repaired by your company’s service
->   department. The item is usually returned to Quantity On Hand when service is
->   complete.
+>   Item that is currently being used or repaired by your company’s service department. The item is usually returned to Quantity On Hand when service is complete.
 
 #### In use
 
->   Item that is being used by your company. The item is not usually returned to
->   Quantity On Hand.
+>   Item that is being used by your company. The item is not usually returned to Quantity On Hand.
 
 #### Inquiry
 
->   A feature that allows users to view currentyear and historical information
->   for saved or posted transactions.
+>   A feature that allows users to view currentyear and historical information for saved or posted transactions.
 
 #### Integrate
 
->   To join two or more accounting modules to form a system in which data is
->   shared among modules. All modules are automatically integrated.
+>   To join two or more accounting modules to form a system in which data is shared among modules. All modules are automatically integrated.
 
 #### In-transit transfer
 
->   Movement of items from one site to another, using a via site to prevent the
->   items from being sold while in-transit to the destination site.
+>   Movement of items from one site to another, using a via site to prevent the items from being sold while in-transit to the destination site.
 
 #### Inventory
 
@@ -2998,37 +2383,27 @@ Glossary
 
 #### Inventory account
 
->   A posting account that is updated when transaction amounts are posted
->   through General Ledger.
+>   A posting account that is updated when transaction amounts are posted through General Ledger.
 
 #### Inventory offset account
 
->   A posting account that is updated when transaction amounts are posted
->   through General Ledger. *See also Offset account*.
+>   A posting account that is updated when transaction amounts are posted through General Ledger. *See also Offset account*.
 
 #### Inventory variance quantity
 
->   The absolute difference between the on-hand quantity for an item-site
->   combination when a stock count was started and the actual count quantity.
+>   The absolute difference between the on-hand quantity for an item-site combination when a stock count was started and the actual count quantity.
 
 #### Item number
 
->   An identifier for one type of inventory item. This identifier is usually a
->   combination of alphanumeric characters. Inventory items can be used in
->   transaction entry only if item numbers have been assigned.
+>   An identifier for one type of inventory item. This identifier is usually a combination of alphanumeric characters. Inventory items can be used in transaction entry only if item numbers have been assigned.
 
 #### Item type
 
->   Describes either a type of item or the status of an item. For example,
->   Services is one item type. Item types include sales inventory, discontinued,
->   miscellaneous charges, kit, services, and flat fee. For specific
->   information, see each item type.
+>   Describes either a type of item or the status of an item. For example, Services is one item type. Item types include sales inventory, discontinued, miscellaneous charges, kit, services, and flat fee. For specific information, see each item type.
 
 #### Kit
 
->   An item type assigned to items that are treated as a single item at the time
->   of sale. Kit quantities are not tracked in Inventory; however, costs and
->   quantities are updated when the kit is sold. *See also Component*.
+>   An item type assigned to items that are treated as a single item at the time of sale. Kit quantities are not tracked in Inventory; however, costs and quantities are updated when the kit is sold. *See also Component*.
 
 **Landed cost group**
 
@@ -3036,8 +2411,7 @@ Glossary
 
 #### Landed costs
 
->   The additional costs that might be associated with purchasing a product,
->   such as freight costs or duties.
+>   The additional costs that might be associated with purchasing a product, such as freight costs or duties.
 
 **Last/average cost**
 
@@ -3045,33 +2419,23 @@ Glossary
 
 #### Leading zeros
 
->   Zeros added to the beginning of a number— such as an item number or document
->   number—to increase the number of characters in the number.
+>   Zeros added to the beginning of a number— such as an item number or document number—to increase the number of characters in the number.
 
 #### LIFO
 
->   An abbreviation for the last in, first out inventory valuation method. With
->   this valuation method, inventory that was received most recently is
->   considered sold first. The LIFO valuation method is not allowed in Australia
->   or New Zealand.
+>   An abbreviation for the last in, first out inventory valuation method. With this valuation method, inventory that was received most recently is considered sold first. The LIFO valuation method is not allowed in Australia or New Zealand.
 
 #### LIFO periodic
 
->   Inventory costs are assumed to move on a last in, first out basis. Items are
->   sold at one standard cost, based on a selected cost for the period. *See
->   also LIFO perpetual*.
+>   Inventory costs are assumed to move on a last in, first out basis. Items are sold at one standard cost, based on a selected cost for the period. *See also LIFO perpetual*.
 
 #### LIFO perpetual
 
->   The last in, first out inventory valuation method. Items are valued at the
->   actual cost at which the most recently purchased item was received into
->   inventory. *See also LIFO periodic*.
+>   The last in, first out inventory valuation method. Items are valued at the actual cost at which the most recently purchased item was received into inventory. *See also LIFO periodic*.
 
 #### Link
 
->   A feature in some windows that allows you to view information as it was
->   originally entered, as well as more detailed information about a particular
->   item or bill.
+>   A feature in some windows that allows you to view information as it was originally entered, as well as more detailed information about a particular item or bill.
 
 **Location**
 
@@ -3079,39 +2443,27 @@ Glossary
 
 #### Lookup window
 
->   A window that displays a list of accounts, customers, jobs, or other items
->   in the system. Lookup windows for a specific field are displayed by choosing
->   the looking glass button next to the field.
+>   A window that displays a list of accounts, customers, jobs, or other items in the system. Lookup windows for a specific field are displayed by choosing the looking glass button next to the field.
 
 #### Lot attributes
 
->   Descriptions assigned to a lot category that can be used to further identify
->   the lotnumbered items assigned to the category. For example, the category
->   “color” could have the attributes teal, blue, and green. *See also Lot
->   category*.
+>   Descriptions assigned to a lot category that can be used to further identify the lotnumbered items assigned to the category. For example, the category “color” could have the attributes teal, blue, and green. *See also Lot category*.
 
 #### Lot category
 
->   Lot-numbered items that are grouped according to a broad characteristic,
->   such as “Carpet.” *See also Lot attributes*.
+>   Lot-numbered items that are grouped according to a broad characteristic, such as “Carpet.” *See also Lot attributes*.
 
 #### Lot number
 
->   An identifier provided by the manufacturer that can be used for tracking a
->   specific set of items (for example, a roll of carpet or a roll of wire).
+>   An identifier provided by the manufacturer that can be used for tracking a specific set of items (for example, a roll of carpet or a roll of wire).
 
 #### Macro
 
->   A series of actions performed within an application that have been recorded
->   for playback at another time. Macros can be used to automate repeated tasks,
->   such as month-end procedures or printing reports.
+>   A series of actions performed within an application that have been recorded for playback at another time. Macros can be used to automate repeated tasks, such as month-end procedures or printing reports.
 
 #### Main segment
 
->   The segment of posting accounts that has been designated as the sorting
->   option for accounts on financial statements. Typically, the main segment is
->   used to indicate whether the account is an asset, liability, owners’ equity,
->   revenue, or expense account.
+>   The segment of posting accounts that has been designated as the sorting option for accounts on financial statements. Typically, the main segment is used to indicate whether the account is an asset, liability, owners’ equity, revenue, or expense account.
 
 **Margin**
 
@@ -3123,8 +2475,7 @@ Glossary
 
 #### Master posting
 
->   A posting process in which marked batches from different series can be
->   posted simultaneously.
+>   A posting process in which marked batches from different series can be posted simultaneously.
 
 #### Minimum shelf life
 
