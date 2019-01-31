@@ -14,131 +14,81 @@ ms.date: 01/30/2019
 ---
 # Dynamics GP General Ledger
 
-You can use General Ledger to enter a chart of accounts and post beginning
-balances. You can set up budgets in Microsoft Dynamics® GP or use Microsoft®
-Excel® to set them up. You can export budgets from Microsoft Dynamics GP to
-Excel, modify them, or distribute worksheets to budget managers for review and
-input, then import the modified budgets back into Microsoft Dynamics GP. If you
-use a predefined chart of accounts, you can quickly print financial statements
-or modify them using Advanced Financial Analysis or Management Reporter for
-Microsoft Dynamics ERP.
+You can use General Ledger to enter a chart of accounts and post beginning balances. You can set up budgets in Microsoft Dynamics® GP or use Microsoft® Excel® to set them up. You can export budgets from Microsoft Dynamics GP to Excel, modify them, or distribute worksheets to budget managers for review and input, then import the modified budgets back into Microsoft Dynamics GP. If you use a predefined chart of accounts, you can quickly print financial statements or modify them using Advanced Financial Analysis or Management Reporter for Microsoft Dynamics ERP.
 
 You also can use General Ledger to complete the following tasks:
 
 -   Enter and post standard or correcting transactions
 
--   Enter unit accounts that capture non-financial data, and fixed or variable
-    allocation accounts that allow you to efficiently distribute amounts among
-    multiple accounts
+-   Enter unit accounts that capture non-financial data, and fixed or variable allocation accounts that allow you to efficiently distribute amounts among multiple accounts
 
--   Set posting options that allow you to post transactions from subsidiary
-    ledgers to General Ledger, where can review and them and make correcting
-    entries, if necessary, or post them through General Ledger in a single step
+-   Set posting options that allow you to post transactions from subsidiary ledgers to General Ledger, where can review and them and make correcting entries, if necessary, or post them through General Ledger in a single step
 
--   Void or delete unposted transactions easily, back out or reverse posted
-    transactions, and post corrected entries—all with a complete, clear audit
-    trail
+-   Void or delete unposted transactions easily, back out or reverse posted transactions, and post corrected entries—all with a complete, clear audit trail
 
--   Bring greater efficiency to recurring transactions by defining quick journal
-    transactions that can be posted repeatedly with minimal changes
+-   Bring greater efficiency to recurring transactions by defining quick journal transactions that can be posted repeatedly with minimal changes
 
--   Filter account views based on access granted for accounts, increasing
-    security and eliminating errors caused when entries are made to
-    inappropriate accounts
+-   Filter account views based on access granted for accounts, increasing security and eliminating errors caused when entries are made to inappropriate accounts
 
-If you’re using Intercompany Processing, you post transactions across companies
-and print consolidated financial statements. For more information, see the
-Intercompany Processing documentation.
+If you’re using Intercompany Processing, you post transactions across companies and print consolidated financial statements. For more information, see the Intercompany Processing documentation.
 
-If you are using Analytical Accounting, you can set up dimension codes and
-account classes that provide greater flexibility in analyzing transaction data.
-For more information, see the Analytical Accounting documentation.
+If you are using Analytical Accounting, you can set up dimension codes and account classes that provide greater flexibility in analyzing transaction data. For more information, see the Analytical Accounting documentation.
 
 >   **What’s in this manual**
 
-This manual is designed to give you an understanding of how to use the features
-of General Ledger, and how it integrates with the Microsoft Dynamics GP system.
+This manual is designed to give you an understanding of how to use the features of General Ledger, and how it integrates with the Microsoft Dynamics GP system.
 
-To make best use of General Ledger, you should be familiar with systemwide
-features described in the System User’s Guide, the System Setup Guide, and the
-System Administrator’s Guide.
+To make best use of General Ledger, you should be familiar with systemwide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
 
->   Some features described in the documentation are optional and can be
->   purchased through your Microsoft partner.
+>   Some features described in the documentation are optional and can be purchased through your Microsoft partner.
 
->   To view information about the release of Microsoft Dynamics GP that you’re
->   using and which modules or features you are registered to use, choose Help
->   \>\> About Microsoft Dynamics GP.
+>   To view information about the release of Microsoft Dynamics GP that you’re using and which modules or features you are registered to use, choose Help \>\> About Microsoft Dynamics GP.
 
 >   The manual is divided into the following parts:
 
--   *Part 1, Setup*, describes how to set up General Ledger so that it meets the
-    needs of your business and works with other modules that you use.
+-   *Part 1, Setup*, describes how to set up General Ledger so that it meets the needs of your business and works with other modules that you use.
 
--   *Part 2, Budgets*, describes how to create a new budget in Microsoft
-    Dynamics GP or in Microsoft Excel.
+-   *Part 2, Budgets*, describes how to create a new budget in Microsoft Dynamics GP or in Microsoft Excel.
 
--   *Part 3, Transactions*, provides procedures for completing General Ledger
-    accounting tasks.
+-   *Part 3, Transactions*, provides procedures for completing General Ledger accounting tasks.
 
--   *Part 4, Inquiries*, shows how to view both current and historical account,
-    budget, and transaction information.
+-   *Part 4, Inquiries*, shows how to view both current and historical account, budget, and transaction information.
 
--   *Part 5, Reports*, describes how to use reports to analyze transaction and
-    account information, and how to display the information on a computer screen
-    or on a printed report, or to save it to a file.
+-   *Part 5, Reports*, describes how to use reports to analyze transaction and account information, and how to display the information on a computer screen or on a printed report, or to save it to a file.
 
--   *Part 6, Utilities and routines*, provides the procedures that you need to
-    maintain your data in General Ledger. Information about creating and
-    modifying checklists for General Ledger routines for the end of a month,
-    quarter, or year also are included.
+-   *Part 6, Utilities and routines*, provides the procedures that you need to maintain your data in General Ledger. Information about creating and modifying checklists for General Ledger routines for the end of a month, quarter, or year also are included.
 
 **Part 1: Setup**
 
->   Use the following information to set up General Ledger. Setup procedures
->   generally need to be completed once, but you can refer to the information at
->   other times for instructions on modifying or viewing existing entries.
+>   Use the following information to set up General Ledger. Setup procedures generally need to be completed once, but you can refer to the information at other times for instructions on modifying or viewing existing entries.
 
 >   The following information is discussed:
 
--   *Chapter 1, “General Ledger setup,”* describes how to use the setup routine
-    to correctly set up General Ledger.
+-   *Chapter 1, “General Ledger setup,”* describes how to use the setup routine to correctly set up General Ledger.
 
--   *Chapter 2, “Understanding accounts,”* describes the types of accounts that
-    make up your chart of accounts.
+-   *Chapter 2, “Understanding accounts,”* describes the types of accounts that make up your chart of accounts.
 
--   *Chapter 3, “Posting accounts,”* describes how to set up posting accounts to
-    track your assets, liabilities, revenue, expenses, and equity.
+-   *Chapter 3, “Posting accounts,”* describes how to set up posting accounts to track your assets, liabilities, revenue, expenses, and equity.
 
--   *Chapter 4, “Unit accounts,”* describes setting up accounts to track
-    nonfinancial quantities.
+-   *Chapter 4, “Unit accounts,”* describes setting up accounts to track nonfinancial quantities.
 
--   *Chapter 5, “Fixed allocation accounts,”* describes setting up accounts to
-    distribute fixed amounts among several accounts.
+-   *Chapter 5, “Fixed allocation accounts,”* describes setting up accounts to distribute fixed amounts among several accounts.
 
--   *Chapter 6, “Variable allocation accounts,”* describes setting up accounts
-    to distribute variable amounts among several accounts.
+-   *Chapter 6, “Variable allocation accounts,”* describes setting up accounts to distribute variable amounts among several accounts.
 
--   *Chapter 7, “Retained earnings accounts,”* describes how to set up retained
-    earnings accounts to use during the year-end closing process.
+-   *Chapter 7, “Retained earnings accounts,”* describes how to set up retained earnings accounts to use during the year-end closing process.
 
--   *Chapter 8, “Chart of accounts,”* contains information about setting up a
-    chart of accounts.
+-   *Chapter 8, “Chart of accounts,”* contains information about setting up a chart of accounts.
 
--   *Chapter 9, “Beginning balances and history,”* describes how to enter
-    beginning balances and history.
+-   *Chapter 9, “Beginning balances and history,”* describes how to enter beginning balances and history.
 
--   *Chapter 10, “Quick journal transactions setup,”* describes how to set up
-    quick journals for time-saving journal entry.
+-   *Chapter 10, “Quick journal transactions setup,”* describes how to set up quick journals for time-saving journal entry.
 
--   *Chapter 11, “Revenue/Expense Deferrals setup,”* provides instructions for
-    setting up Revenue/Expense Deferrals.
+-   *Chapter 11, “Revenue/Expense Deferrals setup,”* provides instructions for setting up Revenue/Expense Deferrals.
 
 **Chapter 1: General Ledger setup**
 
->   One way to set up General Ledger is to follow the setup routine provided. It
->   guides you through the procedures you need to complete, in the order you
->   need to complete them.
+>   One way to set up General Ledger is to follow the setup routine provided. It guides you through the procedures you need to complete, in the order you need to complete them.
 
 >   This information is divided into the following sections:
 
@@ -152,8 +102,7 @@ System Administrator’s Guide.
 
 #### Before you begin setting up General Ledger
 
->   Before setting up General Ledger, be sure you’ve set up all of the following
->   for the company:
+>   Before setting up General Ledger, be sure you’ve set up all of the following for the company:
 
 -   Account format
 
@@ -167,22 +116,13 @@ System Administrator’s Guide.
 
 >   For more information about setting up your system and company, refer to the
 
->   System Setup instructions (Help \>\> Contents \>\> select Setting Up the
->   System).
+>   System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
 #### Setting up default entries and preferences
 
->   Use the General Ledger Setup window to specify the next journal entry
->   number, indicate how account balances will appear in the General Ledger
->   Account Maintenance and Transaction Entry windows, as well as other
->   Microsoft Dynamics GP windows, and select the type of historical information
->   to save. You also can restrict or allow specific actions, such as posting to
->   historical years, deleting saved transactions.
+>   Use the General Ledger Setup window to specify the next journal entry number, indicate how account balances will appear in the General Ledger Account Maintenance and Transaction Entry windows, as well as other Microsoft Dynamics GP windows, and select the type of historical information to save. You also can restrict or allow specific actions, such as posting to historical years, deleting saved transactions.
 
->   The General Ledger Setup window also allows you to enable base, local, and
->   International Financial Reporting Standards (IFRS) ledgers. After this
->   process, users who are entering General Ledger transactions can assign the
->   transactions to these specific reporting ledgers.
+>   The General Ledger Setup window also allows you to enable base, local, and International Financial Reporting Standards (IFRS) ledgers. After this process, users who are entering General Ledger transactions can assign the transactions to these specific reporting ledgers.
 
 >   **To set up default entries and preferences:**
 
@@ -192,138 +132,75 @@ System Administrator’s Guide.
 
 ![](media/591eb60045c794b3d94704814b39f488.jpg)
 
-1.  Enter the next journal entry and budget journal entry numbers. A new journal
-    entry number is assigned each time you save an entry in the Transaction
-    Entry, Clearing Entry or Quick Journal Entry windows. A new budget journal
-    entry is assigned each time you save an entry in the Budget Transaction
-    Entry window.
+2.  Enter the next journal entry and budget journal entry numbers. A new journal entry number is assigned each time you save an entry in the Transaction Entry, Clearing Entry or Quick Journal Entry windows. A new budget journal entry is assigned each time you save an entry in the Budget Transaction Entry window.
 
->   The journal entry and budget journal entry number appears on reports as part
->   of your audit trail. You can use these numbers to trace transactions to
->   their original point of entry.
+>   The journal entry and budget journal entry number appears on reports as part of your audit trail. You can use these numbers to trace transactions to their original point of entry.
 
-1.  Choose whether to display account balances as net change or period balance
-    amounts.
+3.  Choose whether to display account balances as net change or period balance amounts.
 
->   The display method you select will appear throughout Microsoft Dynamics GP.
->   You can change the method in each window where the account balances are
->   displayed. Refer to *Understanding net change and period balance* for more
->   information.
+>   The display method you select will appear throughout Microsoft Dynamics GP. You can change the method in each window where the account balances are displayed. Refer to *Understanding net change and period balance* for more information.
 
-1.  Skip the retained earnings entries.
+4.  Skip the retained earnings entries.
 
->   You need to enter the chart of accounts before specifying a retained
->   earnings account. Later, after you’ve set up posting and fixed allocation
->   accounts, you can refer to *Chapter 7, “Retained earnings accounts,”* for
->   more information about this entry.
+>   You need to enter the chart of accounts before specifying a retained earnings account. Later, after you’ve set up posting and fixed allocation accounts, you can refer to *Chapter 7, “Retained earnings accounts,”* for more information about this entry.
 
-1.  Choose whether to keep account history, transaction history, budget
-    transaction history, or all three.
+5.  Choose whether to keep account history, transaction history, budget transaction history, or all three.
 
->   Account history provides account summary balances only. Transaction history
->   includes all transactions posted to an account. Budget transaction history
->   retains the history of budget adjustments. When budget transactions are
->   posted, they move directly to the history table because there is no open
->   table for these transactions. Thus, you must choose an option here if you
->   want to do inquiries on budget transactions after they have been posted.
+>   Account history provides account summary balances only. Transaction history includes all transactions posted to an account. Budget transaction history retains the history of budget adjustments. When budget transactions are posted, they move directly to the history table because there is no open table for these transactions. Thus, you must choose an option here if you want to do inquiries on budget transactions after they have been posted.
 
->   You can keep history for an unlimited number of years. This information is
->   updated during the year-end closing process when current-year balances
->   become previous-year balances.
+>   You can keep history for an unlimited number of years. This information is updated during the year-end closing process when current-year balances become previous-year balances.
 
->   If you choose to keep history, you can print historical information on
->   financial statements, comparing previous-year amounts to current-year
->   amounts. You also can calculate budgets based on information from a previous
->   year.
+>   If you choose to keep history, you can print historical information on financial statements, comparing previous-year amounts to current-year amounts. You also can calculate budgets based on information from a previous year.
 
-1.  Mark whether to enable users to post to history. If this checkbox is marked,
-    you can post transactions to the most recent history year. For example, you
-    can post audit adjustments after you have closed the year.
+6.  Mark whether to enable users to post to history. If this checkbox is marked, you can post transactions to the most recent history year. For example, you can post audit adjustments after you have closed the year.
 
-2.  Mark the Deletion of Saved Transactions option to enable users to delete
-    transactions that are saved, but not posted. If you unmark this option,
-    saved transactions must be voided instead of deleted.
+7.  Mark the Deletion of Saved Transactions option to enable users to delete transactions that are saved, but not posted. If you unmark this option, saved transactions must be voided instead of deleted.
 
-3.  Mark the Voiding/Correcting of Subsidiary Transactions option to enable
-    saved transactions originating in other modules to be voided or posted
-    transactions originating in other modules to be backed out or backed out and
-    corrected. Voiding saved transactions originating in other modules will not
-    update the transactions in those modules. You must void or delete the
-    originating transactions using the originating modules.
+8.  Mark the Voiding/Correcting of Subsidiary Transactions option to enable saved transactions originating in other modules to be voided or posted transactions originating in other modules to be backed out or backed out and corrected. Voiding saved transactions originating in other modules will not update the transactions in those modules. You must void or delete the originating transactions using the originating modules.
 
-4.  Mark the Back Out of Intercompany Transactions option to enable intercompany
-    transactions to be backed out.
+9.  Mark the Back Out of Intercompany Transactions option to enable intercompany transactions to be backed out.
 
-5.  Mark whether to update the accelerator information.
+10.  Mark whether to update the accelerator information.
 
->   Mark the Update Accelerator Information option if you want to update row and
->   column information on financial statements each time you modify the layout
->   of an existing financial report using Advanced Financial Analysis.
+>   Mark the Update Accelerator Information option if you want to update row and column information on financial statements each time you modify the layout of an existing financial report using Advanced Financial Analysis.
 
->   *If you don’t use account ranges and wildcard characters in your financial
->   statements, you don’t need to mark this option. For more information about
->   financial statements, refer to Chapter 30, “Financial statement reports.”*
+>   *If you don’t use account ranges and wildcard characters in your financial statements, you don’t need to mark this option. For more information about financial statements, refer to Chapter 30, “Financial statement reports.”*
 
-1.  Mark whether to allow reporting ledgers.
+11.  Mark whether to allow reporting ledgers.
 
->   *Allowing reporting ledgers is a permanent selection after you save your
->   changes by clicking OK. You cannot unmark Allow Reporting Ledgers later.*
+>   *Allowing reporting ledgers is a permanent selection after you save your changes by clicking OK. You cannot unmark Allow Reporting Ledgers later.*
 
 >   When you mark this option:
 
--   The reporting ledger types Base, IFRS, and Local become available for the
-    selected account. Later, transactions for this account can be assigned to
-    one of these reporting ledger types. For more information on assigning a
-    transaction to a reporting ledger type, see *Chapter 18, “Standard and
-    reversing transactions.”*
+-   The reporting ledger types Base, IFRS, and Local become available for the selected account. Later, transactions for this account can be assigned to one of these reporting ledger types. For more information on assigning a transaction to a reporting ledger type, see *Chapter 18, “Standard and reversing transactions.”*
 
 -   You can change the description for each reporting ledger type.
 
--   When you mark this option, the Account Balance for Subsidiary Windows list
-    becomes active. This list lets you decide which reporting ledger types are
-    used to calculate account balances that appear in Microsoft Dynamics GP
-    modules other than General Ledger.
+-   When you mark this option, the Account Balance for Subsidiary Windows list becomes active. This list lets you decide which reporting ledger types are used to calculate account balances that appear in Microsoft Dynamics GP modules other than General Ledger.
 
->   If you do not mark this option, all transactions for the selected account
->   are assigned to the Base ledger.
+>   If you do not mark this option, all transactions for the selected account are assigned to the Base ledger.
 
 >   Definitions of the reporting ledger types:
 
--   Base represents the base ledger, where the transactions can be applied for
-    both local and IFRS accounting. All transactions originating sub-ledger
-    modules are applied to the base ledger by default.
+-   Base represents the base ledger, where the transactions can be applied for both local and IFRS accounting. All transactions originating sub-ledger modules are applied to the base ledger by default.
 
--   IFRS represents the IFRS ledger, where the transactions can be applied for
-    IFRS accounting.
+-   IFRS represents the IFRS ledger, where the transactions can be applied for IFRS accounting.
 
--   Local represents the local ledger, where the transactions can be applied for
-    local accounting.
+-   Local represents the local ledger, where the transactions can be applied for local accounting.
 
->   The local and IFRS ledger types allow you to enter similar transactions and
->   assign them to a specific reporting ledger, which can vary because the
->   accounts or amounts might differ on the accounting rules that are applied
->   when determining the accounting transaction.
+>   The local and IFRS ledger types allow you to enter similar transactions and assign them to a specific reporting ledger, which can vary because the accounts or amounts might differ on the accounting rules that are applied when determining the accounting transaction.
 
-1.  In the Account Balance for Subsidiary Windows list, choose the reporting
-    ledger types that you want to use to calculate balances for accounts that
-    appear outside of General Ledger.
+12.  In the Account Balance for Subsidiary Windows list, choose the reporting ledger types that you want to use to calculate balances for accounts that appear outside of General Ledger.
 
->   Review the setup options you’ve entered on the Setup List report. To print
->   the list, choose File \>\> Print or the printer icon button while the
->   General Ledger Setup window is displayed.
+>   Review the setup options you’ve entered on the Setup List report. To print the list, choose File \>\> Print or the printer icon button while the General Ledger Setup window is displayed.
 
 #### Understanding net change and period balance
 
->   You can view the status of your accounts by net change or in a
->   period-by-period format. Some windows display both net change and period
->   balances.
+>   You can view the status of your accounts by net change or in a period-by-period format. Some windows display both net change and period balances.
 
->   If you choose net change, the amount displayed is the difference between
->   each period and the preceding period, whether positive or negative.
+>   If you choose net change, the amount displayed is the difference between each period and the preceding period, whether positive or negative.
 
->   If you choose period balances, the actual balance for each period is
->   displayed. Refer to the table for an example of how the same information is
->   displayed, depending on the display setting you choose.
+>   If you choose period balances, the actual balance for each period is displayed. Refer to the table for an example of how the same information is displayed, depending on the display setting you choose.
 
 | **Period** | **Net change** | **Period balance** |
 |------------|----------------|--------------------|
@@ -332,23 +209,13 @@ System Administrator’s Guide.
 | Period 3   | \$0.00         | \$200.00           |
 | Period 4   | \$50.00        | \$250.00           |
 
->   The display method you choose in the General Ledger Setup window will be
->   used as the default throughout Microsoft Dynamics GP; however, you can
->   change the method in each window where account balances are displayed.
+>   The display method you choose in the General Ledger Setup window will be used as the default throughout Microsoft Dynamics GP; however, you can change the method in each window where account balances are displayed.
 
 #### Setting up transaction matching
 
->   Transaction matching is the process of linking related transaction
->   distributions from different journal entries. For example, you can link
->   period-end adjusting entries to the original transactions, or link a set of
->   transactions associated with a project. You can also create groups of linked
->   transaction distributions. For example, you could create a group of the
->   links for period-end adjustments to aid in the audit process.
+>   Transaction matching is the process of linking related transaction distributions from different journal entries. For example, you can link period-end adjusting entries to the original transactions, or link a set of transactions associated with a project. You can also create groups of linked transaction distributions. For example, you could create a group of the links for period-end adjustments to aid in the audit process.
 
->   Use the Transaction Matching Setup window to set the options you want to use
->   for linking transactions, including whether you want to require the
->   transactions you link to balance, the next number to use for links, and
->   whether you want to enable links to be deleted.
+>   Use the Transaction Matching Setup window to set the options you want to use for linking transactions, including whether you want to require the transactions you link to balance, the next number to use for links, and whether you want to enable links to be deleted.
 
 >   **To set up transaction matching:**
 
@@ -7077,51 +6944,29 @@ ranges that you’ve removed.
 
 ![](media/313b3653a5ee700d049803a3920b8803.jpg)
 
-1.  Indicate whether to remove or print transaction and account histories.
+2.  Indicate whether to remove or print transaction and account histories.
 
->   If you’ve decided to remove transaction history, mark the Remove option. If
->   you mark Print, the Transaction History Report is printed for the range of
->   accounts you’ll specify later in this procedure.
+>   If you’ve decided to remove transaction history, mark the Remove option. If you mark Print, the Transaction History Report is printed for the range of accounts you’ll specify later in this procedure.
 
->   To remove account history, mark the appropriate option and choose to print
->   this information on the Account History Report. The reports you’ve selected
->   will be printed when the procedure is completed.
+>   To remove account history, mark the appropriate option and choose to print this information on the Account History Report. The reports you’ve selected will be printed when the procedure is completed.
 
->   *You can print the Account History Report or Transaction History Report
->   without removing history. To do so, mark only the Print options and choose
->   Process.*
+>   *You can print the Account History Report or Transaction History Report without removing history. To do so, mark only the Print options and choose Process.*
 
-1.  Select a year for which you want to remove history and select a range of
-    information to remove. You will be able to select only a year that contains
-    transactions.
+3.  Select a year for which you want to remove history and select a range of information to remove. You will be able to select only a year that contains transactions.
 
->   You can remove all transactions and account balances from the selected year
->   by marking All. If you don’t want to remove all records, you can remove a
->   range of transactions by period or date. If you’re removing account history,
->   select period range since account history is kept period-by-period.
+>   You can remove all transactions and account balances from the selected year  by marking All. If you don’t want to remove all records, you can remove a range of transactions by period or date. If you’re removing account history, select period range since account history is kept period-by-period.
 
->   If you select to remove both account and transaction history and enter a
->   period or date range, account history for the entire year will be removed.
->   However, transaction history will be removed only for the date range you’ve
->   entered. To remove both account and transaction history for a range of
->   dates, we recommend you complete the procedure for each type of history
->   separately.
+>   If you select to remove both account and transaction history and enter a period or date range, account history for the entire year will be removed. However, transaction history will be removed only for the date range you’ve entered. To remove both account and transaction history for a range of dates, we recommend you complete the procedure for each type of history separately.
 
-1.  Enter a beginning and an ending period, or a beginning and an ending date,
-    if you’ve selected to remove history for a period or date range.
+4.  Enter a beginning and an ending period, or a beginning and an ending date, if you’ve selected to remove history for a period or date range.
 
-2.  Choose Ranges to open the Account Segment Ranges window to enter the account
-    segments for which history will be removed. When you’ve entered the
-    appropriate restrictions in the Restrictions list, choose OK to close the
-    Account Segment Ranges window.
+5.  Choose Ranges to open the Account Segment Ranges window to enter the account segments for which history will be removed. When you’ve entered the appropriate restrictions in the Restrictions list, choose OK to close the Account Segment Ranges window.
 
-3.  Choose Process in the Remove History window to remove history.
+6.  Choose Process in the Remove History window to remove history.
 
 #### Archiving matched transactions
 
-Use the Archive Matched Transactions window to move transaction distribution
-links to history. You can still view the historical links in inquiries and
-reports, but you won’t be able to modify them.
+Use the Archive Matched Transactions window to move transaction distribution links to history. You can still view the historical links in inquiries and reports, but you won’t be able to modify them.
 
 >   **To archive matched transactions:**
 
@@ -7131,18 +6976,15 @@ reports, but you won’t be able to modify them.
 
 ![](media/3b0629e876585bdddccca2b960ad51b9.jpg)
 
-1.  Mark the option to archive links and enter the archive date. Transaction
-    distribution links with a date prior to this date will be moved to history.
+2.  Mark the option to archive links and enter the archive date. Transaction distribution links with a date prior to this date will be moved to history.
 
-2.  Indicate whether you want to move links with a zero balance to history.
+3.  Indicate whether you want to move links with a zero balance to history.
 
-3.  Choose OK.
+4.  Choose OK.
 
 #### Checking links for deferral records
 
-Use the Deferral Check Links window to verify that your transaction distribution
-deferral data is accurate. Checking links examines a set of records and compares
-them to related information.
+Use the Deferral Check Links window to verify that your transaction distribution deferral data is accurate. Checking links examines a set of records and compares them to related information.
 
 >   **To check links for deferral records:**
 
@@ -7152,18 +6994,15 @@ them to related information.
 
 ![](media/f1cedffc055877a4a0bd669756349f66.jpg)
 
-1.  Select each table you want to check links for and choose Insert.
+2.  Select each table you want to check links for and choose Insert.
 
-2.  Choose OK.
+3.  Choose OK.
 
 **Glossary**
 
 #### Account categories
 
->   General Ledger provides account categories that are used for grouping
->   accounts on financial statements. Account categories also can be used as a
->   sorting method for viewing the chart of accounts. Examples of account
->   categories include Cash, Short Term Investments, and Notes Receivable.
+>   General Ledger provides account categories that are used for grouping accounts on financial statements. Account categories also can be used as a sorting method for viewing the chart of accounts. Examples of account categories include Cash, Short Term Investments, and Notes Receivable.
 
 #### Account history
 
@@ -7171,43 +7010,27 @@ them to related information.
 
 #### Account segment
 
->   A portion of the account format that can be used to represent a specific
->   aspect of a business. For example, accounts can be divided into segments
->   that represent business locations, divisions, or profit centers.
+>   A portion of the account format that can be used to represent a specific aspect of a business. For example, accounts can be divided into segments that represent business locations, divisions, or profit centers.
 
 #### Account segment number
 
->   A number that represents a particular area of a business or an account
->   category. Using account 01-200-1100, for example, account segment number 01
->   might represent a particular site, 200 might represent a department located
->   at that site, and 1100 might represent the Cash account for that site and
->   that department. Descriptions can be entered for each account segment number
->   and appear on General Ledger reports.
+>   A number that represents a particular area of a business or an account category. Using account 01-200-1100, for example, account segment number 01 might represent a particular site, 200 might represent a department located at that site, and 1100 might represent the Cash account for that site and that department. Descriptions can be entered for each account segment number and appear on General Ledger reports.
 
 #### Accrual basis accounting
 
->   The reporting of all accounting activity in the period in which it occurs,
->   regardless of whether cash has been paid or received.
+>   The reporting of all accounting activity in the period in which it occurs, regardless of whether cash has been paid or received.
 
 #### Accrued expense 
 
->   An expense that increases from day to day, but is recorded only when cash is
->   paid.
-
->   Salary Expense is an example of an accrued expense, because the amount a
->   company owes increases daily but cash payments commonly are made on a
->   biweekly or monthly basis. *See also Accrued liability*.
+>   An expense that increases from day to day, but is recorded only when cash is paid. Salary Expense is an example of an accrued expense, because the amount a company owes increases daily but cash payments commonly are made on a biweekly or monthly basis. *See also Accrued liability*.
 
 #### Accrued liability
 
->   An accrued expense that remains unpaid at the end of an accounting period.
->   *See also Accrued expense*.
+>   An accrued expense that remains unpaid at the end of an accounting period. *See also Accrued expense*.
 
 #### Accrued revenue
 
->   Revenue received during an accounting period that hasn't been recorded at
->   the end of an accounting period. In such cases, the revenue should be
->   recorded by debiting an asset account and crediting a revenue account.
+>   Revenue received during an accounting period that hasn't been recorded at the end of an accounting period. In such cases, the revenue should be recorded by debiting an asset account and crediting a revenue account.
 
 #### Accumulated depreciation account
 
@@ -7215,71 +7038,45 @@ them to related information.
 
 #### Adjusting entries
 
->   End-of-period journal entries that assign revenues and expenses to the
->   period in which they were earned and incurred. Adjusting entries also can be
->   used to correct errors in recording transactions.
+>   End-of-period journal entries that assign revenues and expenses to the period in which they were earned and incurred. Adjusting entries also can be used to correct errors in recording transactions.## Alert message
 
-#### Alert message
-
->   A message that appears when inappropriate, inadequate, or unclear data or
->   instructions are issued, when data is not accessible, or when a confirmation
->   is sought. Additional information about some alert messages and their causes
->   can be viewed by choosing the Help button in the alert message dialog box.
+>   A message that appears when inappropriate, inadequate, or unclear data or instructions are issued, when data is not accessible, or when a confirmation is sought. Additional information about some alert messages and their causes can be viewed by choosing the Help button in the alert message dialog box.
 
 #### Allocation account
 
->   An account that is used to distribute percentages of a single transaction to
->   several other accounts. For example, an allocation account can be used to
->   distribute rent expense to each of the sites affected by the expense.
+>   An account that is used to distribute percentages of a single transaction to several other accounts. For example, an allocation account can be used to distribute rent expense to each of the sites affected by the expense.
 
 #### Audit trail 
 
->   A series of permanent records used to track a transaction to the point where
->   it was originally entered in the accounting system. The audit trail can be
->   used to verify the accuracy of financial statements by outside accountants
->   or auditors.
+>   A series of permanent records used to track a transaction to the point where it was originally entered in the accounting system. The audit trail can be used to verify the accuracy of financial statements by outside accountants or auditors.
 
 #### Audit trail code
 
->   A series of alphanumeric characters providing a precise record of each
->   transaction and where it has been posted within Microsoft Dynamics GP.
+>   A series of alphanumeric characters providing a precise record of each transaction and where it has been posted within Microsoft Dynamics GP.
 
 #### Background processing
 
->   A processing system that allows users to continue working while transactions
->   are posting or reports are printing.
+>   A processing system that allows users to continue working while transactions are posting or reports are printing.
 
 #### Batch
 
->   A group of transactions identified by a unique name or number. Batches are
->   used in computerized accounting to conveniently group transactions, both for
->   identification purposes and to speed up the posting process.
+>   A group of transactions identified by a unique name or number. Batches are used in computerized accounting to conveniently group transactions, both for identification purposes and to speed up the posting process.
 
 #### Batch controls
 
->   Values for both the number of transactions in a batch and the total currency
->   amount of the batch. As transactions are entered, the actual totals are
->   displayed. These totals can be verified periodically as transactions are
->   entered to ensure the required number and amount of transactions match the
->   actual number and amount that was entered.
+>   Values for both the number of transactions in a batch and the total currency amount of the batch. As transactions are entered, the actual totals are displayed. These totals can be verified periodically as transactions are entered to ensure the required number and amount of transactions match the actual number and amount that was entered.
 
 #### Batch frequency
 
->   A selection in the Batch Entry window that determines how often a recurring
->   batch will be posted, such as weekly, monthly, or quarterly. *See also
->   Recurring batch*.
+>   A selection in the Batch Entry window that determines how often a recurring batch will be posted, such as weekly, monthly, or quarterly. *See also Recurring batch*.
 
 #### Batch posting
 
->   A posting method that allows transactions to be saved in batches and post
->   the batch whenever convenient. There are three types of batch-level posting:
->   batch posting, series posting, and master posting.
+>   A posting method that allows transactions to be saved in batches and post the batch whenever convenient. There are three types of batch-level posting: batch posting, series posting, and master posting.
 
 #### Breakdown accounts
 
->   Accounts whose balances are used to determine the percentages that will be
->   posted to the distribution accounts assigned to a variable allocation
->   account.
+>   Accounts whose balances are used to determine the percentages that will be posted to the distribution accounts assigned to a variable allocation account.
 
 #### Chart of accounts
 
@@ -7287,62 +7084,39 @@ them to related information.
 
 #### Chart of accounts reports
 
->   A General Ledger report type from which report options can be created for an
->   Accounts List, Posting Accounts List, Unit
-
->   Accounts List, Fixed Allocation Accounts List, Variable Allocation Accounts
->   List, and Category List.
+>   A General Ledger report type from which report options can be created for an Accounts List, Posting Accounts List, Unit Accounts List, Fixed Allocation Accounts List, Variable Allocation Accounts List, and Category List.
 
 #### Clearing transaction
 
->   Transaction used to transfer the balance of an account to another account
->   without deleting the account. Clearing transactions are also useful when
->   accounts are obsolete, but can’t be deleted because they have current-year
->   activity that should appear on the financial statements.
+>   Transaction used to transfer the balance of an account to another account without deleting the account. Clearing transactions are also useful when accounts are obsolete, but can’t be deleted because they have current-year activity that should appear on the financial statements.
 
 #### Closing entries
 
->   Entries made to close and clear temporary accounts, such as an Income
->   Summary account. The effect of a closing entry is a net increase or a net
->   decrease to the Retained Earnings account.
+>   Entries made to close and clear temporary accounts, such as an Income Summary account. The effect of a closing entry is a net increase or a net decrease to the Retained Earnings account.
 
 #### Comma-delimited fields
 
->   A standard ASCII, or character, file format used when exporting a report so
->   that it can be read by programs that use this format.
+>   A standard ASCII, or character, file format used when exporting a report so that it can be read by programs that use this format.
 
 #### Cross-reference reports
 
->   A General Ledger report type from which report options can be created for
->   cross reference reports by source document, audit trail code, or journal
->   entry number. The cross-reference reports are used to trace the audit trail
->   of a company's transaction activity.
+>   A General Ledger report type from which report options can be created for cross reference reports by source document, audit trail code, or journal entry number. The cross-reference reports are used to trace the audit trail of a company's transaction activity.
 
 #### Currency symbol
 
->   The symbol that has been selected to designate currency amounts on reports.
->   Most information about how currency amounts are displayed can be specified
->   in the operating system documentation.
+>   The symbol that has been selected to designate currency amounts on reports. Most information about how currency amounts are displayed can be specified in the operating system documentation.
 
 #### Default value
 
->   A value that is displayed in a window automatically, and that will be used
->   unless a different value is entered.
-
-**G L O S S A R Y**
+>   A value that is displayed in a window automatically, and that will be used unless a different value is entered.
 
 #### Deferral
 
->   Delaying the recognition of revenue or expense. Usually, deferred revenue or
->   expense is recognized at specific intervals over a period of time. For
->   example, a customer may make a single payment for a yearly service contract,
->   and a portion of the revenue is recognized each month.
+>   Delaying the recognition of revenue or expense. Usually, deferred revenue or expense is recognized at specific intervals over a period of time. For example, a customer may make a single payment for a yearly service contract, and a portion of the revenue is recognized each month.
 
 #### Department
 
->   A business division that incurs costs and/or generates revenue. In General
->   Ledger, an account segment can be used to identify a department or division
->   of a business.
+>   A business division that incurs costs and/or generates revenue. In General Ledger, an account segment can be used to identify a department or division of a business.
 
 #### Detailed report
 
@@ -7354,26 +7128,19 @@ them to related information.
 
 #### Distribution accounts
 
->   Accounts assigned to a fixed or variable allocation account that will
->   receive a percentage of transaction amounts when the journal entry is
->   posted.
+>   Accounts assigned to a fixed or variable allocation account that will receive a percentage of transaction amounts when the journal entry is posted.
 
 #### Divisional retained earnings accounts
 
->   Two or more accounts among which the net income or net loss amount has been
->   divided.
+>   Two or more accounts among which the net income or net loss amount has been divided.
 
 #### Double-entry accounting
 
->   An accounting process whereby equal credit and debit amounts are entered for
->   each transaction.
+>   An accounting process whereby equal credit and debit amounts are entered for each transaction.
 
 #### Edit list
 
->   A list of transactions in an unposted batch that can be printed to verify
->   the accuracy of transactions before posting. Edit lists can be printed from
->   the Batch Entry window or any transaction entry window as long as a batch ID
->   has been entered.
+>   A list of transactions in an unposted batch that can be printed to verify the accuracy of transactions before posting. Edit lists can be printed from the Batch Entry window or any transaction entry window as long as a batch ID has been entered.
 
 **Error message**
 
@@ -7381,15 +7148,11 @@ them to related information.
 
 #### Financial series
 
->   A group of Microsoft Dynamics GP modules including General Ledger with
->   Advanced Financial Analysis and other modules in which transaction
->   information from other modules is collected and maintained.
+>   A group of Microsoft Dynamics GP modules including General Ledger with Advanced Financial Analysis and other modules in which transaction information from other modules is collected and maintained.
 
 #### Financial statements
 
->   In General Ledger, a term that refers collectively to the Balance Sheet,
->   Profit and Loss Statement, Statement of Cash Flows, and Statement of
->   Retained Earnings.
+>   In General Ledger, a term that refers collectively to the Balance Sheet, Profit and Loss Statement, Statement of Cash Flows, and Statement of Retained Earnings.
 
 **Financial year**
 
@@ -7397,189 +7160,129 @@ them to related information.
 
 #### Financing section
 
->   The section of a Statement of Cash Flows that includes transaction amounts
->   for obtaining resources for owners and providing them with a return on their
->   investments, along with obtaining resources from creditors and repaying the
->   amounts borrowed.
+>   The section of a Statement of Cash Flows that includes transaction amounts for obtaining resources for owners and providing them with a return on their investments, along with obtaining resources from creditors and repaying the amounts borrowed.
 
 #### Fiscal period
 
->   Division of the fiscal year, usually monthly, quarterly, or semiannually,
->   when transaction information is summarized and financial statements are
->   prepared.
+>   Division of the fiscal year, usually monthly, quarterly, or semiannually, when transaction information is summarized and financial statements are prepared.
 
 #### Fiscal year
 
->   An accounting cycle composed of up to 54 consecutive periods, spanning the
->   number of days in a year. The fiscal year may also be referred to as a
->   *financial year*.
+>   An accounting cycle composed of up to 54 consecutive periods, spanning the number of days in a year. The fiscal year may also be referred to as a *financial year*.
 
 #### Fixed allocation account
 
->   Accounts used to distribute specified percentages of a single transaction
->   among several distribution accounts.
+>   Accounts used to distribute specified percentages of a single transaction among several distribution accounts.
 
 #### Fixed allocation retained earnings account
 
->   Accounts used to distribute specified percentages of retained earnings among
->   several distribution accounts.
+>   Accounts used to distribute specified percentages of retained earnings among several distribution accounts.
 
 #### Group printing
 
->   Creating and printing report options in groups. For example, a report group
->   could be used to print all the financial statements and the Trial Balance
->   before closing a month, quarter, or fiscal year.
+>   Creating and printing report options in groups. For example, a report group could be used to print all the financial statements and the Trial Balance before closing a month, quarter, or fiscal year.
 
 #### HTML file
 
->   A file format that allows you to place financial information on your
->   company’s intranet or web site.
+>   A file format that allows you to place financial information on your company’s intranet or web site.
 
 #### Inquiry
 
->   A feature that allows users to view information for open and historical
->   years.
+>   A feature that allows users to view information for open and historical years.
 
 #### Investing section
 
->   The section of a Statement of Cash Flows that includes amounts for
->   transactions involving lending money and collecting on the loans, acquiring
->   and selling investments, and acquiring and selling property and equipment.
+>   The section of a Statement of Cash Flows that includes amounts for transactions involving lending money and collecting on the loans, acquiring and selling investments, and acquiring and selling property and equipment.
 
 #### Journal entry
 
->   A transaction recorded in a formalized manner by entering an account and
->   debit and credit amounts.
+>   A transaction recorded in a formalized manner by entering an account and debit and credit amounts.
 
 #### Lookup window
 
->   A window that displays a list of accounts, customers, jobs, or other items
->   in the Microsoft Dynamics GP system. Lookup windows for a specific field are
->   displayed by choosing the lookup button next to the field.
+>   A window that displays a list of accounts, customers, jobs, or other items in the Microsoft Dynamics GP system. Lookup windows for a specific field are displayed by choosing the lookup button next to the field.
 
 #### Macro
 
->   A series of actions performed within an application that have been recorded
->   for playback at another time. Macros can be used to automate repeated tasks,
->   such as month-end procedures or printing reports.
+>   A series of actions performed within an application that have been recorded for playback at another time. Macros can be used to automate repeated tasks, such as month-end procedures or printing reports.
 
 #### Main segment
 
->   The segment of posting accounts that has been designated as the sorting
->   option for accounts on financial statements. Typically, the main segment is
->   used to indicate whether the account is an asset, liability, owners’ equity,
->   revenue, or expense account.
+>   The segment of posting accounts that has been designated as the sorting option for accounts on financial statements. Typically, the main segment is used to indicate whether the account is an asset, liability, owners’ equity, revenue, or expense account.
 
 #### Mass modify
 
->   A process in which ranges of accounts are copied, moved, deleted, or
->   inactivated.
+>   A process in which ranges of accounts are copied, moved, deleted, or inactivated.
 
 #### Master posting
 
->   A posting process in which marked batches from different series can be
->   posted simultaneously.
+>   A posting process in which marked batches from different series can be posted simultaneously.
 
 #### Module
 
->   A group of Microsoft Dynamics GP applications that can be used to perform a
->   specific set of tasks. Modules are combined to form a *series*. For example,
->   the General Ledger with Advanced Financial Analysis is a member of the
->   Financial series. *See also Series*.
+>   A group of Microsoft Dynamics GP applications that can be used to perform a specific set of tasks. Modules are combined to form a *series*. For example, the General Ledger with Advanced Financial Analysis is a member of the Financial series. *See also Series*.
 
 #### Net income/loss source
 
->   The Profit and Loss Statement used to calculate the net income/loss on
->   another financial statement.
+>   The Profit and Loss Statement used to calculate the net income/loss on another financial statement.
 
 #### Offset account
 
->   In double-entry accounting, the second account used to balance a
->   transaction, making debits equal credits.
+>   In double-entry accounting, the second account used to balance a transaction, making debits equal credits.
 
 #### Operating section
 
->   The section of a Statement of Cash Flows that includes transaction amounts
->   for acquiring, selling, and delivering goods for sale, along with providing
->   services.
+>   The section of a Statement of Cash Flows that includes transaction amounts for acquiring, selling, and delivering goods for sale, along with providing services.
 
 #### Origin
 
->   A transaction window within a specific Microsoft Dynamics GP module. Certain
->   options, such as verifying batch controls and closing fiscal periods, can be
->   selected for each transaction origin. Also, the transaction origin will
->   appear as part of the audit trail code on all posting reports in Microsoft
->   Dynamics GP.
+>   A transaction window within a specific Microsoft Dynamics GP module. Certain options, such as verifying batch controls and closing fiscal periods, can be selected for each transaction origin. Also, the transaction origin will appear as part of the audit trail code on all posting reports in Microsoft Dynamics GP.
 
 #### Password
 
->   A combination of distinct, user-defined characters used to gain access to
->   the Microsoft Dynamics GP system or to a selected application within
->   Microsoft Dynamics GP.
+>   A combination of distinct, user-defined characters used to gain access to the Microsoft Dynamics GP system or to a selected application within Microsoft Dynamics GP.
 
 #### Period consolidation
 
->   A procedure that will total transaction detail into a single summary amount
->   to be carried forward to the next period. This procedure is optional, and
->   can be used if detailed information is no longer needed for a specific
->   period.
+>   A procedure that will total transaction detail into a single summary amount to be carried forward to the next period. This procedure is optional, and can be used if detailed information is no longer needed for a specific period.
 
 #### Posting
 
->   A procedure to make temporary transactions a part of a business’s permanent
->   records; to update accounts by transaction amounts. In manual accounting,
->   posting transfers journal entries to the proper accounts in a general
->   ledger.
+>   A procedure to make temporary transactions a part of a business’s permanent records; to update accounts by transaction amounts. In manual accounting, posting transfers journal entries to the proper accounts in a general ledger.
 
 #### Posting account
 
->   A financial account that tracks assets, liabilities, revenue, or expenses.
->   These accounts will appear on the financial statements and other reports
->   created in the financial series.
+>   A financial account that tracks assets, liabilities, revenue, or expenses. These accounts will appear on the financial statements and other reports created in the financial series.
 
 #### Posting journal
 
->   A report printed following the posting process that shows the detail for
->   each transaction that has been posted. Posting journals also include the
->   audit trail code, which is a precise record of where each transaction has
->   been posted within Microsoft Dynamics GP.
+>   A report printed following the posting process that shows the detail for each transaction that has been posted. Posting journals also include the audit trail code, which is a precise record of where each transaction has been posted within Microsoft Dynamics GP.
 
 #### Prior period adjustment
 
->   An adjustment for an error that was not discovered during the fiscal period
->   in which it occurred.
+>   An adjustment for an error that was not discovered during the fiscal period in which it occurred.
 
->   Prior period adjustments should be reported as an adjustment to the retained
->   earnings balance at the beginning of the period in which the correction was
->   made.
+>   Prior period adjustments should be reported as an adjustment to the retained earnings balance at the beginning of the period in which the correction was made.
 
 #### Profit and loss account
 
->   Revenue or expense accounts whose balances – which determine the net income
->   or net loss for the year – will be transferred to a retained earnings
->   account at the end of a fiscal year.
+>   Revenue or expense accounts whose balances – which determine the net income or net loss for the year – will be transferred to a retained earnings account at the end of a fiscal year.
 
 #### Profit and Loss Statement
 
->   A financial statement showing revenue earned by a business, the expenses
->   incurred in earning that revenue, and the resulting net income or net loss.
+>   A financial statement showing revenue earned by a business, the expenses incurred in earning that revenue, and the resulting net income or net loss.
 
 #### Quick financial setup
 
->   A method of creating financial statement layouts. Once the layouts have been
->   created, they can be used to create report options.
+>   A method of creating financial statement layouts. Once the layouts have been created, they can be used to create report options.
 
 #### Quick journal
 
->   A General Ledger journal that can be used to speed data entry for routinely
->   recorded transactions. All the accounts typically used in a particular quick
->   journal are selected when the quick journal is set up; as a result, only
->   amounts must be entered when transactions are recorded.
+>   A General Ledger journal that can be used to speed data entry for routinely recorded transactions. All the accounts typically used in a particular quick journal are selected when the quick journal is set up; as a result, only amounts must be entered when transactions are recorded.
 
 #### Ratio
 
->   The quotient when one amount is divided by another, such as when the balance
->   in a column is divided by the balance of a unit account.
+>   The quotient when one amount is divided by another, such as when the balance in a column is divided by the balance of a unit account.
 
 **Real-time posting**
 
@@ -7587,61 +7290,39 @@ them to related information.
 
 #### Reconciling
 
->   A procedure used to recalculate account totals in the Chart of Accounts so
->   they'll match transaction amounts that have been posted.
+>   A procedure used to recalculate account totals in the Chart of Accounts so they'll match transaction amounts that have been posted.
 
 #### Record
 
->   A collection of related fields within a table. Records typically comprise
->   most or all of the data entered in the fields in a given window. For
->   instance, all the information entered about a specific account in the
->   Account Maintenance window makes up a single record. A single transaction
->   entered in the Transaction Entry window also constitutes a record.
+>   A collection of related fields within a table. Records typically comprise most or all of the data entered in the fields in a given window. For instance, all the information entered about a specific account in the Account Maintenance window makes up a single record. A single transaction entered in the Transaction Entry window also constitutes a record.
 
 #### Recurring batch
 
->   A batch that will be posted repeatedly, according to the selected frequency.
->   An example of a recurring batch would be one to record monthly rent expense.
-
->   In Australia and New Zealand, transactions entered in a recurring batch are
->   referred to as *standing transactions*.
+>   A batch that will be posted repeatedly, according to the selected frequency. An example of a recurring batch would be one to record monthly rent expense.  In Australia and New Zealand, transactions entered in a recurring batch are referred to as *standing transactions*.
 
 #### Removing history
 
->   A procedure used to erase ranges of account or transaction history. Removing
->   history will remove ranges of history that are no longer useful, making
->   additional hard disk space available.
+>   A procedure used to erase ranges of account or transaction history. Removing history will remove ranges of history that are no longer useful, making additional hard disk space available.
 
 #### Report option
 
->   A collection of entries that specify the amount of information or the type
->   of information that will appear on a report.
-
->   Multiple report options can be created.
+>   A collection of entries that specify the amount of information or the type of information that will appear on a report. Multiple report options can be created.
 
 #### Retained earnings
 
->   The balance of the owners’ equity that is being retained in the business or
->   corporation.
+>   The balance of the owners’ equity that is being retained in the business or corporation.
 
 #### Retained earnings account(s)
 
->   Account(s) to which the balances of currentyear profit and loss accounts
->   will be transferred during the year-end closing.
+>   Account(s) to which the balances of currentyear profit and loss accounts will be transferred during the year-end closing.
 
 #### Reversing entry
 
->   A transaction that reverses the debit and credit entries of a previously
->   posted adjusting entry. Reversing entries also can be used to correct an
->   erroneous transaction that already has been posted.
-
->   **G L O S S A R Y**
+>   A transaction that reverses the debit and credit entries of a previously posted adjusting entry. Reversing entries also can be used to correct an erroneous transaction that already has been posted.
 
 #### Sample data
 
->   Data that can be used to practice Microsoft Dynamics GP procedures by
->   entering the information listed in the online lessons. Sample data can be
->   accessed using the lesson company.
+>   Data that can be used to practice Microsoft Dynamics GP procedures by entering the information listed in the online lessons. Sample data can be accessed using the lesson company.
 
 **Segment number**
 
@@ -7649,102 +7330,67 @@ them to related information.
 
 #### Series
 
->   A group of Microsoft Dynamics GP modules that form an interrelated set of
->   applications. The Financial series, for example, contains
-
->   General Ledger, Advanced Financial Analysis, and other modules that collect
->   and analyze transaction information from other modules.
+>   A group of Microsoft Dynamics GP modules that form an interrelated set of applications. The Financial series, for example, contains  General Ledger, Advanced Financial Analysis, and other modules that collect and analyze transaction information from other modules.
 
 #### Series posting
 
->   A posting process in which marked batches from the same series can be posted
->   simultaneously.
+>   A posting process in which marked batches from the same series can be posted simultaneously.
 
 #### Setup reports
 
->   A General Ledger report type that can be used to create report options for
->   an Account Category List, Account Segment List, Setup List, and Quick
->   Journal Setup List. The information on these reports is entered when the
->   General Ledger module is set up initially.
+>   A General Ledger report type that can be used to create report options for an Account Category List, Account Segment List, Setup List, and Quick Journal Setup List. The information on these reports is entered when the General Ledger module is set up initially.
 
 #### Setup routine
 
->   A series of procedures that can be used to open the windows where options
->   and defaults for a specific module are modified or set up.
+>   A series of procedures that can be used to open the windows where options and defaults for a specific module are modified or set up.
 
 #### Single-use batch
 
->   A batch that is created, posted once and then deleted from the system
->   automatically.
+>   A batch that is created, posted once and then deleted from the system automatically.
 
 #### Sorting
 
->   A method of arranging data based on the order of specified information. For
->   example, records sorted by class would list all records within a class
->   before moving to records in the next class.
+>   A method of arranging data based on the order of specified information. For example, records sorted by class would list all records within a class before moving to records in the next class.
 
 #### Sorting segment
 
->   Segments of posting accounts that can be used for Microsoft Dynamics GP
->   reports. Sixteen sorting segments can be used: seven are predefined and the
->   remaining nine can be selected by the user.
+>   Segments of posting accounts that can be used for Microsoft Dynamics GP reports. Sixteen sorting segments can be used: seven are predefined and the remaining nine can be selected by the user.
 
 #### Source document code
 
->   A code that identifies the type of journal or entry that can be examined for
->   more information about a specific transaction. For example, the source
->   document code, GJ, could be used for general journal entries, while BBAL
->   could be used for beginning balance entries.
+>   A code that identifies the type of journal or entry that can be examined for more information about a specific transaction. For example, the source document code, GJ, could be used for general journal entries, while BBAL could be used for beginning balance entries.
 
 #### Standing transactions
 
 >   *See Recurring batch*.
 
-**G L O S S A R Y**
-
 #### Statement of Cash Flows
 
->   A financial statement that provides information about the cash receipts and
->   cash payments of a business over a specified period of time. The system uses
->   the indirect method for calculating and printing the Statement of Cash
->   Flows. This method indirectly reports the amount of net cash flow from
->   operating activities by reconciling net income to net cash flow.
+>   A financial statement that provides information about the cash receipts and cash payments of a business over a specified period of time. The system uses the indirect method for calculating and printing the Statement of Cash Flows. This method indirectly reports the amount of net cash flow from operating activities by reconciling net income to net cash flow.
 
 #### Statement of Retained Earnings
 
->   A financial statement that provides an analysis of retained earnings,
->   including net income, declared dividends, and the ending balance of the
->   retained earnings account for the period being reported.
+>   A financial statement that provides an analysis of retained earnings, including net income, declared dividends, and the ending balance of the retained earnings account for the period being reported.
 
 #### Subsidiary ledger
 
->   A group of accounts other than General Ledger accounts that show the details
->   underlying the balance of a controlling account in the General Ledger.
->   Examples of subsidiary ledgers are customer accounts and vendor accounts.
+>   A group of accounts other than General Ledger accounts that show the details underlying the balance of a controlling account in the General Ledger. Examples of subsidiary ledgers are customer accounts and vendor accounts.
 
 #### Summarized report
 
->   A report where the amounts from an account range or category are printed in
->   a single line.
-
->   *See also Detailed report*.
+>   A report where the amounts from an account range or category are printed in a single line.*See also Detailed report*.
 
 #### Tab-delimited fields
 
->   A tab-separated ASCII character file format used when exporting a report so
->   that it can be read by programs that use this format.
+>   A tab-separated ASCII character file format used when exporting a report so that it can be read by programs that use this format.
 
 #### Text-only format
 
->   A file format that saves reports as text without formatting. This format is
->   used when exporting reports to applications that are unable to read other
->   formats available in Microsoft Dynamics GP.
+>   A file format that saves reports as text without formatting. This format is used when exporting reports to applications that are unable to read other formats available in Microsoft Dynamics GP.
 
 #### Transaction
 
->   An event or condition that is recorded in asset, liability, expense,
->   revenue, and/or equity accounts. Sales to customers or purchases from
->   vendors are examples of transactions.
+>   An event or condition that is recorded in asset, liability, expense, revenue, and/or equity accounts. Sales to customers or purchases from vendors are examples of transactions.
 
 **Transaction history**
 
@@ -7752,51 +7398,32 @@ them to related information.
 
 #### Transaction matching
 
->   The process of linking related transaction distributions from different
->   journal entries. For example, you can link period-end adjusting entries to
->   the original transactions, or link a set of transactions associated with a
->   project.
+>   The process of linking related transaction distributions from different journal entries. For example, you can link period-end adjusting entries to the original transactions, or link a set of transactions associated with a project.
 
 #### Transaction-level posting
 
->   A posting method in which transactions can be entered and posted without
->   having to create a batch. Also known as *real-time posting*. *See also Batch
->   posting*.
+>   A posting method in which transactions can be entered and posted without having to create a batch. Also known as *real-time posting*. *See also Batch posting*.
 
 #### Trial balance reports
 
->   A General Ledger report type from which report options for a detailed trial
->   balance, summary trial balance, or trial balance worksheet can be created.
->   Trial balances are used to illustrate that debits equal credits for a range
->   of accounts.
+>   A General Ledger report type from which report options for a detailed trial balance, summary trial balance, or trial balance worksheet can be created. Trial balances are used to illustrate that debits equal credits for a range of accounts.
 
 #### Typical balance
 
->   The type of balance, either debit or credit, that an account has under
->   ordinary circumstances. Asset and expense accounts normally have debit
->   balances, while liability, revenue, and equity accounts normally have credit
->   balances.
+>   The type of balance, either debit or credit, that an account has under ordinary circumstances. Asset and expense accounts normally have debit balances, while liability, revenue, and equity accounts normally have credit balances.
 
 #### Unit account
 
->   An account that tracks statistical or nonfinancial quantities, such as the
->   number of customers with past-due balances or the number of invoices
->   generated over a specific time period.
+>   An account that tracks statistical or nonfinancial quantities, such as the number of customers with past-due balances or the number of invoices generated over a specific time period.
 
 #### Variable allocation account
 
->   An account used to distribute fluctuating percentages of a single
->   transaction to several different accounts.
+>   An account used to distribute fluctuating percentages of a single transaction to several different accounts.
 
 #### Variance
 
->   The difference between two amounts, such as balances in two columns, when
->   one is subtracted from the other. A common variance compares budgeted
->   amounts to actual balances.
+>   The difference between two amounts, such as balances in two columns, when one is subtracted from the other. A common variance compares budgeted amounts to actual balances.
 
 #### Year-end closing
 
->   A process used to calculate retained earnings for the year, transfer all
->   current-year information for each account in the chart of accounts to
->   account and transaction history and to prepare the accounting system for a
->   new fiscal year.
+>   A process used to calculate retained earnings for the year, transfer all current-year information for each account in the chart of accounts to account and transaction history and to prepare the accounting system for a new fiscal year.
