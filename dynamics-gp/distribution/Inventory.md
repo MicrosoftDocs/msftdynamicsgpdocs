@@ -3050,46 +3050,29 @@ Entering purchasing options for an item
 Entering a manufacturer’s item numbers
 --------------------------------------
 
->   Use the Manufacturer’s Item Number Maintenance window to enter item numbers
->   that manufacturers use for sales inventory or discontinued items. You also
->   can select a manufacturer’s item number for an item that you purchase most
->   often to be printed on purchase orders. For example, assume that a vendor
->   obtains the same interchangeable item from several manufacturers, but you
->   want to purchase items made by a specific manufacturer. By entering a
->   manufacturer’s item number for the item and selecting it as the primary
->   number, the manufacturer’s item number you specified will be printed on the
->   purchase order. You can add or remove manufacturer’s item numbers while
->   entering a purchase order.
+>   Use the Manufacturer’s Item Number Maintenance window to enter item numbers that manufacturers use for sales inventory or discontinued items. You also can select a manufacturer’s item number for an item that you purchase most often to be printed on purchase orders. For example, assume that a vendor obtains the same interchangeable item from several manufacturers, but you want to purchase items made by a specific manufacturer. By entering a manufacturer’s item number for the item and selecting it as the primary number, the manufacturer’s item number you specified will be printed on the purchase order. You can add or remove manufacturer’s item numbers while entering a purchase order.
 
 >   **To enter a manufacturer’s item numbers:**
 
 1.  Open the Item Purchasing Options Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Item Purchasing Options)
 
-1.  Enter or select an sales inventory or discontinued item and choose the
-    Manufacturer’s Item Number expansion button.
+2.  Enter or select an sales inventory or discontinued item and choose the Manufacturer’s Item Number expansion button.
 
 ![](media/9b331c7e7859343abb6336ed58cf0dfc.jpg)
 
-1.  Enter the name of the manufacturer, the manufacturer’s item number, and a
-    description of the item.
+3.  Enter the name of the manufacturer, the manufacturer’s item number, and a description of the item.
 
-2.  Mark the Primary option if this is manufacturer’s item that you purchase
-    most often.
+4.  Mark the Primary option if this is manufacturer’s item that you purchase most often.
 
-3.  Choose OK to save your changes and return to the Item Purchasing Options
-    Maintenance window.
+5.  Choose OK to save your changes and return to the Item Purchasing Options Maintenance window.
 
 Assigning vendors to an item
 ----------------------------
 
->   The vendor information should be available in the lookup window, as long as
->   you’ve set up Payables Management. Then, all you need to do is select the
->   vendor information that goes with each item.
+>   The vendor information should be available in the lookup window, as long as you’ve set up Payables Management. Then, all you need to do is select the vendor information that goes with each item.
 
->   If you’re using Purchasing Order Processing, several fields automatically
->   will be updated when you post receipt transactions:
+>   If you’re using Purchasing Order Processing, several fields automatically will be updated when you post receipt transactions:
 
 -   Last Invoice Cost
 
@@ -3108,81 +3091,52 @@ Assigning vendors to an item
 >   **To assign vendors to items:**
 
 1.  Open the Item Vendors Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Vendors)
 
 ![](media/ee450ac66f11970c09ca0263cace5b32.jpg)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Enter or select a vendor ID.
+3.  Enter or select a vendor ID.
 
-3.  If you plan to reorder this item using Purchase Order Processing, enter the
-    vendor’s item number and description in the Vendor Item and Description
-    fields.
+4.  If you plan to reorder this item using Purchase Order Processing, enter the vendor’s item number and description in the Vendor Item and Description fields.
 
-4.  Decide whether the default unit of measure for purchasing this item should
-    be determined by the item or by the vendor.
+5.  Decide whether the default unit of measure for purchasing this item should be determined by the item or by the vendor.
 
->   For example, if the default purchasing unit of measure you selected in the
->   Item Purchasing Options Maintenance window is Case but you purchase the item
->   from this vendor only in Units, you’d mark the From Vendor option, and then
->   enter or select the unit of measure used to purchase the item from this
->   vendor.
+>   For example, if the default purchasing unit of measure you selected in the Item Purchasing Options Maintenance window is Case but you purchase the item from this vendor only in Units, you’d mark the From Vendor option, and then enter or select the unit of measure used to purchase the item from this vendor.
 
-1.  To track how long it takes to receive this item from the vendor, enter the
-    average lead time. If you’re using Purchase Order Processing, this field is
-    calculated automatically.
+6.  To track how long it takes to receive this item from the vendor, enter the average lead time. If you’re using Purchase Order Processing, this field is calculated automatically.
 
-2.  Enter any other vendor information you want to update.
+7.  Enter any other vendor information you want to update.
 
-3.  You can choose File \>\> Print to generate the Detailed Item List to verify
-    your entries. Choose Save.
+8.  You can choose File \>\> Print to generate the Detailed Item List to verify your entries. Choose Save.
 
-4.  If you want to assign other vendors to the item, repeat steps 3 through 8
-    for each vendor. If you want to assign vendors to another item, choose
-    Clear, and then repeat steps 2 through 8.
+9.  If you want to assign other vendors to the item, repeat steps 3 through 8 for each vendor. If you want to assign vendors to another item, choose Clear, and then repeat steps 2 through 8.
 
-5.  When you’ve finished, close the window.
+10.  When you’ve finished, close the window.
 
 Removing a vendor assignment from an item
 -----------------------------------------
 
->   You also can use the Item Vendors Maintenance window to remove a vendor’s
->   assignment to an item. You might want to do this if a vendor no longer
->   carries a certain item.
+>   You also can use the Item Vendors Maintenance window to remove a vendor’s assignment to an item. You might want to do this if a vendor no longer carries a certain item.
 
 >   **To remove a vendor assignment from an item:**
 
 1.  Open the Item Vendors Maintenance window.
+>   (Inventory \>\> Cards \>\> Item \>\> select an item \>\> Go To button \>\> Vendors) 2. Enter or select a vendor.
 
->   (Inventory \>\> Cards \>\> Item \>\> select an item \>\> Go To button \>\>
->   Vendors) 2. Enter or select a vendor.
+>   *If you mark the Assigned Vendor Lookup option, the browse buttons and the lookup button on the Vendor ID field will display only those vendors already assigned to the item.*
 
->   *If you mark the Assigned Vendor Lookup option, the browse buttons and the
->   lookup button on the Vendor ID field will display only those vendors already
->   assigned to the item.*
-
->   Choose Delete. An alert message appears, asking if you’re sure you want to
->   delete the record. Choose Yes.
+>   Choose Delete. An alert message appears, asking if you’re sure you want to delete the record. Choose Yes.
 
 Cost variance tolerances
 ------------------------
 
->   If you mark Revalue Inventory for Cost Variance for an item record in the
->   Item Purchasing Options Maintenance window, you can enter a Tolerance
->   Percentage. The Tolerance Percentage defines the upper and lower limits for
->   cost variance without causing the purchase receipt to be revalued.
+>   If you mark Revalue Inventory for Cost Variance for an item record in the Item Purchasing Options Maintenance window, you can enter a Tolerance Percentage. The Tolerance Percentage defines the upper and lower limits for cost variance without causing the purchase receipt to be revalued.
 
->   For example, suppose you’ve marked Revalue Inventory for Cost Variance for
->   an item, and that you’ve entered 10 percent for the tolerance. You have a
->   shipment receipt for three items at \$10 per unit.
+>   For example, suppose you’ve marked Revalue Inventory for Cost Variance for an item, and that you’ve entered 10 percent for the tolerance. You have a shipment receipt for three items at \$10 per unit.
 
->   Later you receive an invoice for the items that shows that the per-unit cost
->   of the items has changed. If the percentage difference between the cost on
->   the shipment receipt and on the invoice is equal to or greater than the
->   tolerance percentage, then the purchase receipt will be revalued. Refer to
->   the table for specific examples.
+>   Later you receive an invoice for the items that shows that the per-unit cost of the items has changed. If the percentage difference between the cost on the shipment receipt and on the invoice is equal to or greater than the tolerance percentage, then the purchase receipt will be revalued. Refer to the table for specific examples.
 
 | **Shipment cost** | **Tolerance** | **Invoice cost** | **Purchase receipt revalued?** |
 |-------------------|---------------|------------------|--------------------------------|
@@ -3193,52 +3147,34 @@ Cost variance tolerances
 How purchase receipts are updated for cost variances
 ----------------------------------------------------
 
->   When an invoice transaction is matched to a shipment transaction and posted,
->   you might want the purchase receipt to be revalued to account for cost
->   variances.
+>   When an invoice transaction is matched to a shipment transaction and posted, you might want the purchase receipt to be revalued to account for cost variances.
 
->   For example, suppose that you’ve received an invoice from a vendor. You
->   verify the invoice amounts against the purchase order and any receivings
->   documents. If the vendor invoice is acceptable, you enter information for
->   the invoice and all its line items, matching each line item to one or more
->   shipment receipts. When all the information is entered and verified, you
->   post the invoice.
+>   For example, suppose that you’ve received an invoice from a vendor. You verify the invoice amounts against the purchase order and any receivings documents. If the vendor invoice is acceptable, you enter information for the invoice and all its line items, matching each line item to one or more shipment receipts. When all the information is entered and verified, you post the invoice.
 
->   What happens when you post the invoice depends on the item type and
->   valuation method, whether the option to revalue the item has been marked,
->   and, if not, whether the cost variance is greater than or less than the cost
->   variance tolerance for the item. Refer to the table for information about
->   when items with the Sales Inventory or Discontinued item type and a
->   perpetual valuation method are revalued.
+>   What happens when you post the invoice depends on the item type and valuation method, whether the option to revalue the item has been marked, and, if not, whether the cost variance is greater than or less than the cost variance tolerance for the item. Refer to the table for information about when items with the Sales Inventory or Discontinued item type and a perpetual valuation method are revalued.
 
 |                                                                               | **Option to revalue is marked**                                                              | **Option to revalue is not marked**   |
 |-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|---------------------------------------|
 | **Cost difference is less than the cost tolerance percentage**                | The purchase receipt is not revalued.                                                        | The purchase receipt is not revalued. |
 | **Cost difference is equal to or greater than the cost tolerance percentage** | The purchase receipt will be revalued and the line item’s inventory account will be updated. |                                       |
 
->   If the item has a periodic valuation method, the purchase receipt always is
->   revalued.
+>   If the item has a periodic valuation method, the purchase receipt always is revalued.
 
->   Refer to *Example: Effects of cost variances on accounts* for an example of
->   how this would be reflected in accounts.
+>   Refer to *Example: Effects of cost variances on accounts* for an example of how this would be reflected in accounts.
 
 Example: Effects of cost variances on accounts
 ----------------------------------------------
 
->   Suppose you’ve posted the following shipment receipt when you received two
->   units of an item at \$2 per unit:
+>   Suppose you’ve posted the following shipment receipt when you received two units of an item at \$2 per unit:
 
 | **Account**       | **Debit amount** | **Credit amount** |
 |-------------------|------------------|-------------------|
 | Inventory         | \$4.00           |                   |
 | Accrued Purchases |                  | \$4.00            |
 
->   Then the invoice arrives, showing a cost of \$2.10 for each of the two
->   items. You match the invoice to the shipment receipt.
+>   Then the invoice arrives, showing a cost of \$2.10 for each of the two items. You match the invoice to the shipment receipt.
 
->   If you’ve selected to revalue inventory and the tolerance percentage is one
->   percent, then the inventory account would be updated in General Ledger, and
->   the transaction would look like this:
+>   If you’ve selected to revalue inventory and the tolerance percentage is one percent, then the inventory account would be updated in General Ledger, and the transaction would look like this:
 
 | **Account**       | **Debit amount** | **Credit amount** |
 |-------------------|------------------|-------------------|
@@ -3246,9 +3182,7 @@ Example: Effects of cost variances on accounts
 | Accrued Purchases | \$4.00           |                   |
 | Accounts Payable  |                  | \$4.20            |
 
->   However, if you have selected not to revalue inventory, then the purchase
->   price variance account would be updated in General Ledger, and the
->   transaction would look like this:
+>   However, if you have selected not to revalue inventory, then the purchase price variance account would be updated in General Ledger, and the transaction would look like this:
 
 | **Account**             | **Debit amount** | **Credit amount** |
 |-------------------------|------------------|-------------------|
@@ -3259,72 +3193,53 @@ Example: Effects of cost variances on accounts
 Creating a planner ID
 ---------------------
 
->   Use the Planner Maintenance window to create a planner ID. You can create as
->   many planner IDs as you like. Later on, you can assign planner IDs to each
->   item-site combination. You can use planner IDs to show which person or
->   entity has the responsibility to plan resources for each item-site
->   combination.
+>   Use the Planner Maintenance window to create a planner ID. You can create as many planner IDs as you like. Later on, you can assign planner IDs to each item-site combination. You can use planner IDs to show which person or entity has the responsibility to plan resources for each item-site combination.
 
 >   **To create a planner ID:**
 
 1.  Open the Planner Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Planners)
 
 ![](media/eeb2ad633e2fea2658fe7f9af7706799.jpg)
 
-1.  Enter a planner ID.
+2.  Enter a planner ID.
 
-2.  Enter a planner description.
+3.  Enter a planner description.
 
-3.  Choose Insert to add the planner information to the scrolling window.
+4.  Choose Insert to add the planner information to the scrolling window.
 
->   You can continue, creating as many planner IDs as you like. You also can
->   choose File \>\> Print to print the Planner List.
+>   You can continue, creating as many planner IDs as you like. You also can choose File \>\> Print to print the Planner List.
 
-1.  When you’re finished, choose OK to close the window.
+5.  When you’re finished, choose OK to close the window.
 
 Deleting planner IDs
 --------------------
 
->   Use the Planner Maintenance window to delete one planner ID or all planner
->   IDs. Only planner IDs that are not associated with any item-site combination
->   will be deleted.
+>   Use the Planner Maintenance window to delete one planner ID or all planner IDs. Only planner IDs that are not associated with any item-site combination will be deleted.
 
->   *You might want to replace all instances of one planner ID with another
->   before deleting a planner ID. Refer to Replacing all buyers or planners for
->   more information.*
+>   *You might want to replace all instances of one planner ID with another before deleting a planner ID. Refer to Replacing all buyers or planners for more information.*
 
 >   **To delete planner IDs:**
 
-1.  Open the Planner Maintenance window. (Inventory \>\> Cards \>\> Planners)
+1.  Open the Planner Maintenance window. 
+(Inventory \>\> Cards \>\> Planners)
 
 2.  Determine which planner IDs should be deleted.
 
--   To delete one planner ID, highlight the planner ID in the scrolling window,
-    and choose Remove.
+-   To delete one planner ID, highlight the planner ID in the scrolling window, and choose Remove.
 
 -   To delete all planner IDs, choose Remove All.
 
-1.  Close the window.
+3.  Close the window.
 
 Chapter 14: Sites and beginning quantities
 ==========================================
 
->   With Inventory Control, you can define sites—such as storage areas or
->   warehouses—and then assign items to sites. Later, you’ll enter information
->   about the quantities of each item at each site. That information will be the
->   baseline used for historical reports later on.
+>   With Inventory Control, you can define sites—such as storage areas or warehouses—and then assign items to sites. Later, you’ll enter information about the quantities of each item at each site. That information will be the baseline used for historical reports later on.
 
->   Depending on your business, entering information about your sites can be
->   very simple or very complex. This document describes the simplest
->   tasks—creating a basic site record and entering information about the
->   quantities of items located there. You can refer to *Chapter 15, “Item-site
->   details,”* for information about entering information for resource planning
->   and the purchase order generator.
+>   Depending on your business, entering information about your sites can be very simple or very complex. This document describes the simplest tasks—creating a basic site record and entering information about the quantities of items located there. You can refer to *Chapter 15, “Item-site details,”* for information about entering information for resource planning and the purchase order generator.
 
->   *Only basic tasks are described in this document, but you might not need to
->   complete them all. Refer to Overview of basic item-site tasks.*
+>   *Only basic tasks are described in this document, but you might not need to complete them all. Refer to Overview of basic item-site tasks.*
 
 >   The following information is discussed:
 
@@ -3363,52 +3278,29 @@ Chapter 14: Sites and beginning quantities
 Item-site relationships
 -----------------------
 
->   When you assign items to a site, purchase receipts and quantity information
->   are maintained for that item-site combination. If you transfer items to
->   another site, purchase receipt information—such as cost—also is transferred.
+>   When you assign items to a site, purchase receipts and quantity information are maintained for that item-site combination. If you transfer items to another site, purchase receipt information—such as cost—also is transferred.
 
->   To do this, you must define sites and then create item-site relationships.
->   For example, you might have a North warehouse and a South warehouse. To be
->   able to stock an item at both warehouses, you must assign the item to both
->   sites.
+>   To do this, you must define sites and then create item-site relationships. For example, you might have a North warehouse and a South warehouse. To be able to stock an item at both warehouses, you must assign the item to both sites.
 
->   Every inventoried item must be assigned to at least one site. You can define
->   as many sites as you need, and you can assign each item to as many sites as
->   necessary.
+>   Every inventoried item must be assigned to at least one site. You can define as many sites as you need, and you can assign each item to as many sites as necessary.
 
 Posting accounts and site segment substitution
 ----------------------------------------------
 
->   When you define a site, you can enter an account segment for the site. If
->   you do this, the site’s account segment is substituted into the default
->   posting account number.
+>   When you define a site, you can enter an account segment for the site. If you do this, the site’s account segment is substituted into the default posting account number.
 
 *Refer to Assigning posting accounts to items for more information.*
 
->   If the resulting account number—the one reflecting the substitution of the
->   site account segment—is valid, Microsoft Dynamics GP posts the transaction
->   to the site account. If the resulting account number is *not* valid,
->   Microsoft Dynamics GP posts the transaction to the default posting account
->   assigned in the Item Account Maintenance window.
+>   If the resulting account number—the one reflecting the substitution of the site account segment—is valid, Microsoft Dynamics GP posts the transaction to the site account. If the resulting account number is *not* valid, Microsoft Dynamics GP posts the transaction to the default posting account assigned in the Item Account Maintenance window.
 
->   For example, suppose you’ve set up your accounts so the site segment for the
->   Main Store is 1000, and the site segment for the North Store is 2000. If the
->   default posting account is 0000-1300 and the first segment is the
->   site-specific segment, then transactions from the Main Store will post to
->   account 1000-1300, and transactions from the North Store will post to
->   account 2000-1300. If you later added another site—the South Store—but
->   didn’t create a site-specific account for that site, transactions for that
->   site would post to account 0000-1300, the default posting account.
+>   For example, suppose you’ve set up your accounts so the site segment for the Main Store is 1000, and the site segment for the North Store is 2000. If the default posting account is 0000-1300 and the first segment is the site-specific segment, then transactions from the Main Store will post to account 1000-1300, and transactions from the North Store will post to account 2000-1300. If you later added another site—the South Store—but didn’t create a site-specific account for that site, transactions for that site would post to account 0000-1300, the default posting account.
 
 Overview of basic item-site tasks
 ---------------------------------
 
->   You might need to define only one site and assign all items to it, or you
->   might need to define several sites and assign items to them, along with
->   information about lot numbers, serial numbers, and bins.
+>   You might need to define only one site and assign all items to it, or you might need to define several sites and assign items to them, along with information about lot numbers, serial numbers, and bins.
 
->   The following table lists the basic tasks. You should complete only those
->   tasks that apply to you and your business.
+>   The following table lists the basic tasks. You should complete only those tasks that apply to you and your business.
 
 | **Procedure**                                        | **Required?**                                      |
 |------------------------------------------------------|----------------------------------------------------|
@@ -3424,133 +3316,94 @@ Overview of basic item-site tasks
 Defining a site
 ---------------
 
->   You must define at least one site. Use the Site Maintenance window to
->   complete this procedure.
+>   You must define at least one site. Use the Site Maintenance window to complete this procedure.
 
 >   **To define a site:**
 
 1.  Open the Site Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Site)
 
 ![](media/dc46c013c9dbff3da5f504f0add1ed2a.jpg)
 
-1.  Enter an identifier and a brief description for the site.
+2.  Enter an identifier and a brief description for the site.
 
-2.  You can enter the address information.
+3.  You can enter the address information.
 
-3.  If you have a specific account site segment set up in General Ledger and
-    want to track currency amounts for this site, enter the account segment ID.
-    Otherwise, leave this field blank.
+4.  If you have a specific account site segment set up in General Ledger and want to track currency amounts for this site, enter the account segment ID. Otherwise, leave this field blank.
 
-4.  If you’re tracking Intrastat statistics, enter or select a country or region
-    of origin. The field is available only if you’ve marked the Enable Intrastat
-    Tracking option in the Company Setup Options window.
+5.  If you’re tracking Intrastat statistics, enter or select a country or region of origin. The field is available only if you’ve marked the Enable Intrastat Tracking option in the Company Setup Options window.
 
-5.  You can enter phone and fax number information, if you like.
+6.  You can enter phone and fax number information, if you like.
 
-6.  Select tax schedules that apply to merchandise sold at this site, and to
-    merchandise delivered to this site.
+7.  Select tax schedules that apply to merchandise sold at this site, and to merchandise delivered to this site.
 
->   The sales tax schedule you select appears as the default tax schedule in the
->   Sales
+>   The sales tax schedule you select appears as the default tax schedule in the Sales
 
->   Order Processing module when the item is sold with a shipping method of
->   Pickup. The tax schedule you select for purchases appears as the default tax
->   schedule in the Purchase Order Processing module when the item purchased has
->   a shipping method of Delivery.
+>   Order Processing module when the item is sold with a shipping method of Pickup. The tax schedule you select for purchases appears as the default tax schedule in the Purchase Order Processing module when the item purchased has a shipping method of Delivery.
 
-1.  Choose Planning to open the Resource Planning Site Maintenance window, where
-    you can enter information about how the item quantities for the site should
-    be planned. Refer to *Entering resource planning information* for more
-    information.
+8.  Choose Planning to open the Resource Planning Site Maintenance window, where you can enter information about how the item quantities for the site should be planned. Refer to *Entering resource planning information* for more information.
 
-2.  If you’re using multiple bins, you’ll need to enter the bins for the site,
-    and then select the default bins for the site. Refer to the following topics
-    for more information:
+9.  If you’re using multiple bins, you’ll need to enter the bins for the site, and then select the default bins for the site. Refer to the following topics for more information:
 
 >   • *Entering bins for a site*
 
 >   • *Specifying default bins for a site*
 
-1.  Choose Save.
+10.  Choose Save.
 
->   When you’ve entered all of your sites, you can verify your entries with a
->   Site List. For information about printing this and other setup reports,
->   choose Help \>\> Index, then search for Inventory Setup Reports window.
+>   When you’ve entered all of your sites, you can verify your entries with a Site List. For information about printing this and other setup reports, choose Help \>\> Index, then search for Inventory Setup Reports window.
 
 Entering bins for a site
 ------------------------
 
->   You can define as many bins for each site as necessary. Later, you can
->   transfer item quantities from one bin to another. For more information about
->   bins, see *Multiple bins*.
+>   You can define as many bins for each site as necessary. Later, you can transfer item quantities from one bin to another. For more information about bins, see *Multiple bins*.
 
->   *You can enter bins for a site after you’ve entered registration keys for
->   multiple bins. You can complete these step before you mark the option to use
->   multiple bins.*
+>   *You can enter bins for a site after you’ve entered registration keys for multiple bins. You can complete these step before you mark the option to use multiple bins.*
 
 >   **To enter bins for a site:**
 
 1.  Open the Site Bin Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Bins/Site)
 
 ![](media/7e5c68a1b433917cfb9da448f35af3ba.jpg)
 
->   *You also can open the window by choosing Site Bin Maintenance from the Go
->   To button in the Site Maintenance window.*
+>   *You also can open the window by choosing Site Bin Maintenance from the Go To button in the Site Maintenance window.*
 
-1.  Enter or select a site.
+2.  Enter or select a site.
 
-2.  Enter a bin.
+3.  Enter a bin.
 
-3.  Choose Insert to add the bin to the scrolling window.
+4.  Choose Insert to add the bin to the scrolling window.
 
-4.  Repeat steps 3 and 4 until you’ve added as many bins as necessary.
+5.  Repeat steps 3 and 4 until you’ve added as many bins as necessary.
 
->   *You can add a note to any bin in the scrolling window. To do so, highlight
->   the bin in the scrolling window and then choose the note icon button at the
->   top of the scrolling window to open a note window. Enter information about
->   the bin, being sure to save it before closing the window.*
+>   *You can add a note to any bin in the scrolling window. To do so, highlight the bin in the scrolling window and then choose the note icon button at the top of the scrolling window to open a note window. Enter information about the bin, being sure to save it before closing the window.*
 
-1.  When you’ve finished, close the window.
+6.  When you’ve finished, close the window.
 
 Specifying default bins for a site
 ----------------------------------
 
->   After you create the bins at a site, you can specify certain bins as the
->   default bin to use for different types of transactions. For example, you
->   might use one bin for fulfilling sales orders, and another bin for items
->   being returned by customers. You can also specify default bins for item-site
->   combinations.
+>   After you create the bins at a site, you can specify certain bins as the  default bin to use for different types of transactions. For example, you might use one bin for fulfilling sales orders, and another bin for items being returned by customers. You can also specify default bins for item-site combinations.
 
->   When a transaction is entered, the default bin for the transaction type for
->   the itemsite combination is used. If there is no default bin for the
->   item-site combination, the default bin for the transaction type for the site
->   is used. In some cases, you’ll have the option to select a different bin.
+>   When a transaction is entered, the default bin for the transaction type for the itemsite combination is used. If there is no default bin for the item-site combination, the default bin for the transaction type for the site is used. In some cases, you’ll have the option to select a different bin.
 
->   *The default bins for a site aren’t carried forward to become the default
->   bins for the item-site combinations. You must enter those. Refer to
->   Specifying default bins for an item-site combination.*
+>   *The default bins for a site aren’t carried forward to become the default bins for the item-site combinations. You must enter those. Refer to Specifying default bins for an item-site combination.*
 
->   You can use the Site Default Bins window to specify the default bins for a
->   site. You also can use the window to change the default bins for a site. You
->   can do that at any time.
+>   You can use the Site Default Bins window to specify the default bins for a site. You also can use the window to change the default bins for a site. You can do that at any time.
 
 >   **To specify default bins for a site:**
 
 1.  Open the Site Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Site)
 
-1.  Enter or select a site.
+2.  Enter or select a site.
 
-2.  Choose Bins to open the Site Default Bins window.
+3.  Choose Bins to open the Site Default Bins window.
 
 ![](media/154062169512ff5309044b25eb1822b0.jpg)
 
-1.  Enter or select a bin for each type of transaction.
+4.  Enter or select a bin for each type of transaction.
 
 >   Refer to the table for more information.
 
@@ -3568,54 +3421,41 @@ Specifying default bins for a site
 
 >   Fulfillment
 
->   Dynamics GP assembly transactions if no assembly receipts bin has been
->   specified for the item-site combination.
+>   Dynamics GP assembly transactions if no assembly receipts bin has been specified for the item-site combination.
 
 >   Receipts
 
-1.  When you’re finished, choose OK to save your entries and close the window.
+5.  When you’re finished, choose OK to save your entries and close the window.
 
 Assigning items to a site
 -------------------------
 
->   Use the Item Site Assignment window to assign items to a site. Each item
->   must be assigned to at least one site.
+>   Use the Item Site Assignment window to assign items to a site. Each item must be assigned to at least one site.
 
->   *If you’re using multiple bins and have created default bins for a site, you
->   should be aware that default bin information for the site does not carry
->   forward to the item-site combinations. If you want to use default bins for
->   item-site combinations, you must enter them. Refer to Specifying default
->   bins for an item-site combination.*
+>   *If you’re using multiple bins and have created default bins for a site, you should be aware that default bin information for the site does not carry forward to the item-site combinations. If you want to use default bins for item-site combinations, you must enter them. Refer to Specifying default bins for an item-site combination.*
 
 >   **To assign items to a site:**
 
 1.  Open the Site Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Site)
 
-1.  Enter or select the site you want to assign items to.
+2.  Enter or select the site you want to assign items to.
 
-2.  Choose Assign to open the Item Site Assignments window.
+3.  Choose Assign to open the Item Site Assignments window.
 
 ![](media/3d3477914668200ea39f5e8bccff134b.jpg)
 
-1.  Specify which items should be assigned to the site. For example, you can
-    choose to have only the items in certain item classes assigned to the site.
+4.  Specify which items should be assigned to the site. For example, you can choose to have only the items in certain item classes assigned to the site.
 
->   To specify a range of items by item number, mark the From option in the Item
->   Number field, and then enter or select the first and last item numbers to be
->   included in the range.
+>   To specify a range of items by item number, mark the From option in the Item Number field, and then enter or select the first and last item numbers to be included in the range.
 
->   You can specify ranges for all different fields in the window: Item Number,
->   Generic Description, Class ID and Vendor ID. However, only those items that
->   meet all the criteria will be assigned to the site.
+>   You can specify ranges for all different fields in the window: Item Number, Generic Description, Class ID and Vendor ID. However, only those items that meet all the criteria will be assigned to the site.
 
-1.  Choose OK.
+5.  Choose OK.
 
 >   **To assign items to a site using the action pane:**
 
-1.  In the navigation pane, choose the Inventory button, and then choose the
-    Items list.
+1.  In the navigation pane, choose the Inventory button, and then choose the Items list.
 
 2.  Mark the items that you want to assign a site to.
 
@@ -3626,71 +3466,46 @@ Assigning items to a site
 Entering beginning quantities
 -----------------------------
 
->   Use the Item Transaction Entry window to enter On Hand beginning item
->   quantities for inventoried and discontinued items. You must enter beginning
->   quantities to establish a starting point for inventoried items and a
->   baseline for historical information. Once you’ve entered initial quantities,
->   you can enter increase and decrease adjustments, as well as variance and
->   transfer transactions.
+>   Use the Item Transaction Entry window to enter On Hand beginning item quantities for inventoried and discontinued items. You must enter beginning quantities to establish a starting point for inventoried items and a baseline for historical information. Once you’ve entered initial quantities, you can enter increase and decrease adjustments, as well as variance and transfer transactions.
 
->   *Before you begin this procedure, be sure the site has been defined and
->   items have been assigned to it. If you’re using multiple bins, you also
->   should have created bins.*
+>   *Before you begin this procedure, be sure the site has been defined and items have been assigned to it. If you’re using multiple bins, you also should have created bins.*
 
->   If you’re using Invoicing or Sales Order Processing, history information for
->   Inventory Control automatically is updated for items for which you’re
->   keeping calendar, fiscal, or transaction history. Activities in Purchase
->   Order Processing and Microsoft Dynamics GP Bill of Materials affect only
->   transaction history.
+>   If you’re using Invoicing or Sales Order Processing, history information for Inventory Control automatically is updated for items for which you’re keeping calendar, fiscal, or transaction history. Activities in Purchase Order Processing and Microsoft Dynamics GP Bill of Materials affect only transaction history.
 
 >   **To enter beginning quantities:**
 
 1.  Open the Inventory Batch Entry window.
-
 >   (Inventory \>\> Transactions \>\> Batches)
 
 ![](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
 
-1.  Enter an identifier and brief description for the batch, and from the Origin
-    list, choose Transaction entry. Then unmark the Post to General Ledger
-    option so any transactions that have been accounted for in General Ledger
-    won’t be duplicated.
+2.  Enter an identifier and brief description for the batch, and from the Origin list, choose Transaction entry. Then unmark the Post to General Ledger option so any transactions that have been accounted for in General Ledger won’t be duplicated.
 
-2.  Choose Transactions to open the Item Transaction Entry window.
+3.  Choose Transactions to open the Item Transaction Entry window.
 
 ![](media/30240561ca150826302ea019631b2128.jpg)
 
-1.  From the Document Type list, choose Adjustment.
+4.  From the Document Type list, choose Adjustment.
 
-2.  Enter a document number, or accept the default document number.
+5.  Enter a document number, or accept the default document number.
 
-3.  Enter a transaction date.
+6.  Enter a transaction date.
 
-4.  Decide what site or sites to enter beginning quantities for.
+7.  Decide what site or sites to enter beginning quantities for.
 
->   If you’re entering beginning quantities for one site—or if most of the
->   beginning quantities are for the same site—enter or select a Default Site
->   ID. The site you select will be included in each line you enter in the
->   scrolling window. If you don’t select a default site ID, you must select a
->   site for each line, one-by-one. If you use a default site ID, you can change
->   the site for any line, as needed.
+>   If you’re entering beginning quantities for one site—or if most of the beginning quantities are for the same site—enter or select a Default Site ID. The site you select will be included in each line you enter in the scrolling window. If you don’t select a default site ID, you must select a site for each line, one-by-one. If you use a default site ID, you can change the site for any line, as needed.
 
-1.  Enter or select an item number.
+8.  Enter or select an item number.
 
-2.  Enter or select the unit of measure used to store the item.
+9.  Enter or select the unit of measure used to store the item.
 
-3.  Enter the quantity.
+10.  Enter the quantity.
 
-4.  Accept the default site for the item quantity, or enter or select another
-    site.
+11.  Accept the default site for the item quantity, or enter or select another site.
 
->   To view available to promise information about the item if you’re using ATP,
->   click the Quantity Available link to open the Inventory Available to Promise
->   Inquiry window.
+>   To view available to promise information about the item if you’re using ATP, click the Quantity Available link to open the Inventory Available to Promise Inquiry window.
 
->   When you move off the line, another window will open if you’re entering
->   information for an item with the Sale Inventory or Discontinued type, and
->   more information is needed. Refer to the table.
+>   When you move off the line, another window will open if you’re entering information for an item with the Sale Inventory or Discontinued type, and more information is needed. Refer to the table.
 
 | **Condition**                                                                    | **Result**                                                                                                                                                                                                                                               |
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3698,287 +3513,205 @@ Entering beginning quantities
 | The item is tracked by serial numbers                                            | The Item Serial Number Entry window opens, where you can specify the serial numbers of the items you’re entering. If you’re using multiple bins, you also can specify the bin for each item. Refer to *Specifying lot numbers for inventory quantities*. |
 | The item is not tracked by lot or serial numbers, but you’re using multiple bins | The Bin Quantity Entry window opens, where you can specify how much of the total quantity should be added to each bin. Refer to *Specifying bins for inventory quantities*.                                                                              |
 
-1.  Continue, repeating steps 7 through 11 to add more adjustment transactions
-    for beginning quantities.
+12.  Continue, repeating steps 7 through 11 to add more adjustment transactions for beginning quantities.
 
-2.  When you’ve finished entering transactions, choose Save and close the
-    window.
+13.  When you’ve finished entering transactions, choose Save and close the window.
 
-3.  In the Inventory Batch Entry window, enter or select the batch ID.
+14.  In the Inventory Batch Entry window, enter or select the batch ID.
 
-4.  You can choose File \>\> Print to print an Inventory Transaction Edit List
-    to verify your entries.
+15.  You can choose File \>\> Print to print an Inventory Transaction Edit List to verify your entries.
 
-*If you find errors in the edit list, refer to Chapter 25, “Transaction
-corrections.”*
+*If you find errors in the edit list, refer to Chapter 25, “Transaction corrections.”*
 
-1.  Choose Post.
+16.  Choose Post.
 
->   After you’ve posted the beginning quantity information, you might need to
->   mark the Post to General Ledger option, if you cleared it to enter your
->   beginning quantities. Marking the option will ensure that your daily
->   transactions update General Ledger.
+>   After you’ve posted the beginning quantity information, you might need to mark the Post to General Ledger option, if you cleared it to enter your beginning quantities. Marking the option will ensure that your daily transactions update General Ledger.
 
->   Depending on the way your system has been set up, the Transaction Posting
->   Journal might be printed when you post batches. Audit trail reports are
->   optional; you can select to print them when you set up your Microsoft
->   Dynamics GP system. Refer to your System Setup instructions (Help \>\>
->   Contents \>\> select Setting Up the System) for more information about
->   posting options.
+>   Depending on the way your system has been set up, the Transaction Posting Journal might be printed when you post batches. Audit trail reports are optional; you can select to print them when you set up your Microsoft Dynamics GP system. Refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System) for more information about posting options.
 
 Specifying lot numbers for inventory quantities
 -----------------------------------------------
 
->   If you enter an adjustment transaction to specify the beginning quantities
->   of an item that is tracked by lot numbers, use the Item Lot Number Entry
->   window to specify the lot number information.
+>   If you enter an adjustment transaction to specify the beginning quantities of an item that is tracked by lot numbers, use the Item Lot Number Entry window to specify the lot number information.
 
 >   **To specify lot numbers for inventory quantities:**
 
 1.  Open the Item Transaction Entry window.
-
 >   (Inventory \>\> Transactions \>\> Transaction Entry)
 
-1.  Enter an adjustment transaction for an item tracked by lot numbers. Choose
-    Serial/Lot to open the Item Lot Number Entry window.
+2.  Enter an adjustment transaction for an item tracked by lot numbers. Choose Serial/Lot to open the Item Lot Number Entry window.
 
 ![](media/3b422855ccd819ac69012d787cc6e964.jpg)
 
->   The window also will open automatically when you move out of the transaction
->   line.
+>   The window also will open automatically when you move out of the transaction line.
 
-1.  Enter or select a lot number.
+3.  Enter or select a lot number.
 
-2.  You can choose the expansion button on the Lot Number field to open the Lot
-    Attribute Entry window to enter a manufactured date and an expiration date.
-    If you’re using lot categories, enter lot attribute information. When you
-    have finished entering information, choose OK to close the window and return
-    to the Item Lot Number Entry window.
+4.  You can choose the expansion button on the Lot Number field to open the Lot Attribute Entry window to enter a manufactured date and an expiration date. If you’re using lot categories, enter lot attribute information. When you have finished entering information, choose OK to close the window and return to the Item Lot Number Entry window.
 
 ![](media/15f4081baf23e8b8e92e6898843c7c02.jpg)
 
-1.  Enter quantity information.
+5.  Enter quantity information.
 
-    -   If you’re using multiple bins, enter or select a bin, and enter the
-        quantity to add to the bin.
+    -   If you’re using multiple bins, enter or select a bin, and enter the quantity to add to the bin.
 
-    -   If you’re not using multiple bins, enter the quantity to add to the
-        site.
+    -   If you’re not using multiple bins, enter the quantity to add to the site.
 
-2.  Choose Insert to add the information to the lower scrolling window.
+6.  Choose Insert to add the information to the lower scrolling window.
 
-3.  Continue, repeating steps 3 through 6 until you’ve accounted for the total
-    item quantity for the site.
+7.  Continue, repeating steps 3 through 6 until you’ve accounted for the total item quantity for the site.
 
-4.  Choose OK to close the Item Lot Number Entry window and return to the Item
-    Transaction Entry window.
+8.  Choose OK to close the Item Lot Number Entry window and return to the Item Transaction Entry window.
 
 Specifying serial numbers for inventory quantities
 --------------------------------------------------
 
->   If you enter an adjustment transaction to specify the beginning quantities
->   of an item that is tracked by serial numbers, use the Item Serial Number
->   Entry window to specify serial number information.
+>   If you enter an adjustment transaction to specify the beginning quantities of an item that is tracked by serial numbers, use the Item Serial Number Entry window to specify serial number information.
 
 >   **To specify serial numbers for inventory quantities:**
 
 1.  Open the Item Transaction Entry window.
-
 >   (Inventory \>\> Transactions \>\> Transaction Entry)
 
-1.  Enter an adjustment transaction for an item tracked by serial numbers.
-    Choose Serial/Lot to open the Item Serial Number Entry window.
+2.  Enter an adjustment transaction for an item tracked by serial numbers. Choose Serial/Lot to open the Item Serial Number Entry window.
 
 ![](media/eaee372bf3b6b75ebe6477a8e701ee8f.jpg)
 
->   The window also will open automatically when you move out of the transaction
->   line.
+>   The window also will open automatically when you move out of the transaction line.
 
-1.  Enter a serial number.
+3.  Enter a serial number.
 
-2.  If you’re using multiple bins, enter or select a bin.
+4.  If you’re using multiple bins, enter or select a bin.
 
-3.  Choose Insert to add it to the Selected scrolling window.
+5.  Choose Insert to add it to the Selected scrolling window.
 
->   When you add a serial number to the Selected scrolling window, the Serial
->   Numbers Selected will increase by one, to display how many serial numbers
->   you’ve entered.
+>   When you add a serial number to the Selected scrolling window, the Serial Numbers Selected will increase by one, to display how many serial numbers you’ve entered.
 
-1.  Continue adding information to the scrolling window until the Serial Numbers
-    Selected equals the Extended Quantity.
+6.  Continue adding information to the scrolling window until the Serial Numbers Selected equals the Extended Quantity.
 
-2.  Choose OK to close the window and return to the Item Transaction Entry
-    window.
+7.  Choose OK to close the window and return to the Item Transaction Entry window.
 
 Specifying bins for inventory quantities
 ----------------------------------------
 
->   If you’re entering beginning quantities and you’re using multiple bins,
->   you’ll need to specify bins for the quantities. Use the Bin Quantity Entry
->   window to complete this procedure.
+>   If you’re entering beginning quantities and you’re using multiple bins, you’ll need to specify bins for the quantities. Use the Bin Quantity Entry window to complete this procedure.
 
 >   **To specify bins for inventory quantities:**
 
 1.  Open the Item Transaction Entry window.
-
 >   (Inventory \>\> Transactions \>\> Transaction Entry)
 
-1.  Enter an adjustment transaction for an item that is not tracked by lot or
-    serial numbers. Choose Bins to open the Bin Quantity Entry window.
+2.  Enter an adjustment transaction for an item that is not tracked by lot or serial numbers. Choose Bins to open the Bin Quantity Entry window.
 
 ![](media/4c03f8a6c0d60cb7ea4a52396d21bf0b.jpg)
 
->   The window also will open automatically when you move out of the transaction
->   line.
+>   The window also will open automatically when you move out of the transaction line.
 
-1.  Enter or select a bin.
+3.  Enter or select a bin.
 
-2.  Enter the quantity for the bin.
+4.  Enter the quantity for the bin.
 
-3.  Choose Insert to add the information to the lower scrolling window.
+5.  Choose Insert to add the information to the lower scrolling window.
 
-4.  Continue, repeating steps 3 through 5 until the Selected Quantity equals the
-    Extended Quantity.
+6.  Continue, repeating steps 3 through 5 until the Selected Quantity equals the Extended Quantity.
 
-5.  When you’ve finished, choose OK to save the information and close the
-    window.
+7.  When you’ve finished, choose OK to save the information and close the window.
 
 Inactivating an item-site relationship
 --------------------------------------
 
->   If you stop using an item from a particular site, you can inactivate the
->   item-site relationship. For example, if you no longer stock an item at a
->   particular site, you can inactivate the relationship in order to prevent
->   further transactions from using it. Inactivating the item-site will prevent
->   any new sales or purchases using the itemsite combination; however, you will
->   be able to post any existing transactions.
+>   If you stop using an item from a particular site, you can inactivate the item-site relationship. For example, if you no longer stock an item at a particular site, you can inactivate the relationship in order to prevent further transactions from using it. Inactivating the item-site will prevent any new sales or purchases using the itemsite combination; however, you will be able to post any existing transactions.
 
->   If you have a remaining quantity in the site, you may want to transfer the
->   quantity before inactivating so that you will be able to bring the on hand
->   quantity to zero at the site.
+>   If you have a remaining quantity in the site, you may want to transfer the quantity before inactivating so that you will be able to bring the on hand quantity to zero at the site.
 
->   Inactivating the item/site relationship does not affect the item at any
->   other sites, nor does it affect the site. However, if you’ve already
->   inactivated the site, the item-site relationship will in effect be
->   inactivated, as no items will be able to be sold or purchased from an
->   inactive site.
+>   Inactivating the item/site relationship does not affect the item at any other sites, nor does it affect the site. However, if you’ve already inactivated the site, the item-site relationship will in effect be inactivated, as no items will be able to be sold or purchased from an inactive site.
 
 >   **To inactivate an item-site relationship:**
 
 1.  Open the Item Quantities Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Quantities/Sites)
 
-1.  Select an item number.
+2.  Select an item number.
 
-2.  Enter or select the Site ID.
+3.  Enter or select the Site ID.
 
-3.  Select Inactive and choose Save.
+4.  Select Inactive and choose Save.
 
 Inactivating a site
 -------------------
 
->   If you are no longer using a site, but are not ready to delete it, you can
->   inactivate the site. This will prevent any new transactions from using the
->   site, but will allow existing transactions to be posted.
+>   If you are no longer using a site, but are not ready to delete it, you can inactivate the site. This will prevent any new transactions from using the site, but will allow existing transactions to be posted.
 
 >   **To inactivate a site:**
 
 1.  Open the Site Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Site)
 
-1.  Enter or select the site to be inactivated.
+2.  Enter or select the site to be inactivated.
 
-2.  Select Inactive and choose Save.
+3.  Select Inactive and choose Save.
 
 Requirements for deleting a site
 --------------------------------
 
->   If you no longer use a site, and if no items or bills of materials are
->   assigned to it, you can delete it from your records.
+>   If you no longer use a site, and if no items or bills of materials are assigned to it, you can delete it from your records.
 
->   If items are assigned to the site to be deleted, you need to enter a
->   transfer transaction to move the items to a different site. Once the items
->   are moved, you also must remove the link between the item and the site
->   before you can delete the site record. Refer to *Deleting an item-site
->   relationship* for more information.
+>   If items are assigned to the site to be deleted, you need to enter a transfer transaction to move the items to a different site. Once the items are moved, you also must remove the link between the item and the site before you can delete the site record. Refer to *Deleting an item-site relationship* for more information.
 
->   Before you can delete an item-site relationship, the following conditions
->   must be met:
+>   Before you can delete an item-site relationship, the following conditions must be met:
 
--   Quantities for the item at that site must be zero. If you need to transfer
-    item quantities to another site, refer to *Transferring an item to a
-    different site*.
+-   Quantities for the item at that site must be zero. If you need to transfer item quantities to another site, refer to *Transferring an item to a different site*.
 
 -   The item-site combination can’t exist on an unposted transaction.
 
 -   No posted transactions may exist for the site.
 
--   If you’re using multiple bins, you must delete all the bins that have been
-    created for the site.
+-   If you’re using multiple bins, you must delete all the bins that have been created for the site.
 
 Deleting an item-site relationship
 ----------------------------------
 
->   Use the Item Quantities Maintenance window to delete an item-site
->   relationship.
+>   Use the Item Quantities Maintenance window to delete an item-site relationship.
 
->   You must delete the item-site relationship before you can delete the site or
->   the item.
+>   You must delete the item-site relationship before you can delete the site or the item.
 
 >   **To delete an item-site relationship:**
 
 1.  Open the Item Quantities Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Quantities/Sites)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
-2.  Enter or select the site ID to delete.
+3.  Enter or select the site ID to delete.
 
->   *If the item is included in an unposted transaction, you can’t delete the
->   item-site relationship.*
+>   *If the item is included in an unposted transaction, you can’t delete the item-site relationship.*
 
-1.  Choose Delete. An alert message appears, asking if you’re sure you want to
-    delete the record. Choose Yes.
+4.  Choose Delete. An alert message appears, asking if you’re sure you want to delete the record. Choose Yes.
 
-2.  Repeat steps 3 and 4 as needed, to delete other item-site combinations for
-    the item.
+5.  Repeat steps 3 and 4 as needed, to delete other item-site combinations for the item.
 
 Deleting a site
 ---------------
 
->   Use the Site Maintenance window to delete a site record. Be sure to review
->   the requirements for deleting a site before beginning this procedure. Refer
->   to *Requirements for deleting a site* for more information.
+>   Use the Site Maintenance window to delete a site record. Be sure to review the requirements for deleting a site before beginning this procedure. Refer to *Requirements for deleting a site* for more information.
 
 >   **To delete a site:**
 
-1.  Open the Site Maintenance window. (Inventory \>\> Cards \>\> Site)
+1.  Open the Site Maintenance window. 
+(Inventory \>\> Cards \>\> Site)
 
 2.  Enter or select the site to be deleted.
 
-3.  Choose Delete. A message appears, asking if you’re sure you want to delete
-    the site. Choose Yes.
+3.  Choose Delete. A message appears, asking if you’re sure you want to delete the site. Choose Yes.
 
 Chapter 15: Item-site details
 =============================
 
->   Once you’ve created items, sites, and item-site combinations, you can add
->   more detailed information. You can enter information about a site, about a
->   specific site for an item, or for all sites for an item.
+>   Once you’ve created items, sites, and item-site combinations, you can add more detailed information. You can enter information about a site, about a specific site for an item, or for all sites for an item.
 
->   Some of this information is used when you enter an inventory transaction.
->   For example, if you specify a default site for an item, that site will be
->   the default site whenever you enter an inventory transaction for the item.
->   Some information is used in other Microsoft Dynamics GP modules, such as the
->   purchase order generator that’s available if you’re using Purchase Order
->   Processing. The information also is used with other series, such as the
->   Manufacturing Series.
+>   Some of this information is used when you enter an inventory transaction. For example, if you specify a default site for an item, that site will be the default site whenever you enter an inventory transaction for the item. Some information is used in other Microsoft Dynamics GP modules, such as the purchase order generator that’s available if you’re using Purchase Order Processing. The information also is used with other series, such as the Manufacturing Series.
 
->   *For more specific information about information you need to enter for
->   Manufacturing Series modules, refer to the Manufacturing documentation.*
+>   *For more specific information about information you need to enter for Manufacturing Series modules, refer to the Manufacturing documentation.*
 
 >   The following information is discussed:
 
@@ -4005,25 +3738,13 @@ Chapter 15: Item-site details
 Item-site combinations and the “all site”
 -----------------------------------------
 
->   After you create items and sites and assign items *to* sites, you can enter
->   more information for each item-site combination. Inventory Control also
->   includes an “all site” for each item. All-site information applies to an
->   item for all sites. For example, you can choose only one default site for an
->   item (all-site information), but you can choose a different primary vendor
->   for each item-site combination (item-site information).
+>   After you create items and sites and assign items *to* sites, you can enter more information for each item-site combination. Inventory Control also includes an “all site” for each item. All-site information applies to an item for all sites. For example, you can choose only one default site for an item (all-site information), but you can choose a different primary vendor for each item-site combination (item-site information).
 
->   Microsoft Dynamics GP includes several windows for entering information for
->   the all site and for specific item-site combinations. You can use the Item
->   Quantities Maintenance window to enter basic information, and you can use
->   other windows to
-
->   enter information that’s used by the purchase order generator and by
->   Manufacturing.
+>   Microsoft Dynamics GP includes several windows for entering information for the all site and for specific item-site combinations. You can use the Item Quantities Maintenance window to enter basic information, and you can use other windows to  enter information that’s used by the purchase order generator and by Manufacturing.
 
 >   **Basic all-site and item-site information**
 
->   For more information about using the Item Quantities Maintenance window to
->   enter information, refer to the following topics:
+>   For more information about using the Item Quantities Maintenance window to enter information, refer to the following topics:
 
 -   *Entering basic all-site information for an item*
 
@@ -4031,166 +3752,103 @@ Item-site combinations and the “all site”
 
 >   **Advanced all-site and item-site information**
 
->   If you’re using certain other features, you’ll need to enter more
->   information.
+>   If you’re using certain other features, you’ll need to enter more information.
 
--   If you’re using multiple bins, you also should specify default bins for each
-    itemsite combination. Refer to *Specifying default bins for an item-site
-    combination*.
+-   If you’re using multiple bins, you also should specify default bins for each itemsite combination. Refer to *Specifying default bins for an item-site combination*.
 
--   If you’re using resource planning features such as the purchase order
-    generator in Purchase Order Processing or the Material Requirements Planning
-    module of the Manufacturing Series, you must enter resource planning
-    information. Refer to *Resource planning windows* and *Entering resource
-    planning information*.
+-   If you’re using resource planning features such as the purchase order generator in Purchase Order Processing or the Material Requirements Planning module of the Manufacturing Series, you must enter resource planning information. Refer to *Resource planning windows* and *Entering resource planning information*.
 
--   If you’re using the purchase order generator, you must enter information
-    such as replenishment levels and order methods. Refer to *Setting up an item
-    for purchase order generator*.
+-   If you’re using the purchase order generator, you must enter information such as replenishment levels and order methods. Refer to *Setting up an item for purchase order generator*.
 
 Entering basic all-site information for an item
 -----------------------------------------------
 
->   Use the Item Quantities Maintenance window to enter all-site information for
->   an item. The information that you can enter depends on whether you’re using
->   Purchase Order Processing or advanced picking in Sales Order Processing.
+>   Use the Item Quantities Maintenance window to enter all-site information for an item. The information that you can enter depends on whether you’re using Purchase Order Processing or advanced picking in Sales Order Processing.
 
->   *Before you begin this procedure, be sure that you’ve already entered
->   beginning quantities for the item-site combination. Refer to Entering
->   beginning quantities for more information.*
+>   *Before you begin this procedure, be sure that you’ve already entered beginning quantities for the item-site combination. Refer to Entering beginning quantities for more information.*
 
 >   **To enter basic all-sites information for an item:**
 
 1.  Open the Item Quantities Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Quantities/Sites)
 
 ![](media/9dc9820e50bae50aa18db95bca243d0e.jpg)
 
-1.  Enter or select an item.
+2.  Enter or select an item.
 
-2.  Be sure the Sites option is All.
+3.  Be sure the Sites option is All.
 
-3.  Enter or select a default site ID.
+4.  Enter or select a default site ID.
 
->   The default site ID will be the default site when you enter transactions for
->   the item. You can accept the default entry or change it as needed.
+>   The default site ID will be the default site when you enter transactions for the item. You can accept the default entry or change it as needed.
 
-1.  If you’re not using Purchase Order Processing, enter other information about
-    purchase orders as needed. (The information is updated automatically if
-    you’re using Purchase Order Processing.)
+5.  If you’re not using Purchase Order Processing, enter other information about purchase orders as needed. (The information is updated automatically if you’re using Purchase Order Processing.)
 
-2.  Choose Save and close the window.
+6.  Choose Save and close the window.
 
 Entering basic item-site combination information
 ------------------------------------------------
 
->   You can use the Item Quantities Maintenance window to enter information for
->   each item-site combination. Some of the information you enter will depend on
->   whether you’re using multiple bins, advanced picking in Sales Order
->   Processing, or Purchase Order Processing.
+>   You can use the Item Quantities Maintenance window to enter information for each item-site combination. Some of the information you enter will depend on whether you’re using multiple bins, advanced picking in Sales Order Processing, or Purchase Order Processing.
 
->   *Before you begin this procedure, be sure you’ve already entered beginning
->   quantities for the item-site combination. Refer to Entering beginning
->   quantities. Before you can specify a primary vendor, you must assign vendors
->   to the item. Refer to Assigning vendors to an item.*
+>   *Before you begin this procedure, be sure you’ve already entered beginning quantities for the item-site combination. Refer to Entering beginning quantities. Before you can specify a primary vendor, you must assign vendors to the item. Refer to Assigning vendors to an item.*
 
 >   **To enter basic item-site combination information:**
 
 1.  Open the Item Quantities Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Quantities/Sites)
 
-1.  Enter or select an item.
+2.  Enter or select an item.
 
-2.  Select the Site ID option and enter or select the site to add information
-    to.
+3.  Select the Site ID option and enter or select the site to add information to.
 
-3.  Enter bin information, if needed.
+4.  Enter bin information, if needed.
 
->   **If you’re using multiple bins** Choose Bins to open the Item Site Default
->   Bins window, where you can specify the default bins for an item-site
->   combination. Refer to *Specifying default bins for an item-site
->   combination*.
+>   **If you’re using multiple bins** Choose Bins to open the Item Site Default Bins window, where you can specify the default bins for an item-site combination. Refer to *Specifying default bins for an item-site combination*.
 
->   **If you’re not using multiple bins** You can enter a name or location for
->   the site bin.
+>   **If you’re not using multiple bins** You can enter a name or location for the site bin.
 
-1.  If you’re using advanced picking and the Site ID option is Both, you can
-    accept the default print option from the Advanced Picking Setup window, or
-    select a different option. For more information about the item print
-    options, refer to the Sales Order Processing documentation.
+5.  If you’re using advanced picking and the Site ID option is Both, you can accept the default print option from the Advanced Picking Setup window, or select a different option. For more information about the item print options, refer to the Sales Order Processing documentation.
 
-2.  If you’re not using Purchase Order Processing, enter the information from
-    your last order for this item-site combination. If you are using Purchase
-    Order Processing, this information is updated automatically when you enter
-    purchase orders and post receivings transactions.
+6.  If you’re not using Purchase Order Processing, enter the information from your last order for this item-site combination. If you are using Purchase Order Processing, this information is updated automatically when you enter purchase orders and post receivings transactions.
 
-3.  Enter or select a primary vendor ID.
+7.  Enter or select a primary vendor ID.
 
->   The primary vendor is the default vendor for the item-site combination. You
->   can select the primary vendor when entering purchase order information, or
->   you can select another vendor.
+>   The primary vendor is the default vendor for the item-site combination. You can select the primary vendor when entering purchase order information, or you can select another vendor.
 
-1.  If you’re using landed costs, enter or select a landed cost group. If you
-    select a landed cost group for an item-site combination, then that landed
-    cost group will be the default landed cost group if the item-site
-    combination is entered on a purchase order line or an in-transit transfer.
+8.  If you’re using landed costs, enter or select a landed cost group. If you select a landed cost group for an item-site combination, then that landed cost group will be the default landed cost group if the item-site combination is entered on a purchase order line or an in-transit transfer.
 
->   Refer to *Chapter 19, “Landed cost cards,”* for more information about
->   landed costs.
+>   Refer to *Chapter 19, “Landed cost cards,”* for more information about landed costs.
 
-1.  Choose Save and close the window.
+9.  Choose Save and close the window.
 
 Specifying default bins for an item-site combination
 ----------------------------------------------------
 
->   After you create the bins at a site, you can specify certain bins as the
->   default bin to use for different types of transactions. For example, you
->   might use one bin for fulfilling sales orders, and another bin for items
->   being returned by customers. You can also specify default bins for item-site
->   combinations.
+>   After you create the bins at a site, you can specify certain bins as the default bin to use for different types of transactions. For example, you might use one bin for fulfilling sales orders, and another bin for items being returned by customers. You can also specify default bins for item-site combinations.
 
->   When you use multiple bins and enter a transaction, the default bin for the
->   transaction type for the item-site combination is used. If there is no
->   default bin for the item-site combination, the default bin for the
->   transaction type for the site is used. In some cases, you’ll have the option
->   to select a different bin.
+>   When you use multiple bins and enter a transaction, the default bin for the transaction type for the item-site combination is used. If there is no default bin for the item-site combination, the default bin for the transaction type for the site is used. In some cases, you’ll have the option to select a different bin.
 
->   *Refer to Specifying default bins for a site for information about
->   specifying default bins for a site.*
+>   *Refer to Specifying default bins for a site for information about specifying default bins for a site.*
 
->   You can use the Item Site Default Bins window to specify the default bins
->   for an item-site combination. You also can specify a priority, minimum
->   quantity, and maximum quantity for each bin at an item-site combination. You
->   can view the priority, minimum quantity, and maximum quantity assigned to a
->   bin in the Site/ Bins Lookup window.
+>   You can use the Item Site Default Bins window to specify the default bins for an item-site combination. You also can specify a priority, minimum quantity, and maximum quantity for each bin at an item-site combination. You can view the priority, minimum quantity, and maximum quantity assigned to a bin in the Site/ Bins Lookup window.
 
->   You can use bin priority to help decide which bins that items should be
->   picked from and which bins that items should be placed into. The bin you use
->   most often can be assigned the highest priority. When receiving goods, you
->   can use the Site/Bins Lookup window to view the priority and the quantity on
->   hand for the bin to decide where to place the goods, based on bin capacity
->   and bin priority. When picking goods for a shipment or an inventory
->   transfer, you can use the Site/Bins Lookup window to view the priority and
->   quantity available for the bin to help decide where to pick the goods from,
->   based on product availability and bin priority.
+>   You can use bin priority to help decide which bins that items should be picked from and which bins that items should be placed into. The bin you use most often can be assigned the highest priority. When receiving goods, you can use the Site/Bins Lookup window to view the priority and the quantity on hand for the bin to decide where to place the goods, based on bin capacity and bin priority. When picking goods for a shipment or an inventory transfer, you can use the Site/Bins Lookup window to view the priority and quantity available for the bin to help decide where to pick the goods from, based on product availability and bin priority.
 
 >   **To specify default bins for an item-site combination:**
 
 1.  Open the Item Quantities Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Quantities/Sites)
 
-1.  Enter or select an item.
+2.  Enter or select an item.
 
-2.  Enter or select a site.
+3.  Enter or select a site.
 
-3.  Choose Bins to open the Item Site Default Bins window.
+4.  Choose Bins to open the Item Site Default Bins window.
 
 ![](media/d72fd2e581225b4f2e8265f832332d21.jpg)
 
-1.  Enter or select a bin for each type of transaction.
+5.  Enter or select a bin for each type of transaction.
 
 >   Refer to the table for more information.
 
@@ -4205,292 +3863,166 @@ Specifying default bins for an item-site combination
 | Manufacturing Receipts  | This bin is used to receive items built from manufacturing orders for the item-site combination. |
 | Repair Issues           | This bin is used to draw materials from for the item-site combination.                           |
 
-1.  You can assign a priority to a bin. You can assign priorities to an
-    unlimited number of bins—1 being the highest priority. To add a priority,
-    press TAB to move to the next line in the scrolling window. To remove the
-    bin from a priority, delete the bin from the scrolling window.
+6.  You can assign a priority to a bin. You can assign priorities to an unlimited number of bins—1 being the highest priority. To add a priority, press TAB to move to the next line in the scrolling window. To remove the bin from a priority, delete the bin from the scrolling window.
 
->   You can assign a different priority to a bin at a different item-site
->   combination, but you can’t assign a bin to multiple priorities for same
->   item-site combination. For example, if bin A1S4 for item 1 at the warehouse
->   site is assigned to priority 1, you can’t assign bin A1S4 to a different
->   priority for item 1 at the warehouse site.
+>   You can assign a different priority to a bin at a different item-site combination, but you can’t assign a bin to multiple priorities for same item-site combination. For example, if bin A1S4 for item 1 at the warehouse site is assigned to priority 1, you can’t assign bin A1S4 to a different priority for item 1 at the warehouse site.
 
-1.  You can enter a minimum quantity and maximum quantity for the bin.
+7.  You can enter a minimum quantity and maximum quantity for the bin.
 
-2.  When you’ve finished, choose OK to save your entries and close the window.
+8.  When you’ve finished, choose OK to save your entries and close the window.
 
 Overview of the purchase order generator
 ----------------------------------------
 
->   You can use the purchase order generator to automatically create suggested
->   purchase orders for the replenishment of items.
+>   You can use the purchase order generator to automatically create suggested purchase orders for the replenishment of items.
 
->   Information for the lines in the suggested purchase orders depends on how
->   you’ve set up items, sites, and item-site combinations. You can have each
->   item-site combination planned separately, or you can map several sites to a
->   “master site,” so that one purchase order is created to replenish an item
->   for several sites.
+>   Information for the lines in the suggested purchase orders depends on how you’ve set up items, sites, and item-site combinations. You can have each item-site combination planned separately, or you can map several sites to a “master site,” so that one purchase order is created to replenish an item for several sites.
 
->   Before you begin setting up information for the purchase order generator,
->   it’s helpful to understand the following terms.
+>   Before you begin setting up information for the purchase order generator, it’s helpful to understand the following terms.
 
->   **Order policy** The basic rule for calculating how quantities of an item
->   should be calculated for replenishment. If you’re using the purchase order
->   generator, you can choose Use PO Gen (so suggested purchase orders will be
->   created) or Not Planned (so no suggested purchase orders will be created).
->   You can specify the order policy in the Item Resource Planning Maintenance
->   window.
+>   **Order policy** The basic rule for calculating how quantities of an item should be calculated for replenishment. If you’re using the purchase order generator, you can choose Use PO Gen (so suggested purchase orders will be created) or Not Planned (so no suggested purchase orders will be created). You can specify the order policy in the Item Resource Planning Maintenance window.
 
->   Manufacturing users have several additional order policies to choose from.
->   Refer to the Manufacturing documentation for more information.
+>   Manufacturing users have several additional order policies to choose from. Refer to the Manufacturing documentation for more information.
 
->   **Replenishment method** The means for obtaining more of an item: Make or
+>   **Replenishment method** The means for obtaining more of an item: Make or Buy. You can specify the replenishment method for an item in the Item Resource Planning Maintenance window. The Make or Buy option is available if you are using the Manufacturing Order Processing component in the Manufacturing Series.
 
->   Buy. You can specify the replenishment method for an item in the Item
->   Resource Planning Maintenance window. The Make or Buy option is available if
->   you are using the Manufacturing Order Processing component in the
->   Manufacturing Series.
+>   **Order method** The scope of the suggested purchase order planning. You can choose to Order to Independent Site—so that suggested purchase orders can be generated for each item-site combination—or Order to Master Site—so that suggested purchase order quantities of a single item can reflect requirements for several sites. You can specify the order method for an item-site combination in the Purchase Order Generator Item Maintenance window.
 
->   **Order method** The scope of the suggested purchase order planning. You can
->   choose to Order to Independent Site—so that suggested purchase orders can be
->   generated for each item-site combination—or Order to Master Site—so that
->   suggested purchase order quantities of a single item can reflect
->   requirements for several sites. You can specify the order method for an
->   item-site combination in the Purchase Order Generator Item Maintenance
->   window.
+>   *Refer to the Purchase Order Processing documentation for more information about mapping sites to a master site.*
 
->   *Refer to the Purchase Order Processing documentation for more information
->   about mapping sites to a master site.*
+>   **Replenishment level** The basic calculation for determining quantities for a suggested purchase order. You can choose Order Point Quantity, Order-Up-To Level, or Vendor EOQ. You can specify the replenishment level for an item-site combination in the Purchase Order Generator Item Maintenance window.
 
->   **Replenishment level** The basic calculation for determining quantities for
->   a suggested purchase order. You can choose Order Point Quantity, Order-Up-To
->   Level, or Vendor EOQ. You can specify the replenishment level for an
->   item-site combination in the Purchase Order Generator Item Maintenance
->   window.
+>   **Vendor selection** An option that determines which vendor will be used for suggested purchase orders. You can specify the vendor selection for an item-site combination in the Purchase Order Generator Item Maintenance window.
 
->   **Vendor selection** An option that determines which vendor will be used for
->   suggested purchase orders. You can specify the vendor selection for an
->   item-site combination in the Purchase Order Generator Item Maintenance
->   window.
-
->   **Cost selection** An option that determines where the default cost for the
->   suggested purchase order should come from. You can specify the order method
->   for an item-site combination in the Purchase Order Generator Item
->   Maintenance window.
+>   **Cost selection** An option that determines where the default cost for the suggested purchase order should come from. You can specify the order method for an item-site combination in the Purchase Order Generator Item Maintenance window.
 
 Resource planning windows
 -------------------------
 
->   If you’re using resource planning features such as the purchase order
->   generator in Purchase Order Processing or the Material Requirements Planning
->   module of the Manufacturing Series, you must enter other information, such
->   as order policies. If you’re not using these products, you don’t need to
->   complete these tasks, but you can record information for reference, if you
->   like.
+>   If you’re using resource planning features such as the purchase order generator in Purchase Order Processing or the Material Requirements Planning module of the Manufacturing Series, you must enter other information, such as order policies. If you’re not using these products, you don’t need to complete these tasks, but you can record information for reference, if you like.
 
->   Refer to the table for information about how the information in the windows
->   is used.
+>   Refer to the table for information about how the information in the windows is used.
 
 |                                                                      | **All-site information\***                                                                                                                                                                 | **Item-site combination**                                                                                                                                                                                             |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Resource Planning Site Maintenance window**                        | Default value information is the default all-site information for new sites. (This default all-site information can be viewed or edited in the Item Resource Planning Maintenance window.) | Site-specific information is the default planning information for the site, and can be rolled down to all items assigned to the site. (This default information can be viewed or edited in the Item Resource Planning |
 | **Item Resource Planning Maintenance window**                        | Information is used for default values for item-site combinations.                                                                                                                         | Site-specific information (Replenishment Method and Order Policy) is used by the purchase order generator and Material Requirements Planning module of the Manufacturing Series.                                      |
-| **Purchase Order Generator Item**                                    | Information is used for default values for item-site combinations.                                                                                                                         | Site-specific information is used by the purchase order generator.                                                                                                                                                    |
+| **Purchase Order Generator Item Maintenance window**                                    | Information is used for default values for item-site combinations.                                                                                                                         | Site-specific information is used by the purchase order generator.                                                                                                                                                    |
 | \* All-site information is the same as “default values” information. |                                                                                                                                                                                            |                                                                                                                                                                                                                       |
 
 >   Maintenance window.)
 
->   **Maintenance window**
-
 Entering resource planning information
 --------------------------------------
 
->   If you’re using the purchase order generator or the Manufacturing Series,
->   you’ll need to enter resource planning information for items with the Sales
->   Inventory item type. (You also can enter information for Discontinued items,
->   but the purchase order generator won’t suggest orders for those items.)
+>   If you’re using the purchase order generator or the Manufacturing Series, you’ll need to enter resource planning information for items with the Sales Inventory item type. (You also can enter information for Discontinued items, but the purchase order generator won’t suggest orders for those items.)
 
->   The purchase order generator and Manufacturing require information for each
->   item-site combination. If you’re not using one of these products, you can
->   enter information but it won’t be used in any processing or calculations.
+>   The purchase order generator and Manufacturing require information for each item-site combination. If you’re not using one of these products, you can enter information but it won’t be used in any processing or calculations.
 
->   You can set up default values for the fields in this window. Refer to
->   *Entering default values for resource planning* for more information.
+>   You can set up default values for the fields in this window. Refer to *Entering default values for resource planning* for more information.
 
 >   **To enter resource planning information:**
 
 1.  Open the Item Resource Planning Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Item Resource Planning)
 
 ![](media/4c27aef17ba81a49c36b96dbd815cbde.jpg)
 
-1.  Enter or select an item number.
+2.  Enter or select an item number.
 
->   *If the item is inactive or discontinued, you will not be able to edit any
->   fields in the window. The Order Policy list will be changed to Not planned
->   for all sites, and the Calculate MRP for this item/site box will be unmarked
->   for all sites.*
+>   *If the item is inactive or discontinued, you will not be able to edit any fields in the window. The Order Policy list will be changed to Not planned for all sites, and the Calculate MRP for this item/site box will be unmarked for all sites.*
 
-1.  Determine whether to enter information for an item-site combination.
+3.  Determine whether to enter information for an item-site combination.
 
->   Mark Default Values if you’re entering planning information to be used as
->   default values when assigning a site to an item.
+>   Mark Default Values if you’re entering planning information to be used as default values when assigning a site to an item.
 
-1.  Enter or select a buyer ID and a planner ID.
+4.  Enter or select a buyer ID and a planner ID.
 
-2.  Accept the default order policy, or change it.
+5.  Accept the default order policy, or change it.
 
->   **If you’re using the purchase order generator** You can choose Not
+>   **If you’re using the purchase order generator** You can choose Not Planned (if purchase orders shouldn’t be planned for the item-site combination) or Use PO Gen (if orders should be planned.)
 
->   Planned (if purchase orders shouldn’t be planned for the item-site
->   combination) or Use PO Gen (if orders should be planned.)
+>   The order policy must be Use PO Gen if the site is the master site for any other site for the item. The order policy is combined with options you set up in Purchase Order Processing to determine the purchase order quantities for planned purchase orders. Refer to the Purchase Order Processing documentation for more information.
 
->   The order policy must be Use PO Gen if the site is the master site for any
->   other site for the item. The order policy is combined with options you set
->   up in Purchase Order Processing to determine the purchase order quantities
->   for planned purchase orders. Refer to the Purchase Order Processing
->   documentation for more information.
+>   **If you’re using Manufacturing** Several order policies are available. Refer to the Manufacturing documentation for more information.
 
->   **If you’re using Manufacturing** Several order policies are available.
->   Refer to the Manufacturing documentation for more information.
+6.  If you’re using the purchase order generator for the item-site combination, enter additional information.
 
-1.  If you’re using the purchase order generator for the item-site combination,
-    enter additional information.
+>   The specific fields that are needed for the purchase order generator depend on how you’re setting up each item-site combination. Refer to *Setting up an item for purchase order generator* for more information.
 
->   The specific fields that are needed for the purchase order generator depend
->   on how you’re setting up each item-site combination. Refer to *Setting up an
->   item for purchase order generator* for more information.
+7.  If you’re using the MRP component of the Manufacturing Series, you’ll need to enter information for each item-site combination.
 
-1.  If you’re using the MRP component of the Manufacturing Series, you’ll need
-    to enter information for each item-site combination.
+>   The specific fields that are needed depend on the order policy you select for each item, as well as the Manufacturing modules you’re using. Refer to the Manufacturing documentation for more information.
 
->   The specific fields that are needed depend on the order policy you select
->   for each item, as well as the Manufacturing modules you’re using. Refer to
->   the Manufacturing documentation for more information.
+8.  You can enter information in other fields, if needed, but those fields aren’t used in any processing or calculations.
 
-1.  You can enter information in other fields, if needed, but those fields
-    aren’t used in any processing or calculations.
-
-2.  When you’ve finished, choose Save and close the window.
+9.  When you’ve finished, choose Save and close the window.
 
 Setting up an item for purchase order generator
 -----------------------------------------------
 
->   If you’re using the purchase order generator to suggest purchase orders, use
->   the Purchase Order Generator Item Maintenance window to set up the item
->   options that determine how the purchase orders are created. You can set up
->   purchase order generator options for items that have the Sales Inventory or
->   the Discontinued item type, but no suggested purchase orders are created for
->   discontinued items.
+>   If you’re using the purchase order generator to suggest purchase orders, use the Purchase Order Generator Item Maintenance window to set up the item options that determine how the purchase orders are created. You can set up purchase order generator options for items that have the Sales Inventory or the Discontinued item type, but no suggested purchase orders are created for discontinued items.
 
->   *Default values for the Purchase Order Generator Item Maintenance window
->   come from the Purchase Order Processing Setup Options window. For more
->   information about that window and about working with the purchase orders
->   that are generated, refer to the Purchase Order Processing documentation.*
+>   *Default values for the Purchase Order Generator Item Maintenance window come from the Purchase Order Processing Setup Options window. For more information about that window and about working with the purchase orders that are generated, refer to the Purchase Order Processing documentation.*
 
 >   **To set up an item for purchase order generator:**
 
 1.  Open the Item Resource Planning Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Item Resource Planning)
 
-1.  Enter or select an item.
+2.  Enter or select an item.
 
-2.  Determine whether to set up options for the item or for an item-site
-    combination.
+3.  Determine whether to set up options for the item or for an item-site combination.
 
->   **To set up options for an item** Be sure the Default Values option is
->   marked in the Sites field. Choose PO Gen Item to open the Purchase Order
->   Generator Item Maintenance window, where you can enter information for the
->   item. The options you set up for an item will be the default options for
->   item-site combinations for that item.
+>   **To set up options for an item** Be sure the Default Values option is marked in the Sites field. Choose PO Gen Item to open the Purchase Order Generator Item Maintenance window, where you can enter information for the item. The options you set up for an item will be the default options for item-site combinations for that item.
 
->   **To set up options for an item-site combination** Be sure the Site ID
->   option is marked in the Sites field. Enter or select the site and choose PO
->   Gen Item to open the Purchase Order Generator Item Maintenance window, where
->   you can enter information for the item-site combination.
+>   **To set up options for an item-site combination** Be sure the Site ID option is marked in the Sites field. Enter or select the site and choose PO Gen Item to open the Purchase Order Generator Item Maintenance window, where you can enter information for the item-site combination.
 
 ![](media/43331ca93a99c04b60490587b45f75e0.jpg)
 
-1.  Accept the default order method or change it. Choices include the following
-    order methods:
+4.  Accept the default order method or change it. Choices include the following order methods:
 
->   **Order to Independent Site** Suggested purchase order quantities will be
->   based on requirements for only this site.
+>   **Order to Independent Site** Suggested purchase order quantities will be based on requirements for only this site.
 
->   **Order to Master Site** Suggested purchase order quantities will be based
->   on requirements for this site and other sites that have the same master
->   site. (The order method can’t be Order to Master Site for the master
->   site—only for the sites that *have* a master site.)
+>   **Order to Master Site** Suggested purchase order quantities will be based on requirements for this site and other sites that have the same master site. (The order method can’t be Order to Master Site for the master site—only for the sites that *have* a master site.)
 
->   If you choose Order to Master Site, you must also enter or select a master
->   site ID. The master site is the site that items for this item-site
->   combination will be shipped to. Refer to the Purchase Order Processing
->   documentation for more information about mapping sites to a master site.
+>   If you choose Order to Master Site, you must also enter or select a master site ID. The master site is the site that items for this item-site combination will be shipped to. Refer to the Purchase Order Processing documentation for more information about mapping sites to a master site.
 
-1.  Accept the default replenishment level or change it.
+5.  Accept the default replenishment level or change it.
 
->   Refer to *How quantities are calculated for suggested purchase orders* for
->   information about how replenishment levels affect required quantity for an
->   item-site combination.
+>   Refer to *How quantities are calculated for suggested purchase orders* for information about how replenishment levels affect required quantity for an item-site combination.
 
-1.  If the order method is Order to Independent Site, accept the default vendor
-    selection or change it. Choices include the following vendor selections:
+6.  If the order method is Order to Independent Site, accept the default vendor selection or change it. Choices include the following vendor selections:
 
->   **Site Primary Vendor** The primary vendor for the item-site combination
->   will be used. You can specify a primary vendor for an item-site combination
->   in the Item Quantities Maintenance window.
+>   **Site Primary Vendor** The primary vendor for the item-site combination will be used. You can specify a primary vendor for an item-site combination in the Item Quantities Maintenance window.
 
->   **Vendor with Lowest Cost** Of the vendors assigned to the item, the one
->   with the lowest Originating Invoice Cost (in the Item Vendors Maintenance
->   window) will be used.
+>   **Vendor with Lowest Cost** Of the vendors assigned to the item, the one with the lowest Originating Invoice Cost (in the Item Vendors Maintenance window) will be used.
 
->   If you’re using Multicurrency Management, the invoices costs are converted
->   to your company’s functional currency before they are compared.
+>   If you’re using Multicurrency Management, the invoices costs are converted to your company’s functional currency before they are compared.
 
->   **Vendor with Shortest Lead Time** Of the vendors assigned to the item, the
->   one with the shortest Planning Lead Time (in the Item Vendors Maintenance
->   window) will be used.
+>   **Vendor with Shortest Lead Time** Of the vendors assigned to the item, the one with the shortest Planning Lead Time (in the Item Vendors Maintenance window) will be used.
 
->   If the order method is Order to Master Site, the vendor selection will come
->   from the master site. The primary vendor for the master site is used for the
->   purchase order.
+>   If the order method is Order to Master Site, the vendor selection will come from the master site. The primary vendor for the master site is used for the purchase order.
 
->   If the order method is Order to Independent Site, accept the default cost
->   selection or change it. Choices include the following cost selections:
+>   If the order method is Order to Independent Site, accept the default cost selection or change it. Choices include the following cost selections:
 
->   **Vendor Last Originating Invoice Cost** The amount of the Originating
->   Invoice Cost from the Item Vendors Maintenance window will be used for
->   suggested purchase orders.
+>   **Vendor Last Originating Invoice Cost** The amount of the Originating Invoice Cost from the Item Vendors Maintenance window will be used for suggested purchase orders.
 
->   **Item Current Cost** The amount of the Current Cost from the Item
->   Maintenance window will be used for suggested purchase orders.
+>   **Item Current Cost** The amount of the Current Cost from the Item Maintenance window will be used for suggested purchase orders.
 
->   **Item Standard Cost** The amount of the Standard Cost from the Item
->   Maintenance window will be used for suggested purchase orders.
+>   **Item Standard Cost** The amount of the Standard Cost from the Item Maintenance window will be used for suggested purchase orders.
 
->   **Specified Cost** An amount you specify (in functional currency) will be
->   used for suggested purchase orders, regardless of the vendor selection.
+>   **Specified Cost** An amount you specify (in functional currency) will be used for suggested purchase orders, regardless of the vendor selection.
 
->   If the order method is Order to Master Site, the cost selection is not
->   available. The cost selection method will come from the master site.
+>   If the order method is Order to Master Site, the cost selection is not available. The cost selection method will come from the master site.
 
-1.  Mark the quantities that should be included in calculations for purchase
-    order quantities.
+7.  Mark the quantities that should be included in calculations for purchase order quantities.
 
->   Refer to *How quantities are calculated for suggested purchase orders* for
->   more information about how these selections affect the calculation for the
->   available quantity.
+>   Refer to *How quantities are calculated for suggested purchase orders* for more information about how these selections affect the calculation for the available quantity.
 
-1.  When you’ve finished, choose OK to save the information and close the
-    window.
+8.  When you’ve finished, choose OK to save the information and close the window.
 
->   *You can use the Purchase Order Item Mass Update window to enter or change
->   purchase order generator options for several items at once. Refer to
->   Updating purchase order generator options for several items for more
->   information.*
+>   *You can use the Purchase Order Item Mass Update window to enter or change purchase order generator options for several items at once. Refer to Updating purchase order generator options for several items for more information.*
 
 How quantities are calculated for suggested purchase orders
 -----------------------------------------------------------
@@ -4575,7 +4107,6 @@ Entering default values for resource planning
 >   **To enter default values for resource planning:**
 
 1.  Open the Resource Planning Site Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Site Resource Planning)
 
 ![](media/83aa0b3623ba4ad3eb16ddbe509948c5.jpg)
@@ -4688,7 +4219,6 @@ Assigning kit components
 >   **To assign kit components:**
 
 1.  Open the Item Kit Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Kits)
 
 ![](media/2d21e2523afbe035d8984737cf674971.jpg)
@@ -4735,7 +4265,6 @@ Deleting a component from a kit
 >   **To delete a component from a kit:**
 
 1.  Open the Item Kit Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Kits)
 
 1.  Enter or select a kit item number.
@@ -4788,7 +4317,6 @@ Entering item history
 >   **To enter item history:**
 
 1.  Open the Item History window.
-
 >   (Inventory \>\> Cards \>\> History)
 
 ![](media/5e646ae95d89b00c8b0476696f524a6b.jpg)
@@ -4841,7 +4369,6 @@ a projection.
 **To enter item projections:**
 
 1.  Open the Item History window.
-
 >   (Inventory \>\> Cards \>\> History) 2. Select an item number.
 
 1.  Select a site ID.
@@ -4914,7 +4441,6 @@ Setting up count intervals for several items
 >   **To set up count intervals for several items:**
 
 1.  Open the Stock Count Cycle Assignment window.
-
 (Inventory \>\> Cards \>\> Count Cycle Assignment)
 
 ![](media/0cd306013fb7f5ae6f25e12e4beac2c9.jpg)
@@ -4978,7 +4504,6 @@ Setting up a count interval for one item
 >   **To set up a count interval for one item:**
 
 1.  Open the Item Quantities Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Quantities/Sites)
 
 1.  Enter or select an item.
@@ -5085,7 +4610,6 @@ Creating or modifying a landed cost record
 >   **To create or modify a landed cost record:**
 
 1.  Open the Landed Cost Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Landed Cost)
 
 ![](media/7652ef66f617100cc03be33afdd93031.jpg)
@@ -5211,7 +4735,6 @@ Effects of deleting a landed cost record
 >   **To create a landed cost group:**
 
 1.  Open the Landed Cost Group Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Landed Cost Group)
 
 ![](media/8860169b1033d727b6ee0c8a93fe4260.jpg)
@@ -5250,7 +4773,6 @@ Effects of deleting a landed cost record
 >   **To delete a landed cost from a landed cost group:**
 
 1.  Open the Landed Cost Group Maintenance window.
-
 >   (Inventory \>\> Cards \>\> Landed Cost Group)
 
 1.  Enter or select a landed cost group.
@@ -5371,7 +4893,6 @@ Chapter 20: Batches
 >   **To create a batch:**
 
 1.  Open the Inventory Batch Entry window.
-
 >   (Inventory \>\> Transactions \>\> Batches)
 
 ![](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
@@ -5428,7 +4949,6 @@ Chapter 20: Batches
 >   **To modify a batch:**
 
 1.  Open the Inventory Batch Entry window.
-
 >   (Inventory \>\> Transactions \>\> Batches)
 
 1.  Enter or select the batch ID and origin.
@@ -5462,7 +4982,6 @@ Chapter 20: Batches
 >   **To delete a batch:**
 
 1.  Open the Inventory Batch Entry window.
-
 >   (Inventory \>\> Transactions \>\> Batches)
 
 1.  Enter or select a batch ID and the appropriate origin.
@@ -5765,7 +5284,6 @@ necessary.*
 >   **To change the quantity type of an item:**
 
 1.  Open the Item Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
 1.  Enter the document number and date.
@@ -5923,7 +5441,6 @@ necessary.*
 >   **To specify lot numbers for a transfer:**
 
 1.  Open the Item Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
 1.  Enter a transfer transaction for a lot-numbered item. Refer to *Transferring
@@ -5969,7 +5486,6 @@ expired.*
 >   **To specify serial numbers for a transfer:**
 
 1.  Open the Item Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
 1.  Enter a transfer transaction for a serial-numbered item. Refer to
@@ -6011,7 +5527,6 @@ expired.*
 >   **To change lot numbers for an in-transit transfer:**
 
 1.  Open the In-Transit Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> In-Transit Transfer Entry)
 
 1.  Enter an in-transit transfer transaction for a lot-numbered item. Refer to
@@ -6069,7 +5584,6 @@ expired.*
 >   **To change serial numbers for an in-transit transfer:**
 
 1.  Open the In-Transit Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> In-Transit Transfer Entry)
 
 1.  Enter an in-transit transfer transaction for a serial-numbered item. Refer
@@ -6204,7 +5718,6 @@ expired.*
 
 1.  Open a transaction entry window. You can use the Item Transaction Entry
     window or the Item Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> Transaction Entry or Transfer Entry)
 
 1.  Enter or select a transaction.
@@ -6250,7 +5763,6 @@ expired.*
 >   **To transfer quantities from one bin to another:**
 
 1.  Open the Item Bin Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> Bin Transfer Entry)
 
 ![](media/fd70bf0222dc1fa265c3418becc038b3.jpg)
@@ -6299,7 +5811,6 @@ expired.*
 >   **To specify lot numbers for a bin-to-bin transfer:**
 
 1.  Open the Item Bin Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> Bin Transfer Entry)
 
 1.  Enter basic information about the transfer of an item tracked by lot
@@ -6341,7 +5852,6 @@ expired.*
 >   **To specify serial numbers for a bin-to-bin transfer:**
 
 1.  Open the Item Bin Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> Bin Transfer Entry)
 
 1.  Enter basic information about the transfer of an item tracked by serial
@@ -6440,9 +5950,7 @@ expired.*
 >   **To delete an inventory transaction:**
 
 1.  Open the Item Transaction Entry window or the Item Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> Transaction Entry)
-
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
 1.  Enter or select the document type and number.
@@ -6463,7 +5971,6 @@ expired.*
 >   **To delete an in-transit transfer transaction:**
 
 1.  Open the In-Transit Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> In-Transit Transfer Entry)
 
 1.  Enter or select the document number of an in-transit transfer that has an
@@ -6563,7 +6070,6 @@ Chapter 22: Stock count schedules
 >   **To create or modify a stock count schedule:**
 
 1.  Open the Stock Count Schedule window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Schedule)
 
 ![](media/a2473bfba6a58a2fbcb8ac0c4858caa1.jpg)
@@ -6619,7 +6125,6 @@ Chapter 22: Stock count schedules
 >   **To add many items to a stock count schedule:**
 
 1.  Open the Stock Count Maintenance window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Schedule)
 
 1.  Enter or select a stock count ID. The status of the stock count must be
@@ -6665,7 +6170,6 @@ Available.*
 >   **To remove items from a stock count schedule:**
 
 1.  Open the Stock Count Schedule window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Schedule)
 
 1.  Enter or select a stock count ID.
@@ -6691,7 +6195,6 @@ Available.*
 >   **To start a stock count schedule:**
 
 1.  Open the Stock Count Schedule window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Schedule)
 
 1.  Enter or select a stock count ID with Available status.
@@ -6810,9 +6313,8 @@ Available.*
 >   **To cancel a stock count schedule:**
 
 1.  Open the Stock Count Schedule window.
-
->   (Inventory \>\> Transactions \>\> Stock Count Schedule) 2. Enter or select a
->   stock count schedule that has a Started status.
+>   (Inventory \>\> Transactions \>\> Stock Count Schedule) 
+2.  Enter or select a stock count schedule that has a Started status.
 
 1.  Choose Cancel Count.
 
@@ -6831,7 +6333,6 @@ Available.*
 >   **To delete a stock count schedule:**
 
 1.  Open the Stock Count Schedule window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Schedule)
 
 1.  Enter or select a stock count schedule with Available status.
@@ -6949,7 +6450,6 @@ Chapter 23: Stock count processing
 >   **To enter stock count results:**
 
 1.  Open the Stock Count Entry window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
 ![](media/a2473bfba6a58a2fbcb8ac0c4858caa1.jpg)
@@ -7063,9 +6563,7 @@ Chapter 23: Stock count processing
 >   **To change the default stock count date:**
 
 1.  Open the Stock Count Date Entry window.
-
->   (Inventory \>\> Transactions \>\> Stock Count Entry \>\> enter or select a
->   stock count ID \>\> Document Date expansion button)
+>   (Inventory \>\> Transactions \>\> Stock Count Entry \>\> enter or select a stock count ID \>\> Document Date expansion button)
 
 ![](media/74efbd378e81338bc4900de489ebc5ce.jpg)
 
@@ -7097,7 +6595,6 @@ Chapter 23: Stock count processing
 >   **To enter results in a different unit of measure:**
 
 1.  Open the Stock Count Entry window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
 1.  Enter or select the stock count ID.
@@ -7144,9 +6641,7 @@ Chapter 23: Stock count processing
 >   **To enter stock count lot number information:**
 
 1.  Open the Stock Count Lot Number Entry window.
-
->   (Inventory \>\> Transactions \>\> Stock Count Entry \>\> select an item that
->   tracks lot numbers \>\> Serial/Lot button)
+>   (Inventory \>\> Transactions \>\> Stock Count Entry \>\> select an item that tracks lot numbers \>\> Serial/Lot button)
 
 ![](media/af3f9a5559d8d1c2ba05e91e4e6ba301.jpg)
 
@@ -7191,9 +6686,7 @@ Chapter 23: Stock count processing
 >   **To enter stock count serial number information:**
 
 1.  Open the Stock Count Serial Number Entry window.
-
->   (Inventory \>\> Transactions \>\> Stock Count Entry \>\> select an item that
->   tracks lot numbers \>\> Serial/Lot button)
+>   (Inventory \>\> Transactions \>\> Stock Count Entry \>\> select an item that tracks lot numbers \>\> Serial/Lot button)
 
 ![](media/bd7d3ca31a788f329f66630d0522e915.jpg)
 
@@ -7240,9 +6733,7 @@ Chapter 23: Stock count processing
 
 1.  Open the Stock Count Lot Number Entry window or the Stock Count Serial
     Number Entry window.
-
->   (Inventory \>\> Transactions \>\> Stock Count Entry \>\> select an item that
->   tracks lot or serial numbers \>\> Serial/Lot button)
+>   (Inventory \>\> Transactions \>\> Stock Count Entry \>\> select an item that tracks lot or serial numbers \>\> Serial/Lot button)
 
 1.  Put the insertion pointer in the line with the incorrect lot or serial
     number.
@@ -7268,7 +6759,6 @@ Chapter 23: Stock count processing
 >   **To change accounts for posting a count variance:**
 
 1.  Open the Stock Count Entry window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
 1.  Enter or select a stock count ID.
@@ -7315,7 +6805,6 @@ Chapter 23: Stock count processing
 >   **To verify variance amounts:**
 
 1.  Open the Stock Count Entry window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
 >   *You also can open the Unposted Item Transactions window and the Item
@@ -7366,7 +6855,6 @@ Chapter 23: Stock count processing
 >   **To clear stock count entries:**
 
 1.  Open the Stock Count Entry window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
 1.  Enter or select a stock count ID.
@@ -7391,7 +6879,6 @@ Chapter 23: Stock count processing
 >   **To process a stock count:**
 
 1.  Open the Stock Count Entry window.
-
 >   (Inventory \>\> Transactions \>\> Stock Count Entry)
 
 1.  Enter or select a stock count ID.
@@ -7441,9 +6928,7 @@ Chapter 24: Posting
 
 1.  Enter the transaction information in the Item Transaction Entry window or
     the Item Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> Transaction Entry)
-
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
 1.  Enter the transaction. Refer to *Chapter 21, “Transaction entry,”* for more
@@ -7489,7 +6974,6 @@ Chapter 24: Posting
     company’s data.
 
 2.  Open the Inventory Batch Entry window.
-
 >   (Inventory \>\> Transactions \>\> Batches)
 
 ![](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
@@ -7531,7 +7015,6 @@ Chapter 24: Posting
     company’s data.
 
 2.  Open the Inventory Series Posting window.
-
 >   (Inventory \>\> Transactions \>\> Series Post)
 
 ![](media/d6dbcbed9e12a1cf037d2130848003f9.jpg)
@@ -7555,8 +7038,6 @@ Chapter 24: Posting
 
     -   Posting journals may be printed, depending on how you set up posting
         options in the Posting Setup window.
-
-210 I N V E N T O R Y C O N T R O L
 
 Chapter 25: Transaction corrections
 -----------------------------------
@@ -7600,9 +7081,7 @@ Chapter 25: Transaction corrections
 >   **To modify an unposted transaction:**
 
 1.  Open the Item Transaction Entry or the Item Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> Transaction Entry)
-
 >   (Inventory \>\> Transactions \>\> Transfer Entry)
 
 1.  Enter or select the document number assigned to the transaction you want to
@@ -7626,7 +7105,6 @@ Chapter 25: Transaction corrections
 **To modify an in-transit transfer transaction:**
 
 1.  Open the In-Transit Transfer Entry window.
-
 >   (Inventory \>\> Transactions \>\> In-Transit Transfer Entry)
 
 1.  Enter or select the document number assigned to the transaction you want to
@@ -7690,7 +7168,6 @@ purchase receipt, refer to *Chapter 31, “Item cost adjustments.”*
 >   **To enter a transaction increase adjustment:**
 
 1.  Open the Inventory Batch Entry window.
-
 >   (Inventory \>\> Transactions \>\> Batches)
 
 1.  Enter a descriptive name and comment that includes the document number of
@@ -7734,7 +7211,6 @@ purchase receipt, refer to *Chapter 31, “Item cost adjustments.”*
 **To enter a transaction decrease adjustment:**
 
 1.  Open the Inventory Batch Entry window.
-
 >   (Inventory \>\> Transactions \>\> Batches)
 
 1.  Enter a descriptive name and comment that includes the document number of
@@ -7775,7 +7251,6 @@ move five items to the South store.
 >   **To enter a transfer increase adjustment:**
 
 1.  Open the Inventory Batch Entry window.
-
 >   (Inventory \>\> Transactions \>\> Batches)
 
 1.  Enter a descriptive name and comment that includes the document number of
@@ -7817,7 +7292,6 @@ move five items to the South store.
 >   **To enter a transfer decrease adjustment:**
 
 1.  Open the Inventory Batch Entry window.
-
 >   (Inventory \>\> Transactions \>\> Batches)
 
 1.  Enter a descriptive name and comment that includes the document number of
@@ -7843,8 +7317,6 @@ move five items to the South store.
 2.  Choose Save.
 
 3.  Choose File \>\> Print to print an edit list to verify your entries.
-
-##### 216 I N V E N T O R Y C O N T R O L
 
 Part 4: Inquiries and reports
 =============================
@@ -7931,7 +7403,8 @@ Chapter 26: Item inquiries
 
 >   **To view item information:**
 
-1.  Open the Item Inquiry window. (Inventory \>\> Inquiry \>\> Item)
+1.  Open the Item Inquiry window. 
+>   (Inventory \>\> Inquiry \>\> Item)
 
 2.  Enter or select the item to view.
 
@@ -7998,7 +7471,6 @@ Chapter 26: Item inquiries
 >   **To view item allocation information:**
 
 1.  Open the Item Allocation Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Item Allocation)
 
 ![](media/285fd579eab9fea4a6d19211868528d5.jpg)
@@ -8029,7 +7501,6 @@ Chapter 26: Item inquiries
 >   **To view bin quantity information:**
 
 1.  Open the Bin Quantity Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Bin Quantities)
 
 ![](media/edf42f16e96e7f5066c67d97515454ee.jpg)
@@ -8091,7 +7562,6 @@ Chapter 26: Item inquiries
 >   **To view serial number information:**
 
 1.  Open the Serial Number Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Serials)
 
 ![](media/f7154d7891501fb003187c5be82d4f3a.jpg)
@@ -8153,7 +7623,6 @@ Chapter 26: Item inquiries
 >   **To view lot number information:**
 
 1.  Open the Lot Number Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Lots)
 
 ![](media/c3495d95212a72360f1240f7b2d2226c.jpg)
@@ -8209,7 +7678,6 @@ Chapter 26: Item inquiries
 >   **To view lot attribute information:**
 
 1.  Open the Lot Number Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Lots)
 
 1.  Enter or select a lot numbered item.
@@ -8235,7 +7703,6 @@ Chapter 26: Item inquiries
 >   **To view planning information for an item:**
 
 1.  Open the Item Resource Planning Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Item Resource Planning)
 
 ![](media/762b2055c48f426594deb577ffc8455b.jpg)
@@ -8266,7 +7733,6 @@ Chapter 26: Item inquiries
 >   **To view a life cycle serial or lot number trace:**
 
 1.  Open the Serial/Lot Trace Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Serial/Lot Trace)
 
 ![](media/de4327bb1c81954f3b5815d68e72ad4b.jpg)
@@ -8479,7 +7945,6 @@ LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 >   **To view a bill of materials trace:**
 
 1.  Open the Serial/Lot Trace Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Serial/Lot Trace)
 
 1.  Create a life cycle trace. See *Viewing a life cycle serial or lot number trace* for more information.
@@ -8507,7 +7972,6 @@ LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 >   **To view a recall serial and lot number trace:**
 
 1.  Open the Serial/Lot Trace Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Serial/Lot Trace)
 
 1.  Select one of the following recall trace options from the I Need To field.
@@ -8562,7 +8026,6 @@ LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 >   **To view inventory available to promise information:**
 
 1.  Open the Inventory Available to Promise Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Available to Promise)
 
 ![](media/f0496b96880cd19b7adb7962b389b6fc.jpg)
@@ -8597,7 +8060,6 @@ Chapter 27: Standard pricing inquiries
 >   **To view price list information:**
 
 1.  Open the Item Price List Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Price List)
 
 ![](media/8523964472bc8616c0a04dcb98a29e46.jpg)
@@ -8631,7 +8093,6 @@ If you’re using standard pricing, you can use the Item Price List Option Inqui
 >   **To view pricing option information:**
 
 1.  Open the Item Price List Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Price List)
 
 >   Enter or select an item number.
@@ -8686,7 +8147,6 @@ Chapter 28: Extended pricing inquiries
 >   **To trace a price calculation:**
 
 1.  Open the Price Trace Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Extended Pricing \>\> Price Trace)
 
 ![](media/8a3e68609967346f4662af725541c1cc.jpg)
@@ -8736,7 +8196,6 @@ Chapter 28: Extended pricing inquiries
 >   **To view the items and price groups in a price sheet:**
 
 1.  Open the Price Sheet Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Extended Pricing \>\> Price Sheets)
 
 ![](media/9991591514b6194f652356bed2d99328.jpg)
@@ -8768,7 +8227,6 @@ Chapter 28: Extended pricing inquiries
 >   **To view price sheets for a selected item or price group:**
 
 1.  Open the Item Price Sheet Inquiry window.
-
 >   (Inventory \>\> Inquiry \>\> Extended Pricing \>\> Items)
 
 ![](media/79e161e6f823f9a1cd952f135c26b4b5.jpg)
