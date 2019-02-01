@@ -457,63 +457,35 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 
 6.  Specify the typical balance—debit or credit. Asset and expense accounts normally have debit balances, while liability, revenue, and equity accounts normally have credit balances. For example, your Cash account is an asset account, and it typically should have a debit balance.
 
-2.  If the transaction origin in the Posting Setup window is set up to use
-    account settings, decide how much detail to post to this account from each
-    series.
+7.  If the transaction origin in the Posting Setup window is set up to use account settings, decide how much detail to post to this account from each series.
 
-    -   Select Detail to post a separate distribution amount to this account for
-        each transaction in a batch.
+    -   Select Detail to post a separate distribution amount to this account for each transaction in a batch.
 
-    -   Select Summary to post a summarized total for an entire group of
-        transactions to this account.
+    -   Select Summary to post a summarized total for an entire group of transactions to this account.
 
->   For more information about posting setup, refer to the System Setup
->   instructions (Help \>\> Contents \>\> select Setting Up the System).
+>   For more information about posting setup, refer to the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
-1.  Select the series where you expect to use this posting account; the account
-    will appear in all lookup windows in the selected series. Use the SHIFT and
-    CTRL keys to select more than one series.
+8.  Select the series where you expect to use this posting account; the account will appear in all lookup windows in the selected series. Use the SHIFT and CTRL keys to select more than one series.
 
-2.  Enter additional information in the user-defined fields about the posting
-    account that you're setting up. The information will appear on the Posting
-    Accounts List and the Accounts List beneath the headings that were entered
-    for user-defined fields in the General Ledger Setup window.
+9.  Enter additional information in the user-defined fields about the posting account that you're setting up. The information will appear on the Posting Accounts List and the Accounts List beneath the headings that were entered for user-defined fields in the General Ledger Setup window.
 
-3.  Choose Summary to view open-year summary information for the account. Choose
-    History to view and enter historical year summary information. For more
-    information on entering account balances and history, see *Chapter 9,
-    “Beginning balances and history.”*
+10.  Choose Summary to view open-year summary information for the account. Choose History to view and enter historical year summary information. For more information on entering account balances and history, see *Chapter 9, “Beginning balances and history.”*
 
-4.  Choose Budget to enter a budget for the account. You can set up a budget for
-    the account now or wait until all accounts have been entered.
+11.  Choose Budget to enter a budget for the account. You can set up a budget for the account now or wait until all accounts have been entered.
 
-5.  Choose Analysis to enter default Multidimensional Analysis information. For
-    more information, refer to the Multidimensional Analysis documentation.
+12.  Choose Analysis to enter default Multidimensional Analysis information. For more information, refer to the Multidimensional Analysis documentation.
 
-6.  If you’re using Multicurrency Management, choose Currency to assign
-    currencies to the account.
+13.  If you’re using Multicurrency Management, choose Currency to assign currencies to the account.
 
->   You can mark Revalue Account to revalue the account when the revaluation
->   procedure is performed. Typically, cash accounts for another currency are
->   revalued to calculate the unrealized gain or loss based on fluctuating
->   exchange rates. You can revalue based on the net change amount for the
->   revaluation period or based on the period balance.
+>   You can mark Revalue Account to revalue the account when the revaluation procedure is performed. Typically, cash accounts for another currency are revalued to calculate the unrealized gain or loss based on fluctuating exchange rates. You can revalue based on the net change amount for the revaluation period or based on the period balance.
 
-1.  Choose Save to save the account. Redisplay the account and choose File \>\>
-    Print or the printer icon button to verify your entries with a Posting
-    Accounts List.
+14.  Choose Save to save the account. Redisplay the account and choose File \>\> Print or the printer icon button to verify your entries with a Posting Accounts List.
 
 #### Deleting or inactivating a posting account
 
->   Use the Account Maintenance window to delete or inactivate an account. If an
->   account has become obsolete and you’re not planning to use it again, you can
->   delete it from the chart of accounts. In other situations, you can
->   inactivate an account because it has year-to-date activity and can’t be
->   deleted from the chart of accounts. If you inactivate an account, you won’t
->   be able to post to that account.
+>   Use the Account Maintenance window to delete or inactivate an account. If an account has become obsolete and you’re not planning to use it again, you can delete it from the chart of accounts. In other situations, you can inactivate an account because it has year-to-date activity and can’t be deleted from the chart of accounts. If you inactivate an account, you won’t be able to post to that account.
 
->   To delete an account from the chart of accounts, it must first meet several
->   conditions:
+>   To delete an account from the chart of accounts, it must first meet several conditions:
 
 -   No balance
 
@@ -529,31 +501,20 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 
 -   No transaction history records
 
->   If the account has any activity for an open year, the account can’t be
->   deleted. However, once the year is closed and the above conditions are met,
->   you can remove transaction history for the account and delete it. For more
->   information, see *Removing or printing history*. When you remove transaction
->   history, you won’t be able to view the transaction detail in inquiry or on
->   reports. When you choose to delete an account, all budget information for
->   the account also is deleted.
+>   If the account has any activity for an open year, the account can’t be deleted. However, once the year is closed and the above conditions are met, you can remove transaction history for the account and delete it. For more information, see *Removing or printing history*. When you remove transaction history, you won’t be able to view the transaction detail in inquiry or on reports. When you choose to delete an account, all budget information for the account also is deleted.
 
->   You can inactivate a posting account at any time. Inactive accounts continue
->   to appear on the financial statements if they have year-to-date activity.
->   When you print other reports in General Ledger, such as account lists, you
->   can include inactive accounts.
+>   You can inactivate a posting account at any time. Inactive accounts continue to appear on the financial statements if they have year-to-date activity. When you print other reports in General Ledger, such as account lists, you can include inactive accounts.
 
 >   **To delete or inactivate a posting account:**
 
 1.  Open the Account Maintenance window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Account)
 
-1.  Enter or select the account to delete or inactivate.
+2.  Enter or select the account to delete or inactivate.
 
 **Chapter 4: Unit accounts**
 
->   Unit accounts track nonfinancial quantities such as employee headcount,
->   square footage or the number of customers with past due accounts.
+>   Unit accounts track nonfinancial quantities such as employee headcount, square footage or the number of customers with past due accounts.
 
 >   This information is divided into the following sections:
 
@@ -567,83 +528,48 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 
 #### About unit accounts
 
->   Unit accounts are similar to posting accounts. Both are used in transaction
->   entry, and historical information and budgets can be kept for both types of
->   accounts.
+>   Unit accounts are similar to posting accounts. Both are used in transaction entry, and historical information and budgets can be kept for both types of accounts.
 
->   When you post to unit accounts, however, you post quantities rather than
->   amounts. Unit accounts don’t appear on financial statements.
+>   When you post to unit accounts, however, you post quantities rather than amounts. Unit accounts don’t appear on financial statements.
 
->   You can use unit accounts to compare financial and nonfinancial information.
->   You can also use them with posting accounts to calculate information such as
->   sales per employee. Use unit accounts with variable allocation accounts to
->   allocate amounts such as rent expense to each department based on its square
->   footage. For more information on variable allocation accounts, see *Chapter
->   6, “Variable allocation accounts.”*
+>   You can use unit accounts to compare financial and nonfinancial information. You can also use them with posting accounts to calculate information such as sales per employee. Use unit accounts with variable allocation accounts to allocate amounts such as rent expense to each department based on its square footage. For more information on variable allocation accounts, see *Chapter 6, “Variable allocation accounts.”*
 
 #### Setting up a unit account
 
->   Use the Unit Account Maintenance window to set up or add a unit account.
->   Before you add accounts to an existing chart of accounts, choose File \>\>
->   Print or the printer icon button to print a Unit Accounts List to determine
->   whether accounts should be added to fit the current needs of your business.
->   You also can use this window to view period balances and net change balances
->   for the selected account.
+>   Use the Unit Account Maintenance window to set up or add a unit account. Before you add accounts to an existing chart of accounts, choose File \>\> Print or the printer icon button to print a Unit Accounts List to determine whether accounts should be added to fit the current needs of your business. You also can use this window to view period balances and net change balances for the selected account.
 
 >   **To set up a unit account:**
 
 1.  Open the Unit Account Maintenance window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Unit Account)
 
-1.  Enter an account identifier using any combination of letters or numbers. You
-    also can enter a description and an alias. Refer to *Understanding account
-    aliases* for more information.
+2.  Enter an account identifier using any combination of letters or numbers. You also can enter a description and an alias. Refer to *Understanding account aliases* for more information.
 
->   If you’ve set up account segments already and you leave the description
->   field blank. The account description will be created automatically by
->   combining the account segment descriptions.
+>   If you’ve set up account segments already and you leave the description field blank. The account description will be created automatically by combining the account segment descriptions.
 
 >   To make changes to an existing unit account, enter or select the account.
 
-1.  Select the number or decimal places for the account’s amounts.
+3.  Select the number or decimal places for the account’s amounts.
 
-2.  Choose the product series that will use this account.
+4.  Choose the product series that will use this account.
 
-3.  Choose History to view and enter historical year summary information. For
-    more information on entering account history, see *Chapter 9, “Beginning
-    balances and history.”*
+5.  Choose History to view and enter historical year summary information. For more information on entering account history, see *Chapter 9, “Beginning balances and history.”*
 
-4.  You can choose Budget to enter a budget for the unit account.
+6.  You can choose Budget to enter a budget for the unit account.
 
-5.  Choose Save to save the account. Redisplay the account and choose File \>\>
-    Print or the printer icon button to verify your entries with a Unit Accounts
-    List.
+7.  Choose Save to save the account. Redisplay the account and choose File \>\> Print or the printer icon button to verify your entries with a Unit Accounts List.
 
 #### Posting to a unit account
 
-You can post adjustments to unit accounts in the transaction entry window. The
-amount posted to a unit account will not affect the transaction totals or
-financial statements. Unit accounts have a debit balance and are assigned to the
-non-financial account category. You can enter a one-sided transaction to adjust
-a unit account balance.
+You can post adjustments to unit accounts in the transaction entry window. The amount posted to a unit account will not affect the transaction totals or financial statements. Unit accounts have a debit balance and are assigned to the non-financial account category. You can enter a one-sided transaction to adjust a unit account balance.
 
-For example, assume you have set up a unit account to track square footage in a
-building. In January, you sign a lease to rent an additional 10,000 square feet
-in the building. You can enter a one-sided transaction in the Transaction Entry
-window or add a line to an existing transaction to increase the unit account
-balance.
+For example, assume you have set up a unit account to track square footage in a building. In January, you sign a lease to rent an additional 10,000 square feet in the building. You can enter a one-sided transaction in the Transaction Entry window or add a line to an existing transaction to increase the unit account balance.
 
 #### Deleting or inactivating a unit account
 
-Use the Unit Account Maintenance window to delete or inactivate a unit account.
-If an account has become obsolete and you’re not planning to use it again, you
-may want to delete it from the chart of accounts. In other situations, you may
-want to inactivate an account because it has year-to-date activity and can’t be
-deleted from the chart of accounts.
+Use the Unit Account Maintenance window to delete or inactivate a unit account. If an account has become obsolete and you’re not planning to use it again, you may want to delete it from the chart of accounts. In other situations, you may want to inactivate an account because it has year-to-date activity and can’t be deleted from the chart of accounts.
 
-To delete an account from the chart of accounts, it must first meet several
-conditions:
+To delete an account from the chart of accounts, it must first meet several conditions:
 
 -   No balance
 
@@ -659,49 +585,28 @@ conditions:
 
 -   No transaction history records
 
-If the account has any activity for an open year, the account can’t be deleted.
-However, once the year is closed and the above conditions are met, you can
-remove transaction history for the account and delete it. For more information,
-see *Removing or printing history*. When you remove transaction history, you
-won’t be able to view the transaction detail in inquiry or on reports. When you
-choose to delete an account, all budget information for the account also is
-deleted.
+If the account has any activity for an open year, the account can’t be deleted. However, once the year is closed and the above conditions are met, you can remove transaction history for the account and delete it. For more information, see *Removing or printing history*. When you remove transaction history, you won’t be able to view the transaction detail in inquiry or on reports. When you choose to delete an account, all budget information for the account also is deleted.
 
->   You can inactivate a unit account at any time. Inactive accounts continue to
->   appear on the financial statements if they have year-to-date activity. When
->   you print other reports in General Ledger, such as account lists, you can
->   include inactive accounts.
+>   You can inactivate a unit account at any time. Inactive accounts continue to appear on the financial statements if they have year-to-date activity. When you print other reports in General Ledger, such as account lists, you can include inactive accounts.
 
 >   **To delete or inactivate a unit account:**
 
 1. Open the Unit Account Maintenance window.
+>   (Financial \>\> Cards \>\> Financial \>\> Unit Account) 
 
->   (Financial \>\> Cards \>\> Financial \>\> Unit Account) 2. Enter or select
->   the account to delete or inactivate.
+2. Enter or select the account to delete or inactivate.
 
-1.  Choose Delete to delete the account. Mark the Inactive box to inactivate the
-    account.
+3.  Choose Delete to delete the account. Mark the Inactive box to inactivate the account.
 
-2.  Choose Save to save the changes.
+4.  Choose Save to save the changes.
 
-3.  Print a Unit Accounts List to review the changes you’ve made to the chart of
-    accounts. For more information on printing lists and reports, see *Chapter
-    31, “General Ledger reports.”*
+5.  Print a Unit Accounts List to review the changes you’ve made to the chart of accounts. For more information on printing lists and reports, see *Chapter 31, “General Ledger reports.”*
 
 **Chapter 5: Fixed allocation accounts**
 
->   Fixed allocation accounts are used to distribute fixed percentages of a
->   single transaction among several accounts. For example, a fixed allocation
->   account might be used to divide utility expenses among the departments
->   within a company. When
+>   Fixed allocation accounts are used to distribute fixed percentages of a single transaction among several accounts. For example, a fixed allocation account might be used to divide utility expenses among the departments within a company. When  you post transactions to allocation accounts, the amounts are allocated to distribution accounts based on percentages you define.
 
->   you post transactions to allocation accounts, the amounts are allocated to
->   distribution accounts based on percentages you define.
-
->   Allocation accounts don’t appear on the financial statements—only the
->   corresponding distribution accounts are shown. Once you’ve posted the
->   transaction, the balances of the distribution accounts assigned to the
->   allocation account reflect the changes you’ve made during transaction entry.
+>   Allocation accounts don’t appear on the financial statements—only the corresponding distribution accounts are shown. Once you’ve posted the transaction, the balances of the distribution accounts assigned to the allocation account reflect the changes you’ve made during transaction entry.
 
 >   This information is divided into the following sections:
 
@@ -711,109 +616,61 @@ deleted.
 
 #### Setting up a fixed allocation account
 
->   Use the Fixed Allocation Maintenance window to set up a fixed allocation
->   account to distribute fixed percentages of a transaction among several
->   distribution accounts. Distribution accounts can be either posting or unit
->   accounts; however, all distribution accounts assigned to a single allocation
->   account must be the same account type, either posting or unit accounts.
->   Also, an allocation account can’t be assigned as a distribution account for
->   another allocation account.
+>   Use the Fixed Allocation Maintenance window to set up a fixed allocation account to distribute fixed percentages of a transaction among several distribution accounts. Distribution accounts can be either posting or unit accounts; however, all distribution accounts assigned to a single allocation account must be the same account type, either posting or unit accounts. Also, an allocation account can’t be assigned as a distribution account for another allocation account.
 
 >   **To set up a fixed allocation account:**
 
 1.  Open the Fixed Allocation Maintenance window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Fixed Allocation)
 
 ![](media/e6c8257b40dc4469ebc56fb0952ebc66.jpg)
 
-1.  Enter an account identifier using any combination of letters or numbers. You
-    also can enter a description and an alias. Refer to *Understanding account
-    aliases* for more information.
+2.  Enter an account identifier using any combination of letters or numbers. You also can enter a description and an alias. Refer to *Understanding account aliases* for more information.
 
->   If you’ve set up account segments already and you leave the description
->   field blank. The account description will be created automatically by
->   combining the account segment descriptions.
+>   If you’ve set up account segments already and you leave the description field blank. The account description will be created automatically by combining the account segment descriptions.
 
->   To make changes to an existing fixed allocation account, enter or select the
->   account.
+>   To make changes to an existing fixed allocation account, enter or select the account.
 
-1.  If a transaction origin in the Posting Setup window is set up to use account
-    settings, select how much detail to post to this account from each series.
+3.  If a transaction origin in the Posting Setup window is set up to use account settings, select how much detail to post to this account from each series.
 
-    -   Select Detail to post a separate distribution amount to this account for
-        each transaction in a batch.
+    -   Select Detail to post a separate distribution amount to this account for each transaction in a batch.
 
-    -   Select Summary to post a summarized total for an entire group of
-        transactions to this account.
+    -   Select Summary to post a summarized total for an entire group of transactions to this account.
 
-2.  Select the series where you expect to use this allocation account. The
-    account will appear in all lookup windows in the selected series.
+4.  Select the series where you expect to use this allocation account. The account will appear in all lookup windows in the selected series.
 
-3.  Enter or select distribution accounts and percentages.
+5.  Enter or select distribution accounts and percentages.
 
->   You can save a fixed allocation account even if the percentages for
->   distribution don’t equal 100%. However, you won’t be able to post
->   transactions to the account until they do.
+>   You can save a fixed allocation account even if the percentages for distribution don’t equal 100%. However, you won’t be able to post transactions to the account until they do.
 
-1.  Save the account. Redisplay the account and choose File \>\> Print or the
-    printer icon button to verify your entries with a Fixed Allocation Accounts
-    List.
+6.  Save the account. Redisplay the account and choose File \>\> Print or the printer icon button to verify your entries with a Fixed Allocation Accounts List.
 
 #### Deleting or inactivating a fixed allocation account
 
-Use the Fixed Allocation Maintenance window to delete or inactivate a fixed
-allocation account. Allocation accounts often are set up to accommodate a
-specific situation, such as a sales promotion where a specified amount of cash
-is distributed among locations, then broken down by department. Once the sales
-promotion is over, the account might no longer be of value and can be deleted
-from the chart of accounts.
+Use the Fixed Allocation Maintenance window to delete or inactivate a fixed allocation account. Allocation accounts often are set up to accommodate a specific situation, such as a sales promotion where a specified amount of cash is distributed among locations, then broken down by department. Once the sales promotion is over, the account might no longer be of value and can be deleted from the chart of accounts.
 
-In other situations, you might want to inactivate an account, rather than delete
-it from the chart of accounts. Inactivating an account prevents posting to the
-account, but keeps information about the account.
+In other situations, you might want to inactivate an account, rather than delete it from the chart of accounts. Inactivating an account prevents posting to the account, but keeps information about the account.
 
-Fixed allocation accounts can be deleted at any time, unless the account is used
-on any unposted transactions. When you delete a fixed allocation account, you’ll
-also delete associated records for distributions. The posting or unit accounts
-you’ve assigned as distributions and posted transactions that used the fixed
-allocation account won’t be affected.
+Fixed allocation accounts can be deleted at any time, unless the account is used on any unposted transactions. When you delete a fixed allocation account, you’ll also delete associated records for distributions. The posting or unit accounts you’ve assigned as distributions and posted transactions that used the fixed allocation account won’t be affected.
 
-The Fixed Allocation Accounts List displays all the fixed allocation accounts
-you’ve created, including distribution accounts. You should print this list
-periodically to ensure that your chart of accounts accurately reflects the
-current needs of your business. For more information on printing lists and
-reports, see *Chapter 31, “General Ledger reports.”*
+The Fixed Allocation Accounts List displays all the fixed allocation accounts you’ve created, including distribution accounts. You should print this list periodically to ensure that your chart of accounts accurately reflects the current needs of your business. For more information on printing lists and reports, see *Chapter 31, “General Ledger reports.”*
 
 **To delete or inactivate a fixed allocation account:**
 
 1.  Open the Fixed Allocation Maintenance window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Fixed Allocation)
 
-1.  Enter or select the allocation account you want to delete or inactivate.
+2.  Enter or select the allocation account you want to delete or inactivate.
 
-2.  Choose Delete to delete the account or mark the Inactive option to
-    inactivate the account.
+3.  Choose Delete to delete the account or mark the Inactive option to inactivate the account.
 
-3.  Choose Save to save the changes.
+4.  Choose Save to save the changes.
 
-4.  Choose File \>\> Print or the printer icon button to print a Fixed
-    Allocation
-
->   Accounts List to review the changes you’ve made to the chart of accounts.
+5.  Choose File \>\> Print or the printer icon button to print a Fixed Allocation Accounts List to review the changes you’ve made to the chart of accounts.
 
 **Chapter 6: Variable allocation accounts**
 
->   Variable allocation accounts are used to distribute percentages of a single
->   transaction to several different accounts, much like fixed allocation
->   accounts. You might use variable allocation accounts instead of fixed
->   allocation accounts when you need to break down expenses precisely. For
->   example, you could set up an account, Insurance Expense, and distribute the
->   expense among the distribution accounts set up for each department. The
->   expense could be further broken down by the number of employees in each
->   department, if you set up unit accounts that track each department’s head
->   count.
+>   Variable allocation accounts are used to distribute percentages of a single transaction to several different accounts, much like fixed allocation accounts. You might use variable allocation accounts instead of fixed allocation accounts when you need to break down expenses precisely. For example, you could set up an account, Insurance Expense, and distribute the expense among the distribution accounts set up for each department. The expense could be further broken down by the number of employees in each department, if you set up unit accounts that track each department’s head count.
 
 >   This information is divided into the following sections:
 
@@ -825,141 +682,75 @@ reports, see *Chapter 31, “General Ledger reports.”*
 
 #### Understanding variable allocation accounts
 
->   Although variable allocation accounts are similar to fixed allocation
->   accounts, variable allocation accounts don’t use fixed percentages to
->   calculate amounts that will be posted to the distribution accounts.
+>   Although variable allocation accounts are similar to fixed allocation accounts, variable allocation accounts don’t use fixed percentages to calculate amounts that will be posted to the distribution accounts.
 
->   Instead, you can use variable allocation accounts to distribute transactions
->   based on additional factors that might change over time, such as the number
->   of employees or the physical size of the departments in your business. These
->   additional factors are tracked by breakdown accounts. Breakdown accounts can
->   be posting accounts, like sales and expenses, or they can be unit accounts,
->   like the number of employees per department.
+>   Instead, you can use variable allocation accounts to distribute transactions based on additional factors that might change over time, such as the number of employees or the physical size of the departments in your business. These additional factors are tracked by breakdown accounts. Breakdown accounts can be posting accounts, like sales and expenses, or they can be unit accounts, like the number of employees per department.
 
->   When transactions are posted to a variable allocation account, the total is
->   divided among its distribution accounts, based on the percentages determined
->   by the breakdown accounts. You don’t need to enter these percentages,
->   because they are calculated based on the varying balance of each breakdown
->   account. Each time you post to a variable allocation account, the
->   percentages might vary because the balances of the breakdown accounts might
->   have changed.
+>   When transactions are posted to a variable allocation account, the total is divided among its distribution accounts, based on the percentages determined by the breakdown accounts. You don’t need to enter these percentages, because they are calculated based on the varying balance of each breakdown account. Each time you post to a variable allocation account, the percentages might vary because the balances of the breakdown accounts might have changed.
 
->   For example, assume you need to distribute the rent expense for a building
->   between several departments and use unit accounts to track the square
->   footage used by each department. You can set up a variable allocation
->   account and use the rent expense for each department as the distribution
->   accounts and the square footage unit accounts for the breakdown accounts.
->   When you post an amount to the variable allocation account, the balances of
->   the unit accounts are used to determine the rent expense amount to post to
->   each department.
+>   For example, assume you need to distribute the rent expense for a building between several departments and use unit accounts to track the square footage used by each department. You can set up a variable allocation account and use the rent expense for each department as the distribution accounts and the square footage unit accounts for the breakdown accounts. When you post an amount to the variable allocation account, the balances of the unit accounts are used to determine the rent expense amount to post to each department.
 
->   Variable allocation accounts don’t appear on financial statements because
->   they don’t have balances. The amounts posted to variable allocation accounts
->   are reflected in the balances of the distribution accounts. The distribution
->   accounts appear on financial statements if they’re posting accounts.
+>   Variable allocation accounts don’t appear on financial statements because they don’t have balances. The amounts posted to variable allocation accounts are reflected in the balances of the distribution accounts. The distribution accounts appear on financial statements if they’re posting accounts.
 
 #### Setting up a variable allocation account
 
->   Use the Variable Allocation Maintenance window to set up a variable
->   allocation account.
+>   Use the Variable Allocation Maintenance window to set up a variable allocation account.
 
-Distribution and breakdown accounts can be posting accounts or unit accounts.
-All distribution accounts assigned to a single allocation account must be the
-same account type. All breakdown accounts assigned to all distribution accounts,
-for that variable allocation account, also must be the same account type.
-However, your breakdown accounts don’t have to be the same account type as your
-distribution accounts. For example, you can enter posting accounts for the
-distribution accounts and unit accounts for the breakdown accounts. Other
-allocation accounts can’t be used as distribution or breakdown accounts.
+Distribution and breakdown accounts can be posting accounts or unit accounts. All distribution accounts assigned to a single allocation account must be the same account type. All breakdown accounts assigned to all distribution accounts, for that variable allocation account, also must be the same account type. However, your breakdown accounts don’t have to be the same account type as your distribution accounts. For example, you can enter posting accounts for the distribution accounts and unit accounts for the breakdown accounts. Other allocation accounts can’t be used as distribution or breakdown accounts.
 
 >   **To set up a variable allocation account:**
 
 1.  Open the Variable Allocation Maintenance window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Variable Allocation)
 
 ![](media/da43a9938115e9d6b0f3e7556627d56f.jpg)
 
-1.  Enter an account identifier using any combination of letters or numbers. You
-    also can enter a description and an alias. Refer to *Understanding account
-    aliases* for more information. If you’ve set up account segments already and
-    you leave the description field blank, Microsoft Dynamics GP will create the
-    account description automatically by combining the account segment
-    descriptions.
+2.  Enter an account identifier using any combination of letters or numbers. You also can enter a description and an alias. Refer to *Understanding account aliases* for more information. If you’ve set up account segments already and you leave the description field blank, Microsoft Dynamics GP will create the account description automatically by combining the account segment descriptions.
 
->   To make changes to an existing variable allocation account, enter or select
->   the account.
+>   To make changes to an existing variable allocation account, enter or select the account.
 
-1.  Indicate whether you want to calculate the percentages based on the year-to
-    date balance or on the transaction period balance of each breakdown account.
+3.  Indicate whether you want to calculate the percentages based on the year-to date balance or on the transaction period balance of each breakdown account.
 
->   The transaction period balance is the net amount posted to the breakdown
->   account in a period. The user date determines which period is used.
+>   The transaction period balance is the net amount posted to the breakdown account in a period. The user date determines which period is used.
 
-1.  If the transaction origin in the Posting Setup window is set up to use
-    account settings, select how much detail to post to General Ledger from each
-    series.
+4.  If the transaction origin in the Posting Setup window is set up to use account settings, select how much detail to post to General Ledger from each series.
 
-    -   Select Detail to post a separate distribution amount to this account for
-        each transaction in a batch.
+    -   Select Detail to post a separate distribution amount to this account for each transaction in a batch.
 
-    -   Select Summary to post a summarized total for an entire group of
-        transactions to this account.
+    -   Select Summary to post a summarized total for an entire group of transactions to this account.
 
-2.  Select the series where you expect to use this allocation account; the
-    account will appear in all lookup windows in the selected series.
+5.  Select the series where you expect to use this allocation account; the account will appear in all lookup windows in the selected series.
 
-3.  Enter or select distribution accounts.
+6.  Enter or select distribution accounts.
 
-4.  Enter or select breakdown accounts for each distribution account. The
-    balances of the breakdown accounts determine the percentage that will be
-    posted to each distribution account.
+7.  Enter or select breakdown accounts for each distribution account. The balances of the breakdown accounts determine the percentage that will be posted to each distribution account.
 
-5.  Choose Save to save the account. Redisplay the account and choose File \>\>
-    Print or the printer icon button to verify your entries with a Variable
-    Allocation Accounts List.
+8.  Choose Save to save the account. Redisplay the account and choose File \>\> Print or the printer icon button to verify your entries with a Variable Allocation Accounts List.
 
 #### Deleting or inactivating a variable allocation account
 
->   Use the Variable Allocation Maintenance window to delete or inactivate a
->   variable allocation account.
+>   Use the Variable Allocation Maintenance window to delete or inactivate a variable allocation account.
 
->   Variable allocation accounts can be deleted at any time unless the account
->   is used on any unposted transactions. When you delete a variable allocation
->   account, you also delete associated records for breakdowns and
->   distributions. The posting or unit accounts you’ve assigned as distributions
->   and breakdowns and posted transactions that used the variable allocation
->   account won’t be affected.
+>   Variable allocation accounts can be deleted at any time unless the account is used on any unposted transactions. When you delete a variable allocation account, you also delete associated records for breakdowns and distributions. The posting or unit accounts you’ve assigned as distributions and breakdowns and posted transactions that used the variable allocation account won’t be affected.
 
->   The Variable Allocation Accounts List contains all the variable allocation
->   accounts you’ve created, including breakdown and distribution accounts. You
->   should print this list periodically to ensure that your chart of accounts
->   accurately reflects the current needs of your business.
+>   The Variable Allocation Accounts List contains all the variable allocation accounts you’ve created, including breakdown and distribution accounts. You should print this list periodically to ensure that your chart of accounts accurately reflects the current needs of your business.
 
 >   **To delete or inactivate a variable allocation account:**
 
 1.  Open the Variable Allocation Maintenance window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Variable Allocation)
 
-1.  Enter or select the account to delete or inactivate.
+2.  Enter or select the account to delete or inactivate.
 
-2.  Choose Delete to delete the account or mark the Inactive option to
-    inactivate the account.
+3.  Choose Delete to delete the account or mark the Inactive option to inactivate the account.
 
-3.  Print a Variable Allocation Accounts List to review the changes you’ve made
-    to the chart of accounts.
+4.  Print a Variable Allocation Accounts List to review the changes you’ve made to the chart of accounts.
 
-4.  Choose Save to save the changes.
+5.  Choose Save to save the changes.
 
 **Chapter 7: Retained earnings accounts**
 
->   Retained earnings accounts are used for transferring the balances of
->   current-year profit and loss accounts during the year-end closing process.
->   The profit and loss accounts can be closed to two types of retained earnings
->   accounts: a single retained earnings account or divisional retained earnings
->   account. A net income or net loss amount is transferred to the retained
->   earnings account that you choose in the General Ledger Setup window.
+>   Retained earnings accounts are used for transferring the balances of current-year profit and loss accounts during the year-end closing process. The profit and loss accounts can be closed to two types of retained earnings accounts: a single retained earnings account or divisional retained earnings account. A net income or net loss amount is transferred to the retained earnings account that you choose in the General Ledger Setup window.
 
 >   This information is divided into the following sections:
 
@@ -973,61 +764,40 @@ allocation accounts can’t be used as distribution or breakdown accounts.
 
 #### Understanding single retained earnings accounts
 
->   A single retained earnings account can be a posting account or a fixed
->   allocation account. In a single retained earnings account, the net income or
->   net loss amount is closed to a single posting account.
+>   A single retained earnings account can be a posting account or a fixed allocation account. In a single retained earnings account, the net income or net loss amount is closed to a single posting account.
 
->   You can distribute the retained earnings to a fixed allocation retained
->   earnings account. You can use a fixed allocation account to post amounts to
->   distribution accounts based on the fixed percentage that you defined when
->   you set up the fixed allocation account.
+>   You can distribute the retained earnings to a fixed allocation retained earnings account. You can use a fixed allocation account to post amounts to distribution accounts based on the fixed percentage that you defined when you set up the fixed allocation account.
 
 #### Setting up a single retained earnings account
 
->   Use the General Ledger Setup window to set up a retained earnings account.
->   If you decide to close the profit and loss accounts to one retained earnings
->   account, the net income or net loss amount are closed to a single posting
->   account or fixed allocation account.
+>   Use the General Ledger Setup window to set up a retained earnings account. If you decide to close the profit and loss accounts to one retained earnings account, the net income or net loss amount are closed to a single posting account or fixed allocation account.
 
 *Select your retained earnings account before posting your beginning balances.*
 
 >   **To set up a single retained earnings account:**
 
 1. Open the General Ledger Setup window.
-
 >   (Financial \>\> Setup \>\> Financial \>\> General Ledger)
 
 ![](media/c677af1b6541a096eb006362eec181d1.jpg)
 
-1.  Enter or select a posting account or fixed allocation account to use as your
-    retained earnings account.
+2.  Enter or select a posting account or fixed allocation account to use as your retained earnings account.
 
-2.  Save the account.
+3.  Save the account.
 
 #### Understanding divisional retained earnings accounts
 
-You can close your profit and loss accounts to divisional retained earnings
-accounts. If you use divisional retained earnings accounts, you can close the
-profit and loss accounts for each division to the retained earnings accounts
-that corresponds to the department. Divisional retained earnings accounts also
-can be fixed allocation accounts.
+You can close your profit and loss accounts to divisional retained earnings accounts. If you use divisional retained earnings accounts, you can close the profit and loss accounts for each division to the retained earnings accounts that corresponds to the department. Divisional retained earnings accounts also can be fixed allocation accounts.
 
-Account segments are used to determine how the retained earnings will be divided
-when using a divisional retained earnings account. You can use divisional
-retained earnings accounts if the following conditions apply:
+Account segments are used to determine how the retained earnings will be divided when using a divisional retained earnings account. You can use divisional retained earnings accounts if the following conditions apply:
 
--   Your company uses an account segment to represent individual departments
-    within your company.
+-   Your company uses an account segment to represent individual departments within your company.
 
 -   A retained earnings account is set up for each department.
 
--   The account number used for retained earnings for each department is
-    identical, except for the account segment used to represent departments.
+-   The account number used for retained earnings for each department is identical, except for the account segment used to represent departments.
 
-For example, a company has three departments and three segments in the account
-format. The first account segment represents the department, the second segment
-is the account number and the third segment is a sub-account. A retained
-earnings account must be set up for each department as follows:
+For example, a company has three departments and three segments in the account format. The first account segment represents the department, the second segment is the account number and the third segment is a sub-account. A retained earnings account must be set up for each department as follows:
 
 | **Department** | **Retained earnings account** |
 |----------------|-------------------------------|
@@ -1035,46 +805,34 @@ earnings account must be set up for each department as follows:
 | Sales          | 200-3100-00                   |
 | Training       | 300-3100-00                   |
 
-If a retained earnings account was not set up for the training department, you
-won’t be able to complete a year end close for the company.
+If a retained earnings account was not set up for the training department, you won’t be able to complete a year end close for the company.
 
 #### Setting up divisional retained earnings accounts
 
-Use the Account Maintenance window to set up a divisional retained earnings
-account.
+Use the Account Maintenance window to set up a divisional retained earnings account.
 
 >   **To set up divisional retained earnings accounts:**
 
 1.  Open the Account Maintenance window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Account)
 
-1.  Set up a separate retained earnings account for each division. Each account
-    must be identical, except for the segment your division will be based on.
+2.  Set up a separate retained earnings account for each division. Each account must be identical, except for the segment your division will be based on.
 
->   *You must set up a retained earnings account for each division in the
->   company, otherwise the year-end close will not take place.*
+>   *You must set up a retained earnings account for each division in the company, otherwise the year-end close will not take place.*
 
-1.  Save your changes in the Account Maintenance window.
+3.  Save your changes in the Account Maintenance window.
 
-2.  Open the General Ledger Setup window.
-
+4.  Open the General Ledger Setup window.
 >   (Financial \>\> Setup \>\> Financial \>\> General Ledger)
 
-1.  Mark Close to Divisional Account Segments and enter or select the account
-    segment you’ll use as the divisional segment. For example, you might enter
-    the first segment, Department.
+5.  Mark Close to Divisional Account Segments and enter or select the account segment you’ll use as the divisional segment. For example, you might enter the first segment, Department.
 
-2.  Enter or select one of the retained earnings accounts set up earlier. This
-    account will be used as a template to find the retained earnings accounts
-    for the remaining divisions.
+6.  Enter or select one of the retained earnings accounts set up earlier. This account will be used as a template to find the retained earnings accounts for the remaining divisions.
 
  Chapter 8: Chart of accounts
 -----------------------------
 
->   A chart of accounts is a list of all accounts in General Ledger. You can
->   modify an existing chart of accounts or define segments to identify specific
->   business units.
+>   A chart of accounts is a list of all accounts in General Ledger. You can modify an existing chart of accounts or define segments to identify specific business units.
 
 >   This information is divided into the following sections:
 
@@ -1086,58 +844,34 @@ account.
 
 ### Setting up an account segment definition
 
->   Use the Account Segment Setup window to enter or change account segment
->   definitions for each account segment number.
+>   Use the Account Segment Setup window to enter or change account segment definitions for each account segment number.
 
 >   **To set up an account segment definition:**
 
 1.  Open the Account Segment Setup window.
-
 >   (Financial \>\> Setup \>\> Financial \>\> Segment)
 
 ![](media/a1e446c1babf1942a455107081983e6f.jpg)
 
-1.  Enter or select the segment ID to further identify.
+2.  Enter or select the segment ID to further identify.
 
-2.  Enter or select a segment number. For example, if all the accounts for Store
-    1 begin with 100, enter 100.
+3.  Enter or select a segment number. For example, if all the accounts for Store 1 begin with 100, enter 100.
 
-3.  Enter the description for the segment. For example, if you selected segment
-    number 100 and that segment number is for accounts at the North Store, you’d
-    enter North Store.
+4.  Enter the description for the segment. For example, if you selected segment number 100 and that segment number is for accounts at the North Store, you’d enter North Store.
 
-4.  Choose Save.
+5.  Choose Save.
 
-5.  Repeat steps 2 through 5 for each account segment definition.
+6.  Repeat steps 2 through 5 for each account segment definition.
 
-6.  Choose File \>\> Print or the printer icon button to print the Account
-    Segment List.
+7.  Choose File \>\> Print or the printer icon button to print the Account Segment List.
 
 ### Chart of accounts modifications
 
->   You can use General Ledger to change or copy ranges of accounts in your
->   chart of accounts. For example, you can copy a range of accounts created for
->   one department for use in another department. You can use the Mass Modify
->   Chart of Accounts window to copy, move, inactivate, delete, and update
->   accounts in a chart of accounts. To modify the chart of accounts, see
->   *Modifying ranges of accounts*.
+>   You can use General Ledger to change or copy ranges of accounts in your chart of accounts. For example, you can copy a range of accounts created for one department for use in another department. You can use the Mass Modify Chart of Accounts window to copy, move, inactivate, delete, and update accounts in a chart of accounts. To modify the chart of accounts, see *Modifying ranges of accounts*.
 
->   **Copy** Use this method to duplicate a range of accounts. For example, if
->   the first segment of an account number identifies the department and you’ve
->   created a range of accounts with 100 as the first segment number, you could
->   copy all those accounts and assign a new first segment number 200. This
->   copies the account, typical balance, account type, series, and
->   active/inactive information. Account descriptions for the copied accounts
->   will be formed by combining the descriptions of the account segments. Spaces
->   will be left in the account description for any segments that have a blank
->   description. Actual account balances aren’t copied.
+>   **Copy** Use this method to duplicate a range of accounts. For example, if the first segment of an account number identifies the department and you’ve created a range of accounts with 100 as the first segment number, you could copy all those accounts and assign a new first segment number 200. This copies the account, typical balance, account type, series, and active/inactive information. Account descriptions for the copied accounts will be formed by combining the descriptions of the account segments. Spaces will be left in the account description for any segments that have a blank description. Actual account balances aren’t copied.
 
->   **Move** Use this method to move accounts within your company. You might
->   want to do this if a different department is now performing tasks associated
->   with a range of accounts. Account descriptions for the new accounts will be
->   formed by combining the descriptions of the account segments. Spaces will be
->   left in the account description for any segments that have a blank
->   description.
+>   **Move** Use this method to move accounts within your company. You might want to do this if a different department is now performing tasks associated with a range of accounts. Account descriptions for the new accounts will be formed by combining the descriptions of the account segments. Spaces will be left in the account description for any segments that have a blank description.
 
 >   You can move accounts only if they meet the following conditions:
 
@@ -1155,17 +889,9 @@ account.
 
 -   No transaction history records
 
->   **Inactivate** Use this method to inactivate a range of active accounts with
->   zero balances or to inactivate all accounts in the range. For example, if
->   your company purchased a building and needed to inactivate all the rent
->   expense accounts you’ve used previously, you could inactivate the range of
->   accounts at once, rather than doing them one at a time.
+>   **Inactivate** Use this method to inactivate a range of active accounts with zero balances or to inactivate all accounts in the range. For example, if your company purchased a building and needed to inactivate all the rent expense accounts you’ve used previously, you could inactivate the range of accounts at once, rather than doing them one at a time.
 
->   **Delete** Use this method to delete a range of accounts from the chart of
->   accounts. All account information will be removed. For example, you might
->   delete a range of accounts if you’re closing out a product line and no
->   longer need the accounts or information associated with it. Deleting
->   accounts permanently removes them from the chart of accounts.
+>   **Delete** Use this method to delete a range of accounts from the chart of accounts. All account information will be removed. For example, you might delete a range of accounts if you’re closing out a product line and no longer need the accounts or information associated with it. Deleting accounts permanently removes them from the chart of accounts.
 
 >   You can delete accounts only if they meet the following conditions:
 
@@ -1183,75 +909,47 @@ account.
 
 -   No transaction history records
 
->   **Update** Use this method to update the level of posting for a range of
->   accounts from the chart of accounts. For example, you might want to change
->   the level of posting from summary to detail so that you can track additional
->   information for that range of accounts.
+>   **Update** Use this method to update the level of posting for a range of accounts from the chart of accounts. For example, you might want to change the level of posting from summary to detail so that you can track additional information for that range of accounts.
 
 ### Modifying ranges of accounts
 
->   Use the Mass Modify Chart of Accounts window to copy, move, delete,
->   inactivate, or update ranges of accounts that you’ve already entered in your
->   chart of accounts.
+>   Use the Mass Modify Chart of Accounts window to copy, move, delete, inactivate, or update ranges of accounts that you’ve already entered in your chart of accounts.
 
->   All four account types—posting, unit, fixed allocation, and variable
->   allocation—are included in the chart of accounts and can be modified using
->   this window.
+>   All four account types—posting, unit, fixed allocation, and variable allocation—are included in the chart of accounts and can be modified using this window.
 
->   *The changes made in this window permanently affect the chart of accounts,
->   so you might want to experiment with the sample company before modifying
->   your accounting data. Back up your company’s data directory before making
->   changes to your company’s accounts, so you can restore the chart of accounts
->   and related information if necessary. For more information about making
->   backups, see the System Administrator’s Guide (Help \>\> Contents \>\>
->   select System Administration).*
+>   *The changes made in this window permanently affect the chart of accounts, so you might want to experiment with the sample company before modifying your accounting data. Back up your company’s data directory before making changes to your company’s accounts, so you can restore the chart of accounts and related information if necessary. For more information about making backups, see the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
 
 >   **To modify a range of accounts:**
 
 1.  Open the Mass Modify Chart of Accounts window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Mass Modify)
 
 ![](media/43484c4a8f8d5df52a0b5e9d3a09a99f.jpg)
 
-1.  Choose a Modify option. Refer to *Chart of accounts modifications* for more
-    information.
+2.  Choose a Modify option. Refer to *Chart of accounts modifications* for more information.
 
-2.  Select a range of accounts.
+3.  Select a range of accounts.
 
-3.  If you’re updating accounts, select the level of posting for each series.
+4.  If you’re updating accounts, select the level of posting for each series.
 
-    -   Select Detail to post a separate distribution to each account in the
-        range for each transaction in a batch.
+    -   Select Detail to post a separate distribution to each account in the range for each transaction in a batch.
 
-    -   Select Summary to post a summarized total for an entire group of
-        transactions to each account in the range.
+    -   Select Summary to post a summarized total for an entire group of transactions to each account in the range.
 
-4.  If you’re copying or moving accounts, enter an account mask.
+5.  If you’re copying or moving accounts, enter an account mask.
 
->   For example, suppose you have a range of accounts set up for an existing
->   department, and you want to create a similar set of accounts for a new
->   department. If the first segment is used to identify departments, and the
->   existing department is identified by 100, you could enter 200 in the first
->   segment of the new account mask. The range of accounts you selected would be
->   copied but 200 would be substituted for the first segment.
+>   For example, suppose you have a range of accounts set up for an existing department, and you want to create a similar set of accounts for a new department. If the first segment is used to identify departments, and the existing department is identified by 100, you could enter 200 in the first segment of the new account mask. The range of accounts you selected would be copied but 200 would be substituted for the first segment.
 
-1.  Choose Modify.
+6.  Choose Modify.
 
->   If you’ve selected to display all the accounts, your entire chart of
->   accounts appears, and you can scroll through the account list to find your
->   changes.
+>   If you’ve selected to display all the accounts, your entire chart of accounts appears, and you can scroll through the account list to find your changes.
 
->   You also can display the modified range only by marking Selected Range. Only
->   the modified accounts will appear in the scrolling window.
+>   You also can display the modified range only by marking Selected Range. Only the modified accounts will appear in the scrolling window.
 
 Chapter 9: Beginning balances and history
 -----------------------------------------
 
->   Unless your business is new, you must enter existing accounting data if you
->   want it to be available for comparative analysis. You can enter beginning
->   balances for a new fiscal year or in the middle of a fiscal year. You also
->   can enter account history.
+>   Unless your business is new, you must enter existing accounting data if you want it to be available for comparative analysis. You can enter beginning balances for a new fiscal year or in the middle of a fiscal year. You also can enter account history.
 
 >   This information is divided into the following sections:
 
@@ -1265,85 +963,52 @@ Chapter 9: Beginning balances and history
 
 ### Understanding beginning balances and history
 
->   You can keep unlimited years of account and transaction history in General
->   Ledger. If you choose to keep history in General Ledger, you can print
->   historical information on financial statements and compare historical-year
->   amounts to open-year amounts. You also can calculate budgets based on
->   information from a historical year.
+>   You can keep unlimited years of account and transaction history in General Ledger. If you choose to keep history in General Ledger, you can print historical information on financial statements and compare historical-year amounts to open-year amounts. You also can calculate budgets based on information from a historical year.
 
->   When you’re setting up General Ledger for the first time, you can enter
->   three types of information:
+>   When you’re setting up General Ledger for the first time, you can enter three types of information:
 
->   **Beginning balances** The beginning balances for all posting accounts and
->   unit accounts in your chart of accounts.
+>   **Beginning balances** The beginning balances for all posting accounts and unit accounts in your chart of accounts.
 
->   **Account history** A record of account summary balances for previous
->   periods.
+>   **Account history** A record of account summary balances for previous periods.
 
->   **Transaction history** A detailed record of all transactions that have been
->   posted to each account.
+>   **Transaction history** A detailed record of all transactions that have been posted to each account.
 
 ### Entering beginning balances for a new fiscal year
 
->   Use the Batch Entry window and the Transaction Entry window to enter
->   beginning balances and history at the beginning of a fiscal year. The
->   balance brought forward into the fiscal year serves as the beginning balance
->   for the accounts.
+>   Use the Batch Entry window and the Transaction Entry window to enter beginning balances and history at the beginning of a fiscal year. The balance brought forward into the fiscal year serves as the beginning balance for the accounts.
 
->   Be sure to mark the appropriate options in the General Ledger Setup window
->   for maintaining account and transaction history if you plan to keep either
->   type of historical information. You also must mark Allow Posting to History.
->   For more information about setup options, see *Setting up default entries
->   and preferences*.
-
->   *Be sure that you’ve set up the previous year in the Fiscal Periods Setup
->   window*
-
->   *(Administration \>\> Setup \>\> Company \>\> Fiscal Periods) and marked it
->   as a history year.*
+>   Be sure to mark the appropriate options in the General Ledger Setup window for maintaining account and transaction history if you plan to keep either type of historical information. You also must mark Allow Posting to History. For more information about setup options, see *Setting up default entries and preferences*. *Be sure that you’ve set up the previous year in the Fiscal Periods Setup window (Administration \>\> Setup \>\> Company \>\> Fiscal Periods) and marked it as a history year.*
 
 >   **To enter beginning balances for a new fiscal year:**
 
 1.  Open the Batch Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Batches)
 
 ![](media/f2bcd17f9cef386fe894a14ac15a74ba.jpg)
 
-1.  Enter a batch ID—such as BBAL, for beginning balances—and select General
-    Entry as the origin.
+2.  Enter a batch ID—such as BBAL, for beginning balances—and select General Entry as the origin.
 
-2.  Enter a batch comment, such as “Beginning balance for FY02.”
+3.  Enter a batch comment, such as “Beginning balance for FY02.”
 
-3.  Select Single Use as the frequency because you’ll post beginning balances
-    and historical information only once.
+4.  Select Single Use as the frequency because you’ll post beginning balances and historical information only once.
 
->   *You can enter batch control totals in the Batch Entry window to verify the
->   number of beginning balance transactions entered or the total amount of the
->   batch. For more information on batch controls, refer to the System User’s
->   Guide (Help \>\> Contents \>\> Using the system)*.
+>   *You can enter batch control totals in the Batch Entry window to verify the number of beginning balance transactions entered or the total amount of the batch. For more information on batch controls, refer to the System User’s Guide (Help \>\> Contents \>\> Using the system)*.
 
-1.  Choose Transactions to open the Transaction Entry window, where you can
-    enter beginning balance transactions.
+5.  Choose Transactions to open the Transaction Entry window, where you can enter beginning balance transactions.
 
 ![](media/0f4580487787a08753d391102fd8d9d3.jpg)
 
-1.  Enter a journal entry number and select Standard as the transaction type.
+6.  Enter a journal entry number and select Standard as the transaction type.
 
-2.  Enter a transaction date that falls within the historical year.
+7.  Enter a transaction date that falls within the historical year.
 
->   With General Ledger you can post to the most recent historical year. The
->   transaction date determines which period in the historical year the
->   transaction will be posted to. When the transaction is posted, the amounts
->   will also be brought forward to the open fiscal year to adjust the beginning
->   balance for each account.
+>   With General Ledger you can post to the most recent historical year. The transaction date determines which period in the historical year the transaction will be posted to. When the transaction is posted, the amounts will also be brought forward to the open fiscal year to adjust the beginning balance for each account.
 
-1.  Enter or select a source document ID and reference.
+8.  Enter or select a source document ID and reference.
 
-2.  Enter beginning balances and historical information.
+9.  Enter beginning balances and historical information.
 
->   Refer to the table for more information about the information you must
->   enter, depending on the amount of history you’re keeping.
+>   Refer to the table for more information about the information you must enter, depending on the amount of history you’re keeping.
 
 | **If you plan to keep:**                                                       | **Enter:**                                                                                                                                                                                                                                                                                                                                                                        |
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1351,83 +1016,54 @@ Chapter 9: Beginning balances and history
 | Account history only (Account summary balances for each period)                | Enter the historical year’s first period balance for each account in the debit or credit column, depending on the account’s typical balance. Enter a summary transaction for each period of the historical year for each account you want summary account information posted to using the last day of the period as the date.                                                     |
 | Beginning balances only                                                        | Enter the beginning balances for each balance sheet account in the debit or credit column, depending on the account’s typical balance, using the last day of the historical year as the date. Each balance sheet account should be listed as one line in the scrolling window of the Transaction Entry window.                                                                    |
 
->   As transactions used to enter historical information are posted to the most
->   recent historical year, beginning balances for each account will be
->   calculated automatically.
+>   As transactions used to enter historical information are posted to the most recent historical year, beginning balances for each account will be calculated automatically.
 
->   *If you enter a debit and credit amount on the same line, the debit entry
->   will be deleted automatically when you move to the following line.*
+>   *If you enter a debit and credit amount on the same line, the debit entry will be deleted automatically when you move to the following line.*
 
-1.  Choose File \>\> Print or the printer icon button to verify your entries
-    with a General Transaction Edit List before posting.
+10.  Choose File \>\> Print or the printer icon button to verify your entries with a General Transaction Edit List before posting.
 
-2.  Choose the Batch ID expansion button to open the Batch Entry window.
+11.  Choose the Batch ID expansion button to open the Batch Entry window.
 
-3.  Choose Post.
+12.  Choose Post.
 
->   Audit trail codes are automatically assigned to these transactions as
->   they’re posted. You can use audit trail codes to trace the posting sequence
->   of a transaction back to its origin. The audit trail code for transactions
->   posted to history will have the prefix GLTHS and transactions posted to the
->   current year will have the prefix GLTRX.
+>   Audit trail codes are automatically assigned to these transactions as they’re posted. You can use audit trail codes to trace the posting sequence of a transaction back to its origin. The audit trail code for transactions posted to history will have the prefix GLTHS and transactions posted to the current year will have the prefix GLTRX.
 
 ### Entering beginning balances in the middle of a fiscal year
 
->   Use the Batch Entry window and the Transaction Entry window if you’re
->   entering beginning balances and history during an on-going fiscal year. You
->   must enter both historical information and current information.
+>   Use the Batch Entry window and the Transaction Entry window if you’re entering beginning balances and history during an on-going fiscal year. You must enter both historical information and current information.
 
->   Be sure to mark the appropriate options in the General Ledger Setup window
->   for maintaining account and transaction history if you plan to keep either
->   type of historical information. You also must mark Allow Posting to History.
+>   Be sure to mark the appropriate options in the General Ledger Setup window for maintaining account and transaction history if you plan to keep either type of historical information. You also must mark Allow Posting to History.
 
->   *Be sure that you’ve set up the prior year in the Fiscal Periods Setup
->   window*
-
->   *(Administration \>\> Setup \>\> Company \>\> Fiscal Periods) and marked it
->   as a historical year.*
+>   *Be sure that you’ve set up the prior year in the Fiscal Periods Setup window* *(Administration \>\> Setup \>\> Company \>\> Fiscal Periods) and marked it as a historical year.*
 
 >   **To enter beginning balances in the middle of a fiscal year:**
 
 1.  Open the Batch Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Batches)
 
-1.  Enter a batch ID—such as BBAL—for beginning balances.
+2.  Enter a batch ID—such as BBAL—for beginning balances.
 
-2.  Select General Entry as the origin.
+3.  Select General Entry as the origin.
 
-3.  Enter a batch comment, such as “Beginning balance for FY08.”
+4.  Enter a batch comment, such as “Beginning balance for FY08.”
 
-4.  Select Single Use as the frequency because you’ll post beginning balances
-    and historical information once only.
+5.  Select Single Use as the frequency because you’ll post beginning balances and historical information once only.
 
->   *You can enter batch control totals in the Batch Entry window to verify the
->   number of beginning balance transactions entered or the total currency
->   amount of the batch. For more information on batch controls, refer to the
->   System User’s Guide (Help \>\> Contents \>\> Using the system)*.
+>   *You can enter batch control totals in the Batch Entry window to verify the number of beginning balance transactions entered or the total currency amount of the batch. For more information on batch controls, refer to the System User’s Guide (Help \>\> Contents \>\> Using the system)*.
 
-1.  Choose Transactions to open the Transaction Entry window, where you will
-    enter beginning balance transactions.
+6.  Choose Transactions to open the Transaction Entry window, where you will enter beginning balance transactions.
 
-2.  Enter a journal entry number.
+7.  Enter a journal entry number.
 
-3.  Select Standard as the transaction type since you’re entering standard
-    transactions to record your beginning balances.
+8.  Select Standard as the transaction type since you’re entering standard transactions to record your beginning balances.
 
-4.  Enter a transaction date that falls within the historical year. The
-    transaction date determines which period in the historical year the
-    transaction will be posted to. When the transaction is posted, the amounts
-    will also be brought forward to the open fiscal year to adjust the beginning
-    balance for each account.
+9.  Enter a transaction date that falls within the historical year. The transaction date determines which period in the historical year the transaction will be posted to. When the transaction is posted, the amounts will also be brought forward to the open fiscal year to adjust the beginning balance for each account.
 
-5.  Enter or select a source document ID and reference.
+10.  Enter or select a source document ID and reference.
 
-6.  Enter beginning balances and historical information and save the
-    transactions.
+11.  Enter beginning balances and historical information and save the transactions.
 
->   Refer to the following table for more information about the information you
->   must enter, depending on the amount of history you’re keeping.
+>   Refer to the following table for more information about the information you must enter, depending on the amount of history you’re keeping.
 
 | **If you plan to keep:**                                                       | **Enter:**                                                                                                                                                                                                                                                                                                                                                                        |
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1436,108 +1072,61 @@ Chapter 9: Beginning balances and history
 | **If you plan to keep:**                                                       | **Enter:**                                                                                                                                                                                                                                                                                                                                                                        |
 | Beginning balances only                                                        | Enter the beginning balances for each balance sheet account in the debit or credit column, depending on the account’s typical balance, using the last day of the historical year as the date.                                                                                                                                                                                     |
 
->   Each balance sheet account should be listed as one line in the scrolling
->   window of the Transaction Entry window.
+>   Each balance sheet account should be listed as one line in the scrolling window of the Transaction Entry window.
 
->   As transactions used to enter historical information are posted to the most
->   recent historical year, beginning balances for each account will be
->   calculated automatically.
+>   As transactions used to enter historical information are posted to the most recent historical year, beginning balances for each account will be calculated automatically.
 
->   *If you enter a debit and credit on the same line, the debit entry will be
->   deleted automatically when you move to the following line.*
+>   *If you enter a debit and credit on the same line, the debit entry will be deleted automatically when you move to the following line.*
 
-1.  Choose Save to save the transaction.
+12.  Choose Save to save the transaction.
 
-2.  Enter another journal entry number, select Standard as the transaction type
-    and enter a transaction date to begin entering accounts and amounts for
-    current year activity.
+13.  Enter another journal entry number, select Standard as the transaction type and enter a transaction date to begin entering accounts and amounts for current year activity.
 
-    -   If you plan to keep account and transaction history, enter each
-        transaction from the current year as a separate transaction, using the
-        exact date of the transaction.
+    -   If you plan to keep account and transaction history, enter each transaction from the current year as a separate transaction, using the exact date of the transaction.
 
-    -   If you plan to keep only account history, enter a summary transaction
-        for the activity in each previous period in the current year, using the
-        last day of the period as the transaction date.
+    -   If you plan to keep only account history, enter a summary transaction for the activity in each previous period in the current year, using the last day of the period as the transaction date.
 
-3.  Choose File \>\> Print or the printer icon button to verify your entries
-    with a General Transaction Edit List.
+14.  Choose File \>\> Print or the printer icon button to verify your entries with a General Transaction Edit List.
 
-4.  Choose the Batch ID expansion button to open the Batch Entry window. Choose
-    Post. The posted amounts for the historical year are brought forward to the
-    open year as each account’s beginning balance, and the correct historical
-    information will be added.
+15.  Choose the Batch ID expansion button to open the Batch Entry window. Choose Post. The posted amounts for the historical year are brought forward to the open year as each account’s beginning balance, and the correct historical information will be added.
 
->   Audit trail codes automatically will be assigned to these transactions as
->   they’re posted. Audit trail codes enable you to trace the posting sequence
->   of a given transaction back to the point it was originally entered in
->   Microsoft Dynamics
-
->   GP. The audit trail code for transactions posted to history will have the
->   prefix GLTHS and transactions posted to the current year will have the
->   prefix GLTRX.
+>   Audit trail codes automatically will be assigned to these transactions as they’re posted. Audit trail codes enable you to trace the posting sequence of a given transaction back to the point it was originally entered in Microsoft Dynamics GP. The audit trail code for transactions posted to history will have the prefix GLTHS and transactions posted to the current year will have the prefix GLTRX.
 
 ### Entering account history
 
->   Use the Account History window to enter summary amounts for each account.
+>   Use the Account History window to enter summary amounts for each account. Even if you have historical information for each account for several historical years, you can only post information to the most recent historical year. To enter history for earlier years, you must enter summary account information in this window. You also can use the Account History window to change or delete existing account history information for posting and unit accounts.
 
->   Even if you have historical information for each account for several
->   historical years, you can only post information to the most recent
->   historical year. To enter history for earlier years, you must enter summary
->   account information in this window. You also can use the Account History
->   window to change or delete existing account history information for posting
->   and unit accounts.
-
->   *Before entering account history for a particular year, you must set up the
->   year and mark it as a historical year in the Fiscal Periods Setup window.
->   For more information about fiscal period setup, refer to the System Setup
->   instructions (Help \>\> Contents \>\> select Setting Up the System).*
+>   *Before entering account history for a particular year, you must set up the year and mark it as a historical year in the Fiscal Periods Setup window. For more information about fiscal period setup, refer to the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).*
 
 >   **To enter account history:**
 
 1.  Open the Account History window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Account History)
 
 ![](media/adee4e46eb9f606d343eb2aae96fd908.jpg)
 
-1.  Enter or select an account.
+2.  Enter or select an account.
 
-2.  Select the year for which you want to enter or update historical
-    information.
+3.  Select the year for which you want to enter or update historical information.
 
-3.  Enter the net change, either debit or credit, for each period in the
-    selected year. The net change and period balance fields will be updated
-    automatically.
+4.  Enter the net change, either debit or credit, for each period in the selected year. The net change and period balance fields will be updated automatically.
 
-4.  If you’re using Multicurrency Management, you can choose Currency to open
-    the Multicurrency Account History window, where you can enter historical
-    multicurrency information for this account.
+5.  If you’re using Multicurrency Management, you can choose Currency to open the Multicurrency Account History window, where you can enter historical multicurrency information for this account.
 
 >   If you aren’t using Multicurrency Management, skip to step 7.
 
->   You can add, modify, or delete balances for an account for the selected
->   period and currency. You also can use the window to calculate a functional
->   currency amount for transaction activity for the selected account in a
->   historical period by entering amounts and exchange rates in the originating
->   currency.
+>   You can add, modify, or delete balances for an account for the selected period and currency. You also can use the window to calculate a functional currency amount for transaction activity for the selected account in a historical period by entering amounts and exchange rates in the originating currency.
 
-1.  Choose Save and close the Multicurrency Account History window when you’ve
-    finished.
+6.  Choose Save and close the Multicurrency Account History window when you’ve finished.
 
-2.  Choose Save in the Account History window.
+7.  Choose Save in the Account History window.
 
->   *If you enter account history balances in the Account History window, you
->   shouldn’t reconcile the historical year. The reconcile process would look
->   for detail transactions but would not find any. The summary balances would
->   then be set to zero.*
+>   *If you enter account history balances in the Account History window, you shouldn’t reconcile the historical year. The reconcile process would look for detail transactions but would not find any. The summary balances would then be set to zero.*
 
  Chapter 10: Quick journal transactions setup
 ---------------------------------------------
 
->   You can use quick journals to quickly enter journal entries that aren’t part
->   of a batch. This document defines quick journals and explains how to use
->   them.
+>   You can use quick journals to quickly enter journal entries that aren’t part of a batch. This document defines quick journals and explains how to use them.
 
 >   This information is divided into the following sections:
 
@@ -1549,93 +1138,58 @@ Chapter 9: Beginning balances and history
 
 ### Understanding quick journal transactions
 
->   You can use the Quick Journal Setup window to set up a template for entering
->   many different types of transactions. Quick journals are most effective for
->   transaction entry when the accounts used in the transaction remain constant,
->   but the amounts vary. You can make entries more quickly than in the
->   Transaction Entry window because all the necessary accounts are already set
->   up in the quick journal and you’ll enter only the transaction amounts for
->   each account.
+>   You can use the Quick Journal Setup window to set up a template for entering many different types of transactions. Quick journals are most effective for transaction entry when the accounts used in the transaction remain constant, but the amounts vary. You can make entries more quickly than in the Transaction Entry window because all the necessary accounts are already set up in the quick journal and you’ll enter only the transaction amounts for each account.
 
->   For example, your company might make monthly cash disbursements for rent,
->   utilities, telephone, and insurance expenses. In the Quick Journal Setup
->   window, you could set up a quick journal entry that includes all the
->   accounts required to enter these disbursements. Instead of having to reenter
->   the accounts every pay period in the Transaction Entry window, you enter
->   only the amounts for the selected accounts. For more information about using
->   quick journals, see *Chapter 20, “Quick journal transactions.”*
+>   For example, your company might make monthly cash disbursements for rent, utilities, telephone, and insurance expenses. In the Quick Journal Setup window, you could set up a quick journal entry that includes all the accounts required to enter these disbursements. Instead of having to reenter the accounts every pay period in the Transaction Entry window, you enter only the amounts for the selected accounts. For more information about using quick journals, see *Chapter 20, “Quick journal transactions.”*
 
->   *If you’re using Multicurrency Management, you can enter quick journals only
->   in your company’s functional currency.*
+>   *If you’re using Multicurrency Management, you can enter quick journals only in your company’s functional currency.*
 
 ### Setting up a quick journal
 
->   Use the Quick Journal Setup window to create a quick journal, to make
->   changes and add accounts to an existing journal or to delete a journal
->   altogether.
+>   Use the Quick Journal Setup window to create a quick journal, to make changes and add accounts to an existing journal or to delete a journal altogether.
 
 **To set up a quick journal:**
 
 1.  Open the Quick Journal Setup window.
-
 >   (Financial \>\> Setup \>\> Financial \>\> Quick Journal)
 
 ![](media/a36576a0b5c315fc55fa327e3c7477c0.jpg)
 
-1.  Enter or select a journal ID and enter a description.
+2.  Enter or select a journal ID and enter a description.
 
-2.  Enter or select a source document and enter a reference. For more
-    information about setting up source documents, refer to the System Setup
-    instructions (Help \>\> Contents \>\> select Setting Up the System).
+3.  Enter or select a source document and enter a reference. For more information about setting up source documents, refer to the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
-3.  Enter or select the offset account. The entire offsetting portion of each
-    transaction entered in this quick journal will be posted to this account.
+4.  Enter or select the offset account. The entire offsetting portion of each transaction entered in this quick journal will be posted to this account.
 
->   Mark the Allow Override option to enable users to override the default
->   offset account when entering transactions. Don’t mark the option if you want
->   to use the default offset account every time you enter quick journal
->   transactions.
+>   Mark the Allow Override option to enable users to override the default offset account when entering transactions. Don’t mark the option if you want to use the default offset account every time you enter quick journal transactions.
 
->   *Only posting accounts, fixed allocation accounts, or variable allocation
->   accounts can be offset accounts. Unit accounts can’t be entered as the
->   offsetting account in a quick journal entry since they track nonfinancial
->   quantities.*
+>   *Only posting accounts, fixed allocation accounts, or variable allocation accounts can be offset accounts. Unit accounts can’t be entered as the offsetting account in a quick journal entry since they track nonfinancial quantities.*
 
-1.  To have breakdown allocations printed on the Quick Journal Edit List and
-    Quick Journal Posting Journal, mark the Break Down Allocation option.
+5.  To have breakdown allocations printed on the Quick Journal Edit List and Quick Journal Posting Journal, mark the Break Down Allocation option.
 
-2.  Enter or select the accounts to which transactions entered in this quick
-    journal will be posted.
+6.  Enter or select the accounts to which transactions entered in this quick journal will be posted.
 
-3.  Choose Save.
+7.  Choose Save.
 
-4.  Choose File \>\> Print or the printer icon button while the Quick Journal
-    Setup window is displayed to review the options you’ve selected with the
-    Quick Journal Setup List.
+8.  Choose File \>\> Print or the printer icon button while the Quick Journal Setup window is displayed to review the options you’ve selected with the Quick Journal Setup List.
 
 ### Deleting a quick journal
 
-Use the Quick Journal Setup window to delete quick journals. When you delete a
-quick journal, any unposted quick journal transactions using this quick journal
-also will be deleted. An alert message will appear if there are unposted quick
-journal transactions.
+Use the Quick Journal Setup window to delete quick journals. When you delete a quick journal, any unposted quick journal transactions using this quick journal also will be deleted. An alert message will appear if there are unposted quick journal transactions.
 
 >   **To delete a quick journal:**
 
 1.  Open the Quick Journal Setup window.
-
 >   (Financial \>\> Setup \>\> Financial \>\> Quick Journal)
 
-1.  Enter or select the journal ID.
+2.  Enter or select the journal ID.
 
-2.  Choose Delete.
+3.  Choose Delete.
 
  Chapter 11: Revenue/Expense Deferrals setup
 --------------------------------------------
 
->   Before you begin using Revenue/Expense Deferrals, you need to set the
->   options you want to use for creating deferral transactions, such as the
->   posting method used, and user access options.
+>   Before you begin using Revenue/Expense Deferrals, you need to set the options you want to use for creating deferral transactions, such as the posting method used, and user access options.
 
 >   This information includes the following sections:
 
@@ -1657,120 +1211,78 @@ journal transactions.
 
 ### Revenue/Expense Deferrals overview
 
->   Revenue/Expense Deferrals simplifies deferring revenues or distributing
->   expenses over a specified period. Revenue or expense entries can be made to
->   future periods automatically from General Ledger, Receivables Management,
->   Payables Management, Sales Order Processing, Purchase Order Processing, and
->   Invoicing.
+>   Revenue/Expense Deferrals simplifies deferring revenues or distributing expenses over a specified period. Revenue or expense entries can be made to future periods automatically from General Ledger, Receivables Management, Payables Management, Sales Order Processing, Purchase Order Processing, and Invoicing.
 
->   If you use deferral transactions frequently, you can set up deferral
->   profiles, which are templates of commonly deferred transactions. Using
->   deferral profiles helps ensure that similar transactions are entered with
->   the correct information. For example, if you routinely enter transactions
->   for service contracts your company offers, and the revenue is recognized
->   over a 12-month period, you could set up a deferral profile for these
->   service contracts, specifying the accounts to be used, and the method for
->   calculating how the deferred revenue is recognized.
+>   If you use deferral transactions frequently, you can set up deferral profiles, which are templates of commonly deferred transactions. Using deferral profiles helps ensure that similar transactions are entered with the correct information. For example, if you routinely enter transactions for service contracts your company offers, and the revenue is recognized over a 12-month period, you could set up a deferral profile for these service contracts, specifying the accounts to be used, and the method for calculating how the deferred revenue is recognized.
 
 ### Deferral posting methods
 
->   You can use two methods for posting the initial transactions and the
->   deferral transactions: the Balance Sheet method, and the Profit and Loss
->   method.
+>   You can use two methods for posting the initial transactions and the deferral transactions: the Balance Sheet method, and the Profit and Loss method.
 
->   **Balance Sheet** Using the Balance Sheet method, you’ll identify two
->   posting accounts: a Balance Sheet deferral account to be used with the
->   initial transaction for the deferred revenue or expense, and a Profit and
->   Loss recognition account to be used with each period’s deferral transaction
->   that recognizes the expense or revenue. For an illustration of this method,
->   see *Balance Sheet posting example*.
+>   **Balance Sheet** Using the Balance Sheet method, you’ll identify two posting accounts: a Balance Sheet deferral account to be used with the initial transaction for the deferred revenue or expense, and a Profit and Loss recognition account to be used with each period’s deferral transaction that recognizes the expense or revenue. For an illustration of this method, see *Balance Sheet posting example*.
 
->   **Profit and Loss** Using the Profit and Loss method, you can identify up to
->   five accounts, which allows greater detail in financial reporting than the
->   Balance Sheet method. These accounts are three Profit and Loss accounts, and
->   two Balance Sheet accounts.
+>   **Profit and Loss** Using the Profit and Loss method, you can identify up to five accounts, which allows greater detail in financial reporting than the Balance Sheet method. These accounts are three Profit and Loss accounts, and two Balance Sheet accounts.
 
 >   Profit and Loss accounts:
 
--   An account for the initial posting of the full amount of the original
-    revenue or expense
+-   An account for the initial posting of the full amount of the original revenue or expense
 
--   An account used for reversing the deferred revenue or expense (this can be
-    the same as the original account)
+-   An account used for reversing the deferred revenue or expense (this can be the same as the original account)
 
--   An account used for recognizing the deferred revenue or expense (again, this
-    can be the same as the original account)
+-   An account used for recognizing the deferred revenue or expense (again, this can be the same as the original account)
 
 >   Balance Sheet accounts:
 
--   A deferrals account to record the full deferred balance (transferred from
-    the original revenue or expense account)
+-   A deferrals account to record the full deferred balance (transferred from the original revenue or expense account)
 
--   A deferrals transfers account (this can be the same as the deferrals
-    account)
+-   A deferrals transfers account (this can be the same as the deferrals account)
 
 >   For an illustration of this method, see *Profit and Loss posting example*.
 
->   *Once you have selected a deferral posting method for a series and posted
->   deferral transactions, we recommend that you not change the deferral posting
->   method.*
+>   *Once you have selected a deferral posting method for a series and posted deferral transactions, we recommend that you not change the deferral posting method.*
 
 ### Balance Sheet posting example
 
->   Assume you have a transaction for \$12,000 of revenue, to be deferred over
->   one year, from January to December. When you defer this transaction using
->   the Balance Sheet posting method, the full sales amount is posted to the
->   deferrals account, rather than the sales account that would be used for
->   non-deferred revenue. The initial transaction is posted as follows:
+>   Assume you have a transaction for \$12,000 of revenue, to be deferred over one year, from January to December. When you defer this transaction using the Balance Sheet posting method, the full sales amount is posted to the deferrals account, rather than the sales account that would be used for non-deferred revenue. The initial transaction is posted as follows:
 
 | **Account**       | **Debit** | **Credit** |
 |-------------------|-----------|------------|
 | Cash              | \$12,000  |            |
 | Deferrals Account |           | \$12,000   |
 
->   The deferral transactions for each month created for this deferred revenue
->   would appear as follows:
+>   The deferral transactions for each month created for this deferred revenue would appear as follows:
 
 | **Account**               | **Debit** | **Credit** |
 |---------------------------|-----------|------------|
 | Deferrals Account         | \$1,000   |            |
 | Sales Recognition Account |           | \$1,000    |
 
->   The full revenue amount of \$12,000 will be posted to the Profit and Loss
->   sales recognition account in \$1,000 increments each month for a year, and
->   the Balance Sheet deferrals account is reduced by the same amount.
+>   The full revenue amount of \$12,000 will be posted to the Profit and Loss sales recognition account in \$1,000 increments each month for a year, and the Balance Sheet deferrals account is reduced by the same amount.
 
 ### Profit and Loss posting example
 
->   Assume you have a transaction for \$12,000 of revenue, to be deferred over
->   one year, from January to December. Three Profit and Loss accounts, and two
->   Balance Sheet accounts are being used for the deferral. The full sales
->   amount is posted to the usual sales account, as follows:
+>   Assume you have a transaction for \$12,000 of revenue, to be deferred over one year, from January to December. Three Profit and Loss accounts, and two Balance Sheet accounts are being used for the deferral. The full sales amount is posted to the usual sales account, as follows:
 
 | **Account**            | **Debit** | **Credit** |
 |------------------------|-----------|------------|
 | Cash                   | \$12,000  |            |
 | Original Sales Account |           | \$12,000   |
 
->   However, when you defer this transaction using the Profit and Loss posting
->   method, a second entry is also created that reverses the Sales account entry
->   and transfers the full balance to the deferrals account.
+>   However, when you defer this transaction using the Profit and Loss posting method, a second entry is also created that reverses the Sales account entry and transfers the full balance to the deferrals account.
 
 | **Account**            | **Debit** | **Credit** |
 |------------------------|-----------|------------|
 | Deferred Sales Account | \$12,000  |            |
 | Deferrals Account      |           | \$12,000   |
 
->   The deferral transactions for each month created for this deferred revenue
->   would appear as follows:
+>   The deferral transactions for each month created for this deferred revenue would appear as follows:
 
 | **Account**                | **Debit** | **Credit** |
 |----------------------------|-----------|------------|
 | Deferrals Transfer Account | \$1,000   |            |
 | Sales Recognition Account  |           | \$1,000    |
 
->   The balances for the Profit and Loss accounts at the end of the deferral
->   period will appear as follows:
+>   The balances for the Profit and Loss accounts at the end of the deferral period will appear as follows:
 
 | **Account**               | **Debit** | **Credit** |
 |---------------------------|-----------|------------|
@@ -1778,206 +1290,131 @@ journal transactions.
 | Deferred Sales Account    | \$12,000  |            |
 | Sales Recognition Account |           | \$12,000   |
 
->   The balances for the Balance Sheet accounts at the end of the deferral
->   period will appear as follows:
+>   The balances for the Balance Sheet accounts at the end of the deferral period will appear as follows:
 
 | **Account**                | **Debit** | **Credit** |
 |----------------------------|-----------|------------|
 | Deferrals Account          |           | \$12,000   |
 | Deferrals Transfer Account | \$12,000  |            |
 
->   The overall result will be a credit balance of \$12,000 for the Profit and
->   Loss sales accounts, and a \$0 balance for the Balance Sheet deferrals
->   accounts.
+>   The overall result will be a credit balance of \$12,000 for the Profit and Loss sales accounts, and a \$0 balance for the Balance Sheet deferrals accounts.
 
->   *You can use the same account for the original sales, deferred sales, and
->   sales recognition accounts, and for the deferrals and deferrals transfer
->   accounts. However, if you use a different account for each, you can identify
->   the amounts for reporting purposes.*
+>   *You can use the same account for the original sales, deferred sales, and sales recognition accounts, and for the deferrals and deferrals transfer accounts. However, if you use a different account for each, you can identify the amounts for reporting purposes.*
 
 ### Setting up revenue/expense deferrals
 
->   Use the Deferral Setup window to enter the options you want to use with
->   Revenue/ Expense Deferrals.
+>   Use the Deferral Setup window to enter the options you want to use with Revenue/ Expense Deferrals.
 
 >   **To set up revenue/expense deferrals:**
 
 1.  Open the Deferral Setup window.
-
 >   (Financial \>\> Setup \>\> Financial \>\> Deferral)
 
 ![](media/e6a68e7ed88b39ac144e9d6c53fa3f59.jpg)
 
-1.  Enter the next batch number you want to use for deferral transactions, the
-    source document code, and the next transaction number.
+2.  Enter the next batch number you want to use for deferral transactions, the source document code, and the next transaction number.
 
-2.  Select the default method you want to use to calculate the allocations for
-    deferral transaction amounts.
+3.  Select the default method you want to use to calculate the allocations for deferral transaction amounts.
 
-    -   The Days In Period method apportions the amount based on the number of
-        days in a fiscal period.
+    -   The Days In Period method apportions the amount based on the number of days in a fiscal period.
 
     -   The Equal Per Period method allocates an equal amount per fiscal period.
 
-    -   The Miscellaneous method allows you to specify the length of the periods
-        and allocates an equal amount per period.
+    -   The Miscellaneous method allows you to specify the length of the periods and allocates an equal amount per period.
 
-3.  Indicate whether you want to automatically post deferral transactions
-    through General Ledger, and to closed future or previous fiscal periods.
+4.  Indicate whether you want to automatically post deferral transactions through General Ledger, and to closed future or previous fiscal periods.
 
-4.  Indicate whether you want deferral transactions for the Sales and Purchasing
-    series to use the Balance Sheet or Profit and Loss method for posting the
-    initial and deferral transactions. For more information, see *Deferral
-    posting methods*.
+5.  Indicate whether you want deferral transactions for the Sales and Purchasing series to use the Balance Sheet or Profit and Loss method for posting the initial and deferral transactions. For more information, see *Deferral posting methods*.
 
->   *Once you have selected a deferral posting method for a series and posted
->   deferral transactions, we recommend that you don’t change the deferral
->   posting method.*
+>   *Once you have selected a deferral posting method for a series and posted deferral transactions, we recommend that you don’t change the deferral posting method.*
 
-1.  Specify whether you want to void the associated original transaction when
-    any deferral transaction is voided.
+6.  Specify whether you want to void the associated original transaction when any deferral transaction is voided.
 
-2.  Indicate whether you want all users to have access to deferral profiles, or
-    if you want to limit access based on user or user class. If you restrict
-    access, you’ll specify the users or user classes that have access to a
-    profile when you set up the profile. For more information, see *Setting up a
-    deferral profile*.
+7.  Indicate whether you want all users to have access to deferral profiles, or if you want to limit access based on user or user class. If you restrict access, you’ll specify the users or user classes that have access to a profile when you set up the profile. For more information, see *Setting up a deferral profile*.
 
-3.  Select an option for overriding distribution accounts.
+8.  Select an option for overriding distribution accounts.
 
-4.  Indicate whether you want the deferral posting reports to be printed and
-    specify whether you want them sent to the printer, displayed on screen, or
-    both.
+9.  Indicate whether you want the deferral posting reports to be printed and specify whether you want them sent to the printer, displayed on screen, or both.
 
-5.  Choose Warning Options to set up options for warning users about assigning
-    deferrals to specific distribution types. For more information, see
-    *Selecting deferral warning options*.
+10.  Choose Warning Options to set up options for warning users about assigning deferrals to specific distribution types. For more information, see *Selecting deferral warning options*.
 
-6.  Choose OK to save your changes and close the window.
+11.  Choose OK to save your changes and close the window.
 
 ### Selecting deferral warning options
 
->   Use the Deferral Warning Options window to select the warning options you
->   want to use to help prevent users from attaching deferrals to incorrect
->   distribution types. For example, you could set up the warning options for
->   Sales Order Processing so if a user attempted to defer the CASH
->   distribution, a warning would appear.
+>   Use the Deferral Warning Options window to select the warning options you want to use to help prevent users from attaching deferrals to incorrect distribution types. For example, you could set up the warning options for Sales Order Processing so if a user attempted to defer the CASH distribution, a warning would appear.
 
->   *Selecting these options does not block a user from attaching a deferral
->   transaction to an incorrect distribution type. A message will appear in this
->   situation, but the user can post the transaction.*
+>   *Selecting these options does not block a user from attaching a deferral transaction to an incorrect distribution type. A message will appear in this situation, but the user can post the transaction.*
 
 >   **To select deferral warning options:**
 
 1.  Open the Deferral Setup window.
-
 >   (Financial \>\> Setup \>\> Financial \>\> Deferral)
 
-1.  Choose Warning Options to open the Deferral Warning Options window.
+2.  Choose Warning Options to open the Deferral Warning Options window.
 
 ![](media/48ee3f63c4dbd292076b115799341c8b.jpg)
 
-1.  Select the module you want to select warning options for from the list.
+3.  Select the module you want to select warning options for from the list.
 
-2.  Mark the checkbox for the distribution types you want to avoid using for
-    deferrals.
+4.  Mark the checkbox for the distribution types you want to avoid using for deferrals.
 
-3.  Select another module and continue selecting warning options.
+5.  Select another module and continue selecting warning options.
 
-4.  Choose OK to save your entries and close the window.
+6.  Choose OK to save your entries and close the window.
 
 ### Setting up a deferral profile 
 
->   Use the Deferral Profile Maintenance window to set up templates of commonly
->   deferred transactions. Using deferral profiles helps ensure that similar
->   transactions are entered with the correct information. For example, if you
->   routinely enter transactions for service contracts your company offers, and
->   the revenue is recognized over a 12-month period, you could set up a
->   deferral profile for these service contracts, specifying the accounts to be
->   used, and the method for calculating how the deferred revenue is recognized.
+>   Use the Deferral Profile Maintenance window to set up templates of commonly deferred transactions. Using deferral profiles helps ensure that similar transactions are entered with the correct information. For example, if you routinely enter transactions for service contracts your company offers, and the revenue is recognized over a 12-month period, you could set up a deferral profile for these service contracts, specifying the accounts to be used, and the method for calculating how the deferred revenue is recognized.
 
->   You can set up profiles for transactions originating in General Ledger,
->   Receivables Management, Sales Order Processing, Payables Management, and
->   Purchase Order Processing.
+>   You can set up profiles for transactions originating in General Ledger, Receivables Management, Sales Order Processing, Payables Management, and Purchase Order Processing.
 
 >   **To set up a deferral profile:**
 
 1.  Open the Deferral Profile Maintenance window.
-
 >   (Financial \>\> Setup \>\> Financial \>\> Deferral Profiles)
 
 ![](media/b25481b18d390291af8e08f483ba9263.jpg)
 
-1.  Enter a name for this profile. For example, you could create a profile
-    called SERVICE CONTRACT.
+2.  Enter a name for this profile. For example, you could create a profile called SERVICE CONTRACT.
 
-2.  Select the modules the profile is to be used with from the list. For
-    example, you might want to use a service contracts profile with Receivables
-    Management and Sales Order Processing.
+3.  Select the modules the profile is to be used with from the list. For example, you might want to use a service contracts profile with Receivables Management and Sales Order Processing.
 
->   To select multiple modules, hold down the CTRL key while clicking the
->   modules.
+>   To select multiple modules, hold down the CTRL key while clicking the modules.
 
-1.  Select the types of distribution you want this profile used with. For
-    example, you might select the SALES, MISC, and SERVICE distribution types.
+4.  Select the types of distribution you want this profile used with. For example, you might select the SALES, MISC, and SERVICE distribution types.
 
->   To select multiple distributions, hold down the CTRL key while clicking the
->   distributions.
+>   To select multiple distributions, hold down the CTRL key while clicking the distributions.
 
-1.  Select the accounts you want to use to defer and recognize the revenues or
-    expenses. Depending on the option you selected for overwriting distribution
-    accounts in the Deferral Setup window, you may be able to mark the option to
-    enable an account to be changed.
+5.  Select the accounts you want to use to defer and recognize the revenues or expenses. Depending on the option you selected for overwriting distribution accounts in the Deferral Setup window, you may be able to mark the option to enable an account to be changed.
 
-2.  Select the method to calculate the deferral amounts across each period, the
-    date of the first allocation, and the number of fiscal periods to allocate
-    the transaction over. If you leave the start date or number of periods
-    blank, you’ll need to enter a start date and number of periods when you use
-    the profile to defer a transaction distribution.
+6.  Select the method to calculate the deferral amounts across each period, the date of the first allocation, and the number of fiscal periods to allocate the transaction over. If you leave the start date or number of periods blank, you’ll need to enter a start date and number of periods when you use the profile to defer a transaction distribution.
 
-3.  If you chose to limit access to profiles to specific users or user classes
-    in the Deferral Setup window, choose User Access to select the users or user
-    classes who can use this profile. You can also select the information on a
-    profile you want users to be able to change. For more information, see
-    *Setting access to a deferral profile*.
+7.  If you chose to limit access to profiles to specific users or user classes in the Deferral Setup window, choose User Access to select the users or user classes who can use this profile. You can also select the information on a profile you want users to be able to change. For more information, see *Setting access to a deferral profile*.
 
-4.  Choose Save to save this profile.
+8.  Choose Save to save this profile.
 
 ### Setting access to a deferral profile
 
->   Use the Profile User Access window to limit access to a profile to specific
->   users or user classes. You can also specify which information on a profile
->   you want users to be able to change. For example, you can enable some users
->   to change the start date and number of periods for a deferral transaction,
->   but not the deferral or recognition accounts, and you can enable other users
->   to change the deferral and recognition accounts.
+>   Use the Profile User Access window to limit access to a profile to specific users or user classes. You can also specify which information on a profile you want users to be able to change. For example, you can enable some users to change the start date and number of periods for a deferral transaction, but not the deferral or recognition accounts, and you can enable other users to change the deferral and recognition accounts.
 
 >   **To set access to a deferral profile:**
 
-1.  In the Deferral Profile Maintenance window, enter or select the profile you
-    want to set access for, and choose User Access to open the Profile User
-    Access window.
+1.  In the Deferral Profile Maintenance window, enter or select the profile you want to set access for, and choose User Access to open the Profile User Access window.
 
 ![](media/96113783d75a0c7e85629e6aa3a5cf09.jpg)
 
-1.  Indicate whether you want to grant access to the profile to the users you
-    specify, or to the user classes you specify.
+2.  Indicate whether you want to grant access to the profile to the users you specify, or to the user classes you specify.
 
-2.  Enter or select the user or user class you want to have access to the
-    profile and mark the option to enable access.
+3.  Enter or select the user or user class you want to have access to the profile and mark the option to enable access.
 
->   If you’re setting access for a user, you can also indicate whether this
->   profile is the default profile for this user. If you mark this option, this
->   profile will appear automatically when the user uses deferral profiles
->   during transaction entry.
+>   If you’re setting access for a user, you can also indicate whether this profile is the default profile for this user. If you mark this option, this profile will appear automatically when the user uses deferral profiles during transaction entry.
 
-1.  Mark the types of information you want the user or members of the user class
-    to be able to edit during deferral transaction entry.
+4.  Mark the types of information you want the user or members of the user class to be able to edit during deferral transaction entry.
 
-2.  Choose Save to save the access information for this user or user class.
+5.  Choose Save to save the access information for this user or user class.
 
-3.  To set access to this profile for another user or user class, repeat steps 2
-    through 5.
+6.  To set access to this profile for another user or user class, repeat steps 2 through 5.
 
 Part 2: Budgets
 ===============
@@ -1986,25 +1423,16 @@ Part 2: Budgets
 
 >   The following information is discussed:
 
--   *Chapter 12, “Budget overview,”* outlines the features in Microsoft Dynamics
-    GP you can use to create and maintain budgets.
+-   *Chapter 12, “Budget overview,”* outlines the features in Microsoft Dynamics GP you can use to create and maintain budgets.
 
--   *Chapter 14, “Setting up budgets in Microsoft Dynamics GP,”* describes how
-    to create a budget in Microsoft Dynamics GP using the Budget Maintenance
-    window or the Single-Account Budget Maintenance window.
+-   *Chapter 14, “Setting up budgets in Microsoft Dynamics GP,”* describes how to create a budget in Microsoft Dynamics GP using the Budget Maintenance window or the Single-Account Budget Maintenance window.
 
 Chapter 12: Budget overview
 ---------------------------
 
->   You can use General Ledger to use the features of both Microsoft Dynamics GP
->   and Microsoft Excel to create and maintain budgets. You can create and
->   modify budgets, export them to Excel, or import them to Microsoft Dynamics
->   GP.
+>   You can use General Ledger to use the features of both Microsoft Dynamics GP and Microsoft Excel to create and maintain budgets. You can create and modify budgets, export them to Excel, or import them to Microsoft Dynamics GP.
 
->   For example, you can start building your budget in Microsoft Dynamics GP
->   based on your account framework, then export the budget to Excel to add
->   formulas and explore forecasting scenarios. Finally, you can import the
->   budget into Microsoft Dynamics GP to be used in the accounting system.
+>   For example, you can start building your budget in Microsoft Dynamics GP based on your account framework, then export the budget to Excel to add formulas and explore forecasting scenarios. Finally, you can import the budget into Microsoft Dynamics GP to be used in the accounting system.
 
 >   This information is divided into the following sections:
 
@@ -2018,96 +1446,67 @@ Chapter 12: Budget overview
 
 ### Viewing a list of existing budgets
 
->   You can use the Budget Selection window (Financial \>\> Cards \>\> Financial
->   \>\> Budgets) to view all budgets in the system, including budgets created
->   in Excel and imported into Microsoft Dynamics GP.
+>   You can use the Budget Selection window (Financial \>\> Cards \>\> Financial \>\> Budgets) to view all budgets in the system, including budgets created in Excel and imported into Microsoft Dynamics GP.
 
->   To change the order budgets are listed in the Budget Selection window, click
->   the arrow in the scrolling window title bar, then select to sort items by
->   Budget ID or by Description.
+>   To change the order budgets are listed in the Budget Selection window, click the arrow in the scrolling window title bar, then select to sort items by Budget ID or by Description.
 
 ### Creating a new budget
 
->   Use the Budget Selection window to select whether to create new budgets in
->   Microsoft Dynamics GP or in Microsoft Excel.
+>   Use the Budget Selection window to select whether to create new budgets in Microsoft Dynamics GP or in Microsoft Excel.
 
 >   **To create a new budget:**
 
 1.  Open the Budget Selection window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
-1.  Decide if the budget will be created in Microsoft Dynamics GP or in Excel.
+2.  Decide if the budget will be created in Microsoft Dynamics GP or in Excel.
 
--   To create a budget in Microsoft Dynamics GP, choose New and select using
+-   To create a budget in Microsoft Dynamics GP, choose New and select using Microsoft Dynamics GP to open the Budget Maintenance window. Refer to *Chapter 14, “Setting up budgets in Microsoft Dynamics GP,”* for more information.
 
->   Microsoft Dynamics GP to open the Budget Maintenance window. Refer to
->   *Chapter 14, “Setting up budgets in Microsoft Dynamics GP,”* for more
->   information.
+-   To create a budget in Excel, choose New and select using Budget Wizard for Excel. Refer to *Chapter 13, “Setting up budgets in Microsoft Excel,”* for more information.
 
--   To create a budget in Excel, choose New and select using Budget Wizard for
-    Excel. Refer to *Chapter 13, “Setting up budgets in Microsoft Excel,”* for
-    more information.
+3. Choose New to open the Budget Maintenance window. Refer to *Chapter 14, “Setting up budgets in Microsoft Dynamics GP,”* for more information.
 
->   3. Choose New to open the Budget Maintenance window. Refer to *Chapter 14,
->   “Setting up budgets in Microsoft Dynamics GP,”* for more information.
-
->   *You’ll use a different method to set up a single-account budget in
->   Microsoft Dynamics GP. Refer to Creating a single-account budget for more
->   information.*
+>   *You’ll use a different method to set up a single-account budget in Microsoft Dynamics GP. Refer to Creating a single-account budget for more information.*
 
 ### Opening an existing budget
 
->   You can open existing budgets in either Microsoft Dynamics GP or Microsoft
->   Excel.
+>   You can open existing budgets in either Microsoft Dynamics GP or Microsoft Excel.
 
 >   **To open an existing budget:**
 
 1.  Open the Budget Selection window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
-1.  Select a budget in the scrolling window.
+2.  Select a budget in the scrolling window.
 
-    -   To open a budget with Excel, choose Open and select using Excel. The
-        Microsoft Dynamics GP budget must have an Excel file associated with it.
+    -   To open a budget with Excel, choose Open and select using Excel. The Microsoft Dynamics GP budget must have an Excel file associated with it.
 
-    -   To open a budget with Microsoft Dynamics GP, choose Open and select
-        using Microsoft Dynamics GP.
+    -   To open a budget with Microsoft Dynamics GP, choose Open and select using Microsoft Dynamics GP.
 
-2.  Choose Open.
+3.  Choose Open.
 
 ### Deleting a budget
 
->   You also can use the Budget Selection window to delete a budget. When you
->   delete a budget, accounts are removed from the specified budget ID and
->   you’ll then have an option to deleting the budget ID itself.
+>   You also can use the Budget Selection window to delete a budget. When you delete a budget, accounts are removed from the specified budget ID and you’ll then have an option to deleting the budget ID itself.
 
 >   **To delete a budget:**
 
 1.  Open the Budget Selection window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
-1.  Highlight the budget in the scrolling window.
+2.  Highlight the budget in the scrolling window.
 
-2.  Choose Delete. An alert message appears, asking if you’re sure you want to
-    delete the budget. Choose Yes to delete the budget or choose No to cancel
-    the process.
+3.  Choose Delete. An alert message appears, asking if you’re sure you want to delete the budget. Choose Yes to delete the budget or choose No to cancel the process.
 
 Chapter 13: Setting up budgets in Microsoft Excel
 -------------------------------------------------
 
->   You can use pre-existing budgets you’ve created in Microsoft Excel, or you
->   can create new budgets in Microsoft Excel using the Budget Wizard for Excel.
+>   You can use pre-existing budgets you’ve created in Microsoft Excel, or you can create new budgets in Microsoft Excel using the Budget Wizard for Excel.
 
->   The wizard helps you choose the framework for the budget, the calculation
->   method for amounts, and the account types and ranges to include in the
->   budget.
+>   The wizard helps you choose the framework for the budget, the calculation method for amounts, and the account types and ranges to include in the budget.
 
->   Later, you can import the budget into Microsoft Dynamics GP. For more
->   information about importing budgets from Microsoft Excel, see *Chapter 15,
->   “Exporting and importing budgets.”*
+>   Later, you can import the budget into Microsoft Dynamics GP. For more information about importing budgets from Microsoft Excel, see *Chapter 15, “Exporting and importing budgets.”*
 
 >   This information is divided into the following sections:
 
@@ -2121,185 +1520,109 @@ Chapter 13: Setting up budgets in Microsoft Excel
 
 ### Budget calculation methods
 
->   After you’ve identified the budget, you can choose a calculation method for
->   the budget. The Budget Calculation Method window includes four calculation
->   methods. Although each budget calculation method is different, the steps for
->   using the wizard will be roughly the same for each one.
+>   After you’ve identified the budget, you can choose a calculation method for the budget. The Budget Calculation Method window includes four calculation methods. Although each budget calculation method is different, the steps for using the wizard will be roughly the same for each one.
 
->   **Open Year Percent** This budget method calculates budget amounts based on
->   a percentage of actual amounts in an open year. For example, you can build a
->   2006 budget by selecting an open year, such as 2004, and entering a
->   percentage by which to increase or decrease the amounts for the new budget.
+>   **Open Year Percent** This budget method calculates budget amounts based on a percentage of actual amounts in an open year. For example, you can build a 2006 budget by selecting an open year, such as 2004, and entering a percentage by which to increase or decrease the amounts for the new budget.
 
->   **Other Budget Percent** This budget method calculates budget amounts based
->   on a percentage of amounts in another budget. To use this method, select an
->   existing budget, indicate whether the amounts will be increased or
->   decreased, and enter the percentage by which to increase or decrease the
->   amounts.
+>   **Other Budget Percent** This budget method calculates budget amounts based on a percentage of amounts in another budget. To use this method, select an existing budget, indicate whether the amounts will be increased or decreased, and enter the percentage by which to increase or decrease the amounts.
 
->   **Historical Year Percent** This budget method calculates budget amounts
->   based on actual account balances of a previous, historical year. The amounts
->   can be increased or decreased by a percentage you specify.
+>   **Historical Year Percent** This budget method calculates budget amounts based on actual account balances of a previous, historical year. The amounts can be increased or decreased by a percentage you specify.
 
->   **Blank Budget** This budget method calculates no budget amounts but
->   provides you with a blank Microsoft Excel budget spreadsheet. You can choose
->   fiscal years from which to pull actual amounts.
+>   **Blank Budget** This budget method calculates no budget amounts but provides you with a blank Microsoft Excel budget spreadsheet. You can choose fiscal years from which to pull actual amounts.
 
 ### Account types for budgets
 
->   Three types of accounts are available for use in Microsoft Excel budgets:
->   balance sheet accounts, profit and loss accounts, and unit accounts.
+>   Three types of accounts are available for use in Microsoft Excel budgets: balance sheet accounts, profit and loss accounts, and unit accounts.
 
->   **Balance sheet accounts** Balance sheet accounts are assets, liabilities,
->   and owner’s equity accounts. The amounts in these accounts would typically
->   appear on a company’s balance sheet.
+>   **Balance sheet accounts** Balance sheet accounts are assets, liabilities, and owner’s equity accounts. The amounts in these accounts would typically appear on a company’s balance sheet.
 
->   **Profit and loss accounts** Profit and loss accounts are for revenues and
->   expenses. These accounts represent the cash and assets going into and out of
->   a company’s general ledger.
+>   **Profit and loss accounts** Profit and loss accounts are for revenues and expenses. These accounts represent the cash and assets going into and out of a company’s general ledger.
 
->   **Unit accounts** Unit accounts do not track dollar amounts but track other
->   amounts such as the number of employees. Unit accounts are used to
->   accurately distribute the revenue or expense from another account, set up to
->   cover all the employees, departments, or other units, in the unit account.
+>   **Unit accounts** Unit accounts do not track dollar amounts but track other amounts such as the number of employees. Unit accounts are used to accurately distribute the revenue or expense from another account, set up to cover all the employees, departments, or other units, in the unit account.
 
->   You can choose to include any or all of these account types. Depending on
->   the budget you want to create, you might not want to include all of the
->   information. For example, if you’re creating a budget to determine the total
->   value of a business, you’d want to include both balance sheet accounts and
->   profit and loss accounts. If you want to create a budget for a specific
->   department, you’ll probably include profit and loss accounts and unit
->   accounts, but not balance sheet accounts.
+>   You can choose to include any or all of these account types. Depending on the budget you want to create, you might not want to include all of the information. For example, if you’re creating a budget to determine the total value of a business, you’d want to include both balance sheet accounts and profit and loss accounts. If you want to create a budget for a specific department, you’ll probably include profit and loss accounts and unit accounts, but not balance sheet accounts.
 
->   As you use the wizard, you’ll choose specific accounts to include in your
->   budget.
+>   As you use the wizard, you’ll choose specific accounts to include in your budget.
 
 ### Creating a budget with the budget wizard
 
->   You can use Microsoft Dynamics GP to create a new budget in Microsoft Excel.
->   The new budget will be a new worksheet that can be part of an existing
->   workbook, or a new workbook. You can add budget amounts in this worksheet
->   and import the budget into Microsoft Dynamics GP.
+>   You can use Microsoft Dynamics GP to create a new budget in Microsoft Excel. The new budget will be a new worksheet that can be part of an existing workbook, or a new workbook. You can add budget amounts in this worksheet and import the budget into Microsoft Dynamics GP.
 
->   *This procedure uses the Open Year budget calculation method. Creating
->   budgets using other budget calculation methods is similar, but differences
->   are noted.*
+>   *This procedure uses the Open Year budget calculation method. Creating budgets using other budget calculation methods is similar, but differences are noted.*
 
 >   **To create a budget with the budget wizard:**
 
 1.  Open the Budget Selection window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
 ![](media/6814a53b87625f1ee211947dc4df5c4c.jpg)
 
-1.  Choose New and select using Budget Wizard for Excel to open the welcome
-    window.
+2.  Choose New and select using Budget Wizard for Excel to open the welcome window.
 
-2.  Choose Next to open the New Budget Information window.
+3.  Choose Next to open the New Budget Information window.
 
 ![](media/3756a032c3996e477bc8b51687e00ba8.jpg)
 
-1.  Enter basic identifying information about the budget you are creating.
+4.  Enter basic identifying information about the budget you are creating.
 
-2.  Select whether to base the budget on a fiscal year or a date range. If you
-    base the budget on a date range, specify a range that crosses one or more
-    fiscal years. See *Calculating budgets that overlap fiscal years* for more
-    information.
+5.  Select whether to base the budget on a fiscal year or a date range. If you base the budget on a date range, specify a range that crosses one or more fiscal years. See *Calculating budgets that overlap fiscal years* for more information.
 
-3.  If you want to restrict access to the budget with a password, choose the
-    padlock icon button to open the User Password Setup window. If you don’t
-    want to restrict access to the budget, skip to step 7.
+6.  If you want to restrict access to the budget with a password, choose the padlock icon button to open the User Password Setup window. If you don’t want to restrict access to the budget, skip to step 7.
 
 ![](media/29d632a6cc68667049d73a61aa3f909f.jpg)
 
-1.  Enter a password and choose OK.
+7.  Enter a password and choose OK.
 
-2.  Choose Next to open the Budget Calculation Method window.
+8.  Choose Next to open the Budget Calculation Method window.
 
 ![](media/4fcd4380a5679d423093382a34d1aa1f.jpg)
 
-1.  Highlight a budget calculation method to view its description. When you have
-    selected the method you want to use, choose Next to open the Open Year
-    Percent window.
+9.  Highlight a budget calculation method to view its description. When you have selected the method you want to use, choose Next to open the Open Year Percent window.
 
 ![](media/288d9d6ee9f9a4b3515a07f09e6cd322.jpg)
 
->   The following steps assume you selected the Open Year Percent budget
->   calculation method. All of the steps are essentially the same for each
->   method, except Blank Budget. Differences are noted in the following steps.
+>   The following steps assume you selected the Open Year Percent budget calculation method. All of the steps are essentially the same for each method, except Blank Budget. Differences are noted in the following steps.
 
->   If you selected a budget method other than Open Year Percent, the name of
->   the window will be different. If you’re using the Other Budget Percent
->   method, the Other Budget Percent window opens. If you’re using the
->   Historical Budget Percent method, the Historical Year Percent window opens.
->   Information in the windows will be the same, except you will select a
->   specific budget or a historical year instead of an open year. You won’t see
->   this window if you chose Blank Budget, but will instead go to the next
->   window, Actual Amounts Selection.
+>   If you selected a budget method other than Open Year Percent, the name of the window will be different. If you’re using the Other Budget Percent method, the Other Budget Percent window opens. If you’re using the Historical Budget Percent method, the Historical Year Percent window opens.
+>   Information in the windows will be the same, except you will select a specific budget or a historical year instead of an open year. You won’t see this window if you chose Blank Budget, but will instead go to the next window, Actual Amounts Selection.
 
-1.  Select the open year you want to use as the basis for your new budget. If
-    you’re using another calculation method, choose an actual budget or
-    historical year for the other calculation methods.
+10.  Select the open year you want to use as the basis for your new budget. If you’re using another calculation method, choose an actual budget or historical year for the other calculation methods.
 
-2.  Select the type of change to be made and enter a percentage of increase or
-    decrease. Press TAB to exit this field and enable the Next button. Choose
-    Next to open the Actual Amounts Selection window.
+11.  Select the type of change to be made and enter a percentage of increase or decrease. Press TAB to exit this field and enable the Next button. Choose Next to open the Actual Amounts Selection window.
 
 ![](media/bebd995f74958b99d16866df9b51e1a1.jpg)
 
-1.  Select the years with the amount information to use. A separate Microsoft
-    Excel worksheet will be created for each year you select
-
->   *Worksheets will be in the same order you select them in the Actual Amounts
->   Selection window, so if you want them to appear in the workbook in a
->   specific order, be sure to select them in order.*
-
->   When you have made your selections, choose Next to open the Account Types
->   window.
+12.  Select the years with the amount information to use. A separate Microsoft Excel worksheet will be created for each year you select *Worksheets will be in the same order you select them in the Actual Amounts Selection window, so if you want them to appear in the workbook in a specific order, be sure to select them in order.* When you have made your selections, choose Next to open the Account Types window.
 
 ![](media/e3a4de5fcba7e9833dc2497022b46eb9.jpg)
 
-1.  Select the account types to include in your budget. Choose Next to open the
-    Accounts window.
+13.  Select the account types to include in your budget. Choose Next to open the Accounts window.
 
 ![](media/64145d8b286ca4549e4e37f8b8bab88d.jpg)
 
-1.  Select the accounts for the budget. You can add all accounts of the account
-    type you selected, or you can restrict the range of accounts.
+14.  Select the accounts for the budget. You can add all accounts of the account type you selected, or you can restrict the range of accounts.
 
->   Select a segment for sorting the accounts. Enter or select the starting and
->   ending segment numbers in the range, then choose Insert to add them to the
->   scrolling window.
+>   Select a segment for sorting the accounts. Enter or select the starting and ending segment numbers in the range, then choose Insert to add them to the scrolling window.
 
 >   Choose Next to open the Account Verification window.
 
 ![](media/4d630da438800d4f17c7476be3688554.jpg)
 
-1.  Mark the accounts to include in the budget. All accounts will be marked, but
-    you can clear the option for any account to exclude it from the budget.
+15.  Mark the accounts to include in the budget. All accounts will be marked, but you can clear the option for any account to exclude it from the budget.
 
->   To add an account that isn’t displayed, choose Add Account. The Accounts
->   Lookup window will open. Select the account to add.
+>   To add an account that isn’t displayed, choose Add Account. The Accounts Lookup window will open. Select the account to add.
 
 >   Choose Next to open the Workbook Selection window.
 
 ![](media/657286ca47cb52c4709b67c8ab2bc55e.jpg)
 
-1.  Select the workbook for your new budget worksheet. You can create a new
-    workbook or add to an existing one. Choose Next to open the Completing the
-    Budget Wizard for Excel window.
+16.  Select the workbook for your new budget worksheet. You can create a new workbook or add to an existing one. Choose Next to open the Completing the Budget Wizard for Excel window.
 
-2.  Review your selections, then choose Finish to complete the budget. The
-    wizard will build a new budget worksheet and fill the columns with budget
-    amounts from the accounts you selected, adjusted by the percentage you
-    specified.
+17.  Review your selections, then choose Finish to complete the budget. The wizard will build a new budget worksheet and fill the columns with budget amounts from the accounts you selected, adjusted by the percentage you specified.
 
 ### Format requirements for budgets in Microsoft Excel
 
->   When a worksheet is created using the budget wizard or when an existing
->   budget is exported to Microsoft Excel, the worksheet must have the following
->   standard layout:
+>   When a worksheet is created using the budget wizard or when an existing budget is exported to Microsoft Excel, the worksheet must have the following standard layout:
 
 -   Column A lists the accounts included in the budget, in view-only format.
 
@@ -2307,27 +1630,18 @@ Chapter 13: Setting up budgets in Microsoft Excel
 
 -   Column C lists the beginning balance budget amounts.
 
--   Columns D and columns beyond list the period budget amounts. The amounts and
-    formulas in these columns can be changed**.**
+-   Columns D and columns beyond list the period budget amounts. The amounts and formulas in these columns can be changed**.**
 
--   The first column after all the period amounts will total all of the period
-    budget amounts, in view-only format.
+-   The first column after all the period amounts will total all of the period budget amounts, in view-only format.
 
--   The last row will display the totals for each period column in view-only
-    format.
+-   The last row will display the totals for each period column in view-only format.
 
--   The maximum number of fiscal periods (columns) you can use is 252, because
-    the first four columns are required for the account information and balance
-    amounts. (Excel allows a maximum of 256 columns in a spreadsheet.)
+-   The maximum number of fiscal periods (columns) you can use is 252, because the first four columns are required for the account information and balance amounts. (Excel allows a maximum of 256 columns in a spreadsheet.)
 
 Chapter 14: Setting up budgets in Microsoft Dynamics GP
 -------------------------------------------------------
 
->   You can maintain an unlimited number of budgets in Microsoft Dynamics GP and
->   calculate the budgets using one of several different calculation methods.
->   You can create budgets for ranges of posting and unit accounts, or for
->   single accounts. You also can change or delete existing budgets and
->   recalculate budget amounts.
+>   You can maintain an unlimited number of budgets in Microsoft Dynamics GP and calculate the budgets using one of several different calculation methods. You can create budgets for ranges of posting and unit accounts, or for single accounts. You also can change or delete existing budgets and recalculate budget amounts.
 
 >   This information is divided into the following sections:
 
@@ -2347,102 +1661,47 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 ### Budget calculation methods
 
->   You can use one of seven calculation methods for budgets you create in
->   Microsoft Dynamics GP, and apply these methods to posting or unit accounts.
->   You also can choose whether your budget will include beginning balances.
->   Each method’s description includes information about the entries needed. The
->   same calculation methods are available whether you’re calculating a budget
->   for a fiscal year or for a range of dates; however, there are some
->   differences to be aware of. See *Calculating budgets that overlap fiscal
->   years* for more information.
+>   You can use one of seven calculation methods for budgets you create in Microsoft Dynamics GP, and apply these methods to posting or unit accounts. You also can choose whether your budget will include beginning balances. Each method’s description includes information about the entries needed. The same calculation methods are available whether you’re calculating a budget for a fiscal year or for a range of dates; however, there are some differences to be aware of. See *Calculating budgets that overlap fiscal years* for more information.
 
->   **Open Year Percent** This budget method calculates budget amounts based on
->   the actual balances of any year that hasn’t been closed, increasing or
->   decreasing them by a specified percentage. Actual account balances won’t be
->   affected.
+>   **Open Year Percent** This budget method calculates budget amounts based on the actual balances of any year that hasn’t been closed, increasing or decreasing them by a specified percentage. Actual account balances won’t be affected.
 
->   To use this method, you must select the year to base the calculations on.
->   Enter the percentage to increase or decrease the amounts or enter 0% to use
->   the existing account balances.
+>   To use this method, you must select the year to base the calculations on. Enter the percentage to increase or decrease the amounts or enter 0% to use the existing account balances.
 
->   **Other Budget Percent** This budget method calculates budget amounts based
->   on another budget. You can copy amounts from another budget and then
->   increase or decrease them by a percentage you specify.
+>   **Other Budget Percent** This budget method calculates budget amounts based on another budget. You can copy amounts from another budget and then increase or decrease them by a percentage you specify.
 
->   To use this method, you must enter the ID for the source budget and the
->   percentage to increase or decrease the amounts. You can enter 0% to use the
->   existing budget amounts.
+>   To use this method, you must enter the ID for the source budget and the percentage to increase or decrease the amounts. You can enter 0% to use the existing budget amounts.
 
->   **Percent Change** This budget method calculates budget amounts based on
->   amounts in a current budget. You can increase or decrease the amounts by a
->   percentage you specify.
+>   **Percent Change** This budget method calculates budget amounts based on amounts in a current budget. You can increase or decrease the amounts by a percentage you specify.
 
->   For example, suppose your budget for an account includes \$100 for the
->   beginning balance and \$200 for each budget period. To decrease the budget
->   by 20 percent, you can choose Percent Change, enter the percentage and
->   indicate that you want the amounts decreased. The new budget amounts will
->   include a beginning balance of \$80 and period amounts of \$160.
+>   For example, suppose your budget for an account includes \$100 for the beginning balance and \$200 for each budget period. To decrease the budget by 20 percent, you can choose Percent Change, enter the percentage and indicate that you want the amounts decreased. The new budget amounts will include a beginning balance of \$80 and period amounts of \$160.
 
->   **Amount Change** This budget method calculates budget amounts based on
->   amounts in a current budget. You can increase or decrease the amounts by a
->   dollar amount (for posting accounts) or quantity (for unit accounts) you
->   specify.
+>   **Amount Change** This budget method calculates budget amounts based on amounts in a current budget. You can increase or decrease the amounts by a dollar amount (for posting accounts) or quantity (for unit accounts) you specify.
 
->   To use this budget calculation method, enter the specified amount and
->   indicate whether the current budget amounts should be increased or
->   decreased.
+>   To use this budget calculation method, enter the specified amount and indicate whether the current budget amounts should be increased or decreased.
 
->   **Set Amount** This budget method calculates budget amounts based on a fixed
->   amount for each period included in the budget.
+>   **Set Amount** This budget method calculates budget amounts based on a fixed amount for each period included in the budget.
 
->   Enter the amount and indicate which periods you want to include. To include
->   beginning balance amounts in the budget calculation, mark the option to
->   include the beginning balances. If you mark this option, beginning balances
->   for all balance sheet accounts will be included.
+>   Enter the amount and indicate which periods you want to include. To include beginning balance amounts in the budget calculation, mark the option to include the beginning balances. If you mark this option, beginning balances for all balance sheet accounts will be included.
 
->   **Yearly Budget Amount** This budget method calculates budget amounts and
->   divides them equally among all periods in the budget.
+>   **Yearly Budget Amount** This budget method calculates budget amounts and divides them equally among all periods in the budget.
 
->   To use this method, enter the amount and specify the periods to be included
->   in the calculation. To include beginning balance amounts in the budget
->   calculation, mark the option to include the beginning balances. If you mark
->   this option, beginning balances for all balance sheet accounts will be
->   included.
+>   To use this method, enter the amount and specify the periods to be included in the calculation. To include beginning balance amounts in the budget calculation, mark the option to include the beginning balances. If you mark this option, beginning balances for all balance sheet accounts will be included.
 
->   **Historical Year Percent** This budget method calculates budget amounts
->   based on a historical year’s actual balances, which can be increased or
->   decreased by a percentage you specify. Actual account balances aren’t
->   affected. You can use this method only if you are keeping account history.
+>   **Historical Year Percent** This budget method calculates budget amounts based on a historical year’s actual balances, which can be increased or decreased by a percentage you specify. Actual account balances aren’t affected. You can use this method only if you are keeping account history.
 
->   To use this method, choose a year and enter the percentage increase or
->   decrease.
+>   To use this method, choose a year and enter the percentage increase or decrease.
 
 >   Enter 0% if you want to use the existing account balances.
 
 ### Calculating budgets that overlap fiscal years
 
->   You can create budgets for a range of dates that don’t match your fiscal
->   year. This can be useful if your organization receives grants that span
->   multiple years, or that cover a period of time that’s different from your
->   fiscal year. Budgets based on a range of dates can be created for either a
->   single account or a range of accounts.
+>   You can create budgets for a range of dates that don’t match your fiscal year. This can be useful if your organization receives grants that span multiple years, or that cover a period of time that’s different from your fiscal year. Budgets based on a range of dates can be created for either a single account or a range of accounts.
 
->   To base a budget on a range of dates, fiscal periods must be set up for the
->   full period that’s covered by the date range of the budget. For example, if
->   you create a budget for March 1, 2007 to August 31, 2009, you can’t save the
->   budget if you haven’t created fiscal periods through August 31, 2009.
+>   To base a budget on a range of dates, fiscal periods must be set up for the full period that’s covered by the date range of the budget. For example, if you create a budget for March 1, 2007 to August 31, 2009, you can’t save the budget if you haven’t created fiscal periods through August 31, 2009.
 
->   After you’ve saved a budget, you can’t change the time period that it’s
->   based on, nor can you change the starting and ending dates when you’re
->   basing the budget on a date range.
+>   After you’ve saved a budget, you can’t change the time period that it’s based on, nor can you change the starting and ending dates when you’re basing the budget on a date range.
 
->   The calculation methods that are available for budgets based on fiscal years
->   also are available for budgets based a date range. Some calculation methods
->   involve
-
->   copying budget amounts from one budget to another. The following table
->   describes how this process works when you’re basing a budget on a range of
->   dates.
+>   The calculation methods that are available for budgets based on fiscal years also are available for budgets based a date range. Some calculation methods involve copying budget amounts from one budget to another. The following table describes how this process works when you’re basing a budget on a range of dates.
 
 | **Calculation method** | **Notes**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2455,98 +1714,66 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 ### Creating a budget for a range of accounts
 
->   Use the Budget Maintenance window to create a budget for a range of posting
->   and unit accounts. You can view how the calculation has affected the
->   accounts included in the range, one account at a time. You can display the
->   calculated amounts for each account if you want to view the budget
->   calculation for a single account.
+>   Use the Budget Maintenance window to create a budget for a range of posting and unit accounts. You can view how the calculation has affected the accounts included in the range, one account at a time. You can display the calculated amounts for each account if you want to view the budget calculation for a single account.
 
 >   **To create a budget for a range of accounts:**
 
 1.  Open the Budget Maintenance window.
-
->   (Financial \>\> Cards \>\> Financial \>\> Budgets \>\> New \>\> using
->   Microsoft Dynamics GP)
+>   (Financial \>\> Cards \>\> Financial \>\> Budgets \>\> New \>\> using Microsoft Dynamics GP)
 
 ![](media/3a4009db3e073ac8ef0ec1cb65a869a3.jpg)
 
-1.  Enter or select a budget ID.
+2.  Enter or select a budget ID.
 
 *Use only alphanumeric characters in the budget ID.*
 
-1.  Select whether to base the budget on a fiscal year or a date range. If you
-    base the budget on a date range, specify a range that crosses one or more
-    fiscal years. See *Calculating budgets that overlap fiscal years* for more
-    information.
+3.  Select whether to base the budget on a fiscal year or a date range. If you base the budget on a date range, specify a range that crosses one or more fiscal years. See *Calculating budgets that overlap fiscal years* for more information.
 
-2.  Choose the budget type: actual or preliminary.
+4.  Choose the budget type: actual or preliminary.
 
->   Choose Actual if you know that the budget will be calculated correctly and
->   that you will not be making changes to the budget.
+>   Choose Actual if you know that the budget will be calculated correctly and that you will not be making changes to the budget.
 
->   Choose Preliminary to experiment with budgets. You can change preliminary
->   budgets and then revert to the original version of the budget, but when you
->   change an actual budget, the change is permanent.
+>   Choose Preliminary to experiment with budgets. You can change preliminary budgets and then revert to the original version of the budget, but when you change an actual budget, the change is permanent.
 
->   *If you’re calculating a preliminary budget and you’ve decided that you’d
->   like to save it, make the changes permanent by choosing Actual and save the
->   budget.*
+>   *If you’re calculating a preliminary budget and you’ve decided that you’d like to save it, make the changes permanent by choosing Actual and save the budget.*
 
-1.  To restrict access to the budget, choose the password padlock icon button to
-    open the User Password Setup window. If you don’t need to restrict access to
-    the budget, skip to step 6.
+5.  To restrict access to the budget, choose the password padlock icon button to open the User Password Setup window. If you don’t need to restrict access to the budget, skip to step 6.
 
-2.  Enter a password and choose OK.
+6.  Enter a password and choose OK.
 
-3.  Choose a budget year. If you’ve selected an existing budget and you change
-    budget years, some periods may not appear in the scrolling window.
-    Recalculate the budget before continuing.
+7.  Choose a budget year. If you’ve selected an existing budget and you change budget years, some periods may not appear in the scrolling window. Recalculate the budget before continuing.
 
-4.  Choose Ranges to open the Account Segment Ranges window.
+8.  Choose Ranges to open the Account Segment Ranges window.
 
->   *If you don’t define a range, all your company's accounts will be included
->   in the budget calculation.*
+>   *If you don’t define a range, all your company's accounts will be included in the budget calculation.*
 
 ![](media/aabb7c3e9731455a82576722dbc56fd0.jpg)
 
-1.  Enter or select the segment ID the range will be based on. Enter or select
-    beginning and ending account segments.
+9.  Enter or select the segment ID the range will be based on. Enter or select beginning and ending account segments.
 
-2.  Choose Insert to insert the range into the Restrictions box. All accounts
-    that meet all restrictions you’ve entered will be included in the budget.
+10.  Choose Insert to insert the range into the Restrictions box. All accounts that meet all restrictions you’ve entered will be included in the budget.
 
->   *To calculate actual budgets for single accounts, you might find it easier
->   to use the Single-Account Budget Maintenance window. (Preliminary budgets
->   can’t be calculated using the Single-Account Budget Maintenance window.) For
->   more information, see Creating a single-account budget.*
+>   *To calculate actual budgets for single accounts, you might find it easier to use the Single-Account Budget Maintenance window. (Preliminary budgets can’t be calculated using the Single-Account Budget Maintenance window.) For more information, see Creating a single-account budget.*
 
-1.  Choose OK to return to the Budget Maintenance window.
+11.  Choose OK to return to the Budget Maintenance window.
 
-2.  Choose the Methods button to display the Budget Calculation Methods window.
+12.  Choose the Methods button to display the Budget Calculation Methods window.
 
 ![](media/9ff193c02621e227990798fd211b1462.jpg)
 
-1.  Select a calculation method, enter the necessary information and indicate if
-    the budget should include the beginning balance amounts. For more
-    information about calculation methods, see *Budget calculation methods*.
+13.  Select a calculation method, enter the necessary information and indicate if the budget should include the beginning balance amounts. For more information about calculation methods, see *Budget calculation methods*.
 
-2.  Choose Calculate to begin the calculation process. If a range hasn’t been
-    defined, all your company’s accounts will be included in the calculation.
+14.  Choose Calculate to begin the calculation process. If a range hasn’t been defined, all your company’s accounts will be included in the calculation.
 
->   *To modify the amounts for an individual account, simply type over the
->   calculated amounts for each period.*
+>   *To modify the amounts for an individual account, simply type over the calculated amounts for each period.*
 
-1.  If you want to save the budget information, choose Save.
+15.  If you want to save the budget information, choose Save.
 
->   If you’re calculating a preliminary budget and you’ve decided that you’d
->   like to save it, choose Actual before saving the budget information.
+>   If you’re calculating a preliminary budget and you’ve decided that you’d like to save it, choose Actual before saving the budget information.
 
-1.  If you want to combine this budget with another, open the Combine Budgets
-    window by choosing the Combine Budgets button. For more information, see
-    *Combining budgets in Microsoft Dynamics GP.*
+16.  If you want to combine this budget with another, open the Combine Budgets window by choosing the Combine Budgets button. For more information, see *Combining budgets in Microsoft Dynamics GP.*
 
-2.  If needed, choose File \>\> Print or the printer icon button to view a
-    Budget List.
+17.  If needed, choose File \>\> Print or the printer icon button to view a Budget List.
 
 ### Deleting a budget
 
@@ -2555,102 +1782,76 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 >   **To delete a budget:**
 
 1.  Open the Budget Maintenance window.
-
->   (Financial \>\> Cards \>\> Financial \>\> Budgets \>\> New \>\> using
->   Microsoft Dynamics GP)
+>   (Financial \>\> Cards \>\> Financial \>\> Budgets \>\> New \>\> using Microsoft Dynamics GP)
 
 ![](media/3a4009db3e073ac8ef0ec1cb65a869a3.jpg)
 
-1.  Enter or select a budget ID.
+2.  Enter or select a budget ID.
 
-2.  Choose Delete.
+3.  Choose Delete.
 
 ### Creating a single-account budget
 
->   Use the Single-Account Budget Maintenance window to calculate, modify or
->   delete budgets for individual accounts, one account at a time. You can’t
->   calculate preliminary budgets using this window.
+>   Use the Single-Account Budget Maintenance window to calculate, modify or delete budgets for individual accounts, one account at a time. You can’t calculate preliminary budgets using this window.
 
->   *Only posting and unit accounts can be used when calculating budgets. You
->   can’t create budgets for variable and fixed allocation accounts.*
+>   *Only posting and unit accounts can be used when calculating budgets. You can’t create budgets for variable and fixed allocation accounts.*
 
 >   **To create a single-account budget:**
 
 1.  Open the Single-Account Budget Maintenance window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Account \>\> Budget button)
 >   (Financial \>\> Cards \>\> Financial \>\> Unit Account \>\> Budget button)
 
 ![](media/83b6658ffd167b4a3f69fd99f194126d.jpg)
 
-1.  Enter or select the account and budget ID.
+2.  Enter or select the account and budget ID.
 
-2.  Select whether to base the budget on a fiscal year or a date range. If you
-    base the budget on a date range, specify a range that crosses one or more
-    fiscal years. See *Calculating budgets that overlap fiscal years* for more
-    information.
+3.  Select whether to base the budget on a fiscal year or a date range. If you base the budget on a date range, specify a range that crosses one or more fiscal years. See *Calculating budgets that overlap fiscal years* for more information.
 
->   *If you’ve selected an existing budget and you change budget years, some
->   periods might not appear in the scrolling window. Recalculate the budget
->   before continuing.*
+>   *If you’ve selected an existing budget and you change budget years, some periods might not appear in the scrolling window. Recalculate the budget before continuing.*
 
-1.  To restrict access to the budget, choose the password padlock icon button to
-    open the User Password Setup window. If you don’t need to restrict access to
-    the budget, skip to step 6.
+4.  To restrict access to the budget, choose the password padlock icon button to open the User Password Setup window. If you don’t need to restrict access to the budget, skip to step 6.
 
-2.  Enter a password and choose OK.
+5.  Enter a password and choose OK.
 
-3.  Select a calculation method and indicate if the budget should include the
-    account’s beginning balance. For more information about calculation methods,
-    see *Budget calculation methods*.
+6.  Select a calculation method and indicate if the budget should include the account’s beginning balance. For more information about calculation methods, see *Budget calculation methods*.
 
-4.  Choose Calculate to begin the calculation process. When the budget has been
-    calculated, the amounts will be displayed.
+7.  Choose Calculate to begin the calculation process. When the budget has been calculated, the amounts will be displayed.
 
-5.  To make changes to the budget amounts without recalculating, type over the
-    existing amounts.
+8.  To make changes to the budget amounts without recalculating, type over the existing amounts.
 
-6.  To save the budget, choose Save.
+9.  To save the budget, choose Save.
 
-7.  To remove the selected account from the budget, choose Delete.
+10.  To remove the selected account from the budget, choose Delete.
 
-8.  Choose File \>\> Print or the printer icon button to view a Detailed Budget
-    report.
+11.  Choose File \>\> Print or the printer icon button to view a Detailed Budget report.
 
 ### Entering budget transactions
 
->   Use the Budget Transaction Entry window to create transactions that, when
->   posted, increase or decrease the budget for one or more accounts for
->   specific periods. Amounts are displayed on a period-by-period basis. You can
->   also choose to view period balance amounts, which displays the cumulative
->   budget and budget transaction for each period and all previous periods. A
->   single journal entry can contain adjustments to multiple accounts.
+>   Use the Budget Transaction Entry window to create transactions that, when posted, increase or decrease the budget for one or more accounts for specific periods. Amounts are displayed on a period-by-period basis. You can also choose to view period balance amounts, which displays the cumulative budget and budget transaction for each period and all previous periods. A single journal entry can contain adjustments to multiple accounts.
 
 >   **To enter a single budget transaction:**
 
 1.  Open the Budget Transaction Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Budget Transactions)
 
 ![](media/bf88a7cdb4b5587c466c2afd7806aa85.jpg)
 
-1.  Enter or select a budget journal entry.
+2.  Enter or select a budget journal entry.
 
-2.  Enter or select a batch ID for the journal entry.
+3.  Enter or select a batch ID for the journal entry.
 
-3.  Enter or select a transaction date for the journal entry.
+4.  Enter or select a transaction date for the journal entry.
 
-4.  Enter or select a budget ID.
+5.  Enter or select a budget ID.
 
-5.  Enter a reference for the journal entry. References can be any combination
-    of alphanumeric symbols to help you identify the journal entry.
+6.  Enter a reference for the journal entry. References can be any combination of alphanumeric symbols to help you identify the journal entry.
 
-6.  Enter or select an account for which you want to adjust the budget.
+7.  Enter or select an account for which you want to adjust the budget.
 
-7.  Enter the adjustment amount for each period.
+8.  Enter the adjustment amount for each period.
 
-8.  Choose File \>\> Print or the printer icon button to view a Budget
-    Transaction Edit List report.
+9.  Choose File \>\> Print or the printer icon button to view a Budget Transaction Edit List report.
 
 >   **To enter multiple budget transactions:**
 
@@ -2658,63 +1859,40 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 2.  Choose Ranges to open the Account Segment Ranges window.
 
->   *If you don’t define a range, only the single account that is displayed will
->   be included in the budget calculation. For information on the Account
->   Segment Ranges window, choose the Help button in that window, or see
->   Creating a budget for a range of accounts.*
+>   *If you don’t define a range, only the single account that is displayed will be included in the budget calculation. For information on the Account Segment Ranges window, choose the Help button in that window, or see Creating a budget for a range of accounts.*
 
-1.  Select a method for calculating adjustments and indicate if the budget
-    should include the beginning balance amounts. For more information on
-    calculation methods, see *Budget calculation methods*.
+3.  Select a method for calculating adjustments and indicate if the budget should include the beginning balance amounts. For more information on calculation methods, see *Budget calculation methods*.
 
-2.  Choose Calculate to begin the calculation process.
+4.  Choose Calculate to begin the calculation process.
 
 ### Combining budgets in Microsoft Dynamics GP
 
->   Use the Combine Budgets window to simplify the process of combining General
->   Ledger budgets. This is useful when multiple departments in your
->   organization create their own budgets, which are then consolidated into a
->   single budget. You can combine only two budgets at a time with this window,
->   but you can repeat the process so that many budgets are combined into one.
+>   Use the Combine Budgets window to simplify the process of combining General Ledger budgets. This is useful when multiple departments in your organization create their own budgets, which are then consolidated into a single budget. You can combine only two budgets at a time with this window, but you can repeat the process so that many budgets are combined into one.
 
->   To combine multiple budgets, first combine two budgets, and then merge
->   others into the new, consolidated budget.
+>   To combine multiple budgets, first combine two budgets, and then merge others into the new, consolidated budget.
 
->   Any budget that is added to the new, consolidated budget must have a date
->   range that matches the consolidated budget.
+>   Any budget that is added to the new, consolidated budget must have a date range that matches the consolidated budget.
 
 >   **To combine two budgets:**
 
 1.  Open the Combine Budgets window.
-
->   (Financial \>\> Cards \>\> Financial \>\> Budgets \>\> Combine Budgets
->   button)
+>   (Financial \>\> Cards \>\> Financial \>\> Budgets \>\> Combine Budgets button)
 
 ![](media/3a4009db3e073ac8ef0ec1cb65a869a3.jpg)
 
-1.  Enter or select a master budget ID. This is the ID for the consolidated
-    budget that will receive other budgets.
+2.  Enter or select a master budget ID. This is the ID for the consolidated budget that will receive other budgets.
 
->   If the budget ID doesn’t exist, you must create it in the Budget Maintenance
->   window. You cannot create a budget in the Combine Budgets window.
+>   If the budget ID doesn’t exist, you must create it in the Budget Maintenance window. You cannot create a budget in the Combine Budgets window.
 
-1.  Enter or select a budget ID to combine with the master budget.
+3.  Enter or select a budget ID to combine with the master budget.
 
-2.  If you want to delete the budget you are merging into the master budget,
-    mark the Delete Budget after it is combined check box.
+4.  If you want to delete the budget you are merging into the master budget, mark the Delete Budget after it is combined check box.
 
-3.  To combine the two budgets, choose Process.
+5.  To combine the two budgets, choose Process.
 
 **Chapter 15: Exporting and importing budgets**
 
->   If you already have created a budget in Microsoft Dynamics GP, you can
->   export it to Microsoft Excel to take advantage of the calculations and
->   formulas available in that application. You can then import the budget into
->   Microsoft Dynamics GP when you’ve finished making changes. With Microsoft
->   Dynamics GP, you can import a budget you’ve created from scratch in
->   Microsoft Excel, provided the budget’s columns are formatted correctly.
->   Refer to *Format requirements for budgets in Microsoft Excel* for more
->   information.
+>   If you already have created a budget in Microsoft Dynamics GP, you can export it to Microsoft Excel to take advantage of the calculations and formulas available in that application. You can then import the budget into Microsoft Dynamics GP when you’ve finished making changes. With Microsoft Dynamics GP, you can import a budget you’ve created from scratch in Microsoft Excel, provided the budget’s columns are formatted correctly. Refer to *Format requirements for budgets in Microsoft Excel* for more information.
 
 >   This information is divided into the following sections:
 
@@ -2726,8 +1904,7 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 #### Exporting a budget to Microsoft Excel
 
->   Exporting budgets to Microsoft Excel transfers data from the following
->   Microsoft Dynamics GP budget fields to an Excel worksheet:
+>   Exporting budgets to Microsoft Excel transfers data from the following Microsoft Dynamics GP budget fields to an Excel worksheet:
 
 -   Budget ID
 
@@ -2741,173 +1918,115 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 -   Budget amount for each period for each account
 
->   The information will be arranged in a worksheet. The name of the worksheet
->   will be the budget description.
+>   The information will be arranged in a worksheet. The name of the worksheet will be the budget description.
 
->   When you export the budget to an existing workbook, the name of the
->   worksheet tab will be budget ID. When you export to a new workbook, the
->   default file name will be the budget ID. The column headers will be
->   automatically created and based on the number of periods created during
->   Fiscal Period Setup. All of the period amounts will be filled into the
->   columns, as well.
+>   When you export the budget to an existing workbook, the name of the worksheet tab will be budget ID. When you export to a new workbook, the default file name will be the budget ID. The column headers will be automatically created and based on the number of periods created during Fiscal Period Setup. All of the period amounts will be filled into the columns, as well.
 
->   Once the budget is exported, you can adjust the layout of the worksheet, as
->   well as the budget amounts.
+>   Once the budget is exported, you can adjust the layout of the worksheet, as well as the budget amounts.
 
 >   **To export a budget to Microsoft Excel:**
 
 1.  Open the Budget Selection window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
 ![](media/6814a53b87625f1ee211947dc4df5c4c.jpg)
 
-1.  Highlight a budget. Choose Excel and select Export to Excel to open the
-    Export Budget to Excel window.
+2.  Highlight a budget. Choose Excel and select Export to Excel to open the Export Budget to Excel window.
 
-2.  Select a destination for the budget. The destination can be a new workbook
-    or an existing one. If you select an existing workbook, the budget will be
-    added on a new worksheet in the workbook.
+3.  Select a destination for the budget. The destination can be a new workbook or an existing one. If you select an existing workbook, the budget will be added on a new worksheet in the workbook.
 
->   *If your worksheet has the same name—the same Budget ID—as an existing
->   worksheet in the workbook you’re exporting to, the existing worksheet will
->   be overwritten. You won’t be able to cancel the export process.*
+>   *If your worksheet has the same name—the same Budget ID—as an existing worksheet in the workbook you’re exporting to, the existing worksheet will be overwritten. You won’t be able to cancel the export process.*
 
 ![](media/dddd7ca4a998f17f6f986b2b1efc7511.jpg)
 
-1.  Choose OK to complete the export process.
+4.  Choose OK to complete the export process.
 
->   If you export the budget to a new workbook, you’ll be prompted to enter a
->   name and location for the workbook. When the process is complete, the budget
->   will be displayed in Microsoft Excel.
+>   If you export the budget to a new workbook, you’ll be prompted to enter a name and location for the workbook. When the process is complete, the budget will be displayed in Microsoft Excel.
 
 #### Preparing a budget for import from Microsoft Excel
 
->   Before you can import a Microsoft Excel budget into Microsoft Dynamics GP,
->   it must be properly formatted. Refer to *Format requirements for budgets in
->   Microsoft Excel* for more information.
+>   Before you can import a Microsoft Excel budget into Microsoft Dynamics GP, it must be properly formatted. Refer to *Format requirements for budgets in Microsoft Excel* for more information.
 
->   *To create a Microsoft Excel worksheet with the correct format, you can use
->   the budget wizard to create a blank worksheet with the accounts you
->   specify.*
+>   *To create a Microsoft Excel worksheet with the correct format, you can use the budget wizard to create a blank worksheet with the accounts you specify.*
 
->   The import process creates a budget with periods corresponding to the period
->   columns in the Microsoft Excel budget. If the number of periods in the
->   Microsoft Dynamics GP budget doesn’t match the number of periods in the
->   Microsoft Excel budget, you’ll be prompted to add periods to the Microsoft
->   Excel budget before completing the import. The amount from each period cell
->   in Microsoft Excel will be transferred to Microsoft Dynamics GP. Once the
->   budget is imported, you can adjust the amounts as needed.
+>   The import process creates a budget with periods corresponding to the period columns in the Microsoft Excel budget. If the number of periods in the Microsoft Dynamics GP budget doesn’t match the number of periods in the Microsoft Excel budget, you’ll be prompted to add periods to the Microsoft Excel budget before completing the import. The amount from each period cell in Microsoft Excel will be transferred to Microsoft Dynamics GP. Once the budget is imported, you can adjust the amounts as needed.
 
 #### Importing a budget from Microsoft Excel
 
->   You can import Microsoft Excel budget information into an existing Microsoft
->   Dynamics GP budget, or into a newly created Microsoft Dynamics GP budget.
+>   You can import Microsoft Excel budget information into an existing Microsoft Dynamics GP budget, or into a newly created Microsoft Dynamics GP budget.
 
->   *If you choose to import the Microsoft Excel budget worksheet into an
->   existing* Microsoft Dynamics GP *budget, all of the amounts in the*
->   Microsoft Dynamics GP *budget will be overwritten with the amounts from the
->   worksheet.*
+>   *If you choose to import the Microsoft Excel budget worksheet into an existing* Microsoft Dynamics GP *budget, all of the amounts in the* Microsoft Dynamics GP *budget will be overwritten with the amounts from the worksheet.*
 
->   When you start the budget import process, a series of windows will open in
->   which you can specify information about the budget before it is created. The
->   windows are basically the same whether you choose to import into a new or
->   existing budget.
+>   When you start the budget import process, a series of windows will open in which you can specify information about the budget before it is created. The windows are basically the same whether you choose to import into a new or existing budget.
 
->   However, if you choose to import into a new budget, you’ll see one
->   additional window, the New Budget Information window. Use that window to
->   enter the budget ID, description, and fiscal year information.
+>   However, if you choose to import into a new budget, you’ll see one additional window, the New Budget Information window. Use that window to enter the budget ID, description, and fiscal year information.
 
->   The following procedure assumes you’re importing to create a new budget. The
->   steps will remain the same when you choose to import to an existing budget,
->   except that you will skip step 5.
+>   The following procedure assumes you’re importing to create a new budget. The steps will remain the same when you choose to import to an existing budget, except that you will skip step 5.
 
 >   **To import a budget from Microsoft Excel:**
 
 1.  Open the Budget Selection window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
 ![](media/6814a53b87625f1ee211947dc4df5c4c.jpg)
 
-1.  Choose Excel and select Import from Excel to open the Welcome to the Budget
-    Wizard for Excel window.
+2.  Choose Excel and select Import from Excel to open the Welcome to the Budget Wizard for Excel window.
 
-2.  Choose Next to open the Import Budget window.
+3.  Choose Next to open the Import Budget window.
 
 ![](media/394bf7d061c86dafd7b975f488b738ac.jpg)
 
-1.  Decide if the imported budget should be a new budget or if it should
-    overwrite an existing budget.
+4.  Decide if the imported budget should be a new budget or if it should overwrite an existing budget.
 
--   To import the Microsoft Excel budget worksheet to a new budget, select A new
-    Microsoft Dynamics GP budget and choose Next.
+-   To import the Microsoft Excel budget worksheet to a new budget, select A new Microsoft Dynamics GP budget and choose Next.
 
--   To overwrite an existing budget, mark An existing Microsoft Dynamics GP
-    budget and enter or select the budget. Choose Next and continue with step 8.
+-   To overwrite an existing budget, mark An existing Microsoft Dynamics GP budget and enter or select the budget. Choose Next and continue with step 8.
 
-1.  If you’re creating a new budget, the New Budget Information window opens.
-    Enter basic identifying information about the budget you’re creating.
+5.  If you’re creating a new budget, the New Budget Information window opens. Enter basic identifying information about the budget you’re creating.
 
 ![](media/3756a032c3996e477bc8b51687e00ba8.jpg)
 
-1.  To restrict access to the budget with a password, choose the padlock icon
-    button to open the User Password Setup window. If you don’t want to restrict
-    access to the budget, skip to step 8.
+6.  To restrict access to the budget with a password, choose the padlock icon button to open the User Password Setup window. If you don’t want to restrict access to the budget, skip to step 8.
 
-2.  Enter a password and choose OK.
+7.  Enter a password and choose OK.
 
-3.  Choose Next to open the Excel File Selection window.
+8.  Choose Next to open the Excel File Selection window.
 
 ![](media/2d3c2468045c8e684ed27b425662c3c1.jpg)
 
-1.  Enter or select the name of the Excel file to import, then select the
-    specific worksheet to import. Choose Next to open the Completing the Budget
-    Wizard for Excel window.
+9.  Enter or select the name of the Excel file to import, then select the specific worksheet to import. Choose Next to open the Completing the Budget Wizard for Excel window.
 
-2.  Choose Finish to complete the import process.
+10.  Choose Finish to complete the import process.
 
 **Part 3: Transactions**
 
->   Transaction procedures provide step-by-step instructions for completing
->   General Ledger accounting tasks with Microsoft Dynamics GP.
+>   Transaction procedures provide step-by-step instructions for completing General Ledger accounting tasks with Microsoft Dynamics GP.
 
 >   The following information is discussed:
 
--   *Chapter 16, “Multicurrency transactions,”* explains how to choose the
-    currency for entering transactions.
+-   *Chapter 16, “Multicurrency transactions,”* explains how to choose the currency for entering transactions.
 
 -   *Chapter 17, “Batches,”* explains how to group transactions into batches.
 
--   *Chapter 18, “Standard and reversing transactions,”* explains standard and
-    reversing transactions, the most common transactions in your system.
+-   *Chapter 18, “Standard and reversing transactions,”* explains standard and reversing transactions, the most common transactions in your system.
 
--   *Chapter 19, “Clearing transactions,”* defines and explains how to use
-    clearing transactions.
+-   *Chapter 19, “Clearing transactions,”* defines and explains how to use clearing transactions.
 
--   *Chapter 20, “Quick journal transactions,”* explains quick journals, a
-    time-saving journal entry that doesn’t require batches.
+-   *Chapter 20, “Quick journal transactions,”* explains quick journals, a time-saving journal entry that doesn’t require batches.
 
--   *Chapter 21, “Transaction deferrals,”* describes the methods available for
-    deferring revenues or distributing expenses over a specified period.
+-   *Chapter 21, “Transaction deferrals,”* describes the methods available for deferring revenues or distributing expenses over a specified period.
 
--   *Chapter 22, “Posting,”* describes posting, the process of transferring your
-    temporary transactions to the company’s permanent records.
+-   *Chapter 22, “Posting,”* describes posting, the process of transferring your temporary transactions to the company’s permanent records.
 
--   *Chapter 23, “Correcting transactions,”* explains how to correct
-    transactions, whether or not the transaction has been posted.
+-   *Chapter 23, “Correcting transactions,”* explains how to correct transactions, whether or not the transaction has been posted.
 
--   *Chapter 24, “Matching transactions,”* describes the process of linking
-    related transaction distributions from different journal entries.
+-   *Chapter 24, “Matching transactions,”* describes the process of linking related transaction distributions from different journal entries.
 
 **Chapter 16: Multicurrency transactions**
 
->   If you’re using Multicurrency Management with General Ledger, you can choose
->   the currency you want to use when entering transactions.
+>   If you’re using Multicurrency Management with General Ledger, you can choose the currency you want to use when entering transactions.
 
->   For information about setting up your financial system to use multiple
->   currencies, including the euro, refer to the Multicurrency Management
->   documentation.
+>   For information about setting up your financial system to use multiple currencies, including the euro, refer to the Multicurrency Management documentation.
 
 >   This information is divided into the following sections:
 
@@ -2919,16 +2038,11 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 #### Viewing multiple currencies
 
->   You can choose to view multicurrency transactions in the originating or the
->   functional currency. Choose View \>\> Currency \>\> Functional or
->   Originating while entering a transaction. The option will be saved on a per
->   user, per window basis.
+>   You can choose to view multicurrency transactions in the originating or the functional currency. Choose View \>\> Currency \>\> Functional or Originating while entering a transaction. The option will be saved on a per user, per window basis.
 
->   You also can use the Currency list button in the windows that support
->   changing the currency view.
+>   You also can use the Currency list button in the windows that support changing the currency view.
 
->   The View menu and currency list button are available in the following
->   windows:
+>   The View menu and currency list button are available in the following windows:
 
 -   Transaction Entry
 
@@ -2942,45 +2056,21 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 -   History Detail Summary
 
->   The first time you open these windows after registering Multicurrency
-
->   Management, all the transactions will be displayed in the originating
->   currency. If you change the currency view, that option will be the default
->   view the next time you open that window.
+>   The first time you open these windows after registering Multicurrency Management, all the transactions will be displayed in the originating currency. If you change the currency view, that option will be the default view the next time you open that window.
 
 #### Exchange rate and document date
 
->   If a transaction’s currency ID is not in the functional currency, a rate
->   type and associated exchange rate table are assigned to the transaction. The
->   rate type is the default rate type for the Financial series specified in the
->   Multicurrency Setup window. You also can choose the currency expansion
->   button to open the Exchange Rate Entry window to view or modify the default
->   exchange rate.
+>   If a transaction’s currency ID is not in the functional currency, a rate type and associated exchange rate table are assigned to the transaction. The rate type is the default rate type for the Financial series specified in the Multicurrency Setup window. You also can choose the currency expansion button to open the Exchange Rate Entry window to view or modify the default exchange rate.
 
->   The document date assigned to a transaction determines which exchange rate
->   is used, based on the currency ID and associated rate type that’s entered
->   for the transaction. Each time you change the document date on a
->   multicurrency transaction, the system searches for a valid exchange rate. If
->   a valid rate doesn’t exist, you can enter an exchange rate using the
->   Exchange Rate Entry window. If you’ve entered a General Ledger posting date
->   that’s different from the document date, the exchange rate expiration date
->   must be after the posting date.
+>   The document date assigned to a transaction determines which exchange rate is used, based on the currency ID and associated rate type that’s entered for the transaction. Each time you change the document date on a multicurrency transaction, the system searches for a valid exchange rate. If a valid rate doesn’t exist, you can enter an exchange rate using the Exchange Rate Entry window. If you’ve entered a General Ledger posting date that’s different from the document date, the exchange rate expiration date must be after the posting date.
 
 #### Multicurrency account distributions
 
-For multicurrency transactions, distribution amounts are displayed in both the
-functional and originating currencies. However, you can change only the
-originating amounts.
+For multicurrency transactions, distribution amounts are displayed in both the functional and originating currencies. However, you can change only the originating amounts.
 
-When you’re entering a multicurrency transaction, the originating debit and
-credit amounts must balance. If the functional equivalents don’t balance, the
-difference is posted automatically to a Rounding Difference account and a
-distribution type of Round identifies the distribution amount.
+When you’re entering a multicurrency transaction, the originating debit and credit amounts must balance. If the functional equivalents don’t balance, the difference is posted automatically to a Rounding Difference account and a distribution type of Round identifies the distribution amount.
 
-For example, assume you’ve entered a transaction in the euro currency, with a
-purchase amount of 28,755.42 EUR, a trade discount of 586.84 EUR, a discount
-available of 1544.33 EUR and the exchange rate is 1.0922. The distributions
-would be calculated as follows:
+For example, assume you’ve entered a transaction in the euro currency, with a purchase amount of 28,755.42 EUR, a trade discount of 586.84 EUR, a discount available of 1544.33 EUR and the exchange rate is 1.0922. The distributions would be calculated as follows:
 
 | **Account**      | **Euro debit** | **Euro credit** | **US Dollars debit** | **US Dollars credit** |
 |------------------|----------------|-----------------|----------------------|-----------------------|
@@ -3000,12 +2090,7 @@ would be calculated as follows:
 
 **Chapter 17: Batches**
 
->   General Ledger transactions can be entered individually or in batches. A
->   batch is a group of transactions identified by a unique name or number. By
->   entering and posting transactions in batches, you can group similar
->   transactions during data entry and review them before posting. More than one
->   person can enter transactions in the same batch, but not at the same time.
->   Also, a batch can’t be posted if anyone is making changes to it.
+>   General Ledger transactions can be entered individually or in batches. A batch is a group of transactions identified by a unique name or number. By entering and posting transactions in batches, you can group similar transactions during data entry and review them before posting. More than one person can enter transactions in the same batch, but not at the same time. Also, a batch can’t be posted if anyone is making changes to it.
 
 >   This information is divided into the following sections:
 
@@ -3017,29 +2102,20 @@ would be calculated as follows:
 
 #### Creating a batch
 
->   Use the Batch Entry window to create batches. A batch is a group of
->   transactions identified by a unique name or number. If you’ve decided to
->   enter transactions in batches, they can be posted using the batch, series,
->   or master posting procedures.
+>   Use the Batch Entry window to create batches. A batch is a group of transactions identified by a unique name or number. If you’ve decided to enter transactions in batches, they can be posted using the batch, series, or master posting procedures.
 
 >   For more information about batch posting, see *Chapter 22, “Posting.”*
 
 >   **To create a batch:**
 
 1.  Open the Batch Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Batches)
 
 ![](media/f2bcd17f9cef386fe894a14ac15a74ba.jpg)
 
-1.  Enter or select a batch ID to identify the batch. Batches entered in
-    different transaction entry windows might have the same ID. If you aren’t
-    sure which batch to select, you can use the Batch ID lookup window to view
-    the origins of transactions within each batch.
+2.  Enter or select a batch ID to identify the batch. Batches entered in different transaction entry windows might have the same ID. If you aren’t sure which batch to select, you can use the Batch ID lookup window to view the origins of transactions within each batch.
 
-2.  Select a batch origin. You can select General Entry, Clearing Entry, or
-    Budget Transactions. Once you’ve saved the batch, you can’t change the
-    origin.
+3.  Select a batch origin. You can select General Entry, Clearing Entry, or Budget Transactions. Once you’ve saved the batch, you can’t change the origin.
 
 3.  Enter a batch comment, such as a brief description of the transactions that
     will be entered in the batch.
@@ -6625,116 +5701,80 @@ Trial Balance Detail Trial Balance Summary
 >   **To close a fiscal year:**
 
 1.  Open the Year-End Closing window.
-
 >   (Financial \>\> Routines \>\> Financial \>\> Year End Closing)
 
-1.  Enter or select a retained earnings account to which the year’s profit or
-    loss will be closed. If you are closing to divisional retained earnings,
-    enter or select one of the divisional retained earnings accounts.
+2.  Enter or select a retained earnings account to which the year’s profit or loss will be closed. If you are closing to divisional retained earnings, enter or select one of the divisional retained earnings accounts.
 
-2.  Enter a starting journal entry that will be used as the first journal entry
-    number in the next fiscal year.
+3.  Enter a starting journal entry that will be used as the first journal entry number in the next fiscal year.
 
-3.  Mark the Remove Unused Segment Numbers option to automatically remove
-    account segment numbers that are not used in any account.
+4.  Mark the Remove Unused Segment Numbers option to automatically remove account segment numbers that are not used in any account.
 
-4.  Specify how to handle inactive accounts with zero balances during the
-    year-end close.
+5.  Specify how to handle inactive accounts with zero balances during the year-end close.
 
-    -   To keep inactive accounts with zero balances that have budget amounts,
-        mark Maintain Inactive Accounts, and then select With Budget Amounts.
-        Inactive accounts with zero balances and no budget amounts will be
-        deleted during the year-end close.
+    -   To keep inactive accounts with zero balances that have budget amounts, mark Maintain Inactive Accounts, and then select With Budget Amounts. Inactive accounts with zero balances and no budget amounts will be deleted during the year-end close.
 
-    -   To keep all inactive accounts with zero balances, mark Maintain Inactive
-        Accounts, and then select All Inactive Accounts.
+    -   To keep all inactive accounts with zero balances, mark Maintain Inactive Accounts, and then select All Inactive Accounts.
 
-    -   To delete all inactive accounts with zero balances, unmark Maintain
-        Inactive Accounts.
+    -   To delete all inactive accounts with zero balances, unmark Maintain Inactive Accounts.
 
-5.  Choose Close Year to begin the closing process.
+6.  Choose Close Year to begin the closing process.
 
->   A status bar in the Year-End Closing window appears, displaying the steps
->   that are completed.
+>   A status bar in the Year-End Closing window appears, displaying the steps that are completed.
 
 | **Step** | **Description**                                                                                               |
 |----------|---------------------------------------------------------------------------------------------------------------|
 | Step 1   | Transactions and the retained earnings account are verified.                                                  |
 | Step 2   | Account balances are verified.                                                                                |
-| **Step** | **Description**                                                                                               |
 | Step 3   | Fiscal year information is verified. Posting numbers and transactions are reconciled.                         |
 | Step 4   | Beginning balances brought forward and retaining earnings are created and distributions are moved to history. |
 | Step 5   | Divisional retained earnings account is closed.                                                               |
 | Step 6   | Posting numbers used during the year-end close are updated.                                                   |
 | Step 7   | The previous year is removed from the account summary.                                                        |
 
->   *Step 3 and step 4 may take a long time to complete. Don’t try to close
->   Microsoft Dynamics GP or restart the computer. Let the process continue.*
+>   *Step 3 and step 4 may take a long time to complete. Don’t try to close Microsoft Dynamics GP or restart the computer. Let the process continue.*
 
->   When closing is complete, the Year-End Closing Report is printed. This
->   report lists the accounts that have been closed and the transactions created
->   to close them. The Year-End Closing Report is part of the audit trail and
->   should be saved with your company’s permanent records.
+>   When closing is complete, the Year-End Closing Report is printed. This report lists the accounts that have been closed and the transactions created to close them. The Year-End Closing Report is part of the audit trail and should be saved with your company’s permanent records.
 
->   *You should not complete step 6 until you're sure that adjusting
->   transactions won’t be needed for the year.*
+>   *You should not complete step 6 until you're sure that adjusting transactions won’t be needed for the year.*
 
-1.  You can close all fiscal periods for all series using the Fiscal Periods
-    Setup window.
+7.  You can close all fiscal periods for all series using the Fiscal Periods Setup window.
 
->   This step will prevent transactions from being posted from any module to any
->   period in the year you closed. Once a period has been marked as closed, you
->   can’t post transactions to it, unless it is reopened in the Fiscal Periods
->   Setup window.
+>   This step will prevent transactions from being posted from any module to any period in the year you closed. Once a period has been marked as closed, you can’t post transactions to it, unless it is reopened in the Fiscal Periods Setup window.
 
-1.  Adjust budget figures for the new year using the Budget Maintenance or
-    Single Account Budget Maintenance windows and print financial statements.
+8.  Adjust budget figures for the new year using the Budget Maintenance or Single Account Budget Maintenance windows and print financial statements.
 
->   After closing the year, update all Trial Balance and Cross-Reference report
->   options if you want to print them for another open year.
+>   After closing the year, update all Trial Balance and Cross-Reference report options if you want to print them for another open year.
 
->   *After you finish closing a year, make a complete backup of your company’s
->   accounting data.*
+>   *After you finish closing a year, make a complete backup of your company’s accounting data.*
 
 #### Printing a VAT Return
 
->   Use the VAT Return window to print VAT reports you must submit to the
->   government. You can print summary and detailed VAT information for a
->   specified period. You can save VAT report IDs and reprint reports at a later
->   time.
+>   Use the VAT Return window to print VAT reports you must submit to the government. You can print summary and detailed VAT information for a specified period. You can save VAT report IDs and reprint reports at a later time.
 
 >   **To print a VAT Return:**
 
 1.  Open the VAT Return window.
-
 >   (Administration \>\> Routines \>\> Company \>\> VAT Return)
 
 ![](media/21319f76bab86ce5c494a6acf71d3d56.jpg)
 
-1.  Enter or select a VAT report ID and description.
+2.  Enter or select a VAT report ID and description.
 
-2.  Enter starting and ending dates for the report.
+3.  Enter starting and ending dates for the report.
 
->   Each VAT Report ID you create must have a unique starting date. You can’t
->   use the same starting date on more than one report ID.
+>   Each VAT Report ID you create must have a unique starting date. You can’t use the same starting date on more than one report ID.
 
-1.  Choose Calculate. VAT Return information is displayed in the VAT Return
-    window.
+4.  Choose Calculate. VAT Return information is displayed in the VAT Return window.
 
-2.  To save the report, choose Save. You must calculate VAT information before
-    you can save the report ID.
+5.  To save the report, choose Save. You must calculate VAT information before you can save the report ID.
 
-3.  To print the report, choose Print. The VAT Return Print Options window will
-    open. Mark the reports you want to print. You can print summary, detail, tax
-    detail, or exception reports.
+6.  To print the report, choose Print. The VAT Return Print Options window will open. Mark the reports you want to print. You can print summary, detail, tax detail, or exception reports.
 
->   Choose Print. A Report Destination window will appear, where you can select
->   to print to a file, to the screen, or to a printer.
+>   Choose Print. A Report Destination window will appear, where you can select to print to a file, to the screen, or to a printer.
 
 **Chapter 34: Account utilities**
 
->   The following procedures remove historical data from your system, so be sure
->   to back up your accounting data before performing any of these procedures.
+>   The following procedures remove historical data from your system, so be sure to back up your accounting data before performing any of these procedures.
 
 >   This information is divided into the following sections:
 
@@ -6748,92 +5788,50 @@ Trial Balance Detail Trial Balance Summary
 
 #### Reconciling financial data
 
->   Use the Reconcile Financial Information window to reset account totals in
->   the chart of accounts so they match the posted transaction amounts.
->   Reconciling an open year ensures that amounts on the financial statements
->   are the same as the totals printed on the Detailed Trial Balance.
->   Reconciling recalculates account summary amounts for the open periods.
+>   Use the Reconcile Financial Information window to reset account totals in the chart of accounts so they match the posted transaction amounts. Reconciling an open year ensures that amounts on the financial statements are the same as the totals printed on the Detailed Trial Balance. Reconciling recalculates account summary amounts for the open periods.
 
->   You also can reconcile account balances for a historical year, if you’re
->   keeping both account and transaction history. This can be useful for
->   comparing historical-year amounts to open-year totals and budget amounts.
->   For example, reconciling a historical year is valuable if your accounting
->   periods for a historical year and an open year are set up differently. By
->   reconciling accounts, you can redistribute historical-year transactions to
->   periods that parallel the open year; transactions are distributed according
->   to their posting dates. Then, you could compare historical year and
->   open-year amounts.
+>   You also can reconcile account balances for a historical year, if you’re keeping both account and transaction history. This can be useful for comparing historical-year amounts to open-year totals and budget amounts. For example, reconciling a historical year is valuable if your accounting periods for a historical year and an open year are set up differently. By reconciling accounts, you can redistribute historical-year transactions to periods that parallel the open year; transactions are distributed according to their posting dates. Then, you could compare historical year and open-year amounts.
 
->   *Before reconciling accounts, back up all your company’s accounting data.
->   For more information about making backups, refer to the System
->   Administrator’s Guide (Help \>\> Contents \>\> select System
->   Administration).*
+>   *Before reconciling accounts, back up all your company’s accounting data. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
 
 >   **To reconcile financial data:**
 
 1.  Open the Reconcile Financial Information window.
-
 >   (Financial \>\> Utilities \>\> Financial \>\> Reconcile)
 
 ![](media/f75f1ac5808bc07ef8ec098d89524e1c.jpg)
 
-1.  You can indicate if all allocation accounts should be reconciled.
+2.  You can indicate if all allocation accounts should be reconciled.
 
->   If you reconcile allocation accounts, the system verifies the validity of
->   all allocation accounts, distribution and breakdown accounts, and account
->   types. If the allocation accounts contain errors, the Reconcile Report is
->   printed. The reconciliation process doesn't correct allocation account
->   errors, you must enter those corrections manually.
+>   If you reconcile allocation accounts, the system verifies the validity of all allocation accounts, distribution and breakdown accounts, and account types. If the allocation accounts contain errors, the Reconcile Report is printed. The reconciliation process doesn't correct allocation account errors, you must enter those corrections manually.
 
-1.  Select a year to reconcile.
+3.  Select a year to reconcile.
 
->   You can reconcile either an open year or a historical year that contains
->   transactions. You must be maintaining both account history and transaction
->   history to reconcile records for a historical year.
+>   You can reconcile either an open year or a historical year that contains transactions. You must be maintaining both account history and transaction history to reconcile records for a historical year.
 
-1.  Indicate whether you want to reconcile batches.
+4.  Indicate whether you want to reconcile batches.
 
->   If you reconcile batches, the system verifies that all the identifying
->   information for the unposted batches is correct. If you reconcile batches
->   and identifying records are added, the Reconcile Report is printed.
+>   If you reconcile batches, the system verifies that all the identifying information for the unposted batches is correct. If you reconcile batches and identifying records are added, the Reconcile Report is printed.
 
-1.  Choose Posting Numbers to open the Reconcile Posting Numbers window, where
-    you can reconcile posting numbers so that no gaps in the posting number
-    sequence exist.
+5.  Choose Posting Numbers to open the Reconcile Posting Numbers window, where you can reconcile posting numbers so that no gaps in the posting number sequence exist.
 
->   The Posting Numbers buttons appears only if you have marked the Enable
->   Posting Numbers in General Ledger option in the Company Setup Options
->   window. Sequential posting numbers are a legal requirement in some European
->   countries.
+>   The Posting Numbers buttons appears only if you have marked the Enable Posting Numbers in General Ledger option in the Company Setup Options window. Sequential posting numbers are a legal requirement in some European countries.
 
-1.  Choose Reconcile to reconcile account totals, batch information, or both.
+6.  Choose Reconcile to reconcile account totals, batch information, or both.
 
 #### Removing or printing history
 
-Use the Remove History window to remove ranges of account or transaction history
-that are no longer useful. If you’re keeping account and transaction history,
-those records can be maintained for historical years. When you close the year,
-the system transfers the records for the year being closed, then creates new
-history records.
+Use the Remove History window to remove ranges of account or transaction history that are no longer useful. If you’re keeping account and transaction history, those records can be maintained for historical years. When you close the year, the system transfers the records for the year being closed, then creates new history records.
 
-Transaction history is a record of all General Ledger transactions transferred
-from an open year to history during the year-end closing process. Account
-history is a record of the beginning and period balances for the historical year
-for all accounts in the chart of accounts.
+Transaction history is a record of all General Ledger transactions transferred from an open year to history during the year-end closing process. Account history is a record of the beginning and period balances for the historical year for all accounts in the chart of accounts.
 
-After removing history, you won’t be able to print the Transaction and Account
-History reports or reprint source document reports for the dates or account
-ranges that you’ve removed.
+After removing history, you won’t be able to print the Transaction and Account History reports or reprint source document reports for the dates or account ranges that you’ve removed.
 
->   *Before removing history, back up your company’s accounting data. For more
->   information about making backups in Microsoft Dynamics GP, see the System
->   Administrator’s Guide (Help \>\> Contents \>\> select System
->   Administration).*
+>   *Before removing history, back up your company’s accounting data. For more information about making backups in Microsoft Dynamics GP, see the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
 
 >   **To remove or print history:**
 
 1.  Open the Remove History window.
-
 >   (Financial \>\> Utilities \>\> Financial \>\> Remove History)
 
 ![](media/313b3653a5ee700d049803a3920b8803.jpg)
@@ -6865,7 +5863,6 @@ Use the Archive Matched Transactions window to move transaction distribution lin
 >   **To archive matched transactions:**
 
 1.  Open the Archive Matched Transactions window.
-
 >   (Financial \>\> Utilities \>\> Financial \>\> Archive Matched Transactions)
 
 ![](media/3b0629e876585bdddccca2b960ad51b9.jpg)
@@ -6883,7 +5880,6 @@ Use the Deferral Check Links window to verify that your transaction distribution
 >   **To check links for deferral records:**
 
 1.  Open the Deferral Check Links window.
-
 >   (Microsoft Dynamics GP menu \>\> Maintenance \>\> Deferral Check Links)
 
 ![](media/f1cedffc055877a4a0bd669756349f66.jpg)
