@@ -220,40 +220,27 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 >   **To set up transaction matching:**
 
 1.  Open the Transaction Matching Setup window.
-
 >   (Financial \>\> Setup \>\> Financial \>\> Transaction Matching)
 
 ![](media/98fc3851d8517db0b0ffe6e6aeee257b.jpg)
 
-1.  Enter the default next link number.
+2.  Enter the default next link number.
 
-2.  Indicate whether you want to require linked distributions to balance.
+3.  Indicate whether you want to require linked distributions to balance.
 
->   When you link transaction distributions in the General Ledger Transaction
->   Link Maintenance window, the credits and debits are totaled and the balance
->   is displayed. If you mark this option, linked distributions must balance
->   (that is, total debits must equal total credits) before the link can be
->   saved.
+>   When you link transaction distributions in the General Ledger Transaction Link Maintenance window, the credits and debits are totaled and the balance  is displayed. If you mark this option, linked distributions must balance (that is, total debits must equal total credits) before the link can be saved.
 
-1.  Indicate whether you want to require linked distributions to be for a single
-    account only.
+4.  Indicate whether you want to require linked distributions to be for a single account only.
 
->   For example, assume you want to be able to link distributions to the
->   accounts for Finance Charge Income and Interest Income. If you mark this
->   option, you won’t be able to establish this link. If you don’t mark this
->   option, you can establish this link.
+>   For example, assume you want to be able to link distributions to the accounts for Finance Charge Income and Interest Income. If you mark this option, you won’t be able to establish this link. If you don’t mark this option, you can establish this link.
 
-1.  Indicate whether you want to enable saved links to be deleted. If you mark
-    this option, you can choose Deletion Password to enter a password that must
-    be entered before a link can be deleted.
+5.  Indicate whether you want to enable saved links to be deleted. If you mark this option, you can choose Deletion Password to enter a password that must be entered before a link can be deleted.
 
-2.  Choose OK to save your entries and close the window.
+6.  Choose OK to save your entries and close the window.
 
 **Chapter 2: Understanding accounts**
 
->   Your chart of accounts will include several types of accounts. This part of
->   the documentation describes the different types of accounts and how account
->   categories are used to group accounts on financial statements.
+>   Your chart of accounts will include several types of accounts. This part of the documentation describes the different types of accounts and how account categories are used to group accounts on financial statements.
 
 >   This information is divided into the following sections:
 
@@ -271,55 +258,30 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 
 #### Posting, unit, and allocation accounts
 
->   A chart of accounts can include three types of accounts: posting, unit, and
->   allocation accounts. Each type can be used to meet different business needs.
+>   A chart of accounts can include three types of accounts: posting, unit, and allocation accounts. Each type can be used to meet different business needs.
 
->   **Posting accounts** Posting accounts are the financial accounts that track
->   assets, liabilities, revenue, expenses, and equity. Transactions posted to
->   these accounts appear on financial reports. Examples of posting accounts
->   include Cash, Cost of Goods Sold, and Accounts Receivable. For more
->   information, see *Chapter 3, “Posting accounts.”*
+>   **Posting accounts** Posting accounts are the financial accounts that track assets, liabilities, revenue, expenses, and equity. Transactions posted to these accounts appear on financial reports. Examples of posting accounts include Cash, Cost of Goods Sold, and Accounts Receivable. For more information, see *Chapter 3, “Posting accounts.”*
 
->   **Unit accounts** Unit accounts are similar to posting accounts. Like
->   posting accounts, unit accounts are used in transaction entry. Historical
->   information and budgets can be maintained for both types of accounts.
->   However, quantities—rather than amounts—are posted to unit accounts, and
->   unit accounts don’t appear on financial statements. For more information,
->   see *Chapter 4, “Unit accounts.”*
+>   **Unit accounts** Unit accounts are similar to posting accounts. Like posting accounts, unit accounts are used in transaction entry. Historical information and budgets can be maintained for both types of accounts. However, quantities—rather than amounts—are posted to unit accounts, and unit accounts don’t appear on financial statements. For more information, see *Chapter 4, “Unit accounts.”*
 
->   **Allocation accounts** Allocation accounts are used to distribute
->   percentages of a single transaction among several accounts. Two different
->   types of allocation accounts are available: fixed and variable. For more
->   information, see *Chapter 5,*
-
->   *“Fixed allocation accounts,”* and *Chapter 6, “Variable allocation
->   accounts.”*
+>   **Allocation accounts** Allocation accounts are used to distribute percentages of a single transaction among several accounts. Two different types of allocation accounts are available: fixed and variable. For more information, see *Chapter 5,* *“Fixed allocation accounts,”* and *Chapter 6, “Variable allocation accounts.”*
 
 #### Understanding account categories
 
->   All posting accounts are assigned to account categories, which are used to
->   group accounts on financial statements. For example, all accounts assigned
->   to the Cash category—Petty Cash, Cash-Operating, Cash Payroll—will appear
->   under the Cash category when financial statements are printed. You also can
->   choose whether to print descriptions for the first account in the category
->   or print the category description.
+>   All posting accounts are assigned to account categories, which are used to group accounts on financial statements. For example, all accounts assigned to the Cash category—Petty Cash, Cash-Operating, Cash Payroll—will appear under the Cash category when financial statements are printed. You also can choose whether to print descriptions for the first account in the category or print the category description.
 
->   General Ledger includes 48 predefined account categories. The account
->   categories can be displayed in the Account Category Setup window. The
->   account categories provided with General Ledger, their type (balance sheet,
->   profit and loss, or statement of changes) and the financial statements that
->   include each account category are listed in the following table:
+>   General Ledger includes 48 predefined account categories. The account categories can be displayed in the Account Category Setup window. The account categories provided with General Ledger, their type (balance sheet, profit and loss, or statement of changes) and the financial statements that include each account category are listed in the following table:
 
-| **Category**                          | **Type**                  | **Appears on:**                                                              |
-|---------------------------------------|---------------------------|------------------------------------------------------------------------------|
-| Cash                                  | Balance Sheet             | Balance Sheet Statement of Cash Flows                                        |
-| **Category**                          | **Type**                  | **Appears on:**                                                              |
-| Short-Term Investments                | Balance Sheet             | Balance Sheet Statement of Cash Flows                                        |
-| Accounts Receivable                   | Balance Sheet             | Balance Sheet Statement of Cash Flows                                        |
-| Inventory                             | Balance Sheet             | Balance Sheet Statement of Cash Flows                                        |
-| Notes Receivable                      | Balance Sheet             | Balance Sheet Statement of Cash Flows                                        |
-| Work in Process                       | Balance Sheet             | Balance Sheet Statement of Cash Flows                                        |
-| Prepaid Expenses                      | Balance Sheet             | Balance Sheet Statement of Cash Flows                                        |
+| **Category**                          | **Type**                  | **Appears on:**                                                 |
+|---------------------------------------|---------------------------|-----------------------------------------------------------------|
+| Cash                                  | Balance Sheet             | Balance Sheet Statement of Cash Flows                           |
+| **Category**                          | **Type**                  | **Appears on:**                                                 |
+| Short-Term Investments                | Balance Sheet             | Balance Sheet Statement of Cash Flows                           |
+| Accounts Receivable                   | Balance Sheet             | Balance Sheet Statement of Cash Flows                           |
+| Inventory                             | Balance Sheet             | Balance Sheet Statement of Cash Flows                           |
+| Notes Receivable                      | Balance Sheet             | Balance Sheet Statement of Cash Flows                           |
+| Work in Process                       | Balance Sheet             | Balance Sheet Statement of Cash Flows                           |
+| Prepaid Expenses                      | Balance Sheet             | Balance Sheet Statement of Cash Flows                           |
 | Long-Term Investments                 | Balance Sheet             | Balance Sheet Statement of Cash Flows                                        |
 | Property, Plant, and Equipment        | Balance Sheet             | Balance Sheet Statement of Cash Flows                                        |
 | Accumulated Depreciation              | Balance Sheet             | Balance Sheet Statement of Cash Flows                                        |
@@ -393,118 +355,72 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 
 #### Maintaining account categories
 
->   Account categories are used to group the posting accounts on financial
->   statements. For example, all accounts in the Cash category—will appear under
->   the Cash category. The default list includes categories such as Cash,
->   Short-Term Investments and Notes Receivable.
+>   Account categories are used to group the posting accounts on financial statements. For example, all accounts in the Cash category—will appear under the Cash category. The default list includes categories such as Cash, Short-Term Investments and Notes Receivable.
 
->   Use the Account Category Setup window to view and make changes to the
->   descriptions of the account categories. You can customize any account
->   category by changing its description, but the financial statement it appears
->   on will not be changed. In addition, predefined category descriptions cannot
->   be removed.
+>   Use the Account Category Setup window to view and make changes to the descriptions of the account categories. You can customize any account category by changing its description, but the financial statement it appears on will not be changed. In addition, predefined category descriptions cannot  be removed.
 
->   You can add unlimited account categories if your business has specialized
->   reporting needs. Additional user-defined categories appear after the
->   predefined categories in the scrolling window and are preceded by an
->   asterisk in the Number column. You can remove a user-defined category, only
->   if it has no accounts assigned to it.
+>   You can add unlimited account categories if your business has specialized reporting needs. Additional user-defined categories appear after the predefined categories in the scrolling window and are preceded by an asterisk in the Number column. You can remove a user-defined category, only if it has no accounts assigned to it.
 
->   To revert to the original set of account categories once you've changed
->   them, clear data from the Account Category Table.
+>   To revert to the original set of account categories once you've changed them, clear data from the Account Category Table.
 
 >   **To maintain account categories:**
 
 1.  Open the Account Category Setup window.
-
 >   (Financial \>\> Setup \>\> Financial \>\> Category)
 
 ![](media/0544c4e6f26f41b4796bed93f5ab725d.jpg)
 
-1.  Rename any predefined categories, if needed.
+2.  Rename any predefined categories, if needed.
 
-2.  If your business has specialized reporting needs, you can add user-defined
-    categories by scrolling to the bottom of the list and entering a category
-    description.
+3.  If your business has specialized reporting needs, you can add user-defined categories by scrolling to the bottom of the list and entering a category description.
 
-3.  You can verify your changes with an Account Category List.
+4.  You can verify your changes with an Account Category List.
 
->   To print an Account Category List, choose File \>\> Print or the printer
->   icon button while the Account Category Setup window is displayed.
+>   To print an Account Category List, choose File \>\> Print or the printer icon button while the Account Category Setup window is displayed.
 
 #### Understanding account aliases
 
->   An account alias is a 20-character “short name” assigned to an account. You
->   can use an account alias instead of the entire account in any window where
->   you enter or select accounts. If you’re using a large account structure,
->   aliases provide a quick method of data entry.
+>   An account alias is a 20-character “short name” assigned to an account. You can use an account alias instead of the entire account in any window where you enter or select accounts. If you’re using a large account structure, aliases provide a quick method of data entry.
 
->   For example, if you’ve set up the Cash Operating account for your main
->   branch as account 1200-0000-2100-0000-0000, you could assign an alias such
->   as \$-CO.
+>   For example, if you’ve set up the Cash Operating account for your main branch as account 1200-0000-2100-0000-0000, you could assign an alias such as \$-CO.
 
->   You can set up account aliases in the Account Maintenance, Unit Account
->   Maintenance, Variable Allocation Maintenance, and Fixed Allocation
->   Maintenance windows. Using account aliases is optional. You can modify an
->   account alias at any time using the appropriate account maintenance window.
+>   You can set up account aliases in the Account Maintenance, Unit Account Maintenance, Variable Allocation Maintenance, and Fixed Allocation Maintenance windows. Using account aliases is optional. You can modify an account alias at any time using the appropriate account maintenance window.
 
 #### Using an account alias during data entry
 
->   Use the Account Entry window to enter account aliases during transaction
->   entry.
+>   Use the Account Entry window to enter account aliases during transaction entry.
 
 >   **To use an account alias during data entry:**
 
-1.  Open the Account Entry window using any of these methods in a transaction
-    entry window:
+1.  Open the Account Entry window using any of these methods in a transaction entry window:
 
     -   Choose the Account expansion button.
 
     -   Press CTRL+A.
 
-    -   Choose Account Alias from the View menu in any window where you can
-        enter an account.
+    -   Choose Account Alias from the View menu in any window where you can enter an account.
 
->   *The View menu and keyboard shortcut are available only when you’re entering
->   account aliases in transaction entry windows.*
+>   *The View menu and keyboard shortcut are available only when you’re entering account aliases in transaction entry windows.*
 
 ![](media/4580237476881bdcbe0f98a2856aadc2.jpg)
 
-1.  Enter or select an alias. As soon as you enter or select an alias, the
-    Account Entry window closes and the transaction entry window is displayed.
+2.  Enter or select an alias. As soon as you enter or select an alias, the Account Entry window closes and the transaction entry window is displayed.
 
->   *You also can choose an alias using the Accounts lookup window. Account
->   aliases are displayed below the account they represent in the Accounts
->   window. When you select an account and then press TAB, the lookup window
->   closes and the account is displayed in the main window.*
+>   *You also can choose an alias using the Accounts lookup window. Account aliases are displayed below the account they represent in the Accounts window. When you select an account and then press TAB, the lookup window closes and the account is displayed in the main window.*
 
-1.  Continue entering transaction information.
+3.  Continue entering transaction information.
 
 #### User-defined fields for accounts
 
->   General Ledger includes four user-defined fields for tracking additional
->   information about each account.
+>   General Ledger includes four user-defined fields for tracking additional information about each account.
 
->   For example, to be able to sort groups of accounts, such as Expense-Retail,
->   you can enter Account Group as the label in the User-Defined 1 field. In the
->   Account Maintenance window, you’ll see Account Group as the label for the
->   field that was User-Defined 1, and you can enter Expenses-Retail for the
->   accounts that are in that group. You also will see Account Group as a
->   sorting method on General Ledger account lists. You can use the four
->   user-defined fields to enter and track information for each account.
+>   For example, to be able to sort groups of accounts, such as Expense-Retail, you can enter Account Group as the label in the User-Defined 1 field. In the Account Maintenance window, you’ll see Account Group as the label for the field that was User-Defined 1, and you can enter Expenses-Retail for the accounts that are in that group. You also will see Account Group as a sorting method on General Ledger account lists. You can use the four user-defined fields to enter and track information for each account.
 
 **Chapter 3: Posting accounts**
 
->   Posting accounts are the financial accounts used to track assets,
->   liabilities, revenue, expenses, and equity. Transactions posted to these
->   accounts appear on financial reports. Examples of posting accounts include
->   Cash, Cost of Goods Sold, and Accounts Receivable.
+>   Posting accounts are the financial accounts used to track assets, liabilities, revenue, expenses, and equity. Transactions posted to these accounts appear on financial reports. Examples of posting accounts include Cash, Cost of Goods Sold, and Accounts Receivable.
 
->   *If you didn’t install the default chart of accounts when you created the
->   company but you want to use the default chart of accounts now, you must
->   delete the company and recreate it. See the System Administrator’s Guide
->   (Help \>\> Contents \>\> select System Administration) for more information
->   about creating companies.*
+>   *If you didn’t install the default chart of accounts when you created the company but you want to use the default chart of accounts now, you must delete the company and recreate it. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about creating companies.*
 
 >   This information is divided into the following sections:
 
@@ -514,54 +430,32 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 
 #### Setting up a posting account
 
->   Use the Account Maintenance window to set up a posting account. Before you
->   add accounts to an existing chart of accounts, print a Posting Accounts List
->   (Financial \>\> Reports \>\> Financial \>\> Account) to determine whether
->   accounts should be added to fit the current needs of your business.
+>   Use the Account Maintenance window to set up a posting account. Before you add accounts to an existing chart of accounts, print a Posting Accounts List (Financial \>\> Reports \>\> Financial \>\> Account) to determine whether accounts should be added to fit the current needs of your business.
 
->   *As you set up accounts, keep in mind that you can create a basic set of
->   accounts for a department and use the Mass Modify Chart of Accounts window
->   to copy the basic set of accounts to other departments. Refer to Chart of
->   accounts modifications for more information.*
+>   *As you set up accounts, keep in mind that you can create a basic set of accounts for a department and use the Mass Modify Chart of Accounts window to copy the basic set of accounts to other departments. Refer to Chart of accounts modifications for more information.*
 
 >   **To set up a posting account:**
 
 1.  Open the Account Maintenance window.
-
 >   (Financial \>\> Cards \>\> Financial \>\> Account)
 
 ![](media/7a2d24a25334f30e7c82113655828e9e.jpg)
 
-1.  Enter an account identifier using any combination of letters or numbers. You
-    also can enter a description and an alias. Refer to *Understanding account
-    aliases* for more information.
+2.  Enter an account identifier using any combination of letters or numbers. You also can enter a description and an alias. Refer to *Understanding account aliases* for more information.
 
->   If you’ve set up account segments already and you leave the description
->   field blank, The account description will be created automatically by
->   combining the account segment descriptions.
+>   If you’ve set up account segments already and you leave the description field blank, The account description will be created automatically by combining the account segment descriptions.
 
 >   To make changes to an existing posting account, enter or select the account.
 
-1.  Indicate whether you want users to be able to manually enter or select this
-    account in transaction or distribution entry windows. If you unmark this
-    option, you will not be able to manually enter this account in a transaction
-    or distribution entry window.
+3.  Indicate whether you want users to be able to manually enter or select this account in transaction or distribution entry windows. If you unmark this option, you will not be able to manually enter this account in a transaction or distribution entry window.
 
-2.  Enter or select the account category.
+4.  Enter or select the account category.
 
-3.  Specify whether the account typically appears on the Balance Sheet or the
-    Profit and Loss Statement. This selection determines which accounts will be
-    closed at year-end.
+5.  Specify whether the account typically appears on the Balance Sheet or the Profit and Loss Statement. This selection determines which accounts will be closed at year-end.
 
->   *If you are unsure of an account’s posting type, refer to Understanding
->   account categories for information about the posting type and financial
->   statements used with each of the account categories. If you’re unsure of the
->   account type or balance, you should contact a certified public accountant.*
+>   *If you are unsure of an account’s posting type, refer to Understanding account categories for information about the posting type and financial statements used with each of the account categories. If you’re unsure of the account type or balance, you should contact a certified public accountant.*
 
-1.  Specify the typical balance—debit or credit. Asset and expense accounts
-    normally have debit balances, while liability, revenue, and equity accounts
-    normally have credit balances. For example, your Cash account is an asset
-    account, and it typically should have a debit balance.
+6.  Specify the typical balance—debit or credit. Asset and expense accounts normally have debit balances, while liability, revenue, and equity accounts normally have credit balances. For example, your Cash account is an asset account, and it typically should have a debit balance.
 
 2.  If the transaction origin in the Posting Setup window is set up to use
     account settings, decide how much detail to post to this account from each
