@@ -2117,89 +2117,52 @@ For example, assume you’ve entered a transaction in the euro currency, with a 
 
 3.  Select a batch origin. You can select General Entry, Clearing Entry, or Budget Transactions. Once you’ve saved the batch, you can’t change the origin.
 
-3.  Enter a batch comment, such as a brief description of the transactions that
-    will be entered in the batch.
+3.  Enter a batch comment, such as a brief description of the transactions that will be entered in the batch.
 
-4.  Select a frequency. If you chose a frequency other than Single Use, enter
-    the number of recurring postings. If you want the batch to remain in the
-    system indefinitely, enter zero in the Remaining Posting field.
+4.  Select a frequency. If you chose a frequency other than Single Use, enter the number of recurring postings. If you want the batch to remain in the system indefinitely, enter zero in the Remaining Posting field.
 
->   If you choose a frequency of miscellaneous, enter the number of recurring
->   postings and the days to increment.
+>   If you choose a frequency of miscellaneous, enter the number of recurring postings and the days to increment.
 
-1.  To print the breakdown allocation accounts on the edit lists, mark the Break
-    Down Allocation option.
+5.  To print the breakdown allocation accounts on the edit lists, mark the Break Down Allocation option.
 
-2.  To clear the distribution amounts for recurring batches after posting, mark
-    the Clear Recurring Amounts After Posting option.
+6.  To clear the distribution amounts for recurring batches after posting, mark  the Clear Recurring Amounts After Posting option.
 
-3.  You can define batch entry requirements. Refer to the System User’s Guide
-    for information about batch requirements and approvals.
+7.  You can define batch entry requirements. Refer to the System User’s Guide for information about batch requirements and approvals.
 
->   *If the Allow Negative Debits and Credits in General Ledger option is marked
->   in the Company Setup Options window, you can enter negative amounts in the
->   batch control total field.*
+>   *If the Allow Negative Debits and Credits in General Ledger option is marked in the Company Setup Options window, you can enter negative amounts in the batch control total field.*
 
-1.  Choose Save to save the batch or choose Transactions to open the Transaction
-    Entry window, where you can enter transactions in the batch.
+8.  Choose Save to save the batch or choose Transactions to open the Transaction Entry window, where you can enter transactions in the batch.
 
-2.  You can choose File \>\> Print or the printer icon button to verify the
-    accuracy of the transactions you’ve entered before posting.
+9.  You can choose File \>\> Print or the printer icon button to verify the accuracy of the transactions you’ve entered before posting.
 
-3.  If you’re using Workflow, submit the batch for approval if needed. See
-    *General Ledger batch approval workflow* for more information.
+10.  If you’re using Workflow, submit the batch for approval if needed. See *General Ledger batch approval workflow* for more information.
 
 #### General Ledger batch approval workflow
 
-If your company uses the Workflow feature among its business controls, batches
-might have to be approved before posting. The rules for approving batches can
-defined to fit your organization’s needs. Multiple approvers might be required,
-or approval might not be required for batches with few transactions or small
-currency amounts. When a batch is ready to be approved, approvers can be
-notified and the batches can be approved, using Outlook®, Microsoft Dynamics GP,
-or Internet Explorer®. After a batch is approved, it can be posted. For more
-information about
+If your company uses the Workflow feature among its business controls, batches might have to be approved before posting. The rules for approving batches can defined to fit your organization’s needs. Multiple approvers might be required, or approval might not be required for batches with few transactions or small currency amounts. When a batch is ready to be approved, approvers can be notified and the batches can be approved, using Outlook®, Microsoft Dynamics GP, or Internet Explorer®. After a batch is approved, it can be posted. For more information about Workflow, see the System Setup Guide (Help \>\> Printable Manuals \>\> select System \>\> select System Setup Guide) or the Workflow Administrator’s Guide (Help \>\> Printable Manuals \>\> select System \>\> select Workflow Administrator’s Guide).
 
-Workflow, see the System Setup Guide (Help \>\> Printable Manuals \>\> select
-
-System \>\> select System Setup Guide) or the Workflow Administrator’s Guide
-(Help \>\> Printable Manuals \>\> select System \>\> select Workflow
-Administrator’s Guide).
-
-Before you can use the batch approval workflow for General Ledger, you must turn
-off the Require Batch Approval feature in Microsoft Dynamics GP. To do so, open
-the Posting Setup window (Administration \>\> Setup \>\> Posting \>\> Posting)
-and select the Financial series. Unmark the Require Batch Approval option for
-the General Ledger and Clearing Entry origins.
+Before you can use the batch approval workflow for General Ledger, you must turn off the Require Batch Approval feature in Microsoft Dynamics GP. To do so, open the Posting Setup window (Administration \>\> Setup \>\> Posting \>\> Posting) and select the Financial series. Unmark the Require Batch Approval option for the General Ledger and Clearing Entry origins.
 
 #### Modifying or deleting a batch
 
-Use the Batch Entry window to modify or delete a batch. You can change or delete
-unposted batches at any time. Recurring batches are deleted after the batch has
-been posted the number of times you specify in the Recurring Posting field.
+Use the Batch Entry window to modify or delete a batch. You can change or delete unposted batches at any time. Recurring batches are deleted after the batch has been posted the number of times you specify in the Recurring Posting field.
 
->   If you are using Workflow you must resubmit the batch if you modify or
->   delete any transactions in an approved batch.
+>   If you are using Workflow you must resubmit the batch if you modify or delete any transactions in an approved batch.
 
->   See *Correcting an unposted transaction* for information about changing the
->   transactions in a batch.
+>   See *Correcting an unposted transaction* for information about changing the transactions in a batch.
 
 >   **To modify or delete a batch:**
 
 1.  Open the Batch Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Batches)
 
-1.  To modify the batch, replace the incorrect information with correct
-    information. Choose Save to save the changes or resubmit the batch for
-    approval, if you are using Workflow. .
+2.  To modify the batch, replace the incorrect information with correct information. Choose Save to save the changes or resubmit the batch for approval, if you are using Workflow. 
 
-2.  To delete the batch, choose Delete and close the window.
+3.  To delete the batch, choose Delete and close the window.
 
 >   **To modify a batch using the action pane:**
 
-1.  In the navigation pane, choose the Financial button, then choose the General
-    Ledger Batches list.
+1.  In the navigation pane, choose the Financial button, then choose the General Ledger Batches list.
 
 2.  Mark a batch to modify.
 
@@ -2207,30 +2170,15 @@ been posted the number of times you specify in the Recurring Posting field.
 
 4.  To delete a batch, choose Delete.
 
-5.  To correct the batch, replace the incorrect information with the correct
-    information. Choose save to save the changes or resubmit the batch for
-    approval, if you are using Workflow.
+5.  To correct the batch, replace the incorrect information with the correct information. Choose save to save the changes or resubmit the batch for approval, if you are using Workflow.
 
 **Chapter 18: Standard and reversing transactions**
 
->   Standard transactions are entered and posted once. If they are assigned to a
->   recurring batch, standard transactions can be posted periodically, such as
->   weekly or monthly, or on a specific date, and then automatically or manually
->   deleted from Microsoft Dynamics GP.
+>   Standard transactions are entered and posted once. If they are assigned to a recurring batch, standard transactions can be posted periodically, such as weekly or monthly, or on a specific date, and then automatically or manually deleted from Microsoft Dynamics GP.
 
->   A reversing transaction reverses the distributions—debit and credit
->   entries—of a previous transaction. Generally speaking, entries that involve
->   the accrual of assets (such as unbilled revenues) or the accrual of
->   liabilities (such as salaries) might be reversed because they result in a
->   future cash receipt or payment. Examples of such accruals include salaries
->   that haven’t been paid or revenues that haven’t been billed.
+>   A reversing transaction reverses the distributions—debit and credit entries—of a previous transaction. Generally speaking, entries that involve the accrual of assets (such as unbilled revenues) or the accrual of liabilities (such as salaries) might be reversed because they result in a future cash receipt or payment. Examples of such accruals include salaries that haven’t been paid or revenues that haven’t been billed.
 
->   When entering transactions, transaction information is collectively referred
->   to as audit trail information. For example, the journal entry number,
->   transaction date, source document code, and reference appear on
->   cross-reference reports. This information helps to trace the history of a
->   specific transaction and might be used by external auditors to verify the
->   accuracy of your records and record-keeping processes.
+>   When entering transactions, transaction information is collectively referred to as audit trail information. For example, the journal entry number, transaction date, source document code, and reference appear on cross-reference reports. This information helps to trace the history of a specific transaction and might be used by external auditors to verify the accuracy of your records and record-keeping processes.
 
 >   This information is divided into the following sections:
 
@@ -2244,212 +2192,125 @@ been posted the number of times you specify in the Recurring Posting field.
 
 #### Entering a standard or reversing transaction
 
->   Use the Transaction Entry window to enter standard and reversing
->   transactions. For more information about posting, see *Chapter 22,
+>   Use the Transaction Entry window to enter standard and reversing transactions. For more information about posting, see *Chapter 22,
 >   “Posting.”*
 
 >   **To enter a standard or reversing transaction:**
 
 1. Open the Transaction Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> General)
 
 ![](media/042841c3e8c3855721198c6c617f5bc5.jpg)
 
-1.  Enter a journal entry number or accept the default number.
+2.  Enter a journal entry number or accept the default number.
 
-2.  If you’re using batches, enter or select a batch. If you are using Workflow
-    and are not allowed to approve batches, don't assign the cash receipt to a
-    batch that is pending approval. If you do, you won't be able to enter cash
-    receipt information.
+3.  If you’re using batches, enter or select a batch. If you are using Workflow and are not allowed to approve batches, don't assign the cash receipt to a batch that is pending approval. If you do, you won't be able to enter cash receipt information.
 
-3.  Enter a transaction type: standard or reversing.
+4.  Enter a transaction type: standard or reversing.
 
-4.  Enter the transaction date, source document code, reference, and currency
-    ID. If the transaction is reversing, also enter a reversing date.
+5.  Enter the transaction date, source document code, reference, and currency ID. If the transaction is reversing, also enter a reversing date.
 
-5.  Select the reporting ledger type to which the transaction should apply:
-    Base, IFRS, or Local. Note that the reporting ledger type is available only
-    when you choose to allow reporting ledgers in the General Ledger Setup
-    window.
+6.  Select the reporting ledger type to which the transaction should apply: Base, IFRS, or Local. Note that the reporting ledger type is available only when you choose to allow reporting ledgers in the General Ledger Setup window.
 
-6.  Enter accounts and transaction amounts.
+7.  Enter accounts and transaction amounts.
 
->   Transactions can contain either posting or unit accounts. If you enter a
->   unit account—which tracks nonfinancial amounts such as head count or square
->   footage—on a transaction, a debit entry will increase the balance of the
->   selected unit account and a credit entry will decrease the balance. Amounts
->   posted to unit accounts won’t have any effect on the transaction total.
+>   Transactions can contain either posting or unit accounts. If you enter a unit account—which tracks nonfinancial amounts such as head count or square footage—on a transaction, a debit entry will increase the balance of the selected unit account and a credit entry will decrease the balance. Amounts posted to unit accounts won’t have any effect on the transaction total.
 
->   *If the Allow Negative Debits and Credits in General Ledger option is marked
->   in the Company Setup Options window, you can enter negative transaction
->   amounts.*
+>   *If the Allow Negative Debits and Credits in General Ledger option is marked in the Company Setup Options window, you can enter negative transaction amounts.*
 
->   If your transactions include tax, refer to *Understanding Value-Added Taxes*
->   and *Calculating and distributing tax* for more information.
+>   If your transactions include tax, refer to *Understanding Value-Added Taxes* and *Calculating and distributing tax* for more information.
 
-1.  If you’re entering transactions individually—without a batch—choose Post.
+8.  If you’re entering transactions individually—without a batch—choose Post.
 
->   *We recommend that you back up company data before posting. If power
->   fluctuates or some other problem occurs, you can restore your data and begin
->   the posting process again. For more information about making backups, refer
->   to the System Administrator’s Guide (Help \>\> Contents \>\> select System
->   Administration).*
+>   *We recommend that you back up company data before posting. If power fluctuates or some other problem occurs, you can restore your data and begin the posting process again. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
 
->   When you close the Transaction Entry window, the General Posting Journal
->   might be printed for all transactions posted using the transaction-level
->   method, depending on how you set up your system.
+>   When you close the Transaction Entry window, the General Posting Journal might be printed for all transactions posted using the transaction-level method, depending on how you set up your system.
 
-1.  If you’re entering transactions in a batch, choose Save.
+9.  If you’re entering transactions in a batch, choose Save.
 
 #### Voiding or deleting a saved standard or reversing transaction
 
-You can use the Transaction Entry window to void or delete transactions that
-have been saved, but not posted.
+You can use the Transaction Entry window to void or delete transactions that have been saved, but not posted.
 
-By default, you can delete saved transactions. However, you can change default
-settings so that you must void saved transactions instead of deleting them. See
-*Setting up default entries and preferences* for more information.
+By default, you can delete saved transactions. However, you can change default settings so that you must void saved transactions instead of deleting them. See *Setting up default entries and preferences* for more information.
 
-You can void transactions originating in other modules if you marked the
-Voiding/ Correcting of Subsidiary Transactions option in the General Ledger
-Setup window. See *Setting up default entries and preferences* for more
-information.
+You can void transactions originating in other modules if you marked the Voiding/ Correcting of Subsidiary Transactions option in the General Ledger Setup window. See *Setting up default entries and preferences* for more information.
 
 >   **To void or delete a saved standard or reversing transaction:**
 
 1.  Open the Transaction Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> General)
 
-1.  Enter or select the journal entry number for the transaction you’re voiding
-    or deleting.
+2.  Enter or select the journal entry number for the transaction you’re voiding or deleting.
 
-2.  Choose Void to void the transaction or Delete to delete the transaction.
+3.  Choose Void to void the transaction or Delete to delete the transaction.
 
-3.  Close the window.
+4.  Close the window.
 
 #### Understanding Value-Added Taxes
 
->   General Ledger accommodates the different tax rates on goods and services
->   sold in different cities, states, provinces, and countries/regions. These
->   taxation methods include Value-added Taxes (VAT). VAT is a system of input
->   taxes due on purchases and output taxes due on sales.
+>   General Ledger accommodates the different tax rates on goods and services sold in different cities, states, provinces, and countries/regions. These taxation methods include Value-added Taxes (VAT). VAT is a system of input taxes due on purchases and output taxes due on sales.
 
->   Each country/region that uses VAT has its own rate of taxation and often has
->   different rates for different goods or zones. VAT is collected on sales. Any
->   credit for tax paid on purchases also is tracked. The difference is remitted
->   to the taxation authority.
+>   Each country/region that uses VAT has its own rate of taxation and often has different rates for different goods or zones. VAT is collected on sales. Any credit for tax paid on purchases also is tracked. The difference is remitted to the taxation authority.
 
->   VAT entries in General Ledger transactions are used to compile the Detail
->   Tax Report, which displays the total sale or purchase amount, the total tax
->   amount, the total EU sale or purchase amount, and the total EU tax.
+>   VAT entries in General Ledger transactions are used to compile the Detail Tax Report, which displays the total sale or purchase amount, the total tax amount, the total EU sale or purchase amount, and the total EU tax.
 
->   The goods value is the same as the net purchase amount, which includes
->   freight and miscellaneous charges, if taxable, and any trade discount. If
->   several different tax details are used for a transaction, you must
->   distribute the total goods value amount to all appropriate tax details and
->   enter the tax in the Tax Amount field. This requirement applies even if no
->   tax will be paid on the entire transaction or on individual items included
->   on the transaction.
+>   The goods value is the same as the net purchase amount, which includes freight and miscellaneous charges, if taxable, and any trade discount. If several different tax details are used for a transaction, you must distribute the total goods value amount to all appropriate tax details and enter the tax in the Tax Amount field. This requirement applies even if no tax will be paid on the entire transaction or on individual items included on the transaction.
 
->   For example, you’re entering a purchase amount of £500. However, £250 of
->   this purchase is exempt from tax. To distribute the exempt portion of the
->   transaction, enter or select the appropriate tax-exempt detail. Then, enter
->   a goods value of £250 for the tax-exempt detail and the remaining taxable
->   goods value of £250 for the input tax detail. The tax amount automatically
->   will be adjusted to reflect the reduction in the taxable goods value.
+>   For example, you’re entering a purchase amount of £500. However, £250 of this purchase is exempt from tax. To distribute the exempt portion of the transaction, enter or select the appropriate tax-exempt detail. Then, enter a goods value of £250 for the tax-exempt detail and the remaining taxable goods value of £250 for the input tax detail. The tax amount automatically will be adjusted to reflect the reduction in the taxable goods value.
 
->   For information about setting up your system to calculate VAT, see the
->   System Setup instructions (Help \>\> Contents \>\> select Setting Up the
->   System).
+>   For information about setting up your system to calculate VAT, see the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
 #### Calculating and distributing tax
 
->   Use the Tax Entry window to enter tax information for a standard General
->   Ledger transaction if you’ve marked the Calculate Taxes in General Ledger
->   option in the Company Setup Options window.
+>   Use the Tax Entry window to enter tax information for a standard General Ledger transaction if you’ve marked the Calculate Taxes in General Ledger option in the Company Setup Options window.
 
->   Use General Ledger to enter taxable transactions that can’t be entered in
->   the Payables Management, Receivables Management, Purchase Order Processing,
->   Invoicing, or Sales Order Processing modules.
+>   Use General Ledger to enter taxable transactions that can’t be entered in the Payables Management, Receivables Management, Purchase Order Processing, Invoicing, or Sales Order Processing modules.
 
-For example, a taxable expense reimbursement to an employee should be entered in
-General Ledger. You could enter this transaction in Payables Management, but it
-would require that the employee be set up as a vendor. General Ledger also can
-be used to make corrections to tax transactions from other modules.
+For example, a taxable expense reimbursement to an employee should be entered in General Ledger. You could enter this transaction in Payables Management, but it would require that the employee be set up as a vendor. General Ledger also can be used to make corrections to tax transactions from other modules.
 
->   If you’ve registered Multicurrency Management, use the View menu or Currency
->   list button in the Transaction Entry window to choose to view transactions
->   in the originating or the functional currency.
+>   If you’ve registered Multicurrency Management, use the View menu or Currency list button in the Transaction Entry window to choose to view transactions in the originating or the functional currency.
 
 >   **To calculate and distribute tax:**
 
 1.  Open the Transaction Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> General)
 
-1.  Enter the transaction.
+2.  Enter the transaction.
 
->   *Be sure to select a transaction type of Standard. You cannot enter tax
->   information for Intercompany, Reversing, Clearing, or Quick Journal
->   entries.*
+>   *Be sure to select a transaction type of Standard. You cannot enter tax information for Intercompany, Reversing, Clearing, or Quick Journal entries.*
 
->   A journal entry that contains tax records can be saved in a single-use or
->   recurring batch.
+>   A journal entry that contains tax records can be saved in a single-use or recurring batch.
 
->   When a journal entry that contains tax records is deleted, all tax
->   information associated with the transaction is removed.
+>   When a journal entry that contains tax records is deleted, all tax information associated with the transaction is removed.
 
-1.  Choose Tax Entry to open the Tax Entry window.
+3.  Choose Tax Entry to open the Tax Entry window.
 
 ![](media/d90ddd355a1435d9daac150aa463dc46.jpg)
 
-1.  Decide if the transaction is a debit or a credit.
+4.  Decide if the transaction is a debit or a credit.
 
-2.  Enter or select the account number of the account.
+5.  Enter or select the account number of the account.
 
-3.  Enter an amount for the transaction. This is the sales or purchase amount
-    that tax calculations are based on. Each time the amount is changed, the
-    taxable sales/purchases amount and tax amount are recalculated.
+6.  Enter an amount for the transaction. This is the sales or purchase amount that tax calculations are based on. Each time the amount is changed, the taxable sales/purchases amount and tax amount are recalculated.
 
-4.  Enter or select a tax detail. A taxable sales/purchases amount and tax
-    amount are automatically calculated when the tax detail is selected, based
-    on the amount entered, the tax type, and tax percent for the tax detail.
-    Each time the tax detail is changed, the taxable sales/purchases amount and
-    tax amount are recalculated.
+7.  Enter or select a tax detail. A taxable sales/purchases amount and tax amount are automatically calculated when the tax detail is selected, based on the amount entered, the tax type, and tax percent for the tax detail. Each time the tax detail is changed, the taxable sales/purchases amount and tax amount are recalculated.
 
->   Any of the six types of tax details can be selected, but only percent of
->   sale/ purchase, percent of sale/purchase with taxable tax, and tax included
->   with item price tax details calculate a tax amount. Tax details that use the
->   percent of cost,
+>   Any of the six types of tax details can be selected, but only percent of sale/ purchase, percent of sale/purchase with taxable tax, and tax included with item price tax details calculate a tax amount. Tax details that use the percent of cost,
 
->   flat amount, or percent of another tax detail can be selected, but will
->   calculate a tax of \$0.00. The taxable sales/purchases amount is set to the
->   amount if one of these tax details is selected.
+>   flat amount, or percent of another tax detail can be selected, but will calculate a tax of \$0.00. The taxable sales/purchases amount is set to the amount if one of these tax details is selected.
 
-1.  In the Distribution Reference field, you can enter a description for the new
-    General Ledger distributions. The Reference entry from the Transaction Entry
-    window is the default Distribution Reference.
+8.  In the Distribution Reference field, you can enter a description for the new General Ledger distributions. The Reference entry from the Transaction Entry window is the default Distribution Reference.
 
-2.  Choose Create to create tax distributions. The Tax Entry window closes, and
-    the Transaction Entry window is updated.
+9.  Choose Create to create tax distributions. The Tax Entry window closes, and the Transaction Entry window is updated.
 
->   Two distributions are created in Transaction Entry. The first distribution
->   is the taxable sales/purchases amount portion of the tax record, and the
->   second is the tax amount portion. Only the account numbers and distribution
->   references can be edited for the distributions; you can't edit the debit or
->   credit amounts.
+>   Two distributions are created in Transaction Entry. The first distribution is the taxable sales/purchases amount portion of the tax record, and the second is the tax amount portion. Only the account numbers and distribution references can be edited for the distributions; you can't edit the debit or credit amounts.
 
->   *The debit or credit amounts for the taxable sales/purchases amount and tax
->   amount distributions can be negative. If negative amounts are entered in the
->   Tax Entry window, the taxable sales/purchases amount and tax amount
->   distributions also will be negative.*
+>   *The debit or credit amounts for the taxable sales/purchases amount and tax amount distributions can be negative. If negative amounts are entered in the Tax Entry window, the taxable sales/purchases amount and tax amount distributions also will be negative.*
 
 **Chapter 19: Clearing transactions**
 
->   Clearing transactions are useful when accounts are obsolete but can’t be
->   deleted because they have activity for open periods.
+>   Clearing transactions are useful when accounts are obsolete but can’t be deleted because they have activity for open periods.
 
 >   This information is divided into the following sections:
 
@@ -2461,104 +2322,67 @@ be used to make corrections to tax transactions from other modules.
 
 #### Understanding clearing transactions
 
->   When you’re no longer using an account and want to transfer its balance to
->   another account, you need to make a clearing transaction. With a clearing
->   entry, the account balance will be transferred, the transaction activity
->   will remain with the original account and the account remains active.
+>   When you’re no longer using an account and want to transfer its balance to another account, you need to make a clearing transaction. With a clearing entry, the account balance will be transferred, the transaction activity will remain with the original account and the account remains active.
 
-*If you’re using Multicurrency Management, you cannot use clearing
-transactions.*
+*If you’re using Multicurrency Management, you cannot use clearing transactions.*
 
->   You also can use clearing transactions for accounts with balances that
->   periodically are cleared to other accounts, such as departmental sales
->   accounts, which are cleared to controlling sales accounts at the end of each
->   accounting period. You’ll still have a record of the account’s activity, and
->   you can reuse the account later for the next period.
+>   You also can use clearing transactions for accounts with balances that periodically are cleared to other accounts, such as departmental sales accounts, which are cleared to controlling sales accounts at the end of each accounting period. You’ll still have a record of the account’s activity, and you can reuse the account later for the next period.
 
->   When entering clearing transactions, if you select the year-to-date balance,
->   the system transfers the year-to-date balance through the period in which
->   the transaction date occurs. For example, if the transaction date is January
->   15, 2004, all of the January transactions are cleared, even if there are
->   transactions after January 15, 2004, in that period. If you select the
->   period balance, the system transfers the entire balance for the period in
->   which the transaction date falls. You can post clearing transactions only to
->   open years. You can’t post clearing transactions that fall within a
->   historical year.
+>   When entering clearing transactions, if you select the year-to-date balance, the system transfers the year-to-date balance through the period in which the transaction date occurs. For example, if the transaction date is January 15, 2004, all of the January transactions are cleared, even if there are transactions after January 15, 2004, in that period. If you select the period balance, the system transfers the entire balance for the period in which the transaction date falls. You can post clearing transactions only to open years. You can’t post clearing transactions that fall within a historical year.
 
->   If the account you enter is a posting account, the offsetting account also
->   must be a posting account or a posting allocation account. The same
->   principle applies to unit accounts: if the account to be cleared is a unit
->   account, the offsetting account must be a unit account or unit allocation
->   account.
+>   If the account you enter is a posting account, the offsetting account also must be a posting account or a posting allocation account. The same principle applies to unit accounts: if the account to be cleared is a unit account, the offsetting account must be a unit account or unit allocation account.
 
 #### Entering a clearing transaction
 
->   Use the Clearing Entry window to enter clearing transactions. You can post
->   clearing transactions only to open years. You can’t enter clearing
->   transactions for a historical year.
+>   Use the Clearing Entry window to enter clearing transactions. You can post clearing transactions only to open years. You can’t enter clearing transactions for a historical year.
 
 >   **To enter a clearing transaction:**
 
 1.  Open the Clearing Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Clearing)
 
 ![](media/12ee012b01734f7b73d016b3bc534889.jpg)
 
-1.  Enter a journal entry number or accept the default number.
+2.  Enter a journal entry number or accept the default number.
 
-2.  If you’re using batches, enter or select a batch.
+3.  If you’re using batches, enter or select a batch.
 
-3.  Enter the transaction date, source document code, and reference.
+4.  Enter the transaction date, source document code, and reference.
 
-4.  Mark Year-to-Date or Trx Period to indicate which periods’ account balances
-    will be cleared during posting.
+5.  Mark Year-to-Date or Trx Period to indicate which periods’ account balances will be cleared during posting.
 
-5.  Enter or select an account to clear and an offset account that will receive
-    the cleared account’s balance.
+6.  Enter or select an account to clear and an offset account that will receive the cleared account’s balance.
 
-6.  If you’re entering transactions individually, choose Post.
+7.  If you’re entering transactions individually, choose Post.
 
->   *We recommend that you back up company data before posting. If power
->   fluctuates or some other problem occurs, you can restore your data and begin
->   the posting process again. For more information about making backups, refer
->   to the System Administrator’s Guide (Help \>\> Contents \>\> select System
->   Administration).*
+>   *We recommend that you back up company data before posting. If power fluctuates or some other problem occurs, you can restore your data and begin  the posting process again. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
 
->   When you close the Clearing Entry window, the Clearing Posting Journal will
->   be printed for all transactions posted using the transaction-level method.
+>   When you close the Clearing Entry window, the Clearing Posting Journal will be printed for all transactions posted using the transaction-level method.
 
->   See *Chapter 22, “Posting,”* for information about posting transactions in a
->   batch.
+>   See *Chapter 22, “Posting,”* for information about posting transactions in a batch.
 
-1.  If you’re entering transactions in a batch, choose Save.
+8.  If you’re entering transactions in a batch, choose Save.
 
 #### Voiding or deleting a saved clearing transaction
 
-You can use the Clearing Entry window to void or delete transactions that have
-been saved, but not posted.
+You can use the Clearing Entry window to void or delete transactions that have been saved, but not posted.
 
-By default, you can delete saved transactions. However, you can change default
-settings so that you must void saved transactions instead of deleting them. See
-*Setting up default entries and preferences* for more information.
+By default, you can delete saved transactions. However, you can change default settings so that you must void saved transactions instead of deleting them. See *Setting up default entries and preferences* for more information.
 
 >   **To void or delete a saved clearing transaction:**
 
 1.  Open the Clearing Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Clearing)
 
-1.  Enter or select the journal entry number for the transaction you’re voiding
-    or deleting.
+2.  Enter or select the journal entry number for the transaction you’re voiding or deleting.
 
-2.  Choose Void to void the transaction or Delete to delete the transaction.
+3.  Choose Void to void the transaction or Delete to delete the transaction.
 
-3.  Close the window.
+4.  Close the window.
 
 **Chapter 20: Quick journal transactions**
 
->   Quick journals provide a method of time-saving journal entry that doesn’t
->   require batches.
+>   Quick journals provide a method of time-saving journal entry that doesn’t require batches.
 
 >   This information is divided into the following sections:
 
@@ -2570,134 +2394,77 @@ settings so that you must void saved transactions instead of deleting them. See
 
 #### Understanding quick journal transactions
 
->   Transactions that require many different entries can be simplified using the
->   quick journal method. For example, payroll transactions often require many
->   entries, such as debits to employer’s tax expense and wages expense, broken
->   down by department. Instead of entering nearly a dozen accounts, you can set
->   up a quick journal and enter only the transaction amounts. The total of the
->   amounts you enter will be offset to the Cash account. For transactions that
->   recur and affect many accounts but are offset to a single account, Quick
->   Journal Entry can save data entry time.
+>   Transactions that require many different entries can be simplified using the quick journal method. For example, payroll transactions often require many entries, such as debits to employer’s tax expense and wages expense, broken down by department. Instead of entering nearly a dozen accounts, you can set up a quick journal and enter only the transaction amounts. The total of the amounts you enter will be offset to the Cash account. For transactions that recur and affect many accounts but are offset to a single account, Quick Journal Entry can save data entry time.
 
->   Quick journals are set up in the Quick Journal Setup window. See *Chapter
->   10, “Quick journal transactions setup,”* for more information.
+>   Quick journals are set up in the Quick Journal Setup window. See *Chapter 10, “Quick journal transactions setup,”* for more information.
 
->   If you’re using Multicurrency Management, you can enter quick journals only
->   in your company’s functional currency.
+>   If you’re using Multicurrency Management, you can enter quick journals only in your company’s functional currency.
 
->   The amounts entered in a quick journal can be both debits and credits. The
->   difference between total debits and credits is the amount applied to the
->   offset account. Unlike standard transactions entered individually without a
->   batch, quick journal transactions can be saved and posted at a later date.
+>   The amounts entered in a quick journal can be both debits and credits. The difference between total debits and credits is the amount applied to the offset account. Unlike standard transactions entered individually without a batch, quick journal transactions can be saved and posted at a later date.
 
->   You also can enter a control balance at any point during the data entry
->   process to double-check totals. The control balance you enter will be
->   compared with the total of all debit and credit amounts entered for the
->   distribution accounts. If the two balances don’t match, you won’t be able to
->   post the quick journal transaction.
+>   You also can enter a control balance at any point during the data entry  process to double-check totals. The control balance you enter will be compared with the total of all debit and credit amounts entered for the distribution accounts. If the two balances don’t match, you won’t be able to post the quick journal transaction.
 
->   Quick journal entries can be posted individually, or by using the Series
->   Posting or Master Posting window. If you select series or master posting,
->   the quick journal ID will be used as an identifier, similar to batch ID; all
->   journal entries for a single quick journal are posted when you select the
->   quick journal and choose Post.
+>   Quick journal entries can be posted individually, or by using the Series Posting or Master Posting window. If you select series or master posting, the quick journal ID will be used as an identifier, similar to batch ID; all journal entries for a single quick journal are posted when you select the quick journal and choose Post.
 
 #### Entering a quick journal transaction
 
->   Use the Quick Journal Entry window to enter transactions you've identified
->   as good candidates for quick journal entry. Quick journal transactions
->   always are assigned to the Base reporting ledger. For more information on
->   reporting ledgers, see *Setting up default entries and preferences*.
+>   Use the Quick Journal Entry window to enter transactions you've identified as good candidates for quick journal entry. Quick journal transactions always are assigned to the Base reporting ledger. For more information on reporting ledgers, see *Setting up default entries and preferences*.
 
 >   **To enter a quick journal transaction:**
 
 1.  Open the Quick Journal Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Quick Journal)
 
 ![](media/ee638add91e8d28dd8bab958d94cf33d.jpg)
 
-1.  Enter a journal entry number or accept the default.
+2.  Enter a journal entry number or accept the default.
 
-2.  Enter or select a quick journal ID.
+3.  Enter or select a quick journal ID.
 
->   Once you’ve chosen a quick journal, the description, reference, offset
->   account, source document code, breakdown allocations, and accounts you
->   entered during the setup process appear as defaults.
+>   Once you’ve chosen a quick journal, the description, reference, offset account, source document code, breakdown allocations, and accounts you entered during the setup process appear as defaults.
 
->   *If you enter only unit accounts in the scrolling window, the offset
->   account’s balance isn't updated when you post the transaction.*
+>   *If you enter only unit accounts in the scrolling window, the offset account’s balance isn't updated when you post the transaction.*
 
->   You can add or delete accounts that appear as default accounts, but to
->   permanently change the quick journal setup, you must use the Quick Journal
->   Setup window.
+>   You can add or delete accounts that appear as default accounts, but to permanently change the quick journal setup, you must use the Quick Journal Setup window.
 
->   A default offset account is displayed, but you can select another offset
->   account if you marked the Allow Override option during the setup process.
->   Refer to *Setting up a quick journal* for more information.
+>   A default offset account is displayed, but you can select another offset account if you marked the Allow Override option during the setup process. Refer to *Setting up a quick journal* for more information.
 
-1.  Enter or accept the default transaction date, source document code,
-    reference, and offset account.
+3.  Enter or accept the default transaction date, source document code, reference, and offset account.
 
-2.  If you want to confirm your entries, enter a control balance. The control
-    balance will be compared with the total of all debit and credit amounts
-    entered for the distribution accounts. If the two balances don’t match, you
-    won’t be able to post.
+4.  If you want to confirm your entries, enter a control balance. The control balance will be compared with the total of all debit and credit amounts entered for the distribution accounts. If the two balances don’t match, you won’t be able to post.
 
-3.  Enter debits and credits and double-check the balance.
+5.  Enter debits and credits and double-check the balance.
 
->   *You don’t have to enter amounts for all accounts listed in the Quick
->   Journal Entry window. Accounts can have zero balances and the transaction
->   will still be posted. However, the actual amounts must equal the control
->   total you’ve entered before you can post the transaction.*
+>   *You don’t have to enter amounts for all accounts listed in the Quick Journal Entry window. Accounts can have zero balances and the transaction will still be posted. However, the actual amounts must equal the control total you’ve entered before you can post the transaction.*
 
-1.  Choose File \>\> Print or the printer icon button to verify your entries
-    with a Quick Entry Edit List, before posting.
+6.  Choose File \>\> Print or the printer icon button to verify your entries with a Quick Entry Edit List, before posting.
 
->   *We recommend that you back up company data before posting. If power
->   fluctuates or another problem occurs, you can restore your data and begin
->   the posting process again. For more information about making backups, refer
->   to the System Administrator’s Guide (Help \>\> Contents \>\> select System
->   Administration).*
+>   *We recommend that you back up company data before posting. If power fluctuates or another problem occurs, you can restore your data and begin the posting process again. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
 
-1.  Save or post the entry.
+7.  Save or post the entry.
 
-2.  Depending on the way your system has been set up, the Quick Journal Posting
-    Journal might be printed automatically when you post.
-
->   See *Chapter 22, “Posting,”* for information about posting transactions.
+8.  Depending on the way your system has been set up, the Quick Journal Posting Journal might be printed automatically when you post.  See *Chapter 22, “Posting,”* for information about posting transactions.
 
 #### Voiding or deleting a saved quick journal transaction
 
->   You can use the Quick Journal Entry window to void or delete transactions
->   that have been saved, but not posted.
+>   You can use the Quick Journal Entry window to void or delete transactions that have been saved, but not posted.
 
->   By default, you can delete saved transactions. However, you can change
->   default settings so that you must void saved transactions instead of
->   deleting them. See *Setting up default entries and preferences* for more
->   information.
+>   By default, you can delete saved transactions. However, you can change default settings so that you must void saved transactions instead of deleting them. See *Setting up default entries and preferences* for more information.
 
 >   **To void or delete a saved quick journal transaction:**
 
 1.  Open the Quick Journal Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Quick Journal)
 
-1.  Enter or select the journal entry number for the transaction you’re voiding
-    or deleting.
+2.  Enter or select the journal entry number for the transaction you’re voiding or deleting.
 
-2.  Choose Void to void the transaction or Delete to delete the transaction.
+3.  Choose Void to void the transaction or Delete to delete the transaction.
 
-3.  Close the window.
+4.  Close the window.
 
 **Chapter 21: Transaction deferrals**
 
->   You can defer transaction distributions for transactions originating from
->   General Ledger, Receivables Management, Sales Order Processing, Payables
->   Management, or Purchase Order Processing. You can enter the information for
->   each deferral transaction individually, or you can use deferral profiles to
->   speed data entry by applying the same default settings to similar deferral
->   transactions.
+>   You can defer transaction distributions for transactions originating from General Ledger, Receivables Management, Sales Order Processing, Payables Management, or Purchase Order Processing. You can enter the information for each deferral transaction individually, or you can use deferral profiles to speed data entry by applying the same default settings to similar deferral transactions.
 
 >   This information includes the following sections:
 
@@ -2717,22 +2484,11 @@ settings so that you must void saved transactions instead of deleting them. See
 
 #### Deferring a transaction distribution
 
->   Use the Deferral Entry window to defer a transaction distribution for
->   transactions originating from Receivables Management, Payables Management,
->   Sales Order Processing, Invoicing, or Purchase Order Processing. For
->   information about deferring General Ledger transactions, see *Entering a
->   General Ledger deferral transaction* and *Entering a General Ledger deferral
->   transaction using a profile*.
+>   Use the Deferral Entry window to defer a transaction distribution for transactions originating from Receivables Management, Payables Management, Sales Order Processing, Invoicing, or Purchase Order Processing. For information about deferring General Ledger transactions, see *Entering a General Ledger deferral transaction* and *Entering a General Ledger deferral transaction using a profile*.
 
->   When you use the Deferral Entry window, you will specify the deferral and
->   recognition accounts to use, the beginning and end dates for the deferral,
->   and the method for calculating the deferred amounts. If you want to ensure
->   that similar transactions are entered with consistent information, you can
->   use a deferral profile. For more information, see *Deferring a transaction
->   distribution using a profile*.
+>   When you use the Deferral Entry window, you will specify the deferral and recognition accounts to use, the beginning and end dates for the deferral, and the method for calculating the deferred amounts. If you want to ensure that similar transactions are entered with consistent information, you can use a deferral profile. For more information, see *Deferring a transaction distribution using a profile*.
 
->   You can open the Deferral Entry window from the following distribution entry
->   windows.
+>   You can open the Deferral Entry window from the following distribution entry windows.
 
 | **Module**                | **Distribution entry window**           | **Navigation**                                                                                                                 |
 |---------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -2746,73 +2502,43 @@ settings so that you must void saved transactions instead of deleting them. See
 
 >   **To defer a transaction distribution:**
 
-1.  Enter or select a transaction and open the appropriate distribution window.
-    For example, if you wanted to defer the revenue from a transaction entered
-    in the Receivables Transaction Entry window, you would enter the transaction
-    amounts, and choose Distribution to open the Sales Transaction Distribution
-    Entry window.
+1.  Enter or select a transaction and open the appropriate distribution window. For example, if you wanted to defer the revenue from a transaction entered in the Receivables Transaction Entry window, you would enter the transaction amounts, and choose Distribution to open the Sales Transaction Distribution Entry window.
 
 2.  In the distribution entry window, select the distribution you want to defer.
 
 ![](media/4cc6292e026e5880cc5deb14a59da3df.jpg)
 
->   Depending on how your default posting accounts are set up, you may need to
->   change the account to a deferral account. For example, if you’re deferring
->   the revenue for a prepaid maintenance contract, you could change the SALES
->   posting account to the account you use for deferred revenue.
+>   Depending on how your default posting accounts are set up, you may need to change the account to a deferral account. For example, if you’re deferring the revenue for a prepaid maintenance contract, you could change the SALES posting account to the account you use for deferred revenue.
 
-1.  From the Additional menu, choose Deferral to open the Deferral Entry window.
+3.  From the Additional menu, choose Deferral to open the Deferral Entry window.
 
 ![](media/d6fe788dd0e6c713090d9855766da1a2.jpg)
 
->   Enter the beginning and end of the period and select the method to use for
->   apportioning the deferred amounts over that period.
+>   Enter the beginning and end of the period and select the method to use for apportioning the deferred amounts over that period.
 
--   The Days In Period method apportions the amount based on the number of days
-    in a fiscal period.
+-   The Days In Period method apportions the amount based on the number of days in a fiscal period.
 
 -   The Equal Per Period method allocates an equal amount per fiscal period.
 
--   The Miscellaneous method allows you to specify the length of the periods and
-    allocates an equal amount per period.
+-   The Miscellaneous method allows you to specify the length of the periods and allocates an equal amount per period.
 
-1.  If you’re using the Balance Sheet deferral posting method, enter or select
-    the recognition account for the deferral. If you’re using the Profit and
-    Loss deferral posting method, enter or select the additional deferral and
-    recognition accounts.
+4.  If you’re using the Balance Sheet deferral posting method, enter or select the recognition account for the deferral. If you’re using the Profit and Loss deferral posting method, enter or select the additional deferral and recognition accounts.
 
-2.  When you’ve entered this information, the individual deferral transactions
-    will be calculated and appear in the lower scrolling window. If necessary,
-    you can edit the date, description, and amount for each deferral
-    transaction.
+5.  When you’ve entered this information, the individual deferral transactions will be calculated and appear in the lower scrolling window. If necessary, you can edit the date, description, and amount for each deferral transaction.
 
-3.  Choose Save Account when the information is correct, then choose OK to close
-    the window.
+6.  Choose Save Account when the information is correct, then choose OK to close the window.
 
-4.  If you need to defer another distribution for this transaction, repeat steps
-    2 through 6.
+7.  If you need to defer another distribution for this transaction, repeat steps 2 through 6.
 
-5.  Close the distribution entry window and save or post the transaction. If you
-    print an edit list for a batch that includes deferred transactions, the
-    Deferral Edit List will also be printed, showing how the deferrals will be
-    posted.
+8.  Close the distribution entry window and save or post the transaction. If you print an edit list for a batch that includes deferred transactions, the Deferral Edit List will also be printed, showing how the deferrals will be posted.
 
 #### Deferring a transaction distribution using a profile
 
->   Use the Deferral Profile Selection window to defer a transaction
->   distribution using a deferral profile. A deferral profile provides default
->   entries to help ensure that similar transactions are entered with consistent
->   information. For example, if you routinely enter transactions for service
->   contracts your company offers, and the revenue is recognized over a 12-month
->   period, you could use a deferral profile for these service contract
->   transactions.
+>   Use the Deferral Profile Selection window to defer a transaction distribution using a deferral profile. A deferral profile provides default entries to help ensure that similar transactions are entered with consistent information. For example, if you routinely enter transactions for service contracts your company offers, and the revenue is recognized over a 12-month period, you could use a deferral profile for these service contract transactions.
 
->   The profile specifies the accounts to be used, and the method for
->   calculating how the deferred revenue is recognized. For information on
->   setting up profiles, see *Setting up a deferral profile*.
+>   The profile specifies the accounts to be used, and the method for calculating how the deferred revenue is recognized. For information on setting up profiles, see *Setting up a deferral profile*.
 
->   You can open the Deferral Profile Selection window from the following
->   distribution entry windows.
+>   You can open the Deferral Profile Selection window from the following distribution entry windows.
 
 | **Module**                | **Distribution entry window**           | **Navigation**                                                                                                            |
 |---------------------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -2828,252 +2554,152 @@ settings so that you must void saved transactions instead of deleting them. See
 
 >   **To defer a transaction distribution using a profile:**
 
-1.  Enter or select a transaction and open the appropriate distribution window.
-    For example, if you wanted to defer the revenue from a transaction entered
-    in the Receivables Transaction Entry window, you would enter the transaction
-    amounts, and choose Distribution to open the Sales Transaction Distribution
-    Entry window.
+1.  Enter or select a transaction and open the appropriate distribution window. For example, if you wanted to defer the revenue from a transaction entered in the Receivables Transaction Entry window, you would enter the transaction amounts, and choose Distribution to open the Sales Transaction Distribution Entry window.
 
 2.  In the distribution entry window, select the distribution you want to defer.
 
->   Depending on how your default posting accounts are set up, you may need to
->   change the account to a deferral account. For example, if you’re deferring
->   the revenue for a prepaid maintenance contract, you could change the SALES
->   posting account to the account you use for deferred revenue.
+>   Depending on how your default posting accounts are set up, you may need to change the account to a deferral account. For example, if you’re deferring the revenue for a prepaid maintenance contract, you could change the SALES posting account to the account you use for deferred revenue.
 
-1.  From the Additional menu, choose Deferral Profile to open the Deferral
-    Profile Selection window.
+3.  From the Additional menu, choose Deferral Profile to open the Deferral Profile Selection window.
 
 ![](media/f8ae53898e7e0a6abd48de82ca9350a6.jpg)
 
 >   Enter or select the profile you want to use to defer this distribution.
 
-1.  Depending on how you have set up the deferrals feature and the options for
-    access to this profile, you may be able to change the deferral and
-    recognition accounts, the calculation method and period information, and
-    each period’s transaction information.
+4.  Depending on how you have set up the deferrals feature and the options for access to this profile, you may be able to change the deferral and recognition accounts, the calculation method and period information, and each period’s transaction information.
 
-2.  Choose Allocate to save this distribution deferral and close the window.
+5.  Choose Allocate to save this distribution deferral and close the window.
 
-3.  If you need to defer another distribution for this transaction, repeat steps
-    2 through 5.
+6.  If you need to defer another distribution for this transaction, repeat steps 2 through 5.
 
-4.  Close the distribution entry window and save or post the transaction. If you
-    print an edit list for a batch that includes deferred transactions, the
-    Deferral Edit List will also be printed, showing how the deferrals will be
-    posted.
+7.  Close the distribution entry window and save or post the transaction. If you print an edit list for a batch that includes deferred transactions, the Deferral Edit List will also be printed, showing how the deferrals will be posted.
 
 #### Entering a General Ledger deferral transaction
 
->   Use the Deferral Document Entry window to enter a deferral transaction
->   directly in General Ledger. For example, you can use this window to create
->   the deferral transactions for an amount that has been posted to a deferral
->   account.
+>   Use the Deferral Document Entry window to enter a deferral transaction directly in General Ledger. For example, you can use this window to create the deferral transactions for an amount that has been posted to a deferral account.
 
->   When you use the Deferral Document Entry window, you will specify the
->   deferral and recognition accounts to use, the beginning and end dates for
->   the deferral, and the method for calculating the deferred amounts. If you
->   want to ensure that similar transactions are entered with consistent
->   information, you can use a deferral profile. For more information, see
->   *Entering a General Ledger deferral transaction using a profile*.
+>   When you use the Deferral Document Entry window, you will specify the deferral and recognition accounts to use, the beginning and end dates for the deferral, and the method for calculating the deferred amounts. If you want to ensure that similar transactions are entered with consistent information, you can use a deferral profile. For more information, see *Entering a General Ledger deferral transaction using a profile*.
 
 >   **To enter a General Ledger deferral transaction:**
 
 1.  Open the Deferral Document Entry window.
-
->   (Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\>
->   Deferral Document Entry)
+>   (Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\> Deferral Document Entry)
 
 ![](media/4b13071e03833ef29d6d52f0c1f4dfa7.jpg)
 
-1.  Enter the beginning and end of the period and select the method to use for
-    apportioning the deferred amounts over that period.
+2.  Enter the beginning and end of the period and select the method to use for apportioning the deferred amounts over that period.
 
-2.  Enter a GL Reference and enter or select a batch.
+3.  Enter a GL Reference and enter or select a batch.
 
-3.  Enter the amount to be deferred, and the recognition and deferral accounts.
-    If necessary, you can change which account will be debited or credited by
-    clicking the Dr/Cr buttons next to the account field.
+4.  Enter the amount to be deferred, and the recognition and deferral accounts. If necessary, you can change which account will be debited or credited by clicking the Dr/Cr buttons next to the account field.
 
-4.  The individual deferral transactions will be calculated and appear in the
-    lower scrolling window. If necessary, you can edit the date, description,
-    and amount for each deferral transaction.
+5.  The individual deferral transactions will be calculated and appear in the lower scrolling window. If necessary, you can edit the date, description, and amount for each deferral transaction.
 
-5.  Choose Save to save the transaction.
+6.  Choose Save to save the transaction.
 
 #### Entering a General Ledger deferral transaction using a profile
 
->   Use the Deferral Profile Document Entry window to enter a deferral
->   transaction directly in General Ledger using a profile. A deferral profile
->   provides default entries that can help ensure that similar transactions are
->   entered with consistent information. For example, if you routinely enter
->   transactions for asset depreciation, you could use a deferral profile for
->   these depreciation transactions. The profile specifies the accounts to be
->   used, and the method for calculating how the deferred revenue is recognized.
->   For information on setting up profiles, see *Setting up a deferral profile*.
+>   Use the Deferral Profile Document Entry window to enter a deferral transaction directly in General Ledger using a profile. A deferral profile provides default entries that can help ensure that similar transactions are entered with consistent information. For example, if you routinely enter transactions for asset depreciation, you could use a deferral profile for these depreciation transactions. The profile specifies the accounts to be used, and the method for calculating how the deferred revenue is recognized. For information on setting up profiles, see *Setting up a deferral profile*.
 
 >   **To enter a General Ledger deferral transaction using a profile:**
 
 1.  Open the Deferral Profile Document Entry window.
-
->   (Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\>
->   Deferral Profiles)
+>   (Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\> Deferral Profiles)
 
 ![](media/9c9767e8fb93e4e17602667f51a4ec78.jpg)
 
-1.  Enter or select the profile you want to use for this deferral transaction.
+2.  Enter or select the profile you want to use for this deferral transaction.
 
-2.  Enter the amount to be deferred, the batch for this transaction, and a
-    reference.
+3.  Enter the amount to be deferred, the batch for this transaction, and a reference.
 
-3.  Depending on how you have set up the deferrals feature and the options for
-    access to this profile, you may be able to change the deferral and
-    recognition accounts, the calculation method and period information, and
-    each period’s transaction information for this distribution deferral.
+4.  Depending on how you have set up the deferrals feature and the options for access to this profile, you may be able to change the deferral and recognition accounts, the calculation method and period information, and each period’s transaction information for this distribution deferral.
 
-4.  Choose Save to save the transaction.
+5.  Choose Save to save the transaction.
 
 #### Creating a retroactive deferral transaction
 
->   Use the Retroactive Deferral Transaction Entry window to create distribution
->   deferrals to apply to previously posted transactions originating from the
->   Sales or Purchasing series.
+>   Use the Retroactive Deferral Transaction Entry window to create distribution deferrals to apply to previously posted transactions originating from the Sales or Purchasing series.
 
->   *Retroactive deferral transactions should use the Profit and Loss deferral
->   posting method. This allows the posted amount to be reversed from the Profit
->   and Loss account it was originally posted to and transferred to a deferrals
->   account. If you need to change the deferral posting method for a series, you
->   must first post all unposted deferral transactions. For more information on
->   changing the deferral posting method, see Setting up revenue/expense
->   deferrals.*
+>   *Retroactive deferral transactions should use the Profit and Loss deferral posting method. This allows the posted amount to be reversed from the Profit and Loss account it was originally posted to and transferred to a deferrals account. If you need to change the deferral posting method for a series, you must first post all unposted deferral transactions. For more information on changing the deferral posting method, see Setting up revenue/expense deferrals.*
 
 >   **To create a retroactive deferral transaction:**
 
 1.  Open the Retroactive Deferral Transaction Entry window.
-
->   (For sales transactions: Financial \>\> Transactions \>\> Financial \>\>
->   Sales
-
->   Retroactive \>\> Retroactive Deferral)
-
->   (For purchase transactions: Financial \>\> Transactions \>\> Financial \>\>
->   Purchasing Retroactive \>\> Retroactive Deferral)
+>   (For sales transactions: Financial \>\> Transactions \>\> Financial \>\> Sales Retroactive \>\> Retroactive Deferral)
+>   (For purchase transactions: Financial \>\> Transactions \>\> Financial \>\> Purchasing Retroactive \>\> Retroactive Deferral)
 
 ![](media/354c788f37ddaa8a6dc6e7f6b3b95c32.jpg)
 
-1.  Enter or select the customer ID or vendor ID for the transaction you want to
-    defer.
+2.  Enter or select the customer ID or vendor ID for the transaction you want to defer.
 
-2.  Enter or select a batch for the deferral transactions.
+3.  Enter or select a batch for the deferral transactions.
 
-3.  If necessary, you can restrict the number of transactions that appear in the
-    scrolling window by entering a range restriction or by displaying only open
-    or historical transactions. Choose Redisplay to update the list of
-    transactions.
+4.  If necessary, you can restrict the number of transactions that appear in the scrolling window by entering a range restriction or by displaying only open or historical transactions. Choose Redisplay to update the list of transactions.
 
-4.  Select the transaction you want to enter deferrals against and click the
-    Document Number link to open the Distribution Deferral Information window.
+5.  Select the transaction you want to enter deferrals against and click the Document Number link to open the Distribution Deferral Information window.
 
 ![](media/d674e9f3cd36b62aed897d83e962613e.jpg)
 
-1.  Select the distribution you want to defer and choose Extras \>\> Additional
-    \>\> Deferral to open the Deferral Entry window or choose Extras \>\>
-    Additional \>\> Deferral Profile to open the Deferral Profile Selection
-    window.
+6.  Select the distribution you want to defer and choose Extras \>\> Additional \>\> Deferral to open the Deferral Entry window or choose Extras \>\> Additional \>\> Deferral Profile to open the Deferral Profile Selection window.
 
-2.  Enter and save the necessary deferral information. For more information, see
-    *Deferring a transaction distribution* and *Deferring a transaction
-    distribution using a profile*.
+7.  Enter and save the necessary deferral information. For more information, see *Deferring a transaction distribution* and *Deferring a transaction distribution using a profile*.
 
-3.  If you need to defer another distribution for this transaction, repeat steps
-    6 through 7. Otherwise, choose OK to close the Distribution Deferral
-    Information window.
+8.  If you need to defer another distribution for this transaction, repeat steps 6 through 7. Otherwise, choose OK to close the Distribution Deferral  Information window.
 
-4.  If you need to defer another transaction for this customer or vendor, repeat
-    steps 5 through 8. Otherwise, choose Save to save the deferral transactions.
+9.  If you need to defer another transaction for this customer or vendor, repeat steps 5 through 8. Otherwise, choose Save to save the deferral transactions.
 
-5.  Post the batch. For more information, see *Posting deferral transactions*.
+10.  Post the batch. For more information, see *Posting deferral transactions*.
 
 #### Posting deferral transactions
 
->   You can post deferral transaction batches individually, or several at a
->   time. You’ll use different windows to post deferral transactions, depending
->   on whether they are General Ledger deferral transactions, or retroactive
->   deferral transactions for the Sales or Purchasing series.
+>   You can post deferral transaction batches individually, or several at a time. You’ll use different windows to post deferral transactions, depending on whether they are General Ledger deferral transactions, or retroactive deferral transactions for the Sales or Purchasing series.
 
 >   **To post individual deferral transaction batches:**
 
 1.  Open the Deferral Batch Entry window.
-
->   (For General Ledger deferrals: Financial \>\> Transactions \>\> Financial
->   \>\> Financial Deferral \>\> Deferral Batches)
-
->   (For retroactive Sales deferrals: Financial \>\> Transactions \>\> Financial
->   \>\> Sales Retroactive \>\> Retroactive Batches)
-
->   (For retroactive Purchasing deferrals: Financial \>\> Transactions \>\>
->   Financial \>\> Purchasing Retroactive \>\> Retroactive Batches)
+>   (For General Ledger deferrals: Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\> Deferral Batches)
+>   (For retroactive Sales deferrals: Financial \>\> Transactions \>\> Financial \>\> Sales Retroactive \>\> Retroactive Batches)
+>   (For retroactive Purchasing deferrals: Financial \>\> Transactions \>\> Financial \>\> Purchasing Retroactive \>\> Retroactive Batches)
 
 ![](media/e0428d6eb1f63c855c1e193d7f84ee3b.jpg)
 
-1.  Enter or select the batch you want to post.
+2.  Enter or select the batch you want to post.
 
-2.  Choose Post.
+3.  Choose Post.
 
 >   **To post multiple deferral transaction batches:**
 
 1.  Open the Deferral Posting window.
-
->   (For General Ledger deferrals: Financial \>\> Transactions \>\> Financial
->   \>\>
-
->   Financial Deferral \>\> Deferral Posting)
-
->   (For retroactive Sales deferrals: Financial \>\> Transactions \>\> Financial
->   \>\> Sales
-
->   Retroactive \>\> Deferral Posting)
-
->   (For retroactive Purchasing deferrals: Financial \>\> Transactions \>\>
->   Financial \>\> Purchasing Retroactive \>\> Deferral Posting)
+>   (For General Ledger deferrals: Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\> Deferral Posting)
+>   (For retroactive Sales deferrals: Financial \>\> Transactions \>\> Financial \>\> Sales Retroactive \>\> Deferral Posting)
+>   (For retroactive Purchasing deferrals: Financial \>\> Transactions \>\> Financial \>\> Purchasing Retroactive \>\> Deferral Posting)
 
 ![](media/6c6e2553e60d6256a9e98c1a835accf7.jpg)
 
-1.  Mark the available batches that you want to post.
+2.  Mark the available batches that you want to post.
 
-2.  Choose Post.
+3.  Choose Post.
 
 #### Voiding a deferral transaction
 
->   Use the Void Deferral Transactions window to void a posted deferral
->   transaction. Voiding a deferral transaction will post journal entries
->   reversing the original deferral journal entries. Depending on how you set up
->   the option for voiding deferrals, the original transaction associated with
->   the deferrals may also be voided. For more information, see *Setting up
->   revenue/expense deferrals*.
+>   Use the Void Deferral Transactions window to void a posted deferral transaction. Voiding a deferral transaction will post journal entries reversing the original deferral journal entries. Depending on how you set up the option for voiding deferrals, the original transaction associated with the deferrals may also be voided. For more information, see *Setting up revenue/expense deferrals*.
 
 >   **To void a deferral transaction:**
 
 1.  Open the Void Deferral Transactions window.
-
->   (Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\>
->   Void Deferral Transactions)
+>   (Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\> Void Deferral Transactions)
 
 ![](media/115a625698c2026d5da814676536d492.jpg)
 
-1.  Select the series of the transaction you want to void.
+2.  Select the series of the transaction you want to void.
 
-2.  Enter or select the customer or vendor for the transaction, and if
-    necessary, restrict the number of transactions that appear in the scrolling
-    window by entering a range restriction. Choose Redisplay to update the list
-    of transactions.
+3.  Enter or select the customer or vendor for the transaction, and if necessary, restrict the number of transactions that appear in the scrolling window by entering a range restriction. Choose Redisplay to update the list of transactions.
 
-3.  Select the document you want to void and choose Void.
+4.  Select the document you want to void and choose Void.
 
 **Chapter 22: Posting**
 
->   Posting is the process of transferring transactions to the company’s
->   permanent records.
+>   Posting is the process of transferring transactions to the company’s permanent records.
 
 >   This information is divided into the following sections:
 
@@ -3089,162 +2715,81 @@ settings so that you must void saved transactions instead of deleting them. See
 
 #### Posting overview
 
->   Posting makes transactions part of your company’s permanent records. Until
->   they’re posted, transactions can be modified, voided, or deleted. Once
->   they’ve been posted, they can’t be altered, though you can enter correcting
->   transactions.
+>   Posting makes transactions part of your company’s permanent records. Until they’re posted, transactions can be modified, voided, or deleted. Once they’ve been posted, they can’t be altered, though you can enter correcting transactions.
 
->   You’ll notice the effects of posting on most reports, which display updated
->   amounts every time transactions related to the reports are posted.
+>   You’ll notice the effects of posting on most reports, which display updated amounts every time transactions related to the reports are posted.
 
->   You can post to the most recent historical year or to any open year in
->   General Ledger. Historical years include years that have been closed using
->   the fiscal yearend closing routine, and also years for which the Historical
->   Year option has been marked in the Fiscal Periods Setup window. See the
->   System Setup instructions (Help \>\> Contents \>\> select Setting Up the
->   System) for more information about using the Fiscal Periods Setup window.
+>   You can post to the most recent historical year or to any open year in General Ledger. Historical years include years that have been closed using the fiscal yearend closing routine, and also years for which the Historical Year option has been marked in the Fiscal Periods Setup window. See the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System) for more information about using the Fiscal Periods Setup window.
 
->   Posting to history is valuable if, for example, an audit shows discrepancies
->   in the previous year’s account balance and you must make an adjusting entry.
->   When you post to a historical year, the system updates the account balances
->   in history and adds a record for each line item in each transaction. The
->   beginning balance of the retained earnings account or the beginning balance
->   brought forward account also is adjusted, depending on the type of accounts
->   (profit and loss, or balance sheet) affected. See *Posting to a historical
->   year* for more information.
+>   Posting to history is valuable if, for example, an audit shows discrepancies in the previous year’s account balance and you must make an adjusting entry. When you post to a historical year, the system updates the account balances in history and adds a record for each line item in each transaction. The beginning balance of the retained earnings account or the beginning balance brought forward account also is adjusted, depending on the type of accounts (profit and loss, or balance sheet) affected. See *Posting to a historical year* for more information.
 
->   Posting journals are printed when you post a transaction or a batch and
->   provide a record and an audit trail for the transactions. When you close the
->   transaction entry window after posting transactions individually, the
->   posting journal is printed for all transactions that have been posted.
->   Depending on the setup, the posting journal might be printed automatically
->   when you post batches. For more information about posting setup, see the
->   System Setup instructions (Help \>\> Contents \>\> select Setting Up the
->   System).
+>   Posting journals are printed when you post a transaction or a batch and provide a record and an audit trail for the transactions. When you close the transaction entry window after posting transactions individually, the posting journal is printed for all transactions that have been posted.
+>   Depending on the setup, the posting journal might be printed automatically when you post batches. For more information about posting setup, see the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
->   You can use two types of posting: transaction-level posting and batch
->   posting.
+>   You can use two types of posting: transaction-level posting and batch posting.
 
 #### Transaction-level posting
 
->   If you use transaction-level posting, you must post each transaction as it
->   is entered. You also can use transaction-level posting for a transaction
->   that is part of a batch in the Transaction Entry window (Transaction \>\>
->   Financial \>\> General) by clearing the Batch ID and choosing Post.
+>   If you use transaction-level posting, you must post each transaction as it is entered. You also can use transaction-level posting for a transaction that is part of a batch in the Transaction Entry window (Transaction \>\> Financial \>\> General) by clearing the Batch ID and choosing Post.
 
->   Transactions can be posted individually in the Transaction Entry or Clearing
->   Entry windows. Quick journal entries can be posted directly from the Quick
->   Journal Entry window. In either case, the posting date is the same as the
->   transaction date. All transactions posted individually in a single data
->   entry session have the same audit trail code.
+>   Transactions can be posted individually in the Transaction Entry or Clearing Entry windows. Quick journal entries can be posted directly from the Quick Journal Entry window. In either case, the posting date is the same as the transaction date. All transactions posted individually in a single data entry session have the same audit trail code.
 
->   The individual transaction posting method is useful if a transaction won’t
->   be repeated. For example, you might need to enter an adjusting entry at
->   month’s end to assign revenues or expenses to the period in which they were
->   either earned or incurred. Also, individual transaction entry would be
->   useful if you need to make an adjusting entry to correct a previous error
->   made in recording a transaction.
+>   The individual transaction posting method is useful if a transaction won’t be repeated. For example, you might need to enter an adjusting entry at month’s end to assign revenues or expenses to the period in which they were either earned or incurred. Also, individual transaction entry would be useful if you need to make an adjusting entry to correct a previous error made in recording a transaction.
 
 #### Posting an individual batch
 
->   Use batch posting to post one batch at a time from the Batch Entry window.
->   With batch posting, you can post batches individually or in groups. You can
->   use these methods in any combination to update your records in a timely and
->   efficient manner. If you are using Workflow, the batch must be approved
->   before you can post the batch. You also can post batches that don’t need
->   approval.
+>   Use batch posting to post one batch at a time from the Batch Entry window. With batch posting, you can post batches individually or in groups. You can use these methods in any combination to update your records in a timely and efficient manner. If you are using Workflow, the batch must be approved before you can post the batch. You also can post batches that don’t need approval.
 
->   *We recommend that you back up company data before posting. If power
->   fluctuates or another problem occurs, you can restore your data and begin
->   the posting process again. For more information about making backups, refer
->   to the System Administrator’s Guide (Help \>\> Contents \>\> select System
->   Administration).*
+>   *We recommend that you back up company data before posting. If power fluctuates or another problem occurs, you can restore your data and begin the posting process again. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
 
 >   **To post an individual batch:**
 
 1.  Open the Batch Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Batches)
 
 ![](media/f2bcd17f9cef386fe894a14ac15a74ba.jpg)
 
-1.  Enter or select a batch to be posted.
+2.  Enter or select a batch to be posted.
 
-2.  Choose File \>\> Print or the printer icon button to verify the transactions
-    included in the batch with an edit list.
+3.  Choose File \>\> Print or the printer icon button to verify the transactions included in the batch with an edit list.
 
->   *If the Allow Negative Debits and Credits in General Ledger option is marked
->   in the Company Setup Options window, negative transaction amounts or batch
->   totals might be included.*
+>   *If the Allow Negative Debits and Credits in General Ledger option is marked in the Company Setup Options window, negative transaction amounts or batch totals might be included.*
 
-1.  Check your selections in the Batch Entry window for accuracy, including
-    batch requirements and approval options.
+4.  Check your selections in the Batch Entry window for accuracy, including batch requirements and approval options.
 
-2.  Choose Post to post the batch.
+5.  Choose Post to post the batch.
 
 #### Posting batches using the action pane
 
->   You can view, print an edit list, mark, and post one or more batches using
->   the
-
->   General Ledger Batches list view and the buttons in the action pane. If you
->   are using Workflow, the batch must be approved before you can post the
->   batch. You also can post batches that don’t need approval.
+>   You can view, print an edit list, mark, and post one or more batches using the General Ledger Batches list view and the buttons in the action pane. If you are using Workflow, the batch must be approved before you can post the batch. You also can post batches that don’t need approval.
 
 >   **To post batches using the action pane:**
 
-1.  Open the General Ledger Batches list view. From the navigation pane, choose
-    the Financial button \>\> General Ledger Batches.
+1.  Open the General Ledger Batches list view. From the navigation pane, choose the Financial button \>\> General Ledger Batches.
 
-2.  Print an edit list for each batch to post and review the transactions in
-    that batch. To print the edit list, in the Reports group, choose \>\> Print
-    Edit List.
+2.  Print an edit list for each batch to post and review the transactions in that batch. To print the edit list, in the Reports group, choose \>\> Print Edit List.
 
-3.  Review the transactions, make any changes that are necessary and print the
-    edit list again to verify them. For more information, see *Chapter 23,
-    “Correcting transactions.”*
+3.  Review the transactions, make any changes that are necessary and print the edit list again to verify them. For more information, see *Chapter 23, “Correcting transactions.”*
 
 4.  Save your changes and close the Transaction Entry and Batch Entry windows.
 
-5.  Make a backup of your company’s data. See the System Administrator’s Guide
-    (Help \>\> Contents \>\> select System Administration) for information about
-    making backups.
+5.  Make a backup of your company’s data. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for information about making backups.
 
 6.  In the General Ledger Batches list, mark the batches to post.
 
 7.  Choose to post the selected batches.
 
-8.  Print posting journals and distribution breakdown registers. Using the
-    Posting Setup window, you can select posting journals to print according to
-    your preferences.
+8.  Print posting journals and distribution breakdown registers. Using the Posting Setup window, you can select posting journals to print according to your preferences.
 
 #### Posting to a historical year
 
->   You can post transactions to the most recent historical year. Historical
->   years include years that have been closed using the fiscal year-end closing
->   routine, and also years for which the Historical Year option has been marked
->   in the Fiscal Periods Setup window. See the System Setup instructions (Help
->   \>\> Contents \>\> select Setting Up the System) for more information about
->   using the Fiscal Periods Setup window.
+>   You can post transactions to the most recent historical year. Historical years include years that have been closed using the fiscal year-end closing routine, and also years for which the Historical Year option has been marked in the Fiscal Periods Setup window. See the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System) for more information about using the Fiscal Periods Setup window.
 
->   Posting to an historical year is useful if you have to enter audit
->   adjustments after you have closed the year. When you post an adjustment to a
->   closed year, the beginning balances of the affected accounts for the next
->   year are adjusted automatically and you will see both entries on the posting
->   journal.
+>   Posting to an historical year is useful if you have to enter audit adjustments after you have closed the year. When you post an adjustment to a closed year, the beginning balances of the affected accounts for the next year are adjusted automatically and you will see both entries on the posting journal.
 
->   You must have Allow Posting to History marked in the General Ledger Setup
->   window if you want to post to a history year. Also, the period can’t be
->   marked as closed in the Fiscal Period Setup window.
+>   You must have Allow Posting to History marked in the General Ledger Setup window if you want to post to a history year. Also, the period can’t be marked as closed in the Fiscal Period Setup window.
 
->   For example, assume you have closed fiscal year 2003. In fiscal year 2004,
->   you determine that an adjustment needs to be made to fiscal year 2003. When
->   you post the adjustment with a posting date that falls in fiscal year 2003,
->   you will see two transactions on the posting journal, one to adjust the
->   account activity for the historical year and the other to adjust the
->   beginning balances for the open year. For example, if the transaction
->   affected two balance sheet accounts, the posting journal would look like
->   this:
+>   For example, assume you have closed fiscal year 2003. In fiscal year 2004, you determine that an adjustment needs to be made to fiscal year 2003. When you post the adjustment with a posting date that falls in fiscal year 2003, you will see two transactions on the posting journal, one to adjust the account activity for the historical year and the other to adjust the beginning balances for the open year. For example, if the transaction affected two balance sheet accounts, the posting journal would look like this:
 
 | **Account**      | **Date** | **Debit** | **Credit** |
 |------------------|----------|-----------|------------|
@@ -3253,8 +2798,7 @@ settings so that you must void saved transactions instead of deleting them. See
 | Accounts Payable | 12/31/03 | 100       |            |
 | Cash             | 12/31/03 |           | 100        |
 
->   If the adjustment affected a balance sheet account and an income statement
->   account, the posting journal would look like this:
+>   If the adjustment affected a balance sheet account and an income statement account, the posting journal would look like this:
 
 | **Account**       | **Date** | **Debit** | **Credit** |
 |-------------------|----------|-----------|------------|
@@ -3263,17 +2807,11 @@ settings so that you must void saved transactions instead of deleting them. See
 | Retained Earnings | 12/31/03 | 100       |            |
 | Accounts Payable  | 12/31/03 |           | 100        |
 
->   The first transaction adjusts the account balances for the fiscal year 2003.
->   The second transaction adjusts the beginning balance that was set up for
->   fiscal year 2004 when fiscal year 2003 was closed. Thus, you don’t need to
->   close fiscal year 2003 again to roll forward the changes; the beginning
->   balances are updated automatically.
+>   The first transaction adjusts the account balances for the fiscal year 2003. The second transaction adjusts the beginning balance that was set up for fiscal year 2004 when fiscal year 2003 was closed. Thus, you don’t need to close fiscal year 2003 again to roll forward the changes; the beginning balances are updated automatically.
 
 **Chapter 23: Correcting transactions**
 
->   Transaction errors can and should be corrected to keep your accounting data
->   accurate. The way you correct the error depends on whether or not the
->   transaction has been posted.
+>   Transaction errors can and should be corrected to keep your accounting data accurate. The way you correct the error depends on whether or not the transaction has been posted.
 
 >   This information is divided into the following sections:
 
@@ -3287,39 +2825,26 @@ settings so that you must void saved transactions instead of deleting them. See
 
 #### Correcting an unposted transaction
 
->   If you’ve entered but haven’t posted an incorrect transaction, the error
->   should appear on the transaction edit list. If the error involves an
->   unbalanced transaction, you’ll receive an alert message that the transaction
->   can’t be posted because it contains unequal debit and credit entries.
+>   If you’ve entered but haven’t posted an incorrect transaction, the error should appear on the transaction edit list. If the error involves an unbalanced transaction, you’ll receive an alert message that the transaction can’t be posted because it contains unequal debit and credit entries.
 
 >   **To correct an unposted transaction:**
 
 1.  Open the window in which the transaction was originally entered.
-
 >   (Transaction Entry, Clearing Entry, or Quick Journal Entry)
 
-1.  Enter or select the journal entry number assigned to the erroneous
-    transaction. This number should be listed on the transaction edit list, next
-    to or above (depending on the report layout) the erroneous transaction.
+2.  Enter or select the journal entry number assigned to the erroneous transaction. This number should be listed on the transaction edit list, next to or above (depending on the report layout) the erroneous transaction.
 
-2.  Edit the incorrect information.
+3.  Edit the incorrect information.
 
-3.  To insert a new distribution row, choose Edit \>\> Insert Row. To delete a
-    row, select the row to delete and choose Edit \>\> Delete Row.
+4.  To insert a new distribution row, choose Edit \>\> Insert Row. To delete a row, select the row to delete and choose Edit \>\> Delete Row.
 
-4.  Choose File \>\> Print or the printer icon button to print a transaction
-    edit list to check your work.
+5.  Choose File \>\> Print or the printer icon button to print a transaction edit list to check your work.
 
-5.  Save and post the corrected transaction.
+6.  Save and post the corrected transaction.
 
 #### Backing out a posted transaction
 
->   You can use the Transaction Entry window to back out a posted transaction.
->   When you back out a transaction, a new transaction is created, and the
->   debits and credits of the original transaction are reversed when you post
->   the new transaction. Any tax distributions and multidimensional analysis
->   information also will be reversed. The source document code, currency ID,
->   and transaction date are copied from the original transaction.
+>   You can use the Transaction Entry window to back out a posted transaction. When you back out a transaction, a new transaction is created, and the debits and credits of the original transaction are reversed when you post the new transaction. Any tax distributions and multidimensional analysis information also will be reversed. The source document code, currency ID, and transaction date are copied from the original transaction.
 
 >   You can back out the following types of posted transactions.
 
@@ -3331,8 +2856,7 @@ settings so that you must void saved transactions instead of deleting them. See
 
 -   Quick journal
 
->   You can back out transactions that were posted during an open year or the
->   most recent historical year.
+>   You can back out transactions that were posted during an open year or the most recent historical year.
 
 >   You can’t back out the following types of transactions.
 
@@ -3346,64 +2870,40 @@ settings so that you must void saved transactions instead of deleting them. See
 
 -   Clearing entries that use multiple currencies
 
--   Clearing entries that use a single currency other than the functional
-    currency
+-   Clearing entries that use a single currency other than the functional currency
 
 -   Transactions that already have been backed out
 
 -   Transactions that were entered to back out a previous transaction
 
->   When you back out a transaction, you also have the option to create a new,
->   correcting transaction using the debits and credits of the original
->   transaction. See *Backing out and correcting a posted transaction* for more
->   information.
+>   When you back out a transaction, you also have the option to create a new, correcting transaction using the debits and credits of the original transaction. See *Backing out and correcting a posted transaction* for more information.
 
->   You can back out transactions originating in other modules if you marked the
->   Voiding/Correcting of Subsidiary Transactions option in the General Ledger
->   Setup window. You also can back out intercompany transactions if you marked
->   the Back Out of Intercompany Transactions option in the window. See *Setting
->   up default entries and preferences* for more information.
+>   You can back out transactions originating in other modules if you marked the Voiding/Correcting of Subsidiary Transactions option in the General Ledger Setup window. You also can back out intercompany transactions if you marked the Back Out of Intercompany Transactions option in the window. See *Setting up default entries and preferences* for more information.
 
 >   **To back out a posted transaction:**
 
 1.  Open the Transaction Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> General)
 
-1.  Choose Correct. The Correct Journal Entry window will open.
+2.  Choose Correct. The Correct Journal Entry window will open.
 
 ![](media/4ea1da78bf2addb732cb062f0cd76db5.jpg)
 
-1.  In the Correct Journal Entry window, select the Back Out a Journal Entry
-    option.
+3.  In the Correct Journal Entry window, select the Back Out a Journal Entry option.
 
-2.  Select the year that the transaction you’re backing out was posted. Select
-    the journal entry number for the transaction.
+4.  Select the year that the transaction you’re backing out was posted. Select the journal entry number for the transaction.
 
-3.  Choose OK. The Correct Journal Entry window will close and the new
-    transaction will appear in the Transaction Entry window. The debits and
-    credits from the original transaction will be reversed when you post the new
-    transaction.
+5.  Choose OK. The Correct Journal Entry window will close and the new transaction will appear in the Transaction Entry window. The debits and credits from the original transaction will be reversed when you post the new transaction.
 
-4.  Choose Post to post the transaction or enter or select a batch ID number and
-    choose Save to save the transaction in a batch.
+6.  Choose Post to post the transaction or enter or select a batch ID number and choose Save to save the transaction in a batch.
 
-5.  Close the window.
+7.  Close the window.
 
 #### Backing out and correcting a posted transaction
 
->   You can use the Transaction Entry window to back out and correct a posted
->   transaction. When you back out and correct a transaction, a new transaction
->   is created, and the debits and credits of the original transaction are
->   reversed when you post the new transaction. Any tax distributions and
->   multidimensional analysis information also will be reversed. The source
->   document code, currency ID, and transaction date are copied from the
->   original transaction.
+>   You can use the Transaction Entry window to back out and correct a posted transaction. When you back out and correct a transaction, a new transaction is created, and the debits and credits of the original transaction are reversed when you post the new transaction. Any tax distributions and multidimensional analysis information also will be reversed. The source document code, currency ID, and transaction date are copied from the original transaction.
 
->   You also create a new, correcting transaction using the debits and credits
->   of the original transaction. The source document code, tax information,
->   currency ID, transaction date, and multidimensional analysis information
->   also are copied from the original transaction.
+>   You also create a new, correcting transaction using the debits and credits of the original transaction. The source document code, tax information, currency ID, transaction date, and multidimensional analysis information also are copied from the original transaction.
 
 >   You can back out the following types of posted transactions.
 
@@ -3415,8 +2915,7 @@ settings so that you must void saved transactions instead of deleting them. See
 
 -   Quick journal
 
->   You can back out transactions that were posted during an open year or the
->   most recent historical year.
+>   You can back out transactions that were posted during an open year or the most recent historical year.
 
 >   You can’t back out the following types of transactions.
 
@@ -3430,63 +2929,42 @@ settings so that you must void saved transactions instead of deleting them. See
 
 -   Clearing entries that use multiple currencies
 
--   Clearing entries that use a single currency other than the functional
-    currency
+-   Clearing entries that use a single currency other than the functional currency
 
 -   Transactions that already have been backed out
 
 -   Transactions that were entered to back out a previous transaction
 
->   You can back out a transaction without creating a new, correcting
->   transaction. See *Backing out a posted transaction* for more information.
+>   You can back out a transaction without creating a new, correcting transaction. See *Backing out a posted transaction* for more information.
 
->   You can back out and correct transactions originating in other modules if
->   you marked the Voiding/Correcting of Subsidiary Transactions option in the
->   General Ledger Setup window. You also can back out intercompany transactions
->   if you marked the Back Out of Intercompany Transactions option in the
->   window. See *Setting up default entries and preferences* for more
->   information.
+>   You can back out and correct transactions originating in other modules if you marked the Voiding/Correcting of Subsidiary Transactions option in the General Ledger Setup window. You also can back out intercompany transactions if you marked the Back Out of Intercompany Transactions option in the window. See *Setting up default entries and preferences* for more information.
 
 >   **To back out and correct a posted transaction:**
 
 1.  Open the Transaction Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> General)
 
-1.  Choose Correct. The Correct Journal Entry window will open.
+2.  Choose Correct. The Correct Journal Entry window will open.
 
 ![](media/68630c4acd8d8359222fca7015731c9b.jpg)
 
-1.  In the Correct Journal Entry window, select the Back Out a Journal Entry and
-    Create a Correcting Entry option.
+3.  In the Correct Journal Entry window, select the Back Out a Journal Entry and Create a Correcting Entry option.
 
-2.  Select the year that the transaction you’re backing out and correcting was
-    posted. Select the journal entry number for the transaction.
+4.  Select the year that the transaction you’re backing out and correcting was posted. Select the journal entry number for the transaction.
 
-3.  Choose OK. The Correct Journal Entry window will close, and the new
-    transaction will appear in the Transaction Entry window. The debits and
-    credits from the original transaction will be reversed when you post the new
-    transaction.
+5.  Choose OK. The Correct Journal Entry window will close, and the new transaction will appear in the Transaction Entry window. The debits and credits from the original transaction will be reversed when you post the new transaction.
 
-4.  Choose Post to post the transaction or enter or select a batch ID number and
-    choose Save to save the transaction in a batch.
+6.  Choose Post to post the transaction or enter or select a batch ID number and choose Save to save the transaction in a batch.
 
-5.  The correcting transaction will appear in the Transaction Entry window. The
-    transaction will include the debits and credits of the original transaction.
-    Modify the transaction, as necessary.
+7.  The correcting transaction will appear in the Transaction Entry window. The transaction will include the debits and credits of the original transaction. Modify the transaction, as necessary.
 
-6.  Choose Post to post the correcting transaction or enter or select a batch ID
-    number and choose Save to save the transaction in a batch.
+8.  Choose Post to post the correcting transaction or enter or select a batch ID number and choose Save to save the transaction in a batch.
 
-7.  Close the window.
+9.  Close the window.
 
 #### Copying a posted transaction
 
->   You can use the Transaction Entry window to copy a posted transaction. When
->   you copy a transaction, you use the debits and credits of the original
->   transaction to create a new transaction. The source document code, tax
->   information, currency ID, transaction date, and multidimensional analysis
->   information also are copied from the original transaction.
+>   You can use the Transaction Entry window to copy a posted transaction. When you copy a transaction, you use the debits and credits of the original transaction to create a new transaction. The source document code, tax information, currency ID, transaction date, and multidimensional analysis information also are copied from the original transaction.
 
 >   You can copy the following types of posted transactions.
 
@@ -3498,8 +2976,7 @@ settings so that you must void saved transactions instead of deleting them. See
 
 -   Quick journal
 
->   You can copy transactions that were posted during an open year or the most
->   recent historical year.
+>   You can copy transactions that were posted during an open year or the most recent historical year.
 
 >   You can’t copy the following types of transactions.
 
@@ -3513,44 +2990,32 @@ settings so that you must void saved transactions instead of deleting them. See
 
 -   Clearing entries that use multiple currencies
 
--   Clearing entries that use a single currency other than the functional
-    currency
+-   Clearing entries that use a single currency other than the functional currency
 
 >   **To copy a posted transaction:**
 
 1.  Open the Transaction Entry window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> General)
 
-1.  Choose Copy. The Copy Journal Entry window will open.
+2.  Choose Copy. The Copy Journal Entry window will open.
 
 ![](media/a6ad2e6edd3916467aa7a2108df12235.jpg)
 
-1.  In the Copy Journal Entry window, select the year that the transaction
-    you’re copying was posted.
+3.  In the Copy Journal Entry window, select the year that the transaction you’re copying was posted.
 
-2.  Select the journal entry number for the transaction that you’re copying.
+4.  Select the journal entry number for the transaction that you’re copying.
 
-3.  Choose OK. The Copy Journal Entry window will close. The new transaction
-    will appear in the Transaction Entry window. The transaction will include
-    the debits and credits of the original transaction. Modify the transaction,
-    as necessary.
+5.  Choose OK. The Copy Journal Entry window will close. The new transaction will appear in the Transaction Entry window. The transaction will include the debits and credits of the original transaction. Modify the transaction, as necessary.
 
-4.  Choose Post to post the transaction or enter or select a batch ID number and
-    choose Save to save the transaction in a batch.
+6.  Choose Post to post the transaction or enter or select a batch ID number and choose Save to save the transaction in a batch.
 
-5.  Close the window.
+7.  Close the window.
 
 **Chapter 24: Matching transactions**
 
->   Transaction matching is the process of linking related transaction
->   distributions from different journal entries. For example, you can link
->   period-end adjusting entries to the original transactions or link a set of
->   transactions associated with a project.
+>   Transaction matching is the process of linking related transaction distributions from different journal entries. For example, you can link period-end adjusting entries to the original transactions or link a set of transactions associated with a project.
 
->   After you have created links, you can also create groups of linked
->   transaction distributions. For example, you could create a group of the
->   links for period-end adjustments to aid in the audit process.
+>   After you have created links, you can also create groups of linked transaction distributions. For example, you could create a group of the links for period-end adjustments to aid in the audit process.
 
 >   This information includes the following sections:
 
@@ -3562,125 +3027,82 @@ settings so that you must void saved transactions instead of deleting them. See
 
 #### Linking transaction distributions
 
->   Use the General Ledger Transaction Link Maintenance window to link
->   distributions from multiple posted transactions. Depending on how you set up
->   transaction matching, you can link distributions to a single account or
->   multiple accounts. Also, linked distributions may be required to balance
->   (that is, total debits must equal total credits) before the link can be
->   saved. For more information about transaction matching setup options, see
->   *Setting up transaction matching*.
+>   Use the General Ledger Transaction Link Maintenance window to link distributions from multiple posted transactions. Depending on how you set up transaction matching, you can link distributions to a single account or multiple accounts. Also, linked distributions may be required to balance (that is, total debits must equal total credits) before the link can be saved. For more information about transaction matching setup options, see *Setting up transaction matching*.
 
 >   **To link transaction distributions:**
 
 1.  Open the General Ledger Transaction Link Maintenance window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Transaction Matching)
 
 ![](media/657a8a2eeab7ffe1a7f8b663f621d6ea.jpg)
 
-1.  Enter a description for the distributions you want to link. For example, if
-    you’re linking some month-end adjusting entries to the original
-    transactions, you could enter “January adjusting entries.”
+2.  Enter a description for the distributions you want to link. For example, if you’re linking some month-end adjusting entries to the original transactions, you could enter “January adjusting entries.”
 
-2.  Accept the default link date or enter the date you want to use for this
-    link. The date you enter will be used to determine whether to archive a
-    link. For more information, see *Archiving matched transactions*.
+3.  Accept the default link date or enter the date you want to use for this link. The date you enter will be used to determine whether to archive a link. For more information, see *Archiving matched transactions*.
 
-3.  Enter or select an account that has distributions you want to include in
-    this link, then select the year for the transactions you want to include.
-    All transactions posted to this account and year will appear in the
-    scrolling window.
+4.  Enter or select an account that has distributions you want to include in this link, then select the year for the transactions you want to include. All transactions posted to this account and year will appear in the scrolling window.
 
-4.  If necessary, enter range restrictions to reduce the number of transactions
-    displayed and choose Redisplay.
+5.  If necessary, enter range restrictions to reduce the number of transactions displayed and choose Redisplay.
 
->   You can also choose whether to display debit or credit distributions or
->   both, and whether to display only those distributions that have not
->   previously been included in other links.
+>   You can also choose whether to display debit or credit distributions or both, and whether to display only those distributions that have not previously been included in other links.
 
-1.  Mark the link option for each distribution you want to include. As you mark
-    distributions, the difference (that is, the debit or credit balance) and the
-    number of distributions included will be updated.
+6.  Mark the link option for each distribution you want to include. As you mark distributions, the difference (that is, the debit or credit balance) and the number of distributions included will be updated.
 
->   If you want to include distributions to a different account, enter that
->   account and any range restrictions. The transactions posted to that account
->   will appear, and you can mark the distributions.
+>   If you want to include distributions to a different account, enter that account and any range restrictions. The transactions posted to that account will appear, and you can mark the distributions.
 
-1.  Choose Save to save the link.
+7.  Choose Save to save the link.
 
 #### Modifying transaction distribution links
 
-Use the General Ledger Transaction Link Maintenance window to modify transaction
-distribution links. You can link additional distributions or remove distribution
-links. Depending on how you set up transaction matching you can add links to
-distributions to additional accounts.
+Use the General Ledger Transaction Link Maintenance window to modify transaction distribution links. You can link additional distributions or remove distribution links. Depending on how you set up transaction matching you can add links to distributions to additional accounts.
 
 >   **To modify transaction distribution links:**
 
 1.  Open the General Ledger Transaction Link Maintenance window.
-
 >   (Financial \>\> Transactions \>\> Financial \>\> Transaction Matching)
 
-1.  Enter or select the link number you want to modify.
+2.  Enter or select the link number you want to modify.
 
-2.  Make the necessary changes and choose Save.
+3.  Make the necessary changes and choose Save.
 
 #### Creating a matched transaction group
 
-Use the Transaction Matching Group Maintenance window to create and modify
-groups of transaction distribution links. For example, you could create a group
-of the links of month-end adjusting entries.
+Use the Transaction Matching Group Maintenance window to create and modify groups of transaction distribution links. For example, you could create a group of the links of month-end adjusting entries.
 
 >   **To create a matched transaction group:**
 
 1.  Open the Transaction Matching Group Maintenance window.
-
->   (Financial \>\> Transactions \>\> Financial \>\> Transaction Matching
->   Groups)
+>   (Financial \>\> Transactions \>\> Financial \>\> Transaction Matching Groups)
 
 ![](media/2a6c6902927f3b60dd99e9d7302a69c1.jpg)
 
-1.  Enter a name for the group. A message will appear asking if you want to
-    create this group. Choose Yes.
+2.  Enter a name for the group. A message will appear asking if you want to create this group. Choose Yes.
 
-2.  Mark the links you want to include in this group. You can include links that
-    have been included in other groups, as well as archived links.
+3.  Mark the links you want to include in this group. You can include links that have been included in other groups, as well as archived links.
 
-3.  Choose Save.
+4.  Choose Save.
 
 **Part 4: Inquiries**
 
->   You can use inquiries to display and analyze account and transaction
->   information.
+>   You can use inquiries to display and analyze account and transaction  information.
 
->   In General Ledger, you can use inquiries to quickly view both current and
->   historical account, budget, and transaction information. You can review
->   information in summary or detailed form, with the option of printing the
->   information in the window by choosing File \>\> Print.
+>   In General Ledger, you can use inquiries to quickly view both current and  historical account, budget, and transaction information. You can review information in summary or detailed form, with the option of printing the information in the window by choosing File \>\> Print.
 
 >   The following information is discussed:
 
--   *Chapter 25, “Account inquiries,”* describes how to view account activity
-    for open or historical years.
+-   *Chapter 25, “Account inquiries,”* describes how to view account activity for open or historical years.
 
--   *Chapter 26, “Transaction inquiries,”* describes how to view posted
-    transactions for open periods or historical years.
+-   *Chapter 26, “Transaction inquiries,”* describes how to view posted transactions for open periods or historical years.
 
--   *Chapter 27, “Transaction matching inquiries,”* describes how to view
-    information about linked transaction distributions.
+-   *Chapter 27, “Transaction matching inquiries,”* describes how to view information about linked transaction distributions.
 
--   *Chapter 28, “Budget inquiries,”* describes how to view budget summary
-    information so you can compare budget amounts to actual amounts for a
-    selected account and budget.
+-   *Chapter 28, “Budget inquiries,”* describes how to view budget summary information so you can compare budget amounts to actual amounts for a selected account and budget.
 
--   *Chapter 29, “Account rollup inquiries,”* describes how to use account
-    rollup inquiries to create segment-based inquiries for any range of account
-    segments.
+-   *Chapter 29, “Account rollup inquiries,”* describes how to use account rollup inquiries to create segment-based inquiries for any range of account segments.
 
 **Chapter 25: Account inquiries**
 
->   You can view account activity for open or historical years. In addition, you
->   can analyze net changes to accounts for open periods.
+>   You can view account activity for open or historical years. In addition, you can analyze net changes to accounts for open periods.
 
 >   This information is divided into the following sections:
 
@@ -3696,14 +3118,10 @@ of the links of month-end adjusting entries.
 
 #### Viewing multiple currencies
 
->   If you are using Multicurrency Management, you can choose whether to view
->   multicurrency amounts in the originating, functional, or reporting currency.
->   Choose View \>\> Currency \>\> Functional, Originating, or Reporting in an
->   inquiry window. The option will be saved on a per user, per window basis.
+>   If you are using Multicurrency Management, you can choose whether to view multicurrency amounts in the originating, functional, or reporting currency.
+>   Choose View \>\> Currency \>\> Functional, Originating, or Reporting in an inquiry window. The option will be saved on a per user, per window basis.
 
->   You also can use the currency list button in windows that support changing
->   the currency view. The View menu and currency list button are available in
->   the following inquiry windows:
+>   You also can use the currency list button in windows that support changing the currency view. The View menu and currency list button are available in the following inquiry windows:
 
 -   Summary Inquiry
 
@@ -3715,138 +3133,83 @@ of the links of month-end adjusting entries.
 
 -   History Detail Inquiry
 
->   *The originating currency view isn’t available in the Summary Inquiry window
->   or History Summary Inquiry window because the amounts might be for multiple
->   currencies.*
+>   *The originating currency view isn’t available in the Summary Inquiry window  or History Summary Inquiry window because the amounts might be for multiple currencies.*
 
->   The first time you open each of these windows after registering
->   Multicurrency Management, all the transactions will be displayed in the
->   originating currency. If you change the currency view, it will be the
->   default view the next time you open that window.
+>   The first time you open each of these windows after registering Multicurrency Management, all the transactions will be displayed in the originating currency. If you change the currency view, it will be the default view the next time you open that window.
 
 #### About reporting currency
 
->   A reporting currency is used to convert functional or originating currency
->   amounts to another currency on inquiries and reports. For example, if the
->   U.S. dollar is the functional currency for a company, you can set up the
->   euro as your reporting currency to view an inquiry window with currency
->   amounts displayed in the euro currency.
+>   A reporting currency is used to convert functional or originating currency amounts to another currency on inquiries and reports. For example, if the U.S. dollar is the functional currency for a company, you can set up the euro as your reporting currency to view an inquiry window with currency amounts displayed in the euro currency.
 
->   When you set up the reporting currency in Multicurrency Management, you
->   enter a default exchange rate and rate calculation method. Depending on how
->   your system is set up, you might be able to override the default reporting
->   currency exchange rate or rate calculation method on inquiries and reports.
->   To change the default reporting currency exchange rate, choose View \>\>
->   Currency \>\> Modify Reporting Rate to open the Modify Reporting Rate
->   window.
+>   When you set up the reporting currency in Multicurrency Management, you enter a default exchange rate and rate calculation method. Depending on how your system is set up, you might be able to override the default reporting currency exchange rate or rate calculation method on inquiries and reports.
+>   To change the default reporting currency exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate to open the Modify Reporting Rate window.
 
->   For more information about the reporting currency, see the Multicurrency
->   Management documentation.
+>   For more information about the reporting currency, see the Multicurrency Management documentation.
 
 #### Viewing a summarized account balance for an open fiscal year
 
->   Use the Summary Inquiry window to view account balances in a net change and
->   period balance format. The window also displays the account total (the sum
->   of the beginning balance and all period balances).
+>   Use the Summary Inquiry window to view account balances in a net change and period balance format. The window also displays the account total (the sum of the beginning balance and all period balances).
 
->   The Summary Inquiry window can be helpful if you want to verify the amounts
->   for an open year. To do so, print a detailed trial balance and compare the
->   detail on the report with the summary amount displayed in this window. If
->   the amounts differ, you should reconcile the year. During the reconcile
->   process, the summary balance will be adjusted to match the transaction
->   detail. For more information about reconciling, see *Reconciling financial
->   data*.
+>   The Summary Inquiry window can be helpful if you want to verify the amounts for an open year. To do so, print a detailed trial balance and compare the detail on the report with the summary amount displayed in this window. If the amounts differ, you should reconcile the year. During the reconcile process, the summary balance will be adjusted to match the transaction detail. For more information about reconciling, see *Reconciling financial data*.
 
 >   **To view a summarized account balance for an open fiscal year:**
 
 1.  Open the Summary Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Summary)
 
 ![](media/aa37f8aeec90cb59eb7f306e43d2ae5b.jpg)
 
-1.  Enter or select an account.
+2.  Enter or select an account.
 
-2.  Enter or select a year.
+3.  Enter or select a year.
 
->   *You can click the Account field link to open the Account Maintenance
->   window, where you can view account details. You can click the Debit, Credit,
->   Net Change, or Period Balance field links to open the Detail Inquiry window
->   to view transactions posted to specific accounts in open fiscal years.*
+>   *You can click the Account field link to open the Account Maintenance window, where you can view account details. You can click the Debit, Credit, Net Change, or Period Balance field links to open the Detail Inquiry window to view transactions posted to specific accounts in open fiscal years.*
 
-1.  You can choose Currency to open the Multicurrency Summary Inquiry window,
-    where you can view summarized account balances and multicurrency
-    information.
+4.  You can choose Currency to open the Multicurrency Summary Inquiry window, where you can view summarized account balances and multicurrency information.
 
-2.  You can print a Summary Inquiry Report by choosing File \>\> Print or the
-    printer icon button while the information you'd like to print is displayed.
+5.  You can print a Summary Inquiry Report by choosing File \>\> Print or the printer icon button while the information you'd like to print is displayed.
 
 #### Viewing a summarized account balance for a historical year
 
->   Use the History Summary Inquiry window to view summarized account balances
->   in a net change and period-by-period format for a historical fiscal year.
->   This window is similar to the Summary Inquiry window, except that it shows
->   historical amounts.
+>   Use the History Summary Inquiry window to view summarized account balances in a net change and period-by-period format for a historical fiscal year. This window is similar to the Summary Inquiry window, except that it shows historical amounts.
 
->   To verify the amounts for a historical year, print a detailed historical
->   trial balance and compare the detail on the report with the summary amount
->   displayed in this window. If the amounts differ, you should reconcile the
->   year. During the reconcile process, the summary balance will be adjusted to
->   match the transaction detail. For more information about reconciling, see
->   *Reconciling financial data*.
+>   To verify the amounts for a historical year, print a detailed historical trial balance and compare the detail on the report with the summary amount displayed in this window. If the amounts differ, you should reconcile the year. During the reconcile process, the summary balance will be adjusted to match the transaction detail. For more information about reconciling, see *Reconciling financial data*.
 
 >   **To view a summarized account balance for a historical year:**
 
 1.  Open the History Summary Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> History Summary)
 
 ![](media/f07fa33b87a11bd953d103ba78e917ff.jpg)
 
-1.  Enter or select an account, then select a year.
+2.  Enter or select an account, then select a year.
 
->   Period-by-period balances for the specified year will be displayed, along
->   with the beginning balance of the account, debits, credits, net change, and
->   the totals of each category for each period.
+>   Period-by-period balances for the specified year will be displayed, along with the beginning balance of the account, debits, credits, net change, and the totals of each category for each period.
 
->   *You can click the Account link to open the Account Maintenance window,
->   where you can view account details. You can highlight a period and click the
->   Debit, Credit, Net Change, or Period Balance link to open the History Detail
->   Inquiry window, where you can view transactions posted to specific accounts
->   in historical years. You also can choose the Currency button to open the
->   Multicurrency Summary Inquiry window, where you can view summarized account
->   balances and multicurrency information.*
+>   *You can click the Account link to open the Account Maintenance window, where you can view account details. You can highlight a period and click the Debit, Credit, Net Change, or Period Balance link to open the History Detail Inquiry window, where you can view transactions posted to specific accounts in historical years. You also can choose the Currency button to open the Multicurrency Summary Inquiry window, where you can view summarized account balances and multicurrency information.*
 
-1.  You can print a Summary Inquiry Report from this window by choosing File
-    \>\> Print or the printer icon button while the information you'd like to
-    print is displayed.
+3.  You can print a Summary Inquiry Report from this window by choosing File \>\> Print or the printer icon button while the information you'd like to print is displayed.
 
 #### Viewing changes to an account balance
 
->   Use the Net Change Inquiry window to view changes for a selected year—the
->   debit and credit amounts and overall net change—to the balance of a selected
->   account. This window displays the description, beginning balance, total
->   debits and credits, net change, and ending balance for the selected account.
+>   Use the Net Change Inquiry window to view changes for a selected year—the debit and credit amounts and overall net change—to the balance of a selected account. This window displays the description, beginning balance, total debits and credits, net change, and ending balance for the selected account.
 
 >   **To view changes to an account balance:**
 
 1.  Open the Net Change Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Net Change)
 
 ![](media/c366750849fea73a40ad7a365fc196f0.jpg)
 
-1.  Enter or select an account.
+2.  Enter or select an account.
 
-2.  Enter or select a year.
+3.  Enter or select a year.
 
-3.  When you’ve finished viewing information, close the window.
+4.  When you’ve finished viewing information, close the window.
 
 **Chapter 26: Transaction inquiries**
 
->   You can view posted transactions for open periods or historical years using
->   transaction inquiries. You can also view information about deferral
->   transactions.
+>   You can view posted transactions for open periods or historical years using transaction inquiries. You can also view information about deferral transactions.
 
 >   This information is divided into the following sections:
 
@@ -3862,206 +3225,137 @@ of the links of month-end adjusting entries.
 
 #### Viewing budget transaction and history summary information
 
->   Use the Budget Transaction Inquiry window to view balances and budget
->   amounts or net change for open or historical periods. This information can
->   be used to compare actual account activity with budgeted amounts.
+>   Use the Budget Transaction Inquiry window to view balances and budget amounts or net change for open or historical periods. This information can be used to compare actual account activity with budgeted amounts.
 
->   The Budget Transaction Inquiry window is useful if you’re interested in
->   viewing budget figures, but don’t want to change any calculations.
+>   The Budget Transaction Inquiry window is useful if you’re interested in viewing budget figures, but don’t want to change any calculations.
 
->   Use the Budget Summary History window to view period balances, net change,
->   and total amounts for an account and budget ID. This information can be used
->   to view the history of budget transactions for a particular account over
->   multiple periods.
+>   Use the Budget Summary History window to view period balances, net change, and total amounts for an account and budget ID. This information can be used to view the history of budget transactions for a particular account over multiple periods.
 
 >   **To view budget transaction summary information:**
 
 1.  Open the Budget Transaction Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Budget Journal Entry Inquiry)
 
 ![](media/ecfaa65ab995631a4457919d34ce9c0b.jpg)
 
-1.  Select budget journal entry.
+2.  Select budget journal entry.
 
-2.  Enter or select an account.
+3.  Enter or select an account.
 
-3.  Choose how you want to display the budget information: Net Change or Period
-    Balances.
+4.  Choose how you want to display the budget information: Net Change or Period Balances.
 
-4.  When you’ve finished viewing information, click OK to close the window.
+5.  When you’ve finished viewing information, click OK to close the window.
 
 >   **To view budget history summary information:**
 
 1.  Open the Budget Summary Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Budget Summary)
 
 ![](media/3d774405caeb0b32d3f17adbc0620028.jpg)
 
-1.  Enter or select an account.
+2.  Enter or select an account.
 
-2.  Enter or select a budget ID.
+3.  Enter or select a budget ID.
 
-3.  Choose how you want to display the budget history information: Net Change or
-    Period Balances.
+4.  Choose how you want to display the budget history information: Net Change or Period Balances.
 
-4.  Choose how you want to sort the results: by alias, description, account
-    type, category, account, or main segment.
+5.  Choose how you want to sort the results: by alias, description, account type, category, account, or main segment.
 
-5.  To return all fields to their default values and remain working in the
-    window, click Clear.
+6.  To return all fields to their default values and remain working in the window, click Clear.
 
 #### Viewing transactions posted to an open year
 
->   Use the Journal Entry Inquiry window to view transaction detail for General
->   Ledger posted journal entries in an open fiscal year.
+>   Use the Journal Entry Inquiry window to view transaction detail for General Ledger posted journal entries in an open fiscal year.
 
->   Multiple journal entries with the same number might exist if a recurring
->   transaction is posted or a reversing transaction is posted. If you enter a
->   journal entry for which multiple entries exist, the journal entry with the
->   oldest posting date in the open year is displayed. If you use the Journal
->   Entry lookup button, all unique journal entries are displayed, and you can
->   select the journal entry you’d like to view.
+>   Multiple journal entries with the same number might exist if a recurring transaction is posted or a reversing transaction is posted. If you enter a journal entry for which multiple entries exist, the journal entry with the oldest posting date in the open year is displayed. If you use the Journal Entry lookup button, all unique journal entries are displayed, and you can select the journal entry you’d like to view.
 
->   *The Intercompany button is enabled only if the currently displayed journal
->   entry originated from an intercompany transaction.*
+>   *The Intercompany button is enabled only if the currently displayed journal entry originated from an intercompany transaction.*
 
->   The Journal Entry Inquiry window displays posted journal entries in any open
->   year in General Ledger, so you don’t need to keep transaction history to be
->   able to view journal entries in this window.
+>   The Journal Entry Inquiry window displays posted journal entries in any open year in General Ledger, so you don’t need to keep transaction history to be able to view journal entries in this window.
 
 >   **To view transactions posted to an open year:**
 
 1.  Open the Journal Entry Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Journal Entry Inquiry)
 
 ![](media/bb94d8422687c596ebadb0644f2077c9.jpg)
 
-1.  Enter or select the journal entry number. You can view any posted journal
-    entry number, as long as the journal entry has not been moved to history.
-    Audit trail code, transaction date, source document, batch ID, reference,
-    currency ID, account, debit, credit, distribution reference, and difference
-    information are displayed.
+2.  Enter or select the journal entry number. You can view any posted journal entry number, as long as the journal entry has not been moved to history. Audit trail code, transaction date, source document, batch ID, reference, currency ID, account, debit, credit, distribution reference, and difference information are displayed.
 
->   You also can click the Source Document link to open a window containing
->   detailed information about the journal entry if it originated in a module
->   other than General Ledger.
+>   You also can click the Source Document link to open a window containing detailed information about the journal entry if it originated in a module other than General Ledger.
 
-1.  You can print a Journal Inquiry Report by choosing File \>\> Print or the
-    printer icon button while the information you’d like to print is displayed.
+3.  You can print a Journal Inquiry Report by choosing File \>\> Print or the printer icon button while the information you’d like to print is displayed.
 
-2.  When you’ve finished viewing the information, close the window.
+4.  When you’ve finished viewing the information, close the window.
 
 #### Viewing transactions posted to a specific account in a historical year
 
->   Use the History Detail Inquiry window to view the transactions posted to
->   specific accounts in historical years. You also can limit the detail that is
->   displayed, by setting a range of dates, source documents, or currency IDs.
->   Each transaction’s date, journal entry number, audit trail code, source
->   document, reference, currency ID, and debit or credit is displayed.
+>   Use the History Detail Inquiry window to view the transactions posted to specific accounts in historical years. You also can limit the detail that is displayed, by setting a range of dates, source documents, or currency IDs. Each transaction’s date, journal entry number, audit trail code, source document, reference, currency ID, and debit or credit is displayed.
 
 >   **To view transactions posted to a specific account in a historical year:**
 
 1.  Open the History Detail Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> History Detail)
 
 ![](media/d707a058d243b408dca055db1638df48.jpg)
 
-1.  Enter or select an account.
+2.  Enter or select an account.
 
-2.  Select a year.
+3.  Select a year.
 
-3.  Enter ranges of dates, source documents, and currency IDs that will appear
-    in the window, and choose Redisplay.
+4.  Enter ranges of dates, source documents, and currency IDs that will appear in the window, and choose Redisplay.
 
->   *You can highlight a journal entry and click the Journal Entry link to open
->   the Transaction Entry Zoom window, where you can view information about a
->   posted or historical transaction. You also can click the Currency ID link
->   for a journal entry not entered in the functional currency, to open the
->   Financial Exchange Rate Entry Zoom window, where you can view currencies,
->   exchange rates, and originating and functional currency amounts for posted
->   multicurrency transactions.*
+>   *You can highlight a journal entry and click the Journal Entry link to open the Transaction Entry Zoom window, where you can view information about a posted or historical transaction. You also can click the Currency ID link for a journal entry not entered in the functional currency, to open the Financial Exchange Rate Entry Zoom window, where you can view currencies, exchange rates, and originating and functional currency amounts for posted multicurrency transactions.*
 
-1.  You can print a History Detail Inquiry Report by choosing File \>\> Print or
-    the printer icon button while the information you’d like to print is
-    displayed.
+5.  You can print a History Detail Inquiry Report by choosing File \>\> Print or the printer icon button while the information you’d like to print is displayed.
 
-2.  When you’ve finished viewing information, close the window.
+6.  When you’ve finished viewing information, close the window.
 
 #### Viewing posted transactions during an open fiscal year
 
->   Use the Detail Inquiry window to display detailed information about
->   transactions posted during an open fiscal year. When you select an account,
->   transactions for the account are displayed. You also can limit the detail by
->   setting a range of dates, source documents, or currency IDs. Each
->   transaction’s date, journal entry number, audit trail code, source document,
->   reference, and debit or credit is displayed.
+>   Use the Detail Inquiry window to display detailed information about transactions posted during an open fiscal year. When you select an account, transactions for the account are displayed. You also can limit the detail by setting a range of dates, source documents, or currency IDs. Each transaction’s date, journal entry number, audit trail code, source document, reference, and debit or credit is displayed.
 
->   For example, you might use the Detail Inquiry window if you suspect an error
->   on the summary trial balance. If the account in question, the Cash account,
->   shows a \$5,000 balance, display the Cash account in this window. The
->   amounts displayed here for an open period should match the total on the
->   summary trial balance.
+>   For example, you might use the Detail Inquiry window if you suspect an error on the summary trial balance. If the account in question, the Cash account, shows a \$5,000 balance, display the Cash account in this window. The amounts displayed here for an open period should match the total on the summary trial balance.
 
 >   **To view posted transactions during an open fiscal year:**
 
 1.  Open the Detail Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Detail)
 
 ![](media/546c00dc22f88e302a84672457cedff4.jpg)
 
-1.  Enter or select an account.
+2.  Enter or select an account.
 
-2.  Select a year.
+3.  Select a year.
 
-3.  Enter ranges of dates, source documents, and currency IDs that will appear
-    in the window, and choose Redisplay.
+4.  Enter ranges of dates, source documents, and currency IDs that will appear in the window, and choose Redisplay.
 
->   *You can select a journal entry and click the Journal Entry link to open the
->   Transaction Entry Zoom window, where you can view information about a posted
->   or historical transaction. You also can click the Currency ID link for a
->   journal entry not entered in the functional currency to open the Financial
->   Exchange Rate Entry Zoom window, where you can view currencies, exchange
->   rates, and originating and functional currency amounts for posted
->   multicurrency transactions.*
+>   *You can select a journal entry and click the Journal Entry link to open the Transaction Entry Zoom window, where you can view information about a posted or historical transaction. You also can click the Currency ID link for a journal entry not entered in the functional currency to open the Financial Exchange Rate Entry Zoom window, where you can view currencies, exchange rates, and originating and functional currency amounts for posted multicurrency transactions.*
 
-1.  You can print a Detail Inquiry Report by choosing File \>\> Print or the
-    printer icon button while the information you’d like to print is displayed.
+5.  You can print a Detail Inquiry Report by choosing File \>\> Print or the printer icon button while the information you’d like to print is displayed.
 
-2.  When you’ve finished viewing information, close the window.
+6.  When you’ve finished viewing information, close the window.
 
 #### Viewing deferral transactions
 
->   Use the Deferral Inquiry window to view the deferral transactions for a
->   selected module.
+>   Use the Deferral Inquiry window to view the deferral transactions for a selected module.
 
 >   **To view deferral transactions:**
 
 1.  Open the Deferral Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Deferral)
 
 ![](media/b818e5625c70668443f1fa946161b783.jpg)
 
-1.  Using the list at the bottom of the window, select the module you want to
-    view deferral transactions for.
+2.  Using the list at the bottom of the window, select the module you want to view deferral transactions for.
 
-2.  If necessary, enter a range to restrict the number of transactions that
-    appear in the window, then choose Redisplay.
+3.  If necessary, enter a range to restrict the number of transactions that appear in the window, then choose Redisplay.
 
-3.  To view more information about a specific deferral, select the transaction
-    and click on the Document Number link to open the Deferral Inquiry Zoom
-    window.
+4.  To view more information about a specific deferral, select the transaction and click on the Document Number link to open the Deferral Inquiry Zoom window.
 
 **Chapter 27: Transaction matching inquiries**
 
->   You can view and print information about linked transactions, including
->   specific links, all the links for a specific account, or the links in a
->   transaction matching group.
+>   You can view and print information about linked transactions, including specific links, all the links for a specific account, or the links in a transaction matching group.
 
 >   This information includes the following sections:
 
@@ -4073,58 +3367,43 @@ of the links of month-end adjusting entries.
 
 #### Viewing transaction distribution links by number
 
->   Use the Transaction Matching by Link Number Inquiry window to view detailed
->   information about an individual transaction distribution link record.
+>   Use the Transaction Matching by Link Number Inquiry window to view detailed information about an individual transaction distribution link record.
 
 >   **To view transaction distribution links by number:**
 
 1.  Open the Transaction Matching by Link Number Inquiry window.
-
->   (Financial \>\> Inquiry \>\> Financial \>\> Transaction Match by Link
->   Number)
+>   (Financial \>\> Inquiry \>\> Financial \>\> Transaction Match by Link Number)
 
 ![](media/e280f825e3f413e68c79f85d68f57d8c.jpg)
 
-1.  Enter or select the link number you want to view.
+2.  Enter or select the link number you want to view.
 
-2.  To view more information about a specific distribution, highlight the record
-    and click on the Jrnl No. link to open the Transaction Entry Zoom window.
+3.  To view more information about a specific distribution, highlight the record and click on the Jrnl No. link to open the Transaction Entry Zoom window.
 
->   If the link is a member of one or more matched transaction groups, you can
->   view more information about the group by selecting the group and clicking on
->   the Group link to open the Transaction Matching Group Inquiry window.
+>   If the link is a member of one or more matched transaction groups, you can view more information about the group by selecting the group and clicking on the Group link to open the Transaction Matching Group Inquiry window.
 
-1.  You can choose the Print button to print the Transaction Matching by Link
-    Number report for the information displayed in the inquiry window.
+4.  You can choose the Print button to print the Transaction Matching by Link Number report for the information displayed in the inquiry window.
 
 #### Viewing transaction distribution links by account
 
->   Use the Transaction Matching by Account Inquiry window to view the
->   transaction distributions for an account that have been linked with other
->   distributions.
+>   Use the Transaction Matching by Account Inquiry window to view the transaction distributions for an account that have been linked with other distributions.
 
 >   **To view transaction distribution links by account:**
 
 1.  Open the Transaction Matching by Account Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Transaction Match by Account)
 
 ![](media/3350a2e79ff89c8343cd91422bb34d5a.jpg)
 
-1.  Enter or select the account you want to view link information for, then
-    choose the year for the transaction distributions you want to view.
+2.  Enter or select the account you want to view link information for, then choose the year for the transaction distributions you want to view.
 
-2.  Indicate whether you want to view only linked or unlinked distributions, or
-    all distributions.
+3.  Indicate whether you want to view only linked or unlinked distributions, or all distributions.
 
-3.  Indicate whether you want to view saved links or archived links.
+4.  Indicate whether you want to view saved links or archived links.
 
-4.  Indicate whether you want to view all links, or links in a particular
-    transaction matching group.
+5.  Indicate whether you want to view all links, or links in a particular transaction matching group.
 
-5.  To view more information about the journal entry, link, or currency for a
-    distribution, highlight the record and click the link for the information
-    you want to view.
+6.  To view more information about the journal entry, link, or currency for a distribution, highlight the record and click the link for the information you want to view.
 
 >   You can use the following windows to view additional information:
 
@@ -4134,32 +3413,26 @@ of the links of month-end adjusting entries.
 | Link        | Distribution Links Inquiry Zoom    |
 | Currency ID | Financial Exchange Rate Entry Zoom |
 
-1.  You can choose the Print button to print the Transaction Matching by Account
-    Number report for the information displayed in the inquiry window.
+7.  You can choose the Print button to print the Transaction Matching by Account Number report for the information displayed in the inquiry window.
 
 #### Viewing matched transactions by group
 
->   Use the Transaction Matching Group Inquiry window to view the transaction
->   distribution links that have been assigned to a group.
+>   Use the Transaction Matching Group Inquiry window to view the transaction distribution links that have been assigned to a group.
 
 >   **To view matched transactions by group:**
 
 1.  Open the Transaction Matching Group Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Transaction Matching Groups)
 
 ![](media/eae1ff9e4a568d0c2bcd0c141e334729.jpg)
 
-1.  Enter or select the group you want to view.
+2.  Enter or select the group you want to view.
 
-2.  To view more information about a particular link, highlight the link in the
-    scrolling window and click the Link Number link to open the Transaction
-    Matching by Link Number Inquiry window.
+3.  To view more information about a particular link, highlight the link in the scrolling window and click the Link Number link to open the Transaction Matching by Link Number Inquiry window.
 
 **Chapter 28: Budget inquiries**
 
->   You can use budget inquiries to view budget summary information and to
->   compare budget amounts to actual amounts for a selected account and budget.
+>   You can use budget inquiries to view budget summary information and to compare budget amounts to actual amounts for a selected account and budget.
 
 >   This information is divided into the following sections:
 
@@ -4169,67 +3442,53 @@ of the links of month-end adjusting entries.
 
 #### Viewing budget summary information
 
->   Use the Budget Summary Inquiry window to view balances and budget amounts or
->   net change for open or historical periods. This information can be used to
->   compare actual account activity with budgeted amounts.
+>   Use the Budget Summary Inquiry window to view balances and budget amounts or net change for open or historical periods. This information can be used to compare actual account activity with budgeted amounts.
 
->   The Budget Summary Inquiry window is useful if you’re interested in viewing
->   budget figures, but don’t want to change any calculations.
+>   The Budget Summary Inquiry window is useful if you’re interested in viewing budget figures, but don’t want to change any calculations.
 
 >   **To view budget summary information:**
 
 1.  Open the Budget Summary Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Budget Summary)
 
 ![](media/44b5cbf100972db5e73c69a7a22bc3b2.jpg)
 
-1.  Enter or select an account.
+2.  Enter or select an account.
 
-2.  Enter or select a budget ID.
+3.  Enter or select a budget ID.
 
-3.  Choose how you want to display the budget information: Net Change or Period
-    Balances.
+4.  Choose how you want to display the budget information: Net Change or Period Balances.
 
->   *You can select a period and click the Account link to open the Account
->   Maintenance window, where you can view detailed account information.*
+>   *You can select a period and click the Account link to open the Account Maintenance window, where you can view detailed account information.*
 
-1.  When you’ve finished viewing information, close the window.
+5.  When you’ve finished viewing information, close the window.
 
 #### Viewing budgeted versus actual expenditures
 
->   Use the Budget vs Actual Inquiry window to view budget and actual amounts or
->   net change for a particular account and budget ID by period. You can also
->   view the variance and variance percentage, so you can analyze how closely
->   your actual amounts match the budgeted amounts for the selected account.
+>   Use the Budget vs Actual Inquiry window to view budget and actual amounts or net change for a particular account and budget ID by period. You can also view the variance and variance percentage, so you can analyze how closely your actual amounts match the budgeted amounts for the selected account.
 
 >   **To view budgeted versus actual expenditures:**
 
 1.  Open the Budget vs Actual Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Budget vs. Actual)
 
 ![](media/57879175e9656f99164d4c340be1c590.jpg)
 
-1.  Enter or select an account.
+2.  Enter or select an account.
 
-2.  Enter or select a budget ID.
+3.  Enter or select a budget ID.
 
-3.  Choose how to display the budget information: Net Change or Period Balances.
+4.  Choose how to display the budget information: Net Change or Period Balances.
 
->   *You can highlight a period and click the Actual link to open the Detail
->   Inquiry window, where you can see all transactions in the period.*
+>   *You can highlight a period and click the Actual link to open the Detail Inquiry window, where you can see all transactions in the period.*
 
-1.  You can print a Budget vs Actual Inquiry Report by choosing File \>\> Print
-    or the printer icon button while the information you'd like to print is
-    displayed.
+5.  You can print a Budget vs Actual Inquiry Report by choosing File \>\> Print or the printer icon button while the information you'd like to print is displayed.
 
-2.  When you’ve finished viewing information, close the window.
+6.  When you’ve finished viewing information, close the window.
 
 **Chapter 29: Account rollup inquiries**
 
->   You can create segment-based inquiries for any range of account segments
->   within General Ledger.
+>   You can create segment-based inquiries for any range of account segments within General Ledger.
 
 >   This information includes the following sections:
 
@@ -4245,186 +3504,112 @@ of the links of month-end adjusting entries.
 
 #### Account rollup inquiry overview
 
->   The Account Rollup Inquiry window displays summarized period balances for
->   ranges of accounts. You create account rollup inquiry options to define
->   these account ranges by selecting segment ranges that include the
->   information you want to summarize. For example, assume your chart of
->   accounts is set up with four segments: Division, Department, Account, and
->   Sub-Account. You could create an account rollup inquiry option to summarize
->   travel expenses for a group of departments across several divisions. Or you
->   could summarize the cost of goods sold accounts for the sales department of
->   a single division, or of all divisions.
+>   The Account Rollup Inquiry window displays summarized period balances for ranges of accounts. You create account rollup inquiry options to define these account ranges by selecting segment ranges that include the information you want to summarize. For example, assume your chart of accounts is set up with four segments: Division, Department, Account, and Sub-Account. You could create an account rollup inquiry option to summarize travel expenses for a group of departments across several divisions. Or you could summarize the cost of goods sold accounts for the sales department of a single division, or of all divisions.
 
->   You can set up an account rollup inquiry option that includes multiple
->   ranges for each segment. For example, you could create an option that
->   included information for departments 100, 200, 400, and 700, and accounts
->   1000 through 1400, and 2700 through 2900.
+>   You can set up an account rollup inquiry option that includes multiple ranges for each segment. For example, you could create an option that included information for departments 100, 200, 400, and 700, and accounts 1000 through 1400, and 2700 through 2900.
 
->   The Account Rollup Inquiry window can display up to four columns of
->   information. You can set up an option to display actual amounts (in the
->   reporting currency), previous year balances, other currency balances, and
->   budget amounts. You can also display columns that show the results of simple
->   calculations; for example, the difference between actual amounts and
->   budgeted amounts.
+>   The Account Rollup Inquiry window can display up to four columns of information. You can set up an option to display actual amounts (in the reporting currency), previous year balances, other currency balances, and budget amounts. You can also display columns that show the results of simple calculations; for example, the difference between actual amounts and budgeted amounts.
 
->   For information about setting up inquiry options, see *Creating an account
->   rollup inquiry option*. For information about calculated columns, see
->   *Setting up a calculated column*.
+>   For information about setting up inquiry options, see *Creating an account rollup inquiry option*. For information about calculated columns, see *Setting up a calculated column*.
 
 #### Creating an account rollup inquiry option
 
->   Use the Account Rollup Inquiry Options window to define the segment ranges
->   and types of information you want to view in the Account Rollup Inquiry
->   window.
+>   Use the Account Rollup Inquiry Options window to define the segment ranges and types of information you want to view in the Account Rollup Inquiry window.
 
 >   **To create an account rollup inquiry option:**
 
 1.  Open the Account Rollup Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Account Rollup)
 
-1.  Choose Modify to open the Account Rollup Inquiry Options window.
+2.  Choose Modify to open the Account Rollup Inquiry Options window.
 
 ![](media/2065f5b31d477da34fe31c2624738918.jpg)
 
-1.  Enter a name for the option you are creating.
+3.  Enter a name for the option you are creating.
 
-2.  Select the segment you want to use to sort the information. The selection
-    you make here will control how the information is sorted in the Account
-    Rollup Detail Inquiry Zoom window.
+4.  Select the segment you want to use to sort the information. The selection you make here will control how the information is sorted in the Account Rollup Detail Inquiry Zoom window.
 
-3.  Select the number of columns of information you want to display.
+5.  Select the number of columns of information you want to display.
 
-4.  For each column of information, enter the column heading you want to use,
-    and the type of information you want to display. If you selected Budget or
-    Other Currency for the type, enter or select the budget or currency you want
-    to display. If you selected the type Calculated, choose the Selection lookup
-    button to open the Account Rollup Inquiry Calculated Column window. For more
-    information, see *Setting up a calculated column*.
+6.  For each column of information, enter the column heading you want to use, and the type of information you want to display. If you selected Budget or Other Currency for the type, enter or select the budget or currency you want to display. If you selected the type Calculated, choose the Selection lookup button to open the Account Rollup Inquiry Calculated Column window. For more information, see *Setting up a calculated column*.
 
->   *A calculated column must follow the columns it is performing its operations
->   on. For example, assume you set up an inquiry option with column 1 as
->   Actual, column 2 as Budget, column 3 as Calculated, and column 4 as Previous
->   Year. In this case, the calculated column could not include the previous
->   year amounts in its calculations because it is listed after the calculated
->   column.*
+>   *A calculated column must follow the columns it is performing its operations on. For example, assume you set up an inquiry option with column 1 as Actual, column 2 as Budget, column 3 as Calculated, and column 4 as Previous Year. In this case, the calculated column could not include the previous year amounts in its calculations because it is listed after the calculated column.*
 
-1.  Enter restrictions to define the segment ranges you want to create this
-    inquiry option for. You can set up multiple ranges for a single segment.
+7.  Enter restrictions to define the segment ranges you want to create this inquiry option for. You can set up multiple ranges for a single segment.
 
-2.  Choose Save to save the account rollup inquiry option.
+8.  Choose Save to save the account rollup inquiry option.
 
 #### Setting up a calculated column
 
->   Use the Account Rollup Inquiry Calculated Column window to create a
->   mathematical formula for an account rollup inquiry option that displays the
->   results of simple calculations. For example, if you create an inquiry option
->   that displays the actual expenses of a department and the budgeted expenses,
->   you can create a formula to calculate the difference between the actual
->   amounts and the budget.
+>   Use the Account Rollup Inquiry Calculated Column window to create a mathematical formula for an account rollup inquiry option that displays the  results of simple calculations. For example, if you create an inquiry option that displays the actual expenses of a department and the budgeted expenses, you can create a formula to calculate the difference between the actual amounts and the budget.
 
->   *A calculated column must follow the columns it is performing its operations
->   on. For example, assume you set up an inquiry option with column 1 as
->   Actual, column 2 as Budget, column 3 as Calculated, and column 4 as Previous
->   Year. In this case, the calculated column could not include the previous
->   year amounts in its calculations because it is listed after the calculated
->   column.*
+>   *A calculated column must follow the columns it is performing its operations on. For example, assume you set up an inquiry option with column 1 as Actual, column 2 as Budget, column 3 as Calculated, and column 4 as Previous Year. In this case, the calculated column could not include the previous year amounts in its calculations because it is listed after the calculated column.*
 
 >   **To set up a calculated column:**
 
-1.  In the Account Rollup Inquiry Options window, select the type Calculated for
-    one of the columns, and click the Selection lookup button. The Account
-    Rollup Inquiry Calculated Column window appears.
+1.  In the Account Rollup Inquiry Options window, select the type Calculated for one of the columns, and click the Selection lookup button. The Account Rollup Inquiry Calculated Column window appears.
 
 ![](media/dd27faf5600a9d28fe34d22b811c7aee.jpg)
 
-1.  Enter the columns, constants, and operators for the calculation you want to
-    create.
+2.  Enter the columns, constants, and operators for the calculation you want to create.
 
->   For example, to calculate the difference between column 1, Actuals, and
->   column 2, Previous Year, select the Actuals column from the list and click
->   the Column button. Then click the - operator button. Then choose Previous
->   from the list and click the Column button again. As you create the
->   calculation, the expression is displayed in the window: in this case, C1 -
->   C2.
+>   For example, to calculate the difference between column 1, Actuals, and column 2, Previous Year, select the Actuals column from the list and click the Column button. Then click the - operator button. Then choose Previous from the list and click the Column button again. As you create the calculation, the expression is displayed in the window: in this case, C1 - C2.
 
->   You can create more complex expressions, such as the difference between two
->   columns as a percentage. This would be ((C1 - C2)/C1)\*100.
+>   You can create more complex expressions, such as the difference between two columns as a percentage. This would be ((C1 - C2)/C1)\*100.
 
-1.  Choose OK to save the expression and close the window.
+3.  Choose OK to save the expression and close the window.
 
 #### Modifying an account rollup inquiry option
 
->   Use the Account Rollup Inquiry Options window to modify a saved account
->   rollup inquiry option. You can change the sorting order, add or remove
->   columns of information, change the formula for a calculated column, and add
->   or remove segment restrictions.
+>   Use the Account Rollup Inquiry Options window to modify a saved account rollup inquiry option. You can change the sorting order, add or remove columns of information, change the formula for a calculated column, and add or remove segment restrictions.
 
 >   **To modify an account rollup inquiry option:**
 
 1.  Open the Account Rollup Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Account Rollup)
 
-1.  Choose Modify to open the Account Rollup Inquiry Options window.
+2.  Choose Modify to open the Account Rollup Inquiry Options window.
 
-2.  Enter or select the option you want to change.
+3.  Enter or select the option you want to change.
 
-3.  Make the necessary changes to the option.
+4.  Make the necessary changes to the option.
 
->   To change the formula for a calculated column, click in the row for that
->   column and click the Selection lookup button.
+>   To change the formula for a calculated column, click in the row for that column and click the Selection lookup button.
 
-1.  Choose Save to save the account rollup inquiry option.
+5.  Choose Save to save the account rollup inquiry option.
 
 #### Viewing an account rollup inquiry
 
->   Use the Account Rollup Inquiry window to view segment-based inquiries using
->   options you created in the Account Rollup Inquiry Options window. You can
->   view for open or historical years.
+>   Use the Account Rollup Inquiry window to view segment-based inquiries using options you created in the Account Rollup Inquiry Options window. You can view for open or historical years.
 
 >   **To view an account rollup inquiry:**
 
 1.  Open the Account Rollup Inquiry window.
-
 >   (Financial \>\> Inquiry \>\> Financial \>\> Account Rollup)
 
 ![](media/0f027d9b43a1e2a911bbddbb8b7abdfa.jpg)
 
-1.  Enter or select an option. (For information on creating options, see
-    *Creating an account rollup inquiry option*.)
+2.  Enter or select an option. (For information on creating options, see *Creating an account rollup inquiry option*.)
 
-2.  Select the year you want to view and indicate whether you want to view the
-    net change for each period, or period balances.
+3.  Select the year you want to view and indicate whether you want to view the net change for each period, or period balances.
 
-3.  Choose Redisplay to display the information. To print a report of the
-    information displayed in the Account Rollup Inquiry window, choose File \>\>
-    Print.
+4.  Choose Redisplay to display the information. To print a report of the information displayed in the Account Rollup Inquiry window, choose File \>\> Print.
 
-4.  To view detailed information about the amounts shown for each period, select
-    a period and click on one of the column heading links to open the Account
-    Rollup Detail Inquiry Zoom window.
+5.  To view detailed information about the amounts shown for each period, select a period and click on one of the column heading links to open the Account Rollup Detail Inquiry Zoom window.
 
 **Part 5: Reports**
 
->   You can analyze transaction and account information and display the
->   information on the computer screen or on a printed report. You also can save
->   it to a file.
+>   You can analyze transaction and account information and display the information on the computer screen or on a printed report. You also can save it to a file.
 
 >   The following information is discussed:
 
--   *Chapter 30, “Financial statement reports,”* describes financial statements,
-    the summarized outcome of all the steps in the accounting cycle.
+-   *Chapter 30, “Financial statement reports,”* describes financial statements, the summarized outcome of all the steps in the accounting cycle.
 
--   *Chapter 31, “General Ledger reports,”* shows how to use reports to analyze
-    account activity and identify errors in transaction entry.
+-   *Chapter 31, “General Ledger reports,”* shows how to use reports to analyze account activity and identify errors in transaction entry.
 
 **Chapter 30: Financial statement reports**
 
->   General Ledger financial statements help you analyze your business activity.
->   Financial statements are the summarized outcome of all the steps in the
->   accounting cycle. You can use financial statements to gain a better
->   understanding of your company's financial position.
+>   General Ledger financial statements help you analyze your business activity. Financial statements are the summarized outcome of all the steps in the accounting cycle. You can use financial statements to gain a better understanding of your company's financial position.
 
 >   This information is divided into the following sections:
 
@@ -4438,234 +3623,120 @@ of the links of month-end adjusting entries.
 
 #### Understanding financial statements 
 
->   In any business, the accounting cycle consists of processes for recording,
->   summarizing, reporting, and analyzing financial information. However, the
->   ultimate purpose of all these activities is to generate the financial
->   statements. You can think of the financial statements printed in General
->   Ledger as the summarized outcome of all the steps in the accounting cycle
->   and use the information to gain a better understanding of your company’s
->   financial position.
+>   In any business, the accounting cycle consists of processes for recording, summarizing, reporting, and analyzing financial information. However, the ultimate purpose of all these activities is to generate the financial statements. You can think of the financial statements printed in General Ledger as the summarized outcome of all the steps in the accounting cycle and use the information to gain a better understanding of your company’s financial position.
 
 >   There are several ways to print financial statements:
 
--   You can set up financial statements in the Quick Financial Setup window. In
-    this window, you can quickly set up a basic financial statement and choose
-    which columns to include in the financial statement. After you save the
-    statement, you can print it using the Financial Statement Report Options
-    window.
+-   You can set up financial statements in the Quick Financial Setup window. In this window, you can quickly set up a basic financial statement and choose which columns to include in the financial statement. After you save the statement, you can print it using the Financial Statement Report Options window.
 
--   You can create an unlimited number of financial statement layouts using
-    Advanced Financial Analysis. For information on creating and modifying
-    financial statements using Advanced Financial Analysis, refer to the
-    Advanced Financial Analysis documentation.
+-   You can create an unlimited number of financial statement layouts using Advanced Financial Analysis. For information on creating and modifying financial statements using Advanced Financial Analysis, refer to the Advanced Financial Analysis documentation.
 
--   You can use Management Reporter for Microsoft Dynamics ERP to print
-    financial statements. For more information about printing financial
-    statements using Management Reporter, refer to the Management Reporter
-    documentation.
+-   You can use Management Reporter for Microsoft Dynamics ERP to print financial statements. For more information about printing financial statements using Management Reporter, refer to the Management Reporter documentation.
 
-If you’re keeping history, you can use Microsoft Dynamics GP reporting
-capabilities to compare open- and historical-year figures. You also can print
-financial statements for any open-year period or historical-year period.
+If you’re keeping history, you can use Microsoft Dynamics GP reporting capabilities to compare open- and historical-year figures. You also can print financial statements for any open-year period or historical-year period.
 
->   *Until the year-end close is completed for General Ledger, you won’t get
->   accurate financial statements for the new year. Beginning balances for the
->   new year are not created until the year-end close process is completed.
->   Therefore, the financial statements for the new year will reflect only
->   current year activity until the year-end closing process is completed. This
->   applies to both Advanced Financial Analysis and Management Reporter.*
+>   *Until the year-end close is completed for General Ledger, you won’t get accurate financial statements for the new year. Beginning balances for the new year are not created until the year-end close process is completed. Therefore, the financial statements for the new year will reflect only current year activity until the year-end closing process is completed. This applies to both Advanced Financial Analysis and Management Reporter.*
 
 #### Types of financial statements
 
 >   You can define and print four types of financial statements:
 
-**Balance Sheet** The Balance Sheet reflects the solvency and financial position
-of your company at a specific point in time, listing the assets, and liabilities
-of your company. This statement shows your company’s ability to pay its debts as
-they become due.
+**Balance Sheet** The Balance Sheet reflects the solvency and financial position of your company at a specific point in time, listing the assets, and liabilities of your company. This statement shows your company’s ability to pay its debts as they become due.
 
-**Profit and Loss Statement** A Profit and Loss Statement includes your
-company’s revenues and expenses, reflecting the profitability of your company
-for a specific time period, such as a month or a year.
+**Profit and Loss Statement** A Profit and Loss Statement includes your company’s revenues and expenses, reflecting the profitability of your company for a specific time period, such as a month or a year.
 
-**Statement of Cash Flows** The Statement of Cash Flows provides information
-about your company’s cash receipts and cash payments over a specified period of
-time. You also can determine the amount of cash your company has available at
-any given time.
+**Statement of Cash Flows** The Statement of Cash Flows provides information about your company’s cash receipts and cash payments over a specified period of time. You also can determine the amount of cash your company has available at any given time.
 
->   *The indirect method is used for calculating and printing the Statement of
->   Cash Flows. This method calculates the amount of net cash flow from
->   operating activities by reconciling net income to net cash flow.*
+>   *The indirect method is used for calculating and printing the Statement of Cash Flows. This method calculates the amount of net cash flow from operating activities by reconciling net income to net cash flow.*
 
-**Statement of Retained Earnings** The Statement of Retained Earnings shows the
-items causing changes to your retained earnings, including net income and
-declared dividends, for a stated period of time.
+**Statement of Retained Earnings** The Statement of Retained Earnings shows the items causing changes to your retained earnings, including net income and declared dividends, for a stated period of time.
 
-Each financial statement includes a number of required columns, which will
-appear in the Selected Columns list. In addition to these required columns, you
-can insert optional columns for each financial statement. On the Profit and Loss
-Statement, Statement of Retained Earnings, and Statement of Cash Flows, you can
-use a total of six required and optional columns. On the Balance Sheet, you can
+Each financial statement includes a number of required columns, which will appear in the Selected Columns list. In addition to these required columns, you can insert optional columns for each financial statement. On the Profit and Loss Statement, Statement of Retained Earnings, and Statement of Cash Flows, you can use a total of six required and optional columns. On the Balance Sheet, you can
 use a total of five columns.
 
-The rows in the financial statement are defined automatically, using General
-Ledger’s account categories to group the accounts on the statements.
-*Understanding account categories* shows the account categories provided with
-General Ledger, their account type, and which financial statements will contain
-each of the account categories.
+The rows in the financial statement are defined automatically, using General Ledger’s account categories to group the accounts on the statements. *Understanding account categories* shows the account categories provided with General Ledger, their account type, and which financial statements will contain each of the account categories.
 
 #### Setting up a quick financial statement
 
-Use the Quick Financial Setup window to define the layout for financial
-statements. Unlike other Microsoft Dynamics GP reports, financial statements
-must be set up before you can print them.
+Use the Quick Financial Setup window to define the layout for financial statements. Unlike other Microsoft Dynamics GP reports, financial statements must be set up before you can print them.
 
->   Each financial statement includes a number of required columns, which will
->   appear in the Selected Columns list. In addition to these required columns,
->   you can insert optional columns for each financial statement. On the Profit
->   and Loss Statement, Statement of Retained Earnings, and Statement of Cash
->   Flows, you can use a total of six required and optional columns. On the
->   Balance Sheet, you can use a total of five columns.
+>   Each financial statement includes a number of required columns, which will appear in the Selected Columns list. In addition to these required columns, you can insert optional columns for each financial statement. On the Profit and Loss Statement, Statement of Retained Earnings, and Statement of Cash Flows, you can use a total of six required and optional columns. On the Balance Sheet, you can use a total of five columns.
 
->   The rows in the financial statement are defined automatically, using General
->   Ledger’s account categories to group the accounts on the statements.
->   *Understanding account categories* shows the account categories provided
->   with General Ledger, their account type, and which financial statements will
->   contain each of the account categories.
+>   The rows in the financial statement are defined automatically, using General Ledger’s account categories to group the accounts on the statements. *Understanding account categories* shows the account categories provided with General Ledger, their account type, and which financial statements will contain each of the account categories.
 
->   *If you create a new financial statement using Advanced Financial Analysis,
->   you can’t use the new financial statement with Quick Financials.*
+>   *If you create a new financial statement using Advanced Financial Analysis, you can’t use the new financial statement with Quick Financials.*
 
->   You can use the Advanced Financial Report Layout window to customize the
->   financial statements provided with Microsoft Dynamics GP. For example, you
->   can add report columns, rows, and headers to these statements for reporting
->   detailed financial information specific to your business.
+>   You can use the Advanced Financial Report Layout window to customize the financial statements provided with Microsoft Dynamics GP. For example, you can add report columns, rows, and headers to these statements for reporting detailed financial information specific to your business.
 
->   *If you modify an existing quick financial statement and close the window,
->   an alert message will appear and ask if you want to save your changes. If
->   you choose Delete, the entire financial statement will be deleted.*
+>   *If you modify an existing quick financial statement and close the window, an alert message will appear and ask if you want to save your changes. If you choose Delete, the entire financial statement will be deleted.*
 
 >   **To set up a quick financial statement:**
 
 1.  Open the Quick Financial Setup window.
-
 >   (Financial \>\> Reports \>\> Financial \>\> Quick Financial)
 
 ![](media/a2bea8634cc8708bc9ddc9b2cb31e81b.jpg)
 
-1.  Enter or select a financial statement name and select a statement type.
+2.  Enter or select a financial statement name and select a statement type.
 
->   If you’re defining the layout for a Balance Sheet, Statement of Cash Flows,
->   or Statement of Retained Earnings, identify the Profit and Loss account that
->   will provide the net income or net loss source amount for the statement.
+>   If you’re defining the layout for a Balance Sheet, Statement of Cash Flows, or Statement of Retained Earnings, identify the Profit and Loss account that will provide the net income or net loss source amount for the statement.
 
-1.  You can select additional columns from the Optional Columns list to include
-    on the financial statement. Select an additional column and choose Insert to
-    add it to the Selected Columns list. You can have up to six columns for a
-    profit and loss statement, and up to five columns for a balance sheet.
+3.  You can select additional columns from the Optional Columns list to include on the financial statement. Select an additional column and choose Insert to add it to the Selected Columns list. You can have up to six columns for a profit and loss statement, and up to five columns for a balance sheet.
 
-2.  Choose Insert to insert the additional columns into the Selected Columns
-    list.
+4.  Choose Insert to insert the additional columns into the Selected Columns list.
 
->   *You can add optional columns only below a required column; you can’t insert
->   an optional column between two other optional columns or at the top of the
->   list. However, if you’re using Advanced Financial Analysis, you can add
->   report columns later or move columns to new locations.*
+>   *You can add optional columns only below a required column; you can’t insert an optional column between two other optional columns or at the top of the list. However, if you’re using Advanced Financial Analysis, you can add report columns later or move columns to new locations.*
 
->   To remove a column from the layout, highlight it and choose Remove. You can
->   remove only optional columns from the layout.
+>   To remove a column from the layout, highlight it and choose Remove. You can remove only optional columns from the layout.
 
-1.  Enter a budget ID if you've included either a year-to-date budget column or
-    current budget column on the financial statement.
+5.  Enter a budget ID if you've included either a year-to-date budget column or current budget column on the financial statement.
 
-2.  Enter or select an open year and a historical year if you’ve included a
-    column for History YTD or History Currency on the financial statement.
+6.  Enter or select an open year and a historical year if you’ve included a column for History YTD or History Currency on the financial statement.
 
->   *To use more than one budget on a report or more than one year on a history
->   column, use the Advanced Financial Report Layout window to add more
->   information for reporting detailed financial information specific to your
->   business.*
+>   *To use more than one budget on a report or more than one year on a history column, use the Advanced Financial Report Layout window to add more information for reporting detailed financial information specific to your business.*
 
-1.  Choose Save.
+7.  Choose Save.
 
 #### Printing financial statements
 
-Use the Financial Statement Report window to print financial statements. Before
-printing a financial statement, you must create a report option.
+Use the Financial Statement Report window to print financial statements. Before printing a financial statement, you must create a report option.
 
->   *If you’re printing a Statement of Retained Earnings and want to enter a
->   prior period adjustment, enter a description and amount for the adjustment
->   using the Prior Period Adjustments window (Financial \>\> Reports \>\>
->   Financial \>\> Prior Period Adjustments). The description and amount of the
->   adjustment that you enter will appear as an adjustment to the beginning
->   balance of the Retained Earnings account when you print the statement.*
+>   *If you’re printing a Statement of Retained Earnings and want to enter a prior period adjustment, enter a description and amount for the adjustment using the Prior Period Adjustments window (Financial \>\> Reports \>\> Financial \>\> Prior Period Adjustments). The description and amount of the adjustment that you enter will appear as an adjustment to the beginning balance of the Retained Earnings account when you print the statement.*
 
 >   **To print a financial statement:**
 
 1.  Open the Financial Statement Report window.
-
 >   (Financial \>\> Reports \>\> Financial \>\> Financial Statements)
 
-1.  Choose the report you want to print and choose New to open the Financial
-    Statement Report Options window and to create a new report option.
+2.  Choose the report you want to print and choose New to open the Financial Statement Report Options window and to create a new report option.
 
 ![](media/f6b501e9a5488093d0529ed9981c3992.jpg)
 
-1.  Enter a name for the report option.
+3.  Enter a name for the report option.
 
-2.  Choose the level of detail to print for the amounts. If you choose Detail
-    with Rollups, Summary, or Summary with Rollups, select whether you want the
-    first account description or the account category description to print for
-    the rows.
+4.  Choose the level of detail to print for the amounts. If you choose Detail with Rollups, Summary, or Summary with Rollups, select whether you want the first account description or the account category description to print for the rows.
 
-3.  Mark to include unit accounts and accounts with zero balances.
+5.  Mark to include unit accounts and accounts with zero balances.
 
->   If you are updating the accelerator file and want to use this updated
->   information when printing this financial statement, mark the Use Accelerator
->   option.
+>   If you are updating the accelerator file and want to use this updated information when printing this financial statement, mark the Use Accelerator option.
 
-1.  Select or enter a segment ID to print a financial statement for a range of
-    account segments. For example, you can print a financial statement for
-    departments 100 to 400 by entering a restriction on the segment that
-    represents the department.
+6.  Select or enter a segment ID to print a financial statement for a range of account segments. For example, you can print a financial statement for departments 100 to 400 by entering a restriction on the segment that represents the department.
 
->   If you select a segment ID, you can choose to print an individual report for
->   each segment within the range you define. If this box is not marked, a
->   single report will be printed that includes all accounts in the selected
->   range.
+>   If you select a segment ID, you can choose to print an individual report for each segment within the range you define. If this box is not marked, a single report will be printed that includes all accounts in the selected range.
 
->   If you have columns in the financial statement that contain user-defined
->   calculations, you can choose to base the calculation on all accounts in the
->   defined range or on the amounts on the individual reports. For more
->   information, see the Advanced Financial Analysis documentation.
+>   If you have columns in the financial statement that contain user-defined calculations, you can choose to base the calculation on all accounts in the defined range or on the amounts on the individual reports. For more information, see the Advanced Financial Analysis documentation.
 
-1.  If you want to modify a column on the financial statement, choose Adjust to
-    open the Temporary Financial Column Adjustment window. Changes made in this
-    window will be removed when you close the Financial Statement Report window.
-    If you want to make a permanent change to the financial statement, use the
-    Advanced Financial Report Layout window. For more information, see the
-    Advanced Financial Analysis documentation.
+7.  If you want to modify a column on the financial statement, choose Adjust to open the Temporary Financial Column Adjustment window. Changes made in this window will be removed when you close the Financial Statement Report window. If you want to make a permanent change to the financial statement, use the Advanced Financial Report Layout window. For more information, see the Advanced Financial Analysis documentation.
 
->   Choose Revert if you made a temporary column adjustment and want to remove
->   it before printing.
+>   Choose Revert if you made a temporary column adjustment and want to remove it before printing.
 
-1.  Choose Destination to select a printing destination. Reports can be printed
-    to the screen, to the printer, to a file, or to any combination of these
-    options. If you select Ask Each Time, you can select printing options each
-    time you print this report option.
+8.  Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
 
-2.  To print the report option from the report options window, choose Print
-    before saving it. If you don’t want to print the option now, choose Save and
-    close the window. The report window will be redisplayed.
+9.  To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
 **Chapter 31: General Ledger reports**
 
->   You can use General Ledger reports to analyze account activity and identify
->   errors in transaction entry. Use this information to guide you through
->   printing reports and working with report options. For more information about
->   creating and printing reports, and the various reporting tools that you can
->   use with Microsoft Dynamics GP, refer to your System User's Guide (Help \>\>
->   Contents \>\> select Using The System).
+>   You can use General Ledger reports to analyze account activity and identify errors in transaction entry. Use this information to guide you through printing reports and working with report options. For more information about creating and printing reports, and the various reporting tools that you can use with Microsoft Dynamics GP, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
 >   This information is divided into the following sections:
 
@@ -4677,24 +3748,11 @@ printing a financial statement, you must create a report option.
 
 #### General Ledger report summary
 
->   You can print several types of reports using General Ledger. Some reports
->   automatically are printed when you complete certain procedures; for example,
->   posting journals can automatically be printed when you post transactions,
->   depending on how your posting options are set up. You can choose to print
->   some reports during procedures; for example, you can print an edit list when
->   entering transactions by choosing the Print button in the batch entry
->   window.
+>   You can print several types of reports using General Ledger. Some reports automatically are printed when you complete certain procedures; for example, posting journals can automatically be printed when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window.
 
->   In order to print some reports, such as analysis or history reports, you
->   must set up report options to specify sorting options and ranges of
->   information to include on the report. For more information, refer to
->   *Specifying a General Ledger report option*.
+>   In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Specifying a General Ledger report option*.
 
->   The following table lists the report types available in General Ledger and
->   the reports that fall into those categories. (Reports printed using Bank
->   Reconciliation are printed using many of the same windows. Refer to the Bank
->   Reconciliation documentation for information about reports printed in that
->   module.)
+>   The following table lists the report types available in General Ledger and the reports that fall into those categories. (Reports printed using Bank Reconciliation are printed using many of the same windows. Refer to the Bank Reconciliation documentation for information about reports printed in that module.)
 
 | **Report type**                                                                                                                                                                                                                                                  | **Report**                                                                                                                           | **Printing method**                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -4774,9 +3832,7 @@ printing a financial statement, you must create a report option.
 
 >   Quick Trial Balance Summary\*†
 
->   † Indicates reports that can be assigned to named printers. See the System
->   Administrator’s Guide (Help \>\> Contents \>\> select System Administration)
->   for more information.
+>   † Indicates reports that can be assigned to named printers. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.
 
 | **Report type**                                                                                                                                                                                                                                                  | **Report**                                                                                         | **Printing method**                                                                                                                                                            |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -4786,79 +3842,42 @@ printing a financial statement, you must create a report option.
 
 #### Specifying a General Ledger report option
 
->   Report options include specifications for sorting options and range
->   restrictions for a particular report. In order to print several General
->   Ledger reports, you must first create a report option. Each report can have
->   several different options so that you can easily print the information you
->   need. For example, you can create report options for the Trial Balance
->   Report that show either detailed or summary information.
+>   Report options include specifications for sorting options and range restrictions for a particular report. In order to print several General Ledger reports, you must first create a report option. Each report can have several different options so that you can easily print the information you need. For example, you can create report options for the Trial Balance Report that show either detailed or summary information.
 
->   *A single report option can’t be used by multiple reports. If you want
->   identical options for several reports, you must create them separately.*
+>   *A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.*
 
->   Use the Financial report options windows to create sorting, restriction, and
->   printing options for the reports that have been included with General
->   Ledger.
+>   Use the Financial report options windows to create sorting, restriction, and printing options for the reports that have been included with General Ledger.
 
 >   **To specify a General Ledger report option:**
 
-1.  Open a Financial reports window. There are separate windows for each report
-    type.
-
+1.  Open a Financial reports window. There are separate windows for each report type.
 >   (Financial \>\> Reports \>\> Financial \>\> Account)
-
 >   (Financial \>\> Reports \>\> Financial \>\> Setup)
-
 >   (Financial \>\> Reports \>\> Financial \>\> Financial Statements)
-
 >   (Financial \>\> Reports \>\> Financial \>\> Budget)
-
 >   (Financial \>\> Reports \>\> Financial \>\> Cross-Reference)
-
 >   (Financial \>\> Reports \>\> Financial \>\> Trial Balance)
-
 >   (Financial \>\> Reports \>\> Financial \>\> Deferral)
 
-1.  Select a report from the Reports list.
+2.  Select a report from the Reports list.
 
-2.  Choose New to open the report options window. Your selection in step 2
-    determines which report options window appears.
+3.  Choose New to open the report options window. Your selection in step 2 determines which report options window appears.
 
-3.  Name the option and enter information to define the option. The name you
-    choose for the option won’t appear on the report. The selections available
-    for defining report options vary, depending on the report type you’ve
-    selected.
+4.  Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
 
-4.  Enter range restrictions. The Ranges list shows the available options for
-    each report. The available ranges vary, depending on the type of report.
+5.  Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
->   *You can enter only one restriction for each restriction type. For instance,
->   you can insert one account segment ID restriction (1100 to 1104) and one
->   account description restriction (Cash - Operating Account to Cash in Bank -
->   South Africa).*
+>   *You can enter only one restriction for each restriction type. For instance, you can insert one account segment ID restriction (1100 to 1104) and one account description restriction (Cash - Operating Account to Cash in Bank - South Africa).*
 
-1.  Choose Insert to insert the range in the Restrictions List. To remove an
-    existing range from the list, select the range and choose Remove.
+6.  Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-2.  Choose Destination to select a printing destination. Reports can be printed
-    to the screen, to the printer, to a file, or to any combination of these
-    options. If you select Ask Each Time, you can select printing options each
-    time you print this report option.
+7.  Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
 
-3.  To print the report option from the report options window, choose Print
-    before saving it. If you don’t want to print the option now, choose Save and
-    close the window. The report window will be redisplayed.
+8.  To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
 #### General Ledger Microsoft SQL Server® Reporting Services reports
 
-You can view General Ledger Reporting Services reports from the Reporting
-Services Reports list. If you are using Reporting Services 2008, financial
-metrics for your home page also appear in the Reporting Services Reports list.
-You can access the Reporting Services Reports list from the navigation pane or
-from an area page in the Microsoft Dynamics GP application window. This report
-list appears if you specified the location of your Reporting Services reports
-using the Reporting Tools Setup window. See your System Setup Guide (Help \>\>
-Contents \>\> select Setting up the System) for more information.
+You can view General Ledger Reporting Services reports from the Reporting Services Reports list. If you are using Reporting Services 2008, financial metrics for your home page also appear in the Reporting Services Reports list. You can access the Reporting Services Reports list from the navigation pane or from an area page in the Microsoft Dynamics GP application window. This report list appears if you specified the location of your Reporting Services reports using the Reporting Tools Setup window. See your System Setup Guide (Help \>\> Contents \>\> select Setting up the System) for more information.
 
 The following Reporting Services reports are available for General Ledger.
 
@@ -4868,43 +3887,33 @@ Trial Balance Detail Trial Balance Summary
 
 **To print a General Ledger Reporting Services report:**
 
-1.  In the navigation pane, choose the Financial button, and then choose the
-    Reporting Services Reports list.
+1.  In the navigation pane, choose the Financial button, and then choose the Reporting Services Reports list.
 
 2.  Mark the General Ledger report that you want to print.
 
 3.  In the Actions group, choose View to open the Report Viewer.
 
-4.  In the Report Viewer, select the specifications for the report and choose
-    View Report.
+4.  In the Report Viewer, select the specifications for the report and choose View Report.
 
 5.  After viewing the report, select a format and print the report.
 
 **Part 6: Utilities and routines**
 
->   Utilities are the procedures you need to maintain your data in General
->   Ledger.
+>   Utilities are the procedures you need to maintain your data in General Ledger.
 
->   Routines are the sets of procedures you need to complete periodically. You
->   can use the checklists provided with General Ledger, you can customize those
->   checklists to suit your needs, or you can create your own checklists.
+>   Routines are the sets of procedures you need to complete periodically. You can use the checklists provided with General Ledger, you can customize those checklists to suit your needs, or you can create your own checklists.
 
 >   The following information is discussed:
 
--   *Chapter 32, “Checklists,”* describes how you can create customized
-    checklists of General Ledger routines or modify existing checklists.
+-   *Chapter 32, “Checklists,”* describes how you can create customized checklists of General Ledger routines or modify existing checklists.
 
--   *Chapter 33, “Period and year-end routines,”* provides procedures to
-    consolidate and close a period, as well as close a year.
+-   *Chapter 33, “Period and year-end routines,”* provides procedures to consolidate and close a period, as well as close a year.
 
--   *Chapter 34, “Account utilities,”* shows how to maintain your data in
-    General Ledger.
+-   *Chapter 34, “Account utilities,”* shows how to maintain your data in General Ledger.
 
 **Chapter 32: Checklists**
 
->   You can create customized checklists of General Ledger routines or modify
->   existing checklists. For example, you can set up a checklist to ensure that
->   your month-end reports are printed consistently each month.
+>   You can create customized checklists of General Ledger routines or modify existing checklists. For example, you can set up a checklist to ensure that your month-end reports are printed consistently each month.
 
 >   Checklist information is contained in the following sections:
 
@@ -4914,39 +3923,30 @@ Trial Balance Detail Trial Balance Summary
 
 #### Using a General Ledger checklist
 
->   Use the Financial Checklists window to complete a General Ledger checklist.
->   As you select each step in the routine list, the appropriate window used to
->   complete that procedure appears. You can enter the necessary information in
->   the window, referring to the procedures in the printed manual or to the
->   online documentation whenever necessary.
+>   Use the Financial Checklists window to complete a General Ledger checklist. As you select each step in the routine list, the appropriate window used to complete that procedure appears. You can enter the necessary information in the window, referring to the procedures in the printed manual or to the online documentation whenever necessary.
 
 >   **To use a General Ledger checklist:**
 
 1.  Open the Financial Checklists window.
-
 >   (Financial \>\> Routines \>\> Financial \>\> Checklists)
 
 ![](media/286463460ab461fd729920b1bad802ff.jpg)
 
-1.  Select a frequency from the Frequency list. The list of tasks appears.
+2.  Select a frequency from the Frequency list. The list of tasks appears.
 
-2.  Select a task in the checklist.
+3.  Select a task in the checklist.
 
-3.  Choose Open. The appropriate window opens for the selected task.
+4.  Choose Open. The appropriate window opens for the selected task.
 
-4.  Perform the required task, then close the window.
+5.  Perform the required task, then close the window.
 
-5.  In the Financial Checklists window, select the next task.
+6.  In the Financial Checklists window, select the next task.
 
->   When you save the information, the window closes, and the Financial
->   Checklists window becomes active, displaying the date the procedure was
->   completed and the ID of the user who completed it.
+>   When you save the information, the window closes, and the Financial Checklists window becomes active, displaying the date the procedure was completed and the ID of the user who completed it.
 
 #### Adding or modifying a checklist item
 
->   Use the Financial Checklists window to add or modify checklists of financial
->   routines. You can select the frequency with which each set of routines
->   should be completed. The following frequencies are available:
+>   Use the Financial Checklists window to add or modify checklists of financial routines. You can select the frequency with which each set of routines should be completed. The following frequencies are available:
 
 -   Daily
 
@@ -4961,27 +3961,19 @@ Trial Balance Detail Trial Balance Summary
 >   **To add or modify a checklist item:**
 
 1.  Open the Financial Checklists window.
-
 >   (Financial \>\> Routines \>\> Financial \>\> Checklists)
 
-1.  Select a frequency.
+2.  Select a frequency.
 
-2.  Choose Add to add an item or select an item and choose Modify to modify an
-    item. The Add-Modify Financial Routines window will open.
+3.  Choose Add to add an item or select an item and choose Modify to modify an item. The Add-Modify Financial Routines window will open.
 
-3.  Enter the item information.
+4.  Enter the item information.
 
-4.  Choose OK to save the information. The Financial Checklists window is
-    redisplayed, where you can adjust the position of the item in the checklist.
+5.  Choose OK to save the information. The Financial Checklists window is redisplayed, where you can adjust the position of the item in the checklist.
 
 **Chapter 33: Period and year-end routines**
 
->   This part of the documentation describes routines you may complete at the
->   end of a period and at the end of a year. This chapter describes a
->   spreadsheet that you can generate to help you match transactions in General
->   Ledger with the corresponding transactions in the original module. You can
->   also find information to help you prepare and close a period and to prepare
->   and close a year. A procedure for printing a VAT return is also included.
+>   This part of the documentation describes routines you may complete at the end of a period and at the end of a year. This chapter describes a spreadsheet that you can generate to help you match transactions in General Ledger with the corresponding transactions in the original module. You can also find information to help you prepare and close a period and to prepare and close a year. A procedure for printing a VAT return is also included.
 
 >   This information is divided into the following sections:
 
@@ -5003,36 +3995,17 @@ Trial Balance Detail Trial Balance Summary
 
 #### Reconciling to General Ledger
 
->   During normal business operations, thousands of transactions can be
->   processed. When working with this volume of transactions, standard processes
->   might be inadvertently changed, or unintended entries made and posted. As a
->   result, the balances on a General Ledger trial balance report might not
->   match the corresponding balance on trial balance reports printed in the
->   original module. Some specific examples might include the following.
+>   During normal business operations, thousands of transactions can be processed. When working with this volume of transactions, standard processes might be inadvertently changed, or unintended entries made and posted. As a result, the balances on a General Ledger trial balance report might not match the corresponding balance on trial balance reports printed in the original module. Some specific examples might include the following.
 
--   A transaction is posted to—but not through—General Ledger and is deleted
-    before it’s posted in General Ledger.
+-   A transaction is posted to—but not through—General Ledger and is deleted before it’s posted in General Ledger.
 
--   A transaction is posted to General Ledger, but the amounts are changed
-    before it’s posted in General Ledger.
+-   A transaction is posted to General Ledger, but the amounts are changed before it’s posted in General Ledger.
 
->   Use the Reconcile to GL window to set the restrictions for generating a
->   Microsoft Excel spreadsheet that can help you match transactions in General
->   Ledger with the original transaction. This spreadsheet provides information
->   that helps you enter adjusting transactions that reconcile any
->   discrepancies. For information about how transactions are matched, refer to
->   *Understanding the reconciliation spreadsheet*.
+>   Use the Reconcile to GL window to set the restrictions for generating a Microsoft Excel spreadsheet that can help you match transactions in General Ledger with the original transaction. This spreadsheet provides information that helps you enter adjusting transactions that reconcile any discrepancies. For information about how transactions are matched, refer to *Understanding the reconciliation spreadsheet*.
 
->   Transactions are displayed on the spreadsheet using the functional currency.
->   To be included in the spreadsheet, transactions must be posted and exist in
->   either an Open or History table.
+>   Transactions are displayed on the spreadsheet using the functional currency. To be included in the spreadsheet, transactions must be posted and exist in either an Open or History table.
 
->   *The reconcile routine can help you analyze transactions in General Ledger,
->   but it doesn’t change data automatically, even if unmatched transactions are
->   identified. Adjustments are not automatically created or posted, nor are
->   transactions marked or identified as being reconciled within General Ledger.
->   For information about entering reversing or correcting transactions in
->   General Ledger, refer to Chapter 23, “Correcting transactions.”*
+>   *The reconcile routine can help you analyze transactions in General Ledger, but it doesn’t change data automatically, even if unmatched transactions are identified. Adjustments are not automatically created or posted, nor are transactions marked or identified as being reconciled within General Ledger. For information about entering reversing or correcting transactions in General Ledger, refer to Chapter 23, “Correcting transactions.”*
 
 >   Use the following procedures to help you reconcile the following modules:
 
@@ -5047,288 +4020,148 @@ Trial Balance Detail Trial Balance Summary
 >   **To reconcile Payables Management to General Ledger**
 
 1.  Open the Reconcile to GL window.
-
 >   (Financial \>\> Routines \>\> Financial \>\> Reconcile to GL)
 
-1.  Enter or select the Reconciliation number. This number is used as part of
-    the default file name for the Excel spreadsheet. You can enter and save the
-    information for the reconciliation and process later.
+2.  Enter or select the Reconciliation number. This number is used as part of the default file name for the Excel spreadsheet. You can enter and save the information for the reconciliation and process later.
 
-2.  Enter the date for this reconciliation. The user date is the default date.
+3.  Enter the date for this reconciliation. The user date is the default date.
 
-3.  Enter the date range for the transactions to include in this reconciliation.
-    Typically, reconciling to General Ledger is processed once a month, but
-    transactions can be reconciled more or less often depending on the number of
-    transactions in the module. The Payables Management transactions with a
-    transaction date that is on or between the date range will be included in
-    the reconcile.
+4.  Enter the date range for the transactions to include in this reconciliation. Typically, reconciling to General Ledger is processed once a month, but transactions can be reconciled more or less often depending on the number of transactions in the module. The Payables Management transactions with a transaction date that is on or between the date range will be included in the reconcile.
 
-4.  Select Payables Management to reconcile with General Ledger.
+5.  Select Payables Management to reconcile with General Ledger.
 
-5.  Select a file location for the Excel spreadsheet that will be created. The
-    output file and location is module-specific. After the first time you
-    reconcile, the most recently used location for Payables Management
-    reconciliations will be the default location.
+6.  Select a file location for the Excel spreadsheet that will be created. The output file and location is module-specific. After the first time you reconcile, the most recently used location for Payables Management reconciliations will be the default location.
 
->   The default file name is created for the Excel spreadsheet by using the
->   module abbreviation, reconciliation number, and date. This name can be
->   changed, however, we recommend that you use a consistent naming convention
->   and folder for all reconcile to General Ledger spreadsheets.
+>   The default file name is created for the Excel spreadsheet by using the module abbreviation, reconciliation number, and date. This name can be changed, however, we recommend that you use a consistent naming convention and folder for all reconcile to General Ledger spreadsheets.
 
-1.  Enter the accounts to use to match Payables Management transactions to
-    General Ledger distributions. This would most often be the Accounts Payable
-    or Discount Available accounts. The accounts that were on the previous
-    reconciliation for Payables Management are displayed, if this is not the
-    first reconciliation for this module.
+7.  Enter the accounts to use to match Payables Management transactions to General Ledger distributions. This would most often be the Accounts Payable or Discount Available accounts. The accounts that were on the previous reconciliation for Payables Management are displayed, if this is not the first reconciliation for this module.
 
-2.  Choose Process. The matching process begins and the following occurs:
+8.  Choose Process. The matching process begins and the following occurs:
 
-    -   Transactions from Payables Management are matched with General Ledger
-        distributions using the transaction source code, voucher number, posting
-        date, and transaction amount. This process may take some time, depending
-        on the number of transactions being processed.
+    -   Transactions from Payables Management are matched with General Ledger distributions using the transaction source code, voucher number, posting date, and transaction amount. This process may take some time, depending on the number of transactions being processed.
 
-    -   Transactions are potentially matched if some, but not all, of the
-        information matches. For example, if the source code and date for the
-        transaction matches the code and date in General Ledger, but the
-        transaction amounts don’t match, the transactions are considered
-        potentially matched and will appear in that section of the spreadsheet.
+    -   Transactions are potentially matched if some, but not all, of the information matches. For example, if the source code and date for the transaction matches the code and date in General Ledger, but the transaction amounts don’t match, the transactions are considered potentially matched and will appear in that section of the spreadsheet.
 
-    -   If the transaction exists in Payables Management but not in General
-        Ledger or vice versa, the transaction is unmatched and will appear in
-        the Unmatched section of the spreadsheet.
+    -   If the transaction exists in Payables Management but not in General Ledger or vice versa, the transaction is unmatched and will appear in the Unmatched section of the spreadsheet.
 
-    -   The subledger and General Ledger balances are calculated and displayed
-        in the window.
+    -   The subledger and General Ledger balances are calculated and displayed in the window.
 
-    -   The Excel spreadsheet is created and saved in the output file location
-        that you specified in step 6. After the processing is complete, the
-        spreadsheet will open.
+    -   The Excel spreadsheet is created and saved in the output file location that you specified in step 6. After the processing is complete, the spreadsheet will open.
 
->   You can use the spreadsheet to determine which, if any, next steps you need
->   to make.
+>   You can use the spreadsheet to determine which, if any, next steps you need to make.
 
 >   **To reconcile Receivables Management to General Ledger:**
 
 1.  Open the Reconcile to GL window.
-
 >   (Financial \>\> Routines \>\> Financial \>\> Reconcile to GL)
 
-1.  Enter or select the Reconciliation number. The number is used as part of the
-    default file name for the Excel spreadsheet. You can enter and save the
-    information for the reconciliation and process later.
+2.  Enter or select the Reconciliation number. The number is used as part of the default file name for the Excel spreadsheet. You can enter and save the information for the reconciliation and process later.
 
-2.  Enter the date for this reconciliation. The user date is the default date.
+3.  Enter the date for this reconciliation. The user date is the default date.
 
-3.  Enter the date range for the transactions to include in this reconciliation.
-    Typically, reconciling to General Ledger is processed once a month, but
-    transactions can be reconciled more or less often depending on the number of
-    transactions in the module. The Receivables Management transactions with a
-    transaction date that is on or between the date range will be included in
-    the reconcile.
+4.  Enter the date range for the transactions to include in this reconciliation. Typically, reconciling to General Ledger is processed once a month, but transactions can be reconciled more or less often depending on the number of transactions in the module. The Receivables Management transactions with a transaction date that is on or between the date range will be included in the reconcile.
 
-4.  Select Receivables Management to reconcile with General Ledger.
+5.  Select Receivables Management to reconcile with General Ledger.
 
-5.  Select a file location for the Excel spreadsheet that will be created. The
-    output file and location is module-specific. After the first time you
-    reconcile, the most recently used location for Receivables Management
-    reconciliations will be the default location.
+6.  Select a file location for the Excel spreadsheet that will be created. The output file and location is module-specific. After the first time you reconcile, the most recently used location for Receivables Management reconciliations will be the default location.
 
->   The default file name is created for the Excel spreadsheet using the module
->   abbreviation, reconciliation number, and date. This name can be changed,
->   however, we recommend that you use a consistent naming convention and folder
->   for all reconcile to General Ledger spreadsheets.
+>   The default file name is created for the Excel spreadsheet using the module abbreviation, reconciliation number, and date. This name can be changed, however, we recommend that you use a consistent naming convention and folder for all reconcile to General Ledger spreadsheets.
 
-1.  Enter the accounts to use to match Receivables Management transactions to
-    General Ledger distributions. This would most often be the Accounts
-    Receivable or Discount Available accounts. The accounts that were on the
-    previous reconciliation for Receivables Management are displayed, if this is
-    not the first reconciliation for this module.
+7.  Enter the accounts to use to match Receivables Management transactions to General Ledger distributions. This would most often be the Accounts Receivable or Discount Available accounts. The accounts that were on the previous reconciliation for Receivables Management are displayed, if this is not the first reconciliation for this module.
 
-2.  Choose Process. The matching process begins and the following occurs:
+8.  Choose Process. The matching process begins and the following occurs:
 
-    -   Transactions from Receivables Management are matched with General Ledger
-        distributions using the transaction source code, document number,
-        posting date, and transaction amount. This process may take some time,
-        depending on the number of transactions being processed.
+    -   Transactions from Receivables Management are matched with General Ledger distributions using the transaction source code, document number, posting date, and transaction amount. This process may take some time, depending on the number of transactions being processed.
 
-    -   Transactions are potentially matched if some, but not all, of the
-        information matches. For example, if the source code and date for the
-        transaction matches the code and date in General Ledger, but the
-        transaction amounts don’t match, the transactions are considered
-        potentially matched and will appear in that section of the spreadsheet.
+    -   Transactions are potentially matched if some, but not all, of the information matches. For example, if the source code and date for the transaction matches the code and date in General Ledger, but the transaction amounts don’t match, the transactions are considered potentially matched and will appear in that section of the spreadsheet.
 
-    -   If the transaction exists in Receivables Management but not in General
-        Ledger or vice versa, the transaction is unmatched and will appear in
-        the Unmatched section of the spreadsheet.
+    -   If the transaction exists in Receivables Management but not in General Ledger or vice versa, the transaction is unmatched and will appear in the Unmatched section of the spreadsheet.
 
-    -   The subledger and General Ledger balances are calculated and displayed
-        in the window.
+    -   The subledger and General Ledger balances are calculated and displayed in the window.
 
-    -   The Excel spreadsheet is created and saved in the output file location
-        that you specified in step 6. After the processing is complete, the
-        spreadsheet will open.
+    -   The Excel spreadsheet is created and saved in the output file location that you specified in step 6. After the processing is complete, the spreadsheet will open.
 
->   You can use the spreadsheet to determine which, if any, next steps you need
->   to make.
+>   You can use the spreadsheet to determine which, if any, next steps you need to make.
 
 >   **To reconcile Inventory Control to General Ledger**
 
->   *The Historical Inventory Trial Balance (HITB) table is used to reconcile
->   Inventory to General Ledger. Depending on the version of Microsoft Dynamics
->   GP you’re using, this table may not be included in your system. You must
->   contact Microsoft Dynamics GP Technical Support to see if the Historical
->   Inventory Trial Balance report and the HITB Inventory Reset Tool fits your
->   current business process.*
+>   *The Historical Inventory Trial Balance (HITB) table is used to reconcile Inventory to General Ledger. Depending on the version of Microsoft Dynamics GP you’re using, this table may not be included in your system. You must contact Microsoft Dynamics GP Technical Support to see if the Historical Inventory Trial Balance report and the HITB Inventory Reset Tool fits your current business process.*
 
 1.  Open the Reconcile to GL window.
-
 >   (Financial \>\> Routines \>\> Financial \>\> Reconcile to GL)
 
-1.  Enter or select the Reconciliation number. This number is used as part of
-    the default file name for the Excel spreadsheet. You can enter and save the
-    information for the reconciliation and process later.
+2.  Enter or select the Reconciliation number. This number is used as part of the default file name for the Excel spreadsheet. You can enter and save the information for the reconciliation and process later.
 
-2.  Enter the date for this reconciliation. The user date is the default date.
+3.  Enter the date for this reconciliation. The user date is the default date.
 
-3.  Enter the date range for the transactions to include in this reconciliation.
-    Typically, reconciling to General Ledger is processed once a month, but
-    transactions can be reconciled more or less often depending on the number of
-    transactions in the module. The Inventory transactions with a transaction
-    date that is on or between the date range will be included in the reconcile.
+4.  Enter the date range for the transactions to include in this reconciliation. Typically, reconciling to General Ledger is processed once a month, but transactions can be reconciled more or less often depending on the number of transactions in the module. The Inventory transactions with a transaction date that is on or between the date range will be included in the reconcile.
 
->   *If any dates in the range are prior to the date you installed a version of
->   Microsoft Dynamics GP that includes HITB or updated your system using the
->   Inventory Reset Tool, you won’t be able to reconcile Inventory to General
->   Ledger.*
+>   *If any dates in the range are prior to the date you installed a version of Microsoft Dynamics GP that includes HITB or updated your system using the Inventory Reset Tool, you won’t be able to reconcile Inventory to General Ledger.*
 
-1.  Select Inventory to reconcile with General Ledger.
+5.  Select Inventory to reconcile with General Ledger.
 
-2.  Select a file location for the Excel spreadsheet that will be created. The
-    output file and location is module-specific. After the first time you
-    reconcile, the most recently used location for Inventory reconciliations
-    will be the default location.
+6.  Select a file location for the Excel spreadsheet that will be created. The output file and location is module-specific. After the first time you reconcile, the most recently used location for Inventory reconciliations will be the default location.
 
->   The default file name is created for the Excel spreadsheet using the module
->   abbreviation, reconciliation number and date. This name can be changed,
->   however, we recommend that you use a consistent naming convention and folder
->   for all reconcile to General Ledger spreadsheets.
+>   The default file name is created for the Excel spreadsheet using the module abbreviation, reconciliation number and date. This name can be changed, however, we recommend that you use a consistent naming convention and folder for all reconcile to General Ledger spreadsheets.
 
-1.  Enter the accounts to use to match Inventory transactions to General Ledger
-    distributions. This would most often be the Inventory accounts. The accounts
-    that were on the previous reconciliation for Inventory Control are
-    displayed, if this is not the first reconciliation for this module.
+7.  Enter the accounts to use to match Inventory transactions to General Ledger distributions. This would most often be the Inventory accounts. The accounts that were on the previous reconciliation for Inventory Control are displayed, if this is not the first reconciliation for this module.
 
-2.  Choose Process. The matching process begins and the following occurs:
+8.  Choose Process. The matching process begins and the following occurs:
 
-    -   Transactions from Inventory are matched with General Ledger
-        distributions using the journal entry, transaction source code, document
-        number, posting date, and extended cost amount. This process may take
-        some time, depending on the number of transactions being processed.
+    -   Transactions from Inventory are matched with General Ledger distributions using the journal entry, transaction source code, document number, posting date, and extended cost amount. This process may take some time, depending on the number of transactions being processed.
 
-    -   Transactions are potentially matched if some, but not all, of the
-        information matches. For example, if the source code and date for the
-        transaction matches the code and date in General Ledger, but the
-        transaction amounts don’t match, the transactions are considered
-        potentially matched and will appear in that section of the spreadsheet.
+    -   Transactions are potentially matched if some, but not all, of the information matches. For example, if the source code and date for the transaction matches the code and date in General Ledger, but the transaction amounts don’t match, the transactions are considered potentially matched and will appear in that section of the spreadsheet.
 
-    -   If the transaction exists in Inventory but not in General Ledger or vice
-        versa, the transaction is unmatched and will appear in the Unmatched
-        section of the spreadsheet.
+    -   If the transaction exists in Inventory but not in General Ledger or vice versa, the transaction is unmatched and will appear in the Unmatched section of the spreadsheet.
 
-    -   The subledger and General Ledger balances are calculated and displayed
-        in the window.
+    -   The subledger and General Ledger balances are calculated and displayed in the window.
 
-    -   The Excel spreadsheet is created and saved in the output file location
-        that you specified in step 6. After the processing is complete, the
-        spreadsheet will open.
+    -   The Excel spreadsheet is created and saved in the output file location that you specified in step 6. After the processing is complete, the spreadsheet will open.
 
->   You can use the spreadsheet to determine which, if any, next steps you need
->   to make.
+>   You can use the spreadsheet to determine which, if any, next steps you need to make.
 
 >   **To reconcile Bank Reconciliation to General Ledger**
 
 1.  Open the Reconcile to GL window.
-
 >   (Financial \>\> Routines \>\> Financial \>\> Reconcile to GL)
 
-1.  Enter or select the Reconciliation number. This number is used as part of
-    the default file name for the Excel spreadsheet. You can enter and save the
-    information for the reconciliation and process later.
+2.  Enter or select the Reconciliation number. This number is used as part of the default file name for the Excel spreadsheet. You can enter and save the information for the reconciliation and process later.
 
-2.  Enter the date for this reconciliation. The user date is the default date.
+3.  Enter the date for this reconciliation. The user date is the default date.
 
-3.  Enter the date range for the transactions to include in this reconciliation.
-    Typically, reconciling to General Ledger is processed once a month, but
-    transactions can be reconciled more or less often depending on the number of
-    transactions in the module. The Bank Reconciliation transactions with a
-    transaction date that is on or between the date range will be included in
-    the reconcile.
+4.  Enter the date range for the transactions to include in this reconciliation. Typically, reconciling to General Ledger is processed once a month, but transactions can be reconciled more or less often depending on the number of transactions in the module. The Bank Reconciliation transactions with a transaction date that is on or between the date range will be included in the reconcile.
 
-4.  Select Bank Reconciliation to reconcile with General Ledger
+5.  Select Bank Reconciliation to reconcile with General Ledger
 
-5.  Select the checkbook that contains the transactions to reconcile.
-    Reconciliation information for Bank Reconciliation is saved and processed on
-    a checkbook-by checkbook basis.
+6.  Select the checkbook that contains the transactions to reconcile. Reconciliation information for Bank Reconciliation is saved and processed on a checkbook-by checkbook basis.
 
-6.  Select a file location for the Excel spreadsheet that will be created. The
-    output file and location is module specific. After the first time you
-    reconcile, the most recently used location for Bank Reconciliation
-    reconciliations will be the default location.
+7.  Select a file location for the Excel spreadsheet that will be created. The output file and location is module specific. After the first time you reconcile, the most recently used location for Bank Reconciliation reconciliations will be the default location.
 
->   A default file name is created for the Excel spreadsheet using the
->   checkbook, reconciliation number and date. This name can be changed,
->   however, we recommend that you use a consistent naming convention and folder
->   for all reconcile to General Ledger spreadsheets.
+>   A default file name is created for the Excel spreadsheet using the checkbook, reconciliation number and date. This name can be changed, however, we recommend that you use a consistent naming convention and folder for all reconcile to General Ledger spreadsheets.
 
-1.  The cash account for the checkbook that you’re reconciling with General
-    Ledger appears as a default account in the Account list. In Bank
-    Reconciliation, each checkbook is assigned only one account, therefore, only
-    one account should be entered in this window.
+8.  The cash account for the checkbook that you’re reconciling with General Ledger appears as a default account in the Account list. In Bank Reconciliation, each checkbook is assigned only one account, therefore, only one account should be entered in this window.
 
-2.  Choose Process. The matching process begins and the following occurs:
+9.  Choose Process. The matching process begins and the following occurs:
 
-    -   Transactions from Bank Reconciliation are matched with General Ledger
-        distributions using the transaction source code, document number,
-        transaction date, and payment or deposit amount. This process may take
-        some time, depending on the number of transactions being processed.
+    -   Transactions from Bank Reconciliation are matched with General Ledger distributions using the transaction source code, document number, transaction date, and payment or deposit amount. This process may take some time, depending on the number of transactions being processed.
 
-    -   Transactions are potentially matched if some, but not all, of the
-        information matches. For example, if the source code for the transaction
-        matches the code in General Ledger, but the transaction amounts don’t
-        match, the transactions are considered potentially matched and will
-        appear in that section of the spreadsheet.
+    -   Transactions are potentially matched if some, but not all, of the information matches. For example, if the source code for the transaction matches the code in General Ledger, but the transaction amounts don’t match, the transactions are considered potentially matched and will appear in that section of the spreadsheet.
 
-    -   If the transaction exists in Bank Reconciliation but not in General
-        Ledger or vice versa, the transaction is unmatched and will appear in
-        the Unmatched section of the spreadsheet.
+    -   If the transaction exists in Bank Reconciliation but not in General Ledger or vice versa, the transaction is unmatched and will appear in the Unmatched section of the spreadsheet.
 
-    -   The subledger and General Ledger balances are calculated and displayed
-        in the window.
+    -   The subledger and General Ledger balances are calculated and displayed in the window.
 
-    -   The Excel spreadsheet is created and saved in the output file location
-        that you specified in step 7. After the processing is complete, the
-        spreadsheet will open.
+    -   The Excel spreadsheet is created and saved in the output file location that you specified in step 7. After the processing is complete, the spreadsheet will open.
 
->   You can use the spreadsheet to determine which, if any, next steps you need
->   to make.
+>   You can use the spreadsheet to determine which, if any, next steps you need to make.
 
 #### Understanding the reconciliation spreadsheet
 
->   The Excel spreadsheet that is created through the reconciliation process can
->   be used to identify the unmatched or potentially matched transactions to
->   help you find the transactions that you may need to correct. Matched
->   transactions will also be printed on the spreadsheets as a reference.
+>   The Excel spreadsheet that is created through the reconciliation process can be used to identify the unmatched or potentially matched transactions to help you find the transactions that you may need to correct. Matched transactions will also be printed on the spreadsheets as a reference.
 
->   There are links from several cells on the spreadsheet to the entry or
->   inquiry windows in the original module, so you can see details that aren’t
->   available on the spreadsheet.
+>   There are links from several cells on the spreadsheet to the entry or inquiry windows in the original module, so you can see details that aren’t available on the spreadsheet.
 
->   The information used to match transactions with General Ledger differs
->   depending on which module you’re reconciling. In addition, some modules
->   display additional information on the spreadsheet to help you identify the
->   transaction in the original module. The following table shows which fields
->   are used to match the corresponding General Ledger field in each module.
+>   The information used to match transactions with General Ledger differs depending on which module you’re reconciling. In addition, some modules display additional information on the spreadsheet to help you identify the transaction in the original module. The following table shows which fields are used to match the corresponding General Ledger field in each module.
 
 | **General Ledger** | **Inventory**  | **Receivables**  |
 |--------------------|----------------|------------------|
@@ -5355,243 +4188,117 @@ Trial Balance Detail Trial Balance Summary
 
 >   **Number**
 
->   After the information is processed, you will see three sections on the Excel
->   spreadsheet that opens.
+>   After the information is processed, you will see three sections on the Excel spreadsheet that opens.
 
 >   **Unmatched**
 
->   This section of the spreadsheet lists the transactions in which no fields in
->   the subledger and General Ledger match. This may occur, for example, if
->   transactions are not posted in General Ledger, or if subledger history has
->   been removed.
+>   This section of the spreadsheet lists the transactions in which no fields in the subledger and General Ledger match. This may occur, for example, if transactions are not posted in General Ledger, or if subledger history has been removed.
 
 >   **Potentially Matched**
 
--   If some subledger fields, but not all, match the corresponding fields in
-    General Ledger, the transactions are considered Potentially Matched and are
-    listed in that section of the spreadsheet.
+-   If some subledger fields, but not all, match the corresponding fields in General Ledger, the transactions are considered Potentially Matched and are listed in that section of the spreadsheet.
 
--   Potentially matched transactions may occur if, for example, a Receivables
-
->   Management transaction is entered and posted but the corresponding General
->   Ledger transaction is deleted. If the General Ledger transaction is
->   re-entered and posted because the correction has been made, the transaction
->   amounts and posting dates are the same, but the audit trail and document
->   number entries will be different.
+-   Potentially matched transactions may occur if, for example, a Receivables Management transaction is entered and posted but the corresponding General Ledger transaction is deleted. If the General Ledger transaction is re-entered and posted because the correction has been made, the transaction amounts and posting dates are the same, but the audit trail and document number entries will be different.
 
 >   **Matched**
 
--   When all fields in the subledger match the corresponding fields in General
-    Ledger, the transactions are considered Matched and are listed in that
-    section of the spreadsheet.
+-   When all fields in the subledger match the corresponding fields in General Ledger, the transactions are considered Matched and are listed in that section of the spreadsheet.
 
--   If there are transactions that are matched that do not have an entry in the
-    General Ledger Originating Control Number column on the spreadsheet, verify
-    whether they were posted in summary to General Ledger. Control number
-    information is not used when posting in summary.
+-   If there are transactions that are matched that do not have an entry in the General Ledger Originating Control Number column on the spreadsheet, verify whether they were posted in summary to General Ledger. Control number information is not used when posting in summary.
 
--   You may have multiple subledger transactions matched to one General Ledger
-    transaction and vice versa. For example, two receipts are entered in
-    Purchase Order Processing and are posted in summary to General Ledger. One
-    distribution line is used to record the extended cost of the two receipts in
-    the Inventory account in General Ledger. Or, if one receipt is entered in
-    Purchase Order Processing containing two items, each using a different
-    Inventory account. Two entries would be posted in General Ledger and you’ll
-    see two entries if both accounts were selected to reconcile in the Reconcile
-    to GL window.
+-   You may have multiple subledger transactions matched to one General Ledger transaction and vice versa. For example, two receipts are entered in Purchase Order Processing and are posted in summary to General Ledger. One distribution line is used to record the extended cost of the two receipts in the Inventory account in General Ledger. Or, if one receipt is entered in Purchase Order Processing containing two items, each using a different Inventory account. Two entries would be posted in General Ledger and you’ll see two entries if both accounts were selected to reconcile in the Reconcile to GL window.
 
 >   **Additional information**
 
->   **Voided transactions** When the original transaction and the voided
->   transaction are both within the date range you selected, both the original
->   and voided transaction will appear on the spreadsheet. The voided
->   transaction will be indicated as such with an asterisk. However, if the
->   reversing entry occurs outside of the date range, the original transaction
->   will appear as it did originally, and it will not be indicated as a voided
->   transaction.
+>   **Voided transactions** When the original transaction and the voided transaction are both within the date range you selected, both the original and voided transaction will appear on the spreadsheet. The voided transaction will be indicated as such with an asterisk. However, if the reversing entry occurs outside of the date range, the original transaction will appear as it did originally, and it will not be indicated as a voided transaction.
 
->   **Bank Reconciliation deposit group matching** A deposit group is made up of
->   the receipts associated with a deposit record. All receipts found in the
->   group are displayed together on the spreadsheet, whether matched,
->   potentially matched or unmatched. For example, if the General Ledger date of
->   one of the receipts in the deposit group doesn’t match the receipt date in
->   Bank Reconciliation, all receipts in the group are potentially matched.
->   Additionally, if the sum of the receipts in the deposit group does not match
->   the deposit amount (and all other fields are matched) the group is
->   considered potentially matched and appears in that section of the
->   spreadsheet.
+>   **Bank Reconciliation deposit group matching** A deposit group is made up of the receipts associated with a deposit record. All receipts found in the group are displayed together on the spreadsheet, whether matched, potentially matched or unmatched. For example, if the General Ledger date of one of the receipts in the deposit group doesn’t match the receipt date in Bank Reconciliation, all receipts in the group are potentially matched. Additionally, if the sum of the receipts in the deposit group does not match the deposit amount (and all other fields are matched) the group is considered potentially matched and appears in that section of the spreadsheet.
 
->   **Links to inquiry windows from Excel** Click any field data indicated with
->   colored text to open the entry or inquiry window displaying the information
->   as it was originally entered.
+>   **Links to inquiry windows from Excel** Click any field data indicated with colored text to open the entry or inquiry window displaying the information as it was originally entered.
 
->   *Use the procedures in the subledger module documentation to help you make
->   corrections to existing transactions.*
+>   *Use the procedures in the subledger module documentation to help you make corrections to existing transactions.*
 
 #### Consolidating a period
 
->   Consolidating a period combines the transaction detail into a single summary
->   transaction balance for each account carried forward to the next period.
->   Consolidating is optional and can be used if you no longer need detailed
->   information for the period in question.
+>   Consolidating a period combines the transaction detail into a single summary transaction balance for each account carried forward to the next period. Consolidating is optional and can be used if you no longer need detailed information for the period in question.
 
->   *Once the consolidation is complete, the detailed transactions will no
->   longer be available for reporting or inquiry purposes. You can no longer
->   post transactions to the period and a single total will appear on the
->   Detailed Trial Balance for each consolidated account.*
+>   *Once the consolidation is complete, the detailed transactions will no longer be available for reporting or inquiry purposes. You can no longer post transactions to the period and a single total will appear on the Detailed Trial Balance for each consolidated account.*
 
->   If you are using multiple ledgers, when you consolidate a period,
->   information is consolidated by reporting ledger. This means that a period
->   transaction is created for each reporting ledger for each account that has
->   one or more transactions assigned to a reporting ledger. Note that a
->   transaction can have only one reporting ledger, but an account can have
->   multiple transactions, each with a different reporting ledger.
+>   If you are using multiple ledgers, when you consolidate a period, information is consolidated by reporting ledger. This means that a period transaction is created for each reporting ledger for each account that has one or more transactions assigned to a reporting ledger. Note that a transaction can have only one reporting ledger, but an account can have multiple transactions, each with a different reporting ledger.
 
->   For example, in June, Account 1100 has six transactions in the base
->   reporting ledger and four in the local reporting ledger. When the June
->   period is consolidated, Account 1100 will have one transaction for base and
->   one for local.
+>   For example, in June, Account 1100 has six transactions in the base reporting ledger and four in the local reporting ledger. When the June period is consolidated, Account 1100 will have one transaction for base and one for local.
 
->   When a period has been consolidated, you can mark it as closed to prevent
->   transactions from being posted to it. You also can close fiscal periods
->   without consolidating them first. For more information about closing fiscal
->   periods, see *Closing a period*.
+>   When a period has been consolidated, you can mark it as closed to prevent transactions from being posted to it. You also can close fiscal periods without consolidating them first. For more information about closing fiscal periods, see *Closing a period*.
 
->   Before consolidating a period, enter and post all adjusting entries to
->   correct transaction detail for the period you want to consolidate. Adjusting
->   entries include all entries that correct errors made in recording
->   transactions, and journal entries that assign revenues or expenses to the
->   period in which they were earned or incurred. After you’ve entered adjusting
->   entries, print an edit list to verify the accuracy of the data you’ve
->   entered and post the transactions.
+>   Before consolidating a period, enter and post all adjusting entries to correct transaction detail for the period you want to consolidate. Adjusting entries include all entries that correct errors made in recording transactions, and journal entries that assign revenues or expenses to the period in which they were earned or incurred. After you’ve entered adjusting entries, print an edit list to verify the accuracy of the data you’ve entered and post the transactions.
 
->   You also should print financial statements and a trial balance before and
->   immediately after consolidating a period. Then, you can compare the detailed
->   information printed before the consolidation with the summary information
->   printed immediately after consolidating a period. You can set up a group of
->   period end reports in the Financial Groups window that can be used to print
->   all the financial statements and the Trial Balance each time you consolidate
->   a period.
+>   You also should print financial statements and a trial balance before and immediately after consolidating a period. Then, you can compare the detailed information printed before the consolidation with the summary information printed immediately after consolidating a period. You can set up a group of period end reports in the Financial Groups window that can be used to print all the financial statements and the Trial Balance each time you consolidate a period.
 
->   *Before consolidating the period, make a complete backup of your company’s
->   accounting data. If you have a current backup, information can be restored,
->   if necessary.*
+>   *Before consolidating the period, make a complete backup of your company’s accounting data. If you have a current backup, information can be restored, if necessary.*
 
 >   **To consolidate a period:**
 
 1.  Open the Period Consolidation window.
-
 >   (Financial \>\> Routines \>\> Financial \>\> Period Consolidation)
 
 ![](media/a38ccbd964c40258a1b009f2ad7d1565.jpg)
 
-1.  Choose whether you want to consolidate a period from an open year or a
-    historical year.
+2.  Choose whether you want to consolidate a period from an open year or a historical year.
 
-2.  Enter or select the year that contains the period you want to consolidate.
-    You can only select a year that contains transactions.
+3.  Enter or select the year that contains the period you want to consolidate. You can only select a year that contains transactions.
 
-3.  Enter or select a period.
+4.  Enter or select a period.
 
-4.  Choose Ranges to display the Account Segment Ranges window. You can
-    restrict—by account segment—the accounts that will be consolidated. When
-    you’ve finished, close the Account Segment Ranges window.
+5.  Choose Ranges to display the Account Segment Ranges window. You can restrict—by account segment—the accounts that will be consolidated. When you’ve finished, close the Account Segment Ranges window.
 
->   *If you restrict the consolidation process by account segments, your reports
->   might not balance. For example, if you post a credit of \$100 to the Cash
->   account and a debit of \$100 to the Accounts Payable account in Period 1 and
->   then consolidate the Cash account for Period 1 only, the Cross-Reference
->   Report by Journal Entry will be out of balance by \$100.*
+>   *If you restrict the consolidation process by account segments, your reports might not balance. For example, if you post a credit of \$100 to the Cash account and a debit of \$100 to the Accounts Payable account in Period 1 and then consolidate the Cash account for Period 1 only, the Cross-Reference Report by Journal Entry will be out of balance by \$100.*
 
-1.  Choose OK to consolidate the selected period.
+6.  Choose OK to consolidate the selected period.
 
 #### Closing a period
 
->   Use the Fiscal Periods Setup window to mark the period as being closed for
->   the Financial series. When you close a period, you can’t post transactions
->   to the period. This is useful if you want to prevent a user from accidently
->   posting a transaction to a period. The period may be reopened at any time
->   and the transaction details will print on the Detailed Trial Balance.
+>   Use the Fiscal Periods Setup window to mark the period as being closed for the Financial series. When you close a period, you can’t post transactions to the period. This is useful if you want to prevent a user from accidently posting a transaction to a period. The period may be reopened at any time and the transaction details will print on the Detailed Trial Balance.
 
->   Before closing a period, enter and post all adjusting entries to correct
->   transaction details for the period you want to close. Adjusting entries
->   include all entries that correct errors made in recording transactions, and
->   journal entries that assign revenues or expenses to the period in which they
->   were earned or incurred. After you’ve entered adjusting entries, print an
->   edit list to verify the accuracy of the data you’ve entered.
+>   Before closing a period, enter and post all adjusting entries to correct transaction details for the period you want to close. Adjusting entries include all entries that correct errors made in recording transactions, and journal entries that assign revenues or expenses to the period in which they were earned or incurred. After you’ve entered adjusting entries, print an edit list to verify the accuracy of the data you’ve entered.
 
 >   **To close a period:**
 
 1.  Open the Fiscal Periods Setup window.
-
 >   (Administration \>\> Setup \>\> Company \>\> Fiscal Periods)
 
 ![](media/6a72e86aedfcac2700d38fa03d7f758b.jpg)
 
-1.  Enter or select a year.
+2.  Enter or select a year.
 
-2.  Mark the period you want to close.
+3.  Mark the period you want to close.
 
->   *Within the open and historical years, you can close periods for a Microsoft
->   Dynamics GP series. For example, if you close the Sales series for the first
->   period of an open fiscal year, you won’t be able to post from any
->   transaction entry window in Receivables Management, Invoicing, or Sales
->   Order Processing to that closed period.*
+>   *Within the open and historical years, you can close periods for a Microsoft Dynamics GP series. For example, if you close the Sales series for the first period of an open fiscal year, you won’t be able to post from any transaction entry window in Receivables Management, Invoicing, or Sales Order Processing to that closed period.*
 
-1.  If you want to close individual transaction origins within each Microsoft
-    Dynamics GP series, choose Mass Close to open the Mass Close Fiscal Periods
-    window. For example, if you’ve decided you no longer want to post
-    transactions for the sale of merchandise to the period you’ve consolidated,
-    you can close the Receivables Transaction Entry window.
+4.  If you want to close individual transaction origins within each Microsoft Dynamics GP series, choose Mass Close to open the Mass Close Fiscal Periods window. For example, if you’ve decided you no longer want to post transactions for the sale of merchandise to the period you’ve consolidated, you can close the Receivables Transaction Entry window.
 
-2.  Choose OK to close the window and save your entries.
+5.  Choose OK to close the window and save your entries.
 
 #### Understanding closing a year 
 
->   Closing the year transfers all current-year information for each account in
->   the chart of accounts to account and transaction history (if you’re keeping
->   history records) and prepares the accounting system for a new fiscal year.
+>   Closing the year transfers all current-year information for each account in the chart of accounts to account and transaction history (if you’re keeping history records) and prepares the accounting system for a new fiscal year.
 
->   You can enter General Ledger transactions for the next fiscal year without
->   closing the current year, leaving fiscal years open until all adjusting
->   entries have been entered and posted to the correct periods. You can set up
->   and post to unlimited open years.
+>   You can enter General Ledger transactions for the next fiscal year without closing the current year, leaving fiscal years open until all adjusting entries have been entered and posted to the correct periods. You can set up and post to unlimited open years.
 
->   In addition to transferring open-year amounts to transaction and account
->   history, the year-end closing process:
+>   In addition to transferring open-year amounts to transaction and account history, the year-end closing process:
 
--   Reconciles and summarizes the General Ledger balances that have accumulated
-    throughout the year.
+-   Reconciles and summarizes the General Ledger balances that have accumulated throughout the year.
 
--   Transfers open-year profit and loss amounts to the Retained Earnings
-    account.
+-   Transfers open-year profit and loss amounts to the Retained Earnings account.
 
--   Zeros all profit and loss account balances after they’ve been closed to the
-    Retained Earnings account.
+-   Zeros all profit and loss account balances after they’ve been closed to the Retained Earnings account.
 
->   *If you find you need to enter adjustments to a profit and loss account
->   after you’ve closed the year, the system will automatically update the
->   corresponding retained earnings account. You won't need to do anything
->   following the adjustments.*
+>   *If you find you need to enter adjustments to a profit and loss account after you’ve closed the year, the system will automatically update the corresponding retained earnings account. You won't need to do anything following the adjustments.*
 
--   Summarizes balance sheet accounts, bringing the balances forward as the
-    accounts’ beginning balances in the new fiscal year.
+-   Summarizes balance sheet accounts, bringing the balances forward as the accounts’ beginning balances in the new fiscal year.
 
->   Until the year-end close is completed for General Ledger, you won’t get
->   accurate financial statements for the new year. Beginning balances for the
->   new year are not created until the year-end close process is completed.
->   Therefore, the financial statements for the new year will reflect only
->   current year activity until the year-end closing process is completed. This
->   happens whether the financial statements are printed from Advanced Financial
->   Analysis or Management Reporter.
+>   Until the year-end close is completed for General Ledger, you won’t get accurate financial statements for the new year. Beginning balances for the new year are not created until the year-end close process is completed. Therefore, the financial statements for the new year will reflect only current year activity until the year-end closing process is completed. This happens whether the financial statements are printed from Advanced Financial Analysis or Management Reporter.
 
--   Consolidates information by reporting ledger. This means that a transaction
-    is created as of the last day of the previous fiscal year for each account
-    that has one or more transactions assigned to a reporting ledger. A retained
-    earnings transaction is created for each reporting ledger based on the
-    consolidation of the profit and loss accounts. Note that a transaction can
-    have only one reporting ledger, but an account can have multiple
-    transactions, each with a different reporting ledger.
+-   Consolidates information by reporting ledger. This means that a transaction is created as of the last day of the previous fiscal year for each account that has one or more transactions assigned to a reporting ledger. A retained earnings transaction is created for each reporting ledger based on the consolidation of the profit and loss accounts. Note that a transaction can have only one reporting ledger, but an account can have multiple transactions, each with a different reporting ledger.
 
 -   Prints the Year-End Closing Report.
 
@@ -5599,104 +4306,56 @@ Trial Balance Detail Trial Balance Summary
 
 >   Before you close a year, you must complete the following tasks:
 
--   Complete month-end and period-end procedures for all modules, except General
-    Ledger.
+-   Complete month-end and period-end procedures for all modules, except General Ledger.
 
--   Use normal posting procedures to post final transactions in all modules,
-    except General Ledger.
+-   Use normal posting procedures to post final transactions in all modules, except General Ledger.
 
--   After all transactions have been posted successfully, complete year-end
-    procedures for all modules, in the following order: Inventory, Receivables
-    Management, and Payables Management.
+-   After all transactions have been posted successfully, complete year-end procedures for all modules, in the following order: Inventory, Receivables Management, and Payables Management.
 
->   Payroll year-end procedures are independent of those in other modules and
->   are always performed at the calendar year-end.
+>   Payroll year-end procedures are independent of those in other modules and are always performed at the calendar year-end.
 
 -   Post final adjusting entries in General Ledger.
 
->   If you need to make any adjusting entries to allocate revenue, expenses, or
->   depreciation to the year you’re going to close, use the Transaction Entry
->   window or the Quick Journal Entry window to enter adjusting entries in
->   General Ledger.
+>   If you need to make any adjusting entries to allocate revenue, expenses, or depreciation to the year you’re going to close, use the Transaction Entry window or the Quick Journal Entry window to enter adjusting entries in General Ledger.
 
->   Many of these adjusting entries were made automatically if you marked them
->   as reversing in the Transaction Entry window. Entries that increased assets
->   or liabilities could be entered as automatically reversing since they would
->   result in a future cash receipt or payment.
+>   Many of these adjusting entries were made automatically if you marked them as reversing in the Transaction Entry window. Entries that increased assets or liabilities could be entered as automatically reversing since they would result in a future cash receipt or payment.
 
 -   You can close the last period of the current fiscal year.
 
->   Use the Fiscal Periods Setup window to close any fiscal periods that are
->   still open for the current fiscal year. This keeps transactions from
->   accidentally being posted to the wrong period or year.
+>   Use the Fiscal Periods Setup window to close any fiscal periods that are still open for the current fiscal year. This keeps transactions from accidentally being posted to the wrong period or year.
 
->   *Be sure you've posted all transactions for the period and year for all
->   modules before closing fiscal periods. If you later need to post
->   transactions to a fiscal period you've already closed, you'll need to return
->   to the Fiscal Periods Setup window to reopen the period before you can post
->   the transaction.*
+>   *Be sure you've posted all transactions for the period and year for all modules before closing fiscal periods. If you later need to post transactions to a fiscal period you've already closed, you'll need to return to the Fiscal Periods Setup window to reopen the period before you can post the transaction.*
 
--   You can print an Account List to verify the posting type for the posting
-    accounts. To print an Account List, choose Financial \>\> Reports \>\>
-    Financial \>\> Accounts to open the Chart of Accounts Report window and
-    select All Accounts in the Reports list. Use this report to verify that all
-    balance sheet and profit and loss accounts have the correct posting type.
-    The posting type is used to determine which posting accounts should be
-    closed to retained earnings and which accounts should have the balance
-    brought forward to the next year.
+-   You can print an Account List to verify the posting type for the posting accounts. To print an Account List, choose Financial \>\> Reports \>\> Financial \>\> Accounts to open the Chart of Accounts Report window and select All Accounts in the Reports list. Use this report to verify that all balance sheet and profit and loss accounts have the correct posting type. The posting type is used to determine which posting accounts should be closed to retained earnings and which accounts should have the balance brought forward to the next year.
 
->   If the posting type is incorrect for an account, you can change it in the
->   Account Maintenance window (Financial \>\> Cards \>\> Financial \>\>
->   Account) before closing the year.
+>   If the posting type is incorrect for an account, you can change it in the Account Maintenance window (Financial \>\> Cards \>\> Financial \>\> Account) before closing the year.
 
--   If you want to keep historical records, verify that Maintain History for
-    Accounts and for Transactions are marked in the General Ledger Setup window
-    (Financial \>\> Setup \>\> Financial \>\> General Ledger). If you maintain
-    account history, you can print financial statements and calculate budgets
-    from historical years. If you maintain transaction history, you can drill
-    down to transaction detail and print historical detail trial balances.
+-   If you want to keep historical records, verify that Maintain History for Accounts and for Transactions are marked in the General Ledger Setup window (Financial \>\> Setup \>\> Financial \>\> General Ledger). If you maintain account history, you can print financial statements and calculate budgets from historical years. If you maintain transaction history, you can drill down to transaction detail and print historical detail trial balances.
 
->   If these boxes aren’t marked, the transaction or account information for the
->   year will be deleted once the year end close process is completed.
+>   If these boxes aren’t marked, the transaction or account information for the year will be deleted once the year end close process is completed.
 
 -   Check links for all Financial tables.
 
 -   Back up your company data.
 
--   Use the Trial Balance Report window to print a year-end detailed trial
-    balance.
+-   Use the Trial Balance Report window to print a year-end detailed trial balance.
 
->   *Be sure you've posted all transactions for the period and year for all
->   modules before printing the Detailed Trial Balance. If you later need to
->   post transactions, you should print a new Detailed Trial Balance.*
+>   *Be sure you've posted all transactions for the period and year for all modules before printing the Detailed Trial Balance. If you later need to post transactions, you should print a new Detailed Trial Balance.*
 
 -   Print any year-end financial statements required.
 
 -   Set up a new fiscal year.
 
->   Before you can perform a year-end closing, a new fiscal year must be set up
->   using the Fiscal Periods Setup window. For example, if you’re closing 2004,
->   be sure that 2005 has been created.
+>   Before you can perform a year-end closing, a new fiscal year must be set up using the Fiscal Periods Setup window. For example, if you’re closing 2004, be sure that 2005 has been created.
 
 #### Closing a fiscal year
 
->   Use the Year-End Closing window to close a year and prepare the accounting
->   system for a new fiscal year.
+>   Use the Year-End Closing window to close a year and prepare the accounting system for a new fiscal year.
 
->   After you close a year, you can continue to post transactions within the
->   year as long as the year remains the most recent historical year and as long
->   as the period you’re posting transactions within hasn’t been marked closed
->   in the Fiscal Periods Setup window (Administration \>\> Setup \>\> Company
->   \>\> Fiscal Periods). Historical years include years that have been closed
->   using the fiscal year-end closing routine, and also years for which the
->   Historical Year option has been marked in the Fiscal Periods Setup window.
->   See the System Setup instructions (Help \>\> Contents \>\> select Setting Up
->   the System) for more information about using the Fiscal Periods Setup
->   window.
+>   After you close a year, you can continue to post transactions within the year as long as the year remains the most recent historical year and as long as the period you’re posting transactions within hasn’t been marked closed in the Fiscal Periods Setup window (Administration \>\> Setup \>\> Company \>\> Fiscal Periods). Historical years include years that have been closed using the fiscal year-end closing routine, and also years for which the Historical Year option has been marked in the Fiscal Periods Setup window.
+>   See the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System) for more information about using the Fiscal Periods Setup window.
 
->   Posting to an historical year is useful if you have to enter audit
->   adjustments after you have closed the year. See *Posting to a historical
->   year* for more information.
+>   Posting to an historical year is useful if you have to enter audit adjustments after you have closed the year. See *Posting to a historical year* for more information.
 
 >   **To close a fiscal year:**
 
