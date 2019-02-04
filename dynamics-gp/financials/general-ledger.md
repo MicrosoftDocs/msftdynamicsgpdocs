@@ -130,7 +130,7 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 
 >   (Financial \>\> Setup \>\> Financial \>\> General Ledger)
 
-![](media/591eb60045c794b3d94704814b39f488.jpg)
+![](media/glage009.jpg)
 
 2.  Enter the next journal entry and budget journal entry numbers. A new journal entry number is assigned each time you save an entry in the Transaction Entry, Clearing Entry or Quick Journal Entry windows. A new budget journal entry is assigned each time you save an entry in the Budget Transaction Entry window.
 
@@ -222,7 +222,7 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 1.  Open the Transaction Matching Setup window.
 >   (Financial \>\> Setup \>\> Financial \>\> Transaction Matching)
 
-![](media/98fc3851d8517db0b0ffe6e6aeee257b.jpg)
+![](media/glage013.jpg)
 
 2.  Enter the default next link number.
 
@@ -368,7 +368,7 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 1.  Open the Account Category Setup window.
 >   (Financial \>\> Setup \>\> Financial \>\> Category)
 
-![](media/0544c4e6f26f41b4796bed93f5ab725d.jpg)
+![](media/glage015.jpg)
 
 2.  Rename any predefined categories, if needed.
 
@@ -402,7 +402,7 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 
 >   *The View menu and keyboard shortcut are available only when you’re entering account aliases in transaction entry windows.*
 
-![](media/4580237476881bdcbe0f98a2856aadc2.jpg)
+![](media/glage018.jpg)
 
 2.  Enter or select an alias. As soon as you enter or select an alias, the Account Entry window closes and the transaction entry window is displayed.
 
@@ -439,7 +439,7 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 1.  Open the Account Maintenance window.
 >   (Financial \>\> Cards \>\> Financial \>\> Account)
 
-![](media/7a2d24a25334f30e7c82113655828e9e.jpg)
+![](media/glage023.jpg)
 
 2.  Enter an account identifier using any combination of letters or numbers. You also can enter a description and an alias. Refer to *Understanding account aliases* for more information.
 
@@ -623,7 +623,7 @@ If the account has any activity for an open year, the account can’t be deleted
 1.  Open the Fixed Allocation Maintenance window.
 >   (Financial \>\> Cards \>\> Financial \>\> Fixed Allocation)
 
-![](media/e6c8257b40dc4469ebc56fb0952ebc66.jpg)
+![](media/glage027.jpg)
 
 2.  Enter an account identifier using any combination of letters or numbers. You also can enter a description and an alias. Refer to *Understanding account aliases* for more information.
 
@@ -703,7 +703,7 @@ Distribution and breakdown accounts can be posting accounts or unit accounts. Al
 1.  Open the Variable Allocation Maintenance window.
 >   (Financial \>\> Cards \>\> Financial \>\> Variable Allocation)
 
-![](media/da43a9938115e9d6b0f3e7556627d56f.jpg)
+![](media/GLAGE029.jpg)
 
 2.  Enter an account identifier using any combination of letters or numbers. You also can enter a description and an alias. Refer to *Understanding account aliases* for more information. If you’ve set up account segments already and you leave the description field blank, Microsoft Dynamics GP will create the account description automatically by combining the account segment descriptions.
 
@@ -779,7 +779,7 @@ Distribution and breakdown accounts can be posting accounts or unit accounts. Al
 1. Open the General Ledger Setup window.
 >   (Financial \>\> Setup \>\> Financial \>\> General Ledger)
 
-![](media/c677af1b6541a096eb006362eec181d1.jpg)
+![](media/glage032.jpg)
 
 2.  Enter or select a posting account or fixed allocation account to use as your retained earnings account.
 
@@ -851,7 +851,7 @@ Use the Account Maintenance window to set up a divisional retained earnings acco
 1.  Open the Account Segment Setup window.
 >   (Financial \>\> Setup \>\> Financial \>\> Segment)
 
-![](media/a1e446c1babf1942a455107081983e6f.jpg)
+![](media/glage035.jpg)
 
 2.  Enter or select the segment ID to further identify.
 
@@ -924,7 +924,7 @@ Use the Account Maintenance window to set up a divisional retained earnings acco
 1.  Open the Mass Modify Chart of Accounts window.
 >   (Financial \>\> Cards \>\> Financial \>\> Mass Modify)
 
-![](media/43484c4a8f8d5df52a0b5e9d3a09a99f.jpg)
+![](media/glage038.jpg)
 
 2.  Choose a Modify option. Refer to *Chart of accounts modifications* for more information.
 
@@ -984,7 +984,7 @@ Chapter 9: Beginning balances and history
 1.  Open the Batch Entry window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Batches)
 
-![](media/f2bcd17f9cef386fe894a14ac15a74ba.jpg)
+![](media/glage041.jpg)
 
 2.  Enter a batch ID—such as BBAL, for beginning balances—and select General Entry as the origin.
 
@@ -996,7 +996,7 @@ Chapter 9: Beginning balances and history
 
 5.  Choose Transactions to open the Transaction Entry window, where you can enter beginning balance transactions.
 
-![](media/0f4580487787a08753d391102fd8d9d3.jpg)
+![](media/glage044.jpg)
 
 6.  Enter a journal entry number and select Standard as the transaction type.
 
@@ -1103,7 +1103,7 @@ Chapter 9: Beginning balances and history
 1.  Open the Account History window.
 >   (Financial \>\> Cards \>\> Financial \>\> Account History)
 
-![](media/adee4e46eb9f606d343eb2aae96fd908.jpg)
+![](media/glage046.jpg)
 
 2.  Enter or select an account.
 
@@ -1153,7 +1153,7 @@ Chapter 9: Beginning balances and history
 1.  Open the Quick Journal Setup window.
 >   (Financial \>\> Setup \>\> Financial \>\> Quick Journal)
 
-![](media/a36576a0b5c315fc55fa327e3c7477c0.jpg)
+![](media/glage050.jpg)
 
 2.  Enter or select a journal ID and enter a description.
 
@@ -1310,7 +1310,7 @@ Use the Quick Journal Setup window to delete quick journals. When you delete a q
 1.  Open the Deferral Setup window.
 >   (Financial \>\> Setup \>\> Financial \>\> Deferral)
 
-![](media/e6a68e7ed88b39ac144e9d6c53fa3f59.jpg)
+![](media/glage052.jpg)
 
 2.  Enter the next batch number you want to use for deferral transactions, the source document code, and the next transaction number.
 
@@ -1353,7 +1353,7 @@ Use the Quick Journal Setup window to delete quick journals. When you delete a q
 
 2.  Choose Warning Options to open the Deferral Warning Options window.
 
-![](media/48ee3f63c4dbd292076b115799341c8b.jpg)
+![](media/glage054.jpg)
 
 3.  Select the module you want to select warning options for from the list.
 
@@ -1374,7 +1374,7 @@ Use the Quick Journal Setup window to delete quick journals. When you delete a q
 1.  Open the Deferral Profile Maintenance window.
 >   (Financial \>\> Setup \>\> Financial \>\> Deferral Profiles)
 
-![](media/b25481b18d390291af8e08f483ba9263.jpg)
+![](media/glage056.jpg)
 
 2.  Enter a name for this profile. For example, you could create a profile called SERVICE CONTRACT.
 
@@ -1402,7 +1402,7 @@ Use the Quick Journal Setup window to delete quick journals. When you delete a q
 
 1.  In the Deferral Profile Maintenance window, enter or select the profile you want to set access for, and choose User Access to open the Profile User Access window.
 
-![](media/96113783d75a0c7e85629e6aa3a5cf09.jpg)
+![](media/glage058.jpg)
 
 2.  Indicate whether you want to grant access to the profile to the users you specify, or to the user classes you specify.
 
@@ -1555,13 +1555,13 @@ Chapter 13: Setting up budgets in Microsoft Excel
 1.  Open the Budget Selection window.
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
-![](media/6814a53b87625f1ee211947dc4df5c4c.jpg)
+![](media/glage061.jpg)
 
 2.  Choose New and select using Budget Wizard for Excel to open the welcome window.
 
 3.  Choose Next to open the New Budget Information window.
 
-![](media/3756a032c3996e477bc8b51687e00ba8.jpg)
+![](media/glage063.jpg)
 
 4.  Enter basic identifying information about the budget you are creating.
 
@@ -1569,17 +1569,17 @@ Chapter 13: Setting up budgets in Microsoft Excel
 
 6.  If you want to restrict access to the budget with a password, choose the padlock icon button to open the User Password Setup window. If you don’t want to restrict access to the budget, skip to step 7.
 
-![](media/29d632a6cc68667049d73a61aa3f909f.jpg)
+![](media/glage065.jpg)
 
 7.  Enter a password and choose OK.
 
 8.  Choose Next to open the Budget Calculation Method window.
 
-![](media/4fcd4380a5679d423093382a34d1aa1f.jpg)
+![](media/glage067.jpg)
 
 9.  Highlight a budget calculation method to view its description. When you have selected the method you want to use, choose Next to open the Open Year Percent window.
 
-![](media/288d9d6ee9f9a4b3515a07f09e6cd322.jpg)
+![](media/glage069.jpg)
 
 >   The following steps assume you selected the Open Year Percent budget calculation method. All of the steps are essentially the same for each method, except Blank Budget. Differences are noted in the following steps.
 
@@ -1590,15 +1590,15 @@ Chapter 13: Setting up budgets in Microsoft Excel
 
 11.  Select the type of change to be made and enter a percentage of increase or decrease. Press TAB to exit this field and enable the Next button. Choose Next to open the Actual Amounts Selection window.
 
-![](media/bebd995f74958b99d16866df9b51e1a1.jpg)
+![](media/glage071.jpg)
 
 12.  Select the years with the amount information to use. A separate Microsoft Excel worksheet will be created for each year you select *Worksheets will be in the same order you select them in the Actual Amounts Selection window, so if you want them to appear in the workbook in a specific order, be sure to select them in order.* When you have made your selections, choose Next to open the Account Types window.
 
-![](media/e3a4de5fcba7e9833dc2497022b46eb9.jpg)
+![](media/glage073.jpg)
 
 13.  Select the account types to include in your budget. Choose Next to open the Accounts window.
 
-![](media/64145d8b286ca4549e4e37f8b8bab88d.jpg)
+![](media/glage075.jpg)
 
 14.  Select the accounts for the budget. You can add all accounts of the account type you selected, or you can restrict the range of accounts.
 
@@ -1606,7 +1606,7 @@ Chapter 13: Setting up budgets in Microsoft Excel
 
 >   Choose Next to open the Account Verification window.
 
-![](media/4d630da438800d4f17c7476be3688554.jpg)
+![](media/glage077.jpg)
 
 15.  Mark the accounts to include in the budget. All accounts will be marked, but you can clear the option for any account to exclude it from the budget.
 
@@ -1614,7 +1614,7 @@ Chapter 13: Setting up budgets in Microsoft Excel
 
 >   Choose Next to open the Workbook Selection window.
 
-![](media/657286ca47cb52c4709b67c8ab2bc55e.jpg)
+![](media/glage079.jpg)
 
 16.  Select the workbook for your new budget worksheet. You can create a new workbook or add to an existing one. Choose Next to open the Completing the Budget Wizard for Excel window.
 
@@ -1721,7 +1721,7 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 1.  Open the Budget Maintenance window.
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets \>\> New \>\> using Microsoft Dynamics GP)
 
-![](media/3a4009db3e073ac8ef0ec1cb65a869a3.jpg)
+![](media/glage081.jpg)
 
 2.  Enter or select a budget ID.
 
@@ -1747,7 +1747,7 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 >   *If you don’t define a range, all your company's accounts will be included in the budget calculation.*
 
-![](media/aabb7c3e9731455a82576722dbc56fd0.jpg)
+![](media/glage084.jpg)
 
 9.  Enter or select the segment ID the range will be based on. Enter or select beginning and ending account segments.
 
@@ -1759,7 +1759,7 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 12.  Choose the Methods button to display the Budget Calculation Methods window.
 
-![](media/9ff193c02621e227990798fd211b1462.jpg)
+![](media/glage086.jpg)
 
 13.  Select a calculation method, enter the necessary information and indicate if the budget should include the beginning balance amounts. For more information about calculation methods, see *Budget calculation methods*.
 
@@ -1784,7 +1784,7 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 1.  Open the Budget Maintenance window.
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets \>\> New \>\> using Microsoft Dynamics GP)
 
-![](media/3a4009db3e073ac8ef0ec1cb65a869a3.jpg)
+![](media/Glage081.jpg)
 
 2.  Enter or select a budget ID.
 
@@ -1802,7 +1802,7 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 >   (Financial \>\> Cards \>\> Financial \>\> Account \>\> Budget button)
 >   (Financial \>\> Cards \>\> Financial \>\> Unit Account \>\> Budget button)
 
-![](media/83b6658ffd167b4a3f69fd99f194126d.jpg)
+![](media/glage088.jpg)
 
 2.  Enter or select the account and budget ID.
 
@@ -1835,7 +1835,7 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 1.  Open the Budget Transaction Entry window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Budget Transactions)
 
-![](media/bf88a7cdb4b5587c466c2afd7806aa85.jpg)
+![](media/glage090.jpg)
 
 2.  Enter or select a budget journal entry.
 
@@ -1877,8 +1877,6 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 1.  Open the Combine Budgets window.
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets \>\> Combine Budgets button)
-
-![](media/3a4009db3e073ac8ef0ec1cb65a869a3.jpg)
 
 2.  Enter or select a master budget ID. This is the ID for the consolidated budget that will receive other budgets.
 
@@ -1929,7 +1927,7 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 1.  Open the Budget Selection window.
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
-![](media/6814a53b87625f1ee211947dc4df5c4c.jpg)
+![](media/glage061.jpg)
 
 2.  Highlight a budget. Choose Excel and select Export to Excel to open the Export Budget to Excel window.
 
@@ -1937,7 +1935,7 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 >   *If your worksheet has the same name—the same Budget ID—as an existing worksheet in the workbook you’re exporting to, the existing worksheet will be overwritten. You won’t be able to cancel the export process.*
 
-![](media/dddd7ca4a998f17f6f986b2b1efc7511.jpg)
+![](media/glage092.jpg)
 
 4.  Choose OK to complete the export process.
 
@@ -1968,13 +1966,13 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 1.  Open the Budget Selection window.
 >   (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
-![](media/6814a53b87625f1ee211947dc4df5c4c.jpg)
+![](media/GLage061.jpg)
 
 2.  Choose Excel and select Import from Excel to open the Welcome to the Budget Wizard for Excel window.
 
 3.  Choose Next to open the Import Budget window.
 
-![](media/394bf7d061c86dafd7b975f488b738ac.jpg)
+![](media/glage094.jpg)
 
 4.  Decide if the imported budget should be a new budget or if it should overwrite an existing budget.
 
@@ -1984,15 +1982,13 @@ Chapter 14: Setting up budgets in Microsoft Dynamics GP
 
 5.  If you’re creating a new budget, the New Budget Information window opens. Enter basic identifying information about the budget you’re creating.
 
-![](media/3756a032c3996e477bc8b51687e00ba8.jpg)
-
 6.  To restrict access to the budget with a password, choose the padlock icon button to open the User Password Setup window. If you don’t want to restrict access to the budget, skip to step 8.
 
 7.  Enter a password and choose OK.
 
 8.  Choose Next to open the Excel File Selection window.
 
-![](media/2d3c2468045c8e684ed27b425662c3c1.jpg)
+![](media/glage096.jpg)
 
 9.  Enter or select the name of the Excel file to import, then select the specific worksheet to import. Choose Next to open the Completing the Budget Wizard for Excel window.
 
@@ -2111,8 +2107,6 @@ For example, assume you’ve entered a transaction in the euro currency, with a 
 1.  Open the Batch Entry window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Batches)
 
-![](media/f2bcd17f9cef386fe894a14ac15a74ba.jpg)
-
 2.  Enter or select a batch ID to identify the batch. Batches entered in different transaction entry windows might have the same ID. If you aren’t sure which batch to select, you can use the Batch ID lookup window to view the origins of transactions within each batch.
 
 3.  Select a batch origin. You can select General Entry, Clearing Entry, or Budget Transactions. Once you’ve saved the batch, you can’t change the origin.
@@ -2200,7 +2194,7 @@ Use the Batch Entry window to modify or delete a batch. You can change or delete
 1. Open the Transaction Entry window.
 >   (Financial \>\> Transactions \>\> Financial \>\> General)
 
-![](media/042841c3e8c3855721198c6c617f5bc5.jpg)
+![](media/glage099.jpg)
 
 2.  Enter a journal entry number or accept the default number.
 
@@ -2286,7 +2280,7 @@ For example, a taxable expense reimbursement to an employee should be entered in
 
 3.  Choose Tax Entry to open the Tax Entry window.
 
-![](media/d90ddd355a1435d9daac150aa463dc46.jpg)
+![](media/glage101.jpg)
 
 4.  Decide if the transaction is a debit or a credit.
 
@@ -2341,7 +2335,7 @@ For example, a taxable expense reimbursement to an employee should be entered in
 1.  Open the Clearing Entry window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Clearing)
 
-![](media/12ee012b01734f7b73d016b3bc534889.jpg)
+![](media/glage104.jpg)
 
 2.  Enter a journal entry number or accept the default number.
 
@@ -2415,7 +2409,7 @@ By default, you can delete saved transactions. However, you can change default s
 1.  Open the Quick Journal Entry window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Quick Journal)
 
-![](media/ee638add91e8d28dd8bab958d94cf33d.jpg)
+![](media/glage107.jpg)
 
 2.  Enter a journal entry number or accept the default.
 
@@ -2506,13 +2500,13 @@ By default, you can delete saved transactions. However, you can change default s
 
 2.  In the distribution entry window, select the distribution you want to defer.
 
-![](media/4cc6292e026e5880cc5deb14a59da3df.jpg)
+![](media/glage109.jpg)
 
 >   Depending on how your default posting accounts are set up, you may need to change the account to a deferral account. For example, if you’re deferring the revenue for a prepaid maintenance contract, you could change the SALES posting account to the account you use for deferred revenue.
 
 3.  From the Additional menu, choose Deferral to open the Deferral Entry window.
 
-![](media/d6fe788dd0e6c713090d9855766da1a2.jpg)
+![](media/glage111.jpg)
 
 >   Enter the beginning and end of the period and select the method to use for apportioning the deferred amounts over that period.
 
@@ -2562,7 +2556,7 @@ By default, you can delete saved transactions. However, you can change default s
 
 3.  From the Additional menu, choose Deferral Profile to open the Deferral Profile Selection window.
 
-![](media/f8ae53898e7e0a6abd48de82ca9350a6.jpg)
+![](media/glage113.jpg)
 
 >   Enter or select the profile you want to use to defer this distribution.
 
@@ -2585,7 +2579,7 @@ By default, you can delete saved transactions. However, you can change default s
 1.  Open the Deferral Document Entry window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\> Deferral Document Entry)
 
-![](media/4b13071e03833ef29d6d52f0c1f4dfa7.jpg)
+![](media/glage115.jpg)
 
 2.  Enter the beginning and end of the period and select the method to use for apportioning the deferred amounts over that period.
 
@@ -2606,7 +2600,7 @@ By default, you can delete saved transactions. However, you can change default s
 1.  Open the Deferral Profile Document Entry window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\> Deferral Profiles)
 
-![](media/9c9767e8fb93e4e17602667f51a4ec78.jpg)
+![](media/glage117.jpg)
 
 2.  Enter or select the profile you want to use for this deferral transaction.
 
@@ -2628,7 +2622,7 @@ By default, you can delete saved transactions. However, you can change default s
 >   (For sales transactions: Financial \>\> Transactions \>\> Financial \>\> Sales Retroactive \>\> Retroactive Deferral)
 >   (For purchase transactions: Financial \>\> Transactions \>\> Financial \>\> Purchasing Retroactive \>\> Retroactive Deferral)
 
-![](media/354c788f37ddaa8a6dc6e7f6b3b95c32.jpg)
+![](media/glage119.jpg)
 
 2.  Enter or select the customer ID or vendor ID for the transaction you want to defer.
 
@@ -2638,7 +2632,7 @@ By default, you can delete saved transactions. However, you can change default s
 
 5.  Select the transaction you want to enter deferrals against and click the Document Number link to open the Distribution Deferral Information window.
 
-![](media/d674e9f3cd36b62aed897d83e962613e.jpg)
+![](media/glage121.jpg)
 
 6.  Select the distribution you want to defer and choose Extras \>\> Additional \>\> Deferral to open the Deferral Entry window or choose Extras \>\> Additional \>\> Deferral Profile to open the Deferral Profile Selection window.
 
@@ -2661,7 +2655,7 @@ By default, you can delete saved transactions. However, you can change default s
 >   (For retroactive Sales deferrals: Financial \>\> Transactions \>\> Financial \>\> Sales Retroactive \>\> Retroactive Batches)
 >   (For retroactive Purchasing deferrals: Financial \>\> Transactions \>\> Financial \>\> Purchasing Retroactive \>\> Retroactive Batches)
 
-![](media/e0428d6eb1f63c855c1e193d7f84ee3b.jpg)
+![](media/glage123.jpg)
 
 2.  Enter or select the batch you want to post.
 
@@ -2674,7 +2668,7 @@ By default, you can delete saved transactions. However, you can change default s
 >   (For retroactive Sales deferrals: Financial \>\> Transactions \>\> Financial \>\> Sales Retroactive \>\> Deferral Posting)
 >   (For retroactive Purchasing deferrals: Financial \>\> Transactions \>\> Financial \>\> Purchasing Retroactive \>\> Deferral Posting)
 
-![](media/6c6e2553e60d6256a9e98c1a835accf7.jpg)
+![](media/glage125.jpg)
 
 2.  Mark the available batches that you want to post.
 
@@ -2689,7 +2683,7 @@ By default, you can delete saved transactions. However, you can change default s
 1.  Open the Void Deferral Transactions window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Financial Deferral \>\> Void Deferral Transactions)
 
-![](media/115a625698c2026d5da814676536d492.jpg)
+![](media/glage127.jpg)
 
 2.  Select the series of the transaction you want to void.
 
@@ -2746,8 +2740,6 @@ By default, you can delete saved transactions. However, you can change default s
 
 1.  Open the Batch Entry window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Batches)
-
-![](media/f2bcd17f9cef386fe894a14ac15a74ba.jpg)
 
 2.  Enter or select a batch to be posted.
 
@@ -2887,7 +2879,7 @@ By default, you can delete saved transactions. However, you can change default s
 
 2.  Choose Correct. The Correct Journal Entry window will open.
 
-![](media/4ea1da78bf2addb732cb062f0cd76db5.jpg)
+![](media/glage130.jpg)
 
 3.  In the Correct Journal Entry window, select the Back Out a Journal Entry option.
 
@@ -2946,7 +2938,7 @@ By default, you can delete saved transactions. However, you can change default s
 
 2.  Choose Correct. The Correct Journal Entry window will open.
 
-![](media/68630c4acd8d8359222fca7015731c9b.jpg)
+![](media/glage132.jpg)
 
 3.  In the Correct Journal Entry window, select the Back Out a Journal Entry and Create a Correcting Entry option.
 
@@ -2999,7 +2991,7 @@ By default, you can delete saved transactions. However, you can change default s
 
 2.  Choose Copy. The Copy Journal Entry window will open.
 
-![](media/a6ad2e6edd3916467aa7a2108df12235.jpg)
+![](media/glage134.jpg)
 
 3.  In the Copy Journal Entry window, select the year that the transaction you’re copying was posted.
 
@@ -3034,7 +3026,7 @@ By default, you can delete saved transactions. However, you can change default s
 1.  Open the General Ledger Transaction Link Maintenance window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Transaction Matching)
 
-![](media/657a8a2eeab7ffe1a7f8b663f621d6ea.jpg)
+![](media/glage136.jpg)
 
 2.  Enter a description for the distributions you want to link. For example, if you’re linking some month-end adjusting entries to the original transactions, you could enter “January adjusting entries.”
 
@@ -3074,7 +3066,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Transaction Matching Group Maintenance window.
 >   (Financial \>\> Transactions \>\> Financial \>\> Transaction Matching Groups)
 
-![](media/2a6c6902927f3b60dd99e9d7302a69c1.jpg)
+![](media/glage138.jpg)
 
 2.  Enter a name for the group. A message will appear asking if you want to create this group. Choose Yes.
 
@@ -3157,7 +3149,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Summary Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Summary)
 
-![](media/aa37f8aeec90cb59eb7f306e43d2ae5b.jpg)
+![](media/glage140.jpg)
 
 2.  Enter or select an account.
 
@@ -3180,7 +3172,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the History Summary Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> History Summary)
 
-![](media/f07fa33b87a11bd953d103ba78e917ff.jpg)
+![](media/glage142.jpg)
 
 2.  Enter or select an account, then select a year.
 
@@ -3199,7 +3191,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Net Change Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Net Change)
 
-![](media/c366750849fea73a40ad7a365fc196f0.jpg)
+![](media/glage144.jpg)
 
 2.  Enter or select an account.
 
@@ -3236,7 +3228,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Budget Transaction Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Budget Journal Entry Inquiry)
 
-![](media/ecfaa65ab995631a4457919d34ce9c0b.jpg)
+![](media/glage146.jpg)
 
 2.  Select budget journal entry.
 
@@ -3251,7 +3243,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Budget Summary Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Budget Summary)
 
-![](media/3d774405caeb0b32d3f17adbc0620028.jpg)
+![](media/glage148.jpg)
 
 2.  Enter or select an account.
 
@@ -3278,7 +3270,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Journal Entry Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Journal Entry Inquiry)
 
-![](media/bb94d8422687c596ebadb0644f2077c9.jpg)
+![](media/glage150.jpg)
 
 2.  Enter or select the journal entry number. You can view any posted journal entry number, as long as the journal entry has not been moved to history. Audit trail code, transaction date, source document, batch ID, reference, currency ID, account, debit, credit, distribution reference, and difference information are displayed.
 
@@ -3297,7 +3289,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the History Detail Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> History Detail)
 
-![](media/d707a058d243b408dca055db1638df48.jpg)
+![](media/glage152.jpg)
 
 2.  Enter or select an account.
 
@@ -3322,7 +3314,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Detail Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Detail)
 
-![](media/546c00dc22f88e302a84672457cedff4.jpg)
+![](media/glage154.jpg)
 
 2.  Enter or select an account.
 
@@ -3345,7 +3337,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Deferral Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Deferral)
 
-![](media/b818e5625c70668443f1fa946161b783.jpg)
+![](media/glage156.jpg)
 
 2.  Using the list at the bottom of the window, select the module you want to view deferral transactions for.
 
@@ -3374,7 +3366,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Transaction Matching by Link Number Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Transaction Match by Link Number)
 
-![](media/e280f825e3f413e68c79f85d68f57d8c.jpg)
+![](media/glage158.jpg)
 
 2.  Enter or select the link number you want to view.
 
@@ -3393,7 +3385,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Transaction Matching by Account Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Transaction Match by Account)
 
-![](media/3350a2e79ff89c8343cd91422bb34d5a.jpg)
+![](media/glage160.jpg)
 
 2.  Enter or select the account you want to view link information for, then choose the year for the transaction distributions you want to view.
 
@@ -3424,7 +3416,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Transaction Matching Group Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Transaction Matching Groups)
 
-![](media/eae1ff9e4a568d0c2bcd0c141e334729.jpg)
+![](media/glage162.jpg)
 
 2.  Enter or select the group you want to view.
 
@@ -3451,7 +3443,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Budget Summary Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Budget Summary)
 
-![](media/44b5cbf100972db5e73c69a7a22bc3b2.jpg)
+![](media/glage164.jpg)
 
 2.  Enter or select an account.
 
@@ -3472,7 +3464,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Budget vs Actual Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Budget vs. Actual)
 
-![](media/57879175e9656f99164d4c340be1c590.jpg)
+![](media/glage166.jpg)
 
 2.  Enter or select an account.
 
@@ -3523,7 +3515,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 
 2.  Choose Modify to open the Account Rollup Inquiry Options window.
 
-![](media/2065f5b31d477da34fe31c2624738918.jpg)
+![](media/glage168.jpg)
 
 3.  Enter a name for the option you are creating.
 
@@ -3549,7 +3541,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 
 1.  In the Account Rollup Inquiry Options window, select the type Calculated for one of the columns, and click the Selection lookup button. The Account Rollup Inquiry Calculated Column window appears.
 
-![](media/dd27faf5600a9d28fe34d22b811c7aee.jpg)
+![](media/glage170.jpg)
 
 2.  Enter the columns, constants, and operators for the calculation you want to create.
 
@@ -3587,7 +3579,7 @@ Use the Transaction Matching Group Maintenance window to create and modify group
 1.  Open the Account Rollup Inquiry window.
 >   (Financial \>\> Inquiry \>\> Financial \>\> Account Rollup)
 
-![](media/0f027d9b43a1e2a911bbddbb8b7abdfa.jpg)
+![](media/glage172.jpg)
 
 2.  Enter or select an option. (For information on creating options, see *Creating an account rollup inquiry option*.)
 
@@ -3675,7 +3667,7 @@ Use the Quick Financial Setup window to define the layout for financial statemen
 1.  Open the Quick Financial Setup window.
 >   (Financial \>\> Reports \>\> Financial \>\> Quick Financial)
 
-![](media/a2bea8634cc8708bc9ddc9b2cb31e81b.jpg)
+![](media/glage174.jpg)
 
 2.  Enter or select a financial statement name and select a statement type.
 
@@ -3710,7 +3702,7 @@ Use the Financial Statement Report window to print financial statements. Before 
 
 2.  Choose the report you want to print and choose New to open the Financial Statement Report Options window and to create a new report option.
 
-![](media/f6b501e9a5488093d0529ed9981c3992.jpg)
+![](media/glage176.jpg)
 
 3.  Enter a name for the report option.
 
@@ -3930,7 +3922,7 @@ Trial Balance Detail Trial Balance Summary
 1.  Open the Financial Checklists window.
 >   (Financial \>\> Routines \>\> Financial \>\> Checklists)
 
-![](media/286463460ab461fd729920b1bad802ff.jpg)
+![](media/glage178.jpg)
 
 2.  Select a frequency from the Frequency list. The list of tasks appears.
 
@@ -4241,7 +4233,7 @@ Trial Balance Detail Trial Balance Summary
 1.  Open the Period Consolidation window.
 >   (Financial \>\> Routines \>\> Financial \>\> Period Consolidation)
 
-![](media/a38ccbd964c40258a1b009f2ad7d1565.jpg)
+![](media/glage180.jpg)
 
 2.  Choose whether you want to consolidate a period from an open year or a historical year.
 
@@ -4266,7 +4258,7 @@ Trial Balance Detail Trial Balance Summary
 1.  Open the Fiscal Periods Setup window.
 >   (Administration \>\> Setup \>\> Company \>\> Fiscal Periods)
 
-![](media/6a72e86aedfcac2700d38fa03d7f758b.jpg)
+![](media/glage182.jpg)
 
 2.  Enter or select a year.
 
@@ -4415,7 +4407,7 @@ Trial Balance Detail Trial Balance Summary
 1.  Open the VAT Return window.
 >   (Administration \>\> Routines \>\> Company \>\> VAT Return)
 
-![](media/21319f76bab86ce5c494a6acf71d3d56.jpg)
+![](media/glage184.jpg)
 
 2.  Enter or select a VAT report ID and description.
 
@@ -4458,7 +4450,7 @@ Trial Balance Detail Trial Balance Summary
 1.  Open the Reconcile Financial Information window.
 >   (Financial \>\> Utilities \>\> Financial \>\> Reconcile)
 
-![](media/f75f1ac5808bc07ef8ec098d89524e1c.jpg)
+![](media/glage186.jpg)
 
 2.  You can indicate if all allocation accounts should be reconciled.
 
@@ -4493,7 +4485,7 @@ After removing history, you won’t be able to print the Transaction and Account
 1.  Open the Remove History window.
 >   (Financial \>\> Utilities \>\> Financial \>\> Remove History)
 
-![](media/313b3653a5ee700d049803a3920b8803.jpg)
+![](media/glage188.jpg)
 
 2.  Indicate whether to remove or print transaction and account histories.
 
@@ -4524,7 +4516,7 @@ Use the Archive Matched Transactions window to move transaction distribution lin
 1.  Open the Archive Matched Transactions window.
 >   (Financial \>\> Utilities \>\> Financial \>\> Archive Matched Transactions)
 
-![](media/3b0629e876585bdddccca2b960ad51b9.jpg)
+![](media/glage190.jpg)
 
 2.  Mark the option to archive links and enter the archive date. Transaction distribution links with a date prior to this date will be moved to history.
 
@@ -4541,7 +4533,7 @@ Use the Deferral Check Links window to verify that your transaction distribution
 1.  Open the Deferral Check Links window.
 >   (Microsoft Dynamics GP menu \>\> Maintenance \>\> Deferral Check Links)
 
-![](media/f1cedffc055877a4a0bd669756349f66.jpg)
+![](media/glage192.jpg)
 
 2.  Select each table you want to check links for and choose Insert.
 
