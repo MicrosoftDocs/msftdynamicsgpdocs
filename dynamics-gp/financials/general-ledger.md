@@ -130,7 +130,7 @@ To make best use of General Ledger, you should be familiar with systemwide featu
 
 >   (Financial \>\> Setup \>\> Financial \>\> General Ledger)
 
-![](media/glage009.jpg)
+![](media/GLAGE009.jpg)
 
 2.  Enter the next journal entry and budget journal entry numbers. A new journal entry number is assigned each time you save an entry in the Transaction Entry, Clearing Entry or Quick Journal Entry windows. A new budget journal entry is assigned each time you save an entry in the Budget Transaction Entry window.
 
