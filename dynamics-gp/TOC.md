@@ -90,6 +90,7 @@
 #### [Part 4: Inquiries and reports](financials/receivables-management-part4-inquiries-reports.md)
 #### [Part 5: Utilities and routines](financials/receivables-management-part5-utilities-routines.md)
 ### [Payables Management](financials/PayablesManagement.md)
+### [Payment Document Management] (financials/PaymentDocumentManagement.md)
 ### [Glossary](financials/glossary.md)
 
 <!--- distribution -->
