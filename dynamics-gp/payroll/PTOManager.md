@@ -1,40 +1,47 @@
->   Microsoft Dynamics® GP **Paid Time Off Manager**
+---
+title: "Paid Time Off Manager in Dynamics GP"
+description: "Examine how Paid Time Off Manager works with Microsoft Dynamics GP Payroll."
+keywords: "payroll"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 02/04/2019
+---
 
-CHAPTER 1: PAID TIME OFF MANAGER OVERVIEW 
-==========================================
+# Microsoft Dynamics GP Paid Time Off Manager
 
-Objectives 
------------
+Examine how Paid Time Off Manager works with Microsoft Dynamics GP Payroll.
 
->   The objectives are:
+## CHAPTER 1: PAID TIME OFF MANAGER OVERVIEW 
+
+The objectives are:
 
 -   Examine how Paid Time Off Manager works with Microsoft Dynamics® GP Payroll to calculate vacation and sick time.
 
 -   Review some of the features and benefits that are associated with using Microsoft Dynamics GP Paid Time Off Manager.
 
-Introduction 
--------------
+### Introduction 
 
->   Welcome to Microsoft Dynamics GP Paid Time Off Manager (PTO Manager), an integral component of the financial management system.
+Welcome to Microsoft Dynamics GP Paid Time Off Manager (PTO Manager), an integral component of the financial management system.
 
->   Paid Time Off Manager automatically manages complex vacation and sick time policies. It helps to reduce overhead costs by reducing paperwork and the time required by the Payroll team to manage manual paid time off record keeping. Paid Time Off Manager also enables the staff to manage complex and changing payroll situations quickly and accurately, while offering better service to the employees.
+Paid Time Off Manager automatically manages complex vacation and sick time policies. It helps to reduce overhead costs by reducing paperwork and the time required by the Payroll team to manage manual paid time off record keeping. Paid Time Off Manager also enables the staff to manage complex and changing payroll situations quickly and accurately, while offering better service to the employees.
 
-How Paid Time Off Manager Works 
---------------------------------
+### How Paid Time Off Manager Works 
 
->   Microsoft Dynamics GP Payroll and Human Resource users often need to calculate vacation and sick time (Earned Paid Leave) using a method different from the standard Microsoft Dynamics GP calculation. Because different companies also use different methods, Paid Time Off Manager for Microsoft Dynamics GP allows the calculations to be defined and set up by the user in an attempt to create one module to fit these varying calculation methods. The user now has the ability to assign a PTO Code to multiple employees who have similar or identical PTO configurations.
+Microsoft Dynamics GP Payroll and Human Resource users often need to calculate vacation and sick time (Earned Paid Leave) using a method different from the standard Microsoft Dynamics GP calculation. Because different companies also use different methods, Paid Time Off Manager for Microsoft Dynamics GP allows the calculations to be defined and set up by the user in an attempt to create one module to fit these varying calculation methods. The user now has the ability to assign a PTO Code to multiple employees who have similar or identical PTO configurations.
 
->   Paid Time Off Manager integrates with the Microsoft Dynamics GP Payroll module to provide a complete solution. When users process payroll in Microsoft Dynamics GP, Paid Time Off Manager calculates vacation and sick time during the calculate checks process. The updated vacation and sick time data is posted to employees’ records when the payroll checks are posted.
+Paid Time Off Manager integrates with the Microsoft Dynamics GP Payroll module to provide a complete solution. When users process payroll in Microsoft Dynamics GP, Paid Time Off Manager calculates vacation and sick time during the calculate checks process. The updated vacation and sick time data is posted to employees’ records when the payroll checks are posted.
 
-Features and Benefits 
-----------------------
+### Features and Benefits 
 
 >   The features and capabilities of Paid Time Off Manager include:
 
 -   **Increase productivity.** Perform calculations of accrued vacation and sick time automatically during the Calculate Checks process.
 
 -   **Manage multiple plans.** Define an unlimited number of calculation formulas for accruing vacation and sick time, as well as special features for managing carryovers, waiting periods and maximums.
-
 -   **Access real-time information.** Display updated vacation and sick time balances for the current pay period on the employee paycheck stub and in Self Service.
 
 -   **Automate manual processes.** Set up PTO plans for defined groups,replacing time-consuming manual processes and making maintenance simple.
@@ -43,8 +50,7 @@ Features and Benefits
 
 -   **Streamline budgeting and forecasting process.** Deliver access to PTO information with standard reports and on-demand SmartList reports.
 
-Summary 
---------
+### Summary 
 
 >   Paid Time Off Manager integrates with Microsoft Dynamics GP Payroll to provide a solution for sick and vacation schedules that are not easily handled within the core product.
 
@@ -58,13 +64,9 @@ Summary
 
 -   Ability to assign a PTO Code to multiple employees who have similar or identical PTO configurations.
 
-CHAPTER 2: SETTING UP PAID TIME OFF MANAGER 
-============================================
+## CHAPTER 2: SETTING UP PAID TIME OFF MANAGER 
 
-Objectives 
------------
-
->   The objectives are:
+The objectives are:
 
 -   Grant Security to the Paid Time Off windows and reports.
 
@@ -82,13 +84,9 @@ Objectives
 
 -   Set up an “any time” maximum amount that an employee can have accumulated and identify the difference between this amount and the maximums set within the accrual schedules.
 
-Introduction 
--------------
+### Introduction 
 
->   Setting up Paid Time Off Manager involves granting access to the windows and reports, the process of creating Accrual Schedules and Maximum Schedules and selecting a Paid Time Off option. Each of these topics is discussed in this chapter.
-
-Security Task Access 
----------------------
+Setting up Paid Time Off Manager involves granting access to the windows and reports, the process of creating Accrual Schedules and Maximum Schedules and selecting a Paid Time Off option. Each of these topics is discussed in this chapter.
 
 ### Setting up a Security Task 
 
@@ -142,16 +140,13 @@ Security Task Access
 
     -   **PTO Liability Report**
 
-Security Role Access 
----------------------
 
 ### Setting up a Security Role 
 
 >   Use the Security Role Setup window to select a default security role or modify the default security role. To open this window, click the
 >   **Administration** series button, click **System** on the Setup content pane and then click **Security Roles**.
 
-Paid Time Off Manager Option 
------------------------------
+### Paid Time Off Manager Option 
 
 >   Paid Time Off Manager is set up for each individual company, and Paid Time Off Manager options must be selected for each company. When restoring a backup from one company into a new company, these options must be selected in the new company.
 
@@ -164,8 +159,7 @@ Paid Time Off Manager Option
 
 >   Select the **Year End Closing using PTO Utility** check box to process vacation and sick time maximums from the PTO Utilities window for Employee PTO Setup records that are not selected to Calculate on Anniversary Date. Do not select the **Year End Closing using PTO Utility** check box to process vacation and sick time maximums during Payroll Year-End Closing for Employee PTO Setup records that are not selected to Calculate on Anniversary Date.
 
-Other Settings Affecting PTO Accruals 
---------------------------------------
+### Other Settings Affecting PTO Accruals 
 
 >   To implement the functionality of PTO Manager, the following validations must be true.
 
@@ -191,27 +185,25 @@ Other Settings Affecting PTO Accruals
 
 -   **Accrue - Sick Time** check box must be selected for sick time to accrue for hours associated with this pay code.
 
-Related Microsoft Dynamics GP Core Settings 
---------------------------------------------
+### Related Microsoft Dynamics GP Core Settings 
 
 >   Additional core Microsoft Dynamics GP settings affect or inter-relate to the PTO Manager options, features and functionality.
 
-### Employee Pay Code Maintenance Window 
+#### Employee Pay Code Maintenance Window 
 
 >   Users must select the appropriate check box on the Employee Pay Code Maintenance window for PTO Manager to accrue for vacation and/or sick time. To open this window, click the **HR and Payroll** series button, click **Payroll** on the Cards content pane and then click **Pay Code**.
 
-### Pay Code Setup Window 
+#### Pay Code Setup Window 
 
 >   Users must select the appropriate check box on the Pay Code Setup window for PTO Manager to accrue for vacation and/or sick time. This must be done for each pay code that is to accrue time. To open this window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane and then click **Pay Code**.
 
 ![](media/PTOPCS.jpg)
-
+#
 ### Employee Class Setup Window 
 
 >   When working with employee classes, users must complete the appropriate check box and other information on the Employee Class Setup window for PTO Manager to accrue for vacation and/or sick time. To open this window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane and then click **Employee Class**.
 
-Setting up PTO Codes 
----------------------
+### Setting up PTO Codes 
 
 >   Use the PTO Setup window to create setup data to be inherited at the employee level. The system allows the user to save, recall and update multiple PTO Setup records. To open the PTO Setup window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane and then click **PTO Setup**.
 
@@ -221,8 +213,7 @@ Enter or select a **PTO Code**. Enter or select the **Vacation and/or Sick Accru
 
 >   Select the **Inactive** checkbox to inactivate the PTO Code. If the **Inactive** checkbox is marked, the system will process PTO time based on core Payroll setups.
 
-Setting up Accrual Schedules 
------------------------------
+### Setting up Accrual Schedules 
 
 >   Use the Accrual Schedule Setup window to define multiple accrual schedules specific to the company and the accrual policies. Different schedules may represent different hour ranges and calculation factors.
 >   *EXAMPLE: Accrued time may be calculated differently for part-time employees versus full-time employees; or employees hired before a specific date may have a higher calculation factor than those hired after the specified date.*
@@ -235,7 +226,7 @@ Setting up Accrual Schedules
 
 Enter a **Schedule Code** and a **Schedule Description**.
 
-### Range Based On 
+#### Range Based On 
 
 >   Make a selection in the **Range Based On** field. Options include:
 
@@ -253,14 +244,14 @@ Enter a **Schedule Code** and a **Schedule Description**.
 
 >   It is important to understand each Range Based On option and how it is used to select the proper type for the organization. The Range Based On selection tells the system what the **Range From** and **Range To** values in the scrolling window represent. When each employee’s paycheck is calculated, the system evaluates the data for the employee based on the range option selected and determines which range and calculation factor to use.
 
-### Range Based On: Hours Worked/Pay Period 
+#### Range Based On: Hours Worked/Pay Period 
 
 >   Using this selection the Range From and Range To columns represent hours worked per pay period. All hours worked that are eligible for vacation and/or sick time calculations within the pay period are used to determine the range that the employee falls into. As shown in the figure, if the employee worked 13 hours during the pay period, then the calculation factor of 0.02910 is used.
 
 ![](media/ASSe017.jpg)
 
 
-### Range Based On: Hours Worked/Year 
+#### Range Based On: Hours Worked/Year 
 
 >   Using this selection the Range From and Range To columns represent hours worked per year. All hours worked that are eligible for vacation and/or sick time calculations within the current calendar year (plus all eligible hours for that pay period) are used to determine the calculation factor. As shown in the figure, if the employee has worked a total of 1,600 eligible hours in
 >   the current year and has worked 80 eligible hours this pay period, the calculation factor of 0.00817 will be used.
@@ -270,7 +261,7 @@ Enter a **Schedule Code** and a **Schedule Description**.
 ![](media/ASS24.jpg)
 
 
-### Range Based On: Hours Worked Life-to-Date 
+#### Range Based On: Hours Worked Life-to-Date 
 
 >   Using this selection the Range From and Range To columns represent Hours Worked Life to Date. All hours worked that are eligible for vacation and/or sick time calculations (that have been worked since the employee started) are used to determine the calculation factor.
 
@@ -282,14 +273,14 @@ Enter a **Schedule Code** and a **Schedule Description**.
 
 >   Calculation factors are determined based on the organization’s pay schedules, standard hours worked for each pay period, and methods of determining earned hours.
 
-### Range Based On: Years Worked 
+#### Range Based On: Years Worked 
 
 >   Using this selection the Range From and Range To columns represent years worked. The years worked are determined by the difference between the current date and hire date (or if it exists, adjusted hire date). The following figure shows that if the employee has worked a total of 11.5 years (based on the employee’s hire date), the calculation factor of 0.07692 will be used. In this example, the years worked are rounded to 11 years.
 
 ![](media/ASS23.jpg)
 
 
-### Maximum Hours Based On 
+#### Maximum Hours Based On 
 
 >   Make a selection in the **Maximum Hours Based On** field. Options include:
 
@@ -301,43 +292,43 @@ Enter a **Schedule Code** and a **Schedule Description**.
 
 -   Per Pay Period - Fixed
 
-### Maximum Hours Based On: Per Pay Period - Variable 
+#### Maximum Hours Based On: Per Pay Period - Variable 
 
 >   Employees may accrue a maximum number of hours for each pay period based on this calculation range. In the Years Worked example, the first range of years worked allows the employee to earn up to 3.08 hours in an 80 hour pay period (80 Hours \* Calculation Factor of 0.03845 = 3.08). If the employee had worked at the company for ten years, the employee can earn a maximum of 6.15 hours for the pay period.
 
 ![](media/ASS23.jpg)
 
-### Maximum Hours Based On: Per Year - Fixed 
+#### Maximum Hours Based On: Per Year - Fixed 
 
 >   Employees may accrue a fixed maximum number of hours for each calendar year. However, rather than having the maximum depend on the range, the maximum is set regardless of which calculation range the employee falls into. The Per Year - Fixed option allows users to specify the number of hours for each year. An example can be that the employee may earn a total of 80 hours for
 >   each year, regardless of how many actual hours were worked.
 
 >   *NOTE: While an employee may have an annual maximum set, his or her total accrued time may be greater than the annual maximum due to rollover time.*
 
-### Maximum Hours Based On: Per Year - Variable 
+#### Maximum Hours Based On: Per Year - Variable 
 
 >   Employees may accrue a maximum number of hours for each year based on their calculation range. For example, the calculation ranges may represent hours worked / year. If the employee worked 1200 hours during the year, he or she will earn a maximum of 12.0 hours (1200 \* Calc Factor 0.008 = 12.0 hours).
 
 
-### Maximum Hours Based On: Per Pay Period - Fixed 
+#### Maximum Hours Based On: Per Pay Period - Fixed 
 
 >   Employees may accrue a fixed maximum number of hours for each pay period. However, rather than having the maximum depend on the range, the maximum is set regardless of which calculation range the employee falls into. The employee has a per pay period maximum of 4.0 hours regardless of how many hours he or she works in the pay period; everyone has the same maximum.
 
 >   If a Fixed option is selected for Maximum Hours Based On, a Fixed Maximum Hours must be entered.
 
-### Range From/To 
+#### Range From/To 
 
 >   **From** - is not allowed to have a higher value than the Range To field. Set the criteria that these range fields are based on. If the schedule is assigned to an employee that has only worked 23.00 hours in the pay period, he or she is placed in the 20.00 - 29.99 range for that pay period. For this example, the employee’s accrual can change from one pay period to the next based on his or her “Hours Worked/Pay Period.”
 
 >   **To** - is not allowed to have a lower value than the Range From field. Set the criteria that these range fields are based on. If the schedule below is assigned to an employee that has only worked 23.00 hours in the pay period, he or she is placed in the 20.00 - 29.99 range for that pay period. For this example, the employee’s accrual can change from one pay period to the next based on his or her “Hours Worked/Pay Period.”
 
-### Calculation Factor 
+#### Calculation Factor 
 
 >   Enter the **Calculation Factor.** The **Calculation Factor** is always multiplied by the employees hours worked in the pay period.
 
 >   *NOTE: If the employees must earn a set amount each pay run or year, then enter 9.99999 for the calculation factor, and set the Maximum Hours field value to limit the amount to receive.*
 
-**Determining Calculation Factors**
+#### Determining Calculation Factors
 
 >   Calculation factors are determined based on the organization’s pay schedules, standard hours worked for each pay period, and methods of determining earned hours. In the previous examples, a bi-weekly pay period is used with a standard hours worked for each pay period of 80.  In the following window, the calculation factor is determined by simply dividing the Maximum Hours by the To hours worked in the range (0.50 / 19.99= 0.0250). If the employee works 19.99 hours, he or she earns 0.5 hours(19.99 \* 0.025).
 
@@ -348,14 +339,13 @@ Enter a **Schedule Code** and a **Schedule Description**.
 ![](media/ASS41.jpg)
 
 
-### Maximum Hours 
+#### Maximum Hours 
 
 >   Set criteria for the Maximum Hours field based on, Per Pay Period - Variable,
 
 >   Per Pay Period - Fixed, Per Year - Variable, or Per Year - Fixed. For both of the Fixed selections, enter only one maximum for all of the calculation ranges entered in the scrolling window. For both of the Variable selections, enter a different maximum hours for each calculation range entered in the scrolling window.
 
-Setting up an Accrual Waiting Period 
--------------------------------------
+### Setting up an Accrual Waiting Period 
 
 >   PTO Manager allows the employee to accrue time that is not available for immediate use. Waiting periods can be set as a one-time (introductory period) waiting period, or recurring period, based on the calendar year or by employee anniversary date. PTO Manager allows the employee anniversary date to be specified as the Hire Date or Adjusted Hire Date on the employee maintenance card.
 
@@ -373,15 +363,13 @@ Setting up an Accrual Waiting Period
 
 >   If either the Recurring Waiting Period or Based On Anniversary Date fields are checked, the Waiting Period Expires field is set to either the first of the calendar year or the employee’s anniversary date. When the Waiting Period Expires date is passed, the time is made available to the employee, and the Waiting Period Expires date automatically resets to the first of the next calendar year or the employee’s next anniversary date. The resetting of the Waiting Period Expires date takes place during the first pay run after the expiration date.
 
-Setting up Carry Over Maximum 
-------------------------------
+### Setting up Carry Over Maximum 
 
 >   **Calculate on Anniversary Date -** Select this check box to reset the balance to zero on the Anniversary date if Allow Carry Over is not checked. If the Allow Carry Over check box is selected, it carries over up to the maximum allowed on the first payroll after the employees anniversary date.
 
 >   **Allow Carry Over -** Each employee may be assigned a maximum number of accrued hours that can be carried over to the next year. For every employee that is selected, when the PTO Year End process is invoked, PTO Manager will verify that Available time is less than or equal to the Maximum Carry Over value. The employee forfeits any earned hours in excess of the maximum that has not been used.
 
-Setting up Anytime Maximum 
----------------------------
+### Setting up Anytime Maximum 
 
 Select an Anytime Maximum option. Choices are:
 
@@ -393,8 +381,7 @@ Select an Anytime Maximum option. Choices are:
 
 >   The **Schedule** field and **Schedule Lookup** button are only available when **Variable** is selected. This field allows the entry of a Maximum Schedule Code that is set up in the Maximum Schedule Setup window.
 
-Setting up Maximum Schedules 
------------------------------
+### Setting up Maximum Schedules 
 
 >   The Maximum Schedule Setup window allows the user to create schedules for setting variable maximums. This feature of PTO Manager allows the user to set up variations for calculating the maximum amount of vacation or sick time an employee is allowed to have in his or her depository at any time.
 
@@ -408,12 +395,11 @@ Setting up Maximum Schedules
 
 Enter or select a **Schedule Code** and a short **Description**. Enter the **Range From** and **Range To** and **Maximum Hours**.
 
-PTO Manager Examples 
----------------------
+### PTO Manager Examples 
 
 This section provides examples of waiting periods, maximums, and lifeto-date/year-to-date amounts.
 
-### Example: Waiting periods for vacation accrual 
+#### Example: Waiting periods for vacation accrual 
 
 >   According to the policies of Fabrikam, Inc., vacation time is subject to a waiting period. For full-time employees, vacation can be accrued on a recurring basis, based on the employee’s anniversary date. Sick time is not subject to a waiting period. These companywide policies are specified in the PTO Setup window (Microsoft Dynamics GP \> Tools \> Setup \> Payroll \> PTO Manager \> PTO Setup), as shown in the following illustration.
 
@@ -444,13 +430,13 @@ Recurring and Based on Anniversary Date.
 
 
 
-### Example: Carry over maximums 
+#### Example: Carry over maximums 
 
 >   According to the policies of Fabrikam, Inc., the carry over maximums for vacation and sick hours are based on the employee’s anniversary date. Vacation hours are allowed to be carried over with a maximum of 120.00 hours and sick hours are not allowed to be carried over.
 
 >   These companywide policies are specified in the PTO Setup window (Microsoft Dynamics GP \> Tools \> Setup \> Payroll \> PTO Manager \> PTO Setup). Fabrikam’s employee, Pilar Ackerman, vacation carry over maximum is calculated on her anniversary date and the maximum carry over is 120.00 hours. Pilar’s sick carry over maximum is calculated on the anniversary date, with no carry over. The sick time will be reset to 0.00 on her anniversary date.
 
-### Example: Anytime maximums 
+#### Example: Anytime maximums 
 
 >   According to the policies of Fabrikam, Inc., the anytime maximums for vacation sick hours are as follows:
 
@@ -461,8 +447,7 @@ Recurring and Based on Anniversary Date.
 >   To apply these policies, in the Vacation group, under Anytime Maximums, select Variable and assign the Maximum Schedule. In the Sick group, under Anytime Maximums, select Fixed and enter the maximum number of hours.
 
 
-Summary 
---------
+### Summary 
 
 >   PTO Manager allows an organization to develop an unlimited number of accrual schedules through the use of ranges, a calculation factor and maximums. Some key points to remember from this chapter include:
 
@@ -478,13 +463,9 @@ Summary
 
 -   Maximum schedules can be developed to control an “any time” maximum when carryover hours are permitted.
 
-CHAPTER 3: MAINTENANCE AND PROCESSING 
-======================================
+## CHAPTER 3: MAINTENANCE AND PROCESSING 
 
-Objectives 
------------
-
->   The objectives are:
+The objectives are:
 
 -   Assign a PTO Code to an employee by defining accrual schedule, organizational waiting periods, maximums, and carry over parameters.
 
@@ -492,13 +473,11 @@ Objectives
 
 -   Examine what happens to accrued vacation or sick time if a payroll check is voided.
 
-Introduction 
--------------
+### Introduction 
 
 >   This chapter discusses how to set up an employee to use PTO Manager for accruing vacation and sick time. Also discussed is how to process a payroll with PTO Manager including voiding checks.
 
-Assigning Accrual Schedules 
-----------------------------
+### Assigning Accrual Schedules 
 
 >   Use the Employee PTO Maintenance window to configure the accrual options for each employee. To open the Employee PTO Maintenance window, click the **HR and Payroll** series button, click **Payroll** on the Cards content pane and then click **PTO**.
 
@@ -554,23 +533,21 @@ Assigning Accrual Schedules
 
 >   **Sick Time -** If hours accrued from previous data are available, that total can be entered into this field. As each pay run is processed, all accrued sick time for that pay period will be added to the total.
 
-Processing Payroll with PTO Manager 
-------------------------------------
+### Processing Payroll with PTO Manager 
 
 >   Processing payroll with PTO Manager installed is no different than the Microsoft Dynamics GP core functions of payroll processing. There are no extra steps involved in the processing of payroll. After payroll has been processed, any time that has been accrued and is available for a specific employee is stored in the same core Microsoft Dynamics GP fields. This can be verified by opening the Employee Vacation/Sick maintenance card.
 
 >   To open this window, click the **HR and Payroll** series button, click **Payroll** on the Cards content pane, click **Employee**, and then click the **Vac/Sick** button.
 
 
-Voiding Checks 
----------------
+### Voiding Checks 
 
 >   If checks are voided for any employees that use PTO Manager and have accrued vacation or sick time on the specified pay run, the accrued time is backed out of the employee’s balance by a reversing entry.
 
->   *NOTE: A company cannot have a check number 000; if this check number exists, the Void Checks PTO functionality does not work. Meaning that the time the employee accrued on the voided check is not reversed out of their balance.*
+> [!NOTE]
+> A company cannot have a check number 000; if this check number exists, the Void Checks PTO functionality does not work. Meaning that the time the employee accrued on the voided check is not reversed out of their balance.*
 
-Summary 
---------
+### Summary 
 
 >   Once the accrual schedules are set up as discussed previously, it is necessary to assign those schedules to the appropriate employees. This chapter focused on assigning accrual schedules to employees. Some key points to remember from this chapter include:
 
@@ -580,30 +557,23 @@ Summary
 
 -   Vacation/Sick Time Maximums consists of Carry Over and Maximum Available Anytime.
 
-CHAPTER 4: REPORTS AND UTILITIES 
-=================================
+## CHAPTER 4: REPORTS AND UTILITIES 
 
-Objectives 
------------
-
->   The objectives are:
+The objectives are:
 
 -   Run a PTO Liabilities report to determine departmental liability for sick and/or vacation time.
 
 -   Process year-end using the PTO Utilities window.
 
-Introduction 
--------------
+### Introduction 
 
 >   This chapter focuses on the reporting capabilities of PTO Manager and the period end processing that needs to take place to reset values for year end.
 
-PTO Code List Report 
----------------------
+### PTO Code List Report 
 
 >   A PTO Codes List can be printed from the PTO Setup window. This report lists the active and inactive PTO Codes and the description.
 
-PTO Liabilities Report 
------------------------
+### PTO Liabilities Report 
 
 >   The PTO Liabilities Report provides administration the opportunity to view any department’s vacation/sick liability.
 
@@ -619,8 +589,7 @@ PTO Liabilities Report
 
 >   *NOTE: To select the Primary Pay Code in the Pay Code window, Microsoft Dynamics GP Human Resources must be installed and registered.*
 
-PTO Utilities Window 
----------------------
+### PTO Utilities Window 
 
 >   The PTO Utilities window is used to process the year-end information for the paid-time-off accruals. To open the PTO Utilities window, click the **HR and Payroll** series button, click **Payroll** on the Utilities content pane and then click **PTO Utilities**.
 
@@ -628,12 +597,10 @@ PTO Utilities Window
 
 >   Click the **Process** button. Once Process is selected, the system checks every marked employee to allow carry over and verifies that each employee has hours that are less than or equal to the Maximum Hours Allowed. This process also resets the Year-To-Date Accrued Time fields on the Employee PTO Setup window to zero. This utility allows the company to perform the PTO Year End process at a time consistent with their business requirements.
 
-Summary 
---------
+### Summary 
+This chapter focuses on the PTO Liabilities Report and how to close out a year of accruals in PTO Manager.
 
->   This chapter focuses on the PTO Liabilities Report and how to close out a year of accruals in PTO Manager.
-
->   Some key points to remember from this chapter include:
+Some key points to remember from this chapter include:
 
 -   PTO Liabilities Report can provide total hours and dollars associated with PTO Liability.
 
