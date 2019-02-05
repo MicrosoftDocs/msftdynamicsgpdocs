@@ -143,6 +143,7 @@ Writer.
 | January 1, 2019                               | 2% 10 - Net 30    | January 31, 2019  |
 | January 3, 2019\*                             | Net 15            | January 18, 2019  |
 | January 28, 2019                              | Net 30            | February 27, 2019 |
+
 \* Payment is applied to this document first. 
 
 You can age vendor records by document date or due date. Assume you have an
@@ -165,6 +166,7 @@ automatically apply.
     | January 1, 2019\*                             | 2% 10 - Net 30    | January 31, 2019  |
     | January 3, 2019                               | Net 15            | January 18, 2019  |
     | January 28, 2019                              | Net 30            | February 27, 2019 |
+
     \* Payment is applied to this document first.
 
 - **Applying by due date**
@@ -1295,21 +1297,14 @@ about closing a year.
 
 #### Modifying a vendor card
 
-Use the Vendor Maintenance window to modify a vendor card. You may have to
-change a vendor’s credit limit or telephone number.
+Use the Vendor Maintenance window to modify a vendor card. You may have to change a vendor’s credit limit or telephone number.
 
-If you are using vendor approval workflow, you must resubmit the vendor card
-for approval if you change one of the following fields.
+If you are using vendor approval workflow, you must resubmit the vendor card for approval if you change one of the following fields.
 
-| **Window**                                |   |
-|-------------------------------------------|---|
-| Vendor Maintenance                        |   |
-| \-City, State, UPS Zone, Remit to address |   |
-| Vendor Maintenance Options                |   |
-
-\-Discount Grace Period, Due Date Grace Period, Payment Priority, Minimum
-Order, Trade Discount, Minimum Payment, Maximum Invoice Amount, Credit
-Limit, Writeoffs
+| **Window**                                | Fields |
+|-------------------------------------------|--------|
+| Vendor Maintenance                        | City, State, UPS Zone, Remit to address |
+| Vendor Maintenance Options                | Discount Grace Period, Due Date Grace Period, Payment Priority, Minimum Order, Trade Discount, Minimum Payment, Maximum Invoice Amount, Credit Limit, Writeoffs  |
 
 **To modify a vendor card:**
 
@@ -1317,8 +1312,7 @@ Limit, Writeoffs
 
 2. Enter or select a vendor ID.
 
-You can modify a vendor card that is pending approval if you are the current
-approver of the vendor card.
+    You can modify a vendor card that is pending approval if you are the current approver of the vendor card.
 
 1. To make changes to the vendor card, enter the new information.
 
@@ -1729,10 +1723,8 @@ series.
     might appear for printing, depending on the options you selected in the
     Posting Setup window.
 
-*If you entered batch total requirements or batch approval requirements in
-Payables Management, and you posted a batch through General Ledger, the
-batch is posted through regardless of the batch requirement or approval
-requirements you selected in General Ledger.*
+> [!NOTE]
+> If you entered batch total requirements or batch approval requirements in Payables Management, and you posted a batch through General Ledger, the batch is posted through regardless of the batch requirement or approval requirements you selected in General Ledger.
 
 ### Chapter 8: Transactions
 
@@ -5455,34 +5447,25 @@ using this window. To modify the amount on a 1099 transaction, use the Edit
 
 **To modify 1099 information for a range of vendors and transactions:**
 
-1. Open the Update 1099 Information window: (Purchasing \>\> Utilities \>\>
-    Update 1099 Information)
+1. Open the Update 1099 Information window: (Purchasing \>\> Utilities \>\> Update 1099 Information)
 
 2. Select the type of information to update.
 
-Depending on the tax type that you’re changing, the existing information for
-the vendor and transaction records changes:
+    Depending on the tax type that you’re changing, the existing information for the vendor and transaction records changes:
 
-| **Update Vendor**                       |                   |                                  |
-|-----------------------------------------|-------------------|----------------------------------|
-| **From**                                | **To**            | **Changes**                      |
-| 1099 type                               | another 1099 type | The 1099 Box Number information is changed on the vendor record. Transaction information is unchanged. |
-| **Update 1099 Transactions**            |                   |                                      |
-| 1099 type                               | another 1099 type | Transaction information is changed, Vendor information is unchanged     |
-| **Update Vendor**                       |                   |                                       |
-| **Update Vendor and 1099 Transactions** |                   |                                    |
-| 1099 type                               | another 1099 type | Vendor records in the range are updated with the new tax type and 1099 box number. All work, open, and historical 1099 transactions are updated with the new type.   |
-| Not a 1099 Vendor                       | 1099 type         | Vendor records are updated with the new tax type. On existing invoices, credit memos and returns, the purchase amount minus any trade discount amount appears in the 1099 Amount field. On unapplied credit memos or returns, the 1099 type is updated using the 1099 type assigned to the vendor. On applied credit memos or returns, the 1099 type is updated using the 1099 type on the invoice. |
-| 1099 type                               | Not a 1099 Vendor | Vendor records are updated with the new tax type. Existing transactions are changed to non1099 transactions and the 1099 amount is cleared on payables debit documents, credit memos and returns for unposted, posted and historical transactions.    |
+    | **From**                  | **To**            | **Changes**                      |
+    |---------------------------|-------------------|----------------------------------|
+    | Vendor 1099 type          | Another 1099 type | The 1099 Box Number information is changed on the vendor record. Transaction information is unchanged. |
+    | Transactions 1099 type    | Another 1099 type | Transaction information is changed, Vendor information is unchanged.   |
+    | Vendor 1099 type and 1099 Transactions| Another 1099 type | Vendor records in the range are updated with the new tax type and 1099 box number. All work, open, and historical 1099 transactions are updated with the new type.   |
+    | Not a 1099 Vendor         | 1099 type         | Vendor records are updated with the new tax type. On existing invoices, credit memos and returns, the purchase amount minus any trade discount amount appears in the 1099 Amount field. On unapplied credit memos or returns, the 1099 type is updated using the 1099 type assigned to the vendor. On applied credit memos or returns, the 1099 type is updated using the 1099 type on the invoice. |
+    | 1099 type                 | Not a 1099 Vendor | Vendor records are updated with the new tax type. Existing transactions are changed to non1099 transactions and the 1099 amount is cleared on payables debit documents, credit memos and returns for unposted, posted and historical transactions.    |
 
-1. Enter a range of vendors, tax types, or transactions to modify information
-    for. You can enter multiple ranges.
+3. Enter a range of vendors, tax types, or transactions to modify information for. You can enter multiple ranges.
 
-2. Choose File \>\> Print to view a report that lists the changes without
-    changing your data.
+4. Choose File \>\> Print to view a report that lists the changes without changing your data.
 
-3. Choose Process to make the changes. When processing is complete, the Update
-    1099 Information Audit Report is printed.
+5. Choose Process to make the changes. When processing is complete, the Update 1099 Information Audit Report is printed.
 
 #### History removal overview
 
