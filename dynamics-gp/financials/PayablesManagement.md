@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/28/2019
+ms.date: 02/05/2019
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -69,7 +69,7 @@ setup and cards information is divided into the following chapters:
 - *Chapter 5, “Vendor maintenance,”* describes how to complete maintenance
     procedures for vendor cards.
 
-### Chapter 1: Payables Management setup*
+### Chapter 1: Payables Management setup
 
 One way to set up Payables Management is to follow the setup routine we’ve
 provided. It guides you through the various procedures you must complete, in
@@ -98,13 +98,9 @@ Setup information is divided into the following sections:
 
 #### Before you set up Payables Management
 
-Before you begin setting up Payables Management, be sure to complete the
-System Manager and General Ledger setup procedures. See the System Setup or
-General Ledger documentation for more information about completing these
-procedures.
+Before you begin setting up Payables Management, be sure to complete the System Manager and General Ledger setup procedures. See the System Setup or General Ledger documentation for more information about completing these procedures.
 
-If you’re using Multicurrency Management, you also must set up the following
-information before you begin:
+If you’re using Multicurrency Management, you also must set up the following information before you begin:
 
 - Currencies
 
@@ -114,36 +110,20 @@ information before you begin:
 
 - Multicurrency access
 
-*To print multicurrency versions of the posting journals, mark Include
-Multicurrency Info in the Posting Setup window.*
+> [!NOTE]
+> To print multicurrency versions of the posting journals, mark Include Multicurrency Info in the Posting Setup window.
 
 #### Overview of 1099 tracking options
 
-Your business might be required to track the purchases you make from some
-vendors and to send a 1099 statement that summarizes your expenditures at
-the end of the calendar year.
+Your business might be required to track the purchases you make from some vendors and to send a 1099 statement that summarizes your expenditures at the end of the calendar year.
 
-You can automatically withhold a portion of the payments you make to vendors
-to submit to taxing authorities. To do so, you must designate the taxing
-authority as a “withholding vendor” using the Company Setup Options window
-(Administration \>\> Setup \>\> Company \>\> Company \>\> Options button).
-After you specify a withholding vendor, you can specify whether or not to
-automatically withhold a percentage of the payments you make to each of the
-vendors that you send 1099 statements to. See *Setting up vendor withholding
-options* for more information.
+You can automatically withhold a portion of the payments you make to vendors to submit to taxing authorities. To do so, you must designate the taxing authority as a “withholding vendor” using the Company Setup Options window (Administration \>\> Setup \>\> Company \>\> Company \>\> Options button). After you specify a withholding vendor, you can specify whether or not to automatically withhold a percentage of the payments you make to each of the vendors that you send 1099 statements to. See *Setting up vendor withholding options* for more information.
 
-The following points summarize additional options for working with 1099
-statements.
+The following points summarize additional options for working with 1099 statements.
 
-- You can print multiple types of 1099 statements for the same vendor. For
-    example, you might need to print a 1099 MISC statement and a 1099 DIV
-    statement for the same vendor, if you purchase goods or services from a
-    vendor that is also a stockholder in your company and that receives
-    dividends.
+- You can print multiple types of 1099 statements for the same vendor. For example, you might need to print a 1099 MISC statement and a 1099 DIV statement for the same vendor, if you purchase goods or services from a vendor that is also a stockholder in your company and that receives dividends.
 
-- You can change box descriptions that are displayed in transaction entry
-    windows, to make them easier to understand. Changing the box description
-    won’t change the description printed on the 1099 statements.
+- You can change box descriptions that are displayed in transaction entry windows, to make them easier to understand. Changing the box description won’t change the description printed on the 1099 statements.
 
 - You can change 1099 amounts.
 
@@ -163,7 +143,7 @@ Writer.
 | January 1, 2019                               | 2% 10 - Net 30    | January 31, 2019  |
 | January 3, 2019\*                             | Net 15            | January 18, 2019  |
 | January 28, 2019                              | Net 30            | February 27, 2019 |
-| \* Payment is applied to this document first. |                   |                   |
+\* Payment is applied to this document first. 
 
 You can age vendor records by document date or due date. Assume you have an
 invoice dated January 15, with a due date of February 15, and you age
@@ -171,90 +151,61 @@ documents on the end of the month (February 28). If you age by document
 date, this invoice is 44 days old; if you age by due date, this invoice is
 13 days past due.
 
-### Apply options
+#### Apply options
 
 You can apply credit documents by document date or due date when you
 automatically apply.
 
-**Applying by document date**
+- **Applying by document date**
 
-If you apply by document date, the payments and credits are applied first to
-documents with the oldest document date.
+    If you apply by document date, the payments and credits are applied first to documents with the oldest document date.
 
-| **Document date**                             | **Payment terms** | **Due date**      |
-|-----------------------------------------------|-------------------|-------------------|
-| January 1, 2019\*                             | 2% 10 - Net 30    | January 31, 2019  |
-| January 3, 2019                               | Net 15            | January 18, 2019  |
-| January 28, 2019                              | Net 30            | February 27, 2019 |
-| \* Payment is applied to this document first. |                   |                   |
+    | **Document date**                             | **Payment terms** | **Due date**      |
+    |-----------------------------------------------|-------------------|-------------------|
+    | January 1, 2019\*                             | 2% 10 - Net 30    | January 31, 2019  |
+    | January 3, 2019                               | Net 15            | January 18, 2019  |
+    | January 28, 2019                              | Net 30            | February 27, 2019 |
+    \* Payment is applied to this document first.
 
-**Applying by due date**
+- **Applying by due date**
 
-If you apply by due date, payments and credits are applied first to
-documents with the oldest due date.
+    If you apply by due date, payments and credits are applied first to documents with the oldest due date.
 
 #### Default entries
 
-Use the Payables Management Setup window to enter a default entry for the
-Checkbook ID you use for computer check payments; the check format to use
-for computer checks; the documents listed on the remittance; and whether
-previously applied documents should be listed on the remittance.
+Use the Payables Management Setup window to enter a default entry for the Checkbook ID you use for computer check payments; the check format to use for computer checks; the documents listed on the remittance; and whether previously applied documents should be listed on the remittance.
 
-**Default Summary View** Select a summary view to be the default view in the
+- **Default Summary View** Select a summary view to be the default view in the Vendor Yearly Summary and Vendor Yearly Summary Inquiry windows. Amounts Since Last Close displays the current summary information for the selected vendor since the last year-end close. Fiscal Year displays the selected vendor’s summary information for the  fiscal year you enter. Calendar Year displays the selected vendor’s summary information for the calendar year you enter.
 
-Vendor Yearly Summary and Vendor Yearly Summary Inquiry windows. Amounts
-Since Last Close displays the current summary information for the selected
-vendor since the last year-end close. Fiscal Year displays the selected
-vendor’s summary information for the fiscal year you enter. Calendar Year
-displays the selected vendor’s summary information for the calendar year you
-enter.
+- **Checkbook ID** Enter or select the ID for the checkbook to be displayed as the default throughout this module. Specify the checkbook that you use most often to pay vendors. The entry here appears as a default entry for batches created using the Payables Batch Entry window. You can change this default ID for an individual batch to use another checkbook.
 
-**Checkbook ID** Enter or select the ID for the checkbook to be displayed as
-the default throughout this module. Specify the checkbook that you use most
-often to pay vendors. The entry here appears as a default entry for batches
-created using the Payables Batch Entry window. You can change this default
-ID for an individual batch to use another checkbook.
+- **Check Format** Select one of the following check formats.
 
-**Check Format** Select one of the following check formats.
+  - No Stub, Stub on Top
 
-- No Stub, Stub on Top
+  - Stub on Bottom
 
-- Stub on Bottom
+  - Stub Top/Bottom - Text
 
-- Stub Top/Bottom - Text
+  - Stub Top/Bottom - Graphical
 
-- Stub Top/Bottom - Graphical
+  - Stub/Stub/Check
 
-- Stub/Stub/Check
+  - 3 per Page/No Stub
 
-- 3 per Page/No Stub
+  - User-Defined Check 1
 
-- User-Defined Check 1
+  - User Defined Check 2
 
-- User Defined Check 2
+    The selection appears as the default entry in the Print Payables Checks and Print Payables Transaction Check windows.
 
-The selection appears as the default entry in the Print Payables Checks and
-Print Payables Transaction Check windows.
+- **List Documents on Remittance** Choose the default information to appear on the remittance and on the check stub when you print checks. A remittance shows the same detail as the check stub and is printed on blank paper after the checks are printed. The default you select here appears in the List Documents on Remittance field in the Select Payables Checks and Edit Payables Checks windows.
 
-**List Documents on Remittance** Choose the default information to appear on
-the remittance and on the check stub when you print checks. A remittance
-shows the same detail as the check stub and is printed on blank paper after
-the checks are printed. The default you select here appears in the List
-Documents on Remittance field in the Select Payables Checks and Edit
-Payables Checks windows.
-
-**Print Previously Applied Documents on Remittance** Mark this option to
-list documents on the remittance regardless of whether you applied them when
-the transaction was entered. Use the Payables Check Stub Documents window to
-unmark previously applied information.
+- **Print Previously Applied Documents on Remittance** Mark this option to list documents on the remittance regardless of whether you applied them when the transaction was entered. Use the Payables Check Stub Documents window to unmark previously applied information.
 
 #### Passwords
 
-Use the Payables Management Setup window to enter passwords to limit the
-users who can complete certain activities in Payables Management. For
-example, you might permit only selected users to remove a hold on a vendor
-record. Use passwords to limit a user’s ability to complete the following
-tasks:
+Use the Payables Management Setup window to enter passwords to limit the users who can complete certain activities in Payables Management. For example, you might permit only selected users to remove a hold on a vendor record. Use passwords to limit a user’s ability to complete the following tasks:
 
 - Remove a vendor record hold
 
@@ -340,7 +291,7 @@ transaction, and payment entry.
 1. Open the Payables Management Setup window. (Purchasing \>\> Setup \>\>
     Payables)
 
-    ![A screenshot of a cell phone Description automatically generated](media/1fcb1c9315f92b4613fe60b385c4682c.jpg)
+    ![A screenshot](media/1fcb1c9315f92b4613fe60b385c4682c.jpg)
 
 1. Specify the aging periods to use. See *Aging periods* for more information.
 
@@ -378,7 +329,7 @@ transaction, and payment entry.
 11. Choose OK to save the entries and close the Payables Management Setup
     window.
 
-### Setting up Payables Management options
+#### Setting up Payables Management options
 
 Use the Payables Setup Options window to set up the options that appear
 throughout Payables Management. You can enter a description for each
@@ -390,9 +341,8 @@ vouchers and payments.
 1. Open the Payables Setup Options window. (Purchasing \>\> Setup \>\> Payables
     \>\> Options button)
 
-![A screenshot of a cell phone Description automatically generated](media/460a1ef1bca30addce42fb893d5243f7.jpg)
+    ![A screenshot](media/460a1ef1bca30addce42fb893d5243f7.jpg)
 
-A
 1. Specify default transaction descriptions and codes. The transaction
     description is displayed on reports. Use the transaction code when there
     isn’t room for the entire transaction description on reports or in windows.
@@ -412,20 +362,13 @@ A
     instructions (Help \>\> Contents \>\> select Setting Up the System) for more
     information about setting up tax schedules.
 
-5. Enter user-defined field labels for tracking additional information for
-    vendors.
+5. Enter user-defined field labels for tracking additional information for vendors.
 
-For example, suppose you keep track of the types of vendors you purchase
-from. You might enter Vendor Type in the User-Defined 1 field. In the Vendor
-Class Setup window and the Vendor Maintenance Options window, you then would
-see Vendor Type as a label for the field that was User-Defined 1. You also
-would see Vendor Type as a sorting method on most vendor reports.
+    For example, suppose you keep track of the types of vendors you purchase from. You might enter Vendor Type in the User-Defined 1 field. In the Vendor Class Setup window and the Vendor Maintenance Options window, you then would see Vendor Type as a label for the field that was User-Defined 1. You also would see Vendor Type as a sorting method on most vendor reports.
 
-Use the User-Defined 2 field to track an additional piece of information for
-each vendor; however, this field isn’t a sorting method for reports.
+    Use the User-Defined 2 field to track an additional piece of information for each vendor; however, this field isn’t a sorting method for reports.
 
-1. Choose OK to return to the Payables Management Setup window, where you can
-    save the entries.
+1. Choose OK to return to the Payables Management Setup window, where you can save the entries.
 
 ### Chapter 2: Vendor classes
 
@@ -446,7 +389,7 @@ Vendor class information is divided into the following sections:
 
 - *Entering vendor class Intrastat statistics*
 
-### History options
+#### History options
 
 You can mark whether to keep fiscal-year, calendar-year, transaction, and
 distribution history when you set up vendor classes. You can mark any number
@@ -454,14 +397,14 @@ of these options.
 
 The following table describes each of the history options:
 
-| **History types** | **What’s kept**                                                                    | **Benefits of keeping**                                                                                                                                                                            | **More information**                                                                                                                                                      |
-|-------------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **History types** | **What’s kept**       | **Benefits of keeping**    | **More information**        |
+|-------------------|-----------------------|----------------------------|-----------------------------|
 | Calendar-year     | Summarized history of posted transactions for each month in the calendar year.    | You can print reports that accurately reflect purchasing activity each month. Use the resulting reports to determine whether you’re meeting budget goals.                                         | If you’re required to print 1099 statements for vendors, you should keep calendar year history so 1099 amounts are tracked accurately.                                   |
 | Fiscal-year       | Summarized history of posted transactions for each fiscal period.                 | You can print reports that accurately reflect purchasing activity in each fiscal period. Use the resulting reports to determine whether you’re meeting budget goals.                              | If your fiscal year is the same as the calendar year, you don’t need to keep both fiscal-year and calendar-year history.                                                 |
 | Transaction       | Detailed information about paid vouchers.                                         | You can print history reports and view information about paid vouchers using inquiry windows. You also can print the Historical Aged Trial Balance and re-create remittance forms and check stubs. | If you marked to print the Historical Aged Trial Balance in the Payables Management Setup window, transaction history is kept regardless of whether you mark this option. |
-| Distribution      | Detailed information about the posting account distributions for each transaction. | You can print Distribution History and Check Distribution reports.                                                                                                                                |                                                                                                                                                                           |
+| Distribution      | Detailed information about the posting account distributions for each transaction. | You can print Distribution History and Check Distribution reports.   |    |
 
-### Setting up vendor classes
+#### Setting up vendor classes
 
 Vendor classes provide defaults for the data that groups of vendors use. You
 also can make changes to groups of vendors quickly by changing the class record
@@ -474,67 +417,31 @@ and easier to set up a new vendor record.
 
 1. Open the Vendor Class Setup window.(Purchasing \>\> Setup \>\> Vendor Class)
 
-![A screenshot of a cell phone Description automatically generated](media/a5b6b5a9bed9a1d7a3d2b169197ff741.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/a5b6b5a9bed9a1d7a3d2b169197ff741.jpg)
 
 1. Enter an ID for the class, and enter a description that further identifies
     the class.
 
-We recommend that you enter the class with the most common entries first and
-mark this class as the default class. If you mark the Default option, the
-information you set for this class appears as the default for every
-subsequent class you create. You can have only one default vendor class.
+    We recommend that you enter the class with the most common entries first and mark this class as the default class. If you mark the Default option, the information you set for this class appears as the default for every subsequent class you create. You can have only one default vendor class.
 
 1. Enter multicurrency information. Enter or select an existing currency as the
     default currency for the class. See the Multicurrency Management
     documentation for more information about currencies and rate types.
 
-Enter or select an existing rate type for the class. When you enter
-transactions, the appropriate exchange rate table is selected based on the
-currency ID and rate type you entered.
+    Enter or select an existing rate type for the class. When you enter transactions, the appropriate exchange rate table is selected based on the currency ID and rate type you entered.
 
-If a rate type isn’t assigned to a vendor on a multicurrency transaction,
-the default rate type you entered for the Purchasing series using the
-Multicurrency Setup window appears instead. Therefore, be sure you entered a
-Purchasing series default rate type.
+    If a rate type isn’t assigned to a vendor on a multicurrency transaction, the default rate type you entered for the Purchasing series using the Multicurrency Setup window appears instead. Therefore, be sure you entered a Purchasing series default rate type.
 
 1. Enter document and payment specifications. See the help for more information
     about fields.
 
 2. Mark any or all the available history options.
 
-See *Setting up vendor class default posting accounts* for more information
-about setting up default posting accounts, so you can assign default posting
-accounts to the class.
+    See *Setting up vendor class default posting accounts* for more information about setting up default posting accounts, so you can assign default posting accounts to the class.
 
 1. Choose Save. To print a Classes Setup List, choose File \>\> Print.
 
-### Setting up vendor class default posting accounts
+#### Setting up vendor class default posting accounts
 
 Use the Vendor Class Accounts Setup window to specify posting accounts for
 vendor classes. You can set up posting accounts for each class, so each
@@ -553,68 +460,30 @@ employee’s department, you can track the expenses by department.
 
 **To set up vendor class default posting accounts:**
 
-1. Open the Vendor Class Accounts Setup window. (Purchasing \>\> Setup \>\>
-    Vendor Class \>\> Accounts button)
+1. Open the Vendor Class Accounts Setup window. (Purchasing \>\> Setup \>\> Vendor Class \>\> Accounts button)
 
-![A screenshot of a cell phone Description automatically generated](media/291e916d25fdd320d9a16c10b45b041e.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/291e916d25fdd320d9a16c10b45b041e.jpg)
 
 1. Mark whether to use the Cash account from the checkbook or vendor.
 
-*If you’re using Bank Reconciliation, we recommend that you use the Cash
-account from the checkbook so you can easily reconcile the checkbook balance
-to the Cash account in General Ledger.*
+    > [!NOTE]
+    > If you’re using Bank Reconciliation, we recommend that you use the Cash account from the checkbook so you can easily reconcile the checkbook balance to the Cash account in General Ledger.
 
-1. Enter or select the default posting accounts, which will appear as defaults
-    in the Vendor Account Maintenance window when you’re setting up vendor
-    records.
+1. Enter or select the default posting accounts, which will appear as defaults in the Vendor Account Maintenance window when you’re setting up vendor records.
 
-2. To open the Additional Vendor Accounts window, choose the Purchases field
-    ellipses button.
+2. To open the Additional Vendor Accounts window, choose the Purchases field ellipses button.
 
 3. Enter the additional purchase accounts to use for this class.
 
-To remove an account, select the row to delete and choose Edit \>\> Delete
-Row.
+    To remove an account, select the row to delete and choose Edit \>\> Delete Row.
 
-1. Select default purchase accounts. During transaction entry, each account you
-    marked to appear as a default for transactions is displayed in the Payables
-    Transaction Entry Distribution window. You also can view a list of
-    purchasing accounts using the Accounts lookup window during transaction
-    entry.
+1. Select default purchase accounts. During transaction entry, each account you marked to appear as a default for transactions is displayed in the Payables Transaction Entry Distribution window. You also can view a list of purchasing accounts using the Accounts lookup window during transaction entry.
 
-2. Choose OK to save the accounts and close the Additional Vendor Accounts
-    window.
+2. Choose OK to save the accounts and close the Additional Vendor Accounts window.
 
-3. Choose OK to save the vendor accounts and close the Vendor Class Accounts
-    Setup window.
+3. Choose OK to save the vendor accounts and close the Vendor Class Account Setup window.
 
-### Entering vendor class Intrastat statistics
+#### Entering vendor class Intrastat statistics
 
 Use the Vendor Class Intrastat Setup window to enter Intrastat information for a
 vendor class. You can roll down changes you make using this window to all
@@ -630,21 +499,18 @@ tracking in the Company Setup Options window.*
 
 **To enter vendor class Intrastat statistics:**
 
-1. Open the Vendor Class Intrastat Setup window. (Purchasing \>\> Setup \>\>
-    Vendor Class \>\> Intrastat button)
+1. Open the Vendor Class Intrastat Setup window. (Purchasing \>\> Setup \>\> Vendor Class \>\> Intrastat button)
 
-2. Enter or select country, transport mode, transaction nature, incoterms,
-    procedure/regime, port, region, country of origin and tax commodity codes
-    for the vendor class.
+2. Enter or select country, transport mode, transaction nature, incoterms, procedure/regime, port, region, country of origin and tax commodity codes for the vendor class.
 
-3. Enter a description for the vendor class. Choose OK to close the Vendor
-    Class Intrastat Setup window.
+3. Enter a description for the vendor class. Choose OK to close the Vendor Class Intrastat Setup window.
 
 4. In the Vendor Class Setup window, choose Save to save the changes.
 
-*Deleting the vendor class deletes Intrastat information, as well.*
+> [!NOTE]
+> Deleting the vendor class deletes Intrastat information, as well.
 
-**Chapter 3: Vendor cards**
+### Chapter 3: Vendor cards
 
 The foundation of the Payables Management module is the collection of vendor
 cards. Use this information to track the status of vendors and to print
@@ -680,7 +546,7 @@ Vendor card information includes the following sections:
 
 - *Entering vendor Intrastat statistics*
 
-### Vendor status
+#### Vendor status
 
 Vendor statuses can be used for categorizing your vendors according to their
 business practices. Vendors can be active, inactive and temporary. Each of
@@ -688,11 +554,11 @@ these statuses can be used to limit the data that can be entered or posted
 and places restrictions on deleting or modifying a vendor card. You can
 select the vendor status in the Vendor Maintenance window.
 
-| **Status**        | **Active**                                                                                                                                                      | **Inactive**                                                                                                                                                                              | **Temporary**                                                                                                                                                                                                                 |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Definition        | An active vendor is a person or company you have a long-term relationship with and for whom you need to keep detailed information.                             | An inactive vendor is a person or company you don’t do business with anymore; typically these are vendors whose records you can’t delete because historical information is kept for them. | A temporary vendor is a person or company you have a short-term relationship with and are keeping minimal information for. You can change a temporary vendor to an active vendor or an inactive vendor.                      |
-| Transaction Entry | You can enter, save and post transactions and payments and print checks.                                                                                       | You can’t save or post transactions and payments, or print checks.                                                                                                                       | You can enter, save and post transactions and payments and print checks. You can void vouchers or checks as long as the temporary vendors have not been deleted.                                                             |
-| Deletion          | You can delete an active vendor record if the vendor has no current balance, no 1099 balance, no transaction or payment history and/or no open purchase orders. | You can delete an inactive vendor record if the vendor has no transaction or payment history, and no 1099 balance.                                                                       | You can delete a temporary vendor record if the vendor has no current balance, no 1099 balance, and no open purchase orders in Purchase Order Processing. This vendor type can have records in history, and still be deleted. |
+| **Status**        | **Active**    | **Inactive**   | **Temporary** |
+|-------------------|---------------|----------------|---------------|
+| Definition        | An active vendor is a person or company you have a long-term relationship with and for whom you need to keep detailed information.  | An inactive vendor is a person or company you don’t do business with anymore; typically these are vendors whose records you can’t delete because historical information is kept for them. | A temporary vendor is a person or company you have a short-term relationship with and are keeping minimal information for. You can change a temporary vendor to an active vendor or an inactive vendor.                      |
+| Transaction Entry | You can enter, save and post transactions and payments and print checks.  | You can’t save or post transactions and payments, or print checks.  | You can enter, save and post transactions and payments and print checks. You can void vouchers or checks as long as the temporary vendors have not been deleted.     |
+| Deletion          | You can delete an active vendor record if the vendor has no current balance, no 1099 balance, no transaction or payment history and/or no open purchase orders. | You can delete an inactive vendor record if the vendor has no transaction or payment history, and no 1099 balance.  | You can delete a temporary vendor record if the vendor has no current balance, no 1099 balance, and no open purchase orders in Purchase Order Processing. This vendor type can have records in history, and still be deleted. |
 
 Making a vendor inactive isn’t the same thing as placing a vendor on hold.
 You might find it helpful to think of inactivating a vendor record as a
@@ -704,7 +570,7 @@ payments to the vendor, but you still can apply vouchers and post
 transactions for the vendor. For more information about vendor holds, see
 *Placing or removing a vendor hold*.
 
-### Vendor approval workflow
+#### Vendor approval workflow
 
 Your company can use the vendor approval workflow feature as part of its
 business controls. If you use this feature, you can define an approval
@@ -712,7 +578,7 @@ process for new vendor records or modifications to an existing vendor
 record.
 
 When a vendor record is ready to be approved, approvers can be notified and
-the vendor records can be approved, using Microsoft Outlook®, Microsoft
+the vendor records can be approved, using Microsoft Outlook, Microsoft
 Dynamics GP, or SharePoint®. After a vendor has been approved, you can
 perform the following tasks for the vendor.
 
@@ -740,7 +606,7 @@ Printable Manuals \>\> select System \>\> select System Setup Guide) or the
 Workflow Administrator’s Guide (Help \>\> Printable Manuals \>\> select
 System \>\> select Workflow Administrator’s Guide).
 
-### Adding vendor cards
+#### Adding vendor cards
 
 Use the Vendor Maintenance window to create new vendor cards. Before you
 begin entering the first vendors, consider how to arrange the current and
@@ -756,56 +622,23 @@ best results when printing reports and using other windows.
 
 1. Open the Vendor Maintenance window. (Purchasing \>\> Cards \>\> Vendor)
 
-![A screenshot of a social media post Description automatically generated](media/21348fdcccb7ebee1793a144b7549fe1.jpg)
+    ![A screenshot of a social media post Description automatically generated](media/21348fdcccb7ebee1793a144b7549fe1.jpg)
 
-A screenshot of a social media post Description automatically generated
+    Some fields in the window will have default values. Some default values are the same for all vendor information, but others come from the vendor class information entered in the Vendor Class Setup window and the Vendor Class Accounts Setup window. Refer to the table for more information.
 
-A screenshot of a social media post Description automatically generated
+    | **Selection**       | **Default**          |
+    |---------------------|----------------------|
+    | Status              | Active               |
+    | Tax Type            | Not a 1099 Vendor    |
+    | Minimum Payment     | No Minimum           |
+    | Maximum Invoice Amt | No Maximum           |
+    | Credit Limit        | Unlimited            |
+    | Writeoffs           | Not Allowed          |
+    | Maintain History    | All types are marked |
 
-A screenshot of a social media post Description automatically generated
+1. Enter a vendor ID and name information. The short name can be used in circumstances when the vendor name is too long. The check name is the name that is printed on checks.
 
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-Some fields in the window will have default values. Some default values are
-the same for all vendor information, but others come from the vendor class
-information entered in the Vendor Class Setup window and the Vendor Class
-Accounts Setup window. Refer to the table for more information.
-
-| **Selection**       | **Default**          |
-|---------------------|----------------------|
-| Status              | Active               |
-| Tax Type            | Not a 1099 Vendor    |
-| Minimum Payment     | No Minimum           |
-| Maximum Invoice Amt | No Maximum           |
-| Credit Limit        | Unlimited            |
-| Writeoffs           | Not Allowed          |
-| Maintain History    | All types are marked |
-
-1. Enter a vendor ID and name information. The short name can be used in
-    circumstances when the vendor name is too long. The check name is the name
-    that is printed on checks.
-
-Vendor statuses can be used for categorizing your vendors according to their
-business practices. Vendors can be active, inactive and temporary. Each of
-these statuses can be used to limit the data that can be entered or posted
-and places restrictions on deleting or modifying a vendor card. See *Placing
-or removing a vendor hold* for information about vendor holds.
+    Vendor statuses can be used for categorizing your vendors according to their business practices. Vendors can be active, inactive and temporary. Each of these statuses can be used to limit the data that can be entered or posted and places restrictions on deleting or modifying a vendor card. See *Placing or removing a vendor hold* for information about vendor holds.
 
 1. Assign the vendor to a class. Once a class ID is entered, much of the
     information in this window, the Vendor Maintenance Options window and Vendor
@@ -836,59 +669,24 @@ or removing a vendor hold* for information about vendor holds.
 
 8. Choose Options to open the Vendor Maintenance Options window.
 
-![A screenshot of a cell phone Description automatically generated](media/0426a70a9ba6c0e9b97a8a996613dd26.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/0426a70a9ba6c0e9b97a8a996613dd26.jpg)
 
 1. Enter vendor options or change vendor options from those that are provided
     as default values from the class. When you’re satisfied with the entries,
     choose OK.
 
-*If you marked to print either the Historical Aged Trial Balance in the
-Payables*
+    > [!NOTE]
+    > If you marked to print either the Historical Aged Trial Balance in the Payables Management Setup window or to reprint posting journals in the Audit Trail Codes Setup window, the system keeps history to print those reports even if you didn’t mark to keep transaction history or distribution history for vendors. If you didn’t select these options, the history selections you make for individual vendors are used.
 
-*Management Setup window or to reprint posting journals in the Audit Trail
-Codes Setup window, the system keeps history to print those reports even if
-you didn’t mark to keep transaction history or distribution history for
-vendors. If you didn’t select these options, the history selections you make
-for individual vendors are used.*
+1. If your business requires it, you can use the Vendor Withholding Options window to set up automatic withhold a portion of payments to forward to the appropriate taxing authority. See *Setting up vendor withholding options* for more information.
 
-1. If your business requires it, you can use the Vendor Withholding Options
-    window to set up automatic withhold a portion of payments to forward to the
-    appropriate taxing authority. See *Setting up vendor withholding options*
-    for more information.
+2. Choose the Attachment Management icon to attach documents to the vendor record, if applicable.
 
-2. Choose the Attachment Management icon to attach documents to the vendor
-    record, if applicable.
-
-3. In the Vendor Maintenance window, save the vendor record or submit the
-    vendor record for approval, if you are using vendor approval workflow.
+3. In the Vendor Maintenance window, save the vendor record or submit the vendor record for approval, if you are using vendor approval workflow.
 
 To print a Vendor Setup List, choose File \>\> Print.
 
-### Setting up vendor default posting accounts
+#### Setting up vendor default posting accounts
 
 Use the Vendor Account Maintenance window to change the accounts for a
 single vendor. You can set up posting accounts on a per-vendor basis so each
@@ -917,40 +715,14 @@ Vendor Account Maintenance window.
 
 **To set up vendor default posting accounts:**
 
-1. Open the Vendor Account Maintenance window. (Purchasing \>\> Cards \>\>
-    Vendor \>\> Accounts)
+1. Open the Vendor Account Maintenance window. (Purchasing \>\> Cards \>\> Vendor \>\> Accounts)
 
-![A screenshot of a cell phone Description automatically generated](media/4124969b6e75e97b5ebec03fbe800b69.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/4124969b6e75e97b5ebec03fbe800b69.jpg)
 
 1. Mark whether to use the Cash account from the checkbook or vendor.
 
-*If you’re using Bank Reconciliation, we recommend that you use the Cash
-account from the checkbook so you can easily reconcile the checkbook balance
-to the Cash account in General Ledger.*
+    > [!NOTE]
+    > If you’re using Bank Reconciliation, we recommend that you use the Cash account from the checkbook so you can easily reconcile the checkbook balance to the Cash account in General Ledger.
 
 1. Enter or change the default posting accounts.
 
@@ -959,18 +731,15 @@ to the Cash account in General Ledger.*
 
 3. Enter the additional purchase accounts to use for this vendor.
 
-4. Select default purchase accounts. During transaction entry, each account you
-    marked to appear as the default value for transactions appears in the
-    Payables Transaction Entry Distribution window.
+4. Select default purchase accounts. During transaction entry, each account you marked to appear as the default value for transactions appears in the Payables Transaction Entry Distribution window.
 
-You also can view a list of purchasing accounts using the Accounts lookup
-window during transaction entry.
+You also can view a list of purchasing accounts using the Accounts lookup window during transaction entry.
 
 1. Choose OK to close the Additional Vendor Accounts window.
 
 2. Choose OK to save and close the Vendor Account Maintenance window.
 
-### Setting up e-mail options for a vendor
+#### Setting up e-mail options for a vendor
 
 Use the Vendor E-Mail Options window to select which documents you want to
 send to the vendor. You also can specify message IDs and the document format
@@ -994,33 +763,9 @@ information.
 
 1. Open the Vendor E-mail Options window.
 
-(Purchasing \>\> Cards \>\> Vendor \>\> Select a vendor ID \>\> E-mail)
+    (Purchasing \>\> Cards \>\> Vendor \>\> Select a vendor ID \>\> E-mail)
 
-![A screenshot of a cell phone Description automatically generated](media/9efd86a50bfcfd169d5e4699a28f0b37.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/9efd86a50bfcfd169d5e4699a28f0b37.jpg)
 
 1. Select to send documents as attachments or embed documents in the message
     body. The options available depend on the selections in the Company E-mail
@@ -1057,7 +802,7 @@ engine) are sent when you send documents as HTML attachments.
 
 1. Choose OK to update the selected vendor with the options you entered.
 
-### Setting up e-mail options for a group of vendors
+#### Setting up e-mail options for a group of vendors
 
 Use the Mass Vendor E-Mail Settings window to assign e-mail settings to
 multiple vendor records. You can select which documents you want to send to
@@ -1078,39 +823,13 @@ document.
 
 **To set up e-mail options for a group of vendors:**
 
-1. In the navigation pane, choose the Purchasing button, and then choose the
-    Vendors list.
+1. In the navigation pane, choose the Purchasing button, and then choose the Vendors list.
 
 2. Mark the vendors that you want to set up e-mail options for.
 
-3. In the Modify group, click the overflow menu and then select E-mail Settings
-    to open the Mass Vendor E-mail Settings window.
+3. In the Modify group, click the overflow menu and then select E-mail Settings to open the Mass Vendor E-mail Settings window.
 
-![A screenshot of a cell phone Description automatically generated](media/9558d65a7d354a05f406bdcf62b5bc08.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/9558d65a7d354a05f406bdcf62b5bc08.jpg)
 
 1. Select to send documents as attachments or embed documents in the body of
     e-mail messages.
@@ -1132,15 +851,12 @@ A screenshot of a cell phone Description automatically generated
     - The file formats available to send attachments depend on the formats you
         selected in the Company E-mail Setup window.
 
-Before you can send documents as DOCX, PDF, or XPS attachments, the Word
-template for the document must be enabled in the Template Configuration
-Manager window. Standard reports (reports generated by the Report Writer
-engine) are sent when you send documents as HTML attachments.
+    Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window. Standard reports (reports generated by the Report Writer engine) are sent when you send documents as HTML attachments.
 
 1. Choose OK to save your entries and to close the Mass Vendor E-mail Settings
     window.
 
-### Setting up vendor withholding options
+#### Setting up vendor withholding options
 
 Use the Vendor Withholding Options window to specify tax withholding for a
 vendor.
@@ -1166,34 +882,9 @@ setting up Australian taxes.
 
 **To set up vendor withholding options:**
 
-1. Open the Vendor Withholding Options window. (Purchasing \>\> Cards \>\>
-    Vendor \>\> Withholding button)
+1. Open the Vendor Withholding Options window. (Purchasing \>\> Cards \>\> Vendor \>\> Withholding button)
 
-![A screenshot of a cell phone Description automatically generated](media/38eca694cb3889f90aeaaba86b60e839.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/38eca694cb3889f90aeaaba86b60e839.jpg)
 
 1. Mark Subject To Withholding Deduction.
 
@@ -1201,10 +892,8 @@ A screenshot of a cell phone Description automatically generated
 
 3. Enter the vendor’s tax rate.
 
-*If the variance certificate or the deduction certificate expires and the
-new expiration date isn’t entered, the standard rate entered in the Company
-Setup Options window calculates the tax until a new variance or deduction
-certificate number is entered.*
+    > [!NOTE]
+    > If the variance certificate or the deduction certificate expires and the new expiration date isn’t entered, the standard rate entered in the Company Setup Options window calculates the tax until a new variance or deduction certificate number is entered.
 
 1. Enter the starting and ending dates for the period the payee worked during.
 
@@ -1223,7 +912,7 @@ certificate number is entered.*
 
 7. Choose OK to save the information and close the window.
 
-### Address IDs and taxes
+#### Address IDs and taxes
 
 Calculation of sales taxes depends on the address ID and shipping method
 specified for a transaction, along with the tax schedule assigned to the
@@ -1232,7 +921,7 @@ the tax schedule assigned to the vendor’s address ID is used. If the
 shipping method requires the vendor to deliver the merchandise, the tax
 schedule from your company is used.
 
-### Entering vendor addresses
+#### Entering vendor addresses
 
 Use the Vendor Address Maintenance window to enter multiple address IDs for
 an individual vendor.
@@ -1261,7 +950,7 @@ Setting Up the System) for more information.
 
 1. Enter address, phone, and fax information.
 
-### Setting up 1099 information
+#### Setting up 1099 information
 
 Use the 1099 Setup window to specify the 1099 statement box descriptions and
 the minimum amounts to track for each box and for each type of 1099
@@ -1269,34 +958,9 @@ statement your business prints.
 
 **To set up 1099 information:**
 
-1. Open the 1099 Setup window. (Purchasing \>\> Setup \>\> Payables \>\> 1099
-    Setup button)
+1. Open the 1099 Setup window. (Purchasing \>\> Setup \>\> Payables \>\> 1099 Setup button)
 
-![A screenshot of a cell phone Description automatically generated](media/aded4c40591900066cdf272f553ede1b.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/aded4c40591900066cdf272f553ede1b.jpg)
 
 1. Select a tax type to enter information for a specific 1099 statement:
     Dividend, Miscellaneous, and Interest.
@@ -1313,7 +977,7 @@ A screenshot of a cell phone Description automatically generated
 5. Choose Save to add the address ID. To print a Vendor Addresses List, choose
     File \>\> Print.
 
-### Entering vendor Intrastat statistics
+#### Entering vendor Intrastat statistics
 
 Use the Vendor Intrastat Setup window to enter a vendor’s tax registration
 number. If Intrastat information was entered for the vendor class and rolled
@@ -1326,8 +990,7 @@ tracking in the Company Setup Options window.*
 
 **To enter vendor Intrastat statistics:**
 
-1. Open the Vendor Intrastat Setup window. (Purchasing \>\> Cards \>\>
-    Addresses \>\> Intrastat button)
+1. Open the Vendor Intrastat Setup window. (Purchasing \>\> Cards \>\> Addresses \>\> Intrastat button)
 
 2. Enter the tax registration number.
 
@@ -1340,9 +1003,10 @@ tracking in the Company Setup Options window.*
 5. In the Vendor Address Maintenance window, choose Save to save the
     information.
 
-*Deleting the vendor address ID also deletes Intrastat information.*
+> [!NOTE]
+> Deleting the vendor address ID also deletes Intrastat information.
 
-**Chapter 4: Beginning balances and vendor history**
+### Chapter 4: Beginning balances and vendor history
 
 If you’re setting up Payables Management for the first time, you must enter
 the beginning, or outstanding, balances owed to each vendor.
@@ -1366,7 +1030,7 @@ sections:
 
 - *Entering vendor yearly summary history*
 
-### Entering beginning balances
+#### Entering beginning balances
 
 Enter beginning balances for each outstanding transaction for each vendor or
 enter beginning balances as one summarized transaction total for each
@@ -1381,32 +1045,9 @@ can then print edit lists to verify the entries before posting.*
 
 **To enter beginning balances:**
 
-1. Open the Posting Setup window. (Administration \>\> Setup \>\> Posting \>\>
-    Posting)
+1. Open the Posting Setup window. (Administration \>\> Setup \>\> Posting \>\> Posting)
 
-![A screenshot of a cell phone Description automatically generated](media/de9b7c4d82b4ef41e42a32b2ea09e00a.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/de9b7c4d82b4ef41e42a32b2ea09e00a.jpg)
 
 1. Choose Purchasing as the series and Payables Trx Entry as the origin. Unmark
     Post to General Ledger if General Ledger is part of your system. Change the
@@ -1463,7 +1104,7 @@ See *Chapter 8, “Transactions,”* for more information.
     displayed in the Vendor Yearly Summary window when printing the 1099
     statements.
 
-### Entering vendor credit summary history
+#### Entering vendor credit summary history
 
 Use the Vendor Credit Summary window to enter credit summary history for
 each vendor. The Current Balance field and the aging period information are
@@ -1487,29 +1128,7 @@ foreign currencies, the functional equivalents are displayed.
 
 1. Open the Vendor Credit Summary window. (Purchasing \>\> Cards \>\> Summary)
 
-![A screenshot of a social media post Description automatically generated](media/ff5ad220959626dfb33449db1b6de077.jpg)
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
+    ![A screenshot of a social media post Description automatically generated](media/ff5ad220959626dfb33449db1b6de077.jpg)
 
 1. Enter or select a vendor ID.
 
@@ -1532,7 +1151,7 @@ A screenshot of a social media post Description automatically generated
     enter all the history you need, you can choose File \>\> Print to print a
     Vendor Financial Summary Report.
 
-### Entering vendor period summary history
+#### Entering vendor period summary history
 
 Use the Vendor Period Summary window to enter historical amounts per period—
 fiscal or calendar. To keep both fiscal and calendar period history if those
@@ -1540,32 +1159,9 @@ periods are different, you must enter each type separately.
 
 **To enter vendor period summary history:**
 
-1. Open the Vendor Period Summary window. (Purchasing \>\> Cards \>\> Summary
-    \>\> Select a vendor ID \>\> Period button)
+1. Open the Vendor Period Summary window. (Purchasing \>\> Cards \>\> Summary \>\> Select a vendor ID \>\> Period button)
 
-![A screenshot of a cell phone Description automatically generated](media/c04bfa7f350d43c67f7d5b2d3b3e6515.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/c04bfa7f350d43c67f7d5b2d3b3e6515.jpg)
 
 1. Mark Calendar or Fiscal, depending on the type of history you’re entering.
 
@@ -1578,14 +1174,12 @@ A screenshot of a cell phone Description automatically generated
 If you posted beginning balances for this vendor, balances might be
 displayed for some periods.
 
-*Changing the 1099 amount in this window does not affect the 1099 statement
-amount. To change the amounts that are printed on 1099 statements, choose
-the expansion button for the 1099 Amount field in the Vendor Period Summary
-windows to open the 1099 Details window.*
+> [!NOTE]
+> Changing the 1099 amount in this window does not affect the 1099 statement amount. To change the amounts that are printed on 1099 statements, choose the expansion button for the 1099 Amount field in the Vendor Period Summary windows to open the 1099 Details window.
 
 1. Choose Save.
 
-### Entering vendor yearly summary history
+#### Entering vendor yearly summary history
 
 Use the Vendor Yearly Summary window to enter summarized history
 information. Amounts might appear if you posted beginning balances for the
@@ -1607,32 +1201,9 @@ statements.*
 
 **To enter vendor yearly summary history:**
 
-1. Open the Vendor Yearly Summary window. (Purchasing \>\> Cards \>\> Summary
-    \>\> Select a vendor ID \>\> Yearly button)
+1. Open the Vendor Yearly Summary window. (Purchasing \>\> Cards \>\> Summary \>\> Select a vendor ID \>\> Yearly button)
 
-![A screenshot of a cell phone Description automatically generated](media/1a1e477dca3f31490abcf93a7fae6b8e.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/1a1e477dca3f31490abcf93a7fae6b8e.jpg)
 
 1. Select Amounts Since Last Close as the summary view, if you’re entering
     vendor yearly summary history.
@@ -1651,10 +1222,9 @@ A screenshot of a cell phone Description automatically generated
 
 5. Choose OK.
 
-**Chapter 5: Vendor maintenance**
+### Chapter 5: Vendor maintenance
 
-This part of the documentation describes the maintenance tasks you encounter
-when working in Microsoft Dynamics GP.
+This part of the documentation describes the maintenance tasks you encounter when working in Microsoft Dynamics GP.
 
 Vendor maintenance information is divided into the following sections:
 
@@ -1670,7 +1240,7 @@ Vendor maintenance information is divided into the following sections:
 
 - *Deleting a vendor address*
 
-### Placing or removing a vendor hold
+#### Placing or removing a vendor hold
 
 During the course of business, you might want to place a vendor record on
 hold. For example, if you receive the wrong merchandise from a vendor, you
@@ -1694,10 +1264,11 @@ A password might be required to remove a hold on a vendor record.
 3. Mark Hold to place the vendor card on hold or unmark Hold to remove it.
     Choose Save
 
-*Depending on how Payables Management was set up, a password might be
-required to remove a hold on a vendor record.*
+> [!NOTE]
+> Depending on how Payables Management was set up, a password might be
+required to remove a hold on a vendor record.
 
-### Inactivating a vendor card
+#### Inactivating a vendor card
 
 Use the Vendor Maintenance window to inactivate a vendor card. Inactive
 vendors are vendors you no longer want to have a business relationship with,
@@ -1722,7 +1293,7 @@ about closing a year.
 
 3. Select the Inactive status to inactivate the vendor. Choose Save.
 
-### Modifying a vendor card
+#### Modifying a vendor card
 
 Use the Vendor Maintenance window to modify a vendor card. You may have to
 change a vendor’s credit limit or telephone number.
@@ -1754,7 +1325,7 @@ approver of the vendor card.
 2. Save the vendor card or submit it for approval if you are using vendor
     approval workflow.
 
-### Deleting a vendor card
+#### Deleting a vendor card
 
 Use the Vendor Maintenance window to delete a vendor card, if the card is
 obsolete and you’re not planning to use it again in the future. You can’t
@@ -1796,7 +1367,7 @@ To delete a vendor record with a workflow status of Pending Approval, you
 must be the current approver of the vendor card or you must have permission
 to act on the tasks of other users during the vendor approval process.
 
-### Deleting a vendor class
+#### Deleting a vendor class
 
 Use the Vendor Class Setup window to delete a vendor class, if the class is
 obsolete and you’re not planning to use it in the future.
@@ -1816,7 +1387,7 @@ vendors that will be affected by the deletion.
 
 3. Choose Delete.
 
-### Deleting a vendor address
+#### Deleting a vendor address
 
 Use the Vendor Address Maintenance window to delete a vendor address, if the
 address is obsolete and you’re not planning to use it in the future.
@@ -1827,8 +1398,7 @@ window.
 
 **To delete a vendor class:**
 
-1. Open the Vendor Address Maintenance window. (Purchasing \>\> Cards \>\>
-    Addresses)
+1. Open the Vendor Address Maintenance window. (Purchasing \>\> Cards \>\> Addresses)
 
 2. Enter or select a class ID.
 
@@ -1866,7 +1436,7 @@ transaction information is divided into the following topics:
 - *Chapter 14, “Multicurrency applying,”* contains information specific to
     applying and unapplying multicurrency transactions.
 
-**Chapter 6: Multicurrency transactions**
+### Chapter 6: Multicurrency transactions
 
 If you’re using Multicurrency Management with Payables Management, you can
 choose the currency to enter on transactions.
@@ -1877,7 +1447,7 @@ This information is divided into the following sections:
 
 - *Multicurrency account distributions*
 
-### Exchange rate and document date
+#### Exchange rate and document date
 
 If a transaction’s currency ID is not in the functional currency, a rate
 type and associated exchange rate table are assigned to the transaction. The
@@ -1897,7 +1467,7 @@ window. If you entered a General Ledger posting date that’s different from
 the document date, the exchange rate expiration date must be after the
 posting date.
 
-### Multicurrency account distributions
+#### Multicurrency account distributions
 
 For multicurrency transactions, distribution amounts are displayed in both
 the functional and originating currencies. However, you can change only the
@@ -1927,7 +1497,7 @@ distributions are calculated as shown in the following table:
 | Rounding Diff  |                |                 |                      | \$0.01                |
 | Totals         | 30,886.59 EUR  | 30,886.59 EUR   | \$33,734.34          | \$33,734.34           |
 
-**Chapter 7: Batches and posting**
+### Chapter 7: Batches and posting
 
 Batches are groups of transactions, identified by a name or a number, that
 you can use for identification purposes, and to make the posting process
@@ -1960,7 +1530,7 @@ Batch information is broken into the following sections:
 
 - *Posting batches by series*
 
-### Creating a batch
+#### Creating a batch
 
 Use the Payables Batch Entry window to create a batch, or group, of
 transactions. You can create batches that you use just one time, or
@@ -1968,65 +1538,45 @@ recurring batches for transactions you enter on a regular basis.
 
 **To create a batch:**
 
-1. Open the Payables Batch Entry window. (Purchasing \>\> Transactions \>\>
-    Batches)
+1. Open the Payables Batch Entry window. (Purchasing \>\> Transactions \>\> Batches)
 
 2. Enter or select a batch ID.
 
-3. Select the batch origin. The origin identifies the window that transactions
-    for this batch will be entered in. Since batches can use only one origin,
-    you can have several batches with the same name, but different origins.
+3. Select the batch origin. The origin identifies the window that transactions for this batch will be entered in. Since batches can use only one origin, you can have several batches with the same name, but different origins.
 
 4. Enter a batch comment.
 
-5. If you are creating a computer check batch for purchase order prepayments,
-    mark Purchasing Prepayment Batch.
+5. If you are creating a computer check batch for purchase order prepayments, mark Purchasing Prepayment Batch.
 
-This option is available if you have marked the Allow Purchase Order
-Prepayments option in the Purchase Order Processing Setup window.
+    This option is available if you have marked the Allow Purchase Order Prepayments option in the Purchase Order Processing Setup window.
 
-1. Select a frequency if the origin is Payables Transaction Entry. Select
-    Single Use for batches you enter and post only once.
+1. Select a frequency if the origin is Payables Transaction Entry. Select Single Use for batches you enter and post only once.
 
-If this batch is a recurring batch, select the frequency to repost the
-transactions.
+    If this batch is a recurring batch, select the frequency to repost the transactions.
 
 1. Enter the number of times to repeat posting in the Recurring Posting field.
 
-Leave the Recurring Posting field as zero for an unlimited number of
-postings. The batch must be posted at the interval you select, but you don’t
-need to reenter the transactions in the batch.
+    Leave the Recurring Posting field as zero for an unlimited number of postings. The batch must be posted at the interval you select, but you don’t need to reenter the transactions in the batch.
 
-If you select Miscellaneous as the frequency, enter the number of days for
-the posting date to increment.
+    If you select Miscellaneous as the frequency, enter the number of days for the posting date to increment.
 
-If you’re using Multicurrency Management and you’re planning to enter
-transactions involving multiple currencies, select single-use. Multicurrency
-batches must be single-use because exchange rates for document dates can’t
-be predicted.
+    If you’re using Multicurrency Management and you’re planning to enter transactions involving multiple currencies, select single-use. Multicurrency batches must be single-use because exchange rates for document dates can’t be predicted.
 
-1. Enter a posting date. The user date is the default posting date, but you can
-    change it to post the batch as of a different date.
+1. Enter a posting date. The user date is the default posting date, but you can change it to post the batch as of a different date.
 
-The posting date entered here is the date General Ledger files are updated.
-Payables Management records are updated according to the date entered in the
-Payables Transaction Entry window.
+    The posting date entered here is the date General Ledger files are updated. Payables Management records are updated according to the date entered in the Payables Transaction Entry window.
 
 1. Enter or select a checkbook ID.
 
-2. Enter currency information, if the origin is Computer Check (otherwise,
-    these fields are unavailable). Enter a check date to appear on checks in
-    this batch. The check date also determines the exchange rate to use for
-    checks in this batch.
+2. Enter currency information, if the origin is Computer Check (otherwise, these fields are unavailable). Enter a check date to appear on checks in this batch. The check date also determines the exchange rate to use for checks in this batch.
 
-Enter a currency ID; all computer checks in this batch must use the same
-currency ID and have the same check date.
+    Enter a currency ID; all computer checks in this batch must use the same currency ID and have the same check date.
 
 1. Enter any requirements for posting the batch, such as batch totals.
 
 2. To print a batch edit list, choose File \>\> Print. Choose Save.
 
-### Payables batch approval workflow
+#### Payables batch approval workflow
 
 If your company uses the Workflow feature among its business controls,
 batches might have to be approved before posting. The rules for approving
@@ -2044,7 +1594,7 @@ Posting \>\> Posting) and select the Purchasing series. Unmark the Require
 Batch Approval option for batches whose origin is General Entry and Clearing
 Entry.
 
-### Modifying or deleting a batch
+#### Modifying or deleting a batch
 
 Use the Payables Batch Entry window to correct or delete a batch. You can
 change or delete unposted batches at any time. Recurring batches are deleted
@@ -2056,8 +1606,7 @@ changing the transactions in a batch.
 
 **To modify or delete a batch:**
 
-1. Open the Payables Batch Entry window. (Purchasing \>\> Transactions \>\>
-    Batches)
+1. Open the Payables Batch Entry window. (Purchasing \>\> Transactions \>\> Batches)
 
 2. To correct the batch, replace the incorrect information with correct
     information. Choose Save to save the changes or submit the batch to
@@ -2068,8 +1617,7 @@ changing the transactions in a batch.
 
 **To modify a batch using the action pane:**
 
-1. In the navigation pane, choose the Purchasing button, then choose the
-    Payables Batches list.
+1. In the navigation pane, choose the Purchasing button, then choose the Payables Batches list.
 
 2. Select a batch to modify.
 
@@ -2081,7 +1629,7 @@ changing the transactions in a batch.
     information. Choose save to save the changes or resubmit the batch for
     approval, if you are using workflow.
 
-### Posting a batch
+#### Posting a batch
 
 Use the Payables Batch Entry window to post batches you’ve entered in
 Payables Management. You also can view, print an edit list, mark, and post
@@ -2143,21 +1691,15 @@ don’t need to post the batch again in General Ledger.
 
 7. Choose to post the selected batches.
 
-If you’re set up to post to rather than through General Ledger, the batch
-appears in the Financial Series Posting and Master Posting windows. You can
-edit the transactions in the General Ledger Transaction Entry window before
-posting them again. Accounts are updated when you post the transactions in
-General Ledger. If you’re using Workflow, and change a batch, you must
-resubmit that batch for approval.
+    If you’re set up to post to rather than through General Ledger, the batch appears in the Financial Series Posting and Master Posting windows. You can edit the transactions in the General Ledger Transaction Entry window before posting them again. Accounts are updated when you post the transactions in General Ledger. If you’re using Workflow, and change a batch, you must resubmit that batch for approval.
 
-If you post through General Ledger, accounts are updated at once and you
-don’t need to post the batch again in General Ledger.
+    If you post through General Ledger, accounts are updated at once and you don’t need to post the batch again in General Ledger.
 
 1. Print the posting journals and distribution breakdown registers. Using the
     Posting Setup window, you can select posting journals to print according to
     your preferences.
 
-### Posting batches by series
+#### Posting batches by series
 
 Use the Purchasing Series Posting window to post Payables batches by series.
 Series posting lets you post any batch that’s been entered in the Purchasing
@@ -2192,7 +1734,7 @@ Payables Management, and you posted a batch through General Ledger, the
 batch is posted through regardless of the batch requirement or approval
 requirements you selected in General Ledger.*
 
-**Chapter 8: Transactions**
+### Chapter 8: Transactions
 
 Invoices, credit memos, returns, finance charges, and miscellaneous charges
 are the document types you can enter in Payables Management. (Payments are
@@ -2228,7 +1770,7 @@ Transaction information includes the following sections:
 
 - *Entering Intrastat trade statistics*
 
-### Transaction entry overview
+#### Transaction entry overview
 
 When you enter transactions using the Payables Transaction Entry or Payables
 Batch Entry windows, you must specify several options, including document
@@ -2280,7 +1822,7 @@ the vendor to deliver the merchandise, your company’s tax schedule is used.
 For more information about using the shipping method in tax calculations,
 see the System Setup documentation.
 
-### Apply options
+#### Apply options
 
 When you post transactions or enter them in a batch, you can choose Apply to
 apply the transactions using the Apply Payables Documents window. Use this
@@ -2304,7 +1846,7 @@ one of the following methods:
     memo or return between several documents by marking the check box and
     changing the amount in the Amount Applied column for that transaction.
 
-### Entering an individual invoice
+#### Entering an individual invoice
 
 Use the Payables Transaction Entry window to enter an invoice. An invoice is
 a bill for goods or services you received from the vendor. When you receive
@@ -2317,29 +1859,11 @@ You can’t print edit lists for transactions that aren’t entered in a batch.
 
 **To enter an individual invoice:**
 
-1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions
-    \>\> Transaction Entry)
+1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions \>\> Transaction Entry)
 
-![A screenshot of a computer Description automatically generated](media/4caf53dbedd822755c214db7267fab19.jpg)
+    ![A screenshot of a computer Description automatically generated](media/4caf53dbedd822755c214db7267fab19.jpg)
 
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-1. Enter or select a voucher number. The default number is taken from the
-    Payables Setup Options window.
+1. Enter or select a voucher number. The default number is taken from the Payables Setup Options window.
 
 2. Select Invoice as the document type, and enter a description.
 
@@ -2347,9 +1871,7 @@ A screenshot of a computer Description automatically generated
 
 4. Enter or select an address ID, payment terms, and a currency ID.
 
-If you use multiple remit-to address IDs for a vendor, a separate check will
-be created for each remit-to address. See *Address IDs and taxes* for
-information how address IDs and shipping methods affect sales taxes.
+    If you use multiple remit-to address IDs for a vendor, a separate check will be created for each remit-to address. See *Address IDs and taxes* for information how address IDs and shipping methods affect sales taxes.
 
 1. Enter the document number assigned to this transaction by the vendor.
 
@@ -2358,32 +1880,21 @@ information how address IDs and shipping methods affect sales taxes.
 3. Enter invoice amounts in the Purchases field. The trade discount is
     calculated if you entered a trade discount for the vendor.
 
-Enter additional amounts in the Freight and Miscellaneous fields, as
-appropriate. You can change the default tax schedules for those amounts by
-choosing the Tax Schedule ID expansion button and entering that information.
+    Enter additional amounts in the Freight and Miscellaneous fields, as appropriate. You can change the default tax schedules for those amounts by choosing the Tax Schedule ID expansion button and entering that information.
 
-1. Enter payment information, if you’re making a payment on all or part of the
-    transaction amount.
+1. Enter payment information, if you’re making a payment on all or part of the transaction amount.
 
-Make changes to account distributions, if necessary.
+    Make changes to account distributions, if necessary.
 
-1. Choose Post. Because this transaction wasn’t assigned a Batch ID, it can’t
-    be saved and must be posted immediately.
+1. Choose Post. Because this transaction wasn’t assigned a Batch ID, it can’t be saved and must be posted immediately.
 
-If you are using vendor approval workflow, the vendor must have the workflow
-status of Approved or No Approval Needed before you can post the
-transaction. If the vendor isn’t approved, you can save the transaction to a
-batch. For more information about vendor approval workflow, see *Vendor
-approval workflow*.
+If you are using vendor approval workflow, the vendor must have the workflow status of Approved or No Approval Needed before you can post the transaction. If the vendor isn’t approved, you can save the transaction to a batch. For more information about vendor approval workflow, see *Vendor approval workflow*.
 
-Depending on how you set up your Microsoft Dynamics GP system, the
-Transaction Entry Posting Journal and Distribution Breakdown Register might
-be printed when the posting process is complete.
+Depending on how you set up your Microsoft Dynamics GP system, the Transaction Entry Posting Journal and Distribution Breakdown Register might be printed when the posting process is complete.
 
-### Entering invoices in a batch
+#### Entering invoices in a batch
 
-Use the Payables Batch Entry window or the Payables Transaction Entry window
-to enter transactions in a batch.
+Use the Payables Batch Entry window or the Payables Transaction Entry window to enter transactions in a batch.
 
 You can enter Invoices in batches to post them as a group. Another advantage
 to entering invoices in batches is that you can save the invoices, so you
@@ -2393,54 +1904,43 @@ batch.
 
 **To enter invoices in a batch from the Payables Batch Entry window:**
 
-1. Open the Payables Batch Entry window. (Purchasing \>\> Transactions \>\>
-    Batches)
+1. Open the Payables Batch Entry window. (Purchasing \>\> Transactions \>\> Batches)
 
 2. Enter or select a batch ID.
 
 3. Select Payables Trx Entry as the Origin.
 
-4. Enter batch information in the Comment, Frequency, Posting Date, and
-    Checkbook ID fields. See *Creating a batch* for more information.
+4. Enter batch information in the Comment, Frequency, Posting Date, and Checkbook ID fields. See *Creating a batch* for more information.
 
 5. Choose Transactions to open the Payables Transaction Entry window.
 
-6. Enter invoice information, including voucher number, document date, vendor
-    ID, document number, and purchase amounts. See *Transaction entry overview*
-    for more information.
+6. Enter invoice information, including voucher number, document date, vendor ID, document number, and purchase amounts. See *Transaction entry overview* for more information.
 
 7. Choose Save and close the window.
 
 8. To print an edit list and verify the entries, choose File \>\> Print.
 
-To post the invoice, you must post the batch using the Payables Batch Entry
-window. See *Posting a batch* for more information.
+To post the invoice, you must post the batch using the Payables Batch Entry window. See *Posting a batch* for more information.
 
 **To enter invoices in a batch from the Payables Transaction Entry window:**
 
-1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions
-    \>\> Transaction Entry)
+1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions \>\> Transaction Entry)
 
 2. Enter or select a voucher number.
 
 3. Select Invoice as the document type and enter a description.
 
-4. Enter or select a batch ID. If you create a new batch, enter batch
-    information using the Payables Batch Entry window, then close the window.
-    See *Creating a batch* on page 51 for more information.
+4. Enter or select a batch ID. If you create a new batch, enter batch information using the Payables Batch Entry window, then close the window. See *Creating a batch* on page 51 for more information.
 
-5. Enter invoice information, including document date, vendor ID, document
-    number, and purchase amounts. See *Transaction entry overview* for more
-    information.
+5. Enter invoice information, including document date, vendor ID, document number, and purchase amounts. See *Transaction entry overview* for more information.
 
 6. Choose Save to save the entries.
 
 7. To print an edit list and verify the entries, choose File \>\> Print.
 
-To post the invoice, you must post the batch using the Payables Batch Entry
-window. See *Posting a batch* for more information.
+To post the invoice, you must post the batch using the Payables Batch Entry window. See *Posting a batch* for more information.
 
-### Entering credit memos or returns
+#### Entering credit memos or returns
 
 Use the Payables Transaction Entry window to enter credit memos and returns.
 During the course of doing business, you might return merchandise or receive
@@ -2458,8 +1958,7 @@ by receiving a credit in the form of cash or a check.
 
 **To enter a credit memo or return:**
 
-1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions
-    \>\> Transaction Entry)
+1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions \>\> Transaction Entry)
 
 2. Enter or select a voucher number.
 
@@ -2480,18 +1979,12 @@ by receiving a credit in the form of cash or a check.
 
 9. Enter the credit memo or return amount.
 
-*If you entered a credit memo to reduce your liability to the vendor, you
-can’t enter*
+    > [!NOTE]
+    > If you entered a credit memo to reduce your liability to the vendor, you can’t enter payments or a terms discount. All credit memos are “on account.”
 
-*payments or a terms discount. All credit memos are “on account.”*
+    To open the Apply Payables Documents window, choose Apply. See *Apply options* for more information. When you finish applying, choose OK to close the Apply Payables Documents window.
 
-To open the Apply Payables Documents window, choose Apply. See *Apply
-options* for more information. When you finish applying, choose OK to close
-the Apply Payables Documents window.
-
-To make changes to account distributions, open the Payables Transaction
-Entry Distribution window. See *Distributing transaction amounts* for more
-information about distributing amounts.
+    To make changes to account distributions, open the Payables Transaction Entry Distribution window. See *Distributing transaction amounts* for more information about distributing amounts.
 
 1. Choose Save. If the transaction was entered in a batch, you can save the
     transaction to post later. You also can print an edit list by redisplaying
@@ -2499,16 +1992,14 @@ information about distributing amounts.
 
 If this transaction wasn’t assigned a Batch ID, it can’t be saved, and must
 be posted immediately. To post the transaction, you must post the batch
-using the Payables Batch Entry window. For more information, see *Posting a
-batch* .
+using the Payables Batch Entry window. For more information, see *Posting a batch* .
 
 If you are using vendor approval workflow, the vendor must have the workflow
 status of Approved or No Approval Needed before you can post the
 transaction. If the vendor isn’t approved, you can save the transaction in a
-batch. For more information about vendor approval workflow, see *Vendor
-approval workflow* .
+batch. For more information about vendor approval workflow, see *Vendor approval workflow* .
 
-### Entering finance or miscellaneous charges
+#### Entering finance or miscellaneous charges
 
 Use the Payables Transaction Entry window to enter finance charges and
 miscellaneous charges. A miscellaneous charge is a charge that isn’t part of
@@ -2522,19 +2013,15 @@ purchase amount of the invoice.
 
 **To enter a finance or miscellaneous charge:**
 
-1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions
-    \>\> Transaction Entry)
+1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions \>\> Transaction Entry)
 
 2. Enter or select a voucher number.
 
-3. Select Finance Charge or Misc Charge as the document type and enter a
-    description.
+3. Select Finance Charge or Misc Charge as the document type and enter a description.
 
-The description you enter appears as the reference in the General Ledger
-Transaction Entry window.
+    The description you enter appears as the reference in the General Ledger Transaction Entry window.
 
-1. Enter or select a batch, if you’re entering the transaction within a batch
-    of documents.
+1. Enter or select a batch, if you’re entering the transaction within a batch of documents.
 
 2. Enter a document date.
 
@@ -2573,10 +2060,9 @@ more information.
 If you are using vendor approval workflow, the vendor must have the workflow
 status of Approved or No Approval Needed before you can post the
 transaction. If the vendor isn’t approved, you can save the transaction to a
-batch. For more information about vendor approval workflow, see *Vendor
-approval workflow* .
+batch. For more information about vendor approval workflow, see *Vendor approval workflow* .
 
-### Transaction distributions
+#### Transaction distributions
 
 When you use the Payables Transaction Entry Distribution window to
 distribute transaction amounts, those amounts are distributed to the posting
@@ -2617,55 +2103,29 @@ single purchase distribution of \$85.
 taken, additional distributions are generated for tax rebates for each tax
 associated with the purchase.
 
-### Distributing transaction amounts
+#### Distributing transaction amounts
 
 Use the Payables Transaction Entry Distribution window to distribute
 transaction amounts.
 
 **To distribute transaction amounts:**
 
-1. Open the Payables Transaction Entry Distribution window. (Purchasing \>\>
-    Transactions \>\> Transaction Entry \>\> Distributions button)
+1. Open the Payables Transaction Entry Distribution window. (Purchasing \>\>Transactions \>\> Transaction Entry \>\> Distributions button)
 
-![A screenshot of a cell phone Description automatically generated](media/53237ab6d1dc88eb2dddcfb9c9558594.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/53237ab6d1dc88eb2dddcfb9c9558594.jpg)
 
-A screenshot of a cell phone Description automatically generated
+    The scrolling window displays the default distributions created based on the posting accounts assigned to the vendor. You can distribute a transaction to multiple posting accounts.
 
-A screenshot of a cell phone Description automatically generated
+1. In the next available line, enter or select another distribution account, choose the distribution type and enter the next amount.
 
-A screenshot of a cell phone Description automatically generated
+    To use the original distributions if you changed distribution accounts and amounts, choose Default.
 
-A screenshot of a cell phone Description automatically generated
+    > [!NOTE]
+    > If you entered several distributions to one particular distribution type, you can choose Redisplay to sort the accounts in the scrolling window by distribution type. To track non-financial quantities, such as square footage, you can distribute amounts to unit accounts by selecting Unit as the distribution type and entering a debit or credit amount. The amounts distributed to unit accounts aren’t reflected in the distribution totals.
 
-A screenshot of a cell phone Description automatically generated
+1. Continue entering distribution accounts until the transaction is fully distributed.
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-The scrolling window displays the default distributions created based on the
-posting accounts assigned to the vendor. You can distribute a transaction to
-multiple posting accounts.
-
-1. In the next available line, enter or select another distribution account,
-    choose the distribution type and enter the next amount.
-
-To use the original distributions if you changed distribution accounts and
-amounts, choose Default.
-
-*If you entered several distributions to one particular distribution type,
-you can choose Redisplay to sort the accounts in the scrolling window by
-distribution type. To track non-financial quantities, such as square
-footage, you can distribute amounts to unit accounts by selecting Unit as
-the distribution type and entering a debit or credit amount. The amounts
-distributed to unit accounts aren’t reflected in the distribution totals.*
-
-1. Continue entering distribution accounts until the transaction is fully
-    distributed.
-
-### Distributing additional taxes and writeoff amounts
+#### Distributing additional taxes and writeoff amounts
 
 Use the Additional Purchasing Tax and Writeoff Distributions window to view
 total discounts and unposted discounts, and total writeoffs and unposted
@@ -2678,8 +2138,7 @@ Australia.
 
 1. Open the Additional Purchasing Tax and Writeoff Distributions window.
 
-(Purchasing \>\> Transactions \>\> Apply Payables Documents \>\> Select a
-record \>\> Terms Taken or Writeoff link)
+    (Purchasing \>\> Transactions \>\> Apply Payables Documents \>\> Select a record \>\> Terms Taken or Writeoff link)
 
 1. To calculate GST, enter or select the GST Tax Detail ID to use to calculate
     GST on this transaction, and then enter a tax percentage or the tax discount
@@ -2696,7 +2155,7 @@ record \>\> Terms Taken or Writeoff link)
 
 If you were in the process of applying a document, complete that procedure.
 
-### Deleting distributions
+#### Deleting distributions
 
 Use the Payables Transaction Entry Distribution window to delete
 distributions. You can delete individual distributions if, for example, a
@@ -2705,15 +2164,14 @@ available from the vendor isn’t available on a particular invoice.
 
 **To delete a distribution:**
 
-1. Open the Payables Transaction Entry Distribution window. (Purchasing \>\>
-    Transactions \>\> Transaction Entry \>\> Distributions button)
+1. Open the Payables Transaction Entry Distribution window. (Purchasing \>\> Transactions \>\> Transaction Entry \>\> Distributions button)
 
 2. Select the account to delete. 3. Choose Edit \>\> Delete Row.
 
 To use the original distributions if you changed distribution accounts and
 amounts, choose Default.
 
-### Distributing tax amounts
+#### Distributing tax amounts
 
 Use the Payables Tax Entry window to enter tax information for the document
 you selected in the Payables Transaction Entry window. A tax amount is
@@ -2738,31 +2196,13 @@ tax-exempt transactions.
 
 **To distribute tax amounts:**
 
-1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions
-    \>\> Transaction Entry)
+1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions \>\> Transaction Entry)
 
 2. Enter or select a transaction.
 
-3. Enter a tax amount in the Tax field and choose the Tax expansion button to
-    open the Payables Tax Entry window.
+3. Enter a tax amount in the Tax field and choose the Tax expansion button to open the Payables Tax Entry window.
 
-![A screenshot of a cell phone Description automatically generated](media/ac6b525296bab65b09dcb3ebf356e92d.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/ac6b525296bab65b09dcb3ebf356e92d.jpg)
 
 1. Enter or select a tax detail ID.
 
@@ -2772,19 +2212,16 @@ A screenshot of a cell phone Description automatically generated
 3. Enter or select a posting account for the tax. The tax amount for the detail
     is posted to the account.
 
-To delete a tax detail, select the row containing the detail to delete and
-choose Edit \>\> Delete Row. To delete all the tax distributions, choose
-Delete.
+    To delete a tax detail, select the row containing the detail to delete and choose Edit \>\> Delete Row. To delete all the tax distributions, choose Delete.
 
 1. Continue entering tax details until your tax is fully distributed.
 
-*To distribute taxes to multiple accounts, change the default amount in the
-scrolling window and enter another tax detail and tax amount in the next
-available line.*
+    > [!NOTE]
+    > To distribute taxes to multiple accounts, change the default amount in the scrolling window and enter another tax detail and tax amount in the next available line.
 
 1. Choose OK to save your entries. Continue entering the transaction.
 
-### Withholding reports
+#### Withholding reports
 
 If you marked Enable GST for Australia/New Zealand in the Company Setup
 Options window, you can use the Payables Transaction Entry window to print a
@@ -2804,7 +2241,7 @@ select this option, the tax amounts aren’t included in the document amounts.
 The Print Amounts Inclusive of Tax option is saved on a per user, per window
 basis.
 
-### Entering Intrastat trade statistics
+#### Entering Intrastat trade statistics
 
 Intrastat is the system for collecting statistics on the trade of goods
 between European Union (EU) countries/regions. Intrastat data is required
@@ -2830,8 +2267,7 @@ tracking in the Company Setup Options window.*
 
 **To enter Intrastat trade statistics:**
 
-1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions
-    \>\> Transaction Entry)
+1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions \>\> Transaction Entry)
 
 2. Enter the transaction. Be sure to mark EU Transaction. If the country code
     assigned to the vendor’s address is designated an EU country/region, this
@@ -2863,7 +2299,7 @@ Quantity field.
 
 3. Choose Save.
 
-**Chapter 9: Transaction maintenance**
+### Chapter 9: Transaction maintenance
 
 After you enter transaction information in Payables Management, proper
 maintenance of these records is essential to preserving the accuracy of your
@@ -2885,7 +2321,7 @@ This information is divided into the following sections:
 
 - *Editing 1099 transactions*
 
-### Correcting or deleting an unposted transaction
+#### Correcting or deleting an unposted transaction
 
 Use the Payables Transaction Entry window to correct or delete unposted
 transactions. There might be times when a transaction is entered
@@ -2916,8 +2352,7 @@ Computer Check Edit List or a Manual Payments Edit List when you finish.
 
 **To correct or delete an unposted transaction**
 
-1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions
-    \>\> Transaction Entry)
+1. Open the Payables Transaction Entry window. (Purchasing \>\> Transactions \>\> Transaction Entry)
 
 2. Enter or select the voucher number.
 
@@ -2939,7 +2374,7 @@ resubmit the batch to workflow.
 
 2. Print posting reports, if necessary.
 
-### Deleting an unposted printed transaction
+#### Deleting an unposted printed transaction
 
 You can’t delete a transaction after it has been printed if the Delete
 Unposted Printed Document option in the Payables Management Setup window is
@@ -2954,8 +2389,7 @@ have the Payables Transaction Entry window open.
 
 2. Close the Payables Transaction Entry window.
 
-3. Open the Payables Management Setup window. (Purchasing \>\> Setup \>\>
-    Payables)
+3. Open the Payables Management Setup window. (Purchasing \>\> Setup \>\> Payables)
 
 4. Mark the Delete Unposted Printed Document option and click OK.
 
@@ -2968,7 +2402,7 @@ have the Payables Transaction Entry window open.
 
 8. Choose Delete.
 
-### Placing or removing a transaction hold
+#### Placing or removing a transaction hold
 
 Use the Hold Payables Transactions window to place a transaction on hold.
 You can place on hold a posted transaction that hasn’t been fully applied or
@@ -3000,7 +2434,7 @@ and you can apply documents and issue payments.
     File \>\> Print. After you finish marking or unmarking transactions, choose
     OK to close the window.
 
-### Transaction voids overview
+#### Transaction voids overview
 
 You can void both historical and open transactions in Payables Management.
 Use the Void Historical Payables Transactions window to void historical
@@ -3033,7 +2467,7 @@ created. If any document is voided that was applied to another document with
 a withholding amount taken, a credit memo is created for the withholding
 vendor to offset the invoice originally created.
 
-### Voiding historical transactions
+#### Voiding historical transactions
 
 Use the Void Historical Payables Transactions window to void historical
 credit transactions, which include cash, check, or credit card payments, and
@@ -3043,10 +2477,10 @@ history.
 
 Depending on which credit document you void, the following will happen:
 
-| **Void**                            | **Result**                                                                                                                                                                           |
-|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Credit Memo, Return or Cash payment | The vouchers it was applied to are unapplied and a new payment can be issued to it.                                                                                                 |
-| Check payment                       | The amount applied to the invoice is unapplied.                                                                                                                                     |
+| **Void**                            | **Result**   |
+|-------------------------------------|--------------|
+| Credit Memo, Return or Cash payment | The vouchers it was applied to are unapplied and a new payment can be issued to it.    |
+| Check payment                       | The amount applied to the invoice is unapplied.  |
 | Credit card payment                 | The vendor invoice that was created with the payment is also voided. However, if any other payments or credit memos are applied to the invoice, it will not be voided automatically. |
 
 If any credit memos or returns were applied to the same invoice, the amount
@@ -3056,8 +2490,7 @@ only the amount associated with the voiced check payment is unapplied.
 
 **To void a historical transaction:**
 
-1. Open the Void Historical Payables Transactions window. (Purchasing \>\>
-    Transactions \>\> Void Historical Transactions)
+1. Open the Void Historical Payables Transactions window. (Purchasing \>\> Transactions \>\> Void Historical Transactions)
 
 2. Select a range of documents to display in the scrolling window, and the
     document type. You can display all historical documents, or select a range
@@ -3075,9 +2508,8 @@ only the amount associated with the voiced check payment is unapplied.
     can print a Void Historical Transactions Edit List to show all the documents
     that are marked to be voided by choosing File \>\> Print.
 
-*Payments that have been reconciled with a checkbook in the Bank
-Reconciliation module display Yes in the Reconciled column. We recommend
-that you do not void payments that are reconciled.*
+    > [!NOTE]
+    > Payments that have been reconciled with a checkbook in the Bank Reconciliation module display Yes in the Reconciled column. We recommend that you do not void payments that are reconciled.
 
 1. When you’re satisfied with the entries, choose Void. When you void a
     document, reversing amounts are posted for the distributions posted earlier.
@@ -3095,7 +2527,7 @@ When viewing transactions using the Payables Transaction Inquiry window, a
 voided payment has an asterisk (\*) by the document’s origin in the
 scrolling window.
 
-### Voiding open transactions
+#### Voiding open transactions
 
 Use the Void Open Payables Transactions window to void any transaction or
 payment that has been posted and is unapplied. You can void invoices for
@@ -3143,7 +2575,7 @@ originating debit and credit amounts.
 When viewing transactions using this window, a voided voucher has an
 asterisk (\*) by the document’s origin in the scrolling window.
 
-### Editing 1099 transactions
+#### Editing 1099 transactions
 
 Use the Edit 1099 Transaction Information window to modify the 1099 form
 type (tax type), box number, or the 1099 amounts for multiple transactions
@@ -3185,7 +2617,7 @@ number.
     History tables. When processing is complete, the Update 1099 Information
     Audit Report is printed.
 
-**Chapter 10: Payments**
+### Chapter 10: Payments
 
 You can make payments to vendors using different methods. You can enter a
 payment at the same time you enter the transaction it’s associated with; you
@@ -3231,7 +2663,7 @@ Payment information is contained in the following sections:
 
 - *Correcting or deleting unposted payments*
 
-### Payments overview
+#### Payments overview
 
 All payments that you enter in Microsoft Dynamics GP have certain common
 elements, such as posting journals and payment options.
@@ -3342,7 +2774,7 @@ If you transfer funds electronically using European Electronic Funds
 Transfer, the remit-to address specified in the Vendor Maintenance window
 will always be used for the transfer transaction.
 
-### Entering and paying an invoice
+#### Entering and paying an invoice
 
 Use the Payables Transaction Entry window to enter and pay an invoice at the
 same time, if you paid the vendor at the time you made the purchase.
@@ -3391,8 +2823,7 @@ finish.
 
 1. Choose Post if you entered an individual transaction.
 
-Paying individual invoices by check
------------------------------------
+#### Paying individual invoices by check
 
 Use the Payables Check Entry window and the Print Payables Transaction Check
 window to pay an invoice by check. If you pay an invoice by check, print a
@@ -3412,41 +2843,15 @@ approval workflow* .
 2. Enter the amount you’re paying. When you enter an amount, the Payables Check
     Entry window opens, where you can specify a checkbook.
 
-![A screenshot of a cell phone Description automatically generated](media/c22757e0cec643c945673adba67729ea.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/c22757e0cec643c945673adba67729ea.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-Verify that the information is correct; then choose OK to close the window.
-This amount is posted to a Cash account.
+    Verify that the information is correct; then choose OK to close the window. This amount is posted to a Cash account.
 
 1. Choose Print Check to open the Print Payables Transaction Check window.
 
-![A screenshot of a cell phone Description automatically generated](media/5f08439d5885577e233b9240e6101302.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/5f08439d5885577e233b9240e6101302.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-If you choose not to print the check, Payables Management considers the
-check a manual check when it’s posted.
+    If you choose not to print the check, Payables Management considers the check a manual check when it’s posted.
 
 1. Enter a check number, and mark to print a check.
 
@@ -3454,27 +2859,13 @@ check a manual check when it’s posted.
     remittance shows the same detail as the check stub and is printed on blank
     paper from the Print Payables Remittance window after the check is printed.
 
-To print a remittance, you must mark this option and print the remittance
-from the Print Payables Remittance window.
+    To print a remittance, you must mark this option and print the remittance from the Print Payables Remittance window.
 
 1. Choose Print to print the check and close the window.
 
-After the check has been printed, the Print Payables Remittance window opens
-if you have selected to print a separate remittance.
+    After the check has been printed, the Print Payables Remittance window opens if you have selected to print a separate remittance.
 
-![A screenshot of a cell phone Description automatically generated](media/fef636cbbb69d99695d45a0d067d2741.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/fef636cbbb69d99695d45a0d067d2741.jpg)
 
 1. In the Print Payables Remittance window, select the Remittance Form option.
 
@@ -3485,8 +2876,7 @@ A screenshot of a cell phone Description automatically generated
 4. After processing the remittance, return to the Payables Transaction Entry
     window. Choose Post if you entered an individual transaction.
 
-Entering manual prepayments
----------------------------
+#### Entering manual prepayments
 
 Use the Payables Manual Payment Entry window to make prepayments.
 Prepayments, sometimes referred to as deposits, are payments made before
@@ -3501,22 +2891,9 @@ information about vendor approval workflow, see *Vendor approval workflow*.
 
 **To enter a manual prepayment:**
 
-1. Open the Payables Manual Payment Entry window. (Purchasing \>\> Transactions
-    \>\> Manual Payments)
+1. Open the Payables Manual Payment Entry window. (Purchasing \>\> Transactions \>\> Manual Payments)
 
-![A screenshot of a cell phone Description automatically generated](media/c39106bf0cf9800ba3556b5aaf454475.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/c39106bf0cf9800ba3556b5aaf454475.jpg)
 
 1. Enter or select a payment number and date.
 
@@ -3539,8 +2916,7 @@ A screenshot of a cell phone Description automatically generated
     choose File \>\> Print. Choose Post if you entered an individual
     transaction.
 
-Entering computer check prepayments
------------------------------------
+#### Entering computer check prepayments
 
 Use the Edit Payables Checks window to make a prepayment—a payment on
 account you make before you receive merchandise—to a vendor. When you make a
@@ -3549,30 +2925,15 @@ been recorded.
 
 **To enter a computer check prepayment:**
 
-1. Open the Edit Payables Checks window. (Purchasing \>\> Transactions \>\>
-    Edit Check)
+1. Open the Edit Payables Checks window. (Purchasing \>\> Transactions \>\> Edit Check)
 
-![A screenshot of a cell phone Description automatically generated](media/e2658205a636f897c0eedf56b8bba5e8.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/e2658205a636f897c0eedf56b8bba5e8.jpg)
 
 1. Enter or select a payment number and a batch ID.
 
 2. Enter the check information and remittance options.
 
-To view or change any distributions, choose Distribution to open the
-Payables Transaction Entry Distribution window. Close the window when you
-finish.
+    To view or change any distributions, choose Distribution to open the Payables Transaction Entry Distribution window. Close the window when you finish.
 
 1. Choose Save to save the payment.
 
@@ -3581,8 +2942,7 @@ finish.
     window. See *Printing computer checks as part of a check run* for more
     information.
 
-Entering manual payments
-------------------------
+#### Entering manual payments
 
 Use the Payables Manual Payment Entry window to record manual payments—
 payments charged to credit cards, cash payments, or manually written checks.
@@ -3597,8 +2957,7 @@ information about vendor approval workflow, see *Vendor approval workflow*
 
 **To enter a manual payment:**
 
-1. Open the Payables Manual Payment Entry window. (Purchasing \>\> Transactions
-    \>\> Manual Payments)
+1. Open the Payables Manual Payment Entry window. (Purchasing \>\> Transactions \>\> Manual Payments)
 
 2. Enter or select a payment number and date.
 
@@ -3626,8 +2985,7 @@ pay them for the goods and services you purchase with the card.
     choose File \>\> Print. Choose Post if you entered an individual
     transaction.
 
-Modifying individual checks
----------------------------
+#### Modifying individual checks
 
 Use the Edit Payables Checks window to modify individual checks in an
 existing batch. You can add additional checks to the batch or change the
@@ -3638,8 +2996,7 @@ Edit Payables Checks window.
 
 **To modify individual checks:**
 
-1. Open the Edit Payables Checks window. (Purchasing \>\> Transactions \>\>
-    Select Checks \>\> Edit Check button)
+1. Open the Edit Payables Checks window. (Purchasing \>\> Transactions \>\> Select Checks \>\> Edit Check button)
 
 2. Enter or select a payment number.
 
@@ -3679,19 +3036,7 @@ the amount in the Apply Amount column for that transaction.
 
 2. Choose Check Stub to open the Payables Check Stub Documents window.
 
-![A screenshot of a cell phone Description automatically generated](media/23b8f02c13f37ee3f0573e29a1e0429c.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/23b8f02c13f37ee3f0573e29a1e0429c.jpg)
 
 1. Unmark any vouchers that you don’t want to print on the check stub. Choose
     OK to close the window.
@@ -3706,8 +3051,7 @@ When the Select Payables Checks window reopens, the entries you made are
 cleared. The information you previously entered is saved; you don’t need to
 enter another range of checks.
 
-Modifying multiple checks in a batch
-------------------------------------
+#### Modifying multiple checks in a batch
 
 Use the Edit Payables Check Batch window to modify more than one payment at
 a time. This window displays all the vendors and their vouchers and
@@ -3722,22 +3066,9 @@ documents to the batch.
 
 **To modify multiple checks in a batch:**
 
-1. Open the Edit Payables Checks Batch window: (Purchasing \>\> Transactions
-    \>\> Select Checks \>\> Edit Check Batch button)
+1. Open the Edit Payables Checks Batch window: (Purchasing \>\> Transactions \>\> Select Checks \>\> Edit Check Batch button)
 
-![A screenshot of a social media post Description automatically generated](media/ae10e55f7f43a94870f8f573b491600d.jpg)
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
+    ![A screenshot of a social media post Description automatically generated](media/ae10e55f7f43a94870f8f573b491600d.jpg)
 
 1. Mark a vendor in the Vendors list to include a payment to that vendor in the
     check batch. To remove all the payments for a vendor, unmark the check box
@@ -3751,8 +3082,7 @@ A screenshot of a social media post Description automatically generated
 
 3. Choose OK to save your changes and close the window.
 
-Check selections overview
--------------------------
+#### Check selections overview
 
 Selecting checks is the first step in making computer check payments, also
 called completing a check run. You can apply unapplied payments, credit
@@ -3817,8 +3147,7 @@ currency or an alternate currency.
 See *Currency selections and auto-applying* for information about how
 currency selections affect auto-applying.
 
-Expired discounts and selecting checks for a computer check run
----------------------------------------------------------------
+#### Expired discounts and selecting checks for a computer check run
 
 You can exclude vouchers with expired discounts when selecting checks for a
 computer check run by using a range for due date\\discount date cutoffs. A
@@ -3866,16 +3195,15 @@ If a due date cutoff of 1/22, the discount date cutoff of 1/21, the apply
 date of 1/20 was entered in the Select Payables Checks window, the following
 vouchers are included or excluded in the check batch.
 
-| **Voucher**                                                                                             | **Discount date** | **Due date** | **Setup option marked** | **Setup option unmarked**       |
-|---------------------------------------------------------------------------------------------------------|-------------------|--------------|-------------------------|---------------------------------|
-| 1                                                                                                       | 1/15              | 1/22         | Excluded                | Included, no discount           |
-| 2                                                                                                       | 1/18              | 1/22         | Excluded                | Included, no discount           |
-| 3                                                                                                       | 1/21              | 1/22         | Excluded                | Included, discount amount taken |
-| 4                                                                                                       | 1/24              | 1/22         | Excluded                | Included, discount amount taken |
+| **Voucher**       | **Discount date** | **Due date** | **Setup option marked** | **Setup option unmarked**       |
+|-------------------|-------------------|--------------|-------------------------|---------------------------------|
+| 1                 | 1/15              | 1/22         | Excluded                | Included, no discount           |
+| 2                 | 1/18              | 1/22         | Excluded                | Included, no discount           |
+| 3                 | 1/21              | 1/22         | Excluded                | Included, discount amount taken |
+| 4                 | 1/24              | 1/22         | Excluded                | Included, discount amount taken |
 | 5\* \* The voucher is included or excluded in the check batch depending on the due date of the voucher. | No discount       | 1/22         | Included                | Included                        |
 
-Selecting checks for a computer check run
------------------------------------------
+#### Selecting checks for a computer check run
 
 Use the Select Payables Checks window to select the checks to print for a
 specific group of vendors and vouchers. You can use the Edit Payables Check
@@ -3887,8 +3215,7 @@ specify when selecting vouchers for payment.
 
 **To select checks for a computer check run:**
 
-1. Open the Payables Batch Entry window. (Purchasing \>\> Transactions \>\>
-    Batches)
+1. Open the Payables Batch Entry window. (Purchasing \>\> Transactions \>\> Batches)
 
 2. Enter or select a batch. See *Creating a batch* for more information.
 
@@ -3899,19 +3226,7 @@ specify when selecting vouchers for payment.
 5. Choose Transactions. Choose Select Payables Checks from the Go To window to
     open the Select Payables Checks window.
 
-![A screenshot of a cell phone Description automatically generated](media/57896a91eeff7500f390ca16b4ec2141.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/57896a91eeff7500f390ca16b4ec2141.jpg)
 
 1. Specify the group of vendors and vouchers you want to include in the batch
     by selecting the type of range you want to include, and then enter
@@ -3948,8 +3263,7 @@ The next step in the computer check process is modifying the checks you
 created. See *Modifying individual checks* or *Modifying multiple checks in
 a batch* for more information.
 
-Selecting checks for purchase order prepayments
------------------------------------------------
+#### Selecting checks for purchase order prepayments
 
 Use the Select Payables Checks window to select checks to print for purchase
 orders with a prepayment. You can choose ranges to specify the group of
@@ -3963,8 +3277,7 @@ specify when selecting purchase order prepayments.
 
 **To select checks for purchase order prepayments:**
 
-1. Open the Payables Batch Entry window. (Purchasing \>\> Transactions \>\>
-    Batches)
+1. Open the Payables Batch Entry window. (Purchasing \>\> Transactions \>\> Batches)
 
 2. Enter or select a batch. See *Creating a batch* for more information.
 
@@ -4021,8 +3334,7 @@ Payables Check Batch window to include or exclude purchase orders with
 prepayment. See *Modifying multiple checks in a purchasing prepayment batch*
 for more information.
 
-Modifying distributions for individual checks in a purchasing prepayment batch
-------------------------------------------------------------------------------
+#### Modifying distributions for individual checks in a purchasing prepayment batch
 
 You can use the Edit Payables Checks window to modify distributions for an
 individual check for a purchase order prepayment. You cannot add checks to
@@ -4032,31 +3344,23 @@ specific vendor.
 **To modify distributions for individual checks in a purchasing prepayment
 batch:**
 
-1. Open the Edit Payables Checks window. (Purchasing \>\> Transactions \>\>
-    Select Checks \>\> Edit Check button)
+1. Open the Edit Payables Checks window. (Purchasing \>\> Transactions \>\> Select Checks \>\> Edit Check button)
 
 2. Enter or select a payment number for a purchase order prepayment.
 
-If you are using vendor approval workflow, you can enter or select a payment
-number if the vendor assigned to the payment has a workflow status of
-Approved or No Approval Needed.
+    If you are using vendor approval workflow, you can enter or select a payment number if the vendor assigned to the payment has a workflow status of Approved or No Approval Needed.
 
-1. To view or change any distributions, choose Distribution to open the
-    Payables Transaction Entry Distribution window. Close the window when you
-    finish.
+1. To view or change any distributions, choose Distribution to open the Payables Transaction Entry Distribution window. Close the window when you finish.
 
-2. To print an edit list to verify the accuracy of the entries, choose File
-    \>\> Print.
+2. To print an edit list to verify the accuracy of the entries, choose File \>\> Print.
 
-3. Close the Edit Payables Checks window to redisplay the Select Payables
-    Checks window.
+3. Close the Edit Payables Checks window to redisplay the Select Payables Checks window.
 
 When the Select Payables Checks window reopens, the entries you made are
 cleared. The information you previously entered is saved; you don’t need to
 enter another range of checks.
 
-Modifying multiple checks in a purchasing prepayment batch
-----------------------------------------------------------
+#### Modifying multiple checks in a purchasing prepayment batch
 
 You can use the Edit Payables Check Batch window to view all the vendors and
 purchase orders with a prepayment in a selected check batch and to add or
@@ -4068,8 +3372,7 @@ documents to the batch.
 
 **To modify multiple checks in a purchasing prepayment batch:**
 
-1. Open the Edit Payables Checks Batch window:(Purchasing \>\> Transactions
-    \>\> Select Checks \>\> Edit Check Batch button)
+1. Open the Edit Payables Checks Batch window:(Purchasing \>\> Transactions\>\> Select Checks \>\> Edit Check Batch button)
 
 2. Mark a vendor in the Vendors list to include a payment to that vendor in the
     check batch. To remove all the payments for a vendor, unmark the check box
@@ -4093,8 +3396,7 @@ Print checks or save your changes to the purchasing prepayment batch.
 
 - If you want to save your changes and not print checks, choose OK.
 
-Computer checks posting options
--------------------------------
+#### Computer checks posting options
 
 When you print computer checks as part of a check run, you can choose one of
 several posting options in the Post Payables Checks window.
@@ -4141,8 +3443,7 @@ Transactions window. When you void the check, the vouchers it was applied to
 are unapplied and you can issue a new payment. See *Voiding historical
 transactions* for more information.
 
-Printing computer checks as part of a check run
------------------------------------------------
+#### Printing computer checks as part of a check run
 
 Use the Print Payables Checks window to print a batch of computer checks.
 Once you create the batch of checks, edit any payments, or add any payments,
@@ -4172,10 +3473,10 @@ won’t be assigned to checks until you choose Print.
     editing checks procedure. Do so before printing and posting checks to verify
     that the correct vendors and vouchers were selected.
 
-*Be sure to back up your company’s data before printing and posting checks.*
+    > [!NOTE]
+    > Be sure to back up your company’s data before printing and posting checks.
 
-1. Open the Print Payables Checks window. (Purchasing \>\> Transactions \>\>
-    Print Checks)
+1. Open the Print Payables Checks window. (Purchasing \>\> Transactions \>\> Print Checks)
 
 2. Enter or select the check batch to print, and a check number. The check date
     is the date that appears on the checks.
@@ -4188,11 +3489,10 @@ won’t be assigned to checks until you choose Print.
     paper from the Process Payables Remittance window after the checks are
     printed.
 
-To print a remittance, you must mark this option and print the remittance
-from the Process Payables Remittance window.
+    to print a remittance, you must mark this option and print the remittance from the Process Payables Remittance window.
 
-*A remittance form is printed automatically if you have a zero amount check
-in the batch or if you’re paying more than 12 vouchers with one check.*
+    > [!NOTE]
+    > A remittance form is printed automatically if you have a zero amount check in the batch or if you’re paying more than 12 vouchers with one check.
 
 1. Mark to print an alignment form, so you can ensure that the check forms are
     properly aligned in the printer. Xs and 9s are printed in place of the
@@ -4206,45 +3506,19 @@ Checks that you use as alignment forms automatically are voided.
     choose Print. After the checks have been printed, the Post Payables Checks
     window opens.
 
-![A screenshot of a cell phone Description automatically generated](media/223bfbc17e402e9daff75841e82d2f66.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/223bfbc17e402e9daff75841e82d2f66.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
 
 1. Select a posting option.
 
-If you didn’t select to print a separate remittance and you post checks,
-posting journals and distribution breakdown registers are printed. A Report
-Destination window appears for each posting journal you chose to print.
+    If you didn’t select to print a separate remittance and you post checks, posting journals and distribution breakdown registers are printed. A Report Destination window appears for each posting journal you chose to print.
 
-If you have selected to print a separate remittance, the Process Payables
-Remittance window opens.
+    If you have selected to print a separate remittance, the Process Payables Remittance window opens.
 
-![A screenshot of a cell phone Description automatically generated](media/52a0335a34bf3e16c984337547eec5f4.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/52a0335a34bf3e16c984337547eec5f4.jpg)
 
-A screenshot of a cell phone Description automatically generated
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-1. In the Process Payables Remittance window, select the Remittance Form
-    option.
+1. In the Process Payables Remittance window, select the Remittance Form option.
 
 2. Select to print, send the remittance in e-mail, or both.
 
@@ -4255,8 +3529,7 @@ A screenshot of a cell phone Description automatically generated
     breakdown registers are printed. If you are sending a remittance in e-mail,
     you can print the Send Remittance Exception Report.
 
-Printing individual computer checks
------------------------------------
+#### Printing individual computer checks
 
 Use the Edit Payables Checks window to print individual computer checks. You
 also can print a separate remittance and send the remittance in e-mail. You
@@ -4269,8 +3542,7 @@ isn’t approved, checks for the vendor aren’t printed.*
 
 **To print an individual computer check:**
 
-1. Open the Edit Payables Checks window. (Purchasing \>\> Transactions \>\>
-    Edit Check)
+1. Open the Edit Payables Checks window. (Purchasing \>\> Transactions \>\> Edit Check)
 
 2. Enter or select a payment number.
 
@@ -4336,8 +3608,7 @@ Remittance window opens.
     breakdown registers are printed. If you are sending a remittance in e-mail,
     you can print the Send Remittance Exception Report.
 
-Reprinting remittance forms or check stubs
-------------------------------------------
+#### Reprinting remittance forms or check stubs
 
 Remittance forms and check stubs can be re-created for computer checks or
 for posted check payments entered in the Payables Transaction Entry window.
@@ -4389,8 +3660,7 @@ Payment Number link)
     - the original payment was entered in the Payables Transaction Entry
         window.
 
-Correcting or deleting unposted payments
-----------------------------------------
+#### Correcting or deleting unposted payments
 
 Use the Edit Payables Checks window to correct or delete unposted computer
 checks. As with transactions entered using the Payables Transaction Entry
@@ -4428,11 +3698,9 @@ to the Edit Payables Checks window when you finish.
 
 1. Choose Save.
 
-2. Redisplay the payment and choose File \>\> Print for an edit list to verify
-    the changes.
+2. Redisplay the payment and choose File \>\> Print for an edit list to verify the changes.
 
-Chapter 11: Scheduled payments
-==============================
+### Chapter 11: Scheduled payments
 
 When you make large purchases from vendors or make purchases that are
 delivered over time, you might want to spread payments out. This
@@ -4455,8 +3723,7 @@ This information is divided into the following sections:
 
 - *Voiding posted payment schedules*
 
-Scheduled payments overview
----------------------------
+#### Scheduled payments overview
 
 You can choose the interest rate, payment frequency, and other information
 when you create a payment schedule, and you can create a payment schedule
@@ -4470,11 +3737,11 @@ When you create payment schedules, you select specific accounts to
 distribute the interest and principal portions between. The following chart
 shows what accounts to use and how they are debited and credited.
 
-| **Account**                      | **Debit**                                                                                                                                                            | **Credit**                                                                                                                                                  |
-|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Account**                      | **Debit**          | **Credit**        |
+|----------------------------------|--------------------|-------------------|
 | Accounts Payable posting account | Debited with the scheduled payment amount, including principal and interest, when an individual payment is posted using the Post Payables Scheduled Payments window. | Credited with the total schedule amount, not including interest, when the payment schedule is posted using the Payables Scheduled Payments Entry window.   |
 | Payables Offset posting account  | Debited with the total schedule amount, not including interest, when the payment schedule is posted using the Payables Scheduled Payments Entry window.             | Credited with the scheduled payment amount, not including interest, when an individual payment is posted using the Post Payables Scheduled Payments window. |
-| Interest Expense posting account | Debited when you post a payment schedule.                                                                                                                           | Credited with the interest portion of the scheduled payment amount when an individual payment is posted using the Post Payables Scheduled Payments window. |
+| Interest Expense posting account | Debited when you post a payment schedule.     | Credited with the interest portion of the scheduled payment amount when an individual payment is posted using the Post Payables Scheduled Payments window. |
 
 For example, if you use the Payables Scheduled Payments Entry window
 (Purchasing \>\> Transactions \>\> Scheduled Payments) to enter a scheduled
@@ -4510,8 +3777,7 @@ credits.
 | Accounts Payable | \$220            |                   |
 | Cash             |                  | \$220             |
 
-Creating payment schedules
---------------------------
+#### Creating payment schedules
 
 Use the Payables Scheduled Payments Entry window to enter payment schedules.
 When you are creating a payment schedule, the information from the original
@@ -4522,17 +3788,7 @@ invoice will appear in several fields in the window.
 1. Open the Payables Scheduled Payments Entry window. (Purchasing \>\>
     Transactions \>\> Scheduled Payments)
 
-![A screenshot of a cell phone Description automatically generated](media/d06f07a082b12f7ca91d6c0a02b819f9.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/d06f07a082b12f7ca91d6c0a02b819f9.jpg)
 
 1. Enter a schedule number and description.
 
@@ -4579,8 +3835,7 @@ Payables Posting Journal, Distribution Breakdown Register - Detail, and
 Distribution Breakdown Register - Summary will print when you close the
 window.
 
-Viewing amortization schedules
-------------------------------
+#### Viewing amortization schedules
 
 Amortization schedules are created when you choose the Calculate button in
 the Payables Scheduled Payments Entry window. You can view any unposted
@@ -4599,23 +3854,12 @@ printing the Payables Amortization Schedule Report.
 
 ![A screenshot of a cell phone Description automatically generated](media/fb6a5be9cf511d671ccb398b22b4e022.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
 If there is no interest, you can edit the Due Date and Payment Amount fields
 by entering the appropriate information in those fields.
 
 1. Choose OK to save the changes.
 
-Posting Payables scheduled payments
------------------------------------
+#### Posting Payables scheduled payments
 
 Use the Post Payables Scheduled Payments window to post payments. You can
 post payments individually or many at one time.
@@ -4650,8 +3894,7 @@ post payments individually or many at one time.
     Posting Journal, Distribution Breakdown Register - Detailed, and
     Distribution Breakdown Register - Summary will print.
 
-Deleting unposted payment schedules
------------------------------------
+#### Deleting unposted payment schedules
 
 Use the Payables Scheduled Payments Entry window to delete unposted payment
 schedules. Posted schedules can’t be deleted.
@@ -4668,8 +3911,7 @@ schedules. Posted schedules can’t be deleted.
 4. A message will ask you to confirm the removal of the payment schedule you’re
     deleting; choose Yes.
 
-Editing posted payment schedules
---------------------------------
+#### Editing posted payment schedules
 
 You can edit the individual due dates and payment amounts only if there is
 no interest applied to a payment schedule.
@@ -4687,8 +3929,7 @@ no interest applied to a payment schedule.
 
 4. Choose OK to save the changes.
 
-Voiding posted payment schedules
---------------------------------
+#### Voiding posted payment schedules
 
 Posted payment schedules are permanent. If you want to void a payment
 schedule, you must post all of the invoices and void each invoice
@@ -4697,8 +3938,7 @@ number of payments to one, and then you can void a single invoice.
 
 **To void a posted payment schedule:**
 
-1. Open the Payables Scheduled Payments Entry window. (Purchasing \>\>
-    Transactions \>\> Scheduled Payments)
+1. Open the Payables Scheduled Payments Entry window. (Purchasing \>\> Transactions \>\> Scheduled Payments)
 
 2. Select or enter a schedule number.
 
@@ -4714,8 +3954,7 @@ voiding posted transactions.
 1. After you have posted and voided all the individual invoices, you can void
     the payment schedule.
 
-Chapter 12: Applying
-====================
+### Chapter 12: Applying
 
 Applying is the process of assigning specific amounts to pay all or part of
 a transaction. T*o apply documents if you are using vendor approval
@@ -4736,8 +3975,7 @@ Applying is explained in the following sections:
 
 - *Unapplying transactions*
 
-Applying overview
------------------
+#### Applying overview
 
 You can apply the following types of documents using the Apply Payables
 Documents window:
@@ -4790,8 +4028,7 @@ encounter the following restrictions:
     link, the Additional Purchasing Tax and Writeoff Distributions window
     displays the amount being withheld.
 
-How the apply posting date updates General Ledger
--------------------------------------------------
+#### How the apply posting date updates General Ledger
 
 If you enter an apply posting date and apply amounts, the amounts are posted
 to General Ledger using the date you entered. (The Apply Date field displays
@@ -4808,8 +4045,7 @@ date and you partially apply a document, the applied amounts are posted
 using the January 15 date. If you apply the rest of the document on January
 20, those amounts are posted as of the January 20 apply posting date.
 
-Auto-applying transactions
---------------------------
+#### Auto-applying transactions
 
 Use the Apply Payables Document window to auto-apply a transaction.
 Autoapplying applies the transaction to as many documents as the amount
@@ -4838,20 +4074,9 @@ writeoffs are posted.
 
 **To auto-apply transactions:**
 
-1. Open the Apply Payables Documents window. (Purchasing \>\> Transactions \>\>
-    Apply Payables Documents)
+1. Open the Apply Payables Documents window. (Purchasing \>\> Transactions \>\> Apply Payables Documents)
 
-![A screenshot of a cell phone Description automatically generated](media/3be2111372b5e2704d4aa75880df65ce.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/3be2111372b5e2704d4aa75880df65ce.jpg)
 
 1. Enter or select a vendor ID.
 
@@ -4876,8 +4101,7 @@ If you entered any Terms Taken or Writeoff amounts, a Payables Apply
 Document Journal might be printed when you close the window, depending on
 the options you selected in the Posting Setup window.
 
-Applying a specific transaction
--------------------------------
+#### Applying a specific transaction
 
 Use the Apply Payables Documents window to apply a specific transaction. You
 can mark any number of documents until the payment, return, or credit memo
@@ -4897,8 +4121,7 @@ rounding, and writeoffs are posted.
 
 **To apply a specific transaction:**
 
-1. Open the Apply Payables Documents window. (Purchasing \>\> Transactions \>\>
-    Apply Payables Documents)
+1. Open the Apply Payables Documents window. (Purchasing \>\> Transactions \>\> Apply Payables Documents)
 
 2. Enter or select a vendor ID.
 
@@ -4919,9 +4142,7 @@ rounding, and writeoffs are posted.
         Apply Amount field. You also can enter amounts in the Terms Taken and
         Writeoff fields.
 
-To enter amounts to write off a GST discounts taken (used in Canada and New
-
-Zealand) or a withholding (used in Australia) amount, choose the Terms
+To enter amounts to write off a GST discounts taken (used in Canada and New Zealand) or a withholding (used in Australia) amount, choose the Terms
 Taken,
 
 Terms Available, or Writeoff links to open the Additional Purchasing Tax and
@@ -4932,8 +4153,7 @@ You can print an Apply Documents Posting Journal if you entered discount or
 writeoff amounts. This audit trail report is optional; you can select to
 print audit trail reports when you set up your system.
 
-Applying a specific amount
---------------------------
+#### Applying a specific amount
 
 Use the Apply Payables Documents window to apply a specific amount. By
 applying a specific amount you can apply only a part of a document, or apply
@@ -4946,8 +4166,7 @@ losses, rounding, and writeoffs are posted.
 
 **To apply a specific amount:**
 
-1. Open the Apply Payables Documents window. (Purchasing \>\> Transactions \>\>
-    Apply Payables Documents)
+1. Open the Apply Payables Documents window. (Purchasing \>\> Transactions \>\> Apply Payables Documents)
 
 2. Enter or select a vendor ID.
 
@@ -4965,8 +4184,7 @@ An Apply Documents Posting Journal might be printed if you entered discount
 or writeoff amounts. This audit trail report is optional; you can select to
 print audit trail reports when you set up your system.
 
-Unapplying transactions
------------------------
+#### Unapplying transactions
 
 Use the Apply Payables Documents window to unapply a document. Unapplying a
 document reverses the entries that applied amounts to the document. You can
@@ -4993,8 +4211,7 @@ When you close the Apply Payables Documents window, the changes to discounts
 available, discounts taken, realized gains or losses, rounding, and
 writeoffs are posted.
 
-Chapter 13: Customer/vendor consolidations
-==========================================
+### Chapter 13: Customer/vendor consolidations
 
 Over the course of a business relationship, some customers become vendors
 and some vendors become customers. You can use Customer/Vendor
@@ -5020,8 +4237,7 @@ This information is divided into the following sections:
 
 - *Using the cross-module link*
 
-Setting up customer/vendor consolidations
------------------------------------------
+#### Setting up customer/vendor consolidations
 
 Use the Customer/Vendor Consolidation Setup window to create default entries
 for Customer/Vendor Consolidations. You can set up default entries for a
@@ -5030,18 +4246,9 @@ number, and receivables description prefix.
 
 **To set up customer/vendor consolidations:**
 
-1. Open the Customer/Vendor Consolidation Setup window. (Administration \>\>
-    Setup \>\> Company \>\> Customer/Vendor Setup)
+1. Open the Customer/Vendor Consolidation Setup window. (Administration \>\> Setup \>\> Company \>\> Customer/Vendor Setup)
 
-![A screenshot of a cell phone Description automatically generated](media/06fd7e2e106f443d776cd9e6c7aa7673.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/06fd7e2e106f443d776cd9e6c7aa7673.jpg)
 
 1. Enter or select a posting or allocation account as the default suspense
     account.
@@ -5102,8 +4309,7 @@ have been entered in the same field in the Refund Checks Setup window.
 
 3. Choose OK to save your changes and close the window.
 
-Creating customer/vendor relationships
---------------------------------------
+#### Creating customer/vendor relationships
 
 Use the Customer/Vendor Relationships window to link a customer to a vendor
 or a vendor to a customer. These relationships will be used when you
@@ -5111,18 +4317,9 @@ consolidate the balances of the customer and vendor.
 
 **To create a customer/vendor relationship:**
 
-1. Open the Customer/Vendor Relationships window.v(Purchasing \>\> Cards \>\>
-    Customer/Vendor)
+1. Open the Customer/Vendor Relationships window.v(Purchasing \>\> Cards \>\> Customer/Vendor)
 
-![A screenshot of a social media post Description automatically generated](media/3f06bed41c387c8ea549618091fa1dea.jpg)
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
+    ![A screenshot of a social media post Description automatically generated](media/3f06bed41c387c8ea549618091fa1dea.jpg)
 
 1. Enter or select a vendor and a customer. You can create more than one
     customer/vendor relationship at a time in this window by entering multiple
@@ -5132,15 +4329,12 @@ A screenshot of a social media post Description automatically generated
     the same. If the default currency is not the functional currency, you must
     select a rate type.
 
-*If you have Multicurrency Management registered and have entered a default
-currency for the customer, the Currency field will display that currency.
-You can change the currency.*
+    > [!NOTE]
+    > If you have Multicurrency Management registered and have entered a default currency for the customer, the Currency field will display that currency. You can change the currency.
 
-1. Choose OK to create and save the customer/vendor relationship and close the
-    window.
+1. Choose OK to create and save the customer/vendor relationship and close the window.
 
-Auto-creating customers or vendors
-----------------------------------
+#### Auto-creating customers or vendors
 
 Use the Customer/Vendor Relationships window to automatically create
 customer records from existing vendor records and vendor records from
@@ -5152,8 +4346,7 @@ consolidations*.
 
 **To auto-create a customer or vendor:**
 
-1. Open the Customer/Vendor Relationships window. (Purchasing \>\> Cards \>\>
-    Customer/Vendor)
+1. Open the Customer/Vendor Relationships window. (Purchasing \>\> Cards \>\> Customer/Vendor)
 
 2. Enter or select a customer or vendor. This procedure requires you to use an
     existing customer or an existing vendor, but you don’t need to have both an
@@ -5171,8 +4364,7 @@ functional currency, you must select a rate type.
 
 3. Choose OK to save the relationship and close the window.
 
-Consolidating customer and vendor documents
--------------------------------------------
+#### Consolidating customer and vendor documents
 
 Use the Customer/Vendor Consolidations window to create consolidation
 documents to transfer the balance for a customer account to the related
@@ -5180,8 +4372,7 @@ vendor account or from the vendor account to the related customer account.
 
 **To consolidate customer and vendor documents:**
 
-1. Open the Customer/Vendor Consolidations window. (Sales \>\> Transactions
-    \>\> Customer/Vendor Transactions)
+1. Open the Customer/Vendor Consolidations window. (Sales \>\> Transactions \>\> Customer/Vendor Transactions)
 
 2. Mark Customer to display the customer ID first or Vendor to display the
     vendor ID first.
@@ -5224,8 +4415,7 @@ information, refer to the Multicurrency Management documentation.
 4. Choose Post. Posting will create the consolidation documents and consolidate
     the balances in payables and receivables.
 
-Using the cross-module link
----------------------------
+#### Using the cross-module link
 
 You can link the selected receivables consolidation document to the
 corresponding payables consolidation document, and you can link the selected
@@ -5236,8 +4426,7 @@ Receivables Management.
 
 **To use the cross-module link**
 
-1. Open the Payables Transaction Inquiry - Vendor window. (Purchasing \>\>
-    Inquiry \>\> Transaction by Vendor)
+1. Open the Payables Transaction Inquiry - Vendor window. (Purchasing \>\> Inquiry \>\> Transaction by Vendor)
 
 2. Select a consolidation document. Consolidation documents will have the
     prefix that you assigned in the Customer/Vendor Consolidation Setup window.
@@ -5250,8 +4439,7 @@ linked window would be for receivables. If the linked window you were
 viewing was in receivables, then the related linked window would be for
 payables.
 
-Chapter 14: Multicurrency applying
-==================================
+### Chapter 14: Multicurrency applying
 
 You can apply and unapply multicurrency transactions using the same windows
 and procedures as transactions that involve only one currency, but you
@@ -5282,8 +4470,7 @@ This information is divided into the following sections:
 
 - *Applying posted multicurrency payment amounts*
 
-Existing unapplied credits and auto-applying
---------------------------------------------
+#### Existing unapplied credits and auto-applying
 
 You can apply unapplied payments, credit memos, and returns for the selected
 vendors to vouchers in the batch. You also can specify the currency in the
@@ -5306,8 +4493,7 @@ When the currency ID is another currency, the following information applies:
 | Batch currency only           | Automatically applies only credit documents in the same currency as the batch                          |
 | Batch and functional currency | Automatically applies credit documents in the same currency as the batch or in the functional currency |
 
-Currency selections and auto-applying
--------------------------------------
+#### Currency selections and auto-applying
 
 If you’re using Multicurrency Management and you automatically apply a
 functional currency batch, only documents that also use the functional
@@ -5339,8 +4525,7 @@ documents that aren’t in the batch or functional currency.
 Information on check stubs and remittance forms is displayed in the
 originating currency of the check.
 
-Posted multicurrency transactions
----------------------------------
+#### Posted multicurrency transactions
 
 You must post transactions that aren’t in the functional currency before you
 can apply them. During the apply process, if the originating amounts for the
@@ -5372,8 +4557,7 @@ the apply-from and apply-to currencies must be the same, or the apply-to
 currency must be the functional currency, to be applied. For functional
 currency amounts, you can apply any apply-to document.
 
-Multicurrency transactions applied to manual checks
----------------------------------------------------
+#### Multicurrency transactions applied to manual checks
 
 When you auto-apply multicurrency transactions for checks created manually,
 functional currency checks and credit documents are automatically applied to
@@ -5387,8 +4571,7 @@ the batch or functional currency. You can’t apply other posted documents in
 the batch or functional currencies to debit documents that aren’t in the
 batch or functional currencies.
 
-How currency amounts are displayed in the scrolling window
-----------------------------------------------------------
+#### How currency amounts are displayed in the scrolling window
 
 In the scrolling window of the Apply Payables Documents window, the Apply
 From Currency ID field displays the currency ID of the credit document
@@ -5414,7 +4597,7 @@ document you’re applying from uses a non-functional currency and the
 document you’re applying to uses the functional currency. In this case, the
 apply currency is the functional currency.
 
-### Realized gains and losses
+#### Realized gains and losses
 
 In multicurrency transactions, if the originating currency amounts match but
 the functional currency amounts don’t match because the payment and debit
@@ -5444,14 +4627,14 @@ When the realized loss is posted, the Accounts Payable account assigned to
 the vendor is credited to offset the Realized Loss account you entered in
 the Multicurrency Posting Account Setup window.
 
-### Multicurrency rounding during posting
+#### Multicurrency rounding during posting
 
 When applying documents, if the originating debit and credit amounts balance
 but the functional equivalents don’t balance, the difference is posted to
 the Rounding Difference account. This also is true when the functional
 amounts are zero but amounts remain in the originating currency.
 
-### Multicurrency auto-applying
+#### Multicurrency auto-applying
 
 If you entered multicurrency transactions, payments, credit memos, or
 returns are applied to documents with the same currency ID, using the
@@ -5460,7 +4643,7 @@ If the originating amounts don’t match, a realized gain or loss is
 calculated and the gain or loss is posted when you close the Apply Payables
 Documents window.
 
-### Multicurrency unapplying
+#### Multicurrency unapplying
 
 If you void a multicurrency document, any realized gains or losses
 originally posted also are reversed. Use the Void Historical Payables
@@ -5468,81 +4651,44 @@ Transactions window to void historical credit transactions and to unapply
 the vouchers. Use the Void Open Payables Transactions window to void any
 transaction or payment that’s been posted and is unapplied.
 
-### Posted multicurrency payment amounts applying overview
+#### Posted multicurrency payment amounts applying overview
 
 When you apply posted multicurrency payment amounts using the Apply Payables
 Documents window, you must specify several options, such as apply posting
 date and apply method. The following information more fully explains some of
 these options.
 
-**Currency ID**
+- **Currency ID**
 
-When you select a document to apply, the currency ID assigned to that
-document appears in the Apply From Currency ID field. This field is the
-reference for the documents in the scrolling window you can apply. The
-exchange rate used to calculate the functional equivalent is displayed in
-the scrolling window.
+    When you select a document to apply, the currency ID assigned to that document appears in the Apply From Currency ID field. This field is the reference for the documents in the scrolling window you can apply. The exchange rate used to calculate the functional equivalent is displayed in the scrolling window.
 
-**Apply and apply posting dates**
+- **Apply and apply posting dates**
 
-If General Ledger is part of your system, you can enter the date for the
-posting date in General Ledger. Only discounts taken, writeoff amounts, and
-realized gain and loss amounts are posted.
+    If General Ledger is part of your system, you can enter the date for the posting date in General Ledger. Only discounts taken, writeoff amounts, and realized gain and loss amounts are posted.
 
-If you enter a posting date and apply amounts, amounts are posted to General
-Ledger using the date you entered. If you apply amounts, and then change the
-posting date and apply amounts again, the first amounts are posted to
-General Ledger using the previous posting date while the latter amounts are
-posted using the new posting date. For example, if you enter January 15 as
-the General Ledger posting date and you partially apply a document, the
-applied amounts are posted using January 15 as the General Ledger posting
-date. If you apply the rest of document using January 20 as the new posting
-date, those amounts are posted using January 20 as the posting date.
+    If you enter a posting date and apply amounts, amounts are posted to General Ledger using the date you entered. If you apply amounts, and then change the posting date and apply amounts again, the first amounts are posted to General Ledger using the previous posting date while the latter amounts are posted using the new posting date. For example, if you enter January 15 as the General Ledger posting date and you partially apply a document, the applied amounts are posted using January 15 as the General Ledger posting date. If you apply the rest of document using January 20 as the new posting date, those amounts are posted using January 20 as the posting date.
 
-**Apply options**
+- **Apply options**
 
-You can choose one of three methods: auto-applying, applying specific
-transactions, or applying specific amounts.
+    You can choose one of three methods: auto-applying, applying specific transactions, or applying specific amounts.
 
-**Auto-applying** Choose Auto Apply to apply the payment, credit memo, or
-return to documents that have the same currency ID as the apply-from
-document. As many documents that meet the requirement are applied based on
-the oldest document date or due date, depending on the selection in the
-Payables Management Setup window. If you use Auto Apply, any discounts are
-taken if the discount is still available as of the user date, and if the
-unapplied amount is large enough to pay off the transaction. Alternate
-currencies are applied using the originating amounts.
+- **Auto-applying**
 
-**Applying specific transactions** To apply the document to specific
-transactions, mark the check box next to each transaction. For functional
-currency documents, you can apply any apply-to document. For alternate
-currency documents, the apply-from and apply-to currencies must be the same,
-or the applyto currency must be the functional currency to be applied.
-Continue marking documents until the credit memo or return amount is fully
-applied. If you use this method, all available discounts as of the user date
-are taken.You also can enter amounts in the Terms Taken and Writeoff fields.
+    Choose Auto Apply to apply the payment, credit memo, or return to documents that have the same currency ID as the apply-from document. As many documents that meet the requirement are applied based on the oldest document date or due date, depending on the selection in the Payables Management Setup window. If you use Auto Apply, any discounts are taken if the discount is still available as of the user date, and if the unapplied amount is large enough to pay off the transaction. Alternate currencies are applied using the originating amounts.
 
-**Applying specific amounts** To apply part of the document to one
-transaction and part to another transaction, or to apply only part of the
-document, enter the amount to apply in the Applied Amount field. For
-functional currency documents, you can apply any apply-to document. For
-alternate currency documents, the apply-from and apply-to currencies must be
-the same; or the apply-to currency must be the functional currency to be
-applied.
+- **Applying specific transactions**
 
-**Unapplying**
+    To apply the document to specific transactions, mark the check box next to each transaction. For functional currency documents, you can apply any apply-to document. For alternate currency documents, the apply-from and apply-to currencies must be the same, or the applyto currency must be the functional currency to be applied. Continue marking documents until the credit memo or return amount is fully applied. If you use this method, all available discounts as of the user date are taken.You also can enter amounts in the Terms Taken and Writeoff fields.
 
-To unapply all the documents in the scrolling window, choose Unapply. To
-unapply specific transactions, unmark the check box next to the transactions
-to unapply. To unapply specific amounts, delete the amount in the Apply
-Amount field. Discount amounts that were applied also are unapplied. If the
-originating amounts match but the functional amounts don’t match because the
-payment and debit document were entered using different exchange rates, a
-realized gain or loss is calculated and displayed in the Realized Gain/Loss
-column in the functional currency. That amount is posted when you close the
-window, and the Accounts Payable account the offset account.
+- **Applying specific amounts**
 
-**Example**
+    To apply part of the document to one transaction and part to another transaction, or to apply only part of the document, enter the amount to apply in the Applied  mount field. For functional currency documents, you can apply any apply-to document. For alternate currency documents, the apply-from and apply-to currencies must be the same; or the apply-to currency must be the functional currency to be applied.
+
+- **Unapplying**
+
+    To unapply all the documents in the scrolling window, choose Unapply. To unapply specific transactions, unmark the check box next to the transactions to unapply. To unapply specific amounts, delete the amount in the Apply Amount field. Discount amounts that were applied also are unapplied. If the originating amounts match but the functional amounts don’t match because the payment and debit document were entered using different exchange rates, a realized gain or loss is calculated and displayed in the Realized Gain/Loss column in the functional currency. That amount is posted when you close the window, and the Accounts Payable account the offset account.
+
+##### Example
 
 Your company’s functional currency is US dollars. You posted the following
 invoice on October 4 and the payment on November 11, both in euros, using a
@@ -5562,12 +4708,10 @@ the realized loss is posted, the Accounts Payable account assigned to the
 vendor is credited to offset the Realized Loss account you entered in the
 Multicurrency Posting Account Setup window.
 
-*If the transaction balance is zero after applying, the transaction is
-transferred to history. When you close the Apply Payables Documents window,
-the changes to discounts available, discounts taken, realized gains or
-losses, rounding, and writeoffs are posted.*
+> [!NOTE]
+> If the transaction balance is zero after applying, the transaction is transferred to history. When you close the Apply Payables Documents window, the changes to discounts available, discounts taken, realized gains or losses, rounding, and writeoffs are posted.
 
-### Applying posted multicurrency payment amounts
+#### Applying posted multicurrency payment amounts
 
 Use the Apply Payables Documents window to apply payments, prepayments,
 credit memos, and returns that use alternate currencies. Multicurrency
@@ -5582,20 +4726,14 @@ decide to return the merchandise. You would unapply the prepayment.
 
 **To apply a posted multicurrency payment amount:**
 
-1. Open the Apply Payables Documents window.(Purchasing \>\> Transactions \>\>
-    Apply Payables Documents)
+1. Open the Apply Payables Documents window.(Purchasing \>\> Transactions \>\> Apply Payables Documents)
 
 2. Enter or select a vendor ID, and enter or select the document to apply or
     unapply.
 
 3. Enter an apply posting date (optional).
 
-To enter amounts to write off a GST discounts taken (used in Canada and New
-
-Zealand) or write off a withholding (used in Australia) amount, choose the
-Terms Taken, Terms Available, or Writeoff links to open the Additional
-Purchasing Tax and Writeoff Distributions window, where you can enter these
-amounts. Close the window when you finish.
+    To enter amounts to write off a GST discounts taken (used in Canada and New Zealand) or write off a withholding (used in Australia) amount, choose the Terms Taken, Terms Available, or Writeoff links to open the Additional Purchasing Tax and Writeoff Distributions window, where you can enter these amounts. Close the window when you finish.
 
 1. Apply the document.
 
@@ -5654,7 +4792,7 @@ Payables inquiry information is divided into the following sections:
 
 - *Viewing payables applied amounts*
 
-### Multicurrency inquiries
+#### Multicurrency inquiries
 
 While viewing information using certain Payables Management windows, you can
 view multicurrency amounts in the originating, functional, or reporting
@@ -5682,7 +4820,7 @@ Management, transactions are displayed in the originating currency. If you
 change the currency view, the option you used last is the default view the
 next time you open that window.
 
-### Reporting currency
+#### Reporting currency
 
 A reporting currency converts functional or originating currency amounts to
 another currency on inquiries and reports.
@@ -5698,7 +4836,7 @@ to open the Modify Reporting Rate window.
 See the Multicurrency Management documentation for more information about
 reporting currency.
 
-### Viewing vendor information
+#### Viewing vendor information
 
 Use the Vendor Inquiry window to view demographic and other account
 information you entered for a particular vendor record using the Vendor
@@ -5721,7 +4859,7 @@ There are no inquiry windows you can view from this window. However, you can
 choose the Vendor ID link to open the Vendor Maintenance window, where you
 can make changes to the vendor record.
 
-### Viewing vendor purchasing information
+#### Viewing vendor purchasing information
 
 Use the Vendor Credit Summary Inquiry window to decide when to pay a vendor,
 or when you’re checking on the current balance total. This window displays
@@ -5738,8 +4876,7 @@ charge and not a payment on accounts payables.
 
 **To view vendor purchasing information:**
 
-1. Open the Vendor Credit Summary Inquiry window.(Purchasing \>\> Inquiry \>\>
-    Vendor Credit)
+1. Open the Vendor Credit Summary Inquiry window.(Purchasing \>\> Inquiry \>\> Vendor Credit)
 
 2. Enter or select a vendor ID.
 
@@ -5756,7 +4893,7 @@ list of transactions entered, choose the following links:
 
 - Amount
 
-### Viewing vendor period activity
+#### Viewing vendor period activity
 
 Use the Vendor Period Summary Inquiry window to analyze trends in purchasing
 activity over a number of fiscal periods.You can view purchasing activity
@@ -5772,7 +4909,7 @@ with a vendor by fiscal or calendar period.
 To open the Vendor Maintenance window, where you can make changes to the
 vendor record, choose the Vendor ID link.
 
-### Viewing vendor yearly activity
+#### Viewing vendor yearly activity
 
 Use the Vendor Yearly Summary Inquiry window to compare your purchasing
 pattern for the current year, last year, and life to date for a particular
@@ -5821,7 +4958,7 @@ selections are dependent on the year and periods you enter to display.
     you’re currently viewing using the Vendor Yearly Summary Inquiry window,
     choose File \>\> Print.
 
-### Viewing payables summary information
+#### Viewing payables summary information
 
 Use the Payables Summary Inquiry window to view the total number of
 documents for each of the document types in Payables Management, along with
@@ -5841,7 +4978,7 @@ credit amounts also were included in the aging process.
 2. Select an option and enter range of vendor IDs to display information in the
     window.
 
-### Viewing payables transaction detail information
+#### Viewing payables transaction detail information
 
 Use the Payables Transaction Inquiry - Document window to view unposted
 (work), posted (open), and paid transactions (history) by document type.
@@ -5856,7 +4993,7 @@ Use the Payables Transaction Inquiry - Document window to view unposted
 3. To print a report of the information displayed in this window, choose File
     \>\> Print.
 
-### Viewing vendor transaction information
+#### Viewing vendor transaction information
 
 Use the Payables Transaction Inquiry - Vendor window to view unposted,
 posted, and paid transactions by vendor.
@@ -5878,7 +5015,7 @@ posted, and paid transactions by vendor.
 5. To print a report of the information displayed in the Payables Transaction
     Inquiry - Vendor window, choose File \>\> Print.
 
-### Viewing payables documents as they originally were entered
+#### Viewing payables documents as they originally were entered
 
 All the inquiry windows except for the Payables Summary Inquiry window use
 links so you can view the information entered when a vendor record,
@@ -5902,13 +5039,7 @@ addresses, and other information entered when the record was created.
     Number or Voucher/Payment Number link. The Payables Transaction Entry Zoom
     window opens.
 
-![A screenshot of a cell phone Description automatically generated](media/c20c1b8ea98e3b2255d34380ea081df6.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/c20c1b8ea98e3b2255d34380ea081df6.jpg)
 
 The transaction as it was originally entered is displayed. You can open
 several other windows from the Payables Transaction Entry Zoom window, as is
@@ -5925,7 +5056,7 @@ listed in the following table:
 | Apply button                                                                                                                  | Payables Apply Zoom                   |
 | Distributions button                                                                                                          | Payables Distribution Zoom            |
 
-### Viewing payables payment entries
+#### Viewing payables payment entries
 
 Use the Payables Payments Zoom window to view all the entries originally
 made for a payment entered using the Payables Manual Payments window or the
@@ -5961,7 +5092,7 @@ See *Viewing payables documents as they originally were entered* for
 information about the windows available from the Payables Transaction Entry
 Zoom window.
 
-### Viewing payables applied amounts
+#### Viewing payables applied amounts
 
 Use the Payables Apply Zoom window to view all the documents applied to a
 particular document.
@@ -5984,9 +5115,7 @@ applied.
     link. The Payables Apply Zoom window opens. Choose OK to close the window
     when you finish.
 
-![](media/04b75579f86ed98831aafdcf25aac3a1.jpg)
-
-A screenshot of a cell phone Description automatically generated
+    ![screenshot](media/04b75579f86ed98831aafdcf25aac3a1.jpg)
 
 ### Chapter 16: Reports
 
@@ -6002,7 +5131,7 @@ Reports information is divided into the following sections:
 
 - *Microsoft SQL Server® Reporting Services reports for Payables Management*
 
-### Payables Management standard report summary
+#### Payables Management standard report summary
 
 You can print several types of reports using Payables Management. Some
 reports automatically are printed when you complete certain procedures; for
@@ -6021,26 +5150,23 @@ printed in that module.
 The following table lists the report types available in Payables Management
 and the reports that fall into those categories:
 
-| **Report type**                                                                                                                                                                                                                                                              | **Report**                                                                                                                                                                                                                                                                                                                                                                                 | **Printing method**                                                                                                                                                                              |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Setup reports (Purchasing \>\> Reports \>\> Setup/Lists)                                                                                                                                                                                                                     | Vendor Summary List\*† Vendor Setup List Vendor Addresses List Vendor Financial Summary Report\*† Payables Management Setup List Classes Setup List Quick Vendor Setup List                                                                                                                                                                                                                | Choose File \>\> Print in the setup windows **or** create report options in the Purchasing Setup Reports window.                                                                                |
-| Trial Balance Reports (Purchasing \>\> Reports \>\> Trial Balance)                                                                                                                                                                                                           | Aged Trial Balance\*† Aged Trial Balance with Options† Historical Aged Trial Balance\*† Quick Aged Trial Balance†                                                                                                                                                                                                                                                                          | Create report options in the Payables Trial Balance Reports window.                                                                                                                             |
-| Analysis reports (Purchasing \>\> Reports \>\> Analysis)                                                                                                                                                                                                                     | Vendor Summary (Summary)† Vendor Period Analysis (Period)† Cash Requirements† Vendor Year-To-Date Summary (Calendar Year)†                                                                                                                                                                                                                                                                 | Create report options in the Purchasing Analysis Reports window.                                                                                                                                |
-| \* Indicates reports that you can print with multicurrency information displayed. † Indicates reports that you can assign to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. |                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                  |
-| **Report type**                                                                                                                                                                                                                                                              | **Report**                                                                                                                                                                                                                                                                                                                                                                                 | **Printing method**                                                                                                                                                                              |
-| Check Information (Purchasing \>\> Reports \>\> Check Information)                                                                                                                                                                                                           | Vendor Check Register Check Distribution                                                                                                                                                                                                                                                                                                                                                   | Create report options in the Check Information Reports window                                                                                                                                    |
-| Posting reports (Purchasing \>\> Reports \>\> Posting Journals)                                                                                                                                                                                                              | Payables Transaction Posting Journal\*† Manual Payments Posting Journal\*† Computer Checks Posting Journal\*† Distribution Breakdown Register\*† Apply Documents Posting Journal\*† Void Historical Payables Transactions Posting Journal\*† Void Open Payables Transactions Posting Journal\*† Computer Check Register\*† (Checks Journal) Transaction Check Register\*† (Checks Journal) | Choose File \>\> Print in the window you use to complete the procedure. Some are printed when you complete the procedure.                                                                       |
-| History reports (Purchasing \>\> Reports \>\> History)                                                                                                                                                                                                                       | Distribution History - Detail Report Distribution History - Summary Report Transaction History - Detail Report\* Transaction History - Summary Report\* Transaction Distribution History Report Vendor Check Register\*                                                                                                                                                                    | Create report options in the Purchasing History Reports window.                                                                                                                                 |
-| Edit lists                                                                                                                                                                                                                                                                   | 1099 Edit List Computer Checks Edit List\* Manual Payments Edit List\* Payables Transaction Edit List\* Void Historical Transactions Edit List\* Void Open Payables Transactions Edit List\*                                                                                                                                                                                               | Choose File \>\> Print in the window you used to complete the procedure.                                                                                                                        |
-| 1099 reports                                                                                                                                                                                                                                                                 | Vendor 1099 Details Monthly Report Vendor 1099 Details Yearly Report Update 1099 Information Preview Report Update 1099 Information Audit Report                                                                                                                                                                                                                                           | Choose File \>\> Print in the 1099 Details window or the Update 1099 Information window. Choose Process in the Update 1099 Information window to print the Update 1099 Information Audit Report. |
-| Utility reports                                                                                                                                                                                                                                                              | GL Distribution Removal Payables Hold Journal\* Reconcile Balances Report Transaction History Removal Report\* Vendor Mass delete Report Payables Calendar/Fiscal Summary Removal Report                                                                                                                                                                                                   | These reports are printed when you complete the corresponding procedure.                                                                                                                        |
-| \* Indicates reports that you can print with multicurrency information displayed. † Indicates reports that you can assign to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. |                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                  |
-| **Report type**                                                                                                                                                                                                                                                              | **Report**                                                                                                                                                                                                                                                                                                                                                                                 | **Printing method**                                                                                                                                                                              |
-| Processing reports                                                                                                                                                                                                                                                           | 1099 Statements 1096 forms Payables Currency Summary Aging Report\* Year-End Closing Report                                                                                                                                                                                                                                                                                                | These reports are printed when you complete procedures.                                                                                                                                         |
-| Inquiry reports                                                                                                                                                                                                                                                              | Transaction Inquiry\* Payables Summary Inquiry Journal Transaction by Document Inquiry\*                                                                                                                                                                                                                                                                                                   | Choose File \>\> Print in the corresponding inquiry window.                                                                                                                                     |
-| \* Indicates reports that you can print with multicurrency information displayed. † Indicates reports that you can assign to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. |                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                  |
+| **Report type**      | **Report**    | **Printing method**  |
+|----------------------|---------------|----------------------|
+| Setup reports (Purchasing \>\> Reports \>\> Setup/Lists)     | Vendor Summary List\*† Vendor Setup List Vendor Addresses List Vendor Financial Summary Report\*† Payables Management Setup List Classes Setup List Quick Vendor Setup List    | Choose File \>\> Print in the setup windows **or** create report options in the Purchasing Setup Reports window. |
+| Trial Balance Reports (Purchasing \>\> Reports \>\> Trial Balance)   | Aged Trial Balance\*† Aged Trial Balance with Options† Historical Aged Trial Balance\*† Quick Aged Trial Balance†  | Create report options in the Payables Trial Balance Reports window.    |
+| Analysis reports (Purchasing \>\> Reports \>\> Analysis) | Vendor Summary (Summary)† Vendor Period Analysis (Period)† Cash Requirements† Vendor Year-To-Date Summary (Calendar Year)†   | Create report options in the Purchasing Analysis Reports window.    |
+| Check Information (Purchasing \>\> Reports \>\> Check Information)  | Vendor Check Register Check Distribution    | Create report options in the Check Information Reports window   |
+| Posting reports (Purchasing \>\> Reports \>\> Posting Journals)   | Payables Transaction Posting Journal\*† Manual Payments Posting Journal\*† Computer Checks Posting Journal\*† Distribution Breakdown Register\*† Apply Documents Posting Journal\*† Void Historical Payables Transactions Posting Journal\*† Void Open Payables Transactions Posting Journal\*† Computer Check Register\*† (Checks Journal) Transaction Check Register\*† (Checks Journal) | Choose File \>\> Print in the window you use to complete the procedure. Some are printed when you complete the procedure.  |
+| History reports (Purchasing \>\> Reports \>\> History)   | Distribution History - Detail Report Distribution History - Summary Report Transaction History - Detail Report\* Transaction History - Summary Report\* Transaction Distribution History Report Vendor Check Register\*     | Create report options in the Purchasing History Reports window.  |
+| Edit lists   | 1099 Edit List Computer Checks Edit List\* Manual Payments Edit List\* Payables Transaction Edit List\* Void Historical Transactions Edit List\* Void Open Payables Transactions Edit List\*    | Choose File \>\> Print in the window you used to complete the procedure.       |
+| 1099 reports    | Vendor 1099 Details Monthly Report Vendor 1099 Details Yearly Report Update 1099 Information Preview Report Update 1099 Information Audit Report   | Choose File \>\> Print in the 1099 Details window or the Update 1099 Information window. Choose Process in the Update 1099 Information window to print the Update 1099 Information Audit Report. |
+| Utility reports  | GL Distribution Removal Payables Hold Journal\* Reconcile Balances Report Transaction History Removal Report\* Vendor Mass delete Report Payables Calendar/Fiscal Summary Removal Report  | These reports are printed when you complete the corresponding procedure.     |
+| Processing reports    | 1099 Statements 1096 forms Payables Currency Summary Aging Report\* Year-End Closing Report   | These reports are printed when you complete procedures.     |
+| Inquiry reports   | Transaction Inquiry\* Payables Summary Inquiry Journal Transaction by Document Inquiry\*  | Choose File \>\> Print in the corresponding inquiry window.        |
 
-### Specifying a Payables Management report option
+\* Indicates reports that you can print with multicurrency information displayed. † Indicates reports that you can assign to named printers. See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.
+
+#### Specifying a Payables Management report option
 
 Report options include specifications for sorting options and range
 restrictions for a particular report. In order to print several Payables
@@ -6109,7 +5235,7 @@ one Vendor Class restriction (CAN-ALL-C to USA-US-C).*
     before saving it. If you don’t want to print the option now, choose Save and
     close the window. The report window will be redisplayed.
 
-### Microsoft SQL Server® Reporting Services reports for Payables Management
+#### Microsoft SQL Server® Reporting Services reports for Payables Management
 
 You can view Payables Management Reporting Services reports from the
 Reporting Services Reports list. If you are using Reporting Services 2008,
@@ -6124,11 +5250,11 @@ System) for more information.
 The following Reporting Services reports are available for Payables
 Management.
 
-#### Aged Trial Balance – by Document Date
+- Aged Trial Balance – by Document Date
 
-#### Historical Aged Trial Balance Aged Trial Balance Details Sub report
+- Historical Aged Trial Balance Aged Trial Balance Details Sub report
 
-#### Transaction Detail Document Date Cash Requirements Vendor Summary
+- Transaction Detail Document Date Cash Requirements Vendor Summary
 
 **To print a Payables Management Reporting Services report:**
 
@@ -6337,18 +5463,17 @@ using this window. To modify the amount on a 1099 transaction, use the Edit
 Depending on the tax type that you’re changing, the existing information for
 the vendor and transaction records changes:
 
-| **Update Vendor**                       |                   |                                                                                                                                                                                                                                                                                                                                                                                                     |
-|-----------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **From**                                | **To**            | **Changes**                                                                                                                                                                                                                                                                                                                                                                                         |
-| 1099 type                               | another 1099 type | The 1099 Box Number information is changed on the vendor record. Transaction information is unchanged.                                                                                                                                                                                                                                                                                             |
-| **Update 1099 Transactions**            |                   |                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 1099 type                               | another 1099 type | Transaction information is changed, Vendor information is unchanged                                                                                                                                                                                                                                                                                                                                 |
-| **Update Vendor**                       |                   |                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **From**                                | **To**            | **Changes**                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Update Vendor and 1099 Transactions** |                   |                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 1099 type                               | another 1099 type | Vendor records in the range are updated with the new tax type and 1099 box number. All work, open, and historical 1099 transactions are updated with the new type.                                                                                                                                                                                                                                 |
+| **Update Vendor**                       |                   |                                  |
+|-----------------------------------------|-------------------|----------------------------------|
+| **From**                                | **To**            | **Changes**                      |
+| 1099 type                               | another 1099 type | The 1099 Box Number information is changed on the vendor record. Transaction information is unchanged. |
+| **Update 1099 Transactions**            |                   |                                      |
+| 1099 type                               | another 1099 type | Transaction information is changed, Vendor information is unchanged     |
+| **Update Vendor**                       |                   |                                       |
+| **Update Vendor and 1099 Transactions** |                   |                                    |
+| 1099 type                               | another 1099 type | Vendor records in the range are updated with the new tax type and 1099 box number. All work, open, and historical 1099 transactions are updated with the new type.   |
 | Not a 1099 Vendor                       | 1099 type         | Vendor records are updated with the new tax type. On existing invoices, credit memos and returns, the purchase amount minus any trade discount amount appears in the 1099 Amount field. On unapplied credit memos or returns, the 1099 type is updated using the 1099 type assigned to the vendor. On applied credit memos or returns, the 1099 type is updated using the 1099 type on the invoice. |
-| 1099 type                               | Not a 1099 Vendor | Vendor records are updated with the new tax type. Existing transactions are changed to non1099 transactions and the 1099 amount is cleared on payables debit documents, credit memos and returns for unposted, posted and historical transactions.                                                                                                                                                 |
+| 1099 type                               | Not a 1099 Vendor | Vendor records are updated with the new tax type. Existing transactions are changed to non1099 transactions and the 1099 amount is cleared on payables debit documents, credit memos and returns for unposted, posted and historical transactions.    |
 
 1. Enter a range of vendors, tax types, or transactions to modify information
     for. You can enter multiple ranges.
@@ -6359,7 +5484,7 @@ the vendor and transaction records changes:
 3. Choose Process to make the changes. When processing is complete, the Update
     1099 Information Audit Report is printed.
 
-### History removal overview
+#### History removal overview
 
 History records provide useful information for audit purposes. If you’re
 keeping one of the types of history available in Payables Management, you
@@ -6374,7 +5499,7 @@ useful.
 When you remove history, any corresponding multicurrency information is
 removed, as well.
 
-### Removing transaction history
+#### Removing transaction history
 
 Use the Remove Payables Transaction History window to remove transaction
 history. If you’re keeping transaction history, detailed information has
@@ -6386,8 +5511,7 @@ journals, or reprinted check remittances and stubs in the future.
 
 **To remove transaction history:**
 
-1. Open the Remove Payables Transaction History window. (Purchasing \>\>
-    Utilities \>\> Remove Transaction History)
+1. Open the Remove Payables Transaction History window. (Purchasing \>\> Utilities \>\> Remove Transaction History)
 
 2. Select an option and enter a range restriction.
 
@@ -6409,7 +5533,7 @@ each range separately.
 To print the Transaction History Removal Report without removing history,
 unmark both Transactions and Distributions and choose Process.
 
-### Removing distribution history
+#### Removing distribution history
 
 Use the Remove Payables Distribution History window to remove distribution
 history. If you’re keeping distribution history, a detailed record has been
@@ -6421,8 +5545,7 @@ needed to reprint posting journals in the future.
 
 **To remove distribution history:**
 
-1. Open the Remove Payables Distribution History window. (Purchasing \>\>
-    Utilities \>\> Remove Distributions)
+1. Open the Remove Payables Distribution History window. (Purchasing \>\> Utilities \>\> Remove Distributions)
 
 2. Select an option and enter a range.
 
@@ -6447,7 +5570,7 @@ Remove and choose Process.
 Once history has been removed, can’t print the Distribution History Reports
 for the ranges of information you removed.
 
-### Removing period history
+#### Removing period history
 
 Use the Remove Payables Calendar/Fiscal History window to remove history for
 a calendar year or fiscal year. If you’re keeping calendar-year history,
@@ -6483,7 +5606,7 @@ separately.
 3. Once history has been removed, you can’t print the history removal reports
     for the ranges of information you removed.
 
-### Removing journal history
+#### Removing journal history
 
 Use the Remove Payables Journal History window to remove journal history. If
 you’re keeping journal history, you can reprint posting journals for
@@ -6521,7 +5644,7 @@ separately.
 3. Once history has been removed, you can’t reprint posting journals for the
     ranges of information you removed.
 
-### Removing Intrastat history
+#### Removing Intrastat history
 
 Use the Remove Intrastat History window to remove Intrastat history records
 that are no longer necessary. Only the Intrastat records for the range you
@@ -6530,8 +5653,7 @@ Intrastat removal reports for the ranges of information you removed.
 
 **To remove Intrastat history:**
 
-1. Open the Remove Intrastat History window. (Administration \>\> Utilities
-    \>\> Company \>\> Remove Intrastat History)
+1. Open the Remove Intrastat History window. (Administration \>\> Utilities \>\> Company \>\> Remove Intrastat History)
 
 2. Select an option and enter a range.
 
@@ -6554,7 +5676,7 @@ Print Report and choose Process.
 
 1. Choose Process to remove history.
 
-### Removing tax history
+#### Removing tax history
 
 Use the Tax History Removal window to remove tax detail transactions. Only
 the tax history for the range you specify will be removed. Once tax history
@@ -6563,27 +5685,19 @@ printed on tax reports.
 
 **To remove tax history:**
 
-1. Open the Tax History Removal window. (Administration \>\> Utilities \>\>
-    Company \>\> Remove Tax History)
+1. Open the Tax History Removal window. (Administration \>\> Utilities \>\> Company \>\> Remove Tax History)
 
-![A screenshot of a cell phone Description automatically generated](media/b45ebd43260fd23649d20642bb94fccf.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/b45ebd43260fd23649d20642bb94fccf.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-1. Select whether you want to remove tax detail transactions and print the Tax
-    History Removal Report, remove the tax detail transactions, or print the Tax
-    History Removal Report.
+1. Select whether you want to remove tax detail transactions and print the Tax History Removal Report, remove the tax detail transactions, or print the Tax History Removal Report.
 
 2. Enter or select a range of tax history to remove or print a report of.
 
 3. Choose Insert to insert the range.
 
-4. Choose Process to remove tax history. If Print Tax History Removal Report
-    was marked, the Tax History Removal Report will print.
+4. Choose Process to remove tax history. If Print Tax History Removal Report was marked, the Tax History Removal Report will print.
 
-**Chapter 18: Routines**
+### Chapter 18: Routines
 
 The routine procedures include those you should complete at the end of
 either your calendar or fiscal year.
@@ -6602,7 +5716,7 @@ Routine procedure information includes the following sections:
 
 - *Closing a fiscal year*
 
-### Printing 1096 or 1099 statements
+#### Printing 1096 or 1099 statements
 
 Use the Print 1099 window to print 1096 or 1099 statements for vendors at
 any time and for a year other than the current year, as long as you have
@@ -6627,14 +5741,13 @@ Because you can print 1099 statements at any time, it’s sometimes helpful to
 be able to view or change the 1099 amounts that are tracked for a vendor.
 This information is available in a number of windows.
 
-| **Window name**         | **How to open**                                                                                                | **What you can do in the window**                                                                                                                |
-|-------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Window name**         | **How to open**                                                                                                | **What you can do in the window**   |
+|-------------------------|----------------------------------------------------------------------------------------------------------------|---------------------------|
 | Vendor Period Summary   | Purchasing \>\> Cards \>\> Summary \>\> select a vendor \>\> Period button                                     | Enter period history for a vendor. You also can view or change information for specific months or fiscal periods for the selected vendor record. |
 | Vendor Yearly Summary   | Purchasing \>\> Cards \>\> Summary \>\> select a vendor \>\> Yearly button                                     | View or modify a vendor’s yearly activity.                                                                                                      |
 | 1099 Details            | Purchasing \>\> Cards \>\> 1099 Details                                                                        | View or change 1099 transaction amounts for a period or calendar year.                                                                          |
 | Update 1099 Information | Purchasing \>\> Utilities \>\> Update 1099 Information                                                         | View or change 1099 form (tax type) or box numbers for a range of vendors, 1099 transactions or both.                                           |
 | Payables 1099 Entry     | Purchasing \>\> Transactions \>\> Transaction Entry                                                            | View or select a tax type and 1099 box number for the specified transaction.                                                                    |
-| **Window name**         | **How to open**                                                                                                | **What you can do in the window**                                                                                                                |
 | Payables 1099 Inquiry   | Purchasing \>\> Inquiry \>\> Transaction by Vendor \>\> Document Number link \>\> 1099 Amount expansion button | View the tax type and 1099 box number for payables documents that contain a 1099 amount.                                                        |
 
 This window also can be opened using expansion buttons on the 1099 Amount
@@ -6642,7 +5755,7 @@ fields in the Period Summary window and the Vendor Yearly Summary window by
 clicking the expansion button for the 1099 Amount expansion button in either
 window.
 
-**1099 statement box reference**
+#### 1099 statement box reference
 
 The following table lists selected fields where the information that prints
 in 1099 statement boxes appears in Microsoft Dynamics GP.
@@ -6670,9 +5783,7 @@ window is displayed to print this edit list.
 
 1. Open the Print 1099 window. (Purchasing \>\> Routines \>\> Print 1099)
 
-![A screenshot of a cell phone Description automatically generated](media/146e9cb40e4556f01cc36c52bc336ccb.jpg)
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/146e9cb40e4556f01cc36c52bc336ccb.jpg)
 
 1. Enter the payer’s information, including the address ID and the payer’s
     Federal ID number, which is your company’s tax registration number.
@@ -6716,7 +5827,7 @@ range restriction.
 4. When you’re ready to print the forms, mark 1099 Form or 1096 Form and choose
     Print.
 
-### Year-end closing overview
+#### Year-end closing overview
 
 There are two closing procedures for Payables Management—fiscal year and
 calendar year. Closing the calendar year transfers the current-year 1099
@@ -6736,86 +5847,51 @@ the previous year has been closed. This also affects the amount shown on the
 You can close both the calendar and fiscal years at the same time if your
 fiscal year ends on December 31.
 
-*We recommend that you post all transactions for the calendar year before
-closing the year. To enter future-period transactions before closing the
-year, create a batch with new transactions but don’t post it until after the
-year has been closed.*
+> [!NOTE]
+> We recommend that you post all transactions for the calendar year before closing the year. To enter future-period transactions before closing the year, create a batch with new transactions but don’t post it until after the year has been closed.
 
-Before you close the year, make a backup of all company data. As long as you
-have a current backup, you can restore information, if necessary.
+Before you close the year, make a backup of all company data. As long as you have a current backup, you can restore information, if necessary.
 
-**Calendar year-end closing procedures**
+#### Calendar year-end closing procedures
 
-Be sure to complete the following procedures in this order to close your
-company’s calendar year:
+Be sure to complete the following procedures in this order to close your company’s calendar year:
 
-**Post all transactions for the calendar year** Before closing the year,
-post all transactions for the calendar year. To enter future period
-transactions before closing the year, create a batch with new transactions,
-but don’t post it until after the previous year has been closed.
+- **Post all transactions for the calendar year** Before closing the year, post all transactions for the calendar year. To enter future period transactions before closing the year, create a batch with new transactions, but don’t post it until after the previous year has been closed.
 
-**Make a backup** Make a backup of all data for your company’s permanent
-records. This gives you a record of the company’s financial position at the
-end of the year and you can restore it later, if necessary.
+- **Make a backup** Make a backup of all data for your company’s permanent records. This gives you a record of the company’s financial position at the end of the year and you can restore it later, if necessary.
 
-**Make a backup** Make a second backup of all data for your company’s
-permanent records.
+- **Make a backup** Make a second backup of all data for your company’s permanent records.
 
-**Close the calendar year** Use the Payables Year-End Closing window to
-close the calendar year or, if your calendar and fiscal years coincide, both
-years. See *Closing a calendar year* for more information.
+- **Close the calendar year** Use the Payables Year-End Closing window to close the calendar year or, if your calendar and fiscal years coincide, both years. See *Closing a calendar year* for more information.
 
-**Close the sales tax periods for the year** Use the Tax Year-End Closing
-window to close the sales tax periods and print the Tax Year-End Closing
-Report. You should complete this procedure only after you complete the
-year-end closing procedures for all sales and purchasing modules.
+- **Close the sales tax periods for the year** Use the Tax Year-End Closing window to close the sales tax periods and print the Tax Year-End Closing Report. You should complete this procedure only after you complete the year-end closing procedures for all sales and purchasing modules.
 
-**Make a final backup** Make a final backup of all data for your company’s
-permanent records.
+- **Make a final backup** Make a final backup of all data for your company’s permanent records.
 
-**Fiscal year-end closing procedures**
+#### Fiscal year-end closing procedures
 
-Be sure to complete the following procedures in this order to close your
-company’s fiscal year:
+Be sure to complete the following procedures in this order to close your company’s fiscal year:
 
-**Post all transactions for the current fiscal year** Before closing the
-year, post all transactions for the fiscal year. To enter future period
-transactions before closing the year, create a batch with new transactions,
-but don’t post it until after the previous year has been closed.
+- **Post all transactions for the current fiscal year** Before closing the year, post all transactions for the fiscal year. To enter future period transactions before closing the year, create a batch with new transactions, but don’t post it until after the previous year has been closed.
 
-**Make a backup** Make a backup of all data for your company’s permanent
-records. This gives you a record of the company’s financial position at the
-end of the year and you can restore it later, if necessary.
+- **Make a backup** Make a backup of all data for your company’s permanent records. This gives you a record of the company’s financial position at the end of the year and you can restore it later, if necessary.
 
-**Close the fiscal year** Use the Payables Year-End Closing window to close
-the fiscal year or, if your calendar and fiscal years coincide, both years.
-For more information, *Closing a fiscal year*.
+- **Close the fiscal year** Use the Payables Year-End Closing window to close the fiscal year or, if your calendar and fiscal years coincide, both years. For more information, *Closing a fiscal year*.
 
-**Close all fiscal periods (optional)** Use the Fiscal Periods Setup window
-to close any fiscal periods that are still open for the year. This keeps
-transactions from accidentally being posted to the wrong period or year. Be
-sure you posted all transactions for the period and year for all modules
-before closing fiscal periods. If you later need to post transactions to a
-fiscal period you already closed, you must reopen the period using the
-Fiscal Periods Setup window before you can post the transaction.
+- **Close all fiscal periods (optional)** Use the Fiscal Periods Setup window to close any fiscal periods that are still open for the year. This keeps transactions from accidentally being posted to the wrong period or year. Be sure you posted all transactions for the period and year for all modules before closing fiscal periods. If you later need to post transactions to a fiscal period you already closed, you must reopen the period using the Fiscal Periods Setup window before you can post the transaction.
 
-**Close the sales tax periods for the year** Use the Tax Year-End Closing
-window to close the sales tax periods and print the Tax Year-End Closing
-Report. You should complete this procedure only after you complete the
-year-end closing procedures for all sales and purchasing modules.
+- **Close the sales tax periods for the year** Use the Tax Year-End Closing window to close the sales tax periods and print the Tax Year-End Closing Report. You should complete this procedure only after you complete the year-end closing procedures for all sales and purchasing modules.
 
-**Make a final backup** Make a final backup of all data for your company’s
-permanent records.
+- **Make a final backup** Make a final backup of all data for your company’s permanent records.
 
-### Using year-end procedures checklists
+#### Using year-end procedures checklists
 
 Use the Purchasing Checklists window to guide you through the tasks you need
 to complete to close the year.
 
 **To use year-end procedures checklists:**
 
-1. Open the Purchasing Checklists window.(Purchasing \>\> Routines \>\>
-    Checklists)
+1. Open the Purchasing Checklists window.(Purchasing \>\> Routines \>\> Checklists)
 
 2. Select a frequency.
 
@@ -6829,7 +5905,7 @@ to complete to close the year.
 4. Complete all the routines in the Purchasing Checklists window and close the
     window.
 
-### Printing a VAT return
+#### Printing a VAT return
 
 Use the VAT Return window to print VAT reports, which you might need to
 submit to the government. You can print summary and detailed VAT information
@@ -6839,8 +5915,7 @@ You also can save VAT report IDs and reprint reports at a later time.
 
 **To print a VAT return:**
 
-1. Open the VAT Return window.(Administration \>\> Routines \>\> Company \>\>
-    VAT Return)
+1. Open the VAT Return window.(Administration \>\> Routines \>\> Company \>\> VAT Return)
 
 2. Enter or select a VAT report ID and description.
 
@@ -6859,7 +5934,7 @@ You also can save VAT report IDs and reprint reports at a later time.
 
 8. Choose Print to print the reports.
 
-### Closing a calendar year
+#### Closing a calendar year
 
 Use the Payables Year-End Closing window to close a calendar year. Before
 closing the calendar year, you should print an Aged Trial Balance With
@@ -6874,8 +5949,7 @@ you have a current backup, you can restore information, if necessary.*
 
 **To close a calendar year:**
 
-1. Open the Payables Year-End Closing window. (Purchasing \>\> Routines \>\>
-    Year-End Close)
+1. Open the Payables Year-End Closing window. (Purchasing \>\> Routines \>\> Year-End Close)
 
 2. Mark the year to close. If the calendar year coincides with your fiscal
     year, mark All. If they don’t coincide, close the fiscal year separately.
@@ -6891,7 +5965,7 @@ you have a current backup, you can restore information, if necessary.*
     is printed after the year has been closed, if you selected to print the
     report.
 
-### Closing a fiscal year
+#### Closing a fiscal year
 
 Use the Payables Year-End Closing window to close a fiscal year. Closing the
 fiscal year transfers all amounts other than 1099 amounts to last year. You
@@ -6918,8 +5992,7 @@ have a current backup, you can restore information, if necessary.
 
 **To close a fiscal year:**
 
-1. Open the Payables Year-End Closing window. (Purchasing \>\> Routines \>\>
-    Year-End Close)
+1. Open the Payables Year-End Closing window. (Purchasing \>\> Routines \>\> Year-End Close)
 
 2. Mark Fiscal to close the fiscal year. If your calendar and fiscal years
     coincide, you can close them at the same time by marking All.
@@ -6937,8 +6010,7 @@ have a current backup, you can restore information, if necessary.
     window. This prevents transactions from being posted to the closed year. See
     the System Setup documentation for more information.
 
-Additional Feature Functionality added to Payables Management
--------------------------------------------------------------
+## Additional Feature Functionality added to Payables Management
 
 To review detailed information about each feature, click the relevant link
 below.
@@ -7051,709 +6123,3 @@ Zoom windows.
 Additionally, Microsoft Dynamics GP will now throw a warning message when a user
 attempts to enter a transaction when the vendor is on hold, "Vendor XXXX is
 currently on hold. Do you want to continue?"
-
-**Glossary**
-
-### 1099 Statement
-
-A report required by the US Internal Revenue Service for each vendor from
-whom goods and services worth \$600 or more have been purchased within a
-calendar year. There are three possible formats for a 1099: miscellaneous
-(1099-MISC), interest (1099INT), and dividend (1099-DIV).
-
-### Account alias
-
-A “short name” for a posting account in the chart of accounts. If the
-account format has a large number of segments, using aliases can speed data
-entry.
-
-### Active vendor
-
-A vendor with whom business is being conducted on a regular basis.
-
-### Aging
-
-The process that determines an account’s maturity, or the number of days the
-account has been outstanding. Aging places each posted transaction in the
-appropriate current or past-due aging category. You can age accounts either
-by invoice date or due date.
-
-### Aging period
-
-A specified number of days to age accounts by. For example, aging periods of
-30 days would be set up as follows: 0-30 days, 31-60 days, 61-90 days, and
-so on. Transactions are then grouped by these aging periods.
-
-### Alert message
-
-A message that appears when inappropriate, inadequate, or unclear data or
-instructions are issued, when data is not accessible or when a confirmation
-is sought.
-
-### Alignment form
-
-A document that ensures text will be properly aligned when statements are
-printed.
-
-### Applying
-
-The process of linking the payment amount to amounts from one or more
-documents being paid.
-
-### Audit trail
-
-A series of permanent records that track a transaction to the point where it
-was originally entered in the system. You can use the audit trail to verify
-the accuracy of financial statements by outside accountants or auditors.
-
-### Audit trail code
-
-A series of alphanumeric characters that provide a precise record of each
-transaction and where it has been posted within Microsoft Dynamics GP.
-
-### Auto-apply
-
-A selection that automates the apply process. *See also Applying*.
-
-### Background processing
-
-A processing system users can continue working on while transactions are
-being posted or reports are being printed.
-
-### Backing up
-
-The process of storing data on a secondary medium—usually on diskettes or
-magnetic tape—to minimize the difficulty of recovering from data loss.
-Backups should be performed routinely.
-
-### Batch
-
-A group of transactions identified by a unique name or number. Use batches
-in computerized accounting to conveniently group transactions, both for
-identification purposes and to speed up the posting process.
-
-### Batch approval
-
-Permits users to choose whether to approve batches of transactions before
-posting. If you’re using batch approval, the ID of the user who approved the
-batch and the approval date will appear on posting reports.
-
-### Batch controls
-
-Values for both the number of transactions in a batch and the total currency
-amount of the batch. As transactions are entered, the actual totals will be
-displayed. You can verify these totals periodically as transactions are
-entered to ensure the required number and amount of transactions match the
-actual number and amount that were entered.
-
-### Batch frequency
-
-A selection in the Batch Entry window that specifies how often a recurring
-batch will be posted, such as weekly, monthly, or quarterly. *See also
-Recurring batch*.
-
-### Batch inquiry
-
-A window that shows the users who is currently working with batches and the
-statuses of those batches.
-
-### Batch-level posting
-
-A posting method in which you can save transactions in batches and post them
-whenever convenient. There are three types of batch-level posting: batch
-posting, series posting, and master posting. *See also Series posting*.
-
-### Beginning balance
-
-Account balances entered during the setup of your Microsoft Dynamics GP
-system.
-
-### Calendar year
-
-An accounting period running from January 1 to December 31.
-
-### Calendar-year history
-
-Transaction history records kept in a calendar-year format.
-
-### Cash requirements
-
-The amount of cash a business needs during a given period to pay vendors.
-
-### Check number
-
-A number assigned to a check. In Payables Management, check numbers are
-assigned automatically but you can change them.
-
-### Check Register Report
-
-A record of computer, manual, and voided checks issued within a given month
-or fiscal period.
-
-### Checkbook
-
-An account that keeps a currency balance and tracks the receiving and
-disbursing of cash. *See also Check number*.
-
-### Class
-
-Permits customers, vendors, users, or items to be grouped according to
-common characteristics. For example, a vendor class could be created to
-group vendors according to payment priority or location.
-
-### Comma-delimited fields
-
-The standard comma-separated ASCII character format used when exporting a
-report so that database programs can read it.
-
-### Credit memo
-
-A document that reduces the amount owed to a vendor.
-
-### Default value
-
-A value that is displayed in a window automatically, and that will be used
-unless a different value is entered.
-
-### Detailed report
-
-A report that displays detailed transaction information for each account.
-
-### Discount available
-
-A reduction in the amount payable, typically offered if the payment is made
-by a certain date.
-
-### Discount date
-
-The date an invoice must be paid for a discount to be valid.
-
-### Discount taken
-
-A valid discount applied to a vendor document. *See also Discount
-available*.
-
-### Distributing
-
-The process of allocating to separate accounts a percentage or part of
-transaction amounts.
-
-### Distribution account
-
-Accounts designated to receive a percentage or part of a posted transaction.
-
-### Distribution history
-
-A record of the debits and credits for each document that was distributed to
-individual posting accounts.
-
-### Document type
-
-A selection that identifies a document’s purpose and how document amounts
-will be posted. In Payables Management, the document types include invoices,
-credit memos, returns, finance charges, miscellaneous charges, and checks.
-
-### Edit list
-
-A list of transactions in an unposted batch that you can print to verify the
-accuracy of transactions before posting. You can print edit lists from batch
-or transaction entry windows, as long as a batch ID has been entered.
-
-### EOM (End of Month)
-
-Payment terms requiring payment at monthend for all purchases made during
-that month.
-
-**Error message**
-
-*See Alert message*.
-
-### Exchange rate
-
-The rate of exchange between two currencies on a particular date and time.
-
-### Exchange rate table
-
-A table that stores exchange rates for a unique combination of currencies
-and rate types. These tables also define selections for determining the
-exchange rate to use when the currency for a table is entered on a
-multicurrency transaction.
-
-**Financial year**
-
-*See Fiscal year*.
-
-### Fiscal periods
-
-Divisions of the fiscal year, usually monthly, quarterly, or semiannually,
-when you can summarize transaction information and prepare financial
-statements.
-
-### Fiscal year
-
-An annual accounting cycle of up to 54 consecutive periods, ordinarily
-beginning with the first day of a month and ending on the last day of the
-twelfth month. In Australia and New Zealand, this is referred to as a
-financial year.
-
-### Fiscal-year history
-
-A record of purchases, payments, and other transactions for a historical
-year.
-
-### Functional amount
-
-The equivalent transaction amount in the functional currency for a
-transaction amount that was entered using an originating currency. This
-amount sometimes is referred to as the functional equivalent of the
-originating amount.
-
-### Functional currency
-
-The primary currency a company keeps its financial records in. Typically,
-the functional currency is the currency for the country/ region where the
-company is located.
-
-**Functional equivalent**
-
-*See Functional amount*.
-
-### Grace period
-
-A period of days added to end-of-month payment terms to extend the payment
-due date. With a grace period of five days, for example, a purchase made on
-December 26 or later would not be due until January 31.
-
-### Group printing
-
-Creating and printing report options in groups. For example, you could use a
-report group to print all the financial statements and the Trial Balance
-before closing a month, quarter, or fiscal year.
-
-### GST (Goods and Services Tax)
-
-A federal tax on the consumption of goods and services used in Canada, New
-Zealand, and other countries/regions.
-
-### Hold
-
-A restriction that prevents certain types of payables transactions from
-being entered for a specified record. Holds are commonly placed on vendor
-documents when there is an unresolved dispute over an account.
-
-### Inactive vendor
-
-A vendor with whom business isn’t being conducted. Typically, these vendors
-can’t be deleted because historical records are being kept.
-
-### Inquiry
-
-Permits users to view current-year and historical information.
-
-### Invoice
-
-The bill provided by the seller to the buyer for items that have been
-purchased.
-
-### Lookup window
-
-A window that displays a list of accounts, customers, jobs, or other items
-in the Microsoft Dynamics GP system. Lookup windows for a specific field are
-displayed by clicking the lookup button next to the field.
-
-### Manual payment
-
-Any payment made using means other than a computer-printed check. Manual
-payments can be credit card payments, cash payments, and manually written
-checks.
-
-### Mass delete
-
-A procedure that deletes a specified group of vendor records.
-
-### Master posting
-
-A posting process where you can post marked batches from different series
-simultaneously.
-
-### Miscellaneous charge
-
-A charge that isn’t part of the normal purchasing process. A miscellaneous
-charge might be a service charge such as installation or merchandise repair.
-
-### Module
-
-An application that you can use to complete a specific set of tasks. Modules
-are combined to form a series. For example, the Payables Management and
-Purchase Order Processing modules are members of the Purchasing series. *See
-also Series*.
-
-### Note
-
-Attaches messages to windows and fields throughout the Microsoft Dynamics GP
-system. The Note button also shows whether a note is attached to a window.
-You can edit notes and reattach, delete, or print them.
-
-### Open transaction
-
-A transaction that’s posted but not fully applied.
-
-### Origin
-
-A transaction entry window within a specific Microsoft Dynamics GP module;
-also the code representing each origin. You can select certain options, such
-as verifying batch controls and closing fiscal periods, for each transaction
-origin. Also, the transaction origin will appear as part of the audit trail
-code on all posting reports in Microsoft Dynamics GP.
-
-### Originating amount
-
-The transaction amount in the currency the transaction was entered in.
-Originating amounts are posted along with their corresponding functional
-amounts, also referred to as functional equivalents.
-
-### Originating currency
-
-The currency a multicurrency transaction was conducted in.
-
-### Payment number
-
-A number assigned to a payment. Payables Management assigns a default number
-to each payment. You can override the default number, but you can’t post the
-same number twice.
-
-### Payment priority
-
-The order vendors are paid in. You can assign priority based on when
-payments are due, when discounts expire, and whether finance charges will be
-added for late payments.
-
-### Payment terms
-
-Conditions for payment agreed upon when a purchase transaction takes place.
-For example, a vendor might extend a discount if payment is received within
-a specified time period.
-
-**Postal code**
-
-*See ZIP code*.
-
-### Posting
-
-A procedure to make temporary transactions a part of permanent records or to
-update accounts by transaction amounts. In manual accounting, posting
-transfers journal entries to the proper accounts in a general ledger.
-
-### Posting account
-
-A financial account that tracks assets, liabilities, revenue, or expenses.
-These accounts will appear on the financial statements and on other reports
-created in the Financial series.
-
-### Posting journal
-
-A report printed following the posting process that shows the detail for
-each transaction that’s been posted. Posting journals also include the audit
-trail code, which is a precise record of where each transaction has been
-posted within Microsoft Dynamics GP.
-
-### Prepayment
-
-A certain monetary amount paid for merchandise before the merchandise is
-received. The prepayment is entered but not applied. Unapplied payment is
-another term for prepayment.
-
-### Process server
-
-An application that permits users to direct the processing of some
-accounting functions and maintenance procedures to another computer on a
-network. No additional actions are required by the user. Once tasks have
-been sent to a process server, users can begin other tasks immediately.
-
-### PST (Provincial Sales Tax)
-
-A tax for the Canadian provinces that is set by each province.
-
-### QST (Québec Sales Tax)
-
-The Provincial Sales Tax for the province of Québec.
-
-### Range
-
-A selection that narrows the number of records that will be printed on a
-report. For example, a selected range of vendor IDs could be those between
-5000 and 6000.
-
-### Rate calculation method
-
-A mathematical operation (multiply or divide) specified for calculating
-functional and originating equivalents on a transaction, or for displaying
-amounts in summary or inquiry windows. The exchange rate on the exchange
-rate table is used in the calculation. The operation calculates a functional
-currency amount from the originating currency amount using a specified
-exchange rate.
-
-### Rate frequency
-
-The frequency to enter new exchange rates at for an exchange rate table. The
-rate frequency determines the length of time an exchange rate will be valid.
-For example, you can mark a rate as valid for a single day, week, month,
-quarter, or year. The rate frequency will determine the expiration date for
-each rate, based on the day the rate is entered.
-
-### Rate type
-
-A selection that identifies different exchange rate tables for one currency
-that is used for different purposes. For example, you might set up exchange
-rate tables with a Buy rate type for sales transactions and a Sell rate type
-for purchasing transactions. You also can use rate types to distinguish the
-posting accounts to use for realized gains and losses and rounding
-differences.
-
-### Rate variance
-
-A range you can specify to limit the amount the exchange rate can fluctuate
-when you enter a new exchange rate in an exchange rate table or during
-transaction entry. For example, if the default exchange rate is 0.68450 and
-the rate variance is 0.01000, you could enter an exchange rate between
-0.67450 and 0.69450.
-
-**Real-time posting**
-
-*See Transaction-level posting*.
-
-### Realized gain
-
-Gain realized in the functional currency due to the difference in exchange
-rates between the transaction date and the settlement date for a
-multicurrency transaction.
-
-### Realized loss
-
-Loss realized in the functional currency due to the difference in exchange
-rates between the transaction date and the settlement date for a
-multicurrency transaction.
-
-### Reconciling
-
-A procedure that verifies that Payables Management data is accurate. The
-reconcile process verifies—and recalculates, if necessary—the accuracy of
-the account balances and document ages in each aging period. Reconciling is
-often performed after rebuilding a table, and is necessary after changing
-fiscal periods.
-
-### Recurring batch
-
-A batch that will be posted repeatedly, according to the selected frequency.
-An example of a recurring batch would be one to record monthly rent expense.
-In Australia and New Zealand, transactions entered in a recurring batch are
-referred to as standing transactions.
-
-### Remittance
-
-A document showing what specific transaction or transactions are being paid.
-Remittance forms often are issued with checks using a “no-stub” format.
-
-### Remove history
-
-A procedure that erases ranges of historical information that are no longer
-useful.
-
-### Report option
-
-A collection of entries that specifies the amount or type of information
-that will appear on a report. You can create multiple report options.
-
-### Return
-
-A transaction that records the return of merchandise after the invoice for
-the sale has been posted. Returns are applied to the original invoice (for
-open item customers) or to the customer’s balance (for balance forward
-customers).
-
-### Rolldown
-
-The process of applying changes made in one vendor class to all vendor
-records assigned to that class.
-
-### Sample data
-
-Data that you can use to practice Microsoft Dynamics GP procedures by
-entering the information listed in each online lesson. You can use sample
-data using the lesson company.
-
-### Series
-
-A group of Microsoft Dynamics GP modules that form an interrelated set of
-applications.
-
-### Series posting
-
-A posting process where you can post batches from the same series
-simultaneously.
-
-### Setup routine
-
-A series of procedures that you can use to open the windows where options
-and defaults for a specific module are modified or set up.
-
-### Shipping method
-
-The shipping or freight company, and type of service, that sends goods from
-a vendor.
-
-### Short name
-
-A shortened version of a company name that you can print on checks.
-
-### Single-use batch
-
-A batch that is created, posted once, and then deleted from the system
-automatically.
-
-### Sorting
-
-A method of arranging data based on the order of specified information. For
-example, records sorted by class would list all records within a class
-before moving to records in the next class.
-
-### Source document code
-
-A code that identifies the type of journal or entry that you can examine for
-more information about a specific transaction. For example, you could use
-the source document code GJ for general journal entries, and BBAL for
-beginning balance entries.
-
-**Standing transactions**
-
-*See Recurring batch*.
-
-### Tab-delimited fields
-
-The tab-separated ASCII character format used when exporting a report so
-that worksheet programs, such as Microsoft Excel®, can read it.
-
-### Tax detail
-
-A definition of a tax that might apply to vendors. Tax details are grouped
-into schedules. *See also Tax schedule*.
-
-### Tax schedule
-
-Groups of tax details that define each tax that might apply to vendors. When
-tax schedules are assigned to vendors, the applicable taxes will be
-calculated during transaction entry.
-
-### Temporary vendor
-
-A vendor used on a one-time or occasional basis. An example might be a
-caterer for a company party. In Payables Management, you can delete
-temporary vendors even though history is being kept.
-
-### Text-only format
-
-A file format that saves reports as text without formatting. Use this format
-when exporting reports to applications that are unable to read other formats
-available in Microsoft Dynamics GP.
-
-### Trade discount
-
-A discount given by a vendor. The rate is calculated at the time of a
-purchase and is added to payment terms discounts that also might be offered.
-
-### Transaction date
-
-The date a transaction occurred; not necessarily the date it was entered in
-the system.
-
-**Transaction history**
-
-A record of a fully applied transaction.
-
-### Transaction-level posting
-
-A posting method in which you can enter and post transactions without having
-to create a batch. Also known as real-time posting. *See also Batch-level
-posting*.
-
-### Trial Balance
-
-A report of Payables Management account balances showing the outstanding
-balances and the aging periods for each vendor account.
-
-**Unapplied payment**
-
-*See Prepayment*.
-
-### Unapply
-
-A procedure reversing the entries that apply amounts to documents.
-
-### Unit account
-
-An account that tracks statistical or nonfinancial quantities, such as the
-number of customers with past-due balances or the number of invoices
-generated over a specific time period.
-
-### Unrealized gain
-
-Gain due to the difference in exchange rates between the transaction date
-and the revaluation date for an account with multicurrency activity.
-
-### Unrealized loss
-
-Loss due to the difference in exchange rates between the transaction date
-and the reevaluation date for an account with multicurrency activity.
-
-### Variance
-
-A lower rate for the withholding levied in Australia. A contractor who
-applies for the lower rate receives a variance certificate.
-
-### VAT (Value-Added Tax)
-
-A tax used in Europe and elsewhere in the world.
-
-### Vendor
-
-A person or company providing goods or services in return for payment.
-
-### Vendor ID
-
-An alphanumeric identification assigned to a vendor in the Vendor
-Maintenance window. You can use the vendor ID to sort information for
-reports.
-
-### Voiding
-
-The process of recording an equal and opposite transaction to reverse the
-effects of a posted transaction.
-
-### Voucher
-
-A record of a vendor transaction, including the vendor’s name and address,
-description of goods or services received, document number, terms of
-payment, due date, and amount due.
-
-### Voucher number
-
-The number assigned to a voucher. Payables Management assigns voucher
-numbers automatically, but you can override the default.
-
-### Writeoff
-
-An amount that a business chooses not to pay on a vendor account. A writeoff
-is deducted from the account total.
-
-### Year-end closing
-
-In Payables Management, a process that prepares the system for a new fiscal
-year by transferring all summary current-year information for each vendor to
-last year. Users in the United States should print 1099s before closing a
-calendar year. *See also 1099 Statement*.
-
-### ZIP code
-
-In the United States, the postal code assigned to business and residential
-addresses. In other countries/regions, it might be referred to as post code or
-postal code.

@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/31/2019
+ms.date: 02/05/2019
 ---
 
 # Glossary of Terms in the Financials Area in Dynamics GP
@@ -16,12 +16,16 @@ The following table explains the terminology used in the Financials area in Dyna
 
 |Term  |Definition |
 |---------|---------|
+|1099 Statement |A report required by the US Internal Revenue Service for each vendor from whom goods and services worth \$600 or more have been purchased within a calendar year. There are three possible formats for a 1099: miscellaneous (1099-MISC), interest (1099INT), and dividend (1099-DIV).|
+|Account alias|A “short name” for a posting account in the chart of accounts. If the account format has a large number of segments, using aliases can speed data entry.|
 | Accounting period| A subdivision of the fiscal year. Common periods are months or quarters.|
 | Active customer| A customer with whom you’re currently doing business on a regular basis.|
+| Active vendor| A vendor with whom business is being conducted on a regular basis.|
 | ADTP (Average days to pay)| An average based on the number of invoices a customer has and the time taken to pay each invoice. The formula for calculating the average days to pay is:</br>ADTP = (Current ADTP) x (Number of Invoices) + (Number of Days Taken to Pay Most Recent Invoice) / (Number of Invoices + 1).|
 | Aged Trial Balance| The Aged Trial Balance shows the balances for each aging period as of the last aging date. You can print the Aged Trial Balance to view the current aging status of accounts.|
 | Aging| The process that determines the maturity of an account from the transaction date or due date, indicating how many days each account has been outstanding. Aging places each posted transaction in the appropriate current, past-due, or days old aging period.|
 | Aging period| A specified number of days to age your accounts by. For example, your aging  periods might be from 0 to 30 days, 31 to 60 days, and so on. Up to seven aging periods can be used for open item accounts and two periods (current and non-current) for balance forward accounts.|
+|Alert message|A message that appears when inappropriate, inadequate, or unclear data or instructions are issued, when data is not accessible or when a confirmation is sought.|
 | Alignment form| A document printed to ensure text is properly aligned before you print actual statements.|
 |Alternate currency |Any currency that is not a functional currency. |
 | Apply| The process of linking a payment amount to one or more documents being paid.|
