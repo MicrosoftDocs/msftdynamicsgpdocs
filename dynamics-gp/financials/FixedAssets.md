@@ -1,6 +1,6 @@
 **Introduction**
 
-You can use Fixed Asset Management, to set up, enter, and maintain assetrecords. When necessary, you can add insurance and user-defined information and create additional records for each asset, including investment tax credit information and lease information.
+You can use Fixed Asset Management, to set up, enter, and maintain asset records. When necessary, you can add insurance and user-defined information and create additional records for each asset, including investment tax credit information and lease information.
 
 You also can use Fixed Asset Management to complete the following tasks:
 
