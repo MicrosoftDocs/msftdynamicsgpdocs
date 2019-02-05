@@ -26,10 +26,7 @@ This part of the documentation also includes procedures you complete at the end 
 
 ## Chapter 26: Reports
 
-You can use Receivables Management reports to analyze receivables activity
-and identify errors in transaction entry. Use the information in this
-chapter to guide you through printing reports and working with report
-options.
+You can use Receivables Management reports to analyze receivables activity and identify errors in transaction entry. Use the information in this chapter to guide you through printing reports and working with report options.
 
 Reports information is divided into the following sections:
 
@@ -37,8 +34,7 @@ Reports information is divided into the following sections:
 
 - *Specifying a Receivables Management report option*
 
-- *Microsoft SQL Server® Reporting Services reports for Receivables
-    Management*
+- *Microsoft SQL Server® Reporting Services reports for Receivables Management*
 
 | **Report type**       | **Report**       | **Printing method**          |
 |-----------------------|------------------|------------------------------|
@@ -55,26 +51,13 @@ Period Sales Analysis Report†
 
 Unapplied Documents List†
 
-† Indicates reports that can be assigned to named printers. See “Printers”
-in the System Administrator’s Guide for more information.
+† Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide for more information.
 
 ### Receivables Management standard report summary
 
-You can print several types of reports using Receivables Management. Some
-reports automatically are printed when you complete certain procedures; for
-example, posting journals can automatically be printed when you post
-transactions, depending on how your posting options are set up. You can
-print some reports during procedures; for example, you can print an edit
-list when entering transactions by choosing the Print button in the batch
-entry window. In order to print some reports, such as analysis or history
-reports, you must set up report options to specify sorting options and
-ranges of information to include on the report.
+You can print several types of reports using Receivables Management. Some reports automatically are printed when you complete certain procedures; for example, posting journals can automatically be printed when you post transactions, depending on how your posting options are set up. You can print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report.
 
-The following table lists the report types available in Receivables
-Management and the reports that fall into those categories. Reports printed
-using Sales Order Processing or Invoicing are printed using many of the same
-windows. See the Sales Order Processing and Invoicing manuals for more
-information:
+The following table lists the report types available in Receivables Management and the reports that fall into those categories. Reports printed using Sales Order Processing or Invoicing are printed using many of the same windows. See the Sales Order Processing and Invoicing manuals for more information:
 
 | **Report type**      | **Report**       | **Printing method**         |
 |----------------------|------------------|-----------------------------|
@@ -167,70 +150,44 @@ Returns†
 
 Reprinted statements\*†
 
-† Indicates reports that can be assigned to named printers. See “Printers”
-in the System Administrator’s Guide for more information.
+† Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide for more information.
 
 ### Specifying a Receivables Management report option
 
-Report options include specifications for sorting options and range
-restrictions for a particular report. To print several Receivables
-Management reports, you must first create a report option. Each report can
-have several different options, so you can easily print the information you
-need. For example, you can create report options for the Aged Trial Balance
-that show either detailed or summary information.
+Report options include specifications for sorting options and range restrictions for a particular report. To print several Receivables Management reports, you must first create a report option. Each report can have several different options, so you can easily print the information you need. For example, you can create report options for the Aged Trial Balance that show either detailed or summary information.
 
-*A single report option can’t be used by multiple reports. If you want
-identical options for several reports, you must create them separately.*
+*A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.*
 
-Use the Sales report options windows to create sorting, restriction,
-printing and email options for the reports that are included in Receivables
-Management.
+Use the Sales report options windows to create sorting, restriction, printing and email options for the reports that are included in Receivables Management.
 
 #### To specify a Receivables Management report option
 
-1. Open a Sales reports window. There are separate windows for each report
-    type. (Sales \>\> Reports \>\> Setup)
-
+1. Open a Sales reports window. There are separate windows for each report type. 
+(Sales \>\> Reports \>\> Setup)
 (Sales \>\> Reports \>\> Trial Balance)
-
 (Sales \>\> Reports \>\> Analysis)
-
 (Sales \>\> Reports \>\> Posting Journals)
+(Sales \>\> Reports \>\> History) 
+(Sales \>\> Reports \>\> Commissions)
 
-(Sales \>\> Reports \>\> History) (Sales \>\> Reports \>\> Commissions)
+2. Select a report from the Reports list.
 
-1. Select a report from the Reports list.
+3. Choose New to open the report options window. Your selection in step 2 determines the report options window that appears.
 
-2. Choose New to open the report options window. Your selection in step 2
-    determines the report options window that appears.
+4. Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
 
-3. Name the option and enter information to define the option. The name you
-    choose for the option won’t appear on the report. The selections available
-    for defining report options vary, depending on the report type you’ve
-    selected.
-
-4. Enter range restrictions. The Ranges list shows the available options for
-    each report. The available ranges vary depending on the type of report.
+5. Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary depending on the type of report.
 
     > [!NOTE]
     > You can enter only one restriction for each restriction type. For instance, you can insert one customer ID restriction (AARONFIT0001 to ADVANCED0001) and one sales territory ID restriction (TERRITORY 3 to TERRITORY 6).
 
-1. Choose Insert to insert the range in the Restrictions List. To remove an
-    existing range from the list, select the range and choose Remove.
+6. Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-2. Choose Email Options to enter email options for the report option. Once the
-    email options are set up, you’ll be able to send the reports in an email
-    message by choosing Email. You’ll also be able to send this report option in
-    an email from any list view where the report option is displayed.
+7. Choose Email Options to enter email options for the report option. Once the email options are set up, you’ll be able to send the reports in an email message by choosing Email. You’ll also be able to send this report option in an email from any list view where the report option is displayed.
 
-3. Choose Destination to select a printing destination. Reports can be printed
-    to the screen, to the printer, to a file, or to any combination of these
-    options. If you select Ask Each Time, you can select printing options each
-    time you print this report option.
+8. Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
 
-4. To print the report option from the report options window, choose Print
-    before saving it. If you don’t want to print the option now, choose Save and
-    close the window. The report window will be redisplayed.
+9. To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
 #### Microsoft SQL Server® Reporting Services reports for Receivables Management
 
@@ -244,15 +201,13 @@ The following Reporting Services reports are available for Receivables Managemen
 
 #### To print a Receivables Management Reporting Services report:**
 
-1. In the navigation pane, choose the Sales button, and then choose the
-    Reporting Services Reports list.
+1. In the navigation pane, choose the Sales button, and then choose the Reporting Services Reports list.
 
 2. Mark the Receivables Management report that you want to print.
 
 3. In the Actions group, choose View to open the Report Viewer.
 
-4. In the Report Viewer, select the specifications for the report and choose
-    View Report.
+4. In the Report Viewer, select the specifications for the report and choose View Report.
 
 5. After viewing the report, select a format and print the report.
 
@@ -272,25 +227,13 @@ Select the type of information to reconcile using the Reconcile Receivables Amou
 
 - **Current Customer Information** If marked, the aging periods for each customer card are verified with the amounts recorded for the customer’s transactions. Summary information about outstanding amounts, unpaid finance charges, and current balances is verified. If the amounts don’t match, the system sets the balances as calculated. The Reconcile Customer Balances report displays only the customers whose balances were changed during the process.
 
-- **Outstanding Document Amounts** If marked, the transaction balances are verified with the amounts applied to them for each customer card in the range. If the calculated transaction balance does not equal the amount on the transaction, the system sets the balances as calculated. Each document
-that’s changed is printed on the Outstanding Documents Reconciliation report.
+- **Outstanding Document Amounts** If marked, the transaction balances are verified with the amounts applied to them for each customer card in the range. If the calculated transaction balance does not equal the amount on the transaction, the system sets the balances as calculated. Each document that’s changed is printed on the Outstanding Documents Reconciliation report.
 
-- **Batch Information** If marked, the system verifies the batch each
-transaction is assigned to, the number of transactions in the batch, and the
-batch total. If any of the system calculations don’t match the original
-amounts, the batches are reconciled. Also, any batches that were missing are
-added. Any batches that are changed or added are printed on the Batch
-Reconciliation Report.
+- **Batch Information** If marked, the system verifies the batch each transaction is assigned to, the number of transactions in the batch, and the batch total. If any of the system calculations don’t match the original amounts, the batches are reconciled. Also, any batches that were missing are added. Any batches that are changed or added are printed on the Batch Reconciliation Report.
 
--  **Fiscal Year** If marked, the summary information for the selected fiscal
-year is verified with the detail transaction information. If the amounts
-don’t match, the period summary amounts are adjusted based on the posted
-detail transactions.
+-  **Fiscal Year** If marked, the summary information for the selected fiscal year is verified with the detail transaction information. If the amounts don’t match, the period summary amounts are adjusted based on the posted detail transactions.
 
-- **Calendar Year** If marked, the summary information for the selected
-calendar year is verified with the detail transaction information. If the
-amounts don’t match, the period summary amounts are adjusted based on the
-posted detail transactions.
+- **Calendar Year** If marked, the summary information for the selected calendar year is verified with the detail transaction information. If the amounts don’t match, the period summary amounts are adjusted based on the posted detail transactions.
 
 ### Reconciling receivables amounts
 
@@ -301,52 +244,32 @@ Use the Reconcile Receivables Amounts window to compare the aging period amounts
 
  To reconcile receivables amounts:**
 
-1. Open the Reconcile Receivables Amounts window. (Sales \>\> Utilities \>\>
-    Reconcile)
+1. Open the Reconcile Receivables Amounts window. 
+(Sales \>\> Utilities \>\> Reconcile)
 
 ![A screenshot of a cell phone Description automatically generated](media/ce91a731d7706f5ec07a80e585ffce6a.jpg)
 
-A screenshot of a cell phone Description automatically generated
+2. Mark which information to reconcile. See *Types of information you can reconcile* for more information.
 
-A screenshot of a cell phone Description automatically generated
+3. Mark whether to reconcile the selected information, print a reconcile report, or both. You can print a reconcile report to verify your entries without reconciling.
 
-1. Mark which information to reconcile. See *Types of information you can
-    reconcile* for more information.
+*Age Finance Charges is only available when Current Customer Information is marked and Compound Finance Charge is not marked in the Receivables Management Setup window.*
 
-2. Mark whether to reconcile the selected information, print a reconcile
-    report, or both. You can print a reconcile report to verify your entries
-    without reconciling.
+4. Select a range of customer cards if you’re reconciling current customer information, outstanding document amounts, fiscal year, or calendar year.
 
-*Age Finance Charges is only available when Current Customer Information is
-marked and Compound Finance Charge is not marked in the Receivables
-Management Setup window.*
+5. Enter a reconcile date if it is a current customer balance. If you marked to reconcile fiscal-year or calendar-year information, enter a valid year to reconcile.
 
-1. Select a range of customer cards if you’re reconciling current customer
-    information, outstanding document amounts, fiscal year, or calendar year.
+6. Mark the account type to reconcile—all, open item, or balance forward if it is a current customer balance.
 
-2. Enter a reconcile date if it is a current customer balance. If you marked to
-    reconcile fiscal-year or calendar-year information, enter a valid year to
-    reconcile.
+    - If you mark All, both open item and balance forward accounts are reconciled.
 
-3. Mark the account type to reconcile—all, open item, or balance forward if it
-    is a current customer balance.
+    - If you mark Open Item, the system checks that the balances for each aging period are correct. If they’re incorrect, the aging period amounts are recalculated.
 
-    - If you mark All, both open item and balance forward accounts are
-        reconciled.
+    - If you mark Balance Forward accounts, the system calculates the age of each document in the current aging period and verifies the balance of the current and non-current periods.
 
-    - If you mark Open Item, the system checks that the balances for each
-        aging period are correct. If they’re incorrect, the aging period amounts
-        are recalculated.
+7. Select the statement cycles of the customer cards to include if it is a current customer balance. When you first open this window, all statement cycles are selected.
 
-    - If you mark Balance Forward accounts, the system calculates the age of
-        each document in the current aging period and verifies the balance of
-        the current and non-current periods.
-
-4. Select the statement cycles of the customer cards to include if it is a
-    current customer balance. When you first open this window, all statement
-    cycles are selected.
-
-5. Choose Process to start the reconcile process.
+8. Choose Process to start the reconcile process.
 
 ## Chapter 28: History removal
 
@@ -401,149 +324,95 @@ When you removal history, you can set up restrictions to limit the historical re
 
 ### Removing transaction history
 
- Use the Remove Receivables Transaction History window to remove transaction history. If you’re keeping transaction history, detailed information has been kept for all transactions that were posted and paid during the year. If you remove transaction history, complete information might not be available to print Historical Aged Trial Balances or reprint posting journals.
+Use the Remove Receivables Transaction History window to remove transaction history. If you’re keeping transaction history, detailed information has been kept for all transactions that were posted and paid during the year. If you remove transaction history, complete information might not be available to print Historical Aged Trial Balances or reprint posting journals.
 
 #### To remove transaction history:**
 
-1. Back up your company’s accounting data. See the System Administrator’s Guide
-    (Help \>\> Contents \>\> select System Administration) for more information
-    about making backups.
+1. Back up your company’s accounting data. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
-2. Open the Remove Receivables Transaction History window. (Sales \>\> Utilities \>\> Remove Transaction History)
+2. Open the Remove Receivables Transaction History window. 
+(Sales \>\> Utilities \>\> Remove Transaction History)
 
     ![A screenshot of a cell phone Description automatically generated](media/44dff2a477eb56b6647eea009ec07665.jpg)
 
+3. To limit the historical records to be removed, select a type of range and enter a range restriction.
 
-1. To limit the historical records to be removed, select a type of range and
-    enter a range restriction.
-
-2. Choose Insert; the range restriction is displayed in the Restrictions list.
-    You can select another range type and insert another restriction.
+4. Choose Insert; the range restriction is displayed in the Restrictions list. You can select another range type and insert another restriction.
 
     > [!NOTE]
-    > You can enter only one restriction for each restriction type. For example,
-if you enter a restriction specifying that history for customer records 100
-through 300 should be removed, you can’t enter another restriction for
-customer records 500 through 800. To remove multiple ranges of history, you
-must remove each range separately.*
+    > You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that history for customer records 100 through 300 should be removed, you can’t enter another restriction for customer records 500 through 800. To remove multiple ranges of history, you must remove each range separately.*
 
-1. Mark the type of records to remove—transactions, distributions, or both. If
-    you mark Distributions, any distributions for the transaction history
-    records you’re removing also are removed.
+5. Mark the type of records to remove—transactions, distributions, or both. If you mark Distributions, any distributions for the transaction history records you’re removing also are removed.
 
-2. Mark Print Report to print the Transaction History Report for the range of
-    records you specified after history has been removed.
+6. Mark Print Report to print the Transaction History Report for the range of records you specified after history has been removed.
 
-To print the Transaction History Report to verify the ranges you entered
-before you remove history, mark only Print Report and choose Process.
+To print the Transaction History Report to verify the ranges you entered before you remove history, mark only Print Report and choose Process.
 
-1. Choose Process to begin removing history.
+7. Choose Process to begin removing history.
 
-Once history has been removed, you can’t print the Transaction History
-Report for the ranges of information you removed.
+Once history has been removed, you can’t print the Transaction History Report for the ranges of information you removed.
 
 ### Removing distribution history
 
-Use the Remove Receivables Distribution History window to remove
-distribution history. If you’re keeping distribution history, a detailed
-record has been kept of how Receivables Management transactions have
-affected the balances of posting accounts. If you remove distribution
-history, you might not have all the information needed to reprint posting
-journals in the future.
+Use the Remove Receivables Distribution History window to remove distribution history. If you’re keeping distribution history, a detailed record has been kept of how Receivables Management transactions have affected the balances of posting accounts. If you remove distribution history, you might not have all the information needed to reprint posting journals in the future.
 
-If you’re using General Ledger, those history records aren’t affected when
-you remove distribution history in Receivables Management. This information
-is kept separately from transaction history for General Ledger, so you can
-keep distribution history for Receivables Management regardless of whether
-you use General Ledger.
+If you’re using General Ledger, those history records aren’t affected when you remove distribution history in Receivables Management. This information is kept separately from transaction history for General Ledger, so you can keep distribution history for Receivables Management regardless of whether you use General Ledger.
 
 #### To remove distribution history
 
-1. Back up your company’s accounting data. See the System Administrator’s Guide
-    (Help \>\> Contents \>\> select System Administration) for more information
-    about making backups.
+1. Back up your company’s accounting data. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
-2. Open the Remove Receivables Distribution History window. (Sales \>\>
-    Utilities \>\> Remove Distributions)
+2. Open the Remove Receivables Distribution History window. 
+(Sales \>\> Utilities \>\> Remove Distributions)
 
-3. To limit the historical records to be removed, select a type of range and
-    enter a range restriction.
+3. To limit the historical records to be removed, select a type of range and enter a range restriction.
 
-4. Choose Insert; the range restriction is displayed in the Restrictions list.
-    You can select another range type and insert another restriction.
+4. Choose Insert; the range restriction is displayed in the Restrictions list. You can select another range type and insert another restriction.
 
-*You can enter only one restriction for each restriction type. For example,
-if you enter a restriction specifying that history for customer records 100
-through 300 should be removed, you can’t enter another restriction for
-customer records 500 through 800. To remove multiple ranges of history, you
-must remove each range separately.*
+*You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that history for customer records 100 through 300 should be removed, you can’t enter another restriction for customer records 500 through 800. To remove multiple ranges of history, you must remove each range separately.*
 
-1. Mark Distributions to remove distributions.
+5. Mark Distributions to remove distributions.
 
-2. Mark Print Report to print the Transaction Distribution History Report for
-    the range of records you specified after history has been removed.
+6. Mark Print Report to print the Transaction Distribution History Report for the range of records you specified after history has been removed.
 
-To print the Transaction Distribution History Report to verify the ranges
-you entered before you remove history, mark only Print Report and choose
-Process.
+To print the Transaction Distribution History Report to verify the ranges you entered before you remove history, mark only Print Report and choose Process.
 
-1. Choose Process to begin removing history.
+7. Choose Process to begin removing history.
 
-Once history has been removed, you can’t print the Transaction Distribution
-History Report for the ranges of information you removed.
+Once history has been removed, you can’t print the Transaction Distribution History Report for the ranges of information you removed.
 
 ### Removing period history
 
-Use the Remove Receivables Calendar/Fiscal History window to remove period
-history. If you’re keeping calendar year history, customer sales,
-salesperson, and sales territory information has been recorded in a
-month-by-month format. If you’re keeping fiscal year history, the same
-information has been recorded according to the fiscal period format you
-specified using the Fiscal Period Setup window.
+Use the Remove Receivables Calendar/Fiscal History window to remove period history. If you’re keeping calendar year history, customer sales, salesperson, and sales territory information has been recorded in a month-by-month format. If you’re keeping fiscal year history, the same information has been recorded according to the fiscal period format you specified using the Fiscal Period Setup window.
 
-Comparative totals (year to date, last year, and life to date) aren’t
-removed when you remove calendar/fiscal history. These totals are kept
-independently; they are updated when you close the year. This window clears
-the balances displayed in the Customer Period Summary window.
+Comparative totals (year to date, last year, and life to date) aren’t removed when you remove calendar/fiscal history. These totals are kept independently; they are updated when you close the year. This window clears the balances displayed in the Customer Period Summary window.
 
  To remove period history:**
 
-1. Back up your company’s accounting data. See the System Administrator’s Guide
-    (Help \>\> Contents \>\> select System Administration) for more information
-    about making backups.
+1. Back up your company’s accounting data. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
-2. Open the Remove Receivables Calendar/Fiscal History window. (Sales \>\>
-    Utilities \>\> Remove Period History)
+2. Open the Remove Receivables Calendar/Fiscal History window. 
+(Sales \>\> Utilities \>\> Remove Period History)
 
-3. Mark whether to remove period history for customers, salespeople, or sales
-    territories.
+3. Mark whether to remove period history for customers, salespeople, or sales territories.
 
 4. Mark whether to remove calendar or fiscal year history, and enter the year.
 
-5. To limit the historical records to be removed, select a type of range and
-    enter a range restriction.
+5. To limit the historical records to be removed, select a type of range and enter a range restriction.
 
-6. Choose Insert; the range restriction is displayed in the Restrictions list.
-    You can select another range type and insert another restriction.
+6. Choose Insert; the range restriction is displayed in the Restrictions list. You can select another range type and insert another restriction.
 
-*You can enter only one restriction for each restriction type. For example,
-if you enter a restriction specifying that history for customer records 100
-through 300 should be removed, you can’t enter another restriction for
-customer records 500 through 800. To remove multiple ranges of history, you
-must remove each range separately.*
+*You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that history for customer records 100 through 300 should be removed, you can’t enter another restriction for customer records 500 through 800. To remove multiple ranges of history, you must remove each range separately.*
 
-1. Mark History to remove history.
+7. Mark History to remove history.
 
-2. Mark Print Report to print the History Removal Report for the range of
-    records you specified after history has been removed.
+8. Mark Print Report to print the History Removal Report for the range of records you specified after history has been removed.
 
-To print the History Removal Report to verify the ranges you entered before
-you remove history, mark only Print Report and choose Process.
+To print the History Removal Report to verify the ranges you entered before you remove history, mark only Print Report and choose Process.
 
-1. Choose Process to begin removing history.
+9. Choose Process to begin removing history.
 
-Once history has been removed, you can’t print the History Removal Report
-for the ranges of information you removed.
+Once history has been removed, you can’t print the History Removal Report for the ranges of information you removed.
 
 ### Removing journal history
 
