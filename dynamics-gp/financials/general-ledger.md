@@ -34,7 +34,7 @@ If you are using Analytical Accounting, you can set up dimension codes and accou
 
 This manual is designed to give you an understanding of how to use the features of General Ledger, and how it integrates with the Microsoft Dynamics GP system.
 
-To make best use of General Ledger, you should be familiar with systemwide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
+To make best use of General Ledger, you should be familiar with system-wide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
 
 Some features described in the documentation are optional and can be purchased through your Microsoft partner.
 
@@ -82,7 +82,7 @@ The following information is discussed:
 
 - *Chapter 11, “Revenue/Expense Deferrals setup,”* provides instructions for setting up Revenue/Expense Deferrals.
 
-### Chapter 1: General Ledger setup**
+### Chapter 1: General Ledger setup
 
 One way to set up General Ledger is to follow the setup routine provided. It guides you through the procedures you need to complete, in the order you need to complete them.
 
@@ -396,13 +396,15 @@ Use the Account Entry window to enter account aliases during transaction entry.
 
     - Choose Account Alias from the View menu in any window where you can enter an account.
 
-*The View menu and keyboard shortcut are available only when you’re entering account aliases in transaction entry windows.*
+    > [!NOTE]
+    > The View menu and keyboard shortcut are available only when you’re entering account aliases in transaction entry windows.
 
-![screenshot](media/glage018.jpg)
+    ![screenshot](media/glage018.jpg)
 
 2. Enter or select an alias. As soon as you enter or select an alias, the Account Entry window closes and the transaction entry window is displayed.
 
-*You also can choose an alias using the Accounts lookup window. Account aliases are displayed below the account they represent in the Accounts window. When you select an account and then press TAB, the lookup window closes and the account is displayed in the main window.*
+    > [!NOTE]
+    > You also can choose an alias using the Accounts lookup window. Account aliases are displayed below the account they represent in the Accounts window. When you select an account and then press TAB, the lookup window closes and the account is displayed in the main window.
 
 3. Continue entering transaction information.
 
@@ -416,7 +418,8 @@ For example, to be able to sort groups of accounts, such as Expense-Retail, you 
 
 Posting accounts are the financial accounts used to track assets, liabilities, revenue, expenses, and equity. Transactions posted to these accounts appear on financial reports. Examples of posting accounts include Cash, Cost of Goods Sold, and Accounts Receivable.
 
-*If you didn’t install the default chart of accounts when you created the company but you want to use the default chart of accounts now, you must delete the company and recreate it. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about creating companies.*
+> [!NOTE]
+> If you didn’t install the default chart of accounts when you created the company but you want to use the default chart of accounts now, you must delete the company and recreate it. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about creating companies.
 
 This information is divided into the following sections:
 
@@ -428,7 +431,8 @@ This information is divided into the following sections:
 
 Use the Account Maintenance window to set up a posting account. Before you add accounts to an existing chart of accounts, print a Posting Accounts List (Financial \>\> Reports \>\> Financial \>\> Account) to determine whether accounts should be added to fit the current needs of your business.
 
-*As you set up accounts, keep in mind that you can create a basic set of accounts for a department and use the Mass Modify Chart of Accounts window to copy the basic set of accounts to other departments. Refer to Chart of accounts modifications for more information.*
+> [!NOTE]
+> As you set up accounts, keep in mind that you can create a basic set of accounts for a department and use the Mass Modify Chart of Accounts window to copy the basic set of accounts to other departments. Refer to Chart of accounts modifications for more information.
 
 **To set up a posting account:**
 
@@ -769,7 +773,8 @@ You can distribute the retained earnings to a fixed allocation retained earnings
 
 Use the General Ledger Setup window to set up a retained earnings account. If you decide to close the profit and loss accounts to one retained earnings account, the net income or net loss amount are closed to a single posting account or fixed allocation account.
 
-*Select your retained earnings account before posting your beginning balances.*
+> [!NOTE]
+> Select your retained earnings account before posting your beginning balances.
 
 **To set up a single retained earnings account:**
 
@@ -811,16 +816,17 @@ Use the Account Maintenance window to set up a divisional retained earnings acco
 **To set up divisional retained earnings accounts:**
 
 1. Open the Account Maintenance window.
-(Financial \>\> Cards \>\> Financial \>\> Account)
+    (Financial \>\> Cards \>\> Financial \>\> Account)
 
 2. Set up a separate retained earnings account for each division. Each account must be identical, except for the segment your division will be based on.
 
-*You must set up a retained earnings account for each division in the company, otherwise the year-end close will not take place.*
+    > [!NOTE]
+    > You must set up a retained earnings account for each division in the company, otherwise the year-end close will not take place.
 
 3. Save your changes in the Account Maintenance window.
 
 4. Open the General Ledger Setup window.
-(Financial \>\> Setup \>\> Financial \>\> General Ledger)
+    (Financial \>\> Setup \>\> Financial \>\> General Ledger)
 
 5. Mark Close to Divisional Account Segments and enter or select the account segment you’ll use as the divisional segment. For example, you might enter the first segment, Department.
 
@@ -913,7 +919,8 @@ Use the Mass Modify Chart of Accounts window to copy, move, delete, inactivate, 
 
 All four account types—posting, unit, fixed allocation, and variable allocation—are included in the chart of accounts and can be modified using this window.
 
-*The changes made in this window permanently affect the chart of accounts, so you might want to experiment with the sample company before modifying your accounting data. Back up your company’s data directory before making changes to your company’s accounts, so you can restore the chart of accounts and related information if necessary. For more information about making backups, see the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
+> [!NOTE]
+> The changes made in this window permanently affect the chart of accounts, so you might want to experiment with the sample company before modifying your accounting data. Back up your company’s data directory before making changes to your company’s accounts, so you can restore the chart of accounts and related information if necessary. For more information about making backups, see the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).
 
 **To modify a range of accounts:**
 
@@ -972,7 +979,10 @@ When you’re setting up General Ledger for the first time, you can enter three 
 
 Use the Batch Entry window and the Transaction Entry window to enter beginning balances and history at the beginning of a fiscal year. The balance brought forward into the fiscal year serves as the beginning balance for the accounts.
 
-Be sure to mark the appropriate options in the General Ledger Setup window for maintaining account and transaction history if you plan to keep either type of historical information. You also must mark Allow Posting to History. For more information about setup options, see *Setting up default entries and preferences*. *Be sure that you’ve set up the previous year in the Fiscal Periods Setup window (Administration \>\> Setup \>\> Company \>\> Fiscal Periods) and marked it as a history year.*
+Be sure to mark the appropriate options in the General Ledger Setup window for maintaining account and transaction history if you plan to keep either type of historical information. You also must mark Allow Posting to History. For more information about setup options, see *Setting up default entries and preferences*. 
+
+> [!NOTE]
+> Be sure that you’ve set up the previous year in the Fiscal Periods Setup window (Administration \>\> Setup \>\> Company \>\> Fiscal Periods) and marked it as a history year.
 
 **To enter beginning balances for a new fiscal year:**
 
@@ -1095,7 +1105,8 @@ Audit trail codes automatically will be assigned to these transactions as they�
 
 Use the Account History window to enter summary amounts for each account. Even if you have historical information for each account for several historical years, you can only post information to the most recent historical year. To enter history for earlier years, you must enter summary account information in this window. You also can use the Account History window to change or delete existing account history information for posting and unit accounts.
 
-*Before entering account history for a particular year, you must set up the year and mark it as a historical year in the Fiscal Periods Setup window. For more information about fiscal period setup, refer to the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).*
+> [!NOTE]
+> Before entering account history for a particular year, you must set up the year and mark it as a historical year in the Fiscal Periods Setup window. For more information about fiscal period setup, refer to the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
 **To enter account history:**
 
@@ -1596,7 +1607,12 @@ You can use Microsoft Dynamics GP to create a new budget in Microsoft Excel. The
 
     ![screenshot](media/glage071.jpg)
 
-12. Select the years with the amount information to use. A separate Microsoft Excel worksheet will be created for each year you select *Worksheets will be in the same order you select them in the Actual Amounts Selection window, so if you want them to appear in the workbook in a specific order, be sure to select them in order.* When you have made your selections, choose Next to open the Account Types window.
+12. Select the years with the amount information to use. A separate Microsoft Excel worksheet will be created for each year you select.
+
+    > [!NOTE]
+    > Worksheets will be in the same order you select them in the Actual Amounts Selection window, so if you want them to appear in the workbook in a specific order, be sure to select them in order.
+
+    When you have made your selections, choose Next to open the Account Types window.
 
     ![screenshot](media/glage073.jpg)
 
@@ -1634,7 +1650,7 @@ When a worksheet is created using the budget wizard or when an existing budget i
 
 - Column C lists the beginning balance budget amounts.
 
-- Columns D and columns beyond list the period budget amounts. The amounts and formulas in these columns can be changed**.**
+- Columns D and columns beyond list the period budget amounts. The amounts and formulas in these columns can be changed.
 
 - The first column after all the period amounts will total all of the period budget amounts, in view-only format.
 
@@ -1966,7 +1982,8 @@ The import process creates a budget with periods corresponding to the period col
 
 You can import Microsoft Excel budget information into an existing Microsoft Dynamics GP budget, or into a newly created Microsoft Dynamics GP budget.
 
-*If you choose to import the Microsoft Excel budget worksheet into an existing* Microsoft Dynamics GP *budget, all of the amounts in the* Microsoft Dynamics GP *budget will be overwritten with the amounts from the worksheet.*
+> [!NOTE]
+> If you choose to import the Microsoft Excel budget worksheet into an existing* Microsoft Dynamics GP *budget, all of the amounts in the* Microsoft Dynamics GP *budget will be overwritten with the amounts from the worksheet.
 
 When you start the budget import process, a series of windows will open in which you can specify information about the budget before it is created. The windows are basically the same whether you choose to import into a new or existing budget.
 
@@ -2335,7 +2352,7 @@ This information is divided into the following sections:
 When you’re no longer using an account and want to transfer its balance to another account, you need to make a clearing transaction. With a clearing entry, the account balance will be transferred, the transaction activity will remain with the original account and the account remains active.
 
 > [!NOTE]
-> If you’re using Multicurrency Management, you cannot use clearing transactions.*
+> If you’re using Multicurrency Management, you cannot use clearing transactions.
 
 You also can use clearing transactions for accounts with balances that periodically are cleared to other accounts, such as departmental sales accounts, which are cleared to controlling sales accounts at the end of each accounting period. You’ll still have a record of the account’s activity, and you can reuse the account later for the next period.
 
@@ -2636,7 +2653,7 @@ Use the Deferral Profile Document Entry window to enter a deferral transaction d
 Use the Retroactive Deferral Transaction Entry window to create distribution deferrals to apply to previously posted transactions originating from the Sales or Purchasing series.
 
 > [!NOTE]
-> Retroactive deferral transactions should use the Profit and Loss deferral posting method. This allows the posted amount to be reversed from the Profit and Loss account it was originally posted to and transferred to a deferrals account. If you need to change the deferral posting method for a series, you must first post all unposted deferral transactions. For more information on changing the deferral posting method, see Setting up revenue/expense deferrals.*
+> Retroactive deferral transactions should use the Profit and Loss deferral posting method. This allows the posted amount to be reversed from the Profit and Loss account it was originally posted to and transferred to a deferrals account. If you need to change the deferral posting method for a series, you must first post all unposted deferral transactions. For more information on changing the deferral posting method, see Setting up revenue/expense deferrals.
 
 **To create a retroactive deferral transaction:**
 
@@ -2756,7 +2773,8 @@ The individual transaction posting method is useful if a transaction won’t be 
 
 Use batch posting to post one batch at a time from the Batch Entry window. With batch posting, you can post batches individually or in groups. You can use these methods in any combination to update your records in a timely and efficient manner. If you are using Workflow, the batch must be approved before you can post the batch. You also can post batches that don’t need approval.
 
-*We recommend that you back up company data before posting. If power fluctuates or another problem occurs, you can restore your data and begin the posting process again. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).*
+> [!NOTE]
+> We recommend that you back up company data before posting. If power fluctuates or another problem occurs, you can restore your data and begin the posting process again. For more information about making backups, refer to the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).
 
 **To post an individual batch:**
 
@@ -3148,7 +3166,8 @@ You also can use the currency list button in windows that support changing the c
 
 - History Detail Inquiry
 
-*The originating currency view isn’t available in the Summary Inquiry window  or History Summary Inquiry window because the amounts might be for multiple currencies.*
+> [!NOTE]
+> The originating currency view isn’t available in the Summary Inquiry window  or History Summary Inquiry window because the amounts might be for multiple currencies.
 
 The first time you open each of these windows after registering Multicurrency Management, all the transactions will be displayed in the originating currency. If you change the currency view, it will be the default view the next time you open that window.
 
@@ -3567,7 +3586,7 @@ Use the Account Rollup Inquiry Options window to define the segment ranges and t
 Use the Account Rollup Inquiry Calculated Column window to create a mathematical formula for an account rollup inquiry option that displays the  results of simple calculations. For example, if you create an inquiry option that displays the actual expenses of a department and the budgeted expenses, you can create a formula to calculate the difference between the actual amounts and the budget.
 
 > [!NOTE]
-> A calculated column must follow the columns it is performing its operations on. For example, assume you set up an inquiry option with column 1 as Actual, column 2 as Budget, column 3 as Calculated, and column 4 as Previous Year. In this case, the calculated column could not include the previous year amounts in its calculations because it is listed after the calculated column.*
+> A calculated column must follow the columns it is performing its operations on. For example, assume you set up an inquiry option with column 1 as Actual, column 2 as Budget, column 3 as Calculated, and column 4 as Previous Year. In this case, the calculated column could not include the previous year amounts in its calculations because it is listed after the calculated column.
 
 **To set up a calculated column:**
 
@@ -3659,7 +3678,8 @@ There are several ways to print financial statements:
 
 If you’re keeping history, you can use Microsoft Dynamics GP reporting capabilities to compare open- and historical-year figures. You also can print financial statements for any open-year period or historical-year period.
 
-*Until the year-end close is completed for General Ledger, you won’t get accurate financial statements for the new year. Beginning balances for the new year are not created until the year-end close process is completed. Therefore, the financial statements for the new year will reflect only current year activity until the year-end closing process is completed. This applies to both Advanced Financial Analysis and Management Reporter.*
+> [!NOTE]
+> Until the year-end close is completed for General Ledger, you won’t get accurate financial statements for the new year. Beginning balances for the new year are not created until the year-end close process is completed. Therefore, the financial statements for the new year will reflect only current year activity until the year-end closing process is completed. This applies to both Advanced Financial Analysis and Management Reporter.
 
 #### Types of financial statements
 
@@ -3875,7 +3895,7 @@ Quick Trial Balance Summary\*†
 Report options include specifications for sorting options and range restrictions for a particular report. In order to print several General Ledger reports, you must first create a report option. Each report can have several different options so that you can easily print the information you need. For example, you can create report options for the Trial Balance Report that show either detailed or summary information.
 
 > [!NOTE]
-> A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.*
+> A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.
 
 Use the Financial report options windows to create sorting, restriction, and printing options for the reports that have been included with General Ledger.
 
@@ -4129,7 +4149,7 @@ The Historical Inventory Trial Balance (HITB) table is used to reconcile Invento
 4. Enter the date range for the transactions to include in this reconciliation. Typically, reconciling to General Ledger is processed once a month, but transactions can be reconciled more or less often depending on the number of transactions in the module. The Inventory transactions with a transaction date that is on or between the date range will be included in the reconcile.
 
     > [!NOTE]
-    > If any dates in the range are prior to the date you installed a version of Microsoft Dynamics GP that includes HITB or updated your system using the Inventory Reset Tool, you won’t be able to reconcile Inventory to General Ledger.*
+    > If any dates in the range are prior to the date you installed a version of Microsoft Dynamics GP that includes HITB or updated your system using the Inventory Reset Tool, you won’t be able to reconcile Inventory to General Ledger.
 
 5. Select Inventory to reconcile with General Ledger.
 
