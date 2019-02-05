@@ -107,9 +107,10 @@ Commitments are amounts from purchase order documents that are committed to be p
 
 **To set up purchase order commitments:**
 
-1. Open the PO Enhancements Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Enhancements)
+1. Open the PO Enhancements Setup window. 
+(Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Enhancements)
 
-     ![](media/f0e50dc0243ede495c7adf249c68ffff.jpg)
+     ![](media/POEge009.jpg)
 
 2. Mark the Activate Commitments option. This option must be selected to use purchase order commitments.
 
@@ -122,7 +123,7 @@ Commitments are amounts from purchase order documents that are committed to be p
 
 3. Choose Commitment Setup—the PO Commitments Setup window will open.
 
-    ![](media/a36a531a2cbd88aa27a1941138868d03.jpg)
+    ![](media/POEge012.jpg)
 
 4. Select one of the following authorization types:
 
@@ -207,9 +208,10 @@ The following information applies to purchase order commitments:
 
 **To enter purchase orders with commitments:**
 
-1. Open the Purchase Order Entry window. (Transactions \>\> Purchasing \>\> Purchase Order Entry)
+1. Open the Purchase Order Entry window. 
+(Transactions \>\> Purchasing \>\> Purchase Order Entry)
 
-    ![](media/c92d43a820ff88374a5214a37c556796.jpg)
+    ![](media/POEge018.jpg)
 
 2. Process the purchase order. For information about processing purchase orders, please refer to the Purchase Order Processing documentation.
 
@@ -253,9 +255,10 @@ If only purchase order commitments is activated, the Purchase Order Enhancements
 
 **To authorize multiple purchase orders:**
 
-1. Open the Purchase Order Enhancements Entry window. (Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry)
+1. Open the Purchase Order Enhancements Entry window. 
+(Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry)
 
-    ![](media/2402595e5a94de9cf22197e7185ae038.jpg)
+    ![](media/POEge023.jpg)
 
 2. Select your purchase order restriction preference.
 
@@ -292,7 +295,8 @@ If both purchase order commitments and purchase order approvals are activated, t
 
 **To authorize and approve multiple purchase orders:**
 
-1. Open the Purchase Order Enhancements Entry window. (Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry) 
+1. Open the Purchase Order Enhancements Entry window. 
+(Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry) 
     > [!NOTE]
     > Only subtotal amounts within your approval authority will display in this window.
 
@@ -354,9 +358,10 @@ Use the Budget vs Actual and Committed Inquiry window to view the following info
 
 **To view budget vs. actual and committed information:**
 
-1. Open the Budget vs Actual & Committed Inquiry window. (Inquiry \>\> Purchasing \>\> Budget vs Actual & Committed)
+1. Open the Budget vs Actual & Committed Inquiry window. 
+(Inquiry \>\> Purchasing \>\> Budget vs Actual & Committed)
 
-    ![](media/6a9c12ff748bb25815c40a421ab59d0a.jpg)
+    ![](media/POEge030.jpg)
 
 2. Select to view information by budget or by year.
 
@@ -389,9 +394,10 @@ Use the Committed Detail Inquiry window to view committed detail information. No
 
 **To view committed detail information:**
 
-1. Open the Committed Detail Inquiry window. (Inquiry \>\> Purchasing \>\> Committed Detail)
+1. Open the Committed Detail Inquiry window. 
+(Inquiry \>\> Purchasing \>\> Committed Detail)
 
-    ![](media/b769ec337034b4d58d985a110ba7b8cf.jpg)
+    ![](media/POEge034.jpg)
 
     You also can open this window by clicking on the Committed heading link in the Budget vs Actual & Committed Inquiry window.
 
@@ -419,9 +425,10 @@ Occasionally, hardware failures, power surges, and other problems can damage or 
 
 1. Create a backup copy of your data.
 
-2. Open the PO Enhancements Maintenance window. (Microsoft Dynamics GP menu \>\> Maintenance \>\> Purchase Order Enhancements)
+2. Open the PO Enhancements Maintenance window. 
+(Microsoft Dynamics GP menu \>\> Maintenance \>\> Purchase Order Enhancements)
 
-    ![](media/40866ff98d14066a6094659f0809de3e.jpg)
+    ![](media/POEge036.jpg)
 
 3. Select Reconcile and then Process.
 
@@ -482,7 +489,8 @@ To use purchase order approvals, be sure that purchase order approval workflow i
 
 **To set up purchase order approvals:**
 
-1. Open the PO Enhancements Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Enhancements)
+1. Open the PO Enhancements Setup window. 
+(Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Enhancements)
 
 2. Mark Activate Approvals under purchase order approvals in the lower part of the window. Select this option to use the features of Purchase Order Approvals.
 
@@ -492,7 +500,7 @@ To use purchase order approvals, be sure that purchase order approval workflow i
 
     The window displays a list of all the users who have access to the company.
 
-    ![](media/7de343655a32acbfe90d7bf96c5085cf.jpg)
+    ![](media/POEge039.jpg)
 
 4. Select a user.
 
@@ -540,7 +548,8 @@ If you are using Encumbrance Management, you can specify how line items are encu
 
 **To enter and approve purchase orders:**
 
-1. Open the Purchase Order Entry window. (Transactions \>\> Purchasing \>\> Purchase Order Entry)
+1. Open the Purchase Order Entry window. 
+(Transactions \>\> Purchasing \>\> Purchase Order Entry)
 
 2. Create or select a purchase order. For information about creating purchase orders, please refer to the Purchase Order Processing documentation.
 
@@ -570,7 +579,8 @@ Use the Purchase Order Enhancements Entry window to view and approve multiple un
 
 **To approve multiple purchase orders:**
 
-1. Open the Purchase Order Enhancements Entry window. (Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry)
+1. Open the Purchase Order Enhancements Entry window. 
+(Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry)
 
 2. Select your purchase order restriction preference.
 
@@ -605,7 +615,8 @@ If both purchase order commitments and purchase order approvals are activated, t
 
 **To authorize and approve multiple purchase orders:**
 
-1. Open the Purchase Order Enhancements Entry window. (Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry)
+1. Open the Purchase Order Enhancements Entry window. 
+(Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry)
 
     - **PO Number**
         Purchase orders will be restricted, based on the specified purchase order number range.
@@ -640,9 +651,10 @@ Use the Edit Purchase Order Status window to modify purchase orders. The Approva
 
 **To edit the status of a purchase order:**
 
-1. Open the Edit Purchase Order Status window. (Transactions \>\> Purchasing \>\> Edit Purchase Orders)
+1. Open the Edit Purchase Order Status window. 
+(Transactions \>\> Purchasing \>\> Edit Purchase Orders)
 
-    ![](media/2129215837101440b68b8b139e432cd0.jpg)
+    ![](media/POEge045.jpg)
 
 2. Select a purchase order.
 
@@ -694,7 +706,8 @@ The Purchase Order Approvals Setup List Report details all the users you have se
 
 **To view or print the Purchase Order Approvals User Setup List:**
 
-1.  Open the PO Enhancement Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Enhancements)
+1.  Open the PO Enhancement Setup window. 
+(Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Enhancements)
 
 2.  Verify that the Activate Approvals check box is marked.
 
@@ -708,9 +721,10 @@ Use the Unapproved Purchase Order Inquiry window to view and report unapproved p
 
 **To view unapproved purchase orders:**
 
-1. Open the Unapproved Purchase Order Document Inquiry window. (Inquiry \>\> Purchasing \>\> Unapproved Purchase Order Document)
+1. Open the Unapproved Purchase Order Document Inquiry window. 
+(Inquiry \>\> Purchasing \>\> Unapproved Purchase Order Document)
 
-    ![](media/364245ddb56c0893ee11201ba8703560.jpg)
+    ![](media/POEge049.jpg)
 
 2. Select from the following purchase order filter preferences on the Restricted By drop-down menu.
 
@@ -735,9 +749,10 @@ You can view detailed purchase order information using the Purchase Order Inquir
 
 **To view purchase order detail information:**
 
-1. Open the Purchase Order Processing Document Inquiry window. (Inquiry \>\> Purchasing \>\> Purchase Order Documents)
+1. Open the Purchase Order Processing Document Inquiry window. 
+(Inquiry \>\> Purchasing \>\> Purchase Order Documents)
 
-    ![](media/dc29fd5659dace718c5d16a7c8d3903e.jpg)
+    ![](media/POEge051.jpg)
 
 2.  Select the applicable fields to complete your inquiry—refer to the Purchase Order Processing documentation for complete instructions.
 
@@ -758,9 +773,10 @@ You can obtain detailed item information for purchasing documents using the Purc
 
 **To view item information for purchasing documents:**
 
-1. Open the Purchase Order Processing Item Inquiry window. (Inquiry \>\> Purchasing \>\> Purchase Order Items)
+1. Open the Purchase Order Processing Item Inquiry window. 
+(Inquiry \>\> Purchasing \>\> Purchase Order Items)
 
-    ![](media/295acc1004ff721313498f3c0e51a855.jpg)
+    ![](media/POEge054.jpg)
 
 2. Select the applicable fields to complete your inquiry. For information on Purchase Order Inquiry, refer to the Purchase Order Processing documentation.
 
@@ -770,7 +786,7 @@ You can obtain detailed item information for purchasing documents using the Purc
 
 5. To view more detailed information, highlight a record and click on the PO Number heading link—the Purchase Order Inquiry Zoom window will open. The Approvals Status field displays the purchase order approval status.
 
-    ![](media/8e5ae6ce7d88c0f843b715512f2a0375.jpg)
+    ![](media/POEge056.jpg)
 
 6.  When you are finished viewing the information, choose OK.
 
@@ -783,9 +799,10 @@ Use the Print Purchasing Documents window to print purchasing documents.
 
 **To print purchasing documents:**
 
-1.  Open the Print Purchasing Documents window. (Transactions \>\> Purchasing \>\> Print Purchasing Documents)
+1.  Open the Print Purchasing Documents window. 
+(Transactions \>\> Purchasing \>\> Print Purchasing Documents)
 
-    ![](media/e809d9550ce2b440e3529498a92698e7.jpg)
+    ![](media/POEge059.jpg)
 
     Select your printing preferences. For more information on printing preferences, refer to the Purchase Order Processing documentation.
 

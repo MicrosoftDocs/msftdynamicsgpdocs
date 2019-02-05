@@ -580,7 +580,7 @@ The Purchase Orders Preview window uses tabs to organize the information relatin
 
     Use the sales tab to view information about the sales document that is highlighted in the tree view. You can’t change the information in this view.
 
-    ![screenshot](media/942a339b22a3f3ac22d6ef0bd007b57c.jpg)
+    ![screenshot](media/SO2a339b22a3f3ac22d6ef0bd007b57c.jpg)
 
 ### Changing a vendor
 
@@ -681,7 +681,7 @@ After you have viewed and modified a pending purchase order, you must generate t
 
 3. Choose Purchase to open the Purchase Orders Preview window. Only sales documents that contain items with a Needs Purchase commitment status appear in the Purchase Orders Preview window.
 
-    ![screenshot](media/SOage140.jpg)
+    ![screenshot](media/SOage140.png)
 
 4. Review the information and make any changes to the pending purchase order information.
 
@@ -705,7 +705,7 @@ After you have viewed and modified pending purchase orders, you must generate th
 1. Open the Sales Document Range Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Range Inquiry)
 
-    ![screenshot](media/SOage1425.jpg)
+    ![screenshot](media/SOage142.jpg)
 
 2. Choose an existing Inquiry ID or create a new Inquiry ID to select a range of sales documents. For more information about creating an inquiry ID, see [Creating inquiries for sales documents](#creating-inquiries-for-sales-documents).
 
