@@ -3188,7 +3188,7 @@ Use the Asset Year End window to process the year-end routine.
 1.  Open the Fixed Assets General Ledger Posting window.
 >   (Financial \>\> Routines \>\> Fixed Assets \>\> GL Posting)
 
-![A screenshot of a social media post Description automatically generated](media/FAage157.jpg)
+![A screenshot of a social media post Description automatically generated](media/FAage105.jpg)
 
 2.  Accept or enter a batch ID.
 
