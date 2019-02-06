@@ -104,7 +104,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 
 >   The following diagram shows how information flows through Fixed Asset Management.
 
-![A screenshot of a cell phone Description automatically generated](media/9a506cb68f654edcf36e63bb628cba71.gif)
+![A screenshot of a cell phone Description automatically generated](media/FAage008.gif)
 
 #### Before you set up Fixed Asset Management
 
@@ -289,7 +289,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Class Setup window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Class)
 
-![A screenshot of a cell phone Description automatically generated](media/d9feda5af12a073faf0976a28ca673a8.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage011.jpg)
 
 2.  Enter a class ID and description. The description will appear on reports and inquiries, and in maintenance windows.
 
@@ -428,7 +428,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Book Class Setup window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Book Class)
 
-![A screenshot of a cell phone Description automatically generated](media/925f61c8dfc0e7e178fb7aac60cd4e9f.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage014.jpg)
 
 2.  Select a book ID and a class ID.
 
@@ -525,7 +525,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Fixed Assets Company Setup window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Company)
 
-![A screenshot of a cell phone Description automatically generated](media/b68fcc0412160339745d781f8981dbba.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage016.jpg)
 
 2.  Select the book that will be used for corporate depreciation and that General Ledger transactions come from.
 
@@ -559,13 +559,13 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 
 13.  Choose the Accounts button to open the Default Accounts window.
 
-![A screenshot of a cell phone Description automatically generated](media/2b95e5bfb8fe6d213b5c8ad18b49daab.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage018.jpg)
 
 14.  Select an Account Group to copy the accounts assigned to the group into the Company Setup record. You also can enter each account individually or change specific accounts after you select an Account Group. For a description of each account type, refer to *Creating an account group*. Choose OK.
 
 15.  Choose the User Defined button to open the Expand User Fields window where you can define up to 15 user-defined fields.
 
-![A screenshot of a cell phone Description automatically generated](media/331c7082f715a7840f6bed36eb7da0b1.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage020.jpg)
 
 16.  You can define default values for the user-defined fields in the User Fields List Setup window. Refer to *User data option* for more information.
 
@@ -644,7 +644,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Account Group Setup window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Account Group)
 
-![A screenshot of a cell phone Description automatically generated](media/1d83ece514798eafe4e1313357ee528b.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage022.jpg)
 
 2.  Enter an account group ID and description to identify a group of accounts.
 
@@ -679,7 +679,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Fixed Assets Purchasing Posting Accounts Setup window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Purchasing Posting Accounts)
 
-![A screenshot of a cell phone Description automatically generated](media/3a2de110db3ebce0b3102b7b6b902ac2.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage025.jpg)
 
 2.  Choose Assigned to view only accounts already entered in this window. Choose All to view all the accounts in your chart of accounts.
 
@@ -702,7 +702,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Insurance Setup window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Insurance)
 
-![A screenshot of a cell phone Description automatically generated](media/405750b2bdbdd21c1ca193c5eb7c6474.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage027.jpg)
 
 2.  Enter an insurance class ID and description.
 
@@ -723,7 +723,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Lease Company Setup window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Lease Company)
 
-![A screenshot of a cell phone Description automatically generated](media/ba09554b01bb371dba4a6e5e190b1047.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage029.jpg)
 
 2.  Enter the name of the lease company.
 
@@ -742,7 +742,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Location Setup window.
 >   (Financial \>\> Fixed Assets \>\> Location)
 
-![A screenshot of a cell phone Description automatically generated](media/a80cdc86c8abd01bc5aac2e212a47292.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage031.jpg)
 
 2.  Enter the location ID—for property tax purposes—to be associated with the location you’re defining.
 
@@ -761,7 +761,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Physical Location Setup window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Physical Location)
 
-![A screenshot of a cell phone Description automatically generated](media/59cae67a8ab4b3806ac6f73e53a10c15.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage033.jpg)
 
 2.  Enter a physical location ID, and a description.
 
@@ -780,7 +780,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Retirement Setup window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Retirement)
 
-![A screenshot of a cell phone Description automatically generated](media/5b576b34598f7aeddabbd35ce4229330.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage035.jpg)
 
 2.  Enter a code to describe a retirement.
 
@@ -797,7 +797,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Structure Setup window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Structure)
 
-![A screenshot of a cell phone Description automatically generated](media/6563aaba509e5fedb94298efa394e4e4.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage037.jpg)
 
 2.  Enter a structure ID and a corresponding description.
 
@@ -833,7 +833,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Fixed Assets User Preferences window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> User Preferences)
 
-![A screenshot of a cell phone Description automatically generated](media/5270b1a8f5be005cd0502e763abccc8f.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage039.jpg)
 
 2.  Verify or change the paths.
 
@@ -848,7 +848,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 1.  Open the Expand User Fields window.
 >   (Financial \>\> Setup \>\> Fixed Assets \>\> Company \>\> User Fields expansion button)
 
-![A screenshot of a cell phone Description automatically generated](media/929e2ffdb5a74613ba0bc26a8d909f53.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage041.jpg)
 
 2.  Enter user-defined field names and select a format for the fields to use.
 
@@ -856,7 +856,7 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 
 4.  Choose the expansion button to open the User Fields List Setup window and enter data to be used as default field information.
 
-![A screenshot of a cell phone Description automatically generated](media/3128c634a2d9af0bda3aa1e98a4531ce.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage043.jpg)
 
 5.  If the format is a date format, you can mark the Valid Date option to require a valid date entry in the Asset User Data window.
 
@@ -915,7 +915,7 @@ Chapter 4: Fixed Asset Management cards
 1.  Open the Asset General Information window.
 >   (Financial \>\> Cards \>\> Fixed Assets \>\> General)
 
-![A screenshot of a cell phone Description automatically generated](media/b819bd2bb83169d24af06fbcf0a0de57.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage046.jpg)
 
 2.  Enter or accept an asset ID, asset suffix, and a description of the asset.
 
@@ -941,7 +941,7 @@ Chapter 4: Fixed Asset Management cards
 
 >   You can enter the acquisition cost in the Asset Purchase window or the Asset  General Information window. If you enter the acquisition cost in the Asset  General Information window, information will be transferred to the Asset Purchase window. You can change the information in the Asset Purchase window.
 
-![A screenshot of a cell phone Description automatically generated](media/d64aabc21e9da7443732fabef4da4bb7.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage049.jpg)
 
 >   The acquisition cost displayed in the Asset General Information window is the sum of all the acquisition costs in the Asset Purchase window.
 
@@ -982,7 +982,7 @@ Chapter 4: Fixed Asset Management cards
 1.  Open the Asset Account window.
 >   (Financial \>\> Cards \>\> Fixed Assets \>\> Account)
 
-![A screenshot of a cell phone Description automatically generated](media/81ecee6c1ec95dd027c52ee7ac0551f5.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage051.jpg)
 
 2.  Enter or select an asset ID and suffix.
 
@@ -1021,7 +1021,7 @@ Chapter 4: Fixed Asset Management cards
 1.  Open the Asset Book window.
 >   (Financial \>\> Cards \>\> Fixed Assets \>\> Book)
 
-![A screenshot of a cell phone Description automatically generated](media/2200e480968331ec02d102d730cb9b76.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage053.jpg)
 
 2.  Enter or select an asset ID and suffix.
 
@@ -1116,7 +1116,7 @@ You can add investment tax credit information in the TEFRA, ITC Taken, ITC Allow
 
 3.  Choose ITC/Cost to open the Asset Book ITC window.
 
-![A screenshot of a cell phone Description automatically generated](media/52934f666290968de406741394243d9f.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage055.jpg)
 
 4.  You can change the original cost basis of the asset, if necessary.
 
@@ -1151,7 +1151,7 @@ You can add investment tax credit information in the TEFRA, ITC Taken, ITC Allow
 1.  Open the Asset Insurance window.
 >   (Financial \>\> Cards \>\> Fixed Assets \>\> Insurance)
 
-![A screenshot of a cell phone Description automatically generated](media/f7068e7458505ca1915240df8cd948bd.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage057.jpg)
 
 2.  Enter or select an asset ID and suffix.
 
@@ -1180,7 +1180,7 @@ Use the Asset Lease window to create a lease record for any assets that are leas
 1.  Open the Asset Lease window.
 >   (Financial \>\> Cards \>\> Fixed Assets \>\> Lease)
 
-![A screenshot of a cell phone Description automatically generated](media/335d4987edeb7c62773be9c1fb318b0d.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage059.jpg)
 
 2.  Enter or select an asset ID and suffix.
 
@@ -1203,7 +1203,7 @@ For more information, refer to *Setting up user-defined field values*.
 1.  Open the Asset User Data window.
 >   (Financial \>\> Cards \>\> Fixed Assets \>\> User Data)
 
-![A screenshot of a cell phone Description automatically generated](media/5e2bff74447eb0db7d8d165c8d44cc78.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage061.jpg)
 
 2.  Enter or select an asset ID and suffix.
 
@@ -1317,7 +1317,7 @@ Chapter 6: Integration
 
 3.  Choose Purchase to open the Fixed Assets Purchasing Transactions window. The Purchase button is available only if there are transactions in the Fixed Assets Purchasing Transactions window.
 
-![A screenshot of a cell phone Description automatically generated](media/ce0516bd40389c46ec8789cf2eae1f49.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage063.jpg)
 
 4.  Mark the M box for each transaction to assign that transaction to the asset.
     Mark the P box for the primary transaction. Information from the primary transaction will be displayed in the Asset General Information window and the Asset Purchase window. Information from other selected transactions will be displayed in the Asset Purchase window only.
@@ -1450,7 +1450,7 @@ Chapter 6: Integration
 
 4.  Mark the Capital Item option and choose the Capital Item expansion button to open the FA PO Additional Information window.
 
-![A screenshot of a cell phone Description automatically generated](media/ccee4930e53ac6f9ec671353dfa3c166.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage065.jpg)
 
 5.  Enter any information to be displayed in the Asset General Information window.
 
@@ -1673,7 +1673,7 @@ Chapter 7: Asset import
 1.  Open the Asset Import/Export window.
 >   (Financial \>\> Utilities \>\> Fixed Assets \>\> Asset Import/Export)
 
-![A screenshot of a cell phone Description automatically generated](media/d0c6f9f3748a716f1b40966bf77a06b1.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage067.jpg)
 
 2.  Mark Import and select All Asset Info.
 
@@ -2077,7 +2077,7 @@ Chapter 8: Asset groups
 1.  Open the Select Assets window.
 >   (Financial \>\>Transactions \>\> Fixed Assets \>\> Select Assets)
 
-![A screenshot of a cell phone Description automatically generated](media/bfdb6e6f79d9b169f72e37ec3a9537ee.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage070.jpg)
 
 2.  To create and build a new group, choose New Group, enter a name to describe the asset group and choose OK.
 
@@ -2085,7 +2085,7 @@ Chapter 8: Asset groups
 
 3.  Select the group to build from the Current Group list and choose Search. The Asset Group Search window will open.
 
-![A screenshot of a cell phone Description automatically generated](media/bddc74e2d441875bdbb841397db4632b.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage072.jpg)
 
 4.  Select a field name and value, and then enter or select a specific field.
 
@@ -2131,7 +2131,7 @@ Chapter 8: Asset groups
 
 3.  Choose Import Group to open the Import Group window.
 
-![A screenshot of a cell phone Description automatically generated](media/eb11f6ee2080f1932cac7b041c4e6bb8.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage074.jpg)
 
 4.  Enter or locate the name of the file to import.
 
@@ -2215,7 +2215,7 @@ Chapter 9: Asset maintenance
 
 4.  If you change the Class ID in the Asset General Information window, the Reset Asset Class ID window will be displayed when you choose Save.
 
-![A screenshot of a cell phone Description automatically generated](media/fdf80d19a2a537a33e88a98526488d6c.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage076.jpg)
 
 5.  To update depreciation information in the books that the asset is associated with, mark the Propagate option, select what type of update to perform, and choose OK.
 
@@ -2288,7 +2288,7 @@ Chapter 9: Asset maintenance
 1.  Open the Fixed Assets Mass Change window.
 >   (Financial \>\> Transactions \>\> Fixed Assets \>\> Mass Change)
 
-![A screenshot of a cell phone Description automatically generated](media/5ad1bbc90ab556275d321b78853f2e9e.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage078.jpg)
 
 2.  Select an asset group ID and choose a tab—General, Account, Book, User.
 
@@ -2365,7 +2365,7 @@ Chapter 9: Asset maintenance
 1.  Open the Transfer Maintenance window.
 >   (Financial \>\> Transactions \>\> Fixed Assets \>\> Transfer)
 
-![A screenshot of a social media post Description automatically generated](media/e69adcfb3ad58150543d740adf8322a1.jpg)
+![A screenshot of a social media post Description automatically generated](media/FAage080.jpg)
 
 2.  Enter or select an asset ID. Only active assets—assets that are not retired—can be transferred.
 
@@ -2423,7 +2423,7 @@ Chapter 9: Asset maintenance
 1.  Open the Fixed Assets Mass Transfer window.
 >   (Financial \>\> Transactions \>\> Fixed Assets \>\> Mass Transfer)
 
-![A screenshot of a social media post Description automatically generated](media/206f00667ababf9b704c651e95c89385.jpg)
+![A screenshot of a social media post Description automatically generated](media/FAage082.jpg)
 
 2.  Select an asset group ID.
 
@@ -2530,7 +2530,7 @@ Chapter 9: Asset maintenance
 1.  Open the Fixed Assets Intercompany Transfer window.
 >   (Financial \>\> Transactions \>\> Fixed Assets \>\> Intercompany Transfer)
 
-![A screenshot of a cell phone Description automatically generated](media/9bf4342eddd1c0d2fe9204846fda0e92.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage084.jpg)
 
 2.  Enter or select a company ID that the asset is being transferred to.
 
@@ -2682,7 +2682,7 @@ Chapter 9: Asset maintenance
 1.  Open the Retirement Maintenance window.
 >   (Financial \>\> Transactions \>\> Fixed Assets \>\> Retire)
 
-![A screenshot of a cell phone Description automatically generated](media/b2db952a7218a96e908dccf09b4d67e6.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage086.jpg)
 
 2.  Enter or select an asset ID and suffix. Only active assets can be retired.
 
@@ -2719,7 +2719,7 @@ Chapter 9: Asset maintenance
 1.  Open the Retirement Maintenance window.
 >   (Financial \>\> Transactions \>\> Fixed Assets \>\> Retire)
 
-![A screenshot of a cell phone Description automatically generated](media/b2db952a7218a96e908dccf09b4d67e6.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage086.jpg)
 
 2.  Enter or select an asset ID and suffix. Only active assets can be retired.
 
@@ -2742,7 +2742,7 @@ Chapter 9: Asset maintenance
 1.  Open the Retirement Undo window.
 >   (Financial \>\> Transactions \>\> Fixed Assets \>\> Retire Undo)
 
-![A screenshot of a cell phone Description automatically generated](media/ff38ba2eb64e109c8d84c01b419507e9.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage088.jpg)
 
 2.  Enter or select an asset ID and suffix. Only asset records that were retired during the current fiscal year can be reactivated.
 
@@ -2815,7 +2815,7 @@ Chapter 9: Asset maintenance
 1.  Open the Fixed Assets Mass Retirement window.
 >   (Financial \>\> Transactions \>\> Fixed Assets \>\> Mass Retire)
 
-![A screenshot of a cell phone Description automatically generated](media/e9da160473ecfcdd5f53745840b35a74.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage090.jpg)
 
 2.  Select an asset group ID.
 
@@ -2870,7 +2870,7 @@ Chapter 9: Asset maintenance
 1.  Open the Depreciate Asset window.
 >   (Financial \>\> Routines \>\> Fixed Assets \>\> Depreciate One Asset)
 
-![A screenshot of a cell phone Description automatically generated](media/2f24ad1b3a17299e1b5671348915f6f5.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage093.jpg)
 
 2.  Enter or select the asset ID and suffix of the asset to be depreciated.
 
@@ -2891,7 +2891,7 @@ Chapter 9: Asset maintenance
 1.  Open the Depreciation Process Information window.
 >   (Financial \>\> Routines \>\> Fixed Assets \>\> Depreciate)
 
-![A screenshot of a cell phone Description automatically generated](media/9e58f558653df4e0b62bb55c117054f0.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage095.jpg)
 
 2.  To depreciate an asset group, unmark Depreciate all assets and select an asset group ID. To depreciate all active assets—assets that are not fully depreciated— in the selected books, mark Depreciate all assets.
 
@@ -3000,7 +3000,7 @@ Chapter 9: Asset maintenance
 1.  Open the Depreciation Projection window.
 >   (Microsoft Dynamics GP menu Routines \>\> Fixed Assets \>\> Projection)
 
-![A screenshot of a cell phone Description automatically generated](media/ab1688b308ca9e6c00b0c80bddad65e0.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage097.jpg)
 
 2.  To project depreciation for an asset group, unmark Project all assets and select an asset group ID. Otherwise, leave Project all assets marked to project depreciation for all assets.
 
@@ -3084,7 +3084,7 @@ Use the Asset Year End window to process the year-end routine.
 1.  Open the Asset Year End window.
 >   (Financial \>\> Routines \>\> Fixed Assets \>\> Year End)
 
-![A screenshot of a cell phone Description automatically generated](media/c4f63110328c6a2ceee974c60c33b6da.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage099.jpg)
 
 2.  Select each book to be closed and choose Insert.
 
@@ -3101,7 +3101,7 @@ Use the Asset Year End window to process the year-end routine.
 1.  Open the Asset Financial Detail Summarize window.
 >   (Financial \>\> Routines \>\> Fixed Assets \>\> Summarize Financial)
 
-![A screenshot of a cell phone Description automatically generated](media/18fafef9939e659be56a19f304574877.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage101.jpg)
 
 2.  Enter the beginning and ending period ranges of records to be summarized.
 
@@ -3116,7 +3116,7 @@ Use the Asset Year End window to process the year-end routine.
 1.  Open the Asset Purge window.
 >   (Financial \>\> Routines \>\> Fixed Assets \>\> Purge)
 
-![A screenshot of a cell phone Description automatically generated](media/754acad0fbe53e56805ee9fed0b7f34d.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage103.jpg)
 
 2.  Enter the Purge Prior to Date. All information for inactive asset records with a retirement date or a delete date before this date will be deleted.
 
@@ -3151,7 +3151,7 @@ Use the Asset Year End window to process the year-end routine.
 1.  Open the Fixed Assets General Ledger Posting window.
 >   (Financial \>\> Routines \>\> Fixed Assets \>\> GL Posting)
 
-![A screenshot of a social media post Description automatically generated](media/165bf954276ccb5963c35dfb4f5c189a.jpg)
+![A screenshot of a social media post Description automatically generated](media/FAage105.jpg)
 
 2.  Accept or enter a batch ID.
 
@@ -3188,7 +3188,7 @@ Use the Asset Year End window to process the year-end routine.
 1.  Open the Fixed Assets General Ledger Posting window.
 >   (Financial \>\> Routines \>\> Fixed Assets \>\> GL Posting)
 
-![A screenshot of a social media post Description automatically generated](media/165bf954276ccb5963c35dfb4f5c189a.jpg)
+![A screenshot of a social media post Description automatically generated](media/FAage157.jpg)
 
 2.  Accept or enter a batch ID.
 
@@ -3233,7 +3233,7 @@ You might have to rebuild the integrated batches. If there are no batch IDs disp
 1.  Open the Fixed Assets Reconcile window.
 >   (Financial \>\> Utilities \>\> Fixed Assets \>\> Reconcile)
 
-![A screenshot of a cell phone Description automatically generated](media/8146a6a0e42548ea452e717b78b05f81.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage108.jpg)
 
 2.  Mark Create Batch Headers and choose Reconcile.
 
@@ -3337,7 +3337,7 @@ Use the Missing Physical Inventory and Misplaced Physical Inventory windows to v
 1.  Open the Physical Inventory window.
 >   (Financial \>\> Routines \>\> Fixed Assets \>\> Physical Inventory)
 
-![A screenshot of a social media post Description automatically generated](media/656309992364cbd8cbf41295a0d1ea0c.jpg)
+![A screenshot of a social media post Description automatically generated](media/FAage110.jpg)
 
 2.  Select All Locations or enter or select a specific physical location ID.
 
@@ -3435,7 +3435,7 @@ If you’ve already used the General Ledger integration process to post monetary
 1.  Open the Asset Delete Utility window.
 >   (Financial \>\> Utilities \>\> Fixed Assets \>\> Delete)
 
-![A screenshot of a cell phone Description automatically generated](media/3436f0bba96f592e6e00998d90138b21.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage112.jpg)
 
 2.  Enter an asset ID to delete.
 
@@ -3452,7 +3452,7 @@ If you’ve already used the General Ledger integration process to post monetary
 1.  Open the FA Purchasing Trxs Purge window.
 >   (Financial \>\> Utilities \>\> Fixed Assets \>\> Purge Purchasing Transactions)
 
-![A screenshot of a cell phone Description automatically generated](media/f0d83e4dc84accbe2575c41d786061be.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage112.jpg)
 
 2.  Enter or select control numbers to specify the range of data to delete.
 
@@ -4114,7 +4114,7 @@ If you’ve already used the General Ledger integration process to post monetary
 1.  Open the Asset Inquiry window.
 >   (Financial \>\> Inquiry \>\> Fixed Assets \>\> General)
 
-![A screenshot of a cell phone Description automatically generated](media/3a66fe4e229e5ee73f7b0c2b9f9b648b.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage116.jpg)
 
 2.  Enter or select an asset ID. Select one of the following options from the Go To button:
 
@@ -4143,13 +4143,13 @@ If you’ve already used the General Ledger integration process to post monetary
 1.  Open the Asset Book Inquiry window.
 >   (Financial \>\> Inquiry \>\> Fixed Assets \>\> Book)
 
-![A screenshot of a cell phone Description automatically generated](media/8572f29c8e16c05c22943c96d3783b59.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage118.jpg)
 
 2.  Enter or select an asset ID, suffix, and book ID.
 
 3.  Choose the ITC/Cost button to open the Asset Book ITC Inquiry window.
 
-![A screenshot of a cell phone Description automatically generated](media/320c60cd99f471ce882b8ddfcf356260.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage120.jpg)
 
 4.  Choose OK to close the Asset Book ITC Inquiry window.
 
@@ -4164,7 +4164,7 @@ If you’ve already used the General Ledger integration process to post monetary
 1.  Open the Book Compare Inquiry window.
 >   (Financial \>\> Inquiry \>\> Fixed Assets \>\> Book Compare)
 
-![A screenshot of a cell phone Description automatically generated](media/7e914fd63b1df729bb7a6b95ba0d84d1.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage122.jpg)
 
 2.  Enter or select an asset ID and suffix.
 
@@ -4205,7 +4205,7 @@ If you’ve already used the General Ledger integration process to post monetary
 
 5.  Select a transaction and click the Amount link to open the Financial Detail Display window.
 
-![A screenshot of a cell phone Description automatically generated](media/64821a8bc52bafabc7a5a786c836055f.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage124.jpg)
 
 6.  Choose OK to close the Financial Detail Display window.
 
@@ -4224,7 +4224,7 @@ If you’ve already used the General Ledger integration process to post monetary
 
 3.  Select a line and click the Event link to open the Retirement Display window.
 
-![A screenshot of a cell phone Description automatically generated](media/0c102faa3134445c7e5bf58a553c34ad.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage126.jpg)
 
 4.  Choose OK to close the window.
 
@@ -4237,7 +4237,7 @@ If you’ve already used the General Ledger integration process to post monetary
 1.  Open the Error Log Inquiry window:
 >   (Financial \>\> Inquiry \>\> Fixed Assets \>\> Error Log)
 
-![A screenshot of a social media post Description automatically generated](media/8cbf3a868c089264aff8f6e18d9985ea.jpg)
+![A screenshot of a social media post Description automatically generated](media/FAage128.jpg)
 
 2.  Enter the date to view the messages for.
 
@@ -4258,7 +4258,7 @@ If you’ve already used the General Ledger integration process to post monetary
 
 3.  Select a line and click the Event link to open the Transfer Display window.
 
-![A screenshot of a computer Description automatically generated](media/8c6ba733494e3634200f9fe78de4d147.jpg)
+![A screenshot of a computer Description automatically generated](media/FAage130.jpg)
 
 4.  If the asset was transferred more than once, or if there were partial transfers, more than one line might be displayed in the Transfer Inquiry window.
 
@@ -4271,7 +4271,7 @@ If you’ve already used the General Ledger integration process to post monetary
 1.  Open the Projections Inquiry window.
 >   (Financial \>\> Inquiry \>\> Fixed Assets \>\> Projections)
 
-![A screenshot of a cell phone Description automatically generated](media/3a85f5a83d6ab820bfaa257559ffaf1b.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage132.jpg)
 
 2.  Enter or select an asset ID and suffix and select a book ID.
 
@@ -4290,7 +4290,7 @@ If you’ve already used the General Ledger integration process to post monetary
 1.  Open the Fixed Assets Purchasing Transactions Inquiry window.
 >   (Financial \>\> Inquiry \>\> Fixed Assets \>\> Purchasing Transactions)
 
-![A screenshot of a cell phone Description automatically generated](media/903bacba284286994ac3f6cb32959714.jpg)
+![A screenshot of a cell phone Description automatically generated](media/FAage134.jpg)
 
 2.  Select a transaction.
 
@@ -4311,7 +4311,7 @@ If you’ve already used the General Ledger integration process to post monetary
 1.  Open the Fixed Assets Batch Inquiry window.
 >   (Financial \>\> Inquiry \>\> Fixed Assets \>\> Batches)
 
-![A screenshot of a social media post Description automatically generated](media/b83875b0ef233fc083ea4ee8292cd32f.jpg)
+![A screenshot of a social media post Description automatically generated](media/FAage136.jpg)
 
 2.  Select a batch ID and then select a row in the scrolling window.
 
