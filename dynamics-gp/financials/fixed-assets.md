@@ -1,7 +1,7 @@
 ---
 title: "Fixed Asset Management in Dynamics GP"
 description: "Fixed Asset Management in Dynamics GP"
-keywords: "purchase order"
+keywords: "financials"
 author: tnistler
 manager: edupont
 
