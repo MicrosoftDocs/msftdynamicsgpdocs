@@ -118,6 +118,7 @@
 ### [Canadian Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
 ### [Payroll Extensions](payroll/PayrollExtensions.md)
+### [U.S. Payroll](payroll/payrollUS.md)
 ### [U.S. Year-End](payroll/us-year-end.md)
 ### [W-2 Source](payroll/W-2-statement.md)
 ### [Payroll Tax](payroll/US19JanTaxR1.md)
