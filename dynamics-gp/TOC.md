@@ -83,10 +83,12 @@
 ## Financials
 ### [Bank Reconciliation] (financials/BankReconciliation.md)
 ### [Inter Company Processing] (financials/IntercompanyProcessing.md)
+### [Payment Document Management] (financials/PaymentDocumentManagement.md)
 
 <!--- distribution -->
 ## Distribution
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
+### [Concur Expense] (distribution/ConcurExpense.md)
 
 <!--- payroll -->
 ## Payroll 
