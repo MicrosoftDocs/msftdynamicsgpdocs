@@ -88,6 +88,7 @@
 <!--- distribution -->
 ## Distribution
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
+### [Concur Expense] (distribution/ConcurExpense.md)
 
 <!--- payroll -->
 ## Payroll 
