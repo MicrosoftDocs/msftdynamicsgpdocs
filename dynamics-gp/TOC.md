@@ -83,6 +83,7 @@
 ## Financials
 ### [Bank Reconciliation] (financials/BankReconciliation.md)
 ### [Inter Company Processing] (financials/IntercompanyProcessing.md)
+### [Payment Document Management] (financials/PaymentDocumentManagement.md)
 
 <!--- distribution -->
 ## Distribution
