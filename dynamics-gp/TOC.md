@@ -92,7 +92,8 @@
 ### [Concur Expense] (distribution/ConcurExpense.md)
 
 <!--- payroll -->
-## Payroll 
+## Payroll
+### [Advanced Payroll] (payroll/AdvancedPayroll.md)
 ### [Canadian Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
 ### [U.S. Payroll](payroll/PayrollUS.md)
