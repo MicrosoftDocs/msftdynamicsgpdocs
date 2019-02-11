@@ -114,7 +114,8 @@
 ### [Glossary](distribution/glossary.md)
 
 <!--- payroll -->
-## Payroll 
+## Payroll
+### [Advanced Payroll](AdvancedPayroll.md) 
 ### [Canadian Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
 ### [Payroll Extensions](payroll/PayrollExtensions.md)
