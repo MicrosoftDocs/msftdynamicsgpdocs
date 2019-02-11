@@ -76,8 +76,7 @@ Whether you’re setting up your system for the first time or upgrading an exist
 
 **Before you set up Bank Reconciliation**
 
-Before you begin setting up Bank Reconciliation, be sure to set up the following
-information:
+Before you begin setting up Bank Reconciliation, be sure to set up the following information:
 
 - Companies
 
@@ -104,11 +103,7 @@ information:
 - Fixed allocation accounts
 
 > [!TIP]
-> To print multicurrency information on your posting journals and reports, mark Include Multicurrency Info in the Posting Setup window.
-
-See the System Setup instructions (Help \>\> Contents \>\> select Setting Up the
-System) or the General Ledger documentation (Help \>\> Printable Manuals) for
-more information about completing these setup tasks.
+> To print multicurrency information on your posting journals and reports, mark Include Multicurrency Info in the Posting Setup window. See the System Setup instructions (Help \>\> Contents \>\> select Setting Up the System) or the General Ledger documentation (Help \>\> Printable Manuals) for more information about completing these setup tasks.
 
 ### Chapter 2: Setup and default entries
 
@@ -168,13 +163,14 @@ Use the Bank Reconciliation Setup window to set up your default entries in Bank 
 
 **To set up Bank Reconciliation default entries:**
 
-1. Open the Bank Reconciliation Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Financial \>\> Bank Reconciliation)
+1. Open the Bank Reconciliation Setup window. 
+(Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Financial \>\> Bank Reconciliation)
 
     ![A screenshot ](media/61e0e22293445af8ffa8e629d6f9fbb8.jpg)
 
 2. Enter the next number for bank transactions, receipts, transfers, and reconcile adjustments.
 
-3. Enter the transaction type descriptions and codes. See *Default entries overview* on page 11 for more information.
+3. Enter the transaction type descriptions and codes. See *Default entries overview* for more information.
 
 4. Mark whether to keep history.
 
@@ -194,7 +190,9 @@ If you have Multicurrency Management registered, you can use Bank Reconciliation
 
 This information is divided into the following sections:
 
-- *Checkbook setup requirements* • *Credit card setup*
+- *Checkbook setup requirements* • 
+
+- *Credit card setup*
 
 - *Checkbooks and cash accounts*
 
@@ -218,7 +216,7 @@ You can use checkbooks throughout your system to track cash transactions. Becaus
 
 - Post all your transactions entered in other modules and reconcile your checkbooks before registering Bank Reconciliation.
 
-- Create new checkbook IDs and make existing checkbooks inactive. The new checkbooks you create will replace the old checkbooks in any future transactions. You won’t have to post transactions entered in other modules before you begin to use Bank Reconciliation. See *Setting up a new checkbook* on page 16 and *Inactivating a checkbook* on page 19 for more information.
+- Create new checkbook IDs and make existing checkbooks inactive. The new checkbooks you create will replace the old checkbooks in any future transactions. You won’t have to post transactions entered in other modules before you begin to use Bank Reconciliation. See *Setting up a new checkbook* and *Inactivating a checkbook* for more information.
 
 #### Credit card setup
 
@@ -256,7 +254,8 @@ Use the Checkbook Maintenance window to set up checkbooks. You can add checkbook
 
 **To set up a new checkbook:**
 
-1. Open the Checkbook Maintenance window. (Cards \>\> Financial \>\> Checkbook)
+1. Open the Checkbook Maintenance window. 
+(Cards \>\> Financial \>\> Checkbook)
 
      ![A screenshot ](media/5240f5f2d9b9d1cfe4029e8cb1ca7b44.jpg)
 
@@ -297,7 +296,8 @@ As soon as you register Bank Reconciliation, any transactions assigned to a chec
 
 2. Reconcile your existing checkbooks in your old reconciliation system.
 
-3. Verify the checkbook information using the Checkbook Maintenance window. (Cards \>\> Financial \>\> Checkbook)
+3. Verify the checkbook information using the Checkbook Maintenance window. 
+(Cards \>\> Financial \>\> Checkbook)
 
     If you are using reporting ledgers, the amount shown in the Cash Account Balance field is based on the ledgers selected in the General Ledger Setup window in the Account Balance for Subsidary Windows list. For more information on using reporting ledgers, see the General Ledger documentation.
 
@@ -305,7 +305,8 @@ As soon as you register Bank Reconciliation, any transactions assigned to a chec
 
 5. Enter new registration keys that include access to Bank Reconciliation.
 
-6. Open the Posting Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Posting \>\> Posting)
+6. Open the Posting Setup window. 
+(Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Posting \>\> Posting)
 
     If you have transactions that were entered and posted in other modules before you registered Bank Reconciliation, those transactions might have already updated General Ledger. If so, be sure you don’t post those transactions to General Ledger because duplicate entries will result.
 
@@ -337,7 +338,8 @@ Use the Checkbook Maintenance window to make a checkbook inactive, which prevent
 
 **To inactive a checkbook:**
 
-1. Open the Checkbook Maintenance window. (Cards \>\> Financial \>\> Checkbook)
+1. Open the Checkbook Maintenance window. 
+(Cards \>\> Financial \>\> Checkbook)
 
 2. Enter or select a checkbook ID.
 
@@ -365,19 +367,20 @@ If a checkbook has become obsolete and you’re no longer planning to use it, yo
 
 2. Use the Checkbook Reports window to print an Undeposited Receipts Report, so you can verify that there are no undeposited receipts for the checkbook you’re deleting. See *Chapter 12, “Reports,”* for more information about creating report options and printing reports.
 
-3. Enter or select the checkbook ID in the Reconcile Bank Statements window to ensure that all transactions have been reconciled for the checkbook. See *Reconciling a bank statement with a checkbook* on page 53 for more information.
+3. Enter or select the checkbook ID in the Reconcile Bank Statements window to ensure that all transactions have been reconciled for the checkbook. See *Reconciling a bank statement with a checkbook* for more information.
 
 4. Using the Checkbook Maintenance window, verify that the checkbook’s current balance and last reconciled balance are zero.
 
-    - If the current balance is not zero, you must enter an increase or decrease adjustment transaction and reconcile the transaction. See *Entering a check, withdrawal, or adjustment transaction* on page 29 for more information about entering adjustment transactions.
+    - If the current balance is not zero, you must enter an increase or decrease adjustment transaction and reconcile the transaction. See *Entering a check, withdrawal, or adjustment transaction* for more information about entering adjustment transactions.
 
-    - If the last reconciled balance is not zero, you must reconcile your checkbook with a bank statement ending balance of zero using the Reconcile Bank Statements window. See *Reconciling a bank statement with a checkbook* on page 53 for more information.
+    - If the last reconciled balance is not zero, you must reconcile your checkbook with a bank statement ending balance of zero using the Reconcile Bank Statements window. See *Reconciling a bank statement with a checkbook* for more information.
 
 5. Using the Credit Card Setup window, remove the checkbook from all bank cards and check cards. See the System Setup instructions (Help \>\> Contents \>\> Setting Up the System) for more information about setting up credit cards.
 
 6. Verify that the checkbook is not assigned to any batches or transactions in any other modules, unless the transaction is in the module’s history.
 
-7. Open the Remove Bank History window. (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Financial \>\> Remove Bank History)
+7. Open the Remove Bank History window. 
+(Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Financial \>\> Remove Bank History)
 
     ![A screenshot](media/4a85e0616726ca6beca8226bc44cf3fb.jpg)
 
@@ -388,9 +391,12 @@ If a checkbook has become obsolete and you’re no longer planning to use it, yo
     > [!WARNING]
     > Once you remove history, you can’t print any historical information for this checkbook.
 
-10. Open the Checkbook Maintenance window. (Cards \>\> Financial \>\> Checkbook) 11. Enter or select the checkbook ID to delete.
+10. Open the Checkbook Maintenance window. 
+(Cards \>\> Financial \>\> Checkbook) 
 
-11. Choose Delete.
+11. Enter or select the checkbook ID to delete.
+
+12. Choose Delete.
 
 ## Part 2: Transactions
 
@@ -430,7 +436,6 @@ Whenever you enter a transaction in another module that uses a checkbook, Bank R
 
 > [!NOTE]
 > If you enter a transaction in another module and then enter it again in Bank Reconciliation, the checkbook and Cash account will be updated twice and your accounts won’t reconcile properly.
-
 
 #### Voided transactions that affect Bank Reconciliation
 
@@ -553,7 +558,7 @@ Use the Bank Transaction Entry window to enter checks, withdrawals, and increase
 
 Use withdrawal transactions to record cash withdrawals from a checkbook. For example, you can record an insurance payment that is automatically deducted from your checkbook on a monthly basis as a withdrawal transaction. Withdrawal transactions decrease the checkbook balance when you post.
 
-For adjustments, use the Bank Transaction Entry window to record debit amounts— other than deposits—that increase the checkbook balance when they’re posted (increase adjustment transactions). Use decrease adjustment transactions to record amounts that decrease the checkbook balance when they’re posted, such as bank service charges. See *Entering a miscellaneous bank adjustment transaction* on page 55 for information about entering an adjusting amount after reconciling.
+For adjustments, use the Bank Transaction Entry window to record debit amounts— other than deposits—that increase the checkbook balance when they’re posted (increase adjustment transactions). Use decrease adjustment transactions to record amounts that decrease the checkbook balance when they’re posted, such as bank service charges. See *Entering a miscellaneous bank adjustment transaction* for information about entering an adjusting amount after reconciling.
 
 If you’re using other modules such as Payables Management to track certain kinds of checks, you should enter those check transactions in those modules, not in Bank Reconciliation. Entering them in both places duplicates the credit from the Cash account and creates an extra check in Bank Reconciliation.
 
@@ -563,7 +568,8 @@ To transfer funds from one checkbook to another, use the Bank Transfer Entry win
 
 **To enter a check, withdrawal, or adjustment transaction:**
 
-1. Open the Bank Transaction Entry window. (Transactions \>\> Financial \>\> Bank Transactions)
+1. Open the Bank Transaction Entry window. 
+(Transactions \>\> Financial \>\> Bank Transactions)
 
     ![A screenshot](media/607b3fa85fd76b9ac2606d582187191a.jpg)
 
@@ -599,7 +605,8 @@ You can create individual checks to make a one-time payment when you don’t wan
 
 **To enter a miscellaneous check:**
 
-1. Open the Miscellaneous Check window. (Transactions \>\> Financial \>\> Miscellaneous Check)
+1. Open the Miscellaneous Check window. 
+(Transactions \>\> Financial \>\> Miscellaneous Check)
 
     ![A screenshot](media/503c9a4c89bc0b970b34e3099ae5ab0e.jpg)
 
@@ -621,7 +628,7 @@ You can create individual checks to make a one-time payment when you don’t wan
 
     If you type a debit and a credit on the same line, the most recent entry will be kept and the previous entry will be reset to zero.
 
-9. Click Print Check, and then click Post to complete the procedure. You can post the check without printing it, but you cannot print a check after it has been posted. You can void the check later, if necessary. See *Voiding a bank transaction* on page 33 for more information.
+9. Click Print Check, and then click Post to complete the procedure. You can post the check without printing it, but you cannot print a check after it has been posted. You can void the check later, if necessary. See *Voiding a bank transaction* for more information.
 
 10. Close the window. Depending on your selections in the Posting Setup window, some posting journals might be printed. Refer to the System Setup Guide for information about setting up posting options (Help \>\> Printable Manuals \>\> System \>\> System Setup).
 
@@ -659,7 +666,8 @@ Use the Bank Transaction Entry window to void transactions that were entered and
 
 **To void a bank transaction:**
 
-1. Open the Bank Transaction Entry window. (Transactions \>\> Financial \>\> Bank Transactions)
+1. Open the Bank Transaction Entry window. 
+(Transactions \>\> Financial \>\> Bank Transactions)
 
 2. Select Void Transaction.
 
@@ -699,7 +707,8 @@ When you post a receipt, the Cash account in General Ledger is updated by the am
 
 **To enter a miscellaneous receipt:**
 
-1. Open the Bank Transaction Entry window. (Transactions \>\> Financial \>\> Bank Transactions)
+1. Open the Bank Transaction Entry window. 
+(Transactions \>\> Financial \>\> Bank Transactions)
 
 2. Select Enter Receipt and a type of Cash, Check, or Credit Card.
 
@@ -733,7 +742,7 @@ You can void receipts using the Bank Transaction Entry window. When you void a r
 
 - If you are keeping history, voided receipts are stored for auditing purposes.
 
-    See *Differences between voiding and clearing receipts* on page 37 for more information about the differences between clearing and voiding a receipt.
+    See *Differences between voiding and clearing receipts* for more information about the differences between clearing and voiding a receipt.
 
     If you enter a receipt in another module, you should use that originating module when voiding the receipt to keep accurate accounting records throughout the system. Bank Reconciliation is then updated.
 
@@ -760,7 +769,8 @@ Use the Bank Transaction Entry window to void a receipt in Bank Reconciliation. 
 
 **To void a receipt:**
 
-1. Open the Bank Transaction Entry window. (Transactions \>\> Financial \>\> Bank Transactions)
+1. Open the Bank Transaction Entry window. 
+(Transactions \>\> Financial \>\> Bank Transactions)
 
 2. Select Void Receipt.
 
@@ -897,7 +907,7 @@ You can enter the following deposit types in Bank Reconciliation:
 
     If you’re using Multicurrency Management, however, and you have a realized gain or loss due to an exchange rate calculation, the Realized Gain or Loss account is updated.
 
-    If you need to enter a transaction to update your General Ledger account and your checkbook balance, enter an increase adjustment in the Bank Transaction Entry window instead of entering a deposit without receipts. See *Entering a check, withdrawal, or adjustment transaction* on page 29 for more information.
+    If you need to enter a transaction to update your General Ledger account and your checkbook balance, enter an increase adjustment in the Bank Transaction Entry window instead of entering a deposit without receipts. See *Entering a check, withdrawal, or adjustment transaction* for more information.
 
     You can save deposits to post later; however, you can save only one deposit with receipts or deposit to clear receipts transaction for each checkbook at a time.
 
@@ -913,7 +923,8 @@ If you’re doing business in Australia or New Zealand and you’re required to 
 
 **To enter a deposit with receipts:**
 
-1. Open the Bank Deposit Entry window. (Transactions \>\> Financial \>\> Bank Deposits)
+1. Open the Bank Deposit Entry window. 
+(Transactions \>\> Financial \>\> Bank Deposits)
 
     ![A screenshot](media/e849b400114879af850b1fa0d0d3475c.jpg)
 
@@ -983,11 +994,12 @@ For example, suppose you entered a deposit to clear receipts because you didn’
 
 When you enter a deposit without receipts transaction, the total amount of the deposit appears in the Checks Total Amounts field in the Deposit Totals window. To enter individual totals for check, credit card, currency, and coin amounts, choose the Deposit Amount expansion button in the Bank Deposit Entry window to open the Deposit Totals window.
 
-When you post a deposit without receipts transaction, the checkbook balance is updated by the deposit amount. If you need to enter a transaction to update General Ledger, enter an adjustment, instead of a deposit without receipts, in the Bank Transaction Entry window to ensure that the checkbook balance isn’t updated twice. See *Entering a check, withdrawal, or adjustment transaction* on page 29 for more information.
+When you post a deposit without receipts transaction, the checkbook balance is updated by the deposit amount. If you need to enter a transaction to update General Ledger, enter an adjustment, instead of a deposit without receipts, in the Bank Transaction Entry window to ensure that the checkbook balance isn’t updated twice. See *Entering a check, withdrawal, or adjustment transaction* for more information.
 
 **To enter a deposit without receipts:**
 
-1. Open the Bank Deposit Entry window. (Transactions \>\> Financial \>\> Bank Deposits)
+1. Open the Bank Deposit Entry window. 
+(Transactions \>\> Financial \>\> Bank Deposits)
 
     Select Enter/Edit and the Deposit without Receipts type. Enter the deposit date.
 
@@ -1013,7 +1025,8 @@ Use a deposit to clear receipts transaction to remove the receipts from the syst
 
 **To clear a receipt from a deposit:**
 
-1. Open the Bank Deposit Entry window. (Transactions \>\> Financial \>\> Bank Deposits)
+1. Open the Bank Deposit Entry window. 
+(Transactions \>\> Financial \>\> Bank Deposits)
 
     Select Enter/Edit and the Deposit to Clear Receipts type.
 
@@ -1057,7 +1070,8 @@ The following conditions must exist before a you can void a deposit:
 
 **To void a deposit:**
 
-1. Open the Bank Deposit Entry window. (Transactions \>\> Financial \>\> Bank Deposits)
+1. Open the Bank Deposit Entry window. 
+(Transactions \>\> Financial \>\> Bank Deposits)
 
 2. Select Void.
 
@@ -1073,7 +1087,8 @@ Use the Bank Deposit Entry window to delete deposits. You can delete a deposit t
 
 **To delete a deposit:**
 
-1. Open the Bank Deposit Entry window. (Transactions \>\> Financial \>\> Bank Deposits)
+1. Open the Bank Deposit Entry window. 
+(Transactions \>\> Financial \>\> Bank Deposits)
 
 2. Enter or select the checkbook ID and deposit number to delete.
 
@@ -1097,7 +1112,8 @@ To transfer funds, both checkbooks must be assigned the same currency, or one ch
 
 **To transfer funds between checkbooks:**
 
-1. Open the Bank Transfer Entry window. (Transactions \>\> Financial \>\> Bank Transfers)
+1. Open the Bank Transfer Entry window. 
+(Transactions \>\> Financial \>\> Bank Transfers)
 
     ![A screenshot](media/370e903392c878fd60a95aa79d507793.jpg)
 
@@ -1139,7 +1155,8 @@ If you use duplicate transfer numbers, be sure to select the correct transaction
 
 **To void a bank account transfer:**
 
-1. Open the Bank Transfer Entry window. (Transactions \>\> Financial \>\> Bank Transfers)
+1. Open the Bank Transfer Entry window. 
+(Transactions \>\> Financial \>\> Bank Transfers)
 
     Select Void Transfer.
 
@@ -1186,7 +1203,8 @@ Use the Reconcile Bank Statements window to reconcile the cash-related transacti
 
 **To reconcile a bank statement with a checkbook:**
 
-1. Open the Reconcile Bank Statements window. (Transactions \>\> Financial \>\> Reconcile Bank Statement)
+1. Open the Reconcile Bank Statements window. 
+(Transactions \>\> Financial \>\> Reconcile Bank Statement)
 
     ![A screenshot](media/0002920b9afe9b744c41579a04467921.jpg)
 
@@ -1204,7 +1222,7 @@ Use the Reconcile Bank Statements window to reconcile the cash-related transacti
 
     If you’re editing saved reconciliation information, the transactions you marked previously remain marked. The totals for the payments and deposits in the cleared transaction section of the Select Bank Transactions window include only payments and deposits. The totals do not include adjustment transactions.
 
-6. Mark the C column for the transactions that have been cleared by the bank. To enter cleared differences—transactions that have a cleared amount different from the amount entered in the checkbook—see *Entering cleared differences* on page 56.
+6. Mark the C column for the transactions that have been cleared by the bank. To enter cleared differences—transactions that have a cleared amount different from the amount entered in the checkbook—see *Entering cleared differences*.
 
     > [!TIP]
     > Use the spacebar to mark the check box. The arrows on the sides of the scrolling window are visual indicators that show which line you’re currently focused on.
@@ -1216,23 +1234,19 @@ Use the Reconcile Bank Statements window to reconcile the cash-related transacti
     > [!NOTE]
     > The Cleared Transactions section of this window includes only payments and deposits. Adjustments are not included in the totals.
 
-    To enter adjusting amounts, choose Adjustments to open the Reconcile Bank Adjustments window. See *Entering a miscellaneous bank adjustment transaction* on page 55 for more information. Choose OK to close the window when you finish.
+    To enter adjusting amounts, choose Adjustments to open the Reconcile Bank Adjustments window. See *Entering a miscellaneous bank adjustment transaction* for more information. Choose OK to close the window when you finish.
 
 7. Choose File \>\> Print and select the reports to print.
 
     The following table describes the reports that you can print:
 
-    | **Report**                 | **Displays**             |
-    |----------------------------|--------------------------|
-    | Reconciliation Edit List   | Checkbook and bank statement balance information  |
-    | Bank Adjustments Edit List | Adjustment transactions entered using the Reconcile Bank   |
-    | Marked Transactions Report | Transactions that have been marked as cleared  |
-    | Outstanding Transactions   | Transactions that haven’t cleared the bank, and that fall between the bank statement ending date and the cutoff date entered in the Reconcile Bank Statements window|
-
-    Adjustments window
-
-    Report
-
+    | **Report**                       | **Displays**             |
+    |----------------------------------|--------------------------|
+    | Reconciliation Edit List         | Checkbook and bank statement balance information  |
+    | Bank Adjustments Edit List       | Adjustment transactions entered using the Reconcile Bank  Adjustments window  |
+    | Marked Transactions Report       | Transactions that have been marked as cleared  |
+    | Outstanding Transactions Report  | Transactions that haven’t cleared the bank, and that fall between the bank statement ending date and the cutoff date entered in the Reconcile Bank Statements window|
+   
     If you’re using Multicurrency Management, you can print the Bank Adjustments Edit List with both originating and functional information if you marked Include Multicurrency Info in the Posting Setup window.
 
 8. Choose Reconcile to reconcile the checkbook. The difference between the adjusted checkbook balance and the adjusted bank balance must be zero before the system reconciles the checkbook with the bank statement. The adjustment transactions update Bank Reconciliation, General Ledger, and the checkbook balance. All cleared transactions and any adjusting entries are transferred to history, if you’re keeping history.
@@ -1245,7 +1259,8 @@ Use the Reconcile Bank Adjustments window to enter adjustment transactions—suc
 
 **To enter a miscellaneous bank adjustment transaction:**
 
-1. Open the Reconcile Bank Statements window. (Transactions \>\> Financial \>\> Reconcile Bank Statement)
+1. Open the Reconcile Bank Statements window. 
+(Transactions \>\> Financial \>\> Reconcile Bank Statement)
 
 2. Enter or select a checkbook ID, and enter bank statement information.
 
@@ -1275,7 +1290,8 @@ Sometimes a check might clear the bank for an amount that’s different than the
 
 **To enter cleared differences:**
 
-1. Open the Reconcile Bank Statements window. (Transactions \>\> Financial \>\> Reconcile Bank Statement)
+1. Open the Reconcile Bank Statements window. 
+(Transactions \>\> Financial \>\> Reconcile Bank Statement)
 
 2. Enter or select a checkbook ID, and enter bank statement information.
 
@@ -1291,11 +1307,11 @@ Sometimes a check might clear the bank for an amount that’s different than the
 
 7. Choose Adjustments to open the Reconcile Bank Adjustments window.
 
-8. Enter an adjustment for the amount of the difference. Both the checkbook and the Cash account are updated when you reconcile. As you enter account information and adjusting entries, the reconcile difference is subtracted from the net adjustment. See *Entering a miscellaneous bank adjustment transaction* on page 55 for more information.
+8. Enter an adjustment for the amount of the difference. Both the checkbook and the Cash account are updated when you reconcile. As you enter account information and adjusting entries, the reconcile difference is subtracted from the net adjustment. See *Entering a miscellaneous bank adjustment transaction* for more information.
 
     Choose OK to close the window and return to the Select Bank Transactions window.
 
-When you finish, the difference should be zero. If the difference isn’t zero, you should complete the following tasks:
+ When you finish, the difference should be zero. If the difference isn’t zero, you should complete the following tasks:
 
 - Verify that the correct transactions are marked.
 
@@ -1375,7 +1391,8 @@ Use the Checkbook Register Inquiry window to find out more information about tra
 
 **To view checkbook information:**
 
-1. Open the Checkbook Register Inquiry window. (Inquiry \>\> Financial \>\> Checkbook Register)
+1. Open the Checkbook Register Inquiry window. 
+(Inquiry \>\> Financial \>\> Checkbook Register)
 
     ![A screenshot](media/15f918b63ffbb752eae9a78a16049019.jpg)
 
@@ -1385,19 +1402,17 @@ Use the Checkbook Register Inquiry window to find out more information about tra
 
     The window that opens depends on what type of transaction you selected from the scrolling window, as is described in the following table:
 
-    | **Transaction type**                   | **Window**                           |
-    |----------------------------------------|--------------------------------------|
-    | Deposit                                | Bank Deposit Entry Zoom              |
-    | Bank Transaction                       | Bank Transaction Entry Zoom          |
-    | Transfer                               | Bank Transfer Entry Zoom             |
-    | Payables payments                      | Payables Payments Zoom               |
-    | Receivables return with check amount   | Receivables Transaction Inquiry Zoom |
-    | NSF checks received                    | Cash Receipts Inquiry Zoom           |
-    | Check payment on return in Invoicing   | Invoice Inquiry                      |
-    | Check payment on return in Sales Order | Sales Transaction Inquiry            |
-    | Check payment in Payroll               | Payroll Check Inquiry                |
-
-    Processing
+    | **Transaction type**                             | **Window**                           |
+    |--------------------------------------------------|--------------------------------------|
+    | Deposit                                          | Bank Deposit Entry Zoom              |
+    | Bank Transaction                                 | Bank Transaction Entry Zoom          |
+    | Transfer                                         | Bank Transfer Entry Zoom             |
+    | Payables payments                                | Payables Payments Zoom               |
+    | Receivables return with check amount             | Receivables Transaction Inquiry Zoom |
+    | NSF checks received                              | Cash Receipts Inquiry Zoom           |
+    | Check payment on return in Invoicing             | Invoice Inquiry                      |
+    | Check payment on return in Sales Order Processing| Sales Transaction Inquiry            |
+    | Check payment in Payroll                         | Payroll Check Inquiry                |
 
 4. To print the Checkbook Register Report for the selected checkbook, choose File \>\> Print.
 
@@ -1411,7 +1426,8 @@ If you are using reporting ledgers, the amount shown in the Current Cash Account
 
 **To view historical checkbook balances:**
 
-1. Open the Checkbook Balance Inquiry window. (Inquiry \>\> Financial \>\> Checkbook Balance)
+1. Open the Checkbook Balance Inquiry window. 
+(Inquiry \>\> Financial \>\> Checkbook Balance)
 
     ![A screenshot ](media/04e3a48f50b9f1885c9209654b50fff2.jpg)
 
@@ -1451,7 +1467,7 @@ Reports information is divided into the following sections:
 
 #### Bank Reconciliation report summary
 
-You can print several types of reports using Bank Reconciliation. Some reports automatically are printed when you complete certain procedures; for example, posting journals can automatically be printed when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Specifying a Bank Reconciliation report option* on page 66.
+You can print several types of reports using Bank Reconciliation. Some reports automatically are printed when you complete certain procedures; for example, posting journals can automatically be printed when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Specifying a Bank Reconciliation report option*.
 
 The following table lists the report types available in Bank Reconciliation and the reports that fall into those categories. Reports printed using General Ledger are printed using many of the same windows. See the General Ledger documentation for information about reports printed in that module.
 
@@ -1469,13 +1485,9 @@ Use the Financial report options windows to create sorting, restriction, and pri
 **To specify a Bank Reconciliation report option:**
 
 1. Open a Financial reports window. There are separate windows for each report type.
-
     - Reports \>\> Financial \>\> Setup
-
     - Reports \>\> Financial \>\> Checkbook
-
     - Reports \>\> Financial \>\> Bank Posting Journals
-
     - Reports \>\> Financial \>\> Bank History
 
 2. Select a report from the Reports list.
@@ -1531,7 +1543,8 @@ Use the Remove Bank History window to remove history, and increase the amount of
 
 **To remove bank history:**
 
-1. Open the Remove Bank History window. (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Financial \>\> Remove Bank History)
+1. Open the Remove Bank History window. 
+(Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Financial \>\> Remove Bank History)
 
 2. Mark the type of history to remove.
 
@@ -1560,21 +1573,16 @@ Use the Remove Bank History window to remove history, and increase the amount of
 
 To review detailed information about each feature, click the relevant link below.
 
-[Automatically Deposit Cash
-Receipts](https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/06/23/microsoft-dynamics-gp-2015-r2-new-features-auto-deposit-cash-receipts-in-bank-rec)  
+[Automatically Deposit Cash Receipts](https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/06/23/microsoft-dynamics-gp-2015-r2-new-features-auto-deposit-cash-receipts-in-bank-rec)  
 Previously in Dynamics GP, to use the Auto Deposit functionality, the user was required to have Analytical Accounting installed. In Dynamics GP 2015 R2 and later versions, the Auto Deposit functionality can be used with or without Analytical Accounting installed. This company setup option allows for cash receipts entered in Receivables Management to directly update the checkbook balance when posted. You will not be required to post the cash receipt again from the Bank Deposit Entry window (Transactions \>\>Financial \>\> Bank Deposits) in Bank Reconciliation if you mark this option.
 
-[Bank Reconciliation history tracking and transaction remove capability which =
-better
-performance](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/12/22/microsoft-dynamics-gp-2016-r2-bank-reconciliation-reconciled-transaction-maintenance)  
+[Bank Reconciliation history tracking and transaction remove capability which = better performance](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/12/22/microsoft-dynamics-gp-2016-r2-bank-reconciliation-reconciled-transaction-maintenance)  
 With the release of Dynamics GP 2016 R2 came a great new feature that will help the customers that use Bank Reconciliation heavily, or have been using Dynamics GP with Bank Reconciliation for a long time.  The new feature is the addition of the Reconciled Transaction Maintenance process! The goal for this additional routine for Bank Reconciliation will be increased performance for various Bank Reconciliation processes after moving the bulk of Reconciled Transactions to History.
 
-[Don't display inactive checkbooks in
-Lookups](https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/10/26/microsoft-dynamics-gp-2018-r2-option-not-to-show-inactive-checkbooks-in-lookup-windows)  
+[Don't display inactive checkbooks in Lookups](https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/10/26/microsoft-dynamics-gp-2018-r2-option-not-to-show-inactive-checkbooks-in-lookup-windows)  
 With the release of Dynamics GP 2018 R2, users can choose to exclude 'Inactive Checkbooks' in the Checkbooks Lookup window. In earlier versions of Dynamics GP, all Checkbook IDs are displayed in the Checkbooks Lookup window. The 'Exclude Inactive Checkbooks' option has been added to the Checkbooks Lookup window to accommodate this new functionality.  
   
-[Prevent duplicate check
-numbers](https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/11/07/microsoft-dynamics-gp-2018-r2-prevent-duplicate-check-numbers-for-bank-transaction-entry-miscellaneous-checks-and-payroll-manual-checks)  
+[Prevent duplicate check numbers](https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/11/07/microsoft-dynamics-gp-2018-r2-prevent-duplicate-check-numbers-for-bank-transaction-entry-miscellaneous-checks-and-payroll-manual-checks)  
 With the release of Dynamics GP 2018 R2, it is possible to prevent using a duplicate check number in the Bank Transaction Entry, Miscellaneous Checks, and the Payroll Manual Check-Adjustment Entry windows.  
 In earlier versions of Dynamics GP, it was not possible to prevent users from using duplicate check numbers in the Bank Transaction Entry, Miscellaneous Checks, and the Payroll Manual Check-Adjustment Entry windows.  
 When the 'Duplicate Check Numbers' option is unmarked: Dynamics GP will prevent users from using a duplicate check number in the Bank Transaction Entry, Miscellaneous Checks, and the Payroll Manual Check-Adjustment Entry windows.

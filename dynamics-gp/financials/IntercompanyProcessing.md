@@ -83,7 +83,8 @@ Use the Intercompany Setup window to define relationships between companies that
 
 **To set up an intercompany relationship:**
 
-1. Open the Intercompany Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Intercompany)
+1. Open the Intercompany Setup window. 
+(Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Intercompany)
 
     ![](media/SS.jpg)
 
@@ -213,7 +214,8 @@ Reversing intercompany transactions can be used in situations where cash will be
 
 **To enter a General Ledger intercompany transaction:**
 
-1. Open the Transaction Entry window. (Transactions \>\> Financial \>\> General)
+1. Open the Transaction Entry window. 
+(Transactions \>\> Financial \>\> General)
 
     ![](media/TT.jpg)
 
@@ -253,7 +255,8 @@ For more information about entering various types of Payables Management transac
 
 **To enter Payables Management intercompany transactions:**
 
-1. Open the Payables Transaction Entry window. (Transactions \>\> Purchasing \>\> Transaction Entry)
+1. Open the Payables Transaction Entry window. 
+(Transactions \>\> Purchasing \>\> Transaction Entry)
 
     ![](media/PP.jpg)
 
@@ -351,8 +354,7 @@ Transactions with errors will remain in the originating company batch if any of 
 
 - A destination company doesn’t exist
 
-- An intercompany relationship does not exist with any of the destination
-    companies specified
+- An intercompany relationship does not exist with any of the destination companies specified
 
 - A due to/due from account is not specified in the Intercompany Setup window for any destination company
 
@@ -414,7 +416,6 @@ The Intercompany button is enabled only if the currently displayed journal entry
 **To view transactions for a posted General Ledger journal entry:**
 
 1. Open the Journal Entry Inquiry window.
-
    (Inquiry \>\> Financial \>\> Journal Entry Inquiry)
 
 2. Enter or select the journal entry number to view.
@@ -431,7 +432,6 @@ Use the Intercompany Audit Trail Code Inquiry window in destination companies to
 **To view intercompany information for a transaction in a destination company:**
 
 1. Open the Journal Entry Inquiry window.
-
     (Inquiry \>\> Financial \>\> Journal Entry Inquiry)
 
 2. Enter or select the journal entry number to view.
@@ -447,7 +447,6 @@ Use the Exchange Rate Entry Zoom window to view the exchange rate information fo
 **To view exchange rate information for an intercompany multicurrency voucher:**
 
 1. Open the Payables Inquiry - Document window.
-
     (Inquiry \>\> Purchasing \>\> Transaction by Document)
 
 2. Select the intercompany multicurrency document to view exchange rate information for, then click the Document Number or Voucher/Payment Number link to open the Payables Transaction Entry Zoom window.
@@ -463,7 +462,6 @@ Use the Intercompany Destination Exchange Rate Inquiry window to view the exchan
 **To view exchange rate information for all destination companies on a voucher:**
 
 1. Open the Payables Inquiry - Document window.
-
     (Inquiry \>\> Purchasing \>\> Transaction by Document)
 
 2. Select the intercompany multicurrency document to view exchange rate information for, then click the Document Number or Voucher/Payment Number link to open the Payables Transaction Entry Zoom window.
@@ -484,7 +482,7 @@ This information is divided into the following sections:
 
 #### Intercompany Processing report summary
 
-You can print several types of reports using Intercompany Processing. Some reports automatically are printed when you complete certain procedures; for example, posting journals can automatically be printed when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Creating a report option* on page 32.
+You can print several types of reports using Intercompany Processing. Some reports automatically are printed when you complete certain procedures; for example, posting journals can automatically be printed when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Creating a report option*.
 
 The following table lists the report types available in Intercompany Processing and the reports that fall into those categories. (Reports printed using General Ledger or Payables Management are printed using many of the same windows. See the General Ledger or Payables Management documentation for information about reports printed in those modules.)
 
@@ -509,13 +507,9 @@ Use the Financial, Purchasing, or System report options windows to create sortin
 
 **To create a report option:**
 
-1.  Open a Financial, Purchasing, or System reports window. There are separate
-    windows for each report type.
-
+1.  Open a Financial, Purchasing, or System reports window. There are separate windows for each report type.
     (Reports \>\> System \>\> General) (for the Intercompany Setup List)
-
     (Reports \>\> Financial \>\> Bank Posting Journals)
-
     (Reports \>\> Purchasing \>\> Posting Journals)
 
 2.  Select a report from the Reports list.
@@ -524,13 +518,14 @@ Use the Financial, Purchasing, or System report options windows to create sortin
 
 4. Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
 
-4.  Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
+5.  Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
     > [!NOTE]
     > You can enter only one restriction for each restriction type. For instance, you can insert one batch ID restriction (LCM621A to LCM628A) and one audit trail code restriction.
 
-5. Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
+6. Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-6. Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
-7. To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
+7. Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
+
+8. To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
 

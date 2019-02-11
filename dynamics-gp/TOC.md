@@ -91,6 +91,7 @@
 #### [Part 5: Utilities and routines](financials/receivables-management-part5-utilities-routines.md)
 ### [Payables Management](financials/PayablesManagement.md)
 ### [General Ledger](financials/general-ledger.md)
+### [Fixed Asset Management](financials/fixed-assets.md)
 ### [Glossary](financials/glossary.md)
 
 <!--- distribution -->

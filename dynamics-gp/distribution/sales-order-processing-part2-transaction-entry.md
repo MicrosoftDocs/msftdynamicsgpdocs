@@ -222,7 +222,7 @@ Use the Picking Instruction Preview window to assign the instruction ID to the r
 1. Open the Instruction ID Processing window.
     (Sales \>\> Cards \>\> Process Instructions)
 
-    ![screenshot](media/SOage0634.jpg)
+    ![screenshot](media/SOage064.jpg)
 
 2. Enter or select an instruction ID.
 
