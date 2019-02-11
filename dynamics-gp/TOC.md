@@ -27,6 +27,7 @@
 ### Additional clients
 #### [Creating an installation package](installation/creating-an-installation-package.md)
 #### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
+### [Professional Service Tools Library](ProfServicesToolsLibrary.md)
 
 <!--- web components -->
 ### Web components
