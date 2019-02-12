@@ -594,7 +594,7 @@ Refer to the Payroll / Human Resources printable manuals for the other deduction
 
 Use the Arrear Transactions window to edit or add new uncollected deductions in arrears. To open this window, click the **HR and Payroll** series button and then click **Arrears Transactions** on the Cards content pane.
 
-![](media/AT.jpg)
+![](media/AR.jpg)
 
 A new arrear adjustment for an uncollected deduction can be created when it is paid by the employee outside of a pay check, or if it is forgiven by the employer, or if it needs to be edited or removed. The Arrears Amount can be edited or the record can be deleted to handle these situations. The uncollected deductions in arrears amounts can be increased or reduced or the entire arrears record can be deleted.
 
