@@ -1,3 +1,19 @@
+---
+title: "Inventory Control"
+description: "Inventory Control for Dynamics GP"
+keywords: "items"
+author: tnistler
+manager: edupont
+
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: tnistler
+ms.date: 02/10/2019
+
+---
+# Inventory Control in Dynamics GP
+
 Introduction
 ============
 
