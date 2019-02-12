@@ -10,7 +10,7 @@ ms.author: jchrist
 ms.date: 02/12/2019
 ---
 
-# VAT in the British Version of Microsoft Dynamics GP
+# VAT in the UK Version of Microsoft Dynamics GP
 
 Her Majesty's Revenue and Customs (HMRC) is implementing the first step of Making Tax Digital, which imposes new requirements on VAT registered businesses above the VAT threshold. Requirements will be implemented in phases. In the first phase, with a deadline in April, 2019, the following requirements will take effect:
 
@@ -27,7 +27,7 @@ In the **Company Setup** window, you must specify your company's tax registratio
 
 In the **UK Digital VAT Setup** window (Cards -> Company-UK Electronic VAT Setup), you must specify that you want to use the Making Tax Digital service.  
 
-    ![Screenshot](media/uk-tax-digital-tax-setup.png)
+![Screenshot](media/uk-tax-digital-tax-setup.png)
 
 ### Set up VAT returns
 
@@ -38,7 +38,7 @@ HMRC maintains a list of VAT obligations for companies, which are the periods fo
 
 In order to use the Making Tax Digital service, you must connect to the service from the **VAT Return** window.
 
-    ![Screenshot](media/uk-tax-vat-return.png)
+![Screenshot](media/uk-tax-vat-return.png)
 
 To enable the connection, you must create a new VAT return.
 
@@ -84,7 +84,7 @@ To enable the connection, you must create a new VAT return.
 
 When the submission is complete you will see the VAT Response window.
 
-    ![Screenshot](media/uk-tax-vat-response.png)
+![Screenshot](media/uk-tax-vat-response.png)
 
 > [!NOTE]
 > After submitting the return, if the progress window does not start and there is no response window, it could be a proxy server issue. For more information, see [https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access](https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access)  

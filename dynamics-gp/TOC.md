@@ -92,7 +92,7 @@
 ### [Payables Management](financials/PayablesManagement.md)
 ### [General Ledger](financials/general-ledger.md)
 ### [Fixed Asset Management](financials/fixed-assets.md)
-### [VAT in the British Version of Microsoft Dynamics GP](financials/uk-tax-mtd.md)
+### [VAT in the UK Version of Microsoft Dynamics GP](financials/uk-tax-mtd.md)
 ### [Glossary](financials/glossary.md)
 
 <!--- distribution -->
