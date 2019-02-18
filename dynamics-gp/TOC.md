@@ -83,6 +83,7 @@
 <!--- financials -->
 ## Financials
 ### [Bank Reconciliation] (financials/BankReconciliation.md)
+### [Cash Flow Mananagement] (CashFlowManagement.md)
 ### [Inter Company Processing] (financials/IntercompanyProcessing.md)
 ### [Payment Document Management] (financials/PaymentDocumentManagement.md)
 ### [Receivables Management](financials/receivables-management.md)
