@@ -18,8 +18,7 @@ The Professional Services Tools Library is designed for use with Microsoft Dynam
 ## Introduction
 To download the tool go to [this link that is Partner only](https://mbs.microsoft.com/partnersource/northamerica/support/support-news/NOAM_PSTL).
 
-As of March 26, 2012 the Microsoft Dynamics GP PSTL and the additional Microsoft
-Dynamics GP Tools listed above are available to Partners at no additional cost.
+As of March 26, 2012 the Microsoft Dynamics GP PSTL and the additional Microsoft Dynamics GP Tools listed above are available to Partners at no additional cost.
 
 ![Lock Icon](media/b2ab6ec2dd6025f7327e9004dd0eb287.png)
 
@@ -141,8 +140,7 @@ during an Employee ID change:
 1. Choose the Validate button first. Select the file and choose Open to start
     the validation process.
 
-2. A Report Destination window will appear. Select the report destination to
-    view a report verifying that information is valid. If the report states that
+2. A Report Destination window will appear. Select the report destination to view a report verifying that information is valid. If the report states that
     there is invalid data, fix the spreadsheet and go through the validation
     process again.
 
@@ -782,8 +780,7 @@ database.
 
 **To change fiscal year definitions:**
 
-1. Choose Setup Periods to create the new fiscal year definitions and remove
-    previous fiscal year definitions. When defining the new periods, be sure to
+1. Choose Setup Periods to create the new fiscal year definitions and remove previous fiscal year definitions. When defining the new periods, be sure to
     keep all transactions associated with the same year, only change the name of
     the year. The utility does not allow transactions for a year to be split
     between different years.
@@ -801,8 +798,7 @@ database.
     Start with the oldest history year, and work towards the most current open
     year.
 
-5. Review the GL data. If the data is not as expected, restore the company from
-    the backup.
+5. Review the GL data. If the data is not as expected, restore the company from the backup.
 
 ### General Ledger Master Record Triggers
 
@@ -938,8 +934,7 @@ history and reentering data if records were applied incorrectly.
 
     Choose Unapply to continue. You can also view the report only or cancel.
 
-1. Choose a report destination to view a report with information about the
-    unapplied transactions.
+1. Choose a report destination to view a report with information about the unapplied transactions.
 
 ### Salesperson Modifier
 
@@ -974,8 +969,7 @@ within Sales Order Processing Entry and the Sales Item Detail windows.
 
 **Customer item lookup setup:**
 
-1. This tool modifies existing features within Microsoft Dynamics GP. To
-    activate the new functionality that this tool offers, simply mark the second
+1. This tool modifies existing features within Microsoft Dynamics GP. To activate the new functionality that this tool offers, simply mark the second
     check box next to SOP Customer Item Lookup from the Professional Services
     Tools Library menu. Close the window.
 
@@ -1035,8 +1029,7 @@ proper data, choose Continue to begin the change process.
 1. The process is complete when you receive another message stating the
     Territory Modifier is finished.
 
-2. A Report Destination Window will appear. Select a report destination to view
-    the Modified Territories Report.
+2. A Report Destination Window will appear. Select a report destination to view the Modified Territories Report.
 
 ### Using Territory Combiner
 
@@ -1076,8 +1069,7 @@ and the SOP Customer Detail Entry window.
 
     ![A screenshot](media/6346596ff60bc29163e079652ac6dc27.jpg)
 
-1. Set the Check DB column for each SOP Type. When marked, the SQL database
-    will be examined documents of the specified type that have duplicate
+1. Set the Check DB column for each SOP Type. When marked, the SQL database will be examined documents of the specified type that have duplicate
     Customer PO numbers. For instance, it might not matter that a duplicate
     Customer PO Number was entered on a Quote document. In that case, you would
     not mark the Check DB column for Quote documents, and the check would not be
@@ -1126,8 +1118,7 @@ records that the PO Number was found on.
 Message column for that SOP Type, but will give the user the option of
 entering the password entered in the Password column as an override.
 
-1. Set the Message column for each SOP Type. This field is a user-defined
-    message that is displayed after a duplicate PO Number is found. The tokens
+1. Set the Message column for each SOP Type. This field is a user-defined message that is displayed after a duplicate PO Number is found. The tokens
     %1, %2, and %3 can be used in the message text, and will be substituted with
     the actual PO Number, Document Type (the words Order, Invoice, etc.), and
     SOP Number.
@@ -1166,8 +1157,7 @@ To create Customer Exceptions, use the Customer Exception window.
     Customer Exception to open this window. This window displays all of the
     customers in the system and allows you to choose the exceptions.
 
-2. Mark the customers for which the Customer PO Number is not required. In the
-    illustration above, the customer AARONFIT0001 will never have the Customer
+2. Mark the customers for which the Customer PO Number is not required. In the illustration above, the customer AARONFIT0001 will never have the Customer
     PO Number field marked as required, even though it was marked required in
     the Customer PO Validation Setup window.
 
@@ -1213,8 +1203,7 @@ backup of the database, choose Continue.
 Regeneration after the combine process has finished in order to complete the
 process for MRP tables.*
 
-1. Choose a report destination. The report indicates what Site IDs were
-    combined in the system.
+1. Choose a report destination. The report indicates what Site IDs were combined in the system.
 
 ### Using Inventory Site Modifier
 
@@ -1237,8 +1226,7 @@ possible to import large amounts of data.
 5. The process is complete a message indicating the Site Modifier is finished
     appears.
 
-6. A Report Destination window will appear after you select OK and close the
-    Site Modifier window. The report indicates what Site IDs were changed in the
+6. A Report Destination window will appear after you select OK and close the Site Modifier window. The report indicates what Site IDs were changed in the
     system.
 
 ### Using Item Description Modifier
@@ -1265,8 +1253,7 @@ for information on importing data.
 3. Choose OK and close the Item Description Modifier window. A report
     destination window will appear.
 
-4. Choose a destination for the report to view an Item Descriptions Modified
-    report.
+4. Choose a destination for the report to view an Item Descriptions Modified report.
 
 ### Using Item Number Combiner
 
@@ -1299,11 +1286,10 @@ would be to decrease the Qty down to 0 prior to Combining Items. 
     have a backup of the company database, choose Continue to start the combine
     process.
 
-5. Another message is displayed when the item number combine process is
-
-complete. Choose OK to continue.
+5. Another message is displayed when the item number combine process is complete. Choose OK to continue.
 
 1. Close the Item Number Combiner. A Report Destination Window will appear.
+
     Select a report destination to view the combined Item Numbers Report.
 
 ### Using Item Number Modifier
@@ -1327,8 +1313,7 @@ Item Number Modifier is like other modifier tools in that it allows the user to 
 
 1. You will receive an alert when the process is finished.
 
-2. Choose OK and close the Item Modifier window. A Report Destination window
-    will appear. Select the report destination to view the Converted Item
+2. Choose OK and close the Item Modifier window. A Report Destination window will appear. Select the report destination to view the Converted Item
     Number(s) report.
 
 ### Using Item Reconciler
@@ -1605,8 +1590,7 @@ backup is made of the database, Choose Continue.
 
 1. A message will appear when the employee ID change is finished.
 
-2. Choose OK and close the Employee Change window. A Report Destination window
-    will appear. Choose a destination to view the Converted Employee IDs report.
+2. Choose OK and close the Employee Change window. A Report Destination window will appear. Choose a destination to view the Converted Employee IDs report.
 
 ### Using the Certified Payroll Report
 
@@ -1701,8 +1685,7 @@ palette.
     your certification that the payroll is correct and complete and the wage
     rates are valid according to the Secretary of Labor.
 
-5. Choose Print to print the report. The information that prints on the report
-    is summarized for each employee within each job. Each employee could have
+5. Choose Print to print the report. The information that prints on the report is summarized for each employee within each job. Each employee could have
     several line items for a single job if the employee used different pay
     codes, job titles or departments during the week period. Each employee could
     have different line items on more than one job report if the employee worked
@@ -1852,8 +1835,7 @@ issues:
 - You should use this tool only after creating a SQL database backup of the
     destination company. The copy operation is irreversible without a backup.
 
-- When the copy process is run, the setup tables and report options tables in
-    the modules you selected will be deleted for the destination company. If you
+- When the copy process is run, the setup tables and report options tables in the modules you selected will be deleted for the destination company. If you
     have manually added setup or report option information for a module in the
     destination company, and you do not want this information deleted, do not
     use the Company Copy tool to copy data for that module.
@@ -1861,8 +1843,7 @@ issues:
 - You should be the only user who is logged into Microsoft Dynamics GP when
     the operation is performed.
 
-- The operation can take a significant amount of time to complete, so you
-    should consider performing it during off-peak hours.
+- The operation can take a significant amount of time to complete, so you should consider performing it during off-peak hours.
 
 **To copy company setup:**
 
@@ -1896,8 +1877,7 @@ also be marked.
 
 - If Bill of Materials is marked, Inventory must also be marked.
 
-1. Click Process to begin processing. A processing status message will be
-    displayed in the lower-left corner of the Company Copy window. The
+1. Click Process to begin processing. A processing status message will be displayed in the lower-left corner of the Company Copy window. The
     processing time required will depend on the amount of data in the modules
     selected. When processing has finished, a status message will indicate that
     processing is complete.
