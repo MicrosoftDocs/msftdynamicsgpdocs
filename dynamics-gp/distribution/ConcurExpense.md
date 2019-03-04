@@ -41,7 +41,7 @@ reports.
 The following diagram provides an overview of the Concur Expense Integrator
 setup and the expense report process.
 
-![A picture containing text Description automatically generated](media/4f75e5eddb78d8c48d19b37b5a611ca6.jpg)
+![screenshot](media/4f75e5eddb78d8c48d19b37b5a611ca6.jpg)
 
 In Concur Expense Integrator, vendors are employees who have a vendor
 record. If a vendor record does not exist for an employee, one is created
@@ -124,7 +124,7 @@ To configure Concur Expense Integrator, follow these steps:
     **Concur Expense** \>\> **Setup** to open the **Concur Expense Setup**
     window.
 
-![A screenshot of a social media post Description automatically generated](media/d278c881aa2e80e8bcc5f1aad2832336.jpg)
+![A screenshot](media/d278c881aa2e80e8bcc5f1aad2832336.jpg)
 
 1. In the **Company Credit Card** field, select the name of the credit card
     that is used with Concur Expense.

@@ -82,10 +82,10 @@
 
 <!--- financials -->
 ## Financials
-### [Bank Reconciliation] (financials/BankReconciliation.md)
-### [Cash Flow Mananagement] (CashFlowManagement.md)
-### [Inter Company Processing] (financials/IntercompanyProcessing.md)
-### [Payment Document Management] (financials/PaymentDocumentManagement.md)
+### [Bank Reconciliation](financials/BankReconciliation.md)
+### [Cash Flow Mananagement](CashFlowManagement.md)
+### [Inter Company Processing](financials/IntercompanyProcessing.md)
+### [Payment Document Management](financials/PaymentDocumentManagement.md)
 ### [Receivables Management](financials/receivables-management.md)
 #### [Part 1: Setup and cards](financials/receivables-management.md#part-1-setup-and-cards)
 #### [Part 2: Transaction entry](financials/receivables-management-part2-transaction-entry.md)
@@ -101,7 +101,7 @@
 <!--- distribution -->
 ## Distribution
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
-### [Concur Expense] (distribution/ConcurExpense.md)
+### [Concur Expense](distribution/ConcurExpense.md)
 ### [Purchase Order Processing](distribution/purchase-order-processing.md)
 #### [Part 1: Setup and cards](distribution/purchase-order-processing.md#part-1-setup-and-cards)
 #### [Part 2: Purchase orders](distribution/purchase-order-processing-part2-orders.md)
@@ -120,7 +120,7 @@
 
 <!--- payroll -->
 ## Payroll
-### [Advanced Payroll] (payroll/AdvancedPayroll.md)
+### [Advanced Payroll](payroll/AdvancedPayroll.md)
 ### [Canadian Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
 ### [U.S. Payroll](payroll/PayrollUS.md)

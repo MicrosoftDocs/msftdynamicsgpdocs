@@ -190,9 +190,9 @@ to the next available number as each number is accepted. You can change the
 next numbers, but the default numbers will continue to be displayed for new
 transactions.
 
-If *you use Microsoft Dynamics GP on a network where more than one person is
+If you use Microsoft Dynamics GP on a network where more than one person is
 entering transactions at the same time, the default number might appear to
-increase by two or more.*
+increase by two or more.
 
 #### Overtime in Payroll
 
@@ -589,8 +589,7 @@ compiling historical records easier for you.
 
 **To set up Payroll default entries:**
 
-1. Open the Payroll Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
-    Payroll)
+1. Open the Payroll Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Payroll)
 
 ![](media/fdf616c9571329cd1dd3c019a76a4b3c.jpg)
 
@@ -633,42 +632,17 @@ the queue, and how often the processing request will be retried.
 
 1. Choose OK in the Payroll Multiuser Setup window to save your changes.
 
-2. Choose Options to open the Payroll Setup Options window and enter additional
-    Payroll default entries.
+2. Choose Options to open the Payroll Setup Options window and enter additional Payroll default entries.
 
-![A screenshot of a cell phone Description automatically generated](media/4708ab0e7f6f18ab63be383fd62d7757.jpg)
+  ![A screenshot](media/4708ab0e7f6f18ab63be383fd62d7757.jpg)
 
-A screenshot of a cell phone Description automatically generated
+3. Enter the next transaction numbers and select the number of decimal places for pay rates, deductions, and benefits.
 
-A screenshot of a cell phone Description automatically generated
+4. Enter user-defined field prompts for tracking additional employee information that might be specific to your company.
 
-A screenshot of a cell phone Description automatically generated
+5. Mark Enable Fiscal Year Tracking to track employee payroll information by fiscal year, as well as by calendar year.  
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-1. Enter the next transaction numbers and select the number of decimal places
-    for pay rates, deductions, and benefits.
-
-2. Enter user-defined field prompts for tracking additional employee
-    information that might be specific to your company.
-
-3. Mark Enable Fiscal Year Tracking to track employee payroll information by
-    fiscal year, as well as by calendar year. *If you enable fiscal year
-    tracking during the year, it is a good idea to reconcile your fiscal year
-    employee information to help ensure that your historical data is summarized
-    correctly. For more information, see Reconciling employee records .*
+    If you enable fiscal year tracking during the year, it is a good idea to reconcile your fiscal year employee information to help ensure that your historical data is summarized correctly. For more information, see Reconciling employee records.
 
 4. Mark Track Days Worked to track the number of days an employee’s work was
     assigned to each pay code. *Depending upon the calculation method used by
@@ -695,10 +669,8 @@ A screenshot of a cell phone Description automatically generated
 11. Choose File \>\> Print to print a Payroll Options Report to verify your
     information.
 
-*Although you can create employee classes at this time by choosing Classes
-to open the Employee Class Setup window, it’s a good idea to wait until
-you’ve set up codes. For more information, refer to Chapter 2, “Setting up
-codes,” and Creating an employee class .*
+> [!TIP]
+> Although you can create employee classes at this time by choosing Classes to open the Employee Class Setup window, it’s a good idea to wait until you’ve set up codes. For more information, refer to [Chapter 2 Setting up codes](#chapter-2-setting-up-codes), and [Creating an employee class](#creating-an-employment-class) .
 
 #### Required Payroll posting accounts
 
@@ -772,34 +744,11 @@ window before setting up posting accounts. If you haven’t set up default
 information yet, refer to *Setting up Payroll default entries* for more
 information about using the Payroll Setup window.
 
-The following table shows the posting accounts required in Payroll and the
-departments, positions, and codes associated with each.
+The following table shows the posting accounts required in Payroll and the departments, positions, and codes associated with each.
 
-\| Review this information for enhancements around payroll posting in Microsoft
-Dynamics GP 2016 \| \|
-<https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/05/26/payroll-payroll-posting-accounts-setup-enhancements>
-\|
-\|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\|
+Review this information for [enhancements around payroll posting in Microsoft Dynamics GP 2016](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/05/26/payroll-payroll-posting-accounts-setup-enhancements).
 
-![A screenshot of a cell phone Description automatically generated](media/c8ef526d4ad3653e6a8f4818c3fdc6e1.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+![A screenshot ](media/c8ef526d4ad3653e6a8f4818c3fdc6e1.jpg)
 
 #### Setting up Payroll posting accounts
 
@@ -813,41 +762,17 @@ You must set up departments and positions before setting up Payroll posting
 accounts. Refer to *Setting up department codes* and *Setting up position
 codes* for more information.
 
-*Before you set up posting accounts, be sure to set the account format using
-the Account*
-
-*Format Setup window. For more information, refer to Help \>\> Contents \>\>
-select Setting Up the System. You also should have completed Setting up
-Payroll default entries* .
+> [!IMPORTANT]
+> Before you set up posting accounts, be sure to set the account format using the Account Format Setup window. For more information, refer to Help \>\> Contents \>\>
+select Setting Up the System. You also should have completed Setting up Payroll default entries.
 
 **To set up Payroll posting accounts:**
 
-1. Open the Payroll Posting Accounts Setup window. (Administration \>\> Setup
-    \>\> Posting \>\> Payroll Accounts)
+1. Open the Payroll Posting Accounts Setup window. (Administration \>\> Setup     \>\> Posting \>\> Payroll Accounts)
 
-![A screenshot of a cell phone Description automatically generated](media/de3a8d9af33d89faadcdcef9d7586911.jpg)
+  ![A screenshot](media/de3a8d9af33d89faadcdcef9d7586911.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-1. Select an account type and position for the employee’s Payroll code. When
+2. Select an account type and position for the employee’s Payroll code. When
     you select an account type, existing accounts, and an account description
     for the account type chosen, will be displayed in the scrolling window. You
     can either accept the default entry for all departments and positions, or
@@ -884,59 +809,27 @@ Analytical Accounting, and create Analytical Accounting dimension codes and
 account classes. For more information, see the Analytical Accounting
 documentation.
 
-**To set up default transaction dimension codes for**
+**To set up default transaction dimension codes for Analytical Accounting**
 
-**Analytical Accounting**
+1. Open the Analytical Payroll Default Dimensions window. (Administration \>\> Setup \>\> Posting \>\> Payroll Accounts \>\> Analytical Accounting button)
 
-1. Open the Analytical Payroll Default Dimensions window. (Administration \>\>
-    Setup \>\> Posting \>\> Payroll Accounts \>\> Analytical Accounting button)
+    ![A screenshot](media/42dc967c9e3c5e9fd56262097bdd695e.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/42dc967c9e3c5e9fd56262097bdd695e.jpg)
+2. Select a payroll posting type.
 
-A screenshot of a cell phone Description automatically generated
+    When you select a payroll posting type, the default entries that you defined when you set up Payroll are automatically entered in the scrolling window.
 
-A screenshot of a cell phone Description automatically generated
+    The Code lookup window displays codes for the selected payroll posting type. For example, if you selected Gross Pay for the Payroll account type,the window displays pay codes.
 
-A screenshot of a cell phone Description automatically generated
+1. Enter or select, as necessary, new entries for Employee ID, Department, Position, Code, or Percent.
 
-A screenshot of a cell phone Description automatically generated
+    The alias that links Analytical Accounting to U.S. Payroll is a combination of the Payroll Posting Type, Employee ID, Department, Position, and Code. Accordingly, the same combination of those fields can exist only once. For the same reason, the Percent cannot total more than 100% for records with the same combination of those fields.
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-1. Select a payroll posting type.
-
-When you select a payroll posting type, the default entries that you defined
-when you set up Payroll are automatically entered in the scrolling window.
-
-*The Code lookup window displays codes for the selected payroll posting
-type. For example, if you selected Gross Pay for the Payroll account type,
-the window displays pay codes.*
-
-1. Enter or select, as necessary, new entries for Employee ID, Department,
-    Position, Code, or Percent.
-
-*The alias that links Analytical Accounting to U.S. Payroll is a combination
-of the Payroll Posting Type, Employee ID, Department, Position, and Code.
-Accordingly, the same combination of those fields can exist only once. For
-the same reason, the Percent cannot total more than 100% for records with
-the same combination of those fields.*
-
-1. Choose the Print button to print the Analytical Payroll Default Dimensions
-    report to verify your information.
+1. Choose the Print button to print the Analytical Payroll Default Dimensions report to verify your information.
 
 2. Choose OK to save your changes and exit the window.
 
-**Chapter 2: Setting up codes**
+### Chapter 2: Setting up codes
 
 You can set up location codes, department codes, position codes, and pay
 codes to which you can assign employees for identification purposes.
@@ -1268,28 +1161,9 @@ The following are some examples of pay codes you might use:
 
 **To set up pay codes:**
 
-1. Open the Pay Code Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
-    Pay Code)
+1. Open the Pay Code Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Pay Code)
 
-![A screenshot of a cell phone Description automatically generated](media/644032740fb9878dbb856d88ca409271.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot ](media/644032740fb9878dbb856d88ca409271.jpg)
 
 1. Enter a pay code and description.
 
@@ -1305,9 +1179,7 @@ A screenshot of a cell phone Description automatically generated
     overtime or double time, the based on pay rate appears next to the Based On
     Pay Code field.
 
-*When setting up pay codes, select vacation or sick as pay types for
-vacation and sick time. This ensures that when you enter transactions, they
-will automatically reduce the available amount of vacation and sick time.*
+    When setting up pay codes, select vacation or sick as pay types for vacation and sick time. This ensures that when you enter transactions, they will automatically reduce the available amount of vacation and sick time.
 
 1. If your pay type is overtime or double time, you also can specify a pay
     factor that is multiplied with the pay code’s pay rate to determine the
@@ -1319,73 +1191,49 @@ will automatically reduce the available amount of vacation and sick time.*
     recalculated by multiplying the pay rate of the based-on pay code by the pay
     factor.
 
-*If your business needs require complex overtime calculations, consider
-using Overtime Rate Manager, which is included with Payroll Extensions. This
-module is part of the Human Resources and Payroll Suite, which can be
-installed as an additional product.*
+    If your business needs require complex overtime calculations, consider using Overtime Rate Manager, which is included with Payroll Extensions. This module is part of the Human Resources and Payroll Suite, which can be installed as an additional product.
 
 1. Enter the pay rate for the amount of pay.
 
-    - If Earned Income Credit is the pay type, leave the Pay Rate field blank
-        to use the EIC tables supplied with Payroll to calculate the EIC
+    - If Earned Income Credit is the pay type, leave the Pay Rate field blank to use the EIC tables supplied with Payroll to calculate the EIC
         payment.
 
-    - Enter the name of the unit of work in the Unit of Pay field if the pay
-        type is Piecework. This unit name will be printed on Payroll reports.
+    - Enter the name of the unit of work in the Unit of Pay field if the pay type is Piecework. This unit name will be printed on Payroll reports.
 
-    - If the pay type is Salary or is based upon a salary pay type, select the
-        unit of pay from the list of pay periods.
+    - If the pay type is Salary or is based upon a salary pay type, select the unit of pay from the list of pay periods.
 
-    - If the pay type is Charged Tips or Reported Tips, the Unit of Pay label
-        changes to Tips Received. Select Directly or Indirectly.
+    - If the pay type is Charged Tips or Reported Tips, the Unit of Pay label changes to Tips Received. Select Directly or Indirectly.
 
-2. Select the pay period for the wages and mark Data Entry Default to
-    automatically use the information in this window when you create a
+2. Select the pay period for the wages and mark Data Entry Default to automatically use the information in this window when you create a
     transaction for the pay code during a pay run.
 
-3. Enter or select a shift code to assign to the pay code. For more
-    information, refer to *Setting up shift codes* .
+3. Enter or select a shift code to assign to the pay code. For more information, refer to *Setting up shift codes* .
 
 4. Mark the taxes the pay is subject to.
 
-5. If you selected a commission or business expense pay type, enter the maximum
-    amount per pay period.
+5. If you selected a commission or business expense pay type, enter the maximum amount per pay period.
 
-6. If you selected a salary or commission pay type, enter an amount to pay in
-    advance if the employee is to receive an advance.
+6. If you selected a salary or commission pay type, enter an amount to pay in advance if the employee is to receive an advance.
 
-7. Enter the federal and state tax rate for the pay if the pay type is subject
-    to federal or state taxes, and should be calculated at a flat rate. For
-    example, bonus pay can be taxed at a 20.00 percent flat rate. You can leave
-    these fields blank to use the tax calculations from the federal and state
+7. Enter the federal and state tax rate for the pay if the pay type is subject to federal or state taxes, and should be calculated at a flat rate. For
+    example, bonus pay can be taxed at a 20.00 percent flat rate. You can leave these fields blank to use the tax calculations from the federal and state
     tax tables instead of a flat tax rate.
 
-8. Mark Vacation and Sick Time to accrue vacation and/or sick time on this pay
-    code.
+8. Mark Vacation and Sick Time to accrue vacation and/or sick time on this pay code.
 
-If you’re using Human Resources and have marked Human Resources as the
-accrue type in the Attendance Setup window, these fields will not be
-available. Refer to the Human Resources documentation for more information.
+    If you’re using Human Resources and have marked Human Resources as the accrue type in the Attendance Setup window, these fields will not be available. Refer to the Human Resources documentation for more information.
 
 1. Enter W-2 information.
 
-If the amount of the business expense should be included with gross wages on
-the W-2 statement, mark Report as Wages. If the business expense should also
-be printed in a special box on the W-2 statement, enter the number of the
-box in the W-2 Box field. Then enter a label, if required, to be printed in
-the box on the W-2 statement.
+    If the amount of the business expense should be included with gross wages on the W-2 statement, mark Report as Wages. If the business expense should also be printed in a special box on the W-2 statement, enter the number of the box in the W-2 Box field. Then enter a label, if required, to be printed in the box on the W-2 statement.
 
-If the amount must be reported in multiple locations on the W-2 statement,
-use the browse buttons to select an additional location, and enter the
-appropriate box number and label. You can specify as many as four locations.
+    If the amount must be reported in multiple locations on the W-2 statement, use the browse buttons to select an additional location, and enter the appropriate box number and label. You can specify as many as four locations.
 
-*The Report as Wages field is available only for the Business Expense pay
-type. You can skip this step if the pay type isn’t a business expense.*
+    The Report as Wages field is available only for the Business Expense pay type. You can skip this step if the pay type isn’t a business expense.
 
 1. Choose Save to store the pay code.
 
-2. Choose File \>\> Print to print a Company Pay Codes List to verify your
-    information.
+2. Choose File \>\> Print to print a Company Pay Codes List to verify your information.
 
 #### Setting up pay codes for tips
 
@@ -1407,25 +1255,7 @@ minimum wage balance, charged tips, and reported tips. The first pay code
 would be the normal hourly pay rate and weekly pay period, as shown in the
 following Employee Pay Code Maintenance window.
 
-![A screenshot of a cell phone Description automatically generated](media/16760369754082cfedaae50db2ba65c2.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+![A screenshot](media/16760369754082cfedaae50db2ba65c2.jpg)
 
 Because her wages are derived primarily from tips, she also needs a charged
 tips and reported tips pay code.
@@ -1436,25 +1266,7 @@ the employee in the paycheck on a regularly scheduled basis, in this case,
 weekly. The following is an example of how you could set up the reported
 tips pay code.
 
-![A screenshot of a cell phone Description automatically generated](media/5eba24a96b72d29e6640e70082a1f8de.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+![A screenshot](media/5eba24a96b72d29e6640e70082a1f8de.jpg)
 
 Reported tips are tips the employee receives from patrons in cash. Employees
 need to report this amount to employers on a regular basis so that a
@@ -1468,25 +1280,7 @@ minimum wage balance pay code in addition to the three pay codes already
 assigned to her. The following is an example of how you could set up the
 minimum wage balance pay code.
 
-![A screenshot of a cell phone Description automatically generated](media/049e78b866469e8ae7e3a82f53a5b715.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+![A screenshot](media/049e78b866469e8ae7e3a82f53a5b715.jpg)
 
 #### Setting up shift codes
 
@@ -1495,8 +1289,7 @@ shift premium as an amount or percentage.
 
 **To set up shift codes:**
 
-1. Open the Shift Code Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
-    Shift Code)
+1. Open the Shift Code Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Shift Code)
 
 2. Enter a code that identifies the shift code and a description.
 
@@ -1533,7 +1326,7 @@ probation, awaiting a grant assignment, or between school terms
 5. Choose File \>\> Print to print a Secondary Status Codes List to verify your
     information.
 
-**Chapter 3: Setting up deductions and benefits**
+### Chapter 3: Setting up deductions and benefits
 
 You can set up company deduction and benefit cards, also known as deduction
 and benefit codes, to be used as default entries for employee deductions and
@@ -1569,9 +1362,8 @@ sure that each deduction and benefit code has the same number of characters.
 The characters are sorted from left to right, and numbers take priority over
 letters.
 
-Review this blog to set up and HAS (Health Savings Account) in Microsoft
-Dynamics GP. 
-<https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/05/14/how-to-setup-up-an-hsa-health-savings-account-in-microsoft-dynamics-gp>
+Review [this blog post to set up and HAS (Health Savings Account) in Microsoft
+Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/05/14/how-to-setup-up-an-hsa-health-savings-account-in-microsoft-dynamics-gp).
 
 Information is contained in the following sections:
 
@@ -1760,26 +1552,9 @@ The following are some examples of deduction codes you might use:
 
 **To set up a standard deduction:**
 
-1. Open the Deduction Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
-    Deduction)
+1. Open the Deduction Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>    Deduction)
 
-![A screenshot of a cell phone Description automatically generated](media/0e0849380c5189db06e9801416ac33a1.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+![A screenshot ](media/0e0849380c5189db06e9801416ac33a1.jpg)
 
 1. Enter a deduction code and description.
 
@@ -1797,12 +1572,9 @@ A screenshot of a cell phone Description automatically generated
     paycheck, or there is no withholding for some paychecks, mark Transaction
     Required.
 
-*If you mark the deduction as Transaction Required, you’ll need to enter a
-transaction for the amount or percentage of the deduction for each pay run
-in which the deduction is taken.*
+    If you mark the deduction as Transaction Required, you’ll need to enter a transaction for the amount or percentage of the deduction for each pay run in which the deduction is taken.
 
-1. Mark Data Entry Default to use the information in this window when you
-    create a transaction for the deduction code during a pay run.
+1. Mark Data Entry Default to use the information in this window when you create a transaction for the deduction code during a pay run.
 
 2. Select the deduction frequency.
 
@@ -1818,8 +1590,7 @@ in which the deduction is taken.*
     deduction on and choose Insert to add the pay code to the Selected list.
 
 5. Select a deduction method, and a single deduction tier or multiple tiers.
-    For more information, refer to *Deduction tiers* and *Setting up earnings
-    codes* .
+    For more information, refer to *Deduction tiers* and *Setting up earnings codes* .
 
 6. Enter deduction maximums. You can enter the maximum amount an employee can
     have deducted each pay period, each calendar year, each fiscal year, and for
@@ -1857,14 +1628,11 @@ See *Setting up earnings codes* .
 Federal and state governments also set maximum percentages for garnishments.
 See *Setting up maximum garnishment rules* .
 
-Review this detail document for examples of how Garnishments are setup:
-
-<https://community.dynamics.com/gp/b/dynamicsgp/archive/2011/11/01/how-do-you-setup-a-payroll-garnishment-in-microsoft-dynamics-gp>
+Review [this detail document for examples of how Garnishments are set up](https://community.dynamics.com/gp/b/dynamicsgp/archive/2011/11/01/how-do-you-setup-a-payroll-garnishment-in-microsoft-dynamics-gp).
 
 **To set up a garnishment:**
 
-1. Open the Deduction Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
-    Deduction)
+1. Open the Deduction Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Deduction)
 
 2. Enter a deduction code and description.
 
@@ -1872,13 +1640,9 @@ Review this detail document for examples of how Garnishments are setup:
 
 4. Select a garnishment category.
 
-5. Select a garnishment deduction method. If you select Percent of Earnings
-    Wages, enter or select an earnings code. Earnings codes specify the amount
-    and type of earnings that are subject to a deduction. See *Setting up
-    earnings codes .*
+5. Select a garnishment deduction method. If you select Percent of Earnings Wages, enter or select an earnings code. Earnings codes specify the amount and type of earnings that are subject to a deduction. See *Setting up earnings codes .*
 
-*To deduct a company fee from employee wages for processing garnishments,
-create a deduction code and include it in the earnings code.*
+    To deduct a company fee from employee wages for processing garnishments, create a deduction code and include it in the earnings code.
 
 1. Select the deduction frequency.
 
@@ -1886,14 +1650,12 @@ create a deduction code and include it in the earnings code.*
     W-2 statement, enter the number of the appropriate W-2 statement box, and
     enter appropriate label information.
 
-See IRS rules for the applicable year for a current list of labels.
+    See IRS rules for the applicable year for a current list of labels.
 
 1. Choose Save to store the code. You can then continue to set up more
     garnishments or other deductions.
 
-*You can choose Sequence to specify the order in which deductions will be
-taken from the employee’s wages. For more information about setting up
-deduction sequences, see Setting up a company-level deduction sequence .*
+    You can choose Sequence to specify the order in which deductions will be taken from the employee’s wages. For more information about setting up deduction sequences, see Setting up a company-level deduction sequence .
 
 1. Choose File \>\> Print to print a Company Deduction Codes List to verify
     your information.
@@ -1910,26 +1672,9 @@ window. See *Setting up maximum garnishment rules* .
 
 **To set up earnings codes:**
 
-1. Open the Earnings Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
-    Earnings Setup)
+1. Open the Earnings Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Earnings Setup)
 
-![A screenshot of a cell phone Description automatically generated](media/7db8c46cdee43d97038d40b08f7f361a.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot ](media/7db8c46cdee43d97038d40b08f7f361a.jpg)
 
 1. Enter or select an earnings code.
 
@@ -1939,15 +1684,13 @@ A screenshot of a cell phone Description automatically generated
     inclusion in this earnings code. Choose Insert All to move all pay codes to
     the Selected list.
 
-To remove a pay code from the Selected list, select it and choose Remove.
-Choose Remove All to remove all pay codes.
+    To remove a pay code from the Selected list, select it and choose Remove. Choose Remove All to remove all pay codes.
 
 1. Select a deduction code and choose Insert to move it to the Selected list
     for inclusion in this earnings code. Deductions in the Selected list reduce
     net disposable income.
 
-*To deduct a company fee from employee wages for processing garnishments,
-create a deduction code and include it in the earnings code.*
+    To deduct a company fee from employee wages for processing garnishments, create a deduction code and include it in the earnings code.
 
 1. Mark the taxes to apply to this earnings code and reduce net disposable
     income.
@@ -2082,29 +1825,11 @@ default entries.*
 
 **To set up a company-level deduction sequence:**
 
-1. Open the Deduction Sequence Setup window. (HR & Payroll \>\> Setup \>\>
-    Payroll \>\> Deduction Sequence)
+1. Open the Deduction Sequence Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Deduction Sequence)
 
-![A screenshot of a cell phone Description automatically generated](media/8e6e46fba392053705723279da5bc9a8.jpg)
+    ![A screenshot of a cell phone](media/8e6e46fba392053705723279da5bc9a8.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-You also can open this window by choosing Sequence in the Deduction Setup
-window.
+    You also can open this window by choosing Sequence in the Deduction Setup window.
 
 1. Select an unsequenced deduction from the Unsequenced Deductions list and
     choose Insert to add it to the Sequenced Deductions list in the lowest
@@ -2216,23 +1941,7 @@ The following are some examples of benefit codes you might use:
 1. Open the Benefit Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
     Benefit)
 
-![A screenshot of a cell phone Description automatically generated](media/cdf6a8619154146748417f11286432b1.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot](media/cdf6a8619154146748417f11286432b1.jpg)
 
 1. Enter a benefit code and description.
 
@@ -2247,18 +1956,14 @@ A screenshot of a cell phone Description automatically generated
     varies each paycheck, or some paychecks have no benefit amount, mark
     Transaction Required.
 
-If you mark the benefit as transaction required, you’ll need to enter a
-transaction for the amount or percentage of the benefit for each pay run
-that the benefit is taken.
+    If you mark the benefit as transaction required, you’ll need to enter a transaction for the amount or percentage of the benefit for each pay run that the benefit is taken.
 
 1. Mark Data Entry Default to use the information in this window when you
     create a transaction for the benefit code during a pay run.
 
 2. Select the benefit frequency.
 
-*The frequency with which a benefit is taken depends upon selections made
-when you build paychecks. If you pay your employees biweekly, the benefit
-should also be calculated biweekly.*
+    The frequency with which a benefit is taken depends upon selections made when you build paychecks. If you pay your employees biweekly, the benefit should also be calculated biweekly.
 
 1. Mark the taxes to which the benefit is subject. If the benefit is subject to
     any federal or state taxes, you can enter a flat tax rate. Even though a
@@ -2274,14 +1979,9 @@ should also be calculated biweekly.*
 3. Select a calculation method and a single benefit tier or multiple tiers.
     Refer to *Benefit tiers* for more information.
 
-If you selected Percent of Deduction as your calculation method, enter the
-maximum percent the employer will match for this benefit.
+    If you selected Percent of Deduction as your calculation method, enter the maximum percent the employer will match for this benefit.
 
-*If you modified an existing benefit’s employer maximum percent, you may
-have to roll down the changes to existing employee benefit records. If
-you’re using Human Resources, you may have to update your benefit setup and
-employee records in the Reconcile Human Resources window (HR & Payroll \>\>
-Utilities \>\> Human Resources \>\> Reconcile).*
+    If you modified an existing benefit’s employer maximum percent, you may have to roll down the changes to existing employee benefit records. If you’re using Human Resources, you may have to update your benefit setup and employee records in the Reconcile Human Resources window (HR & Payroll \>\> Utilities \>\> Human Resources \>\> Reconcile).*
 
 1. Enter benefit maximum amounts. You can enter the maximum amount each
     employee can receive for this benefit for each pay period, calendar year,
@@ -2296,8 +1996,7 @@ Utilities \>\> Human Resources \>\> Reconcile).*
 
 3. Choose Save to store the code.
 
-4. Choose File \>\> Print to print a Company Benefits List to verify your
-    information.
+4. Choose File \>\> Print to print a Company Benefits List to verify your information.
 
 #### Setting and activating post-dated pay rates
 
@@ -2307,8 +2006,7 @@ more than one post-dated pay rate for one pay code.
 
 **To set post-dated pay rates:**
 
-1. Open the Employee Post-Dated Pay Rates window. (HR & Payroll \>\> Cards \>\>
-    Payroll \>\> Post-Dated Pay Rates)
+1. Open the Employee Post-Dated Pay Rates window. (HR & Payroll \>\> Cards \>\> Payroll \>\> Post-Dated Pay Rates)
 
 2. Select the employee ID and pay code.
 
@@ -2379,11 +2077,11 @@ the code in the current year.
 
 1. Open the Item Class Setup window.
 
-(HR & Payroll \>\> Setup \>\> Payroll \>\> Pay Code)
+    (HR & Payroll \>\> Setup \>\> Payroll \>\> Pay Code)
 
-(HR & Payroll \>\> Setup \>\> Payroll \>\> Benefit)
+    (HR & Payroll \>\> Setup \>\> Payroll \>\> Benefit)
 
-(HR & Payroll \>\> Setup \>\> Payroll \>\> Deduction)
+    (HR & Payroll \>\> Setup \>\> Payroll \>\> Deduction)
 
 1. Choose Pay Code, Benefit or Deduction.
 
@@ -2395,18 +2093,18 @@ the code in the current year.
     apply the changes to existing records. If you choose Yes, all records based
     on the record being inactivated also will be inactivated.
 
-*You can inactivate pay, benefit, and deduction codes at any time; the codes
-assigned to employees also will be inactivated.*
+> [!TIP]
+> You can inactivate pay, benefit, and deduction codes at any time; the codes assigned to employees also will be inactivated.
 
 **To delete a pay, benefit, or deduction code:**
 
 1. Open the Item Class Setup window.
 
-(HR & Payroll \>\> Setup \>\> Payroll \>\> Pay Code)
+    (HR & Payroll \>\> Setup \>\> Payroll \>\> Pay Code)
 
-(HR & Payroll \>\> Setup \>\> Payroll \>\> Benefit)
+    (HR & Payroll \>\> Setup \>\> Payroll \>\> Benefit)
 
-(HR & Payroll \>\> Setup \>\> Payroll \>\> Deduction)
+    (HR & Payroll \>\> Setup \>\> Payroll \>\> Deduction)
 
 1. Choose Pay Code, Benefit, or Deduction.
 
@@ -2414,10 +2112,10 @@ assigned to employees also will be inactivated.*
 
 3. Choose Delete.
 
-*If the selected deduction code is assigned to an employee card, you can’t
-delete it, even if the employee card has been inactivated.*
+> [!NOTE]
+> If the selected deduction code is assigned to an employee card, you can’t delete it, even if the employee card has been inactivated.
 
-**Chapter 4: Setting up taxes and compensation codes**
+### Chapter 4: Setting up taxes and compensation codes
 
 You can set up tax codes—including workers’ compensation, local, and
 unemployment taxes—that will be used as default entries for setting up
@@ -2600,7 +2298,7 @@ the tax rate won’t be applied when the maximum amount is reached.
 1. Open the Payroll Local Tax Setup window. (HR & Payroll \>\> Setup \>\>
     Payroll \>\> Local Tax)
 
-![A screenshot of a cell phone Description automatically generated](media/18fcb2fe462d9b4e41beb175bc0256f4.jpg)
+![A screenshot ](media/18fcb2fe462d9b4e41beb175bc0256f4.jpg)
 
 1. Enter or select a local tax code and a description.
 
@@ -2789,7 +2487,7 @@ enter the SUTA information, however, no change will take place.
 
 5. Choose File \>\> Print to print the Tax ID Setup Report.
 
-**Chapter 5: Setting up employee classes**
+### Chapter 5: Setting up employee classes
 
 You can set up employee classes to make entering employee information easier
 and to save data entry time. You can use employee classes to group employee
@@ -2809,8 +2507,8 @@ class, you can enter as much information as you need. If default information
 for the specific class doesn’t pertain to a particular employee, you can
 change the information for that employee in the Employee Maintenance window.
 
-*Before creating an employee class, you should have completed Setting up
-Payroll default entries .*
+> [!IMPORTANT]
+> Before creating an employee class, you should have completed Setting up Payroll default entries .
 
 This information is contained in the following sections:
 
@@ -3165,19 +2863,7 @@ tracking tips* for more information.
 1. Open the Employee Maintenance window. (HR & Payroll \>\> Cards \>\> Payroll
     \>\> Employee)
 
-![A screenshot of a cell phone Description automatically generated](media/6a0e4daae9eb17c33aa058f859855385.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot](media/6a0e4daae9eb17c33aa058f859855385.jpg)
 
 1. Enter an employee ID. *If you don’t enter an employee ID, Payroll retrieves
     the next employee ID for this field if employee IDs were auto-assigned in
@@ -3207,8 +2893,7 @@ A screenshot of a cell phone Description automatically generated
     If you enter a code that doesn’t already exist, you’ll have the option to
     enter the information needed to add the code.
 
-*If you’ve selected a class, this information will appear as a default
-entry. You can override any of the default information, if necessary.*
+    If you’ve selected a class, this information will appear as a default entry. You can override any of the default information, if necessary.
 
 1. Enter or select a location and supervisor for the employee.
 
@@ -3283,19 +2968,7 @@ hours per year, and posting account information.
 2. Enter or select an employee ID and choose Additional Information to open the
     Employee Additional Information Maintenance window.
 
-![A screenshot of a cell phone Description automatically generated](media/0a325f909f1f1ee2d85f5d4a4be08034.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+![A screenshot ](media/0a325f909f1f1ee2d85f5d4a4be08034.jpg)
 
 1. Enter the employee’s birth date, nickname, and alternate name—if applicable—
     and select the employee’s gender.
@@ -3365,12 +3038,8 @@ apply only in Payroll, and not in Human Resources.
 
 7. Choose OK to save your changes.
 
-*The SUTA and workers’ compensations codes are taken from the Employee*
-
-*Maintenance window. If that information does not exist, you must enter it
-in the Employee Maintenance window. A message will appear if any of the
-selected pay codes or benefit codes are subject to SUTA, or if a workers’
-compensation code was created in the Workers’ Compensation Setup window.*
+> [!NOTE]
+> The SUTA and workers’ compensations codes are taken from the Employee Maintenance window. If that information does not exist, you must enter it in the Employee Maintenance window. A message will appear if any of the selected pay codes or benefit codes are subject to SUTA, or if a workers’ compensation code was created in the Workers’ Compensation Setup window.
 
 #### Inactivating an employee card
 
@@ -3419,9 +3088,7 @@ active employees is less than the number your company is registered for.
 1. Open the Employee Maintenance window. (HR & Payroll \>\> Cards \>\> Payroll
     \>\> Employee)
 
-![](media/2298b740be1a0de30dd133ef4e2ea527.jpg)
-
-A screenshot of a cell phone Description automatically generated
+    ![screenshot](media/2298b740be1a0de30dd133ef4e2ea527.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3445,9 +3112,7 @@ A screenshot of a cell phone Description automatically generated
 
     - Direct Deposit
 
-If you’re using Human Resources and you selected Human Resources as your
-accrue type in the Attendance Setup window, you can mark the Time Records
-option.
+    If you’re using Human Resources and you selected Human Resources as your accrue type in the Attendance Setup window, you can mark the Time Records option.
 
 1. Choose OK. All marked records will be reactivated.
 
@@ -3556,19 +3221,7 @@ employee card .*
 1. Open the Employee Pay Code Maintenance window. (HR & Payroll \>\> Cards \>\>
     Payroll \>\> Pay Code)
 
-![A screenshot of a cell phone Description automatically generated](media/16760369754082cfedaae50db2ba65c2.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot](media/16760369754082cfedaae50db2ba65c2.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3591,10 +3244,7 @@ A screenshot of a cell phone Description automatically generated
     time pay rate is automatically recalculated every time the pay factor is
     changed. The pay factor information is saved with the pay code.
 
-*If your business needs require complex overtime calculations, consider
-using Overtime Rate Manager, which is included with Payroll Extensions. This
-module is part of the Human Resources and Payroll Suite, which can be
-installed as an additional product.*
+    If your business needs require complex overtime calculations, consider using Overtime Rate Manager, which is included with Payroll Extensions. This module is part of the Human Resources and Payroll Suite, which can be installed as an additional product.
 
 1. Enter the pay rate. The Payroll system adjusts the pay factor to equal this
     code’s pay rate divided by the base code pay rate, if any.
@@ -3610,10 +3260,7 @@ installed as an additional product.*
     - If the pay type is Salary or is based upon a Salary pay type, select a
         unit of pay to define how often the total salary is paid.
 
-*When the pay rate is changed for a pay code on which overtime or double
-time is based, the overtime or double time pay rate is automatically
-recalculated by multiplying the pay rate of the base pay code by the pay
-factor.*
+    When the pay rate is changed for a pay code on which overtime or double time is based, the overtime or double time pay rate is automatically recalculated by multiplying the pay rate of the base pay code by the pay factor.
 
 1. Select the pay period to determine how the wages will be annualized for tax
     calculating purposes. After you select a pay period, the pay per period will
@@ -3626,9 +3273,7 @@ factor.*
 
 3. Enter or select a shift code to assign to this pay code, if applicable.
 
-*The SUTA state and workers’ compensation code entered in the Employee
-Maintenance window for this employee will appear as default entries. You
-have the option of changing these codes.*
+    The SUTA state and workers’ compensation code entered in the Employee Maintenance window for this employee will appear as default entries. You have the option of changing these codes.
 
 1. Enter or select the state (using the two-letter abbreviation) for SUTA
     (state unemployment tax). If you are using pay steps, current and future pay
@@ -3666,21 +3311,13 @@ have the option of changing these codes.*
     For more information about accruing methods, refer to *Accrual methods for
     vacation and sick time* .
 
-If you’re using Human Resources and have Human Resources marked as the
-accrue type in the Attendance Setup window, these fields will not be
-available. Refer to the Human Resources documentation for more information.
+    If you’re using Human Resources and have Human Resources marked as the accrue type in the Attendance Setup window, these fields will not be available. Refer to the Human Resources documentation for more information.
 
 1. Enter W-2 information if the pay type is Business Expense.
 
-If the amount of the business expense should be included with gross wages on
-the W-2 statement, mark Report as Wages. If the business expense should also
-be printed in a special box on the W-2 statement, enter the number of the
-box in the W-2 Box field. Then, enter a label, if required, to be printed in
-the box on the W-2 statement.
+    If the amount of the business expense should be included with gross wages on the W-2 statement, mark Report as Wages. If the business expense should also be printed in a special box on the W-2 statement, enter the number of the box in the W-2 Box field. Then, enter a label, if required, to be printed in the box on the W-2 statement.
 
-If the amount must be reported in multiple locations on the W-2 statement,
-use the browse buttons to select an additional location, and enter the
-appropriate box number and label. You can specify as many as four locations.
+    If the amount must be reported in multiple locations on the W-2 statement, use the browse buttons to select an additional location, and enter the appropriate box number and label. You can specify as many as four locations.
 
 1. If you’re using Human Resources, choose Human Resources to open the Employee
     Pay Code HR Maintenance window, where you can enter and edit the employee’s
@@ -3689,12 +3326,9 @@ appropriate box number and label. You can specify as many as four locations.
 
 2. Choose Save to store the pay code.
 
-*Changes made to a pay code can be reflected in any pay codes that are based
-on it, causing the dependent codes, including overtime and double time
-codes, to recalculate their pay rates. Overtime and double time pay rates
-are also affected by changing the pay factor.*
+Changes made to a pay code can be reflected in any pay codes that are based on it, causing the dependent codes, including overtime and double time codes, to recalculate their pay rates. Overtime and double time pay rates are also affected by changing the pay factor.
 
-**Chapter 7: Tax cards**
+### Chapter 7: Tax cards
 
 You can set up tax cards and use them to track your individual employees’
 tax liabilities to various government agencies.
@@ -3736,19 +3370,7 @@ for federal taxes.
 1. Open the Employee Tax Maintenance window. (HR & Payroll \>\> Cards \>\>
     Payroll \>\> Tax)
 
-![A screenshot of a cell phone Description automatically generated](media/e79f455694461d269bc46933e6331df8.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot](media/e79f455694461d269bc46933e6331df8.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3816,19 +3438,7 @@ employee works in two states, you might need to set up two state tax cards.
 1. Open the Employee State Tax Maintenance window. (HR & Payroll \>\> Cards
     \>\> Payroll \>\> State Tax)
 
-![A screenshot of a cell phone Description automatically generated](media/a1583fd2f8ed71e5937ca3abde794ad9.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot ](media/a1583fd2f8ed71e5937ca3abde794ad9.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3880,19 +3490,7 @@ tax* for more information.
 1. Open the Employee Local Tax Maintenance window. (HR & Payroll \>\> Cards
     \>\> Payroll \>\> Local Tax)
 
-![A screenshot of a cell phone Description automatically generated](media/097d06aadd22726915ef8a56f7071066.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot ](media/097d06aadd22726915ef8a56f7071066.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3912,13 +3510,11 @@ A screenshot of a cell phone Description automatically generated
 5. Enter the number of exemptions this employee claims from local taxes if the
     locality allows exemptions to be taken.
 
-6. Enter any additional withholding the employee requests. *Choose Summary in
-    the Employee Local Tax Maintenance window to view local tax amounts or
-    financial information for an employee.*
+6. Enter any additional withholding the employee requests. Choose Summary in the Employee Local Tax Maintenance window to view local tax amounts or financial information for an employee.
 
 7. Choose Save to store the employee local tax information.
 
-**Chapter 8: Deduction and benefit cards**
+### Chapter 8: Deduction and benefit cards
 
 After you’ve set up deduction and benefit company cards, also known as
 deduction and benefit codes, you can enter employee deduction and benefit
@@ -7706,7 +7302,7 @@ tips and receipts to the federal government. You can modify or print Form
 8027 or its associated preparation report for a specific year as long as the
 year-end wage file exists for that year.
 
-**Chapter 22: Government form and report routines**
+### Chapter 22: Government form and report routines
 
 There are specific tasks that relate to government regulations and required
 forms, such as the W-2 and 1099-R statements.
@@ -7739,11 +7335,7 @@ before you can edit or print W-2 statements for a specific year.
 1. Open the Edit W-2 Information window.(HR & Payroll \>\> Routines \>\>
     Payroll \>\> Edit W-2s)
 
-![A screenshot of a cell phone Description automatically generated](media/9e6332cdad1fdc154295311ab32577f1.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot](media/9e6332cdad1fdc154295311ab32577f1.jpg)
 
 1. Select a sorting option at the bottom of the window. This determines how the
     employee IDs will be sorted in the lookup window and also the order the
@@ -7805,7 +7397,7 @@ printed on W-2 statements and then print the statements.
 1. Open the Print W-2 Forms window. (HR & Payroll \>\> Routines \>\> Payroll
     \>\> Print W-2s)
 
-![](media/365516adb0b6ca00c79fdf8767c69aab.jpg)
+    ![screenshot](media/365516adb0b6ca00c79fdf8767c69aab.jpg)
 
 1. Select a year to print W-2 statements for.
 
@@ -7818,9 +7410,7 @@ printed on W-2 statements and then print the statements.
     Qualified Government Employee for employees who are exempt from FICA Social
     Security tax but subject to FICA Medicare tax.
 
-*Medicare Qualified Government Employee must also be selected in the
-Employee Tax Maintenance window for each employee whose W-2 statement you’re
-printing.*
+    Medicare Qualified Government Employee must also be selected in the Employee Tax Maintenance window for each employee whose W-2 statement you’re printing.
 
 1. Enter a range of employee IDs or mark All to print W-2 statements for all
     employees.
@@ -7983,7 +7573,7 @@ information, refer to *Editing Form 8027 information* .
 
 5. Choose Print.
 
-**Part 7: Payroll Direct Deposit**
+## Part 7: Payroll Direct Deposit
 
 This part of the documentation describes how to use Payroll Direct Deposit
 to process a pay run and deposit employee Payroll funds to a bank account or
@@ -8019,7 +7609,7 @@ The following information is discussed:
 - *Chapter 29, “Payroll Direct Deposit reports,”* describes Payroll Direct
     Deposit reports you can use to monitor your direct deposit transactions.
 
-**Chapter 23: Payroll Direct Deposit setup**
+### Chapter 23: Payroll Direct Deposit setup
 
 Payroll Direct Deposit is a system of distributing employees’ earnings
 directly to their checking or savings accounts. Direct deposit relies upon
@@ -8260,27 +7850,16 @@ use, and the next earnings statement number.
 1. Open the Direct Deposit Setup window. (HR & Payroll \>\> Setup \>\> Payroll
     \>\> Direct Deposit)
 
-![A screenshot of a cell phone Description automatically generated](media/6cb1e11f305468be8d8102cefb6d1c26.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
+    ![A screenshot ](media/6cb1e11f305468be8d8102cefb6d1c26.jpg)
 1. Mark Active to turn on Payroll Direct Deposit.
 
-*You can mark Inactive to turn off Direct Deposit for a single pay run.
-However, we recommend that you select No Deposits this Payroll in the
-Deposit Method drop-down list in the Direct Deposit Print window.*
+    You can mark Inactive to turn off Direct Deposit for a single pay run. However, we recommend that you select No Deposits this Payroll in the Deposit Method drop-down list in the Direct Deposit Print window.
 
 1. Select an earnings statement print option.
 
-**Separate From Checks** Generates separate print jobs—one for employees who
-receive actual checks, and another for employees whose entire paychecks are
-deposited directly. With this option, you aren’t required to print voided
-checks for employees whose entire earnings are deposited directly; earnings
-statements for employees using Direct Deposit are printed.
+    - **Separate From Checks** Generates separate print jobs—one for employees who receive actual checks, and another for employees whose entire paychecks are deposited directly. With this option, you aren’t required to print voided checks for employees whose entire earnings are deposited directly; earnings statements for employees using Direct Deposit are printed.
 
-**As Voided Checks** Generates a single Payroll print job that will print a
-Payroll check for every employee. The print job will include voided checks
-for employees whose pay is entirely dispersed using Direct Deposit.
+    - **As Voided Checks** Generates a single Payroll print job that will print a Payroll check for every employee. The print job will include voided checks for employees whose pay is entirely dispersed using Direct Deposit.
 
 1. Enter the next earnings statement number that should appear on the next
     deposit slip. This number will increase automatically.
@@ -8389,7 +7968,7 @@ Deposit windows.
 
 6. Choose OK.
 
-**Chapter 24: ACH File setup**
+### Chapter 24: ACH File setup
 
 An ACH file is an Automated Clearing House transaction file—a text file
 containing a group of electronic payments that will be deposited into
@@ -8443,9 +8022,7 @@ affect the ACH files you generate, you can refer to the following
 illustrations. The information displayed in the following ACH File was
 generated from the ACH Fields Setup window shown.
 
-![A screenshot of text Description automatically generated](media/482cd47ebf113903f4dca8ac3db9dc29.jpg)
-
-A screenshot of text Description automatically generated
+![A screenshot](media/482cd47ebf113903f4dca8ac3db9dc29.jpg)
 
 **To set up the ACH fields:**
 
@@ -8544,7 +8121,7 @@ specific requirements for ACH file headers and footers.*
 
 4. Choose OK.
 
-**Chapter 25: Deduction Direct Deposit setup**
+### Chapter 25: Deduction Direct Deposit setup
 
 A deduction direct deposit account is set up as a link to a Payroll
 deduction, rather than as a separate Payroll direct deposit account entry.
@@ -8657,7 +8234,7 @@ into an account.
 *During a regular pay run, deduction direct deposit accounts with prenote
 status will be noted in the Exceptions Report.*
 
-**Chapter 26: Employee Direct Deposit maintenance**
+### Chapter 26: Employee Direct Deposit maintenance
 
 You’ll need to enter employee direct deposit information when an employee
 requests his or her Payroll funds be directed to a direct deposit account.
@@ -8725,9 +8302,7 @@ information for a specific employee.
 1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\>
     Cards \>\> Payroll \>\> Direct Deposit)
 
-![A screenshot of a cell phone Description automatically generated](media/cdedf76f47afdd0a550d3c6615aa1ae2.jpg)
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot ](media/cdedf76f47afdd0a550d3c6615aa1ae2.jpg)
 
 1. Select an Employee ID.
 
@@ -8903,7 +8478,7 @@ financial institution.
 
 4. Choose Save.
 
-**Chapter 27: Deduction Direct Deposit maintenance**
+### Chapter 27: Deduction Direct Deposit maintenance
 
 Use employee deduction direct deposits if an employee requests having some
 Payroll funds deposited into a direct deposit account and the remainder of
@@ -8975,12 +8550,11 @@ Exceptions Report.*
 8. Enter a Remainder of Net Line Number. This should be the last line number
     with bank account information.
 
-*A deduction direct deposit account cannot be assigned as a Remainder of Net
-account.*
+    A deduction direct deposit account cannot be assigned as a Remainder of Netaccount.
 
 1. Choose Save.
 
-**Chapter 28: Payroll Direct Deposit routines**
+### Chapter 28: Payroll Direct Deposit routines
 
 Adding Payroll Direct Deposit to Payroll will require you to vary the
 typical Payroll process routine. In addition to building, calculating,
@@ -9016,16 +8590,11 @@ Direct Deposit* for more information.
 1. Open the Print Payroll Checks window. (Transaction \>\> Payroll \>\> Print
     Checks)
 
-![A screenshot of a cell phone Description automatically generated](media/469bdd3fdf092d3a4244d06aa6a9f34e.jpg)
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot ](media/469bdd3fdf092d3a4244d06aa6a9f34e.jpg)
 
 1. Choose Process to calculate the direct deposit information.
 
-If some of the direct deposits weren’t made, an exceptions report will be
-printed. If you have exceptions, you can change them now and recalculate
-Payroll; however you aren’t required to change any exceptions before
-continuing with the Payroll process.
+    If some of the direct deposits weren’t made, an exceptions report will be printed. If you have exceptions, you can change them now and recalculate Payroll; however you aren’t required to change any exceptions before continuing with the Payroll process.
 
 1. If you set your Earnings Statements to print Separate from Checks in the
     Direct Deposit Setup window, you must print checks now. Later you can print
@@ -9051,13 +8620,9 @@ a format that closely resembles the original documents.*
     Post Payroll Checks window will open. Refer to *Calculating Payroll Direct
     Deposit information* for more information.
 
-*If your Deposit Method is Separate from Checks you must print the earnings
-statements now. You will not be able to print earnings statements after
-posting.*
+    If your Deposit Method is Separate from Checks you must print the earnings statements now. You will not be able to print earnings statements after posting.
 
-![A screenshot of a cell phone Description automatically generated](media/3f8cd1887e8f823280a01ea05821806e.jpg)
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot ](media/3f8cd1887e8f823280a01ea05821806e.jpg)
 
 1. Enter a posting date or accept the default date and select Print Earnings
     Statements in the Process field.
@@ -9110,9 +8675,7 @@ checks and earnings statements, and posting checks.
     current payrolls. After you have confirmed the bank has accepted the file,
     it would be recommended to delete the build from this window.
 
-![A screenshot of a cell phone Description automatically generated](media/b7b42445a4646772dfb65fb8936c4a70.jpg)
-
-A screenshot of a cell phone Description automatically generated
+    ![A](media/b7b42445a4646772dfb65fb8936c4a70.jpg)
 
 1. Mark Include all prenotes to include all existing prenotes for employees,
     including those not part of this pay run.
@@ -9122,19 +8685,12 @@ A screenshot of a cell phone Description automatically generated
     the Generate ACH File window is closed and the information will not be
     stored anywhere after the window closes.
 
-*If Delete build after use is not marked, the build will be available if you
-should need to generate the ACH file again.*
+    If Delete build after use is not marked, the build will be available if you should need to generate the ACH file again.
 
 1. Mark Include in the scrolling window for each entry to include in the ACH
     file.
 
-*Whether or not Include is automatically marked for a particular set of
-Payroll data will depend on if you marked Include Auto-Settle-Line in the
-ACH Fields Setup window when the data was generated. You can generate ACH
-files with Payroll data that includes that line, and you can generate ACH
-files with Payroll data that does not include that line. If you try to
-create an ACH file from a group of Payroll data files including some Payroll
-files with the line and some without, alert messages will be displayed.*
+    Whether or not Include is automatically marked for a particular set of Payroll data will depend on if you marked Include Auto-Settle-Line in the ACH Fields Setup window when the data was generated. You can generate ACH files with Payroll data that includes that line, and you can generate ACH files with Payroll data that does not include that line. If you try to create an ACH file from a group of Payroll data files including some Payroll files with the line and some without, alert messages will be displayed.
 
 1. Choose Create File to generate an ACH file. The ACH file will be written to
     the location you specified in the ACH File Location field. For more
@@ -9143,9 +8699,8 @@ files with the line and some without, alert messages will be displayed.*
 
 2. Select a print destination for the ACH Transmittal report.
 
-*This report is not the ACH file. The ACH file that you transmit to your
-financial institution will be written to the location specified in the ACH
-File Location field in the ACH Fields Setup window.*
+> [!NOTE]
+> This report is not the ACH file. The ACH file that you transmit to your financial institution will be written to the location specified in the ACH File Location field in the ACH Fields Setup window.
 
 #### Generating an ACH file with prenotes only
 
@@ -9177,7 +8732,7 @@ financial institution will be written to the location specified in the ACH
 File Location field in the ACH Fields Setup window. For more information,
 refer to Setting up the ACH fields .*
 
-**Chapter 29: Payroll Direct Deposit reports**
+### Chapter 29: Payroll Direct Deposit reports
 
 You can use Payroll Direct Deposit reports to help you monitor your direct
 deposit transactions. Use the information in this chapter to guide you

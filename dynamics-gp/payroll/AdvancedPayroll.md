@@ -53,7 +53,6 @@ Equivalent data as well as Productive and Non-Productive employee level
 data. Additional reporting features include Full-Time Equivalent Budgets and
 variances, current and YTD totals.
 
-
 ## CHAPTER 1: ADVANCED PAYROLL ESSENTIALS AND SETUP
 
 The objectives are:
@@ -151,12 +150,10 @@ Select **Windows** for the **Type**.
 - Expand the Payroll folder and select the HRM Solution Series radio button
     for each of the following Alternate Core Microsoft Dynamics GP windows.
 
-    - **Department Setup** o **Employee Maintenance** o **Employee Pay Code
-        Maintenance** o **Pay Code Setup** o **Payroll Mass Transaction Entry**
+    - **Department Setup** o **Employee Maintenance** o **Employee Pay Code Maintenance** o **Pay Code Setup** o **Payroll Mass Transaction Entry**
         o **Payroll Posting Accounts Setup**
 
-    - **Payroll Transaction Entry** o **Position Setup** o **Shift Code
-        Setup**
+    - **Payroll Transaction Entry** o **Position Setup** o **Shift Code Setup**
 
 Change the **Type** to **Report**.
 
@@ -400,9 +397,7 @@ Code to a Company defined in the system. To open this window, click the **HR
 and Payroll** series button, click **Pay Policy Manager** on the Setup
 content pane and then click **Company Pay Policy Setup**.
 
-![](media/4be45bdfbfa7fa5b8e5e1273c99fe1ca.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![screenshot](media/4be45bdfbfa7fa5b8e5e1273c99fe1ca.jpg)
 
 During the Adjusted Pay Rate calculations, this Add-On Code Amount may be
 applied to an employee’s pay rate.
@@ -441,14 +436,12 @@ Setup fields Shift Premium and Amount are not visible.
 
 Use the Pay Code Options window to designate a Linked Pay Code. To open this
 window, click the **HR and Payroll** series button, click **Pay Code** on
-the Setup content pane and then click **Pay**
-
-**Code Options** from the GoTo menu. The Pay Code Options window includes
+the Setup content pane and then click **Pay Code Options** from the GoTo menu. The Pay Code Options window includes
 functionality for Payroll Extensions and for Advanced Payroll.
 
 The functionality specific to Advanced Payroll is discussed here.
 
-![A screenshot of a cell phone Description automatically generated](media/1b7a7d0d2105d38b4f108fcbcae8a9ea.jpg)
+![A screenshot](media/1b7a7d0d2105d38b4f108fcbcae8a9ea.jpg)
 
 A linked pay code assigned disables the Use Add-On options. Pay Policy
 Manager also looks at the pay rate of the linked pay code, and it uses the
@@ -469,10 +462,8 @@ is currently eligible for the pay rate. When the Use Add-On option is
 selected and an Add-On Code is selected, this Add-On Code Amount is applied
 to an eligible employee’s pay rate.
 
-**NOTE:** *The Pay Code Setup information is for setup and default purposes
-only. It sets default values for any new Pay Code created using this Pay
-Code as the Based on Pay Code. It will also set default values when this Pay
-Code is associated with an Employee in the Employee Pay Code window.*
+> [!NOTE]
+> The Pay Code Setup information is for setup and default purposes only. It sets default values for any new Pay Code created using this Pay Code as the Based on Pay Code. It will also set default values when this Pay Code is associated with an Employee in the Employee Pay Code window.
 
 - Linked Pay Code
 
@@ -503,7 +494,7 @@ Adjusted Pay Rate scenarios. To open this window, click the **HR and
 Payroll** series button, click **Pay Policy Manager** on the Setup content
 pane and then click **Pay Policies**.
 
-![A screenshot of a cell phone Description automatically generated](media/3682febe7f8380e092213bf04723673a.jpg)
+![A screenshot](media/3682febe7f8380e092213bf04723673a.jpg)
 
 Use this window to assign and/or view typical Pay Policies by Pay Code, or
 to view Hypothetical Adjusted Pay Rates.
@@ -652,7 +643,7 @@ To open the Posting Setup window, click the **Administration** series
 button, click **Posting** on the Setup content pane and then click **Payroll
 Accounts.**
 
-![A screenshot of a cell phone Description automatically generated](media/38faa911c7b27828dae0557600159f32.jpg)
+![A screenshot](media/38faa911c7b27828dae0557600159f32.jpg)
 
 The modified Payroll Posting Accounts Setup window has the “Unit
 
@@ -750,7 +741,7 @@ The Pay Frequency of “Biweekly” has been entered indicating that payroll is
 processed every other week. Any accruals posted to General Ledger in this
 window will be automatically reversed on 5/2/2017.
 
-![A screenshot of a cell phone Description automatically generated](media/1859a5d77be20b8a7241e4ea2624640f.jpg)
+![A screenshot ](media/1859a5d77be20b8a7241e4ea2624640f.jpg)
 
 Two pay runs are marked in the scrolling window above. When the Calculate
 button is selected, the Total Gross Wages are equal to sum of the Gross
@@ -790,7 +781,7 @@ To open the Labor Accrual Accounts Setup window, click the **HR and
 Payroll** series button, click **Payroll** on the Setup content pane, and
 click **Labor Accrual Accounts.**
 
-![A screenshot of a social media post Description automatically generated](media/48e1813c069cc3809e85f08cf7e45bcb.jpg)
+![A screenshot ](media/48e1813c069cc3809e85f08cf7e45bcb.jpg)
 
 The Labor Accrual Accounts window displays all General Ledger Posting
 Accounts currently assigned in the Payroll Posting Accounts Setup window for
@@ -919,7 +910,7 @@ To open the Labor Reporting Accounts window, click the **HR and Payroll**
 series button, click **Payroll** on the Setup content pane, click **Advanced
 Labor Reporting** and then click **Labor Reporting Accounts**.
 
-![A screenshot of a social media post Description automatically generated](media/1496d6c0f31bccc37099c5590b1b3092.jpg)
+![A screenshot](media/1496d6c0f31bccc37099c5590b1b3092.jpg)
 
 The Labor Accrual Accounts window displays all General Ledger Unit Accounts
 currently assigned in the Payroll Posting Accounts Setup window for Gross
@@ -942,7 +933,7 @@ click
 
 **Advanced Labor Reporting** and then click **Areas of Responsibility**.
 
-![A screenshot of a cell phone Description automatically generated](media/7977806af2f0ec351776e5cb71069fb1.jpg)
+![A screenshot](media/7977806af2f0ec351776e5cb71069fb1.jpg)
 
 Area of Responsibility Setup is an option available with Advanced Labor
 Reporting that enables groupings of departments to be created as they relate
@@ -1066,18 +1057,13 @@ selected. Frequency and Associated Hours:
 
 The FTE Calculations formula and examples follow:
 
-- The 5.6986 factor =\> 1 FTE = 2080 hours worked per year / 365 days in a
-    year.
+- The 5.6986 factor =\> 1 FTE = 2080 hours worked per year / 365 days in a year.
 
-- System will calculate the (total hours) divided by (number of days included
-    in the selected period (counting Feb 29 when appropriate) x 5.6986) = FTE
-    for report.
+- System will calculate the (total hours) divided by (number of days included in the selected period (counting Feb 29 when appropriate) x 5.6986) = FTE for report.
 
-- **Example:** (173.33 hours) divided by (31 days x 5.6986 = 176.6575) = .981
-    FTE.
+- **Example:** (173.33 hours) divided by (31 days x 5.6986 = 176.6575) = .981 FTE.
 
-- **Example:** (173.33 hours) divided by (30 days x 5.6986 = 176.6575) = 1.014
-    FTE.
+- **Example:** (173.33 hours) divided by (30 days x 5.6986 = 176.6575) = 1.014 FTE.
 
 ### Summary
 
@@ -1249,7 +1235,7 @@ to specify when an employee is eligible for the Pay Code rate adjustments
 defined. The Use Add-On checkbox must be selected for an employee’s rate to
 pay rate adjustments to be calculated.
 
-![A screenshot of a social media post Description automatically generated](media/10d43b370e55069491f108e962d29310.jpg)
+![A screenshot](media/10d43b370e55069491f108e962d29310.jpg)
 
 ### Use Add-On Employee’s
 
@@ -1278,7 +1264,7 @@ payroll transactions. To open this window, click the **HR and Payroll**
 series button, click **Payroll** on the Cards content pane, and then click
 **Pay Policies**.
 
-![A screenshot of a cell phone Description automatically generated](media/0a40d3be32d5491e1636f612d457a794.jpg)
+![A screenshot ](media/0a40d3be32d5491e1636f612d457a794.jpg)
 
 The Employee Pay Policy Exceptions window allows Add-On Rate adjustments to
 be defined for an individual employee based on a combination of Company ID,
