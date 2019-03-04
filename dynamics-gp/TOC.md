@@ -27,6 +27,7 @@
 ### Additional clients
 #### [Creating an installation package](installation/creating-an-installation-package.md)
 #### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
+### [Professional Service Tools Library](installation/ProfServicesToolsLibrary.md)
 
 <!--- web components -->
 ### Web components
@@ -82,7 +83,9 @@
 <!--- financials -->
 ## Financials
 ### [Bank Reconciliation](financials/BankReconciliation.md)
+### [Cash Flow Mananagement](financials/CashFlowManagement.md)
 ### [Inter Company Processing](financials/IntercompanyProcessing.md)
+### [Payment Document Management](financials/PaymentDocumentManagement.md)
 ### [Receivables Management](financials/receivables-management.md)
 #### [Part 1: Setup and cards](financials/receivables-management.md#part-1-setup-and-cards)
 #### [Part 2: Transaction entry](financials/receivables-management-part2-transaction-entry.md)
@@ -98,6 +101,7 @@
 <!--- distribution -->
 ## Distribution
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
+### [Concur Expense](distribution/ConcurExpense.md)
 ### [Purchase Order Processing](distribution/purchase-order-processing.md)
 #### [Part 1: Setup and cards](distribution/purchase-order-processing.md#part-1-setup-and-cards)
 #### [Part 2: Purchase orders](distribution/purchase-order-processing-part2-orders.md)
@@ -115,9 +119,11 @@
 ### [Glossary](distribution/glossary.md)
 
 <!--- payroll -->
-## Payroll 
+## Payroll
+### [Advanced Payroll](payroll/AdvancedPayroll.md)
 ### [Canadian Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
+### [U.S. Payroll](payroll/PayrollUS.md)
 ### [Payroll Extensions](payroll/PayrollExtensions.md)
 ### [U.S. Year-End](payroll/us-year-end.md)
 ### [W-2 Source](payroll/W-2-statement.md)
