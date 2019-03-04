@@ -336,8 +336,8 @@ second check box and close the Professional Services Tools Library window.
 The Next button will be unavailable once the second check box is marked for
 certain tools that do not require further setup.
 
-> [!NOTE]
-> If additional products are installed, all 3rd party tables should be tested for validation.
+*If additional products are installed, all 3rd party tables should be tested
+for validation.*
 
 ### Security setup
 
@@ -347,12 +347,22 @@ either add the task to an existing role ID or create a new role ID. The
 instructions provided demonstrate how to create a new task, new role ID, and
 apply the new role ID to a user through User Security Setup.
 
-> [!IMPORTANT]
-> Predefined security tasks and roles are not set up in Microsoft Dynamics GP for Professional Services Tools Library. If you want to log in as a user other than “sa,” you must set up security tasks and roles specific for each desired user(s).
-Regardless of how role-based security is defined in Microsoft Dynamics GP, there are multiple Professional Services Tools that require the user be logged in as “sa.” Refer to Before you begin on page 1 for information on the specific tools.
-In order for a tool to execute properly and run reports as designed, all operations relating to the Reports and Files associated to the tools must be given access along with the Window Type.
+*Predefined security tasks and roles are not set up in Microsoft Dynamics GP
+for Professional Services Tools Library. If you want to log in as a user
+other than “sa,” you must set up security tasks and roles specific for each
+desired user(s).*
 
-Some of the options in creating a security task illustrated below can be changed depending on what type of security you need.
+*Regardless of how role-based security is defined in Microsoft Dynamics GP,
+there are multiple Professional Services Tools that require the user be
+logged in as “sa.” Refer to Before you begin on page 1 for information on
+the specific tools.*
+
+*In order for a tool to execute properly and run reports as designed, all
+operations relating to the Reports and Files associated to the tools must be
+given access along with the Window Type.*
+
+*Some of the options in creating a security task illustrated below can be
+changed depending on what type of security you need.*
 
 **Security task setup:**
 
@@ -414,7 +424,9 @@ Some of the options in creating a security task illustrated below can be changed
 1. Go to Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\>
     Security Roles
 
-2. Select the desired User from the lookup window that you want to grant access to the newly defined Security Role ID.
+2. Select the desired User from the lookup window that you want to grant access
+
+to the newly defined Security Role ID.
 
 1. Select the appropriate Company from the Company drop-down list.
 
@@ -441,7 +453,9 @@ Tools. Information is divided into the following sections:
 Use this tool to copy the Shortcuts options from one user to another user
 with the click of a button. With the Shortcuts Copy tool, you don’t have to
 manually set the shortcuts up for each user on the system. This is
-especially useful when macros are used with a window (e.g., Purchase Order entry to always add item).
+especially useful when macros are used with a window
+
+(e.g., Purchase Order entry to always add item).
 
 **To copy a shortcut:**
 
@@ -458,8 +472,9 @@ especially useful when macros are used with a window (e.g., Purchase Order entry
 
 5. An alert message signals the end of the Shortcuts copy process.
 
-> [!NOTE]
-> No Report Destination window will appear after using this tool. To verify the results, simply check to see if the users specified to have the Shortcuts copied have the same Shortcuts button.
+*No Report Destination window will appear after using this tool. To verify
+the results, simply check to see if the users specified to have the
+Shortcuts copied have the same Shortcuts button.*
 
 ### Using Toolkit
 
@@ -483,8 +498,8 @@ Microsoft Dynamics GP.
 
 There are several options when selecting Recreate SQL Objects.
 
-> [!IMPORTANT]
-> You should have all users out of the system when re-creating any objects using this tool.
+*You should have all users out of the system when re-creating any objects
+using this tool.*
 
 1. Select Recreate SQL Objects under the Toolkit Options heading and choose
     Next.
@@ -497,7 +512,7 @@ There are several options when selecting Recreate SQL Objects.
     Maintenance Options group.
 
     > [!CAUTION]
-    > When re-creating tables there is an additional check box, Recreate data for selected table(s). If you mark this option the table will be re-created and the data will be left intact. If you leave the option unmarked the table will be re-created and the data will be lost.
+    > Negative potential consequences of an actionWhen re-creating tables there is an additional check box, Recreate data for selected table(s). If you mark this option the table will be re-created and the data will be left intact. If you leave the option unmarked the table will be re-created and the data will be lost.
 
 1. Choose Perform Selected Maintenance to proceed.
 
@@ -576,8 +591,9 @@ involved in the combiner portion of the utility currently exist in the
 system, while the new account number in the modifier portion is introduced
 as a new number to the system.
 
-> [!NOTE]
-> Please remember to run the reconcile process for all your open and historical years after using the account modifier/combiner to ensure that detail and summary records agree.
+*Please remember to run the reconcile process for all your open and
+historical years after using the account modifier/combiner to ensure that
+detail and summary records agree.*
 
 When you attempt to modify a larger set of accounts such as 150 and use the
 range option, you may notice slower performance and Dynamics GP may eventually
@@ -624,8 +640,8 @@ without any loss of data.
     modifications and combinations that took place, as well as all accounts that
     were modified and combined.
 
-> [!NOTE]
-> If you are running Management Reporter with Data Mart, you will need to rebuild the Data Mart after you complete the Account changer process.
+*If you are running Management Reporter with Data Mart, you will need to
+rebuild the Data Mart after you complete the Account changer process.*
 
 **To change a range of accounts:**
 
@@ -635,23 +651,25 @@ without any loss of data.
 2. After the account segment has been identified, enter a new segment value and
     choose Convert. The accounts will change throughout the system.
 
-    > [!NOTE]
-    > When using the Range convert option, combines cannot be done. If any of the changes require a combine, the change will not take place. If combines are required for many accounts, use the Import option.
+*When using the Range convert option, combines cannot be done. If any of the
+changes require a combine, the change will not take place. If combines are
+required for many accounts, use the Import option.*
 
-    This table is an example showing what would happen if segment 1 was changed from 111 to 222.
+This table is an example showing what would happen if segment 1 was changed
+from 111 to 222.
 
-    | **Range of accounts selected** | **New account structure** |
-    |--------------------------------|---------------------------|
-    | 111-1111-11                    | 222-1111-11               |
-    | 111-1111-12                    | 222-1111-12               |
-    | 111-1111-13                    | 222-1111-13               |
-    | 111-1111-14                    | 222-1111-14               |
-    | 111-1111-15                    | 222-1111-15               |
-    | 111-1111-16                    | 222-1111-16               |
-    | 111-1111-17                    | 222-1111-17               |
-    | 111-1111-18                    | 222-1111-18               |
-    | 111-1111-19                    | 222-1111-18               |
-    | 111-1111-20                    | 222-1111-20               |
+| **Range of accounts selected** | **New account structure** |
+|--------------------------------|---------------------------|
+| 111-1111-11                    | 222-1111-11               |
+| 111-1111-12                    | 222-1111-12               |
+| 111-1111-13                    | 222-1111-13               |
+| 111-1111-14                    | 222-1111-14               |
+| 111-1111-15                    | 222-1111-15               |
+| 111-1111-16                    | 222-1111-16               |
+| 111-1111-17                    | 222-1111-17               |
+| 111-1111-18                    | 222-1111-18               |
+| 111-1111-19                    | 222-1111-18               |
+| 111-1111-20                    | 222-1111-20               |
 
 1. When the process is finished, choose OK. You will be asked if you want to
     combine any accounts.
@@ -692,8 +710,12 @@ lookup'.
 3. After entering the account numbers, select the Convert button to make the
     change throughout the system.
 
-    > [!NOTE]
-    > Account Combiner works under the assumption that both accounts have the same posting type — either Balance Sheet or Profit and Loss. You cannot combine a Balance Sheet account into a Profit and Loss account or combine a Profit and Loss account into a Balance Sheet account. The Beginning Balance entries would be invalid if you cross match a Balance Sheet account with a Profit and Loss account.
+*Account Combiner works under the assumption that both accounts have the
+same posting type — either Balance Sheet or Profit and Loss. You cannot
+combine a Balance Sheet account into a Profit and Loss account or combine a
+Profit and Loss account into a Balance Sheet account. The Beginning Balance
+entries would be invalid if you cross match a Balance Sheet account with a
+Profit and Loss account.*
 
 1. Choose a report destination. The report will list all the account
     modifications and combinations that took place, as well as all accounts that
@@ -704,10 +726,11 @@ lookup'.
 1. Enter existing account numbers in the first column of data in the
     spreadsheet, as you would enter it in the Account Number field.
 
-2. The second column of data should contain the new account numbers, as you would enter it in Convert To Account Number field.
+2. The second column of data should contain the new account numbers, as you
 
-    > [!NOTE]
-    > Be sure to include dashes in the account numbers.
+would enter it in Convert To Account Number field.
+
+*Be sure to include dashes in the account numbers.*
 
 1. Save your spreadsheet as a text file.
 
@@ -717,7 +740,8 @@ lookup'.
     button first. Select the text spreadsheet file and choose Open to start the
     validation process.
 
-    The Validate button will verify that each current account number exists in your system before the conversion is performed.
+The Validate button will verify that each current account number exists in
+your system before the conversion is performed.
 
 1. Once the validation report contains no errors, choose Modify and select your
     validated text spreadsheet to change or combine accounts.
@@ -730,15 +754,17 @@ now contained in a Microsoft SQL Server table called TACHANGE.
 
 If you want to preview the changes that are about to occur on the system
 before combining accounts, perform a select statement against the TACHANGE
-table (Select\* from TACHANGE) to view the valid mappings from your spreadsheet.
+table (Select
+
+\* from TACHANGE) to view the valid mappings from your spreadsheet.
 
 If you see an error in the TACHANGE table due to a mistake in the
 spreadsheet, simply make the change to your spreadsheet and import the
 spreadsheet again. The old mappings from the spreadsheet will be deleted and
 the new ones will be inserted into the TACHANGE table.
 
-> [!NOTE]
-> You must perform the select statement in Microsoft SQL Server before closing the Account Modifier/Combiner window.
+*You must perform the select statement in Microsoft SQL Server before
+closing the Account Modifier/Combiner window.*
 
 ### Checkbook Modifier
 
@@ -753,7 +779,9 @@ A screenshot of a cell phone Description automatically generated
 
 **To change a checkbook ID:**
 
-1. Enter the Starting Checkbook ID and Ending Checkbook ID in the window, and choose Convert.
+1. Enter the Starting Checkbook ID and Ending Checkbook ID in the window, and
+
+choose Convert.
 
 1. You will be prompted to back up your database. Choose Continue once you have
     a backup of the database you are changing. An alert message will signal the
@@ -773,12 +801,13 @@ data in the open and history tables.
 
 A screenshot of a cell phone Description automatically generated
 
-> [!IMPORTANT]
-> Before changing data in the company, make a backup of the company
-database.
+*Before changing data in the company, make a backup of the company
+database.*
 
-> [!NOTE]
-> This tool does not support changing the month and/or day on closed years as the tool does not recalculate the ending and beginning balances. Only use the Fiscal Period Modifier to change the Year stamp back for years that are currently closed.
+*This tool does not support changing the month and/or day on closed years as
+the tool does not recalculate the ending and beginning balances. Only use
+the Fiscal Period Modifier to change the Year stamp back for years that are
+currently closed.*
 
 **To change fiscal year definitions:**
 
@@ -810,8 +839,13 @@ This tool allows you to create General Ledger account master records and
 replicate records to another database on the same server. You can also
 choose to replicate these records to some or all of your companies.
 
-> [!NOTE]
-> If you are using Integration Manager to import account, customer, or vendor master records to the main company database and the integration fails for any reason, any records imported to the main company database will be deleted (rolled back). However, if you have enabled master record triggers, the records will be replicated to company databases that you specify in the Replicate To DB field, and will not be rolled back. You must delete such replicated records manually.
+*If you are using Integration Manager to import account, customer, or vendor
+master records to the main company database and the integration fails for
+any reason, any records imported to the main company database will be
+deleted (rolled back). However, if you have enabled master record triggers,
+the records will be replicated to company databases that you specify in the
+Replicate To DB field, and will not be rolled back. You must delete such
+replicated records manually.*
 
 **To create and update General Ledger account master records:**
 
@@ -821,13 +855,18 @@ choose to replicate these records to some or all of your companies.
 2. In the Replicate To DB field, choose the database to which the master
     records will be copied.
 
-    > [!NOTE]
-    > To use General Ledger Master Triggers, the “Replicate To” database must have the same company account structure setup as the Master database. This information can be found using query analyzer and doing a query on the SY00300 table against each database, or in Microsoft Dynamics GP you can go to Microsoft Dynamics GP menu \>\>Tools \>\> Setup \>\> Company \>\> Account Format. The same number of Segments must be setup, and each Segment must be the same length.
+*To use General Ledger Master Triggers, the “Replicate To” database must
+have the same company account structure setup as the Master database. This
+information can be found using query analyzer and doing a query on the
+SY00300 table against each database, or in Microsoft Dynamics GP you can go
+to Microsoft Dynamics GP menu \>\>Tools \>\> Setup \>\> Company \>\> Account
+Format. The same number of Segments must be setup, and each Segment must be
+the same length.*
 
 1. Mark the Accounts option.
 
-    > [!NOTE]
-    > You will not be able to mark a check box if you are not registered for that particular Master Trigger.
+*You will not be able to mark a check box if you are not registered for that
+particular Master Trigger.*
 
 Close Master Triggers Setup. When you create or update a master record in
 the database you entered in the Master DB field, the record will be inserted
@@ -862,12 +901,12 @@ Use this tool to change the Customer Name. You can change an existing
 customer name to a new customer name without any loss of work, open, or
 historical records.
 
-> [!IMPORTANT]
-> This tool requires that the user be logged in as “sa.”
+*This tool requires that the user be logged in as “sa.”*
 
 **To change a customer name:**
 
-1. Enter the Starting Customer Number that you want to modify. The existing Starting Customer Name will appear automatically.
+1. Enter the Starting Customer Number that you want to modify. The existing
+    Starting Customer Name will appear automatically.
 
 2. Enter the Ending Customer Name, or the name you want to change to.
 
@@ -887,8 +926,13 @@ Use this tool to create customer and customer address master records and
 replicate records to another database on the same server. You can also
 choose to replicate these records to some or all of your companies.
 
-> [!NOTE]
-> If you are using Integration Manager to import account, customer, or vendor master records to the main company database and the integration fails for any reason, any records imported to the main company database will be deleted (rolled back). However, if you have enabled master record triggers, the records will be replicated to company databases that you specify in the Replicate To DB field, and will not be rolled back. You must delete such replicated records manually.
+*If you are using Integration Manager to import account, customer, or vendor
+master records to the main company database and the integration fails for
+any reason, any records imported to the main company database will be
+deleted (rolled back). However, if you have enabled master record triggers,
+the records will be replicated to company databases that you specify in the
+Replicate To DB field, and will not be rolled back. You must delete such
+replicated records manually.*
 
 If you utilize the RM and PM Master triggers in the Professional Service Tools
 Library and a customer or vendor has an address with more than 31 characters in
@@ -900,12 +944,14 @@ the field, the system will truncate any characters after 31.
     updating records.
 
 2. In the Replicate To DB field, choose the database to which the master
-    records will be copied.
+    records
+
+will be copied.
 
 1. Mark the Customers option.
 
-    > [!NOTE]
-    > You will not be able to select an option if you are not registered for that particular Master Trigger.
+*You will not be able to select an option if you are not registered for that
+particular Master Trigger.*
 
 1. Close Master Triggers Setup. When you create or update a master record in
     the database you entered in the Master DB field, the record will be inserted
@@ -919,10 +965,14 @@ discounts and/or write- offs associated with the document. You can reapply
 the records as needed. Using this tool can be a good alternative to removing
 history and reentering data if records were applied incorrectly.
 
-> [!NOTE]
-> If a discount and/or write-offs exist, a General Ledger journal transaction will be created using the original distributions of the document and the transaction will be in a batch in the General Ledger. An edit list can be printed prior to posting into the General Ledger.
-> 
-> The Receivables Management Transaction Unapply tool does not allow users to unapply Multi-currency documents that have discounts and/or write-offs associated with them.
+*If a discount and/or write-offs exist, a General Ledger journal transaction
+will be created using the original distributions of the document and the
+transaction will be in a batch in the General Ledger. An edit list can be
+printed prior to posting into the General Ledger.*
+
+*The Receivables Management Transaction Unapply tool does not allow users to
+unapply Multi-currency documents that have discounts and/or write-offs
+associated with them.*
 
 **To unapply Receivables Management transactions:**
 
