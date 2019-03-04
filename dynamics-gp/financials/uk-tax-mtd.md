@@ -62,17 +62,17 @@ To enable the connection, you must create a new VAT return.
 
     The screenshot above is based on a test environment with quarterly VAT tax and only 2 obligation periods open. Your view will be different.
 
-5. When you return to the **VAT Return** window, VAT is calculated for you as shown in the following picture.
+5. When you return to the **VAT Return** window, click Calculate to have the system calculate VAT for you as shown in the following picture.
 
     ![Screenshot](media/uk-tax-vat-return2.png)
 
     If the calculations are not correct, you can clear the window at this time. Then repeat steps above when ready. Click **Save** to save the information.
 
-6. When you save the VAT return, the **Final Return** checkbox becomes editable. You must choose it before you can submit.
+6. When you save the VAT return, VAT box fields are now editable so any further corrections can be made.
 
     ![Screenshot](media/uk-tax-vat-return3.png)
 
-    If the **Final Return** is marked, the VAT box fields are also made editable. If needed, you can edit the fields in this window now.
+    The **Final Return** checkbox is also editable and it must be marked before you can submit. 
 
     ![Screenshot](media/uk-tax-vat-return4.png)
 
@@ -88,3 +88,6 @@ When the submission is complete you will see the VAT Response window.
 
 > [!NOTE]
 > After submitting the return, if the progress window does not start and there is no response window, it could be a proxy server issue. For more information, see [https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access](https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access)  
+
+>  [!NOTE]
+> The above Making Tax Digital process of submitting to the HMRC also works for the VAT Daybook module in Dynamics GP. 
