@@ -875,22 +875,6 @@ Microsoft Dynamics GP by status and user type.
 
 ![A screenshot of a cell phone Description automatically generated](media/1ba2aca4be46f6e8275927ee7fe189cc.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
 1.  In the User ID field, enter a user ID, which will be used throughout
     Microsoft Dynamics GP to identify this person.
 
@@ -1328,6 +1312,8 @@ A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
+A screenshot of a cell phone Description automatically generated
+
 1.  Enter a task ID.
 
 2.  To save time, you can copy all security settings from an existing task into
@@ -1383,6 +1369,8 @@ A screenshot of a cell phone Description automatically generated
     \>\> Security Roles)
 
 ![A screenshot of a cell phone Description automatically generated](media/10c8729e9adffcaaf66082e947203be5.jpg)
+
+A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1902,6 +1890,8 @@ Chapter 7: Field level security
 >   tables.
 
 ![A screenshot of a cell phone Description automatically generated](media/9501a5b0f86e4daf4c4a2ff7c7d537b8.jpg)
+
+A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2460,6 +2450,8 @@ A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
+A screenshot of a cell phone Description automatically generated
+
 1.  In the Address ID field, enter an ID for the company’s main address.
 
 2.  Enter the company’s main address.
@@ -2712,6 +2704,8 @@ A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
+A screenshot of a cell phone Description automatically generated
+
 1.  In the Label 1 field, enter text to describe the information you’ll track in
     the first field in the Internet Information window.
 
@@ -2927,6 +2921,8 @@ Setting up an account format
     Company \>\> Account Format)
 
 ![A screenshot of a cell phone Description automatically generated](media/f5638ab72682907c126d2c65cdf97b23.jpg)
+
+A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
@@ -3353,6 +3349,8 @@ A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
+A screenshot of a cell phone Description automatically generated
+
 1.  Enter the year.
 
 2.  Enter the first day and last day of the fiscal year. The fiscal year can be
@@ -3650,6 +3648,8 @@ A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
+A screenshot of a cell phone Description automatically generated
+
 1.  Select a series.
 
 2.  Enter the number you want assigned to the next posting journal. (This number
@@ -3879,6 +3879,8 @@ Specifying posting settings
     Posting)
 
 ![A screenshot of a cell phone Description automatically generated](media/4e8a12d13b32c75ecd70bf1d163f9c47.jpg)
+
+A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
@@ -4355,6 +4357,8 @@ A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
+A screenshot of a cell phone Description automatically generated
+
 1.  In the Currency ID field, enter or select a name for the currency.
 
 2.  In the Description, ISO code, and Symbol fields, enter the information
@@ -4377,6 +4381,8 @@ Setting company access to a currency
     System \>\> Multicurrency Access)
 
 ![A screenshot of a social media post Description automatically generated](media/49e2ad74f226cca891096833654940c4.jpg)
+
+A screenshot of a social media post Description automatically generated
 
 A screenshot of a social media post Description automatically generated
 
@@ -4407,6 +4413,8 @@ Specifying functional and reporting currencies
     \>\> Multicurrency)
 
 ![A screenshot of a cell phone Description automatically generated](media/0021253e7b7b9e45cf5e9307085e5ff6.jpg)
+
+A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
@@ -4921,6 +4929,8 @@ A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
+A screenshot of a cell phone Description automatically generated
+
 1.  Mark whether to embed documents into the body of e-mail messages.
 
 2.  Mark whether to send documents as attachments in e-mail messages.
@@ -5366,6 +5376,8 @@ documents.
     Company \>\> Document Attachment Setup)
 
 ![A screenshot of a cell phone Description automatically generated](media/10be6d55ac272c0795d57e8d16f30054.jpg)
+
+A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
@@ -6584,6 +6596,8 @@ A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
+A screenshot of a cell phone Description automatically generated
+
 1.  Enter a tax detail ID and a description for the detail. You may want to use
     a descriptive ID that will identify the tax as sales or purchases, such as
     NY-S for a New York sales tax or GST-P for purchases.
@@ -6925,6 +6939,8 @@ Chapter 24: Plan the Workflow setup
 For example, your diagram may look similar to the following workflow diagram.
 
 ![A close up of text on a white background Description automatically generated](media/34ffe680f9aecfc6c3e3b8d38d641f06.png)
+
+A close up of text on a white background Description automatically generated
 
 A close up of text on a white background Description automatically generated
 
@@ -7364,6 +7380,8 @@ A screenshot of a cell phone Description automatically generated
 
 A picture containing text Description automatically generated
 
+A picture containing text Description automatically generated
+
 >   The system starts by evaluating the first steps to determine if approval is
 >   required there. Since the purchase order meets the conditions specified in
 >   both first steps, it is sent to Frank and Jill for approval.
@@ -7378,6 +7396,8 @@ A picture containing text Description automatically generated
 >   approver, or manager if there is no alternate final approver.
 
 ![A close up of text on a white background Description automatically generated](media/09d758cba8f353da19c056ecc43cf341.jpg)
+
+A close up of text on a white background Description automatically generated
 
 A close up of text on a white background Description automatically generated
 
@@ -7593,6 +7613,8 @@ Chapter 28: Configure a workflow step
 >   reach step 2b, so Jill’s approval is not required in those situations.
 
 ![A close up of a map Description automatically generated](media/593b35ed918329627fc97968fe021ce3.jpg)
+
+A close up of a map Description automatically generated
 
 >   **Action is required under specific conditions** If approval or a task at
 >   this step is required only under specific conditions, select the Action is
@@ -9410,6 +9432,8 @@ Chapter 37: Business Alerts setup
     Joining Tables window, choose Next.)
 
 ![A screenshot of a cell phone Description automatically generated](media/9ba55c82d022e9b00803bfe756533d27.jpg)
+
+A screenshot of a cell phone Description automatically generated
 
 1.  Build the formula by adding columns, constants, and operators to the
     business alert formula.
