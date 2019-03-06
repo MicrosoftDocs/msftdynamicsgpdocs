@@ -23,50 +23,27 @@ Microsoft Dynamics GP Advanced Payroll includes the following modules:
 
 - Advanced Labor Reporting
 
-**Pay Policy Manager** integrates with the Microsoft Dynamics GP Payroll
-module. When entering transactions through the Transaction Entry window the
-pay rate is adjusted based on the Employee, Employee Pay Code, Company,
-Department, Position and Shift Code selected, or the linked pay code
-selections on the Employee Pay Code Options window. The pay rate calculated
-is saved at the time the transaction is entered for use during that pay run.
+**Pay Policy Manager** integrates with the Microsoft Dynamics GP Payroll module. When entering transactions through the Transaction Entry window the pay rate is adjusted based on the Employee, Employee Pay Code, Company, Department, Position and Shift Code selected, or the linked pay code selections on the Employee Pay Code Options window. The pay rate calculated is saved at the time the transaction is entered for use during that pay run.
 
-**Payroll Hours to General Ledger** allows setup for the system to post
-actual labor hours to General Ledger Unit Accounts. The Microsoft Dynamics
-GP Payroll Posting Account setup window has been modified to allow a Unit
-Account to be assigned. Additionally, there is an option on the Pay Code
-Setup that allows, at a Pay Code level, which payroll transaction hours are
+**Payroll Hours to General Ledger** allows setup for the system to post actual labor hours to General Ledger Unit Accounts. The Microsoft Dynamics GP Payroll Posting Account setup window has been modified to allow a Unit Account to be assigned. Additionally, there is an option on the Pay Code Setup that allows, at a Pay Code level, which payroll transaction hours are
 posted.
 
-**Labor Accrual Manager** is designed specifically to fulfill the need of
-companies that are required to account for payroll accruals within a month
-that are not accounted for when the pay period ends prior to the end of that
-month. Once per month, near or shortly after the end of a month, accounting
-personnel must create payroll accruals for accurate financial reporting.
-Labor Accrual Manager fulfills this need as it allows the creation of the
-payroll accruals and posting to the general ledger as well as setting a
+**Labor Accrual Manager** is designed specifically to fulfill the need of companies that are required to account for payroll accruals within a month that are not accounted for when the pay period ends prior to the end of that month. Once per month, near or shortly after the end of a month, accounting personnel must create payroll accruals for accurate financial reporting. Labor Accrual Manager fulfills this need as it allows the creation of the payroll accruals and posting to the general ledger as well as setting a
 reversing date to be reversed out of the general ledger.
 
-**Advanced Labor Reporting** extends department level reporting for both
-
-Payroll and Financial data. It also extends reporting for Full-Time
-Equivalent data as well as Productive and Non-Productive employee level
-data. Additional reporting features include Full-Time Equivalent Budgets and
-variances, current and YTD totals.
+**Advanced Labor Reporting** extends department level reporting for both Payroll and Financial data. It also extends reporting for Full-Time Equivalent data as well as Productive and Non-Productive employee level data. Additional reporting features include Full-Time Equivalent Budgets and variances, current and YTD totals.
 
 ## CHAPTER 1: ADVANCED PAYROLL ESSENTIALS AND SETUP
 
 The objectives are:
 
-- Use Security Task Setup window to edit security tasks for Advanced Payroll
-    modules.
+- Use Security Task Setup window to edit security tasks for Advanced Payroll modules.
 
-- Use Security Roles Setup window to edit security roles for Advanced Payroll
-    modules.
+- Use Security Roles Setup window to edit security roles for Advanced Payroll modules.
 
 - Attain understanding of Pay Policy Manager Essentials.
 
-- Set up Pay Policy Manager to activate the functionality of the Adjusted Pay
-    Rate and set up the Transaction Auto-Split Setup window.
+- Set up Pay Policy Manager to activate the functionality of the Adjusted Pay Rate and set up the Transaction Auto-Split Setup window.
 
 - Attain understanding of Payroll Hours to General Ledger essentials.
 
@@ -98,10 +75,7 @@ The objectives are:
 
 ### Setting up a Security Task
 
-Use the Security Task Setup window to select a default Advanced Payroll
-security task or modify the default security task. To open this window,
-click the **Administration** series button, click **System** on the Setup
-content pane and then click **Security Tasks**.
+Use the Security Task Setup window to select a default Advanced Payroll security task or modify the default security task. To open this window, click the **Administration** series button, click **System** on the Setup content pane and then click **Security Tasks**.
 
 Enter a **Task ID**.
 
@@ -115,31 +89,46 @@ Select **HRM Solutions Series** for the **Product**.
 
 ##### o Add-On Setup o Add-Ons
 
-o **Area of Responsibility** o **Area of Responsibility Setup** o **Company
-Pay Policy Setup** o **Department Reports** o **Employee Pay Code Options**
-o **Employee Pay Policy Exceptions** o **Labor Accrual Accounts** o **Labor
-Reporting Accounts** o **Labor Reporting Code Setup** o **Labor Reporting
-Codes** o **Pay Code Options** o **Pay Policies** o **Pay Policy Priority
-Setup** o **Payroll Account Mapping** o **Payroll Accruals** o **Transaction
-Auto-Split Setup** Change the **Type** to **Reports**
+**Area of Responsibility**
+**Area of Responsibility Setup**
+**Company Pay Policy Setup**
+**Department Reports**
+**Employee Pay Code Options**
+**Employee Pay Policy Exceptions**
+**Labor Accrual Accounts**
+**Labor Reporting Accounts**
+**Labor Reporting Code Setup**
+**Labor Reporting Codes**
+**Pay Code Options**
+**Pay Policies**
+**Pay Policy Priority Setup**
+**Payroll Account Mapping**
+**Payroll Accruals**
+**Transaction Auto-Split Setup** 
 
-• Select the following from the **Access List** o **APR Area of
-Responsibility** o **APR Benefit Accrual Report** o **APR Department
-Analysis Report** o **APR Department Analysis Report Summary** o **APR
-Employee Analysis Report** o **APR FTE YTD Report** o **APR Labor Reporting
-Code** o **APR Payroll Accrual Preview** o **APR Transaction Auto-Split
-Setup** o **Employee Pay Policies Report-Actual** o **Employee Pay Policies
-Report-Hypothetical** o **Pay Policies Report-Actual** o **Pay Policies
-Report-Hypothetical** o **Payroll Account Mapping**
+Change the **Type** to **Reports**
+
+Select the following from the **Access List** 
+**APR Area of Responsibility**
+**APR Benefit Accrual Report**
+**APR Department Analysis Report**
+**APR Department Analysis Report Summary**
+**APR Employee Analysis Report**
+**APR FTE YTD Report**
+**APR Labor Reporting Code**
+**APR Payroll Accrual Preview**
+**APR Transaction Auto-Split Setup**
+**Employee Pay Policies Report-Actual** 
+**Employee Pay Policies Report-Hypothetical**
+**Pay Policies Report-Actual** 
+**Pay Policies Report-Hypothetical** 
+**Payroll Account Mapping**
 
 Click **Save** to save the selections and close the window.
 
 ### Setting up Alternate/Modified Forms and Reports Security
 
-Use the Alternate/Modified Forms and Reports window to set access to the
-alternate/modified forms for Advanced Payroll. To open this window, click
-the **Administration** series button, click **System** on the Setup content
-pane and then click **Alternate/Modified Forms and Reports**.
+Use the Alternate/Modified Forms and Reports window to set access to the alternate/modified forms for Advanced Payroll. To open this window, click the **Administration** series button, click **System** on the Setup content pane and then click **Alternate/Modified Forms and Reports**.
 
 Select the appropriate **ID**.
 
@@ -147,8 +136,7 @@ Select **HRM Solutions Series** for the **Product**.
 
 Select **Windows** for the **Type**.
 
-- Expand the Payroll folder and select the HRM Solution Series radio button
-    for each of the following Alternate Core Microsoft Dynamics GP windows.
+- Expand the Payroll folder and select the HRM Solution Series radio button for each of the following Alternate Core Microsoft Dynamics GP windows.
 
     - **Department Setup** o **Employee Maintenance** o **Employee Pay Code Maintenance** o **Pay Code Setup** o **Payroll Mass Transaction Entry**
         o **Payroll Posting Accounts Setup**
@@ -157,36 +145,27 @@ Select **Windows** for the **Type**.
 
 Change the **Type** to **Report**.
 
-- Expand the Payroll folder and select HRM Solution Series radio button for
-    each of the following Alternate Core Microsoft Dynamics GP Reports.
+- Expand the Payroll folder and select HRM Solution Series radio button for each of the following Alternate Core Microsoft Dynamics GP Reports.
 
-o **Check Posting Register** o **Payroll Posting Accounts** o **Reprint
-Check Posting Register**
+**Check Posting Register** 
+**Payroll Posting Accounts** 
+**Reprint Check Posting Register**
 
 Click **Save** to save the selections and close the window.
 
 ### Setting up Security Roles
 
-Use the Security Role Setup window to select a default security role for
-Advanced Payroll or modify the default security role. To open this window,
-click the **Administration** series button, click **System** on the Setup
-content pane, and then click **Security Roles**.
+Use the Security Role Setup window to select a default security role for Advanced Payroll or modify the default security role. To open this window, click the **Administration** series button, click **System** on the Setup content pane, and then click **Security Roles**.
 
 ### Pay Policy Manager Essentials
 
-Pay Policy Manager automates the advanced rate calculation process by
-allowing the administration of all standard and overtime policies for hourly
-employees working in multiple departments and positions with a variety of
-base pay rates, shift differentials and pay rate add-on amounts. Additional
-features and capabilities include the following:
+Pay Policy Manager automates the advanced rate calculation process by allowing the administration of all standard and overtime policies for hourly employees working in multiple departments and positions with a variety of base pay rates, shift differentials and pay rate add-on amounts. Additional features and capabilities include the following:
 
-- Implement Add-On Amounts at multiple levels; Employee Pay Code, Company,
-    Department, Position and Shift.
+- Implement Add-On Amounts at multiple levels; Employee Pay Code, Company, Department, Position and Shift.
 
 - Assign and View Pay Policies on a Pay Code level.
 
-- Analyze Hypothetical Pay Policy options and view their impact on the
-    Adjusted Pay Rate.
+- Analyze Hypothetical Pay Policy options and view their impact on the Adjusted Pay Rate.
 
 - Create employee specific Pay Policies exceptions.
 
@@ -200,11 +179,9 @@ features and capabilities include the following:
 
 - Set up Transaction Auto-Split for any employee and position combination.
 
-The Calculate button has been added to the Payroll Transaction Entry window
-to calculate pay rates.
+The Calculate button has been added to the Payroll Transaction Entry window to calculate pay rates.
 
-Pay Policy Priority determines which calculation factor has priority when
-calculating the Adjusted Pay Rate.
+Pay Policy Priority determines which calculation factor has priority when calculating the Adjusted Pay Rate.
 
 ### What is a Pay Policy?
 
@@ -220,21 +197,13 @@ A Pay Policy is the combination of any five of the calculation factors:
 
 - Shift Code
 
-While standard Pay Policies (or combinations of the five factors) may exist,
-any combination assigned at the payroll transaction level is a Pay Policy
-and is used to calculate the Pay Rate Adjustment.
+While standard Pay Policies (or combinations of the five factors) may exist, any combination assigned at the payroll transaction level is a Pay Policy and is used to calculate the Pay Rate Adjustment.
 
-- The Calculate button has been added to the Payroll Transaction Entry window
-    that will allow the user to calculate pay rates. This means that when an
-    existing batch that contains transactions is opened, when Calculate is
-    pressed, any pay policies that have changed since the last calculate that
-    will affect the Pay Rate will be seen.
+- The Calculate button has been added to the Payroll Transaction Entry window that will allow the user to calculate pay rates. This means that when an existing batch that contains transactions is opened, when Calculate is pressed, any pay policies that have changed since the last calculate that will affect the Pay Rate will be seen.
 
-- The Pay Rate calculated at the time the transaction is entered will be saved
-    for use during that pay run.
+- The Pay Rate calculated at the time the transaction is entered will be saved for use during that pay run.
 
-- The only restriction to Pay Policy combinations is that only hourly Pay
-    Codes can be used.
+- The only restriction to Pay Policy combinations is that only hourly Pay Codes can be used.
 
 ### Pay Policy Example
 
@@ -246,13 +215,9 @@ and is used to calculate the Pay Rate Adjustment.
 | Position   | Sale          | A05 assigned    | \$0.05            |
 | Shift Code | 03            | A01 assigned    | \$1.00            |
 
-Any eligible employee that has a payroll transaction entry assigned to this
-combination of calculation factors has theses Add-On Codes and Add-On
-Amounts applied to calculate their Adjusted Pay Rate.
+Any eligible employee that has a payroll transaction entry assigned to this combination of calculation factors has theses Add-On Codes and Add-On Amounts applied to calculate their Adjusted Pay Rate.
 
-For Example, when the Employee ACKE0001 is assigned Employee Pay Code HOUR
-at an hourly Pay Rate of \$10.00, the Adjusted Pay Rate would be calculated
-for the payroll transaction as follows:
+For Example, when the Employee ACKE0001 is assigned Employee Pay Code HOUR at an hourly Pay Rate of \$10.00, the Adjusted Pay Rate would be calculated for the payroll transaction as follows:
 
 | **Field**         | **Selection** | **Field**         | **Selection** |
 |-------------------|---------------|-------------------|---------------|
@@ -266,25 +231,17 @@ for the payroll transaction as follows:
 | Shift Code        | 03            | Add-On A01 Amount | \$1.00        |
 | Adjusted Pay Rate |               |                   | \$12.60       |
 
-This example is calculated using a Pay Policy Priority of Company,
-Department, Position and Shift Code.
+This example is calculated using a Pay Policy Priority of Company,Department, Position and Shift Code.
 
 ### Setting up Pay Policy Manager
 
-Several important settings must be correctly set up for the Pay Policy
-Manager Adjusted Pay Rate functionality to be activated.
+Several important settings must be correctly set up for the Pay Policy Manager Adjusted Pay Rate functionality to be activated.
 
 ### Add-On Setup
 
-Use the Add-On Setup window to set up Add-On Codes and corresponding
-Amounts. To open this window, click the **HR and Payroll** series button,
-click **Pay Policy Manager** on the Setup content pane and then click
-**Add-On Setup**.
+Use the Add-On Setup window to set up Add-On Codes and corresponding Amounts. To open this window, click the **HR and Payroll** series button, click **Pay Policy Manager** on the Setup content pane and then click **Add-On Setup**.
 
-These Add-On Codes can be assigned to various calculation factors throughout
-to define specific pay policies that can be applied. This data is used to
-provide adjustments to the Pay Rate based on criteria in the payroll
-transaction entries.
+These Add-On Codes can be assigned to various calculation factors throughout to define specific pay policies that can be applied. This data is used to provide adjustments to the Pay Rate based on criteria in the payroll transaction entries.
 
 Calculation factors that may affect the Pay Rate include:
 
@@ -300,39 +257,25 @@ Calculation factors that may affect the Pay Rate include:
 
 ### Pay Policy Priority Setup
 
-Use the Pay Policy Priority window to determine which calculation factor has
-priority when calculating the Adjusted Pay Rate. To open this window, click
-the **HR and Payroll** series button, click **Pay Policy Manager** on the
-Setup content pane and then click **Pay Policy Priority Setup**.
+Use the Pay Policy Priority window to determine which calculation factor has priority when calculating the Adjusted Pay Rate. To open this window, click the **HR and Payroll** series button, click **Pay Policy Manager** on the Setup content pane and then click **Pay Policy Priority Setup**. 
 
-The Pay Policy Priority Setup window is used to define a priority order for
-the different calculation factors.
+The Pay Policy Priority Setup window is used to define a priority order for the different calculation factors.
 
 - Before Pay Policy Manager can function, the Pay Policy Priority must be set.
 
-- During the calculation process, when Add-On Codes are assigned to various
-    calculation factors the calculations occur in order based on the Pay Policy
-    Priority Setup.
+- During the calculation process, when Add-On Codes are assigned to various calculation factors the calculations occur in order based on the Pay Policy Priority Setup.
 
-- The Pay Policy Priority order can affect the calculated Adjusted Pay Rate
-    when percentage based Add-On Codes are utilized.
+- The Pay Policy Priority order can affect the calculated Adjusted Pay Rate when percentage based Add-On Codes are utilized.
 
-- The Pay Policy Priority Setup does not include the Employee Pay Code
-    calculation factor. The Employee Pay Code Add-On is always applied as the
-    first calculation. That adjusted pay rate is then sent through the Pay
-    Policy Priority adjustments following the priority set in the Pay Policy
-    Priority Setup window.
+- The Pay Policy Priority Setup does not include the Employee Pay Code calculation factor. The Employee Pay Code Add-On is always applied as the first calculation. That adjusted pay rate is then sent through the Pay Policy Priority adjustments following the priority set in the Pay Policy Priority Setup window.
 
-Changing the Pay Policy Priority Setup changes the adjusted pay rates for
-any calculations where a percentage based Add-On Code is assigned. When
-selecting “Save” a message prompts, “Changing the Pay Policy
+Changing the Pay Policy Priority Setup changes the adjusted pay rates for any calculations where a percentage based Add-On Code is assigned. When selecting “Save” a message prompts, “Changing the Pay Policy
 
 Priority will change adjusted Pay Rates. Continue with changes? Yes No.”
 
 ### Assigning Pay Policies
 
-The Pay Policy Manager calculates Adjusted Pay Rates based on AddOn Codes
-assigned to the five calculation factors:
+The Pay Policy Manager calculates Adjusted Pay Rates based on AddOn Codes assigned to the five calculation factors:
 
 - Employee Pay Code
 
@@ -344,24 +287,17 @@ assigned to the five calculation factors:
 
 - Shift Code
 
-A payroll transaction consists of any combination of these five calculation
-factors.
+A payroll transaction consists of any combination of these five calculation factors.
 
-- The combination of calculation factors assigned to the payroll transaction
-    is used to determine the Adjusted Pay Rate.
+- The combination of calculation factors assigned to the payroll transaction is used to determine the Adjusted Pay Rate.
 
-- An employee can have a transaction with any combination of these five
-    calculation factors.
+- An employee can have a transaction with any combination of these five calculation factors.
 
-- Pay Policy Manager provides two options for assigning AddOn Codes to these
-    calculation factors. o Pay Policy Setup by Calculation Factor o Pay Policy
-    Setup by Pay Code
+- Pay Policy Manager provides two options for assigning AddOn Codes to these calculation factors. o Pay Policy Setup by Calculation Factor o Pay Policy Setup by Pay Code
 
 ##### Pay Policy Setup by Calculation Factor
 
-The option of assigning Add-On Codes by calculation factor is handled
-through the following windows. Each individual calculation factor can be
-assigned an Add-On Code using the setup windows.
+The option of assigning Add-On Codes by calculation factor is handled through the following windows. Each individual calculation factor can be assigned an Add-On Code using the setup windows.
 
 - Employee Pay Code
 
@@ -375,27 +311,21 @@ assigned an Add-On Code using the setup windows.
 
 ##### Pay Policy Setup by Pay Code
 
-The option of assigning Add-On Codes by Pay Code is handled through the Pay
-Policies window.
+The option of assigning Add-On Codes by Pay Code is handled through the Pay Policies window.
 
-- Use the Pay Policies window to assign and view Pay Policies for each Pay
-    Code.
+- Use the Pay Policies window to assign and view Pay Policies for each Pay Code.
 
 - Pay Policy combinations are not limited to what is set up in the
 
-Pay Policies window. This window is used to easily assign Add-On Codes to
-calculation factors and view standard Pay Policies.
+Pay Policies window. This window is used to easily assign Add-On Codes to calculation factors and view standard Pay Policies.
 
-- Assigning Add-On Codes when using Pay Policies options is defined in more
-    detail in the Pay Policies section of this document.
+- Assigning Add-On Codes when using Pay Policies options is defined in more detail in the Pay Policies section of this document.
 
 ### Company Pay Policy Setup
 
 Use the Company Pay Policy Setup window to associate an Add-On
 
-Code to a Company defined in the system. To open this window, click the **HR
-and Payroll** series button, click **Pay Policy Manager** on the Setup
-content pane and then click **Company Pay Policy Setup**.
+Code to a Company defined in the system. To open this window, click the **HR and Payroll** series button, click **Pay Policy Manager** on the Setup content pane and then click **Company Pay Policy Setup**.
 
 ![screenshot](media/4be45bdfbfa7fa5b8e5e1273c99fe1ca.jpg)
 
