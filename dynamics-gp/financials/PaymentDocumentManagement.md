@@ -493,152 +493,88 @@ Use the Sales Payment Document Entry window to enter a collection transaction in
 
 11. The Guarantor field will appear if it was selected as Required in the Payment Document Maintenance window. Fields for which no values were entered in the Payment Document Maintenance window, will not be available in this window.
 
->   If no user field was selected as Required in the Payment Document
->   Maintenance window, you do not need to open this window through the
->   Additional option, since all the compulsory fields of the window are
->   displayed by default with the values that are entered in the Receivables
->   window.
+If no user field was selected as Required in the Payment Document Maintenance window, you do not need to open this window through the
+Additional option, since all the compulsory fields of the window are displayed by default with the values that are entered in the Receivables window.
 
->   Additional information that is entered in this window for each payment
->   document could be used by third parties to develop search and print
->   utilities.
+Additional information that is entered in this window for each payment document could be used by third parties to develop search and print utilities.
 
 ### Entering payment document remittances
 
->   You can make payment document remittances in the Sales Payment Document
->   Remittances window, and identify the type of remittance, and the origin and
->   destination chequebooks for the payment document.
+You can make payment document remittances in the Sales Payment Document Remittances window, and identify the type of remittance, and the origin and destination chequebooks for the payment document.
 
->   **To enter payment document remittances:**
+**To enter payment document remittances:**
 
-1.  Open the Sales Payment Document Remittance window. (Transactions \>\> Sales
-    \>\> Payment Document Remittance)
+1.  Open the Sales Payment Document Remittance window. (Transactions \>\> Sales \>\> Payment Document Remittance)
 
 2.  Select the remittance type to identify the remittance.
 
-3.  Select the Transaction ID for the remittance. This will identify the
-    remittance that you are going to create. For example, you can compose the
-    name assigned to you using the remittance date. If the remittance is stored
-    rather than processed, it can be recovered later for modification and
-    processing.
+3.  Select the Transaction ID for the remittance. This will identify the remittance that you are going to create. For example, you can compose the name assigned to you using the remittance date. If the remittance is stored rather than processed, it can be recovered later for modification and processing.
 
-4.  Select the Payment Doc ID. This indicates the type of payment document from
-    which the remittance will be made. If, for example, no indication was made
-    in the Payment Document Maintenance window that this document could be used
-    to make a Deferred Discount, and if the Risk Assessment value was selected
-    as the remittance type, then you cannot select a payment document for which
-    this option has not been selected.
+4.  Select the Payment Doc ID. This indicates the type of payment document from which the remittance will be made. If, for example, no indication was made in the Payment Document Maintenance window that this document could be used to make a Deferred Discount, and if the Risk Assessment value was selected as the remittance type, then you cannot select a payment document for which this option has not been selected.
 
-5.  Select the chequebook from where you want to recover the payment documents
-    that are to be remitted in the Orig. Chequebook ID field.
+5.  Select the chequebook from where you want to recover the payment documents that are to be remitted in the Orig. Chequebook ID field.
 
-6.  Select the destination chequebook in the Dest. Chequebook ID field. The
-    default value appears based on the chequebook set as default earlier.
+6.  Select the destination chequebook in the Dest. Chequebook ID field. The default value appears based on the chequebook set as default earlier.
 
-7.  In the Remittance Date field, enter the date on which the remittance will be
-    paid. This date will be the cut-off date of payment documents that will be
-    included in the remittance. Only those documents whose due date (the date
-    that appears in the Receivable Information Entry window) is earlier than, or
-    the same as, the date indicated in this field will be remitted, i.e., it
-    only allows remittance of receivables that have fallen due on the remittance
-    date.
+7.  In the Remittance Date field, enter the date on which the remittance will be paid. This date will be the cut-off date of payment documents that will be included in the remittance. Only those documents whose due date (the date that appears in the Receivable Information Entry window) is earlier than, or the same as, the date indicated in this field will be remitted, i.e., it only allows remittance of receivables that have fallen due on the remittance date.
 
-8.  Enter the date on which the remittance entry is posted in the Posting Date
-    field.
+8.  Enter the date on which the remittance entry is posted in the Posting Date field.
 
-9.  In the Bank Accounts field, enter the current account number into which the
-    remittance will be paid. This helps you to later establish the search
-    conditions for that field.
+9.  In the Bank Accounts field, enter the current account number into which the remittance will be paid. This helps you to later establish the search conditions for that field.
 
-10. In the Commission field, enter the amount that the bank charges for payment
-    of the remittance. It is only for your information and will not be used
-    anywhere in the application.
+10. In the Commission field, enter the amount that the bank charges for payment of the remittance. It is only for your information and will not be used anywhere in the application.
 
-11. In the Orig. Payment Doc Status field, select the collections that must be
-    included in the current remittance. The options are:
+11. In the Orig. Payment Doc Status field, select the collections that must be included in the current remittance. The options are:
 
->   **Received** Collection authorized in the system.
+**Received** Collection authorized in the system.
 
->   **Risk Assessing** If a deferred discount has been indicated, in order to
->   make a remittance discountable, you must select only collections for which
->   risk has been evaluated.
+**Risk Assessing** If a deferred discount has been indicated, in order to make a remittance discountable, you must select only collections for which risk has been evaluated.
 
->   **Discount** by recovering collections that have already been presented for
->   discount, a Settlement or Unpaid remittance can be made.
+**Discount** by recovering collections that have already been presented for discount, a Settlement or Unpaid remittance can be made.
 
->   **Collecting** by recovering collections that have already been presented
->   for collection, a Settlement or Unpaid remittance can be made.
+**Collecting** by recovering collections that have already been presented for collection, a Settlement or Unpaid remittance can be made.
 
-1.  Select the document type in the Range field. The fields you entered in the
-    Payment Document Maintenance window will appear in the Range list.
+1.  Select the document type in the Range field. The fields you entered in the Payment Document Maintenance window will appear in the Range list.
 
-2.  Enter the range of documents to be included in the remittance in the From
-    and To fields.
+2.  Enter the range of documents to be included in the remittance in the From and To fields.
 
-3.  Choose Insert to add the range and documents selected in the Restrictions
-    list.
+3.  Choose Insert to add the range and documents selected in the Restrictions list.
 
 4.  Choose Remove to delete the selected condition from the Restrictions list.
 
-5.  Choose Remove All to delete all the filter conditions from the Restrictions
-    list.
+5.  Choose Remove All to delete all the filter conditions from the Restrictions list.
 
-6.  Choose Payment Docs. to open the Sales Payment Document Remittance Selection
-    window that shows all the selected collections according to the established
-    filter criteria. You can select all the collections that you want to include
-    in the remittance.
+6.  Choose Payment Docs. to open the Sales Payment Document Remittance Selection window that shows all the selected collections according to the established filter criteria. You can select all the collections that you want to include in the remittance.
 
--   The Number of Payment Docs. field displays the total number of payments
-    selected.
+-   The Number of Payment Docs. field displays the total number of payments selected.
 
--   The Functional Amount field displays the total amount of collections
-    selected on the remittance in the currency of the company.
+-   The Functional Amount field displays the total amount of collections selected on the remittance in the currency of the company.
 
--   The Originating Amount field displays the total amount of collections that
-    have been made in another currency.
+-   The Originating Amount field displays the total amount of collections that have been made in another currency.
 
--   Mark the payment document ID for the collections that you want to include in
-    the remittance.
+-   Mark the payment document ID for the collections that you want to include in the remittance.
 
-1.  Select a payment document in the scrolling window and click on the Payment
-    Document Number link to view the sales payment document details in the Sales
-    Payment Document Zoom window.
+7.  Select a payment document in the scrolling window and click on the Payment Document Number link to view the sales payment document details in the Sales Payment Document Zoom window.
 
-2.  Choose Remittances button in the Sales Payment Document Zoom window to view
-    the sales payment document remittance details in the Sales Payment Document
-    Remittance Zoom window.
+8.  Choose Remittances button in the Sales Payment Document Zoom window to view the sales payment document remittance details in the Sales Payment Document Remittance Zoom window.
 
-3.  Choose Mark All to select all the collections.
+9.  Choose Mark All to select all the collections.
 
-4.  Choose Unmark All to unmark all the collections.
+10.  Choose Unmark All to unmark all the collections.
 
-5.  Choose Distribution to open the Sales Payment Document Remittance
-    Distribution Entry window, where you can view the distributions for the
-    selected remittance. According to the level of entry set in accounts for the
-    sales module for the remittance type, a post entry will be made for each
-    collection included and marked on the remittance or a single summary posting
-    entry for the total of all the amounts. If the distributions window is
-    opened and a change is then made in the collections marked in the window,
-    you will have to open the distributions window again and choose Redisplay.
+11.  Choose Distribution to open the Sales Payment Document Remittance Distribution Entry window, where you can view the distributions for the selected remittance. According to the level of entry set in accounts for the sales module for the remittance type, a post entry will be made for each collection included and marked on the remittance or a single summary posting entry for the total of all the amounts. If the distributions window is opened and a change is then made in the collections marked in the window, you will have to open the distributions window again and choose Redisplay.
 
-6.  Choose OK to return to the Sales Payment Document Remittance Selection
-    window.
+12.  Choose OK to return to the Sales Payment Document Remittance Selection window.
 
-7.  Choose Process to post the selected remittance. The remittance entry is
-    posted in a RMPDC-type batch (Receivables Management Payment
-    Docs.Remittance). The total amount of the remittance transferred between the
-    origin and destination chequebooks is indicated on the remittance. The
-    status of the remitted payment documents is changed and displayed as
-    Remitted.
+13.  Choose Process to post the selected remittance. The remittance entry is posted in a RMPDC-type batch (Receivables Management Payment Docs.Remittance). The total amount of the remittance transferred between the origin and destination chequebooks is indicated on the remittance. The status of the remitted payment documents is changed and displayed as Remitted.
 
-8.  Choose OK to close the window.
+14.  Choose OK to close the window.
 
 Chapter 6: Transaction Maintenance
 ----------------------------------
 
->   Use this information to void and return payment documents.
-
->   This information is divided into the following sections:
+Use this information to void and return payment documents.
+This information is divided into the following sections:
 
 -   *Voiding payment documents*
 
@@ -648,10 +584,7 @@ Chapter 6: Transaction Maintenance
 
 ### Voiding payment documents
 
->   You can void a payment document in the Receivables Posted Transaction
-
->   Maintenance window (Transactions \>\> Sales \>\> Posted Transactions). You
->   can void a collection with an associated payment document only if:
+You can void a payment document in the Receivables Posted Transaction Maintenance window (Transactions \>\> Sales \>\> Posted Transactions). You can void a collection with an associated payment document only if:
 
 -   The collection is Open, i.e. it must not be in History.
 
@@ -661,68 +594,52 @@ Chapter 6: Transaction Maintenance
     first in order to void the collection and its corresponding payment
     document.
 
->   When you void a collection with an associated payment document the results
->   are:
+When you void a collection with an associated payment document the results are:
 
 -   The voiding is posted (reversal of the original account entry)
 
--   A negative entry is made in the chequebook associated with the collection
-    and the voided payment document.
+-   A negative entry is made in the chequebook associated with the collection and the voided payment document.
 
 ### Returning payment document
 
->   You can return a payment document only if:
+You can return a payment document only if:
 
 -   The collection is Open, i.e. it must not be in History.
 
 -   The payment document is in a stage preceding Settled.
 
->   When you return a collection with an associated payment document, the
->   results are:
+When you return a collection with an associated payment document, the results are:
 
 -   The return is posted.
 
--   The chequebooks associated with collection and the returned payment document
-    is updated. As the origin account, the chequebook associated with the
-    document is used as the default chequebook; the destination account used is
-    the account that has been indicated in the posting definition window, which
-    appears as a default value, if it was entered earlier.
+-   The chequebooks associated with collection and the returned payment document is updated. As the origin account, the chequebook associated with the document is used as the default chequebook; the destination account used is the account that has been indicated in the posting definition window, which appears as a default value, if it was entered earlier.
 
->   Optionally, the indicated amount is charged. The Auto Post NSF Debit Charges
->   window shows a payment document when you choose NSF in the Receivables
->   Posted Transaction Maintenance window.
+Optionally, the indicated amount is charged. The Auto Post NSF Debit Charges window shows a payment document when you choose NSF in the Receivables Posted Transaction Maintenance window.
 
->   Choose OK to close the window.
+Choose OK to close the window.
 
 ### Voiding a sales payment document remittance
 
->   You can void a payment document remittance in the Sales Payment Document
->   Remittance window.
+You can void a payment document remittance in the Sales Payment Document Remittance window.
 
 **To void a sales payment document remittance:**
 
-1.  Open the Sales Payment Document Remittance window. (Transactions \>\> Sales
-    \>\> Payment Document Remittance)
+1.  Open the Sales Payment Document Remittance window. (Transactions \>\> Sales \>\> Payment Document Remittance)
 
->   *The Void button is available only if the Remittance Status at the bottom of
->   the screen displays Processed.*
+*The Void button is available only if the Remittance Status at the bottom of the screen displays Processed.*
 
-1.  Choose Void to void the remittance. The remittance void entry is posted in a
-    RMPDC-type batch (Receivables Management Payment Docs.Remittance).
+2.  Choose Void to void the remittance. The remittance void entry is posted in a RMPDC-type batch (Receivables Management Payment Docs.Remittance).
 
->   The status of the remitted payments document is reverted to the status prior
->   to the remittance.
+The status of the remitted payments document is reverted to the status prior to the remittance.
 
->   The remittance status at the bottom of the screen changes to Voided and the
->   document may only be viewed for enquiry.
+The remittance status at the bottom of the screen changes to Voided and the document may only be viewed for enquiry.
 
 Chapter 7: Enquiries and Reports
 --------------------------------
 
->   You can use enquiries and reports to view and analyze the information you
->   have entered for payment documents.
+You can use enquiries and reports to view and analyze the information you have entered for payment documents.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Viewing collections made with payment documents*
 
@@ -734,33 +651,27 @@ Chapter 7: Enquiries and Reports
 
 ### Viewing collections made with payment documents
 
->   You can view all the collections made with payments documents and the status
->   of the collection in the Sales Payment Document Enquiry window.
+You can view all the collections made with payments documents and the status of the collection in the Sales Payment Document Enquiry window.
 
->   **To view the collections made with payment documents:**
+**To view the collections made with payment documents:**
 
-1.  Open the Sales Payment Document Enquiry window. (Enquiry \>\> Sales \>\>
-    Payment Documents)
+1.  Open the Sales Payment Document Enquiry window. (Enquiry \>\> Sales \>\> Payment Documents)
 
-![A screenshot of a cell phone Description automatically generated](media/7eaaf175a75b89f087816a95c4e833cf.jpg)
+![A screenshot](media/SPDENQ.jpg)
 
-1.  Select whether you want to view the payment document by Debtor ID,
-    Chequebook ID or Payment Doc. Status.
+1.  Select whether you want to view the payment document by Debtor ID, Chequebook ID or Payment Doc. Status.
 
 2.  Select whether to include unposted, posted or history payment documents.
 
->   **Work** The collection is in a batch pending posting.
+**Work** The collection is in a batch pending posting.
 
->   **Open** The collection is posted pending transfer to History once it has
->   been totally applied.
+**Open** The collection is posted pending transfer to History once it has been totally applied.
 
->   **History** The collection is posted and totally applied and has been
->   transferred to history.
+**History** The collection is posted and totally applied and has been transferred to history.
 
->   The scrolling window displays the payment documents for the specified
->   criteria.
+The scrolling window displays the payment documents for the specified criteria.
 
-1.  The Payment Doc. Status displayed in the scrolling window can be any of the
+3.  The Payment Doc. Status displayed in the scrolling window can be any of the
     following:
 
     -   Received
@@ -777,53 +688,41 @@ Chapter 7: Enquiries and Reports
 
     -   Voided
 
-2.  Choose Find to specify a search criterion to find a payment document.
+4.  Choose Find to specify a search criterion to find a payment document.
 
-3.  Choose OK to close the window.
+5.  Choose OK to close the window.
 
 ### Viewing restricted sales payment documents
 
->   You can view collections on the payment documents in the Sales Payment
->   Document Enquiry Restrictions window.
+You can view collections on the payment documents in the Sales Payment Document Enquiry Restrictions window.
 
 **To view restricted sales payment documents:**
 
-1.  Open the Sales Payment Document Enquiry Restrictions window. (Enquiry \>\>
-    Sales \>\> Restrict Payment Documents)
+1.  Open the Sales Payment Document Enquiry Restrictions window. (Enquiry \>\> Sales \>\> Restrict Payment Documents)
 
 2.  Enter an Enquiry ID.
 
-3.  Select the Payment Doc. ID From to specify the starting range of payment
-    documents to view.
+3.  Select the Payment Doc. ID From to specify the starting range of payment documents to view.
 
-4.  In the Payment Doc. ID to field, select the end of a search range to view
-    from the different types of Payment Documents set up.
+4.  In the Payment Doc. ID to field, select the end of a search range to view from the different types of Payment Documents set up.
 
-5.  In the Include field, select whether you want to view posted, unposted or
-    history payment documents. This allows you to filter the documents that you
-    want to view by filtering according to the status of receivable associated
-    with the payment document.
+5.  In the Include field, select whether you want to view posted, unposted or history payment documents. This allows you to filter the documents that you want to view by filtering according to the status of receivable associated with the payment document.
 
-6.  Choose Enquiry to open the Sales Payment Document Range Enquiry window where
-    you can view the result of the enquiry as per the search criteria specified.
+6.  Choose Enquiry to open the Sales Payment Document Range Enquiry window where you can view the result of the enquiry as per the search criteria specified.
 
 -   Choose Find to specify a search criterion to find a payment document.
 
 -   Choose OK to close the window.
 
-1.  Choose Save to save the values entered and close the window.
+7.  Choose Save to save the values entered and close the window.
 
 ### Viewing payments made with payment documents
 
->   You can view a list of all the payments made with payment documents and
->   their status in the Purchasing Payment Document Enquiry window.
+You can view a list of all the payments made with payment documents and their status in the Purchasing Payment Document Enquiry window.
 
->   **To view payments made with payment documents:** Open the Purchasing
->   Payment Document Enquiry window. (Enquiry \>\> Purchasing \>\> Payment
->   Documents)
+**To view payments made with payment documents:** Open the Purchasing Payment Document Enquiry window. (Enquiry \>\> Purchasing \>\> Payment Documents)
 
-1.  Select whether you want to view the documents by Creditor ID, Chequebook ID
-    or Payment Document Status.
+1.  Select whether you want to view the documents by Creditor ID, Chequebook ID or Payment Document Status.
 
 2.  Select All or enter a range of documents in the From and To fields.
 
@@ -838,25 +737,21 @@ Chapter 7: Enquiries and Reports
 
 ### Viewing restricted purchasing payment documents
 
->   This enquiry allows you to define various conditions (in a similar way to
->   the method of report generation) to obtain a specific enquiry on payments
->   with payment documents.
+This enquiry allows you to define various conditions (in a similar way to the method of report generation) to obtain a specific enquiry on payments with payment documents.
 
 **To view restricted purchasing payment documents:**
 
-1.  Open the Purchasing Payment Document Enquiry Restrictions window. (Enquiry
-    \>\> Purchasing \>\> Restrict Payment Documents)
+1.  Open the Purchasing Payment Document Enquiry Restrictions window. (Enquiry \>\> Purchasing \>\> Restrict Payment Documents)
 
-2.  Select the Payment Doc. ID From to specify the starting search range for the
-    payment documents.
+2.  Select the Payment Doc. ID From to specify the starting search range for the payment documents.
 
-3.  Select the Payment Doc. ID To to specify the end of a search range for the
-    payment documents.
+3.  Select the Payment Doc. ID To to specify the end of a search range for the payment documents.
 
 4.  In the Include field, mark whether to include unposted or posted documents.
 
 5.  In the Ranges field, specify the condition to view the payment documents.
-    The options available are:
+
+The options available are:
 
 -   Chequebook ID
 
@@ -878,79 +773,58 @@ Chapter 7: Enquiries and Reports
 
 -   Audit Code
 
-1.  Choose Enquiry to open the Purchasing Payment Document Range Enquiry window
-    that shows the result of the enquiry.
+6.  Choose Enquiry to open the Purchasing Payment Document Range Enquiry window that shows the result of the enquiry.
 
 -   Choose Find to specify a search criterion to find a payment document.
 
--   Choose OK to close the window and return to Purchasing Payment Document
-    Enquiry Restrictions window.
+-   Choose OK to close the window and return to Purchasing Payment Document Enquiry Restrictions window.
 
-1.  Choose Save to save the changes and close the window.
+7.  Choose Save to save the changes and close the window.
 
 Chapter 8: Utilities
 --------------------
 
->   This information will help you remove the history of payment documents. Once
->   you have decided how much historical information is necessary, you can
->   remove the information that is no longer needed. When you remove historical
->   records, the system removes records only for the range you specify.
+This information will help you remove the history of payment documents. Once you have decided how much historical information is necessary, you can remove the information that is no longer needed. When you remove historical records, the system removes records only for the range you specify.
 
->   *Be sure to back up your accounting data before performing any of these
->   procedures as they might remove data from your system.*
+*Be sure to back up your accounting data before performing any of these procedures as they might remove data from your system.*
 
->   This information is divided into the following sections:
-
+This information is divided into the following sections:
 -   *Removing sales payment document history*
 
 -   *Removing purchasing payment document history*
 
 ### Removing sales payment document history
 
->   Use the Remove Sales Payment Document History window to remove the history
->   of sales payment documents.
+Use the Remove Sales Payment Document History window to remove the history of sales payment documents.
 
 >   **To remove sales payment document history:**
 
-1.  Open the Remove Sales Payment Document History window. (Administration \>\>
-    Utilities \>\> Sales \>\> Remove Payment Document)
+1.  Open the Remove Sales Payment Document History window. (Administration \>\> Utilities \>\> Sales \>\> Remove Payment Document)
 
-2.  Select a payment document ID in the Payment Document ID From and Payment
-    Document ID To fields to specify the range for payment documents.
+2.  Select a payment document ID in the Payment Document ID From and Payment Document ID To fields to specify the range for payment documents.
 
 3.  Select an option for range and enter the range restrictions.
 
 4.  Choose Insert to insert the restrictions in the Restrictions list.
 
-5.  Mark the Print Report option if you want to print the Sales Payment Document
-    History Removal Report. This report displays all the historical sales
-    payment document transactions that have been removed.
+5.  Mark the Print Report option if you want to print the Sales Payment Document History Removal Report. This report displays all the historical sales payment document transactions that have been removed.
 
-6.  Choose Process to remove the sales payment document history. If you have
-    marked the Print Report option, the Sales Payment Document History Removal
-    Report will be printed.
+6.  Choose Process to remove the sales payment document history. If you have marked the Print Report option, the Sales Payment Document History Removal Report will be printed.
 
 ### Removing purchasing payment document history
 
->   Use the Remove Purchasing Payment Document History window to remove the
->   history of purchasing payment documents.
+Use the Remove Purchasing Payment Document History window to remove the history of purchasing payment documents.
 
 **To remove purchasing payment document history:**
 
-1.  Open the Remove Purchasing Payment Document History window. (Administration
-    \>\> Utilities \>\> Purchasing \>\> Remove Payment Document)
+1.  Open the Remove Purchasing Payment Document History window. (Administration \>\> Utilities \>\> Purchasing \>\> Remove Payment Document)
 
-2.  Select a payment document ID in the Payment Document ID From and Payment
-    Document ID To fields to specify the range for payment documents.
+2.  Select a payment document ID in the Payment Document ID From and Payment Document ID To fields to specify the range for payment documents.
 
 3.  Select an option for range and enter the range restrictions.
 
 4.  Choose Insert to insert the restrictions in the Restrictions list.
 
-5.  Mark the Print Report option if you want to print the Purchasing Payment
-    Document History Removal Report. This report displays all the historical
-    purchasing payment document transactions that have been removed.
+5.  Mark the Print Report option if you want to print the Purchasing Payment Document History Removal Report. This report displays all the historical purchasing payment document transactions that have been removed.
 
-6.  Choose Process to remove the purchasing payment document history. If you
-    have marked the Print Report option, the Purchasing Payment Document History
-    Removal Report will be printed.
+6.  Choose Process to remove the purchasing payment document history. If you have marked the Print Report option, the Purchasing Payment Document History Removal Report will be printed.
