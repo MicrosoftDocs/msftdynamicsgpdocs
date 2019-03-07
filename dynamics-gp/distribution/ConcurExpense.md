@@ -252,7 +252,6 @@ To reprint the **Concur Expense Report Import Journal** report, follow these ste
 2. Click the printer icon or **File** \>\> **Print** to reprint this report.
 
 ### Concur Expense Report Summary Inquiry
-
 The **Concur Expense Report Summary Inquiry** window displays summary information about the expense reports that were imported into Payables Management. The **Expense Audit** report can also be printed from this window.
 
 To view summary information about expense reports, follow these steps:
