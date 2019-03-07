@@ -1715,7 +1715,6 @@ The following is a listing of the data tables that are copied for each
 module in the Company Copy tool.
 
 **Company**
-
 SY00300  
 SY03100  
 SY40102  
@@ -1758,7 +1757,6 @@ SY04100
 GL40000
 
 **Inventory**
-
 IV00101  
 IV00113  
 IV40700  
@@ -1814,7 +1812,6 @@ FA41100
 FA41200
 
 **Multicurrency**
-
 MC00201  
 MC00200  
 MC40000  
@@ -1825,7 +1822,6 @@ MC40500
 MC60400
 
 **Payroll**
-
 DD40700  
 UPR40100  
 UPR40101  
@@ -1885,7 +1881,6 @@ RM40106
 PA00002
 
 **Sales Order Processing**
-
 SOP00100  
 SOP00200  
 SOP40100  
@@ -1903,7 +1898,6 @@ SOP60300
 SOP00300
 
 **Purchase Order Processing**
-
 POP40100  
 POP40600  
 POP40400  
@@ -1912,7 +1906,6 @@ POP40900
 POP00101
 
 **Advanced Financials**
-
 AF40100  
 AF40101  
 AF40102  
@@ -1928,7 +1921,6 @@ AF40200
 AF40201
 
 **Extended Pricing**
-
 IV10400  
 IV10401  
 IV10402  
@@ -1941,12 +1933,10 @@ SOP10205
 SOP40709
 
 **Invoicing**
-
 IVC40100  
 IVC40101
 
 **Human Resources**
-
 BE020230  
 BE021030  
 BE031000  
@@ -1983,7 +1973,6 @@ TAST0532
 TATM0130
 
 **Bill of Materials**
-
 BM00101  
 BM00111  
 BM40100
