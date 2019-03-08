@@ -1,3 +1,19 @@
+---
+title: "Inventory Control"
+description: "Inventory Control for Dynamics GP"
+keywords: "items"
+author: tnistler
+manager: edupont
+
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: tnistler
+ms.date: 02/10/2019
+
+---
+# Inventory Control in Dynamics GP
+
 ### Viewing promotions for a prospect or customer
 
 >   You can use the Promotion Price Sheet Inquiry window to view all the promotions that are in effect for a prospect or customer as of a certain date. You can choose to view information for all items or you can choose to view information for a range of items.

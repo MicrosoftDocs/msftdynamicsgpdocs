@@ -10,7 +10,7 @@ ms.author: jchrist
 ms.date: 02/12/2019
 ---
 
-# VAT in the British Version of Microsoft Dynamics GP
+# VAT in the UK Version of Microsoft Dynamics GP
 
 Her Majesty's Revenue and Customs (HMRC) is implementing the first step of Making Tax Digital, which imposes new requirements on VAT registered businesses above the VAT threshold. Requirements will be implemented in phases. In the first phase, with a deadline in April, 2019, the following requirements will take effect:
 
@@ -27,7 +27,7 @@ In the **Company Setup** window, you must specify your company's tax registratio
 
 In the **UK Digital VAT Setup** window (Cards -> Company-UK Electronic VAT Setup), you must specify that you want to use the Making Tax Digital service.  
 
-    ![Screenshot](media/uk-tax-digital-tax-setup.png)
+![Screenshot](media/uk-tax-digital-tax-setup.png)
 
 ### Set up VAT returns
 
@@ -38,7 +38,7 @@ HMRC maintains a list of VAT obligations for companies, which are the periods fo
 
 In order to use the Making Tax Digital service, you must connect to the service from the **VAT Return** window.
 
-    ![Screenshot](media/uk-tax-vat-return.png)
+![Screenshot](media/uk-tax-vat-return.png)
 
 To enable the connection, you must create a new VAT return.
 
@@ -62,17 +62,17 @@ To enable the connection, you must create a new VAT return.
 
     The screenshot above is based on a test environment with quarterly VAT tax and only 2 obligation periods open. Your view will be different.
 
-5. When you return to the **VAT Return** window, VAT is calculated for you as shown in the following picture.
+5. When you return to the **VAT Return** window, click Calculate to have the system calculate VAT for you as shown in the following picture.
 
     ![Screenshot](media/uk-tax-vat-return2.png)
 
     If the calculations are not correct, you can clear the window at this time. Then repeat steps above when ready. Click **Save** to save the information.
 
-6. When you save the VAT return, the **Final Return** checkbox becomes editable. You must choose it before you can submit.
+6. When you save the VAT return, VAT box fields are now editable so any further corrections can be made.
 
     ![Screenshot](media/uk-tax-vat-return3.png)
 
-    If the **Final Return** is marked, the VAT box fields are also made editable. If needed, you can edit the fields in this window now.
+    The **Final Return** checkbox is also editable and it must be marked before you can submit. 
 
     ![Screenshot](media/uk-tax-vat-return4.png)
 
@@ -84,7 +84,10 @@ To enable the connection, you must create a new VAT return.
 
 When the submission is complete you will see the VAT Response window.
 
-    ![Screenshot](media/uk-tax-vat-response.png)
+![Screenshot](media/uk-tax-vat-response.png)
 
 > [!NOTE]
 > After submitting the return, if the progress window does not start and there is no response window, it could be a proxy server issue. For more information, see [https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access](https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access)  
+
+> [!NOTE]
+> The above Making Tax Digital process of submitting to the HMRC also works for the VAT Daybook module in Dynamics GP. 
