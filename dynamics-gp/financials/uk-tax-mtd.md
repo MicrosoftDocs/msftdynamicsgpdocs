@@ -89,5 +89,5 @@ When the submission is complete you will see the VAT Response window.
 > [!NOTE]
 > After submitting the return, if the progress window does not start and there is no response window, it could be a proxy server issue. For more information, see [https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access](https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access)  
 
->  [!NOTE]
+> [!NOTE]
 > The above Making Tax Digital process of submitting to the HMRC also works for the VAT Daybook module in Dynamics GP. 
