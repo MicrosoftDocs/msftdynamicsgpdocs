@@ -100,6 +100,7 @@
 
 <!--- distribution -->
 ## Distribution
+### [Project Accounting-Accounting Control] (distribution/ProjAcctAccountingControl.md)
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
 ### [Concur Expense](distribution/ConcurExpense.md)
 ### [Purchase Order Processing](distribution/purchase-order-processing.md)
