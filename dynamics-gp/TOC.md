@@ -28,6 +28,7 @@
 #### [Creating an installation package](installation/creating-an-installation-package.md)
 #### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
 ### [Professional Service Tools Library](installation/ProfServicesToolsLibrary.md)
+### [System Setup] (installation/SystemSetup.md)
 
 <!--- web components -->
 ### Web components
@@ -82,10 +83,10 @@
 
 <!--- financials -->
 ## Financials
-### [Bank Reconciliation](financials/BankReconciliation.md)
-### [Cash Flow Mananagement](financials/CashFlowManagement.md)
-### [Inter Company Processing](financials/IntercompanyProcessing.md)
-### [Payment Document Management](financials/PaymentDocumentManagement.md)
+### [Bank Reconciliation] (financials/BankReconciliation.md)
+### [Cash Flow Mananagement] (CashFlowManagement.md)
+### [Inter Company Processing] (financials/IntercompanyProcessing.md)
+### [Payment Document Management] (financials/PaymentDocumentManagement.md)
 ### [Receivables Management](financials/receivables-management.md)
 #### [Part 1: Setup and cards](financials/receivables-management.md#part-1-setup-and-cards)
 #### [Part 2: Transaction entry](financials/receivables-management-part2-transaction-entry.md)
@@ -95,13 +96,13 @@
 ### [Payables Management](financials/PayablesManagement.md)
 ### [General Ledger](financials/general-ledger.md)
 ### [Fixed Asset Management](financials/fixed-assets.md)
-### [VAT in the UK Version of Microsoft Dynamics GP](financials/uk-tax-mtd.md)
+### [VAT in the British Version of Microsoft Dynamics GP](financials/uk-tax-mtd.md)
 ### [Glossary](financials/glossary.md)
 
 <!--- distribution -->
 ## Distribution
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
-### [Concur Expense](distribution/ConcurExpense.md)
+### [Concur Expense] (distribution/ConcurExpense.md)
 ### [Purchase Order Processing](distribution/purchase-order-processing.md)
 #### [Part 1: Setup and cards](distribution/purchase-order-processing.md#part-1-setup-and-cards)
 #### [Part 2: Purchase orders](distribution/purchase-order-processing-part2-orders.md)
@@ -116,11 +117,12 @@
 #### [Sales Order Processing Part 4: Transaction activity](distribution/sales-order-processing-part4-transaction-activity.md)
 #### [Sales Order Processing Part 5: Inquiries and reports](distribution/sales-order-processing-part5-inquiries-reports.md)
 #### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utilities.md)
+#### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
 ### [Glossary](distribution/glossary.md)
 
 <!--- payroll -->
 ## Payroll
-### [Advanced Payroll](payroll/AdvancedPayroll.md)
+### [Advanced Payroll] (payroll/AdvancedPayroll.md)
 ### [Canadian Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
 ### [U.S. Payroll](payroll/PayrollUS.md)
