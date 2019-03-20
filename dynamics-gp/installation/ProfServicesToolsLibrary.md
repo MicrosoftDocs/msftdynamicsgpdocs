@@ -20,8 +20,6 @@ To download the tool go to [this link that is Partner only](https://mbs.microsof
 
 As of March 26, 2012 the Microsoft Dynamics GP PSTL and the additional Microsoft Dynamics GP Tools listed above are available to Partners at no additional cost.
 
-![Lock Icon](media/b2ab6ec2dd6025f7327e9004dd0eb287.png)
-
 The content of this page is locked.
 
 To access this information log in to [CustomerSource](https://mbs.microsoft.com/partnersource/_layouts/15/Authenticate.aspx?Source=/partnersource/northamerica/support/support-news/NOAM_PSTL)
@@ -33,8 +31,6 @@ Page](https://mbs.microsoft.com/partnersource/northamerica/help/help).
 
 **Close**
 
-![Lock Icon](media/b2ab6ec2dd6025f7327e9004dd0eb287.png)
-
 **The content of this page is locked.**
 
 **To access this information log in to [CustomerSource](https://mbs.microsoft.com/partnersource/_layouts/15/Authenticate.aspx?Source=/partnersource/northamerica/support/support-news/NOAM_PSTL)**.
@@ -42,8 +38,6 @@ Page](https://mbs.microsoft.com/partnersource/northamerica/help/help).
 **Unable to log in to CustomerSource?**
 
 Visit our CustomerSource [Help Page](https://mbs.microsoft.com/partnersource/northamerica/help/help).
-
-![Lock Icon](media/b2ab6ec2dd6025f7327e9004dd0eb287.png)
 
 **Your current service plan does not allow access to this information.**
 
@@ -63,28 +57,15 @@ Information is divided into the following sections:
 
 ### Before you begin
 
-This section includes information and precautions that will help you use
-Professional Services Tools Library more effectively.
+This section includes information and precautions that will help you use Professional Services Tools Library more effectively.
 
-**Making backups** Before running any tool, make a backup of the databases
-that will be affected. It is important to make a backup of your Microsoft
-SQL Server® data. Many of the tools will prompt users to back up their data
-before being allowed to execute the command selected. Make a backup before
-continuing with the tool operation. The tools that do not prompt users with
-a warning message either have another type of warning or assume that the
-user has taken steps to appropriately backup the data.
+**Making backups** Before running any tool, make a backup of the databases that will be affected. It is important to make a backup of your Microsoft SQL Server® data. Many of the tools will prompt users to back up their data before being allowed to execute the command selected. Make a backup before continuing with the tool operation. The tools that do not prompt users with a warning message either have another type of warning or assume that the user has taken steps to appropriately backup the data.
 
-**Additional users** Most tools will require that you are the only user
-logged into the company. If there are additional users logged into the
-company you will receive an error message listing the total number of users
-in the system. Make sure all users are logged out and then reopen the tool.
+**Additional users** Most tools will require that you are the only user logged into the company. If there are additional users logged into the company you will receive an error message listing the total number of users in the system. Make sure all users are logged out and then reopen the tool.
 
-*If additional products are installed, all 3rd party tables should be tested
-for validation.*
+*If additional products are installed, all 3rd party tables should be tested for validation.*
 
-**Using the “sa” login** Regardless of how role-based Security is defined in
-Microsoft Dynamics GP, there are certain tools that will require users to be
-logged in as “sa.” These tools are:
+**Using the “sa” login** Regardless of how role-based Security is defined in Microsoft Dynamics GP, there are certain tools that will require users to be logged in as “sa.” These tools are:
 
 - Toolkit
 
@@ -108,67 +89,51 @@ logged in as “sa.” These tools are:
 
 ### Using Validate and Import buttons
 
-Validate and Import buttons are available on many of the tools that modify
-or combine data. These buttons allow data to be imported without having to
-manually enter the information, making the tools useful to change or combine
-many pieces of data.
+Validate and Import buttons are available on many of the tools that modify or combine data. These buttons allow data to be imported without having to manually enter the information, making the tools useful to change or combine many pieces of data.
 
-For example, if you are want to change 1000 current item numbers to 1000 new
-item numbers one at a time, you can save time by importing a two-column
-spreadsheet into modifier and combiner tools.
+For example, if you are want to change 1000 current item numbers to 1000 new item numbers one at a time, you can save time by importing a two-column spreadsheet into modifier and combiner tools.
 
 **Preparing your spreadsheet data:**
 
 1. Enter existing system data — such as the Vendor ID numbers or Item numbers — in the first column of data in the spreadsheet.
 
-1. The second column of data should contain the new ID or number, as you would enter it in the appropriate field of the respective tool.
+2. The second column of data should contain the new ID or number, as you would enter it in the appropriate field of the respective tool.
 
     If you are entering account numbers in your spreadsheet, be sure to include dashes.
 
-1. Save your spreadsheet as a text file
+3. Save your spreadsheet as a text file
 
-> [!NOTE]
-> The spreadsheet must be saved as a text file in Microsoft Excel (tab delimited file), to ensure that information in Microsoft Dynamics GP is updated correctly.
+[!NOTE]
+The spreadsheet must be saved as a text file in Microsoft Excel (tab delimited file), to ensure that information in Microsoft Dynamics GP is updated correctly.
 
 **Validating and importing your data:**
 
-A typical example of the Validate and Import function functionality would be
-during an Employee ID change:
+A typical example of the Validate and Import function functionality would be during an Employee ID change:
 
-![A screenshot](media/e98c1352cd449d7aa876197e6c740aea.jpg)
+![A screenshot](media/EMPMOD.jpg)
 
-1. Choose the Validate button first. Select the file and choose Open to start
-    the validation process.
+1. Choose the Validate button first. Select the file and choose Open to start the validation process.
 
-2. A Report Destination window will appear. Select the report destination to view a report verifying that information is valid. If the report states that
-    there is invalid data, fix the spreadsheet and go through the validation
-    process again.
+2. A Report Destination window will appear. Select the report destination to view a report verifying that information is valid. If the report states that there is invalid data, fix the spreadsheet and go through the validation process again.
 
-3. Once the Validate report lists no invalid employee ID numbers, the data is
-    ready to be imported.
+3. Once the Validate report lists no invalid employee ID numbers, the data is ready to be imported.
 
-    If you choose the Import button, you will receive a message to choose Validate first. The Validate button ensures that the tool will run properly. In this example, the Validate button will verify that each current employee ID number exists in your system before the conversion is performed.
+If you choose the Import button, you will receive a message to choose Validate first. The Validate button ensures that the tool will run properly. In this example, the Validate button will verify that each current employee ID number exists in your system before the conversion is performed.
 
-1. After validating your data, choose the Import button, and choose the valid
-    text spreadsheet.
+4. After validating your data, choose the Import button, and choose the valid text spreadsheet.
 
-2. When the data is done being imported, you will receive a message stating
-    that the Import function is finished.
+5. When the data is done being imported, you will receive a message stating that the Import function is finished.
 
-3. Choose OK, and close the modifier or combiner tool to receive another report destination window and view the report to see the changed data.
+6. Choose OK, and close the modifier or combiner tool to receive another report destination window and view the report to see the changed data.
 
 ### Compatibility information
 
-The following table lists the compatibility of modules in Microsoft Dynamics
-GP with the individual Professional Services Tools.
+The following table lists the compatibility of modules in Microsoft Dynamics GP with the individual Professional Services Tools.
 
-All of the tools are compatible with core modules. Core modules include
-General Ledger, Receivables Management, Payables Management, Sales Order
-Processing, Purchase Order Processing, Inventory, Bank Reconciliation,
-Inventory, Payroll, Bill of Materials and Multicurrency.
+All of the tools are compatible with core modules. Core modules include General Ledger, Receivables Management, Payables Management, Sales Order Processing, Purchase Order Processing, Inventory, Bank Reconciliation, Inventory, Payroll, Bill of Materials and Multicurrency.
 
-> [!NOTE]
-> When using the Combine tools, SmartList queries may need to be modified after the combine is completed.
+[!NOTE]
+When using the Combine tools, SmartList queries may need to be modified after the combine is completed.
 
 **Tool Name**
 
@@ -239,10 +204,7 @@ Information is divided into the following sections:
 
 ### Installation
 
-Professional Services Tools Library can be installed directly from the
-Microsoft Dynamics GP installation media. The Professional Services Tools
-Library can also be downloaded at no charge from PartnerSource at the
-following website:
+Professional Services Tools Library can be installed directly from the Microsoft Dynamics GP installation media. The Professional Services Tools Library can also be downloaded at no charge from PartnerSource at the following website:
 [https:/mbs.microsoft.com/partnersource/downloads/releases/noam_pstl.hlm.](https://mbs.microsoft.com/partnersource/downloads/releases/noam_pstl.hlm.)
 If you are a customer, contact your partner of record.
 
@@ -252,62 +214,49 @@ If you are a customer, contact your partner of record.
 
     - Installation Media:
 
-    From the installation media, start the Microsoft Dynamics GP installer. Refer to the Microsoft Dynamics GP installation documentation pertaining to new installation or updating an existing location. Select Professional Services Tools Library from the Select Features window.
+        From the installation media, start the Microsoft Dynamics GP installer. Refer to the Microsoft Dynamics GP installation documentation pertaining to new installation or updating an existing location. Select Professional Services Tools Library from the Select Features window.
 
-    ![A screenshot](media/bbad3af62fb8663718fecbb98e2d0590.jpg)
+        ![A screenshot](media/PSTINS.jpg)
 
-- Downloaded Free Version:
+    - Downloaded Free Version:
 
-    Save the \*.cnk files to the location on your computer where Microsoft Dynamics GP is installed. By default, Microsoft Dynamics GP is in the following location:
+        Save the \*.cnk files to the location on your computer where Microsoft Dynamics GP is installed. By default, Microsoft Dynamics GP is in the following location:
 
-    C:\\\\Program Files\\Microsoft Dynamics\\GP
+        C:\\\\Program Files\\Microsoft Dynamics\\GP
 
-1. After the installation is complete, start Microsoft Dynamics GP and choose
-    Yes to include new code.
+2. After the installation is complete, start Microsoft Dynamics GP and choose Yes to include new code.
 
-2. To add the Professional Services Tools Library to the Home menu, right-click
-    and choose Add \>\> Add window.
+3. To add the Professional Services Tools Library to the Home menu, right-click and choose Add \>\> Add window.
 
-3. In the Available Windows folder list, expand the Technical Service Tools
-    list, then expand Project. Select Professional Services Tools Library.
+4. In the Available Windows folder list, expand the Technical Service Tools list, then expand Project. Select Professional Services Tools Library.
 
-    ![A screenshot ](media/cac0db5c96fd8c6606fcd355bed3d6ca.jpg)
+    ![A screenshot ](media/PSTSHORTT.jpg)
 
+5. Choose Done, and then choose Yes to save the changes.
 
-1. Choose Done, and then choose Yes to save the changes.
+6. Professional Services Tools Library should now be available on your Home menu.
 
-2. Professional Services Tools Library should now be available on your Home
-    menu.
+7. You will need to repeat steps 1-7 for each company where you want to use the Professional Services Tools Library.
 
-3. You will need to repeat steps 1-7 for each company where you want to use the
-    Professional Services Tools Library.
+8. The first time that you use Professional Services Tools Library, you may need to enter the registration key. To activate the entire Professional Services Tools Library suite, you can enter SMPE0102030405 for the registration key.
 
-4. The first time that you use Professional Services Tools Library, you may
-    need to enter the registration key. To activate the entire Professional
-    Services Tools Library suite, you can enter SMPE0102030405 for the
-    registration key.
+    - The registration key can be entered from any company that you set up to use Professional Services Tools Library and will not need to be reentered for each company.
 
-    The registration key can be entered from any company that you set up to use Professional Services Tools Library and will not need to be reentered for each company.
+    - Professional Services Tools Library is not supported with SQL replication.
 
-    Professional Services Tools Library is not supported with SQL replication.
-
-    The initial installation creates many tables and stored procedures and may take several minutes to finish.
+    - The initial installation creates many tables and stored procedures and may take several minutes to finish.
 
 1. Open Professional Services Tools Library from the Home menu.
 
-    ![A screenshot ](media/d8e78bce04f58707d273878c6c62e0b5.jpg)
+    ![A screenshot ](media/PSTLIB.jpg)
 
 You have access to each Tool that has a check next to it.
 
 Mark the radio button next to the tool you wish to use and choose Next.
 
-Some tools have a second check box that appears directly to the left of the
-radio button. These tools modify functions within Microsoft Dynamics GP.
-Mark the second check box to activate the tool and modify existing forms and
-menus within Microsoft Dynamics GP automatically.
+Some tools have a second check box that appears directly to the left of the radio button. These tools modify functions within Microsoft Dynamics GP. Mark the second check box to activate the tool and modify existing forms and menus within Microsoft Dynamics GP automatically.
 
-To add the new functionality that the following tools offer, simply mark the
-second check box and close the Professional Services Tools Library window.
+To add the new functionality that the following tools offer, simply mark the second check box and close the Professional Services Tools Library window.
 
 - PM Minimum Check
 
@@ -331,19 +280,14 @@ second check box and close the Professional Services Tools Library window.
 
 - Decimal Place Tool
 
-The Next button will be unavailable once the second check box is marked for
-certain tools that do not require further setup.
+The Next button will be unavailable once the second check box is marked for certain tools that do not require further setup.
 
 > [!NOTE]
 > If additional products are installed, all 3rd party tables should be tested for validation.
 
 ### Security setup
 
-You can add a Professional Services Tools Library task to an existing
-security task or create a new task. Once a security task is created, you can
-either add the task to an existing role ID or create a new role ID. The
-instructions provided demonstrate how to create a new task, new role ID, and
-apply the new role ID to a user through User Security Setup.
+You can add a Professional Services Tools Library task to an existing security task or create a new task. Once a security task is created, you can either add the task to an existing role ID or create a new role ID. The instructions provided demonstrate how to create a new task, new role ID, and apply the new role ID to a user through User Security Setup.
 
 > [!IMPORTANT]
 > Predefined security tasks and roles are not set up in Microsoft Dynamics GP for Professional Services Tools Library. If you want to log in as a user other than “sa,” you must set up security tasks and roles specific for each desired user(s).
@@ -354,8 +298,7 @@ Some of the options in creating a security task illustrated below can be changed
 
 **Security task setup:**
 
-1. Go to Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\>
-    Security Tasks
+1. Go to Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Security Tasks
 
 2. Create a new Task ID. In this example, the task name PSTL is used.
 
@@ -371,9 +314,7 @@ Some of the options in creating a security task illustrated below can be changed
 
 8. Select Mark All to select all the operations listed.
 
-9. Repeat steps 6 through 8 until all Windows, Reports, and File operations
-    have been marked for the Professional Services Tools Library for all of the
-    combinations possible from the Series drop down-list.
+9. Repeat steps 6 through 8 until all Windows, Reports, and File operations have been marked for the Professional Services Tools Library for all of the combinations possible from the Series drop down-list.
 
 | **Type values** | **Series values**                                                          |
 |-----------------|----------------------------------------------------------------------------|
@@ -384,47 +325,41 @@ Some of the options in creating a security task illustrated below can be changed
 > [!NOTE]
 > Windows selected from the Type drop-down list, Project selected from the Series drop- down list, and Professional Services Tools Library marked as an operation is required to get into the main Professional Services Tools Library window.
 
-![A screenshot ](media/a88f4caf017aa370984bf14c95b51684.jpg)
+![A screenshot ](media/PSTSECTSK.jpg)
 
 1. Select Save to save the new security task.
 
 **Security role setup:**
 
-1. Go to Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\>
-    Security Roles.
+2. Go to Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Security Roles.
 
-2. Create a new Role ID. In this example, the name of PSTL is used.
+3. Create a new Role ID. In this example, the name of PSTL is used.
 
-3. Enter PSTL for the Role Name and Description
+4. Enter PSTL for the Role Name and Description
 
-4. In the Display drop-down, select the Category related to the security task
-    you will associate to this Role ID. (In this example, the category is
-    Other.)
+5. In the Display drop-down, select the Category related to the security task you will associate to this Role ID. (In this example, the category is Other.)
 
-5. Click Mark All to select the Security Task ID.
+6. Click Mark All to select the Security Task ID.
 
-    ![A screenshot ](media/a16ea972059cd90148e294a3201e64ec.jpg)
+    ![A screenshot ](media/PSTSECRO.jpg)
 
-1. Choose Save to save the new Security Role.
+7. Choose Save to save the new Security Role.
 
 **Security user setup:**
 
-1. Go to Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\>
-    Security Roles
+1. Go to Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Security Roles
 
 2. Select the desired User from the lookup window that you want to grant access to the newly defined Security Role ID.
 
-1. Select the appropriate Company from the Company drop-down list.
+3. Select the appropriate Company from the Company drop-down list.
 
-2. Mark the check box for the Security Role ID created for the Professional
-    Services Tools Library objects. The example Role ID is “PSTL.”
+4. Mark the check box for the Security Role ID created for the Professional Services Tools Library objects. The example Role ID is “PSTL.”
 
-3. Choose Save to save the new User Security Setup.
+5. Choose Save to save the new User Security Setup.
 
 ## Chapter 2: Using System Tools
 
-This chapter explains how to use the System Series Professional Services
-Tools. Information is divided into the following sections:
+This chapter explains how to use the System Series Professional Services Tools. Information is divided into the following sections:
 
 - *Using Shortcuts Copy*
 
@@ -436,23 +371,17 @@ Tools. Information is divided into the following sections:
 
 ### Using Shortcuts Copy
 
-Use this tool to copy the Shortcuts options from one user to another user
-with the click of a button. With the Shortcuts Copy tool, you don’t have to
-manually set the shortcuts up for each user on the system. This is
-especially useful when macros are used with a window (e.g., Purchase Order entry to always add item).
+Use this tool to copy the Shortcuts options from one user to another user with the click of a button. With the Shortcuts Copy tool, you don’t have to manually set the shortcuts up for each user on the system. This is especially useful when macros are used with a window (e.g., Purchase Order entry to always add item).
 
 **To copy a shortcut:**
 
-1. Enter the User ID that you want to copy the Shortcuts from in the Copy From
-    User ID field.
+1. Enter the User ID that you want to copy the Shortcuts from in the Copy From User ID field.
 
-2. Enter the User ID you want to copy the Shortcuts to in the Copy To User ID
-    field.
+2. Enter the User ID you want to copy the Shortcuts to in the Copy To User ID field.
 
 3. Choose copy.
 
-4. You will be prompted to make a backup of your database. Choose Continue once
-    you have made a backup.
+4. You will be prompted to make a backup of your database. Choose Continue once you have made a backup.
 
 5. An alert message signals the end of the Shortcuts copy process.
 
@@ -461,21 +390,18 @@ especially useful when macros are used with a window (e.g., Purchase Order entry
 
 ### Using Toolkit
 
-Use Toolkit to rebuild the GL00105 table, re-create Dex Procs, rebuild
-indexes, re- create tables, and check identities of tables all within
-Microsoft Dynamics GP.
+Use Toolkit to rebuild the GL00105 table, re-create Dex Procs, rebuild ndexes, re- create tables, and check identities of tables all within Microsoft Dynamics GP.
 
 > [!IMPORTANT]
 > This tool requires that the user be logged in as “sa.”
 
 **To rebuild the GL00105 table:**
 
-1. To rebuild the GL00105 table, select Rebuild GL00105 in the Toolkit Options
-    group.
+1. To rebuild the GL00105 table, select Rebuild GL00105 in the Toolkit Options group.
 
-    ![A screenshot ](media/bc17fd7f416e464646166ee5e0818aab.jpg)
+    ![A screenshot ](media/PSTTOOL.jpg)
 
-1. Choose Next.
+2. Choose Next.
 
 **To re-create Microsoft SQL Objects:**
 
@@ -484,73 +410,54 @@ There are several options when selecting Recreate SQL Objects.
 > [!IMPORTANT]
 > You should have all users out of the system when re-creating any objects using this tool.
 
-1. Select Recreate SQL Objects under the Toolkit Options heading and choose
-    Next.
+3. Select Recreate SQL Objects under the Toolkit Options heading and choose Next.
 
-2. Choose the series or table you wish to change.
+4. Choose the series or table you wish to change.
 
-    ![A screenshot ](media/1f929a3c36ad3144684ead12e67491c2.jpg)
+    ![A screenshot ](media/PSTSYSDIG.jpg)
 
-1. Choose the SQL object you want to re-create by selecting a function in the
+5. Choose the SQL object you want to re-create by selecting a function in the
     Maintenance Options group.
 
-    > [!CAUTION]
-    > When re-creating tables there is an additional check box, Recreate data for selected table(s). If you mark this option the table will be re-created and the data will be left intact. If you leave the option unmarked the table will be re-created and the data will be lost.
+> [!CAUTION]
+> When re-creating tables there is an additional check box, Recreate data for selected table(s). If you mark this option the table will be re-created and the data will be left intact. If you leave the option unmarked the table will be re-created and the data will be lost.
 
-1. Choose Perform Selected Maintenance to proceed.
+6. Choose Perform Selected Maintenance to proceed.
 
 > [!NOTE]
 > Keep in mind when re-creating a table with data that it may take some time to re-create depending on the table size.
 
 ### Using Menu Inquiry Utility
 
-The Menu Inquiry Utility allows you to see all of the commands on the menus,
-whether they are hidden or not, and helps identify where those commands come
-from (which product) and other properties of the commands.
+The Menu Inquiry Utility allows you to see all of the commands on the menus,whether they are hidden or not, and helps identify where those commands come from (which product) and other properties of the commands.
 
 **To display menu commands:**
 
 1. Choose a menu group from the Menu Groups field.
 
-    ![A screenshot ](media/c54c9c7d6757d91e394323e5e096590a.jpg)
+2. Select a Command from the resulting Categories/Commands list on the right-hand side to display the command properties at the bottom of the Menu Inquiry window.
 
-1. Select a Command from the resulting Categories/Commands list on the right-
-    hand side to display the command properties at the bottom of the Menu
-    Inquiry window.
-
-2. Checkmarks designate certain properties of the command:
+3. Checkmarks designate certain properties of the command:
 
     - If the Enabled box is checked, the command is enabled.
 
-    - If the Checked box is checked, the command or option has been selected
-        and activated within Microsoft Dynamics.
+    - If the Checked box is checked, the command or option has been selected and activated within Microsoft Dynamics.
 
-    - If the Visible box is checked, the command or option is visible and
-        accessible.
+    - If the Visible box is checked, the command or option is visible and accessible.
 
-3. To open the corresponding window for the command, click on the gears icon
-    next to the Tag \# heading.
+4. To open the corresponding window for the command, click on the gears icon next to the Tag \# heading.
 
-If the gear icon appears unlit or gray, this option is unavailable for the
-command selected.
+If the gear icon appears unlit or gray, this option is unavailable for the command selected.
 
 ### Using Update User Date Utility
 
-The Update User Date utility will automatically update the User Date in
-Microsoft Dynamics GP to the next date at midnight each day. The application
-will run in the background as long as Microsoft Dynamics GP is open. To
-activate this tool, simply mark the second check box next to Update User
-Date in the Professional Services Tools Library window.
+The Update User Date utility will automatically update the User Date in Microsoft Dynamics GP to the next date at midnight each day. The application will run in the background as long as Microsoft Dynamics GP is open. To activate this tool, simply mark the second check box next to Update User Date in the Professional Services Tools Library window.
 
-In order for the Update User Date utility to work properly, you will need to
-have SuppressDateChangeDialog=TRUE in the Dex.ini file to suppress the date
-dialog that will be displayed if Microsoft Dynamics GP is left open over the
-midnight hour.
+In order for the Update User Date utility to work properly, you will need to have SuppressDateChangeDialog=TRUE in the Dex.ini file to suppress the date dialog that will be displayed if Microsoft Dynamics GP is left open over the midnight hour.
 
 ## Chapter 3: Using Financial Tools
 
-This chapter explains how to use the Financial Series Professional Services
-Tools. Information is divided into the following sections:
+This chapter explains how to use the Financial Series Professional Services Tools. Information is divided into the following sections:
 
 - *Using Account Modifier/Combiner*
 
@@ -562,44 +469,27 @@ Tools. Information is divided into the following sections:
 
 ### Using Account Modifier/Combiner
 
-You can change previous account numbers into new account numbers or combine
-existing accounts with the Account Modifier/Combiner tool. This tool can
-identify which one of these activities you are trying to perform.
+You can change previous account numbers into new account numbers or combine existing accounts with the Account Modifier/Combiner tool. This tool can identify which one of these activities you are trying to perform.
 
 > [!IMPORTANT]
 > This tool requires that the user be logged in as “sa.”
 
-The difference between the modifier and combiner is that both accounts
-involved in the combiner portion of the utility currently exist in the
-system, while the new account number in the modifier portion is introduced
-as a new number to the system.
+The difference between the modifier and combiner is that both accounts involved in the combiner portion of the utility currently exist in the system, while the new account number in the modifier portion is introduced as a new number to the system.
 
 > [!NOTE]
 > Please remember to run the reconcile process for all your open and historical years after using the account modifier/combiner to ensure that detail and summary records agree.
 
-When you attempt to modify a larger set of accounts such as 150 and use the
-range option, you may notice slower performance and Dynamics GP may eventually
-crash. If you are modifying a lot of accounts, we would recommend you to use the
-import option.
+When you attempt to modify a larger set of accounts such as 150 and use the range option, you may notice slower performance and Dynamics GP may eventually crash. If you are modifying a lot of accounts, we would recommend you to use the import option.
 
 ### Using the Repopulate Column List function
 
-If you load a dictionary after the initial install of the Professional
-Services Tools Library, you should re-create an internal table using the
-Repopulate Column List function. If you install a product after the initial
-installation of Professional Services Tools and do not mark the Repopulate
-Column List check box, the new products may not be included when using this
-tool. This Repopulate Column List function only has to be marked the first
-time running the tool after loading a new dictionary.
+If you load a dictionary after the initial install of the Professional Services Tools Library, you should re-create an internal table using the Repopulate Column List function. If you install a product after the initial installation of Professional Services Tools and do not mark the Repopulate Column List check box, the new products may not be included when using this tool. This Repopulate Column List function only has to be marked the first time running the tool after loading a new dictionary.
 
-![A screenshot](media/4876f57348d9d6bdc8258615e008aa21.jpg)
+![A screenshot](media/PSTACTMOD.jpg)
 
 **Account Modifier**
 
-You can manipulate an account number with the Account Modifier by changing a
-single account number into a new account number or by changing an entire
-range of accounts. All of the open and historical information can change
-without any loss of data.
+You can manipulate an account number with the Account Modifier by changing a single account number into a new account number or by changing an entire range of accounts. All of the open and historical information can change without any loss of data.
 
 **To change an account number:**
 
@@ -607,66 +497,51 @@ without any loss of data.
 
 2. Enter the new account number in the Convert To Account Number field.
 
-3. After entering the account numbers, choose Convert to make the change
-    throughout the system.
+3. After entering the account numbers, choose Convert to make the change throughout the system.
 
-4. When the process is finished, choose OK. You will be asked if there are any
-    combines to perform.
+4. When the process is finished, choose OK. You will be asked if there are any combines to perform.
 
-5. If you choose No, you will receive a report describing which accounts were
-    modified. If you have accounts that you wish to combine, choose Yes to make
-    the tool combine those accounts. When the combine process is complete, you
-    will receive a prompt to reconcile your open and historical years.
+5. If you choose No, you will receive a report describing which accounts were modified. If you have accounts that you wish to combine, choose Yes to make the tool combine those accounts. When the combine process is complete, you will receive a prompt to reconcile your open and historical years.
 
-6. Choose a report destination. The report will list all the account
-    modifications and combinations that took place, as well as all accounts that
-    were modified and combined.
+6. Choose a report destination. The report will list all the account modifications and combinations that took place, as well as all accounts that were modified and combined.
 
 > [!NOTE]
 > If you are running Management Reporter with Data Mart, you will need to rebuild the Data Mart after you complete the Account changer process.
 
 **To change a range of accounts:**
 
-1. Select the range of accounts to be changed and identify what segment of the
-    account structure will change from the Field Type drop down list.
+1. Select the range of accounts to be changed and identify what segment of the account structure will change from the Field Type drop down list.
 
-2. After the account segment has been identified, enter a new segment value and
-    choose Convert. The accounts will change throughout the system.
+2. After the account segment has been identified, enter a new segment value and choose Convert. The accounts will change throughout the system.
 
-    > [!NOTE]
-    > When using the Range convert option, combines cannot be done. If any of the changes require a combine, the change will not take place. If combines are required for many accounts, use the Import option.
+  > [!NOTE]
+  > When using the Range convert option, combines cannot be done. If any of the changes require a combine, the change will not take place. If combines are required for many accounts, use the Import option.
 
-    This table is an example showing what would happen if segment 1 was changed from 111 to 222.
+  This table is an example showing what would happen if segment 1 was changed from 111 to 222.
 
-    | **Range of accounts selected** | **New account structure** |
-    |--------------------------------|---------------------------|
-    | 111-1111-11                    | 222-1111-11               |
-    | 111-1111-12                    | 222-1111-12               |
-    | 111-1111-13                    | 222-1111-13               |
-    | 111-1111-14                    | 222-1111-14               |
-    | 111-1111-15                    | 222-1111-15               |
-    | 111-1111-16                    | 222-1111-16               |
-    | 111-1111-17                    | 222-1111-17               |
-    | 111-1111-18                    | 222-1111-18               |
-    | 111-1111-19                    | 222-1111-18               |
-    | 111-1111-20                    | 222-1111-20               |
+  | **Range of accounts selected** | **New account structure** |
+  |--------------------------------|---------------------------|
+  | 111-1111-11                    | 222-1111-11               |
+  | 111-1111-12                    | 222-1111-12               |
+  | 111-1111-13                    | 222-1111-13               |
+  | 111-1111-14                    | 222-1111-14               |
+  | 111-1111-15                    | 222-1111-15               |
+  | 111-1111-16                    | 222-1111-16               |
+  | 111-1111-17                    | 222-1111-17               |
+  | 111-1111-18                    | 222-1111-18               |
+  | 111-1111-19                    | 222-1111-18               |
+  | 111-1111-20                    | 222-1111-20               |
 
-1. When the process is finished, choose OK. You will be asked if you want to
-    combine any accounts.
+1. When the process is finished, choose OK. You will be asked if you want to combine any accounts.
 
-2. If you choose No, you will receive a report describing which accounts were
-    modified. If you have accounts that you wish to combine, choose Yes to make
-    the tool combine those accounts.
+2. If you choose No, you will receive a report describing which accounts were modified. If you have accounts that you wish to combine, choose Yes to make the tool combine those accounts.
 
-3. When the combine process is complete, you will receive a prompt to reconcile
-    your open and historical years.
+3. When the combine process is complete, you will receive a prompt to reconcile your open and historical years.
 
-4. Choose a report destination. The report will list all the account
-    modifications and combinations that took place, as well as all accounts that
-    were modified and combined.
+4. Choose a report destination. The report will list all the account modifications and combinations that took place, as well as all accounts that were modified and combined.
 
-*If you are running Management Reporter with Data Mart, you will need to
-rebuild the Data Mart after you complete the Account changer process.*
+> [!NOTE]
+> If you are running Management Reporter with Data Mart, you will need to rebuild the Data Mart after you complete the Account changer process.
 
 **Account Combiner**
 
@@ -1193,17 +1068,14 @@ amounts of data.
 
 3. Choose Convert.
 
-4. You will be prompted to back up your database. Once you have a current
+4. You will be prompted to back up your database. Once you have a current backup of the database, choose Continue.
 
-backup of the database, choose Continue.
+5. The process is complete when a message appears. Choose OK.
 
-1. The process is complete when a message appears. Choose OK.
+    > [!NOTE]
+    > If Manufacturing is part of your solution, you must run a full MRP Regeneration after the combine process has finished in order to complete the process for MRP tables.
 
-*If Manufacturing is part of your solution, you must run a full MRP
-Regeneration after the combine process has finished in order to complete the
-process for MRP tables.*
-
-1. Choose a report destination. The report indicates what Site IDs were combined in the system.
+6. Choose a report destination. The report indicates what Site IDs were combined in the system.
 
 ### Using Inventory Site Modifier
 
@@ -1268,10 +1140,10 @@ If you are using Bill of Materials or Manufacturing with Bill Of Materials,
 you can NOT combine parent objects, only child objects will be able to be
 combined.
 
-*This tool requires that the user be logged in as “sa.”*  
-When combing 2 Item Numbers using Item Combiner with a valuation method of
-Average the Qty and Average Cost may be incorrect. A workaround to this
-would be to decrease the Qty down to 0 prior to Combining Items. 
+> [!IMPORTANT]
+> This tool requires that the user be logged in as “sa.”
+
+When combing 2 Item Numbers using Item Combiner with a valuation method of Average the Qty and Average Cost may be incorrect. A workaround to this would be to decrease the Qty down to 0 prior to Combining Items.
 
 **To combine an item number:**
 
@@ -1288,7 +1160,7 @@ would be to decrease the Qty down to 0 prior to Combining Items. 
 
 5. Another message is displayed when the item number combine process is complete. Choose OK to continue.
 
-1. Close the Item Number Combiner. A Report Destination Window will appear.
+6. Close the Item Number Combiner. A Report Destination Window will appear.
 
     Select a report destination to view the combined Item Numbers Report.
 
@@ -1332,7 +1204,7 @@ items don’t need to be reconciled.
 
 2. Choose Reconcile to reconcile the module(s).
 
-## Chapter 6:*Using Purchasing Tools
+## Chapter 6: Using Purchasing Tools
 
 This chapter explains how to use the Purchasing Series Professional Services Tools. Information is divided into the following sections:
 
@@ -1372,27 +1244,20 @@ open records that were paid in the new year, get updated.
 
     ![A screenshot](media/0cd4ee5bc05eca0373eb73ed79a5f7e4.jpg)
 
-1. Select whether you would like to Print Report Only or Process and Print
+3. Select whether you would like to Print Report Only or Process and Print
     Report.
 
-The Print Report Only option shows you the Vendor, Voucher Number, and
+    The Print Report Only option shows you the Vendor, Voucher Number, and
 
-Amount that will be converted to a 1099 amount. The Process and Print Report
-option makes the changes, prints the report and prints an updated Summary
-records report for the 1099 amount.
+    Amount that will be converted to a 1099 amount. The Process and Print Report option makes the changes, prints the report and prints an updated Summary records report for the 1099 amount.
 
-1. Select the calendar year to which you want to make the changes.
+4. Select the calendar year to which you want to make the changes.
 
-2. You will be prompted to back up your database. Choose Continue once you have
-    a backup of your database. A message will signal when the 1099 Modifier has
-    finished processing.
+5. You will be prompted to back up your database. Choose Continue once you have a backup of your database. A message will signal when the 1099 Modifier has finished processing.
 
-If you selected Process and Print Report, you may get an additional report
-showing summary table changes that have been made to the 1099 amount field.
-The number under the Amount After heading is the amount that prints on your
-1099 reports.
+    If you selected Process and Print Report, you may get an additional report showing summary table changes that have been made to the 1099 amount field. The number under the Amount After heading is the amount that prints on your 1099 reports.
 
-1. Close the 1099 Modifier window. A report destination window will appear.
+6. Close the 1099 Modifier window. A report destination window will appear.
 
 Choose a destination for the report to view a 1099 Modified Records report.
 
@@ -1404,22 +1269,14 @@ This tool allows you to add a vendor and vendor address master record and
 replicate records to another database on the same server. You can also
 choose to replicate these records to some or all of your companies.
 
-*If you are using Integration Manager to import account, customer, or vendor
-master records to the main company database and the integration fails for
-any reason, any records imported to the main company database will be
-deleted (rolled back). However, if you have enabled master record triggers,
-the records will be replicated to company databases that you specify in the
-Replicate To DB field, and will not be rolled back. You must delete such
-replicated records manually.*
+> [!NOTE]
+> If you are using Integration Manager to import account, customer, or vendor master records to the main company database and the integration fails for any reason, any records imported to the main company database will be deleted (rolled back). However, if you have enabled master record triggers, the records will be replicated to company databases that you specify in the Replicate To DB field, and will not be rolled back. You must delete such replicated records manually.
 
-If you utilize the RM and PM Master triggers in the Professional Service Tools
-Library and a customer or vendor has an address with more than 31 characters in
-the field, the system will truncate any characters after 31.
+If you use the RM and PM Master triggers in the Professional Service Tools Library and a customer or vendor has an address with more than 31 characters in the field, the system will truncate any characters after 31.
 
 **To create and update vendor and vendor address records:**
 
-1. In the Master DB field, choose the database where you will be creating or
-    updating records.
+1. In the Master DB field, choose the database where you will be creating or updating records.
 
     ![A screenshot](media/c1191b26fd8c4b16fbd42dc3cfd908fd.jpg)
 
@@ -1438,9 +1295,8 @@ the field, the system will truncate any characters after 31.
 Use the Payables Management Minimum Check tool to set a minimum amount for
 your Payables checks within the Select Checks process.
 
-*This process occurs after the Payment Vouchers have already been created.
-This will cause a break in the payment vouchers sequence in the system but
-will not harm anything.*
+> [!NOTE]
+> This process occurs after the Payment Vouchers have already been created. This will cause a break in the payment vouchers sequence in the system but will not harm anything.
 
 **Payables Management Minimum Check setup:**
 
@@ -1449,21 +1305,19 @@ will not harm anything.*
     check box next to PM Minimum Check from the Professional Services Tools
     Library menu. Close the window.
 
-2. When opening the Select Payables Checks window, the title bar of the window
-    will display the current settings for the minimum check amount.
+2. When opening the Select Payables Checks window, the title bar of the window will display the current settings for the minimum check amount.
 
     ![A screenshot](media/5a4c5a9e7c53c8d89a0f5fd2cdb19771.jpg)
 
-1. To change the Minimum Check amount, choose Additional \>\> Set Minimum Check
-    Amount. The Minimum Select Check Amount window will appear.
+1. To change the Minimum Check amount, choose Additional \>\> Set Minimum Check Amount. The Minimum Select Check Amount window will appear.
 
 2. Enter the new minimum check amount in the Minimum Check Amount field.
 
 You can turn the minimum check amount on or off by marking or unmarking the
 Use Minimum Amount check box.
 
-*The settings are per machine and stored in the Dex.ini for use in the next
-check build process, for example MinPMCheck=201.00.*
+> [!NOTE]
+> The settings are per machine and stored in the Dex.ini for use in the next check build process, for example MinPMCheck=201.00.
 
 ### Using Select Checks Combiner
 
@@ -1523,28 +1377,21 @@ defaults will never go below the set amount.
 
 **To set a Minimum PO or Receipt number:**
 
-1. To activate the new functionality that this tool offers, simply mark the
-    second check box next to Minimum PO/Receipt \# from the Professional
+1. To activate the new functionality that this tool offers, simply mark the second check box next to Minimum PO/Receipt \# from the Professional
     Services Tools menu. Close the window.
 
-2. Open Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\>
-    Purchase Order Processing, and then choose Additional \>\> Minimum PO
-    Number.
+2. Open Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Processing, and then choose Additional \>\> Minimum PO Number.
 
 3. Enter the minimum purchase order and receipt numbers.
 
-4. If you do not want to use previous PO or receipt numbers, select the check
-    box to never default to a previous PO or receipt number.
+4. If you do not want to use previous PO or receipt numbers, select the check box to never default to a previous PO or receipt number.
 
-The Minimum PO Number Default and Minimum Receipt Number Default fields will
-be disabled.
+    The Minimum PO Number Default and Minimum Receipt Number Default fields will be disabled.
 
-1. Choose Save.
+5. Choose Save.
 
-*This functionality will only work for document numbers that are the same
-length. If the next PO Number field is not the same length as the Minimum PO
-Number entered, then the system will function as it did without the
-customization.*
+> [!NOTE]
+> This functionality will only work for document numbers that are the same length. If the next PO Number field is not the same length as the Minimum PO Number entered, then the system will function as it did without the customization.
 
 ### Using POP Cost Defaulter
 
@@ -1584,9 +1431,7 @@ buttons* on page 2 to use the Validate and Import buttons.
 
 1. Enter the new Employee ID.
 
-2. Choose Convert. You will be prompted to back up your database. Once a
-
-backup is made of the database, Choose Continue.
+2. Choose Convert. You will be prompted to back up your database. Once a backup is made of the database, Choose Continue.
 
 1. A message will appear when the employee ID change is finished.
 
@@ -1693,17 +1538,10 @@ palette.
     employee's total weekly hours for the Job and their total Job Gross Pay is
     printed for each employee on every job report.
 
-*The employee's total weekly gross and net pay, along with their total FICA,
-federal, state and other withholding is given on the report as summary
-information. Keep in mind that these summary figures may contain amounts
-that may have been allocated to other jobs during the week or may have come
-from a pay code that does not allow job number entry, such as sick or
-vacation time.*
+> [!NOTE]
+> The employee's total weekly gross and net pay, along with their total FICA, federal, state and other withholding is given on the report as summary information. Keep in mind that these summary figures may contain amounts that may have been allocated to other jobs during the week or may have come from a pay code that does not allow job number entry, such as sick or vacation time.
 
-The report also contains a summary for an entire job that describes the
-total job- specific gross pay along with the total overall gross pay for all
-employees who worked on that job during the week. Each separate Job will
-reset the report to start over with page 1.
+The report also contains a summary for an entire job that describes the total job- specific gross pay along with the total overall gross pay for all employees who worked on that job during the week. Each separate Job will reset the report to start over with page 1.
 
 ## Chapter 8: Using Miscellaneous Tools
 
@@ -1810,15 +1648,10 @@ print with more than two decimals, which can alter the amount of the check.
 The Decimal Place tool will adjust the Check Amount in Words portion to two
 decimal places.
 
-*The Decimal Places Tool will change only the Check Amount in Words portion
-of the check. To change the actual amount on the check to match the Check
-Amount in Words, you must use Report Writer to modify the check report and
-change the currency fields to only print two decimal places. Modifying the
-Check Amount in Words is not possible in Report Writer, so this tool allows
-that portion of the change.*
+> [!NOTE]
+> The Decimal Places Tool will change only the Check Amount in Words portion of the check. To change the actual amount on the check to match the Check Amount in Words, you must use Report Writer to modify the check report and change the currency fields to only print two decimal places. Modifying the Check Amount in Words is not possible in Report Writer, so this tool allows that portion of the change.
 
-To activate this tool, simply mark the second check box next to Decimal
-Place Tool in the Professional Services Tools Library window.
+To activate this tool, simply mark the second check box next to Decimal Place Tool in the Professional Services Tools Library window.
 
 ### Using Company Copy
 
@@ -1827,21 +1660,20 @@ be copied to another company within Microsoft Dynamics GP. You can choose
 the modules for which information will be copied from the source company to
 the destination company.
 
-*This tool requires that the user be logged in as “sa.”*
+> [!IMPORTANT]
+> This tool requires that the user be logged in as “sa.”
 
 Before using the Company Copy tool, be aware of the following important
 issues:
 
-- You should use this tool only after creating a SQL database backup of the
-    destination company. The copy operation is irreversible without a backup.
+- You should use this tool only after creating a SQL database backup of the destination company. The copy operation is irreversible without a backup.
 
 - When the copy process is run, the setup tables and report options tables in the modules you selected will be deleted for the destination company. If you
     have manually added setup or report option information for a module in the
     destination company, and you do not want this information deleted, do not
     use the Company Copy tool to copy data for that module.
 
-- You should be the only user who is logged into Microsoft Dynamics GP when
-    the operation is performed.
+- You should be the only user who is logged into Microsoft Dynamics GP when the operation is performed.
 
 - The operation can take a significant amount of time to complete, so you should consider performing it during off-peak hours.
 
@@ -1861,29 +1693,21 @@ issues:
 
     - If Report Options is selected, Company must be marked.
 
-    - When the Data or Report Options are selected, Financial must be marked
-        due to the account index dependency with other modules.
+    - When the Data or Report Options are selected, Financial must be marked due to the account index dependency with other modules.
 
-The following dependencies exist for the modules:
+      The following dependencies exist for the modules:
 
-- If Manufacturing is marked, Inventory must also be marked.
+      - If Manufacturing is marked, Inventory must also be marked.
 
-- If Extended Pricing is marked, Inventory and Receivables must also be
-    marked.
+      - If Extended Pricing is marked, Inventory and Receivables must also be marked.
 
-- If Project Accounting is marked, Inventory, Receivables, and Payroll must
+      - If Project Accounting is marked, Inventory, Receivables, and Payroll must also be marked.
 
-also be marked.
+      - If Bill of Materials is marked, Inventory must also be marked.
 
-- If Bill of Materials is marked, Inventory must also be marked.
+3. Click Process to begin processing. A processing status message will be displayed in the lower-left corner of the Company Copy window. The processing time required will depend on the amount of data in the modules selected. When processing has finished, a status message will indicate that processing is complete.
 
-1. Click Process to begin processing. A processing status message will be displayed in the lower-left corner of the Company Copy window. The
-    processing time required will depend on the amount of data in the modules
-    selected. When processing has finished, a status message will indicate that
-    processing is complete.
-
-2. Log into the destination company to validate the setup information and
-    report option information that you copied.
+4. Log into the destination company to validate the setup information and report option information that you copied.
 
 **Data tables copied**
 
@@ -1891,7 +1715,6 @@ The following is a listing of the data tables that are copied for each
 module in the Company Copy tool.
 
 **Company**
-
 SY00300  
 SY03100  
 SY40102  
@@ -1934,7 +1757,6 @@ SY04100
 GL40000
 
 **Inventory**
-
 IV00101  
 IV00113  
 IV40700  
@@ -1990,7 +1812,6 @@ FA41100
 FA41200
 
 **Multicurrency**
-
 MC00201  
 MC00200  
 MC40000  
@@ -2001,7 +1822,6 @@ MC40500
 MC60400
 
 **Payroll**
-
 DD40700  
 UPR40100  
 UPR40101  
@@ -2061,7 +1881,6 @@ RM40106
 PA00002
 
 **Sales Order Processing**
-
 SOP00100  
 SOP00200  
 SOP40100  
@@ -2079,7 +1898,6 @@ SOP60300
 SOP00300
 
 **Purchase Order Processing**
-
 POP40100  
 POP40600  
 POP40400  
@@ -2088,7 +1906,6 @@ POP40900
 POP00101
 
 **Advanced Financials**
-
 AF40100  
 AF40101  
 AF40102  
@@ -2104,7 +1921,6 @@ AF40200
 AF40201
 
 **Extended Pricing**
-
 IV10400  
 IV10401  
 IV10402  
@@ -2117,12 +1933,10 @@ SOP10205
 SOP40709
 
 **Invoicing**
-
 IVC40100  
 IVC40101
 
 **Human Resources**
-
 BE020230  
 BE021030  
 BE031000  
@@ -2159,7 +1973,6 @@ TAST0532
 TATM0130
 
 **Bill of Materials**
-
 BM00101  
 BM00111  
 BM40100
