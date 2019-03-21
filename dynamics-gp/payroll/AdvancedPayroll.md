@@ -205,6 +205,7 @@ While standard Pay Policies (or combinations of the five factors) may exist, any
 
 - The only restriction to Pay Policy combinations is that only hourly Pay Codes can be used.
 
+
 ### Pay Policy Example
 
 | **Field**  | **Selection** | **Add-On Code** | **Add-On Amount** |
@@ -420,8 +421,7 @@ down these changes to all employees with this pay code?”
 
 Use the Pay Policies window is to provide actual and hypothetical
 
-Adjusted Pay Rate scenarios. To open this window, click the **HR and
-Payroll** series button, click **Pay Policy Manager** on the Setup content
+Adjusted Pay Rate scenarios. To open this window, click the **HR and Payroll** series button, click **Pay Policy Manager** on the Setup content
 pane and then click **Pay Policies**.
 
 ![A screenshot](media/3682febe7f8380e092213bf04723673a.jpg)
@@ -446,11 +446,6 @@ window, which will affect all actual Pay Policies for that Pay Code.*
 Select a **calculation**:
 
 - **Actual Calculations** - displays the amounts in the window that represent
-    the most current actual data that exists. In a case where a Pay Policy was
-    created using actual calculations, when the record is re-opened, all
-    calculations are automatically re-figured based on the latest actual data
-    available.
-
 - **Hypothetical Calculations** - displays the amounts in the window that
     represent the amounts saved in the Pay Policies table. The values entered
     into the Hypothetical fields do not update the actual values saved in the
@@ -584,8 +579,7 @@ Account can be assigned assign to a Department, Position and (Pay) Code.
     payroll transaction hours should be posted to be based on the Department,
     Position and (Pay) Code combination.
 
-- During payroll processing, the payroll transaction hours will be posted to
-    the appropriate Unit Accounts.
+- During payroll processing, the payroll transaction hours will be posted tohe appropriate Unit Accounts.
 
 #### Unit Account
 
@@ -1014,214 +1008,41 @@ Some key points to remember from this chapter include:
     Position and Shift Code selected, or the linked pay code selections on the
     Employee Pay Code Options window.
 
-#### Objectives
-
-The objectives are:
-
-- Enter employee pay policies.
-
-- Enter Employee Transaction Auto Splits.
-
-### Pay Policy Manager
-
->   For any Adjusted Pay Rates to calculate the Employee level must be correctly
->   set up. Using Employee Maintenance and Employee Pay Policy Exceptions
->   options, a variety of Adjusted Pay Rate calculations can be maintained.
-
-### Pay Policy Manager - Employee Maintenance
-
->   Pay Policy Manager automates the advanced rate calculation process by
->   allowing administration of all standard and overtime policies for hourly
->   employees working in multiple departments and positions with a variety of
->   base pay rates, shift differentials and pay rate add-on amounts.
-
-### Adjusted Pay Rates
-
->   An Adjusted Pay Rate is a Pay Code Pay Rate modified by the Pay Policy
->   Manger. Pay Policy Manager handles modifying Pay Rates by several different
->   options.
-
-##### Option 1
-
->   Assigning Add-On Codes which includes an Amount (% or \$) that will be
->   applied to the Employee’s base Pay Code Pay Rate when creating payroll
->   transactions. Example: Employee’s hourly Pay Code Pay Rate of \$10.00 with
->   an Add-On Amount of \$1.00. All transactions for this Employee would be
->   calculated at a rate of \$11.00.
-
-##### Option 2
-
->   Linking a pay code to an hour based pay code to inherit that pay codes pay
->   policy and pay policy exceptions. Example: Employee’s Vacation Pay Code that
->   uses the same Pay Policy as the Employee’s hourly Pay Code.
-
-##### Option 3
-
->   Linking a pay code to an hour based pay code and setting a Percent. Example:
->   A pay code that tracks differential hours, where the rate of pay is always a
->   set percentage of the adjusted pay rate.
-
-##### Option 4
-
->   Forced minimum pay rates to verify that the employee’s pay rate is never
->   less than that rate.
-
-### Employee Pay Code Options
-
->   Use the Employee Pay Code Options window to designate a “Linked Pay Code” or
->   an Add-On code. To open this window, click the **HR and Payroll** series
->   button, click **Payroll** on the Cards content pane, and then click on **Pay
->   Code**. Select an **Employee ID**, select a **Pay Code** and then click
->   **Employee Pay Code Options** from the GoTo menu.
-
->   When a linked pay code is assigned, then the system will disable the “Use
->   Add-On” options.
-
--   Only a pay code that is hourly based can be linked to another hourly-based
-    code.
-
--   The system will use the add-ons of the linked pay code.
-
->   After a linked pay code is entered, the Pay Percent and Minimum Amount
->   fields will become enabled.
-
--   A percent of the linked pay code rate can be entered when not using the full
-    100%.
-
--   A minimum amount can be specified so that when the linked pay code and any
-    add-on options do not exceed the minimum amount, the rate will automatically
-    be adjusted up to the minimum amount.
-
->   The Pay Code Options window also allows an Add-On Code to be specified and
->   to specify if an employee is currently eligible for the adjusted pay rate.
-
--   When the Use Add-On option is selected and an Add-On Code is selected, this
-    Add-On Code Amount will be applied to an eligible employee’s pay rate.
-
--   The values in this field will default from the Pay Code Options window for
-    the pay code selected.
-
--   The default values are saved when SAVE on the Employee Pay Code Maintenance
-    window is selected.
-
--   To change the defaults open this window, enter the selections, press OK and
-    SAVE on the Employee Pay Code record.
-
->   The Pay Policy Priority Setup does not include the Employee Pay Code
->   calculation factor.
-
--   The Employee Pay Code Add-On is always applied as the first calculation.
-
--   That adjusted pay rate is then sent through the Pay Policy Priority
-    adjustments following the priority set in the Pay Policy Priority Setup
-    window.
-
->   Pay Policy Manager specific fields: Linked Pay Code, Pay Percent, Minimum
->   Amount, Use Add-On and Add-On Code. All other fields on this window are for
->   other Human Resources and Payroll Suite modules.
-
-### Employee Maintenance
-
->   The existing Employee Maintenance window has been modified to allow the user
->   to specify when an employee is eligible for the Pay Code rate adjustments
->   defined. The Use Add-On checkbox must be selected for an employee’s rate to
->   pay rate adjustments to be calculated.
-
-![A screenshot of a social media post Description automatically generated](media/10d43b370e55069491f108e962d29310.jpg)
-
-### Use Add-On Employee’s
-
->   Use the Use Add-On Employee’s window to assign an add-on code. To open this
->   window, click the **HR and Payroll** series button, click **Payroll** on the
->   Cards content pane, click on **Employee** and then click **Use AddOn
->   Employee’s** from the Payroll GoTo menu.
-
->   The Use Add-On Employee’s window allows the user to assign an add-on code to
->   a single employee or to many employees. The user can display the employees
->   in the window based on a selected range. The Ranges option includes Employee
->   ID, Department, Position or Employee Class.
-
-### Employee Class Assignment
-
->   Employee Pay Code Option records are created when an Employee Class is
->   assigned to an employee in the Employee Maintenance window and when “YES” is
->   answered to the “Do you want to use default information from the employee
->   class record?” message that appears when exiting the Class ID field.
-
-### Employee Pay Policy Exceptions
-
->   The Employee Pay Policies Exceptions window is used to define exceptions for
->   a specific employee to calculate the employees Adjusted Pay Rate when adding
->   payroll transactions. To open this window, click the **HR and Payroll**
->   series button, click **Payroll** on the Cards content pane, and then click
->   **Pay Policies**.
-
-![A screenshot of a cell phone Description automatically generated](media/0a40d3be32d5491e1636f612d457a794.jpg)
-
->   The Employee Pay Policy Exceptions window allows Add-On Rate adjustments to
->   be defined for an individual employee based on a combination of Company ID,
->   Department, Position and Shift Code.
-
->   Whenever the Pay Policies rate adjustments applied to each of these elements
->   does not satisfy the needs of a particular employee, specific adjustments
->   can be applied in this window. This option is intended to handle all
->   employee exceptions or deviations from the standard Pay Policies.
-
->   Any Employee Pay Policies Exceptions defined for an employee will be used in
->   the calculation instead of the normal Pay Policies calculations defined. In
->   addition to applying variations of the defined Pay Policies, assigning an
->   Employee Pay Policy Exception can include an Employee Adjustment.
-
->   **Employee ID**
-
->   Selecting the Employee enables the option of selecting a Pay Code.
-
-##### Pay Code
-
->   Selecting an employee Pay Code opens all Employee Pay Policies Exceptions
->   currently assigned to that employee Pay Code and enables the functionality
->   of the Employee Pay Policies Exception window.
-
--   At this time, a Hypothetical Pay Code Rate and/or a Hypothetical Pay Code
-    Add-On option can be entered.
-
--   When combined with the Calculate By option discussed below, the Actual and
-
-- During the calculation process, when Add-On Codes are assigned to various
+-   During the calculation process, when Add-On Codes are assigned to various
     calculation factors the calculations occur in order based on the Pay Policy
     Priority Setup.
 
-- An employee can have a transaction with any combination of five calculation
+-   An employee can have a transaction with any combination of five calculation
     factors.
 
-- The values entered into the Hypothetical fields do not update the actual
+-   The values entered into the Hypothetical fields do not update the actual
     values saved in the Pay Code table.
 
-- Payroll Hours to General Ledger will allow the system to be set up to post
+-   Payroll Hours to General Ledger will allow the system to be set up to post
     actual labor hours to General Ledger Unit Accounts.
 
-- When the “Do Not Post Hours” is selected, the payroll transaction hours will
+-   When the “Do Not Post Hours” is selected, the payroll transaction hours will
     not be posted to the General Ledger unit account.
 
-- Labor Accrual Manager allows batches to accrue on based on Posted Date or
+-   Labor Accrual Manager allows batches to accrue on based on Posted Date or
     Pay Period End Date to be viewed.
 
-- When the Post Payroll Hours to General Ledger is not installed, only dollars
+-   When the Post Payroll Hours to General Ledger is not installed, only dollars
     will be available for use during the Labor Accrual Manager Payroll Accruals
     to generate dollar accrual journal entries.
 
-- The “Exclude Hours from Payroll Accruals” has no impact on the accrue
+-   The “Exclude Hours from Payroll Accruals” has no impact on the accrue
     dollars for payroll accruals, only hours.
 
-- Advanced Labor Reporting extends department level reporting for both Payroll
+-   Advanced Labor Reporting extends department level reporting for both Payroll
     and Financial data.
 
-- The FTE YTD Report uses the Labor Reporting Code from the Labor Reporting
+-   The FTE YTD Report uses the Labor Reporting Code from the Labor Reporting
     Accounts window and pulls data from the General Ledger.
 
-- A department can be assigned to multiple areas of responsibility.
+-   A department can be assigned to multiple areas of responsibility.
 
-- The Payroll Account Mapping window provides the route back for the General
+-   The Payroll Account Mapping window provides the route back for the General
     Ledger Accounts to the payroll accounts assigned to a specific Area of
     Responsibility.
 

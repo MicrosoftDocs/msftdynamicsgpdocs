@@ -332,8 +332,6 @@ task.
 
     (Administration \>\> Setup \>\> Setup Checklist)
 
-1. Select the setup task to complete. For this example, select User Preferences.
-
 2. Choose Open. The User Preferences window will be displayed.
 
 3. Modify your user preferences.
