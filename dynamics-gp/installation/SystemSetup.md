@@ -142,16 +142,7 @@ complete this process as quickly and efficiently as possible.
 
 #### Plan
 
-Some materials have been provided to help you plan for implementing
-Microsoft
-
-Dynamics GP. If you haven’t yet reviewed these resources, visit the
-
-CustomerSource Web site to review them. In addition to defining a schedule
-for setting up and using the software, many businesses make detailed
-assignments for specific tasks, such as defining customer and vendor
-numbers, creating vendor, item and customer records, entering and posting
-beginning balances.
+Some materials have been provided to help you plan for implementing Microsoft Dynamics GP. If you haven’t yet reviewed these resources, visit the CustomerSource Web site to review them. In addition to defining a schedule for setting up and using the software, many businesses make detailed assignments for specific tasks, such as defining customer and vendor numbers, creating vendor, item and customer records, entering and posting beginning balances.
 
 The procedures in *Chapter 2, “Setting up Microsoft Dynamics GP,”* can help
 you assign specific setup tasks to users from within Microsoft Dynamics GP
@@ -173,12 +164,7 @@ stage.
 
 #### Build
 
-We refer to the process of installing and setting up Microsoft Dynamics GP
-as the
-
-“build” process. In addition to installing Microsoft Dynamics GP or
-Microsoft SQL Server on one or more servers, it includes setting up process
-servers and workstations. This process includes the following tasks:
+We refer to the process of installing and setting up Microsoft Dynamics GP as the “build” process. In addition to installing Microsoft Dynamics GP or Microsoft SQL Server on one or more servers, it includes setting up process servers and workstations. This process includes the following tasks:
 
 - Installing Microsoft Dynamics GP
 
@@ -344,10 +330,9 @@ task.
 
 1. Open the Setup Checklist window.
 
-(Administration \>\> Setup \>\> Setup Checklist)
+    (Administration \>\> Setup \>\> Setup Checklist)
 
-1. Select the setup task to complete. For this example, select User
-    Preferences.
+1. Select the setup task to complete. For this example, select User Preferences.
 
 2. Choose Open. The User Preferences window will be displayed.
 
@@ -367,46 +352,29 @@ specify the location of your Microsoft SharePoint.
 
 **To set system preferences:**
 
-1. Open the System Preferences window. (Administration \>\> Setup \>\> System
-    \>\> System Preferences)
+1. Open the System Preferences window. (Administration \>\> Setup \>\> System \>\> System Preferences)
 
-2. Enter the URL for your SharePoint server so that you can use the search box
-    in Microsoft Dynamics GP.
+2. Enter the URL for your SharePoint server so that you can use the search box n Microsoft Dynamics GP.
 
 3. Select MAPI or Exchange as your email server type.
 
-If you select Exchange, you must be using Exchange 2007 Service Pack 1 or
-greater with Exchange Web Services. The Autodiscover service must be enabled
-to connect to the Exchange server.
+    If you select Exchange, you must be using Exchange 2007 Service Pack 1 or greater with Exchange Web Services. The Autodiscover service must be enabled to connect to the Exchange server.
 
-*You can use MAPI or Exchange as the server type for email in the Microsoft
-Dynamics GP desktop client. You can only use Exchange as the server type for
-email in the Microsoft Dynamics GP Web Client.*
+    > [!NOTE]
+    > You can use MAPI or Exchange as the server type for email in the Microsoft Dynamics GP desktop client. You can only use Exchange as the server type for email in the Microsoft Dynamics GP Web Client.
 
-1. Mark the Protect .docx attachments with a password option to send Word
-    documents in email with password protection. With this option marked, a
-    password must be entered before the recipient of the document can edit the
-    document.
+4. Mark the Protect.docx attachments with a password option to send Word documents in email with password protection. With this option marked, a password must be entered before the recipient of the document can edit the document.
 
-You can select to automatically generate the password for the documents or
-assign a password yourself. You are not given the password when you
-automatically generate the password.
+    You can select to automatically generate the password for the documents or assign a password yourself. You are not given the password when you automatically generate the password.
 
-1. Mark the To Do: Reminders if you want to load the home page content area by
-    default for new users.
+5. Mark the To Do: Reminders if you want to load the home page content area by default for new users.
 
-2. Mark Enable Remember User to have the Remember user and password option
-    available in the Welcome to Microsoft Dynamics GP window for each user. If
-    the user marks the Remember user and password option in the Welcome to
-    Microsoft Dynamics GP window, the user is automatically logged in to
-    Microsoft Dynamics GP the next time he or she starts Microsoft Dynamics GP.
+6. Mark **Enable Remember User** to have the **Remember user and password** option available in the Welcome to Microsoft Dynamics GP window for each user. If the user marks the Remember user and password option in the Welcome to Microsoft Dynamics GP window, the user is automatically logged in to Microsoft Dynamics GP the next time he or she starts Microsoft Dynamics GP.
 
-> [!TIP]
-> You can use the Enable Remember User feature in the Microsoft Dynamics GP
-desktop client. This feature is not available for the Microsoft Dynamics GP
-Web Client.
+    > [!TIP]
+    > You can use the Enable Remember User feature in the Microsoft Dynamics GP desktop client. This feature is not available for the Microsoft Dynamics GP Web Client.
 
-1. Choose OK.
+7. Choose OK.
 
 ### Chapter 3: Managing workflow
 
