@@ -117,7 +117,7 @@
 #### [Sales Order Processing Part 4: Transaction activity](distribution/sales-order-processing-part4-transaction-activity.md)
 #### [Sales Order Processing Part 5: Inquiries and reports](distribution/sales-order-processing-part5-inquiries-reports.md)
 #### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utilities.md)
-#### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
+### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
 ### [Glossary](distribution/glossary.md)
 
 <!--- payroll -->
