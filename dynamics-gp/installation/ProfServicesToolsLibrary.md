@@ -132,7 +132,7 @@ The following table lists the compatibility of modules in Microsoft Dynamics GP 
 
 All of the tools are compatible with core modules. Core modules include General Ledger, Receivables Management, Payables Management, Sales Order Processing, Purchase Order Processing, Inventory, Bank Reconciliation, Inventory, Payroll, Bill of Materials and Multicurrency.
 
-[!NOTE]
+> [!NOTE]
 When using the Combine tools, SmartList queries may need to be modified after the combine is completed.
 
 **Tool Name**
@@ -545,37 +545,26 @@ You can manipulate an account number with the Account Modifier by changing a sin
 
 **Account Combiner**
 
-Use the Account Combiner portion of this tool to combine like accounts into
-one single account. You can combine account numbers in much the same way as
-you change accounts.
+Use the Account Combiner portion of this tool to combine like accounts into one single account. You can combine account numbers in much the same way as you change accounts.
 
-The accounts for Due To/Due From accounts in the Intercompany Setup window
-(IC40100) are not updated correctly when using the Account Modifier/Combiner
-within Professional Tools Library. To workaround this you can manually select
-the appropriate 'combined' account in the Intercompany setup window via 'account
-lookup'.
+The accounts for Due To/Due From accounts in the Intercompany Setup window (IC40100) are not updated correctly when using the Account Modifier/Combiner within Professional Tools Library. To workaround this you can manually select the appropriate 'combined' account in the Intercompany setup window via 'account lookup'.
 
 **To combine similar accounts:**
 
 1. Enter an existing account number in the Account Number field.
 
-2. Enter the existing account number to which you want to combine in the
-    Convert To Account Number field.
+2. Enter the existing account number to which you want to combine in the Convert To Account Number field.
 
-3. After entering the account numbers, select the Convert button to make the
-    change throughout the system.
+3. After entering the account numbers, select the Convert button to make the change throughout the system.
 
     > [!NOTE]
     > Account Combiner works under the assumption that both accounts have the same posting type — either Balance Sheet or Profit and Loss. You cannot combine a Balance Sheet account into a Profit and Loss account or combine a Profit and Loss account into a Balance Sheet account. The Beginning Balance entries would be invalid if you cross match a Balance Sheet account with a Profit and Loss account.
 
-1. Choose a report destination. The report will list all the account
-    modifications and combinations that took place, as well as all accounts that
-    were modified and combined.
+1. Choose a report destination. The report will list all the account modifications and combinations that took place, as well as all accounts that were modified and combined.
 
 **To combine or change multiple accounts from a spreadsheet:**
 
-1. Enter existing account numbers in the first column of data in the
-    spreadsheet, as you would enter it in the Account Number field.
+1. Enter existing account numbers in the first column of data in the spreadsheet, as you would enter it in the Account Number field.
 
 2. The second column of data should contain the new account numbers, as you would enter it in Convert To Account Number field.
 
@@ -586,111 +575,73 @@ lookup'.
 
 2. Choose Import in the Select By field.
 
-3. Two new buttons, Validate and Modify, are now available. Choose the Validate
-    button first. Select the text spreadsheet file and choose Open to start the
-    validation process.
+3. Two new buttons, Validate and Modify, are now available. Choose the Validate button first. Select the text spreadsheet file and choose Open to start the validation process.  The Validate button will verify that each current account number exists in your system before the conversion is performed.
 
-    The Validate button will verify that each current account number exists in your system before the conversion is performed.
-
-1. Once the validation report contains no errors, choose Modify and select your
-    validated text spreadsheet to change or combine accounts.
+4. Once the validation report contains no errors, choose Modify and select your validated text spreadsheet to change or combine accounts.
 
 **Previewing changes in your system:**
 
-If you want to double check for errors before making final changes to your
-system, all of the account mappings that were valid in your spreadsheet are
-now contained in a Microsoft SQL Server table called TACHANGE.
+If you want to double check for errors before making final changes to your system, all of the account mappings that were valid in your spreadsheet are now contained in a Microsoft SQL Server table called TACHANGE. 
 
-If you want to preview the changes that are about to occur on the system
-before combining accounts, perform a select statement against the TACHANGE
-table (Select\* from TACHANGE) to view the valid mappings from your spreadsheet.
+If you want to preview the changes that are about to occur on the system before combining accounts, perform a select statement against the TACHANGE table (Select\* from TACHANGE) to view the valid mappings from your spreadsheet. 
 
-If you see an error in the TACHANGE table due to a mistake in the
-spreadsheet, simply make the change to your spreadsheet and import the
-spreadsheet again. The old mappings from the spreadsheet will be deleted and
-the new ones will be inserted into the TACHANGE table.
+If you see an error in the TACHANGE table due to a mistake in the spreadsheet, simply make the change to your spreadsheet and import the spreadsheet again. The old mappings from the spreadsheet will be deleted and the new ones will be inserted into the TACHANGE table.
 
 > [!NOTE]
 > You must perform the select statement in Microsoft SQL Server before closing the Account Modifier/Combiner window.
 
 ### Checkbook Modifier
 
-This tool allows changes in checkbook IDs to take place. You can change an
-existing checkbook ID to a new checkbook ID without any loss of work, open,
-or historical records. Refer to *Using Validate and Import buttons* on page
-2 for information on importing data.
+This tool allows changes in checkbook IDs to take place. You can change an existing checkbook ID to a new checkbook ID without any loss of work, open, or historical records. Refer to *Using Validate and Import buttons* on page 2 for information on importing data.
 
-![A screenshot ](media/51043b306addcd813fc1de1071a5ce51.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![A screenshot ](media/PSTCHMOD.jpg)
 
 **To change a checkbook ID:**
 
 1. Enter the Starting Checkbook ID and Ending Checkbook ID in the window, and choose Convert.
 
-1. You will be prompted to back up your database. Choose Continue once you have
-    a backup of the database you are changing. An alert message will signal the
-    end of the Checkbook Modifier.
+2. You will be prompted to back up your database. Choose Continue once you have a backup of the database you are changing. An alert message will signal the end of the Checkbook Modifier.
 
 2. Choose OK and close the Checkbook Modifier window.
 
-3. A report destination window will appear. Choose a destination for the report
-    to view the Modified Checkbook IDs report.
+3. A report destination window will appear. Choose a destination for the report to view the Modified Checkbook IDs report.
 
 ### Using Fiscal Period Modifier
 
-Use the Fiscal Period Modifier to change fiscal year definitions and reset
-data in the open and history tables.
+Use the Fiscal Period Modifier to change fiscal year definitions and reset data in the open and history tables.
 
-![A screenshot d](media/57f8b2ae7d26b178176adfc7e8cf1d70.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![A screenshot d](media/PSTFISMOD.jpg)
 
 > [!IMPORTANT]
-> Before changing data in the company, make a backup of the company
-database.
+> Before changing data in the company, make a backup of the company database.
 
 > [!NOTE]
 > This tool does not support changing the month and/or day on closed years as the tool does not recalculate the ending and beginning balances. Only use the Fiscal Period Modifier to change the Year stamp back for years that are currently closed.
 
 **To change fiscal year definitions:**
 
-1. Choose Setup Periods to create the new fiscal year definitions and remove previous fiscal year definitions. When defining the new periods, be sure to
-    keep all transactions associated with the same year, only change the name of
-    the year. The utility does not allow transactions for a year to be split
-    between different years.
+1. Choose Setup Periods to create the new fiscal year definitions and remove previous fiscal year definitions. When defining the new periods, be sure to keep all transactions associated with the same year, only change the name of the year. The utility does not allow transactions for a year to be split between different years.
 
-2. If you have a year that was previously closed and is open under the new
-    fiscal year definitions, select a year from the drop down list and choose
-    Open Year. You will receive a message stating that the year selected has
-    been changed to an open year.
+2. If you have a year that was previously closed and is open under the new fiscal year definitions, select a year from the drop down list and choose Open Year. You will receive a message stating that the year selected has been changed to an open year.
 
-3. Choose Process to align your history and open data and remove the old GL
-    summary data.
+3. Choose Process to align your history and open data and remove the old GL summary data.
 
-4. Reconcile each history and open year from the Reconcile Financial
-    Information window, located under Utilities \>\> Financial \>\> Reconcile.
-    Start with the oldest history year, and work towards the most current open
-    year.
+4. Reconcile each history and open year from the Reconcile Financial Information window, located under Utilities \>\> Financial \>\> Reconcile. Start with the oldest history year, and work towards the most current open year.
 
 5. Review the GL data. If the data is not as expected, restore the company from the backup.
 
 ### General Ledger Master Record Triggers
 
-This tool allows you to create General Ledger account master records and
-replicate records to another database on the same server. You can also
-choose to replicate these records to some or all of your companies.
+This tool allows you to create General Ledger account master records and replicate records to another database on the same server. You can also choose to replicate these records to some or all of your companies.
 
 > [!NOTE]
 > If you are using Integration Manager to import account, customer, or vendor master records to the main company database and the integration fails for any reason, any records imported to the main company database will be deleted (rolled back). However, if you have enabled master record triggers, the records will be replicated to company databases that you specify in the Replicate To DB field, and will not be rolled back. You must delete such replicated records manually.
 
 **To create and update General Ledger account master records:**
 
-1. In the Master DB field, choose the database where you will be creating or
-    updating records.
+1. In the Master DB field, choose the database where you will be creating or updating records.
 
-2. In the Replicate To DB field, choose the database to which the master
-    records will be copied.
+2. In the Replicate To DB field, choose the database to which the master records will be copied.
 
     > [!NOTE]
     > To use General Ledger Master Triggers, the “Replicate To” database must have the same company account structure setup as the Master database. This information can be found using query analyzer and doing a query on the SY00300 table against each database, or in Microsoft Dynamics GP you can go to Microsoft Dynamics GP menu \>\>Tools \>\> Setup \>\> Company \>\> Account Format. The same number of Segments must be setup, and each Segment must be the same length.
@@ -700,9 +651,7 @@ choose to replicate these records to some or all of your companies.
     > [!NOTE]
     > You will not be able to mark a check box if you are not registered for that particular Master Trigger.
 
-Close Master Triggers Setup. When you create or update a master record in
-the database you entered in the Master DB field, the record will be inserted
-or updated in the database you chose in the Replicate To DB field.
+Close Master Triggers Setup. When you create or update a master record in the database you entered in the Master DB field, the record will be inserted or updated in the database you chose in the Replicate To DB field.
 
 ## Chapter 4: Using Sales Tools
 
@@ -729,9 +678,7 @@ Information is divided into the following sections:
 
 ### Using Customer Name Modifier
 
-Use this tool to change the Customer Name. You can change an existing
-customer name to a new customer name without any loss of work, open, or
-historical records.
+Use this tool to change the Customer Name. You can change an existing customer name to a new customer name without any loss of work, open, or historical records.
 
 > [!IMPORTANT]
 > This tool requires that the user be logged in as “sa.”
@@ -743,52 +690,38 @@ historical records.
 2. Enter the Ending Customer Name, or the name you want to change to.
 
 3. Choose the Convert button to update records. Refer to *Using Validate and Import buttons* for information on importing data.
+ 
+4. You will be prompted to back up your database. Choose Continue once you have a backup of the database you are running the change on.
 
-    ![A screenshot ](media/7dfc3dfe73a52902fe9a88f3dc4d8d05.jpg)
+5. A message will signal the end of the Customer Name Modifier process. Choose OK and close the Customer Name Modifier window.
 
-1. You will be prompted to back up your database. Choose Continue once you have a backup of the database you are running the change on.
-
-1. A message will signal the end of the Customer Name Modifier process. Choose OK and close the Customer Name Modifier window.
-
-2. A report destination window will appear. Choose a destination for the report to view a Modified Customer Names report.
+6. A report destination window will appear. Choose a destination for the report to view a Modified Customer Names report.
 
 ### Receivables Management Master Record Triggers
 
-Use this tool to create customer and customer address master records and
-replicate records to another database on the same server. You can also
-choose to replicate these records to some or all of your companies.
+Use this tool to create customer and customer address master records and replicate records to another database on the same server. You can also choose to replicate these records to some or all of your companies.
 
 > [!NOTE]
 > If you are using Integration Manager to import account, customer, or vendor master records to the main company database and the integration fails for any reason, any records imported to the main company database will be deleted (rolled back). However, if you have enabled master record triggers, the records will be replicated to company databases that you specify in the Replicate To DB field, and will not be rolled back. You must delete such replicated records manually.
 
-If you utilize the RM and PM Master triggers in the Professional Service Tools
-Library and a customer or vendor has an address with more than 31 characters in
-the field, the system will truncate any characters after 31.
+If you utilize the RM and PM Master triggers in the Professional Service Tools Library and a customer or vendor has an address with more than 31 characters in the field, the system will truncate any characters after 31.
 
 **To create and update customer and customer address master records:**
 
-1. In the Master DB field, choose the database where you will be creating or
-    updating records.
+1. In the Master DB field, choose the database where you will be creating or updating records.
 
-2. In the Replicate To DB field, choose the database to which the master
-    records will be copied.
+2. In the Replicate To DB field, choose the database to which the master records will be copied.
 
 1. Mark the Customers option.
 
     > [!NOTE]
     > You will not be able to select an option if you are not registered for that particular Master Trigger.
 
-1. Close Master Triggers Setup. When you create or update a master record in
-    the database you entered in the Master DB field, the record will be inserted
-    or updated in the database you chose in the Replicate To DB field.
+1. Close Master Triggers Setup. When you create or update a master record in the database you entered in the Master DB field, the record will be inserted or updated in the database you chose in the Replicate To DB field.
 
 ### Receivables Management Transaction Unapply
 
-This tool enables you to unapply documents in the history table and
-automatically move the records back to the open table even if there are
-discounts and/or write- offs associated with the document. You can reapply
-the records as needed. Using this tool can be a good alternative to removing
-history and reentering data if records were applied incorrectly.
+This tool enables you to unapply documents in the history table and automatically move the records back to the open table even if there are discounts and/or write- offs associated with the document. You can reapply the records as needed. Using this tool can be a good alternative to removing history and reentering data if records were applied incorrectly.
 
 > [!NOTE]
 > If a discount and/or write-offs exist, a General Ledger journal transaction will be created using the original distributions of the document and the transaction will be in a batch in the General Ledger. An edit list can be printed prior to posting into the General Ledger.
@@ -799,25 +732,15 @@ history and reentering data if records were applied incorrectly.
 
 1. Choose the Customer ID.
 
-    ![A screenshot](media/6e87b8ff4a476026db4102542602b0d7.jpg)
+2. Choose the document numbers or dates for which you want to unapply the transactions. Mark All to unapply all documents or enter a range of documents in the From and To fields.
 
-1. Choose the document numbers or dates for which you want to unapply the
-    transactions. Mark All to unapply all documents or enter a range of
-    documents in the From and To fields.
+3. You will be prompted to verify that you want to unapply the documents. Choose Unapply to continue. You can also view the report only or cancel.
 
-2. You will be prompted to verify that you want to unapply the documents.
-
-    Choose Unapply to continue. You can also view the report only or cancel.
-
-1. Choose a report destination to view a report with information about the unapplied transactions.
+4. Choose a report destination to view a report with information about the unapplied transactions.
 
 ### Salesperson Modifier
 
-Use the Salesperson Modifier tool to change current Salesperson IDs. The
-result is a new Salesperson ID with no data lost or having to be reentered
-into the system. If you plan on importing large amounts of data, please
-refer to *Using Validate and Import buttons* on page 2 where there is
-information about the Validate and Import buttons.
+Use the Salesperson Modifier tool to change current Salesperson IDs. The result is a new Salesperson ID with no data lost or having to be reentered into the system. If you plan on importing large amounts of data, please refer to *Using Validate and Import buttons* on page 2 where there is information about the Validate and Import buttons.
 
 > [!IMPORTANT]
 > This tool requires that the user be logged in as “sa.”
@@ -828,13 +751,13 @@ information about the Validate and Import buttons.
 
 2. Enter the New Salesperson ID and choose Convert.
 
-    ![A screenshot](media/b46f5819dbd446008227ace25469d45a.jpg)
+    ![A screenshot](media/PSTSALMOD.jpg)
 
-1. You will be prompted to backup your database. Once you have a backup of the proper data, choose Continue to begin the change process.
+3. You will be prompted to backup your database. Once you have a backup of the proper data, choose Continue to begin the change process.
 
-1. A message signals the end of the Salesperson change process.
+4. A message signals the end of the Salesperson change process.
 
-2. Choose OK and close the Salesperson Modifier window to display a Report Destination window. Select a report destination to view the Changed Salespersons report.
+5. Choose OK and close the Salesperson Modifier window to display a Report Destination window. Select a report destination to view the Changed Salespersons report.
 
 ### Sales Order Processing—Customer Item Lookup
 
@@ -844,47 +767,25 @@ within Sales Order Processing Entry and the Sales Item Detail windows.
 
 **Customer item lookup setup:**
 
-1. This tool modifies existing features within Microsoft Dynamics GP. To activate the new functionality that this tool offers, simply mark the second
-    check box next to SOP Customer Item Lookup from the Professional Services
-    Tools Library menu. Close the window.
+1. This tool modifies existing features within Microsoft Dynamics GP. To activate the new functionality that this tool offers, simply mark the second check box next to SOP Customer Item Lookup from the Professional Services Tools Library menu. Close the window.
 
-2. To build initial data from your existing history tables, choose Microsoft
-    Dynamics GP menu \>\> Tools \>\> Setup \>\> Sales \>\> Sales Order
-    Processing to open the Sales Order Processing Setup window.
+2. To build initial data from your existing history tables, choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Sales \>\> Sales Order Processing to open the Sales Order Processing Setup window.
 
-3. Choose Create Initial Data from the Additional menu. This process could take
-    some time depending on how much historical SOP Line Item data exists. You
-    will receive a message when processing is finished.
+3. Choose Create Initial Data from the Additional menu. This process could take sometime depending on how much historical SOP Line Item data exists. You will receive a message when processing is finished.
 
     > [!IMPORTANT]
     > You must be logged in as “sa” do the initial data creation.
 
-    ![A screenshot](media/dab50933fff5188b269046bb2537650a.jpg)
+4. The new Customer Item Lookup window is now available from the SOP Entry and the SOP Item Detail windows. You can open the lookup window by pressing CTRL H or by choosing Additional \>\> Customer Item Lookup.
 
-1. The new Customer Item Lookup window is now available from the SOP Entry and
-    the SOP Item Detail windows. You can open the lookup window by pressing CTRL
-    H or by choosing Additional \>\> Customer Item Lookup.
-
-The window displays the historical purchasing information for this customer
-and the most recent price for each item purchased. By highlighting a record,
-you can zoom back to the SOP Document Inquiry window. As Invoice documents
-are posted, new entries are added to the table that stores the Customer Item
-historical data.
-
-![A screenshot](media/e9ee2a1d4204acac692f5431d54349d6.jpg)
+The window displays the historical purchasing information for this customer and the most recent price for each item purchased. By highlighting a record, you can zoom back to the SOP Document Inquiry window. As Invoice documents are posted, new entries are added to the table that stores the Customer Item historical data.
 
 > [!NOTE]
 > If a customer purchases the same item in two different unit of measure codes, both records will show in the Customer Item Lookup window. However, the unit of measure and price that will appear is based off of the item's default unit of measure. If the unit of measure changes within a sales document, a new price will become the default.
 
 ### Territory Modifier
 
-This tool allows changes in territory IDs to take place and the process
-mirrors that of how account numbers are changed. The user is able to change
-an existing territory id to a new territory id without any loss of work,
-open, or historical records. Just by clicking the convert button the records
-are updated. If you want to import large amounts of data, refer to *Using
-Validate and Import buttons* on page 2, where there is information on how to
-import data.
+This tool allows changes in territory IDs to take place and the process mirrors that of how account numbers are changed. The user is able to change an existing territory id to a new territory id without any loss of work, open, or historical records. Just by clicking the convert button the records are updated. If you want to import large amounts of data, refer to *Using Validate and Import buttons* on page 2, where there is information on how to import data.
 
 > [!IMPORTANT]
 > This tool requires that the user be logged in as “sa.”
@@ -895,151 +796,84 @@ import data.
 
 2. Enter the new Territory ID.
 
-    ![A screenshot](media/b1d2cb4dc84cd4830ad1b4a082785974.jpg)
+3. You will be prompted to back up your database. Once you have a backup of the proper data, choose Continue to begin the change process.
 
-1. You will be prompted to back up your database. Once you have a backup of the
+4. The process is complete when you receive another message stating the Territory Modifier is finished.
 
-proper data, choose Continue to begin the change process.
-
-1. The process is complete when you receive another message stating the
-    Territory Modifier is finished.
-
-2. A Report Destination Window will appear. Select a report destination to view the Modified Territories Report.
+5. A Report Destination Window will appear. Select a report destination to view the Modified Territories Report.
 
 ### Using Territory Combiner
 
-Use the Territory Combiner to combine an existing Territory ID with another
-existing Territory ID without any loss of work, open, or historical records.
+Use the Territory Combiner to combine an existing Territory ID with another existing Territory ID without any loss of work, open, or historical records.
 
 > [!IMPORTANT]
 > This tool requires that the user be logged in as “sa.”
 
 **To combine a Territory ID:**
 
-1. Select the Territory ID you wish to convert using the lookup window in the
-    Starting Territory ID field.
+1. Select the Territory ID you wish to convert using the lookup window in the Starting Territory ID field.
 
-    ![A screenshot ](media/8ac1cd7a0995b1655083fd883416a512.jpg)
+2. Select the ending Territory ID with the lookup window in the Combined Into Territory ID field.
 
-1. Select the ending Territory ID with the lookup window in the Combined Into
-    Territory ID field.
+3. Choose the convert button to update records. If you want to import large amounts of data, refer to *Using Validate and Import buttons*.
 
-2. Choose the convert button to update records. If you want to import large amounts of data, refer to *Using Validate and Import buttons*.
-
-1. You will be prompted to back up your database. Once you have a backup of the proper data, choose Continue to begin the combine process.
+4. You will be prompted to back up your database. Once you have a backup of the proper data, choose Continue to begin the combine process.
 
 A message signals the end of the Territory Combine process.
 
 ### SOP PO Number Check
 
-Use the SOP PO Number Check to verify the Customer PO Number field for
-duplicates as data is entered into the field on both the SOP Entry window
-and the SOP Customer Detail Entry window.
+Use the SOP PO Number Check to verify the Customer PO Number field for duplicates as data is entered into the field on both the SOP Entry window and the SOP Customer Detail Entry window.
 
 **SOP PO Number Check setup:**
 
-1. To set up the SOP PO Number Check, mark the SOP PO Number Check check box in
-    the Professional Services Tools Library window. Click Next to open the Setup
-    window.
+1. To set up the SOP PO Number Check, mark the SOP PO Number Check check box in the Professional Services Tools Library window. Click Next to open the Setup window.
 
-    ![A screenshot](media/6346596ff60bc29163e079652ac6dc27.jpg)
+2. Set the Check DB column for each SOP Type. When marked, the SQL database will be examined documents of the specified type that have duplicate Customer PO numbers. For instance, it might not matter that a duplicate Customer PO Number was entered on a Quote document. In that case, you would not mark the Check DB column for Quote documents, and the check would not be performed.
 
-1. Set the Check DB column for each SOP Type. When marked, the SQL database will be examined documents of the specified type that have duplicate
-    Customer PO numbers. For instance, it might not matter that a duplicate
-    Customer PO Number was entered on a Quote document. In that case, you would
-    not mark the Check DB column for Quote documents, and the check would not be
-    performed.
+3. Set the Which Tables column for each SOP Type. This column specifies which types of tables should be searched. Choose Work, History, or Both. The default is Both.
 
-2. Set the Which Tables column for each SOP Type. This column specifies which
-    types of tables should be searched. Choose Work, History, or Both. The
-    default is Both.
+4. Set the Check on UI column for each SOP Type. This field is to determine from the User Interface whether or not duplicate Customer PO Numbers should be checked. For instance, on a return you might not want to check for duplicate Customer PO Numbers because the customer could have multiple returns for a single Customer PO Number.
 
-3. Set the Check on UI column for each SOP Type. This field is to determine
-    from the User Interface whether or not duplicate Customer PO Numbers should
-    be checked. For instance, on a return you might not want to check for
-    duplicate Customer PO Numbers because the customer could have multiple
-    returns for a single Customer PO Number.
+5. Set the Required column for each SOP Type. This will make the Customer PO Number field in Sales Transaction Entry a required field. Like most required fields, the user can delay entering this data but the Sales Document won't be saved until a value is entered.
 
-4. Set the Required column for each SOP Type. This will make the Customer PO
-    Number field in Sales Transaction Entry a required field. Like most required
-    fields, the user can delay entering this data but the Sales Document won't
-    be saved until a value is entered.
-
-5. Set the Warning Type column for each SOP Type. This specifies what the
-    system should do if a duplicate PO number is found for a customer. The
-    following are the available actions:
+6. Set the Warning Type column for each SOP Type. This specifies what the system should do if a duplicate PO number is found for a customer. The following are the available actions:
 
 **Do Nothing** Don't give any message or warning.
 
-**Warn Only** Presents the user with the message defined in the Message
-column for that SOP Type. Only an “OK” button is displayed in the message,
-because it is only a warning.
+**Warn Only** Presents the user with the message defined in the Message column for that SOP Type. Only an “OK” button is displayed in the message, because it is only a warning.
 
-**Warn and Ask** If a duplicate is found, the message defined in the Message
-column for that SOP Type will be displayed. The user will be given a choice
-of “Yes” or “No”, or “Display”. If “Yes” is clicked, the Customer PO Number
-is accepted. If “No” is clicked, then the user must re-enter a different
-Customer PO Number. If “Display” is clicked, a window will open that shows
-the records that the PO Number was found on.
+**Warn and Ask** If a duplicate is found, the message defined in the Message column for that SOP Type will be displayed. The user will be given a choice of “Yes” or “No”, or “Display”. If “Yes” is clicked, the Customer PO Number is accepted. If “No” is clicked, then the user must re-enter a different Customer PO Number. If “Display” is clicked, a window will open that shows the records that the PO Number was found on.
 
-**Warn and Reject** Presents the user with the message defined in the
-Message column for that SOP Type. An “OK” button and a “Display” button are
-displayed with the message. If “OK” is clicked, the focus will return to the
-Customer PO Number and they user would have to enter a different number (or
-leave it blank). If “Display” is clicked, a window will open that shows the
-records that the PO Number was found on.
+**Warn and Reject** Presents the user with the message defined in the Message column for that SOP Type. An “OK” button and a “Display” button are displayed with the message. If “OK” is clicked, the focus will return to the Customer PO Number and they user would have to enter a different number (or leave it blank). If “Display” is clicked, a window will open that shows the records that the PO Number was found on.
 
-**Warn and Password** Presents the user with the message defined in the
-Message column for that SOP Type, but will give the user the option of
-entering the password entered in the Password column as an override.
+**Warn and Password** Presents the user with the message defined in the Message column for that SOP Type, but will give the user the option of entering the password entered in the Password column as an override.
 
-1. Set the Message column for each SOP Type. This field is a user-defined message that is displayed after a duplicate PO Number is found. The tokens
-    %1, %2, and %3 can be used in the message text, and will be substituted with
-    the actual PO Number, Document Type (the words Order, Invoice, etc.), and
-    SOP Number.
+1. Set the Message column for each SOP Type. This field is a user-defined message that is displayed after a duplicate PO Number is found. The tokens %1, %2, and %3 can be used in the message text, and will be substituted with the actual PO Number, Document Type (the words Order, Invoice, etc.), and SOP Number.
 
-2. Set the Password column for each SOP Type. This field is per document type
-    and is only used when the Warning Type column is set to Warn and Password.
+2. Set the Password column for each SOP Type. This field is per document type and is only used when the Warning Type column is set to Warn and Password.
 
-3. Activate the utility. To activate SOP PO Number Check, simply mark the
-    second check box next to SOP PO Number Check in the Professional Services
-    Tools Library window.
+3. Activate the utility. To activate SOP PO Number Check, simply mark the second check box next to SOP PO Number Check in the Professional Services Tools Library window.
 
 **To use SOP PO Number Check:**
 
-When in Sales Transaction Entry, entering in a duplicate Customer PO Number
-will check for duplicates on the document types marked and apply the rules
-for the document type currently entered. For any Warning Type other than Do
-Nothing, a dialog will be displayed giving the custom message if a duplicate
-is found. Depending on the option selected (Warn and Ask, Warn and Reject,
-etc.), you will want to change the wording of the message to match more
-closely with the options presented.
+When in Sales Transaction Entry, entering in a duplicate Customer PO Number will check for duplicates on the document types marked and apply the rules for the document type currently entered. For any Warning Type other than Do Nothing, a dialog will be displayed giving the custom message if a duplicate is found. Depending on the option selected (Warn and Ask, Warn and Reject, etc.), you will want to change the wording of the message to match more closely with the options presented.
 
-For this document, the setting was Warn and Ask. Clicking “Yes” would allow
-reuse of the number, while clicking “No” would restart the field. Clicking
-“Display” will open a display window to display the documents that the PO
-Number was used on.
+For this document, the setting was Warn and Ask. Clicking “Yes” would allow reuse of the number, while clicking “No” would restart the field. Clicking  “Display” will open a display window to display the documents that the PO Number was used on.
 
 Drilling back on the SOP Number will open the document in SOP Inquiry.
 
 **To set up customer exceptions:**
 
-While each SOP Document Type can be made required by using the Customer PO
-Validation Setup window, some customers might be an exception to that rule.
-To create Customer Exceptions, use the Customer Exception window.
+While each SOP Document Type can be made required by using the Customer PO Validation Setup window, some customers might be an exception to that rule. To create Customer Exceptions, use the Customer Exception window.
 
-1. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\>
-    Customer Exception to open this window. This window displays all of the
-    customers in the system and allows you to choose the exceptions.
+1. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Customer Exception to open this window. This window displays all of the customers in the system and allows you to choose the exceptions.
 
-2. Mark the customers for which the Customer PO Number is not required. In the illustration above, the customer AARONFIT0001 will never have the Customer
-    PO Number field marked as required, even though it was marked required in
-    the Customer PO Validation Setup window.
+2. Mark the customers for which the Customer PO Number is not required. In the illustration above, the customer AARONFIT0001 will never have the Customer PO Number field marked as required, even though it was marked required in the Customer PO Validation Setup window.
 
 ## Chapter 5:Using Inventory Tools
 
-This chapter explains how to use the Inventory Series Professional Services
-Tools. Information is divided into the following sections:
+This chapter explains how to use the Inventory Series Professional Services Tools. Information is divided into the following sections:
 
 - *Using Inventory Site Combiner*
 
@@ -1055,10 +889,7 @@ Tools. Information is divided into the following sections:
 
 ### Using Inventory Site Combiner
 
-This tool allows you to combine Site/Location Codes without losing any data.
-Refer to *Using Validate and Import buttons* on page 2 for information on
-the Validate and Import buttons, which make it possible to import large
-amounts of data.
+This tool allows you to combine Site/Location Codes without losing any data. Refer to *Using Validate and Import buttons* on page 2 for information on the Validate and Import buttons, which make it possible to import large amounts of data.
 
 **To combine an inventory site:**
 
@@ -1079,10 +910,7 @@ amounts of data.
 
 ### Using Inventory Site Modifier
 
-This tool allows you to change the current Site/Location Code to a new code
-without losing any data. Refer to *Using Validate and Import buttons* on
-page 2 for information on the Validate and Import buttons, which make it
-possible to import large amounts of data.
+This tool allows you to change the current Site/Location Code to a new code without losing any data. Refer to *Using Validate and Import buttons* on page 2 for information on the Validate and Import buttons, which make it possible to import large amounts of data.
 
 **To change an inventory site:**
 
@@ -1098,47 +926,33 @@ possible to import large amounts of data.
 5. The process is complete a message indicating the Site Modifier is finished
     appears.
 
-6. A Report Destination window will appear after you select OK and close the Site Modifier window. The report indicates what Site IDs were changed in the
-    system.
+6. A Report Destination window will appear after you select OK and close the Site Modifier window. The report indicates what Site IDs were changed in the system.
 
 ### Using Item Description Modifier
 
-Use this tool to change Item Descriptions. You can change an existing item
-description to a new item description without any loss of work, open, or
-historical records. Refer to *Using Validate and Import buttons* on page 2
-for information on importing data.
+Use this tool to change Item Descriptions. You can change an existing item description to a new item description without any loss of work, open, or historical records. Refer to *Using Validate and Import buttons* on page 2 for information on importing data.
 
 **To change an item description:**
 
 1. Choose the item you wish to change in the Starting Item Number field.
 
-    ![A screenshot ](media/57dfd93b57a510254fd8750a7761a96c.jpg)
+    ![A screenshot ](media/PSTITDMOD.jpg)
 
-1. The Starting Item Description field is populated automatically. Enter a new description in the Ending Item Description field.
+2. The Starting Item Description field is populated automatically. Enter a new description in the Ending Item Description field.
 
-1. Choose Convert.
+3. Choose Convert.
 
-2. You will be prompted to back up your database. Choose Continue once you have
-    a backup of your database. A message will signal the end of the Item
-    Description Modifier.
+4. You will be prompted to back up your database. Choose Continue once you have a backup of your database. A message will signal the end of the Item Description Modifier.
 
-3. Choose OK and close the Item Description Modifier window. A report
-    destination window will appear.
+5. Choose OK and close the Item Description Modifier window. A report destination window will appear.
 
-4. Choose a destination for the report to view an Item Descriptions Modified report.
+6. Choose a destination for the report to view an Item Descriptions Modified report.
 
 ### Using Item Number Combiner
 
-Use the Item Number Combiner to combine existing item numbers. The old item
-number is removed from the system after the combine process is finished. All
-Work, Open, and History records are combined into the new item number. Refer
-to *Using Validate and Import buttons* on page 2 for information on the
-Validate and Import buttons, which make it possible to import large amounts
-of data.
+Use the Item Number Combiner to combine existing item numbers. The old item number is removed from the system after the combine process is finished. All Work, Open, and History records are combined into the new item number. Refer to *Using Validate and Import buttons* on page 2 for information on the Validate and Import buttons, which make it possible to import large amounts of data.
 
-If you are using Bill of Materials or Manufacturing with Bill Of Materials,
-you can NOT combine parent objects, only child objects will be able to be
-combined.
+If you are using Bill of Materials or Manufacturing with Bill Of Materials, you can NOT combine parent objects, only child objects will be able to be combined.
 
 > [!IMPORTANT]
 > This tool requires that the user be logged in as “sa.”
@@ -1149,20 +963,15 @@ When combing 2 Item Numbers using Item Combiner with a valuation method of Avera
 
 1. Choose the starting item number.
 
-2. Choose the item number to which you want to combine in the Combined Into
-    Item Number field.
+2. Choose the item number to which you want to combine in the Combined Into Item Number field.
 
 3. Choose Convert.
 
-4. After you choose Convert you will be prompted to back up your data. Once you
-    have a backup of the company database, choose Continue to start the combine
-    process.
+4. After you choose Convert you will be prompted to back up your data. Once you have a backup of the company database, choose Continue to start the combine process.
 
 5. Another message is displayed when the item number combine process is complete. Choose OK to continue.
 
-6. Close the Item Number Combiner. A Report Destination Window will appear.
-
-    Select a report destination to view the combined Item Numbers Report.
+6. Close the Item Number Combiner. A Report Destination Window will appear. Select a report destination to view the combined Item Numbers Report.
 
 ### Using Item Number Modifier
 
@@ -1175,28 +984,23 @@ Item Number Modifier is like other modifier tools in that it allows the user to 
 
 1. Enter the starting item number.
 
-    ![A screenshot](media/b64a60fc657a7ff60a52e834b610c85c.jpg)
+    ![A screenshot](media/PSTITEMMOD.jpg)
 
-1. Enter the new item number.
+2. Enter the new item number.
 
-2. Choose Convert.
+3. Choose Convert.
 
-3. You will be prompted to make a backup of your database. Once a backup is made, choose Continue.
+4. You will be prompted to make a backup of your database. Once a backup is made, choose Continue.
 
-1. You will receive an alert when the process is finished.
+5. You will receive an alert when the process is finished.
 
-2. Choose OK and close the Item Modifier window. A Report Destination window will appear. Select the report destination to view the Converted Item
-    Number(s) report.
+6. Choose OK and close the Item Modifier window. A Report Destination window will appear. Select the report destination to view the Converted Item Number(s) report.
 
 ### Using Item Reconciler
 
-Item Reconciler allows you to reconcile Inventory. The Reconciler ’s
-function is the same as the reconcile functions built into Microsoft
-Dynamics GP with one exception: only those items that need reconciling will
-be reconciled using
+Item Reconciler allows you to reconcile Inventory. The Reconciler ’s function is the same as the reconcile functions built into Microsoft Dynamics GP with one exception: only those items that need reconciling will be reconciled using
 
-Professional Services Tools Library. This can increase performance if all
-items don’t need to be reconciled.
+Professional Services Tools Library. This can increase performance if all items don’t need to be reconciled.
 
 **To reconcile Inventory:**
 
@@ -1224,38 +1028,27 @@ This chapter explains how to use the Purchasing Series Professional Services Too
 
 ### Using 1099 Modifier
 
-This tool allows you to update the 1099 amounts for vendors who are not set
-up as a 1099 vendor for the year or a portion of the year.
+This tool allows you to update the 1099 amounts for vendors who are not set up as a 1099 vendor for the year or a portion of the year.
 
-This tool will only modify records that are already paid and should be 1099
-records for the year selected. If you have any work or open records that
-haven’t been paid but were entered/posted while the vendor was not set up as
-a 1099 vendor, those records will not be changed. You need to execute this
-tool the next year prior to printing 1099 reports to be sure that work and
-open records that were paid in the new year, get updated.
+This tool will only modify records that are already paid and should be 1099 records for the year selected. If you have any work or open records that haven’t been paid but were entered/posted while the vendor was not set up as a 1099 vendor, those records will not be changed. You need to execute this tool the next year prior to printing 1099 reports to be sure that work and open records that were paid in the new year, get updated.
 
 **To update 1099 amounts:**
 
-1. Set the vendor up as a 1099 vendor by selecting that option on the Vendor
-    Card.
+1. Set the vendor up as a 1099 vendor by selecting that option on the Vendor Card.
 
-2. Once the vendor is marked as a 1099 vendor, open the 1099 Modifier tool from
-    the Professional Services Tools Library menu.
+2. Once the vendor is marked as a 1099 vendor, open the 1099 Modifier tool from the Professional Services Tools Library menu.
 
-    ![A screenshot](media/0cd4ee5bc05eca0373eb73ed79a5f7e4.jpg)
+    ![A screenshot](media/PST1099M.jpg)
 
-3. Select whether you would like to Print Report Only or Process and Print
-    Report.
+3. Select whether you would like to Print Report Only or Process and Print Report.
 
-    The Print Report Only option shows you the Vendor, Voucher Number, and
-
-    Amount that will be converted to a 1099 amount. The Process and Print Report option makes the changes, prints the report and prints an updated Summary records report for the 1099 amount.
+The Print Report Only option shows you the Vendor, Voucher Number, and Amount that will be converted to a 1099 amount. The Process and Print Report option makes the changes, prints the report and prints an updated Summary records report for the 1099 amount.
 
 4. Select the calendar year to which you want to make the changes.
 
 5. You will be prompted to back up your database. Choose Continue once you have a backup of your database. A message will signal when the 1099 Modifier has finished processing.
 
-    If you selected Process and Print Report, you may get an additional report showing summary table changes that have been made to the 1099 amount field. The number under the Amount After heading is the amount that prints on your 1099 reports.
+If you selected Process and Print Report, you may get an additional report showing summary table changes that have been made to the 1099 amount field. The number under the Amount After heading is the amount that prints on your 1099 reports.
 
 6. Close the 1099 Modifier window. A report destination window will appear.
 
@@ -1265,9 +1058,7 @@ This report shows the specific vouchers that were changed to 1099 amounts.
 
 ### Using Payables Management Master Record Triggers
 
-This tool allows you to add a vendor and vendor address master record and
-replicate records to another database on the same server. You can also
-choose to replicate these records to some or all of your companies.
+This tool allows you to add a vendor and vendor address master record and replicate records to another database on the same server. You can also choose to replicate these records to some or all of your companies.
 
 > [!NOTE]
 > If you are using Integration Manager to import account, customer, or vendor master records to the main company database and the integration fails for any reason, any records imported to the main company database will be deleted (rolled back). However, if you have enabled master record triggers, the records will be replicated to company databases that you specify in the Replicate To DB field, and will not be rolled back. You must delete such replicated records manually.
@@ -1278,107 +1069,74 @@ If you use the RM and PM Master triggers in the Professional Service Tools Libra
 
 1. In the Master DB field, choose the database where you will be creating or updating records.
 
-    ![A screenshot](media/c1191b26fd8c4b16fbd42dc3cfd908fd.jpg)
+    ![A screenshot](media/PSTMSTRIG.jpg)
 
-1. In the Replicate To DB field, choose the database to which the master records will be copied.
+2. In the Replicate To DB field, choose the database to which the master records will be copied.
 
-1. Mark the Vendors option.
+3. Mark the Vendors option.
 
     You will not be able to mark an option if you are not registered for that particular Master Trigger.
 
-1. Close Master Triggers Setup. When you create or update a master record in
-    the database you entered in the Master DB field, the record will be inserted
-    or updated in the database you chose in the Replicate To DB field.
+4. Close Master Triggers Setup. When you create or update a master record in the database you entered in the Master DB field, the record will be inserted or updated in the database you chose in the Replicate To DB field.
 
 ### Using Payables Management Minimum Check
 
-Use the Payables Management Minimum Check tool to set a minimum amount for
-your Payables checks within the Select Checks process.
+Use the Payables Management Minimum Check tool to set a minimum amount for your Payables checks within the Select Checks process.
 
 > [!NOTE]
 > This process occurs after the Payment Vouchers have already been created. This will cause a break in the payment vouchers sequence in the system but will not harm anything.
 
 **Payables Management Minimum Check setup:**
 
-1. This tool modifies existing features within Microsoft Dynamics GP. To
-    activate the new functionality that this tool offers, simply mark the second
-    check box next to PM Minimum Check from the Professional Services Tools
-    Library menu. Close the window.
+1. This tool modifies existing features within Microsoft Dynamics GP. To activate the new functionality that this tool offers, simply mark the second check box next to PM Minimum Check from the Professional Services Tools Library menu. Close the window.
 
 2. When opening the Select Payables Checks window, the title bar of the window will display the current settings for the minimum check amount.
 
-    ![A screenshot](media/5a4c5a9e7c53c8d89a0f5fd2cdb19771.jpg)
+3. To change the Minimum Check amount, choose Additional \>\> Set Minimum Check Amount. The Minimum Select Check Amount window will appear.
 
-1. To change the Minimum Check amount, choose Additional \>\> Set Minimum Check Amount. The Minimum Select Check Amount window will appear.
+4. Enter the new minimum check amount in the Minimum Check Amount field.
 
-2. Enter the new minimum check amount in the Minimum Check Amount field.
-
-You can turn the minimum check amount on or off by marking or unmarking the
-Use Minimum Amount check box.
+You can turn the minimum check amount on or off by marking or unmarking the Use Minimum Amount check box.
 
 > [!NOTE]
 > The settings are per machine and stored in the Dex.ini for use in the next check build process, for example MinPMCheck=201.00.
 
 ### Using Select Checks Combiner
 
-Use this tool to consolidate checks to match the same vendor when users are
-appending to an existing checks batch. This can be useful if users
-frequently build batches of Payables checks and select different document
-number ranges or date ranges.
+Use this tool to consolidate checks to match the same vendor when users are appending to an existing checks batch. This can be useful if users frequently build batches of Payables checks and select different document number ranges or date ranges.
 
 **To activate Select Checks Combiner:**
 
-1. This tool modifies existing features within Microsoft Dynamics GP. To
-    activate the new functionality that this tool offers, simply mark the second
-    check box next to Select Checks Combiner from the Professional Services
-    Tools Library menu. Close the window.
+1. This tool modifies existing features within Microsoft Dynamics GP. To activate the new functionality that this tool offers, simply mark the second check box next to Select Checks Combiner from the Professional Services Tools Library menu. Close the window.
 
-2. If a check exists for a vendor when checks are rebuilt, new amounts will be
-    added to the existing check — instead of issuing multiple checks. This only
-    applies if the One Check Per field is set to Vendor in the Select Payables
-    Checks window.
+2. If a check exists for a vendor when checks are rebuilt, new amounts will be added to the existing check — instead of issuing multiple checks. This only applies if the One Check Per field is set to Vendor in the Select Payables Checks window.
 
 ### Using Vendor Name Modifier
 
-Use this tool to change the Vendor Name. You can change an existing vendor
-name to a new vendor name without any loss of work, open, or historical
-records.
+Use this tool to change the Vendor Name. You can change an existing vendor name to a new vendor name without any loss of work, open, or historical records.
 
 > [!IMPORTANT]
 > This tool requires that the user be logged in as “sa.”
 
 **To change a vendor name:**
 
-1. In the Starting Vendor Number field, enter the name that you want to modify.
-    The existing Starting Vendor Name will automatically appear.
+1. In the Starting Vendor Number field, enter the name that you want to modify. The existing Starting Vendor Name will automatically appear.
 
-2. In the Ending Vendor Name field, enter the name you want to change to.
-    choose Convert to update records. Refer to Using the *Using Validate and
-    Import buttons* for information on importing data.
+2. In the Ending Vendor Name field, enter the name you want to change to. Choose Convert to update records. Refer to Using the *Using Validate and Import buttons* for information on importing data.
+    
+3. You will be prompted to back up your database. Choose Continue once you have a backup of the database. A message will signal the end of the vendor name change.
 
-    ![A screenshot ](media/c14af4a366e6717fcfb00e3387148407.jpg)
+4. Choose OK and close the Vendor Name Modifier window.
 
-1. You will be prompted to back up your database. Choose Continue once you have
-    a backup of the database. A message will signal the end of the vendor name
-    change.
-
-2. Choose OK and close the Vendor Name Modifier window.
-
-A report destination window will appear. Choose a destination for the report
-to view a Vendor Descriptions Modified report.
+A report destination window will appear. Choose a destination for the report to view a Vendor Descriptions Modified report.
 
 ### Using Minimum PO/Receipt Number
 
-This tool adds the ability to prevent Purchase Order Processing from
-defaulting to the next PO Number or Receipt Number. You can set the default
-to a number before the current PO number when a previously existing PO
-number is deleted. You can also set the minimum PO Number default, so
-defaults will never go below the set amount.
+This tool adds the ability to prevent Purchase Order Processing from defaulting to the next PO Number or Receipt Number. You can set the default to a number before the current PO number when a previously existing PO number is deleted. You can also set the minimum PO Number default, so defaults will never go below the set amount.
 
 **To set a Minimum PO or Receipt number:**
 
-1. To activate the new functionality that this tool offers, simply mark the second check box next to Minimum PO/Receipt \# from the Professional
-    Services Tools menu. Close the window.
+1. To activate the new functionality that this tool offers, simply mark the second check box next to Minimum PO/Receipt \# from the Professional Services Tools menu. Close the window.
 
 2. Open Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Processing, and then choose Additional \>\> Minimum PO Number.
 
@@ -1395,18 +1153,11 @@ defaults will never go below the set amount.
 
 ### Using POP Cost Defaulter
 
-Use this tool to specify the default cost for a purchase order document. To
-set up the POP Cost Defaulter, select POP Cost Defaulter in the Professional
-Services Tools Library and click Next.
+Use this tool to specify the default cost for a purchase order document. To set up the POP Cost Defaulter, select POP Cost Defaulter in the Professional Services Tools Library and click Next.
 
-In the POP Cost Defaulter window, select what cost you would like to default
-from the item in the PO Entry window. Typically, the Last Invoice Cost is
-defaulted from Cards \>\> Inventory \>\> Vendors. Once POP Cost Defaulter is
-activated, either the Current or Standard Cost will be defaulted based on
-your selection.
+In the POP Cost Defaulter window, select what cost you would like to default from the item in the PO Entry window. Typically, the Last Invoice Cost is defaulted from Cards \>\> Inventory \>\> Vendors. Once POP Cost Defaulter is activated, either the Current or Standard Cost will be defaulted based on your selection.
 
-To activate this tool simply mark the second check box next to POP Cost
-Defaulter in the Professional Services Tools Library window.
+To activate this tool simply mark the second check box next to POP Cost Defaulter in the Professional Services Tools Library window.
 
 ## Chapter 7: Using Payroll Tools
 
@@ -1427,115 +1178,74 @@ buttons* on page 2 to use the Validate and Import buttons.
 
 1. Enter the Starting Employee ID.
 
-    ![A screenshot](media/e98c1352cd449d7aa876197e6c740aea.jpg)
+2. Enter the new Employee ID.
 
-1. Enter the new Employee ID.
+3. Choose Convert. You will be prompted to back up your database. Once a backup is made of the database, Choose Continue.
 
-2. Choose Convert. You will be prompted to back up your database. Once a backup is made of the database, Choose Continue.
+4. A message will appear when the employee ID change is finished.
 
-1. A message will appear when the employee ID change is finished.
-
-2. Choose OK and close the Employee Change window. A Report Destination window will appear. Choose a destination to view the Converted Employee IDs report.
+5. Choose OK and close the Employee Change window. A Report Destination window will appear. Choose a destination to view the Converted Employee IDs report.
 
 ### Using the Certified Payroll Report
 
-Use the Certified Payroll Report with US Payroll to add a project number to
-employees’ hourly transactions and track them on a per project basis. This
-tool will also capture information posted from the Timesheet Entry window in
-Project Accounting Timesheet Entry. You can print these transactions on a
-weekly report and view employees, departments, job titles, and pay codes by
-project.
+Use the Certified Payroll Report with US Payroll to add a project number to employees’ hourly transactions and track them on a per project basis. This tool will also capture information posted from the Timesheet Entry window in Project Accounting Timesheet Entry. You can print these transactions on a weekly report and view employees, departments, job titles, and pay codes by project.
 
 **Certified Payroll Report setup:**
 
-1. This tool modifies existing features within Microsoft Dynamics GP. To
-    activate the new functionality that this tool offers, simply mark the second
-    check box next to Certified Payroll Report in the Professional Services
-    Tools menu. Close the window.
+1. This tool modifies existing features within Microsoft Dynamics GP. To activate the new functionality that this tool offers, simply mark the second check box next to Certified Payroll Report in the Professional Services Tools menu. Close the window.
 
-2. Open the Alternate/Modified Forms and Reports window by choosing Microsoft
-    Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Alternate/ Modified
-    Forms and Reports.
+2. Open the Alternate/Modified Forms and Reports window by choosing Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Alternate/ Modified Forms and Reports.
 
-    ![A screenshot](media/f6cd48c209fdd7cacf54e6965ea45cab.jpg)
+3. Select the ID for which you want to view the Certified Payroll Report.
 
-1. Select the ID for which you want to view the Certified Payroll Report.
+4. Select Technical Service Tools from the Product drop-down list.
 
-2. Select Technical Service Tools from the Product drop-down list.
+5. Select Windows for the Type drop-down list.
 
-3. Select Windows for the Type drop-down list.
+6. Expand the + beside the Payroll folder.
 
-4. Expand the + beside the Payroll folder.
+7. Expand the + beside Payroll Transaction Entry.
 
-5. Expand the + beside Payroll Transaction Entry.
-
-6. You should now see an option for Microsoft Dynamics GP or Technical Service
+8. You should now see an option for Microsoft Dynamics GP or Technical Service
     Tools. Select Technical Service Tools.
 
-7. Click Save on the form.
+9. Click Save on the form.
 
-1. To create a shortcut, right-click in the Home menu and select Add \>\> Add
+10. To create a shortcut, right-click in the Home menu and select Add \>\> Add
     Window.
 
-2. Open Technical Service Tools \>\> Payroll and select the Certified Payroll
-    Report Option.
+11. Open Technical Service Tools \>\> Payroll and select the Certified Payroll Report Option.
 
-3. Choose Done and select Yes to save the changes.
+12. Choose Done and select Yes to save the changes.
 
 **To use Payroll Transaction Entry:**
 
-To use the Certified Payroll functionality, simply enter a Job Number while
-entering Payroll transactions.
+To use the Certified Payroll functionality, simply enter a Job Number while entering Payroll transactions.
 
-![A screenshot ](media/14d96c71a001e5f12450c7f34eca1f74.jpg)
+![A screenshot ](media/PSTPAYTRX.jpg)
 
-The Job Number field is located in the expanded area of the Payroll
-Transaction Entry window. This field is only active for transactions that
-are Hourly, Overtime or
-
-Double Time payroll types, and will be disabled for any other types of
+The Job Number field is located in the expanded area of the Payroll Transaction Entry window. This field is only active for transactions that are Hourly, Overtime or Double Time payroll types, and will be disabled for any other types of
 transactions.
 
-There is no validation for the Job Number itself, and the Job Number can be
-any string of 15 characters or less.
+There is no validation for the Job Number itself, and the Job Number can be any string of 15 characters or less.
 
-Once a batch is posted along with a check run, the information about the
-transaction is stored to be printed later on the Certified Payroll Report.
-The report includes the Employee ID, Job Number, Job Title, Department, Pay
-Code, number of hours, and the Pay Rate for this check. This information
-will remain in the system for as long as the user keeps Check History for
-the employee.
+Once a batch is posted along with a check run, the information about the transaction is stored to be printed later on the Certified Payroll Report. The report includes the Employee ID, Job Number, Job Title, Department, Pay Code, number of hours, and the Pay Rate for this check. This information will remain in the system for as long as the user keeps Check History for the employee.
 
 **To print the Certified Payroll Report:**
 
-Once transactions have been posted with information about the Job Number,
-users can access the Certified Payroll Report from whichever palette was
-chosen during setup. Typically, this would be the Payroll Transactions
-palette.
+Once transactions have been posted with information about the Job Number, users can access the Certified Payroll Report from whichever palette was chosen during setup. Typically, this would be the Payroll Transactions palette.
 
 1. Open the Certified Payroll Report window.
 
-    ![A screenshot ](media/0e6852a93880e5b59c05b21cc5ee6cac.jpg)
+2. Mark All jobs or enter a range of jobs.
 
-1. Mark All jobs or enter a range of jobs.
+3. Choose the Ending Date of the 7-day period to be printed on the report. All transactions for the week that ends on the date specified and meets the range of Job Numbers will print on the report.
 
-2. Choose the Ending Date of the 7-day period to be printed on the report. All
-    transactions for the week that ends on the date specified and meets the
-    range of Job Numbers will print on the report.
+4. Mark Print Report Headings to manually enter the Contract and Contractor information.
 
-3. Mark Print Report Headings to manually enter the Contract and Contractor
-    information.
+5. Mark Print Signature Paragraph to print a paragraph on your report stating your certification that the payroll is correct and complete and the wage rates are valid according to the Secretary of Labor.
 
-4. Mark Print Signature Paragraph to print a paragraph on your report stating
-    your certification that the payroll is correct and complete and the wage
-    rates are valid according to the Secretary of Labor.
-
-5. Choose Print to print the report. The information that prints on the report is summarized for each employee within each job. Each employee could have
-    several line items for a single job if the employee used different pay
-    codes, job titles or departments during the week period. Each employee could
-    have different line items on more than one job report if the employee worked
-    on more than one job during the week period. A summary total of the
-    employee's total weekly hours for the Job and their total Job Gross Pay is
+6. Choose Print to print the report. The information that prints on the report is summarized for each employee within each job. Each employee could have several line items for a single job if the employee used different pay codes, job titles or departments during the week period. Each employee could have different line items on more than one job report if the employee worked on more than one job during the week period. A summary total of the employee's total weekly hours for the Job and their total Job Gross Pay is
     printed for each employee on every job report.
 
 > [!NOTE]
@@ -1559,16 +1269,13 @@ This chapter explains how to use Professional Services Tools that are not associ
 
 ### Using Fixed Asset Modifier
 
-Use this tool to reclassify an asset code within the Fixed Assets module.
-All tables throughout the system will reflect this change.
+Use this tool to reclassify an asset code within the Fixed Assets module. All tables throughout the system will reflect this change.
 
 **To reclassify an asset code:**
 
 1. Enter the existing Asset ID.
 
-    ![A screenshot](media/522477c75245b10318d8f5a971306177.jpg)
-
-1. Enter the new Asset ID value. Choose Change. The Fixed Assets Modifier tool will update the following tables with the new ID:
+2. Enter the new Asset ID value. Choose Change. The Fixed Assets Modifier tool will update the following tables with the new ID:
 
 - FA00100 • FA00700 • FA00701 • FA00800 • FA00801
 
@@ -1582,8 +1289,7 @@ All tables throughout the system will reflect this change.
 
 ### Using Default Add Item POP/SOP
 
-When activated, Default Add Item will automatically mark the Add Item
-selection in the Options menu for the following windows:
+When activated, Default Add Item will automatically mark the Add Item selection in the Options menu for the following windows:
 
 - Sales Transaction Entry
 
@@ -1593,25 +1299,16 @@ selection in the Options menu for the following windows:
 
 - Purchasing Invoice Entry
 
-The Add Item selection can be marked or unmarked normally after Default Add
-Item is activated. However, it will default to marked instead of unmarked.
-
-To activate this tool, simply mark the second check box next to Default Add
-Item POP/SOP in the Professional Services Tools Library window.
+The Add Item selection can be marked or unmarked normally after Default Add Item is activated. However, it will default to marked instead of unmarked. 
+To activate this tool, simply mark the second check box next to Default Add Item POP/SOP in the Professional Services Tools Library window.
 
 ### Using Doc Date Verify
 
-When Doc Date Verify is activated, and a document date is entered, a check
-will be performed to determine whether the document date is in a valid
-fiscal period or if the fiscal period is closed.
+When Doc Date Verify is activated, and a document date is entered, a check will be performed to determine whether the document date is in a valid fiscal period or if the fiscal period is closed.
 
-- If the date does not fall within a valid fiscal period, a message will be
-    displayed and the user will not be allowed to continue until the date is in
-    a valid period.
+- If the date does not fall within a valid fiscal period, a message will be displayed and the user will not be allowed to continue until the date is in a valid period.
 
-- If the Document Date falls within a period that is closed, a message will be
-    displayed that will allow the user to correct the date or continue on
-    leaving the date.
+- If the Document Date falls within a period that is closed, a message will be displayed that will allow the user to correct the date or continue on leaving the date.
 
 This functionality is available in the following windows:
 
@@ -1635,18 +1332,12 @@ This functionality is available in the following windows:
 
 - Purchasing Invoice Entry
 
-To activate this tool, simply mark the second check box next to Doc Date
-Verify in the Professional Services Tools Library window.
+To activate this tool, simply mark the second check box next to Doc Date Verify in the Professional Services Tools Library window.
 
 ### Using Decimal Place Tool
 
-When the Decimal Place tool is activated, both Payables Management checks
-and Payroll checks will have the Check Amount in Words truncated to two
-decimals. This tool would be used if the currencies in Microsoft Dynamics GP
-were changed to more than two decimals. In this situation, the checks will
-print with more than two decimals, which can alter the amount of the check.
-The Decimal Place tool will adjust the Check Amount in Words portion to two
-decimal places.
+When the Decimal Place tool is activated, both Payables Management checks and Payroll checks will have the Check Amount in Words truncated to two decimals. This tool would be used if the currencies in Microsoft Dynamics GP were changed to more than two decimals. In this situation, the checks will print with more than two decimals, which can alter the amount of the check.
+The Decimal Place tool will adjust the Check Amount in Words portion to two decimal places.
 
 > [!NOTE]
 > The Decimal Places Tool will change only the Check Amount in Words portion of the check. To change the actual amount on the check to match the Check Amount in Words, you must use Report Writer to modify the check report and change the currency fields to only print two decimal places. Modifying the Check Amount in Words is not possible in Report Writer, so this tool allows that portion of the change.
@@ -1655,23 +1346,16 @@ To activate this tool, simply mark the second check box next to Decimal Place To
 
 ### Using Company Copy
 
-This tool allows the setup and report option information from one company to
-be copied to another company within Microsoft Dynamics GP. You can choose
-the modules for which information will be copied from the source company to
-the destination company.
+This tool allows the setup and report option information from one company to be copied to another company within Microsoft Dynamics GP. You can choose the modules for which information will be copied from the source company to the destination company.
 
 > [!IMPORTANT]
 > This tool requires that the user be logged in as “sa.”
 
-Before using the Company Copy tool, be aware of the following important
-issues:
+Before using the Company Copy tool, be aware of the following important issues:
 
 - You should use this tool only after creating a SQL database backup of the destination company. The copy operation is irreversible without a backup.
 
-- When the copy process is run, the setup tables and report options tables in the modules you selected will be deleted for the destination company. If you
-    have manually added setup or report option information for a module in the
-    destination company, and you do not want this information deleted, do not
-    use the Company Copy tool to copy data for that module.
+- When the copy process is run, the setup tables and report options tables in the modules you selected will be deleted for the destination company. If you have manually added setup or report option information for a module in the destination company, and you do not want this information deleted, do not use the Company Copy tool to copy data for that module.
 
 - You should be the only user who is logged into Microsoft Dynamics GP when the operation is performed.
 
@@ -1681,15 +1365,9 @@ issues:
 
 1. Select the source company and the destination company.
 
-    ![A screenshot ](media/577c501cb87929fc73ecf070d08df050.jpg)
+2. Indicate what information you want to copy to the destination company. You     can copy setup data, report options, or both. You must mark at least one of the options.
 
-1. Indicate what information you want to copy to the destination company. You
-    can copy setup data, report options, or both. You must mark at least one of
-    the options.
-
-2. Select the modules for which you want information to be copied. If you mark
-    All Modules, all of the modules listed will be marked. Be aware of these
-    guidelines:
+3. Select the modules for which you want information to be copied. If you mark All Modules, all of the modules listed will be marked. Be aware of these guidelines:
 
     - If Report Options is selected, Company must be marked.
 
@@ -1705,7 +1383,7 @@ issues:
 
       - If Bill of Materials is marked, Inventory must also be marked.
 
-3. Click Process to begin processing. A processing status message will be displayed in the lower-left corner of the Company Copy window. The processing time required will depend on the amount of data in the modules selected. When processing has finished, a status message will indicate that processing is complete.
+4. Click Process to begin processing. A processing status message will be displayed in the lower-left corner of the Company Copy window. The processing time required will depend on the amount of data in the modules selected. When processing has finished, a status message will indicate that processing is complete.
 
 4. Log into the destination company to validate the setup information and report option information that you copied.
 
