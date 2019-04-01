@@ -328,70 +328,48 @@ Use the Company Pay Policy Setup window to associate an Add-On
 
 Code to a Company defined in the system. To open this window, click the **HR and Payroll** series button, click **Pay Policy Manager** on the Setup content pane and then click **Company Pay Policy Setup**.
 
-![screenshot](media/4be45bdfbfa7fa5b8e5e1273c99fe1ca.jpg)
+![screenshot](media/APCPPS.jpg)
 
-During the Adjusted Pay Rate calculations, this Add-On Code Amount may be
-applied to an employee’s pay rate.
+During the Adjusted Pay Rate calculations, this Add-On Code Amount may be applied to an employee’s pay rate.
 
 ### Department Setup
 
-Use the Department Setup window to associate an Add-On Code to a Department.
-To open this window, click the **HR and Payroll** series button and then
-click **Department** on the Setup content pane.
+Use the Department Setup window to associate an Add-On Code to a Department. To open this window, click the **HR and Payroll** series button and then click **Department** on the Setup content pane.
 
-During the Adjusted Pay Rate calculations, this Add-On Code Amount may be
-applied to an employee’s pay rate.
+During the Adjusted Pay Rate calculations, this Add-On Code Amount may be applied to an employee’s pay rate.
 
 ### Position Setup
 
-Use the **Position Setup** window to associate an Add-On Code to a Position.
-To open this window, click the **HR and Payroll** series button and then
-click **Position** on the Setup content pane.
+Use the **Position Setup** window to associate an Add-On Code to a Position. To open this window, click the **HR and Payroll** series button and then click **Position** on the Setup content pane.
 
-During the Adjusted Pay Rate calculations, this Add-On Code Amount may be
-applied to an employee’s pay rate.
+During the Adjusted Pay Rate calculations, this Add-On Code Amount may be applied to an employee’s pay rate.
 
 ### Shift Code Setup
 
-Use Shift Code Setup window to associate an Add-On Code to a Shift Code. To
-open this window, click the **HR and Payroll** series button and then click
-**Shift Code** on the Setup content pane.
+Use Shift Code Setup window to associate an Add-On Code to a Shift Code. To open this window, click the **HR and Payroll** series button and then click **Shift Code** on the Setup content pane.
 
-During the Adjusted Pay Rate calculations, this Add-On Code Amount may be
-applied to an employee’s pay rate.
+During the Adjusted Pay Rate calculations, this Add-On Code Amount may be applied to an employee’s pay rate.
 
-When Advanced Payroll is installed, the Microsoft Dynamics GP Shift Code
-Setup fields Shift Premium and Amount are not visible.
+When Advanced Payroll is installed, the Microsoft Dynamics GP Shift Code Setup fields Shift Premium and Amount are not visible.
 
 ### Pay Code Options
 
-Use the Pay Code Options window to designate a Linked Pay Code. To open this
-window, click the **HR and Payroll** series button, click **Pay Code** on
-the Setup content pane and then click **Pay Code Options** from the GoTo menu. The Pay Code Options window includes
+Use the Pay Code Options window to designate a Linked Pay Code. To open this window, click the **HR and Payroll** series button, click **Pay Code** on the Setup content pane and then click **Pay Code Options** from the GoTo menu. The Pay Code Options window includes
 functionality for Payroll Extensions and for Advanced Payroll.
 
 The functionality specific to Advanced Payroll is discussed here.
 
-![A screenshot](media/1b7a7d0d2105d38b4f108fcbcae8a9ea.jpg)
+![A screenshot](media/APPAYCOS.jpg)
 
-A linked pay code assigned disables the Use Add-On options. Pay Policy
-Manager also looks at the pay rate of the linked pay code, and it uses the
-add-ons of the linked pay code.
+A linked pay code assigned disables the Use Add-On options. Pay Policy Manager also looks at the pay rate of the linked pay code, and it uses the add-ons of the linked pay code. 
 
-After a linked pay code has been entered, the Pay Percent and Minimum Amount
-field become enabled.
+After a linked pay code has been entered, the Pay Percent and Minimum Amount field become enabled.
 
-- A percent can be entered for the linked pay code rate when the full 100%
-    should not be used.
+- A percent can be entered for the linked pay code rate when the full 100% should not be used.
 
-- The minimum amount can also be specified so the linked pay code and any
-    add-on options do not exceed the minimum amount; the rate automatically is
-    adjusted up to the minimum amount.
+- The minimum amount can also be specified so the linked pay code and any add-on options do not exceed the minimum amount; the rate automatically is adjusted up to the minimum amount.
 
-This window can also be used to specify an Add-On code and when an employee
-is currently eligible for the pay rate. When the Use Add-On option is
-selected and an Add-On Code is selected, this Add-On Code Amount is applied
-to an eligible employee’s pay rate.
+This window can also be used to specify an Add-On code and when an employee is currently eligible for the pay rate. When the Use Add-On option is selected and an Add-On Code is selected, this Add-On Code Amount is applied to an eligible employee’s pay rate.
 
 > [!NOTE]
 > The Pay Code Setup information is for setup and default purposes only. It sets default values for any new Pay Code created using this Pay Code as the Based on Pay Code. It will also set default values when this Pay Code is associated with an Employee in the Employee Pay Code window.
@@ -406,16 +384,11 @@ to an eligible employee’s pay rate.
 
 - Add-On Code
 
-When a change is made to the field on the Pay Code Setup window, click Save
-to save the changes. A roll down message is prompted, “Do you want to roll
-down these changes to all employees with this pay code?”
+When a change is made to the field on the Pay Code Setup window, click Save to save the changes. A roll down message is prompted, “Do you want to roll down these changes to all employees with this pay code?” 
 
-- When **Yes** is selected, this Calculation Method is rolled down to all
-    Employee Pay Code records for this same Pay Code.
+- When **Yes** is selected, this Calculation Method is rolled down to all Employee Pay Code records for this same Pay Code.
 
-- When **No** is selected, these values will not be rolled down to all
-    Employee Pay Code records but the changes are saved to the Pay Code Setup
-    record.
+- When **No** is selected, these values will not be rolled down to all Employee Pay Code records but the changes are saved to the Pay Code Setup record.
 
 ### Pay Policies
 
