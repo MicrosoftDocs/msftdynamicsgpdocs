@@ -29,6 +29,7 @@
 #### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
 ### [Professional Service Tools Library](installation/ProfServicesToolsLibrary.md)
 ### [Security Planning](installation/SecurityPlanning.md)
+### [System Setup](installation/SystemSetup.md)
 
 <!--- web components -->
 ### Web components
@@ -96,7 +97,7 @@
 ### [Payables Management](financials/PayablesManagement.md)
 ### [General Ledger](financials/general-ledger.md)
 ### [Fixed Asset Management](financials/fixed-assets.md)
-### [VAT in the UK Version of Microsoft Dynamics GP](financials/uk-tax-mtd.md)
+### [VAT in the British Version of Microsoft Dynamics GP](financials/uk-tax-mtd.md)
 ### [Glossary](financials/glossary.md)
 
 <!--- distribution -->
@@ -117,6 +118,7 @@
 #### [Sales Order Processing Part 4: Transaction activity](distribution/sales-order-processing-part4-transaction-activity.md)
 #### [Sales Order Processing Part 5: Inquiries and reports](distribution/sales-order-processing-part5-inquiries-reports.md)
 #### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utilities.md)
+#### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
 ### [Glossary](distribution/glossary.md)
 
 <!--- payroll -->

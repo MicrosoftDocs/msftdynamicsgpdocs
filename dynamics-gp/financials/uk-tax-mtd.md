@@ -15,7 +15,9 @@ ms.date: 02/12/2019
 Her Majesty's Revenue and Customs (HMRC) is implementing the first step of Making Tax Digital, which imposes new requirements on VAT registered businesses above the VAT threshold. Requirements will be implemented in phases. In the first phase, with a deadline in April, 2019, the following requirements will take effect:
 
 * Keeping records digitally - Businesses must now keep all their records digitally. For users of ERP systems this will not have any impact since they already keep their records digitally in these systems.  
-* Submit VAT return electronically using [software recognized by HMRC](https://www.gov.uk/guidance/software-for-sending-income-tax-updates).  
+* Submit VAT return electronically using [software recognized by HMRC](https://www.gov.uk/guidance/software-for-sending-income-tax-updates).
+* If you are new to VAT 100 setup, review [How to setup VAT 100 Return](https://community.dynamics.com/gp/b/dynamicsgp/archive/2019/01/29/microsoft-dynamics-gp-information-about-the-vat-100-return)
+* If you are having issues using the Making Tax Digital review [Troubleshooting Making Tax Digital]( https://community.dynamics.com/gp/b/dynamicsgp/archive/2019/03/12/microsoft-dynamics-gp-39-making-tax-digital-39-functionality-for-uk-vat)
 
 ## Set up Making Tax Digital for VAT
 

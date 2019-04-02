@@ -205,6 +205,7 @@ While standard Pay Policies (or combinations of the five factors) may exist, any
 
 - The only restriction to Pay Policy combinations is that only hourly Pay Codes can be used.
 
+
 ### Pay Policy Example
 
 | **Field**  | **Selection** | **Add-On Code** | **Add-On Amount** |
@@ -420,8 +421,7 @@ down these changes to all employees with this pay code?”
 
 Use the Pay Policies window is to provide actual and hypothetical
 
-Adjusted Pay Rate scenarios. To open this window, click the **HR and
-Payroll** series button, click **Pay Policy Manager** on the Setup content
+Adjusted Pay Rate scenarios. To open this window, click the **HR and Payroll** series button, click **Pay Policy Manager** on the Setup content
 pane and then click **Pay Policies**.
 
 ![A screenshot](media/3682febe7f8380e092213bf04723673a.jpg)
@@ -446,11 +446,6 @@ window, which will affect all actual Pay Policies for that Pay Code.*
 Select a **calculation**:
 
 - **Actual Calculations** - displays the amounts in the window that represent
-    the most current actual data that exists. In a case where a Pay Policy was
-    created using actual calculations, when the record is re-opened, all
-    calculations are automatically re-figured based on the latest actual data
-    available.
-
 - **Hypothetical Calculations** - displays the amounts in the window that
     represent the amounts saved in the Pay Policies table. The values entered
     into the Hypothetical fields do not update the actual values saved in the
@@ -584,8 +579,7 @@ Account can be assigned assign to a Department, Position and (Pay) Code.
     payroll transaction hours should be posted to be based on the Department,
     Position and (Pay) Code combination.
 
-- During payroll processing, the payroll transaction hours will be posted to
-    the appropriate Unit Accounts.
+- During payroll processing, the payroll transaction hours will be posted tohe appropriate Unit Accounts.
 
 #### Unit Account
 
@@ -1014,41 +1008,41 @@ Some key points to remember from this chapter include:
     Position and Shift Code selected, or the linked pay code selections on the
     Employee Pay Code Options window.
 
-- During the calculation process, when Add-On Codes are assigned to various
+-   During the calculation process, when Add-On Codes are assigned to various
     calculation factors the calculations occur in order based on the Pay Policy
     Priority Setup.
 
-- An employee can have a transaction with any combination of five calculation
+-   An employee can have a transaction with any combination of five calculation
     factors.
 
-- The values entered into the Hypothetical fields do not update the actual
+-   The values entered into the Hypothetical fields do not update the actual
     values saved in the Pay Code table.
 
-- Payroll Hours to General Ledger will allow the system to be set up to post
+-   Payroll Hours to General Ledger will allow the system to be set up to post
     actual labor hours to General Ledger Unit Accounts.
 
-- When the “Do Not Post Hours” is selected, the payroll transaction hours will
+-   When the “Do Not Post Hours” is selected, the payroll transaction hours will
     not be posted to the General Ledger unit account.
 
-- Labor Accrual Manager allows batches to accrue on based on Posted Date or
+-   Labor Accrual Manager allows batches to accrue on based on Posted Date or
     Pay Period End Date to be viewed.
 
-- When the Post Payroll Hours to General Ledger is not installed, only dollars
+-   When the Post Payroll Hours to General Ledger is not installed, only dollars
     will be available for use during the Labor Accrual Manager Payroll Accruals
     to generate dollar accrual journal entries.
 
-- The “Exclude Hours from Payroll Accruals” has no impact on the accrue
+-   The “Exclude Hours from Payroll Accruals” has no impact on the accrue
     dollars for payroll accruals, only hours.
 
-- Advanced Labor Reporting extends department level reporting for both Payroll
+-   Advanced Labor Reporting extends department level reporting for both Payroll
     and Financial data.
 
-- The FTE YTD Report uses the Labor Reporting Code from the Labor Reporting
+-   The FTE YTD Report uses the Labor Reporting Code from the Labor Reporting
     Accounts window and pulls data from the General Ledger.
 
-- A department can be assigned to multiple areas of responsibility.
+-   A department can be assigned to multiple areas of responsibility.
 
-- The Payroll Account Mapping window provides the route back for the General
+-   The Payroll Account Mapping window provides the route back for the General
     Ledger Accounts to the payroll accounts assigned to a specific Area of
     Responsibility.
 
@@ -1575,37 +1569,32 @@ the selected View option.
     defined on the Build window during payroll processing that falls within the
     month.
 
-Only Pay Runs processed AFTER the Labor Accrual Manager product is installed
-will show up in the scrolling window section of this screen.
+Only Pay Runs processed AFTER the Labor Accrual Manager product is installed will show up in the scrolling window section of this screen.
 
 ##### Total Gross Wages
 
-The system will display the sum of Gross Wages from the selected pay run
-records.
+The system will display the sum of Gross Wages from the selected pay run records.
 
 **Calculated Accrual Days** Enter the Days to Accrue.
 
 ##### Calculated Accrual Percent
 
 Will calculate the percent automatically using the following formula:
-(Calculated Accrual Days / Pay Period Days) \* 100. It should be noted that
-the Pay Period Days is derived from the Pay Frequency selected in this
-window.
+(Calculated Accrual Days / Pay Period Days) \* 100
+
+It should be noted that the Pay Period Days is derived from the Pay Frequency selected in this window.
 
 ### Summary
 
-This chapter focused on using Advanced Payroll to enter transactions related
-to Pay Policy Manager and the Labor Accrual Manager transactions for payroll
-accrual calculations and posting Some key points to remember from this
-chapter include:
+This chapter focused on using Advanced Payroll to enter transactions related to Pay Policy Manager and the Labor Accrual Manager transactions for payroll accrual calculations and posting Some key points to remember from this chapter include:
 
 - The Adjusted Pay Rate calculation also factors in any Employee Pay Policy
     Exceptions.
 
-- Selecting the Calculate button on the Transaction Entry window will
+ Selecting the Calculate button on the Transaction Entry window will
     calculate Pay Policy pay rates.
 
-- When the Payroll Mass Transaction Entry Batch is not opened in the
+-  hen the Payroll Mass Transaction Entry Batch is not opened in the
     Transaction Entry window the Pay Rates will be set to the Employee Pay Code
     Pay Rate with no pay policy calculations.
 
@@ -2029,5 +2018,4 @@ Some key points to remember from this chapter include:
     Equivalent Calculations section of this document for more detailed
     information.
 
-- FTE YTD Report uses the Labor Reporting Code from the Labor Reporting
-    Accounts window and pulls data from General Ledger.
+- FTE YTD Report uses the Labor Reporting Code from the Labor Reporting Accounts window and pulls data from General Ledger.
