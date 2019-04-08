@@ -1,6 +1,17 @@
-**Invoicing in Microsoft Dynamics GP**
+---
+title: "Invoicing in Dynamics GP"
+description: "Examine how the Invoicing module works in Microsoft Dynamics GP."
+keywords: "invoicing"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 04/08/2019
+---
 
-**Introduction**
+# Invoicing in Microsoft Dynamics GP
 
 You can use Invoicing to enter and edit invoices and returns and print an
 invoice or return. You also can manage your invoicing documents once they’re
@@ -108,36 +119,7 @@ Microsoft Dynamics GP menu, choose User Preferences, and then choose Display.
 Provides information about enhancements that were added to Microsoft Dynamics GP
 since the last major release.
 
->   **Microsoft Dynamics GP Online**
-
-Opens a Web page that provides links to a variety of Web-based user assistance
-resources. Access to some items requires registration for a paid support plan.
-
->   **Current implementation and upgrade information** The most recent revisions
->   of upgrade and implementation documentation, plus documentation for service
->   packs and payroll tax updates.
-
->   **User documentation and resources** The most recent user guides, howto
->   articles, and white papers for users.
-
->   **Developer documentation and resources** The most recent documentation and
->   updated information for developers.
-
->   **Product support information** Information about the Microsoft Dynamics GP
->   product support plans and options that are available, along with information
->   about peer support and self-support resources.
-
->   **Services information** Information about Microsoft Dynamics GP support,
->   training, and consulting services.
-
->   **Microsoft Dynamics GP Community** Access to newsgroups, where you can ask
->   questions or share your expertise with other Microsoft Dynamics GP users.
-
->   **CustomerSource home page** A wide range of resources available to
->   customers who are registered for a paid support plan. Includes access to
->   Knowledge Base articles, software downloads, self-support, and much more.
-
->   **Part 1: Setup**
+## Part 1: Setup
 
 This part of the documentation includes information that will help you set up
 Invoicing. The setup procedures generally need to be completed once, but you can
@@ -152,7 +134,7 @@ viewing existing entries.
 -   *Chapter 2, “Module setup,”* provides instructions for setting up the
     Invoicing module.
 
-**Chapter 1: Setup overview**
+### Chapter 1: Setup overview**
 
 >   Use this information to learn about and set up Invoicing. The setup
 >   procedures are organized in an order that will ensure Invoicing is set up
@@ -185,7 +167,7 @@ viewing existing entries.
 >   Setting up the System) for more information about the Setup Checklist
 >   window.
 
-**Chapter 2: Module setup**
+### Chapter 2: Module setup
 
 >   During the Invoicing setup process, you’ll set up your Invoicing preferences
 >   such as default entries, tax calculation options, starting document numbers,
@@ -549,7 +531,7 @@ in the
 
 3.  Choose OK to save changes and close the Invoicing Setup window.
 
->   **Part 2: Transaction entry**
+## Part 2: Transaction entry
 
 This part of the documentation explains how to enter invoices and returns. You
 can enter Invoicing documents individually or in batches. It also describes how
@@ -571,7 +553,7 @@ The following information is discussed:
 -   *Chapter 7, “Allocating item quantities,”* describes how items are allocated
     and fulfilled on invoices
 
-**Chapter 3: Item information**
+### Chapter 3: Item information
 
 >   Use this information to learn more about handling items in Invoicing. Item
 >   information is divided into the following sections:
@@ -725,7 +707,7 @@ The following default accounts are used for non-inventoried items:
 >   *Don’t override shortages on serial- and lot-numbered items. Your inventory
 >   will be overstated when the quantity is replenished.*
 
-**Chapter 4: Batches**
+### Chapter 4: Batches
 
 >   Batches are groups of transactions with something in common and identified
 >   by a unique name or a number. Batches can be identified as a group of
@@ -828,7 +810,7 @@ Make your changes and choose
 
 3.  Choose Delete.
 
-**Chapter 5: Invoices and returns**
+### Chapter 5: Invoices and returns
 
 >   Entering and posting transactions are two of the most common routines in
 >   accounting. Transactions can be saved, edited if necessary, and then posted
@@ -1046,7 +1028,7 @@ inventory.*
 
 3.  Choose Save.
 
-**Chapter 6: Invoicing taxes**
+### Chapter 6: Invoicing taxes
 
 >   Sales tax can be calculated, modified, and distributed in Invoicing. Use the
 >   Invoice Tax Summary Entry window to view tax distributions and to change
@@ -1187,7 +1169,7 @@ for shipment/invoice receipts.
 >   goods value of £250 for the input tax detail. The tax amount automatically
 >   will be adjusted to reflect the reduction in the taxable goods value.
 
-**Chapter 7: Allocating item quantities**
+### Chapter 7: Allocating item quantities
 
 >   When you allocate an item, it is reserved in inventory and the quantity
 >   available for the item and for the site is reduced in inventory. You must
@@ -1288,8 +1270,7 @@ IMAGE - INVQDE.jpg
 
 6.  Choose OK to close the window and save your entries.
 
-Part 3: Transaction activity
-============================
+## Part 3: Transaction activity
 
 >   This part of the documentation includes information that will help manage
 >   your invoicing documents once they are entered. You can transfer, modify,
@@ -1308,8 +1289,7 @@ Part 3: Transaction activity
 -   *Chapter 10, “Posting,”* describes how to transfer transactions to permanent
     records and how to transfer the original transaction information to history.
 
-Chapter 8: Invoicing document maintenance
------------------------------------------
+### Chapter 8: Invoicing document maintenance
 
 >   Before you transfer or post an invoice, you can modify the item, commission,
 >   and total information. For example, you can change quantities, add items,
@@ -1586,8 +1566,7 @@ IMAGE - INVINE.jpg
 
 4.  Choose OK to save the record.
 
-Chapter 9: Printing documents
------------------------------
+### Chapter 9: Printing documents
 
 >   After you enter a quote, order, invoice, back order, or return, you can
 >   print the document and send it to a customer. You also can print packing
@@ -1760,8 +1739,7 @@ the invoice, return, or packing slip.*
 3.  Choose Print. You can save the report option and print it later from either
     the Mailing Labels window or the Mailing Label Report Options window.
 
-Chapter 10: Posting
--------------------
+### Chapter 10: Posting
 
 >   Posting is the process of transferring transactions to permanent records. If
 >   you need to change or delete a transaction, you must do so before posting
@@ -1935,8 +1913,7 @@ Chapter 10: Posting
     Posting Setup window, posting journals and distribution breakdown registers
     may be printed when the series posting process is complete.
 
-Part 4: Inquiries, reports, and utilities
-=========================================
+## Part 4: Inquiries, reports, and utilities
 
 >   This part of the documentation explains how to use inquiries and reports to
 >   analyze your invoicing activity. You can analyze transaction and item
@@ -1958,8 +1935,7 @@ Part 4: Inquiries, reports, and utilities
 -   *Chapter 13, “History removal,”* explains how to remove Invoicing and
     Intrastat statistics information when it’s no longer useful.
 
-Chapter 11: Inquiries
----------------------
+### Chapter 11: Inquiries
 
 >   Use the Invoice inquiry windows to view detailed or summarized Invoicing
 >   information. You can view invoice, item, and salesperson activity, as well
@@ -2179,8 +2155,7 @@ IMAGE - INVINQ.jpg
     Options menu and select the appropriate item when the Invoice Inquiry window
     is open.
 
-Chapter 12: Reports
--------------------
+### Chapter 12: Reports
 
 >   You can use Invoicing reports to analyze receivables activity and identify
 >   errors in transaction entry. Use the information in this chapter to guide
@@ -2271,8 +2246,7 @@ IMAGE – INVRPTS.jpg
     before saving it. If you don’t want to print the option now, choose Save and
     close the window. The report window will be redisplayed.
 
-Chapter 13: History removal
----------------------------
+### Chapter 13: History removal
 
 >   History records provide useful information for auditing purposes. If you’re
 >   keeping one of the types of history available in Invoicing, those records
