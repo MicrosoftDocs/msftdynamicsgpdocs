@@ -13,9 +13,7 @@ ms.date: 04/08/2019
 
 # Invoicing in Microsoft Dynamics GP
 
-You can use Invoicing to enter and edit invoices and returns and print an
-invoice or return. You also can manage your invoicing documents once they’re
-entered and print reports to analyze your invoicing activity.
+You can use Invoicing to enter and edit invoices and returns and print an invoice or return. You also can manage your invoicing documents once they’re entered and print reports to analyze your invoicing activity.
 
 You also can use Invoicing to complete the following tasks:
 
@@ -25,57 +23,37 @@ You also can use Invoicing to complete the following tasks:
 
 - Allocate and fulfill items.
 
-This manual is designed to give you an understanding of how to use the
-features of Invoicing, and how it integrates with the Microsoft Dynamics GP
-system.
+This manual is designed to give you an understanding of how to use the features of Invoicing, and how it integrates with the Microsoft Dynamics GP system.
 
-To make best use of Invoicing, you should be familiar with systemwide
-features described in the System User’s Guide, the System Setup Guide, and
-the System Administrator’s Guide.
+To make best use of Invoicing, you should be familiar with systemwide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
 
-Some features described in the documentation are optional and can be
-purchased through your Microsoft Dynamics GP partner.
+Some features described in the documentation are optional and can be purchased through your Microsoft Dynamics GP partner.
 
-To view information about the release of Microsoft Dynamics GP that you’re
-using and which modules or features you are registered to use, choose Help
-\>\> About Microsoft Dynamics GP.
+To view information about the release of Microsoft Dynamics GP that you’re using and which modules or features you are registered to use, choose Help \>\> About Microsoft Dynamics GP.
 
 The manual is divided into the following parts:
 
-- *Part 1, Setup*, introduces Invoicing and gives detailed instructions on how
-    to set it up.
+- *Part 1, Setup*, introduces Invoicing and gives detailed instructions on how to set it up.
 
-- *Part 2, Transaction entry*, explains how to enter and edit invoices and
-    returns and how to print an invoice or return. It also explains how to post
-    Invoicing transactions.
+- *Part 2, Transaction entry*, explains how to enter and edit invoices and returns and how to print an invoice or return. It also explains how to post Invoicing transactions.
 
-- *Part 3, Transaction activity*, includes information that will help manage
-    your invoicing documents once they are entered.
+- *Part 3, Transaction activity*, includes information that will help manage your invoicing documents once they are entered.
 
-- *Part 4, Inquiries, reports, and utilities*, describes how to use inquiries
-    and reports to analyze your invoicing activity and explains procedures you
-    can use to clear historical data.
+- *Part 4, Inquiries, reports, and utilities*, describes how to use inquiries and reports to analyze your invoicing activity and explains procedures you can use to clear historical data.
 
 ## Part 1: Setup
 
-This part of the documentation includes information that will help you set up
-Invoicing. The setup procedures generally need to be completed once, but you can
-refer to this information at other times for instructions on modifying or
-viewing existing entries.
+This part of the documentation includes information that will help you set up Invoicing. The setup procedures generally need to be completed once, but you can refer to this information at other times for instructions on modifying or viewing existing entries.
 
 The following information is discussed:
 
-- *Chapter 1, “Setup overview,”* lists the setup tasks you need to complete in
-    other modules and explains the setup process.
+- *Chapter 1, “Setup overview,”* lists the setup tasks you need to complete in other modules and explains the setup process.
 
-- *Chapter 2, “Module setup,”* provides instructions for setting up the
-    Invoicing module.
+- *Chapter 2, “Module setup,”* provides instructions for setting up the Invoicing module.
 
 ### Chapter 1: Setup overview
 
-Use this information to learn about and set up Invoicing. The setup
-procedures are organized in an order that will ensure Invoicing is set up
-properly.
+Use this information to learn about and set up Invoicing. The setup rocedures are organized in an order that will ensure Invoicing is set up properly.
 
 Setup information is divided into the following sections:
 
@@ -85,34 +63,17 @@ Setup information is divided into the following sections:
 
 #### Before you set up Invoicing
 
-Before you begin setting up Invoicing, be sure you’ve completed the System
-
-Manager and General Ledger setup procedures. If you’re using Receivables
-Management and Inventory, you also should set up these modules before you
-set up Invoicing. For more information about setting up your system, refer
-to the System Setup documentation (Help \>\> Contents \>\> select Setting up
-the System). For more information about setting up General Ledger,
-Receivables Management, and Inventory, refer to the documentation for those
+Before you begin setting up Invoicing, be sure you’ve completed the System Manager and General Ledger setup procedures. If you’re using Receivables Management and Inventory, you also should set up these modules before you set up Invoicing. For more information about setting up your system, refer to the System Setup documentation (Help \>\> Contents \>\> select Setting up the System). For more information about setting up General Ledger, Receivables Management, and Inventory, refer to the documentation for those
 modules.
 
 #### Invoicing setup
 
-When you set up Invoicing, you can open each setup window and enter
-information, or you can use the Setup Checklist window (Microsoft Dynamics
-GP \>\> Tools \>\> Setup \>\> Setup Checklist) to guide you through the
-setup process. See your System Setup Guide (Help \>\> Contents \>\> select
-Setting up the System) for more information about the Setup Checklist
-window.
+When you set up Invoicing, you can open each setup window and enter information, or you can use the Setup Checklist window (Microsoft Dynamics GP \>\> Tools \>\> Setup \>\> Setup Checklist) to guide you through the setup process. See your System Setup Guide (Help \>\> Contents \>\> select Setting up the System) for more information about the Setup Checklist window.
 
 ### Chapter 2: Module setup
 
-During the Invoicing setup process, you’ll set up your Invoicing preferences
-such as default entries, tax calculation options, starting document numbers,
-and whether to maintain document history.
-
-You can open the Invoicing setup windows using menu options, or you can
-follow the setup routine, which will guide you through the setup process.
-For more information about the setup routine, see *Invoicing setup* .
+During the Invoicing setup process, you’ll set up your Invoicing preferences such as default entries, tax calculation options, starting document numbers, and whether to maintain document history. You can open the Invoicing setup windows using menu options, or you can
+follow the setup routine, which will guide you through the setup process. For more information about the setup routine, see *Invoicing setup* .
 
 Setup information is divided into the following sections:
 
@@ -124,16 +85,13 @@ Setup information is divided into the following sections:
 
 #### Setting Invoicing general options and defaults
 
-Use the Invoicing Setup window to set general default entries that will
-appear throughout the Invoicing module. You can also indicate what kind of
-history records you want to maintain, which posting accounts to use, and
-what document numbering options you want to use.
+Use the Invoicing Setup window to set general default entries that will appear throughout the Invoicing module. You can also indicate what kind of history records you want to maintain, which posting accounts to use, and what document numbering options you want to use.
 
 **To set Invoicing general options and defaults:**
 
 1. Open the Invoicing Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Sales \>\> Invoicing) Mark Preferences settings:
 
-    ![Image(INVSET)](media/32767b32f88a51062a725da2326fbe71.jpg)
+    ![Image](media/INVSET.jpg)
 
 
     **Display Item Unit Cost** Mark to view the cost of each item as you’re entering it on an invoice. The unit cost displayed will depend on the inventory valuation method assigned to each item, which can have its own valuation method.
@@ -148,27 +106,22 @@ what document numbering options you want to use.
     | FIFO Periodic        | Standard Cost      |
     | LIFO Periodic        | Standard Cost      |
 
-    **Track Voided Transactions in History** Mark to keep track of voided transactions. If you don’t track voided documents, they will be removed during posting, and the document number will become available for recording documents again.
+**Track Voided Transactions in History** Mark to keep track of voided transactions. If you don’t track voided documents, they will be removed during posting, and the document number will become available for recording documents again.
 
 2. Choose Item or Customer to use the set of posting accounts as default accounts.
 
-    Many of the posting accounts you assign to customer records in Receivables Management and to items in Inventory Control are used to track similar revenue or expense accounts. For example, you can assign different posting accounts to track Cost of Goods Sold amounts for individual items and for customers. Choose the posting accounts assigned to items, or those assigned to customers, to be suggested as default entries if the items and customers aren’t assigned matching posting accounts.
+Many of the posting accounts you assign to customer records in Receivables Management and to items in Inventory Control are used to track similar revenue or expense accounts. For example, you can assign different posting accounts to track Cost of Goods Sold amounts for individual items and for customers. Choose the posting accounts assigned to items, or those assigned to customers, to be suggested as default entries if the items and customers aren’t assigned matching posting accounts.
 
 3. Choose the types of history to keep for your company.
 
-    - **Transaction Detail** Mark to keep detailed history for the transactions you enter. If you keep transaction detail history, you’ll be able to view posted transactions in the inquiry windows and print reports for posted transactions.
+- **Transaction Detail** Mark to keep detailed history for the transactions you enter. If you keep transaction detail history, you’ll be able to view posted transactions in the inquiry windows and print reports for posted transactions.
 
     - **Account Distributions** Mark to keep history that includes the debit and credit amounts for each document, along with the posting accounts they were distributed to; you may find this information useful for auditing purposes.
 
         > [!NOTE]
         > Keeping transaction and distribution history will use a considerable amount of disk space. Please plan accordingly if you keep history. Historical information can be removed when it’s no longer useful. For more information, see Removing invoicing history.
 
-4. Enter labels for user-defined fields, which can be used to track special
-    information in Invoicing. For example, to track shipping numbers for special
-    courier labels, enter Shipping Number as the name of one of the user-defined
-    fields. In the Invoice Customer Detail Entry window, Shipping Number will
-    appear as a field name and you can enter the shipping number for each
-    invoice.
+4. Enter labels for user-defined fields, which can be used to track special information in Invoicing. For example, to track shipping numbers for special courier labels, enter Shipping Number as the name of one of the user-defined fields. In the Invoice Customer Detail Entry window, Shipping Number will appear as a field name and you can enter the shipping number for each invoice.
 
 5. Enter default site, checkbook, and comment ID values.
 
@@ -212,67 +165,40 @@ what document numbering options you want to use.
 
 #### Advanced tax options for Invoicing
 
-If Advanced is marked in the Invoicing Setup Options window, the tax details
-in the tax schedules are compared when tax is calculated on an invoice. Tax
-is calculated only for the details that match the customer, item, site,
-freight, and miscellaneous charges, depending on the shipping method
-selected on the invoice.
+If Advanced is marked in the Invoicing Setup Options window, the tax details in the tax schedules are compared when tax is calculated on an invoice. Tax is calculated only for the details that match the customer, item, site, freight, and miscellaneous charges, depending on the shipping method selected on the invoice.
 
-The shipping method determines where the exchange of goods takes place and
-which tax schedule appears as a default for the transaction.
+The shipping method determines where the exchange of goods takes place and which tax schedule appears as a default for the transaction.
 
-**Delivery** The tax schedule designated for the shipping address of the
-customer will appear as the default.
+**Delivery** The tax schedule designated for the shipping address of the customer will appear as the default.
 
-**Pickup** The tax schedule designated for the site you’re selling from will
-appear as the default schedule.
+**Pickup** The tax schedule designated for the site you’re selling from will appear as the default schedule.
 
-The following diagrams show how tax details are compared to determine the
-amount of tax that will be calculated.
+The following diagrams show how tax details are compared to determine the amount of tax that will be calculated.
 
 **For a delivery shipping method**
 
-![Image INVDSM.jpg](media/451fe8a08df1b60778b8fa95cc7df3f3.jpg)
+!(media/INVDSM.jpg)
 
-The tax calculated on the line item would be the amount or percentage
-assigned to tax detail TAX001, the tax calculated on the freight charge will
-be the amount or percentage assigned to tax detail TAX003, and the tax on
-the miscellaneous charge will be the amount or percentage assigned to tax
-details TAX001 and TAX004. These details are used because they appear in
-both the customer schedule and in the item, freight, or miscellaneous
-schedule.
+The tax calculated on the line item would be the amount or percentage assigned to tax detail TAX001, the tax calculated on the freight charge will be the amount or percentage assigned to tax detail TAX003, and the tax on the miscellaneous charge will be the amount or percentage assigned to tax details TAX001 and TAX004. These details are used because they appear in both the customer schedule and in the item, freight, or miscellaneous schedule.
 
 **For a pickup shipping method**
 
-![Image INVSM.jpg](media/16436353e4fc80931c711c555f609205.jpg)
+![Image](media/INVSM.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-The tax calculated on the line item would be the amount or percentage
-assigned to tax detail TAX002, the tax calculated on the freight charge will
-be the amount or percentage assigned to tax detail TAX002, and the tax on
-the miscellaneous charge will be the amount or percentage assigned to tax
-detail TAX004. These details are used because they appear in both the site
-schedule and in the item, freight, or miscellaneous schedule.
+The tax calculated on the line item would be the amount or percentage assigned to tax detail TAX002, the tax calculated on the freight charge will be the amount or percentage assigned to tax detail TAX002, and the tax on the miscellaneous charge will be the amount or percentage assigned to tax detail TAX004. These details are used because they appear in both the site schedule and in the item, freight, or miscellaneous schedule.
 
 > [!NOTE]
-> Each time the shipping method, site ID, or shipping address for the
-customer is changed, the tax schedule may be changed and taxes may be
-recalculated.
+> Each time the shipping method, site ID, or shipping address for the customer is changed, the tax schedule may be changed and taxes may be recalculated.
 
 #### Setting up taxes and options
 
-Use the Invoicing Setup Options window to specify a method for calculating
-taxes and to set up other options. You can further restrict each option by
-assigning a password to it. If the option is marked but no password is
-entered, anyone who has access to the related windows can use the option.
+Use the Invoicing Setup Options window to specify a method for calculating taxes and to set up other options. You can further restrict each option by assigning a password to it. If the option is marked but no password is entered, anyone who has access to the related windows can use the option.
 
 **To set up taxes and options:**
 
-1. Open the Invoicing Setup Options window. (Microsoft Dynamics GP menu \>\>
-    Tools \>\> Setup \>\> Sales \>\> Invoicing \>\> Options button)
+1. Open the Invoicing Setup Options window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Sales \>\> Invoicing \>\> Options button)
 
-![Image INVISO.jpg](media/4e459f1310fc6a7a2d447aab5841022f.jpg)
+![Image](media/INVISO.jpg)
 
 2. Choose advanced tax calculations or a single schedule for use for all sales.
 
