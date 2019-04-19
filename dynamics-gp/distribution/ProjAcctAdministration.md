@@ -1,411 +1,224 @@
-Introduction
-============
+---
+title: "Project Accounting Administrator’s Guide"
+description: "Learn how to manage project accounting in Microsoft Dynamics GP."
+keywords: "accounting"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 04/09/2019
+---
 
->   The Project Accounting Administrator’s Guide contains information for system
->   administrators on how to set up user security and maintain company databases
->   for Microsoft Dynamics® GP Project Accounting.
+# Project Accounting Administrator's Guide
 
->   Refer to other Project Accounting manuals for additional information.
+The Project Accounting Administrator’s Guide contains information for system administrators on how to set up user security and maintain company databases for Microsoft Dynamics GP Project Accounting.
 
->   **Project Accounting Accounting Control Guide** Describes how to set up
+Refer to other Project Accounting manuals for additional information.
 
->   posting accounts; create transaction batches and modify account
->   distributions; use revenue recognition cycles to recognize revenue for
->   multiple customers, contracts, and projects at once; print reports; and
->   enter adjusting transactions and delete posted cost and billing
->   transactions.
+- **Project Accounting Accounting Control Guide**
 
->   **Project Accounting Cost Management Guide** Describes how to use Project
+    Describes how to set up posting accounts; create transaction batches and modify account distributions; use revenue recognition cycles to recognize revenue for multiple customers, contracts, and projects at once; print reports; and enter adjusting transactions and delete posted cost and billing transactions.
 
->   Accounting to estimate and track project costs, and specify how billing
->   amounts, revenue, and profit should be calculated, based on project costs.
+- **Project Accounting Cost Management Guide**
 
->   **Project Accounting Billing Guide** Describes how to use Project Accounting
->   to create billing invoices for customers.
+    Describes how to use Project Accounting to estimate and track project costs, and specify how billing amounts, revenue, and profit should be calculated, based on project costs.
 
->   This introduction is divided into the following topics:
+- **Project Accounting Billing Guide**
 
--   *What’s in this manual*
+    Describes how to use Project Accounting to create billing invoices for customers.
 
--   *Symbols and conventions*
+This manual is designed to give you an understanding of the system administration features of Project Accounting and how it integrates with the Microsoft Dynamics GP system. It is divided into the following parts:
 
--   *Resources available from the Help menu*
+- *Chapter 1, “User security,”* includes information about granting users access to windows and reports if you’re using Project Accounting with Purchase Order Processing or Purchase Order Enhancements.
 
--   *Send us your documentation comments*
+- *Chapter 2, “Database table maintenance,”* includes information about how to complete reconcile and check links processes, and how to clear data from database tables.
 
->   **What’s in this manual**
+To make best use of Project Accounting, you should be familiar with system-wide features described in the Microsoft Dynamics GP System User’s Guide, the System Setup Guide, and the System Administrator’s Guide. Choose **Help \> Printable Manuals** for more information.
 
->   This manual is designed to give you an understanding of the system
->   administration features of Project Accounting and how it integrates with the
->   Microsoft Dynamics GP system. It is divided into the following parts:
+You might also need to be familiar with features described in General Ledger, Bank Reconciliation, Multicurrency Management, Purchase Order Processing, Purchase Order Enhancements, Payables Management, Receivables Management, Inventory Control, United States Payroll, Canadian Payroll, or Report Writer. Choose **Help \> Printable Manuals** for more information.
 
--   *Chapter 1, “User security,”* includes information about granting users
-    access to windows and reports if you’re using Project Accounting with
-    Purchase Order Processing or Purchase Order Enhancements.
+Some features described in this documentation are optional and can be purchased through your Microsoft Dynamics GP partner.
 
--   *Chapter 2, “Database table maintenance,”* includes information about how to
-    complete reconcile and check links processes, and how to clear data from
-    database tables.
+To view information about the release of Microsoft Dynamics GP that you’re using and which modules or features you are registered to use, choose **Help \> About Microsoft Dynamics GP**.
 
--   To make best use of Project Accounting, you should be familiar with
-    systemwide features described in the Microsoft Dynamics GP System User’s
-    Guide, the System Setup Guide, and the System Administrator’s Guide. Choose
-    **Help \> Printable Manuals** for more information.
+## Chapter 1: User security
 
-    >   You might also need to be familiar with features described in General
-    >   Ledger, Bank
+This part of the documentation includes information for the system administrator about granting users access to windows and reports if you’re using Project Accounting with Purchase Order Processing or Purchase Order Enhancements.
 
-    >   Reconciliation, Multicurrency Management, Purchase Order Processing,
-    >   Purchase
+The following topics are discussed.
 
-    >   Order Enhancements, Payables Management, Receivables Management,
-    >   Inventory Control, United States Payroll, Canadian Payroll, or Report
-    >   Writer. Choose **Help \> Printable Manuals** for more information.
+- *Grant users access to purchasing windows*
 
-    >   Some features described in this documentation are optional and can be
-    >   purchased through your Microsoft Dynamics GP partner.
+- *Purchasing analysis reports and Project Accounting*
 
-    >   To view information about the release of Microsoft Dynamics GP that
-    >   you’re using and which modules or features you are registered to use,
-    >   choose **Help \> About Microsoft Dynamics GP**.
+- *Grant users access to purchasing analysis reports*
 
-Resources available from the Help menu
---------------------------------------
+### Grant users access to purchasing windows
 
->   The Microsoft Dynamics GP Help menu gives you access to user assistance
->   resources on your computer, as well as on the Web.
+If you’re using Project Accounting with Purchase Order Processing, you must use the Security Setup window (**Tools \> Setup \> System \> Security**) and the User Class Setup window (**Tools \> Setup \> System \> User Classes**) to grant users and user classes access to purchasing windows, including windows in Purchase Order Processing and Project Accounting.
 
->   **Contents**
+The following table lists the selections in the Security Setup window that you’ll use to grant access to purchasing windows.
 
->   Opens the Help file for the active Microsoft Dynamics GP component, and
->   displays the main “contents” topic. To browse a more detailed table of
->   contents, click the Contents tab above the Help navigation pane. Items in
->   the contents topic and tab are arranged by module. If the contents for the
->   active component includes an “Additional Help files” topic, click the links
->   to view separate Help files that describe additional components.
+| **Product**           | **Type**     | **Series** | **Users affected**        |
+|-----------------------|--------------|------------|---------------------------|
+| Microsoft Dynamics GP | Windows      | Purchasing | Users who previously used Project Accounting and who now will be using Purchase Order Processing to enter project-related purchasing documents and transactions New users who will be using Purchase Order Processing to enter project-related purchasing documents and transactions |
+| Project Accounting    | Windows      | Project    | Users who previously used Project Accounting or Purchase Order Processing to enter purchasing documents and transactions New users who will be using Purchase Order Processing to enter project-related purchasing documents and transactions |
+| Project Accounting    | Alternate Microsoft Dynamics GP Windows | Purchasing | Users who previously used Project    |
 
->   To find information in Help by using the index or full-text search, click
->   the appropriate tab above the navigation pane, and type the keyword to find.
+Accounting or Purchase Order Processing to enter purchasing documents and transactions
 
->   To save the link to a topic in the Help, select a topic and then select the
->   Favorites tab. Click Add.
+New users who will be using Purchase Order Processing to enter project-related purchasing documents and transactions
 
->   **Index**
+### Purchasing analysis reports and Project Accounting
 
->   Opens the Help file for the active Microsoft Dynamics GP component, with the
->   Index tab active. To find information about a window that’s not currently
->   displayed, type the name of the window, and click Display.
+If you’re using Project Accounting with Purchase Order Processing, the following Purchase Order Processing purchasing analysis reports will be updated after you install Project Accounting to include information about project numbers and cost category IDs.
 
->   **About this window**
+- Purchase Order Status
 
->   Displays overview information about the current window. To view related
->   topics and descriptions of the fields, buttons, and menus for the window,
->   choose the appropriate link in the topic. You also can press F1 to display
->   Help about the current window.
+- Expected Shipments
 
->   **Lookup**
+- Purchase Order Analysis
 
->   Opens a lookup window, if a window that you are viewing has a lookup window.
->   For example, if the Checkbook Maintenance window is open, you can choose
->   this item to open the Checkbooks lookup window.
+- Received/Not Invoiced
 
->   **Show Required Fields**
+- Shipment/Invoice Matching
 
->   Highlights fields that are required to have entries. Required fields must
->   contain information before you can save the record and close the window. To
->   change the way required fields are highlighted, choose **Microsoft Dynamics
->   GP menu \> User Preferences \> Display**, and specify a different color and
->   type style.
+- PO Line Items to Release
 
->   **What’s New**
+You can use Report Writer to modify the reports to include additional project-related information. See the Report Writer documentation (**Help \>Printable Manuals**).
 
->   Provides information about enhancements that were added to Microsoft
->   Dynamics GP since the last major release.
+### Grant users access to purchasing analysis reports
 
->   **Microsoft Dynamics GP Online**
+If you’re using Project Accounting with Purchase Order Processing, you must use the Security Setup window (**Tools \> Setup \> System \> Security**) and the User Class Setup window (**Tools \> Setup \> System \> User Classes**)
+to grant users and user classes access to purchasing analysis reports.
 
->   Opens a Web page that provides links to a variety of Web-based user
->   assistance resources. Access to some items requires registration for a paid
->   support plan.
+Use the following selections in the Security Setup window to grant users access to purchasing analysis reports.
 
-Chapter 1: User security
-========================
+- Product: Project Accounting
 
->   This part of the documentation includes information for the system
->   administrator about granting users access to windows and reports if you’re
->   using Project Accounting with Purchase Order Processing or Purchase Order
->   Enhancements.
+- Type: Alternate Microsoft Dynamics GP Reports
 
->   The following topics are discussed.
+- Series: Purchasing
 
--   *Grant users access to purchasing windows*
+- See the System Setup documentation (**Help \> Printable Manuals**) for more information about using the Security Setup window and the User Class Setup window.
 
--   *Purchasing analysis reports and Project Accounting*
+## Chapter 2: Database table maintenance
 
--   *Grant users access to purchasing analysis reports*
+This part of the documentation includes information for the system administrator about how to use the reconcile and check links process, and how to clear data from database tables.
 
-Grant users access to purchasing windows
-----------------------------------------
+> [!NOTE]
+> Data recovery procedures should be performed carefully by an authorized user. Always make a backup before completing table maintenance procedures. For more information about database troubleshooting and maintenance, refer to the System Administrator’s Guide (Help \> Printable Manuals).
 
->   If you’re using Project Accounting with Purchase Order Processing, you must
->   use the Security Setup window (**Tools \> Setup \> System \> Security**) and
->   the User Class Setup window (**Tools \> Setup \> System \> User Classes**)
->   to grant users and user classes access to purchasing windows, including
->   windows in Purchase Order Processing and Project Accounting.
+The following topics are discussed.
 
->   The following table lists the selections in the Security Setup window that
->   you’ll use to grant access to purchasing windows.
+- Reconcile quantities and totals between database tables
 
-| **Product**           | **Type**                                | **Series** | **Users affected**                                                                                                                                                                                                                                                                   |
-|-----------------------|-----------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Microsoft Dynamics GP | Windows                                 | Purchasing | Users who previously used Project Accounting and who now will be using Purchase Order Processing to enter project-related purchasing documents and transactions New users who will be using Purchase Order Processing to enter project-related purchasing documents and transactions |
-| Project Accounting    | Windows                                 | Project    | Users who previously used Project Accounting or Purchase Order Processing to enter purchasing documents and transactions New users who will be using Purchase Order Processing to enter project-related purchasing documents and transactions                                        |
-| Project Accounting    | Alternate Microsoft Dynamics GP Windows | Purchasing | Users who previously used Project                                                                                                                                                                                                                                                    |
+- Reconcile Project Accounting and Inventory Control records
 
->   Accounting or Purchase Order Processing to enter purchasing documents and
->   transactions
+- Run check links to recover damaged data
 
->   New users who will be using Purchase Order Processing to enter
->   project-related purchasing documents and transactions
+- Clear data from database tables
 
->   See the System Setup documentation (**Help \> Printable Manuals**) for more
->   information about using the Security Setup window and the User Class Setup
->   window.
+### Reconcile quantities and totals between database tables
 
-Purchasing analysis reports and Project Accounting
---------------------------------------------------
+The reconcile utility compares and recalculates data between tables to be sure the data is consistent and accurate. There are two reconcile windows.
 
->   If you’re using Project Accounting with Purchase Order Processing, the
->   following Purchase Order Processing purchasing analysis reports will be
->   updated after you install Project Accounting to include information about
->   project numbers and cost category IDs.
+- **Reconcile Utility window**
 
--   Purchase Order Status
+    Corrects discrepancies in summary total amounts. If inquiry windows show inconsistent results, running this process can correct the problem. The reconcile process compares corresponding detail transaction data and rebuilds the summary data based on this detail.  
 
--   Expected Shipments
+- **Reconcile Utility Periodic window**
 
--   Purchase Order Analysis
+    Corrects discrepancies in total amounts in the period records throughout Project Accounting. This reconcile recalculates amounts and updates periodic records. If periodic records do not exist for the budget, project, contract, and customer, they will be created, based on the company’s fiscal period setup.
 
--   Received/Not Invoiced
+1. Open the **Reconcile Utility** or the **Reconcile Utility Periodic** window.  
 
--   Shipment/Invoice Matching
+    Tools \> Utilities \> Project \> PA Reconcile
+    ![A screenshot ](media/a42ce4bed0f79cb0fa2d01fbdc778c98.jpg)
 
--   PO Line Items to Release
+    Tools \> Utilities \> Project \> PA Reconcile Periodic
+    ![A screenshot](media/14bb78293f2853e4d72ae9e1898d9304.jpg)
 
--   You can use Report Writer to modify the reports to include additional
-    projectrelated information. See the Report Writer documentation (**Help \>
-    Printable Manuals**).
+2. Select the option to reconcile all customer IDs or select the range of customer IDs to reconcile.
 
-Grant users access to purchasing analysis reports
--------------------------------------------------
+3. In the Reconcile Utility window, select the totals to reconcile.
 
->   If you’re using Project Accounting with Purchase Order Processing, you must
->   use the Security Setup window (**Tools \> Setup \> System \> Security**) and
->   the User Class Setup window (**Tools \> Setup \> System \> User Classes**)
->   to grant users and user classes access to purchasing analysis reports.
+    Recalculated fees and project budget values will update the corresponding fields in the Budget Master, Project Master, Contract Master, and Customer Master tables.
 
->   Use the following selections in the Security Setup window to grant users
->   access to purchasing analysis reports.
+4. In the Reconcile Utility window, select the option to include posted and not posted transactions.
 
--   Product: Project Accounting
+5. In either window, select the option to print the PA Reconcile Log Report. The report will list the tables, records, and fields reconciled, and the difference between the values before and after the reconcile procedure.
 
--   Type: Alternate Microsoft Dynamics GP Reports
+6. Click **Process** to reconcile totals.
 
--   Series: Purchasing
+7. Click **Done**.
 
--   See the System Setup documentation (**Help \> Printable Manuals**) for more
-    information about using the Security Setup window and the User Class Setup
-    window.
+### Reconcile Project Accounting and Inventory Control records
 
-Chapter 2: Database table maintenance
-=====================================
+You can reconcile inventory quantities so that Project Accounting records reflect the same quantities as Inventory Control. Reconciling should not be necessary unless your data has been damaged, or some other unusual problem has occurred.
 
->   This part of the documentation includes information for the system
->   administrator about how to use the reconcile and check links process, and
->   how to clear data from database tables.
+Before reconciling quantities, back up all accounting data for your company. You must reconcile modules in the following order:
 
->   *Data recovery procedures should be performed carefully by an authorized
->   user. Always make a backup before completing table maintenance procedures.
->   For more information about database troubleshooting and maintenance, refer
->   to the System Administrator’s Guide (Help \> Printable Manuals).*
+- Sales Order Processing
 
->   The following topics are discussed.
+- Purchase Order Processing
 
-*• Reconcile quantities and totals between database tables*
------------------------------------------------------------
+- Inventory
 
-*• Reconcile Project Accounting and Inventory Control records*
---------------------------------------------------------------
+- Project Accounting
 
-*• Run check links to recover damaged data*
--------------------------------------------
+> [!NOTE]
+> The Inventory Control module’s Reconcile Inventory Quantities utility does not take into account items that you have allocated in a saved Project Accounting inventory transfer batch. You must use the PA Reconcile Inventory Quantities window to correctly reconcile items allocated in Project Accounting.
 
-*• Clear data from database tables*
------------------------------------
+1. Open the PA Reconcile Inventory Quantities window.
 
->   **Reconcile quantities and totals between database tables**
+    Tools \> Utilities \> Project \> PA Reconcile IV
 
->   The reconcile utility compares and recalculates data between tables to be
->   sure the data is consistent and accurate. There are two reconcile windows.
+    ![A screenshot ](media/fffbd0e1136b85c71b7c4f982bc6d3ce.jpg)
 
->   **Reconcile Utility window** Corrects discrepancies in summary total
->   amounts. If inquiry windows show inconsistent results, running this process
->   can correct the problem. The reconcile process compares corresponding detail
->   transaction data and rebuilds the summary data based on this detail.
+2. Enter or select the range of item numbers to reconcile.
 
->   **Reconcile Utility Periodic window** Corrects discrepancies in total
->   amounts in the period records throughout Project Accounting. This reconcile
->   recalculates amounts and updates periodic records. If periodic records do
->   not exist for the budget, project, contract, and customer, they will be
->   created, based on the company’s fiscal period setup.
+3. If you’re reconciling inventory because you’ve modified the number of quantity decimals for an item, select **Include Item History** so that the history records for the item also will be updated.
 
-1.  Open the Reconcile Utility or the Reconcile Utility Periodic window. **Tools
-    \> Utilities \> Project \> PA Reconcile**
+4. Click **Process** to reconcile inventory quantities. Actual quantities and the quantities resulting from posted transactions will be compared, and adjusted, if necessary. The reconcile report is printed.
 
-![A screenshot of a cell phone Description automatically generated](media/a42ce4bed0f79cb0fa2d01fbdc778c98.jpg)
+### Run check links to recover damaged data
 
-(ProjAcctAdministration4.jpg)
+You can re-create missing information in a database table. Some of the information in table groups is stored in two or more tables. If information in one table is missing or damaged, the check links program examines other tables where the same information is stored and re-creates the damaged record in the first table.
 
-### Tools \> Utilities \> Project \> PA Reconcile Periodic
+1. Open the PA Check Links window.
 
-![A screenshot of a cell phone Description automatically generated](media/14bb78293f2853e4d72ae9e1898d9304.jpg)
+    File \> Maintenance \> PA Check Links
 
-(ProjAcctAdministration5.jpg)
+    ![A screenshot ](media/aaf798351a7478cfd2cc97a6aa3faed9.jpg)
 
-1.  Select the option to reconcile all customer IDs or select the range of
-    customer IDs to reconcile.
+2. Specify the database table groups to include in check links by choosing **All** or selecting each table group and choosing **Insert**. This displays the table in the **Selected Tables** list. To delete a table from the list, select it and click **Remove**. The total number of records that exist in the selected tables will be displayed at the bottom of the window. The number is updated as items are selected and deleted from the **Selected Tables** list.
 
-2.  In the Reconcile Utility window, select the totals to reconcile.
+3. Click **OK** to check links for the selected table groups and print the File Maintenance Error Log Report.
 
--   Recalculated fees and project budget values will update the corresponding
-    fields in the Budget Master, Project Master, Contract Master, and Customer
-    Master tables.
+### Clear data from database tables
 
-1.  In the Reconcile Utility window, select the option to include posted and
-    unposted transactions.
+If data is damaged and can’t be repaired, you can delete all information in a database table. If you clear data from a table, you must reenter all original information to restore it to the condition it was in before it was damaged.
 
-2.  In either window, select the option to print the PA Reconcile Log Report.
-    The report will list the tables, records, and fields reconciled, and the
-    difference between the values before and after the reconcile procedure.
+> [!NOTE]
+> Clear data as a last resort. If your tables are damaged, always complete the check links process, reconcile, then restore a backup first. If you have a backup, no matter how old, restore it rather than clear data. For more information about database maintenance and troubleshooting, refer to the System Administrator’s Guide (Help \> Printable Manuals).
 
-3.  Click **Process** to reconcile totals.
+After you’ve cleared data from a table, you might not be able to reenter information into it. Some records might have been created using processes such as posting or aging, and the information can’t be reentered manually using a window. If you were unable to reenter some of your accounting information, reports using non-editable tables, such as history tables, might be inaccurate until the end of the year, or until you clear history.
 
-4.  Click **Done**.
+When you installed Microsoft Dynamics GP, you might have selected to install some default information, such as payment terms or shipping methods. When you clear data from a table that included default information, that information won’t be restored. To restore the default information in the cleared table, you must reinstall it from a backup or your Microsoft Dynamics GP installation medium.
 
->   **Reconcile Project Accounting and Inventory Control records**
+1. Make a backup of your data.
 
->   You can reconcile inventory quantities so that Project Accounting records
->   reflect the same quantities as Inventory Control. Reconciling should not be
->   necessary unless your data has been damaged, or some other unusual problem
->   has occurred.
+2. Open the PA Clear Data window.
 
->   Before reconciling quantities, back up all accounting data for your company.
->   You must reconcile modules in the following order:
+    File \> Maintenance \> PA Clear Data
 
--   Sales Order Processing
+3. Specify the database tables to clear by choosing **All** or selecting each table and choosing **Insert**. This displays the table in the selected tables list. To delete a table from the list, select it and click **Remove**. The total number of records that exist within the selected tables will be displayed at the bottom of the window. The number is updated by the system as you select items and delete items from the selected tables list.
 
--   Purchase Order Processing
+4. Clear data from the selected tables and print the Clear Data Report. You can’t quit the process after it has begun, so always verify the list of tables in the **Selected Tables** list before choosing **OK** to be sure that you want to clear data from all tables listed.
 
--   Inventory
+5. Complete the check links process, reconcile, or do both.
 
--   Project Accounting
-
->   *The Inventory Control module’s Reconcile Inventory Quantities utility does
->   not take into account items that you have allocated in a saved Project
->   Accounting inventory transfer batch. You must use the PA Reconcile Inventory
->   Quantities window to correctly reconcile items allocated in Project
->   Accounting.*
-
-1.  Open the PA Reconcile Inventory Quantities window. **Tools \> Utilities \>
-    Project \> PA Reconcile IV**
-
-![A screenshot of a cell phone Description automatically generated](media/fffbd0e1136b85c71b7c4f982bc6d3ce.jpg)
-
-(ProjAcctAdministration7.jpg)
-
-1.  Enter or select the range of item numbers to reconcile.
-
-2.  If you’re reconciling inventory because you’ve modified the number of
-    quantity decimals for an item, select **Include Item History** so that the
-    history records for the item also will be updated.
-
-3.  Click **Process** to reconcile inventory quantities. Actual quantities and
-    the quantities resulting from posted transactions will be compared, and
-    adjusted, if necessary. The reconcile report is printed.
-
-**Run check links to recover damaged data**
-
->   You can re-create missing information in a database table. Some of the
->   information in table groups is stored in two or more tables. If information
->   in one table is missing or damaged, the check links program examines other
->   tables where the same information is stored and re-creates the damaged
->   record in the first table.
-
--   Open the PA Check Links window. **File \> Maintenance \> PA Check Links**
-
-![A screenshot of a cell phone Description automatically generated](media/aaf798351a7478cfd2cc97a6aa3faed9.jpg)
-
-(ProjAcctAdministration8.jpg)
-
-1.  Specify the database table groups to include in check links by choosing
-    **All** or selecting each table group and choosing **Insert**. This displays
-    the table in the **Selected Tables** list. To delete a table from the list,
-    select it and click **Remove**. The total number of records that exist in
-    the selected tables will be displayed at the bottom of the window. The
-    number is updated as items are selected and deleted from the **Selected
-    Tables** list.
-
-2.  Click **OK** to check links for the selected table groups and print the File
-    Maintenance Error Log Report.
-
->   **Clear data from database tables**
-
->   If data is damaged and can’t be repaired, you can delete all information in
->   a database table. If you clear data from a table, you must reenter all
->   original information to restore it to the condition it was in before it was
->   damaged.
-
->   *Clear data as a last resort. If your tables are damaged, always complete
->   the check links process, reconcile, then restore a backup first. If you have
->   a backup, no matter how old, restore it rather than clear data. For more
->   information about database maintenance and troubleshooting, refer to the
->   System Administrator’s Guide (Help \> Printable Manuals).*
-
->   After you’ve cleared data from a table, you might not be able to reenter
->   information into it. Some records might have been created using processes
->   such as posting or aging, and the information can’t be reentered manually
->   using a window. If you were unable to reenter some of your accounting
->   information, reports using noneditable tables, such as history tables, might
->   be inaccurate until the end of the year, or until you clear history.
-
->   When you installed Microsoft Dynamics GP, you might have selected to install
->   some default information, such as payment terms or shipping methods. When
->   you clear data from a table that included default information, that
->   information won’t be restored. To restore the default information in the
->   cleared table, you must reinstall it from a backup or your Microsoft
->   Dynamics GP installation medium.
-
-1.  Make a backup of your data.
-
-2.  Open the PA Clear Data window. **File \> Maintenance \> PA Clear Data**
-
-3.  Specify the database tables to clear by choosing **All** or selecting each
-    table and choosing **Insert**. This displays the table in the selected
-    tables list. To delete a table from the list, select it and click
-    **Remove**. The total number of records that exist within the selected
-    tables will be displayed at the bottom of the window. The number is updated
-    by the system as you select items and delete items from the selected tables
-    list.
-
-4.  Clear data from the selected tables and print the Clear Data Report. You
-    can’t quit the process after it has begun, so always verify the list of
-    tables in the **Selected Tables** list before choosing **OK** to be sure
-    that you want to clear data from all tables listed.
-
-5.  Complete the check links process, reconcile, or do both.
-
-6.  Reenter data, if possible. If you can’t reenter the data that you’ve
-    cleared, data in other tables can become inaccurate or unusable. For
-    instance, if you were to clear data from the Account Master table in General
-    Ledger, all financial information would become unusable until the accounting
-    information is reentered.
+6. Reenter data, if possible. If you can’t reenter the data that you’ve cleared, data in other tables can become inaccurate or unusable. For instance, if you were to clear data from the Account Master table in General Ledger, all financial information would become unusable until the accounting information is reentered.
