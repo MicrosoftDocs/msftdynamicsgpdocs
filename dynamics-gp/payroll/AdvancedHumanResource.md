@@ -1,16 +1,19 @@
-| Microsoft Dynamics® GP **Advanced Human Resources** |   |
-|-----------------------------------------------------|---|
-|                                                     |   |
-|                                                     |   |
-|                                                     |   |
-|                                                     |   |
-|                                                     |   |
+---
+title: "Advanced Human Resources"
+description: "Examine how advanced human resources works in Dynamics GP."
+keywords: "HR"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 04/23/2019
+---
 
-CHAPTER 1: FEATURES AND REQUIREMENTS
-====================================
+# Advanced Human Resources in Microsoft Dynamics GP
 
-Objectives
-----------
+## CHAPTER 1: FEATURES AND REQUIREMENTS
 
 >   The objectives are:
 
@@ -23,8 +26,7 @@ Objectives
 -   Understand the features available through the Employee Health and Wellness
     component of Advanced Human Resources.
 
-Introduction
-------------
+### Introduction
 
 >   Microsoft Dynamics® GP Advanced Human Resources includes three components:
 >   Benefit Lifecycle Manager; Certification, License and Training Manager; and
@@ -62,8 +64,7 @@ Introduction
 >   requirements per employee are more easily assigned and tracked by the
 >   utilization of health and wellness templates.
 
-Benefit Lifecycle Manager
--------------------------
+### Benefit Lifecycle Manager
 
 >   Benefit Lifecycle Manager is used to create Human Resources Benefit, Payroll
 >   Benefit and Payroll Deduction setup records that are not immediately
@@ -80,7 +81,7 @@ Benefit Lifecycle Manager
 >   Deduction records, the user can easily create or modify the Future Effective
 >   record as well.
 
-### Features
+#### Features
 
 >   The features and capabilities of Benefit Lifecycle Manager include:
 
@@ -103,7 +104,7 @@ Benefit Lifecycle Manager
 >   *NOTE: This product is required for use with Benefit Self Service to
 >   activate any Pending Changes options in.*
 
-### Release Requirements
+#### Release Requirements
 
 >   Certain features and the use of this product must meet the following setup
 >   requirements to ensure proper functionality. Failure to use the Benefit
@@ -126,7 +127,7 @@ Benefit Lifecycle Manager
 -   Grant Security Access using the Security Setup window to grant individual
     security settings for each company.
 
-### Multi-User Access
+#### Multi-User Access
 
 >   Additional checks have been added to restrict access to Benefit Codes and
 >   Future Effective Benefit Codes when Benefit Lifecycle Manager is being used
@@ -154,8 +155,7 @@ Benefit Lifecycle Manager
 >   gets to that level, when the Human Resources to Payroll Integration hits
 >   that level, the integration is stopped.
 
-Certification, License and Training Manager
--------------------------------------------
+### Certification, License and Training Manager
 
 >   The Certification, License and Training Manager tracks all Certifications,
 >   Licensing and Training requirements. This product completes certain areas
@@ -174,7 +174,7 @@ Certification, License and Training Manager
 >   specific list of employees with a particular certification, license or
 >   training.
 
-### Features
+#### Features
 
 >   The features and capabilities of Certification, License and Training Manager
 >   include:
@@ -202,7 +202,7 @@ Certification, License and Training Manager
 
 -   SmartList Builder reporting options
 
-### Release Requirements
+#### Release Requirements
 
 >   Certain features and the use of this product must meet the following setup
 >   requirements to ensure proper functionality. Failure to use the
@@ -213,7 +213,7 @@ Certification, License and Training Manager
 >   To Grant Security Access use the Security Setup window to grant individual
 >   security settings for each company.
 
-### Certification Feature
+#### Certification Feature
 
 >   The Certification feature of the Certification, License and Training Manager
 >   allows the user to enter Certification information specific to the company
@@ -232,7 +232,7 @@ Certification, License and Training Manager
 >   is the first year of a Certification, then the Original Issue Date = Date
 >   Renewed/Completed.
 
-### License Feature
+#### License Feature
 
 >   The License feature of the Certification, License and Training Manager
 >   allows the user to enter License information specific to the company needs
@@ -249,7 +249,7 @@ Certification, License and Training Manager
 >   Save. When it is the first year of a License, then the Original Issue Date =
 >   Date Renewed/Completed.
 
-### Training Feature
+#### Training Feature
 
 >   The Training feature of the Certification, License and Training Manager
 >   allows the user to enter Training information such as Courses and Classes
@@ -267,8 +267,7 @@ Certification, License and Training Manager
 >   Save. When it is the first year of a Training, then the Original Issue Date
 >   = Date Renewed/Completed.
 
-Employee Health and Wellness
-----------------------------
+## Employee Health and Wellness
 
 >   Within Microsoft Dynamics GP Human Resources, you can track injury and
 >   illness information for each employee and generate the necessary OSHA
@@ -318,8 +317,7 @@ Employee Health and Wellness
 >   Sources is tracked using this product. Compliance with HIPPA regulations as
 >   it pertains to this data is the responsibility of the user.
 
-Summary
--------
+### Summary
 
 >   The Advanced Human Resources module for Microsoft Dynamics GP is comprised
 >   of three components:
@@ -342,8 +340,7 @@ Summary
 -   Employee Health and Wellness allows the organization to track various
     health-related categories, codes and tests, as well as the results of each.
 
-CHAPTER 2: ADVANCED HUMAN RESOURCES SETUP
-=========================================
+## CHAPTER 2: ADVANCED HUMAN RESOURCES SETUP
 
 Objectives
 ----------
@@ -365,8 +362,7 @@ Objectives
 -   Learn to set up various Health and Wellness windows to allow the
     organization to track health related information for employees.
 
-Introduction
-------------
+### Introduction
 
 >   Microsoft Dynamics GP Advanced Human Resources components
 
@@ -378,10 +374,9 @@ Introduction
 >   categories, codes, types and templates are developed; keep in mind what
 >   information is required for outputs in the form of inquiries and reports.
 
-Security Setup for Advanced Human Resources
--------------------------------------------
+### Security Setup for Advanced Human Resources
 
-### Setting up a Security Task
+#### Setting up a Security Task
 
 >   Use the Security Task Setup window to select a default security task or
 >   modify the default security task. To open this window, click the
@@ -438,7 +433,7 @@ Security Setup for Advanced Human Resources
 -   Select the following from the **Access List** o **CLM Certification
     History**
 
-#### o CLM Certification License and Training Inquiry
+#### CLM Certification License and Training Inquiry
 
 >   **Report** o **CLM Certification Setup** o **CLM Certifications** o **CLM
 >   Course Setup** o **CLM Instructor Setup** o **CLM Issued By Setup** o **CLM
@@ -471,7 +466,7 @@ Security Setup for Advanced Human Resources
 
 >   Click **Save** to save the selections and close the window.
 
-### Setting up Alternate/Modified Forms and Reports Security
+#### Setting up Alternate/Modified Forms and Reports Security
 
 >   Use the Alternate/Modified Forms and Reports window to set access to the
 >   alternate/modified forms for Advanced Human Resources. To open this window,
@@ -495,15 +490,14 @@ Security Setup for Advanced Human Resources
 
 >   Click **Save** to save the selections and close the window.
 
-### Setting up Security Roles
+#### Setting up Security Roles
 
 >   Use the Security Role Setup window to select a default security role for
 >   Advanced Human Resources or modify the default security role. To open this
 >   window, click the **Administration** series button, click **System** on the
 >   Setup content pane, and then click **Security Roles**.
 
-Benefit Lifecycle Manager - Setup
----------------------------------
+### Benefit Lifecycle Manager - Setup
 
 >   Benefit Lifecycle Manager allows Future Effective Records to be created for
 >   any of the benefit plans. The Future Effective options are accessed the same
@@ -820,8 +814,7 @@ IMAGE – ADVHRBO.jpg
 >   By default, the number of dependents is set to zero which means unlimited if
 >   the Benefit Self Service module is not being used.
 
-Certification, License and Training Manager Setup
--------------------------------------------------
+### Certification, License and Training Manager Setup
 
 >   There are several set up windows associated with Certification, License and
 >   Training Manager:
@@ -1245,13 +1238,9 @@ Summary
 -   Templates can be developed to assign predetermined health and wellness codes
     that will eventually be assigned on the employee level.
 
-CHAPTER 3: EMPLOYEE MAINTENANCE
-===============================
+## CHAPTER 3: EMPLOYEE MAINTENANCE
 
-Objectives
-----------
-
->   The objectives are:
+The objectives are:
 
 -   Learn to effectively use Benefit Lifecycle Manager by understanding (1) the
     changes on the employee dependents window, (2) the changes on the employee
@@ -1264,8 +1253,7 @@ Objectives
     employees and to track source information in the event of a work-related
     injury or illness.
 
-Introduction
-------------
+### Introduction
 
 >   After completing the required setup in Chapter 2, the next step is to assign
 >   data to employee records. Advanced Human Resources allows the organization
@@ -1275,15 +1263,14 @@ Introduction
 >   completed, and finally allows for the collection of additional data for a
 >   work-related injury or illness.
 
-Benefit Lifecycle Manager
--------------------------
+### Benefit Lifecycle Manager
 
 >   The first component of Advanced Human Resources is the Benefit Lifecycle
 >   Manager. This component has added additional fields to the employee
 >   dependent and beneficiary windows. In addition, benefits can now be assigned
 >   to dependents for better tracking of insurance coverages and costs.
 
-### Employee Dependents Window
+#### Employee Dependents Window
 
 >   Within the Employee Dependents window, data fields have been added to set up
 >   dependents associated with the employee. To open this window, click the **HR
@@ -1307,7 +1294,7 @@ Benefit Lifecycle Manager
 
 -   **Disabled Date**
 
-### Employee Beneficiaries Window
+#### Employee Beneficiaries Window
 
 >   Within the Employee Beneficiaries window, additional data fields are
 >   available to define beneficiaries associated with the employee and specific
@@ -1337,7 +1324,7 @@ Benefit Lifecycle Manager
 
 -   **Disabled Date**
 
-### Assign Template Window
+#### Assign Template Window
 
 >   Selecting a Template will create employee and code records for all codes
 >   associated with that Template. You can then assign any Dates and Results to
@@ -1361,7 +1348,7 @@ Benefit Lifecycle Manager
 3.  The Scrolling window allows you to associate Health and Wellness codes with
     a Template Code.
 
-### Employee Benefit Dependents Window
+#### Employee Benefit Dependents Window
 
 >   The Employee Benefit Dependents window allows Human Resources to define the
 >   employee dependents associated with a specific employee benefit plan. To
@@ -1370,7 +1357,7 @@ Benefit Lifecycle Manager
 >   select a **Benefit Enrollment** option, enter an **Employee ID**, select a
 >   **Benefit code**, click the **Benefits icon** and then click **Dependents**.
 
-### Future Effective Activation Window
+#### Future Effective Activation Window
 
 >   The Future Effective Activation window is used to activate the future
 >   effective date records. The following steps should be followed. To open this
@@ -1422,8 +1409,7 @@ IMAGE – ADVHRFES.jpg
 >   the window. The print will display the records in the order that they appear
 >   on the window.
 
-Certification, License and Training Manager
--------------------------------------------
+### Certification, License and Training Manager
 
 >   The next component of Advanced Human Resources is Certification, License and
 >   Training Manager. Using this component, the user can assign certifications
@@ -1437,7 +1423,7 @@ Certification, License and Training Manager
 >   Human Resources allows the user to update multiple employee training records
 >   with completion and expiration dates by using a course/class combination.
 
-### Certification Entry Window
+#### Certification Entry Window
 
 >   Use the Certification Entry window to add or update the Certification data
 >   for a specific employee. Multiple certifications may be assigned to an
@@ -1486,7 +1472,7 @@ IMAGE – ADVHRCE.jpg
 >   Information on this window can be made available to employees and their
 >   managers by using.
 
-### License Entry Window
+#### License Entry Window
 
 >   Use the License Entry window to add or update License data for a specific
 >   employee. Multiple licenses may be assigned to an employee. You will be able
@@ -1525,7 +1511,7 @@ IMAGE – ADVHRLE.jpg
 >   Information on this window can be made available to employees and their
 >   managers by using.
 
-### Employee Training Window
+#### Employee Training Window
 
 >   The modified Employee Training window replaces the Core Employee Training
 >   window. To open the Employee Training window, click the **HR and Payroll**
@@ -1578,7 +1564,7 @@ IMAGE- ADVHRET.jpg
 >   Information on this window can be made available to employees and their
 >   managers by using.
 
-### Mass Training Update Window
+#### Mass Training Update Window
 
 >   The Mass Training Update feature allows the user to access one window where
 >   any/all employee(s) can be updated for a Course and Class combination
@@ -1597,8 +1583,7 @@ IMAGE- ADVHRET.jpg
 >   **Instructor ID**, **Given By Organization**, **Completed Date** and/or
 >   **Expiration Date**.
 
-Employee Health and Wellness Manager
-------------------------------------
+### Employee Health and Wellness Manager
 
 >   Health and Wellness information can be tracked for employees including
 >   additional information for work-related injuries and illnesses. For example
@@ -1612,7 +1597,7 @@ Employee Health and Wellness Manager
 >   records allowing the user to simultaneously track ongoing treatment for both
 >   parties.
 
-### Health and Wellness Entry Window
+#### Health and Wellness Entry Window
 
 >   Use the Health and Wellness Entry window to provide features for tracking
 >   all immunizations, vaccinations and tests required for each employee. The
@@ -1634,7 +1619,7 @@ Employee Health and Wellness Manager
 >   Select the **History** button to open the Health and Wellness History window
 >   for the current employee and code.
 
-### Injury and Illness Details Window
+#### Injury and Illness Details Window
 
 >   The purpose of the Injury and Illness Details window is to provide features
 >   for tracking injury information for each employee and sources. The results
@@ -1674,7 +1659,7 @@ IMAGE – ADVHRII.jpg
 
 >   The **Assign Template** button will open the Assign Templates window.
 
-### Assign Templates Window
+#### Assign Templates Window
 
 >   Use the Assign Template window to check which line items from the
 >   appropriate template to assign to an employee or source.
@@ -1690,8 +1675,7 @@ IMAGE – ADVHRII.jpg
 >   Health and Wellness Codes scrolling window allows you to associate Health
 >   and Wellness codes with a Template Code.
 
-Summary
--------
+### Summary
 
 >   Advanced Human Resources allows for the tracking of additional dependent and
 >   beneficiary information, as well as allowing benefit information to be
@@ -1718,13 +1702,8 @@ Summary
 
 -   Source data can be tracked for work-related injuries and illnesses.
 
-CHAPTER 4: INQUIRIES AND REPORTS
-================================
-
-Objectives
-----------
-
->   The objectives are:
+## CHAPTER 4: INQUIRIES AND REPORTS
+The objectives are:
 
 -   Review the inquiries available for Advanced Human Resources and learn to
     print the information found on the various screens.
@@ -1732,8 +1711,7 @@ Objectives
 -   Understand the options available for printing reports in Advanced Human
     Resources.
 
-Introduction
-------------
+### Introduction
 
 >   Advanced Human Resources provides both Inquiry windows and the ability to
 >   print reports. The Inquiry windows for the most part are the history windows
@@ -1741,8 +1719,7 @@ Introduction
 >   Inquiry, which is an inquiry allowing for various selections to be made to
 >   narrow or broaden the scope of records shown.
 
-Inquiries
----------
+### Inquiries
 
 >   The Advanced Human Resources Inquiries contain the history windows for
 >   Certification, License and Training Manager, as well as the inquiry for
@@ -1751,7 +1728,7 @@ Inquiries
 >   the screen and a Percent Current Totals report can be printed using the
 >   printer icon on the window.
 
-### Certification History
+#### Certification History
 
 >   Use the Certification History window to view all the activity for a specific
 
@@ -1769,7 +1746,7 @@ Inquiries
 
 >   The **Inactive** checkbox will inactivate the current Certification History.
 
-### License History
+#### License History
 
 >   Use the License History window to view all the activity for a specific
 
@@ -1787,7 +1764,7 @@ Inquiries
 
 >   The **Inactive** checkbox will inactivate the current License History.
 
-### Training History
+#### Training History
 
 >   Use the Training History window to view all the transactions by Course/Class
 >   ID for a specific employee. The history record is written as the latest
@@ -1805,7 +1782,7 @@ Inquiries
 >   Enter or select an **Employee ID**. The **Department** and **Position**
 >   fields will display from the Employee Maintenance window.
 
-### Percent Current Inquiry
+#### Percent Current Inquiry
 
 >   Use the Percent Current Inquiry window to measure actual versus requirements
 >   for all positions within a department vs. position by position. To open this
@@ -1861,7 +1838,7 @@ IMAGE – ADVHRPCR.jpg and ADVHRPCR2.jpg
 
 ![A screenshot of a cell phone Description automatically generated](media/84f06a0657467fa18d5077df794f1753.jpg)
 
-### Employee Certifications, Licenses and Training
+#### Employee Certifications, Licenses and Training
 
 >   Use the Certification, License and Training Inquiry window to view
 >   Certification, License and/or Training assigned to specific Employee. To
@@ -1882,7 +1859,7 @@ IMAGE – ADVHRPCR.jpg and ADVHRPCR2.jpg
 >   The scrolling window displays all of the History information related to the
 >   Display option selected.
 
-### Health and Wellness History
+#### Health and Wellness History
 
 >   Use the Health and Wellness History window to see all the activity that has
 >   occurred for a specific Employee / Code record. The system tracks all
@@ -1896,8 +1873,7 @@ IMAGE – ADVHRPCR.jpg and ADVHRPCR2.jpg
 >   The scrolling window allows you to view all History information related to
 >   the Employee and the Health and Wellness Code selected.
 
-Reports
--------
+### Reports
 
 >   The Advanced Human Resources module provides printing capabilities by using
 >   the printer icons on the individual windows. For example, pulling up the
@@ -1910,7 +1886,7 @@ Reports
 >   with the data required to meet their reporting needs as it relates to
 >   Advanced Human Resources.
 
-### Excel®-based Reports
+#### Excel-based Reports
 
 >   Certification, License and Training Manager allows the user to track
 >   certifications, licenses, training and other data for employees using back
@@ -1941,7 +1917,7 @@ Reports
 >   measure actual versus requirements for all positions within a
 >   department/position.
 
-### SmartList Builder
+#### SmartList Builder
 
 >   If the Microsoft Dynamics GP SmartList Builder module is installed, all of
 >   the Certification, License and Training Manager and Employee Health and
@@ -1950,8 +1926,7 @@ Reports
 >   *NOTE: Refer to the Microsoft Dynamics GP SmartList Builder documentation
 >   for instructions on using SmartList Builder.*
 
-Summary
--------
+### Summary
 
 >   Advanced Human Resources provides inquiry and reporting capabilities by
 >   using History windows, the Percent Current Inquiry and the use of printer
@@ -1968,11 +1943,7 @@ Summary
 -   SmartList Builder can provide additional printing capabilities based on the
     user's individual reporting requirements.
 
-CHAPTER 5: CERTIFICATION, LICENSE AND TRAINING MANAGER FOR EMPLOYEE SELF SERVICE
-================================================================================
-
-Introduction
-------------
+## CHAPTER 5: CERTIFICATION, LICENSE AND TRAINING MANAGER FOR EMPLOYEE SELF SERVICE
 
 >   Certification, License and Training Manager extends the reporting options
 >   for the Certification, License and Training Manager product into the
@@ -2006,10 +1977,9 @@ Introduction
 >   Certification, License, Training Manager for User Guide document for further
 >   instruction.
 
-Employee’s Training, Certification and License Tabs
----------------------------------------------------
+### Employee’s Training, Certification and License Tabs
 
-### Employee Training Tab
+#### Employee Training Tab
 
 >   An Employee may use the Training tab to view their training information as
 >   well as certification and license information. To open this tab, click
@@ -2029,13 +1999,12 @@ Employee’s Training, Certification and License Tabs
     combination in the Employee Training Entry window and the current date is on
     or before the Expiration Date.
 
-### Employee Certification, License Tabs
+#### Employee Certification, License Tabs
 
 >   An Employee may use the Certification and License window to view their
 >   certification information as well as license and training information
 
-Summary
--------
+### Summary
 
 >   Certification, License and Training Manager can be configured to work within
 >   allowing managers and employees to view employee information. Using the
