@@ -1,8 +1,17 @@
-Microsoft Dynamics® GP
+---
+title: "Multicurrency Management"
+description: "Examine how multicurrency works in Dynamics GP."
+keywords: "payroll"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 04/23/2019
+---
 
->   **Multicurrency Management**
-
-**Introduction**
+# Multicurrency Management in Microsoft Dynamics GP
 
 You can use Multicurrency Management to set up an unlimited number of currency
 IDs, rate types, and exchange rate tables. After setting up Multicurrency
@@ -15,18 +24,6 @@ rates, and revalue Sales and Purchasing transactions. Multicurrency information
 can be printed on reports, as well as printing reports specific to
 multicurrency. You also can view and compare open-year or historical
 multicurrency information in detail or summary form.
-
->   This introduction is divided into the following sections:
-
--   *What’s in this manual*
-
--   *Symbols and conventions*
-
--   *Resources available from the Help menu*
-
--   *Send us your documentation comments*
-
-#### What’s in this manual
 
 This manual is designed to give you an understanding of how to use the features
 of Multicurrency Management, and how it integrates with the Microsoft Dynamics®
@@ -54,59 +51,7 @@ Microsoft Dynamics GP.
 -   *Part 3, Utilities and routines*, provides information about maintaining
     your multicurrency data and recognizing gains and losses.
 
-#### Resources available from the Help menu
-
->   The Microsoft Dynamics GP Help menu gives you access to user assistance
->   resources on your computer, as well as on the Web.
-
->   **Contents**
-
->   Opens the Help file for the active Microsoft Dynamics GP component, and
->   displays the main “contents” topic. To browse a more detailed table of
->   contents, click the Contents tab above the Help navigation pane. Items in
->   the contents topic and tab are arranged by module. If the contents for the
->   active component includes an “Additional Help files” topic, click the links
->   to view separate Help files that describe additional components.
-
->   To find information in Help by using the index or full-text search, click
->   the appropriate tab above the navigation pane, and type the keyword to find.
-
->   To save the link to a topic in the Help, select a topic and then select the
->   Favorites tab. Click Add.
-
->   **Index**
-
->   Opens the Help file for the active Microsoft Dynamics GP component, with the
->   Index tab active. To find information about a window that’s not currently
->   displayed, type the name of the window, and click Display.
-
->   **About this window**
-
->   Displays overview information about the current window. To view related
->   topics and descriptions of the fields, buttons, and menus for the window,
->   choose the appropriate link in the topic. You also can press F1 to display
->   Help about the current window.
-
-**Lookup**
-
-Opens a lookup window, if a window that you are viewing has a lookup window. For
-example, if the Checkbook Maintenance window is open, you can choose this item
-to open the Checkbooks lookup window.
-
-**Show Required Fields**
-
-Highlights fields that are required to have entries. Required fields must
-contain information before you can save the record and close the window. To
-change the way required fields are highlighted, choose the Microsoft Dynamics GP
-menu and select User Preferences \>\> Display and specify a different color and
-font style.
-
-**What’s New**
-
-Provides information about enhancements that were added to Microsoft Dynamics GP
-since the last major release.
-
->   **Part 1: Setup**
+## Part 1: Setup
 
 This part of the documentation describes what you need to do to set up
 
@@ -129,7 +74,7 @@ entries. The following topics are discussed:
 -   *Chapter 5, “Multicurrency posting account setup,”* describes how to select
     posting accounts for Multicurrency, currencies, or rate types.
 
-**Chapter 1: Multicurrency Management setup**
+### Chapter 1: Multicurrency Management setup
 
 >   One way of getting started with Multicurrency Management is to follow the
 >   setup routine provided with the system. As you select each step in the setup
@@ -169,7 +114,7 @@ entries. The following topics are discussed:
 >   \>\> select Setting up the System) for more information about the Setup
 >   Checklist window.
 
-**Chapter 2: Currency setup**
+### Chapter 2: Currency setup
 
 >   During the Multicurrency Management setup process, you will set up
 >   currencies and assign access to these currencies for each company.
@@ -195,9 +140,9 @@ entries. The following topics are discussed:
 1.  Open the Currency Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\>
     Setup \>\> System \>\> Currency)
 
-Image MCCS.jpg
+    Image MCCS.jpg
 
-![A screenshot of a cell phone Description automatically generated](media/ce5ea5bf5681ab4de0e5f2b459cc12bf.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/ce5ea5bf5681ab4de0e5f2b459cc12bf.jpg)
 
 1.  Enter a currency ID and a description.
 
@@ -265,9 +210,9 @@ a posted or unposted transaction.
 1.  Open the Multicurrency Access Setup window. (Microsoft Dynamics GP menu \>\>
     Tools \>\> Setup \>\> System \>\> Multicurrency Access)
 
-Image MCAS.jpg
+    Image MCAS.jpg
 
-![A screenshot of a social media post Description automatically generated](media/97e37b9faa5f7623033ae2a1b014d7ea.jpg)
+    ![A screenshot of a social media post Description automatically generated](media/97e37b9faa5f7623033ae2a1b014d7ea.jpg)
 
 1.  Select a currency ID.
 
@@ -304,7 +249,7 @@ Image MCAS.jpg
 
 4.  Choose OK to save your entries.
 
-**Chapter 3: Exchange rate setup**
+### Chapter 3: Exchange rate setup
 
 >   During the Multicurrency Management setup process, you will set up exchange
 >   rate tables and assign access to these for each company.
@@ -590,7 +535,7 @@ Image MCAS.jpg
 
 4.  Choose OK to save your entries.
 
-**Chapter 4: Multicurrency company setup**
+### Chapter 4: Multicurrency company setup
 
 >   Once you have set up systemwide multicurrency information, you will set up
 >   information specific to each company that uses more than one currency. For
@@ -812,7 +757,7 @@ Image MCAS.jpg
     information, see *Assigning exchange rates to exchange rate tables* Choose
     Save to save your entries.
 
-**Chapter 5: Multicurrency posting account setup**
+### Chapter 5: Multicurrency posting account setup
 
 >   Multicurrency posting accounts are the financial accounts used to track
 >   realized and unrealized gains and losses, offset accounts, rounding
@@ -1092,8 +1037,7 @@ Image MCPAS.jpg
 
 2.  Choose Save to save your entries.
 
-Part 2: Inquiries and reports
-=============================
+## Part 2: Inquiries and reports
 
 This part of the documentation includes information about inquiries and reports.
 Together, these components allow you to analyze the information you’ve entered
@@ -1108,8 +1052,7 @@ following topics are discussed:
 -   *Chapter 6, “Reports,”* includes information about multicurrency setup
     reports, report destinations, and report options.
 
-Chapter 6: Reports
-------------------
+### Chapter 6: Reports
 
 >   You can use Multicurrency Management reports as records of multicurrency
 >   setup entries, currencies, exchange rates, and transactions. Many of these
@@ -1130,7 +1073,7 @@ Chapter 6: Reports
 
 -   *Specifying a Multicurrency Management report option*
 
-### Multicurrency Management report summary
+#### Multicurrency Management report summary
 
 >   You can print several types of reports using Multicurrency Management. Some
 >   reports automatically are printed when you complete certain procedures; for
@@ -1152,7 +1095,7 @@ Chapter 6: Reports
 | History Reports                 | Account History Exchange Rate Removal Report                                                   | Automatically printed after you complete the procedure or choose the Print option in the selected window before removing.                            |
 | Period-end and Year-end Reports | Period Consolidation Report Year-End Closing Report Retained Earnings Exception Report         | Automatically printed when you complete the procedure.                                                                                               |
 
-### Reporting multicurrency information
+#### Reporting multicurrency information
 
 To print multicurrency versions of your reports and posting journals, you must
 mark the Include Multicurrency Info option in the Posting Setup window. If that
@@ -1167,7 +1110,7 @@ For information about reports that can be printed to include multicurrency
 information, refer to the reports summary information in the “Reports” chapter
 for the Microsoft Dynamics GP module you’re using.
 
-### Specifying a Multicurrency Management report option
+#### Specifying a Multicurrency Management report option
 
 Report options include specifications for sorting options and range restrictions
 for a particular report. In order to print several Multicurrency Management
@@ -1225,8 +1168,7 @@ Multicurrency Management.
     before saving it. If you don’t want to print the option now, choose Save and
     close the window. The report window will be redisplayed.
 
-Chapter 7: Inquiries
---------------------
+### Chapter 7: Inquiries
 
 >   You can use the Multicurrency Management inquiry feature to review
 >   multicurrency information for all open periods or for a historical year in
@@ -1244,7 +1186,7 @@ Chapter 7: Inquiries
 
 -   *Viewing account summary transaction information*
 
-### Viewing information in different currencies
+#### Viewing information in different currencies
 
 >   You can choose whether you want to view multicurrency amounts in the
 >   originating, functional, or reporting currency. Choose View \>\> Currency
@@ -1269,7 +1211,7 @@ Chapter 7: Inquiries
 >   Reporting from the currency list button. The option you choose will be saved
 >   on a per user, per window basis.
 
-### Changing the reporting currency’s exchange rate
+#### Changing the reporting currency’s exchange rate
 
 >   If you mark the Override Reporting Rate option in the Multicurrency Setup
 >   window, you can change the reporting currency exchange rate and calculation
@@ -1289,7 +1231,7 @@ reporting currency, that window also is updated with the new exchange rate
 information. If you want to restore the original exchange rate information
 entered in the Multicurrency Setup window, choose the Default button.
 
-### Viewing multicurrency account summary information
+#### Viewing multicurrency account summary information
 
 Use the Multicurrency Account Summary window to view open-year balances in a net
 change or period-by-period format for each posting account. All multicurrency
@@ -1307,7 +1249,7 @@ functional amount also can be viewed.
 
 1.  Select the open year and period for which you want to view information.
 
-### Viewing account summary transaction information
+#### Viewing account summary transaction information
 
 Use the Multicurrency Summary Inquiry window to view summary account balances
 and multicurrency information in a net change or period balance format. The
@@ -1326,8 +1268,7 @@ window also displays the account’s total balance using the functional currency
     enter a year and period that has been set up but doesn’t have any
     transactions entered in it, the scrolling window will appear empty.
 
-Part 3: Utilities and routines
-==============================
+## Part 3: Utilities and routines
 
 >   This part of the documentation provides the procedures you need to maintain
 >   your multicurrency data or those you need to complete at the end of a month
@@ -1340,8 +1281,7 @@ Part 3: Utilities and routines
 -   *Chapter 9, “Routines,”* provides information about revaluing transactions,
     consolidating and closing a period, and closing a year.
 
-Chapter 8: Utilities
---------------------
+### Chapter 8: Utilities
 
 >   This part of the documentation contains the procedures you need for removing
 >   exchange rates and multicurrency history.
@@ -1352,7 +1292,7 @@ Chapter 8: Utilities
 
 -   *Multicurrency history removal*
 
-### Removing exchange rates
+#### Removing exchange rates
 
 >   Use the Remove Multicurrency Exchange Rates window to remove exchange rates
 >   that you’ve entered for exchange rate tables. You can remove exchange rates
@@ -1384,7 +1324,7 @@ Chapter 8: Utilities
 2.  Choose Process to remove the rates. If Print Report was marked, the Exchange
     Rate Removal Report will print.
 
-### Multicurrency history removal
+#### Multicurrency history removal
 
 >   When removing history in General Ledger, Receivables Management, Payables
 >   Management, Purchase Order Processing, or Sales Order Processing,
@@ -1398,12 +1338,10 @@ Chapter 8: Utilities
 IMAGE MCRH.jpg
 
 [./media/image8.jpg](./media/image8.jpg)
-----------------------------------------
 
 ~   A screenshot of a cell phone Description automatically generated
 
-Chapter 9: Routines
--------------------
+### Chapter 9: Routines
 
 >   Routine procedures include those you complete at the end of a month or
 >   period and at the end of either your calendar or fiscal year.
@@ -1434,7 +1372,7 @@ Chapter 9: Routines
 
 -   *Closing a year*
 
-### Revaluation
+#### Revaluation
 
 >   Revaluation is the process of recalculating the functional currency value of
 >   transactions that were recorded in a currency other than your functional
@@ -1476,7 +1414,7 @@ Chapter 9: Routines
 >   to the original transaction or invoice in the same originating currency that
 >   it’s being applied to.
 
-### Accounts used when posting revaluation transactions
+#### Accounts used when posting revaluation transactions
 
 >   The revaluation transactions are posted to the posting account being
 >   revalued or to the financial offset account and the realized or unrealized
@@ -1495,7 +1433,7 @@ Chapter 9: Routines
 >   unrealized gain and loss accounts in the Posting Accounts Setup window for
 >   the Financial series are used.
 
-### Posting to or through General Ledger when revaluing transactions
+#### Posting to or through General Ledger when revaluing transactions
 
 >   If the Post to General Ledger and Post Through General Ledger options are
 >   marked in the Posting Setup window, the revaluation transactions are posted
@@ -1516,7 +1454,7 @@ Chapter 9: Routines
 >   Sales, Purchasing or Financial series is printed, but no transactions are
 >   posted.
 
-### Apply situations that prevent revaluation
+#### Apply situations that prevent revaluation
 
 >   The following examples show apply situations that prevent the revaluation
 >   from occuring. The dates that prevent the revaluation from occuring are in
@@ -1584,7 +1522,7 @@ Chapter 9: Routines
 | Document Date:                                                  | November 25, 2017     |
 | Document Posting Date:                                          | December 6, 2017      |
 
-### Recognizing gains and losses
+#### Recognizing gains and losses
 
 >   Use the Multicurrency Revaluation window to create and post transactions for
 >   gains and losses associated with fluctuating exchange rates and to print the
@@ -1598,7 +1536,7 @@ Chapter 9: Routines
 >   example, you might set up different revaluation options for period-end and
 >   year-end, using different ranges of accounts and options for posting.
 
-### Recognizing gains and losses in the Financial series
+#### Recognizing gains and losses in the Financial series
 
 >   Only one rate type per currency can be identified when revaluing General
 >   Ledger transactions. Accounts that have a summary amount for a specified
@@ -1690,7 +1628,7 @@ Chapter 9: Routines
 >   might be printed. These reports display information about the revaluation
 >   transactions posted.
 
-### Specifying accounts to revalue
+#### Specifying accounts to revalue
 
 >   Use the Multicurrency Revaluation Restrictions window to set up a
 >   restriction to specify the accounts you want to revalue.
@@ -1717,7 +1655,7 @@ Chapter 9: Routines
 
 6.  Choose OK to return to the Multicurrency Revaluation window.
 
-### Recognizing gains and losses in the Sales or Purchasing series
+#### Recognizing gains and losses in the Sales or Purchasing series
 
 >   When revaluing Sales or Purchasing transactions, you can enter a document
 >   cutoff date and choose to revalue transactions by currency ID or by
@@ -1827,7 +1765,7 @@ IMAGE MCREV2.jpg
 >   revaluation from occuring. For more information, see *Apply situations that
 >   prevent revaluation* .
 
-### Specifying document types to revalue
+#### Specifying document types to revalue
 
 >   Use the Multicurrency Revaluation Restrictions window to set up a
 >   restriction to specify the document types, customers or vendors you want to
@@ -1858,7 +1796,7 @@ IMAGE MCREV2.jpg
 
 7.  Choose OK to return to the Multicurrency Revaluation window.
 
-### Entering translated beginning balance information
+#### Entering translated beginning balance information
 
 >   You can use the Currency Translation window to translate beginning balance
 >   information for average and historical currency translation types. You also
@@ -1907,7 +1845,7 @@ IMAGE MCREV2.jpg
 
 5.  Choose Save to the translated balances.
 
-### Consolidating and closing a period
+#### Consolidating and closing a period
 
 >   When using Multicurrency Management, you can consolidate periods in General
 
@@ -1926,7 +1864,7 @@ IMAGE MCREV2.jpg
 >   General Ledger documentation. You also can refer to the sample reports for
 >   more information.
 
-### Closing a year
+#### Closing a year
 
 >   When using Multicurrency Management, you’ll close the year in General Ledger
 >   using the Year-End Closing window. However, the Multicurrency Year-End
@@ -1950,8 +1888,7 @@ IMAGE MCREV2.jpg
 >   For more information on closing the year, refer to the General Ledger
 >   documentation.
 
-Glossary
-========
+## Glossary
 
 #### Account
 
