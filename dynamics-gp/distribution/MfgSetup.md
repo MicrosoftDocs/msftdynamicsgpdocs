@@ -1,50 +1,34 @@
-Microsoft Dynamics® GP **Manufacturing Setup**
+---
+title: "Manufacturing Setup"
+description: "Examine how to get the Manufacturing module set up in Dynamics GP."
+keywords: "manufaturing"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 05/02/2019
+---
 
-**Introduction**
+# Manufacturing Setup
 
->   You can use Manufacturing to organize and track the daily workings of the
->   manufacturing process, such as taking orders, purchasing raw materials,
->   building finished goods, fulfilling orders, and selling the finished goods.
+You can use Manufacturing to organize and track the daily workings of the manufacturing process, such as taking orders, purchasing raw materials, building finished goods, fulfilling orders, and selling the finished goods.
 
->   This introduction is divided into the following sections:
+Manufacturing documentation is divided into five manuals. Refer to the following table for an overview of what is included in each of the manuals.
 
--   *Manufacturing documentation*
-
--   *What’s in this manual*
-
--   *Symbols and conventions*
-
--   *Resources available from the Help menu*
-
--   *Send us your documentation comments*
-
->   **Manufacturing documentation**
-
->   Manufacturing documentation is divided into five manuals. Refer to the
->   following table for an overview of what is included in each of the manuals.
-
-| **Manual**                                | **Modules or other major pieces**                                                                                                                    |
-|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Manufacturing Setup manual                | System setup User setup                                                                                                                              |
-| Manufacturing Core Functions manual       | Manufacturing Cards Extensions to Inventory Control Bills of Materials Extensions to Sales Order Processing Sales Configurator Manufacturing Reports |
-| Manufacturing Production Functions manual | Routings Manufacturing Orders Outsourcing Work in Process                                                                                            |
-| Manufacturing Management Functions manual | Quality Assurance Engineering Change Management Job Costing                                                                                          |
+| **Manual**                                | **Modules or other major pieces**      |
+|-------------------------------------------|----------------------------------------|
+| Manufacturing Setup manual                | System setup </br>User setup         |
+| Manufacturing Core Functions manual       | Manufacturing Cards Extensions to Inventory Control  </br>Bills of Materials Extensions to Sales Order Processing  </br>Sales Configurator </br> Manufacturing Reports |
+| Manufacturing Production Functions manual | Routings Manufacturing Orders  </br>Outsourcing Work in Process    |
+| Manufacturing Management Functions manual | Quality Assurance Engineering </br> Change Management  </br>Job Costing     |
 | Manufacturing Planning Functions manual   | Sales Forecasting Master Production Scheduling Capacity Requirements Planning (CRP) Material Requirements Planning (MRP)                             |
-
->   The online help file includes all of the information in the manuals, except
->   installation information. The online help also includes field-by-field
->   descriptions of the windows. You can access online help by pressing F1
->   whenever a Manufacturing window is active, or by choosing Help \>\> About
->   this window.
 
 >   *If a Microsoft Dynamics® GP window—such as the Sales Transaction Entry
 >   window—is the active window when you access help, online help for Microsoft
 >   Dynamics GP will be displayed. You can close that help, open any
 >   Manufacturing window, and try again to access Manufacturing-specific help.*
-
-**I N T R O D U C T I O N**
-
-**What’s in this manual**
 
 >   This manual is designed to give you an understanding of how to use the
 >   features of Manufacturing, and how it integrates with the Microsoft Dynamics
@@ -70,66 +54,8 @@ Microsoft Dynamics® GP **Manufacturing Setup**
     preferences—settings that help you customize each user’s view of
     Manufacturing information.
 
-**I N T R O D U C T I O N**
 
->   **Resources available from the Help menu**
-
->   The Microsoft Dynamics GP Help menu gives you access to user assistance
->   resources on your computer, as well as on the Web.
-
->   **Contents**
-
->   Opens the Help file for the active Microsoft Dynamics GP component, and
->   displays the main “contents” topic. To browse a more detailed table of
->   contents, click the Contents tab above the Help navigation pane. Items in
->   the contents topic and tab are arranged by module. If the contents for the
->   active component includes an “Additional Help files” topic, click the links
->   to view separate Help files that describe additional components.
-
->   To find information in Help by using the index or full-text search, click
->   the appropriate tab above the navigation pane, and type the keyword to find.
-
->   To save the link to a topic in the Help, select a topic and then select the
->   Favorites tab. Click Add.
-
->   **Index**
-
->   Opens the Help file for the active Microsoft Dynamics GP component, with the
->   Index tab active. To find information about a window that’s not currently
->   displayed, type the name of the window, and click Display.
-
->   **About this window**
-
->   Displays overview information about the current window. To view related
->   topics and descriptions of the fields, buttons, and menus for the window,
->   choose the appropriate link in the topic. You also can press F1 to display
->   Help about the current window.
-
->   **Lookup**
-
->   Opens a lookup window, if a window that you are viewing has a lookup window.
->   For example, if the Checkbook Maintenance window is open, you can choose
->   this item to open the Checkbooks lookup window.
-
->   **Show Required Fields**
-
->   Highlights fields that are required to have entries. Required fields must
->   contain information before you can save the record and close the window. You
->   can change the font color and style used to highlight required fields. On
->   the Microsoft Dynamics GP menu, choose User Preferences, and then choose
->   Display.
-
->   **Printable Manuals**
-
->   Displays a list of manuals in Adobe Acrobat .pdf format, which you can print
->   or view.
-
->   **What’s New**
-
->   Provides information about enhancements that were added to Microsoft
->   Dynamics GP since the last major release.
-
-**Part 1: Manufacturing setup**
+## Part 1: Manufacturing setup
 
 >   This part of the documentation includes information that will help you
 >   complete Manufacturing setup tasks. You can refer to this information to
@@ -163,7 +89,7 @@ Microsoft Dynamics® GP **Manufacturing Setup**
 -   *Chapter 6, “Manufacturing planning functions setup,”* includes information
     about system settings for Material Requirements Planning.
 
-**Chapter 1: Manufacturing basic setup**
+### Chapter 1: Manufacturing basic setup
 
 >   Before you set up module-specific system settings and user preferences, use
 >   this information to complete basic system setup tasks.
@@ -413,7 +339,7 @@ Remove.*
 
 2.  Choose OK and close the window.
 
-**Chapter 2: Security**
+### Chapter 2: Security
 
 >   Security builds safeguards into your software to restrict access to
 >   information, processes, or windows. In Manufacturing, each of these types of
@@ -471,8 +397,6 @@ Remove.*
 >   records that prevent you from completing MRP regeneration or other
 >   processes. You can end other users’ sessions or you can ask them to end
 >   their sessions.
-
-##### M A N U F A C T U R I N G S E T U P
 
 >   You also can use Manufacturing module security to unlock records that might
 >   become locked if a user’s computer becomes suspended. If a power failure
@@ -575,9 +499,7 @@ Remove.*
 >   other records, you must supply the system password when you choose the
 >   Delete button.
 
-##### M A N U F A C T U R I N G S E T U P
-
->   **To use Manufacturing module security:**
+**To use Manufacturing module security:**
 
 1.  Open the appropriate window for the type of record to unlock.
 
@@ -611,7 +533,7 @@ Remove.*
 
 4.  When you’ve finished, close the window.
 
-**Chapter 3: Manufacturing core functions setup**
+### Chapter 3: Manufacturing core functions setup
 
 >   Information about setting up system settings for use with core functions
 >   modules— Bills of Materials, Sales Configurator, and extensions to Microsoft
@@ -1013,8 +935,7 @@ IMAGE – MFGOFS.jpg
 
 3.  Choose OK and close the window.
 
-Chapter 4: Manufacturing production functions setup
----------------------------------------------------
+### Chapter 4: Manufacturing production functions setup
 
 >   This documentation includes information about setting up system settings for
 >   use with production functions modules: Routings, Manufacturing Order
@@ -1690,8 +1611,7 @@ Refer to*
 >   then changed to use the Labor cost bucket, the transactions would still be
 >   posted to accounts for Machine costs.
 
-Chapter 5: Manufacturing management functions setup
----------------------------------------------------
+### Chapter 5: Manufacturing management functions setup
 
 >   This documentation includes information about setting up system settings for
 >   use with management functions modules: Quality Assurance, Engineering Change
@@ -1955,8 +1875,7 @@ summarizing the particular engineering change request.*
 
 1.  Choose OK.
 
-Chapter 6: Manufacturing planning functions setup
--------------------------------------------------
+### Chapter 6: Manufacturing planning functions setup
 
 >   Information about setting up system settings for use with planning functions
 >   modules, especially Material Requirements Planning (MRP), is included here.
@@ -2366,8 +2285,7 @@ IMGAGE – MFGMRPL.jpg
 
 3.  Choose OK.
 
-Part 2: Manufacturing user setup
-================================
+## Part 2: Manufacturing user setup
 
 >   This part of the documentation includes information that will help you set
 >   up Manufacturing user preferences. Most of this information will need to be
@@ -2395,8 +2313,7 @@ Part 2: Manufacturing user setup
     information about options for Capacity Requirements Planning and Material
     Requirements Planning.
 
-Chapter 7: Manufacturing basic user setup
------------------------------------------
+### Chapter 7: Manufacturing basic user setup
 
 >   You can set up preferences to customize some aspects of your Manufacturing
 >   system—for instance, what information is displayed in a window or how fields
@@ -2547,10 +2464,7 @@ IMAGE – MFGMFG.jpg
 5.  Close the window when you’ve finished specifying the pathnames to save the
     information.
 
-62 M A N U F A C T U R I N G S E T U P
-
-Chapter 8: Manufacturing core functions user setup
---------------------------------------------------
+### Chapter 8: Manufacturing core functions user setup
 
 >   Most Manufacturing modules include user preference settings. You can use
 >   these settings to customize some aspects of the system—such as what
@@ -2623,7 +2537,7 @@ Chapter 8: Manufacturing core functions user setup
 >   If you aren’t a system administrator, choose OK to save your settings and
 >   close the window.
 
-**Chapter 9: Manufacturing production functions user setup**
+### Chapter 9: Manufacturing production functions user setup**
 
 >   Most Manufacturing modules include user preference settings. For production
 >   functions modules, you can specify options for entering routing sequence and
@@ -2837,7 +2751,7 @@ pointer routings.*
 
 3.  Choose OK.
 
-**Chapter 10: Manufacturing management functions user setup**
+### Chapter 10: Manufacturing management functions user setup
 
 >   Most Manufacturing modules include user preference settings. This document
 >   includes information about user preferences for the management functions
@@ -2965,7 +2879,7 @@ pointer routings.*
 >   If you aren’t a system administrator, choose OK to save your settings and
 >   close the window.
 
-**Chapter 11: Manufacturing planning functions user setup**
+### Chapter 11: Manufacturing planning functions user setup
 
 >   Most Manufacturing modules include user preference settings. This document
 >   includes information about user preferences for the planning functions
