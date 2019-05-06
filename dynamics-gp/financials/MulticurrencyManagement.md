@@ -52,7 +52,6 @@ This part of the documentation describes what you need to do to set up Multicurr
 One way of getting started with Multicurrency Management is to follow the setup routine provided with the system. As you select each step in the setup routine list, the appropriate window used to complete that procedure opens. You can enter the necessary information in the window, referring to the documentation whenever necessary.
 
 The setup routine information is divided into the following sections:
-
 -   *Before you set up Multicurrency Management*
 
 -   *Multicurrency Management setup*
@@ -113,7 +112,6 @@ Management and can be used in any company.
 #### Deleting a currency
 
 Use the Currency Setup window if you’re not planning to use a currency for transactions in the future and want to delete the currency.
-
 A currency can’t be deleted if:
 
 -   The currency is used on posted or unposted transactions.
@@ -137,7 +135,6 @@ Use the Multicurrency Access Setup window to grant access to currencies for indi
 You can remove currency access by unmarking the Access selection for the company. You can remove access to a currency if the currency hasn’t been used on a posted or unposted transaction.
 
 **To assign access to currencies:**
-
 1.  Open the Multicurrency Access Setup window. (Microsoft Dynamics GP menu \>\>
     Tools \>\> Setup \>\> System \>\> Multicurrency Access)
 
@@ -149,8 +146,7 @@ You can remove currency access by unmarking the Access selection for the company
 
 2.  Mark Access for each company that will use the selected currency.
 
-3.  Choose File \>\> Print to verify your entries with a Multicurrency Access
-    Report.
+3.  Choose File \>\> Print to verify your entries with a Multicurrency Access Report.
 
 4.  Choose OK to save the entries.
 
