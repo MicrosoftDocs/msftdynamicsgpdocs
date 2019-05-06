@@ -103,6 +103,7 @@
 
 <!--- distribution -->
 ## Distribution
+### [Field Service Returns Management](distribution/ReturnsManagement.md) 
 ### [Manufacturing Setup](distribution/MfgSetup.md)
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
 ### [Concur Expense](distribution/ConcurExpense.md)
