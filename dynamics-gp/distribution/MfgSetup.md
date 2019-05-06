@@ -41,7 +41,6 @@ The manual is divided into the following parts:
 
 -   *Part 2, Manufacturing user setup*, contains information about user preferences—settings that help you customize each user’s view of Manufacturing information.
 
-
 ## Part 1: Manufacturing setup
 
 This part of the documentation includes information that will help you complete Manufacturing setup tasks. You can refer to this information to learn how to use security in Manufacturing and how to set up systemwide settings.
@@ -67,7 +66,6 @@ The following information is discussed:
 Before you set up module-specific system settings and user preferences, use this information to complete basic system setup tasks.
 
 This information is divided into the following sections:
-
 -   *Setup checklist*
 
 -   *Setting up costing system default settings*
@@ -222,8 +220,7 @@ System users have more access privileges than other users. Like system administr
 
 2.  Enter or select the user ID for an employee who is to be a system user and Choose Insert.
 
-**To remove a system user, mark the user ID in the scrolling window and choose
-Remove.*
+**To remove a system user, mark the user ID in the scrolling window and choose Remove.*
 
 1.  Continue, repeating steps 2 and 3 to add as many system users as you like.
 
@@ -321,7 +318,6 @@ Once you’ve created a process security set, you can modify it at anytime. For 
     -   To add a user, choose a user in the User IDs field.
 
     -   To remove a user, mark the user ID in the scrolling window and then choose Remove.
-
 5.  Choose Save.
 
 #### Using Manufacturing module security
