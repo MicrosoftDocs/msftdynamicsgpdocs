@@ -25,76 +25,47 @@ Manufacturing documentation is divided into five manuals. Refer to the following
 | Manufacturing Management Functions manual | Quality Assurance Engineering </br> Change Management  </br>Job Costing     |
 | Manufacturing Planning Functions manual   | Sales Forecasting Master Production Scheduling Capacity Requirements Planning (CRP) Material Requirements Planning (MRP)                             |
 
->   *If a Microsoft Dynamics® GP window—such as the Sales Transaction Entry
->   window—is the active window when you access help, online help for Microsoft
->   Dynamics GP will be displayed. You can close that help, open any
->   Manufacturing window, and try again to access Manufacturing-specific help.*
+*If a Microsoft Dynamics® GP window—such as the Sales Transaction Entry window—is the active window when you access help, online help for Microsoft Dynamics GP will be displayed. You can close that help, open any Manufacturing window, and try again to access Manufacturing-specific help.*
 
->   This manual is designed to give you an understanding of how to use the
->   features of Manufacturing, and how it integrates with the Microsoft Dynamics
->   GP system.
+This manual is designed to give you an understanding of how to use the features of Manufacturing, and how it integrates with the Microsoft Dynamics GP system.
 
->   To make best use of Manufacturing, you should be familiar with systemwide
->   features described in the System User’s Guide, the System Setup Guide, and
->   the System Administrator’s Guide.
+To make best use of Manufacturing, you should be familiar with systemwide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
 
->   Some features described in the documentation are optional and can be
->   purchased through your Microsoft Dynamics GP partner.
+Some features described in the documentation are optional and can be purchased through your Microsoft Dynamics GP partner.
 
->   To view information about the release of Microsoft Dynamics GP that you’re
->   using and which modules or features you are registered to use, choose Help
->   \>\> About Microsoft Dynamics GP.
+To view information about the release of Microsoft Dynamics GP that you’re using and which modules or features you are registered to use, choose Help \>\> About Microsoft Dynamics GP.
 
->   The manual is divided into the following parts:
+The manual is divided into the following parts:
 
--   *Part 1, Manufacturing setup*, describes how you can set up security and
-    systemwide settings for Manufacturing modules.
+-   *Part 1, Manufacturing setup*, describes how you can set up security and systemwide settings for Manufacturing modules.
 
--   *Part 2, Manufacturing user setup*, contains information about user
-    preferences—settings that help you customize each user’s view of
-    Manufacturing information.
+-   *Part 2, Manufacturing user setup*, contains information about user preferences—settings that help you customize each user’s view of Manufacturing information.
 
 
 ## Part 1: Manufacturing setup
 
->   This part of the documentation includes information that will help you
->   complete Manufacturing setup tasks. You can refer to this information to
->   learn how to use security in Manufacturing and how to set up systemwide
->   settings.
+This part of the documentation includes information that will help you complete Manufacturing setup tasks. You can refer to this information to learn how to use security in Manufacturing and how to set up systemwide settings.
 
->   Many of the tasks that are described must be completed before you can enter
->   information in Manufacturing. Be sure to review and complete all setup tasks
->   for Manufacturing modules you’ve installed. Later you can refer to this
->   information to adjust settings or to help new users get started.
+Many of the tasks that are described must be completed before you can enter information in Manufacturing. Be sure to review and complete all setup tasks for Manufacturing modules you’ve installed. Later you can refer to this information to adjust settings or to help new users get started.
 
->   The following information is discussed:
+The following information is discussed:
 
--   *Chapter 1, “Manufacturing basic setup,”* includes information about setting
-    up users, the shop floor calendar, and work center options.
+-   *Chapter 1, “Manufacturing basic setup,”* includes information about setting up users, the shop floor calendar, and work center options.
 
--   *Chapter 2, “Security,”* describes security information specific to
-    Manufacturing, such as process security and module security.
+-   *Chapter 2, “Security,”* describes security information specific to Manufacturing, such as process security and module security.
 
--   *Chapter 3, “Manufacturing core functions setup,”* contains information
-    about system settings for bills of materials, sales extensions, and the
-    Sales Configurator.
+-   *Chapter 3, “Manufacturing core functions setup,”* contains information about system settings for bills of materials, sales extensions, and the Sales Configurator.
 
--   *Chapter 4, “Manufacturing production functions setup,”* describes system
-    settings for routings, manufacturing orders, and work-in-process.
+-   *Chapter 4, “Manufacturing production functions setup,”* describes system settings for routings, manufacturing orders, and work-in-process.
 
--   *Chapter 5, “Manufacturing management functions setup,”* includes
-    information about setting up quality assurance, engineering change
-    management, and job costing.
+-   *Chapter 5, “Manufacturing management functions setup,”* includes information about setting up quality assurance, engineering change management, and job costing.
 
--   *Chapter 6, “Manufacturing planning functions setup,”* includes information
-    about system settings for Material Requirements Planning.
+-   *Chapter 6, “Manufacturing planning functions setup,”* includes information about system settings for Material Requirements Planning.
 
 ### Chapter 1: Manufacturing basic setup
 
->   Before you set up module-specific system settings and user preferences, use
->   this information to complete basic system setup tasks.
-
->   This information is divided into the following sections:
+Before you set up module-specific system settings and user preferences, use this information to complete basic system setup tasks.
+This information is divided into the following sections:
 
 -   *Setup checklist*
 
@@ -114,125 +85,70 @@ Manufacturing documentation is divided into five manuals. Refer to the following
 
 #### Setting up costing system default settings
 
->   Default costing settings determine how costs are tracked throughout your
->   manufacturing facility. You can choose to automatically account for
->   shrinkage on parent parts, their components, or both. You also can assign a
->   posting account for rounding differences and choose a security set for
->   revaluations.
+Default costing settings determine how costs are tracked throughout your manufacturing facility. You can choose to automatically account for shrinkage on parent parts, their components, or both. You also can assign a posting account for rounding differences and choose a security set for revaluations.
 
->   **To set up costing system default settings:**
+**To set up costing system default settings:**
 
-1.  Open the Costing Preference Defaults window. (Microsoft Dynamics GP menu
-    \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Costing)
+1.  Open the Costing Preference Defaults window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Costing)
 
->   IMAGE – MFGCD.jpg
+![](media/MFGCD.jpg)
 
-![](media/12ad07add3f8f083b78f848606fd455d.jpg)
-
->   A screenshot of a cell phone Description automatically generated
-
-1.  Mark the options to apply shrinkage, as needed, for standard cost rollups.
+2.  Mark the options to apply shrinkage, as needed, for standard cost rollups. 
     *It’s strongly recommended that you mark both options or neither option.*
 
-2.  **Apply Shrinkage to Parent Cost** Mark Apply Shrinkage to Parent Cost to
-    apply shrinkage to the finished good.
+3.  **Apply Shrinkage to Parent Cost** Mark Apply Shrinkage to Parent Cost to apply shrinkage to the finished good.
 
->   **Apply Shrinkage to Component Cost** Mark Apply Shrinkage to Component Cost
->   to apply shrinkage to the components of the finished good.
+**Apply Shrinkage to Component Cost** Mark Apply Shrinkage to Component Cost to apply shrinkage to the components of the finished good.
 
->   **Prorate Setup Time** Mark Prorate Setup Time to distribute setup costs for
->   standard-cost items.
+**Prorate Setup Time** Mark Prorate Setup Time to distribute setup costs for standard-cost items.
 
-1.  If you marked Prorate Setup Time, select the quantity to use for calculating
-    setup costs for standard-cost items.
+4.  If you marked Prorate Setup Time, select the quantity to use for calculating setup costs for standard-cost items.
 
->   **Average Quantity** The setup costs of an item (setup time multiplied by
->   setup labor rate) will be divided by the average quantity of the item. You
->   specify the average quantity of an item in the Item Engineering Data window.
+**Average Quantity** The setup costs of an item (setup time multiplied by setup labor rate) will be divided by the average quantity of the item. You specify the average quantity of an item in the Item Engineering Data window. 
 
->   Refer to *Entering item engineering data* in *Chapter 8, “Item engineering
->   data,”* of the Manufacturing Core Functions documentation for more
->   information about specifying the average quantity of an item.
+Refer to *Entering item engineering data* in *Chapter 8, “Item engineering data,”* of the Manufacturing Core Functions documentation for more information about specifying the average quantity of an item.
 
->   **Standard Quantity** The setup costs of an item will be divided by the
->   standard quantity of the item. You specify the standard item quantity in the
->   Standard Cost Changes window.
+**Standard Quantity** The setup costs of an item will be divided by the standard quantity of the item. You specify the standard item quantity in the Standard Cost Changes window.
 
->   Refer to *Specifying the standard quantity for a finished item* in *Chapter
->   14, “Standard costing revaluations,”* in the Manufacturing Core Functions
->   documentation for more information.
+Refer to *Specifying the standard quantity for a finished item* in *Chapter 14, “Standard costing revaluations,”* in the Manufacturing Core Functions documentation for more information.
 
-1.  Mark Activate Single-Level Cost Roll Up to let users decide, in the Standard
-    Cost Changes window, whether costs affect selected items in the BOM, or the
-    entire BOM that includes the item. If you do not mark this option, users do
-    not have the choice, and costs affect the entire BOM that includes the item.
+1.  Mark Activate Single-Level Cost Roll Up to let users decide, in the Standard Cost Changes window, whether costs affect selected items in the BOM, or the entire BOM that includes the item. If you do not mark this option, users do not have the choice, and costs affect the entire BOM that includes the item.
 
 2.  Decide how the Standard Cost Changes window should work.
 
->   **Rollup scope** Determines how many items are included in a standard cost
->   rollup. You can choose to roll up all items with proposed standard cost
->   changes, or you can choose to roll up only items affected by a change in the
->   cost of the selected item.
+**Rollup scope** Determines how many items are included in a standard cost rollup. You can choose to roll up all items with proposed standard cost changes, or you can choose to roll up only items affected by a change in the cost of the selected item.
 
->   **Tree view explosion level** Determines how much information is displayed
->   when you select an item in the Standard Cost Changes window. If your
->   business has many records, choose Single Level Bill of Material so that
->   information is displayed more quickly. (You can always expand the view of
->   the information, if needed.)
+**Tree view explosion level** Determines how much information is displayed when you select an item in the Standard Cost Changes window. If your business has many records, choose Single Level Bill of Material so that information is displayed more quickly. (You can always expand the view of the information, if needed.)
 
-1.  Select a posting account for rounding differences.
+3.  Select a posting account for rounding differences.
 
-2.  Choose a security set to be used when a user attempts to revalue items in
-    the Rollup and Revalue Inventory window or in the Standard Cost Changes
-    window.
+4.  Choose a security set to be used when a user attempts to revalue items in the Rollup and Revalue Inventory window or in the Standard Cost Changes window.
 
->   Users who attempt to revalue items must be included in the security set, or
->   they must enter the appropriate password before the revaluation can occur.
+Users who attempt to revalue items must be included in the security set, or they must enter the appropriate password before the revaluation can occur.
 
-1.  Choose OK and close the window.
+5.  Choose OK and close the window.
 
 #### Shrinkage overview
 
->   Shrinkage is the anticipated loss of an item.
+Shrinkage is the anticipated loss of an item.
 
->   **Types of shrinkage**
+**Types of shrinkage**
 
->   You can specify a shrinkage value for finished goods (parent items), for
->   components (child items), or both.
+You can specify a shrinkage value for finished goods (parent items), for components (child items), or both.
 
->   **Finished good shrinkage** Finished good shrinkage might occur if not all
->   items that are started in production are adequate for meeting demand. For
->   example, if you discover that one out of every 100 finished goods you
->   produce fails inspection, you have one percent shrinkage of your finished
->   goods. You can set up preferences so that if you need to produce 200 of this
->   item, materials and resources will be scheduled to build 202—automatically
->   covering any anticipated losses from shrinkage.
+**Finished good shrinkage** Finished good shrinkage might occur if not all items that are started in production are adequate for meeting demand. For example, if you discover that one out of every 100 finished goods you produce fails inspection, you have one percent shrinkage of your finished goods. You can set up preferences so that if you need to produce 200 of this item, materials and resources will be scheduled to build 202—automatically covering any anticipated losses from shrinkage.
 
->   **Raw material shrinkage** Raw material shrinkage might occur if some
->   components are flawed and can’t be used in production. Raw material
->   shrinkage also can occur if materials are wasted in the production process;
->   for example, you might need to use materials on trial runs during your setup
->   processes. You can indicate how much shrinkage you anticipate on an
->   item-by-item basis.
+**Raw material shrinkage** Raw material shrinkage might occur if some components are flawed and can’t be used in production. Raw material shrinkage also can occur if materials are wasted in the production process; for example, you might need to use materials on trial runs during your setup processes. You can indicate how much shrinkage you anticipate on an item-by-item basis.
 
->   **How shrinkage is calculated**
+**How shrinkage is calculated**
 
->   To calculate shrinkage, divide the extended required quantity (from either
->   the picklist or the manufacturing order, depending on if you’re calculating
->   shrinkage for a component or finished good) by 1, minus the shrinkage
->   percentage. The calculated quantities reflecting shrinkage should be rounded
->   up, if necessary.
+To calculate shrinkage, divide the extended required quantity (from either the picklist or the manufacturing order, depending on if you’re calculating shrinkage for a component or finished good) by 1, minus the shrinkage percentage. The calculated quantities reflecting shrinkage should be rounded up, if necessary.
 
 #### Including shrinkage in Manufacturing
 
->   When you enter item information in Inventory Control, you can specify
->   shrinkage percentages. The amounts you enter can be reflected in the
->   quantity calculations for manufacturing orders, in cost calculations for
->   standard cost rollups, or both.
+When you enter item information in Inventory Control, you can specify shrinkage percentages. The amounts you enter can be reflected in the quantity calculations for manufacturing orders, in cost calculations for standard cost rollups, or both.
 
->   Refer to the table for more information about where the shrinkage percentage
->   information comes from, and how it’s determined if the shrinkage percentage
->   is reflected in quantities or costs.
+Refer to the table for more information about where the shrinkage percentage information comes from, and how it’s determined if the shrinkage percentage is reflected in quantities or costs.
 
 |                                                                      | **Component**                                                                                                                                                                                           | **Finished good**                                  |
 |----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -242,91 +158,59 @@ Manufacturing documentation is divided into five manuals. Refer to the following
 
 #### Shop calendars
 
->   You’ll use the Shop Calendar window to indicate which days your plant is
->   running—and which days it isn’t. You can choose weekends, holidays, or any
->   other days as “down days.” When you use modules such as Manufacturing Order
->   Processing, down days can be taken into consideration in order scheduling.
+You’ll use the Shop Calendar window to indicate which days your plant is running—and which days it isn’t. You can choose weekends, holidays, or any other days as “down days.” When you use modules such as Manufacturing Order Processing, down days can be taken into consideration in order scheduling. 
 
->   You might have to make specific adjustments to the calendar when unforeseen
->   events occur—when your plant has a down day because of a power failure, for
->   example, or when an extra shift is scheduled.
+You might have to make specific adjustments to the calendar when unforeseen events occur—when your plant has a down day because of a power failure, for example, or when an extra shift is scheduled.
 
-*Settings you choose when defining the shop calendar will be the default
-settings for your work centers. However, after you create work centers, changes
-to the shop calendar won’t be reflected in existing work center calendars. Use
-the Shop Calendar when you’re initially setting up your company, but use work
-center calendars to make day-to-day adjustments.*
+*Settings you choose when defining the shop calendar will be the default settings for your work centers. However, after you create work centers, changes to the shop calendar won’t be reflected in existing work center calendars. Use the Shop Calendar when you’re initially setting up your company, but use work center calendars to make day-to-day adjustments.*
 
 #### Defining the shop calendar
 
->   You need to define one shop calendar for each company, but you can adjust
->   the shop calendar for each work center.
+You need to define one shop calendar for each company, but you can adjust the shop calendar for each work center.
 
->   **To define the shop calendar:**
+**To define the shop calendar:**
 
-1.  Open the Shop Calendar window. (Microsoft Dynamics GP menu \>\> Tools \>\>
-    Setup \>\> Manufacturing \>\> System Defaults \>\> Calendar)
+1.  Open the Shop Calendar window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Calendar)
 
-IMAGE MFGCAL.jpg
+![](media/MFGCAL.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/04506b5eba9985d22f1e1b18856e4692.jpg)
+The window will open to the current month and year.
 
->   The window will open to the current month and year.
-
-1.  Enter the number of shifts, hours per shift and start time information.
+2.  Enter the number of shifts, hours per shift and start time information.
 
 *The number of shifts multiplied by the hours per shift can’t exceed 24.*
 
-1.  Mark the option for weekly down days. You can choose None, Sundays Only, or
-    Saturdays and Sundays.
+3.  Mark the option for weekly down days. You can choose None, Sundays Only, or Saturdays and Sundays. Down days will appear in black.
 
->   Down days will appear in black.
+4.  Mark any other down days. A message will appear, telling you that continuing with the process might affect scheduling. To continue the process, choose Yes.
 
-1.  Mark any other down days. A message will appear, telling you that continuing
-    with the process might affect scheduling. To continue the process, choose
-    Yes.
+*To make a down day available for scheduling, select the day in the Shop Calendar window to clear the setting.*
 
-*To make a down day available for scheduling, select the day in the Shop
-Calendar window to clear the setting.*
-
-1.  Choose OK and close the window.
+5.  Choose OK and close the window.
 
 #### Setting up work center options
 
->   Use work center default options to create two fields that will be linked to
->   routing operation codes. Enter the labels for the fields in the Work Center
->   Preference Defaults window.
+Use work center default options to create two fields that will be linked to routing operation codes. Enter the labels for the fields in the Work Center Preference Defaults window.
 
->   **To set up work center options:**
+**To set up work center options:**
 
 1.  Open the Work Center Preference Defaults window.
 
->   (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\>
->   System Defaults \>\> Work Centers)
+(Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Work Centers)
 
-IMAGE MFGWC.jpg
+![](media/MFGWC.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/cffe1eb0c6b8bab6c0aaf1a2d187aa78.jpg)
-
-1.  In the User-Defined Prompt fields, enter the label or labels for the
-    additional fields you’re creating. These fields will appear in the
-    Operations Setup window.
-
-2.  Choose OK.
+2.  In the User-Defined Prompt fields, enter the label or labels for the additional fields you’re creating. These fields will appear in the Operations Setup window and choose OK.
 
 #### Designating system users
 
->   System users have more access privileges than other users. Like system
->   administrators, system users can set preferences for other users.
+System users have more access privileges than other users. Like system administrators, system users can set preferences for other users.
 
-*Before you can designate system users, you must enter user information in the
-User Setup window. Refer to your System Setup Instructions (Help \>\> Contents
-\>\> select Setting Up the System) for more information.*
+*Before you can designate system users, you must enter user information in the User Setup window. Refer to your System Setup Instructions (Help \>\> Contents \>\> select Setting Up the System) for more information.*
 
->   **To designate system users:**
+**To designate system users:**
 
-1.  Open the Add Users window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup
-    \>\> Manufacturing \>\> System Defaults \>\> System User)
+1.  Open the Add Users window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> System User)
 
 2.  Enter or select the user ID for an employee who is to be a system user.
 
@@ -335,21 +219,17 @@ User Setup window. Refer to your System Setup Instructions (Help \>\> Contents
 *To remove a system user, mark the user ID in the scrolling window and choose
 Remove.*
 
-1.  Continue, repeating steps 2 and 3 to add as many system users as you like.
+4.  Continue, repeating steps 2 and 3 to add as many system users as you like.
 
-2.  Choose OK and close the window.
+5.  Choose OK and close the window.
 
 ### Chapter 2: Security
 
->   Security builds safeguards into your software to restrict access to
->   information, processes, or windows. In Manufacturing, each of these types of
->   security is included. You should understand each of the three security types
->   before setting up security access for your users.
+Security builds safeguards into your software to restrict access to information, processes, or windows. In Manufacturing, each of these types of security is included. You should understand each of the three security types before setting up security access for your users.
 
->   *Before you set up security access for Manufacturing, you should have
->   defined users and determined the level of access each user will have.*
+*Before you set up security access for Manufacturing, you should have defined users and determined the level of access each user will have.*
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Manufacturing security types*
 
@@ -361,65 +241,31 @@ Remove.*
 
 #### Manufacturing security types
 
->   Refer here for information about some of the terms related to security.
+Refer here for information about some of the terms related to security.
 
->   **User security** You can determine which windows and reports each user in
->   your organization can use. Users can’t use any *modified* windows or reports
->   until you give them access to the windows and reports. Window and report
->   security is used throughout your accounting and manufacturing system. To
->   learn more about setting up user security, refer to the System Setup Guide
->   (Help \>\> Contents \>\> select Setting up the System).
+**User security** You can determine which windows and reports each user in our organization can use. Users can’t use any *modified* windows or reports until you give them access to the windows and reports. Window and report security is used throughout your accounting and manufacturing system. To learn more about setting up user security, refer to the System Setup Guide (Help \>\> Contents \>\> select Setting up the System).
 
->   *User security can be used to restrict access only to windows and reports.
->   To restrict access to information on a field-by-field basis, use Field Level
->   Security or create alternate forms and windows. Refer to the Modifier User’s
->   Guide for more information about creating alternate forms and windows. Refer
->   to the System Setup Guide (Help \>\> Contents \>\> select Setting up the
->   System) for more information about Field Level Security.*
+*User security can be used to restrict access only to windows and reports. To restrict access to information on a field-by-field basis, use Field Level Security or create alternate forms and windows. Refer to the Modifier User’s Guide for more information about creating alternate forms and windows. Refer to the System Setup Guide (Help \>\> Contents \>\> select Setting up the System) for more information about Field Level Security.*
 
->   **Process security** Process security is a special type of security that you
->   can use to limit authority for completing special procedures in
->   Manufacturing, such as revaluing inventory or generating manufacturing
->   orders from Sales Order Processing. First, you must define process security
->   sets. A process security set can be based on a list of users who will have
->   authority to complete a specific process, or it can be based on a password.
->   You can create as many process security sets as you like and apply different
->   sets to different processes throughout Manufacturing.
+**Process security** Process security is a special type of security that you can use to limit authority for completing special procedures in Manufacturing, such as revaluing inventory or generating manufacturing orders from Sales Order Processing. First, you must define process security sets. A process security set can be based on a list of users who will have authority to complete a specific process, or it can be based on a password. You can create as many process security sets as you like and apply different
+sets to different processes throughout Manufacturing.
 
->   *For more information, refer to Process security and Creating and modifying
->   process security sets.*
+*For more information, refer to Process security and Creating and modifying process security sets.*
 
->   **Manufacturing module security** Some Manufacturing processes—such as
->   generating Material Requirements Planning (MRP) information or updating
->   routing records—can be done only when no other users are working with
->   certain records. With the security that is provided for bills of materials,
->   routings, data collection, and MRP, you can see which other users are using
->   records that prevent you from completing MRP regeneration or other
->   processes. You can end other users’ sessions or you can ask them to end
->   their sessions.
+**Manufacturing module security** Some Manufacturing processes—such as generating Material Requirements Planning (MRP) information or updating routing records—can be done only when no other users are working with certain records. With the security that is provided for bills of materials, routings, data collection, and MRP, you can see which other users are using records that prevent you from completing MRP regeneration or other processes. You can end other users’ sessions or you can ask them to end
+their sessions.
 
->   You also can use Manufacturing module security to unlock records that might
->   become locked if a user’s computer becomes suspended. If a power failure
->   occurs when a user is updating a routing record, for example, the routing
->   record might need to be unlocked.
+You also can use Manufacturing module security to unlock records that might become locked if a user’s computer becomes suspended. If a power failure occurs when a user is updating a routing record, for example, the routing record might need to be unlocked.
 
 *For more information, refer to Using Manufacturing module security.*
 
 #### Process security
 
->   Process security is useful for safeguarding certain manufacturing processes,
->   such as revaluing standard cost items or overriding purchase order
->   quantities. With process security in place, you can limit who in your
->   company has authorization to complete certain critical processes.
+Process security is useful for safeguarding certain manufacturing processes, such as revaluing standard cost items or overriding purchase order quantities. With process security in place, you can limit who in your company has authorization to complete certain critical processes.
 
->   Manufacturing process security system uses security sets—passwords or groups
->   of user IDs—to limit who can complete certain tasks. When a security set for
->   a task is based on a group of users, only users in that group can perform
->   the task. When a security set for a task is based on a password, any user
->   who attempts to complete the task will be required to enter the appropriate
->   password before proceeding.
+Manufacturing process security system uses security sets—passwords or groups of user IDs—to limit who can complete certain tasks. When a security set for a task is based on a group of users, only users in that group can perform the task. When a security set for a task is based on a password, any user who attempts to complete the task will be required to enter the appropriate password before proceeding.
 
->   You can use process security for completing the following tasks.
+You can use process security for completing the following tasks.
 
 -   Revaluing inventory
 
@@ -438,8 +284,7 @@ Remove.*
 
 -   Auto-generating manufacturing orders
 
--   Managing links between manufacturing orders and purchase orders for
-    outsourcing
+-   Managing links between manufacturing orders and purchase orders for outsourcing
 
 -   Managing shipments to outsourcing vendors
 
@@ -447,63 +292,45 @@ Remove.*
 
 #### Creating and modifying process security sets
 
->   You can create an unlimited number of security sets. You can use the same
->   security set for all tasks that are protected by process security, or you
->   can create a separate security set for each task.
+You can create an unlimited number of security sets. You can use the same security set for all tasks that are protected by process security, or you can create a separate security set for each task. 
 
->   Once you’ve created a process security set, you can modify it at anytime.
->   For example, you might change the password or add or remove user IDs.
+Once you’ve created a process security set, you can modify it at anytime. For example, you might change the password or add or remove user IDs. 
 
->   **To create or modify process security sets:**
+**To create or modify process security sets:**
 
-1.  Open the Process Security Setup window. (Microsoft Dynamics GP menu \>\>
-    Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Process
-    Security)
+1.  Open the Process Security Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Process Security)
 
 2.  Enter or select a name for the security set.
 
-3.  If you’re creating a new security set, mark Password or User ID to determine
-    the kind of security set you’re creating. If you’re modifying an existing
-    security set, skip to step 4.
+3.  If you’re creating a new security set, mark Password or User ID to determine the kind of security set you’re creating. If you’re modifying an existing security set, skip to step 4.
 
     -   If you marked Password, enter the password.
 
-    -   If you marked User ID, use the lookup button on the User IDs field to
-        choose the users to include in the security set.
+    -   If you marked User ID, use the lookup button on the User IDs field to choose the users to include in the security set.
 
 4.  Make changes, as needed.
 
-    -   To change a password, select the text in the Password field and enter
-        the new password.
+    -   To change a password, select the text in the Password field and enter the new password.
 
     -   To add a user, choose a user in the User IDs field.
 
-    -   To remove a user, mark the user ID in the scrolling window and then
-        choose Remove.
+    -   To remove a user, mark the user ID in the scrolling window and then choose Remove.
 
 5.  Choose Save.
 
 #### Using Manufacturing module security
 
->   You can use Manufacturing module security to unlock locked bills of
->   materials, routings, data collection records, manufacturing orders, and
->   MRP-planned orders. You also can use module security to remove MRP users.
->   You might need to unlock records to perform certain processes, such as
->   regenerating MRP information.
+You can use Manufacturing module security to unlock locked bills of materials, routings, data collection records, manufacturing orders, and MRP-planned orders. You also can use module security to remove MRP users. You might need to unlock records to perform certain processes, such as regenerating MRP information.
 
->   The window you’ll use to view or unlock locked records will depend on the
->   type of record you’re working with.
+The window you’ll use to view or unlock locked records will depend on the type of record you’re working with.
 
->   You need system administrator access to unlock most records. To unlock some
->   records, you must supply the system password to open the window. To unlock
->   other records, you must supply the system password when you choose the
->   Delete button.
+You need system administrator access to unlock most records. To unlock some records, you must supply the system password to open the window. To unlock other records, you must supply the system password when you choose the Delete button.
 
 **To use Manufacturing module security:**
 
 1.  Open the appropriate window for the type of record to unlock.
 
->   Refer to the table for more information.
+Refer to the table for more information.
 
 | **Type of record**  | **Window and path**                                                                                        |
 |---------------------|------------------------------------------------------------------------------------------------------------|
@@ -514,34 +341,27 @@ Remove.*
 | MRP                 | MRP Security window - (Transactions \>\> Manufacturing \>\> MRP \>\> Security)                             |
 | MRP-planned orders  | MRP-Planned Order Security window - (Transactions \>\> Manufacturing \>\> MRP \>\> MRP Planned Order       |
 
->   Security)
+Security)
 
->   Security)
+Security)
 
-1.  View the information in the scrolling window. Each of these windows displays
-    the user ID of the person who has locked each record.
+2.  View the information in the scrolling window. Each of these windows displays the user ID of the person who has locked each record.
 
->   *It’s a good idea to contact the user and request that he or she close the
->   window to unlock a record. If that’s not possible, use these windows to end
->   user sessions.*
+*It’s a good idea to contact the user and request that he or she close the window to unlock a record. If that’s not possible, use these windows to end user sessions.*
 
-1.  Highlight a record to unlock in the scrolling window.
+3.  Highlight a record to unlock in the scrolling window.
 
-2.  Choose Delete.
+4.  Choose Delete.
 
-3.  Repeat steps 3 and 4 to unlock as many records, as needed.
+5.  Repeat steps 3 and 4 to unlock as many records, as needed.
 
-4.  When you’ve finished, close the window.
+6.  When you’ve finished, close the window.
 
 ### Chapter 3: Manufacturing core functions setup
 
->   Information about setting up system settings for use with core functions
->   modules— Bills of Materials, Sales Configurator, and extensions to Microsoft
->   Dynamics GP Sales Order Processing—is included here. You must set up system
->   and user settings to determine how Manufacturing will function for your
->   business.
+Information about setting up system settings for use with core functions modules— Bills of Materials, Sales Configurator, and extensions to Microsoft Dynamics GP Sales Order Processing—is included here. You must set up system and user settings to determine how Manufacturing will function for your business.
 
->   This information is divided into the following sections:
+This information is divided into the following sections:
 
 -   *Setting up bills of materials system settings*
 
@@ -559,8 +379,7 @@ Remove.*
 
 #### Setting up bills of materials system settings
 
->   System settings for Manufacturing Bill of Materials help you to accomplish
->   several tasks. Refer to the table for more information.
+System settings for Manufacturing Bill of Materials help you to accomplish several tasks. Refer to the table for more information.
 
 | **Task**                                                                                                                                                                 | **Required?** |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
@@ -570,52 +389,35 @@ Remove.*
 | Specify whether site information for building a phantom subassembly item will be based on the phantom item’s bill of materials or the finished goods’ bill of materials. | No            |
 | Specify options for mass-changing bills of materials.                                                                                                                    | No            |
 
->   You’ll use the BOM Preference Defaults window to complete these tasks.
+You’ll use the BOM Preference Defaults window to complete these tasks.
 
->   **To set up bills of materials system settings:**
+**To set up bills of materials system settings:**
 
-1.  Open the BOM Preference Defaults window. (Microsoft Dynamics GP menu \>\>
-    Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Bill of
-    Materials)
+1.  Open the BOM Preference Defaults window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Bill of Materials)
 
-IMAGE - MFGBOM
+![](media/MFGBOM.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/ad05a25ecf94b6674192d1e77f8455cb.jpg)
+2.  Specify which visual cue should be used by default in the Bill of Materials Entry window and the Bill of Materials View window.  Each user can choose a different visual cue, if needed.
 
-1.  Specify which visual cue should be used by default in the Bill of Materials
-    Entry window and the Bill of Materials View window.
+3.  Choose the date that should be used to calculate component lead time dates. This selection determines how lead times are calculated for all components and can’t be changed on a per-user basis.
 
->   Each user can choose a different visual cue, if needed.
+For more information about lead time offsets, refer to *Lead time calculations* in *Chapter 9, “Bill of Materials overview,”* in the
+Manufacturing Core Functions documentation. 
 
-1.  Choose the date that should be used to calculate component lead time dates.
-    This selection determines how lead times are calculated for all components
-    and can’t be changed on a per-user basis.
+4.  You can enter labels for user-defined fields, if needed.
 
->   For more information about lead time offsets, refer to *Lead time
->   calculations* in *Chapter 9, “Bill of Materials overview,”* in the
->   Manufacturing Core Functions documentation.
+Later, you can add information in the user-defined fields in the Bill of Materials Entry window. You can enter information for each component in each bill of materials. Refer to *Changing component details* in *Chapter 11, “Bill of Materials entry,”* in the Manufacturing Core Functions documentation for more information.
 
-1.  You can enter labels for user-defined fields, if needed.
+5.  To specify how the issue-to site for components of phantom items are determined, you can use the Use Work Centers from the phantom’s BOM option.
 
->   Later, you can add information in the user-defined fields in the Bill of
->   Materials Entry window. You can enter information for each component in each
->   bill of materials. Refer to *Changing component details* in *Chapter 11,
->   “Bill of Materials entry,”* in the Manufacturing Core Functions
->   documentation for more information.
-
-1.  To specify how the issue-to site for components of phantom items are
-    determined, you can use the Use Work Centers from the phantom’s BOM option.
-
->   Refer to the table for more information.
+Refer to the table for more information.
 
 |                                                                                | **Option is marked**                                                                                   | **Option is unmarked**                                                                                    |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | **Phantom item has no issue-to site in the finished goods’ bill of materials** | The issue-to site for components of the phantom item comes from the phantom item’s bill of materials.  |                                                                                                           |
 | **Phantom item has an issue-to site in the finished goods’ bill of materials** | The issue-to site for components of the phantom item comes from the finished good’s bill of materials. | The issue-to site for components of the phantom item are comes from the phantom item’s bill of materials. |
 
->   Refer to *Phantom items as components of phantom items* for examples of how
->   the rules are applied when a manufacturing order for a phantom item includes
->   phantom components.
+Refer to *Phantom items as components of phantom items* for examples of how the rules are applied when a manufacturing order for a phantom item includes phantom components.
 
 1.  To specify the default spacing between position numbers, enter a number in
     the New Component Position Number Incremental Spacing field.
