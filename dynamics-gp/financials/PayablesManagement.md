@@ -3469,6 +3469,23 @@ All the inquiry windows except for the Payables Summary Inquiry window use links
 
     ![screenshot](media/04b75579f86ed98831aafdcf25aac3a1.jpg)
 
+If you receive an error message when going into a Payables Inquiry window such as:
+'Cannot insert the value NULL into column 'DOCTYABR', table 'tempdb.dbo.'
+This may happen if you have invalid records in the PM00400 table.
+
+Typically, we see this error message caused when there are null records in the PM00400 table.  Please run the select statements below in SQL against the erring company database: 
+select * from PM00400 where DOCTYPE = ' ' or DOCTYPE = '0'
+select * from PM00400 where DCSTATUS = ' ' OR DCSTATUS = '0'
+
+If you get any results, delete them via SQL. 
+**Be sure to try this in a TEST company first and make a good restorable backup before proceeding in LIVE before performing the next steps**
+delete PM00400 where DOCTYPE = ' ' or DOCTYPE = '0'
+delete PM00400 where DCSTATUS = ' ' OR DCSTATUS = '0'
+
+After running the delete statements you will need to run Checklinks on the Payables History and Payables transactions Logical Files.  (Under: Microsoft Dynamics GP menu >> Maintenance >> Check Links)
+Choose Series of Purchasing and insert the above tables to the right and choose OK.
+Verify the error no longer exists.
+
 ### Chapter 16: Reports
 
 You can use Payables Management reports to analyze vendor activity and identify errors in transaction entry. Use this information to guide you through printing reports, and working with report options.
