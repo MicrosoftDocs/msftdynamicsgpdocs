@@ -125,7 +125,7 @@
 <!--- payroll -->
 ## Payroll
 ### [Advanced Payroll](payroll/AdvancedPayroll.md)
-### [Canadian Year-End](payroll/CAN18YETax.md)
+### [Canadian Payroll Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
 ### [U.S. Payroll](payroll/PayrollUS.md)
 ### [Payroll Extensions](payroll/PayrollExtensions.md)
