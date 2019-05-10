@@ -123,6 +123,7 @@
 #### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utilities.md)
 ### [Invoicing](distribution/Invoicing.md)
 ### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
+### [Invoicing](distribution/Invoicing.md)
 ### [Glossary](distribution/glossary.md)
 
 <!--- payroll -->
