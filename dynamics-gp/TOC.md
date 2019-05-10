@@ -84,6 +84,7 @@
 
 <!--- financials -->
 ## Financials
+### [Analytical Accounting] (financials/AnalyticalAccounting.md)
 ### [Bank Reconciliation](financials/BankReconciliation.md)
 ### [Multicurrency Management](financials/MulticurrencyManagement.md)
 ### [Cash Flow Mananagement](financials/CashFlowManagement.md)
