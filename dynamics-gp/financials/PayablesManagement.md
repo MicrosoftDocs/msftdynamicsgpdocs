@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 02/05/2019
+ms.date: 05/10/2019
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -3468,6 +3468,26 @@ All the inquiry windows except for the Payables Summary Inquiry window use links
 3. Select a transaction in the scrolling window and choose the Unapplied Amount link. The Payables Apply Zoom window opens. Choose OK to close the window when you finish.
 
     ![screenshot](media/04b75579f86ed98831aafdcf25aac3a1.jpg)
+
+If you receive an error message when going into a Payables Inquiry window such as:
+'Cannot insert the value NULL into column 'DOCTYABR', table 'tempdb.dbo.'
+This may happen if you have invalid records in the PM00400 table.
+
+Typically, we see this error message caused when there are null records in the PM00400 table.  Please run the select statements below in SQL against the erring company database: 
+select * from PM00400 where DOCTYPE = ' ' or DOCTYPE = '0'
+select * from PM00400 where DCSTATUS = ' ' OR DCSTATUS = '0'
+
+If you get any results, delete them in SQL Server. 
+
+> [!IMPORTANT] 
+> Make sure that you try this in a TEST company first, and that you take a good restorable backup before proceeding in LIVE before performing the next steps
+
+- delete PM00400 where DOCTYPE = ' ' or DOCTYPE = '0'
+- delete PM00400 where DCSTATUS = ' ' OR DCSTATUS = '0'
+
+After running the delete statements you will need to run Checklinks on the Payables History and Payables transactions Logical Files.  (Under: Microsoft Dynamics GP menu >> Maintenance >> Check Links)
+Choose Series of Purchasing and insert the above tables to the right and choose OK.
+Verify the error no longer exists.
 
 ### Chapter 16: Reports
 
