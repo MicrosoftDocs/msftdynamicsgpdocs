@@ -1105,6 +1105,9 @@ You can turn the minimum check amount on or off by marking or unmarking the Use 
 
 Use this tool to consolidate checks to match the same vendor when users are appending to an existing checks batch. This can be useful if users frequently build batches of Payables checks and select different document number ranges or date ranges.
 
+> [!IMPORTANT]
+> You cannot use the Select Checks Combiner tool and the feature One check per Invoice that was added in Microsoft Dynamics GP 2018 RTM at the same time. What happens is that when the Select Checks Combiner tool in PSTL is enabled, you cannot have the Vendor option for ‘One Payment Per’ set to Invoice. If you do, Dynamics GP creates a Payment per each Invoice per your setup; then PSTL will remove the transactions from the Keys (PM00400) and Work (PM10300) records for all of the payments created after the first. The only real records for the payments will be found in the apply table (PM10200) and remittance table (PM20100). 
+
 **To activate Select Checks Combiner:**
 
 1. This tool modifies existing features within Microsoft Dynamics GP. To activate the new functionality that this tool offers, simply mark the second check box next to Select Checks Combiner from the Professional Services Tools Library menu. Close the window.
