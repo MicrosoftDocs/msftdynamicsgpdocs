@@ -85,6 +85,7 @@
 <!--- financials -->
 ## Financials
 ### [Bank Reconciliation](financials/BankReconciliation.md)
+### [Multicurrency Management](financials/MulticurrencyManagement.md)
 ### [Cash Flow Mananagement](financials/CashFlowManagement.md)
 ### [Inter Company Processing](financials/IntercompanyProcessing.md)
 ### [Payment Document Management](financials/PaymentDocumentManagement.md)
@@ -102,6 +103,8 @@
 
 <!--- distribution -->
 ## Distribution
+### [Field Service Returns Management](distribution/ReturnsManagement.md) 
+### [Manufacturing Setup](distribution/MfgSetup.md)
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
 ### [Concur Expense](distribution/ConcurExpense.md)
 ### [Purchase Order Processing](distribution/purchase-order-processing.md)
@@ -118,6 +121,7 @@
 #### [Sales Order Processing Part 4: Transaction activity](distribution/sales-order-processing-part4-transaction-activity.md)
 #### [Sales Order Processing Part 5: Inquiries and reports](distribution/sales-order-processing-part5-inquiries-reports.md)
 #### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utilities.md)
+### [Invoicing](distribution/Invoicing.md)
 ### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
 ### [Invoicing](distribution/Invoicing.md)
 ### [Glossary](distribution/glossary.md)
@@ -125,7 +129,8 @@
 <!--- payroll -->
 ## Payroll
 ### [Advanced Payroll](payroll/AdvancedPayroll.md)
-### [Canadian Payroll Year-End](payroll/CAN18YETax.md)
+### [Advanced Human Resource](payroll/AdvancedHumanResource.md)
+### [Canadian Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
 ### [U.S. Payroll](payroll/PayrollUS.md)
 ### [Payroll Extensions](payroll/PayrollExtensions.md)

@@ -88,8 +88,29 @@ When the submission is complete you will see the VAT Response window.
 
 ![Screenshot](media/uk-tax-vat-response.png)
 
+### To submit VAT Daybook returns
+
+1.	Create the column codes for GB country code for all the boxes in VAT Daybook report (Cards >> Company >> VAT Daybook report)
+
+2.	Create and Post Purchase and Sales transaction with Tax for GB customer and vendor.
+
+3.	If you want to view the report before submission then select the draft option in VAT Daybook report(Routines >> Company >> VAT day book report)
+
+4.	If not then you can print the audit trial code report for that posted period. As soon as you tab off from the period field HMRC login page will open up and you enter the credential.
+
+    a.	If in case, VAT calendar setup is not as per the HMRC calendar setup then you get the message for incorrect calendar setup and obligation window will open to view(only to view but you can’t select any period) the calendar setup for that year. You need to do the calendar setup as per the HMRC site in order to proceed further.
+
+    b.	If calendar setup is as per the HMRC then you can print the audit trial report.
+    
+5.	After generating the audit trial report, you can now perform the electronic submission for the same period.
+
+6.	When you choose Electronic Submission and then enter Year and Period Key, VAT HMRC login page pops up and you must enter the credentials.
+
+7.	After entering the credentials, you can click on submit button which again takes you to the HMRC login page. Post submission, VAT response window will open up for the submitted record.
+
+
 > [!NOTE]
 > After submitting the return, if the progress window does not start and there is no response window, it could be a proxy server issue. For more information, see [https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access](https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access)  
 
 > [!NOTE]
-> The above Making Tax Digital process of submitting to the HMRC also works for the VAT Daybook module in Dynamics GP. 
+> The above Making Tax Digital process of submitting to the HMRC also works for the VAT Daybook module in Dynamics GP.  VAT Daybook does not allow you to edit the amounts prior to submission like you can in the VAT 100 (return) window. 
