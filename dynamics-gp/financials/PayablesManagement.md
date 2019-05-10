@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 02/05/2019
+ms.date: 05/10/2019
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -3477,10 +3477,13 @@ Typically, we see this error message caused when there are null records in the P
 select * from PM00400 where DOCTYPE = ' ' or DOCTYPE = '0'
 select * from PM00400 where DCSTATUS = ' ' OR DCSTATUS = '0'
 
-If you get any results, delete them via SQL. 
-**Be sure to try this in a TEST company first and make a good restorable backup before proceeding in LIVE before performing the next steps**
-delete PM00400 where DOCTYPE = ' ' or DOCTYPE = '0'
-delete PM00400 where DCSTATUS = ' ' OR DCSTATUS = '0'
+If you get any results, delete them in SQL Server. 
+
+> [!IMPORTANT] 
+> Make sure that you try this in a TEST company first, and that you take a good restorable backup before proceeding in LIVE before performing the next steps
+
+- delete PM00400 where DOCTYPE = ' ' or DOCTYPE = '0'
+- delete PM00400 where DCSTATUS = ' ' OR DCSTATUS = '0'
 
 After running the delete statements you will need to run Checklinks on the Payables History and Payables transactions Logical Files.  (Under: Microsoft Dynamics GP menu >> Maintenance >> Check Links)
 Choose Series of Purchasing and insert the above tables to the right and choose OK.
