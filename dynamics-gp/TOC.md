@@ -30,6 +30,7 @@
 ### [Professional Service Tools Library](installation/ProfServicesToolsLibrary.md)
 ### [Security Planning](installation/SecurityPlanning.md)
 ### [System Setup](installation/SystemSetup.md)
+### [System Admin Guide] (installation/SystemAdminGuide.md)
 
 <!--- web components -->
 ### Web components
