@@ -30,6 +30,7 @@
 ### [Professional Service Tools Library](installation/ProfServicesToolsLibrary.md)
 ### [Security Planning](installation/SecurityPlanning.md)
 ### [System Setup](installation/SystemSetup.md)
+### [System Administration Guide](installation/SystemAdminGuide.md)
 
 <!--- web components -->
 ### Web components
@@ -84,6 +85,7 @@
 
 <!--- financials -->
 ## Financials
+### [Analytical Accounting](financials/AnalyticalAccounting.md)
 ### [Bank Reconciliation](financials/BankReconciliation.md)
 ### [Multicurrency Management](financials/MulticurrencyManagement.md)
 ### [Cash Flow Mananagement](financials/CashFlowManagement.md)
