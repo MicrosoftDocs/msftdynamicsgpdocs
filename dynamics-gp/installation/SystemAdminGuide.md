@@ -1,172 +1,17 @@
-**Contents**
-
->   **Introduction**
-
->   What’s in this manual
-
->   Symbols and conventions
-
->   Resources available from the Help menu
-
->   Send us your documentation comments
-
->   **Part 1: Customization**
-
->   **Chapter 1: System customization**
-
->   Modifying a routine checklist
-
->   Printing reports without dialog boxes
-
->   **Chapter 2: Printers**
-
->   Printer options
-
->   Printer classes
-
->   How printers are selected
-
->   Reports you can use with named printers
-
->   Setting up named printers
-
->   Setting up printers for a workstation
-
->   Adding a printer ID
-
->   Assigning named printers to reports
-
->   Importing printer settings
-
->   Setting up a template user for named printers
-
->   Changing printer ID settings
-
->   Changing machine ID settings
-
->   Changing printer assignments
-
->   Removing printer assignments
-
->   **Part 2: Routine maintenance**
-
->   **Chapter 3: Microsoft Dynamics GP tables**
-
->   How records are stored in Microsoft Dynamics GP tables
-
->   Table groups and tables
-
->   Table names
-
->   Main table types
-
->   Subtable types
-
->   Passive record locking
-
->   Effects of denying table access
-
->   **Chapter 4: Maintenance procedures**
-
->   Backups overview
-
->   Database backup procedures
-
->   When to perform a database backup
-
->   Backing up your data
-
->   **Chapter 11: Processing and monitoring remote processes**
-
->   Starting the Distributed Process Manager
-
->   Monitoring background processes
-
->   Viewing process detail
-
->   Viewing process information
-
-Removing and printing remote process information
-
->   **Part 4: Technical reference**
-
->   **Chapter 12: Integrating products**
-
->   Types of dictionariesMultidictionary environment example
-
->   Modifying reports for an integrating product
-
-Modifying windows for an integrating product
-
->   **Chapter 13: Launch files**
-
->   Launch files overview
-
->   Where to store dictionaries
-
->   Lines in a launch file
-
-Example launch file using integrating products
-
->   Example launch file using multiple location IDs
-
->   Example launch file using central dictionaries
-
->   Creating a launch file
-
->   Editing a launch file using the Edit Launch File window
-
->   Editing a launch file using a text editor
-
-Troubleshooting launch files
-
->   **Chapter 14: Defaults files**
-
->   How launch files and defaults files work together
-
->   Editing defaults files
-
-Damaged defaults files
-
->   **Part 5: Troubleshooting**
-
->   **Chapter 15: General troubleshooting**
-
->   Troubleshooting resources
-
->   Signs that data maintenance is needed
-
->   Finding which tables require maintenance
-
->   Alert message troubleshooting
-
-Before you call support
-
->   **Chapter 16: Data recovery**
-
->   Recovering data
-
->   Checking links
-
->   Reconciling tables
-
->   Restoring backups
-
->   **Chapter 17: Process server troubleshooting**
-
->   Process performed locally instead of remotely
-
->   Process server information not appearing in Process Server Inquiry window
-
->   Report errors
-
->   Items to check
-
->   Adjusting processing
-
->   **Glossary**
-
-**Introduction**
+---
+title: "System Administration Guide "
+description: "Learn about administration in Dynamics GP."
+keywords: "payroll"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 05/13/2019
+---
+
+# System Administration Guide 
 
 The System Administrator’s Guide is designed to give an experienced computer
 user the information that is needed to maintain Microsoft Dynamics® GP.
@@ -213,73 +58,9 @@ Microsoft Dynamics GP.
     commonly encountered problems with location translations, launch files,
     process servers, and defaults files.
 
->   **I N T R O D U C T I O N**
 
->   **Symbols and conventions**
 
->   For definitions of unfamiliar terms, see the glossary in the manual or refer
->   to the glossary in Help.
-
-| **Symbol**                               | **Description**                                                                                  |
-|------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [./media/image1.gif](./media/image1.gif) | The light bulb symbol indicates helpful tips, shortcuts and suggestions.                         |
-| [./media/image2.gif](./media/image2.gif) | The warning symbol indicates situations you should be especially aware of when completing tasks. |
-
-~   A close up of a logo Description automatically generated
-
-~   A close up of a logo Description automatically generated
-
->   This manual uses the following conventions to refer to sections, navigation
->   and other information.
-
-| **Convention**                       | **Description**                                                                                                                                                                                                   |
-|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Creating a batch*                   | Italicized type indicates the name of a section or procedure.                                                                                                                                                     |
-| File \>\> Print or **File \> Print** | The (\>\>) or (**\>**) symbol indicates a sequence of actions, such as selecting items from a menu or toolbar, or pressing buttons in a window. This example directs you to go to the File menu and choose Print. |
-| TAB or ENTER                         | All capital letters indicate a key or a key sequence.                                                                                                                                                             |
-
->   **Resources available from the Help menu**
-
->   The Microsoft Dynamics GP Help menu gives you access to user assistance
->   resources on your computer, as well as on the Web.
-
->   **Contents**
-
->   Opens the Help file for the active Microsoft Dynamics GP component, and
->   displays the main “contents” topic. To browse a more detailed table of
->   contents, click the Contents tab above the Help navigation pane. Items in
->   the contents topic and tab are arranged by module. If the contents for the
->   active component includes an “Additional Help files” topic, click the links
->   to view separate Help files that describe additional components.
-
->   To find information in Help by using the index or full-text search, click
->   the appropriate tab above the navigation pane, and type the keyword to find.
-
->   To save the link to a topic in the Help, select a topic and then select the
->   Favorites tab. Click Add.
-
->   **Index**
-
->   Opens the Help file for the active Microsoft Dynamics GP component, with the
->   Index tab active. To find information about a window that’s not currently
->   displayed, type the name of the window, and click Display.
-
->   **About this window**
-
->   Displays overview information about the current window. To view related
->   topics and descriptions of the fields, buttons, and menus for the window,
->   choose the appropriate link in the topic. You also can press F1 to display
->   Help about the current window.
-
-**I N T R O D U C T I O N**
-
-**Lookup**
-
-Opens a lookup window, if a window that you are viewing has a lookup window. For
-example, if the Checkbook Maintenance window is open, you can choose this item
-to open the Checkbooks lookup window.
-
->   **Part 1: Customization**
+## Part 1: Customization
 
 This part of the documentation describes how to customize the Microsoft Dynamics
 GP system to fit your needs. The following topics are discussed:
@@ -291,7 +72,7 @@ GP system to fit your needs. The following topics are discussed:
     up default printers for an entire system, for each user, or for each
     company.
 
-**Chapter 1: System customization**
+### Chapter 1: System customization
 
 >   Microsoft Dynamics GP allows you to tailor routine checklists, and report
 >   printing to your business’s specific needs. This enables you to provide
