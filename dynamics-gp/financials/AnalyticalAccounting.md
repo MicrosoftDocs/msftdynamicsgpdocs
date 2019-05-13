@@ -1,28 +1,17 @@
-**---**
+---
+title: "Analytical Accounting in Microsoft Dynamics GP"
+description: "Examine how analytical accounting works in Dynamics GP."
+keywords: "payroll"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 05/13/2019
+---
 
-**title: "Analytical Accounting in Microsoft Dynamics GP"**
-
-**description: " Analytical Accounting in Microsoft Dynamics GP."**
-
-**keywords: "Analytical Accounting"**
-
-**author: theley502**
-
-**ms.prod: dynamics-gp**
-
-**ms.topic: article**
-
-**ms.reviewer: edupont**
-
-**ms.author: theley**
-
-**ms.date: 05/9/2019**
-
-**---**
-
-**Microsoft Dynamics GP Analytical Accounting**
-
-**Introduction**
+# Microsoft Dynamics GP Analytical Accounting
 
 Analytical Accounting is a tool that helps you to analyze, interpret, and create
 reports based on your company’s chart of accounts.
@@ -46,18 +35,6 @@ With Analytical Accounting, you can:
 
 *You must be using Excel 2000 or higher to export Analytical Accounting queries
 to Excel.*
-
->   This introduction is divided into the following sections:
-
--   *What’s in this manual*
-
--   *Symbols and conventions*
-
--   *Resources available from the Help menu*
-
--   *Send us your documentation comments*
-
->   **What’s in this manual**
 
 This manual is designed to give you an understanding of how to use the features
 of Analytical Accounting, and how it integrates with the Microsoft Dynamics GP
@@ -90,37 +67,7 @@ using
 -   *Part 3, Routines, Inquiries and Reports*, describes how to perform queries
     for the analysis information you have entered and generate reports.
 
-**Index**
-
-Opens the Help file for the active Microsoft Dynamics GP component, with the
-Index tab active. To find information about a window that’s not currently
-displayed, type the name of the window, and click Display.
-
-**About this window**
-
-Displays overview information about the current window. To view related topics
-and descriptions of the fields, buttons, and menus for the window, choose the
-appropriate link in the topic. You also can press F1 to display Help about the
-current window.
-
-**Lookup**
-
-Opens a lookup window, if a window that you are viewing has a lookup window. For
-example, if the Checkbook Maintenance window is open, you can choose this item
-to open the Checkbooks lookup window.
-
-**Show Required Fields**
-
-Highlights fields that are required to have entries. You can change the font
-color and style used to highlight required fields. On the Microsoft Dynamics GP
-menu, choose User Preferences, and then choose Display.
-
-**What’s New**
-
-Provides information about enhancements that were added to Microsoft Dynamics GP
-since the last major release.
-
-**Part 1: Setup**
+## Part 1: Setup
 
 >   Use this part of the documentation to understand how you can start using
 >   Analytical Accounting. The following information is discussed:
@@ -135,7 +82,7 @@ since the last major release.
     budgets to nodes and account combinations. It also explains how you can
     export and import budgeted information to Excel.
 
-**Chapter 1: Setup**
+### Chapter 1: Setup
 
 >   The Analytical Accounting Setup wizard helps you complete the tasks required
 >   to begin using Analytical Accounting. You can use the information here to
