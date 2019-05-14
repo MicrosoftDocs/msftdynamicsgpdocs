@@ -11,10 +11,10 @@ ms.author: theley
 ms.date: 05/14/2019
 ---
 
-# System Administration Guide 
+# System Administration Guide
 
 The System Administrator’s Guide is designed to give an experienced computer
-user the information that is needed to maintain Microsoft Dynamics® GP.
+user the information that is needed to maintain Microsoft Dynamics GP.
 
 This manual includes detailed information about maintaining data, optimizing
 databases, setting up printers, using the Distributed Process Server, and
@@ -80,26 +80,19 @@ payday, at the end of a period, month, quarter, fiscal year or calendar
 year, during setup, or at a frequency you choose. In addition, you can
 record macros and add them to your checklists.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
-
-*While you can open the appropriate windows to perform the tasks from a
-checklist window, the actual tasks aren’t performed automatically.*
+> [!NOTE]
+> While you can open the appropriate windows to perform the tasks from a checklist window, the actual tasks aren’t performed automatically.
 
 The checklist of routines acts as a sort of audit trail, recording the time
 each task was selected, the date the task was completed and the user ID of
 the user who completed the procedure.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
-
-*A checklist registers the ID of the user who performed a routine and when
-it was completed only if a user performed it by selecting the routine in the
-checklists window and choosing Open. The checklist will not be updated if a
-user performs a routine by opening a window any other way, such as from a
-menu.*
+> [!NOTE]
+> A checklist registers the ID of the user who performed a routine and when it was completed only if a user performed it by selecting the routine in the checklists window and choosing Open. The checklist will not be updated if a user performs a routine by opening a window any other way, such as from a menu.
 
 **To modify a routine checklist:**
 
@@ -109,7 +102,7 @@ menu.*
 
 (Administration \>\> Routines \>\> Company \>\> Checklists)
 
-![A screenshot of a cell phone Description automatically generated](media/41e0028d957325a5ec9ead101e554179.jpg)
+![A screenshot ](media/41e0028d957325a5ec9ead101e554179.jpg)
 
 1. Select a module within the series, if necessary.
 
@@ -121,9 +114,8 @@ menu.*
 
 4. If you are adding a routine, name the routine in the Add-Modify window.
 
-![](media/a70a053047b2ea7d171a61dc3d65cc1c.jpg)
+![A Screenshot](media/a70a053047b2ea7d171a61dc3d65cc1c.jpg)
 
-A screenshot of a cell phone Description automatically generated
 
 1. In the Type list, specify the type of routine to add.
 
@@ -133,8 +125,7 @@ A screenshot of a cell phone Description automatically generated
 
     - Microsoft Dynamics GP macro
 
-2. Choose the Application lookup button to view the options for the type of
-    routine you selected in step 7.
+2. Choose the Application lookup button to view the options for the type of     routine you selected in step 7.
 
 The following table presents subsequent required actions for each option:
 
@@ -146,15 +137,10 @@ The following table presents subsequent required actions for each option:
 
 1. Choose OK to add the item to the list of routines.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
-
-*Choosing the Revert button in a list of routines removes all the additions
-and modifications you’ve made, and resets the list of routines to the
-Microsoft Dynamics GP default settings. The original settings are denoted by
-a 0/0/0 in the Date Done column and 12: 00: 00 AM in the Time column.
-Original settings don’t have an entry in the User ID column.*
+> [!NOTE]
+> Choosing the Revert button in a list of routines removes all the additions and modifications you’ve made, and resets the list of routines to the Microsoft Dynamics GP default settings. The original settings are denoted by a 0/0/0 in the Date Done column and 12: 00: 00 AM in the Time column. Original settings don’t have an entry in the User ID column.
 
 #### Printing reports without dialog boxes
 
@@ -165,14 +151,12 @@ and print posting journals overnight, you may want to prevent the print
 dialog box from appearing. The dialog box is shown in the following
 illustration.
 
-![A screenshot of a cell phone Description automatically generated](media/4ba7ad1fa62be89d95ad738ce5d6955f.jpg)
+![A screenshot ](media/4ba7ad1fa62be89d95ad738ce5d6955f.jpg)
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
-
-*You need to complete these steps on each computer where you don’t want
-print dialog boxes to appear.*
+> [!NOTE]
+> You need to complete these steps on each computer where you don’t want print dialog boxes to appear.
 
 **To print reports without dialog boxes:**
 
@@ -181,7 +165,7 @@ print dialog boxes to appear.*
 (Administration \>\> Setup \>\> System \>\> Named Printers \>\> Machine ID
 link)
 
-![A screenshot of a cell phone Description automatically generated](media/cc41fa92885c57432374ba9f8f515aec.jpg)
+![A screenshot ](media/cc41fa92885c57432374ba9f8f515aec.jpg)
 
 1. Mark the Do Not Display System Print Dialog option.
 
@@ -190,7 +174,7 @@ link)
 If you haven’t set up the default printer, the Setup Named Printers window
 will open along with the Microsoft Windows Print Setup window. The default
 printer is used if there is not a printer specified for the report or
-company. See *Setting up printers for a workstation* on page 13 for more
+company. See *[Setting up printers for a workstation](#setting-up-printers-for-a-workstation) for more
 information about setting up the default printer.
 
 ### Chapter 2: Printers
@@ -231,8 +215,7 @@ This information includes the following sections:
 
 #### Printer options
 
-You have many choices when you print reports or documents in Microsoft
-Dynamics GP.
+You have many choices when you print reports or documents in Microsoft Dynamics GP.
 
 - You can select the printer each time you print a report.
 
@@ -248,8 +231,7 @@ used for.
 
 #### Printer classes
 
-You can use printer classes when you print reports or documents in Microsoft
-Dynamics GP.
+You can use printer classes when you print reports or documents in Microsoft Dynamics GP.
 
 **System** Printer IDs assigned to the System class will be available to all
 combinations of users and companies.
@@ -370,11 +352,11 @@ printers default printer, not the workstation’s default printer.
 
 (Administration \>\> Setup \>\> System \>\> Named Printers)
 
-![A screenshot of a cell phone Description automatically generated](media/4a0f8edd2921d216ee7eee22a19febca.jpg)
+![A screenshot ](media/4a0f8edd2921d216ee7eee22a19febca.jpg)
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *If you have already set up printers for a workstation, choose
 Administration \>\> Setup \>\> System \>\> Named Printers \>\> Machine ID
@@ -401,18 +383,18 @@ In the Print Setup window, the default printer from Windows will be the
 initial selection. You can change the printer and its settings. Choose OK to
 save your changes and close the Print Setup window.
 
-![A screenshot of a cell phone Description automatically generated](media/820d040d799a790f028581eb12bac16f.jpg)
+![A screenshot ](media/820d040d799a790f028581eb12bac16f.jpg)
 
 1. In the Setup Named Printers window, DEFAULT is entered as the printer ID and
     the printer name automatically comes from the Print Setup window in Step 5.
     You can change the printer and enter extra descriptive information for the
     printer.
 
-![A screenshot of a cell phone Description automatically generated](media/1896ae1842a2f630ea1a370fb90e59eb.jpg)
+![A screenshot ](media/1896ae1842a2f630ea1a370fb90e59eb.jpg)
 
 1. Select a printer class.
 
-![A close up of a logo Description automatically generated](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
 *For the default printer, the printer class must be System.*
 
@@ -432,7 +414,7 @@ one with portrait orientation, for the same printer.
 
 (Administration \>\> Setup \>\> System \>\> Named Printers)
 
-![A screenshot of a cell phone Description automatically generated](media/52d13f7a5e2d866b9232e22454d94a3b.jpg)
+![A screenshot ](media/52d13f7a5e2d866b9232e22454d94a3b.jpg)
 
 1. Choose Setup to open the Setup Named Printers window.
 
@@ -456,9 +438,9 @@ available only to a specified user and company combination.
 2. Select the printer and settings. You also can enter an extra description for
     the printer.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *If you have the capability to send and receive faxes from a workstation,
 you can set up the fax machine as a printer in Windows. This printer can be
@@ -484,7 +466,7 @@ combination. When choosing the default printer for a company, you can’t use
 Any Printer or Manual Selection for the printer class.
 
 The printer settings will be used only if you print the report to a printer.
-See *How printers are selected* on page 12 for more information.
+See *[How printers are selected](#how-printers-are-selected) for more information.
 
 **To assign named printers to reports:**
 
@@ -495,12 +477,11 @@ See *How printers are selected* on page 12 for more information.
 The user ID and company name you used to log in to Microsoft Dynamics GP
 appear in the user ID and company name fields, but you can change them.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
-
-*You also can assign a printer by choosing the Assign button in the Setup
-Named Printers window.*
+> [!TIP]
+> You also can assign a printer by choosing the Assign button in the Setup
+Named Printers window.
 
 1. Select a Sales task series.
 
@@ -511,8 +492,8 @@ Printers set up under the Processes series will be used only by the process
 server. If you want to send reports to the process server, you must select
 Process as the task series. You should not leave the printer ID field empty
 or use the Manual Selection printer class when using the process server. For
-information about setting up the Distributed Process Server, see *Chapter
-10, “Remote processing setup.”*
+information about setting up the Distributed Process Server, see [Chapter
+10, “Remote processing setup](#chapter-10-remote-processing-setup).
 
 1. Select a task description.
 
@@ -579,14 +560,10 @@ You can import the printer settings from one workstation to another. This
 allows you to set up a machine ID and printer settings on one workstation
 and duplicate the printer settings on other workstations in your system.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
-
-*Because printer settings are not always compatible between different
-Windows platforms, we recommend that you import settings only from
-workstations that are running the same version of Windows and have identical
-printer configurations in the control panel settings.*
+> [!NOTE]
+> Because printer settings are not always compatible between different Windows platforms, we recommend that you import settings only from workstations that are running the same version of Windows and have identical printer configurations in the control panel settings.
 
 **To import printer settings:**
 
@@ -597,9 +574,7 @@ printer configurations in the control panel settings.*
 1. Choose Setup to open the Setup Named Printers window, then choose Advanced
     to open the Setup Named Printers – Advanced window.
 
-![](media/ad24459d9210008d87a4871d244a2d45.jpg)
-
-A screenshot of a social media post Description automatically generated
+![A Screenshot](media/ad24459d9210008d87a4871d244a2d45.jpg)
 
 1. Enter the machine ID of the workstation you want to import the settings from
     and choose Import.
@@ -659,7 +634,7 @@ icons are used.
 | [./media/image12.jpg](./media/image12.jpg) | The user ID is linked to a template user. |
 | [](./media/image10.jpg)                    | The user ID is a template user.          |
 
-~   A close up of a logo Description automatically generated
+~   
 
 1. Choose OK to save your changes.
 
@@ -809,7 +784,7 @@ your customer records are stored together in a table group called the
 Receivables Customer Master Files. If you were entering a General Ledger
 transaction, that information would be stored in the Transaction Work table.
 
-![A screenshot of a cell phone Description automatically generated](media/a36ee3792d20a3dad35be1e289df5aef.jpg)
+![A screenshot ](media/a36ee3792d20a3dad35be1e289df5aef.jpg)
 
 Just as windows you use to make entries (input) are linked to a particular
 table, the information displayed on reports and documents you’ll print
@@ -829,7 +804,7 @@ Work table, and transaction amounts are stored in the Transaction Amounts Work
 or Transaction Clearing Amounts Work table, depending on whether you’ve entered
 a standard transaction or a clearing transaction.
 
-![A screenshot of a cell phone Description automatically generated](media/708ea670a694e9c158021345c5733c0f.gif)
+![A screenshot ](media/708ea670a694e9c158021345c5733c0f.gif)
 
 Note that the Transaction Work table group contains a Transaction Work table.
 Table groups typically include a table with the same name. In some cases, this
@@ -1036,15 +1011,13 @@ prevent loss of your company’s data by making frequent, regular backups.
 Having a good set of backups is like having insurance—without it, you risk
 losing your information and spending a great deal of time reentering it.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
-
-*If you have Microsoft Dynamics GP installed on a server, you must back up
-your data on the server.*
+> [!NOTE]
+> If you have Microsoft Dynamics GP installed on a server, you must back up your data on the server.
 
 In addition to making backups of your tables, you should back up your
-transactionrelated information by printing and storing posting journals and
+transactions-related information by printing and storing posting journals and
 reports, or by sending them to a file. Then, if you need to restore a
 backup, finding and reentering the information that’s been entered since the
 backup will be much simpler and quicker. Also, keep all of the reports that
@@ -1054,7 +1027,6 @@ tables contain the most complete information.
 
 To help ensure that you always have current backups, you should design and
 follow a formal backup schedule or create a schedule for automated backups.
-F
 
 Be sure to incorporate a rotation plan so that you aren’t copying over the
 same backup every day. This will eliminate the loss of data if an issue
@@ -1150,9 +1122,9 @@ Complete this procedure for each company you’re backing up and for the
 system database. You also can use SQL Server Management Studio to back up
 data.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *Only a system administrator can open the Back Up Company window to make
 backups. The Back Up Company window is only available when using a Microsoft
@@ -1164,7 +1136,7 @@ Dynamics GP installation on the SQL Server.*
 
 (Microsoft Dynamics GP menu \>\> Maintenance \>\> Backup)
 
-![A screenshot of a cell phone Description automatically generated](media/1597aff7f613c3f01bda5b389c6719a4.jpg)
+![A screenshot ](media/1597aff7f613c3f01bda5b389c6719a4.jpg)
 
 1. Select the company you want to back up, or System Database to back up system
     data.
@@ -1173,12 +1145,10 @@ Dynamics GP installation on the SQL Server.*
     you must be using SQL Server 2012 Service Pack 1 Cumulative Update 2 or
     later.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
-
-*Be sure to create a storage account and container if you want to use a
-Microsoft Azure storage location.*
+> [!IMPORTANT]
+> Make sure to create a storage account and container if you want to use a Microsoft Azure storage location.
 
 1. The path and file name of the backup file are displayed. You can modify the
     path and file name as needed.
@@ -1195,9 +1165,9 @@ Microsoft Azure storage location.*
 Use the SQL Maintenance window to reconfigure your data table keys for better
 performance.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *Microsoft SQL Server updates statistics automatically. For more
 information, see your SQL Server documentation.*
@@ -1216,7 +1186,7 @@ A system administrator can update statistics if there are performance issues.
 
 (Microsoft Dynamics GP menu \>\> Maintenance \>\> SQL)
 
-![A screenshot of a cell phone Description automatically generated](media/47d7888960f58bcf62671721c19fd983.jpg)
+![A screenshot ](media/47d7888960f58bcf62671721c19fd983.jpg)
 
 1. Select a database and at least one table, and mark the Update Statistics
     option.
@@ -1229,12 +1199,10 @@ Use the SQL Maintenance window to adapt stored procedures to data tables
 with significant increases or decreases in data, resulting in better
 performance.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
-
-*Microsoft SQL Server recompiles stored procedures automatically. For more
-information, see your SQL Server documentation.*
+> [!NOTE]
+> Microsoft SQL Server recompiles stored procedures automatically. For more information, see your SQL Server documentation.
 
 As you make changes to your database that affect statistics, your stored
 procedures may lose efficiency. By recompiling the stored procedures that
@@ -1310,7 +1278,7 @@ installed, as the products to reload database objects for.
 (Choose Start \>\> All Programs \>\> Microsoft Dynamics \>\> GP \>\>
 Database Maintenance.)
 
-![A screenshot of a cell phone Description automatically generated](media/4a6f5ca9a4f1c8afbb262366b0b99c03.jpg)
+![A screenshot ](media/4a6f5ca9a4f1c8afbb262366b0b99c03.jpg)
 
 *You must be a member of the sysadmin fixed server role and be the only user
 connected to the database to reload database objects. For more information
@@ -1343,9 +1311,9 @@ password.
 7. In the Finish window, review the results of reloading database objects. If
     there are no errors, close the utility.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *After restoring database objects, you will need to reload any database
 object customizations, such as Pre and Post procedures in eConnect.*
@@ -1385,7 +1353,7 @@ offline.
 
 (Administration \>\> Setup \>\> Company \>\> Company)
 
-![A screenshot of a cell phone Description automatically generated](media/e49cb2902de2e13466b4ad5f4f07c630.jpg)
+![A screenshot ](media/e49cb2902de2e13466b4ad5f4f07c630.jpg)
 
 1. In the User with offline access field, select the user that will have access
     to the company when it offline.
@@ -1412,7 +1380,7 @@ You must be an administrator to take a company offline.
 
 (Administration \>\> Utilities \>\> System \>\> Take Company Offline)
 
-![A screenshot of a cell phone Description automatically generated](media/adc7ed53c7dcdec15b92dddfdf40847f.jpg)
+![A screenshot ](media/adc7ed53c7dcdec15b92dddfdf40847f.jpg)
 
 1. Select a company and choose Insert to move it to the Offline Companies list.
     Choose Insert All to move all companies to the Offline Companies list.
@@ -1441,13 +1409,7 @@ offline company* for more information.
 
 #### Sending a message to users currently logged in to an offline company
 
-You can use the Send Message window to send messages to users. You can select
-the users and type of message you would like to send. For example, you can send
-a task with reminder message of an upcoming event to all users or a “please log
-out of
-
-Microsoft Dynamics GP” notification message to users currently logged into a
-company that has been taken offline.
+You can use the Send Message window to send messages to users. You can select the users and type of message you would like to send. For example, you can send a task with reminder message of an upcoming event to all users or a “please log out of Microsoft Dynamics GP” notification message to users currently logged into a company that has been taken offline.
 
 You must be an administrator to send messages to your users about an offline
 company.
@@ -1458,7 +1420,7 @@ company.
 
 (Administration \>\> Utilities \>\> System \>\> Send Users Message)
 
-![A screenshot of a social media post Description automatically generated](media/acd2aff846ecb477a873dd0595bac494.jpg)
+![A screenshot](media/acd2aff846ecb477a873dd0595bac494.jpg)
 
 1. Select the users you want to send a message to.
 
@@ -1669,9 +1631,9 @@ your system are process servers, and which tasks will be completed on those
 process servers. Sending a task to a process server is called processing a
 task remotely, or **remote processing**.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *Verify the data source name in ODBC. You must use the same data source name
 (DSN) in ODBC for all client workstations and process servers in order for
@@ -1823,9 +1785,9 @@ Use this information to help you determine the types of computers you’ll use
 as process servers and how to set up your Microsoft Dynamics GP clients,
 servers, and process servers.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *For information about system requirements for process servers, see [system requirements for Microsoft Dynamics GP](system-requirements.md). 
 
@@ -1902,7 +1864,7 @@ more services.
 The following illustration represents one service containing three process
 servers:
 
-![](media/e7ad250b61c0c4be0b07981ba693bc4f.png)
+![A Screenshot](media/e7ad250b61c0c4be0b07981ba693bc4f.png)
 
 #### DPS on dedicated servers
 
@@ -1913,7 +1875,7 @@ posting or printing.
 
 The following illustration represents the DPS on a separate process server.
 
-![](media/cbd974239674b95d22b94fa20d1c4c7a.png)
+![A Screenshot](media/cbd974239674b95d22b94fa20d1c4c7a.png)
 
 #### DPS on the data server
 
@@ -1926,7 +1888,7 @@ remote processes more quickly.
 
 The following illustration shows the DPS installed on the data server:
 
-![A close up of a logo Description automatically generated](media/e323d6cf753295eddd0b803e8f8a738d.png)
+![](media/e323d6cf753295eddd0b803e8f8a738d.png)
 
 #### DPS on a client
 
@@ -2012,7 +1974,7 @@ computer is known on a network.
 (Administration \>\> Setup \>\> System \>\> Process Server \>\> Servers
 button)
 
-![A screenshot of a cell phone Description automatically generated](media/dd2bf3db7c50ffdeea57e6d23e5fafa6.jpg)
+![A screenshot ](media/dd2bf3db7c50ffdeea57e6d23e5fafa6.jpg)
 
 1. Type the host name (sometimes known as the computer name) of a process
     server you’ll use in the Server Host field.
@@ -2029,9 +1991,9 @@ if necessary, refer to the network protocol information in your Installation
 Instructions documentation and the documentation provided with your network
 protocol to determine the cause of the problem.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
+
 
 *If the Verify Connection On Add option isn’t marked, the server will be
 added to the list even if you can’t currently contact the process server.*
@@ -2061,7 +2023,7 @@ server in a service the process should be sent to.
 (Administration \>\> Setup \>\> System \>\> Process Server \>\> Services
 button)
 
-![A screenshot of a cell phone Description automatically generated](media/27dfd5f61b0a29f35d5b73e6b6bf6bef.jpg)
+![A screenshot ](media/27dfd5f61b0a29f35d5b73e6b6bf6bef.jpg)
 
 1. Type the name of the service in the Services field.
 
@@ -2096,7 +2058,7 @@ Server Setup window, but the existence of those servers won’t be verified.
 
 (Administration \>\> Setup \>\> System \>\> Process Server)
 
-![A screenshot of a cell phone Description automatically generated](media/b33c316e27c95989a8eb638dec691771.jpg)
+![A screenshot ](media/b33c316e27c95989a8eb638dec691771.jpg)
 
 1. In the DPS Setup window, select the series for the processes you want to set
     up for remote processing, or select All to display all processes.
@@ -2106,9 +2068,9 @@ Server Setup window, but the existence of those servers won’t be verified.
     series to be processed remotely, choose Mark All. If you want to deactivate
     remote processing for all processes, choose Unmark All.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *These processes will be processed remotely only if the user has chosen to
 process them remotely, using the User Preferences window. For more
@@ -2136,9 +2098,9 @@ see [Multiple instances of DPS on the same client](#multiple-instances-of-dps-on
     Table. If this option isn’t marked, only alert messages will be recorded in
     the table.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
+
 
 > [!NOTE]
 > The Process Server Activity Table can become large in a short time if you choose to track the start and end times of all processes.
@@ -2154,7 +2116,7 @@ the host name of the computer where you are using the Distributed Process
 Manager. At this point, the DPS Setup window should resemble the following
 illustration:
 
-![A screenshot of a cell phone Description automatically generated](media/657df4011a3dd42c47b326fbc88fafd5.jpg)
+![A screenshot ](media/657df4011a3dd42c47b326fbc88fafd5.jpg)
 
 1. When you have finished marking processes and entering server IDs for the
     selected series, select another series and set up the processes you want to
@@ -2182,7 +2144,7 @@ Setup window are ignored and the processes will occur on the local computer.
 
 (Home \>\> User Preferences)
 
-![A screenshot of a cell phone Description automatically generated](media/5f17992822798bd90032ed9b8bc5dd44.jpg)
+![A screenshot ](media/5f17992822798bd90032ed9b8bc5dd44.jpg)
 
 1. Mark Local or Remote for the Distributed Processes option.
 
@@ -2216,9 +2178,9 @@ if you’ve set up a process to be performed remotely. However, if you set up
 a report to be printed to the screen and processed locally, then decide to
 process it remotely, you must change the report destination, as well.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *You might receive a path not valid error if the folder location is on your
 process server, but not on your client computer.*
@@ -2270,7 +2232,7 @@ contains the location of the application dictionaries, forms dictionaries,
 and reports dictionaries you’re using. In the following example, the reports
 dictionary is stored at a central network location.
 
-![A screenshot of a cell phone Description automatically generated](media/ce0aaeb901d0b0c3f548cc57ed00b8a0.jpg)
+![A screenshot ](media/ce0aaeb901d0b0c3f548cc57ed00b8a0.jpg)
 
 To edit the launch file, you can use the Edit Launch File window in
 Microsoft
@@ -2292,7 +2254,7 @@ the launch file on each process server contains the location of that reports
 dictionary. In the following example, all clients and process servers access
 a dictionary stored at a network location.
 
-![](media/0db6f4872075f2b1cc507a9c80b58038.png)
+![A Screenshot](media/0db6f4872075f2b1cc507a9c80b58038.png)
 
 You also can store the reports dictionary on the process server, to reduce
 network traffic.
@@ -2306,7 +2268,7 @@ server for each user, or have some users process tasks only locally (see
 In the following example, each client accesses its own process server, so
 that the client and process server use the same reports dictionary.
 
-![](media/2b5bb39073e32bc5cfb703af58baf1bd.png)
+![A Screenshot](media/2b5bb39073e32bc5cfb703af58baf1bd.png)
 
 In the next example, the first and third clients process locally all tasks
 that include primary copies of reports. The second client remotely processes
@@ -2369,7 +2331,7 @@ background, or remotely by process servers.
 (Microsoft Dynamics GP menu \>\> Process Monitor or drag the Dynamics.set
 file onto the Dps.exe file on the client.)
 
-![A screenshot of a cell phone Description automatically generated](media/57bd80b2efe26be55621e11f258582c6.jpg)
+![A screenshot ](media/57bd80b2efe26be55621e11f258582c6.jpg)
 
 The name of the processes will be displayed in the Process list. The
 currently active process will appear at the top of the list. The number of
@@ -2441,9 +2403,9 @@ involves checking links, checking the error log, and printing an error
 report. The number of steps in each process in the list will be displayed in
 parentheses next to the process name in the Process Monitor window.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *If you select Process Server as the location in the Process Monitor window,
 you will not be able to view process details in the Process Detail window.*
@@ -2454,7 +2416,7 @@ To view detailed information about a process, select the process in the
 Process Monitor window and choose Detail. The Process Detail window will
 appear, displaying detailed information about the selected process.
 
-![A screenshot of a cell phone Description automatically generated](media/e1ebb643175b5ee2421367c034d99d19.jpg)
+![A screenshot ](media/e1ebb643175b5ee2421367c034d99d19.jpg)
 
 If the process is a procedure, only the name of the procedure will appear in
 the window. A procedure is a script that can be called from other scripts to
@@ -2485,7 +2447,7 @@ displayed; to view these processes, use the Process Monitor window.
 
 (Administration \>\> Inquiry \>\> System \>\> Process Server)
 
-![A screenshot of a cell phone Description automatically generated](media/3b9a3a4f9d9e5a64c2581cb1c74f84e3.jpg)
+![A screenshot ](media/3b9a3a4f9d9e5a64c2581cb1c74f84e3.jpg)
 
 1. Select a sorting option. You can view information about the processes sent
     to this server by date or by user ID.
@@ -2516,7 +2478,7 @@ activities are performed by process servers, especially if you have the
 Track Start and End Times option marked in the DPS Setup window, so you may
 need to remove data from the table periodically.
 
-![A close up of a logo Description automatically generated](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
 *Before removing process server detail, back up your company’s data.*
 
@@ -2526,15 +2488,15 @@ need to remove data from the table periodically.
 
 (Administration \>\> Utilities \>\> System \>\> Process Server)
 
-![A screenshot of a cell phone Description automatically generated](media/91eccc90ebd5005ee56b5a5a0d326c72.jpg)
+![A screenshot ](media/91eccc90ebd5005ee56b5a5a0d326c72.jpg)
 
 1. Enter server and date restrictions by selecting Server ID or Date from the
     Ranges listing and enter a range in the From and To fields. Choose Insert
     and the range will appear in the Restrictions box.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
+
 
 *If you don’t specify any server or date restrictions, all records will be
 included. You can enter only one range of dates and one range of server
@@ -2741,9 +2703,9 @@ client computers to access files other than Microsoft Dynamics GP tables on
 the server or network volumes, you must store dictionaries locally on all
 clients.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
+
 
 *We recommend that you always store application dictionaries locally for
 best performance; storing forms and reports dictionaries locally improves
@@ -2838,7 +2800,7 @@ The following example shows the information in the Dynamics.set file on a
 Windows client after product information has been added for two integrating
 products, Lead Tracking and Time and Billing.
 
-![A screenshot of a cell phone Description automatically generated](media/e86b980227ef135617849572b100d4df.jpg)
+![A screenshot ](media/e86b980227ef135617849572b100d4df.jpg)
 
 On client computers where the defaults file **Workstation2** setting is
 Windows, all three sets of dictionary locations will be used, so that the
@@ -2873,7 +2835,7 @@ common reports dictionary on a network volume. You may want to set up launch
 files in this way if certain users need specialized reports while others use
 a common set.
 
-![A screenshot of a cell phone Description automatically generated](media/628e7d401bf34793e0b2aa1dd8b89500.jpg)
+![A screenshot ](media/628e7d401bf34793e0b2aa1dd8b89500.jpg)
 
 #### Example launch file using central dictionaries
 
@@ -2896,7 +2858,7 @@ indicated.
 The following example shows the launch files for Windows clients accessing
 dictionaries stored on a data server.
 
-![A screenshot of a cell phone Description automatically generated](media/b425984db2e4c6c323d1c0d1d93efd11.jpg)
+![A screenshot ](media/b425984db2e4c6c323d1c0d1d93efd11.jpg)
 
 #### Creating a launch file
 
@@ -2918,9 +2880,9 @@ a launch file.
 
 4. Accept the name or enter a new one, then choose OK or Save.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *If you don't accept the default name, be sure to modify the properties of
 the Microsoft Dynamics GP program item so that the correct launch file will
@@ -2967,7 +2929,7 @@ a text editor* on page 82 for more information.
 
 (Administration \>\> Setup \>\> System \>\> Edit Launch File)
 
-![A screenshot of a cell phone Description automatically generated](media/913f27c7a19f592a619ab746a57635f0.jpg)
+![A screenshot ](media/913f27c7a19f592a619ab746a57635f0.jpg)
 
 1. Select a launch file. The launch file used to start the current session of
     Microsoft Dynamics GP will be displayed in the Launch File field. To select
@@ -2981,9 +2943,9 @@ Microsoft Dynamics GP, that are opened using the launch file displayed in
 the Launch File field. Select the product you want to edit dictionary
 location information for.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *To remove a product from the launch file, or to restore a product ID and
 name of an integrating product you deleted from the launch file you're
@@ -2995,9 +2957,9 @@ editing, you must use a text editor.*
     location ID, you can check it by viewing the **Workstation2** setting in
     your Dex.ini file.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
+
 
 *The changes you make to the dictionary location ID will affect only the
 dictionaries opened on your computer.*
@@ -3006,9 +2968,9 @@ dictionaries opened on your computer.*
     dictionary, forms dictionary, and reports dictionary for the launch file and
     product you selected are displayed in the Dictionary Locations fields.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *To specify a different location for a dictionary, choose the corresponding
 file button. A dialog box will be displayed; specify the new location and
@@ -3044,9 +3006,9 @@ location ID, you must make the same change in the defaults files where it’s
 stored. For more information, see *How launch files and defaults files work
 together* on page 85.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
+
 
 *If you use more than one dictionary location ID, you must list the
 dictionaries for every product you're using for each dictionary location ID.
@@ -3061,7 +3023,7 @@ you must create a launch file for each.*
 2. Open the launch file by choosing File \>\> Open in Notepad or another text
     editor.
 
-![A close up of a logo Description automatically generated](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
 *We recommend that you do not edit a launch file using Write for Windows.*
 
@@ -3177,9 +3139,9 @@ To edit the Dex.ini file, use Windows Notepad to open the file, then edit
 existing parameters or add settings and parameters. Be sure to include an
 equal sign for each setting, before the parameter.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
+
 
 *We recommend that you do not edit the Dex.ini file using Windows Write. The
 defaults file is essential for Microsoft Dynamics GP to run correctly;
@@ -3193,9 +3155,9 @@ If your defaults file is damaged or deleted, we recommend that you restore a
 backup; if you re-create the file, you must reenter several of the settings.
 Other settings that must be reentered vary, depending on your configuration.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
+
 
 > [!IMPORTANT]
 > We recommend that you do not delete the defaults file if you want to re-create it. The defaults file is essential for Microsoft Dynamics GP to run correctly; always make a backup before you edit it, and don’t edit any setting unless you're instructed to do so by your reseller, or by Microsoft Dynamics GP Technical Support.
@@ -3224,9 +3186,9 @@ You also can visit the CustomerSource Web site and search the Knowledge Base
 for answers to your most common technical questions including
 troubleshooting steps, solutions to common issues, and how-to articles.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *When you install or use Microsoft Dynamics GP, alert messages may appear
 that are caused by errors in other applications, such as the file handler or
@@ -3353,9 +3315,9 @@ documentation.
 If the error does not occur for all users, a security problem may exist. You
 should also check customizations, such as modified reports and forms.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *Remember that you have security options within SQL Server and within
 Microsoft Dynamics GP.*
@@ -3393,7 +3355,7 @@ recent modifications have been done, check the modifications for errors. If
 the modifications have worked in the past, rename the dictionary and restore
 it from a backup.
 
-![A close up of a logo Description automatically generated](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
 *Do not delete dictionaries. Renaming files allows you to restore these files
 later, if necessary.*
@@ -3405,9 +3367,9 @@ to see if errors still occur. If integrating applications are present,
 remove the dictionaries from the Dynamics.set file and rename the associated
 file extensions in Windows Explorer.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
+
 
 *Do not delete these files. Renaming file extensions allows you to restore
 these files later, if necessary.*
@@ -3465,9 +3427,9 @@ determined which tables need to be repaired, see the data recovery checklist in
     record, you can conclude that the data in the RM Customer MSTR table is
     corrupt.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *Each Microsoft Dynamics GP table has three names: a display name, a
 technical name, and a physical name. Display names are displayed in the
@@ -3584,9 +3546,9 @@ follow the steps in this checklist. If it’s possible that one or more tables
 are need maintenance, but you can’t determine which, perform the data
 recovery procedures on all tables that may be affected.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *If you have a current backup that you made before your table issues
 occurred, you could restore it instead of completing the procedures in the
@@ -3602,17 +3564,13 @@ performing any table maintenance or utility procedures. These procedures
 deal directly with the data, and if there is an interruption during
 processing you will need to restore the current backup.
 
-1. Update statistics and recompile stored procedures. Updating statistics
-    reconfigures table keys and results in better performance; recompiling
-    stored procedures adapts stored procedures to tables with significant
-    increases or decreases in data. For more information, see *Updating
-    statistics* on page 32 and *Recompiling stored procedures* on page 33.
+1. Update statistics and recompile stored procedures. Updating statistics reconfigures table keys and results in better performance; recompiling stored procedures adapts stored procedures to tables with significant increases or decreases in data. For more information, see [Updating statistics](#updating-statistics) and [Recompiling stored procedures](#recompiling-stored-procedures).
 
 2. Check links. If you rebuild a table and the report shows that some records
     were removed, check links for the table. Checking links examines the table,
     checking corresponding information in related tables and, if possible,
     changing the data to match the corresponding data in a table. For more
-    information, see *Checking links* on page 96.
+    information, see [Checking links](#checking-links).
 
 If the table is in the System or Company series, do not check links.
 Instead, continue to the next step: Reconcile data.
@@ -3620,13 +3578,13 @@ Instead, continue to the next step: Reconcile data.
 1. Reconcile data. During a reconcile, Microsoft Dynamics GP examines the data
     within different tables and checks to see whether information that is kept
     in two different tables has the same value in both. For more information,
-    see *Reconciling tables* on page 97.
+    see [Reconciling tables](#reconciling-tables).
 
 2. Restore a backup. If reconciling is unsuccessful, restore your most recent
     backup. The more recent your backup, the fewer transactions you’ll have to
     reenter, and if you’ve printed or saved all of your posting journals,
     reentering the transactions can be a fairly simple process. For more
-    information, see *Restoring backups* on page 99 or *Restoring data* on page
+    information, see [Restoring backups](#restoring-backups) or [Restoring data](#restoring-data).
 
 #### Checking links
 
@@ -3638,7 +3596,7 @@ If you were alerted to damage by an alert message indicating damage to a
 specific table, the name of the table won’t be listed in the Check Links
 window.
 
-![A close up of a logo Description automatically generated](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
 *If the table is in the System or Company series, see Reconciling tables on page
 97.*
@@ -3657,7 +3615,7 @@ Always make a backup before checking links.
 
 (Microsoft Dynamics GP menu \>\> Maintenance \>\> Check Links)
 
-![A screenshot of a cell phone Description automatically generated](media/950ecb44b521a20b70d741d62d212440.jpg)
+![A screenshot ](media/950ecb44b521a20b70d741d62d212440.jpg)
 
 1. Select the series containing the tables to check.
 
@@ -3684,9 +3642,9 @@ and choose Remove.
 
     - The Check Links Report will display any information that was re-created.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *We recommend that you send the Check Links Report to the screen, and then
 print it if necessary, because it may be very large. Each report can only be
@@ -3700,9 +3658,9 @@ report to a file as well.*
     created through processes such as posting or aging, and this information
     can’t be reentered manually in a window.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *You may want to create a report using Report Writer that lists all fields
 included in the table that you checked links for. This report can serve as a
@@ -3752,7 +3710,7 @@ performing any other table maintenance procedure.
 
 (Administration \>\> Utilities \>\> System \>\> Reconcile)
 
-![A screenshot of a cell phone Description automatically generated](media/3a86aab9ce0e6ad7af063fe066660c75.jpg)
+![A screenshot ](media/3a86aab9ce0e6ad7af063fe066660c75.jpg)
 
 1. Highlight each table to be reconciled and choose Insert.
 
@@ -3766,9 +3724,9 @@ The Report Destination window appears; specify where the reconcile report
 should be printed. If you mark File, select the appropriate file format and
 enter a report table location.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
-A close up of a logo Description automatically generated
+
 
 *Always send the Reconcile Report to the printer, since it can be printed
 only once. It’s a good idea to send the report to a file, as well, in case
@@ -3799,9 +3757,9 @@ complete backup of your tables, if possible.
 
 1. Back up your current data.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *Always make a backup of current data before restoring an earlier backup, in
 case you need to refer to it later. Your current backup may have become
@@ -3834,9 +3792,9 @@ a backup you have on hand.*
         physical and table groups accessed by a window, use the procedures in
         the Resource Descriptions documentation.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *On rare occasions, you may not be able to reenter information into every
 table. Some records are created through processes such as posting or aging,
@@ -3852,9 +3810,9 @@ end of the year, or until the next time you clear history.*
 
 Use the Restore Company window to restore data from a backup file.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-A close up of a logo Description automatically generated
+
 
 *Only the system administrator can open the Restore Company window and
 restore data. The Restore Company window is only available when using a
@@ -3866,7 +3824,7 @@ Microsoft Dynamics GP installation on the SQL Server.*
 
 (Microsoft Dynamics GP menu \>\> Maintenance \>\> Restore)
 
-![A screenshot of a cell phone Description automatically generated](media/d500d7795a2e3508eb777ea4bbc687a4.jpg)
+![A screenshot ](media/d500d7795a2e3508eb777ea4bbc687a4.jpg)
 
 1. Select the company to restore, or select System Database to restore system
     data.
