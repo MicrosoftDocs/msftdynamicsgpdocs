@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/20/2019
+ms.date: 05/14/2019
 ---
 
 # Microsoft Dynamics GP System Setup Guide
@@ -28,18 +28,6 @@ between modules are erased—information entered in one module is shared with al
 the other modules. Perhaps the most important benefit of integration is that
 transactions can be posted from one module to another, automatically updating
 records throughout Microsoft Dynamics GP.
-
-This introduction is divided into the following sections:
-
-- *What’s in this manual*
-
-- *Symbols and conventions*
-
-- *Resources available from the Help menu*
-
-- *Send us your documentation comments*
-
-### What’s in this manual
 
 This manual is designed to help you set up systemwide information for each
 company.
@@ -902,7 +890,7 @@ To print a User Preferences List showing information for the currently
 displayed user, choose File \>\> Print. You can print a similar report for
 all users from the User Report Options window.
 
-### Copying security access from an existing user
+#### Copying security access from an existing user
 
 When you create a new user, you need to set up security tasks, security roles,
 and company access to the new user. To speed user set up, you can copy the user
@@ -974,7 +962,7 @@ This information is divided into the following sections:
 
 - *User security troubleshooting*
 
-### Overview of Microsoft Dynamics GP security
+#### Overview of Microsoft Dynamics GP security
 
 Microsoft Dynamics GP provides several types of security:
 
@@ -1039,7 +1027,7 @@ or to make a window or form unavailable. It also allows you to hide, lock,
 or apply passwords to fields. See *Chapter 7, “Field level security,”* for
 more information.
 
-### Security Synchronization Utility
+#### Security Synchronization Utility
 
 The Security Synchronization Utility can be used to synchronize security for
 Microsoft Dynamics GP, Web Services, and Business Portal. The Security
@@ -1071,7 +1059,7 @@ Dynamics
 GP Web Services Installation and Administration Guide for more information
 about the Dynamics Security Console.
 
-### How passwords are used in Microsoft Dynamics GP
+#### How passwords are used in Microsoft Dynamics GP
 
 Microsoft Dynamics GP uses passwords to control access to a company and
 selected parts of the accounting system. Passwords can contain uppercase and
@@ -1096,7 +1084,7 @@ password. If a password is required, all users attempting to complete that
 task must enter the password. See the setup documentation for each
 accounting module for information about these passwords.
 
-### Items you can set security for
+#### Items you can set security for
 
 You can set security for the following items in the Microsoft Dynamics GP
 product:
@@ -1130,7 +1118,7 @@ window. Many windows that you open by clicking a button in a parent window
 are child windows. To deny access to a child window, deny access to the
 corresponding parent window.
 
-### Setting system security
+#### Setting system security
 
 When you installed Microsoft Dynamics GP, you were asked to enter a system
 password. You can change the system password using the System Password Setup
@@ -1147,7 +1135,7 @@ window.
 
 4. Choose OK to save your changes and close the window.
 
-### Setting company access
+#### Setting company access
 
 Granting company rights to individual users allows you to control which
 users have access to the companies you’ve created.
@@ -1197,7 +1185,7 @@ and 3 to set access for other users, if necessary.
 
 2. Choose OK to close the window.
 
-### Creating security tasks
+#### Creating security tasks
 
 Security tasks contain the windows, reports, and other resources that users
 need to access to complete tasks in Microsoft Dynamics GP. Refer to *Items
@@ -1750,7 +1738,7 @@ access to the form is permitted.
 **Disable Form** You must enter the system administrator’s password to
 modify the form.
 
-### Resource Explorer
+#### Resource Explorer
 
 The Resource Explorer window opens when you choose the lookup button for the
 
@@ -1895,7 +1883,7 @@ This information is divided into the following sections:
 
 - *Removing activity tracking detail*
 
-### Activity type overview
+#### Activity type overview
 
 The following types of activities can be tracked in Microsoft Dynamics GP.
 The selected activities will be tracked for all users and the companies
@@ -1946,7 +1934,7 @@ allows you to see the length of time that a user was logged into a company.
 |--------------------------------|-------------------------------|
 | Depends on modules registered. | Depending on which modules are registered, you can choose to track posting of specific transaction types. For example, if General Ledger is installed, you could choose Financial Clearing Entry, Financial General Entry, and Financial Quick Entry. |
 
-### Setting up activity tracking
+#### Setting up activity tracking
 
 Using the Activity Tracking Setup window, you’ll mark the activities you
 want Microsoft Dynamics GP to track for each user in each company they
@@ -2363,17 +2351,10 @@ multiple distributions with the same distribution type and account. If you
 don’t mark the option, the distributions that are of the same type with the
 same account number will be combined.
 
-##### **Merge Trade Discount and Markdown Distributions in Sales** Mark
+**Merge Trade Discount and Markdown Distributions in Sales** Mark this option to merge the trade discount and markdown distributions with the sales distributions. If you don’t mark this option, the trade discounts and markdown distributions will be separated from the sales distribution.
 
-this option to merge the trade discount and markdown distributions with the
-sales distributions. If you don’t mark this option, the trade discounts and
-markdown distributions will be separated from the sales distribution.
-
-##### **Merge Trade Discount Distributions in Purchasing** Mark this option
-
-to merge the trade discount distributions with the purchase distributions.
-If you didn’t mark this option, the trade discounts and markdown
-distributions will be separated from the sales distribution.
+**Merge Trade Discount Distributions in Purchasing** Mark this option 
+to merge the trade discount distributions with the purchase distributions. If you didn’t mark this option, the trade discounts and markdown distributions will be separated from the sales distribution.
 
 **Calculate Tax Rebates** Mark this option to allow correcting tax amounts
 for a transaction with a terms discount.
@@ -2413,12 +2394,7 @@ information in the tax summary window. Summary tax edits won’t change the
 taxes calculated at the detail level. If this option isn’t marked, you will
 have to edit tax information using the tax detail entry windows.
 
-##### **Require Tax Detail Totals to Match the Pre-Tax Amount** Mark to
-
-require the pre-tax amount to be fully distributed among the tax details of
-the transaction. When tax details are required to match the pre-tax amount,
-you’ll have to assign tax schedules so taxes are calculated or enter a tax
-detail during transaction entry so the goods value matches pre-tax amount.
+**Require Tax Detail Totals to Match the Pre-Tax Amount** Mark to require the pre-tax amount to be fully distributed among the tax details of the transaction. When tax details are required to match the pre-tax amount, you’ll have to assign tax schedules so taxes are calculated or enter a tax detail during transaction entry so the goods value matches pre-tax amount.
 
 When this option is marked, you are required to enter a zero percent tax
 detail in the Tax Detail for System Processes field for receivables and
@@ -2429,13 +2405,8 @@ plus freight and miscellaneous charges. If the module you’re working with is
 set up to calculate terms discounts before taxes, the discount available
 amount is deducted from the pre-tax amount.
 
-##### **Specify Tax Details for Automatic Tax Calculation** Specify whether
-
-or not you want specific tax details to calculate tax. When this option is
-marked, you can select which tax details assigned to a tax schedule in the
-Tax Schedule Maintenance window should calculate tax. You can select as many
-details as you want to calculate tax for the schedule in the Tax Schedule
-Maintenance window.
+**Specify Tax Details for Automatic Tax Calculation** Specify whether 
+or not you want specific tax details to calculate tax. When this option is marked, you can select which tax details assigned to a tax schedule in the Tax Schedule Maintenance window should calculate tax. You can select as many details as you want to calculate tax for the schedule in the Tax Schedule Maintenance window.
 
 **Enable VAT Return** Mark this option to generate summary and detailed
 Value-added Tax (VAT) information for a specified period, helping to meet
@@ -2445,11 +2416,7 @@ governmental VAT reporting requirements.
 transaction is an EU transaction without using Intrastat Statistics. The
 vendor’s or customer’s tax registration number will be printed on documents.
 
-##### **Enable DDR and European Electronic Funds Transfer** Mark this
-
-option to enter electronic funds transfers for manual payments and computer
-checks in Payables Management, and to set up electronic funds transfer
-information for your checkbooks, vendors and customers.
+**Enable DDR and European Electronic Funds Transfer** Mark this option to enter electronic funds transfers for manual payments and computer checks in Payables Management, and to set up electronic funds transfer information for your checkbooks, vendors and customers.
 
 If you mark this option, you must use the Checkbook Maintenance Window
 (Financial \>\> Cards \>\> Financial \>\> Checkbook) to assign a
@@ -7625,7 +7592,7 @@ This information is divided into the following sections:
 
 - *Renaming levels and entities in an organizational structure*
 
-### Understanding organizational levels and entities
+#### Understanding organizational levels and entities
 
 Your organization might be defined in various ways, such as by geographic
 regions, functional areas, product lines, or target markets. For example,
@@ -7782,7 +7749,7 @@ relationship will be deleted, not the child entities.)*
 
 1. Choose OK to save your changes.
 
-### Renaming levels and entities in an organizational structure
+#### Renaming levels and entities in an organizational structure
 
 Use the Organizational Structure Setup window to rename levels and entities.
 You can change the labels for the levels of your organization and change the
@@ -7825,7 +7792,7 @@ This information is divided into the following sections:
 
 - *Removing an organizational relationship*
 
-### Understanding organizational relationships
+#### Understanding organizational relationships
 
 Organizational relationships define the association between levels and
 entities in your organization. Organizational relationships are defined in
@@ -7954,7 +7921,7 @@ can replace the existing structures with the specified relationship.
 
 2. When you’ve finished copying entities, close the window.
 
-### Examples of copying organizational relationships
+#### Examples of copying organizational relationships
 
 For all of the following examples, assume you have a structure with Company
 at the first level, Division at the second, and Department at the third,
@@ -8101,7 +8068,7 @@ organization.
 5. Choose Process to update the entities displayed in the Organizational Tree
     window.
 
-### Removing an organizational relationship
+#### Removing an organizational relationship
 
 Use the Organizational Tree window and the Define Entity Relationships
 window to remove parent/child relationships from the entities in your
@@ -8310,7 +8277,7 @@ East in the second level and Production in the third level.
 
 2. Choose OK to save the position assignment.
 
-### How rolling down changes affects users in a class
+#### How rolling down changes affects users in a class
 
 When you make changes to the organizational assignment for a user class,
 you’ll have the option to apply those changes to the user records assigned
@@ -8725,7 +8692,7 @@ which you want to activate account security.
 
 3. Choose OK to save your settings. When you’ve finished, close the window.
 
-### Effects of account security on transactions
+#### Effects of account security on transactions
 
 Once you activate account security, you can’t enter, view, edit, or post any
 transactions in General Ledger windows that include a secured account—that
@@ -10175,10 +10142,7 @@ Writer documentation for more information.
 default financial statements that are provided with Microsoft Dynamics GP. Refer
 to the Advanced Financial Analysis documentation for more information.
 
-##### **Management Reporter for Microsoft Dynamics ERP** You can use
-
-Management Reporter to create customized financial statements. Refer to the
-Management Reporter documentation for more information.
+**Management Reporter for Microsoft Dynamics ERP** You can use Management Reporter to create customized financial statements. Refer to the Management Reporter documentation for more information.
 
 **SmartList** Use SmartList to create simple reports. SmartList’s report
 formatting capabilities are limited, but since you don’t need to link tables or
