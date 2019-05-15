@@ -13,76 +13,45 @@ ms.date: 04/23/2019
 
 # Multicurrency Management in Microsoft Dynamics GP
 
-You can use Multicurrency Management to set up an unlimited number of currency
-IDs, rate types, and exchange rate tables. After setting up Multicurrency
-Management, you can enter multicurrency transactions using the originating
-amounts for the transaction or the equivalent of the amounts in your company’s
-functional currency.
+You can use Multicurrency Management to set up an unlimited number of currency IDs, rate types, and exchange rate tables. After setting up Multicurrency Management, you can enter multicurrency transactions using the originating amounts for the transaction or the equivalent of the amounts in your company’s functional currency.
 
-You can revalue General Ledger accounts, based on current or estimated exchange
-rates, and revalue Sales and Purchasing transactions. Multicurrency information
-can be printed on reports, as well as printing reports specific to
-multicurrency. You also can view and compare open-year or historical
-multicurrency information in detail or summary form.
+You can revalue General Ledger accounts, based on current or estimated exchange rates, and revalue Sales and Purchasing transactions. Multicurrency information can be printed on reports, as well as printing reports specific to multicurrency. You also can view and compare open-year or historical multicurrency information in detail or summary form.
 
-This manual is designed to give you an understanding of how to use the features
-of Multicurrency Management, and how it integrates with the Microsoft Dynamics®
-GP system.
+This manual is designed to give you an understanding of how to use the features of Multicurrency Management, and how it integrates with the Microsoft Dynamics® GP system.
 
-To make best use of Multicurrency Management, you should be familiar with
-systemwide features described in the System User’s Guide, the System Setup
-Guide, and the System Administrator’s Guide.
+To make best use of Multicurrency Management, you should be familiar with systemwide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
 
-Some features described in the documentation are optional and can be purchased
-through your Microsoft Dynamics GP partner.
+Some features described in the documentation are optional and can be purchased through your Microsoft Dynamics GP partner.
 
-To view information about the release of Microsoft Dynamics GP that you’re using
-and which modules or features you are registered to use, choose Help \>\> About
-Microsoft Dynamics GP.
+To view information about the release of Microsoft Dynamics GP that you’re using and which modules or features you are registered to use, choose Help \>\> About Microsoft Dynamics GP.
 
->   The manual is divided into the following parts:
+The manual is divided into the following parts:
 
--   *Part 1, Setup*, introduces Multicurrency Management and gives detailed
-    instructions on setting up Multicurrency Management.
+-   *Part 1, Setup*, introduces Multicurrency Management and gives detailed instructions on setting up Multicurrency Management.
 
--   *Part 2, Inquiries and reports*, explains how to use inquiries and reports
-    to analyze your multicurrency activity.
+-   *Part 2, Inquiries and reports*, explains how to use inquiries and reports to analyze your multicurrency activity.
 
--   *Part 3, Utilities and routines*, provides information about maintaining
-    your multicurrency data and recognizing gains and losses.
+-   *Part 3, Utilities and routines*, provides information about maintaining your multicurrency data and recognizing gains and losses.
 
 ## Part 1: Setup
 
-This part of the documentation describes what you need to do to set up
+This part of the documentation describes what you need to do to set up Multicurrency Management. These tasks generally need to be completed once, but you can refer to these instructions at other times to modify or view existing entries. The following topics are discussed:
 
-Multicurrency Management. These tasks generally need to be completed once, but
-you can refer to these instructions at other times to modify or view existing
-entries. The following topics are discussed:
+-   *Chapter 1, “Multicurrency Management setup,”* provides information about how you can set up Multicurrency Management.
 
--   *Chapter 1, “Multicurrency Management setup,”* provides information about
-    how you can set up Multicurrency Management.
+-   *Chapter 2, “Currency setup,”* describes how to set up currencies and assign access to these currencies for each company.
 
--   *Chapter 2, “Currency setup,”* describes how to set up currencies and assign
-    access to these currencies for each company.
+-   *Chapter 3, “Exchange rate setup,”* describes how to set up and assign access to exchange rate tables for each company.
 
--   *Chapter 3, “Exchange rate setup,”* describes how to set up and assign
-    access to exchange rate tables for each company.
+-   *Chapter 4, “Multicurrency company setup,”* explains how to set up information for each company that uses more than one currency.
 
--   *Chapter 4, “Multicurrency company setup,”* explains how to set up
-    information for each company that uses more than one currency.
-
--   *Chapter 5, “Multicurrency posting account setup,”* describes how to select
-    posting accounts for Multicurrency, currencies, or rate types.
+-   *Chapter 5, “Multicurrency posting account setup,”* describes how to select posting accounts for Multicurrency, currencies, or rate types.
 
 ### Chapter 1: Multicurrency Management setup
 
->   One way of getting started with Multicurrency Management is to follow the
->   setup routine provided with the system. As you select each step in the setup
->   routine list, the appropriate window used to complete that procedure opens.
->   You can enter the necessary information in the window, referring to the
->   documentation whenever necessary.
+One way of getting started with Multicurrency Management is to follow the setup routine provided with the system. As you select each step in the setup routine list, the appropriate window used to complete that procedure opens. You can enter the necessary information in the window, referring to the documentation whenever necessary.
 
->   The setup routine information is divided into the following sections:
+The setup routine information is divided into the following sections:
 
 -   *Before you set up Multicurrency Management*
 
@@ -90,16 +59,9 @@ entries. The following topics are discussed:
 
 #### Before you set up Multicurrency Management
 
->   Before you begin setting up Multicurrency Management, be sure you’ve
->   completed the System Manager and General Ledger setup procedures. You also
->   should set up
+Before you begin setting up Multicurrency Management, be sure you’ve completed the System Manager and General Ledger setup procedures. You also should set up
 
->   Payables Management and Receivables Management before Multicurrency
->   Management, if you use these modules. For more information on completing
->   procedures, refer to the General Ledger, Payables Management, or Receivables
->   Management documentation. For information about setting up your system,
->   refer to your System Setup instructions (Help \>\> Contents \>\> select
->   Setting Up the System).
+Payables Management and Receivables Management before Multicurrency Management, if you use these modules. For more information on completing procedures, refer to the General Ledger, Payables Management, or Receivables Management documentation. For information about setting up your system, refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
 >   If you plan to print multicurrency versions of your posting journals, be
 >   sure to mark the Include Multicurrency Info option in the Posting Setup
