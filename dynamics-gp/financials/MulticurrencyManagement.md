@@ -135,12 +135,9 @@ Use the Multicurrency Access Setup window to grant access to currencies for indi
 You can remove currency access by unmarking the Access selection for the company. You can remove access to a currency if the currency hasn’t been used on a posted or unposted transaction.
 
 **To assign access to currencies:**
-1.  Open the Multicurrency Access Setup window. (Microsoft Dynamics GP menu \>\>
-    Tools \>\> Setup \>\> System \>\> Multicurrency Access)
-
-    Image MCAS.jpg
-
-    ![A screenshot of a social media post Description automatically generated](media/97e37b9faa5f7623033ae2a1b014d7ea.jpg)
+1.  Open the Multicurrency Access Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Multicurrency Access)
+  
+    ![](media/MCAS.jpg)
 
 1.  Select a currency ID.
 
@@ -152,29 +149,20 @@ You can remove currency access by unmarking the Access selection for the company
 
 #### Inactivating a currency
 
->   Use the Multicurrency Access Setup window if you want to temporarily stop
->   using a currency without deleting it or removing a company’s access to it.
->   For example, if a currency’s exchange rate is fluctuating dramatically, you
->   might choose to stop conducting business in that currency until the currency
->   stabilizes. All currencies can be inactivated except your company’s
->   functional currency.
+Use the Multicurrency Access Setup window if you want to temporarily stop using a currency without deleting it or removing a company’s access to it.>   For example, if a currency’s exchange rate is fluctuating dramatically, you might choose to stop conducting business in that currency until the currency stabilizes. All currencies can be inactivated except your company’s functional currency.
 
->   **To inactivate a currency:**
+**To inactivate a currency:**
 
-1.  Open the Multicurrency Access Setup window.
+1.  Open the Multicurrency Access Setup window.  
+(Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Multicurrency Access)
 
->   (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\>
->   Multicurrency Access)
+2.  Select the currency ID that you want to inactivate.
 
-1.  Select the currency ID that you want to inactivate.
+3.  Mark the Inactive selection for each company that you no longer want to use the selected currency for.
 
-2.  Mark the Inactive selection for each company that you no longer want to use
-    the selected currency for.
+4.  Choose File \>\> Print to verify your changes with a Multicurrency Access Report.
 
-3.  Choose File \>\> Print to verify your changes with a Multicurrency Access
-    Report.
-
-4.  Choose OK to save your entries.
+5.  Choose OK to save your entries.
 
 ### Chapter 3: Exchange rate setup
 
@@ -201,27 +189,15 @@ You can remove currency access by unmarking the Access selection for the company
 
 #### Understanding exchange rate tables
 
->   Exchange rate tables are used to store many exchange rates for a single
->   currency. The tables are set up once in Microsoft Dynamics GP and the
->   exchange rates assigned to the tables are entered periodically. You can use
->   an exchange rate table in multiple companies if the companies use the same
->   functional currency.
+Exchange rate tables are used to store many exchange rates for a single currency. The tables are set up once in Microsoft Dynamics GP and the exchange rates assigned to the tables are entered periodically. You can use an exchange rate table in multiple companies if the companies use the same functional currency.
 
 #### How rate variances affect exchange rate tables
 
->   Rate variances limit the amount a rate can change each time you enter a new
->   exchange rate. An exchange rate can‘t change by more than the variance
->   amount. For example, if the most recent exchange rate is .65321 and the rate
->   variance you’ve entered is .01000, the next rate you enter must be between
->   .64321 and .66321.
+Rate variances limit the amount a rate can change each time you enter a new exchange rate. An exchange rate can‘t change by more than the variance amount. For example, if the most recent exchange rate is .65321 and the rate variance you’ve entered is .01000, the next rate you enter must be between .64321 and .66321.
 
->   *If you don’t want to limit the amount an exchange rate can change (that is,
->   if you want an unlimited variance), enter 0.000 as the rate variance.*
+*If you don’t want to limit the amount an exchange rate can change (that is, if you want an unlimited variance), enter 0.000 as the rate variance.*
 
->   Rate variances are calculated based on the closest previous exchange rate to
->   the date for the rate you’re entering. For example, if you enter .01000 as
->   the rate variance, the exchange rate table may contain the following
->   exchange rates:
+Rate variances are calculated based on the closest previous exchange rate to the date for the rate you’re entering. For example, if you enter .01000 as the rate variance, the exchange rate table may contain the following exchange rates:
 
 | **Date**          | **Rate** |
 |-------------------|----------|
@@ -229,77 +205,39 @@ You can remove currency access by unmarking the Access selection for the company
 | December 16, 2017 | .64767   |
 | December 14, 2017 | .65321   |
 
->   When you enter a new exchange rate for December 15, 2017, the rate variance
->   will be based on rate .65321, the rate for December 14, 2017. The rate won’t
->   be based on the latest rate in the exchange rate table, .65359, the rate for
->   December 17, 2017.
+When you enter a new exchange rate for December 15, 2017, the rate variance will be based on rate .65321, the rate for December 14, 2017. The rate won’t be based on the latest rate in the exchange rate table, .65359, the rate for December 17, 2017.
 
->   As another example, assume that you’ve inserted a new rate in the
->   Multicurrency Exchange Rate Maintenance window. If the new rate is dated
->   July 20, 2017, and the closest prior rate is dated July 19, 2017, those
->   rates will be compared. If there are two rates entered for July 19, the rate
->   with the latest time will be used. If there are other rates entered for July
->   20, the most recent rate will be used based on the time. If the time of the
->   new rate is 14:00:00, and there is an existing rate entered with a time of
->   17:32:24, Multicurrency Management will compare the new rate to the rate
->   with a time of 17:32:24.
+As another example, assume that you’ve inserted a new rate in the Multicurrency Exchange Rate Maintenance window. If the new rate is dated July 20, 2017, and the closest prior rate is dated July 19, 2017, those rates will be compared. If there are two rates entered for July 19, the rate with the latest time will be used. If there are other rates entered for July 20, the most recent rate will be used based on the time. If the time of the new rate is 14:00:00, and there is an existing rate entered with a time of 17:32:24, Multicurrency Management will compare the new rate to the rate with a time of 17:32:24.
 
 #### Calculation methods for exchange rates
 
->   You can select whether the originating currency amount you’ve entered should
->   be multiplied or divided by the exchange rate to calculate the transaction’s
->   functional equivalent. Many sources for exchange rates will provide rates
->   based on both calculation methods. Once you’ve selected a calculation method
->   for the exchange rate table, it can’t be changed.
+You can select whether the originating currency amount you’ve entered should be multiplied or divided by the exchange rate to calculate the transaction’s functional equivalent. Many sources for exchange rates will provide rates based on both calculation methods. Once you’ve selected a calculation method for the exchange rate table, it can’t be changed.
 
->   Exchange rates in Microsoft Dynamics GP can contain up to seven decimal
->   places. If the rate you’re using fluctuates using more than seven decimal
->   places, your calculations may be more accurate if you use the opposite
->   calculation method and its rate equivalent when going from a multiply rate
->   to a divide rate. For example, if the multiply rate is .01029233 one day and
->   is .01029232 the next day, both rates will be entered as .0102923, because
->   the rates can contain only seven decimal places. But if you change the
->   calculation method to divide and use the equivalent exchange rate, you can
->   use 97.1597296 as the rate for the first day and 97.1598240 as the rate for
->   the next day, ensuring that the exchange rates for your transactions are as
->   accurate as possible.
+Exchange rates in Microsoft Dynamics GP can contain up to seven decimal places. If the rate you’re using fluctuates using more than seven decimal places, your calculations may be more accurate if you use the opposite calculation method and its rate equivalent when going from a multiply rate to a divide rate. For example, if the multiply rate is .01029233 one day and is .01029232 the next day, both rates will be entered as .0102923, because the rates can contain only seven decimal places. But if you change the calculation method to divide and use the equivalent exchange rate, you can use 97.1597296 as the rate for the first day and 97.1598240 as the rate for
+the next day, ensuring that the exchange rates for your transactions are as accurate as possible.
 
 #### Setting up an exchange rate table
 
->   Use the Multicurrency Exchange Rate Table Setup window to set up exchange
->   rate tables, specify the source for the exchange rates in the tables and
->   select how often you want to update the exchange rate tables.
+Use the Multicurrency Exchange Rate Table Setup window to set up exchange rate tables, specify the source for the exchange rates in the tables and select how often you want to update the exchange rate tables. 
 
->   **To set up an exchange rate table:**
+**To set up an exchange rate table:**
 
-1.  Open the Multicurrency Exchange Rate Table Setup window. (Microsoft Dynamics
-    GP menu \>\> Tools \>\> Setup \>\> System \>\> Exchange Table)
+1.  Open the Multicurrency Exchange Rate Table Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Exchange Table)
 
->   Image MCERT.jpg
 
 ![A screenshot of a cell phone Description automatically generated](media/a294523f1c3382ee903243cb36861740.jpg)
 
-1.  Enter an exchange rate table ID and description.
+2.  Enter an exchange rate table ID and description.
 
-2.  Enter or select a currency ID you want to use with the selected exchange
-    rate table. Also, enter the source of the exchange rates, such as a
-    newspaper or bank.
+3.  Enter or select a currency ID you want to use with the selected exchange rate table. Also, enter the source of the exchange rates, such as a newspaper or bank.
 
-3.  Select a rate frequency to indicate how often you plan to enter rates for
-    the selected exchange rate table. If you select Miscellaneous as the rate
-    frequency, enter the number of days that you want to use an exchange rate to
-    set the default expiration date.
+4.  Select a rate frequency to indicate how often you plan to enter rates for the selected exchange rate table. If you select Miscellaneous as the rate frequency, enter the number of days that you want to use an exchange rate to set the default expiration date.
 
-4.  Enter a rate variance (optional).
+5.  Enter a rate variance (optional).
 
-5.  Select a rate calculation method. For more information on the calculation
-    methods, see *Calculation methods for exchange rates* .
+6.  Select a rate calculation method. For more information on the calculation methods, see *Calculation methods for exchange rates* .
 
-6.  Select a Transaction Rate Default option to determine the exchange rate that
-    will be used when multicurrency transactions are entered. Each time you
-    enter a transaction, a currency must be selected. If there isn’t an exchange
-    rate for the transaction date, the option selected here will be used to
-    select the exchange rate.
+7.  Select a Transaction Rate Default option to determine the exchange rate that will be used when multicurrency transactions are entered. Each time you enter a transaction, a currency must be selected. If there isn’t an exchange rate for the transaction date, the option selected here will be used to select the exchange rate.
 
 >   **Exact Date** Select if you want the default exchange rate only to be an
 >   exchange rate with the same date as the transaction date. If there is no
