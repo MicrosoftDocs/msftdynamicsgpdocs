@@ -17,7 +17,7 @@ You can use Multicurrency Management to set up an unlimited number of currency I
 
 You can revalue General Ledger accounts, based on current or estimated exchange rates, and revalue Sales and Purchasing transactions. Multicurrency information can be printed on reports, as well as printing reports specific to multicurrency. You also can view and compare open-year or historical multicurrency information in detail or summary form.
 
-This manual is designed to give you an understanding of how to use the features of Multicurrency Management, and how it integrates with the Microsoft Dynamics® GP system.
+This manual is designed to give you an understanding of how to use the featuresof Multicurrency Management, and how it integrates with the Microsoft Dynamics GP system.
 
 To make best use of Multicurrency Management, you should be familiar with systemwide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
 
@@ -52,7 +52,6 @@ This part of the documentation describes what you need to do to set up Multicurr
 One way of getting started with Multicurrency Management is to follow the setup routine provided with the system. As you select each step in the setup routine list, the appropriate window used to complete that procedure opens. You can enter the necessary information in the window, referring to the documentation whenever necessary.
 
 The setup routine information is divided into the following sections:
-
 -   *Before you set up Multicurrency Management*
 
 -   *Multicurrency Management setup*
@@ -63,25 +62,17 @@ Before you begin setting up Multicurrency Management, be sure you’ve completed
 
 Payables Management and Receivables Management before Multicurrency Management, if you use these modules. For more information on completing procedures, refer to the General Ledger, Payables Management, or Receivables Management documentation. For information about setting up your system, refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
->   If you plan to print multicurrency versions of your posting journals, be
->   sure to mark the Include Multicurrency Info option in the Posting Setup
->   window.
+If you plan to print multicurrency versions of your posting journals, be sure to mark the Include Multicurrency Info option in the Posting Setup window.
 
 #### Multicurrency Management setup
 
->   When you set up Multicurrency Management, you can open each setup window and
->   enter information, or you can use the Setup Checklist window (Microsoft
->   Dynamics GP menu \>\> Tools \>\> Setup \>\> Setup Checklist) to guide you
->   through the setup process. See your System Setup Guide (Help \>\> Contents
->   \>\> select Setting up the System) for more information about the Setup
->   Checklist window.
+When you set up Multicurrency Management, you can open each setup window and enter information, or you can use the Setup Checklist window (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Setup Checklist) to guide you through the setup process. See your System Setup Guide (Help \>\> Contents \>\> select Setting up the System) for more information about the Setup Checklist window.
 
 ### Chapter 2: Currency setup
 
->   During the Multicurrency Management setup process, you will set up
->   currencies and assign access to these currencies for each company.
+During the Multicurrency Management setup process, you will set up currencies and assign access to these currencies for each company.
 
->   The currency setup information is divided into the following sections:
+The currency setup information is divided into the following sections:
 
 -   *Setting up a currency*
 
@@ -93,50 +84,34 @@ Payables Management and Receivables Management before Multicurrency Management, 
 
 #### Setting up a currency
 
->   Use the Currency Setup window to set up the currencies you’ll use in
->   Microsoft Dynamics GP. Currencies are set up once in Multicurrency
->   Management and can be used in any company.
+Use the Currency Setup window to set up the currencies you’ll use in Microsoft Dynamics GP. Currencies are set up once in Multicurrency
+Management and can be used in any company. 
 
->   **To set up a currency:**
+**To set up a currency:**
 
-1.  Open the Currency Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\>
-    Setup \>\> System \>\> Currency)
+1.  Open the Currency Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Currency)
 
-    Image MCCS.jpg
+    ![Image](media/MCCS.jpg)
 
-    ![A screenshot of a cell phone Description automatically generated](media/ce5ea5bf5681ab4de0e5f2b459cc12bf.jpg)
+2.  Enter a currency ID and a description.
 
-1.  Enter a currency ID and a description.
+3.  Enter the ISO code. An ISO code for a currency is a three-letter code used to define the name of a currency. ISO codes are created by the International Organization for Standardization. Refer to the International Organization for Standardization Web site (www.iso.org) for a list of ISO currency codes.
 
-2.  Enter the ISO code. An ISO code for a currency is a three-letter code used
-    to define the name of a currency. ISO codes are created by the International
-    Organization for Standardization. Refer to the International Organization
-    for Standardization Web site (www.iso.org) for a list of ISO currency codes.
+4.  Enter the currency symbol you want to appear with this currency ID (or choose one from the expansion button) and select how you want the symbol displayed. As you enter symbol information for the selected currency ID, the Example field will reflect the selection you’ve made.
 
-3.  Enter the currency symbol you want to appear with this currency ID (or
-    choose one from the expansion button) and select how you want the symbol
-    displayed. As you enter symbol information for the selected currency ID, the
-    Example field will reflect the selection you’ve made.
+5.  Select the sign you want to appear with the currency amount when the amount is negative.
 
-4.  Select the sign you want to appear with the currency amount when the amount
-    is negative.
+6.  Select display options for the negative sign.
 
-5.  Select display options for the negative sign.
+7.  Select the symbol you want to use as the decimal and thousands separator and select the number of decimal places you want to display.
 
-6.  Select the symbol you want to use as the decimal and thousands separator and
-    select the number of decimal places you want to display.
+8.  Enter the terminology that you want to appear on Payables checks.
 
-7.  Enter the terminology that you want to appear on Payables checks.
-
-8.  Choose File \>\> Print to verify your entries with a Currency Setup List.
-
-9.  Choose Save to save your entries.
+9.  Choose File \>\> Print to verify your entries with a Currency Setup List and Save your entries.
 
 #### Deleting a currency
 
-Use the Currency Setup window if you’re not planning to use a currency for
-transactions in the future and want to delete the currency.
-
+Use the Currency Setup window if you’re not planning to use a currency for transactions in the future and want to delete the currency.
 A currency can’t be deleted if:
 
 -   The currency is used on posted or unposted transactions.
@@ -145,30 +120,21 @@ A currency can’t be deleted if:
 
 **To delete a currency:**
 
-1.  Open the Currency Setup window.
+1.  Open the Currency Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Currency)
 
->   (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Currency)
+2.  Enter or select the currency ID for the currency you want to delete.
 
-1.  Enter or select the currency ID for the currency you want to delete.
+3.  Choose Delete to delete the currency.
 
-2.  Choose Delete to delete the currency.
-
-3.  Choose File \>\> Print to verify your changes with a Currency Setup List.
+4.  Choose File \>\> Print to verify your changes with a Currency Setup List.
 
 #### Assigning access to currencies
 
-Use the Multicurrency Access Setup window to grant access to currencies for
-individual companies. After you’ve set access, each currency that a company has
-access to will appear for use throughout Microsoft Dynamics GP when you’re
-working in that company. Each time you create a new currency ID, be sure to set
-access using the following steps.
+Use the Multicurrency Access Setup window to grant access to currencies for individual companies. After you’ve set access, each currency that a company has access to will appear for use throughout Microsoft Dynamics GP when you’re working in that company. Each time you create a new currency ID, be sure to set access using the following steps.
 
-You can remove currency access by unmarking the Access selection for the
-company. You can remove access to a currency if the currency hasn’t been used on
-a posted or unposted transaction.
+You can remove currency access by unmarking the Access selection for the company. You can remove access to a currency if the currency hasn’t been used on a posted or unposted transaction.
 
->   **To assign access to currencies:**
-
+**To assign access to currencies:**
 1.  Open the Multicurrency Access Setup window. (Microsoft Dynamics GP menu \>\>
     Tools \>\> Setup \>\> System \>\> Multicurrency Access)
 
@@ -180,8 +146,7 @@ a posted or unposted transaction.
 
 2.  Mark Access for each company that will use the selected currency.
 
-3.  Choose File \>\> Print to verify your entries with a Multicurrency Access
-    Report.
+3.  Choose File \>\> Print to verify your entries with a Multicurrency Access Report.
 
 4.  Choose OK to save the entries.
 
