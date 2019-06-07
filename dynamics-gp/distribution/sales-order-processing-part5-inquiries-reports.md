@@ -387,9 +387,10 @@ The following Reporting Services reports are available for Sales Order Processin
 
 5. After viewing the report, select a format and print the report.
 
-## In the French and Spanish Versions of GP, the Sales Blank Order Form and Sales Blank History Order Form layout is jumbled together.  I have corrected these reports using Report Writer which can be downloaded using the link below.
+> [!NOTE]
+> In the French and Spanish versions of Dynamics GP, the **Sales Blank Order Form** and **Sales Blank History Order Form** layout is jumbled together. These reports have been updated, and you can download the updated versions using the link below.
 
-https://mbs2.microsoft.com/fileexchange/?fileID=ab5b2af9-1a01-47e8-b539-3664ad6682cc
+[https://mbs2.microsoft.com/fileexchange/?fileID=ab5b2af9-1a01-47e8-b539-3664ad6682cc](https://mbs2.microsoft.com/fileexchange/?fileID=ab5b2af9-1a01-47e8-b539-3664ad6682cc)
 
 ## See Also
 
