@@ -1,7 +1,20 @@
-**Introduction**
+---
+title: "Project accounting cost management"
+description: "Examine how project accounting cost management works in Dynamics GP."
+keywords: "payroll"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 06/07/2019
+---
+
+# Project Accounting Cost Management
 
 >   The Project Accounting Cost Management Guide includes information for
->   project managers about how to use Microsoft Dynamics® GP Project Accounting
+>   project managers about how to use Microsoft Dynamics GP Project Accounting
 >   to estimate and track project costs. It also includes information about how
 >   to specify how billing amounts, revenue, and profit should be calculated,
 >   based on project costs.
@@ -50,10 +63,6 @@
 -   *Resources available from the Help menu*
 
 -   *Send us your documentation comments*
-
-**I N T R O D U C T I O N**
-
-#### What’s in this manual
 
 >   This manual is designed to give you an understanding of how to use the cost
 >   management features of Project Accounting, and how it integrates with the
@@ -109,106 +118,7 @@
     information about cost, billing, revenue, and profit amounts for contracts,
     projects, and cost categories.
 
-**I N T R O D U C T I O N**
-
-#### Symbols and conventions
-
->   For definitions of unfamiliar terms, see the glossary in the manual or refer
->   to the glossary in Help.
-
->   This manual uses the following conventions to refer to sections, navigation
->   and other information.
-
-| **Convention**                       | **Description**                                                                                                                                                                                                           |
-|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Create a batch*                     | Italicized type indicates the name of a section or procedure.                                                                                                                                                             |
-| **File \> Print** or File \>\> Print | The (**\>**) or (\>\>) symbol indicates a sequence of actions, such as selecting items from a menu or toolbar, or pressing buttons in a window. This example directs you to go to the **File** menu and choose **Print**. |
-| **TAB** or **ENTER**                 | All capital letters indicate a key or a key sequence.                                                                                                                                                                     |
-
-#### Resources available from the Help menu
-
->   The Microsoft Dynamics GP **Help** menu gives you access to user assistance
->   resources on your computer, as well as on the Web.
-
-##### Contents
-
->   Opens the Help file for the active Microsoft Dynamics GP component, and
->   displays the main “contents” topic. To browse a more detailed table of
->   contents, click the **Contents** tab above the Help navigation pane. Items
->   in the contents topic and tab are arranged by module. If the contents for
->   the active component includes an “Additional Help files” topic, click the
->   links to view separate Help files that describe additional components.
-
->   To find information in Help by using the index or full-text search, click
->   the appropriate tab above the navigation pane, and type the keyword to find.
-
->   To save the link to a topic in the Help, select a topic and then select the
->   **Favorites** tab. Click **Add**.
-
-##### Index
-
->   Opens the Help file for the active Microsoft Dynamics GP component, with the
->   **Index** tab active. To find information about a window that’s not
->   currently displayed, type the name of the window, and click **Display**.
-
-##### About this window
-
->   Displays overview information about the current window. To view related
->   topics and descriptions of the fields, buttons, and menus for the window,
->   choose the appropriate link in the topic. You also can press **F1** to
->   display Help about the current window.
-
-##### Lookup
-
->   Opens a lookup window, if a window that you are viewing has a lookup window.
->   For example, if the Checkbook Maintenance window is open, you can choose
->   this item to open the Checkbooks lookup window.
-
-##### Show Required Fields
-
->   Highlights fields that are required to have entries. Required fields must
->   contain information before you can save the record and close the window. To
->   change the way required fields are highlighted, choose **Microsoft Dynamics
->   GP menu \> Tools \> Setup \> User Preferences \> Display**, and specify a
->   different color and type style.
-
-##### Printable Manuals
-
->   Displays a list of manuals in Adobe Acrobat .pdf format, which you can print
->   or view.
-
-##### What’s New
-
->   Provides information about enhancements that were added to Microsoft
->   Dynamics GP since the last major release.
-
-##### Microsoft Dynamics GP Online
-
->   Opens a Web page that provides links to a variety of Web-based user
->   assistance resources. Access to some items requires registration for a paid
->   support plan.
-
-##### Customer Feedback Options
-
->   Provides information about how you can join the Customer Experience
->   Improvement Program to improve the quality, reliability, and performance of
->   Microsoft software and services.
-
-#### Send us your documentation comments
-
->   We welcome comments regarding the usefulness of the Microsoft Dynamics GP
->   documentation. If you have specific suggestions or find any errors in this
->   manual, send your comments by e-mail to the following address:
->   *bizdoc\@microsoft.com*.
-
->   To send comments about specific topics from within Help, click the
->   **Documentation Feedback** link, which is located at the bottom of each Help
->   topic.
-
->   *Note: By offering any suggestions to Microsoft, you give Microsoft full
->   permission to use them freely.*
-
->   **Part 1: Resource planning**
+## Part 1: Resource planning
 
 >   This part of the documentation includes information for project managers
 >   about setting up employee, vendor, equipment, and miscellaneous records for
@@ -235,7 +145,7 @@
     employee, position, and equipment rate tables to calculate costs, overhead,
     and profit for projects.
 
-**Chapter 1: Unit quantities, costs, and overhead**
+### Chapter 1: Unit quantities, costs, and overhead
 
 >   This part of the documentation includes information for project managers
 >   about how to create unit of measure schedules. It also includes information
@@ -1008,7 +918,7 @@ A screenshot of a cell phone Description automatically generated
 
 2.  Click **OK**.
 
->   **Part 2: Cost budgeting templates**
+## Part 2: Cost budgeting templates
 
 >   This part of the documentation includes information for project managers
 >   about how to create contract and project templates, and how to apply those
@@ -1320,8 +1230,7 @@ A screenshot of a cell phone Description automatically generated
 
 4.  Click **Process**.
 
-Part 3: Cost budgeting
-======================
+## Part 3: Cost budgeting
 
 >   This part of the documentation includes information for project managers
 >   about how to set up fees and how to set up the cost categories that you can
@@ -3571,7 +3480,7 @@ PACM 53.JPEG
 
 1.  Click **OK**.
 
-**Part 4: Cost control**
+## Part 4: Cost control
 
 >   This part of the documentation includes information for project managers
 >   about how to control what data users can enter when they enter cost
@@ -4560,7 +4469,7 @@ PACM 68.JPEG
 >   project have been billed. This checklist requirement is for **Cost Plus**
 >   and **Fixed Price** projects only.
 
-**Part 5: Project cost tracking**
+## Part 5: Project cost tracking
 
 >   This part of the documentation includes information for project managers
 >   about how to set up and enter cost transactions for tracking project costs
