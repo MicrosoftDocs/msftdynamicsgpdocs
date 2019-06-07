@@ -68,11 +68,6 @@ This manual is designed to give you an understanding of how to use the cost
 management features of Project Accounting, and how it integrates with the
 Microsoft Dynamics GP system.
 
-To make best use of Project Accounting, you should be familiar with
-systemwide features described in the System User’s Guide, the System Setup
-Guide, and the System Administrator’s Guide. Choose **Help \> Printable
-Manuals** for more information.
-
 You might also need to be familiar with features described in General
 Ledger, Bank Reconciliation, Multicurrency Management, Purchase Order
 Processing, Purchase
@@ -317,8 +312,6 @@ A screenshot of a cell phone Description automatically generated
 
 4. Enter a unit of measure and the corresponding unit cost.
 
-##### P A R T 1 R E S O U R C E P L A N N I N G
-
 1. In the **Amount per Unit** field, enter a flat overhead amount for each hour
     that an employee in the class works on a project. In the **Percentage of
     Actual Cost** field, enter a percentage to be used with the employee’s pay
@@ -348,7 +341,7 @@ If you’re using U.S. Payroll, open the PA Employee Options window. **Cards
 If you’re using Canadian Payroll, open the PA Employee Options - Canada
 window.
 
-##### Cards \> Payroll - Canada \> Employee \> Project button
+Cards \> Payroll - Canada \> Employee \> Project button
 
 PACM 3.JPEG
 
@@ -368,11 +361,7 @@ You can use the Vendor Maintenance window (**Cards \> Purchasing \>
 Vendor**) to modify the vendor record for the employee. See the Payables
 Management documentation (**Help \> Printable Manuals**) for more
 information. This includes setting up the vendor record for tracking project
-costs and billing
-
-###### **C H A P T E R 2** E M P L O Y E E S A N D V E N D O R S
-
-customers. See *Set up a vendor record for tracking project costs and
+costs and billing customers. See *Set up a vendor record for tracking project costs and
 billing customers* on page 17 for more information.
 
 1. Select **Allow Vendor for Purchase Order** to allow the employee to be
@@ -473,7 +462,7 @@ customers.
 
 1. Open the PA Vendor Options window.
 
-##### Cards \> Purchasing \> Vendor \> select a Vendor ID \> Project button
+Cards \> Purchasing \> Vendor \> select a Vendor ID \> Project button
 
 PACM 5.JPEG
 
@@ -615,10 +604,6 @@ PACM 8 .JPEG
 
 ![A screenshot ](media/86e0c89ef872f6fbbbc4b8ccdb52f4bb.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
 1. Select a class ID.
 
 2. Enter a unit of measure and the corresponding unit cost.
@@ -718,18 +703,10 @@ PACM 10.JPEG
 
 ![A screenshot ](media/b72ae65a548ccd7de909fcef542bd876.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
 1. Enter a rate table ID, date, and description. The date is for information
     only.
 
-You can click the **Rate Table ID** wizard button to copy information from
-another rate table or to include all employee records and their
-corresponding pay codes in the rate table. See *Copy information from
-another rate table* on page 26 and *Include all employees in a rate table*
-on page 27 for more information.
+    You can click the **Rate Table ID** wizard button to copy information from another rate table or to include all employee records and their corresponding pay codes in the rate table. See [Copy information from another rate table](#copy-information-from-another-rate-table) and [Include all employees in a rate table](#include-all-employees-in-a-rate-table)  for more information.
 
 1. Select the default profit type to be displayed in the **Profit Type** column
     when entering line items.
@@ -738,18 +715,17 @@ on page 27 for more information.
 
 3. Select the default pay code to use for the employee on timesheets.
 
-*You must select Use Pay Codes for Unit Cost in the Project Setup window to
-use pay codes with timesheets. See Configure general settings for all
-projects on page 43 for more information.*
+    > [!NOTE]
+    > You must select Use Pay Codes for Unit Cost in the Project Setup window to use pay codes with timesheets. See [Configure general settings for all projects](#configure-general-settings-for-all-projects) for more information.
 
 - If the employee is paid hourly, you can modify the hourly rate.
 
-- You can modify the SUTA state and workers’ compensation code for the
-    employee.
+- You can modify the SUTA state and workers’ compensation code for the employee.
 
-*To update pay rates in an existing employee rate table based on pay codes,
-click the Rate Table ID wizard button. See Update pay rates in an employee
-rate table based on pay codes on page 27 for more information.*
+> [!NOTE]
+> To update pay rates in an existing employee rate table based on pay codes,
+click the Rate Table ID wizard button. See [Update pay rates in an employee
+rate table based on pay codeS](#update-pay-rates-in-an-employee-rate-table-based-on-pay-codes) for more information.
 
 See the U.S. Payroll or Canadian Payroll documentation (**Help \> Printable
 Manuals**) for more information about pay codes and SUTA state and workers’
@@ -796,10 +772,6 @@ PACM 11. JPEG
 
 ![A screenshot of a social media post Description automatically generated](media/153b8b891ea7eca8abd9dea356704d69.jpg)
 
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
 The window is similar to the PA Employee Rate Table Maintenance window. See
 *Create an employee rate table* on page 23 for more information.
 
@@ -822,13 +794,9 @@ PACM 12.JPEG
 
 ![A picture containing screenshot Description automatically generated](media/e0ca55484b39509f048f2965d619c21e.jpg)
 
-A picture containing screenshot Description automatically generated
-
-A picture containing screenshot Description automatically generated
-
 The window is similar to the PA Employee Rate Table Maintenance window.
 
-See *Create an employee rate table* on page 23 for more information.
+See [Create an employee rate table](#create-an-employee-rate-table) on page 23 for more information.
 
 #### Copy information from another rate table
 
@@ -850,10 +818,6 @@ The following table lists the windows and how to open them.
 | Equipment      | Cards \> Project \> Equipment Rate Table \> Enter a rate table ID \> Rate Table ID wizard button PACM 13. JPEG |
 
 ![A screenshot ](media/20ef112b6a2f11329b9bc8c716e2c908.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
 
 1. Select **Copy existing entries from this rate table** and select the rate
     table.
@@ -4058,7 +4022,7 @@ You can enter a change order to revise project budgets in a contract.
 
 1. Open the Budget Changes Entry window.
 
-##### Cards \> Project \> Change Order Entry \> Budget Changes Button
+Cards \> Project \> Change Order Entry \> Budget Changes Button
 
 PACM 59.JPEG
 
@@ -4277,8 +4241,7 @@ PACM 64.JPEG
 
 ![A screenshot ](media/fe20974744f3acd3708f0ab26f3b3e25.jpg)
 
-1. You can view the employee or customer who approved the change order and when
-    they approved it.
+1. You can view the employee or customer who approved the change order and when they approved it.
 
 2. Click **OK**.
 
@@ -4288,7 +4251,7 @@ You can view revision history for a change order.
 
 1. Open the Change Order Revision Info window.
 
-##### Cards \> Project \> Change Order Entry \> Revision History button
+Cards \> Project \> Change Order Entry \> Revision History button
 
 PACM 65.JPEG
 
@@ -4383,7 +4346,7 @@ To close a project, the following conditions must be met.
 
 1. Open the Project Closing window.
 
-##### Transactions \> Project \> Project Closing
+Transactions \> Project \> Project Closing
 
 PACM 67.JPEG
 
@@ -5047,7 +5010,7 @@ check, and credit card payments.
 
 1. Open the Employee Expense Entry – More Info window.
 
-##### Transactions \> Project \> Employee Expense \> More Info button
+Transactions \> Project \> Employee Expense \> More Info button
 
 PACM 74.JPEG
 
@@ -5257,7 +5220,7 @@ Log-Detail) to view miscellaneous log line item details.*
 
 1. Open the Miscellaneous Log Entry window.
 
-##### Transactions \> Project \> Miscellaneous Log Entry
+Transactions \> Project \> Miscellaneous Log Entry
 
 PACM 78.JPEG
 
@@ -6174,7 +6137,7 @@ the Combined History Inquiry window to view line item information by date.
 
 1. Open the Combined History Detail window.
 
-##### Inquiry \> Project \> Combined History \> Qty expansion button
+Inquiry \> Project \> Combined History \> Qty expansion button
 
 PACM 97. JPEG
 
@@ -6276,7 +6239,7 @@ A screenshot of a social media post Description automatically generated
 
 7. Click **OK** to close the window.
 
-**Glossary**
+## Glossary
 
 **access list**
 
