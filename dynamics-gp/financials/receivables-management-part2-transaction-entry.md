@@ -181,6 +181,11 @@ If you are using Workflow, you can’t delete a batch that is pending approval.
 
 3. Delete the batch.
 
+[!NOTE]
+When you try to modify the check number on a cash receipt for an existing line item in a batch it will not save.  You may notice when you save a Cash Receipt with a Check type to a batch, and then open the transaction again and edit the Check/Card Number field, and then save it again, the change is not committed to the transaction.  The Check/Card Number field stays the same as it was originally entered as the first time the transaction was entered.  Also, the new entry that you tried to enter will be unavailable if you attempt to use it again as you will receive a message stating 'This check has been entered for this customer already'.
+
+Insted of trying to change the field from the existing batch, you should delete the transaction and re-enter.  
+
 ## Chapter 12: Transaction entry
 
 You can use the Receivables Transaction Entry window to enter sales/invoice, debit memo, finance charge, service/repair, warranty, credit memo, and return transactions. Posting journals are printed when transactions are posted only if you chose to print the appropriate posting journals using the Posting Setup window.
