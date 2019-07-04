@@ -1651,8 +1651,8 @@ Use the National Accounts Maintenance window to delete a national account.
 
 You can delete national accounts only if no apply information exists between the parent customer and any of its children. Before you delete a national account, you must pay off the documents, move the transactions to history using the Paid Sales Transaction Removal window and remove history using the Remove Receivables Distribution History window. See *Removing transaction history* and *Removing distribution history* for more information.
 
-*Deleting a national account doesn’t remove the customers from your system;
-it only removes the national account designation.*
+> [!NOTE]
+> Deleting a national account doesn’t remove the customers from your system; it only removes the national account designation.
 
 #### To delete a national account
 
