@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/28/2019
+ms.date: 07/04/2019
 ---
 
 # Microsoft Dynamics GP Receivables Management
@@ -44,15 +44,11 @@ This introduction is divided into the following sections:
 
 - *Send us your documentation comments*
 
-### What’s in this manual
-
 This manual is designed to give you an understanding of how to use the features of Receivables Management, and how it integrates with the Microsoft Dynamics GP system.
 
 To make best use of Receivables Management, you should be familiar with systemwide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
 
 Some features described in the documentation are optional and can be purchased through your Microsoft Dynamics GP partner.
-
-To view information about the release of Microsoft Dynamics GP that you’re using and which modules or features you are registered to use, choose Help \>\> About Microsoft Dynamics GP.
 
 The manual is divided into the following parts:
 
@@ -65,47 +61,6 @@ The manual is divided into the following parts:
 - *Part 4, Inquiries and reports*, explains how to use inquiries and reports to analyze your receivables activity.
 
 - *Part 5, Utilities and routines*, describes procedures that you can use to verify your account balances or remove history, and also explains procedures you complete on a periodic basis, such as month- or year-end closing.
-
-### Resources available from the Help menu
-
-The Microsoft Dynamics GP Help menu gives you access to user assistance resources on your computer, as well as on the Web.
-
-#### Contents
-
-Opens the Help file for the active Microsoft Dynamics GP component, and displays the main “contents” topic. To browse a more detailed table of contents, click the Contents tab above the Help navigation pane. Items in the contents topic and tab are arranged by module. If the contents for the active component includes an “Additional Help files” topic, click the links to view separate Help files that describe additional components.
-
-> [!TIP]
-> To find information in Help by using the index or full-text search, click the appropriate tab above the navigation pane, and type the keyword to find.
-
-To save the link to a topic in the Help, select a topic and then select the Favorites tab. Click Add.
-
-#### Index
-
-Opens the Help file for the active Microsoft Dynamics GP component, with the Index tab active. To find information about a window that’s not currently displayed, type the name of the window, and click Display.
-
-#### About this window
-
-Displays overview information about the current window. To view related topics and descriptions of the fields, buttons, and menus for the window, choose the appropriate link in the topic. You also can press F1 to display Help about the current window.
-
-#### Lookup
-
-Opens a lookup window, if a window that you are viewing has a lookup window. For example, if the Checkbook Maintenance window is open, you can choose this item to open the Checkbooks lookup window.
-
-#### Show Required Fields
-
-Highlights fields that are required to have entries. Required fields must contain information before you can save the record and close the window. You can change the font color and style used to highlight required fields. On the Microsoft Dynamics GP menu, choose User Preferences, and then choose Display.
-
-#### Printable Manuals
-
-Displays a list of manuals in Adobe Acrobat .pdf format, which you can print or view.
-
-#### What’s New
-
-Provides information about enhancements that were added to Microsoft Dynamics GP since the last major release.
-
-#### Documentation and resources on the web
-
-Opens a Web page that provides links to a variety of Web-based user assistance resources. Access to some items requires registration for a paid support plan.
 
 ## Part 1: Setup and cards
 
@@ -343,13 +298,14 @@ You can enter a default entry for an NSF charge, checkbook ID, price level, and 
 
 - **Default Summary View** Select a summary view to appear as the default summary view in the Customer Summary and Customer Yearly Summary Inquiry windows. If you select Amounts Since Last Close, the selected customer’s current summary information will be displayed. If you select Fiscal Year, the selected customer’s summary information for the fiscal year will be displayed. If you select Calendar Year, the selected customer’s summary information for the calendar year will be displayed.
 
-### E-mail statements
+### Email statements
 
-In addition to printing customer statements, you also can set up e-mail statements to be sent on a per-customer basis. If you are using a MAPI (Microsoft’s Messaging Application Programming Interface) compliant e-mail service, you can send the email statement in Portable Document Format (PDF) to any number of specified customer e-mail addresses. You must install Adobe Distiller or PDFWriter to send customer statements by e-mail.
+In addition to printing customer statements, you also can set up email statements to be sent on a per-customer basis. If you are using a MAPI (Microsoft’s Messaging Application Programming Interface) compliant email service, you can send the email statement in Portable Document Format (PDF) to any number of specified customer email addresses. You must install Adobe Distiller or PDFWriter to send customer statements by e-mail.
 
-In the Receivables Management Setup window, you can enter an e-mail address where the e-mail statements status report should be sent. This report includes a list of the e-mail statements that were sent successfully, and information about any errors that might have occurred during the sending process. You won’t be able to enter the address if you have marked Customer Statement in the Sales E-mail Setup window.
+In the Receivables Management Setup window, you can enter an email address where the e-mail statements status report should be sent. This report includes a list of the email statements that were sent successfully, and information about any errors that might have occurred during the sending process. You won’t be able to enter the address if you have marked Customer Statement in the Sales E-mail Setup window.
 
-*You can enter only one e-mail address in the Status Recipient field.*
+> [!NOTE]
+> You can enter only one e-mail address in the Status Recipient field.
 
 If you didn’t specify an e-mail address in the Receivables Management Setup window or if sending the status report by e-mail failed, Receivables Management will print the status report to the default printer and leave the status report file in the folder that you specified or in the default folder which will be \\CompanyID\\Microsoft Dyanmics\\GP\\UserID\\StmtStatus.
 
@@ -364,14 +320,14 @@ Use the Receivables Management Setup window to set up the aging periods to use, 
 
     ![A screenshot of a cell phone Description automatically generated](media/7a5ea1dd33f3297cf5418e678934dfa2.jpg)
 
-1. Specify the aging periods to use and how to age documents. See *Aging periods* for more information.
+2. Specify the aging periods to use and how to age documents. See *Aging periods* for more information.
 
-2. Enter passwords to restrict user access to certain sales activities. If you leave any of the password fields blank, no password will be required for those activities. See *Passwords* for more information.
+3. Enter passwords to restrict user access to certain sales activities. If you leave any of the password fields blank, no password will be required for those activities. See *Passwords* for more information.
 
-  > [!NOTE]
-  > To use the credit limit override approval workflow in Sales Order Processing, don’t enter a password for the Exceed Credit Limit field.
+    > [!NOTE]
+    > To use the credit limit override approval workflow in Sales Order Processing, don’t enter a password for the Exceed Credit Limit field.
 
-1. Specify whether to apply credit memos, returns, and payments by due date or document number when you automatically apply. See *Apply preferences* for more information.
+4. Specify whether to apply credit memos, returns, and payments by due date or document number when you automatically apply. See *Apply preferences* for more information.
 
 2. Mark any additional receivables options. See *Additional receivables options* for more information.
 
@@ -424,13 +380,13 @@ Use the Receivables Setup Options window to set up options to appear throughout 
 1. Open the Receivables Setup Options window.
 (Sales \>\> Setup \>\> Receivables \>\> Options button)
 
-![A screenshot of a cell phone Description automatically generated](media/ae7cb7069d72add6f2e37c7f940a6c5e.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/ae7cb7069d72add6f2e37c7f940a6c5e.jpg)
 
 2. Specify default transaction descriptions, codes, and next numbers.
 
 3. Enter the most recent dates specific sales activities were completed on. This information is updated automatically as these activities occur.
 
-Enter default tax schedules to be used for sales transactions when a customer doesn’t have a tax schedule assigned, and for taxes charged on freight and other miscellaneous charges. See the System Setup documentation (Help \>\> Printable Manuals) for more information about setting up tax schedules.
+    Enter default tax schedules to be used for sales transactions when a customer doesn’t have a tax schedule assigned, and for taxes charged on freight and other miscellaneous charges. See the System Setup documentation for more information about setting up tax schedules.
 
 4. Enter user-defined field names for tracking additional information about each customer and customer address and to sort information on reports. The Customer Master fields appear in the Customer Maintenance window, and the User-Defined 1 field is a sorting method on several customer reports. The Customer Address fields appear in the Customer Address Maintenance window.
 
@@ -470,11 +426,12 @@ You also can enter beginning territory sales amounts. These amounts are updated 
 
 2. In the New group, choose Sales Territory to open the Sales Territory Maintenance window.
 
-![A screenshot of a cell phone Description automatically generated](media/eb594930a3c07eb33434f954ad58f1a4.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/eb594930a3c07eb33434f954ad58f1a4.jpg)
 
 3. Enter an ID and a description for the territory.
 
-*To ensure that reports are printed in the correct order, be sure each territory ID has the same number of characters. The characters are sorted from left to right and numbers take priority over letters.*
+    > [!NOTE]
+    > To ensure that reports are printed in the correct order, be sure each territory ID has the same number of characters. The characters are sorted from left to right and numbers take priority over letters.
 
 4. Enter the territory’s country/region.
 
@@ -484,13 +441,13 @@ You also can enter beginning territory sales amounts. These amounts are updated 
 
 7. Mark whether to keep calendar-year history, fiscal-year history, or both.
 
-- If you mark Calendar Year, the sales and commission amounts for individual calendar months are recorded for reporting purposes.
+    - If you mark Calendar Year, the sales and commission amounts for individual calendar months are recorded for reporting purposes.
 
-- If you mark Fiscal Year, the sales and commission amounts for individual fiscal periods are recorded for reporting purposes.
+    - If you mark Fiscal Year, the sales and commission amounts for individual fiscal periods are recorded for reporting purposes.
 
-To view or edit detailed historical commission and sales information for a single territory, choose History to open the Sales Territory History window. This information is updated as you post transactions.
+    To view or edit detailed historical commission and sales information for a single territory, choose History to open the Sales Territory History window. This information is updated as you post transactions.
 
-To add periods to include, choose Add Period in the Sales Territory History window to open the Sales Period and Month Maintenance window. Close the window when you finish.
+    To add periods to include, choose Add Period in the Sales Territory History window to open the Sales Period and Month Maintenance window. Close the window when you finish.
 
 8. Choose OK to close the Sales Territory History window; choose Save to save the sales territory card.
 
@@ -532,7 +489,8 @@ You can assign a salesperson to each customer card. Transactions for the custome
 
 3. Enter a salesperson ID and name. If this salesperson is an employee, enter the employee ID; the employee record information appears. The salesperson ID doesn’t have to be the same as the employee ID.
 
-*To ensure that reports are printed in the correct order, be sure that each salesperson ID has the same number of characters. The characters are sorted from left to right and numbers take priority over letters.*
+    > [!NOTE]
+    > To ensure that reports are printed in the correct order, be sure that each salesperson ID has the same number of characters. The characters are sorted from left to right and numbers take priority over letters.
 
 4. Enter or select a territory ID. You must enter a territory ID before you can post commissions. Even if you don’t use territories, set up one sales territory to assign to all salespeople.
 
@@ -659,17 +617,17 @@ Use the Customer Class Setup window to enter new customer classes. In addition, 
 
 2. Enter an ID and description for the class.
 
-We recommend that you enter the class with the most common entries first and mark this class as your default class. If you mark Default, the information you set up for this class appears as the default information for every subsequent class you create. You can mark only one class as the default customer class.
+    We recommend that you enter the class with the most common entries first and mark this class as your default class. If you mark Default, the information you set up for this class appears as the default information for every subsequent class you create. You can mark only one class as the default customer class.
 
 3. Set up the credit options to apply to customers in this class, such as balance type, finance charge, minimum payment, credit limit, and writeoff.
 
-If customers in this class will use multicurrency transactions, you must select Open Item as the balance type. Multicurrency transactions cannot be entered for balance forward customers, and balance forward customers can’t be part of a national account.
+    If customers in this class will use multicurrency transactions, you must select Open Item as the balance type. Multicurrency transactions cannot be entered for balance forward customers, and balance forward customers can’t be part of a national account.
 
-If customers in this class will be part of a national account, you must select Open Item as the balance type.
+    If customers in this class will be part of a national account, you must select Open Item as the balance type.
 
 4. Mark Revalue Customer to include the transactions for the customers in this class when you’re revaluing the Sales series using the Multicurrency Revaluation window.
 
-Mark whether to post the revaluation results to each transaction’s Accounts Receivable account and Terms Discounts Available account, or to a Sales offset account.
+    Mark whether to post the revaluation results to each transaction’s Accounts Receivable account and Terms Discounts Available account, or to a Sales offset account.
 
 5. Select a default order fulfillment shortage option for this customer. You can choose None, Back Order Remaining, or Cancel Remaining. If you select None, you will have to allocate any shortages manually. See the Sales Order Processing documentation for more information.
 
@@ -677,11 +635,12 @@ Mark whether to post the revaluation results to each transaction’s Accounts Re
 
 7. If customers in this class will use multicurrency transactions, enter or select an existing currency as the default currency for the class. We recommend you enter a currency ID other than your functional currency only for those classes of customers who typically use a foreign currency.
 
-If you already set up a customer class and you change the currency ID, you can roll down the currency ID to the customers in this class; the new currency ID will be assigned to all customers you assign to the class in the future.
+    If you already set up a customer class and you change the currency ID, you can roll down the currency ID to the customers in this class; the new currency ID will be assigned to all customers you assign to the class in the future.
 
 8. Enter or select an existing rate type for the class. When you enter transactions, you automatically can select the appropriate exchange rate table based on the currency ID and rate type you’ve entered. See the Multicurrency Management documentation for more information about currencies and rate types.
 
-*If you don’t assign a rate type to a customer, the default rate type you’ve entered for the Sales Series using the Multicurrency Setup window appears on the transaction instead. Therefore, be sure you’ve entered a Sales series default rate type.*
+    > [!NOTE]
+    > If you don’t assign a rate type to a customer, the default rate type you’ve entered for the Sales Series using the Multicurrency Setup window appears on the transaction instead. Therefore, be sure you’ve entered a Sales series default rate type.
 
 9. Mark the types of history to keep. See *History options* for more information.
 
@@ -689,9 +648,9 @@ If you already set up a customer class and you change the currency ID, you can r
 
 11. Select a statement cycle for printing customer statements for this class. If you don’t send statements to most members in this class, select No Statement.
 
-To assign default posting accounts to the class, choose Accounts to open the Customer Class Accounts Setup window.
+    To assign default posting accounts to the class, choose Accounts to open the Customer Class Accounts Setup window.
 
-If you don’t set up accounts for the customer, the accounts from the class are used. If there aren’t any for the class, the accounts in the Posting Accounts Setup window are used. See *Setting up customer class default posting accounts* for more information.
+    If you don’t set up accounts for the customer, the accounts from the class are used. If there aren’t any for the class, the accounts in the Posting Accounts Setup window are used. See *Setting up customer class default posting accounts* for more information.
 
 12. Choose OK to close the window and return to the Customer Class Setup window, and choose Save to save your entries.
 
@@ -703,16 +662,17 @@ Use the Customer Class Intrastat Setup window to enter default Intrastat informa
 
 If you set up Intrastat information for customer classes, you won’t need to enter Intrastat information for individual customer cards in that class. However, you can change the information for a particular customer card using the Customer Intrastat Setup window.
 
-*You can enter Intrastat statistics only if you have marked to enable Intrastat tracking using the Company Setup Options window.*
+> [!NOTE]
+> You can enter Intrastat statistics only if you have marked to enable Intrastat tracking using the Company Setup Options window.
 
-See the System Setup documentation (Help \>\> Printable Manuals) for information about setting up Intrastat codes.
+See the System Setup documentation for information about setting up Intrastat codes.
 
 #### To enter customer class Intrastat statistics
 
 1. Open the Customer Class Intrastat Setup window.
 (Sales \>\> Setup \>\> Customer Class \>\> Select a customer class \>\>Intrastat button)
 
-![A screenshot of a cell phone Description automatically generated](media/0a29d884a9262fcdd7051a9d07feb026.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/0a29d884a9262fcdd7051a9d07feb026.jpg)
 
 2. Enter or select country, transport mode, transaction nature, incoterms, procedure/regime, port, region, and tax commodity codes for the customer class.
 
@@ -720,7 +680,8 @@ See the System Setup documentation (Help \>\> Printable Manuals) for information
 
 4. In the Customer Class Setup window, choose Save to save the information.
 
-*Deleting the customer class also deletes Intrastat information.*
+> [!NOTE]
+> Deleting the customer class also deletes Intrastat information.
 
 ### Setting up customer class default posting accounts
 
@@ -735,7 +696,7 @@ You can post other types of distributions either to Inventory or Receivables Man
 1. Open the Customer Class Accounts Setup window.
 (Sales \>\> Setup \>\> Customer Class \>\> Accounts button)
 
-![A screenshot of a cell phone Description automatically generated](media/3cd7047b7669f415246f6616cfd69d8a.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/3cd7047b7669f415246f6616cfd69d8a.jpg)
 
 2. If you didn’t specify a class ID using the previous window, enter or select a class ID and enter a description.
 
@@ -743,7 +704,8 @@ You can post other types of distributions either to Inventory or Receivables Man
 
 4. Mark whether to use the Cash account from the checkbook you selected using the Receivables Management Setup window or from the customer card.
 
-*If you’re using Bank Reconciliation, we recommend that you use the Cash account from the checkbook so you can easily reconcile the checkbook balance to the Cash account in General Ledger.*
+    > [!NOTE]
+    > If you’re using Bank Reconciliation, we recommend that you use the Cash account from the checkbook so you can easily reconcile the checkbook balance to the Cash account in General Ledger.
 
 5. Enter or select the posting accounts. These accounts appear as default entries for setting up customer cards.
 
@@ -755,7 +717,8 @@ You can post other types of distributions either to Inventory or Receivables Man
 
 The foundation of the Receivables Management module is your collection of customer cards. This information is used to track the status of customers and to print reports. It is important to keep this information up to date to reflect your company’s current activity.
 
-*You might be able to import your customer records from your current system directly into Receivables Management. Importing your customer data saves you a considerable amount of time. Contact your reseller for more information.*
+> [!NOTE]
+> You might be able to import your customer records from your current system directly into Receivables Management. Importing your customer data saves you a considerable amount of time. Contact your reseller for more information.
 
 This information is divided into the following sections:
 
@@ -791,7 +754,7 @@ Use the Customer Maintenance window to add customer cards to your Receivables Ma
 
 2. In the New group, choose Customer to open the Customer Maintenance window.
 
-![A screenshot of a cell phone Description automatically generated](media/b2c1c15b1b4e180e1f911a4f57d5836f.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/b2c1c15b1b4e180e1f911a4f57d5836f.jpg)
 
 3. Enter a customer ID and name information. The short name, such as the company’s initials, can be used in circumstances when the customer name is too long. Short names may appear on reports and can be used as a sorting option for reports. The statement name is the name that is printed on statements.
 
@@ -801,7 +764,7 @@ Use the Customer Maintenance window to add customer cards to your Receivables Ma
 
 6. Enter address information. An address ID is required if you enter any address information in this window. Internet address information can be entered by choosing the Internet button. To send documents such as invoices, sales quotes, and customer statements in e-mail, use the Internet Information window to enter To, Cc, and Bcc e-mail addresses.
 
-Additional addresses can be added by choosing Address to open the Customer Address Maintenance window. See *Entering customer address information* for more information.
+    Additional addresses can be added by choosing Address to open the Customer Address Maintenance window. See *Entering customer address information* for more information.
 
 7. Enter telephone and fax numbers.
 
@@ -809,11 +772,11 @@ Additional addresses can be added by choosing Address to open the Customer Addre
 
 9. Enter the UPS zone, shipping method and tax schedule ID used most often for this customer.
 
-Because taxes are calculated at the point of exchange of goods or services, the shipping method is used for tax calculations on transactions.
+    Because taxes are calculated at the point of exchange of goods or services, the shipping method is used for tax calculations on transactions.
 
-- If you select a shipping method of Delivery, the tax schedule assigned to the customer card is used to calculate the tax amount on transactions.
+    - If you select a shipping method of Delivery, the tax schedule assigned to the customer card is used to calculate the tax amount on transactions.
 
-- If you select a shipping method of Pickup, the tax schedule assigned to your company in the Company Setup window is used to calculate the tax amount.
+    - If you select a shipping method of Pickup, the tax schedule assigned to your company in the Company Setup window is used to calculate the tax amount.
 
 10. Enter or select address IDs for shipments, bills, and statements for this customer, if the customer has different addresses for multiple purposes. See *Entering customer address information* for more information.
 
@@ -823,7 +786,7 @@ Because taxes are calculated at the point of exchange of goods or services, the 
 
 13. Enter the trade discount, payment terms and price level information.
 
-You won’t be able to enter a price level if you’re using extended pricing.
+    You won’t be able to enter a price level if you’re using extended pricing.
 
 14. Choose Accounts to view or edit the posting accounts assigned to this customer. For more information, see *Setting up customer default posting accounts.*
 
@@ -850,11 +813,12 @@ You can post other types of distributions either to Inventory or Receivables Man
 1. Open the Customer Account Maintenance window.
 (Sales \>\> Cards \>\> Customer \>\> Select a customer ID \>\> Accounts)
 
-![A screenshot of a cell phone Description automatically generated](media/e8a98ea488c3534fd46e195c024e30e9.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/e8a98ea488c3534fd46e195c024e30e9.jpg)
 
 2. Mark whether to use the Cash account from the checkbook you selected using the Receivables Management Setup window, or from the customer card.
 
-*If you’re using Bank Reconciliation, we recommend that you use the Cash account from the checkbook so that you can easily reconcile the checkbook balance to the Cash account in General Ledger.*
+    > [!NOTE]
+    > If you’re using Bank Reconciliation, we recommend that you use the Cash account from the checkbook so that you can easily reconcile the checkbook balance to the Cash account in General Ledger.
 
 3. Enter or select the default posting accounts for this customer.
 
@@ -873,7 +837,7 @@ You also can enter site, salesperson, territory, and additional user-defined inf
 1. Open the Customer Address Maintenance window.
 (Sales \>\> Cards \>\> Addresses)
 
-![A screenshot of a social media post Description automatically generated](media/8d7bb2e94ca825636c0820cece70fc25.jpg)
+    ![A screenshot of a social media post Description automatically generated](media/8d7bb2e94ca825636c0820cece70fc25.jpg)
 
 2. Enter or select a customer ID.
 
@@ -881,15 +845,15 @@ You also can enter site, salesperson, territory, and additional user-defined inf
 
 4. Enter a shipping method and tax schedule ID for the address ID that’s currently displayed. If you select a shipping method that requires delivery, the default tax schedule assigned to the customer address will be displayed during transaction entry. If the method requires the customer to pick up goods, the schedule ID assigned to the site that the customer will pick up the goods from will be displayed.
 
-When you’re entering a sales transaction, the shipping method you entered for the customer in the Customer Address Maintenance window appears as the default entry.
+    When you’re entering a sales transaction, the shipping method you entered for the customer in the Customer Address Maintenance window appears as the default entry.
 
-To enter Intrastat information, choose the Intrastat button. See *Entering customer Intrastat statistics* for more information.
+    To enter Intrastat information, choose the Intrastat button. See *Entering customer Intrastat statistics* for more information.
 
 5. Enter or select a site ID to assign to the customer address or accept the default entry.
 
-If you’re entering a sales transaction, the site ID you select will appear as the default entry in the Sales Order Processing window.
+    If you’re entering a sales transaction, the site ID you select will appear as the default entry in the Sales Order Processing window.
 
-If you’re entering an invoicing transaction, the site ID you select will appear as the default entry in the Invoice Entry window.
+    If you’re entering an invoicing transaction, the site ID you select will appear as the default entry in the Invoice Entry window.
 
 6. Enter or select a salesperson ID and territory ID to assign to the customer address. Default commission amounts and default commission distribution amounts will be calculated based on the salesperson ID selected. You must select a sales territory to calculate commission amounts.
 
@@ -903,14 +867,15 @@ If you’re entering an invoicing transaction, the site ID you select will appea
 
 Use the Customer Intrastat Setup window to enter a customer’s tax registration number. If Intrastat information was entered for the customer class, that information appears in this window. You can use the Customer Intrastat Setup window to change Intrastat information for an individual customer, or to enter Intrastat information if none was entered for a customer class.
 
-*You can enter Intrastat statistics only if you marked to enable Intrastat tracking using the Company Setup Options window.*
+> [!NOTE]
+> You can enter Intrastat statistics only if you marked to enable Intrastat tracking using the Company Setup Options window.
 
 #### To enter customer Intrastat statistics
 
 1. Open the Customer Intrastat Setup window.
 (Sales \>\> Cards \>\> Addresses \>\> Select a customer ID \>\> Intrastat button)
 
-![A screenshot of a cell phone Description automatically generated](media/0a29d884a9262fcdd7051a9d07feb026.jpg)
+    ![A screenshot](media/0a29d884a9262fcdd7051a9d07feb026.jpg)
 
 2. Enter a tax registration number.
 
@@ -920,7 +885,8 @@ Use the Customer Intrastat Setup window to enter a customer’s tax registration
 
 5. In the Customer Address Maintenance window, choose Save to save the information.
 
-*Deleting the customer address also deletes Intrastat information.*
+> [!NOTE]
+> Deleting the customer address also deletes Intrastat information.
 
 ### Finance charge and credit limit options
 
@@ -961,10 +927,10 @@ If you entered a class ID for this customer, the options you entered using the C
 
 7. If the customer uses multicurrency transactions, enter or select the default currency and an existing rate type for the customer. When you enter transactions, you automatically can select the appropriate exchange rate table based on the currency ID and rate type you’ve entered.
 
-We recommend that you enter a currency ID other than your functional currency only for those customers who typically use a foreign currency. See the Multicurrency Management documentation for more information about currencies and rate types.
+    We recommend that you enter a currency ID other than your functional currency only for those customers who typically use a foreign currency. See the Multicurrency Management documentation for more information about currencies and rate types.
 
-> [!NOTE]
-> If a rate type isn’t assigned to a customer on a multicurrency transaction, the default rate type you’ve entered for the Sales Series using the Multicurrency Setup window appears instead. Therefore, be sure you’ve entered a Sales series default rate type.
+    > [!NOTE]
+    > If a rate type isn’t assigned to a customer on a multicurrency transaction, the default rate type you’ve entered for the Sales Series using the Multicurrency Setup window appears instead. Therefore, be sure you’ve entered a Sales series default rate type.
 
 8. Select a statement cycle for printing statements for this customer. If you don’t send statements to the customer, select No Statement.
 
@@ -972,7 +938,7 @@ We recommend that you enter a currency ID other than your functional currency on
 
 10. Mark whether to be able to send e-mail customer statements to this customer, and enter at least one valid e-mail address where the customer statements should be sent. Choose To, Cc, or Bcc to open your e-mail address book. You won’t be able to enter the address if you have marked Customer Statement in the Sales E-mail Setup window or are using Exchange as your email server type in the System Preferences window.
 
-You must have Adobe Distiller or PDFWriter installed on your computer to e-mail statements. Any MAPI-compliant e-mail service is supported.
+    You must have Adobe Distiller or PDFWriter installed on your computer to e-mail statements. Any MAPI-compliant e-mail service is supported.
 
 11. Choose OK to close the Customer Maintenance Options window. In the Customer Maintenance window, choose Save to save the information.
 
@@ -1005,7 +971,7 @@ The options available in this window depend on the selections you made in the Co
 
     - The file formats available to send attachments depend on the formats you selected in the Company E-mail Setup window.
 
-Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window. Standard reports (reports generated by the Report Writer engine) are sent when you send documents as HTML attachments.
+    Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window. Standard reports (reports generated by the Report Writer engine) are sent when you send documents as HTML attachments.
 
 6. Choose OK to update the selected customer with the options you entered.
 
@@ -1033,13 +999,13 @@ The options available in this window depend on the selections you made in the Co
 
 6. Mark the documents you want to send in e-mail. You can select a default message ID for each document and then select the format that you want to send the document in.
 
-- If a document is unmarked, it can’t be sent in e-mail. The documents available to send depend on the documents selected in the Sales E-Mail Setup window.
+    - If a document is unmarked, it can’t be sent in e-mail. The documents available to send depend on the documents selected in the Sales E-Mail Setup window.
 
-- If you didn’t select a message ID for the document type in the Sales E-mail Setup window, this field is blank.
+    - If you didn’t select a message ID for the document type in the Sales E-mail Setup window, this field is blank.
 
-- The file formats available to send attachments depend on the formats you selected in the Company E-mail Setup window.
+    - The file formats available to send attachments depend on the formats you selected in the Company E-mail Setup window.
 
-Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window. Standard reports (reports generated by the Report Writer engine) are sent when you send documents as HTML attachments.
+    Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window. Standard reports (reports generated by the Report Writer engine) are sent when you send documents as HTML attachments.
 
 7. Choose OK to save your entries and to close the Mass Customer E-mail Settings window.
 
@@ -1081,7 +1047,7 @@ The Hold option is ignored if the customer ID is the child customer of a nationa
 #### To place or remove a customer hold
 
 1. Open the Customer Maintenance window.
-(Sales \>\> Cards \>\> Customer)
+    (Sales \>\> Cards \>\> Customer)
 
 2. Enter or select the customer to place on hold or remove from on hold.
 
@@ -1110,11 +1076,11 @@ In addition, the Inactive option is ignored if the customer ID is the child cust
 #### To inactivate a customer card
 
 1. Open the Customer Maintenance window. 
-(Sales \>\> Cards \>\> Customer)
+    (Sales \>\> Cards \>\> Customer)
 
 2. Enter or select the customer card.
 
-Mark Inactive. To reactivate a customer card, unmark the Inactive option.
+    Mark Inactive. To reactivate a customer card, unmark the Inactive option.
 
 3. Choose Save.
 
@@ -1125,7 +1091,7 @@ If you need to change or delete an address, you can use the Customer Address Mai
 #### To modify or delete a customer address
 
 1. Open the Customer Address Maintenance window. 
-(Sales \>\> Cards \>\> Addresses)
+    (Sales \>\> Cards \>\> Addresses)
 
 2. Enter or select the customer ID and address ID.
 
@@ -1143,18 +1109,17 @@ Use the Customer Maintenance window to make changes to a customer card, or to de
 
 - If a customer is part of a national account, you can’t delete the customer card until you remove the customer from the national account. Additional restrictions also apply to national account customers. See *Chapter 9, “National accounts,”* for more information.
 
-- If the customer card you’re deleting has a current balance, you can’t delete it until the year-end closing process is completed. See *Calendar year-end closing overview* for more information*.*
+- If the customer card you’re deleting has a current balance, you can’t delete it until the year-end closing process is completed. See *Calendar year-end closing overview* for more information.*
 
 - If transaction history is being kept for the customer card you’re deleting, you must remove history for that customer before deleting it. See *Chapter 28, “History removal,”* for more information. If you don’t want to remove the history, you might inactivate the customer card.
 
-*To find out whether customer cards have any balances or transactions in history, choose*
-
-*File \>\> Print in the Customer Mass Delete window to print a Customer Card Removal Edit List; or, print a Transaction Removal Report without removing historical information. The cards appear as deleted on the report, but they aren’t actually deleted until you complete the process.*
+> [!TIP]
+> To find out whether customer cards have any balances or transactions in history, choose File \>\> Print in the Customer Mass Delete window to print a Customer Card Removal Edit List; or, print a Transaction Removal Report without removing historical information. The cards appear as deleted on the report, but they aren’t actually deleted until you complete the process.
 
 #### To modify or delete a customer card
 
 1. Open the Customer Maintenance window. 
-(Sales \>\> Cards \>\> Customer)
+    (Sales \>\> Cards \>\> Customer)
 
 2. Enter or select the ID for the customer card to change or delete.
 
@@ -1172,14 +1137,15 @@ Use the Customer Class Setup window to modify an existing customer class to refl
 
 If you make changes to an existing customer class, you’ll be asked whether to roll down the changes to all customer cards in the class. If you roll down changes, all customer cards in the class are updated to reflect the changes you’ve made. If you don’t roll down the changes, only new customer cards you add will reflect the changes.
 
-*If you change the balance type for a class, the change isn’t rolled down to the customers assigned to the class. Once a balance type is selected for a customer, it can’t be changed.*
+> [!NOTE]
+> If you change the balance type for a class, the change isn’t rolled down to the customers assigned to the class. Once a balance type is selected for a customer, it can’t be changed.
 
 When you delete a class, the customer cards assigned to the class aren’t affected.
 
 #### To modify or delete a customer class
 
 1. Open the Customer Class Setup window. 
-(Sales \>\> Setup \>\> Customer Class)
+    (Sales \>\> Setup \>\> Customer Class)
 
 2. Enter or select the ID for the class to change.
 
@@ -1266,7 +1232,8 @@ Use the Posting Setup window to change your posting settings so your transaction
 
 3. Unmark Post to General Ledger. Repeat this for the origins of Receivables Apply Doc. and Receivables Cash Receipts.
 
-*The accounts in General Ledger might be overstated if you don’t unmark this posting option.*
+> [!NOTE]
+> The accounts in General Ledger might be overstated if you don’t unmark this posting option.
 
 ### Entering open item beginning balances
 
@@ -1383,7 +1350,8 @@ Use the Posting Setup window to change the posting settings so transactions don�
 
 3. Unmark Post to General Ledger, if General Ledger is part of your system. Repeat this for the origins of Receivables Apply Doc. and Receivables Cash Receipts.
 
-*The accounts in General Ledger might be overstated if you don’t unmark this posting option.*
+> [!NOTE]
+> The accounts in General Ledger might be overstated if you don’t unmark this posting option.
 
 ### Entering balance forward transactions for noncurrent periods
 
@@ -1404,17 +1372,18 @@ Use the Receivables Batch Entry and Receivables Transaction Entry windows to ent
 
 6. Enter beginning balance transactions.
 
-The following table outlines what you should enter depending on the information you keep for your customers:
+    The following table outlines what you should enter depending on the information you keep for your customers:
 
-| **If you plan to keep**       | **What you’ll enter**       |
-|-------------------------------|-----------------------------|
-| Transaction history in detail (used only for the current periods) | Enter each transaction from the current period as a separate entry.   |
-| Transaction history in summary                                    | Enter summary information per month or aging period for each customer. |
-| Beginning balances                                                | Enter the beginning balance for each customer in the Sales field.     |
+    | **If you plan to keep**       | **What you’ll enter**       |
+    |-------------------------------|-----------------------------|
+    | Transaction history in detail (used only for the current periods) | Enter each transaction from the current period as a separate entry.   |
+    | Transaction history in summary                                    | Enter summary information per month or aging period for each customer. |
+    | Beginning balances                                                | Enter the beginning balance for each customer in the Sales field.     |
 
-See *Chapter 12, “Transaction entry,”* for more information.
+    See *Chapter 12, “Transaction entry,”* for more information.
 
-*Because you keep detailed transaction history only for current periods for balance forward customers, don’t enter transactions for the current period until after you consolidate period balances.*
+    > [!NOTE]
+    > Because you keep detailed transaction history only for current periods for balance forward customers, don’t enter transactions for the current period until after you consolidate period balances.
 
 7. Choose Post to post the beginning balance transactions.
 
@@ -1457,15 +1426,15 @@ enter and post transactions for current periods.
 
 6. Enter beginning balance transactions.
 
-The following table outlines what you should enter depending on the information you keep for your customers and records:
+    The following table outlines what you should enter depending on the information you keep for your customers and records:
 
-| **If you plan to keep**    | **What you’ll enter**                                                  |
-|----------------------------|------------------------------------------------------------------------|
-| Transaction history in detail (used only for the current periods) | Enter each transaction from the current period as a separate entry.   |
-| Transaction history in summary                                    | Enter summary information per month or aging period for each customer. |
-| Beginning balances                                                | Enter the beginning balance for each customer in the Sales field.     |
+    | **If you plan to keep**    | **What you’ll enter**                                                  |
+    |----------------------------|------------------------------------------------------------------------|
+    | Transaction history in detail (used only for the current periods) | Enter each transaction from the current period as a separate entry.   |
+    | Transaction history in summary                                    | Enter summary information per month or aging period for each customer. |
+    | Beginning balances                                                | Enter the beginning balance for each customer in the Sales field.     |
 
-See *Chapter 12, “Transaction entry,”* for more information.
+    See *Chapter 12, “Transaction entry,”* for more information.
 
 7. Choose Post to post the beginning balance transactions.
 
@@ -1483,7 +1452,8 @@ Use the Posting Setup window to reset the posting settings so transactions post 
 
 3. Mark Post to General Ledger, if General Ledger is part of your system. Repeat this for the origins of Receivables Apply Doc. and Receivables Cash Receipts.
 
-*Make a backup of your setup options and default entries, class and customer cards, and beginning balances. If there is a power fluctuation or some other problem, you can restore your beginning data.*
+> [!NOTE]
+> Make a backup of your setup options and default entries, class and customer cards, and beginning balances. If there is a power fluctuation or some other problem, you can restore your beginning data.
 
 ## Chapter 8: Customer history
 
@@ -1491,7 +1461,8 @@ Entering customer history gives you the historical background you need to use re
 
 Whether history has been entered here or by entering transactions, the fields in these windows are updated as transactions are posted. Information is updated in the inquiry windows, as well. See *Chapter 24, “Customer inquiries,”* for more information about using inquiry windows.
 
-*Be sure to enter beginning balances before entering customer history so those amounts aren’t posted twice.*
+> [!IMPORTANT]
+> Make sure you enter beginning balances before entering customer history so those amounts aren’t posted twice.
 
 This information is divided into the following sections:
 
@@ -1593,11 +1564,11 @@ Use the Customer Credit Summary window to enter information about the average nu
 
 2. Enter the Average Days to Pay for the current year to date and life to date.
 
-After a customer has paid his or her first invoice, the average days to pay (ADTP) is calculated based on the number of invoices a customer has, the time taken to pay the first invoice, and the time taken to pay the most recent invoice. The formula for calculating the average days to pay is:
+    After a customer has paid his or her first invoice, the average days to pay (ADTP) is calculated based on the number of invoices a customer has, the time taken to pay the first invoice, and the time taken to pay the most recent invoice. The formula for calculating the average days to pay is:
 
-ADTP=(Current ADTP) x (Number of Invoices) + (Number of Days Taken to Pay Most Recent Invoice)/(Number of Invoices + 1)
+    ADTP=(Current ADTP) x (Number of Invoices) + (Number of Days Taken to Pay Most Recent Invoice)/(Number of Invoices + 1)
 
-The time it took to pay the first invoice would provide the initial value for the Current ADTP. Any later invoices paid by this customer will provide the values for the number of invoices and the number of days taken to pay the most recent invoice. The ADTP calculated on the customer’s initial invoices then becomes the “Current ADTP.” You can use this value when you recalculate the ADTP for later invoices.
+    The time it took to pay the first invoice would provide the initial value for the Current ADTP. Any later invoices paid by this customer will provide the values for the number of invoices and the number of days taken to pay the most recent invoice. The ADTP calculated on the customer’s initial invoices then becomes the “Current ADTP.” You can use this value when you recalculate the ADTP for later invoices.
 
 3. Enter the information for any NSF (non-sufficient funds) payments from the customer for the current year to date and life to date.
 
