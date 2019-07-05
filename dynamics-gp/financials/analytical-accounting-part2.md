@@ -700,18 +700,19 @@ You can modify the analysis information for a journal entry as often as
 required. Once you post an adjustment, the analysis information that you’ve
 entered will override the previous analysis information.
 
-*Analytical information can be adjusted only for those distribution accounts
+> [!NOTE]
+> Analytical information can be adjusted only for those distribution accounts
 of a journal entry that are linked to an accounting class at the time of
-adjustment.*
+adjustment.
 
 **To adjust analysis information in posted transactions:**
 
 1. Open the Analytical Adjustment Entry window. 
     (Transactions \>\> Financial \>\> Analytical Accounting \>\> Edit Analysis)
 
-![A Screenshot IMAGE – AAAE.jpg](media/2d16bd10e7ba09c1c015aa0fd81672c7.jpg)
+    ![A Screenshot](media/AAAE.jpg)
 
-    Enter the open year for which to view transactions. All open years for the company are listed in the drop down.
+    Enter the open year for which to view transactions. All open years for the company are listed in the drop down.  
 
 1. Enter or select the journal entry number for which to enter or edit the
     analysis information. The following values default on selecting a journal

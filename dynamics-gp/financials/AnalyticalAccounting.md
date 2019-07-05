@@ -40,7 +40,7 @@ of Analytical Accounting, and how it integrates with the Microsoft Dynamics GP
 system.
 
 To make best use of Analytical Accounting, you should be familiar with
-systemwide features described in the System User’s Guide, the System Setup
+system-wide features described in the System User’s Guide, the System Setup
 Guide, and the System Administrator’s Guide.
 
 Some features described in the documentation are optional and can be purchased
@@ -52,7 +52,7 @@ Microsoft Dynamics GP.
 
 The manual is divided into the following parts:
 
-• *Part 1, Setup*, describes the set up tasks you need to complete to start using Analytical Accounting. It explains how to set up analysis codes and account classes in order to enter analysis information. It also describes how you can set up budgets for a group of analysis dimensions.
+- *Part 1, Setup*, describes the set up tasks you need to complete to start using Analytical Accounting. It explains how to set up analysis codes and account classes in order to enter analysis information. It also describes how you can set up budgets for a group of analysis dimensions.
 
 - *Part 2, Transactions*, provides detailed information about entering and viewing analysis information for your transactions. For more information, see [Microsoft Dynamics GP Analytical Accounting Part 2: Transactions](analytical-accounting-part2.md).
 
@@ -84,7 +84,8 @@ enter information, or you can use the Setup Checklist window (Administration
 your System Setup Guide (Help \>\> Contents \>\> select Setting up the
 System) for more information about the Setup Checklist window.
 
-*Analytical Accounting is not compatible with SQL Server® 7.0.*
+> [!NOTE]
+> Analytical Accounting is not compatible with SQL Server 7.0.
 
 This information is divided into the following sections:
 
@@ -112,40 +113,33 @@ This information is divided into the following sections:
 
 - *Setting up user access to codes*
 
-#### Analytical Accounting overview
+### Analytical Accounting overview
 
 The following flowchart shows you the sequence in which you will set up
 Analytical Accounting, enter analysis information, and generate queries and
 reports.
 
-IMAGE – AAFLOW.jpg
+![A screenshot](media/AAFLOW.jpg)
 
-![A close up of text on a white background Description automatically generated](media/2dbab2e22369c17bfba4f465a12f0249.jpg)
 
-A close up of text on a white background Description automatically generated
+### Creating default records
 
-#### Creating default records
+After installing Analytical Accounting, you must run the Create Default Record routine using the Analytical Accounting Setup wizard. You must run this routine once, for each company registered in your Microsoft Dynamics GP system.
 
-After installing Analytical Accounting, you must run the Create Default
-Record routine using the Analytical Accounting Setup wizard. You must run
-this routine once, for each company registered in your Microsoft Dynamics GP
-system.
-
-*You must be logged in as SA or DYNSA to set up Analytical Accounting.*
+> [!IMPORTANT]
+> You must be logged in as SA or DYNSA to set up Analytical Accounting.
 
 **To create default records:**
 
 1. Open the Analytical Accounting Setup wizard window. (Administration \>\>
     Setup \>\> Company \>\> Analytical Accounting \>\> Setup)
 
-The option Create Default Record is marked by default. This option is only
-available if it has not already been completed.
+    The option Create Default Record is marked by default. This option is only available if it has not already been completed.
 
 1. Choose Next to go to the Selected Option window, or choose Cancel to exit
     the setup process.
 
-The tasks that will be performed are displayed in the Selected Option
-window.
+    The tasks that will be performed are displayed in the Selected Option window.
 
 1. Choose Finish to perform the tasks displayed. An arrow next to a task in the
     scrolling window indicates the progress of the tasks that are running. As
@@ -154,7 +148,7 @@ window.
 
 2. Choose OK to close the window when all the tasks are completed.
 
-#### Setting up posting options for Analytical Accounting
+### Setting up posting options for Analytical Accounting
 
 Once you’ve installed Analytical Accounting for your company, you must set
 up the appropriate posting options for Analytical Accounting in the
@@ -165,8 +159,7 @@ In order to collect analytical information for an account, the account must
 be linked to an account class. Analytical Accounting does not support
 posting in summary. Therefore, you must ensure that each account in the
 Account Maintenance window that you want to link to an account class has its
-level of posting set to detail. Refer to *Linking accounts to an account
-class* for information about linking accounts to an account class.
+level of posting set to detail. Refer to *Linking accounts to an account class* for information about linking accounts to an account class.
 
 **To set up posting options for Analytical Accounting:**
 
@@ -185,32 +178,18 @@ class* for information about linking accounts to an account class.
     Post in Detail option to post U.S. Payroll transactions in detail for all
     origins, except Period End Reports.
 
-*You must mark this option to enter and view analysis information for U.S.
-payroll transactions.*
+    > [!IMPORTANT]
+    > You must mark this option to enter and view analysis information for U.S. payroll transactions.
 
-Once Analytical Accounting is activated, you cannot select Create a Journal
-Entry Per Batch without marking Use Account Settings. You also cannot unmark
-the Use Account Settings option after Analytical Accounting has been
-activated. However, you can change the posting option to Create a Journal
-Entry per Transaction, or per Batch with Use Account Settings marked after
-Analytical Accounting has been activated.
+    Once Analytical Accounting is activated, you cannot select Create a Journal Entry Per Batch without marking Use Account Settings. You also cannot unmark the Use Account Settings option after Analytical Accounting has been activated. However, you can change the posting option to Create a Journal Entry per Transaction, or per Batch with Use Account Settings marked after Analytical Accounting has been activated.
 
-After Analytical Accounting has been activated, any account that has a level
-of posting set to summary in the Account Maintenance window cannot be linked
-to an account class. After you have linked an account to an account class,
-you cannot change the level of posting from detail to summary in the Account
-Maintenance window.
+    After Analytical Accounting has been activated, any account that has a level of posting set to summary in the Account Maintenance window cannot be linked to an account class. After you have linked an account to an account class, you cannot change the level of posting from detail to summary in the Account Maintenance window.
 
-IMAGE – AAPOST.jpg
+    ![A screenshot](media/AAPOST.jpg)
 
-![A screenshot(media/958244b7def8cb9a998113d0d029b72a.jpg)
+1. Complete the setup procedures and choose OK or Save to save the posting setup.
 
-
-
-1. Complete the setup procedures and choose OK or Save to save the posting
-    setup.
-
-#### Activating Analytical Accounting
+### Activating Analytical Accounting
 
 You must activate Analytical Accounting in all the companies where it will
 be used. The Activate Analytical Accounting routine can be accessed through
@@ -238,11 +217,7 @@ Accounting system tables.
 1. Open the Analytical Accounting Setup wizard window. (Administration \>\>
     Setup \>\> Company \>\> Analytical Accounting \>\> Setup)
 
-IMAGE – AAWIZ.jpg
-
-![A Screenshot](media/a9c853b5106dbf1f470594504be1dca5.jpg)
-
-
+    ![A Screenshot](media/AAWIZ.jpg)
 
 1. Mark the Activate Analytical Accounting option to activate the product for
     the company you are logged into. If you have not registered Analytical
@@ -250,9 +225,7 @@ IMAGE – AAWIZ.jpg
     Accounting prompting you to do so. Contact your Microsoft Dynamics GP
     representative for more information about registration.
 
-The Activate Analytical Accounting option is available only if you’ve
-created the default records for the company you are logged into. Refer to
-*Creating default records* for more information.
+    The Activate Analytical Accounting option is available only if you’ve created the default records for the company you are logged into. Refer to *Creating default records* for more information.
 
 1. Choose Next to go to the next setup window which displays the tasks that are
     performed.
@@ -264,7 +237,7 @@ created the default records for the company you are logged into. Refer to
 
 3. When all the tasks are completed, choose OK to close the window.
 
-#### Assigning security roles and tasks to users
+### Assigning security roles and tasks to users
 
 Individual security is role-based in Microsoft Dynamics GP. Each user must
 be assigned to a security role before they can access any forms, reports, or
@@ -317,7 +290,7 @@ Security Roles) and grant access to the required windows, reports or files.
 Refer to the System Setup documentation for more information on security in
 Microsoft Dynamics GP.
 
-#### Setting up Analytical Accounting options
+### Setting up Analytical Accounting options
 
 You can set up posting, viewing, and deletion options in the Analytical
 Accounting Options window.
@@ -327,11 +300,7 @@ Accounting Options window.
 1. Open the Analytical Accounting Options window. (Administration \>\> Setup
     \>\> Company \>\> Analytical Accounting \>\> Options)
 
-IMAGE – AAOPT.jpg
-
-![A Screenshot](media/23357e8ca8d04ef1c6e196260e5d731b.jpg)
-
-
+    ![A Screenshot](media/AAOPT.jpg)
 
 1. Mark the Post Cash Receipt deposits automatically in Bank Reconciliation
     option so that cash receipts entered in Receivables Management directly
@@ -347,15 +316,10 @@ IMAGE – AAOPT.jpg
     accounts after the individual transactions have been posted from these
     modules.
 
-3. Mark the Allow Deletion of Transaction Dimensions option to delete
-    transaction dimensions that exist in posted transactions from the
-    Transaction Dimension Maintenance window. Refer to *Defining transaction
-    dimensions* for more information about deleting a transaction dimension.
+3. Mark the Allow Deletion of Transaction Dimensions option to delete  transaction dimensions that exist in posted transactions from the Transaction Dimension Maintenance window. Refer to *Defining transaction dimensions* for more information about deleting a transaction dimension.
 
-*You can restrict users’ ability to delete a transaction dimension. To do
-this, open the Security Setup window (Administration \>\>Setup \>\> System
-\>\> Security) and deny access as necessary, to the Transaction Dimension
-Maintenance window.*
+    > [!TIP]
+    > You can restrict users’ ability to delete a transaction dimension. To do this, open the Security Setup window (Administration \>\>Setup \>\> System \>\> Security) and deny access as necessary, to the Transaction Dimension Maintenance window.
 
 1. Mark the Show Inactive Trx Dim in Acct Class Maint window option to view the
     transaction dimensions that have been set to inactive in the Accounting
@@ -374,9 +338,8 @@ Maintenance window.*
     \>\> System \>\> Registration). Refer to the Microsoft Dynamics GP
     documentation for more information.
 
-*You must mark the Post in Detail option for the Payroll series in the
-Posting Setup window before you can enable transaction dimensions in U.S.
-Payroll.*
+    > [!NOTE]
+    > You must mark the Post in Detail option for the Payroll series in the Posting Setup window before you can enable transaction dimensions in U.S. Payroll.
 
 1. Unmark the Allow special characters in Trx Dim./Codes option if you are
     using FRx® with Analytical Accounting. FRx does not support transaction
@@ -420,7 +383,7 @@ Payroll.*
 
 12. Choose Cancel to close the window without saving the changes.
 
-#### Modifying column headings for inquiries and reports
+### Modifying column headings for inquiries and reports
 
 Analytical Accounting uses pre-defined columns to classify information in
 the Multilevel Query wizard. You can modify the column header and column
@@ -457,9 +420,7 @@ You cannot create or delete any column in this window.
 
 ![A screenshot(media/b5a63aac5022ab48480513880201f344.jpg)
 
-
-
-#### Defining fiscal years
+## Defining fiscal years
 
 The Reporting Periods window displays the calendar and fiscal definition for
 the fiscal years that are set up in Microsoft Dynamics GP. While doing an
@@ -472,11 +433,7 @@ or half year.
 1. Open the Reporting Periods window. (Administration \>\> Setup \>\> Company
     \>\> Analytical Accounting \>\> Options \>\> Reporting Periods button)
 
-IMAGE – AARP.jpg
-
-![A Screenshot](media/46c00ccd131fa40c67a4829d50636dbf.jpg)
-
-A screenshot
+![A Screenshot](media/AARP.jpg)
 
 1. The Year field displays the current open year. Select a year from the fiscal
     years set up in Microsoft Dynamics GP. The Fiscal View and the Calendar view
@@ -486,7 +443,7 @@ A screenshot
 
 3. Choose OK to close the window.
 
-#### Setting up SmartList integration
+### Setting up SmartList integration
 
 You can add Analytical Accounting records to the SmartList using the
 SmartList Integration window. All the records that you add to the SmartList
@@ -552,7 +509,7 @@ removed from the SmartList after you click Process.
 4. Choose Cancel to close the window without saving the changes made to the
     scrolling window.
 
-#### Setting up default user-defined fields for transaction dimensions
+### Setting up default user-defined fields for transaction dimensions
 
 Analytical Accounting allows you to enter labels for up to twenty
 user-defined fields for each alphanumeric transaction dimension.
@@ -574,10 +531,7 @@ generate for the transaction dimension code.
     You cannot enter the same label in two fields. The label entered for each
     field is saved as soon as you move to another field in the window.
 
-The labels you enter in this window will be the default labels for all
-alphanumeric transaction dimensions that you’ve set up. You can change these
-labels for each alphanumeric transaction dimension. Refer to *Setting up
-userdefined fields per transaction dimension* for more information.
+    The labels you enter in this window will be the default labels for all alphanumeric transaction dimensions that you’ve set up. You can change these labels for each alphanumeric transaction dimension. Refer to *Setting up userdefined fields per transaction dimension* for more information.
 
 1. Choose Load Defaults to clear all the values you’ve entered and revert to
     the system generated values.
@@ -587,7 +541,7 @@ userdefined fields per transaction dimension* for more information.
 
 3. Choose OK to close the window.
 
-#### Setting up assignment options
+### Setting up assignment options
 
 You can specify if the distribution amount of an analytical account is to be
 assigned fully or partially. You can post partially assigned transactions in
@@ -600,29 +554,19 @@ Fixed Asset will be marked by default on a new install or a new company.
 1. Open the Assignment Setup window. (Administration \>\> Setup \>\> Company
     \>\> Analytical Accounting \>\> Assignment)
 
-IMAGE – AAAS.jpg
+    ![A Screenshot](media/AAAS.jpg)
 
-![A Screenshot](media/c5e05edee133ee678d89245f744a14e1.jpg)
+    All the Microsoft Dynamics GP modules that integrate with Analytical Accounting are listed in the scrolling window. The Full option is marked for all by default. This indicates that the distributions must be fully assigned before you can post the transactions.
 
-
-
-All the Microsoft Dynamics GP modules that integrate with Analytical
-Accounting are listed in the scrolling window. The Full option is marked for
-all by default. This indicates that the distributions must be fully assigned
-before you can post the transactions.
-
-*In the case of Bank Management transactions, you can post a transaction
-with partial assignments, if you’ve allowed partial assignments for the
-module that you’re posting the Bank Management transaction to. The Inventory
-module is not included since assignments are not allowed in this module.*
+    > [!NOTE]
+    > In the case of Bank Management transactions, you can post a transaction with partial assignments, if you’ve allowed partial assignments for the module that you’re posting the Bank Management transaction to. The Inventory module is not included since assignments are not allowed in this module.
 
 1. Unmark the Full option for the modules where you want to allow partial
     assignments. If you allow partial assignments for a module, you can post a
     transaction even if the sum of assignments entered for an analytical account
     is not equal to the distribution amount of the analytical account.
 
-You can mark and unmark this option at any time for each module. The options
-that you have saved will apply to all un-posted and future transactions.
+    You can mark and unmark this option at any time for each module. The options that you have saved will apply to all un-posted and future transactions.
 
 1. Mark the option “No Warning When Partial Assignments Are Allowed” if you do
     not want to be warned while saving or posting partially assigned
@@ -630,8 +574,7 @@ that you have saved will apply to all un-posted and future transactions.
     save or post a partially assigned transaction. You can choose Yes on the
     message to continue saving or posting with partial assignments.
 
-You can mark this option even when the Full option has been marked for all
-modules. You can mark or unmark this option at any time.
+    You can mark this option even when the Full option has been marked for all modules. You can mark or unmark this option at any time.
 
 1. Choose the Redisplay button to revert to the last saved changes on the
     window.
@@ -643,7 +586,7 @@ modules. You can mark or unmark this option at any time.
 4. Choose Print to print the Assignment Options report for the assignment
     options that you’ve saved for each module.
 
-#### Setting up user access to codes
+### Setting up user access to codes
 
 Use the User Access to Trx Dimension Codes window to specify which users
 have permission to use transaction dimension codes in distributions and
@@ -681,27 +624,22 @@ have permission to distribute or adjust those codes.*
 1. Open the User Access to Trx Dimension Codes window. (Administration \>\>
     Setup \>\> Company \>\> Analytical Accounting \>\> User Access)
 
-The Type field displays Transaction Dimension as the default selection. 
-IMAGE – AAUA.jpg
+    The Type field displays Transaction Dimension as the default selection. 
 
-![A screenshot(media/8d2566f79fcac71b9607c70cd9266f58.jpg)
-
-
+    ![A screenshot](media/AAUA.jpg)
 
 1. Select an alphanumeric transaction dimension in the Transaction Dimension
     field. You can select an active or an inactive transaction dimension.
 
 2. Select the Transaction Dimension Code for which you want to set user access.
 
-The scrolling window displays all the user IDs you’ve set up for the
-company. You can add or remove users from the scrolling window.
+    The scrolling window displays all the user IDs you’ve set up for the    company. You can add or remove users from the scrolling window.
 
 1. Mark the Distribute and Adjust options for the users to whom you want to
     give access to the selected code. Unmark these options for the users to whom
     you do not want to give access.
 
-If you are already using Analytical Accounting, the Distribute and Adjust
-options are marked by default for all existing users.
+    If you are already using Analytical Accounting, the Distribute and Adjust options are marked by default for all existing users.
 
 1. In the Default Values for User ID field, mark the Distribute and Adjust
     options to give access to all the users displayed in the scrolling window.
@@ -734,8 +672,7 @@ options are marked by default for all existing users.
     give access to the selected user. Unmark these options for the codes to
     which you do not want to give access.
 
-If you are already using Analytical Accounting, the Distribute and Adjust
-options are marked by default for all existing transaction dimension codes.
+    If you are already using Analytical Accounting, the Distribute and Adjust options are marked by default for all existing transaction dimension codes.
 
 1. In the Default Values for Trx Dimension Codes field, mark the Distribute and
     Adjust options to give access to all the codes displayed in the scrolling
@@ -832,17 +769,18 @@ can set up Cost Centre, Profit Centre, Country/Region, Billable or Hours as
 transaction dimensions. You can define any number of transaction dimensions
 according to your analysis or reporting requirements.
 
-*If you are integrating Analytical Accounting with FRx, be sure that
+> [!NOTE]
+> If you are integrating Analytical Accounting with FRx, be sure that
 transaction dimensions do not contain any special characters in them. Refer
 to Setting up Analytical Accounting options for information on avoiding use
-of special characters.*
+of special characters.
 
 **To define transaction dimensions:**
 
 1. Open the Transaction Dimension Maintenance window. (Cards \>\> Financial
     \>\> Analytical Accounting \>\> Transaction Dimension)
 
-    ![A Screenshot IMAGE – AATDM.jpg](media/b77da2c964d58d499e229a18e3091a31.jpg)
+    ![A Screenshot IMAGE – jpg](media/b77da2c964d58d499e229a18e3091a31AATDM.jpg)
 
 1. Enter the name of a transaction dimension.
 
@@ -1003,21 +941,17 @@ ease data entry.
 
 1. Open the Transaction Dimension Relations window.
 
-(Cards \>\> Financial \>\> Analytical Accounting \>\> Transaction Dimension
-Relation)
+    (Cards \>\> Financial \>\> Analytical Accounting \>\> Transaction Dimension Relation)
 
-(Cards \>\> Financial \>\> Analytical Accounting \>\> Transaction Dimension
-\>\> Relations button)
+    (Cards \>\> Financial \>\> Analytical Accounting \>\> Transaction Dimension \>\> Relations button)
 
 1. Enter or select an alphanumeric transaction dimension. The scrolling window
     displays all the other alphanumeric transaction dimensions that you have
     created except the transaction dimension that you have selected.
 
-Inactive alphanumeric transaction dimensions will be displayed in the
+    Inactive alphanumeric transaction dimensions will be displayed in the
 
-Transaction Dimension Relations window if you have marked the Show Inactive
-Trx Dim in Dim Relations window option in the Analytical Accounting Setup
-window.
+    Transaction Dimension Relations window if you have marked the Show Inactive Trx Dim in Dim Relations window option in the Analytical Accounting Setup window.
 
 1. Select the type of relationship to establish between the selected
     transaction dimension and the other transaction dimensions displayed from
@@ -1139,11 +1073,7 @@ Order)
 (Cards \>\> Financial \>\> Analytical Accounting \>\> Transaction Dimension
 \>\> Order Button
 
-IMAGE – AATDO.jpg
-
-![A screenshot(media/91397a73c7152b7226d90a03cfe0fcc5.jpg)
-
-
+![A screenshot](media/AATDO.jpg)
 
 1. The transaction dimensions and their descriptions are displayed in the
     scrolling window in the order they were created.
@@ -1187,11 +1117,7 @@ Code)
 (Cards \>\> Financial \>\> Analytical Accounting \>\> Transaction Dimension
 \>\> Codes button)
 
-IMAGE – AATDC.jpg
-
-![A screenshot(media/b004c60791e288c4dc797dd20196af0c.jpg)
-
-
+![A screenshot](media/AATDC.jpg)
 
 1. Enter or select an alphanumeric transaction dimension in the Trx Dimension
     field.
@@ -1211,15 +1137,17 @@ transaction dimension. You cannot delete the last remaining code of the
 owning transaction dimension if codes exist for the owned transaction
 dimension.
 
-*You must grant access to users to use this code in the User Access to Trx
+> [!NOTE]
+> You must grant access to users to use this code in the User Access to Trx
 Dimension Codes window. However, security access to use a transaction
 dimension code is granted automatically to the user who created the code
-during transaction entry.*
+during transaction entry.
 
 1. Enter the description for the transaction dimension code in the Description
     1 field.
 
-*Two transaction dimension codes cannot have the same description.*
+    > [!NOTE]
+    > Two transaction dimension codes cannot have the same description.
 
 1. Enter any additional description for the transaction dimension code in the
     Description 2 field.
@@ -1355,7 +1283,7 @@ window.
 1. Open the Transaction Dimension Code Validation window. (Cards \>\> Financial
     \>\> Analytical Accounting \>\> Transaction Dimension Code Validation)
 
-    ![A Screenshot IMAGE – AATDCV.jpg](media/f2d7f8bae3aa9d51e6eb1ab5a56b1a94.jpg)
+    ![A Screenshot IMAGE – .jpg](media/AATDCV.jpg)
 
 1. In the Trx Dimension field, select a transaction dimension. All the
     transaction dimension codes that you’ve created for the selected transaction
@@ -1604,7 +1532,7 @@ and site IDs.
 1. Open the Accounting Class Maintenance window. (Cards \>\> Financial \>\>
     Analytical Accounting \>\> Accounting Class)
 
-    ![A Screenshot IMAGE – AAACM.jpg](media/4b5ff99c745bd2aad5c15e4489904041.jpg)
+    ![A Screenshot IMAGE –jpg](media/AAACM.jpg)
 
 1. Enter or select an account class in the Class ID field. The existing
     alphanumeric transaction dimensions will be displayed in the scrolling
@@ -1840,7 +1768,7 @@ accounts for fixed and variable accounts can be linked to an account class.
     Maintenance \>\> Accounts button)  
     (Cards \>\> Financial \>\> Analytical Accounting \>\>Accounting Class Link)
 
-    ![A Screenshot IMAGE - AAACL.jpg](media/4a39c9de410d1bbdb9a2832dcbb0445d.jpg)
+    ![A Screenshot IMAGE - .jpg](media/AAACL.jpg)
 
 1. Enter or select an account class to that the accounts will be linked to. The
     scrolling window will display all the accounts in the Microsoft Dynamics GP
@@ -1848,21 +1776,21 @@ accounts for fixed and variable accounts can be linked to an account class.
 
 2. From the Show Accounts options, select one of the following:
 
-**All** Displays all posting, and unit accounts
+    **All** Displays all posting, and unit accounts
 
-**Balance Sheet** Displays only Balance Sheet accounts
+    **Balance Sheet** Displays only Balance Sheet accounts
 
-**Profit/Loss** Displays only Profit/Loss accounts
+    **Profit/Loss** Displays only Profit/Loss accounts
 
-**Unit** Displays only Unit accounts
+    **Unit** Displays only Unit accounts
 
 1. From the Link Status options, select one of the following:
 
-**All** Displays all accounts, whether linked or not.
+    **All** Displays all accounts, whether linked or not.
 
-**Linked** Displays accounts which are linked to an account class.
+    **Linked** Displays accounts which are linked to an account class.
 
-**Not Linked** Displays accounts which are not linked to any account class.
+    **Not Linked** Displays accounts which are not linked to any account class.
 
 1. Use the Search by field to search for a specific account in the scrolling
     window. The method you use depends on the option selected from the View Menu
@@ -1887,9 +1815,9 @@ accounts for fixed and variable accounts can be linked to an account class.
     window. Refer *Setting up an account class* for more information about
     default transaction dimension codes.
 
-The Account No field displays the account.
+    The Account No field displays the account.
 
-The Account Description field displays the description for the account.
+    The Account Description field displays the description for the account.
 
 1. Choose Mark All to mark all displayed accounts to link the accounts to the
     account class you have selected in the Class ID field. If the posting option
@@ -1898,16 +1826,10 @@ The Account Description field displays the description for the account.
     appears when you choose Mark All indicating that accounts set to Post in
     Summary will not be marked.
 
-This is to ensure that if the Use Account Settings option is not marked,
-accounts that post in summary are not linked to an account class. Before you
-activate Analytical Accounting, you can ensure that the level of posting of
-such accounts is set to detail to link it to an account class.
+    This is to ensure that if the Use Account Settings option is not marked, accounts that post in summary are not linked to an account class. Before you activate Analytical Accounting, you can ensure that the level of posting of such accounts is set to detail to link it to an account class.
 
-> [!IMPORTANT]
-> You must mark the Create a Journal Entry per Batch and Use Account Settings
-options in the Posting Setup window to activate Analytical Accounting.
-However, you can link accounts to an account class before Analytical
-Accounting has been activated.
+    > [!IMPORTANT]
+    > You must mark the Create a Journal Entry per Batch and Use Account Settings options in the Posting Setup window to activate Analytical Accounting. However, you can link accounts to an account class before Analytical Accounting has been activated.
 
 1. Choose Unmark All to unmark all the accounts that were previously marked. If
     you unmark an account from an account class and if the account exists in an
@@ -1946,7 +1868,7 @@ accounts of fixed and variable accounts can be linked to an account class.
     transaction dimensions in the Accounting Class that the account is or will
     be linked to. Refer to *Setting up an account class* for more information.
 
-The Description field displays the description of the account.
+    The Description field displays the description of the account.
 
 1. In the Linked to Node field, select the node of the main tree that the
     account must be attached to. Each account must be linked to a valid node of
@@ -1956,9 +1878,7 @@ The Description field displays the description of the account.
     for this account during transaction entry. The name or description of the
     selected account class is displayed in the field below Class ID.
 
-If the level of posting of an account is set to summary, you cannot link the
-account to an account class if the posting setup in the Posting Setup window
-is Create a Journal Per Batch.
+    If the level of posting of an account is set to summary, you cannot link the account to an account class if the posting setup in the Posting Setup window is Create a Journal Per Batch.
 
 1. Choose Save to save the details.
 
@@ -1974,8 +1894,9 @@ accounts linked to an accounting class. You can assign multiple ranges of
 accounts to a dimension code; you can also assign an account to multiple
 dimension codes.
 
-*The codes belonging to a transaction dimension that is set to Not Allowed
-for an accounting class do not have access to that accounting class.*
+> [!NOTE]
+> The codes belonging to a transaction dimension that is set to Not Allowed
+for an accounting class do not have access to that accounting class.
 
 The following conditions must be met before you can specify account access
 for codes:
@@ -2282,12 +2203,9 @@ button)
     unmarked. If the tree is user-defined, the Main Tree check box is unmarked
     and cannot be marked.
 
-If you’ve opened the Tree Structure window from the Tree Maintenance window,
-the tree type and tree entered is displayed.
+    If you’ve opened the Tree Structure window from the Tree Maintenance window, the tree type and tree entered is displayed.
 
-The Tree View window shows the tree structure of the selected tree. You can
-double-click a node and open the Edit Tree Node window where you can change
-the description of the node.
+    The Tree View window shows the tree structure of the selected tree. You can double-click a node and open the Edit Tree Node window where you can change the description of the node.
 
 1. Enter the new description for the node.
 
@@ -2353,9 +2271,8 @@ copy the records linked in an existing tree to another tree.
         be replaced by the new structure and link records from tree you’re
         copying from.
 
-*This option is only available if both the Copy Source and Destination have
-the Tree includes all records available or unavailable option selected in
-the Tree Maintenance window.*
+    > [!NOTE]
+    > This option is only available if both the Copy Source and Destination have the Tree includes all records available or unavailable option selected in the Tree Maintenance window.
 
 1. Choose Copy to copy the tree structure and close the window.
 
@@ -2372,15 +2289,13 @@ records.
 
 1. Open the Tree Record Link window.
 
-(Cards \>\> Financial \>\> Analytical Accounting \>\> Tree Record Node Link)
+    (Cards \>\> Financial \>\> Analytical Accounting \>\> Tree Record Node Link)
 
-(Cards \>\> Financial \>\> Analytical Accounting \>\> Tree \>\> Structure
-\>\> Link Records)
+    (Cards \>\> Financial \>\> Analytical Accounting \>\> Tree \>\> Structure\>\> Link Records)
 
-(Cards \>\> Financial \>\> Analytical Accounting \>\> Tree Structure \>\>
-Link Records)
+    (Cards \>\> Financial \>\> Analytical Accounting \>\> Tree Structure \>\> Link Records)
 
-![A screenshot IMAGE – AATRL.jpg](media/9bc89c12908147acc8f143a8e7afbd67.jpg)
+    ![A screenshot IMAGE – .jpg](media/AATRL.jpg)
 
 1. Select the tree type.
 
@@ -2436,8 +2351,7 @@ window.
     menu. To search for a master record, enter the description for the record in
     this field and press the TAB key.
 
-Master records that are not linked to the tree and their descriptions are
-displayed in the scrolling window.
+    Master records that are not linked to the tree and their descriptions are displayed in the scrolling window.
 
 1. Mark the records you want to add to the tree and choose OK.
 

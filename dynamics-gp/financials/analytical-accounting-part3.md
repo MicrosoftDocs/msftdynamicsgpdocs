@@ -91,27 +91,20 @@ process:
     transaction dimensions for open year profit and loss accounts and transfers
     it to the Retained Earnings account.
 
-*Balance brought forward transactions are created for the retained earnings
-account even if no profit and loss distributions exist in the fiscal year
-that the year-end close is being run for. This ensures that your analytical
-data is accurate if you have directly entered the net value to the retained
-earnings account as part of a single balanced beginning balance transaction
-when installing Microsoft Dynamics GP.*
+    > [!NOTE]
+    > Balance brought forward transactions are created for the retained earnings account even if no profit and loss distributions exist in the fiscal year that the year-end close is being run for. This ensures that your analytical data is accurate if you have directly entered the net value to the retained earnings account as part of a single balanced beginning balance transaction when installing Microsoft Dynamics GP.
 
 - Consolidates analytical information related to the marked alphanumeric
     transaction dimensions for balance sheet accounts, bringing the balances
     forward as the accounts’ beginning balances in the new fiscal year.
 
-Refer to *Consolidating analysis information and carrying balances forward*
-for more information.
+    Refer to *Consolidating analysis information and carrying balances forward* for more information.
 
 - Zeroes the analytical balance for all profit and loss accounts after they’ve
     been closed to the Retained Earnings account.
 
-*If you enter adjustments to a profit and loss account after closing a year,
-the analytical information for the adjustment is automatically updated to
-the corresponding retained earnings account. You won’t need to do anything
-following the adjustments.*
+    > [!NOTE]
+    > If you enter adjustments to a profit and loss account after closing a year, the analytical information for the adjustment is automatically updated to the corresponding retained earnings account. You won’t need to do anything following the adjustments.*
 
 - Brings the balances of unit account forward to the new fiscal year.
 
@@ -222,9 +215,10 @@ any adjustments you posted to a closed year. You must run this process
 sequentially starting from the first closed year up to the most recently
 closed year.
 
-*You must perform this process before you close an open year or post an
+> [!IMPORTANT]
+> You must perform this process before you close an open year or post an
 adjustment to a closed year. Not doing so will result in incorrect balances
-being brought forward.*
+being brought forward.
 
 **To transfer analysis information for closed years to history:**
 
@@ -237,19 +231,11 @@ being brought forward.*
 
 3. Select an action to perform.
 
-**Transfer transaction detail to history** Select this option to transfer
-all the analysis information for the selected closed year to history.
+    **Transfer transaction detail to history** Select this option to transfer all the analysis information for the selected closed year to history.
 
-**Consolidate transactions and transfer detail to history** Select this
-option to consolidate transactions in the closed year based on the
-combination of alphanumeric transaction dimensions that are marked to
-include in the yearend close process. The analysis information for the
-selected year is moved to history and the closing balances are brought
-forward to the next year. Refer to *Consolidating analysis information and
-carrying balances forward*.
+    **Consolidate transactions and transfer detail to history** Select this option to consolidate transactions in the closed year based on the combination of alphanumeric transaction dimensions that are marked to include in the yearend close process. The analysis information for the selected year is moved to history and the closing balances are brought forward to the next year. Refer to *Consolidating analysis information and carrying balances forward*.
 
-**Print transfer preview report only** Select this option to print a preview
-report before performing the transfer and consolidation.
+    **Print transfer preview report only** Select this option to print a preview report before performing the transfer and consolidation.
 
 1. Choose OK to process the selected option.
 
@@ -1040,11 +1026,11 @@ filters will help you generate queries specific to your requirements.
 
     This window displays all levels except the following levels:
 
-        - Time level, that is set in the Completing the Options window.
+    - Time level, that is set in the Completing the Options window
 
-        - All levels if no tree is defined
+    - All levels if no tree is defined
 
-        - The Code spread, if no tree output is defined for it.
+    - The Code spread, if no tree output is defined for it
 
     The image on the left of a level indicates if a filter already exists, or if an item is used as a level, or as a Code Spread.
 
@@ -1182,13 +1168,13 @@ be set up each time you run a query.
 
     If you selected Calendar view, select one of the following options:
 
-        - Week
+    - Week
 
-        - Month
+    - Month
 
-        - Quarter
+    - Quarter
 
-        - Half-year
+    - Half-year
 
     > [!NOTE]
     > You cannot select Week as a period if you have selected budget columns. Also, you can view the consolidated balances that are brought forward only if you select Fiscal view.
@@ -1278,26 +1264,24 @@ class they are linked to, are displayed.
 For transactions that are not linked to an account class, a single
 assignment will be displayed with no analysis information.
 
-The audit trail column displayed is generated by Analytical Accounting.
-Refer to*Creating and running a distribution query* for more information on
-generating a distribution query.
+The audit trail column displayed is generated by Analytical Accounting. Refer to [Creating and running a distribution query](#creating-and-running-a-distribution-query) for more information on generating a distribution query.
 
 **Distribution Query displaying distributions:**  
 
-![A screenshot IMAGE – AADQ.jpg](media/39b52737a49177f60d86955bb17e0d65.jpg)
+![A screenshot](media/AADQ.jpg)
 
 **Distribution Query without column header:**
 
-![A screenshotIMAGE – AADQC.jpg](media/c001a8fd37eb88520f4330264168c26d.jpg)
+![A screenshot](media/AADQC.jpg)
 
 **Distribution Query displaying column header:**
 
-![A screenshotIMAGE – AADQH.jpg](media/94a06be68a7e49b7c789d931baec04e4.jpg)
+![A screenshot– ](media/AADQH.jpg)
 
 ### Multilevel query report
 
 The multilevel query will display the system-defined columns and the columns
-you've selected. Refer to *Creating and running a multilevel query* for more
+you've selected. Refer to [Creating and running a multilevel query](#creating-and-running-a-multilevel-query) for more
 information about generating a multilevel query.
 
 The report also will display as many levels as you've selected, along with

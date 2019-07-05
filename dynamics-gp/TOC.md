@@ -85,7 +85,8 @@
 
 <!--- financials -->
 ## Financials
-### [Analytical Accounting](financials/AnalyticalAccounting.md)
+### Analytical Accounting
+#### [Part 1: Setup](financials/AnalyticalAccounting.md)
 #### [Part 2: Transactions](financials/analytical-accounting-part2.md)
 #### [Part 3: Routines, Inquiries and Reports](financials/analytical-accounting-part3.md)
 #### [Glossary](financials/analytical-accounting-glossary.md)  
