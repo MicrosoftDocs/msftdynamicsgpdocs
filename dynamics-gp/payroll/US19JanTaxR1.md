@@ -20,9 +20,35 @@ This tax update applies to:
 
 **Summary:** This document contains instructions for installing the 2019 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-This is the second tax update for 2019. It includes state tax table changes that take effect January 1, 2019. It is recommended you install this update before processing payrolls for the 2019 year.
+This is the third tax update for 2019. It includes state tax table changes that take effect January 1, 2019. It is recommended you install this update before processing payrolls for the 2019 year.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+## Changes in January Round 3 update
+- Minnesota
+- Mississippi
+
+## 2019 Federal tax changes
+There are no federal changes in the Round 3 tax table update.
+
+## 2019 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+### Withholding changes for Minnesota
+The Personal Exemption is $4,250 for Filing Status of MAR and SINGLE
+
+### Withholding changes for Mississippi
+
+*Withholding rates for taxpayers filing as HOH, MAR1, and MAR2*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 2,000            | 0              | 0.00%        | 0                  |
+| 2,000       | 5,000            | 0              | 3.00%        | 2,000              |
+| 5,000       | 10,000           | 150            | 4.00%        | 5,000              |
+| 10,000      | And Over         | 350            | 5.00%        | 10,000             |
+
 
 ## Changes in January Round 2 update
 - Alabama
@@ -754,7 +780,7 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 2 January 2019 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The Round 3 July 2019 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -777,7 +803,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4.  Choose Process to start the update.
 
-5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 1/25/2019.
+5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 7/12/2019.
 
 ## What’s next
 
