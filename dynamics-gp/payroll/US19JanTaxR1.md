@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/07/2018
+ms.date: 07/11/2019
 ---
 # U.S. 2019 Payroll Tax Update
 
@@ -18,7 +18,9 @@ This tax update applies to:
 - Microsoft Dynamics GP 2016 on Microsoft SQL Server
 - Microsoft Dynamics GP 2015 on Microsoft SQL Server
 
-**Summary:** This document contains instructions for installing the 2019 U.S. Payroll Tax Update for Microsoft Dynamics GP.
+## 
+
+This document contains instructions for installing the 2019 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
 This is the third tax update for 2019. It includes state tax table changes that take effect January 1, 2019. It is recommended you install this update before processing payrolls for the 2019 year.
 
@@ -40,7 +42,7 @@ The Personal Exemption is $4,250 for Filing Status of MAR and SINGLE
 
 ### Withholding changes for Mississippi
 
-*Withholding rates for taxpayers filing as HOH, MAR1, and MAR2*
+Withholding rates for taxpayers filing as *HOH*, *MAR1*, and *MAR2*.
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -71,7 +73,7 @@ The following tax changes are included in this update:
 
 ### Withholding changes for Alabama
 
-*Personal Exemption for taxpayers filing HOF*
+Personal Exemption for taxpayers filing *HOF*.
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
