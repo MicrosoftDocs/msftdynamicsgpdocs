@@ -1137,6 +1137,15 @@ recurring batches for transactions you enter on a regular basis.
 
 12. To print a batch edit list, choose File \>\> Print. Choose Save.
 
+
+[!NOTE]
+You may receive an error message "The fiscal period that contains this posting date has not been set up" when you create a credit card payment in a computer check batch.
+What can cause this error is the following: 
+1. You have a computer check set to have posting date from the transaction or
+2. You do not have EFT for payables registered under Tools | Setup | System | Registration
+
+If you enable EFT for payables, then a new field will appear in the print payment window that allows you to set the value and you can post without issue.  The other workaround is to set the posting date from the batch so you can see the posting date in the batch window.
+
 #### Payables batch approval workflow
 
 If your company uses the Workflow feature among its business controls, batches might have to be approved before posting. The rules for approving batches can be defined to fit your organization’s needs. Multiple approvers might be required, or approval might not be required for batches with few transactions or small currency amounts. When a batch is ready to be approved, approvers can be notified and the batches can be approved, using Microsoft Outlook or Microsoft Dynamics GP. After a batch is approved, it can be posted.
