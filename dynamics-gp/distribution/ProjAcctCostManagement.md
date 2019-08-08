@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 06/07/2019
+ms.date: 08/08/2019
 ---
 
 # Project Accounting Cost Management
@@ -46,15 +46,15 @@ About Microsoft Dynamics GP.**
 
 The manual is divided into the following parts.
 
--   *Part 1, Resource planning*, includes information about setting up employee, vendor, equipment, and miscellaneous records for tracking project costs and billing customers. It also describes how to create rate tables for calculating project costs, overhead, and profit, and how to create unit of measure schedules. It also includes information about default unit costs and how overhead is calculated.
+- *Part 1, Resource planning*, includes information about setting up employee, vendor, equipment, and miscellaneous records for tracking project costs and billing customers. It also describes how to create rate tables for calculating project costs, overhead, and profit, and how to create unit of measure schedules. It also includes information about default unit costs and how overhead is calculated.
 
--   *Part 2, Cost budgeting templates*, includes information about how to create contract and project templates and how to apply those templates to contract and project records.
+- *Part 2, Cost budgeting templates*, includes information about how to create contract and project templates and how to apply those templates to contract and project records.
 
--   *Part 3, Cost budgeting*, includes information about how to set up fees and the cost categories that you can include in project budgets to calculate costs, billing amounts, revenue, and profits. It also includes information about how to enter contract and project records, and how to assign employees, equipment, cost categories, and fees to projects.
+- *Part 3, Cost budgeting*, includes information about how to set up fees and the cost categories that you can include in project budgets to calculate costs, billing amounts, revenue, and profits. It also includes information about how to enter contract and project records, and how to assign employees, equipment, cost categories, and fees to projects.
 
--   *Part 4, Cost control*, includes information about how to control what data users can enter when they enter cost transactions, how to control the use of change orders for projects, and how to close customer, contract, and project records to control the accrual of project costs.
+- *Part 4, Cost control*, includes information about how to control what data users can enter when they enter cost transactions, how to control the use of change orders for projects, and how to close customer, contract, and project records to control the accrual of project costs.
 
--   *Part 5, Project cost tracking* includes information about how to set up cost transactions for tracking project costs and billing customers and how to enter cost transactions. It also describes how to view detailed information about cost, billing, revenue, and profit amounts for contracts, projects, and cost categories.
+- *Part 5, Project cost tracking* includes information about how to set up cost transactions for tracking project costs and billing customers and how to enter cost transactions. It also describes how to view detailed information about cost, billing, revenue, and profit amounts for contracts, projects, and cost categories.
 
 ## Part 1: Resource planning
 
@@ -62,13 +62,14 @@ This part of the documentation includes information for project managers about s
 
 It also includes information about how to create unit of measure schedules and about default unit costs and how overhead is calculated.
 
--   *Chapter 1, “Unit quantities, costs, and overhead,”* includes information about how to create unit of measure schedules. It also includes information about default unit costs and how overhead is calculated.
+- *Chapter 1, “Unit quantities, costs, and overhead,”* includes information about how to create unit of measure schedules. It also includes information about default unit costs and how overhead is calculated.
 
--   *Chapter 2, “Employees and vendors,”* includes information about how to set up employee and vendor records for tracking project costs and billing customers.
+- *Chapter 2, “Employees and vendors,”* includes information about how to set up employee and vendor records for tracking project costs and billing customers.
 
--   *Chapter 3, “Equipment and miscellaneous records,”* includes information about how to set up equipment and miscellaneous records for tracking project costs and billing customers.
+- *Chapter 3, “Equipment and miscellaneous records,”* includes information about how to set up equipment and miscellaneous records for tracking project costs and billing customers.
 
--   *Chapter 4, “Rate tables,”* includes information about how to create employee, position, and equipment rate tables to calculate costs, overhead, and profit for projects.
+- *Chapter 4, “Rate tables,”* includes information about how to create employee, position, and equipment rate tables to calculate costs, overhead, and profit for projects.
+
 ### Chapter 1: Unit quantities, costs, and overhead
 
 This part of the documentation includes information for project managers about how to create unit of measure schedules. It also includes information about default unit costs and how overhead is calculated.
@@ -86,22 +87,23 @@ The following topics are discussed.
 
 You can set up a unit of measure schedule to define the quantities that your business buys or sells items in. A unit of measure schedule is a group of related quantities.
 
-1.  Open the PA Unit of Measure Schedule Setup window.
+1. Open the PA Unit of Measure Schedule Setup window.
 
 **Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Unit of Measure Schedule**
 
 1. Enter a unit of measure schedule ID and description.
 
-2.  You can click **Copy** to select a unit of measure schedule to copy information from.
+2. You can click **Copy** to select a unit of measure schedule to copy information from.
 
-3.  Select the number of decimal places for the quantities that you’re entering in the unit of measure schedule.
+3. Select the number of decimal places for the quantities that you’re entering in the unit of measure schedule.
 
-4.  Enter the name for the base unit of measure. It is the smallest quantity in the schedule and typically has a quantity of 1. For example, **EACH** might be used as the base unit of measure. The name that you enter for the base unit of measure will be displayed on the first line of the scrolling window. 
+4. Enter the name for the base unit of measure. It is the smallest quantity in the schedule and typically has a quantity of 1. For example, **EACH** might be used as the base unit of measure. The name that you enter for the base unit of measure will be displayed on the first line of the scrolling window. 
 
-5.  In the **U of M** field enter the name for another quantity. In the **Quantity** field enter the number of units of the base unit of measure that make up the quantity. In the **Equivalent** field enter the name of the base unit of measure.
+5. In the **U of M** field enter the name for another quantity. In the **Quantity** field enter the number of units of the base unit of measure that make up the quantity. In the **Equivalent** field enter the name of the base unit of measure.
 Click **Save** and close the window.
 
-*For each quantity that you enter, you first must identify how that quantity is equivalent to the base unit of measure. You then can identify how the quantity is equivalent to other quantities in the schedule.* 
+> [!NOTE]
+> For each quantity that you enter, you first must identify how that quantity is equivalent to the base unit of measure. You then can identify how the quantity is equivalent to other quantities in the schedule.*
 
 
 #### Default unit costs
@@ -172,7 +174,7 @@ The following topics are discussed:
 
 You can set up an employee class for tracking project costs and billing customers. If you assign an employee to the class, the employee record will inherit information from the class. See *Set up an employee record for tracking project costs and billing customers*.
 
-1.  If you’re using U.S. Payroll, open the PA Employee Class Options window. **Microsoft Dynamics GP menu \> Tools \> Setup \> Payroll \> Employee Class \> select Class ID \> Project button**
+1. If you’re using U.S. Payroll, open the PA Employee Class Options window. **Microsoft Dynamics GP menu \> Tools \> Setup \> Payroll \> Employee Class \> select Class ID \> Project button**
 
 If you’re using Canadian Payroll, open the PA Employee Class Options - Canada window.
 
@@ -180,19 +182,19 @@ If you’re using Canadian Payroll, open the PA Employee Class Options - Canada 
 
 ![IAMGE](media/PACM 2.jpg)
 
-2.  Select whether the employee is paid hourly or is salaried.
+2. Select whether the employee is paid hourly or is salaried.
 
-3.  Select the default pay code to use for the employee on timesheets.
+3. Select the default pay code to use for the employee on timesheets.
 
-4.  Select the employment relationship in the **Employed By** field. If you will post timesheets for employees in the class to payroll, select **Company**.
+4. Select the employment relationship in the **Employed By** field. If you will post timesheets for employees in the class to payroll, select **Company**.
 
-5.  Enter a unit of measure and the corresponding unit cost.
+5. Enter a unit of measure and the corresponding unit cost.
 
-1.  In the **Amount per Unit** field, enter a flat overhead amount for each hour that an employee in the class works on a project. In the **Percentage of Actual Cost** field, enter a percentage to be used with the employee’s pay rate to calculate overhead. 
+1. In the **Amount per Unit** field, enter a flat overhead amount for each hour that an employee in the class works on a project. In the **Percentage of Actual Cost** field, enter a percentage to be used with the employee’s pay rate to calculate overhead. 
 
-2.  Select profit types for the employee class for **Time and Materials**, **Cost Plus**, and **Fixed Price** projects and enter amounts or percentages in the corresponding fields. See *Profit types for calculating billing amounts* for more information.
+2. Select profit types for the employee class for **Time and Materials**, **Cost Plus**, and **Fixed Price** projects and enter amounts or percentages in the corresponding fields. See *Profit types for calculating billing amounts* for more information.
 
-3.  Click **Accounts** to specify posting accounts for the employee class. See *Specify default posting account numbers for records and classes for cost transactions* in the Project Accounting Accounting Control Guide for more information.
+3. Click **Accounts** to specify posting accounts for the employee class. See *Specify default posting account numbers for records and classes for cost transactions* in the Project Accounting Accounting Control Guide for more information.
 
 4. Click **OK**.
 
@@ -213,33 +215,34 @@ Select **Files Employee Expense** to grant the employee permission to enter empl
 
 You can use the Vendor Maintenance window (**Cards \> Purchasing \> Vendor**) to modify the vendor record for the employee. See the Payables Management documentation (**Help \> Printable Manuals**) for more information. This includes setting up the vendor record for tracking project costs and billing
 
-1.  Select **Allow Vendor for Purchase Order** to allow the employee to be selected as the vendor for purchase orders, shipment receipts, shipment/invoice receipts, and invoice receipts.
+1. Select **Allow Vendor for Purchase Order** to allow the employee to be selected as the vendor for purchase orders, shipment receipts, shipment/invoice receipts, and invoice receipts.
 
-2.  Select **Not a 1099 Vendor** to be able to select **Not a 1099 Vendor** in the **Tax Type** list in the Vendor Maintenance Options window (**Cards \>  Purchasing \> Vendor \> Options button**) for the vendor record for the employee. See the Payables Management documentation (**Help \> Printable Manuals**) for more information.
+2. Select **Not a 1099 Vendor** to be able to select **Not a 1099 Vendor** in the **Tax Type** list in the Vendor Maintenance Options window (**Cards \>  Purchasing \> Vendor \> Options button**) for the vendor record for the employee. See the Payables Management documentation (**Help \> Printable Manuals**) for more information.
 
 3. Select the default pay code to use for the employee on timesheets.
 
 You must select **Use Pay Codes for Unit Cost** in the Project Setup window to use pay codes with timesheets. See *Configure general settings for all projects* for more information.
 
-4.  Enter a unit of measure and the corresponding unit cost.
+4. Enter a unit of measure and the corresponding unit cost.
 
-*You also can use an employee or position rate table to calculate cost and overhead for an employee. See Create an employee rate table  Create a position rate table on page 25 for more information.*
+    > [!TIP]
+    > You also can use an employee or position rate table to calculate cost and overhead for an employee. See Create an employee rate table  Create a position rate table on page 25 for more information.
 
-5.  Select the employment relationship in the **Employed By** field. If you will post timesheets for the employee to payroll, select **Company**.
+5. Select the employment relationship in the **Employed By** field. If you will post timesheets for the employee to payroll, select **Company**.
 
-6.  Select whether the employee is paid hourly or is salaried.
+6. Select whether the employee is paid hourly or is salaried.
 
-7.  Select whether the employee will be listed as project manager or business manager on reports.
+7. Select whether the employee will be listed as project manager or business manager on reports.
 
-8.  In the **Amount per Unit** field, enter a flat overhead amount for each hour that the employee works on a project. In the **Percentage of Actual Cost** field, enter a percentage to be used with the employee’s pay rate to calculate overhead. See *Overhead calculation methods* for more information.
+8. In the **Amount per Unit** field, enter a flat overhead amount for each hour that the employee works on a project. In the **Percentage of Actual Cost** field, enter a percentage to be used with the employee’s pay rate to calculate overhead. See *Overhead calculation methods* for more information.
 
-9.  Select profit types for the employee record for **Time and Materials**, **Cost Plus**, and **Fixed Price** projects and enter amounts or percentages in the corresponding fields. See *Profit types for calculating billing amounts* for more information.
+9. Select profit types for the employee record for **Time and Materials**, **Cost Plus**, and **Fixed Price** projects and enter amounts or percentages in the corresponding fields. See *Profit types for calculating billing amounts* for more information.
 
-10.  Enter information in user-defined fields. See *Enter names for user-defined field labels* for more information.
+10. Enter information in user-defined fields. See *Enter names for user-defined field labels* for more information.
 
-11.  Click **Accounts** to specify posting accounts for the employee. See *Specify default posting account numbers for records and classes for cost transactions* in the Project Accounting Accounting Control Guide for more information.
+11. Click **Accounts** to specify posting accounts for the employee. See *Specify default posting account numbers for records and classes for cost transactions* in the Project Accounting Accounting Control Guide for more information.
 
-12.  Click **Access List** to assign the employee to projects. See *Assign an employee to projects* for more information, click OK.
+12. Click **Access List** to assign the employee to projects. See *Assign an employee to projects* for more information, click OK.
 
 #### Set up a vendor class for tracking project costs and billing customers
 
@@ -253,13 +256,10 @@ project costs and billing customers* on page 17 for more information.
 **Microsoft Dynamics GP menu \> Tools \> Setup \> Purchasing \> Vendor Class
 \> select a Class ID \> Project button**
 
-PACM 4.JPEG
+    PACM 4.JPEG
 
-![A screenshot ](media/051e992556a8e343d2f4096c675d8d78.jpg)
+    ![A screenshot ](media/051e992556a8e343d2f4096c675d8d78.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
 
 1. Select the default purchase order format to use when printing purchase
     orders for vendors in the class.
@@ -285,15 +285,9 @@ customers.
 
 1. Open the PA Vendor Options window.
 
-Cards \> Purchasing \> Vendor \> select a Vendor ID \> Project button
+    Cards \> Purchasing \> Vendor \> select a Vendor ID \> Project button
 
-PACM 5.JPEG
-
-![A screenshot ](media/cda73ddeb4591455fa24b58d7a78f98c.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot ](media/PACM 5.JPEG)
 
 1. Select the default purchase order format to use when printing purchase
     orders for the vendor.
@@ -375,21 +369,13 @@ A screenshot of a cell phone Description automatically generated
 You can set up an equipment record for tracking project costs and billing
 customers.
 
-*If you don’t have permission to enter equipment records, you can use the
-Equipment*
-
-*Maintenance Inquiry window (Inquiry \> Project \> Maintenance \> Equipment) to
-view them.*
+> [!NOTE]
+> If you don’t have permission to enter equipment records, you can use the Equipment Maintenance Inquiry window (Inquiry \> Project \> Maintenance \> Equipment) to
+view them.
 
 1. Open the Equipment Maintenance window. **Cards \> Project \> Equipment**
 
-PACM 7.JPEG
-
-![A screenshot of a computer Description automatically generated](media/4349318b6074383318b47ccdb75c20fb.jpg)
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
+    ![A screenshot of a computer Description automatically generated](media/PACM 7.JPEG)
 
 1. Select an equipment ID.
 
@@ -420,12 +406,9 @@ page 22 for more information.
 
 1. Open the Miscellaneous Class Setup window.
 
-**Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Miscellaneous
-Class**
+    **Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Miscellaneous Class**
 
-PACM 8 .JPEG
-
-![A screenshot ](media/86e0c89ef872f6fbbbc4b8ccdb52f4bb.jpg)
+    ![A screenshot ](media/PACM 8 .JPEG)
 
 1. Select a class ID.
 
@@ -448,20 +431,13 @@ PACM 8 .JPEG
 You can set up a miscellaneous record for tracking project costs and billing
 customers.
 
-*If you don’t have permission to enter miscellaneous records, you can use
-the Miscellaneous Maintenance Inquiry window (Inquiry \> Project \>
-Maintenance \> Miscellaneous) to view them.*
+> [!NOTE]
+> If you don’t have permission to enter miscellaneous records, you can use the Miscellaneous Maintenance Inquiry window (Inquiry \> Project \>
+Maintenance \> Miscellaneous) to view them.
 
-1. Open the Miscellaneous Maintenance window. **Cards \> Project \>
-    Miscellaneous**
+1. Open the Miscellaneous Maintenance window. **Cards \> Project \> Miscellaneous**
 
-PACM 9. JPEG
-
-![A screenshot of a computer Description automatically generated](media/e904916f422da929fc7a080fafd70233.jpg)
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
+![A screenshot of a computer Description automatically generated](media/PACM 9. JPEG)
 
 1. Select a miscellaneous ID.
 
