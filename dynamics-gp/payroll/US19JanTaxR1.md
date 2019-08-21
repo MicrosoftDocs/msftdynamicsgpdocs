@@ -203,8 +203,12 @@ The Flat Tax Rate is 5.05% for Filing Status of HOH and OTHERS
 The Personal Exemption is $4,400
 
 ### Withholding changes for Missouri
-Removed from Sequence Subtract Personal Exemptiona and Subtract Annualized Federal Tax
-Standard Deduction Amount for all Filing Status is $18,350
+Removed from Sequence Subtract Personal Exemption & Subtract Annualized Federal Tax
+Standard Deduction Amount is the following:
+HOH Filing Status is $18,350
+MAR1 Filing Status is $24,400
+MAR2 & SINGLE Filing Status is $12,200
+
 The tax table is used for all filing status 
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
