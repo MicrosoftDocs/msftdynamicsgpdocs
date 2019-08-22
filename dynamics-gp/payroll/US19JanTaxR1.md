@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 07/11/2019
+ms.date: 08/22/2019
 ---
 # U.S. 2019 Payroll Tax Update
 
@@ -18,11 +18,9 @@ This tax update applies to:
 - Microsoft Dynamics GP 2016 on Microsoft SQL Server
 - Microsoft Dynamics GP 2015 on Microsoft SQL Server
 
-## 
-
 This document contains instructions for installing the 2019 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-This is the third tax update for 2019. It includes state tax table changes that take effect January 1, 2019. It is recommended you install this update before processing payrolls for the 2019 year.
+This is the third tax update for 2019. It includes state tax table changes that took effect January 1, 2019. It is recommended you install this update before processing payrolls for the 2019 year.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -203,8 +201,12 @@ The Flat Tax Rate is 5.05% for Filing Status of HOH and OTHERS
 The Personal Exemption is $4,400
 
 ### Withholding changes for Missouri
-Removed from Sequence Subtract Personal Exemptiona and Subtract Annualized Federal Tax
-Standard Deduction Amount for all Filing Status is $18,350
+Removed from Sequence Subtract Personal Exemption & Subtract Annualized Federal Tax
+Standard Deduction Amount is the following:
+HOH Filing Status is $18,350
+MAR1 Filing Status is $24,400
+MAR2 & SINGLE Filing Status is $12,200
+
 The tax table is used for all filing status 
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
