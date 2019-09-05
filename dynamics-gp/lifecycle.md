@@ -34,5 +34,5 @@ Below is the planned update schedule for Microsoft Dynamics GP, beginning with t
 [Microsoft Lifecycle Policy for Microsoft Dynamics GP](https://support.microsoft.com/en-us/lifecycle/search?alpha=Dynamics%20GP) 
 [Upgrading to Dynamics 365 Business Central Online](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrading-to-business-central-online) 
 [Deployment of Dynamics 365 Business Central](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/deployment)
-[Dynamics GP System Requirements]()
-[Dynamics GP Upgrade Hot topic]()
+[Dynamics GP System Requirements](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/MDGP2018_System_Requirements)
+[Dynamics GP Upgrade Hot topic](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade)
