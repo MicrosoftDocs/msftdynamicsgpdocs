@@ -13,6 +13,8 @@ ms.date: 09/05/2019
 
 # Support for Microsoft Dynamics GP
 
+Applies to: Microsoft Dynamics GP
+
 Beginning with the October 2019 release, Microsoft Dynamics GP will follow the Modern Policy. The Modern Policy offers continuous support and servicing, including bug fixes, new features and the latest tax updates. Customers may stay current by taking at least one of the three yearly planned updates. Dynamics GP releases.  Prior to October 2019 any older release will continue to follow their existing Lifecycle timelines under the Fixed Policy. You may find those dates here.  We will commit to 3 updates per year with additional updates as needed. 
  
 Below is the planned update schedule for Microsoft Dynamics GP, beginning with the October 2019 release.
