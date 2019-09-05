@@ -17,7 +17,7 @@ Beginning with the October 2019 release, Microsoft Dynamics GP will follow the M
  
 Below is the planned update schedule for Microsoft Dynamics GP, beginning with the October 2019 release.
  
-#Microsoft Dynamics GP Servicing 
+## Microsoft Dynamics GP Servicing 
 |Year |Update (tax updates, bug fixes) |Update (tax updates, bug fixes)   |Feature Update(new features and bug fixes)    |Staying Current|
 |-----|----------------------|-----------------------------------|--------------|----------------|-----------------------|
 |2019	|November/December 	   |Past the date	    |October 1, 2019	|To stay current you must be on one of the 2019 releases.  This allows you to be able to upgrade to the next years updates.
@@ -28,7 +28,7 @@ Below is the planned update schedule for Microsoft Dynamics GP, beginning with t
 |2024	|November/December	   |June	            |TBA	            |To stay current you must be on one of the 2024 releases.  This allows you to be able to upgrade to the next years updates.
 |TBA	|TBA              	   |TBA 	            |TBA	            |TBA	 	 
  
-#See Also
+# See Also
 [Microsoft Lifecycle Policy for Microsoft Dynamics GP](https://support.microsoft.com/en-us/lifecycle/search?alpha=Dynamics%20GP) 
 [Upgrading to Dynamics 365 Business Central Online](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrading-to-business-central-online) 
 [Deployment of Dynamics 365 Business Central](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/deployment)
