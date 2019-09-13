@@ -10,6 +10,7 @@
 ### [What's new in Dynamics GP 2015](whats-new/version-2015.md)
 
 ## Installation and administration
+### [Support for Microsoft Dynamics GP](terms/lifecycle.md)
 <!--- installation -->
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)
