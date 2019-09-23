@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 08/22/2019
+ms.date: 09/23/2019
 ---
 # U.S. 2019 Payroll Tax Update
 
@@ -20,11 +20,47 @@ This tax update applies to:
 
 This document contains instructions for installing the 2019 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-This is the third tax update for 2019. It includes state tax table changes that took effect January 1, 2019. It is recommended you install this update before processing payrolls for the 2019 year.
+This is the fourth tax update for 2019. It includes state tax table changes that took effect January 1, 2019. It is recommended you install this update before processing payrolls for the 2019 year.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
-## Changes in January Round 3 update
+## Changes in September Round 4 update
+- Minnesota
+- Virginia
+
+## 2019 Federal tax changes
+There are no federal changes in the Round 4 tax table update.
+
+## 2019 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+### Withholding changes for Virginia
+The Standard Deduction increased from $3,000 to $4,000.
+
+### Withholding changes for Minnesota
+
+Withholding rates for taxpayers filing as *MAR*.
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 11,650           | 0              | 0.00%        | 0                  |
+| 11,650      | 50,420           | 0              | 5.35%        | 11,650             |
+| 50,420      | 165,670          | 2,074.20       | 6.80%        | 50,420             |
+| 165,670     | 280,660          | 9,911.20       | 7.85%        | 165,670            |
+| 280,660     | And Over         | 18,937.92      | 9.85%        | 280,660            |
+
+Withholding rates for taxpayers filing as *SINGLE*.
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,700            | 0              | 0.00%        | 0                  |
+| 3,700       | 30,220           | 0              | 5.35%        | 3,700              |
+| 30,220      | 90,810           | 1,418.82       | 6.80%        | 30,220             |
+| 90,810      | 165,420          | 5,538.94       | 7.85%        | 90,810             |
+| 165,420     | And Over         | 11,395.83      | 9.85%        | 165,420            |
+
+## Changes in July Round 3 update
 - Minnesota
 - Mississippi
 
