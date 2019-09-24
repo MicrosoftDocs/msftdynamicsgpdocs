@@ -28,17 +28,17 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - Minnesota
 - Virginia
 
-## 2019 Federal tax changes
+### 2019 Federal tax changes
 There are no federal changes in the Round 4 tax table update.
 
-## 2019 state or territorial tax changes
+### 2019 state or territorial tax changes
 
 The following tax changes are included in this update:
 
-### Withholding changes for Virginia
+#### Withholding changes for Virginia
 The Standard Deduction increased from $3,000 to $4,000.
 
-### Withholding changes for Minnesota
+#### Withholding changes for Minnesota
 
 Withholding rates for taxpayers filing as *MAR*.
 
@@ -64,17 +64,17 @@ Withholding rates for taxpayers filing as *SINGLE*.
 - Minnesota
 - Mississippi
 
-## 2019 Federal tax changes
+### 2019 Federal tax changes
 There are no federal changes in the Round 3 tax table update.
 
-## 2019 state or territorial tax changes
+### 2019 state or territorial tax changes
 
 The following tax changes are included in this update:
 
-### Withholding changes for Minnesota
+#### Withholding changes for Minnesota
 The Personal Exemption is $4,250 for Filing Status of MAR and SINGLE
 
-### Withholding changes for Mississippi
+#### Withholding changes for Mississippi
 
 Withholding rates for taxpayers filing as *HOH*, *MAR1*, and *MAR2*.
 
@@ -98,14 +98,14 @@ Withholding rates for taxpayers filing as *HOH*, *MAR1*, and *MAR2*.
 - Rhode Island
 - Vermont
 
-## 2019 Federal tax changes
+### 2019 Federal tax changes
 There are no federal changes in the Round 2 tax table update.
 
-## 2019 state or territorial tax changes
+### 2019 state or territorial tax changes
 
 The following tax changes are included in this update:
 
-### Withholding changes for Alabama
+#### Withholding changes for Alabama
 
 Personal Exemption for taxpayers filing *HOF*.
 
@@ -133,7 +133,7 @@ Personal Exemption for taxpayers filing *HOF*.
 | 32,500      | 33,000           | 2,135          | 0%           | 0                  |
 | 33,000      |                  | 2,000          | 0%           | 0                  |
 
-*Personal Exemption for taxpayers filing MAR*
+Personal Exemption for taxpayers filing *MAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -159,7 +159,7 @@ Personal Exemption for taxpayers filing *HOF*.
 | 32,500      | 33,000           | 4,175          | 0%           | 0                  |
 | 33,000      |                  | 4,000          | 0%           | 0                  |
 
-*Personal Exemption for taxpayers filing MFS*
+Personal Exemption for taxpayers filing *MFS*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -185,24 +185,24 @@ Personal Exemption for taxpayers filing *HOF*.
 | 15,250      | 15,500           | 2,078          | 0%           | 0                  |
 | 15,500      |                  | 2,000          | 0%           | 0                  |
 
-### Withholding changes for Colorado
+#### Withholding changes for Colorado
 The Personal Exemption is $4,200
-*Withholding rates for taxpayers filing as MAR*
+Withholding rates for taxpayers filing as *MAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 11,800           | 0              | 0.00%        | 0                  |
 | 11,800      | And Over         | 0              | 4.63%        | 11,800             |
 
-*Withholding rates for taxpayers filing as SINGLE*
+Withholding rates for taxpayers filing as *SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 3,800            | 0              | 0.00%        | 0                  |
 | 3,800       | And Over         | 0              | 4.63%        | 3,800              |
 
-### Withholding changes for Connecticut
-*Withholding rates for taxpayers filing as A, D, and F changes made to tax amount on wages over $100,000, only those changed brackets shown in table below*
+#### Withholding changes for Connecticut
+Withholding rates for taxpayers filing as *A*, *D*, and *F* changes made to tax amount on wages over $100,000, only those changed brackets shown in table below
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -212,7 +212,7 @@ The Personal Exemption is $4,200
 | 500,000     |                  | 31,550.00      | 6.99%        | 500,000            |
 
 
-*Withholding rates for taxpayers filing as B, changes made to tax amount on wages over $160,000, only those changed brackets shown in table below*
+Withholding rates for taxpayers filing as *B*, changes made to tax amount on wages over $160,000, only those changed brackets shown in table below
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -221,7 +221,7 @@ The Personal Exemption is $4,200
 | 400,000     |800,000           | 22,880.00      | 6.9%         | 400,000            |
 | 800,000     |                  | 50,480.00      | 6.99%        | 800,000            |
 
-*Withholding rates for taxpayers filing as C, changes made to tax amount on wages over $200,000, only those changed brackets shown in table below*
+Withholding rates for taxpayers filing as *C*, changes made to tax amount on wages over $200,000, only those changed brackets shown in table below
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -230,13 +230,13 @@ The Personal Exemption is $4,200
 | 500,000     |1,000,000         | 28,600.00      | 6.9%         | 500,000            |
 | 1,000,000   |                  | 63,100.00      | 6.99%        | 1,000,000          |
 
-### Withholding changes for Massachusetts
+#### Withholding changes for Massachusetts
 The Flat Tax Rate is 5.05% for Filing Status of HOH and OTHERS
 
-### Withholding changes for Michigan
+#### Withholding changes for Michigan
 The Personal Exemption is $4,400
 
-### Withholding changes for Missouri
+#### Withholding changes for Missouri
 Removed from Sequence Subtract Personal Exemption & Subtract Annualized Federal Tax
 Standard Deduction Amount is the following:
 HOH Filing Status is $18,350
@@ -259,12 +259,12 @@ The tax table is used for all filing status
 
 
 
-### Withholding changes for New Jersey
+#### Withholding changes for New Jersey
 For all Filing Status the tax rate for employees making over $5,000,000 is 11.80%
 
-### Withholding changes for North Dakota
+#### Withholding changes for North Dakota
 The Personal Exemption amount is $4,200
-*Withholding rates for taxpayers filing as MAR*
+Withholding rates for taxpayers filing as *MAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -276,7 +276,7 @@ The Personal Exemption amount is $4,200
 | 440,000     | And Over         | 9,539.90       | 2.90%        | 440,000            |
 
 
-*Withholding rates for taxpayers filing as SINGLE*
+Withholding rates for taxpayers filing as *SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -287,10 +287,10 @@ The Personal Exemption amount is $4,200
 | 202,000     | 432,000          | 3,931.60       | 2.64%        | 202,000            |
 | 432,000     | And Over         | 10,003.60      | 2.90%        | 432,000            |
 
-### Withholding changes for Rhode Island
+#### Withholding changes for Rhode Island
 For all Filing Status the Personal Exemption ($1,000) wage limit increased from $221,800 to $227,050
 
-*Withholding rates for taxpayers filing as MAR and SINGLE*
+Withholding rates for taxpayers filing as *MAR* and *SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -299,9 +299,9 @@ For all Filing Status the Personal Exemption ($1,000) wage limit increased from 
 | 145,600     | And Over         | 6,275.50       | 5.99%        | 145,600            |
 
 
-### Withholding changes for Vermont
+#### Withholding changes for Vermont
 The Personal Exemption amount is $4,250
-*Withholding rates for taxpayers filing as MAR*
+Withholding rates for taxpayers filing as *MAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -311,7 +311,7 @@ The Personal Exemption amount is $4,250
 | 169,175     | 252,975          | 8,406.83       | 7.60%        | 169,175            |
 | 252,975     | And Over         | 14,775.63      | 8.75%        | 252,975            |
 
-*Withholding rates for taxpayers filing as SINGLE*
+Withholding rates for taxpayers filing as *SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -339,13 +339,13 @@ The Personal Exemption amount is $4,250
 - Oregon
 - South Carolina
 
-## 2019 Federal tax changes
+### 2019 Federal tax changes
 
 The maximum taxable earnings for Social Security increase in 2019 to \$132,900 from \$128,400
 
 The Personal Exemption is \$4,200 from \$4,150 for MAR and SINGLE filing status.
 
-*Withholding rates for taxpayers filing as NRA*
+Withholding rates for taxpayers filing as *NRA*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -357,7 +357,7 @@ The Personal Exemption is \$4,200 from \$4,150 for MAR and SINGLE filing status.
 | 199,900     | 506,100          | 46,628.50      | 35%          | 199,900            |
 | 506,100     | And Over         | 153,798.50     | 37%          | 506,100            |
 
-*Withholding rates for taxpayers filing as MAR*
+Withholding rates for taxpayers filing as *MAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -370,7 +370,7 @@ The Personal Exemption is \$4,200 from \$4,150 for MAR and SINGLE filing status.
 | 420,000     | 624,150          | 93,257.00      | 35%          | 420,000            |
 | 624,150     | And Over         | 164,709.50     | 37%          | 624,150            |
 
-*Withholding rates for taxpayers filing as SINGLE*
+Withholding rates for taxpayers filing as *SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -383,11 +383,11 @@ The Personal Exemption is \$4,200 from \$4,150 for MAR and SINGLE filing status.
 | 207,900     | 514,100          | 46,628.50      | 35%          | 207,900            |
 | 514,100     | And Over         | 153,798.50     | 37%          | 514,100            |
 
-## 2019 state or territorial tax changes
+### 2019 state or territorial tax changes
 
 The following tax changes are included in this update:
 
-### Withholding changes for California
+#### Withholding changes for California
 
 For Filing Status of HOH  
 Personal Exemption is \$129.80 from \$125.40  
@@ -409,7 +409,7 @@ Personal Exemption is \$129.80 from \$125.40
 Standard Deduction is \$4,401 from \$4,236  
 Low Income Limit is \$14,573 from \$14,048
 
-*Withholding rates for taxpayers filing as HOH*
+Withholding rates for taxpayers filing as *HOH*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -424,7 +424,7 @@ Low Income Limit is \$14,573 from \$14,048
 | 779,253     | 1,000,000        | 82,690.29      | 13.53%       | 779,253            |
 | 1,000,000   | And Over         | 112,557.36     | 14.63%       | 1,000,000          |
 
-*Withholding rates for taxpayers filing as MAR1 and MAR2*
+Withholding rates for taxpayers filing as *MAR1* and *MAR2*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -439,7 +439,7 @@ Low Income Limit is \$14,573 from \$14,048
 | 1,000,000   | 1,145,961        | 104,391.39     | 13.53%       | 1,000,000          |
 | 1,145,961   | And Over         | 124,139.90     | 14.63%       | 1,145,961          |
 
-*Withholding rates for taxpayers filing as SINGLE*
+Withholding rates for taxpayers filing as *SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     | 
 |-------------|------------------|----------------|--------------|--------------------|
@@ -454,7 +454,7 @@ Low Income Limit is \$14,573 from \$14,048
 | 572,980     | 1,000,000        | 61,267.12      | 13.53%       | 572,980            |
 | 1,000,000   | And Over         | 119,042.93     | 14.63%       | 1,000,000          |
 
-### Withholding changes for Georgia
+#### Withholding changes for Georgia
 
 The Dependent Allowance remains at \$3,000  
 The Personal Allowance remains unchanged, Standard Deductions changed
@@ -467,7 +467,7 @@ Standard Deductions:
 - MFS \$3000.00  
 - SINGLE \$4600.00
 
-*Withholding rates for taxpayers filing as HOH and MFJ1I*
+Withholding rates for taxpayers filing as *HOH* and *MFJ1I*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -478,7 +478,7 @@ Standard Deductions:
 | 7,000       | 10,000           | 190.00         | 5.0%         | 7,000              |
 | 10,000      |                  | 340.00         | 5.75%        | 10,000             |
 
-*Withholding rates for taxpayers filing as MFJ2I and MFS*
+Withholding rates for taxpayers filing as *MFJ2I* and *MFS*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -489,7 +489,7 @@ Standard Deductions:
 | 3,500       | 5,000            | 95.00          | 5.0%         | 3,500              |
 | 5,000       |                  | 170.00         | 5.75%        | 5,000              |
 
-*Withholding rates for taxpayers filing as SINGLE*
+Withholding rates for taxpayers filing as *SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -500,11 +500,11 @@ Standard Deductions:
 | 5,250       | 7,000            | 142.50         | 5.0%         | 5,250              |
 | 7,000       |                  | 230.00         | 5.75%        | 7,000              |
 
-### Withholding changes for Iowa
+#### Withholding changes for Iowa
 
 The Standard Deduction Amount for Filing Status EXP1 is \$1690.00, and Filing Status EXP2 is \$4160.00
 
-*Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:*
+Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -518,20 +518,20 @@ The Standard Deduction Amount for Filing Status EXP1 is \$1690.00, and Filing St
 | 39,984      | 59,976           | 2,029.58       | 7.44%        | 39,984             |
 | 59,976      |                  | 3,516.98       | 8.53%        | 59,976             |
 
-### Withholding changes for Illinois
+#### Withholding changes for Illinois
 
 The Dependent Exemptions is \$2,275
 
-### Withholding changes for Kentucky
+#### Withholding changes for Kentucky
 
 The Standard Deduction changed to \$2590 from \$2530  
 The Flat Tax Rate remains at 5%
 
-### Withholding changes for Maine
+#### Withholding changes for Maine
 
 The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status’
 
-*Withholding rates for taxpayers filing as SINGLE, Tax table type*
+Withholding rates for taxpayers filing as *SINGLE*, Tax table type
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -539,14 +539,14 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 21,850      | 51,700           | 1,267          | 6.75%        | 21,850             |
 | 51,700      | And over         | 3,282          | 7.15%        | 51,700             |
 
-*Special table type*
+Special table type
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 81,450           | 0              | 0            | 9,350              |
 | 81,450      | 156,450          | 75,000         | 0            | 0                  |
 
-*Withholding rates for taxpayers filing as MAR, Tax table type*
+Withholding rates for taxpayers filing as MAR, Tax table type
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -554,16 +554,16 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 43,700      | 103,400          | 2,535          | 6.75%        | 43,700             |
 | 103,400     | And Over         | 6,565          | 7.15%        | 103,400            |
 
-*Special table type*
+Special table type
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 162,950          | 0              | 0            | 21,550             |
 | 162,950     | 312,950          | 150,000        | 0            | 0                  |
 
-### Withholding changes for Maryland
+#### Withholding changes for Maryland
 
-*Withholding rates for taxpayers filing as CARLNE*
+Withholding rates for taxpayers filing as *CARLNE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -574,7 +574,7 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 150,000     | 250,000          | 12,112.50      | 8.70%        | 150,000            |
 | 250,000     | And Over         | 20,812.50      | 8.95%        | 250,000            |
 
-*Withholding rates for taxpayers filing as CLMAR*
+Withholding rates for taxpayers filing as *CLMAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -585,7 +585,7 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 225,000     | 300,000          | 18,200.00      | 8.70%        | 225,000            |
 | 300,000     | And over         | 24,725.00      | 8.95%        | 300,000            |
 
-*Withholding rates for taxpayers filing as CECIL*
+Withholding rates for taxpayers filing as *CECIL*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -596,7 +596,7 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 150,000     | 250,000          | 11,812.50      | 8.50%        | 150,000            |
 | 250,000     | And Over         | 20,312.50      | 8.75%        | 250,000            |
 
-*Withholding rates for taxpayers filing as CCMAR*
+Withholding rates for taxpayers filing as *CCMAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -607,9 +607,9 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 225,000     | 300,000          | 17,750.00      | 8.50%        | 225,000            |
 | 300,000     | And over         | 24,125.00      | 8.75%        | 300,000            |
 
-### Withholding changes for Minnesota
+#### Withholding changes for Minnesota
 
-*Withholding rates for taxpayers filing as MAR*
+Withholding rates for taxpayers filing as *MAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -619,7 +619,7 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 163,070     | 282,200          | 10,199.33      | 7.85%        | 163,070            |
 | 282,200     | And over         | 19,551.04      | 9.85%        | 282,200            |
 
-*Withholding rates for taxpayers filing as SINGLE*
+Withholding rates for taxpayers filing as *SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -629,9 +629,9 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 89,510      | 166,290          | 5,690.42       | 7.85%        | 89,510             |
 | 166,290     | And over         | 11,717.65      | 9.85%        | 166,290            |
 
-### Withholding changes for New York and New York-Yonkers
+#### Withholding changes for New York and New York-Yonkers
 
-*Withholding rates for taxpayers filing as MAR*
+Withholding rates for taxpayers filing as *MAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -651,7 +651,7 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 2,155,350   | 2,205,350        | 161,792.00     | .9454        | 2,155,350          |
 | 2,205,350   | And over         | 209,062.00     | .0962        | 2,205,350          |
 
-*Withholding rates for taxpayers filing as SINGLE*
+Withholding rates for taxpayers filing as *SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -669,7 +669,7 @@ The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status
 | 1,077,550   | 1,127,550        | 78,775.00      | .5208        | 1,077,550          |
 | 1,127,550   | And over         | 104,815.00     | .0962        | 1,127,550          |
 
-### Withholding changes for North Carolina
+#### Withholding changes for North Carolina
 
 The Standard Deduction amount changed to \$15,000 from \$14,000 for Filing Status of HOH
 
@@ -677,9 +677,9 @@ The Standard Deduction amount changed to \$10,000 from \$8,7500 for Filing Statu
 
 The tax rate for all Filing Statues’ is 5.35% from 5.599%
 
-### Withholding changes for Ohio
+#### Withholding changes for Ohio
 
-*Withholding rates for taxpayers filing as NA*
+Withholding rates for taxpayers filing as *NA*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -692,13 +692,13 @@ The tax rate for all Filing Statues’ is 5.35% from 5.599%
 | 80,000      | 100,000          | 2474.40        | 4.304%       | 80,000             |
 | 100,000     | And over         | 3335.20        | 5.379%       | 100,000            |
 
-### Withholding changes for Oregon
+#### Withholding changes for Oregon
 
 The Standard Deduction Amount is \$4,545 for MS3 and S3 Filing Status.
 
 The Standard Deduction Amount is \$2,270 for S2 Filing Status.
 
-*Special Tax Type rates for MS3 Filing Status*
+Special Tax Type rates for MS3 Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -711,7 +711,7 @@ The Standard Deduction Amount is \$2,270 for S2 Filing Status.
 | 289,999     | And over         | 0              | 0%           | 0                  |
 |             |                  |                |              |                    |
 
-*Special Tax Type rates for S2 and S3 Filing Status*
+Special Tax Type rates for S2 and S3 Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -723,7 +723,7 @@ The Standard Deduction Amount is \$2,270 for S2 Filing Status.
 | 139,999     | 144,999          | 1,350          | 0%           | 0                  |
 | 144,999     | And over         | 0              | 0%           | 0                  |
 
-*Tax Type rates for MS3 and S3 Filing Status*
+Tax Type rates for MS3 and S3 Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -732,7 +732,7 @@ The Standard Deduction Amount is \$2,270 for S2 Filing Status.
 | 250,000     | And over         | 22,002         | 9.9%         | 250,000            |
 |             |                  |                |              |                    |
 
-*Tax Type rates for S2 Filing Status*
+Tax Type rates for S2 Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -740,7 +740,7 @@ The Standard Deduction Amount is \$2,270 for S2 Filing Status.
 | 40,930      | 125,000          | 552            | 9%           | 8,900              |
 | 125,000     | And Over         | 11,001         | 9.9%         | 125,000            |
 
-*Low Income Type rates for MS3 and S3 Filing Status*
+Low Income Type rates for MS3 and S3 Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -749,7 +749,7 @@ The Standard Deduction Amount is \$2,270 for S2 Filing Status.
 | 17,800      | 50,000           | 1,310          | 9%           | 17,800             |
 | 0           | 0                | 0              | 0            | 0                  |
 
-*Low Income Type rates for S2 Filing Status*
+Low Income Type rates for S2 Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -757,13 +757,13 @@ The Standard Deduction Amount is \$2,270 for S2 Filing Status.
 | 3,550       | 8,900            | 383.50         | 7%           | 3,550              |
 | 8,900       | 50,000           | 758            | 9%           | 8,900              |
 
-### <br>Withholding changes for South Carolina
+#### Withholding changes for South Carolina
 
 The Personal Exemption is \$2,510 for Filing Status ONE.
 
 The Standard Deduction Maximum is \$3,470 for ONE Filing Status.
 
-*Tax Type rates for all Filing Status*
+Tax Type rates for all Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -802,7 +802,7 @@ We have a support team focused 100 percent on providing service and support to o
 
 Use the instructions in this section to prepare for the U.S. Payroll Tax Update. For detailed information about the changes in the current tax update round, see *Changes in this update*.
 
-**Are you using a supported version?**
+### Are you using a supported version?
 
 To identify the version, you’re using, start Microsoft Dynamics GP. Choose Help\>\> About Microsoft Dynamics GP. The information window displays the version number in the lower right corner.
 
@@ -810,7 +810,7 @@ This U.S. Payroll Tax Update is supported for Microsoft Dynamics GP 2018, Micros
 
 If you’re not using one of the supported versions, you must upgrade to a supported version before installing this tax update.
 
-**Have you obtained the update files?**
+### Have you obtained the update files?
 
 If your computer is connected to the Internet, the Payroll Update Utility (PUE) automatically can download the tax table update file (TX.cab) from the Internet.
 
