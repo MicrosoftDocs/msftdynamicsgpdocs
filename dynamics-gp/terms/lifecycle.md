@@ -22,10 +22,10 @@ Below is the planned update schedule for Microsoft Dynamics GP, beginning with t
 |Year |Update (tax updates, bug fixes) |Update (tax updates, bug fixes)   |Feature Update(new features and bug fixes)    |Staying Current|
 |-----|----------------------|-----------------------------------|--------------|----------------|-----------------------|
 |2019 |November/December     |Past the date     |October 1, 2019 |To stay current you must be on one of the 2019 releases. This ensures that you can upgrade to next year's updates.|
-|2020 |November/December    |June             |TBA             |To stay current you must be on one of the 2020 releases. This ensures that you can upgrade to next year's updates.|
-|2021 |November/December    |June             |TBA             |To stay current you must be on one of the 2021 releases. This ensures that you can upgrade to next year's updates.|
-|2022 |November/December    |June             |TBA             |To stay current you must be on one of the 2022 releases. This ensures that you can upgrade to next year's updates.´|
-|2023 |November/December    |June             |TBA             |To stay current you must be on one of the 2023 releases. This ensures that you can upgrade to next year's updates.|
+|2020 |November/December    |June             |October             |To stay current you must be on one of the 2020 releases. This ensures that you can upgrade to next year's updates.|
+|2021 |November/December    |June             |October             |To stay current you must be on one of the 2021 releases. This ensures that you can upgrade to next year's updates.|
+|2022 |November/December    |June             |October             |To stay current you must be on one of the 2022 releases. This ensures that you can upgrade to next year's updates.´|
+|2023 |November/December    |June             |October             |To stay current you must be on one of the 2023 releases. This ensures that you can upgrade to next year's updates.|
 |2024 |November/December    |June             |TBA             |To stay current you must be on one of the 2024 releases. This ensures that you can upgrade to next year's updates.|
 |TBA |TBA                  |TBA              |TBA             |TBA |
 
