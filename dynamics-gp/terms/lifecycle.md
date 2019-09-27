@@ -19,8 +19,8 @@ Below is the planned update schedule for Microsoft Dynamics GP, beginning with t
 
 ## Microsoft Dynamics GP Servicing
 
-|Year |Feature Update(new features and bug fixes) |Update (tax updates, bug fixes)  |Update (tax updates, bug fixes) |Staying Current|
-|-----|--------------------------------|---------------------------------|-------------------------------------------|---------------|
+|Year |Feature Update (new features and bug fixes) |Update (tax updates, bug fixes)  |Update (tax updates, bug fixes) |Staying Current|
+|-----|--------------------------------------------|---------------------------------|--------------------------------|---------------|
 |2019 | October 1, 2019    |Past the date     |November/December |To stay current, you must be on one of the 2019 releases. This ensures that you can upgrade to next year's updates.|
 |2020 | October    |June           |November/December  |To stay current, you must be on one of the 2020 releases. This ensures that you can upgrade to next year's updates.|
 |2021 | October   |June            |November/December  |To stay current, you must be on one of the 2021 releases. This ensures that you can upgrade to next year's updates.|
