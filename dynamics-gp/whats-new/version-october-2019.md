@@ -10,6 +10,7 @@ ms.date: 10/01/2019
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
+ROBOTS:NOINDEX
 ---
 
 # What’s New in Dynamics GP in October 2019
