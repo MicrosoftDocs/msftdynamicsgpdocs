@@ -1,22 +1,21 @@
 ---
 title: "What's new in Dynamics GP in October 2019"
-description: "Learn about enhancements that were added to the product since the release of Dynamics GP. "
+description: "Learn about enhancements that were added to the product in this release of Dynamics GP."
 keywords: ""
 author: edupont04
 
 ms.author: edupont
+ms.reviewer: edupont
 manager: annbe
 applies_to: 
-ms.date: 10/01/2019
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
-ROBOTS:NOINDEX
+ms.date: 10/01/2019
 ---
 
 # What’s New in Dynamics GP in October 2019
 
-This chapter lists enhancements to Dynamics GP in the October 2019 release. The Dynamics GP October 2019 release enhances specific areas of the product.
+This page lists enhancements to Dynamics GP in the October 2019 release. The Dynamics GP October 2019 release enhances specific areas of the product.
 
 ## Financial enhancements
 
@@ -24,9 +23,7 @@ A number of updates have been made to the finance area in Dynamics GP.
 
 ### Long description for payables transaction entries
 
-Enable option in Payables ​
-
-Enter up to 200 characters ​
+New option in Payables for very long descriptions up to 200 characters. ​
 
 Displays on the following pages:
 
