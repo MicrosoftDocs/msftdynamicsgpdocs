@@ -23,15 +23,15 @@ A number of updates have been made to the finance area in Dynamics GP.
 
 ### Long description for payables transaction entries
 
-New option in Payables for very long descriptions up to 200 characters. ​
+There is a new option in Payables Setup for very long descriptions up to 200 characters. ​
 
-Displays on the following pages:
+The long description displays on the following pages:
 
 - ​Transaction Entry​
 
 - Payables Transaction Entry Zoom​
 
-- PM Blank Document​
+- PM Transaction Inquiry​
 
 ![Enable long descriptions](media/2019_Finance_LongDescription.png)
 
@@ -51,7 +51,9 @@ Prints on the following checks in Payables Check Entry (single invoice)​
 
 - User-Defined Check2​
 
-- PM Transaction Inquiry​
+Prints on the following document in Payables Transaction Entry
+
+- PM Blank Document​
 
 ![Shows long descriptions](media/2019_Finance_LongDescription2.png)
 
@@ -59,9 +61,8 @@ Prints on the following checks in Payables Check Entry (single invoice)​
 
 ### Expand the view of fiscal periods
 
-​You can extend the window display length to give you an expanded view of the fiscal periods.
+​The window display length of the fiscal periods window is extended to give you an expanded view of the fiscal periods.
 
-Extend the window display length
 
 ![Shows the Fiscal Periods Setup window](media/2019_Finance_FiscalPeriodsSetup.png)
 
@@ -79,7 +80,7 @@ Class ID is now added to the scrolling window.
 
 ![Shows the Class ID field in a window](media/2019_Finance_ClassID.png)
 
-If you change the class ID, you get default GL accounts. The class ID is shown in the **Fixed Assets Transfer** and **Fixed Assets Mass Transfer** windows.
+If you change the class ID, the assigned GL accounts will default and can be edited. The class ID is shown in the **Fixed Assets Transfer** and **Fixed Assets Mass Transfer** windows.
 
 ### Document Attach available in Bank Reconciliation​
 
@@ -94,7 +95,7 @@ You can now attach documents in the following windows:
 
 ### Visual Cue for EFT Vendor on Edit Payment Batch​
 
-In **Edit Payment Batch** window, you can now use a visual cue to identify vendors that are set up to receive EFT payments.
+In **Edit Payment Batch** window, there is displayed a visual cue to identify vendors that are set up to receive EFT payments.
 
 ![Shows the Edit Payment Batch window](media/2019_Finance_EFTVendor.png)
 
@@ -110,11 +111,11 @@ In the **Build Payroll Checks** window, you can now specify if the check must in
 
 ![Shows the Build Payroll Checks window](media/2019_Finance_BuildPayrollChecks.png)
 
-There is also a new option to save settings with the Default ID.
+The additional withholding settings are saved with the Default ID.
 
 ### Payables Integration to Payroll Enhancement​
 
-You can specify remittance address for vendors to use when creating the invoice from Payroll.
+You can specify a remittance address ID for vendors for use when creating the invoice from Payroll.
 
 ![Shows the Payroll Vendor Setup window](media/2019_Finance_PayrollVendorSetup.png)
 
@@ -133,7 +134,7 @@ You can bulk-assign codes to one or more employees for the following codes:
 
 ![Shows the Quick Code Assignment window](media/2019_Finance_QuickCodeAssignment.png)
 
-Go to the **Quick Code Assignment** window from the **Deduction Setup** window, and then mark all or unmark all.
+Go to the **Quick Code Assignment** window from the **Deduction Setup** window, and then mark all or unmark all or individually mark the employee(s) you want to assign the code to.
 
 ### Exclude inactive records for HR benefit and Deduction lookups​
 
@@ -194,7 +195,7 @@ You can now export a workflow to a .json file. Then you can copy that to anothe
 
 ![Shows the Workflow Maintenance window](media/2019_Workflow_ExportWF.png)
 
-When you import an exported workflow from a .json file, you must specify the name of the new workflow.
+When you import an exported workflow from a .json file, you must specify the name of the new workflow. To import a workflow, the workflow type must match.
 
 ![Shows the Workflow Maintenance window](media/2019_Workflow_ImportWF.png)
 
@@ -202,7 +203,7 @@ After import, set up workflow approvers and message options.
 
 ### Change approver for active workflow tasks​
 
-In the new **Edit Workflow Approver** window, you can modify who a task is assigned to as the manager of that workflow.
+In the new **Edit Workflow Approver** window, the manager of that workflow can modify who a task is assigned to.
 
 ![Shows the Edit Workflow Approver window](media/2019_Workflow_EditApprover.png)
 
@@ -210,7 +211,7 @@ Workflow managers can delegate workflow tasks, and the *sa* account can delegate
 
 ### Vendor approval enhancements
 
-You can now specify that a workflow step is only required if the vendor hold status is changed, or when the document attach status is updated for the vendor.
+The vendor approval workflow has changed for you to submit to workflow if the vendor hold status is changed, or when the document attach status is updated for the vendor.  
 
 ![Shows the Workflow Maintenance window](media/2019_Workflow_Conditions.png)
 
@@ -236,11 +237,11 @@ With these new search options, users do not need to change dates in search crite
 
 ### Sort companies in User Access​ Setup
 
-In the **User Access​ Setup** window, you can change the sort order of the companies that the user can access.
+In the **User Access​ Setup** window, you can change the sort order of the companies that the user can access by company name or company ID.
 
 ![Shows the User Access Setup window](media/2019_System_UserAccessCompanies.png)
 
-Type to search and find a company.
+Type to search and find a company by name.
 
 ![Shows the User Access Setup window](media/2019_System_UserAccessInactive.png)
 
@@ -278,7 +279,7 @@ You can now specify if you want to exclude inactive items from the **Item Pric
 
 ### Minimize transaction when Go To is selected for PO that exists​
 
-The transactions windows are minimized when you choose **Go To** for a PO.  
+The transactions window is minimized when you choose **Go To** for a PO when you receive a warning that a PO exists for that vendor.  
 
 ![Shows the Go To dialog box](media/2019_Features_GoTo.png)
 
@@ -287,19 +288,19 @@ Return to the transaction entry to post or delete the transaction.
 
 ### Save setting for how to show new POs
 
-You can now specify if  the user wants to be notified when a new PO is created
+You can now specify what happens when a new PO is created.  You can show the message that new PO's have been created and allow the user to display the Purchase Order list, you can not show the message and display the Purchase Order list or you can not show the message and not display the Purchase Order list.
 
 ![Shows the Purchase Order Processing Setup window](media/2019_Features_NewPO.png)
 
 ### Inactive field added to Item SmartList​
 
-A new field, **Inactive**, is added to the default Item SmartList. You can add it as an available column in SmartList.
+A new field, **Inactive**, is added to the default Item SmartList. You can add it as an available column to other SmartLists that are based on the Item list.
 
 ![Shows the SmartList window](media/2019_Features_Inactive.png)
 
 ### Show the User ID in the Item master table​
 
-Write the User ID to the item record when added or updated. You can add the field as a column in Items SmartList query.
+Write the User ID to the item record when added or updated. You can add the field as a column in Item SmartList query.
 
 ![Shows the SmartList window](media/2019_Features_UserID.png)
 
