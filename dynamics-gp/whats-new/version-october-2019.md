@@ -23,7 +23,7 @@ A number of updates have been made to the finance area in Dynamics GP.
 
 ### Long description for payables transaction entries
 
-There is a new option in Payables Setup for very long descriptions up to 200 characters. ​
+There is a new option in **Payables Setup** for very long descriptions up to 200 characters. ​
 
 The long description displays on the following pages:
 
@@ -35,7 +35,7 @@ The long description displays on the following pages:
 
 ![Enable long descriptions](media/2019_Finance_LongDescription.png)
 
-Prints on the following checks in Payables Check Entry (single invoice)​
+The long description prints on the following checks in **Payables Check Entry** (single invoice)​:
 
 - Check With Stub on Top​
 
@@ -51,18 +51,17 @@ Prints on the following checks in Payables Check Entry (single invoice)​
 
 - User-Defined Check2​
 
-Prints on the following document in Payables Transaction Entry
+The long description prints on the following document in **Payables Transaction Entry**:
 
 - PM Blank Document​
 
 ![Shows long descriptions](media/2019_Finance_LongDescription2.png)
 
-​Does not post to the general ledger.​
+The long description dDoes not post to the general ledger.​
 
 ### Expand the view of fiscal periods
 
 ​The window display length of the fiscal periods window is extended to give you an expanded view of the fiscal periods.
-
 
 ![Shows the Fiscal Periods Setup window](media/2019_Finance_FiscalPeriodsSetup.png)
 
@@ -76,7 +75,7 @@ The **User Who Posted** field shows for both open entries and historical entries
 
 ### Add Class ID to Fixed Assets Transfer​
 
-Class ID is now added to the scrolling window.
+The **Class ID** is now added to the scrolling window.
 
 ![Shows the Class ID field in a window](media/2019_Finance_ClassID.png)
 
@@ -283,12 +282,12 @@ The transactions window is minimized when you choose **Go To** for a PO when you
 
 ![Shows the Go To dialog box](media/2019_Features_GoTo.png)
 
-The purchasing transactions navigation list displays on top, and the **Payables Transaction Entry** remains open with the transaction entered. 
+The purchasing transactions navigation list displays on top, and the **Payables Transaction Entry** remains open with the transaction entered.  
 Return to the transaction entry to post or delete the transaction.
 
 ### Save setting for how to show new POs
 
-You can now specify what happens when a new PO is created.  You can show the message that new PO's have been created and allow the user to display the Purchase Order list, you can not show the message and display the Purchase Order list or you can not show the message and not display the Purchase Order list.
+You can now specify what happens when a new PO is created. You can show the message that new purchase orders have been created so the user can open the **Purchase Order** list, you can not show the message and just open the **Purchase Order** list, or you can not show the message and not display the **Purchase Order** list.
 
 ![Shows the Purchase Order Processing Setup window](media/2019_Features_NewPO.png)
 
@@ -314,3 +313,5 @@ You can now insert rows from Excel into the General Journal using the Dynamics G
 
 [System requirements](../installation/system-requirements.md)  
 [Upgrade introduction](../upgrade/introduction.md)  
+[Dynamics GP community on https://community.dynamics.com](https://community.dynamics.com/gp)  
+[Dynamics GP User Group](https://www.gpug.com/home)  
