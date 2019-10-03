@@ -36,7 +36,7 @@ There are no federal changes in the Round 4 tax table update.
 The following tax changes are included in this update:
 
 #### Withholding changes for Virginia
-The Standard Deduction increased from $3,000 to $4,000.
+The Standard Deduction increased from $3,000 to $4,500.
 
 #### Withholding changes for Minnesota
 
