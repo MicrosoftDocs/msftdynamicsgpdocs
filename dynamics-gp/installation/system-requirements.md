@@ -134,7 +134,7 @@ You must install the Microsoft Dynamics CRM Reporting Extensions on the Dynamics
 
 ## Supported system requirements
 
-For detailed system requirements for Dynamics GP, see [System requirements for Dynamics GP 2016](https://go.microsoft.com/fwlink/?LinkId=521785). The system requirements include supported databases and operating systems, hardware recommendations, client requirements, and Terminal Server requirements.
+For detailed system requirements for Dynamics GP, see [System requirements for Dynamics GP](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/MDGP2018_System_Requirements). The system requirements include supported databases and operating systems, hardware recommendations, client requirements, and Terminal Server requirements.
 
 Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software improves performance.
 
@@ -142,4 +142,4 @@ Recommended system requirements depend on the number of users and transactions. 
 
 You can use Windows Server 2012 Terminal Services, Windows Server 2012 R2 Remote Desktop Services, and Windows Server 2012 Remote Desktop Services. Citrix Xenapps can also be used with most database configurations to provide remote access to Dynamics GP in a Wide Area Network (WAN) environment.
 
-For more information about system requirements see <https://go.microsoft.com/fwlink/?LinkId=521785>. You also should refer to the documentation provided by Citrix for more information.
+You also should refer to the documentation provided by Citrix for more information.
