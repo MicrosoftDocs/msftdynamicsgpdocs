@@ -3,6 +3,7 @@
 <!--- what's new-->
 ## What's new
 ### [Introduction](whats-new/introduction.md)
+### [What’s new in Dynamics GP in October 2019](whats-new/version-october-2019.md)
 ### [What's new in Dynamics GP 2018 R2](whats-new/version-2018-r2.md)
 ### [What's new in Dynamics GP 2018](whats-new/version-2018.md)
 ### [What's new in Dynamics GP 2016 R2](whats-new/version-2016-r2.md)
