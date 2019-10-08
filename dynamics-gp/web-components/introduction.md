@@ -82,8 +82,4 @@ Start a year-end discussion with other members of the Microsoft customer communi
 
 We have specialized support teams focused on providing service and support to our Human Resources/Payroll customers. If you have Human Resources/Payroll questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code.
 
-### Send us your suggestions
 
-We welcome comments regarding the usefulness of the Dynamics GP. If you have specific suggestions or encounter problems, let us know on the Connect for Microsoft Dynamics (https://connect.microsoft.com/dynamicssuggestions) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
-
-An email address was available in previous versions to provide an option for contacting us about the documentation. The most recent address was <adocs@microsoft.com>. Prior to that, <bizdoc@microsoft.com> was available. Both email addresses are being decommissioned.
