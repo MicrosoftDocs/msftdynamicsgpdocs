@@ -8,92 +8,71 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/04/2019
+ms.date: 10/14/2019
 ---
 
 # Professional Services Tools Library
 
-The Professional Services Tools Library is designed for use with Microsoft Dynamics® GP. This document contains descriptions and information about the functionality of each tool, as well as how to implement the tools available in the Professional Services Tools Library.
+The Professional Services Tools Library is designed for use with Microsoft Dynamics GP. This document contains descriptions and information about the functionality of each tool, as well as how to implement the tools available in the Professional Services Tools Library.
 
 ## Introduction
-To download the tool go to [this link that is Partner only](https://mbs.microsoft.com/partnersource/northamerica/support/support-news/NOAM_PSTL).
+To download the tool go to [PartnerSource](https://mbs.microsoft.com/partnersource/northamerica/support/support-news/NOAM_PSTL).
 
-As of March 26, 2012 the Microsoft Dynamics GP PSTL and the additional Microsoft Dynamics GP Tools listed above are available to Partners at no additional cost.
+As of March 26, 2012 the Microsoft Dynamics GP PSTL and the additional Microsoft Dynamics GP Tools listed above are available to partners at no additional cost.
 
 The content of this page is locked.
 
-To access this information log in to [CustomerSource](https://mbs.microsoft.com/partnersource/_layouts/15/Authenticate.aspx?Source=/partnersource/northamerica/support/support-news/NOAM_PSTL)
+To access this information, log in to [CustomerSource](https://mbs.microsoft.com/partnersource/_layouts/15/Authenticate.aspx?Source=/partnersource/northamerica/support/support-news/NOAM_PSTL).
 
-**Unable to log in to CustomerSource?**
-
-Visit our CustomerSource [Help
-Page](https://mbs.microsoft.com/partnersource/northamerica/help/help).
-
-**Close**
-
-**The content of this page is locked.**
-
-**To access this information log in to [CustomerSource](https://mbs.microsoft.com/partnersource/_layouts/15/Authenticate.aspx?Source=/partnersource/northamerica/support/support-news/NOAM_PSTL)**.
-
-**Unable to log in to CustomerSource?**
+### Unable to log in to CustomerSource?
 
 Visit our CustomerSource [Help Page](https://mbs.microsoft.com/partnersource/northamerica/help/help).
 
-**Your current service plan does not allow access to this information.**
+To access this information log in to [CustomerSource](https://mbs.microsoft.com/partnersource/_layouts/15/Authenticate.aspx?Source=/partnersource/northamerica/support/support-news/NOAM_PSTL).
 
-**To learn more about Microsoft Dynamics Service Plans review our [service plan offerings](http://go.microsoft.com/fwlink/?LinkID=532453&clcid=0x409)**.
+### Your current service plan does not allow access to this information
 
-All the listed Microsoft Dynamics GP tools are free as is, any further
-functionality outside of this download will be taken on a limited basis and be
-considered an Advisory Service
+To learn more about Microsoft Dynamics Service Plans, review our [service plan offerings](http://go.microsoft.com/fwlink/?LinkID=532453).
 
-Information is divided into the following sections:
+All the listed Microsoft Dynamics GP tools are free as is, any further functionality outside of this download will be taken on a limited basis and be considered an Advisory Service
 
-- *Before you begin*
-
-- *Using Validate and Import buttons*
-
-- *Compatibility information*
-
-### Before you begin
+## Before you begin
 
 This section includes information and precautions that will help you use Professional Services Tools Library more effectively.
 
-**Making backups** Before running any tool, make a backup of the databases that will be affected. It is important to make a backup of your Microsoft SQL Server® data. Many of the tools will prompt users to back up their data before being allowed to execute the command selected. Make a backup before continuing with the tool operation. The tools that do not prompt users with a warning message either have another type of warning or assume that the user has taken steps to appropriately backup the data.
+- Making backups
 
-**Additional users** Most tools will require that you are the only user logged into the company. If there are additional users logged into the company you will receive an error message listing the total number of users in the system. Make sure all users are logged out and then reopen the tool.
+    Before running any tool, make a backup of the databases that will be affected. It is important to make a backup of your Microsoft SQL Server® data. Many of the tools will prompt users to back up their data before being allowed to execute the command selected. Make a backup before continuing with the tool operation. The tools that do not prompt users with a warning message either have another type of warning or assume that the user has taken steps to appropriately backup the data.
 
-*If additional products are installed, all 3rd party tables should be tested for validation.*
+- Additional users
 
-**Using the “sa” login** Regardless of how role-based Security is defined in Microsoft Dynamics GP, there are certain tools that will require users to be logged in as “sa.” These tools are:
+    Most tools will require that you are the only user logged into the company. If there are additional users logged into the company you will receive an error message listing the total number of users in the system. Make sure all users are logged out and then reopen the tool.
 
-- Toolkit
+    > [!NOTE]
+    > If additional products are installed, all 3rd party tables should be tested for validation.
 
-- Customer Name Modifier
+- Using the *sa* login
 
-- Item Number Modifier
+    Regardless of how role-based Security is defined in Microsoft Dynamics GP, there are certain tools that will require users to be logged in as “sa.” These tools are:
 
-- Item Number Combiner
+        - Toolkit
+        - Customer Name Modifier
+        - Item Number Modifier
+        - Item Number Combiner
+        - Vendor Name Modifier
+        - Account Modifier/Combiner
+        - Salesperson Modifier
+        - Territory Modifier
+        - Territory Combiner
+        - Company Copy
 
-- Vendor Name Modifier
-
-- Account Modifier/Combiner
-
-- Salesperson Modifier
-
-- Territory Modifier
-
-- Territory Combiner
-
-- Company Copy
-
-### Using Validate and Import buttons
+#### Using Validate and Import buttons
 
 Validate and Import buttons are available on many of the tools that modify or combine data. These buttons allow data to be imported without having to manually enter the information, making the tools useful to change or combine many pieces of data.
 
 For example, if you are want to change 1000 current item numbers to 1000 new item numbers one at a time, you can save time by importing a two-column spreadsheet into modifier and combiner tools.
 
-**Preparing your spreadsheet data:**
+#### To prepare your spreadsheet data
 
 1. Enter existing system data — such as the Vendor ID numbers or Item numbers — in the first column of data in the spreadsheet.
 
@@ -106,7 +85,7 @@ For example, if you are want to change 1000 current item numbers to 1000 new ite
 [!NOTE]
 The spreadsheet must be saved as a text file in Microsoft Excel (tab delimited file), to ensure that information in Microsoft Dynamics GP is updated correctly.
 
-**Validating and importing your data:**
+#### To validate and import your data
 
 A typical example of the Validate and Import function functionality would be during an Employee ID change:
 
@@ -126,7 +105,7 @@ If you choose the Import button, you will receive a message to choose Validate f
 
 6. Choose OK, and close the modifier or combiner tool to receive another report destination window and view the report to see the changed data.
 
-### Compatibility information
+#### Compatibility information
 
 The following table lists the compatibility of modules in Microsoft Dynamics GP with the individual Professional Services Tools.
 
@@ -135,61 +114,62 @@ All of the tools are compatible with core modules. Core modules include General 
 > [!NOTE]
 When using the Combine tools, SmartList queries may need to be modified after the combine is completed.
 
-**Tool Name**
+#### Tools
 
-*Account Modifier/Combiner - Compatible modules and features*
+- Account Modifier/Combiner - Compatible modules and features
 
-Core Modules  
-Analytical Accounting  
-Control Account Management  
-Excel Based Budgeting  
-Field Service  
-Fixed Assets  
-Interfund Management  
-Manufacturing  
-Project Accounting  
-Revenue/Expense Deferrals  
-SmartList
+  - Core Modules  
+  - Analytical Accounting  
+  - Control Account Management  
+  - Excel Based Budgeting  
+  - Field Service  
+  - Fixed Assets  
+  - Interfund Management  
+  - Manufacturing  
+  - Project Accounting  
+  - Revenue/Expense Deferrals  
+  - SmartList
 
-*Checkbook Modifier - Compatible modules and features*  
-Core Modules  
-Project Accounting
+- Checkbook Modifier - Compatible modules and features
 
-*Customer Name Modifier - Compatible modules and features*  
-Core Modules  
-Project Accounting
+  - Core Modules  
+  - Project Accounting
 
-*Employee Modifier U.S. and Canadian Payroll - Compatible modules and features*  
-Core Modules  
-Human Resources  
-Project Accounting  
-Personal Data Keeper
+- Customer Name Modifier - Compatible modules and features
+  - Core Modules  
+  - Project Accounting
 
-*Item Number Modifier & Combiner - Compatible modules and features*  
-Core Modules  
-Analytical Accounting  
-Manufacturing  
-Field Service  
-SmartList  
-Project Accounting
+- Employee Modifier U.S. and Canadian Payroll - Compatible modules and features
+  - Core Modules  
+  - Human Resources  
+  - Project Accounting  
+  - Personal Data Keeper
 
-*Item Description Modifier - Compatible modules and features*  
-Core Modules  
-Project Accounting
+- Item Number Modifier & Combiner - Compatible modules and features
+  - Core Modules  
+  - Analytical Accounting  
+  - Manufacturing  
+  - Field Service  
+  - SmartList  
+  - Project Accounting
 
-*Inventory Site Modifier & Combiner- Compatible modules and features*  
-Core Modules  
-Manufacturing  
-Field Service  
-Project Accounting
+- Item Description Modifier - Compatible modules and features
+  - Core Modules  
+  - Project Accounting
 
-*Salesperson & Territory Modifier/Combiner - Compatible modules and features*  
-Core Modules  
-Collections Management
+- Inventory Site Modifier & Combiner- Compatible modules and features
+  - Core Modules  
+  - Manufacturing  
+  - Field Service  
+  - Project Accounting
 
-*Vendor Name Modifier - Compatible modules and features*  
-Core Modules  
-Project Accounting
+- Salesperson & Territory Modifier/Combiner - Compatible modules and features
+  - Core Modules  
+  - Collections Management
+
+- Vendor Name Modifier - Compatible modules and features
+  - Core Modules  
+  - Project Accounting
 
 ## Chapter 1: Installing Professional Services Tools Library
 

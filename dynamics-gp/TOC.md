@@ -26,9 +26,9 @@
 #### [Installing additional components](installation/installing-additional-components.md)
 ### [Creating a company](installation/creating-a-company.md)
 ### [After installing](installation/after-installing.md)
-### Additional clients
-#### [Creating an installation package](installation/creating-an-installation-package.md)
-#### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
+#### Additional clients
+##### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
+##### [Creating an installation package](installation/creating-an-installation-package.md)
 ### [Professional Service Tools Library](installation/ProfServicesToolsLibrary.md)
 ### [Security Planning](installation/SecurityPlanning.md)
 ### [System Setup](installation/SystemSetup.md)
@@ -36,7 +36,7 @@
 
 <!--- web components -->
 ### Web components
-### [Introduction](web-components/introduction.md)
+#### [Introduction](web-components/introduction.md)
 #### [Installation overview](web-components/installation-overview.md)
 #### [Deployment configurations](web-components/deployment-configurations.md)
 #### [Environment configuration](web-components/environment-configuration.md)
