@@ -142,49 +142,38 @@ delegating user.
     To update the properties for the user, click the Save button.
 
 ### To remove a user
-You can remove a service administrator or delegating user from your multitenant
-environment.
+You can remove a service administrator or delegating user from your multitenant environment.
 
-    Take care when removing delegating users that you do not delete a login that is in use with
-    an application pool. If you remove the user, the application pool will no longer be able to use
-    any of the tenant services.
+> [!NOTE]
+> Take care when removing delegating users that you do not delete a login that is in use with an application pool. If you remove the user, the application pool will no longer be able to use any of the tenant services.
 
-The following steps describe how to remove a service administrator or delegating
-user.
+The following steps describe how to remove a service administrator or delegating user.
 
 1. Start the Web Management Console.
 
-    In a browser, open the Web Management Console. To start the Web
-    Management Console, you use a URL similar to the following:
+    In a browser, open the Web Management Console. To start the Web Management Console, you use a URL similar to the following:
 
         https://<web server name>/WebManagementConsole/
 
 2. Click Tenant Manager.
 
-    Click Tenant Manager to open the snap-in in the Web Management Console. To
-    view the available user, click Users in the navigation pane.
+    Click Tenant Manager to open the snap-in in the Web Management Console. To view the available user, click Users in the navigation pane.
 
 3. Click the name of the user.
 
-    The Tenant Manager shows a list of available users. Click the name of the user
-    you want to remove.
+    The Tenant Manager shows a list of available users. Click the name of the user you want to remove.
 
 4. Click Delete.
 
-    Click the Delete button in the tenant manager ribbon of the Web Management
-    Console. The user is removed from the list of users.
+    Click the Delete button in the tenant manager ribbon of the Web Management Console. The user is removed from the list of users.
 
 5. Open the security group on the tenant server.
 
-    Open Server Manager. Expand Configuration, expand Local Users and Groups,
-    and then click Groups. In the list of Groups, find the security group that you
-    added for Tenant Services. Double-click the group and the group properties
-    window opens.
+    Open Server Manager. Expand Configuration, expand Local Users and Groups, and then click Groups. In the list of Groups, find the security group that you added for Tenant Services. Double-click the group and the group properties window opens.
 
 6. Click Remove to delete the member from the group.
 
-    Click the member you want to remove, and then click Remove. Click OK to
-    close the group properties window.
+    Click the member you want to remove, and then click Remove. Click OK to close the group properties window.
 
 ## Chapter 8: Configuring Applications
 After installing Microsoft Dynamics GP Tenant Services, you can specify the
@@ -196,11 +185,11 @@ Tenant Manager snap-in as a service administrator.
 The following sections describes how to add, update, export, import, and remove
 multitenant applications:
 
-• To add an application
-• To update an application
-• To export application information
-• To import an application
-• To remove an application
+- To add an application
+- To update an application
+- To export application information
+- To import an application
+- To remove an application
 
 ### To add an application
 You have to specify the application properties for the multitenant application. You
@@ -209,8 +198,7 @@ a tenant.
 
 1. Start the Web Management Console.
 
-    In a browser, open the Web Management Console. To start the Web
-    Management Console, you use a URL similar to the following:
+    In a browser, open the Web Management Console. To start the Web Management Console, you use a URL similar to the following:
 
         https://ServerName:PortNumber/WebManagementConsole/
 
@@ -384,21 +372,17 @@ The following steps describe how to remove a multitenant application.
 
 1. Start the Web Management Console.
 
-In a browser, open the Web Management Console. To start the Web
-Management Console, you use a URL similar to the following: 
+    In a browser, open the Web Management Console. To start the Web Management Console, you use a URL similar to the following: 
 
     https://ServerName:PortNumber/WebManagementConsole/
 
 2. Click Tenant Manager.
 
-    You click Tenant Manager to open the snap-in in the Web Management
-    Console. To view the available applications, click Applications in the navigation
-    pane.
+    You click Tenant Manager to open the snap-in in the Web Management Console. To view the available applications, click Applications in the navigation pane.
 
 3. Click the name of the application.
 
-    The Web Management Console shows a list of available multitenant
-    applications. Click the name of the application you want to remove.
+    The Web Management Console shows a list of available multitenant applications. Click the name of the application you want to remove.
 
 4. Click Delete.
 
@@ -590,18 +574,19 @@ application that you specified in the previous section.
     for the Microsoft Dynamics GP Web Client. For more information about how to
     install and configure the Web Client application, see Chapter 12, “Configuring
     the Web Client.”
-    Name | Value
-    -|-
-    DynamicsexeLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\ 
-    DynamicssetLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\Dynamics.set
-    DexiniLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\Data\Dex.ini
-    HeartbeatTimeout | 0.20:00:00
-    RuntimeLogEnabled | false
-    CustomRuntimeSettings | ScriptLogEnabled=false|TimingLogEnabled=false|SqlLogEnabled=false
-    SQLUserName | The name for the SQL login that was specified to be used for the web client when the Microsoft Dynamics GP web client runtime was installed.
-    SQLPassword | The password for the SQL login being used for the web client.
-    RuntimeProcessUserName | The name of the Windows account that the runtime process will run as when a user logs in using an Organizational Account. You only need to provide a value if you are using Organizational Accounts.
-    RuntimeProcessPassword | The password for the Windows account used to run the runtime process.
+    
+    |Name | Value|
+    |-----|------|
+    |DynamicsexeLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\ |
+    |DynamicssetLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\Dynamics.set|
+    |DexiniLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\Data\Dex.ini|
+    |HeartbeatTimeout | 0.20:00:00|
+    |RuntimeLogEnabled | false|
+    |CustomRuntimeSettings | ScriptLogEnabled=false|TimingLogEnabled=false|SqlLogEnabled=false|
+    |SQLUserName | The name for the SQL login that was specified to be used for the web client when the Microsoft Dynamics GP web client runtime was installed.|
+    |SQLPassword | The password for the SQL login being used for the web client.|
+    |RuntimeProcessUserName | The name of the Windows account that the runtime process will run as when a user logs in using an Organizational Account. You only need to provide a value if you are using Organizational Accounts.|
+    |RuntimeProcessPassword | The password for the Windows account used to run the runtime process.|
 
 3. Click Save.
 

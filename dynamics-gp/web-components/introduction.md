@@ -13,7 +13,7 @@ ms.assetid: 3d258f3c-e6d6-4d63-a362-2b33db528ae1
 ms.reviewer: 
 ---
 
-# Introduction
+# Web Components Introduction
 
 Use this guide to install the Dynamics GP Web Client. This documentation explains how to install the web components in the most common configurations.
 
