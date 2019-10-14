@@ -36,6 +36,7 @@
 
 <!--- web components -->
 ### Web components
+### [Introduction](web-components/introduction.md)
 #### [Installation overview](web-components/installation-overview.md)
 #### [Deployment configurations](web-components/deployment-configurations.md)
 #### [Environment configuration](web-components/environment-configuration.md)
