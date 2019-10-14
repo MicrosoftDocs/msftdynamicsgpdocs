@@ -247,7 +247,8 @@ The user account that you specify for the application pool will be added as a
 delegating user for Tenant Services. You should not use this login for a service
 administrator, tenant administrator, or tenant user.
 
-    You cannot use the login of a service administrator as a delegating user. If you try to use the same login for both, you will not be able to use the Tenant Manager snap-in of the Web Management Console.
+> [!NOTE]
+> You cannot use the login of a service administrator as a delegating user. If you try to use the same login for both, you will not be able to use the Tenant Manager snap-in of the Web Management Console.
 
 ### Signed security certificates
 You can use security certificates and secure sockets layer (SSL) to help improve the
