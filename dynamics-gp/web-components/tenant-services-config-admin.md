@@ -6,11 +6,11 @@ author: dapelt
 ms.author: dapelt
 manager: rbucholz
 applies_to: 
-ms.date: 11/2/2018/
+ms.date: 10/14/2019
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 
-ms.reviewer: 
+ms.reviewer: edupont
 ---
 
 # Tenant Services Configuration and Administration
