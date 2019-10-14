@@ -6,7 +6,7 @@ author: dapelt
 ms.author: dapelt
 manager: rbucholz
 applies_to: 
-ms.date: 11/2/2018
+ms.date: 10/14/2019
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 
@@ -819,8 +819,13 @@ use the additional security.
 
 • Use the Microsoft Dynamics GP Web Management Console to create, update,
 and remove tenants, users, and multitenant applications. For more information,
-see Chapter 9, “Configuring Tenants,” 
+see [Chapter 9: Configuring Tenants](tenant-services-config-admin.md#chapter-9-configuring-tenants).
 
 • Learn about actions you will need to take to configure and maintain the
 Microsoft Dynamics GP Tenant Services components that you installed. Details
-are found in Part 3, Configuration and Administration.
+are found in [Tenant Services Configuration and Administration](tenant-services-config-admin.md).
+
+## See also
+
+[Multitenant Applications](tenant-services-applications.md)  
+[Tenant Services Configuration and Administration](tenant-services-config-admin.md)  

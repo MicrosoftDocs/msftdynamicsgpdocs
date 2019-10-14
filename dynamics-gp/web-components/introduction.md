@@ -6,7 +6,7 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.date: 09/05/2018
+ms.date: 10/14/2019
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 3d258f3c-e6d6-4d63-a362-2b33db528ae1
@@ -15,65 +15,67 @@ ms.reviewer:
 
 # Introduction
 
-Use this manual to install the Dynamics GP Web Client. This documentation explains how to install the web components in the most common configurations.
+Use this guide to install the Dynamics GP Web Client. This documentation explains how to install the web components in the most common configurations.
 
+You can also find content in [PartnerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#gp2018rtm).
 
-This information was current as of December 1, 2017. The documentation may be updated as new information becomes available. You can also find content in [PartnerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#gp2018rtm).
+## Main steps in installing the Microsoft Dynamics GP Web Components
 
-This introduction is divided into the following sections:
+- [Installation overview](installation-overview.md)
 
-- [What’s in this manual](#whats-in-this-manual)  
+    Provides an overview of the installation process and describes the supported deployment configurations.  
 
-- [Symbols and conventions](#symbols-and-conventions)  
+- [Back office server preparation](back-office-server-preparation.md)
 
-- [Additional resources](#_Additional_resources)  
+    Describes how to configure Dynamics GP and other back office server settings to prepare for the web client installation.  
 
-- [Send us your suggestions](#send-us-your-suggestions)  
+- [Prerequisite software](prerequisite-software.md)
 
-### What’s in this manual
+    Lists the prerequisite software you must install on your web server and explains how to set up the web site that will host the web client.  
 
-This manual provides step-by-step instructions for installing the Microsoft
+- [Single machine installation](single-machine-installation.md)
 
-Dynamics GP Web Components. It includes the following parts:
+    Provides the steps you need to follow when running the web client installer.  
 
-- [Part 1, Getting started](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%201%20Getting%20Started.dotx), provides an overview of the installation process and describes the supported deployment configurations.  
+- [Single machine upgrade](single-machine-upgrade.md)
 
-- [Part 2, Back office server preparation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%202%20Back%20office%20server%20prep.dotx), describes how to configure Dynamics GP and other back office server settings to prepare for the web client installation.  
+    Explains how to install an upgrade for the Dynamics GP web client.  
 
-- [Part 3, Web server preparation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%203%20Web%20server%20prep.dotx), lists the prerequisite software you must install on your web server and explains how to set up the web site that will host the web client.  
+- [Tenant Services Configuration and Administration](tenant-services-config-admin.md)
 
-- [Part 4, Web components installation](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%204%20Web%20components%20install.dotx), provides the steps you need to follow when running the web client installer.  
+    Contains information about administrative tasks you will perform for the web client.  
 
-- [Part 5, Web client upgrade](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%205%20Web%20client%20upgrade.dotx), explains how to install an upgrade for the Dynamics GP web client.  
+- [Working with the web client](working-with-the-web-client.md)
 
-- [Part 6, Web client administration](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%206%20Web%20client%20admin.dotx), contains information about administrative tasks you will perform for the web client.  
+    Provides information for end-users of the web client.  
 
-- [Part 7, Using the Web client](https://microsoft-my.sharepoint.com/personal/bigoswam_microsoft_com/Documents/Documents/Office/Dynamics%20GP/Web%20Components%20Guide/WebClient_source/Part%207%20Using%20the%20Web%20client.dotx), provides information for end-users of the web client.  
-
-### Additional resources
+## Additional resources
 
 A number of resources are available to help in addition to this document.
 
-#### Knowledge Base
+### Knowledge Base
 
-(<https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx>)
+[CustomerSource Knowledge Base](https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx)
 
 Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
 
-#### eSupport
+### eSupport
 
-(<https://mbs.microsoft.com/support/newstart.aspx>)
+[Dynamics GP Support](https://mbs.microsoft.com/customersource/northamerica/GP/support)
 
 For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.
 
-#### Community
+### Community
 
-(<https://mbs.microsoft.com/customersource/communities/>)
+[Dynamics GP Community](https://community.dynamics.com/gp)
 
-Start a year-end discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.
+Start a year-end discussion with other members of the Microsoft customer community. The forum provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.
 
-#### Dynamics GP support team
+### Dynamics GP support team
 
 We have specialized support teams focused on providing service and support to our Human Resources/Payroll customers. If you have Human Resources/Payroll questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code.
 
+## See also
 
+[Installation overview](installation-overview.md)  
+[What's New Overview](../whats-new/introduction.md)  
