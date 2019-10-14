@@ -24,11 +24,11 @@
 #### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
 #### [Using Microsoft Dynamics Utilities](installation/using-microsoft-dynamics-utilities.md)
 #### [Installing additional components](installation/installing-additional-components.md)
-### [Creating a company](installation/creating-a-company.md)
-### [After installing](installation/after-installing.md)
 #### Additional clients
 ##### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
 ##### [Creating an installation package](installation/creating-an-installation-package.md)
+### [Creating a company](installation/creating-a-company.md)
+### [After installing](installation/after-installing.md)
 ### [Professional Service Tools Library](installation/ProfServicesToolsLibrary.md)
 ### [Security Planning](installation/SecurityPlanning.md)
 ### [System Setup](installation/SystemSetup.md)
