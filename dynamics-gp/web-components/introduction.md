@@ -12,19 +12,13 @@ ms.topic: article
 ms.assetid: 3d258f3c-e6d6-4d63-a362-2b33db528ae1
 ms.reviewer: 
 ---
-|              |
-|--------------|
-| Introduction |
 
 # Introduction
 
-<span id="_Toc498953263" class="anchor"></span>
-
 Use this manual to install the Dynamics GP Web Client. This documentation explains how to install the web components in the most common configurations.
 
-Documentation on the web
 
-This information was current as of December 1, 2017. The documentation may be updated as new information becomes available. Check for updated content on the web: <https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#gp2018rtm>.
+This information was current as of December 1, 2017. The documentation may be updated as new information becomes available. You can also find content in [PartnerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#gp2018rtm).
 
 This introduction is divided into the following sections:
 
