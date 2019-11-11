@@ -61,6 +61,8 @@ First, you must retrieve the security certificate from the server, and then you 
 
 10. Click OK to close the **Certificate** window.
 
+## Import the security certificate
+
 The following procedure uses the Certificates snap-in for Microsoft Management Console (MMC). If you do not already have this snap-in installed, you can add it to the MMC. You must add the Certificates snap-in with the scope of *Local computer*. For more information, see [How to: View certificates with the MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in). Alternatively, you can use the Certificate Manager tool. For more information, see [View certificates with the Certificate Manager tool](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool).
 
 ### To install the security certificate
