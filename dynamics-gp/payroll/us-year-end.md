@@ -8,16 +8,16 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/06/2018
+ms.date: 11/11/2019
 ---
 
-# U.S. 2018 Year-end Update in Dynamics GP
+# U.S. 2019 Year-end Update in Dynamics GP
 
-Covering Microsoft Dynamics GP 2018 back through Microsoft Dynamics GP 2015
+Covering Microsoft Dynamics GP, Microsoft Dynamics GP 2018 back through Microsoft Dynamics GP 2015
 
 ## Introduction
 
-This document contains instructions for updating the U.S. Payroll module for Microsoft Dynamics GP 2018, Microsoft Dynamics GP 2016, and Microsoft Dynamics GP 2015 R2 so that your system is compliant with 2018 filing requirements.
+This document contains instructions for updating the U.S. Payroll module for Microsoft Dynamics GP, Microsoft Dynamics GP 2018, Microsoft Dynamics GP 2016, and Microsoft Dynamics GP 2015 R2 so that your system is compliant with 2019 filing requirements.
 
 Also included in this document are instructions for completing payroll year-end procedures. These instructions assume that you are already familiar with U.S. Payroll for Microsoft Dynamics GP.
 
@@ -27,7 +27,7 @@ Note, however, that the instructions in this document expand on the instructions
 
 ### What’s in this document
 
-This document provides information about the new 2018 tax year filing requirements and includes instructions for installing the updates necessary to make Microsoft Dynamics GP compliant for 2018 filing. Additionally, you will find instructions for completing year-end payroll procedures using your Payroll system.
+This document provides information about the new 2019 tax year filing requirements and includes instructions for installing the updates necessary to make Microsoft Dynamics GP compliant for 2019 filing. Additionally, you will find instructions for completing year-end payroll procedures using your Payroll system.
 
 To make best use of the year-end update, you should be familiar with system-wide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
 
@@ -54,13 +54,13 @@ Provides you with instant access to the same database our support engineers use.
 
 **eSupport**
 
-[https://mbs.microsoft.com/support/newstart.aspx](https://mbs.microsoft.com/support/newstart.aspx)
+[https://support.microsoft.com/supportforbusiness.](https://support.microsoft.com/supportforbusiness.)
 
 For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.
 
 **Community**
 
-[https://mbs.microsoft.com/customersource/communities/](https://mbs.microsoft.com/customersource/communities/)
+[https://community.dynamics.com/gp](https://community.dynamics.com/gp)
 
 Start a year-end discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to year-end questions.
 
@@ -70,107 +70,101 @@ We have specialized support teams focused on providing service and support to ou
 
 ## Chapter 1: Changes in the year-end update
 
-The U.S. 2018 Year-end Update contains software changes to allow you to comply with 2018 filing requirements as well as the most recent fixes for Microsoft Dynamics GP and other quality report fixes related to the payroll year-end.
+The U.S. 2019 Year-end Update contains software changes to allow you to comply with 2019 filing requirements as well as the most recent fixes for Microsoft Dynamics GP and other quality report fixes related to the payroll year-end.
 
-### Payroll and Payables form changes
+### Payroll form changes
+- W-4 for the 2020 year.
+Changes for Employee Self Service W-4 form and Cards | Payroll | Tax window
 
-Box 5 Section 199A dividends has been inserted in to a previously blank space on the Payables 1099-DIV form. Existing box numbers were renumbered from Box 5-14 to 6-15. Box 5 was previously Investment expenses.  Investment expenses is now Box 6 (all subsequent boxes have been incremented as well.)
-
-Payables 1096 has two new form option checkboxes.
-
-Payroll 1099-R (Pension) additional Distribution Codes C and M for Box 7 allowed to be entered on Edit 1099-R window.  These codes and amounts associated with them will then be printed on the Print 1099-R form.
+- New tax tables published based on 15-T
+  -Including New Head of Household Status, Standard and Multiple Jobs withholding tax tables
 
 ### Updates for ACA reporting, form 1094-C
 
-For the Affordable Care Act (ACA), checkboxes in box 22 Certifications of Eligibility have shifted on form 1094-C.  There were also a few format changes to the 1095-C.  If you plan to print the ACA forms in Microsoft Dynamics GP, the year end should be installed.
+There are no update changes for ACA.
 
-### Forms whose format is not changing for 2018
+### Forms whose format is not changing for 2019
 
-The formats of a number of forms are not changing for the 2018 tax year. The forms that are not changing include:
+The formats of a number of forms are not changing for the 2019 tax year. The forms that are not changing include:
 
 - W-3 statement
 
 - W-2 statement
 
-- W-4
-
-- 1099-INT
-
-- 1099-MISC
-
+- All Payables forms
 
 ### Year-end blog
 
 Microsoft Dynamics GP support engineers maintain a blog that contains posts related to year-end processing. Refer to the year-end blog at the following link for new or updated information related to year-end processes:
 
-<https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/10/15/microsoft-dynamics-gp-2018-year-end-blog-series-schedule>
+[https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule)
 
 ## Chapter 2: Payroll year-end checklists
 
 This chapter contains checklists that you can use for year-end. Use the checklist that most suits the way your company handles Payroll year-end activities. The following checklists are provided:
 
-- *Printing 2018 statements before processing 2019 pay runs*
+- *Printing 2019 statements before processing 2020 pay runs*
 
-- *Processing 2019 pay runs before printing 2018 statements*
+- *Processing 2020 pay runs before printing 2019 statements*
 
-### Printing 2018 statements before processing 2019 pay runs
+### Printing 2019 statements before processing 2020 pay runs
 
-Use this checklist to install the year-end maintenance and update, to close the 2018 payroll year, to update your Payroll system with the 2019 Payroll tax changes, and to print 2018 wage statements before performing 2019 pay runs.
+Use this checklist to install the year-end maintenance and update, to close the 2019 payroll year, to update your Payroll system with the 2020 Payroll tax changes, and to print 2019 wage statements before performing 2020 pay runs.
 
 Detailed instructions for completing each step are found in the chapters and sections indicated.
 
 | **Step** | **Description**|
 |----------|----------|
-| 1        | Verify that you have installed a 2018 Payroll tax update. The first tax update for the year was 12/22/2017 or a later date is fine.   |
-| 2        | Complete all 2018 pay runs.    |
+| 1        | Verify that you have installed a 2019 Payroll tax update. The first tax update for the year was 12/21/2018 or a later date is fine.   |
+| 2        | Complete all 2019 pay runs.    |
 | 3        | Complete all payroll month-end, period-end, or quarter-end procedures. Note: You can install the year-end update (step 5) before this step, as long as you create a backup before installing.  |
-| 4        | Make a backup of your 2018 company database(s). Label the backup “Pre Year-end Wage file”.  |
-| 5        | Install the U.S. 2018 Year-end Update. See *Installing the year-end update* on page 17. Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application. |
-| 6        | Create the Year-end Wage file. See *Creating the Year-end Wage file* on page 21. Note: 2019 Payroll tax updates can be installed any time after the Year-end Wage file has been created. |
-| 7        | Make a backup of your 2018 company database(s). Label the backup “Post Year-end Wage file”.  |
+| 4        | Make a backup of your 2019 company database(s). Label the backup “Pre Year-end Wage file”.  |
+| 5        | Install the U.S. 2019 Year-end Update. See *Installing the year-end update* on page 17. Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application. |
+| 6        | Create the Year-end Wage file. See *Creating the Year-end Wage file* on page 21. Note: 2020 Payroll tax updates can be installed any time after the Year-end Wage file has been created. |
+| 7        | Make a backup of your 2019 company database(s). Label the backup “Post Year-end Wage file”.  |
 | 8        | Verify W-2 and 1099-R statement information. Note: If you make changes to the statement information, we recommend that you make another backup.  |
 | 9        | Print the W-2 Validation Report, W-2 statements, and W-3 Transmittal form. See *Chapter 6, "Report procedures."* |
 | 10       | Print the 1099-R Validation Report, 1099-R forms, and 1096 Transmittal Form. See *Chapter 6, "Report procedures."*    |
 | 11       | Prepare and submit W-2 information in the federal EFW2 format, if required. See *Chapter 5, "Submitting W-2 reports* |
 | 12       | Archive Human Resources information for inactive employees (optional).   |
-| 13       | Set up fiscal periods for 2019.  |
+| 13       | Set up fiscal periods for 2020.  |
 | 14       | Delete Human Resources information for inactive employees (optional).   |
-| 15       | Close the fiscal periods for the Payroll series for the 2018 year (optional).  |
-| 16       | Install the 2019 Payroll tax update.  |
+| 15       | Close the fiscal periods for the Payroll series for the 2019 year (optional).  |
+| 16       | Install the 2020 Payroll tax update.  |
 
-### Processing 2019 pay runs before printing 2018 statements
+### Processing 2020 pay runs before printing 2019 statements
 
-Use this checklist if you need to process 2019 pay runs before printing 2018 wage statements.
+Use this checklist if you need to process 2020 pay runs before printing 2019 wage statements.
 
 Detailed instructions for completing each step are found in the chapters and sections indicated
 
 | **Step** | **Description**  |
 |----------|---------------------|
-| 1        | Verify that you have installed a 2018 Payroll tax update. The first tax update for the year was 12/22/2017 or a later date is fine.|
-| 2        | Complete all 2018 pay runs.   |
+| 1        | Verify that you have installed a 2019 Payroll tax update. The first tax update for the year was 12/21/2018 or a later date is fine.|
+| 2        | Complete all 2019 pay runs.   |
 | 3        | Complete all payroll month-end, period-end, or quarter-end procedures. Note: You can install the year-end update (step 5) before this step, as long as you create a backup before installing. |
-| 4        | Make a backup of your 2018 company database(s). Label the backup “Pre Year-end Wage file”.   |
-| 5        | Install the U.S. 2018 Year-end Update. See *Installing the year-end update* on page 17. Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run Microsoft Dynamics GP. |
-| 6        | Create the Year-end Wage file. See *Creating the Year-end Wage file* on page 21. Note: 2019 Payroll tax updates can be installed any time after the Year-end Wage file has been created. |
-| 7        | Make a backup of your 2018 company database(s). Label the backup “Post Year-end Wage file”. |
+| 4        | Make a backup of your 2019 company database(s). Label the backup “Pre Year-end Wage file”.   |
+| 5        | Install the U.S. 2019 Year-end Update. See *Installing the year-end update* on page 17. Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run Microsoft Dynamics GP. |
+| 6        | Create the Year-end Wage file. See *Creating the Year-end Wage file* on page 21. Note: 2020 Payroll tax updates can be installed any time after the Year-end Wage file has been created. |
+| 7        | Make a backup of your 2019 company database(s). Label the backup “Post Year-end Wage file”. |
 | 8        | Verify W-2 and 1099-R statement information. Note: If you make changes to the information, we recommend that you make another backup. |
 | 9        | Archive Human Resources information for inactive employees (optional). |
-| 10       | Set up fiscal periods for 2019.|
+| 10       | Set up fiscal periods for 2020.|
 | 11       | Clear Human Resources information for inactive employees (optional).  |
-| 12       | Close the fiscal periods for the Payroll series of the 2018 year (optional).   |
-| 13       | Install the 2019 Payroll tax update.|
-| 14       | Process 2019 pay runs.              |
+| 12       | Close the fiscal periods for the Payroll series of the 2019 year (optional).   |
+| 13       | Install the 2020 Payroll tax update.|
+| 14       | Process 2020 pay runs.              |
 | 15       | Print the W-2 Validation Report, W-2 statements, and W-3 Transmittal forms. See *Chapter 6, "Report procedures."* |
 | 16       | Print the 1099-R Validation Report, 1099-R forms, and 1096 Transmittal Form. See *Chapter 6, "Report procedures."*   |
 | 17       | Prepare and submit W-2 information in the federal EFW2 format, if required. See *Chapter 5, "Submitting W-2 reports*|
 
 ## Chapter 3: Preparation and FAQs
 
-Use the instructions in this chapter to prepare for the U.S. 2018 Year-end Update.
+Use the instructions in this chapter to prepare for the U.S. 2019 Year-end Update.
 
 ### Supported releases
 
-The U.S. 2018 Year-end Update supports Microsoft Dynamics GP 2018, Microsoft Dynamics GP 2016 and Microsoft Dynamics GP 2015.
+The U.S. 2019 Year-end Update supports Microsoft Dynamics GP, Microsoft Dynamics GP 2018, Microsoft Dynamics GP 2016 and Microsoft Dynamics GP 2015.
 
 To identify the release that you’re using, start Microsoft Dynamics GP. Choose Help \>\> About Microsoft Dynamics GP.
 
@@ -220,14 +214,14 @@ Web site: [www.mastertax.net](http://www.mastertax.net/)
 
 As you complete year-end tasks, refer to the answers in this section.
 
-**Q: What will happen if I’ve already closed the 2018 Payroll tax year and don’t install the 2019 tax update right away?**  
-**A:** Until you install the 2019 tax update containing FICA, federal, and state tax changes, the tax calculations for your 2019 pay runs may be incorrect.
+**Q: What will happen if I’ve already closed the 2019 Payroll tax year and don’t install the 2020 tax update right away?**  
+**A:** Until you install the 2020 tax update containing FICA, federal, and state tax changes, the tax calculations for your 2020 pay runs may be incorrect.
 
 **Q: If I use multiple companies with my accounting system, do I have to install the year-end tax update for each company?**  
 **A:** No. The update will be reflected in all companies. However, you do need to install the update on each workstation using Microsoft Dynamics GP.
 
-**Q: I need to print my 2019 checks before I can print W-2s. What should I do?**  
-**A:** After you create the Year-end Wage file, close the year. Install the 2019 tax update, and you can print checks. Follow the checklist for *Processing 2019 pay runs before printing 2018 statements*.
+**Q: I need to print my 2020 checks before I can print W-2s. What should I do?**  
+**A:** After you create the Year-end Wage file, close the year. Install the 2020 tax update, and you can print checks. Follow the checklist for *Processing 2020 pay runs before printing 2019 statements*.
 
 **Q: How do I print multiple W-2 statements for each employee?**  
 **A:** There are two ways:
@@ -282,8 +276,8 @@ Verify your employee’s records in the Payroll Employee Tax Maintenance window 
 **Q: If I add information in the Edit W-2 Special Information window (Special button in the Edit W-2 Information window) without entering information in the Edit W-2 Information window, where will that information appear?**  
 **A:** It will print this information on the additional W-2.
 
-**Q: The correct Last Year-end Update date doesn’t appear in the Payroll Setup window, even though I installed the 2018 year-end update and see the changes included in the update. Is there something I need to do?**  
-**A:** The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Microsoft Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn’t update each user’s Dex.ini file. In these situations, you should manually update each user’s Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/16/2018.
+**Q: The correct Last Year-end Update date doesn’t appear in the Payroll Setup window, even though I installed the 2019 year-end update and see the changes included in the update. Is there something I need to do?**  
+**A:** The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Microsoft Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn’t update each user’s Dex.ini file. In these situations, you should manually update each user’s Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/18/2019.
 
 For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/en-us/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
 
@@ -293,31 +287,31 @@ Use the instructions in this chapter to start your Payroll year-end closing task
 
 ### Payroll year-end closing
 
-Use this procedure to close the 2018 Payroll year. After closing the year, you need to install the 2019 Payroll tax update before processing 2019 pay runs. There are two year-end checklists you can use to close the year for payroll. The steps in this section correspond most closely to [Printing 2018 statements before processing 2019 pay runs](#printing-2018-statements-before-processing-2019-pay-runs) section. For more information, see the checklists in [Chapter 2, "Payroll year-end checklists](#chapter-2-payroll-year-end-checklists).
+Use this procedure to close the 2019 Payroll year. After closing the year, you need to install the 2020 Payroll tax update before processing 2020 pay runs. There are two year-end checklists you can use to close the year for payroll. The steps in this section correspond most closely to [Printing 2019 statements before processing 2020 pay runs](#printing-2019-statements-before-processing-2020-pay-runs) section. For more information, see the checklists in [Chapter 2, "Payroll year-end checklists](#chapter-2-payroll-year-end-checklists).
 
 **To complete payroll year-end closing:**
 
 1. You already should have completed the tasks in [Chapter 3, "Preparation and FAQs](#chapter-3-preparation-and-faqs).
-2. Complete all 2018 pay runs. The information created during the pay runs is used for month-end or period-end, quarter-end, and any additional year-end reports that you print. You can reprint period-end, quarter-end, or additional reports and re-create the Year-end Wage file at any time.
+2. Complete all 2019 pay runs. The information created during the pay runs is used for month-end or period-end, quarter-end, and any additional year-end reports that you print. You can reprint period-end, quarter-end, or additional reports and re-create the Year-end Wage file at any time.
 
     > [!IMPORTANT]
-    > It’s important that you complete all pay runs for 2017 before you install a 2018 Payroll tax update. If you install a 2018 Payroll tax update before completing your pay runs, taxes will be calculated at 2018 rates for the remainder of the 2017 pay runs.
+    > It’s important that you complete all pay runs for 2019 before you install a 2020 Payroll tax update. If you install a 2020 Payroll tax update before completing your pay runs, taxes will be calculated at 2020 rates for the remainder of the 2019 pay runs.
 
 3. Complete your company’s standard payroll month-end or period-end, and quarter-end procedures (optional). These procedures might include printing several month-end or period-end and quarter-end reports. You can reprint these reports at any time.
-4. Back up your 2018 Microsoft Dynamics GP data. Label the backup “2018 Pre Year-end Wage file.” If you encounter a problem while creating the Year-end Wage file, you can restore information from this backup. The Internal Revenue Service requires you to keep these records for at least four years.
-5. Install the U.S. 2018 Year-end Update on each client workstation that will use Microsoft Dynamics GP. Before installing the update, ask all Microsoft Dynamics GP users to exit the application until the update is complete on every workstation. For more information, see [Installing the year-end update](#installing-the-year-end-update).
+4. Back up your 2019 Microsoft Dynamics GP data. Label the backup “2019 Pre Year-end Wage file.” If you encounter a problem while creating the Year-end Wage file, you can restore information from this backup. The Internal Revenue Service requires you to keep these records for at least four years.
+5. Install the U.S. 2019 Year-end Update on each client workstation that will use Microsoft Dynamics GP. Before installing the update, ask all Microsoft Dynamics GP users to exit the application until the update is complete on every workstation. For more information, see [Installing the year-end update](#installing-the-year-end-update).
 
     > [!NOTE]
-    > This step can be done any time, even if you haven’t completed all your 2018 pay runs. This step must be done before you create the Year-end wage file.
+    > This step can be done any time, even if you haven’t completed all your 2019 pay runs. This step must be done before you create the Year-end wage file.
 
 6. Create the Year-end Wage file. For information, see [Creating the Year-end Wage file](#creating-the-year-end-wage-file).
 
     > [!NOTE]
-    > 2019 Payroll tax updates can be installed any time after the Year-end Wage file has been created. However, if you create the Year-end Wage file, then install 2019 updates and re-create the 2018 year-end file, your FICA limits may be incorrect.
+    > 2020 Payroll tax updates can be installed any time after the Year-end Wage file has been created. However, if you create the Year-end Wage file, then install 2020 updates and re-create the 2019 year-end file, your FICA limits may be incorrect.
 
-7. Back up your 2018 Microsoft Dynamics GP. This backup must be separate from the “2018 Pre Year-end Wage file” backup. Label the backup “2018 Post Year-end Wage file.” You can use this backup if you encounter problems while printing W-2 statements. The Internal Revenue Service requires you to keep these records for at least four years.
+7. Back up your 2019 Microsoft Dynamics GP. This backup must be separate from the “2019 Pre Year-end Wage file” backup. Label the backup “2019 Post Year-end Wage file.” You can use this backup if you encounter problems while printing W-2 statements. The Internal Revenue Service requires you to keep these records for at least four years.
 
-8. Verify W-2 and 1099-R statement information. If you’re printing W-2 statements before closing the year 2018 or after processing a 2019 pay run, we suggest that you verify that the W-2 and 1099-R statement information is correct before you close the payroll year. For information, see *[Printing the Year-end Wage Report](#printing-the-year-end-wage-report). You also might want to make changes to Your W-2 records. For information, see [Editing W-2 records](#editing-w-2-records).
+8. Verify W-2 and 1099-R statement information. If you’re printing W-2 statements before closing the year 2019 or after processing a 2020 pay run, we suggest that you verify that the W-2 and 1099-R statement information is correct before you close the payroll year. For information, see [Printing the Year-end Wage Report](#printing-the-year-end-wage-report). You also might want to make changes to Your W-2 records. For information, see [Editing W-2 records](#editing-w-2-records).
 
 9. To verify 1099-R statement information, you can print 1099-R statements using the Print 1099-R Forms window. If you make changes to your 1099-R records, we recommend that you make another backup. For information, see [Editing 1099-R statement information](#editing-1099-r-statement-information).
 
@@ -333,27 +327,27 @@ Next, print the W-2 statements and W-3 Transmittal form. You should print a W-2 
 3. Archive inactive employee Human Resources information (optional). If you’re using Human Resources with Payroll and you want to save inactive employee information while removing Payroll history records, you can archive the information. Archiving information is beneficial if you need to provide information for references, re-hiring, or other reporting purposes. For more information, see [Archiving Human Resources information for inactive employees](#archiving-human-resources-information-for-inactive-employees
 ).
 
-4. Set up fiscal periods for 2019. Enter the number and length of each company’s open fiscal periods for 2019 in the Fiscal Periods Setup window. For more information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
+4. Set up fiscal periods for 2020. Enter the number and length of each company’s open fiscal periods for 2020 in the Fiscal Periods Setup window. For more information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
 
 5. Delete inactive employee Human Resources information (optional).
     Deleting Human Resources information saves hard disk space and ensures that unused data is not available in lookup lists. For information, see [Deleting information for inactive employees](#deleting-information-for-inactive-employees).
 
     To accrue time using the Human Resources attendance system, see [Setting up attendance](#setting-up-attendance).
 
-6. Close the fiscal periods for the year 2018 (optional).
-    Closing any Payroll periods that are still open for the year 2018 keeps transactions from being accidentally posted to the wrong period. For information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
+6. Close the fiscal periods for the year 2019 (optional).
+    Closing any Payroll periods that are still open for the year 2019 keeps transactions from being accidentally posted to the wrong period. For information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
 
     If you need to post Payroll transactions to a fiscal period you’ve already closed, use the Fiscal Periods Setup window to reopen the period before posting the transaction.
 
-7. Install the 2019 Payroll tax update. For additional information and step-by-step instructions to follow, download the latest 2019 U.S. Payroll Tax Update documentation from CustomerSource at [(https://mbs.microsoft.com/customersource/northamerica/GP/downloads)](https://mbs.microsoft.com/customersource/northamerica/GP/downloads). Choose the link for the Microsoft Dynamics GP version you are using.
+7. Install the 2020 Payroll tax update. For additional information and step-by-step instructions to follow, download the latest 2020 U.S. Payroll Tax Update documentation from CustomerSource at [(https://mbs.microsoft.com/customersource/northamerica/GP/downloads)](https://mbs.microsoft.com/customersource/northamerica/GP/downloads). Choose the link for the Microsoft Dynamics GP version you are using.
 
-You also can print W-2 statements and 1099-R forms and create an EFW2 transmission file after you’ve installed the 2019 Tax Update and performed pay runs for the year 2019. To view the checklist, see Processing 2019 pay runs before printing 2018 statements on page 8.
+You also can print W-2 statements and 1099-R forms and create an EFW2 transmission file after you’ve installed the 2020 Tax Update and performed pay runs for the year 2020. To view the checklist, see Processing 2020 pay runs before printing 2019 statements on page 8.
 
 ### Installing the year-end update
 
-Use these instructions to install the U.S. 2018 Year-end Update.
+Use these instructions to install the U.S. 2019 Year-end Update.
 
-If the files Reports.dic, Forms.dic, and Dynamics.vba are present in your application, make backup copies before installing the U.S. 2018 Year-end Update.
+If the files Reports.dic, Forms.dic, and Dynamics.vba are present in your application, make backup copies before installing the U.S. 2019 Year-end Update.
 
 You will need to install the year-end update on every workstation that runs Microsoft Dynamics GP. Before you begin, ask all Microsoft Dynamics GP users to exit the application until the update is complete.
 
@@ -362,16 +356,15 @@ You will need to install the year-end update on every workstation that runs Micr
 1. Download the update from CustomerSource at [https://mbs.microsoft.com/customersource/northamerica/GP/downloads](https://mbs.microsoft.com/customersource/northamerica/GP/downloads).
     The filenames for the supported versions are as follows:
 
-    | **Language**    | **Microsoft Dynamics GP 2018**   | **Microsoft Dynamics GP 2016** | **Microsoft Dynamics GP 2015**  |
+    | **Language**    | **Microsoft Dynamics GP**   | **Microsoft Dynamics GP 2016** | **Microsoft Dynamics GP 2015**  |
     |-----------------|----------------------------------|--------------------------------|----------------------------------|
-    | English (U.S)   | MicrosoftDynamicsGP18-KB4468818-ENU.msp | MicrosoftDynamicsGP16-KB4468815-ENU.msp | MicrosoftDynamicsGP14-KB4468812-ENU.msp|
-    | Spanish         | MicrosoftDynamicsGP18-KB4468820-ESLA.msp | MicrosoftDynamicsGP16-KB4468817-ESLA.msp| MicrosoftDynamicsGP14-KB4468814-ESLA.msp|
-    | French (Canada) | MicrosoftDynamicsGP18-KB4468819-FRCA.msp| MicrosoftDynamicsGP16-KB4468816-FRCA.msp| MicrosoftDynamicsGP14-KB4468813-FRCA.msp|
+    | English (U.S)   | MicrosoftDynamicsGP18-KB4528419-ENU.msp | MicrosoftDynamicsGP16-KB4528417-ENU.msp | MicrosoftDynamicsGP14-KB4528415-ENU.msp|
+   
 
     Save the relevant file to a folder on the local disk drive of the server workstation that runs Microsoft Dynamics GP.
 
     > [!NOTE]
-    > The year-end update file also includes all prior Microsoft Dynamics updates, such as Microsoft Dynamics GP 2016 R2, Microsoft Dynamics GP 2015 R2 or Microsoft Dynamics GP 2018 R2. Documents describing the service packs are available from CustomerSource.
+    > The year-end update file also includes all prior Microsoft Dynamics updates, such as Microsoft Dynamics GP 2016 R2, Microsoft Dynamics GP 2015 R2, Microsoft Dynamics GP 2018 R2, or Microsoft Dynamics GP October release 18.2.1013. Documents describing the service packs are available from CustomerSource.
 
 2. Double-click the file that you just downloaded. Progress windows appear as space requirements are verified and files are installed.
 
@@ -415,16 +408,16 @@ You will need to install the year-end update on every workstation that runs Micr
 
 16. We recommend that you start Microsoft Dynamics GP and print all of your modified reports, and access all your modified forms to verify whether the reports and forms were updated correctly.
 
-17. After installing the U.S. 2017 Year-end Update on a server for Microsoft Dynamics GP, install the U.S. 2017 Year-end Update on all remaining client computers or Terminal Services.
+17. After installing the U.S. 2019 Year-end Update on a server for Microsoft Dynamics GP, install the U.S. 2019 Year-end Update on all remaining client computers or Terminal Services.
 
     You can set up Automated Client Update to update all client workstations. For information about setting up the automatic updates,  refer to your System Administrator manual.
 
     > [!NOTE]
     > To install the update on an operating system with User Account Control (UAC) activated, a user must be running Microsoft Dynamics GP with administrative privileges. (From the Start menu, select and right-click the Microsoft Dynamics GP shortcut, and then select Run as Administrator.) For other ways to install the update on Windows clients with UAC activated, see Installing with UAC activated.
 
-18. To confirm that the update is installed, open the Payroll Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll \>\> Payroll). Check the Last Year-end Update date. It should be 11/16/2018.
+18. To confirm that the update is installed, open the Payroll Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll \>\> Payroll). Check the Last Year-end Update date. It should be 11/18/2019.
 
-If the date does not appear changed to 11/16/2018, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx) and view article number 981312.
+If the date does not appear changed to 11/18/2019, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx) and view article number 981312.
 
 #### Installing with UAC activated
 
@@ -436,7 +429,7 @@ User Account Control (UAC) is an enhanced security feature in Windows 7 and late
 
     For Microsoft Dynamics GP 2018, as an example, enter the following command for U.S. English installs:
 
-    ```Msiexec /p MicrosoftDynamicsGP18-KB4468818-ENU.msp /1\*v C:\\MSPErrorlog.txt```
+    ```Msiexec /p MicrosoftDynamicsGP18-KB4528419-ENU.msp /1\*v C:\\MSPErrorlog.txt```
 
 - If you want the user to install updates and service packs without having administrative privileges on the local computer, you can change permissions for the folder where Microsoft Dynamics GP is installed. Be aware that doing this makes your computer less secure.
 
@@ -454,7 +447,7 @@ Verify your Employer State ID number in the Payroll Tax Identification Setup win
 
 This is the number that will be printed on the W-2 statements. You can maintain an Unemployment ID number and State Tax ID number in Microsoft Dynamics GP.
 
-Be sure that you’ve installed the U.S. 2018 Year-end Update and updated your Payroll information before creating the Year-end Wage file. Also, be sure that you’ve made a full backup of all your company data and stored it in a safe place.
+Be sure that you’ve installed the U.S. 2019 Year-end Update and updated your Payroll information before creating the Year-end Wage file. Also, be sure that you’ve made a full backup of all your company data and stored it in a safe place.
 
 Use the Payroll Year-end Closing window to create a table of annual wage information. The data from this table will be used to create W-2 statements and 1099-R statements.
 
@@ -464,13 +457,13 @@ Use the Payroll Year-end Closing window to create a table of annual wage informa
 
     ![Payroll year-End Closing window](media/e90a4bb19ddde66e966913bc656d2781.png)
 
-2. Enter 2018 for the reporting year.
+2. Enter 2019 for the reporting year.
 
 3. Choose Process to create the Year-end Wage file that will be used for printing W-2 statements and 1099-R forms. You can store multiple years of year-end wage information in Microsoft Dynamics GP. To clear previous year-end wage information, use the Remove Payroll Year-end Information window (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Payroll\>\> Remove Year-end Information).
 
     ![Remove Inactive Records window](media/a4d9e20a94bd7bdf275d5a701f20fbdb.jpg)
 
-You can install 2019 tax tables any time after you’ve created the Year-end Wage file. You also may need to process 2019 pay runs before printing 2018 wage statements. For more information, see the checklist [Processing 2019 pay runs before printing 2018 statements](#printing-2018-statements-before-processing-2019-pay-runs).
+You can install 2020 tax tables any time after you’ve created the Year-end Wage file. You also may need to process 2020 pay runs before printing 2019 wage statements. For more information, see the checklist [Processing 2020 pay runs before printing 2019 statements](#printing-2019-statements-before-processing-2020-pay-runs).
 
 ### Editing W-2 records
 
@@ -484,7 +477,7 @@ However, when you make changes in this window, only the information in the Year-
 
     ![Edit W-2 information window](media/d82a0116f4c6685328ad23e68fa36619.jpg)
 
-2. Select 2018 and select an employee. The employee’s Social Security number and address are displayed in editable fields.
+2. Select 2019 and select an employee. The employee’s Social Security number and address are displayed in editable fields.
 
     > [!NOTE]
     > Social Security numbers that aren’t valid are listed in the W-2 Validation Report. For more information, see Printing W-2 forms and reports on page 35.
@@ -553,7 +546,7 @@ It’s important to archive inactive employee Human Resources information before
 
 ### Setting up fiscal periods
 
-Setting up periods for the future fiscal year allows you to enter transactions into the 2019 fiscal year before closing the 2018 fiscal year. Enter the number and length of each company’s open fiscal periods for 2019 in the Fiscal Periods Setup window.
+Setting up periods for the future fiscal year allows you to enter transactions into the 2020 fiscal year before closing the 2019 fiscal year. Enter the number and length of each company’s open fiscal periods for 2020 in the Fiscal Periods Setup window.
 
 After clearing financial information, you also can use the Fiscal Periods Setup window to:
 
@@ -751,7 +744,7 @@ Print the Year-end Wage Report from the Year-end Wage Report window to verify W-
 
     ![Print form](media/2c2296ebb02f986dbb208027f0a103de.jpg)
 
-2. Enter 2018 as the year.
+2. Enter 2019 as the year.
 
 3. Select a sorting option for displaying information: Employee ID, Employee Name, Department/Employee, or Social Security Number.
 
