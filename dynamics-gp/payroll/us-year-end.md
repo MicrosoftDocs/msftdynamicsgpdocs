@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/06/2019
+ms.date: 11/11/2019
 ---
 
 # U.S. 2019 Year-end Update in Dynamics GP
@@ -54,7 +54,7 @@ Provides you with instant access to the same database our support engineers use.
 
 **eSupport**
 
-[http://support.microsoft.com/supportforbusiness.](http://support.microsoft.com/supportforbusiness.)
+[https://support.microsoft.com/supportforbusiness.](https://support.microsoft.com/supportforbusiness.)
 
 For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.
 
@@ -97,7 +97,7 @@ The formats of a number of forms are not changing for the 2019 tax year. The for
 
 Microsoft Dynamics GP support engineers maintain a blog that contains posts related to year-end processing. Refer to the year-end blog at the following link for new or updated information related to year-end processes:
 
-<https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule>
+[https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule)
 
 ## Chapter 2: Payroll year-end checklists
 
@@ -311,7 +311,7 @@ Use this procedure to close the 2019 Payroll year. After closing the year, you n
 
 7. Back up your 2019 Microsoft Dynamics GP. This backup must be separate from the “2019 Pre Year-end Wage file” backup. Label the backup “2019 Post Year-end Wage file.” You can use this backup if you encounter problems while printing W-2 statements. The Internal Revenue Service requires you to keep these records for at least four years.
 
-8. Verify W-2 and 1099-R statement information. If you’re printing W-2 statements before closing the year 2019 or after processing a 2020 pay run, we suggest that you verify that the W-2 and 1099-R statement information is correct before you close the payroll year. For information, see *[Printing the Year-end Wage Report](#printing-the-year-end-wage-report). You also might want to make changes to Your W-2 records. For information, see [Editing W-2 records](#editing-w-2-records).
+8. Verify W-2 and 1099-R statement information. If you’re printing W-2 statements before closing the year 2019 or after processing a 2020 pay run, we suggest that you verify that the W-2 and 1099-R statement information is correct before you close the payroll year. For information, see [Printing the Year-end Wage Report](#printing-the-year-end-wage-report). You also might want to make changes to Your W-2 records. For information, see [Editing W-2 records](#editing-w-2-records).
 
 9. To verify 1099-R statement information, you can print 1099-R statements using the Print 1099-R Forms window. If you make changes to your 1099-R records, we recommend that you make another backup. For information, see [Editing 1099-R statement information](#editing-1099-r-statement-information).
 
