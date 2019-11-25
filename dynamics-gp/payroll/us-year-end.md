@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/11/2019
+ms.date: 11/25/2019
 ---
 
 # U.S. 2019 Year-end Update in Dynamics GP
@@ -21,7 +21,7 @@ This document contains instructions for updating the U.S. Payroll module for Mic
 
 Also included in this document are instructions for completing payroll year-end procedures. These instructions assume that you are already familiar with U.S. Payroll for Microsoft Dynamics GP.
 
-You can find information about year-end payroll procedures in the “Payroll Company Routines” and “Government Form and Report Routines” chapters in the U.S. Payroll documentation, or the sections of Help with the same names.
+You can find information about year-end payroll procedures in the [Payroll Company Routines]([U.S. 2019 Year-end Update in Dynamics GP](PayrollUS.md#payrollcompanyroutine) and [Government Form and Report Routines](PayrollUS.md#govformreportroutines) chapters in the [U.S. Payroll documentation](PayrollUS.md), or the sections of Help with the same names.
 
 Note, however, that the instructions in this document expand on the instructions in your Payroll documentation, and in some cases, supersede them.
 
@@ -50,11 +50,11 @@ Look here to find year-end updates, instructions, and tax updates. Instructions 
 
 [https://mbs.microsoft.com/knowledgebase/search.aspx](https://mbs.microsoft.com/knowledgebase/search.aspx)
 
-Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations. 
+Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
 
 **eSupport**
 
-[https://support.microsoft.com/supportforbusiness.](https://support.microsoft.com/supportforbusiness.)
+[https://support.microsoft.com/supportforbusiness](https://support.microsoft.com/supportforbusiness)
 
 For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.
 
@@ -73,11 +73,15 @@ We have specialized support teams focused on providing service and support to ou
 The U.S. 2019 Year-end Update contains software changes to allow you to comply with 2019 filing requirements as well as the most recent fixes for Microsoft Dynamics GP and other quality report fixes related to the payroll year-end.
 
 ### Payroll form changes
+
 - W-4 for the 2020 year.
 Changes for Employee Self Service W-4 form and Cards | Payroll | Tax window
 
 - New tax tables published based on 15-T
   -Including New Head of Household Status, Standard and Multiple Jobs withholding tax tables
+
+Blogpost with details of year-end and W-4 instructions:
+[Microsoft Dynamics GP-2019 Year-End Blog Series Schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule)
 
 ### Updates for ACA reporting, form 1094-C
 
@@ -97,7 +101,7 @@ The formats of a number of forms are not changing for the 2019 tax year. The for
 
 Microsoft Dynamics GP support engineers maintain a blog that contains posts related to year-end processing. Refer to the year-end blog at the following link for new or updated information related to year-end processes:
 
-[https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule)
+[Microsoft Dynamics GP-2019 Year-End Blog Series Schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule)
 
 ## Chapter 2: Payroll year-end checklists
 
@@ -277,7 +281,7 @@ Verify your employee’s records in the Payroll Employee Tax Maintenance window 
 **A:** It will print this information on the additional W-2.
 
 **Q: The correct Last Year-end Update date doesn’t appear in the Payroll Setup window, even though I installed the 2019 year-end update and see the changes included in the update. Is there something I need to do?**  
-**A:** The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Microsoft Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn’t update each user’s Dex.ini file. In these situations, you should manually update each user’s Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/15/2019.
+**A:** The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Microsoft Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn’t update each user’s Dex.ini file. In these situations, you should manually update each user’s Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/18/2019.
 
 For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/en-us/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
 
@@ -415,7 +419,7 @@ You will need to install the year-end update on every workstation that runs Micr
     > [!NOTE]
     > To install the update on an operating system with User Account Control (UAC) activated, a user must be running Microsoft Dynamics GP with administrative privileges. (From the Start menu, select and right-click the Microsoft Dynamics GP shortcut, and then select Run as Administrator.) For other ways to install the update on Windows clients with UAC activated, see Installing with UAC activated.
 
-18. To confirm that the update is installed, open the Payroll Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll \>\> Payroll). Check the Last Year-end Update date. It should be 11/15/2019.
+18. To confirm that the update is installed, open the Payroll Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll \>\> Payroll). Check the Last Year-end Update date. It should be 11/18/2019.
 
 If the date does not appear changed to 11/15/2019, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx) and view article number 981312.
 
