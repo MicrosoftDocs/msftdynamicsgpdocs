@@ -8,45 +8,30 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/01/2019
+ms.date: 11/25/2019
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
 
-You can use U.S. Payroll to set up, enter, and maintain employee payroll records
-and transactions. Employee cards are the foundation of your U.S. Payroll system
-and they are used to keep your U.S. Payroll information up to date. You can view
-current and historical payroll information and pay activity for one employee or
-a group of employees.
+You can use U.S. Payroll to set up, enter, and maintain employee payroll records and transactions. Employee cards are the foundation of your U.S. Payroll system and they are used to keep your U.S. Payroll information up to date. You can view current and historical payroll information and pay activity for one employee or a group of employees.
 
 You also can use U.S. Payroll to complete the following tasks:
 
-- Set up employee classes to create default entries that can make data entry
-    quicker for new employee records because the payroll information is grouped
-    according to common factors, such as pay codes and positions
+- Set up employee classes to create default entries that can make data entry quicker for new employee records because the payroll information is grouped according to common factors, such as pay codes and positions
 
-- Create batches that you use just one time, or create recurring batches for
-    transactions that you enter on a regular basis, such as weekly payroll
+- Create batches that you use just one time, or create recurring batches for transactions that you enter on a regular basis, such as weekly payroll
 
-- Use the reconciling process to check for discrepancies in employee financial
-    information and for differences between detail records and summary records
+- Use the reconciling process to check for discrepancies in employee financial information and for differences between detail records and summary records
 
-- Prepare U.S. Payroll reports to analyze payroll activity and identify errors
-    in transaction entry
+- Prepare U.S. Payroll reports to analyze payroll activity and identify errors in transaction entry
 
-- Use routines to create customized checklists for processing month-end,
-    quarter-end, or year-end tasks, such as preparing government-required W-2
-    and 1099-R statements
+- Use routines to create customized checklists for processing month-end, quarter-end, or year-end tasks, such as preparing government-required W-2 and 1099-R statements
 
-If you are using Human Resources, you can enter and maintain your employee
-information in Human Resources and those transactions will automatically update
-your Payroll records.
+If you are using Human Resources, you can enter and maintain your employee information in Human Resources and those transactions will automatically update your Payroll records.
 
-If you are using Direct Deposit, you can transfer funds directly to employee
-bank accounts when processing payroll transactions.
+If you are using Direct Deposit, you can transfer funds directly to employee bank accounts when processing payroll transactions.
 
-If you are using Bank Reconciliation, your checkbook is automatically updated
-when you post Payroll transactions.
+If you are using Bank Reconciliation, your checkbook is automatically updated when you post Payroll transactions.
 
 **What’s in this manual**
 
@@ -7164,7 +7149,7 @@ quarter, fiscal year, or calendar year.
 3. Choose Revert to cancel changes and return to the window in its original
     state.
 
-### Chapter 21: Payroll company routines
+### <a name=payrollcompanyroutine></a> Chapter 21: Payroll company routines
 
 There are specific tasks you must complete at the end of a specified period,
 quarter or year. They include printing period-end reports and closing the
@@ -7302,7 +7287,7 @@ tips and receipts to the federal government. You can modify or print Form
 8027 or its associated preparation report for a specific year as long as the
 year-end wage file exists for that year.
 
-### Chapter 22: Government form and report routines
+### <a name=govformreportroutines></a>Chapter 22: Government form and report routines
 
 There are specific tasks that relate to government regulations and required
 forms, such as the W-2 and 1099-R statements.
@@ -7325,10 +7310,7 @@ This information is contained in the following sections:
 
 #### Editing W-2 information
 
-You can use the Edit W-2 Information window to verify and make changes to an
-employee’s W-2 information. For example, an employee’s address might have
-changed. You must close the year in the Payroll Year-End Closing window
-before you can edit or print W-2 statements for a specific year.
+You can use the Edit W-2 Information window to verify and make changes to an employee’s W-2 information. For example, an employee’s address might have changed. You must close the year in the Payroll Year-End Closing window before you can edit or print W-2 statements for a specific year.
 
 **To edit W-2 information:**
 
@@ -7337,40 +7319,25 @@ before you can edit or print W-2 statements for a specific year.
 
     ![A screenshot](media/9e6332cdad1fdc154295311ab32577f1.jpg)
 
-1. Select a sorting option at the bottom of the window. This determines how the
-    employee IDs will be sorted in the lookup window and also the order the
-    records will appear when using the browse buttons.
+2. Select a sorting option at the bottom of the window. This determines how the employee IDs will be sorted in the lookup window and also the order the records will appear when using the browse buttons.
 
-2. Select the calendar year.
+3. Select the calendar year.
 
-3. Select an employee ID. The employee’s Social Security number and address
-    will be displayed. You can edit this information. Changing this information
-    here will not change the information in the Employee Maintenance window.
+4. Select an employee ID. The employee’s Social Security number and address will be displayed. You can edit this information. Changing this information here will not change the information in the Employee Maintenance window.
 
-If the employee has a foreign address, mark the Foreign Address option.
-Fields specific to a foreign address will be displayed.
+    If the employee has a foreign address, mark the Foreign Address option. Fields specific to a foreign address will be displayed.
 
-1. Edit the wage and withholding information for the employee, if necessary.
+5. Edit the wage and withholding information for the employee, if necessary.
 
-2. Mark the boxes that apply to the employee whose W-2 information you’re
-    editing. Your entries in the Employee Tax Maintenance window will appear as
-    default entries and will appear on the W-2 statement. For more information
-    about each option, refer to *Chapter 7, “Tax cards.”*
+6. Mark the boxes that apply to the employee whose W-2 information you’re editing. Your entries in the Employee Tax Maintenance window will appear as default entries and will appear on the W-2 statement. For more information about each option, see [Chapter 7: Tax cards](#chapter-7-tax-cards).
 
-3. Choose Special to open the Edit W-2 Special Information window, or choose
-    Other to open the Edit W-2 Other Information window. Use these windows to
-    view and enter the labels and the amounts that will be printed in the
-    appropriate boxes on the W-2 statement, if required.
+7. Choose Special to open the Edit W-2 Special Information window, or choose Other to open the Edit W-2 Other Information window. Use these windows to view and enter the labels and the amounts that will be printed in the appropriate boxes on the W-2 statement, if required.
 
-4. Choose State or Local to open the Edit W-2 State Tax Information window or
-    the Edit W-2 Local Tax Information window. Use these windows to view and
-    change state and local tax information that will be printed on the W-2
-    statement.
+8. Choose State or Local to open the Edit W-2 State Tax Information window or the Edit W-2 Local Tax Information window. Use these windows to view and change state and local tax information that will be printed on the W-2 statement.
 
-5. Choose OK to close the window. The Edit W-2 Information window will be
-    redisplayed, and you can continue editing W-2 information.
+9. Choose OK to close the window. The Edit W-2 Information window will be redisplayed, and you can continue editing W-2 information.
 
-6. Choose Save. For more information, refer to *Printing W-2 statements .*
+10. Choose Save. For more information, see [Printing W-2 statements](#printing-w-2-statements).
 
 #### Verifying W-2s for tipped employees
 
@@ -7394,52 +7361,39 @@ printed on W-2 statements and then print the statements.
 
 **To print W-2 statements:**
 
-1. Open the Print W-2 Forms window. (HR & Payroll \>\> Routines \>\> Payroll
-    \>\> Print W-2s)
+1. Open the Print W-2 Forms window. (HR & Payroll \>\> Routines \>\> Payroll\>\> Print W-2s)
 
     ![screenshot](media/365516adb0b6ca00c79fdf8767c69aab.jpg)
 
-1. Select a year to print W-2 statements for.
+2. Select a year to print W-2 statements for.
 
-2. Select a printing option. To print W-2 statements for employees at the end
-    of the year, mark Normal Year-End. To print W-2 statements for inactive
-    employees before the end of the year, mark Pre-Year-End Inactive Employees.
+3. Select a printing option. To print W-2 statements for employees at the end of the year, mark Normal Year-End. To print W-2 statements for inactive employees before the end of the year, mark Pre-Year-End Inactive Employees.
 
-3. Select an employee type. Select Regular for employees who are required to
-    pay both FICA Social Security and FICA Medicare taxes. Select Medicare
-    Qualified Government Employee for employees who are exempt from FICA Social
-    Security tax but subject to FICA Medicare tax.
+4. Select an employee type. Select Regular for employees who are required to pay both FICA Social Security and FICA Medicare taxes. Select Medicare Qualified Government Employee for employees who are exempt from FICA Social Security tax but subject to FICA Medicare tax.
 
     Medicare Qualified Government Employee must also be selected in the Employee Tax Maintenance window for each employee whose W-2 statement you’re printing.
 
-1. Enter a range of employee IDs or mark All to print W-2 statements for all
-    employees.
+5. Enter a range of employee IDs or mark All to print W-2 statements for allemployees.
 
-2. Enter a starting control number. This is the number you can assign to help
-    you track the W-2 statements you print.
+6. Enter a starting control number. This is the number you can assign to help you track the W-2 statements you print.
 
-3. Select a sorting order for the W-2 statements.
+7. Select a sorting order for the W-2 statements.
 
-4. Enter your company name, address, and employer identification number.
+8. Enter your company name, address, and employer identification number.
 
-5. Select a form to print.
+9. Select a form to print.
 
-    - Mark Validation Report to print a report to verify information, such as
-        Company EINs.
+    - Mark Validation Report to print a report to verify information, such as Company EINs.
 
-    - Mark W-2 Forms Alignment to print a test form to ensure the forms are
-        aligned. For information about adjusting the alignment of forms, refer
-        to your Report Writer documentation.
+    - Mark W-2 Forms Alignment to print a test form to ensure the forms are aligned. For information about adjusting the alignment of forms, refer to your Report Writer documentation.
 
     - Mark W-2 Forms to print the W-2 statements.
 
     - Mark W-3 Transmittal Form to print a summary of the W-2 statements.
 
-6. Print a Validation Report and verify the information before printing W-2 and
-    W-3 statements.
+10. Print a Validation Report and verify the information before printing W-2 and W-3 statements.
 
-7. Choose Print to print the report or forms you selected. If you’re printing
-    W-2 statements, be sure to insert W-2 forms in the printer.
+11. Choose Print to print the report or forms you selected. If you’re printing W-2 statements, be sure to insert W-2 forms in the printer.
 
 #### Editing 1099-R information
 
@@ -7475,13 +7429,11 @@ the 1099-R statement.
     withheld, and the locality to which the tax was paid.
 
 7. Choose Save to save the information you’ve entered. For more information
-    about printing the 1099-R statements, refer to *Printing 1099-R statements
-    .*
+    about printing the 1099-R statements, see [Printing 1099-R statements](#printing-1099-r-statements).
 
 #### Printing 1099-R statements
 
-You can use the Print 1099-R Forms window to print 1099-R statements. These
-statements show an employee’s distribution from a retirement plan.
+You can use the Print 1099-R Forms window to print 1099-R statements. These statements show an employee’s distribution from a retirement plan.
 
 **To print 1099-R statements:**
 

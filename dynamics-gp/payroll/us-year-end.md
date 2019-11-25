@@ -21,7 +21,7 @@ This document contains instructions for updating the U.S. Payroll module for Mic
 
 Also included in this document are instructions for completing payroll year-end procedures. These instructions assume that you are already familiar with U.S. Payroll for Microsoft Dynamics GP.
 
-You can find information about year-end payroll procedures in the “Payroll Company Routines” and “Government Form and Report Routines” chapters in the U.S. Payroll documentation, or the sections of Help with the same names.
+You can find information about year-end payroll procedures in the [Payroll Company Routines]([U.S. 2019 Year-end Update in Dynamics GP](PayrollUS.md#payrollcompanyroutine) and [Government Form and Report Routines](PayrollUS.md#govformreportroutines) chapters in the [U.S. Payroll documentation](PayrollUS.md), or the sections of Help with the same names.
 
 Note, however, that the instructions in this document expand on the instructions in your Payroll documentation, and in some cases, supersede them.
 
@@ -50,7 +50,7 @@ Look here to find year-end updates, instructions, and tax updates. Instructions 
 
 [https://mbs.microsoft.com/knowledgebase/search.aspx](https://mbs.microsoft.com/knowledgebase/search.aspx)
 
-Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations. 
+Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
 
 **eSupport**
 
@@ -73,6 +73,7 @@ We have specialized support teams focused on providing service and support to ou
 The U.S. 2019 Year-end Update contains software changes to allow you to comply with 2019 filing requirements as well as the most recent fixes for Microsoft Dynamics GP and other quality report fixes related to the payroll year-end.
 
 ### Payroll form changes
+
 - W-4 for the 2020 year.
 Changes for Employee Self Service W-4 form and Cards | Payroll | Tax window
 
