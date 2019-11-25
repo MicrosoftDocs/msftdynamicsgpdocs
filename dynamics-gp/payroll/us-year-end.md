@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/11/2019
+ms.date: 11/25/2019
 ---
 
 # U.S. 2019 Year-end Update in Dynamics GP
@@ -54,7 +54,7 @@ Provides you with instant access to the same database our support engineers use.
 
 **eSupport**
 
-[https://support.microsoft.com/supportforbusiness.](https://support.microsoft.com/supportforbusiness.)
+[https://support.microsoft.com/supportforbusiness](https://support.microsoft.com/supportforbusiness)
 
 For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.
 
@@ -79,8 +79,8 @@ Changes for Employee Self Service W-4 form and Cards | Payroll | Tax window
 - New tax tables published based on 15-T
   -Including New Head of Household Status, Standard and Multiple Jobs withholding tax tables
 
-Blog on details of year end and W-4 instructions:
-[https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule)
+Blogpost with details of year-end and W-4 instructions:
+[Microsoft Dynamics GP-2019 Year-End Blog Series Schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule)
 
 ### Updates for ACA reporting, form 1094-C
 
@@ -100,7 +100,7 @@ The formats of a number of forms are not changing for the 2019 tax year. The for
 
 Microsoft Dynamics GP support engineers maintain a blog that contains posts related to year-end processing. Refer to the year-end blog at the following link for new or updated information related to year-end processes:
 
-[https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule)
+[Microsoft Dynamics GP-2019 Year-End Blog Series Schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2019-year-end-blog-series-schedule)
 
 ## Chapter 2: Payroll year-end checklists
 
