@@ -655,18 +655,15 @@ the queue, and how often the processing request will be retried.
     information.
 
 > [!TIP]
-> Although you can create employee classes at this time by choosing Classes to open the Employee Class Setup window, it’s a good idea to wait until you’ve set up codes. For more information, refer to [Chapter 2 Setting up codes](#chapter-2-setting-up-codes), and [Creating an employee class](#creating-an-employment-class) .
+> Although you can create employee classes at this time by choosing Classes to open the Employee Class Setup window, it’s a good idea to wait until you’ve set up codes. For more information, refer to [Chapter 2 Setting up codes](#chapter-2-setting-up-codes), and [Creating an employee class](#creating-an-employee-class).
 
 #### Required Payroll posting accounts
 
-Payroll has several posting accounts that are required and are used only for
-Payroll transactions. They are:
+Payroll has several posting accounts that are required and are used only for Payroll transactions. They are:
 
-**Gross Pay** This account type is an expense account that can be entered
-for all employees’ salaries.
+**Gross Pay** This account type is an expense account that can be entered for all employees’ salaries.
 
-**Federal Tax Withholding** This account type is a liability account.
-Transactions will be posted to it for the following tax withholding codes:
+**Federal Tax Withholding** This account type is a liability account. Transactions will be posted to it for the following tax withholding codes:
 
 - EFIC/M (Employer FICA/Medicare Tax)
 
@@ -678,17 +675,13 @@ Transactions will be posted to it for the following tax withholding codes:
 
 - FICA/S (FICA/Social Security Tax Withholding)
 
-**State Tax Withholding** This account type is a liability account that can
-be entered for state tax codes.
+**State Tax Withholding** This account type is a liability account that can be entered for state tax codes.
 
-**Local Tax Withholding** This account type is a liability account that can
-be entered for local tax codes.
+**Local Tax Withholding** This account type is a liability account that can be entered for local tax codes.
 
-**Deduction Withholding** This account type is a liability account that can
-be entered for deduction codes.
+**Deduction Withholding** This account type is a liability account that can be entered for deduction codes.
 
-**Employer’s Tax Expense** This account type is an expense account.
-Transactions will be posted to it for the following tax expense codes:
+**Employer’s Tax Expense** This account type is an expense account. Transactions will be posted to it for the following tax expense codes:
 
 - FIC/ME (FICA/Medicare Tax Expense)
 
@@ -698,36 +691,23 @@ Transactions will be posted to it for the following tax expense codes:
 
 - SUTA (SUTA Tax Expense)
 
-**Benefits Expense** This account type is an expense account that can be
-entered for benefit codes.
+**Benefits Expense** This account type is an expense account that can be entered for benefit codes.
 
-**Benefits Payable** This account type is a liability account that can be
-entered for benefit codes.
+**Benefits Payable** This account type is a liability account that can be entered for benefit codes.
 
-**Taxable Benefits Expense** This account type is an expense account that
-can be entered for taxable benefit codes.
+**Taxable Benefits Expense** This account type is an expense account that can be entered for taxable benefit codes.
 
-**Taxable Benefits Payable** This account type is a liability account that
-can be entered for taxable benefit codes.
+**Taxable Benefits Payable** This account type is a liability account that can be entered for taxable benefit codes.
 
-**SUTA Payable** This account type is a liability account that can be
-entered for state unemployment tax liability.
+**SUTA Payable** This account type is a liability account that can be entered for state unemployment tax liability.
 
-**FUTA Payable** This account type is a liability account that will allow
-only FUTA to be entered for federal unemployment tax liability.
+**FUTA Payable** This account type is a liability account that will allow only FUTA to be entered for federal unemployment tax liability.
 
-**Workers’ Compensation Tax Expense** This account type is an expense
-account that can be entered for state codes to record workers’ compensation
-expense.
+**Workers’ Compensation Tax Expense** This account type is an expense account that can be entered for state codes to record workers’ compensation expense.
 
-**Workers’ Compensation Tax Payable** This account type is a liability
-account that can be entered for state codes to record workers’ compensation
-liability.
+**Workers’ Compensation Tax Payable** This account type is a liability account that can be entered for state codes to record workers’ compensation liability.
 
-It’s a good idea to set up default information using the Payroll Setup
-window before setting up posting accounts. If you haven’t set up default
-information yet, refer to *Setting up Payroll default entries* for more
-information about using the Payroll Setup window.
+It’s a good idea to set up default information using the Payroll Setup window before setting up posting accounts. If you haven’t set up default information yet, see [Setting up Payroll default entries](#setting-up-payroll-default-entries) for more information about using the Payroll Setup window.
 
 The following table shows the posting accounts required in Payroll and the departments, positions, and codes associated with each.
 
