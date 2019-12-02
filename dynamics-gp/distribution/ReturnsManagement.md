@@ -12,8 +12,8 @@ ms.author: theley
 ms.date: 12/01/2019
 ---
 
-## Returns Management
-============
+# Returns Management
+
 
 >   You can use Returns Management to enter, set up, and maintain your Return
 >   Materials Authorization (RMA) and Return To Vendor (RTV) documents. If
