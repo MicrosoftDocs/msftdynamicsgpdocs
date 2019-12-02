@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: 5228d0cd-89a9-4611-b3a9-b2d9fe3ac22e
 ms.reviewer: 
 ---
-<span id="_Toc498953278" class="anchor"></span>
 
 # Web Client Operation
 
