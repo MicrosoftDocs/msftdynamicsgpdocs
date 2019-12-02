@@ -1,8 +1,21 @@
-Introduction
-============
+---
+title: "Security Planning"
+description: "Security Planning"
+keywords: "year-end"
+author: theley502
+manager: edupont
 
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 12/1/2019
+
+---
+
+# Security Planning
 Use the information in this document to help you plan for security within
-Microsoft Dynamics® GP.
+Microsoft Dynamics GP.
 
 >   This introduction is divided into the following sections:
 
@@ -126,8 +139,7 @@ Favorites tab. Click Add.
 >   assistance resources. Access to some items requires registration for a paid
 >   support plan.
 
-Chapter 1: Basic security recommendations
------------------------------------------
+## Chapter 1: Basic security recommendations
 
 >   The following information contains security recommendations that you should
 >   consider before setting up Microsoft Dynamics GP.
@@ -412,8 +424,7 @@ Tool for
 >   installed on the server, much of the update process can be automated
 >   internally by the organization’s IT department.
 
-Chapter 2: Securing the server operating system
------------------------------------------------
+## Chapter 2: Securing the server operating system
 
 >   The following information provides some of the best practices for securing
 >   server operating systems. This information should be considered before you
@@ -856,8 +867,7 @@ Chapter 2: Securing the server operating system
 >   or SQL Server 2012, see [http://www.microsoft.com/sqlserver/2008/en/us/
 >   Security.aspx.](http://www.microsoft.com/sqlserver/2008/en/us/Security.aspx)
 
-Chapter 3: Network security
----------------------------
+## Chapter 3: Network security
 
 >   Use the following information to learn more about keeping your network
 >   secure.
@@ -1160,8 +1170,7 @@ Chapter 4: Virus protection
     security features, visit the Microsoft Office Online Web site
     ([http://office.microsoft.com/en-us/default.aspx)](http://office.microsoft.com/en-us/default.aspx).
 
-Chapter 5: Microsoft Dynamics GP security
------------------------------------------
+## Chapter 5: Microsoft Dynamics GP security
 
 >   Microsoft Dynamics GP provides several types of security. The following
 >   information is an overview of the security features in Microsoft Dynamics
@@ -1437,8 +1446,7 @@ Chapter 5: Microsoft Dynamics GP security
 >   tasks that the user needs to complete the process. The problem may be caused
 >   by the user not having access to all the items used in the process.
 
-Chapter 6: The Microsoft Dynamics GP database security model
-============================================================
+## Chapter 6: The Microsoft Dynamics GP database security model
 
 >   Use this information to learn about the Microsoft Dynamics GP database
 >   security model.
