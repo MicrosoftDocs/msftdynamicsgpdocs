@@ -14,7 +14,7 @@ ms.date: 02/10/2019
 ---
 # Inventory Control in Dynamics GP - Parts 1-3
 
-You can use Inventory Control to help manage your company’s inventoried items. Many Inventory Control tasks help you create records for your items, such as how the items are to be tracked and what pricing should be used for the items that are sold. Parts 4 and 5 are in [Inventory Control in Dynamics GP - Parts 4 and 5](Inventory2.md).  
+You can use Inventory Control to help manage your company’s inventoried items. Many Inventory Control tasks help you create records for your items, such as how the items are to be tracked and what pricing should be used for the items that are sold. Parts 4 and 5 are in [Inventory Control in Dynamics GP - Parts 4-6](Inventory2.md).  
 
 You also can use Inventory Control to complete the following tasks:
 
@@ -44,17 +44,17 @@ To view information about the release of Microsoft Dynamics GP that you’re usi
 
 The manual is divided into the following parts:
 
-- *Part 1, Setup*, describes the tasks you must complete to set up inventory, such as specifying system settings and setting up unit of measure schedules and item classes.
+- *Part 1: Setup*, describes the tasks you must complete to set up inventory, such as specifying system settings and setting up unit of measure schedules and item classes.
 
-- *Part 2, Cards*, includes information about basic inventory records. Refer to that part to learn how to define, modify, and remove items, sites, and kits. Information about setting up pricing structures also is included.
+- *Part 2: Cards*, includes information about basic inventory records. Refer to that part to learn how to define, modify, and remove items, sites, and kits. Information about setting up pricing structures also is included.
 
-- *Part 3, Transactions*, contains information about entering and posting inventory transactions and transfers.
+- *Part 3: Transactions*, contains information about entering and posting inventory transactions and transfers.
 
-- *Part 4, Inquiries and reports*, describes windows and reports you can use to view your inventory information.
+- *Part 4: Inquiries and reports*, describes windows and reports you can use to view your inventory information. For more information, see [Part 4: Inquiries and reports](Inventory2.md#part-4-inquiries-and-reports).
 
-- *Part 5, Utilities*, includes information about completing special tasks, such as using price list wizards, reconciling inventory, removing history records, and adjusting average costs of items.
+- *Part 5, Utilities*, includes information about completing special tasks, such as using price list wizards, reconciling inventory, removing history records, and adjusting average costs of items. For more information, see [Part 5: Utilities](Inventory2.md#part-5-utilities).
 
-- *Part 6, Routines*, describes how you can use inventory checklists. Information about year-end closing tasks is also included.
+- *Part 6, Routines*, describes how you can use inventory checklists. Information about year-end closing tasks is also included. For more information, see [Part 6: Routines](Inventory2.md#part-6-routines).
 
 ## Part 1: Setup
 
@@ -6139,5 +6139,7 @@ For example, if you transferred 25 items from the South store to the Main store 
 
 9. Choose File \>\> Print to print an edit list to verify your entries.
 
-[Inventory Control in Dynamics GP - Parts 4 and 5](Inventory2.md)  
+## See also
+
+[Inventory Control in Dynamics GP - Parts 4-6](Inventory2.md)  
 [Glossary](Inventory2.md#glossary)  

@@ -12,9 +12,23 @@ ms.author: tnistler
 ms.date: 12/02/2019
 
 ---
-# Inventory Control in Dynamics GP - Parts 4 and 5
+# Inventory Control in Dynamics GP - Parts 4-6
 
 You can use Inventory Control to help manage your company’s inventoried items. Many Inventory Control tasks help you create records for your items, such as how the items are to be tracked and what pricing should be used for the items that are sold. this article continues where [Inventory Control in Dynamics GP - Parts 1-3](Inventory.md) stopped.
+
+The manual is divided into the following parts:
+
+- *Part 1: Setup*, describes the tasks you must complete to set up inventory, such as specifying system settings and setting up unit of measure schedules and item classes. For more information, see [Part 1: Setup](Inventory.md#part-1-setup).
+
+- *Part 2: Cards*, includes information about basic inventory records. Refer to that part to learn how to define, modify, and remove items, sites, and kits. Information about setting up pricing structures also is included. For more information, see [Part 2: Cards](Inventory.md#part-2-cards).
+
+- *Part 3: Transactions*, contains information about entering and posting inventory transactions and transfers. For more information, see [Part 3: Transactions](Inventory.md#part-3-transactions).
+
+- *Part 4: Inquiries and reports*, describes windows and reports you can use to view your inventory information.
+
+- *Part 5, Utilities*, includes information about completing special tasks, such as using price list wizards, reconciling inventory, removing history records, and adjusting average costs of items.
+
+- *Part 6, Routines*, describes how you can use inventory checklists. Information about year-end closing tasks is also included.
 
 ## Part 4: Inquiries and reports
 
