@@ -1,5 +1,5 @@
 ---
-title: Welcome to Dynamics GP | Microsoft Docs
+title: Welcome to Dynamics GP
 description: Dynamics GP is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business.
 author: edupont04
 
@@ -58,4 +58,4 @@ We welcome contributions to the Dynamics GP content. You can find the source fil
 
 ## See Also
 
-[Microsoft Dynamics GP Developer Documentation](https://docs.microsoft.com/en-us/previous-versions/dynamicsgp/developer/hh686187(v%3dgp.20))  
+[Microsoft Dynamics GP Developer Documentation]/previous-versions/dynamicsgp/developer/hh686187(v%3dgp.20))  
