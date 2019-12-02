@@ -1,5 +1,19 @@
-Introduction
-============
+---
+title: "Payment Document Management "
+description: "Payment Document Management "
+keywords: "year-end"
+author: theley502
+manager: edupont
+
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 12/1/2019
+
+---
+
+# Payment Document Management 
 
 Payment Document Management allows you to enter sales and purchasing transactions using payment methods other than cash, check or credit card. You can submit these documents for risk assessment, discounting and collection to your bank or similar entity.
 
@@ -43,8 +57,7 @@ The manual is divided into the following chapters:
 
 -   *Chapter 8, “Utilities”* provides information on removing historical information for payment documents.
 
-Chapter 1: Overview
--------------------
+## Chapter 1: Overview
 
 Payment Document Management allows you to make and receive payments using special payment documents. Use this information to enable Payment Document Management and to understand how it works.
 
@@ -74,8 +87,7 @@ You must enable payment documents before you can start using them in purchasing 
 
 2.  Choose OK to save the changes and close the window.
 
-Chapter 2: Purchasing Setup
----------------------------
+## Chapter 2: Purchasing Setup
 
 Use this information to set up default accounts required to use payment documents in the purchasing module.
 
@@ -207,8 +219,7 @@ Enter a password to override the maximum amount limit specified in a transaction
 -   Choose Save to save the details and return to the Creditor Payment Document
     Maintenance window.
 
-Chapter 3: Sales Setup
-----------------------
+## Chapter 3: Sales Setup
 
 Use this information to set up default accounts in the ledger posting of payment documents.
 
@@ -357,8 +368,7 @@ You can set the debtor default payment document and the other payment documents 
 
 -   Choose Save to save the changes.
 
-Chapter 4: Purchasing Transactions
-----------------------------------
+## Chapter 4: Purchasing Transactions
 
 Use this information to enter payment documents for purchasing.
 This information is divided into the following sections:
@@ -456,8 +466,7 @@ You can settle payment documents and identify the origin and destination chequeb
 
 22.  Choose Save to save the changes made in the window.
 
-Chapter 5: Sales Transactions
------------------------------
+## Chapter 5: Sales Transactions
 
 Use this information to enter payment documents for sales. This information is divided into the following sections:
 
@@ -570,8 +579,7 @@ You can make payment document remittances in the Sales Payment Document Remittan
 
 14.  Choose OK to close the window.
 
-Chapter 6: Transaction Maintenance
-----------------------------------
+## Chapter 6: Transaction Maintenance
 
 Use this information to void and return payment documents.
 This information is divided into the following sections:
@@ -781,8 +789,7 @@ The options available are:
 
 7.  Choose Save to save the changes and close the window.
 
-Chapter 8: Utilities
---------------------
+## Chapter 8: Utilities
 
 This information will help you remove the history of payment documents. Once you have decided how much historical information is necessary, you can remove the information that is no longer needed. When you remove historical records, the system removes records only for the range you specify.
 

@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: e9b7fc59-b6af-49c8-b009-62ae19cb5026
 ms.reviewer: 
 ---
-<span id="_Toc498953327" class="anchor"></span>
 
 # Scale out upgrade
 

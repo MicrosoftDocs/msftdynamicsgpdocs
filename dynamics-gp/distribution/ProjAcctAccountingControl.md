@@ -1,6 +1,18 @@
-Microsoft Dynamics® GP
+---
+title: "Accounting Control Guide"
+description: "Project Accounting - Accounting Control Guid"
+keywords: "year-end"
+author: theley502
+manager: edupont
 
-**Project Accounting - Accounting Control Guide**
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 12/1/2019
+
+---
+# Project Accounting - Accounting Control Guide
 
 **Introduction**
 
@@ -84,7 +96,6 @@ Microsoft Dynamics® GP
     cost and billing transactions and **Closed** contracts. The documentation
     also includes information about how to use various accounting utilities.
 
-**I N T R O D U C T I O N**
 
 >   **Contents**
 
@@ -133,8 +144,7 @@ Microsoft Dynamics® GP
 >   assistance resources. Access to some items requires registration for a paid
 >   support plan.
 
-Part 1: Posting setup and control
-=================================
+## Part 1: Posting setup and control
 
 >   This part of the documentation includes information for the accounting
 >   manager about how to specify posting account numbers for cost categories in
@@ -153,8 +163,7 @@ Part 1: Posting setup and control
     batches for transactions, how to review and modify posting account
     distributions for transactions in batches, and how to post batches.
 
-Chapter 1: Posting setup
-------------------------
+### Chapter 1: Posting setup
 
 >   This part of the documentation includes information for the accounting
 >   manager about the Project Accounting chart of accounts and how to specify
@@ -499,8 +508,7 @@ Chapter 1: Posting setup
 2.  Select the posting accounts that the account segment numbers will be used
     for and Click OK.
 
-Chapter 2: Posting control
---------------------------
+### Chapter 2: Posting control
 
 >   This part of the documentation includes information for the accounting
 >   manager about how to create batches for transactions, how to review and
@@ -515,7 +523,7 @@ Chapter 2: Posting control
 
 -   *Post batches*
 
-### Manually create a batch for transactions
+#### Manually create a batch for transactions
 
 >   You can create batches manually for grouping cost, return from project,
 >   billing, and revenue recognition transactions. You can save transactions in
@@ -535,8 +543,8 @@ Chapter 2: Posting control
 
 >   The following table lists the windows and how to open them.
 
-| **Transaction**                      | **Window**                      | **Choose**                                                        |
-|--------------------------------------|---------------------------------|-------------------------------------------------------------------|
+| **Transaction**                      | **Window**                      | **Choose**             |
+|--------------------------------------|---------------------------------|----------------------------|
 | Timesheets                           | Timesheet Batch Entry           | Transactions \> Project \> Timesheet Batches                      |
 | Employee expense transactions        | Employee Expense Batch Entry    | Transactions \> Project \> Employee Expense Batches               |
 | Equipment logs                       | Equipment Log Batch Entry       | Transactions \> Project \> Equipment Log Batches                  |
@@ -572,7 +580,7 @@ Chapter 2: Posting control
 
 9.  Close the window.
 
-### Review and modify posting account distributions for transactions
+#### Review and modify posting account distributions for transactions
 
 >   You can print an edit list to review posting account distributions for
 >   transactions in a batch. You also can modify distributions before posting
@@ -653,8 +661,7 @@ Chapter 2: Posting control
     and click the **Batch ID** link to view more information about the batch and
     then Click Post.
 
-Part 2: Revenue recognition
-===========================
+## Part 2: Revenue recognition
 
 >   This part of the documentation includes information for an accounting
 >   manager about how to create and use revenue recognition cycles to recognize
@@ -674,8 +681,7 @@ Part 2: Revenue recognition
     posting. It also includes information about how revenue is calculated for
     recognition.
 
-Chapter 3: Revenue recognition setup
-------------------------------------
+### Chapter 3: Revenue recognition setup
 
 >   This part of the documentation includes information for an accounting
 >   manager about how to grant users permission to various data entry options
@@ -689,7 +695,7 @@ Chapter 3: Revenue recognition setup
 
 -   *Create a revenue recognition cycle record*
 
-### Grant revenue recognition transaction entry permissions
+#### Grant revenue recognition transaction entry permissions
 
 >   You can grant all users permission to various data entry options for revenue
 >   recognition transactions. You also can require a password for each data
@@ -711,7 +717,7 @@ Chapter 3: Revenue recognition setup
 >   categories in a project budget* and *Specify revenue to recognize for fees*
 >   for more information.
 
-### Create a revenue recognition cycle record
+#### Create a revenue recognition cycle record
 
 >   You can create a revenue recognition cycle so that you can recognize revenue
 >   for multiple customers, contracts, and projects at one time. Revenue
@@ -739,8 +745,7 @@ Chapter 3: Revenue recognition setup
 
 3.  Enter a description and Click OK.
 
-Chapter 4: Revenue recognition transactions
--------------------------------------------
+### Chapter 4: Revenue recognition transactions
 
 >   This part of the documentation includes information for an accounting
 >   manager about how to use a revenue recognition cycle to generate a batch of
@@ -763,7 +768,7 @@ Chapter 4: Revenue recognition transactions
 
 -   *Specify revenue to recognize for fees*
 
-### Accounting methods and recognizing revenue
+#### Accounting methods and recognizing revenue
 
 >   Revenue is recognized for a project based on the accounting method used for
 >   the project. You must select the default accounting method to use for new
@@ -825,7 +830,7 @@ Chapter 4: Revenue recognition transactions
 >   project. The Cost of Goods Sold account will be updated on the Profit and
 >   Loss Statement.
 
-### Percentage complete and revenue recognition calculations
+#### Percentage complete and revenue recognition calculations
 
 >   The amount of revenue that you will recognize for a **Cost Plus** or **Fixed
 >   Price** project and for the contract that the project is for depends on how
@@ -858,7 +863,7 @@ Chapter 4: Revenue recognition transactions
 >   method. See *Create a contract record* in the Project Accounting Cost
 >   Management Guide for more information.
 
-### Use a revenue recognition cycle to generate revenue recognition transactions
+#### Use a revenue recognition cycle to generate revenue recognition transactions
 
 >   You can use a revenue recognition cycle to generate a batch of revenue
 >   recognition transactions to recognize revenue for multiple customers,
@@ -907,7 +912,7 @@ Chapter 4: Revenue recognition transactions
     contracts, or projects that are assigned to the revenue recognition cycle
     and Click Process.
 
-### Enter or modify a revenue recognition transaction
+#### Enter or modify a revenue recognition transaction
 
 >   You can enter a revenue recognition transaction manually. However, we
 >   recommend that you use a revenue recognition cycle to generate a batch of
@@ -997,7 +1002,7 @@ Chapter 4: Revenue recognition transactions
 
 2.  If the transaction is in a batch, click **Save**. Otherwise, click **Post**.
 
-### Specify revenue to recognize for cost categories in a project budget
+#### Specify revenue to recognize for cost categories in a project budget
 
 >   You can specify the revenue to recognize for individual cost categories in a
 >   project budget. Revenue recognition is for cost categories in **Cost Plus**
@@ -1034,7 +1039,7 @@ Chapter 4: Revenue recognition transactions
 >   updated. You also can click Do Not Recognize All to reduce amounts in the To
 >   Recognize column to zero.*
 
-### Specify revenue to recognize for fees
+#### Specify revenue to recognize for fees
 
 >   You can specify the revenue to recognize for individual fees assigned to a
 >   project. Revenue recognition is for **Project** fees for **Cost Plus** and
@@ -1061,7 +1066,7 @@ Chapter 4: Revenue recognition transactions
 >   also can click Do Not Recognize All to reduce amounts in the To Recognize
 >   column to zero.*
 
->   **Part 3: Reports and utilities**
+## Part 3: Reports and utilities
 
 >   This part of the documentation includes information for the accounting
 >   manager about reports in Project Accounting and how to create, group, and
@@ -1089,7 +1094,7 @@ Chapter 4: Revenue recognition transactions
     recalculate project budget totals by fiscal period, and delete project
     budget totals that aren’t within fiscal years.
 
-**Chapter 5: Reports**
+### Chapter 5: Reports
 
 >   This part of the documentation includes information for the accounting
 >   manager about how to create, group, and print reports. It also includes
@@ -1107,9 +1112,9 @@ Chapter 4: Revenue recognition transactions
 
 -   *Project Accounting standard reports*
 
--   *Project Accounting Microsoft SQL® Server Reporting Services reports*
+-   *Project Accounting Microsoft SQL Server Reporting Services reports*
 
->   **Create and print report options**
+#### Create and print report options
 
 >   Before you can print most Project Accounting reports, you need to specify a
 >   report option. A report option is a set of saved parameters for a particular
@@ -1164,7 +1169,7 @@ Chapter 4: Revenue recognition transactions
 
 3.  Click **Print**.
 
->   **Create report groups**
+#### Create report groups
 
 >   You can use report groups to print a group of report options in a single
 >   step.
@@ -1192,7 +1197,7 @@ Chapter 4: Revenue recognition transactions
 >   After you have created report groups, you can select them from the **Project
 >   Group** list and click **Print**.
 
->   **Report destinations and formats**
+#### Report destinations and formats
 
 >   You can print reports to a printer, the screen, a file, or a combination of
 >   these destinations.
@@ -1213,15 +1218,15 @@ Chapter 4: Revenue recognition transactions
 >   The following table lists more information about the file formats that you
 >   can select.
 
-| **File format** | **Description**                                                                                                                                                                                                                                                     |
-|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tab-delimited   | The tab-separated ASCII character format used by spreadsheet programs, such as Microsoft Excel®.                                                                                                                                                                    |
-| Comma-delimited | The standard comma-separated ASCII character format used by database programs.                                                                                                                                                                                      |
-| Text            | Text with no formatting. Use this option only if the application you’ll use to read the report can’t read any other format.                                                                                                                                         |
-| HTML            | A format that can be viewed in a Web browser.                                                                                                                                                                                                                       |
-| XML Data        | A text file that contains an XML representation of the report layout and all the report data. Choose this format if you want to process the report using an external application.                                                                                   |
+| **File format** | **Description**      |
+|-----------------|-------------|
+| Tab-delimited   | The tab-separated ASCII character format used by spreadsheet programs, such as Microsoft Excel®.  |
+| Comma-delimited | The standard comma-separated ASCII character format used by database programs.   |
+| Text            | Text with no formatting. Use this option only if the application you’ll use to read the report can’t read any other format.  |
+| HTML            | A format that can be viewed in a Web browser.   |
+| XML Data        | A text file that contains an XML representation of the report layout and all the report data. Choose this format if you want to process the report using an external application.     |
 | Adobe PDF       | This format is available if you have the PDFWriter printer driver installed (included with Acrobat 5 and earlier), or Acrobat Distiller from Acrobat 6 or later. PDF (Portable Document Format) files can be read using Adobe Reader software available from Adobe. |
-| Word Document   | The Microsoft Office Open XML (.docx) file format used by Word 2007 or later. You can select this format if you select Template as the report type.                                                                                                                 |
+| Word Document   | The Microsoft Office Open XML (.docx) file format used by Word 2007 or later. You can select this format if you select Template as the report type.    |
 
 >   You can select a printing destination in different ways, depending on which
 >   printing method you use.
@@ -1307,30 +1312,23 @@ Chapter 4: Revenue recognition transactions
 >   Statement**) to print statements for customers. The statements will include
 >   a summary of accounts receivable information.
 
->   **Performance**
+#### Performance
 
-| Use the Performance Report Options window (**Reports \> Project \> Performance**) to print reports that list work in progress and also contract revenue and write-down amounts. You also can print a report listing **Closed** contracts. |                                                                                                                                                                                                                                                       |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                       |
-|                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                       |
-|                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                       |
-|                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                       |
-|                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                       |
-| **Report**                                                                                                                                                                                                                                | **Description**                                                                                                                                                                                                                                       |
-| Aged Work-In-Progress List                                                                                                                                                                                                                | Work in progress for all aging periods and the balances or work in progress for each customer for each period.                                                                                                                                        |
-| Aged Work-In-Progress                                                                                                                                                                                                                     | Work in progress for all aging periods and the balances or work in progress for each project for each period.                                                                                                                                         |
-| Aged Work-In-Progress                                                                                                                                                                                                                     | Work in progress for all aging periods and the balances or work in progress for each contract for each period.                                                                                                                                        |
-| Aged Work-In-Progress                                                                                                                                                                                                                     | Work in progress for all aging periods and the balances or work in progress for each cost category in project budgets for each period.                                                                                                                |
-| Fee List - Project                                                                                                                                                                                                                        | A list of all fees for all projects for each customer.                                                                                                                                                                                                |
-| Invoice Register                                                                                                                                                                                                                          | Lists all billing invoices that have been posted in Accounts Receivables for the current period.                                                                                                                                                      |
-| **Report**                                                                                                                                                                                                                                | **Description**                                                                                                                                                                                                                                       |
-| Pre-Billing Worksheet - CP/FP                                                                                                                                                                                                             | A list of pre-billing worksheets for **Cost Plus** or **Fixed Price** projects. You can print two types of pre-billing worksheets: in process, or those that include saved billing invoices and billable, or those that include all billing invoices. |
-| Pre-Billing Worksheet - TM                                                                                                                                                                                                                | A list of pre-billing worksheets for **Time and Materials** projects. You can print two types of pre-billing worksheets: in process, or those that include saved billing invoices and billable, or those that include all billing invoices.           |
-| Retention - Customer                                                                                                                                                                                                                      | A list of **Retentions** fee amounts for contracts for specified customers.                                                                                                                                                                           |
-| Retention - Project                                                                                                                                                                                                                       | A list of **Retentions** fee amounts for each contract for the company.                                                                                                                                                                               |
-| Work in Progress                                                                                                                                                                                                                          | A list of projects in progress.                                                                                                                                                                                                                       |
+Use the Performance Report Options window (**Reports \> Project \> Performance**) to print reports that list work in progress and also contract revenue and write-down amounts. You also can print a report listing **Closed** contracts.                                      
+| **Report**     | **Description**     |
+| Aged Work-In-Progress List  | Work in progress for all aging periods and the balances or work in progress for each customer for each period.    |
+| Aged Work-In-Progress    | Work in progress for all aging periods and the balances or work in progress for each project for each period.   |
+| Aged Work-In-Progress  | Work in progress for all aging periods and the balances or work in progress for each contract for each period.    |
+| Aged Work-In-Progress     | Work in progress for all aging periods and the balances or work in progress for each cost category in project budgets for each period.      |
+| Fee List - Project   | A list of all fees for all projects for each customer.    |
+| Invoice Register | Lists all billing invoices that have been posted in Accounts Receivables for the current period.  |
+| Pre-Billing Worksheet - CP/FP     | A list of pre-billing worksheets for **Cost Plus** or **Fixed Price** projects. You can print two types of pre-billing worksheets: in process, or those that include saved billing invoices and billable, or those that include all billing invoices. |
+| Pre-Billing Worksheet - TM   | A list of pre-billing worksheets for **Time and Materials** projects. You can print two types of pre-billing worksheets: in process, or those that include saved billing invoices and billable, or those that include all billing invoices.     |
+| Retention - Customer   | A list of **Retentions** fee amounts for contracts for specified customers.   |
+| Retention - Project  | A list of **Retentions** fee amounts for each contract for the company.  |
+| Work in Progress | A list of projects in progress. |
 
->   **Project Accounting Microsoft SQL® Server Reporting Services reports**
+### Project Accounting Microsoft SQL Server Reporting Services reports
 
 >   You can view Project Accounting Reporting Services reports from the
 >   Reporting Services Reports list. You can access the Reporting Services
@@ -1343,50 +1341,50 @@ Chapter 4: Revenue recognition transactions
 >   The following Reporting Services reports are available for Project
 >   Accounting.
 
->   **Trial balance**
+#### Trial balance
 
-| **Report name**                       | **Description**                                                                                                           |
-|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Project Accounting Aged Trial Balance | Provides a receivables aged trial balance for selected projects.                                                          |
+| **Report name**                       | **Description**     |
+|---------------------------------------|---------------------|
+| Project Accounting Aged Trial Balance | Provides a receivables aged trial balance for selected projects.    |
 | Project Accounting Detail Trial       | Displays General Ledger account balances and all transactions that affect each account for the period that you specified. |
 
->   Balance
+#### Balance
 
->   **Employee utilization**
+   **Employee utilization**
 
 | **Report name**                          | **Description**                                                                          |
 |------------------------------------------|------------------------------------------------------------------------------------------|
 | Monthly Employee Utilization by Employee | Displays utilization by a single employee or by multiple employees as of a certain date. |
 
->   **Project status**
+#### Project status
 
-| **Report name**                    | **Description**                                                                                   |
-|------------------------------------|---------------------------------------------------------------------------------------------------|
-| Project Accounting Closed Projects | Provides details on closed projects.                                                              |
+| **Report name**                    | **Description**       |
+|------------------------------------|-----------------------|
+| Project Accounting Closed Projects | Provides details on closed projects.|
 | Project Accounting Profit and Loss | Provides the profit and loss for a project or range of projects during a selected period of time. |
-| Project Cost Breakdown             | Details the costs associated with a project.                                                      |
+| Project Cost Breakdown             | Details the costs associated with a project.   |
 
->   **Billing**
+#### Billing
 
-| **Report name**                            | **Description**                                                                               |
-|--------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **Report name**                            | **Description**   |
+|--------------------------------------------|-------------------|
 | Pre-Billing Worksheet - CP/FP (Billable)   | Displays a pre-billing worksheet for Cost Plus/Fixed Price type projects that are billable.   |
 | Pre-Billing Worksheet - CP/FP (In Process) | Displays a pre-billing worksheet for Cost Plus/Fixed Price type projects that are in process. |
 | Pre-Billing Worksheet - Fee (Billable)     | Displays a pre-billing worksheet for Time and Material type projects that are billable.       |
 | Pre-Billing Worksheet - T&M (Billable)     | Displays a pre-billing worksheet for Time and Materials type projects that are in process.    |
 | Pre-Billing Worksheet - T&M (In Process)   | Displays a pre-billing worksheet for Cost Plus/Fixed Price type projects that are in process. |
 
->   **Performance**
+#### Performance
 
-| **Report name**                                     | **Description**                                                                                                          |
-|-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Report name**                                     | **Description**      |
+|-----------------------------------------------------|----------------------|
 | Project Accounting Unbilled Expense vs Retainer     | Compares the project retainer against the charged expenses and the retainer balance for a project.                       |
 | Project Accounting Revenue Recognition Transactions | Displays the revenue recognition transactions for a project.                                                             |
 | Project Accounting Budget vs. Actual with Variance  | Provides the ability to group budget and actual expenditures for a project for selected cost categories and time period. |
 | Project Accounting Combined History Report          | Displays transaction details for cost transactions of any project or range of projects.                                  |
-| Projects in Progress                                | Lists the projects in process for a selected range.                                                                      |
+| Projects in Progress                                | Lists the projects in process for a selected range.         |
 
->   **To print a Project Accounting Reporting Services report:**
+#### To print a Project Accounting Reporting Services report
 
 1.  In the navigation pane, choose the Project button, and then choose the
     Reporting Services Reports list.
@@ -1400,7 +1398,7 @@ Chapter 4: Revenue recognition transactions
 
 5.  After viewing the report, select a format and print the report.
 
-**Chapter 6: Adjusting transactions**
+### Chapter 6: Adjusting transactions
 
 >   This part of the documentation includes information for the accounting
 >   manager about how to enter adjusting transactions to reverse—or to reverse
@@ -1418,7 +1416,7 @@ Chapter 4: Revenue recognition transactions
 
 -   *Reverse and correct cost transaction line items*
 
->   **Exceed total cost, quantity, or revenue on adjusting transactions**
+#### Exceed total cost, quantity, or revenue on adjusting transactions
 
 >   You can’t post adjusting transactions if one or more of the following
 >   criteria are true.
@@ -1448,7 +1446,7 @@ Chapter 4: Revenue recognition transactions
 >   See *Grant cost transaction data entry permissions* in the Project
 >   Accounting Cost Management Guide for more information.
 
->   **Reverse cost transaction line items**
+#### Reverse cost transaction line items
 
 >   You can create adjusting transactions to reverse line items entered on
 >   timesheets, employee expense transactions, equipment logs, or miscellaneous
@@ -1505,7 +1503,7 @@ Chapter 4: Revenue recognition transactions
 >   See Exceed total cost, quantity, or revenue on adjusting transactions for
 >   more information.*
 
-**Chapter 7: Transaction and record deletion**
+### Chapter 7: Transaction and record deletion**
 
 >   This part of the documentation includes information for the accounting
 >   manager about how to delete posted cost and billing transactions, and how to
@@ -1519,7 +1517,7 @@ Chapter 4: Revenue recognition transactions
 
 -   *Delete posted billing invoices and returns*
 
->   **Delete Closed contracts**
+#### Delete Closed contracts
 
 >   You can delete **Closed** contracts.
 
@@ -1530,7 +1528,7 @@ Chapter 4: Revenue recognition transactions
     print a report listing the contracts that were deleted after you delete them
     and Click OK.
 
->   **Delete posted cost transactions**
+#### Delete posted cost transactions
 
 >   You can delete posted timesheets, employee expense transactions, equipment
 >   logs, miscellaneous logs, and inventory transfers.
@@ -1557,7 +1555,7 @@ Chapter 4: Revenue recognition transactions
 3.  Select **Print Report** to print a list of the transactions that were
     deleted after you delete them and Click OK.
 
-**Chapter 8: Accounting utilities**
+### Chapter 8: Accounting utilities
 
 >   This part of the documentation includes information for the accounting
 >   manager about how to use various utilities to clear paid billing invoices
@@ -1572,7 +1570,7 @@ Chapter 4: Revenue recognition transactions
 
 -   *Delete project budget totals that aren’t within fiscal years*
 
->   **Clear paid billing invoices from lookup windows**
+#### Clear paid billing invoices from lookup windows
 
 >   You can clear paid billing invoices from lookup windows.
 
@@ -1588,7 +1586,7 @@ Chapter 4: Revenue recognition transactions
 4.  You can enter a cutoff date. Only transactions with a document date on or
     before the cutoff date will be cleared and Click Process.
 
->   **Recalculate project budget totals by fiscal period**
+#### Recalculate project budget totals by fiscal period
 
 >   You can recalculate project budget totals by fiscal period. See *Modify
 >   project budget amounts for a cost category by fiscal period* in the Project
@@ -1608,7 +1606,7 @@ Chapter 4: Revenue recognition transactions
 
 6.  Click **Done**.
 
->   **Delete project budget totals that aren’t within fiscal years**
+#### Delete project budget totals that aren’t within fiscal years
 
 >   You can delete project budget totals that aren’t within fiscal years if, for
 >   example, you mistakenly entered a transaction using a date that isn’t within
@@ -1628,7 +1626,7 @@ Chapter 4: Revenue recognition transactions
 4.  Select **Print Report** to print a list of the projects that you deleted
     budget totals for after you delete them. Click Process and then Click Done.
 
-**Glossary**
+## Glossary
 
 **access list**
 

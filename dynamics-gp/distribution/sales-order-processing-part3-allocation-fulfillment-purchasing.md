@@ -707,7 +707,7 @@ After you have viewed and modified pending purchase orders, you must generate th
 
     ![screenshot](media/SOage142.jpg)
 
-2. Choose an existing Inquiry ID or create a new Inquiry ID to select a range of sales documents. For more information about creating an inquiry ID, see [Creating inquiries for sales documents](#creating-inquiries-for-sales-documents).
+2. Choose an existing Inquiry ID or create a new Inquiry ID to select a range of sales documents. For more information about creating an inquiry ID, see [Creating inquiries for sales documents](sales-order-processing-part5-inquiries-reports.md#creating-inquiries-for-sales-documents).
 
 3. Choose Redisplay to update the window.
 

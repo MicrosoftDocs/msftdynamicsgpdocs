@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: fa141208-7ffa-423b-a019-2573377a0e74
 ms.reviewer: 
 ---
-<span id="_Toc498953380" class="anchor"></span>
 
 # Default domain
 
