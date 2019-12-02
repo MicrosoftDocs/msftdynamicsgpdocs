@@ -1,24 +1,18 @@
-title: "ReturnsManagement"
-
+---
+title: "Returns Management"
 description: "Returns Management source guide."
-
 keywords: "Returns-Management"
-
 author: theley502
-
 manager: edupont
 
 ms.prod: dynamics-gp
-
 ms.topic: article
-
 ms.reviewer: edupont
-
 ms.author: theley
+ms.date: 12/01/2019
+---
 
-ms.date: 2/1/2018
-
-Introduction
+## Returns Management
 ============
 
 >   You can use Returns Management to enter, set up, and maintain your Return
@@ -39,8 +33,7 @@ Introduction
 
 >   • Send us your documentation comments
 
-What’s in this manual
-=====================
+## What’s in this manual
 
 >   This manual is designed to give you an understanding of how to use the
 >   features of Returns Management, and how it integrates with the Microsoft
@@ -66,73 +59,7 @@ What’s in this manual
 -   *Part 3, Inquiries and reports*, explains how to use inquiries and reports
     to analyze your item return information.
 
-Resources available from the Help menu
-======================================
-
->   The Microsoft Dynamics GP Help menu gives you access to user assistance
->   resources on your computer, as well as on the Web.
-
-##### Contents
-
->   Opens the Help file for the active Microsoft Dynamics GP component, and
->   displays the main “contents” topic. To browse a more detailed table of
->   contents, click the **Contents** tab above the Help navigation pane. Items
->   in the contents topic and tab are arranged by module. If the contents for
->   the active component includes an “Additional Help files” topic, click the
->   links to view separate Help files that describe additional components.
-
->   To find information in Help by using the index or full-text search, click
->   the appropriate tab above the navigation pane, and type the keyword to find.
-
->   To save the link to a topic in the Help, select a topic and then select the
->   **Favorites** tab. Click **Add**.
-
-##### Index
-
->   Opens the Help file for the active Microsoft Dynamics GP component, with the
->   **Index** tab active. To find information about a window that’s not
->   currently displayed, type the name of the window, and click **Display**.
-
-##### About this window
-
->   Displays overview information about the current window. To view related
->   topics and descriptions of the fields, buttons, and menus for the window,
->   choose the appropriate link in the topic. You also can press **F1** to
->   display Help about the current window.
-
-##### Lookup
-
->   Opens a lookup window, if a window that you are viewing has a lookup window.
->   For example, if the Checkbook Maintenance window is open, you can choose
->   this item to open the Checkbooks lookup window.
-
-##### Show Required Fields
-
->   Highlights fields that are required to have entries. Required fields must
->   contain information before you can save the record and close the window. You
->   can change the font color and style used to highlight required fields. On
->   the **Microsoft Dynamics GP** menu, choose **User Preferences**, and then
->   choose **Display**.
-
-##### What’s New
-
->   Provides information about enhancements that were added to Microsoft
->   Dynamics GP since the last major release.
-
-##### Microsoft Dynamics GP Online
-
->   Opens a Web page that provides links to a variety of Web-based user
->   assistance resources. Access to some items requires registration for a paid
->   support plan.
-
-##### Customer Feedback Options
-
->   Provides information about how you can join the Customer Experience
->   Improvement Program to improve the quality, reliability, and performance of
->   Microsoft® software and services.
-
-Part 1: Returns Management setup
-================================
+## Part 1: Returns Management setup
 
 >   When you set up Returns Management, you can select options, set up and
 >   customize Return Materials Authorization (RMA) and Return to Vendor (RTV)
@@ -150,8 +77,7 @@ Part 1: Returns Management setup
 -   *Chapter 2, “Setup in Returns Management,”* explains how to set up Returns
     Management and each document type within Returns Management.
 
-Chapter 1: Setup overview
--------------------------
+### Chapter 1: Setup overview
 
 >   Use Returns Management to enter, receive, ship, and process item returns.
 >   You can use Returns Management for both the customer side of your returns
@@ -172,8 +98,7 @@ Chapter 1: Setup overview
 
 -   *RTV types*
 
-Before setting up Returns Management
-====================================
+#### Before setting up Returns Management
 
 >   Before setting up Returns Management, complete the setup procedures for
 >   Sales Order Processing, Receivables Management, Inventory, and General
@@ -199,16 +124,14 @@ Before setting up Returns Management
     entries. For more information, see the Multicurrency Management
     documentation.
 
-Use the Setup Checklist
-=======================
+#### Use the Setup Checklist
 
 >   When setting up Returns Management, either open each setup window and enter
 >   information, or use the Setup Checklist window (**Microsoft Dynamics GP menu
 >   \> Tools \> Setup \> Setup Checklist**) as a guide. See the System Setup
 >   Guide (**Help \> Printable Manuals**) for more information.
 
-RMA life cycle
-==============
+#### RMA life cycle
 
 >   When operating a returns warehouse, you sometimes interact with customers
 >   who need to return equipment for various reasons. When they bring you a
@@ -242,8 +165,7 @@ A close up of a logo Description automatically generated
     Refer to the Service Call Management documentation for more information
     regarding service calls and returnable items.
 
-RMA types
-=========
+#### RMA types
 
 >   RMA documents are used to track an item return from your customers. The
 >   available RMA document types are as follows:
@@ -269,8 +191,7 @@ RMA types
 >   technician and returned to your returns warehouse. This type of RMA document
 >   was designed to integrate directly with Service Call Management.
 
-RTV life cycle
-==============
+#### RTV life cycle
 
 >   With RTVs, you become the customer, and the vendor takes your place in the
 >   scenario. You bring your vendor a part and your vendor completes one of a
@@ -300,8 +221,7 @@ A screenshot of a cell phone Description automatically generated
 -   Automatically generated with the **Create** button in the RMA Line Process
     Return window, where the process type is set to **Create RTV**.
 
-RTV types
-=========
+#### RTV types
 
 >   RTV documents are used to track items that are sent back to your vendors.
 >   Returns Management supports four different methods of accounting for returns
@@ -323,8 +243,7 @@ RTV types
 >   You will receive the same repaired item back from the vendor at the end of
 >   the repair process. This type is not available for non-inventoried items.
 
-Chapter 2: Setup in Returns Management
---------------------------------------
+### Chapter 2: Setup in Returns Management
 
 >   Returns Management setup involves setting up preferences such as data entry
 >   default entries and vendor reimbursement amounts, as well as Sales Order
@@ -366,8 +285,7 @@ Chapter 2: Setup in Returns Management
 
 -   *Set up equipment maintenance cards*
 
-Set up options and default entries
-==================================
+#### Set up options and default entries
 
 >   You can set up default entries and other information that will affect the
 >   return documents that you will enter. You also can set up security options
@@ -493,8 +411,7 @@ A screenshot of a cell phone Description automatically generated
 
 3.  Click **OK**.
 
-Set up return document security
-===============================
+#### Set up return document security
 
 >   Because RMA and RTV documents can be deleted or voided in the Entry/Update
 >   windows, your business processes might require that users be prevented from
@@ -522,8 +439,7 @@ Set up return document security
 
 5.  Click **OK**.
 
-Set up RMA status codes
-=======================
+#### Set up RMA status codes
 
 >   You can create status codes that represent the life cycle of an RMA, from
 >   creation to closure. RMA status codes are assigned to RMA documents based on
@@ -537,8 +453,7 @@ Set up RMA status codes
 
 3.  Click Save.
 
-Set up RMA types
-================
+#### Set up RMA types
 
 >   Each RMA type represents a different way of handling a return for your
 >   customer, such as providing the customer credit on their account or
@@ -652,8 +567,7 @@ A screenshot of a cell phone Description automatically generated
 
 4.  Click **Save**.
 
-Set up RMA reason codes
-=======================
+#### Set up RMA reason codes
 
 >   You can create unique reason codes that describe the purpose for the
 >   customer return.
@@ -670,8 +584,7 @@ Set up RMA reason codes
 
 3.  Click **Save**.
 
-Returned items
-==============
+#### Returned items
 
 ##### RMA from a service call parts return line
 
@@ -694,8 +607,7 @@ Returned items
 >   If you are entering an RMA with no origin, the RMA uses the cost based on
 >   the information specified on the Item Extension card.
 
-Set up RTV status codes
-=======================
+#### Set up RTV status codes
 
 >   The RTV status is a unique code used to represent the status that an RTV may
 >   achieve, from an entered to a closed RTV.
@@ -707,8 +619,7 @@ Set up RTV status codes
 
 3.  Click **Save**.
 
-Set up RTV types
-================
+#### Set up RTV types
 
 >   You can set up and customize an unlimited number of RTV types. For example,
 >   you can use separate types of return documents for credit, replacement,
@@ -784,8 +695,7 @@ Set up RTV types
 
 2.  Click **Save**.
 
-Set up vendor extensions
-========================
+#### Set up vendor extensions
 
 >   You can identify a specific site ID for a vendor location when you process
 >   Repair and Return RTVs.
@@ -815,8 +725,7 @@ Set up vendor extensions
 
 6.  Click **Save**.
 
-Set up reimbursements
-=====================
+#### Set up reimbursements
 
 >   Reimbursement values are the amounts or percentages the vendor has agreed to
 >   reimburse your company for charges you might have incurred for a defective
@@ -850,8 +759,7 @@ Set up reimbursements
 
 7.  Click **Save**.
 
-Set up item extensions
-======================
+#### Set up item extensions
 
 >   You can assign, modify, or delete additional item information that is not
 >   available in Inventory Control. For example, certain items might be
@@ -880,8 +788,7 @@ Set up item extensions
 
 3.  Click **Save**.
 
-Set up customer extensions
-==========================
+#### Set up customer extensions
 
 >   You can create, modify, or delete additional customer information that isn’t
 >   available in Receivables Management. You also can enter the default time
@@ -911,8 +818,7 @@ Set up customer extensions
 
 >   A screenshot of a cell phone Description automatically generated
 
-Set up warranties
-=================
+#### Set up warranties
 
 >   You can define codes that represent the different types of warranties
 >   offered to your customers. These warranty codes may represent the original
@@ -933,8 +839,7 @@ Set up warranties
 
 >   A screenshot of a cell phone Description automatically generated
 
-Set up equipment maintenance cards
-==================================
+#### Set up equipment maintenance cards
 
 >   You can create a record for any specifically identifiable equipment within
 >   your customer–installed base. All the information you need for this
@@ -982,8 +887,7 @@ Set up equipment maintenance cards
 
 >   A screenshot of a social media post Description automatically generated
 
-Part 2: Transaction activity
-============================
+## Part 2: Transaction activity
 
 >   Use the procedures described in the following parts of the documentation to
 >   enter RMA (Return Materials Authorization) and RTV (Return To Vendor)
@@ -1003,8 +907,7 @@ Part 2: Transaction activity
     performance of your returns system, such as reconciling inventory quantities
     and removing historical records.
 
-Chapter 3: Routine procedures
-=============================
+### Chapter 3: Routine procedures
 
 >   Processing customer and vendor returns is a common routine in many
 >   businesses. RMAs and RTVs can be saved, modified if necessary, and then
@@ -1057,8 +960,7 @@ Chapter 3: Routine procedures
 
 -   *RTV entry details*
 
-Enter a credit RMA
-==================
+#### Enter a credit RMA
 
 >   You should use credit RMA documents when a customer returns an item for a
 >   credit on their account for any remaining value, rather then having the item
@@ -1191,8 +1093,7 @@ Enter a credit RMA
 
 >   A screenshot of a cell phone Description automatically generated
 
-Enter a replacement RMA
-=======================
+#### Enter a replacement RMA
 
 >   You should use replacement RMA documents when a customer returns a piece of
 >   equipment, and your company needs to provide them a replacement item for the
@@ -1218,8 +1119,7 @@ Enter a replacement RMA
 
 8.  Click **Save**.
 
-Enter a cross–ship RMA
-======================
+#### Enter a cross–ship RMA
 
 >   You should use cross–ship RMA documents when a customer is going to return
 >   an item that their business cannot function without, and your company needs
@@ -1245,8 +1145,7 @@ Enter a cross–ship RMA
 
 8.  Click **Save**.
 
-Enter a repair and return RMA
-=============================
+#### Enter a repair and return RMA
 
 >   You should use repair RMA documents when a customer is going to return an
 >   item, and your company needs to repair the item and send that same item back
@@ -1272,10 +1171,9 @@ Enter a repair and return RMA
 
 8.  Click **Save**.
 
-Copy an RMA
-===========
+#### Copy an RMA
 
->   You can copy current RMA information to a new RMA.
+You can copy current RMA information to a new RMA.
 
 1.  Open the RMA Entry/Update window. Transactions \> Returns Management \> RMA
     Entry/Update
@@ -1285,8 +1183,7 @@ Copy an RMA
 3.  Click **Copy** to copy all the main RMA and RMA line information exactly as
     it is to a new RMA document.
 
-Create an internal RMA
-======================
+#### Create an internal RMA
 
 >   You can create RMAs and transfers for items that are already in your
 >   inventory. The Internal RMA window was designed to assist users in creating
@@ -1333,8 +1230,7 @@ Create an internal RMA
     document and create an inventory transfer to move the items from the site ID
     to the return site.
 
-Create an RTV from an RMA
-=========================
+#### Create an RTV from an RMA
 
 >   You can specify the disposition of the item your customer has returned to
 >   you. If you decide to send the item back to your vendor, an RTV document
@@ -1371,8 +1267,7 @@ Create an RTV from an RMA
 
 1.  Click **Save**.
 
-Create a depot work order from an RMA
-=====================================
+#### Create a depot work order from an RMA
 
 >   You can specify the disposition of the item your customer has returned to
 >   you. If you decide to send the item into your depot, or in–house repair
@@ -1401,9 +1296,7 @@ Create a depot work order from an RMA
 
 2.  Click **Save**.
 
-Scrap an item from an RMA
-=========================
-
+#### Scrap an item from an RMA
 >   If you decide that the item your customer has returned no longer has any
 >   value, you can scrap the item and it will be decreased out of your
 >   inventory.
@@ -1439,8 +1332,7 @@ Scrap an item from an RMA
 
 2.  Click **Save**.
 
-Void an RMA
-===========
+#### Void an RMA
 
 >   Voiding return documents is different than deleting them because they are
 >   moved to history, so they remain in your records.
@@ -1471,8 +1363,7 @@ Void an RMA
 
 3.  Click **Void**.
 
-RMA entry details
-=================
+#### RMA entry details
 
 >   When a user enters a repair price in the RMA Update Repair and Return window
 >   and leaves the **Repair Price** field, the distribution record is created
@@ -1481,7 +1372,7 @@ RMA entry details
 >   This table is based on the Posting Accounts **From** option (**Item** or
 >   **Customer**) selected in the Sales Order Processing Setup window.
 
-##### (Microsoft Dynamics GP menu \> Tools \> Setup \> Sales \> Sales Order Processing)
+(Microsoft Dynamics GP menu \> Tools \> Setup \> Sales \> Sales Order Processing)
 
 | **Account**         | **Location**                                                                                |
 |---------------------|---------------------------------------------------------------------------------------------|
@@ -1499,7 +1390,7 @@ RMA entry details
 >   This table is based on the Posting Accounts **From** option (**Item** or
 >   **Customer**) selected in the Sales Order Processing Setup window.
 
-##### (Microsoft Dynamics GP menu \> Tools \> Setup \> Sales \> Sales Order Processing)
+(Microsoft Dynamics GP menu \> Tools \> Setup \> Sales \> Sales Order Processing)
 
 IMAGE – FARM10.jpg
 
@@ -1507,8 +1398,7 @@ IMAGE – FARM10.jpg
 
 A screenshot of a cell phone Description automatically generated
 
-Enter a credit RTV
-==================
+#### Enter a credit RTV
 
 >   You should use credit RTV documents when your company returns an item to
 >   your vendor, who agrees to issue a credit on your account for the value of
@@ -1612,8 +1502,7 @@ Enter a credit RTV
 
 8.  Click **Save**.
 
-Enter a replacement RTV
-=======================
+#### Enter a replacement RTV
 
 >   You should use replacement RTV documents when your company returns an item
 >   to your vendor, and your vendor agrees to replace it with a new item.
@@ -1657,9 +1546,7 @@ Enter a replacement RTV
 
 2.  Click **Save**.
 
-Enter a cross–ship RTV
-======================
-
+#### Enter a cross–ship RTV
 >   You should use cross–ship RTV documents when your company is going to return
 >   an item that your business cannot function without, and your vendor agrees
 >   to provide your company a new item in replacement before they will receive
@@ -1715,8 +1602,7 @@ Enter a cross–ship RTV
 
 2.  Click **Save**.
 
-Enter a repair and return RTV
-=============================
+#### Enter a repair and return RTV
 
 >   You should use repair RTV documents when your company returns an item to
 >   your vendor for repair. The vendor repairs the item and sends that same item
@@ -1770,8 +1656,7 @@ Enter a repair and return RTV
 
 2.  Click **Save**.
 
-Void an RTV
-===========
+#### Void an RTV
 
 >   Voiding return documents is different than deleting them because they are
 >   moved to history, so they remain in your records.
@@ -1812,8 +1697,7 @@ Void an RTV
 
 3.  Click **Void**.
 
-RTV entry details
-=================
+#### RTV entry details
 
 >   When the RTV record is created, the default account numbers, for
 >   distribution types Inventory Offset and Purchase from RTV type accounts will
@@ -1849,8 +1733,7 @@ RTV entry details
 | Purchases        | Reimbursement Account from RTV Type Accounts; if empty, then the Purchases account from Vendor Master; if empty, then from Posting Accounts – Sales |
 | Accounts Payable | A/P account from Vendor Master; if empty, then from Posting Accounts – Sales                                                                        |
 
-Chapter 4: Posting procedures
-=============================
+### Chapter 4: Posting procedures
 
 >   There are several areas within Returns Management where transactions are
 >   posted to update other modules. Some of these areas include RMA receiving,
@@ -1885,8 +1768,7 @@ Chapter 4: Posting procedures
 
 -   *Inventory receipts*
 
-Receive an RMA shipment
-=======================
+#### Receive an RMA shipment
 
 >   You can enter the receipt of a returned item on an existing RMA document at
 >   the appropriate return location.
@@ -1913,7 +1795,7 @@ Receive an RMA shipment
 -   *The default account distribution is based on data entered in the RTV
     Entry/Update window. For more information, see RMA entry details.*
 
-    >   The following table explains how the account field is populated:
+The following table explains how the account field is populated:
 
 | **Account**      | **Location**                                                                            |
 |------------------|-----------------------------------------------------------------------------------------|
@@ -2007,8 +1889,7 @@ When the **Return Item Number** is changed in RMA Receiving on an RMA that origi
 
 >   A screenshot of a cell phone Description automatically generated
 
-Close an RMA
-============
+#### Close an RMA
 
 >   When the RMA process is complete, you can create an invoice for any repair
 >   or additional charges. Only those RMA documents that have been selected as
@@ -2067,8 +1948,7 @@ Close an RMA
 
 >   A screenshot of a cell phone Description automatically generated
 
-Ship an RTV
-===========
+#### Ship an RTV
 
 >   The RTV Shipping window is a multi–purpose window where you can perform the
 >   shipping process for your RTVs. You also can print a packing slip to send
@@ -2109,7 +1989,7 @@ Ship an RTV
 
 1.  Open the RTV Shipping window.
 
-###### Transactions \> Returns Management \> RTV Shipping
+Transactions \> Returns Management \> RTV Shipping
 
 1.  Select a way to view the RTV documents. To view all open RTV documents,
     select **All**.
@@ -2138,8 +2018,7 @@ Ship an RTV
 
 7.  Click **Post**.
 
-Receive an RTV
-==============
+#### Receive an RTV
 
 >   You can access an existing RTV document and record that the item was
 >   received from the vendor. The RTV Receiving window is used to complete the
@@ -2206,8 +2085,7 @@ Receive an RTV
 5.  Click **Post**. The RTV document will be marked as received or partially
     received, and the item will be transferred to the inbound site.
 
-Close an RTV
-============
+#### Close an RTV
 
 >   You can use the RTV Closing window to indicate that the RTV process is
 >   complete. The default cost and reimbursement information from the RTV
@@ -2284,8 +2162,7 @@ For amounts in the **Reimbursement** area, the sum of all reimbursements amounts
 
 2.  Click **Post**.
 
-Transfer inventory
-==================
+#### Transfer inventory
 
 >   You can enter or process transactions that keep track of a physical movement
 >   of inventory items from one site to another. You also can print picking
@@ -2350,15 +2227,13 @@ Transfer inventory
 
 >   A screenshot of a cell phone Description automatically generated
 
-Inventory receipts
-==================
+#### Inventory receipts
 
 >   You can receive in-transit inventory from the Receivings Transaction Entry
 >   window in Purchase Order Processing. Refer to Purchase Order Processing
 >   documentation for more information.
 
-Chapter 5: Maintenance procedures
-=================================
+### Chapter 5: Maintenance procedures
 
 >   Once you’ve begun using Returns Management, proper maintenance of your
 >   return information is essential for preserving the accuracy of your records.
@@ -2378,8 +2253,7 @@ Chapter 5: Maintenance procedures
 
 -   *Delete Returns Management inventory transfer history*
 
-Reconcile inventory quantities for returns
-==========================================
+#### Reconcile inventory quantities for returns
 
 >   Use the Reconcile Inventory Quantities process if you discover
 >   inconsistencies in inventory allocated quantities.
@@ -2419,8 +2293,7 @@ System User’s Guide (**Help \> Printable Manuals**).
 
 3.  Click **OK**.
 
-Delete return history
-=====================
+#### Delete return history
 
 >   History records provide useful information for auditing purposes. If you’re
 >   keeping history, you can maintain and review records for an unlimited number
@@ -2444,8 +2317,7 @@ Delete return history
 
 5.  Click **Remove**.
 
-Delete Returns Management inventory transfer history
-====================================================
+#### Delete Returns Management inventory transfer history
 
 >   The Inventory Purge Utility gives you the ability to remove received
 >   inventory transfers from the system. Received transfers with a date received
@@ -2466,8 +2338,7 @@ Delete Returns Management inventory transfer history
 
 3.  Click **Remove**.
 
-Part 3: Inquiries and reports
-=============================
+## Part 3: Inquiries and reports
 
 >   A vast amount of detailed information about your business’s return
 >   activities are stored. There might be times when you need information about
@@ -2490,8 +2361,7 @@ Part 3: Inquiries and reports
     Returns Management to print the information you need in the format that best
     suits your needs.
 
-Chapter 6: Inquiries
-====================
+### Chapter 6: Inquiries
 
 >   You can use the inquiry options to view customer or vendor returns, with as
 >   much detail as you want.
@@ -2509,8 +2379,7 @@ Chapter 6: Inquiries
 
 -   *Use inquiry windows*
 
-Use SmartList
-=============
+#### Use SmartList
 
 >   You can use SmartList to run queries. Default queries are set up
 >   automatically, and you can set up customized queries at any time. You also
@@ -2518,8 +2387,7 @@ Use SmartList
 >   SmartList, choose **Microsoft Dynamics GP menu \> SmartList**. For more
 >   information, see the System User’s Guide (**Help \> Printable Manuals**).
 
-Use inquiry windows
-===================
+#### Use inquiry windows
 
 >   Inquiry windows provide easy access to information so that you always have a
 >   current view of your repair activities. Some inquiry windows have the same
@@ -2550,8 +2418,7 @@ Use inquiry windows
 
 -   RTV History By Item
 
-Chapter 7: Reports
-==================
+### Chapter 7: Reports
 
 >   You can use Returns Management reports to view the returns that have been
 >   received with a discrepancy or view the turnaround time for RMA documents.
@@ -2573,8 +2440,7 @@ Chapter 7: Reports
 -   For information about named printers, see the System Administrator’s Guide
     (**Help \> Printable Manuals**).
 
-Returns Management report summary
-=================================
+#### Returns Management report summary
 
 >   You can print several types of reports using Returns Management. Some
 >   reports automatically are printed when you complete certain procedures; for
@@ -2590,10 +2456,9 @@ IMAGE – FARM15.jpg
 
 ![A screenshot of a cell phone Description automatically generated](media/526a8c7b538b8fc4e8b3147de1553154.jpg)
 
-Reports you can use with named printers
-=======================================
+#### Reports you can use with named printers
 
->   You can assign printers to the following documents and reports:
+You can assign printers to the following documents and reports:
 
 -   Posting journals
 
@@ -2601,8 +2466,7 @@ Reports you can use with named printers
 
 -   Packing slips
 
-Specify a Returns Management report option
-==========================================
+#### Specify a Returns Management report option
 
 >   Report options include specifications for sorting records and range
 >   restrictions for a particular report. To print Returns Management reports,
