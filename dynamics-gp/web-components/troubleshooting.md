@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: 02e97d6e-54a4-4284-a258-74a9e7b161f8
 ms.reviewer: 
 ---
-<span id="_Toc498953354" class="anchor"></span>
 
 # Troubleshooting
 
