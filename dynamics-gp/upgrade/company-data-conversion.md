@@ -126,15 +126,15 @@ Native mode location example:
 
 | Location             | Example                                  |
 |----------------------|------------------------------------------|
-| Report Server URL    | http://&lt;servername&gt;/ReportServer   |
-| Report Manager URL   | http://&lt;servername&gt;/Reports        |
+| Report Server URL    | https://&lt;servername&gt;/ReportServer   |
+| Report Manager URL   | https://&lt;servername&gt;/Reports        |
 
 SharePoint Integrated mode location example:
 
 
 | Location             | Example                                  |
 |-------------------------------------|-----------------------------------------------------|
-| SharePoint Site       | http://&lt;servername&gt;/Reports |
+| SharePoint Site       | https://&lt;servername&gt;/Reports |
 
 > [!NOTE]
 > Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration manager to verify the Report Server Mode being and the URL locations.  
@@ -160,7 +160,7 @@ Network share location example:
 
 | Network share              | [\\\\Servername\\sharename](file:///\\Servername\sharename) |  
 |----------------------------|-------------------------------------------------------------|
-| SharePoint Site            | http://&lt;servername&gt;/Reports                           |
+| SharePoint Site            | https://&lt;servername&gt;/Reports                           |
 | Data Connections Library   | DataConnections                                             |
 | Report Library             | ReportsLibrary                                              |
 
@@ -209,8 +209,8 @@ Native mode location example:
 
 | Location             | Example                                  |
 |----------------------|------------------------------------------|
-| Report Server URL    | http://&lt;servername&gt;/ReportServer   |
-| Report Manager URL   | http://&lt;servername&gt;/Reports        |
+| Report Server URL    | https://&lt;servername&gt;/ReportServer   |
+| Report Manager URL   | https://&lt;servername&gt;/Reports        |
 
 SharePoint Integrated mode location example:
 
@@ -218,7 +218,7 @@ SharePoint Integrated mode location example:
 
 | Location              | Example                           |
 |-----------------------|-----------------------------------|
-| SharePoint Site       | http://&lt;servername&gt;/Reports |
+| SharePoint Site       | https://&lt;servername&gt;/Reports |
 
 > [!NOTE]
 > Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
@@ -248,7 +248,7 @@ Network share location example:
 
 SharePoint location example
 
-| SharePoint Site          | http://&lt;servername&gt;/Reports   |
+| SharePoint Site          | https://&lt;servername&gt;/Reports   |
 |--------------------------|-------------------------------------|
 | Data Connections Library | DataConnections                     |
 | Report Library           | ReportsLibrary                      |

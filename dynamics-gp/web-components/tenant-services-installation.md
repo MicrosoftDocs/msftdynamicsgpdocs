@@ -770,7 +770,7 @@ After you install the Tenant Manager console, you have to specify the services y
 
     The following example shows the format of the URL:
 
-        http://<servername>:<port>/TenantManagementService
+        https://<servername>:<port>/TenantManagementService
 
     ![install ten](media/tenant-services-install-10.PNG "installation 10")
 
