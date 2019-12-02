@@ -362,8 +362,7 @@ of automatic update (AU) clients to form the basis for a powerful automatic
 download and install strategy. The new AU client set includes a client for
 Windows Server 2012 operating system and has the ability to automatically
 install downloaded updates. For more information about Microsoft WSUS, see
-[https://
-technet.microsoft.com/en-us/windowsserver/bb332157.](https://technet.microsoft.com/en-us/windowsserver/bb332157)
+[Get Started with Windows Server 2016](/windows-server/get-started/server-basics).
 
 **Microsoft Systems Management Server (SMS) Software Update**
 
@@ -375,17 +374,16 @@ Tool for
 Updates, the Distribute Software Updates Wizard, and an SMS Web Reporting
 Tool with Web Reports Add-in for Software Updates. If you’re using these
 tools, you should consider migrating to a newer technology: Microsoft System
-Center Configuration Manager. For more information about migrating, see
-[https://
-www.microsoft.com/systemcenter/configurationmanager/en/us/sms.aspx.](https://www.microsoft.com/systemcenter/configurationmanager/en/us/sms.aspx)
+Center Configuration Manager. For more information, see
+[Windows Admin Center](/windows-server/manage/windows-admin-center/overview).
 
 **Microsoft System Center Configuration Manager** System Center
 
 Configuration Manager comprehensively assesses, deploys, and updates
 servers, client computers, and devices—across physical, virtual,
 distributed, and mobile environments. For more information, see
-[https://www.microsoft.com/
-systemcenter/configurationmanager/en/us/default.aspx.](https://www.microsoft.com/systemcenter/configurationmanager/en/us/default.aspx)
+For more information, see
+[Windows Admin Center](/windows-server/manage/windows-admin-center/overview).
 
 We recommend that you consider each of these security tools and encourage
 their use. It is very important that security issues are addressed as
@@ -450,8 +448,7 @@ complex network environments. Be aware that many of the policies and
 practices throughout this document can easily be applied to businesses with
 only client operating systems.
 
-For additional information for Windows Server 2008 R2 security, see [https://technet.microsoft.com/windowsserver/bb310558.aspx](https://technet.microsoft.com/en-us/windowsserver/bb310558.aspx).
-For additional information for Windows Server 2012 security, see [https://technet.microsoft.com/windowsserver/hh534429.](https://technet.microsoft.com/en-us/windowsserver/hh534429)
+For more information about Windows Server, see [Windows Server documentation](/windows-server/).
 
 The most important features of the Windows server security model are
 authentication, access control, and single sign-on, as described below.
@@ -815,9 +812,8 @@ employees from Web-based threats. Deployed on your corporate network as a
 unified gateway, Forefront TMG 2010 inspects web traffic at the network,
 application and content layers to help ensure comprehensive protection. It
 also improves your organization’s firewall performance by offloading
-processorintensive functions like inspection for malware. For more
-information, see [https://
-www.microsoft.com/en-us/server-cloud/forefront/threat-management-gatewayoverview.aspx](https://www.microsoft.com/en-us/server-cloud/forefront/threat-management-gateway-overview.aspx).
+processor-intensive functions like inspection for malware. For more
+information, see [Windows Server Security and Assurance](/windows-server/security/security-and-assurance).
 
 ### Additional security settings for SQL Server
 
@@ -940,10 +936,6 @@ configure firewalls to report all attempts at unauthorized access.
 
 To minimize the number of ports that you need to open on the inner firewall,
 you can use an application layer firewall, such as ISA Server.
-
-For more information about TCP/IP and how to design a TCP/IP network, search
-the TechNet Library located at [https://technet.microsoft.com/en-us/library/
-default.aspx](https://technet.microsoft.com/en-us/library/default.aspx).
 
 ### Wireless networks
 
@@ -1145,7 +1137,7 @@ with your organization.
     This signature confirms that the macro or document originated from the
     signer and has not been altered. For more information about Microsoft Office
     security features, visit the Microsoft Office Online Web site
-    ([https://office.microsoft.com/en-us/default.aspx)](https://office.microsoft.com/en-us/default.aspx).
+    ([https://office.microsoft.com/default.aspx)](https://office.microsoft.com/default.aspx).
 
 ## Chapter 5: Microsoft Dynamics GP security
 
