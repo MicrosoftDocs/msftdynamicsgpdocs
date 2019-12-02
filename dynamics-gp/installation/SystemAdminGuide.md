@@ -3254,7 +3254,7 @@ CustomerSource is a Web site for registered Microsoft Dynamics GP customers.
 CustomerSource is available 24 hours a day. You must have a user name and
 password to enter the site. You can access CustomerSource by navigating to
 [https:/
-/mbs.microsoft.com/customersource](http://www.microsoft.com/dynamics/customer/en-us/access-customersource/default.aspx)
+/mbs.microsoft.com/customersource](https://www.microsoft.com/dynamics/customer/en-us/access-customersource/default.aspx)
 with your Internet browser.
 
 From the CustomerSource start page, select the Support option. From the Support
@@ -3274,7 +3274,7 @@ SQL Server Books Online is a documentation resource installed with SQL Server.
 
 Use Books Online to troubleshoot SQL error messages and other issues related to
 SQL Server. Microsoft’s web site,
-[www.microsoft.com,](http://www.microsoft.com/) is also a good source of
+[www.microsoft.com,](https://www.microsoft.com/) is also a good source of
 information for issues related to SQL Server or your operating system.
 
 #### Signs that data maintenance is needed

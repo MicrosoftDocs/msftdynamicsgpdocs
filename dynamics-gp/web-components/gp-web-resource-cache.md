@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: 1b4d1c9a-8ad7-497e-9a22-a7206cd1e516
 ms.reviewer: 
 ---
-<span id="_Toc498953350" class="anchor"></span>
 
 # GP Web Resource Cache
 

@@ -33,7 +33,7 @@ To access this information log in to [CustomerSource](https://mbs.microsoft.com/
 
 ### Your current service plan does not allow access to this information
 
-To learn more about Microsoft Dynamics Service Plans, review our [service plan offerings](http://go.microsoft.com/fwlink/?LinkID=532453).
+To learn more about Microsoft Dynamics Service Plans, review our [service plan offerings](https://go.microsoft.com/fwlink/?LinkID=532453).
 
 All the listed Microsoft Dynamics GP tools are free as is, any further functionality outside of this download will be taken on a limited basis and be considered an Advisory Service
 

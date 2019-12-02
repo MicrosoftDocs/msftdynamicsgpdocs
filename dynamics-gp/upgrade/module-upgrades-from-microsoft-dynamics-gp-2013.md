@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: 19740bf2-52ba-40c0-af22-a9bc30f03a24
 ms.reviewer: 
 ---
-<span id="_Toc498615813" class="anchor"></span>
 
 # Module upgrades from Dynamics GP 2013
 
@@ -32,7 +31,7 @@ This chapter contains the following sections:
 
 ## System upgrade
 
-The following change has been made in Dynamics GP. For more information, refer to your System User ’s Guide (Help &gt;&gt; Contents &gt;&gt; select Setting up the system).
+The following change has been made in Dynamics GP. For more information, refer to your System User ’s Guide .
 
 ### Posting Accounts Setup window
 

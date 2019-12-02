@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: 02e97d6e-54a4-4284-a258-74a9e7b161f8
 ms.reviewer: 
 ---
-<span id="_Toc498953354" class="anchor"></span>
 
 # Troubleshooting
 
@@ -58,7 +57,9 @@ If the status bar indicates “Initializing” for an extended period of time, b
 
 The XML content for the file should be displayed in the web browser. If it is not, then there is an issue with the configuration of the runtime service. Usually the issue involves the security certificate that is used for the port. Use the following command to find the details of the security certificate that is bound to the port:
 
+```
 netsh http show sslcert
+```
 
 If you do not see that there is a security certificate bound to port 443, then the web client will need to be repaired or re-installed, so that a security certificate can be bound to the port.
 
@@ -72,7 +73,9 @@ If you choose to use different security certificates for the web site and for th
 
 For the web client to work properly, the appropriate ports must be opened in the computer ’s firewall. The Dynamics GP Web Client installer opens the appropriate ports when components of the web client are installed. You can use the following command to list the ports that are open on a system:
 
+```
 netstat - anob
+```
 
 Port accessibility issues are more likely to occur in scale out installation, when web client components are installed on different machines. For example, the session host machines must be able to access the Session Central Service, which is typically done through port 48651. That means this port must be open on the system that is running the Session Central Service.
 

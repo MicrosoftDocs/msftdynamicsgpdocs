@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: 2d35bc19-6bfe-4284-9870-bb3b5ad6b2b1
 ms.reviewer: 
 ---
-<span id="_Toc498953310" class="anchor"></span>
 
 # Single machine installation
 

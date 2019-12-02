@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: b962aa1e-8900-4b47-936f-731caf43f5f2
 ms.reviewer: 
 ---
-<span id="_Toc498953347" class="anchor"></span>
 
 # Repairing the web client
 

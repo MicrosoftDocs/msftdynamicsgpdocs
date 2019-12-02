@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: aa6e26de-b312-4a56-b877-4cf2fd0393fe
 ms.reviewer: 
 ---
-<span id="_Toc498953370" class="anchor"></span>
 
 # Working with the web client
 

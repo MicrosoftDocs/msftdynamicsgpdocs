@@ -95,8 +95,8 @@ Native mode location example:
 
 | Location           | Example                                |
 |--------------------|----------------------------------------|
-| Report Server URL  | http://&lt;servername&gt;/ReportServer |
-| Report Manager URL | http://&lt;servername&gt;/Reports      |
+| Report Server URL  | https://&lt;servername&gt;/ReportServer |
+| Report Manager URL | https://&lt;servername&gt;/Reports      |
 
 SharePoint Integrated mode location example.
 

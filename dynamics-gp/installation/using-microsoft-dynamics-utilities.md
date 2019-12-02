@@ -126,8 +126,8 @@ To prepare Dynamics GP for use with default settings:
 
     | Location           | Example                                |
     |--------------------|----------------------------------------|
-    | Report Server URL  | http://&lt;servername&gt;/ReportServer |
-    | Report Manager URL | http://&lt;servername&gt;/Reports      |
+    | Report Server URL  | https://&lt;servername&gt;/ReportServer |
+    | Report Manager URL | https://&lt;servername&gt;/Reports      |
 
     SharePoint Integrated mode location example.
    
@@ -284,8 +284,8 @@ A report file called Acctfram.txt is created in the Data folder inside of the GP
 
     | Location           | Example                                |
     |--------------------|----------------------------------------|
-    | Report Server URL  | http://&lt;servername&gt;/ReportServer |
-    | Report Manager URL | http://&lt;servername&gt;/Reports      |
+    | Report Server URL  | https://&lt;servername&gt;/ReportServer |
+    | Report Manager URL | https://&lt;servername&gt;/Reports      |
 
     SharePoint Integrated mode location example.
 
@@ -388,8 +388,8 @@ To add sample company data:
 
     | Location           | Example                                |
     |--------------------|----------------------------------------|
-    | Report Server URL  | http://&lt;servername&gt;/ReportServer |
-    | Report Manager URL | http://&lt;servername&gt;/Reports      |
+    | Report Server URL  | https://&lt;servername&gt;/ReportServer |
+    | Report Manager URL | https://&lt;servername&gt;/Reports      |
 
     SharePoint Integrated mode location example.
 
@@ -479,8 +479,8 @@ If you don’t want to deploy business intelligence components, leave the compon
 
     | Location           | Example                                |
     |--------------------|----------------------------------------|
-    | Report Server URL  | http://&lt;servername&gt;/ReportServer |
-    | Report Manager URL | http://&lt;servername&gt;/Reports      |
+    | Report Server URL  | https://&lt;servername&gt;/ReportServer |
+    | Report Manager URL | https://&lt;servername&gt;/Reports      |
 
     SharePoint Integrated mode location example.
 

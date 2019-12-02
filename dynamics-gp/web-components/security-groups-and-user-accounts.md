@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: eeff6d93-ce23-45de-9c8f-9bb43db99468
 ms.reviewer: 
 ---
-<span id="_Toc498953288" class="anchor"></span>
 
 # Security groups and user accounts
 

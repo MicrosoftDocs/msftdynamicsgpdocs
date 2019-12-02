@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: 28ac89cc-0a21-456c-a209-39b6ddde3ef7
 ms.reviewer: 
 ---
-<span id="_Toc498953274" class="anchor"></span>
 
 # Deployment configurations
 

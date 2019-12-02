@@ -188,7 +188,7 @@ If you plan to submit W-2 statements electronically using the EFW2 format, you m
 
 Use one of the following options to obtain a User Identification Number:
 
-- Internet: [www.socialsecurity.gov/bso/bsowelcome.htm](http://www.socialsecurity.gov/bso/bsowelcome.htm)  
+- Internet: [www.socialsecurity.gov/bso/bsowelcome.htm](https://www.socialsecurity.gov/bso/bsowelcome.htm)  
 - Telephone: 1-800-772-6270 Monday through Friday, 7 a.m. to 7 p.m. (EST)  
 
 ### Non-supported electronic filing
@@ -205,14 +205,14 @@ Suite 100
 Jacksonville FL 32256  
 Telephone: (888) 255-3815  
 E-mail: *sales\@greenshades.com*  
-Web site: [www.greenshades.com]  (http://www.greenshades.com/)
+Web site: [www.greenshades.com]  (https://www.greenshades.com/)
 
 MasterTax, LLC  
 7150 East Camelback Road, Suite 160  
 Scottsdale, AZ 85251  
 Telephone: (480) 778-8723  
 E-mail: *emailus\@mastertax.net*  
-Web site: [www.mastertax.net](http://www.mastertax.net/)
+Web site: [www.mastertax.net](https://www.mastertax.net/)
 
 ### Frequently asked questions
 
@@ -728,11 +728,11 @@ For information on Microsoft developers that provide electronic filing services 
 
 **BSO filing**
 
-You can use the SSA’s Business Services Online website to upload wage information in EFW2 format to the SSA over the Internet. To use BSO, go to [www.socialsecurity.gov/bso/bsowelcome.htm.](http://www.socialsecurity.gov/bso/bsowelcome.htm). You’ll need to register for a User Identification Number to use BSO services.
+You can use the SSA’s Business Services Online website to upload wage information in EFW2 format to the SSA over the Internet. To use BSO, go to [www.socialsecurity.gov/bso/bsowelcome.htm.](https://www.socialsecurity.gov/bso/bsowelcome.htm). You’ll need to register for a User Identification Number to use BSO services.
 
 **EDT filing**
 
-You can use the Electronic Data Transfer (EDT) system to file wage information using the EFW2 format. The system connects SSA’s national  computer with various states, federal offices, and SSA sites. For details, refer to the Electronic Data Transfer (EDT) Guide at  [www.socialsecurity.gov/employer/pub.htm.](http://www.socialsecurity.gov/employer/pub.htm)
+You can use the Electronic Data Transfer (EDT) system to file wage information using the EFW2 format. The system connects SSA’s national  computer with various states, federal offices, and SSA sites. For details, refer to the Electronic Data Transfer (EDT) Guide at  [www.socialsecurity.gov/employer/pub.htm.](https://www.socialsecurity.gov/employer/pub.htm)
 
 ## Chapter 6: Report procedures
 
@@ -771,7 +771,7 @@ You must print a W-2 statement for each employee who worked for you during the y
 
 Print the W-2 Validation report before printing W-2 statements to verify that the information to be printed on W-2 statements is correct. If the W-2 Validation Report shows any errors that need to be corrected, use the Print W-2 Forms window or the Edit W-2 Information window to make changes to the appropriate W-2 forms. For more information, see [Editing W-2 records](#editing-w-2-records).
 
-If you’re submitting W-2 wage reports electronically, you can also use AccuWage from [www.socialsecurity.gov](http://www.socialsecurity.gov/) to verify if the information in your file is correct.
+If you’re submitting W-2 wage reports electronically, you can also use AccuWage from [www.socialsecurity.gov](https://www.socialsecurity.gov/) to verify if the information in your file is correct.
 
 **To print W-2 forms and reports:**
 

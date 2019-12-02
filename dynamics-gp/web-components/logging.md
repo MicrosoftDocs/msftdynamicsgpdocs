@@ -12,7 +12,6 @@ ms.topic: article
 ms.assetid: 6efe635c-3de1-42e0-b23a-a9988979ef1f
 ms.reviewer: 
 ---
-<span id="_Toc498953343" class="anchor"></span>
 
 # Logging
 

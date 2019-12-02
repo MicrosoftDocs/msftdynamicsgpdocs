@@ -133,7 +133,8 @@
 ### [Invoicing](distribution/Invoicing.md)
 ### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
 ### [Project Accounting Cost Management](distribution/ProjAcctCostManagement.md)
-### [Invoicing](distribution/Invoicing.md)
+### [Inventory Control in Dynamics GP - Parts 1-3](distribution/Inventory.md)
+### [Inventory Control in Dynamics GP - Parts 4-6](distribution/Inventory2.md)
 ### [Glossary](distribution/glossary.md)
 
 <!--- payroll -->
