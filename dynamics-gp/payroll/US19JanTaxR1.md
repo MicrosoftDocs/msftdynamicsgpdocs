@@ -75,6 +75,20 @@ Withholding rates for taxpayers filing as *MAR*
 | 426,600     | 633,950          | 94,735.00      | 35%          | 426,600            |
 | 633,950     | And Over         | 167,307.50     | 37%          | 633,950            |
 
+Withholding rates for taxpayers filing as *MARHR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 12,400           | 0              | 0%           | 0                  |
+| 12,400      | 22,275           | 0              | 10%          | 12,400             |
+| 22,275      | 52,525           | 987.50         | 12%          | 22,275             |
+| 52,525      | 97,925           | 4,617.50       | 22%          | 52,525             |
+| 97,925      | 175,700          | 14,605.50      | 24%          | 97,925             |
+| 175,700     | 219,750          | 33,271.50      | 32%          | 175,700            |
+| 219,750     | 323,425          | 47,367.50      | 35%          | 219,700            |
+| 323,425     | And Over         | 83,653.75      | 37%          | 323,425            |
+
+
 Withholding rates for taxpayers filing as *SINGLE*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
@@ -88,6 +102,19 @@ Withholding rates for taxpayers filing as *SINGLE*
 | 211,150     | 522,200          | 47,367.50      | 35%          | 211,150            |
 | 522,200     | And Over         | 156,235.00     | 37%          | 522,200            |
 
+Withholding rates for taxpayers filing as *SGLHHR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 6,200            | 0              | 0%           | 0                  |
+| 6,200       | 11,138           | 0              | 10%          | 6,200              |
+| 11,138      | 26,263           | 493.75         | 12%          | 11,138             |
+| 26,263      | 48,963           | 2,308.75       | 22%          | 26,163             |
+| 48,963      | 87,850           | 7,302.75       | 24%          | 48,963             |
+| 87,850      | 109,875          | 16,635.75      | 32%          | 87,850             |
+| 109,875     | 265,400          | 23,683.75      | 35%          | 109,875            |
+| 265,400     | And Over         | 78,117.50      | 37%          | 265,400            |
+
 Withholding rates for taxpayers filing as *HOH*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
@@ -100,6 +127,19 @@ Withholding rates for taxpayers filing as *HOH*
 | 173,350     | 217,400          | 31,830.00      | 32%          | 173,350            |
 | 217,400     | 528,450          | 45,926.00      | 35%          | 217,400            |
 | 528,450     | And Over         | 154,793.50     | 37%          | 528,450            |
+
+Withholding rates for taxpayers filing as *HOHHR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 9,325            | 0              | 0%           | 0                  |
+| 9,325       | 16,375           | 0              | 10%          | 9,325              |
+| 16,375      | 36,175           | 705.00         | 12%          | 16,375             |
+| 36,175      | 52,075           | 3,081.00       | 22%          | 36,175             |
+| 52,075      | 90,975           | 6,579.00       | 24%          | 52,075             |
+| 90,975      | 113,000          | 15,915.00      | 32%          | 90,975             |
+| 113,000     | 268,525          | 22,963.00      | 35%          | 113,000            |
+| 268,525     | And Over         | 77,396.75      | 37%          | 268,525            |
 
 
 ### 2019 state or territorial tax changes
