@@ -29,6 +29,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - Federal changes and FICA Limit
 - Iowa
 - Maine
+- North Carolina
 - Ohio
 
 
@@ -40,7 +41,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - Minnesota
 - New York
 - New York – Yonkers
-- North Carolina
+
 - Oregon
 - South Carolina
 
@@ -210,6 +211,14 @@ Special table type
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 162,950          | 0              | 0            | 21,550             |
 | 162,950     | 312,950          | 150,000        | 0            | 0                  |
+
+
+
+#### Withholding changes for North Carolina
+
+The Standard Deduction amount changed to \$16,125 from \$15,000 for Filing Status of HOH
+
+The Standard Deduction amount changed to \$10,750 from \$10,000 for Filing Status of MAR and SINGLE
 
 
 #### Withholding changes for Ohio
