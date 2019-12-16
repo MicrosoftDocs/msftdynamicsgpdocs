@@ -26,21 +26,21 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 
      
 ## Changes in January Round 1 update
-81,325 
 - Federal changes and FICA Limit
+- Iowa
+- Maine
+- Ohio
+
 
 - California
 - Georgia
-- Iowa
 - Illinois
 - Kentucky
-- Maine
 - Maryland
 - Minnesota
 - New York
 - New York – Yonkers
 - North Carolina
-- Ohio
 - Oregon
 - South Carolina
 
@@ -61,6 +61,18 @@ Withholding rates for taxpayers filing as *NRA*
 | 159,100     | 203,150          | 33,271.50      | 32%          | 159,100            |
 | 203,150     | 514,200          | 47,367.50      | 35%          | 203,150            |
 | 514,200     | And Over         | 156,235.00     | 37%          | 514,200            |
+
+Withholding rates for taxpayers filing as *NRAHR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           |0                 | 0              | 10%          | 0                  |
+|             | 14,063           | 987.50         | 12%          | 5,675              |
+| 14,063      | 36,763           | 4,617.50       | 22%          | 14,063             |
+| 36,763      | 75,650           | 14,605.50      | 24%          | 36,763             |
+| 75,650      | 97,675           | 33,271.50      | 32%          | 75,650             |
+| 97,675      | 253,200          | 47,367.50      | 35%          | 97,675             |
+| 253,200     | And Over         | 156,235.00     | 37%          | 253,200            |
 
 Withholding rates for taxpayers filing as *MAR*
 
@@ -142,9 +154,82 @@ Withholding rates for taxpayers filing as *HOHHR*
 | 268,525     | And Over         | 77,396.75      | 37%          | 268,525            |
 
 
-### 2019 state or territorial tax changes
+### 2020 state or territorial tax changes
 
 The following tax changes are included in this update:
+
+
+#### Withholding changes for Iowa
+
+The Standard Deduction Amount for Filing Status EXP1 is \$1880, and Filing Status EXP2 is \$4630
+
+Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 1,480            | 0              | 0.33%        | 0                  |
+| 1,480       | 2,959            | 4.88           | 0.67%        | 1,480              |
+| 2,959       | 5,918            | 14.79          | 2.25%        | 2,959              |
+| 5,918       | 13,316           | 81.37          | 4.14%        | 5,918              |
+| 13,316      | 22,193           | 387.65         | 5.63%        | 13,316             |
+| 22,193      | 29,590           | 887.43         | 5.96%        | 22,193             |
+| 29,590      | 44,385           | 1,328.29       | 6.25%        | 29,590             |
+| 44,385      | 66,578           | 2,252.98       | 7.44%        | 44,385             |
+| 66,578      |                  | 3,904.14       | 8.53%        | 66,578             |
+
+#### Withholding changes for Maine
+
+The Personal Exemption changed from \$4200 to \$4300 for all Filing Status’
+
+Withholding rates for taxpayers filing as *SINGLE*, Tax table type
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+|  0          | 22,200           | 0              | 5.8%         | 0                  |
+| 22,200      | 52,600           | 1,288          | 6.75%        | 22,200             |
+| 52,600      | And over         | 3,340          | 7.15%        | 52,600             |
+
+Special table type
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 81,450           | 0              | 0            | 9,350              |
+| 81,450      | 156,450          | 75,000         | 0            | 0                  |
+
+Withholding rates for taxpayers filing as MAR, Tax table type
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 44,450           |                | 5.80%        | 0                  |
+| 44,450      | 105,200          | 2,578          | 6.75%        | 44,450             |
+| 105,200     | And Over         | 6,679          | 7.15%        | 105,200            |
+
+Special table type
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 162,950          | 0              | 0            | 21,550             |
+| 162,950     | 312,950          | 150,000        | 0            | 0                  |
+
+
+#### Withholding changes for Ohio
+
+Withholding rates for taxpayers filing as *NA*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | .516%        | 0                  |
+| 5,000       | 10,000           | 25.00          | 1.032%       | 5,000              |
+| 10,000      | 15,000           | 75.00          | 2.067%       | 10,000             |
+| 15,000      | 20,000           | 175.00         | 2.582%       | 15,000             |
+| 20,000      | 40,000           | 300.00         | 3.099%       | 20,000             |
+| 40,000      | 80,000           | 900.00         | 3.614%       | 40,000             |
+| 80,000      | 100,000          | 2300.00        | 4.132%       | 80,000             |
+| 100,000     | And over         | 3100.00        | 5.164%       | 100,000            |
+
+
+
+
 
 #### Withholding changes for California
 
@@ -259,23 +344,7 @@ Withholding rates for taxpayers filing as *SINGLE*
 | 5,250       | 7,000            | 142.50         | 5.0%         | 5,250              |
 | 7,000       |                  | 230.00         | 5.75%        | 7,000              |
 
-#### Withholding changes for Iowa
 
-The Standard Deduction Amount for Filing Status EXP1 is \$1690.00, and Filing Status EXP2 is \$4160.00
-
-Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 1,333            | 0              | 0.33%        | 0                  |
-| 1,333       | 2,666            | 4.40           | 0.67%        | 1,333              |
-| 2,666       | 5,331            | 13.33          | 2.25%        | 2,666              |
-| 5,331       | 11,995           | 73.29          | 4.14%        | 5,331              |
-| 11,995      | 19,992           | 349.18         | 5.63%        | 11,995             |
-| 19,992      | 26,656           | 799.41         | 5.96%        | 19,992             |
-| 26,656      | 39,984           | 1,196.58       | 6.25%        | 26,656             |
-| 39,984      | 59,976           | 2,029.58       | 7.44%        | 39,984             |
-| 59,976      |                  | 3,516.98       | 8.53%        | 59,976             |
 
 #### Withholding changes for Illinois
 
@@ -286,39 +355,6 @@ The Dependent Exemptions is \$2,275
 The Standard Deduction changed to \$2590 from \$2530  
 The Flat Tax Rate remains at 5%
 
-#### Withholding changes for Maine
-
-The Personal Exemption changed from \$4150.00 to \$4200.00 for all Filing Status’
-
-Withholding rates for taxpayers filing as *SINGLE*, Tax table type
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-|  0          | 21,850           | 0              | 5.8%         | 0                  |
-| 21,850      | 51,700           | 1,267          | 6.75%        | 21,850             |
-| 51,700      | And over         | 3,282          | 7.15%        | 51,700             |
-
-Special table type
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 81,450           | 0              | 0            | 9,350              |
-| 81,450      | 156,450          | 75,000         | 0            | 0                  |
-
-Withholding rates for taxpayers filing as MAR, Tax table type
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 43,700           |                | 5.80%        | 0                  |
-| 43,700      | 103,400          | 2,535          | 6.75%        | 43,700             |
-| 103,400     | And Over         | 6,565          | 7.15%        | 103,400            |
-
-Special table type
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 162,950          | 0              | 0            | 21,550             |
-| 162,950     | 312,950          | 150,000        | 0            | 0                  |
 
 #### Withholding changes for Maryland
 
