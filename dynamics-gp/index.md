@@ -5,7 +5,7 @@ author: edupont04
 
 ms.prod: dynamics-gp
 ms.topic: get-started-article
-ms.date: 10/15/2018
+ms.date: 12/17/2019
 ms.author: edupont
 
 ---
@@ -58,4 +58,4 @@ We welcome contributions to the Dynamics GP content. You can find the source fil
 
 ## See Also
 
-[Microsoft Dynamics GP Developer Documentation]/previous-versions/dynamicsgp/developer/hh686187(v%3dgp.20))  
+[Microsoft Dynamics GP Developer Documentation](/previous-versions/dynamicsgp/developer/hh686187(v=gp.20))  
