@@ -162,10 +162,78 @@ Withholding rates for taxpayers filing as *HOHHR*
 The following tax changes are included in this update:
 
 
+#### Withholding changes for California
+
+For Filing Status of HOH  
+Personal Exemption is \$134.20 from \$129.80 
+Standard Deduction is \$9,074 from \$8,802  
+Low Income Limit is \$30,083 from \$29,146
+
+For Filing Status of MAR1  
+Personal Exemption is \$134.20 from \$129.80
+Standard Deduction is \$4,537 from \$4,401 
+Low Income Limit is \$15,042 from \$14,573
+
+For Filing Status of MAR2  
+Personal Exemption is \$134.20 from \$129.80 
+Standard Deduction is \$9,074 from \$8,802  
+Low Income Limit is \$30,083 from \$29,146
+
+For Filing Status of SINGLE  
+Personal Exemption is \$134.20 from \$129.80
+Standard Deduction is \$4,537 from \$4,401 
+Low Income Limit is \$15,042 from \$14,573
+
+Withholding rates for taxpayers filing as *HOH*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 17,629           | 0              | 1.1%         | 0                  |
+| 17,629      | 41,768           | 193.92         | 2.2%         | 17,629             |
+| 41,768      | 53,843           | 724.98         | 4.4%         | 41,768             |
+| 53,843      | 66,636           | 1,256.28       | 6.6%         | 53,843             |
+| 66,636      | 78,710           | 2,100.62       | 8.8%         | 66,636             |
+| 78,710      | 401,705          | 3,163.13       | 10.23%       | 78,710             |
+| 401,705     | 482,047          | 36,205.52      | 11.33%       | 401,705            | 
+| 482,047     | 803,410          | 45,308.27      | 12.43%       | 482,047            |
+| 803,410     | 1,000,000        | 85,253.69      | 13.53%       | 803,410            |
+| 1,000,000   | And Over         | 111,852.32     | 14.63%       | 1,000,000          |
+
+Withholding rates for taxpayers filing as *MAR1* and *MAR2*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 17,618           | 0              | 1.1%         | 0                  |
+| 17,618      | 41,766           | 193.80         | 2.2%         | 17,618             |
+| 41,766      | 65,920           | 725.06         | 4.4%         | 41,766             |
+| 65,920      | 91,506           | 1,787.84       | 6.6%         | 65,920             |
+| 91,506      | 115,648          | 3,476.52       | 8.8%         | 91,506             |
+| 115,648     | 590,746          | 5,601.02       | 10.23%       | 115,648            |
+| 590,746     | 708,890          | 54,203.55      | 11.33%       | 590,746            | 
+| 708,890     | 1,000,000        | 67,589.27      | 12.43%       | 708,890            |
+| 1,000,000   | 1,181,484        | 103,774.24     | 13.53%       | 1,000,000          |
+| 1,181,484   | And Over         | 128,329.03     | 14.63%       | 1,181,484          |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     | 
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 8,809            | 0              | 1.1%         | 0                  |
+| 8,809       | 20,883           | 96.90          | 2.2%         | 8,809              |
+| 20,883      | 32,960           | 362.53         | 4.4%         | 20,883             |
+| 32,960      | 45,753           | 893.92         | 6.6%         | 32,960             |
+| 45,753      | 57,824           | 1,738.26       | 8.8%         | 45,753             |
+| 57,824      | 295,373          | 2,800.51       | 10.23%       | 57,824             |
+| 295,373     | 354,445          | 27,101.77      | 11.33%       | 295,373            |
+| 354,445     | 590,742          | 33,794.63      | 12.43%       | 354,445            |
+| 590,742     | 1,000,000        | 63,166.35      | 13.53%       | 590,742            |
+| 1,000,000   | And Over         | 118,538.96     | 14.63%       | 1,000,000          |
+
+
+
 #### Withholding changes for Iowa
 
 The Standard Deduction Amount for Filing Status EXP1 is \$1880, and Filing Status EXP2 is \$4630
-
 Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
