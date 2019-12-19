@@ -164,25 +164,16 @@ The following tax changes are included in this update:
 
 #### Withholding changes for California
 
-For Filing Status of HOH  
+For Filing Status of HOH  and MAR2
 Personal Exemption is \$134.20 from \$129.80 
 Standard Deduction is \$9,074 from \$8,802  
 Low Income Limit is \$30,083 from \$29,146
 
-For Filing Status of MAR1  
+For Filing Status of MAR1 and SINGLE
 Personal Exemption is \$134.20 from \$129.80
 Standard Deduction is \$4,537 from \$4,401 
 Low Income Limit is \$15,042 from \$14,573
 
-For Filing Status of MAR2  
-Personal Exemption is \$134.20 from \$129.80 
-Standard Deduction is \$9,074 from \$8,802  
-Low Income Limit is \$30,083 from \$29,146
-
-For Filing Status of SINGLE  
-Personal Exemption is \$134.20 from \$129.80
-Standard Deduction is \$4,537 from \$4,401 
-Low Income Limit is \$15,042 from \$14,573
 
 Withholding rates for taxpayers filing as *HOH*
 
@@ -230,6 +221,10 @@ Withholding rates for taxpayers filing as *SINGLE*
 | 1,000,000   | And Over         | 118,538.96     | 14.63%       | 1,000,000          |
 
 
+#### Withholding changes for Illinois
+
+The Dependent Exemptions is \$2,325
+
 
 #### Withholding changes for Iowa
 
@@ -247,6 +242,13 @@ Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
 | 29,590      | 44,385           | 1,328.29       | 6.25%        | 29,590             |
 | 44,385      | 66,578           | 2,252.98       | 7.44%        | 44,385             |
 | 66,578      |                  | 3,904.14       | 8.53%        | 66,578             |
+
+
+#### Withholding changes for Kentucky
+
+The Standard Deduction changed to \$2650 from \$2590 
+The Flat Tax Rate remains at 5%
+
 
 #### Withholding changes for Maine
 
@@ -308,75 +310,6 @@ Withholding rates for taxpayers filing as *NA*
 
 
 
-
-
-#### Withholding changes for California
-
-For Filing Status of HOH  
-Personal Exemption is \$129.80 from \$125.40  
-Standard Deduction is \$8,802 from \$8,472  
-Low Income Limit is \$29,146 from \$28,095
-
-For Filing Status of MAR1  
-Personal Exemption is \$129.80 from \$125.40  
-Standard Deduction is \$4,401 from \$4,236  
-Low Income Limit is \$14,573 from \$14,048
-
-For Filing Status of MAR2  
-Personal Exemption is \$129.80 from \$125.40  
-Standard Deduction is \$8,802 from \$8,472  
-Low Income Limit is \$29,146 from \$28,095
-
-For Filing Status of SINGLE  
-Personal Exemption is \$129.80 from \$125.40  
-Standard Deduction is \$4,401 from \$4,236  
-Low Income Limit is \$14,573 from \$14,048
-
-Withholding rates for taxpayers filing as *HOH*
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 17,099           | 0              | 1.1%         | 0                  |
-| 17,099      | 40,512           | 188.09         | 2.2%         | 17,099             |
-| 40,512      | 52,224           | 703.18         | 4.4%         | 40,512             |
-| 52,224      | 64,632           | 1,218.51       | 6.6%         | 52,224             |
-| 64,632      | 76,343           | 2,037.44       | 8.8%         | 64,632             |
-| 76,343      | 389,627          | 3,068.01       | 10.23%       | 76,343             |
-| 389,627     | 467,553          | 35,116.96      | 11.33%       | 389,627            |
-| 467,553     | 779,253          | 43,945.98      | 12.43%       | 467,553            |
-| 779,253     | 1,000,000        | 82,690.29      | 13.53%       | 779,253            |
-| 1,000,000   | And Over         | 112,557.36     | 14.63%       | 1,000,000          |
-
-Withholding rates for taxpayers filing as *MAR1* and *MAR2*
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 17,088           | 0              | 1.1%         | 0                  |
-| 17,088      | 40,510           | 187.97         | 2.2%         | 17,088             |
-| 40,510      | 63,938           | 703.25         | 4.4%         | 40,510             |
-| 63,938      | 88,754           | 1,734.08       | 6.6%         | 63,938             |
-| 88,754      | 112,170          | 3,371.94       | 8.8%         | 88,754             |
-| 112,170     | 572,984          | 5,432.55       | 10.23%       | 112,170            |
-| 572,984     | 687,576          | 52,573.82      | 11.33%       | 572,984            |
-| 687,576     | 1,000,000        | 65,557.09      | 12.43%       | 687,576            |
-| 1,000,000   | 1,145,961        | 104,391.39     | 13.53%       | 1,000,000          |
-| 1,145,961   | And Over         | 124,139.90     | 14.63%       | 1,145,961          |
-
-Withholding rates for taxpayers filing as *SINGLE*
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     | 
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 8,544            | 0              | 1.1%         | 0                  |
-| 8,544       | 20,255           | 93.98          | 2.2%         | 8,544              |
-| 20,255      | 31,969           | 351.62         | 4.4%         | 20,255             |
-| 31,969      | 44,377           | 867.04         | 6.6%         | 31,969             |
-| 44,377      | 56,085           | 1,685.97       | 8.8%         | 44,377             |
-| 56,085      | 286,492          | 2,716.27       | 10.23%       | 56,085             |
-| 286,492     | 343,788          | 26,286.91      | 11.33%       | 286,492            |
-| 343,788     | 572,980          | 32,778.55      | 12.43%       | 343,788            |
-| 572,980     | 1,000,000        | 61,267.12      | 13.53%       | 572,980            |
-| 1,000,000   | And Over         | 119,042.93     | 14.63%       | 1,000,000          |
-
 #### Withholding changes for Georgia
 
 The Dependent Allowance remains at \$3,000  
@@ -425,13 +358,10 @@ Withholding rates for taxpayers filing as *SINGLE*
 
 
 
-#### Withholding changes for Illinois
-
-The Dependent Exemptions is \$2,275
 
 #### Withholding changes for Kentucky
 
-The Standard Deduction changed to \$2590 from \$2530  
+The Standard Deduction changed to \$2650 from \$2590 
 The Flat Tax Rate remains at 5%
 
 
