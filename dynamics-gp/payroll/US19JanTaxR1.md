@@ -34,6 +34,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - Maine
 - Michigan
 - Minnesota
+- Missouri
 - North Carolina
 - Ohio
 
@@ -313,6 +314,30 @@ Withholding rates for taxpayers filing as *SINGLE*
 | 30,760      | 92,350           | 1,442.36       | 6.80%        | 30,760             |
 | 92,350      | 168,200          | 5,630.48       | 7.85%        | 92,350             |
 | 168,200     | And over         | 11,584.71      | 9.85%        | 168,200            |
+
+
+
+#### Withholding changes for Missouri
+
+The Standard Deduction is \$18,650 for filing status HOH
+The Standard Deduction is \$24,800 for filing status MAR1
+The Standard Deduction is \$12,400 for filing status MAR2 and SINGLE
+
+Withholding rates for all filing status
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 1,073            | 0              | 1.5%         | 0                  |
+| 1,073       | 2,146            | 16.00          | 2.0%         | 1.073              |
+| 2,146       | 3,219            | 37.00          | 2.5%         | 2,146              |
+| 3,219       | 4,292            | 64.00          | 3.0%         | 3,219              |
+| 4,292       | 5,365            | 96.00          | 3.5%         | 4,292              |
+| 5,365       | 6,438            | 134.00         | 4.0%         | 5,365              |
+| 6,438       | 7,511            | 177.00         | 4.50%        | 6,438              |
+| 7,511       | 8,584            | 225.00         | 5.0%         | 7,511              |
+| 8,584       | And over         | 279.00         | 5.4%         | 8,584              |
+
+
 
 
 #### Withholding changes for North Carolina
