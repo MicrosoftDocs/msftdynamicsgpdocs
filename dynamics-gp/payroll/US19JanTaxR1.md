@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/16/2019
+ms.date: 12/19/2019
 ---
 # U.S. 2020 Payroll Tax Update
 
@@ -27,6 +27,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
      
 ## Changes in January Round 1 update
 - Federal changes and FICA Limit
+- California
 - Iowa
 - Maine
 - North Carolina
@@ -49,7 +50,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 
 The maximum taxable earnings for Social Security increase in 2020 to \$137,700 from \$132,900
 
-The Personal Exemption is $4,200.
+The Personal Exemption is $4,300 for SINGLE, MAR, HOH
 
 Withholding rates for taxpayers filing as *NRA*
 
@@ -64,11 +65,11 @@ Withholding rates for taxpayers filing as *NRA*
 | 514,200     | And Over         | 156,235.00     | 37%          | 514,200            |
 
 Withholding rates for taxpayers filing as *NRAHR*
+Standard Deduction $12,400
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           |0                 | 0              | 10%          | 0                  |
-|             | 14,063           | 987.50         | 12%          | 5,675              |
+|             | 14,063           | 987.50         | 12%          | 0             |
 | 14,063      | 36,763           | 4,617.50       | 22%          | 14,063             |
 | 36,763      | 75,650           | 14,605.50      | 24%          | 36,763             |
 | 75,650      | 97,675           | 33,271.50      | 32%          | 75,650             |
@@ -89,6 +90,7 @@ Withholding rates for taxpayers filing as *MAR*
 | 633,950     | And Over         | 167,307.50     | 37%          | 633,950            |
 
 Withholding rates for taxpayers filing as *MARHR*
+Standard Deduction $24,800
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -98,7 +100,7 @@ Withholding rates for taxpayers filing as *MARHR*
 | 52,525      | 97,925           | 4,617.50       | 22%          | 52,525             |
 | 97,925      | 175,700          | 14,605.50      | 24%          | 97,925             |
 | 175,700     | 219,750          | 33,271.50      | 32%          | 175,700            |
-| 219,750     | 323,425          | 47,367.50      | 35%          | 219,700            |
+| 219,750     | 323,425          | 47,367.50      | 35%          | 219,750            |
 | 323,425     | And Over         | 83,653.75      | 37%          | 323,425            |
 
 
@@ -194,8 +196,8 @@ Special table type
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 81,450           | 0              | 0            | 9,350              |
-| 81,450      | 156,450          | 75,000         | 0            | 0                  |
+| 0           | 82,900           | 0              | 0            | 9,550              |
+| 82,900      | 157,900          | 75,000         | 0            | 0                  |
 
 Withholding rates for taxpayers filing as MAR, Tax table type
 
@@ -209,8 +211,8 @@ Special table type
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 162,950          | 0              | 0            | 21,550             |
-| 162,950     | 312,950          | 150,000        | 0            | 0                  |
+| 0           | 165,800          | 0              | 0            | 21,950             |
+| 165,800     | 315,800          | 150,000        | 0            | 0                  |
 
 
 
@@ -610,7 +612,7 @@ Use the instructions in this section to prepare for the U.S. Payroll Tax Update.
 
 To identify the version, you’re using, start Microsoft Dynamics GP. Choose Help\>\> About Microsoft Dynamics GP. The information window displays the version number in the lower right corner.
 
-This U.S. Payroll Tax Update is supported for Microsoft Dynamics GP 2018, Microsoft Dynamics GP 2016, and Microsoft Dynamics GP 2015 on Microsoft SQL Server.
+This U.S. Payroll Tax Update is supported for Microsoft Dynamics GP, Microsoft Dynamics GP 2016, and Microsoft Dynamics GP 2015 on Microsoft SQL Server.
 
 If you’re not using one of the supported versions, you must upgrade to a supported version before installing this tax update.
 
@@ -624,7 +626,7 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 3 July 2019 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The Round 1 2020 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -647,7 +649,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4.  Choose Process to start the update.
 
-5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 9/27/2019.
+5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 12/20/2019.
 
 ## What’s next
 
