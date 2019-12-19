@@ -36,13 +36,10 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - Minnesota
 - Missouri
 - North Carolina
+- North Dakota
 - Ohio
 
-
-
-- Georgia
 - Maryland
-- Minnesota
 - Oregon
 - South Carolina
 
@@ -338,14 +335,49 @@ Withholding rates for all filing status
 | 8,584       | And over         | 279.00         | 5.4%         | 8,584              |
 
 
-
-
 #### Withholding changes for North Carolina
 
 The Standard Deduction amount changed to \$16,125 from \$15,000 for Filing Status of HOH
 
 The Standard Deduction amount changed to \$10,750 from \$10,000 for Filing Status of MAR and SINGLE
 
+
+#### Withholding changes for North Dakota
+
+The Personal Exemption amount is \$4,300 for Filing Status MAR and SINGLE 
+
+Withholding rates for taxpayers filing as *MAR*, *MARHR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 12,400           | 0              | 0            | 0                  |
+| 12,400      | 45,925           | 0              | 1.10%        | 12,400             |
+| 45,925      | 93,375           | 368.78         | 2.04%        | 45,925             |
+| 93,375      | 135,750          | 1,336.76       | 2.27%        | 93,375             |
+| 135,370     | 232,700          | 2,298.67       | 2.64%        | 135,750            |
+| 232,700     | And over         | 4,858.157      | 2.90%        | 232,700            |
+
+Withholding rates for taxpayers filing as *SINGLE* and *SINGHR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 6,200            | 0              | 0            | 0                  |
+| 6,200       | 46,325           | 0              | 1.10%        | 6,200              |
+| 46,325      | 103,350          | 441.38         | 2.04%        | 46,325             |
+| 103,350     | 208,850          | 1,604.69       | 2.27%        | 103,350            |
+| 208,850     | 446,800          | 3,999.54       | 2.64%        | 208,850            |
+| 446,800     | And over         | 10,281.42      | 2.90%        | 446,800            |
+
+Withholding rates for taxpayers filing as *HOHHR* 
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 9,325            | 0              | 0            | 0                  |
+| 9,325       | 63,075           | 0              | 1.10%        | 9,325              |
+| 63,075      | 148,125          | 591.25         | 2.04%        | 63,075             |
+| 148,125     | 234,025          | 2,326.27       | 2.27%        | 148,125            |
+| 234,025     | 449,925          | 4,276.20       | 2.64%        | 234,025            |
+| 449,925     | And over         | 9,975.96       | 2.90%        | 449,925            |
 
 #### Withholding changes for Ohio
 
