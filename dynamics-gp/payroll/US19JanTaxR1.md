@@ -28,21 +28,20 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 ## Changes in January Round 1 update
 - Federal changes and FICA Limit
 - California
+- Illinois
 - Iowa
+- Kentucky
 - Maine
+- Michigan
+- Minnesota
 - North Carolina
 - Ohio
 
 
-- California
+
 - Georgia
-- Illinois
-- Kentucky
 - Maryland
 - Minnesota
-- New York
-- New York – Yonkers
-
 - Oregon
 - South Carolina
 
@@ -286,6 +285,36 @@ Special table type
 
 
 
+#### Withholding changes for Michigan
+
+The Personal Exemption amount is \$4,750
+
+
+#### Withholding changes for Minnesota
+
+The Personal Exemption amount is \$4,300
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 11,900           | 0              | 0            | 0                  |
+| 11,900      | 51,310           | 0              | 5.35%        | 11,900             |
+| 51,310      | 168,470          | 2,108.44       | 6.80%        | 51,310             |
+| 168,470     | 285,370          | 10,075.32      | 7.85%        | 168,470            |
+| 285,370     | And over         | 19,251.97      | 9.85%        | 285,370            |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,800            | 0              | 0            | 0                  |
+| 3,800       | 30,760           | 0              | 5.35%        | 3,800              |
+| 30,760      | 92,350           | 1,442.36       | 6.80%        | 30,760             |
+| 92,350      | 168,200          | 5,630.48       | 7.85%        | 92,350             |
+| 168,200     | And over         | 11,584.71      | 9.85%        | 168,200            |
+
+
 #### Withholding changes for North Carolina
 
 The Standard Deduction amount changed to \$16,125 from \$15,000 for Filing Status of HOH
@@ -307,6 +336,16 @@ Withholding rates for taxpayers filing as *NA*
 | 40,000      | 80,000           | 900.00         | 3.614%       | 40,000             |
 | 80,000      | 100,000          | 2300.00        | 4.132%       | 80,000             |
 | 100,000     | And over         | 3100.00        | 5.164%       | 100,000            |
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -357,12 +396,6 @@ Withholding rates for taxpayers filing as *SINGLE*
 | 7,000       |                  | 230.00         | 5.75%        | 7,000              |
 
 
-
-
-#### Withholding changes for Kentucky
-
-The Standard Deduction changed to \$2650 from \$2590 
-The Flat Tax Rate remains at 5%
 
 
 #### Withholding changes for Maryland
@@ -433,45 +466,7 @@ Withholding rates for taxpayers filing as *SINGLE*
 | 89,510      | 166,290          | 5,690.42       | 7.85%        | 89,510             |
 | 166,290     | And over         | 11,717.65      | 9.85%        | 166,290            |
 
-#### Withholding changes for New York and New York-Yonkers
 
-Withholding rates for taxpayers filing as *MAR*
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 8500             | 0              | .0400        | 0                  |
-| 8,500       | 11,700           | 340.00         | .0450        | 8,500              |
-| 11,700      | 13,900           | 484.00         | .0525        | 11,700             |
-| 13,900      | 21,400           | 600.00         | .0590        | 13,900             |
-| 21,400      | 80,650           | 1,042.00       | .0621        | 21,400             |
-| 80,650      | 96,800           | 4,721.00       | .0649        | 80,650             |
-| 96,800      | 107,650          | 5,770.00       | .0764        | 96,800             |
-| 107,650     | 157,650          | 6,599.00       | .0814        | 107,650            |
-| 157,650     | 211,550          | 10,669.00      | .0790        | 157,650            |
-| 211,550     | 323,200          | 14,927.00      | .0699        | 211,550            |
-| 323,200     | 373,200          | 22,731.00      | .0968        | 323,200            |
-| 373,200     | 1,077,550        | 27,571.00      | .0735        | 373,200            |
-| 1,077,550   | 2,155,350        | 79,341.00      | .0765        | 1,077,550          |
-| 2,155,350   | 2,205,350        | 161,792.00     | .9454        | 2,155,350          |
-| 2,205,350   | And over         | 209,062.00     | .0962        | 2,205,350          |
-
-Withholding rates for taxpayers filing as *SINGLE*
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 8500             | 0              | .0400        | 0                  |
-| 8,500       | 11,700           | 340.00         | .0450        | 8,500              |
-| 11,700      | 13,900           | 484.00         | .0525        | 11,700             |
-| 13,900      | 21,400           | 600.00         | .0590        | 13,900             |
-| 21,400      | 80,650           | 1,042.00       | .0621        | 21,400             |
-| 80,650      | 96,800           | 4,721.00       | .0649        | 80,650             |
-| 96,800      | 107,650          | 5,770.00       | .0752        | 96,800             |
-| 107,650     | 157,650          | 6,585.00       | .0802        | 107,650            |
-| 157,650     | 215,400          | 10,595.00      | .0699        | 157,650            |
-| 215,400     | 265,400          | 14,632.00      | .0890        | 215,400            |
-| 265,400     | 1,077,550        | 19,082.00      | .0735        | 265,400            |
-| 1,077,550   | 1,127,550        | 78,775.00      | .5208        | 1,077,550          |
-| 1,127,550   | And over         | 104,815.00     | .0962        | 1,127,550          |
 
 #### Withholding changes for North Carolina
 
