@@ -38,9 +38,6 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - North Carolina
 - North Dakota
 - Ohio
-
-- Maryland
-- Oregon
 - South Carolina
 
 ### 2019 Federal tax changes
@@ -364,7 +361,7 @@ Withholding rates for taxpayers filing as *SINGLE* and *SINGHR*
 | 0           | 6,200            | 0              | 0            | 0                  |
 | 6,200       | 46,325           | 0              | 1.10%        | 6,200              |
 | 46,325      | 103,350          | 441.38         | 2.04%        | 46,325             |
-| 103,350     | 208,850          | 1,604.60       | 2.27%        | 103,350            |
+| 103,350     | 208,850          | 1,604.69       | 2.27%        | 103,350            |
 | 208,850     | 446,800          | 3,999.54       | 2.64%        | 208,850            |
 | 446,800     | And over         | 10,281.42      | 2.90%        | 446,800            |
 
@@ -394,6 +391,25 @@ Withholding rates for taxpayers filing as *NA*
 | 40,000      | 80,000           | 900.00         | 3.614%       | 40,000             |
 | 80,000      | 100,000          | 2300.00        | 4.132%       | 80,000             |
 | 100,000     | And over         | 3100.00        | 5.164%       | 100,000            |
+
+
+
+#### Withholding changes for South Carolina
+
+The Personal Exemption is $2,590 for Filing Status ONE.
+The Standard Deduction Maximum is $3,820 for ONE Filing Status.
+
+Tax Type rates for all Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 2,620            | 0              | 0.8%         | 0                  |
+| 2,620       | 5,240            | -57.64         | 3.0%         | 0                  |
+| 5,240       | 7,860            | -110.04        | 4.0%         | 0                  |
+| 7,860       | 10,490           | -188.64        | 5.0%         | 0                  |
+| 10,490      | 13,110           | -293.54        | 6.0%         | 0                  |
+| 13,110      | And over         | -424.64        | 7.0%         | 0                  |
+
 
 
 ## Resources to assist you
