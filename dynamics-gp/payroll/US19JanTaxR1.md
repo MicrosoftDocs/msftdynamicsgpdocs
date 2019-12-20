@@ -14,7 +14,7 @@ ms.date: 12/20/2019
 
 This tax update applies to:
 
-- Microsoft Dynamics GP 2018 on Microsoft SQL Server
+- Microsoft Dynamics GP on Microsoft SQL Server
 - Microsoft Dynamics GP 2016 on Microsoft SQL Server
 - Microsoft Dynamics GP 2015 on Microsoft SQL Server
 
