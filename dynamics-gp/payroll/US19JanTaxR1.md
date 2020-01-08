@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/28/2019
+ms.date: 1/8/2020
 ---
 # U.S. 2020 Payroll Tax Update
 
@@ -20,9 +20,59 @@ This tax update applies to:
 
 This document contains instructions for installing the 2020 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-This is the first tax update for 2020 and replaces all previous tax updates. It includes state tax table changes that took effect January 1, 2020. It is recommended you install this update before processing payrolls for the 2020 year.
+This is the second tax update for 2020 and replaces all previous tax updates. It includes state tax table changes that took effect January 1, 2020. It is recommended you install this update before processing payrolls for the 2020 year.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+## Changes in January Round 2 update
+- Colorado
+- Idaho
+
+### 2020 Federal tax changes
+
+There are no Federal changes in this update.
+
+
+### 2020 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+
+#### Withholding changes for Colorado
+
+Flat tax rate of 4.63 for all filing status
+For Filing Status of MAR, the Personal Exemption amount is \$8,000 
+For Filing Status of SINGLE, the Personal Exemption amount is \$8,000 
+
+
+#### Withholding changes for Idaho
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 12,200           | 0              | 0%           | 0                  |
+| 12,200      | 13,741           | 0              | 1.125%       | 12,200             |
+| 13,741      | 15,281           | 17.00          | 3.125%       | 13,741             |
+| 15,281      | 16,822           | 65.00          | 3.625%       | 15,281             |
+| 16,822      | 18,362           | 121.00         | 4.625%       | 16,822             |
+| 18,362      | 19,903           | 192.00         | 5.625%       | 18,362             |
+| 19,903      | 23,754           | 279.00         | 6.625%       | 19,903             |
+| 23,754      | And Over         | 534.00         | 6.925%       | 23,754             |
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 24,400           | 0              | 0%           | 0                  |
+| 24,400      | 13,741           | 0              | 1.125%       | 12,200             |
+| 27,482      | 15,281           | 35.00          | 3.125%       | 13,741             |
+| 30,562      | 16,822           | 131.00         | 3.625%       | 15,281             |
+| 16,822      | 18,362           | 243.00         | 4.625%       | 16,822             |
+| 18,362      | 19,903           | 385.00         | 5.625%       | 18,362             |
+| 19,903      | 23,754           | 558.00         | 6.625%       | 19,903             |
+| 23,754      | And Over         | 1,068.00       | 6.925%       | 23,754             |
+
 
      
 ## Changes in January Round 1 update
@@ -40,7 +90,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - Ohio
 - South Carolina
 
-### 2019 Federal tax changes
+### 2020 Federal tax changes
 
 The maximum taxable earnings for Social Security increase in 2020 to \$137,700 from \$132,900
 
