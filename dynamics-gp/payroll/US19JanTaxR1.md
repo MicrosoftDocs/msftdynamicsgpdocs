@@ -20,17 +20,22 @@ This tax update applies to:
 
 This document contains instructions for installing the 2020 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-This is the second tax update for 2020 and replaces all previous tax updates. It includes state tax table changes that took effect January 1, 2020. It is recommended you install this update before processing payrolls for the 2020 year.
+This is the second tax update for 2020 and replaces all previous tax updates. It includes federal and state tax table changes that took effect January 1, 2020. It is recommended you install this update before processing payrolls for the 2020 year.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
 ## Changes in January Round 2 update
+- Federal
 - Colorado
 - Idaho
+- Maryland
 
 ### 2020 Federal tax changes
 
-There are no Federal changes in this update.
+Standard deduction amounts removed for the following Filing Status:
+HOHHR - Head of Household Higher WH
+MARHR - Married Higher WH
+SGLHR - Single Higher WH
 
 
 ### 2020 state or territorial tax changes
@@ -65,15 +70,95 @@ Withholding rates for taxpayers filing as *MAR*
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 24,400           | 0              | 0%           | 0                  |
-| 24,400      | 13,741           | 0              | 1.125%       | 12,200             |
-| 27,482      | 15,281           | 35.00          | 3.125%       | 13,741             |
-| 30,562      | 16,822           | 131.00         | 3.625%       | 15,281             |
-| 16,822      | 18,362           | 243.00         | 4.625%       | 16,822             |
-| 18,362      | 19,903           | 385.00         | 5.625%       | 18,362             |
-| 19,903      | 23,754           | 558.00         | 6.625%       | 19,903             |
-| 23,754      | And Over         | 1,068.00       | 6.925%       | 23,754             |
+| 24,400      | 27,482           | 0              | 1.125%       | 24,400             |
+| 27,482      | 30,562           | 35.00          | 3.125%       | 27,482             |
+| 30,562      | 33,644           | 131.00         | 3.625%       | 30,562             |
+| 33,644      | 36,724           | 243.00         | 4.625%       | 33,644             |
+| 36,724      | 39,806           | 385.00         | 5.625%       | 36,724             |
+| 39,806      | 47,508           | 558.00         | 6.625%       | 39,806             |
+| 47,508      | And Over         | 1,068.00       | 6.925%       | 47,508             |
 
 
+#### Withholding changes for Maryland
+
+Withholding rates for taxpayers filing as *AAMAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0.00%        | 0                  |
+| 5,000       | 150,000          | 0              | 7.60%        | 0                  |
+| 150,000     | 175,000          | 11,400.00      | 7.85%        | 150,000            |
+| 175,000     | 225,000          | 13,362.00      | 8.10%        | 175,000            |
+| 225,000     | 300,000          | 17,412.50      | 8.35%        | 225,000            |
+| 300,000     | And over         | 23,675.00      | 8.60%        | 300,000            |
+
+
+Withholding rates for taxpayers filing as *ARNDEL*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0.00%        | 0                  |
+| 5,000       | 100,000          | 0              | 7.60%        | 0                  |
+| 100,000     | 125,000          | 7,600.00       | 7.85%        | 100,000            |
+| 125,000     | 150,000          | 9,562.50       | 8.10%        | 125,000            |
+| 150,000     | 250,000          | 11,587.50      | 8.35%        | 150,000            |
+| 250,000     | And over         | 19,937.50      | 8.60%        | 250,000            |
+
+
+Withholding rates for taxpayers filing as *BLMAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0.00%        | 0                  |
+| 5,000       | 150,000          | 0              | 7.60%        | 0                  |
+| 150,000     | 175,000          | 11,925.00      | 7.85%        | 150,000            |
+| 175,000     | 225,000          | 13,975.00      | 8.10%        | 175,000            |
+| 225,000     | 300,000          | 18,200.00      | 8.70%        | 225,000            |
+| 300,000     | And over         | 24,725.00      | 8.95%        | 300,000            |
+
+
+Withholding rates for taxpayers filing as *BMCNTY* and 
+Withholding rates for taxpayers filing as *DRCHST* and 
+Withholding rates for taxpayers filing as *KENT*   and 
+Withholding rates for taxpayers filing as *STMARY* and 
+Withholding rates for taxpayers filing as *WASHTN*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0.00%        | 0                  |
+| 5,000       | 100,000          | 0              | 7.95%        | 0                  |
+| 100,000     | 125,000          | 7,950.00       | 8.20%        | 100,000            |
+| 125,000     | 150,000          | 10,000.00      | 8.45%        | 125,000            |
+| 150,000     | 250,000          | 12,112.50      | 8.70%        | 150,000            |
+| 250,000     | And over         | 20,812.50      | 8.95%        | 250,000            |
+
+
+Withholding rates for taxpayers filing as *DRMAR* and 
+Withholding rates for taxpayers filing as *KNMAR* and 
+Withholding rates for taxpayers filing as *SMMAR* and
+Withholding rates for taxpayers filing as *WHMAR* and 
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0.00%        | 0                  |
+| 5,000       | 150,000          | 0              | 7.95%        | 0                  |
+| 150,000     | 175,000          | 11,925.00      | 8.20%        | 150,000            |
+| 175,000     | 225,000          | 13,975.00      | 8.45%        | 175,000            |
+| 225,000     | 300,000          | 18,200.00      | 8.70%        | 225,000            |
+| 300,000     | And over         | 24,725.00      | 8.95%        | 300,000            |
+
+
+Withholding rates for taxpayers filing as *WRMAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0.00%        | 0                  |
+| 5,000       | 150,000          | 0              | 7.00%        | 0                  |
+| 150,000     | 175,000          | 10,500.00      | 7.25%        | 150,000            |
+| 175,000     | 225,000          | 12,312.50      | 7.50%        | 175,000            |
+| 225,000     | 300,000          | 16,062.50      | 7.75%        | 225,000            |
+| 300,000     | And over         | 21,875.00      | 8.00%        | 300,000            |
+     
      
 ## Changes in January Round 1 update
 - Federal changes and FICA Limit
@@ -109,7 +194,7 @@ Withholding rates for taxpayers filing as *NRA*
 | 514,200     | And Over         | 156,235.00     | 37%          | 514,200            |
 
 Withholding rates for taxpayers filing as *NRAHR*
-Standard Deduction $12,400
+
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -134,7 +219,7 @@ Withholding rates for taxpayers filing as *MAR*
 | 633,950     | And Over         | 167,307.50     | 37%          | 633,950            |
 
 Withholding rates for taxpayers filing as *MARHR*
-Standard Deduction $24,800
+
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
