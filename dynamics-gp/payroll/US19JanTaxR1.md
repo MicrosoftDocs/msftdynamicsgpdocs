@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 1/8/2020
+ms.date: 1/10/2020
 ---
 # U.S. 2020 Payroll Tax Update
 
@@ -32,12 +32,17 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - Massachusetts
 - Mississippi
 - New Mexico
+- New York & Yonkers
+- Oregon
+- Rhode Island
+- Vermont
+
 
 ### 2020 Federal tax changes
 
 Standard deduction amounts removed for the following Filing Status:
 HOHHR - Head of Household Higher WH
-MARHR - Married Higher WH
+MARHR - Married Higher WH 
 SGLHR - Single Higher WH
 
 
@@ -237,6 +242,157 @@ Withholding rates for taxpayers filing as *HOH*
 | 49,325      | 73,325           | 1,552.00       | 4.9%         | 49,325             |
 | 73,325      | 109,325          | 2,728.00       | 4.9%         | 73,325             |
 | 109,325     | And over         | 4,492.00       | 4.9%         | 109,325            |
+
+
+#### Withholding changes for New York and New York-Yonkers
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 8,500            | 0              | .0400        | 0                  |
+| 8,500       | 11,700           | 340.00         | .0450        | 8,500              |
+| 11,700      | 13,900           | 484.00         | .0525        | 11,700             |
+| 13,900      | 21,400           | 600.00         | .0590        | 13,900             |
+| 21,400      | 80,650           | 1,042.00       | .0609        | 21,400             |
+| 80,650      | 96,800           | 4,650.00       | .0641        | 80,650             |
+| 96,800      | 107,650          | 5,686.00       | .0746        | 96,800             |
+| 107,650     | 157,650          | 6,495.00       | .0796        | 107,650            |
+| 157,650     | 211,550          | 10,475.00      | .0794        | 157,650            |
+| 211,550     | 323,200          | 14,755.00      | .0691        | 211,550            |
+| 323,200     | 373,200          | 22,470.00      | .1019        | 323,200            |
+| 373,200     | 1,077,550        | 27,565.00      | .0735        | 373,200            |
+| 1,077,550   | 2,155,350        | 79,334.00      | .0765        | 1,077,550          |
+| 2,155,350   | 2,205,350        | 161,786.00     | .9454        | 2,155,350          |
+| 2,205,350   | And over         | 209,056.00     | .0962        | 2,205,350          |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 8,500            | 0              | .0400        | 0                  |
+| 8,500       | 11,700           | 340.00         | .0450        | 8,500              |
+| 11,700      | 13,900           | 484.00         | .0525        | 11,700             |
+| 13,900      | 21,400           | 600.00         | .0590        | 13,900             |
+| 21,400      | 80,650           | 1,042.00       | .0609        | 21,400             |
+| 80,650      | 96,800           | 4,650.00       | .0641        | 80,650             |
+| 96,800      | 107,650          | 5,686.00       | .0745        | 96,800             |
+| 107,650     | 157,650          | 6,494.00       | .0795        | 107,650            |
+| 157,650     | 215,400          | 10,469.00      | .0691        | 157,650            |
+| 215,400     | 265,400          | 14,459.00      | .0925        | 215,400            |
+| 265,400     | 1,077,550        | 19,084.00      | .0735        | 265,400            |
+| 1,077,550   | 1,127,550        | 78,777.00      | .5208        | 1,077,550          |
+| 1,127,550   | And over         | 104,817.00     | .0962        | 1,127,550          |
+
+
+#### Withholding changes for Oregon
+
+The Standard Deduction Amount is \$4,630 for MS3 and S3 Filing Status.
+
+The Standard Deduction Amount is \$2,215 for S2 Filing Status.
+
+The Personal Exemption amount is \$210.00 for all Filing Status.
+
+New Filing status for 2020 NOWH - No Withholding Provided - Flat tax rate of 8%
+
+HB2119 requires employers to withhold income tax at a rate of 8 percent of employee wages if they employee has not provided a withholding statement or exemption certificate.  
+Continue withholding at the 8 percent rate until the employee submits a withholding statement and exemption certificate.
+
+
+Special Tax Type rates for MS3 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 49,999           | 6,950          | 0%           | 0                  |
+| 49,999      | 249,999          | 6,950          | 0%           | 0                  |
+| 249,999     | 259,999          | 5,550          | 0%           | 0                  |
+| 259,999     | 269,999          | 4,150          | 0%           | 0                  |
+| 269,999     | 279,999          | 2,750          | 0%           | 0                  |
+| 279,999     | 289,999          | 1,350          | 0%           | 0                  |
+| 289,999     | And over         | 0              | 0%           | 0                  |
+|             |                  |                |              |                    |
+
+Special Tax Type rates for S2 and S3 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 49,999           | 6,950          | 0%           | 0                  |
+| 49,999      | 124,999          | 6,950          | 0%           | 0                  |
+| 124,999     | 129,999          | 5,550          | 0%           | 0                  |
+| 129,999     | 134,999          | 4,150          | 0%           | 0                  |
+| 134,999     | 139,999          | 2,750          | 0%           | 0                  |
+| 139,999     | 144,999          | 1,350          | 0%           | 0                  |
+| 144,999     | And over         | 0              | 0%           | 0                  |
+
+Tax Type rates for MS3 and S3 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 38,420           | 0              | 0%           | 0                  |
+| 38,420      | 250,000          | 1,078          | 8.75%        | 18,100             |
+| 250,000     | And over         | 21,369         | 9.9%         | 250,000            |
+|             |                  |                |              |                    |
+
+Tax Type rates for S2 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 40,735           | 0              | 0%           | 0                  |
+| 40,735      | 125,000          | 539            | 9.75%        | 9,050              |
+| 125,000     | And Over         | 10,685         | 9.9%         | 125,000            |
+
+Low Income Type rates for MS3 and S3 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 7,200            | 210            | 4.75%        | 0                  |
+| 12,400      | 18,100           | 552            | 6.75%        | 7,200              |
+| 20,400      | 50,000           | 1,288          | 8.75%        | 18,100             |
+
+Low Income Type rates for S2 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,600            | 210            | 4.75%        | 0                  |
+| 3,600       | 9,050            | 381            | 6.75%        | 3,600              |
+| 9,050       | 50,000           | 749            | 8.75%        | 9,050              |
+
+
+#### Withholding changes for Rhode Island
+For all Filing Status the Personal Exemption ($1,000) wage limit increased to $231,500
+
+Withholding rates for taxpayers filing as *MAR* and *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 65,250           | 0              | 3.75%        | 0                  |
+| 65,250      | 148,350          | 2,446.88       | 4.75%        | 65,250             |
+| 148,350     | And Over         | 6,394.13       | 5.99%        | 148,350            |
+
+
+#### Withholding changes for Vermont
+The Personal Exemption amount is $4,350
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 9,375            | 0              | 0%           | 0                  |
+| 9,375       | 76,825           | 0              | 3.35%        | 9,375              |
+| 76,825      | 172,375          | 2,259.58       | 6.60%        | 76,825             |
+| 172,375     | 257,725          | 8,454.88       | 7.60%        | 172,375            |
+| 257,725     | And Over         | 15,052.48      | 8.75%        | 257,725            |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,125            | 0              | 0%           | 0                  |
+| 3,125       | 43,475           | 0              | 3.35%        | 3,125              |
+| 43,475      | 100,935          | 1,351.73       | 6.60%        | 43,475             |
+| 100,935     | 207,125          | 5,143.43       | 7.60%        | 100,935            |
+| 207,125     | And Over         | 13,214.63      | 8.75%        | 207,125            |
+
 
 
 ## Changes in January Round 1 update
@@ -672,7 +828,7 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 1 2020 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The Round 2 2020 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -695,7 +851,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4.  Choose Process to start the update.
 
-5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 12/20/2019.
+5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 1/17/2020.
 
 ## What’s next
 
