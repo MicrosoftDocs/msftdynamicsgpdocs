@@ -97,7 +97,7 @@ Withholding rates for taxpayers filing as *AAMAR*
 | 0           | 5,000            | 0              | 0.00%        | 0                  |
 | 5,000       | 150,000          | 0              | 7.60%        | 0                  |
 | 150,000     | 175,000          | 11,400.00      | 7.85%        | 150,000            |
-| 175,000     | 225,000          | 13,362.00      | 8.10%        | 175,000            |
+| 175,000     | 225,000          | 13,362.50      | 8.10%        | 175,000            |
 | 225,000     | 300,000          | 17,412.50      | 8.35%        | 225,000            |
 | 300,000     | And over         | 23,675.00      | 8.60%        | 300,000            |
 
@@ -114,23 +114,11 @@ Withholding rates for taxpayers filing as *ARNDEL*
 | 250,000     | And over         | 19,937.50      | 8.60%        | 250,000            |
 
 
-Withholding rates for taxpayers filing as *BLMAR*
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 5,000            | 0              | 0.00%        | 0                  |
-| 5,000       | 150,000          | 0              | 7.60%        | 0                  |
-| 150,000     | 175,000          | 11,925.00      | 7.85%        | 150,000            |
-| 175,000     | 225,000          | 13,975.00      | 8.10%        | 175,000            |
-| 225,000     | 300,000          | 18,200.00      | 8.70%        | 225,000            |
-| 300,000     | And over         | 24,725.00      | 8.95%        | 300,000            |
-
-
-Withholding rates for taxpayers filing as *BMCNTY* and 
-Withholding rates for taxpayers filing as *DRCHST* and 
-Withholding rates for taxpayers filing as *KENT*   and 
-Withholding rates for taxpayers filing as *STMARY* and 
-Withholding rates for taxpayers filing as *WASHTN*
+- Withholding rates for taxpayers filing as *BMCNTY* and 
+- Withholding rates for taxpayers filing as *DRCHST* and 
+- Withholding rates for taxpayers filing as *KENT*   and 
+- Withholding rates for taxpayers filing as *STMARY* and 
+- Withholding rates for taxpayers filing as *WASHTN*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -142,10 +130,11 @@ Withholding rates for taxpayers filing as *WASHTN*
 | 250,000     | And over         | 20,812.50      | 8.95%        | 250,000            |
 
 
-Withholding rates for taxpayers filing as *DRMAR* and 
-Withholding rates for taxpayers filing as *KNMAR* and 
-Withholding rates for taxpayers filing as *SMMAR* and
-Withholding rates for taxpayers filing as *WHMAR* and 
+- Withholding rates for taxpayers filing as *BLMAR* and 
+- Withholding rates for taxpayers filing as *DRMAR* and 
+- Withholding rates for taxpayers filing as *KNMAR* and 
+- Withholding rates for taxpayers filing as *SMMAR* and
+- Withholding rates for taxpayers filing as *WHMAR* 
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -185,7 +174,7 @@ Withholding rates for taxpayers filing as *NONRES*
 
 #### Withholding changes for Massachusetts
 
-Flat tax rate of 5.00 for all filing status
+Flat tax rate of 5% for all filing status
 
 
 #### Withholding changes for Mississippi
@@ -197,7 +186,7 @@ Withholding rates for all Filing Status
 | 0           | 3,000            | 0              | 0            | 0                  |
 | 3,000       | 5,000            | 0              | 3.0%         | 3,000              |
 | 5,000       | 10,000           | 60.00          | 4.0%         | 5,000              |
-| 10,000      | And over         | 260.00         | 5.0%         | 10,0 00            |
+| 10,000      | And over         | 260.00         | 5.0%         | 10,000             |
 
 
 #### Withholding changes for New Mexico
@@ -223,8 +212,8 @@ Withholding rates for taxpayers filing as *SINGLE*
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 6,200            | 0              | 0            | 0                  |
-| 6,200       | 11,200           | 0              | 1.7%         | 6,200              |
-| 11,200      | 17,200           | 93.51          | 3.2%         | 11,200             |
+| 6,200       | 11,700           | 0              | 1.7%         | 6,200              |
+| 11,700      | 17,200           | 93.51          | 3.2%         | 11,700             |
 | 17,200      | 22,200           | 269.50         | 4.7%         | 17,200             |
 | 22,200      | 32,200           | 504.50         | 4.9%         | 22,200             |
 | 32,200      | 48,200           | 994.50         | 4.9%         | 32,200             |
