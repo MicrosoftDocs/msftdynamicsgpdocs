@@ -40,10 +40,11 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 
 ### 2020 Federal tax changes
 
-Standard deduction amounts removed for the following Filing Status:
-HOHHR - Head of Household Higher WH
-MARHR - Married Higher WH 
-SGLHR - Single Higher WH
+Standard deduction amounts were removed for the following Filing Status:
+
+- HOHHR - Head of Household Higher WH
+- MARHR - Married Higher WH 
+- SGLHR - Single Higher WH
 
 
 ### 2020 state or territorial tax changes
@@ -53,9 +54,9 @@ The following tax changes are included in this update:
 
 #### Withholding changes for Colorado
 
-Flat tax rate of 4.63 for all filing status
-For Filing Status of MAR, the Personal Exemption amount is \$8,000 
-For Filing Status of SINGLE, the Personal Exemption amount is \$8,000 
+- Flat tax rate of 4.63 for all filing status
+- For Filing Status of MAR, the Personal Exemption amount is \$8,000 
+- For Filing Status of SINGLE, the Personal Exemption amount is \$8,000 
 
 
 #### Withholding changes for Idaho
