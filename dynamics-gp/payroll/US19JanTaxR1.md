@@ -29,6 +29,9 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - Colorado
 - Idaho
 - Maryland
+- Massachusetts
+- Mississippi
+- New Mexico
 
 ### 2020 Federal tax changes
 
@@ -148,7 +151,8 @@ Withholding rates for taxpayers filing as *WHMAR* and
 | 300,000     | And over         | 24,725.00      | 8.95%        | 300,000            |
 
 
-Withholding rates for taxpayers filing as *WRMAR*
+Withholding rates for taxpayers filing as *WRMAR* and 
+Withholding rates for taxpayers filing as *NOMAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -159,7 +163,82 @@ Withholding rates for taxpayers filing as *WRMAR*
 | 225,000     | 300,000          | 16,062.50      | 7.75%        | 225,000            |
 | 300,000     | And over         | 21,875.00      | 8.00%        | 300,000            |
      
-     
+
+Withholding rates for taxpayers filing as *WRCSTR* and 
+Withholding rates for taxpayers filing as *NONRES*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0.00%        | 0                  |
+| 5,000       | 100,000          | 0              | 7.00%        | 0                  |
+| 100,000     | 125,000          | 7,000.00       | 7.25%        | 100,000            |
+| 125,000     | 150,000          | 8,812.50       | 7.50%        | 125,000            |
+| 150,000     | 250,000          | 10,687.50      | 7.75%        | 150,000            |
+| 250,000     | And over         | 18,437.50      | 8.00%        | 250,000            |
+
+
+#### Withholding changes for Massachusetts
+
+Flat tax rate of 5.00 for all filing status
+
+
+#### Withholding changes for Mississippi
+
+Withholding rates for all Filing Status
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,000            | 0              | 0            | 0                  |
+| 3,000       | 5,000            | 0              | 3.0%         | 3,000              |
+| 5,000       | 10,000           | 60.00          | 4.0%         | 5,000              |
+| 10,000      | And over         | 260.00         | 5.0%         | 10,0 00            |
+
+
+#### Withholding changes for New Mexico
+
+The withholding tables for New Mexico have been updated to remove withholding allowance deduction amounts (exemptions).
+Employees will see an increase in their withholding tax as a result of this change.
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 12,400           | 0              | 0            | 0                  |
+| 12,400      | 20,400           | 0              | 1.7%         | 12,400             |
+| 20,400      | 28,400           | 136.00         | 3.2%         | 20,400             |
+| 28,400      | 36,400           | 392.00         | 4.7%         | 28,400             |
+| 36,400      | 52,400           | 768.00         | 4.9%         | 36,400             |
+| 52,400      | 76,400           | 1,552.00       | 4.9%         | 52,400             |
+| 76,400      | 112,400          | 2,728.00       | 4.9%         | 76,400             |
+| 112,400     | And over         | 4,492.00       | 4.9%         | 112,400            |
+
+Withholding rates for taxpayers filing as *SINGLE* 
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 6,200            | 0              | 0            | 0                  |
+| 6,200       | 11,200           | 0              | 1.7%         | 6,200              |
+| 11,200      | 17,200           | 93.51          | 3.2%         | 11,200             |
+| 17,200      | 22,200           | 269.50         | 4.7%         | 17,200             |
+| 22,200      | 32,200           | 504.50         | 4.9%         | 22,200             |
+| 32,200      | 48,200           | 994.50         | 4.9%         | 32,200             |
+| 48,200      | 71,200           | 1,778.50       | 4.9%         | 48,200             |
+| 71,200      | And over         | 2,905.50       | 4.9%         | 71,200             |
+
+Withholding rates for taxpayers filing as *HOH* 
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 9,325            | 0              | 0            | 0                  |
+| 9,325       | 17,325           | 0              | 1.7%         | 9,325              |
+| 17,325      | 25,325           | 136.00         | 3.2%         | 17,325             |
+| 25,325      | 33,325           | 392.00         | 4.7%         | 25,325             |
+| 33,325      | 49,325           | 768.00         | 4.9%         | 33,325             |
+| 49,325      | 73,325           | 1,552.00       | 4.9%         | 49,325             |
+| 73,325      | 109,325          | 2,728.00       | 4.9%         | 73,325             |
+| 109,325     | And over         | 4,492.00       | 4.9%         | 109,325            |
+
+
 ## Changes in January Round 1 update
 - Federal changes and FICA Limit
 - California
