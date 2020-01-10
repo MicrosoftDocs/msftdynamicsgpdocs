@@ -279,7 +279,7 @@ Withholding rates for taxpayers filing as *SINGLE*
 
 The Standard Deduction Amount is \$4,630 for MS3 and S3 Filing Status.
 
-The Standard Deduction Amount is \$2,215 for S2 Filing Status.
+The Standard Deduction Amount is \$2,315 for S2 Filing Status.
 
 The Personal Exemption amount is \$210.00 for all Filing Status.
 
