@@ -703,6 +703,9 @@ The Standard Deduction amount changed to \$10,750 from \$10,000 for Filing Statu
 
 The Personal Exemption amount is \$4,300 for Filing Status MAR and SINGLE 
 
+***Per the state of North Dakota, there is no HOH filing status with exemptions.  If an employee on the W4 chooses 
+Filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.***
+
 Withholding rates for taxpayers filing as *MAR*, *MARHR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
