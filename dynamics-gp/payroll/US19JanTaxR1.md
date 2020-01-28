@@ -147,7 +147,7 @@ Withholding rates for taxpayers filing as *ARNDEL*
 
 
 Withholding rates for taxpayers filing as *WRMAR* and 
-Withholding rates for taxpayers filing as *NOMAR*
+Withholding rates for taxpayers filing as *NONMAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -213,7 +213,7 @@ Withholding rates for taxpayers filing as *SINGLE*
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 6,200            | 0              | 0            | 0                  |
 | 6,200       | 11,700           | 0              | 1.7%         | 6,200              |
-| 11,700      | 17,200           | 93.51          | 3.2%         | 11,700             |
+| 11,700      | 17,200           | 93.50          | 3.2%         | 11,700             |
 | 17,200      | 22,200           | 269.50         | 4.7%         | 17,200             |
 | 22,200      | 32,200           | 504.50         | 4.9%         | 22,200             |
 | 32,200      | 48,200           | 994.50         | 4.9%         | 32,200             |
