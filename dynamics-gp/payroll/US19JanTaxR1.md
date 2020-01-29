@@ -147,7 +147,7 @@ Withholding rates for taxpayers filing as *ARNDEL*
 
 
 Withholding rates for taxpayers filing as *WRMAR* and 
-Withholding rates for taxpayers filing as *NOMAR*
+Withholding rates for taxpayers filing as *NONMAR*
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -213,7 +213,7 @@ Withholding rates for taxpayers filing as *SINGLE*
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 6,200            | 0              | 0            | 0                  |
 | 6,200       | 11,700           | 0              | 1.7%         | 6,200              |
-| 11,700      | 17,200           | 93.51          | 3.2%         | 11,700             |
+| 11,700      | 17,200           | 93.50          | 3.2%         | 11,700             |
 | 17,200      | 22,200           | 269.50         | 4.7%         | 17,200             |
 | 22,200      | 32,200           | 504.50         | 4.9%         | 22,200             |
 | 32,200      | 48,200           | 994.50         | 4.9%         | 32,200             |
@@ -702,6 +702,9 @@ The Standard Deduction amount changed to \$10,750 from \$10,000 for Filing Statu
 #### Withholding changes for North Dakota
 
 The Personal Exemption amount is \$4,300 for Filing Status MAR and SINGLE 
+
+***Per the state of North Dakota, there is no HOH filing status with exemptions.  If an employee on the W4 chooses 
+Filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.***
 
 Withholding rates for taxpayers filing as *MAR*, *MARHR*
 

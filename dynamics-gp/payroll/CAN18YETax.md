@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/1/2019
+ms.date: 1/15/2020
 
 ---
 
@@ -40,6 +40,9 @@ This document contains the following chapters:
 ### What’s changed
 
 The 2019 Year-End Update/2020 Tax Update contains changes in the information that’s submitted to the Canada Revenue Agency (CRA) and Ministère du Revenu du Québec.
+
+***[Refer to updated blog of recent changes and Round 2 Canadian Payroll Update]***
+(https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-year-end-update-2019-canadian-payroll)
 
 #### Tax changes
 
@@ -501,7 +504,7 @@ The personal tax credit amounts specified in the P_CPY_Control table will be upd
 
 You can view these amounts in the Tax Credits window by going to: Tools \>\> Setup \>\> Payroll-Canada \>\> Control \>\> Tax Credits
 
-### Index factors for 2019
+### Index factors for 2020
 
 The following table shows how Index Factors as specified in the Tax Credit Indexation Factors window (Payroll Reset Files window (Tools\>\>Routines\>\>PayrollCanada\>\>Year End File Reset\>\>Tax Credit Indexation Factors) have been updated.
 
@@ -511,7 +514,7 @@ The following table shows how Index Factors as specified in the Tax Credit Index
 | **Taxing authority**      | **2020 index factor** | **2019 index factor** |
 |---------------------------|-----------------------|-----------------------|
 | Federal                   | 1.019                 | 1.022                 |
-| Alberta                   | 1.024                 | 1.024                 |
+| Alberta                   | 1.000                 | 1.024                 |
 | British Columbia          | 1.025                 | 1.026                 |
 | Manitoba                  | 1.022                 | 1.026                 |
 | New Brunswick             | 1.019                 | 1.022                 |
