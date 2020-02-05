@@ -55,8 +55,8 @@ The following tax changes are included in this update:
 #### Withholding changes for Colorado
 
 - Flat tax rate of 4.63 for all filing status
-- For Filing Status of MAR, the Personal Exemption amount is \$8,000 
-- For Filing Status of SINGLE, the Personal Exemption amount is \$4,000 
+- For Filing Status of MAR, the Personal Exemption amount is \$8,000 per exemption entered
+- For Filing Status of SINGLE, the Personal Exemption amount is \$4,000 per exemption entered
 
 
 #### Withholding changes for Idaho
