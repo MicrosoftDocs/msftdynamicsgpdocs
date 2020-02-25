@@ -6,7 +6,7 @@ author: dapelt
 ms.author: dapelt
 manager: rbucholz
 applies_to: 
-ms.date: 11/2/2018
+ms.date: 10/14/2019
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 
@@ -57,7 +57,8 @@ Before you begin the install, you need to create the following accounts:
 ### Security group
 Security groups are used to specify which users are allowed to access the Microsoft Dynamics GP Web Management Console. You use the security group to grant your tenant service administrator access to the Tenant Manager snap-in. You also have to add tenant administrator accounts to the group. 
 
-    You can also use a domain group to specify who has access to the Tenant Manager snap-in.
+> [!NOTE]
+> You can also use a domain group to specify who has access to the Tenant Manager snap-in.
 
 To create the security group, complete the following steps:
 1. Start Server Manager.
@@ -330,14 +331,11 @@ steps:
 
 1. Start the Tenant Services Configuration Wizard
 
-Click Start, click Administrative Tools, and then click Tenant Services Config
-Wizard. The Microsoft Dynamics GP Tenant Services Configuration Wizard
-opens. Click Next.
+    Click Start, click Administrative Tools, and then click Tenant Services Config Wizard. The Microsoft Dynamics GP Tenant Services Configuration Wizard opens. Click Next.
 
 2. Specify the SQL Server.
 
-Enter the machine name of the SQL Server where you want to put the Tenant
-Services database.
+    Enter the machine name of the SQL Server where you want to put the Tenant Services database.
 
 3. Specify the name of the database.
 
@@ -425,19 +423,11 @@ learn more about the Tenant Manager upgrade, see Upgrading an earlier installati
 in the Tenant Manager Installation section.
 
 ### What to do next
-After you install and configure Microsoft Dynamics GP Tenant Services, consider
-taking the following steps:
+After you install and configure Microsoft Dynamics GP Tenant Services, consider taking the following steps:
 
-• Install or upgrade the Tenant Manager snap-in for the Microsoft Dynamics GP
-Web Management Console. You use the Tenant Manager to create, update, and
-remove tenants, users, and multitenant applications. For information about
-how to install the Tenant Manager snap-in, see Chapter 6, “Tenant Manager
-Installation”.
+- Install or upgrade the Tenant Manager snap-in for the Microsoft Dynamics GP Web Management Console. You use the Tenant Manager to create, update, and remove tenants, users, and multitenant applications. For information about how to install the Tenant Manager snap-in, see Chapter 6, “Tenant Manager Installation”.
 
-• Learn about developing multitenant applications that use the Microsoft
-Dynamics GP Tenant Services. To learn about the services and the application
-programming interface (API) they provide, find and review the Microsoft
-Dynamics GP Web Client Services Reference.
+- Learn about developing multitenant applications that use the Microsoft Dynamics GP Tenant Services. To learn about the services and the application programming interface (API) they provide, find and review the Microsoft Dynamics GP Web Client Services Reference.
 
 ## Chapter 6: Tenant Manager Installation
 This portion of the documentation describes how to install the Microsoft Dynamics
@@ -485,8 +475,7 @@ the site. To add the certificate, complete the following steps:
 
   5. Click Complete Certificate Request.
 
-    In the Actions pane, click Complete Certificate Request. The Complete
-    Certificate Request window opens.
+   In the Actions pane, click Complete Certificate Request. The Complete Certificate Request window opens.
 
 6. Specify the certificate file for the web server.
 
@@ -563,7 +552,7 @@ following steps:
 
     ![install seven](media/tenant-services-install-07.PNG "installation seven")
     
-        If you add Tenant Manager to an existing Web Management Console, do not make changes that set Session Central, Web Site, Web Client Session Manager, or Session Server to Not Available. You should leave the existing values.
+     If you add Tenant Manager to an existing Web Management Console, do not make changes that set Session Central, Web Site, Web Client Session Manager, or Session Server to Not Available. You should leave the existing values.
     
     Specify the install location for the Web Management Console. You can use the default location or specify another folder. Click Next.
 
@@ -667,12 +656,12 @@ To upgrade the Tenant Manager snap-in, you run the Web Components upgrade.
 The upgrade can also make changes to any of the following components that are
 installed on the server:
 
-• Session Management snap-in
-• GP Web Management Console
-• Web site for the Web Management Console
-• Web site for the GP Web Client
-• GP Session Central Service
-• GP Session Services
+- Session Management snap-in  
+- GP Web Management Console
+- Web site for the Web Management Console
+- Web site for the GP Web Client
+- GP Session Central Service
+- GP Session Services
 
 To upgrade Tenant Manager, complete the following steps:
 
@@ -729,21 +718,14 @@ To upgrade Tenant Manager, complete the following steps:
 
 9. Clear the cache of your web browser.
 
-    You have to clear the cache of the web browser you use to connect to the Tenant
-    Manager and the Web Management Console. In Internet Explorer, click
-    Settings, Safety, and Delete browsing history. Click Temporary Internet files,
-    click Cookies, and then click Delete.
+    You have to clear the cache of the web browser you use to connect to the Tenant Manager and the Web Management Console. In Internet Explorer, click Settings, Safety, and Delete browsing history. Click Temporary Internet files, click Cookies, and then click Delete.
 
-        Repeat this step on any machine where you use the web browser to view the Web
-        Management Console. If you do not clear the cache, you might not see the upgrade or
-        you might encounter an error while trying to open the Tenant Manager snap-in.
+    Repeat this step on any machine where you use the web browser to view the Web Management Console. If you do not clear the cache, you might not see the upgrade or you might encounter an error while trying to open the Tenant Manager snap-in.
 
-For more information about the Web Components upgrade, see the Microsoft
-Dynamics GP Web Client Install and Administration Guide.
+For more information about the Web Components upgrade, see the Microsoft Dynamics GP Web Client Install and Administration Guide.
 
 ### Start the Tenant Manager
-After you install the Tenant Manager console, you have to specify the services you
-want to manage. To configure the Tenant Manager, complete the following steps:
+After you install the Tenant Manager console, you have to specify the services you want to manage. To configure the Tenant Manager, complete the following steps:
 
 1. Open Internet Explorer.
 
@@ -788,7 +770,7 @@ want to manage. To configure the Tenant Manager, complete the following steps:
 
     The following example shows the format of the URL:
 
-        http://<servername>:<port>/TenantManagementService
+        https://<servername>:<port>/TenantManagementService
 
     ![install ten](media/tenant-services-install-10.PNG "installation 10")
 
@@ -809,18 +791,15 @@ want to manage. To configure the Tenant Manager, complete the following steps:
     ![install eleven](media/tenant-services-install-11.PNG "installation eleven")
 
 ## What to do next
-After you install and configure Microsoft Dynamics GP Tenant Services, consider
-taking the following steps:
+After you install and configure Microsoft Dynamics GP Tenant Services, consider taking the following steps:
 
-• If you installed the Web Management Console and Tenant Manager on a
-separate machine from the where you installed Session Central, you have to
-restart the Session Central service. This enables the Session Central service to
-use the additional security.
+- If you installed the Web Management Console and Tenant Manager on a separate machine from the where you installed Session Central, you have to restart the Session Central service. This enables the Session Central service to use the additional security.
 
-• Use the Microsoft Dynamics GP Web Management Console to create, update,
-and remove tenants, users, and multitenant applications. For more information,
-see Chapter 9, “Configuring Tenants,” 
+- Use the Microsoft Dynamics GP Web Management Console to create, update, and remove tenants, users, and multitenant applications. For more information, see [Chapter 9: Configuring Tenants](tenant-services-config-admin.md#chapter-9-configuring-tenants).
 
-• Learn about actions you will need to take to configure and maintain the
-Microsoft Dynamics GP Tenant Services components that you installed. Details
-are found in Part 3, Configuration and Administration.
+- Learn about actions you will need to take to configure and maintain the Microsoft Dynamics GP Tenant Services components that you installed. Details are found in [Tenant Services Configuration and Administration](tenant-services-config-admin.md).
+
+## See also
+
+[Multitenant Applications](tenant-services-applications.md)  
+[Tenant Services Configuration and Administration](tenant-services-config-admin.md)  

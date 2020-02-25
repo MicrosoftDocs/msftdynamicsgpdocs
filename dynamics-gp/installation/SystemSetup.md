@@ -588,8 +588,8 @@ computing environment.
 - Use the Microsoft Office Update site to help keep your Office products
     up-todate. Office product updates are created by Microsoft to bring you the
     highest levels of security, stability, and critical functionality available.
-    ([http://
-    office.microsoft.com/en-us/officeupdate/default.aspx](http://office.microsoft.com/en-us/officeupdate/default.aspx))
+    ([https://
+    office.microsoft.com/en-us/officeupdate/default.aspx](https://office.microsoft.com/en-us/officeupdate/default.aspx))
 
 #### Microsoft Dynamics GP security
 
@@ -670,7 +670,7 @@ are some tips to avoid infection.
     the macro or document originated from the signer and has not been altered.
     For more information about Microsoft Office security features, visit the
     Microsoft Office Online Web site
-    ([http://office.microsoft.com)](http://office.microsoft.com/en-us/default.aspx).
+    ([https://office.microsoft.com)](https://office.microsoft.com/en-us/default.aspx).
 
 ## Part 2: User setup
 
@@ -1581,7 +1581,7 @@ Reporting
 Services, how to deploy predefined reports that are included in Microsoft
 Dynamics GP to a server, and how to set up security for reports. Check the
 Using Microsoft Dynamics GP 2010 Web site
-(<http://go.microsoft.com/fwlink/?LinkId=249465>) for the most current
+(<https://go.microsoft.com/fwlink/?LinkId=249465>) for the most current
 documentation.
 
 **To set up access for SQL Server Reporting Services reports:**
@@ -1608,7 +1608,7 @@ documentation.
     Reporting Services reports.
 
 Refer to Knowledge Base article 319723: *How to use Kerberos authentication
-in *SQL Server* [(http://support.microsoft.com/kb/319723/en-us)](http://support.microsoft.com/kb/319723/en-us) and complete Step 1: Configure the domain controller and Step 2: Configure the IIS
+in *SQL Server* [(https://support.microsoft.com/kb/319723/en-us)](https://support.microsoft.com/kb/319723/en-us) and complete Step 1: Configure the domain controller and Step 2: Configure the IIS
 services server to use Kerberos authentication on SQL Server.
 
 #### User security troubleshooting
@@ -9472,15 +9472,15 @@ Native mode location:
 
 | **Location**       | **Example**                        |
 |--------------------|------------------------------------|
-| Report Server URL  | http://\<servername\>/ReportServer |
-| Report Manager URL | http://\<servername\>/Reports      |
+| Report Server URL  | https://\<servername\>/ReportServer |
+| Report Manager URL | https://\<servername\>/Reports      |
 
 SharePoint Integrated mode location:
 
 | **SharePoint Integrated** |                                       |
 |---------------------------|---------------------------------------|
 | **Location**              | **Example**                           |
-| SharePoint Site           | http://\<servername\>/SharePoint site |
+| SharePoint Site           | https://\<servername\>/SharePoint site |
 | Report Library            | ReportsLibrary                        |
 
 1. If you selected Native as the report server mode, you can enter the name of

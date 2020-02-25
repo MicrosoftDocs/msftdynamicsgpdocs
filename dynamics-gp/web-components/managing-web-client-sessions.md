@@ -53,7 +53,7 @@ To connecting to Session Central
 
 2. In the window that is displayed, supply the URL for the Session Central Service. A typical URL to access the service looks like the following:
 
-    http://machinename:48650/SessionCentralService
+    https://machinename:48650/SessionCentralService
 
     Substitute machinename with the name of the computer on which the Session Central Service is running. The default port used for the service is 48650. If you have used a different port for the service, you must use that port number in the URL.
 

@@ -82,9 +82,7 @@ Look for "2019 Canadian Payroll Year End Update for Microsoft Dynamics GP".
 
 #### Microsoft Canadian Payroll support team
 
-We have a support team focused entirely on providing service and support to our
-
-Canadian Payroll customers. If you have questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code, then press 4 for the Payroll Tax Hotline.
+We have a support team focused entirely on providing service and support to our Canadian Payroll customers. If you have questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code, then press 4 for the Payroll Tax Hotline.
 
 ## Chapter 1: Canadian Payroll year-end checklist
 
@@ -131,7 +129,7 @@ If you plan to use the Internet to submit T4 records, you need to obtain a Web A
 
 The Web Access Code consists of six characters: two letters, and four numbers. The code is case sensitive which means that you must enter it exactly as it appears on your personalized T4 Summary form. If you do not enter the code correctly, you will not be able to access the secure areas of the CRA’s T4 Internet File Transfer site.
 
-For more information, see the [CRA website](http://www.cra-arc.gc.ca/eservices/rf/cd-eng.html).
+For more information, see the [CRA website](https://www.cra-arc.gc.ca/eservices/rf/cd-eng.html).
 
 Canadian Payroll for Microsoft Dynamics GP has the ability to generate the XML file required for T4 Internet File Transfer, but you are responsible for obtaining the access code and actually submitting the file to the CRA.
 
@@ -291,7 +289,7 @@ You use the **Payroll R1 Edit** window to make changes to RL records. You use th
 
 ## Chapter 4: Tax updates
 
-This chapter lists changes to federal, provincial, and territorial tax rates for 2019. For detailed information about taxes, refer to the Canada Revenue Agency Web site at [www.cra-arc.gc.ca](http://www.cra-arc.gc.ca/) and Revenue Quebec’s Web site at [www.revenu.gouv.qc.ca.](http://www.revenu.gouv.qc.ca/)
+This chapter lists changes to federal, provincial, and territorial tax rates for 2019. For detailed information about taxes, refer to the Canada Revenue Agency Web site at [www.cra-arc.gc.ca](https://www.cra-arc.gc.ca/) and Revenue Quebec’s Web site at [www.revenu.gouv.qc.ca.](https://www.revenu.gouv.qc.ca/)
 
 ### Pension Plan, Employment Insurance, and Parental Insurance changes
 

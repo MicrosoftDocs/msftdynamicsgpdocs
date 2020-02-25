@@ -6,7 +6,7 @@ author: dapelt
 ms.author: dapelt
 manager: rbucholz
 applies_to: 
-ms.date: 10/23/2018
+ms.date: 10/14/2019
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 
@@ -60,13 +60,13 @@ If your application will run on the same network where you installed Tenant Serv
 * Discuss the installation procedure with the system administrator to learn what security and port settings were used during the Tenant Services installation. If you plan to use the Tenant Public Discovery Service, verify that the service was installed.
 * Review the Microsoft Dynamics GP Web Client Service Reference documentation. Use the reference to learn about the classes and operations of the Tenant Discovery Service and the Tenant Management Service.
 
-# Chapter 2: Tenant Services architecture
+## Chapter 2: Tenant Services architecture
 Before you install Tenant Services, it might help to understand multitenancy. You should also be familiar with how Microsoft Dynamics GP implements multitenancy. Information about the Microsoft Dynamics GP multitenant environment is divided into the following sections:
 * Multitenancy and Microsoft Dynamics GP 
 * Tenant Services architecture 
 * Tenant Manager and the Web Management Console
 
-## Multitenancy and Microsoft Dynamics GP
+### Multitenancy and Microsoft Dynamics GP
 Multitenancy is a software architecture where an application runs as a service and is used by multiple, independent organizations that are called tenants. The service runs in a single, shared physical environment. Users from several tenants can simultaneously use the application because the service logically isolates data and configuration information for each tenant.
 To use Microsoft Dynamics GP in a multitenant environment, you install the following components to the servers in you data center:
 * You first install Tenant Services. Tenant Services are WCF services that enable Microsoft Dynamics GP multitenant applications to logically isolate data and configuration information for each tenant.
@@ -77,12 +77,12 @@ An important advantage of multitenancy is that you can use a single SQL Server f
 
 The following sections describe the key structural concepts in a Microsoft Dynamics GP multitenant environment.
 
-### Tenant 
+#### Tenant
 A tenant is an organization that can use a multitenant application to access Microsoft Dynamics GP. You use the Tenant Manager snap-in to create tenants. Each tenant has a unique name. 
 
 You assign a multitenant application to a tenant. You also assign a tenant user to a tenant. The tenant users assigned to a tenant can use all the multitenant applications for that tenant.
 
-### Application 
+#### Application 
 A multitenant application is a client that connects to a shared service. You use a multitenant application to perform operations that use Microsoft Dynamics GP data for a specified tenant. The install includes the following multitenant applications:
 - Microsoft Dynamics GP Web Client 
 - Web Services for Microsoft Dynamics GP 
@@ -92,7 +92,7 @@ You first have to use the Tenant Manager snap-in to add the application to your 
 
 After you assign an application to a tenant, you use the Tenant Manager to populate the application properties. The application properties enable you to configure the service for the specified tenant. 
 
-### User 
+#### User 
 A user is a person that can perform operations with tenants and multitenant applications. There are two types of users:
 * Service users 
 * Tenant users
@@ -114,12 +114,12 @@ Tenant user type | Description
 Tenant administrator | A user that can add other tenant users to a tenant. You can upgrade any tenant user to be a tenant administrator.
 Tenant user | A user that is assigned to a tenant. When you assign a user to a tenant, that person is authorized to use any of the multitenant applications for that tenant. A tenant can have one or more than one tenant user. In addition, a tenant user can be associated with more than one tenant. To add a tenant user, you associate the login ID of the person or the group with the tenant.
 
-## Tenant Services architecture
+### Tenant Services architecture
 Microsoft Dynamics GP Tenant Services is a collection of WCF services that help a multitenant application to access Microsoft Dynamics GP for a tenant. Tenant Services run on a server in your data center. You have to install Tenant Services before you can use any multitenant application. The following diagram shows how a multitenant application uses Tenant Services:
 
 ![multitenant overview](media/tenant-services-01.PNG "multitenant diagram")
 
-### Client and the multitenant service 
+#### Client and the multitenant service 
 A multitenant application includes a client and a multitenant service. The multitenant application enables you to perform operations that use Microsoft Dynamics GP data for a specified tenant. You can use the following multitenant applications:
 * Microsoft Dynamics GP Web Client 
 * Web Services for Microsoft Dynamics GP 
@@ -132,7 +132,7 @@ If your login is a tenant user, the multitenant application needs to identify th
 
 After you choose the tenant, the multitenant service gets configuration information that enables the service to work with Microsoft Dynamics GP data for the specified tenant. You can now use the client to perform operations for the specified tenant.
 
-### Tenant Services 
+#### Tenant Services 
 Microsoft Dynamics GP Tenant Services includes three Windows Communication Foundation (WCF) services. These services enable you to add, view, and update tenants, users, and multitenant applications. The following table describes the WCF services.
 
 Service name | Description
@@ -141,13 +141,12 @@ Microsoft Dynamics GP Tenant Discovery Service | You use the Tenant Discovery Se
 Microsoft Dynamics GP Tenant Management Service | You use the Tenant Management Service to create, update, and remove tenants, multitenant applications, tenant users, and service administrators. 
 Microsoft Dynamics GP Public Tenant Discovery Service | You use the Tenant Public Discovery Service to get basic tenant information for a specified user or a specified tenant application. You use the public discovery service when your multitenant application has to access tenant information from the internet. By default, the public discovery service is not initially installed. 
 
-
-### DYNGPDISCOVERY database 
+#### DYNGPDISCOVERY database 
 Information about tenants, users, and multitenant applications is stored in a SQL Server database. The default name for the database is DYNGPDISCOVERY. You can specify a different name during installation. You can place the Tenant Services database on the same SQL Server you use for Microsoft Dynamics GP.
 
 To add, update or remove records from the database, you use the Tenant Manager snap-in and the Web Management Console..
 
-###Security 
+#### Security 
 The diagram shows that the client communicates with the multitenant service over a network. To help secure the information in the messages between the client and the service, you have to use security certificates and Secure Sockets Layer (SSL). You use SSL to encrypt the messages.
 
 The Tenant Discovery Service and Tenant Management Service do not require security certificates and SSL. However, it is recommended that you use SSL with these services whenever possible.
@@ -156,7 +155,7 @@ If you use the Tenant Public Discovery Service, you are required to have a secur
 
 To get information from any of the Tenant Services, you must provide an authenticated Windows login. Your login ID is used to determine what tenants and services you can access.
 
-### Web client example 
+#### Web client example 
 The following illustration shows an example of how Tenant Services works with a multitenant application. The example shows Tenant Services and the Microsoft Dynamics GP Web Client.
 
 ![multitenant web client overview](media/tenant-services-02.PNG "multitenant web client diagram")
@@ -173,7 +172,7 @@ The Session Central Service returns the URL for the session runtime process to t
 
     In a single tenant environment where Tenant Services are not installed, you will find a file named TenantConfiguration.xml at the root of the Session Central Service installation folder. The file contains default tenant information that is automatically used when you login to the web client.
 
-### Tenant Manager and the Web Management Console
+#### Tenant Manager and the Web Management Console
 After you install Tenant Services you will want to add tenants, multitenant applications, tenant users, and service administrators. To perform these operations, you have to install the Tenant Manager snap-in for the Microsoft Dynamics GP Web Management Console. For more information about how to install the Web Management Console, see Chapter 6, “Tenant Manager Installation.”
 
 Tenant Manager is the application you use to manage your multitenant environment. To view the Tenant Manager, you use your browser to open the Web Management Console.
@@ -185,7 +184,7 @@ The following illustration shows the architecture of the Tenant Manager. Notice 
 You might also notice that the Tenant Manager uses a service named Tenant Proxy Service. The Tenant Proxy Service is an intermediate service that helps the Silverlight Tenant Manager application to use the operations of the WCF Tenant Services. 
 Tenant 
 
-# Chapter 3: Tenant Services preparation
+## Chapter 3: Tenant Services preparation
 If you plan to use Microsoft Dynamics GP in a multitenant environment, you need to spend time planning how to use Tenant Services. You use Tenant Services when you want to use a multitenant application like the Web Client or web services with Microsoft Dynamics GP. If you plan to use other applications, you do not need to install Tenant Services. 
 Planning information is divided into the following sections:
 
@@ -193,10 +192,10 @@ Planning information is divided into the following sections:
 * User accounts 
 * Signed security certificates
 
-## Deployment configurations
+### Deployment configurations
 Which configuration you choose will depend on what types of integration you need, and the server resources you have available. 
 
-### Scale-out 
+#### Scale-out 
 A scale-out configuration is a multiserver deployment configuration. Typically, you use the scale-out configuration to support the Microsoft Dynamics GP Web Client. To create a multitenant environment, you have to add Tenant Services to the scaleout configuration.
 
 You use the scale-out configuration when you expect to host more than one organization and a large number of users. To obtain optimal performance, you should use the scale-out configuration whenever possible.
@@ -221,25 +220,25 @@ In multiserver configuration you can use a firewall to shield the tenant service
 
 For additional security you can also have a firewall between the tenant service, the session host server and the SQL Server. The firewall can provide additional security by further restricting access to the SQL Server. 
 
-### Single-server 
+#### Single-server 
 An alternate configuration adds Tenant services to a single-server deployment. In this configuration, you install Tenant Services on the same server as Microsoft Dynamics GP and the SQL Server. The following illustration shows the configuration for a single server:
 
 ![Single Server overview](media/tenant-services-05.PNG "Single Server overview")
 
 This configuration is best suited for development and evaluation environments where the number of tenants and users is expected to be small.
 
-## User accounts
+### User accounts
 You will need at least two user accounts during the installation of tenant services. For the multiple-server installation, you have to use domain accounts. For the single-server installation, you can use machine accounts. Ideally, these user accounts should have limited privileges, and a password that does not expire. 
 
 Create the user accounts before you start installing the Microsoft Dynamics GP Tenant Services. You must have user accounts for the following: 
 
-### Tenant Services Installation
+#### Tenant Services Installation
 The login you use to install Microsoft Dynamics GP Tenant Services is added as a service administrator. You can use this login to access the Tenant Manager snap-in of the Web Management Console where you can add tenants, applications, and user to your multitenant environment.
 
-### Service login IDs 
+#### Service login IDs 
 You have to specify a user account as the login ID for the Tenant Discovery Service, Tenant Management Service, and the Tenant Public Discovery Service. Use a different user account than you use to install Tenant Services. The service logins are given SQL permissions to the tenant database.
 
-### Tenant Manager
+#### Tenant Manager
 If you install the Microsoft Dynamics GP Web Management Console and the Tenant
 Manager snap-in, you have to specify a login ID for the IIS application pool. You
 can use the same user account that you use for the service login IDs.
@@ -248,9 +247,10 @@ The user account that you specify for the application pool will be added as a
 delegating user for Tenant Services. You should not use this login for a service
 administrator, tenant administrator, or tenant user.
 
-    You cannot use the login of a service administrator as a delegating user. If you try to use the same login for both, you will not be able to use the Tenant Manager snap-in of the Web Management Console.
+> [!NOTE]
+> You cannot use the login of a service administrator as a delegating user. If you try to use the same login for both, you will not be able to use the Tenant Manager snap-in of the Web Management Console.
 
-## Signed security certificates
+### Signed security certificates
 You can use security certificates and secure sockets layer (SSL) to help improve the
 security of data being transmitted to the Tenant Services. You will use the security
 certificate when you install Tenant Discovery Service, Tenant Management Service,
@@ -267,7 +267,7 @@ action is needed by the users.
 The following sections describe the types of signed security certificates that you can
 use.
 
-### Single domain
+#### Single domain
 This type of security certificate is issued for a specific machine. For example, you
 could get a security certificate issued for the machine with the following name:
 
@@ -277,7 +277,7 @@ You would typically use this type of certificate when installing your multitenan
 environment in a single machine configuration. This is the least expensive type of
 certificate to purchase.
 
-### Multiple domain
+#### Multiple domain
 This type of security certificate is issued for a set of specific machines. You must
 know the machine names at the time that you purchase the security certificate. For
 example, you could get a security certificate issued that you use with the following
@@ -293,7 +293,7 @@ Services in a scale-out configuration. The certificate would contain an entry fo
 machines that will be part of your configuration. This security certificate is more
 expensive because the same certificate can be used on multiple machines.
 
-### Wildcard
+#### Wildcard
 This type of security certificate is not issued for specific machines. Instead, it is
 issued for a specified domain. The security certificates can be used for any machines
 that follow the naming convention of the domain. For example, if you purchased a
@@ -307,5 +307,11 @@ configuration but do not know the names at the time you are purchasing the
 certificate. The extra flexibility does come with a cost. Wildcard certificates are the
 most expensive signed certificate.
 
-    The certificate must list “Server Authentication” as one of its intended purposes. To view the intended purpose, use the Certificates snap-in for the Microsoft Management Console and view the Intended Purpose column.
+> [!NOTE]
+> The certificate must list “Server Authentication” as one of its intended purposes. To view the intended purpose, use the Certificates snap-in for the Microsoft Management Console and view the Intended Purpose column.
 
+## See also
+
+[Multitenant Applications](tenant-services-applications.md)  
+[Tenant Services Installation](tenant-services-installation.md)  
+[Tenant Services Configuration and Administration](tenant-services-config-admin.md)  

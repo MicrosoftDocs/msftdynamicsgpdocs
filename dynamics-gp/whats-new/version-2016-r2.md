@@ -28,7 +28,7 @@ Users can now assign SmartList Designer List favorites to Advanced Lookup window
 
 ### Support secure connection to Management Reporter service
 
-Enable users to connect to Management Reporter (MR) service using a more secure `https://` connection. Currently, the MR Services only supports `http://` This enhancement was added in response to feedback from customers who requested a more secure connection when rendering their financial data. This functionality became available with Management Reporter cumulative update 16.
+Enable users to connect to Management Reporter (MR) service using a more secure `https://` connection. Currently, the MR Services only supports `https://` This enhancement was added in response to feedback from customers who requested a more secure connection when rendering their financial data. This functionality became available with Management Reporter cumulative update 16.
 
 ### Power BI on Web Client Home page
 

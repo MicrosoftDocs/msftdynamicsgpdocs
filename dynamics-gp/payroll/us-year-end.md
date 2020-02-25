@@ -21,7 +21,7 @@ This document contains instructions for updating the U.S. Payroll module for Mic
 
 Also included in this document are instructions for completing payroll year-end procedures. These instructions assume that you are already familiar with U.S. Payroll for Microsoft Dynamics GP.
 
-You can find information about year-end payroll procedures in the “Payroll Company Routines” and “Government Form and Report Routines” chapters in the U.S. Payroll documentation, or the sections of Help with the same names.
+You can find information about year-end payroll procedures in the [Payroll Company Routines]([U.S. 2019 Year-end Update in Dynamics GP](PayrollUS.md#payrollcompanyroutine) and [Government Form and Report Routines](PayrollUS.md#govformreportroutines) chapters in the [U.S. Payroll documentation](PayrollUS.md), or the sections of Help with the same names.
 
 Note, however, that the instructions in this document expand on the instructions in your Payroll documentation, and in some cases, supersede them.
 
@@ -50,7 +50,7 @@ Look here to find year-end updates, instructions, and tax updates. Instructions 
 
 [https://mbs.microsoft.com/knowledgebase/search.aspx](https://mbs.microsoft.com/knowledgebase/search.aspx)
 
-Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations. 
+Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
 
 **eSupport**
 
@@ -73,6 +73,7 @@ We have specialized support teams focused on providing service and support to ou
 The U.S. 2019 Year-end Update contains software changes to allow you to comply with 2019 filing requirements as well as the most recent fixes for Microsoft Dynamics GP and other quality report fixes related to the payroll year-end.
 
 ### Payroll form changes
+
 - W-4 for the 2020 year.
 Changes for Employee Self Service W-4 form and Cards | Payroll | Tax window
 
@@ -106,11 +107,11 @@ Microsoft Dynamics GP support engineers maintain a blog that contains posts rela
 
 This chapter contains checklists that you can use for year-end. Use the checklist that most suits the way your company handles Payroll year-end activities. The following checklists are provided:
 
-- *Printing 2019 statements before processing 2020 pay runs*
+- [Printing 2019 statements before processing 2020 pay runs](#printoldbeforenew)
 
-- *Processing 2020 pay runs before printing 2019 statements*
+- [Processing 2020 pay runs before printing 2019 statements](#printnewbeforeold)
 
-### Printing 2019 statements before processing 2020 pay runs
+### <a name=printoldbeforenew></a>Printing 2019 statements before processing 2020 pay runs
 
 Use this checklist to install the year-end maintenance and update, to close the 2019 payroll year, to update your Payroll system with the 2020 Payroll tax changes, and to print 2019 wage statements before performing 2020 pay runs.
 
@@ -122,20 +123,20 @@ Detailed instructions for completing each step are found in the chapters and sec
 | 2        | Complete all 2019 pay runs.    |
 | 3        | Complete all payroll month-end, period-end, or quarter-end procedures. Note: You can install the year-end update (step 5) before this step, as long as you create a backup before installing.  |
 | 4        | Make a backup of your 2019 company database(s). Label the backup “Pre Year-end Wage file”.  |
-| 5        | Install the U.S. 2019 Year-end Update. See *Installing the year-end update* on page 17. Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application. |
-| 6        | Create the Year-end Wage file. See *Creating the Year-end Wage file* on page 21. Note: 2020 Payroll tax updates can be installed any time after the Year-end Wage file has been created. |
-| 7        | Make a backup of your 2019 company database(s). Label the backup “Post Year-end Wage file”.  |
+| 5        | Install the U.S. 2019 Year-end Update. See [Installing the year-end update](#installing-the-year-end-update). Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application. |
+| 6        | Create the Year-end Wage file. See [Creating the Year-end Wage file](#creating-the-year-end-wage-file). Note: 2020 Payroll tax updates can be installed any time after the Year-end Wage file has been created. |
+| 7        | Make a backup of your 2019 company database(s). Label the backup *Post Year-end Wage file*.  |
 | 8        | Verify W-2 and 1099-R statement information. Note: If you make changes to the statement information, we recommend that you make another backup.  |
-| 9        | Print the W-2 Validation Report, W-2 statements, and W-3 Transmittal form. See *Chapter 6, "Report procedures."* |
-| 10       | Print the 1099-R Validation Report, 1099-R forms, and 1096 Transmittal Form. See *Chapter 6, "Report procedures."*    |
-| 11       | Prepare and submit W-2 information in the federal EFW2 format, if required. See *Chapter 5, "Submitting W-2 reports* |
+| 9        | Print the W-2 Validation Report, W-2 statements, and W-3 Transmittal form. See [Chapter 6 Report procedures](#chapter-6-report-procedures). |
+| 10       | Print the 1099-R Validation Report, 1099-R forms, and 1096 Transmittal Form. See [Chapter 6 Report procedures](#chapter-6-report-procedures).    |
+| 11       | Prepare and submit W-2 information in the federal EFW2 format, if required. See [Chapter 5 Submitting W-2 reports electronically](#chapter-5-submitting-w-2-reports-electronically). |
 | 12       | Archive Human Resources information for inactive employees (optional).   |
 | 13       | Set up fiscal periods for 2020.  |
 | 14       | Delete Human Resources information for inactive employees (optional).   |
 | 15       | Close the fiscal periods for the Payroll series for the 2019 year (optional).  |
 | 16       | Install the 2020 Payroll tax update.  |
 
-### Processing 2020 pay runs before printing 2019 statements
+### <a name=printnewbeforeold></a>Processing 2020 pay runs before printing 2019 statements
 
 Use this checklist if you need to process 2020 pay runs before printing 2019 wage statements.
 
@@ -147,9 +148,9 @@ Detailed instructions for completing each step are found in the chapters and sec
 | 2        | Complete all 2019 pay runs.   |
 | 3        | Complete all payroll month-end, period-end, or quarter-end procedures. Note: You can install the year-end update (step 5) before this step, as long as you create a backup before installing. |
 | 4        | Make a backup of your 2019 company database(s). Label the backup “Pre Year-end Wage file”.   |
-| 5        | Install the U.S. 2019 Year-end Update. See *Installing the year-end update* on page 17. Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run Microsoft Dynamics GP. |
-| 6        | Create the Year-end Wage file. See *Creating the Year-end Wage file* on page 21. Note: 2020 Payroll tax updates can be installed any time after the Year-end Wage file has been created. |
-| 7        | Make a backup of your 2019 company database(s). Label the backup “Post Year-end Wage file”. |
+| 5        | Install the U.S. 2019 Year-end Update. See [Installing the year-end update](#installing-the-year-end-update). Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run Microsoft Dynamics GP. |
+| 6        | Create the Year-end Wage file. See [Creating the Year-end Wage file](#creating-the-year-end-wage-file). Note: 2020 Payroll tax updates can be installed any time after the Year-end Wage file has been created. |
+| 7        | Make a backup of your 2019 company database(s). Label the backup *Post Year-end Wage file*. |
 | 8        | Verify W-2 and 1099-R statement information. Note: If you make changes to the information, we recommend that you make another backup. |
 | 9        | Archive Human Resources information for inactive employees (optional). |
 | 10       | Set up fiscal periods for 2020.|
@@ -157,9 +158,9 @@ Detailed instructions for completing each step are found in the chapters and sec
 | 12       | Close the fiscal periods for the Payroll series of the 2019 year (optional).   |
 | 13       | Install the 2020 Payroll tax update.|
 | 14       | Process 2020 pay runs.              |
-| 15       | Print the W-2 Validation Report, W-2 statements, and W-3 Transmittal forms. See *Chapter 6, "Report procedures."* |
-| 16       | Print the 1099-R Validation Report, 1099-R forms, and 1096 Transmittal Form. See *Chapter 6, "Report procedures."*   |
-| 17       | Prepare and submit W-2 information in the federal EFW2 format, if required. See *Chapter 5, "Submitting W-2 reports*|
+| 15       | Print the W-2 Validation Report, W-2 statements, and W-3 Transmittal forms. See [Chapter 6 Report procedures](#chapter-6-report-procedures). |
+| 16       | Print the 1099-R Validation Report, 1099-R forms, and 1096 Transmittal Form. See [Chapter 6 Report procedures](#chapter-6-report-procedures).   |
+| 17       | Prepare and submit W-2 information in the federal EFW2 format, if required. See [Chapter 5 Submitting W-2 reports electronically](#chapter-5-submitting-w-2-reports-electronically).|
 
 ## Chapter 3: Preparation and FAQs
 
@@ -187,7 +188,7 @@ If you plan to submit W-2 statements electronically using the EFW2 format, you m
 
 Use one of the following options to obtain a User Identification Number:
 
-- Internet: [www.socialsecurity.gov/bso/bsowelcome.htm](http://www.socialsecurity.gov/bso/bsowelcome.htm)  
+- Internet: [www.socialsecurity.gov/bso/bsowelcome.htm](https://www.socialsecurity.gov/bso/bsowelcome.htm)  
 - Telephone: 1-800-772-6270 Monday through Friday, 7 a.m. to 7 p.m. (EST)  
 
 ### Non-supported electronic filing
@@ -204,14 +205,14 @@ Suite 100
 Jacksonville FL 32256  
 Telephone: (888) 255-3815  
 E-mail: *sales\@greenshades.com*  
-Web site: [www.greenshades.com]  (http://www.greenshades.com/)
+Web site: [www.greenshades.com]  (https://www.greenshades.com/)
 
 MasterTax, LLC  
 7150 East Camelback Road, Suite 160  
 Scottsdale, AZ 85251  
 Telephone: (480) 778-8723  
 E-mail: *emailus\@mastertax.net*  
-Web site: [www.mastertax.net](http://www.mastertax.net/)
+Web site: [www.mastertax.net](https://www.mastertax.net/)
 
 ### Frequently asked questions
 
@@ -224,7 +225,7 @@ As you complete year-end tasks, refer to the answers in this section.
 **A:** No. The update will be reflected in all companies. However, you do need to install the update on each workstation using Microsoft Dynamics GP.
 
 **Q: I need to print my 2020 checks before I can print W-2s. What should I do?**  
-**A:** After you create the Year-end Wage file, close the year. Install the 2020 tax update, and you can print checks. Follow the checklist for *Processing 2020 pay runs before printing 2019 statements*.
+**A:** After you create the Year-end Wage file, close the year. Install the 2020 tax update, and you can print checks. Follow the checklist for [Processing 2020 pay runs before printing 2019 statements](#printnewbeforeold).
 
 **Q: How do I print multiple W-2 statements for each employee?**  
 **A:** There are two ways:
@@ -344,7 +345,7 @@ Next, print the W-2 statements and W-3 Transmittal form. You should print a W-2 
 
 7. Install the 2020 Payroll tax update. For additional information and step-by-step instructions to follow, download the latest 2020 U.S. Payroll Tax Update documentation from CustomerSource at [(https://mbs.microsoft.com/customersource/northamerica/GP/downloads)](https://mbs.microsoft.com/customersource/northamerica/GP/downloads). Choose the link for the Microsoft Dynamics GP version you are using.
 
-You also can print W-2 statements and 1099-R forms and create an EFW2 transmission file after you’ve installed the 2020 Tax Update and performed pay runs for the year 2020. To view the checklist, see Processing 2020 pay runs before printing 2019 statements on page 8.
+You also can print W-2 statements and 1099-R forms and create an EFW2 transmission file after you’ve installed the 2020 Tax Update and performed pay runs for the year 2020. To view the checklist, see [Processing 2020 pay runs before printing 2019 statements](#printoldbeforenew).
 
 ### Installing the year-end update
 
@@ -483,7 +484,7 @@ However, when you make changes in this window, only the information in the Year-
 2. Select 2019 and select an employee. The employee’s Social Security number and address are displayed in editable fields.
 
     > [!NOTE]
-    > Social Security numbers that aren’t valid are listed in the W-2 Validation Report. For more information, see Printing W-2 forms and reports on page 35.
+    > Social Security numbers that aren’t valid are listed in the W-2 Validation Report. For more information, see [Printing W-2 forms and reports](#printing-w-2-forms-and-reports).
     > If the employee has a foreign address, mark the Foreign Address option. Fields specific to a foreign address will be displayed.
 
 3. You can edit Special and Other box information by choosing Special or Other to open the Edit Additional Special Information and Edit Additional Other Information windows. If two deductions or benefits are defined to be printed in the same W-2 box with the same label, the amounts will be combined.
@@ -727,11 +728,11 @@ For information on Microsoft developers that provide electronic filing services 
 
 **BSO filing**
 
-You can use the SSA’s Business Services Online website to upload wage information in EFW2 format to the SSA over the Internet. To use BSO, go to [www.socialsecurity.gov/bso/bsowelcome.htm.](http://www.socialsecurity.gov/bso/bsowelcome.htm). You’ll need to register for a User Identification Number to use BSO services.
+You can use the SSA’s Business Services Online website to upload wage information in EFW2 format to the SSA over the Internet. To use BSO, go to [www.socialsecurity.gov/bso/bsowelcome.htm.](https://www.socialsecurity.gov/bso/bsowelcome.htm). You’ll need to register for a User Identification Number to use BSO services.
 
 **EDT filing**
 
-You can use the Electronic Data Transfer (EDT) system to file wage information using the EFW2 format. The system connects SSA’s national  computer with various states, federal offices, and SSA sites. For details, refer to the Electronic Data Transfer (EDT) Guide at  [www.socialsecurity.gov/employer/pub.htm.](http://www.socialsecurity.gov/employer/pub.htm)
+You can use the Electronic Data Transfer (EDT) system to file wage information using the EFW2 format. The system connects SSA’s national  computer with various states, federal offices, and SSA sites. For details, refer to the Electronic Data Transfer (EDT) Guide at  [www.socialsecurity.gov/employer/pub.htm.](https://www.socialsecurity.gov/employer/pub.htm)
 
 ## Chapter 6: Report procedures
 
@@ -768,9 +769,9 @@ Use the Print W-2 Forms window to print the following forms and reports.
 
 You must print a W-2 statement for each employee who worked for you during the year. In the Print W-2 Forms window you can specify which information should be printed on the W-2 statement, and then print the statement. In addition, be sure that the employee information for Box 13 of the W-2 form is accurately entered in the Edit W-2 Information window before printing a validation report.
 
-Print the W-2 Validation report before printing W-2 statements to verify that the information to be printed on W-2 statements is correct. If the W-2 Validation Report shows any errors that need to be corrected, use the Print W-2 Forms window or the Edit W-2 Information window to make changes to the appropriate W-2 forms. For more information, see *Editing W-2 records* on page 22.
+Print the W-2 Validation report before printing W-2 statements to verify that the information to be printed on W-2 statements is correct. If the W-2 Validation Report shows any errors that need to be corrected, use the Print W-2 Forms window or the Edit W-2 Information window to make changes to the appropriate W-2 forms. For more information, see [Editing W-2 records](#editing-w-2-records).
 
-If you’re submitting W-2 wage reports electronically, you can also use AccuWage from [www.socialsecurity.gov](http://www.socialsecurity.gov/) to verify if the information in your file is correct.
+If you’re submitting W-2 wage reports electronically, you can also use AccuWage from [www.socialsecurity.gov](https://www.socialsecurity.gov/) to verify if the information in your file is correct.
 
 **To print W-2 forms and reports:**
 
@@ -810,7 +811,7 @@ If you’re submitting W-2 wage reports electronically, you can also use AccuWag
 
 11. Choose Print.
 
-You can print as many copies of W-2 statements as needed. To print all the required forms for each employee (using laser form sets), enter the number of copies you need in the Print dialog box. Information for two employees will be printed per page, on each form, Copy A through Copy D, until the required number of copies have been printed. For more information, refer to the “How do I print multiple W-2 statements for each employee?” question in *Frequently asked questions* on page 10.
+You can print as many copies of W-2 statements as needed. To print all the required forms for each employee (using laser form sets), enter the number of copies you need in the Print dialog box. Information for two employees will be printed per page, on each form, Copy A through Copy D, until the required number of copies have been printed. For more information, refer to the *How do I print multiple W-2 statements for each employee?* question in [Frequently asked questions](#frequently-asked-questions).
 
 > [!NOTE]
 > If you need to reprint W-2s for any reason, you can reprint them as a group or individually. Use the Employee ID field to restrict the range of W-2 statements printed.

@@ -6,11 +6,11 @@ author: dapelt
 ms.author: dapelt
 manager: rbucholz
 applies_to: 
-ms.date: 11/2/2018/
+ms.date: 10/14/2019
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 
-ms.reviewer: 
+ms.reviewer: edupont
 ---
 
 # Tenant Services Configuration and Administration
@@ -37,7 +37,7 @@ Tenant Services installation.
 • Chapter 11, “Troubleshooting,” describes how to resolve common issues with
 the Tenant Services.
 
-# Chapter 7: Configuring Users
+## Chapter 7: Configuring Users
 After installing Microsoft Dynamics GP Tenant Services, you can add or update
 information about the users you want to administer Tenant Services. To view, add,
 update, or remove users, you use the Tenant Manager snap-in of the Web
@@ -53,7 +53,7 @@ administrators and delegating users:
 
 • To remove a user
 
-## To add users
+### To add users
 
 The following steps describe how to add a service administrator or delegating user.
 
@@ -101,7 +101,7 @@ The following steps describe how to add a service administrator or delegating us
 
     To add the user, click the Save button.  
 
-## To update a user
+### To update a user
 The following steps describe how to update an existing service administrator or
 delegating user.
 
@@ -141,52 +141,41 @@ delegating user.
 
     To update the properties for the user, click the Save button.
 
-## To remove a user
-You can remove a service administrator or delegating user from your multitenant
-environment.
+### To remove a user
+You can remove a service administrator or delegating user from your multitenant environment.
 
-    Take care when removing delegating users that you do not delete a login that is in use with
-    an application pool. If you remove the user, the application pool will no longer be able to use
-    any of the tenant services.
+> [!NOTE]
+> Take care when removing delegating users that you do not delete a login that is in use with an application pool. If you remove the user, the application pool will no longer be able to use any of the tenant services.
 
-The following steps describe how to remove a service administrator or delegating
-user.
+The following steps describe how to remove a service administrator or delegating user.
 
 1. Start the Web Management Console.
 
-    In a browser, open the Web Management Console. To start the Web
-    Management Console, you use a URL similar to the following:
+    In a browser, open the Web Management Console. To start the Web Management Console, you use a URL similar to the following:
 
         https://<web server name>/WebManagementConsole/
 
 2. Click Tenant Manager.
 
-    Click Tenant Manager to open the snap-in in the Web Management Console. To
-    view the available user, click Users in the navigation pane.
+    Click Tenant Manager to open the snap-in in the Web Management Console. To view the available user, click Users in the navigation pane.
 
 3. Click the name of the user.
 
-    The Tenant Manager shows a list of available users. Click the name of the user
-    you want to remove.
+    The Tenant Manager shows a list of available users. Click the name of the user you want to remove.
 
 4. Click Delete.
 
-    Click the Delete button in the tenant manager ribbon of the Web Management
-    Console. The user is removed from the list of users.
+    Click the Delete button in the tenant manager ribbon of the Web Management Console. The user is removed from the list of users.
 
 5. Open the security group on the tenant server.
 
-    Open Server Manager. Expand Configuration, expand Local Users and Groups,
-    and then click Groups. In the list of Groups, find the security group that you
-    added for Tenant Services. Double-click the group and the group properties
-    window opens.
+    Open Server Manager. Expand Configuration, expand Local Users and Groups, and then click Groups. In the list of Groups, find the security group that you added for Tenant Services. Double-click the group and the group properties window opens.
 
 6. Click Remove to delete the member from the group.
 
-    Click the member you want to remove, and then click Remove. Click OK to
-    close the group properties window.
+    Click the member you want to remove, and then click Remove. Click OK to close the group properties window.
 
-# Chapter 8: Configuring Applications
+## Chapter 8: Configuring Applications
 After installing Microsoft Dynamics GP Tenant Services, you can specify the
 multitenant applications you want your tenants to use. To add, update, or remove a
 multitenant application, use the Tenant Manager snap-in of the Web Management
@@ -196,21 +185,20 @@ Tenant Manager snap-in as a service administrator.
 The following sections describes how to add, update, export, import, and remove
 multitenant applications:
 
-• To add an application
-• To update an application
-• To export application information
-• To import an application
-• To remove an application
+- To add an application
+- To update an application
+- To export application information
+- To import an application
+- To remove an application
 
-## To add an application
+### To add an application
 You have to specify the application properties for the multitenant application. You
 use the application properties to specify the instance of Microsoft Dynamics GP for
 a tenant.
 
 1. Start the Web Management Console.
 
-    In a browser, open the Web Management Console. To start the Web
-    Management Console, you use a URL similar to the following:
+    In a browser, open the Web Management Console. To start the Web Management Console, you use a URL similar to the following:
 
         https://ServerName:PortNumber/WebManagementConsole/
 
@@ -262,7 +250,7 @@ a tenant.
     To save the application information you added, click Save. The new multitenant
     application appears in the list of applications in the Web Management Console.
 
-## To update an application
+### To update an application
 The following steps describe how to add or remove an application property for an
 existing multitenant application.
 
@@ -299,7 +287,7 @@ existing multitenant application.
     To save the change you made, click Save. The Application Properties window
     closes.
 
-## To export application information
+#### To export application information
 You can create a file that contains the configuration information for a multitenant
 application. You can later import that file on another server to quickly add the
 application to a different multitenant environment.
@@ -341,7 +329,7 @@ The following steps show how to export an application.
 
     The Save As window closes and the file appears in the folder that you specified.
 
-##To import an application
+#### To import an application
 If you have an .adf file that contain configuration information for a multitenant
 application, you can import the application to Tenant Services. You have to first put
 the .adf file in a folder that is accessible from your Tenant Services machine.
@@ -374,7 +362,7 @@ The following steps show how to import a multitenant application.
     View the list of Applications in the Tenant Manager. The multitenant
     application should appear in that list.
 
-## To remove an application
+#### To remove an application
 You can remove a multitenant application from Tenant Services.
 When you remove the multitenant application, the application can no longer be used for any
 of the tenants for which the application has been configured. You should not delete a
@@ -384,28 +372,24 @@ The following steps describe how to remove a multitenant application.
 
 1. Start the Web Management Console.
 
-In a browser, open the Web Management Console. To start the Web
-Management Console, you use a URL similar to the following: 
+    In a browser, open the Web Management Console. To start the Web Management Console, you use a URL similar to the following: 
 
     https://ServerName:PortNumber/WebManagementConsole/
 
 2. Click Tenant Manager.
 
-    You click Tenant Manager to open the snap-in in the Web Management
-    Console. To view the available applications, click Applications in the navigation
-    pane.
+    You click Tenant Manager to open the snap-in in the Web Management Console. To view the available applications, click Applications in the navigation pane.
 
 3. Click the name of the application.
 
-    The Web Management Console shows a list of available multitenant
-    applications. Click the name of the application you want to remove.
+    The Web Management Console shows a list of available multitenant applications. Click the name of the application you want to remove.
 
 4. Click Delete.
 
     Click the Delete button in the tenant manager ribbon of the Web Management
     Console. The multitenant application is removed from the list of applications.
 
-# Chapter 9: Configuring Tenants
+## Chapter 9: Configuring Tenants
 After you install Microsoft Dynamics GP Tenant Services, you can add tenants,
 tenant users, and the multitenant applications for each tenant. To add, configure, or
 remove tenants, you use the Tenant Manager snap-in of the Web Management
@@ -422,7 +406,7 @@ users, and multitenant applications:
 - To update or remove tenant users
 - To update or remove tenant applications
 
-## Before you start
+### Before you start
 Before you add a tenant, you might have to install a new instance of Microsoft
 Dynamics GP. To add an instance of Microsoft Dynamics GP, you customize the
 name of the instance during the install. You have to provide a unique name for each
@@ -451,7 +435,7 @@ multitenant application for a tenant. For example, the Microsoft Dynamics GP Web
 Client has the DynamicsexeLocation property that specifies the instance for the web
 client.
 
-## To add a tenant
+### To add a tenant
 This section of the documentation shows how to add a tenant. The sections that
 follow show how to add a tenant user and a multitenant application to the tenant.
 
@@ -495,7 +479,7 @@ The following steps describe how to add and configure a tenant.
 
     To save your tenant, click the Save button. The Add Tenant window closes.
 
-## To add a tenant user
+### To add a tenant user
 The following steps describe how to add a tenant user to a tenant that you created
 earlier. Before you begin, click the tenant name in the list of tenants that appears in
 the Tenant Manager snap-in.
@@ -528,7 +512,7 @@ the Tenant Manager snap-in.
 
     When you have added all the tenant users, click Save.
 
-## To add and configure a tenant application
+### To add and configure a tenant application
 The following procedures describe how to associate a multitenant application to a
 tenant that you added earlier. Before you begin, click the tenant name in the list of
 tenants that appears in the Tenant Manager snap-in.
@@ -537,7 +521,7 @@ To associate a multitenant application with a tenant, you have to first add the 
 your multitenant environment. To learn more about how to add a multitenant application,
 see To add an application on page 57.
 
-### Select the application
+#### Select the application
 The following steps describe how to associate a multitenant application with a
 tenant.
 
@@ -570,7 +554,7 @@ tenant.
     Click the checkbox in the Selection column for the application you want to
     associate with the tenant.
 
-### Configure the application
+#### Configure the application
 The following steps describe how to configure the properties of the multitenant
 application that you specified in the previous section.
 
@@ -590,24 +574,25 @@ application that you specified in the previous section.
     for the Microsoft Dynamics GP Web Client. For more information about how to
     install and configure the Web Client application, see Chapter 12, “Configuring
     the Web Client.”
-    Name | Value
-    -|-
-    DynamicsexeLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\ 
-    DynamicssetLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\Dynamics.set
-    DexiniLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\Data\Dex.ini
-    HeartbeatTimeout | 0.20:00:00
-    RuntimeLogEnabled | false
-    CustomRuntimeSettings | ScriptLogEnabled=false|TimingLogEnabled=false|SqlLogEnabled=false
-    SQLUserName | The name for the SQL login that was specified to be used for the web client when the Microsoft Dynamics GP web client runtime was installed.
-    SQLPassword | The password for the SQL login being used for the web client.
-    RuntimeProcessUserName | The name of the Windows account that the runtime process will run as when a user logs in using an Organizational Account. You only need to provide a value if you are using Organizational Accounts.
-    RuntimeProcessPassword | The password for the Windows account used to run the runtime process.
+    
+    |Name | Value|
+    |-----|------|
+    |DynamicsexeLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\ |
+    |DynamicssetLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\Dynamics.set|
+    |DexiniLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\Data\Dex.ini|
+    |HeartbeatTimeout | 0.20:00:00|
+    |RuntimeLogEnabled | false|
+    |CustomRuntimeSettings | ScriptLogEnabled=false|TimingLogEnabled=false|SqlLogEnabled=false|
+    |SQLUserName | The name for the SQL login that was specified to be used for the web client when the Microsoft Dynamics GP web client runtime was installed.|
+    |SQLPassword | The password for the SQL login being used for the web client.|
+    |RuntimeProcessUserName | The name of the Windows account that the runtime process will run as when a user logs in using an Organizational Account. You only need to provide a value if you are using Organizational Accounts.|
+    |RuntimeProcessPassword | The password for the Windows account used to run the runtime process.|
 
 3. Click Save.
 
  To save the application information for the tenant, click the Save button.
 
-## To update or remove a tenant
+### To update or remove a tenant
 This section describes how to make the following types of changes to an existing
 tenant:
 
@@ -617,7 +602,7 @@ tenant:
 To complete the following procedures, you have to log in to the Tenant Manager
 snap-in as a service administrator.
 
-### Change tenant properties
+#### Change tenant properties
 The following steps describe how to update existing tenant information.
 
 1. Start the Web Management Console.
@@ -649,8 +634,7 @@ The following steps describe how to update existing tenant information.
     Description | Specify a brief description for the tenant.
     Status | Specify whether the tenant is active or inactive. If the the tenant is inactive, the multitenant application will not be accessible.
 
-
-### Remove a tenant
+#### Remove a tenant
 You can remove an existing tenant from a multitenant environment. To remove a
 tenant, you have to log in to the Tenant Manager as a service administrator.
 The following steps describe how to remove a tenant.
@@ -677,7 +661,7 @@ The following steps describe how to remove a tenant.
     Click the Delete button in the tenant manager ribbon of the Web Management
     Console. The tenant is removed from the list of tenants.
 
-## To update or remove tenant users
+### To update or remove tenant users
 
 This section describes how to make the following types of changes to an existing
 tenant:
@@ -688,7 +672,7 @@ tenant:
 To complete the following procedures, you have to log in to the Tenant Manager
 snap-in as a service administrator or a tenant administrator.
 
-### Change tenant user properties
+#### Change tenant user properties
 The following steps describe how you change the status of tenant user.
 
 1. Click the Tenant Users button.
@@ -741,7 +725,7 @@ The following steps describe how you change the status of tenant user.
 
 8. Click Save.
 
-### Remove a tenant user
+#### Remove a tenant user
 The following steps describe how to remove a tenant user.
 
 1. Click the Tenant Users button.
@@ -759,7 +743,7 @@ The following steps describe how to remove a tenant user.
     tenant user is removed from the list. That user will no longer be able to login to
     that tenant.
 
-## To update or remove tenant applications
+### To update or remove tenant applications
 This section describes how to make the following types of changes to an existing
 tenant:
 
@@ -769,7 +753,7 @@ tenant:
 To complete the following procedures, you have to log in to the Tenant Manager
 snap-in as a service administrator.
 
-### Add or remove an application
+#### Add or remove an application
 The following steps describe how to change the multitenant applications that are
 associated with a tenant.
 
@@ -796,10 +780,10 @@ associated with a tenant.
     To save the tenant information, click the Save button of the Tenant Properties
     window.
 
-### Change application configuration
+#### Change application configuration
 The following steps describe how to change the application properties for a
 multitenant application.
- 
+
  1. Open the Tenant Properties window.
 
     Click the tenant name in the list of tenants, and then click the Edit button in the
@@ -1161,3 +1145,8 @@ After you enable logging, you can find the generated log in the following locati
 When you have completed your analysis, be sure to return the value of the log
 properties to false.
 
+## See also
+
+[Tenant Services Basics](tenant-services-basics.md)  
+[Multitenant Applications](tenant-services-applications.md)  
+[Tenant Services Installation](tenant-services-installation.md)  

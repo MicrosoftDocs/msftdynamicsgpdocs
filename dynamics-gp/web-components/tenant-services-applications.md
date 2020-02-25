@@ -6,18 +6,16 @@ author: dapelt
 ms.author: dapelt
 manager: rbucholz
 applies_to: 
-ms.date: 11/2/2018
+ms.date: 10/14/2019
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 
-ms.reviewer: 
+ms.reviewer: edupont
 ---
 
 # Multitenant Applications
 
-This portion of the documentation explains the configuration and maintenance
-options for Microsoft Dynamics GP multitenant applications. The following
-information is discussed:
+This portion of the documentation explains the configuration and maintenance options for Microsoft Dynamics GP multitenant applications. The following information is discussed:
 
 - Chapter 12, “Configuring the Web Client,” describes how you configure the Microsoft Dynamics GP Web Client application for a tenant.
 - Chapter 13, “Configuring Web Services,” describes how you specify web service and tenant configuration information. The Web Services for Microsoft Dynamics GP Configuration Wizard uses this configuration information to add web services access to the tenant.
@@ -227,8 +225,8 @@ Required information | Description
 Dynamics GP SQL Server | Get the name of the SQL Server where you installed Microsoft Dynamics GP for the tenant.
 Dynamics GP system database | Get the name of the Microsoft Dynamics GP system database for the tenant. You specified the database name during the install of Microsoft Dynamics GP. To find the name of the database, open Microsoft SQL Server Management Studio, connect to the SQL Server, and view the list of databases on the server.
 Dynamics Security Administration service SQL Server | Get the name of the SQL Server where you want to add the security Administration database. You can use the same SQL Server you use for Dynamics GP or you can use another SQL Server.
-URL for Dynamics GP Web Services | Get the name of the web server and the port number you use to connect to web services. For example, a typical install of web services might use the following URL: http://GPServer:48620/DynamicsGPWebServices/DynamicsGPService.asmx You will use GPServer and 48620 to configure the URL for the multitenant web services.
-URL for the Dynamics Security Administration service | Get the name of the web server and the port number you use to connect to Microsoft Dynamics Security Administration service. For example, a typical install of the security administration service might use the following URL: http://GPWebService:48621/DynamicsAdminService.asmx You will use GPWebService and 48621 to configure the URL for the multitenant web services security.
+URL for Dynamics GP Web Services | Get the name of the web server and the port number you use to connect to web services. For example, a typical install of web services might use the following URL: https://GPServer:48620/DynamicsGPWebServices/DynamicsGPService.asmx You will use GPServer and 48620 to configure the URL for the multitenant web services.
+URL for the Dynamics Security Administration service | Get the name of the web server and the port number you use to connect to Microsoft Dynamics Security Administration service. For example, a typical install of the security administration service might use the following URL: https://GPWebService:48621/DynamicsAdminService.asmx You will use GPWebService and 48621 to configure the URL for the multitenant web services security.
 
 ### To add Web Services to the list of applications
 Before you can begin using web services with tenants, you have to add Web
@@ -349,8 +347,8 @@ Property name | Description
 -|-
 DynGPSQLServer | Specify the name of the SQL Server where you installed Microsoft Dynamics GP for the tenant.
 DynGPSystemDB | Specify the name of the Microsoft Dynamics GP system database for the tenant. The database has to be on the SQL Server that you specified in the previous property.
-DynGPWebServiceURL | Specify the URL for the Dynamics GP service. The URL uses the following format: http://machine_name:port/Dynamics/GPService Replace machine_name with the name of the server onto which you installed Web Services for Microsoft Dynamics GP. The default port value is 48620.For example if the machine running the Dynamics GP service was named GPServer, the URL would be: http://GPServer:48620/Dynamics/GPService If this port value does not work to access the service, you will need to contact your administrator to find what port the Dynamics GP service is running on.
-SecAdminServiceURL | Specify the URL of the Microsoft Dynamics Security Administration service. The URL uses the following format: http://machine_name:port/ Replace machine_name with the name  of the server onto which you installed the Microsoft Dynamics Security Administration Service.  The default port value is 48621. For example if the machine running the Microsoft Dynamics Security Administration service was named GPWebService, the URL would be:  http://GPWebService:48621/ If this port value does not work to access the service, you will need to contact your administrator to find what port the Microsoft Dynamics Security Administration service is running on.
+DynGPWebServiceURL | Specify the URL for the Dynamics GP service. The URL uses the following format: https://machine_name:port/Dynamics/GPService Replace machine_name with the name of the server onto which you installed Web Services for Microsoft Dynamics GP. The default port value is 48620.For example if the machine running the Dynamics GP service was named GPServer, the URL would be: https://GPServer:48620/Dynamics/GPService If this port value does not work to access the service, you will need to contact your administrator to find what port the Dynamics GP service is running on.
+SecAdminServiceURL | Specify the URL of the Microsoft Dynamics Security Administration service. The URL uses the following format: https://machine_name:port/ Replace machine_name with the name  of the server onto which you installed the Microsoft Dynamics Security Administration Service.  The default port value is 48621. For example if the machine running the Microsoft Dynamics Security Administration service was named GPWebService, the URL would be:  https://GPWebService:48621/ If this port value does not work to access the service, you will need to contact your administrator to find what port the Microsoft Dynamics Security Administration service is running on.
 SecServiceDB | Specify the name of the Microsoft Dynamics Security Administration service database for the tenant. The database will be created when you run the Web Services for Microsoft Dynamics GP Configuration Wizard. To identify the tenant associated with the security Administration database, you should include the tenant ID in the database name. For example, the name of the security administration service database for the tenant named Tenant01 would be Tenant01_DynGPSecurity. 
 SecServiceSQLServer | Specify the name of the SQL Server where want to add the database you specified in the previous property. The database can be on the same SQL Server you use for the Microsoft Dynamics GP or you can specify another SQL Server.
 
@@ -506,9 +504,9 @@ OperationTimeOut |  The amount of time a service request can run before it is te
 You can add the users that you want to access the Service Based Architecture as
 tenant users for the tenant.
 
-# Appendix A: Scale Groups
- 
- The scale groups feature introduced in Microsoft Dynamics GP 2013 R2 works in
+## Appendix A: Scale Groups
+
+The scale groups feature introduced in Microsoft Dynamics GP 2013 R2 works in
 conjunction with tenant services to provide enhanced flexibility when deploying
 several installations of the Microsoft Dynamics GP web client. The primary users of
 this feature will be organizations that host multiple installations of Microsoft
@@ -519,12 +517,12 @@ Information about scale groups is divided into the following sections:
 - Default scale group
 - Configuring scale groups
 
-## What scale groups provide
+### What scale groups provide
 To better understand the functionality that scale groups provide, it’s helpful to
 review how multiple installations of Microsoft Dynamics GP with the web client
 were hosted before scale groups were available.
 
-### Without Scale Groups
+#### Without Scale Groups
 Microsoft Dynamics GP allows up to 51 instances of the application to be installed
 on a single machine. In a typical hosting configuration, one Microsoft Dynamics GP
 instance is assigned to one tenant. The following illustration shows how an
@@ -549,7 +547,7 @@ installation must have the same set of GP instances. That means that you must
 install and manage all of the GP instances on the additional session host machine,
 even though only one tenant requires the additional capacity.
 
-### With Scale Groups
+#### With Scale Groups
 Scale groups provide a way to logically group session host machines. Each tenant is
 assigned to a specific scale group. The session hosts in that scale group have the GP
 instances needed to support those tenants. The following illustration shows one
@@ -577,7 +575,7 @@ Scale Group B, the additional session host machine had to have only GP Instances
 and 5 installed on it. Session Host 1 and the tenants assigned to it were unaffected
 by the change to scale out Tenant 4.
 
-## Default scale group
+### Default scale group
 When the Session Central Service and Tenant Service are installed, there is always
 one default scale group that is available. This scale group is named “Default Group”
 and has the Id value 0.
@@ -591,27 +589,27 @@ automatically assigned to the Default Group scale group.
         By automatically considering new session host machines and tenants are part of the Default
         Group scale group, the default functionality of the system is the same as it was before scale groups were available.
 
-## Configuring scale groups
+### Configuring scale groups
 Dynamics GP 2013 PowerShell module. You can install this PowerShell module
 from the Microsoft Dynamics GP 2013 installation media. For details about
 installing the PowerShell module and using the cmdlets, refer to the Microsoft
 Dynamics GP 2013 PowerShell Users Guide.
 
-### Connecting to the Session Central Service
+#### Connecting to the Session Central Service
 After starting the Microsoft Dynamics GP 2013 PowerShell command prompt, the
 first command you must enter connects to the Session Central Service. All of the
 other cmdlets require this connection to work properly. The following example
 shows this cmdlet.
 
-    Set-GPSessionCentralAddress -Address http://gpweb.contoso.com:48650/SessionCentralService
+    Set-GPSessionCentralAddress -Address https://gpweb.contoso.com:48650/SessionCentralService
 
-### Creating scale groups
+#### Creating scale groups
 To create scale groups, use the New-GPScaleGroup cmdlet. The following example
 shows how to create a scale group.
 
     New-GPScaleGroup -ScaleGroupName "SG_A" -Description "Scale Group A"
 
-### Assigning session hosts to scale groups
+#### Assigning session hosts to scale groups
 After scale groups have been created, you can assign session host machines to the
 scale groups. Use the Update-GPSessionHost cmdlet to set the properties of the
 session host machine, including the scale group the session host is assigned to. The
@@ -620,32 +618,35 @@ which has the Id 1.
 
     Update-GPSessionHost -SessionHostId "SessionHost1" -ScaleGroupId 1
 
-### Assigning tenants to scale groups
+#### Assigning tenants to scale groups
 Use the Add-ScaleGroupTenant cmdlet to assign a tenant to a scale group. The
 following example adds Tenant01 to the SG_A scale group.
 
     Add-GPScaleGroupTenant -ScaleGroupName "SG_A" -TenantName "Tenant01"
 
-### Retrieving configuration information
+#### Retrieving configuration information
 Several PowerShell cmdlets are available to retrieve information about the scale
 groups, tenants, and session hosts. For example, the following command lists all of
 the tenants that are assigned to the SG_A scale group.
 
     Get-GPScaleGroupTenant -ScaleGroupName "SG_A"
 
-### Setting configuration options
+#### Setting configuration options
 Additional PowerShell cmdlets are available to set configuration options for scale
 groups, tenants, and session hosts. For example, the following command makes the
 scale group SG_A inactive.
 
     Get-GPScaleGroup -ScaleGroupName “SG_A” | Update-GPScaleGroup -SetInactive
 
-### Removing assignments
+#### Removing assignments
 Several PowerShell cmdlets are available to remove assignments that have been
 made. For example, the following command removes the scale group assignment
 for Tenant 01. Tenant 01 will then be assigned to the Default Group scale group.
 
     Remove-GPScaleGroupTenant -TenantName "Tenant01"
 
+## See also
 
-
+[Tenant Services Basics](tenant-services-basics.md)  
+[Tenant Services Installation](tenant-services-installation.md)  
+[Tenant Services Configuration and Administration](tenant-services-config-admin.md)  
