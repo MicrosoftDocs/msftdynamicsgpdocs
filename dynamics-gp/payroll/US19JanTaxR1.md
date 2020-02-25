@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 2/24/2020
+ms.date: 02/24/2020
 ---
 # U.S. 2020 Payroll Tax Update
 
@@ -20,7 +20,7 @@ This tax update applies to:
 
 This document contains instructions for installing the 2020 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-This is the third tax update for 2020 and replaces all previous tax updates. It includes federal and state tax table changes that took effect January 1, 2020. It is recommended you install this update before processing payrolls for the 2020 year.
+The third tax update for 2020 replaces all previous tax updates. It includes federal and state tax table changes that took effect January 1, 2020. It is recommended you install this update before processing payrolls for the year 2020.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
