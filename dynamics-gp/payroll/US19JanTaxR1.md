@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/13/2020
+ms.date: 02/24/2020
 ---
 # U.S. 2020 Payroll Tax Update
 
@@ -20,9 +20,42 @@ This tax update applies to:
 
 This document contains instructions for installing the 2020 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-This is the second tax update for 2020 and replaces all previous tax updates. It includes federal and state tax table changes that took effect January 1, 2020. It is recommended you install this update before processing payrolls for the year 2020.
+The third tax update for 2020 replaces all previous tax updates. It includes federal and state tax table changes that took effect January 1, 2020. It is recommended you install this update before processing payrolls for the year 2020.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+## Changes in January Round 3 update
+- Arkansas
+- Oregon - Correction
+
+### 2020 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for Arkansas
+
+Tax Type rates for Filing Status NA
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 4,599            | 0              | 0.0%         | 0                  |
+| 4,599       | 9,099            | -91.98         | 2.0%         | 4,599              |
+| 9,099       | 13,699           | -182.97        | 3.0%         | 9,099              |
+| 13,699      | 22,599           | -237.77        | 3.4%         | 13,699             |
+| 22,599      | 37,899           | -421.46        | 5.0%         | 22,599             |
+| 37,899      | 80,800           | -762.55        | 5.9%         | 37,899             |
+| 80,800      | 81,800           | -1,243.40      | 6.6%         | 80,800             |
+| 81,800      | 82,800           | -1,143.40      | 6.6%         | 81,800             |
+| 82,800      | 84,100           | -1,043.40      | 6.6%         | 82,800             |
+| 84,100      | 85,200           | -943.40        | 6.6%         | 84,100             |
+| 85,200      | 86,200           | -843.40        | 6.6%         | 85,200             |
+| 86,200      | And over         | -803.40        | 6.6%         | 86,200             |
+
+
+#### Withholding changes for Oregon correction
+
+The filing status of S2 only had a correction for the tax rate from 9.75% to 8.75% on wages between $40,735 and $125,000.
+
 
 ## Changes in January Round 2 update
 - Federal
@@ -55,8 +88,8 @@ The following tax changes are included in this update:
 #### Withholding changes for Colorado
 
 - Flat tax rate of 4.63 for all filing status
-- For Filing Status of MAR, the Personal Exemption amount is \$8,000 
-- For Filing Status of SINGLE, the Personal Exemption amount is \$4,000 
+- For Filing Status of MAR, the Personal Exemption amount is \$8,000 per exemption entered
+- For Filing Status of SINGLE, the Personal Exemption amount is \$4,000 per exemption entered
 
 
 #### Withholding changes for Idaho
@@ -821,7 +854,7 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 2 2020 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The Round 3 2020 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -844,7 +877,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4.  Choose Process to start the update.
 
-5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 1/17/2020.
+5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 2/21/2020.
 
 ## What’s next
 
