@@ -224,7 +224,7 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 20. Choose the Attachment Management icon to attach documents to the shipment, if applicable.
 
-21. Choose Distributions to open the Purchasing Distribution Entry window, where you can make changes to account distributions.
+21. Choose Distributions to open the Purchasing Distribution Entry window, where you can make changes to account distributions other than the *PURCH* type distribution..
 
     - To add additional accounts, select the account and enter an amount.
 
