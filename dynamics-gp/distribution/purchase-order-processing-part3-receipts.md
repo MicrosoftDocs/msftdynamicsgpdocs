@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: tnistler
-ms.date: 01/23/2019
+ms.date: 02/27/2020
 
 ---
 # Purchase Order Processing Part 3: Receipts
@@ -714,7 +714,7 @@ Taxes will be calculated automatically as you enter items. For more information 
 
 21.  If you are using landed costs, choose Landed Cost to open the Receivings Landed Cost Apportionment Entry window, where you can add landed costs to all line items on a receipt. See *Entering landed costs for a shipment receipt* for more information. If you want to enter landed costs for an item, see *Entering landed costs for a shipment item*.
 
-22.  Choose Distributions to open the Purchasing Distribution Entry window, where you can make changes to account distributions.
+22.  Choose Distributions to open the Purchasing Distribution Entry window, where you can make changes to account distributions other than the PURCH type distribution.
 
     - To add additional accounts, select the account and enter an amount.
 
