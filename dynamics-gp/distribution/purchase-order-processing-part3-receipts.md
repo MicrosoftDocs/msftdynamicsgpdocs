@@ -75,7 +75,7 @@ Use the Purchasing Batch Entry window to create a receipt batch. Each transactio
 1. Open the Purchasing Batch Entry window.
     (Purchasing \>\> Transactions \>\> Purchasing Batches)
 
-![screenshot](media/POage100.jpg)
+    ![screenshot](media/POage100.jpg)
 
 2. Enter a batch ID to identify the batch.
 
@@ -85,11 +85,11 @@ Use the Purchasing Batch Entry window to create a receipt batch. Each transactio
 
 5. Enter a posting date.
 
-*This field is available only if, in the Posting Setup window, Batch is selected in the Posting Date From field.*
+    *This field is available only if, in the Posting Setup window, Batch is selected in the Posting Date From field.*
 
-The posting date you enter here is the date that General Ledger files are updated. Your records in Purchase Order Processing are updated using the receipt date you enter in the Receivings Transaction Entry window or the invoice date you enter in the Purchasing Invoice Entry window.
+    The posting date you enter here is the date that General Ledger files are updated. Your records in Purchase Order Processing are updated using the receipt date you enter in the Receivings Transaction Entry window or the invoice date you enter in the Purchasing Invoice Entry window.
 
-If the batch contains multicurrency transactions whose exchange rates expired before the batch posting date, you will be able to save but not post those transactions.
+    If the batch contains multicurrency transactions whose exchange rates expired before the batch posting date, you will be able to save but not post those transactions.
 
 6. When you have entered and saved all transactions for a batch, choose File \>\> Print to verify your entries with a Receivings Edit List or a Purchasing Invoice Edit List.
 
