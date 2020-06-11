@@ -254,6 +254,17 @@ This information is divided into the following sections:
 
 - *User-defined fields for accounts*
 
+Default charts of accounts (COA)
+If you plan to load a default chart of accounts when you create a new company, we recommend that you review the default charts of accounts that are available in Microsoft Dynamics GP. You can use the following Microsoft Excel files that describe the default charts of accounts that are available for various types of organizations.
+
+| **Organization type** | **COA for Organization**     |    **COA for Partnerships**        |  **COA for Sole Proprietorships** |
+|-----------------------|------------------------------|------------------------------------|-----------------------------------|
+| Bookkeeping/Accounting|CorpBookkeepingAccounting.xls |PartnershipBookkeepingAccounting.xls| SolePropBookkeepingAccounting.xls |
+| Canadian Service      
+| Contractor/builder
+| Legal practice
+                    
+
 #### Posting, unit, and allocation accounts
 
 A chart of accounts can include three types of accounts: posting, unit, and allocation accounts. Each type can be used to meet different business needs.
