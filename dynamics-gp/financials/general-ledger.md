@@ -257,6 +257,9 @@ This information is divided into the following sections:
 Default charts of accounts (COA)
 If you plan to load a default chart of accounts when you create a new company, we recommend that you review the default charts of accounts that are available in Microsoft Dynamics GP. You can use the following Microsoft Excel files that describe the default charts of accounts that are available for various types of organizations.
 
+Dynamics GP Default Chart of Accounts 
+<https://mbs2.microsoft.com/fileexchange/?fileID=166f60d5-127d-4d39-8b0f-aafed98ed617 >
+
 | **Organization type** | **COA for Organization**     |    **COA for Partnerships**        |  **COA for Sole Proprietorships** |
 |-----------------------|------------------------------|------------------------------------|-----------------------------------|
 | Bookkeeping/Accounting|CorpBookkeepingAccounting.xls |PartnershipBookkeepingAccounting.xls| SolePropBookkeepingAccounting.xls |
