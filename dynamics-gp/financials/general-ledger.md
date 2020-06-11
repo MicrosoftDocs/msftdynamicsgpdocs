@@ -260,10 +260,19 @@ If you plan to load a default chart of accounts when you create a new company, w
 | **Organization type** | **COA for Organization**     |    **COA for Partnerships**        |  **COA for Sole Proprietorships** |
 |-----------------------|------------------------------|------------------------------------|-----------------------------------|
 | Bookkeeping/Accounting|CorpBookkeepingAccounting.xls |PartnershipBookkeepingAccounting.xls| SolePropBookkeepingAccounting.xls |
-| Canadian Service      
-| Contractor/builder
-| Legal practice
-                    
+| Canadian Service      |CorpCanadianService.xls       |PartnershipCanadianService.xls      | SolePropCanadianService.xls       |
+| Contractor/builder    |CorpContractorBuilder.xls     |PartnershipContractorBuilder.xls    | SolePropContractorBuilder.xls     |
+| Legal practice        |CorpLegalPractice.xls         |PartnershipLegalPractice.xls        | SolePropLegalPractice.xls         |
+| Manufacturing         |CorpManufacturing.xls         |PartnershipManufacturing.xls        | SolePropManufacturing.xls         |
+| Medical/dental        |CorpMedicalDental.xls         |PartnershipMedicalDental.xls        | SolePropMedicalDental.xls         |
+| Non-profit            |CorpNonProfit.xls             |PartnershipNonProfit.xls            | SolePropNonProfit.xls             |
+| Print shop            |CorpPrintShop.xls             |PartnershipPrintShop.xls            | SolePropPrintShop.xls             |
+| Real estate           |CorpRealEstate.xls            |PartnershipRealEstate.xls           | SolePropRealEstate.xls            |
+| Restaurant            |CorpRestaurant.xls            |PartnershipRestaurant.xls           | SolePropRestaurant.xls            | 
+| Retail                |CorpRetail.xls                |PartnershipRetail.xls               | SolePropRetail.xls                | 
+| U.S. service          |CorpU.S.Service.xls           |PartnershipU.S.Service.xls          | SolePropU.S.Service.xls           | 
+| Wholesale             |CorpWholesale.xls             |PartnershipWholesale.xls            | SolePropWholesale.xls             | 
+                
 
 #### Posting, unit, and allocation accounts
 
