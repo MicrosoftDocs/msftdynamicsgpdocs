@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/25/2019
+ms.date: 06/12/2020
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
