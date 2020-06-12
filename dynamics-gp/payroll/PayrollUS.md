@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/25/2019
+ms.date: 06/12/2020
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -8780,121 +8780,89 @@ below.
 
 Employee Self Service in GP 2015 RTM  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/01/13/human-resource-and-payroll-features-in-microsoft-dynamics-gp-2015>  
-Empower your employees to access their own information and make changes with
-workflow, giving Human Resource and Payroll professionals time back in their
-day.
+Empower your employees to access their own information and make changes with workflow, giving Human Resource and Payroll professionals time back in their day.
 
 Employees can not print their W-2 in self service!  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/06/03/microsoft-dynamics-gp-2015-r2-hrp-new-features-employee-self-service-view-print-w-2>  
-In Microsoft Dynamics GP 2015 R2, new window that can be accessed in the Time
-Management content pane by Self Service employees, was added that enables the
-user to Print/View their W-2.  The Self Service employee will be able to print
-their own W-2 with the most current boxes and labels.   We also added an option
-starting on version 14.00.0898 that allows payroll admin to choose which year's
+In Microsoft Dynamics GP 2015 R2, new window that can be accessed in the Time Management content pane by Self Service employees, was added that enables the user to Print/View their W-2.  The Self Service employee will be able to print their own W-2 with the most current boxes and labels.   We also added an option starting on version 14.00.0898 that allows payroll admin to choose which year's
 W-2 are available for Self Service Users to Print.
 
 Mask Social Security Numbers on reports  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/06/02/microsoft-dynamics-gp-2015-r2-hrp-new-features-mask-social-security-number-on-payroll-reports>  
-For years, customers have been modifying their payroll reports in GP to mask the
-Social Security Numbers. With this new feature in Microsoft Dynamics GP 2015 R2,
-a Payroll Administrator has the option to mask the Social Security Numbers on a
-predefined list of reports within Microsoft Dynamics GP without having to make
-Report Writer modifications. At the same time they can choose to not mask the
-Social Security Number for reports that may need the Social Security Numbers to
-display due to state or federal requirements such as W-2s. If the Payroll
-Administrator selects to apply the mask for one of the predefined reports, when
-generated, the employee’s social security number field will appear with a
-XXX-XX-XXXX mask.
+For years, customers have been modifying their payroll reports in GP to mask the Social Security Numbers. With this new feature in Microsoft Dynamics GP 2015 R2, a Payroll Administrator has the option to mask the Social Security Numbers on a predefined list of reports within Microsoft Dynamics GP without having to make Report Writer modifications. At the same time they can choose to not mask the Social Security Number for reports that may need the Social Security Numbers to display due to state or federal requirements such as W-2s. If the Payroll Administrator selects to apply the mask for one of the predefined reports, when generated, the employee’s social security number field will appear with a XXX-XX-XXXX mask.
 
 Payroll Posting Accounts navigation list  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/05/26/payroll-payroll-posting-accounts-setup-enhancements>  
-A new navigation list was added in Microsoft Dynamics GP 2016 that enhances a
-user’s ability to view, sort, search, set up, and edit their Payroll Posting
-Accounts. This new Payroll Posting Accounts navigation list is a great new way
-to manage your Payroll Posting Accounts and allows for users to import and
-export their Payroll Posting Accounts setup. For example, a user can export
-their setup, make changes in Excel, and then import those changes back into the
-system. Select the HR & Payroll Module. In the Navigation Pane to the left,
-select ‘Payroll Posting Accounts’. Your Payroll Posting Account information will
-now be displayed in a manner that can be filtered and searched on.
+A new navigation list was added in Microsoft Dynamics GP 2016 that enhances a user’s ability to view, sort, search, set up, and edit their Payroll Posting Accounts. This new Payroll Posting Accounts navigation list is a great new way to manage your Payroll Posting Accounts and allows for users to import and export their Payroll Posting Accounts setup. For example, a user can export
+their setup, make changes in Excel, and then import those changes back into the system. Select the HR & Payroll Module. In the Navigation Pane to the left, select ‘Payroll Posting Accounts’. Your Payroll Posting Account information will now be displayed in a manner that can be filtered and searched on.
 
 Employee Self Service - Managers can View Employee Available Time  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/05/24/employee-self-service-managers-can-view-employee-available-time>
 
-In Microsoft Dynamics GP 2016 you will now be able to see Human Resources
-attendance balances as an ESS Employee or Manager on the Preview Pane of
-Timecard Navigation. The setting to accrue with Human Resources rather than
-Payroll is located at the following path. (HR & Payroll \>\> Setup \>\> Human
-Resources \>\> Attendance \>\> Setup)
+In Microsoft Dynamics GP 2016 you will now be able to see Human Resources attendance balances as an ESS Employee or Manager on the Preview Pane of Timecard Navigation. The setting to accrue with Human Resources rather than Payroll is located at the following path. (HR & Payroll \>\> Setup \>\> Human Resources \>\> Attendance \>\> Setup)
 
-The Current Timecards and Historic Timecards navigation lists will now display
-the current balance for the first 5 active Time Codes for an employee in
-alphabetical order in the Preview Pane. Time Codes balances will only show if
-Print Available Time on Payroll Checks is marked in the Employee Attendance
-Maintenance Window.
+The Current Timecards and Historic Timecards navigation lists will now display the current balance for the first 5 active Time Codes for an employee in alphabetical order in the Preview Pane. Time Codes balances will only show if Print Available Time on Payroll Checks is marked in the Employee Attendance Maintenance Window.
 
 Ability to print a W-2 form with LINES!  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/01/05/microsoft-dynamics-gp-2016-r2-print-w2-with-boxes-lines-and-labels>
 
-In Microsoft Dynamics GP 2016 R2 you are now able to print the 1 Wide W2 form
-with boxes and labels directly from the Print W2 Forms window without using
-stock paper. Navigate to (HR & Payroll \>\> Routines \>\> Payroll \>\> Print
-W-2s). This will bring you into the Print W-2 Forms window. A new Form Type is
-now available call ‘1 Wide – Forums with Box’.
+In Microsoft Dynamics GP 2016 R2 you are now able to print the 1 Wide W2 form with boxes and label directly from the Print W2 Forms window without using stock paper. Navigate to (HR & Payroll \>\> Routines \>\> Payroll \>\> Print W-2s). This will bring you into the Print W-2 Forms window. A new Form Type is now available call ‘1 Wide – Forums with Box’.
 
 Track History on Terminations and Rehires Date  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/01/04/human-resources-track-history-on-terminations-and-rehires-date-information-huge-request>
 
-In GP 2016 R2 we added a new ‘Employment History Inquiry’ window which can be
-accessed directly from the Employee Card. 
-This allows users to see Termination and Hire dates per employee. In some
-businesses, such as a seasonal business, the same employee can be hired many
-times and the business may need to track the multiple dates for this employee,
-such as the hire date, adjusted hire date and the last day worked (termination
-date). Navigate to (HR & Payroll \>\> Inquiry \>\> Payroll \>\> Employee). Click
-on the GoTo action on the Menu bar, you will see a new Employment History
-button. This will bring you into the Employment History Inquiry window. From
-this window, you can select an employee to view their history of Termination and
-Hire dates.
+In GP 2016 R2 we added a new ‘Employment History Inquiry’ window which can be accessed directly from the Employee Card. 
+This allows users to see Termination and Hire dates per employee. In some businesses, such as a seasonal business, the same employee can be hired many times and the business may need to track the multiple dates for this employee, such as the hire date, adjusted hire date and the last day worked (termination date). Navigate to (HR & Payroll \>\> Inquiry \>\> Payroll \>\> Employee). Click
+on the GoTo action on the Menu bar, you will see a new Employment History button. This will bring you into the Employment History Inquiry window. From this window, you can select an employee to view their history of Termination and Hire dates.
 
 Option to roll down items from Payroll Setup to inactive records  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/12/28/huge-request-from-customers-ability-to-roll-down-items-from-payroll-setup-to-inactive-records>  
-There may be instances where you want to make a change in the Payroll setup
-options, but do not want inactive employees to be included.  There is now an
-option in GP 2018 RTM, to only roll down changes for the active records instead
-of all of them.  This feature will save time as the system will not have to
-update all the inactive employees which can be a lot of records after a long
-period of time.
+There may be instances where you want to make a change in the Payroll setup options, but do not want inactive employees to be included.  There is now an option in GP 2018 RTM, to only roll down changes for the active records instead
+of all of them.  This feature will save time as the system will not have to update all the inactive employees which can be a lot of records after a long period of time.
 
 Ability to change the name of your Departments  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/12/29/our-users-like-the-changer-functionality-ability-who-wants-to-be-stuck-with-old-code-names-so-we-added-departments>  
-In Microsoft Dynamics GP 2018, users will now be able to select Department Code
-to modify in addition to Pay, Benefit and Deduction.  To open the Payroll Code
-Modifier window: Under HR & Payroll, point to Utilities, under Payroll select
-Payroll Code Modifier. This will open the Payroll Code Modifier window. 
+In Microsoft Dynamics GP 2018, users will now be able to select Department Code to modify in addition to Pay, Benefit and Deduction.  To open the Payroll Code Modifier window: Under HR & Payroll, point to Utilities, under Payroll select Payroll Code Modifier. This will open the Payroll Code Modifier window. 
 
 Shared Deduction and Benefit Maximum  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/11/09/microsoft-dynamics-gp-2018-r2-shared-maximums-for-benefits-and-deductions>  
-With the release of Microsoft Dynamics GP 2018 R2, it is possible to assign a
-shared Calendar Year maximum for groups of benefits and/or groups of deductions.
-This will be a huge benefit to your organization for employees who may
-contribute to two 401K plans. In prior versions of Microsoft Dynamics GP,
-Calendar Year maximums can be assigned to one benefit and/or one deduction. It
-was not possible to set up a 'shared' maximum amount.
+With the release of Microsoft Dynamics GP 2018 R2, it is possible to assign a shared Calendar Year maximum for groups of benefits and/or groups of deductions. This will be a huge benefit to your organization for employees who may contribute to two 401K plans. In prior versions of Microsoft Dynamics GP, Calendar Year maximums can be assigned to one benefit and/or one deduction. It was not possible to set up a 'shared' maximum amount.
 
 Start and End dates on Pay codes  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/11/13/microsoft-dynamics-gp-2018-r2-start-and-end-dates-for-pay-codes>  
-With the release of Microsoft Dynamics GP 2018 R2, users can assign a 'Start
-Date' and/or an 'End Date' to Pay Codes in the Employee Maintenance window. This
-functionality is similar to the start/end dates already used for benefits and
-deductions in the Payroll module. This new feature will allow users to setup new
-pay codes without having to worry about when to start using them, or when to
-inactivate those they no longer wish to use. This will be very useful to you
-when you are activating a new hire and terminating an existing salary employee.
-In prior versions of Microsoft Dynamics GP, it was not possible to restrict
-whether a pay code is included in a pay run via start and/or end dates. Instead,
-users would generally 'inactive' a pay code (most often a salary type pay code)
+With the release of Microsoft Dynamics GP 2018 R2, users can assign a 'Start Date' and/or an 'End Date' to Pay Codes in the Employee Maintenance window. This functionality is similar to the start/end dates already used for benefits and deductions in the Payroll module. This new feature will allow users to setup new pay codes without having to worry about when to start using them, or when to
+inactivate those they no longer wish to use. This will be very useful to you when you are activating a new hire and terminating an existing salary employee.  In prior versions of Microsoft Dynamics GP, it was not possible to restrict whether a pay code is included in a pay run via start and/or end dates. Instead, users would generally 'inactive' a pay code (most often a salary type pay code)
 to ensure it's not included in a pay run.
+
+Ability to Exclude Additional Withholding in Payroll
+<https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-ability-exclude-additional-withholding>
+Users can now specify whether "Additional Taxes" are included or excluded in a Payroll build via the Build Payroll Checks window.
+To exclude a specific "Additional Tax" from a specific payroll build, users can simply "unmark" the box next to the appropriate additional tax type in Build Payroll Checks window.  
+In prior versions of Microsoft Dynamics GP, users did not have the ability to include or exclude Additional Tax in the Build Payroll Checks window. Additional Tax Withholding amounts were automatically included and calculated as part of the normal payroll process.
+
+Deduction and Benefit Quick Assignments in Human Resoruce
+<https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-deduction-and-benefit-quick-assignments>
+With this release of Microsoft Dynamics GP, users can now assign benefit and/or deduction codes to employees in mass at the Payroll/Human Resources Setup level.  Quick assignments are only accessible via GoTo menus which are available on each of the benefit/deduction code setup windows in Human Resources and Payroll. This allows users to create or modify a code and then immediately assign it to one or more employees quickly. When the Quick Assignment window is opened from a setup record, it will default in the code that is currently being displayed in its parent window.  Users can change the "Code Type" and/or the "Code" in the Quick Assignment window to quickly assign additional codes to one or more employees without having to first open the corresponding setup window. 
+
+Exclude Inactive records for Human Resource Benefit and Deduction lookups
+<https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-exclude-inactive-records-for-human-resource-benefit-and-deduction-lookups>
+Human Resources has been enhanced to allow users to exclude inactive benefit and/or deduction codes from some HR Lookup windows. This enhancement provides the same 'exclude inactive codes from lookups' functionality currently available in the Payroll module. 
+To exclude an inactive code from being displayed in the lookup window, click on the 'black' arrow on the left hand side of the lookup window and click on 'Exclude Inactive Benefits/Deductions'
+
+ Employment History Reason for Change
+<https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-employment-history-reason-for-change>
+Users can record a reason for change via the 'Reason' field in the Employee Maintenance window when certain fields are modified for an employee record in Payroll and/or Human Resources. These changes can be viewed after the fact in the Employee History Inquiry window.
+Microsoft Dynamics GP has always required users to specify a reason for change when the 'Date Inactivated Field' is modified in the Employee Maintenance window.
+In prior versions of GP, the 'Date Inactivated' field was the only field in the Employee Maintenance window for which the "Reason" field was editable in the Employee Maintenance window.
+In addition to the 'Date Inactivated' field, the following fields now allow users to specify a reason for change in the Employee Maintenance window:
+•Last Day Worked
+•Hire Date
+•Adjusted Hire Date
+
+Payroll Reprint Pay Statement by Audit Trail Code
+<https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-payroll-reprint-pay-statement-by-audit-trail-code>
+Users can now reprint pay statements in mass per Audit Trail code in the Reprint Payroll Posting Journals window. In prior versions of Microsoft Dynamics GP, it was not possible to reprint the pay statement in mass. Instead, users were required to reprint each employee pay statement individually via 'Recreate Pay Stub' button in the Payroll Check Inquiry window.  "Reprint Pay Statement" has been added to the "Reports" dropdown in the Reprint Payroll Posting Journals window to accommodate the new "Reprint Pay Statement per Audit Trail Code" functionality.
+
 
 ## Glossary
 
