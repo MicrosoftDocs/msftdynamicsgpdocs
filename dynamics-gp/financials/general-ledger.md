@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: tnistler
-ms.date: 02/05/2019
+ms.date: 06/12/2020
 
 ---
 # Dynamics GP General Ledger
