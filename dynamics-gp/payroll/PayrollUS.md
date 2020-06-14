@@ -567,10 +567,7 @@ statements, even if the selected options are not included in the check run:
 
 #### Setting up Payroll default entries
 
-Use the Payroll Setup window to set up default entries that appear
-throughout Payroll. Payroll history options and employee tracking options
-that you select can help increase your data entry time and can make
-compiling historical records easier for you.
+Use the Payroll Setup window to set up default entries that appear throughout Payroll. Payroll history options and employee tracking options that you select can help increase your data entry time and can make compiling historical records easier for you.
 
 **To set up Payroll default entries:**
 
@@ -760,19 +757,9 @@ select Setting Up the System. You also should have completed Setting up Payroll 
 
 #### Setting up default transaction dimension codes for Analytical Accounting
 
-Use the Analytical Payroll Default Dimensions window to set up default
-transaction dimension codes. This feature lets you link transaction
-dimension codes to ledger transactions in U.S. Payroll, which makes
-classifying, reporting, and analyzing transactions easier and more powerful.
-For more information on transaction dimensions and transaction dimension
-codes, see the Analytical Accounting documentation.
+Use the Analytical Payroll Default Dimensions window to set up default transaction dimension codes. This feature lets you link transaction dimension codes to ledger transactions in U.S. Payroll, which makes classifying, reporting, and analyzing transactions easier and more powerful. For more information on transaction dimensions and transaction dimension codes, see the Analytical Accounting documentation.
 
-Before you can complete the procedure in this section, you must define the
-Payroll pay codes, benefits, deductions, and so on that you plan to use with
-Analytical Accounting. Also, you must install, activate, and set up
-Analytical Accounting, and create Analytical Accounting dimension codes and
-account classes. For more information, see the Analytical Accounting
-documentation.
+Before you can complete the procedure in this section, you must define the Payroll pay codes, benefits, deductions, and so on that you plan to use with Analytical Accounting. Also, you must install, activate, and set up Analytical Accounting, and create Analytical Accounting dimension codes and account classes. For more information, see the Analytical Accounting documentation.
 
 **To set up default transaction dimension codes for Analytical Accounting**
 
@@ -915,12 +902,7 @@ company. The following are some examples of position codes you might use:
 
 - ELE - Electrician
 
-If you’re using Human Resources, you can link training courses and specify
-which skill sets, if any, are required for a position. You also can link pay
-codes and Americans with Disabilities Act (ADA) physical requirements to a
-position code. If your company uses salary matrices, you can link the low,
-middle and high salaries for each position to a position code. You also can
-add information using extra fields.
+If you’re using Human Resources, you can link training courses and specify which skill sets, if any, are required for a position. You also can link pay codes and Americans with Disabilities Act (ADA) physical requirements to a position code. If your company uses salary matrices, you can link the low, middle and high salaries for each position to a position code. You also can add information using extra fields.
 
 **To set up position codes:**
 
@@ -2001,10 +1983,7 @@ more than one post-dated pay rate for one pay code.
 
 #### Modifying a pay, benefit, or deduction code
 
-Use the Pay Code Setup window, the Benefit Setup window or the Deduction
-Setup window to make changes to pay, benefit, or deduction codes. When you
-change information, you might have the option to “roll down” your changes to
-the items that belong to the item class.
+Use the Pay Code Setup window, the Benefit Setup window or the Deduction Setup window to make changes to pay, benefit, or deduction codes. When you change information, you might have the option to “roll down” your changes to the items that belong to the item class.
 
 **To modify a pay, benefit, or deduction code:**
 
@@ -2026,17 +2005,9 @@ the items that belong to the item class.
 
 #### Inactivating or deleting a pay, benefit, or deduction code
 
-Use the Pay Code Setup window, the Benefit Setup window or the Deduction
-Setup window to inactivate a pay, benefit, or deduction code if you’re not
-using it now, but don’t want to delete it because you’ll need the code in
-the future.
+Use the Pay Code Setup window, the Benefit Setup window or the Deduction Setup window to inactivate a pay, benefit, or deduction code if you’re not using it now, but don’t want to delete it because you’ll need the code in the future.
 
-You also can delete a pay, benefit, or deduction code. For example, perhaps
-your company had separate insurance plans for medical and dental expenses,
-but now is using one insurance plan for both. You must delete the medical
-and dental insurance deduction codes, and enter a new code for the combined
-plan. However, you can’t delete a code if an employee has been paid under
-the code in the current year.
+You also can delete a pay, benefit, or deduction code. For example, perhaps your company had separate insurance plans for medical and dental expenses, but now is using one insurance plan for both. You must delete the medical and dental insurance deduction codes, and enter a new code for the combined plan. However, you can’t delete a code if an employee has been paid under the code in the current year.
 
 **To inactivate a pay, benefit, or deduction code:**
 
@@ -2082,22 +2053,14 @@ the code in the current year.
 
 ### Chapter 4: Setting up taxes and compensation codes
 
-You can set up tax codes—including workers’ compensation, local, and
-unemployment taxes—that will be used as default entries for setting up
-employee taxes. You can apply changes to several employees’ tax cards at
-once and assign them to employee classes.
+You can set up tax codes—including workers’ compensation, local, and unemployment taxes—that will be used as default entries for setting up employee taxes. You can apply changes to several employees’ tax cards at once and assign them to employee classes.
 
-You don’t need to set up state and federal taxes, but can download the
-latest federal, FICA, and state tax tables from the CustomerSource Web site.
-We recommend that you enroll in an enhancement plan to ensure you will
-always be able to download the latest tax tables and any changes in
-supported tax forms.
+You don’t need to set up state and federal taxes, but can download the latest federal, FICA, and state tax tables from the CustomerSource Web site. We recommend that you enroll in an enhancement plan to ensure you will always be able to download the latest tax tables and any changes in supported tax forms.
 
-Before setting up workers’ compensation codes, you should have completed
-*Setting up Payroll default entries* . To ensure reports are printed in the
-correct order, be sure that each deduction code has the same number of
-characters. The characters are sorted from left to right, and numbers take
-priority over letters.
+Before setting up workers’ compensation codes, you should have completed *Setting up Payroll default entries* . To ensure reports are printed in the correct order, be sure that each deduction code has the same number of characters. The characters are sorted from left to right, and numbers take priority over letters.
+
+If taxes are not calculating as expected, review below:
+<https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly>
 
 Workers’ compensation codes are used to track the amount of workers’
 compensation taxes for which your company, as an employer, is liable.
@@ -2295,30 +2258,16 @@ the tax rate won’t be applied when the maximum amount is reached.
 
 #### State and federal unemployment taxes
 
-You must download the latest payroll tax update from the Customersource web
-site to receive state and federal tax rates and wage limits—they are not
-included when you install Payroll. After you’ve downloaded the state and
-federal tax rates and wage limits, the wage limit for the state you entered
-or the federal wage limit will be displayed automatically in the Wage Limit
-field when you enter a two-character state abbreviation or FED (for federal
-unemployment tax) in the Tax Code field in the Unemployment Tax Setup
-window. You must manually enter the state tax rate that‘s been applied to
-your business.
+You must download the latest payroll tax update from the Customersource web site to receive state and federal tax rates and wage limits—they are not included when you install Payroll. After you’ve downloaded the state and federal tax rates and wage limits, the wage limit for the state you entered or the federal wage limit will be displayed automatically in the Wage Limit field when you enter a two-character state abbreviation or FED (for federal unemployment tax) in the Tax Code field in the Unemployment Tax Setup
+window. You must manually enter the state tax rate that‘s been applied to your business.
 
-*Unemployment tax rates or limits are not included in tax updates. If these
-change, you’ll need to manually enter the state tax rate that’s been applied
-to your business.*
+*Unemployment tax rates or limits are not included in tax updates. If these change, you’ll need to manually enter the state tax rate that’s been applied to your business.*
 
 **Previous state wages**
 
-If you’re setting up a state unemployment tax (SUTA), you have the option to
-include wages earned by the employee in other states to determine whether
-individual employees have met state unemployment wage limits.
+If you’re setting up a state unemployment tax (SUTA), you have the option to include wages earned by the employee in other states to determine whether individual employees have met state unemployment wage limits.
 
-For example, assume one of your employees worked at your company’s North
-Dakota branch for a period of time in the current year, and he or she earned
-\$5,000. That employee then went to work at your company’s California
-branch, where he or she earned \$12,000.
+For example, assume one of your employees worked at your company’s North Dakota branch for a period of time in the current year, and he or she earned \$5,000. That employee then went to work at your company’s California branch, where he or she earned \$12,000.
 
 Also, assume the SUTA wage limits for these states are:
 
@@ -2326,17 +2275,13 @@ Also, assume the SUTA wage limits for these states are:
 
 - California \$7,000
 
-If California doesn’t allow previously earned wages to be included in
-determining SUTA wage limits, you—the employer—are required to pay SUTA
-taxes based upon the following wages.
+If California doesn’t allow previously earned wages to be included in determining SUTA wage limits, you—the employer—are required to pay SUTA taxes based upon the following wages.
 
 - To North Dakota based upon \$5,000
 
 - To California based upon \$7,000
 
-The wages earned in North Dakota can’t be included in reaching the \$7,000
-SUTA wage limit for California. The entire \$7,000 wage limit for California
-must be met using wages earned in California.
+The wages earned in North Dakota can’t be included in reaching the \$7,000 SUTA wage limit for California. The entire \$7,000 wage limit for California must be met using wages earned in California.
 
 However, if California allows previously earned wages to be included in
 determining SUTA wage limits, you—the employer—are required to pay SUTA
@@ -2419,25 +2364,11 @@ for. If you’re entering federal unemployment tax, enter FED as the tax code.
 
 #### Setting up federal and state tax identification numbers
 
-Use the Payroll Tax Identification Setup window to set up assigned federal
-and state tax identification numbers so they are printed correctly on
-employee W-2s and employer W-3 forms when you complete Payroll year-end
-processes. For example, you might have two different state identification
-numbers—one for filing taxes and another for filing the unemployment forms
-and taxes. Using this window, you can assign codes for the correct numbers
-for each of the forms, eliminating the need to edit the form each time you
-need a different federal or state tax identification number.
+Use the Payroll Tax Identification Setup window to set up assigned federal and state tax identification numbers so they are printed correctly on employee W-2s and employer W-3 forms when you complete Payroll year-end processes. For example, you might have two different state identification numbers—one for filing taxes and another for filing the unemployment forms and taxes. Using this window, you can assign codes for the correct numbers for each of the forms, eliminating the need to edit the form each time you need a different federal or state tax identification number.
 
-Your Payroll system also accommodates states with just one number. If there
-is no value in the SUTA Tax ID when you set up the Tax ID Number, the
-Payroll system will fill the SUTA Tax ID with the same value as the Tax ID
-Number. If there is a value in the field when you enter the Tax ID Number,
-however, no change will take place.
+Your Payroll system also accommodates states with just one number. If there is no value in the SUTA Tax ID when you set up the Tax ID Number, the Payroll system will fill the SUTA Tax ID with the same value as the Tax ID Number. If there is a value in the field when you enter the Tax ID Number, however, no change will take place.
 
-The reverse is also true; if there is no value in the Tax ID Number when you
-set up the SUTA Tax ID, the Payroll system will fill the Tax ID Number with
-the same value as the SUTA Tax ID. If there is a value in the field when you
-enter the SUTA information, however, no change will take place.
+The reverse is also true; if there is no value in the Tax ID Number when you set up the SUTA Tax ID, the Payroll system will fill the Tax ID Number with the same value as the SUTA Tax ID. If there is a value in the field when you enter the SUTA information, however, no change will take place.
 
 **To set up federal and state tax identification numbers:**
 
@@ -3506,39 +3437,21 @@ This information is contained in the following sections:
 
 #### Entering an employee deduction card
 
-Use the Employee Deduction Maintenance window to enter and maintain employee
-deduction cards. You can set up a deduction as a percentage of gross, net,
-or earnings wages, as a fixed amount, or as an amount per unit of wages.
-Examples of deductions include donations to charities, union dues, and
-garnishments. After you have set up company deduction cards, also known as
-deduction codes, (see *Chapter 3, “Setting up deductions and benefits”*),
-you can select these deduction codes for individual employees by entering an
+Use the Employee Deduction Maintenance window to enter and maintain employee deduction cards. You can set up a deduction as a percentage of gross, net, or earnings wages, as a fixed amount, or as an amount per unit of wages. Examples of deductions include donations to charities, union dues, and garnishments. After you have set up company deduction cards, also known as deduction codes, (see *Chapter 3, “Setting up deductions and benefits”*), you can select these deduction codes for individual employees by entering an
 employee deduction card.
 
-You can choose not to enter deduction amounts in this window. For more
-information, refer to *Using zero benefit and deduction amounts* .
+You can choose not to enter deduction amounts in this window. 
 
-You can enter two types of employee deduction cards: standard and
-garnishment.
+You can enter two types of employee deduction cards: standard and garnishment.
+
+If a deduction is not coming out of an employee check review the below:
+<https://community.dynamics.com/gp/b/dynamicsgp/posts/why-won-t-regular-deductions-withhold-from-employee-pay-checks>
 
 **To enter a standard employee deduction card:**
 
-1. Open the Employee Deduction Maintenance window. (HR & Payroll \>\> Cards
-    \>\> Payroll \>\> Deduction)
+1. Open the Employee Deduction Maintenance window. (HR & Payroll \>\> Cards\>\> Payroll \>\> Deduction)
 
 ![A screenshot of a cell phone Description automatically generated](media/df1d148ead16783b51fde32e790e8c23.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
 
 1. Enter or select an employee ID.
 
@@ -4868,48 +4781,23 @@ If needed, adjust values for individual records in the following fields:
 
 #### Building Payroll checks
 
-Before processing computer checks, you must first build Payroll checks.
-During the check building process, the Payroll system will search for all
-the transactions and employee cards that you’ve selected to include in the
-pay run. It also will verify posting accounts and other information.
+Before processing computer checks, you must first build Payroll checks. During the check building process, the Payroll system will search for all the transactions and employee cards that you’ve selected to include in the pay run. It also will verify posting accounts and other information.
 
-Use the Build Payroll Checks window to indicate which employees, pay codes,
-deductions, and benefits to include in the pay run. This process is known as
-building Payroll checks and must be done before processing a pay run.
+Use the Build Payroll Checks window to indicate which employees, pay codes, deductions, and benefits to include in the pay run. This process is known as building Payroll checks and must be done before processing a pay run.
 
-After the checks have been built, the Check File Report will be printed.
-This report lists the wages, tax codes, deduction, and benefit codes that
-will affect each employee’s paycheck. It also lists any errors or warnings
-in the build.
+After the checks have been built, the Check File Report will be printed. This report lists the wages, tax codes, deduction, and benefit codes that will affect each employee’s paycheck. It also lists any errors or warnings in the build.
 
-- Errors are problems with individual transactions that must be corrected
-    before you can calculate the paychecks.
+- Errors are problems with individual transactions that must be corrected before you can calculate the paychecks.
 
-- Warnings don’t prevent you from calculating checks. You’ll need to decide
-    whether you should correct the situations causing the warning.
+- Warnings don’t prevent you from calculating checks. You’ll need to decide whether you should correct the situations causing the warning.
 
-*If you decide to ignore the warning, the transaction for which the warning
-appeared will be either totally or partially ignored, in some cases. For
-example, if a transaction was subject to local tax, but no local tax code
-was specified, the transaction would be paid but no local tax would be
-withheld.*
+*If you decide to ignore the warning, the transaction for which the warning appeared will be either totally or partially ignored, in some cases. For example, if a transaction was subject to local tax, but no local tax code was specified, the transaction would be paid but no local tax would bewithheld.*
 
-You’ll need to remove a build when there are errors that require changes to
-transactions included in the build.
+You’ll need to remove a build when there are errors that require changes to transactions included in the build.
 
-To remove a build before posting it, choose Remove in the Build Payroll
-Checks window. Any batches that you marked will be unmarked automatically.
-Since a batch can’t be edited while it’s marked, and a batch can’t be
-unmarked if it’s included in a build, you must remove the build before
-editing transactions included in the build. However, when you’ve finished
-editing the transaction, you can mark the batch and build the paychecks
-again.
+To remove a build before posting it, choose Remove in the Build Payroll Checks window. Any batches that you marked will be unmarked automatically. Since a batch can’t be edited while it’s marked, and a batch can’t be unmarked if it’s included in a build, you must remove the build before editing transactions included in the build. However, when you’ve finished editing the transaction, you can mark the batch and build the paychecks again.
 
-You can build checks again before they’re calculated. Before you build
-checks, you can change any of the fields in the Build Payroll Checks window.
-For example, if you forgot to include salary pay in the original build, you
-can mark the Salary box and then choose Rebuild. A build is removed
-automatically after the paychecks are calculated, printed, and posted.
+You can build checks again before they’re calculated. Before you build checks, you can change any of the fields in the Build Payroll Checks window. For example, if you forgot to include salary pay in the original build, you can mark the Salary box and then choose Rebuild. A build is removed automatically after the paychecks are calculated, printed, and posted.
 
 **To build Payroll checks:**
 
@@ -4918,15 +4806,6 @@ automatically after the paychecks are calculated, printed, and posted.
 
 ![A screenshot of a cell phone Description automatically generated](media/1e36a8512538982953a287380391da87.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
 
 1. Enter or select a default ID. You can enter that default ID the next time
     you build an identical or similar pay run. *The default ID does not select
@@ -5001,16 +4880,6 @@ them. This procedure assumes you’ve completed *Building Payroll checks* .
 
 ![A screenshot of a cell phone Description automatically generated](media/11423b22f1aceb44551474e40f1043b4.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
 1. Choose OK to begin calculating the checks.
 
 When an employee’s wage calculations have conflicts in both deduction
@@ -5051,16 +4920,6 @@ paychecks can’t be printed after they’ve been posted.*
     Payroll \>\> Print Checks)
 
 ![A screenshot of a cell phone Description automatically generated](media/529c50bbcba1dc421f58862d95aeb560.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
 
 1. Enter or select a checkbook ID that checks will be posted to.
 
@@ -5109,6 +4968,9 @@ on the Check Register, as well as the numbers for any checks that were
 reprinted or voided. A summary of the Payroll taxes for this pay run will
 appear at the bottom of the Check Register. The employer FICA tax liability
 will be calculated and posted, as well.
+
+If you have a payroll posting issue refer to below:
+<https://community.dynamics.com/gp/b/dynamicsgp/posts/recovering-from-failed-payroll-processing-activity-in-dynamics-gp>
 
 #### Voiding a Payroll check
 
@@ -5296,26 +5158,12 @@ period.
 
 ![A screenshot of a computer Description automatically generated](media/b8f4f8a7789344ff2627de3549f18d7f.jpg)
 
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
 
 The third transaction is for reported tips for the same period, an amount
 the employee provides to her employer.
 
 ![A screenshot of a computer Description automatically generated](media/75c7d37c4ca4a418807fe2f0f8610661.jpg)
 
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
 
 No automatic transaction would be generated for minimum wage balance. This
 transaction would result in gross wages of \$435.20.
