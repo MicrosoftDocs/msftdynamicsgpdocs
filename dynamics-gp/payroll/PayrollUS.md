@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 06/12/2020
+ms.date: 06/13/2020
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -8509,13 +8509,7 @@ This information is contained in the following sections:
 
 #### Calculating Payroll Direct Deposit information
 
-Payroll Direct Deposit changes the Payroll process for Microsoft Dynamics
-GP. After building and calculating checks, you’ll need to complete some
-additional tasks if you’re using Direct Deposit. Use the Print Payroll
-Checks window to calculate direct deposit and print checks and earnings
-statements. After you have printed checks using this window, the Post
-Payroll Checks window will open. Refer to *Posting checks using Payroll
-Direct Deposit* for more information.
+Payroll Direct Deposit changes the Payroll process for Microsoft Dynamics GP. After building and calculating checks, you’ll need to complete some additional tasks if you’re using Direct Deposit. Use the Print Payroll Checks window to calculate direct deposit and print checks and earnings statements. After you have printed checks using this window, the Post Payroll Checks window will open. Refer to *Posting checks using Payroll Direct Deposit* for more information.
 
 **To calculate Payroll Direct Deposit information:**
 
@@ -8778,78 +8772,78 @@ Microsoft Dynamics GP check forms are listed here:
 To review detailed information about each feature, click the relevant link
 below.
 
-Employee Self Service in GP 2015 RTM  
+**Employee Self Service in GP 2015 RTM**
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/01/13/human-resource-and-payroll-features-in-microsoft-dynamics-gp-2015>  
 Empower your employees to access their own information and make changes with workflow, giving Human Resource and Payroll professionals time back in their day.
 
-Employees can not print their W-2 in self service!  
+**Employees can not print their W-2 in self service**
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/06/03/microsoft-dynamics-gp-2015-r2-hrp-new-features-employee-self-service-view-print-w-2>  
 In Microsoft Dynamics GP 2015 R2, new window that can be accessed in the Time Management content pane by Self Service employees, was added that enables the user to Print/View their W-2.  The Self Service employee will be able to print their own W-2 with the most current boxes and labels.   We also added an option starting on version 14.00.0898 that allows payroll admin to choose which year's
 W-2 are available for Self Service Users to Print.
 
-Mask Social Security Numbers on reports  
+**Mask Social Security Numbers on reports**
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/06/02/microsoft-dynamics-gp-2015-r2-hrp-new-features-mask-social-security-number-on-payroll-reports>  
 For years, customers have been modifying their payroll reports in GP to mask the Social Security Numbers. With this new feature in Microsoft Dynamics GP 2015 R2, a Payroll Administrator has the option to mask the Social Security Numbers on a predefined list of reports within Microsoft Dynamics GP without having to make Report Writer modifications. At the same time they can choose to not mask the Social Security Number for reports that may need the Social Security Numbers to display due to state or federal requirements such as W-2s. If the Payroll Administrator selects to apply the mask for one of the predefined reports, when generated, the employee’s social security number field will appear with a XXX-XX-XXXX mask.
 
-Payroll Posting Accounts navigation list  
+**Payroll Posting Accounts navigation list**
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/05/26/payroll-payroll-posting-accounts-setup-enhancements>  
 A new navigation list was added in Microsoft Dynamics GP 2016 that enhances a user’s ability to view, sort, search, set up, and edit their Payroll Posting Accounts. This new Payroll Posting Accounts navigation list is a great new way to manage your Payroll Posting Accounts and allows for users to import and export their Payroll Posting Accounts setup. For example, a user can export
 their setup, make changes in Excel, and then import those changes back into the system. Select the HR & Payroll Module. In the Navigation Pane to the left, select ‘Payroll Posting Accounts’. Your Payroll Posting Account information will now be displayed in a manner that can be filtered and searched on.
 
-Employee Self Service - Managers can View Employee Available Time  
+**Employee Self Service - Managers can View Employee Available Time**
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/05/24/employee-self-service-managers-can-view-employee-available-time>
 
 In Microsoft Dynamics GP 2016 you will now be able to see Human Resources attendance balances as an ESS Employee or Manager on the Preview Pane of Timecard Navigation. The setting to accrue with Human Resources rather than Payroll is located at the following path. (HR & Payroll \>\> Setup \>\> Human Resources \>\> Attendance \>\> Setup)
 
 The Current Timecards and Historic Timecards navigation lists will now display the current balance for the first 5 active Time Codes for an employee in alphabetical order in the Preview Pane. Time Codes balances will only show if Print Available Time on Payroll Checks is marked in the Employee Attendance Maintenance Window.
 
-Ability to print a W-2 form with LINES!  
+**Ability to print a W-2 form with LINES**
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/01/05/microsoft-dynamics-gp-2016-r2-print-w2-with-boxes-lines-and-labels>
 
 In Microsoft Dynamics GP 2016 R2 you are now able to print the 1 Wide W2 form with boxes and label directly from the Print W2 Forms window without using stock paper. Navigate to (HR & Payroll \>\> Routines \>\> Payroll \>\> Print W-2s). This will bring you into the Print W-2 Forms window. A new Form Type is now available call ‘1 Wide – Forums with Box’.
 
-Track History on Terminations and Rehires Date  
+**Track History on Terminations and Rehires Date**
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/01/04/human-resources-track-history-on-terminations-and-rehires-date-information-huge-request>
 
 In GP 2016 R2 we added a new ‘Employment History Inquiry’ window which can be accessed directly from the Employee Card. 
 This allows users to see Termination and Hire dates per employee. In some businesses, such as a seasonal business, the same employee can be hired many times and the business may need to track the multiple dates for this employee, such as the hire date, adjusted hire date and the last day worked (termination date). Navigate to (HR & Payroll \>\> Inquiry \>\> Payroll \>\> Employee). Click
 on the GoTo action on the Menu bar, you will see a new Employment History button. This will bring you into the Employment History Inquiry window. From this window, you can select an employee to view their history of Termination and Hire dates.
 
-Option to roll down items from Payroll Setup to inactive records  
+**Option to roll down items from Payroll Setup to inactive records**
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/12/28/huge-request-from-customers-ability-to-roll-down-items-from-payroll-setup-to-inactive-records>  
 There may be instances where you want to make a change in the Payroll setup options, but do not want inactive employees to be included.  There is now an option in GP 2018 RTM, to only roll down changes for the active records instead
 of all of them.  This feature will save time as the system will not have to update all the inactive employees which can be a lot of records after a long period of time.
 
-Ability to change the name of your Departments  
+**Ability to change the name of your Departments**
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/12/29/our-users-like-the-changer-functionality-ability-who-wants-to-be-stuck-with-old-code-names-so-we-added-departments>  
 In Microsoft Dynamics GP 2018, users will now be able to select Department Code to modify in addition to Pay, Benefit and Deduction.  To open the Payroll Code Modifier window: Under HR & Payroll, point to Utilities, under Payroll select Payroll Code Modifier. This will open the Payroll Code Modifier window. 
 
-Shared Deduction and Benefit Maximum  
+**Shared Deduction and Benefit Maximum**  
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/11/09/microsoft-dynamics-gp-2018-r2-shared-maximums-for-benefits-and-deductions>  
 With the release of Microsoft Dynamics GP 2018 R2, it is possible to assign a shared Calendar Year maximum for groups of benefits and/or groups of deductions. This will be a huge benefit to your organization for employees who may contribute to two 401K plans. In prior versions of Microsoft Dynamics GP, Calendar Year maximums can be assigned to one benefit and/or one deduction. It was not possible to set up a 'shared' maximum amount.
 
-Start and End dates on Pay codes  
+**Start and End dates on Pay codes**
 <https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/11/13/microsoft-dynamics-gp-2018-r2-start-and-end-dates-for-pay-codes>  
 With the release of Microsoft Dynamics GP 2018 R2, users can assign a 'Start Date' and/or an 'End Date' to Pay Codes in the Employee Maintenance window. This functionality is similar to the start/end dates already used for benefits and deductions in the Payroll module. This new feature will allow users to setup new pay codes without having to worry about when to start using them, or when to
 inactivate those they no longer wish to use. This will be very useful to you when you are activating a new hire and terminating an existing salary employee.  In prior versions of Microsoft Dynamics GP, it was not possible to restrict whether a pay code is included in a pay run via start and/or end dates. Instead, users would generally 'inactive' a pay code (most often a salary type pay code)
 to ensure it's not included in a pay run.
 
-Ability to Exclude Additional Withholding in Payroll
+**Ability to Exclude Additional Withholding in Payroll**
 <https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-ability-exclude-additional-withholding>
 Users can now specify whether "Additional Taxes" are included or excluded in a Payroll build via the Build Payroll Checks window.
 To exclude a specific "Additional Tax" from a specific payroll build, users can simply "unmark" the box next to the appropriate additional tax type in Build Payroll Checks window.  
 In prior versions of Microsoft Dynamics GP, users did not have the ability to include or exclude Additional Tax in the Build Payroll Checks window. Additional Tax Withholding amounts were automatically included and calculated as part of the normal payroll process.
 
-Deduction and Benefit Quick Assignments in Human Resoruce
+**Deduction and Benefit Quick Assignments in Human Resource**
 <https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-deduction-and-benefit-quick-assignments>
 With this release of Microsoft Dynamics GP, users can now assign benefit and/or deduction codes to employees in mass at the Payroll/Human Resources Setup level.  Quick assignments are only accessible via GoTo menus which are available on each of the benefit/deduction code setup windows in Human Resources and Payroll. This allows users to create or modify a code and then immediately assign it to one or more employees quickly. When the Quick Assignment window is opened from a setup record, it will default in the code that is currently being displayed in its parent window.  Users can change the "Code Type" and/or the "Code" in the Quick Assignment window to quickly assign additional codes to one or more employees without having to first open the corresponding setup window. 
 
-Exclude Inactive records for Human Resource Benefit and Deduction lookups
+**Exclude Inactive records for Human Resource Benefit and Deduction lookups**
 <https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-exclude-inactive-records-for-human-resource-benefit-and-deduction-lookups>
 Human Resources has been enhanced to allow users to exclude inactive benefit and/or deduction codes from some HR Lookup windows. This enhancement provides the same 'exclude inactive codes from lookups' functionality currently available in the Payroll module. 
 To exclude an inactive code from being displayed in the lookup window, click on the 'black' arrow on the left hand side of the lookup window and click on 'Exclude Inactive Benefits/Deductions'
 
- Employment History Reason for Change
+**Employment History Reason for Change**
 <https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-employment-history-reason-for-change>
 Users can record a reason for change via the 'Reason' field in the Employee Maintenance window when certain fields are modified for an employee record in Payroll and/or Human Resources. These changes can be viewed after the fact in the Employee History Inquiry window.
 Microsoft Dynamics GP has always required users to specify a reason for change when the 'Date Inactivated Field' is modified in the Employee Maintenance window.
@@ -8859,7 +8853,7 @@ In addition to the 'Date Inactivated' field, the following fields now allow user
 •Hire Date
 •Adjusted Hire Date
 
-Payroll Reprint Pay Statement by Audit Trail Code
+**Payroll Reprint Pay Statement by Audit Trail Code**
 <https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-payroll-reprint-pay-statement-by-audit-trail-code>
 Users can now reprint pay statements in mass per Audit Trail code in the Reprint Payroll Posting Journals window. In prior versions of Microsoft Dynamics GP, it was not possible to reprint the pay statement in mass. Instead, users were required to reprint each employee pay statement individually via 'Recreate Pay Stub' button in the Payroll Check Inquiry window.  "Reprint Pay Statement" has been added to the "Reports" dropdown in the Reprint Payroll Posting Journals window to accommodate the new "Reprint Pay Statement per Audit Trail Code" functionality.
 
@@ -8867,774 +8861,409 @@ Users can now reprint pay statements in mass per Audit Trail code in the Reprint
 ## Glossary
 
 #### 1099-R statement
-
-A statement showing an employee’s distribution from retirement,
-profit-sharing or pension plans.
+A statement showing an employee’s distribution from retirement, profit-sharing or pension plans. 
 
 #### Account alias
-
-A 20-character “short name” for a posting account in the chart of accounts.
-If the account format has a large number of segments, using aliases can
-speed data entry.
+A 20-character “short name” for a posting account in the chart of accounts. If the account format has a large number of segments, using aliases can speed data entry.
 
 #### ACH
-
-Acronym for Automated Clearing House, a standardized format for electronic
-funds transfer files.
+Acronym for Automated Clearing House, a standardized format for electronic funds transfer files.
 
 #### Adjustment number
-
-A number that identifies an adjustment transaction made in the Payroll
-Manual Check-Adjustment Entry window.
+A number that identifies an adjustment transaction made in the Payroll Manual Check-Adjustment Entry window.
 
 #### Allocated tips
-
-Microsoft Dynamics GP uses the Gross Receipts method that is calculated per
-pay run. The allocated tips amount equals the difference between tips
-received and employee gross receipts divided by company gross receipts,
-multiplied by the tip allocation rate, provided the difference is more. Made
-to each directly tipped employee.
+Microsoft Dynamics GP uses the Gross Receipts method that is calculated per pay run. The allocated tips amount equals the difference between tips received and employee gross receipts divided by company gross receipts, multiplied by the tip allocation rate, provided the difference is more. Made to each directly tipped employee.
 
 #### Authorization number
-
-A number assigned to you by Microsoft Dynamics GP to identify you for
-support records, and to work with the payroll update engine.
+A number assigned to you by Microsoft Dynamics GP to identify you for support records, and to work with the payroll update engine.
 
 #### Auto-Settle Line (ASL)
+A line that can be added to ACH files generated by Direct Deposit to bring the ACH into balance. Most ACH files generated for deposits to employee accounts include many credits to employee accounts. The auto-settle line in those instances would be a debit to the company’s Payroll account that is equal to the sum of the credits.
 
-A line that can be added to ACH files generated by Direct Deposit to bring
-the ACH into balance. Most ACH files generated for deposits to employee
-accounts include many credits to employee accounts. The auto-settle line in
-those instances would be a debit to the company’s Payroll account that is
-equal to the sum of the credits.
-
-Some financial institutions require an unbalanced ACH file containing only
-credits, and create the debit themselves. Other institutions require a
-balanced ACH file. Check with your financial institution for more details.
+Some financial institutions require an unbalanced ACH file containing only credits, and create the debit themselves. Other institutions require a balanced ACH file. Check with your financial institution for more details.
 
 #### Background processing
-
-A processing system that allows users to continue working while transactions
-are being posted or reports are being printed.
+A processing system that allows users to continue working while transactions are being posted or reports are being printed.
 
 #### Bankruptcy
-
-A garnishment category, in which a court orders the employer to deduct
-amounts from the employee’s wages to repay the employee’s creditor.
+A garnishment category, in which a court orders the employer to deduct amounts from the employee’s wages to repay the employee’s creditor.
 
 #### Batch
-
-A group of transactions identified by a unique name or number. Batches are
-used in computerized accounting to conveniently group transactions, both for
-identification purposes and to make posting the transactions easier.
+A group of transactions identified by a unique name or number. Batches are used in computerized accounting to conveniently group transactions, both for identification purposes and to make posting the transactions easier.
 
 #### Batch approval
-
-Allows users to choose whether to approve batches of transactions before
-posting. If the batch approval option is being used, the ID of the user who
-approved the batch and the approval date will appear on edit lists and
-posting reports.
+Allows users to choose whether to approve batches of transactions before posting. If the batch approval option is being used, the ID of the user who approved the batch and the approval date will appear on edit lists and posting reports.
 
 #### Batch control
-
-Values for both the number of transactions in a batch and the number of
-employees in the batch. As transactions are entered, the actual totals will
-be displayed. These totals can be verified periodically as transactions are
-entered to ensure that the control number and amount of transactions match
-the actual number and amount that was entered.
+Values for both the number of transactions in a batch and the number of employees in the batch. As transactions are entered, the actual totals will be displayed. These totals can be verified periodically as transactions are entered to ensure that the control number and amount of transactions match the actual number and amount that was entered.
 
 #### Batch frequency
-
-A selection that determines how often a recurring batch will be posted, such
-as weekly, monthly or quarterly.
+A selection that determines how often a recurring batch will be posted, such as weekly, monthly or quarterly.
 
 #### Batch-level posting
-
-A posting method that allows transactions to be saved in batches and posts
-the batch whenever convenient. There are three types of batch-level posting:
-batch posting, series posting, and master posting. *See also Posting*.
+A posting method that allows transactions to be saved in batches and poststhe batch whenever convenient. There are three types of batch-level posting: batch posting, series posting, and master posting. *See also Posting*.
 
 #### Benefit
-
-A contribution provided by the company that may be calculated on net, unit
-or gross pay. Examples of benefits include insurance premiums and 401(k)
-contributions.
+A contribution provided by the company that may be calculated on net, unit or gross pay. Examples of benefits include insurance premiums and 401(k) contributions.
 
 #### Building checks
-
-The process of indicating which employees, pay records, deductions, and
-benefits should be included in the pay run.
+The process of indicating which employees, pay records, deductions, and benefits should be included in the pay run.
 
 #### Business expense
-
-A pay code that’s used to pay employees who are reimbursed for expenses
-incurred while doing business, such as meals, mileage, and travel expenses.
+A pay code that’s used to pay employees who are reimbursed for expenses incurred while doing business, such as meals, mileage, and travel expenses.
 
 #### Charged receipts
-
-Gross sales for the employee or establishment from sales that were charged,
-used to calculate allocated tips.
+Gross sales for the employee or establishment from sales that were charged, used to calculate allocated tips.
 
 #### Charged tip
+Money (a gratuity) that the employee receives from customers through a charge card or check. The employer must include this money on an employee’s Payroll check because it was not received as cash.
 
-Money (a gratuity) that the employee receives from customers through a
-charge card or check. The employer must include this money on an employee’s
-Payroll check because it was not received as cash.
-
-Charged tips are added into gross wages on the check, and are subject to
-FICA Social Security and Medicare, Federal, and FUTA taxes. Generally,
-charged tips also are subject to State, Local, and SUTA taxes.
+Charged tips are added into gross wages on the check, and are subject to FICA Social Security and Medicare, Federal, and FUTA taxes. Generally, charged tips also are subject to State, Local, and SUTA taxes.
 
 #### Check number
-
-A number assigned to a check. Payroll usually assigns check numbers
-automatically, but you can override the default and assign another number.
+A number assigned to a check. Payroll usually assigns check numbers automatically, but you can override the default and assign another number.
 
 #### Class
-
-A feature that allows employees, customers, vendors, users or items to be
-grouped according to common characteristics. For example, an employee class
-could be created to group employees according to credit limit or location.
+A feature that allows employees, customers, vendors, users or items to be grouped according to common characteristics. For example, an employee class could be created to group employees according to credit limit or location.
 
 #### Comma-delimited file
-
-The standard comma-separated ASCII character format used when exporting a
-report so that it can be read by database programs.
+The standard comma-separated ASCII character format used when exporting a report so that it can be read by database programs.
 
 #### Commissions
-
-The amount, usually a percentage of the sale amount, paid to the salesperson
-making the sale.
+The amount, usually a percentage of the sale amount, paid to the salesperson making the sale.
 
 #### Computer check
-
-Paychecks that are calculated and printed using the Microsoft Dynamics GP
-system.
+Paychecks that are calculated and printed using the Microsoft Dynamics GP system.
 
 #### Data entry fields
-
-Specific areas in a window, from which you can make a selection, enter
-information or access more information. For example, areas where you can
-type in an employee ID or a transaction amount are data entry fields. *See
-also Field*.
+Specific areas in a window, from which you can make a selection, enter information or access more information. For example, areas where you can type in an employee ID or a transaction amount are data entry fields. *See also Field*.
 
 #### Deduction
-
-An amount that may be withheld from an employee’s net, unit or gross pay.
-For example, a donation to a charity could be set up as a deduction.
+An amount that may be withheld from an employee’s net, unit or gross pay. For example, a donation to a charity could be set up as a deduction.
 
 #### Deduction direct deposit
-
-A deduction direct deposit account is set up as a link to a Payroll
-deduction, rather than as a separate direct deposit account entry. Deduction
-direct deposits should be used only if an employee requests having some
-Payroll funds directed to a direct deposit account and the remainder of his
-or her earnings paid with a check.
+A deduction direct deposit account is set up as a link to a Payroll deduction, rather than as a separate direct deposit account entry. Deduction direct deposits should be used only if an employee requests having some Payroll funds directed to a direct deposit account and the remainder of his or her earnings paid with a check.
 
 #### Default
-
-A suggested entry that is used by Microsoft Dynamics GP, unless you make a
-different entry in its place.
+A suggested entry that is used by Microsoft Dynamics GP, unless you make a different entry in its place.
 
 #### Default class
-
 A class whose values are used for the creation of new classes.
 
 #### Department code
-
 A unique alphanumeric name used to identify a department.
 
 #### Direct deposit
-
-Direct deposit is a system of distributing employees’ earnings directly to
-their checking or savings accounts. Direct deposit relies on the use of a
-standardized account from which your company pays its Payroll, and includes
-basic information about employees’ accounts.
+Direct deposit is a system of distributing employees’ earnings directly to their checking or savings accounts. Direct deposit relies on the use of a standardized account from which your company pays its Payroll, and includes basic information about employees’ accounts.
 
 #### Directly-tipped employee
-
-Employees, such as waiters or waitresses, who receive tips directly from the
-customer.
-
-Used to calculate allocated tips.
-
-**Earned Income Credit**
-
-*See EIC*.
+Employees, such as waiters or waitresses, who receive tips directly from the customer. Used to calculate allocated tips.
 
 #### Earnings wages
-
-The deduction method that calculates deductions as a percentage of an
-employee’s Net Disposable Income (NDI). *See also NDI*.
+The deduction method that calculates deductions as a percentage of an employee’s Net Disposable Income (NDI). *See also NDI*.
 
 #### Earnings statement
-
-A report generated by Payroll Direct Deposit that summarizes Payroll
-information for employees who will have all their earnings deposited with
-direct deposit transfers.
+A report generated by Payroll Direct Deposit that summarizes Payroll information for employees who will have all their earnings deposited with direct deposit transfers.
 
 #### Edit list
-
-A list of transactions in an unposted batch that you can print to check the
-accuracy of the transaction entries before posting.
+A list of transactions in an unposted batch that you can print to check the accuracy of the transaction entries before posting.
 
 #### EIC
-
-An abbreviation for Earned Income Credit. A pay code that’s used to make
-advance payments to employees who qualify for earned income credit and have
-filed a W-5 form.
+An abbreviation for Earned Income Credit. A pay code that’s used to make advance payments to employees who qualify for earned income credit and have filed a W-5 form.
 
 #### EIN
-
-An abbreviation for Employer Identification Number, a number issued to
-companies operating in the United States. The EIN usually is used as a tax
-ID number for state and federal taxing agencies.
-
-**Employee Identification Number**
-
-*See EIN*.
+An abbreviation for Employer Identification Number, a number issued to companies operating in the United States. The EIN usually is used as a tax ID number for state and federal taxing agencies.
 
 #### Employer Maximum
-
-The amount of an employee’s contribution to a 401(k) that the employer
-matches.
-
-Expressed in percent.
+The amount of an employee’s contribution to a 401(k) that the employer matches.  Expressed in percent.
 
 #### Exceptions
-
-Exceptions are the instances when direct deposit transactions are not
-completed as the user may have intended. Direct deposit groups exceptions
-into three categories: no funds, deducted but not deposited and other.
-
-**Federal Insurance Contributions Act**
-
-*See FICA*.
+Exceptions are the instances when direct deposit transactions are not completed as the user may have intended. Direct deposit groups exceptions into three categories: no funds, deducted but not deposited and other.
 
 **Federal Unemployment Tax Act**
-
 *See FUTA*.
 
 #### FICA
-
-An acronym for Federal Insurance Contributions Act. An employee deduction
-for Social Security and Medicare. The employer matches the withholding.
+An acronym for Federal Insurance Contributions Act. An employee deduction for Social Security and Medicare. The employer matches the withholding.
 
 **FICA Medicare tip**
-
 Tips that are subject to FICA Medicare tax.
 
 #### FICA Social Security tip
-
 Tips that are subject to FICA Social Security tax.
 
 #### Field
-
-An area in a window where you can enter a single piece of information. For
-instance, the area in the Employee Maintenance window where you enter the
-employee’s name is a field.
+An area in a window where you can enter a single piece of information. For instance, the area in the Employee Maintenance window where you enter the employee’s name is a field.
 
 #### Footers
-
-Footers are lines of data which you create to be appended to the end of the
-ACH file. The lines will appear exactly as shown in the ACH File Header and
-Footer window and will become part of the ACH file. Some financial
-institutions require additional information about the ACH file, such as
-identifying strings or passwords. If your financial institution has no such
-requirements, you may not need to use this window.
+Footers are lines of data which you create to be appended to the end of the ACH file. The lines will appear exactly as shown in the ACH File Header and Footer window and will become part of the ACH file. Some financial institutions require additional information about the ACH file, such as identifying strings or passwords. If your financial institution has no such requirements, you may not need to use this window.
 
 #### Form 1096
-
 A form report that summarizes the 1099-R information.
 
 #### Form 8027
-
-An IRS form used by large food and beverage establishments to report tips
-and receipts to the US government.
+An IRS form used by large food and beverage establishments to report tips and receipts to the US government.
 
 #### FTE
-
-An acronym for Full-Time Equivalency, a factor multiplied by a pay step
-table amount to adjust an individual employee’s pay rate without changing
-the pay step table. FTE factors less than 1.00 decrease the pay rate, and
-factors above 1.00 increase the pay rate.
+An acronym for Full-Time Equivalency, a factor multiplied by a pay step table amount to adjust an individual employee’s pay rate without changing the pay step table. FTE factors less than 1.00 decrease the pay rate, and factors above 1.00 increase the pay rate.
 
 #### FUTA
-
-An acronym for Federal Unemployment Tax Act. This, along with state
-unemployment taxes, provides for payments of unemployment compensation to
-workers who have lost their jobs.
+An acronym for Federal Unemployment Tax Act. This, along with state unemployment taxes, provides for payments of unemployment compensation to workers who have lost their jobs.
 
 #### Garnishment
-
-A court-ordered process that takes property from a person to satisfy debt.
-For example, a person who owes money to a creditor may have her wages
-garnished if she loses a lawsuit filed by the creditor.
+A court-ordered process that takes property from a person to satisfy debt. For example, a person who owes money to a creditor may have her wages garnished if she loses a lawsuit filed by the creditor.
 
 Also, the name of a garnishment category for student loan or creditor debts.
 
 #### Grade
-
-An employee’s rank within a position. Grade does not depend on the length of
-time in a position. A promotion typically raises grade rather than pay step.
+An employee’s rank within a position. Grade does not depend on the length of time in a position. A promotion typically raises grade rather than pay step.
 
 #### Gross up
-
-An IRS-approved formula that employers can use to determine the taxable
-gross payment when the employer wishes to pay the employee’s share of tax.
+An IRS-approved formula that employers can use to determine the taxable gross payment when the employer wishes to pay the employee’s share of tax.
 
 #### Gross wages
-
 The wages an employee earns before any deductions or taxes are taken out.
 
 #### Group printing
-
-Saving and printing reports in groups. For example, you can create a report
-group that is used to print all employee lists before closing a year. You
-can create groups of reports within the same series and groups of series
-report groups.
+Saving and printing reports in groups. For example, you can create a report group that is used to print all employee lists before closing a year. You can create groups of reports within the same series and groups of series report groups.
 
 #### Headers
-
-Headers are lines of data which you create to be appended to the top of the
-ACH file. The lines will appear exactly as shown in the ACH File Header and
-Footer window and will become part of the ACH file. Some financial
-institutions require additional information about the ACH file, such as
-identifying strings or passwords. If your financial institution has no such
-requirements, you may not need to use this window.
-
-#### Help
-
-Documentation of Microsoft Dynamics GP features placed online for quick
-access. Also referred to as online documentation.
+Headers are lines of data which you create to be appended to the top of the ACH file. The lines will appear exactly as shown in the ACH File Header and Footer window and will become part of the ACH file. Some financial institutions require additional information about the ACH file, such as identifying strings or passwords. If your financial institution has no such requirements, you may not need to use this window.
 
 #### Holiday pay
-
-A pay code that’s used to pay employees who receive paid time off for
-holidays.
+A pay code that’s used to pay employees who receive paid time off for holidays.
 
 #### Hourly pay
-
 A pay code that’s used to pay employees an amount per hour worked.
 
 #### Inactivate
-
-The process of making employee records inactive. If you inactivate an
-employee record, all of the employee’s pay, deduction, and benefit records
-will be inactivated, as well, and paychecks will no longer be printed for
-the individual.
+The process of making employee records inactive. If you inactivate an employee record, all of the employee’s pay, deduction, and benefit records will be inactivated, as well, and paychecks will no longer be printed for the individual.
 
 #### Indirectly tipped employee
-
-Employees who do not receive tips directly from the customer, such as cooks
-or people who clean tables. Used to calculate allocated tips.
+Employees who do not receive tips directly from the customer.  Cooks or people who clean tables. Used to calculate allocated tips.
 
 #### Inquiry
-
-The Microsoft Dynamics GP feature that allows you to review open-year and
-historical information.
+The Microsoft Dynamics GP feature that allows you to review open-year and historical information.
 
 #### Integrate
-
-To join two or more accounting modules to form a system in which data is
-shared among modules. All Microsoft Dynamics GP modules are automatically
-integrated.
+To join two or more accounting modules to form a system in which data is shared among modules. All Microsoft Dynamics GP modules are automatically integrated.
 
 #### Local tax
-
-A tax paid to local government agencies. You can set up multiple local taxes
-for each employee, if you wish.
+A tax paid to local government agencies. You can set up multiple local taxes for each employee, if you wish.
 
 #### Main segment
-
-The segment of posting accounts that has been designated as the sorting
-option for accounts on financial statements. Typically, the main segment is
-used to indicate whether the account is an asset, liability, owners’ equity,
-revenue or expense account.
+The segment of posting accounts that has been designated as the sorting option for accounts on financial statements. Typically, the main segment is used to indicate whether the account is an asset, liability, owners’ equity, revenue or expense account.
 
 #### Manual check
-
-A manually written paycheck; manual checks can be recorded in the Microsoft
-Dynamics GP system.
+A manually written paycheck; manual checks can be recorded in the Microsoft Dynamics GP system.
 
 #### Mass transaction entry
-
-The process of quickly entering similar pay transactions, variable
-deductions or variable benefits for many employees.
+The process of quickly entering similar pay transactions, variable deductions or variable benefits for many employees.
 
 #### Minimum wage balance
-
-A pay code used to make up the difference between the amount of wages, tips,
-and other compensation, and the minimum wage.
+A pay code used to make up the difference between the amount of wages, tips, and other compensation, and the minimum wage.
 
 #### Multiple companies
-
-Companies for which separate data folders have been established. Microsoft
-Dynamics GP multiple-company feature allows you to keep a separate set of
-financial information for each company you operate.
+Companies for which separate data folders have been established. Microsoft Dynamics GP multiple-company feature allows you to keep a separate set of financial information for each company you operate.
 
 #### Multiple-account distributions
-
-Multiple-account distributions are employee direct deposit setups for which
-more than one account is set up and net wages are to be distributed into the
-accounts in a certain order. If you specify an amount when using
-multiple-account distributions, Direct Deposit will attempt to pay that
-amount. If a percent is chosen, then Direct Deposit will multiply the
-percent by the employee’s net wages in the Payroll run and attempt to pay
-that amount. Each time an account is paid, net wages for the individual are
-reduced. This continues until all the net wages are exhausted or until all
-lines have been paid. Any funds remaining are called remainder of net.
+Multiple-account distributions are employee direct deposit setups for which more than one account is set up and net wages are to be distributed into the accounts in a certain order. If you specify an amount when using multiple-account distributions, Direct Deposit will attempt to pay that amount. If a percent is chosen, then Direct Deposit will multiply the percent by the employee’s net wages in the Payroll run and attempt to pay that amount. Each time an account is paid, net wages for the individual are reduced. This continues until all the net wages are exhausted or until all lines have been paid. Any funds remaining are called remainder of net.
 
 #### National Automated Clearing House Association (NACHA)
-
-The National Automated Clearing House Association (NACHA) is the national
-regulatory body of the Automated Clearing House (ACH) Network, a nationwide
-electronics payments system used by more than 22,000 participating financial
-institutions in the United States.
+The National Automated Clearing House Association (NACHA) is the national body of the Automated Clearing House (ACH) Network, a nationwide electronics payments system used by more than 22,000 participating financial institutions in the United States.
 
 #### NDI
-
-An acronym for Net Disposable Income, a legally-defined selection of wages,
-deductions and taxes from which garnishments may be taken. The definition of
-NDI depends on state law.
+An acronym for Net Disposable Income, a legally-defined selection of wages, deductions and taxes from which garnishments may be taken. The definition of NDI depends on state law.
 
 #### Net pay
-
-The payment amount an employee receives after all deductions and taxes have
-been taken out of his or her paycheck.
+The payment amount an employee receives after all deductions and taxes have been taken out of his or her paycheck.
 
 #### Net wages
-
-The calculated result of an employee’s gross wages minus taxes. The net
-wages amount is used to calculate benefit and deduction amounts.
+The calculated result of an employee’s gross wages minus taxes. 
 
 #### Notes
-
-The Microsoft Dynamics GP feature that is used to attach messages to windows
-and records throughout the Microsoft Dynamics GP system. The note button
-shows whether a note is attached to a window. Notes can be edited and
-reattached, deleted or printed.
+The Microsoft Dynamics GP feature that is used to attach messages to windows and records throughout the Microsoft Dynamics GP system. The note button shows whether a note is attached to a window. Notes can be edited and reattached, deleted or printed.
 
 #### Option
-
-Printing specifications set up for reports. A variety of options can be used
-with each report.
+Printing specifications set up for reports. A variety of options can be used with each report.
 
 #### Origin
-
-A transaction entry window within a specific Microsoft Dynamics GP module.
-Certain options, such as closing fiscal periods, can be selected for each
-transaction origin. Also, the transaction origin appears as part of the
-audit trail code on all posting reports in Microsoft Dynamics GP.
+A transaction entry window within a specific Microsoft Dynamics GP module. Certain options, such as closing fiscal periods, can be selected for each transaction origin. Also, the transaction origin appears as part of the audit trail code on all posting reports in Microsoft Dynamics GP.
 
 #### Overtime pay
-
-A pay code that’s used to pay employees for working more than the assigned
-number of hours and are reimbursed at a different pay rate for the
-additional hours.
+A pay code that’s used to pay employees for working more than the assigned number of hours and are reimbursed at a different pay rate for the additional hours.
 
 #### Pay code
-
-A code used to identify a specific type and rate of pay. For example, an
-employee who is paid a specific salary may have the pay code SAL assigned to
-him or her.
+A code used to identify a specific type and rate of pay. For example, an employee who is paid a specific salary may have the pay code SAL assigned to him or her.
 
 #### Pay factor
-
-The number that is multiplied by the Based on Pay Code’s pay rate to
-calculate overtime or double time pay rates.
+The number that is multiplied by the Based on Pay Code’s pay rate to calculate overtime or double time pay rates.
 
 #### Pay period
-
 The time period between regularly scheduled pay runs.
 
 #### Pay rate
-
 The amount an employee is paid for a specified period or amount of work.
 
 #### Pay record
-
-A Payroll record that tracks money paid to an employee, showing pay expenses
-by pay code, department or job.
+A Payroll record that tracks money paid to an employee, showing pay expenses by pay code, department or job.
 
 #### Pay step
-
-A pay level based on length of time in a position. When an employee’s time
-in a position exceeds the length of the pay step, the employee advances to
-the next pay step.
+A pay level based on length of time in a position. When an employee’s time in a position exceeds the length of the pay step, the employee advances to the next pay step.
 
 #### Pay type
-
-A general category used to identify different kinds of pay, such as hourly
-or salary. For example, if an employee is paid a set amount per unit made or
-job completed, the pay type would be piecework.
+A general category used to identify different kinds of pay, such as hourly or salary. For example, if an employee is paid a set amount per unit made or job completed, the pay type would be piecework.
 
 #### Paycheck
-
 A printed form that is issued to employees as payment of wages earned.
 
 #### Payment number
-
-A number that identifies a group of related entries for a computer or manual
-check that are posted collectively as a single, complete transaction.
+A number that identifies a group of related entries for a computer or manual check that are posted collectively as a single, complete transaction.
 
 #### Pension
-
 A payment to a retired employee from a retirement plan.
 
 #### Piecework
-
-A pay code that’s used to pay employees a certain amount per unit made or
-completed.
+A pay code that’s used to pay employees a certain amount per unit made or completed.
 
 #### Position
-
 A unique alphanumeric name used to identify a position.
 
 #### Posting
-
-A procedure that makes temporary transactions a part of your business
-records; permanent records are updated with the amount of these
-transactions. In manual accounting, to transfer journal totals to the
-appropriate accounts in a ledger.
+A procedure that makes temporary transactions a part of your business records; permanent records are updated with the amount of these
+transactions. In manual accounting, to transfer journal totals to the appropriate accounts in a ledger.
 
 #### Posting account
-
-A financial account that tracks assets, liabilities, revenue or expenses.
-Amounts posted to these accounts appear on the Profit and Loss Statement,
-the Balance Sheet, and other financial reports if you are using General
-Ledger.
+A financial account that tracks assets, liabilities, revenue or expenses. Amounts posted to these accounts appear on the Profit and Loss Statement, the Balance Sheet, and other financial reports if you are using General Ledger.
 
 #### Posting date
-
-The date on which a specific transaction was posted to your company’s
-posting accounts.
+The date on which a specific transaction was posted to your company’s posting accounts.
 
 #### Posting journal
-
-A report printed following the posting process that shows the detail for
-each transaction that has been posted. Posting journals also include the
-audit trail code, which provides a precise record of where each transaction
-has been posted within Microsoft Dynamics GP.
+A report printed following the posting process that shows the detail for each transaction that has been posted. Posting journals also include the audit trail code, which provides a precise record of where each transaction has been posted within Microsoft Dynamics GP.
 
 #### Prenotification
-
-A prenotification or “prenote” is a test-run of direct deposit information.
-After you’ve entered an employee’s direct deposit preferences, you will
-probably be required by your financial institution to have a prenotification
-run or runs to verify the information in the ACH file.
+A prenotification or “prenote” is a test-run of direct deposit information. After you’ve entered an employee’s direct deposit preferences, you will probably be required by your financial institution to have a prenotification run or runs to verify the information in the ACH file.
 
 #### Process server
-
-The Microsoft Dynamics GP application that allows a user to direct the
-processing of some accounting functions and maintenance procedures to
-another computer on a network. No additional actions are required by the
-user. After tasks have been sent to a process server, users can begin other
-tasks immediately.
+The Microsoft Dynamics GP application that allows a user to direct the processing of some accounting functions and maintenance procedures to another computer on a network. No additional actions are required by the user. After tasks have been sent to a process server, users can begin other tasks immediately.
 
 #### Range
-
-A selection used to narrow the amount of records that are printed on a
-report. For example, a selected range of employee IDs could be those between
-1001 and 9999.
+A selection used to narrow the amount of records that are printed on a report. For example, a selected range of employee IDs could be those between 1001 and 9999.
 
 #### Reactivate
-
-The process of making employee records active. If you reactivate an employee
-record, all of the employee’s pay, deduction, and benefit records can be
-activated, as well, and paychecks can be printed for the individual.
+The process of making employee records active. If you reactivate an employee record, all of the employee’s pay, deduction, and benefit records can be activated, as well, and paychecks can be printed for the individual.
 
 **Recurring batch**
-
 A batch that can be posted repeatedly.
 
 #### Remainder of net
-
-Remainder of net refers to any amount owed to the employee after any
-deductions and direct deposit totals.
+Remainder of net refers to any amount owed to the employee after any deductions and direct deposit totals.
 
 #### Removing history
-
-A procedure used to erase ranges of account, check or transaction history
-that are no longer useful.
+A procedure used to erase ranges of account, check or transaction history that are no longer useful.
 
 #### Report option
-
-A collection of entries that specify the amount of information or the type
-of information that appears on a report. Multiple report options can be
-created.
+A collection of entries that specify the amount of information or the type of information that appears on a report. Multiple report options can be created.
 
 #### Reported tip
+Money—cash—the employee receives from customers that they report to the employer.
 
-Money—cash—the employee receives from customers that they report to the
-employer.
-
-Reported tips are not added into gross wages on the check, but are subject
-to FICA Social Security and Medicare, Federal, and FUTA taxes. Generally,
-reported tips are also subject to State, Local, and SUTA taxes.
+Reported tips are not added into gross wages on the check, but are subject to FICA Social Security and Medicare, Federal, and FUTA taxes. Generally, reported tips are also subject to State, Local, and SUTA taxes.
 
 #### Retroactive pay
-
-Supplemental wages paid to an employee whose pay rate has been increased
-effective as of a past date.
+Supplemental wages paid to an employee whose pay rate has been increased effective as of a past date.
 
 #### Roll down
-
-To apply changes you’ve made to a class record to all employee records
-within the class. For example, if you change the payment terms for the class
-from Net 30 to 2 percent-10/Net 30, you can roll down the change to all
-records in the employee class.
+To apply changes you’ve made to a class record to all employee records within the class. For example, if you change the payment terms for the class from Net 30 to 2 percent-10/Net 30, you can roll down the change to all records in the employee class.
 
 #### Salary pay
-
-A pay code that’s used for employees who are paid a specific pay amount each
-pay period.
+A pay code that’s used for employees who are paid a specific pay amount each pay period.
 
 #### Sample data
-
-Data that can be used to practice Microsoft Dynamics GP procedures by
-entering the information listed in the online lessons. Sample data can be
-accessed using the lesson company, Fabrikam, Inc.
+Data that can be used to practice Microsoft Dynamics GP procedures by entering the information listed in the online lessons. Sample data can be accessed using the lesson company, Fabrikam, Inc.
 
 #### Series
-
-A group of Microsoft Dynamics GP modules that form an interrelated set of
-applications. Receivables Management is part of the Sales series, for
-example.
+A group of Microsoft Dynamics GP modules that form an interrelated set of applications. Receivables Management is part of the Sales series, for example.
 
 #### Shift code
-
-A code used to identify a specific type and rate of pay given for different
-times of work. For example, an employee who works a night shift might
-receive an additional \$1.00 per hour.
+A code used to identify a specific type and rate of pay given for different times of work. For example, an employee who works a night shift might receive an additional \$1.00 per hour.
 
 #### Sick time
-
 A pay code that’s used to pay employees for time off due to sickness.
 
 #### Single-account distributions
-
-Single-account distributions are employee direct deposit setups for which
-only one account line is entered and the entire net wages from the Payroll
-will go to that account.
+Single-account distributions are employee direct deposit setups for which only one account line is entered and the entire net wages from the Payroll will go to that account.
 
 #### Sorting
-
-A method of arranging data based on the order of specified information. For
-example, records sorted by document list all items on a document before
-listing the items on the next document.
+A method of arranging data based on the order of specified information. For example, records sorted by document list all items on a document before listing the items on the next document.
 
 #### State tax
-
-A tax paid to state government agencies. You can set up multiple state taxes
-for each employee, if you wish.
+A tax paid to state government agencies. You can set up multiple state taxes for each employee, if you wish.
 
 **State Unemployment Tax Act**
-
 *See SUTA*.
 
 #### SUTA
-
-An acronym for State Unemployment Tax Act. This is the state unemployment
-tax paid by an employer to provide for payments of unemployment compensation
-to workers who have lost their jobs.
+An acronym for State Unemployment Tax Act. This is the state unemployment tax paid by an employer to provide for payments of unemployment compensation to workers who have lost their jobs.
 
 #### Support order
-
-A garnishment category, in which a court orders the employer to deduct
-amounts from the employee’s wages to pay support for a child or other
-dependent.
+A garnishment category, in which a court orders the employer to deductamounts from the employee’s wages to pay support for a child or other dependent.
 
 #### Tax levy
-
-A garnishment category, in which a court orders the employer to deduct
-amounts from the employee’s wages to pay overdue taxes.
+A garnishment category, in which a court orders the employer to deduct amounts from the employee’s wages to pay overdue taxes.
 
 #### Tax table
-
-In Payroll, where tax information is stored for federal, EIC, FICA, state,
-and pre-defined local taxes.
+In Payroll, where tax information is stored for federal, EIC, FICA, state, and pre-defined local taxes.
 
 #### Taxable benefit
-
-Benefits paid on the employee’s behalf, but not directly to the employee
-that are subject to income tax.
+Benefits paid on the employee’s behalf, but not directly to the employee that are subject to income tax.
 
 #### Text file (text only)
-
-A file format that saves reports as text without formatting. This option
-should be used when the application to which you’re converting the document
-is unable to read any of the other file formats.
+A file format that saves reports as text without formatting. This option should be used when the application to which you’re converting the document is unable to read any of the other file formats.
 
 #### Tip
+Money an employee receives from customers as an acknowledgement of services rendered. Tips include both Charged Tips and Reported Tips and are tracked directly or indirectly.
 
-Money an employee receives from customers as an acknowledgement of services
-rendered. Tips include both Charged Tips and Reported Tips and are tracked
-directly or indirectly.
-
-**Tip allocation rate** The rate—set by the IRS—used to determine the tip
-allocation amount.
-
-**Transaction edit list**
-
-*See Edit list*.
+**Tip allocation rate** 
+The rate—set by the IRS—used to determine the tip allocation amount.
 
 #### Transaction required benefit
-
 A benefit that you must create a transaction for.
 
 #### Transaction required deduction
-
 A deduction that you must create a transaction for.
 
 #### Transaction-level posting
-
-A posting method that allows you to enter and post transactions individually
-without having to create a batch.
+A posting method that allows you to enter and post transactions individually without having to create a batch.
 
 #### TSA
-
-An acronym for Tax-Sheltered Annuity, an employee deduction that reduces
-wages for the purpose of calculating employer and employee taxes. It also
-reduces the employee gross wages on the year-end W2 statement.
+An acronym for Tax-Sheltered Annuity, an employee deduction that reduces wages for the purpose of calculating employer and employee taxes. It also reduces the employee gross wages on the year-end W2 statement.
 
 #### Uncollected FICA Medicare tax on tips
-
-FICA Medicare tax on tips that could not be collected from the employee.
-This information must be reported on the employee’s W-2 form.
+FICA Medicare tax on tips that could not be collected from the employee. This information must be reported on the employee’s W-2 form.
 
 #### Uncollected FICA Social Security tax on tips
-
-FICA Social Security tax on tips that could not be collected from the
-employee. This information must be reported on the employee’s W-2 form.
+FICA Social Security tax on tips that could not be collected from the employee. This information must be reported on the employee’s W-2
 
 #### User-defined field
-
-Two fields in the Employee Additional Information Maintenance window that
-you can define to track information specific to your business.
+Two fields in the Employee Additional Information Maintenance window that you can define to track information.
 
 #### Vacation pay
-
 A pay code that’s used to pay employees while on vacation.
 
 #### Voiding
-
-The process of recording an equal and opposite transaction to undo the
-effect of a posted transaction.
+The process of recording an equal and opposite transaction to undo the effect of a posted transaction.
 
 **W-2 statement**
-
 Wage and tax statement.
 
 #### W-3 form
-
 A report that summarizes the W-2 information.
 
 #### Workers’ compensation tax
-
-Taxes paid by the employer for insurance covering injuries incurred on the
-job. Workers’ compensation is paid to the state government.
+Taxes paid by the employer for insurance covering injuries incurred on the job. Workers’ compensation is paid to the state government.
 
 #### Year-end closing
-
 The process used to create a table for annual wage information.
