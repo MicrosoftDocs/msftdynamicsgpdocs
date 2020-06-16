@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: tnistler
-ms.date: 06/14/2020
+ms.date: 06/16/2020
 
 ---
 # Fixed Asset Management in Dynamics GP
@@ -34,7 +34,7 @@ If you’re using Payables Management or Purchase Order Processing, you can trac
 
 This manual is designed to give you an understanding of how to use the features of Fixed Asset Management, and how it integrates with the Microsoft Dynamics® GP system.
 
-To make best use of Fixed Asset Management, you should be familiar with systemwide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
+To make best use of Fixed Asset Management, you should be familiar with system-wide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
 
 Some features described in the documentation are optional and can be purchased through your Microsoft Dynamics GP partner.
 
@@ -143,8 +143,8 @@ You must set up the calendar and quarter, book, class, book class and company re
 
 After you’ve entered calendar, quarter, book, class, book class, and company records, you should complete the following procedures.
 
-| **Procedure**                                                   | **Additional information**                                                                  |
-|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Procedure**  | **Additional information**|
+|----------------|---------------------------|
 | Create or import asset records.                                | Refer to *Creating an asset record* or *Importing asset records*.                          |
 | Print reports to verify that information was entered correctly. | You can print the Depreciation Ledger, Depreciation Detail Report, and the Property Ledger. |
 | Integrate Fixed Asset Management data with General Ledger.     | Refer to *Updating General Ledger with Fixed Asset Management transactions*.               |
@@ -170,7 +170,7 @@ If you selected to create a fiscal calendar, the information in the Fiscal Perio
 
 6. Enter the start and end of the range of years to build.
 
-Fixed Asset Management builds fiscal periods for 100 years prior to and 200 years after the year 2000, so the default range of years is 1901 to 2199.
+    Fixed Asset Management builds fiscal periods for 100 years prior to and 200 years after the year 2000, so the default range of years is 1901 to 2199.
 
 7. Choose Build Calendar.
 
@@ -264,23 +264,25 @@ To see differences between the depreciation calculated using internal book rules
 
 5. Select a period to determine how the yearly depreciation amount will be allocated.
 
-**Periodically** To the number of periods in the year.
+    - **Periodically** - To the number of periods in the year.
 
-**Daily** To the number of days in the year.
+    - **Daily** - To the number of days in the year.
 
 6. Mark Auto Add Book Info to add an asset book record to this book when you add an asset using the Asset General Information window.
 
 7. Mark the Post to General Ledger option to post all transactions associated with the selected book ID to General Ledger. This option is available only if you have marked the Allow Reporting ledger in the Fixed Assets Company setup window (Financial \>\> Setup \>\> Fixed Assets \>\> Company).
 
-*When you mark the Allow Reporting Ledger option in the Fixed Assets Company Setup window, the Post to General Ledger option will be automatically marked and unavailable for selection for the corporate book.*
+    > [!NOTE]
+    > Information the user should notice even if skimming
 
 8. Select the Reporting Ledger, Base, IFRS or Local, to report all transactions associated with the book ID. This option is available only if you have marked the Allow Reporting ledger in the Fixed Assets Company setup window (Financial \>\> Setup \>\> Fixed Assets \>\> Company).
 
-When you mark the Allow Reporting Ledger option in the Fixed Assets Company Setup window, BASE will be selected as the reporting ledger automatically for the corporate book.
+    When you mark the Allow Reporting Ledger option in the Fixed Assets Company Setup window, BASE will be selected as the reporting ledger automatically for the corporate book.
 
-*Any corporate book transactions completed prior to marking the Allow Reporting*
-
-*Ledgers option in the Fixed Assets Company Setup window (Financial \>\> Setup \>\> Fixed Assets \>\> Company) will be automatically assigned to the BASE reporting ledger in General Ledger. If you change the assigned reporting ledger in the Book Setup window, you may want to correct the transactions that already exist in General Ledger for that book.*
+    > [!NOTE]
+    > Any corporate book transactions completed prior to marking the Allow Reporting.
+    >
+    > Ledgers option in the Fixed Assets Company Setup window (Financial \>\> Setup \>\> Fixed Assets \>\> Company) will be automatically assigned to the BASE reporting ledger in General Ledger. If you change the assigned reporting ledger in the Book Setup window, you may want to correct the transactions that already exist in General Ledger for that book.
 
 9. Choose Save.
 
@@ -299,7 +301,7 @@ Although it’s not required, you can enter a default insurance class ID that wi
 1. Open the Class Setup window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Class)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage011.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage011.jpg)
 
 2. Enter a class ID and description. The description will appear on reports and inquiries, and in maintenance windows.
 
@@ -319,25 +321,25 @@ If the property is also a passenger automobile, truck, van, or electric vehicle,
 
 The following table lists the depreciation methods and their calculations:
 
-| **Depreciation method**                     | **Calculation**                                                                                                                                                                                                                                                                                             |
-|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Depreciation method**                     | **Calculation**      |
+|---------------------------------------------|----------------------|
 | Straight-line Orig Life                     | (Cost - Salvage Value - Special Depreciation Allowance) ÷ Original Life in Years If the Original Life includes days, the days will be converted to a fraction with days as the numerator and 365 as the denominator. For example, if the number of days is 146, the fraction would be displayed as 146/365. |
 | Straight-line Rem Life                      | (Cost - Salvage Value - (LTD Depreciation Amount - YTD Depreciation Amount)) ÷ Remaining Life in Days This calculation determines the daily depreciation rate, which must be multiplied by the number of days in the year. This method is used when you select the Switch to Straight-Line option.         |
-| 125% Declining Balance                      | (Cost - (LTD Depreciation Amount - YTD Depreciation Amount)) ÷ Original Life \*1.25                                                                                                                                                                                                                         |
-| 150% Declining Balance                      | (Cost - (LTD Depreciation Amount - YTD Depreciation Amount)) ÷ Original Life \*1.50                                                                                                                                                                                                                         |
-| 175% Declining Balance                      | (Cost - (LTD Depreciation Amount - YTD Depreciation Amount)) ÷ Original Life \*1.75                                                                                                                                                                                                                         |
-| 200% Declining Balance                      | (Cost - (LTD Depreciation Amount - YTD Depreciation Amount)) ÷ Original Life \*2.00                                                                                                                                                                                                                         |
-| Sum of the Year’s Digits                    | (Cost - Salvage Value - Special Depreciation Allowance) \* (Remaining Life in Years ÷ Sum of Original Life in Years)                                                                                                                                                                                        |
-| Remaining Life                              | (Cost - Salvage Value - (LTD Depreciation Amount - YTD Depreciation Amount)) \* (Remaining Life in Years ÷ Sum of the Remaining Life in Years)                                                                                                                                                              |
-| Amortization                                | If you choose the Amortization depreciation method, you also must enter an amortization code and amortization amount or percent. Refer to *Amortization codes* for more information.                                                                                                                       |
-| ACRS Personal Property                      | Cost \* Percentage from a table                                                                                                                                                                                                                                                                             |
-| **Depreciation method**                     | **Calculation**                                                                                                                                                                                                                                                                                             |
-| ACRS Real Property                          | Cost \* Percentage from a table                                                                                                                                                                                                                                                                             |
-| ACRS Real Property (Modified Straight Line) | Cost \* Percentage from a table                                                                                                                                                                                                                                                                             |
-| ACRS Low Income Housing                     | Cost \* Percentage from a table                                                                                                                                                                                                                                                                             |
-| ACRS Foreign Real Property                  | Cost \* Percentage from a table                                                                                                                                                                                                                                                                             |
-| No Depreciation                             | No depreciation will be calculated for assets with this depreciation method. This method might be used for assets such as land.                                                                                                                                                                            |
-| Declining Balance                           | Net Book Value \* Percentage                                                                                                                                                                                                                                                                                |
+| 125% Declining Balance                      | (Cost - (LTD Depreciation Amount - YTD Depreciation Amount)) ÷ Original Life \*1.25 |
+| 150% Declining Balance                      | (Cost - (LTD Depreciation Amount - YTD Depreciation Amount)) ÷ Original Life \*1.50|
+| 175% Declining Balance                      | (Cost - (LTD Depreciation Amount - YTD Depreciation Amount)) ÷ Original Life \*1.75  |
+| 200% Declining Balance                      | (Cost - (LTD Depreciation Amount - YTD Depreciation Amount)) ÷ Original Life \*2.00  |
+| Sum of the Year’s Digits                    | (Cost - Salvage Value - Special Depreciation Allowance) \* (Remaining Life in Years ÷ Sum of Original Life in Years)    |
+| Remaining Life                              | (Cost - Salvage Value - (LTD Depreciation Amount - YTD Depreciation Amount)) \* (Remaining Life in Years ÷ Sum of the Remaining Life in Years)  |
+| Amortization                                | If you choose the Amortization depreciation method, you also must enter an amortization code and amortization amount or percent. Refer to *Amortization codes* for more information. |
+| ACRS Personal Property                      | Cost \* Percentage from a table  |
+| **Depreciation method**                     | **Calculation**  |
+| ACRS Real Property                          | Cost \* Percentage from a table   |
+| ACRS Real Property (Modified Straight Line) | Cost \* Percentage from a table   |
+| ACRS Low Income Housing                     | Cost \* Percentage from a table  |
+| ACRS Foreign Real Property                  | Cost \* Percentage from a table |
+| No Depreciation                             | No depreciation will be calculated for assets with this depreciation method. This method might be used for assets such as land.   |
+| Declining Balance                           | Net Book Value \* Percentage    |
 
 #### Amortization codes
 
@@ -361,69 +363,96 @@ Averaging conventions are guidelines for calculating depreciation in the year of
 
 During the first year in service, depreciation is calculated using the depreciation method and averaging convention for the asset. The resulting depreciation amount is distributed over the period of time from the date it was placed in service to the last day of the year.
 
-*You should use the Mid-month (1st of month), Mid-month (15th of Month), Next Month, or Full Month averaging convention only if your fiscal periods are set up to match the calendar year.*
+> [!NOTE]
+> You should use the Mid-month (1st of month), Mid-month (15th of Month), Next Month, or Full Month averaging convention only if your fiscal periods are set up to match the calendar year.
 
 The averaging convention does not change the dates an asset is retired or placed in service. The following averaging conventions are available in Fixed Asset Management.
 
-**Half-year** Assets begin depreciating on the Place in Service Date. In the year of disposal, assets are retired on the last day of the first half of the year.
+- **Half-year**
 
-Only half of the depreciation amount is taken in the year an asset is acquired. This also applies to the year in which you dispose of an asset and to the year in which the life is complete, based on the original life of the asset. The asset doesn’t depreciate after the first half of its final year.
+    Assets begin depreciating on the Place in Service Date. In the year of disposal, assets are retired on the last day of the first half of the year.
 
-**Modified Half-Year** Assets that are placed in service in the first half of the year will begin depreciating on the first day of the year.
+    Only half of the depreciation amount is taken in the year an asset is acquired. This also applies to the year in which you dispose of an asset and to the year in which the life is complete, based on the original life of the asset. The asset doesn’t depreciate after the first half of its final year.
 
-Assets that are placed in service in the second half of the year will begin depreciating on the first day of the next year.
+- **Modified Half-Year**
 
-Assets with a retirement date in the first half of the year will be retired on the last day of the previous year.
+    Assets that are placed in service in the first half of the year will begin depreciating on the first day of the year.
 
-Assets with a retirement date in the second half of the year will be retired on the last day of the year.
+    Assets that are placed in service in the second half of the year will begin depreciating on the first day of the next year.
 
-**Mid-month (1st of month)** Assets that are placed in service in the first half of the month—days 1 through 15—will begin depreciating on the first day of the month.
+    Assets with a retirement date in the first half of the year will be retired on the last day of the previous year.
 
-Assets that are placed in service in the second half of the month—day 16 through end of month—will begin depreciating on the first day of the next month.
+    Assets with a retirement date in the second half of the year will be retired on the last day of the year.
 
-Assets with a retirement date in the first half of the month—day 1 through 15—are considered retired on the last day of the previous month.
+- **Mid-month (1st of month)**
 
-Assets with a retirement date in the second half of the month—day 16 through end of month—will be retired on the last day of the month.
+    Assets that are placed in service in the first half of the month—days 1 through 15—will begin depreciating on the first day of the month.
 
-**Mid-month (15th of Month)** Assets that are placed in service at any time during the month will begin depreciating on the 16th of the month. Assets that were placed in service in February will begin depreciating on the 15th of the month.
+    Assets that are placed in service in the second half of the month—day 16 through end of month—will begin depreciating on the first day of the next month.
 
-Assets retired at any time during the month will be retired on the 15th of the month of the retirement date. Assets retired in February will be retired on the 14th of the month.
+    Assets with a retirement date in the first half of the month—day 1 through 15—are considered retired on the last day of the previous month.
 
-**Mid-quarter** Assets that are placed in service at any time during the quarter will begin depreciating on the middle day of the second month of the quarter.
+    Assets with a retirement date in the second half of the month—day 16 through end of month—will be retired on the last day of the month.
 
-Assets retired at any time during the quarter are considered retired on the middle day of the second month of the quarter.
+- **Mid-month (15th of Month)**
 
-**Next Month** Assets that are placed in service at any time during the month will begin depreciating on the first day of the next month.
+    Assets that are placed in service at any time during the month will begin depreciating on the 16th of the month. Assets that were placed in service in February will begin depreciating on the 15th of the month.
 
-Assets retired any time during a month will be retired on the last day of the month.
+    Assets retired at any time during the month will be retired on the 15th of the month of the retirement date. Assets retired in February will be retired on the 14th of the month.
 
-**Full Month** Assets that are placed in service at any time during the month will begin depreciating on the first day of the month.
+- **Mid-quarter**
 
-Assets retired at any time during the month are considered retired on the last day of the previous month.
+    Assets that are placed in service at any time during the quarter will begin depreciating on the middle day of the second month of the quarter.
 
-**Next Year** Assets that are placed in service at any time during the year will begin depreciating on the first day of the next year.
+    Assets retired at any time during the quarter are considered retired on the middle day of the second month of the quarter.
 
-Assets retired at any time during the year will be retired on the last day of the year.
+- **Next Month**
 
-**Full Year** Assets that are placed in service in the first half of the year will begin depreciating on the first day of the year.
+    Assets that are placed in service at any time during the month will begin depreciating on the first day of the next month.
 
-Assets that were placed in service in the second half of the year will begin depreciating on the first day of the last half of the year.
+    Assets retired any time during a month will be retired on the last day of the month.
 
-Assets with a retirement date during the first half of the year will begin depreciating on the first day of the last half of the year. Assets with a retirement date during the second half of the year are considered retired on the last day of the first half of the year.
+- **Full Month**
 
-**Full Year All Year** Assets will begin depreciating on the first day of the year.
+    Assets that are placed in service at any time during the month will begin depreciating on the first day of the month.
 
-Assets with a retirement date anytime during the year will be retired on the last day of the previous year.
+    Assets retired at any time during the month are considered retired on the last day of the previous month.
 
-**None** Assets will begin depreciating on the date it was placed in service and will be retired on the retirement date.
+- **Next Year**
 
-**Next Period** Assets that are placed in service at any time during the period will begin depreciating on the first day of the next period.
+    Assets that are placed in service at any time during the year will begin depreciating on the first day of the next year.
 
-Assets retired at any time during the period will be retired on the last day of the period.
+    Assets retired at any time during the year will be retired on the last day of the year.
 
-**Full Period** Assets that are placed in service at any time during the period will begin depreciating on the first day of the period.
+- **Full Year**
 
-Assets retired at any time during the period will be retired on the last day of the preceding period.
+    Assets that are placed in service in the first half of the year will begin depreciating on the first day of the year.
+
+    Assets that were placed in service in the second half of the year will begin depreciating on the first day of the last half of the year.
+
+    Assets with a retirement date during the first half of the year will begin depreciating on the first day of the last half of the year. Assets with a retirement date during the second half of the year are considered retired on the last day of the first half of the year.
+
+- **Full Year All Year**
+
+    Assets will begin depreciating on the first day of the year.
+
+    Assets with a retirement date anytime during the year will be retired on the last day of the previous year.
+
+- **None**
+
+    Assets will begin depreciating on the date it was placed in service and will be retired on the retirement date.
+
+- **Next Period**
+
+    Assets that are placed in service at any time during the period will begin depreciating on the first day of the next period.
+
+    Assets retired at any time during the period will be retired on the last day of the period.
+
+- **Full Period**
+
+    Assets that are placed in service at any time during the period will begin depreciating on the first day of the period.
+
+    Assets retired at any time during the period will be retired on the last day of the preceding period.
 
 #### Creating a book class record
 
@@ -438,7 +467,7 @@ For more information about depreciation methods and averaging conventions, see *
 1. Open the Book Class Setup window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Book Class)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage014.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage014.jpg)
 
 2. Select a book ID and a class ID.
 
@@ -452,7 +481,7 @@ For more information about depreciation methods and averaging conventions, see *
 
 7. Mark the Salvage Estimate option if the salvage value of an asset assigned to this book class should be calculated.
 
-If you marked Salvage Estimate, enter a salvage percentage. The percentage will be multiplied by the cost basis of each asset to calculate the salvage value.
+    If you marked Salvage Estimate, enter a salvage percentage. The percentage will be multiplied by the cost basis of each asset to calculate the salvage value.
 
 8. Select Yes to apply US luxury auto limits to assets in this book class. These limits apply to tax books only.
 
@@ -535,15 +564,15 @@ Use the Fixed Assets Company Setup window to create user-defined fields, enter i
 1. Open the Fixed Assets Company Setup window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Company)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage016.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage016.jpg)
 
 2. Select the book that will be used for corporate depreciation and that General Ledger transactions come from.
 
 3. Mark the Auto Generate Next Asset ID option to automatically generate the next asset ID in the Asset General Information window. Then, enter the next asset ID to use when adding a new asset. If you leave this field blank, you will have to enter the asset ID in the Asset General Information window.
 
-Be sure that the asset ID ends with a series of digits rather than letters. If you enter a next asset ID that ends in alphabetic characters, such as 8050AC, the system is unable to increment to the next ID in the Asset General Information window. By defining the next number, you also are determining the number of unique asset IDs that will be available. For example, if you enter FA00001 as the next number, you'll be able to enter up to 99,999 unique asset IDs.
+    Be sure that the asset ID ends with a series of digits rather than letters. If you enter a next asset ID that ends in alphabetic characters, such as 8050AC, the system is unable to increment to the next ID in the Asset General Information window. By defining the next number, you also are determining the number of unique asset IDs that will be available. For example, if you enter FA00001 as the next number, you'll be able to enter up to 99,999 unique asset IDs.
 
-If you are creating a new asset ID for the destination company during an intercompany transfer, the new default asset ID for each asset is generated from the Next Asset ID field in the Fixed Assets Company Setup window for the destination company. By automatically generating the next asset ID, you can avoid duplication issues with the existing assets in the destination company.
+    If you are creating a new asset ID for the destination company during an intercompany transfer, the new default asset ID for each asset is generated from the Next Asset ID field in the Fixed Assets Company Setup window for the destination company. By automatically generating the next asset ID, you can avoid duplication issues with the existing assets in the destination company.
 
 4. Mark the Require Asset Account option to require that an Asset Account record includes all eight accounts before adding an Asset Book record. For more information, refer to *Asset account option*.
 
@@ -557,29 +586,29 @@ If you are creating a new asset ID for the destination company during an interco
 
 9. Mark Allow Reporting Ledgers to enable BASE, LOCAL and International Financial Reporting Standards (IFRS) ledgers for Fixed Assets. When this option is marked, you can assign books already created, as well as new Fixed Assets books to update one of these reporting ledgers.
 
-This option is available only if you have marked the Allow check box for the Reporting Ledgers option in the General Ledger Setup window (Financial \>\> Setup \>\> Financial \>\> General Ledger). Refer to the General Ledger documentation for more information.
+    This option is available only if you have marked the Allow check box for the Reporting Ledgers option in the General Ledger Setup window (Financial \>\> Setup \>\> Financial \>\> General Ledger). Refer to the General Ledger documentation for more information.
 
 10. Mark Reset History in Detail to create an offsetting transaction for each depreciation transaction taken for an asset in closed years. If the Reset History in Detail option is not marked, a summary transaction is created in the last period of the most recent closed year for all depreciation taken for the asset in closed years.
 
 11. Mark Post in Detail to update General Ledger with Fixed Asset Management transactions in detail. When a batch is posted from the Fixed Assets General Ledger Posting window, a General Ledger journal entry is created for each Fixed Assets Management transaction in the batch. For example, two Fixed Assets Management transactions are created when you depreciate all assets for a month and then retire several assets. When you post a batch from the Fixed Assets General Ledger Posting window for those two transactions, a General Ledger journal entry is created for each Fixed Assets Management transaction.
 
-If the option is unmarked, all transactions are summarized into a single journal entry by account. When you post a batch from the Fixed Assets General Ledger Posting window, there will be one General Ledger distribution per account in the one journal entry.
+    If the option is unmarked, all transactions are summarized into a single journal entry by account. When you post a batch from the Fixed Assets General Ledger Posting window, there will be one General Ledger distribution per account in the one journal entry.
 
 12. Mark the Purchasing Options. Refer to *Purchasing options* for more information.
 
 13. Choose the Accounts button to open the Default Accounts window.
 
-![A screenshot of a cell phone Description automatically generated](media/FAage018.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage018.jpg)
 
 14. Select an Account Group to copy the accounts assigned to the group into the Company Setup record. You also can enter each account individually or change specific accounts after you select an Account Group. For a description of each account type, refer to *Creating an account group*. Choose OK.
 
 15. Choose the User Defined button to open the Expand User Fields window where you can define up to 15 user-defined fields.
 
-![A screenshot of a cell phone Description automatically generated](media/FAage020.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage020.jpg)
 
 16. You can define default values for the user-defined fields in the User Fields List Setup window. Refer to *User data option* for more information.
 
-For more information about entering default values for these fields, refer to *Setting up user-defined field values*.
+    For more information about entering default values for these fields, refer to *Setting up user-defined field values*.
 
 17. Choose OK to close the Expand User Fields window.
 
@@ -654,7 +683,7 @@ Use the Account Group Setup window to define groups of Fixed Asset Management ac
 1. Open the Account Group Setup window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Account Group)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage022.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage022.jpg)
 
 2. Enter an account group ID and description to identify a group of accounts.
 
@@ -689,7 +718,7 @@ Use the Fixed Assets Purchasing Posting Accounts Setup window to enter account n
 1. Open the Fixed Assets Purchasing Posting Accounts Setup window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Purchasing Posting Accounts)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage025.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage025.jpg)
 
 2. Choose Assigned to view only accounts already entered in this window. Choose All to view all the accounts in your chart of accounts.
 
@@ -712,7 +741,7 @@ Use the Insurance Setup window to enter insurance class ID records.
 1. Open the Insurance Setup window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Insurance)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage027.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage027.jpg)
 
 2. Enter an insurance class ID and description.
 
@@ -733,7 +762,7 @@ Although it’s not required, you also can assign a vendor ID to the lease compa
 1. Open the Lease Company Setup window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Lease Company)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage029.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage029.jpg)
 
 2. Enter the name of the lease company.
 
@@ -752,7 +781,7 @@ Use the Asset General Information window to assign a location ID to an asset rec
 1. Open the Location Setup window.
 (Financial \>\> Fixed Assets \>\> Location)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage031.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage031.jpg)
 
 2. Enter the location ID—for property tax purposes—to be associated with the location you’re defining.
 
@@ -771,7 +800,7 @@ Any location IDs you enter in this window first must be set up using the Locatio
 1. Open the Physical Location Setup window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Physical Location)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage033.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage033.jpg)
 
 2. Enter a physical location ID, and a description.
 
@@ -790,7 +819,7 @@ Use the Retirement Setup window to define retirement codes that you can enter wh
 1. Open the Retirement Setup window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Retirement)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage035.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage035.jpg)
 
 2. Enter a code to describe a retirement.
 
@@ -807,7 +836,7 @@ Use the Structure Setup window to define structure IDs that can be entered when 
 1. Open the Structure Setup window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Structure)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage037.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage037.jpg)
 
 2. Enter a structure ID and a corresponding description.
 
@@ -819,31 +848,23 @@ You can use the Fixed Assets User Preferences window to display the path setting
 
 If a field is left blank in the Fixed Assets User Preference window, the default value from the installation process will be displayed in the field. As each process is run, the last value used will be displayed in the field. Default import and export file names and descriptions are listed in the following table:
 
-| **File**                              | **Filename** | **Description**                                                                                                                                                                                                                                                   |
-|---------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Physical Inventory                    | PhysInv.txt  | Allows asset label and physical inventory location information to be collected using a bar-code reader or other external sources, and imported into Fixed Asset Management.                                                                                      |
+| **File**                              | **Filename** | **Description**    |
+|---------------------------------------|--------------|--------------------|
+| Physical Inventory                    | PhysInv.txt  | Allows asset label and physical inventory location information to be collected using a bar-code reader or other external sources, and imported into Fixed Asset Management.    |
 | Asset Group Import                    | AssetGrp.txt | Used to create an asset group using a list of fixed assets from an external source. The asset group can be used in any Fixed Asset Management function that can access a group, such as mass transfer, mass retirement, mass change, projection and depreciation. |
-| Physical Inventory Information Import | PhysInfo.txt | Adds asset label, physical location IDs, or both to existing assets.                                                                                                                                                                                             |
-| Asset Import file                     | Asset.txt    | Allows importing assets from an external source.                                                                                                                                                                                                                 |
-| Macro file                            | Assets.mac   | Processing the addition of asset from an external source. The macro is created from the Asset Import file.                                                                                                                                                       |
-| Asset ID Export file                  | AssetID.txt  | Asset IDs are exported from Fixed Asset Management to the Asset ID Export file.                                                                                                                                                                                  |
-| Asset Label Export                    | AssetLBL.txt | Asset labels are exported from Fixed Asset Management to the Asset Label Export file.                                                                                                                                                                            |
-| Sample Data                           |              | The sample data files to use with Fabrikam, Inc. sample company. They are installed during the Microsoft Dynamics GP installation.                                                                                                                               |
-
-Import file
-
-file
-
-file
-
-file
+| Physical Inventory Information Import | PhysInfo.txt | Adds asset label, physical location IDs, or both to existing assets.  |
+| Asset Import file                     | Asset.txt    | Allows importing assets from an external source. |
+| Macro file                            | Assets.mac   | Processing the addition of asset from an external source. The macro is created from the Asset Import file.  |
+| Asset ID Export file                  | AssetID.txt  | Asset IDs are exported from Fixed Asset Management to the Asset ID Export file.  |
+| Asset Label Export                    | AssetLBL.txt | Asset labels are exported from Fixed Asset Management to the Asset Label Export file.|
+| Sample Data                           |              | The sample data files to use with Fabrikam, Inc. sample company. They are installed during the Microsoft Dynamics GP installation.    |
 
 **To set up user preferences:**
 
 1. Open the Fixed Assets User Preferences window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> User Preferences)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage039.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage039.jpg)
 
 2. Verify or change the paths.
 
@@ -858,7 +879,7 @@ You can create default values for user-defined fields one through ten in the Exp
 1. Open the Expand User Fields window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Company \>\> User Fields expansion button)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage041.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage041.jpg)
 
 2. Enter user-defined field names and select a format for the fields to use.
 
@@ -866,7 +887,7 @@ You can create default values for user-defined fields one through ten in the Exp
 
 4. Choose the expansion button to open the User Fields List Setup window and enter data to be used as default field information.
 
-![A screenshot of a cell phone Description automatically generated](media/FAage043.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage043.jpg)
 
 5. If the format is a date format, you can mark the Valid Date option to require a valid date entry in the Asset User Data window.
 
@@ -923,7 +944,7 @@ Asset ID, Description, Class ID, Type, Property Type, Acquisition Date, and Quan
 1. Open the Asset General Information window.
 (Financial \>\> Cards \>\> Fixed Assets \>\> General)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage046.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage046.jpg)
 
 2. Enter or accept an asset ID, asset suffix, and a description of the asset.
 
@@ -943,19 +964,20 @@ A default asset ID displays if you marked Auto Generate Next Asset ID and entere
 
 9. You can enter or select a different currency ID.
 
-*If you use Multicurrency Management and you select a currency ID that’s different from the functional currency defined for this company, the functional currency will be calculated based on the appropriate exchange rate. The functional currency will be used to calculate the original acquisition cost displayed in the Asset Purchase window, based on the exchange rate.*
+    > [!NOTE]
+    > If you use Multicurrency Management and you select a currency ID that’s different from the functional currency defined for this company, the functional currency will be calculated based on the appropriate exchange rate. The functional currency will be used to calculate the original acquisition cost displayed in the Asset Purchase window, based on the exchange rate.
 
 10. If the Currency ID displayed is the functional currency, you can enter the acquisition cost or choose the Acquisition Cost expansion button to open the Asset Purchase window and enter detailed information about the acquisition cost.
 
-You can enter the acquisition cost in the Asset Purchase window or the Asset  General Information window. If you enter the acquisition cost in the Asset  General Information window, information will be transferred to the Asset Purchase window. You can change the information in the Asset Purchase window.
+    You can enter the acquisition cost in the Asset Purchase window or the Asset  General Information window. If you enter the acquisition cost in the Asset  General Information window, information will be transferred to the Asset Purchase window. You can change the information in the Asset Purchase window.
 
-![A screenshot of a cell phone Description automatically generated](media/FAage049.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage049.jpg)
 
-The acquisition cost displayed in the Asset General Information window is the sum of all the acquisition costs in the Asset Purchase window.
+    The acquisition cost displayed in the Asset General Information window is the sum of all the acquisition costs in the Asset Purchase window.
 
 11. If the Currency ID displayed is not the functional currency, you can enter a value in the Orig. Acquisition Cost field.
 
-You can enter the currency ID in the Asset Purchase window or the Asset  General Information window. If you enter the currency ID in the Asset General Information window, information will be transferred to the Asset Purchase window. You can change the information in the Asset Purchase window.
+    You can enter the currency ID in the Asset Purchase window or the Asset  General Information window. If you enter the currency ID in the Asset General Information window, information will be transferred to the Asset Purchase window. You can change the information in the Asset Purchase window.
 
 12. You can enter or select a physical location ID and enter an asset label.
 
@@ -990,7 +1012,7 @@ No accounting entry is automatically made if you change an account here. If you 
 1. Open the Asset Account window.
 (Financial \>\> Cards \>\> Fixed Assets \>\> Account)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage051.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage051.jpg)
 
 2. Enter or select an asset ID and suffix.
 
@@ -1029,7 +1051,7 @@ A book class record must exist for the book being created for the class assigned
 1. Open the Asset Book window.
 (Financial \>\> Cards \>\> Fixed Assets \>\> Book)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage053.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage053.jpg)
 
 2. Enter or select an asset ID and suffix.
 
@@ -1037,9 +1059,10 @@ A book class record must exist for the book being created for the class assigned
 
 4. Enter the date the asset was placed in service and a depreciation date, or accept the default dates. The default dates will be the acquisition date for the asset from the Asset General Information window.
 
-Don’t change the default depreciation date if you’re not entering depreciation balances for year-to-date or life-to-date depreciation. You can enter a depreciation amount for the year only when adding a transaction if the depreciated-to date is in the current fiscal year.
+    Don’t change the default depreciation date if you’re not entering depreciation balances for year-to-date or life-to-date depreciation. You can enter a depreciation amount for the year only when adding a transaction if the depreciated-to date is in the current fiscal year.
 
-*If you are entering year-to-date and life-to-date depreciation balances, you might need to enter a depreciated-to date to that is equal to or later than the place-in-service date. Calculations for depreciation begin on the day after the depreciated-to date.*
+    > [!NOTE]
+    > If you are entering year-to-date and life-to-date depreciation balances, you might need to enter a depreciated-to date to that is equal to or later than the place-in-service date. Calculations for depreciation begin on the day after the depreciated-to date.
 
 5. You can enter the cost basis amount for the asset. The default cost basis entry for each field is the acquisition cost from the Asset General Information window. The cost basis in the corporate book is the amount added to the applied value if the information for this asset was entered in Payables Management or Purchase Order Processing.
 
@@ -1052,7 +1075,7 @@ Don’t change the default depreciation date if you’re not entering depreciati
 
 7. You can change the following default entries: depreciation method, averaging convention, switchover method, original life, amortization code, amortization amount/percentage, TEFRA, initial allowance percentage, special depreciation allowance, and luxury automobile.
 
-Refer to *Depreciation methods and calculations* and *Averaging conventions* for more information.
+    Refer to *Depreciation methods and calculations* and *Averaging conventions* for more information.
 
 8. If the asset is to be depreciated using US luxury automobile limits and you selected a tax book for this asset, select Yes for the Luxury Auto field; otherwise, select No.
 
@@ -1123,7 +1146,7 @@ You can add investment tax credit information in the TEFRA, ITC Taken, ITC Allow
 
 3. Choose ITC/Cost to open the Asset Book ITC window.
 
-![A screenshot of a cell phone Description automatically generated](media/FAage055.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage055.jpg)
 
 4. You can change the original cost basis of the asset, if necessary.
 
@@ -1158,7 +1181,7 @@ Use the Asset Insurance window to record insurance information for an asset. You
 1. Open the Asset Insurance window.
 (Financial \>\> Cards \>\> Fixed Assets \>\> Insurance)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage057.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage057.jpg)
 
 2. Enter or select an asset ID and suffix.
 
@@ -1187,7 +1210,7 @@ Use the Asset Lease window to create a lease record for any assets that are leas
 1. Open the Asset Lease window.
 (Financial \>\> Cards \>\> Fixed Assets \>\> Lease)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage059.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage059.jpg)
 
 2. Enter or select an asset ID and suffix.
 
@@ -1210,7 +1233,7 @@ For more information, refer to *Setting up user-defined field values*.
 1. Open the Asset User Data window.
 (Financial \>\> Cards \>\> Fixed Assets \>\> User Data)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage061.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage061.jpg)
 
 2. Enter or select an asset ID and suffix.
 
@@ -1254,17 +1277,17 @@ You can create one or more asset records from a Payables Management transaction,
 
 The following table displays the information that’s transferred to Fixed Asset Management from Payables Management.
 
-| **From Payables Management field**                                                                                                                                            | **To Fixed Asset Management field**          |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| Vendor ID                                                                                                                                                                     | Vendor ID                                    |
-| Voucher Number                                                                                                                                                                | Control Number                               |
-| Document Date                                                                                                                                                                 | Acquisition Date                             |
-| Document Date                                                                                                                                                                 | Document Date                                |
-| Document Number                                                                                                                                                               | Document Number                              |
-| Transaction Source (PMTRX Prefix)                                                                                                                                             | Transaction Source                           |
-| Voucher Description                                                                                                                                                           | Description (Asset Purchase window)\*        |
-| Purchase Order Number                                                                                                                                                         | Purchase Order Number                        |
-| PURCH-type distribution amounts                                                                                                                                               | Acquisition Cost and Originating Acquisition |
+| **From Payables Management field**  | **To Fixed Asset Management field**          |
+|-------------------------------------|----------------------------------------------|
+| Vendor ID   | Vendor ID                                    |
+| Voucher Number  | Control Number                               |
+| Document Date  | Acquisition Date                             |
+| Document Date  | Document Date                                |
+| Document Number  | Document Number                              |
+| Transaction Source (PMTRX Prefix)    | Transaction Source                           |
+| Voucher Description | Description (Asset Purchase window)\*        |
+| Purchase Order Number  | Purchase Order Number                        |
+| PURCH-type distribution amounts  | Acquisition Cost and Originating Acquisition |
 | \*If there are multiple transactions, the primary transaction’s voucher description will be displayed in the Asset Description field in the Asset General Information window. |                                              |
 
 Cost
@@ -1323,7 +1346,7 @@ A default asset ID displays if you marked Auto Generate Next Asset ID and entere
 
 3. Choose Purchase to open the Fixed Assets Purchasing Transactions window. The Purchase button is available only if there are transactions in the Fixed Assets Purchasing Transactions window.
 
-![A screenshot of a cell phone Description automatically generated](media/FAage063.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage063.jpg)
 
 4. Mark the M box for each transaction to assign that transaction to the asset.
     Mark the P box for the primary transaction. Information from the primary transaction will be displayed in the Asset General Information window and the Asset Purchase window. Information from other selected transactions will be displayed in the Asset Purchase window only.
@@ -1332,9 +1355,9 @@ A default asset ID displays if you marked Auto Generate Next Asset ID and entere
 
 6. In the Asset General Information window, enter any additional information.
 
-You can enter an acquisition cost, currency ID, and originating acquisition cost in the Asset General Information window only if you haven’t selected any purchasing transactions from the Fixed Asset Purchasing Transactions window.
+    You can enter an acquisition cost, currency ID, and originating acquisition cost in the Asset General Information window only if you haven’t selected any purchasing transactions from the Fixed Asset Purchasing Transactions window.
 
-If you selected a purchasing transaction from the Fixed Asset Purchasing Transactions window, you can use the Asset Purchase window to enter or change an acquisition cost, transaction description, currency ID, document number, and other information related to the purchase of the asset. You can enter more than one transaction for each asset.
+    If you selected a purchasing transaction from the Fixed Asset Purchasing Transactions window, you can use the Asset Purchase window to enter or change an acquisition cost, transaction description, currency ID, document number, and other information related to the purchase of the asset. You can enter more than one transaction for each asset.
 
 7. Choose Save in the Asset General Information window.
 
@@ -1360,14 +1383,14 @@ If you’re using landed costs, the landed costs that have been assigned to purc
 
 The following table explains the effect that various options in the Fixed Assets Company Setup window, the FA PO Additional Information window, and the Receivings Item Detail Entry window have on the integration between Fixed Asset Management and Purchase Order Processing.
 
-| **Window**                                                    | **Option**                                 | **Effect marked option has**                                                                                                                                                                                                                                                                                                                                                                                                    |
-|---------------------------------------------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Fixed Assets Company Setup                                    | by Account                                 | The Purchase Order Processing transaction is transferred to the Fixed Assets Purchasing Transactions window when a receipt is posted. The transaction will be summarized by account for the entire receipt. Separate update transactions aren’t created for each receipt line.                                                                                                                                                 |
-|                                                               | by Receipt Line                            | The Purchase Order Processing transaction is transferred to the Fixed Assets Purchasing Transactions window only if you mark Capital Item in Purchase Order Processing when you enter the receipt transaction. If the Capital Item checkbox is marked on the purchase order, it will be marked on the receipt. The Capital Item checkbox will only appear if by Receipt Line is marked in the Fixed Assets Company Setup window |
-|                                                               | Include Matching Invoices                  | Subsequent matching transactions also create additional fixed asset records for each receipt line matched with an invoice amount that varies from the receipt amount.                                                                                                                                                                                                                                                          |
-|                                                               | Delete Purchasing Transactions immediately | Information in the Fixed Assets Purchasing Transactions window will be deleted when the total amount of the purchase transaction is applied by saving the total amount in the Asset Purchase window.                                                                                                                                                                                                                           |
-| FA PO Additional Information                                  | Create Multiple Fixed Assets               | Creates a separate Fixed Asset Management transaction for each quantity. The unit cost is the amount of each transaction.                                                                                                                                                                                                                                                                                                      |
-| Receivings Item Detail Entry and Purchasing Item Detail Entry | Capital Item                               | Displays the Capital Item expansion button and transfers the Purchase Order Processing transaction to the Fixed Assets Purchasing Transaction window.                                                                                                                                                                                                                                                                          |
+| **Window**    | **Option**   | **Effect marked option has** |
+|---------------|--------------|------------------------------|
+| Fixed Assets Company Setup   | by Account  | The Purchase Order Processing transaction is transferred to the Fixed Assets Purchasing Transactions window when a receipt is posted. The transaction will be summarized by account for the entire receipt. Separate update transactions aren’t created for each receipt line.|
+|                              | by Receipt Line    | The Purchase Order Processing transaction is transferred to the Fixed Assets Purchasing Transactions window only if you mark Capital Item in Purchase Order Processing when you enter the receipt transaction. If the Capital Item checkbox is marked on the purchase order, it will be marked on the receipt. The Capital Item checkbox will only appear if by Receipt Line is marked in the Fixed Assets Company Setup window |
+|                              | Include Matching Invoices   | Subsequent matching transactions also create additional fixed asset records for each receipt line matched with an invoice amount that varies from the receipt amount.  |
+|                              | Delete Purchasing Transactions immediately | Information in the Fixed Assets Purchasing Transactions window will be deleted when the total amount of the purchase transaction is applied by saving the total amount in the Asset Purchase window.  |
+| FA PO Additional Information                                  | Create Multiple Fixed Assets               | Creates a separate Fixed Asset Management transaction for each quantity. The unit cost is the amount of each transaction.  |
+| Receivings Item Detail Entry and Purchasing Item Detail Entry | Capital Item     | Displays the Capital Item expansion button and transfers the Purchase Order Processing transaction to the Fixed Assets Purchasing Transaction window.  |
 
 For more information about setting up the integration between Fixed Asset Management and Purchase Order Processing, refer to the following information:
 
@@ -1385,16 +1408,16 @@ If Post POP through to FA is marked in the Fixed Assets Company Setup window, yo
 
 The following table displays the information that’s transferred to Fixed Asset Management from Purchase Order Processing.
 
-| **From Purchase Order Processing**                                                                                                                                            | **To Fixed Asset Management**                |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| Vendor ID                                                                                                                                                                     | Vendor ID                                    |
-| Receipt Number                                                                                                                                                                | Control Number                               |
-| Receipt Date                                                                                                                                                                  | Acquisition Date                             |
-| Receipt Date                                                                                                                                                                  | Document Date                                |
-| Vendor Document Number                                                                                                                                                        | Document Number                              |
-| Transaction Source (RECVG Prefix)                                                                                                                                             | Transaction Source                           |
-| Distribution Reference or Receipt Reference                                                                                                                                   | Description (Asset Purchase window)\*        |
-| PURCH-Type Distribution Amounts                                                                                                                                               | Acquisition Cost and Originating Acquisition |
+| **From Purchase Order Processing**  | **To Fixed Asset Management** |
+|-------------------------------------|-------------------------------|
+| Vendor ID   | Vendor ID                                    |
+| Receipt Number   | Control Number                               |
+| Receipt Date | Acquisition Date                             |
+| Receipt Date  | Document Date                                |
+| Vendor Document Number | Document Number                              |
+| Transaction Source (RECVG Prefix)  | Transaction Source                           |
+| Distribution Reference or Receipt Reference  | Description (Asset Purchase window)\*        |
+| PURCH-Type Distribution Amounts  | Acquisition Cost and Originating Acquisition |
 | \*If there are multiple transactions, the primary transaction’s voucher description will be displayed in the Asset Description field in the Asset General Information window. |                                              |
 
 Cost
@@ -1421,7 +1444,7 @@ Use the Asset General Information window to create an asset record. Use the Fixe
 1. Open the Asset General Information window.
 (Financial \>\> Cards \>\> Fixed Assets \>\> General)
 
-A default asset ID displays if you marked Auto Generate Next Asset ID and entered a next asset ID in the Fixed Assets Company Setup window.
+    A default asset ID displays if you marked Auto Generate Next Asset ID and entered a next asset ID in the Fixed Assets Company Setup window.
 
 2. Enter an asset ID and suffix.
 
@@ -1433,9 +1456,9 @@ A default asset ID displays if you marked Auto Generate Next Asset ID and entere
 
 6. In the Asset General Information window, enter any additional information.
 
-You can enter an acquisition cost, currency ID, and originating acquisition cost in the Asset General Information window only if you haven’t selected any purchasing transactions from the Fixed Asset Purchasing Transactions window.
+    You can enter an acquisition cost, currency ID, and originating acquisition cost in the Asset General Information window only if you haven’t selected any purchasing transactions from the Fixed Asset Purchasing Transactions window.
 
-If you selected a purchasing transaction from the Fixed Asset Purchasing Transactions window, you can use the Asset Purchase window to enter or change an acquisition cost, transaction description, currency ID, document number, and other information related to the purchase of the asset. You can enter more than one transaction for each asset.
+    If you selected a purchasing transaction from the Fixed Asset Purchasing Transactions window, you can use the Asset Purchase window to enter or change an acquisition cost, transaction description, currency ID, document number, and other information related to the purchase of the asset. You can enter more than one transaction for each asset.
 
 7. Choose Save in the Asset General Information window.
 
@@ -1456,7 +1479,7 @@ You can enter additional information for that an asset in the FA PO Additional I
 
 4. Mark the Capital Item option and choose the Capital Item expansion button to open the FA PO Additional Information window.
 
-![A screenshot of a cell phone Description automatically generated](media/FAage065.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage065.jpg)
 
 5. Enter any information to be displayed in the Asset General Information window.
 
@@ -1470,23 +1493,20 @@ If by Receipt line is marked in the Fixed Assets Company Setup window, you can c
 
 The following table displays the information that’s transferred to Fixed Asset Management from Purchase Order Processing.
 
-| **From Purchase Order Processing**                                                                                                                                            | **To Fixed Asset Management**         |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| Vendor ID                                                                                                                                                                     | Vendor ID                             |
-| POP Receipt Number                                                                                                                                                            | Control Number                        |
-| Receipt Date                                                                                                                                                                  | Document Date                         |
-| Receipt Date                                                                                                                                                                  | Acquisition Date                      |
-| Vendor Document Number                                                                                                                                                        | Document Number                       |
-| Transaction Source (RECVG Prefix)                                                                                                                                             | Transaction Source                    |
-| Purchase Order Type                                                                                                                                                           | Control Type                          |
-| Item Description or Vendor Item Description                                                                                                                                   | Description (Asset Purchase window)\* |
-| Purchase Order Number                                                                                                                                                         | Purchase Order Number                 |
-| Quantity Shipped                                                                                                                                                              | Quantity                              |
-| \*If there are multiple transactions, the primary transaction’s voucher description will be displayed in the Asset Description field in the Asset General Information window. |                                       |
-| **From Purchase Order Processing**                                                                                                                                            | **To Fixed Asset Management**         |
-| Extended Cost (Create Multiple Assets = No)                                                                                                                                   | Acquisition Cost                      |
-| Unit Cost (Create Multiple Assets = Yes)                                                                                                                                      | Acquisition Cost                      |
-| \*If there are multiple transactions, the primary transaction’s voucher description will be displayed in the Asset Description field in the Asset General Information window. |                                       |
+| **From Purchase Order Processing**     | **To Fixed Asset Management**         |
+|----------------------------------------|---------------------------------------|
+| Vendor ID  | Vendor ID                             |
+| POP Receipt Number  | Control Number                        |
+| Receipt Date  | Document Date                         |
+| Receipt Date  | Acquisition Date                      |
+| Vendor Document Number | Document Number                       |
+| Transaction Source (RECVG Prefix)  | Transaction Source                    |
+| Purchase Order Type  | Control Type                          |
+| Item Description or Vendor Item Description | Description (Asset Purchase window). Only if there are multiple transactions, the primary transaction’s voucher description will be displayed in the Asset Description field in the Asset General Information window.|
+| Purchase Order Number  | Purchase Order Number                 |
+| Quantity Shipped   | Quantity                              |                              |
+| Extended Cost (Create Multiple Assets = No)| Acquisition Cost                      |
+| Unit Cost (Create Multiple Assets = Yes) | Acquisition Cost                      |
 
 If the purchasing transaction uses Multicurrency Management, the following fields are transferred.
 
@@ -1531,7 +1551,7 @@ Use the Asset General Information window to create an asset record. Use the FA P
 
 2. Enter or select an asset ID and suffix. A default asset ID displays if you marked Auto Generate Next Asset ID and entered a next asset ID in the Fixed Assets Company Setup window.
 
-If you entered the asset ID and suffix in the FA PO Additional Information window, you need to enter it now only if the Create Multiple Fixed Assets option in the FA PO Additional Information window is marked and you are retrieving the asset information to create an additional asset.
+    If you entered the asset ID and suffix in the FA PO Additional Information window, you need to enter it now only if the Create Multiple Fixed Assets option in the FA PO Additional Information window is marked and you are retrieving the asset information to create an additional asset.
 
 3. Choose Purchase. The Purchase button is available only if there are transactions in the Fixed Assets Purchasing Transactions window.
 
@@ -1541,9 +1561,9 @@ If you entered the asset ID and suffix in the FA PO Additional Information windo
 
 6. In the Asset General Information window, enter any additional information.
 
-You can enter an acquisition cost, currency ID, and originating acquisition cost in the Asset General Information window only if you haven’t selected any purchasing transactions from the Fixed Asset Purchasing Transactions window.
+    You can enter an acquisition cost, currency ID, and originating acquisition cost in the Asset General Information window only if you haven’t selected any purchasing transactions from the Fixed Asset Purchasing Transactions window.
 
-If you selected a purchasing transaction from the Fixed Asset Purchasing Transactions window, you can use the Asset Purchase window to enter or change an acquisition cost, transaction description, currency ID, document number, and other information related to the purchase of the asset. You can enter more than one transaction for each asset.
+    If you selected a purchasing transaction from the Fixed Asset Purchasing Transactions window, you can use the Asset Purchase window to enter or change an acquisition cost, transaction description, currency ID, document number, and other information related to the purchase of the asset. You can enter more than one transaction for each asset.
 
 7. Choose Save in the Asset General Information window.
 
@@ -1678,7 +1698,7 @@ We recommend that you import several small files rather than one large file. You
 1. Open the Asset Import/Export window.
 (Financial \>\> Utilities \>\> Fixed Assets \>\> Asset Import/Export)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage067.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage067.jpg)
 
 2. Mark Import and select All Asset Info.
 
@@ -1733,54 +1753,53 @@ The data that you import will be displayed in the following Fixed Asset Manageme
 
 - Asset User Data window
 
-**Asset General Information window fields**
+### Asset General Information window fields
 
 The following table displays the fields included in the Asset General Information window, their field types, length, and additional default entry information.
 
 If you don’t accept the default value for a field, you must supply a specific value for that field. For more information, refer to *Field values*.
 
-| **Field name**                                           | **Field type** | **Length** | **Default values**                            | **Required field** |
-|----------------------------------------------------------|----------------|------------|-----------------------------------------------|--------------------|
-| Window Identifier = GENERAL                              |                |            |                                               | Yes                |
-| Asset ID                                                 | String         | 15         |                                               | Yes                |
-| Asset ID Suffix                                          | Numeric        | 3          | 1                                             | Yes                |
-| Short Name                                               | String         | 15         |                                               | No                 |
-| Asset Description                                        | String         | 40         |                                               | Yes                |
-| Extended Asset Description                               | String         | 40         |                                               | No                 |
-| Master Asset ID                                          | String         | 19         |                                               | No                 |
-| Account Group ID                                         | String         | 15         | From Asset Class                              | No                 |
-| Structure ID                                             | String         | 30         |                                               | No                 |
-| Asset Class ID                                           | String         | 15         |                                               | Yes                |
-| Location ID                                              | String         | 15         | From Phy Loc ID                               | No                 |
-| **Field name**                                           | **Field type** | **Length** | **Default values**                            | **Required field** |
-| Acquisition Date                                         | Date           | 8          | YY = System                                   | Yes                |
-| Originating Acquisition Cost                             | Numeric        | 12.5       |                                               | No                 |
-| Asset Type                                               | String         | 4          | Refer to *Field values* for more information. | Yes                |
-| Property Type                                            | String         | 8          | Refer to *Field values* for more information. | Yes                |
-| Asset Quantity                                           | Numeric        | 6          | 1                                             | Yes                |
-| Current Maintenance Amount                               | Numeric        | 12.5       |                                               | No                 |
-| YTD Maintenance Amount                                   | Numeric        | 12.5       |                                               | No                 |
-| LTD Maintenance Amount                                   | Numeric        | 12.5       |                                               | No                 |
-| Last Maintenance Date                                    | Date           | 8          | YY = System                                   | No                 |
-| Assessed Value                                           | Numeric        | 12.5       |                                               | No                 |
-| Vendor ID                                                | String         | 15         |                                               | No                 |
-| Document Number                                          | String         | 20         |                                               | No                 |
-| Document Date                                            | Date           | 8          | YY = System                                   | No                 |
-| Transaction Source                                       | String         | 13         |                                               | No                 |
-| Control Number                                           | String         | 20         |                                               | No                 |
-| Purchase Order Number                                    | String         | 20         |                                               | No                 |
-| Document Description                                     | String         | 40         |                                               | No                 |
-| Manufacturer Name                                        | String         | 25         |                                               | No                 |
-| Serial Number                                            | String         | 20         |                                               | No                 |
-| Model Number                                             | String         | 20         |                                               | No                 |
-| Warranty Date                                            | Date           | 8          | YY = System                                   | No                 |
-| Custodian (optionally requires setup)                    | String         | 25         | 15 is max length if validation is being used. | No                 |
-| Physical Location ID                                     | String         | 15         |                                               | No                 |
-| Asset Label                                              | String         | 19         |                                               | No                 |
-| Verified Date                                            | Date           | 8          | YY = System                                   | No                 |
-| PIN                                                      | String         | 15         |                                               | No                 |
-| Currency ID (Req’d only if registered for Multicurrency) | String         | 15         | Functional                                    | Yes                |
-| Date Added                                               | Date           | 8          | System Date                                   | Yes                |
+| **Field name**  | **Field type**              | **Length** | **Default values**  | **Required field** |
+|-----------------|-----------------------------|------------|---------------------|--------------------|
+| Window Identifier = GENERAL  |                |            |                     | Yes                |
+| Asset ID                     | String         | 15         |                     | Yes                |
+| Asset ID Suffix              | Numeric        | 3          | 1                   | Yes                |
+| Short Name                   | String         | 15         |                     | No                 |
+| Asset Description            | String         | 40         |                     | Yes                |
+| Extended Asset Description   | String         | 40         |                     | No                 |
+| Master Asset ID              | String         | 19         |                     | No                 |
+| Account Group ID             | String         | 15         | From Asset Class    | No                 |
+| Structure ID                 | String         | 30         |                     | No                 |
+| Asset Class ID               | String         | 15         |                     | Yes                |
+| Location ID                  | String         | 15         | From Phy Loc ID     | No                 |
+| Acquisition Date             | Date           | 8          | YY = System         | Yes                |
+| Originating Acquisition Cost | Numeric        | 12.5       |                     | No                 |
+| Asset Type                   | String         | 4          | Refer to *Field values* for more information. | Yes                |
+| Property Type                | String         | 8          | Refer to *Field values* for more information. | Yes                |
+| Asset Quantity               | Numeric        | 6          | 1    | Yes                |
+| Current Maintenance Amount   | Numeric        | 12.5       |                      | No                 |
+| YTD Maintenance Amount       | Numeric        | 12.5       |                  | No                 |
+| LTD Maintenance Amount       | Numeric        | 12.5       |               | No                 |
+| Last Maintenance Date         | Date           | 8          | YY = System   | No                 |
+| Assessed Value             | Numeric        | 12.5       |                     | No         |
+| Vendor ID       | String         | 15         |  | No    |
+| Document Number  | String         | 20         |        | No    |
+| Document Date   | Date           | 8          | YY = System    | No    |
+| Transaction Source  | String         | 13         |       | No                 |
+| Control Number     | String         | 20         |          | No                 |
+| Purchase Order Number   | String         | 20         |                | No                 |
+| Document Description  | String         | 40         |          | No                 |
+| Manufacturer Name | String         | 25         |      | No                 |
+| Serial Number   | String         | 20         |           | No                 |
+| Model Number     | String         | 20         |             | No                 |
+| Warranty Date   | Date           | 8          | YY = System       | No                 |
+| Custodian (optionally requires setup)  | String         | 25         | 15 is max length if validation is being used. | No                 |
+| Physical Location ID   | String         | 15         |         | No                 |
+| Asset Label       | String         | 19         |              | No                 |
+| Verified Date    | Date           | 8          | YY = System   | No                 |
+| PIN    | String         | 15         |           | No                 |
+| Currency ID (Req’d only if registered for Multicurrency) | String         | 15         | Functional  | Yes                |
+| Date Added   | Date           | 8          | System Date     | Yes                |
 
 (MMDDYY or
 
@@ -1816,7 +1835,7 @@ Currency
 
 MMDDCCYY)
 
-**Asset Book window fields**
+### Asset Book window fields
 
 The following table displays the fields included in the Asset Book window, their field types, length, and additional default entry information. If you don’t accept the default value for a field, you must supply a specific value for that field. For more information, refer to *Field values*.
 
@@ -1876,7 +1895,7 @@ Allowance Percentage
 
 Indicator
 
-**Asset Lease window fields**
+### Asset Lease window fields
 
 The following table displays the fields included in the Asset Lease window, their field types, length, and additional default entry information. If you don’t accept the default value for a field, you must supply a specific value for that field. For more information, refer to *Field values*.
 
@@ -1892,7 +1911,7 @@ The following table displays the fields included in the Asset Lease window, thei
 | Lease Interest Rate       | Numeric                   | 3.2        |                                          | No           |
 | Lease End Date            | Date (MMDDYY or MMDDCCYY) | 8          | YY = System Year                         | No           |
 
-**Asset Insurance window fields**
+### Asset Insurance window fields
 
 The following table displays the fields included in the Asset Insurance window, their field types, length, and additional default entry information. If you don’t accept the default value for a field, you must supply a specific value for that field. For more information, refer to *Field values*.
 
@@ -1910,7 +1929,7 @@ The following table displays the fields included in the Asset Insurance window, 
 | Exclusion Amount              | Numeric        | 12.5       |                  | No           |
 | Exclusion Type                | String         | 15         |                  | No           |
 
-**Asset User Data window fields**
+### Asset User Data window fields
 
 The following table displays the fields included in the Asset User Data window, their field types, length, and additional default entry information. If you don’t accept the default value for a field, you must supply a specific value for that field. For more information, refer to *Field values*.
 
@@ -2080,19 +2099,19 @@ Asset groups are saved on a user-by-user basis. For example, if user A creates a
 1. Open the Select Assets window.
 (Financial \>\>Transactions \>\> Fixed Assets \>\> Select Assets)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage070.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage070.jpg)
 
 2. To create and build a new group, choose New Group, enter a name to describe the asset group and choose OK.
 
-If you’re building an existing group, skip to step 3.
+    If you’re building an existing group, skip to step 3.
 
 3. Select the group to build from the Current Group list and choose Search. The Asset Group Search window will open.
 
-![A screenshot of a cell phone Description automatically generated](media/FAage072.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage072.jpg)
 
 4. Select a field name and value, and then enter or select a specific field.
 
-For example, to select assets that were placed in service before January 1, 2003, you would select Place in Service Date in the Field Selection field, Less Than in the Value field, and then enter 01/01/03.
+    For example, to select assets that were placed in service before January 1, 2003, you would select Place in Service Date in the Field Selection field, Less Than in the Value field, and then enter 01/01/03.
 
 5. Choose Search. All assets matching the selected values will be added to the group.
 
@@ -2134,7 +2153,7 @@ Use the Select Assets window to import data to create an asset group. For exampl
 
 3. Choose Import Group to open the Import Group window.
 
-![A screenshot of a cell phone Description automatically generated](media/FAage074.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage074.jpg)
 
 4. Enter or locate the name of the file to import.
 
@@ -2205,23 +2224,24 @@ Use the Asset General Information window to make changes to information in asset
 
 3. If the information to be changed is displayed in this window, enter the new field information and choose Save.
 
-To change information in other windows, refer to the following table for options:
+    To change information in other windows, refer to the following table for options:
 
-| **Go To button option** | **Window that opens**  | **Additional information**                                             |
-|-------------------------|------------------------|------------------------------------------------------------------------|
-| Account                 | Asset Account window   | Refer to *Modifying an asset account record* for more information.    |
-| Book                    | Asset Book window      | Refer to *Creating an asset book record* for more information.        |
-| Insurance               | Asset Insurance window | Refer to *Creating an asset insurance record* for more information.   |
-| Lease                   | Asset Lease window     | Refer to *Creating an asset lease record* for more information.       |
-| User Data               | Asset User Data window | Refer to *Creating an asset user-defined record* for more information. |
+    | **Go To button option** | **Window that opens**  | **Additional information** |
+    |-------------------------|------------------------|----------------------------|
+    | Account                 | Asset Account window   | Refer to *Modifying an asset account record* for more information.    |
+    | Book                    | Asset Book window      | Refer to *Creating an asset book record* for more information.        |
+    | Insurance               | Asset Insurance window | Refer to *Creating an asset insurance record* for more information.   |
+    | Lease                   | Asset Lease window     | Refer to *Creating an asset lease record* for more information.       |
+    | User Data               | Asset User Data window | Refer to *Creating an asset user-defined record* for more information. |
 
 4. If you change the Class ID in the Asset General Information window, the Reset Asset Class ID window will be displayed when you choose Save.
 
-![A screenshot of a cell phone Description automatically generated](media/FAage076.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage076.jpg)
 
 5. To update depreciation information in the books that the asset is associated with, mark the Propagate option, select what type of update to perform, and choose OK.
 
-*When you save changes to the Class ID in the Asset General Information window, the accounts associated with the new Class ID are also applied to the asset record. The changes are reflected in the Asset General Information and the Asset Account windows for the affected asset, even if you make no changes in the Reset Asset Class ID window.*
+> [!NOTE]
+> When you save changes to the Class ID in the Asset General Information window, the accounts associated with the new Class ID are also applied to the asset record. The changes are reflected in the Asset General Information and the Asset Account windows for the affected asset, even if you make no changes in the Reset Asset Class ID window.
 
 ### Recalculating depreciation
 
@@ -2290,7 +2310,7 @@ If you changed the Asset Class ID using the General tab, you also must make a ma
 1. Open the Fixed Assets Mass Change window.
 (Financial \>\> Transactions \>\> Fixed Assets \>\> Mass Change)
 
-![A screenshot of a cell phone Description automatically generated](media/FAage078.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/FAage078.jpg)
 
 2. Select an asset group ID and choose a tab—General, Account, Book, User.
 
@@ -2367,7 +2387,7 @@ Use the Transfer Maintenance window to transfer an asset to a new General Ledger
 1. Open the Transfer Maintenance window.
 (Financial \>\> Transactions \>\> Fixed Assets \>\> Transfer)
 
-![A screenshot of a social media post Description automatically generated](media/FAage080.jpg)
+    ![A screenshot of a social media post Description automatically generated](media/FAage080.jpg)
 
 2. Enter or select an asset ID. Only active assets—assets that are not retired—can be transferred.
 
@@ -2425,7 +2445,7 @@ Use the Fixed Assets Mass Transfer window to transfer a group of assets to a dif
 1. Open the Fixed Assets Mass Transfer window.
 (Financial \>\> Transactions \>\> Fixed Assets \>\> Mass Transfer)
 
-![A screenshot of a social media post Description automatically generated](media/FAage082.jpg)
+    ![A screenshot of a social media post Description automatically generated](media/FAage082.jpg)
 
 2. Select an asset group ID.
 
@@ -2443,8 +2463,8 @@ Use the Fixed Assets Mass Transfer window to transfer a group of assets to a dif
 
 During the intercompany transfer process, asset information is created in the destination company’s Asset General Information window. Asset information from the originating company’s Asset Insurance window, Asset Lease window, and Asset User Data window is not transferred to the destination company.
 
-| **Asset General Information window**                                    |                                                                                                 |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| **Asset General Information window**   |            |
+|---------------------------------------|-------------|
 | **Field**                                                               | **Value**                                                                                       |
 | Asset ID                                                                | **The Mark to create a new asset ID for destination company option is marked.**                 |
 | Description                                                             | The description entered in the originating company's Asset General Information window.         |
@@ -4684,25 +4704,26 @@ Report
 
 5. After viewing the report, select a format and print the report.
 
-**##Additional Feature Functionality added to Fixed Asset**
+## Additional Feature Functionality added to Fixed Asset
 
-To review detailed information about each feature, click the relevant link below.
+To review detailed information about each feature, choose the link below.
 
 [Add Class ID to Fixed Assets Transfer Windows]
 (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-new-feature-add-class-id-to-fixed-assets-transfer-windows)
-With this release of Microsoft Dynamics GP, users can now transfer the Class ID for one asset via the Asset Transfer window!!!! Additionally, users can now transfer the Class ID for a group of assets via the Fixed Assets Mass Transfer window. 
 
-The Class ID change will be reflected in the Asset General window. 
+With this release of Microsoft Dynamics GP, users can now transfer the Class ID for one asset via the Asset Transfer window!!!! Additionally, users can now transfer the Class ID for a group of assets via the Fixed Assets Mass Transfer window.  
+
+The Class ID change will be reflected in the Asset General window.  
 
 In prior versions of Microsoft Dynamics GP, users did not have the ability to transfer the Asset Class ID via the Asset Transfer window. Instead, the Asset Class ID had to be changed for each asset in the Asset General window.
 
 As always, the Transfer Date must fall in the 'current' Fixed Assets year.
 
-If the transfer date is earlier than the depreciated to date for the asset at the time of the transfer, depreciation will be backed out to the transfer date. 
+If the transfer date is earlier than the depreciated to date for the asset at the time of the transfer, depreciation will be backed out to the transfer date.  
 
 If the transfer date is later than the depreciated-to date for the asset at the time of the transfer, depreciation will be taken through the transfer date. New depreciation will begin for the asset on the day after the transfer date.
 
-Newly assigned accounts will be used for depreciation moving forward if applicable. 
+Newly assigned accounts will be used for depreciation moving forward if applicable.  
 
 The Class ID field has been added to the Transfer Maintenance window to accommodate the "Add Class ID to Fixed Assets Transfer window" feature. To open the Transfer Maintenance window: On the Microsoft Dynamics GP menu, highlight Transactions, point to Fixed Assets, and click on Transfer.
 
