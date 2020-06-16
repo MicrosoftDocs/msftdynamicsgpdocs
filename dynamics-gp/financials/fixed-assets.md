@@ -4704,30 +4704,31 @@ Report
 
 5. After viewing the report, select a format and print the report.
 
-## Additional Feature Functionality added to Fixed Asset
+## Additional Functionality added to Fixed Asset
 
-To review detailed information about each feature, choose the link below.
+To review detailed information about each feature, choose the relevant link below.
 
-[Add Class ID to Fixed Assets Transfer Windows]
-(https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-new-feature-add-class-id-to-fixed-assets-transfer-windows)
+- [Add Class ID to Fixed Assets Transfer Windows](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-new-feature-add-class-id-to-fixed-assets-transfer-windows)
 
-With this release of Microsoft Dynamics GP, users can now transfer the Class ID for one asset via the Asset Transfer window!!!! Additionally, users can now transfer the Class ID for a group of assets via the Fixed Assets Mass Transfer window.  
+    With this release of Dynamics GP in October 2019, users can now transfer the Class ID for one asset via the **Asset Transfer** window. Additionally, users can now transfer the Class ID for a group of assets via the **Fixed Assets Mass Transfer** window.  
 
-The Class ID change will be reflected in the Asset General window.  
+    The Class ID change will be reflected in the **Asset General** window.  
 
-In prior versions of Microsoft Dynamics GP, users did not have the ability to transfer the Asset Class ID via the Asset Transfer window. Instead, the Asset Class ID had to be changed for each asset in the Asset General window.
+    In previous versions of Dynamics GP, users did not have the ability to transfer the Asset Class ID via the **Asset Transfer** window. Instead, the Asset Class ID had to be changed for each asset in the **Asset General** window.
 
-As always, the Transfer Date must fall in the 'current' Fixed Assets year.
+    As always, the Transfer Date must fall in the 'current' Fixed Assets year.
 
-If the transfer date is earlier than the depreciated to date for the asset at the time of the transfer, depreciation will be backed out to the transfer date.  
+    If the transfer date is earlier than the depreciated to date for the asset at the time of the transfer, depreciation will be backed out to the transfer date.  
 
-If the transfer date is later than the depreciated-to date for the asset at the time of the transfer, depreciation will be taken through the transfer date. New depreciation will begin for the asset on the day after the transfer date.
+    If the transfer date is later than the depreciated-to date for the asset at the time of the transfer, depreciation will be taken through the transfer date. New depreciation will begin for the asset on the day after the transfer date.
 
-Newly assigned accounts will be used for depreciation moving forward if applicable.  
+    Newly assigned accounts will be used for depreciation moving forward if applicable.  
 
-The Class ID field has been added to the Transfer Maintenance window to accommodate the "Add Class ID to Fixed Assets Transfer window" feature. To open the Transfer Maintenance window: On the Microsoft Dynamics GP menu, highlight Transactions, point to Fixed Assets, and click on Transfer.
+    The Class ID field has been added to the **Transfer Maintenance** window to accommodate the *Add Class ID to Fixed Assets Transfer window* feature. To open the **Transfer Maintenance** window:
 
-**Glossary**
+    1. On the Microsoft Dynamics GP menu, highlight **Transactions**, point to **Fixed Assets**, and then choose **Transfer**.
+
+## Glossary
 
 #### Account
 The type of record—asset, liability, revenue, expense, or owner’s equity—traditionally used for recording individual transactions in an accounting system. Also, the identifying alphanumeric characters that have been assigned to the record.
