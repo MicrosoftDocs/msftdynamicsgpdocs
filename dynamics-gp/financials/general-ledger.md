@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: tnistler
-ms.date: 06/12/2020
+ms.date: 06/16/2020
 
 ---
 # Dynamics GP General Ledger
@@ -257,8 +257,8 @@ This information is divided into the following sections:
 Default charts of accounts (COA)
 If you plan to load a default chart of accounts when you create a new company, we recommend that you review the default charts of accounts that are available in Microsoft Dynamics GP. You can use the following Microsoft Excel files that describe the default charts of accounts that are available for various types of organizations.
 
-Dynamics GP Default Chart of Accounts 
-<https://mbs2.microsoft.com/fileexchange/?fileID=166f60d5-127d-4d39-8b0f-aafed98ed617 >
+**[Dynamics GP Default Chart of Accounts]**
+(https://mbs2.microsoft.com/fileexchange/?fileID=166f60d5-127d-4d39-8b0f-aafed98ed617)
 
 | **Organization type** | **COA for Organization**     |    **COA for Partnerships**        |  **COA for Sole Proprietorships** |
 |-----------------------|------------------------------|------------------------------------|-----------------------------------|
@@ -4637,432 +4637,341 @@ Use the Deferral Check Links window to verify that your transaction distribution
 
 3. Choose OK.
 
+## Additional Functionality added to General Ledger
+
+To review detailed information about each feature, choose the relevant link below.
+
+- [Web Client Excel Copy and Paste General Ledger Journal](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---web-client-excel-copy-and-paste-general-ledger-journal)
+
+    This was one of the most requested features from the customer community, and because of the complexity of the Web Client, it took some time before it became available, but it's finally here.
+
+    With the new release (18.2), you can now import journal entry lines from an excel file using the Paste button on the menu bar of the General Ledger Transaction Entry window. Just like the desktop client, the format of the data in your excel file is the same with the exception that you must not have a header line on your file. In the example in the blog post that is linked to above, the first row contains headers that describe each column.  
+
+- [Display user who posted on Journal Entry Inquiry](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---display-user-who-posted-on-journal-entry-inquiry-436673736)
+
+    Have you ever wondered who posted an out of the ordinary Journal Entry transaction, and then you had to ask your IT to look at the SQL tables to find out who it was? Well, not any more in the General Ledger with 18.2.
+
+    The Journal Entry Inquiry and Transaction Entry Zoom will both now display the user who posted the transaction in the General Ledger. In previous versions SQL, SmartList, or a custom report would have been required to display this information.  
+
+    The new User Who Posted field will display the data from the USWHPSTD column in the GL20000 for current year transactions, or GL30000 for historic year transactions.  
+
+    Go to **Inquiry**, point to **Financial**, and then choose **Journal Entry Inquiry**.
+
+- [Transaction Level Post Through General Ledger](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-r2-transaction-level-post-through-gl)
+
+    With the release of Dynamics GP 2018 R2, users can now 'Post Through General Ledger' at the transaction level in several windows.  In previous versions of Dynamics GP, users have the option to 'Post Through GL' for transactions that are saved to batches only (except for Bank Reconciliation).  In previous versions, any transaction posted from a sub-module that was not saved to a batch would automatically create a batch 'waiting to be posted' in General Ledger.
+
+- [General Ledger Account Workflow Approval](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-general-ledger-account-approval-workflow)
+
+    In Dynamics GP 2018, we have a new workflow, General Ledger Account Approval which provides an approval process for adding or editing posting accounts.  If an account is pending approval or rejected then it cannot be posted against.
+
+    To access the **Workflow Maintenance**, from the **Administration** navigation pane, under **Setup**, choose **Company**, expand **Workflow**, choose **Workflow Maintenance**, and then select **Financial** from the drop down.
+
 ## Glossary
 
 #### Account categories
-
 General Ledger provides account categories that are used for grouping accounts on financial statements. Account categories also can be used as a sorting method for viewing the chart of accounts. Examples of account categories include Cash, Short Term Investments, and Notes Receivable.
 
 #### Account history
-
 A record of summarized account balances for historical years.
 
 #### Account segment
-
 A portion of the account format that can be used to represent a specific aspect of a business. For example, accounts can be divided into segments that represent business locations, divisions, or profit centers.
 
 #### Account segment number
-
 A number that represents a particular area of a business or an account category. Using account 01-200-1100, for example, account segment number 01 might represent a particular site, 200 might represent a department located at that site, and 1100 might represent the Cash account for that site and that department. Descriptions can be entered for each account segment number and appear on General Ledger reports.
 
 #### Accrual basis accounting
-
 The reporting of all accounting activity in the period in which it occurs, regardless of whether cash has been paid or received.
 
 #### Accrued expense 
-
 An expense that increases from day to day, but is recorded only when cash is paid. Salary Expense is an example of an accrued expense, because the amount a company owes increases daily but cash payments commonly are made on a biweekly or monthly basis. *See also Accrued liability*.
 
 #### Accrued liability
-
 An accrued expense that remains unpaid at the end of an accounting period. *See also Accrued expense*.
 
 #### Accrued revenue
-
 Revenue received during an accounting period that hasn't been recorded at the end of an accounting period. In such cases, the revenue should be recorded by debiting an asset account and crediting a revenue account.
 
 #### Accumulated depreciation account
-
 An asset account used to record an asset's total depreciation to date.
 
 #### Adjusting entries
-
 End-of-period journal entries that assign revenues and expenses to the period in which they were earned and incurred. Adjusting entries also can be used to correct errors in recording transactions.## Alert message
 
 A message that appears when inappropriate, inadequate, or unclear data or instructions are issued, when data is not accessible, or when a confirmation is sought. Additional information about some alert messages and their causes can be viewed by choosing the Help button in the alert message dialog box.
 
 #### Allocation account
-
 An account that is used to distribute percentages of a single transaction to several other accounts. For example, an allocation account can be used to distribute rent expense to each of the sites affected by the expense.
 
 #### Audit trail 
-
 A series of permanent records used to track a transaction to the point where it was originally entered in the accounting system. The audit trail can be used to verify the accuracy of financial statements by outside accountants or auditors.
 
 #### Audit trail code
-
 A series of alphanumeric characters providing a precise record of each transaction and where it has been posted within Microsoft Dynamics GP.
 
 #### Background processing
-
 A processing system that allows users to continue working while transactions are posting or reports are printing.
 
 #### Batch
-
 A group of transactions identified by a unique name or number. Batches are used in computerized accounting to conveniently group transactions, both for identification purposes and to speed up the posting process.
 
 #### Batch controls
-
 Values for both the number of transactions in a batch and the total currency amount of the batch. As transactions are entered, the actual totals are displayed. These totals can be verified periodically as transactions are entered to ensure the required number and amount of transactions match the actual number and amount that was entered.
 
 #### Batch frequency
-
 A selection in the Batch Entry window that determines how often a recurring batch will be posted, such as weekly, monthly, or quarterly. *See also Recurring batch*.
 
 #### Batch posting
-
 A posting method that allows transactions to be saved in batches and post the batch whenever convenient. There are three types of batch-level posting: batch posting, series posting, and master posting.
 
 #### Breakdown accounts
-
 Accounts whose balances are used to determine the percentages that will be posted to the distribution accounts assigned to a variable allocation account.
 
 #### Chart of accounts
-
 A list of all accounts that a business maintains in its general ledger.
 
 #### Chart of accounts reports
-
 A General Ledger report type from which report options can be created for an Accounts List, Posting Accounts List, Unit Accounts List, Fixed Allocation Accounts List, Variable Allocation Accounts List, and Category List.
 
 #### Clearing transaction
-
 Transaction used to transfer the balance of an account to another account without deleting the account. Clearing transactions are also useful when accounts are obsolete, but can’t be deleted because they have current-year activity that should appear on the financial statements.
 
 #### Closing entries
-
 Entries made to close and clear temporary accounts, such as an Income Summary account. The effect of a closing entry is a net increase or a net decrease to the Retained Earnings account.
 
 #### Comma-delimited fields
-
 A standard ASCII, or character, file format used when exporting a report so that it can be read by programs that use this format.
 
 #### Cross-reference reports
-
 A General Ledger report type from which report options can be created for cross reference reports by source document, audit trail code, or journal entry number. The cross-reference reports are used to trace the audit trail of a company's transaction activity.
 
 #### Currency symbol
-
 The symbol that has been selected to designate currency amounts on reports. Most information about how currency amounts are displayed can be specified in the operating system documentation.
 
 #### Default value
-
 A value that is displayed in a window automatically, and that will be used unless a different value is entered.
 
 #### Deferral
-
 Delaying the recognition of revenue or expense. Usually, deferred revenue or expense is recognized at specific intervals over a period of time. For example, a customer may make a single payment for a yearly service contract, and a portion of the revenue is recognized each month.
 
 #### Department
-
 A business division that incurs costs and/or generates revenue. In General Ledger, an account segment can be used to identify a department or division of a business.
 
 #### Detailed report
-
 A report that displays detailed transaction information for each account.
 
 #### Distribution accounting
-
 The practice of allocating transactions to their departments of origin.
 
 #### Distribution accounts
-
 Accounts assigned to a fixed or variable allocation account that will receive a percentage of transaction amounts when the journal entry is posted.
 
 #### Divisional retained earnings accounts
-
 Two or more accounts among which the net income or net loss amount has been divided.
 
 #### Double-entry accounting
-
 An accounting process whereby equal credit and debit amounts are entered for each transaction.
 
 #### Edit list
-
 A list of transactions in an unposted batch that can be printed to verify the accuracy of transactions before posting. Edit lists can be printed from the Batch Entry window or any transaction entry window as long as a batch ID has been entered.
 
-**Error message**
-
-*See Alert message*.
-
 #### Financial series
-
 A group of Microsoft Dynamics GP modules including General Ledger with Advanced Financial Analysis and other modules in which transaction information from other modules is collected and maintained.
 
 #### Financial statements
-
 In General Ledger, a term that refers collectively to the Balance Sheet, Profit and Loss Statement, Statement of Cash Flows, and Statement of Retained Earnings.
 
-**Financial year**
-
-*See Fiscal year*.
-
 #### Financing section
-
 The section of a Statement of Cash Flows that includes transaction amounts for obtaining resources for owners and providing them with a return on their investments, along with obtaining resources from creditors and repaying the amounts borrowed.
 
 #### Fiscal period
-
 Division of the fiscal year, usually monthly, quarterly, or semiannually, when transaction information is summarized and financial statements are prepared.
 
 #### Fiscal year
-
 An accounting cycle composed of up to 54 consecutive periods, spanning the number of days in a year. The fiscal year may also be referred to as a *financial year*.
 
 #### Fixed allocation account
-
 Accounts used to distribute specified percentages of a single transaction among several distribution accounts.
 
 #### Fixed allocation retained earnings account
-
 Accounts used to distribute specified percentages of retained earnings among several distribution accounts.
 
 #### Group printing
-
 Creating and printing report options in groups. For example, a report group could be used to print all the financial statements and the Trial Balance before closing a month, quarter, or fiscal year.
 
 #### HTML file
-
 A file format that allows you to place financial information on your company’s intranet or web site.
 
 #### Inquiry
-
 A feature that allows users to view information for open and historical years.
 
 #### Investing section
-
 The section of a Statement of Cash Flows that includes amounts for transactions involving lending money and collecting on the loans, acquiring and selling investments, and acquiring and selling property and equipment.
 
 #### Journal entry
-
 A transaction recorded in a formalized manner by entering an account and debit and credit amounts.
 
 #### Lookup window
-
 A window that displays a list of accounts, customers, jobs, or other items in the Microsoft Dynamics GP system. Lookup windows for a specific field are displayed by choosing the lookup button next to the field.
 
 #### Macro
-
 A series of actions performed within an application that have been recorded for playback at another time. Macros can be used to automate repeated tasks, such as month-end procedures or printing reports.
 
 #### Main segment
-
 The segment of posting accounts that has been designated as the sorting option for accounts on financial statements. Typically, the main segment is used to indicate whether the account is an asset, liability, owners’ equity, revenue, or expense account.
 
 #### Mass modify
-
 A process in which ranges of accounts are copied, moved, deleted, or inactivated.
 
 #### Master posting
-
 A posting process in which marked batches from different series can be posted simultaneously.
 
 #### Module
-
 A group of Microsoft Dynamics GP applications that can be used to perform a specific set of tasks. Modules are combined to form a *series*. For example, the General Ledger with Advanced Financial Analysis is a member of the Financial series. *See also Series*.
 
 #### Net income/loss source
-
 The Profit and Loss Statement used to calculate the net income/loss on another financial statement.
 
 #### Offset account
-
 In double-entry accounting, the second account used to balance a transaction, making debits equal credits.
 
 #### Operating section
-
 The section of a Statement of Cash Flows that includes transaction amounts for acquiring, selling, and delivering goods for sale, along with providing services.
 
 #### Origin
-
 A transaction window within a specific Microsoft Dynamics GP module. Certain options, such as verifying batch controls and closing fiscal periods, can be selected for each transaction origin. Also, the transaction origin will appear as part of the audit trail code on all posting reports in Microsoft Dynamics GP.
 
 #### Password
-
 A combination of distinct, user-defined characters used to gain access to the Microsoft Dynamics GP system or to a selected application within Microsoft Dynamics GP.
 
 #### Period consolidation
-
 A procedure that will total transaction detail into a single summary amount to be carried forward to the next period. This procedure is optional, and can be used if detailed information is no longer needed for a specific period.
 
 #### Posting
-
 A procedure to make temporary transactions a part of a business’s permanent records; to update accounts by transaction amounts. In manual accounting, posting transfers journal entries to the proper accounts in a general ledger.
 
 #### Posting account
-
 A financial account that tracks assets, liabilities, revenue, or expenses. These accounts will appear on the financial statements and other reports created in the financial series.
 
 #### Posting journal
-
 A report printed following the posting process that shows the detail for each transaction that has been posted. Posting journals also include the audit trail code, which is a precise record of where each transaction has been posted within Microsoft Dynamics GP.
 
 #### Prior period adjustment
-
 An adjustment for an error that was not discovered during the fiscal period in which it occurred.
 
 Prior period adjustments should be reported as an adjustment to the retained earnings balance at the beginning of the period in which the correction was made.
 
 #### Profit and loss account
-
 Revenue or expense accounts whose balances – which determine the net income or net loss for the year – will be transferred to a retained earnings account at the end of a fiscal year.
 
 #### Profit and Loss Statement
-
 A financial statement showing revenue earned by a business, the expenses incurred in earning that revenue, and the resulting net income or net loss.
 
 #### Quick financial setup
-
 A method of creating financial statement layouts. Once the layouts have been created, they can be used to create report options.
 
 #### Quick journal
-
 A General Ledger journal that can be used to speed data entry for routinely recorded transactions. All the accounts typically used in a particular quick journal are selected when the quick journal is set up; as a result, only amounts must be entered when transactions are recorded.
 
 #### Ratio
-
 The quotient when one amount is divided by another, such as when the balance in a column is divided by the balance of a unit account.
 
-**Real-time posting**
-
-*See Transaction-level posting*.
-
 #### Reconciling
-
 A procedure used to recalculate account totals in the Chart of Accounts so they'll match transaction amounts that have been posted.
 
 #### Record
-
 A collection of related fields within a table. Records typically comprise most or all of the data entered in the fields in a given window. For instance, all the information entered about a specific account in the Account Maintenance window makes up a single record. A single transaction entered in the Transaction Entry window also constitutes a record.
 
 #### Recurring batch
-
 A batch that will be posted repeatedly, according to the selected frequency. An example of a recurring batch would be one to record monthly rent expense. In Australia and New Zealand, transactions entered in a recurring batch are referred to as *standing transactions*.
 
 #### Removing history
-
 A procedure used to erase ranges of account or transaction history. Removing history will remove ranges of history that are no longer useful, making additional hard disk space available.
 
 #### Report option
-
 A collection of entries that specify the amount of information or the type of information that will appear on a report. Multiple report options can be created.
 
 #### Retained earnings
-
 The balance of the owners’ equity that is being retained in the business or corporation.
 
 #### Retained earnings account(s)
-
 Account(s) to which the balances of currentyear profit and loss accounts will be transferred during the year-end closing.
 
 #### Reversing entry
-
 A transaction that reverses the debit and credit entries of a previously posted adjusting entry. Reversing entries also can be used to correct an erroneous transaction that already has been posted.
 
 #### Sample data
-
 Data that can be used to practice Microsoft Dynamics GP procedures by entering the information listed in the online lessons. Sample data can be accessed using the lesson company.
 
-**Segment number**
-
-*See Account segment number*.
-
 #### Series
-
 A group of Microsoft Dynamics GP modules that form an interrelated set of applications. The Financial series, for example, contains  General Ledger, Advanced Financial Analysis, and other modules that collect and analyze transaction information from other modules.
 
 #### Series posting
-
 A posting process in which marked batches from the same series can be posted simultaneously.
 
 #### Setup reports
-
 A General Ledger report type that can be used to create report options for an Account Category List, Account Segment List, Setup List, and Quick Journal Setup List. The information on these reports is entered when the General Ledger module is set up initially.
 
 #### Setup routine
-
 A series of procedures that can be used to open the windows where options and defaults for a specific module are modified or set up.
 
 #### Single-use batch
-
 A batch that is created, posted once and then deleted from the system automatically.
 
 #### Sorting
-
 A method of arranging data based on the order of specified information. For example, records sorted by class would list all records within a class before moving to records in the next class.
 
 #### Sorting segment
-
 Segments of posting accounts that can be used for Microsoft Dynamics GP reports. Sixteen sorting segments can be used: seven are predefined and the remaining nine can be selected by the user.
 
 #### Source document code
-
 A code that identifies the type of journal or entry that can be examined for more information about a specific transaction. For example, the source document code, GJ, could be used for general journal entries, while BBAL could be used for beginning balance entries.
 
-#### Standing transactions
-
-*See Recurring batch*.
-
 #### Statement of Cash Flows
-
 A financial statement that provides information about the cash receipts and cash payments of a business over a specified period of time. The system uses the indirect method for calculating and printing the Statement of Cash Flows. This method indirectly reports the amount of net cash flow from operating activities by reconciling net income to net cash flow.
 
 #### Statement of Retained Earnings
-
 A financial statement that provides an analysis of retained earnings, including net income, declared dividends, and the ending balance of the retained earnings account for the period being reported.
 
 #### Subsidiary ledger
-
 A group of accounts other than General Ledger accounts that show the details underlying the balance of a controlling account in the General Ledger. Examples of subsidiary ledgers are customer accounts and vendor accounts.
 
 #### Summarized report
-
 A report where the amounts from an account range or category are printed in a single line.*See also Detailed report*.
 
 #### Tab-delimited fields
-
 A tab-separated ASCII character file format used when exporting a report so that it can be read by programs that use this format.
 
 #### Text-only format
-
 A file format that saves reports as text without formatting. This format is used when exporting reports to applications that are unable to read other formats available in Microsoft Dynamics GP.
 
 #### Transaction
-
 An event or condition that is recorded in asset, liability, expense, revenue, and/or equity accounts. Sales to customers or purchases from vendors are examples of transactions.
 
 **Transaction history**
-
 A record of transactions for a historical year.
 
 #### Transaction matching
-
 The process of linking related transaction distributions from different journal entries. For example, you can link period-end adjusting entries to the original transactions, or link a set of transactions associated with a project.
 
 #### Transaction-level posting
-
 A posting method in which transactions can be entered and posted without having to create a batch. Also known as *real-time posting*. *See also Batch posting*.
 
 #### Trial balance reports
-
 A General Ledger report type from which report options for a detailed trial balance, summary trial balance, or trial balance worksheet can be created. Trial balances are used to illustrate that debits equal credits for a range of accounts.
 
 #### Typical balance
-
 The type of balance, either debit or credit, that an account has under ordinary circumstances. Asset and expense accounts normally have debit balances, while liability, revenue, and equity accounts normally have credit balances.
 
 #### Unit account
-
 An account that tracks statistical or nonfinancial quantities, such as the number of customers with past-due balances or the number of invoices generated over a specific time period.
 
 #### Variable allocation account
-
 An account used to distribute fluctuating percentages of a single transaction to several different accounts.
 
 #### Variance
-
 The difference between two amounts, such as balances in two columns, when one is subtracted from the other. A common variance compares budgeted amounts to actual balances.
 
 #### Year-end closing
-
 A process used to calculate retained earnings for the year, transfer all current-year information for each account in the chart of accounts to account and transaction history and to prepare the accounting system for a new fiscal year.
