@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: tnistler
-ms.date: 02/06/2019
+ms.date: 06/14/2020
 
 ---
 # Fixed Asset Management in Dynamics GP
@@ -4684,184 +4684,158 @@ Report
 
 5. After viewing the report, select a format and print the report.
 
+**##Additional Feature Functionality added to Fixed Asset**
+
+To review detailed information about each feature, click the relevant link below.
+
+[Add Class ID to Fixed Assets Transfer Windows]
+(https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-new-feature-add-class-id-to-fixed-assets-transfer-windows)
+With this release of Microsoft Dynamics GP, users can now transfer the Class ID for one asset via the Asset Transfer window!!!! Additionally, users can now transfer the Class ID for a group of assets via the Fixed Assets Mass Transfer window. 
+
+The Class ID change will be reflected in the Asset General window. 
+
+In prior versions of Microsoft Dynamics GP, users did not have the ability to transfer the Asset Class ID via the Asset Transfer window. Instead, the Asset Class ID had to be changed for each asset in the Asset General window.
+
+As always, the Transfer Date must fall in the 'current' Fixed Assets year.
+
+If the transfer date is earlier than the depreciated to date for the asset at the time of the transfer, depreciation will be backed out to the transfer date. 
+
+If the transfer date is later than the depreciated-to date for the asset at the time of the transfer, depreciation will be taken through the transfer date. New depreciation will begin for the asset on the day after the transfer date.
+
+Newly assigned accounts will be used for depreciation moving forward if applicable. 
+
+The Class ID field has been added to the Transfer Maintenance window to accommodate the "Add Class ID to Fixed Assets Transfer window" feature. To open the Transfer Maintenance window: On the Microsoft Dynamics GP menu, highlight Transactions, point to Fixed Assets, and click on Transfer.
+
 **Glossary**
 
 #### Account
-
 The type of record—asset, liability, revenue, expense, or owner’s equity—traditionally used for recording individual transactions in an accounting system. Also, the identifying alphanumeric characters that have been assigned to the record.
 
 #### ACRS (Accelerated Cost Recovery System) tables
-
 Tables to calculate depreciation for personal property, real estate, real estate using modified straight-line, low income housing, and foreign real property. Created by the Economic Recovery Tax Act of 1981 for US tax purposes. Depreciation can be calculated for assets acquired from 1981 through 1986.
 
 #### Amortization
-
 The gradual reduction of a liability in regular payments over a specified period of time. These payments must be enough to cover both principal and interest. Also, writing off an intangible asset investment over the projected life of the assets.
 
 #### Asset
-
 An item of value owned by an individual or corporation, especially that which could be converted to cash. On a balance sheet, assets are equal to the sum of liabilities, common stock, preferred stock, and retained earnings.
 
 #### Asset book
-
 Accounting records—ledgers or journals— for a specific reporting purpose, such as financial or tax. All assets to be included for the reporting purpose would be included in the asset book.
 
 #### Asset group
-
 A collection of assets with a similar characteristic.
 
 #### Averaging convention
-
 Rules for calculating depreciation in the year of the acquisition of the asset and the year of the disposal of the asset.
 
-**Book**
-
-*See Asset book*.
-
 #### Capitalize
-
 To classify the cost of an asset as a long-term investment, rather than charging it to current operations.
 
 #### Clearing account
-
 An asset account that is debited in Purchasing Order Processing or Payables Management for the PURCH type distribution line in the Purchasing Distribution Entry window. This account is credited when an asset is added. At the end of each period, if the balance in the clearing account is zero, items in Purchasing Order Processing or Payables Management that need to be capitalized are added in Fixed Asset Management.
 
 #### Corporate book
-
 The accounting records for financial reporting purposes, based on the applicable accounting principles. *See also Tax book*.
 
 #### Cost basis
-
 The purchase price of an asset, including freight, tax, and other expenses, less any adjustments, such as Section 179 Expense Deduction and salvage value. Used to determine capital gains and capital losses for tax purposes.
 
 #### Depreciation
-
 The allocation of the cost of an asset over a period of time for accounting and tax purposes. Also, a decline in the value of an asset due to general wear and tear or obsolescence.
 
 #### Depreciation-sensitive
-
 Changes that affect depreciation. When a value in a depreciation-sensitive field is changed, depreciation must be recalculated for that asset.
 
 #### Expense
-
 A cost incurred by a business in an attempt to obtain revenue.
 
 **Filter**
-
 An option to restrict specific information.
 
 #### Fiscal period
-
 Divisions of the fiscal year, usually monthly, quarterly, or semiannually, when transaction information is summarized and financial statements are prepared.
 
 #### Fiscal year
-
 An accounting period of 365 days—366 days in leap years—but not necessarily starting on January 1.
 
 #### Inflation
-
 The overall price movement—generally upward—of goods and services in an economy.
 
 #### Insurance year
-
 The year reproduction cost of an asset is based on.
 
 #### Investment Tax Credit (ITC)
-
 An investment tax credit (ITC) taken for US tax purposes for the purchase of specific types of business property. The credit must be taken in the year of purchase and is limited by a maximum amount. The ITC was eliminated by the Tax Reform Act of 1986.
 
 #### Luxury auto
-
 A limit on the annual recovery allowances— depreciation—that can be taken for US tax purposes.
 
 #### Master asset ID
-
 An ID used to group components of a single asset or related assets. For example, a computer might be considered an asset that contains a CPU, a monitor, and a printer as components. You can assign the same master asset ID to each component so that the parts are related and can be tracked together.
 
 #### Net cost basis
-
 The Original Cost Basis, minus Section 179 Expense Deduction, minus ITC Cost Reduction Amount, plus or minus Miscellaneous Cost Adjustment.
 
 #### Physical location
-
 The actual place where an asset is located; for example, a building, a floor in a building, or a room in a building.
 
 #### Prior period adjustment
-
 An adjustment for an error that was not discovered during the period in which it occurred.
 
 #### Prior year depreciation
-
 Depreciation that relates to years earlier than the current fiscal year.
 
 #### Proceeds
-
 The value—in cash or anything not in the form of cash—received for an asset.
 
 #### Projected depreciation
-
 The forecasted allocation of the cost of an asset over a period of time for accounting and tax purposes.
 
 #### Purchasing transaction
-
 A transaction that originated in Payables Management or Purchase Order Processing.
 
 #### Recalculate option
-
 Calculates a new rate of depreciation using the new cost basis data, but does not make adjusting entries for depreciation already taken. The new rate of depreciation will be used the next time the depreciation routine is completed.
 
 #### Receiving
-
 Recording the receipt of assets that have been ordered from a vendor via a purchase order. Receiving also refers to the recording of the invoice for the assets received.
 
 #### Reset Life option
-
 Recalculates depreciation from the date it was placed in service forward to the date the asset has already been depreciated. If there are adjustments to the depreciation for any period, they will be written to the financial detail table.
 
 #### Reset Year option
-
 Recalculates depreciation from the beginning of the year forward to the date the asset has already been depreciated. If there are adjustments to the depreciation for any period, they will be written to the financial detail table.
 
 #### Retire
-
 To sell or dispose of a fixed asset, including destroying or abandoning the asset. A retired asset is no longer producing revenue.
 
 #### Section 179 Expense Deduction
-
 US Tax Section 179 allows expensing all or a portion of the cost of an asset in the year of acquisition, rather than expensing, or depreciating, over the life of the asset. Any portion of the cost of an asset taken as Section 179 cannot be taken also as depreciation. For more information about additional restrictions and rules, contact a tax professional.
 
 #### Special depreciation allowance
-
 An additional first-year depreciation deduction. If used with the Job Creation and Worker Assistance Act of 2002, the deduction is equal to 30 percent of the adjusted basis of qualified property. For more information, contact a tax professional.
 
 #### Spread
-
 Options that account for the allocation of proceeds and expenses of sale for selected assets when mass retiring those assets.
 
 #### Suffix
-
 Number used to distinguish multiple assets with the same asset ID. Might be used to identify components of assets or assets that have been partially retired or transferred.
 
 #### Switchover
-
 Option that changes the depreciation method of an asset when the depreciation for an asset is greater using the switchover method than the current depreciation method. The depreciation method automatically will change to the switchover method. Switchover will only occur at the beginning of the year when the yearly depreciation rate is calculated for the next year.
 
 #### Tax book
-
 The accounting records for tax reporting purposes, based on the applicable tax laws. *See also Corporate book*.
 
 #### TEFRA
-
 The Tax Equity and Fiscal Responsibility Act of 1982 produces additional revenue through a combination of federal spending cuts, tax increases, and reform measures for US tax purposes.
 
 #### Transfer
-
 The movement of an asset to a new general ledger account, property tax location, physical location, structure, or master asset ID. Typically affects the future allocation of depreciation expense for the asset.
 
 #### Vendor
-
 A person or company providing goods and services in return for payment.
 
 #### Year-end closing
-
 A process used to zero out year-to-date values and update beginning of year values for assets, including quantities, depreciation, and maintenance.
