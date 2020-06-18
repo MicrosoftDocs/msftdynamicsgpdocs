@@ -3796,10 +3796,49 @@ Actual Cost Item Accounts and Costs used during an MO Close where FG=Finished Go
 |DR/CR	   |WIP – Material Variable Overhead              | Amount of Material Variable used in MO receipt via WIP     |
 |DR/CR	   |WIP – Labor (FG-Item Account Maint –Costing)  | Amount of Labor used in MO receipt–amount collected via WIP|
 |DR/CR	   |WIP - Labor Fixed Overhead 	                 | Amount of Labor Fixed Overhead used in MO receipt via WIP  |
-|DR/CR	WIP - Labor Variable Overhead (FG-Item Account Maintenance –Costing)	Amount of Labor Variable Overhead used in MO receipt – amount collected via WIP
-|DR/CR	 WIP - Machine (FG-Item Account Maintenance –Costing)	Amount of Machine used in MO receipt – amount collected via WIP
-|DR/CR	WIP - Machine  Fixed Overhead (FG-Item Account Maintenance –Costing)	Amount of Machine Fixed Overhead used in MO receipt – amount collected via WIP
-|DR/CR	WIP - Machine Variable Overhead (FG-Item Account Maintenance –Costing)	Amount of Machine Variable Overhead used in MO receipt – amount collected via WIP
+|DR/CR	   |WIP - Labor Variable Overhead                 | Amount of Labor Variable Overhead used in MO recpt via WIP |
+|DR/CR	   |WIP - Machine (FG-Item Account Maint–Costing) | Amount of Machine used in MO receipt–amnt collected via WIP|
+|DR/CR	   |WIP - Machine                                 | Amount of Machine Fixed Overhead used in MO recpt via WIP  |
+|DR/CR	   |WIP - Machine Variable Overhead               | Amount of Machine Variable Overhead used in MO recpt via WIP
+
+Example of Accounts and Costs used during an MO Close for an Actual Cost Finished good where the you did not mark the box to use all labor and machine time collected and did not collect any labor or machine time, NOT set to backflush
+
+| **DR/CR** | **Account**                    | **Cost Used**                                |
+|-----------|------------------------------- |--------------------------------------------- |
+|DR/CR      |Variance Material               |   $.95                                       |
+|DR/CR      |WIP – Labor	                  |   $.27                                       |  
+|DR/CR      |WIP – Labor Fixed Overhead	   |   $.02                                       |
+|DR/CR      |WIP – Labor Variable Overhead	|   $.01                                       |
+|DR/CR     	|WIP- Machine                    |   $.43                                       | 
+|DR/CR      |WIP – Machine Fixed Overhead	   |   $.10                                       |
+|DR/CR      |WIP – Machine Variable Overhead |   $.12                                       |
+
+Standard Cost Items
+Accounts are being pulled from finished good.
+
+Standard Cost Item Accounts and Costs used during an MO Close where FG=Finished Good
+
+| **DR/CR** | **Account**                                  | **Cost Used**                                              |
+|-----------|--------------------------------------------- |---------------------------------------------               |
+|DR	Variance – Material (FG-Item Account Maintenance-Costing)	Collected Material Cost– FG Material Cost
+|DR	Variance - Material Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Material Fixed Overhead Cost – FG Material Fixed Overhead Cost
+|DR	Variance – Material Variable Overhead (FG-Item Account Maintenance-Costing)	Collected Material Variable Overhead Cost – FG Material Variable Overhead Cost
+|DR	Variance – Labor (FG-Item Account Maintenance-Costing)	Collected Labor Cost– FG Labor Cost
+|DR	Variance -Labor Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Labor Fixed Overhead Cost – FG Labor Fixed Overhead Cost
+|DR	Variance -Labor Variable Overhead (FG-Item Account Maintenance-Costing)	Collected Labor Variable Overhead Cost – FG Labor Variable Overhead Cost
+|DR	Variance -  Machine (FG-Item Account Maintenance-Costing)	Collected Machine Cost – FG Machine  Cost
+|DR	Variance -- Machine  Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Machine Fixed Overhead – FG Machine Fixed Overhead Cost
+|DR	Variance - Machine Variable Overhead (FG-Item Account Maintenance-Costing)	Collected Machine Variable Overhead – FG Machine Variable Overhead Cost
+|CR	WIP –Material (FG-Item Account Maintenance-Costing)	Collected Material Cost– FG Material Cost
+|CR	WIP – Material Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Material Fixed Overhead Cost – FG Material Fixed Overhead Cost
+|CR	WIP – Material Variable Overhead (FG-Item Account Maintenance-Costing)	Collected Material Variable Overhead Cost – FG Material Variable Overhead Cost
+|CR	WIP - Labor(FG-Item Account Maintenance-Costing)	Collected Labor Cost– FG Labor Cost
+|CR	WIP - Labor Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Labor Fixed Overhead Cost – FG Labor Fixed Overhead Cost
+|CR	WIP - Labor Variable Overhead (FG-Item Account Maintenance-Costing)	Collected Labor Variable Overhead Cost – FG Labor Variable Overhead Cost
+|CR	 WIP - Machine (FG-Item Account Maintenance-Costing)	Collected Machine Cost – FG Machine  Cost
+|CR	WIP - Machine  Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Machine Fixed Overhead – FG Machine Fixed Overhead Cost
+|CR	WIP - Machine Variable Overhead  (FG-Item Account Maintenance-Costing)	Collected Machine Variable Overhead – FG Machine Variable Overhead Cost
+
 
 
 **Glossary**
