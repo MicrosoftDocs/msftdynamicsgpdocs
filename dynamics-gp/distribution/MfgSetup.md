@@ -3444,6 +3444,139 @@ Audit Trail Code example: IVADJ00000123
 Actual Cost Item
 Issued items are removed from the issue from site and placed into WIP.
 
+Actual Cost Item Accounts and Costs during an Issue Transaction where FG=Finished Good and Item=component
+
+| **DR/CR** | **Account**                                | **Cost Used**                                |
+|-----------|--------------------------------------------|------------------------------                |
+| DR        | WIP Material(FG-Item Account Maint-Costing)| Current Cost (From inventory LIFO/FIFO stack)|
+| CR        | Inventory (Item-Item Account Maintenance)  | Current Cost (From inventory LIFO/FIFO stack)|
+
+Example of Accounts and Costs used during an Issue Transaction for an actual cost BUY item
+
+| **DR/CR** | **Account**                     | **Cost Used**   |
+|-----------|---------------------------------|-----------------|
+| DR        | WIP Material                    | $4.00           |
+| CR        | Inventory                       | $4.00           |
+
+Standard Cost Item
+Standard Cost Item Accounts and Costs during an Issue Transaction where FG=Finished Good and Item=component
+
+| **DR/CR** | **Account**                                | **Cost Used**                             |
+|-----------|--------------------------------------------|---------------------------------          |
+| DR        | WIP  - Material (Item Account Maintenance) | Material Cost * Quantity                  |
+| DR        | WIP  - Material Fixed Overhead             | Material Fixed Overhead Cost * Quantity   |
+| DR        | WIP  - Material Variable Overhead          | Material Variable Overhead Cost* Quantity |
+| DR        | WIP  - Labor (Item Account Maintenance)    | Labor Cost * Quantity                     |
+| DR        | WIP  - Labor Fixed Overhead                | Labor Fixed Overhead Cost * Quantity      |
+| DR        | WIP  - Labor Variable Overhead             | Labor Variable Overhead Cost* Quantity    |
+| DR        | WIP  - Machine (Item Account Maintenance)  | Machine Cost * Quantity                   |
+| DR        | WIP  - Machine Fixed Overhead              | Machine Fixed Overhead Cost * Quantity    |
+| DR        | WIP  - Machine Variable Overhead           | Machine Variable Overhead Cost* Quantity  |
+| CR        | Inventory Material (Item Account Maint)    | Material Cost * Quantity                  |
+| CR        | Inventory – Material Fixed Overhead        | Material Fixed Overhead Cost * Quantity   |
+| CR        | Inventory – Material Variable Overhead     | Material Variable Overhead Cost* Quantity |
+| DR        | Inventory - Labor (Item Account Maint)     | Labor Cost * Quantity                     |
+| DR        | Inventory - Labor Fixed Overhead           | Labor Fixed Overhead Cost * Quantity      |
+| DR        | Inventory - Labor Variable Overhead        | Labor Variable Overhead Cost* Quantity    |
+| CR        | Inventory - Machine (Item Account Maint)   | Machine Cost * Quantity                   |
+| CR        | Inventory - Machine Fixed Overhead         | Machine Fixed Overhead Cost * Quantity    |
+| CR        | Inventory - Machine Variable Overhead      | Machine Variable Overhead Cost* Quantity  |
+
+Example of Accounts and Costs used during an Issue Transaction for a standard cost BUY item
+
+| **DR/CR** | **Account**                                | **Cost Used**       |
+|-----------|--------------------------------------------|-------------------- |
+| DR        | WIP  - Material (Item Account Maintenance) | $3.35 * 1 = $3.35   |
+| DR        | WIP  - Material Fixed Overhead             | $.50 * 1 = $.50     |
+| DR        | WIP  - Material Variable Overhead          | $.15 * 1 = $.15     |
+| CR        | Inventory                                  | $3.35 * 1 = $3.35   |
+| CR        | Inventory – Material Fixed Overhead        | $.50 * 1 = $.50     |
+| CR        | Inventory – Material Variable Overhead     | $.15 * 1 = $.15     |
+
+
+Reverse Issue
+Removes issued items from WIP and adds them back to the quantity at the Issue from site
+Audit Trail Code example: IVADJ000000123
+
+Actual Cost Item
+Actual Cost Item Accounts and Costs used during a Reverse Issue Transaction where FG=Finished good and Item = component
+
+| **DR/CR** | **Account**                                | **Cost Used**  |
+|-----------|--------------------------------------------|--------------- |
+| CR        | WIP Material(FG-Item Account Maint-Costing)| Current Cost   |
+| DR        | Inventory (Item Account Maintenance)       | Current Cost   |
+
+Example of Account and Costs used during a Reverse Issue Transaction for an Actual cost BUY item
+
+
+| **DR/CR** | **Account**                     | **Cost Used**   |
+|-----------|---------------------------------|-----------------|
+| CR        | WIP Material                    | $4.00           |
+| DR        | Inventory                       | $4.00           |
+
+
+Standard Cost Items
+Standard Cost items Accounts and Costs used during a Reverse Issue Transaction where FG=Finished good and Item=Component
+
+| **DR/CR** | **Account**                                | **Cost Used**                             |
+| DR        | Inventory Material (Item Account Maint)    | Material Cost * Quantity                  |
+| DR        | Inventory – Material Fixed Overhead        | Material Fixed Overhead Cost * Quantity   |
+| DR        | Inventory – Material Variable Overhead     | Material Variable Overhead Cost* Quantity |
+| DR        | Inventory - Labor (Item Account Maint)     | Labor Cost * Quantity                     |
+| DR        | Inventory - Labor Fixed Overhead           | Labor Fixed Overhead Cost * Quantity      |
+| DR        | Inventory - Labor Variable Overhead        | Labor Variable Overhead Cost* Quantity    |
+| DR        | Inventory - Machine (Item Account Maint)   | Machine Cost * Quantity                   |
+| DR        | Inventory - Machine Fixed Overhead         | Machine Fixed Overhead Cost * Quantity    |
+| DR        | Inventory - Machine Variable Overhead      | Machine Variable Overhead Cost* Quantity  |
+| CR        | WIP-Material (FG-Item Account Maintenance) | Material Cost * Quantity                  |
+| CR        | WIP-Material Fixed Overhead                | Material Fixed Overhead Cost * Quantity   |
+| CR        | WIP-Material Variable Overhead             | Material Variable Overhead Cost* Quantity |
+| CR        | WIP-Labor (FG -Item Account Maintenance)   | Labor Cost * Quantity                     |
+| CR        | WIP-Labor Fixed Overhead                   | Labor Fixed Overhead Cost * Quantity      |
+| CR        | WIP-Labor Variable Overhead                | Labor Variable Overhead Cost* Quantity    |
+| CR        | WIP-Machine (FG -Item Account Maintenance) | Machine Cost * Quantity                   |
+| CR        | WIP-Machine Fixed Overhead                 | Machine Fixed Overhead Cost * Quantity    |
+| CR        | WIP-Machine Variable Overhead              | Machine Variable Overhead Cost* Quantity  |
+
+Example of Accounts and Costs used during a Reverse issue transaction for a Standard Item One (FG =Finished Good; Item = component)
+
+| **DR/CR** | **Account**                                | **Cost Used**       |
+| DR        | Inventory                                  | $3.35 * 1 = $3.35   |
+| DR        | Inventory – Material Fixed Overhead        | $.50 * 1 = $.50     |
+| DR        | Inventory – Material Variable Overhead     | $.15 * 1 = $.15     |
+| CR        | WIP  - Material (Item Account Maintenance) | $3.35 * 1 = $3.35   |
+| CR        | WIP  - Material Fixed Overhead             | $.50 * 1 = $.50     |
+| CR        | WIP  - Material Variable Overhead          | $.15 * 1 = $.15     |
+
+
+Labor Data Collection
+Transactions -> Manufacturing -> WIP -> Data Collection
+Audit Trail Code example: GLTRX00000123
+
+Actual Cost Items
+Transactions stemming from labor or machine data collection will NEVER post though the GL. These transactions will only post TO the GL and must be posted from the following location: Transactions > Financial > Batches.
+
+
+Actual Cost Item Accounts and Costs used during a Labor Transaction where FG=Finished good and Item= Component 
+
+| **DR/CR** | **Account**                                | **Cost Used**                             |
+| DR        | WIP-Labor (FG -Item Account Maintenance)   | Labor Cost Collected                      |
+| DR        | WIP-Labor Fixed Overhead                   | Labor Fixed Overhead Collected            |
+| DR        | WIP-Labor Variable Overhead                | Labor Variable Overhead Collected         |
+| CR        | Applied – Labor (Labor Code Definitions )  | Labor Cost Collected                      |
+| CR        | Applied – Labor Fixed Overhead             | Labor Fixed Overhead Collected            |
+| CR        | Applied – Labor Variable Overhead          | Labor Variable Overhead Collected         |
+
+Example of Accounts and Costs used during a Labor Transaction for an actual cost MAKE item
+
+| **DR/CR** | **Account**                      | **Cost Used**   |
+|-----------|--------------------------------- |-----------------|
+| DR        | WIP Labor                        | $.21            |
+| DR        | WIP-Labor Fixed Overhead         | $.02            |
+| DR        | WIP-Labor Variable Overhead      | $.01            |
+| CR        | Applied – Labor                  | $.21            |
+| CR        | Applied – Labor Fixed Overhead   | $.02            |
+| CR        | Applied – Labor Variable Overhead| $.01            |
 
 
 **Glossary**
