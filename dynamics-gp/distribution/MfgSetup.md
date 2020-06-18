@@ -3233,12 +3233,127 @@ Audit Trail Code example: POINV000000123
 Actual Cost Items
 Actual Cost Item Accounts and Cost during Enter/Match Invoice (Invoicing)
 
-| **DR/CR** | **Account**                                | **Cost Used**      |
-|-----------|--------------------------------------------|--------------------|
-| DR        | Inventory (Item Account Maintenance)       | Current Cost       |
-| CR        | Inventory (Item Account Maintenance)       | Current Cost       |
+| **DR/CR** | **Account**                                | **Cost Used**               |
+|-----------|--------------------------------------------|-----------------------------|
+| DR        | Accrued Purchases(Match Receiving Receipt) | Current Cost (Receipt cost) |
+| DR/CR     | Purchase Price Variance(Item Acct Maint)   | Invoice Cost – Current Cost |
+| CR        | Accounts Payable(Vendor Acct Maintenance)  | Invoice Cost                |
+
+Example of Accounts and Costs used during an Invoicing Transaction for an actual cost BUY item
+
+| **DR/CR** | **Account**                                | **Cost Used**       |
+|-----------|--------------------------------------------|-------------------- |
+| DR        | Accrued Purchase                           | $4.32               |
+| CR        | Purchase Price Variance                    | $4.22 –$ 4.32 =$ .10|
+| CR        | Accounts Payable                           | $4.22               |
+
+Example of Accounts and Costs used during an Invoicing Transaction for an actual cost MAKE item
+
+| **DR/CR** | **Account**                                | **Cost Used**       |
+|-----------|--------------------------------------------|-------------------- |
+| DR        | Accrued Purchase                           | $6.43               |
+| DR        | Purchase Price Variance                    | $6.52 –$ 6.43 =$ .09|
+| CR        | Accounts Payable                           | $6.52               |
+
+Standard Cost Items
+Standard Cost Item Accounts and Costs used during Enter/Match Invoice (Invoicing)
+
+| **DR/CR** | **Account**                             |**Cost Used**                                                                  |
+|-----------|-----------------------------------------|-------------------------------------------------------------------------------|
+| DR        | Accrued Purchases(Item Acct Maint)      |Receiving  Cost                                                                |
+| DR/CR     | Purchase Price Variance(Item Acct Maint)|Invoice Cost – Standard Material Cost                                          |
+| DR/CR     | Unrealized Purchase Price Variance      |Receiving Cost–(Total Strd Cost–(Material Fixed Ovrhd+Material Variable Ovrhd))|
+| CR        | Accounts Payable(Vendor Acct Maint)     | Invoice Cost                                                                  |
 
 
+Example of Accounts and Costs used during an PO Invoicing Transaction for a standard cost BUY item
+
+| **DR/CR** | **Account**                                | **Cost Used**                       |
+|-----------|--------------------------------------------|------------------------------------ |
+| DR        | Accrued Purchase                           |$4.32                                |
+| DR        | Purchase Price Variance                    |$4.22 –$ 3.35 =$ .87                 |
+| CR        | Unrealized Purchase Price Variance         |$4.32 ($4.00 – ($.50 + $.15)) = $.97 |
+| CR        | Accounts Payable                           |$4.22                                |
+ 
+Example of Accounts and Costs used during an PO Invoicing Transaction for a standard cost MAKE item
+
+| **DR/CR** | **Account**                                | **Cost Used**                        |
+|-----------|--------------------------------------------|------------------------------------  |
+| DR        | Accrued Purchase                           | $6.43                                |
+| DR        | Purchase Price Variance                    | $6.52 –$5.05 =$ 1.47                 |
+| CR        | Unrealized Purchase Price Variance         | $6.43 ($5.95 – ($.55 + $.35)) = $1.38|
+| CR        | Accounts Payable                           | $6.52                                |
+
+Sales Order Invoicing
+Transactions > Sales > Sales Transaction Entry
+Audit Trail Code example SLSTE00000123
+
+Actual Cost Items
+Actual Cost Item Accounts and Costs used in Invoicing 
+
+| **DR/CR** | **Account**                                | **Cost Used**            |
+|-----------|--------------------------------------------|--------------------      |
+| DR        | COGS - Material (Item Account Maintenance) | Current Cost * Quantity  |
+| CR        | FG  Inventory (Item Account Maintenance)   | Current Cost * Quantity  |
+
+Example of Accounts and Costs used during Invoicing for an actual cost finished good entry
+
+| **DR/CR** | **Account**                                | **Cost Used**        |
+|-----------|--------------------------------------------|--------------------  |
+| DR        | COGS - Material (Item Account Maintenance) | $5.95 * 1 = $5.95    |
+| CR        | FG  Inventory (Item Account Maintenance)   | $5.95 * 1 = $5.95    |
+
+
+Regardless if you print the report or not, the system will split the costs into the 9 COGS buckets using the accounts on the item card.  
+•	If the COGS accounts are set up to pull from Item (Tools >Setup > Sales > Sales Order Processing) the system looks at the Item card's 9 buckets and pulls the appropriate COGS account. 
+•	If the COGS accounts are set up to pull from the customer (Tools > Setup > Sales >Sales Order Processing) there is only 1 COGS account on the Customer Card and not 9 buckets.  The material costs will be pulled into the COGS account on the customer card and the rest of the costs (labor and machine) are put into the remaining 8 buckets from the Item card’s COGS accounts. 
+
+
+Standard Cost Item Accounts and Costs used during an Invoicing Transaction
+
+| **DR/CR** | **Account**                                | **Cost Used**                             |
+|-----------|--------------------------------------------|---------------------------------          |
+| DR        | COGS - Material (Item Account Maintenance) | Material Cost * Quantity                  |
+| DR        | COGS - Material Fixed Overhead             | Material Fixed Overhead Cost * Quantity   |
+| DR        | COGS - Material Variable Overhead          | Material Variable Overhead Cost* Quantity |
+| CR        | COGS - Labor (Item Account Maintenance)    | Labor Cost * Quantity                     |
+| CR        | COGS - Labor Fixed Overhead                | Labor Fixed Overhead Cost * Quantity      |
+| CR        | COGS - Labor Variable Overhead             | Labor Variable Overhead Cost* Quantity    |
+| DR        | COGS - Machine (Item Account Maintenance)  | Machine Cost * Quantity                   |
+| DR        | COGS - Machine Fixed Overhead              | Machine Fixed Overhead Cost * Quantity    |
+| DR        | COGS - Machine Variable Overhead           | Machine Variable Overhead Cost* Quantity  |
+| CR        | Inventory Material (Item Account Maint)    | Material Cost * Quantity                  |
+| CR        | Inventory – Material Fixed Overhead        | Material Fixed Overhead Cost * Quantity   |
+| CR        | Inventory – Material Variable Overhead     | Material Variable Overhead Cost* Quantity |
+| DR        | Inventory - Labor (Item Account Maint)     | Labor Cost * Quantity                     |
+| DR        | Inventory - Labor Fixed Overhead           | Labor Fixed Overhead Cost * Quantity      |
+| DR        | Inventory - Labor Variable Overhead        | Labor Variable Overhead Cost* Quantity    |
+| CR        | Inventory - Machine (Item Account Maint)   | Machine Cost * Quantity                   |
+| CR        | Inventory - Machine Fixed Overhead         | Machine Fixed Overhead Cost * Quantity    |
+| CR        | Inventory - Machine Variable Overhead      | Machine Variable Overhead Cost* Quantity  |
+
+Example of Accounts and Costs used during Invoicing for a standard cost item where the quantity is 1
+
+| **DR/CR** | **Account**                                | **Cost Used**                     |
+|-----------|--------------------------------------------|---------------------------------  |
+| DR        | COGS - Material (Item Account Maintenance) | $4.10 * 1 = $4.10                 |
+| DR        | COGS - Material Fixed Overhead             | $.55 * 1 = $.55                   |
+| DR        | COGS - Material Variable Overhead          | $.35 * 1 = $.35                   |
+| CR        | COGS - Labor (Item Account Maintenance)    | $.27 * 1 = $.27                   |
+| CR        | COGS - Labor Fixed Overhead                | $.02 * 1 = $.02                   |
+| CR        | COGS - Labor Variable Overhead             | $.01 * 1 = $.01                   |
+| DR        | COGS - Machine (Item Account Maintenance)  | $.43 * 1 = $.43                   |
+| DR        | COGS - Machine Fixed Overhead              | $.10 * 1 = $.10                   |
+| DR        | COGS - Machine Variable Overhead           | $.12 * 1 = $.12                   |
+| CR        | Inventory Material (Item Account Maint)    | $4.10 * 1 = $4.10                 |
+| CR        | Inventory – Material Fixed Overhead        | $.55 * 1 = $.55                   |
+| CR        | Inventory – Material Variable Overhead     | $.35 * 1 = $.35                   |
+| DR        | Inventory - Labor (Item Account Maint)     | $.27 * 1 = $.27                   |
+| DR        | Inventory - Labor Fixed Overhead           | $.02 * 1 = $.02                   |
+| DR        | Inventory - Labor Variable Overhead        | $.01 * 1 = $.01                   |
+| CR        | Inventory - Machine (Item Account Maint)   | $.43 * 1 = $.43                   |
+| CR        | Inventory - Machine Fixed Overhead         | $.10 * 1 = $.10                   |
+| CR        | Inventory - Machine Variable Overhead      | $.12 * 1 = $.12                   |
 
 
 **Glossary**
