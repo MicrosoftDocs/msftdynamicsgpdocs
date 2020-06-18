@@ -3920,538 +3920,296 @@ A specific task within the manufacturing process. You can use operations as temp
 A code assigned to a particular task within the manufacturing process. For example, in a company that makes electrical components, the operation code for testing the validity of a certain characteristic might be “110.” Also, op code.
 
 **Operation list**
-
->   *See Routing*.
+*See Routing*.
 
 **Operations sheets**
-
->   *See Routing*.
+*See Routing*.
 
 **Option**
-
->   In sales configurator, an option is one of the available choices for some
->   aspect of a configured item. For example, a computer manufacturer might
->   offer 15-, 17- and 21inch monitors as options for a computer.
+In sales configurator, an option is one of the available choices for some aspect of a configured item. For example, a computer manufacturer might offer 15-, 17- and 21inch monitors as options for a computer.
 
 **Option bill of materials**
-
->   A bill of materials for a component signifying that the component won’t be
->   identical in all finished products.
+A bill of materials for a component signifying that the component won’t be identical in all finished products.
 
 **Option category**
-
->   A group of related items that customers can choose from, such as various
->   sizes of computer monitors.
+A group of related items that customers can choose from, such as various sizes of computer monitors.
 
 **Option setting**
-
->   A setting that controls the information that appears on a report, such as
->   sorting method, detail level, and range restriction.
+A setting that controls the information that appears on a report, such as sorting method, detail level, and range restriction.
 
 **Order increment**
-
->   A variable that can be used to calculate order quantities for fixed or
->   period order quantity order policies. The order increment is the number of
->   item units that can be added to the standard order quantity to increase the
->   order size to meet demand.
+A variable that can be used to calculate order quantities for fixed or period order quantity order policies. The order increment is the number of item units that can be added to the standard order quantity to increase the order size to meet demand.
 
 **Order policy**
-
->   A method for calculating the order sizes of automatically generated purchase
->   and manufacturing orders. Manufacturing includes three order policies:
->   lot-for-lot, fixed order quantity and period order quantity.
+A method for calculating the order sizes of automatically generated purchase and manufacturing orders. Manufacturing includes three order policies: lot-for-lot, fixed order quantity and period order quantity.
 
 **Originating currency**
-
->   The alternate currency that a multicurrency transaction was conducted in.
->   *See also Functional currency*.
+The alternate currency that a multicurrency transaction was conducted in. *See also Functional currency*.
 
 **Outsourced item**
-
->   A finished good that requires one or more outsourced services.
+A finished good that requires one or more outsourced services.
 
 **Outsourced service**
-
->   A service that is part of manufacturing processes that is purchased from a
->   vendor.
+A service that is part of manufacturing processes that is purchased from a vendor.
 
 **Outsourcing**
-
->   The practice of using outside vendors to perform certain manufacturing
->   tasks.
+The practice of using outside vendors to perform certain manufacturing tasks.
 
 **Outsourcing routing**
-
->   A routing that includes one or more sequences that are completed by an
->   outsourcing vendor.
+A routing that includes one or more sequences that are completed by an outsourcing vendor.
 
 **Outsourcing vendor**
-
->   A vendor that you purchase outsourced services from.
+A vendor that you purchase outsourced services from.
 
 **Outsourcing work center**
-
->   A work center where outsourced services are performed. An outsourcing work
->   center can be on-site or can be at the vendor site.
+A work center where outsourced services are performed. An outsourcing work center can be on-site or can be at the vendor site.
 
 **Overhead**
-
->   Costs incurred that cannot be directly related to the products or serviced
->   produced. These costs, such as light, heat, supervision, and maintenance can
->   be grouped and distributed to units of products or services by some standard
->   allocation method.
+ Costs incurred that cannot be directly related to the products or serviced produced. These costs, such as light, heat, supervision, and maintenance can be grouped and distributed to units of products or services by some standard allocation method.
 
 **Parallel routing**
-
->   A routing that includes some routing sequences that run concurrently.
+A routing that includes some routing sequences that run concurrently.
 
 **Parent part**
-
->   An item built from the component parts. A parent part can be a subassembly
->   or a final product.
+An item built from the component parts. A parent part can be a subassembly or a final product.
 
 **Pegging**
-
->   To trace an item requirement through the MRP system to find the source of
->   the requirement quantity. Pegging will reveal whether a requirement is
->   driven by a manufacturing order, sales order, purchase order or picklist.
+To trace an item requirement through the MRP system to find the source of the requirement quantity. Pegging will reveal whether a requirement is driven by a manufacturing order, sales order, purchase order or picklist.
 
 **Period order quantity**
-
->   An order policy type that calculates order size for requirements for a
->   period you specify, based on one or more of these variables: standard order
->   quantity, order increment size, minimum order size and maximum order size.
+An order policy type that calculates order size for requirements for a period you specify, based on one or more of these variables: standard order quantity, order increment size, minimum order size and maximum order size.
 
 **Periodic costing**
-
->   *See Standard costing*.
+*See Standard costing*.
 
 **Periodic inventory**
-
->   An inventory tracking method that involves taking inventory on a recurring
->   basis, such as monthly, quarterly or yearly. This is the same as “standard”
->   costing.
+An inventory tracking method that involves taking inventory on a recurring basis, such as monthly, quarterly or yearly. This is the same as “standard” costing.
 
 **Perpetual inventory**
-
->   An inventory tracking method that involves constantly updating inventory
->   each time an item is added or removed.
+An inventory tracking method that involves constantly updating inventory each time an item is added or removed.
 
 **Phantom bill of materials**
-
->   A bill of materials used to describe the components of a parent part that
->   will be built as part of a higher-level parent part. The term “phantom” is
->   used to indicate that the part never really exists as a stocked item, but is
->   built along with the production of the higher-level part that is driving an
->   overall production order. Creating bills of materials as phantoms allows the
->   manufacturing order picklist and the Material Requirements Planning (MRP)
->   features to explode through the phantom item down to the lower-level parts.
+A bill of materials used to describe the components of a parent part that will be built as part of a higher-level parent part. The term “phantom” is used to indicate that the part never really exists as a stocked item, but is built along with the production of the higher-level part that is driving an overall production order. Creating bills of materials as phantoms allows the manufacturing order picklist and the Material Requirements Planning (MRP) features to explode through the phantom item down to the lower-level parts.
 
 **Pick document**
-
->   A group of component transactions that share a type such as Allocate, Issue,
->   Reverse Issue, and that are posted together. A pick document can include
->   component transactions for multiple manufacturing orders, items, or sites.
+A group of component transactions that share a type such as Allocate, Issue, Reverse Issue, and that are posted together. A pick document can include component transactions for multiple manufacturing orders, items, or sites.
 
 **Picklist**
-
->   A list of the items and quantities of items that are required to fill a
->   manufacturing order.
+A list of the items and quantities of items that are required to fill a manufacturing order.
 
 **Planner code**
-
->   A code that identifies the individual responsible for the production of the
->   item.
+A code that identifies the individual responsible for the production of the item.
 
 **Planning routing**
-
->   A routing used to determine resource requirements for a potential
->   manufacturing order. If negotiations with the customer are successful, the
->   planning routing can be converted into an active routing and used to fill a
->   manufacturing order.
+A routing used to determine resource requirements for a potential manufacturing order. If negotiations with the customer are successful, the planning routing can be converted into an active routing and used to fill a manufacturing order.
 
 **Pointer routing**
-
->   A pointer routing is used to outline a series of steps that are common to
->   all items produced by your plant. For example, if each item needs to be
->   tested by quality assurance, packaged and shipped, a routing can be defined
->   to cover these steps for all items that you manufacture.
+A pointer routing is used to outline a series of steps that are common to all items produced by your plant. For example, if each item needs to be tested by quality assurance, packaged and shipped, a routing can be defined to cover these steps for all items that you manufacture.
 
 **Post-to site**
-
->   The site where the finished product will be stored prior to delivery to the
->   customer. This location can be a department, a warehouse, or another plant.
+The site where the finished product will be stored prior to delivery to the customer. This location can be a department, a warehouse, or another plant.
 
 **Primary routing**
-
->   A routing that provides the instructions for building an item. It is a basis
->   for scheduling and resource estimates. The primary routing information is
->   used to determine the required lead time for manufacturing the product. Each
->   item can have only one active primary routing.
+A routing that provides the instructions for building an item. It is a basis for scheduling and resource estimates. The primary routing information is used to determine the required lead time for manufacturing the product. Each item can have only one active primary routing.
 
 **Process security**
-
->   A type of security that allows you to restrict access to certain procedures
->   or processes within Manufacturing.
+A type of security that allows you to restrict access to certain procedures or processes within Manufacturing.
 
 **Process security set**
-
->   A password or list of user IDs you define to restrict authority for
->   completing a Manufacturing process. You can use one process security set for
->   all restricted procedures, or you can create different process security sets
->   for different procedures.
+A password or list of user IDs you define to restrict authority for completing a Manufacturing process. You can use one process security set for all restricted procedures, or you can create different process security sets for different procedures.
 
 **Production variance**
-
->   The difference between the actual and estimated costs for a manufacturing
->   order, based on the working routing, the picklist, and labor and machine
->   codes.
+The difference between the actual and estimated costs for a manufacturing order, based on the working routing, the picklist, and labor and machine codes.
 
 **Promise date**
-
->   The date that the customer has been told to expect receipt of the order.
+The date that the customer has been told to expect receipt of the order.
 
 **Promotion**
-
->   Special pricing offered on a particular option for a configured item.
-
->   A special pricing offered on a particular option for a configured item.
+Special pricing offered on a particular option for a configured item.
 
 **Purchase order**
-
->   A formal request for goods or services. The purchase order shows the
->   quantity of goods ordered, expected receipt date, and supplier name. The
->   purchase order may also include other information pertaining to the delivery
->   of the item, such as Free On Board (F.O.B.) points.
+A formal request for goods or services. The purchase order shows the quantity of goods ordered, expected receipt date, and supplier name. The purchase order may also include other information pertaining to the delivery of the item, such as Free On Board (F.O.B.) points.
 
 **QA Required**
-
->   A designation for purchased items that must pass a quality inspection before
->   being added to your inventory.
+A designation for purchased items that must pass a quality inspection before being added to your inventory.
 
 **Quantity damaged**
-
->   The total items, if any, damaged during shipping.
+The total items, if any, damaged during shipping.
 
 **Quantity ordered**
-
->   The amount of the item requested on a single purchase order.
+The amount of the item requested on a single purchase order.
 
 **Quantity received**
+The amount of the item received from the supplier.
 
->   The amount of the item received from the supplier.
-
-**Quantity to fill** An amount of a product that was ordered but has not been
-received.
+**Quantity to fill** 
+An amount of a product that was ordered but has not been received.
 
 **Query**
-
->   A search through a specific set of records for certain information.
+A search through a specific set of records for certain information.
 
 **Queue time**
-
->   The number of hours spent waiting for the operation to begin.
-
->   The number of hours spent waiting for an operation to begin.
+The number of hours spent waiting for an operation to begin.
 
 **Quick manufacturing order**
-
->   A manufacturing order that doesn’t require you to collect information about
->   labor and machine time and material costs when the order is closed.
+A manufacturing order that doesn’t require you to collect information about labor and machine time and material costs when the order is closed.
 
 **Quote**
-
->   A company’s offered price for an item that a customer or a potential
->   customer has requested. Quotes can be transferred to another document type,
->   deleted or voided.
+A company’s offered price for an item that a customer or a potential customer has requested. Quotes can be transferred to another document type, deleted or voided.
 
 **Raw materials**
-
->   Items used to build products. They can be individual items like nuts, screws
->   and diodes, or they can be subassemblies.
+Items used to build products. They can be individual items like nuts, screws and diodes, or they can be subassemblies.
 
 **Record**
-
->   A group of computer data tied together by a common key. (All of one item's
->   information—from quantity and site information to engineering data to bill
->   of materials data—is the item's record.)
+A group of computer data tied together by a common key. (All of one item's information—from quantity and site information to engineering data to bill of materials data—is the item's record.)
 
 **Reference designator**
-
->   Information that specifies where components should be used in an assembly,
->   such as the placement of four resistors on a printed circuit board.
+Information that specifies where components should be used in an assembly, such as the placement of four resistors on a printed circuit board.
 
 **Regular bill of materials**
-
->   A simple, single-level bill of materials.
+A simple, single-level bill of materials.
 
 **Replaced item**
-
->   An item in a mass update to bills of materials that is removed from bills of
->   materials. A replacement item might or might not be substituted for the
->   replaced item.
+An item in a mass update to bills of materials that is removed from bills of materials. A replacement item might or might not be substituted for the replaced item.
 
 **Replacement item**
-
->   An item in a mass update to bills of materials that is added to bills of
->   materials. A replacement item might be an addition to a bill of materials,
->   or might be a substitution for a replaced item.
+An item in a mass update to bills of materials that is added to bills of materials. A replacement item might be an addition to a bill of materials, or might be a substitution for a replaced item.
 
 **Return**
-
->   An item or merchandise returned by a customer to your company. A return
->   decreases the customer's balance on account and, if you choose, increases
->   inventory quantities.
+An item or merchandise returned by a customer to your company. A return decreases the customer's balance on account and, if you choose, increases inventory quantities.
 
 **Revalue**
-
->   To finalize rolled-up standard cost changes. Revaluing replaces existing
->   standard cost information with new standard cost information, which is used
->   in your accounting processes. As you change your standard cost information,
->   you might roll up costs several times, but probably will revalue items only
->   at certain points.
+To finalize rolled-up standard cost changes. Revaluing replaces existing standard cost information with new standard cost information, which is used in your accounting processes. As you change your standard cost information, you might roll up costs several times, but probably will revalue items only at certain points.
 
 **Revenue/expense code**
-
->   A short identifier used to categorize expenses and revenues linked to a job.
+A short identifier used to categorize expenses and revenues linked to a job.
 
 **Reverse allocate**
-
->   A component transaction type where items that have been allocated to a
->   manufacturing order are unallocated. *See also Allocate*.
+A component transaction type where items that have been allocated to a manufacturing order are unallocated. *See also Allocate*.
 
 **Reverse Issue**
-
->   A component transaction type where components that were issued to a
->   manufacturing order (which removes them from inventory and adds them to WIP)
->   are removed from WIP and put again in inventory. *See also Issue*.
+A component transaction type where components that were issued to a manufacturing order (which removes them from inventory and adds them to WIP) are removed from WIP and put again in inventory. *See also Issue*.
 
 **Reverse Scrap**
-
->   A component transaction type where components that were scrapped for a
->   manufacturing order are restored to the issued (and not scrapped) quantity
->   for the order. *See also Scrap*.
+A component transaction type where components that were scrapped for a manufacturing order are restored to the issued (and not scrapped) quantity for the order. *See also Scrap*.
 
 **Roll up**
-
->   To apply calculations based on changes to standard cost information to
->   items. If you change the cost of a raw material that is part of several
->   subassemblies and finished goods, “rolling up” that change will result in
->   calculations that will determine the new standard costs of the subassemblies
->   and finished goods.
-
->   As you change your standard cost information, you might roll up costs
->   several times, but probably will revalue items only at certain points.
+To apply calculations based on changes to standard cost information to items. If you change the cost of a raw material that is part of severa subassemblies and finished goods, “rolling up” that change will result in calculations that will determine the new standard costs of the subassemblies and finished goods. As you change your standard cost information, you might roll up costs several times, but probably will revalue items only at certain points.
 
 **Routing**
+A detailed set of instructions that describes how to create a particular item. Routings include operations to be performed, the scheduling sequence, machines and work centers involved, and hours required for setup and run times. Routings also can include information about tooling, operator skill levels, inspection needs, testing requirements, and so on.
 
->   A detailed set of instructions that describes how to create a particular
->   item. Routings include operations to be performed, the scheduling sequence,
->   machines and work centers involved, and hours required for setup and run
->   times. Routings also can include information about tooling, operator skill
->   levels, inspection needs, testing requirements, and so on.
-
->   In engineering change management, a routing is a list of users who must
->   review an engineering change request before it becomes a change order, and
->   who must review a change order before it's finalized.
+In engineering change management, a routing is a list of users who must review an engineering change request before it becomes a change order, and who must review a change order before it's finalized.
 
 **Routing preference**
-
->   An individual user choice on how information is displayed or processed for
->   update in the routings subsystem. Preferences can control such actions as
->   substituting one description for another or appending work center operations
->   notes on to routing notes.
+An individual user choice on how information is displayed or processed for update in the routings subsystem. Preferences can control such actions as substituting one description for another or appending work center operations notes on to routing notes.
 
 **Routing sequence**
-
->   A single step in the manufacturing process. Some routings will contain
->   multiple steps while others will have only a single step. Examples of a
->   sequence include assembly, painting, drying, etc.
+A single step in the manufacturing process. Some routings will contain multiple steps while others will have only a single step. Examples of a sequence include assembly, painting, drying, etc.
 
 **Routing sheets**
-
->   *See Routing*.
+*See Routing*.
 
 **Run labor code**
-
->   A labor code that identifies the skill requirements to perform the operation
->   as defined.
+A labor code that identifies the skill requirements to perform the operation as defined.
 
 **Run orders**
-
->   *See Manufacturing order*.
+*See Manufacturing order*.
 
 **Sales order**
-
->   A request for goods or services. Sales orders can be Open (ready to be
->   filled) or Planned (hold pending credit check or other criteria).
+A request for goods or services. Sales orders can be Open (ready to be filled) or Planned (hold pending credit check or other criteria).
 
 **Sampling**
-
->   A statistical process of selecting a portion of a large group of items to be
->   inspected. From the sample you select—and your inspection results for the
->   sample—you can draw inferences about the overall quality of the entire item
->   quantity.
+A statistical process of selecting a portion of a large group of items to be inspected. From the sample you select—and your inspection results for the sample—you can draw inferences about the overall quality of the entire item quantity.
 
 **SCAR**
-
->   *See Supplier Corrective Action Request*.
+*See Supplier Corrective Action Request*.
 
 **Scheduling data**
-
->   The lead time needed to manufacture an item on a bill of materials and the
->   amount of scrap materials produced by the manufacturing process.
+The lead time needed to manufacture an item on a bill of materials and the amount of scrap materials produced by the manufacturing process.
 
 **Scheduling preference**
-
->   A user preference that controls the allocation of resources to a particular
->   manufacturing order. Scheduling preferences identify additional resources
->   that may be available and define waiting periods for a sequence.
+A user preference that controls the allocation of resources to a particular manufacturing order. Scheduling preferences identify additional resources that may be available and define waiting periods for a sequence.
 
 **Scrap**
-
->   A component transaction type where components that are issued to a
->   manufacturing order are flagged to be scrapped. Scrapped component costs are
->   applied to the manufacturing order costs, but the quantities aren’t.
+A component transaction type where components that are issued to a manufacturing order are flagged to be scrapped. Scrapped component costs are applied to the manufacturing order costs, but the quantities aren’t.
 
 **Sequence number**
-
->   A number assigned to a particular step in a routing. Each step (or sequence)
->   represents an operation in the manufacturing process. The sequence number
->   controls the order in which steps are executed.
+A number assigned to a particular step in a routing. Each step (or sequence) represents an operation in the manufacturing process. The sequence number controls the order in which steps are executed.
 
 **Serial-numbered item**
-
->   An inventoried item that is assigned a unique identifier, which can be
->   letters, numbers, or a combination of letters and numbers.
+An inventoried item that is assigned a unique identifier, which can be letters, numbers, or a combination of letters and numbers.
 
 **Serial-number–tracked item**
-
->   *See Serial-numbered item*.
+*See Serial-numbered item*.
 
 **Serial-tracked**
-
->   *See Serial-numbered item*.
+*See Serial-numbered item*.
 
 **Setup cost**
-
->   The cost of preparing a work area for production. Setup costs might include
->   the cost of calibrating machines or gathering the necessary tools and
->   resources.
+The cost of preparing a work area for production. Setup costs might include the cost of calibrating machines or gathering the necessary tools and resources.
 
 **Setup labor code**
-
->   A labor code that identifies the skill requirements for the person preparing
->   the work area prior to performing the manufacturing task.
+A labor code that identifies the skill requirements for the person preparing the work area prior to performing the manufacturing task.
 
 **Setup time**
-
->   The number of hours needed to prepare the work area prior to the operation.
+The number of hours needed to prepare the work area prior to the operation.
 
 **Ship date**
-
->   The date when a sales order leaves your warehouse or office.
+The date when a sales order leaves your warehouse or office.
 
 **Shipping method**
-
->   The manner in which the items are transported from the supplier to the
->   manufacturer. Examples of shipping methods include FedEx, rail, air freight,
->   etc.
+The manner in which the items are transported from the supplier to the manufacturer. Examples of shipping methods include FedEx, rail, air freight, etc.
 
 **Shop calendar**
-
->   A calendar of up and down days—days when the plant is in production and when
->   it isn’t—for an entire manufacturing facility.
+A calendar of up and down days—days when the plant is in production and when it isn’t—for an entire manufacturing facility.
 
 **Shop order**
-
->   *See Manufacturing order*.
+*See Manufacturing order*.
 
 **Shop rate**
-
->   The average pay rate for the pay grade. It is the figure that is used when
->   labor costs are estimated for a manufacturing order.
+The average pay rate for the pay grade. It is the figure that is used when labor costs are estimated for a manufacturing order.
 
 **Shrinkage**
-
->   The loss of materials. You might have raw material shrinkage—such as when
->   some component items are defective and can't be used in manufacturing—or you
->   might have parent part shrinkage—such as when not all manufactured items
->   meet your product standards.
+The loss of materials. You might have raw material shrinkage—such as when some component items are defective and can't be used in manufacturing—or you might have parent part shrinkage—such as when not all manufactured items meet your product standards.
 
 **Single-level bill of materials**
-
->   A bill of materials that lists components and subassemblies, including the
->   quantities of each, that make up the parent part. *See also Multi-level bill
->   of materials*.
+A bill of materials that lists components and subassemblies, including the quantities of each, that make up the parent part. *See also Multi-level bill of materials*.
 
 **Site**
-
->   A location that you have defined for storing items. A site could be a
->   department, a plant, or a warehouse. The number of sites depends on your
->   organizational structure.
+A location that you have defined for storing items. A site could be a department, a plant, or a warehouse. The number of sites depends on your organizational structure.
 
 **Source routing**
-
->   A previously defined routing that contains one or more steps that you want
->   to use in a new routing.
+A previously defined routing that contains one or more steps that you want to use in a new routing.
 
 **Standard cost variance**
-
->   The difference between the actual costs for a manufacturing order for a
->   standard cost item, and the standard cost of the item.
+The difference between the actual costs for a manufacturing order for a standard cost item, and the standard cost of the item.
 
 **Standard costing**
-
->   An accounting method used by some businesses to value their inventories. A
->   company that uses standard costing—also known as “periodic costing”—revalues
->   its inventory periodically to reflect significant changes in the cost of its
->   items.
+An accounting method used by some businesses to value their inventories. A company that uses standard costing—also known as “periodic costing”—revalues its inventory periodically to reflect significant changes in the cost of its items.
 
 **Standard order quantity**
-
->   A variable that can be used to calculate order quantities for fixed or
->   period order quantity order policies. It is similar to a minimum order
->   quantity, requiring no less than a set amount for an order, but it can be
->   increased, either by increments or multiples of the standard order quantity.
+A variable that can be used to calculate order quantities for fixed or period order quantity order policies. It is similar to a minimum order quantity, requiring no less than a set amount for an order, but it can be increased, either by increments or multiples of the standard order quantity.
 
 **Subassembly**
-
->   A part that is both a component and a parent part. An assembly that is used
->   in the manufacture of a higher-order assembly.
+A part that is both a component and a parent part. An assembly that is used in the manufacture of a higher-order assembly.
 
 **Super bill of materials**
-
->   A list of all the component items that can possibly be included the bill of
->   materials for a finished item. For example, a computer manufacturer might
->   develop a super bill of materials that includes several options for hard
->   disks, RAM, monitors, keyboards, mice and other peripherals. No computer can
->   include all the options, but all the options must be included in the super
->   bill of materials.
+A list of all the component items that can possibly be included the bill of materials for a finished item. For example, a computer manufacturer might develop a super bill of materials that includes several options for hard disks, RAM, monitors, keyboards, mice and other peripherals. No computer can include all the options, but all the options must be included in the super bill of materials.
 
 **SUPER BOM**
-
->   *See Super bill of materials*.
+*See Super bill of materials*.
 
 **Supplier**
-
->   A person or company that supplies goods or services to a manufacturer.
+A person or company that supplies goods or services to a manufacturer.
 
 **Supplier Corrective Action**
 
 **Request**
-A formal report to be sent to a supplier to involve the supplier in
-resolving problems with defective parts. SCARs describe the problems you’ve
-found—including item numbers, lot numbers, dates and test results—and might
-outline possible areas for the supplier to research to prevent the defect
-from recurring. Suppliers usually are required to respond to the SCAR
-reports with information about the cause of the defect and the steps to be
-taken to prevent its recurrence.
+A formal report to be sent to a supplier to involve the supplier in resolving problems with defective parts. SCARs describe the problems you’ve found—including item numbers, lot numbers, dates and test results—and might outline possible areas for the supplier to research to prevent the defect from recurring. Suppliers usually are required to respond to the SCAR reports with information about the cause of the defect and the steps to be taken to prevent its recurrence.
 
 **Template**
-A routing outline that you can use to quickly and efficiently build new
-routings. Each time you need to create a new routing, you can customize the
-template and give it a unique routing name.
+A routing outline that you can use to quickly and efficiently build new routings. Each time you need to create a new routing, you can customize the template and give it a unique routing name.
 
 **Time fence**
 The minimum amount of time required for production of an item. When MRP is used to create planned manufacturing orders or purchase orders, the orders automatically are scheduled outside the time fence.
