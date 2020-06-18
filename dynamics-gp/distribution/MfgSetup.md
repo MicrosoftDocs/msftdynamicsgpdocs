@@ -3519,6 +3519,7 @@ Standard Cost Items
 Standard Cost items Accounts and Costs used during a Reverse Issue Transaction where FG=Finished good and Item=Component
 
 | **DR/CR** | **Account**                                | **Cost Used**                             |
+|-----------|------------------------------------------- |-------------------------------------------|
 | DR        | Inventory Material (Item Account Maint)    | Material Cost * Quantity                  |
 | DR        | Inventory – Material Fixed Overhead        | Material Fixed Overhead Cost * Quantity   |
 | DR        | Inventory – Material Variable Overhead     | Material Variable Overhead Cost* Quantity |
@@ -3541,6 +3542,7 @@ Standard Cost items Accounts and Costs used during a Reverse Issue Transaction w
 Example of Accounts and Costs used during a Reverse issue transaction for a Standard Item One (FG =Finished Good; Item = component)
 
 | **DR/CR** | **Account**                                | **Cost Used**       |
+|-----------|------------------------------------------- |---------------------|
 | DR        | Inventory                                  | $3.35 * 1 = $3.35   |
 | DR        | Inventory – Material Fixed Overhead        | $.50 * 1 = $.50     |
 | DR        | Inventory – Material Variable Overhead     | $.15 * 1 = $.15     |
@@ -3560,6 +3562,7 @@ Transactions stemming from labor or machine data collection will NEVER post thou
 Actual Cost Item Accounts and Costs used during a Labor Transaction where FG=Finished good and Item= Component 
 
 | **DR/CR** | **Account**                                | **Cost Used**                             |
+|-----------|------------------------------------------- |-------------------------------------------|
 | DR        | WIP-Labor (FG -Item Account Maintenance)   | Labor Cost Collected                      |
 | DR        | WIP-Labor Fixed Overhead                   | Labor Fixed Overhead Collected            |
 | DR        | WIP-Labor Variable Overhead                | Labor Variable Overhead Collected         |
@@ -3577,6 +3580,226 @@ Example of Accounts and Costs used during a Labor Transaction for an actual cost
 | CR        | Applied – Labor                  | $.21            |
 | CR        | Applied – Labor Fixed Overhead   | $.02            |
 | CR        | Applied – Labor Variable Overhead| $.01            |
+
+
+Standard Cost Items
+Standard Cost Item Accounts and Costs used during a Labor Transaction where FG=Finished good and Item=Component
+
+| **DR/CR** | **Account**                                | **Cost Used**                             |
+|-----------|------------------------------------------- |-------------------------------------------|
+| DR        | WIP-Labor (FG -Item Account Maintenance)   | Labor Cost Collected                      |
+| DR        | WIP-Labor Fixed Overhead                   | Labor Fixed Overhead Collected            |
+| DR        | WIP-Labor Variable Overhead                | Labor Variable Overhead Collected         |
+| CR        | Applied – Labor (Labor Code Definitions )  | Labor Cost Collected                      |
+| CR        | Applied – Labor Fixed Overhead             | Labor Fixed Overhead Collected            |
+| CR        | Applied – Labor Variable Overhead          | Labor Variable Overhead Collected         |
+
+Example of Accounts and Costs used during a Labor Transaction for a standard cost MAKE item (where labor is collected on the finished good not the component)
+
+| **DR/CR** | **Account**                      | **Cost Used**   |
+|-----------|--------------------------------- |-----------------|
+| DR        | WIP Labor                        | $.21            |
+| DR        | WIP-Labor Fixed Overhead         | $.02            |
+| DR        | WIP-Labor Variable Overhead      | $.01            |
+| CR        | Applied – Labor                  | $.21            |
+| CR        | Applied – Labor Fixed Overhead   | $.02            |
+| CR        | Applied – Labor Variable Overhead| $.01            |
+
+
+Machine Data Collection
+Transactions > Manufacturing > WIP > Data Collection
+Audit Trail Code example: GLTRX00000123
+
+Transactions stemming from labor or machine data collection will NEVER post through the GL.  These transactions will only post TO the GL and must be posted from the following location: Transactions > Financial > Batches.
+
+Actual Cost Items
+Actual Cost Item Accounts and Cost used during a Machine Transaction where FG=Finished Good and Item=Component 
+
+| **DR/CR** | **Account**                                  | **Cost Used**                               |
+|-----------|--------------------------------------------- |---------------------------------------------|
+| DR        | WIP-Machine (FG -Item Account Maintenance)   | Machine Cost Collected                      |
+| DR        | WIP-Machine Fixed Overhead                   | Machine Fixed Overhead Collected            |
+| DR        | WIP-Machine Variable Overhead                | Machine Variable Overhead Collected         |
+| CR        | Machine–Applied (Machine Definitions)        | Machine Cost Collected                      |
+| CR        | Machine–Fixed Overhead Applied               | Machine Fixed Overhead Collected            |
+| CR        | Machine - Variable Overhead Applied          | Machine Variable Overhead Collected         |
+
+Example of Accounts and Costs used during a Machine Transaction for an actual cost MAKE item where machine is collected for the finished good not the component
+
+
+| **DR/CR** | **Account**                            | **Cost Used**      |
+|-----------|--------------------------------------- |--------------------| 
+| DR        | WIP-Machine                            | $.40               |
+| DR        | WIP-Machine Fixed Overhead             | $.08               |
+| DR        | WIP-Machine Variable Overhead          | $.11               |
+| CR        | Machine–Applied (Machine Definitions)  | $.40               |
+| CR        | Machine–Fixed Overhead Applied         | $.08               |
+| CR        | Machine - Variable Overhead Applied    | $.11               |
+
+Standard Cost Items
+Machine Applied accounts pull from the Machine Definition window (Cards > Manufacturing > Machine)
+
+Standard Cost Item Accounts and Costs during a Machine Transaction where FG=Finished Good
+
+| **DR/CR** | **Account**                                  | **Cost Used**                               |
+|-----------|--------------------------------------------- |---------------------------------------------|
+| DR        | WIP-Machine (FG -Item Account Maintenance)   | Machine Cost Collected                      |
+| DR        | WIP-Machine Fixed Overhead                   | Machine Fixed Overhead Collected            |
+| DR        | WIP-Machine Variable Overhead                | Machine Variable Overhead Collected         |
+| CR        | Machine–Applied (Machine Definitions)        | Machine Cost Collected                      |
+| CR        | Machine–Fixed Overhead Applied               | Machine Fixed Overhead Collected            |
+| CR        | Machine - Variable Overhead Applied          | Machine Variable Overhead Collected         |
+
+
+Example of Accounts and Costs used during a Machine Transaction for a standard cost MAKE item where machine is collected on finished good not the component
+
+| **DR/CR** | **Account**                            | **Cost Used**      |
+|-----------|--------------------------------------- |--------------------| 
+| DR        | WIP-Machine                            | $.40               |
+| DR        | WIP-Machine Fixed Overhead             | $.08               |
+| DR        | WIP-Machine Variable Overhead          | $.11               |
+| CR        | Machine–Applied (Machine Definitions)  | $.40               |
+| CR        | Machine–Fixed Overhead Applied         | $.08               |
+| CR        | Machine - Variable Overhead Applied    | $.11               |
+
+
+MO Receipt
+MO Receipt will deal with these areas:  raw material, labor, machine, finished goods.  These will be different depending upon previous actions in manufacturing.
+
+MO Receipt Entry 
+Transactions > Manufacturing > Manufacturing Orders > MO Receipt Entry
+Audit Trail Code example: INADJ000000123
+
+If material was previously issued, and no other quantities are backflushed at this time, an inventory transaction will increase the finished good quantities and remove the material from WIP.
+
+If material was NOT previously issued or if more material is being backflushed, the first inventory adjustment will decrease inventory On Hand from the “Draw from Site” Site and places this additional material temporarily to WIP until the finished good receipt transaction occurs.  For examples of this transactions see the Issue material via Component Transaction Entry.  
+
+***For Actual Cost items ONLY*** If the box on the MO Receipt Entry window is marked to use all collected labor and machine cost available, the labor put into WIP or the actual labor collected will be applied to this finished good.  If this box is NOT marked, standard labor values pulled from the routing will be applied to this MO.  (This could result in a variance if the actual labor dollars collected is different than the labor dollars applied to the MO).  At MO Receipt entry, additional labor values can be entered at this time.  If additional labor or machine values are entered, this could result in a variance for this MO.
+
+Actual Cost Items
+Receipt of finished goods (assuming the checkbox is marked to use actual labor collected)
+
+Actual Cost Item Accounts and Costs used during receipt of finished goods where FG=Finished good)
+
+| **DR/CR** | **Account**                                  | **Cost Used**                                     |
+|-----------|--------------------------------------------- |---------------------------------------------      |
+| DR        | Inventory (FG-Item Account Maintenance)      | Current Cost of WIP collected to date             |
+| CR        | WIP – Material(FG-Item Account Maint-Costing)| Current Cost * Quantity                           |
+| CR        | WIP-Labor (FG -Item Account Maintenance)     | WIP value of labor collected via data collection  |
+| CR        | WIP-Labor Fixed Overhead                     | WIP value of labor collected via data collection  |
+| CR        | WIP-Labor Variable Overhead                  | WIP value of labor collected via data collection  |
+| CR        | WIP - Machine–(FG Item Account Maint)        | WIP value of Machine collected via data collection|
+| CR        | WIP - Machine–Fixed Overhead Applied         | WIP value of Machine collected via data collection|
+| CR        | WIP - Machine-Variable Overhead Applied      | WIP value of Machine collected via data collection|
+
+
+Example of Accounts and Costs used during a receipt of the actual cost finished good Finished good = (QTY = 1) – Assume 1 hour of labor value collected and the box marked to use the actual WIP collected.
+
+| **DR/CR** | **Account**                    | **Cost Used**                                          |
+|-----------|------------------------------- |---------------------------------------------           |
+|DR	      |Inventory 	                     |   $5.30 * 1 = $5.30                                    |
+|CR	      |WIP – Material	               |   $5.00 * 1 = $5.00 (Actual Item One + Actual Item Two)|
+|CR	      |WIP – Labor	                  |   $.27                                                 |  
+|CR	      |WIP – Labor Fixed Overhead	   |   $.02                                                 |
+|CR	      |WIP – Labor Variable Overhead	|   $.01                                                 | 
+
+Example of Accounts and Costs used during receipt of the actual cost finished good Finished good (QTY = 1) – Assume .50 hour labor value collected via data collection and the box marked to use actual WIP collected is NOT checked.  This transaction will allow WIP to go negative.  When the MO is closed a variance will be calculated.  Assume to say Continue to the message to allow WIP to go Negative.  (There is an option in Manufacturing Setup to allow WIP to go negative)
+
+| **DR/CR** | **Account**                    | **Cost Used**                                          |
+|-----------|------------------------------- |---------------------------------------------           |
+|DR	      |Inventory 	                     |   $5.95 * 1 = $5.95                                    |
+|CR	      |WIP – Material	               |   $5.00 * 1 = $5.00 (Actual Item One + Actual Item Two)|
+|CR	      |WIP – Labor	                  |   $.27                                                 |  
+|CR	      |WIP – Labor Fixed Overhead	   |   $.02                                                 |
+|CR	      |WIP – Labor Variable Overhead	|   $.01                                                 |
+|CR      	|WIP- Machine                    |   $.43                                                 | 
+|CR	      |WIP – Machine Fixed Overhead	   |   $.10                                                 |
+|CR	      |WIP – Machine Variable Overhead |   $.12                                                 |
+
+
+Standard Cost Item
+Standard Cost item (Quantity = number of finished goods that are posting).  Will also use the standard quantity for labor and machine even if the routing sequence is not marked to backflush and data collection was less than or more than standard.
+
+
+Standard Cost Item Accounts and Costs used during receipt of a finished good where FG=Finished Good
+
+| **DR/CR** | **Account**                                  | **Cost Used**                                     |
+|-----------|--------------------------------------------- |---------------------------------------------      |
+|DR      	|Inventory (FG-Item Account Maintenance)	     | Material Cost * Quantity                          |
+|DR	      |Inventory-Material Fixed Overhead             | Material Fixed Overhead Cost * Quantity           |
+|DR	      |Inventory–Material Variable Overhead          | Material Variable Overhead Cost * Quantity        |
+|DR	      |Inventory–Labor (FG-Item Acct Maint-Costing)  | Labor  Cost * Quantity                            |
+|DR	      |Inventory-Labor Fixed Overhead                | Labor Fixed Overhead Cost * Quantity              |
+|DR	      |Inventory-Labor Variable Overhead             | Labor Variable Overhead Cost * Quantity           |
+|DR	      |Inventory-Machine                             | Machine  Cost * Quantity                          |
+|DR	      |Inventory-Machine  Fixed Overhead             | Machine  Fixed Overhead Cost * Quantity           |
+|DR	      |Inventory-Machine Variable Overhead           | Machine  Variable Overhead Cost * Quantity        |
+|CR	      |WIP –Material(FG-Item Acct Maint-Costing)	  | Material Cost * Quantity                          |
+|CR	      |WIP – Material Fixed Overhead                 | Material Fixed Overhead Cost * Quantity           |
+|CR	      |WIP – Material Variable Overhead              | Material Variable Overhead Cost* Quantity         |
+|CR	      |WIP – Labor(FG-Item Account Maint-Costing)	  | Labor Cost * Quantity                             |
+|CR	      |WIP - Labor Fixed Overhead                    | Labor Fixed Overhead Costs * Quantity             |
+|CR	      |WIP - Labor Variable Overhead                 | Labor Variable Overhead Costs * Quantity          |
+|CR	      |WIP - Machine (FG-Item Account Maint-Costing) | Machine Cost * Quantity                           |
+|CR	      |WIP - Machine  Fixed Overhead                 | Machine Fixed Overhead Cost* Quantity             |
+|CR	      |WIP - Machine Variable Overhead               | Machine Variable Overhead Cost * Quantity         |
+
+Example of Accounts and Costs used during receipt of a standard cost finished good (QTY = 1)
+
+| **DR/CR** | **Account**                                | **Cost Used**       |
+|-----------|-------------------------------             |----------------     |
+| DR        | Inventory                                  | $4.10 * 1 = $4.10   |
+| DR        | Inventory – Material Fixed Overhead        | $.55 * 1 = $.55     |
+| DR        | Inventory – Material Variable Overhead     | $.35 * 1 = $.35     |
+| DR        | Inventory - Labor (Item Account Maint)     | $.27 * 1 = $.27     |
+| DR        | Inventory - Labor Fixed Overhead           | $.02 * 1 = $.02     |
+| DR        | Inventory - Labor Variable Overhead        | $.01 * 1 = $.01     |
+| DR        | Inventory - Machine (Item Account Maint)   | $.43 * 1 = $.43     |
+| DR        | Inventory - Machine Fixed Overhead         | $.10 * 1 = $.10     |
+| DR        | Inventory - Machine Variable Overhead      | $.12 * 1 = $.12     |
+| CR        | WIP  - Material (Item Account Maintenance) | $4.10 * 1 = $4.10   |
+| CR        | WIP  - Material Fixed Overhead             | $.55 * 1 = $.55     |
+| CR        | WIP  - Material Variable Overhead          | $.35 * 1 = $.35     |
+| CR        | WIP Labor                                  | $.27 * 1 = $.27     |
+| CR        | WIP-Labor Fixed Overhead                   | $.02 * 1 = $.02     |
+| CR        | WIP-Labor Variable Overhead                | $.01 * 1 = $.01     |
+| CR        | WIP-Machine                                | $.43 * 1 = $.43     |
+| CR        | WIP-Machine Fixed Overhead                 | $.10 * 1 = $.10     |
+| CR        | WIP-Machine Variable Overhead              | $.12 * 1 = $.12     |            
+
+
+Reverse MO Receipt Entry 
+
+The Reverse MO Receipt process reverses the transaction posting from the initial MO Receipt. It will credit inventory and debit the WIP accounts. See MO Receipt Entry for more information.
+
+
+MO Close
+Transaction > Manufacturing > Manufacturing Orders > MO Close
+
+The MO Close process clears the WIP balance after the receipt of the MO has taken place.  Variances can occur for actual and standard cost items, depending on the values entered during the MO receipt process.  The transaction created during the MO close process will use the posting settings assigned in the Posting Setup window for the Financial Series.  
+
+Tools > Setup > Posting > Posting, Series: Financial, Origin: General Entry
+
+If the options ‘Post to General Ledger’ is selected and ‘Post Through General Ledger’ is not selected a variance batch is created that will need to be manually posted via Transactions > Financial > Batches.
+
+If the options ‘Post to General Ledger’ and ‘Post Through General Ledger’ are both selected the variance adjustment will automatically post through the General Ledger.
+Source Document example MFGADJ
+
+Actual Cost Items 
+Actual Cost Item Accounts and Costs used during an MO Close where FG=Finished Good
+
+| **DR/CR** | **Account**                                  | **Cost Used**                                              |
+|-----------|--------------------------------------------- |---------------------------------------------               |
+|DR/CR	   |Variance Material (FG-Item Acct Maint–Costing)| Sum of the following WIP values                            | 
+|DR/CR	   |WIP –Material (FG-Item Acct Maint–Costing)	  | Amount of Material used in MO receipt–amt collected via WIP|
+|DR/CR	   |WIP – Material Fixed Overhead                 | Amount of Material Fixed Overhead in MO receipt via WIP    |
+|DR/CR	   |WIP – Material Variable Overhead              | Amount of Material Variable used in MO receipt via WIP     |
+|DR/CR	   |WIP – Labor (FG-Item Account Maint –Costing)  | Amount of Labor used in MO receipt–amount collected via WIP|
+|DR/CR	   |WIP - Labor Fixed Overhead 	                 | Amount of Labor Fixed Overhead used in MO receipt via WIP  |
+|DR/CR	WIP - Labor Variable Overhead (FG-Item Account Maintenance –Costing)	Amount of Labor Variable Overhead used in MO receipt – amount collected via WIP
+|DR/CR	 WIP - Machine (FG-Item Account Maintenance –Costing)	Amount of Machine used in MO receipt – amount collected via WIP
+|DR/CR	WIP - Machine  Fixed Overhead (FG-Item Account Maintenance –Costing)	Amount of Machine Fixed Overhead used in MO receipt – amount collected via WIP
+|DR/CR	WIP - Machine Variable Overhead (FG-Item Account Maintenance –Costing)	Amount of Machine Variable Overhead used in MO receipt – amount collected via WIP
 
 
 **Glossary**
