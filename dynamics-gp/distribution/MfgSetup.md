@@ -3356,6 +3356,96 @@ Example of Accounts and Costs used during Invoicing for a standard cost item whe
 | CR        | Inventory - Machine Variable Overhead      | $.12 * 1 = $.12                   |
 
 
+Returns in Sales order Processing
+Transactions > Sales > Sales Transaction Entry
+Audit Trail Code Example:  SLSTE00000123
+
+
+Actual Cost Items
+Actual Cost Item Accounts and Costs used during a SOP Return 
+
+| **DR/CR** | **Account**                                | **Cost Used**                      |
+|-----------|--------------------------------------------|--------------------                |
+| DR        | Inventory (Item Account Maintenance)       | Current Cost * Quantity            |
+| CR        | COGS (Item Account Maintenance)            | Current Cost * Quantity (Material  |
+
+Example of Accounts and Cost used during a SOP Return for an actual cost finished good item
+
+| **DR/CR** | **Account**                                | **Cost Used**        |
+|-----------|--------------------------------------------|--------------------  |
+| DR        | Inventory                                  | $5.95 * 1 = $5.95    |
+| CR        | COGS                                       | $5.95 * 1 = $5.95    |
+
+Standard Cost Items
+Standard Cost Item Accounts and Costs used during a SOP Return for a finished good item
+
+| **DR/CR** | **Account**                                | **Cost Used**                             |
+| DR        | Inventory Item     (Item Account Maint)    | Material Cost * Quantity                  |
+| DR        | Inventory – Material Fixed Overhead        | Material Fixed Overhead Cost * Quantity   |
+| DR        | Inventory – Material Variable Overhead     | Material Variable Overhead Cost* Quantity |
+| CR        | Inventory - Labor (Item Account Maint)     | Labor Cost * Quantity                     |
+| CR        | Inventory - Labor Fixed Overhead           | Labor Fixed Overhead Cost * Quantity      |
+| CR        | Inventory - Labor Variable Overhead        | Labor Variable Overhead Cost* Quantity    |
+| DR        | Inventory - Machine (Item Account Maint)   | Machine Cost * Quantity                   |
+| DR        | Inventory - Machine Fixed Overhead         | Machine Fixed Overhead Cost * Quantity    |
+| DR        | Inventory - Machine Variable Overhead      | Machine Variable Overhead Cost* Quantity  |
+| CR        | COGS - Material (Item Account Maintenance) | Material Cost * Quantity                  |
+| CR        | COGS - Material Fixed Overhead             | Material Fixed Overhead Cost * Quantity   |
+| CR        | COGS - Material Variable Overhead          | Material Variable Overhead Cost* Quantity |
+| DR        | COGS - Labor (Item Account Maintenance)    | Labor Cost * Quantity                     |
+| DR        | COGS - Labor Fixed Overhead                | Labor Fixed Overhead Cost * Quantity      |
+| DR        | COGS - Labor Variable Overhead             | Labor Variable Overhead Cost* Quantity    |
+| CR        | COGS - Machine (Item Account Maintenance)  | Machine Cost * Quantity                   |
+| CR        | COGS - Machine Fixed Overhead              | Machine Fixed Overhead Cost * Quantity    |
+| CR        | COGS - Machine Variable Overhead           | Machine Variable Overhead Cost* Quantity  |
+
+Example of Accounts and Costs used during a SOP Return for a finished good item
+
+| **DR/CR** | **Account**                           | **Cost Used**                     |
+| DR        | FG - Material                         | $4.10 * 1 = $4.10                 |
+| DR        | FG - Material Fixed Overhead          | $.55 * 1 = $.55                   |
+| DR        | FG - Material Variable Overhead       | $.35 * 1 = $.35                   |
+| CR        | FG -  Labor                           | $.27 * 1 = $.27                   |
+| CR        | FG -  Labor Fixed Overhead            | $.02 * 1 = $.02                   |
+| CR        | FG -  Labor Variable Overhead         | $.01 * 1 = $.01                   |
+| DR        | FG -  Machine                         | $.43 * 1 = $.43                   |
+| DR        | FG -  Machine Fixed Overhead          | $.10 * 1 = $.10                   |
+| DR        | FG -  Machine Variable Overhead       | $.12 * 1 = $.12                   |
+| CR        | COGS - Material                       | $4.10 * 1 = $4.10                 |
+| CR        | COGS - Material Fixed Overhead        | $.55 * 1 = $.55                   |
+| CR        | COGS - Material Variable Overhead     | $.35 * 1 = $.35                   |
+| DR        | COGS - Labor                          | $.27 * 1 = $.27                   |
+| DR        | COGS - Labor Fixed Overhead           | $.02 * 1 = $.02                   |
+| DR        | COGS - Labor Variable Overhead        | $.01 * 1 = $.01                   |
+| CR        | COGS - Machine                        | $.43 * 1 = $.43                   |
+| CR        | COGS - Machine Fixed Overhead         | $.10 * 1 = $.10                   |
+| CR        | COGS - Machine Variable Overhead      | $.12 * 1 = $.12                   |
+
+Manufacturing Order Processing Transactions
+Component Transaction Entry Window
+Transactions -> Manufacturing -> Manufacturing Orders -> Component Transaction Entry
+
+Allocate transaction
+There is no inventory movement or inventory transaction which occurs. When the allocation document is saved with items on the pick doc tab, those items will be allocated.
+
+Reverse Allocation transaction
+There is no inventory movement or inventory transaction which occurs. When the reverse allocation document is saved with items on the pick doc tab, those items will no longer be allocated.
+
+Scrap transaction
+There is no inventory movement or inventory transaction which occurs. When the scrap pick doc is posted with items on the pick doc tab, those items will be ‘flagged’ as being scrapped during the MO process.
+
+Reverse Scrap transaction
+There is no inventory movement or inventory transaction which occurs. When the reverse scrap pick doc is posted with items on the pick doc tab, those items will no longer be ‘flagged’ as being scrapped during the MO process.
+
+Issue Material from Component Transaction Entry
+Issue items from inventory Issue from site to WIP
+Audit Trail Code example: IVADJ00000123
+
+Actual Cost Item
+Issued items are removed from the issue from site and placed into WIP.
+
+
+
 **Glossary**
 
 **Acceptable Quality Level table**
