@@ -2893,10 +2893,7 @@ IMAGE – MFGCRP.jpg
 
 #### Restoring MRP default settings
 
->   You can use the MRP Preferences window to remove the user-defined MRP
->   preference settings you’ve selected. Completing this procedure will make the
->   user preferences for the selected user ID identical to the systemwide
->   default settings.
+You can use the MRP Preferences window to remove the user-defined MRP preference settings you’ve selected. Completing this procedure will make the user preferences for the selected user ID identical to the systemwide default settings.
 
 **To restore MRP default settings:**
 
@@ -3820,25 +3817,135 @@ Standard Cost Item Accounts and Costs used during an MO Close where FG=Finished 
 
 | **DR/CR** | **Account**                                  | **Cost Used**                                              |
 |-----------|--------------------------------------------- |---------------------------------------------               |
-|DR	Variance – Material (FG-Item Account Maintenance-Costing)	Collected Material Cost– FG Material Cost
-|DR	Variance - Material Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Material Fixed Overhead Cost – FG Material Fixed Overhead Cost
-|DR	Variance – Material Variable Overhead (FG-Item Account Maintenance-Costing)	Collected Material Variable Overhead Cost – FG Material Variable Overhead Cost
-|DR	Variance – Labor (FG-Item Account Maintenance-Costing)	Collected Labor Cost– FG Labor Cost
-|DR	Variance -Labor Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Labor Fixed Overhead Cost – FG Labor Fixed Overhead Cost
-|DR	Variance -Labor Variable Overhead (FG-Item Account Maintenance-Costing)	Collected Labor Variable Overhead Cost – FG Labor Variable Overhead Cost
-|DR	Variance -  Machine (FG-Item Account Maintenance-Costing)	Collected Machine Cost – FG Machine  Cost
-|DR	Variance -- Machine  Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Machine Fixed Overhead – FG Machine Fixed Overhead Cost
-|DR	Variance - Machine Variable Overhead (FG-Item Account Maintenance-Costing)	Collected Machine Variable Overhead – FG Machine Variable Overhead Cost
-|CR	WIP –Material (FG-Item Account Maintenance-Costing)	Collected Material Cost– FG Material Cost
-|CR	WIP – Material Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Material Fixed Overhead Cost – FG Material Fixed Overhead Cost
-|CR	WIP – Material Variable Overhead (FG-Item Account Maintenance-Costing)	Collected Material Variable Overhead Cost – FG Material Variable Overhead Cost
-|CR	WIP - Labor(FG-Item Account Maintenance-Costing)	Collected Labor Cost– FG Labor Cost
-|CR	WIP - Labor Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Labor Fixed Overhead Cost – FG Labor Fixed Overhead Cost
-|CR	WIP - Labor Variable Overhead (FG-Item Account Maintenance-Costing)	Collected Labor Variable Overhead Cost – FG Labor Variable Overhead Cost
-|CR	 WIP - Machine (FG-Item Account Maintenance-Costing)	Collected Machine Cost – FG Machine  Cost
-|CR	WIP - Machine  Fixed Overhead (FG-Item Account Maintenance-Costing)	Collected Machine Fixed Overhead – FG Machine Fixed Overhead Cost
-|CR	WIP - Machine Variable Overhead  (FG-Item Account Maintenance-Costing)	Collected Machine Variable Overhead – FG Machine Variable Overhead Cost
+|DR	      |Variance–Material(FG-Item Acct Maint-Costing) |Collected Material Cost– FG Material Cost                   |
+|DR	      |Variance - Material Fixed Overhead            |Collected Material Fixed Overhead Cost–FG Material Fixed OH |
+|DR	      |Variance – Material Variable Overhead         |Collected Material Variable Overhead Cost–FG Matrl Var OH   |
+|DR	      |Variance – Labor                              |Collected Labor Cost– FG Labor Cost                         |
+|DR	      |Variance - Labor Fixed Overhead               |Collected Labor Fixed Overhead Cost–FG Labor Fixed OH Cost  |
+|DR	      |Variance - Labor Variable Overhead	           |Collected Labor Variable Overhead Cost–FG Labor Variable OH |
+|DR	      |Variance - Machine              	           |Collected Machine Cost – FG Machine  Cost                   |
+|DR	      |Variance - Machine  Fixed Overhead            |Collected Machine Fixed Overhead–FG Machine Fixed Overhead  |
+|DR       	|Variance - Machine Variable Overhead          |Collected Machine Variable Overhead–FG Machine Variable OH  |
+|CR	      |WIP–Material(FG-Item Account Maint-Costing)   |Collected Material Cost– FG Material Cost                   |
+|CR	      |WIP–Material Fixed Overhead  	              |Collected Material Fixed Overhead Cost–FG Material Fixed OH |
+|CR	      |WIP–Material Variable Overhead                |Collected Material Variable Overhead Cost–FG Matrl Var OH   |
+|CR	      |WIP - Labor(FG-Item Account Maint-Costing)	  |Collected Labor Cost– FG Labor Cost                         |
+|CR	      |WIP - Labor Fixed Overhead                	  |Collected Labor Fixed Overhead Cost–FG Labor Fixed OH       |
+|CR	      |WIP - Labor Variable Overhead            	  |Collected Labor Variable Overhead Cost–FG Labor Variable OH |
+|CR	      |WIP - Machine(FG-Item Account Maint-Costing)  |Collected Machine Cost – FG Machine  Cost                   |
+|CR	      |WIP - Machine  Fixed Overhead  	              |Collected Machine Fixed Overhead–FG Machine Fixed Overhead  |
+|CR	      |WIP - Machine Variable Overhead               |Collected Machine Variable Overhead–FG Machine Variable OH  |
 
+Example of Accounts and Costs used during the MO Close for a Standard Finished good (QTY = 1) MO Receipt of 2, and the calculation based on Start Quantity
+
+| **DR/CR** | **Account**                                | **Cost Used**       |
+|-----------|-------------------------------             |----------------     |
+| DR        | Inventory                                  | $4.10 * 2 = $8.20   |
+| DR        | Inventory – Material Fixed Overhead        | $.55 * 2 = $1.10    |
+| DR        | Inventory – Material Variable Overhead     | $.35 * 2 = $.70     |
+| DR        | Inventory - Labor (Item Account Maint)     | $.27 * 2 = $.54     |
+| DR        | Inventory - Labor Fixed Overhead           | $.02 * 2 = $.04     |
+| DR        | Inventory - Labor Variable Overhead        | $.01 * 2 = $.02     |
+| DR        | Inventory - Machine (Item Account Maint)   | $.43 * 2 = $.86     |
+| DR        | Inventory - Machine Fixed Overhead         | $.10 * 2 = $.20     |
+| DR        | Inventory - Machine Variable Overhead      | $.12 * 2 = $.24     |
+| CR        | WIP  - Material (Item Account Maintenance) | $4.10 * 2 = $8.20   |
+| CR        | WIP  - Material Fixed Overhead             | $.55 * 2 = $1.10    |
+| CR        | WIP  - Material Variable Overhead          | $.35 * 2 = $.70     |
+| CR        | WIP Labor                                  | $.27 * 2 = $.54     |
+| CR        | WIP-Labor Fixed Overhead                   | $.02 * 2 = $.04     |
+| CR        | WIP-Labor Variable Overhead                | $.01 * 2 = $.02     |
+| CR        | WIP-Machine                                | $.43 * 2 = $.86     |
+| CR        | WIP-Machine Fixed Overhead                 | $.10 * 2 = $.20     |
+| CR        | WIP-Machine Variable Overhead              | $.12 * 2 = $.24     |    
+
+Example of Accounts and Costs used during the MO Close for a Standard Finished good (QTY = 1) but the component was collected at a QTY=2 
+
+| **DR/CR** | **Account**                             | **Cost Used**                                |
+|-----------|-------------------------------          |--------------------------------------------- |
+|DR	      |Variance - Material 	                  |($4.10 * 2) - $4.10 = $4.10                   |
+|DR	      |Variance - Material Fixed Overhead	      |($.55 * 2) - $.55 = $.55                      |
+|DR	      |Variance – Material Variable Overhead	   |($.35 * 2) - $.35 = $.35                      |
+|CR	      |WIP -Material	                           |($4.10 * 2) - $4.10 = $4.10                   |
+|CR	      |WIP- Material Fixed Overhead	            |($.55 * 2) - $.55 = $.55                      |
+|CR	      |WIP- Material Variable Overhead	         |($.35 * 2) - $.35 = $.35                      |
+|DR	      |Variance - Labor	$0.00 collected         |($27. * 2) = $.54                             |
+|DR	      |Variance -Labor Fixed Overhead 	         |$0.00 collected – ($.02  * 2) = $.04          |
+|DR	      |Variance -Labor Variable Overhead 	      |$0.00 collected – ($.01 * 2)= $.02            |
+|CR	      |WIP – Labor	$0.00 collected            |($27. * 2) = $.54                             |
+|CR	      |WIP – Labor Fixed Overhead	            |$0.00 collected – ($.02  * 2) = $.04          |
+|CR	      |WIP – Labor Variable Overhead	         |$0.00 collected – ($.01 * 2) = $.02           |
+|DR	      |Variance -  Machine 	                  |$0.00 collected – ($.43 * 2) = $.86           |
+|DR	      |Variance - Machine  Fixed Overhead 	   |$0.00 collected – ($.10 * 2) = $.20           |
+|DR	      |Variance - Machine Variable Overhead 	   |$0.00 collected – ($.12 * 2) = $.24           |
+|CR	      |WIP - Machine 	$0.00 collected         |($.43 * 2) = $.86                             |
+|CR	      |WIP - Machine  Fixed Overhead 	         |$0.00 collected – ($.10 * 2) = $.20           |
+|CR	      |WIP - Machine Variable Overhead 	      |$0.00 collected – ($.12 * 2) = $.24           |
+
+
+Quick MO
+Transactions > Manufacturing > Manufacturing Orders > Quick MO
+Audit Trail Code example: INADJ00000123
+
+Quick MO will backflush all materials, labor and machine; then post the finished good and finally closes the MO.
+There will be 3 posting transactions:
+1)	The first will be backflushing if labor and machine cost associated with the routing on the finished good.
+2)	The second will be backflushing of the components including any material, machine, or labor associated with the components. 
+3)	The third will be posting of the finished good.
+
+
+Item Cost Revaluation (Replace option)
+Cards > Inventory > Item > Go To > Standard Cost Changes
+OR 
+Routines > Manufacturing > Rollup and Revalue
+Source Document IVADJ, Transaction reference Standard Cost Revaluation
+
+Actual Cost Items 
+Revaluation does not occur, standard cost revaluation is only effective for periodic items.
+
+Standard Cost Items
+Standard Cost Item Accounts and Costs used during a Rollup/Revalue for a finished good item
+
+| **DR/CR** | **Account**                                  | **Cost Used**                                              
+|-----------|--------------------------------------------- |---------------------------------------------               
+|DR/CR	   |Inventory  (Item Account Maintenance)	        |Change in Material Cost * On Hand Quantity
+|DR/CR	   |Inventory - Material Fixed Overhead           |Change in Material Fixed Overhead Cost * On Hand Quantity
+|DR/CR	   |Inventory – Material Variable Overhead        |Change in Material Variable Overhead Cost * On Hand Quantity
+|DR/CR	   |Inventory – Labor (Item Account Maint–Costing)|Change in Labor  Cost * On Hand Quantity
+|DR/CR	   |Inventory -Labor Fixed Overhead               |Change in Labor Fixed Overhead Cost * On Hand Quantity
+|DR/CR	   |Inventory -Labor Variable Overhead            |Change in Labor Variable Overhead Cost * On Hand Quantity
+|DR/CR	   |Inventory -Machine(Item Account Maint–Costing)|Change in Machine  Cost * On Hand Quantity
+|DR/CR	   |Inventory -Machine  Fixed Overhead            |Change in Machine  Fixed Overhead Cost * On Hand Quantity
+|DR/CR	   |Inventory -Machine Variable Overhead          |Change in Machine  Variable Overhead Cost * On Hand Quantity
+|DR/CR	   |Item Cost Revaluation(Item Account Maint)	  |Change in Total Cost * On Hand Quantity
+|DR/CR	   |Rounding Difference (Costing Prefs Default)	  |Rounded difference
+
+
+Note: The Rounding Difference account is used for rounding differences between unit cost using decimal places currency and extended cost using functionally currency.
+
+Example of Accounts and Costs used for revaluation of a Standard Cost buy item where the quantity on hand for the component is 3
+
+| **DR/CR** | **Account**                                | **Cost Used**       |
+|-----------|-------------------------------             |----------------     |
+| DR        | Inventory                                  | $3.35 * 3 = $10.65  |
+| DR        | Inventory – Material Fixed Overhead        | $.50 * 3 = $1.50    |
+| DR        | Inventory – Material Variable Overhead     | $.15 * 3 = $.45     |
+| DR        | Item Cost Revaluation                      | $4.00 * 3 = $12.00  |
+
+Example of Accounts and Costs used for revaluation of a Standard Cost finished good item where the quantity on hand for the finished good is 3
+
+| **DR/CR** | **Account**                                | **Cost Used**       |
+|-----------|-------------------------------             |----------------     |
+| DR        | Inventory                                  | $4.10 * 3 = $12.30  |
+| DR        | Inventory – Material Fixed Overhead        | $.55 * 3 = $1.65    |
+| DR        | Inventory – Material Variable Overhead     | $.35 * 3 = $1.05    |
+| DR        | Inventory - Labor (Item Account Maint)     | $.27 * 3 = $.81     |
+| DR        | Inventory - Labor Fixed Overhead           | $.02 * 3 = $.06     |
+| DR        | Inventory - Labor Variable Overhead        | $.01 * 3 = $.03     |
+| DR        | Inventory - Machine (Item Account Maint)   | $.43 * 3 = $1.29    |
+| DR        | Inventory - Machine Fixed Overhead         | $.10 * 3 = $.30     |
+| DR        | Inventory - Machine Variable Overhead      | $.12 * 3 = $.36     |
+| DR        | Item Cost Revaluation                      | $5.95 * 3 = $17.85  |
 
 
 **Glossary**
