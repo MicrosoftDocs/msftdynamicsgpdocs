@@ -2996,6 +2996,7 @@ Transactions > Inventory > Transaction Entry
 Audit Trail Code example: IVADJ0000000000123
 
 Actual Cost Items
+
 Actual Cost Item Accounts and Costs during Inventory Adjustments
 
 | **DR/CR** | **Account**                                | **Cost Used**      |
@@ -3020,20 +3021,99 @@ Example of Accounts and Costs used during an Inventory Adjustment for an actual 
 
 Standard Cost Items
 Standard Cost Item Accounts and Costs during an Inventory Adjustment  
+
 | **DR/CR** | **Account**                                | **Cost Used**                  |
 |-----------|--------------------------------------------|------------------------------  |
 | DR        | Inventory (Item Account Maintenance)       | Material Cost                  |
 | DR        | Inventory – Material Fixed Overhead        | Material Fixed Overhead Cost   |
 | DR        | Inventory – Material Variable Overhead     | Material Variable Overhead Cost|
 | DR        | Inventory – Labor(Item Acct Maint-Costing) | Labor Cost                     |
-| DR        | Inventory – Material Variable Overhead     | Labor Fixed Overhead Cost      |
-| DR        | Inventory – Material Variable Overhead     | Labor Variable Overhead Cost   |
-| DR        | Inventory – Material Variable Overhead     | Machine Cost                   |
-| DR        | Inventory – Material Variable Overhead     | Machine Fixed Overhead Cost    |
-| DR        | Inventory – Material Variable Overhead     | Machine Variable Overhead Cost |
-| DR        | Inventory – Material Variable Overhead     | Total Standard Cost            |
-| DR        | Inventory – Material Variable Overhead     | Rounding Difference            |
+| DR        | Inventory – Labor Fixed Overhead           | Labor Fixed Overhead Cost      |
+| DR        | Inventory – Labor Variable Overhead        | Labor Variable Overhead Cost   |
+| DR        | Inventory – Machine(Item Acct Maint-Cost)  | Machine Cost                   |
+| DR        | Inventory – Machine Fixed Overhead         | Machine Fixed Overhead Cost    |
+| DR        | Inventory – Machine Variable Overhead      | Machine Variable Overhead Cost |
+| CR        | Inventory Offset(Item Acct Maintenance)    | Total Standard Cost            |
+| DR/CR     | Rounding Account(Cost Preferences Default) | Rounding Difference            |
 
+Example of Accounts and Costs used during an Inventory Adjustment for a standard cost BUY item
+
+| **DR/CR** | **Account**                                | **Cost Used**      |
+|-----------|--------------------------------------------|--------------------|
+| DR        | Inventory                                  | $3.35              |
+| DR        | Inventory – Material Fixed Overhead        | $ .50              |
+| DR        | Inventory – Material Variable Overhead     | $ .15              |
+| CR        | Inventory Offset                           | $4.00              |
+
+Example of Accounts and Costs used for an Inventory Adjustment for a standard cost MAKE item
+
+| **DR/CR** | **Account**                                | **Cost Used**      |
+|-----------|--------------------------------------------|--------------------|
+| DR        | Inventory                                  | $4.10              |
+| DR        | Inventory – Material Fixed Overhead        | $ .55              |
+| DR        | Inventory – Material Variable Overhead     | $ .35              |
+| DR        | Inventory – Labor                          | $ .27              |
+| DR        | Inventory – Labor Fixed Overhead           | $ .02              |
+| DR        | Inventory – Labor Variable Overhead        | $ .01              |
+| DR        | Inventory – Machine                        | $ .43              |
+| DR        | Inventory – Machine Fixed Overhead         | $ .10              |
+| DR        | Inventory – Machine Variable Overhead      | $ .12              |
+| CR        | Inventory Offset                           | $5.95              |
+
+
+Inventory Transfer
+Transactions -> Inventory -> Transfer Entry
+Audit Trail Code example: IVFR000000123
+
+Actual Cost Items
+
+Actual Cost item Accounts and Costs used during an Inventory Transfer 
+
+| **DR/CR** | **Account**                                | **Cost Used**      |
+|-----------|--------------------------------------------|--------------------|
+| DR        | Inventory (Item Account Maintenance)       | Current Cost       |
+| CR        | Inventory (Item Account Maintenance)       | Current Cost       |
+
+Example of Accounts and Costs used during an Inventory Transfer for an actual cost BUY item
+
+| **DR/CR** | **Account**                                | **Cost Used**      |
+|-----------|--------------------------------------------|--------------------|
+| DR        | Inventory                                  | $4.00              |
+| CR        | Inventory                                  | $4.00              |
+
+Example of Accounts and Costs used during an Inventory Transfer for an actual cost MAKE item
+
+| **DR/CR** | **Account**                                | **Cost Used**      |
+|-----------|--------------------------------------------|--------------------|
+| DR        | Inventory                                  | $5.95              |
+| CR        | Inventory                                  | $5.95              |
+
+Standard Cost Items
+Standard Cost Item Accounts and Costs used for Standard Cost items during an Item Transfer 
+
+| **DR/CR** | **Account**                                | **Cost Used**                  |
+|-----------|--------------------------------------------|------------------------------  |
+| DR        | Inventory (Item Account Maintenance)       | Material Cost                  |
+| DR        | Inventory – Material Fixed Overhead        | Material Fixed Overhead Cost   |
+| DR        | Inventory – Material Variable Overhead     | Material Variable Overhead Cost|
+| DR        | Inventory – Labor(Item Acct Maint-Costing) | Labor Cost                     |
+| DR        | Inventory – Labor Fixed Overhead           | Labor Fixed Overhead Cost      |
+| DR        | Inventory – Labor Variable Overhead        | Labor Variable Overhead Cost   |
+| DR        | Inventory – Machine(Item Acct Maint-Cost)  | Machine Cost                   |
+| DR        | Inventory – Machine Fixed Overhead         | Machine Fixed Overhead Cost    |
+| DR        | Inventory – Machine Variable Overhead      | Machine Variable Overhead Cost |
+| CR        | Inventory (Item Account Maintenance)       | Material Cost                  |
+| CR        | Inventory – Material Fixed Overhead        | Material Fixed Overhead Cost   |
+| CR        | Inventory – Material Variable Overhead     | Material Variable Overhead Cost|
+| CR        | Inventory – Labor(Item Acct Maint-Costing) | Labor Cost                     |
+| CR        | Inventory – Labor Fixed Overhead           | Labor Fixed Overhead Cost      |
+| CR        | Inventory – Labor Variable Overhead        | Labor Variable Overhead Cost   |
+| CR        | Inventory – Machine(Item Acct Maint-Cost)  | Machine Cost                   |
+| CR        | Inventory – Machine Fixed Overhead         | Machine Fixed Overhead Cost    |
+| CR        | Inventory – Machine Variable Overhead      | Machine Variable Overhead Cost |
+| DR/CR     | Rounding Diff   (Cost Preferences Default) | Rounding Difference            |
+
+Example of Accounts and Costs used during Item Transfer for a standard cost BUY item
 
 
 
