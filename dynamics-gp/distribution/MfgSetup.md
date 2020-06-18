@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 06/17/2020
+ms.date: 06/18/2020
 ---
 
 # Manufacturing Setup
@@ -3509,746 +3509,415 @@ A method of accounting for the use of resources—labor and machine time, and it
 A scheduling method that starts from a due date and works out a plan for the flow of work through the plant with the assumption that there are only a limited number of resources (machines and workers) available to complete the task.
 
 **Backward infinite scheduling**
-
->   A scheduling method that starts from a due date and works out a plan for the
->   flow of work through the plant with the assumption that the plant has
->   unlimited machine and worker capacity.
+A scheduling method that starts from a due date and works out a plan for the flow of work through the plant with the assumption that the plant has unlimited machine and worker capacity.
 
 **Batch cards**
-
->   *See Manufacturing order*.
+*See Manufacturing order*.
 
 **Bill of materials**
-
->   A list of the components and subassemblies needed to build one unit of a
->   product. The bill of materials also shows quantities for each component.
+A list of the components and subassemblies needed to build one unit of a product. The bill of materials also shows quantities for each component.
 
 **Bill of operations**
-
->   *See Routing*.
+*See Routing*.
 
 **Bin**
-
->   A storage device to hold discrete items.
+A storage device to hold discrete items.
 
 **Blanket purchase order**
-
->   A purchase order that is delivered gradually to the buyer.
+A purchase order that is delivered gradually to the buyer.
 
 **Bucket**
-
->   A time period used for calculating MRP requirements. Manufacturing supports
->   daily, weekly, and monthly bucketing options.
+A time period used for calculating MRP requirements. Manufacturing supports daily, weekly, and monthly bucketing options.
 
 **Buy items**
-
->   Items that are supplied to your plant by a supplier.
+Items that are supplied to your plant by a supplier.
 
 **Buyer ID**
-
->   Code that identifies the person who purchases the item from a supplier.
+Code that identifies the person who purchases the item from a supplier.
 
 **By-product**
-
->   A finished good that is created incidentally to another finished good.
+A finished good that is created incidentally to another finished good.
 
 **Child part** *See Component*.
 
 **Class**
-
->   A method for grouping similar parts or products.
+A method for grouping similar parts or products.
 
 **Co-product**
-
->   *See By-product*.
+*See By-product*.
 
 **Company data**
-
->   Company data is the information you enter about your organization, such as
->   its applicants, employees, benefits systems, training programs, and
->   organizational structure.
+Company data is the information you enter about your organization, such as its applicants, employees, benefits systems, training programs, and organizational structure.
 
 **Component**
-
->   Items used to build a product. Component parts can be items (nuts, screws,
->   diodes) or subassemblies (axles, circuit boards).
+Items used to build a product. Component parts can be items (nuts, screws, diodes) or subassemblies (axles, circuit boards).
 
 **Component transaction**
-
->   A line on a pick document to allocate, reverse allocate, issue, reverse
->   issue, scrap, or reverse scrap components for a manufacturing order.
+A line on a pick document to allocate, reverse allocate, issue, reverse issue, scrap, or reverse scrap components for a manufacturing order.
 
 **CONFIG BOM**
-
->   *See Configured bill of materials*.
+*See Configured bill of materials*.
 
 **Configuration data**
-
->   In Bill of Materials, information about the product’s overall design. It
->   includes the design authority for the product, the unit of measure, and the
->   revision level.
+In Bill of Materials, information about the product’s overall design. It includes the design authority for the product, the unit of measure, and the revision level.
 
 **Configured bill of materials**
-
->   A bill of materials that is built by selecting options from a super bill of
->   materials.
+A bill of materials that is built by selecting options from a super bill of materials.
 
 **Configured cost**
-
->   The calculated cost of building a specific configured item, depending on the
->   options a customer selects. The configured cost reflects the cost of the
->   component items and the labor required to manufacture the item.
+The calculated cost of building a specific configured item, depending on the options a customer selects. The configured cost reflects the cost of the component items and the labor required to manufacture the item.
 
 **Configured price**
-
->   The suggested price to charge the customer for a configured item, based on
->   your finished goods price schedule and the selected options.
+The suggested price to charge the customer for a configured item, based on your finished goods price schedule and the selected options.
 
 **Configured routing**
-
->   A routing based on the selected options. For example, if you created a
->   configured bill of materials for office chairs and chose plastic components
->   rather than wooden ones, the routing would be modified to exclude the
->   sequences for staining and varnishing the wooden components. Also known as a
->   “configured working routing.”
+A routing based on the selected options. For example, if you created a configured bill of materials for office chairs and chose plastic components rather than wooden ones, the routing would be modified to exclude the sequences for staining and varnishing the wooden components. Also known as a “configured working routing.”
 
 **Configured Working Routing**
-
->   *See Configured routing*.
+*See Configured routing*.
 
 **Consume**
-
->   To use up the quantity that has been issued to WIP—for materials, labor
->   time, or machine time—for a manufacturing order.
+To use up the quantity that has been issued to WIP—for materials, labor time, or machine time—for a manufacturing order.
 
 **Cost variance**
-
->   The difference between the actual costs—for materials, machine time and
->   labor—and the estimated costs for a manufacturing order.
-
->   Cost variances can be positive or negative.
+The difference between the actual costs—for materials, machine time and labor—and the estimated costs for a manufacturing order.
+Cost variances can be positive or negative.
 
 **Customer record**
-
->   A record that shows all the information you need to conduct sales
->   transactions, such as address information, billing and shipping
->   instructions, credit history and other data for that customer.
+A record that shows all the information you need to conduct sales transactions, such as address information, billing and shipping
+instructions, credit history and other data for that customer.
 
 **Cycle time**
-
->   The total amount of time it takes to make one part, such as setup time,
->   labor time, machine time, queue time and move time.
+The total amount of time it takes to make one part, such as setup time, labor time, machine time, queue time and move time.
 
 **Default inventory site**
-
->   The location commonly used to store raw materials or finished goods.
+The location commonly used to store raw materials or finished goods.
 
 **Defect code**
-
->   An identifier for a particular type of item failure. For example, if an item
->   is too long and fails a specification for length, you might create a defect
->   code called LENGTH. Defect codes are used in Manufacturing reports to help
->   summarize information.
+An identifier for a particular type of item failure. For example, if an item is too long and fails a specification for length, you might create a defect code called LENGTH. Defect codes are used in Manufacturing reports to help summarize information.
 
 **Denial code**
-
->   An identifier for the reason why an engineering change request wasn’t
->   approved.
+An identifier for the reason why an engineering change request wasn’t approved.
 
 **Destination routing**
-
->   A routing that you copy from another routing. You can add sequences to the
->   destination routing.
+A routing that you copy from another routing. You can add sequences to the destination routing.
 
 **Direct labor**
-
->   The time spent by one or more production workers on filling a specific
->   manufacturing order.
+The time spent by one or more production workers on filling a specific manufacturing order.
 
 **Discrete item**
-
->   An item that is manufactured as a distinct unit. Examples of discrete items
->   include computers, automobiles, and radios.
+An item that is manufactured as a distinct unit. Examples of discrete items include computers, automobiles, and radios.
 
 **Disposition code**
-
->   An identifier for a method for handling defective items. For example, you
->   might decide to scrap certain defective items, and might assign a SCRAP
->   disposition code to those items.
+An identifier for a method for handling defective items. For example, you might decide to scrap certain defective items, and might assign a SCRAP disposition code to those items.
 
 **Double-booking**
-
->   A situation where a job might inadvertently be charged twice for the same
->   expense.
+A situation where a job might inadvertently be charged twice for the same expense.
 
 **Down day**
-
->   A day when the facility—the entire shop floor or a specific work center—is
->   not in production.
+A day when the facility—the entire shop floor or a specific work center—is not in production.
 
 **Drawing**
-
->   A schematic or other illustration. You can
-
->   “attach” electronic drawing files—such as CAD illustrations, bitmaps and
->   even .AVI movies—to records.
+A schematic or other illustration. You can “attach” electronic drawing files—such as CAD illustrations, bitmaps and
+even .AVI movies—to records.
 
 **Drawing group**
-
->   A set of related drawing files. For example, a drawing group might include
->   several views of the same item.
+A set of related drawing files. For example, a drawing group might include several views of the same item.
 
 **Due date**
-
->   The date when the items on a sales order should be ready to ship.
+The date when the items on a sales order should be ready to ship.
 
 **ECM**
-
->   *See Engineering change management (ECM)*.
+*See Engineering change management (ECM)*.
 
 **ECO**
-
->   *See Engineering change order (ECO)*.
+*See Engineering change order (ECO)*.
 
 **ECR**
-
->   *See Engineering change request (ECR)*.
+*See Engineering change request (ECR)*.
 
 **Either item**
-
->   Item that can be bought or manufactured by your company.
+Item that can be bought or manufactured by your company.
 
 **Element**
-
->   An order or transaction that can be linked to a job, such as a manufacturing
->   order, a sales order, a purchase order line, a receiving line, or inventory
->   transaction.
+An order or transaction that can be linked to a job, such as a manufacturing order, a sales order, a purchase order line, a receiving line, or inventory transaction.
 
 **Employee allocation**
-
->   The assignment of workers to work areas. Each employee can be assigned an
->   efficiency rating for a particular task. The number of hours per shift spent
->   on a task can also be specified. Total scheduled employee hours for the work
->   center are also displayed.
+The assignment of workers to work areas. Each employee can be assigned an efficiency rating for a particular task. The number of hours per shift spent on a task can also be specified. Total scheduled employee hours for the work center are also displayed.
 
 **Employee efficiency percentage**
-
->   A ranking of how an employee performs a given task. You can use this field
->   different ways, depending on how your organization handles its employee
->   efficiencies. Some organizations complete time studies of various tasks, and
->   set task goals for workers based on those figures. Employees earn efficiency
->   ratings based on their ability to meet those criteria. In other
->   organizations, the top producer is assigned a value of 100% (or less) and
->   all other employees would be ranked in comparison to the top producer.
+A ranking of how an employee performs a given task. You can use this field different ways, depending on how your organization handles its employee efficiencies. Some organizations complete time studies of various tasks, and set task goals for workers based on those figures. Employees earn efficiency ratings based on their ability to meet those criteria. In other organizations, the top producer is assigned a value of 100% (or less) and all other employees would be ranked in comparison to the top producer.
 
 **ENG BOM**
-
->   *See Engineering bill of materials*.
+*See Engineering bill of materials*.
 
 **Engineering bill of materials**
-
->   A proposed bill of materials. Designs that are only in the prototype stage
->   of development, for example, may have engineering bills of materials. In
->   this way, the costs of producing a design can be studied without impacting
->   the material requirements that the system generates.
+A proposed bill of materials. Designs that are only in the prototype stage of development, for example, may have engineering bills of materials. In this way, the costs of producing a design can be studied without impacting the material requirements that the system generates.
 
 **Engineering change management (ECM)**
-
->   The systems that a company has in place to ensure that changes to its
->   product specifications are properly monitored.
+The systems that a company has in place to ensure that changes to its product specifications are properly monitored.
 
 **Engineering change order (ECO)**
-
->   The second stage of the engineering change management process. An
->   engineering change order is a change that has been approved for
->   incorporation.
+The second stage of the engineering change management process. An engineering change order is a change that has been approved for
+incorporation.
 
 **Engineering change request (ECR)**
-
->   The proposal stage of the engineering change management process. An
->   engineering change request is a proposed change.
+The proposal stage of the engineering change management process. An engineering change request is a proposed change.
 
 **Estimated expense**
-
->   A projection of the expenses for a job, entered in the Job Maintenance
->   window.
+A projection of the expenses for a job, entered in the Job Maintenance window.
 
 **Estimated margin**
-
->   A job costing calculation based on estimated revenues and estimated expenses
->   for a specific job. The estimated margin is calculated by dividing the
->   estimated profit by the estimated revenues, and the multiplying the result
->   by 100.
+A job costing calculation based on estimated revenues and estimated expenses for a specific job. The estimated margin is calculated by dividing the estimated profit by the estimated revenues, and the multiplying the result by 100.
 
 **Estimated profit**
-
->   The difference between the estimated expenses and the estimated revenues for
->   a specific job.
+The difference between the estimated expenses and the estimated revenues for a specific job.
 
 **Estimated revenue**
-
->   A projection of the revenues for a job, entered in the Job Maintenance
->   window.
+A projection of the revenues for a job, entered in the Job Maintenance window.
 
 **Exclusions (MRP)**
-
->   A method of marking an item, site or itemsite combination so it isn’t
->   included in MRP calculations.
+A method of marking an item, site or itemsite combination so it isn’t included in MRP calculations.
 
 **Exclusions (Sales Configurator)**
-
->   Options that are disallowed because of another option selection.
+Options that are disallowed because of another option selection.
 
 **Expensed floor stock**
-
->   A bill of materials component that has been designated—regardless of its
->   issue-to and issue-from sites—as a floor stock item. The cost of expensed
->   floor stock is applied to an expense account, rather than to the cost of the
->   finished item. *See also Floor stock*.
+The bill of materials component that has been designated—regardless of its issue-to and issue-from sites—as a floor stock item. The cost of expensed floor stock is applied to an expense account, rather than to the cost of the finished item. *See also Floor stock*.
 
 **Explode**
-
->   To determine the total quantities of components needed for a manufactured
->   item. To explode a bill of materials, the quantity ordered is multiplied by
->   the quantity used for each of its components. Exploding continues throughout
->   the bill of materials, so component requirements for subassemblies are also
->   calculated.
+To determine the total quantities of components needed for a manufactured item. To explode a bill of materials, the quantity ordered is multiplied by the quantity used for each of its components. Exploding continues throughout the bill of materials, so component requirements for subassemblies are also calculated.
 
 **Filled order**
-
->   An order that has had all its requirements met and can be closed.
+An order that has had all its requirements met and can be closed.
 
 **Finished goods**
-
->   An item that is manufactured for sale. Also, the final products that a
->   company sells.
+An item that is manufactured for sale. Also, the final products that a company sells.
 
 **Finite scheduling**
-
->   A scheduling method that assumes that limited capacity for labor and
->   machines is available.
+A scheduling method that assumes that limited capacity for labor and machines is available.
 
 **Fixed order quantity**
-
->   An order policy type that calculates order size for a day’s requirements
->   based on one or more of these variables: standard order quantity, order
->   increment size, minimum order size, and maximum order size.
+An order policy type that calculates order size for a day’s requirements based on one or more of these variables: standard order quantity, order increment size, minimum order size, and maximum order size.
 
 **Fixed quantity**
-
->   The quantity of a component that is required for each manufacturing order,
->   regardless of how many finished goods are produced with the order. For
->   example, if you use two widgets to calibrate equipment each time you begin a
->   new manufacturing order, the fixed quantity for widgets would be 2 for the
->   finished good bill of materials.
+The quantity of a component that is required for each manufacturing order, regardless of how many finished goods are produced with the order. For example, if you use two widgets to calibrate equipment each time you begin a new manufacturing order, the fixed quantity for widgets would be 2 for the finished good bill of materials.
 
 **Floor stock**
-
->   A bill of materials component that uses the same site for its issue-from and
->   issue-to sites. The cost of this type of floor stock is applied to the cost
->   of the finished item. *See also Expensed floor stock*.
+A bill of materials component that uses the same site for its issue-from and issue-to sites. The cost of this type of floor stock is applied to the cost of the finished item. *See also Expensed floor stock*.
 
 **Forecasted demand**
-
->   An estimate of how much of an item should be produced over a specific period
->   of time.
+An estimate of how much of an item should be produced over a specific period of time.
 
 **Forward infinite scheduling**
-
->   A scheduling type based on a starting date for an order, with the assumption
->   that the plant has unlimited machine and worker capacity for the work order.
+A scheduling type based on a starting date for an order, with the assumption that the plant has unlimited machine and worker capacity for the work order.
 
 **Full regeneration**
-
->   An MRP process that recalculates your MRP data, including all sales orders,
->   purchase orders, sales forecasts, and manufacturing orders. *See Net change
->   regeneration*.
+An MRP process that recalculates your MRP data, including all sales orders, purchase orders, sales forecasts, and manufacturing orders. *See Net change regeneration*.
 
 **Functional currency**
-
->   The currency type (such as dollars or pounds) used by your organization for
->   its accounting. *See also Originating currency*.
+The currency type (such as dollars or pounds) used by your organization for its accounting. *See also Originating currency*.
 
 **General ledger variance**
-
->   The difference between costs that have been added to WIP and the costs that
->   have been removed from WIP for a specific manufacturing order.
+The difference between costs that have been added to WIP and the costs that have been removed from WIP for a specific manufacturing order.
 
 **Header record**
-
->   The information that ties the pieces of a larger record together. For
->   example, the header record of a routing includes information about the type
->   of routing, the routing name, the date the routing was created and so on.
->   This information ties sequence records together to create one routing
->   record.
+The information that ties the pieces of a larger record together. For example, the header record of a routing includes information about the type of routing, the routing name, the date the routing was created and so on. This information ties sequence records together to create one routing record.
 
 **Hours per shift**
-
->   The amount of time per shift actually spent working on the assigned tasks.
->   To determine hours available per shift, subtract any nontask related
->   activities from the total number of available hours. For example, if an
->   employee is scheduled for an eight-hour shift but has a one-hour meeting and
->   two quarter-hour breaks that day, the total available time would be 6.5
->   hours.
+The amount of time per shift actually spent working on the assigned tasks. To determine hours available per shift, subtract any nontask related activities from the total number of available hours. For example, if an employee is scheduled for an eight-hour shift but has a one-hour meeting and two quarter-hour breaks that day, the total available time would be 6.5 hours.
 
 **Inclusions**
-
->   Option items automatically added to a configured bill of materials when a
->   customer selects a certain option. For example, a computer manufacturer
->   might offer a computer system in tan and black. If the customer selects the
->   option for a tan computer, the computer manufacturer might set up the super
->   bill of materials so that the tan keyboard automatically is included as part
->   of the purchase.
+Option items automatically added to a configured bill of materials when a customer selects a certain option. For example, a computer manufacturer might offer a computer system in tan and black. If the customer selects the option for a tan computer, the computer manufacturer might set up the super bill of materials so that the tan keyboard automatically is included as part
+of the purchase.
 
 **Indirect labor**
-
->   The time spent on tasks that are not directly related to filling a specific
->   manufacturing order. Examples of indirect labor include meetings and
->   training.
+The time spent on tasks that are not directly related to filling a specific manufacturing order. Examples of indirect labor include meetings and training.
 
 **Instruction sheet**
-
->   *See Routing*.
+*See Routing*.
 
 **Infinite scheduling**
-
->   A scheduling method that assumes that all required capacity for labor and
->   machines is always available.
+A scheduling method that assumes that all required capacity for labor and machines is always available.
 
 **Invoice history**
-
->   The information tracked about past invoices. Invoice history allows you to
->   determine what historical information you will need for tracking sales
->   activity. History information can include transaction detail and/or account
->   distributions.
+The information tracked about past invoices. Invoice history allows you to determine what historical information you will need for tracking sales activity. History information can include transaction detail and/or account distributions.
 
 **Issue**
-
->   A type of component transaction. When components are issued for a
->   manufacturing order, they are removed from inventory and added to WIP.
+A type of component transaction. When components are issued for a manufacturing order, they are removed from inventory and added to WIP.
 
 **Issue-from location**
-
->   The site where the components used in the manufacturing process are stored
->   prior to beginning the manufacturing order, such as with a vendor, or in a
->   department, a warehouse, or another plant.
+The site where the components used in the manufacturing process are stored prior to beginning the manufacturing order, such as with a vendor, or in a department, a warehouse, or another plant.
 
 **Issue-to location**
 
->   The site where the finished product will be stored prior to delivery to the
->   customer, such as in a department, a warehouse, or another plant.
+The site where the finished product will be stored prior to delivery to the customer, such as in a department, a warehouse, or another plant.
 
 **Item type**
-
->   A code to designate the accounting class for the item, such as inventory,
->   discontinued, and misc. charge.
+A code to designate the accounting class for the item, such as inventory, discontinued, and misc. charge.
 
 **Item-specific inventory valuation**
-
->   An accounting method that places a value on each item that you produce,
->   based upon either standard cost or current cost.
+An accounting method that places a value on each item that you produce, based upon either standard cost or current cost.
 
 **Job**
-
->   A series of business activities that, when completed, will fulfill a
->   high-level objective.
+A series of business activities that, when completed, will fulfill a high-level objective.
 
 **Job category**
-
->   Groupings that you can create to organize the titles and descriptions of
->   jobs within your company. Each job category must include a set of values
->   that can be used to sort all jobs. For example, you might create a job
->   category called REGION so you could track jobs from specific geographical
->   areas. Values for that job category might be East, West, North and South-or
->   might be states, provinces, countries/regions or other areas.
+Groupings that you can create to organize the titles and descriptions of jobs within your company. Each job category must include a set of values that can be used to sort all jobs. For example, you might create a job category called REGION so you could track jobs from specific geographical areas. Values for that job category might be East, West, North and South-or might be states, provinces, countries/regions or other areas.
 
 **Job costing element**
-
->   A type of element that can be linked to a job.
+A type of element that can be linked to a job.
 
 **Job costing transaction**
-
->   An instance of a job element that is linked to a specific job, capturing
->   information about a specific revenue or expense associated with the job. Job
->   costing transactions aren’t accounting transactions: they won’t affect the
->   General Ledger or any subsidiary ledgers.
+An instance of a job element that is linked to a specific job, capturing information about a specific revenue or expense associated with the job. Job costing transactions aren’t accounting transactions: they won’t affect the General Ledger or any subsidiary ledgers.
 
 **Job order**
-
->   *See Manufacturing order*.
+*See Manufacturing order*.
 
 **Job transaction list**
-
->   A selection of transactions to be applied to a specific job. You can use
->   transaction lists to specify the kinds of transactions that should be
->   applied to jobs, and to specify the transactions to be applied automatically
->   to jobs.
+A selection of transactions to be applied to a specific job. You can use transaction lists to specify the kinds of transactions that should be applied to jobs, and to specify the transactions to be applied automatically to jobs.
 
 **Kit**
+A group of finished items that compose a set.
 
->   A group of finished items that compose a set.
-
-**Labor code**
-
->   A code that is used to tie a job function to a specific pay grade. Usually,
->   jobs requiring fewer skills have lower pay grades and are compensated at
->   lower rates. Jobs requiring more skills or education have higher pay grades
->   and higher pay rates.
+**Labor code** 
+A code that is used to tie a job function to a specific pay grade. Usually, jobs requiring fewer skills have lower pay grades and are compensated at lower rates. Jobs requiring more skills or education have higher pay grades and higher pay rates.
 
 **Labor time**
-
->   The number of employee hours required to complete the operation.
+The number of employee hours required to complete the operation.
 
 **Lead time**
-
->   The minimum amount of time required for production of an item.
+The minimum amount of time required for production of an item.
 
 **Location**
-
->   A work site. Some businesses are organized as a single company or division,
->   but may have multiple sites.
+A work site. Some businesses are organized as a single company or division, but may have multiple sites.
 
 **Lot-for-lot**
-
->   An order policy for ordering the exact quantity needed, provided that the
->   order quantity is between the minimum and maximum order quantities.
+An order policy for ordering the exact quantity needed, provided that the order quantity is between the minimum and maximum order quantities.
 
 **Lot-numbered item**
-
->   Any inventoried item that is part of a group that is assigned a unique
->   identifier, which can be letters, numbers or a combination of letters and
->   numbers.
+Any inventoried item that is part of a group that is assigned a unique identifier, which can be letters, numbers or a combination of letters and numbers.
 
 **Lot-number–tracked item**
-
->   *See Lot-numbered item*.
+*See Lot-numbered item*.
 
 **Lot-sample size**
-
->   The number of item units that should be inspected to determine if a group of
->   items meets specifications.
+The number of item units that should be inspected to determine if a group of items meets specifications.
 
 **Lot-tracked item**
-
->   *See Lot-number–tracked item*.
+*See Lot-number–tracked item*.
 
 **Low-level code**
-
->   A code that identifies the deepest level an item has in any bill of
->   materials in your manufacturing records.
+A code that identifies the deepest level an item has in any bill of materials in your manufacturing records.
 
 **Machine**
-
->   Any tool, device or implement that you use in your manufacturing process.
+Any tool, device or implement that you use in your manufacturing process.
 
 **Machine allocation**
-
->   The assignment of a machine to a work area. Each allocation record displays
->   available machine hours, the efficiency rating, and utilization rate for
->   that machine. Total scheduled machine hours for the work center are also
->   displayed.
+The assignment of a machine to a work area. Each allocation record displays available machine hours, the efficiency rating, and utilization rate for that machine. Total scheduled machine hours for the work center are also displayed.
 
 **Machine definition**
-
->   The record of a machine in your plant that allows you to track statistics
->   for each machine, including vendor information, warranty period, and
->   operating costs.
+The record of a machine in your plant that allows you to track statistics for each machine, including vendor information, warranty period, and operating costs.
 
 **Machine efficiency**
-
->   A measure of how a machine is suited for a specific task. The higher the
->   efficiency rating, the more effectively the machine works.
+A measure of how a machine is suited for a specific task. The higher the efficiency rating, the more effectively the machine works.
 
 **Machine time**
-
->   The number of machine hours needed to complete the operation.
+The number of machine hours needed to complete the operation.
 
 **Machine utilization**
-
->   A measure of how much of the available machine capacity is actually being
->   used. For example, if a machine is capable of producing 100 items per
->   eight-hour day and you are only producing 80 items, the machine utilization
->   rate is 80 percent.
+A measure of how much of the available machine capacity is actually being used. For example, if a machine is capable of producing 100 items per eight-hour day and you are only producing 80 items, the machine utilization rate is 80 percent.
 
 **Make item**
-
->   An item that is produced by your plant.
+An item that is produced by your plant.
 
 **Make or Buy item**
-
->   Item that can be bought or manufactured by your company.
+Item that can be bought or manufactured by your company.
 
 **Make to order**
-
->   An order fulfillment method for made items. When make-to-order items are
->   sold, manufacturing orders to build the items required to fulfill the
->   manufacturing orders are created. Manufacturing orders are used to respond
->   to specific sales orders.
+An order fulfillment method for made items. When make-to-order items are sold, manufacturing orders to build the items required to fulfill the manufacturing orders are created. Manufacturing orders are used to respond to specific sales orders.
 
 **Make to stock**
-
->   An order fulfillment method for made items. When make-to-stock items are
->   sold, the quantities required to fulfill the sales order are taken from
->   inventory quantities. Manufacturing orders are used to keep inventory levels
->   up so that sales orders can be fulfilled.
+An order fulfillment method for made items. When make-to-stock items are sold, the quantities required to fulfill the sales order are taken from inventory quantities. Manufacturing orders are used to keep inventory levels up so that sales orders can be fulfilled.
 
 **Manufacturing bill of materials**
-
->   The bill of materials used to build a parent part in your organization. A
->   manufacturing bill of materials is the “real” bill of materials, and is used
->   to figure material requirements for your organization.
+The bill of materials used to build a parent part in your organization. A manufacturing bill of materials is the “real” bill of materials, and is used to figure material requirements for your organization.
 
 **Manufacturing data sheets**
-
->   *See Routing*.
+*See Routing*.
 
 **Manufacturing order**
-
->   A set of documents conveying the authority to manufacture parts or products
->   in specified quantities. Manufacturing orders are also called batch cards,
->   job orders, production orders, run orders, shop orders, or work orders.
+A set of documents conveying the authority to manufacture parts or products in specified quantities. Manufacturing orders are also called batch cards, job orders, production orders, run orders, shop orders, or work orders.
 
 **Manufacturing order receipt**
-
->   A document where material, labor, and machine costs in WIP are applied to
->   finished goods that are received in inventory. Costs for backflushed
->   materials, labor, and machine time also are applied to the finished goods
->   cost.
+A document where material, labor, and machine costs in WIP are applied to finished goods that are received in inventory. Costs for backflushed materials, labor, and machine time also are applied to the finished goods cost.
 
 **Manufacturing order routing**
-
->   A routing used to complete a specific manufacturing order, which includes
->   all the necessary requirements to fill the order, such as workers, machine
->   time, and raw materials. Also known as “manufacturing routing.”
+A routing used to complete a specific manufacturing order, which includes all the necessary requirements to fill the order, such as workers, machine time, and raw materials. Also known as “manufacturing routing.”
 
 **Manufacturing picklist**
-
->   A list of the items and quantities of items that are required to fill a
->   manufacturing order.
-
+A list of the items and quantities of items that are required to fill a manufacturing order.
+ 
 **Material Requirements Planning**
-
->   A series of data collection and interpretation procedures that allow you to
->   forecast resource requirements over a specified time period (days, weeks or
->   months).
+A series of data collection and interpretation procedures that allow you to forecast resource requirements over a specified time period (days, weeks or months).
 
 **Maximum order size**
-
->   One of the variables that can be used to calculate order quantities for
->   fixed or period order quantity order policies. Maximum order size puts a
->   limit on the size of automatically generated purchase and manufacturing
->   orders. If demand is greater than the maximum order size, an additional
->   order will be created.
-
-**MFG BOM**
-
->   *See Manufacturing bill of materials*.
+One of the variables that can be used to calculate order quantities for fixed or period order quantity order policies. Maximum order size puts a limit on the size of automatically generated purchase and manufacturing orders. If demand is greater than the maximum order size, an additional order will be created.
 
 **Minimum order size**
-
->   One of the variables that can be used to calculate order quantities for
->   fixed or period order quantity order policies. It is similar to standard
->   order quantity, and is used in its place if the standard order quantity is
->   zero. If the standard order quantity is greater than zero, the standard
->   order quantity supersedes the minimum order size.
+One of the variables that can be used to calculate order quantities for fixed or period order quantity order policies. It is similar to standard order quantity, and is used in its place if the standard order quantity is zero. If the standard order quantity is greater than zero, the standard order quantity supersedes the minimum order size.
 
 **Module security**
-
->   A way to see if other users are working with records that prevent you from
->   completing certain processes. Module security also allows you to unlock
->   records and remove users from MRP.
+A way to see if other users are working with records that prevent you from completing certain processes. Module security also allows you to unlock records and remove users from MRP.
 
 **Move in**
-
->   To adjust the due dates of existing manufacturing orders and purchase orders
->   to meet potential shortages identified by MRP calculations. If MRP
->   calculations uncover a shortage of an item and if there’s an existing order
->   for the item in the future, the order will be flagged to be “moved in” to
->   prevent the shortage.
+To adjust the due dates of existing manufacturing orders and purchase orders to meet potential shortages identified by MRP calculations. If MRP calculations uncover a shortage of an item and if there’s an existing order for the item in the future, the order will be flagged to be “moved in” to prevent the shortage.
 
 **Move out**
-
->   To reschedule certain manufacturing orders or purchase orders to prevent
->   stock overages on the current due date. An appropriate future date to move
->   the order to cover a future net requirement is proposed
+To reschedule certain manufacturing orders or purchase orders to prevent stock overages on the current due date. An appropriate future date to move the order to cover a future net requirement is proposed
 
 **Move time**
-
->   The number of hours needed to physically move an item to the next operation.
+The number of hours needed to physically move an item to the next operation.
 
 **MRP**
-
->   *See Material Requirements Planning*.
+*See Material Requirements Planning*.
 
 **MRP shortage**
-
->   A lack of resources to produce the required amount of an item to fill
->   outstanding orders. Manufacturing orders can be entered regardless of
->   current stock of available materials.
+A lack of resources to produce the required amount of an item to fill outstanding orders. Manufacturing orders can be entered regardless of current stock of available materials.
 
 **Multi-level bill of materials**
-
->   A bill of materials that lists all the components directly or indirectly
->   involved in building the parent part, together with the required quantity
->   for each item. For example, if a subassembly is used in the parent part, the
->   multi-level bill of materials will show all the components needed to build
->   the subassembly, including purchased parts and materials. *See also
->   Single-level bill of materials*.
+A bill of materials that lists all the components directly or indirectly involved in building the parent part, together with the required quantity for each item. For example, if a subassembly is used in the parent part, the multi-level bill of materials will show all the components needed to build the subassembly, including purchased parts and materials. *See also Single-level bill of materials*.
 
 **Negative WIP**
-
->   The situation that occurs if you enter and post a manufacturing order
->   receipt where more is consumed from WIP than was in WIP for the
->   manufacturing order. When finished goods are received into inventory before
->   materials have been issued to the order or before labor or machine time data
->   collection transactions have been completed, this can occur. You must set up
->   Manufacturing Order Processing to be able to enter receipts that would cause
->   negative WIP.
+The situation that occurs if you enter and post a manufacturing order receipt where more is consumed from WIP than was in WIP for the manufacturing order. When finished goods are received into inventory before materials have been issued to the order or before labor or machine time data collection transactions have been completed, this can occur. You must set up Manufacturing Order Processing to be able to enter receipts that would cause negative WIP.
 
 **Net change regeneration**
-
->   An MRP process that updates MRP information based on changes to
->   manufacturing orders, sales orders, purchase orders, and inventory
->   quantities. *See also Full regeneration*.
+An MRP process that updates MRP information based on changes to manufacturing orders, sales orders, purchase orders, and inventory
+quantities. *See also Full regeneration*. 
 
 **Nettable item**
-
->   An item, site or item-site combination that is included in MRP calculations.
+An item, site or item-site combination that is included in MRP calculations.
 
 **Non-nettable item**
-
->   Any item, site, or item-site combination that is not included in MRP
->   calculations.
+Any item, site, or item-site combination that is not included in MRP calculations.
 
 **Non-Standard Report**
-
->   A report for internal use that summarizes information about defects
->   identified in a group of items. An NSR might also include information about
->   the disposition of the defective items.
+A report for internal use that summarizes information about defects identified in a group of items. An NSR might also include information about the disposition of the defective items.
 
 **NSR**
-
->   *See Non-Standard Report*.
+*See Non-Standard Report*.
 
 **Op code**
-
->   *See Operation code*.
+*See Operation code*.
 
 **Operation**
-
->   A specific task within the manufacturing process. You can use operations as
->   templates for routing sequences.
+A specific task within the manufacturing process. You can use operations as templates for routing sequences.
 
 **Operation chart**
-
->   *See Routing*.
+*See Routing*.
 
 **Operation code**
-
->   A code assigned to a particular task within the manufacturing process. For
->   example, in a company that makes electrical components, the operation code
->   for testing the validity of a certain characteristic might be “110.” Also,
->   op code.
+A code assigned to a particular task within the manufacturing process. For example, in a company that makes electrical components, the operation code for testing the validity of a certain characteristic might be “110.” Also, op code.
 
 **Operation list**
 
