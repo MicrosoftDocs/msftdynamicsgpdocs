@@ -3115,106 +3115,193 @@ Standard Cost Item Accounts and Costs used for Standard Cost items during an Ite
 
 Example of Accounts and Costs used during Item Transfer for a standard cost BUY item
 
+| **DR/CR** | **Account**                                | **Cost Used**      |
+|-----------|--------------------------------------------|--------------------|
+| DR        | Inventory                                  | $3.35              |
+| DR        | Inventory – Material Fixed Overhead        | $ .50              |
+| DR        | Inventory – Material Variable Overhead     | $ .15              |
+| CR        | Inventory                                  | $3.35              |
+| CR        | Inventory – Material Fixed Overhead        | $ .50              |
+| CR        | Inventory – Material Variable Overhead     | $ .15              |
+
+Example of Accounts and Costs used during Item Transfer for a standard cost MAKE item
+
+| **DR/CR** | **Account**                                | **Cost Used**      |
+|-----------|--------------------------------------------|--------------------|
+| DR        | Inventory                                  | $4.10              |
+| DR        | Inventory – Material Fixed Overhead        | $ .55              |
+| DR        | Inventory – Material Variable Overhead     | $ .35              |
+| DR        | Inventory – Labor                          | $ .27              |
+| DR        | Inventory – Labor Fixed Overhead           | $ .02              |
+| DR        | Inventory – Labor Variable Overhead        | $ .01              |
+| DR        | Inventory – Machine                        | $ .43              |
+| DR        | Inventory – Machine Fixed Overhead         | $ .10              |
+| DR        | Inventory – Machine Variable Overhead      | $ .12              |
+| CR        | Inventory                                  | $4.10              |
+| CR        | Inventory – Material Fixed Overhead        | $ .55              |
+| CR        | Inventory – Material Variable Overhead     | $ .35              |
+| CR        | Inventory – Labor                          | $ .27              |
+| CR        | Inventory – Labor Fixed Overhead           | $ .02              |
+| CR        | Inventory – Labor Variable Overhead        | $ .01              |
+| CR        | Inventory – Machine                        | $ .43              |
+| CR        | Inventory – Machine Fixed Overhead         | $ .10              |
+| CR        | Inventory – Machine Variable Overhead      | $ .12              |
+
+Receiving Material Only in Purchase Order Processing
+Transactions > Purchasing > Receivings Transaction Entry
+Audit Trail Code example: RECVG000000123
+
+Actual Cost items
+Actual Cost Item Accounts and Costs used for during Receivings Transaction 
+
+| **DR/CR** | **Account**                                | **Cost Used**                         |
+|-----------|--------------------------------------------|---------------------------------------|
+| DR        | Inventory (Item Account Maintenance)       | Receiving Cost (Item Vendor Maint.)   |
+| CR        | Accrued Purchases(Vendor Acct Maint)       | Receiving Cost                        |
+
+
+Example of Accounts and Costs used during a Receivings Transaction for an actual cost BUY item
+
+| **DR/CR** | **Account**                                | **Cost Used**   |
+|-----------|--------------------------------------------|-----------------|
+| DR        | Inventory (Item Account Maintenance)       | $4.32           |
+| CR        | Accrued Purchases(Vendor Acct Maint)       | $4.32           |
+
+Example of Accounts and Cost used during a Receivings Transaction for an actual cost MAKE item
+
+| **DR/CR** | **Account**                                | **Cost Used**   |
+|-----------|--------------------------------------------|-----------------|
+| DR        | Inventory (Item Account Maintenance)       | $6.43           |
+| CR        | Accrued Purchases(Vendor Acct Maint)       | $6.43           |
+
+Standard Cost Items
+Accounts and Cost used for Standard Cost item during Receivings Transaction 
+
+| **DR/CR** | **Account**                                | **Cost Used**                  |
+|-----------|--------------------------------------------|------------------------------  |
+| DR        | Inventory (Item Account Maintenance)       | Material Cost                  |
+| DR        | Inventory – Material Fixed Overhead        | Material Fixed Overhead Cost   |
+| DR        | Inventory – Material Variable Overhead     | Material Variable Overhead Cost|
+| DR        | Inventory – Labor(Item Acct Maint-Costing) | Labor Cost                     |
+| DR        | Inventory – Labor Fixed Overhead           | Labor Fixed Overhead Cost      |
+| DR        | Inventory – Labor Variable Overhead        | Labor Variable Overhead Cost   |
+| DR        | Inventory – Machine(Item Acct Maint-Cost)  | Machine Cost                   |
+| DR        | Inventory – Machine Fixed Overhead         | Machine Fixed Overhead Cost    |
+| DR        | Inventory – Machine Variable Overhead      | Machine Variable Overhead Cost |
+| DR/CR     | Unrealized PPV (Item Account Maintenance)  | Receiving Cost –Material Cost  |
+| CR        | Accrued Purchases (Vendor Account Maint)   | Receiving Cost                 |
+| CR        | Applied – Material Fixed Overhead          | Material Fixed Overhead Cost   |
+| CR        | Applied – Material Variable Overhead       | Material Variable Overhead Cost|
+| CR        | Applied – Labor (Labor Code Definitions )  | Labor Cost                     |
+| CR        | Applied – Labor Fixed Overhead             | Labor Fixed Overhead Cost      |
+| CR        | Applied – Labor Variable Overhead          | Labor Variable Overhead Cost   |
+| CR        | Applied – Machine (Machine Definitions)    | Machine Cost                   |
+| CR        | Applied – Machine Fixed Overhead           | Machine Fixed Overhead Cost    |
+| CR        | Applied – Machine Variable Overhead        | Machine Variable Overhead Cost |
+
+Example of Item Accounts and Costs used during a Receivings Transaction for a standard cost BUY item
+
+| **DR/CR** | **Account**                                | **Cost Used**       |
+|-----------|--------------------------------------------|-------------------- |
+| DR        | Inventory                                  | $3.35               |
+| DR        | Inventory – Material Fixed Overhead        | $ .50               |
+| DR        | Inventory – Material Variable Overhead     | $ .15               |
+| DR/CR     | Unrealized PPV                             | $4.32 – $3.35 = $.97|
+| CR        | Accrued Purchase                           | $4.32               |
+| CR        | Applied – Material Fixed Overhead          | $ .50               |
+| DR        | Applied – Material Variable Overhead       | $ .15               |
+
+Example of Accounts and Costs used during a Receivings Transaction for a standard cost MAKE item
+
+| **DR/CR** | **Account**                                | **Cost Used**       |
+|-----------|--------------------------------------------|-------------------- |
+| DR        | Inventory                                  | $5.05               |
+| DR        | Inventory – Material Fixed Overhead        | $ .55               |
+| DR        | Inventory – Material Variable Overhead     | $ .35               |
+| DR        | Inventory – Labor                          | $ 5.00              |
+| DR/CR     | Unrealized PPV                             | $6.43 –$5.05= $1.38 |
+| CR        | Accrued Purchase                           | $6.43               |
+| CR        | Applied – Labor                            | $ 5.00              |
+| CR        | Applied – Material Fixed Overhead          | $ .55               |
+| DR        | Applied – Material Variable Overhead       | $ .35               |
+
+
+Enter/Match Invoice for Purchase Order
+Transactions > Purchasing > Enter/Match Invoice
+Audit Trail Code example: POINV000000123
+
+Actual Cost Items
+Actual Cost Item Accounts and Cost during Enter/Match Invoice (Invoicing)
+
+| **DR/CR** | **Account**                                | **Cost Used**      |
+|-----------|--------------------------------------------|--------------------|
+| DR        | Inventory (Item Account Maintenance)       | Current Cost       |
+| CR        | Inventory (Item Account Maintenance)       | Current Cost       |
+
+
 
 
 **Glossary**
 
 **Acceptable Quality Level table**
 
->   A representation of testing standards and sample sizes. AQL tables include
->   information about appropriate sample sizes and the maximum number of pieces
->   that can fail inspection in an acceptable lot. You’ll probably set up
->   several AQL tables to reflect different inspection standards for different
->   items.
+A representation of testing standards and sample sizes. AQL tables include information about appropriate sample sizes and the maximum number of pieces that can fail inspection in an acceptable lot. You’ll probably set upseveral AQL tables to reflect different inspection standards for different 
+items.
 
 **Active routing**
-
->   *See Manufacturing order routing*.
+*See Manufacturing order routing*.
 
 **Actual costing**
-
->   An inventory tracking method that involves constantly updating inventory
->   each time an item is added or removed.
-
+An inventory tracking method that involves constantly updating inventoryeach time an item is added or removed.
+ 
 **Actual demand**
-
->   The total quantity of an item requested on all firm manufacturing orders.
+The total quantity of an item requested on all firm manufacturing orders.
 
 **Actual expenses (Job Costing)**
 
->   The total of all applied expense transactions linked to a job.
+The total of all applied expense transactions linked to a job.
 
 **Actual margin (Job Costing)**
-
->   A measure of the overall profitability of a specific job. The actual margin
->   for a job is calculated by dividing the actual profit by the actual revenue,
->   and then multiplying the result by 100.
+A measure of the overall profitability of a specific job. The actual margin for a job is calculated by dividing the actual profit by the actual revenue, and then multiplying the result by 100.
 
 **Actual profit (Job Costing)**
-
->   The difference between actual expenses and actual revenues for a job.
+The difference between actual expenses and actual revenues for a job.
 
 **Actual revenues**
-
->   The total of all applied revenue transactions linked to a job.
+The total of all applied revenue transactions linked to a job.
 
 **Allocate**
-
->   To reserve materials needed for a manufacturing order.
+To reserve materials needed for a manufacturing order.
 
 **Alternate routing**
-
->   Any planning routing for an item other than the primary routing.
+Any planning routing for an item other than the primary routing.
 
 **Alternate work center**
-
->   A work center to which work can be shifted if the customary work center for
->   a specific task is not available. If the primary work center is temporarily
->   shut down, or if demand exceeds the capacity of the primary work center, the
->   work load can be shifted to the alternate work center.
+A work center to which work can be shifted if the customary work center for a specific task is not available. If the primary work center is temporarily shut down, or if demand exceeds the capacity of the primary work center, the work load can be shifted to the alternate work center.
 
 **Apply**
-
->   To add the amount of a revenue or expense linked to a job to the financial
->   information about the job. If a transaction isn't applied to a job, its
->   amount won't be reflected in the overall financial information about the
->   job. Applying transactions in Job Costing can happen manually or
->   automatically.
+To add the amount of a revenue or expense linked to a job to the financial information about the job. If a transaction isn't applied to a job, its amount won't be reflected in the overall financial information about the job. Applying transactions in Job Costing can happen manually or automatically.
 
 **AQL table**
-
->   *See Acceptable Quality Level table*.
+*See Acceptable Quality Level table*.
 
 **ARCH BOM**
-
->   *See Archived bill of materials*.
+*See Archived bill of materials*.
 
 **Archived bill of materials**
-
->   A bill of materials stored in a separate area of your computer system. Bills
->   of material might be archived as they become obsolete.
+A bill of materials stored in a separate area of your computer system. Bills of material might be archived as they become obsolete.
 
 **Assemble to order**
-
->   A type of manufacturing facility that puts a group of components together
->   according to customer specifications.
+A type of manufacturing facility that puts a group of components together according to customer specifications.
 
 **Back order**
+An order to be fulfilled when stock for items in shortage is replenished.
 
->   An order to be fulfilled when stock for items in shortage is replenished.
-
-**Backflushing**
-
->   A method of accounting for the use of resources—labor and machine time, and
->   items—based on standards you’ve defined. Transactions to account for the use
->   of backflushed resources are created when a manufacturing order is closed.
+**Backflushing** 
+A method of accounting for the use of resources—labor and machine time, and items—based on standards you’ve defined. Transactions to account for the use of backflushed resources are created when a manufacturing order is closed.
 
 **Backward finite scheduling**
-
->   A scheduling method that starts from a due date and works out a plan for the
->   flow of work through the plant with the assumption that there are only a
->   limited number of resources (machines and workers) available to complete the
->   task.
+A scheduling method that starts from a due date and works out a plan for the flow of work through the plant with the assumption that there are only a limited number of resources (machines and workers) available to complete the task.
 
 **Backward infinite scheduling**
 
