@@ -135,7 +135,8 @@
 ### [Project Accounting Cost Management](distribution/ProjAcctCostManagement.md)
 ### [Inventory Control in Dynamics GP - Parts 1-3](distribution/Inventory.md)
 ### [Inventory Control in Dynamics GP - Parts 4-6](distribution/Inventory2.md)
-### [Glossary](distribution/glossary.md)
+### [Glossary of Terms in the Distribution Area](distribution/glossary.md)
+### [Glossary of Terms in the Manufacturing Area](distribution/glossary-manufacturing.md)
 
 <!--- payroll -->
 ## Payroll
