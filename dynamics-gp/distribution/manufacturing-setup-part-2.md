@@ -245,17 +245,17 @@ Sequence entry options control the information that is retrieved when a user acc
 
     Whether a routing update is applied to other routings is always determined by the routing name and sequence number. The routing name and sequence number must match before a change in one routing sequence is reflected in a sequence in another routing.
 
-        - If you mark Match WC ID, the routing sequence change will be applied to only the routing sequences that have the same routing name, sequence number, and work center ID.
+    - If you mark **Match WC ID**, the routing sequence change will be applied to only the routing sequences that have the same routing name, sequence number, and work center ID.
 
-        - If you don’t mark Match WC ID, all routings that have the same routing name and sequence number will be updated, regardless of the work center ID.
+    - If you don’t mark **Match WC ID**, all routings that have the same routing name and sequence number will be updated, regardless of the work center ID.
 
 5. Determine if active routings should be updated based only on the routing name and sequence number.
 
     Whether a routing update is applied to other routings is always determined by the routing name and sequence number. The routing name and sequence number must match before a change in one routing sequence is reflected in a sequence in another routing.
 
-        - If you mark Match WC ID, the routing sequence change will be applied to only  the routing sequences that have the same routing name, sequence number and work center ID.
+    - If you mark **Match WC ID**, the routing sequence change will be applied to only  the routing sequences that have the same routing name, sequence number and work center ID.
 
-        - If you don’t mark Match WC ID, all routings that have the same routing name and sequence number will be updated, regardless of the work center ID.
+    - If you don’t mark **Match WC ID**, all routings that have the same routing name and sequence number will be updated, regardless of the work center ID.
 
 6. Determine how to search your routing records. You can mark either or both Search Includes options.
 

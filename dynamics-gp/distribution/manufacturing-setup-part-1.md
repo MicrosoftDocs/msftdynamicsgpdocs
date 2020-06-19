@@ -240,8 +240,9 @@ System users have more access privileges than other users. Like system administr
 
 Security builds safeguards into your software to restrict access to information, processes, or windows. In Manufacturing, each of these types of security is included. You should understand each of the three security types before setting up security access for your users.
 
-*Before you set up security access for Manufacturing, you should have defined users and determined the level of access each user will have.*
-
+> [!IMPORTANT]
+> Before you set up security access for Manufacturing, you should have defined users and determined the level of access each user will have.
+ 
 This information is divided into the following sections:
 
 - *Manufacturing security types*
@@ -331,40 +332,44 @@ Once you’ve created a process security set, you can modify it at anytime. For 
 5. Choose Save.
 
 ### Using Manufacturing module security
- You can use Manufacturing module security to unlock locked bills of materials, routings, data collection records, manufacturing orders, and MRP-planned orders. You also can use module security to remove MRP users. You might need to unlock records to perform certain processes, such as regenerating MRP information.
- The window you’ll use to view or unlock locked records will depend on the type of record you’re working with.
- You need system administrator access to unlock most records. To unlock some records, you must supply the system password to open the window. To unlock other records, you must supply the system password when you choose the Delete button.
 
-**To use Manufacturing module security:**
+You can use Manufacturing module security to unlock locked bills of materials, routings, data collection records, manufacturing orders, and MRP-planned orders. You also can use module security to remove MRP users. You might need to unlock records to perform certain processes, such as regenerating MRP information.
+
+The window you’ll use to view or unlock locked records will depend on the type of record you’re working with.
+
+You need system administrator access to unlock most records. To unlock some records, you must supply the system password to open the window. To unlock other records, you must supply the system password when you choose the Delete button.
+
+#### To use Manufacturing module security
 
 1. Open the appropriate window for the type of record to unlock.
- Refer to the table for more information.
 
-| **Type of record**  | **Window and path**                                                                                        |
-|---------------------|------------------------------------------------------------------------------------------------------------|
-| Bill of materials   | BOM Security window - (Transactions \>\> Manufacturing \>\> Bill of Materials \>\> Security)               |
-| Routing             | Routing Security window - (Transactions \>\> Manufacturing \>\> Routings \>\> Security)                    |
-| Data collection     | Data Collection Transaction Security window - (Transactions \>\> Manufacturing \>\> WIP \>\> TRX Security) |
-| Manufacturing order | Manufacturing Order Security window - (Transactions \>\> Manufacturing \>\> Manufacturing Orders \>\>      |
-| MRP                 | MRP Security window - (Transactions \>\> Manufacturing \>\> MRP \>\> Security)                             |
-| MRP-planned orders  | MRP-Planned Order Security window - (Transactions \>\> Manufacturing \>\> MRP \>\> MRP Planned Order       |
- Security)
- Security)
+    Refer to the table for more information.
 
-1. View the information in the scrolling window. Each of these windows displays
-    the user ID of the person who has locked each record.
- *It’s a good idea to contact the user and request that he or she close the window to unlock a record. If that’s not possible, use these windows to end user sessions.*
+    | Type of record  | Window and path   |
+    |-----------------|-------------------|
+    | Bill of materials   | BOM Security window - (Transactions \>\> Manufacturing \>\> Bill of Materials \>\> Security)  |
+    | Routing             | Routing Security window - (Transactions \>\> Manufacturing \>\> Routings \>\> Security)     |
+    | Data collection     | Data Collection Transaction Security window - (Transactions \>\> Manufacturing \>\> WIP \>\> TRX Security) |
+    | Manufacturing order | Manufacturing Order Security window - (Transactions \>\> Manufacturing \>\> Manufacturing Orders \>\>      |
+    | MRP                 | MRP Security window - (Transactions \>\> Manufacturing \>\> MRP \>\> Security)  |
+    | MRP-planned orders  | MRP-Planned Order Security window - (Transactions \>\> Manufacturing \>\> MRP \>\> MRP Planned Order   |
 
-1. Highlight a record to unlock in the scrolling window.
+2. View the information in the scrolling window. Each of these windows displays the user ID of the person who has locked each record.
 
-2. Choose Delete.
+    > [!TIP]
+    > It’s a good idea to contact the user and request that they close the window to unlock a record. If that’s not possible, use these windows to end user sessions.
 
-3. Repeat steps 3 and 4 to unlock as many records, as needed.
+3. Highlight a record to unlock in the scrolling window.
 
-4. When you’ve finished, close the window.
+4. Choose Delete.
+
+5. Repeat steps 3 and 4 to unlock as many records, as needed.
+
+6. When you’ve finished, close the window.
 
 ## Chapter 3: Manufacturing core functions setup
- Information about setting up system settings for use with core functions modules— Bills of Materials, Sales Configurator, and extensions to Microsoft Dynamics GP Sales Order Processing—is included here. You must set up system and user settings to determine how Manufacturing will function for your business.
+
+Information about setting up system settings for use with core functions modules— Bills of Materials, Sales Configurator, and extensions to Microsoft Dynamics GP Sales Order Processing—is included here. You must set up system and user settings to determine how Manufacturing will function for your business.
  This information is divided into the following sections:
 
 - *Setting up bills of materials system settings*
@@ -382,79 +387,77 @@ Once you’ve created a process security set, you can modify it at anytime. For 
 - *Setting up order fulfillment options*
 
 ### Setting up bills of materials system settings
- System settings for Manufacturing Bill of Materials help you to accomplish several tasks. Refer to the table for more information.
 
-| **Task**                                                                                                                                                                 | **Required?** |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| Specify whether component lead time should be calculated based on the manufacturing order start date or the manufacturing order due date.                                | Yes           |
-| Select the visual cues for the Bill of Materials Entry window and the Bill of Materials View window. (This can be changed on a user-by-user basis.)                      | No            |
-| Set up user-defined fields for bills of materials.                                                                                                                       | No            |
+System settings for Manufacturing Bill of Materials help you to accomplish several tasks. Refer to the table for more information.
+
+| **Task**   | **Required?** |
+|------------|---------------|
+| Specify whether component lead time should be calculated based on the manufacturing order start date or the manufacturing order due date.  | Yes           |
+| Select the visual cues for the Bill of Materials Entry window and the Bill of Materials View window. (This can be changed on a user-by-user basis.)| No            |
+| Set up user-defined fields for bills of materials. | No            |
 | Specify whether site information for building a phantom subassembly item will be based on the phantom item’s bill of materials or the finished goods’ bill of materials. | No            |
-| Specify options for mass-changing bills of materials.                                                                                                                    | No            |
- You’ll use the BOM Preference Defaults window to complete these tasks.
- **To set up bills of materials system settings:**
+| Specify options for mass-changing bills of materials. | No            |
+
+You’ll use the BOM Preference Defaults window to complete these tasks.
+
+#### To set up bills of materials system settings
 
 1. Open the BOM Preference Defaults window. (Microsoft Dynamics GP menu \>\>
     Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Bill of
     Materials)
 
-IMAGE - MFGBOM
+    ![A screenshot of a cell phone Description automatically generated](media/ad05a25ecf94b6674192d1e77f8455cb.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/ad05a25ecf94b6674192d1e77f8455cb.jpg)
+2. Specify which visual cue should be used by default in the Bill of Materials Entry window and the Bill of Materials View window.
 
-1. Specify which visual cue should be used by default in the Bill of Materials
-    Entry window and the Bill of Materials View window.
- Each user can choose a different visual cue, if needed.
+    Each user can choose a different visual cue, if needed.
 
-1. Choose the date that should be used to calculate component lead time dates.
-    This selection determines how lead times are calculated for all components
-    and can’t be changed on a per-user basis.
- For more information about lead time offsets, refer to *Lead time calculations* in *Chapter 9, “Bill of Materials overview,”* in the Manufacturing Core Functions documentation.
+3. Choose the date that should be used to calculate component lead time dates.
 
-1. You can enter labels for user-defined fields, if needed.
- Later, you can add information in the user-defined fields in the Bill of Materials Entry window. You can enter information for each component in each bill of materials. Refer to *Changing component details* in *Chapter 11, “Bill of Materials entry,”* in the Manufacturing Core Functions documentation for more information.
+    This selection determines how lead times are calculated for all components and can’t be changed on a per-user basis.
 
-1. To specify how the issue-to site for components of phantom items are
-    determined, you can use the Use Work Centers from the phantom’s BOM option.
- Refer to the table for more information.
+    For more information about lead time offsets, refer to *Lead time calculations* in *Chapter 9, “Bill of Materials overview,”* in the Manufacturing Core Functions documentation.
 
-|                                                                                | **Option is marked**                                                                                   | **Option is unmarked**                                                                                    |
-|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| **Phantom item has no issue-to site in the finished goods’ bill of materials** | The issue-to site for components of the phantom item comes from the phantom item’s bill of materials.  |                                                                                                           |
-| **Phantom item has an issue-to site in the finished goods’ bill of materials** | The issue-to site for components of the phantom item comes from the finished good’s bill of materials. | The issue-to site for components of the phantom item are comes from the phantom item’s bill of materials. |
- Refer to *Phantom items as components of phantom items* for examples of how the rules are applied when a manufacturing order for a phantom item includes phantom components.
+4. You can enter labels for user-defined fields, if needed.
 
-1. To specify the default spacing between position numbers, enter a number in
-    the New Component Position Number Incremental Spacing field.
- We recommend that you leave a few spaces in between position numbers to allow room to add more position numbers later. Refer to *Chapter 10, “Position numbers”* in the Core Functions manual for more information.
+    Later, you can add information in the user-defined fields in the Bill of Materials Entry window. You can enter information for each component in each bill of materials. Refer to *Changing component details* in *Chapter 11, “Bill of Materials entry,”* in the Manufacturing Core Functions documentation for more information.
 
-1. Mark the Archive copies of mass-changed BOMs option to keep a copy of the
-    original bill of materials each time a bill of materials is changed using
-    the BOM Mass Updates window.
+5. To specify how the issue-to site for components of phantom items are determined, you can use the Use Work Centers from the phantom’s BOM option. Refer to the table for more information.
 
-2. If you marked Archive copies of mass-changed BOMs, you also can specify
-    whether the revision history for the bill of materials should be archived.
-    Mark Copy Revision History to the Archived BOM if revision history also
-    should be stored.
+    |Case| Option is marked  | Option is unmarked |
+    |----|-------------------|--------------------|
+    | **Phantom item has no issue-to site in the finished goods’ bill of materials** | The issue-to site for components of the phantom item comes from the phantom item’s bill of materials.  | |
+    | **Phantom item has an issue-to site in the finished goods’ bill of materials** | The issue-to site for components of the phantom item comes from the finished good’s bill of materials. | The issue-to site for components of the phantom item are comes from the phantom item’s bill of materials. |
 
-3. Mark the bill of materials types that should not be included when changing
-    bills of materials using the BOM Mass Updates window. You can choose to
-    exclude Manufacturing, Engineering, Configured, or Super bill of materials
-    types from mass changes.
- For example, if you mark Engineering, Engineering will be marked in the Exclude BOM types from mass changes option in the BOM Mass Updates window and you will need to unmark it to change an engineering bill of materials.
+    Refer to *Phantom items as components of phantom items* for examples of how the rules are applied when a manufacturing order for a phantom item includes phantom components.
 
-1. You can enter or select a process security set if use of the BOM Mass
-    Updates window should be limited to a certain group of users or should
-    require a password.
- Refer to *Process security* for more information.
+6. To specify the default spacing between position numbers, enter a number in the **New Component Position Number Incremental Spacing** field.
 
-1. Choose OK and close the window.
+    We recommend that you leave a few spaces in between position numbers to allow room to add more position numbers later. Refer to *Chapter 10, “Position numbers”* in the Core Functions manual for more information.
+
+7. Mark the **Archive copies of mass-changed BOMs** option to keep a copy of the original bill of materials each time a bill of materials is changed using the **BOM Mass Updates** window.
+
+8. If you marked **Archive copies of mass-changed BOMs**, you also can specify whether the revision history for the bill of materials should be archived. Mark **Copy Revision History to the Archived BOM** if revision history also should be stored.
+
+9. Mark the bill of materials types that should not be included when changing bills of materials using the BOM Mass Updates window. You can choose to exclude Manufacturing, Engineering, Configured, or Super bill of materials types from mass changes.
+
+    For example, if you mark **Engineering**, Engineering will be marked in the Exclude BOM types from mass changes option in the BOM Mass Updates window and you will need to unmark it to change an engineering bill of materials.
+
+10. You can enter or select a process security set if use of the BOM Mass Updates window should be limited to a certain group of users or should require a password.
+
+    Refer to *Process security* for more information.
+
+11. Choose OK and close the window.
 
 ### Phantom items as components of phantom items
- If you’re going to create manufacturing orders for phantom subassembly items that include phantom subassemblies, rules for determining the sites for the components will depend on whether you marked the Use Work Centers of phantom’s BOM in the BOM Preference Defaults window.
- Refer to the following examples for more information.
- **Bills of materials**
- For these examples, assume that the following is your bill of materials for the finished good. Note that it includes a phantom subassembly item that has its own phantom subassembly item.
+
+If you’re going to create manufacturing orders for phantom subassembly items that include phantom subassemblies, rules for determining the sites for the components will depend on whether you marked the Use Work Centers of phantom’s BOM in the BOM Preference Defaults window.
+
+Refer to the following examples for more information.
+
+### Bills of materials
+
+For these examples, assume that the following is your bill of materials for the finished good. Note that it includes a phantom subassembly item that has its own phantom subassembly item.
 
 | Finished good |           |                           |                           |                           |
 |---------------|-----------|---------------------------|---------------------------|---------------------------|
@@ -463,16 +466,20 @@ IMAGE - MFGBOM
 |               |           | Phantom 2                 | Issued to work center 300 |                           |
 |               |           |                           | Component B               | Issued to work center 400 |
 |               |           |                           | Component C               | Issued to work center 400 |
- **Example 1**
- If Use Work Centers of phantom item’s BOM is marked, the picklist for the manufacturing order to build Phantom 1 would include the following information:
+
+#### Example 1
+
+If **Use Work Centers of phantom item’s BOM** is marked, the picklist for the manufacturing order to build Phantom 1 would include the following information:
 
 - Component A would be issued to work center 200
 
 - Component B would be issued to work center 400
 
 - Component C would be issued to work center 400
- **Example 2**
- If Use Work Centers of phantom item’s BOM is not marked, the picklist for the manufacturing order to build Phantom 1 would include the following information:
+
+#### Example 2
+
+If **Use Work Centers of phantom item’s BOM** is *not* marked, the picklist for the manufacturing order to build Phantom 1 would include the following information:
 
 - Component A would be issued to work center 100
 
@@ -481,36 +488,37 @@ IMAGE - MFGBOM
 - Component C would be issued to work center 300
 
 ### Setting up Sales Configurator options
- Use Sales Configurator preferences to determine how Sales Configurator will work for your business and how its use will affect other modules.
+
+Use Sales Configurator preferences to determine how Sales Configurator will work for your business and how its use will affect other modules.
  **To set up Sales Configurator options:**
 
-1. Open the Sales Configurator Preferences window. (Microsoft Dynamics GP menu
-    \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Sales
-    Configurator)
+1. Open the Sales Configurator Preferences window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Sales Configurator)
 
-2. Mark Display Manufacturing Order Start Date while configuring if a start
-    date for the associated manufacturing orders should be created
-    automatically.
- When you open the Sales Configurator window from the Sales Item Detail window, a manufacturing order automatically will be generated. If you’ve marked this option, a start date for the order will be calculated and included. If you don’t mark this option, a start date won’t be calculated until you choose Schedule in the Sales Configurator window.
+2. Mark Display Manufacturing Order Start Date while configuring if a start date for the associated manufacturing orders should be created automatically.
 
-1. Mark Display Messages for Option Promotions to see messages about special
-    promotions for the options you’re using as you’re working with the Sales
-    Configurator.
+    When you open the Sales Configurator window from the Sales Item Detail window, a manufacturing order automatically will be generated. If you’ve marked this option, a start date for the order will be calculated and included. If you don’t mark this option, a start date won’t be calculated until you choose Schedule in the Sales Configurator window.
 
-2. Choose OK and close the window.
+3. Mark Display Messages for Option Promotions to see messages about special promotions for the options you’re using as you’re working with the Sales Configurator.
+
+4. Choose OK and close the window.
 
 ### Setup options for sales order extensions
- Microsoft Dynamics GP Sales Order Processing includes tools you can use to manage sales functions in your manufacturing environment. However, when you install Manufacturing you also must complete additional setup tasks that determine how sales affect other modules. For example, you must specify default settings for manufacturing orders that will be generated automatically from sales orders.
- When Manufacturing is installed, you must complete the following setup procedures:
- **Due date options** You must specify how due dates for manufacturing orders linked directly to sales orders should be calculated. Refer to *Setting up manufacturing sales order due dates* for more information.
- **Manufacturing order options** To automatically generate manufacturing orders from sales orders, you must specify the default settings for those manufacturing orders. You also can specify whether customer priority levels should affect the priority levels of manufacturing orders generated from sales orders. Refer to *Setting up manufacturing orders for sales orders* for more information.
- **Order fulfillment options** To track additional information about how orders are fulfilled, you must set up order fulfillment options. You can specify a default carrier and FOB point. You also can select options so users can modify the freight and miscellaneous charges associated with order fulfillment. Refer to *Setting up order fulfillment options* for more information.
 
-*For more information about sales order processing and setup, refer to the Sales
-Order Processing documentation.*
+Microsoft Dynamics GP Sales Order Processing includes tools you can use to manage sales functions in your manufacturing environment. However, when you install Manufacturing you also must complete additional setup tasks that determine how sales affect other modules. For example, you must specify default settings for manufacturing orders that will be generated automatically from sales orders.
+
+ When Manufacturing is installed, you must complete the following setup procedures:
+
+- **Due date options** You must specify how due dates for manufacturing orders linked directly to sales orders should be calculated. Refer to *Setting up manufacturing sales order due dates* for more information.
+- **Manufacturing order options** To automatically generate manufacturing orders from sales orders, you must specify the default settings for those manufacturing orders. You also can specify whether customer priority levels should affect the priority levels of manufacturing orders generated from sales orders. Refer to *Setting up manufacturing orders for sales orders* for more information.
+- **Order fulfillment options** To track additional information about how orders are fulfilled, you must set up order fulfillment options. You can specify a default carrier and FOB point. You also can select options so users can modify the freight and miscellaneous charges associated with order fulfillment. Refer to *Setting up order fulfillment options* for more information.
+
+> [!TIP]
+> For more information about sales order processing and setup, refer to the Sales
+> Order Processing documentation.
 
 ### Setting up manufacturing sales order due dates
- Use the Manufacturing Series Sales Order Preferences window to specify how due dates for sales orders will be calculated.
+
+Use the **Manufacturing Series Sales Order Preferences** window to specify how due dates for sales orders will be calculated.
  **To set up manufacturing sales order due dates:**
 
 1. Open the Manufacturing Series Sales Order Preferences window.
