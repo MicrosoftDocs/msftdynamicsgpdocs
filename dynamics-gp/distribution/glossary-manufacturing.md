@@ -1138,5 +1138,5 @@ A system that helps you to track and analyze the costs associated with a particu
 
 ## See also
 
-[Manufacturing Setup](MfgSetup.md)  
+[Manufacturing Setup](manufacturing-setup-part-1.md)  
 [Glossary of Terms in the Distribution Area in Dynamics GP](glossary.md)  
