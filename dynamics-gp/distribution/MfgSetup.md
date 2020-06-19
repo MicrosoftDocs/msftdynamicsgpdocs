@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 06/18/2020
+ms.date: 06/19/2020
 ---
 
 # Manufacturing Setup
@@ -2002,7 +2002,7 @@ IMAGE – MFGCRP.jpg
 1.  Choose OK and close the window.
 
 #### Restoring MRP default settings
- You can use the MRP Preferences window to remove the user-defined MRP preference settings you’ve selected. Completing this procedure will make the user preferences for the selected user ID identical to the systemwide default settings.
+You can use the MRP Preferences window to remove the user-defined MRP preference settings you’ve selected. Completing this procedure will make the user preferences for the selected user ID identical to the systemwide default settings.
 
 **To restore MRP default settings:**
 
@@ -2034,7 +2034,7 @@ IMAGE – MFGCRP.jpg
 
 3.  Choose OK and close the window.
 
-#### Accounts Used for Manufacturing in Dynamics GP
+# Accounts Used for Manufacturing in Dynamics GP
 
 **Manufacturing Inventory and General Ledger Transactions General**
 
@@ -2053,54 +2053,57 @@ This is dependent on the type of costing used.
 
 - Actual Costing Accounts
 
-    Accounts that are used for actual cost item transactions in manufacturing are:
-
-        - Inventory (for most transaction)
-        - Inventory Offset (for inventory adjustments, receiving)
-        - Cost Of Goods Sold (for sales invoices)
-        - Sales Returns (for sales returns)
-        - WIP (for MO close of issued/back flushed components of made items)
-        - Variance Material (for potential labor, machine and material variances)
+Accounts that are used for actual cost item transactions in manufacturing are:
+    Inventory (for most transaction)
+    Inventory Offset (for inventory adjustments, receiving)
+    Cost Of Goods Sold (for sales invoices)
+    Sales Returns (for sales returns)
+    WIP (for MO close of issued/back flushed components of made items)
+    Variance Material (for potential labor, machine and material variances)
 
 - Standard Costing Accounts
 
-    Account Numbers for standard cost items are set in the Item Account Maintenance Costing window (Figure 2).  Accounts that are used for standard cost item transaction in manufacturing are:
+Account Numbers for standard cost items are set in the Item Account Maintenance Costing window.  Accounts that are used for standard cost item transaction in manufacturing are:
 
-        - Standard Cost Revaluation Account (for standard cost revaluation function)
-        - Applied – Material overhead Accounts (for receiving – BUY items)
-        - Variance Accounts (for variances during MO Close – MAKE items)
-        - WIP Accounts (for issue/backflush of materials- MAKE items)
-        - COGS Accounts (for sales invoices – sold items)
-        - Inventory Accounts (for inventory adjustments, transfers, issue of materials, MO close – all items)
+   Standard Cost Revaluation Account (for standard cost revaluation function)
+   Applied – Material overhead Accounts (for receiving – BUY items)
+   Variance Accounts (for variances during MO Close – MAKE items)
+   WIP Accounts (for issue/backflush of materials- MAKE items)
+   COGS Accounts (for sales invoices – sold items)
+   Inventory Accounts (for inventory adjustments, transfers, issue of materials, MO close – all items)
 
 - Accounts Required for both Actual and Standard Costing Items
 
-    Additional accounts necessary for both actual and standard costing are the labor and machine setup accounts, the rounding difference account, and the accrued purchases account.
+Additional accounts necessary for both actual and standard costing are the labor and machine setup accounts, the rounding difference account, and the accrued purchases account.
 
-        - Labor applied accounts can be set in the Labor Code Definition window.  To open the window go to Cards > Manufacturing > Labor Codes.
-        - Machine applied accounts can be set in the Machine Definition window. To open the window go to Cards > Manufacturing > Machines.
-        - The Rounding Difference account can be set in the Costing Preference Defaults window.  To open the window go to Tool > Setup > Manufacturing > System Defaults > Costing.
-        - Accrued Purchases account can be set under the Vendor Account Maintenance window. To open the window go to Cards > Purchasing > Vendor > Account.
+ Labor applied accounts can be set in the Labor Code Definition window.  
+     To open the window go to Cards > Manufacturing > Labor Codes.
+ Machine applied accounts can be set in the Machine Definition window. 
+     To open the window go to Cards > Manufacturing > Machines.
+ The Rounding Difference account can be set in the Costing Preference Defaults window.  
+    To open the window go to Tool > Setup > Manufacturing > System Defaults > Costing.
+ Accrued Purchases account can be set under the Vendor Account Maintenance window. 
+    To open the window go to Cards > Purchasing > Vendor > Account.
+
 
 ##### How will the Cost be Determined
 
 - Actual items cost used
 
-    Actual cost items have a perpetual valuation method.  The last cost received for an item can be found in the Current Cost field on the Item Maintenance window. To open the Item Maintenance window go to Cards > Inventory > Item.  The actual costs will be used when items are removed from inventory. The actual costs for each item are located in the Purchase receipts table (IV10200).  You can view these costs by printing the Purchase Receipts report under Report > Inventory > Activity > Purchase Receipts (Figure 2).  The costs that the system will use are based on the Perpetual valuation method selected (FIFO vs. LIFO) and will it will pull out the cost of the IV Purchase receipts table when posted.
+    Actual cost items have a perpetual valuation method.  The last cost received for an item can be found in the Current Cost field on the Item Maintenance window. To open the Item Maintenance window go to Cards > Inventory > Item.  The actual costs will be used when items are removed from inventory. The actual costs for each item are located in the Purchase receipts table (IV10200).  You can view these costs by printing the Purchase Receipts report under Report > Inventory > Activity > Purchase Receipts.  The costs that the system will use are based on the Perpetual valuation method selected (FIFO vs. LIFO) and will it will pull out the cost of the IV Purchase receipts table when posted.
 
 - Standard cost items cost used 
 
     Standard Cost items have a periodic valuation method.  The “total” cost for these types of items can be found in the Standard Cost field in the Item Maintenance window.  The “broken out” costs for these types of items can be found on the Standard Cost changes window located under Cards > Manufacturing > Inventory > Standard Cost Changes. The “broken out” costs are used for the GL transactions of standard cost items.  The “broken out’ costs are:
-
-        - Material
-        - Material Fixed Overhead
-        - Material Variable Overhead
-        - Labor
-        - Labor Fixed Overhead
-        - Labor Variable Overhead
-        - Machine
-        - Machine Fixed Overhead
-        - Machine Variable Overhead
+- Material
+- Material Fixed Overhead
+- Material Variable Overhead
+- Labor
+- Labor Fixed Overhead
+- Labor Variable Overhead
+- Machine
+- Machine Fixed Overhead
+- Machine Variable Overhead    
 
 ##### General Ledger Transactions
 
@@ -2490,6 +2493,7 @@ Example of Accounts and Cost used during a SOP Return for an actual cost finishe
 Standard Cost Item Accounts and Costs used during a SOP Return for a finished good item
 
 | **DR/CR** | **Account**                                | **Cost Used**                             |
+|-----------|--------------------------------------------|---------------------------                |
 | DR        | Inventory Item     (Item Account Maint)    | Material Cost * Quantity                  |
 | DR        | Inventory – Material Fixed Overhead        | Material Fixed Overhead Cost * Quantity   |
 | DR        | Inventory – Material Variable Overhead     | Material Variable Overhead Cost* Quantity |
@@ -2512,6 +2516,7 @@ Standard Cost Item Accounts and Costs used during a SOP Return for a finished go
 Example of Accounts and Costs used during a SOP Return for a finished good item
 
 | **DR/CR** | **Account**                           | **Cost Used**                     |
+|-----------|---------------------------------------|--------------------               |
 | DR        | FG - Material                         | $4.10 * 1 = $4.10                 |
 | DR        | FG - Material Fixed Overhead          | $.55 * 1 = $.55                   |
 | DR        | FG - Material Variable Overhead       | $.35 * 1 = $.35                   |
