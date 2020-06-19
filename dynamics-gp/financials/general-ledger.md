@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: tnistler
-ms.date: 06/13/2020
+ms.date: 06/16/2020
 
 ---
 # Dynamics GP General Ledger
@@ -4637,33 +4637,35 @@ Use the Deferral Check Links window to verify that your transaction distribution
 
 3. Choose OK.
 
-## Additional Feature Functionality added to General Ledger
-To review detailed information about each feature, click the relevant link below.
+## Additional Functionality added to General Ledger
 
-[**Web Client Excel Copy and Paste General Ledger Journal**]
-(https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---web-client-excel-copy-and-paste-general-ledger-journal)
-This was one of the most requested features from the customer community, and because of the complexity of Web Client this was not an easy task, but you asked and its finally here!!!
-With the new release (18.2) you can now import journal entry lines from an excel file using the Paste button on the menu bar of the General Ledger Transaction Entry window.   Just like the desktop client, the format of the data in your excel file is the same with the exception that you must not have a header line on your file.  In my below example, the first row contains headers that describe each column.  
+To review detailed information about each feature, choose the relevant link below.
 
-[**Display user who posted on Journal Entry Inquiry**]
-(https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---display-user-who-posted-on-journal-entry-inquiry-436673736)
-Have you ever wondered who posted an out of the ordinary Journal Entry transaction, and then you had to ask your IT to look at the SQL tables to find out who it was?  Well not any more in the General Ledger with 18.2!
+- [Web Client Excel Copy and Paste General Ledger Journal](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---web-client-excel-copy-and-paste-general-ledger-journal)
 
-The Journal Entry Inquiry and Transaction Entry Zoom will both now display the user who posted the transaction in the General Ledger.  In previous versions SQL, SmartList, or a custom report would have been required to display this information. 
+    This was one of the most requested features from the customer community, and because of the complexity of the Web Client, it took some time before it became available, but it's finally here.
 
-The new User Who Posted field will display the data from the USWHPSTD column in the GL20000 for current year transactions, or GL30000 for historic year transactions. 
+    With the new release (18.2), you can now import journal entry lines from an excel file using the Paste button on the menu bar of the General Ledger Transaction Entry window. Just like the desktop client, the format of the data in your excel file is the same with the exception that you must not have a header line on your file. In the example in the blog post that is linked to above, the first row contains headers that describe each column.  
 
-Go to Inquiry, point to Financial, Click Journal Entry Inquiry.
+- [Display user who posted on Journal Entry Inquiry](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---display-user-who-posted-on-journal-entry-inquiry-436673736)
 
-[**Transaction Level Post Through General Ledger**]
-(https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-r2-transaction-level-post-through-gl)
-With the release of Microsoft Dynamics GP 2018 R2, users can now 'Post Through General Ledger' at the transaction level in several windows.  In prior versions of Microsoft Dynamics GP, users have the option to 'Post Through GL' for transactions that are saved to batches only (except for Bank Reconciliation).  In previous versions, any transaction posted from a sub-module that was not saved to a batch would automatically create a batch 'waiting to be posted' in General Ledger.
+    Have you ever wondered who posted an out of the ordinary Journal Entry transaction, and then you had to ask your IT to look at the SQL tables to find out who it was? Well, not any more in the General Ledger with 18.2.
 
-[**General Ledger Account Workflow Approval**]
-(https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-general-ledger-account-approval-workflow)
-In Microsoft Dynamics GP 2018, we have a new workflow, General Ledger Account Approval which provides an approval process for adding or editing posting accounts.  If an account is pending approval or rejected then it cannot be posted against.
-To access the Workflow Maintenance, from the Administration navigation pane, under setup, choose Company, expand Workflow, and then click Workflow Maintenance, select Financial from the drop down.
+    The Journal Entry Inquiry and Transaction Entry Zoom will both now display the user who posted the transaction in the General Ledger. In previous versions SQL, SmartList, or a custom report would have been required to display this information.  
 
+    The new User Who Posted field will display the data from the USWHPSTD column in the GL20000 for current year transactions, or GL30000 for historic year transactions.  
+
+    Go to **Inquiry**, point to **Financial**, and then choose **Journal Entry Inquiry**.
+
+- [Transaction Level Post Through General Ledger](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-r2-transaction-level-post-through-gl)
+
+    With the release of Dynamics GP 2018 R2, users can now 'Post Through General Ledger' at the transaction level in several windows.  In previous versions of Dynamics GP, users have the option to 'Post Through GL' for transactions that are saved to batches only (except for Bank Reconciliation).  In previous versions, any transaction posted from a sub-module that was not saved to a batch would automatically create a batch 'waiting to be posted' in General Ledger.
+
+- [General Ledger Account Workflow Approval](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-general-ledger-account-approval-workflow)
+
+    In Dynamics GP 2018, we have a new workflow, General Ledger Account Approval which provides an approval process for adding or editing posting accounts.  If an account is pending approval or rejected then it cannot be posted against.
+
+    To access the **Workflow Maintenance**, from the **Administration** navigation pane, under **Setup**, choose **Company**, expand **Workflow**, choose **Workflow Maintenance**, and then select **Financial** from the drop down.
 
 ## Glossary
 
