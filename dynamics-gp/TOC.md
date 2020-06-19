@@ -112,8 +112,12 @@
 
 <!--- distribution -->
 ## Distribution
-### [Field Service Returns Management](distribution/ReturnsManagement.md) 
-### [Manufacturing Setup](distribution/MfgSetup.md)
+### [Field Service Returns Management](distribution/ReturnsManagement.md)
+### Manufacturing
+#### [Manufacturing Setup - Part 1: Manufacturing setup](distribution/manufacturing-setup-part-1.md)
+#### [Manufacturing Setup - Part 2: User setup](distribution/manufacturing-setup-part-2.md)
+#### [Accounts Used for Manufacturing in Dynamics GP](distribution/manufacturing-accounts-used.md)
+#### [Glossary of Terms in Manufacturing](distribution/glossary-manufacturing.md)
 ### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
 ### [Concur Expense](distribution/ConcurExpense.md)
 ### [Purchase Order Processing](distribution/purchase-order-processing.md)
