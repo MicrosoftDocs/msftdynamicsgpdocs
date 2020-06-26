@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 06/22/2020
+ms.date: 06/26/2020
 ---
 # U.S. 2020 Payroll Tax Update
 
@@ -23,7 +23,8 @@ The fourth tax update for 2020 replaces all previous tax updates. It includes st
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
-## Changes in January Round 4 update
+## Changes in Round 4 update
+
 - Idaho
 - Connecticut
 
@@ -59,13 +60,12 @@ Withholding rates for taxpayers filing as *MAR*
 | 40,480      | 48,320           | 568.00         | 6.625%       | 40,480             |
 | 48,320      | And Over         | 1,087.00       | 6.925%       | 48,320             |
 
-
 #### Withholding changes for Connecticut
 
 The only change is the removal of the 100,000 amount from the Filing Status F table.
 
+## Changes in Round 3 update
 
-## Changes in January Round 3 update
 - Arkansas
 - Oregon - Correction
 
@@ -92,13 +92,12 @@ Tax Type rates for Filing Status NA
 | 85,200      | 86,200           | -843.40        | 6.6%         | 0                  |
 | 86,200      | And over         | -803.40        | 6.6%         | 0                  |
 
-
 #### Withholding changes for Oregon correction
 
 The filing status of S2 only had a correction for the tax rate from 9.75% to 8.75% on wages between $40,735 and $125,000.
 
+## Changes in Round 2 update
 
-## Changes in January Round 2 update
 - Federal
 - Colorado
 - Idaho
@@ -111,7 +110,6 @@ The filing status of S2 only had a correction for the tax rate from 9.75% to 8.7
 - Rhode Island
 - Vermont
 
-
 ### 2020 Federal tax changes
 
 Standard deduction amounts were removed for the following Filing Status:
@@ -120,18 +118,15 @@ Standard deduction amounts were removed for the following Filing Status:
 - MARHR - Married Higher WH 
 - SGLHR - Single Higher WH
 
-
 ### 2020 state or territorial tax changes
 
 The following tax changes are included in this update:
-
 
 #### Withholding changes for Colorado
 
 - Flat tax rate of 4.63 for all filing status
 - For Filing Status of MAR, the Personal Exemption amount is \$8,000 per exemption entered
 - For Filing Status of SINGLE, the Personal Exemption amount is \$4,000 per exemption entered
-
 
 #### Withholding changes for Idaho
 
@@ -457,9 +452,8 @@ Withholding rates for taxpayers filing as *SINGLE*
 | 100,925     | 207,125          | 5,143.43       | 7.60%        | 100,925            |
 | 207,125     | And Over         | 13,214.63      | 8.75%        | 207,125            |
 
-
-
 ## Changes in January Round 1 update
+
 - Federal changes and FICA Limit
 - California
 - Illinois
@@ -847,8 +841,6 @@ Tax Type rates for all Filing Status:
 | 10,490      | 13,110           | -293.54        | 6.0%         | 0                  |
 | 13,110      | And over         | -424.64        | 7.0%         | 0                  |
 
-
-
 ## Resources to assist you
 
 If you have questions about U.S. Payroll tax updates and your Microsoft Partner isn’t available, there are several resources, in addition to this document, to assist in answering your questions.
@@ -916,9 +908,9 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
     If you selected Manual, specify the location where the tax table update file is located.
 
-4.  Choose Process to start the update.
+4. Choose Process to start the update.
 
-5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 6/26/2020.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *6/26/2020*.
 
 ## What’s next
 
