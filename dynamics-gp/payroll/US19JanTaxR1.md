@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 02/24/2020
+ms.date: 06/22/2020
 ---
 # U.S. 2020 Payroll Tax Update
 
@@ -16,13 +16,54 @@ This tax update applies to:
 
 - Microsoft Dynamics GP on Microsoft SQL Server
 - Microsoft Dynamics GP 2016 on Microsoft SQL Server
-- Microsoft Dynamics GP 2015 on Microsoft SQL Server
 
 This document contains instructions for installing the 2020 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-The third tax update for 2020 replaces all previous tax updates. It includes federal and state tax table changes that took effect January 1, 2020. It is recommended you install this update before processing payrolls for the year 2020.
+The fourth tax update for 2020 replaces all previous tax updates. It includes state tax table changes that took effect July 1, 2020. It is recommended you install this update before processing payrolls for the year 2020.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+## Changes in January Round 4 update
+- Idaho
+- Connecticut
+
+### 2020 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for Idaho
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 12,400           | 0              | 0%           | 0                  |
+| 12,400      | 13,968           | 0              | 1.125%       | 12,400             |
+| 13,968      | 15,536           | 18.00          | 3.125%       | 13,968             |
+| 15,536      | 17,104           | 67.00          | 3.625%       | 15,536             |
+| 17,104      | 18,672           | 124.00         | 4.625%       | 17,104             |
+| 18,672      | 20,240           | 197.00         | 5.625%       | 18,672             |
+| 20,240      | 24,160           | 285.00         | 6.625%       | 20,240             |
+| 24,160      | And Over         | 545.00         | 6.925%       | 24,160             |
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 24,800           | 0              | 0%           | 0                  |
+| 24,800      | 27,936           | 0              | 1.125%       | 24,800             |
+| 27,936      | 31,072           | 35.00          | 3.125%       | 27,936             |
+| 31,072      | 34,208           | 133.00         | 3.625%       | 31,072             |
+| 34,208      | 37,344           | 247.00         | 4.625%       | 34,208             |
+| 37,344      | 40,480           | 392.00         | 5.625%       | 37,344             |
+| 40,480      | 48,320           | 568.00         | 6.625%       | 40,480             |
+| 48,320      | And Over         | 1,087.00       | 6.925%       | 48,320             |
+
+
+#### Withholding changes for Connecticut
+
+The only change is the removal of the 100,000 amount from the Filing Status F table.
+
 
 ## Changes in January Round 3 update
 - Arkansas
@@ -822,7 +863,7 @@ Take a look at [CustomerSource](https://mbs.microsoft.com/customersource/support
 
 ### eSupport
 
-For support requests that can be handled with email, go to [https://mbs.microsoft.com/support/newstart.aspx](https://mbs.microsoft.com/support/newstart.aspx). On average, the response time is nearly twice as fast as telephone support.
+For support requests that can be handled with email, go to [https://support.microsoft.com/supportforbusiness](https://support.microsoft.com/supportforbusiness). On average, the response time is nearly twice as fast as telephone support.
 
 ### Discussion
 
@@ -840,7 +881,7 @@ Use the instructions in this section to prepare for the U.S. Payroll Tax Update.
 
 To identify the version, you’re using, start Microsoft Dynamics GP. Choose Help\>\> About Microsoft Dynamics GP. The information window displays the version number in the lower right corner.
 
-This U.S. Payroll Tax Update is supported for Microsoft Dynamics GP, Microsoft Dynamics GP 2016, and Microsoft Dynamics GP 2015 on Microsoft SQL Server.
+This U.S. Payroll Tax Update is supported for Microsoft Dynamics GP and Microsoft Dynamics GP 2016 on Microsoft SQL Server.
 
 If you’re not using one of the supported versions, you must upgrade to a supported version before installing this tax update.
 
@@ -854,7 +895,7 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 3 2020 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The Round 4 2020 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -877,7 +918,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4.  Choose Process to start the update.
 
-5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 2/28/2020.
+5.  Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be 6/26/2020.
 
 ## What’s next
 
