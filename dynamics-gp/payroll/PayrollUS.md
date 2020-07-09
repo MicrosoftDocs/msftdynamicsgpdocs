@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 06/13/2020
+ms.date: 07/9/2020
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -4379,20 +4379,14 @@ select Setting Up the System.*
 
 #### Entering manual check transactions
 
-Use the Payroll Manual Check–Adjustment Entry window to record manually
-written paychecks. You also can reverse a previously written manual or
-computer check and enter adjustments to make corrections to employee
-financial information using this window.
+Use the Payroll Manual Check–Adjustment Entry window to record manually written paychecks. You also can reverse a previously written manual or
+computer check and enter adjustments to make corrections to employee financial information using this window.
 
-A default payment number or adjustment number will be displayed from the
-Payroll Setup window. A payment number identifies a group of related entries
-that are posted collectively as a single, complete transaction or check. An
-adjustment number identifies a group of adjustments that you make in this
-window that are posted collectively as a single, complete transaction. You
-can change this number.
+A default payment number or adjustment number will be displayed from the Payroll Setup window. A payment number identifies a group of related entries
+that are posted collectively as a single, complete transaction or check. An adjustment number identifies a group of adjustments that you make in this
+window that are posted collectively as a single, complete transaction. You can change this number.
 
-*An adjustment doesn’t affect gross or net wages since you’re not issuing a
-check and can be posted only if the gross and net amounts are zero.*
+*An adjustment doesn’t affect gross or net wages since you’re not issuing a check and can be posted only if the gross and net amounts are zero.*
 
 **To enter manual check transactions:**
 
@@ -4401,41 +4395,22 @@ check and can be posted only if the gross and net amounts are zero.*
 
 ![A screenshot of a cell phone Description automatically generated](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
 
-A screenshot of a cell phone Description automatically generated
 
-A screenshot of a cell phone Description automatically generated
+2. Select a check type.
 
-A screenshot of a cell phone Description automatically generated
+3. Enter or select a batch ID. For more information, refer to *Creating a batch* .
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-1. Select a check type.
-
-2. Enter or select a batch ID. For more information, refer to *Creating a
-    batch* .
-
-3. Enter or select the checkbook ID from which this check was issued. Then,
-    either accept the default number or enter a new check number and the date
-    you issued the check.
-
-If the transaction doesn’t have a batch ID assigned to it, you can enter a
-Posted
-
-Date. If there is a batch ID assigned, the date comes from the Payroll Batch
-Entry window.
-
-*You can only select a checkbook ID and check number if you marked Manual
-Check as your check type.*
+4. Enter or select the checkbook ID from which this check was issued. Then, either accept the default number or enter a new check number and the date
+   you issued the check.  
+   If the transaction doesn’t have a batch ID assigned to it, you can enter a Posted Date. If there is a batch ID assigned, the date comes from the Payroll Batch Entry    window. 
+   
+*You can only select a checkbook ID and check number if you marked Manual Check as your check type.*
 
 1. Enter or select the ID of the employee the check was written for.
 
-2. Choose Transactions to open the Payroll Manual Check Transaction Entry
-    window, where you can enter transactions for the manual check.
+2. Choose Transactions to open the Payroll Manual Check Transaction Entry window, where you can enter transactions for the manual check.
 
-*If the manual check entry is being used to reverse a previous check, enter
-negative amounts. All your entries will be posted as negative amounts,
+*If the manual check entry is being used to reverse a previous check, enter negative amounts. All your entries will be posted as negative amounts,
 offsetting the amounts of the earlier check.*
 
 1. Select the transaction type that applies to this transaction.
@@ -4518,6 +4493,101 @@ check using either computer or manual check processes.
 
 6. Choose Save.
 
+**Manual Checks What You Should Know:**
+
+Before you enter/post a Manual Check you’ll want to ensure you chose the appropriate ‘Check Type’ in the Payroll Manual Check Adjustment Entry Window.
+
+Here’s what you need to know about each Check Type:
+
+**Manual Check – Will update Payroll, Bank Rec, and General Ledger. Use this if you are:**
+
+•	Recording a manually written paycheck
+•	Making a negative adjustment 
+o	Note: Negative Manual Checks cannot be saved to a batch
+•	Most Commonly Used
+•	Do not enter positive and negative amounts at the same time:
+o	Post only positive amounts
+o	Or post only negative amounts
+
+**Adjustment – Will update Payroll and General Ledger. User this if you are:**
+
+•	Entering an adjustment. 
+•	Adjustments can be posted only if the gross and net wage amounts are zero. 
+o	Note: There will be no check number associated with an adjustment.
+•	If GL is not being updated as expected: 
+Ensure you're set up to 'Post To' GL and not 'Through' (Microsoft Dynamics GP >> Tools >> Setup >> Posting >> Posting >> Series = Payroll >> Origin = Manual Checks).
+
+**Beginning Balances – Will NOT update Bank Rec or General Ledger. Use this if you are:**
+
+•	Entering beginning balances.
+o	Note: There will be no check number associated with a beginning balance.
+•	Don’t want to update Bank Rec or GL
+•	Do not enter positive and negative amounts at the same time:
+o	Post only positive amounts
+o	Or post only negative amounts
+
+IMPORTANT TO NOTE: Manual Checks is that they are exactly that: manual. 
+
+Microsoft Dynamics GP does not automatically calculate anything for you when you process a Manual Check. As such, you need to know exactly what amounts need to be entered/adjusted.
+
+**Here are steps you can utilize to process a Manual Check:**
+
+Enter appropriate information in the Payroll Manual Check-Adjustment Entry Window:
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD1.jpg)
+
+1.	To open the Payroll Manual Check Adjustment Entry window: on the Transactions menu, point to Payroll, and then click on Manual Checks.
+2.	Select the appropriate Check Type.
+3.	Enter a Batch ID if applicable (*Remember you cannot enter a negative manual check in a batch).
+4.	Enter a Checkbook ID if applicable (Not available if processing an Adjustment or Beginning Balance).
+5.	Ensure the Check Number is accurate (Not available if processing an Adjustment or Beginning Balance).
+6.	Enter an appropriate Check Date (The date the check was issued) and Posted Date (The date you want the check will be posted). 
+7.	Next to Employee ID, enter the appropriate Employee ID.
+8.	Click on the Transactions button to open the ‘Payroll Manual Check Transaction Entry Window’.
+9.	Enter/Save all applicable transactions in the Payroll Manual Check Adjustment Entry window **(DETAILS ON HOW TO DO THAT BELOW)**
+10.	After all transactions have been entered/saved in the Payroll Manual Check Adjustment Entry window:
+
+o	IF transactions are NOT saved in a batch, click ‘Post’ in the Payroll Manual Check – Adjustment Entry Window.
+o	IF transactions ARE saved in a batch, click ‘Save’ in the Payroll Manual Check – Adjustment Entry Window, and ‘Post’ the batch from the Payroll Batch Entry Window (Transactions >> Payroll >> Batch Entry).
+
+The Payroll Manual Check Transaction Entry window is where you will enter all of the individual transactions/adjustments associated with a manual check.
+
+Detailed steps and a description of how each adjustment works and effects amounts in Payroll: 
+
+**To enter/adjust an amount for a specific Pay Code:**
+
+1.	Next to ‘Transaction Type’ select ‘Pay Code’.
+
+2.	Next to ‘Code’ select the appropriate pay code.
+o	Note: as soon as you select the pay code the following fields will automatically be populated (Pulling in from Employee Pay Code Maintenance window):
+	State (this does NOT mean state tax will be calculated for you – it won’t).
+	SUTA State SUTA is not calculated during a pay run. 
+    If you want wages associated with this pay code to be subject to SUTA be sure this field is populated appropriately.
+	Workers’ Comp - Workers Comp is not calculated during a pay run. 
+    If you want wages associated with this pay code to be subject to Workers Comp be sure this field is populated appropriately.
+	Shift Code - Informational Only
+	Department
+	Position
+
+3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+
+4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the wages associated with this pay code:
+o	Positive Amount = Increase in gross and net wages
+o	Negative Amount = Decrease in gross and net wages
+
+5.	You can enter data in the following fields. However, be aware that GP does NOT calculate wages based off what you enter in these 
+•	Hours/Units
+•	Days Worked
+•	Weeks Worked
+
+6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay code, you’ll need to do so manually with the appropriate tax in this window.
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD2.jpg)
+
+
+
+
 #### Entering Analytical Accounting information for Payroll transactions
 
 Use the Analytical Payroll Transaction Entry window to enter analysis
@@ -4545,15 +4615,7 @@ the Distributions button \>\> Choose the Analytical Accounting button)
 
 ![A screenshot of a computer Description automatically generated](media/3e3fb21a87f45dc6186c5861d8800dd4.jpg)
 
-A screenshot of a computer Description automatically generated
 
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
-
-A screenshot of a computer Description automatically generated
 
 1. Depending on how you opened the Analytical Payroll Transaction Entry window,
     the information displayed will be either for the distribution or transaction
