@@ -4424,9 +4424,8 @@ Here’s what you need to know about each Check Type:
         - Post only positive amounts
         - Or post only negative amounts
 
-IMPORTANT TO NOTE: Manual Checks is that they are exactly that: manual. 
-
-Microsoft Dynamics GP does not automatically calculate anything for you when you process a Manual Check. As such, you need to know exactly what amounts need to be entered/adjusted.
+> [!IMPORTANT]
+> Manual Checks is that they are exactly that: manual. Microsoft Dynamics GP does not automatically calculate anything for you when you process a Manual Check. As such, you need to know exactly what amounts need to be entered/adjusted.
 
 ##### Steps you can utilize to process a Manual Check
 
@@ -4482,7 +4481,9 @@ Detailed steps and a description of how each adjustment works and effects amount
     - Weeks Worked
 
 6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
-NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay code, you’ll need to do so manually with the appropriate tax in this window.
+
+    > [!NOTE]
+    > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay code, you’ll need to do so manually with the appropriate tax in this window.
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD2.jpg)
 
@@ -4509,11 +4510,13 @@ NOTE: NO tax calculations will be done for you automatically. If you need to inc
 2.	Next to ‘Code’ select the appropriate deduction.
 3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
 4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the Deduction Code:
-o	Positive Amount = Decrease in Net Wages
-o	Negative Amount = Increase in Net Wages
+
+    - Positive Amount = Decrease in Net Wages
+    - Negative Amount = Increase in Net Wages
 5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this deduction, you’ll need to do so manually with the appropriate tax in this window
+> [!NOTE]
+> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this deduction, you’ll need to do so manually with the appropriate tax in this window
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD3.jpg)
 
@@ -4536,7 +4539,8 @@ o	Positive Amount = No effect on wages
 o	Negative Amount = No effect on wages 
 5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this benefit, you’ll need to do so manually with the appropriate tax in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this benefit, you’ll need to do so manually with the appropriate tax in this window.
 
 
 **Benefit transaction in Manual Check Transaction Entry Window**
@@ -4559,7 +4563,8 @@ o	Positive Amount = Increase in Federal Taxable Wages
 o	Negative Amount = Decrease in Federal Taxable Wages
 5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tax and Federal Taxable Wages need to be adjusted. GP will not calculate Federal Tax for you automatically in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tax and Federal Taxable Wages need to be adjusted. GP will not calculate Federal Tax for you automatically in this window.
 
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD4.jpg)
@@ -4587,14 +4592,16 @@ o	Negative Amount = Increase in Net Wages
 o	Positive Amount = Increase in FICA Social Security Taxable Wages 
 o	Negative Amount = Decrease in FICA Social Security Taxable Wages
 
-NOTE: If the employee has already met his/her maximum Social Security Taxable Wages, GP will not record additional Social Security Taxable Wages regardless of what is entered in the Taxable Wage field.
+    > [!NOTE]
+    > If the employee has already met his/her maximum Social Security Taxable Wages, GP will not record additional Social Security Taxable Wages regardless of what is entered in the Taxable Wage field.
 
 5.	In the ‘EFIC Amount’ field: Enter the total amount by which you need to adjust FICA Social Security Taxes owed by the employer.
 o	Positive Amount = Increase in Employer owed FICA Social Security Tax
 o	Negative Amount = Decrease in Employer owed FICA Social Security Tax
 6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tax, the FICA Social Security Taxable Wages, and the Employer FICA Social Security Taxes need to be adjusted. GP will not calculate FICA Social Security Tax for you automatically in this window.
+    > [!NOTE]
+    > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tax, the FICA Social Security Taxable Wages, and the Employer FICA Social Security Taxes need to be adjusted. GP will not calculate FICA Social Security Tax for you automatically in this window.
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD5.jpg)
 
@@ -4611,10 +4618,12 @@ NOTE: NO tax calculations will be done for you automatically. You need to know t
 | EFIC Amount-nega  | No  Effect    | No  Effect   | No Effect                  | Decrease                            |
 
 
-*NOTE: Microsoft Dynamics GP will check to verify whether or not the employee has exceeded FICA Social Security maximums per the Payroll Tax Tables (Microsoft Dynamics GP >> Tools >> Setup >> System >> Payroll Tax). 
+> [!NOTE]
+> Microsoft Dynamics GP will check to verify whether or not the employee has exceeded FICA Social Security maximums per the Payroll Tax Tables (Microsoft Dynamics GP >> Tools >> Setup >> System >> Payroll Tax). 
+
 If the employees max has been reached, you will receive a warning as follows (GP won’t prevent you from posting the transaction, but it WILL warn you):
 
-**The FICA Social Security tax for this employee has exceeded the maximum for the year**  
+*The FICA Social Security tax for this employee has exceeded the maximum for the year*  
 
 When ‘Continue’ is clicked and the transaction is saved/posted the following will occur:
 o	If the employee is going to meet and go over maximum Soc Sec Taxable Wages: GP will record ‘as much’ of the taxable wage as possible ‘up to’ the maximum. This amount is stored in the FICASSWP field in the UPR30100 table.
@@ -4637,7 +4646,8 @@ o	Positive Amount = Increase in Employer owed FICA Medicare Tax
 o	Negative Amount = Decrease in Employer owed FICA Medicare Tax
 6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tax, the FICA Medicare Taxable Wages, and the Employer FICA Medicare Taxes need to be adjusted. GP will not calculate FICA Medicare Tax for you automatically in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tax, the FICA Medicare Taxable Wages, and the Employer FICA Medicare Taxes need to be adjusted. GP will not calculate FICA Medicare Tax for you automatically in this window.
 
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD6.jpg)
@@ -4669,7 +4679,8 @@ o	Positive Amount = Increase in State Taxable Wages
 o	Negative Amount = Decrease in State Taxable Wages
 6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the State Tax and State Taxable Wages need to be adjusted. GP will not calculate State Tax for you automatically in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. You need to know the amount by which the State Tax and State Taxable Wages need to be adjusted. GP will not calculate State Tax for you automatically in this window.
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD7.jpg)
 
@@ -4697,7 +4708,8 @@ o	Positive Amount = Increase in Local Taxable Wages
 o	Negative Amount = Decrease in Local Taxable Wages
 6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the Local Tax and Local Taxable Wages need to be adjusted. GP will not calculate Local Tax for you automatically in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. You need to know the amount by which the Local Tax and Local Taxable Wages need to be adjusted. GP will not calculate Local Tax for you automatically in this window.
 
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD8.jpg)
@@ -4724,7 +4736,8 @@ o	Positive Amount = Increase in gross and net wages
 o	Negative Amount = Decrease in gross and net wages
 5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay advance, you’ll need to do so manually with the appropriate tax in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay advance, you’ll need to do so manually with the appropriate tax in this window.
 
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD9.jpg)
@@ -4752,7 +4765,8 @@ o	Positive Amount = Decrease in Net Wages
 o	Negative Amount = Increase in Net Wages
 5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this withhold advance, you’ll need to do so manually with the appropriate tax in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this withhold advance, you’ll need to do so manually with the appropriate tax in this window.
 
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD10.jpg)
@@ -4783,7 +4797,8 @@ o	Positive Amount = Increase in Employer owed FICA Social Security Tips Tax
 o	Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
 6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tips Tax, the FICA Social Security Tips Taxable Wages, and the Employer FICA Social Security Tips Taxes need to be adjusted. GP will not calculate FICA Social Security Tips Tax for you automatically in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tips Tax, the FICA Social Security Tips Taxable Wages, and the Employer FICA Social Security Tips Taxes need to be adjusted. GP will not calculate FICA Social Security Tips Tax for you automatically in this window.
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD11.jpg)
 
@@ -4815,7 +4830,8 @@ o	Positive Amount = Increase in Employer owed FICA Medicare Tips Tax
 o	Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
 6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tips Tax, the FICA Medicare Tips Taxable Wages, and the Employer FICA Medicare Tips Taxes need to be adjusted. GP will not calculate FICA Medicare Tips Tax for you automatically in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tips Tax, the FICA Medicare Tips Taxable Wages, and the Employer FICA Medicare Tips Taxes need to be adjusted. GP will not calculate FICA Medicare Tips Tax for you automatically in this window.
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD12.jpg)
 
@@ -4843,7 +4859,8 @@ o	Positive Amount = Increase in Federal Taxable Tips Wages
 o	Negative Amount = Decrease in Federal Taxable Tips Wages
 5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tips Tax and Federal Taxable Tips Wages need to be adjusted. GP will not calculate Federal Tips Tax for you automatically in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tips Tax and Federal Taxable Tips Wages need to be adjusted. GP will not calculate Federal Tips Tax for you automatically in this window.
 
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD13.jpg)
@@ -4868,7 +4885,8 @@ o	Positive Amount = Increase Uncollected FICA Soc Sec Tax on Tips
 o	Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
 4.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Social Security Tax needs to be adjusted. GP will not calculate Uncollected FICA Social Security Tax for you automatically in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Social Security Tax needs to be adjusted. GP will not calculate Uncollected FICA Social Security Tax for you automatically in this window.
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD14.jpg)
 
@@ -4891,7 +4909,8 @@ o	Positive Amount = Increase Uncollected FICA Medicare Tax on Tips
 o	Negative Amount = Decrease Uncollected FICA Medicare Tax on Tips
 4.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 
-NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Medicare Tax needs to be adjusted. GP will not calculate Uncollected FICA Medicare Tax for you automatically in this window.
+> [!NOTE]
+> NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Medicare Tax needs to be adjusted. GP will not calculate Uncollected FICA Medicare Tax for you automatically in this window.
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD15.jpg)
 
@@ -4918,49 +4937,33 @@ deleted.
 
 1. Open the Analytical Payroll Transaction Entry window.
 
-(HR & Payroll \>\> Transactions \>\> Payroll \>\> Transaction Entry \>\>
-Choose the
+    (HR & Payroll \>\> Transactions \>\> Payroll \>\> Transaction Entry \>\>Choose the Analytical Accounting button)
 
-Analytical Accounting button)
+    (HR & Payroll \>\> Transactions \>\> Payroll \>\> Payroll Posting Edits \>\>Choose the Analytical Accounting button)
 
-(HR & Payroll \>\> Transactions \>\> Payroll \>\> Payroll Posting Edits \>\>
-Choose the Analytical Accounting button)
+    (HR & Payroll \>\> Transactions \>\> Payroll \>\> Manual Check \>\> Choose the Distributions button \>\> Choose the Analytical Accounting button)
 
-(HR & Payroll \>\> Transactions \>\> Payroll \>\> Manual Check \>\> Choose
-the Distributions button \>\> Choose the Analytical Accounting button)
-
-![A screenshot of a computer Description automatically generated](media/3e3fb21a87f45dc6186c5861d8800dd4.jpg)
+    ![A screenshot of a computer Description automatically generated](media/3e3fb21a87f45dc6186c5861d8800dd4.jpg)
 
 
 
-1. Depending on how you opened the Analytical Payroll Transaction Entry window,
-    the information displayed will be either for the distribution or transaction
-    that you selected. To view the other distributions or transactions, enter or
-    select a different number in the Distribution or Transaction field.
+2. Depending on how you opened the Analytical Payroll Transaction Entry window, the information displayed will be either for the distribution or transaction
+    that you selected. To view the other distributions or transactions, enter or select a different number in the Distribution or Transaction field.
 
-**Functional Amount** This field displays the amount in the originating or
-functional currency based on the option selected in the currency view.
+**Functional Amount** This field displays the amount in the originating or functional currency based on the option selected in the currency view.
 
-*You can choose the expansion button to view multicurrency information if
-the originating currency differs from the functional currency. The currency
-icon is not displayed if the displayed account is a unit account.*
+    > [!TIP]
+    > You can choose the expansion button to view multicurrency information if the originating currency differs from the functional currency. The currency icon is not displayed if the displayed account is a unit account.
 
-**Account** This field displays the account related to the distribution or
-transaction. The expansion button will open the Account Entry window. The
-balance type is also displayed.
+**Account** This field displays the account related to the distribution or transaction. The expansion button will open the Account Entry window. The balance type is also displayed.
 
-**Assigned** This field displays the total amount in value and percentage
-that has been assigned.
+**Assigned** This field displays the total amount in value and percentage that has been assigned.
 
-**Unassigned** This field displays the remaining amount that is to be
-assigned in value and percentage.
+**Unassigned** This field displays the remaining amount that is to be assigned in value and percentage.
 
-In the assignment list view, an arrow next to the Number field indicates
-that the analysis information displayed is for the selected assignment. Each
-assignment created for the distribution or transaction is displayed
-separately.
+In the assignment list view, an arrow next to the Number field indicates that the analysis information displayed is for the selected assignment. Each assignment created for the distribution or transaction is displayed separately.
 
-1. Select how to assign the amount, either as hours/units or as a percentage.
+1. Select how to assign the amount, either as hours/units or as a percentage. 
     **Number** This field displays the number of the assignment.
 
 **Hours/Units or Percentage** This field displays the assignment as an
@@ -5053,18 +5056,7 @@ Use the Build Payroll Checks window to process an advance pay run.
 1. Open the Build Payroll Checks window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Build Checks)
 
-![A screenshot of a cell phone Description automatically generated](media/1e36a8512538982953a287380391da87.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
+    ![A screenshot of a cell phone Description automatically generated](media/1e36a8512538982953a287380391da87.jpg)
 1. Enter or select a default ID. You can enter that default ID the next time
     you build an identical or similar pay run.
 
@@ -5169,7 +5161,8 @@ After the checks have been built, the Check File Report will be printed. This re
 
 - Warnings don’t prevent you from calculating checks. You’ll need to decide whether you should correct the situations causing the warning.
 
-*If you decide to ignore the warning, the transaction for which the warning appeared will be either totally or partially ignored, in some cases. For example, if a transaction was subject to local tax, but no local tax code was specified, the transaction would be paid but no local tax would bewithheld.*
+> [!NOTE]
+> If you decide to ignore the warning, the transaction for which the warning appeared will be either totally or partially ignored, in some cases. For example, if a transaction was subject to local tax, but no local tax code was specified, the transaction would be paid but no local tax would bewithheld.
 
 You’ll need to remove a build when there are errors that require changes to transactions included in the build.
 
@@ -5182,7 +5175,7 @@ You can build checks again before they’re calculated. Before you build checks,
 1. Open the Build Payroll Checks window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Build Checks)
 
-![A screenshot of a cell phone Description automatically generated](media/1e36a8512538982953a287380391da87.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/1e36a8512538982953a287380391da87.jpg)
 
 
 1. Enter or select a default ID. You can enter that default ID the next time
@@ -5253,102 +5246,65 @@ them. This procedure assumes you’ve completed *Building Payroll checks* .
 
 **To calculate Payroll checks:**
 
-1. Open the Calculate Payroll Checks window. (HR & Payroll \>\> Transactions
-    \>\> Payroll \>\> Calculate Checks)
+1. Open the Calculate Payroll Checks window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Calculate Checks)
 
-![A screenshot of a cell phone Description automatically generated](media/11423b22f1aceb44551474e40f1043b4.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/11423b22f1aceb44551474e40f1043b4.jpg)
 
-1. Choose OK to begin calculating the checks.
+2. Choose OK to begin calculating the checks.
 
-When an employee’s wage calculations have conflicts in both deduction
-sequence and earnings codes, or have conflicts in TSA calculations, Payroll
-excludes the employee’s pay check from processing.
+When an employee’s wage calculations have conflicts in both deduction sequence and earnings codes, or have conflicts in TSA calculations, Payroll excludes the employee’s pay check from processing.
 
-Payroll also displays a message and prints error information in the
-Calculate Exceptions report before printing the Calculate Checks report.
-Employees included in the Calculate Exceptions report are not included in
-the Calculate Checks report.
+Payroll also displays a message and prints error information in the Calculate Exceptions report before printing the Calculate Checks report. Employees included in the Calculate Exceptions report are not included in the Calculate Checks report.
 
-Payroll generates an exception batch for any manual transactions included in
-the Calculate Exceptions report. Payroll creates this batch during the Print
-Checks routine and gives it the prefix PREXP.
+Payroll generates an exception batch for any manual transactions included in the Calculate Exceptions report. Payroll creates this batch during the Print Checks routine and gives it the prefix PREXP.  
 
-For information on correcting calculation conflicts, see *Correcting Payroll
-computer check transactions* .
+For information on correcting calculation conflicts, see *Correcting Payroll computer check transactions* .
 
-Payroll prints the Calculated Checks report when the checks have been
-calculated. Verify the information and dollar amounts to be printed on the
-employees’ paychecks. Continue the payroll process with *Printing and
-posting checks* .
+Payroll prints the Calculated Checks report when the checks have been calculated. Verify the information and dollar amounts to be printed on the employees’ paychecks. Continue the payroll process with *Printing and posting checks* .
 
 #### Printing and posting checks
 
-Use the Print Payroll Checks window to print computer paychecks after the
-Calculate Checks Report has been printed with no errors. You also can use
-this window to print an alignment form to ensure the checks will be aligned
-correctly.
+Use the Print Payroll Checks window to print computer paychecks after the Calculate Checks Report has been printed with no errors. You also can use this window to print an alignment form to ensure the checks will be aligned correctly.
 
-*If it’s necessary to reprint or void any paychecks that have been printed
-already, you can do so after the paychecks have been printed. However,
-paychecks can’t be printed after they’ve been posted.*
+> [!NOTE]
+> If it’s necessary to reprint or void any paychecks that have been printed already, you can do so after the paychecks have been printed. However, paychecks can’t be printed after they’ve been posted.
 
 **To print and post checks:**
 
-1. Open the Print Payroll Checks window. (HR & Payroll \>\> Transactions \>\>
-    Payroll \>\> Print Checks)
+1. Open the Print Payroll Checks window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Print Checks)
 
-![A screenshot of a cell phone Description automatically generated](media/529c50bbcba1dc421f58862d95aeb560.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/529c50bbcba1dc421f58862d95aeb560.jpg)
 
 1. Enter or select a checkbook ID that checks will be posted to.
 
 2. Enter a starting check number.
 
-The check date will be printed on the check and is the date that the checks
-are posted within Payroll and to Bank Reconciliation. The default date is
-the user date; you can change the date.
+    The check date will be printed on the check and is the date that the checks are posted within Payroll and to Bank Reconciliation. The default date is the user date; you can change the date.
 
-*If you’re using Direct Deposit and you change the check date, a message
-will appear indicating that the ACH posting date will be recalculated, which
-could change the payment dates for direct deposit employees.*
+    > [!NOTE]
+    > If you’re using Direct Deposit and you change the check date, a message will appear indicating that the ACH posting date will be recalculated, which could change the payment dates for direct deposit employees.
 
 1. Select whether you’re printing an alignment form or the paychecks.
 
-2. Select a sorting method for the checks to be printed, and select the check
-    format to use or accept the default format.
+2. Select a sorting method for the checks to be printed, and select the check format to use or accept the default format.
 
-3. Choose Print. After you’ve printed the paychecks, the Post Payroll Checks
-    window will open.
+3. Choose Print. After you’ve printed the paychecks, the Post Payroll Checks window will open.
 
-4. Enter the posting date for the check run in the Post Payroll Checks window.
-    This will be the date the checks are posted to General Ledger.
+4. Enter the posting date for the check run in the Post Payroll Checks window. This will be the date the checks are posted to General Ledger.
 
-5. Select a process. You can reprint checks, void checks, print an alignment
-    form or post checks.
+5. Select a process. You can reprint checks, void checks, print an alignment form or post checks.
 
-*Voided checks won’t be posted to General Ledger. If you will be voiding
-checks, enter the reason for voiding them in the Post Payroll Checks window.
-You can void checks that have already been printed but have not yet been
-posted. For more information about voiding checks, refer to Voiding a
-Payroll check .*
+    > [!NOTE]
+    > Voided checks won’t be posted to General Ledger. If you will be voiding checks, enter the reason for voiding them in the Post Payroll Checks window. You can void checks that have already been printed but have not yet been posted. For more information about voiding checks, refer to Voiding a Payroll check.
 
-1. Select Post Checks and then choose Process to post the check amounts and the
-    transactions associated with them.
+1. Select Post Checks and then choose Process to post the check amounts and the transactions associated with them.
 
-After the posting process is complete, the Check Register, the Check Posting
-Register, and other registers will be printed. Depending on how your Payroll
-system has been set up, posting journals might be printed automatically when
-you post computer checks. For more information about posting options, refer
-to your System User’s Guide (Help \>\> Contents \>\> select Setting Up the
-System).
+    After the posting process is complete, the Check Register, the Check Posting Register, and other registers will be printed. Depending on how your Payroll system has been set up, posting journals might be printed automatically when you post computer checks. For more information about posting options, refer to your System User’s Guide (Help \>\> Contents \>\> select Setting Up the System).
 
-Any check numbers that were used during the alignment process will be noted
-on the Check Register, as well as the numbers for any checks that were
-reprinted or voided. A summary of the Payroll taxes for this pay run will
-appear at the bottom of the Check Register. The employer FICA tax liability
-will be calculated and posted, as well.
+Any check numbers that were used during the alignment process will be noted on the Check Register, as well as the numbers for any checks that were reprinted or voided. A summary of the Payroll taxes for this pay run will appear at the bottom of the Check Register. The employer FICA tax liability will be calculated and posted, as well.
 
-If you have a payroll posting issue refer to below:
-<https://community.dynamics.com/gp/b/dynamicsgp/posts/recovering-from-failed-payroll-processing-activity-in-dynamics-gp>
+If you have a payroll posting issue, see this blog post:
+[https://community.dynamics.com/gp/b/dynamicsgp/posts/recovering-from-failed-payroll-processing-activity-in-dynamics-gp](https://community.dynamics.com/gp/b/dynamicsgp/posts/recovering-from-failed-payroll-processing-activity-in-dynamics-gp)
 
 #### Voiding a Payroll check
 
@@ -5373,94 +5329,55 @@ To void checks, the checks must meet several conditions.
 
 **To void a Payroll check:**
 
-1. Open the Void Payroll Checks window. (HR & Payroll \>\> Transactions \>\>
-    Payroll \>\> Void Checks)
+1. Open the Void Payroll Checks window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Void Checks)
 
 2. Mark the option to display the type of checks you would like to void.
 
-3. Enter or select information for your check or range of checks. These fields
-    are only available if you selected Check as your check type.
+3. Enter or select information for your check or range of checks. These fields are only available if you selected Check as your check type.
 
-**Checkbook ID** Enter or select a checkbook ID from which the check or
-checks to void were issued.
+    - **Checkbook ID** Enter or select a checkbook ID from which the check or checks to void were issued.
 
-**Display Range By** Select whether to display all or a range of checks
-available for voiding, employee IDs or audit trail codes.
+    - **Display Range By** Select whether to display all or a range of checks available for voiding, employee IDs or audit trail codes.
 
-1. Enter the check date to appear as the posting date in Payroll for the
-    entries that will be used to reverse the checks. If your Payroll system is
-    integrated with Bank Reconciliation, the check date will be used to update
-    Bank Reconciliation.
+1. Enter the check date to appear as the posting date in Payroll for the entries that will be used to reverse the checks. If your Payroll system is integrated with Bank Reconciliation, the check date will be used to update Bank Reconciliation.
 
-2. Enter the posting date. This is the date that will appear as the posting
-    date for the reversing entries to the general ledger accounts that offset
-    the original transaction distributions, and is the posted date that is
-    printed on the Payroll Check Posting Register.
+2. Enter the posting date. This is the date that will appear as the posting date for the reversing entries to the general ledger accounts that offset the original transaction distributions, and is the posted date that is printed on the Payroll Check Posting Register.
 
-3. Choose Redisplay to display the checks within the selected range that are
-    available for voiding. If you make changes to the selected range, you’ll
-    need to choose Redisplay again to display the checks within the new range.
+3. Choose Redisplay to display the checks within the selected range that are available for voiding. If you make changes to the selected range, you’ll need to choose Redisplay again to display the checks within the new range.
 
-*If you believe a check meets all the criteria necessary to be voided, but
-doesn’t appear in the scrolling window, another user in the Payroll system
-might have reconciled the check or marked it for reconciling in Bank
-Reconciliation, or removed history for the check since you opened the
-window.*
+    > [!NOTE]
+    > If you believe a check meets all the criteria necessary to be voided, but doesn’t appear in the scrolling window, another user in the Payroll system might have reconciled the check or marked it for reconciling in Bank Reconciliation, or removed history for the check since you opened the window.
 
-1. Mark each check to void or choose Mark All to void all of them. You can’t
-    void more than one check for the same employee at a time. For each check,
-    enter the reason for voiding the check.
+1. Mark each check to void or choose Mark All to void all of them. You can’t void more than one check for the same employee at a time. For each check, enter the reason for voiding the check.
 
-2. Choose File \>\> Print to print a Void Payroll Checks Edit List. This will
-    show all the checks that are available for voiding, based on the range you
-    entered and the checks that have been marked for voiding—indicated by an X.
-    The edit list also lists the checks that can’t be voided and a message
-    explaining why.
+2. Choose File \>\> Print to print a Void Payroll Checks Edit List. This will show all the checks that are available for voiding, based on the range you entered and the checks that have been marked for voiding—indicated by an X. The edit list also lists the checks that can’t be voided and a message explaining why.
 
-If another user has made changes to checks in the Payroll system since you
-selected a range to display in the scrolling window, such as marking checks
-for reconciliation in Bank Reconciliation, the edit list will display
-messages for any checks that are no longer available for voiding.
+    If another user has made changes to checks in the Payroll system since you selected a range to display in the scrolling window, such as marking checks for reconciliation in Bank Reconciliation, the edit list will display messages for any checks that are no longer available for voiding.
 
-1. Make a backup of your company Payroll data files. For more information,
-    refer to your System User’s Guide (Help \>\> Contents \>\> select System
+1. Make a backup of your company Payroll data files. For more information, refer to your System User’s Guide (Help \>\> Contents \>\> select System
     Administration).
 
 2. Choose Process to void the selected checks.
 
-If you’re keeping check and transaction history, information for the
-original check and the voided check will be printed on history reports. The
-voided check amounts will be negative. The voided checks also will be
-indicated by an asterisk on the Check History Report.
+If you’re keeping check and transaction history, information for the original check and the voided check will be printed on history reports. The voided check amounts will be negative. The voided checks also will be indicated by an asterisk on the Check History Report.
 
-Depending on how your Payroll system has been set up, several reports might
-be printed when you choose Process—including the Check Posting Register and
-
-Check Register. The Check Posting Register is like the Void Payroll Checks
-Edit List and shows the details for each transaction that has been posted.
+Depending on how your Payroll system has been set up, several reports might be printed when you choose Process—including the Check Posting Register and Check Register. The Check Posting Register is like the Void Payroll Checks Edit List and shows the details for each transaction that has been posted.
 
 #### Reprinting paystubs and earnings statements
 
-Use the Payroll Check Inquiry window to reprint paystubs and direct deposit
-earnings statements in a format that closely resembles the original
-documents.
+Use the Payroll Check Inquiry window to reprint paystubs and direct deposit earnings statements in a format that closely resembles the original documents.
 
 **To reprint paystubs and earnings statements:**
 
-1. Open the Payroll Check Inquiry window. (HR & Payroll \>\> Inquiry \>\>
-    Payroll \>\> Check History)
+1. Open the Payroll Check Inquiry window. (HR & Payroll \>\> Inquiry \>\> Payroll \>\> Check History)
 
 2. Enter or select an employee ID.
 
 3. Select a range of check numbers, check dates or audit trail codes.
 
-4. Choose Redisplay to display the checks within the selected range that are
-    available for viewing.
+4. Choose Redisplay to display the checks within the selected range that are available for viewing.
 
-5. Mark the check box next to a paycheck transaction to include it when
-    reprinting paystubs and direct deposit earnings statements. If specific
-    transactions aren’t marked, all records listed in the scrolling window will
-    be included.
+5. Mark the check box next to a paycheck transaction to include it when reprinting paystubs and direct deposit earnings statements. If specific transactions aren’t marked, all records listed in the scrolling window will be included.
 
 6. Choose Recreate Paystub to print the selected documents.
 
@@ -5482,11 +5399,10 @@ minimum wage balance pay code calculation. If the amount is less than the
 minimum wage balance pay code amount, an automatic transaction is generated
 for the difference.
 
-*To ensure the correct minimum wage balance record is used, you should only
-have one active minimum wage record active for each employee at a time.*
+> [!NOTE]
+> To ensure the correct minimum wage balance record is used, you should only have one active minimum wage record active for each employee at a time.
 
-Using the previous example, suppose the employee worked 40 hours in a given
-pay period. The minimum wage balance calculation would be:
+Using the previous example, suppose the employee worked 40 hours in a given pay period. The minimum wage balance calculation would be:
 
 | **Amount** | **From**                                                                             |
 |------------|--------------------------------------------------------------------------------------|
@@ -5521,15 +5437,6 @@ employee.
 
 ![A screenshot of a cell phone Description automatically generated](media/b2328bdb8bdcaefa2bee0190c76f6ebc.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
 
 The second transaction reflects charged tips for the employee for the same
 period.
@@ -5851,36 +5758,24 @@ wages, and FICA withholding for each employee in a selected year.
 You also can use this window to verify the amount of vacation and sick time
 available to a particular employee.
 
-*To view employee state tax summaries, use the Employee State Tax
-Maintenance Window (HR & Payroll \>\> Cards \>\> Payroll \>\> State Tax) and
-choose the Summary button.*
+> [!TIP]
+> To view employee state tax summaries, use the Employee State Tax Maintenance Window (HR & Payroll \>\> Cards \>\> Payroll \>\> State Tax) and choose the Summary button.
 
 **To view paycheck breakdown information:**
 
-1. Open the Employee Summary Inquiry window. (HR & Payroll \>\> Inquiry \>\>
-    Payroll \>\> Employee Summary)
+1. Open the Employee Summary Inquiry window. (HR & Payroll \>\> Inquiry \>\> Payroll \>\> Employee Summary)
 
-![A screenshot of a cell phone Description automatically generated](media/8cfc7d72df637577f9d3c41043a5f280.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/8cfc7d72df637577f9d3c41043a5f280.jpg)
 
 1. Enter or select an employee ID.
 
-2. Choose whether to view calendar year or fiscal year information, and then
-    select a year and a month, or fiscal period, to view.
+2. Choose whether to view calendar year or fiscal year information, and then select a year and a month, or fiscal period, to view.
 
 If you choose Fiscal Year, only periodic and yearly amounts are displayed.
 
-If Human Resources is selected as the accrue type in the Attendance Setup
-window, the vacation and sick time hours fields will not be available.
+If Human Resources is selected as the accrue type in the Attendance Setup window, the vacation and sick time hours fields will not be available.
 
-1. Choose Tips to open the Employee Tips Summary Inquiry window, where you can
-    view employee tips by month or fiscal period. For more information, refer to
-    *Viewing employee tips wage and tax information* .
+1. Choose Tips to open the Employee Tips Summary Inquiry window, where you can view employee tips by month or fiscal period. For more information, refer to *Viewing employee tips wage and tax information* .
 
 2. When you’ve finished, close the window.
 
@@ -5965,68 +5860,51 @@ This information is contained in the following sections:
 
 #### Viewing employee tips wage and tax information
 
-Use the Employee Summary Inquiry window and the Employee Tips Summary
-Inquiry window to view tips summary information for a selected year.
+Use the Employee Summary Inquiry window and the Employee Tips Summary Inquiry window to view tips summary information for a selected year.
 
-*To view employee state tax summaries, use the Employee State Tax
-Maintenance Window (HR & Payroll \>\> Cards \>\> Payroll \>\> State Tax) and
-choose the Summary button.*
+> [!NOTE]
+> To view employee state tax summaries, use the Employee State Tax Maintenance Window (HR & Payroll \>\> Cards \>\> Payroll \>\> State Tax) and choose the Summary button.
 
 **To view employee tips wage and tax information:**
 
 1. Open the Employee Summary Inquiry window.
 
-(HR & Payroll \>\> Inquiry \>\> Payroll \>\> Employee Summary)
+    (HR & Payroll \>\> Inquiry \>\> Payroll \>\> Employee Summary)
 
 1. Enter or select an employee ID.
 
-2. Choose whether to view calendar year or fiscal year information, then select
-    a year and a month (or fiscal period) to view wage and tax information for.
+2. Choose whether to view calendar year or fiscal year information, then select    a year and a month (or fiscal period) to view wage and tax information for.
 
 3. Choose Tips to open the Employee Tips Summary Inquiry window. Choose OK.
 
 #### Viewing Payroll and tips breakdown information
 
-Use the Payroll Tips Summary Inquiry window to view monthly (or periodic),
-quarterly, and yearly tips wage and tax information for the entire company in a
-selected year.
+Use the Payroll Tips Summary Inquiry window to view monthly (or periodic), quarterly, and yearly tips wage and tax information for the entire company in a selected year.
 
 **To view Payroll and tips breakdown information:**
 
-1. Open the Payroll Summary Inquiry window. (HR & Payroll \>\> Inquiry \>\>
-    Payroll \>\> Company Payroll Summary)
+1. Open the Payroll Summary Inquiry window. (HR & Payroll \>\> Inquiry \>\> Payroll \>\> Company Payroll Summary)
 
-2. Choose whether to view calendar year or fiscal year information, then select
-    a year and a month (or fiscal period) to view.
+2. Choose whether to view calendar year or fiscal year information, then select a year and a month (or fiscal period) to view.
 
 3. Choose Tips to open the Payroll Tips Summary Inquiry window.
 
-In addition to tips wage and tax information, all uncollected FICA Social
-Security and Medicare tax information will be displayed in this window.
+    In addition to tips wage and tax information, all uncollected FICA Social Security and Medicare tax information will be displayed in this window.
 
-1. Choose OK
+4. Choose OK
 
 #### Viewing Payroll audit trail information
 
-Use the Payroll Audit Trail Inquiry window to view information associated with a
-specific audit trail code. The window opens only if you zoom from the
-Transaction Entry Zoom window in General Ledger and are maintaining summary
-history.
+Use the Payroll Audit Trail Inquiry window to view information associated with a specific audit trail code. The window opens only if you zoom from the Transaction Entry Zoom window in General Ledger and are maintaining summary history.
 
-*You must be keeping check history to zoom from General Ledger to Payroll.
-You also must be posting in summary. The Create a Journal Entry Per Batch
-option must be marked in the Posting Setup window for whatever type of
-Payroll transaction you want to track.*
+> [!NOTE]
+> You must be keeping check history to zoom from General Ledger to Payroll. You also must be posting in summary. The Create a Journal Entry Per Batch option must be marked in the Posting Setup window for whatever type of Payroll transaction you want to track.
 
-If you’ve posted a computer check or manual check in detail, the Payroll
-Check Inquiry window will open when you zoom from the Transaction Entry Zoom
-window in General Ledger.
+If you’ve posted a computer check or manual check in detail, the Payroll Check Inquiry window will open when you zoom from the Transaction Entry Zoom window in General Ledger.
 
-For more information about posting in summary and detail, refer to the
-online help for the Posting Setup window.
+For more information about posting in summary and detail, refer to the online help for the Posting Setup window.
 
-You can zoom from General Ledger to Payroll only to view single transactions,
-not posted month-end or quarter-end information.
+You can zoom from General Ledger to Payroll only to view single transactions, not posted month-end or quarter-end information.
 
 ### Chapter 15: Payroll reports
 
@@ -6306,44 +6184,29 @@ Payroll.
 
 **To specify a Payroll report option:**
 
-1. Open a reports window. There are separate windows for each report type. (HR
-    & Payroll \>\> Reports \>\> Payroll \>\> select a reports window)
+1. Open a reports window. There are separate windows for each report type. (HR & Payroll \>\> Reports \>\> Payroll \>\> select a reports window)
 
 2. Select a report from the Reports list.
 
-3. Choose New to open the report options window. Your selection in step 2
-    determines which report options window appears.
+3. Choose New to open the report options window. Your selection in step 2 determines which report options window appears.
 
-*For report options window information choose Help \>\> Index; then enter
-the name of the specific report options window.*
+    > [!TIP]
+    > For report options window information choose Help \>\> Index; then enter the name of the specific report options window.
 
-1. Name the option and enter information to define the option. The name you
-    enter for the option won’t appear on the report. The selections available
-    for defining report options vary, depending on the report type you’ve
-    selected.
+1. Name the option and enter information to define the option. The name you enter for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
 
-2. Enter range restrictions. The Ranges list shows the available options for
-    each report. The available ranges vary, depending on the type of report.
+2. Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
-*You can enter only one restriction for each restriction type. For instance,
-you can insert one employee ID range restriction and one date range
-restriction (01/01/2017 to 06/30/ 2017).*
+    > [!NOTE]
+    > You can enter only one restriction for each restriction type. For instance, you can insert one employee ID range restriction and one date range restriction (01/01/2017 to 06/30/ 2017).
 
-1. Choose Insert to insert the range in the Restrictions List. To remove an
-    existing range from the list, select the range and choose Remove.
+1. Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-2. Choose Email Options to enter email options for the report option. Once the
-    email options are set up, you’ll be able to send the reports in an email
-    message from this window by choosing Email. You also can send this report in
-    an email from any list view where the report option is displayed.
+2. Choose Email Options to enter email options for the report option. Once the email options are set up, you’ll be able to send the reports in an email message from this window by choosing Email. You also can send this report in an email from any list view where the report option is displayed.
 
-3. Choose Destination to select a printing destination. Reports can be printed
-    to the screen, to the printer, to a file, or to any combination of these
-    options. If you select Ask Each Time, you can select printing options each
-    time you print this report option.
+3. Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
 
-For more information about printing reports, refer to *Chapter 15, “Payroll
-reports.”*
+For more information about printing reports, refer to *Chapter 15, “Payroll reports.”*
 
 #### Payroll Microsoft SQL Server Reporting Services reports
 
@@ -6438,9 +6301,8 @@ You should reconcile records if a Payroll system problem occurs and you need
 to verify your Payroll data. The reconcile process also is useful if you
 discover inconsistencies in reports.
 
-*Before reconciling, back up all your company’s accounting data. For more
-information about making backups, refer to your System User’s Guide (Help
-\>\> Contents \>\> select System Administration).*
+> [!IMPORTANT]
+> Before reconciling, back up all your company’s accounting data. For more information about making backups, refer to your System User’s Guide (Help \>\> Contents \>\> select System Administration).
 
 **To reconcile employee records:**
 
@@ -6477,8 +6339,8 @@ If you’ve marked both Reconcile and Print Report, the report is printed
 before information is reconciled. This report will display the amounts for
 the employees whose detail records don’t match the summary records.
 
-*After employee records have been reconciled, the values on the summary
-windows will be adjusted based on the transaction details of the employees.*
+> [!NOTE]
+> After employee records have been reconciled, the values on the summary windows will be adjusted based on the transaction details of the employees.
 
 #### Situations for using mass updates
 
@@ -6592,68 +6454,37 @@ not apply to employee /pay code combinations assigned to pay step tables.
 1. Open the Employee Mass Update window. (HR & Payroll \>\> Utilities \>\>
     Payroll \>\> Mass Update)
 
-![A screenshot of a cell phone Description automatically generated](media/200ffaf9acb4f75939c8b955e19e4998.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/200ffaf9acb4f75939c8b955e19e4998.jpg)
 
 1. Select a record type to update.
 
-2. Select a specific code to change. This field is available only if you chose
-    Pay Rate, Deduction Amount or Benefit Amount in the Update field.
+2. Select a specific code to change. This field is available only if you chose Pay Rate, Deduction Amount or Benefit Amount in the Update field.
 
-3. Enter ranges of class IDs, employee IDs, departments, positions, and start
-    dates to include a specific range of employees, or accept the default entry
-    ALL to include all employees in the update.
+3. Enter ranges of class IDs, employee IDs, departments, positions, and start dates to include a specific range of employees, or accept the default entry ALL to include all employees in the update.
 
-4. Select a method for updating cards. For more information, refer to *Mass
-    update methods* .
+4. Select a method for updating cards. For more information, refer to *Mass update methods* .
 
-5. Enter the amount or percentage by which the selected cards are to be
-    adjusted. Depending on the update method you selected, this field is labeled
-    either Amount or Percentage.
+5. Enter the amount or percentage by which the selected cards are to be adjusted. Depending on the update method you selected, this field is labeled either Amount or Percentage.
 
-*If you manually update an employee’s overtime or doubletime pay rate, this
-will also update the pay rate for the pay code.*
+    > [!NOTE]
+    > If you manually update an employee’s overtime or doubletime pay rate, this will also update the pay rate for the pay code.
 
-1. Mark Increase or Decrease, depending on whether the existing employee cards
-    are to be increased or decreased. This field is available only if you select
-    Change by Amount or Change by Percent as the update method.
+1. Mark Increase or Decrease, depending on whether the existing employee cards are to be increased or decreased. This field is available only if you select Change by Amount or Change by Percent as the update method.
 
-2. Mark Round to Nearest Dollar to round the updated amount to the nearest
-    dollar. This field is available only if you select Change by Percent as the
-    update method.
+2. Mark Round to Nearest Dollar to round the updated amount to the nearest dollar. This field is available only if you select Change by Percent as the update method.
 
-*If you change an amount in the Updated Amount column in the scrolling
-window of the Edit Employee Mass Update window, the amount you change in
-that window won’t be rounded, even if this selection is marked.*
+    > [!NOTE]
+    > If you change an amount in the Updated Amount column in the scrolling window of the Edit Employee Mass Update window, the amount you change in that window won’t be rounded, even if this selection is marked.
 
-1. Mark Include Pay Codes Based on this Pay Code to update all pay codes that
-    are based on this pay code. For example, if you’re changing the pay rate for
-    a salary pay code, you can apply the rate change to all pay codes that are
-    based on the salary pay code, such as vacation or overtime pay types. A new
-    pay rate or pay factor is automatically calculated based on the old rates.
+1. Mark Include Pay Codes Based on this Pa Code to update all pay codes that are based on this pay code. For example, if you’re changing the pay rate for a salary pay code, you can apply the rate change to all pay codes that are based on the salary pay code, such as vacation or overtime pay types. A new pay rate or pay factor is automatically calculated based on the old rates.
 
-2. Choose Edit Records to display the Edit Employee Mass Update window where
-    you can preview and edit the updated information.
+2. Choose Edit Records to display the Edit Employee Mass Update window where you can preview and edit the updated information.
 
-The current information—the amount prior to updating—for the range of
-employees will be displayed in the Current Amount field in the scrolling
-window. The updated information, or the proposed amount, will be displayed
-in the Updated Percent/Amount field in the scrolling window. You can make
-changes to this field.
+    The current information—the amount prior to updating—for the range of employees will be displayed in the Current Amount field in the scrolling window. The updated information, or the proposed amount, will be displayed in the Updated Percent/Amount field in the scrolling window. You can make changes to this field.
 
-1. Choose File \>\> Print to print an Employee Mass Update report to verify
-    your changes.
+1. Choose File \>\> Print to print an Employee Mass Update report to verify your changes.
 
-2. Choose Update to save the updated amounts. The Employee Mass Update Audit
-    report will be printed, displaying the employee information that was
-    updated.
+2. Choose Update to save the updated amounts. The Employee Mass Update Audit report will be printed, displaying the employee information that was updated.
 
 #### Calculating net-to-gross wages
 
@@ -6669,15 +6500,7 @@ receive \$250.00 after taxes.
 1. Open the Payroll Gross Up window. (HR & Payroll \>\> Utilities \>\> Payroll
     \>\> Gross Up)
 
-![A screenshot of a cell phone Description automatically generated](media/b261605dcfe8ac32b37de75036950e81.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/b261605dcfe8ac32b37de75036950e81.jpg)
 
 1. Enter the net amount to pay your employee. 3. Enter the employee’s federal
     tax percentage.
@@ -6776,12 +6599,8 @@ for the range you specify. Normally, history is removed after the year-end
 closing process; however, at other times during the accounting cycle, it
 might be necessary to remove ranges of history that are no longer useful.
 
-*Don’t remove history until you’ve printed all government statements and
-reports for that year. After Payroll history is removed, you won’t be able
-to reprint statements and reports for that year. Before removing history,
-back up your company’s accounting data. For more information about making
-backups in Microsoft Dynamics GP, refer to your System User’s Guide (Help
-\>\> Contents \>\> select System Administration).*
+> [!IMPORTANT]
+> Don’t remove history until you’ve printed all government statements and reports for that year. After Payroll history is removed, you won’t be able to reprint statements and reports for that year. Before removing history, back up your company’s accounting data. For more information about making backups in Microsoft Dynamics GP, refer to your System User’s Guide (Help \>\> Contents \>\> select System Administration).
 
 Use the Remove Payroll History window to remove Payroll history. You can
 remove Payroll history for a range of audit trail codes, posting dates or
@@ -6791,64 +6610,44 @@ range of transactions that were removed.
 
 **To remove Payroll history:**
 
-1. Open the Remove Payroll History window.(HR & Payroll \>\> Utilities \>\>
-    Payroll \>\> Remove Payroll History)
+1. Open the Remove Payroll History window.(HR & Payroll \>\> Utilities \>\>Payroll \>\> Remove Payroll History)
 
 2. Select a range from the list and enter a range restriction.
 
-3. Choose Insert to insert the range restriction. You can select additional
-    ranges and restrictions. If you’ve made an error in a range or a
-    restriction, select the range and choose Remove.
+3. Choose Insert to insert the range restriction. You can select additional ranges and restrictions. If you’ve made an error in a range or a restriction, select the range and choose Remove.
 
-4. Mark Print Check History to print the Check History Report without removing
-    history. Mark Print Transaction History to print the Transaction History
-    Report without removing history.
+4. Mark Print Check History to print the Check History Report without removing history. Mark Print Transaction History to print the Transaction History Report without removing history.
 
-5. Mark Remove Check History, Remove Transaction History or both to remove
-    Check History or Transaction History.
+5. Mark Remove Check History, Remove Transaction History or both to remove Check History or Transaction History.
 
 6. Choose Process to clear payroll history for the selected ranges.
 
 #### Removing employee summary information
 
-Use the Remove Employee Summary window to remove employee summary and tip
-information for a selected year. You also can print a summary report using
-this window.
+Use the Remove Employee Summary window to remove employee summary and tip information for a selected year. You also can print a summary report using this window.
 
-*Don’t remove employee summary information until you’ve printed all
-government statements and reports for that year. After you’ve removed
-employee summary information, you won’t be able to reprint statements and
-reports for that year.*
+> [!NOTE]
+> Don’t remove employee summary information until you’ve printed all government statements and reports for that year. After you’ve removed employee summary information, you won’t be able to reprint statements and reports for that year.
 
 **To remove employee summary information:**
 
-1. Open the Remove Employee Summary window. (HR & Payroll \>\> Utilities \>\>
-    Payroll \>\> Remove Employee Summary)
+1. Open the Remove Employee Summary window. (HR & Payroll \>\> Utilities \>\>    Payroll \>\> Remove Employee Summary)
 
-2. Choose whether to remove calendar year or fiscal year information, then
-    select the year you would like to remove employee summary information for.
+2. Choose whether to remove calendar year or fiscal year information, then select the year you would like to remove employee summary information for.
 
-3. Select the method to use to define the range of summary and tip information
-    to remove: employee IDs, employee classes, departments, positions, and hire
-    date.
+3. Select the method to use to define the range of summary and tip information to remove: employee IDs, employee classes, departments, positions, and hire date.
 
-4. Choose Insert to add the range to the Restrictions List. To remove range
-    from the list, select the restriction and choose Remove.
+4. Choose Insert to add the range to the Restrictions List. To remove range from the list, select the restriction and choose Remove.
 
 5. Mark any of these options.
 
-**Print Summary Report** Mark to print a summary report.
+    - **Print Summary Report** Mark to print a summary report.
 
-**Remove Summary Information** Mark to remove employee summary
+    - **Remove Summary Information** Mark to remove employee summary information. If this option is not marked and you choose Process, Payroll will not remove summary information based on the selected records.
 
-information. If this option is not marked and you choose Process, Payroll
-will not remove summary information based on the selected records.
+1. Choose Process to remove summary and tip information or print the Summary Report, depending on your selections in this window.
 
-1. Choose Process to remove summary and tip information or print the Summary
-    Report, depending on your selections in this window.
-
-If you’ve marked both Print Summary Report and Remove Summary Information,
-the report is printed after historical records are removed.
+If you’ve marked both Print Summary Report and Remove Summary Information, the report is printed after historical records are removed.
 
 #### Removing inactive records
 
@@ -6860,35 +6659,26 @@ needed in creating your year-end wage file. If you still plan to create a
 year-end wage file, be sure to reactivate the employees first before
 choosing to remove inactive records.
 
-*Don’t remove inactive records until you’ve printed all government
-statements and reports for that year. After inactive employee records are
-removed, you won’t be able to reprint statements and reports for that year.*
+> [!IMPORTANT]
+> Don’t remove inactive records until you’ve printed all government statements and reports for that year. After inactive employee records are removed, you won’t be able to reprint statements and reports for that year.
 
-If you’re using Human Resources, removing inactive records in Payroll will
-also remove inactive records in Human Resources. If you’re using Direct
-Deposit, removing inactive employee records will also remove records of
-employees that were marked as inactive in the Direct Deposit Employee
-Maintenance window.
+If you’re using Human Resources, removing inactive records in Payroll will also remove inactive records in Human Resources. If you’re using Direct Deposit, removing inactive employee records will also remove records of employees that were marked as inactive in the Direct Deposit Employee Maintenance window.
 
 **To remove inactive records:**
 
-1. Open the Remove Inactive Records window. (HR & Payroll \>\> Utilities \>\>
-    Payroll \>\> Remove Inactive Records)
+1. Open the Remove Inactive Records window. (HR & Payroll \>\> Utilities \>\> Payroll \>\> Remove Inactive Records)
 
 2. Select the inactive records to remove by marking any of these options.
 
-**Remove Inactive Employee Records** Mark this option to remove employee
-records for inactive employees.
+    - **Remove Inactive Employee Records** Mark this option to remove employee records for inactive employees.
 
-*If you mark Remove Inactive Employee Records and did not mark Remove
-History for Inactive Employee Records, information in Payroll history
-reports will be retained.*
+        > [!NOTE]
+        > If you mark Remove Inactive Employee Records and did not mark Remove History for Inactive Employee Records, information in Payroll history reports will be retained.
 
-**Remove History for Inactive Employee Records** Mark this option to remove
-history records for inactive employees.
+    - **Remove History for Inactive Employee Records** Mark this option to remove history records for inactive employees.
 
-*If you remove inactive employee and history records, reprint journals will
-not print correct information.*
+        > [!NOTE]
+        > If you remove inactive employee and history records, reprint journals will not print correct information.
 
 1. Choose Process to remove the selected inactive records.
 
@@ -6900,15 +6690,11 @@ information to history. All the information for printing W-2 statements and
 
 **To remove year-end information:**
 
-1. Open the Remove Payroll Year-End Information window. (HR & Payroll \>\>
-    Utilities \>\> Payroll \>\> Remove Year-End Information)
+1. Open the Remove Payroll Year-End Information window. (HR & Payroll \>\>    Utilities \>\> Payroll \>\> Remove Year-End Information)
 
 2. Select the year to remove year-end history information for.
 
-3. Choose Insert to add the year to the Restrictions window. You can remove
-    yearend information for multiple years. If you’ve selected the wrong year,
-    select the year and choose Remove. The year will be removed from the
-    Restrictions window.
+3. Choose Insert to add the year to the Restrictions window. You can remove yearend information for multiple years. If you’ve selected the wrong year, select the year and choose Remove. The year will be removed from the Restrictions window.
 
 4. Choose Process.
 
@@ -6932,15 +6718,11 @@ were removed.
 
 2. Select a range from the list and enter a range restriction.
 
-3. Choose Insert to add the range restriction. You can select additional ranges
-    and restrictions. If you’ve made an error in a range or a restriction,
-    select the range and choose Remove.
+3. Choose Insert to add the range restriction. You can select additional ranges and restrictions. If you’ve made an error in a range or a restriction, select the range and choose Remove.
 
-4. Mark Print Report to print the Distribution History Report without removing
-    history.
+4. Mark Print Report to print the Distribution History Report without removing history.
 
-5. Mark Remove History to remove distribution history for the range you’ve
-    entered.
+5. Mark Remove History to remove distribution history for the range you’ve entered.
 
 6. Choose Process to clear distribution history for the selected ranges.
 
@@ -6958,14 +6740,11 @@ were removed.
 
 **To remove journal history:**
 
-1. Open the Remove Payroll Journal History window. (HR & Payroll \>\> Utilities
-    \>\> Payroll \>\> Remove Journals)
+1. Open the Remove Payroll Journal History window. (HR & Payroll \>\> Utilities    \>\> Payroll \>\> Remove Journals)
 
 2. Select a range from the list and enter a range restriction.
 
-3. Choose Insert to add the range restriction. You can select additional ranges
-    and restrictions. If you’ve made an error in a range or a restriction,
-    select the range and choose Remove.
+3. Choose Insert to add the range restriction. You can select additional ranges and restrictions. If you’ve made an error in a range or a restriction, select the range and choose Remove.
 
 4. Choose Process to clear journal history for the selected ranges.
 
@@ -6993,8 +6772,8 @@ We don’t recommend using the Payroll Edit Federal Tax Liabilities window to
 edit your liability information except in circumstances such as those
 described above.
 
-*To edit federal tax liabilities, you must have marked the Edit Financial
-Fields option in the Payroll Setup window.*
+> [!NOTE]
+> To edit federal tax liabilities, you must have marked the Edit Financial Fields option in the Payroll Setup window.
 
 Differences in tax liability amounts might occur in any of the following
 circumstances:
@@ -7015,18 +6794,11 @@ circumstances:
 
 ![A screenshot of a cell phone Description automatically generated](media/869d9e56ec4b80c38c3cd9d704e9b970.jpg)
 
-A screenshot of a cell phone Description automatically generated
+1. Move the cursor to the first available line in the scrolling window to enter  information for a missing pay run.
 
-A screenshot of a cell phone Description automatically generated
+2. Move the cursor to the appropriate field in the scrolling window to make changes to an existing pay run.
 
-1. Move the cursor to the first available line in the scrolling window to enter
-    information for a missing pay run.
-
-2. Move the cursor to the appropriate field in the scrolling window to make
-    changes to an existing pay run.
-
-The changes you make in this window will be reflected on the following
-reports:
+The changes you make in this window will be reflected on the following Reports:
 
 - Federal Tax Liabilities List
 
@@ -7050,39 +6822,22 @@ and keep the report for your records.
 Use the Payroll Tax Setup window to view and edit the predefined FICA,
 federal, state, and local taxes tables, if necessary.
 
-*Use Payroll Update (Microsoft Dynamics GP menu \>\> Maintenance \>\> U.S.
-Payroll Updates \>\> Check for Tax Updates) to download and install updated
-information, including tax tables, to calculate federal tax, FICA tax, and
-state and local tax withholding. You also can use the tax tables for the
-lesson company. If you’ve modified the tax tables while working in the
-lesson company, you’ll need to install the tables again.*
+> [!NOTE]
+> Use Payroll Update (Microsoft Dynamics GP menu \>\> Maintenance \>\> U.S.Payroll Updates \>\> Check for Tax Updates) to download and install updated information, including tax tables, to calculate federal tax, FICA tax, and state and local tax withholding. You also can use the tax tables for the lesson company. If you’ve modified the tax tables while working in the lesson company, you’ll need to install the tables again.
 
 **To view and edit Payroll taxes:**
 
-1. Open the Payroll Tax Setup window. (Administration \>\> Setup \>\> System
-    \>\> Payroll Tax)
+1. Open the Payroll Tax Setup window. (Administration \>\> Setup \>\> System    \>\> Payroll Tax)
 
-![A screenshot of a cell phone Description automatically generated](media/1c8fdb05ebc9940b765583ecf2defd65.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/1c8fdb05ebc9940b765583ecf2defd65.jpg)
 
-A screenshot of a cell phone Description automatically generated
+2. Enter or select a tax code. The tax calculations for that code will be displayed in the Sequence list box. For more information, refer to *Tax calculation methods* .
 
-A screenshot of a cell phone Description automatically generated
+3. Choose Filing Status to open the Payroll Tax Filing Status window, where you can view the filing status information for the selected tax code. You also can use this window to view personal exemption information, standard deduction information, and other tax information.
 
-1. Enter or select a tax code. The tax calculations for that code will be
-    displayed in the Sequence list box. For more information, refer to *Tax
-    calculation methods* .
+    If the selected tax code uses a calculation that requires a tax table, you can choose Tables after you’ve entered a filing status to view the tax tables, low income tables, personal exemption tables or special tables for a filing status of a tax code. The Payroll Tax Tables window will open.
 
-2. Choose Filing Status to open the Payroll Tax Filing Status window, where you
-    can view the filing status information for the selected tax code. You also
-    can use this window to view personal exemption information, standard
-    deduction information, and other tax information.
-
-If the selected tax code uses a calculation that requires a tax table, you
-can choose Tables after you’ve entered a filing status to view the tax
-tables, low income tables, personal exemption tables or special tables for a
-filing status of a tax code. The Payroll Tax Tables window will open.
-
-1. Close the window.
+4. Close the window.
 
 #### Tax calculation methods
 
@@ -7229,32 +6984,23 @@ Review this blog on tips to install the Payroll Tax Update:
 
 **To use the tax table update engine:**
 
-1. Open the Payroll Tax Update window. (Microsoft Dynamics GP menu \>\>
-    Maintenance \>\> U.S. Payroll Updates \>\> Check for Tax Updates)
+1. Open the Payroll Tax Update window. (Microsoft Dynamics GP menu \>\> Maintenance \>\> U.S. Payroll Updates \>\> Check for Tax Updates)
 
 2. Select an update method, then choose Next.
 
-    - The Automatic option downloads all current and prior tax table updates
-        for the year to the default location.
+    - The Automatic option downloads all current and prior tax table updatesfor the year to the default location.
 
-    - The Manual option processes all current and prior tax table updates for
-        the year from a location you specify. You might choose Manual if you
-        need to update a computer that isn’t connected to the Internet.
+    - The Manual option processes all current and prior tax table updates for the year from a location you specify. You might choose Manual if you need to update a computer that isn’t connected to the Internet.
 
-If you use the Manual option, first download the update and documentation
-from CustomerSource, and copy the update files to a location accessible to
-the computer you want to update.
+    If you use the Manual option, first download the update and documentation From CustomerSource, and copy the update files to a location accessible to the computer you want to update.
 
-1. If you selected Automatic in the Payroll Tax Update window, enter your
-    authorization number. Choose Log in to start the download.
+1. If you selected Automatic in the Payroll Tax Update window, enter your authorization number. Choose Log in to start the download.
 
-2. If you selected Manual in the Payroll Tax Update window, specify the
-    location where your tax update files are located.
+2. If you selected Manual in the Payroll Tax Update window, specify the location where your tax update files are located.
 
 3. Choose Process to start the update.
 
-4. Verify that Microsoft Dynamics GP has the latest tax update (Administration
-    \>\> Setup \>\> System \>\> Payroll Tax).
+4. Verify that Microsoft Dynamics GP has the latest tax update (Administration\>\> Setup \>\> System \>\> Payroll Tax).
 
 #### Installing year-end software updates
 
@@ -7317,22 +7063,17 @@ month, quarter, fiscal year or calendar year, or during setup.
 
 **To add or modify checklist items:**
 
-1. Open the Payroll Checklists window. (HR & Payroll \>\> Routines \>\> Payroll
-    \>\> Checklists)
+1. Open the Payroll Checklists window. (HR & Payroll \>\> Routines \>\> Payroll    \>\> Checklists)
 
 2. Select a frequency.
 
-3. To add an item, choose Add, or to update an item, select it, then choose
-    Modify. The Add-Modify Payroll Routines window will open.
+3. To add an item, choose Add, or to update an item, select it, then choose Modify. The Add-Modify Payroll Routines window will open.
 
 4. Enter the item information.
 
-5. Choose OK to save the information. The Payroll Checklists window is
-    redisplayed. You can adjust the position of the items in the checklist using
-    the Top, Up, Down, or Bottom buttons.
+5. Choose OK to save the information. The Payroll Checklists window is redisplayed. You can adjust the position of the items in the checklist using the Top, Up, Down, or Bottom buttons.
 
-6. Choose Revert to cancel changes and return to the window in its original
-    state.
+6. Choose Revert to cancel changes and return to the window in its original state.
 
 #### Deleting checklist items
 
@@ -7343,9 +7084,7 @@ quarter, fiscal year, or calendar year.
 
 **To delete checklist items:**
 
-1. Open the Payroll Checklists window.
-
-(HR & Payroll \>\> Routines \>\> Payroll \>\> Checklists)
+1. Open the Payroll Checklists window. (HR & Payroll \>\> Routines \>\> Payroll \>\> Checklists)
 
 1. Select a frequency and select the checklist item to delete.
 
@@ -7389,11 +7128,7 @@ liabilities.
 1. Open the Period-End Payroll Reports window. (HR & Payroll \>\> Reports \>\>
     Payroll \>\> Period-End)
 
-![A screenshot of a cell phone Description automatically generated](media/8714afc30e1cbb2b04276244c09ec9c4.jpg)
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
+    ![A screenshot of a cell phone Description automatically generated](media/8714afc30e1cbb2b04276244c09ec9c4.jpg)
 
 1. Select the range of information you want to specify. Records within the
     range you specify will be included on the report.
@@ -7402,15 +7137,11 @@ A screenshot of a cell phone Description automatically generated
     reports or posting tax liabilities for. Ending date will be the default
     posting date.
 
-3. Select the period-end reports to print. For information about each type of
-    report, refer to *Chapter 15, “Payroll reports.”*
+3. Select the period-end reports to print. For information about each type of report, refer to *Chapter 15, “Payroll reports.”*
 
-4. Mark the appropriate options to post FUTA tax, SUTA tax, and workers’
-    compensation tax. When you mark these options, the Posting Date field
-    displays the date that you’re posting these liabilities.
+4. Mark the appropriate options to post FUTA tax, SUTA tax, and workers’ compensation tax. When you mark these options, the Posting Date field displays the date that you’re posting these liabilities.
 
-5. Choose Process. The reports you’ve marked will be printed and the tax
-    liabilities will be posted if you selected to post them.
+5. Choose Process. The reports you’ve marked will be printed and the tax liabilities will be posted if you selected to post them.
 
 #### Printing quarter-end reports
 
@@ -7421,13 +7152,11 @@ summary of your wages and taxes.
 
 **To print quarter-end reports:**
 
-1. Open the Quarter-End Payroll Reports window. (HR & Payroll \>\> Reports \>\>
-    Payroll \>\> Quarter-End)
+1. Open the Quarter-End Payroll Reports window. (HR & Payroll \>\> Reports \>\> Payroll \>\> Quarter-End)
 
 2. Select a quarter.
 
-3. Select the quarter-end reports to print. For information about each type of
-    report, refer to *Chapter 15, “Payroll reports.”*
+3. Select the quarter-end reports to print. For information about each type of report, refer to *Chapter 15, “Payroll reports.”*
 
 4. Choose Process. The reports you’ve marked will be printed.
 
@@ -7450,11 +7179,9 @@ during the procedure, or complete Period-End or Quarter-End procedures.
 
 **To close a year:**
 
-1. Open the Payroll Year-End Closing window. (HR & Payroll \>\> Routines \>\>
-    Payroll \>\> Year-End Closing)
+1. Open the Payroll Year-End Closing window. (HR & Payroll \>\> Routines \>\> Payroll \>\> Year-End Closing)
 
-2. Enter the calendar year to close and create a year-end wage file. A file
-    will be created for printing W-2 statements and 1099-R forms.
+2. Enter the calendar year to close and create a year-end wage file. A file will be created for printing W-2 statements and 1099-R forms.
 
 3. Choose Process to close the year. The Year-End Wage File will be created.
 
@@ -7468,13 +7195,11 @@ only if the year-end wage file exists for the year to use.
 
 **To print the Year-End Employee Wage Report:**
 
-1. Open the Year-End Wage Report window. (HR & Payroll \>\> Routines \>\>
-    Payroll \>\> Year-End Wage Report)
+1. Open the Year-End Wage Report window. (HR & Payroll \>\> Routines \>\> Payroll \>\> Year-End Wage Report)
 
 2. Select a year.
 
-3. Select the employee type. Employees classified as Medicare Qualified
-    Government Employees (MQGE) always are listed after all Regular employees.
+3. Select the employee type. Employees classified as Medicare Qualified Government Employees (MQGE) always are listed after all Regular employees.
 
 4. Select a sorting option.
 
@@ -7520,8 +7245,7 @@ You can use the Edit W-2 Information window to verify and make changes to an emp
 
 **To edit W-2 information:**
 
-1. Open the Edit W-2 Information window.(HR & Payroll \>\> Routines \>\>
-    Payroll \>\> Edit W-2s)
+1. Open the Edit W-2 Information window.(HR & Payroll \>\> Routines \>\> Payroll \>\> Edit W-2s)
 
     ![A screenshot](media/9e6332cdad1fdc154295311ab32577f1.jpg)
 
@@ -7612,30 +7336,20 @@ the 1099-R statement.
 
 **To edit 1099-R information:**
 
-1. Open the Edit 1099-R Information window. (HR & Payroll \>\> Routines \>\>
-    Payroll \>\> Edit 1099-Rs)
+1. Open the Edit 1099-R Information window. (HR & Payroll \>\> Routines \>\> Payroll \>\> Edit 1099-Rs)
 
-2. Enter or select an employee ID. The employee’s Social Security number and
-    address will be displayed. You can edit this information. Changing this
-    information here will not change the information in the Employee Maintenance
+2. Enter or select an employee ID. The employee’s Social Security number and address will be displayed. You can edit this information. Changing this information here will not change the information in the Employee Maintenance
     window.
 
 3. Select the calendar year.
 
-4. Change the gross distribution amount of the pension, if necessary. The gross
-    distribution amount is the total amount of pension the employee received in
-    the selected year. If a portion of the distribution is taxable, enter that
-    amount. Otherwise, leave the Taxable Amount Not Determined field marked and
-    the Taxable Amount as 0.
+4. Change the gross distribution amount of the pension, if necessary. The gross distribution amount is the total amount of pension the employee received in the selected year. If a portion of the distribution is taxable, enter that amount. Otherwise, leave the Taxable Amount Not Determined field marked and the Taxable Amount as 0.
 
 5. Change other distribution information, if necessary.
 
-6. Change the amounts of the federal and state income tax withheld, if
-    necessary. You also can change the state, payer’s state ID, local income tax
-    withheld, and the locality to which the tax was paid.
+6. Change the amounts of the federal and state income tax withheld, if necessary. You also can change the state, payer’s state ID, local income tax withheld, and the locality to which the tax was paid.
 
-7. Choose Save to save the information you’ve entered. For more information
-    about printing the 1099-R statements, see [Printing 1099-R statements](#printing-1099-r-statements).
+7. Choose Save to save the information you’ve entered. For more information about printing the 1099-R statements, see [Printing 1099-R statements](#printing-1099-r-statements).
 
 #### Printing 1099-R statements
 
@@ -7643,13 +7357,11 @@ You can use the Print 1099-R Forms window to print 1099-R statements. These stat
 
 **To print 1099-R statements:**
 
-1. Open the Print 1099-R Forms window. (HR & Payroll \>\> Routines \>\> Payroll
-    \>\> Print 1099-Rs)
+1. Open the Print 1099-R Forms window. (HR & Payroll \>\> Routines \>\> Payroll \>\> Print 1099-Rs)
 
 2. Select the year to print 1099-R statements for.
 
-3. Enter a range of employee IDs or mark All to print 1099-R statements for all
-    employees.
+3. Enter a range of employee IDs or mark All to print 1099-R statements for all employees.
 
 4. Select the sorting order for the 1099-R statements.
 
@@ -7659,19 +7371,15 @@ You can use the Print 1099-R Forms window to print 1099-R statements. These stat
 
     - Mark Validation Report to print a report to verify information.
 
-    - Mark 1099-R Forms Alignment to print a test form to ensure the forms are
-        aligned. For information about adjusting the alignment of forms, refer
-        to your Report Writer documentation.
+    - Mark 1099-R Forms Alignment to print a test form to ensure the forms are aligned. For information about adjusting the alignment of forms, refer to your Report Writer documentation.
 
     - Mark 1099-R Forms to print the 1099-R statements.
 
     - Mark 1096 Transmittal Form to print a summary of the 1099-R statements.
 
-7. Print a Validation Report and verify the information before printing 1099-R
-    statements.
+7. Print a Validation Report and verify the information before printing 1099-R statements.
 
-8. Choose Print to print the report or forms you selected. If you’re printing
-    1099-R statements, be sure to insert 1099-R forms in the printer.
+8. Choose Print to print the report or forms you selected. If you’re printing 1099-R statements, be sure to insert 1099-R forms in the printer.
 
 #### Editing Form 8027 information
 
@@ -7686,22 +7394,17 @@ for a specific year.
 
 **To edit Form 8027 information:**
 
-1. Open the Form 8027 window. (HR & Payroll \>\> Routines \>\> Payroll \>\>
-    Form 8027)
+1. Open the Form 8027 window. (HR & Payroll \>\> Routines \>\> Payroll \>\>Form 8027)
 
-2. Select a reporting year. A year-end wage file must exist for that year to
-    prepare Form 8027.
+2. Select a reporting year. A year-end wage file must exist for that year to prepare Form 8027.
 
 3. Verify company name and address information.
 
-4. Select the type of establishment for which you are preparing Form 8027—
-    Evening Meals Only, Evening and Other Meals, Meals Other than Evening Meals
-    or Alcoholic Beverages.
+4. Select the type of establishment for which you are preparing Form 8027—Evening Meals Only, Evening and Other Meals, Meals Other than Evening Meals or Alcoholic Beverages.
 
 5. You can enter an establishment number.
 
-6. Choose File \>\> Print to verify information before you print Form 8027 to
-    send to the IRS.
+6. Choose File \>\> Print to verify information before you print Form 8027 to send to the IRS.
 
 #### Printing Form 8027
 
@@ -7715,16 +7418,13 @@ information, refer to *Editing Form 8027 information* .
 
 1. Open the Form 8027 window.
 
-(HR & Payroll \>\> Routines \>\> Payroll \>\> Form 8027)
+    (HR & Payroll \>\> Routines \>\> Payroll \>\> Form 8027)
 
-1. Select a reporting year. A year-end wage file must exist for the year to
-    print Form 8027.
+1. Select a reporting year. A year-end wage file must exist for the year to print Form 8027.
 
-2. Verify company name and address information. You should have already
-    verified tips information using the Form 8027 Preparation Report.
+2. Verify company name and address information. You should have already verified tips information using the Form 8027 Preparation Report.
 
-3. Select the type of establishment for which you are preparing Form 8027—
-    Evening Meals Only, Evening and Other Meals, Meals Other than Evening Meals
+3. Select the type of establishment for which you are preparing Form 8027—Evening Meals Only, Evening and Other Meals, Meals Other than Evening Meals
     or Alcoholic Beverages.
 
 4. Select the type of return, Final or Amended.
@@ -7879,10 +7579,8 @@ check with your bank or credit union’s guidelines and process as many
 prenotes as required when an employee adds an account to his or her direct
 deposit setup.
 
-*Each time an employee begins using Direct Deposit, you’ll probably be
-required to complete a prenotification for that employee’s distributions.
-Check with your financial institution for more details about particular
-requirements.*
+> [!NOTE]
+> Each time an employee begins using Direct Deposit, you’ll probably be required to complete a prenotification for that employee’s distributions. Check with your financial institution for more details about particular requirements.
 
 If you generate an ACH file that includes an employee account that has
 prenote status, the ACH file line item will include financial institution
@@ -8067,24 +7765,18 @@ files generated by Direct Deposit to bring the ACH file into balance.
 Use the Checkbook Maintenance window and the Bank Maintenance window to
 enter Payroll Direct Deposit auto-settle line information.
 
-*Some financial institutions that process direct deposit payments require
-ACH files to contain the auto-settle line. Others require that the ACH files
-do not contain it. Check with your financial institution for its
-requirements.*
+> [!NOTE]
+> Some financial institutions that process direct deposit payments require ACH files to contain the auto-settle line. Others require that the ACH files do not contain it. Check with your financial institution for its requirements.
 
 **To enter auto-settle line information:**
 
-1. Open the Checkbook Maintenance window. (Financial \>\> Cards \>\> Financial
-    \>\> Checkbook)
+1. Open the Checkbook Maintenance window. (Financial \>\> Cards \>\> Financial\>\> Checkbook)
 
 2. Enter or select a checkbook ID.
 
-3. You can click the Bank ID field to open the Bank Maintenance window, where
-    you can enter the DD Transit Number. Choose Save. The Checkbook Maintenance
-    window will be displayed.
+3. You can click the Bank ID field to open the Bank Maintenance window, where you can enter the DD Transit Number. Choose Save. The Checkbook Maintenance window will be displayed.
 
-4. Choose Direct Deposit in the Checkbook Maintenance window to open the Direct
-    Deposit Checkbook Maintenance window.
+4. Choose Direct Deposit in the Checkbook Maintenance window to open the Direct Deposit Checkbook Maintenance window.
 
 5. Enter a bank account and account name.
 
@@ -8099,30 +7791,21 @@ Deposit windows.
 
 **To set up Payroll Direct Deposit security:**
 
-1. Open the Security Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\>
-    Setup \>\> System \>\> Security \>\> enter system password)
+1. Open the Security Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Security \>\> enter system password)
 
-2. Select a user ID and a company. The security you set up will apply to the
-    user only when the user is logged into that company.
+2. Select a user ID and a company. The security you set up will apply to the user only when the user is logged into that company.
 
-3. Select Microsoft Dynamics GP from the Product list and select Windows from
-    the Type list.
+3. Select Microsoft Dynamics GP from the Product list and select Windows from the Type list.
 
-4. From the Series list, select Payroll. When you select a series, the Access
-    List displays the items for the product, type, and series you selected. Each
-    item appears marked with an asterisk (\*), which means the item is available
-    to the user.
+4. From the Series list, select Payroll. When you select a series, the Access List displays the items for the product, type, and series you selected. Each item appears marked with an asterisk (\*), which means the item is available to the user.
 
 5. Using the Access List, remove or grant access to Direct Deposit items.
 
-    - To restrict access to an item for this user, double-click the item and
-        the asterisk will disappear.
+    - To restrict access to an item for this user, double-click the item and the asterisk will disappear.
 
-    - To grant access to an item for this user, double-click the item and the
-        asterisk will appear.
+    - To grant access to an item for this user, double-click the item and the asterisk will appear.
 
-    - Choose Unmark All to restrict access to all items in the list, or Mark
-        All to grant access to all items in the list.
+    - Choose Unmark All to restrict access to all items in the list, or Mark All to grant access to all items in the list.
 
 6. Choose OK.
 
@@ -8184,53 +7867,36 @@ generated from the ACH Fields Setup window shown.
 
 **To set up the ACH fields:**
 
-1. Open the Direct Deposit Setup window. (HR & Payroll \>\> Setup \>\> Payroll
-    \>\> Direct Deposit)
+1. Open the Direct Deposit Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Direct Deposit)
 
-2. Choose ACH Fields to open the ACH Fields Setup window. Enter information
-    about your company and the financial institution in the available fields.
-    This information will be provided by the financial institution receiving
-    your ACH File.
+2. Choose ACH Fields to open the ACH Fields Setup window. Enter information about your company and the financial institution in the available fields. This information will be provided by the financial institution receiving your ACH File.
 
     - Company Identification: Enter up to ten digits to identify your company.
 
     - Company Identification Name: Enter the name of your company.
 
-    - Immediate Origin and Name: Enter the routing number and name of the
-        financial institution sending the ACH file.
+    - Immediate Origin and Name: Enter the routing number and name of the financial institution sending the ACH file.
 
-    - Immediate Destination and Name: Enter the routing number and name of the
-        financial institution receiving the ACH file.
+    - Immediate Destination and Name: Enter the routing number and name of the financial institution receiving the ACH file.
 
-    - Originating Institution: Enter the routing number of the originating
-        financial institution.
+    - Originating Institution: Enter the routing number of the originating financial institution.
 
-    - Discretionary Data: Enter information given to you by your financial
-        institution, as needed.
+    - Discretionary Data: Enter information given to you by your financial institution, as needed.
 
     - Description: Enter text to appear on employee earnings statements.
 
-3. Select whether to identify the employee in the ACH file by the employee ID
-    or Social Security number.
+3. Select whether to identify the employee in the ACH file by the employee ID or Social Security number.
 
-4. Mark Include Auto-Settle-Line if your financial institution requires this.
-    If it isn’t marked, the financial institution will create the balancing
-    line. For more information, refer to *Entering auto-settle line information*
-    .
+4. Mark Include Auto-Settle-Line if your financial institution requires this.If it isn’t marked, the financial institution will create the balancing line. For more information, refer to *Entering auto-settle line information*.
 
-*You cannot generate an ACH file that includes some Payroll runs with the
-Auto-Settle Line option and some without; they must all have the option or
-all be without it.*
+    > [!NOTE]
+    > You cannot generate an ACH file that includes some Payroll runs with the Auto-Settle Line option and some without; they must all have the option or all be without it.
 
-1. In the ACH File Location field, enter or select the path where the generated
-    ACH file will be stored.
+1. In the ACH File Location field, enter or select the path where the generated ACH file will be stored.
 
-2. Enter the file name to use for your first ACH file in the Next ACH Filename
-    field.
+2. Enter the file name to use for your first ACH file in the Next ACH Filename field.
 
-3. Mark Increment ACH Filename to save each ACH file you that you generate and
-    to have your ACH file names automatically incremented (ACH001.TXT,
-    ACH002.TXT, etc.).
+3. Mark Increment ACH Filename to save each ACH file you that you generate and to have your ACH file names automatically incremented (ACH001.TXT, ACH002.TXT, etc.).
 
 4. Choose OK.
 
@@ -8250,14 +7916,12 @@ information in your ACH file, such as a password or account number. Be sure
 to check with your financial institution for more information about specific
 requirements for these files.
 
-*In the ACH File Header and Footer window, all changes are saved
-immediately. If you delete or change a header or footer, you can only
-restore it by re-entering it.*
+> [!NOTE]
+> In the ACH File Header and Footer window, all changes are saved immediately. If you delete or change a header or footer, you can only restore it by re-entering it.
 
 **To create an ACH header or footer:**
 
-1. Open the Direct Deposit Setup window. (HR & Payroll \>\> Setup \>\> Payroll
-    \>\> Direct Deposit)
+1. Open the Direct Deposit Setup window. (HR & Payroll \>\> Setup \>\> Payroll\>\> Direct Deposit)
 
 2. Choose Headers/Footers to open the ACH File Header and Footer window.
 
@@ -8265,17 +7929,14 @@ restore it by re-entering it.*
 
 4. Enter your information on the first available line in the scrolling window.
 
-*Be sure to check with your financial institution for more information about
-specific requirements for ACH file headers and footers.*
+    > [!NOTE]
+    > Make sure you check with your financial institution for more information about specific requirements for ACH file headers and footers.
 
 1. Repeat Steps 3 and 4 to continue creating header and footer information.
 
-2. Enter the number of header lines and footer lines to include in the ACH
-    file.
+2. Enter the number of header lines and footer lines to include in the ACH file.
 
-3. Choose Delete under the appropriate scrolling window to delete a header or
-    footer. Choose Delete All under the appropriate scrolling window to delete
-    all headers or footers.
+3. Choose Delete under the appropriate scrolling window to delete a header or footer. Choose Delete All under the appropriate scrolling window to delete all headers or footers.
 
 4. Choose OK.
 
@@ -8327,20 +7988,15 @@ your pay run in the Build Payroll Checks window.
 
 **To create a direct deposit deduction:**
 
-1. Open the Deduction Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
-    Deduction)
+1. Open the Deduction Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Deduction)
 
-2. Create a Payroll deduction and verify that the deduction is not sheltered
-    from taxes. For more information about setting up Payroll deductions, refer
-    to *Setting up a standard deduction* .
+2. Create a Payroll deduction and verify that the deduction is not sheltered from taxes. For more information about setting up Payroll deductions, refer to *Setting up a standard deduction* .
 
 3. Choose Save.
 
-4. Select the deduction you created and choose Sequence to open the Deduction
-    Sequence Setup window.
+4. Select the deduction you created and choose Sequence to open the Deduction Sequence Setup window.
 
-5. Add the Direct Deposit deductions to the list of Sequenced Deductions by
-    selecting the Unsequenced Deduction and choosing Insert.
+5. Add the Direct Deposit deductions to the list of Sequenced Deductions by selecting the Unsequenced Deduction and choosing Insert.
 
 6. Choose OK.
 
@@ -8358,20 +8014,16 @@ Reconciliation.
 
 **To link Payroll Direct Deposit deductions to direct deposits:**
 
-1. Open the Direct Deposit Setup window. (HR & Payroll \>\> Setup \>\> Payroll
-    \>\> Direct Deposit)
+1. Open the Direct Deposit Setup window. (HR & Payroll \>\> Setup \>\> Payroll\>\> Direct Deposit)
 
 2. Choose Links to open the Link Deduction Setups to Direct Deposit window.
 
-3. Select the deduction to link to Direct Deposit from the Deductions Not
-    Linked list and choose Insert. The deduction is moved to the Deductions
-    Linked to DD list. Choose OK
+3. Select the deduction to link to Direct Deposit from the Deductions Not Linked list and choose Insert. The deduction is moved to the Deductions Linked to DD list. Choose OK
 
-You only need to link a Direct Deposit option to the Payroll process once.
-After the link has been established, it is available for future pay runs.
+You only need to link a Direct Deposit option to the Payroll process once.After the link has been established, it is available for future pay runs.
 
-*Do not link all deductions, only those you created to use with Payroll Direct
-Deposit.*
+> [!tip]
+> Do not link all deductions, only those you created to use with Payroll Direct Deposit.
 
 When you use linked deductions, you are actually giving the employee 2 checks
 and both of those checks DO NOT update Bank Reconcilation or the checkbook. This
@@ -8389,8 +8041,8 @@ account, follow the procedure in *Generating an ACH file with prenotes only*
 regular pay run, the amount will be deducted, but will not be transferred
 into an account.
 
-*During a regular pay run, deduction direct deposit accounts with prenote
-status will be noted in the Exceptions Report.*
+> [!NOTE]
+> During a regular pay run, deduction direct deposit accounts with prenote status will be noted in the Exceptions Report.
 
 ### Chapter 26: Employee Direct Deposit maintenance
 
@@ -8446,19 +8098,16 @@ items defined for an employee, the items are paid in full from top to bottom
 until all net wages are deposited. In no circumstance will an employee have
 more or less money paid to accounts than the net wages in the pay run.
 
-*Guidelines in this section do not apply to direct deposit entries that are
-linked to Microsoft Dynamics GP deductions. For more information, refer to
-Chapter 25, “Deduction Direct Deposit setup.”*
+> [!NOTE]
+> Guidelines in this section do not apply to direct deposit entries that are linked to Microsoft Dynamics GP deductions. For more information, refer to Chapter 25, “Deduction Direct Deposit setup.”
 
 #### Creating an employee direct deposit record
 
-Use the Employee Direct Deposit Maintenance window to set up direct deposit
-information for a specific employee.
+Use the Employee Direct Deposit Maintenance window to set up direct deposit information for a specific employee.
 
 **To create an employee direct deposit record:**
 
-1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\>
-    Cards \>\> Payroll \>\> Direct Deposit)
+1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\>    Cards \>\> Payroll \>\> Direct Deposit)
 
     ![A screenshot ](media/cdedf76f47afdd0a550d3c6615aa1ae2.jpg)
 
@@ -8467,54 +8116,44 @@ information for a specific employee.
 2. Choose Add Accounts to create a new line item. Each line is numbered
     automatically.
 
-3. Enter the bank and account numbers in the appropriate fields and indicate if
-    the account is a savings or checking account.
+3. Enter the bank and account numbers in the appropriate fields and indicate if the account is a savings or checking account.
 
-4. Enter amount or percentage information for this account. For example,
-    suppose an employee wants to split his or her paycheck in the following way:
+4. Enter amount or percentage information for this account. For example, suppose an employee wants to split his or her paycheck in the following way:
 
     - \$800 to a personal checking account
 
     - \$400 (and remainder of net) to a credit union savings account
 
-If the employee takes one week without pay, the employee’s net pay for that
-period is only \$600. The entire \$600 will be deposited to the personal
-checking account because it is listed first in the Employee Direct Deposit
-Maintenance window. No payments are made to the second account—the credit
-union account.
+        If the employee takes one week without pay, the employee’s net pay for that period is only \$600. The entire \$600 will be deposited to the personal checking account because it is listed first in the Employee Direct Deposit Maintenance window. No payments are made to the second account—the credit union account.
 
-To have this noted in the exceptions report, you must mark Insufficient
-Funds in the Direct Deposit Setup window.
+        To have this noted in the exceptions report, you must mark Insufficient Funds in the Direct Deposit Setup window.
 
 1. Select a Status option.
 
-**Prenote** Use this option if this is a trial run to verify the entries are
-properly set up.
+    - **Prenote** 
 
-*Consult your bank or credit union representative to see how many prenotes
-are required for each account.*
+        Use this option if this is a trial run to verify the entries are properly set up.
 
-| **Active**   | Use this option to make an actual deposit to the account.           |
-|--------------|----------------------------------------------------------------------|
-| **Inactive** | Use this option to temporarily stop direct deposits to this account. |
+        > [!NOTE]
+        > Consult your bank or credit union representative to see how many prenotes are required for each account.
 
-*No deposits can be made to accounts that are marked Inactive or Prenote. If
-the account is marked Prenote, however, a line will be displayed in the ACH
-file to show a transfer of \$00.00 to that account.*
+    - **Active**
 
-1. If the Status is Prenote, enter the number of prenotes that are required in
-    the \# field.
+        Use this option to make an actual deposit to the account.
+    - **Inactive**
+        Use this option to temporarily stop direct deposits to this account.
 
-The number of prenotes that must still be completed will be tracked. If you
-need to complete three prenotes, for example, this number will be adjusted
-to 2 after you complete the first prenotification.
+    > [!NOTE]
+    > No deposits can be made to accounts that are marked Inactive or Prenote. If the account is marked Prenote, however, a line will be displayed in the ACH file to show a transfer of \$00.00 to that account.
 
-*A prenote status does not automatically change to Active. This must be done
-manually.*
+1. If the Status is Prenote, enter the number of prenotes that are required in the \# field.
 
-1. If you are using a multiple-account distribution, be sure the Remainder of
-    Net Line Number field references the line number where any remainder of net
-    should be deposited.
+    The number of prenotes that must still be completed will be tracked. If you need to complete three prenotes, for example, this number will be adjusted to 2 after you complete the first prenotification.
+
+    > [!NOTE]
+    > A prenote status does not automatically change to Active. This must be done manually.
+
+1. If you are using a multiple-account distribution, be sure the Remainder of Net Line Number field references the line number where any remainder of net should be deposited.
 
 2. Repeat steps 3 to 8 for each account for this employee.
 
@@ -8538,28 +8177,22 @@ Prenote to Active.
 
 **To update an employee direct deposit account status:**
 
-1. Open the Generate ACH File window. (HR & Payroll \>\> Transactions \>\>
-    Payroll \>\> Generate ACH File)
+1. Open the Generate ACH File window. (HR & Payroll \>\> Transactions \>\>    Payroll \>\> Generate ACH File)
 
 2. Choose View Completed Prenotes to open the Completed Prenotes window.
 
-3. Select an employee ID and choose Select. The Direct Deposit Employee
-    Maintenance window opens.
+3. Select an employee ID and choose Select. The Direct Deposit Employee Maintenance window opens.
 
-4. Update the status of the appropriate account or accounts. You might want to
-    look for accounts that have zeros in the \# column but are still set to
-    Prenote status; those accounts have completed prenotes.
+4. Update the status of the appropriate account or accounts. You might want to look for accounts that have zeros in the \# column but are still set to Prenote status; those accounts have completed prenotes.
 
-5. Choose Save. The Employee Direct Deposit Maintenance window closes and the
-    Completed Prenotes window opens.
+5. Choose Save. The Employee Direct Deposit Maintenance window closes and the Completed Prenotes window opens.
 
 6. Repeat steps 3 through 5 for each employee whose records you are updating.
 
-*After you select an employee record in the Completed Prenotes window, the
-employee’s name will be removed from the scrolling window whether or not you
-changed the employee’s account status.*
+    > [!NOTE]
+    > After you select an employee record in the Completed Prenotes window, the employee’s name will be removed from the scrolling window whether or not you changed the employee’s account status.
 
-1. When you’ve finished, close the Completed Prenotes window.
+7. When you’ve finished, close the Completed Prenotes window.
 
 #### Inactivating employee direct deposit accounts
 
@@ -8577,15 +8210,12 @@ window, the accounts for the direct deposit accounts will not be
 automatically inactivated. For more information, see *Inactivating an
 employee card*
 
-*Inactive employee direct deposit records are automatically deleted when you
-choose Remove Inactive Records in the Remove Inactive Records window. Refer
-to Removing inactive records for information about deleting inactive
-employee cards.*
+> [!NOTE]
+> Inactive employee direct deposit records are automatically deleted when you choose Remove Inactive Records in the Remove Inactive Records window. Refer to Removing inactive records for information about deleting inactive employee cards.
 
 **To inactivate a direct deposit record for an employee:**
 
-1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\>
-    Cards \>\> Payroll \>\> Direct Deposit)
+1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\> Cards \>\> Payroll \>\> Direct Deposit)
 
 2. Enter or select an employee ID.
 
@@ -8595,13 +8225,11 @@ employee cards.*
 
 **To inactivate individual employee direct deposit accounts:**
 
-1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\>
-    Cards \>\> Payroll \>\> Direct Deposit)
+1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\> Cards \>\> Payroll \>\> Direct Deposit)
 
 2. Enter or select an employee ID.
 
-3. Change the Status field for each account in the scrolling window to
-    Inactive.
+3. Change the Status field for each account in the scrolling window to Inactive.
 
 4. Choose Save.
 
@@ -8626,13 +8254,11 @@ financial institution.
 
 **To reactivate an employee direct deposit account:**
 
-1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\>
-    Cards \>\> Payroll \>\> Direct Deposit)
+1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\> Cards \>\> Payroll \>\> Direct Deposit)
 
 2. Enter or select an employee ID.
 
-3. Unmark Inactive to activate all accounts for this employee, or change the
-    appropriate Status field to activate individual accounts.
+3. Unmark Inactive to activate all accounts for this employee, or change the appropriate Status field to activate individual accounts.
 
 4. Choose Save.
 
@@ -8662,8 +8288,7 @@ Deposit deduction.
 
 **To enroll an employee in a direct deposit deduction:**
 
-1. Open the Employee Deduction Maintenance window. (HR & Payroll \>\> Cards
-    \>\> Payroll \>\> Deduction)
+1. Open the Employee Deduction Maintenance window. (HR & Payroll \>\> Cards\>\> Payroll \>\> Deduction)
 
 2. Select an employee ID.
 
@@ -8673,44 +8298,34 @@ Deposit deduction.
 
 #### Creating an employee deduction direct deposit record
 
-After the Microsoft Dynamics GP deduction has been created and linked to
-Payroll Direct Deposit, you can enter employee-specific deduction direct
-deposit information.
+After the Microsoft Dynamics GP deduction has been created and linked to Payroll Direct Deposit, you can enter employee-specific deduction direct deposit information.
 
-Inactivating deduction direct deposit accounts can be done in either of the
-two ways outlined in the *Inactivating employee direct deposit accounts* .
+Inactivating deduction direct deposit accounts can be done in either of the two ways outlined in the *Inactivating employee direct deposit accounts*.
 
-*Deduction direct deposit accounts marked Inactive will be noted in the
-Exceptions Report.*
+> [!NOTE]
+> Deduction direct deposit accounts marked Inactive will be noted in the Exceptions Report.
 
 **To create an employee deduction direct deposit record:**
 
-1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\>
-    Cards \>\> Payroll \>\> Direct Deposit)
+1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\> Cards \>\> Payroll \>\> Direct Deposit)
 
-2. Select an employee ID and choose Link Deduction to open the Deductions
-    window.
+2. Select an employee ID and choose Link Deduction to open the Deductions window.
 
-3. Select a deduction and choose Select. The deduction direct deposit record is
-    displayed in the Employee Direct Deposit Maintenance window.
+3. Select a deduction and choose Select. The deduction direct deposit record is displayed in the Employee Direct Deposit Maintenance window.
 
 4. Enter a bank number and an account number for the deduction.
 
-5. Mark checking or savings to indicate the type of bank account the deduction
-    will be deposited to.
+5. Mark checking or savings to indicate the type of bank account the deduction will be deposited to.
 
-6. Verify the amount or percentage for this account. You cannot change the
-    amount or percentage in this window. Use the Employee Deduction Maintenance
-    window to make changes.
+6. Verify the amount or percentage for this account. You cannot change the amount or percentage in this window. Use the Employee Deduction Maintenance window to make changes.
 
 7. Select a status for the account.
 
-8. Enter a Remainder of Net Line Number. This should be the last line number
-    with bank account information.
+8. Enter a Remainder of Net Line Number. This should be the last line number with bank account information.
 
     A deduction direct deposit account cannot be assigned as a Remainder of Netaccount.
 
-1. Choose Save.
+9. Choose Save.
 
 ### Chapter 28: Payroll Direct Deposit routines
 
@@ -8739,8 +8354,7 @@ Payroll Direct Deposit changes the Payroll process for Microsoft Dynamics GP. Af
 
 **To calculate Payroll Direct Deposit information:**
 
-1. Open the Print Payroll Checks window. (Transaction \>\> Payroll \>\> Print
-    Checks)
+1. Open the Print Payroll Checks window. (Transaction \>\> Payroll \>\> Print    Checks)
 
     ![A screenshot ](media/469bdd3fdf092d3a4244d06aa6a9f34e.jpg)
 
@@ -8761,23 +8375,18 @@ statements. If you set your Earnings Statements to print Separate from
 Checks in the Direct Deposit Setup window, you must print checks before you
 can print earnings statements.
 
-*You can reprint earnings statements as many times as needed until they’ve
-been posted. If you need to reprint earnings statements after posting, you
-can use the Payroll Check Inquiry window to re-create earnings statements in
-a format that closely resembles the original documents.*
+> [!NOTE]
+> You can reprint earnings statements as many times as needed until they’ve been posted. If you need to reprint earnings statements after posting, you can use the Payroll Check Inquiry window to re-create earnings statements in a format that closely resembles the original documents.
 
 **To print direct deposit earnings statements:**
 
-1. After you have printed checks using the Print Payroll Checks window, the
-    Post Payroll Checks window will open. Refer to *Calculating Payroll Direct
-    Deposit information* for more information.
+1. After you have printed checks using the Print Payroll Checks window, the Post Payroll Checks window will open. Refer to *Calculating Payroll Direct Deposit information* for more information.
 
     If your Deposit Method is Separate from Checks you must print the earnings statements now. You will not be able to print earnings statements after posting.
 
     ![A screenshot ](media/3f8cd1887e8f823280a01ea05821806e.jpg)
 
-1. Enter a posting date or accept the default date and select Print Earnings
-    Statements in the Process field.
+1. Enter a posting date or accept the default date and select Print Earnings Statements in the Process field.
 
 2. You can change the number in the Starting Earnings Statements field.
 
@@ -8795,11 +8404,9 @@ checks. Refer to *Printing direct deposit earnings statements* .
 
 **To post checks using Payroll Direct Deposit:**
 
-1. The Post Payroll Checks window opens after you print checks or earnings
-    statements.
+1. The Post Payroll Checks window opens after you print checks or earnings statements.
 
-2. Enter a posting date or accept the default date and select Post in the
-    Process field.
+2. Enter a posting date or accept the default date and select Post in the Process field.
 
 3. Choose Process to post your Payroll checks.
 
@@ -8820,8 +8427,7 @@ checks and earnings statements, and posting checks.
 
 **To generate an ACH file:**
 
-1. Open the Generate ACH File window. (HR & Payroll \>\> Transactions \>\>
-    Payroll \>\> Generate ACH File)  
+1. Open the Generate ACH File window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Generate ACH File)  
     It is recommended to have minimal records in this window. If you have more
     than 6 months of old payrolls, you may see performance issues when you post
     current payrolls. After you have confirmed the bank has accepted the file,
@@ -8829,13 +8435,10 @@ checks and earnings statements, and posting checks.
 
     ![A](media/b7b42445a4646772dfb65fb8936c4a70.jpg)
 
-1. Mark Include all prenotes to include all existing prenotes for employees,
-    including those not part of this pay run.
+1. Mark Include all prenotes to include all existing prenotes for employees, including those not part of this pay run.
 
-2. Mark Delete build after use to delete the direct deposit data file after the
-    ACH file is generated. The direct deposit information will be deleted after
-    the Generate ACH File window is closed and the information will not be
-    stored anywhere after the window closes.
+2. Mark Delete build after use to delete the direct deposit data file after the ACH file is generated. The direct deposit information will be deleted after
+    the Generate ACH File window is closed and the information will not be stored anywhere after the window closes.
 
     If Delete build after use is not marked, the build will be available if you should need to generate the ACH file again.
 
@@ -8844,10 +8447,7 @@ checks and earnings statements, and posting checks.
 
     Whether or not Include is automatically marked for a particular set of Payroll data will depend on if you marked Include Auto-Settle-Line in the ACH Fields Setup window when the data was generated. You can generate ACH files with Payroll data that includes that line, and you can generate ACH files with Payroll data that does not include that line. If you try to create an ACH file from a group of Payroll data files including some Payroll files with the line and some without, alert messages will be displayed.
 
-1. Choose Create File to generate an ACH file. The ACH file will be written to
-    the location you specified in the ACH File Location field. For more
-    information, refer to *Setting up Payroll Direct Deposit* . The Report
-    Destination window opens.
+1. Choose Create File to generate an ACH file. The ACH file will be written to the location you specified in the ACH File Location field. For more information, refer to *Setting up Payroll Direct Deposit* . The Report Destination window opens.
 
 2. Select a print destination for the ACH Transmittal report.
 
@@ -8867,22 +8467,18 @@ effect on this process.
 
 **To generate an ACH file with prenotes only:**
 
-1. Open the Generate ACH File window. (HR & Payroll \>\> Transactions \>\>
-    Payroll \>\> Generate ACH File)
+1. Open the Generate ACH File window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Generate ACH File)
 
 2. Mark Include all prenotes.
 
-3. Unmark the Include checkbox on each line in the scrolling window. This
-    ensures that no Payroll builds are used in the ACH file.
+3. Unmark the Include checkbox on each line in the scrolling window. This ensures that no Payroll builds are used in the ACH file.
 
 4. Choose Create File. The Report Destination window opens.
 
 5. Select a print destination for the ACH Transmittal report.
 
-*This report is not the ACH file. The ACH file that you transmit to your
-financial institution will be written to the location specified in the ACH
-File Location field in the ACH Fields Setup window. For more information,
-refer to Setting up the ACH fields .*
+> [!NOTE]
+> This report is not the ACH file. The ACH file that you transmit to your financial institution will be written to the location specified in the ACH File Location field in the ACH Fields Setup window. For more information, refer to *Setting up the ACH fields*.
 
 ### Chapter 29: Payroll Direct Deposit reports
 
@@ -8909,8 +8505,8 @@ the Check Register, are printed during the Payroll process.
 
 Payroll Direct Deposit reports available are:
 
-| **Report**                                                                                                                                                                  | **Report information**                                                                                                                                                                                                                                                                                                    |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Report**           | **Report information**  |
+|----------------------|-------------------------|
 | Direct Deposit ACH File Report                                                                                                                                              | A printout of the ACH file. Creating a printout at the time you generate your ACH file saves you the work of opening and printing your ACH destination file later.                                                                                                                                                       |
 | Direct Deposit ACH Transmittal                                                                                                                                              | A combination of smaller reports, based on information you’ve entered during the Payroll process. Use transmittal reports to see the effect of the direct deposit transactions on your company’s accounts, and your employees’ savings and checking accounts. Each report is separated from the others with a page break. |
 | Direct Deposit Check Register                                                                                                                                               | A check register with an asterisk (\*) next to checks that have been voided during the Payroll process. A “D” indicates a check that has been voided due to direct deposit.                                                                                                                                              |
@@ -8924,8 +8520,8 @@ account. If an employee is using two direct deposit accounts, for example,
 there will be two lines in the report representing that employee’s line
 items.
 
-| **Report**                                                                                                                                                                  | **Report information**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Report** | **Report information**     |
+|------------|----------------------------|
 | Direct Deposit List                                                                                                                                                         | A list of all employees and their direct deposit statuses. In this report, one line item is created for each employee. It is possible for an employee to have an Active status even if their account status is set to Inactive. For an employee to have an Inactive status, Inactive must be marked in the Employee Direct Deposit Maintenance window.                                                                                                                                               |
 | Direct Deposit Register                                                                                                                                                     | Shows the amount deposited for each employee. The report lists the employee ID, Social Security number, gross pay, net pay, and check number.                                                                                                                                                                                                                                                                                                                                                        |
 | Direct Deposit Statement of                                                                                                                                                 | Generated when Payroll checks are posted. Instead of printing voided checks for employees who have all their earnings deposited using direct deposit, users can print checks for only those employees who are paid with a “real” Payroll check. Employees paid entirely through direct deposit transactions can be given earnings statements that can be printed on regular printer paper. The direct deposit earnings statements include the same information as the Payroll checks and check stubs. |
