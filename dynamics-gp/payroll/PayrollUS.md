@@ -4299,11 +4299,7 @@ After you’ve checked the entries on the edit list, you can process the
 computer check run. For more information, refer to *Building Payroll checks*
 .
 
-*Depending on how your Payroll system has been set up, posting journals
-might be printed automatically when you post computer checks. Posting
-journals provide a record of the changes you’ve made in transaction entry.
-For more information about posting options, refer to Help \>\> Contents \>\>
-select Setting Up the System.*
+*Depending on how your Payroll system has been set up, posting journals might be printed automatically when you post computer checks. Posting journals provide a record of the changes you’ve made in transaction entry. For more information about posting options, refer to Help \>\> Contents \>\> Setting Up the System.*
 
 #### Entering manual check transactions
 
@@ -4318,92 +4314,63 @@ window that are posted collectively as a single, complete transaction. You can c
 
 **To enter manual check transactions:**
 
-1. Open the Payroll Manual Check–Adjustment Entry window. (HR & Payroll \>\>
-    Transactions \>\> Payroll \>\> Manual Checks)
+1. Open the Payroll Manual Check–Adjustment Entry window. (HR & Payroll \>\>Transactions \>\> Payroll \>\> Manual Checks)
 
-![A screenshot of a cell phone Description automatically generated](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
 
 
 2. Select a check type.
 
 3. Enter or select a batch ID. For more information, refer to *Creating a batch* .
 
-4. Enter or select the checkbook ID from which this check was issued. Then, either accept the default number or enter a new check number and the date
-   you issued the check.  
-   If the transaction doesn’t have a batch ID assigned to it, you can enter a Posted Date. If there is a batch ID assigned, the date comes from the Payroll Batch Entry    window. 
+4. Enter or select the checkbook ID from which this check was issued. Then, either accept the default number or enter a new check number and the date you issued the check.  
+   If the transaction doesn’t have a batch ID assigned to it, you can enter a Posted Date. If there is a batch ID assigned, the date comes from the Payroll Batch Entry window. 
    
-*You can only select a checkbook ID and check number if you marked Manual Check as your check type.*
+    *You can only select a checkbook ID and check number if you marked Manual Check as your check type.*
 
-1. Enter or select the ID of the employee the check was written for.
+5. Enter or select the ID of the employee the check was written for.
 
-2. Choose Transactions to open the Payroll Manual Check Transaction Entry window, where you can enter transactions for the manual check.
+6. Choose Transactions to open the Payroll Manual Check Transaction Entry window, where you can enter transactions for the manual check.
 
-*If the manual check entry is being used to reverse a previous check, enter negative amounts. All your entries will be posted as negative amounts,
-offsetting the amounts of the earlier check.*
+    *If the manual check entry is being used to reverse a previous check, enter negative amounts. All your entries will be posted as negative amounts, offsetting the amounts of the earlier check.*
 
-1. Select the transaction type that applies to this transaction.
+7. Select the transaction type that applies to this transaction.
 
-2. Enter or select the appropriate transaction code and enter or select the
-    appropriate shift code, if applicable.
+8. Enter or select the appropriate transaction code and enter or select the appropriate shift code, if applicable.
 
-3. Enter the Taxable Wage amount, if applicable.
+9. Enter the Taxable Wage amount, if applicable.
 
-4. Enter start and end dates for the transaction and the amount or hours/units
-    to reverse.
+10. Enter start and end dates for the transaction and the amount or hours/units to reverse.
 
-5. Enter the number of days and weeks worked during the pay period if your
-    company tracks those worked by each employee.
+11. Enter the number of days and weeks worked during the pay period if your company tracks those worked by each employee.
 
-6. If needed, edit the department, position, state tax, local tax, workers’
-    compensation codes, the unemployment state, and shift information; these
-    were previously entered in the Employee Maintenance and Employee Tax
-    information windows and appear as default entries. If you’re entering a pay
-    code transaction, you can select other codes.
+12. If needed, edit the department, position, state tax, local tax, workers’ compensation codes, the unemployment state, and shift information; these were previously entered in the Employee Maintenance and Employee Tax information windows and appear as default entries. If you’re entering a pay code transaction, you can select other codes.
 
-7. Choose Save to save the transaction and return to the Payroll Manual
-    CheckAdjustment Entry window.
+13. Choose Save to save the transaction and return to the Payroll Manual CheckAdjustment Entry window.
 
-8. Choose Distributions to open the Manual Check Distribution Entry window.
+14. Choose Distributions to open the Manual Check Distribution Entry window.
 
-This window lets you view distributions on manual check transactions, view
-the Analytical Accounting transactions that are assigned to the check
-distributions, and make any final changes before posting. You can edit the
-account number only. Choosing Default updates the list with the most current
-distributions.
+    This window lets you view distributions on manual check transactions, view the Analytical Accounting transactions that are assigned to the check distributions, and make any final changes before posting. You can edit the account number only. Choosing Default updates the list with the most current distributions.
 
-1. Choose OK to save the information and return to the Payroll Manual
-    CheckAdjustment Entry window.
+15. Choose OK to save the information and return to the Payroll Manual CheckAdjustment Entry window.
 
-2. Choose File \>\> Print in the Payroll Manual Check–Adjustment Entry window
+16. Choose File \>\> Print in the Payroll Manual Check–Adjustment Entry window
     to print a Manual Check Edit List to verify your entries. If you’ve
     identified errors in transactions on the edit list, refer to *Correcting
     manual check transactions* for more information.
 
-3. Choose Post to post the check. Depending on the way your Payroll system has
-    been set up, posting journals might be printed when you post batches. When
-    you post transactions individually, the Check Register will be printed when
-    the Payroll Manual Check-Adjustment Entry window is closed.
+17. Choose Post to post the check. Depending on the way your Payroll system has been set up, posting journals might be printed when you post batches. When
+    you post transactions individually, the Check Register will be printed when the Payroll Manual Check-Adjustment Entry window is closed.
 
-To post manual checks individually, the Batch ID field must be blank. Manual
-checks must be posted at this point using transaction-level posting;
-transactions entered individually can’t be saved and posted later. All
-transactions posted individually during a single data entry session will
-have the same audit trail code.
+To post manual checks individually, the Batch ID field must be blank. Manual checks must be posted at this point using transaction-level posting; transactions entered individually can’t be saved and posted later. All transactions posted individually during a single data entry session will have the same audit trail code.
 
 #### Correcting manual check transactions
 
-Use the Payroll Manual Check–Adjustment Entry window to enter adjustments
-for manual checks. If you’ve identified an error on a check that’s been
-posted already, you can void the check using the Void Payroll Checks window.
+Use the Payroll Manual Check–Adjustment Entry window to enter adjustments for manual checks. If you’ve identified an error on a check that’s been posted already, you can void the check using the Void Payroll Checks window.
 
-If you’re not keeping check and transaction history or if you’re voiding a
-check from a previous year, you’ll need to reverse the check using the
-Payroll Manual Check– Adjustment Entry and Payroll Manual Check Transaction
-Entry windows. To reverse a check, enter the check information using
-negative amounts. After you’ve entered these amounts you can issue a correct
-check using either computer or manual check processes.
+If you’re not keeping check and transaction history or if you’re voiding a check from a previous year, you’ll need to reverse the check using the Payroll Manual Check– Adjustment Entry and Payroll Manual Check Transaction Entry windows. To reverse a check, enter the check information using negative amounts. After you’ve entered these amounts you can issue a correct check using either computer or manual check processes.
 
-**To correct manual check transactions:**
+##### To correct manual check transactions
 
 1. Open the Payroll Manual Check-Adjustment Entry window. (HR & Payroll \>\>
     Transactions \>\> Payroll \>\> Manual Checks)
@@ -4421,44 +4388,47 @@ check using either computer or manual check processes.
 
 6. Choose Save.
 
-**Manual Checks What You Should Know:**
+##### Manual Checks What You Should Know
 
 Before you enter/post a Manual Check you’ll want to ensure you chose the appropriate ‘Check Type’ in the Payroll Manual Check Adjustment Entry Window.
 
 Here’s what you need to know about each Check Type:
 
-**Manual Check – Will update Payroll, Bank Rec, and General Ledger. Use this if you are:**
+- **Manual Check** – Will update Payroll, Bank Rec, and General Ledger. Use this if you are:
 
-•	Recording a manually written paycheck
-•	Making a negative adjustment 
-o	Note: Negative Manual Checks cannot be saved to a batch
-•	Most Commonly Used
-•	Do not enter positive and negative amounts at the same time:
-o	Post only positive amounts
-o	Or post only negative amounts
+    - Recording a manually written paycheck
+    - Making a negative adjustment 
+    
+        Note: Negative Manual Checks cannot be saved to a batch
+    - Most Commonly Used
+    - Do not enter positive and negative amounts at the same time:
+        - Post only positive amounts
+        - Or post only negative amounts
 
-**Adjustment – Will update Payroll and General Ledger. User this if you are:**
+**Adjustment** – Will update Payroll and General Ledger. User this if you are:
 
-•	Entering an adjustment. 
-•	Adjustments can be posted only if the gross and net wage amounts are zero. 
-o	Note: There will be no check number associated with an adjustment.
-•	If GL is not being updated as expected: 
-Ensure you're set up to 'Post To' GL and not 'Through' (Microsoft Dynamics GP >> Tools >> Setup >> Posting >> Posting >> Series = Payroll >> Origin = Manual Checks).
+    - Entering an adjustment. 
+    - Adjustments can be posted only if the gross and net wage amounts are zero. 
 
-**Beginning Balances – Will NOT update Bank Rec or General Ledger. Use this if you are:**
+        Note: There will be no check number associated with an adjustment.
+    - If GL is not being updated as expected: 
+        Ensure you're set up to 'Post To' GL and not 'Through' (Microsoft Dynamics GP >> Tools >> Setup >> Posting >> Posting >> Series = Payroll >> Origin = Manual Checks).
 
-•	Entering beginning balances.
-o	Note: There will be no check number associated with a beginning balance.
-•	Don’t want to update Bank Rec or GL
-•	Do not enter positive and negative amounts at the same time:
-o	Post only positive amounts
-o	Or post only negative amounts
+**Beginning Balances** – Will NOT update Bank Rec or General Ledger. Use this if you are:
+
+    - Entering beginning balances.
+
+        Note: There will be no check number associated with a beginning balance.
+    - Don’t want to update Bank Rec or GL
+    - Do not enter positive and negative amounts at the same time:
+        - Post only positive amounts
+        - Or post only negative amounts
 
 IMPORTANT TO NOTE: Manual Checks is that they are exactly that: manual. 
 
 Microsoft Dynamics GP does not automatically calculate anything for you when you process a Manual Check. As such, you need to know exactly what amounts need to be entered/adjusted.
 
-**Here are steps you can utilize to process a Manual Check:**
+##### Steps you can utilize to process a Manual Check
 
 Enter appropriate information in the Payroll Manual Check-Adjustment Entry Window:
 
@@ -4475,38 +4445,41 @@ Enter appropriate information in the Payroll Manual Check-Adjustment Entry Windo
 9.	Enter/Save all applicable transactions in the Payroll Manual Check Adjustment Entry window **(DETAILS ON HOW TO DO THAT BELOW)**
 10.	After all transactions have been entered/saved in the Payroll Manual Check Adjustment Entry window:
 
-o	IF transactions are NOT saved in a batch, click ‘Post’ in the Payroll Manual Check – Adjustment Entry Window.
-o	IF transactions ARE saved in a batch, click ‘Save’ in the Payroll Manual Check – Adjustment Entry Window, and ‘Post’ the batch from the Payroll Batch Entry Window (Transactions >> Payroll >> Batch Entry).
+    IF transactions are NOT saved in a batch, click ‘Post’ in the Payroll Manual Check – Adjustment Entry Window.
+    IF transactions ARE saved in a batch, click ‘Save’ in the Payroll Manual Check – Adjustment Entry Window, and ‘Post’ the batch from the Payroll Batch Entry Window (Transactions >> Payroll >> Batch Entry).
 
 The Payroll Manual Check Transaction Entry window is where you will enter all of the individual transactions/adjustments associated with a manual check.
 
 Detailed steps and a description of how each adjustment works and effects amounts in Payroll: 
 
-**To enter/adjust an amount for a specific Pay Code:**
+##### To enter/adjust an amount for a specific Pay Code
 
 1.	Next to ‘Transaction Type’ select ‘Pay Code’.
 
 2.	Next to ‘Code’ select the appropriate pay code.
-o	Note: as soon as you select the pay code the following fields will automatically be populated (Pulling in from Employee Pay Code Maintenance window):
-	State (this does NOT mean state tax will be calculated for you – it won’t).
-	SUTA State SUTA is not calculated during a pay run. 
-    If you want wages associated with this pay code to be subject to SUTA be sure this field is populated appropriately.
-	Workers’ Comp - Workers Comp is not calculated during a pay run. 
-    If you want wages associated with this pay code to be subject to Workers Comp be sure this field is populated appropriately.
-	Shift Code - Informational Only
-	Department
-	Position
+
+    Note: as soon as you select the pay code the following fields will automatically be populated (Pulling in from Employee Pay Code Maintenance window):
+        - State (this does NOT mean state tax will be calculated for you – it won’t).
+        - SUTA State SUTA is not calculated during a pay run. 
+            If you want wages associated with this pay code to be subject to SUTA be sure this field is populated appropriately.
+        - Workers’ Comp - Workers Comp is not calculated during a pay run. 
+            If you want wages associated with this pay code to be subject to Workers Comp be sure this field is populated appropriately.
+        - Shift Code - Informational Only
+        - Department
+        - Position
 
 3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
 
 4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the wages associated with this pay code:
-o	Positive Amount = Increase in gross and net wages
-o	Negative Amount = Decrease in gross and net wages
+
+    - Positive Amount = Increase in gross and net wages
+    - Negative Amount = Decrease in gross and net wages
 
 5.	You can enter data in the following fields. However, be aware that GP does NOT calculate wages based off what you enter in these 
-•	Hours/Units
-•	Days Worked
-•	Weeks Worked
+
+    - Hours/Units
+    - Days Worked
+    - Weeks Worked
 
 6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
 NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay code, you’ll need to do so manually with the appropriate tax in this window.
