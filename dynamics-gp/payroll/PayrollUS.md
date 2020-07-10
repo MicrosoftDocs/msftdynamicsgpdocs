@@ -3695,17 +3695,7 @@ information, refer to *Using zero benefit and deduction amounts* .
 
 ![A screenshot of a cell phone Description automatically generated](media/9d887bb738d8edd54598ee7f8a811071.jpg)
 
-A screenshot of a cell phone Description automatically generated
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
 
 1. Enter or select an employee ID.
 
@@ -4133,15 +4123,7 @@ hasn’t worked at your company long enough to be eligible for bonus pay.
 
 ![A screenshot of a social media post Description automatically generated](media/89e3c95cf313b2082733b0caacbd53d8.jpg)
 
-A screenshot of a social media post Description automatically generated
 
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
-
-A screenshot of a social media post Description automatically generated
 
 1. Create or select a batch ID. If you enter a new batch ID, a message appears
     asking if you want to add the batch. Choose Add to open the Payroll Batch
@@ -4237,15 +4219,7 @@ window.
 
 ![A screenshot of a cell phone Description automatically generated](media/63bbebba6b7563ee72a87709aa3241d4.jpg)
 
-A screenshot of a cell phone Description automatically generated
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
 
 1. Create or select a batch ID. For more information, refer to *Creating a
     batch* .
@@ -4261,15 +4235,7 @@ A screenshot of a cell phone Description automatically generated
 
 ![A screenshot of a cell phone Description automatically generated](media/275e6287baa73484e323a985e5136dc4.jpg)
 
-A screenshot of a cell phone Description automatically generated
 
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
-
-A screenshot of a cell phone Description automatically generated
 
 1. Choose OK to close the window and return to the Payroll Transaction Entry
     window.
@@ -4585,6 +4551,421 @@ NOTE: NO tax calculations will be done for you automatically. If you need to inc
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD2.jpg)
 
+**Pay Code transaction in Manual Check Transaction Entry Window**
+
+| Field           | Gross Wages   | Net Wages    | Taxable Wages (ALL)   |
+|-----------------|---------------|--------------|-----------------------|
+| Amount-positive | Increase      | Increase     | No  Effect            |
+| Amount- negative| Decrease      | Decrease     | No  Effect            |
+| Hours/Units-post| No  Effect    | No  Effect   | No  Effect            |
+| Hours/Units-nega| No  Effect    | No  Effect   | No  Effect            |
+| Days Wroked     | No  Effect    | No  Effect   | No  Effect            |
+| Shift           | No  Effect    | No  Effect   | No  Effect            |
+| Premium         | No  Effect    | No  Effect   | No  Effect            |
+| Weeks Worked    | No  Effect    | No  Effect   | No  Effect            |
+| State (tax)     | No  Effect    | No  Effect   | No  Effect            |
+| SUTA State      | Should be populated to calculaate SUTA on wage       |
+| Workers Comp    | Should be populated to calculaate Worke Comp on wage |
+
+
+**To enter/adjust an amount for a specific Deduction:**
+
+1.	Next to ‘Transaction Type’ select Deduction.
+2.	Next to ‘Code’ select the appropriate deduction.
+3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the Deduction Code:
+o	Positive Amount = Decrease in Net Wages
+o	Negative Amount = Increase in Net Wages
+5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this deduction, you’ll need to do so manually with the appropriate tax in this window
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD3.jpg)
+
+
+**Deduction transaction in Manual Check Transaction Entry Window**
+
+| Field           | Gross Wages   | Net Wages    | Taxable Wages (ALL)   |
+|-----------------|---------------|--------------|-----------------------|
+| Amount-positive | No Effect     | Decrease     | No  Effect            |
+| Amount- negative| No Effect     | Increase     | No  Effect            |
+
+
+**To enter/adjust an amount for a specific Benefit:**
+
+1.	Next to ‘Transaction Type’ select ‘Benefit’.
+2.	Next to ‘Code’ select the appropriate benefit.
+3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the Benefit Code:
+o	Positive Amount = No effect on wages
+o	Negative Amount = No effect on wages 
+5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this benefit, you’ll need to do so manually with the appropriate tax in this window.
+
+
+**Benefit transaction in Manual Check Transaction Entry Window**
+
+| Field           | Gross Wages   | Net Wages    | Taxable Wages (ALL)   |
+|-----------------|---------------|--------------|-----------------------|
+| Amount-positive | No Effect     | Decrease     | No  Effect            |
+| Amount- negative| No Effect     | Increase     | No  Effect            |
+
+
+**To enter/adjust an amount for Federal Tax:**
+
+1.	Next to ‘Transaction Type’ select ‘Federal Tax’.
+2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust Federal Tax:
+o	Positive Amount = Decrease in Net Wages
+o	Negative Amount = Increase in Net Wages
+4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust Federal Taxable Wages:
+o	Positive Amount = Increase in Federal Taxable Wages 
+o	Negative Amount = Decrease in Federal Taxable Wages
+5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tax and Federal Taxable Wages need to be adjusted. GP will not calculate Federal Tax for you automatically in this window.
+
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD4.jpg)
+
+
+**Federal Tax transaction in Manual Check Transaction Entry Window**
+
+| Field             | Gross Wages   | Net Wages    | Federal Taxable Wages |
+|-----------------  |---------------|--------------|-----------------------|
+| Amount-positive   | No  Effect    | Decrease     | No  Effect            |
+| Amount- negative  | No  Effect    | Increase     | No  Effect            |
+| Taxable Wage-post | No  Effect    | No  Effect   | Increase              |
+| Taxable Wage-nega | No  Effect    | No  Effect   | Decrease              |
+
+
+
+**To enter/adjust an amount for FICA Social Security Tax:**
+
+1.	Next to ‘Transaction Type’ select ‘FICA Soc Sec Tax’.
+2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust FICA Social Security Tax owed by the employee:
+o	Positive Amount = Decrease in Net Wages
+o	Negative Amount = Increase in Net Wages
+4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust FICA Social Security Taxable Wages:
+o	Positive Amount = Increase in FICA Social Security Taxable Wages 
+o	Negative Amount = Decrease in FICA Social Security Taxable Wages
+
+NOTE: If the employee has already met his/her maximum Social Security Taxable Wages, GP will not record additional Social Security Taxable Wages regardless of what is entered in the Taxable Wage field.
+
+5.	In the ‘EFIC Amount’ field: Enter the total amount by which you need to adjust FICA Social Security Taxes owed by the employer.
+o	Positive Amount = Increase in Employer owed FICA Social Security Tax
+o	Negative Amount = Decrease in Employer owed FICA Social Security Tax
+6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tax, the FICA Social Security Taxable Wages, and the Employer FICA Social Security Taxes need to be adjusted. GP will not calculate FICA Social Security Tax for you automatically in this window.
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD5.jpg)
+
+
+**FICA Social Security Tax transaction in Manual Check Transaction Entry Window**
+
+| Field             | Gross Wages   | Net Wages    | FICA Soc Sec Taxable Wages | Employer FICA Soc Sec Taxable Wages |
+|-----------------  |---------------|--------------|--------------------------- | ----------------------------------- |
+| Amount-positive   | No  Effect    | Decrease     | No  Effect                 | No Effect                           |
+| Amount- negative  | No  Effect    | Increase     | No  Effect                 | No Effect                           |
+| Taxable Wage-post | No  Effect    | No  Effect   | Increase                   | No Effect                           |
+| Taxable Wage-nega | No  Effect    | No  Effect   | Decrease                   | No Effect                           |
+| EFIC Amount-post  | No  Effect    | No  Effect   | No Effect                  | Increase                            |
+| EFIC Amount-nega  | No  Effect    | No  Effect   | No Effect                  | Decrease                            |
+
+
+*NOTE: Microsoft Dynamics GP will check to verify whether or not the employee has exceeded FICA Social Security maximums per the Payroll Tax Tables (Microsoft Dynamics GP >> Tools >> Setup >> System >> Payroll Tax). 
+If the employees max has been reached, you will receive a warning as follows (GP won’t prevent you from posting the transaction, but it WILL warn you):
+
+**The FICA Social Security tax for this employee has exceeded the maximum for the year**  
+
+When ‘Continue’ is clicked and the transaction is saved/posted the following will occur:
+o	If the employee is going to meet and go over maximum Soc Sec Taxable Wages: GP will record ‘as much’ of the taxable wage as possible ‘up to’ the maximum. This amount is stored in the FICASSWP field in the UPR30100 table.
+o	If the employee is already over the Social Security Maximum Taxable Wages: GP will not record any Social Security Taxable Wages regardless of what is entered in the Taxable Wage field.
+o	GP will still post the employee and employer tax amounts (not wages) regardless of whether the maximum Soc Sec wage has been met.
+
+
+**To enter/adjust an amount for FICA Medicare Tax:**
+
+1.	Next to ‘Transaction Type’ select ‘FICA Medicare Tax’.
+2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust FICA Medicare Tax owed by the employee:
+o	Positive Amount = Decrease in Net Wages
+o	Negative Amount = Increase in Net Wages
+4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust FICA Medicare Taxable Wages:
+o	Positive Amount = Increase in FICA Medicare Taxable Wages 
+o	Negative Amount = Decrease in FICA Medicare Taxable Wages
+5.	In the ‘EFIC Amount’ field: Enter the total amount by which you need to adjust FICA Medicare Taxes owed by the employer.
+o	Positive Amount = Increase in Employer owed FICA Medicare Tax
+o	Negative Amount = Decrease in Employer owed FICA Medicare Tax
+6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tax, the FICA Medicare Taxable Wages, and the Employer FICA Medicare Taxes need to be adjusted. GP will not calculate FICA Medicare Tax for you automatically in this window.
+
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD6.jpg)
+
+
+**FICA Medicare Tax transaction in Manual Check Transaction Entry Window**
+
+| Field             | Gross Wages   | Net Wages    | FICA Soc Sec Taxable Wages | Employer FICA Soc Sec Taxable Wages |
+|-----------------  |---------------|--------------|--------------------------- | ----------------------------------- |
+| Amount-positive   | No  Effect    | Decrease     | No  Effect                 | No Effect                           |
+| Amount- negative  | No  Effect    | Increase     | No  Effect                 | No Effect                           |
+| Taxable Wage-post | No  Effect    | No  Effect   | Increase                   | No Effect                           |
+| Taxable Wage-nega | No  Effect    | No  Effect   | Decrease                   | No Effect                           |
+| EFIC Amount-post  | No  Effect    | No  Effect   | No Effect                  | Increase                            |
+| EFIC Amount-nega  | No  Effect    | No  Effect   | No Effect                  | Decrease                            |
+
+
+**To enter/adjust an amount for State Tax:*
+
+
+1.	Next to ‘Transaction Type’ select ‘State Tax’.
+2.	Next to ‘Code’ select the appropriate state tax.
+3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust State Tax owed by the employee:
+o	Positive Amount = Decrease in Net Wages
+o	Negative Amount = Increase in Net Wages
+5.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust State Taxable Wages:
+o	Positive Amount = Increase in State Taxable Wages 
+o	Negative Amount = Decrease in State Taxable Wages
+6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the State Tax and State Taxable Wages need to be adjusted. GP will not calculate State Tax for you automatically in this window.
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD7.jpg)
+
+
+**State Tax transaction in Manual Check Transaction Entry Window**
+
+| Field             | Gross Wages   | Net Wages    | Federal Taxable Wages |
+|-----------------  |---------------|--------------|-----------------------|
+| Amount-positive   | No  Effect    | Decrease     | No  Effect            |
+| Amount- negative  | No  Effect    | Increase     | No  Effect            |
+| Taxable Wage-post | No  Effect    | No  Effect   | Increase              |
+| Taxable Wage-nega | No  Effect    | No  Effect   | Decrease              |
+
+
+**To enter/adjust an amount for Local Tax:*
+
+1.	Next to ‘Transaction Type’ select ‘Local Tax’.
+2.	Next to ‘Code’ select the appropriate local tax.
+3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust Local Tax owed by the employee:
+o	Positive Amount = Decrease in Net Wages
+o	Negative Amount = Increase in Net Wages
+5.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust Local Taxable Wages:
+o	Positive Amount = Increase in Local Taxable Wages 
+o	Negative Amount = Decrease in Local Taxable Wages
+6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the Local Tax and Local Taxable Wages need to be adjusted. GP will not calculate Local Tax for you automatically in this window.
+
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD8.jpg)
+
+**Local Tax transaction in Manual Check Transaction Entry Window**
+
+| Field             | Gross Wages   | Net Wages    | Federal Taxable Wages |
+|-----------------  |---------------|--------------|-----------------------|
+| Amount-positive   | No  Effect    | Decrease     | No  Effect            |
+| Amount- negative  | No  Effect    | Increase     | No  Effect            |
+| Taxable Wage-post | No  Effect    | No  Effect   | Increase              |
+| Taxable Wage-nega | No  Effect    | No  Effect   | Decrease              |
+
+
+
+**To enter/adjust an amount for a specific Pay Advance:*
+
+1.	Next to ‘Transaction Type’ select ‘Pay Advance’.
+2.	Next to ‘Code’ select the appropriate pay code.
+o	Note: Employees can receive a Pay Advance for Salary or Commission Pay Types only.
+3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the wages associated with this pay advance:
+o	Positive Amount = Increase in gross and net wages
+o	Negative Amount = Decrease in gross and net wages
+5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay advance, you’ll need to do so manually with the appropriate tax in this window.
+
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD9.jpg)
+
+
+**Pay Advance transaction in Manual Check Transaction Entry Window**
+
+| Field           | Gross Wages   | Net Wages    | Taxable Wages (ALL)   |
+|-----------------|---------------|--------------|-----------------------|
+| Amount-positive | Increase      | Increase     | No  Effect            |
+| Amount- negative| Decrease      | Decrease     | No  Effect            |
+| Shift           | No  Effect    | No  Effect   | No  Effect            |
+| Premium         | No  Effect    | No  Effect   | No  Effect            |
+
+
+
+**To enter/adjust an amount for a specific Withhold Advance:*
+
+1.	Next to ‘Transaction Type’ select ‘Withhold Advance’.
+2.	Next to ‘Code’ select the appropriate pay code.
+o	Note: It is not possible to withhold more from an employee than he/she has been advanced for a specific salary or commission pay code.
+3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the wages associated with this withhold advance:
+o	Positive Amount = Decrease in Net Wages
+o	Negative Amount = Increase in Net Wages
+5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this withhold advance, you’ll need to do so manually with the appropriate tax in this window.
+
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD10.jpg)
+
+
+**Withhold Advance transaction in Manual Check Transaction Entry Window**
+
+| Field           | Gross Wages   | Net Wages    | Taxable Wages (ALL)   |
+|-----------------|---------------|--------------|-----------------------|
+| Amount-positive | Increase      | Decrease     | No  Effect            |
+| Amount- negative| Decrease      | Increase     | No  Effect            |
+| Shift           | No  Effect    | No  Effect   | No  Effect            |
+| Premium         | No  Effect    | No  Effect   | No  Effect            |
+
+
+**To enter/adjust an amount for FICA Social Security Tips:*
+
+1.	Next to ‘Transaction Type’ select ‘FICA Soc Sec Tips’.
+2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust FICA Social Security Tips tax  owed by the employee:
+o	Positive Amount = Decrease in Net Wages
+o	Negative Amount = Increase in Net Wages
+4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust FICA Social Security Tips Taxable Wages:
+o	Positive Amount = Increase in FICA Social Security Tips Taxable Wages 
+o	Negative Amount = Decrease in FICA Social Security Tips Taxable Wages
+5.	In the ‘EFIC Amount’ field: Enter the total amount by which you need to adjust FICA Social Security Tips Taxes owed by the employer.
+o	Positive Amount = Increase in Employer owed FICA Social Security Tips Tax
+o	Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
+6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tips Tax, the FICA Social Security Tips Taxable Wages, and the Employer FICA Social Security Tips Taxes need to be adjusted. GP will not calculate FICA Social Security Tips Tax for you automatically in this window.
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD11.jpg)
+
+**FICA Social Security/Tips transaction in Manual Check Transaction Entry Window**
+
+| Field             | Gross Wages   | Net Wages    | FICA Soc Sec Tips Wages    | Employer FICA Soc Sec Tip Tax Liab  |
+|-----------------  |---------------|--------------|--------------------------- | ----------------------------------- |
+| Amount-positive   | No  Effect    | Decrease     | No  Effect                 | No Effect                           |
+| Amount- negative  | No  Effect    | Increase     | No  Effect                 | No Effect                           |
+| Taxable Wage-post | No  Effect    | No  Effect   | Increase                   | No Effect                           |
+| Taxable Wage-nega | No  Effect    | No  Effect   | Decrease                   | No Effect                           |
+| EFIC Amount-post  | No  Effect    | No  Effect   | No Effect                  | Increase                            |
+| EFIC Amount-nega  | No  Effect    | No  Effect   | No Effect                  | Decrease                            |
+
+
+
+**To enter/adjust an amount for FICA Medicare Tips:*
+
+1.	Next to ‘Transaction Type’ select ‘FICA Medicare Tips’.
+2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust FICA Medicare Tips Tax owed by the employee:
+o	Positive Amount = Decrease in Net Wages
+o	Negative Amount = Increase in Net Wages
+4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust FICA Medicare Tips Taxable Wages:
+o	Positive Amount = Increase in FICA Medicare Tips Taxable Wages 
+o	Negative Amount = Decrease in FICA Medicare Tips Taxable Wages
+5.	In the ‘EFIC Amount’ field: Enter the total amount by which you need to adjust FICA Medicare Tips Taxes owed by the employer.
+o	Positive Amount = Increase in Employer owed FICA Medicare Tips Tax
+o	Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
+6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tips Tax, the FICA Medicare Tips Taxable Wages, and the Employer FICA Medicare Tips Taxes need to be adjusted. GP will not calculate FICA Medicare Tips Tax for you automatically in this window.
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD12.jpg)
+
+**FICA Medicare Tips transaction in Manual Check Transaction Entry Window**
+
+| Field             | Gross Wages   | Net Wages    | FICA Soc Sec Tips Wages    | Employer FICA Medicare Tip Tax Liab |
+|-----------------  |---------------|--------------|--------------------------- | ----------------------------------- |
+| Amount-positive   | No  Effect    | Decrease     | No  Effect                 | No Effect                           |
+| Amount- negative  | No  Effect    | Increase     | No  Effect                 | No Effect                           |
+| Taxable Wage-post | No  Effect    | No  Effect   | Increase                   | No Effect                           |
+| Taxable Wage-nega | No  Effect    | No  Effect   | Decrease                   | No Effect                           |
+| EFIC Amount-post  | No  Effect    | No  Effect   | No Effect                  | Increase                            |
+| EFIC Amount-nega  | No  Effect    | No  Effect   | No Effect                  | Decrease                            |
+
+
+**To enter/adjust an amount for Federal Tax/Tips:*
+
+1.	Next to ‘Transaction Type’ select ‘Federal Tax/Tips’.
+2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust Federal Tax owed by the employee on Tips:
+o	Positive Amount = Decrease in Net Wages
+o	Negative Amount = Increase in Net Wages
+4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust Federal Taxable Tips Wages:
+o	Positive Amount = Increase in Federal Taxable Tips Wages 
+o	Negative Amount = Decrease in Federal Taxable Tips Wages
+5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tips Tax and Federal Taxable Tips Wages need to be adjusted. GP will not calculate Federal Tips Tax for you automatically in this window.
+
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD13.jpg)
+
+
+**Federal Tax/Tip transaction in Manual Check Transaction Entry Window**
+
+| Field             | Gross Wages   | Net Wages    | Federal Taxable Tip Wages |
+|-----------------  |---------------|--------------|-----------------------    |
+| Amount-positive   | No  Effect    | Decrease     | No  Effect                |
+| Amount- negative  | No  Effect    | Increase     | No  Effect                |
+| Taxable Wage-post | No  Effect    | No  Effect   | Increase                  |
+| Taxable Wage-nega | No  Effect    | No  Effect   | Decrease                  |
+
+
+**To enter/adjust an amount for Uncollected FICA Social Security Tax:*
+
+1.	Next to ‘Transaction Type’ select ‘Uncollected FICA Soc Sec Tax’.
+2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust Uncollected FICA Social Security tax  owed by the employee:
+o	Positive Amount = Increase Uncollected FICA Soc Sec Tax on Tips
+o	Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
+4.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Social Security Tax needs to be adjusted. GP will not calculate Uncollected FICA Social Security Tax for you automatically in this window.
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD14.jpg)
+
+
+**Uncollected FICA Social Security Tax transaction in Manual Check Transaction Entry Window**
+
+| Field             | Gross Wages   | Net Wages    | FICA Soc Sec Taxable Wage  | Uncollected  Soc Sec Tax on Tips    |
+|-----------------  |---------------|--------------|--------------------------- | ----------------------------------- |
+| Amount-positive   | No  Effect    | No Effect    | No  Effect                 | Increase                            |
+| Amount- negative  | No  Effect    | No Effect    | No  Effect                 | Decrease                            |
+
+
+**To enter/adjust an amount for Uncollected FICA Medicare Tax:*
+
+
+1.	Next to ‘Transaction Type’ select ‘Uncollected FICA Medicare Tax’.
+2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust Uncollected FICA Medicare tax  owed by the employee:
+o	Positive Amount = Increase Uncollected FICA Medicare Tax on Tips
+o	Negative Amount = Decrease Uncollected FICA Medicare Tax on Tips
+4.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+
+NOTE: NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Medicare Tax needs to be adjusted. GP will not calculate Uncollected FICA Medicare Tax for you automatically in this window.
+
+![A screenshot of a cell phone Description automatically generated](media/MCADD15.jpg)
+
+**Uncollected FICA Medicare Tax transaction in Manual Check Transaction Entry Window**
+
+| Field             | Gross Wages   | Net Wages    | FICA Soc Sec Taxable Wage  | Uncollected  Soc Sec Tax on Tips    |
+|-----------------  |---------------|--------------|--------------------------- | ----------------------------------- |
+| Amount-positive   | No  Effect    | No Effect    | No  Effect                 | Increase                            |
+| Amount- negative  | No  Effect    | No Effect    | No  Effect                 | Decrease                            |
 
 
 
