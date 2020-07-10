@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 07/9/2020
+ms.date: 07/10/2020
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -573,9 +573,7 @@ Use the Payroll Setup window to set up default entries that appear throughout Pa
 
 1. Open the Payroll Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Payroll)
 
-![](media/fdf616c9571329cd1dd3c019a76a4b3c.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![Screenshot](media/fdf616c9571329cd1dd3c019a76a4b3c.jpg)
 
 1. Enter overtime information and passwords for vacation and sick time
     available, if necessary. You will need to enter a password when you create a
@@ -864,23 +862,18 @@ letters.*
 
 **To set up department codes:**
 
-1. Open the Department Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
-    Department)
+1. Open the Department Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>    Department)
 
 2. Enter the code and description for a department.
 
-3. Choose Save to store the code. Continue entering codes for all your
-    departments.
+3. Choose Save to store the code. Continue entering codes for all your departments.
 
-4. Choose File \>\> Print to print a Department Codes List to verify your
-    information.
+4. Choose File \>\> Print to print a Department Codes List to verify your information.
 
 #### Setting up position codes
 
-Use the Position Setup window to set up a position code. A position is a
-defined role within a company. Positions can be used to track employee cards
-by providing a list of all positions and their descriptions for your
-company. The following are some examples of position codes you might use:
+Use the Position Setup window to set up a position code. A position is a defined role within a company. Positions can be used to track employee cards
+by providing a list of all positions and their descriptions for your company. The following are some examples of position codes you might use:
 
 - ACT - Accounting
 
@@ -906,11 +899,9 @@ If you’re using Human Resources, you can link training courses and specify whi
 
 **To set up position codes:**
 
-1. Open the Position Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
-    Position)
+1. Open the Position Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>    Position)
 
-2. Enter a code that identifies the position and a description. Choose the
-    notes icon button to add additional comments.
+2. Enter a code that identifies the position and a description. Choose the notes icon button to add additional comments.
 
 These fields are available if you’re using Human Resources. For more
 information, see your Human Resources documentation. **EEO Class** Select an
@@ -958,137 +949,110 @@ record to the position.
 
 **To set up supervisor codes:**
 
-1. Open the Supervisor Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
-    Supervisor)
+1. Open the Supervisor Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Supervisor)
 
 2. Enter the code and description of the supervisor.
 
-3. Enter or select the employee ID of the employee that holds this supervisor
-    position.
+3. Enter or select the employee ID of the employee that holds this supervisor position.
 
-- 4.Choose Save to store the code. Continue entering codes for all
-    supervisors.
+- 4.Choose Save to store the code. Continue entering codes for all supervisors.
 
-1. Choose File \>\> Print to print a Supervisor Codes List to verify your
-    information.
+1. Choose File \>\> Print to print a Supervisor Codes List to verify your information.
 
 #### Payroll pay codes and types
 
-With Payroll you can set up different company pay codes to be the basis of
-employee pay codes and to apply changes to employee pay codes. You also can
+With Payroll you can set up different company pay codes to be the basis of employee pay codes and to apply changes to employee pay codes. You also can
 assign company pay codes to employee classes.
 
-When you define a pay code, you can assign pay types to it. The pay types
-you assign to a pay code will depend on how you’re using a specific pay
-code. For example, if you define a pay code SLRY for salaried employees, you
-probably wouldn’t include the overtime or double time pay types in that pay
+When you define a pay code, you can assign pay types to it. The pay types you assign to a pay code will depend on how you’re using a specific pay
+code. For example, if you define a pay code SLRY for salaried employees, you probably wouldn’t include the overtime or double time pay types in that pay
 code.
 
 Available pay types include:
 
-**Hourly** Hourly pay type will be used for employees who are paid by the
-hour.
+- **Hourly**
 
-**Salary** Salary pay type will be used for employees who are paid a
-specific pay amount each pay period. With this pay type, the pay per period
-is automatically calculated. If you select this pay type, you also can enter
-the amount to be paid for an advance pay run. An advance pay run is a way to
-pay salaried employees an advance on their regular salary pay. The advanced
-amount will be subtracted from the employees’ net pay in the next salary pay
-run.
+    Hourly pay type will be used for employees who are paid by the hour.
 
-**Piecework** Piecework pay type will be used for employees who are paid a
-certain amount per unit made or completed.
+- **Salary**
 
-**Commission** Commission pay type will be used for employees who earn their
-wages according to what and how much they sell. You can enter the maximum
-earnings per pay period, and you also can enter the amount to be paid for an
-advance pay run. An advance pay run is a way to pay commissioned employees
-an advance on their commission pay. The advanced amount will be subtracted
-from the employees’ net pay in the next commission pay run.
+    Salary pay type will be used for employees who are paid a specific pay amount each pay period. With this pay type, the pay per period is automatically calculated. If you select this pay type, you also can enter the amount to be paid for an advance pay run. An advance pay run is a way to pay salaried employees an advance on their regular salary pay. The advanced amount will be subtracted from the employees’ net pay in the next salary pay run.
 
-**Business Expense** Business Expense pay type will be used to track the
-records of employees who are reimbursed for mileage and travel expenses. You
-can include the pay in the gross wages amount that will be reported on the
-W-2 statement.
+- **Piecework**
 
-If you mark Report as Wages, the pay will be included in gross wages on the
-W-2 statement and will be treated as a nonaccountable plan. If you don’t
-mark this option, the pay won’t be included in gross wages on the W-2
-statement and will be treated as an accountable plan.
+    Piecework pay type will be used for employees who are paid a certain amount per unit made or completed.
 
-Nonaccountable plans are reported as wages on the W-2 statement and are
-subject to taxes. Accountable plans aren’t subject to taxes and aren’t
-reported on the W-2 statement.
+- **Commission**
 
-If you pay a per diem or mileage allowance and expenses exceed the Internal
-Revenue Service guidelines, you must tax the excess amount and report it as
-wages on the W-2 statement; the non-taxable portion must be reported in box
-13. For more information, refer to the W-2 instructions supplied by the IRS.
+    Commission pay type will be used for employees who earn their wages according to what and how much they sell. You can enter the maximum earnings per pay period, and you also can enter the amount to be paid for an advance pay run. An advance pay run is a way to pay commissioned employees an advance on their commission pay. The advanced amount will be subtracted from the employees’ net pay in the next commission pay run.
 
-**Overtime** Overtime pay type will be used for employees who receive pay
-for working more than the assigned number of hours and are paid at a
-different pay rate for the additional hours.
+- **Business Expense**
 
-**Double Time** Double Time pay type will be used for employees who qualify
-for Double Time pay, normally paid at twice the rate of the Based on Pay
-Code rate.
+    Business Expense pay type will be used to track the records of employees who are reimbursed for mileage and travel expenses. You can include the pay in the gross wages amount that will be reported on the W-2 statement.
 
-**Vacation** Vacation pay type will be used for employees who receive pay
-while on vacation.
+    If you mark Report as Wages, the pay will be included in gross wages on the W-2 statement and will be treated as a nonaccountable plan. If you don’t mark this option, the pay won’t be included in gross wages on the W-2 statement and will be treated as an accountable plan.
 
-**Sick** Sick pay type will be used for employees who receive pay while
-they’re sick.
+    Nonaccountable plans are reported as wages on the W-2 statement and are subject to taxes. Accountable plans aren’t subject to taxes and aren’t reported on the W-2 statement.
 
-**Holiday** Holiday pay type will be used for employees who receive paid
-time off during holidays.
+    If you pay a per diem or mileage allowance and expenses exceed the Internal Revenue Service guidelines, you must tax the excess amount and report it as wages on the W-2 statement; the non-taxable portion must be reported in box 13. For more information, refer to the W-2 instructions supplied by the IRS.
 
-**Pension** Pension pay type will be used for employees who are retired and
-receive pension pay from the company.
+- **Overtime**
 
-**Other** Other pay types can be used to classify additional types of pay.
-Some examples of other pay types are jury duty, bonus pay, long-term
-disability, and short-term disability.
+    Overtime pay type will be used for employees who receive pay for working more than the assigned number of hours and are paid at a different pay rate for the additional hours.
 
-**Earned Income Credit** Select Earned Income Credit if the pay code will be
-used for employees who qualify for earned income credit and have filed a W-5
-form.
+- **Double Time**
 
-**Charged Tips** Select Charged Tips if the pay code will be used for
-employees who receive tips from customers through a charge card or check.
-This amount will be included in the amount paid to employees.
+    Double Time pay type will be used for employees who qualify for Double Time pay, normally paid at twice the rate of the Based on Pay Code rate.
 
-**Reported Tips** Select Reported Tips if the pay code will be used for
-employees who receive tips (cash) from customers that they report to the
-employer. This amount will not be included in the amount paid to the
-employee, but will be used to determine taxes on the reported tips.
+- **Vacation**
 
-**Minimum Wage Balance** Select Minimum Wage Balance if the pay type will be
-used for employees who must earn a specified minimum hourly amount. This is
-available only for Charged Tip and Reported Tip pay types.
+    Vacation pay type will be used for employees who receive pay while on vacation.
+
+- **Sick**
+
+    Sick pay type will be used for employees who receive pay while they’re sick.
+
+- **Holiday**
+
+    Holiday pay type will be used for employees who receive paid time off during holidays.
+
+- **Pension**
+
+    Pension pay type will be used for employees who are retired and receive pension pay from the company.
+
+- **Other**
+
+    Other pay types can be used to classify additional types of pay. Some examples of other pay types are jury duty, bonus pay, long-term disability, and short-term disability.
+
+- **Earned Income Credit**
+
+    Select Earned Income Credit if the pay code will be used for employees who qualify for earned income credit and have filed a W-5 form.
+
+- **Charged Tips**
+
+    Select Charged Tips if the pay code will be used for employees who receive tips from customers through a charge card or check. This amount will be included in the amount paid to employees.
+
+- **Reported Tips**
+
+    Select Reported Tips if the pay code will be used for employees who receive tips (cash) from customers that they report to the employer. This amount will not be included in the amount paid to the employee, but will be used to determine taxes on the reported tips.
+
+- **Minimum Wage Balance**
+
+    Select Minimum Wage Balance if the pay type will be used for employees who must earn a specified minimum hourly amount. This is available only for Charged Tip and Reported Tip pay types.
 
 #### Setting up pay codes
 
-Use the Pay Code Setup window to enter and maintain company pay codes. These
-codes are used as default entries when setting up employee pay codes, can be
-used to apply changes to employee pay codes, and also can be included in
-employee classes. You can enter your own identifying pay codes and a
-description for each type of pay. You also can assign pay types to pay
-codes. For example, you might assign an hourly pay type to the HOUR pay
-code. You can set up as many pay codes for each pay type as you need for
-your business.
+Use the Pay Code Setup window to enter and maintain company pay codes. These codes are used as default entries when setting up employee pay codes, can be
+used to apply changes to employee pay codes, and also can be included in employee classes. You can enter your own identifying pay codes and a
+description for each type of pay. You also can assign pay types to pay codes. For example, you might assign an hourly pay type to the HOUR pay
+code. You can set up as many pay codes for each pay type as you need for your business.
 
-Changes made to a pay code can be reflected in any pay codes that are based
-on it, causing the dependent codes, including overtime and double time
-codes, to recalculate their pay rates. Overtime and double time pay rates
-are also affected by changes made to the pay factor.
+Changes made to a pay code can be reflected in any pay codes that are based on it, causing the dependent codes, including overtime and double time
+codes, to recalculate their pay rates. Overtime and double time pay rates are also affected by changes made to the pay factor.
 
-If you’re using Human Resources, changes made to pay rate values in the Pay
-Code Setup window are not applied to employee pay records that are assigned
-to a pay step. If you want to make pay rate adjustments and you have pay
-rates assigned to pay steps, you must first use the Employee/Pay Step Table
-Assignment window to remove the pay step assignments. Refer to the Human
-Resources documentation for more information about pay steps.
+If you’re using Human Resources, changes made to pay rate values in the Pay Code Setup window are not applied to employee pay records that are assigned
+to a pay step. If you want to make pay rate adjustments and you have pay rates assigned to pay steps, you must first use the Employee/Pay Step Table
+Assignment window to remove the pay step assignments. Refer to the Human Resources documentation for more information about pay steps.
 
 The following are some examples of pay codes you might use:
 
@@ -3924,7 +3888,7 @@ later time.
 1. Open the Payroll Batch Entry window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Batches)
 
-![](media/e0726813288419d658db5276e0a231c7.jpg)
+![Screenshot](media/e0726813288419d658db5276e0a231c7.jpg)
 
 A screenshot of a computer screen Description automatically generated
 
@@ -4011,9 +3975,7 @@ backups.
 1. Open the Payroll Batch Entry window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Batches)
 
-![](media/e0726813288419d658db5276e0a231c7.jpg)
-
-A screenshot of a computer screen Description automatically generated
+![Screenshot](media/e0726813288419d658db5276e0a231c7.jpg)
 
 1. Enter or select the batch ID and origin for the batch to post. *Only batches
     with a manual check origin can be posted in this window.*
