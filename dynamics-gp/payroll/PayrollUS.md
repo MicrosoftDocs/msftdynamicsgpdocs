@@ -4006,34 +4006,23 @@ marked in the Posting Setup window.
 
 ### Chapter 11: Payroll transactions
 
-A paycheck is a group of transactions involving a single employee. You might
-pay an employee a month’s salary, which is one transaction. You might also
-withhold income taxes and the employee’s portion of insurance payments, and
-contributions to a 401(k) plan. You also can record vacation accrued and
-your company’s portion of 401(k) contributions for the employee. Each of
-these items is a separate transaction and you can have all the transactions
+A paycheck is a group of transactions involving a single employee. You might pay an employee a month’s salary, which is one transaction. You might also
+withhold income taxes and the employee’s portion of insurance payments, and contributions to a 401(k) plan. You also can record vacation accrued and
+your company’s portion of 401(k) contributions for the employee. Each of these items is a separate transaction and you can have all the transactions
 that apply to an employee put into a single paycheck.
 
-You can automatically create many of the Payroll transactions for your
-employees during the process of building checks. If you have a group of
-employees who receive a regular salary, you won’t have to enter individual
-transactions for the salary pay; the build checks process creates them for
-you, along with transactions for the applicable taxes, benefits, and
-deductions.
+You can automatically create many of the Payroll transactions for your employees during the process of building checks. If you have a group of
+employees who receive a regular salary, you won’t have to enter individual transactions for the salary pay; the build checks process creates them for
+you, along with transactions for the applicable taxes, benefits, and deductions.
 
-Payroll check transactions include computer check transactions and manual
-check transactions. You must enter Payroll transactions in batches. To print
-edit lists for transactions, the transactions must be part of a batch. For
-more information, refer to *Chapter 10, “Batches and posting.”*
+Payroll check transactions include computer check transactions and manual check transactions. You must enter Payroll transactions in batches. To print
+edit lists for transactions, the transactions must be part of a batch. For more information, refer to *Chapter 10, “Batches and posting.”*
 
-If you’re using Human Resources and accruing benefit time using Human
-Resources, refer to the Human Resources documentation for information about
+If you’re using Human Resources and accruing benefit time using Human Resources, refer to the Human Resources documentation for information about
 creating Payroll transactions.
 
-If you’re using Human Resources and you import attendance transactions
-directly into U.S. Payroll, Human Resources tables may not be updated. In
-such cases you must reconcile attendance transactions using the Reconcile
-Human Resources window before you calculate the payroll checks.
+If you’re using Human Resources and you import attendance transactions directly into U.S. Payroll, Human Resources tables may not be updated. In
+such cases you must reconcile attendance transactions using the Reconcile Human Resources window before you calculate the payroll checks.
 
 This information is contained in the following sections:
 
@@ -4069,19 +4058,15 @@ This information is contained in the following sections:
 
 #### Entering employee mass transactions
 
-Use the Payroll Mass Transaction Entry window to add similar pay
-transactions, and all transaction-required benefit and deduction
-transactions quickly when the same transactions apply to a range of
-employees.
+Use the Payroll Mass Transaction Entry window to add similar pay transactions, and all transaction-required benefit and deduction
+transactions quickly when the same transactions apply to a range of employees.
 
-You can exclude individual employee records from a mass transaction entry.
-For example, you might be giving all your employees a bonus, but one of them
+You can exclude individual employee records from a mass transaction entry. For example, you might be giving all your employees a bonus, but one of them
 hasn’t worked at your company long enough to be eligible for bonus pay.
 
 **To enter employee mass transactions:**
 
-1. Open the Payroll Mass Transaction Entry window. (HR & Payroll \>\>
-    Transactions \>\> Payroll \>\> Mass Entry)
+1. Open the Payroll Mass Transaction Entry window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Mass Entry)
 
 ![A screenshot of a social media post Description automatically generated](media/89e3c95cf313b2082733b0caacbd53d8.jpg)
 
@@ -4394,7 +4379,7 @@ Before you enter/post a Manual Check you’ll want to ensure you chose the appro
 
 Here’s what you need to know about each Check Type:
 
-- **Manual Check** – Will update Payroll, Bank Rec, and General Ledger. Use this if you are:
+**Manual Check** – Will update Payroll, Bank Rec, and General Ledger. Use this if you are:
 
     - Recording a manually written paycheck
     - Making a negative adjustment 
@@ -4407,22 +4392,22 @@ Here’s what you need to know about each Check Type:
 
 **Adjustment** – Will update Payroll and General Ledger. User this if you are:
 
-    - Entering an adjustment. 
-    - Adjustments can be posted only if the gross and net wage amounts are zero. 
-
+    -Entering an adjustment. 
+    -Adjustments can be posted only if the gross and net wage amounts are zero. 
+    
         Note: There will be no check number associated with an adjustment.
-    - If GL is not being updated as expected: 
-        Ensure you're set up to 'Post To' GL and not 'Through' (Microsoft Dynamics GP >> Tools >> Setup >> Posting >> Posting >> Series = Payroll >> Origin = Manual Checks).
+    -If GL is not being updated as expected: Ensure you're set up to 'Post To' GL and not 'Through' (Microsoft Dynamics GP >> Tools >> Setup >> Posting     >> Posting >> Series = Payroll >> Origin = Manual Checks).
 
 **Beginning Balances** – Will NOT update Bank Rec or General Ledger. Use this if you are:
 
-    - Entering beginning balances.
+    -Entering beginning balances.
 
-        Note: There will be no check number associated with a beginning balance.
-    - Don’t want to update Bank Rec or GL
-    - Do not enter positive and negative amounts at the same time:
-        - Post only positive amounts
-        - Or post only negative amounts
+    Note: There will be no check number associated with a beginning balance.
+    -Don’t want to update Bank Rec or GL
+    -Do not enter positive and negative amounts at the same time:
+        Post only positive amounts Or post only negative amounts
+
+
 
 > [!IMPORTANT]
 > Manual Checks is that they are exactly that: manual. Microsoft Dynamics GP does not automatically calculate anything for you when you process a Manual Check. As such, you need to know exactly what amounts need to be entered/adjusted.
