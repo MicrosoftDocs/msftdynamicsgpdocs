@@ -5,7 +5,7 @@ author: edupont04
 
 ms.prod: dynamics-gp
 ms.topic: get-started-article
-ms.date: 12/17/2019
+ms.date: 07/13/2020
 ms.author: edupont
 
 ---
@@ -13,7 +13,8 @@ ms.author: edupont
 
 Dynamics GP is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business. Dynamics GP has a long history, and you can find information about functionality on the installation media for your version of Dynamics GP and on the [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp). We have started moving some of the existing content to the Docs.microsoft.com site, and we will be adding more content here at the new location in the future.  
 
-The PDF files that you may have seen for earlier versions of Dynamics GP contains symbols to indicate notes, tips, and warnings, for example. Here on the Docs.microsoft.com site, such visual alerts are provided in other ways. So if you're looking for a lightbulb, then this is now a note, and warning triangles are replaced by warnings.
+> [!TIP]
+> The PDF files that you may have seen for earlier versions of Dynamics GP contains symbols to indicate notes, tips, and warnings, for example. Here on the Docs.microsoft.com site, such visual alerts are provided in other ways. So if you're looking for a lightbulb, then this is now a note, and warning triangles are replaced by warnings.
 
 ## Additional resources
 
@@ -36,7 +37,7 @@ Available at [https://mbs.microsoft.com/customersource/](https://mbs.microsoft.c
 
 ### eSupport
 
-Available at [https://mbs.microsoft.com/support](https://mbs.microsoft.com/support/newstart.aspx), you can find different ways to get support, including requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.  
+Available at [https://mbs.microsoft.com/support](https://mbs.microsoft.com/support/newstart.aspx), you can find different ways to get support, including requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That's a big benefit during the critical year-end season.  
 
 ### Community
 
@@ -50,12 +51,17 @@ We have specialized support teams focused on providing service and support to Dy
 
 We welcome comments regarding the usefulness of the Dynamics GP. If you have specific suggestions or encounter problems, let us know on the [Product Idea for Microsoft Dynamics](https://experience.dynamics.com/ideas/list/?forum=771cc5ac-c117-e811-8105-3863bb2e0320) site. By offering any suggestions to Microsoft, you give Microsoft full permission to use them freely.
 
-An email address was available in previous versions to provide an option for contacting us about the documentation. Both <adocs@microsoft.com> and <bizdoc@microsoft.com> have been decommissioned.  
+An email address was available in previous versions to provide an option for contacting us about the documentation. Both `adocs@microsoft.com` and `bizdoc@microsoft.com` have been decommissioned.  
 
-### Contributions to the Dynamics GP content
+## Contributions to the Dynamics GP content
 
 We welcome contributions to the Dynamics GP content. You can find the source files in GitHub at [https://github.com/MicrosoftDocs/msftdynamicsgpdocs/](https://github.com/MicrosoftDocs/msftdynamicsgpdocs), and the ReadMe.md file in the root of the repo contains tips and tricks for working with the content. If you want to add a new article, then the repo contains a template.md file that can help you get started.  
 
-## See Also
+> [!TIP]
+> Microsoft is gradually working our way through converting the legacy manuals. We believe in the strength of the Dynamics GP community, and we welcome additional contributions. the future is online for the Dynamics GP content because it's easier to maintain, so if you can't wait for us to convert a manual, then help us. For more information, see the [Microsoft Docs contributor guide overview](/contribute/).  
+
+## See also
 
 [Microsoft Dynamics GP Developer Documentation](/previous-versions/dynamicsgp/developer/hh686187(v=gp.20))  
+[Microsoft Dynamics NAV Documentation](/dynamics-nav-app/)  
+[Microsoft Dynamics 365 Business Central Documentation](/dynamics365/business-central/)  

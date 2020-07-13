@@ -3,12 +3,93 @@
 <!--- what's new-->
 ## What's new
 ### [Introduction](whats-new/introduction.md)
-### [What’s new in Dynamics GP in October 2019](whats-new/version-october-2019.md)
+### [What's new in Dynamics GP in October 2019](whats-new/version-october-2019.md)
 ### [What's new in Dynamics GP 2018 R2](whats-new/version-2018-r2.md)
 ### [What's new in Dynamics GP 2018](whats-new/version-2018.md)
 ### [What's new in Dynamics GP 2016 R2](whats-new/version-2016-r2.md)
 ### [What's new in Dynamics GP 2016](whats-new/version-2016.md)
 ### [What's new in Dynamics GP 2015](whats-new/version-2015.md)
+
+<!--- financials -->
+## Financials
+### [General Ledger](financials/general-ledger.md)
+### [Bank Reconciliation](financials/BankReconciliation.md)
+### [Multicurrency Management](financials/MulticurrencyManagement.md)
+### [Cash Flow Mananagement](financials/CashFlowManagement.md)
+### [Inter Company Processing](financials/IntercompanyProcessing.md)
+### [Payment Document Management](financials/PaymentDocumentManagement.md)
+### [Fixed Asset Management](financials/fixed-assets.md)
+### [VAT in the British Version of Microsoft Dynamics GP](financials/uk-tax-mtd.md)
+### Analytical Accounting
+#### [Part 1: Setup](financials/AnalyticalAccounting.md)
+#### [Part 2: Transactions](financials/analytical-accounting-part2.md)
+#### [Part 3: Routines, Inquiries and Reports](financials/analytical-accounting-part3.md)
+#### [Glossary](financials/analytical-accounting-glossary.md)  
+### Receivables
+#### [Receivables Management Overview](financials/receivables-management.md)
+##### [Part 1: Setup and cards](financials/receivables-management.md#part-1-setup-and-cards)
+##### [Part 2: Transaction entry](financials/receivables-management-part2-transaction-entry.md)
+##### [Part 3: Transaction activity](financials/receivables-management-part3-transaction-activity.md)
+##### [Part 4: Inquiries and reports](financials/receivables-management-part4-inquiries-reports.md)
+##### [Part 5: Utilities and routines](financials/receivables-management-part5-utilities-routines.md)
+### Payables
+#### [Payables Management Overview](financials/PayablesManagement.md)
+### [Glossary](financials/glossary.md)
+
+<!--- distribution -->
+## Distribution
+### [Field Service Returns Management](distribution/ReturnsManagement.md)
+### [Concur Expense](distribution/ConcurExpense.md)
+### [Sales Order Processing](distribution/sales-order-processing.md)
+#### [Sales Order Processing Part 1: Setup](distribution/sales-order-processing.md#part-1-setup)
+#### [Sales Order Processing Part 2: Transaction entry](distribution/sales-order-processing-part2-transaction-entry.md)
+#### [Sales Order Processing Part 3: Allocation, Fulfillment, and Purchasing](distribution/sales-order-processing-part3-allocation-fulfillment-purchasing.md)
+#### [Sales Order Processing Part 4: Transaction activity](distribution/sales-order-processing-part4-transaction-activity.md)
+#### [Sales Order Processing Part 5: Inquiries and reports](distribution/sales-order-processing-part5-inquiries-reports.md)
+#### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utilities.md)
+### [Purchase Order Processing](distribution/purchase-order-processing.md)
+#### [Part 1: Setup and cards](distribution/purchase-order-processing.md#part-1-setup-and-cards)
+#### [Part 2: Purchase orders](distribution/purchase-order-processing-part2-orders.md)
+#### [Part 3: Receipts](distribution/purchase-order-processing-part3-receipts.md)
+#### [Part 4: Purchase order returns](distribution/purchase-order-processing-part4-returns.md)
+#### [Part 5: Inquiries and reports](distribution/purchase-order-processing-part5-inquiries-reports.md)
+#### [Part 6: Utilities](distribution/purchase-order-processing-part6-utilities.md)
+### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
+### Invoicing
+#### [Invoicing Overview & Part 1: Setup](distribution/Invoicing.md)
+#### [Invoicing - Part 2: Transaction entry](distribution/invoicing-part-2.md)
+#### [Invoicing - Part 3: Transaction activity](distribution/invoicing-part-3.md)
+#### [Invoicing - Part 4: Inquiries, reports, and utilities](distribution/invoicing-part-4.md)
+#### [Glossary of Terms in the Invoicing Area](distribution/invoicing-glossary.md)
+### Inventory
+#### [Inventory Control in Dynamics GP - Parts 1-3](distribution/Inventory.md)
+#### [Inventory Control in Dynamics GP - Parts 4-6](distribution/Inventory2.md)
+### [Glossary of Terms in the Distribution Area](distribution/glossary.md)
+
+<!-- Projects-->
+## Project Accounting
+### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
+### [Project Accounting Cost Management](distribution/ProjAcctCostManagement.md)
+
+<!--- payroll -->
+## Payroll
+### [Advanced Payroll](payroll/AdvancedPayroll.md)
+### [Advanced Human Resource](payroll/AdvancedHumanResource.md)
+### [Canadian Year-End](payroll/CAN18YETax.md)
+### [Payroll Connect](payroll/PayrollConnect.md)
+### [U.S. Payroll](payroll/PayrollUS.md)
+### [Payroll Extensions](payroll/PayrollExtensions.md)
+### [U.S. Year-End](payroll/us-year-end.md)
+### [W-2 Source](payroll/W-2-statement.md)
+### [Payroll Tax](payroll/US19JanTaxR1.md)
+### [PTO Manager](payroll/PTOManager.md)
+
+<!-- Manufacturing-->
+## Discreet Manufacturing
+### [Manufacturing Setup - Part 1: Manufacturing setup](distribution/manufacturing-setup-part-1.md)
+### [Manufacturing Setup - Part 2: User setup](distribution/manufacturing-setup-part-2.md)
+### [Accounts Used for Manufacturing in Dynamics GP](distribution/manufacturing-accounts-used.md)
+### [Glossary of Terms in Manufacturing](distribution/glossary-manufacturing.md)
 
 ## Installation and administration
 ### [Support for Microsoft Dynamics GP](terms/lifecycle.md)
@@ -85,72 +166,3 @@
 #### [Module upgrades from Dynamics GP 2013](upgrade/module-upgrades-from-microsoft-dynamics-gp-2013.md)
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
-
-<!--- financials -->
-## Financials
-### Analytical Accounting
-#### [Part 1: Setup](financials/AnalyticalAccounting.md)
-#### [Part 2: Transactions](financials/analytical-accounting-part2.md)
-#### [Part 3: Routines, Inquiries and Reports](financials/analytical-accounting-part3.md)
-#### [Glossary](financials/analytical-accounting-glossary.md)  
-### [Bank Reconciliation](financials/BankReconciliation.md)
-### [Multicurrency Management](financials/MulticurrencyManagement.md)
-### [Cash Flow Mananagement](financials/CashFlowManagement.md)
-### [Inter Company Processing](financials/IntercompanyProcessing.md)
-### [Payment Document Management](financials/PaymentDocumentManagement.md)
-### [Receivables Management](financials/receivables-management.md)
-#### [Part 1: Setup and cards](financials/receivables-management.md#part-1-setup-and-cards)
-#### [Part 2: Transaction entry](financials/receivables-management-part2-transaction-entry.md)
-#### [Part 3: Transaction activity](financials/receivables-management-part3-transaction-activity.md)
-#### [Part 4: Inquiries and reports](financials/receivables-management-part4-inquiries-reports.md)
-#### [Part 5: Utilities and routines](financials/receivables-management-part5-utilities-routines.md)
-### [Payables Management](financials/PayablesManagement.md)
-### [General Ledger](financials/general-ledger.md)
-### [Fixed Asset Management](financials/fixed-assets.md)
-### [VAT in the British Version of Microsoft Dynamics GP](financials/uk-tax-mtd.md)
-### [Glossary](financials/glossary.md)
-
-<!--- distribution -->
-## Distribution
-### [Field Service Returns Management](distribution/ReturnsManagement.md)
-### Manufacturing
-#### [Manufacturing Setup - Part 1: Manufacturing setup](distribution/manufacturing-setup-part-1.md)
-#### [Manufacturing Setup - Part 2: User setup](distribution/manufacturing-setup-part-2.md)
-#### [Accounts Used for Manufacturing in Dynamics GP](distribution/manufacturing-accounts-used.md)
-#### [Glossary of Terms in Manufacturing](distribution/glossary-manufacturing.md)
-### [Purchase Order Enhancements](distribution/purchase-order-enhancements.md)
-### [Concur Expense](distribution/ConcurExpense.md)
-### [Purchase Order Processing](distribution/purchase-order-processing.md)
-#### [Part 1: Setup and cards](distribution/purchase-order-processing.md#part-1-setup-and-cards)
-#### [Part 2: Purchase orders](distribution/purchase-order-processing-part2-orders.md)
-#### [Part 3: Receipts](distribution/purchase-order-processing-part3-receipts.md)
-#### [Part 4: Purchase order returns](distribution/purchase-order-processing-part4-returns.md)
-#### [Part 5: Inquiries and reports](distribution/purchase-order-processing-part5-inquiries-reports.md)
-#### [Part 6: Utilities](distribution/purchase-order-processing-part6-utilities.md)
-### [Sales Order Processing](distribution/sales-order-processing.md)
-#### [Sales Order Processing Part 1: Setup](distribution/sales-order-processing.md#part-1-setup)
-#### [Sales Order Processing Part 2: Transaction entry](distribution/sales-order-processing-part2-transaction-entry.md)
-#### [Sales Order Processing Part 3: Allocation, Fulfillment, and Purchasing](distribution/sales-order-processing-part3-allocation-fulfillment-purchasing.md)
-#### [Sales Order Processing Part 4: Transaction activity](distribution/sales-order-processing-part4-transaction-activity.md)
-#### [Sales Order Processing Part 5: Inquiries and reports](distribution/sales-order-processing-part5-inquiries-reports.md)
-#### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utilities.md)
-### [Invoicing](distribution/Invoicing.md)
-### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
-### [Project Accounting Cost Management](distribution/ProjAcctCostManagement.md)
-### [Inventory Control in Dynamics GP - Parts 1-3](distribution/Inventory.md)
-### [Inventory Control in Dynamics GP - Parts 4-6](distribution/Inventory2.md)
-### [Glossary of Terms in the Distribution Area](distribution/glossary.md)
-### [Glossary of Terms in the Manufacturing Area](distribution/glossary-manufacturing.md)
-
-<!--- payroll -->
-## Payroll
-### [Advanced Payroll](payroll/AdvancedPayroll.md)
-### [Advanced Human Resource](payroll/AdvancedHumanResource.md)
-### [Canadian Year-End](payroll/CAN18YETax.md)
-### [Payroll Connect](payroll/PayrollConnect.md)
-### [U.S. Payroll](payroll/PayrollUS.md)
-### [Payroll Extensions](payroll/PayrollExtensions.md)
-### [U.S. Year-End](payroll/us-year-end.md)
-### [W-2 Source](payroll/W-2-statement.md)
-### [Payroll Tax](payroll/US19JanTaxR1.md)
-### [PTO Manager](payroll/PTOManager.md)
