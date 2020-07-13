@@ -50,7 +50,7 @@ The following information is discussed:
 
 - [Chapter 13 History removal](#chapter-13-history-removal) explains how to remove Invoicing and Intrastat statistics information when it's no longer useful.
 
-### Chapter 11: Inquiries
+## Chapter 11: Inquiries
 
 Use the Invoice inquiry windows to view detailed or summarized Invoicing
 information. You can view invoice, item, and salesperson activity, as well
@@ -75,7 +75,7 @@ Inquiry information is divided into the following sections:
 
 - *Viewing invoices*
 
-#### Viewing invoicing documents
+### Viewing invoicing documents
 
 Use the Invoicing Document Inquiry window to view unposted or historical
 documents. You can use the information to answer customers' questions about
@@ -103,7 +103,7 @@ Invoice)
 
 6. To open a window where you can view more detailed information about a particular invoice or customer, highlight a document, then click the Document Number or Customer ID link.
 
-#### Viewing invoicing items
+### Viewing invoicing items
 
 Use the Invoicing Item Inquiry window to view all the documents on which a
 particular item is found. This can be helpful to target sales promotions to
@@ -131,7 +131,7 @@ document.
 
 7. To open a window where you can view more detailed information about a particular invoice, customer, or item, select an item, then click the Document Number, Customer ID, or Item Number link.
 
-#### Viewing salesperson commissions
+### Viewing salesperson commissions
 
 Use the Salesperson Inquiry window to view information about commissions and
 sales for salespeople. This can be helpful for evaluating the performance of
@@ -172,7 +172,7 @@ The following table lists the link fields in the Salesperson Inquiry window.
 | Sales Territory ID | Sales Territory Maintenance |
 | Document Number    | Invoice Inquiry             |
 
-#### Viewing invoices
+### Viewing invoices
 
 Use the Invoice Inquiry window to view each invoice as it was originally
 entered, reprint individual documents, and open additional inquiry windows to
@@ -210,7 +210,7 @@ gain more detailed information about individual fields on the invoice.
 
 5. To reprint an invoice or return, choose Print. To change the invoice format, print tax details on an invoice, or print an alignment form, choose the Options menu and select the appropriate item when the Invoice Inquiry window is open.
 
-### Chapter 12: Reports
+## Chapter 12: Reports
 
 You can use Invoicing reports to analyze receivables activity and identify
 errors in transaction entry. Use the information in this chapter to guide
@@ -226,7 +226,7 @@ Reports information is divided into the following sections:
 
 - *Specifying an Invoicing report option*
 
-#### Invoicing report summary
+### Invoicing report summary
 
 Some Invoicing reports are printed automatically when you complete certain
 procedures; for example, posting journals can be printed automatically when
@@ -241,7 +241,7 @@ reports that fall into those categories.
 
 ![A screenshot INVRPTS.jpg](media/9e22f7a16c489ea2fec8b5b57f133815.jpg)
 
-#### Specifying an Invoicing report option
+### Specifying an Invoicing report option
 
 Report options include specifications of sorting options and range
 restrictions for a particular report. In order to print some of the
@@ -284,7 +284,7 @@ printing options for the reports that have been included with Invoicing.
 
 8. To print the report option from the report options window, choose Print before saving it. If you don't want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
-### Chapter 13: History removal
+## Chapter 13: History removal
 
 History records provide useful information for auditing purposes. If you're
 keeping one of the types of history available in Invoicing, those records
@@ -307,7 +307,7 @@ sections:
 
 - *Removing Intrastat statistics history*
 
-#### Removing invoicing history
+### Removing invoicing history
 
 In Invoicing, you can maintain three types of history—transaction, account
 distribution, and journal history. Use the Remove Invoicing History window
@@ -363,7 +363,7 @@ Administration), or search for the keyword "backups" in the online help.*
 
 9. Choose Process to remove the history and print the selected reports.
 
-#### Printing history reports without removing history
+### Printing history reports without removing history
 
 Use the Remove Invoicing History window to print history reports at any
 time, so you can review the information stored in history before you remove
@@ -385,7 +385,7 @@ it.
 
 6. Choose Process to print the report or reports selected. Depending on which type of history you selected, a Journal Removal Report, Transaction Removal Report, or Account Distribution Removal Report will be printed.
 
-#### Removing Intrastat statistics history
+### Removing Intrastat statistics history
 
 Use the Remove Intrastat History window to remove Intrastat statistics
 history records that are no longer necessary. Only the Intrastat statistics

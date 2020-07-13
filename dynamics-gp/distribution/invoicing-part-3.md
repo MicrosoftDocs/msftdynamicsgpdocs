@@ -52,7 +52,7 @@ The following information is discussed:
 - *Chapter 10, "Posting,"* describes how to transfer transactions to permanent
     records and how to transfer the original transaction information to history.
 
-### Chapter 8: Invoicing document maintenance
+## Chapter 8: Invoicing document maintenance
 
 Before you transfer or post an invoice, you can modify the item, commission,
 and total information. For example, you can change quantities, add items,
@@ -76,7 +76,7 @@ sections:
 
 - *Entering Intrastat statistics*
 
-#### Adding comments to invoices and returns
+### Adding comments to invoices and returns
 
 You can add comments to invoices, returns, or to individual line items on
 these documents. You also can define standard comments on a company-wide
@@ -122,7 +122,7 @@ button)
 
 3. Choose OK.
 
-#### Changing a serial or lot number
+### Changing a serial or lot number
 
 You can verify or change the serial or lot number assigned to an item before
 the sale is posted.
@@ -150,7 +150,7 @@ the sale is posted.
 
 7. Save your changes and close the Invoice Item Detail Entry window.
 
-#### Modifying commission information
+### Modifying commission information
 
 Use the Invoice Commission Entry window to modify commission amounts,
 percentages and commission sales amounts on invoices and returns. The
@@ -181,7 +181,7 @@ refer to the Receivables Management documentation.
 
 4. Choose OK to save changes and close the window.
 
-#### Splitting commissions
+### Splitting commissions
 
 You can split the commission on invoices and returns among multiple
 salespeople. Use the Invoice Commission Entry window to split commissions.
@@ -205,7 +205,7 @@ to a salesperson.
 
 5. Choose OK to save the changes and close the window.
 
-#### Correcting an invoicing document
+### Correcting an invoicing document
 
 You can correct mistakes in Invoicing transactions before posting. As you
 enter transactions, you can print a variety of reports that allow you to
@@ -232,7 +232,7 @@ correctly.
 
 4. Choose Save.
 
-#### Deleting an invoicing document
+### Deleting an invoicing document
 
 When you delete an invoice, all the items on that invoice will be
 unallocated in inventory, if Inventory Control is part of your Microsoft
@@ -259,7 +259,7 @@ You can't delete an invoice or return if:
 
 3. Choose Delete.
 
-#### Entering Intrastat statistics
+### Entering Intrastat statistics
 
 Intrastat is the system for collecting statistics on the trade of goods
 between European Union (EU) countries. Intrastat data is required for all
@@ -319,7 +319,7 @@ marked in the Company Setup Options window.*
 
 9. Choose OK to save the record.
 
-### Chapter 9: Printing documents
+## Chapter 9: Printing documents
 
 After you enter a quote, order, invoice, back order, or return, you can
 print the document and send it to a customer. You also can print packing
@@ -337,7 +337,7 @@ Information about printing documents is divided into the following sections:
 
 - *Printing invoice labels*
 
-#### Printing options
+### Printing options
 
 When you print an invoice or return, you can choose the Options menu in the
 Invoice Entry window or the Invoice Batch Entry window to select several
@@ -361,7 +361,7 @@ item.
 documents, to ensure that the information is printed in the correct fields
 on the document.
 
-#### Printing an individual document
+### Printing an individual document
 
 You can print a single invoice or return when you enter the document in the
 Invoice Entry window. Before you print documents, you can print an alignment
@@ -396,7 +396,7 @@ Maintenance window. The Print on Documents option must be marked.*
 
 1. Choose Print.
 
-#### Printing all documents in a batch
+### Printing all documents in a batch
 
 You can print all of the documents in a batch using four predefined document
 formats to print documents—blank paper, short form, long form, or other
@@ -432,7 +432,7 @@ marked in the Tax Detail Maintenance window.*
 
 2. Choose Print.
 
-#### Printing a posted document
+### Printing a posted document
 
 You can reprint individual invoicing documents from historical records.
 Documents are moved to history when they are posted or voided. You can't
@@ -462,7 +462,7 @@ used to print posted documents.*
 
 5. Choose Print.
 
-#### Printing invoice labels
+### Printing invoice labels
 
 Use the Mailing Labels window to print invoice labels for a range of
 unposted transactions in Invoicing. You can print labels for invoices and
@@ -490,7 +490,7 @@ customer, or date.
 
 6. Choose **Print**. You can save the report option and print it later from either the Mailing Labels window or the Mailing Label Report Options window.
 
-### Chapter 10: Posting
+## Chapter 10: Posting
 
 Posting is the process of transferring transactions to permanent records. If
 you need to change or delete a transaction, you must do so before posting
@@ -524,7 +524,7 @@ Posting information is divided into the following sections:
 
 - *Posting transactions in all modules*
 
-#### Posting an individual transaction
+### Posting an individual transaction
 
 Transaction-level posting allows you to enter and post transactions without
 ever having to create a batch. Sales and inventory information will be up to
@@ -561,7 +561,7 @@ entry session will have the same audit trail code.
 > [!NOTE]
 > When you post transactions individually, your user ID will appear on reports as a batch ID.
 
-#### Posting transactions for the Sales series
+### Posting transactions for the Sales series
 
 Use the Sales Series Posting window to post transactions for the Sales
 series.
@@ -599,7 +599,7 @@ requirements, see *Creating a batch*.
 
 5. Print the posting journals. Depending on the settings you made in the Posting Setup window, posting journals and distribution breakdown registers may be printed when the series posting process is complete.
 
-#### Posting transactions in all modules
+### Posting transactions in all modules
 
 You can post batches from any Microsoft Dynamics GP modules you have in
 addition to Invoicing using master posting. When you use the master posting

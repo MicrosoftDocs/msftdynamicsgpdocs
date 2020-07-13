@@ -51,7 +51,7 @@ The following information is discussed:
 
 - *Chapter 2, "Module setup,"* provides instructions for setting up the Invoicing module.
 
-### Chapter 1: Setup overview
+## Chapter 1: Setup overview
 
 Use this information to learn about and set up Invoicing. The setup procedures are organized in an order that will ensure Invoicing is set up properly.
 
@@ -61,16 +61,16 @@ Setup information is divided into the following sections:
 
 - *Invoicing setup*
 
-#### Before you set up Invoicing
+### Before you set up Invoicing
 
 Before you begin setting up Invoicing, be sure you've completed the System Manager and General Ledger setup procedures. If you're using Receivables Management and Inventory, you also should set up these modules before you set up Invoicing. For more information about setting up your system, refer to the System Setup documentation (Help \>\> Contents \>\> select Setting up the System). For more information about setting up General Ledger, Receivables Management, and Inventory, refer to the documentation for those
 modules.
 
-#### Invoicing setup
+### Invoicing setup
 
 When you set up Invoicing, you can open each setup window and enter information, or you can use the Setup Checklist window (Microsoft Dynamics GP \>\> Tools \>\> Setup \>\> Setup Checklist) to guide you through the setup process. See your System Setup Guide (Help \>\> Contents \>\> select Setting up the System) for more information about the Setup Checklist window.
 
-### Chapter 2: Module setup
+## Chapter 2: Module setup
 
 During the Invoicing setup process, you'll set up your Invoicing preferences such as default entries, tax calculation options, starting document numbers, and whether to maintain document history. You can open the Invoicing setup windows using menu options, or you can
 follow the setup routine, which will guide you through the setup process. For more information about the setup routine, see *Invoicing setup* .
@@ -83,7 +83,7 @@ Setup information is divided into the following sections:
 
 - *Setting up taxes and options*
 
-#### Setting Invoicing general options and defaults
+### Setting Invoicing general options and defaults
 
 Use the Invoicing Setup window to set general default entries that will appear throughout the Invoicing module. You can also indicate what kind of history records you want to maintain, which posting accounts to use, and what document numbering options you want to use.
 
@@ -162,7 +162,7 @@ Use the Invoicing Setup window to set general default entries that will appear t
 
 11. Choose OK to save changes and close the Invoicing Setup window.
 
-#### Advanced tax options for Invoicing
+### Advanced tax options for Invoicing
 
 If Advanced is marked in the Invoicing Setup Options window, the tax details in the tax schedules are compared when tax is calculated on an invoice. Tax is calculated only for the details that match the customer, item, site, freight, and miscellaneous charges, depending on the shipping method selected on the invoice.
 
@@ -189,7 +189,7 @@ The following diagrams show how tax details are compared to determine the amount
 > [!NOTE]
 > Each time the shipping method, site ID, or shipping address for the customer is changed, the tax schedule may be changed and taxes may be recalculated.
 
-#### Setting up taxes and options
+### Setting up taxes and options
 
 Use the Invoicing Setup Options window to specify a method for calculating taxes and to set up other options. You can further restrict each option by assigning a password to it. If the option is marked but no password is entered, anyone who has access to the related windows can use the option.
 
@@ -248,7 +248,8 @@ When automatically assigning lot numbers by receipt date or expiration date, exp
 
 If you don't mark this option, printed documents won't be available for editing, and you'll be able to view the document only by using the inquiry feature. In addition, you'll be able to print invoices and returns for transactions only if they've been entered in a batch.
 
-*We recommend that you use a password to limit the number of employees who are able to edit printed documents. If you require a password, however, you must enter transactions in a batch to print invoices, returns, and packing slips.*
+> [!NOTE]
+> We recommend that you use a password to limit the number of employees who are able to edit printed documents. If you require a password, however, you must enter transactions in a batch to print invoices, returns, and packing slips.
 
 **Void Documents** Mark to void saved invoices and returns in the Invoice Entry window. We recommend that you require a password to limit the number of employees who are able to void documents. If you don't allow documents to be voided, the Delete button in the Invoice Entry window will be unavailable.
 

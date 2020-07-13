@@ -60,6 +60,7 @@
 #### [Invoicing - Part 2: Transaction entry](distribution/invoicing-part-2.md)
 #### [Invoicing - Part 3: Transaction activity](distribution/invoicing-part-3.md)
 #### [Invoicing - Part 4: Inquiries, reports, and utilities](distribution/invoicing-part-4.md)
+#### [Glossary of Terms in the Invoicing Area](distribution/invoicing-glossary.md)
 ### Inventory
 #### [Inventory Control in Dynamics GP - Parts 1-3](distribution/Inventory.md)
 #### [Inventory Control in Dynamics GP - Parts 4-6](distribution/Inventory2.md)

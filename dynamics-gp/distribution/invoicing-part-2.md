@@ -49,7 +49,7 @@ The following information is discussed:
 
 - *Chapter 7, "Allocating item quantities,"* describes how items are allocated and fulfilled on invoices
 
-### Chapter 3: Item information
+## Chapter 3: Item information
 
 Use this information to learn more about handling items in Invoicing. Item information is divided into the following sections:
 
@@ -63,7 +63,7 @@ Use this information to learn more about handling items in Invoicing. Item infor
 
 - *Serial- or lot-numbered items*
 
-#### Item pricing
+### Item pricing
 
 If you're entering an inventoried item, the unit price*—*the price at which each item is being sold—will be calculated using the information entered for the item in the Item Price List Maintenance window. For more information, refer to the Inventory Control documentation.
 
@@ -81,7 +81,7 @@ When you enter an item, the price from the item price list is determined by the 
 
 Invoicing Setup Options window. If you're entering a unit price that is below cost, Enter Price Below Cost also must be marked in the Invoicing Setup Options window. Depending on how these options were set up, you might need to enter a password.
 
-#### Unit cost of items
+### Unit cost of items
 
 If Display Unit Cost is marked in the Invoicing Setup window, the unit cost will be displayed in the Invoice Entry window for each sales inventory type item. The unit cost will not be displayed for items that are assigned the type of service, flat fee, or miscellaneous charge.
 
@@ -98,7 +98,7 @@ The cost displayed might not be the cost used to adjust inventory and cost of go
 If you enter a return, the default entry for the unit cost of a line item is the current cost for the item from the Item Maintenance window. If Override Item Unit Cost for Returns is marked in the Invoicing Setup Options window, you can change the unit cost of the item, which is the cost used to return the item to inventory. If Override Item Unit Cost for Returns isn't marked, the current cost
 of the line item will be displayed and can't be changed.
 
-#### Non-inventoried items
+### Non-inventoried items
 
 You can enter non-inventoried items—items that don't exist in your inventory records—if Enter Non-Inventoried Items is marked in the Invoicing Setup Options window.
 
@@ -115,13 +115,13 @@ The following default accounts are used for non-inventoried items:
 | Accounts Receivable  | The customer card. If no account is assigned to the customer, the system uses the account from the Sales series in the Posting Accounts Setup window.      |
 | Markdown             | The Inventory series in the Posting Accounts Setup window. |
 
-#### Adding items
+### Adding items
 
 If Enter Non-Inventoried Items is marked in the Invoicing Setup Options window and you enter an item number that doesn't exist in inventory, you can select Add Item from the Options menu in the Invoice Entry window and either add the item to your inventory or choose a different item. Selecting Add Item can help prevent data entry errors that inadvertently create non-inventoried items.
 
 If you select Add Item and enter an item that isn't in your inventory, you'll have the option to add the item. Add Item will remain marked as long as the Invoice Entry window is open. If you close the window and open it again, you must select Add Item again.
 
-#### Serial- or lot-numbered items
+### Serial- or lot-numbered items
 
 If an item is tracked by serial or lot numbers, you must identify the specific item or items being sold, and you must assign the serial or lot number before you ship the item.
 
@@ -136,7 +136,7 @@ If you add a serial- or lot-numbered item to a return document, the Invoice Seri
 
 *Don't override shortages on serial- and lot-numbered items. Your inventory will be overstated when the quantity is replenished.*
 
-### Chapter 4: Batches
+## Chapter4: Batches
 
 Batches are groups of transactions with something in common and identified by a unique name or a number. Batches can be identified as a group of transactions entered by a specific employee, or a group of transactions entered on a particular date.
 
@@ -150,7 +150,7 @@ Batch information is divided into the following sections:
 - *Modifying a batch*
 - *Deleting a batch*
 
-#### Creating a batch
+### Creating a batch
 
 Use the Invoice Batch Entry window to create a batch. Batches can be used to group and save transactions so you can review the transactions and make corrections before they're posted.
 
@@ -186,7 +186,7 @@ Use the Invoice Batch Entry window to create a batch. Batches can be used to gro
 
 10. When you have entered all your transactions in a batch, you can choose File \>\> Print or the printer icon button to print an edit list.
 
-#### Modifying a batch
+### Modifying a batch
 
 Use the Invoice Batch Entry window to make changes to an unposted batch. If you've approved a batch for posting, you must unmark Approved before making changes.
 
@@ -198,7 +198,7 @@ Use the Invoice Batch Entry window to make changes to an unposted batch. If you'
 
 Make your changes and choose
 
-#### Deleting a batch
+### Deleting a batch
 
 Use the Invoice Batch Entry window to delete an unposted batch of documents, including all transactions in the batch. If you've approved a batch for posting, you must unmark Approved before making changes.
 
@@ -210,7 +210,7 @@ Use the Invoice Batch Entry window to delete an unposted batch of documents, inc
 
 3. Choose Delete.
 
-### Chapter 5: Invoices and returns
+## Chapter5: Invoices and returns
 
 Entering and posting transactions are two of the most common routines in accounting. Transactions can be saved, edited if necessary, and then posted so that they become part of your permanent accounting record.
 
@@ -224,7 +224,7 @@ Invoice and return information is divided into the following sections:
 
 - *Adding a markdown for an item*
 
-#### Entering an invoice
+### Entering an invoice
 
 The Invoice Entry window contains customer, line item, and totals information, much like an actual invoice. You can enter and post invoices and returns using the Invoice Entry window. You also can print invoices, returns, and packing slips using this window.
 
@@ -281,7 +281,7 @@ You can enter additional information about the customer, a line item, the markdo
 
 12. Save or post the invoice.
 
-#### Entering a return
+### Entering a return
 
 Return documents record the return of items you previously sold. Returns decrease the customer's balance on account and may increase inventory quantities. Because returns record an increase to inventory and a refund of sales, they should be posted. Use the Invoice Entry window to enter and post returns.
 
@@ -325,7 +325,7 @@ The item will be returned automatically at the current cost. If the Override Ite
 
 6. Choose Print to print the invoice. For more information about printing documents, see *Chapter 9, "Printing documents."* 16. Save or post the return.
 
-#### Adding a markdown for an item
+### Adding a markdown for an item
 
 Use the Invoice Markdown Entry window to enter a markdown for an individual line item. A markdown is a price reduction and can be a set amount or a percentage of the item price.
 
@@ -341,7 +341,7 @@ Use the Invoice Markdown Entry window to enter a markdown for an individual line
 
 4. Choose Save.
 
-### Chapter 6: Invoicing taxes
+## Chapter6: Invoicing taxes
 
 Sales tax can be calculated, modified, and distributed in Invoicing. Use the Invoice Tax Summary Entry window to view tax distributions and to change distribution accounts, if your system is set up to allow editing summary-level taxes. To change tax details or the amounts distributed to tax details for individual line items, use the Invoice Line Item Tax Detail Entry window.
 
@@ -353,7 +353,7 @@ Tax information is divided into the following sections:
 
 - *Goods value and net purchase amount*
 
-#### Invoicing tax calculations
+### Invoicing tax calculations
 
 Taxes are automatically calculated for a document. When you set up Invoicing, you can choose to use a single tax schedule for all items on all documents or you can mark the advanced option to determine the tax for inventory items, noninventoried items, freight, and miscellaneous charges individually.
 
@@ -381,7 +381,7 @@ To view the tax calculation for an item, choose the Item Number expansion button
 to open the Invoice Item Detail Entry window. Then choose the Calculated Tax
 expansion button to open the Invoice Line Item Tax Detail Entry window.
 
-#### Calculating and distributing tax amounts
+### Calculating and distributing tax amounts
 
 Sales tax can be calculated, modified, and distributed in Invoicing. Use the
 Invoice Tax Summary window to view tax distributions and to change distribution
@@ -424,7 +424,7 @@ Choose the Tax expansion button in the Invoice Entry window to open the Invoice 
 
 If Allow Summary-Level Tax Edits is marked in the Company Setup window, you can use this window to change the Tax Detail ID, Total Sale, Tax Amount, and Account fields. If Allow Summary-Level Tax Edits is not marked, use the you can use Invoice Line Item Tax Detail Entry window to change the distribution amounts.
 
-#### Goods value and net purchase amount
+### Goods value and net purchase amount
 
 The goods value is the same as the net purchase amount, which includes
 freight and miscellaneous charges if taxable and any trade discount. If
@@ -441,7 +441,7 @@ a goods value of £250 for the tax-exempt detail and the remaining taxable
 goods value of £250 for the input tax detail. The tax amount automatically
 will be adjusted to reflect the reduction in the taxable goods value.
 
-### Chapter 7: Allocating item quantities
+## Chapter7: Allocating item quantities
 
 When you allocate an item, it is reserved in inventory and the quantity
 available for the item and for the site is reduced in inventory. You must
@@ -455,7 +455,7 @@ Allocation information is divided into the following sections:
 
 - *Substituting an item*
 
-#### Quantity shortage options
+### Quantity shortage options
 
 A quantity shortage occurs when the quantity on an invoice is greater than
 the quantity available in inventory. If there is a quantity shortage, the
@@ -480,7 +480,7 @@ Distribution Entry window, where you can sell items from another site or
 substitute items. For more information, see *Selling an item from another
 site* or *Substituting an item*.
 
-#### Selling an item from another site
+### Selling an item from another site
 
 Use the Invoice Quantity Distribution Entry window to check the quantity
 available at other sites and allocate the item from other sites if there is a
@@ -510,7 +510,7 @@ quantity shortage for the item at the default site.
 
 6. Choose OK to close the window and save your entries.
 
-#### Substituting an item
+### Substituting an item
 
 Use the Substitute Items window to choose a substitute item if there is a
 quantity shortage for an item and the default site. Substitute items must be
