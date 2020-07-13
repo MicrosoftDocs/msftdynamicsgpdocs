@@ -5,7 +5,7 @@ author: edupont04
 
 ms.prod: dynamics-gp
 ms.topic: get-started-article
-ms.date: 12/17/2019
+ms.date: 07/13/2020
 ms.author: edupont
 
 ---
@@ -36,7 +36,7 @@ Available at [https://mbs.microsoft.com/customersource/](https://mbs.microsoft.c
 
 ### eSupport
 
-Available at [https://mbs.microsoft.com/support](https://mbs.microsoft.com/support/newstart.aspx), you can find different ways to get support, including requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.  
+Available at [https://mbs.microsoft.com/support](https://mbs.microsoft.com/support/newstart.aspx), you can find different ways to get support, including requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That's a big benefit during the critical year-end season.  
 
 ### Community
 
@@ -52,9 +52,12 @@ We welcome comments regarding the usefulness of the Dynamics GP. If you have spe
 
 An email address was available in previous versions to provide an option for contacting us about the documentation. Both <adocs@microsoft.com> and <bizdoc@microsoft.com> have been decommissioned.  
 
-### Contributions to the Dynamics GP content
+## Contributions to the Dynamics GP content
 
 We welcome contributions to the Dynamics GP content. You can find the source files in GitHub at [https://github.com/MicrosoftDocs/msftdynamicsgpdocs/](https://github.com/MicrosoftDocs/msftdynamicsgpdocs), and the ReadMe.md file in the root of the repo contains tips and tricks for working with the content. If you want to add a new article, then the repo contains a template.md file that can help you get started.  
+
+> [!TIP]
+> We're a few people inside Microsoft who gradually work our way through converting the legacy manuals. We believe in the strength of the Dynamics GP community, and we welcome additional contributions. the future is online for the Dynamics GP content because it's easier to maintain, so if you can't wait for us to convert a manual, then help us. For more information, see the [Microsoft Docs contributor guide overview](/contribute/). 
 
 ## See Also
 
