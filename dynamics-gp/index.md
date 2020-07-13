@@ -60,6 +60,8 @@ We welcome contributions to the Dynamics GP content. You can find the source fil
 > [!TIP]
 > Microsoft is gradually working our way through converting the legacy manuals. We believe in the strength of the Dynamics GP community, and we welcome additional contributions. the future is online for the Dynamics GP content because it's easier to maintain, so if you can't wait for us to convert a manual, then help us. For more information, see the [Microsoft Docs contributor guide overview](/contribute/).  
 
-## See Also
+## See also
 
 [Microsoft Dynamics GP Developer Documentation](/previous-versions/dynamicsgp/developer/hh686187(v=gp.20))  
+[Microsoft Dynamics NAV Documentation](/dynamics-nav-app/)  
+[Microsoft Dynamics 365 Business Central Documentation](/dynamics365/business-central/)  
