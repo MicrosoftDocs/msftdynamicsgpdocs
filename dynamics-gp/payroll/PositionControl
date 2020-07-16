@@ -1,1 +1,59 @@
-Adding Position Control
+
+
+What is Position Control?
+
+You can use position control to plan the positions that you will have in your organization and to track the funding sources for those positions.
+Position control is especially useful for state and local governments, schools, and other organizations that depend on public funding.
+You can create one current position plan and an unlimited number of other position plans. The other position plans are used for future planning and what-if scenarios.
+The management of labor budgets and human resources based upon specific job functions and a specific head count is a driving force behind Position Control
+Constraints are then applied throughout the Human Resource and Payroll system to enforce the business rules and to manage the movement of human resources throughout the organization
+Super cool feature is Inheritance. Each role will have attributes such as location, division, pay, benefits etc. All these attributes can be rolled down to each employee within this position! 
+
+
+Set-up Position Control
+Microsoft Dynamics GP menu > Tools > Setup > Human Resources > Position Control > Position Control
+
+Choose budget override options to allow, disallow or issue a warning before including employees with no seat assignment in payroll builds.
+Mark the ‘Save changes to history’ option to save budget overrides changes to history.
+Mark the Enable Position Control in Sample Company option if you want to use position control in the sample company, Fabrikam, Inc. 
+You must restart Microsoft Dynamics GP for the change to take effect.
+
+Set-up Position Plan Codes 
+Microsoft Dynamics GP menu > Tools >> Setup > Human Resources > Position Control > Position Plans Position plan codes
+
+Enter a code to identify the plan and description
+Enter starting / end date
+You can mark Inactive you are not ready to use this plan yet.
+You cannot make the ‘Current’ plan inactive.
+You can choose Make Current to make the selected plan the current plan. Assigning seats
+To base a new plan on an existing plan, select the existing plan and choose Copy. In the Copy Plan window, enter an ID and description for the new plan and choose Copy.
+You can choose the Excel button to either export the plan information to an Excel workbook or to import it from an Excel workbook. Fund account options
+
+If you print a report during this process, and if the plan has any inactive employees assigned to the position seats, the report will display the plan information for inactive employees only.
+When you copy a plan, all details of the plan are copied, including details for each employee that's included in the plan.
+
+
+Import a position plan from Excel
+Microsoft Dynamics GP menu > Tools > Setup > Human Resources > Position Control > Position Plans 
+
+Warning: If you choose to import the Microsoft Excel plan workbook into a plan, the existing information in the plan will be overwritten with the information from the workbook.
+Select the plan you want to import data to.
+
+Chose Excel > select ‘import from Excel’ 
+Choose Next to open Excel file selection window
+Enter or select the name of the file to import
+Choose Next to open the Completing the Plan window
+Choose Finish to complete the import
+
+Position code for a position plan
+Microsoft Dynamics GP menu > Tools > Setup > Human Resources > Organization > Position
+
+Warning: If you choose to import the Microsoft Excel plan workbook into a plan, the existing information in the plan will be overwritten with the information from the workbook.
+
+Select the plan you want to import data to.
+Chose Excel > select ‘import from Excel’ 
+Choose Next to open Excel file selection window
+Enter or select the name of the file to import
+Choose Next to open the Completing the Plan window
+Choose Finish to complete the import
+
