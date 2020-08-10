@@ -1,7 +1,16 @@
-Microsoft Dynamics GP Human Resources
-
-Introduction
-------------
+---
+title: "Human Resources"
+description: "Learn about the Human Resources functionality in Microsoft Dynamics GP."
+keywords: "payroll"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 08/10/2020
+---
+# Microsoft Dynamics GP Human Resources
 
 You can use Human Resources to set up, enter, and maintain most of your employee management needs and to track organizational details and personal information
 for employees within your company. You also can use Human Resources to view important information about employees, their benefits, and other historical data.
@@ -22,16 +31,14 @@ You also can use Human Resources to complete the following tasks:
 
 If you are using U.S. Payroll, you can enter and maintain your employee information in Human Resources and those transactions automatically will update your payroll records.
 
-Part 1: System setup
-====================
+## Part 1: System setup
 
 This explains how to define Human Resources preferences.
 
 If you are setting up Human Resources in the absence of Payroll, after setup you must modify user security settings to enable user access to Human Resources
 functionality. 
 
-Chapter 1: Human Resources preferences
---------------------------------------
+### Chapter 1: Human Resources preferences
 
 You can specify default employee numbers for your organization by entering an employee ID in the Human Resources Setup window. 
 You can choose to have Human Resources automatically assign employee IDs and increase the employee ID number by one for each new record in the Employee Maintenance window.
@@ -54,7 +61,7 @@ This information is divided into the following sections:
 
 -   *Setting up Human Resources user preferences*
 
-### Setting up an employee number
+#### Setting up an employee number
 
 Use the Human Resources Setup window to assign default employee IDs automatically. Each time you add a new employee in the Employee Maintenance
 window, the default number will increase by one to the next available number as each number is accepted.
@@ -74,7 +81,7 @@ appear to increase by two or more.*
 
 4.  Choose OK to save your changes.
 
-### Setting up Human Resources preferences
+#### Setting up Human Resources preferences
 
 Use the Human Resources Preferences window to set up Human Resources preferences for your organization.
 
