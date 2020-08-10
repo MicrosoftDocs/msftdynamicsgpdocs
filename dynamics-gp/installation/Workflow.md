@@ -10,22 +10,27 @@ ms.reviewer: edupont
 ms.author: theley
 ms.date: 08/10/2020
 ---
+
 # Workflow Administrator’s Guide
 
 The following information provides a basic overview of the Workflow system and describes the benefits it provides.
-•	What is workflow?
-•	Benefits of using the Workflow system
-•	How users will interact with the Workflow system
+
+- What is workflow?
+-	Benefits of using the Workflow system
+- How users will interact with the Workflow system
 
 ## What is workflow?
 This documentation defines the term workflow in two ways:
 
 1. Workflow is a system
-Workflow is the system that you installed with Microsoft Dynamics GP. The Workflow system provides functionality you can use to create individual workflows, or approval processes.
+
+  Workflow is the system that you installed with Microsoft Dynamics GP. The Workflow system provides functionality you can use to create individual workflows, or approval processes.
 
 2. Workflow is an approval process
-A workflow is the approval process for a document, master record, or batch. A workflow defines how a document, master record, or batch “flows” through the system by showing who must approve it, and the conditions under which they must approve it.
-For example, consider the following illustration of a purchase order approval workflow. This workflow shows who must approve purchase orders, and the conditions under which their approval is required. For example, suppose Sam submits a purchase order for $2,000. In this scenario, the purchase order must be approved by Frank. If Sam submits a purchase order for $8,000, it must be approved by both Frank and Sue.
+
+  A workflow is the approval process for a document, master record, or batch. A workflow defines how a document, master record, or batch “flows” through the system by showing who must approve it, and the conditions under which they must approve it.  
+
+For example, consider the following illustration of a purchase order approval workflow. <!--missing image-->This workflow shows who must approve purchase orders, and the conditions under which their approval is required. For example, suppose Sam submits a purchase order for $2,000. In this scenario, the purchase order must be approved by Frank. If Sam submits a purchase order for $8,000, it must be approved by both Frank and Sue.
 
 ## Benefits of using the Workflow system
 
