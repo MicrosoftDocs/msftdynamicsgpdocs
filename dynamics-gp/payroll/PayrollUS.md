@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 07/10/2020
+ms.date: 08/26/2020
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -4379,36 +4379,35 @@ Before you enter/post a Manual Check you’ll want to ensure you chose the appro
 
 Here’s what you need to know about each Check Type:
 
-**Manual Check** – Will update Payroll, Bank Rec, and General Ledger. Use this if you are:
+**Manual Check** – Will update Payroll, Bank Rec, and General Ledger. Use this if you are: 
+- Recording a manually written paycheck
+- Making a negative adjustment 
 
-    - Recording a manually written paycheck
-    - Making a negative adjustment 
+    Note: Negative Manual Checks cannot be saved to a batch
+- Most Commonly Used
+- Do not enter positive and negative amounts at the same time:
+    - Post only positive amounts
+    - Or post only negative amounts
     
-        Note: Negative Manual Checks cannot be saved to a batch
-    - Most Commonly Used
-    - Do not enter positive and negative amounts at the same time:
-        - Post only positive amounts
-        - Or post only negative amounts
 
 **Adjustment** – Will update Payroll and General Ledger. User this if you are:
+- Entering an adjustment.
+- Post each transaction type individually.
+- Adjustments can be posted only if the gross and net wage amounts are zero. 
+There will be no check number associated with an adjustment.
 
-    -Entering an adjustment. 
-    -Adjustments can be posted only if the gross and net wage amounts are zero. 
-    
-        Note: There will be no check number associated with an adjustment.
-    -If GL is not being updated as expected: Ensure you're set up to 'Post To' GL and not 'Through' (Microsoft Dynamics GP >> Tools >> Setup >> Posting     >> Posting >> Series = Payroll >> Origin = Manual Checks).
+- If GL is not being updated as expected: 
+Ensure you're set up to 'Post To' GL and not 'Through' 
+(Microsoft Dynamics GP >> Tools >> Setup >> Posting >> Posting >> Series = Payroll >> Origin = Manual Checks).
+
 
 **Beginning Balances** – Will NOT update Bank Rec or General Ledger. Use this if you are:
+- Entering beginning balances. 
+There will be no check number associated with a beginning balance.
 
-    -Entering beginning balances.
+- Don’t want to update Bank Rec or GL
 
-    Note: There will be no check number associated with a beginning balance.
-    -Don’t want to update Bank Rec or GL
-    -Do not enter positive and negative amounts at the same time:
-        Post only positive amounts Or post only negative amounts
-
-
-
+    
 > [!IMPORTANT]
 > Manual Checks is that they are exactly that: manual. Microsoft Dynamics GP does not automatically calculate anything for you when you process a Manual Check. As such, you need to know exactly what amounts need to be entered/adjusted.
 
