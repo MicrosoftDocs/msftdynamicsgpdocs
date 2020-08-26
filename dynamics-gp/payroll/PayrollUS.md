@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 07/10/2020
+ms.date: 08/26/2020
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -33,22 +33,22 @@ If you are using Direct Deposit, you can transfer funds directly to employee ban
 
 If you are using Bank Reconciliation, your checkbook is automatically updated when you post Payroll transactions.
 
-**What’s in this manual**
+**What's in this manual**
 
 This manual is designed to give you an understanding of how to use the features
-of U.S. Payroll, and how it integrates with the Microsoft Dynamics® GP system.
+of U.S. Payroll, and how it integrates with the Microsoft Dynamics&reg; GP system.
 
 Some features described in the documentation are optional and can be
 purchased through your Microsoft Dynamics GP partner.
 
-To view information about the release of Microsoft Dynamics GP that you’re
+To view information about the release of Microsoft Dynamics GP that you're
 using and which modules or features you are registered to use, choose Help
 \>\> About Microsoft Dynamics GP.
 
 The manual is divided into the following parts:
 
 - *Part 1, Setup*, describes how to set up Payroll, including department and
-    position codes, pay codes, workers’ compensation codes, and local and
+    position codes, pay codes, workers' compensation codes, and local and
     unemployment tax cards. It also explains how to set up deduction codes,
     benefit codes, and employee classes.
 
@@ -79,35 +79,35 @@ The manual is divided into the following parts:
 
 This part of the documentation describes how to set up Payroll, department
 codes, position codes, and pay codes. It also explains how to set up local and
-unemployment tax codes, workers’ compensation codes, and employee classes.
+unemployment tax codes, workers' compensation codes, and employee classes.
 
 The following information is discussed:
 
-- *Chapter 1, “Setting up Payroll,”* explains how to use the setup routine
+- *Chapter 1, "Setting up Payroll,"* explains how to use the setup routine
     provided with the accounting system to set up Payroll.
 
-- *Chapter 2, “Setting up codes,”* describes how to set up location,
+- *Chapter 2, "Setting up codes,"* describes how to set up location,
     department, position, supervisor, pay, and shift codes, as well as pay
     types. Once set up, you can assign these codes to employee records for
     identification purposes.
 
-- *Chapter 3, “Setting up deductions and benefits,”* explains how to set up
+- *Chapter 3, "Setting up deductions and benefits,"* explains how to set up
     default deduction and benefit codes that will be used for setting up
     employee deductions and benefits.
 
-- *Chapter 4, “Setting up taxes and compensation codes,”* describes how to set
-    up default workers’ compensation, local, and unemployment tax cards that
+- *Chapter 4, "Setting up taxes and compensation codes,"* describes how to set
+    up default workers' compensation, local, and unemployment tax cards that
     will be used for setting up employee taxes.
 
-- *Chapter 5, “Setting up employee classes,”* explains how to set up employee
+- *Chapter 5, "Setting up employee classes,"* explains how to set up employee
     classes according to similar characteristics to help make setting up
     employee records easier and save data entry time.
 
 ### Chapter 1: Setting up Payroll
 
-During the Payroll setup process, you’ll create pay cards, benefit cards,
+During the Payroll setup process, you'll create pay cards, benefit cards,
 and deduction cards for each employee and can set up employee classes.
-Before you begin setting up Payroll, be sure you’ve completed the System
+Before you begin setting up Payroll, be sure you've completed the System
 Setup and General Ledger setup procedures. For more information about
 completing these procedures, refer to Help \>\> Contents \>\> select Setting
 Up the System or the General Ledger documentation.
@@ -118,8 +118,8 @@ Setup \>\> Setup Checklist) to guide you through the setup process. See your
 System Setup Guide (Help \>\> Contents \>\> select Setting up the System)
 for more information about the Setup Checklist window.
 
-If you’re using Human Resources, set up benefit and deduction cards in Human
-Resources. Refer to the “Benefit setup” chapter in the Human Resources
+If you're using Human Resources, set up benefit and deduction cards in Human
+Resources. Refer to the "Benefit setup" chapter in the Human Resources
 documentation.
 
 This information is contained in the following sections:
@@ -188,8 +188,8 @@ calculated.
 Automatic overtime is based on the total units for a specific pay code. The
 overtime will reduce the hourly pay code and create an overtime pay
 transaction for the overtime hours, based upon the transaction that you
-enter for the hourly pay code, and what you’ve set up in the Regular Hours
-Required field. If you don’t want overtime calculated automatically, you
+enter for the hourly pay code, and what you've set up in the Regular Hours
+Required field. If you don't want overtime calculated automatically, you
 must manually enter overtime pay transactions. For more information, refer
 to *Entering Payroll computer check transactions* .
 
@@ -198,7 +198,7 @@ Payroll Setup window, you must enter the number of hours an employee must
 work in a pay period before overtime will be paid.
 
 For example, you might enter 40 for regular hours required if employees are
-paid weekly. Assume you’ve marked Automatic Overtime for a biweekly pay
+paid weekly. Assume you've marked Automatic Overtime for a biweekly pay
 period and it is based on 40 hours a week. You must enter two hourly pay
 code transactions for each employee; each hourly pay code should have a
 corresponding overtime pay code.
@@ -262,7 +262,7 @@ pay code is treated individually.
 | HOUR2        | \$540.00      | ÷     | 45        | =     | \$12.00              |
 
 The overtime value is determined by multiplying the overtime hours by the
-employee’s overtime pay code and then multiplying that by the average pay
+employee's overtime pay code and then multiplying that by the average pay
 rate. Each pay code is treated individually.
 
 | **Pay code** | **Hours** | **X** | **Pay factor** | **X** | **Average pay rate** | **=** | **Overtime value** |
@@ -270,7 +270,7 @@ rate. Each pay code is treated individually.
 | OT           | 10        | X     | 1.5            | X     | \$10.00              | =     | \$150.00           |
 | OT2          | 5         | X     | 1.5            | X     | \$12.00              | =     | \$90.00            |
 
-Because we don’t know which pay code should have the hours of overtime
+Because we don't know which pay code should have the hours of overtime
 removed, we need to reduce both pay code transactions by the weight each
 provides. To do this, the regular pay code hours are multiplied by the
 overtime hours and divided by the total regular hours to determine the total
@@ -335,7 +335,7 @@ with a pay rate change, using the following pay codes and pay rates:
 
 - SHIFT1 pay code set up with a \$1.00 pay rate
 
-- SHIFT2 pay code set up with a \$2.00 pay rate • Payroll Setup has Automatic
+- SHIFT2 pay code set up with a \$2.00 pay rate * Payroll Setup has Automatic
     Overtime at 40 hours
 
 .
@@ -380,7 +380,7 @@ individually
 | \$495.00               | ÷     | 45                     | =     | \$11.00              |
 | \$740.00               | ÷     | 50                     | =     | \$14.80              |
 
-The overtime hours are multiplied by the employee’s overtime pay code and
+The overtime hours are multiplied by the employee's overtime pay code and
 then multiplied by the average pay code pay rate to determine the overtime
 pay. Each pay code is treated individually.
 
@@ -389,7 +389,7 @@ pay. Each pay code is treated individually.
 | OT           | 5         | X     | 1.5            | X     | \$11.00              | =     | \$82.50          |
 | OT2          | 10        | X     | 1.5            | X     | \$14.80              | =     | \$222.00         |
 
-Because we don’t know which pay code should have the hours of overtime
+Because we don't know which pay code should have the hours of overtime
 removed, we need to reduce both pay code transactions by the weight each
 provides. To do this, the regular pay code hours are multiplied by the
 overtime hours and divided by the total regular hours to determine the total
@@ -446,10 +446,10 @@ Each time you add a new employee, the default number will increase by one to
 the next available number as each number is accepted.
 
 After an ID has been assigned to an employee it cannot be modified. To
-change the employee’s ID, you must inactivate the existing ID record in the
+change the employee's ID, you must inactivate the existing ID record in the
 Employee Maintenance window. Then, you must create a new record for the
 employee. You also will have to update all year-to-date information manually
-for the employee’s new ID.
+for the employee's new ID.
 
 *If you use Microsoft Dynamics GP on a network where more than one person is
 entering a new employee record at the same time, the default number might
@@ -458,7 +458,7 @@ appear to increase by two or more.*
 #### Options for tracking history and employees
 
 When you set up Payroll, you will need to determine how much information
-you’ll want to track about Payroll transactions, and about your employees.
+you'll want to track about Payroll transactions, and about your employees.
 
 **History-tracking options**
 
@@ -483,7 +483,7 @@ windows.
 **Employee tracking options**
 
 You will use the Payroll Setup Options window to select options for tracking
-an employee’s days and weeks worked, edit financial fields throughout the
+an employee's days and weeks worked, edit financial fields throughout the
 Payroll system, and edit pay rates used in transactions.
 
 **Track Days Worked** To track the number of days each employee worked for
@@ -497,12 +497,12 @@ pay run. When you enter this information in the Build Payroll Checks window,
 the days and weeks worked are rolled down to all automatic pay types. This
 information will be printed on state unemployment reports.
 
-**Edit Financial Fields** You can edit an employee’s financial information,
-such as employee summary information. Typically, this option shouldn’t be
-marked, to ensure that changes aren’t made inadvertently. If you need to
-make changes, it’s a good idea to mark the option, make the changes, then
+**Edit Financial Fields** You can edit an employee's financial information,
+such as employee summary information. Typically, this option shouldn't be
+marked, to ensure that changes aren't made inadvertently. If you need to
+make changes, it's a good idea to mark the option, make the changes, then
 unmark the option again after the changes have been made. This will prevent
-someone from making changes that weren’t meant to be made.
+someone from making changes that weren't meant to be made.
 
 **Display Rate on Trx** Mark this option to edit pay rates in the Payroll
 Transaction Entry window for the following pay types:
@@ -534,7 +534,7 @@ edited in the Payroll Transaction Entry window:
 
 #### Payroll setup options for tips
 
-Some of the tasks you’ll need to do to take advantage of tips wage tracking
+Some of the tasks you'll need to do to take advantage of tips wage tracking
 involve setting up various options and codes. Be sure you complete the
 following in the Payroll Setup Options window:
 
@@ -579,9 +579,9 @@ Use the Payroll Setup window to set up default entries that appear throughout Pa
     available, if necessary. You will need to enter a password when you create a
     transaction for more vacation or sick time hours than the employee has
     available. Refer to *Overtime in Payroll* for more information about setting
-    up overtime options. If you’re using Human Resources and have marked Human
+    up overtime options. If you're using Human Resources and have marked Human
     Resources as the accrue type in the Attendance Setup window, the vacation
-    and sick time fields will not be available. Refer to the “Attendance setup”
+    and sick time fields will not be available. Refer to the "Attendance setup"
     chapter in the Human Resources documentation for more information.
 
 2. Assign the Next Employee ID for new employee records, if necessary. Refer to
@@ -589,8 +589,8 @@ Use the Payroll Setup window to set up default entries that appear throughout Pa
     employee IDs in Payroll.
 
 3. Mark the options to maintain historical information for checks,
-    transactions, and account distributions, as needed. If you don’t mark any
-    options, you won’t be able to print period-end reports or view employee
+    transactions, and account distributions, as needed. If you don't mark any
+    options, you won't be able to print period-end reports or view employee
     financial information in summary and inquiry windows.
 
 4. Enter the last date posted information and enter or select the checkbook
@@ -607,7 +607,7 @@ Use the Payroll Setup window to set up default entries that appear throughout Pa
 Certain tasks, such as calculating payroll checks, printing checks, and
 printing direct deposit earning statements can only be performed by one user
 at a time. If another user tries to perform one of these tasks at the same
-time, you can specify how long that user’s processing request will wait in
+time, you can specify how long that user's processing request will wait in
 the queue, and how often the processing request will be retried.
 
 1. Choose OK in the Payroll Multiuser Setup window to save your changes.
@@ -624,9 +624,9 @@ the queue, and how often the processing request will be retried.
 
     If you enable fiscal year tracking during the year, it is a good idea to reconcile your fiscal year employee information to help ensure that your historical data is summarized correctly. For more information, see Reconciling employee records.
 
-4. Mark Track Days Worked to track the number of days an employee’s work was
+4. Mark Track Days Worked to track the number of days an employee's work was
     assigned to each pay code. *Depending upon the calculation method used by
-    your state, this information might be needed to calculate workers’
+    your state, this information might be needed to calculate workers'
     compensation tax.*
 
 5. Mark Track Weeks Worked to track the number of weeks each employee worked
@@ -650,13 +650,13 @@ the queue, and how often the processing request will be retried.
     information.
 
 > [!TIP]
-> Although you can create employee classes at this time by choosing Classes to open the Employee Class Setup window, it’s a good idea to wait until you’ve set up codes. For more information, refer to [Chapter 2 Setting up codes](#chapter-2-setting-up-codes), and [Creating an employee class](#creating-an-employee-class).
+> Although you can create employee classes at this time by choosing Classes to open the Employee Class Setup window, it's a good idea to wait until you've set up codes. For more information, refer to [Chapter 2 Setting up codes](#chapter-2-setting-up-codes), and [Creating an employee class](#creating-an-employee-class).
 
 #### Required Payroll posting accounts
 
 Payroll has several posting accounts that are required and are used only for Payroll transactions. They are:
 
-**Gross Pay** This account type is an expense account that can be entered for all employees’ salaries.
+**Gross Pay** This account type is an expense account that can be entered for all employees' salaries.
 
 **Federal Tax Withholding** This account type is a liability account. Transactions will be posted to it for the following tax withholding codes:
 
@@ -676,7 +676,7 @@ Payroll has several posting accounts that are required and are used only for Pay
 
 **Deduction Withholding** This account type is a liability account that can be entered for deduction codes.
 
-**Employer’s Tax Expense** This account type is an expense account. Transactions will be posted to it for the following tax expense codes:
+**Employer's Tax Expense** This account type is an expense account. Transactions will be posted to it for the following tax expense codes:
 
 - FIC/ME (FICA/Medicare Tax Expense)
 
@@ -698,11 +698,11 @@ Payroll has several posting accounts that are required and are used only for Pay
 
 **FUTA Payable** This account type is a liability account that will allow only FUTA to be entered for federal unemployment tax liability.
 
-**Workers’ Compensation Tax Expense** This account type is an expense account that can be entered for state codes to record workers’ compensation expense.
+**Workers' Compensation Tax Expense** This account type is an expense account that can be entered for state codes to record workers' compensation expense.
 
-**Workers’ Compensation Tax Payable** This account type is a liability account that can be entered for state codes to record workers’ compensation liability.
+**Workers' Compensation Tax Payable** This account type is a liability account that can be entered for state codes to record workers' compensation liability.
 
-It’s a good idea to set up default information using the Payroll Setup window before setting up posting accounts. If you haven’t set up default information yet, see [Setting up Payroll default entries](#setting-up-payroll-default-entries) for more information about using the Payroll Setup window.
+It's a good idea to set up default information using the Payroll Setup window before setting up posting accounts. If you haven't set up default information yet, see [Setting up Payroll default entries](#setting-up-payroll-default-entries) for more information about using the Payroll Setup window.
 
 The following table shows the posting accounts required in Payroll and the departments, positions, and codes associated with each.
 
@@ -732,12 +732,12 @@ select Setting Up the System. You also should have completed Setting up Payroll 
 
   ![A screenshot](media/de3a8d9af33d89faadcdcef9d7586911.jpg)
 
-2. Select an account type and position for the employee’s Payroll code. When
+2. Select an account type and position for the employee's Payroll code. When
     you select an account type, existing accounts, and an account description
     for the account type chosen, will be displayed in the scrolling window. You
     can either accept the default entry for all departments and positions, or
     you can post with more detail to General Ledger if you enter departments and
-    positions. You also can enter a department and position for the employees’
+    positions. You also can enter a department and position for the employees'
     pay code transactions when you enter transactions. *The Code lookup window
     displays codes for the selected posting account type. For example, if you
     selected Gross Pay for the Payroll account type, the window displays pay
@@ -816,7 +816,7 @@ working from which sites by setting up location IDs.
 1. Open the Company Addresses Setup window. (HR & Payroll \>\> Setup \>\>
     Payroll \>\> Location)
 
-2. Enter an identification and name for the company’s location.
+2. Enter an identification and name for the company's location.
 
 3. Enter contact, address, and phone information.
 
@@ -895,7 +895,7 @@ by providing a list of all positions and their descriptions for your company. Th
 
 - ELE - Electrician
 
-If you’re using Human Resources, you can link training courses and specify which skill sets, if any, are required for a position. You also can link pay codes and Americans with Disabilities Act (ADA) physical requirements to a position code. If your company uses salary matrices, you can link the low, middle and high salaries for each position to a position code. You also can add information using extra fields.
+If you're using Human Resources, you can link training courses and specify which skill sets, if any, are required for a position. You also can link pay codes and Americans with Disabilities Act (ADA) physical requirements to a position code. If your company uses salary matrices, you can link the low, middle and high salaries for each position to a position code. You also can add information using extra fields.
 
 **To set up position codes:**
 
@@ -903,7 +903,7 @@ If you’re using Human Resources, you can link training courses and specify whi
 
 2. Enter a code that identifies the position and a description. Choose the notes icon button to add additional comments.
 
-These fields are available if you’re using Human Resources. For more
+These fields are available if you're using Human Resources. For more
 information, see your Human Resources documentation. **EEO Class** Select an
 Equal Employment Opportunity (EEO) class **FLSA Status** Select a Fair Labor
 Standards Act (FLSA) status.
@@ -921,7 +921,7 @@ this position.
 *Choose the paperclip icon button to open the OLE (Object Linking and
 Embedding) container and store a position description file.*
 
-These buttons are available if you’re using Human Resources. For more
+These buttons are available if you're using Human Resources. For more
 information, see your Human Resources documentation.
 
 **Linked Pay Codes** Opens the Position\\Pay Code Setup window to link pay
@@ -964,8 +964,8 @@ record to the position.
 With Payroll you can set up different company pay codes to be the basis of employee pay codes and to apply changes to employee pay codes. You also can
 assign company pay codes to employee classes.
 
-When you define a pay code, you can assign pay types to it. The pay types you assign to a pay code will depend on how you’re using a specific pay
-code. For example, if you define a pay code SLRY for salaried employees, you probably wouldn’t include the overtime or double time pay types in that pay
+When you define a pay code, you can assign pay types to it. The pay types you assign to a pay code will depend on how you're using a specific pay
+code. For example, if you define a pay code SLRY for salaried employees, you probably wouldn't include the overtime or double time pay types in that pay
 code.
 
 Available pay types include:
@@ -976,7 +976,7 @@ Available pay types include:
 
 - **Salary**
 
-    Salary pay type will be used for employees who are paid a specific pay amount each pay period. With this pay type, the pay per period is automatically calculated. If you select this pay type, you also can enter the amount to be paid for an advance pay run. An advance pay run is a way to pay salaried employees an advance on their regular salary pay. The advanced amount will be subtracted from the employees’ net pay in the next salary pay run.
+    Salary pay type will be used for employees who are paid a specific pay amount each pay period. With this pay type, the pay per period is automatically calculated. If you select this pay type, you also can enter the amount to be paid for an advance pay run. An advance pay run is a way to pay salaried employees an advance on their regular salary pay. The advanced amount will be subtracted from the employees' net pay in the next salary pay run.
 
 - **Piecework**
 
@@ -984,15 +984,15 @@ Available pay types include:
 
 - **Commission**
 
-    Commission pay type will be used for employees who earn their wages according to what and how much they sell. You can enter the maximum earnings per pay period, and you also can enter the amount to be paid for an advance pay run. An advance pay run is a way to pay commissioned employees an advance on their commission pay. The advanced amount will be subtracted from the employees’ net pay in the next commission pay run.
+    Commission pay type will be used for employees who earn their wages according to what and how much they sell. You can enter the maximum earnings per pay period, and you also can enter the amount to be paid for an advance pay run. An advance pay run is a way to pay commissioned employees an advance on their commission pay. The advanced amount will be subtracted from the employees' net pay in the next commission pay run.
 
 - **Business Expense**
 
     Business Expense pay type will be used to track the records of employees who are reimbursed for mileage and travel expenses. You can include the pay in the gross wages amount that will be reported on the W-2 statement.
 
-    If you mark Report as Wages, the pay will be included in gross wages on the W-2 statement and will be treated as a nonaccountable plan. If you don’t mark this option, the pay won’t be included in gross wages on the W-2 statement and will be treated as an accountable plan.
+    If you mark Report as Wages, the pay will be included in gross wages on the W-2 statement and will be treated as a nonaccountable plan. If you don't mark this option, the pay won't be included in gross wages on the W-2 statement and will be treated as an accountable plan.
 
-    Nonaccountable plans are reported as wages on the W-2 statement and are subject to taxes. Accountable plans aren’t subject to taxes and aren’t reported on the W-2 statement.
+    Nonaccountable plans are reported as wages on the W-2 statement and are subject to taxes. Accountable plans aren't subject to taxes and aren't reported on the W-2 statement.
 
     If you pay a per diem or mileage allowance and expenses exceed the Internal Revenue Service guidelines, you must tax the excess amount and report it as wages on the W-2 statement; the non-taxable portion must be reported in box 13. For more information, refer to the W-2 instructions supplied by the IRS.
 
@@ -1010,7 +1010,7 @@ Available pay types include:
 
 - **Sick**
 
-    Sick pay type will be used for employees who receive pay while they’re sick.
+    Sick pay type will be used for employees who receive pay while they're sick.
 
 - **Holiday**
 
@@ -1050,7 +1050,7 @@ code. You can set up as many pay codes for each pay type as you need for your bu
 Changes made to a pay code can be reflected in any pay codes that are based on it, causing the dependent codes, including overtime and double time
 codes, to recalculate their pay rates. Overtime and double time pay rates are also affected by changes made to the pay factor.
 
-If you’re using Human Resources, changes made to pay rate values in the Pay Code Setup window are not applied to employee pay records that are assigned
+If you're using Human Resources, changes made to pay rate values in the Pay Code Setup window are not applied to employee pay records that are assigned
 to a pay step. If you want to make pay rate adjustments and you have pay rates assigned to pay steps, you must first use the Employee/Pay Step Table
 Assignment window to remove the pay step assignments. Refer to the Human Resources documentation for more information about pay steps.
 
@@ -1080,12 +1080,12 @@ The following are some examples of pay codes you might use:
 
 2. Select a pay type.
 
-3. If you’re setting up an overtime, double time, vacation, sick time, or
+3. If you're setting up an overtime, double time, vacation, sick time, or
     holiday pay code, select the Based On Pay Code the pay type is based on. For
-    example, if you’re setting up an overtime pay code for an employee with an
-    hourly pay type, you must base the overtime pay type on the employee’s
-    hourly pay, or the wages won’t be calculated accurately. Enter the code for
-    a specific hourly, salary or piecework pay code that you’re basing the
+    example, if you're setting up an overtime pay code for an employee with an
+    hourly pay type, you must base the overtime pay type on the employee's
+    hourly pay, or the wages won't be calculated accurately. Enter the code for
+    a specific hourly, salary or piecework pay code that you're basing the
     overtime, vacation, sick, or holiday pay type on. If the pay type is
     overtime or double time, the based on pay rate appears next to the Based On
     Pay Code field.
@@ -1093,7 +1093,7 @@ The following are some examples of pay codes you might use:
     When setting up pay codes, select vacation or sick as pay types for vacation and sick time. This ensures that when you enter transactions, they will automatically reduce the available amount of vacation and sick time.
 
 1. If your pay type is overtime or double time, you also can specify a pay
-    factor that is multiplied with the pay code’s pay rate to determine the
+    factor that is multiplied with the pay code's pay rate to determine the
     overtime or double time pay rate. If the pay factor is selected, the
     overtime or double time pay rate is automatically recalculated every time
     the pay factor is changed. The pay factor information is saved with the pay
@@ -1132,7 +1132,7 @@ The following are some examples of pay codes you might use:
 
 8. Mark Vacation and Sick Time to accrue vacation and/or sick time on this pay code.
 
-    If you’re using Human Resources and have marked Human Resources as the accrue type in the Attendance Setup window, these fields will not be available. Refer to the Human Resources documentation for more information.
+    If you're using Human Resources and have marked Human Resources as the accrue type in the Attendance Setup window, these fields will not be available. Refer to the Human Resources documentation for more information.
 
 1. Enter W-2 information.
 
@@ -1140,7 +1140,7 @@ The following are some examples of pay codes you might use:
 
     If the amount must be reported in multiple locations on the W-2 statement, use the browse buttons to select an additional location, and enter the appropriate box number and label. You can specify as many as four locations.
 
-    The Report as Wages field is available only for the Business Expense pay type. You can skip this step if the pay type isn’t a business expense.
+    The Report as Wages field is available only for the Business Expense pay type. You can skip this step if the pay type isn't a business expense.
 
 1. Choose Save to store the pay code.
 
@@ -1182,8 +1182,8 @@ tips pay code.
 Reported tips are tips the employee receives from patrons in cash. Employees
 need to report this amount to employers on a regular basis so that a
 transaction can be entered for these tips. Taxes are calculated on the tips
-wages, and reported on the employee’s W-2, but not withheld from the
-employee’s paycheck. So, the employee also needs a pay code for reported
+wages, and reported on the employee's W-2, but not withheld from the
+employee's paycheck. So, the employee also needs a pay code for reported
 tips, as shown in the following Employee Pay Code Maintenance window.
 
 The employee also is guaranteed a minimum hourly wage, so she needs a
@@ -1216,8 +1216,8 @@ shift premium as an amount or percentage.
 #### Setting up secondary status codes
 
 Use the Secondary Status Setup window to define codes that provide more
-detail about an employee’s status, such as why an employee is inactive or
-isn’t being paid. For example, you could set up codes for inactive employees
+detail about an employee's status, such as why an employee is inactive or
+isn't being paid. For example, you could set up codes for inactive employees
 who are taking military or family leave, or active employees who are on
 probation, awaiting a grant assignment, or between school terms
 
@@ -1242,14 +1242,14 @@ probation, awaiting a grant assignment, or between school terms
 You can set up company deduction and benefit cards, also known as deduction
 and benefit codes, to be used as default entries for employee deductions and
 benefits. You can use these company cards to apply changes to several
-employees’ deduction and benefit cards at once, and assign them to employee
+employees' deduction and benefit cards at once, and assign them to employee
 classes.
 
-If you’re using Human Resources, set up benefit and deduction cards in Human
-Resources. Refer to the “Benefit setup” chapter in the Human Resources
+If you're using Human Resources, set up benefit and deduction cards in Human
+Resources. Refer to the "Benefit setup" chapter in the Human Resources
 documentation.
 
-A deduction is an amount withheld from an employee’s wages. For example,
+A deduction is an amount withheld from an employee's wages. For example,
 donations to a charity, union dues, and contributions to retirement plans
 could be set up as deductions. A garnishment is a court-ordered deduction,
 often for child support, delinquent taxes, or bankruptcy debts. A
@@ -1261,7 +1261,7 @@ You also can set up deduction sequences at the company or employee level to
 specify the order in which deductions are taken. If you do not create
 deduction sequences, the Payroll system applies a default sequence.
 
-A benefit is an amount paid by the employer on the employee’s behalf. Some
+A benefit is an amount paid by the employer on the employee's behalf. Some
 benefits are taxable. Examples of benefits include employer-paid portions of
 insurance premiums, and 401(k) matching contributions. You can set up a
 benefit as a percentage of gross or net wages, as a percentage of a
@@ -1327,7 +1327,7 @@ windows:
 | Employee Deduction Maintenance | Deduction Tiers and Maximum Deduction |
 
 When you leave any of the foregoing fields blank, the record will be saved
-in Payroll even if you’re not using Human Resources.
+in Payroll even if you're not using Human Resources.
 
 #### Deduction types
 
@@ -1337,20 +1337,20 @@ deductions.
 
 **Percent of Gross Wages** Calculates the deduction as a percentage of total
 wages before taxes are deducted. Taxes are calculated before deductions are
-made, so deducting from gross wages won’t affect taxable amounts unless the
+made, so deducting from gross wages won't affect taxable amounts unless the
 deduction is a tax-sheltered annuity.
 
 **Percent of Net Wages** Calculates the deduction as a percentage of gross
 wages after taxes. This method is only permitted when all TSA check boxes
 are unmarked and when the deduction is based on all pay codes.
 
-**Fixed Amount** Deducts a fixed amount from the employee’s wages.
+**Fixed Amount** Deducts a fixed amount from the employee's wages.
 
 **Amount per Unit** Calculates the deduction based upon units using
 piecework, hourly, double time or overtime pay.
 
 **Percent of Earnings Wages** Calculates the deduction as a percentage of an
-employee’s Net Disposable Income (NDI). NDI is a legally-defined sum of
+employee's Net Disposable Income (NDI). NDI is a legally-defined sum of
 wages, deductions, and taxes from which garnishments and other deductions
 may be taken. The definition of NDI depends on state law.
 
@@ -1473,17 +1473,17 @@ The following are some examples of deduction codes you might use:
 
 3. Enter start and end dates for the deduction. The start date should be on or
     before the ending date of the pay period the first deduction is to be made;
-    otherwise, the deduction won’t be taken. If it’s a continuous deduction,
+    otherwise, the deduction won't be taken. If it's a continuous deduction,
     leave the end date field blank. If the ending date is on or after the ending
     date for the pay run, the deduction will be taken.
 
 4. Mark Transaction Required if the dollar amount or percentage of the
-    deduction varies each time it’s calculated. For example, if you have an
+    deduction varies each time it's calculated. For example, if you have an
     employee purchase plan and the amount you withhold varies with each
     paycheck, or there is no withholding for some paychecks, mark Transaction
     Required.
 
-    If you mark the deduction as Transaction Required, you’ll need to enter a transaction for the amount or percentage of the deduction for each pay run in which the deduction is taken.
+    If you mark the deduction as Transaction Required, you'll need to enter a transaction for the amount or percentage of the deduction for each pay run in which the deduction is taken.
 
 1. Mark Data Entry Default to use the information in this window when you create a transaction for the deduction code during a pay run.
 
@@ -1491,8 +1491,8 @@ The following are some examples of deduction codes you might use:
 
 3. Mark the taxes from which the deduction is sheltered. Taxable wages will be
     reduced by the amount of the tax-sheltered deduction before taxes are
-    calculated. If federal tax is marked, the amount of the deduction won’t be
-    included in the Wages, Tips, and Other Comp field on the employee’s W-2
+    calculated. If federal tax is marked, the amount of the deduction won't be
+    included in the Wages, Tips, and Other Comp field on the employee's W-2
     form.
 
 4. Select whether to base the deduction on all pay codes or on a selected list
@@ -1517,7 +1517,7 @@ use the browse buttons to select an additional location, and enter the
 appropriate box number and label. You can specify as many as four locations.
 
 *You can choose Sequence to specify the order in which the deductions will
-be deducted from the employee’s wages. For more information about setting up
+be deducted from the employee's wages. For more information about setting up
 deduction sequences, see Setting up a company-level deduction sequence .*
 
 1. Choose Save to store the code. You can then continue to set up more
@@ -1531,9 +1531,9 @@ deduction sequences, see Setting up a company-level deduction sequence .*
 Use the Deduction Setup window to enter and maintain garnishments.
 Garnishments are mandatory deductions from employee pay, such as debt
 payments enforced by court order. For example, a bankruptcy court may order
-an employer to deduct wages to pay an employee’s outstanding debts.
+an employer to deduct wages to pay an employee's outstanding debts.
 
-Specify which portion of an employee’s wages are subject to garnishments.
+Specify which portion of an employee's wages are subject to garnishments.
 See *Setting up earnings codes* .
 
 Federal and state governments also set maximum percentages for garnishments.
@@ -1566,14 +1566,14 @@ Review [this detail document for examples of how Garnishments are set up](https:
 1. Choose Save to store the code. You can then continue to set up more
     garnishments or other deductions.
 
-    You can choose Sequence to specify the order in which deductions will be taken from the employee’s wages. For more information about setting up deduction sequences, see Setting up a company-level deduction sequence .
+    You can choose Sequence to specify the order in which deductions will be taken from the employee's wages. For more information about setting up deduction sequences, see Setting up a company-level deduction sequence .
 
 1. Choose File \>\> Print to print a Company Deduction Codes List to verify
     your information.
 
 #### Setting up earnings codes
 
-Use the Earnings Setup window to define an employee’s Net Disposable Income
+Use the Earnings Setup window to define an employee's Net Disposable Income
 (NDI). NDI is a legally-defined selection of wages, deductions and taxes
 from which garnishments and standard deductions may be taken. The definition
 of NDI depends on state law.
@@ -1627,7 +1627,7 @@ amount, and selects the lesser of the three amounts as the garnishment.
 4. Mark Include Previously Sequenced Garnishment Deductions if multiple
     garnishments are levied against an employee, and you want to deduct the
     garnishments in sequence until the maximum value is reached. If the full
-    amount of a given garnishment can’t be deducted without the total exceeding
+    amount of a given garnishment can't be deducted without the total exceeding
     the maximum, Payroll will deduct as much of the garnishment as possible. For
     more information, see *Deducting multiple garnishments* .
 
@@ -1643,7 +1643,7 @@ amount, and selects the lesser of the three amounts as the garnishment.
 8. Enter the maximum amount of wages exempt from garnishment.
 
 9. Enter the minimum wage rule amount, if required. For some types of
-    garnishments, the law may exempt an amount of the employee’s wages equal to
+    garnishments, the law may exempt an amount of the employee's wages equal to
     a specified number of hours multiplied by the minimum wage.
 
 10. If you selected Percent of Earnings as the calculation method, enter or
@@ -1653,11 +1653,11 @@ amount, and selects the lesser of the three amounts as the garnishment.
 
 #### Deducting multiple garnishments
 
-If multiple garnishments are levied against an employee, you’ll first need
+If multiple garnishments are levied against an employee, you'll first need
 to set up codes defining the maximum rates and amounts that can be withheld,
 in accordance with applicable state and federal regulations. (See *Setting
-up maximum garnishment rules* ) Then you’ll need to decide how to apply the
-maximums when calculating an employee’s pay. Payroll provides several ways
+up maximum garnishment rules* ) Then you'll need to decide how to apply the
+maximums when calculating an employee's pay. Payroll provides several ways
 to apply maximums:
 
 **To each garnishment individually** When you define maximum codes in the
@@ -1675,10 +1675,10 @@ Maximum Setup window, mark the Include Previously Sequenced Garnishment
 
 Deductions option. Garnishments will be deducted in the order defined in the
 Employee Deduction Sequence window, until the maximum value is reached. If
-the full amount of a given garnishment can’t be deducted without the total
+the full amount of a given garnishment can't be deducted without the total
 exceeding the maximum value you define, Payroll will deduct as much of the
 garnishment as possible. If the same maximum deduction code applies to any
-garnishments with later sequence numbers, those garnishments won’t be
+garnishments with later sequence numbers, those garnishments won't be
 deducted.
 
 ##### **To multiple garnishments, without priority** In the Employee Deduction
@@ -1705,15 +1705,15 @@ in the Garnishment Maximum Setup window.
 
 Be aware that when there are separate state and federal maximums, Payroll
 will always apply the maximum that deducts the smallest amount from an
-employee’s pay.
+employee's pay.
 
 #### Setting up a company-level deduction sequence
 
 Use the Deduction Sequence Setup window to specify a company-level sequence
-in which deductions are deducted from employees’ wages.
+in which deductions are deducted from employees' wages.
 
 Use the Employee Deduction Sequence window to specify sequences for
-individual employees. See *Chapter 8, “Deduction and benefit cards.”*
+individual employees. See *Chapter 8, "Deduction and benefit cards."*
 
 You can assign all types of deductions to the sequence, including standard,
 garnishment, and TSA types. The Payroll system will calculate the TSA
@@ -1764,7 +1764,7 @@ taxes are deducted.
 taxes.
 
 **Percent of Deduction** Calculates the benefit as a percentage of the total
-deduction it’s based on.
+deduction it's based on.
 
 **Fixed Amount** Calculates the benefit as a fixed amount.
 
@@ -1836,7 +1836,7 @@ classes. Benefits can be calculated on net, unit or gross pay. Examples of
 benefits include insurance premiums and 401(k) matching contributions.
 
 The Employer Maximum Match field stores the maximum the employer will
-contribute to an employee’s 401(k) fund. With this feature, you can set up
+contribute to an employee's 401(k) fund. With this feature, you can set up
 one 401(k) deduction and one benefit code for an employee.
 
 The following are some examples of benefit codes you might use:
@@ -1858,16 +1858,16 @@ The following are some examples of benefit codes you might use:
 
 2. Enter start and end dates for the benefit. The start date should be on or
     before the ending date of the pay period the benefit should take effect;
-    otherwise, the benefit won’t be calculated. If it’s a continuous benefit,
+    otherwise, the benefit won't be calculated. If it's a continuous benefit,
     leave the End Date field blank. If the ending date is on or after the ending
     date for the pay run, the benefit will be taken.
 
 3. Mark Transaction Required if the dollar amount or percentage of the benefit
-    varies each time it’s calculated. For example, if the amount of the benefit
+    varies each time it's calculated. For example, if the amount of the benefit
     varies each paycheck, or some paychecks have no benefit amount, mark
     Transaction Required.
 
-    If you mark the benefit as transaction required, you’ll need to enter a transaction for the amount or percentage of the benefit for each pay run that the benefit is taken.
+    If you mark the benefit as transaction required, you'll need to enter a transaction for the amount or percentage of the benefit for each pay run that the benefit is taken.
 
 1. Mark Data Entry Default to use the information in this window when you
     create a transaction for the benefit code during a pay run.
@@ -1878,8 +1878,8 @@ The following are some examples of benefit codes you might use:
 
 1. Mark the taxes to which the benefit is subject. If the benefit is subject to
     any federal or state taxes, you can enter a flat tax rate. Even though a
-    benefit isn’t paid to the employee, the employee still will be taxed on the
-    value of the benefit if it’s set up as a taxable benefit.
+    benefit isn't paid to the employee, the employee still will be taxed on the
+    value of the benefit if it's set up as a taxable benefit.
 
 2. Select whether to base the benefit on all pay codes, a selected list of pay
     codes or on a selected deduction. To base the benefit on all pay codes, mark
@@ -1892,7 +1892,7 @@ The following are some examples of benefit codes you might use:
 
     If you selected Percent of Deduction as your calculation method, enter the maximum percent the employer will match for this benefit.
 
-    If you modified an existing benefit’s employer maximum percent, you may have to roll down the changes to existing employee benefit records. If you’re using Human Resources, you may have to update your benefit setup and employee records in the Reconcile Human Resources window (HR & Payroll \>\> Utilities \>\> Human Resources \>\> Reconcile).*
+    If you modified an existing benefit's employer maximum percent, you may have to roll down the changes to existing employee benefit records. If you're using Human Resources, you may have to update your benefit setup and employee records in the Reconcile Human Resources window (HR & Payroll \>\> Utilities \>\> Human Resources \>\> Reconcile).*
 
 1. Enter benefit maximum amounts. You can enter the maximum amount each
     employee can receive for this benefit for each pay period, calendar year,
@@ -1912,7 +1912,7 @@ The following are some examples of benefit codes you might use:
 #### Setting and activating post-dated pay rates
 
 Use the Post-Dated Pay Rates window to enter a value for a pay code that you
-don’t want to use now but want to activate at a later date. You can enter
+don't want to use now but want to activate at a later date. You can enter
 more than one post-dated pay rate for one pay code.
 
 **To set post-dated pay rates:**
@@ -1947,7 +1947,7 @@ more than one post-dated pay rate for one pay code.
 
 #### Modifying a pay, benefit, or deduction code
 
-Use the Pay Code Setup window, the Benefit Setup window or the Deduction Setup window to make changes to pay, benefit, or deduction codes. When you change information, you might have the option to “roll down” your changes to the items that belong to the item class.
+Use the Pay Code Setup window, the Benefit Setup window or the Deduction Setup window to make changes to pay, benefit, or deduction codes. When you change information, you might have the option to "roll down" your changes to the items that belong to the item class.
 
 **To modify a pay, benefit, or deduction code:**
 
@@ -1963,15 +1963,15 @@ Use the Pay Code Setup window, the Benefit Setup window or the Deduction Setup w
 
 2. Make changes, as needed.
 
-3. Choose Save to store the code. Depending on the changes you’ve made, a
+3. Choose Save to store the code. Depending on the changes you've made, a
     message might appear, and you will have the option to roll down the changes
     you made to all employees with this code.
 
 #### Inactivating or deleting a pay, benefit, or deduction code
 
-Use the Pay Code Setup window, the Benefit Setup window or the Deduction Setup window to inactivate a pay, benefit, or deduction code if you’re not using it now, but don’t want to delete it because you’ll need the code in the future.
+Use the Pay Code Setup window, the Benefit Setup window or the Deduction Setup window to inactivate a pay, benefit, or deduction code if you're not using it now, but don't want to delete it because you'll need the code in the future.
 
-You also can delete a pay, benefit, or deduction code. For example, perhaps your company had separate insurance plans for medical and dental expenses, but now is using one insurance plan for both. You must delete the medical and dental insurance deduction codes, and enter a new code for the combined plan. However, you can’t delete a code if an employee has been paid under the code in the current year.
+You also can delete a pay, benefit, or deduction code. For example, perhaps your company had separate insurance plans for medical and dental expenses, but now is using one insurance plan for both. You must delete the medical and dental insurance deduction codes, and enter a new code for the combined plan. However, you can't delete a code if an employee has been paid under the code in the current year.
 
 **To inactivate a pay, benefit, or deduction code:**
 
@@ -2013,29 +2013,29 @@ You also can delete a pay, benefit, or deduction code. For example, perhaps your
 3. Choose Delete.
 
 > [!NOTE]
-> If the selected deduction code is assigned to an employee card, you can’t delete it, even if the employee card has been inactivated.
+> If the selected deduction code is assigned to an employee card, you can't delete it, even if the employee card has been inactivated.
 
 ### Chapter 4: Setting up taxes and compensation codes
 
-You can set up tax codes—including workers’ compensation, local, and unemployment taxes—that will be used as default entries for setting up employee taxes. You can apply changes to several employees’ tax cards at once and assign them to employee classes.
+You can set up tax codes—including workers' compensation, local, and unemployment taxes—that will be used as default entries for setting up employee taxes. You can apply changes to several employees' tax cards at once and assign them to employee classes.
 
-You don’t need to set up state and federal taxes, but can download the latest federal, FICA, and state tax tables from the CustomerSource Web site. We recommend that you enroll in an enhancement plan to ensure you will always be able to download the latest tax tables and any changes in supported tax forms.
+You don't need to set up state and federal taxes, but can download the latest federal, FICA, and state tax tables from the CustomerSource Web site. We recommend that you enroll in an enhancement plan to ensure you will always be able to download the latest tax tables and any changes in supported tax forms.
 
-Before setting up workers’ compensation codes, you should have completed *Setting up Payroll default entries* . To ensure reports are printed in the correct order, be sure that each deduction code has the same number of characters. The characters are sorted from left to right, and numbers take priority over letters.
+Before setting up workers' compensation codes, you should have completed *Setting up Payroll default entries* . To ensure reports are printed in the correct order, be sure that each deduction code has the same number of characters. The characters are sorted from left to right, and numbers take priority over letters.
 
 If taxes are not calculating as expected, review below:
 <https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly>
 
-Workers’ compensation codes are used to track the amount of workers’
+Workers' compensation codes are used to track the amount of workers'
 compensation taxes for which your company, as an employer, is liable.
 
 This information is contained in the following sections:
 
-- *Worker’s compensation tax calculation methods*
+- *Worker's compensation tax calculation methods*
 
-- *Workers’ compensation tax calculation methods for overtime*
+- *Workers' compensation tax calculation methods for overtime*
 
-- *Setting up workers’ compensation codes*
+- *Setting up workers' compensation codes*
 
 - *Local tax calculation methods*
 
@@ -2047,81 +2047,81 @@ This information is contained in the following sections:
 
 - *Setting up federal and state tax identification numbers*
 
-#### Worker’s compensation tax calculation methods
+#### Worker's compensation tax calculation methods
 
 A tax liability can be based on a specified percentage or amount. You can
-use one of the following four methods to calculate workers’ compensation
+use one of the following four methods to calculate workers' compensation
 tax.
 
-**Percent of Gross** Calculates the workers’ compensation tax liability as a
+**Percent of Gross** Calculates the workers' compensation tax liability as a
 percentage of gross earnings. If you use this method, indicate how tax on
 overtime pay—straight pay rate or overtime pay rate—should be calculated.
 Also, enter the tax percentage and the yearly wage limit established by the
 state for this code.
 
-**Fixed Amount** Calculates workers’ compensation tax liability as a fixed
+**Fixed Amount** Calculates workers' compensation tax liability as a fixed
 amount per employee on a monthly or quarterly basis. If you use this method,
 enter the tax amount per month or quarter. For example, the fixed amount
 could be \$100 per month per employee.
 
-**Number of Hours/Units** Calculates the workers’ compensation tax liability
+**Number of Hours/Units** Calculates the workers' compensation tax liability
 as a fixed amount per hour or unit per employee that you enter. Use the
 number of units for a piecework pay type. For example, if the fixed amount
 is \$2.00 an hour and the employee works 160 hours in a month, the total
-workers’ compensation would be \$320 for this employee.
+workers' compensation would be \$320 for this employee.
 
-**Days Worked** Calculates the workers’ compensation tax liability as a
+**Days Worked** Calculates the workers' compensation tax liability as a
 fixed amount per days worked per employee. If you select this method, enter
 the tax amount for each day worked. For example, if the tax amount was \$5
-per day worked and the employee worked 21 days, the workers’ compensation
+per day worked and the employee worked 21 days, the workers' compensation
 would be \$105.
 
 *You also must mark Track Days Worked in the Payroll Setup window and enter
 the number of days worked when entering transactions for taxes to be
 calculated correctly.*
 
-#### Workers’ compensation tax calculation methods for overtime
+#### Workers' compensation tax calculation methods for overtime
 
-If you use the Percent of Gross calculation method for workers’ compensation
+If you use the Percent of Gross calculation method for workers' compensation
 taxes, you must select a method for calculating the tax on overtime.
 
-**Straight Rate** The workers’ compensation tax will be calculated using the
+**Straight Rate** The workers' compensation tax will be calculated using the
 pay rate assigned to the pay card that the overtime pay is based on. For
 example, assume the pay rate is \$5 per hour, the overtime pay rate is
-\$7.50 per hour and the employee works 5 overtime hours. The workers’
+\$7.50 per hour and the employee works 5 overtime hours. The workers'
 compensation tax for overtime pay is calculated on \$25 (5 hours x \$5 per
 hour).
 
-**Overtime Pay Rate** The workers’ compensation tax will be calculated using
+**Overtime Pay Rate** The workers' compensation tax will be calculated using
 the overtime pay rate. For example, assume the pay rate is \$5 per hour, the
 overtime pay rate is \$7.50 per hour and the employee works 5 overtime
-hours. The workers’ compensation tax for overtime pay is calculated on
+hours. The workers' compensation tax for overtime pay is calculated on
 \$37.50 (5 hours x \$7.50 per hour).
 
-#### Setting up workers’ compensation codes
+#### Setting up workers' compensation codes
 
-Use the Workers’ Compensation Setup window to enter and maintain the tax
-rates and yearly wage limits for workers’ compensation codes.
+Use the Workers' Compensation Setup window to enter and maintain the tax
+rates and yearly wage limits for workers' compensation codes.
 
-**To set up workers’ compensation codes:**
+**To set up workers' compensation codes:**
 
-1. Open the Workers’ Compensation Setup window. (HR & Payroll \>\> Setup \>\>
-    Payroll \>\> Workers’ Compensation)
+1. Open the Workers' Compensation Setup window. (HR & Payroll \>\> Setup \>\>
+    Payroll \>\> Workers' Compensation)
 
-2. Enter a workers’ compensation code and description assigned by each state.
+2. Enter a workers' compensation code and description assigned by each state.
 
-*Some workers’ compensation codes have been provided for you. These codes
+*Some workers' compensation codes have been provided for you. These codes
 will be displayed in the lookup window. You can view the provided taxes
 using the Payroll Tax Setup window (Administration \>\> Setup \>\> System
 \>\> Payroll Tax).*
 
 1. Enter the two-character postal abbreviation for the state for which this
-    workers’ compensation code is being entered.
+    workers' compensation code is being entered.
 
 2. Select a tax calculation method.
 
     - If you select Percent of Gross, mark a calculation method for tax on
-        overtime pay. You can skip this step if you’ve selected any of the other
+        overtime pay. You can skip this step if you've selected any of the other
         calculation methods.
 
     - If you select Fixed Amount, enter the tax rate amount.
@@ -2132,7 +2132,7 @@ using the Payroll Tax Setup window (Administration \>\> Setup \>\> System
 
 3. Choose Save to store the code.
 
-4. Choose File \>\> Print to print a Workers’ Compensation Codes List to verify
+4. Choose File \>\> Print to print a Workers' Compensation Codes List to verify
     your information.
 
 #### Local tax calculation methods
@@ -2140,13 +2140,13 @@ using the Payroll Tax Setup window (Administration \>\> Setup \>\> System
 Local taxes include city and county income taxes. You can select up to five
 of the following calculation methods to be used in the calculation sequence.
 
-**Subtract Exemption** Subtracts employees’ local tax exemptions. If you
+**Subtract Exemption** Subtracts employees' local tax exemptions. If you
 select this calculation, enter the amount that should be multiplied by the
-number of exemptions specified on each employee’s local tax records.
+number of exemptions specified on each employee's local tax records.
 
 ##### **Check Minimum Annualized Taxable Wages** You can specify a minimum
 
-taxable wages amount. For example, a jurisdiction can’t tax an individual’s
+taxable wages amount. For example, a jurisdiction can't tax an individual's
 income if that annual income is less than \$10,000. If you select this
 calculation method, enter the minimum wages that must be earned before the
 tax will be calculated.
@@ -2155,7 +2155,7 @@ tax will be calculated.
 entered.
 
 **Apply Tax Table** Calculates the tax based on information in the tax table
-you’ve set up for this local tax code.
+you've set up for this local tax code.
 
 **Subtract Flat Tax Amount** Subtracts a flat amount each pay period.
 
@@ -2175,7 +2175,7 @@ plus year-to-date wages is greater than the limit.
 #### Setting up a local tax
 
 Use the Payroll Local Tax Setup window to maintain tax tables for local
-taxes. Employees’ local taxes can be calculated automatically for each pay
+taxes. Employees' local taxes can be calculated automatically for each pay
 run.
 
 The tax calculations will take place in the order that they appear in the
@@ -2183,7 +2183,7 @@ Sequence list. Therefore, it is important to be sure the order is correct or
 the calculations might differ. For example, if the order is Apply Tax Rate
 followed by Check Maximum Withholding, the tax rate will always be taken.
 However, if you have Check Maximum Withholding followed by Apply Tax Rate,
-the tax rate won’t be applied when the maximum amount is reached.
+the tax rate won't be applied when the maximum amount is reached.
 
 **To set up a local tax:**
 
@@ -2202,7 +2202,7 @@ the tax rate won’t be applied when the maximum amount is reached.
     in this window. The Payroll Local Tax Table window will open. *You can
     choose Tables at any time to edit the tax table for a local tax.*
 
-4. Enter the amount of the limit in the But Not Over field if an employee’s
+4. Enter the amount of the limit in the But Not Over field if an employee's
     annual wages are in a tax bracket where his or her wages are greater than a
     certain limit and less than or equal to the upper limit.
 
@@ -2222,16 +2222,16 @@ the tax rate won’t be applied when the maximum amount is reached.
 
 #### State and federal unemployment taxes
 
-You must download the latest payroll tax update from the Customersource web site to receive state and federal tax rates and wage limits—they are not included when you install Payroll. After you’ve downloaded the state and federal tax rates and wage limits, the wage limit for the state you entered or the federal wage limit will be displayed automatically in the Wage Limit field when you enter a two-character state abbreviation or FED (for federal unemployment tax) in the Tax Code field in the Unemployment Tax Setup
-window. You must manually enter the state tax rate that‘s been applied to your business.
+You must download the latest payroll tax update from the Customersource web site to receive state and federal tax rates and wage limits—they are not included when you install Payroll. After you've downloaded the state and federal tax rates and wage limits, the wage limit for the state you entered or the federal wage limit will be displayed automatically in the Wage Limit field when you enter a two-character state abbreviation or FED (for federal unemployment tax) in the Tax Code field in the Unemployment Tax Setup
+window. You must manually enter the state tax rate that's been applied to your business.
 
-*Unemployment tax rates or limits are not included in tax updates. If these change, you’ll need to manually enter the state tax rate that’s been applied to your business.*
+*Unemployment tax rates or limits are not included in tax updates. If these change, you'll need to manually enter the state tax rate that's been applied to your business.*
 
 **Previous state wages**
 
-If you’re setting up a state unemployment tax (SUTA), you have the option to include wages earned by the employee in other states to determine whether individual employees have met state unemployment wage limits.
+If you're setting up a state unemployment tax (SUTA), you have the option to include wages earned by the employee in other states to determine whether individual employees have met state unemployment wage limits.
 
-For example, assume one of your employees worked at your company’s North Dakota branch for a period of time in the current year, and he or she earned \$5,000. That employee then went to work at your company’s California branch, where he or she earned \$12,000.
+For example, assume one of your employees worked at your company's North Dakota branch for a period of time in the current year, and he or she earned \$5,000. That employee then went to work at your company's California branch, where he or she earned \$12,000.
 
 Also, assume the SUTA wage limits for these states are:
 
@@ -2239,13 +2239,13 @@ Also, assume the SUTA wage limits for these states are:
 
 - California \$7,000
 
-If California doesn’t allow previously earned wages to be included in determining SUTA wage limits, you—the employer—are required to pay SUTA taxes based upon the following wages.
+If California doesn't allow previously earned wages to be included in determining SUTA wage limits, you—the employer—are required to pay SUTA taxes based upon the following wages.
 
 - To North Dakota based upon \$5,000
 
 - To California based upon \$7,000
 
-The wages earned in North Dakota can’t be included in reaching the \$7,000 SUTA wage limit for California. The entire \$7,000 wage limit for California must be met using wages earned in California.
+The wages earned in North Dakota can't be included in reaching the \$7,000 SUTA wage limit for California. The entire \$7,000 wage limit for California must be met using wages earned in California.
 
 However, if California allows previously earned wages to be included in
 determining SUTA wage limits, you—the employer—are required to pay SUTA
@@ -2256,24 +2256,24 @@ taxes based upon the following wages:
 - To California based upon \$2,000
 
 The \$5,000 of wages earned in North Dakota can be used to reach
-California’s SUTA wage limit. An additional \$2,000 of wages earned in
-California is all that’s needed to meet the \$7,000 limit.
+California's SUTA wage limit. An additional \$2,000 of wages earned in
+California is all that's needed to meet the \$7,000 limit.
 
 **Tax-sheltered annuities**
 
-You also have the option to include employees’ tax-sheltered annuities (TSA)
+You also have the option to include employees' tax-sheltered annuities (TSA)
 in the amount of wages subject to unemployment taxes.
 
 For example, assume an employee is paid \$800 each pay period, and \$20 from
 each paycheck is put into a tax-sheltered annuity.
 
-If you don’t include tax-sheltered annuities in the amount of wages subject
+If you don't include tax-sheltered annuities in the amount of wages subject
 to unemployment taxes, the amount that will appear as unemployment taxable
 wages on the Monthly or Quarterly Unemployment Reports will be \$780.
 
 If you do include tax-sheltered annuities in the amount of wages subject to
 unemployment taxes, the amount that will appear as unemployment taxable
-wages on the reports will be \$800. The \$20 TSA amount won’t be deducted
+wages on the reports will be \$800. The \$20 TSA amount won't be deducted
 from the total pay amount when state and federal wage limits are determined.
 
 The TSA Deductions list in the Unemployment Tax Setup window displays all
@@ -2288,9 +2288,9 @@ Use the Unemployment Tax Setup window to enter unemployment tax rates used
 to calculate state and federal unemployment tax amounts for which your
 company is liable as an employer.
 
-If you’re entering a state unemployment tax, enter the two-character postal
+If you're entering a state unemployment tax, enter the two-character postal
 abbreviation for the state you want to enter unemployment tax information
-for. If you’re entering federal unemployment tax, enter FED as the tax code.
+for. If you're entering federal unemployment tax, enter FED as the tax code.
 
 **To set up an unemployment tax:**
 
@@ -2301,11 +2301,11 @@ for. If you’re entering federal unemployment tax, enter FED as the tax code.
 
 3. Enter your employer ID number.
 
-    - If you’re entering federal unemployment tax (FUTA), enter your company’s
+    - If you're entering federal unemployment tax (FUTA), enter your company's
         federal employer identification number. This is the number that will be
         used on W-2 statements for the federal ID number.
 
-    - If you’re entering state unemployment tax (SUTA), enter your company’s
+    - If you're entering state unemployment tax (SUTA), enter your company's
         state ID number. This is the number that will be used on W-2 statements
         for the state ID number.
 
@@ -2353,8 +2353,8 @@ You can set up employee classes to make entering employee information easier
 and to save data entry time. You can use employee classes to group employee
 information according to common entries. For example, you can create classes
 for hourly employees, temporary employees, part-time employees, or any other
-similar characteristics. After you’ve identified the different classes that
-you’ll need for employee cards, group the employee cards into classes, and
+similar characteristics. After you've identified the different classes that
+you'll need for employee cards, group the employee cards into classes, and
 identify those classes by assigning class IDs. You might find it helpful if
 you name each class ID something that describes the class. For example, you
 could name a class CLERKS or
@@ -2364,7 +2364,7 @@ MACHINISTS.
 By creating and assigning classes, you can speed up data entry for new
 employee cards and transactions by providing default entries. For each
 class, you can enter as much information as you need. If default information
-for the specific class doesn’t pertain to a particular employee, you can
+for the specific class doesn't pertain to a particular employee, you can
 change the information for that employee in the Employee Maintenance window.
 
 > [!IMPORTANT]
@@ -2393,13 +2393,13 @@ accruing vacation time in a class from Hours Worked to Set Hours and apply
 the changes so that for all the employee cards in the class, Set Hours is
 the vacation accrual method.
 
-If you’re using Human Resources, do not assign deduction or benefit codes to
+If you're using Human Resources, do not assign deduction or benefit codes to
 employee classes. Such assignments only apply in Payroll but not in Human
 Resources.
 
 You can choose not to apply the changes to existing employee cards. New
 employee cards added to the class will have Set Hours as the vacation
-accrual method, but existing cards won’t be affected by the change.
+accrual method, but existing cards won't be affected by the change.
 
 *If an employee record from a particular class has been customized and
 changed from the original class, you will be asked if those changes should
@@ -2408,45 +2408,22 @@ down.*
 
 #### Accrual methods for vacation and sick time
 
-Use the Employee Vacation-Sick Time Maintenance window to specify an accrual
-method for vacation and sick time. You have the option to automatically
-accrue employee vacation and sick time. By doing this, the Payroll system
-will automatically calculate your employees’ vacation and sick time and will
-decrease vacation and sick time as hours are taken, whether you’re accruing
-vacation and sick time or not. You can have a warning displayed when the
-available vacation or sick time for an employee is below zero.
+Use the Employee Vacation-Sick Time Maintenance window to specify an accrual method for vacation and sick time. You have the option to automatically accrue employee vacation and sick time. By doing this, the Payroll system will automatically calculate your employees' vacation and sick time and will decrease vacation and sick time as hours are taken, whether you're accruing vacation and sick time or not. You can have a warning displayed when the available vacation or sick time for an employee is below zero.
 
-If you’re using Human Resources, you can accrue vacation and sick time using
-different accrual methods. Refer to the “Attendance setup” chapter in the
-Human Resources manual for more information.
+If you're using Human Resources, you can accrue vacation and sick time using different accrual methods. Refer to the "Attendance setup" chapter in the Human Resources manual for more information.
 
-You also have the option to accrue vacation and/or sick time automatically
-for some employees and not for others. You can set up your Payroll system so
-each employee’s vacation and/or sick time pay can be accrued by different
-methods. At least two scenarios are possible, as outlined in the following
-examples. The examples given are for vacation pay, but sick pay can be
-treated the same way.
+You also have the option to accrue vacation and/or sick time automatically for some employees and not for others. You can set up your Payroll system so each employee's vacation and/or sick time pay can be accrued by different methods. At least two scenarios are possible, as outlined in the following examples. The examples given are for vacation pay, but sick pay can be treated the same way.
 
-##### **Accrue Vacation or Accrue Sick Time is not marked** If the number of
+##### Accrue Vacation or Accrue Sick Time is not marked
 
-hours per year for vacation and sick time is set at the beginning of each
-year, you must enter the number of hours that can be taken during the year.
-Then enter the number of vacation and sick time hours this employee has
-available for the year. In this case, all vacation and sick time hours will
-be available to the employee as soon as the new year begins.
+If the number of hours per year for vacation and sick time is set at the beginning of each
+year, you must enter the number of hours that can be taken during the year. Then, enter the number of vacation and sick time hours this employee has available for the year. In this case, all vacation and sick time hours will be available to the employee as soon as the new year begins.
 
-##### **Accrue Vacation or Accrue Sick Time is marked** If an employee can
+##### Accrue Vacation or Accrue Sick Time is marked
 
-accrue a specified number of vacation and sick time hours throughout the
-year, you must enter the number of vacation and sick time hours that can be
-taken during the year. Then enter the number of vacation and sick time hours
-this employee has remaining for the year—the number of hours currently
-available to the employee. The hours available will increase as hours are
-accrued. Employees are able to take vacation and sick time hours for greater
-than the amount of vacation and sick time hours available. As a result, the
-vacation and sick time available will be a negative amount.
+If an employee can accrue a specified number of vacation and sick time hours throughout the year, you must enter the number of vacation and sick time hours that can be taken during the year. Then enter the number of vacation and sick time hours this employee has remaining for the year—the number of hours currently available to the employee. The hours available will increase as hours are accrued. Employees are able to take vacation and sick time hours for greater than the amount of vacation and sick time hours available. As a result, the vacation and sick time available will be a negative amount.
 
-**Hours Worked**
+##### Hours Worked
 
 To accrue vacation and sick time by the Hours Worked method, the number of
 hours that accrue each pay period will be calculated using the following
@@ -2466,10 +2443,9 @@ window. For example:
 
 - (40 x 80) / 2080 = 1.5 hours of vacation accrued
 
-**Set Hours**
+##### Set Hours
 
-To accrue vacation and sick time by Set Hours, enter the number of hours
-that should be accrued each pay period for the employee.
+To accrue vacation and sick time by Set Hours, enter the number of hours that should be accrued each pay period for the employee.
 
 Available vacation and sick time might be higher than the hours per year.
 For example, your employees might be allowed to carry over unused vacation
@@ -2482,13 +2458,13 @@ field will be updated each pay run for the 40 hours for the year.
 #### Creating an employee class
 
 Use the Employee Class Setup window to set up and assign your employees to
-employee classes. You don’t have to enter information in every field.
+employee classes. You don't have to enter information in every field.
 However, the more information you enter, the faster data entry will be when
 you set up new employee cards using the Employee Maintenance window.
 
 We recommend that you enter the class with the most common entries first and
 mark this class as your default class. You can mark Default in the Employee
-Class Setup window and the information you’ve set up for this class
+Class Setup window and the information you've set up for this class
 automatically appears as the default information for every subsequent class
 you create. You can have only one default employee class.
 
@@ -2497,70 +2473,33 @@ you create. You can have only one default employee class.
 1. Open the Employee Class Setup window. (HR & Payroll \>\> Setup \>\> Payroll
     \>\> Employee Class)
 
-![A screenshot of a cell phone Description automatically generated](media/aada160ae5174faaeae194812022ee9e.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/aada160ae5174faaeae194812022ee9e.jpg)
 
-A screenshot of a cell phone Description automatically generated
+2. Enter an ID and description for the class.
 
-A screenshot of a cell phone Description automatically generated
+3. Enter or select the department and position codes that apply to the majority of employees in the class.
 
-A screenshot of a cell phone Description automatically generated
+4. Enter or select the state to which unemployment taxes are paid and the workers' compensation code for the employees in the class.
 
-A screenshot of a cell phone Description automatically generated
+5. Enter the minimum amount that the employees in the class must receive in each paycheck, if any, and the number of hours the employees in the class typically work in a year. This information will be used to calculate accrued vacation, sick time, and salary amounts.
 
-A screenshot of a cell phone Description automatically generated
+6. Enter user-defined information. If you have set up user-defined fields,these fields will be displayed.
 
-A screenshot of a cell phone Description automatically generated
+7. Mark Calculate Minimum Wage Balance if the majority of employees in the class must be paid at least the minimum wage when their regular wage plus tips does not equal the minimum wage. Calculate Minimum Wage Balance can only be used with pay codes that have charged tips or reported tip pay types.
 
-A screenshot of a cell phone Description automatically generated
+8. Select an employment type.
 
-1. Enter an ID and description for the class.
+9. Select where to post the net pay for the employees in the class. You can post to the cash account used for the checkbook or to an account that you can specify for each employee. If you post to the account specified for an employee, enter an account to use for each employee in the class.
 
-2. Enter or select the department and position codes that apply to the majority
-    of employees in the class.
+10. Enter vacation and sick time accrual information. Refer to *Accrual methods for vacation and sick time* for more information about accruing vacation and sick time. If you selected Human Resources as your accrue type in the Attendance Setup window, these accrue vacation and sick time fields are not available.
 
-3. Enter or select the state to which unemployment taxes are paid and the
-    workers’ compensation code for the employees in the class.
+11. Choose Codes to assign codes to the class in the Employee Class Code Setup window. For more information, refer to *Assigning codes to an employee class* .
 
-4. Enter the minimum amount that the employees in the class must receive in
-    each paycheck, if any, and the number of hours the employees in the class
-    typically work in a year. This information will be used to calculate accrued
-    vacation, sick time, and salary amounts.
+12. If you're using Project Accounting, choose Projects to specify the employer, employment type, employee expense setting, pay code, profit settings, and posting accounts for an employee class. Refer to the Project Accounting documentation for more information.
 
-5. Enter user-defined information. If you have set up user-defined fields,
-    these fields will be displayed.
+13. Choose File \>\> Print to print an Employee Class List to verify your information.
 
-6. Mark Calculate Minimum Wage Balance if the majority of employees in the
-    class must be paid at least the minimum wage when their regular wage plus
-    tips does not equal the minimum wage. Calculate Minimum Wage Balance can
-    only be used with pay codes that have charged tips or reported tip pay
-    types.
-
-7. Select an employment type.
-
-8. Select where to post the net pay for the employees in the class. You can
-    post to the cash account used for the checkbook or to an account that you
-    can specify for each employee. If you post to the account specified for an
-    employee, enter an account to use for each employee in the class.
-
-9. Enter vacation and sick time accrual information. Refer to *Accrual methods
-    for vacation and sick time* for more information about accruing vacation and
-    sick time. If you selected Human Resources as your accrue type in the
-    Attendance Setup window, these accrue vacation and sick time fields are not
-    available.
-
-10. Choose Codes to assign codes to the class in the Employee Class Code Setup
-    window. For more information, refer to *Assigning codes to an employee
-    class* .
-
-11. If you’re using Project Accounting, choose Projects to specify the employer,
-    employment type, employee expense setting, pay code, profit settings, and
-    posting accounts for an employee class. Refer to the Project Accounting
-    documentation for more information.
-
-12. Choose File \>\> Print to print an Employee Class List to verify your
-    information.
-
-13. Choose Save.
+14. Choose Save.
 
 #### Employee class and position setup options for tracking tips
 
@@ -2582,41 +2521,40 @@ Use the Employee Class Code Setup window to assign pay codes, deduction
 codes, benefit codes, state tax codes, and local tax codes to an employee
 class.
 
-**To assign codes to an employee class:**
+##### To assign codes to an employee class
 
 1. Open the Employee Class Setup window.
 
-(HR & Payroll \>\> Setup \>\> Payroll \>\> Employee Class)
+    (HR & Payroll \>\> Setup \>\> Payroll \>\> Employee Class)
 
-1. Enter or select a class ID and choose Codes to open the Employee Class Code
+2. Enter or select a class ID and choose Codes to open the Employee Class Code
     Setup window.
 
-2. Select a code type to assign to the employee class.
+3. Select a code type to assign to the employee class.
 
-3. Select each code that you want to assign to the class from the Available
+4. Select each code that you want to assign to the class from the Available
     Codes list.
 
-4. Choose Insert to add the code to the Assigned Codes list.
+5. Choose Insert to add the code to the Assigned Codes list.
 
-5. Choose OK to close the window and return to the Employee Class Setup window.
+6. Choose OK to close the window and return to the Employee Class Setup window.
 
 #### Deleting or changing an employee class
 
-If an employee class has become obsolete and you’re not planning to use it
+If an employee class has become obsolete and you're not planning to use it
 again in the future, you can delete it. In some circumstances, you might
 need to change an existing employee class to reflect changes, such as adding
-a new pay code. If you change an existing employee class, you’ll have the
+a new pay code. If you change an existing employee class, you'll have the
 option to apply the changes to all employee cards in the class.
 
 If the class that you want to change has been assigned to employees, we
 recommend that you print an employee list before making changes to determine
 how changing the class will affect those employee cards.
 
-*If an employee record from a particular class has been customized and
-changed from the original class, you will be asked if the employee class is
-changed and if those changes should be rolled down.*
+> [!NOTE]
+> If an employee record from a particular class has been customized and changed from the original class, you will be asked if the employee class is changed and if those changes should be rolled down.
 
-**To delete or change an employee class:**
+##### To delete or change an employee class
 
 1. Open the Employee Class Setup window. (HR & Payroll \>\> Setup \>\> Payroll
     \>\> Employee Class)
@@ -2625,14 +2563,12 @@ changed and if those changes should be rolled down.*
 
 3. Choose Delete to delete the class.
 
-*Deleting an employee class won’t affect the existing employee cards
-assigned to the class. However, you won’t be able to apply changes to this
-group in the future.*
+    > [!NOTE]
+    > Deleting an employee class won't affect the existing employee cards assigned to the class. However, you won't be able to apply changes to this group in the future.
 
-1. To change the class, select the field and enter the new information.
+4. To change the class, select the field and enter the new information.
 
-2. Choose Save to store your changes. You’ll have the option to apply changes
-    to all the employee cards assigned to the class.
+5. Choose Save to store your changes. You'll have the option to apply changes to all the employee cards assigned to the class.
 
 ## Part 2: Cards
 
@@ -2642,17 +2578,17 @@ you start using Payroll at a time other than the beginning of a calendar year.
 
 The following information is discussed:
 
-- *Chapter 6, “Employee cards,”* explains how to create employee cards to
+- *Chapter 6, "Employee cards,"* explains how to create employee cards to
     track the status of employees and to print reports.
 
-- *Chapter 7, “Tax cards,”* describes how to create tax cards to track your
-    individual employees’ tax liabilities to various government agencies.
+- *Chapter 7, "Tax cards,"* describes how to create tax cards to track your
+    individual employees' tax liabilities to various government agencies.
 
-- *Chapter 8, “Deduction and benefit cards,”* describes how to enter employee
+- *Chapter 8, "Deduction and benefit cards,"* describes how to enter employee
     deduction and benefit cards based on the company deductions and benefits you
     have already set up.
 
-- *Chapter 9, “Beginning balances,”* explains how to enter beginning balances
+- *Chapter 9, "Beginning balances,"* explains how to enter beginning balances
     to ensure that your monthly, quarterly, and yearly financial amounts are
     correct, as well as to correctly process W-2 statements at the end of the
     year.
@@ -2661,8 +2597,8 @@ The following information is discussed:
 
 Employee cards are the foundation of your Payroll system. This information
 is used to track the status of employees, to write letters, and to print
-reports. It’s important to keep this information up to date to reflect your
-company’s current activity.
+reports. It's important to keep this information up to date to reflect your
+company's current activity.
 
 This information is contained in the following sections:
 
@@ -2689,16 +2625,16 @@ This information is contained in the following sections:
 Use the Employee Maintenance window to enter an employee card. When entering
 your first employee cards, consider how to arrange your current and future
 employee cards. You can assign specific identification numbers or other
-types of IDs to different groups of employees. After you’ve determined the
+types of IDs to different groups of employees. After you've determined the
 most appropriate numbering system for your employee cards, use it
 consistently for the best results when printing reports and using other
 Payroll windows.
 
 To ensure reports are printed in the correct order, be sure that each
-employee ID has the same number of characters, if you’re using numeric
+employee ID has the same number of characters, if you're using numeric
 characters. The characters are sorted from left to right, and numbers take
-priority over letters. If you don’t use the same number of characters for
-employee IDs, the numbering system won’t be consistent, and your employee
+priority over letters. If you don't use the same number of characters for
+employee IDs, the numbering system won't be consistent, and your employee
 IDs might not be listed in the order you intended.
 
 You can automatically assign employee IDs in the Payroll Setup window. Each
@@ -2712,7 +2648,7 @@ You can categorize employee information by classes when you enter employee
 cards. A class will supply default values for many fields, making data entry
 easier and faster. If an individual employee card requires different
 information, you can override the default information for that employee.
-Refer to *Chapter 5, “Setting up employee classes,”* for more information.
+Refer to *Chapter 5, "Setting up employee classes,"* for more information.
 
 If you are setting up cards for employees who earn tips in addition to
 regular wages, refer to *Employee class and position setup options for
@@ -2725,39 +2661,39 @@ tracking tips* for more information.
 
     ![A screenshot](media/6a0e4daae9eb17c33aa058f859855385.jpg)
 
-1. Enter an employee ID. *If you don’t enter an employee ID, Payroll retrieves
+1. Enter an employee ID. *If you don't enter an employee ID, Payroll retrieves
     the next employee ID for this field if employee IDs were auto-assigned in
     the Payroll Setup window.*
 
 2. You can enter or select a class ID to assign this employee to a class.
 
-3. Enter the employee’s full name and Social Security number. *The Payroll
-    system will validate the Social Security number. If it’s not a valid number,
-    an error message will be displayed. If you’re not sure of the number, you
-    can enter all zeros and replace it later with the employee’s Social Security
+3. Enter the employee's full name and Social Security number. *The Payroll
+    system will validate the Social Security number. If it's not a valid number,
+    an error message will be displayed. If you're not sure of the number, you
+    can enter all zeros and replace it later with the employee's Social Security
     number.*
 
 4. Enter the date the employee started working. If you use adjusted hire dates
     for attendance or reviews, enter the adjusted hire date for the employee. If
-    you don’t enter an adjusted hire date, the hire date will be displayed in
+    you don't enter an adjusted hire date, the hire date will be displayed in
     the Adjusted Hire Date field.
 
 5. Enter or select the primary state to which unemployment taxes are paid and
-    enter or select the workers’ compensation code for the employee.
+    enter or select the workers' compensation code for the employee.
 
-6. Select the employee’s employment type, and enter an address and phone
+6. Select the employee's employment type, and enter an address and phone
     number.
 
 7. Enter or select the department code for the primary department the employee
-    works in, as well as the position code for the employee’s primary position.
-    If you enter a code that doesn’t already exist, you’ll have the option to
+    works in, as well as the position code for the employee's primary position.
+    If you enter a code that doesn't already exist, you'll have the option to
     enter the information needed to add the code.
 
-    If you’ve selected a class, this information will appear as a default entry. You can override any of the default information, if necessary.
+    If you've selected a class, this information will appear as a default entry. You can override any of the default information, if necessary.
 
 1. Enter or select a location and supervisor for the employee.
 
-2. If you’re using Human Resources, you can use the following fields and
+2. If you're using Human Resources, you can use the following fields and
     buttons to enter additional employee information.
 
 **Division** Enter or select the division the employee works in.
@@ -2787,20 +2723,20 @@ window, this button will not be available.*
     can store additional employee addresses. For more information, refer to
     *Entering an employee address card* .
 
-3. If you’re using Project Accounting, choose Projects to specify the
-    employee’s employer, employment type, employee expense setting, pay code,
+3. If you're using Project Accounting, choose Projects to specify the
+    employee's employer, employment type, employee expense setting, pay code,
     profit settings, posting accounts, and overhead computation. Refer to the
     Project Accounting documentation for more information.
 
 4. Choose File \>\> Print to print a Detailed Employee List to verify your
-    information. Refer to *Chapter 15, “Payroll reports,”* for more information
+    information. Refer to *Chapter 15, "Payroll reports,"* for more information
     about printing reports.
 
 5. You can choose Write Letters to open the Letter Writing Assistant to create
     new letters or prepare prewritten, preformatted employee letters in
     Microsoft Word, such as benefit enrollment notices and birthday letters. For
     more information, refer to Microsoft Software Integration in the System
-    User’s Guide.
+    User's Guide.
 
 6. Choose Save in the Employee Maintenance window. If you marked the employee
     card as inactive, Payroll automatically inactivates all records pertaining
@@ -2830,18 +2766,18 @@ hours per year, and posting account information.
 
 ![A screenshot ](media/0a325f909f1f1ee2d85f5d4a4be08034.jpg)
 
-1. Enter the employee’s birth date, nickname, and alternate name—if applicable—
-    and select the employee’s gender.
+1. Enter the employee's birth date, nickname, and alternate name—if applicable—
+    and select the employee's gender.
 
-2. Select an ethnic origin and the employee’s marital status, and enter the
-    employee’s spouse’s name and Social Security number, if applicable.
+2. Select an ethnic origin and the employee's marital status, and enter the
+    employee's spouse's name and Social Security number, if applicable.
 
 3. Mark Calculate Minimum Wage Balance if this employee must be paid at least
     the minimum wage when their regular wage plus tips does not equal the
     minimum wage.
 
 4. Enter an amount if there is a minimum amount that the employee must receive
-    in each paycheck. Taxes will still be deducted from the employee’s pay;
+    in each paycheck. Taxes will still be deducted from the employee's pay;
     however, some deductions may not be deducted.
 
 5. Enter the number of hours the employee will work in a year.
@@ -2861,7 +2797,7 @@ adjustments for salary pay.
     specified for the employee, mark Employee and enter an account to use for
     the employee.
 
-*If you’re using Bank Reconciliation, it’s a good idea to use the cash
+*If you're using Bank Reconciliation, it's a good idea to use the cash
 account from the checkbook so that you can easily reconcile the cash account
 entered in the Checkbook Maintenance window for a checkbook with the cash
 account balance in General Ledger.*
@@ -2876,7 +2812,7 @@ account balance in General Ledger.*
 Use the Payroll Quick Employee Assignment window to quickly assign active
 pay codes, deduction codes, and benefit codes to an employee.
 
-If you’re using Human Resources, do not use the Payroll Quick Employee
+If you're using Human Resources, do not use the Payroll Quick Employee
 Assignment window to assign deduction or benefit codes. Such assignments
 apply only in Payroll, and not in Human Resources.
 
@@ -2899,7 +2835,7 @@ apply only in Payroll, and not in Human Resources.
 7. Choose OK to save your changes.
 
 > [!NOTE]
-> The SUTA and workers’ compensations codes are taken from the Employee Maintenance window. If that information does not exist, you must enter it in the Employee Maintenance window. A message will appear if any of the selected pay codes or benefit codes are subject to SUTA, or if a workers’ compensation code was created in the Workers’ Compensation Setup window.
+> The SUTA and workers' compensations codes are taken from the Employee Maintenance window. If that information does not exist, you must enter it in the Employee Maintenance window. A message will appear if any of the selected pay codes or benefit codes are subject to SUTA, or if a workers' compensation code was created in the Workers' Compensation Setup window.
 
 #### Inactivating an employee card
 
@@ -2928,13 +2864,13 @@ employee cards.*
 4. Enter the date the card was inactivated and the reason why.
 
 5. Assign a secondary status code if you need to provide more detail about the
-    employee’s current status.
+    employee's current status.
 
 6. Choose Save to save the change.
 
 You can reactivate an employee card by unmarking Inactive and choosing Save.
 The Reactivate Employee window will open, where you can reactivate the
-employee cards. Choose OK when you’ve finished. For more information, refer
+employee cards. Choose OK when you've finished. For more information, refer
 to *Reactivating an employee card* .
 
 #### Reactivating an employee card
@@ -2972,19 +2908,19 @@ active employees is less than the number your company is registered for.
 
     - Direct Deposit
 
-    If you’re using Human Resources and you selected Human Resources as your accrue type in the Attendance Setup window, you can mark the Time Records option.
+    If you're using Human Resources and you selected Human Resources as your accrue type in the Attendance Setup window, you can mark the Time Records option.
 
 1. Choose OK. All marked records will be reactivated.
 
 #### Deleting or changing an employee card
 
 Use the Employee Maintenance window to delete or change an employee card.
-You can delete an employee card if you’re not planning to use it in the
+You can delete an employee card if you're not planning to use it in the
 future. You also have the option to change information on cards to reflect
 changes such as a pay rate or the number of exemptions.
 
 *If summary information exists for an employee, such as monthly, quarterly
-or yearly information, you can’t delete the employee. You can only delete
+or yearly information, you can't delete the employee. You can only delete
 the employee at the end of the year. Refer to Removing inactive records .*
 
 **To delete or change an employee card:**
@@ -3063,12 +2999,12 @@ describe each type of pay. You also can assign pay types to pay codes. For
 example, you might assign an hourly pay type to the pay code, HOUR.
 
 For overtime, double-time, vacation, sick time, and holiday pay types,
-select the pay code the pay type is based on. For example, if you’re setting
+select the pay code the pay type is based on. For example, if you're setting
 up an overtime pay card for an employee with an hourly pay type, you need to
-base the overtime pay type upon the employee’s hourly pay. Refer to *Setting
+base the overtime pay type upon the employee's hourly pay. Refer to *Setting
 up pay codes* for more information about the different pay types.
 
-You can apply a pay step table to an employee’s pay code if you are using
+You can apply a pay step table to an employee's pay code if you are using
 Human Resources and you have marked the Use Pay Steps/Grades option in the
 Human Resources Preferences window. For more information about pay steps,
 refer to the Human Resources documentation.
@@ -3107,11 +3043,11 @@ employee card .*
     If your business needs require complex overtime calculations, consider using Overtime Rate Manager, which is included with Payroll Extensions. This module is part of the Human Resources and Payroll Suite, which can be installed as an additional product.
 
 1. Enter the pay rate. The Payroll system adjusts the pay factor to equal this
-    code’s pay rate divided by the base code pay rate, if any.
+    code's pay rate divided by the base code pay rate, if any.
 
     - If the pay type is Earned Income Credit, leave the Pay Rate field blank
         to use the EIC tables supplied with Payroll to calculate the EIC
-        payment. If you don’t use the EIC tables that are supplied, enter an
+        payment. If you don't use the EIC tables that are supplied, enter an
         amount.
 
     - If the pay type is Piecework, enter the name of the unit of work. This
@@ -3133,13 +3069,13 @@ employee card .*
 
 3. Enter or select a shift code to assign to this pay code, if applicable.
 
-    The SUTA state and workers’ compensation code entered in the Employee Maintenance window for this employee will appear as default entries. You have the option of changing these codes.
+    The SUTA state and workers' compensation code entered in the Employee Maintenance window for this employee will appear as default entries. You have the option of changing these codes.
 
 1. Enter or select the state (using the two-letter abbreviation) for SUTA
     (state unemployment tax). If you are using pay steps, current and future pay
     rates for the employee are calculated.
 
-2. Enter or select the workers’ compensation code, if applicable.
+2. Enter or select the workers' compensation code, if applicable.
 
 3. Enter the maximum amount per pay period for commission and business expense
     pay types.
@@ -3152,7 +3088,7 @@ employee card .*
     manual entry of a step or grade number, a step effective date, and an FTE
     factor.
 
-6. Enter or select a pay step table ID. You can’t change this field if the
+6. Enter or select a pay step table ID. You can't change this field if the
     selected pay code is based on another pay code.
 
 7. If you selected Manual for the basis of step increases, enter or select a
@@ -3171,7 +3107,7 @@ employee card .*
     For more information about accruing methods, refer to *Accrual methods for
     vacation and sick time* .
 
-    If you’re using Human Resources and have Human Resources marked as the accrue type in the Attendance Setup window, these fields will not be available. Refer to the Human Resources documentation for more information.
+    If you're using Human Resources and have Human Resources marked as the accrue type in the Attendance Setup window, these fields will not be available. Refer to the Human Resources documentation for more information.
 
 1. Enter W-2 information if the pay type is Business Expense.
 
@@ -3179,8 +3115,8 @@ employee card .*
 
     If the amount must be reported in multiple locations on the W-2 statement, use the browse buttons to select an additional location, and enter the appropriate box number and label. You can specify as many as four locations.
 
-1. If you’re using Human Resources, choose Human Resources to open the Employee
-    Pay Code HR Maintenance window, where you can enter and edit the employee’s
+1. If you're using Human Resources, choose Human Resources to open the Employee
+    Pay Code HR Maintenance window, where you can enter and edit the employee's
     position and pay code information and earnings history. For more
     information, see the Human Resources documentation.
 
@@ -3190,12 +3126,12 @@ Changes made to a pay code can be reflected in any pay codes that are based on i
 
 ### Chapter 7: Tax cards
 
-You can set up tax cards and use them to track your individual employees’
+You can set up tax cards and use them to track your individual employees'
 tax liabilities to various government agencies.
 
 Before you can set up tax cards, you must download federal, state, and local
 tax tables from the CustomerSource Web site by using the Payroll Update. For
-more information, see *Chapter 19, “Payroll updates.”*
+more information, see *Chapter 19, "Payroll updates."*
 
 This information is contained in the following sections:
 
@@ -3236,14 +3172,14 @@ for federal taxes.
 
 2. Select the appropriate federal filing status for the employee. This status
     determines the tax table that will be used to calculate federal taxes. If
-    the only option is Exempt, tax tables aren’t installed. Use the
+    the only option is Exempt, tax tables aren't installed. Use the
     CustomerSource Web site to download tax tables.
 
 3. If the employee is eligible for advanced earned income credit payments,
     select the appropriate Earned Income Credit (EIC) filing status for this
     employee. This status determines the tax table that will be used to
     calculate EIC payments. If the only option is Not Eligible, tax tables
-    aren’t installed. Use CustomerSource to download tax tables.
+    aren't installed. Use CustomerSource to download tax tables.
 
 4. Enter the number of exemptions the employee has claimed on his or her W-4
     form.
@@ -3268,11 +3204,11 @@ for federal taxes.
     Qualified Government Employee if the employee is exempt from FICA Social
     Security tax but is subject to FICA Medicare tax.
 
-9. Mark the Withhold New York State Tax Difference if the employee’s state of
+9. Mark the Withhold New York State Tax Difference if the employee's state of
     residence is New York, but the tax withholding state is a different state.
 
 10. Mark the W-2 boxes that apply to the employee. These boxes will be marked on
-    the employee’s W-2 form when you print W-2 statements.
+    the employee's W-2 form when you print W-2 statements.
 
 11. Choose State Tax to open the Employee State Tax Maintenance window where you
     can enter state tax information. For more information, refer to *Entering an
@@ -3288,7 +3224,7 @@ for federal taxes.
 #### Entering an employee state tax card
 
 Use the Employee State Tax Maintenance window to enter and maintain employee
-state tax cards. Employee state tax cards track individual employees’ tax
+state tax cards. Employee state tax cards track individual employees' tax
 liability to various state government agencies. You also have the option of
 setting up multiple state taxes for each employee. For example, if an
 employee works in two states, you might need to set up two state tax cards.
@@ -3302,20 +3238,20 @@ employee works in two states, you might need to set up two state tax cards.
 
 1. Enter or select an employee ID.
 
-2. Enter the state code for which the employee’s income tax is withheld.
+2. Enter the state code for which the employee's income tax is withheld.
 
 3. Select the appropriate filing status for the employee. The options available
     will depend on the state code you entered. *If no filing status exists for a
     state, Not Applicable will appear in the Filing Status list.*
 
-4. Enter the number of dependents claimed by this employee as exemptions. Don’t
-    count the employee’s own exemption or that of his or her spouse.
+4. Enter the number of dependents claimed by this employee as exemptions. Don't
+    count the employee's own exemption or that of his or her spouse.
 
 5. Enter the number of personal or itemized exemptions claimed by this
     employee.
 
 6. Enter the amount that should be withheld from each paycheck if the employee
-    indicated on the state’s equivalent of the W-4 form that additional taxes
+    indicated on the state's equivalent of the W-4 form that additional taxes
     should be withheld from each paycheck. This amount will be added to either
     the calculated or estimated state withholding to determine the total state
     withholding for each pay run.
@@ -3330,17 +3266,17 @@ employee works in two states, you might need to set up two state tax cards.
     - For the state of Mississippi, enter the total exemption amount claimed
         on the 62-420 form.
 
-8. Mark all the exemptions that the employee has claimed on his or her state’s
+8. Mark all the exemptions that the employee has claimed on his or her state's
     equivalent of the W-4 form. These exemptions are for state tax purposes
     only. *Choose Summary in the Employee State Tax Maintenance window to view
     state tax amounts or financial information for an employee.*
 
-9. Choose Save to save the employee state tax information you’ve entered.
+9. Choose Save to save the employee state tax information you've entered.
 
 #### Entering an employee local tax card
 
 Use the Employee Local Tax Maintenance window to enter and maintain employee
-local tax cards. Employee local tax cards track individual employees’ tax
+local tax cards. Employee local tax cards track individual employees' tax
 liability to various local government agencies. You also have the option of
 setting up multiple local taxes for each employee. Refer to *Setting up a local
 tax* for more information.
@@ -3360,7 +3296,7 @@ tax* for more information.
 3. Mark Automatically Calculate if the local tax should be automatically
     deducted from the pay cards that are subject to local taxes for each pay
     run. For example, assume you have an employee who lives in a particular city
-    and is subject to that city’s tax, regardless of where he or she works.
+    and is subject to that city's tax, regardless of where he or she works.
 
 4. Select a filing status. If you enter a local code that is provided with your
     accounting system, the Filing Status list will display a description for
@@ -3376,15 +3312,15 @@ tax* for more information.
 
 ### Chapter 8: Deduction and benefit cards
 
-After you’ve set up deduction and benefit company cards, also known as
+After you've set up deduction and benefit company cards, also known as
 deduction and benefit codes, you can enter employee deduction and benefit
 cards based on net, unit or gross pay. Refer to *Setting up a standard
 deduction* and *Setting up a benefit* for more information.
 
 You also can set up employee-level deduction sequences, which may be
 necessary to comply with tax and garnishment regulations. If an employee has
-multiple garnishments, you can specify a “split method” for situations in
-which available wages aren’t enough to pay the total garnishment amount.
+multiple garnishments, you can specify a "split method" for situations in
+which available wages aren't enough to pay the total garnishment amount.
 
 If you also use Human Resources, refer to your Human Resources documentation
 for information about entering employee deduction and benefit cards.
@@ -3401,7 +3337,7 @@ This information is contained in the following sections:
 
 #### Entering an employee deduction card
 
-Use the Employee Deduction Maintenance window to enter and maintain employee deduction cards. You can set up a deduction as a percentage of gross, net, or earnings wages, as a fixed amount, or as an amount per unit of wages. Examples of deductions include donations to charities, union dues, and garnishments. After you have set up company deduction cards, also known as deduction codes, (see *Chapter 3, “Setting up deductions and benefits”*), you can select these deduction codes for individual employees by entering an
+Use the Employee Deduction Maintenance window to enter and maintain employee deduction cards. You can set up a deduction as a percentage of gross, net, or earnings wages, as a fixed amount, or as an amount per unit of wages. Examples of deductions include donations to charities, union dues, and garnishments. After you have set up company deduction cards, also known as deduction codes, (see *Chapter 3, "Setting up deductions and benefits"*), you can select these deduction codes for individual employees by entering an
 employee deduction card.
 
 You can choose not to enter deduction amounts in this window. 
@@ -3430,11 +3366,11 @@ If a deduction is not coming out of an employee check review the below:
     the deduction is continuous, leave this field blank.
 
 5. Mark Transaction Required if the dollar amount or percentage of the
-    deduction varies each time it’s calculated. For example, if you have an
+    deduction varies each time it's calculated. For example, if you have an
     employee purchase plan and the amount you withhold varies with each
     paycheck, or there is no withholding for some paychecks, mark this option.
 
-*If you mark the deduction as transaction-required, you’ll need to enter a
+*If you mark the deduction as transaction-required, you'll need to enter a
 transaction for the amount or percentage of the deduction for each pay run
 in which the deduction is taken.*
 
@@ -3449,10 +3385,10 @@ here will be used to annualize the tax-sheltered deduction when taxes for
 paychecks are calculated.*
 
 1. Mark the taxes from which the deduction is sheltered. If the deduction is a
-    taxsheltered annuity (TSA), the amount deducted won’t be included in the
-    employee’s wages when federal, FICA, state or local taxes are calculated. If
-    federal tax is marked, the amount of the deduction won’t be included in the
-    Wages, Tips, and Other Comp field on the employee’s W-2 form.
+    taxsheltered annuity (TSA), the amount deducted won't be included in the
+    employee's wages when federal, FICA, state or local taxes are calculated. If
+    federal tax is marked, the amount of the deduction won't be included in the
+    Wages, Tips, and Other Comp field on the employee's W-2 form.
 
 2. To base the deduction on all pay codes, mark All. To base the deduction on
     selected pay codes, mark Selected. From the displayed pay codes list, select
@@ -3478,11 +3414,11 @@ use the browse buttons to select an additional location, and enter the
 appropriate box number and label. You can specify as many as four locations.
 
 1. You can choose Sequence to specify the order in which the deductions will be
-    taken from the employee’s wages. For more information about setting up
-    deduction sequences, see *Chapter 3, “Setting up deductions and benefits.”*
+    taken from the employee's wages. For more information about setting up
+    deduction sequences, see *Chapter 3, "Setting up deductions and benefits."*
 
 2. Choose Summary to open the Employee Deduction Summary window and view the
-    employee’s past amounts deducted for the specified deduction code, by month,
+    employee's past amounts deducted for the specified deduction code, by month,
     quarter, year, and life to date.
 
 3. Choose Save to save the standard deduction card.
@@ -3507,7 +3443,7 @@ appropriate box number and label. You can specify as many as four locations.
     the deduction is continuous, leave this field blank.
 
 6. Select the frequency. Make sure the deduction frequency matches the
-    employee’s pay period.
+    employee's pay period.
 
 7. Enter the court date, court name, and court document ID from the court order
     document requiring the garnishment.
@@ -3515,7 +3451,7 @@ appropriate box number and label. You can specify as many as four locations.
 8. As the original amount, enter the total amount to be garnished, if specified
     in the court order.
 
-9. You may enter a past amount already taken from the employee’s wages for this
+9. You may enter a past amount already taken from the employee's wages for this
     garnishment, if applicable. Payroll will add all further amounts taken and
     calculate the remaining portion of the original amount.
 
@@ -3530,9 +3466,9 @@ appropriate box number and label. You can specify as many as four locations.
     - If you select Percent of Earnings Wages, also select an earnings code.
 
 12. If the court order specifies a fixed amount at a frequency different from
-    the employee’s pay period, match the frequency to the pay period and
+    the employee's pay period, match the frequency to the pay period and
     pro-rate the amount. For example, if the garnishment is for \$100 per month
-    and the employee’s pay period is semimonthly, enter a fixed amount of \$50
+    and the employee's pay period is semimonthly, enter a fixed amount of \$50
     with a semimonthly frequency.
 
 13. Enter or select the federal and state deduction maximums. Federal and state
@@ -3545,12 +3481,12 @@ appropriate box number and label. You can specify as many as four locations.
 
 15. If the employee has multiple deductions and needs them deducted in a
     particular sequence, choose Sequence to specify the order in which the
-    deductions will be taken from the employee’s wages. For more information
+    deductions will be taken from the employee's wages. For more information
     about setting up deduction sequences, see *Entering an employee-level
     deduction sequence* and *Deducting multiple garnishments* .
 
 16. Choose Summary to open the Employee Deduction Summary window and view the
-    employee’s past amounts deducted for the specified deduction code, by month,
+    employee's past amounts deducted for the specified deduction code, by month,
     quarter, year, and life to date.
 
 17. Choose Save to save the garnishment deduction card.
@@ -3562,19 +3498,19 @@ for individual employees.
 
 If you do not create a deduction sequence for an individual employee, the
 Payroll system applies the company-level sequence, if one was created in the
-Deduction Sequence Setup window, or the Payroll system’s default sequence.
-See *Chapter 3, “Setting up deductions and benefits.”*
+Deduction Sequence Setup window, or the Payroll system's default sequence.
+See *Chapter 3, "Setting up deductions and benefits."*
 
 You can assign all types of deductions to the sequence, including standard,
 garnishment, and TSA types. The Payroll system will calculate the TSA
 deductions from pre-tax wages, regardless of the sequence.
 
-If you assign a deduction to an employee after creating that employee’s
+If you assign a deduction to an employee after creating that employee's
 deduction sequence, Payroll will place the new deduction at the bottom of
 the sequence.
 
 *Before you set up deduction sequences, be sure to set up deductions. Refer
-to Chapter 3, “Setting up deductions and benefits.” You should also set up
+to Chapter 3, "Setting up deductions and benefits." You should also set up
 Payroll default entries.*
 
 **To enter an employee-level deduction sequence:**
@@ -3593,7 +3529,7 @@ Payroll default entries.*
     it, and choose the up or down arrow button.
 
 5. To assign one sequence number to two or more garnishments, select each
-    garnishment’s sequence number in the Sequence column, and enter the number.
+    garnishment's sequence number in the Sequence column, and enter the number.
 
 By default, the Payroll system applies the Even split method to garnishments
 sharing a sequence number. To change the Split Method, see *Selecting a
@@ -3606,7 +3542,7 @@ split method* .
 Use the Split Method window to select the method of dividing available wages
 between two or more garnishments assigned the same sequence number in the
 Employee Deduction Sequence window. A split method is used to determine
-individual garnishment amounts if available wages aren’t sufficient to pay
+individual garnishment amounts if available wages aren't sufficient to pay
 the total garnishment amount.
 
 For more information about ways to handle multiple garnishments, see
@@ -3646,7 +3582,7 @@ unit. Examples of employee benefits include insurance premiums and 401(k)
 contributions made by the company on behalf of an employee.
 
 The Employer Maximum Match field stores the maximum the employer will
-contribute to an employee’s 401(k) fund. With this feature, you can set up
+contribute to an employee's 401(k) fund. With this feature, you can set up
 one 401(k) deduction and one benefit code for an employee.
 
 You can choose not to enter benefit amounts in this window. For more
@@ -3663,11 +3599,11 @@ information, refer to *Using zero benefit and deduction amounts* .
 
 1. Enter or select an employee ID.
 
-2. Enter or select the benefit code for the benefit you’re setting up.
+2. Enter or select the benefit code for the benefit you're setting up.
 
 3. Enter the date that the benefit should take effect. This date should be on
     or before the ending date of the pay period the first benefit should take
-    effect; otherwise, the benefit won’t be calculated.
+    effect; otherwise, the benefit won't be calculated.
 
 4. Enter the date that the benefit should end. If it is a continuous benefit,
     leave this field blank, and no ending date will be specified. If the ending
@@ -3675,7 +3611,7 @@ information, refer to *Using zero benefit and deduction amounts* .
     taken.
 
 5. Mark Transaction Required if the amount or percentage of the benefit varies
-    each time it’s calculated, or there are some paychecks with no benefit. You
+    each time it's calculated, or there are some paychecks with no benefit. You
     must enter transactions to include a transaction required benefit in a pay
     run.
 
@@ -3716,12 +3652,12 @@ maximum percent the employer will match for this employee benefit.
 If the amount must be reported in multiple locations on the W-2 statement,
 use the browse buttons to select an additional location, and enter the
 appropriate box number and label. You can specify as many as four locations.
-*Choose Summary to view an employee’s benefit amounts or financial
+*Choose Summary to view an employee's benefit amounts or financial
 information.* Choose Save.
 
 ### Chapter 9: Beginning balances
 
-If you’re setting up Payroll for the first time and the calendar year has
+If you're setting up Payroll for the first time and the calendar year has
 already started, you should enter beginning balances to ensure that your
 monthly, quarterly, and yearly financial amounts are correct, as well as to
 correctly process W-2 statements at the end of the year.
@@ -3744,11 +3680,11 @@ You have several options when entering beginning balances:
 - You can enter an amount for each month for each employee.
 
 - You can enter an amount for each quarter for each employee. If you select
-    this method, you won’t be able to print accurate monthly reports.
+    this method, you won't be able to print accurate monthly reports.
 
 - You can enter a total amount for the year-to-date for each employee. If you
-    select this option, you won’t be able to print accurate period-end or
-    quarterly reports, but you’ll be able to print accurate W-2 statements at
+    select this option, you won't be able to print accurate period-end or
+    quarterly reports, but you'll be able to print accurate W-2 statements at
     the end of the year.
 
 **To enter beginning balances:**
@@ -3820,10 +3756,10 @@ Use the Payroll Batch Entry window to post beginning balances.
 
 2. Choose Post. Depending on how you entered the transactions, the posted
     amount will be reflected for the month and for the year-to-date figure as
-    each employee’s beginning balance.
+    each employee's beginning balance.
 
 An audit trail code automatically will be assigned to these transactions as
-they’re posted. You can use audit trail codes to trace the posting sequence
+they're posted. You can use audit trail codes to trace the posting sequence
 of a transaction back to the check. The audit trail code for the beginning
 balance transactions will have the prefix UPRMC.
 
@@ -3834,16 +3770,16 @@ transactions.
 
 The following information is discussed:
 
-- *Chapter 10, “Batches and posting,”* explains how to create single-use
+- *Chapter 10, "Batches and posting,"* explains how to create single-use
     batches, or recurring batches for transactions you enter on a regular basis.
     Batches can be identified as a group of transactions entered by a specific
     employee, or a group of transactions entered on a particular date.
 
-- *Chapter 11, “Payroll transactions,”* describes how to create Payroll check
+- *Chapter 11, "Payroll transactions,"* describes how to create Payroll check
     transactions including computer check transactions and manual check
     transactions.
 
-- *Chapter 12, “Editable pay rates,”* includes examples of how you might use
+- *Chapter 12, "Editable pay rates,"* includes examples of how you might use
     editable pay rates in different industries.
 
 ### Chapter 10: Batches and posting
@@ -3864,7 +3800,7 @@ name, but different origins.
 
 In Payroll, posting updates the balances that are displayed in the Employee
 Summary window, so you can view up-to-date information for your employees.
-If you’re using Bank Reconciliation, your checkbook also is updated when you
+If you're using Bank Reconciliation, your checkbook also is updated when you
 post. For more information, refer to the Bank Reconciliation documentation.
 
 This information is contained in the following sections:
@@ -3914,7 +3850,7 @@ A screenshot of a computer screen Description automatically generated
     will be posted on the posting date, whether Transaction or Batch is marked
     in the Posting Setup window.
 
-If you’re using a manual check and not using a batch, you must post
+If you're using a manual check and not using a batch, you must post
 transactions using the date entered in the Payroll Manual Check-Adjustment
 Entry window.
 
@@ -3933,7 +3869,7 @@ Entry window.
     open the Payroll Transaction Entry window or the Payroll Mass Transaction
     Entry window.
 
-1. When you’ve entered and saved all transactions for a batch, return to the
+1. When you've entered and saved all transactions for a batch, return to the
     Payroll Batch Entry window and select the batch ID.
 
 2. Choose File \>\> Print to print a Transaction Edit List to verify your
@@ -3944,7 +3880,7 @@ Entry window.
 Use the Payroll Batch Entry window to change or delete an unposted batch.
 Recurring batches are deleted automatically after the batch has been posted
 the number of times you specify in the Recurring Posting field. To make
-changes to specific transactions in a batch after they’re posted, refer to
+changes to specific transactions in a batch after they're posted, refer to
 *Correcting Payroll computer check transactions* or *Correcting manual check
 transactions* for more information.
 
@@ -3966,7 +3902,7 @@ Use the Payroll Batch Entry window to post a single batch. Before you post a
 Payroll batch, you should print an edit list and review the transactions in
 the batch. To print an edit list from this window, select the batch ID and
 choose File \>\> Print. If you need to make corrections, do so at this time.
-You also should make a backup of your company’s data. Refer to Help \>\>
+You also should make a backup of your company's data. Refer to Help \>\>
 Contents \>\> select System Administration for more information about making
 backups.
 
@@ -3980,8 +3916,8 @@ backups.
 1. Enter or select the batch ID and origin for the batch to post. *Only batches
     with a manual check origin can be posted in this window.*
 
-2. Approve the batch for posting, if required. After it’s approved, a batch
-    can’t be edited unless you unmark Approved.
+2. Approve the batch for posting, if required. After it's approved, a batch
+    can't be edited unless you unmark Approved.
 
 3. Choose Post. Your Payroll records will be updated to reflect the information
     from the transactions and general ledger accounts will be updated, depending
@@ -3994,7 +3930,7 @@ General Ledger Transactions Entry window before posting them again. Your
 accounts are updated when you post the transactions in General Ledger.
 
 - If you post through General Ledger, your accounts are updated at once and
-    you don’t need to post the batch again in General Ledger.
+    you don't need to post the batch again in General Ledger.
 
 *If you enter batch total requirements or batch approval requirements in
 Payroll and post a batch through General Ledger, the batch is posted
@@ -4006,22 +3942,22 @@ marked in the Posting Setup window.
 
 ### Chapter 11: Payroll transactions
 
-A paycheck is a group of transactions involving a single employee. You might pay an employee a month’s salary, which is one transaction. You might also
-withhold income taxes and the employee’s portion of insurance payments, and contributions to a 401(k) plan. You also can record vacation accrued and
-your company’s portion of 401(k) contributions for the employee. Each of these items is a separate transaction and you can have all the transactions
+A paycheck is a group of transactions involving a single employee. You might pay an employee a month's salary, which is one transaction. You might also
+withhold income taxes and the employee's portion of insurance payments, and contributions to a 401(k) plan. You also can record vacation accrued and
+your company's portion of 401(k) contributions for the employee. Each of these items is a separate transaction and you can have all the transactions
 that apply to an employee put into a single paycheck.
 
 You can automatically create many of the Payroll transactions for your employees during the process of building checks. If you have a group of
-employees who receive a regular salary, you won’t have to enter individual transactions for the salary pay; the build checks process creates them for
+employees who receive a regular salary, you won't have to enter individual transactions for the salary pay; the build checks process creates them for
 you, along with transactions for the applicable taxes, benefits, and deductions.
 
 Payroll check transactions include computer check transactions and manual check transactions. You must enter Payroll transactions in batches. To print
-edit lists for transactions, the transactions must be part of a batch. For more information, refer to *Chapter 10, “Batches and posting.”*
+edit lists for transactions, the transactions must be part of a batch. For more information, refer to *Chapter 10, "Batches and posting."*
 
-If you’re using Human Resources and accruing benefit time using Human Resources, refer to the Human Resources documentation for information about
+If you're using Human Resources and accruing benefit time using Human Resources, refer to the Human Resources documentation for information about
 creating Payroll transactions.
 
-If you’re using Human Resources and you import attendance transactions directly into U.S. Payroll, Human Resources tables may not be updated. In
+If you're using Human Resources and you import attendance transactions directly into U.S. Payroll, Human Resources tables may not be updated. In
 such cases you must reconcile attendance transactions using the Reconcile Human Resources window before you calculate the payroll checks.
 
 This information is contained in the following sections:
@@ -4062,7 +3998,7 @@ Use the Payroll Mass Transaction Entry window to add similar pay transactions, a
 transactions quickly when the same transactions apply to a range of employees.
 
 You can exclude individual employee records from a mass transaction entry. For example, you might be giving all your employees a bonus, but one of them
-hasn’t worked at your company long enough to be eligible for bonus pay.
+hasn't worked at your company long enough to be eligible for bonus pay.
 
 **To enter employee mass transactions:**
 
@@ -4089,7 +4025,7 @@ hasn’t worked at your company long enough to be eligible for bonus pay.
     the Analytical Payroll Default Dimensions window.
 
 4. Enter start and end dates for the transaction. To track the number of days
-    and weeks worked for SUTA, and workers’ compensation purposes, you must have
+    and weeks worked for SUTA, and workers' compensation purposes, you must have
     marked the Track Days Worked and Track Weeks Worked options in the Payroll
     Setup window.
 
@@ -4117,7 +4053,7 @@ set up.
 2. Choose Preview to open the Preview Mass Entry Transactions window and view
     or make changes to the transactions that will be created.
 
-3. When you’ve finished, close the window to return to the Payroll Mass
+3. When you've finished, close the window to return to the Payroll Mass
     Transaction Entry window.
 
 4. To edit an individual transaction, choose Transactions. The Payroll
@@ -4128,7 +4064,7 @@ set up.
 
 5. Choose Build Batch in either the Payroll Mass Transaction Entry window or
     the Preview Mass Entry Transactions window to create the transactions for
-    the selected employees. Close the window when you’ve finished. You’ll have
+    the selected employees. Close the window when you've finished. You'll have
     the option to print the Payroll Audit Report.
 
 #### Entering Payroll computer check transactions
@@ -4140,8 +4076,8 @@ piecework pay types. You must enter Payroll transactions in a batch. Before
 entering payroll computer check transactions, make sure you have saved any
 changes made to pay rates.
 
-You usually won’t need to enter transactions for salary pay types. Salary
-pay is included automatically in a pay run. You’ll only need to enter
+You usually won't need to enter transactions for salary pay types. Salary
+pay is included automatically in a pay run. You'll only need to enter
 transactions for a salary pay type to reduce dollars or hours, reallocate
 dollars or hours, or add an additional amount of hours. Refer to online help
 for the Payroll Transaction Entry window for an explanation for each option.
@@ -4152,7 +4088,7 @@ job. For more information, refer to *Building Payroll checks* .
 
 *A transaction number automatically is assigned to each transaction; the
 numbers are used to differentiate transactions. The transactions will be
-removed from the batch when checks are posted—unless they’re recurring
+removed from the batch when checks are posted—unless they're recurring
 transactions.*
 
 **To enter Payroll computer check transactions:**
@@ -4160,7 +4096,7 @@ transactions.*
 1. Open the Payroll Transaction Entry window. (HR & Payroll \>\> Transactions
     \>\> Payroll \>\> Transaction Entry)
 
-The first time you open the window, you’ll have the option to open the
+The first time you open the window, you'll have the option to open the
 Payroll Transaction Entry window or the Payroll Mass Transaction Entry
 window.
 
@@ -4192,7 +4128,7 @@ window.
     marked transaction required. The Attendance Information window automatically
     opens when you enter a linked transaction time code for an Absent, Benefit,
     or Other transaction type. Select a type, such as Planned, and reason, such
-    as Vacation, for the transaction. This window is available only when you’re
+    as Vacation, for the transaction. This window is available only when you're
     using summary view in the Payroll Transaction Entry window, and only if you
     select the Allow entry of attendance type and reason in Payroll option in
     the Attendance Setup window.
@@ -4206,7 +4142,7 @@ window.
 
 5. Choose the show and hide buttons to display or hide additional information.
 
-6. If needed, modify the department, position, state tax, local tax, workers’
+6. If needed, modify the department, position, state tax, local tax, workers'
     compensation codes, the unemployment state, and shift information; these
     were previously entered in the Employee Maintenance and Employee Pay Code
     Maintenance windows and appear as default entries. A pay rate does not
@@ -4219,7 +4155,7 @@ Dimensions button. This option is available only for the Pay Code
 transaction type. For more information, see *Entering Analytical Accounting
 information for Payroll transactions* .
 
-1. Enter Receipts if the pay code you’ve selected is Charged Tips or Reported
+1. Enter Receipts if the pay code you've selected is Charged Tips or Reported
     Tips.
 
 2. Select a salary change option if the pay code you selected is Salary. The
@@ -4235,7 +4171,7 @@ information for Payroll transactions* .
 
 4. To delete a transaction in the Payroll Transaction Entry window, select the
     row and choose Edit \>\> Delete Row or choose the delete row icon button. If
-    you’ve identified errors in transactions on the edit list, refer to
+    you've identified errors in transactions on the edit list, refer to
     *Correcting Payroll computer check transactions* .
 
 5. Choose File \>\> Print to print a Payroll Transaction Edit List to verify
@@ -4248,7 +4184,7 @@ deleted since the last time you used the Payroll Transaction Entry window.
 #### Correcting Payroll computer check transactions
 
 Use the Payroll Transaction Entry window to make corrections to your
-transactions. If you’ve identified an error on the Check File Report, the
+transactions. If you've identified an error on the Check File Report, the
 Calculate Exceptions report, or the Calculate Checks Report, you must first
 remove the check build. Use the Build Payroll Checks window to remove the
 check build. After you remove the check build, you can continue making
@@ -4276,15 +4212,15 @@ Enter a transaction number in the Find by Number field, and then choose
 Open. Or highlight a transaction in the list and choose Select.
 
 1. Select the row that contains the information to change and change the
-    incorrect information, if the transaction hasn’t been posted.
+    incorrect information, if the transaction hasn't been posted.
 
 2. Choose File \>\> Print to print an edit list to verify your entries.
 
-After you’ve checked the entries on the edit list, you can process the
+After you've checked the entries on the edit list, you can process the
 computer check run. For more information, refer to *Building Payroll checks*
 .
 
-*Depending on how your Payroll system has been set up, posting journals might be printed automatically when you post computer checks. Posting journals provide a record of the changes you’ve made in transaction entry. For more information about posting options, refer to Help \>\> Contents \>\> Setting Up the System.*
+*Depending on how your Payroll system has been set up, posting journals might be printed automatically when you post computer checks. Posting journals provide a record of the changes you've made in transaction entry. For more information about posting options, refer to Help \>\> Contents \>\> Setting Up the System.*
 
 #### Entering manual check transactions
 
@@ -4295,7 +4231,7 @@ A default payment number or adjustment number will be displayed from the Payroll
 that are posted collectively as a single, complete transaction or check. An adjustment number identifies a group of adjustments that you make in this
 window that are posted collectively as a single, complete transaction. You can change this number.
 
-*An adjustment doesn’t affect gross or net wages since you’re not issuing a check and can be posted only if the gross and net amounts are zero.*
+*An adjustment doesn't affect gross or net wages since you're not issuing a check and can be posted only if the gross and net amounts are zero.*
 
 **To enter manual check transactions:**
 
@@ -4309,7 +4245,7 @@ window that are posted collectively as a single, complete transaction. You can c
 3. Enter or select a batch ID. For more information, refer to *Creating a batch* .
 
 4. Enter or select the checkbook ID from which this check was issued. Then, either accept the default number or enter a new check number and the date you issued the check.  
-   If the transaction doesn’t have a batch ID assigned to it, you can enter a Posted Date. If there is a batch ID assigned, the date comes from the Payroll Batch Entry window. 
+   If the transaction doesn't have a batch ID assigned to it, you can enter a Posted Date. If there is a batch ID assigned, the date comes from the Payroll Batch Entry window. 
    
     *You can only select a checkbook ID and check number if you marked Manual Check as your check type.*
 
@@ -4329,7 +4265,7 @@ window that are posted collectively as a single, complete transaction. You can c
 
 11. Enter the number of days and weeks worked during the pay period if your company tracks those worked by each employee.
 
-12. If needed, edit the department, position, state tax, local tax, workers’ compensation codes, the unemployment state, and shift information; these were previously entered in the Employee Maintenance and Employee Tax information windows and appear as default entries. If you’re entering a pay code transaction, you can select other codes.
+12. If needed, edit the department, position, state tax, local tax, workers' compensation codes, the unemployment state, and shift information; these were previously entered in the Employee Maintenance and Employee Tax information windows and appear as default entries. If you're entering a pay code transaction, you can select other codes.
 
 13. Choose Save to save the transaction and return to the Payroll Manual CheckAdjustment Entry window.
 
@@ -4340,20 +4276,20 @@ window that are posted collectively as a single, complete transaction. You can c
 15. Choose OK to save the information and return to the Payroll Manual CheckAdjustment Entry window.
 
 16. Choose File \>\> Print in the Payroll Manual Check–Adjustment Entry window
-    to print a Manual Check Edit List to verify your entries. If you’ve
+    to print a Manual Check Edit List to verify your entries. If you've
     identified errors in transactions on the edit list, refer to *Correcting
     manual check transactions* for more information.
 
 17. Choose Post to post the check. Depending on the way your Payroll system has been set up, posting journals might be printed when you post batches. When
     you post transactions individually, the Check Register will be printed when the Payroll Manual Check-Adjustment Entry window is closed.
 
-To post manual checks individually, the Batch ID field must be blank. Manual checks must be posted at this point using transaction-level posting; transactions entered individually can’t be saved and posted later. All transactions posted individually during a single data entry session will have the same audit trail code.
+To post manual checks individually, the Batch ID field must be blank. Manual checks must be posted at this point using transaction-level posting; transactions entered individually can't be saved and posted later. All transactions posted individually during a single data entry session will have the same audit trail code.
 
 #### Correcting manual check transactions
 
-Use the Payroll Manual Check–Adjustment Entry window to enter adjustments for manual checks. If you’ve identified an error on a check that’s been posted already, you can void the check using the Void Payroll Checks window.
+Use the Payroll Manual Check–Adjustment Entry window to enter adjustments for manual checks. If you've identified an error on a check that's been posted already, you can void the check using the Void Payroll Checks window.
 
-If you’re not keeping check and transaction history or if you’re voiding a check from a previous year, you’ll need to reverse the check using the Payroll Manual Check– Adjustment Entry and Payroll Manual Check Transaction Entry windows. To reverse a check, enter the check information using negative amounts. After you’ve entered these amounts you can issue a correct check using either computer or manual check processes.
+If you're not keeping check and transaction history or if you're voiding a check from a previous year, you'll need to reverse the check using the Payroll Manual Check– Adjustment Entry and Payroll Manual Check Transaction Entry windows. To reverse a check, enter the check information using negative amounts. After you've entered these amounts you can issue a correct check using either computer or manual check processes.
 
 ##### To correct manual check transactions
 
@@ -4375,40 +4311,39 @@ If you’re not keeping check and transaction history or if you’re voiding a c
 
 ##### Manual Checks What You Should Know
 
-Before you enter/post a Manual Check you’ll want to ensure you chose the appropriate ‘Check Type’ in the Payroll Manual Check Adjustment Entry Window.
+Before you enter/post a Manual Check you'll want to ensure you chose the appropriate 'Check Type' in the Payroll Manual Check Adjustment Entry Window.
 
-Here’s what you need to know about each Check Type:
+Here's what you need to know about each Check Type:
 
-**Manual Check** – Will update Payroll, Bank Rec, and General Ledger. Use this if you are:
+**Manual Check** – Will update Payroll, Bank Rec, and General Ledger. Use this if you are: 
+- Recording a manually written paycheck
+- Making a negative adjustment 
 
-    - Recording a manually written paycheck
-    - Making a negative adjustment 
+    Note: Negative Manual Checks cannot be saved to a batch
+- Most Commonly Used
+- Do not enter positive and negative amounts at the same time:
+    - Post only positive amounts
+    - Or post only negative amounts
     
-        Note: Negative Manual Checks cannot be saved to a batch
-    - Most Commonly Used
-    - Do not enter positive and negative amounts at the same time:
-        - Post only positive amounts
-        - Or post only negative amounts
 
 **Adjustment** – Will update Payroll and General Ledger. User this if you are:
+- Entering an adjustment.
+- Post each transaction type individually.
+- Adjustments can be posted only if the gross and net wage amounts are zero. 
+There will be no check number associated with an adjustment.
 
-    -Entering an adjustment. 
-    -Adjustments can be posted only if the gross and net wage amounts are zero. 
-    
-        Note: There will be no check number associated with an adjustment.
-    -If GL is not being updated as expected: Ensure you're set up to 'Post To' GL and not 'Through' (Microsoft Dynamics GP >> Tools >> Setup >> Posting     >> Posting >> Series = Payroll >> Origin = Manual Checks).
+- If GL is not being updated as expected: 
+Ensure you're set up to 'Post To' GL and not 'Through' 
+(Microsoft Dynamics GP >> Tools >> Setup >> Posting >> Posting >> Series = Payroll >> Origin = Manual Checks).
+
 
 **Beginning Balances** – Will NOT update Bank Rec or General Ledger. Use this if you are:
+- Entering beginning balances. 
+There will be no check number associated with a beginning balance.
 
-    -Entering beginning balances.
+- Don't want to update Bank Rec or GL
 
-    Note: There will be no check number associated with a beginning balance.
-    -Don’t want to update Bank Rec or GL
-    -Do not enter positive and negative amounts at the same time:
-        Post only positive amounts Or post only negative amounts
-
-
-
+    
 > [!IMPORTANT]
 > Manual Checks is that they are exactly that: manual. Microsoft Dynamics GP does not automatically calculate anything for you when you process a Manual Check. As such, you need to know exactly what amounts need to be entered/adjusted.
 
@@ -4418,19 +4353,19 @@ Enter appropriate information in the Payroll Manual Check-Adjustment Entry Windo
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD1.jpg)
 
-1.	To open the Payroll Manual Check Adjustment Entry window: on the Transactions menu, point to Payroll, and then click on Manual Checks.
-2.	Select the appropriate Check Type.
-3.	Enter a Batch ID if applicable (*Remember you cannot enter a negative manual check in a batch).
-4.	Enter a Checkbook ID if applicable (Not available if processing an Adjustment or Beginning Balance).
-5.	Ensure the Check Number is accurate (Not available if processing an Adjustment or Beginning Balance).
-6.	Enter an appropriate Check Date (The date the check was issued) and Posted Date (The date you want the check will be posted). 
-7.	Next to Employee ID, enter the appropriate Employee ID.
-8.	Click on the Transactions button to open the ‘Payroll Manual Check Transaction Entry Window’.
-9.	Enter/Save all applicable transactions in the Payroll Manual Check Adjustment Entry window **(DETAILS ON HOW TO DO THAT BELOW)**
-10.	After all transactions have been entered/saved in the Payroll Manual Check Adjustment Entry window:
+1.    To open the Payroll Manual Check Adjustment Entry window: on the Transactions menu, point to Payroll, and then click on Manual Checks.
+2.    Select the appropriate Check Type.
+3.    Enter a Batch ID if applicable (*Remember you cannot enter a negative manual check in a batch).
+4.    Enter a Checkbook ID if applicable (Not available if processing an Adjustment or Beginning Balance).
+5.    Ensure the Check Number is accurate (Not available if processing an Adjustment or Beginning Balance).
+6.    Enter an appropriate Check Date (The date the check was issued) and Posted Date (The date you want the check will be posted). 
+7.    Next to Employee ID, enter the appropriate Employee ID.
+8.    Click on the Transactions button to open the 'Payroll Manual Check Transaction Entry Window'.
+9.    Enter/Save all applicable transactions in the Payroll Manual Check Adjustment Entry window **(DETAILS ON HOW TO DO THAT BELOW)**
+10.    After all transactions have been entered/saved in the Payroll Manual Check Adjustment Entry window:
 
-    IF transactions are NOT saved in a batch, click ‘Post’ in the Payroll Manual Check – Adjustment Entry Window.
-    IF transactions ARE saved in a batch, click ‘Save’ in the Payroll Manual Check – Adjustment Entry Window, and ‘Post’ the batch from the Payroll Batch Entry Window (Transactions >> Payroll >> Batch Entry).
+    IF transactions are NOT saved in a batch, click 'Post' in the Payroll Manual Check – Adjustment Entry Window.
+    IF transactions ARE saved in a batch, click 'Save' in the Payroll Manual Check – Adjustment Entry Window, and 'Post' the batch from the Payroll Batch Entry Window (Transactions >> Payroll >> Batch Entry).
 
 The Payroll Manual Check Transaction Entry window is where you will enter all of the individual transactions/adjustments associated with a manual check.
 
@@ -4438,37 +4373,37 @@ Detailed steps and a description of how each adjustment works and effects amount
 
 ##### To enter/adjust an amount for a specific Pay Code
 
-1.	Next to ‘Transaction Type’ select ‘Pay Code’.
+1.    Next to 'Transaction Type' select 'Pay Code'.
 
-2.	Next to ‘Code’ select the appropriate pay code.
+2.    Next to 'Code' select the appropriate pay code.
 
     Note: as soon as you select the pay code the following fields will automatically be populated (Pulling in from Employee Pay Code Maintenance window):
-        - State (this does NOT mean state tax will be calculated for you – it won’t).
+        - State (this does NOT mean state tax will be calculated for you – it won't).
         - SUTA State SUTA is not calculated during a pay run. 
             If you want wages associated with this pay code to be subject to SUTA be sure this field is populated appropriately.
-        - Workers’ Comp - Workers Comp is not calculated during a pay run. 
+        - Workers' Comp - Workers Comp is not calculated during a pay run. 
             If you want wages associated with this pay code to be subject to Workers Comp be sure this field is populated appropriately.
         - Shift Code - Informational Only
         - Department
         - Position
 
-3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
+3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
 
-4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the wages associated with this pay code:
+4.    In the 'Amount' field: Enter the total amount by which you need to adjust the wages associated with this pay code:
 
     - Positive Amount = Increase in gross and net wages
     - Negative Amount = Decrease in gross and net wages
 
-5.	You can enter data in the following fields. However, be aware that GP does NOT calculate wages based off what you enter in these 
+5.    You can enter data in the following fields. However, be aware that GP does NOT calculate wages based off what you enter in these 
 
     - Hours/Units
     - Days Worked
     - Weeks Worked
 
-6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
     > [!NOTE]
-    > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay code, you’ll need to do so manually with the appropriate tax in this window.
+    > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay code, you'll need to do so manually with the appropriate tax in this window.
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD2.jpg)
 
@@ -4491,17 +4426,17 @@ Detailed steps and a description of how each adjustment works and effects amount
 
 **To enter/adjust an amount for a specific Deduction:**
 
-1.	Next to ‘Transaction Type’ select Deduction.
-2.	Next to ‘Code’ select the appropriate deduction.
-3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the Deduction Code:
+1.    Next to 'Transaction Type' select Deduction.
+2.    Next to 'Code' select the appropriate deduction.
+3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4.    In the 'Amount' field: Enter the total amount by which you need to adjust the Deduction Code:
 
     - Positive Amount = Decrease in Net Wages
     - Negative Amount = Increase in Net Wages
-5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
-> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this deduction, you’ll need to do so manually with the appropriate tax in this window
+> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this deduction, you'll need to do so manually with the appropriate tax in this window
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD3.jpg)
 
@@ -4516,16 +4451,16 @@ Detailed steps and a description of how each adjustment works and effects amount
 
 **To enter/adjust an amount for a specific Benefit:**
 
-1.	Next to ‘Transaction Type’ select ‘Benefit’.
-2.	Next to ‘Code’ select the appropriate benefit.
-3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the Benefit Code:
-o	Positive Amount = No effect on wages
-o	Negative Amount = No effect on wages 
-5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'Benefit'.
+2.    Next to 'Code' select the appropriate benefit.
+3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4.    In the 'Amount' field: Enter the total amount by which you need to adjust the Benefit Code:
+o    Positive Amount = No effect on wages
+o    Negative Amount = No effect on wages 
+5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
-> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this benefit, you’ll need to do so manually with the appropriate tax in this window.
+> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this benefit, you'll need to do so manually with the appropriate tax in this window.
 
 
 **Benefit transaction in Manual Check Transaction Entry Window**
@@ -4538,15 +4473,15 @@ o	Negative Amount = No effect on wages
 
 **To enter/adjust an amount for Federal Tax:**
 
-1.	Next to ‘Transaction Type’ select ‘Federal Tax’.
-2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust Federal Tax:
-o	Positive Amount = Decrease in Net Wages
-o	Negative Amount = Increase in Net Wages
-4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust Federal Taxable Wages:
-o	Positive Amount = Increase in Federal Taxable Wages 
-o	Negative Amount = Decrease in Federal Taxable Wages
-5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'Federal Tax'.
+2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3.    In the 'Amount' field: Enter the total amount by which you need to adjust Federal Tax:
+o    Positive Amount = Decrease in Net Wages
+o    Negative Amount = Increase in Net Wages
+4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust Federal Taxable Wages:
+o    Positive Amount = Increase in Federal Taxable Wages 
+o    Negative Amount = Decrease in Federal Taxable Wages
+5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tax and Federal Taxable Wages need to be adjusted. GP will not calculate Federal Tax for you automatically in this window.
@@ -4568,22 +4503,22 @@ o	Negative Amount = Decrease in Federal Taxable Wages
 
 **To enter/adjust an amount for FICA Social Security Tax:**
 
-1.	Next to ‘Transaction Type’ select ‘FICA Soc Sec Tax’.
-2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust FICA Social Security Tax owed by the employee:
-o	Positive Amount = Decrease in Net Wages
-o	Negative Amount = Increase in Net Wages
-4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust FICA Social Security Taxable Wages:
-o	Positive Amount = Increase in FICA Social Security Taxable Wages 
-o	Negative Amount = Decrease in FICA Social Security Taxable Wages
+1.    Next to 'Transaction Type' select 'FICA Soc Sec Tax'.
+2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3.    In the 'Amount' field: Enter the total amount by which you need to adjust FICA Social Security Tax owed by the employee:
+o    Positive Amount = Decrease in Net Wages
+o    Negative Amount = Increase in Net Wages
+4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Social Security Taxable Wages:
+o    Positive Amount = Increase in FICA Social Security Taxable Wages 
+o    Negative Amount = Decrease in FICA Social Security Taxable Wages
 
     > [!NOTE]
     > If the employee has already met his/her maximum Social Security Taxable Wages, GP will not record additional Social Security Taxable Wages regardless of what is entered in the Taxable Wage field.
 
-5.	In the ‘EFIC Amount’ field: Enter the total amount by which you need to adjust FICA Social Security Taxes owed by the employer.
-o	Positive Amount = Increase in Employer owed FICA Social Security Tax
-o	Negative Amount = Decrease in Employer owed FICA Social Security Tax
-6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+5.    In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Social Security Taxes owed by the employer.
+o    Positive Amount = Increase in Employer owed FICA Social Security Tax
+o    Negative Amount = Decrease in Employer owed FICA Social Security Tax
+6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
     > [!NOTE]
     > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tax, the FICA Social Security Taxable Wages, and the Employer FICA Social Security Taxes need to be adjusted. GP will not calculate FICA Social Security Tax for you automatically in this window.
@@ -4606,30 +4541,30 @@ o	Negative Amount = Decrease in Employer owed FICA Social Security Tax
 > [!NOTE]
 > Microsoft Dynamics GP will check to verify whether or not the employee has exceeded FICA Social Security maximums per the Payroll Tax Tables (Microsoft Dynamics GP >> Tools >> Setup >> System >> Payroll Tax). 
 
-If the employees max has been reached, you will receive a warning as follows (GP won’t prevent you from posting the transaction, but it WILL warn you):
+If the employees max has been reached, you will receive a warning as follows (GP won't prevent you from posting the transaction, but it WILL warn you):
 
 *The FICA Social Security tax for this employee has exceeded the maximum for the year*  
 
-When ‘Continue’ is clicked and the transaction is saved/posted the following will occur:
-o	If the employee is going to meet and go over maximum Soc Sec Taxable Wages: GP will record ‘as much’ of the taxable wage as possible ‘up to’ the maximum. This amount is stored in the FICASSWP field in the UPR30100 table.
-o	If the employee is already over the Social Security Maximum Taxable Wages: GP will not record any Social Security Taxable Wages regardless of what is entered in the Taxable Wage field.
-o	GP will still post the employee and employer tax amounts (not wages) regardless of whether the maximum Soc Sec wage has been met.
+When 'Continue' is clicked and the transaction is saved/posted the following will occur:
+o    If the employee is going to meet and go over maximum Soc Sec Taxable Wages: GP will record 'as much' of the taxable wage as possible 'up to' the maximum. This amount is stored in the FICASSWP field in the UPR30100 table.
+o    If the employee is already over the Social Security Maximum Taxable Wages: GP will not record any Social Security Taxable Wages regardless of what is entered in the Taxable Wage field.
+o    GP will still post the employee and employer tax amounts (not wages) regardless of whether the maximum Soc Sec wage has been met.
 
 
 **To enter/adjust an amount for FICA Medicare Tax:**
 
-1.	Next to ‘Transaction Type’ select ‘FICA Medicare Tax’.
-2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust FICA Medicare Tax owed by the employee:
-o	Positive Amount = Decrease in Net Wages
-o	Negative Amount = Increase in Net Wages
-4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust FICA Medicare Taxable Wages:
-o	Positive Amount = Increase in FICA Medicare Taxable Wages 
-o	Negative Amount = Decrease in FICA Medicare Taxable Wages
-5.	In the ‘EFIC Amount’ field: Enter the total amount by which you need to adjust FICA Medicare Taxes owed by the employer.
-o	Positive Amount = Increase in Employer owed FICA Medicare Tax
-o	Negative Amount = Decrease in Employer owed FICA Medicare Tax
-6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'FICA Medicare Tax'.
+2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3.    In the 'Amount' field: Enter the total amount by which you need to adjust FICA Medicare Tax owed by the employee:
+o    Positive Amount = Decrease in Net Wages
+o    Negative Amount = Increase in Net Wages
+4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Medicare Taxable Wages:
+o    Positive Amount = Increase in FICA Medicare Taxable Wages 
+o    Negative Amount = Decrease in FICA Medicare Taxable Wages
+5.    In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Medicare Taxes owed by the employer.
+o    Positive Amount = Increase in Employer owed FICA Medicare Tax
+o    Negative Amount = Decrease in Employer owed FICA Medicare Tax
+6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tax, the FICA Medicare Taxable Wages, and the Employer FICA Medicare Taxes need to be adjusted. GP will not calculate FICA Medicare Tax for you automatically in this window.
@@ -4653,16 +4588,16 @@ o	Negative Amount = Decrease in Employer owed FICA Medicare Tax
 **To enter/adjust an amount for State Tax:*
 
 
-1.	Next to ‘Transaction Type’ select ‘State Tax’.
-2.	Next to ‘Code’ select the appropriate state tax.
-3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust State Tax owed by the employee:
-o	Positive Amount = Decrease in Net Wages
-o	Negative Amount = Increase in Net Wages
-5.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust State Taxable Wages:
-o	Positive Amount = Increase in State Taxable Wages 
-o	Negative Amount = Decrease in State Taxable Wages
-6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'State Tax'.
+2.    Next to 'Code' select the appropriate state tax.
+3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4.    In the 'Amount' field: Enter the total amount by which you need to adjust State Tax owed by the employee:
+o    Positive Amount = Decrease in Net Wages
+o    Negative Amount = Increase in Net Wages
+5.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust State Taxable Wages:
+o    Positive Amount = Increase in State Taxable Wages 
+o    Negative Amount = Decrease in State Taxable Wages
+6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the State Tax and State Taxable Wages need to be adjusted. GP will not calculate State Tax for you automatically in this window.
@@ -4682,16 +4617,16 @@ o	Negative Amount = Decrease in State Taxable Wages
 
 **To enter/adjust an amount for Local Tax:*
 
-1.	Next to ‘Transaction Type’ select ‘Local Tax’.
-2.	Next to ‘Code’ select the appropriate local tax.
-3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust Local Tax owed by the employee:
-o	Positive Amount = Decrease in Net Wages
-o	Negative Amount = Increase in Net Wages
-5.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust Local Taxable Wages:
-o	Positive Amount = Increase in Local Taxable Wages 
-o	Negative Amount = Decrease in Local Taxable Wages
-6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'Local Tax'.
+2.    Next to 'Code' select the appropriate local tax.
+3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4.    In the 'Amount' field: Enter the total amount by which you need to adjust Local Tax owed by the employee:
+o    Positive Amount = Decrease in Net Wages
+o    Negative Amount = Increase in Net Wages
+5.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust Local Taxable Wages:
+o    Positive Amount = Increase in Local Taxable Wages 
+o    Negative Amount = Decrease in Local Taxable Wages
+6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Local Tax and Local Taxable Wages need to be adjusted. GP will not calculate Local Tax for you automatically in this window.
@@ -4712,17 +4647,17 @@ o	Negative Amount = Decrease in Local Taxable Wages
 
 **To enter/adjust an amount for a specific Pay Advance:*
 
-1.	Next to ‘Transaction Type’ select ‘Pay Advance’.
-2.	Next to ‘Code’ select the appropriate pay code.
-o	Note: Employees can receive a Pay Advance for Salary or Commission Pay Types only.
-3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the wages associated with this pay advance:
-o	Positive Amount = Increase in gross and net wages
-o	Negative Amount = Decrease in gross and net wages
-5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'Pay Advance'.
+2.    Next to 'Code' select the appropriate pay code.
+o    Note: Employees can receive a Pay Advance for Salary or Commission Pay Types only.
+3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4.    In the 'Amount' field: Enter the total amount by which you need to adjust the wages associated with this pay advance:
+o    Positive Amount = Increase in gross and net wages
+o    Negative Amount = Decrease in gross and net wages
+5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
-> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay advance, you’ll need to do so manually with the appropriate tax in this window.
+> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay advance, you'll need to do so manually with the appropriate tax in this window.
 
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD9.jpg)
@@ -4741,17 +4676,17 @@ o	Negative Amount = Decrease in gross and net wages
 
 **To enter/adjust an amount for a specific Withhold Advance:*
 
-1.	Next to ‘Transaction Type’ select ‘Withhold Advance’.
-2.	Next to ‘Code’ select the appropriate pay code.
-o	Note: It is not possible to withhold more from an employee than he/she has been advanced for a specific salary or commission pay code.
-3.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-4.	In the ‘Amount’ field: Enter the total amount by which you need to adjust the wages associated with this withhold advance:
-o	Positive Amount = Decrease in Net Wages
-o	Negative Amount = Increase in Net Wages
-5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'Withhold Advance'.
+2.    Next to 'Code' select the appropriate pay code.
+o    Note: It is not possible to withhold more from an employee than he/she has been advanced for a specific salary or commission pay code.
+3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4.    In the 'Amount' field: Enter the total amount by which you need to adjust the wages associated with this withhold advance:
+o    Positive Amount = Decrease in Net Wages
+o    Negative Amount = Increase in Net Wages
+5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
-> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this withhold advance, you’ll need to do so manually with the appropriate tax in this window.
+> NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this withhold advance, you'll need to do so manually with the appropriate tax in this window.
 
 
 ![A screenshot of a cell phone Description automatically generated](media/MCADD10.jpg)
@@ -4769,18 +4704,18 @@ o	Negative Amount = Increase in Net Wages
 
 **To enter/adjust an amount for FICA Social Security Tips:*
 
-1.	Next to ‘Transaction Type’ select ‘FICA Soc Sec Tips’.
-2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust FICA Social Security Tips tax  owed by the employee:
-o	Positive Amount = Decrease in Net Wages
-o	Negative Amount = Increase in Net Wages
-4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust FICA Social Security Tips Taxable Wages:
-o	Positive Amount = Increase in FICA Social Security Tips Taxable Wages 
-o	Negative Amount = Decrease in FICA Social Security Tips Taxable Wages
-5.	In the ‘EFIC Amount’ field: Enter the total amount by which you need to adjust FICA Social Security Tips Taxes owed by the employer.
-o	Positive Amount = Increase in Employer owed FICA Social Security Tips Tax
-o	Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
-6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'FICA Soc Sec Tips'.
+2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3.    In the 'Amount' field: Enter the total amount by which you need to adjust FICA Social Security Tips tax  owed by the employee:
+o    Positive Amount = Decrease in Net Wages
+o    Negative Amount = Increase in Net Wages
+4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Social Security Tips Taxable Wages:
+o    Positive Amount = Increase in FICA Social Security Tips Taxable Wages 
+o    Negative Amount = Decrease in FICA Social Security Tips Taxable Wages
+5.    In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Social Security Tips Taxes owed by the employer.
+o    Positive Amount = Increase in Employer owed FICA Social Security Tips Tax
+o    Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
+6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tips Tax, the FICA Social Security Tips Taxable Wages, and the Employer FICA Social Security Tips Taxes need to be adjusted. GP will not calculate FICA Social Security Tips Tax for you automatically in this window.
@@ -4802,18 +4737,18 @@ o	Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
 
 **To enter/adjust an amount for FICA Medicare Tips:*
 
-1.	Next to ‘Transaction Type’ select ‘FICA Medicare Tips’.
-2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust FICA Medicare Tips Tax owed by the employee:
-o	Positive Amount = Decrease in Net Wages
-o	Negative Amount = Increase in Net Wages
-4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust FICA Medicare Tips Taxable Wages:
-o	Positive Amount = Increase in FICA Medicare Tips Taxable Wages 
-o	Negative Amount = Decrease in FICA Medicare Tips Taxable Wages
-5.	In the ‘EFIC Amount’ field: Enter the total amount by which you need to adjust FICA Medicare Tips Taxes owed by the employer.
-o	Positive Amount = Increase in Employer owed FICA Medicare Tips Tax
-o	Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
-6.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'FICA Medicare Tips'.
+2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3.    In the 'Amount' field: Enter the total amount by which you need to adjust FICA Medicare Tips Tax owed by the employee:
+o    Positive Amount = Decrease in Net Wages
+o    Negative Amount = Increase in Net Wages
+4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Medicare Tips Taxable Wages:
+o    Positive Amount = Increase in FICA Medicare Tips Taxable Wages 
+o    Negative Amount = Decrease in FICA Medicare Tips Taxable Wages
+5.    In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Medicare Tips Taxes owed by the employer.
+o    Positive Amount = Increase in Employer owed FICA Medicare Tips Tax
+o    Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
+6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tips Tax, the FICA Medicare Tips Taxable Wages, and the Employer FICA Medicare Tips Taxes need to be adjusted. GP will not calculate FICA Medicare Tips Tax for you automatically in this window.
@@ -4834,15 +4769,15 @@ o	Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
 
 **To enter/adjust an amount for Federal Tax/Tips:*
 
-1.	Next to ‘Transaction Type’ select ‘Federal Tax/Tips’.
-2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust Federal Tax owed by the employee on Tips:
-o	Positive Amount = Decrease in Net Wages
-o	Negative Amount = Increase in Net Wages
-4.	In the ‘Taxable Wage’ field: Enter the total amount by which you need to adjust Federal Taxable Tips Wages:
-o	Positive Amount = Increase in Federal Taxable Tips Wages 
-o	Negative Amount = Decrease in Federal Taxable Tips Wages
-5.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'Federal Tax/Tips'.
+2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3.    In the 'Amount' field: Enter the total amount by which you need to adjust Federal Tax owed by the employee on Tips:
+o    Positive Amount = Decrease in Net Wages
+o    Negative Amount = Increase in Net Wages
+4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust Federal Taxable Tips Wages:
+o    Positive Amount = Increase in Federal Taxable Tips Wages 
+o    Negative Amount = Decrease in Federal Taxable Tips Wages
+5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tips Tax and Federal Taxable Tips Wages need to be adjusted. GP will not calculate Federal Tips Tax for you automatically in this window.
@@ -4863,12 +4798,12 @@ o	Negative Amount = Decrease in Federal Taxable Tips Wages
 
 **To enter/adjust an amount for Uncollected FICA Social Security Tax:*
 
-1.	Next to ‘Transaction Type’ select ‘Uncollected FICA Soc Sec Tax’.
-2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust Uncollected FICA Social Security tax  owed by the employee:
-o	Positive Amount = Increase Uncollected FICA Soc Sec Tax on Tips
-o	Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
-4.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'Uncollected FICA Soc Sec Tax'.
+2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3.    In the 'Amount' field: Enter the total amount by which you need to adjust Uncollected FICA Social Security tax  owed by the employee:
+o    Positive Amount = Increase Uncollected FICA Soc Sec Tax on Tips
+o    Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
+4.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Social Security Tax needs to be adjusted. GP will not calculate Uncollected FICA Social Security Tax for you automatically in this window.
@@ -4887,12 +4822,12 @@ o	Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
 **To enter/adjust an amount for Uncollected FICA Medicare Tax:*
 
 
-1.	Next to ‘Transaction Type’ select ‘Uncollected FICA Medicare Tax’.
-2.	Enter appropriate dates in the ‘Date From’ and ‘Date To’ fields. These dates reflect the pay period the transaction is associated with. These are ‘informational’ dates and DO NOT drive ‘when’ the transaction is posted.
-3.	In the ‘Amount’ field: Enter the total amount by which you need to adjust Uncollected FICA Medicare tax  owed by the employee:
-o	Positive Amount = Increase Uncollected FICA Medicare Tax on Tips
-o	Negative Amount = Decrease Uncollected FICA Medicare Tax on Tips
-4.	Click ‘Save’ in the Payroll Manual Check Transaction Entry Window.
+1.    Next to 'Transaction Type' select 'Uncollected FICA Medicare Tax'.
+2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3.    In the 'Amount' field: Enter the total amount by which you need to adjust Uncollected FICA Medicare tax  owed by the employee:
+o    Positive Amount = Increase Uncollected FICA Medicare Tax on Tips
+o    Negative Amount = Decrease Uncollected FICA Medicare Tax on Tips
+4.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Medicare Tax needs to be adjusted. GP will not calculate Uncollected FICA Medicare Tax for you automatically in this window.
@@ -4968,7 +4903,7 @@ entered in the functional or originating currency.
 4. Choose Remaining to add one assignment for the remaining unassigned amount.
     The new assignment will ensure that the total assigned amount equals the
     distribution amount. For example, the distribution amount is \$100 and
-    you’ve entered four assignments that total \$75. When you choose Remaining,
+    you've entered four assignments that total \$75. When you choose Remaining,
     a fifth assignment for the remaining value, \$25 is created. This button is
     not available if the Distribution field is blank or has a zero value.
 
@@ -4984,14 +4919,14 @@ the selected transaction dimension.
 1. Enter or select the code for each alphanumeric transaction dimension in the
     Alphanumeric column.
 
-*You can only add an alphanumeric code that the user ID you’re logged in as,
+*You can only add an alphanumeric code that the user ID you're logged in as,
 and the selected account, both have access to. For more information, see the
 Analytical Accounting documentation.*
 
 1. Enter a transaction dimension code in the Numeric, Yes/No or Date field for
     a Numeric, Boolean or Date type transaction dimension.
 
-2. To validate that the information you’ve entered can be saved, choose
+2. To validate that the information you've entered can be saved, choose
     Validate. If errors are found, the Analytical Accounting Validation Log
     window opens, where you can view the errors or changes. For more information
     about validation, see the Analytical Accounting documentation.
@@ -5052,7 +4987,7 @@ Use the Build Payroll Checks window to process an advance pay run.
     the pay run.
 
 4. Choose Include Pay Codes to open the Payroll Check Pay Codes window where
-    you can select the pay codes to include. When you’ve finished, choose OK to
+    you can select the pay codes to include. When you've finished, choose OK to
     return to the Build Payroll Checks window.
 
 5. Choose Build to build the paychecks. The Check File Report will be printed
@@ -5136,24 +5071,24 @@ If needed, adjust values for individual records in the following fields:
 
 #### Building Payroll checks
 
-Before processing computer checks, you must first build Payroll checks. During the check building process, the Payroll system will search for all the transactions and employee cards that you’ve selected to include in the pay run. It also will verify posting accounts and other information.
+Before processing computer checks, you must first build Payroll checks. During the check building process, the Payroll system will search for all the transactions and employee cards that you've selected to include in the pay run. It also will verify posting accounts and other information.
 
 Use the Build Payroll Checks window to indicate which employees, pay codes, deductions, and benefits to include in the pay run. This process is known as building Payroll checks and must be done before processing a pay run.
 
-After the checks have been built, the Check File Report will be printed. This report lists the wages, tax codes, deduction, and benefit codes that will affect each employee’s paycheck. It also lists any errors or warnings in the build.
+After the checks have been built, the Check File Report will be printed. This report lists the wages, tax codes, deduction, and benefit codes that will affect each employee's paycheck. It also lists any errors or warnings in the build.
 
 - Errors are problems with individual transactions that must be corrected before you can calculate the paychecks.
 
-- Warnings don’t prevent you from calculating checks. You’ll need to decide whether you should correct the situations causing the warning.
+- Warnings don't prevent you from calculating checks. You'll need to decide whether you should correct the situations causing the warning.
 
 > [!NOTE]
 > If you decide to ignore the warning, the transaction for which the warning appeared will be either totally or partially ignored, in some cases. For example, if a transaction was subject to local tax, but no local tax code was specified, the transaction would be paid but no local tax would bewithheld.
 
-You’ll need to remove a build when there are errors that require changes to transactions included in the build.
+You'll need to remove a build when there are errors that require changes to transactions included in the build.
 
-To remove a build before posting it, choose Remove in the Build Payroll Checks window. Any batches that you marked will be unmarked automatically. Since a batch can’t be edited while it’s marked, and a batch can’t be unmarked if it’s included in a build, you must remove the build before editing transactions included in the build. However, when you’ve finished editing the transaction, you can mark the batch and build the paychecks again.
+To remove a build before posting it, choose Remove in the Build Payroll Checks window. Any batches that you marked will be unmarked automatically. Since a batch can't be edited while it's marked, and a batch can't be unmarked if it's included in a build, you must remove the build before editing transactions included in the build. However, when you've finished editing the transaction, you can mark the batch and build the paychecks again.
 
-You can build checks again before they’re calculated. Before you build checks, you can change any of the fields in the Build Payroll Checks window. For example, if you forgot to include salary pay in the original build, you can mark the Salary box and then choose Rebuild. A build is removed automatically after the paychecks are calculated, printed, and posted.
+You can build checks again before they're calculated. Before you build checks, you can change any of the fields in the Build Payroll Checks window. For example, if you forgot to include salary pay in the original build, you can mark the Salary box and then choose Rebuild. A build is removed automatically after the paychecks are calculated, printed, and posted.
 
 **To build Payroll checks:**
 
@@ -5174,13 +5109,13 @@ You can build checks again before they’re calculated. Before you build checks,
 3. Enter the pay period dates and the employee ranges you wish to include in
     the pay run.
 
-4. Mark the pay periods to include in the pay run if you’ve selected to include
+4. Mark the pay periods to include in the pay run if you've selected to include
     the automatic pay types of salary and pension. For example, if you pay some
-    employees every week and others twice a month, and you’re paying both types
+    employees every week and others twice a month, and you're paying both types
     now, mark both Weekly and Semimonthly.
 
 5. Mark the automatic pay types to be calculated. Refer to the online help for
-    this window for an explanation of each type. If you don’t select any of
+    this window for an explanation of each type. If you don't select any of
     these pay codes, checks will be built only for the batches you mark in the
     Select Batches window.
 
@@ -5191,14 +5126,14 @@ available if the type is Pay Code and the code that is selected is Vacation
 or Sick Time based on Salary. For more information, refer to *Entering
 Payroll computer check transactions* .
 
-1. Enter the number of days and weeks worked in this pay period if you’re
+1. Enter the number of days and weeks worked in this pay period if you're
     tracking them. These numbers will be assigned to the automatic pay types,
     not entered transactions.
 
 2. Choose Include Deductions to open the Payroll Check Deductions window, where
     you can select the deductions to include in this pay run.
 
-When you’ve finished, choose OK to return to the Build Payroll Checks
+When you've finished, choose OK to return to the Build Payroll Checks
 window.
 
 *You must select the deductions and benefits to include in this pay run for
@@ -5206,14 +5141,14 @@ the deductions and benefits to be taken. The Include Pay Periods choices you
 chose have no relevance to the deductions and benefits to include.*
 
 1. Choose Include Benefits to open the Payroll Check Benefits window, where you
-    can select the benefits to include in this pay run.When you’ve finished,
+    can select the benefits to include in this pay run.When you've finished,
     choose OK to return to the Build Payroll Checks window.
 
 2. Choose Select Batches to open the Payroll Check Batches window where you can
     select the batches of Payroll transactions to process for this pay run.
 
-When you’ve finished, choose OK to display the Build Payroll Checks window.
-Any unmarked batches won’t be included in the pay run.
+When you've finished, choose OK to display the Build Payroll Checks window.
+Any unmarked batches won't be included in the pay run.
 
 1. Choose Build to build the paychecks. The Check File Report will be printed
     when the build process is complete. This report lists all the transactions
@@ -5227,7 +5162,7 @@ there are warnings, you can correct them or continue.
 #### Calculating Payroll checks
 
 Use the Calculate Payroll Checks window to calculate checks after you build
-them. This procedure assumes you’ve completed *Building Payroll checks* .
+them. This procedure assumes you've completed *Building Payroll checks* .
 
 **To calculate Payroll checks:**
 
@@ -5237,7 +5172,7 @@ them. This procedure assumes you’ve completed *Building Payroll checks* .
 
 2. Choose OK to begin calculating the checks.
 
-When an employee’s wage calculations have conflicts in both deduction sequence and earnings codes, or have conflicts in TSA calculations, Payroll excludes the employee’s pay check from processing.
+When an employee's wage calculations have conflicts in both deduction sequence and earnings codes, or have conflicts in TSA calculations, Payroll excludes the employee's pay check from processing.
 
 Payroll also displays a message and prints error information in the Calculate Exceptions report before printing the Calculate Checks report. Employees included in the Calculate Exceptions report are not included in the Calculate Checks report.
 
@@ -5245,14 +5180,14 @@ Payroll generates an exception batch for any manual transactions included in the
 
 For information on correcting calculation conflicts, see *Correcting Payroll computer check transactions* .
 
-Payroll prints the Calculated Checks report when the checks have been calculated. Verify the information and dollar amounts to be printed on the employees’ paychecks. Continue the payroll process with *Printing and posting checks* .
+Payroll prints the Calculated Checks report when the checks have been calculated. Verify the information and dollar amounts to be printed on the employees' paychecks. Continue the payroll process with *Printing and posting checks* .
 
 #### Printing and posting checks
 
 Use the Print Payroll Checks window to print computer paychecks after the Calculate Checks Report has been printed with no errors. You also can use this window to print an alignment form to ensure the checks will be aligned correctly.
 
 > [!NOTE]
-> If it’s necessary to reprint or void any paychecks that have been printed already, you can do so after the paychecks have been printed. However, paychecks can’t be printed after they’ve been posted.
+> If it's necessary to reprint or void any paychecks that have been printed already, you can do so after the paychecks have been printed. However, paychecks can't be printed after they've been posted.
 
 **To print and post checks:**
 
@@ -5267,24 +5202,24 @@ Use the Print Payroll Checks window to print computer paychecks after the Calcul
     The check date will be printed on the check and is the date that the checks are posted within Payroll and to Bank Reconciliation. The default date is the user date; you can change the date.
 
     > [!NOTE]
-    > If you’re using Direct Deposit and you change the check date, a message will appear indicating that the ACH posting date will be recalculated, which could change the payment dates for direct deposit employees.
+    > If you're using Direct Deposit and you change the check date, a message will appear indicating that the ACH posting date will be recalculated, which could change the payment dates for direct deposit employees.
 
-1. Select whether you’re printing an alignment form or the paychecks.
+1. Select whether you're printing an alignment form or the paychecks.
 
 2. Select a sorting method for the checks to be printed, and select the check format to use or accept the default format.
 
-3. Choose Print. After you’ve printed the paychecks, the Post Payroll Checks window will open.
+3. Choose Print. After you've printed the paychecks, the Post Payroll Checks window will open.
 
 4. Enter the posting date for the check run in the Post Payroll Checks window. This will be the date the checks are posted to General Ledger.
 
 5. Select a process. You can reprint checks, void checks, print an alignment form or post checks.
 
     > [!NOTE]
-    > Voided checks won’t be posted to General Ledger. If you will be voiding checks, enter the reason for voiding them in the Post Payroll Checks window. You can void checks that have already been printed but have not yet been posted. For more information about voiding checks, refer to Voiding a Payroll check.
+    > Voided checks won't be posted to General Ledger. If you will be voiding checks, enter the reason for voiding them in the Post Payroll Checks window. You can void checks that have already been printed but have not yet been posted. For more information about voiding checks, refer to Voiding a Payroll check.
 
 1. Select Post Checks and then choose Process to post the check amounts and the transactions associated with them.
 
-    After the posting process is complete, the Check Register, the Check Posting Register, and other registers will be printed. Depending on how your Payroll system has been set up, posting journals might be printed automatically when you post computer checks. For more information about posting options, refer to your System User’s Guide (Help \>\> Contents \>\> select Setting Up the System).
+    After the posting process is complete, the Check Register, the Check Posting Register, and other registers will be printed. Depending on how your Payroll system has been set up, posting journals might be printed automatically when you post computer checks. For more information about posting options, refer to your System User's Guide (Help \>\> Contents \>\> select Setting Up the System).
 
 Any check numbers that were used during the alignment process will be noted on the Check Register, as well as the numbers for any checks that were reprinted or voided. A summary of the Payroll taxes for this pay run will appear at the bottom of the Check Register. The employer FICA tax liability will be calculated and posted, as well.
 
@@ -5303,9 +5238,9 @@ manually.
 
 To void checks, the checks must meet several conditions.
 
-- The check can’t be reconciled in Bank Reconciliation.
+- The check can't be reconciled in Bank Reconciliation.
 
-- The check can’t be marked for reconciling in Bank Reconciliation.
+- The check can't be marked for reconciling in Bank Reconciliation.
 
 - Check and transaction detail history must have been kept when the check was
     issued and the check to void must exist in history.
@@ -5328,23 +5263,23 @@ To void checks, the checks must meet several conditions.
 
 2. Enter the posting date. This is the date that will appear as the posting date for the reversing entries to the general ledger accounts that offset the original transaction distributions, and is the posted date that is printed on the Payroll Check Posting Register.
 
-3. Choose Redisplay to display the checks within the selected range that are available for voiding. If you make changes to the selected range, you’ll need to choose Redisplay again to display the checks within the new range.
+3. Choose Redisplay to display the checks within the selected range that are available for voiding. If you make changes to the selected range, you'll need to choose Redisplay again to display the checks within the new range.
 
     > [!NOTE]
-    > If you believe a check meets all the criteria necessary to be voided, but doesn’t appear in the scrolling window, another user in the Payroll system might have reconciled the check or marked it for reconciling in Bank Reconciliation, or removed history for the check since you opened the window.
+    > If you believe a check meets all the criteria necessary to be voided, but doesn't appear in the scrolling window, another user in the Payroll system might have reconciled the check or marked it for reconciling in Bank Reconciliation, or removed history for the check since you opened the window.
 
-1. Mark each check to void or choose Mark All to void all of them. You can’t void more than one check for the same employee at a time. For each check, enter the reason for voiding the check.
+1. Mark each check to void or choose Mark All to void all of them. You can't void more than one check for the same employee at a time. For each check, enter the reason for voiding the check.
 
-2. Choose File \>\> Print to print a Void Payroll Checks Edit List. This will show all the checks that are available for voiding, based on the range you entered and the checks that have been marked for voiding—indicated by an X. The edit list also lists the checks that can’t be voided and a message explaining why.
+2. Choose File \>\> Print to print a Void Payroll Checks Edit List. This will show all the checks that are available for voiding, based on the range you entered and the checks that have been marked for voiding—indicated by an X. The edit list also lists the checks that can't be voided and a message explaining why.
 
     If another user has made changes to checks in the Payroll system since you selected a range to display in the scrolling window, such as marking checks for reconciliation in Bank Reconciliation, the edit list will display messages for any checks that are no longer available for voiding.
 
-1. Make a backup of your company Payroll data files. For more information, refer to your System User’s Guide (Help \>\> Contents \>\> select System
+1. Make a backup of your company Payroll data files. For more information, refer to your System User's Guide (Help \>\> Contents \>\> select System
     Administration).
 
 2. Choose Process to void the selected checks.
 
-If you’re keeping check and transaction history, information for the original check and the voided check will be printed on history reports. The voided check amounts will be negative. The voided checks also will be indicated by an asterisk on the Check History Report.
+If you're keeping check and transaction history, information for the original check and the voided check will be printed on history reports. The voided check amounts will be negative. The voided checks also will be indicated by an asterisk on the Check History Report.
 
 Depending on how your Payroll system has been set up, several reports might be printed when you choose Process—including the Check Posting Register and Check Register. The Check Posting Register is like the Void Payroll Checks Edit List and shows the details for each transaction that has been posted.
 
@@ -5362,7 +5297,7 @@ Use the Payroll Check Inquiry window to reprint paystubs and direct deposit earn
 
 4. Choose Redisplay to display the checks within the selected range that are available for viewing.
 
-5. Mark the check box next to a paycheck transaction to include it when reprinting paystubs and direct deposit earnings statements. If specific transactions aren’t marked, all records listed in the scrolling window will be included.
+5. Mark the check box next to a paycheck transaction to include it when reprinting paystubs and direct deposit earnings statements. If specific transactions aren't marked, all records listed in the scrolling window will be included.
 
 6. Choose Recreate Paystub to print the selected documents.
 
@@ -5475,7 +5410,7 @@ Since Sam is paid hourly, all of these transactions might use the pay code
 HOUR and the hourly pay type, but you could edit the pay rate to reflect the
 rate for the job Sam performed.
 
-When these transactions are posted and the Check File Report printed, Sam’s
+When these transactions are posted and the Check File Report printed, Sam's
 pay would show two different pay categories:
 
 - 23 hours at \$2.13 per hour
@@ -5506,7 +5441,7 @@ code HOUR and the hourly pay type. If you did not edit the pay rate for
 those hours worked as a machinist, Erin would be paid the normal pay rate of
 \$16.50 per hour for all hours worked in this period. In addition, pay for
 this period would be paid based on the rate of \$16.50 per hour, as well,
-even though Erin’s overtime work was as a machinist.
+even though Erin's overtime work was as a machinist.
 
 If the pay rates for the transactions as a machinist are edited, the
 resulting pay still depends on whether Automatic Overtime is marked in the
@@ -5532,7 +5467,7 @@ times \$18.10, or \$27.15 per hour.
 
 You would then enter the following transactions for Erin:
 
-- 24 hours at \$18.10 per hour • 16 hours at \$16.50 per hour • 24 hours at
+- 24 hours at \$18.10 per hour * 16 hours at \$16.50 per hour * 24 hours at
     \$18.10 per hour
 
 - 16 hours at \$16.50 per hour
@@ -5554,14 +5489,14 @@ activity information and how to print Payroll reports.
 
 The following information is discussed:
 
-- *Chapter 13, “Employee inquiries,”* describes how to quickly view both
+- *Chapter 13, "Employee inquiries,"* describes how to quickly view both
     current and historical employee information and review information in
     summary or detailed form.
 
-- *Chapter 14, “Payroll card inquiries,”* describes how to view important
+- *Chapter 14, "Payroll card inquiries,"* describes how to view important
     information about employee pay activity.
 
-- *Chapter 15, “Payroll reports,”* explains how to use Payroll reports as
+- *Chapter 15, "Payroll reports,"* explains how to use Payroll reports as
     employee records, to track transactions and simplify audits, and to view
     Payroll expenses.
 
@@ -5582,7 +5517,7 @@ This information is contained in the following sections:
 
 - *Viewing Payroll check distributions in Payroll*
 
-- *Viewing an employee’s personal information*
+- *Viewing an employee's personal information*
 
 - *Viewing employee Payroll codes*
 
@@ -5619,11 +5554,11 @@ voided checks.
     check numbers, check dates or audit trail codes.
 
 4. Choose Redisplay to display the checks within the selected range that are
-    available for viewing. For beginning balance transactions, “BEG BAL” will
-    appear in the scrolling window’s Check Number field. Automatic transactions
+    available for viewing. For beginning balance transactions, "BEG BAL" will
+    appear in the scrolling window's Check Number field. Automatic transactions
     are marked with a caret (\^).
 
-5. To print the Check Inquiry Report showing information that’s currently
+5. To print the Check Inquiry Report showing information that's currently
     displayed in the window, choose File \>\> Print.
 
 To print only selected records, mark the check box next to the paycheck
@@ -5649,8 +5584,8 @@ information for an employee.
     range of check numbers, check dates or audit trail codes.
 
 4. Choose Redisplay to display the transactions within the selected range that
-    are available for viewing. For beginning balance transactions, “BEG BAL”
-    will appear in the scrolling window’s Check Number field. Automatic
+    are available for viewing. For beginning balance transactions, "BEG BAL"
+    will appear in the scrolling window's Check Number field. Automatic
     transactions are marked with a caret (\^).
 
 #### Viewing Payroll check distributions in Payroll
@@ -5672,22 +5607,22 @@ distribution information for an employee.
     edit, and enter Analytical Accounting information for this transaction,
     choose the Analytical Accounting button.
 
-#### Viewing an employee’s personal information
+#### Viewing an employee's personal information
 
-Use the Employee Inquiry window to view information you’ve entered for a
+Use the Employee Inquiry window to view information you've entered for a
 particular employee in the Employee Maintenance window. This window also
-displays the employee’s gender, ethnic origin, federal tax withholding
+displays the employee's gender, ethnic origin, federal tax withholding
 information, user-defined field entries, and transaction entry default
 information.
 
-**To view an employee’s personal information:**
+**To view an employee's personal information:**
 
 1. Open the Employee Inquiry window. (HR & Payroll \>\> Inquiry \>\> Payroll
     \>\> Employee)
 
 2. Enter or select an employee ID.
 
-3. When you’ve finished, close the window.
+3. When you've finished, close the window.
 
 #### Viewing employee Payroll codes
 
@@ -5704,7 +5639,7 @@ the code in the list.
 2. Enter or select an employee ID. You can view the employee card by the ID,
     last name or first name.
 
-3. When you’ve finished, close the window.
+3. When you've finished, close the window.
 
 #### Viewing paycheck summary information by codes
 
@@ -5732,7 +5667,7 @@ year.
 If you choose to display fiscal year information, quarterly amounts are not
 displayed.
 
-1. When you’ve finished, close the window.
+1. When you've finished, close the window.
 
 #### Viewing paycheck breakdown information
 
@@ -5762,14 +5697,14 @@ If Human Resources is selected as the accrue type in the Attendance Setup window
 
 1. Choose Tips to open the Employee Tips Summary Inquiry window, where you can view employee tips by month or fiscal period. For more information, refer to *Viewing employee tips wage and tax information* .
 
-2. When you’ve finished, close the window.
+2. When you've finished, close the window.
 
 #### Viewing historical paycheck information by codes
 
 Use the Employee Pay History Inquiry window to view employee pay history
 information in a selected year. For example, the window will display the
 hours, days, and weeks worked for a pay transaction. You also can use this
-window to view which department, position, and workers’ compensation code
+window to view which department, position, and workers' compensation code
 was used for a particular transaction.
 
 **To view historical paycheck information by codes:**
@@ -5782,7 +5717,7 @@ was used for a particular transaction.
 3. Choose whether to view calendar year or fiscal year information, and then
     select a year you would like to view historical paycheck information for.
 
-4. When you’ve finished, close the window.
+4. When you've finished, close the window.
 
 #### Viewing historical pay code information
 
@@ -5802,7 +5737,7 @@ weeks worked for a specific pay code.
 3. Choose whether to view calendar year or fiscal year information, and then
     select a year you would like to view pay code history information for.
 
-4. When you’ve finished, close the window.
+4. When you've finished, close the window.
 
 #### Viewing the company payroll summary
 
@@ -5826,7 +5761,7 @@ window, the vacation hours and sick time hours fields will not be available.
 1. To view the summary of tips for the selected year and month (or fiscal
     period), choose Tips to open the Payroll Tips Summary Inquiry window.
 
-2. Choose OK when you’ve finished.
+2. Choose OK when you've finished.
 
 ### Chapter 14: Payroll card inquiries
 
@@ -5885,7 +5820,7 @@ Use the Payroll Audit Trail Inquiry window to view information associated with a
 > [!NOTE]
 > You must be keeping check history to zoom from General Ledger to Payroll. You also must be posting in summary. The Create a Journal Entry Per Batch option must be marked in the Posting Setup window for whatever type of Payroll transaction you want to track.
 
-If you’ve posted a computer check or manual check in detail, the Payroll Check Inquiry window will open when you zoom from the Transaction Entry Zoom window in General Ledger.
+If you've posted a computer check or manual check in detail, the Payroll Check Inquiry window will open when you zoom from the Transaction Entry Zoom window in General Ledger.
 
 For more information about posting in summary and detail, refer to the online help for the Posting Setup window.
 
@@ -5900,7 +5835,7 @@ reports and working with report options and report groups.
 For more information about creating and printing reports, using sample
 reports, and modified reports from the Reports Library, and the various
 reporting tools that you can use with Microsoft Dynamics GP, refer to your
-System User’s Guide (Help \>\> Contents \>\> select Using The System).
+System User's Guide (Help \>\> Contents \>\> select Using The System).
 
 This information is divided into the following sections:
 
@@ -5951,7 +5886,7 @@ Personnel List
 Vacation/Sick Time List\*
 
 \* Indicates reports that are not available when Human Resources is selected as
-the accrue type in the Attendance Setup window. Refer to the “Attendance setup”
+the accrue type in the Attendance Setup window. Refer to the "Attendance setup"
 chapter in the Human Resources manual.
 
 | *Wage and Hour*                                                                                                                                    |   |   |
@@ -5991,7 +5926,7 @@ Shift Code Register
 SUTA Posting Journal
 
 Vacation/Sick Time Accrual Register  
-Workers’ Compensation Posting Journal
+Workers' Compensation Posting Journal
 
 *Setup Reports*
 
@@ -6012,7 +5947,7 @@ Position Codes
 Posting Accounts  
 Shift Codes  
 Tax ID  
-Workers’ Comp Codes
+Workers' Comp Codes
 
 *Period-end Reports*
 
@@ -6041,7 +5976,7 @@ State Tax Summary
 
 SUTA Summary
 
-Workers’ Compensation Summary
+Workers' Compensation Summary
 
 *Quarter-End Reports*
 
@@ -6130,7 +6065,7 @@ Cross-Company Pay Code Summary
 Cross-Company Position Summary  
 Cross-Company State Tax Summary  
 Cross-Company SUTA Summar  
-Cross-Company Workers’ Compensation Summary
+Cross-Company Workers' Compensation Summary
 
 #### Cross-company reports
 
@@ -6160,7 +6095,7 @@ options so that you can easily print the information you need. For example,
 you can create report options for the employee list that show either
 detailed or summary information.
 
-*A single report option can’t be used by multiple reports. You must create
+*A single report option can't be used by multiple reports. You must create
 identical options for several reports separately.*
 
 Use the Payroll report options windows to create sorting, restriction,
@@ -6178,7 +6113,7 @@ Payroll.
     > [!TIP]
     > For report options window information choose Help \>\> Index; then enter the name of the specific report options window.
 
-1. Name the option and enter information to define the option. The name you enter for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
+1. Name the option and enter information to define the option. The name you enter for the option won't appear on the report. The selections available for defining report options vary, depending on the report type you've selected.
 
 2. Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
@@ -6187,11 +6122,11 @@ Payroll.
 
 1. Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-2. Choose Email Options to enter email options for the report option. Once the email options are set up, you’ll be able to send the reports in an email message from this window by choosing Email. You also can send this report in an email from any list view where the report option is displayed.
+2. Choose Email Options to enter email options for the report option. Once the email options are set up, you'll be able to send the reports in an email message from this window by choosing Email. You also can send this report in an email from any list view where the report option is displayed.
 
 3. Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
 
-For more information about printing reports, refer to *Chapter 15, “Payroll reports.”*
+For more information about printing reports, refer to *Chapter 15, "Payroll reports."*
 
 #### Payroll Microsoft SQL Server Reporting Services reports
 
@@ -6229,16 +6164,16 @@ records current and how to edit tax information.
 
 The following information is discussed:
 
-- *Chapter 16, “Company record utilities,”* describes how to help keep your
+- *Chapter 16, "Company record utilities,"* describes how to help keep your
     Payroll records current.
 
-- *Chapter 17, “Removing records,”* describes how you can remove Payroll
+- *Chapter 17, "Removing records,"* describes how you can remove Payroll
     history information that is no longer useful to your company.
 
-- *Chapter 18, “Tax utilities,”* explains how to edit federal tax liabilities,
+- *Chapter 18, "Tax utilities,"* explains how to edit federal tax liabilities,
     tax codes, and FICA taxes, if the amounts are incorrect.
 
-- *Chapter 19, “Payroll updates,”* helps you update your Payroll system’s tax
+- *Chapter 19, "Payroll updates,"* helps you update your Payroll system's tax
     tables and software.
 
 ### Chapter 16: Company record utilities
@@ -6247,7 +6182,7 @@ You can help keep your Payroll records current using company record
 utilities. The reconciling process checks for discrepancies in employee
 financial information and checks for differences between detail records and
 summary records. Comparing the detail and summary amounts can help you
-verify the accuracy of your entries when you’re setting up Payroll for the
+verify the accuracy of your entries when you're setting up Payroll for the
 first time—or any time you enter or change information in the employee
 financial fields.
 
@@ -6287,7 +6222,7 @@ to verify your Payroll data. The reconcile process also is useful if you
 discover inconsistencies in reports.
 
 > [!IMPORTANT]
-> Before reconciling, back up all your company’s accounting data. For more information about making backups, refer to your System User’s Guide (Help \>\> Contents \>\> select System Administration).
+> Before reconciling, back up all your company's accounting data. For more information about making backups, refer to your System User's Guide (Help \>\> Contents \>\> select System Administration).
 
 **To reconcile employee records:**
 
@@ -6308,10 +6243,10 @@ this option is not marked and you choose Process, Payroll will not perform
 the reconcile process based on the selected records.
 
 If employee onboarding workflow or employee personnel maintenance workflow
-is activated, select the type of information to reconcile. The list isn’t
+is activated, select the type of information to reconcile. The list isn't
 available if neither workflow type is activated.
 
-1. Select a range of employee IDs to reconcile. If you don’t enter a range, all
+1. Select a range of employee IDs to reconcile. If you don't enter a range, all
     employee records will be reconciled.
 
 2. Choose Insert to insert the range.
@@ -6320,9 +6255,9 @@ available if neither workflow type is activated.
     information or print the Payroll Reconcile Error Report, depending on your
     selections in this window.
 
-If you’ve marked both Reconcile and Print Report, the report is printed
+If you've marked both Reconcile and Print Report, the report is printed
 before information is reconciled. This report will display the amounts for
-the employees whose detail records don’t match the summary records.
+the employees whose detail records don't match the summary records.
 
 > [!NOTE]
 > After employee records have been reconciled, the values on the summary windows will be adjusted based on the transaction details of the employees.
@@ -6332,9 +6267,9 @@ the employees whose detail records don’t match the summary records.
 Situations might arise when you need to change or adjust information for a
 range of employees. You can do so by using the Employee Mass Update window.
 
-If you’re using Human Resources, you can’t use the Employee Mass Update
+If you're using Human Resources, you can't use the Employee Mass Update
 window to make changes to benefits, deductions, or sick and vacation amounts
-if you’re accruing sick time and vacation time using Human Resources.
+if you're accruing sick time and vacation time using Human Resources.
 
 When you make pay rate changes in the Employee Mass Update window, they do
 not apply to employee /pay code combinations assigned to pay step tables.
@@ -6357,8 +6292,8 @@ mass update:
     five years of service. You could update the accrual amount based on the
     employee start date.
 
-- Your company has a policy that accrued vacation hours can’t exceed 80 hours
-    if vacation isn’t used by a certain date. Using the Employee Mass Update
+- Your company has a policy that accrued vacation hours can't exceed 80 hours
+    if vacation isn't used by a certain date. Using the Employee Mass Update
     window, you could set vacation available hours that are greater than 80 to
 
 #### Mass update methods
@@ -6369,7 +6304,7 @@ There are four different mass update methods.
 current amounts by a specific amount.
 
 For example, suppose you have a group of hourly employees who are paid \$10
-an hour. To increase their wage to \$12 an hour, you’d enter \$2 in the
+an hour. To increase their wage to \$12 an hour, you'd enter \$2 in the
 Amount field and mark Increase.
 
 **Change by Percent** Updates employee information, such as a pay rate,
@@ -6377,14 +6312,14 @@ based on the current pay rate, increasing or decreasing the amounts by a
 certain percentage.
 
 For example, if your company has decided to give a range of employees a 5
-percent pay raise, you’d enter 5.00 and mark Increase.
+percent pay raise, you'd enter 5.00 and mark Increase.
 
 **Replace with Amount** Updates employee information by replacing an amount
 with a specific amount.
 
 For example, your company policy may be that the number of vacation hours
 per year for employees increases from 80 hours to 120 hours after five years
-of service. In this example, you’d select a range of employees, based on
+of service. In this example, you'd select a range of employees, based on
 their start date, select Replace with Amount and enter 120 in the Amount
 field.
 
@@ -6398,7 +6333,7 @@ you could set all vacation available hours that are greater than 100 back to
 100. By doing so, employees with fewer than 100 hours of vacation will be
 unaffected.
 
-In this example, you’d select Replace with Amount if Greater Than Amount and
+In this example, you'd select Replace with Amount if Greater Than Amount and
 enter 100 in the Amount field. If an employee had a vacation available
 amount of 140 hours, that amount would be replaced with 100.
 
@@ -6407,20 +6342,20 @@ amount of 140 hours, that amount would be replaced with 100.
 There are some limitations to updating records in the Employee Mass Update
 window.
 
-- If you’re updating a benefit or deduction code and the calculation method
+- If you're updating a benefit or deduction code and the calculation method
     for the code is Percent of Gross or Percent of Net, the updated method for
-    the code can’t be more than 100 percent. For example, if you have a
+    the code can't be more than 100 percent. For example, if you have a
     deduction percentage that is 20 percent of gross and you enter 90 percent to
     increase the percentage to 110 percent, the updated amount will be set to
     100 percent.
 
-- You can’t update tiered deductions or tiered benefits using the Employee
+- You can't update tiered deductions or tiered benefits using the Employee
     Mass Update window.
 
-- You can’t update Charged Tips or Reported Tips pay types.
+- You can't update Charged Tips or Reported Tips pay types.
 
-- If you’re updating a pay or benefit code, you can’t decrease the current
-    amount to an amount less than zero. However, if you’re updating a deduction
+- If you're updating a pay or benefit code, you can't decrease the current
+    amount to an amount less than zero. However, if you're updating a deduction
     code, you can decrease the current amount to an amount that is less than
     zero.
 
@@ -6428,7 +6363,7 @@ window.
 
 Use the Employee Mass Update window to change pay rates and benefit and
 deduction amounts for a range of employees. You also can make adjustments to
-an individual employee’s amount within the range using the Edit Employee
+an individual employee's amount within the range using the Edit Employee
 Mass Update window.
 
 When you make pay rate changes in the Employee Mass Update window, they do
@@ -6452,16 +6387,16 @@ not apply to employee /pay code combinations assigned to pay step tables.
 5. Enter the amount or percentage by which the selected cards are to be adjusted. Depending on the update method you selected, this field is labeled either Amount or Percentage.
 
     > [!NOTE]
-    > If you manually update an employee’s overtime or doubletime pay rate, this will also update the pay rate for the pay code.
+    > If you manually update an employee's overtime or doubletime pay rate, this will also update the pay rate for the pay code.
 
 1. Mark Increase or Decrease, depending on whether the existing employee cards are to be increased or decreased. This field is available only if you select Change by Amount or Change by Percent as the update method.
 
 2. Mark Round to Nearest Dollar to round the updated amount to the nearest dollar. This field is available only if you select Change by Percent as the update method.
 
     > [!NOTE]
-    > If you change an amount in the Updated Amount column in the scrolling window of the Edit Employee Mass Update window, the amount you change in that window won’t be rounded, even if this selection is marked.
+    > If you change an amount in the Updated Amount column in the scrolling window of the Edit Employee Mass Update window, the amount you change in that window won't be rounded, even if this selection is marked.
 
-1. Mark Include Pay Codes Based on this Pa Code to update all pay codes that are based on this pay code. For example, if you’re changing the pay rate for a salary pay code, you can apply the rate change to all pay codes that are based on the salary pay code, such as vacation or overtime pay types. A new pay rate or pay factor is automatically calculated based on the old rates.
+1. Mark Include Pay Codes Based on this Pa Code to update all pay codes that are based on this pay code. For example, if you're changing the pay rate for a salary pay code, you can apply the rate change to all pay codes that are based on the salary pay code, such as vacation or overtime pay types. A new pay rate or pay factor is automatically calculated based on the old rates.
 
 2. Choose Edit Records to display the Edit Employee Mass Update window where you can preview and edit the updated information.
 
@@ -6477,7 +6412,7 @@ Use the Payroll Gross Up window to quickly determine the gross pay amount
 needed for an employee to net a specified dollar amount for bonuses, holiday
 pay or other special Payroll events. For example, if you wanted to award a
 bonus of \$250.00 after taxes to an employee, you can use this window to
-calculate the amount to include in an employee’s pay for the employee to
+calculate the amount to include in an employee's pay for the employee to
 receive \$250.00 after taxes.
 
 **To calculate net-to-gross wages:**
@@ -6487,10 +6422,10 @@ receive \$250.00 after taxes.
 
     ![A screenshot of a cell phone Description automatically generated](media/b261605dcfe8ac32b37de75036950e81.jpg)
 
-1. Enter the net amount to pay your employee. 3. Enter the employee’s federal
+1. Enter the net amount to pay your employee. 3. Enter the employee's federal
     tax percentage.
 
-2. Enter the employee’s state and local tax percentages, if any.
+2. Enter the employee's state and local tax percentages, if any.
 
 3. Choose Calculate. The gross Payroll amount will be calculated and displayed.
 
@@ -6500,7 +6435,7 @@ receive \$250.00 after taxes.
 
 There may be instances when the code you use for pay codes, benefit codes or
 deduction codes need to be changed. For example, if you have a legacy code
-that uses a number and you’d like to use a more descriptive code using a
+that uses a number and you'd like to use a more descriptive code using a
 word, or change codes to be more meaningful to the people using the system.
 
 You can modify codes either one at a time, or by importing a text file
@@ -6518,7 +6453,7 @@ following criteria are checked when you validate the file:
 
 - New codes are no longer than six characters
 
-- New codes are not named “ALL”
+- New codes are not named "ALL"
 
 - Only uppercase letters are used
 
@@ -6527,23 +6462,23 @@ following criteria are checked when you validate the file:
 1. Open the Payroll Code Modifier window. (HR & Payroll \>\> Utilities \>\>
     Payroll \>\> Payroll Code Modifier)
 
-2. Select the method you’ll use to change the codes, one code at a time, or a
+2. Select the method you'll use to change the codes, one code at a time, or a
     batch of codes.
 
 3. Select the type of code to modify. You can change pay codes, benefit codes
-    or deduction codes. If you’re changing a batch of codes, you can change only
+    or deduction codes. If you're changing a batch of codes, you can change only
     one type at a time, and skip to step 5.
 
-4. If you’re modifying a single code, enter or select the code you want to
-    change. Then, enter the new code you’ll use to replace it. Skip to step 7.
+4. If you're modifying a single code, enter or select the code you want to
+    change. Then, enter the new code you'll use to replace it. Skip to step 7.
 
-5. If you’re modifying a batch, select the path to the import file that
+5. If you're modifying a batch, select the path to the import file that
     contains the code changes. The file should be a tab delimited text file,
     containing two columns of uppercase codes. Column 1 should list the old
     code; Column 2 should list the new code that replaces each old code. Numbers
     can be used.
 
-6. Choose Validate. This button is available only if you’re importing a file.
+6. Choose Validate. This button is available only if you're importing a file.
     The validation will ensure your old codes are all of the same code type that
     you selected and whether the old code exists. A Code Validation Report will
     print when the validation is complete and list any errors found during the
@@ -6574,7 +6509,7 @@ This information is contained in the following sections:
 
 #### Removing Payroll history
 
-History records provide useful information for audit purposes. If you’re
+History records provide useful information for audit purposes. If you're
 keeping one of the types of history available in Payroll, these records can
 be maintained for an unlimited number of years. Removing history might
 affect your ability to reprint posting journals and void posted checks.
@@ -6585,11 +6520,11 @@ closing process; however, at other times during the accounting cycle, it
 might be necessary to remove ranges of history that are no longer useful.
 
 > [!IMPORTANT]
-> Don’t remove history until you’ve printed all government statements and reports for that year. After Payroll history is removed, you won’t be able to reprint statements and reports for that year. Before removing history, back up your company’s accounting data. For more information about making backups in Microsoft Dynamics GP, refer to your System User’s Guide (Help \>\> Contents \>\> select System Administration).
+> Don't remove history until you've printed all government statements and reports for that year. After Payroll history is removed, you won't be able to reprint statements and reports for that year. Before removing history, back up your company's accounting data. For more information about making backups in Microsoft Dynamics GP, refer to your System User's Guide (Help \>\> Contents \>\> select System Administration).
 
 Use the Remove Payroll History window to remove Payroll history. You can
 remove Payroll history for a range of audit trail codes, posting dates or
-employees. After you’ve removed history, you can’t void checks or reprint
+employees. After you've removed history, you can't void checks or reprint
 posting journals for computer checks, manual checks or void checks for the
 range of transactions that were removed.
 
@@ -6599,7 +6534,7 @@ range of transactions that were removed.
 
 2. Select a range from the list and enter a range restriction.
 
-3. Choose Insert to insert the range restriction. You can select additional ranges and restrictions. If you’ve made an error in a range or a restriction, select the range and choose Remove.
+3. Choose Insert to insert the range restriction. You can select additional ranges and restrictions. If you've made an error in a range or a restriction, select the range and choose Remove.
 
 4. Mark Print Check History to print the Check History Report without removing history. Mark Print Transaction History to print the Transaction History Report without removing history.
 
@@ -6612,7 +6547,7 @@ range of transactions that were removed.
 Use the Remove Employee Summary window to remove employee summary and tip information for a selected year. You also can print a summary report using this window.
 
 > [!NOTE]
-> Don’t remove employee summary information until you’ve printed all government statements and reports for that year. After you’ve removed employee summary information, you won’t be able to reprint statements and reports for that year.
+> Don't remove employee summary information until you've printed all government statements and reports for that year. After you've removed employee summary information, you won't be able to reprint statements and reports for that year.
 
 **To remove employee summary information:**
 
@@ -6632,7 +6567,7 @@ Use the Remove Employee Summary window to remove employee summary and tip inform
 
 1. Choose Process to remove summary and tip information or print the Summary Report, depending on your selections in this window.
 
-If you’ve marked both Print Summary Report and Remove Summary Information, the report is printed after historical records are removed.
+If you've marked both Print Summary Report and Remove Summary Information, the report is printed after historical records are removed.
 
 #### Removing inactive records
 
@@ -6645,9 +6580,9 @@ year-end wage file, be sure to reactivate the employees first before
 choosing to remove inactive records.
 
 > [!IMPORTANT]
-> Don’t remove inactive records until you’ve printed all government statements and reports for that year. After inactive employee records are removed, you won’t be able to reprint statements and reports for that year.
+> Don't remove inactive records until you've printed all government statements and reports for that year. After inactive employee records are removed, you won't be able to reprint statements and reports for that year.
 
-If you’re using Human Resources, removing inactive records in Payroll will also remove inactive records in Human Resources. If you’re using Direct Deposit, removing inactive employee records will also remove records of employees that were marked as inactive in the Direct Deposit Employee Maintenance window.
+If you're using Human Resources, removing inactive records in Payroll will also remove inactive records in Human Resources. If you're using Direct Deposit, removing inactive employee records will also remove records of employees that were marked as inactive in the Direct Deposit Employee Maintenance window.
 
 **To remove inactive records:**
 
@@ -6679,21 +6614,21 @@ information to history. All the information for printing W-2 statements and
 
 2. Select the year to remove year-end history information for.
 
-3. Choose Insert to add the year to the Restrictions window. You can remove yearend information for multiple years. If you’ve selected the wrong year, select the year and choose Remove. The year will be removed from the Restrictions window.
+3. Choose Insert to add the year to the Restrictions window. You can remove yearend information for multiple years. If you've selected the wrong year, select the year and choose Remove. The year will be removed from the Restrictions window.
 
 4. Choose Process.
 
 #### Removing distribution information
 
 Use the Remove Payroll Distribution History window to remove Payroll
-distribution information. If you’re keeping distribution history, there will
+distribution information. If you're keeping distribution history, there will
 be detailed records of how Payroll transactions have affected the balances
 of posting accounts.
 
 Before removing history, be sure there is no need to retain the distribution
-information. After you’ve removed history, you won’t be able to print the
+information. After you've removed history, you won't be able to print the
 Reprint Check Posting Register, FUTA Posting Register, SUTA Posting Register
-or Workers’ Compensation Posting Register for the audit trail codes that
+or Workers' Compensation Posting Register for the audit trail codes that
 were removed.
 
 **To remove distribution information:**
@@ -6703,11 +6638,11 @@ were removed.
 
 2. Select a range from the list and enter a range restriction.
 
-3. Choose Insert to add the range restriction. You can select additional ranges and restrictions. If you’ve made an error in a range or a restriction, select the range and choose Remove.
+3. Choose Insert to add the range restriction. You can select additional ranges and restrictions. If you've made an error in a range or a restriction, select the range and choose Remove.
 
 4. Mark Print Report to print the Distribution History Report without removing history.
 
-5. Mark Remove History to remove distribution history for the range you’ve entered.
+5. Mark Remove History to remove distribution history for the range you've entered.
 
 6. Choose Process to clear distribution history for the selected ranges.
 
@@ -6715,10 +6650,10 @@ were removed.
 
 Use the Remove Payroll Journal History window to remove Payroll journal
 history. If your posting options have been set up to allow posting journals
-to be reprinted, you’ve been able to reprint posting journals for Payroll
+to be reprinted, you've been able to reprint posting journals for Payroll
 transactions. Posting journals include the audit trail code that was
 assigned to transactions during the posting process and are a valuable audit
-trail tool. After history has been removed, you won’t be able to reprint
+trail tool. After history has been removed, you won't be able to reprint
 posting journals for computer checks, manual checks, voided checks,
 month-end reports or quarter-end reports for the range of transactions that
 were removed.
@@ -6729,7 +6664,7 @@ were removed.
 
 2. Select a range from the list and enter a range restriction.
 
-3. Choose Insert to add the range restriction. You can select additional ranges and restrictions. If you’ve made an error in a range or a restriction, select the range and choose Remove.
+3. Choose Insert to add the range restriction. You can select additional ranges and restrictions. If you've made an error in a range or a restriction, select the range and choose Remove.
 
 4. Choose Process to clear journal history for the selected ranges.
 
@@ -6753,7 +6688,7 @@ Use the Payroll Edit Federal Tax Liabilities window to make changes to the
 federal tax liability amounts if the amounts are incorrect on Form 941 or
 the Quarterly 941 Preparation Report.
 
-We don’t recommend using the Payroll Edit Federal Tax Liabilities window to
+We don't recommend using the Payroll Edit Federal Tax Liabilities window to
 edit your liability information except in circumstances such as those
 described above.
 
@@ -6796,7 +6731,7 @@ The changes you make in this window will be reflected on the following Reports:
 - Quarterly 941 Schedule B
 
 The Payroll Tax Liability Table table will be updated with these changes.
-The Payroll Employee Master Table won’t be affected. If you make changes
+The Payroll Employee Master Table won't be affected. If you make changes
 using this window, we recommend you print the Federal Tax Liabilities List
 and keep the report for your records.
 
@@ -6808,7 +6743,7 @@ Use the Payroll Tax Setup window to view and edit the predefined FICA,
 federal, state, and local taxes tables, if necessary.
 
 > [!NOTE]
-> Use Payroll Update (Microsoft Dynamics GP menu \>\> Maintenance \>\> U.S.Payroll Updates \>\> Check for Tax Updates) to download and install updated information, including tax tables, to calculate federal tax, FICA tax, and state and local tax withholding. You also can use the tax tables for the lesson company. If you’ve modified the tax tables while working in the lesson company, you’ll need to install the tables again.
+> Use Payroll Update (Microsoft Dynamics GP menu \>\> Maintenance \>\> U.S.Payroll Updates \>\> Check for Tax Updates) to download and install updated information, including tax tables, to calculate federal tax, FICA tax, and state and local tax withholding. You also can use the tax tables for the lesson company. If you've modified the tax tables while working in the lesson company, you'll need to install the tables again.
 
 **To view and edit Payroll taxes:**
 
@@ -6820,7 +6755,7 @@ federal, state, and local taxes tables, if necessary.
 
 3. Choose Filing Status to open the Payroll Tax Filing Status window, where you can view the filing status information for the selected tax code. You also can use this window to view personal exemption information, standard deduction information, and other tax information.
 
-    If the selected tax code uses a calculation that requires a tax table, you can choose Tables after you’ve entered a filing status to view the tax tables, low income tables, personal exemption tables or special tables for a filing status of a tax code. The Payroll Tax Tables window will open.
+    If the selected tax code uses a calculation that requires a tax table, you can choose Tables after you've entered a filing status to view the tax tables, low income tables, personal exemption tables or special tables for a filing status of a tax code. The Payroll Tax Tables window will open.
 
 4. Close the window.
 
@@ -6833,7 +6768,7 @@ method works.
 
 Subtracts a standard deduction amount from taxable wages. Depending on the
 state, the calculation method will vary. The methods include subtracting a
-percent of gross wages per employee’s filing status, subtracting a percent
+percent of gross wages per employee's filing status, subtracting a percent
 of gross wages with a minimum and maximum amount, and subtracting a flat
 amount per filing status.
 
@@ -6904,7 +6839,7 @@ in the Payroll Tax Table Setup window.
 
 **No State Tax**
 
-Used for states that don’t have an income tax.
+Used for states that don't have an income tax.
 
 **Subtract Estimated Deductions**
 
@@ -6975,7 +6910,7 @@ Review this blog on tips to install the Payroll Tax Update:
 
     - The Automatic option downloads all current and prior tax table updatesfor the year to the default location.
 
-    - The Manual option processes all current and prior tax table updates for the year from a location you specify. You might choose Manual if you need to update a computer that isn’t connected to the Internet.
+    - The Manual option processes all current and prior tax table updates for the year from a location you specify. You might choose Manual if you need to update a computer that isn't connected to the Internet.
 
     If you use the Manual option, first download the update and documentation From CustomerSource, and copy the update files to a location accessible to the computer you want to update.
 
@@ -6992,8 +6927,8 @@ Review this blog on tips to install the Payroll Tax Update:
 Microsoft Business Solutions releases periodic updates to Payroll program
 code to maintain compliance with government legal requirements. These
 updates typically occur at calendar year end, and occasionally during the
-year. Collectively, Payroll code updates are called “year-end updates” or
-“compliance updates”.
+year. Collectively, Payroll code updates are called "year-end updates" or
+"compliance updates".
 
 Payroll code updates are distributed as Microsoft Windows Installer patch
 (.msp) files and are installed the same way as service packs. Payroll code
@@ -7015,15 +6950,15 @@ government regulations.
 
 The following information is discussed:
 
-- *Chapter 20, “Payroll checklist items,”* explains how to create, modify, and
+- *Chapter 20, "Payroll checklist items,"* explains how to create, modify, and
     delete customized checklists of Payroll routines or modify existing
     checklists.
 
-- *Chapter 21, “Payroll company routines,”* describes tasks that are done at
+- *Chapter 21, "Payroll company routines,"* describes tasks that are done at
     the end of the month, quarter, or year, and includes printing period-end
     reports and closing the year in Payroll.
 
-- *Chapter 22, “Government form and report routines,”* describes tasks that
+- *Chapter 22, "Government form and report routines,"* describes tasks that
     relate to government regulations and required forms, such as the W-2 and
     1099-R statements.
 
@@ -7102,10 +7037,10 @@ This information is contained in the following sections:
 Use the Period-End Payroll Reports window to print any or all of the
 period-end reports. These reports provide summary information about pay
 codes, departments, positions, deductions, benefits, state taxes, local
-taxes, unemployment taxes, and workers’ compensation in the time period you
+taxes, unemployment taxes, and workers' compensation in the time period you
 specify. Period-end reports can contain information for more than one year,
 provided you specify a range in the Date From and Date To fields. You also
-have the option of posting the SUTA, FUTA, and Workers’ Compensation tax
+have the option of posting the SUTA, FUTA, and Workers' Compensation tax
 liabilities.
 
 **To print period-end reports:**
@@ -7118,15 +7053,15 @@ liabilities.
 1. Select the range of information you want to specify. Records within the
     range you specify will be included on the report.
 
-2. Enter the starting and ending dates of the period you’re printing period-end
+2. Enter the starting and ending dates of the period you're printing period-end
     reports or posting tax liabilities for. Ending date will be the default
     posting date.
 
-3. Select the period-end reports to print. For information about each type of report, refer to *Chapter 15, “Payroll reports.”*
+3. Select the period-end reports to print. For information about each type of report, refer to *Chapter 15, "Payroll reports."*
 
-4. Mark the appropriate options to post FUTA tax, SUTA tax, and workers’ compensation tax. When you mark these options, the Posting Date field displays the date that you’re posting these liabilities.
+4. Mark the appropriate options to post FUTA tax, SUTA tax, and workers' compensation tax. When you mark these options, the Posting Date field displays the date that you're posting these liabilities.
 
-5. Choose Process. The reports you’ve marked will be printed and the tax liabilities will be posted if you selected to post them.
+5. Choose Process. The reports you've marked will be printed and the tax liabilities will be posted if you selected to post them.
 
 #### Printing quarter-end reports
 
@@ -7141,25 +7076,25 @@ summary of your wages and taxes.
 
 2. Select a quarter.
 
-3. Select the quarter-end reports to print. For information about each type of report, refer to *Chapter 15, “Payroll reports.”*
+3. Select the quarter-end reports to print. For information about each type of report, refer to *Chapter 15, "Payroll reports."*
 
-4. Choose Process. The reports you’ve marked will be printed.
+4. Choose Process. The reports you've marked will be printed.
 
 #### Closing a year
 
 Use the Payroll Year-End Closing window to create a file of annual wage
 information. This file will be used to print W-2 and 1099-R statements.
 
-If you’re enrolled in a current Microsoft Dynamics GP enhancement plan,
+If you're enrolled in a current Microsoft Dynamics GP enhancement plan,
 updated year-end and tax information and detailed instructions for closing
 the year, processing W-2 statements, and running pay runs for the next year
 will be available to download from CustomerSource or by using the Payroll
 Update. For more information about the Payroll Update, see *Chapter 19,
-“Payroll updates.”* Information in the year-end update supersedes
+"Payroll updates."* Information in the year-end update supersedes
 information in this manual.
 
 You can continue to work in your accounting system while year-end processing
-takes places. You can’t void checks or process manual or computer checks
+takes places. You can't void checks or process manual or computer checks
 during the procedure, or complete Period-End or Quarter-End procedures.
 
 **To close a year:**
@@ -7226,7 +7161,7 @@ This information is contained in the following sections:
 
 #### Editing W-2 information
 
-You can use the Edit W-2 Information window to verify and make changes to an employee’s W-2 information. For example, an employee’s address might have changed. You must close the year in the Payroll Year-End Closing window before you can edit or print W-2 statements for a specific year.
+You can use the Edit W-2 Information window to verify and make changes to an employee's W-2 information. For example, an employee's address might have changed. You must close the year in the Payroll Year-End Closing window before you can edit or print W-2 statements for a specific year.
 
 **To edit W-2 information:**
 
@@ -7238,13 +7173,13 @@ You can use the Edit W-2 Information window to verify and make changes to an emp
 
 3. Select the calendar year.
 
-4. Select an employee ID. The employee’s Social Security number and address will be displayed. You can edit this information. Changing this information here will not change the information in the Employee Maintenance window.
+4. Select an employee ID. The employee's Social Security number and address will be displayed. You can edit this information. Changing this information here will not change the information in the Employee Maintenance window.
 
     If the employee has a foreign address, mark the Foreign Address option. Fields specific to a foreign address will be displayed.
 
 5. Edit the wage and withholding information for the employee, if necessary.
 
-6. Mark the boxes that apply to the employee whose W-2 information you’re editing. Your entries in the Employee Tax Maintenance window will appear as default entries and will appear on the W-2 statement. For more information about each option, see [Chapter 7: Tax cards](#chapter-7-tax-cards).
+6. Mark the boxes that apply to the employee whose W-2 information you're editing. Your entries in the Employee Tax Maintenance window will appear as default entries and will appear on the W-2 statement. For more information about each option, see [Chapter 7: Tax cards](#chapter-7-tax-cards).
 
 7. Choose Special to open the Edit W-2 Special Information window, or choose Other to open the Edit W-2 Other Information window. Use these windows to view and enter the labels and the amounts that will be printed in the appropriate boxes on the W-2 statement, if required.
 
@@ -7286,7 +7221,7 @@ printed on W-2 statements and then print the statements.
 
 4. Select an employee type. Select Regular for employees who are required to pay both FICA Social Security and FICA Medicare taxes. Select Medicare Qualified Government Employee for employees who are exempt from FICA Social Security tax but subject to FICA Medicare tax.
 
-    Medicare Qualified Government Employee must also be selected in the Employee Tax Maintenance window for each employee whose W-2 statement you’re printing.
+    Medicare Qualified Government Employee must also be selected in the Employee Tax Maintenance window for each employee whose W-2 statement you're printing.
 
 5. Enter a range of employee IDs or mark All to print W-2 statements for allemployees.
 
@@ -7308,12 +7243,12 @@ printed on W-2 statements and then print the statements.
 
 10. Print a Validation Report and verify the information before printing W-2 and W-3 statements.
 
-11. Choose Print to print the report or forms you selected. If you’re printing W-2 statements, be sure to insert W-2 forms in the printer.
+11. Choose Print to print the report or forms you selected. If you're printing W-2 statements, be sure to insert W-2 forms in the printer.
 
 #### Editing 1099-R information
 
 You can use the Edit 1099-R Information window to make changes to a retired
-employee’s 1099-R information. A 1099-R statement shows an employee’s
+employee's 1099-R information. A 1099-R statement shows an employee's
 distribution from a retirement plan. You must close the Payroll year before
 you can edit or print 1099-R statements for a specific year. Only pay codes
 with a pay type of Pension will be displayed in this window or printed on
@@ -7323,7 +7258,7 @@ the 1099-R statement.
 
 1. Open the Edit 1099-R Information window. (HR & Payroll \>\> Routines \>\> Payroll \>\> Edit 1099-Rs)
 
-2. Enter or select an employee ID. The employee’s Social Security number and address will be displayed. You can edit this information. Changing this information here will not change the information in the Employee Maintenance
+2. Enter or select an employee ID. The employee's Social Security number and address will be displayed. You can edit this information. Changing this information here will not change the information in the Employee Maintenance
     window.
 
 3. Select the calendar year.
@@ -7332,13 +7267,13 @@ the 1099-R statement.
 
 5. Change other distribution information, if necessary.
 
-6. Change the amounts of the federal and state income tax withheld, if necessary. You also can change the state, payer’s state ID, local income tax withheld, and the locality to which the tax was paid.
+6. Change the amounts of the federal and state income tax withheld, if necessary. You also can change the state, payer's state ID, local income tax withheld, and the locality to which the tax was paid.
 
-7. Choose Save to save the information you’ve entered. For more information about printing the 1099-R statements, see [Printing 1099-R statements](#printing-1099-r-statements).
+7. Choose Save to save the information you've entered. For more information about printing the 1099-R statements, see [Printing 1099-R statements](#printing-1099-r-statements).
 
 #### Printing 1099-R statements
 
-You can use the Print 1099-R Forms window to print 1099-R statements. These statements show an employee’s distribution from a retirement plan.
+You can use the Print 1099-R Forms window to print 1099-R statements. These statements show an employee's distribution from a retirement plan.
 
 **To print 1099-R statements:**
 
@@ -7364,7 +7299,7 @@ You can use the Print 1099-R Forms window to print 1099-R statements. These stat
 
 7. Print a Validation Report and verify the information before printing 1099-R statements.
 
-8. Choose Print to print the report or forms you selected. If you’re printing 1099-R statements, be sure to insert 1099-R forms in the printer.
+8. Choose Print to print the report or forms you selected. If you're printing 1099-R statements, be sure to insert 1099-R forms in the printer.
 
 #### Editing Form 8027 information
 
@@ -7424,50 +7359,50 @@ credit union account.
 
 The following information is discussed:
 
-- *Chapter 23, “Payroll Direct Deposit setup,”* explains the differences
+- *Chapter 23, "Payroll Direct Deposit setup,"* explains the differences
     between regular and deduction direct deposits. It also explains the
     remainder of net, prenotifications and exceptions, as well as how to set up
     Direct Deposit and security.
 
-- *Chapter 24, “ACH File setup,”* explains how to define the bank or credit
+- *Chapter 24, "ACH File setup,"* explains how to define the bank or credit
     union information used to create the ACH file.
 
-- *Chapter 25, “Deduction Direct Deposit setup,”* explains how to set up a
+- *Chapter 25, "Deduction Direct Deposit setup,"* explains how to set up a
     direct deposit as a link to a Payroll deduction, rather than as a separate
     Payroll Direct Deposit account entry.
 
-- *Chapter 26, “Employee Direct Deposit maintenance,”* explains how to create
+- *Chapter 26, "Employee Direct Deposit maintenance,"* explains how to create
     employee direct deposit cards when an employee requests his or her Payroll
     funds be directed to a checking or savings account.
 
-- *Chapter 27, “Deduction Direct Deposit maintenance,”* describes how to set
+- *Chapter 27, "Deduction Direct Deposit maintenance,"* describes how to set
     up employee deduction direct deposit cards if an employee requests having
     some Payroll funds directed to a direct deposit account and the remainder of
     his or her earnings paid with a check.
 
-- *Chapter 28, “Payroll Direct Deposit routines,”* describes the additional
+- *Chapter 28, "Payroll Direct Deposit routines,"* describes the additional
     steps required when you add Payroll Direct Deposit to your existing Payroll
     process.
 
-- *Chapter 29, “Payroll Direct Deposit reports,”* describes Payroll Direct
+- *Chapter 29, "Payroll Direct Deposit reports,"* describes Payroll Direct
     Deposit reports you can use to monitor your direct deposit transactions.
 
 ### Chapter 23: Payroll Direct Deposit setup
 
-Payroll Direct Deposit is a system of distributing employees’ earnings
+Payroll Direct Deposit is a system of distributing employees' earnings
 directly to their checking or savings accounts. Direct deposit relies upon
 the use of a standardized electronic file—called an ACH file—that summarizes
 basic information about the account your company uses for Payroll
-transactions, and it includes basic information about the employees’
+transactions, and it includes basic information about the employees'
 accounts.
 
 You can use Payroll Direct Deposit to generate the information you need to
-have Payroll funds automatically deposited into employees’ accounts at their
+have Payroll funds automatically deposited into employees' accounts at their
 financial institutions. You can customize the information that is given to
-your financial institution to meet both your company’s needs and the
-financial institution’s needs.
+your financial institution to meet both your company's needs and the
+financial institution's needs.
 
-Each employee’s pay can be distributed between up to twelve bank accounts.
+Each employee's pay can be distributed between up to twelve bank accounts.
 There are two types of direct deposit accounts: direct deposit accounts—the
 ones most of your employees will use—and deduction direct deposit accounts.
 
@@ -7513,12 +7448,12 @@ deposit and a deduction direct deposit.
 | **Effect on wages**      | Sends net wages to direct deposit accounts.                                                                                                                                                                                                                    | Reduces net wages.                                                                                                                         |
 | **Setup location**       | Employee Direct Deposit Maintenance window.                                                                                                                                                                                                                    | Employee Deduction                                                                                                                          |
 | **Payment order**        | Paid in the order they appear in the Employee Direct Deposit Maintenance window, after any deduction direct deposits.                                                                                                                                          | Paid first.                                                                                                                                |
-| **Remainder of net pay** | Remainder of net pay over the amount of deductions and direct deposits will be sent to the direct deposit account indicated by the Remainder of Net Line Number field in the Employee Direct Deposit Maintenance window.                                       | Net pay over the amount of the direct deposits cannot be sent to any direct deposit account, but is paid with a “real” check.              |
-| **Checks**               | If an employee has “regular” direct deposit accounts, any net pay over the amount will be sent to the direct deposit account specified in the Remainder of Net Line Number field; the employee might get a voided check or a direct deposit earnings statement. | If an employee has only a deduction direct deposit account, any net pay over the amount of the deductions will be paid with a “real” check. |
+| **Remainder of net pay** | Remainder of net pay over the amount of deductions and direct deposits will be sent to the direct deposit account indicated by the Remainder of Net Line Number field in the Employee Direct Deposit Maintenance window.                                       | Net pay over the amount of the direct deposits cannot be sent to any direct deposit account, but is paid with a "real" check.              |
+| **Checks**               | If an employee has "regular" direct deposit accounts, any net pay over the amount will be sent to the direct deposit account specified in the Remainder of Net Line Number field; the employee might get a voided check or a direct deposit earnings statement. | If an employee has only a deduction direct deposit account, any net pay over the amount of the deductions will be paid with a "real" check. |
 
 #### Remainder of net
 
-Payroll calculates the net wages for an employee’s earnings, which can then
+Payroll calculates the net wages for an employee's earnings, which can then
 be distributed to one or more direct deposit accounts. If all direct deposit
 accounts are paid and the net wages have not been fully exhausted, the
 remaining amount is called the remainder of net.
@@ -7528,7 +7463,7 @@ remaining amount is called the remainder of net.
     Remainder of Net Line Number on the Employee Direct Deposit Maintenance
     window.
 
-For example, suppose Jane’s net wages are \$1,200. She has two direct
+For example, suppose Jane's net wages are \$1,200. She has two direct
 deposit accounts:
 
 - Line 1 is a \$500 Direct deposit to a savings account.
@@ -7538,48 +7473,48 @@ deposit accounts:
 \$1200 - \$500 - \$500 = \$200
 
 The Remainder of Net Line Number is 2, her checking account. The remainder
-of net is \$200. This amount will be added to Jane’s checking account. The
+of net is \$200. This amount will be added to Jane's checking account. The
 total deposits will be \$500 to savings and \$700 to checking.
 
-- If the employee is using deduction direct deposit, those “deductions” are
+- If the employee is using deduction direct deposit, those "deductions" are
     processed in Payroll just like any other Payroll deduction. The amount for a
     deduction direct deposit is determined by Payroll and is not changed by
     Payroll Direct Deposit. If an employee is using deduction direct deposit,
-    the employee’s net wages—the amount left after deductions are paid—are paid
-    with a paycheck. For more information, refer to *Chapter 25, “Deduction
-    Direct Deposit setup.”*
+    the employee's net wages—the amount left after deductions are paid—are paid
+    with a paycheck. For more information, refer to *Chapter 25, "Deduction
+    Direct Deposit setup."*
 
 #### Payroll Direct Deposit prenotifications
 
 A prenotification or prenote is a test run of direct deposit information to
 help you verify the financial institution and employee account numbers
-you’ve entered in Payroll Direct Deposit. If you’re using deduction direct
+you've entered in Payroll Direct Deposit. If you're using deduction direct
 deposits, the effect of prenotes is slightly different. Refer to *Chapter
-25, “Deduction Direct Deposit setup,”* for more information.
+25, "Deduction Direct Deposit setup,"* for more information.
 
-After you’ve entered an employee’s Direct Deposit preferences, you might be
+After you've entered an employee's Direct Deposit preferences, you might be
 required by your financial institution to process one or more
-prenotifications to verify the information in the ACH file. You’ll need to
-check with your bank or credit union’s guidelines and process as many
+prenotifications to verify the information in the ACH file. You'll need to
+check with your bank or credit union's guidelines and process as many
 prenotes as required when an employee adds an account to his or her direct
 deposit setup.
 
 > [!NOTE]
-> Each time an employee begins using Direct Deposit, you’ll probably be required to complete a prenotification for that employee’s distributions. Check with your financial institution for more details about particular requirements.
+> Each time an employee begins using Direct Deposit, you'll probably be required to complete a prenotification for that employee's distributions. Check with your financial institution for more details about particular requirements.
 
 If you generate an ACH file that includes an employee account that has
 prenote status, the ACH file line item will include financial institution
 and account numbers, but a zero dollar value.
 
 Payment to employees who have entries that are in prenote status will depend
-on whether all or some of the employee’s accounts have prenote status:
+on whether all or some of the employee's accounts have prenote status:
 
-- If all of an employee’s accounts have prenote status, the employee will not
+- If all of an employee's accounts have prenote status, the employee will not
     be paid by Direct Deposit. A check will be generated for the employee
     instead.
 
 - If the employee has a combination of active and prenote status accounts, the
-    employee’s distributions to the active accounts will be completed. The
+    employee's distributions to the active accounts will be completed. The
     remainder of net will be deposited in a direct deposit account; it will not
     be paid by check.
 
@@ -7601,13 +7536,13 @@ Situations that might cause each of these exceptions are described here.
 
 **Insufficient funds**
 
-The employee hasn’t earned enough funds in this pay period to pay all
+The employee hasn't earned enough funds in this pay period to pay all
 deposit accounts.
 
 **Situation A** The amount scheduled to be directly deposited to the account
 exceeded the net pay for the employee.
 
-For example, suppose that Kevin’s usual net pay is \$1,000, and has only one
+For example, suppose that Kevin's usual net pay is \$1,000, and has only one
 line in his direct deposit setup, directing that \$600 be sent to a savings
 account.
 
@@ -7620,7 +7555,7 @@ transferred to the account with Direct Deposit.
 deductions, resulting in insufficient funds to pay the direct deposit
 account referred to in the exception entry.
 
-For example, suppose that Maria’s usual net pay is \$1,000 and she has the
+For example, suppose that Maria's usual net pay is \$1,000 and she has the
 following direct deposit accounts set up:
 
 - Line 1: Savings \$400
@@ -7635,9 +7570,9 @@ exceptions to a typical Payroll run—would be transferred to the accounts
 with Direct Deposit.
 
 **Situation C** The entire net pay was split by percentage between two or
-more direct deposit accounts and the net pay couldn’t be divided evenly.
+more direct deposit accounts and the net pay couldn't be divided evenly.
 
-For example, suppose that Sam’s net pay is \$999.99 and he has the following
+For example, suppose that Sam's net pay is \$999.99 and he has the following
 direct deposit accounts set up:
 
 - Line 1: Checking 50 percent
@@ -7657,7 +7592,7 @@ Direct
 
 Deposit Setup window, but when the accounts were set up for the employee in
 the Employee Direct Deposit Maintenance window, no link was established
-between the deduction and the employee’s direct deposit accounts.
+between the deduction and the employee's direct deposit accounts.
 
 **Situation B** A deduction direct deposit account was set to Inactive or
 Prenote, or was deleted in the Employee Direct Deposit Maintenance window.
@@ -7698,7 +7633,7 @@ use, and the next earnings statement number.
 
 1. Select an earnings statement print option.
 
-    - **Separate From Checks** Generates separate print jobs—one for employees who receive actual checks, and another for employees whose entire paychecks are deposited directly. With this option, you aren’t required to print voided checks for employees whose entire earnings are deposited directly; earnings statements for employees using Direct Deposit are printed.
+    - **Separate From Checks** Generates separate print jobs—one for employees who receive actual checks, and another for employees whose entire paychecks are deposited directly. With this option, you aren't required to print voided checks for employees whose entire earnings are deposited directly; earnings statements for employees using Direct Deposit are printed.
 
     - **As Voided Checks** Generates a single Payroll print job that will print a Payroll check for every employee. The print job will include voided checks for employees whose pay is entirely dispersed using Direct Deposit.
 
@@ -7711,7 +7646,7 @@ use, and the next earnings statement number.
 3. In the Days From Pay to Post field, enter the number of days after the end
     of the pay period that the direct deposit funds will be available to your
     employees. For example, if your pay period ends on Friday and the funds need
-    to be available on the following Monday, you would enter “3.”
+    to be available on the following Monday, you would enter "3."
 
 4. Mark the type of exceptions to check for. We recommend that you mark all
     three types.
@@ -7719,7 +7654,7 @@ use, and the next earnings statement number.
 5. If you print voided checks, mark one or both of the Visual Indicators for
     Voided Checks.
 
-- Mark Mask Dollar Amount to place a row of X’s on the line typically used to
+- Mark Mask Dollar Amount to place a row of X's on the line typically used to
     spell out the check amount on the check portion of the paycheck. The amount
     displayed in the other amount field on the check will be \$00.00.
 
@@ -7838,8 +7773,8 @@ transaction:
 
 - Savings Debit Prenotifications (38)
 
-Part of the information you enter, like your company’s identification
-number, probably won’t change from one pay run to the next. You can enter
+Part of the information you enter, like your company's identification
+number, probably won't change from one pay run to the next. You can enter
 that information in the ACH Fields Setup window, so it is automatically
 included in the ACH files you generate.
 
@@ -7872,7 +7807,7 @@ generated from the ACH Fields Setup window shown.
 
 3. Select whether to identify the employee in the ACH file by the employee ID or Social Security number.
 
-4. Mark Include Auto-Settle-Line if your financial institution requires this.If it isn’t marked, the financial institution will create the balancing line. For more information, refer to *Entering auto-settle line information*.
+4. Mark Include Auto-Settle-Line if your financial institution requires this.If it isn't marked, the financial institution will create the balancing line. For more information, refer to *Entering auto-settle line information*.
 
     > [!NOTE]
     > You cannot generate an ACH file that includes some Payroll runs with the Auto-Settle Line option and some without; they must all have the option or all be without it.
@@ -7892,7 +7827,7 @@ your ACH File. Headers and footers are lines of data that you can create to
 be added to the beginning or the end of the ACH File.
 
 Headers and footers can be used for extra information needed in the ACH File
-and automatically will be added to your file each time it’s generated. The
+and automatically will be added to your file each time it's generated. The
 lines will appear exactly as shown in the ACH File Header and Footer window
 and will become part of the ACH File.
 
@@ -7949,10 +7884,10 @@ will include:
 
 - Enrolling individual employees in the deduction direct deposits
 
-- Entering the information for employees’ specific account setups
+- Entering the information for employees' specific account setups
 
 *The key difference between direct deposit accounts and deduction direct
-deposit accounts is the setup of each. After you’ve completed the setup, you
+deposit accounts is the setup of each. After you've completed the setup, you
 can generate ACH files just as you would if they were regular direct deposit
 accounts.*
 
@@ -8031,9 +7966,9 @@ into an account.
 
 ### Chapter 26: Employee Direct Deposit maintenance
 
-You’ll need to enter employee direct deposit information when an employee
+You'll need to enter employee direct deposit information when an employee
 requests his or her Payroll funds be directed to a direct deposit account.
-To set up an employee’s records so that some Payroll funds are deposited
+To set up an employee's records so that some Payroll funds are deposited
 into a direct deposit account and also print a check for the employee, refer
 to *Regular vs. deduction direct deposits* . To set up a one-time check run
 for special payments, such as holiday bonuses, refer to *Inactivating
@@ -8060,7 +7995,7 @@ distributions and multiple-account distributions.
 
 **Single-account distributions** Used when only one account line is entered
 for an employee and the entire net wages from the pay run will be deposited
-to that account. If you’re using a single-account distribution, it’s best to
+to that account. If you're using a single-account distribution, it's best to
 use the percentage field and set it to 100 percent. This makes distribution
 of any unusual Payroll amounts—for employees who earn overtime, for
 example—easier.
@@ -8071,20 +8006,20 @@ certain order. Because Payroll Direct Deposit pays each account in order, it
 is possible to have some accounts receive less than the entered amount.
 
 If you specify an amount when using multiple-account distributions, the
-employee’s net wages will be reduced by that amount. If you enter a percent,
-the employee’s net wages will be multiplied by that percent. Each time an
+employee's net wages will be reduced by that amount. If you enter a percent,
+the employee's net wages will be multiplied by that percent. Each time an
 account is paid, net wages for the employee are reduced. This continues
 until all the net wages have been deposited or until all lines have been
 paid. Any funds remaining are called remainder of net and are added to the
 account indicated in the Remainder of Net Line Number field.
 
-If an employee’s net wages for the pay period are not sufficient to pay all
+If an employee's net wages for the pay period are not sufficient to pay all
 items defined for an employee, the items are paid in full from top to bottom
 until all net wages are deposited. In no circumstance will an employee have
 more or less money paid to accounts than the net wages in the pay run.
 
 > [!NOTE]
-> Guidelines in this section do not apply to direct deposit entries that are linked to Microsoft Dynamics GP deductions. For more information, refer to Chapter 25, “Deduction Direct Deposit setup.”
+> Guidelines in this section do not apply to direct deposit entries that are linked to Microsoft Dynamics GP deductions. For more information, refer to Chapter 25, "Deduction Direct Deposit setup."
 
 #### Creating an employee direct deposit record
 
@@ -8109,7 +8044,7 @@ Use the Employee Direct Deposit Maintenance window to set up direct deposit info
 
     - \$400 (and remainder of net) to a credit union savings account
 
-        If the employee takes one week without pay, the employee’s net pay for that period is only \$600. The entire \$600 will be deposited to the personal checking account because it is listed first in the Employee Direct Deposit Maintenance window. No payments are made to the second account—the credit union account.
+        If the employee takes one week without pay, the employee's net pay for that period is only \$600. The entire \$600 will be deposited to the personal checking account because it is listed first in the Employee Direct Deposit Maintenance window. No payments are made to the second account—the credit union account.
 
         To have this noted in the exceptions report, you must mark Insufficient Funds in the Direct Deposit Setup window.
 
@@ -8147,7 +8082,7 @@ Use the Employee Direct Deposit Maintenance window to set up direct deposit info
 #### Updating an employee direct deposit account status
 
 Use the Default Prenote Count field in the Direct Deposit Setup window to
-track the number of prenotifications that are required for each employee’s
+track the number of prenotifications that are required for each employee's
 direct deposit account. Each time you generate an ACH file, the prenote
 count will change in the Employee Direct Deposit Maintenance window.
 
@@ -8157,7 +8092,7 @@ the Completed Prenotes window.
 
 Use the Completed Prenotes window to update an employee direct deposit
 account status. This window is a shortcut to the Employee Direct Deposit
-Maintenance window, where you can change the employee’s account status from
+Maintenance window, where you can change the employee's account status from
 Prenote to Active.
 
 **To update an employee direct deposit account status:**
@@ -8175,21 +8110,21 @@ Prenote to Active.
 6. Repeat steps 3 through 5 for each employee whose records you are updating.
 
     > [!NOTE]
-    > After you select an employee record in the Completed Prenotes window, the employee’s name will be removed from the scrolling window whether or not you changed the employee’s account status.
+    > After you select an employee record in the Completed Prenotes window, the employee's name will be removed from the scrolling window whether or not you changed the employee's account status.
 
-7. When you’ve finished, close the Completed Prenotes window.
+7. When you've finished, close the Completed Prenotes window.
 
 #### Inactivating employee direct deposit accounts
 
 The Employee Direct Deposit Maintenance window provides you with two ways to
-inactivate employees’ direct deposit accounts—inactivating an employee’s
+inactivate employees' direct deposit accounts—inactivating an employee's
 entire direct deposit record and inactivating individual employee direct
 deposit accounts. Inactivate direct deposit to run checks for special
 situations like one-time, holiday bonus payments.
 
 Direct deposit records also can be inactivated in the Employee Maintenance
 window. If you inactivate an employee card in the Employee Maintenance
-window, Payroll will also inactivate the employee’s direct deposit records.
+window, Payroll will also inactivate the employee's direct deposit records.
 If you inactivate a direct deposit record in the Employee Maintenance
 window, the accounts for the direct deposit accounts will not be
 automatically inactivated. For more information, see *Inactivating an
@@ -8204,7 +8139,7 @@ employee card*
 
 2. Enter or select an employee ID.
 
-3. Mark Inactive to inactivate the employee’s direct deposit record.
+3. Mark Inactive to inactivate the employee's direct deposit record.
 
 4. Choose Save.
 
@@ -8222,7 +8157,7 @@ employee card*
 
 Direct deposit records can be reactivated in the Employee Maintenance
 window. If you unmark Inactive in this window and mark Direct Deposit in the
-Reactivate Employee window, the employee’s direct deposit records will be
+Reactivate Employee window, the employee's direct deposit records will be
 reactivated. For more information, see *Reactivating an employee card* .
 
 You also can reactivate direct deposit records from the Employee Direct
@@ -8316,7 +8251,7 @@ Inactivating deduction direct deposit accounts can be done in either of the two 
 
 Adding Payroll Direct Deposit to Payroll will require you to vary the
 typical Payroll process routine. In addition to building, calculating,
-printing, and posting checks, you’ll need to calculate direct deposit
+printing, and posting checks, you'll need to calculate direct deposit
 transactions, print earnings statements or voided checks for employees using
 Direct Deposit and generate an ACH file to transmit to your financial
 institution.
@@ -8335,7 +8270,7 @@ This information is contained in the following sections:
 
 #### Calculating Payroll Direct Deposit information
 
-Payroll Direct Deposit changes the Payroll process for Microsoft Dynamics GP. After building and calculating checks, you’ll need to complete some additional tasks if you’re using Direct Deposit. Use the Print Payroll Checks window to calculate direct deposit and print checks and earnings statements. After you have printed checks using this window, the Post Payroll Checks window will open. Refer to *Posting checks using Payroll Direct Deposit* for more information.
+Payroll Direct Deposit changes the Payroll process for Microsoft Dynamics GP. After building and calculating checks, you'll need to complete some additional tasks if you're using Direct Deposit. Use the Print Payroll Checks window to calculate direct deposit and print checks and earnings statements. After you have printed checks using this window, the Post Payroll Checks window will open. Refer to *Posting checks using Payroll Direct Deposit* for more information.
 
 **To calculate Payroll Direct Deposit information:**
 
@@ -8345,7 +8280,7 @@ Payroll Direct Deposit changes the Payroll process for Microsoft Dynamics GP. Af
 
 1. Choose Process to calculate the direct deposit information.
 
-    If some of the direct deposits weren’t made, an exceptions report will be printed. If you have exceptions, you can change them now and recalculate Payroll; however you aren’t required to change any exceptions before continuing with the Payroll process.
+    If some of the direct deposits weren't made, an exceptions report will be printed. If you have exceptions, you can change them now and recalculate Payroll; however you aren't required to change any exceptions before continuing with the Payroll process.
 
 1. If you set your Earnings Statements to print Separate from Checks in the
     Direct Deposit Setup window, you must print checks now. Later you can print
@@ -8361,7 +8296,7 @@ Checks in the Direct Deposit Setup window, you must print checks before you
 can print earnings statements.
 
 > [!NOTE]
-> You can reprint earnings statements as many times as needed until they’ve been posted. If you need to reprint earnings statements after posting, you can use the Payroll Check Inquiry window to re-create earnings statements in a format that closely resembles the original documents.
+> You can reprint earnings statements as many times as needed until they've been posted. If you need to reprint earnings statements after posting, you can use the Payroll Check Inquiry window to re-create earnings statements in a format that closely resembles the original documents.
 
 **To print direct deposit earnings statements:**
 
@@ -8399,7 +8334,7 @@ Continue the Payroll process with *Generating an ACH file* .
 
 #### Generating an ACH file
 
-After posting Payroll, you’re ready to generate your ACH file. An ACH file
+After posting Payroll, you're ready to generate your ACH file. An ACH file
 is an Automated Clearing House transaction file—a text file containing a
 group of electronic payments. The electronic payments are deposited into
 employee bank accounts in lieu of paper checks. Use the Generate ACH File
@@ -8445,7 +8380,7 @@ Use the Generate ACH File window to generate an ACH file that includes only
 prenote accounts.
 
 A prenotes-only ACH file includes all employee accounts that have the
-prenote status. To generate a prenotes-only ACH file, you don’t need to
+prenote status. To generate a prenotes-only ACH file, you don't need to
 complete the Payroll portion of the process. Because no Payroll builds will
 be included in this ACH file, marking Delete build after use will have no
 effect on this process.
@@ -8474,7 +8409,7 @@ through printing reports and working with report options.
 For more information about creating and printing reports, using sample
 reports and modified reports from the Reports Library, and the various
 reporting tools that you can use with Microsoft Dynamics GP, refer to your
-System User’s Guide (Help \>\> Contents \>\> select Using The System).
+System User's Guide (Help \>\> Contents \>\> select Using The System).
 
 This information is contained in the following sections:
 
@@ -8493,28 +8428,28 @@ Payroll Direct Deposit reports available are:
 | **Report**           | **Report information**  |
 |----------------------|-------------------------|
 | Direct Deposit ACH File Report                                                                                                                                              | A printout of the ACH file. Creating a printout at the time you generate your ACH file saves you the work of opening and printing your ACH destination file later.                                                                                                                                                       |
-| Direct Deposit ACH Transmittal                                                                                                                                              | A combination of smaller reports, based on information you’ve entered during the Payroll process. Use transmittal reports to see the effect of the direct deposit transactions on your company’s accounts, and your employees’ savings and checking accounts. Each report is separated from the others with a page break. |
-| Direct Deposit Check Register                                                                                                                                               | A check register with an asterisk (\*) next to checks that have been voided during the Payroll process. A “D” indicates a check that has been voided due to direct deposit.                                                                                                                                              |
+| Direct Deposit ACH Transmittal                                                                                                                                              | A combination of smaller reports, based on information you've entered during the Payroll process. Use transmittal reports to see the effect of the direct deposit transactions on your company's accounts, and your employees' savings and checking accounts. Each report is separated from the others with a page break. |
+| Direct Deposit Check Register                                                                                                                                               | A check register with an asterisk (\*) next to checks that have been voided during the Payroll process. A "D" indicates a check that has been voided due to direct deposit.                                                                                                                                              |
 | Direct Deposit Exceptions Report                                                                                                                                            | Lists any employee direct deposits that were not completed. Exceptions are divided into three categories— Insufficient Funds, Amount Deducted, Not Deposited, and Other.                                                                                                                                                 |
-| Direct Deposit Detail List                                                                                                                                                  | A list of all employee accounts—including those belonging to the employees who aren’t part of the current pay run— that have “prenote” status for any account in the Status dropdown list in the Employee Direct Deposit Maintenance window.                                                                             |
-| † Indicates reports that can be assigned to named printers. For more information, refer to your System User’s Guide (Help \>\> Contents \>\> select System Administration). |                                                                                                                                                                                                                                                                                                                           |
+| Direct Deposit Detail List                                                                                                                                                  | A list of all employee accounts—including those belonging to the employees who aren't part of the current pay run— that have "prenote" status for any account in the Status dropdown list in the Employee Direct Deposit Maintenance window.                                                                             |
+| † Indicates reports that can be assigned to named printers. For more information, refer to your System User's Guide (Help \>\> Contents \>\> select System Administration). |                                                                                                                                                                                                                                                                                                                           |
 
 A descriptive summary of all employee accounts that are involved in Payroll
 Direct Deposit. In this report, one line is created for each employee
 account. If an employee is using two direct deposit accounts, for example,
-there will be two lines in the report representing that employee’s line
+there will be two lines in the report representing that employee's line
 items.
 
 | **Report** | **Report information**     |
 |------------|----------------------------|
 | Direct Deposit List                                                                                                                                                         | A list of all employees and their direct deposit statuses. In this report, one line item is created for each employee. It is possible for an employee to have an Active status even if their account status is set to Inactive. For an employee to have an Inactive status, Inactive must be marked in the Employee Direct Deposit Maintenance window.                                                                                                                                               |
 | Direct Deposit Register                                                                                                                                                     | Shows the amount deposited for each employee. The report lists the employee ID, Social Security number, gross pay, net pay, and check number.                                                                                                                                                                                                                                                                                                                                                        |
-| Direct Deposit Statement of                                                                                                                                                 | Generated when Payroll checks are posted. Instead of printing voided checks for employees who have all their earnings deposited using direct deposit, users can print checks for only those employees who are paid with a “real” Payroll check. Employees paid entirely through direct deposit transactions can be given earnings statements that can be printed on regular printer paper. The direct deposit earnings statements include the same information as the Payroll checks and check stubs. |
-| Direct Deposit Trxs Register                                                                                                                                                | A list of all direct deposit transactions completed during the pay period. The report lists all employees who were enrolled in either type of direct deposit transaction in alphabetical order. Other information is included for each employee record—the employee’s Social Security or employee ID number; the types of accounts to which the funds were deposited; and the amount deposited to each account. Prenotification transactions will also appear on this report.                        |
-| † Indicates reports that can be assigned to named printers. For more information, refer to your System User’s Guide (Help \>\> Contents \>\> select System Administration). |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Direct Deposit Statement of                                                                                                                                                 | Generated when Payroll checks are posted. Instead of printing voided checks for employees who have all their earnings deposited using direct deposit, users can print checks for only those employees who are paid with a "real" Payroll check. Employees paid entirely through direct deposit transactions can be given earnings statements that can be printed on regular printer paper. The direct deposit earnings statements include the same information as the Payroll checks and check stubs. |
+| Direct Deposit Trxs Register                                                                                                                                                | A list of all direct deposit transactions completed during the pay period. The report lists all employees who were enrolled in either type of direct deposit transaction in alphabetical order. Other information is included for each employee record—the employee's Social Security or employee ID number; the types of accounts to which the funds were deposited; and the amount deposited to each account. Prenotification transactions will also appear on this report.                        |
+| † Indicates reports that can be assigned to named printers. For more information, refer to your System User's Guide (Help \>\> Contents \>\> select System Administration). |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 The Direct Deposit ACH Transmittal Report is a combination of smaller reports,
-based on information you’ve entered during the Payroll process. These are the
+based on information you've entered during the Payroll process. These are the
 available Transmittal reports, along with their bank transaction codes:
 
 - Checking Credits (22)
@@ -8563,7 +8498,7 @@ Microsoft Dynamics GP check forms are listed here:
     process into two processes—one for pay checks and one for direct deposit
     earnings statements.
 
-- The array DD String30 Array10 will print “VOID Due to Direct Deposit” on the
+- The array DD String30 Array10 will print "VOID Due to Direct Deposit" on the
     signature line of voided checks because all earnings were deposited
     directly.
 
@@ -8590,12 +8525,12 @@ W-2 are available for Self Service Users to Print.
 
 [**Mask Social Security Numbers on reports**]
 (https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/06/02/microsoft-dynamics-gp-2015-r2-hrp-new-features-mask-social-security-number-on-payroll-reports)
-For years, customers have been modifying their payroll reports in GP to mask the Social Security Numbers. With this new feature in Microsoft Dynamics GP 2015 R2, a Payroll Administrator has the option to mask the Social Security Numbers on a predefined list of reports within Microsoft Dynamics GP without having to make Report Writer modifications. At the same time they can choose to not mask the Social Security Number for reports that may need the Social Security Numbers to display due to state or federal requirements such as W-2s. If the Payroll Administrator selects to apply the mask for one of the predefined reports, when generated, the employee’s social security number field will appear with a XXX-XX-XXXX mask.
+For years, customers have been modifying their payroll reports in GP to mask the Social Security Numbers. With this new feature in Microsoft Dynamics GP 2015 R2, a Payroll Administrator has the option to mask the Social Security Numbers on a predefined list of reports within Microsoft Dynamics GP without having to make Report Writer modifications. At the same time they can choose to not mask the Social Security Number for reports that may need the Social Security Numbers to display due to state or federal requirements such as W-2s. If the Payroll Administrator selects to apply the mask for one of the predefined reports, when generated, the employee's social security number field will appear with a XXX-XX-XXXX mask.
 
 [**Payroll Posting Accounts navigation list**]
 (https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/05/26/payroll-payroll-posting-accounts-setup-enhancements)
-A new navigation list was added in Microsoft Dynamics GP 2016 that enhances a user’s ability to view, sort, search, set up, and edit their Payroll Posting Accounts. This new Payroll Posting Accounts navigation list is a great new way to manage your Payroll Posting Accounts and allows for users to import and export their Payroll Posting Accounts setup. For example, a user can export
-their setup, make changes in Excel, and then import those changes back into the system. Select the HR & Payroll Module. In the Navigation Pane to the left, select ‘Payroll Posting Accounts’. Your Payroll Posting Account information will now be displayed in a manner that can be filtered and searched on.
+A new navigation list was added in Microsoft Dynamics GP 2016 that enhances a user's ability to view, sort, search, set up, and edit their Payroll Posting Accounts. This new Payroll Posting Accounts navigation list is a great new way to manage your Payroll Posting Accounts and allows for users to import and export their Payroll Posting Accounts setup. For example, a user can export
+their setup, make changes in Excel, and then import those changes back into the system. Select the HR & Payroll Module. In the Navigation Pane to the left, select 'Payroll Posting Accounts'. Your Payroll Posting Account information will now be displayed in a manner that can be filtered and searched on.
 
 [**Employee Self Service - Managers can View Employee Available Time**]
 (https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/05/24/employee-self-service-managers-can-view-employee-available-time)
@@ -8605,11 +8540,11 @@ The Current Timecards and Historic Timecards navigation lists will now display t
 
 [**Ability to print a W-2 form with LINES**]
 (https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/01/05/microsoft-dynamics-gp-2016-r2-print-w2-with-boxes-lines-and-labels)
-In Microsoft Dynamics GP 2016 R2 you are now able to print the 1 Wide W2 form with boxes and label directly from the Print W2 Forms window without using stock paper. Navigate to (HR & Payroll \>\> Routines \>\> Payroll \>\> Print W-2s). This will bring you into the Print W-2 Forms window. A new Form Type is now available call ‘1 Wide – Forums with Box’.
+In Microsoft Dynamics GP 2016 R2 you are now able to print the 1 Wide W2 form with boxes and label directly from the Print W2 Forms window without using stock paper. Navigate to (HR & Payroll \>\> Routines \>\> Payroll \>\> Print W-2s). This will bring you into the Print W-2 Forms window. A new Form Type is now available call '1 Wide – Forums with Box'.
 
 [**Track History on Terminations and Rehires Date**]
 (https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/01/04/human-resources-track-history-on-terminations-and-rehires-date-information-huge-request)
-In GP 2016 R2 we added a new ‘Employment History Inquiry’ window which can be accessed directly from the Employee Card. 
+In GP 2016 R2 we added a new 'Employment History Inquiry' window which can be accessed directly from the Employee Card. 
 This allows users to see Termination and Hire dates per employee. In some businesses, such as a seasonal business, the same employee can be hired many times and the business may need to track the multiple dates for this employee, such as the hire date, adjusted hire date and the last day worked (termination date). Navigate to (HR & Payroll \>\> Inquiry \>\> Payroll \>\> Employee). Click
 on the GoTo action on the Menu bar, you will see a new Employment History button. This will bring you into the Employment History Inquiry window. From this window, you can select an employee to view their history of Termination and Hire dates.
 
@@ -8653,9 +8588,9 @@ Users can record a reason for change via the 'Reason' field in the Employee Main
 Microsoft Dynamics GP has always required users to specify a reason for change when the 'Date Inactivated Field' is modified in the Employee Maintenance window.
 In prior versions of GP, the 'Date Inactivated' field was the only field in the Employee Maintenance window for which the "Reason" field was editable in the Employee Maintenance window.
 In addition to the 'Date Inactivated' field, the following fields now allow users to specify a reason for change in the Employee Maintenance window:
-•Last Day Worked
-•Hire Date
-•Adjusted Hire Date
+*Last Day Worked
+*Hire Date
+*Adjusted Hire Date
 
 [**Payroll Reprint Pay Statement by Audit Trail Code**]
 (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2019-release-new-feature-payroll-reprint-pay-statement-by-audit-trail-code)
@@ -8665,10 +8600,10 @@ Users can now reprint pay statements in mass per Audit Trail code in the Reprint
 ## Glossary
 
 #### 1099-R statement
-A statement showing an employee’s distribution from retirement, profit-sharing or pension plans. 
+A statement showing an employee's distribution from retirement, profit-sharing or pension plans. 
 
 #### Account alias
-A 20-character “short name” for a posting account in the chart of accounts. If the account format has a large number of segments, using aliases can speed data entry.
+A 20-character "short name" for a posting account in the chart of accounts. If the account format has a large number of segments, using aliases can speed data entry.
 
 #### ACH
 Acronym for Automated Clearing House, a standardized format for electronic funds transfer files.
@@ -8683,7 +8618,7 @@ Microsoft Dynamics GP uses the Gross Receipts method that is calculated per pay 
 A number assigned to you by Microsoft Dynamics GP to identify you for support records, and to work with the payroll update engine.
 
 #### Auto-Settle Line (ASL)
-A line that can be added to ACH files generated by Direct Deposit to bring the ACH into balance. Most ACH files generated for deposits to employee accounts include many credits to employee accounts. The auto-settle line in those instances would be a debit to the company’s Payroll account that is equal to the sum of the credits.
+A line that can be added to ACH files generated by Direct Deposit to bring the ACH into balance. Most ACH files generated for deposits to employee accounts include many credits to employee accounts. The auto-settle line in those instances would be a debit to the company's Payroll account that is equal to the sum of the credits.
 
 Some financial institutions require an unbalanced ACH file containing only credits, and create the debit themselves. Other institutions require a balanced ACH file. Check with your financial institution for more details.
 
@@ -8691,7 +8626,7 @@ Some financial institutions require an unbalanced ACH file containing only credi
 A processing system that allows users to continue working while transactions are being posted or reports are being printed.
 
 #### Bankruptcy
-A garnishment category, in which a court orders the employer to deduct amounts from the employee’s wages to repay the employee’s creditor.
+A garnishment category, in which a court orders the employer to deduct amounts from the employee's wages to repay the employee's creditor.
 
 #### Batch
 A group of transactions identified by a unique name or number. Batches are used in computerized accounting to conveniently group transactions, both for identification purposes and to make posting the transactions easier.
@@ -8715,13 +8650,13 @@ A contribution provided by the company that may be calculated on net, unit or gr
 The process of indicating which employees, pay records, deductions, and benefits should be included in the pay run.
 
 #### Business expense
-A pay code that’s used to pay employees who are reimbursed for expenses incurred while doing business, such as meals, mileage, and travel expenses.
+A pay code that's used to pay employees who are reimbursed for expenses incurred while doing business, such as meals, mileage, and travel expenses.
 
 #### Charged receipts
 Gross sales for the employee or establishment from sales that were charged, used to calculate allocated tips.
 
 #### Charged tip
-Money (a gratuity) that the employee receives from customers through a charge card or check. The employer must include this money on an employee’s Payroll check because it was not received as cash.
+Money (a gratuity) that the employee receives from customers through a charge card or check. The employer must include this money on an employee's Payroll check because it was not received as cash.
 
 Charged tips are added into gross wages on the check, and are subject to FICA Social Security and Medicare, Federal, and FUTA taxes. Generally, charged tips also are subject to State, Local, and SUTA taxes.
 
@@ -8744,7 +8679,7 @@ Paychecks that are calculated and printed using the Microsoft Dynamics GP system
 Specific areas in a window, from which you can make a selection, enter information or access more information. For example, areas where you can type in an employee ID or a transaction amount are data entry fields. *See also Field*.
 
 #### Deduction
-An amount that may be withheld from an employee’s net, unit or gross pay. For example, a donation to a charity could be set up as a deduction.
+An amount that may be withheld from an employee's net, unit or gross pay. For example, a donation to a charity could be set up as a deduction.
 
 #### Deduction direct deposit
 A deduction direct deposit account is set up as a link to a Payroll deduction, rather than as a separate direct deposit account entry. Deduction direct deposits should be used only if an employee requests having some Payroll funds directed to a direct deposit account and the remainder of his or her earnings paid with a check.
@@ -8759,13 +8694,13 @@ A class whose values are used for the creation of new classes.
 A unique alphanumeric name used to identify a department.
 
 #### Direct deposit
-Direct deposit is a system of distributing employees’ earnings directly to their checking or savings accounts. Direct deposit relies on the use of a standardized account from which your company pays its Payroll, and includes basic information about employees’ accounts.
+Direct deposit is a system of distributing employees' earnings directly to their checking or savings accounts. Direct deposit relies on the use of a standardized account from which your company pays its Payroll, and includes basic information about employees' accounts.
 
 #### Directly-tipped employee
 Employees, such as waiters or waitresses, who receive tips directly from the customer. Used to calculate allocated tips.
 
 #### Earnings wages
-The deduction method that calculates deductions as a percentage of an employee’s Net Disposable Income (NDI). *See also NDI*.
+The deduction method that calculates deductions as a percentage of an employee's Net Disposable Income (NDI). *See also NDI*.
 
 #### Earnings statement
 A report generated by Payroll Direct Deposit that summarizes Payroll information for employees who will have all their earnings deposited with direct deposit transfers.
@@ -8774,13 +8709,13 @@ A report generated by Payroll Direct Deposit that summarizes Payroll information
 A list of transactions in an unposted batch that you can print to check the accuracy of the transaction entries before posting.
 
 #### EIC
-An abbreviation for Earned Income Credit. A pay code that’s used to make advance payments to employees who qualify for earned income credit and have filed a W-5 form.
+An abbreviation for Earned Income Credit. A pay code that's used to make advance payments to employees who qualify for earned income credit and have filed a W-5 form.
 
 #### EIN
 An abbreviation for Employer Identification Number, a number issued to companies operating in the United States. The EIN usually is used as a tax ID number for state and federal taxing agencies.
 
 #### Employer Maximum
-The amount of an employee’s contribution to a 401(k) that the employer matches.  Expressed in percent.
+The amount of an employee's contribution to a 401(k) that the employer matches.  Expressed in percent.
 
 #### Exceptions
 Exceptions are the instances when direct deposit transactions are not completed as the user may have intended. Direct deposit groups exceptions into three categories: no funds, deducted but not deposited and other.
@@ -8798,7 +8733,7 @@ Tips that are subject to FICA Medicare tax.
 Tips that are subject to FICA Social Security tax.
 
 #### Field
-An area in a window where you can enter a single piece of information. For instance, the area in the Employee Maintenance window where you enter the employee’s name is a field.
+An area in a window where you can enter a single piece of information. For instance, the area in the Employee Maintenance window where you enter the employee's name is a field.
 
 #### Footers
 Footers are lines of data which you create to be appended to the end of the ACH file. The lines will appear exactly as shown in the ACH File Header and Footer window and will become part of the ACH file. Some financial institutions require additional information about the ACH file, such as identifying strings or passwords. If your financial institution has no such requirements, you may not need to use this window.
@@ -8810,7 +8745,7 @@ A form report that summarizes the 1099-R information.
 An IRS form used by large food and beverage establishments to report tips and receipts to the US government.
 
 #### FTE
-An acronym for Full-Time Equivalency, a factor multiplied by a pay step table amount to adjust an individual employee’s pay rate without changing the pay step table. FTE factors less than 1.00 decrease the pay rate, and factors above 1.00 increase the pay rate.
+An acronym for Full-Time Equivalency, a factor multiplied by a pay step table amount to adjust an individual employee's pay rate without changing the pay step table. FTE factors less than 1.00 decrease the pay rate, and factors above 1.00 increase the pay rate.
 
 #### FUTA
 An acronym for Federal Unemployment Tax Act. This, along with state unemployment taxes, provides for payments of unemployment compensation to workers who have lost their jobs.
@@ -8821,10 +8756,10 @@ A court-ordered process that takes property from a person to satisfy debt. For e
 Also, the name of a garnishment category for student loan or creditor debts.
 
 #### Grade
-An employee’s rank within a position. Grade does not depend on the length of time in a position. A promotion typically raises grade rather than pay step.
+An employee's rank within a position. Grade does not depend on the length of time in a position. A promotion typically raises grade rather than pay step.
 
 #### Gross up
-An IRS-approved formula that employers can use to determine the taxable gross payment when the employer wishes to pay the employee’s share of tax.
+An IRS-approved formula that employers can use to determine the taxable gross payment when the employer wishes to pay the employee's share of tax.
 
 #### Gross wages
 The wages an employee earns before any deductions or taxes are taken out.
@@ -8836,13 +8771,13 @@ Saving and printing reports in groups. For example, you can create a report grou
 Headers are lines of data which you create to be appended to the top of the ACH file. The lines will appear exactly as shown in the ACH File Header and Footer window and will become part of the ACH file. Some financial institutions require additional information about the ACH file, such as identifying strings or passwords. If your financial institution has no such requirements, you may not need to use this window.
 
 #### Holiday pay
-A pay code that’s used to pay employees who receive paid time off for holidays.
+A pay code that's used to pay employees who receive paid time off for holidays.
 
 #### Hourly pay
-A pay code that’s used to pay employees an amount per hour worked.
+A pay code that's used to pay employees an amount per hour worked.
 
 #### Inactivate
-The process of making employee records inactive. If you inactivate an employee record, all of the employee’s pay, deduction, and benefit records will be inactivated, as well, and paychecks will no longer be printed for the individual.
+The process of making employee records inactive. If you inactivate an employee record, all of the employee's pay, deduction, and benefit records will be inactivated, as well, and paychecks will no longer be printed for the individual.
 
 #### Indirectly tipped employee
 Employees who do not receive tips directly from the customer.  Cooks or people who clean tables. Used to calculate allocated tips.
@@ -8857,7 +8792,7 @@ To join two or more accounting modules to form a system in which data is shared 
 A tax paid to local government agencies. You can set up multiple local taxes for each employee, if you wish.
 
 #### Main segment
-The segment of posting accounts that has been designated as the sorting option for accounts on financial statements. Typically, the main segment is used to indicate whether the account is an asset, liability, owners’ equity, revenue or expense account.
+The segment of posting accounts that has been designated as the sorting option for accounts on financial statements. Typically, the main segment is used to indicate whether the account is an asset, liability, owners' equity, revenue or expense account.
 
 #### Manual check
 A manually written paycheck; manual checks can be recorded in the Microsoft Dynamics GP system.
@@ -8872,7 +8807,7 @@ A pay code used to make up the difference between the amount of wages, tips, and
 Companies for which separate data folders have been established. Microsoft Dynamics GP multiple-company feature allows you to keep a separate set of financial information for each company you operate.
 
 #### Multiple-account distributions
-Multiple-account distributions are employee direct deposit setups for which more than one account is set up and net wages are to be distributed into the accounts in a certain order. If you specify an amount when using multiple-account distributions, Direct Deposit will attempt to pay that amount. If a percent is chosen, then Direct Deposit will multiply the percent by the employee’s net wages in the Payroll run and attempt to pay that amount. Each time an account is paid, net wages for the individual are reduced. This continues until all the net wages are exhausted or until all lines have been paid. Any funds remaining are called remainder of net.
+Multiple-account distributions are employee direct deposit setups for which more than one account is set up and net wages are to be distributed into the accounts in a certain order. If you specify an amount when using multiple-account distributions, Direct Deposit will attempt to pay that amount. If a percent is chosen, then Direct Deposit will multiply the percent by the employee's net wages in the Payroll run and attempt to pay that amount. Each time an account is paid, net wages for the individual are reduced. This continues until all the net wages are exhausted or until all lines have been paid. Any funds remaining are called remainder of net.
 
 #### National Automated Clearing House Association (NACHA)
 The National Automated Clearing House Association (NACHA) is the national body of the Automated Clearing House (ACH) Network, a nationwide electronics payments system used by more than 22,000 participating financial institutions in the United States.
@@ -8884,7 +8819,7 @@ An acronym for Net Disposable Income, a legally-defined selection of wages, dedu
 The payment amount an employee receives after all deductions and taxes have been taken out of his or her paycheck.
 
 #### Net wages
-The calculated result of an employee’s gross wages minus taxes. 
+The calculated result of an employee's gross wages minus taxes. 
 
 #### Notes
 The Microsoft Dynamics GP feature that is used to attach messages to windows and records throughout the Microsoft Dynamics GP system. The note button shows whether a note is attached to a window. Notes can be edited and reattached, deleted or printed.
@@ -8896,13 +8831,13 @@ Printing specifications set up for reports. A variety of options can be used wit
 A transaction entry window within a specific Microsoft Dynamics GP module. Certain options, such as closing fiscal periods, can be selected for each transaction origin. Also, the transaction origin appears as part of the audit trail code on all posting reports in Microsoft Dynamics GP.
 
 #### Overtime pay
-A pay code that’s used to pay employees for working more than the assigned number of hours and are reimbursed at a different pay rate for the additional hours.
+A pay code that's used to pay employees for working more than the assigned number of hours and are reimbursed at a different pay rate for the additional hours.
 
 #### Pay code
 A code used to identify a specific type and rate of pay. For example, an employee who is paid a specific salary may have the pay code SAL assigned to him or her.
 
 #### Pay factor
-The number that is multiplied by the Based on Pay Code’s pay rate to calculate overtime or double time pay rates.
+The number that is multiplied by the Based on Pay Code's pay rate to calculate overtime or double time pay rates.
 
 #### Pay period
 The time period between regularly scheduled pay runs.
@@ -8914,7 +8849,7 @@ The amount an employee is paid for a specified period or amount of work.
 A Payroll record that tracks money paid to an employee, showing pay expenses by pay code, department or job.
 
 #### Pay step
-A pay level based on length of time in a position. When an employee’s time in a position exceeds the length of the pay step, the employee advances to the next pay step.
+A pay level based on length of time in a position. When an employee's time in a position exceeds the length of the pay step, the employee advances to the next pay step.
 
 #### Pay type
 A general category used to identify different kinds of pay, such as hourly or salary. For example, if an employee is paid a set amount per unit made or job completed, the pay type would be piecework.
@@ -8929,7 +8864,7 @@ A number that identifies a group of related entries for a computer or manual che
 A payment to a retired employee from a retirement plan.
 
 #### Piecework
-A pay code that’s used to pay employees a certain amount per unit made or completed.
+A pay code that's used to pay employees a certain amount per unit made or completed.
 
 #### Position
 A unique alphanumeric name used to identify a position.
@@ -8942,13 +8877,13 @@ transactions. In manual accounting, to transfer journal totals to the appropriat
 A financial account that tracks assets, liabilities, revenue or expenses. Amounts posted to these accounts appear on the Profit and Loss Statement, the Balance Sheet, and other financial reports if you are using General Ledger.
 
 #### Posting date
-The date on which a specific transaction was posted to your company’s posting accounts.
+The date on which a specific transaction was posted to your company's posting accounts.
 
 #### Posting journal
 A report printed following the posting process that shows the detail for each transaction that has been posted. Posting journals also include the audit trail code, which provides a precise record of where each transaction has been posted within Microsoft Dynamics GP.
 
 #### Prenotification
-A prenotification or “prenote” is a test-run of direct deposit information. After you’ve entered an employee’s direct deposit preferences, you will probably be required by your financial institution to have a prenotification run or runs to verify the information in the ACH file.
+A prenotification or "prenote" is a test-run of direct deposit information. After you've entered an employee's direct deposit preferences, you will probably be required by your financial institution to have a prenotification run or runs to verify the information in the ACH file.
 
 #### Process server
 The Microsoft Dynamics GP application that allows a user to direct the processing of some accounting functions and maintenance procedures to another computer on a network. No additional actions are required by the user. After tasks have been sent to a process server, users can begin other tasks immediately.
@@ -8957,7 +8892,7 @@ The Microsoft Dynamics GP application that allows a user to direct the processin
 A selection used to narrow the amount of records that are printed on a report. For example, a selected range of employee IDs could be those between 1001 and 9999.
 
 #### Reactivate
-The process of making employee records active. If you reactivate an employee record, all of the employee’s pay, deduction, and benefit records can be activated, as well, and paychecks can be printed for the individual.
+The process of making employee records active. If you reactivate an employee record, all of the employee's pay, deduction, and benefit records can be activated, as well, and paychecks can be printed for the individual.
 
 **Recurring batch**
 A batch that can be posted repeatedly.
@@ -8980,10 +8915,10 @@ Reported tips are not added into gross wages on the check, but are subject to FI
 Supplemental wages paid to an employee whose pay rate has been increased effective as of a past date.
 
 #### Roll down
-To apply changes you’ve made to a class record to all employee records within the class. For example, if you change the payment terms for the class from Net 30 to 2 percent-10/Net 30, you can roll down the change to all records in the employee class.
+To apply changes you've made to a class record to all employee records within the class. For example, if you change the payment terms for the class from Net 30 to 2 percent-10/Net 30, you can roll down the change to all records in the employee class.
 
 #### Salary pay
-A pay code that’s used for employees who are paid a specific pay amount each pay period.
+A pay code that's used for employees who are paid a specific pay amount each pay period.
 
 #### Sample data
 Data that can be used to practice Microsoft Dynamics GP procedures by entering the information listed in the online lessons. Sample data can be accessed using the lesson company, Fabrikam, Inc.
@@ -8995,7 +8930,7 @@ A group of Microsoft Dynamics GP modules that form an interrelated set of applic
 A code used to identify a specific type and rate of pay given for different times of work. For example, an employee who works a night shift might receive an additional \$1.00 per hour.
 
 #### Sick time
-A pay code that’s used to pay employees for time off due to sickness.
+A pay code that's used to pay employees for time off due to sickness.
 
 #### Single-account distributions
 Single-account distributions are employee direct deposit setups for which only one account line is entered and the entire net wages from the Payroll will go to that account.
@@ -9013,19 +8948,19 @@ A tax paid to state government agencies. You can set up multiple state taxes for
 An acronym for State Unemployment Tax Act. This is the state unemployment tax paid by an employer to provide for payments of unemployment compensation to workers who have lost their jobs.
 
 #### Support order
-A garnishment category, in which a court orders the employer to deductamounts from the employee’s wages to pay support for a child or other dependent.
+A garnishment category, in which a court orders the employer to deductamounts from the employee's wages to pay support for a child or other dependent.
 
 #### Tax levy
-A garnishment category, in which a court orders the employer to deduct amounts from the employee’s wages to pay overdue taxes.
+A garnishment category, in which a court orders the employer to deduct amounts from the employee's wages to pay overdue taxes.
 
 #### Tax table
 In Payroll, where tax information is stored for federal, EIC, FICA, state, and pre-defined local taxes.
 
 #### Taxable benefit
-Benefits paid on the employee’s behalf, but not directly to the employee that are subject to income tax.
+Benefits paid on the employee's behalf, but not directly to the employee that are subject to income tax.
 
 #### Text file (text only)
-A file format that saves reports as text without formatting. This option should be used when the application to which you’re converting the document is unable to read any of the other file formats.
+A file format that saves reports as text without formatting. This option should be used when the application to which you're converting the document is unable to read any of the other file formats.
 
 #### Tip
 Money an employee receives from customers as an acknowledgement of services rendered. Tips include both Charged Tips and Reported Tips and are tracked directly or indirectly.
@@ -9046,16 +8981,16 @@ A posting method that allows you to enter and post transactions individually wit
 An acronym for Tax-Sheltered Annuity, an employee deduction that reduces wages for the purpose of calculating employer and employee taxes. It also reduces the employee gross wages on the year-end W2 statement.
 
 #### Uncollected FICA Medicare tax on tips
-FICA Medicare tax on tips that could not be collected from the employee. This information must be reported on the employee’s W-2 form.
+FICA Medicare tax on tips that could not be collected from the employee. This information must be reported on the employee's W-2 form.
 
 #### Uncollected FICA Social Security tax on tips
-FICA Social Security tax on tips that could not be collected from the employee. This information must be reported on the employee’s W-2
+FICA Social Security tax on tips that could not be collected from the employee. This information must be reported on the employee's W-2
 
 #### User-defined field
 Two fields in the Employee Additional Information Maintenance window that you can define to track information.
 
 #### Vacation pay
-A pay code that’s used to pay employees while on vacation.
+A pay code that's used to pay employees while on vacation.
 
 #### Voiding
 The process of recording an equal and opposite transaction to undo the effect of a posted transaction.
@@ -9066,8 +9001,8 @@ Wage and tax statement.
 #### W-3 form
 A report that summarizes the W-2 information.
 
-#### Workers’ compensation tax
-Taxes paid by the employer for insurance covering injuries incurred on the job. Workers’ compensation is paid to the state government.
+#### Workers' compensation tax
+Taxes paid by the employer for insurance covering injuries incurred on the job. Workers' compensation is paid to the state government.
 
 #### Year-end closing
 The process used to create a table for annual wage information.

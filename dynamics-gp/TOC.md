@@ -83,6 +83,7 @@
 ### [W-2 Source](payroll/W-2-statement.md)
 ### [Payroll Tax](payroll/US19JanTaxR1.md)
 ### [PTO Manager](payroll/PTOManager.md)
+### [Position Control](payroll/PositionControl.md)
 
 <!-- Manufacturing-->
 ## Discreet Manufacturing
