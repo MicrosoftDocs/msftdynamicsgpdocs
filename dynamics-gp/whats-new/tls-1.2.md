@@ -17,11 +17,11 @@ With the October 2020 release, Dynamics GP addresses functionality that will be 
 
 With the October 2020 release, the following features will now be able to function with TLS 1.0 and 1.1 disabled:
 
-1. E-mailing from within Dynamics GP when using both the Exchange Server Type as well as the SMTP email that is used for the Workflow feature in Dynamics GP
+* E-mailing from within Dynamics GP when using both the Exchange Server Type as well as the SMTP email that is used for the Workflow feature in Dynamics GP
 
-2. The Microsoft Dynamics GP Web Client
+* The Microsoft Dynamics GP Web Client
 
-3. Web Services for Microsoft Dynamics GP
+* Web Services for Microsoft Dynamics GP
 
 > [!NOTE]
 > Web Services for Microsoft Dynamics GP still requires TLS 1.0 when using a SQL Server database for the Authorization Store. If you reinstall Web Services for Microsoft Dynamics GP to an Active Directory partition per [*this blog article*](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-web-services---how-to-setup-an-active-directory-security-store) you can operate with TLS 1.0 and 1.1 disabled.

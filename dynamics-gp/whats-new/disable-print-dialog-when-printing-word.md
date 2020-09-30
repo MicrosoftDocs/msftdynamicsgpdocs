@@ -13,7 +13,7 @@ manager: edupont
 
 With the October 2020 update for Dynamics GP, you can now use Named Printers with Word Templates. This lets users access full one-click printing when using Word templates.
 
-To enable this feature you must first have Named Printers setup, you can find instructions for a new setup at [https://docs.microsoft.com/en-us/dynamics-gp/installation/systemadminguide#setting-up-namedprinters](../installation/systemadminguide.md#setting-up-named-printers).
+To enable this feature you must first have Named Printers setup, you can find instructions for a new setup at [Setting up named printers](../installation/systemadminguide.md#setting-up-named-printers).
 
 Once you have the basic Named Printers setup, you can mark each printer to use Named Printers for Templates. Just open the Assign Named Printers window. Go to Tool, click setup, choose system, and click Named Printers.
 

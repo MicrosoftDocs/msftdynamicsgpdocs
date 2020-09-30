@@ -11,13 +11,13 @@ manager: edupont
 
 # Bulk-edit SmartList Columns
 
-With the release of the Microsoft Dynamics GP Fall 2020 you now have the ability to mass edit the columns on a SmartList.
+With the October 2020 release of Dynamics GP, you now have the ability to bulk-edit the columns on a SmartList.  
 
-In order to see this new functionality you will need to start by opening SmartList (Microsoft Dynamics GP and click SmartList). You'll then navigate to the specific SmartList you want to edit, for example we will look at the default Sales, then choose Customers and then click on the Columns button:
+In order to see this new functionality you will need to start by opening SmartList (choose **Microsoft Dynamics GP**, and then choose **SmartList**). You'll then navigate to the specific SmartList that you want to edit, such as the default **Sales**, then choose **Customers**, and then choose the **Columns** button:
 
 <img src="media/image89.png" alt="SmartList showing Columns button" width="679" height="244" />
 
-When the Change Column Display window opens, you'll notice that there is a new column with checkboxes.
+When the **Change Column Display** window opens, you'll notice that there is a new column with checkboxes.
 
 <img src="media/image91.png" alt="Change Column Display" width="443" height="291" />
 

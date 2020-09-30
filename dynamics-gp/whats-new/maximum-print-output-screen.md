@@ -17,7 +17,7 @@ How many times in a day do you print a report to screen and now by habit you are
 
 Improve customer print experience. User no longer must manually maximum the print output screen each time they print to screen.
 
-<img src="media/image85.png" alt="Print to Screen showing maximized screen output window" width="689" height="467" />
+<img src="media/image86.png" alt="Print to Screen showing maximized screen output window" width="689" height="467" />
 
 > [!IMPORTANT]
 > This is not available in Web Client, due to different user experience.

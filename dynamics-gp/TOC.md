@@ -3,7 +3,8 @@
 <!--- what's new-->
 ## What's new
 ### [Introduction](whats-new/introduction.md)
-### [What's New in Dynamics GP in October 2020](whats-new/version-october-2020.md)
+### What's New in Dynamics GP in October 2020
+#### [October 2020 capability overview](whats-new/version-october-2020.md)
 #### Financials enhancements
 ##### [Additional User Defined fields in General Ledger Transaction Entry](whats-new/additional-user-defined-fields-in-general-ledger-transaction-entry.md)
 ##### [Import Credit Card Transactions](whats-new/import-credit-card-transactions.md)
