@@ -4,6 +4,31 @@
 ## What's new
 ### [Introduction](whats-new/introduction.md)
 ### [What's New in Dynamics GP in October 2020](whats-new/version-october-2020.md)
+#### Financials enhancements
+##### [Additional User Defined fields in General Ledger Transaction Entry](additional-user-defined-fields-in-general-ledger-transaction-entry.md)
+##### [Import Credit Card Transactions](import-credit-card-transactions.md)
+##### [Automate Financial Full Reconcile](automate-financial-full-reconcile.md)
+##### [Match Excel copy and paste decimal places to Currency Setup](match-excel-copy-and-paste-decimal-places-currency-setup.md)
+##### [Form 1099 NEC now supported](form-1099-nec-now-supported.md)
+##### [1099 MISC Form Updates](1099-misc-form-updates.md)
+##### [DBA for Vendor](dba-for-vendor.md)
+##### [Removed fully applied Multicurrency documents from PM HATB](removed-fully-applied-multicurrency-documents-from-pm-hatb.md)
+##### [Copy/Paste Purchasing transactions from Excel](copypaste-purchasing-transactions-from-excel.md)
+#### Distribution enhancements
+##### [Export/Import stock counts to Excel](exportimport-stock-counts-excel.md)
+##### [Print all Sales Documents](print-all-sales-documents.md)
+#### Human Resources & Payroll enhancements
+##### [Human Resource Social Security Number mask](human-resource-social-security-number-mask.md)
+#### System enhancements
+##### [Schedule Check Links](schedule-check-links.md)
+##### [Multi-Factor Authentication](multi-factor-authentication.md)
+##### [TLS 1.2](tls-1.2.md)
+##### [Save per user column layouts on Home Page](save-per-user-column-layouts-on-home-page.md)
+##### [Disable print dialog when printing to word](disable-print-dialog-when-printing-word.md)
+##### [Enable Self Service user type access to User Preference](enable-self-service-user-type-access-user-preference.md)
+Favorites
+##### [Maximum print output screen](maximum-print-output-screen.md)
+##### [Bulk edit SmartList Columns](bulk-edit-smartlist-columns.md)
 ### [What's new in Dynamics GP in October 2019](whats-new/version-october-2019.md)
 ### [What's new in Dynamics GP 2018 R2](whats-new/version-2018-r2.md)
 ### [What's new in Dynamics GP 2018](whats-new/version-2018.md)
