@@ -1,7 +1,7 @@
 ﻿---
 title: DBA for Vendor 
 description: New in october 2020 - DBA for Vendor
-ms.date: 09-30-2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
@@ -21,14 +21,14 @@ It is common for companies to have a legal name registered but do business under
 
 From the Purchasing home page under Cards, choose Vendor and click Options
 
-<img src="media/image25.jpg" alt="Vendor Maintenance Options showing DBA" width="486" height="474" />
+<img src="media/image25.png" alt="Vendor Maintenance Options showing DBA" width="486" height="474" />
 
 > [!NOTE]
 > This feature will be rolled back to Microsoft Dynamics GP 2016 in the 2020 Year-end update.
 
 By default, this was added to the following reporting:
 
-<img src="media/image26.jpg" alt="Screen output for 1099" width="624" height="268" />
+<img src="media/image26.png" alt="Screen output for 1099" width="624" height="268" />
 
 A column (Char, 65 in length) was added to the PM00200 table, VENDDBA This new field will be in all country installs for Dynamics GP.  
 No changes were made for this new field in eConnect or Integration Manager

@@ -1,7 +1,7 @@
 ﻿---
 title: Match Excel Copy and Paste Decimal Places to Currency Setup 
 description: New in October 2020 - Match Excel Copy and Paste Decimal Places to Currency Setup
-ms.date: 09-30-2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
@@ -28,6 +28,6 @@ This update will use the decimal places defined in currency setup instead of the
 
 The value will be stored in SQL based on the currency decimal places defined in Currency Setup and not Excel.
 
-<img src="media/image19.jpg" alt="Currency Setup form" width="375" height="336" />
+<img src="media/image19.png" alt="Currency Setup form" width="375" height="336" />
 
 

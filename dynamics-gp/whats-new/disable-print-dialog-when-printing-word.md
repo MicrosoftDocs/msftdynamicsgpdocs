@@ -1,7 +1,7 @@
 ﻿---
 title: Disable Print Dialog when Printing to Word 
 description: New in October 2020 - Disable Print Dialog when Printing to Word
-ms.date: 09-30-2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
@@ -19,9 +19,9 @@ Once you have the basic Named Printers setup, you can mark each printer to use N
 
 Once you open this window, all you need to do is click the Setup button and select the Printer ID the users usually use, then mark the 'Use Named Printer when printing word Templates' checkbox. Click Save on the Setup Named Printers window, and now when users click print the document will be sent directly to the printer after generation.
 
-<img src="media/image80.jpg" alt="Assign Named Printers" width="624" height="460" />
+<img src="media/image80.png" alt="Assign Named Printers" width="624" height="460" />
 
-<img src="media/image81.jpg" alt="Setup Named Printers" width="433" height="393" />
+<img src="media/image81.png" alt="Setup Named Printers" width="433" height="393" />
 
 > [!NOTE]
 > There is a new column (UseNamedPrnForWordTemplate) added to the System (Dynamics DB) table STN41100, ST\_Printer\_Options\_MSTR.

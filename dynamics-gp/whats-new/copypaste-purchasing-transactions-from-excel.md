@@ -1,7 +1,7 @@
 ﻿---
 title: Copy/Paste Purchasing transactions from Excel 
 description: New in October 2020 - Copy/Paste Purchasing transactions from Excel
-ms.date: 09-30-2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
@@ -19,7 +19,7 @@ Use the Transaction Entry window to copy/paste PM Transactions and PM Distributi
 
 The Excel Spreadsheet must have the required fields in this order to copy paste correctly; not all amount fields need to have an amount. You must copy/paste all data fields only; do not include the header fields.
 
-<img src="media/image28.jpg" alt="Excel sheet" width="628" height="62" />
+<img src="media/image28.png" alt="Excel sheet" width="628" height="62" />
 
 - Vendor
 
@@ -42,6 +42,6 @@ In the Payables Transactions Window found under Purchasing, click Transactions, 
 > [!TIP]
 > This feature will also work in Web Client.
 
-<img src="media/image29.jpg" alt="Payables Transaction Entry forms showing data copied from Excel" width="624" height="735" />
+<img src="media/image29.png" alt="Payables Transaction Entry forms showing data copied from Excel" width="624" height="735" />
 
 

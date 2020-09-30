@@ -1,7 +1,7 @@
 ﻿---
 title: Maximum Print Output Screen 
 description: New in October 2020 - Maximum Print Output Screen
-ms.date: 09-30-2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
@@ -17,7 +17,7 @@ How many times in a day do you print a report to screen and now by habit you are
 
 Improve customer print experience. User no longer must manually maximum the print output screen each time they print to screen.
 
-<img src="media/image85.jpg" alt="Print to Screen showing maximized screen output window" width="689" height="467" />
+<img src="media/image85.png" alt="Print to Screen showing maximized screen output window" width="689" height="467" />
 
 > [!IMPORTANT]
 > This is not available in Web Client, due to different user experience.

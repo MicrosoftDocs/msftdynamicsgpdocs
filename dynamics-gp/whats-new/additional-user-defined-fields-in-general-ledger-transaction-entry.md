@@ -1,7 +1,7 @@
 ﻿---
 title: Additional User-Defined Fields
 description: New in october 2020 - Additional User Defined Fields
-ms.date: 09-30-2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
@@ -39,24 +39,24 @@ The size of the user defined fields is 30 characters in the transaction entry wi
 
 Go to the Financial Home Page, under Setup, click Financial and choose General Ledger.
 
-<img src="media/image1.jpg" alt="General Ledger Setup" width="343" height="402" />
+<img src="media/image1.png" alt="General Ledger Setup" width="343" height="402" />
 
 To see the User Defined fields you setup above you can go to Transaction choose Financial and General
 
-<img src="media/image2.jpg" alt="Transaction Entry" width="375" height="354" />
+<img src="media/image2.png" alt="Transaction Entry" width="375" height="354" />
 
 Example report for the General Posting Journal
 
-<img src="media/image3.jpg" alt="General Posting Journal" width="495" height="315" />
+<img src="media/image3.png" alt="General Posting Journal" width="495" height="315" />
 
 Once a transaction has been posted with user defined information populated you will be able to see this in the inquiry windows. Located under the Financial Home page, choose Inquiry, then Financial and Journal Entry Inquiry
 
-<img src="media/image4.jpg" alt="Journal Entry Inquiry" width="444" height="395" />
+<img src="media/image4.png" alt="Journal Entry Inquiry" width="444" height="395" />
 
 You can also add the new Extra fields to a SmartList. We can also use the new feature to quickly add multiple fields at once to a SmartList!
 
-<img src="media/image5.jpg" alt="Dialog showing Change Column Display" width="519" height="334" />
+<img src="media/image5.png" alt="Dialog showing Change Column Display" width="519" height="334" />
 
-<img src="media/image6.jpg" alt="Dialog showing columns" width="393" height="338" />
+<img src="media/image6.png" alt="Dialog showing columns" width="393" height="338" />
 
 

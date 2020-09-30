@@ -1,7 +1,7 @@
 ﻿---
 title: Removed Fully Applied Multicurrency Documents from PM HATB 
 description: New in October 2020 - Removed Fully Applied Multicurrency Documents from PM HATB
-ms.date: 09-30-2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
@@ -21,4 +21,4 @@ This new change allows you, without manipulation to data in the backend, to prin
 
 In the example below, an invoice that was entered, revalued, and then paid. Now when printing the PM HATB the documents are no longer listed. In previous versions the documents would appear.
 
-<img src="media/image27.jpg" alt="Print-out of Payables Detailed Historical Aged Trial Balance" width="622" height="225" />
+<img src="media/image27.png" alt="Print-out of Payables Detailed Historical Aged Trial Balance" width="622" height="225" />

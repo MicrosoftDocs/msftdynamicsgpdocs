@@ -1,7 +1,7 @@
 ﻿---
 title: HR Social Security Number Mask
 description: New in October 2020 - Social Security Number Mask in Human Resources 
-ms.date: 09-30-2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
@@ -19,7 +19,7 @@ Towards the bottom of the window you will see the button SSN Mask that was added
 
 By default on the install, everything will be marked as masked, if you would like to see the SSN on the report you will need to unmark it from this window.
 
-<img src="media/image36.jpg" alt="Human Resource Preferences showing Report Masking of SSN and other PII" width="619" height="343" />
+<img src="media/image36.png" alt="Human Resource Preferences showing Report Masking of SSN and other PII" width="619" height="343" />
 
 The reports can be found under Human Resource and Reports.
 
@@ -37,11 +37,11 @@ You will find them in the sections of:
 
 Here is an example of a report with SSN masked.
 
-<img src="media/image42.jpg" alt="Report showing masked SSN for employees" width="528" height="172" />
+<img src="media/image42.png" alt="Report showing masked SSN for employees" width="528" height="172" />
 
 Same report with it not masked in setup.
 
-<img src="media/image43.jpg" alt="Report showing not-masked SSN for employees" width="561" height="156" />
+<img src="media/image43.png" alt="Report showing not-masked SSN for employees" width="561" height="156" />
 
 > [!NOTE]
 > There is no structure change in the table. Only the records will be added in UPR40203.out file.

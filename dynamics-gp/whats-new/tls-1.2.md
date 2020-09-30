@@ -1,7 +1,7 @@
 ﻿---
 title: Support for TLS 1.2 
 description: New in October 2020 - Support for TLS 1.2
-ms.date: 09-30-2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502

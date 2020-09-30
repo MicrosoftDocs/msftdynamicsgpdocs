@@ -1,7 +1,7 @@
 ﻿---
 title: Export/Import Stock Counts to Excel 
 description: New in October 2020 - Export/Import Stock Counts to Excel
-ms.date: 09-30-2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
@@ -25,13 +25,13 @@ The export action will create a file called *stockcountmmddyy.xlsx* that you can
 
 To open the Stock Count schedule window, go to Inventory, click Transactions, choose Stock Count Schedule.
 
-<img src="media/image33.jpg" alt="Stock Count Entry form" width="624" height="528" />
+<img src="media/image33.png" alt="Stock Count Entry form" width="624" height="528" />
 
 The Stock Count entry window also has the Export/Import action. Once you export the file in the stock count schedule, updated the information in the excel file you saved, you can come back to this window and choose the Export/Import button where you can import the excel file.
 
 To open the Stock Count Entry window, go to Inventory click Transactions and choose Stock Count Entry.
 
-<img src="media/image34.jpg" alt="StockCount Entry form with Export/Import is highlighted" width="624" height="476" />
+<img src="media/image34.png" alt="StockCount Entry form with Export/Import is highlighted" width="624" height="476" />
 
 The Excel file format should be modeled after the IV Stock Count Forms by Site ID report. This should give you the correct format to print off and do a stock count and then be able to put the right information into the Excel file. Refer to export2.csv file to see the formatting that should be used for the Excel file.
 
@@ -39,7 +39,7 @@ If the stock count is not in the status of "started" the import action will be g
 
 Excel file example:
 
-<img src="media/image35.jpg" alt="Excel sheet" width="447" height="450" />
+<img src="media/image35.png" alt="Excel sheet" width="447" height="450" />
 
 ## Fields in the spreadsheet
 
