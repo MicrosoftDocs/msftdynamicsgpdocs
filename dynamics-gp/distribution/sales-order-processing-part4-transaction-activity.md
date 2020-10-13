@@ -160,7 +160,7 @@ You also can print packing slips or picking tickets at the same time as you prin
 
 2. Enter or select a sales document and open the **Sales Document Print Options** window by choosing File \>\> Print or the printer icon button.
 
-    ![screenshot](media/SOage155.jpg)
+    ![First screenshot](media/SOage155.jpg)
 
 3. Select the document type, a sorting option, and the currency to print.
 
@@ -272,7 +272,7 @@ The sorting option determines the order the documents are printed. The documents
 1. Open the Print Sales Documents window.
     (Sales \>\> Transactions \>\> Print Sales Documents)
 
-    ![screenshot](media/SOage157.jpg)
+    ![Second screenshot](media/SOage157.jpg)
 
 2. Select the document type and select whether to print documents, historical documents, or an alignment form.
 
@@ -341,7 +341,7 @@ Print an alignment form to ensure that the information is printed in the correct
 1. Open the Sales Order Processing Document Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Documents)
 
-    ![screenshot](media/SOage159.jpg)
+    ![Sales Order Processing](media/SOage159.jpg)
 
 2. Select a sorting option or a range of documents.
 
@@ -373,7 +373,7 @@ You can use the sales quick print option to print a sales order or invoice from 
 1. Open the Quick Print Setup window.
     (Sales \>\> Transactions \>\> Sales Transaction Entry or Order Fulfillment \>\> Options \>\> Quick Print Setup)
 
-    ![screenshot](media/SOage161.jpg)
+    ![Quick Print Setup](media/SOage161.jpg)
 
 2. Mark the documents, print options, and print destination.
 
@@ -454,7 +454,7 @@ You can print bulk picking tickets for items only when the following conditions 
 1. Open the Bulk Picking Print window.
     (Sales \>\> Transactions \>\> Bulk Print)
 
-    ![screenshot](media/SOage163.jpg)
+    ![Bulk Picking Print](media/SOage163.jpg)
 
 2. Enter or select a batch ID and site ID to print picking tickets for.
 
@@ -520,7 +520,7 @@ You also can print cash on delivery (COD) tags for a range of unposted transacti
 
 2. Select Shipping Labels or COD Tags from the Reports list and choose New to open the Mailing Label Report Options window.
 
-    ![screenshot](media/SOage165.jpg)
+    ![Mailing Label Report Options](media/SOage165.jpg)
 
 3. Enter an option name, select sorting options, enter restrictions, and mark printing options.
 
@@ -628,7 +628,7 @@ You can create new comments while you are entering transactions. You can also cr
 
 1. In the Sales Transaction Entry window or the Sales Item Detail Entry window, choose the Comment ID expansion button to open the Sales Comment Entry window.
 
-    ![screenshot](media/SOage168.jpg)
+    ![Sales Comment Entry](media/SOage168.jpg)
 
     If the Comment ID field contained a value, you'll be able to modify the existing comment. If the Comment ID field was blank, you'll be able to create a new, one-time comment.
 
@@ -698,7 +698,7 @@ Even though you assign components to a kit in the Item Kit Maintenance window, y
 
 2. Select the kit item, choose the item expansion button to open the Sales Item Detail Entry window, and choose Kits to open the Sales Kit Options window.
 
-    ![screenshot](media/SOage170.jpg)
+    ![Sales Kit Options](media/SOage170.jpg)
 
 3. Add or delete components or change the quantities of the components.
 
@@ -750,7 +750,7 @@ If you are using customer credit limit override workflow, the fulfillment orders
 1. Open the Sales Bulk Confirmation window.
     (Sales \>\> Transactions \>\> Bulk Confirmation)
 
-    ![screenshot](media/SOage173.jpg)
+    ![Bulk Confirmation](media/SOage173.jpg)
 
 2. Select the action to complete. The actions available will depend on the statuses you selected to track in the Sales Fulfillment Document Workflow Setup window, and can include the following actions.
 
@@ -797,7 +797,7 @@ A process hold also can be assigned to a document ID when you set it up. For mor
 
 3. Choose Holds to open the Sales Process Holds Entry window.
 
-    ![screenshot](media/SOage175.jpg)
+    ![Sales Process Holds Entry](media/SOage175.jpg)
 
 4. Enter or select the process hold to assign to the document and choose Assign. The process hold will be added to the Assigned Holds list.
 
@@ -913,7 +913,7 @@ Reversing document statuses does not back out quantity fulfilled or quantity all
 1. Open the Edit Sales Document Status window.
     (Sales \>\> Utilities \>\> Edit Sales Status)
 
-    ![screenshot](media/SOage177.jpg)
+    ![Edit Sales Status](media/SOage177.jpg)
 
 2. Select how to choose documents using the Documents field.
 
@@ -950,7 +950,7 @@ document.
 
 3. Choose the hide and show button to expand the scrolling window.
 
-    ![screenshot](media/SOage179.jpg)
+    ![Sales Commission Entry](media/SOage179.jpg)
 
 4. Make your changes to the commission information. You also can enter or select a different salesperson ID.
 
@@ -979,7 +979,7 @@ You can add salespeople in the Sales Commission Entry window for quotes, orders,
 
 3. Choose Commissions to open the Sales Commission Entry window. Choose the hide and show button to expand the scrolling window.
 
-    ![screenshot](media/SOage179.jpg)
+    ![Sales Commission Entry](media/SOage179.jpg)
 
 4. Change the Percent of Sale amount for the first salesperson listed to the appropriate percentage.
 
@@ -1324,7 +1324,7 @@ If you're using multiple bins and the default sales order fulfillment bin is not
 
 3. In the Actions group, choose Transfer to open the Sales Transfer Documents window.
 
-    ![screenshot](media/SOage184.jpg)
+    ![Sales Transfer Documents window](media/SOage184.jpg)
 
 4. Select transfer options. The transfer options are limited to the document type that was displayed in the Sales Transaction Entry window.
 
@@ -1370,7 +1370,7 @@ If you're using multiple bins and serial or lot numbers are assigned to an item 
 
 2. Select a batch to transfer and choose Transfer. The Sales Transfer Documents window will open.
 
-    ![screenshot](media/SOage184.jpg)
+    ![Sales Transfer Documents window transfers](media/SOage184.jpg)
 
 3. Select transfer options. The transfer options are not limited to the document types contained in the batch.
 
@@ -1398,7 +1398,7 @@ If you are using customer credit limit override workflow, orders that exceed the
 1. Open the Sales Multiple Orders to Invoices Transfer window.
     (Sales \>\> Transactions \>\> Transfer Multiple Orders)
 
-    ![screenshot](media/SOage187.jpg)
+    ![Sales Multiple Orders to Invoices Transfer window](media/SOage187.jpg)
 
 2. Mark to transfer Orders, Back Orders, or both.
 
