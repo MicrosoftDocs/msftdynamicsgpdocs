@@ -1,12 +1,12 @@
 ---
-title: Sales order processing part 6| Microsoft Docs
+title: Sales order processing part 6
 description: Learn about transaction activity in the sales order processing module in Dynamics GP.
 author: tnistler
 
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
-ms.date: 01/22/2019
+ms.date: 10/12/2019
 ms.author: tnistler
 
 ---
@@ -59,9 +59,9 @@ This information is divided into the following sections:
 
 ### Packing slips and picking tickets overview
 
-You can print packing slips for orders, fulfillment orders, and invoices and include them in each shipment. A packing slip displays the items and quantities included on an order or invoice. If items on an invoice have negative invoice quantities, those items will not be printed on the packing slip. If all the items on an invoice have a Services item type, a packing slip is not printed. If items on an invoice have Miscellaneous Charges or Flat Fee item type, a packing slip is printed. If an item on an invoice has a Kit item type and the kit has no items, a packing slip is not printed. See *Printing options for packing slips and picking tickets* for printing more information.
+You can print packing slips for orders, fulfillment orders, and invoices and include them in each shipment. A packing slip displays the items and quantities included on an order or invoice. If items on an invoice have negative invoice quantities, those items will not be printed on the packing slip. If all the items on an invoice have a Services item type, a packing slip is not printed. If items on an invoice have Miscellaneous Charges or Flat Fee item type, a packing slip is printed. If an item on an invoice has a Kit item type and the kit has no items, a packing slip is not printed. See [Printing options for packing slips and picking tickets](#printing-options-for-packing-slips-and-picking-tickets) for printing more information.
 
-You can print picking tickets for orders, fulfillment orders, invoices, and returns. Warehouse personnel use picking tickets when assembling the items for a shipment. A picking ticket displays the items and quantities needed to fulfill an order, fulfillment order, or invoice and the location for each item. A picking ticket for a return displays the items and quantities returned and the site they were returned to. If you reprint a picking ticket, the words REPRINT will be displayed across the top of the report. Items will not be printed on the picking ticket if they are drop-ship items, have negative invoice quantities, or have zero quantities. See *Printing options for packing slips and picking tickets* for more information.
+You can print picking tickets for orders, fulfillment orders, invoices, and returns. Warehouse personnel use picking tickets when assembling the items for a shipment. A picking ticket displays the items and quantities needed to fulfill an order, fulfillment order, or invoice and the location for each item. A picking ticket for a return displays the items and quantities returned and the site they were returned to. If you reprint a picking ticket, the words REPRINT will be displayed across the top of the report. Items will not be printed on the picking ticket if they are drop-ship items, have negative invoice quantities, or have zero quantities. See [Printing options for packing slips and picking tickets](#printing-options-for-packing-slips-and-picking-tickets) for more information.
 
 You can print bulk picking tickets for fulfillment orders and invoices created from fulfillment orders. A bulk picking ticket displays the items and quantities needed to fulfill more than one fulfillment order or invoice and the location of each item for a batch of items. A summary line for each item and the total quantity required is displayed on the picking ticket. If you print a bulk picking ticket and then an individual picking ticket, items displayed on both picking tickets will be displayed with two asterisks (\*\*) and a reprint icon.
 
@@ -99,7 +99,7 @@ When you print a sales document (a quote, order, fulfillment order, invoice, bac
 - **Print Ship To Addresses with Lines** Mark this option to print the ship to address with the corresponding line item when it’s different than the ship to address for the document.
 - **Include Tax Details** Mark this option and select either Line Item and Summary or Summary Taxes Only. The tax details that were used to calculate the tax will be printed directly beneath the item on the document.
 
-    Mark Line Item and Summary if you want to include details for line items as well as summary tax information. Mark Summary Taxes Only if you want to include only the summary of tax detail information for each printed document.
+    Mark **Line Item** and **Summary** if you want to include details for line items as well as summary tax information. Mark Summary Taxes Only if you want to include only the summary of tax detail information for each printed document.
 - **Currency to Print** For multicurrency transactions, you can print documents in either the functional or originating currency.
 
 ### Requirements for sending sales documents in e-mail
@@ -116,7 +116,7 @@ You can send quotes, orders, fulfillment orders, or invoices in e-mail if the fo
 
 - Word templates for Microsoft Dynamics GP for the customer and document type must be enabled in the Template Configuration Manager window before you can send documents as .DOCX, .PDF, or .XPS attachments.
 
-- Depending on the document type and email service, Microsoft Word 2010 or later and Word templates for Dynamics GP are required.
+- Depending on the document type and email service, Microsoft Word 2010 or later, and Word templates for Dynamics GP are required.
 
     | **File format**  | **Word 2010 or later** | **Word templates** | **Web Client** |
     |------------------|------------------------|--------------------|
@@ -125,7 +125,8 @@ You can send quotes, orders, fulfillment orders, or invoices in e-mail if the fo
     | DOCX             | Not required           | Enabled            | Available\*    |
     | HTML             | Not required           | Not required       | Available\*    |
 
-    \*Email for Web Client will only be available if you are using Exchange as your server type in the System Preferences window.
+    > [!NOTE]
+    > Email for Web Client will only be available if you are using Exchange as your server type in the **System Preferences** window.
 
 - The file size of the document must not be greater than the maximum file size set in the Customer E-mail Options window.
 
@@ -138,25 +139,26 @@ You can send quotes, orders, fulfillment orders, or invoices in e-mail if the fo
 | DOCX               | Microsoft Word Viewer                   |
 | HTML\*             | Internet Explorer 8 Internet Explorer 9 |
 
-\*If you are only using Microsoft Dynamics GP Web Client, your customers and vendors must be using HTML to view their documents.
+    > [!NOTE]
+    > If you are only using Microsoft Dynamics GP Web Client, your customers and vendors must be using HTML to view their documents.
 
-### Printing or sending an individual document in e-mail
+### Printing or sending an individual document in email
 
-You can print a single quote, order, fulfillment order, invoice, back order, or return when you enter the document in the Sales Transaction Entry window or the Sales Order Fulfillment window. You also can send quotes, orders, fulfillment orders or invoices in e-mail.
+You can print a single quote, order, fulfillment order, invoice, back order, or return when you enter the document in the **Sales Transaction Entry** window or the **Sales Order Fulfillment** window. You also can send quotes, orders, fulfillment orders or invoices in email.
 
-If the order, fulfillment order, or invoice exceeds the customer’s credit limit and you are using credit limit override workflow, the document must be approved before you can print it and its picking ticket and packing slip. A document also must be approved before you can send it in e-mail. You can print a document, picking ticket, and packing slip that doesn’t need approval. You also can send a document in e-mail that doesn’t need approval.
+If the order, fulfillment order, or invoice exceeds the customer’s credit limit and you are using credit limit override workflow, the document must be approved before you can print it and its picking ticket and packing slip. A document also must be approved before you can send it in email. You can print a document, picking ticket, and packing slip that doesn’t need approval. You also can send a document in e-mail that doesn’t need approval.
 
-To print or send quotes individually in e-mail, you must mark Edit Printed Documents in the Sales Quote Setup window. If you don’t mark this option, you can print or send quotes in e-mail only if they’ve been entered into a batch. Quotes also must be approved before you can print them or send them in e-mail if you are using sales quote workflow. You can print or send a quote in e-mail that doesn’t need approval.
+To print or send quotes individually in email, you must mark **Edit Printed Documents** in the **Sales Quote Setup** window. If you don’t mark this option, you can print or send quotes in email only if they’ve been entered into a batch. Quotes also must be approved before you can print them or send them in email if you are using sales quote workflow. You can print or send a quote in email that doesn’t need approval.
 
-Before you print documents, you can print an alignment form to ensure that the information is printed in the correct fields on the document. To print an alignment form, mark Alignment Form in the Sales Document Print Options window. You can use four predefined document formats to print documents—blank paper, short form, long form, or other form.
+Before you print documents, you can print an alignment form to ensure that the information is printed in the correct fields on the document. To print an alignment form, mark **Alignment Form** in the **Sales Document Print Options** window. You can use four predefined document formats to print documents—blank paper, short form, long form, or other form.
 
-You also can print packing slips or picking tickets at the same time as you print the sales document. For more information, see *Packing slips and picking tickets overview* and *Printing options for packing slips and picking tickets*.
+You also can print packing slips or picking tickets at the same time as you print the sales document. For more information, see [Packing slips and picking tickets overview](#packing-slips-and-picking-tickets-overview) and [Printing options for packing slips and picking tickets](#printing-options-for-packing-slips-and-picking-tickets).
 
 #### To print an individual document
 
-1. Open the Sales Transaction Entry window (Sales \>\> Transactions \>\> Sales Transaction Entry) or the Sales Order Fulfillment window. (Sales \>\> Transactions \>\> Order Fulfillment)
+1. Open the **Sales Transaction Entry** window (Sales \>\> Transactions \>\> Sales Transaction Entry) or the **Sales Order Fulfillment** window. (Sales \>\> Transactions \>\> Order Fulfillment)
 
-2. Enter or select a sales document and open the Sales Document Print Options window by choosing File \>\> Print or the printer icon button.
+2. Enter or select a sales document and open the **Sales Document Print Options** window by choosing File \>\> Print or the printer icon button.
 
     ![screenshot](media/SOage155.jpg)
 
@@ -164,17 +166,20 @@ You also can print packing slips or picking tickets at the same time as you prin
 
 4. Mark the documents to include and the document formats to use.
     > [!NOTE]
-    > To send a document in e-mail, the document format must be Blank Paper. Also, at least one e-mail address, To, Cc, or Bcc, must be assigned to the customer using the Internet Information window or the Sales E-mail Detail Entry window.
+    > To send a document in email, the document format must be *Blank Paper*. Also, at least one email address, To, Cc, or Bcc, must be assigned to the customer using the **Internet Information** window or the **Sales E-mail Detail Entry** window.
 
-5. Select to print, send the document in e-mail, or both.
+5. Select to print, send the document in e-mail, or both.  
 
-6. To print packing slips or picking tickets, mark Packing Slips or Picking Tickets and select a document format. Packing slips and picking tickets won’t be sent in e-mail.
+    > [!NOTE]
+    > Starting with the October 2020 release of Dynamics GP, you can also choose to print all sales documents. For more information, see [Print All Sales Documents](../whats-new/print-all-sales-documents.md).
+
+6. To print packing slips or picking tickets, mark **Packing Slips** or **Picking Tickets** and select a document format. Packing slips and picking tickets won’t be sent in e-mail.
 
 7. Mark whether to reprint or send previously printed or sent documents. You also can choose to include kit components, tax details, and dual currencies.
 
 8. If you’re printing packing slips or picking tickets, mark the options to include.
     > [!NOTE]
-    > If a tax detail doesn’t appear on a document, check the Tax Detail Maintenance window (Administration \>\> Setup \>\> Company \>\> Tax Details). The Print on Documents option should be marked.
+    > If a tax detail doesn’t appear on a document, check the **Tax Detail Maintenance** window (Administration \>\> Setup \>\> Company \>\> Tax Details). The Print on Documents option should be marked.
 
 9. Choose Print. Depending on the destination options you selected, the document is printed, sent in e-mail, or both.
 
@@ -197,7 +202,7 @@ You also can print packing slips or picking tickets at the same time as you prin
 
 7. Print the document.
 
-#### To send an individual document in e-mail using the action pane
+#### To send an individual document in email using the action pane
 
 1. In the navigation pane, choose the Sales button, and then choose the Sales Order Transactions list.
 
@@ -217,7 +222,7 @@ If an order, fulfillment order, or invoice exceeds the customer’s credit limit
 
 Print an alignment form to ensure that the information is printed in the correct fields on the document. You can use four predefined document formats—blank paper, short form, long form, or other form.
 
-You also can print packing slips or picking tickets at the same time as you print the sales document. For more information, see *Packing slips and picking tickets overview* and *Printing options for packing slips and picking tickets*.
+You also can print packing slips or picking tickets at the same time as you print the sales document. For more information, see [Packing slips and picking tickets overview](#packing-slips-and-picking-tickets-overview) and [Printing options for packing slips and picking tickets](#printing-options-for-packing-slips-and-picking-tickets).
 
 The sorting option determines the order the documents are printed. The documents will always be sorted by document type first. You can then choose whether the documents will be sorted and printed by document number or by customer ID.
 
@@ -255,7 +260,7 @@ If an order, fulfillment order, or invoice exceeds the customer’s credit limit
 
 Print an alignment form to ensure that the information is printed in the correct fields on the document. You can use four predefined document formats—blank paper, short form, long form, or other form.
 
-You also can print packing slips or picking tickets at the same time as you print the sales document. For more information, see *Packing slips and picking tickets overview* and *Printing options for packing slips and picking tickets*.
+You also can print packing slips or picking tickets at the same time as you print the sales document. For more information, see [Packing slips and picking tickets overview](#packing-slips-and-picking-tickets-overview) and [Printing options for packing slips and picking tickets](#printing-options-for-packing-slips-and-picking-tickets).
 
 The sorting option determines the order the documents are printed. The documents will always be sorted by document type first. You can then choose whether the documents will be sorted and printed by document number or by customer ID.
 
@@ -383,7 +388,7 @@ You can use the sales quick print option to print a sales order or invoice from 
 
 ### Print packing slips using the action pane
 
-You can print packing slips using the action pane for orders, fulfillment orders, and invoices and include them in each shipment. A packing slip displays the items and quantities included on an order or invoice. For more information about packing slips, see *Packing slips and picking tickets overview*.
+You can print packing slips using the action pane for orders, fulfillment orders, and invoices and include them in each shipment. A packing slip displays the items and quantities included on an order or invoice. For more information about packing slips, see [Packing slips and picking tickets overview](#packing-slips-and-picking-tickets-overview).
 
 #### To print packing slips using the action pane
 
@@ -405,7 +410,7 @@ You can print packing slips using the action pane for orders, fulfillment orders
 
 ### Print picking tickets using the action pane
 
-You can print picking tickets using the action pane for orders, fulfillment orders, invoices, and returns. Warehouse personnel use picking tickets when assembling the items for a shipment. For more information about picking tickets, see *Packing slips and picking tickets overview*.
+You can print picking tickets using the action pane for orders, fulfillment orders, invoices, and returns. Warehouse personnel use picking tickets when assembling the items for a shipment. For more information about picking tickets, see [Packing slips and picking tickets overview](#packing-slips-and-picking-tickets-overview).
 
 #### To print picking tickets using the action pane
 
