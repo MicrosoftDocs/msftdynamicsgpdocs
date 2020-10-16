@@ -718,17 +718,15 @@ This tool enables you to unapply documents in the history table and automaticall
 > [!NOTE]
 > If a discount and/or write-offs exist, a General Ledger journal transaction will be created using the original distributions of the document and the transaction will be in a batch in the General Ledger. An edit list can be printed prior to posting into the General Ledger.
 > 
-> The Receivables Management Transaction Unapply tool does not allow users to unapply Multi-currency documents that have discounts and/or write-offs associated with them.
+> The Receivables Management Transaction Unapply tool does not allow users to unapply multi-currency documents that have discounts and/or write-offs associated with them.
 
 The Receivables Management Unapply tool will prevent users from unapplying multi-currency transactions that contain a gain or loss.  
 
-However, if Payment Transaction Removal (PTR) has been ran on the transaction to move it to history the Receivables Management Unapply tool will not prevent the user from processing these transactions.   
+However, if Payment Transaction Removal (PTR) has been run on the transaction to move it to history, the Receivables Management Unapply tool will not prevent the user from processing these transactions.   
 
 It is not recommended to unapply historical multi-currency documents with gains or losses as this can cause data damage to the apply records created when they are reapplied which leads to issues with the HATB (Historical Aged Trial Balance) if the transactions are reapplied.  
 
-If you already processed a transaction in this condition, please reach out to support for assistance.  
-
-
+If you already processed a transaction in this condition, please reach out to Support for assistance.  
 
 #### To unapply Receivables Management transactions
 
