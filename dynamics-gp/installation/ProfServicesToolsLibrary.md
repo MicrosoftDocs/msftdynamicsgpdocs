@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/14/2019
+ms.date: 10/16/2019
 ---
 
 # Professional Services Tools Library
@@ -54,27 +54,27 @@ This section includes information and precautions that will help you use Profess
 
 - Using the *sa* login
 
-    Regardless of how role-based Security is defined in Microsoft Dynamics GP, there are certain tools that will require users to be logged in as “sa.” These tools are:
+  Regardless of how role-based Security is defined in Microsoft Dynamics GP, there are certain tools that will require users to be logged in as “sa.” These tools are:
 
-      - Toolkit
+  - Toolkit
 
-      - Customer Name Modifier
+  - Customer Name Modifier
 
-      - Item Number Modifier
+  - Item Number Modifier
 
-      - Item Number Combiner
+  - Item Number Combiner
 
-      - Vendor Name Modifier
+  - Vendor Name Modifier
 
-      - Account Modifier/Combiner
+  - Account Modifier/Combiner
 
-      - Salesperson Modifier
+  - Salesperson Modifier
 
-      - Territory Modifier
+  - Territory Modifier
 
-      - Territory Combiner
+  - Territory Combiner
 
-      - Company Copy
+  - Company Copy
 
 ### Using the Validate and Import buttons
 
@@ -99,7 +99,7 @@ The spreadsheet must be saved as a text file in Microsoft Excel (tab delimited f
 
 A typical example of the Validate and Import function functionality would be during an Employee ID change:
 
-![A screenshot](media/EMPMOD.jpg)
+![Employee change](media/EMPMOD.jpg)
 
 1. Choose the Validate button first. Select the file and choose Open to start the validation process.
 
@@ -206,7 +206,7 @@ If you are a customer, contact your partner of record.
 
         From the installation media, start the Microsoft Dynamics GP installer. Refer to the Microsoft Dynamics GP installation documentation pertaining to new installation or updating an existing location. Select Professional Services Tools Library from the Select Features window.
 
-        ![A screenshot](media/PSTINS.jpg)
+        ![Professional Services Tools Library](media/PSTINS.jpg)
 
     - Downloaded Free Version:
 
@@ -220,7 +220,7 @@ If you are a customer, contact your partner of record.
 
 4. In the Available Windows folder list, expand the Technical Service Tools list, then expand Project. Select Professional Services Tools Library.
 
-    ![A screenshot ](media/PSTSHORTT.jpg)
+    ![Professional Services Tools Library again](media/PSTSHORTT.jpg)
 
 5. Choose Done, and then choose Yes to save the changes.
 
@@ -238,7 +238,7 @@ If you are a customer, contact your partner of record.
 
 1. Open Professional Services Tools Library from the Home menu.
 
-    ![A screenshot ](media/PSTLIB.jpg)
+    ![Third Professional Services Tools Library](media/PSTLIB.jpg)
 
 You have access to each Tool that has a check next to it.
 
@@ -315,7 +315,7 @@ Some of the options in creating a security task illustrated below can be changed
     > [!NOTE]
     > Windows selected from the Type drop-down list, Project selected from the Series drop- down list, and Professional Services Tools Library marked as an operation is required to get into the main Professional Services Tools Library window.
 
-    ![A screenshot ](media/PSTSECTSK.jpg)
+    ![Another Professional Services Tools Library](media/PSTSECTSK.jpg)
 
 10. Select Save to save the new security task.
 
@@ -331,7 +331,7 @@ Some of the options in creating a security task illustrated below can be changed
 
 5. Click Mark All to select the Security Task ID.
 
-    ![A screenshot ](media/PSTSECRO.jpg)
+    ![Screenshot of Mark All](media/PSTSECRO.jpg)
 
 6. Choose Save to save the new Security Role.
 
@@ -389,7 +389,7 @@ Use Toolkit to rebuild the GL00105 table, re-create Dex Procs, rebuild indexes, 
 
 1. To rebuild the GL00105 table, select Rebuild GL00105 in the Toolkit Options group.
 
-    ![A screenshot ](media/PSTTOOL.jpg)
+    ![select Rebuild GL00105 in the Toolkit Options group](media/PSTTOOL.jpg)
 
 2. Choose Next.
 
@@ -404,7 +404,7 @@ There are several options when selecting Recreate SQL Objects.
 
 2. Choose the series or table you wish to change.
 
-    ![A screenshot ](media/PSTSYSDIG.jpg)
+    ![List ](media/PSTSYSDIG.jpg)
 
 3. Choose the SQL object you want to re-create by selecting a function in the
     Maintenance Options group.
@@ -475,7 +475,7 @@ When you attempt to modify a larger set of accounts such as 150 and use the rang
 
 If you load a dictionary after the initial install of the Professional Services Tools Library, you should re-create an internal table using the Repopulate Column List function. If you install a product after the initial installation of Professional Services Tools and do not mark the Repopulate Column List check box, the new products may not be included when using this tool. This Repopulate Column List function only has to be marked the first time running the tool after loading a new dictionary.
 
-![A screenshot](media/PSTACTMOD.jpg)
+![A list](media/PSTACTMOD.jpg)
 
 #### Account Modifier
 
@@ -586,7 +586,7 @@ If you see an error in the TACHANGE table due to a mistake in the spreadsheet, s
 
 This tool allows changes in checkbook IDs to take place. You can change an existing checkbook ID to a new checkbook ID without any loss of work, open, or historical records. Refer to *Using Validate and Import buttons* on page 2 for information on importing data.
 
-![A screenshot ](media/PSTCHMOD.jpg)
+![Check modifyer](media/PSTCHMOD.jpg)
 
 #### To change a checkbook ID
 
@@ -718,7 +718,15 @@ This tool enables you to unapply documents in the history table and automaticall
 > [!NOTE]
 > If a discount and/or write-offs exist, a General Ledger journal transaction will be created using the original distributions of the document and the transaction will be in a batch in the General Ledger. An edit list can be printed prior to posting into the General Ledger.
 > 
-> The Receivables Management Transaction Unapply tool does not allow users to unapply Multi-currency documents that have discounts and/or write-offs associated with them.
+> The Receivables Management Transaction Unapply tool does not allow users to unapply multi-currency documents that have discounts and/or write-offs associated with them.
+
+The Receivables Management Unapply tool will prevent users from unapplying multi-currency transactions that contain a gain or loss.  
+
+However, if Payment Transaction Removal (PTR) has been run on the transaction to move it to history, the Receivables Management Unapply tool will not prevent the user from processing these transactions.   
+
+It is not recommended to unapply historical multi-currency documents with gains or losses as this can cause data damage to the apply records created when they are reapplied which leads to issues with the HATB (Historical Aged Trial Balance) if the transactions are reapplied.  
+
+If you already processed a transaction in this condition, please reach out to Support for assistance.  
 
 #### To unapply Receivables Management transactions
 
@@ -743,7 +751,7 @@ Use the Salesperson Modifier tool to change current Salesperson IDs. The result 
 
 2. Enter the New Salesperson ID and choose Convert.
 
-    ![A screenshot](media/PSTSALMOD.jpg)
+    ![Salesperson](media/PSTSALMOD.jpg)
 
 3. You will be prompted to backup your database. Once you have a backup of the proper data, choose Continue to begin the change process.
 
@@ -954,7 +962,7 @@ Use this tool to change Item Descriptions. You can change an existing item descr
 
 1. Choose the item you wish to change in the Starting Item Number field.
 
-    ![A screenshot ](media/PSTITDMOD.jpg)
+    ![Choose item](media/PSTITDMOD.jpg)
 
 2. The Starting Item Description field is populated automatically. Enter a new description in the Ending Item Description field.
 
@@ -1002,7 +1010,7 @@ Item Number Modifier is like other modifier tools in that it allows the user to 
 
 1. Enter the starting item number.
 
-    ![A screenshot](media/PSTITEMMOD.jpg)
+    ![Item number](media/PSTITEMMOD.jpg)
 
 2. Enter the new item number.
 
@@ -1054,7 +1062,7 @@ This tool will only modify records that are already paid and should be 1099 reco
 
 2. Once the vendor is marked as a 1099 vendor, open the 1099 Modifier tool from the Professional Services Tools Library menu.
 
-    ![A screenshot](media/PST1099M.jpg)
+    ![1099 Modifier tool](media/PST1099M.jpg)
 
 3. Select whether you would like to Print Report Only or Process and Print Report.
 
@@ -1085,7 +1093,7 @@ If you use the RM and PM Master triggers in the Professional Service Tools Libra
 
 1. In the Master DB field, choose the database where you will be creating or updating records.
 
-    ![A screenshot](media/PSTMSTRIG.jpg)
+    ![Choose database](media/PSTMSTRIG.jpg)
 
 2. In the Replicate To DB field, choose the database to which the master records will be copied.
 
@@ -1243,7 +1251,7 @@ Use the Certified Payroll Report with US Payroll to add a project number to empl
 
 To use the Certified Payroll functionality, simply enter a Job Number while entering Payroll transactions.
 
-![A screenshot ](media/PSTPAYTRX.jpg)
+![Enter job no. ](media/PSTPAYTRX.jpg)
 
 The Job Number field is located in the expanded area of the Payroll Transaction Entry window. This field is only active for transactions that are Hourly, Overtime or Double Time payroll types, and will be disabled for any other types of
 transactions.

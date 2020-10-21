@@ -1,5 +1,5 @@
 ---
-title: "Workflow Administrator’s Guide"
+title: "Workflow Administrator's Guide"
 description: "Learn about setting up workflows in Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
@@ -11,12 +11,12 @@ ms.author: theley
 ms.date: 08/10/2020
 ---
 
-# Workflow Administrator’s Guide
+# Workflow Administrator's Guide
 
 The following information provides a basic overview of the Workflow system and describes the benefits it provides.
 
 - What is workflow?
--	Benefits of using the Workflow system
+-    Benefits of using the Workflow system
 - How users will interact with the Workflow system
 
 ## What is workflow?
@@ -28,7 +28,7 @@ This documentation defines the term workflow in two ways:
 
 2. Workflow is an approval process
 
-  A workflow is the approval process for a document, master record, or batch. A workflow defines how a document, master record, or batch “flows” through the system by showing who must approve it, and the conditions under which they must approve it.  
+  A workflow is the approval process for a document, master record, or batch. A workflow defines how a document, master record, or batch "flows" through the system by showing who must approve it, and the conditions under which they must approve it.  
 
 For example, consider the following illustration of a purchase order approval workflow. <!--missing image-->This workflow shows who must approve purchase orders, and the conditions under which their approval is required. For example, suppose Sam submits a purchase order for $2,000. In this scenario, the purchase order must be approved by Frank. If Sam submits a purchase order for $8,000, it must be approved by both Frank and Sue.
 
@@ -48,7 +48,7 @@ Here are a few key benefits.
 
 - Access through Outlook
 
-  Users don’t have to log on to Microsoft Dynamics GP to approve documents, master records, and batches. Users can approve documents, master records, and batches by accessing the Workflow by responding to e-mail messages in Microsoft Office Outlook®.
+  Users don't have to log on to Microsoft Dynamics GP to approve documents, master records, and batches. Users can approve documents, master records, and batches by accessing the Workflow by responding to e-mail messages in Outlook.
 
 - Reports
 
@@ -60,7 +60,7 @@ Users can interact with the Workflow system through Microsoft Dynamics GP and Ou
 
 ### Microsoft Dynamics GP
 
-Workflow functionality is available in many areas of Microsoft Dynamics GP. For example, the Purchase Order Entry window enables a user to submit purchase orders for approval. This window has a message bar and history pane. The message bar displays the document’s status and has buttons for approving and rejecting the document. The history pane displays previous actions made to the document.
+Workflow functionality is available in many areas of Microsoft Dynamics GP. For example, the Purchase Order Entry window enables a user to submit purchase orders for approval. This window has a message bar and history pane. The message bar displays the document's status and has buttons for approving and rejecting the document. The history pane displays previous actions made to the document.
 
 ### Outlook
 
@@ -69,8 +69,8 @@ When a document, master record, or batch is assigned to a user for approval, an 
 ## Workflow architecture
 
 The Workflow system is made up of several software components. The following information describes these components and shows where they may be installed on your network.
-•	Architecture overview
-•	Deployment configurations
+*    Architecture overview
+*    Deployment configurations
 
 ### Architecture overview
 
@@ -84,7 +84,7 @@ The Workflow server components contain business logic and communicate with the S
 
 There are several ways the Workflow system can be deployed. The following information describes the supported deployment configurations and shows where each software component is installed.
 
-It’s important that you know and understand how the Workflow system is deployed in your organization so that you can perform maintenance procedures and help troubleshoot any issues that may arise.
+It's important that you know and understand how the Workflow system is deployed in your organization so that you can perform maintenance procedures and help troubleshoot any issues that may arise.
 
 ### Single-server configuration
 

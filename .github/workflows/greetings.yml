@@ -1,0 +1,19 @@
+name: Greetings
+
+on:
+    pull_request:
+      branches:
+        - live
+    issues:
+      branches:
+        - live
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Hello, thanks for your feedback. We triage this feedback regularly and use it to plan for future documentation improvements.'
+        pr-message: 'Hello, thanks for your contribution, much appreciated. We will triage and review your PR as soon as possible.'
