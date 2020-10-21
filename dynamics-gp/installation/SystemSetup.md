@@ -14,7 +14,7 @@ ms.date: 05/14/2019
 # Microsoft Dynamics GP System Setup Guide
 
 Microsoft Dynamics GP can provide important information about the money flowing
-through your business—where it came from, where it is, and where it’s going.
+through your business—where it came from, where it is, and where it's going.
 
 Microsoft Dynamics GP is a comprehensive accounting and business management
 system composed of modules that focus on meeting specific business needs. These
@@ -23,7 +23,7 @@ management goals, and are organized into solution series, which group modules
 that have similar purposes.
 
 Though sold separately, Microsoft Dynamics GP modules integrate with one another
-automatically when they’re installed. In an integrated system, the boundaries
+automatically when they're installed. In an integrated system, the boundaries
 between modules are erased—information entered in one module is shared with all
 the other modules. Perhaps the most important benefit of integration is that
 transactions can be posted from one module to another, automatically updating
@@ -35,7 +35,7 @@ company.
 Some features described in the documentation are optional and can be purchased
 through your Microsoft Dynamics GP partner.
 
-To view information about the release of Microsoft Dynamics GP that you’re using
+To view information about the release of Microsoft Dynamics GP that you're using
 and which modules or features you are registered to use, choose Help \>\> About
 Microsoft Dynamics GP.
 
@@ -68,7 +68,7 @@ The manual is divided into the following parts:
     when your data matches conditions you specify.
 
 - *Part 8, Customizing Microsoft Dynamics GP*, provides an overview of
-    module-specific setup tasks to complete when you’ve finished setting up your
+    module-specific setup tasks to complete when you've finished setting up your
     system and suggests additional tools you can use to further tailor Microsoft
     Dynamics GP to the way your organization works.
 
@@ -80,17 +80,17 @@ process or to start setting up Microsoft Dynamics GP.
 
 The following information is discussed:
 
-- *Chapter 1, “Introduction to Microsoft Dynamics GP setup,”* provides an
+- *Chapter 1, "Introduction to Microsoft Dynamics GP setup,"* provides an
     overview of the setup process for Microsoft Dynamics GP.
 
-- *Chapter 2, “Setting up Microsoft Dynamics GP,”* provides instructions for
+- *Chapter 2, "Setting up Microsoft Dynamics GP,"* provides instructions for
     using the Setup Checklist window to set up Microsoft Dynamics GP.
 
-- *Chapter 3, “Managing workflow,”* provides an overview of the workflow
+- *Chapter 3, "Managing workflow,"* provides an overview of the workflow
     feature and provides instructions for setting up workflow for your Microsoft
     Dynamics GP companies.
 
-- *Chapter 4, “Security considerations,”* provides security information and
+- *Chapter 4, "Security considerations,"* provides security information and
     practices that will help you to maintain a secure Microsoft Dynamics GP
     environment.
 
@@ -124,17 +124,17 @@ data, and even redesigning part numbers or the chart of accounts, using the
 software in day-to-day operations, and installing service packs, updates,
 and upgrades over time.
 
-Although you’ve finished the formal evaluation process if you’re planning to
+Although you've finished the formal evaluation process if you're planning to
 install and set up Microsoft Dynamics GP, proper planning can help you
 complete this process as quickly and efficiently as possible.
 
 #### Plan
 
-Some materials have been provided to help you plan for implementing Microsoft Dynamics GP. If you haven’t yet reviewed these resources, visit the CustomerSource Web site to review them. In addition to defining a schedule for setting up and using the software, many businesses make detailed assignments for specific tasks, such as defining customer and vendor numbers, creating vendor, item and customer records, entering and posting beginning balances.
+Some materials have been provided to help you plan for implementing Microsoft Dynamics GP. If you haven't yet reviewed these resources, visit the CustomerSource Web site to review them. In addition to defining a schedule for setting up and using the software, many businesses make detailed assignments for specific tasks, such as defining customer and vendor numbers, creating vendor, item and customer records, entering and posting beginning balances.
 
-The procedures in *Chapter 2, “Setting up Microsoft Dynamics GP,”* can help
+The procedures in *Chapter 2, "Setting up Microsoft Dynamics GP,"* can help
 you assign specific setup tasks to users from within Microsoft Dynamics GP
-after the initial installation on the server. If you haven’t set up business
+after the initial installation on the server. If you haven't set up business
 management software before, your authorized Microsoft partner can help you
 develop a plan for your business.
 
@@ -152,7 +152,7 @@ stage.
 
 #### Build
 
-We refer to the process of installing and setting up Microsoft Dynamics GP as the “build” process. In addition to installing Microsoft Dynamics GP or Microsoft SQL Server on one or more servers, it includes setting up process servers and workstations. This process includes the following tasks:
+We refer to the process of installing and setting up Microsoft Dynamics GP as the "build" process. In addition to installing Microsoft Dynamics GP or Microsoft SQL Server on one or more servers, it includes setting up process servers and workstations. This process includes the following tasks:
 
 - Installing Microsoft Dynamics GP
 
@@ -263,7 +263,7 @@ description of the options that are available.
 | All tasks            | Select this option to display all of the setup tasks in the Setup Checklist window.                                                                                  |
 | All incomplete tasks | Select this option to display all of the setup tasks that are incomplete.                                                                                            |
 | All complete tasks   | Select this option to display all of the setup tasks that are complete.                                                                                              |
-| Optional setup tasks | Select this option to include optional setup tasks in the Setup Checklist tree view. Optional setup tasks are those that aren’t required for the system to be set up. |
+| Optional setup tasks | Select this option to include optional setup tasks in the Setup Checklist tree view. Optional setup tasks are those that aren't required for the system to be set up. |
 | Unregistered modules | Select this option to include setup tasks for unregistered modules in the Setup Checklist tree view.                                                                 |
 
 #### Setup Guide
@@ -282,7 +282,7 @@ category to a user, an assignment will be created for each setup task in
 that category for the user that you assigned the category to. After the
 start date for the task, a reminder will be created for users who have
 incomplete setup tasks assigned to them. Reminders are displayed in the
-Reminders window. See the System User’s Guide (Help \>\> Contents \>\>
+Reminders window. See the System User's Guide (Help \>\> Contents \>\>
 select Using the System) for more information about reminders.
 
 Use the Setup Checklist window to assign a setup task or a category to a
@@ -406,7 +406,7 @@ the specific transactions or vendors to pay, deciding when to pay them, and
 approving cash disbursements can involve one or more separate processes that
 are completed by other employees. As organizations become larger, the volume
 of transactions increases, and managing them becomes more complex. The term
-“workflow” can therefore refer to multiple, related things.
+"workflow" can therefore refer to multiple, related things.
 
 - Workflow is the sequence of actions that leads to the completion of a
     business task. The sequence is carried out according to a set of rules or
@@ -438,7 +438,7 @@ consider.
     throughout many of your processes? Or do you need both? The Workflow feature
     provides comprehensive, consistent control over the purchasing and batch
     posting processes. Field level security and electronic signatures are very
-    flexible throughout Microsoft Dynamics GP, and can be used while you’re also
+    flexible throughout Microsoft Dynamics GP, and can be used while you're also
     using Workflow.
 
 - If your organization requires an approval process for purchases, but you
@@ -473,13 +473,13 @@ Workflow for SharePoint.
 
 **Workflow status** A label assigned to documents at various points in the
 approval process. Document statuses include not submitted, pending user
-action, and completed. Refer to the System User’s Guide for information
+action, and completed. Refer to the System User's Guide for information
 about specific workflow statuses.
 
 If you are using Workflow for SharePoint, a Workflow status is a label
 assigned to documents or batches at various points in the approval process.
 Document statuses include submitted, pending, and approved. Refer to the
-Workflow Administrator’s Guide for information about specific workflow
+Workflow Administrator's Guide for information about specific workflow
 statuses.
 
 **Workflow task** A task that requires action from an approver, based on rules
@@ -502,7 +502,7 @@ Dynamics GP data. Security considerations can include the following areas:
 - Backing up and restoring data on a recurring schedule.
 
 Additional security considerations apply to business practices, such as your
-company’s policies for accepting personal checks, extending credit, or
+company's policies for accepting personal checks, extending credit, or
 approving purchases, and for maintaining the privacy of data from customers,
 vendors and employees. These policy considerations are not addressed in this
 documentation.
@@ -558,7 +558,7 @@ help you to choose the firewall that is right for your network.
 | **Firewall type**    | **Description**    |
 |----------------------|--------------------|
 | IP Packet Filtering  | It offers weak security, is cumbersome to manage, and is easily compromised.  |
-| Application Gateways | These are used when the actual content of an application is of greatest concern. They are more secure than IP packet filtering, but are application–specific and, therefore, don’t adapt easily to changes in technology.   |
+| Application Gateways | These are used when the actual content of an application is of greatest concern. They are more secure than IP packet filtering, but are application–specific and, therefore, don't adapt easily to changes in technology.   |
 | Circuit Gateways     | These are tunnels built through a firewall connecting specific processes or systems on one side with specific processes or systems on the other. Circuit gateways are best used in situations where the person using an application is potentially a greater risk than the information carried by the application. The circuit gateway differs from IP packet filtering in its ability to connect to an out-of-band application scheme that can add additional information. |
 | Proxy Servers        | These are security tools, which include firewall and application gateway functionality, that manage Internet traffic to and from a Local Area Network (LAN). A proxy server can improve performance by caching and directly supplying frequently requested data, such as a popular Web page. It can also filter and discard requests that the owner does not consider appropriate, such as requests for unauthorized access to proprietary files.                          |
 
@@ -583,7 +583,7 @@ computing environment.
     have more security features.
 
 - Use the Windows Update site to get the latest updates available for your
-    computer’s operating system, software and hardware.
+    computer's operating system, software and hardware.
 
 - Use the Microsoft Office Update site to help keep your Office products
     up-todate. Office product updates are created by Microsoft to bring you the
@@ -639,7 +639,7 @@ to the executable file. Files infected by this type of virus usually have a
 between a virus and a Trojan horse program is that a Trojan horse program
 does not replicate itself; it only destroys information on the hard disk. A
 Trojan horse program disguises itself as a legitimate program, such as a
-game or utility. When it’s run, though, it can destroy or scramble data.
+game or utility. When it's run, though, it can destroy or scramble data.
 
 **Macro viruses** This type of computer virus is stored in a macro within a
 file, template, or add-in. The spread of a macro virus can be prevented. Here
@@ -674,32 +674,32 @@ are some tips to avoid infection.
 
 ## Part 2: User setup
 
-If you’re using Microsoft Dynamics GP in a multi-user environment, you need
+If you're using Microsoft Dynamics GP in a multi-user environment, you need
 to define who can use Microsoft Dynamics GP. You also can determine the
 level of access each of your users have to the company information you set
 up.
 
-If you’re using Microsoft Dynamics GP in a single-user environment, you
-don’t need to set up any additional users. You do need to set user access to
-each company that you create, however. See *Chapter 5, “User records,”* for
+If you're using Microsoft Dynamics GP in a single-user environment, you
+don't need to set up any additional users. You do need to set user access to
+each company that you create, however. See *Chapter 5, "User records,"* for
 more information.
 
 This part of the documentation includes:
 
-- *Chapter 5, “User records,”* explains how to create and use user records in
+- *Chapter 5, "User records,"* explains how to create and use user records in
     Microsoft Dynamics GP.
 
-- *Chapter 6, “Security,”* describes the procedures necessary to set up system
+- *Chapter 6, "Security,"* describes the procedures necessary to set up system
     and individual security.
 
-- *Chapter 7, “Field level security,”* describes how to provide additional
+- *Chapter 7, "Field level security,"* describes how to provide additional
     security to programs, fields, forms, and windows in Microsoft Dynamics GP.
 
-- *Chapter 8, “Shortcut administration,”* describes how to set up shortcuts in
+- *Chapter 8, "Shortcut administration,"* describes how to set up shortcuts in
     user class folders, in which shortcuts to specific tasks are organized for a
     class of users.
 
-- *Chapter 9, “Activity tracking,”* explains how to keep track of the activity
+- *Chapter 9, "Activity tracking,"* explains how to keep track of the activity
     in your Microsoft Dynamics GP system. Activities you can track include
     attempts to log in and log out, access windows and tables, make changes to
     tables, print, complete processes such as routines and table maintenance,
@@ -727,9 +727,9 @@ GP, you are a perpetual customer. As a perpetual customer, you'll use the
 concurrent user system to create as many user records as you wish,
 regardless of the number of users you've registered for Microsoft Dynamics
 GP. However, the number of active users logged in to Microsoft Dynamics GP
-at any one time can’t exceed the number of active users you’ve registered.
+at any one time can't exceed the number of active users you've registered.
 For example, you may have registered the accounting system for 10 users so
-the maximum number of active users in Microsoft Dynamics GP can’t exceed 10.
+the maximum number of active users in Microsoft Dynamics GP can't exceed 10.
 You could create 30 user records—however, only 10 of these users could be in
 the system at the same time.
 
@@ -738,17 +738,17 @@ time, you are a subscription customer. As a subscription customer, you'll
 use the named user system to create as many active user records as you've
 registered for Microsoft Dynamics GP. For example, you may have registered
 the accounting system for 10 users so the maximum number of active users in
-Microsoft Dynamics GP can’t exceed 10.
+Microsoft Dynamics GP can't exceed 10.
 
 You can group users in user classes and specify the parts of Microsoft
 Dynamics GP that users will have access to, depending on the types of tasks
 they typically complete. For more information about user classes and
-security, see *Chapter 6, “Security.”*
+security, see *Chapter 6, "Security."*
 
 #### Creating a user record
 
-You’ll use the User Setup window to create user records. The User ID
-identifies each user in the Microsoft Dynamics GP system. You can’t change
+You'll use the User Setup window to create user records. The User ID
+identifies each user in the Microsoft Dynamics GP system. You can't change
 the user ID once the record has been saved. To change a user ID, delete the
 user record and reenter the user record with a different ID.
 
@@ -756,7 +756,7 @@ You might have some users that will only access the Microsoft Dynamics GP
 Web Client, and will never use the Microsoft Dynamics GP desktop client. You
 can set up these users in the User Setup window as web client only users.
 
-A user record with the ID of “sa” (system administrator) that has access to
+A user record with the ID of "sa" (system administrator) that has access to
 the entire system is created by default. Some procedures within Microsoft
 Dynamics GP require having a user with this ID.
 
@@ -780,12 +780,12 @@ Microsoft Dynamics GP by status and user type.
 1. In the User ID field, enter a user ID, which will be used throughout
     Microsoft Dynamics GP to identify this person.
 
-2. In the User Name field, enter the person’s full name.
+2. In the User Name field, enter the person's full name.
 
 3. In the Password field, enter the password this user will use when starting
     the accounting system.
 
-If you don’t assign a password to the user at this time, the user will be
+If you don't assign a password to the user at this time, the user will be
 required to enter a password before accessing Microsoft Dynamics GP.
 
 1. In the Class ID field, assign the user to a class, if you wish.
@@ -793,18 +793,18 @@ required to enter a password before accessing Microsoft Dynamics GP.
 See *Creating a user class* for more information.
 
 1. In the Status field, select a status. The user type and status determine the
-    user’s access in Microsoft Dynamics GP.
+    user's access in Microsoft Dynamics GP.
 
 2. In the User Type field, select a user type. The user type and status
-    determine the user’s access in Microsoft Dynamics GP.
+    determine the user's access in Microsoft Dynamics GP.
 
 3. In the Home Page Role field, assign the user to a user role. The user role
-    determines the content that is displayed on a user’s home page by default.
+    determines the content that is displayed on a user's home page by default.
 
-For more information on home pages, refer to your System User’s Guide (Help
+For more information on home pages, refer to your System User's Guide (Help
 \>\> Contents \>\> select Using the System.)
 
-1. Mark the Payroll View for Human Resources option if you want a user’s
+1. Mark the Payroll View for Human Resources option if you want a user's
     changes to Human Resources benefit and deduction codes to update
     corresponding U.S. Payroll information. You should mark this option for
     every user who will enter or update benefit information in Human Resources.
@@ -843,12 +843,12 @@ be marked for this option to be available.
 2. In the User ID field, enter a user ID, whic will be used throughout
     Microsoft Dynamics GP to identify this person.
 
-3. In the User Name field, enter the person’s full name.
+3. In the User Name field, enter the person's full name.
 
 4. In the Password field, enter the password this user will use when starting
     the accounting system.
 
-If you don’t assign a password to the user at this time, the user will be
+If you don't assign a password to the user at this time, the user will be
 required to enter a password before accessing Microsoft Dynamics GP.
 
 1. In the Class ID field, assign the user to a class, if you wish.
@@ -856,18 +856,18 @@ required to enter a password before accessing Microsoft Dynamics GP.
 See *Creating a user class* for more information.
 
 1. In the Status field, select a status. The user type and status determine the
-    user’s access in Microsoft Dynamics GP.
+    user's access in Microsoft Dynamics GP.
 
 2. In the User Type field, select a user type. The user type and status
-    determine the user’s access in Microsoft Dynamics GP.
+    determine the user's access in Microsoft Dynamics GP.
 
 3. In the Home Page Role field, assign the user to a user role. The user role
-    determines the content that is displayed on a user’s home page by default.
+    determines the content that is displayed on a user's home page by default.
 
-For more information on home pages, refer to your System User’s Guide (Help
+For more information on home pages, refer to your System User's Guide (Help
 \>\> Contents \>\> select Using the System.)
 
-1. Mark the Payroll View for Human Resources option if you want a user’s
+1. Mark the Payroll View for Human Resources option if you want a user's
     changes to Human Resources benefit and deduction codes to update
     corresponding U.S. Payroll information. You should mark this option for
     every user who will enter or update benefit information in Human Resources.
@@ -924,7 +924,7 @@ To change the security roles for a user, use User Security Setup window.
 
 In Microsoft Dynamics GP, you can specify security settings for your system,
 companies, individual users and specific tasks. This information explains
-the procedures you’ll perform to secure Microsoft Dynamics GP for your
+the procedures you'll perform to secure Microsoft Dynamics GP for your
 organization.
 
 This information is divided into the following sections:
@@ -973,8 +973,8 @@ through the use of a password; only a few people should know the password.
 See *Setting system security* for more information.
 
 **Company** Company security controls access to companies on a per-user
-basis. When you set up a new user record, that person doesn’t have access to
-any companies. You’ll need to grant access, using the User Access Setup
+basis. When you set up a new user record, that person doesn't have access to
+any companies. You'll need to grant access, using the User Access Setup
 window, before the user can log in to Microsoft Dynamics GP. See *Setting
 company access* for more information.
 
@@ -1019,12 +1019,12 @@ each accounting module for information about these passwords.
 **Account** Account-level security enhances security and account views.
 Users can enter, edit, and view information from a reduced account set based
 on the access granted for accounts. For more information, see *Chapter 35,
-“Account security.”*
+"Account security."*
 
 **Field level security** Field level security restricts access to any field,
 window, or form in Microsoft Dynamics GP. It allows you to apply a password,
 or to make a window or form unavailable. It also allows you to hide, lock,
-or apply passwords to fields. See *Chapter 7, “Field level security,”* for
+or apply passwords to fields. See *Chapter 7, "Field level security,"* for
 more information.
 
 #### Security Synchronization Utility
@@ -1096,24 +1096,24 @@ product:
 | Modified Windows                                                                                                                                                                              | Windows customized using Modifier.                                                                                                                                                                                                          |
 | Modified Reports                                                                                                                                                                              | Primary copies of reports created using Report Writer. Note: The Report Writer name of the report appears in this list. The Report Writer name is the one that appears in the title bar of the Screen Output window when you print a report. |
 | Files                                                                                                                                                                                         | Tables in the selected product.                                                                                                                                                                                                             |
-| Alternate Microsoft Dynamics GP Reports\*                                                                                                                                                     | Microsoft Dynamics GP reports that have been incorporated into integrating products you’ve installed.                                                                                                                                       |
-| Alternate Microsoft Dynamics GP Windows\*                                                                                                                                                     | Microsoft Dynamics GP windows that have been incorporated into integrating products you’ve installed.                                                                                                                                       |
+| Alternate Microsoft Dynamics GP Reports\*                                                                                                                                                     | Microsoft Dynamics GP reports that have been incorporated into integrating products you've installed.                                                                                                                                       |
+| Alternate Microsoft Dynamics GP Windows\*                                                                                                                                                     | Microsoft Dynamics GP windows that have been incorporated into integrating products you've installed.                                                                                                                                       |
 | Modified Alternate Microsoft Dynamics GP Reports\*                                                                                                                                            | Alternate reports that have been modified using Report Writer.                                                                                                                                                                              |
-| \*These items appear only if you’re using an integrating product and have selected it in the Product list. \*\*These types appear only if the corresponding item is installed and registered. |                                                                                                                                                                                                                                              |
+| \*These items appear only if you're using an integrating product and have selected it in the Product list. \*\*These types appear only if the corresponding item is installed and registered. |                                                                                                                                                                                                                                              |
 | **Type**                                                                                                                                                                                      | **Description**                                                                                                                                                                                                                              |
 | Modified Alternate Microsoft Dynamics GP Windows\*                                                                                                                                            | Alternate windows that have been modified using Modifier.                                                                                                                                                                                   |
 | Custom Reports                                                                                                                                                                                | Secondary copies and new reports created in Report Writer.                                                                                                                                                                                  |
 | Advanced Financial Reports                                                                                                                                                                    | Modified advanced financial reports.                                                                                                                                                                                                        |
-| Series Posting Permissions                                                                                                                                                                    | Specific posting tasks for each Microsoft Dynamics GP product you’ve purchased.                                                                                                                                                             |
+| Series Posting Permissions                                                                                                                                                                    | Specific posting tasks for each Microsoft Dynamics GP product you've purchased.                                                                                                                                                             |
 | Customization Tools                                                                                                                                                                           | Tools you use to customize the accounting system, such as Report Writer or the Modifier.                                                                                                                                                    |
 | Microsoft Dynamics GP Import\*\*                                                                                                                                                              | The Microsoft Dynamics GP Integration Manager.                                                                                                                                                                                              |
 | Document Access                                                                                                                                                                               | Quotes, orders, invoices, returns, and back orders for Sales Order Processing. Standard, blanket, drop-ship, and blanket drop-ship purchase orders for Purchase Order Processing.                                                           |
 | Letters                                                                                                                                                                                       | Letters to customers, employees, and vendors that are available using the Letter Writing Assistant.                                                                                                                                         |
 | Navigation Lists                                                                                                                                                                              | Default primary lists. Note: If you restrict access to a primary list, access to any list view that is based on that primary list is also restricted.                                                                                       |
-| \*These items appear only if you’re using an integrating product and have selected it in the Product list. \*\*These types appear only if the corresponding item is installed and registered. |                                                                                                                                                                                                                                              |
+| \*These items appear only if you're using an integrating product and have selected it in the Product list. \*\*These types appear only if the corresponding item is installed and registered. |                                                                                                                                                                                                                                              |
 
 Only main windows are listed if you select Windows. A main window is one you
-can open from a menu; it’s also referred to as a parent window or a primary
+can open from a menu; it's also referred to as a parent window or a primary
 window. Many windows that you open by clicking a button in a parent window
 are child windows. To deny access to a child window, deny access to the
 corresponding parent window.
@@ -1138,23 +1138,23 @@ window.
 #### Setting company access
 
 Granting company rights to individual users allows you to control which
-users have access to the companies you’ve created.
+users have access to the companies you've created.
 
 *Be sure to set company access using the steps in this procedure each time
 you do either of the following things:*
 
-**Create a new user record** If you don’t set access, the user won’t be able
+**Create a new user record** If you don't set access, the user won't be able
 to access any companies in Microsoft Dynamics GP.
 
-**Create a new company** If you don’t set access, no users will be able to
+**Create a new company** If you don't set access, no users will be able to
 access the company.
 
 If you marked the Copy Access from Company option in Microsoft Dynamics GP
-Utilities when you created a new company, you’ve already specified the users
+Utilities when you created a new company, you've already specified the users
 who will have access to this company. Complete this procedure within the
 User Access Setup window only to modify the settings you copied.
 
-After you’ve set access, each company that a user has access to will appear
+After you've set access, each company that a user has access to will appear
 in the Company Login window for that user.
 
 *LESSONUSER1, LESSONUSER2, and users with a status of Lesson User can only
@@ -1167,7 +1167,7 @@ have access to the lesson company.*
 
 2. From the Users list, select a user ID.
 
-All the companies you’ve set up are shown in the Company Name list. If the
+All the companies you've set up are shown in the Company Name list. If the
 user has a status of Lesson User, only the lesson company will appear in the
 list.
 
@@ -1176,7 +1176,7 @@ list.
 *If you do not have the necessary privileges, you cannot grant or remove
 access from a user that has a SQL Server login*
 
-When you’ve marked all the companies this user will access, repeat steps 2
+When you've marked all the companies this user will access, repeat steps 2
 and 3 to set access for other users, if necessary.
 
 1. To print the Company Access Report, showing company access information
@@ -1215,7 +1215,7 @@ make up a task.
 
 6. Select a category for the task.
 
-7. Select a product from the Product list. If you’re using integrating products
+7. Select a product from the Product list. If you're using integrating products
     with Microsoft Dynamics GP, they are displayed in the list in addition to
     Microsoft Dynamics GP.
 
@@ -1298,7 +1298,7 @@ each company. Complete this procedure each time you create a new company or
 a new user record.
 
 If you marked the Copy Access from Company option in Microsoft Dynamics GP
-Utilities when you created a new company, you’ve already set up user
+Utilities when you created a new company, you've already set up user
 security for this company. Complete this procedure using the User Security
 Setup window only to modify the settings you copied.
 
@@ -1314,13 +1314,13 @@ security roles for more information.*
 1. Open the User Security Setup window. (Administration \>\> Setup \>\> System
     \>\> User Security)
 
-2. In the User field, select the user ID of the person for whom you’re setting
-    security. Once you’ve selected a user ID, all the companies the user has
+2. In the User field, select the user ID of the person for whom you're setting
+    security. Once you've selected a user ID, all the companies the user has
     access to are shown in the Company list.
 
 3. In the Company list, select a company. The security you set for a company
     will apply to the user only when he or she accesses that company. Once
-    you’ve selected a Company, all the security roles are listed.
+    you've selected a Company, all the security roles are listed.
 
 4. Mark all the roles that the user should be assigned to.
 
@@ -1354,7 +1354,7 @@ associated with that report.
 
 3. In the Copy User Security window, a list of companies that the selected user
     has access to is displayed. Mark the companies that you want to copy this
-    user’s security settings to.
+    user's security settings to.
 
 4. Choose OK to save your changes and close the Copy User Security window.
 
@@ -1363,10 +1363,10 @@ associated with that report.
 #### Activating user security
 
 To begin using individual security, you be sure that the Security option in
-the Company Setup window is marked. User security doesn’t function unless
+the Company Setup window is marked. User security doesn't function unless
 you activate it in that window.
 
-*User security doesn’t affect passwords you’ve set up to allow access to
+*User security doesn't affect passwords you've set up to allow access to
 Microsoft Dynamics GP, or to grant permission to perform certain accounting
 tasks such as overriding a price.*
 
@@ -1397,15 +1397,15 @@ users unlimited access to the company.
 After you install an integrating product, you must give users security
 access to that integrating product before it can be used. You may have to
 modify existing security tasks and roles or create new security tasks and
-roles before you can modify a user’s security settings. However, depending
+roles before you can modify a user's security settings. However, depending
 on the integrating product, there already may be default security tasks and
-roles that you can use when you modify a user’s security settings in the
+roles that you can use when you modify a user's security settings in the
 User Security Setup window.
 
 #### Setting access to alternate/modified forms and reports
 
 Alternate forms and reports are forms and reports that have been
-incorporated into integrating products that you’ve installed. Modified forms
+incorporated into integrating products that you've installed. Modified forms
 and reports are existing Microsoft Dynamics GP forms and reports that have
 been modified using Report
 
@@ -1437,12 +1437,12 @@ and reports to original settings:* for more information.
 
 2. Enter an ID and description.
 
-3. Select a product from the Product list. If you’re using integrating products with Microsoft Dynamics GP, they are displayed in the list in addition to Microsoft Dynamics GP.
+3. Select a product from the Product list. If you're using integrating products with Microsoft Dynamics GP, they are displayed in the list in addition to Microsoft Dynamics GP.
 
 1. In the Type list, select the type of item you want to set access for.
 
 2. Select the series you want to set access for. This will narrow down the list
-    of windows or reports in the list if you’re setting access to specific
+    of windows or reports in the list if you're setting access to specific
     windows or reports.
 
 3. Select the integrating product in the Select list. The alternate forms or
@@ -1466,7 +1466,7 @@ and reports to original settings:* for more information.
 
 2. Enter an ID and description.
 
-3. Select a product from the Product list. If you’re using integrating products
+3. Select a product from the Product list. If you're using integrating products
     with Microsoft Dynamics GP, they are displayed in the list in addition to
     Microsoft Dynamics GP.
 
@@ -1490,7 +1490,7 @@ and reports to original settings:* for more information.
 2. Select the ID, Product, Type and Series you want to view.
 
 3. Mark Display Selected. The Alternate/Modified Forms and Reports List will
-    display only the options selected for the criteria above. Changes can’t be
+    display only the options selected for the criteria above. Changes can't be
     made when this box is marked.
 
 The Show/Hide button above the list will expand or collapse the list.
@@ -1530,7 +1530,7 @@ Dynamics GP data that is displayed in data connections and Excel reports.
 
 A Default SQL Server Fixed Database role that corresponds with each data
 connection and Excel report is created during the installation of Microsoft
-Dynamics GP. Each role begins with “rpt_” and contains SELECT access to the
+Dynamics GP. Each role begins with "rpt_" and contains SELECT access to the
 Microsoft Dynamics GP data for the data connection or report that the role
 corresponds to.
 
@@ -1543,7 +1543,7 @@ deploy the excel reports.
 
 **To set up security for viewing data connections and Microsoft Excel reports:**
 
-1. Create new local groups on the server where the data connections and Microsoft Excel reports are deployed. For more information, refer to *Chapter 40, “Excel report deployment,”* and your Windows Server
+1. Create new local groups on the server where the data connections and Microsoft Excel reports are deployed. For more information, refer to *Chapter 40, "Excel report deployment,"* and your Windows Server
 documentation.
 
 1. Assign each local group to the default SQL Server fixed database role that
@@ -1563,7 +1563,7 @@ Reporting Services reports.
 Default SQL Server roles are created when you install Microsoft Dynamics GP.
 Each
 
-SQL Server role that begins with “rpt_” has enough access to view the
+SQL Server role that begins with "rpt_" has enough access to view the
 Microsoft
 
 Dynamics GP data that is displayed in a report. To view a SQL Server
@@ -1615,9 +1615,9 @@ services server to use Kerberos authentication on SQL Server.
 
 Many of the processes in Microsoft Dynamics GP, such as posting or printing,
 require that the user performing the process be able to access multiple
-windows and reports. If you deny a user access to an item that’s part of a
-process, the user won’t be able to complete that process. A message may
-appear stating that the user isn’t privileged to open the resource. However,
+windows and reports. If you deny a user access to an item that's part of a
+process, the user won't be able to complete that process. A message may
+appear stating that the user isn't privileged to open the resource. However,
 Microsoft Dynamics GP may not always display a message indicating the
 problem; the process may simply not be completed.
 
@@ -1720,22 +1720,22 @@ changes to be saved.
 **Warning Before** A warning will be displayed and access to that field will
 be denied.
 
-**Lock Field** You can’t use or modify the field.
+**Lock Field** You can't use or modify the field.
 
 **Disable Field** The field will be displayed but it will not be available.
 
-**Hide Field** The field won’t be displayed.
+**Hide Field** The field won't be displayed.
 
 **Password Window** You must to enter a password before access to the window
 is permitted.
 
-**Disable Window** Enter the system administrator’s password to have access
+**Disable Window** Enter the system administrator's password to have access
 to the window.
 
 **Password Form** Users or classes must enter the correct password before
 access to the form is permitted.
 
-**Disable Form** You must enter the system administrator’s password to
+**Disable Form** You must enter the system administrator's password to
 modify the form.
 
 #### Resource Explorer
@@ -1802,11 +1802,11 @@ This information is divided into the following sections:
 - *Adding shortcuts to an existing user class folder*
 
 For general information about the shortcut bar and creating shortcuts, see
-your System User’s Guide (Help \>\> Contents \>\> Using The System).
+your System User's Guide (Help \>\> Contents \>\> Using The System).
 
 #### Shortcuts and user classes
 
-The system administrator’s or Microsoft Dynamics GP system administrator’s
+The system administrator's or Microsoft Dynamics GP system administrator's
 shortcuts include a User Classes folder by default. For each user class in
 the Microsoft Dynamics GP system, a corresponding folder is located inside
 the User Classes folder. When you create a new user class, the corresponding
@@ -1820,13 +1820,13 @@ window.
 
 When you assign a user to a user class, the corresponding user class folder
 appears in the list of shortcuts in the navigation pane for that user. User
-Classes folders can’t be renamed or repositioned by non-administrative
+Classes folders can't be renamed or repositioned by non-administrative
 users.
 
 #### Assigning shortcuts to a new user class folder
 
 You can organize shortcuts to user-specific tasks by grouping them into user
-class folders in the list of shortcuts in the navigation pane. Users can’t
+class folders in the list of shortcuts in the navigation pane. Users can't
 delete or modify a user class folder that appears in their list of
 shortcuts.
 
@@ -1873,7 +1873,7 @@ Dynamics GP system. You can track activities for each user, for each
 company, or both.
 
 For day-to-day activity monitoring, use the activity tracking procedures in
-the System Administrator’s Guide.
+the System Administrator's Guide.
 
 This information is divided into the following sections:
 
@@ -1936,7 +1936,7 @@ allows you to see the length of time that a user was logged into a company.
 
 #### Setting up activity tracking
 
-Using the Activity Tracking Setup window, you’ll mark the activities you
+Using the Activity Tracking Setup window, you'll mark the activities you
 want Microsoft Dynamics GP to track for each user in each company they
 access.
 
@@ -1973,7 +1973,7 @@ detail* .
     activities.
 
 6. In the Company Name list, mark the box in the Activate column next to the
-    companies for which you want to track this user’s activities.
+    companies for which you want to track this user's activities.
 
 7. Repeat steps 5 and 6 for the other users you want to track activity for.
 
@@ -1981,7 +1981,7 @@ All of the users selected will have the same activities tracked.
 
 1. Choose OK to save your entries and close the window.
 
-2. Review the activity tracking information you’ve entered using the Activity
+2. Review the activity tracking information you've entered using the Activity
     Tracking Setup Report. While the Activity Tracking Setup window is
     displayed, choose File \>\> Print.
 
@@ -1991,11 +1991,11 @@ Use the Remove Activity Tracking Detail window to remove records from the
 Activity Tracking Table, print a report that shows the information in the
 table, or both. All activities you track are recorded in the Activity
 Tracking Table. The size of the table can increase very quickly, even if you
-track only a few activities, so you’ll need to remove data from the table
+track only a few activities, so you'll need to remove data from the table
 periodically.
 
 > [!IMPORTANT]
-> Be sure to back up your company’s data before removing activity tracking
+> Be sure to back up your company's data before removing activity tracking
 detail.
 
 **To remove activity tracking detail:**
@@ -2012,7 +2012,7 @@ detail.
         each specific activity you want to remove or print a report for.
 
     - To remove or print all activity detail listed for an activity type,
-        choose Mark All. Choose Unmark All if you don’t want to remove or print
+        choose Mark All. Choose Unmark All if you don't want to remove or print
         all activity detail.
 
 4. Select which range type of activity detail.
@@ -2034,49 +2034,49 @@ addresses, the payment terms your business uses, the way posting reports are
 printed, and the format of your accounts. The information is organized in
 the order in which you should complete it.
 
-Company setup entries you make apply only to the company you’re using when
-you enter the information. If, for instance, you’ve created records for
+Company setup entries you make apply only to the company you're using when
+you enter the information. If, for instance, you've created records for
 three companies and are ready to specify information about each, you must be
-sure that you’re applying that information to the correct company.
+sure that you're applying that information to the correct company.
 
 For additional information about setting up Microsoft Dynamics GP, detailed
 reference information is provided in help. Press F1 to view detailed
-reference information about the window that’s currently displayed.
+reference information about the window that's currently displayed.
 
 The following information is discussed:
 
-- *Chapter 10, “Companies,”* explains how to specify where a new company’s
+- *Chapter 10, "Companies,"* explains how to specify where a new company's
     data will be stored and how to use default information for this company.
 
-- *Chapter 11, “Accounts,”* contains information about setting up an account
+- *Chapter 11, "Accounts,"* contains information about setting up an account
     format and chart of accounts for each company.
 
-- *Chapter 12, “Fiscal periods,”* explains how to verify the default fiscal
+- *Chapter 12, "Fiscal periods,"* explains how to verify the default fiscal
     periods and make changes if necessary, and how to create fiscal periods.
 
-- *Chapter 13, “Posting setup,”* describes posting procedures and the
+- *Chapter 13, "Posting setup,"* describes posting procedures and the
     terminology needed to understand posting.
 
-- *Chapter 14, “Shipping methods and payment terms,”* explains how to set up
+- *Chapter 14, "Shipping methods and payment terms,"* explains how to set up
     additional shipping methods and payment terms, and how to make changes to
     existing ones.
 
-- *Chapter 15, “Financial information,”* describes how to set up currencies,
+- *Chapter 15, "Financial information,"* describes how to set up currencies,
     bank records, and checkbooks for each company.
 
-- *Chapter 16, “E-mail setup for documents,”* describes how to set up e-mail
+- *Chapter 16, "E-mail setup for documents,"* describes how to set up e-mail
     functionality for each company.
 
-- *Chapter 17, “Document attachment setup,”* describes how to set up document
+- *Chapter 17, "Document attachment setup,"* describes how to set up document
     attachment functionality for each company.
 
-- *Chapter 18, “Intrastat setup,”* explains how to set up your system to track
+- *Chapter 18, "Intrastat setup,"* explains how to set up your system to track
     statistics for Intrastat, the method for collecting statistics on the trade
     of goods between European Union (EU) countries.
 
 ### Chapter 10: Companies
 
-This information explains how to specify where a new company’s data will be
+This information explains how to specify where a new company's data will be
 stored and how to use default information for this company.
 
 This information is divided into the following sections:
@@ -2117,14 +2117,14 @@ within a single folder on your computer or network, or in a single database.
 
 The process for creating your first company varies, depending on whether you
 installed the sample company, Fabrikam, Inc. If you installed the sample
-company, that company is considered the “first company.” To set up your own
+company, that company is considered the "first company." To set up your own
 company, see *Creating an additional company in Microsoft Dynamics GP* .
 
 Your first company must be created using Microsoft Dynamics GP Utilities.
 For more information on Microsoft Dynamics GP Utilities, refer to your
 Microsoft Dynamics GP desktop install and upgrade information.
 
-Once you’ve created your first company, see *Creating an additional company
+Once you've created your first company, see *Creating an additional company
 in Microsoft Dynamics GP* to create more companies.
 
 **To set up your first company:**
@@ -2158,13 +2158,13 @@ The name of the company will be displayed on the toolbar.
 
 #### Creating an additional company in Microsoft Dynamics GP
 
-If you’re using Microsoft Dynamics GP to track information for multiple
+If you're using Microsoft Dynamics GP to track information for multiple
 companies, you can copy user access information to additional companies you
 create. Be sure to completely set up your first company and assign user
 access before creating subsequent companies.
 
 You can copy two types of setup information from any other company
-(including the sample company) to the new company you’re setting up:
+(including the sample company) to the new company you're setting up:
 
 - The users who will have access to this company, which you also can set up in
     the User Access Setup window.
@@ -2175,10 +2175,10 @@ You can copy two types of setup information from any other company
 We recommend installing the default chart of accounts, shipping methods, and
 payment terms, unless you plan to import that information from your previous
 accounting system. Using the default entries will streamline the setup
-process. You’ll be able to make modifications to the default entries.
+process. You'll be able to make modifications to the default entries.
 
-You’ll use the Create Company window to create additional companies. How you
-create additional companies will vary based on the type of database you’re
+You'll use the Create Company window to create additional companies. How you
+create additional companies will vary based on the type of database you're
 using.
 
 **To create an additional company in Microsoft Dynamics GP:**
@@ -2208,10 +2208,10 @@ database and system functions within Microsoft Dynamics GP Utilities.*
     this company, this name can be changed in the Company Setup window, if
     necessary.
 
-4. Mark to install shipping methods and payment terms (optional). If you don’t
+4. Mark to install shipping methods and payment terms (optional). If you don't
     mark this option, you can set up shipping methods and payment terms by
-    following the procedures in *Chapter 14, “Shipping methods and payment
-    terms.”*
+    following the procedures in *Chapter 14, "Shipping methods and payment
+    terms."*
 
 5. To load a default chart of accounts, mark the Load Default Data option, then
     select a business type and an industry type (optional).
@@ -2234,7 +2234,7 @@ be copied.
 
 #### Setting access to a new company
 
-You’ll use the User Access Setup window to assign access to the company or
+You'll use the User Access Setup window to assign access to the company or
 companies you just created to specific users.
 
 **To set access to a new company:**
@@ -2258,12 +2258,12 @@ You can access the new company from the Company Login window.
 
 2. In the Company Login window, select the appropriate company, then choose OK.
 
-To verify the company you’re accessing, check the Microsoft Dynamics GP
+To verify the company you're accessing, check the Microsoft Dynamics GP
 application window status bar; the current company is displayed there.
 
 #### Setting up company address information
 
-Once you’ve created a company, you’ll need to enter additional information
+Once you've created a company, you'll need to enter additional information
 for it. Use the Company Setup window to enter addresses for the selected
 company.
 
@@ -2279,12 +2279,12 @@ which you can print on those documents instead.
 
     ![A screenshot](media/3e6c25f3ba1177aec9907807195a88cc.jpg)
 
-1. In the Address ID field, enter an ID for the company’s main address.
+1. In the Address ID field, enter an ID for the company's main address.
 
-2. Enter the company’s main address.
+2. Enter the company's main address.
 
     > [!NOTE]
-    > Skip the tax, user-defined and security fields for now; you’ll return to this window after you’ve set up additional options for your company and you can finish entering the other information then. The tax information you need to enter for your company differs depending on what countries or regions you do business in. In addition, you’ll need to set up tax details and tax schedules before assigning them to your company using the Company Setup window.
+    > Skip the tax, user-defined and security fields for now; you'll return to this window after you've set up additional options for your company and you can finish entering the other information then. The tax information you need to enter for your company differs depending on what countries or regions you do business in. In addition, you'll need to set up tax details and tax schedules before assigning them to your company using the Company Setup window.
 
 1. To enter addresses for additional locations, departments or contacts, choose
     the Address button to display the Company Addresses Setup window.
@@ -2296,10 +2296,10 @@ which you can print on those documents instead.
 
 4. Choose Save to save the address.
 
-5. Repeat steps 5 through 7 for additional addresses. When you’ve finished
+5. Repeat steps 5 through 7 for additional addresses. When you've finished
     entering addresses, close the window.
 
-6. In the Company Setup window, choose OK to save the addresses you’ve entered.
+6. In the Company Setup window, choose OK to save the addresses you've entered.
 
 7. To print a list of the company settings, open the Company Setup window; then
     choose File \>\> Print.
@@ -2307,7 +2307,7 @@ which you can print on those documents instead.
     The Company Settings List is printed, showing information that was entered using the Company Setup window. You also can print this report using the Setup Reports window (Administration \>\> Reports \>\> Company \>\> Setup).
 
 1. To print a Company Addresses Report showing information for all the
-    addresses you’ve set up for this company, use the Company Setup Report
+    addresses you've set up for this company, use the Company Setup Report
     Options window.
 
 #### Setting up company options
@@ -2332,8 +2332,8 @@ calculates taxes at the point of exchange, using the shipping method
 assigned to a transaction to determine the point of exchange. The shipping
 method will determine which tax schedule appears as a default schedule for
 the transaction. If you decided not to use the shipping method to determine
-the default tax schedule, the tax schedule assigned to the vendor’s purchase
-address or the customer’s ship to address will be the default tax schedule.
+the default tax schedule, the tax schedule assigned to the vendor's purchase
+address or the customer's ship to address will be the default tax schedule.
 
 **Calculate Terms Discount Before Taxes** Mark this option to apply taxes
 only to the discounted amount, regardless of when the payment is actually
@@ -2348,13 +2348,13 @@ codes and Intrastat entry windows become available.
 payment distributions entered on the same transaction as if the document and
 payment were entered as separate transactions. You will be able to enter
 multiple distributions with the same distribution type and account. If you
-don’t mark the option, the distributions that are of the same type with the
+don't mark the option, the distributions that are of the same type with the
 same account number will be combined.
 
-**Merge Trade Discount and Markdown Distributions in Sales** Mark this option to merge the trade discount and markdown distributions with the sales distributions. If you don’t mark this option, the trade discounts and markdown distributions will be separated from the sales distribution.
+**Merge Trade Discount and Markdown Distributions in Sales** Mark this option to merge the trade discount and markdown distributions with the sales distributions. If you don't mark this option, the trade discounts and markdown distributions will be separated from the sales distribution.
 
 **Merge Trade Discount Distributions in Purchasing** Mark this option 
-to merge the trade discount distributions with the purchase distributions. If you didn’t mark this option, the trade discounts and markdown distributions will be separated from the sales distribution.
+to merge the trade discount distributions with the purchase distributions. If you didn't mark this option, the trade discounts and markdown distributions will be separated from the sales distribution.
 
 **Calculate Tax Rebates** Mark this option to allow correcting tax amounts
 for a transaction with a terms discount.
@@ -2377,31 +2377,31 @@ Order Processing, Receivables Management, Invoicing, Payables Management and
 Purchase Order Processing.
 
 **Enable Reverse Charge Taxes** Mark to enter reverse charge tax detail IDs
-in the Tax Detail Maintenance window. You’ll be able to assign reverse
+in the Tax Detail Maintenance window. You'll be able to assign reverse
 charge tax details to transactions in Receivings Management, Payables
 Management, Purchase Order Processing, Sales Order Processing and Invoicing.
 Reverse charge tax information also will be printed on tax reports.
 
 **Calculate Taxes in General Ledger** Mark this option to calculate taxes in
-General Ledger. You’ll be able to use the Tax Entry window to enter taxable
-transactions that can’t be entered in Payables Management, Receivables
+General Ledger. You'll be able to use the Tax Entry window to enter taxable
+transactions that can't be entered in Payables Management, Receivables
 Management, Purchase Order Processing, or Sales Order Processing. For
 example, a taxable reimbursement to an employee could be entered in General
 Ledger, rather than in Payables Management.
 
 **Allow Summary-Level Tax Edits** Mark this option to allow edits to tax
-information in the tax summary window. Summary tax edits won’t change the
-taxes calculated at the detail level. If this option isn’t marked, you will
+information in the tax summary window. Summary tax edits won't change the
+taxes calculated at the detail level. If this option isn't marked, you will
 have to edit tax information using the tax detail entry windows.
 
-**Require Tax Detail Totals to Match the Pre-Tax Amount** Mark to require the pre-tax amount to be fully distributed among the tax details of the transaction. When tax details are required to match the pre-tax amount, you’ll have to assign tax schedules so taxes are calculated or enter a tax detail during transaction entry so the goods value matches pre-tax amount.
+**Require Tax Detail Totals to Match the Pre-Tax Amount** Mark to require the pre-tax amount to be fully distributed among the tax details of the transaction. When tax details are required to match the pre-tax amount, you'll have to assign tax schedules so taxes are calculated or enter a tax detail during transaction entry so the goods value matches pre-tax amount.
 
 When this option is marked, you are required to enter a zero percent tax
 detail in the Tax Detail for System Processes field for receivables and
 payables documents that are automatically generated within the system.
 
 The pre-tax amount is the sale or purchase amount (less any trade discount)
-plus freight and miscellaneous charges. If the module you’re working with is
+plus freight and miscellaneous charges. If the module you're working with is
 set up to calculate terms discounts before taxes, the discount available
 amount is deducted from the pre-tax amount.
 
@@ -2414,14 +2414,14 @@ governmental VAT reporting requirements.
 
 **Enable EU Transaction Tracking** Mark this option to indicate whether a
 transaction is an EU transaction without using Intrastat Statistics. The
-vendor’s or customer’s tax registration number will be printed on documents.
+vendor's or customer's tax registration number will be printed on documents.
 
 **Enable DDR and European Electronic Funds Transfer** Mark this option to enter electronic funds transfers for manual payments and computer checks in Payables Management, and to set up electronic funds transfer information for your checkbooks, vendors and customers.
 
 If you mark this option, you must use the Checkbook Maintenance Window
 (Financial \>\> Cards \>\> Financial \>\> Checkbook) to assign a
 cash-in-transit account for an existing checkbook. For more information,
-refer to the “EFT checkbook setup” chapter in the Electronic Banking
+refer to the "EFT checkbook setup" chapter in the Electronic Banking
 documentation.
 
 **Enable Canadian Tax Detail** Mark this option to be able to select the tax
@@ -2436,7 +2436,7 @@ option* .
     information, see *Specifying posting report options* .
 
 2. Mark to display the posting number for the fiscal year or for the fiscal
-    period. This Display Posting Number Per option is available only if you’ve
+    period. This Display Posting Number Per option is available only if you've
     marked Enable Posting Numbers in General Ledger.
 
 3. Choose OK to return to the Company Setup window.
@@ -2444,7 +2444,7 @@ option* .
 #### Setting up company Internet information
 
 Microsoft Dynamics GP tracks Internet-related information about your
-company, such as e-mail addresses, Web page URLs, and FTP sites. If you’ve
+company, such as e-mail addresses, Web page URLs, and FTP sites. If you've
 set up multiple addresses for your company, you can track Internet
 information for each address. Use the Internet Information window to set up
 company Internet information.
@@ -2456,7 +2456,7 @@ company Internet information.
 
 2. In the Select Information for field, select Company.
 
-The current company—the company you’re currently logged in to—is displayed
+The current company—the company you're currently logged in to—is displayed
 in the Company ID field.
 
 1. In the Address ID field, enter or select an address.
@@ -2493,7 +2493,7 @@ employees, customers, salespeople, vendors, and items, as well as companies.
 
     ![A screenshot](media/ad2424ad5ab75881bffc7ef27b633f1c.jpg)
 
-1. In the Label 1 field, enter text to describe the information you’ll track in
+1. In the Label 1 field, enter text to describe the information you'll track in
     the first field in the Internet Information window.
 
 2. Repeat step 2 for the remaining labels.
@@ -2504,7 +2504,7 @@ employees, customers, salespeople, vendors, and items, as well as companies.
 
 Microsoft Dynamics GP provides two user-defined fields in the Company Setup
 window that you can use to enter additional information about your company.
-For example, you might want to enter your company’s slogan, or other
+For example, you might want to enter your company's slogan, or other
 information about the company that you want to track.
 
 If your company is located in Europe, you must use the User Defined 1 field
@@ -2595,7 +2595,7 @@ This information is divided into the following sections:
 When you installed Microsoft Dynamics GP, you specified an account
 framework. The account framework applies to all companies in your Microsoft
 Dynamics GP system, and represents the maximum length of your accounts,
-number of segments, and segment lengths. The account framework can’t be
+number of segments, and segment lengths. The account framework can't be
 changed.
 
 > [!NOTE]
@@ -2612,15 +2612,15 @@ Unlike the account framework, you can change the account format for an
 individual company, with some restrictions.
 
 - You can shorten one or more segments of the account format only if you
-    haven’t set up a chart of accounts yet.
+    haven't set up a chart of accounts yet.
 
-To shorten the format if you’ve entered your chart of accounts but haven’t
+To shorten the format if you've entered your chart of accounts but haven't
 entered transactions, you must clear data from the Account Master Table. For
 information on clearing data, refer to Chapter 13 of your System
 Administrator documentation (Help \>\> Contents \>\> select System
 Administration). Then you can set up a different account format and reenter
-your chart of accounts. Once you’ve entered transactions, including
-beginning balances, you can’t shorten the account length or reduce the
+your chart of accounts. Once you've entered transactions, including
+beginning balances, you can't shorten the account length or reduce the
 number of segments.
 
 - You can lengthen one or more segments in the account format, up to the
@@ -2631,7 +2631,7 @@ the extra space or spaces will be inserted in the segment you specify, at
 the right side. For example, you could increase the first account segment
 from four characters to five. Your existing accounts still would contain the
 same characters, but with the added blank space: 6XAA__-1762. Blank spaces
-are added only to existing accounts, since these accounts can’t be changed;
+are added only to existing accounts, since these accounts can't be changed;
 however, you can use the additional digits in any new accounts you add to
 the chart of accounts.
 
@@ -2639,17 +2639,17 @@ If you add segments to the current account format, the new segments will
 appear as blank segments at the end of each account.
 
 Use the Account Definition Setup List, printed during installation, to
-verify that the values you’ll enter for the number of segments and segment
-lengths don’t exceed your account framework maximums.
+verify that the values you'll enter for the number of segments and segment
+lengths don't exceed your account framework maximums.
 
 #### Designing an account format
 
-It’s important that the account format be designed to meet both the current
-and future needs of the company you’re setting up, since the changes you can
-make to the account format after you’ve started using Microsoft Dynamics GP
+It's important that the account format be designed to meet both the current
+and future needs of the company you're setting up, since the changes you can
+make to the account format after you've started using Microsoft Dynamics GP
 are limited.
 
-You can continue using the format you’ve used with your previous accounting
+You can continue using the format you've used with your previous accounting
 system, or set up a new one. To create a new format, plan the different
 categories of information you want each segment of the account to represent.
 For example, if you want to use one segment each for the location,
@@ -2706,7 +2706,7 @@ appear as default entries in the Account Format Setup window.
 1. Enter the account length.
 
     > [!NOTE]
-    > You won’t be able to shorten the account length after you’ve entered transactions.
+    > You won't be able to shorten the account length after you've entered transactions.
 
 1. Enter the number of segments in the accounts.
 
@@ -2720,7 +2720,7 @@ appear as default entries in the Account Format Setup window.
     - If a segment will contain only numbers, select Standard.
 
     - If a segment will contain letters, select one of the Expansion
-        selections. If you’re unsure what width will work best, set up a width
+        selections. If you're unsure what width will work best, set up a width
         and then view the account in the Account Maintenance window (Financial
         \>\> Cards \>\> Financial \>\> Account). You can return to the Account
         Format Setup window to adjust the width as needed.
@@ -2728,14 +2728,14 @@ appear as default entries in the Account Format Setup window.
 5. From the Main Segment ID list, select the main segment from the list of
     segment names you entered in step 4. The main segment will be used on
     financial reports to sort your accounts. A typical main segment is the one
-    used to indicate whether the account is an asset, liability, owners’ equity,
+    used to indicate whether the account is an asset, liability, owners' equity,
     revenue, or expense account.
 
 6. In the Separate with field, enter the character that will appear between the
     account segments anywhere an account is displayed.
 
 You can use any character: a dash or asterisk, a number or a letter.
-However, it’s best to use a character that won’t be confused with the
+However, it's best to use a character that won't be confused with the
 characters in the account itself.
 
 1. Choose OK in the Account Format Setup window to save the format and close
@@ -2747,7 +2747,7 @@ characters in the account itself.
 
 #### Checking links for the Account Master table group
 
-If you change the main segment ID after you’ve entered a chart of accounts,
+If you change the main segment ID after you've entered a chart of accounts,
 you must check links for the Account Master table group, using the Check
 Links window.
 
@@ -2769,21 +2769,21 @@ When you create a new company, you have the option to load a default chart
 of accounts. You may want to use a default chart of accounts for the
 following reasons:
 
-- The chart of accounts we’ve provided reflect sound accounting practices.
+- The chart of accounts we've provided reflect sound accounting practices.
 
 - Extensive research was done to determine the most commonly used account
-    types for the industries we’ve included.
+    types for the industries we've included.
 
 - Even if changes need to be made after a default chart of accounts is copied
     for the company, setup time will be greatly reduced by using one of the
     charts of accounts provided with Microsoft Dynamics GP.
 
-The default charts of accounts we’ve provided are designed to be accurate
+The default charts of accounts we've provided are designed to be accurate
 estimates of typical business practices. However, we recommend that you
 review the accounts and make any necessary additions or changes. To add
 accounts, see *Setting up a posting account in Microsoft Dynamics GP* . To
 make changes to existing accounts, see *Modifying a posting account* to
-delete accounts you don’t need, see *Deleting a posting account .*
+delete accounts you don't need, see *Deleting a posting account .*
 
 #### Printing a list of posting accounts in Microsoft Dynamics GP
 
@@ -2821,9 +2821,9 @@ that have been set up for the current company.
 
 #### Account aliases
 
-An account alias is a “short name” assigned to an account. You can enter an
+An account alias is a "short name" assigned to an account. You can enter an
 account alias instead of the entire account in any Microsoft Dynamics GP
-window where you enter accounts. For example, if you’ve set up the Cash
+window where you enter accounts. For example, if you've set up the Cash
 Operating account for your main branch as account 1200-0000-2100-0000-0000,
 you could assign an alias such as \$-CO.
 
@@ -2834,30 +2834,30 @@ account at any time using the appropriate account maintenance window.
 #### Understanding account segments
 
 You can use the Account Segment Setup window to enter segment IDs and
-descriptions for each account segment number that’s used in one or more
+descriptions for each account segment number that's used in one or more
 posting accounts. You also can set up account segments as you set up posting
 accounts.
 
-If you don’t enter a description when you set up posting accounts, the
+If you don't enter a description when you set up posting accounts, the
 segment descriptions will be combined to form a default account description.
 The segment descriptions will appear on reports and financial statements, if
 you select to print them for specific account segments.
 
-For example, if you’ve created accounts for three stores and you use the
-first segment to differentiate the accounts for each store’s location, you
+For example, if you've created accounts for three stores and you use the
+first segment to differentiate the accounts for each store's location, you
 could use segment definitions to identify segment numbers 100, 200, and 300
 as North Store, South Store, and Downtown Store.
 
-If you’re using Inventory Control, you can use one of the segments to
+If you're using Inventory Control, you can use one of the segments to
 specify sites. When you post transactions that affect inventory—such as
 sales transactions that reduce inventory at a specific site—the appropriate
 segment for the site is substituted.
 
-For example, suppose you‘re entering cash, accounts receivable, and rent
+For example, suppose you're entering cash, accounts receivable, and rent
 expense accounts in your chart of accounts and you want to monitor each
 account for each store. You can set up separate accounts for each store.
 When you print financial statements, you can sort the accounts by the first
-segment, separating each store’s accounts, or by the segment identifying the
+segment, separating each store's accounts, or by the segment identifying the
 type of account, such as cash or accounts receivable.
 
 If the accounts were sorted by store—the first segment—they would appear in
@@ -2908,7 +2908,7 @@ up accounts.
 3. Enter or select an existing segment number.
 
 4. Enter a description for the account segment. If you include this segment in
-    an account number and don’t specify an account description, this description
+    an account number and don't specify an account description, this description
     will be combined with other account segment descriptions to form the account
     description.
 
@@ -2916,10 +2916,10 @@ up accounts.
 
 #### Setting up a posting account in Microsoft Dynamics GP
 
-Use the Account Maintenance window to set up posting accounts that weren’t
+Use the Account Maintenance window to set up posting accounts that weren't
 included in the default chart of accounts you loaded. To make changes to
 existing accounts, see *Modifying a posting account* ; to delete accounts
-you don’t need, see *Deleting a posting account* .
+you don't need, see *Deleting a posting account* .
 
 **To set up a posting account in Microsoft Dynamics GP:**
 
@@ -2931,7 +2931,7 @@ you don’t need, see *Deleting a posting account* .
 
 For more information about account aliases, see *Account aliases* .
 
-1. If you don’t want users to enter this account on transaction distributions
+1. If you don't want users to enter this account on transaction distributions
     unless it is selected as a default posting account, unmark the Allow Account
     Entry option.
 
@@ -2972,7 +2972,7 @@ these selections work together.
     windows for each selected series. (Hold down the SHIFT key to select
     multiple series.)
 
-2. If you’re using Multicurrency Management, choose the Currency button and
+2. If you're using Multicurrency Management, choose the Currency button and
     assign currencies to the account. You also can select which accounts to
     revalue and whether to post the revaluation results to the account or to the
     financial offset. For information, see Help \>\> Index \>\> Select Account
@@ -2980,7 +2980,7 @@ these selections work together.
 
 3. Choose Save to save the account.
 
-4. To print a Posting Accounts List for the account that’s displayed, choose
+4. To print a Posting Accounts List for the account that's displayed, choose
     File \>\> Print. You also can print this report for all accounts using the
     Chart of Accounts Report window.
 
@@ -3002,9 +3002,9 @@ the Account Maintenance window.
 
 #### Deleting a posting account
 
-If you don’t need one or more posting accounts, you can delete them using
-the Account Maintenance window. If you’ve already entered transactions for
-the posting account, you can’t delete them using this procedure.
+If you don't need one or more posting accounts, you can delete them using
+the Account Maintenance window. If you've already entered transactions for
+the posting account, you can't delete them using this procedure.
 
 See the General Ledger documentation for more information about posting.
 
@@ -3046,34 +3046,34 @@ your business uses. You may want to make changes if the calculated day falls
 during a weekend, for example.
 
 Three fiscal periods per fiscal year may have the same starting date. Extra
-periods are typically used for closing adjustments, auditors’ adjustments,
+periods are typically used for closing adjustments, auditors' adjustments,
 and post-audit transactions.
 
 When Microsoft Dynamics GP calculates fiscal periods, the last period may be
-longer than the rest. If the number of days in the year can’t be divided
+longer than the rest. If the number of days in the year can't be divided
 equally by the number of fiscal periods, the number of days per fiscal
 period is rounded down to the nearest day and any extra days are added to
 the last period. For example, if you enter 52 periods, periods 1 through 51
 will have 7 days and the 52nd period will have 8 days.
 
 *If you change the number of periods or the dates of the fiscal year and
-choose Calculate, any previous changes you’ve made in the scrolling window
+choose Calculate, any previous changes you've made in the scrolling window
 will be deleted. To avoid reentering that information, be sure that your
 periods are calculated correctly before entering period names.*
 
 If you installed the default fiscal periods provided with Microsoft Dynamics
-GP, they’ll be displayed when you open the Fiscal Periods Setup window. You
+GP, they'll be displayed when you open the Fiscal Periods Setup window. You
 also can print a list of fiscal periods by choosing File \>\> Print when the
 Fiscal Periods Setup window is displayed.
 
 **Closed fiscal periods**
 
-In Microsoft Dynamics GP, you can’t post to a period that has been closed in
+In Microsoft Dynamics GP, you can't post to a period that has been closed in
 the Fiscal Periods Setup window. If it is necessary to post to a closed
 period, you can simply open the period in the Fiscal Periods Setup window
 and post the transaction. If a recent period was closed during a year-end
 closing process, you can still post to that period as long as the period
-isn’t closed in the Fiscal Periods Setup window. Once you’ve completed
+isn't closed in the Fiscal Periods Setup window. Once you've completed
 period-end procedures, you can prevent future posting to that period by
 closing it in the Fiscal Periods Setup window.
 
@@ -3088,9 +3088,9 @@ individually, or you can open or close all selected origins at once.
 
 #### Setting up fiscal periods
 
-If you didn’t install default data, use the Fiscal Periods Setup window to
+If you didn't install default data, use the Fiscal Periods Setup window to
 set up historical and current fiscal periods for your company. You also can
-use this procedure to set up fiscal periods for a new year. (You won’t be
+use this procedure to set up fiscal periods for a new year. (You won't be
 able to post transactions in a new year until you create fiscal periods for
 that year.)
 
@@ -3104,15 +3104,15 @@ that year.)
 1. Enter the year.
 
 2. Enter the first day and last day of the fiscal year. The fiscal year can be
-    any length; it isn’t limited to the length of a calendar year.
+    any length; it isn't limited to the length of a calendar year.
 
-3. If you’re entering fiscal periods for a historical year, mark the Historical
+3. If you're entering fiscal periods for a historical year, mark the Historical
     Year check box.
 
 4. Enter the number of fiscal periods in the fiscal year. For example, if your
-    fiscal periods are quarterly, enter 4; if they’re monthly, enter 12.
+    fiscal periods are quarterly, enter 4; if they're monthly, enter 12.
 
-5. Choose Calculate to calculate each period’s first day and last day.
+5. Choose Calculate to calculate each period's first day and last day.
 
 The beginning date of each period will appear in the scrolling window. You
 can reenter information and recalculate the periods as many times as
@@ -3126,9 +3126,9 @@ necessary.
     Quarter 1 for Period 1.
 
     > [!NOTE]
-    > Skip the Series Closed columns for now. You’ll use those columns later, as part of your period-end procedures, to prevent further posting to a series after a period has been closed.
+    > Skip the Series Closed columns for now. You'll use those columns later, as part of your period-end procedures, to prevent further posting to a series after a period has been closed.
 
-1. Choose OK to save the fiscal period information you’ve entered and close the
+1. Choose OK to save the fiscal period information you've entered and close the
     window.
 
 #### Changing fiscal periods
@@ -3150,9 +3150,9 @@ Periods Setup window.
     window, if necessary.
 
     - If you make changes to your fiscal periods before entering beginning
-        balances, you don’t have to reconcile General Ledger.
+        balances, you don't have to reconcile General Ledger.
 
-    - Ιf you make changes to the dates of your fiscal periods after you’ve
+    - Ιf you make changes to the dates of your fiscal periods after you've
         entered beginning balances, you must reconcile General Ledger for the
         appropriate year. Reconciling will ensure that all transactions are
         correctly assigned to the periods in which they were entered.
@@ -3164,13 +3164,13 @@ system. A transaction is a record of an event, such as a purchase or sale,
 that is ultimately reflected in an asset, liability, expense, revenue, or
 equity account. Entering a transaction in Microsoft Dynamics GP is similar
 to making a journal entry in a manual accounting system—you have a record of
-the information, but it’s not permanent.
+the information, but it's not permanent.
 
 Posting is the process that transfers the transaction amounts to your
-general ledger. Getting the information there is important, because that’s
-the basis of your financial statements. However, it’s also important to be
+general ledger. Getting the information there is important, because that's
+the basis of your financial statements. However, it's also important to be
 able to trace the amounts back to the original transaction, if necessary.
-That’s where source document codes and audit trail codes come in.
+That's where source document codes and audit trail codes come in.
 
 This information is divided into the following sections:
 
@@ -3200,7 +3200,7 @@ This information is divided into the following sections:
 
 - *Posting in detail from subsidiary ledgers*
 
-- *Posting “to” and “through” General Ledger*
+- *Posting "to" and "through" General Ledger*
 
 - *Specifying posting settings*
 
@@ -3212,13 +3212,13 @@ This information is divided into the following sections:
 
 The audit trail is a collection of records that allows you to trace a
 transaction from any point in the Microsoft Dynamics GP system back to the
-location where it was originally entered. With the information you’ve
+location where it was originally entered. With the information you've
 entered about the transactions, you should be able to trace them from their
 originating point in Microsoft Dynamics GP to the actual source
 documents—such as invoices, checks, or receipts—that provided the basis for
 the transactions.
 
-When you trace the audit trail using posting journals, you’ll use two tools:
+When you trace the audit trail using posting journals, you'll use two tools:
 source document codes and audit trail codes. These tools allow you to track
 a transaction to its origin by two separate paths:
 
@@ -3232,12 +3232,12 @@ a transaction to its origin by two separate paths:
 
 Source document codes are general in nature, and are useful for tracking the
 type of journal or entry you should examine for more information about a
-transaction. They don’t indicate which journal a given transaction appears
-on, however. Source document codes are particularly useful if you’re
+transaction. They don't indicate which journal a given transaction appears
+on, however. Source document codes are particularly useful if you're
 entering all transactions in General Ledger because you can assign a source
-document code that identifies the type of transaction you’re entering. For
+document code that identifies the type of transaction you're entering. For
 example, you might use the source document code GJ if the transaction
-represents a general journal entry. You’ll find that source document codes
+represents a general journal entry. You'll find that source document codes
 are more flexible, but may be less precise, than audit trail codes.
 
 Microsoft Dynamics GP provides a limited number of commonly used source
@@ -3291,8 +3291,8 @@ Microsoft Dynamics GP, set them up using the Source Document Setup window.
 
 You can change the description for existing source document codes at any
 time using the Source Document Setup window. To delete a source document
-code once it’s been assigned to an audit trail code, you must first remove
-the source document code from any origins it’s assigned to in the Audit
+code once it's been assigned to an audit trail code, you must first remove
+the source document code from any origins it's assigned to in the Audit
 Trail Codes Setup window.
 
 **To modify a source document code:**
@@ -3310,7 +3310,7 @@ Trail Codes Setup window.
 #### Audit trail codes
 
 Audit trail codes provide a precise record of each transaction, including
-where it’s been posted as the transaction has made its way through the
+where it's been posted as the transaction has made its way through the
 Microsoft Dynamics GP system. Unlike source document codes, audit trail
 codes pinpoint the exact posting journal the transaction was included on.
 Using audit trail codes, you can trace transactions to their origins quickly
@@ -3334,19 +3334,19 @@ the audit trail codes for both postings—the one in General Ledger and the
 one in Receivables Management.
 
 If you were to refer to General Transaction Posting Journal number 485,
-you’d find the transaction, along with the audit trail code (now the batch
+you'd find the transaction, along with the audit trail code (now the batch
 ID) indicating that this transaction previously appeared on Sales Entry
 Posting Journal number 214. By cross-referencing the journals in this way,
 you can trace any transaction to its point of origin in Microsoft Dynamics
-GP. (You also could learn the customer’s purchase order number, and check
+GP. (You also could learn the customer's purchase order number, and check
 number by clicking links, if you needed to trace the transaction beyond the
 transaction entry point.)
 
 To ensure the integrity of the audit trail, the audit trail codes provided
-with Microsoft Dynamics GP can’t be changed, and you can’t create additional
+with Microsoft Dynamics GP can't be changed, and you can't create additional
 audit trail codes. However, you can change the number that will be assigned
 to the next posting journal of a particular type. You also can change the
-default source document code that’s assigned to a particular audit trail
+default source document code that's assigned to a particular audit trail
 code.
 
 #### Printing a list of audit trail codes
@@ -3403,7 +3403,7 @@ to do this for one of the following reasons:
 
 - As a safeguard against lost or misplaced posting journals.
 
-- If you don’t want to print posting journals every time you post
+- If you don't want to print posting journals every time you post
     transactions.
 
 If you mark the option to reprint posting journals, Microsoft Dynamics GP
@@ -3429,11 +3429,11 @@ Microsoft Dynamics GP module for more information on keeping history.*
     - Choose Mark All if you want the option of reprinting posting journals
         for all transaction origins within the selected series.
 
-    - Choose Unmark All if you don’t want to have the option to reprint
+    - Choose Unmark All if you don't want to have the option to reprint
         posting journals for any transaction origins within the selected series.
 
     - In the Reprint column, mark individual transaction origins that you want
-        to be able to reprint and unmark the transaction origins you don’t want
+        to be able to reprint and unmark the transaction origins you don't want
         to be able to reprint.
 
 4. To print a list of audit trail codes, which also shows the posting journal
@@ -3445,18 +3445,18 @@ Microsoft Dynamics GP module for more information on keeping history.*
 
 #### Assigning default posting accounts
 
-To simplify data entry, it’s a good idea to set up a default posting account
+To simplify data entry, it's a good idea to set up a default posting account
 for every type of account that could be posted to when you post a batch or
 transaction. For instance, when you post a sales transaction, amounts may
 need to be posted to a cash account, an accounts receivable account, a cost
-of goods sold account, and so on. You’ll use the Posting Accounts Setup
+of goods sold account, and so on. You'll use the Posting Accounts Setup
 window to assign default posting accounts.
 
 Once the accounts are set up, they appear as default entries in Microsoft
 Dynamics GP transaction entry windows. You also can use the customer, item,
 or vendor maintenance window to enter posting accounts unique to each
-customer, item, or vendor. You’ll be able to override the default accounts
-if they’re not appropriate for a given transaction.
+customer, item, or vendor. You'll be able to override the default accounts
+if they're not appropriate for a given transaction.
 
 **To assign default posting accounts:**
 
@@ -3473,7 +3473,7 @@ if they’re not appropriate for a given transaction.
 4. Enter an account, or select one from the lookup window. (To display the
     lookup window, choose the lookup button next to the Accounts heading.)
 
-5. Repeat steps 3 and 4 until you’ve assigned default posting accounts for each
+5. Repeat steps 3 and 4 until you've assigned default posting accounts for each
     account description in the scrolling window.
 
 6. To print a Posting Accounts Report showing a list of the default posting
@@ -3497,11 +3497,11 @@ origin to General Ledger. However, if you enter a batch and distribute the
 same debit and credit amount to the same posting account, you must create a
 journal entry for each transaction and post through General Ledger in
 detail. If you posted the transaction in summary form, the transaction
-balance would be zero and posting in General Ledger wouldn’t be allowed.*
+balance would be zero and posting in General Ledger wouldn't be allowed.*
 
 You also can choose whether to print posting journals for each transaction
 origin. We recommend that you choose to print these reports and store them
-with your company’s permanent records as part of the audit trail, but the
+with your company's permanent records as part of the audit trail, but the
 choice is yours. For more information on using the audit trail in Microsoft
 Dynamics GP, refer to the General Ledger documentation.
 
@@ -3550,12 +3550,12 @@ Create a Journal Entry Per Batch with Use Account Settings marked. However,
 this option gives you the greatest control over the amount of detail that is
 provided in your General Ledger.
 
-#### Posting “to” and “through” General Ledger
+#### Posting "to" and "through" General Ledger
 
 The main difference between these posting options is that when you are
-posting to General Ledger, you’ll have an extra opportunity to verify
+posting to General Ledger, you'll have an extra opportunity to verify
 transactions before they affect your permanent records. When you are posting
-through General Ledger, you’ll save time by not completing the additional
+through General Ledger, you'll save time by not completing the additional
 verification step.
 
 **Post to General Ledger** If you choose to post to General Ledger, batches
@@ -3569,7 +3569,7 @@ posted within the selected series only. You might want to unmark this option
 while entering beginning balances or while making adjustments within the
 series.
 
-When you’re ready to begin posting routine transactions, be sure to return
+When you're ready to begin posting routine transactions, be sure to return
 to the Posting Setup window and mark the option if you want transactions to
 be available for posting in General Ledger.
 
@@ -3582,10 +3582,10 @@ General Ledger. Your transactions will post to General Ledger and not
 through General Ledger when posting transaction individually (without a
 batch).
 
-If you don’t mark the option, you’ll be able to edit the transactions again
-using General Ledger’s Transaction Entry window before posting them to your
+If you don't mark the option, you'll be able to edit the transactions again
+using General Ledger's Transaction Entry window before posting them to your
 permanent General Ledger records. However, if you edit amounts at this
-point, you must reconcile General Ledger’s year-to-date tables to ensure
+point, you must reconcile General Ledger's year-to-date tables to ensure
 that posted amounts are identical. For more information on reconciling
 financial information, refer to the General Ledger documentation.
 
@@ -3612,21 +3612,21 @@ Dynamics GP series.
 
     - Mark Post to General Ledger to transfer transactions from subsidiary
         modules to General Ledger when you post. You can verify the transactions
-        in the General Ledger Transaction Entry window and you’ll have to post
+        in the General Ledger Transaction Entry window and you'll have to post
         the batches in General Ledger before they update your account balances.
 
     - Mark Post Through General Ledger Files to transfer transactions from
         subsidiary modules to General Ledger and automatically post them to your
         posting accounts.
 
-    - Leave both selections unmarked if you don’t want to post to General
-        Ledger. You might unmark these selections when you’re entering beginning
-        balances or if you’re entering correcting transactions in a subsidiary
-        module and don’t want the amounts to affect General Ledger.
+    - Leave both selections unmarked if you don't want to post to General
+        Ledger. You might unmark these selections when you're entering beginning
+        balances or if you're entering correcting transactions in a subsidiary
+        module and don't want the amounts to affect General Ledger.
 
-For more information, refer to *Posting “to” and “through” General Ledger* .
+For more information, refer to *Posting "to" and "through" General Ledger* .
 
-1. If you’re posting to General Ledger, specify how detailed you want your
+1. If you're posting to General Ledger, specify how detailed you want your
     journal entries to be. You can make the following selections:
 
     - Create a journal entry per **transaction** to post in detail (to create
@@ -3657,12 +3657,12 @@ Refer to *Posting in detail from subsidiary ledgers* for more information.
 
     - Mark Batch to post all transactions in the batch by the same date.
 
-    - Mark Transaction to post each transaction by the transaction’s posting
+    - Mark Transaction to post each transaction by the transaction's posting
         date.
 
-3. Mark Include Multicurrency Info if you’re using Multicurrency Management.
+3. Mark Include Multicurrency Info if you're using Multicurrency Management.
     Posting journals printed as part of the posting process will include
-    multicurrency information; reprinted posting journals won’t include
+    multicurrency information; reprinted posting journals won't include
     multicurrency information even if this option is marked.
 
 4. In the If Existing Batch field, make one of the following selections to
@@ -3684,10 +3684,10 @@ You can select any combination of the following printing destinations for
 posting journals and other audit reports.
 
 **Printer** The report is printed to the default printer specified in your
-computer’s printer setup.
+computer's printer setup.
 
 **Screen** The report appears on the screen and you can then choose to print
-to the printer. In addition, if you’re using an e-mail system that’s
+to the printer. In addition, if you're using an e-mail system that's
 compatible with MAPI (Messaging Application Programming Interface) or
 Exchange, you can mail any Microsoft Dynamics GP report that you print to
 the screen.
@@ -3708,7 +3708,7 @@ in the following table:
 |-----------------|---------------------------|
 | Tab-delimited   | The tab-separated ASCII character format used by spreadsheet programs, such as Microsoft Excel.   |
 | Comma-delimited | The standard comma-separated ASCII character format used by database programs.      |
-| Text            | Text with no formatting. Use this option only if the application you’ll use to read the report can’t read any other format.    |
+| Text            | Text with no formatting. Use this option only if the application you'll use to read the report can't read any other format.    |
 | HTML            | A format that can be views in a web browser.   |
 | XML Data        | A text file that contains an XML representation of the report layout and all the report data. Choose this format if you want to process the report using an external application.      |
 | Adobe PDF       | This format is available if you have the PDFWriter printer driver installed (included with Acrobat 5 and earlier), or Acrobat Distiller from Acrobat 6 or later. PDF (Portable Document Format) files can be read using Adobe Reader software available from Adobe. |
@@ -3717,7 +3717,7 @@ in the following table:
 #### Specifying posting report options
 
 By default, Microsoft Dynamics GP automatically prints posting reports. If
-you don’t want to print the reports, or if you want to select different
+you don't want to print the reports, or if you want to select different
 destinations for the reports, you can change them using the Posting Setup
 window.
 
@@ -3732,7 +3732,7 @@ window.
 2. From the Origin list, select a transaction origin.
 
 3. In the Print column of the Reports scrolling window, unmark any reports you
-    don’t want to print.
+    don't want to print.
 
     - To unmark all reports that are currently displayed in the scrolling
         window, choose Unmark All.
@@ -3791,21 +3791,21 @@ picked up by the customer. The shipping type is used when calculating taxes.
 See *Part 4, Tax setup*, for more information.
 
 If you installed the default shipping methods provided with Microsoft
-Dynamics GP when you created the company you’re setting up, they’ll appear
+Dynamics GP when you created the company you're setting up, they'll appear
 when you open the Shipping Methods Setup window and you choose the Shipping
 Method lookup button. You also can print a list of shipping methods by
 choosing File \>\> Print in the Shipping Methods Setup window.
 
 #### Setting up a shipping method
 
-If you didn’t load default shipping methods, or if you need additional
+If you didn't load default shipping methods, or if you need additional
 shipping methods, use the Shipping Methods Setup window to create them. If
 several carriers routinely provide the same type of shipping service, set up
 a unique shipping method name for each carrier.
 
 If, after beginning to use your system, you need to update or remove any of
 the shipping methods, you can do so. Existing transactions that used the
-shipping methods won’t be affected by the changes.
+shipping methods won't be affected by the changes.
 
 **To set up a shipping method:**
 
@@ -3833,7 +3833,7 @@ shipping methods won’t be affected by the changes.
 #### Payment terms
 
 Payment terms outline the terms under which a vendor expects payment from a
-customer. In Microsoft Dynamics GP, you’ll work with payment terms that your
+customer. In Microsoft Dynamics GP, you'll work with payment terms that your
 company extends to customers, and also with payment terms that vendors
 extend to your company.
 
@@ -3844,7 +3844,7 @@ The following table displays common payment terms and descriptions.
 | 11/30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 2%-10/Net 30      | 10                |                   | 2.00%                | 12/30        |
 | The customer is offered a 2% discount in return for payment within 10 days after the purchase, or invoice date. The payment is due in full 30 days after the invoice date.                                                                                                                                                                                                                                                                                                                     |                   |                   |                   |                      |              |
 | 11/30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 2%-10th/Net 30    |                   | 12/10             | 2.00%                | 1/09         |
-| The customer is offered a 2% discount in return for making payment by the 10th of the month following the month in which the invoice date occurred. Since the invoice date is in November, the “10th” referenced in the payment terms would be the 10th of December. The payment is due in full 30 days after the discount date. If the invoice is generated in one of the first 9 days of the month, the discount is available only until the 10th of the month in which the invoice occurred. |                   |                   |                   |                      |              |
+| The customer is offered a 2% discount in return for making payment by the 10th of the month following the month in which the invoice date occurred. Since the invoice date is in November, the "10th" referenced in the payment terms would be the 10th of December. The payment is due in full 30 days after the discount date. If the invoice is generated in one of the first 9 days of the month, the discount is available only until the 10th of the month in which the invoice occurred. |                   |                   |                   |                      |              |
 | 11/30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 2%-15th/EOM       |                   | 12/15             | 2.00%                | 12/30        |
 | The customer is offered a 2% discount in return for payment by the 15th of the month. Since the invoice date is November 30th, the discount date is the 15th of the following month. If the invoice date were December 5th or 10th, the discount date still would be December 15th. The payment is due in full at the end of the same month as the discount date.                                                                                                                              |                   |                   |                   |                      |              |
 | 11/30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Net 30 days       |                   |                   |                      | 12/30        |
@@ -3853,22 +3853,22 @@ The following table displays common payment terms and descriptions.
 #### Setting up payment terms
 
 If you chose to install the default payment terms provided with the
-accounting system when you created the company you’re setting up, they’ll
+accounting system when you created the company you're setting up, they'll
 appear when you open the Payment Terms Setup window and choose the Payment
 Terms lookup button. You also can print a Payment Terms Report by choosing
 File \>\> Print in the Payment Terms Setup window.
 
-If you didn’t load default payment terms, or if you need additional payment
+If you didn't load default payment terms, or if you need additional payment
 terms, use the Payment Terms Setup window to create them. Use the following
-procedure to set up payment terms that don’t include a discount.
+procedure to set up payment terms that don't include a discount.
 
 If, after beginning to use your accounting system, you need to update or
 remove any of the payment terms, you can do so at any time. Existing
-transactions using the payment terms won’t be affected by the changes.
+transactions using the payment terms won't be affected by the changes.
 
 For payment terms that use a date or the end of month (EOM) payment terms,
-you can specify a grace period for each customer to whom you’re offering
-Date/EOM payment terms, or for each vendor from whom you’re receiving those
+you can specify a grace period for each customer to whom you're offering
+Date/EOM payment terms, or for each vendor from whom you're receiving those
 terms.
 
 - To specify a grace period for customers, use the Customer Maintenance
@@ -3953,7 +3953,7 @@ what you allow customers to discount, or what you are allowed to discount.
 Assume a debtor has a payment terms discount of 2%/10 Net 30, and makes a
 \$100 purchase.
 
-- If the debtor doesn’t pay the invoice within 10 days (the discount period),
+- If the debtor doesn't pay the invoice within 10 days (the discount period),
     the following amount is charged:
 
 | Sale amount | \$100.00 |
@@ -4022,10 +4022,10 @@ companies, if needed.
 - The reporting currency is used to convert financial currency amounts to
     another currency on inquiries and reports.
 
-*You must set up a functional currency, even if you’re not using
+*You must set up a functional currency, even if you're not using
 Multicurrency Management.*
 
-To set up currencies, you’ll need to complete the following procedures:
+To set up currencies, you'll need to complete the following procedures:
 
 - Set up one or more currency records.
 
@@ -4036,7 +4036,7 @@ To set up currencies, you’ll need to complete the following procedures:
 - Check links to ensure that related tables are updated.
 
 > [!NOTE]
-> If you’ve loaded the sample company, you can use its currency records in
+> If you've loaded the sample company, you can use its currency records in
 your own company.
 
 #### Setting up a currency record
@@ -4055,7 +4055,7 @@ access to it for multiple companies, if needed.
 1. In the Currency ID field, enter or select a name for the currency.
 
 2. In the Description, ISO code, and Symbol fields, enter the information
-    that’s appropriate for the currency.
+    that's appropriate for the currency.
 
 3. Select additional display and separator options and enter payables check
     terminology.
@@ -4113,7 +4113,7 @@ is the functional currency of the parent company.
 1. In each of the Default Transaction Rate Types fields, enter or select a rate
     type.
 
-If you’re not using Multicurrency Management, make the following selections:
+If you're not using Multicurrency Management, make the following selections:
 
 | **Field**  | **Selection** |
 |------------|---------------|
@@ -4131,7 +4131,7 @@ currency, the message will appear.
 
 Use the Check Links window to check relationships among tables to find
 information that may be missing from one table within the relationship. To
-verify that all updated multicurrency information is present, you’ll need to
+verify that all updated multicurrency information is present, you'll need to
 add the Multicurrency Setup table into your list of tables to check links
 for.
 
@@ -4150,7 +4150,7 @@ for.
 
 #### Setting up a bank record
 
-A bank is a financial institution with which you do business. You’ll use the
+A bank is a financial institution with which you do business. You'll use the
 Bank Maintenance window to set up bank records.
 
 If you do business with a bank at more than one location, you can set up
@@ -4166,11 +4166,11 @@ Park Avenue as the bank branches.
 
 2. Enter a bank ID and name.
 
-3. Enter the bank’s address information, including phone and fax numbers. If
-    you’re using Bank Reconciliation, this information can be formatted to be
+3. Enter the bank's address information, including phone and fax numbers. If
+    you're using Bank Reconciliation, this information can be formatted to be
     printed on deposit slips.
 
-4. Enter the bank’s transit number. This is the first group of numbers (usually
+4. Enter the bank's transit number. This is the first group of numbers (usually
     followed by a colon) in the lower left corner on checks issued by the bank.
 
 5. Enter the bank branch to further identify this bank ID.
@@ -4187,18 +4187,18 @@ Use checkbooks to maintain records of deposits, checks, or cash paid out.
 Later, you can reconcile this information with the statement of activity
 provided by your bank.
 
-You can set up an unlimited number of checkbooks to manage your company’s
+You can set up an unlimited number of checkbooks to manage your company's
 cash. For example, one checkbook can be set up for writing payroll checks,
 another for making payments to vendors, and a third for recording
 miscellaneous payments made by your business.
 
-If you add Bank Reconciliation after you’ve begun using Microsoft Dynamics
-GP, it’s a good idea to set up completely new checkbook IDs. This way,
-transactions that were entered in other modules won’t need to be posted
+If you add Bank Reconciliation after you've begun using Microsoft Dynamics
+GP, it's a good idea to set up completely new checkbook IDs. This way,
+transactions that were entered in other modules won't need to be posted
 before using Bank Reconciliation.
 
-*If you’re moving checkbooks to Microsoft Dynamics GP from another
-accounting system, see Chapter 1, “Setup preparation,” in the Bank
+*If you're moving checkbooks to Microsoft Dynamics GP from another
+accounting system, see Chapter 1, "Setup preparation," in the Bank
 Reconciliation documentation.*
 
 The Cash Account From option in each of the following windows specifies
@@ -4217,7 +4217,7 @@ or the cash account assigned to the customer, employee, or vendor.
 
 - Employee Class Setup
 
-If you’re using Bank Reconciliation, be sure to use the cash account from
+If you're using Bank Reconciliation, be sure to use the cash account from
 the checkbook to ensure that your checkbook balances can be easily
 reconciled.
 
@@ -4227,20 +4227,20 @@ Check and deposit numbers can be alphanumeric. If alphabetic characters are
 entered, the numerals—not the letters—will increment as you process checks
 and enter deposits.
 
-By defining the next number, you’re also determining the number of unique
+By defining the next number, you're also determining the number of unique
 numbers that will be available. For example, if you enter CK001 as the next
-check number, you’ll only be able to enter up to 999 unique checks. Be sure
+check number, you'll only be able to enter up to 999 unique checks. Be sure
 to enter a number large enough to accommodate your business.
 
 If alphabetic characters are entered between numbers, only the numbers to
-the right of the last letter you’ve entered will increment. For example, if
+the right of the last letter you've entered will increment. For example, if
 the next check number is CK00M18888, the following check number will be
 CK00M18889.
 
 #### Inactive checkbooks
 
 You can inactivate a checkbook at any time. For example, if you plan to
-close a checking account in the near future and you don’t want to write new
+close a checking account in the near future and you don't want to write new
 checks or add receipts to this checkbook before you reconcile, you could
 inactivate the checkbook to prevent any new checks or receipts from being
 entered for that checkbook.
@@ -4251,7 +4251,7 @@ the checkbook:
 - Post transactions that were entered in any module.
 
 - Void receipts, transactions or deposits in any module except Payroll. (You
-    can’t void checks in Payroll.)
+    can't void checks in Payroll.)
 
 - Enter Deposits With Receipts or Deposits To Clear Receipts transactions
     using the Bank Deposit Entry window.
@@ -4263,16 +4263,16 @@ the checkbook:
 
 #### Last reconciled date and last reconciled balance
 
-For new checkbooks, the last reconciled balance is the checkbook’s current
-balance. You can make changes to this amount until you’ve reconciled the
+For new checkbooks, the last reconciled balance is the checkbook's current
+balance. You can make changes to this amount until you've reconciled the
 checkbook for the first time. If you change the last reconciled balance
-after saving the checkbook, you’ll need to enter an adjustment in General
-Ledger for the Cash account, because an adjusting entry won’t be made
+after saving the checkbook, you'll need to enter an adjustment in General
+Ledger for the Cash account, because an adjusting entry won't be made
 automatically.
 
 After you reconcile a checkbook, the amount in the Last Reconciled Balance
-field is the same as the bank statement’s ending balance in the Reconcile
-Bank Statements window. This amount can’t be changed in the Checkbook
+field is the same as the bank statement's ending balance in the Reconcile
+Bank Statements window. This amount can't be changed in the Checkbook
 Maintenance window.
 
 #### Setting up a checkbook
@@ -4288,12 +4288,12 @@ Use the Checkbook Maintenance window to set up a new checkbooks.
 
 3. Enter a currency ID, payment rate type ID, and deposit rate type ID.
 
-4. Enter the Cash account to which this checkbook’s transactions will be
+4. Enter the Cash account to which this checkbook's transactions will be
     posted.
 
-It’s best to set up a separate Cash account for each checkbook. That way,
-you’ll have a separate record of each checkbook’s activity in General
-Ledger. The checkbook Cash account must be a posting account—it can’t be
+It's best to set up a separate Cash account for each checkbook. That way,
+you'll have a separate record of each checkbook's activity in General
+Ledger. The checkbook Cash account must be a posting account—it can't be
 either a unit account or an allocation account if a unit account is assigned
 as one of the distributions.
 
@@ -4317,7 +4317,7 @@ as one of the distributions.
     field can be used as a sorting option when printing reports such as the
     Checkbook List.
 
-6. Choose Save to save the checkbook information you’ve entered.
+6. Choose Save to save the checkbook information you've entered.
 
 7. To print a checkbook list containing information for the currently displayed
     checkbook, choose File \>\> Print. You also can print this report using the
@@ -4344,7 +4344,7 @@ vendors. You can control the following options:
 1. Enter checkbook information. See *Setting up a checkbook* .
 
 2. In the Maximum Payables Check Amount field, enter the largest amount a check
-    from this checkbook can be written for. If you don’t want to set a limit,
+    from this checkbook can be written for. If you don't want to set a limit,
     leave the amount at \$0.00; no maximum will apply.
 
 3. In the Maximum Payables Check Password, enter a password to allow checks to
@@ -4357,7 +4357,7 @@ vendors. You can control the following options:
 5. To change the check number when entering payables transactions and payments,
     mark the Override Check Number option.
 
-6. Choose Save to save the checkbook information you’ve entered.
+6. Choose Save to save the checkbook information you've entered.
 
 #### Setting up a credit card
 
@@ -4370,7 +4370,7 @@ credit cards that your company uses.
 
 If, after beginning to use your accounting system, you need to update or
 remove any of the credit cards, you may do so at any time. Existing
-transactions that were paid using the credit cards won’t be affected by the
+transactions that were paid using the credit cards won't be affected by the
 changes.
 
 **Credit cards and check cards**
@@ -4382,7 +4382,7 @@ for transactions involving these cards.
 - Credit cards require that you specify a vendor ID for the credit card
     company. Payments made with credit cards are treated as accounts payable
     amounts. The credit card company acts as a vendor to you in this instance,
-    since you’ll pay them for the goods and services you purchase with the card.
+    since you'll pay them for the goods and services you purchase with the card.
 
 - Check cards require that you enter a checkbook ID. Payments made with check
     cards are treated as check or cash payments, because the amount is
@@ -4475,8 +4475,8 @@ multiple documents from sales and purchasing transaction lists. When setting
 up the e-mail functionality, you can select which documents to send and
 which customers and vendors should receive their documents in e-mail. If you
 are using Word templates for Microsoft Dynamics GP, you can send predefined
-or customized forms. For more information, see *Chapter 42, “Word
-templates.”*
+or customized forms. For more information, see *Chapter 42, "Word
+templates."*
 
 You can send the following documents in e-mail.
 
@@ -4517,7 +4517,7 @@ invoice in a message or the on order amount for a purchase order.
 
 Review the following requirements.
 
-- You can send documents by email if you’re using a MAPI-compliant e-mail
+- You can send documents by email if you're using a MAPI-compliant e-mail
     service or Exchange 2007 Service Pack 1 or greater with Exchange Web
     Services.
 
@@ -4639,10 +4639,10 @@ invoice in a message or the PO number for a purchase order.
 4. Select the series in which you want this message to appear. Messages
     assigned to All can be used with both the Sales and Purchasing series.
 
-5. Select a document type from the series you selected. This field isn’t
+5. Select a document type from the series you selected. This field isn't
     available if you selected All as the series.
 
-6. Enter a subject line for the message. If you don’t enter a subject for the
+6. Enter a subject line for the message. If you don't enter a subject for the
     message, the document number of the transaction you are sending is used.
 
 You also customize the subject line by adding a field or fields associated
@@ -4755,11 +4755,11 @@ records.
 1. Click the Sales Series link to open the Sales E-mail Setup window.
 
 2. Mark the documents you want to send in e-mail to your customers. If a
-    document is unmarked, it can’t be sent in e-mail. To select all documents,
+    document is unmarked, it can't be sent in e-mail. To select all documents,
     mark the Enable option.
 
 3. Enter or select the message ID you want to send for each document type you
-    want to send in e-mail. A message ID isn’t required when sending documents
+    want to send in e-mail. A message ID isn't required when sending documents
     in e-mail.
 
 4. Enter or select an address that a customer can use to send a reply e-mail
@@ -4774,7 +4774,7 @@ records.
     edit the message in the Sales E-mail Detail Entry window or the Receivables
     Email Detail Entry window.
 
-If you don’t mark this option, you wont be able to edit the subject and
+If you don't mark this option, you wont be able to edit the subject and
 message body of the Sales E-mail Detail Entry window or the Receivables
 E-mail Detail Entry window.
 
@@ -4817,16 +4817,16 @@ documentation.
 
 6. If you are sending documents as attachments, mark to set a maximum file size
     limit for attached documents sent to the customers and enter the file size.
-    If this field is unmarked, there isn’t a size limit.
+    If this field is unmarked, there isn't a size limit.
 
 7. Mark the documents you want to send in e-mail. If a document is unmarked, it
-    can’t be sent in e-mail. The documents available to send depend on the
+    can't be sent in e-mail. The documents available to send depend on the
     documents you selected in the Sales E-mail Setup window. To select all
     documents, mark the Enable option.
 
-8. Enter or select the message ID to use with the document type. If you didn’t
+8. Enter or select the message ID to use with the document type. If you didn't
     select a message ID for the document type in the Sales E-mail Setup window,
-    the Message ID field is blank. A message ID isn’t required when sending
+    the Message ID field is blank. A message ID isn't required when sending
     documents in e-mail.
 
 9. Select the file format to send the documents in as attachments. The files
@@ -4857,10 +4857,10 @@ when you set up or modify e-mail options for vendor records.
 2. Click the Purchasing Series link to open the Purchasing E-mail Setup window.
 
 3. Mark the documents you want to send in e-mail. If a document is unmarked, it
-    can’t be sent in e-mail. To select all documents, mark the Enable option.
+    can't be sent in e-mail. To select all documents, mark the Enable option.
 
 4. Enter or select the message ID you want to send for each document type you
-    want to send in e-mail. A message ID isn’t required when sending documents
+    want to send in e-mail. A message ID isn't required when sending documents
     in e-mail.
 
 5. Enter or select an address that a vendor can use to send a reply e-mail for
@@ -4874,7 +4874,7 @@ when you set up or modify e-mail options for vendor records.
 7. Mark to change the e-mail message when entering the purchasing document. You
     can edit the message in the Purchasing E-mail Detail Entry window.
 
-If you don’t mark this option, you wont be able to edit the subject and
+If you don't mark this option, you wont be able to edit the subject and
 message body of the Purchasing E-mail Detail Entry window.
 
 1. Choose OK to save your changes or choose the Vendor Setup button to update
@@ -4921,16 +4921,16 @@ documentation.
 
 6. If you are sending documents as attachments, mark to set a maximum file size
     limit for attached documents sent to the vendors and enter the file size. If
-    this field is unmarked, there isn’t a size limit.
+    this field is unmarked, there isn't a size limit.
 
 7. Mark the documents you want to send in e-mail. If a document is unmarked, it
-    can’t be sent in e-mail. The documents available to send depend on the
+    can't be sent in e-mail. The documents available to send depend on the
     documents you selected in the Purchasing E-mail Setup window. To select all
     documents, mark the Enable option.
 
-8. Enter or select the message ID to use with the document type. If you didn’t
+8. Enter or select the message ID to use with the document type. If you didn't
     select a message ID for the document type in the Purchasing E-mail Setup
-    window, the Message ID field is blank. A message ID isn’t required when
+    window, the Message ID field is blank. A message ID isn't required when
     sending documents in e-mail.
 
 9. Mark the file format or formats to send the documents in as attachments. The
@@ -4964,7 +4964,7 @@ transactions. You can attach documents to individual line items on
 transactions.
 
 You can flow or roll down attachments from master records to transactions.
-For example, you can attach directions to a vendor’s location to the vendor
+For example, you can attach directions to a vendor's location to the vendor
 record. If you are rolling down attachments for the vendor record, the
 directions are attached to each purchase order that the vendor is assigned
 to.
@@ -5029,7 +5029,7 @@ documents.
 4. Enter the maximum file size limit for attached documents.
 
 5. Mark to delete attachments from master records and transactions in the
-    Document Attachment Management window. If you don’t mark this option, you
+    Document Attachment Management window. If you don't mark this option, you
     cannot delete attachments from master records and transactions.
 
 6. Assign a password that will be required to use when deleting attachments. If
@@ -5133,7 +5133,7 @@ GP.
 2. Choose the Options button to open the Company Setup Options window.
 
 3. Mark Enable Intrastat Tracking to make Intrastat entry windows available. If
-    you don’t mark this option, you won’t be able to enter Intrastat information
+    you don't mark this option, you won't be able to enter Intrastat information
     for transactions, vendors, or customers.
 
 4. Choose OK to close the Company Setup Options window.
@@ -5420,19 +5420,19 @@ For additional information about tax setup windows, refer to the help. (From
 the Help menu, choose Index; then type the name of the window and choose
 Display.) The following information is discussed:
 
-- *Chapter 19, “International taxes,”* provides an overview of some tax
+- *Chapter 19, "International taxes,"* provides an overview of some tax
     features and special setup information for different areas of the world.
 
-- *Chapter 20, “Value-added tax,”* explains how to set up information needed
+- *Chapter 20, "Value-added tax,"* explains how to set up information needed
     to correctly process Value-added Taxes (VAT).
 
-- *Chapter 21, “Tax overview,”* provides an introduction to tax calculation
+- *Chapter 21, "Tax overview,"* provides an introduction to tax calculation
     and tax schedules in Microsoft Dynamics GP.
 
-- *Chapter 22, “Tax details,”* explains how to use the Tax Detail Maintenance
+- *Chapter 22, "Tax details,"* explains how to use the Tax Detail Maintenance
     window to add, change, or delete tax details.
 
-- *Chapter 23, “Tax schedules,”* describes how to set up tax schedules used to
+- *Chapter 23, "Tax schedules,"* describes how to set up tax schedules used to
     calculate all the taxes that apply to a sales or purchase transaction.
 
 ### Chapter 19: International taxes
@@ -5449,7 +5449,7 @@ information for different areas of the world.
 
 Review the sections listed below that apply to countries in which you do
 business and complete any preliminary setup tasks that are necessary. Then,
-continue to *Chapter 21, “Tax overview,”* to set up taxes.
+continue to *Chapter 21, "Tax overview,"* to set up taxes.
 
 | **Country/region** | **Default tax options**                                                                                                                                                                                                       |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -5483,14 +5483,14 @@ bases. Tax can be calculated on sales and purchases.
 In the United States, most states have a sales tax, and many cities and
 counties assess additional taxes. Tax rates for different types of goods and
 services vary from jurisdiction to jurisdiction. Certain goods may be
-subject to a “luxury tax,” as well.
+subject to a "luxury tax," as well.
 
 Not-for-profit organizations and certain businesses may qualify for
 exemptions from some taxes; check with your taxing authority for more
 information.
 
 In most jurisdictions in the United States, taxes are not assessed on other
-taxes; “taxable taxes” in Microsoft Dynamics GP are most commonly used
+taxes; "taxable taxes" in Microsoft Dynamics GP are most commonly used
 outside the United States.
 
 - If you do business exclusively in the United States, you can set up all your
@@ -5512,7 +5512,7 @@ outside the United States.
 
 2. Choose OK to save your changes.
 
-*When you’ve finished entering tax details and tax schedules, be sure to
+*When you've finished entering tax details and tax schedules, be sure to
 return to the Company Setup window and specify the default sales and
 purchases tax schedules for the company.*
 
@@ -5525,7 +5525,7 @@ supplies and services. However, the following conditions may apply:
 - An Exempt tax rate and a 0% tax rate may apply to certain goods. Exempt
     supplies should be assigned a 0% tax detail as the rate and no tax should be
     collected. Generally, sales of exempt supplies are tracked and reported, but
-    can’t be claimed as Input Tax Credit.
+    can't be claimed as Input Tax Credit.
 
 - Zero-rated supplies are taxable, but taxed at a rate of 0% and can be
     claimed as Input Tax Credit. As a result, no tax is applied to the sale of
@@ -5545,7 +5545,7 @@ at two rates, one for products and another for services.
 
 #### Setting up company GST information for Canada
 
-You’ll use the Company Setup window to enter company GST information.
+You'll use the Company Setup window to enter company GST information.
 
 **To set up company GST information for Canada:**
 
@@ -5555,11 +5555,11 @@ You’ll use the Company Setup window to enter company GST information.
 
 1. Enter your tax exemption numbers in the Tax Exempt fields.
 
-2. Enter your company’s GST registration number in the Tax Registration field.
+2. Enter your company's GST registration number in the Tax Registration field.
 
 3. Choose OK to save your changes.
 
-*When you’ve finished entering tax details and tax schedules, be sure to
+*When you've finished entering tax details and tax schedules, be sure to
 return to the Company Setup window and specify the default sales and
 purchases tax schedules for the company.*
 
@@ -5595,7 +5595,7 @@ the discount is taken on the GST amount, as well as the amount of the sale.
 
 #### Setting up company GST information for New Zealand
 
-You’ll set up company GST information for New Zealand by choosing the
+You'll set up company GST information for New Zealand by choosing the
 appropriate option in the Company Setup Options window.
 
 **To set up company GST information for New Zealand:**
@@ -5604,7 +5604,7 @@ appropriate option in the Company Setup Options window.
 
 (Administration \>\> Setup \>\> Company \>\> Company)
 
-1. Enter your company’s GST registration number in the Tax Registration field.
+1. Enter your company's GST registration number in the Tax Registration field.
 
 2. Choose Options to open the Company Setup Options window
 
@@ -5614,17 +5614,17 @@ appropriate option in the Company Setup Options window.
     regardless of when the payment is actually made.
 
     - If you typically pay invoices that include a terms discount before the
-        discount expires, mark this option. On occasions where you don’t pay
-        before the discount expires, you’ll need to adjust the tax amounts
+        discount expires, mark this option. On occasions where you don't pay
+        before the discount expires, you'll need to adjust the tax amounts
         manually.
 
-    - If you typically don’t pay invoices before their discounts expire, leave
+    - If you typically don't pay invoices before their discounts expire, leave
         this option unmarked. On occasions where you do pay before the discount
-        expires, you’ll need to adjust the tax amounts manually.
+        expires, you'll need to adjust the tax amounts manually.
 
 4. Choose OK to save your changes.
 
-*When you’ve finished entering tax details and tax schedules, be sure to
+*When you've finished entering tax details and tax schedules, be sure to
 return to the Company Setup window and specify the default sales and
 purchases tax schedules for the company.*
 
@@ -5635,7 +5635,7 @@ in the world. Each country that uses VAT has its own rate of taxation and
 often has different rates for various goods or special zones within the
 country. VAT is collected on sales, and any credit for tax paid on purchases
 is also tracked. The difference is remitted to the taxation authority in
-each country. See *Chapter 20, “Value-added tax,”* for more information on
+each country. See *Chapter 20, "Value-added tax,"* for more information on
 VAT.
 
 - Set up company VAT information using the Company Setup window.
@@ -5651,11 +5651,11 @@ VAT.
     windows.
 
 - To enter VAT information for each of your debtors, use the Debtor
-    Maintenance Options window when you’re setting up debtor information.
+    Maintenance Options window when you're setting up debtor information.
 
 - To enter VAT information for each of your creditors, use the Creditor
 
-Maintenance Options window when you’re setting up creditor information.
+Maintenance Options window when you're setting up creditor information.
 
 ### Chapter 20: Value-added tax
 
@@ -5713,7 +5713,7 @@ the country or region you chose when you installed Microsoft Dynamics GP.*
 1. Open the Company Setup window. (Administration \>\> Setup \>\> Company \>\>
     Company)
 
-2. Enter your company’s VAT registration number in the Tax Registration field.
+2. Enter your company's VAT registration number in the Tax Registration field.
 
 3. Choose the Options button to open the Company Setup Options window.
 
@@ -5737,12 +5737,12 @@ the country or region you chose when you installed Microsoft Dynamics GP.*
 
 Use the Tax Detail Maintenance window and the Tax Schedule Maintenance
 window to set up tax details and schedules. For more information about tax
-details and schedules, see *Chapter 22, “Tax details”* and *Chapter 23, “Tax
-schedules.”*
+details and schedules, see *Chapter 22, "Tax details"* and *Chapter 23, "Tax
+schedules."*
 
-When you set up a tax detail, you’ll define the basis that will be used to
+When you set up a tax detail, you'll define the basis that will be used to
 calculate the tax, the maximum or minimum amount that will be taxed, and the
-account that will be used to track input or output tax amounts. Once you’ve
+account that will be used to track input or output tax amounts. Once you've
 set up tax details, you can create tax schedules. Tax schedules are groups
 of tax details that will be assigned to a transaction.
 
@@ -5758,16 +5758,16 @@ more information about debtors and creditors, refer to the Receivables
 Management and Payables Management documentation.
 
 - To enter VAT information for each of your debtors, use the Debtor
-    Maintenance Options window when you’re setting up debtor information.
+    Maintenance Options window when you're setting up debtor information.
 
 - To enter VAT information for each of your creditors, use the Creditor
 
-Maintenance Options window when you’re setting up creditor information.
+Maintenance Options window when you're setting up creditor information.
 
 ### Chapter 21: Tax overview
 
 This information contains an introduction to tax calculation and tax
-schedules in Microsoft Dynamics GP. You’ll complete two procedures to set up
+schedules in Microsoft Dynamics GP. You'll complete two procedures to set up
 your taxes; setting up tax details and setting up tax schedules.
 
 For additional information about tax setup windows, refer to the help. (From
@@ -5797,9 +5797,9 @@ schedules:
 
 - Enter a chart of accounts. For information on entering accounts, refer to
     the General Ledger documentation, or to *Setting up a posting account in
-    Microsoft Dynamics GP* if you’re not using General Ledger.
+    Microsoft Dynamics GP* if you're not using General Ledger.
 
-- Set up shipping methods if you’ve marked the Use Shipping Method when
+- Set up shipping methods if you've marked the Use Shipping Method when
     Selecting Default Tax Schedule option in the Company Setup Options window.
     Taxes are calculated based on the point of exchange, using the shipping
     method assigned to a transaction to determine the point of exchange. Refer
@@ -5811,7 +5811,7 @@ schedules:
 
 #### Overview of Microsoft Dynamics GP taxes
 
-You’ll complete two procedures to set up your taxes; setting up tax details
+You'll complete two procedures to set up your taxes; setting up tax details
 and setting up tax schedules. At the most basic level, the difference
 between tax details and tax schedules is this:
 
@@ -5821,9 +5821,9 @@ and the taxing authority to whom taxes must be paid.
 **Tax schedules** Tax schedules provide a method of grouping the tax details
 that apply to companies, items, customers, or vendors.
 
-For example, if you’re setting up sales taxes for your business in Seattle,
+For example, if you're setting up sales taxes for your business in Seattle,
 
-Washington, you’ll need to set up details for each Washington state tax and
+Washington, you'll need to set up details for each Washington state tax and
 each
 
 Seattle city tax. After all the details have been defined, you can group the
@@ -5831,8 +5831,8 @@ details for Washington and those for Seattle into a schedule. This schedule
 can be assigned to all the customers, vendors, and items that are subject to
 Seattle and Washington taxes.
 
-When you enter transactions in Microsoft Dynamics GP, you don’t need to
-select all the tax details that apply to the transaction; once you’ve set up
+When you enter transactions in Microsoft Dynamics GP, you don't need to
+select all the tax details that apply to the transaction; once you've set up
 tax schedules, Microsoft Dynamics GP calculates all applicable taxes
 automatically.
 
@@ -5846,12 +5846,12 @@ Consider the following example:
 - All the goods and services the business provides or purchases are taxed at
     the same rate.
 
-- There’s only one taxing authority to remit taxes to.
+- There's only one taxing authority to remit taxes to.
 
 In this case, every transaction has exactly the same rate of taxation and
 the business can set up one tax detail. It also must set up at least one tax
 schedule; when entering transactions in Microsoft Dynamics GP, the
-business’s clerk selects the tax schedule, rather than a tax detail.
+business's clerk selects the tax schedule, rather than a tax detail.
 
 Chances are that your organization operates in a more complex taxing
 situation than the previous example. Your situation is probably similar to
@@ -5868,7 +5868,7 @@ the following example:
 Tax schedules are used to simplify the process of assigning all applicable
 details to each company, item, customer, and vendor. These default schedules
 are used to calculate taxes automatically when you enter a transaction. If
-you don’t specify a default tax schedule, you can select one as you’re
+you don't specify a default tax schedule, you can select one as you're
 entering the transaction.
 
 #### How taxes are calculated
@@ -5901,19 +5901,19 @@ A retail store is selling three items to a customer:
 The store is located in a town that is subject to 1.0% city tax and a 5.0%
 state tax. However, clothing and food are not taxable in either
 jurisdiction. Because the customer is purchasing the items at a retail
-store, the exchange of goods happens in the store’s jurisdiction, not the
-customer’s. To calculate the taxes, Microsoft Dynamics GP compares the tax
+store, the exchange of goods happens in the store's jurisdiction, not the
+customer's. To calculate the taxes, Microsoft Dynamics GP compares the tax
 schedules that are assigned to each item with the tax schedules assigned to
 the store and calculates taxes only for the details that appear for both.
 
 | **Item**         | **Tax details in the tax schedule assigned to the:** | **Calculated tax** |              |                                                                                                  |
 |------------------|------------------------------------------------------|--------------------|--------------|--------------------------------------------------------------------------------------------------|
 |                  | **Item**                                             | **Store**          | **Customer** |                                                                                                  |
-| Shirt (Clothing) |                                                      | 5% State           | 5% State     | US\$0 because the shirt isn’t taxable.                                                          |
+| Shirt (Clothing) |                                                      | 5% State           | 5% State     | US\$0 because the shirt isn't taxable.                                                          |
 |                  |                                                      | 1% City            |              |                                                                                                  |
 | Radio (General)  | 5% State                                             | 5% State           | 5% State     | US\$3.00 because the tax schedules for both the item and the store contain the same tax details. |
 |                  |                                                      | 1% City            |              |                                                                                                  |
-| Milk (Food)      |                                                      | 5% State           | 5% State     | US\$0 because the milk isn’t taxable.                                                           |
+| Milk (Food)      |                                                      | 5% State           | 5% State     | US\$0 because the milk isn't taxable.                                                           |
 |                  |                                                      | 1% City            |              |                                                                                                  |
 
 **Different tax rates for different customers**
@@ -5932,7 +5932,7 @@ The distributor is located in a town that is subject to 1.0% city tax and a
 5.0% state tax. The customer is located in another town, where no city taxes
 apply. Clothing and food are not taxable in either jurisdiction. Because the
 items are being shipped to the customer, the exchange of goods happens in
-the customer’s jurisdiction, not the distributor’s. To calculate the taxes,
+the customer's jurisdiction, not the distributor's. To calculate the taxes,
 Microsoft Dynamics GP compares the tax schedules that are assigned to each
 item with the tax schedule assigned to the customer and calculates taxes
 only for the details that appear for both.
@@ -5940,20 +5940,20 @@ only for the details that appear for both.
 | **Item**         | **Tax details in the tax schedule assigned to the:** | **Calculated tax** |              |                                                                                |
 |------------------|------------------------------------------------------|--------------------|--------------|--------------------------------------------------------------------------------|
 |                  | **Item**                                             | **Store**          | **Customer** |                                                                                |
-| Shirt (Clothing) |                                                      | 5% State           | 5% State     | US\$0 because the shirt isn’t taxable.                                        |
+| Shirt (Clothing) |                                                      | 5% State           | 5% State     | US\$0 because the shirt isn't taxable.                                        |
 |                  |                                                      | 1% City            |              |                                                                                |
 | Radio (General)  | 5% State                                             | 5% State           | 5% State     | US\$2.50 because only the state tax applies to both the item and the customer. |
 |                  |                                                      | 1% City            |              |                                                                                |
-| Chocolate (Food) |                                                      | 5% State           | 5% State     | US\$0 because the chocolate isn’t taxable.                                    |
+| Chocolate (Food) |                                                      | 5% State           | 5% State     | US\$0 because the chocolate isn't taxable.                                    |
 |                  |                                                      | 1% City            |              |                                                                                |
 
-If you’ve marked the Use Shipping Method when Selecting Default Tax Schedule
+If you've marked the Use Shipping Method when Selecting Default Tax Schedule
 option in the Company Setup Options window, Microsoft Dynamics GP uses the
 shipping method assigned to the transaction to determine where the exchange
 of goods takes place, and provides the appropriate tax schedule as a default
 schedule for the transaction.
 
-| **Series** | **Shipping method’s shipping type** | **Default tax schedule comes from** |
+| **Series** | **Shipping method's shipping type** | **Default tax schedule comes from** |
 |------------|-------------------------------------|-------------------------------------|
 | Sales      | Pickup                              | Your company                        |
 |            | Delivery                            | Customer                            |
@@ -5976,7 +5976,7 @@ noninventoried items, freight, and miscellaneous charges can be set up in
 the Sales Order Processing Setup Options window and in the Invoicing Setup
 Options window. In these modules, you also have the option of basing the
 taxes for noninventoried items, freight, and miscellaneous charges on the
-customer. If you select that option, the customer’s tax schedule is used for
+customer. If you select that option, the customer's tax schedule is used for
 the tax calculations. For more information, see the Sales Order Processing
 and Invoicing documentation.
 
@@ -5984,7 +5984,7 @@ and Invoicing documentation.
 items, freight, and miscellaneous charges can be set up in the Purchase
 Order Processing Setup Options window. You also have the option of basing
 the taxes for noninventoried items, freight, and miscellaneous charges on
-the vendor. If you select that option, the vendor’s tax schedule is used for
+the vendor. If you select that option, the vendor's tax schedule is used for
 the tax calculations. For more information, see the Purchase Order
 Processing documentation.
 
@@ -6023,7 +6023,7 @@ Assume the tax schedules are assigned in the following manner:
 | Company            |                    | Customer/Vendor    |
 |                    |                    | Sale/Purchase      |
 
-Now, assume you’re recording a purchase of goods in Payables Management, and
+Now, assume you're recording a purchase of goods in Payables Management, and
 the shipping method is **pickup**. The tax schedule assigned to the vendor
 appears as the default schedule, and the following taxes are charged:
 
@@ -6088,7 +6088,7 @@ would follow this scenario:
 - An accounts payable clerk creates a creditor record for the supplier and
     records the withholding rate in the Creditor Withholding Options window.
 
-- When the purchasing company receives the supplier’s bill, the clerk records
+- When the purchasing company receives the supplier's bill, the clerk records
     the full bill amount.
 
 - When the clerk pays the bill, however, the Withholding amount is deducted
@@ -6113,7 +6113,7 @@ windows to enter the Withholding amounts.
 | **Window**                                              | **Field**                                                          | **What to enter**                                                             |
 |---------------------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | Additional Tax and Writeoff Distributions (Receivables) | Unposted Write-offs Distributed to Withholding: Withholding Amount | The Withholding amount that the debtor paid to the tax office on your behalf. |
-| Additional Tax and Write Off Distributions (Payables)   | Unposted Write-offs Distributed to Withholding: Withholding Amount | The amount you are paying to the tax office on the creditor’s behalf.        |
+| Additional Tax and Write Off Distributions (Payables)   | Unposted Write-offs Distributed to Withholding: Withholding Amount | The amount you are paying to the tax office on the creditor's behalf.        |
 
 **Example**
 
@@ -6162,7 +6162,7 @@ do business.
     separate tax detail for each type of good or service. (Be sure to set up
     both sales and purchases details, if applicable.)
 
-*If certain goods and services aren’t taxable in a particular jurisdiction,
+*If certain goods and services aren't taxable in a particular jurisdiction,
 you may not need to set up a tax detail for them. However, if you are
 required to track sales or purchases of these exempt or zero-rate taxes, you
 can set up tax details to do so.*
@@ -6273,22 +6273,22 @@ list.
     applicable.
 
 2. In the Taxable Amount Min and Max fields, enter the minimum and maximum
-    taxable amount for this detail, if applicable. If you don’t enter a minimum
+    taxable amount for this detail, if applicable. If you don't enter a minimum
     or maximum, taxes will be calculated on transactions of any amount.
 
-*If there is no maximum taxable amount, don’t enter anything other than 0 in
+*If there is no maximum taxable amount, don't enter anything other than 0 in
 the maximum taxable amount field. If the amount shown in that field is
 greater than zero, Microsoft Dynamics GP will compare the taxable amount to
 the maximum each time taxes are recalculated, which can significantly
 increase processing time. If the amount in the Taxable Amount Max field is
-0, Microsoft Dynamics GP doesn’t perform the comparison and processing time
+0, Microsoft Dynamics GP doesn't perform the comparison and processing time
 is reduced.*
 
 1. If you entered a minimum or maximum taxable amount, complete the following
     steps:
 
     - Use the Include list to select whether to calculate the tax on the full
-        amount of the transaction or only to the amount that’s within the
+        amount of the transaction or only to the amount that's within the
         minimum - maximum range of the tax.
 
     - Use the Qualifiers list to select what the taxable minimum and maximum
@@ -6300,7 +6300,7 @@ is reduced.*
     For example, if the GST on an item may be in the amount taxed by PST, mark
     the GST detail as a taxable tax.
 
-3. If you’re required by law to identify taxes on invoices, complete the
+3. If you're required by law to identify taxes on invoices, complete the
     following steps:
 
     - Mark the Print on Documents option.
@@ -6336,7 +6336,7 @@ is reduced.*
 
 ### Chapter 23: Tax schedules
 
-After you’ve set up details for all the taxes you’re required to collect or
+After you've set up details for all the taxes you're required to collect or
 pay, you can begin creating tax schedules. Tax schedules are groups of tax
 details that are assigned to a transaction. These schedules are used to
 calculate all the taxes that apply to a sales or purchase transaction.
@@ -6397,7 +6397,7 @@ a tax schedule that contains all tax details.*
 
 #### Setting up a tax schedule
 
-You’ll use the Tax Schedule Maintenance window to set up a tax schedule. You
+You'll use the Tax Schedule Maintenance window to set up a tax schedule. You
 can use the Copy button to create schedules if you have a long list of
 details that belong in several schedules. For more information see *Copying
 a tax schedule* .
@@ -6408,7 +6408,7 @@ a tax schedule* .
     Company \>\> Tax Schedules)
 
 2. Enter a tax schedule ID and a description. You may want to identify your
-    schedule with a descriptive name. For example, if you’re creating a tax
+    schedule with a descriptive name. For example, if you're creating a tax
     schedule for the city of Austin, Texas, you may want to name the schedule
     TXAUST.
 
@@ -6435,10 +6435,10 @@ a tax schedule* .
 #### Copying a tax schedule
 
 To save time, you can copy all tax details from an existing tax schedule
-into the tax schedule you’re currently setting up using the Tax Schedule
+into the tax schedule you're currently setting up using the Tax Schedule
 Maintenance window.
 
-For example, assume that you’ve created a schedule for Illinois taxes, and
+For example, assume that you've created a schedule for Illinois taxes, and
 now you want to create a sales tax schedule for the city of Chicago. The tax
 schedule for Chicago should include Illinois taxes. Rather than inserting
 each Illinois tax separately, you can enter an ID and description for the
@@ -6467,10 +6467,10 @@ of Chicago.
 
 #### Setting up default company tax schedules
 
-Once you’ve set up your tax schedules, you should assign default tax
+Once you've set up your tax schedules, you should assign default tax
 schedules to your company using the Company Setup window.
 
-See *Chapter 21, “Tax overview,”* for information about how default tax
+See *Chapter 21, "Tax overview,"* for information about how default tax
 schedules are used.
 
 **To set up default company tax schedules:**
@@ -6489,28 +6489,28 @@ schedules are used.
 This part of the documentation explains how to set up the Workflow system
 and create individual workflows.
 
-- *Chapter 24, “Plan the Workflow setup,”* provides a checklist to help guide
+- *Chapter 24, "Plan the Workflow setup,"* provides a checklist to help guide
     you through the setup process.
 
-- *Chapter 25, “Workflow E-mail Setup,”* helps you set up e-mail options to
+- *Chapter 25, "Workflow E-mail Setup,"* helps you set up e-mail options to
     send messages and perform actions in messages. You also can create messages
     that you can send to originators and approvers.
 
-- *Chapter 26, “Configure the Workflow calendar,”* explains what the Workflow
+- *Chapter 26, "Configure the Workflow calendar,"* explains what the Workflow
     calendar is and how to configure it.
 
-- *Chapter 27, “Configure a workflow,”* helps you create and configure a
+- *Chapter 27, "Configure a workflow,"* helps you create and configure a
     workflow.
 
-- *Chapter 28, “Configure a workflow step,”* explains how to define a specific
+- *Chapter 28, "Configure a workflow step,"* explains how to define a specific
     step of a workflow.
 
-- *Chapter 29, “Set up Workflow delegates,”* explains how to delegate workflow
+- *Chapter 29, "Set up Workflow delegates,"* explains how to delegate workflow
     tasks.
 
-- *Chapter 30, “Workflow maintenance,”* explains how to copy a workflow from
+- *Chapter 30, "Workflow maintenance,"* explains how to copy a workflow from
     one company to another, how to modify a workflow, and how to delete and
-    inactivate workflows you’re no longer using.
+    inactivate workflows you're no longer using.
 
 ### Chapter 24: Plan the Workflow setup
 
@@ -6523,34 +6523,30 @@ Workflow system.
 
 #### Workflow setup checklist
 
-To set up the Workflow system, you’ll need to complete several tasks. The
-following table lists the tasks you’ll need to complete and the order in
+To set up the Workflow system, you'll need to complete several tasks. The
+following table lists the tasks you'll need to complete and the order in
 which you should complete them.
 
-| **Task**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **For more information**                                                                                                                                                                          |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **1. Be sure that the SQL Server Agent service is set up to start automatically with the operating system.** If the SQL Server Agent service isn’t set up to start automatically, the escalation action you selected for your workflows will not be performed. When an approver fails to act on a task by the task’s due date, the task is considered overdue, or escalated. You can select the action to be taken when a task in the workflow overdue in the Workflow Maintenance window. | Refer to the Microsoft SQL Server Books Online.                                                                                                                                                  |
-| **2. Install Web Services for Microsoft Dynamics GP.** This component is required if you want to perform actions directly from the e-mail message, such as an approving a document. **Note:** When you install Web Services, be sure that the application user account is a domain account that has privileges to access Active Directory.                                                                                                                                                | Refer to the Microsoft Dynamics GP Web Services Installation and Administration Guide. Web Services for Microsoft Dynamics GP can be installed from the Microsoft Dynamics GP installation media. |
-| **3. Set up e-mail options for workflow.** Set up e-mail options for Workflow so you can send e-mail messages and perform actions in e-mail messages such as such as approving or rejecting a document.                                                                                                                                                                                                                                                                                   | *Chapter 25, “Workflow E-mail Setup”*                                                                                                                                                             |
-| **4. Set up e-mail messages for workflow notifications.** Create messages that you can send to originators and approvers when workflow tasks are assigned to them or when documents they’ve submitted have completed the workflow approval process.                                                                                                                                                                                                                                       | *Chapter 25, “Workflow E-mail Setup”*                                                                                                                                                             |
-| **5. Display workflow task on your home page.** Mark the Microsoft Workflow tasks option to display a list of the workflow tasks that are assigned to you on your home page.                                                                                                                                                                                                                                                                                                              | See Customizing the To Do area on your home page in the System User’s Guide.                                                                                                                     |
-| **5. Configure the Workflow calendar.** Configure the Workflow calendar to show which days are work days and which days are non-work days for each of your companies. The Workflow system will count only the work days when calculating a step’s deadline.                                                                                                                                                                                                                               | *Chapter 26, “Configure the Workflow calendar.”*                                                                                                                                                  |
-| **6. Create workflow.** Create and configure workflow, such as a purchase order workflow or a requisition workflow.                                                                                                                                                                                                                                                                                                                                                                       | *Chapter 27, “Configure a workflow.”*                                                                                                                                                             |
-| **7. Delegate Workflow tasks.** Specify how to delegate tasks.                                                                                                                                                                                                                                                                                                                                                                                                                            | *Chapter 29, “Set up Workflow delegates.”*                                                                                                                                                        |
+| **Task** | **For more information** |
+|--|--|
+| **1. Be sure that the SQL Server Agent service is set up to start automatically with the operating system.** If the SQL Server Agent service isn't set up to start automatically, the escalation action you selected for your workflows will not be performed. When an approver fails to act on a task by the task's due date, the task is considered overdue, or escalated. You can select the action to be taken when a task in the workflow overdue in the Workflow Maintenance window. | Refer to the Microsoft SQL Server Books Online. |
+| **2. Install Web Services for Microsoft Dynamics GP.** This component is required if you want to perform actions directly from the e-mail message, such as an approving a document. **Note:** When you install Web Services, be sure that the application user account is a domain account that has privileges to access Active Directory. | Refer to the Microsoft Dynamics GP Web Services Installation and Administration Guide. Web Services for Microsoft Dynamics GP can be installed from the Microsoft Dynamics GP installation media. |
+| **3. Set up e-mail options for workflow.** Set up e-mail options for Workflow so you can send e-mail messages and perform actions in e-mail messages such as such as approving or rejecting a document. | *Chapter 25, "Workflow E-mail Setup"* |
+| **4. Set up e-mail messages for workflow notifications.** Create messages that you can send to originators and approvers when workflow tasks are assigned to them or when documents they've submitted have completed the workflow approval process. | *Chapter 25, "Workflow E-mail Setup"* |
+| **5. Display workflow task on your home page.** Mark the Microsoft Workflow tasks option to display a list of the workflow tasks that are assigned to you on your home page. | See Customizing the To Do area on your home page in the System User's Guide. |
+| **5. Configure the Workflow calendar.** Configure the Workflow calendar to show which days are work days and which days are non-work days for each of your companies. The Workflow system will count only the work days when calculating a step's deadline. | *Chapter 26, "Configure the Workflow calendar."* |
+| **6. Create workflow.** Create and configure workflow, such as a purchase order workflow or a requisition workflow. | *Chapter 27, "Configure a workflow."* |
+| **7. Delegate Workflow tasks.** Specify how to delegate tasks. | *Chapter 29, "Set up Workflow delegates."* |
 
 #### Prepare for the Workflow setup
 
-The best way to prepare for setting up the Workflow system is to create
-diagrams illustrating the workflow you want to create. We recommend you draw
-each workflow using a software program such as Microsoft Office Visio, or by
-simply using pen and paper.
+The best way to prepare for setting up the Workflow system is to create diagrams illustrating the workflow you want to create. We recommend you draw each workflow using a software program such as Visio, or by simply using pen and paper.
 
 Your diagrams should indicate:
 
 - The order in which the workflow steps occur
 
-- Who the approvers are at each step, and the conditions under which their
-    approval is required
+- Who the approvers are at each step, and the conditions under which their approval is required
 
 For example, your diagram may look similar to the following workflow diagram.
 
@@ -6562,7 +6558,7 @@ For example, your diagram may look similar to the following workflow diagram.
 By setting up e-mail options for Workflow, you can send messages and perform
 actions in messages such as approving or rejecting a document. You also can
 create messages to send to originators and approvers when workflow tasks are
-assigned to them or when documents they’ve submitted have completed the
+assigned to them or when documents they've submitted have completed the
 workflow approval process.
 
 - *Setting up e-mail options for Workflow*
@@ -6642,12 +6638,12 @@ the Test Workflow E-Mail window to send a test message.
 
 2. Enter a valid e-mail address for the test e-mail message.
 
-3. Enter a subject line for the message. The default entry is “Test E-Mail for
-    Microsoft Dynamics GP Workflow”.
+3. Enter a subject line for the message. The default entry is "Test E-Mail for
+    Microsoft Dynamics GP Workflow".
 
 4. Enter the message that will appear in the e-mail when sending the test
-    message.The default entry for the body is “This is a test e-mail for
-    Microsoft Dynamics GP Workflow.”
+    message.The default entry for the body is "This is a test e-mail for
+    Microsoft Dynamics GP Workflow."
 
 5. Choose Send Test E-Mail.
 
@@ -6675,7 +6671,7 @@ deadline or comments from the originator of a purchase order approval.
 5. Select the series in which you want this message to appear. Messages
     assigned to All can be used with all series that have workflow types.
 
-6. Select a document type from the series you selected. This field isn’t
+6. Select a document type from the series you selected. This field isn't
     available if you selected All as the series.
 
 7. Enter a subject line for the message.
@@ -6732,7 +6728,7 @@ originator of a purchase order approval.
 3. Select the series in which you want this message to appear. Messages
     assigned to All can be used with all series that have workflow types.
 
-4. Select a document type from the series you selected. This field isn’t
+4. Select a document type from the series you selected. This field isn't
     available if you selected All as the series.
 
 5. Place the cursor in the Subject field or in the message body.
@@ -6753,7 +6749,7 @@ right-click menu:**
 3. Select the series in which you want this message to appear. Messages
     assigned to All can be used with all series that have workflow types.
 
-4. Select a document type from the series you selected. This field isn’t
+4. Select a document type from the series you selected. This field isn't
     available if you selected All as the series.
 
 5. Place the cursor in the Subject field or in the message body.
@@ -6783,7 +6779,7 @@ document.
 3. Select the series in which you want this message to appear. Messages
     assigned to All can be used with all series that have workflow types.
 
-4. Select a document type from the series you selected. This field isn’t
+4. Select a document type from the series you selected. This field isn't
     available if you selected All as the series.
 
 5. Choose Document Lines to add document line item information to the message.
@@ -6816,9 +6812,9 @@ how to configure it.
 
 The Workflow calendar shows which days are work days and which are non-work
 days. The Workflow system will count only the work days when calculating a
-step’s due date. The Workflow calendar uses the date and time values from
+step's due date. The Workflow calendar uses the date and time values from
 server that has Microsoft Dynamics GP installed. Work days are typical work
-days and times for the company. A task’s due date is calculated using the
+days and times for the company. A task's due date is calculated using the
 time limit specified for workflow steps and the work days and times entered
 in the Workflow Calendar window. The Workflow calendar uses the date and
 time values from server that has Microsoft Dynamics GP installed.
@@ -6827,14 +6823,14 @@ For example, assume that you have set up a calendar to have Monday through
 Friday as the work days and 8 A.M. to 5 P.M. as hours worked for each day.
 The workflow step assigned to Amy, the purchasing manager, gives Amy a
 four–hour time limit to act on her workflow task. Using the Workflow
-calendar, if Amy is assigned a purchase order at 3 P.M. on Monday, she’ll
+calendar, if Amy is assigned a purchase order at 3 P.M. on Monday, she'll
 have until 10 A.M. on Tuesday to approve or reject the purchase order.
 
 As another example, assume that the workflow step assigned to Amy gives her
 a three days to act on her workflow tasks. Using the Workflow calendar, if
-Amy is assigned a purchase order at 2 P.M. on Thursday, she’ll have until 2
+Amy is assigned a purchase order at 2 P.M. on Thursday, she'll have until 2
 P.M. of Tuesday to approve or reject the purchase order. This is because
-Saturday and Sunday are not counted toward the task’s due date.
+Saturday and Sunday are not counted toward the task's due date.
 
 Non-work days are not counted against the time limit set for activity
 assignments for workflow steps. For example, assume that you have set up a
@@ -6842,14 +6838,14 @@ calendar to have Monday through Friday as the work days and 8 A.M. to 5 P.M.
 as hours worked for each day. Plus, you added Monday, July 22 to the
 calendar as a non-working day. The workflow step assigned to Amy gives her
 two days to act on her workflow tasks. Using the Workflow calendar, if Amy
-is assigned a purchase order at 3 PM on Thursday, July 18, she’ll have until
+is assigned a purchase order at 3 PM on Thursday, July 18, she'll have until
 3 P.M. of Tuesday, July 23 to approve or reject the purchase order.
 
 #### Configure the Workflow calendar
 
 The Workflow calendar shows which days are work days and which are non-work
 days. The Workflow system will count only the work days when calculating a
-step’s due date.
+step's due date.
 
 **To configure the Workflow calendar:**
 
@@ -6871,7 +6867,7 @@ step’s due date.
 Creating and configuring a workflow is a multiple step process. The first
 section in this chapter provides the checklist you can use to create and
 configure a workflow. The second section in this chapter provides a detailed
-procedure you’ll need to follow to create and configure a workflow.
+procedure you'll need to follow to create and configure a workflow.
 
 - *Creating and configuring a workflow checklist*
 
@@ -6879,8 +6875,8 @@ procedure you’ll need to follow to create and configure a workflow.
 
 #### Creating and configuring a workflow checklist
 
-To create and configure a workflow, you’ll need to complete several tasks.
-The following steps lists the tasks you’ll need to complete and the order in
+To create and configure a workflow, you'll need to complete several tasks.
+The following steps lists the tasks you'll need to complete and the order in
 which you should complete them. See *Creating and configuring a workflow*
 for more detailed steps.
 
@@ -6918,7 +6914,7 @@ A screenshot of a cell phone Description automatically generated
 #### Creating and configuring a workflow
 
 A workflow is the approval process for a document. A workflow defines how a
-document “flows” through the system by showing who must approve it, and the
+document "flows" through the system by showing who must approve it, and the
 conditions under which they must approve it.
 
 **To create and configure a workflow:**
@@ -6947,19 +6943,19 @@ Selection window to add managers to the workflow type.*
 
 Enter a unique name for the workflow. We recommend that the name include
 your company name and the type of document the workflow is for. For example,
-if you’re configuring a workflow for purchase orders created in the Fabrikam
-sample company, you may want to name the workflow “Fabrikam Purchase
-Orders.”
+if you're configuring a workflow for purchase orders created in the Fabrikam
+sample company, you may want to name the workflow "Fabrikam Purchase
+Orders."
 
-You also can enter a description of the workflow, such “Multiple approval
-steps for purchase orders.”
+You also can enter a description of the workflow, such "Multiple approval
+steps for purchase orders."
 
 *You can choose the Copy button to copy an existing workflow from one
 company to another company. For more information, see Copying a workflow .*
 
 1. Indicate whether notifications should be sent for completed actions.
 
-You can send notifications messages to users when the documents they’ve
+You can send notifications messages to users when the documents they've
 submitted have completed actions in the workflow approval process.
 
 Mark the Send notifications for completed actions option and choose the
@@ -7042,7 +7038,7 @@ The *final approver* is the last person in the approval path who is required
 to approve a document. For example, assume that Sam submits a purchase order
 for Northwind Traders totalling \$7,000. This purchase order must be
 approved by Frank and Sue. Because the purchase order is not greater than
-\$10,000, Ann’s approval is not required. In this scenario, Sue is the final
+\$10,000, Ann's approval is not required. In this scenario, Sue is the final
 approver.
 
 ![](media/3fd05b6b6930ad162ceaf5a9710f2e82.jpg)
@@ -7066,12 +7062,12 @@ Ann edits the \$11,000 purchase order that Sam submitted. Ann increases the
 quantity of items requested so that the purchase order now totals \$12,000.
 She then approves the document. Ann typically would be the final approver
 (because the document is more than \$10,000). However, because Ann edited
-the document, she can’t final approve it. The document will be sent to the
+the document, she can't final approve it. The document will be sent to the
 alternate final approver for approval.
 
 1. Indicate what should happen when a task is overdue.
 
-When an approver fails to act on a task by the task’s due date, the task is
+When an approver fails to act on a task by the task's due date, the task is
 considered overdue, or escalated. Indicate what should happen to overdue
 tasks by selecting one of the following options.
 
@@ -7093,8 +7089,8 @@ system to automatically reject the task.
 2. Set up the workflow steps.
 
 Choose the New Workflow Step button to add a step to this workflow. For
-instructions on how to configure a step, see *Chapter 28, “Configure a
-workflow step.”*
+instructions on how to configure a step, see *Chapter 28, "Configure a
+workflow step."*
 
 1. Activate the workflow.
 
@@ -7103,12 +7099,12 @@ you can create multiple purchase order workflows. However, only one workflow
 of that type can be used at a time. The Active option indicates which
 workflow of that type will be used.
 
-Mark the Active option to make the workflow you’re configuring the active
+Mark the Active option to make the workflow you're configuring the active
 workflow. You must have at least one step created for the workflow before
 you can activate a workflow. If you do not want to implement this workflow
 in your company just yet, leave the Active option unmarked.
 
-If there is already an active workflow of this type, you’ll need to
+If there is already an active workflow of this type, you'll need to
 deactivate that workflow first, before activating this workflow. When you
 save the workflow and there is already an active workflow of this type, a
 message appears stating that there may be only one active workflow per
@@ -7120,10 +7116,10 @@ workflow, the Active option for the other workflow is unmarked.
 
 ### Chapter 28: Configure a workflow step
 
-As part of configuring a workflow, you’ll need to define the specific steps
+As part of configuring a workflow, you'll need to define the specific steps
 in the workflow. The first section in this chapter provides a checklist you
 can use to configure a workflow step. The second section in this chapter
-provides the detailed procedure you’ll need to follow to configure a
+provides the detailed procedure you'll need to follow to configure a
 workflow step.
 
 - *Configuring a workflow step checklist*
@@ -7132,8 +7128,8 @@ workflow step.
 
 #### Configuring a workflow step checklist
 
-To create and configure a workflow step, you’ll need to complete several
-tasks. The following steps list the tasks you’ll need to complete and the
+To create and configure a workflow step, you'll need to complete several
+tasks. The following steps list the tasks you'll need to complete and the
 order in which you should complete them. See *Configuring a workflow step*
 for more detailed steps.
 
@@ -7207,16 +7203,16 @@ or a task may be required always, or only under specific conditions.
 **Action is always required** If approval or task is always required at this
 step, select the Action is always required for this step option.
 
-Keep in mind, if you select this option, it doesn’t mean that this step will
+Keep in mind, if you select this option, it doesn't mean that this step will
 *always* occur in the workflow; rather, it means that any document *that
 reaches this step* must always be approved or the task be completed.
 
 To understand this better, consider the following workflow illustration.
 There are two approval paths for purchase orders: one for purchase orders
 for Adventure Works, the other for purchase orders for Contoso, Ltd. Notice
-that when a purchase order for Contoso, Ltd. reaches step 2b, Jill’s
+that when a purchase order for Contoso, Ltd. reaches step 2b, Jill's
 approval is always required. Purchase orders for Adventure Works will never
-reach step 2b, so Jill’s approval is not required in those situations.
+reach step 2b, so Jill's approval is not required in those situations.
 
 ![A close up of a map Description automatically generated](media/593b35ed918329627fc97968fe021ce3.jpg)
 
@@ -7231,19 +7227,19 @@ conditions under which approval or the action is required. Choose the
 expansion button to open the Workflow Condition Editor window.
 
 For an example of adding a specific condition, consider the previous
-workflow diagram. Notice that Frank’s approval is required only when the
+workflow diagram. Notice that Frank's approval is required only when the
 vendor on the purchase order is Adventure Works. You would use the following
-steps to add Frank’s approval requirement as a condition.
+steps to add Frank's approval requirement as a condition.
 
 | 1. | Open the Workflow Condition Editor.                                                                                                                                                                      |
 |----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2. | Since this is the first condition created for the workflow step, the first part of the condition is Where.                                                                                               |
-| 3. | The second part of the condition is to select the field that you want to use in the condition. Since Frank’s approval is needed for a specific vendor ID, you would select Purchase Order Work Vendor ID. |
-| 4. | Next, select a restriction to apply to the field you selected. The restrictions available depend on the type of field you selected. In this case, you would select “is” as your restriction.             |
-| 5. | After selecting the restriction, determine the comparison. Since Frank’s approval is needed for a specific vendor ID, you would select Constant to use a value instead of a field on the same document.  |
+| 3. | The second part of the condition is to select the field that you want to use in the condition. Since Frank's approval is needed for a specific vendor ID, you would select Purchase Order Work Vendor ID. |
+| 4. | Next, select a restriction to apply to the field you selected. The restrictions available depend on the type of field you selected. In this case, you would select "is" as your restriction.             |
+| 5. | After selecting the restriction, determine the comparison. Since Frank's approval is needed for a specific vendor ID, you would select Constant to use a value instead of a field on the same document.  |
 | 6. | Then, enter a specific value to use in the condition. For this condition, it would be ADVENWORK001.                                                                                                      |
-| 7. | The last step is to choose Add to add the condition to the Conditions list. The condition should look like the following. where Purchase Order Work.VendorID is ‘ADVENWORK001’                            |
-|    | After adding this condition in the Conditions list, the “and” and “or” options are available for the next condition for the workflow step, if applicable.                                                |
+| 7. | The last step is to choose Add to add the condition to the Conditions list. The condition should look like the following. where Purchase Order Work.VendorID is 'ADVENWORK001'                            |
+|    | After adding this condition in the Conditions list, the "and" and "or" options are available for the next condition for the workflow step, if applicable.                                                |
 
 1. Assign approvers.
 
@@ -7258,7 +7254,7 @@ documents that reach this step in the workflow.
 
 Specify how many hours, days, or weeks the approver has to respond to the
 task—that is, approve or reject it. The number of hours, days, or weeks you
-enter will be used to calculate the task’s due date.
+enter will be used to calculate the task's due date.
 
 Mark the Apply Workflow Calendar option to include the Workflow calendar in
 the due date calculations for the step. For example, assume that you have
@@ -7269,7 +7265,7 @@ then the due date for the task will be set to 10:00 A.M. Thursday morning.
 If the option is not marked, the due date for the task is set to 7:00 P.M.
 Wednesday evening.
 
-*For detailed information about how a task’s due date is calculated, see
+*For detailed information about how a task's due date is calculated, see
 Overview of the Workflow calendar .*
 
 If an approver fails to respond by the due date, the task is considered
@@ -7341,10 +7337,10 @@ Choose Save Step.
 
 ### Chapter 29: Set up Workflow delegates
 
-After you’ve set up and activated a workflow in Microsoft Dynamics GP,
+After you've set up and activated a workflow in Microsoft Dynamics GP,
 specify how to delegate workflow tasks to other users.
 
-• *Delegating tasks*
+* *Delegating tasks*
 
 #### Delegating tasks
 
@@ -7378,7 +7374,7 @@ following steps.
 
 If users will be out of the office for a period of time, or unavailable to
 respond to tasks, have them delegate their tasks. For more information, see
-*Chapter 15, “Workflow tasks.”*
+*Chapter 15, "Workflow tasks."*
 
 ### Chapter 30: Workflow maintenance
 
@@ -7418,9 +7414,9 @@ workflow. You also can copy a workflow from one company to another.
 6. Enter a unique name for the workflow.
 
 We recommend that the name include your company name and the type of
-document the workflow is for. For example, if you’re configuring a workflow
+document the workflow is for. For example, if you're configuring a workflow
 for purchase orders created in the Fabrikam sample company, you may want to
-name the workflow “Fabrikam Purchase Orders.”
+name the workflow "Fabrikam Purchase Orders."
 
 1. Enter the description of the workflow.
 
@@ -7453,13 +7449,13 @@ Maintenance)
 For more information about each of the options in the window, see *Chapter
 27,*
 
-*“Configure a workflow”* and *Chapter 28, “Configure a workflow step.”*
+*"Configure a workflow"* and *Chapter 28, "Configure a workflow step."*
 
 1. Choose Save Workflow.
 
 #### Deleting a workflow
 
-To delete a workflow you’re no longer using, use the following steps.
+To delete a workflow you're no longer using, use the following steps.
 
 *You cannot delete a workflow that has an instance started.*
 
@@ -7486,7 +7482,7 @@ continue through the original workflow until they are complete.
 
 When you inactivate a workflow, the message bar and workflow related buttons
 that appeared in the associated entry window are removed, assuming that you
-haven’t activated another workflow. For example, the message bar that appeared
+haven't activated another workflow. For example, the message bar that appeared
 in the Purchase Order Entry window would be removed.
 
 *Before you make a workflow inactive, you may want to process the documents
@@ -7555,19 +7551,19 @@ organizational structure.
 
 This part of the documentation includes:
 
-- *Chapter 31, “Organizational levels and entities,”* explains how to define
+- *Chapter 31, "Organizational levels and entities,"* explains how to define
     the components of your organizational structure.
 
-- *Chapter 32, “Organizational relationships,”* describes how to define the
+- *Chapter 32, "Organizational relationships,"* describes how to define the
     association between levels and entities in your organization.
 
-- *Chapter 33, “User and user class assignments,”* shows how to assign users
+- *Chapter 33, "User and user class assignments,"* shows how to assign users
     and user classes to the organizational structure you have created.
 
-- *Chapter 34, “Account assignments,”* explains how to assign both individual
+- *Chapter 34, "Account assignments,"* explains how to assign both individual
     accounts and account ranges to your organizational structure.
 
-- *Chapter 35, “Account security,”* describes how to activate account security
+- *Chapter 35, "Account security,"* describes how to activate account security
     and provides information on the effects of account security.
 
 ### Chapter 31: Organizational levels and entities
@@ -7623,7 +7619,7 @@ Take some time before you begin the actual setup and think about the way
 your organization works. Using your existing organizational chart is an
 excellent place to begin.
 
-*Be sure you’ve identified each of the units in all of your companies. The
+*Be sure you've identified each of the units in all of your companies. The
 levels and entities you create in this window will be used for all of your
 Microsoft Dynamics GP companies.*
 
@@ -7636,11 +7632,11 @@ Microsoft Dynamics GP companies.*
     enter for each of the levels will appear throughout Microsoft Dynamics GP.
     You can change these labels at any time.
 
-*You don’t have to enter labels for all four levels if you don’t need them
+*You don't have to enter labels for all four levels if you don't need them
 all. For example, if you have only one company and your organization
 includes regions, divisions, and departments, you could enter those labels
 for levels 1, 2, and 3 and leave level 4 blank. If you leave a level blank,
-you won’t be able to enter any entities in it, and it won’t appear anywhere
+you won't be able to enter any entities in it, and it won't appear anywhere
 in Microsoft Dynamics GP.*
 
 1. Enter an ID and a description for each entity that exists at each level of
@@ -7649,7 +7645,7 @@ in Microsoft Dynamics GP.*
 2. Verify your entries with the Organizational Structure Setup Report.
 
 Use the Organizational Structure Setup Report to verify that you have
-entered labels for each of the levels you’ll use, and that you’ve entered
+entered labels for each of the levels you'll use, and that you've entered
 IDs and descriptions for each entity in your organization. You can print
 this report while the Organizational Structure Setup window is open by
 choosing File \>\> Print.
@@ -7668,7 +7664,7 @@ organizational structure. You can add levels at any time.
 (Administration \>\> Setup \>\> System \>\> Organizational Structure)
 
 1. Enter the label of the level you want to add. When you create a new level,
-    you’ll need to add entities to that level.
+    you'll need to add entities to that level.
 
 2. Choose OK to save your changes.
 
@@ -7683,10 +7679,10 @@ organizational structure. You can delete levels at any time.
     \>\> System \>\> Organizational Structure)
 
 2. Delete the label of the level to remove. If a level does not have a label,
-    you won’t be able to create any entities in it, and it won’t appear anywhere
+    you won't be able to create any entities in it, and it won't appear anywhere
     in Microsoft Dynamics GP.
 
-*You can’t delete a level if any entities exist in it or if any levels exist
+*You can't delete a level if any entities exist in it or if any levels exist
 below it in the organizational structure.*
 
 1. Choose OK to save your changes.
@@ -7796,16 +7792,16 @@ This information is divided into the following sections:
 
 Organizational relationships define the association between levels and
 entities in your organization. Organizational relationships are defined in
-terms of parent/ child relationships. For example, a company’s East region
+terms of parent/ child relationships. For example, a company's East region
 may have a Products division and a Services division; the East region is a
 parent entity, and the Products and Services divisions are child entities.
 
-Parent/child relationships must be defined in a “top-down” manner—that is,
+Parent/child relationships must be defined in a "top-down" manner—that is,
 you must begin with a level 1 entity and assign the level 2 entities that
 are its children. You can then assign the level 3 child entities for a level
 2 parent, so on.
 
-*You can copy the relationships you’ve defined for one entity to another
+*You can copy the relationships you've defined for one entity to another
 entity, or to all other entities at the same level. For example, assume you
 have a Company/Division/Department structure, and all your companies have a
 Hardware division with a Production department. You could create the
@@ -7863,14 +7859,14 @@ If you have a basic structure that appears throughout your organization, you
 can create the appropriate parent/child relationships once, and copy that
 structure to the rest of your organization. You can copy the relationships
 from one entity to another entity or to all the entities at the same level.
-If you’re copying to entities that have already been assigned relationships,
+If you're copying to entities that have already been assigned relationships,
 you can choose to add to the existing structure, or replace it with the new
 structure. You also can specify to copy specific level-2 or level-3
 relationships. For more information on copying relationships, see *Examples
 of copying organizational relationships* .
 
 *Use caution when copying relationships to entities with existing
-structures. Be sure you don’t add or replace relationships that you don’t
+structures. Be sure you don't add or replace relationships that you don't
 intend to add or replace.*
 
 **To copy organizational relationships:**
@@ -7886,7 +7882,7 @@ parent/child relationship under the company ACME, highlight that company. If
 you want to copy the relationships below ACME company and region EAST,
 expand the ACME branch and select EAST.
 
-*If you’re copying a portion of the organizational structure that has
+*If you're copying a portion of the organizational structure that has
 accounts assigned to it, those accounts will not be assigned to the new
 structure.*
 
@@ -7902,7 +7898,7 @@ These values can be changed.
 1. Decide if you want to copy the relationship to all entities or to a specific
     one.
 
-- If you’re copying to all entities, the relationship will be copied only to
+- If you're copying to all entities, the relationship will be copied only to
     entities that exist at the lowest level entered in the Copy From fields—that
     is, if you specify a level 3 entity to copy from, the relationships will be
     copied only to existing level 3 entities.
@@ -7916,10 +7912,10 @@ You also can choose to add the relationship to existing structures, or you
 can replace the existing structures with the specified relationship.
 
 1. Choose the Copy button to begin copying the selected relationships. When the
-    copying process is finished, the window will remain open and you’ll be able
+    copying process is finished, the window will remain open and you'll be able
     to select more relationships to copy.
 
-2. When you’ve finished copying entities, close the window.
+2. When you've finished copying entities, close the window.
 
 #### Examples of copying organizational relationships
 
@@ -7930,7 +7926,7 @@ Fabrikam–Canada.
 
 **Copying a level 1 relationship to all entities**
 
-Assume you’ve created the following structure for Fabrikam:
+Assume you've created the following structure for Fabrikam:
 
 ##### Fabrikam Hardware
 
@@ -7995,7 +7991,7 @@ has a Software division, and you want to copy the departments under
 Fabrikam/ Hardware to both the Hardware division of the UK company and the
 Software division of the Canada company. You can do this by first adding the
 Hardware division to the UK company and the Software division to the Canada
-company. The following table illustrates the structures you’d need to define
+company. The following table illustrates the structures you'd need to define
 before copying relationships.
 
 ##### Fabrikam Hardware
@@ -8008,7 +8004,7 @@ Production
 
 ##### Research Sales Fabrikam–UK Hardware Fabrikam–CAN Software
 
-After you’ve created this structure, you can copy the relationships from
+After you've created this structure, you can copy the relationships from
 Fabrikam/
 
 Hardware. In the Organizational Tree window, select Fabrikam, then select
@@ -8074,10 +8070,10 @@ Use the Organizational Tree window and the Define Entity Relationships
 window to remove parent/child relationships from the entities in your
 organization.
 
-Because relationships are defined in a “top-down” manner, changes made to a
+Because relationships are defined in a "top-down" manner, changes made to a
 parent entity can affect its child entities. For example, if you remove a
 parent/child relationship, all the relationships below that are lost. You
-can’t move a branch—that is, a child entity that has other child entities
+can't move a branch—that is, a child entity that has other child entities
 below it—from one parent entity to another and preserve the relationships
 below it.
 
@@ -8103,7 +8099,7 @@ that is removed may still be assigned to other positions.*
 ### Chapter 33: User and user class assignments
 
 This information describes how to create user classes and assign users and
-user classes to the organizational structure you’ve created. You must assign
+user classes to the organizational structure you've created. You must assign
 user and user classes before you can activate account level security.
 
 You can create user classes and assign them to an organizational entity in
@@ -8112,7 +8108,7 @@ security.
 
 You also can specify sets of specific shortcuts to common tasks for each
 user class with the shortcut bar. Each set of shortcuts will appear on the
-user’s shortcut bar in a user class folder. See *Assigning shortcuts to a
+user's shortcut bar in a user class folder. See *Assigning shortcuts to a
 new user class folder* for instructions on creating a user class shortcut
 folder.
 
@@ -8133,11 +8129,11 @@ This information is divided into the following sections:
 - *Changing the assignment of a user*
 
 For information about assigning accounts to the organizational structure,
-see *Chapter 34, “Account assignments.”*
+see *Chapter 34, "Account assignments."*
 
 #### Creating a user class
 
-You’ll use the User Class Setup window to create a user class.
+You'll use the User Class Setup window to create a user class.
 
 **To create a user class:**
 
@@ -8189,7 +8185,7 @@ only one position in the organizational structure.
 
 *If you have a large number of users, we recommend that you use user classes
 to assign groups of them to positions in the organizational structure. If
-you do need to make changes to the structure, you’ll be able to apply those
+you do need to make changes to the structure, you'll be able to apply those
 changes to all the users in a class, rather than one at a time. For more
 information, see How rolling down changes affects users in a class .*
 
@@ -8220,7 +8216,7 @@ in the Organizational Tree window (Administration \>\> Cards \>\> System
 relationships .*
 
 As you enter the entities, you also are selecting the position in the
-organizational structure you’re assigning the user class to. For example, if
+organizational structure you're assigning the user class to. For example, if
 to assign the user class to the Consulting department of the Hardware
 division of Fabrikam, you would enter Fabrikam in the first level, Hardware
 in the second level and Consulting in the third level.
@@ -8231,7 +8227,7 @@ in the second level and Consulting in the third level.
 
 #### Changing the assignment of a user class
 
-Use the Organizational Structure Assignment window to change a user class’s
+Use the Organizational Structure Assignment window to change a user class's
 position in the organizational structure. You can assign a user class to
 only one position in the organizational structure.
 
@@ -8241,7 +8237,7 @@ once, rather than one at a time. For more information, see *How rolling down
 changes affects users in a class* .
 
 Only the system administrator and users granted full access to all accounts
-can change a user class’s position in the organizational structure. (Full
+can change a user class's position in the organizational structure. (Full
 access to accounts is granted to users and user classes in the
 Organizational Structure Assignment window.)
 
@@ -8261,14 +8257,14 @@ Organizational Structure Assignment window.)
 3. Highlight the current position assignment of the user class and choose
     Remove.
 
-*Because a user class can’t be assigned to more than one position, you must
+*Because a user class can't be assigned to more than one position, you must
 first remove its current position assignment before selecting a new one.*
 
 1. Enter or select the entities that specify the new position to assign the
     user class to.
 
 As you enter the entities, you also are selecting the position in the
-organizational structure you’re assigning the user class to. For example, if
+organizational structure you're assigning the user class to. For example, if
 you want to assign the user class to the Production department of the
 Eastern region of Fabrikam, you would enter Fabrikam in the first level,
 East in the second level and Production in the third level.
@@ -8280,7 +8276,7 @@ East in the second level and Production in the third level.
 #### How rolling down changes affects users in a class
 
 When you make changes to the organizational assignment for a user class,
-you’ll have the option to apply those changes to the user records assigned
+you'll have the option to apply those changes to the user records assigned
 to that class. If you roll down changes, all the changes you make will apply
 to all the users in the class.
 
@@ -8288,11 +8284,11 @@ Rolling down changes applies all the settings for a user class, not just
 those that you changed in an individual session.
 
 *If you roll down changes for a class, any individual position assignments
-you’ve made for users in that class will be lost. For more information on
+you've made for users in that class will be lost. For more information on
 position assignments for individual users, see Assigning a user to an
 organizational structure .*
 
-If you choose not to roll down changes, the changes won’t affect any
+If you choose not to roll down changes, the changes won't affect any
 existing users but will be reflected in the settings for all users you
 assign to this class in the future.
 
@@ -8333,7 +8329,7 @@ in the Organizational Tree window (Administration \>\> Cards \>\> System
 relationships .*
 
 As you enter the entities, you also are selecting the position in the
-organizational structure you’re assigning the user to. For example, if you
+organizational structure you're assigning the user to. For example, if you
 want to assign the user to the Consulting department of the Hardware
 division of Fabrikam, you would enter Fabrikam in the first level, Hardware
 in the second level and Consulting in the third level.
@@ -8344,12 +8340,12 @@ in the second level and Consulting in the third level.
 
 #### Changing the assignment of a user
 
-Use the Organizational Structure Assignment window to change a user’s
+Use the Organizational Structure Assignment window to change a user's
 position in the organizational structure. You can assign a user to only one
 position in the organizational structure.
 
 Only the system administrator and users granted full access to all accounts
-can change a user’s position in the organizational structure. (Full access
+can change a user's position in the organizational structure. (Full access
 to accounts is granted to users and user classes in the Organizational
 Structure Assignment window.)
 
@@ -8366,16 +8362,16 @@ Structure Assignment window.)
 2. Indicate whether this user should have access to all accounts, regardless of
     their position in the organizational structure.
 
-3. Highlight the user’s current position assignment and choose Remove.
+3. Highlight the user's current position assignment and choose Remove.
 
-*Because a user can’t be assigned to more than one position, you must first
+*Because a user can't be assigned to more than one position, you must first
 remove their current position assignment before selecting a new one.*
 
 1. Enter or select the entities that specify the new position to assign the
     user to.
 
 As you enter the entities, you also are selecting the position in the
-organizational structure you’re assigning the user to. For example, to
+organizational structure you're assigning the user to. For example, to
 assign a user to the Production department of the Eastern region of
 Fabrikam, you would enter Fabrikam in the first level, East in the second
 level and Production in the third level.
@@ -8386,7 +8382,7 @@ level and Production in the third level.
 
 ### Chapter 34: Account assignments
 
-After assigning users to the organizational structure you’ve created, you
+After assigning users to the organizational structure you've created, you
 must assign accounts to the structure. This information describes how to
 assign individual accounts and ranges of accounts. Then, when you activate
 account level security, users will be able to access only those accounts
@@ -8415,7 +8411,7 @@ can allow users to have access to an allocation account—either fixed or
 variable—while not allowing them to have access to any of the distribution
 or breakdown accounts for the allocation account.
 
-*If you activate account security and you have accounts that aren’t assigned
+*If you activate account security and you have accounts that aren't assigned
 to at least one position in the organizational tree, those accounts will be
 available only to users who have been given access to all accounts.*
 
@@ -8423,8 +8419,8 @@ Only the system administrator and users granted full access to all accounts
 can assign a range of accounts to the organizational structure. (Full access
 to accounts can be granted to users and user classes in the Organizational
 Structure Assignment window.) For more information on granting users and
-user classes access to all accounts, see *Chapter 33, “User and user class
-assignments.”*
+user classes access to all accounts, see *Chapter 33, "User and user class
+assignments."*
 
 **To assign a range of accounts to an entity:**
 
@@ -8441,12 +8437,12 @@ System \>\> Organizational Tree). For more information, see Defining
 organizational relationships .*
 
 As you enter the entities, you also are selecting the position in the
-organizational structure to which you’re assigning the range of accounts.
+organizational structure to which you're assigning the range of accounts.
 For example, to assign accounts to the Sales department of the Hardware
 division of Fabrikam, you would enter Fabrikam in the first level, Hardware
 in the second level and Sales in the third.
 
-1. Select the ID of the company to which you’re making account assignments.
+1. Select the ID of the company to which you're making account assignments.
 
 *If you are using Intercompany Processing and want account security to apply
 to transactions originating in another company, you must assign the
@@ -8520,13 +8516,13 @@ assigned positions for the selected company.
 positions for the selected company, you can leave these fields blank.*
 
 As you enter the entities, you also are selecting the position in the
-organizational structure to which you’re assigning the range of accounts.
+organizational structure to which you're assigning the range of accounts.
 For example, if you want to change the ranges of accounts that will be
 available to the Production department of the Eastern region of Fabrikam,
 you would enter Fabrikam in the first level, East in the second level and
 Production in the third level.
 
-1. Select the ID of the company to which you’re changing account assignments.
+1. Select the ID of the company to which you're changing account assignments.
 
 2. You can assign additional ranges of accounts to the position, remove
     specific ranges of accounts from the position, or remove specific ranges of
@@ -8591,7 +8587,7 @@ accounts for the allocation account.
     assign the account.
 
 As you enter the entities, you also are selecting the position in the
-organizational structure to which you’re assigning the account. For example,
+organizational structure to which you're assigning the account. For example,
 to assign an account that will be available to the Hardware division of
 Fabrikam, you would enter Fabrikam in the first level and Hardware in the
 second level.
@@ -8633,7 +8629,7 @@ position in the organizational structure.
     assign the account.
 
 As you enter entities, you also are selecting the position in the
-organizational structure to which you’re assigning the account. For example,
+organizational structure to which you're assigning the account. For example,
 to assign an account to the Hardware division of Fabrikam, you would enter
 Fabrikam in the first level and Hardware in the second level.
 
@@ -8673,14 +8669,14 @@ This information is divided into the following sections:
 #### Activating account security
 
 The organizational structure you create—including the user, user class, and
-account assignments—won’t take effect until you activate account security in
+account assignments—won't take effect until you activate account security in
 the Company Setup window. You must activate account security separately for
 each of the companies you create in Microsoft Dynamics GP.
 
 *Account security settings will take effect for each user when the user logs
 into the system after account security has been activated.*
 
-Before beginning this procedure, be sure you’re logged in to the company to
+Before beginning this procedure, be sure you're logged in to the company to
 which you want to activate account security.
 
 **To activate account security:**
@@ -8690,13 +8686,13 @@ which you want to activate account security.
 
 2. Mark the Account Security option.
 
-3. Choose OK to save your settings. When you’ve finished, close the window.
+3. Choose OK to save your settings. When you've finished, close the window.
 
 #### Effects of account security on transactions
 
-Once you activate account security, you can’t enter, view, edit, or post any
+Once you activate account security, you can't enter, view, edit, or post any
 transactions in General Ledger windows that include a secured account—that
-is, an account to which you don’t have access.
+is, an account to which you don't have access.
 
 When you use the transaction entry windows in Receivables Management,
 Payables
@@ -8707,10 +8703,10 @@ Reconciliation, you can enter, view, and edit transactions that include
 default distributions to secured accounts. However, account security will
 apply to account distributions. You can open the distribution entry windows,
 but if any accounts are secured—not available to you—the account field will
-be blank and the message “Access denied/Account missing” will appear in the
+be blank and the message "Access denied/Account missing" will appear in the
 Description field. If you attempt to enter an account number that is
-secured, the message “You don’t have permission to create new accounts or
-view all accounts” will appear when you move from the field. The account and
+secured, the message "You don't have permission to create new accounts or
+view all accounts" will appear when you move from the field. The account and
 description fields will be cleared.
 
 *If you attempt to post a transaction in a module other than General Ledger
@@ -8736,27 +8732,27 @@ whether it is a secured account or not.)
 #### Effects of account security on inquiries
 
 Account security will apply to all account fields in the inquiry windows in
-all modules. If you don’t have full access to all accounts, you won’t be
+all modules. If you don't have full access to all accounts, you won't be
 able to view secured accounts by using an account lookup, by using the
 browse buttons, by entering a secured account number, or by zooming from an
 account field on another window.
 
 When you use an inquiry window that includes an account field you can view
 records that include secured accounts. However, the account field will be
-blank and the message “Access denied/Account missing” will appear in the
+blank and the message "Access denied/Account missing" will appear in the
 Description field. If you attempt to enter an account number that is
-secured, the message “You don’t have permission to create new accounts or
-view all accounts” will appear when you move from the field. The account and
+secured, the message "You don't have permission to create new accounts or
+view all accounts" will appear when you move from the field. The account and
 description fields will be cleared.
 
 #### Effects of account security on reports and report options
 
-Account security applies to all reports in all modules. If you don’t have
-full access to all accounts, you won’t be able to create a report that
+Account security applies to all reports in all modules. If you don't have
+full access to all accounts, you won't be able to create a report that
 includes secured accounts.
 
-In the report options windows, if you don’t have full access to all
-accounts, you won’t be able to restrict the report using a secured account
+In the report options windows, if you don't have full access to all
+accounts, you won't be able to restrict the report using a secured account
 number.
 
 #### Effects of account security on maintenance windows
@@ -8766,14 +8762,14 @@ will be able to create new accounts in the account maintenance windows in
 General Ledger.
 
 Account security applies to all account fields in the maintenance windows in
-all modules. If you don’t have full access to all accounts, you won’t be
+all modules. If you don't have full access to all accounts, you won't be
 able to view secured accounts by using an account lookup, by using the
 browse buttons, or by entering a secured account number. If you open a
 record that includes a secured account, the account field will be blank and
-the message “Access denied/Account missing” will appear in the Description
+the message "Access denied/Account missing" will appear in the Description
 field. If you attempt to enter an account number that is secured, the
-message “You don’t have permission to create new accounts or view all
-accounts” will appear when you move from the field. The account and
+message "You don't have permission to create new accounts or view all
+accounts" will appear when you move from the field. The account and
 description fields will be cleared.
 
 #### Effects of account security on secured windows
@@ -8793,19 +8789,19 @@ Dynamics GP system.
 
 This part of the documentation contains the following information:
 
-- *Chapter 36, “Business Alerts overview,”* contains information about how
+- *Chapter 36, "Business Alerts overview,"* contains information about how
     Business Alerts works.
 
-- *Chapter 37, “Business Alerts setup,”* contains information about setting up
+- *Chapter 37, "Business Alerts setup,"* contains information about setting up
     Business Alerts.
 
-- *Chapter 38, “Business Alerts maintenance,”* contains information about
+- *Chapter 38, "Business Alerts maintenance,"* contains information about
     maintaining Business Alerts.
 
 ### Chapter 36: Business Alerts overview
 
 Business Alerts uses the power of Microsoft SQL Server to monitor your
-business’s data, delivering faster access to business-critical information
+business's data, delivering faster access to business-critical information
 and enabling your organization to make quicker, more informed decisions to
 improve your business success.
 
@@ -8821,14 +8817,14 @@ This information is divided into the following sections:
 
 Business Alerts takes advantage of the query features of Microsoft SQL
 Server to monitor your data for specific conditions. For example, suppose
-that you want to be notified when a customer’s credit limit has been
+that you want to be notified when a customer's credit limit has been
 exceeded. In that case, you can use the Business Alert wizard to create a
 query that compares the credit limit amounts to the current amounts for your
 customers.
 
 You can use the wizard to set up the schedule for the alert—that is, when,
 how often, and for how long you want Microsoft Dynamics GP to check whether
-the conditions you’ve defined exist. You also can specify a list of people
+the conditions you've defined exist. You also can specify a list of people
 to notify when those conditions occur.
 
 You can create an unlimited number of business alerts, combining information
@@ -8868,15 +8864,15 @@ Terms specific to Business Alerts are defined in the following table.
 Use the Business Alert wizard to create a Microsoft SQL Server query that
 checks your data for the conditions you specify. Next, create the schedule
 for the query— that is, when, how often, and for how long you want Microsoft
-Dynamics GP to check whether the conditions you’ve defined exist. You also
+Dynamics GP to check whether the conditions you've defined exist. You also
 can specify the list of people to notify when it does.
 
 Before you set up Business Alerts be sure that Microsoft SQL Server Agent is
-started and that you’ve set up SQL Mail or Database Mail. SQL Server Agent
+started and that you've set up SQL Mail or Database Mail. SQL Server Agent
 is not available for SQL Server Express. For more information about setting
 up SQL Mail or Database Mail, refer to SQL Server Books Online. You also can
-refer to the following Microsoft Knowledge Base article titled “How to
-configure Microsoft SQL Server for use with Business Alerts”
+refer to the following Microsoft Knowledge Base article titled "How to
+configure Microsoft SQL Server for use with Business Alerts"
 ([https://mbs.microsoft.com/knowledgebase/
 KBDisplay.aspx?scid=kb;en-us;915097)](https://mbs.microsoft.com/knowledgebase/KBDisplay.aspx?scid=kb;en-us;915097).
 
@@ -8949,7 +8945,7 @@ Refer to *Selecting and joining tables for alerts* for more information.
 #### Selecting and joining tables for alerts
 
 Use the Select Tables window to select the tables that contain the
-information you’ll use to define the formula for this business alert.
+information you'll use to define the formula for this business alert.
 
 *For more information about the tables Microsoft Dynamics GP uses to store
 information, use the Table Descriptions window. On the Microsoft Dynamics GP
@@ -8963,7 +8959,7 @@ which both have a Customer
 Number column. In this case, you could join the Customer Number columns of
 these tables.
 
-If you’re using an integrating application with Microsoft Dynamics GP and
+If you're using an integrating application with Microsoft Dynamics GP and
 you want to include its information in a business alert, you must select the
 tables you need to include using the Business Alert Table Maintenance
 window. For more information, refer to *Using data from integrating
@@ -8978,7 +8974,7 @@ applications in alerts* .
     select each table to include and choose Insert. You can include tables from
     more than one series.
 
-3. Choose Next; if you’ve selected more than one table, the Joining Tables
+3. Choose Next; if you've selected more than one table, the Joining Tables
     window will appear.
 
 4. Select two tables that have columns you want to join. (To select more than
@@ -9005,21 +9001,21 @@ Formulas for Business Alerts must adhere to the following rules:
 - The total number of left parentheses must equal the total number of right
     parentheses.
 
-- An OR operator can’t precede an aggregate function.
+- An OR operator can't precede an aggregate function.
 
 - The formula must include a comparison operator (=,\<,\>,\<=,\>=,\<\>).
 
-- The formula can’t have two operators next to each other.
+- The formula can't have two operators next to each other.
 
-- The formula can’t have two columns or constants next to each other.
+- The formula can't have two columns or constants next to each other.
 
-- The formula can’t begin with an operator.
+- The formula can't begin with an operator.
 
 #### Defining an alert formula
 
 Use the Define Alert Formula window to create the formula that specifies the
 conditions you want this alert to check for. For example, you can set up a
-formula to monitor when a customer’s on-order amount exceeds their credit
+formula to monitor when a customer's on-order amount exceeds their credit
 limit.
 
 **To define an alert formula:**
@@ -9058,7 +9054,7 @@ Select Report Columns window and the Select Report Sorting Options window to
 set up the information to be included in the report.
 
 You can use any of the notification methods supported by your messaging
-system. For example, if you’re using Microsoft Exchange, you could notify
+system. For example, if you're using Microsoft Exchange, you could notify
 alert recipients using a combination of e-mail, fax, and pager messages.
 
 *We strongly recommend that you use a MAPI-compliant messaging system, and
@@ -9087,7 +9083,7 @@ assigned to them when the alert conditions that you specify are met.
 
 - If you have a MAPI-compliant messaging system and you marked E-mail in step
     2, you also can choose the To button to open the address window for your
-    system, where you can select addresses. For example, if you’re using
+    system, where you can select addresses. For example, if you're using
     Microsoft Exchange, choosing this button will open the Address Book window,
     where you can select recipients, as well as carbon-copy (cc) and
     blind-carbon-copy (bcc) recipients.
@@ -9095,11 +9091,11 @@ assigned to them when the alert conditions that you specify are met.
 - If you marked User ID in step 2, you can choose the To button to open the
     Users lookup window, where you can select user IDs.
 
-*The list of recipients can’t have more than 255 characters. If you need to
+*The list of recipients can't have more than 255 characters. If you need to
 create a longer list of recipients, we recommend that you set up and use a
 mail group, rather than entering each recipient individually.*
 
-1. Enter the message you want the recipients to receive. This message can’t be
+1. Enter the message you want the recipients to receive. This message can't be
     more than 255 characters.
 
 2. Choose Next; if you marked the Message and Report option, the Select Report
@@ -9126,7 +9122,7 @@ Column list.
 #### Scheduling an alert
 
 Use the Schedule Alert window to specify when, how often, and for how long
-your data will be checked for the business alert conditions you’ve defined.
+your data will be checked for the business alert conditions you've defined.
 
 **To schedule an alert:**
 
@@ -9145,7 +9141,7 @@ window, choose Next.)
     and ending at 6 p.m.
 
 3. Enter the date you want the checks of your data to begin and to end. If you
-    don’t want the checks of your data to end, mark the No End Date option.
+    don't want the checks of your data to end, mark the No End Date option.
 
 4. Mark Keep Alert History to keep a record of dates and times that the alert
     conditions occurred and the recipients who were notified each time, and mark
@@ -9162,8 +9158,8 @@ Use the Business Alert Table Maintenance window to make tables from
 integrating applications available for business alerts. You must complete
 the steps in this procedure if you use integrating applications with
 Microsoft Dynamics GP and you want to include information from these
-applications in a business alert. After you complete this procedure, you’ll
-be able to select tables from integrating applications when you’re creating
+applications in a business alert. After you complete this procedure, you'll
+be able to select tables from integrating applications when you're creating
 a business alert with the Business Alert wizard.
 
 **To use data from integrating applications in alerts:**
@@ -9183,7 +9179,7 @@ a business alert with the Business Alert wizard.
 
 ### Chapter 38: Business Alerts maintenance
 
-After you’ve set up and enabled Business Alerts, you might need change an
+After you've set up and enabled Business Alerts, you might need change an
 alert by modifying the formula, using different tables, changing the alert
 schedule, or adding, or removing people from the list of people to be
 notified when the alert conditions occur.
@@ -9205,7 +9201,7 @@ This information is divided into the following sections:
 
 #### Modifying a business alert
 
-Once you’ve created a business alert, you can use the Business Alert
+Once you've created a business alert, you can use the Business Alert
 Maintenance window to view or modify the details of the alert. You can make
 changes to virtually any aspect of an alert, such as the alert formula, the
 list of notification recipients, the alert schedule and the report that is
@@ -9222,7 +9218,7 @@ generated by the alert.
     Maintenance window, you can change the contents of the alert message, change
     options for keeping history and enable or disable a business alert.
 
-• To change the alert message, enter new text in the Message field.
+* To change the alert message, enter new text in the Message field.
 
 - To keep a record of the dates and times that the alert conditions occurred
     and the recipients who were notified each time, mark Keep Alert History.
@@ -9334,21 +9330,21 @@ interface makes your system highly customizable.
 
 This part of the documentation contains the following information:
 
-- *Chapter 39, “Report deployment,”* explains how to deploy predefined SQL
+- *Chapter 39, "Report deployment,"* explains how to deploy predefined SQL
     Server Reporting Services reports that are included in Microsoft Dynamics GP
     to a server or to a Microsoft SharePoint library.
 
-- *Chapter 40, “Excel report deployment,”* explains how Excel reports and
+- *Chapter 40, "Excel report deployment,"* explains how Excel reports and
     Office Data Connection (ODC) technology work together and how to deploy the
     reports.
 
-- *Chapter 41, “Sorting options,”* explains how to tailor specific elements in
+- *Chapter 41, "Sorting options,"* explains how to tailor specific elements in
     the Microsoft Dynamics GP user interface to your specific needs.
 
-- *Chapter 42, “Word templates,”* explains how you can set up and use the
+- *Chapter 42, "Word templates,"* explains how you can set up and use the
     Microsoft Word templates for Microsoft Dynamics GP functionality.
 
-*Chapter 43, “Extending system functionality,”* provides an overview of the
+*Chapter 43, "Extending system functionality,"* provides an overview of the
 tools you can use to customize your reports, user interface, and data
 integration processes.
 
@@ -9366,7 +9362,7 @@ reports and charts and KPIs are stored on a server or on a Microsoft
 SharePoint library, users can access them without starting Microsoft
 Dynamics GP as long as they have the appropriate security access.
 
-Refer to the System User’s Guide (Help \>\> Contents \>\> select Using the
+Refer to the System User's Guide (Help \>\> Contents \>\> select Using the
 System) for more information about using SQL Server Reporting Services with
 Microsoft Dynamics GP.
 
@@ -9392,16 +9388,16 @@ Once the reports and charts and KPIs are deployed, a user can access them
 even when Microsoft Dynamics GP is not running and as long as that user has
 access to the location where those reports and charts and KPIs are stored.
 
-It is the system administrator’s responsibility to create secure locations
+It is the system administrator's responsibility to create secure locations
 on a server or on a SharePoint library for these reports.
 
 #### Modify the Report Server web.config file
 
 To deploy the SQL Server Reporting Services reports, you must modify the
 Report Server web.config file for the timeout execution and the maximum
-request length. If you don’t update the Report Server web.config file for
-the timeout execution, you might receive an error that states that “the
-operation has timed out.” If you don’t update the Report Server web.config
+request length. If you don't update the Report Server web.config file for
+the timeout execution, you might receive an error that states that "the
+operation has timed out." If you don't update the Report Server web.config
 file for the maximum request length, you will receive an error that the
 deployment has exceeded the maximum request length allowed by the target
 server.
@@ -9422,7 +9418,7 @@ Services is installed.)
 
 2. Search for \<httpRuntime executionTimeout="9000" /\>.
 
-3. In that line, change executionTimeout=”9000” to executionTimeout=”19000” and
+3. In that line, change executionTimeout="9000" to executionTimeout="19000" and
     add the value maxRequestLength="20960".
 
 (\<httpRuntime executionTimeout="19000" maxRequestLength="20960"/\>
@@ -9466,7 +9462,7 @@ deployed will automatically be marked.
 deployment of Microsoft SQL Server Reporting Services.*
 
 1. Depending on your report server mode, enter the following locations. Be sure
-    that your location doesn’t end with a slash.
+    that your location doesn't end with a slash.
 
 Native mode location:
 
@@ -9511,7 +9507,7 @@ only the native mode of deployment of SQL Server Reporting Services.*
 2. In the Deployment Options tree view, all items that are not fully deployed
     are automatically marked.
 
-To exclude an item, unmark the check box. For example, if you don’t want to
+To exclude an item, unmark the check box. For example, if you don't want to
 deploy SQL Server Reporting Services reports in Fabrikam, Inc., expand the
 Company level in the tree view and unmark SRS Reports.
 
@@ -9522,7 +9518,7 @@ Company level in the tree view and unmark SRS Reports.
 The Business Intelligence Deployment Progress window appears. This window
 displays the report deployment progress.
 
-If you don’t have the appropriate permissions to deploy reports, a window
+If you don't have the appropriate permissions to deploy reports, a window
 opens where you can enter a domain\\user name and the password you use to
 log in to Microsoft Windows.
 
@@ -9570,7 +9566,7 @@ Accounts_AccountSummary.xlsx displays the data from the ODC file named
 TWO_Accounts_AccountSummary.odc.
 
 Before users can view Excel reports, a system administrator must perform a
-process called “deployment” to create the ODC files and corresponding Excel
+process called "deployment" to create the ODC files and corresponding Excel
 worksheets, and make them available for users to access. There are two ways
 deploy Excel reports:
 
@@ -9605,7 +9601,7 @@ To view Excel reports and data connections for a particular series, choose
 the appropriate series button in the navigation pane, then choose the Excel
 Reports shortcut. To view Excel reports for all series, choose
 Administration in the navigation pane, then choose the Excel Reports
-shortcut. See the System User’s Guide (Help \>\> Contents \>\> select Using
+shortcut. See the System User's Guide (Help \>\> Contents \>\> select Using
 the System) for more information about report lists.
 
 #### Deploying Excel reports
@@ -9615,7 +9611,7 @@ connections to a shared network location or to a Microsoft SharePoint site.
 During this process, ODC files are created and saved to the designated
 location. Excel reports and data connections that are stored in the
 locations that you specify in the Reporting Tools Setup window also will be
-listed in Excel Reports lists. See the System User’s Guide (Help \>\>
+listed in Excel Reports lists. See the System User's Guide (Help \>\>
 Contents \>\> select Using the System) for more information about report
 lists.
 
@@ -9651,7 +9647,7 @@ document library to store the Excel report files.
 *You must have access to the server to deploy reports to a shared network
 location.*
 
-1. If you are using Microsoft Office 365 and want to deploy Excel reports to a
+1. If you are using Microsoft 365 and want to deploy Excel reports to a
     reports library in SharePoint Online 2010, mark Using SharePoint Online
     option. This option is available if you selected SharePoint as the location
     to deploy reports to.
@@ -9659,7 +9655,7 @@ location.*
 2. Depending on the location you selected, enter the following information. Be
     sure to use back slashes when you are entering the location for Excel
     reports even if you are using a UNC path. You should also be sure that the
-    location doesn’t end in a slash.
+    location doesn't end in a slash.
 
 Network Share location:
 
@@ -9677,7 +9673,7 @@ SharePoint location:
 | Report Library            | ReportsLibrary                           |
 
 1. In the User Level area, enter the location to where Excel reports are stored
-    on each user’s computer. You must use the “%” character as the variable for
+    on each user's computer. You must use the "%" character as the variable for
     the Windows user ID in the path.
 
 For example: C:\\Documents and Settings\\%\\My Documents\\My Data
@@ -9692,7 +9688,7 @@ report lists.
 2. In the Deployment Options tree view, all items that are not fully deployed
     are automatically marked.
 
-To exclude an item, unmark the check box. For example, if you don’t want to
+To exclude an item, unmark the check box. For example, if you don't want to
 deploy Excel reports in Fabrikam, Inc., expand the Company level in the tree
 view and unmark Excel Reports.
 
@@ -9703,7 +9699,7 @@ view and unmark Excel Reports.
 The Business Intelligence Deployment Progress window appears. This window
 displays the report deployment progress.
 
-If you don’t have the appropriate permissions to deploy reports, a window
+If you don't have the appropriate permissions to deploy reports, a window
 opens where you can enter a domain\\user name and the password you use to
 log in to Microsoft Windows.
 
@@ -9733,7 +9729,7 @@ example, if you want to sort the Customers list by phone number or postal
 code, you could set up a custom sorting option to do so.
 
 If you make custom sorting option changes for one company, those changes
-won’t be applied to your other companies. Custom sorting options can be set
+won't be applied to your other companies. Custom sorting options can be set
 on a per-company basis.
 
 **To set up custom sorting options for an advanced lookup window:**
@@ -9765,11 +9761,11 @@ document in Word, Excel, or some other application for customers, vendors,
 items, salespeople, and employees.
 
 Tracking Number links can be created based on the shipping method for a
-document, linking to tracking information on the shipper’s web site.
+document, linking to tracking information on the shipper's web site.
 Currencyspecific links can be created based on the currency selected,
 linking to a web site with exchange rate information. Checkbook and credit
 card links can be created based on the checkbook selected, linking to the
-bank’s online banking web page.
+bank's online banking web page.
 
 You can also choose to link to the same location for all values. For
 example, all checkbooks could be made to link to the same online banking web
@@ -9815,7 +9811,7 @@ employees:**
 5. Select an address type. The types of addresses available depend on the
     prompt you selected. For example, if you selected Customer, you could select
     the primary, ship to, bill to, or statement to addresses. An address type
-    isn’t available for items or sales people.
+    isn't available for items or sales people.
 
 6. Select an address field. This information is defined in the Internet
     Information window. You must define the custom link information in the
@@ -9856,7 +9852,7 @@ a link if you want to create a new link that uses the same information.
 3. In the Create/Modify Custom Link window, make any changes to the link that
     you want.
 
-4. Choose Save. If you didn’t change the custom link label for the new link,
+4. Choose Save. If you didn't change the custom link label for the new link,
     Copy1 will be added to the label.
 
 ### Chapter 42: Word templates
@@ -9924,7 +9920,7 @@ the predefined templates and make your changes such as changing the font.
 Predefined templates do not have logos assigned to them.
 
 You can print the predefined Word templates for your customers and vendors in
-each of the companies you have access to. If you don’t want use a predefined
+each of the companies you have access to. If you don't want use a predefined
 template, remove the assignment to the company and select a new default Word
 template.
 
@@ -9979,7 +9975,7 @@ template.
 
 You can use the Template Configuration Manager window to configure Word
 templates for Microsoft Dynamics GP. By default, the Word templates
-functionality is enabled for all companies. If you don’t want to use the
+functionality is enabled for all companies. If you don't want to use the
 Word template functionality, you can use this window to disable Word
 templates.
 
@@ -9996,7 +9992,7 @@ to select the companies, series, and Word templates you want to use.
     that the templates available for that level will be made available for use.
     To exclude a level, unmark the check box.
 
-For example, if you don’t want to use the POP Purchase Order Blank Form
+For example, if you don't want to use the POP Purchase Order Blank Form
 Template\* in Fabrikam, Inc., expand to the Word template level in the tree
 view and unmark the template.
 
@@ -10054,7 +10050,7 @@ templates.
 2. Click Microsoft Dynamics GP Add-in for Microsoft Word under Additional
     Products, and then select Install.
 
-3. If you haven’t installed Visual Studio Tools for Office Runtime, the
+3. If you haven't installed Visual Studio Tools for Office Runtime, the
     Software
 
 Update Visual Studio Tools for the Office system 3.0 Runtime wizard appears.
@@ -10116,11 +10112,11 @@ General Ledger documentation for information about using Excel to create and
 modify budgets.
 
 **SmartList** Use SmartList to easily export data to Excel, Word, or other
-file formats. See the System User’s Guide for information about SmartList.
+file formats. See the System User's Guide for information about SmartList.
 
 *In addition to the tools available from Microsoft Dynamics, you can use
 ODBC to use other tools such as Microsoft Access to import or export data.
-It’s important to understand the Microsoft Dynamics GP data structure. If
+It's important to understand the Microsoft Dynamics GP data structure. If
 you import data incorrectly, you can damage your data. Use the Microsoft
 Dynamics GP Software Development Kit (installed from the installation media)
 and the Resource Descriptions windows (Microsoft Dynamics GP Tools* \>\>
@@ -10144,10 +10140,10 @@ to the Advanced Financial Analysis documentation for more information.
 
 **Management Reporter for Microsoft Dynamics ERP** You can use Management Reporter to create customized financial statements. Refer to the Management Reporter documentation for more information.
 
-**SmartList** Use SmartList to create simple reports. SmartList’s report
-formatting capabilities are limited, but since you don’t need to link tables or
-set up table relationships, it’s easier to use than other reporting tools. Refer
-to the System User’s Guide (Help \>\> Contents \>\> select Using the System) for
+**SmartList** Use SmartList to create simple reports. SmartList's report
+formatting capabilities are limited, but since you don't need to link tables or
+set up table relationships, it's easier to use than other reporting tools. Refer
+to the System User's Guide (Help \>\> Contents \>\> select Using the System) for
 more information.
 
 #### Customizing the Microsoft Dynamics GP interface
@@ -10159,12 +10155,12 @@ interface to the way your organization works.
 Preferences window to control the appearance and behavior of certain aspects of
 the user interface, including display colors, whether the tab or enter key is
 used to move to the next field in a window, and default entries for several
-parts of the system. See the System User’s Guide (Help \>\> Contents \>\> select
+parts of the system. See the System User's Guide (Help \>\> Contents \>\> select
 Using the System) for more information about user preferences.
 
 **Shortcut Bar** Each person who uses Microsoft Dynamics GP can set up and use
 shortcuts to streamline access to windows, macros and other frequently used
-applications. See your System User’s Guide (Help \>\> Contents \>\> select Using
+applications. See your System User's Guide (Help \>\> Contents \>\> select Using
 the System) for more information about shortcut bar changes that can be made for
 each user.
 
@@ -10178,11 +10174,11 @@ Modifier documentation for more information.
 
 **Visual Basic for Applications (VBA)** Use VBA to create new forms or to set
 default values for specific fields in windows. See the Microsoft Dynamics GP VBA
-Developer’s Guide for more information.
+Developer's Guide for more information.
 
 #### Customizing the functionality of Microsoft Dynamics GP
 
-Microsoft Dynamics GP provides several ways to add custom functionality that’s
+Microsoft Dynamics GP provides several ways to add custom functionality that's
 not available within Microsoft Dynamics GP or through products developed by
 Microsoft Dynamics GP Developers.
 

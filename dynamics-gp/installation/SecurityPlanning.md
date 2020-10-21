@@ -19,7 +19,7 @@ Use the information in this document to help you plan for security within Micros
 
 This introduction is divided into the following sections:
 
-- *What’s in this document*
+- *What's in this document*
 
 - *Symbols and conventions*
 
@@ -27,12 +27,12 @@ This introduction is divided into the following sections:
 
 - *Send us your documentation comments*
 
-### What’s in this document
+### What's in this document
 
 This document is designed to make you aware of actions that you can complete to
 help make your Microsoft Dynamics GP data as secure as possible.
 
-Microsoft® Windows®, the foundation of Microsoft Dynamics GP, provides
+Microsoft&reg; Windows&reg;, the foundation of Microsoft Dynamics GP, provides
 sophisticated standards-based network security. In the broadest sense, security
 involves planning and considering tradeoffs. For example, a computer can be
 locked in a vault and only accessible to one system administrator. This computer
@@ -42,7 +42,7 @@ possible without sacrificing usability.
 
 Most organizations plan for external attacks and construct firewalls, but many
 companies do not consider how to mitigate a security breach once a malicious
-user gets inside the firewall. Security measures in your organization’s
+user gets inside the firewall. Security measures in your organization's
 environment will work well if users are not required to perform too many
 procedures and steps to conduct business in a secure manner. Implementing
 security policies should be as easy as possible for users or they will tend to
@@ -55,21 +55,21 @@ your best judgment to recommend a policy that helps to meet security needs.
 
 The document is divided into the following information:
 
-- *Chapter 1, “Basic security recommendations,”* provides some basic security recommendations for you to complete to help make your Microsoft Dynamics GP data as secure as possible.
+- *Chapter 1, "Basic security recommendations,"* provides some basic security recommendations for you to complete to help make your Microsoft Dynamics GP data as secure as possible.
 
-- *Chapter 2, “Securing the server operating system,”* provides information about securing the server operating system.
+- *Chapter 2, "Securing the server operating system,"* provides information about securing the server operating system.
 
-- *Chapter 3, “Network security,”* provides information about securing your network.
+- *Chapter 3, "Network security,"* provides information about securing your network.
 
-- *Chapter 4, “Virus protection,”* provides information about the different types of viruses that exist and what you can do to help keep your computers from being infected by a virus.
+- *Chapter 4, "Virus protection,"* provides information about the different types of viruses that exist and what you can do to help keep your computers from being infected by a virus.
 
-- *Chapter 5, “Microsoft Dynamics GP security,”* provides an overview of the security features available in Microsoft Dynamics GP.
+- *Chapter 5, "Microsoft Dynamics GP security,"* provides an overview of the security features available in Microsoft Dynamics GP.
 
-- *Chapter 6, “The Microsoft Dynamics GP database security model,”* provides information about the Microsoft Dynamics GP database security model.
+- *Chapter 6, "The Microsoft Dynamics GP database security model,"* provides information about the Microsoft Dynamics GP database security model.
 
-- *Chapter 7, “Core application security tasks,”* lists the most secure options for completing common security tasks in Microsoft Dynamics GP.
+- *Chapter 7, "Core application security tasks,"* lists the most secure options for completing common security tasks in Microsoft Dynamics GP.
 
-- *Chapter 8, “Frequently asked questions,”* contains answers to frequently asked questions about security in Microsoft Dynamics GP.
+- *Chapter 8, "Frequently asked questions,"* contains answers to frequently asked questions about security in Microsoft Dynamics GP.
 
 ### Resources available from the Help menu
 
@@ -78,10 +78,10 @@ The Microsoft Dynamics GP Help menu gives you access to user assistance resource
 **Contents**
 
 Opens the Help file for the active Microsoft Dynamics GP component, and displays
-the main “contents” topic. To browse a more detailed table of contents, click
+the main "contents" topic. To browse a more detailed table of contents, click
 the Contents tab above the Help navigation pane. Items in the contents topic and
 tab are arranged by module. If the contents for the active component includes an
-“Additional Help files” topic, click the links to view separate Help files that
+"Additional Help files" topic, click the links to view separate Help files that
 describe additional components.
 
 To find information in Help by using the index or full-text search, click the
@@ -93,7 +93,7 @@ Favorites tab. Click Add.
 **Index**
 
 Opens the Help file for the active Microsoft Dynamics GP component, with the
-Index tab active. To find information about a window that’s not currently
+Index tab active. To find information about a window that's not currently
 displayed, type the name of the window, and click Display.
 
 **About this window**
@@ -117,7 +117,7 @@ can change the font color and style used to highlight required fields. On
 the Microsoft Dynamics GP menu, choose User Preferences and then choose
 Display.
 
-**What’s New**
+**What's New**
 
 Provides information about enhancements that were added to Microsoft
 Dynamics GP since the last major release.
@@ -154,7 +154,7 @@ This information is divided into the following sections.
 
 *In order to protect your Microsoft Dynamics GP environment, you must take
 steps to secure communications between the Microsoft Dynamics GP client and
-Microsoft SQL Server*®*. Failure to adhere to this guidance will leave your
+Microsoft SQL Server*&reg;*. Failure to adhere to this guidance will leave your
 installation of Microsoft Dynamics GP susceptible to a number of serious
 security threats.*
 
@@ -201,7 +201,7 @@ general rules for administration:
     security features. Also, operating system editions that are for business
     purposes typically have more security features.
 
-- Use the Windows Update tool provided with Windows Vista®, Windows 7, Windows
+- Use the Windows Update tool provided with Windows Vista&reg;, Windows 7, Windows
     8, Windows Server 2008, and Windows Server 2012 to maintain the most current
     security patches.
 
@@ -248,9 +248,9 @@ requiring administrative rights to run features.
 Disgruntled and former employees are a threat to network security. We recommend
 using the following policy regarding employees:
 
-• Conduct pre-employment background investigations.
+* Conduct pre-employment background investigations.
 
-- Expect “revenge” from disgruntled employees and former employees.
+- Expect "revenge" from disgruntled employees and former employees.
 
 - Make sure that you inactivate all associated Windows accounts and passwords
     when an employee leaves. For reporting purposes, do not delete users.
@@ -288,7 +288,7 @@ it once an intruder has successfully gained access. The administrator should
 document the network topography thoroughly, and work toward keeping it as
 simple as possible.
 
-Security primarily involves risk management. Using technology alone won’t
+Security primarily involves risk management. Using technology alone won't
 guarantee security. Effective security requires a combination of technology
 and policy. That is, security ultimately depends upon the way technology is
 used. Microsoft delivers security-conscious technology and features, but
@@ -352,8 +352,7 @@ by Microsoft. MBSA also performs some basic security checks for password
 strength and expiration settings, guest account policies, and a number of other
 areas. MBSA also will look for vulnerabilities in Microsoft Internet Information
 Services (IIS). For more information about the Microsoft Baseline Security
-Analyzer, see [https://
-www.microsoft.com/technet/security/tools/mbsahome.mspx.](https://www.microsoft.com/technet/security/tools/mbsahome.mspx)
+Analyzer, see [https://www.microsoft.com/technet/security/tools/mbsahome.mspx.](https://www.microsoft.com/technet/security/tools/mbsahome.mspx)
 
 **Windows Server Update Services (WSUS)** This tool enables enterprises to host
 on local computers all critical updates and security rollup packages (SRPs)
@@ -369,21 +368,13 @@ install downloaded updates. For more information about Microsoft WSUS, see
 **Services** The SMS Software Update Services contains a number of tools aimed
 at easing the process of issuing software updates throughout the enterprise. The
 tools include a Security Update Inventory Tool, a Microsoft Office Inventory
-Tool for
-
-Updates, the Distribute Software Updates Wizard, and an SMS Web Reporting
-Tool with Web Reports Add-in for Software Updates. If you’re using these
+Tool for Updates, the Distribute Software Updates Wizard, and an SMS Web Reporting
+Tool with Web Reports Add-in for Software Updates. If you're using these
 tools, you should consider migrating to a newer technology: Microsoft System
 Center Configuration Manager. For more information, see
 [Windows Admin Center](/windows-server/manage/windows-admin-center/overview).
 
-**Microsoft System Center Configuration Manager** System Center
-
-Configuration Manager comprehensively assesses, deploys, and updates
-servers, client computers, and devices—across physical, virtual,
-distributed, and mobile environments. For more information, see
-For more information, see
-[Windows Admin Center](/windows-server/manage/windows-admin-center/overview).
+**Microsoft System Center Configuration Manager** System Center Configuration Manager comprehensively assesses, deploys, and updates servers, client computers, and devices—across physical, virtual, distributed, and mobile environments. For more information, see For more information, see [Windows Admin Center](/windows-server/manage/windows-admin-center/overview).
 
 We recommend that you consider each of these security tools and encourage
 their use. It is very important that security issues are addressed as
@@ -407,7 +398,7 @@ current on security patches for Microsoft Windows Vista, Windows 7, Windows
 8, Windows Server 2008, and Windows 2012 by using the Windows Update tool
 provided with these systems. Also, if Microsoft Security Update Services is
 installed on the server, much of the update process can be automated
-internally by the organization’s IT department.
+internally by the organization's IT department.
 
 ## Chapter 2: Securing the server operating system
 
@@ -453,14 +444,14 @@ For more information about Windows Server, see [Windows Server documentation](/w
 The most important features of the Windows server security model are
 authentication, access control, and single sign-on, as described below.
 
-- Authentication represents the process by which the system validates a user’s
-    identity through his or her login credentials. A user’s name and password
+- Authentication represents the process by which the system validates a user's
+    identity through his or her login credentials. A user's name and password
     are compared against an authorized list. If the system detects a match,
     access is granted to the extent specified in the permissions list for that
     user.
 
 - Access control limits user access to information or computing resources
-    based on the users’ identity and their membership in various predefined
+    based on the users' identity and their membership in various predefined
     groups. Access control is typically used by system administrators for
     controlling user access to network resources such as servers, directories,
     and files; and is typically implemented by granting permissions to users and
@@ -479,7 +470,7 @@ features for securing your computing environment.
 
 Authentication is a fundamental aspect of system security. It confirms the
 identity of any user trying to log in to a domain or access network
-resources. The weak link in any authentication system is the user’s
+resources. The weak link in any authentication system is the user's
 password.
 
 Passwords provide the first line of defense against unauthorized access to
@@ -513,7 +504,7 @@ recommendations.
 
 ### Strong passwords
 
-The role that passwords play in securing an organization’s network is often
+The role that passwords play in securing an organization's network is often
 underestimated and overlooked. As mentioned, passwords provide the first
 line of defense against unauthorized access to your organization. Windows
 Server 2012 and Windows Server 2008 have a feature that checks the
@@ -540,7 +531,7 @@ secure computer has strong passwords for all user accounts.
 
 - Is no password at all.
 
-- Contains the user’s user name, real name, or company name.
+- Contains the user's user name, real name, or company name.
 
 - Contains a complete dictionary word. For example, the word Password is a
     weak password.
@@ -549,7 +540,7 @@ secure computer has strong passwords for all user accounts.
 
 - Is at least seven characters long.
 
-- Does not contain the user’s name, real name, or company name.
+- Does not contain the user's name, real name, or company name.
 
 - Does not contain a complete dictionary word.
 
@@ -564,7 +555,7 @@ secure computer has strong passwords for all user accounts.
 | Uppercase letters | A B C D                                                             |
 | Lowercase letters | a b c d                                                             |
 | Numerals          | 0 1 2 3 4                                                           |
-| Symbols           | ‘ \~ \@ \# \$ % \^ & \* ( ) \_ + - = { } [ ] \\ : “ ; \< \> ? , . / |
+| Symbols           | ' \~ \@ \# \$ % \^ & \* ( ) \_ + - = { } [ ] \\ : " ; \< \> ? , . / |
 
 Examples of strong passwords are Pa\$sw0rD and J\*p2le04\>F.
 
@@ -595,11 +586,11 @@ Map dialog box. For more information about how to use Character Map, see
 Windows Server Online Help.
 
 Examples of passwords that contain characters from the extended ASCII
-character set are kUµ!0o and Wf©\$0k\#"g¤5ªrd.
+character set are kUµ!0o and Wf&copy;\$0k\#"g¤5ªrd.
 
 You can implement a password policy that enforces password complexity
-requirements. For more information about this policy, see “Password Must
-Meet Complexity Requirements” in Windows Server Online Help.
+requirements. For more information about this policy, see "Password Must
+Meet Complexity Requirements" in Windows Server Online Help.
 
 Windows passwords can be up to 127 characters long.
 
@@ -614,7 +605,7 @@ Server settings require strong passwords.
     same password when their password expires.
 
 - Define the Maximum password age policy setting so that passwords expire as
-    often as necessary for the client’s environment, typically, every 30 to 90
+    often as necessary for the client's environment, typically, every 30 to 90
     days.
 
 - Define the Minimum password age policy setting so that passwords cannot be
@@ -634,7 +625,7 @@ Server settings require strong passwords.
 - Enable the Password must meet complexity requirements policy setting. This
     policy setting checks all new passwords to ensure that they meet basic
     strong password requirements. For a full list of these requirements, see
-    “Password Must Meet Complexity Requirements” in Windows Server Online Help.
+    "Password Must Meet Complexity Requirements" in Windows Server Online Help.
 
 ### Defining an account lockout policy
 
@@ -697,7 +688,7 @@ through the Local Security Settings Microsoft Management Console (MMC)
 snap-in, using the setting System objects: Default owner for objects created
 by members of the Administrators group. No matter what permissions are set
 on an object, the owner of the object can always change the permissions on
-an object. For more information, see “Manage Object Ownership” in Windows
+an object. For more information, see "Manage Object Ownership" in Windows
 Server 2012 Online Help.
 
 **Inheritance of permissions**
@@ -711,14 +702,14 @@ permissions marked to be inherited will be inherited.
 **User rights**
 
 User rights grant specific privileges and login rights to users and groups
-in your computing environment. For information about user rights, see “User
-Rights” in Windows Server Online Help.
+in your computing environment. For information about user rights, see "User
+Rights" in Windows Server Online Help.
 
 **Object auditing**
 
-You can audit users’ access to objects. You can then view these
+You can audit users' access to objects. You can then view these
 security-related events in the security log using the Event Viewer. For more
-information, see “Auditing” in Windows Server Online Help.
+information, see "Auditing" in Windows Server Online Help.
 
 **Access control best practices**
 
@@ -751,9 +742,9 @@ the server operating system.
     explicit Allow permission entry. Explicit permissions take precedence over
     inherited permissions, even inherited Deny permissions.
 
-- For permissions on Active Directory® objects, be sure that you understand
+- For permissions on Active Directory&reg; objects, be sure that you understand
     the best practices specific to Active Directory objects. For more
-    information, search for “Active Directory objects” in Windows Server 2012
+    information, search for "Active Directory objects" in Windows Server 2012
     Online Help.
 
 ### Single sign-on
@@ -811,7 +802,7 @@ Microsoft Forefront Threat Management Gateway 2010 (TMG) protects your
 employees from Web-based threats. Deployed on your corporate network as a
 unified gateway, Forefront TMG 2010 inspects web traffic at the network,
 application and content layers to help ensure comprehensive protection. It
-also improves your organization’s firewall performance by offloading
+also improves your organization's firewall performance by offloading
 processor-intensive functions like inspection for malware. For more
 information, see [Windows Server Security and Assurance](/windows-server/security/security-and-assurance).
 
@@ -866,8 +857,8 @@ Because the design and deployment of an IP internetworking environment
 requires balancing private and public network concerns, the firewall has
 become a key ingredient in safeguarding network integrity. A firewall is not
 a single component. The National Computer Security Association (NCSA)
-defines a firewall as “a system or combination of systems that enforces a
-boundary between two or more networks.” Although different terms are used,
+defines a firewall as "a system or combination of systems that enforces a
+boundary between two or more networks." Although different terms are used,
 that boundary is frequently known as a perimeter network. The perimeter
 network protects your intranet or enterprise local area network (LAN) from
 intrusion by controlling access from the Internet or other large networks.
@@ -931,7 +922,7 @@ Be sure to take advantage of firewall security features that can help your
 organization. Position a perimeter network in the network topology at a
 point where all traffic from outside the corporate network must pass through
 the perimeter maintained by the external firewall. You can fine-tune access
-control for the firewall to meet your organization’s needs and you can
+control for the firewall to meet your organization's needs and you can
 configure firewalls to report all attempts at unauthorized access.
 
 To minimize the number of ports that you need to open on the inner firewall,
@@ -995,7 +986,7 @@ firewall that provides multiple ways to configure internal resources to the
 Internet.
 
 One such method is Web publishing. This is when an ISA Server is deployed in
-front of an organization’s Web server that is providing access to Internet
+front of an organization's Web server that is providing access to Internet
 users. With incoming Web requests, ISA Server can impersonate a Web server
 to the outside world, fulfilling client requests for Web content from its
 cache. ISA Server forwards requests to the Web server only when the requests
@@ -1056,7 +1047,7 @@ Antivirus software is specifically designed for the detection and prevention
 of virus programs. Because new virus programs are created all the time, many
 makers of antivirus products offer periodic updates of their software to
 customers. Microsoft strongly recommends implementing antivirus software in
-your organization’s environment.
+your organization's environment.
 
 Virus software is usually installed at each of these three places: user
 workstations, servers, and the network where e-mail comes into (and in some
@@ -1078,8 +1069,8 @@ macro viruses.
 **Boot-Sector viruses** When a computer starts, it scans the boot sector of
 the hard disk before loading the operating system or any other startup
 files. A bootsector virus is designed to replace the information in the hard
-disk’s boot sectors with its own code. When a computer is infected with a
-boot-sector virus, the virus’ code is read into memory before anything else.
+disk's boot sectors with its own code. When a computer is infected with a
+boot-sector virus, the virus' code is read into memory before anything else.
 After the virus is in memory, it can replicate itself onto any other disks
 that are in use in the infected computer.
 
@@ -1103,10 +1094,10 @@ when an infected file is run or when a particular environment setting is met
 key distinction between a virus and a Trojan horse program is that a Trojan
 horse program does not replicate itself; it only destroys information on the
 hard disk. A Trojan horse program disguises itself as a legitimate program,
-such as a game or utility. When it’s run, though, it can destroy or scramble
+such as a game or utility. When it's run, though, it can destroy or scramble
 data.
 
-**Macro viruses** A macro virus is a type of computer virus that’s stored in
+**Macro viruses** A macro virus is a type of computer virus that's stored in
 a macro within a file, template, or add-in. The spread of a macro virus can
 be prevented. Here are some tips to avoid infection that you should share
 with your organization.
@@ -1183,8 +1174,8 @@ reports that contain that information. System level security is controlled
 through the use of a password; only a few people should know the password.
 
 **Company** Company security controls access to companies on a per-user
-basis. When you set up a new user record, that person doesn’t have access to
-any companies. You’ll need to grant access, using the User Access Setup
+basis. When you set up a new user record, that person doesn't have access to
+any companies. You'll need to grant access, using the User Access Setup
 window, before the user can log in to Microsoft Dynamics GP.
 
 **Security tasks** Security tasks are assigned to roles and grant access to
@@ -1308,19 +1299,19 @@ integrating products.
 | Modified windows   | Windows customized using Modifier. |
 | Modified reports    | Primary copies of reports created using Report Writer. Note: The Report Writer name of the report appears in the list. The Report Writer name is the one that appears in the title bar of the Screen Output window when you print a report. |
 | Files | Tables in the selected product. |
-| Alternate Microsoft Dynamics GP reports\*    | Microsoft Dynamics GP reports that have been incorporated into integrating products you’ve installed. |
-| Alternate Microsoft  | Microsoft Dynamics GP windows that have been incorporated into integrating products you’ve installed. |
+| Alternate Microsoft Dynamics GP reports\*    | Microsoft Dynamics GP reports that have been incorporated into integrating products you've installed. |
+| Alternate Microsoft  | Microsoft Dynamics GP windows that have been incorporated into integrating products you've installed. |
 | Modified alternate Microsoft Dynamics GP reports\*     | Alternate reports that have been modified using Report Writer. |
 | Modified alternate     | Alternate windows that have been modified using Modifier. |
 | Custom reports     | Secondary copies and new reports created in Report Writer. |
 | Advanced financial reports    | Modified advanced financial reports  |
-| Series posting permissions   | Specific posting tasks for each Microsoft Dynamics GP product you’ve purchased. |
-| Customization Tools   | Tools you use to customize the accounting system, such as Report Writer or the Modifier. New users don’t have access to these by default. They need to be granted access. |
-| Microsoft Dynamics GP import \*\*   | The Microsoft Dynamics GP Integration Manager. This also sets up security for the Import Utility with Microsoft Dynamics GP. New users don’t have access to these by default. They need to be granted access.                          |
+| Series posting permissions   | Specific posting tasks for each Microsoft Dynamics GP product you've purchased. |
+| Customization Tools   | Tools you use to customize the accounting system, such as Report Writer or the Modifier. New users don't have access to these by default. They need to be granted access. |
+| Microsoft Dynamics GP import \*\*   | The Microsoft Dynamics GP Integration Manager. This also sets up security for the Import Utility with Microsoft Dynamics GP. New users don't have access to these by default. They need to be granted access.                          |
 | Document access      | Quotes, orders, invoices, returns, and back orders for Sales Order Processing. Standard and drop-ship purchase orders for Purchase Order Processing. |
 | Letters   | Letters to customers, employees, and vendors that are available using the Letter Writing Assistant. |
 | Navigation Lists      | Default primary lists. Note: If you restrict access to a primary list, access to any list view that is based on that primary list is also restricted. |
-| \*These items appear only if you’re using an integrating product and have selected it in the Product list. |  |
+| \*These items appear only if you're using an integrating product and have selected it in the Product list. |  |
 
 Dynamics GP windows\*
 
@@ -1366,7 +1357,7 @@ release or install Microsoft Dynamics GP.
 ### Security for new installations
 
 Microsoft Dynamics GP Utilities checks to see whether the DYNSA login
-exists. If it doesn’t exist, the login is created and the DYNSA user must
+exists. If it doesn't exist, the login is created and the DYNSA user must
 enter a password to continue. DYNSA is set as the database owner for ALL
 Microsoft Dynamics GP databases.
 
@@ -1385,7 +1376,7 @@ Microsoft Dynamics GP databases.
 
 ### Upgrading from a previous release
 
-- When the system administrator (“sa”) logs into Microsoft Dynamics GP
+- When the system administrator ("sa") logs into Microsoft Dynamics GP
     Utilities, the application checks to see if the password for DYNSA is either
     \<blank\> or ACCESS. If either of these is true, the user must enter a new
     DYNSA password before continuing with the upgrade.
@@ -1400,9 +1391,9 @@ Microsoft Dynamics GP databases.
 
 Many of the processes in Microsoft Dynamics GP, such as posting or printing,
 require that the user performing the process be able to access multiple
-windows, reports, and tables. If a user is denied access to an item that’s
-part of a process, the user won’t be able to complete that process. A
-message may appear stating that the user doesn’t have privileges to open the
+windows, reports, and tables. If a user is denied access to an item that's
+part of a process, the user won't be able to complete that process. A
+message may appear stating that the user doesn't have privileges to open the
 resource. However, a message might not always be displayed indicating the
 problem. Denying access to tables only denies access to reports that access
 the table.
@@ -1425,7 +1416,7 @@ This information is divided into the following sections.
 
 - *SysAdmin fixed server role*
 
-- *SQL Server fixed database roles beginning with “rpt_”*
+- *SQL Server fixed database roles beginning with "rpt_"*
 
 ### Password security
 
@@ -1433,12 +1424,12 @@ User accounts must be created within the Microsoft Dynamics GP application
 to ensure that security is applied to all Microsoft Dynamics GP windows and
 reports. Microsoft Dynamics GP encrypts the password during the user
 creation process before it is passed to Microsoft SQL Server. For example,
-if a user account is created with a password of ‘1234,’ before the user
+if a user account is created with a password of '1234,' before the user
 account is created in the Microsoft SQL Server, that password passes through
 the Microsoft Dynamics GP encryption process and is changed to something
-like ‘ABCD.’ When this happens, only the Microsoft Dynamics GP application
+like 'ABCD.' When this happens, only the Microsoft Dynamics GP application
 and other applications that use the Microsoft Dynamics GP encryption process
-have the ability to translate the user’s password before sending it to
+have the ability to translate the user's password before sending it to
 Microsoft SQL Server.
 
 If a user tries to access the Microsoft SQL Server from outside the
@@ -1482,12 +1473,12 @@ database roles are assigned to. Database management functions include
 granting user access, granting permissions to database objects, and backing
 up the database itself.
 
-### SQL Server fixed database roles beginning with “rpt_”
+### SQL Server fixed database roles beginning with "rpt_"
 
 A Default SQL Server Fixed Database role that corresponds to each of the
 default SQL Server Reporting Services reports, data connections, and
-Microsoft Excel® reports is created during the installation of Microsoft
-Dynamics GP. Each role begins with “rpt_” and contains SELECT access to the
+Microsoft Excel&reg; reports is created during the installation of Microsoft
+Dynamics GP. Each role begins with "rpt_" and contains SELECT access to the
 Microsoft Dynamics GP data for the data connection or report that the role
 corresponds to.
 
@@ -1537,7 +1528,7 @@ option 5.
 
 #### Options
 
-1. Log in to Microsoft Dynamics GP as the system administrator (“sa”) and
+1. Log in to Microsoft Dynamics GP as the system administrator ("sa") and
     create the users as required (no change from previous releases). Microsoft
     Dynamics GP administrator accounts can be any user account within the
     application.
@@ -1574,7 +1565,7 @@ available. The most secure option is option 5.
 
 ##### Options
 
-1. Log in to the application as the system administrator (“sa”) and delete the
+1. Log in to the application as the system administrator ("sa") and delete the
     user records as required (no change from previous releases).
 
 2. Assign the specific Microsoft Dynamics GP Administrator(s) SQL Login account
@@ -1607,7 +1598,7 @@ option 5.
 
 ##### Options
 
-1. Log in to the application as the system administrator (“sa”) and grant
+1. Log in to the application as the system administrator ("sa") and grant
     access as required (no change from previous releases).
 
 2. Assign the specific Microsoft Dynamics GP Administrator(s) SQL Login account
@@ -1637,7 +1628,7 @@ The following options are available to choose from. The most secure choice is op
 
 ##### Options
 
-1. Log in to the application as the system administrator (“sa”) and perform the
+1. Log in to the application as the system administrator ("sa") and perform the
     backup as required (no change from previous releases).
 
 2. Assign the specific Microsoft Dynamics GP Administrator(s) SQL Login account
@@ -1647,7 +1638,7 @@ The following options are available to choose from. The most secure choice is op
 
 4. Assign the specific Microsoft Dynamics GP user(s) SQL Login account to the
 
-Db_BackupOperator Database Role. Since this option doesn’t require the
+Db_BackupOperator Database Role. Since this option doesn't require the
 Microsoft Dynamics GP Administrator(s) to login as the SQL Server system
 administrator, this is the most secure option.
 
@@ -1656,27 +1647,27 @@ administrator, this is the most secure option.
 The ability to restore databases is also an option within the Microsoft
 Dynamics GP application. Because there is a risk that this feature could be
 misused to alter, remove, or damage data, access to the Restore Company
-window is restricted to the system administrator (“sa”) login.
+window is restricted to the system administrator ("sa") login.
 
 #### Creating Business Alerts
 
-Creating and running business alerts requires a handful of “touch points” or
+Creating and running business alerts requires a handful of "touch points" or
 access within Microsoft SQL Server. Business alerts create stored
 procedures, Microsoft SQL Server jobs, and can send e-mail messages to
 users. Because of this, the correct permissions not only need to be granted
 to the company databases, but also to objects that exist inside the master
 and msdb databases. Object ownership is also an issue when creating these
 objects. This is particularly true for the Microsoft SQL Server jobs.
-Because of this, we’ve limited the option for creating business alerts to
+Because of this, we've limited the option for creating business alerts to
 two. The most secure choice is option 2.
 
 ##### Options
 
-1. Log in to the application as the system administrator (“sa”) and create the
+1. Log in to the application as the system administrator ("sa") and create the
     business alert as required (no change from previous releases).
 
 2. Assign the specific Microsoft Dynamics GP Administrator(s) SQL Login account
-    to the SysAdmin Fixed Server Role. Since this option doesn’t require the
+    to the SysAdmin Fixed Server Role. Since this option doesn't require the
     Microsoft Dynamics GP Administrator(s) to log in as the SQL Server system
     administrator, this is the most secure option.
 
@@ -1684,21 +1675,21 @@ two. The most secure choice is option 2.
 
 The SQL Maintenance window provides the ability to drop and create tables
 and stored procedures from within the Microsoft Dynamics GP application. The
-system administrator (“sa”) and the database owner (DYNSA) have access to
+system administrator ("sa") and the database owner (DYNSA) have access to
 this window and access can be assigned to other logins as well. There are
 three ways to gain access to this window. The most secure choice is option
 3.
 
 ##### Options
 
-1. Log in to the application as the system administrator (“sa”) to access this
+1. Log in to the application as the system administrator ("sa") to access this
     window (no change from previous releases).
 
 2. Assign the specific Microsoft Dynamics GP Administrator(s) SQL Login account
     to the SysAdmin Fixed Server Role and access this window using that account.
 
 3. Log in as the database owner (DYNSA) to access this window. Since this
-    option doesn’t require the Microsoft Dynamics GP Administrator(s) to log in
+    option doesn't require the Microsoft Dynamics GP Administrator(s) to log in
     as the SQL Server system administrator, this is the most secure option.
 
 #### Deleting companies
@@ -1708,13 +1699,13 @@ The following options are available. Option 3 is the most secure.
 
 ##### Options
 
-1. Log in to the application as system administrator (“sa”) and process as
+1. Log in to the application as system administrator ("sa") and process as
     required (no change from previous releases).
 
 2. Assign the specific Microsoft Dynamics GP Administrator(s) SQL Login account
     to the SysAdmin Fixed Server Role.
 
-3. Log in as the database owner (DYNSA). Since this option doesn’t require the
+3. Log in as the database owner (DYNSA). Since this option doesn't require the
     Microsoft Dynamics GP Administrator(s) to log in as the SQL Server system
     administrator, this is the most secure option.
 
@@ -1722,7 +1713,7 @@ The following options are available. Option 3 is the most secure.
 
 Users can remove their own stranded logins without assistance from an
 administrator. If necessary, this option can be removed through a Microsoft
-Dexterity® or Visual Basic for Applications modification.
+Dexterity&reg; or Visual Basic for Applications modification.
 
 ## Chapter 8: Frequently asked questions
 
@@ -1743,35 +1734,35 @@ The following information contains answers to questions about user accounts.
 
 - Why does one user account need access to all Microsoft Dynamics GP databases to delete another user account?
 
-    When a user account is being deleted, Microsoft Dynamics GP removes the user account from all databases it is a member of and deletes the SQL login. The current user will need to have access to each of the databases, as well as the correct permissions to delete the user account from SQL Server. If the current user doesn’t have access to the database to remove a user account, a message is displayed alerting them of this.
+    When a user account is being deleted, Microsoft Dynamics GP removes the user account from all databases it is a member of and deletes the SQL login. The current user will need to have access to each of the databases, as well as the correct permissions to delete the user account from SQL Server. If the current user doesn't have access to the database to remove a user account, a message is displayed alerting them of this.
 
 - Does the user account have to be in the same database role for all databases?**
 
-    Technically, the user doesn’t have to belong to the same database role for all databases, but it is highly recommended. It is possible to have a user belong to the DB_OWNER role in one database and the DB_ACCESSADMIN and DB_SECURITYADMIN in another database, and the ability to grant users access to company databases will still work as designed. However, all Microsoft Dynamics GP users should belong to the DYNGRP database role for proper functioning of the application.
+    Technically, the user doesn't have to belong to the same database role for all databases, but it is highly recommended. It is possible to have a user belong to the DB_OWNER role in one database and the DB_ACCESSADMIN and DB_SECURITYADMIN in another database, and the ability to grant users access to company databases will still work as designed. However, all Microsoft Dynamics GP users should belong to the DYNGRP database role for proper functioning of the application.
 
 ### Microsoft Dynamics GP windows
 
 The following information contains answers to questions about windows within Microsoft Dynamics GP.
 
-- When I open the User Access window, why aren’t the check boxes available?
+- When I open the User Access window, why aren't the check boxes available?
 
     When the requirements for using the User Access window are not met, the check boxes are unavailable. Within the User Access window, you have the ability to grant and deny access to companies. This action of granting and denying access is nothing more than adding and removing user accounts to the database and making the user a member of the DYNGRP. This action making check boxes available is determined by the following two factors:
 
         - What database permissions the current user has when the window is opened.
 
-        - The user performing the action has the correct database permissions that are described in the User Access section of this document. We don’t have the ability to individually make each check box unavailable based on the permissions that are set at the database window.
+        - The user performing the action has the correct database permissions that are described in the User Access section of this document. We don't have the ability to individually make each check box unavailable based on the permissions that are set at the database window.
 
 - Why is the Save button unavailable in the User Setup window?
 
-    The Save button is unavailable when the current user doesn’t have the correct permissions to create a user account. If the current user doesn’t belong to the SysAdmin Fixed Server role, then a combination of SQL Server roles must be used to create the login. The current user must be a member of the SecurityAdmin Fixed Server role and at least a member of the Db_Owner role or member of Db_AccessAdmin and Db_SecurityAdmin roles for the DYNAMICS database.
+    The Save button is unavailable when the current user doesn't have the correct permissions to create a user account. If the current user doesn't belong to the SysAdmin Fixed Server role, then a combination of SQL Server roles must be used to create the login. The current user must be a member of the SecurityAdmin Fixed Server role and at least a member of the Db_Owner role or member of Db_AccessAdmin and Db_SecurityAdmin roles for the DYNAMICS database.
 
 - Why is the Delete button unavailable in the User Setup window?
 
-    The Delete button is unavailable when the current user doesn’t have the correct permissions to delete a user account. If the current user doesn’t belong to the SysAdmin Fixed Server role, then a combination of SQL Server roles must be used to create the login. The current user must be a member of the SecurityAdmin Fixed Server role and at least a member of the Db_Owner role or member of Db_AccessAdmin for all databases that exist in the Company Master table (SY01500). If there are records in the Company Master table that do not have a corresponding database, those records must be removed in order for the Delete button to be available.
+    The Delete button is unavailable when the current user doesn't have the correct permissions to delete a user account. If the current user doesn't belong to the SysAdmin Fixed Server role, then a combination of SQL Server roles must be used to create the login. The current user must be a member of the SecurityAdmin Fixed Server role and at least a member of the Db_Owner role or member of Db_AccessAdmin for all databases that exist in the Company Master table (SY01500). If there are records in the Company Master table that do not have a corresponding database, those records must be removed in order for the Delete button to be available.
 
 - Why is the Password field unavailable in the User Setup window?
 
-    The Password field is unavailable if the system administrator (“sa”) user ID is entered in the User Setup window. The “sa” user password cannot be changed within the Microsoft Dynamics GP application because it would be encrypted and rendered useless with any other Microsoft SQL Server tool.
+    The Password field is unavailable if the system administrator ("sa") user ID is entered in the User Setup window. The "sa" user password cannot be changed within the Microsoft Dynamics GP application because it would be encrypted and rendered useless with any other Microsoft SQL Server tool.
 
 ### Security in Microsoft Dynamics GP
 
@@ -1791,4 +1782,4 @@ The following information contains answers to questions about security in Micros
 
 - Do integrating products support all of the security features in Microsoft Dynamics GP?
 
-    Some security features are not “rolled” into all of the additional products right away, but will most likely be added in a future release. This means that an administrator might need to use the system administrator (“sa”) login to initialize or convert any tables that require a conversion. In order for additional product dictionaries to utilize the security features, a new function, called syUserInRole, has been created, which can determine what database roles the user is a member of.
+    Some security features are not "rolled" into all of the additional products right away, but will most likely be added in a future release. This means that an administrator might need to use the system administrator ("sa") login to initialize or convert any tables that require a conversion. In order for additional product dictionaries to utilize the security features, a new function, called syUserInRole, has been created, which can determine what database roles the user is a member of.
