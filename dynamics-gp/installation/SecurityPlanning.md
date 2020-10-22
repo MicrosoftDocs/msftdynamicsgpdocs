@@ -27,7 +27,7 @@ This introduction is divided into the following sections:
 
 - *Send us your documentation comments*
 
-### What's in this document
+## What's in this document
 
 This document is designed to make you aware of actions that you can complete to
 help make your Microsoft Dynamics GP data as secure as possible.
@@ -70,63 +70,6 @@ The document is divided into the following information:
 - *Chapter 7, "Core application security tasks,"* lists the most secure options for completing common security tasks in Microsoft Dynamics GP.
 
 - *Chapter 8, "Frequently asked questions,"* contains answers to frequently asked questions about security in Microsoft Dynamics GP.
-
-### Resources available from the Help menu
-
-The Microsoft Dynamics GP Help menu gives you access to user assistance resources on your computer, as well as on the Web.
-
-**Contents**
-
-Opens the Help file for the active Microsoft Dynamics GP component, and displays
-the main "contents" topic. To browse a more detailed table of contents, click
-the Contents tab above the Help navigation pane. Items in the contents topic and
-tab are arranged by module. If the contents for the active component includes an
-"Additional Help files" topic, click the links to view separate Help files that
-describe additional components.
-
-To find information in Help by using the index or full-text search, click the
-appropriate tab above the navigation pane, and type the keyword to find.
-
-To save the link to a topic in the Help, select a topic and then select the
-Favorites tab. Click Add.
-
-**Index**
-
-Opens the Help file for the active Microsoft Dynamics GP component, with the
-Index tab active. To find information about a window that's not currently
-displayed, type the name of the window, and click Display.
-
-**About this window**
-
-Displays overview information about the current window. To view related
-topics and descriptions of the fields, buttons, and menus for the window,
-choose the appropriate link in the topic. You also can press F1 to display
-Help about the current window.
-
-**Lookup**
-
-Opens a lookup window, if a window that you are viewing has a lookup window.
-For example, if the Checkbook Maintenance window is open, you can choose
-this item to open the Checkbooks lookup window.
-
-**Show Required Fields**
-
-Highlights fields that are required to have entries. Required fields must
-contain information before you can save the record and close the window. You
-can change the font color and style used to highlight required fields. On
-the Microsoft Dynamics GP menu, choose User Preferences and then choose
-Display.
-
-**What's New**
-
-Provides information about enhancements that were added to Microsoft
-Dynamics GP since the last major release.
-
-**Documentation and resources on the web**
-
-Opens a Web page that provides links to a variety of Web-based user
-assistance resources. Access to some items requires registration for a paid
-support plan.
 
 ## Chapter 1: Basic security recommendations
 
@@ -245,28 +188,23 @@ recommend following the principle of least privilege: give users only the
 minimum privileges required to access data and functionality. For example, avoid
 requiring administrative rights to run features.
 
-Disgruntled and former employees are a threat to network security. We recommend
-using the following policy regarding employees:
+Disgruntled and former employees are a threat to network security. We recommend using the following policy regarding employees:
 
-* Conduct pre-employment background investigations.
+- Conduct pre-employment background investigations.
 
 - Expect "revenge" from disgruntled employees and former employees.
 
-- Make sure that you inactivate all associated Windows accounts and passwords
-    when an employee leaves. For reporting purposes, do not delete users.
+- Make sure that you inactivate all associated Windows accounts and passwords when an employee leaves. For reporting purposes, do not delete users.
 
 - Train users to be alert and to report suspicious activity.
 
-- Do not grant privileges automatically. If users do not need access to
-    particular computers, computer rooms, or sets of files, ensure that they do
-    not have access.
+- Do not grant privileges automatically. If users do not need access to particular computers, computer rooms, or sets of files, ensure that they do not have access.
 
 - Train supervisors to identify and respond to potential employee problems.
 
 - Monitor system usage for unusual activity.
 
-- Make sure that employees understand their roles in maintaining network
-    security.
+- Make sure that employees understand their roles in maintaining network security.
 
 - Give a copy of the company policies to every employee.
 
@@ -363,9 +301,7 @@ Windows Server 2012 operating system and has the ability to automatically
 install downloaded updates. For more information about Microsoft WSUS, see
 [Get Started with Windows Server 2016](/windows-server/get-started/server-basics).
 
-**Microsoft Systems Management Server (SMS) Software Update**
-
-**Services** The SMS Software Update Services contains a number of tools aimed
+**Microsoft Systems Management Server (SMS) Software Update Services** The SMS Software Update Services contains a number of tools aimed
 at easing the process of issuing software updates throughout the enterprise. The
 tools include a Security Update Inventory Tool, a Microsoft Office Inventory
 Tool for Updates, the Distribute Software Updates Wizard, and an SMS Web Reporting
@@ -527,7 +463,7 @@ characters. Given enough time, the automated method can crack any password.
 However, strong passwords are much harder to crack than weak passwords. A
 secure computer has strong passwords for all user accounts.
 
-**A weak password**
+A weak password:
 
 - Is no password at all.
 
@@ -536,7 +472,7 @@ secure computer has strong passwords for all user accounts.
 - Contains a complete dictionary word. For example, the word Password is a
     weak password.
 
-**A strong password**
+A strong password:
 
 - Is at least seven characters long.
 
@@ -671,7 +607,7 @@ on that object. The following key concepts make up access control:
 
 - Object auditing
 
-**Permissions**
+#### Permissions
 
 Permissions define the type of access granted to a user or group for an
 object or object property such as files, folders, and registry objects.
@@ -679,7 +615,7 @@ Permissions are applied to any secured objects such as files or registry
 objects. Permissions can be granted to any user, group, or computer. It is a
 good practice to assign permissions to groups.
 
-**Ownership of objects**
+#### Ownership of objects
 
 When a member of the Administrators group creates an object in Windows
 Server, the Administrators group becomes the owner, rather than the
@@ -689,9 +625,9 @@ snap-in, using the setting System objects: Default owner for objects created
 by members of the Administrators group. No matter what permissions are set
 on an object, the owner of the object can always change the permissions on
 an object. For more information, see "Manage Object Ownership" in Windows
-Server 2012 Online Help.
+Server Help.
 
-**Inheritance of permissions**
+#### Inheritance of permissions
 
 Inheritance allows administrators to easily assign and manage permissions.
 This feature automatically causes objects within a container to inherit all
@@ -699,19 +635,19 @@ the inheritable permissions of that container. For example, the files within
 a folder, when created, inherit the permissions of the folder. Only
 permissions marked to be inherited will be inherited.
 
-**User rights**
+#### User rights
 
 User rights grant specific privileges and login rights to users and groups
 in your computing environment. For information about user rights, see "User
 Rights" in Windows Server Online Help.
 
-**Object auditing**
+#### Object auditing
 
 You can audit users' access to objects. You can then view these
 security-related events in the security log using the Event Viewer. For more
 information, see "Auditing" in Windows Server Online Help.
 
-**Access control best practices**
+#### Access control best practices
 
 Use the following information when you are assigning or denying access to
 the server operating system.
@@ -750,7 +686,7 @@ the server operating system.
 ### Single sign-on
 
 A key feature of Windows Server family authentication is its support of
-single signon. Single sign-on allows a user to log in to the Windows domain
+single sign-on. Single sign-on allows a user to log in to the Windows domain
 once, using a single password, and authenticate to any computer in the
 Windows domain without having to reenter that password.
 
@@ -1563,10 +1499,7 @@ Because of this, the same options that are available when creating user
 records are available when deleting them. The following options are
 available. The most secure option is option 5.
 
-##### Options
-
-1. Log in to the application as the system administrator ("sa") and delete the
-    user records as required (no change from previous releases).
+1. Log in to the application as the system administrator ("sa") and delete the user records as required (no change from previous releases).
 
 2. Assign the specific Microsoft Dynamics GP Administrator(s) SQL Login account
     to the SysAdmin Fixed Server Role. With this option, the Microsoft Dynamics
@@ -1596,8 +1529,6 @@ The user must have sufficient permissions to grant access to a company
 database. The following options are available. The most secure choice is
 option 5.
 
-##### Options
-
 1. Log in to the application as the system administrator ("sa") and grant
     access as required (no change from previous releases).
 
@@ -1625,8 +1556,6 @@ option 5.
 #### Backing up databases
 
 The following options are available to choose from. The most secure choice is option 4.
-
-##### Options
 
 1. Log in to the application as the system administrator ("sa") and perform the
     backup as required (no change from previous releases).
@@ -1661,8 +1590,6 @@ objects. This is particularly true for the Microsoft SQL Server jobs.
 Because of this, we've limited the option for creating business alerts to
 two. The most secure choice is option 2.
 
-##### Options
-
 1. Log in to the application as the system administrator ("sa") and create the
     business alert as required (no change from previous releases).
 
@@ -1680,8 +1607,6 @@ this window and access can be assigned to other logins as well. There are
 three ways to gain access to this window. The most secure choice is option
 3.
 
-##### Options
-
 1. Log in to the application as the system administrator ("sa") to access this
     window (no change from previous releases).
 
@@ -1696,8 +1621,6 @@ three ways to gain access to this window. The most secure choice is option
 
 The Delete Company window is used to delete Microsoft Dynamics GP companies.
 The following options are available. Option 3 is the most secure.
-
-##### Options
 
 1. Log in to the application as system administrator ("sa") and process as
     required (no change from previous releases).
