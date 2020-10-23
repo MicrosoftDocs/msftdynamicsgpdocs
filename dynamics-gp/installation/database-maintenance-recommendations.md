@@ -1,6 +1,6 @@
 ﻿---
 title: Recommended Maintenance of Your Databases
-description: 
+description: Read some recommendations for how you can keep your database for Dynamics GP in good shape.
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: dynamics-gp
@@ -10,7 +10,7 @@ ms.author: edupont
 
 # Recommended Maintenance of Your Databases
 
-Database maintenance helps keep the inner workings of Microsoft SQL Server and the Microsoft Dynamics GP databases running at their peak level. ​​We recommend that you use the following SQL Server maintenance procedures:
+Database maintenance helps keep the inner workings of Microsoft SQL Server and the Microsoft Dynamics GP databases running at their peak level. We recommend that you use the following SQL Server maintenance procedures:
 
 - Use database consistency check commands
 
