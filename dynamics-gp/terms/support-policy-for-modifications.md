@@ -1,9 +1,9 @@
 ﻿---
 title: Support Policy for Modifications 
 description: View the support policy for modifications to S​martList Builder, Excel Report Builder, Navigation List Builder, and Drill Down Builder in Microsoft Dynamics GP
-ms.date: 10-23-2020
+ms.date: 10/23/2020
 ms.topic: article
-ms.service: dynamics-gp
+ms.prod: dynamics-gp
 author: edupont04
 ms.author: edupont
 ---

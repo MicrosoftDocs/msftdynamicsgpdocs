@@ -1,9 +1,9 @@
 ﻿---
 title: Recommended Maintenance of Your Databases
 description: 
-ms.date: 10-23-2020
+ms.date: 10/23/2020
 ms.topic: article
-ms.service: dynamics-gp
+ms.prod: dynamics-gp
 author: edupont04
 ms.author: edupont
 ---
@@ -38,10 +38,13 @@ You can run database consistency check (DBCC) commands manually with SQL Server 
       > DBCC CHECKCATALOG is included in DBCC CHECKDB for Microsoft SQL Server 2005 or later.
 
     - DBCC CHECKDB (DBNAME)
-        > When you use this statement, replace *DBNAME* with the name of your database, such as DYNAMICS.
-        > You can schedule this command within SQL Server Enterprise Manager or SQL Server Management Studio so that the maintenance process runs automatically.
 
-    -   DBCC DBREINDEX (TableName)
+      When you use this statement, replace *DBNAME* with the name of your database, such as DYNAMICS.
+
+      You can schedule this command within SQL Server Enterprise Manager or SQL Server Management Studio so that the maintenance process runs automatically.
+
+    - DBCC DBREINDEX (TableName)
+
       When you use this statement, replace *TableName* with the name of the table, such as GL00100.
 
       The DBCC DBREINDEX command can also be executed manually against all tables at the same time by using the Reindex.sql script. You can find the Reindex.sql script in the default path for Microsoft Dynamics GP as C:\\Program Files\\Microsoft Dynamics\\GP\\SQL\\Utility\\0 folder.

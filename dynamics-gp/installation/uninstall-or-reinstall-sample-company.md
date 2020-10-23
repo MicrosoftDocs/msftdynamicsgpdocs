@@ -1,9 +1,9 @@
 ﻿---
 title: Uninstall or Reinstall the Sample Company
 description: Learn how to uninstall and reinstall the sample company in Dynamics GP when you are using SQL Server or MSDE.
-ms.date: 10-23-2020
+ms.date: 10/23/2020
 ms.topic: article
-ms.service: dynamics-gp
+ms.prod: dynamics-gp
 author: edupont04
 ms.author: edupont
 ---
@@ -62,19 +62,19 @@ If the option to **Add sample company data** is not available, refer to the foll
   - If you are using Microsoft Dynamics GP or an earlier version, reinstall Microsoft Dynamics GP by using the Server option.
   - If you are using Microsoft Business Solutions - Great Plains 8.0, look for the Add sample company data option in Utilities on the server installation, or copy the SQL folder from the installation CD. To do this, follow these steps:
 
-    - In the Great Plains installation folder, create a new folder that is named *SQL*. By default, the Great Plains installation folder is located at C:\\Program Files\\Microsoft Business Solutions\\Great Plains.
+    1. In the Great Plains installation folder, create a new folder that is named *SQL*. By default, the Great Plains installation folder is located at C:\\Program Files\\Microsoft Business Solutions\\Great Plains.
 
-    - Choose the *SQL* folder, and then choose the *7.0* folder on CD1 for Great Plains.
+    2. Choose the *SQL* folder, and then choose the *7.0* folder on CD1 for Great Plains.
 
-    - Copy the following folders to the new SQL folder that you created in step a:
+    3. Copy the following folders to the new SQL folder that you created in step 1:
 
-      - Company
-      - HR
-      - Lesson
-      - System
-      - Upgrade
-      - Util
-      - Right-choose the SQL folder, select Properties, and then make sure that Read Only is not selected.
+        - Company
+        - HR
+        - Lesson
+        - System
+        - Upgrade
+        - Util
+        - Right-choose the SQL folder, select Properties, and then make sure that Read Only is not selected.
 
 ## See also
 

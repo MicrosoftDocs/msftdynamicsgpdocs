@@ -1,9 +1,9 @@
 ﻿---
 title: Add the Address 3 field to Sales Documents
 description: Learn how you can add the Address 3 field to sales documents and also exclude blank addresses from the reports.
-ms.date: 10-23-2020
+ms.date: 10/23/2020
 ms.topic: article
-ms.service: dynamics-gp
+ms.prod: dynamics-gp
 author: edupont04
 ms.author: edupont
 ---

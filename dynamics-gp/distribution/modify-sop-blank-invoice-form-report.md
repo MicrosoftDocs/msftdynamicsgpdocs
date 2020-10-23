@@ -1,9 +1,9 @@
 ﻿---
 title: Modify the SOP Blank Invoice Form Report
 description: Learn how to customize the SOP Blank Invoice Form report in Sales Order Processing in Dynamics GP by changing two address fields and make it print more than four line item comments.
-ms.date: 10-23-2020
+ms.date: 10/23/2020
 ms.topic: article
-ms.service: dynamics-gp
+ms.prod: dynamics-gp
 author: edupont04
 ms.author: edupont
 ---
@@ -257,5 +257,5 @@ To do this, use the Security tool in Dynamics GP.
 
 ## See also
 
-[Add the Address 3 Field to Sales Documents(sales-add-address-3-field.md)  
+[Add the Address 3 Field to Sales Documents](sales-add-address-3-field.md)  
 [Sales Order Processing Part 5: Inquiries and reports](sales-order-processing-part5-inquiries-reports.md)  
