@@ -548,7 +548,7 @@ important that the network also is secure from attacks. The following
 information will help you to determine the type of security that you should
 have for your network.
 
-**Firewalls**
+##### Firewalls
 
 Because the design and deployment of an IP inter–networking environment requires
 balancing private and public network concerns, the firewall is extremely
@@ -562,7 +562,7 @@ help you to choose the firewall that is right for your network.
 | Circuit Gateways     | These are tunnels built through a firewall connecting specific processes or systems on one side with specific processes or systems on the other. Circuit gateways are best used in situations where the person using an application is potentially a greater risk than the information carried by the application. The circuit gateway differs from IP packet filtering in its ability to connect to an out-of-band application scheme that can add additional information. |
 | Proxy Servers        | These are security tools, which include firewall and application gateway functionality, that manage Internet traffic to and from a Local Area Network (LAN). A proxy server can improve performance by caching and directly supplying frequently requested data, such as a popular Web page. It can also filter and discard requests that the owner does not consider appropriate, such as requests for unauthorized access to proprietary files.                          |
 
-**Wireless networks**
+##### Wireless networks
 
 By default, wireless networks are typically configured to allow eavesdropping on
 the wireless signals. They can be vulnerable to a malicious outsider gaining
@@ -670,7 +670,7 @@ are some tips to avoid infection.
     the macro or document originated from the signer and has not been altered.
     For more information about Microsoft Office security features, visit the
     Microsoft Office Online Web site
-    ([https://office.microsoft.com)](https://office.microsoft.com/en-us/default.aspx).
+    ([https://office.microsoft.com)](https://office.microsoft.com/default.aspx).
 
 ## Part 2: User setup
 
@@ -769,73 +769,59 @@ already created. You also can view the number of users who are currently logged
 in to Microsoft Dynamics GP and the number of users allowed to log in to
 Microsoft Dynamics GP by status and user type.
 
-**To create a user record with a SQL Server Login:**
+To create a user record with a SQL Server Login:
 
 1. Open the User Setup window. (Administration \>\> Setup \>\> System \>\>
     User)
 
     ![A screenshot](media/1ba2aca4be46f6e8275927ee7fe189cc.jpg)
 
-
-1. In the User ID field, enter a user ID, which will be used throughout
+2. In the User ID field, enter a user ID, which will be used throughout
     Microsoft Dynamics GP to identify this person.
 
-2. In the User Name field, enter the person's full name.
+3. In the User Name field, enter the person's full name.
 
-3. In the Password field, enter the password this user will use when starting
+4. In the Password field, enter the password this user will use when starting
     the accounting system.
 
-If you don't assign a password to the user at this time, the user will be
-required to enter a password before accessing Microsoft Dynamics GP.
+    If you don't assign a password to the user at this time, the user will be required to enter a password before accessing Microsoft Dynamics GP.
 
-1. In the Class ID field, assign the user to a class, if you wish.
+5. In the Class ID field, assign the user to a class, if you wish.
 
-See *Creating a user class* for more information.
+    See *Creating a user class* for more information.
 
-1. In the Status field, select a status. The user type and status determine the
-    user's access in Microsoft Dynamics GP.
+6. In the Status field, select a status. The user type and status determine the user's access in Microsoft Dynamics GP.
 
-2. In the User Type field, select a user type. The user type and status
-    determine the user's access in Microsoft Dynamics GP.
+7. In the User Type field, select a user type. The user type and status determine the user's access in Microsoft Dynamics GP.
 
-3. In the Home Page Role field, assign the user to a user role. The user role
-    determines the content that is displayed on a user's home page by default.
+8. In the Home Page Role field, assign the user to a user role. The user role determines the content that is displayed on a user's home page by default.
 
-For more information on home pages, refer to your System User's Guide (Help
-\>\> Contents \>\> select Using the System.)
+    For more information on home pages, refer to your System User's Guide (Help\>\> Contents \>\> select Using the System.)
 
-1. Mark the Payroll View for Human Resources option if you want a user's
+9. Mark the Payroll View for Human Resources option if you want a user's
     changes to Human Resources benefit and deduction codes to update
     corresponding U.S. Payroll information. You should mark this option for
     every user who will enter or update benefit information in Human Resources.
 
-2. You can enforce password policies for SQL Server and Windows Server.
+10. You can enforce password policies for SQL Server and Windows Server.
 
-**Enforce Password Policy** Mark this option to force users to adhere to the
-same password policies that have been established on the Windows Server
-domain.
+    **Enforce Password Policy** Mark this option to force users to adhere to the same password policies that have been established on the Windows Server domain.
 
-**Change Password Next Login** Mark this option to force users to change
-their passwords the next time they log in to Microsoft Dynamics GP. The
-Enforce Password Policy must be marked for this option to be available.
+    **Change Password Next Login** Mark this option to force users to change their passwords the next time they log in to Microsoft Dynamics GP. The Enforce Password Policy must be marked for this option to be available.
 
-**Enforce Password Expiration** Mark this option to force users to change
-their passwords after the number of days that is defined by the Windows
-Server domain password policies. This option is available only if you have
-marked the Enforce Password Policy option. The Enforce Password Policy must
-be marked for this option to be available.
+    **Enforce Password Expiration** Mark this option to force users to change their passwords after the number of days that is defined by the Windows Server domain password policies. This option is available only if you have marked the Enforce Password Policy option. The Enforce Password Policy must be marked for this option to be available.
 
-1. Choose Copy Access if there is an existing user that you want copy security
+11. Choose Copy Access if there is an existing user that you want copy security
     settings such as roles, tasks, and company access to the user. See *Copying
     security access from an existing user* for more information.
 
-2. Choose Save to save the user record.
+12. Choose Save to save the user record.
 
-3. To print a User Preferences List showing information for the currently
+13. To print a User Preferences List showing information for the currently
     displayed user, choose File \>\> Print. You can print a similar report for
     all users from the User Report Options window.
 
-**To create a user record with a Windows account:**
+To create a user record with a Windows account:
 
 1. Open the User Setup window. (Administration \>\> Setup \>\> System \>\>
     User)
@@ -1199,48 +1185,44 @@ make up a task.
 
     ![A screenshot](media/8f5326312682942a71ec2b2218b0b8b2.jpg)
 
-1. Enter a task ID.
+2. Enter a task ID.
 
-2. To save time, you can copy all security settings from an existing task into
+3. To save time, you can copy all security settings from an existing task into
     the task that you are about to create. Choose Copy to do this, otherwise,
     skip to step 6.
 
-3. The Copy Security Task window is displayed. Enter an existing security task
+4. The Copy Security Task window is displayed. Enter an existing security task
     ID to copy settings from.
 
-4. Choose OK. The Copy Security Task window closes and the Security Task Setup
+5. Choose OK. The Copy Security Task window closes and the Security Task Setup
     window now contains the security settings of the task that you copied.
 
-5. Enter a name and description for the task.
+6. Enter a name and description for the task.
 
-6. Select a category for the task.
+7. Select a category for the task.
 
-7. Select a product from the Product list. If you're using integrating products
+8. Select a product from the Product list. If you're using integrating products
     with Microsoft Dynamics GP, they are displayed in the list in addition to
     Microsoft Dynamics GP.
 
-8. In the Type list, select the type of item you want to limit access to. See
+9. In the Type list, select the type of item you want to limit access to. See
     *Items you can set security for* on page 33 for information about the types
     shown in the list.
 
-9. Using the Series list, specify the series you want to set access to. For
+10. Using the Series list, specify the series you want to set access to. For
     example, to grant access to a window, report or other resource in General
     Ledger, select Financial from the Series drop-down list.
 
-10. Using the Access list, mark an item to grant access to it and unmark an item
+11. Using the Access list, mark an item to grant access to it and unmark an item
     to remove access.
 
-You can choose the Unmark All button to unmark all items that appear in the
-list, or Mark All to mark all items in the list. You can mark the Display
-Selected Items option if you want the list to show only the items that you
-have granted access to.
+    You can choose the Unmark All button to unmark all items that appear in the list, or Mark All to mark all items in the list. You can mark the Display Selected Items option if you want the list to show only the items that you have granted access to.
 
-> [!TIP]
-> Double-click a window or report in the Access List to view it.
+    > [!TIP]
+    > Double-click a window or report in the Access List to view it.
 
-1. Repeat steps 9 through 11 to set security for all series.
-
-2. Choose Save to save your changes.
+12. Repeat steps 9 through 11 to set security for all series.
+13. Choose Save to save your changes.
 
 #### Creating security roles
 
@@ -1251,45 +1233,41 @@ GP.
 
 **To create security roles:**
 
-1. Open the Security Role Setup window. (Administration \>\> Setup \>\> System
-    \>\> Security Roles)
+1. Open the Security Role Setup window. (Administration \>\> Setup \>\> System\>\> Security Roles)
 
-    ![A screenshot](media/10c8729e9adffcaaf66082e947203be5.jpg)
+    ![Security Role Setup](media/10c8729e9adffcaaf66082e947203be5.jpg)
 
-1. Enter a role ID.
+2. Enter a role ID.
 
-2. To save time, you can copy all security tasks from an existing role into the
+3. To save time, you can copy all security tasks from an existing role into the
     role that you are about to create. Choose Copy to do this, otherwise, skip
     to step 6.
 
-3. The Copy Security Role window is displayed. Enter an existing security role
+4. The Copy Security Role window is displayed. Enter an existing security role
     ID to copy security tasks from.
 
-4. Choose OK. The Copy Security Role window closes and the Security Role Setup
+5. Choose OK. The Copy Security Role window closes and the Security Role Setup
     window now contains the security tasks of the role that you copied.
 
-5. Enter a name for the role.
+6. Enter a name for the role.
 
-6. Enter a description for the role.
+7. Enter a description for the role.
 
-7. Select a category from the drop-down list to display the tasks for that
+8. Select a category from the drop-down list to display the tasks for that
     category.
 
-8. Mark the security tasks that users who are assigned to this role should have
+9. Mark the security tasks that users who are assigned to this role should have
     access to.
 
-You can choose the Unmark All button to unmark all tasks that appear in the
-list, or Mark All to mark all tasks in the list. You can mark the Display
-Selected Roles option if you want the list to show only the items that you
-have granted access to.
+    You can choose the Unmark All button to unmark all tasks that appear in the list, or Mark All to mark all tasks in the list. You can mark the Display Selected Roles option if you want the list to show only the items that you have granted access to.
 
-> [!TIP]
-> Double-click a task to view information about that task.
+    > [!TIP]
+    > Double-click a task to view information about that task.
 
-1. Repeat steps 8 and 9 to set security for all categories for this security
+10. Repeat steps 8 and 9 to set security for all categories for this security
     role.
 
-2. Choose Save to save your changes.
+11. Choose Save to save your changes.
 
 #### Setting up individual user security
 
@@ -1432,37 +1410,30 @@ and reports to original settings:* for more information.
 
 **To set access to alternate/modified forms and reports:**
 
-1. Open the Alternate/Modified Forms and Reports window. (Administration \>\>
-    Setup \>\> System \>\> Alternate/Modified Forms and Reports)
+1. Open the Alternate/Modified Forms and Reports window. (Administration \>\> Setup \>\> System \>\> Alternate/Modified Forms and Reports)
 
 2. Enter an ID and description.
 
 3. Select a product from the Product list. If you're using integrating products with Microsoft Dynamics GP, they are displayed in the list in addition to Microsoft Dynamics GP.
 
-1. In the Type list, select the type of item you want to set access for.
+4. In the Type list, select the type of item you want to set access for.
 
-2. Select the series you want to set access for. This will narrow down the list
-    of windows or reports in the list if you're setting access to specific
-    windows or reports.
+5. Select the series you want to set access for. This will narrow down the list of windows or reports in the list if you're setting access to specific windows or reports.
 
-3. Select the integrating product in the Select list. The alternate forms or
-    reports will appear in the list, with the Microsoft Dynamics GP option
-    selected by default.
+6. Select the integrating product in the Select list. The alternate forms or reports will appear in the list, with the Microsoft Dynamics GP option selected by default.
 
-4. Click Change All. The access will be changed to the integrating product for
-    all forms or reports.
+7. Click Change All. The access will be changed to the integrating product for all forms or reports.
 
     > [!NOTE]
     > You can use the Show/Hide button to expand the Alternate/Modified Forms and Reports List to grant access to individual forms or reports.
 
-1. Repeat steps 3 through 7 to set access to the alternate/modified forms and reports for any other products.
+8. Repeat steps 3 through 7 to set access to the alternate/modified forms and reports for any other products.
 
-2. Choose Save.
+9. Choose Save.
 
-**To reset alternate/modified forms and reports to original settings:**
+To reset alternate/modified forms and reports to original settings:
 
-1. Open the Alternate/Modified Forms and Reports window. (Administration \>\>
-    Setup \>\> System \>\> Alternate/Modified Forms and Reports)
+1. Open the Alternate/Modified Forms and Reports window. (Administration \>\> Setup \>\> System \>\> Alternate/Modified Forms and Reports)
 
 2. Enter an ID and description.
 
@@ -1482,28 +1453,23 @@ and reports to original settings:* for more information.
 
 8. Choose Save.
 
-**To view alternate/modified forms and reports settings:**
+To view alternate/modified forms and reports settings:
 
-1. Open the Alternate/Modified Forms and Reports window. (Administration \>\>
-    Setup \>\> System \>\> Alternate/Modified Forms and Reports)
+1. Open the Alternate/Modified Forms and Reports window. (Administration \>\> Setup \>\> System \>\> Alternate/Modified Forms and Reports)
 
 2. Select the ID, Product, Type and Series you want to view.
 
-3. Mark Display Selected. The Alternate/Modified Forms and Reports List will
-    display only the options selected for the criteria above. Changes can't be
-    made when this box is marked.
+3. Mark Display Selected. The Alternate/Modified Forms and Reports List will display only the options selected for the criteria above. Changes can't be made when this box is marked.
 
 The Show/Hide button above the list will expand or collapse the list.
 
 #### Deleting security records
 
-Use the Remove Security Setup Records window to delete groups of security
-task IDs, security role IDs, and alternate/modified forms and reports IDs.
+Use the Remove Security Setup Records window to delete groups of security task IDs, security role IDs, and alternate/modified forms and reports IDs.
 
-**To delete security records:**
+To delete security records:
 
-1. Open the Remove Security Setup Records window. (Administration \>\>
-    Utilities \>\> System \>\> Remove Security Setup Records)
+1. Open the Remove Security Setup Records window. (Administration \>\> Utilities \>\> System \>\> Remove Security Setup Records)
 
 2. Select the type of security records that you want to delete.
 
@@ -1541,18 +1507,14 @@ There should also be links to procedures for setting security on the shared
 folders on the network or SharePoint, depending on how the sysadmin wants to
 deploy the excel reports.
 
-**To set up security for viewing data connections and Microsoft Excel reports:**
+To set up security for viewing data connections and Microsoft Excel reports:
 
 1. Create new local groups on the server where the data connections and Microsoft Excel reports are deployed. For more information, refer to *Chapter 40, "Excel report deployment,"* and your Windows Server
 documentation.
 
-1. Assign each local group to the default SQL Server fixed database role that
-    corresponds to the report that group will need access to. For more
-    information about adding an Active Directory group to a SQL Server fixed
-    database role, refer to your SQL Server documentation.
+2. Assign each local group to the default SQL Server fixed database role that corresponds to the report that group will need access to. For more information about adding an Active Directory group to a SQL Server fixed database role, refer to your SQL Server documentation.
 
-2. Add domain users or domain groups to the local groups that you set up in
-    step
+3. Add domain users or domain groups to the local groups that you set up in step 1
 
 #### Setting up access to SQL Server Reporting Services reports
 
@@ -1579,12 +1541,9 @@ Server Reporting Services Guide. This guide describes how to install
 Reporting
 
 Services, how to deploy predefined reports that are included in Microsoft
-Dynamics GP to a server, and how to set up security for reports. Check the
-Using Microsoft Dynamics GP 2010 Web site
-(<https://go.microsoft.com/fwlink/?LinkId=249465>) for the most current
-documentation.
+Dynamics GP to a server, and how to set up security for reports.
 
-**To set up access for SQL Server Reporting Services reports:**
+To set up access for SQL Server Reporting Services reports:
 
 1. Create new local groups on the Web server where the SQL Reporting Services
     reports are deployed. For more information, refer to *Deploying SQL Server
@@ -1607,9 +1566,7 @@ documentation.
     credentials to be passed to the SQL Server so that users can view SQL
     Reporting Services reports.
 
-Refer to Knowledge Base article 319723: *How to use Kerberos authentication
-in *SQL Server* [(https://support.microsoft.com/kb/319723/en-us)](https://support.microsoft.com/kb/319723/en-us) and complete Step 1: Configure the domain controller and Step 2: Configure the IIS
-services server to use Kerberos authentication on SQL Server.
+Refer to Knowledge Base article 319723: *How to use Kerberos authentication in SQL Server* [(https://support.microsoft.com/kb/319723/en-us)](https://support.microsoft.com/kb/319723/en-us) and complete Step 1: Configure the domain controller and Step 2: Configure the IIS services server to use Kerberos authentication on SQL Server.
 
 #### User security troubleshooting
 
@@ -1653,31 +1610,25 @@ IDs, which are necessary to define user passwords, and to lock, hide, or
 make windows, forms, and fields unavailable. The Field Security Maintenance
 window also allows you to modify, add, or delete field security IDs.
 
-**To add or modify a field security ID:**
+To add or modify a field security ID:
 
-1. Open the Field Level Security window. (Administration \>\> Setup \>\> System
-    \>\> Field Level Security)
+1. Open the Field Level Security window. (Administration \>\> Setup \>\> System \>\> Field Level Security)
 
 2. Choose Add to open the Field Security Maintenance window.
 
-*You also can double-click an existing field security ID in the Field
-Security window to open the Field Level Security Maintenance and continue
-through this procedure.*
+    You also can double-click an existing field security ID in the Field Security window to open the Field Level Security Maintenance and continue through this procedure.
 
-1. Enter or modify the Field Security ID field and a description.
+3. Enter or modify the Field Security ID field and a description.
 
-2. Choose the product name lookup button to open the Resource Explorer window.
+4. Choose the product name lookup button to open the Resource Explorer window.
 
-3. Select an object from the Resource Explorer window to apply security to. For
-    more information refer to *Resource Explorer* .
+5. Select an object from the Resource Explorer window to apply security to. For more information refer to *Resource Explorer* .
 
-4. Apply or modify the security mode for the field, form, or window you have
-    selected. For more information refer to *Security modes* .
+6. Apply or modify the security mode for the field, form, or window you have selected. For more information refer to *Security modes* .
 
-5. If you selected a security mode that requires a password, enter or select a
-    password ID in the Password ID field.
+7. If you selected a security mode that requires a password, enter or select a password ID in the Password ID field.
 
-6. Choose Save.
+8. Choose Save.
 
 You can now use the Field Level Security window to apply this field security
 ID to users and user classes.
@@ -1689,36 +1640,29 @@ ID to create a new one. To create a new field security ID that will be
 similar to an existing field security ID, you can copy the existing field
 security ID as your new field security ID and then modify it.
 
-**To copy a field security ID:**
+To copy a field security ID:
 
-1. Open the Field Level Security window.
+1. Open the Field Level Security window. (Administration \>\> Setup \>\> System \>\> Field Level Security)
 
-(Administration \>\> Setup \>\> System \>\> Field Level Security)
+2. Double-click on a field security ID in the field security object tree to open the Field Security Maintenance window.
 
-1. Double-click on a field security ID in the field security object tree to
-    open the Field Security Maintenance window.
+3. Choose Copy.
 
-2. Choose Copy.
+4. Enter a new ID in the Field Security ID field.
 
-3. Enter a new ID in the Field Security ID field.
+5. Modify fields, as necessary.
 
-4. Modify fields, as necessary.
-
-5. Choose Save.
+6. Choose Save.
 
 #### Security modes
 
-You can select the following security modes from the Field Level Security
-Maintenance window to give security to fields, forms, or windows.
+You can select the following security modes from the Field Level Security Maintenance window to give security to fields, forms, or windows.
 
-**Password Before** You must enter a password before getting access to a
-field.
+**Password Before** You must enter a password before getting access to a field.
 
-**Password After** You must enter a password after modifying a field for the
-changes to be saved.
+**Password After** You must enter a password after modifying a field for the changes to be saved.
 
-**Warning Before** A warning will be displayed and access to that field will
-be denied.
+**Warning Before** A warning will be displayed and access to that field will be denied.
 
 **Lock Field** You can't use or modify the field.
 
@@ -1762,23 +1706,19 @@ tree.
 Use the Password Maintenance window to create and modify passwords that you
 assign to a field, form, or window.
 
-**To create a password:**
+To create a password:
 
-1. Open the Password Maintenance window by clicking the underlined password ID
-    in the Field Security Maintenance window.
+1. Open the Password Maintenance window by clicking the underlined password ID in the Field Security Maintenance window.
 
-*You also can open the Password Maintenance window by opening the lookup
-window for the password field. You can either select a current password, or
-you can choose New to clear the fields.*
+    You also can open the Password Maintenance window by opening the lookup window for the password field. You can either select a current password, or you can choose New to clear the fields.
 
-1. Enter a password ID and a description.
+2. Enter a password ID and a description.
 
-2. Enter the password.
+3. Enter the password.
 
-3. Choose Save.
+4. Choose Save.
 
-4. You can continue to create new passwords, modify existing passwords, or
-    return to the Field Security Maintenance window.
+5. You can continue to create new passwords, modify existing passwords, or return to the Field Security Maintenance window.
 
     - To create more passwords, choose Clear and repeat steps 2-5.
 
@@ -1830,27 +1770,21 @@ class folders in the list of shortcuts in the navigation pane. Users can't
 delete or modify a user class folder that appears in their list of
 shortcuts.
 
-**To assign shortcuts to a new user class folder:**
+To assign shortcuts to a new user class folder:
 
 1. Log in as sa or if you are the database owner, log in as DYNSA.
 
-2. Open the User Class Setup window.
+2. Open the User Class Setup window. (Administration \>\> Setup \>\> System \>\> User Classes)
 
-(Administration \>\> Setup \>\> System \>\> User Classes)
+3. Enter a class ID.
 
-1. Enter a class ID.
+4. Enter a description for the user class. This description will be the name of  the user class folder in the list of shortcuts.
 
-2. Enter a description for the user class. This description will be the name of
-    the user class folder in the list of shortcuts.
+    By default, the new user class will have access to all resources in the system. Deny access to selected portions of the system, if desired.
 
-By default, the new user class will have access to all resources in the
-system. Deny access to selected portions of the system, if desired.
+5. Choose Save to save the user class.
 
-1. Choose Save to save the user class.
-
-2. In the User Classes folder, locate the folder for the user class you just
-    created. Add shortcuts to the folder by dragging an existing shortcut from
-    your list of shortcuts into the user class folder.
+6. In the User Classes folder, locate the folder for the user class you just created. Add shortcuts to the folder by dragging an existing shortcut from your list of shortcuts into the user class folder.
 
 #### Adding shortcuts to an existing user class folder
 
@@ -1858,11 +1792,11 @@ As soon as you add a shortcut to a user class folder, users assigned to that
 user class can see the shortcut by closing and reopening their user class
 folder.
 
-**To add shortcuts to an existing user class folder:**
+To add shortcuts to an existing user class folder:
 
-1. Log in as sa or if you are the database owner, log in as DYNSA.
+1. Log in as *sa* or if you are the database owner, log in as *DYNSA*.
 
-In the User Classes folder in the list of shortcuts, locate the folder for the
+2. In the User Classes folder in the list of shortcuts, locate the folder for the
 user class you want to add shortcuts to. Drag an existing shortcut from your
 list of shortcuts into the user class folder.
 

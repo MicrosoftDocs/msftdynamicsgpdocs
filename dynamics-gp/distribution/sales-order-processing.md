@@ -493,7 +493,7 @@ You can set up passwords to further restrict processing. The user must enter the
 
 #### To set up process holds
 
-1. Open the Sales Process Holds Setup window. 
+1. Open the Sales Process Holds Setup window.
    (Sales \>\> Setup \>\> Process Holds)
 
     ![screenshot](media/SOage028.jpg)
@@ -1221,7 +1221,7 @@ You also can use this window to set up substitute item numbers to sell an item i
 
 #### To set up customer item numbers and substitute item numbers
 
-1. Open the Customer Item Maintenance window. 
+1. Open the Customer Item Maintenance window.
    (Sales \>\> Cards \>\> Customer Items)
 
     ![screenshot](media/SOage057.jpg)
