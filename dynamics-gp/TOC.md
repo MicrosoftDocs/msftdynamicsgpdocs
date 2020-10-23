@@ -74,6 +74,8 @@
 #### [Sales Order Processing Part 4: Transaction activity](distribution/sales-order-processing-part4-transaction-activity.md)
 #### [Sales Order Processing Part 5: Inquiries and reports](distribution/sales-order-processing-part5-inquiries-reports.md)
 #### [Sales Order Processing Part 6: Utilities](distribution/sales-order-processing-part6-utilities.md)
+#### [Add the Address 3 field to sales documents](distribution/sales-add-address-3-field.md)
+#### [Modify the SOP Blank Invoice Form report](distribution/modify-sop-blank-invoice-form-report.md)
 ### [Purchase Order Processing](distribution/purchase-order-processing.md)
 #### [Part 1: Setup and cards](distribution/purchase-order-processing.md#part-1-setup-and-cards)
 #### [Part 2: Purchase orders](distribution/purchase-order-processing-part2-orders.md)
@@ -133,6 +135,8 @@
 #### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
 #### [Using Microsoft Dynamics Utilities](installation/using-microsoft-dynamics-utilities.md)
 #### [Installing additional components](installation/installing-additional-components.md)
+#### [Uninstall or reinstall the sample company](installation/uninstall-or-reinstall-sample-company.md)
+#### [Recommended maintenance of your databases](installation/database-maintenance-recommendations.md)
 #### Additional clients
 ##### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
 ##### [Creating an installation package](installation/creating-an-installation-package.md)
