@@ -123,7 +123,6 @@
 
 ## Installation and administration
 ### [Support for Microsoft Dynamics GP](terms/lifecycle.md)
-### [Support Policy for Modifications](terms/support-policy-for-modifications.md)
 <!--- installation -->
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)
