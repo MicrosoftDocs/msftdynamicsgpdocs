@@ -42,6 +42,15 @@ In the Payables Transactions Window found under Purchasing, click Transactions, 
 > [!TIP]
 > This feature will also work in Web Client.
 
+> [!TIP]
+> Like General Ledger copy and paste, if you mark the Intercompany checkbox the Paste option is unavailable.
+
 <img src="media/image29.png" alt="Payables Transaction Entry forms showing data copied from Excel" width="624" height="735" />
 
+
+Distributions will default from the Vendor record unless you paste in distributions. It is not required to do distributions.
+
+In the Payables Transactions Window found under Purchasing, click Transactions, and choose Transaction Entry. Choose the Vendor ID, click Distributions, copy lines from Excel, Select Paste option from the menu which will populate the information. Close the Distribution window, if you are prompted with a warning you can choose OK.
+
+Now paste the rest of the payable's transaction once the distributions are copied.
 
