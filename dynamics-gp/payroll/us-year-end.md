@@ -199,9 +199,8 @@ Aatrix
 2100 Library Cir
 Grand Forks, ND  58201
 Telephone: (800) 426-0854
-E-mail: efile.aatrix.om
+E-mail: *efile.aatrix.com*
 Web Site: [www.aatrix.com](https://www.aatrix.com/)
-
 
 Greenshades Software, Inc.  
 7020 AC Skinner Parkway  
@@ -210,7 +209,6 @@ Jacksonville FL 32256
 Telephone: (888) 255-3815  
 E-mail: *sales\@greenshades.com*  
 Web site: [www.greenshades.com](https://www.greenshades.com/)
-
 
 MasterTax, LLC  
 7150 East Camelback Road, Suite 160  
@@ -241,11 +239,11 @@ As you complete year-end tasks, refer to the answers in this section.
 
   - Using Laser form "sets"
 
-  To print all the required forms for each employee at a time (you're using laser form "sets"), simply enter the number of copies you need to print in the "number of copies" field in the Print dialog box that appears after you choose Print in the Print W-2 Forms window. For example, to print four copies of the W-2 statement for each employee, enter "4" in the Print dialog box. Information for two employees will be printed per page: Copy A for two employees, Copy B for two employees, Copy C for two employees, Copy D for two employees, etc. until the required number of copies has been printed for all employees.
+    To print all the required forms for each employee at a time (you're using laser form "sets"), simply enter the number of copies you need to print in the "number of copies" field in the Print dialog box that appears after you choose Print in the Print W-2 Forms window. For example, to print four copies of the W-2 statement for each employee, enter "4" in the Print dialog box. Information for two employees will be printed per page: Copy A for two employees, Copy B for two employees, Copy C for two employees, Copy D for two employees, etc. until the required number of copies has been printed for all employees.
 
   - Using Laser form "sheets"
 
-  To print all forms for all employees, repeat the Printing W-2 Statements procedure as many times as necessary to print the required number of copies. For example, to print copies of the W-2 statements, put the Copy A sheets into the printer and follow the procedure. Copy A W-2 statements will be printed for each employee. Then, put the Copy B sheets into the printer and repeat the procedure, and so on, until all required forms are printed for all employees.
+    To print all forms for all employees, repeat the Printing W-2 Statements procedure as many times as necessary to print the required number of copies. For example, to print copies of the W-2 statements, put the Copy A sheets into the printer and follow the procedure. Copy A W-2 statements will be printed for each employee. Then, put the Copy B sheets into the printer and repeat the procedure, and so on, until all required forms are printed for all employees.
 
 - I can't make W-2 forms align correctly. What can I do?
 
@@ -277,7 +275,8 @@ As you complete year-end tasks, refer to the answers in this section.
   Verify your employee's records in the Payroll Employee Tax Maintenance window (Cards \>\> Payroll \>\> Tax). Check to see if any additional amounts have been entered in the Additional Withholding and Estimated Withholding fields.
 
   1. Open the Deduction Setup window. (Dynamics GP menu \>\> Tools \>\>  Setup \>\> Payroll \>\> Deduction. Verify that all deductions are marked as TSA are marked correctly.
-  2. Be sure that the pay frequency of the employee's pay codes matches the pay period of your company.  
+  2. Make sure that the pay frequency of the employee's pay codes matches the pay period of your company.  
+
     For example, if you pay your employees semimonthly, the pay frequency for the employee's pay code, deduction, and benefit should also be semimonthly. For additional information, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx). See the Dynamics GP Support and Service blog "How to Verify Dynamics GP is Calculating Payroll Taxes Correctly."
 
 - What will happen if I have deductions and/or benefits set to print in the same box on the W-2 statement with the same label?
@@ -314,7 +313,7 @@ Use the instructions in this chapter to start your Payroll year-end closing task
 
 Use this procedure to close the 2020 Payroll year. After closing the year, you need to install the 2021 Payroll tax update before processing 2021 pay runs. There are two year-end checklists you can use to close the year for payroll. The steps in this section correspond most closely to [Printing 2020 statements before processing 2021 pay runs](#printing-2020-statements-before-processing-2021-pay-runs) section. For more information, see the checklists in [Chapter 2, "Payroll year-end checklists](#chapter-2-payroll-year-end-checklists).
 
-**To complete payroll year-end closing:**
+To complete payroll year-end closing:
 
 1. You already should have completed the tasks in [Chapter 3, "Preparation and FAQs](#chapter-3-preparation-and-faqs).
 2. Complete all 2020 pay runs. The information created during the pay runs is used for month-end or period-end, quarter-end, and any additional year-end reports that you print. You can reprint period-end, quarter-end, or additional reports and re-create the Year-end Wage file at any time.
@@ -364,7 +363,7 @@ Next, print the W-2 statements and W-3 Transmittal form. You should print a W-2 
 
     If you need to post Payroll transactions to a fiscal period you've already closed, use the Fiscal Periods Setup window to reopen the period before posting the transaction.
 
-7. Install the 2021 Payroll tax update. 
+7. Install the 2021 Payroll tax update.  
 
 You also can print W-2 statements and 1099-R forms and create an EFW2 transmission file after you've installed the 2021 Tax Update and performed pay runs for the year 2021. To view the checklist, see [Processing 2021 pay runs before printing 2020 statements](#printoldbeforenew).
 
@@ -381,10 +380,9 @@ You will need to install the year-end update on every workstation that runs Dyna
 1. Download the update from CustomerSource at [https://mbs.microsoft.com/customersource/northamerica/GP/downloads](https://mbs.microsoft.com/customersource/northamerica/GP/downloads).
     The filenames for the supported versions are as follows:
 
-    | **Language**    | **Dynamics GP**   | **Dynamics GP 2016** | 
+    | **Language**    | **Dynamics GP**   | **Dynamics GP 2016** |
     |-----------------|----------------------------------|--------------------------------|
-    | English (U.S)   | MicrosoftDynamicsGP18-KB4569474-ENU.msp | MicrosoftDynamicsGP16-KB4569476-ENU.msp | 
-   
+    | English (U.S)   | MicrosoftDynamicsGP18-KB4569474-ENU.msp | MicrosoftDynamicsGP16-KB4569476-ENU.msp |
 
     Save the relevant file to a folder on the local disk drive of the server workstation that runs Dynamics GP.
 
@@ -640,7 +638,7 @@ Use the Attendance Setup window to specify if your company accrues time using Pa
     - **Accruing with Human Resources**  
         If you marked Human Resources as your accrual type in step 2, you can reset benefit time available by creating an Hours Available Adjustment in the Attendance Transaction Entry window (Transactions \>\> Human Resources \>\> Transaction Entry).
 
-        ![](media/2ba47052805e7f27d276a88b2252bc77.jpg)
+        ![Attendance Transaction Entry window](media/2ba47052805e7f27d276a88b2252bc77.jpg)
 
         For more information, see the Human Resources documentation included in Dynamics GP.
 
@@ -747,13 +745,13 @@ The following guidelines summarize the filing instructions provided by the SSA. 
 
 For information on Microsoft developers that provide electronic filing services for state taxes, see [Non-supported electronic filing](#non-supported-electronic-filing).
 
-**BSO filing**
+- BSO filing
 
-You can use the SSA's Business Services Online website to upload wage information in EFW2 format to the SSA over the Internet. To use BSO, go to [www.socialsecurity.gov/bso/bsowelcome.htm.](https://www.socialsecurity.gov/bso/bsowelcome.htm). You'll need to register for a User Identification Number to use BSO services.
+    You can use the SSA's Business Services Online website to upload wage information in EFW2 format to the SSA over the Internet. To use BSO, go to [www.socialsecurity.gov/bso/bsowelcome.htm.](https://www.socialsecurity.gov/bso/bsowelcome.htm). You'll need to register for a User Identification Number to use BSO services.
 
-**EDT filing**
+- EDT filing
 
-You can use the Electronic Data Transfer (EDT) system to file wage information using the EFW2 format. The system connects SSA's national  computer with various states, federal offices, and SSA sites. For details, refer to the Electronic Data Transfer (EDT) Guide at  [www.socialsecurity.gov/employer/pub.htm.](https://www.socialsecurity.gov/employer/pub.htm)
+    You can use the Electronic Data Transfer (EDT) system to file wage information using the EFW2 format. The system connects SSA's national  computer with various states, federal offices, and SSA sites. For details, refer to the Electronic Data Transfer (EDT) Guide at [www.socialsecurity.gov/employer/pub.htm.](https://www.socialsecurity.gov/employer/pub.htm)
 
 ## Chapter 6: Report procedures
 
@@ -763,7 +761,7 @@ You can generate either detailed reports or summary reports in your year-end pro
 
 Print the Year-end Wage Report from the Year-end Wage Report window to verify W-2 amounts before printing W-2 statements. This report contains the same information that appears on the W-2 statement with the headings for each field. It won't include Form 1099-R statement information. The Year-end Wage file must be created before you can print the Year-end Employee Wage report.
 
-**To print the Year-end Wage Report:**
+To print the Year-end Wage Report:
 
 1. Open the Year-end Wage Report window: (Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll \>\>Year-end Wage Report)
 
@@ -773,9 +771,9 @@ Print the Year-end Wage Report from the Year-end Wage Report window to verify W-
 
 3. Select a sorting option for displaying information: Employee ID, Employee Name, Department/Employee, or Social Security Number.
 
-4.  Mark All to include every employee in the report or enter a starting and ending employee ID to include a select group of employees.
+4. Mark All to include every employee in the report or enter a starting and ending employee ID to include a select group of employees.
 
-5.  Choose Print.
+5. Choose Print.
 
 ### Printing W-2 forms and reports
 
@@ -823,7 +821,7 @@ If you're submitting W-2 wage reports electronically, you can also use AccuWage 
 
     - **Wide-Continuous** Select this option to print your form or report in a continuous form, with one copy of the form or report for each page printed.
     - **Wide-Continuous** Select this option, also called Alternate Format, to print your form or report in a continuous form, with two copies of the form or report for each page printed.
-    - **1-Wide Single Feed** Select this option to print your form or report on a single sheet of paper. To print all forms for all employees using this format, repeat the procedure for each form. For example, to print the A, B, and C copies of the W-2 statements, first put the Copy A sheets in the printer and complete this procedure; next put the Copy B sheets into the printer and complete this procedure; finally, put the Copy C sheets into the printer and complete this procedure. 
+    - **1-Wide Single Feed** Select this option to print your form or report on a single sheet of paper. To print all forms for all employees using this format, repeat the procedure for each form. For example, to print the A, B, and C copies of the W-2 statements, first put the Copy A sheets in the printer and complete this procedure; next put the Copy B sheets into the printer and complete this procedure; finally, put the Copy C sheets into the printer and complete this procedure.  
     - **4-Up Laser Forms** Select this option to print your form or report in a sheet of paper, but with four forms or reports for each page. The page contains Copy B, Copy C, and two Copy 2 forms. Copy A and Copy D must be printed separately. Copy A will be included in EFW2 files, if you are submitting federal W-2 files electronically.
 
 9. Select the form or report to print.
