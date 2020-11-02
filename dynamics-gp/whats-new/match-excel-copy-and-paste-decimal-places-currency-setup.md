@@ -28,6 +28,8 @@ This update will use the decimal places defined in currency setup instead of the
 
 The value will be stored in SQL based on the currency decimal places defined in Currency Setup and not Excel.
 
+> [!NOTE]  If you receive an error when you copy and paste in General Ledger "Decimal places do not match currency setup"  after you upgraded to 18.3.  Make sure on your excel file the format for the debit/credit column is Number vs Accounting.  Also make sure there are no extra spaces in the field.  You can also create a case and ask for a template if you still have problems with copy and paste not working.
+
 <img src="media/image19.png" alt="Currency Setup form" width="375" height="336" />
 
 
