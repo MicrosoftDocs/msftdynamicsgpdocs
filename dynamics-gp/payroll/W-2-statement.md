@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/08/2019
+ms.date: 11/08/2020
 ---
 
 # W-2 Wage and tax statement data source guide
@@ -72,7 +72,7 @@ Employee Wage Report or your W-2 statements. We recommend that you print the Yea
 | Box 13  | Statutory employee    | This box will be marked if the employee is identified as a statutory employee in the Employee Tax Information window. A statutory employee is an employee who is subject to FICA withholding but not federal withholding.    |
 |         | Retirement plan     | This box will be marked if the employee is identified as having a retirement plan in the Employee Tax Information window. This box should be marked if an employee was an active participant in a retirement plan, such as a 401(k) plan.   |
 |         | Third-party sick pay     | This box will be marked if the employee is identified as having received third-party sick pay in the Edit W-2 Information window. This box should be marked if Form W-2 will be filed by a third-party sick pay payer.      |
-| Box 14  | Other               | Adds the year-to-date wages from summary for Business Expense pay types to be printed in W-2 Box 14 as defined in the Payroll Pay Code Maintenance window, the year-to-date-total from summary for benefits to be printed in W-2 Box 14 as defined in the Payroll Benefit Maintenance window, and the year-to-date-total from summary for any deductions to be printed in W-2 Box 14 as defined in the Payroll Deduction Maintenance window. |
+| Box 14  | Other               | Adds the year-to-date wages from summary for any pay code pay types to be printed in W-2 Box 14 as defined in the Payroll Pay Code Maintenance window, the year-to-date-total from summary for benefits to be printed in W-2 Box 14 as defined in the Payroll Benefit Maintenance window, and the year-to-date-total from summary for any deductions to be printed in W-2 Box 14 as defined in the Payroll Deduction Maintenance window. |
 | ||**Note:** If two deductions or benefits are defined to print in W-2 Box 14 with the same W-2 label, the two deductions or benefits will be combined and printed as one amount.|
 | Box 15  | State and Employer’s state    | The first state is the active state in the Employee State Tax Information window. The employer’s State ID is taken from the tax code in the Payroll Tax ID Setup window for the state tax code that is being reported on the W-2 statement. If state income tax was withheld for the employee for two states, both states can be printed on the same W-2 statement (the second state will be listed below the dotted line). The Transaction Entry Default in the Employee Tax Information window will be printed first, followed by all other states, which will be printed in alphabetical order. If state income tax was withheld for the employee for more than two states, additional states will be listed on a second W-2 statement. An additional W-2 statement will be printed automatically after the first W-2 statement is printed. |
 | Box 16  | ID Number     | Taken from the year-to-date state taxable wages in Employee State Tax Summary.  |
