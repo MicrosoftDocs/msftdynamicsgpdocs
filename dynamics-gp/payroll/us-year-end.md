@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/29/2020
+ms.date: 11/12/2020
 ---
 
 # U.S. 2020 Year-end Update in Dynamics GP
@@ -75,15 +75,16 @@ The U.S. 2020 Year-end Update contains software changes to allow you to comply w
 
     When you install the year-end update the option to enter Box 14 on all pay code pay types will be enabled for you so you can enter Box 14 on your COVID pay codes prior to creating the 2020 year-end wage file.  You could also manually enter in this information in Box 14 in the edit W-2 window once the year-end file is created.
 
-Blog post with details of year-end and W-4 instructions: [Dynamics GP-2020 Year-End Blog Series Schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---2020-year-end-blog-series-schedule)
+Blog post with details of year-end: [Dynamics GP-2020 Year-End Blog Series Schedule](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---2020-year-end-blog-series-schedule)
 
 ### Updates for ACA reporting, form 1095-C
 
 There are many changes for the ACA reporting such as the following:
--New ACA codes
--Plan start month is required
--Employee age printing on form
--New Line 17 Zip Code
+- New ACA codes
+- Plan start month is required
+- Employee age printing on form
+- New Line 17 Zip Code
+- Dependents moved to page 3
 
 ### Forms whose format is not changing for 2020
 
