@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ---
 
 # U.S. 2020 Year-end Update in Dynamics GP
@@ -197,11 +197,17 @@ Dynamics GP does not support electronic filing of 1099-R forms, State Unemployme
 This is the contact information for two Microsoft Dynamics partners:
 
 Aatrix
+
 2100 Library Cir
+
 Grand Forks, ND  58201
+
 Telephone: (800) 426-0854
+
 E-mail: *efile.aatrix.com*
+
 Web Site: [www.aatrix.com](https://www.aatrix.com/)
+
 
 Greenshades Software, Inc.  
 7020 AC Skinner Parkway  
