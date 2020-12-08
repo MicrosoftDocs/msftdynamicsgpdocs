@@ -333,62 +333,62 @@ Contribution rates for both employers and employees for 2021 is 5.25%. The follo
 
 Effective January 1, 2021 the federal tax rate is unchanged. The federal index factor is 1.010. The income thresholds are revised as follows.
 
-![](media/FED2020.JPG)
+![](media/FED2021.JPG)
 
 ### Federal personal amounts
 
 Federal personal amounts have been increased by fixed amounts as shown in the following table.
 
-The Basic Personal amount is updated to \$12,298 (formerly \$12,069).
+The Basic Personal amount is updated to \$13,808 (formerly \$12,298).
 
-The Spouse Common Law Partner amount increases by the index factor to \$12,298 (formerly \$12,069), if the original amount was not zero.
+The Spouse Common Law Partner amount increases by the index factor to \$13,808 (formerly \$12,298), if the original amount was not zero.
 
-The Eligible Dependent amount increases by the index factor to \$12,298 (formerly \$12,069), if the original amount was not zero.
+The Eligible Dependent amount increases by the index factor to \$13,808 (formerly \$12,298), if the original amount was not zero.
 
 Canada Employment Credit
 
-The Canada Employment credit has been increased to \$1,245 at the lowest rate of 15.0%. The employment credit has been updated so that the Canada employment credit (factor K4) is the lesser of:
+The Canada Employment credit has been increased to \$1,257 at the lowest rate of 15.0%. The employment credit has been updated so that the Canada employment credit (factor K4) is the lesser of:
 
 - 0.15 X A; or
 
-- 0.15 X \$1,245
+- 0.15 X \$1,257
 
 ### Provincial and territorial tax changes
 
-The following provinces and territories have tax changes for 2020.
+The following provinces and territories have tax changes for 2021.
 
 > [!NOTE]
 > The figures in the following tables are those supplied by the relevant revenue agencies. The actual figures calculated by Canadian Payroll may differ slightly due to rounding. This issue is recognized by the CRA and the  differences will not subject you to penalties for over- or under-withholding.
 
 #### Alberta - no change
 
-- The Alberta basic personal amount is increased by the index factor, usually revised to \$19,369 (formerly \$18,915). 
+- The Alberta basic personal amount is \$19,369. 
 
-- The Alberta spouse or common-law partner amount is increased by the index factor, usually revised to \$19,369 (formerly \$18,915).
+- The Alberta spouse or common-law partner amount is \$19,369.
 
-![](media/AB2020.JPG)
+![](media/AB2021.JPG)
 
 #### British Columbia
 
-- The British Columbia basic personal amount increases by the index factor to  \$10,949 (formerly \$10,682).
+- The British Columbia basic personal amount increases by the index factor to  \$11,070 (formerly \$10,949).
 
-- The British Columbia spouse or common-law partner amount (and eligible dependent) increases by the index factor and is revised to \$10,949 (formerly \$10,682).
+- The British Columbia spouse or common-law partner amount (and eligible dependent) increases by the index factor and is revised to \$11,070 (formerly \$10,949).
 
-![](media/BC2020.JPG)
+![](media/BC2021.JPG)
 
 #### Manitoba
 
-- The Manitoba Basic Personal amount increases by the index factor to \$9,838 (formerly \$9,626).
+- The Manitoba Basic Personal amount increases by the index factor to \$9,936 (formerly \$9,838).
 
-- The Manitoba spouse or common-law partner amount shall increase to \$9,838 (formerly \$9,626).
+- The Manitoba spouse or common-law partner amount shall increase to \$9,936 (formerly \$9,838).
 
-![](media/MB2020.JPG)
+![](media/MB2021.JPG)
 
 #### New Brunswick
 
-- The New Brunswick Basic Personal amount increases by the index factor and is usually revised to \$10,459 (formerly \$10,264).
+- The New Brunswick Basic Personal amount increases by the index factor and is usually revised to \$10,564 (formerly \$10,459).
 
-- The spouse or common-law partner amount increases by the index factor and is revised to \$10,459 (formerly \$10,264),
+- The spouse or common-law partner amount increases by the index factor and is revised to \$10,564 (formerly \$10,459),
 
 ![](media/NB2020.JPG)
 
