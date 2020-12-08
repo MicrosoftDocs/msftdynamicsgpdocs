@@ -9,13 +9,13 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 1/15/2020
+ms.date: 12/8/2020
 
 ---
 
-# Canadian Payroll 2019 Year-end Update & 2020 Tax Update
+# Canadian Payroll 2020 Year-end Update & 2021 Tax Update
 
-This document contains instructions for updating the Canadian Payroll module for Microsoft Dynamics GP (GP 2018), Microsoft Dynamics GP 2016 R2, and Microsoft Dynamics GP 2015 to be compliant with 2019 filing requirements. This update also includes Round 1 tax updates for 2020 federal, provincial, and territorial taxes.
+This document contains instructions for updating the Canadian Payroll module for Microsoft Dynamics GP and Microsoft Dynamics GP 2016 for 2020 filing requirements. This update also includes Round 1 tax updates for 2021 federal, provincial, and territorial taxes.
 
 These instructions assume that you are already familiar with Microsoft Dynamics GP Canadian Payroll.
 
@@ -39,30 +39,30 @@ This document contains the following chapters:
 
 ### What’s changed
 
-The 2019 Year-End Update/2020 Tax Update contains changes in the information that’s submitted to the Canada Revenue Agency (CRA) and Ministère du Revenu du Québec.
+The 2020 Year-End Update/2021 Tax Update contains changes in the information that’s submitted to the Canada Revenue Agency (CRA) and Ministère du Revenu du Québec.
 
-***[Refer to updated blog of recent changes and Round 2 Canadian Payroll Update]***
+***[Refer to updated blog of recent changes for Canadian Payroll]***
 (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-year-end-update-2019-canadian-payroll)
 
 #### Tax changes
 
-See [Chapter 4: Tax updates](#chapter-4-tax-updates) for a description of the 2020 federal, provincial, and territorial tax changes.
+See [Chapter 4: Tax updates](#chapter-4-tax-updates) for a description of the 2021 federal, provincial, and territorial tax changes.
 
 #### General application changes
 
-The 2019 Year-End Update/2020 Tax Update contains application bug fixes and functionality updates to comply with regulatory changes.
+The 2020 Year-End Update/2021 Tax Update contains application bug fixes and functionality updates to comply with regulatory changes.
 
 #### XML and form changes
 
 The T4A and RL-1 XML has changed for the 2019 reporting year. 
 The T4 and T4A forms have not changed for the 2019 reporting year.  
 
-- Software Development Number for XML - Coming Soon
+- Software Development Number for XML - RQ-20-01-132
 - RL-1 Slip Authorization number Coming Soon  (enter this in the Payroll T4/R1 Print window)  
 
 #### Installation notes
 
-The 2020 Canadian Payroll Tax Update must be installed on the server and on each client workstation where Microsoft Dynamics GP is used. Before installing the update, be sure to complete the following tasks:
+The 2021 Canadian Payroll Tax Update must be installed on the server and on each client workstation where Microsoft Dynamics GP is used. Before installing the update, be sure to complete the following tasks:
 
 All users should exit Microsoft Dynamics GP until the update has been installed on all workstations.
 
@@ -74,11 +74,11 @@ Save backup copies of your Reports.dic, R7131.dic, F7131.dic, Forms.dic, and Dyn
 
 If you have questions about Canadian Payroll year-end closing procedures and your Microsoft Business Solutions Partner isn’t available, there are several resources, in addition to this document, to assist in answering your year-end questions.
 
-#### 2019 year-end information on CustomerSource
+#### 2020 year-end information on CustomerSource
 
 Look at [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/downloads) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
 
-Look for "2019 Canadian Payroll Year End Update for Microsoft Dynamics GP".
+Look for "2020 Canadian Payroll Year End Update for Microsoft Dynamics GP".
 
 #### Microsoft Canadian Payroll support team
 
@@ -92,14 +92,14 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 
 |**Step**|**Description** |
 |----------|--------------|
-| 1.       | Complete all 2019 pay runs. |
-| 2.       | Note: Any batch with a cheque date of 2020 should be processed after the Year End File Reset. For example, if the cheque date of your final pay period for 2019 is January 1, 2020, the 2020 tax tables must be used for that pay run. |
+| 1.       | Complete all 2020 pay runs. |
+| 2.       | Note: Any batch with a cheque date of 2021 should be processed after the Year End File Reset. For example, if the cheque date of your final pay period for 2020 is January 1, 2021, the 2021 tax tables must be used for that pay run. |
 | 3.       | Complete any necessary 2019 payroll reports.        |
-| 4.       | Install the 2019 Canadian Payroll Year-End Update. See [Installing the update](#installing-the-update).      |
+| 4.       | Install the 2020 Canadian Payroll Year-End Update. See [Installing the update](#installing-the-update).      |
 | 5.       | Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application.       |
 | 6.       | Complete the Year End File Reset.                                       |
 | 7.       | Note: To ensure that all tables are available for resetting, make sure that the Year End File Reset window is the only window open in Microsoft Dynamics GP.|
-| 8.       | Make a backup of your data titled “Post 2019 Year-End Update.”\*|
+| 8.       | Make a backup of your data titled “Post 2020 Year-End Update.”\*|
 | 9.       | Note: The following steps can be done any time after the Year End File Reset has been completed.|
 | 10.      | Create T4, T4A, and RL-1 statements, and print the T4, T4A, and RL-1 reports.  |
 | 11.      | Edit the T4, T4A, and RL-1 records, as necessary. You can print an edit list from the Payroll Routines - Canada window. |
@@ -110,11 +110,11 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 
 ## Chapter 2: Preparation and installation
 
-This portion of the documentation specifies the requirements for installing the 2019 Year-End Update / 2020 Tax Update.
+This portion of the documentation specifies the requirements for installing the 2020 Year-End Update / 2021 Tax Update.
 
 ### Supported versions
 
-The 2019 Year-End Update / 2020 Tax Update supports Microsoft Dynamics GP, (GP 2018), Microsoft Dynamics GP 2016, and Microsoft Dynamics GP 2015. To identify the Microsoft Dynamics GP release you’re using, start the application and choose Help \>\> About Microsoft Dynamics GP.
+The 2020 Year-End Update / 2021 Tax Update supports Microsoft Dynamics GP, (GP 2018), Microsoft Dynamics GP 2016, and Microsoft Dynamics GP 2015. To identify the Microsoft Dynamics GP release you’re using, start the application and choose Help \>\> About Microsoft Dynamics GP.
 
 To identify the Canadian Payroll release you’re using, start Microsoft Dynamics GP, then open the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\>Tools \>\> Setup \>\> Payroll – Canada \>\> Control). You should see the release number in the upper left corner of the window.
 
