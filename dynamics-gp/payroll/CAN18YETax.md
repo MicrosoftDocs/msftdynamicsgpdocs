@@ -54,8 +54,8 @@ The 2020 Year-End Update/2021 Tax Update contains application bug fixes and func
 
 #### XML and form changes
 
-The T4A and RL-1 XML has changed for the 2019 reporting year. 
-The T4 and T4A forms have not changed for the 2019 reporting year.  
+The T4A, T4 and RL-1 XML has changed for the 2020 reporting year. 
+The T4 and T4A forms have not changed for the 2020 reporting year.  
 
 - Software Development Number for XML - RQ-20-01-132
 - RL-1 Slip Authorization number Coming Soon  (enter this in the Payroll T4/R1 Print window)  
@@ -114,7 +114,7 @@ This portion of the documentation specifies the requirements for installing the 
 
 ### Supported versions
 
-The 2020 Year-End Update / 2021 Tax Update supports Microsoft Dynamics GP, (GP 2018), Microsoft Dynamics GP 2016, and Microsoft Dynamics GP 2015. To identify the Microsoft Dynamics GP release you’re using, start the application and choose Help \>\> About Microsoft Dynamics GP.
+The 2020 Year-End Update / 2021 Tax Update supports Microsoft Dynamics GP and Microsoft Dynamics GP 2016. To identify the Microsoft Dynamics GP release you’re using, start the application and choose Help \>\> About Microsoft Dynamics GP.
 
 To identify the Canadian Payroll release you’re using, start Microsoft Dynamics GP, then open the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\>Tools \>\> Setup \>\> Payroll – Canada \>\> Control). You should see the release number in the upper left corner of the window.
 
@@ -156,15 +156,15 @@ The update must be installed on each client workstation where Microsoft Dynamics
 
 1. Download the update from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/downloads).
 
-    | **Language** | **Microsoft Dynamics GP**   | **Microsoft Dynamics GP 2016**  | **Microsoft Dynamics GP 2015**   |
-    |--------------|-------------|-----------------|-------------------------|
-    | English      | MicrosoftDynamicsGP18- KB4533809-ENU.msp   | MicrosoftDynamicsGP16- KB4533807-ENU.msp  | MicrosoftDynamicsGP14- KB4533805-ENU.msp  |
-    | French       | MicrosoftDynamicsGP18- KB4533810-FRCA.msp | MicrosoftDynamicsGP16- KB4533808-FRCA.msp | MicrosoftDynamicsGP14- KB4533806-FRCA.msp |
+    | **Language** | **Microsoft Dynamics GP**                  | **Microsoft Dynamics GP 2016**            |
+    |--------------|--------------------------------------------|-------------------------------------------|
+    | English      | MicrosoftDynamicsGP18- KB4569478-ENU.msp   | MicrosoftDynamicsGP16- KB4569480-ENU.msp  | 
+    | French       | MicrosoftDynamicsGP18- KB4569479-FRCA.msp  | MicrosoftDynamicsGP16- KB4569481-FRCA.msp |
 
     Save the .msp file to a folder on the local disk drive of the server  workstation that runs Microsoft Dynamics GP.
 
     > [!NOTE]
-    > The year-end update file also includes all prior Microsoft Dynamics GP updates. A document describing the service pack changes is available from CustomerSource.  This update is inclusive of the October 2019 release for Microsoft Dynamics GP 2018.
+    > The year-end update file also includes all prior Microsoft Dynamics GP updates. A document describing the service pack changes is available from CustomerSource.  This update is inclusive of the Fall / October 2020 release for Microsoft Dynamics GP.
 
 2. Double-click the file that you just downloaded. Progress windows appear as space requirements are verified and files are installed.
 
@@ -177,8 +177,7 @@ The update must be installed on each client workstation where Microsoft Dynamics
     | Microsoft Dynamics GP | Start \>\> All Programs \>\> Microsoft Dynamics \>\> GP \>\> GP Utilities |
     |----------------------------|--------------------------------------------------------------------------------|
     | Microsoft Dynamics GP 2016 | Start \>\> All Programs \>\> Microsoft Dynamics \>\> GP 2016 \>\> GP Utilities |
-    | Microsoft Dynamics GP 2015 | Start \>\> All Programs \>\> Microsoft Dynamics \>\> GP 2015 \>\> GP Utilities |
-
+    
 6. In the **Welcome to Microsoft Dynamics GP Utilities** window, verify your server name, enter the system administrator user ID and password, and click OK.
 
 7. In the second welcome window, click **Next**.
@@ -230,7 +229,7 @@ User Account Control (UAC) is an enhanced security feature in Windows. UAC is ac
 Example, for Microsoft Dynamics GP 2016 (English), enter the following command.
 
 ```
-Msiexec /p MicrosoftDynamicsGP16-KB4533807-ENU.msp /l\*v C:\\MSPErrorlog.txt
+Msiexec /p MicrosoftDynamicsGP16-KB4569480-ENU.msp /l\*v C:\\MSPErrorlog.txt
 ```
 
 If you want the user to install updates and service packs without having administrative privileges on the local computer, you can change permissions for the folder where Microsoft Dynamics GP is installed. Be aware that doing this makes your computer less secure.
@@ -289,50 +288,50 @@ You use the **Payroll R1 Edit** window to make changes to RL records. You use th
 
 ## Chapter 4: Tax updates
 
-This chapter lists changes to federal, provincial, and territorial tax rates for 2019. For detailed information about taxes, refer to the Canada Revenue Agency Web site at [www.cra-arc.gc.ca](https://www.cra-arc.gc.ca/) and Revenue Quebec’s Web site at [www.revenu.gouv.qc.ca.](https://www.revenu.gouv.qc.ca/)
+This chapter lists changes to federal, provincial, and territorial tax rates for 2021. For detailed information about taxes, refer to the Canada Revenue Agency Web site at [www.cra-arc.gc.ca](https://www.cra-arc.gc.ca/) and Revenue Quebec’s Web site at [www.revenu.gouv.qc.ca.](https://www.revenu.gouv.qc.ca/)
 
 ### Pension Plan, Employment Insurance, and Parental Insurance changes
 
 #### CPP
 
-Contribution rates for both employers and employees for 2020 is 5.25%. The following changes are in effect for CPP for 2020:
+Contribution rates for both employers and employees for 2021 is 5.25%. The following changes are in effect for CPP for 2021:
 
-- The maximum pensionable earnings amount will be updated to \$58,700, from \$57,400.
+- The maximum pensionable earnings amount will be updated to \$61,600, from \$58,700.
 
 - The basic exemption remains unchanged at \$3,500.
 
-- The maximum contribution amount for the year increases to \$2,898.00, from \$2,748.90.
+- The maximum contribution amount for the year increases to \$3,166.45, from \$2,898.00.
 
 #### EI for non-Quebec employees
 
-- The EI Maximum Annual Insurable Earnings amount increases to \$54,200, from \$53,100.
+- The EI Maximum Annual Insurable Earnings amount increases to \$56,300, from \$54,200.
 
-- The EI premium amount will be 1.58%. The EI maximum annual premium amount will be \$856.36 from \$860.22.
+- The EI premium amount will be 1.58%. The EI maximum annual premium amount will be \$889.54 from \$856.36.
 
 - The EI Employer Premium Rate amount will change to 2.212%. The employer EI premium is set using the Employer EI Factor field in the Payroll Employer Number Setup – Canada window (Tools \>\> Setup \>\> Payroll-Canada \>\> Employer). This factor must be set to 1.4 to meet the official EI Employer Premium.
 
 #### EI for Quebec employees
 
-- The EI maximum annual insurable earnings amount increases to \$54,200, from \$51,700.
+- The EI maximum annual insurable earnings amount increases to \$56,300, from \$54,200.
 
-- The EI (Quebec) Premium Rate amount decreases to 1.20%, from 1.25%.
+- The EI (Quebec) Premium Rate amount decreases to 1.18%, from 1.20%.
 
-- The maximum annual premium amount decreases to \$650.40, from \$663.75.
+- The maximum annual premium amount is \664.34, from \$650.40.
 
 
 #### QPIP
 
-- The QPIP Maximum Annual Insurable Earnings amount increases to \$78,500, from \$76,500.
+- The QPIP Maximum Annual Insurable Earnings amount increases to \$83,500, from \$78,500.
 
 - The Premium Rate amount is 0.494%.
 
-- The Max Premium is \$387.79 from \$405.52.
+- The Max Premium is \$412.49 from \$387.79.
 
-- The Employer Premium Rate is 0.692%. The maximum employer amount will change to \$543.22 from \$567.58.
+- The Employer Premium Rate is 0.692%. The maximum employer amount will change to \$577.82 from \$543.22.
 
 ### Federal tax rates and income thresholds
 
-Effective January 1, 2020 the federal tax rate is unchanged. The federal index factor is 1.019. The income thresholds are revised as follows.
+Effective January 1, 2021 the federal tax rate is unchanged. The federal index factor is 1.010. The income thresholds are revised as follows.
 
 ![](media/FED2020.JPG)
 
