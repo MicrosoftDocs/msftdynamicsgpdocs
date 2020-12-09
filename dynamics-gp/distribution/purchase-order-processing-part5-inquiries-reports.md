@@ -1,5 +1,5 @@
 ---
-title: "Purchase Order Processing"
+title: "Purchase Order Processing Part 5"
 description: "Learn about Purchasing for Dynamics GP, more specifically inquiries and reports."
 keywords: "purchase order"
 author: tnistler
@@ -80,7 +80,7 @@ To view a receipt, select it in the Purchase Order Processing Document Inquiry w
 1.  Open the Purchase Order Processing Document Inquiry window.
     (Purchasing \>\> Inquiry \>\> Purchase Order Documents)
 
-![screenshot](media/POage221.jpg)
+![screenshot Purchase Order Documents](media/POage221.jpg)
 
 2.  Select all vendors or a range of vendors.
 
@@ -137,14 +137,14 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 You can view information as it was originally entered by clicking on link fields. For example, you can select an item and click on the Qty Shipped label to open the Purchasing Item Receipts Zoom window, where you can view the invoiced and shipped quantities of the item.
 
-![screenshot](media/POage223.jpg)
+![screenshot Purchasing Item Receipts Zoom ](media/POage223.jpg)
 
 **To view item information for purchasing documents:**
 
 1.  Open the Purchase Order Processing Item Inquiry window.
     (Purchasing \>\> Inquiry \>\> Purchase Order Items)
 
-![screenshot](media/POage225.jpg)
+![screenshot Purchase Order Processing Item Inquiry](media/POage225.jpg)
 
 2.  From the Items list, select Item (your item number) or Vendor Item (your vendor's item number).
 

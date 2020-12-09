@@ -1,5 +1,5 @@
 ---
-title: "Purchase Order Processing"
+title: "Purchase Order Processing Part 2"
 description: "Learn about Purchasing for Dynamics GP, more specifcally purchase orders."
 keywords: "purchase order"
 author: tnistler

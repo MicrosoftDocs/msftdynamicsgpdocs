@@ -32,8 +32,6 @@ You also can use Inventory Control to complete the following tasks:
 
 - Track a single inventory item across multiple bins within the warehouse
 
-### What's in this manual
-
 This manual is designed to give you an understanding of how to use the features of Inventory Control, and how it integrates with the Microsoft Dynamics&reg; GP system.
 
 To make best use of Inventory Control, you should be familiar with systemwide features described in the System User's Guide, the System Setup Guide, and the System Administrator's Guide.
@@ -495,9 +493,7 @@ You can create as many as six user categories. Each category can include unlimit
 
 **To define a user category:**
 
-1. Open the Inventory Control Setup window.
-
-(Inventory \>\> Setup \>\> Inventory Control)
+1. Open the Inventory Control Setup window. (Inventory \>\> Setup \>\> Inventory Control)
 
 2. Enter a user category in the first blank user category field.
 
@@ -609,15 +605,14 @@ You can make changes to a unit of measure schedule at any time, including adding
 
 **To modify a unit of measure schedule:**
 
-1. Open the Unit of Measure Schedule Setup window.
-
-(Inventory \>\> Setup \>\> Unit of Measure Schedule)
+1. Open the Unit of Measure Schedule Setup window. (Inventory \>\> Setup \>\> Unit of Measure Schedule)
 
 2. Enter or select a unit of measure schedule.
 
 3. Make any changes as needed. You can add or delete rows by placing your pointer in the scrolling window, choosing the Edit menu and selecting Add Row or Delete Row.
 
-*You can't delete the base equivalency (where you make the smallest unit of measure equal to itself) if other equivalencies are included in the scrolling window.*
+    > [!NOTE]
+    > You can't delete the base equivalency (where you make the smallest unit of measure equal to itself) if other equivalencies are included in the scrolling window.*
 
 4. When you've finished entering changes, choose Save.
 
@@ -670,11 +665,9 @@ Use the Price Level Setup window to create price levels. If you're going to use 
 
 **To create a price level:**
 
-1. Open the Price Level Setup window.
+1. Open the Price Level Setup window. (Inventory \>\> Setup \>\> Price Level)
 
-(Inventory \>\> Setup \>\> Price Level)
-
-![](media/481f7b1013906987fe5e6b5d2fec0700.jpg)
+    ![Price Level Setup](media/481f7b1013906987fe5e6b5d2fec0700.jpg)
 
 2. Enter an identifier—such as Retail or Wholesale—and a description for the price level.
 
@@ -688,9 +681,7 @@ Use the Price Level Setup window to complete this procedure.
 
 **To delete a price level:**
 
-1. Open the Price Level Setup window.
-
-(Inventory \>\> Setup \>\> Price Level)
+1. Open the Price Level Setup window. (Inventory \>\> Setup \>\> Price Level)
 
 2. Enter or select a price level.
 
@@ -700,17 +691,16 @@ Use the Price Level Setup window to complete this procedure.
 
 If you have several items that will have very similar price lists, you can group those items by creating a price group and then assigning the items to the price group. You can create as many price groups as you like. Price groups are optional.
 
-*The price groups that are created with this procedure aren't the price groups used with extended pricing. If you're using extended pricing, refer to Creating and editing price groups.*
+> [!NOTE]
+> The price groups that are created with this procedure aren't the price groups used with extended pricing. If you're using extended pricing, refer to Creating and editing price groups.
 
 Use the Price Group Setup window to complete this procedure.
 
 **To create a price group:**
 
-1. Open the Price Group Setup window.
+1. Open the Price Group Setup window. (Inventory \>\> Setup \>\> Price Group)
 
-(Inventory \>\> Setup \>\> Price Group)
-
-![](media/90e714d9ec8c4b8e943a8b24d23c7b20.jpg)
+    ![ Price Group Setup window](media/90e714d9ec8c4b8e943a8b24d23c7b20.jpg)
 
 2. Enter an identifier and description for the price group.
 
@@ -722,9 +712,7 @@ Use the Price Group Setup window to delete a price group, if needed. You can't d
 
 **To delete a price group:**
 
-1. Open the Price Group Setup window.
-
-(Inventory \>\> Setup \>\> Price Group)
+1. Open the Price Group Setup window. (Inventory \>\> Setup \>\> Price Group)
 
 2. Enter or select a price group.
 

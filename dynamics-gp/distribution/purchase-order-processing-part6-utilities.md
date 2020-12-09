@@ -1,5 +1,5 @@
 ---
-title: "Purchase Order Processing"
+title: "Purchase Order Processing part 6"
 description: "Learn about Purchasing for Dynamics GP, more specifically the utilities available."
 keywords: "purchase order"
 author: tnistler
@@ -74,7 +74,7 @@ Use the Remove Purchasing History window to remove Purchase Order Processing his
 1.  Open the Remove Purchasing History window.
     (Purchasing \>\> Utilities \>\> Remove Purchasing History)
 
-![screenshot](media/POage228.jpg)
+![screenshot Remove Purchasing History](media/POage228.jpg)
 
 2.  Select a history type to remove.
 
@@ -115,7 +115,7 @@ Use the Tax History Removal window to remove tax detail transactions. Only the t
 1.  Open the Tax History Removal window.
     (Administration \>\> Utilities \>\> Company \>\> Remove Tax History)
 
-![screenshot](media/POage230.jpg)
+![screenshot Remove Tax History](media/POage230.jpg)
 
 2.  Select whether you want to remove tax detail transactions and print the Tax History Removal Report, remove the tax detail transactions, or print the Tax History Removal Report.
 
@@ -169,7 +169,7 @@ If you print this report before you reconcile, you can verify which documents in
 1.  Open the Reconcile Purchasing Documents window.
     (Purchasing \>\> Utilities \>\> Reconcile Purchasing Documents)
 
-![screenshot](media/POage232.jpg)
+![screenshot Reconcile Purchasing Documents](media/POage232.jpg)
 
 2.  Using the All, To, and From fields, select a document range.
 
@@ -216,7 +216,7 @@ When you reconcile purchase orders, the following information will be recalculat
 1.  Open the Reconcile Purchasing Documents window.
     (Purchasing \>\> Utilities \>\> Reconcile Purchasing Documents)
 
-![screenshot](media/POage234.jpg)
+![screenshot Reconcile Purchasing Documents](media/POage234.jpg)
 
 2.  Using the All, To, and From fields, select a document range.
 

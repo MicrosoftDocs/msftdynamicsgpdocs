@@ -1,5 +1,5 @@
 ---
-title: "Purchase Order Processing"
+title: "Purchase Order Processing Part 4"
 description: "Learn about Purchasing for Dynamics GP, more specifically purchase return orders."
 keywords: "purchase order"
 author: tnistler
@@ -214,7 +214,7 @@ Use the Returns Batch Entry window to create a return batch. All transactions in
 1.  Open the Returns Batch Entry window.
     (Purchasing \>\> Transactions \>\> Returns Batches)
 
-![screenshot](media/POage201.jpg)
+![screenshot Returns Batch Entry](media/POage201.jpg)
 
 2.  Enter a batch ID to identify the batch.
 
@@ -246,7 +246,7 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 3.  Choose Purchase Returns Transactions and then select a document type to open the Returns Transaction Entry window.
 
-![screenshot](media/POage203.jpg)
+![screenshot Returns Transaction Entry](media/POage203.jpg)
 
 4.  Select a document type for the return transaction. For more information about return document types, see *Return transaction document types*
 
@@ -394,7 +394,7 @@ If you're using multiple bins and a default purchase returns bin exists at eithe
 1.  Open the Returns Transaction Entry window.
     (Purchasing \>\> Transactions \>\> Returns Transaction Entry)
 
-![screenshot](media/POage205.jpg)
+![screenshot Returns Transaction Entry](media/POage205.jpg)
 
 2.  Select a return type for the return transaction. See *Return transaction document types* for more information about return document types.
 
@@ -520,7 +520,7 @@ Use the Purchasing Returns Print Options window to print the Edit List or return
     (Purchasing \>\> Transactions \>\> Returns Batches \>\> select a batch \>\>Print button)
     (From the Returns Transaction Inquiry Zoom window, select a return document \>\> Print button)
 
-![screenshot](media/POage208.jpg)
+![screenshot Purchasing Returns Print Options](media/POage208.jpg)
 
 2.  To print an edit list of the selected document or all the unposted return transactions in the selected batch, select Edit List.
 
@@ -666,7 +666,7 @@ Use the Purchasing Returns Lot Number Entry window to assign lot numbers for ret
 
 4.  Enter or select the lot-numbered item to be returned and enter line item information. The Purchasing Returns Lot Number Entry window will open automatically when you leave the line in the Returns Transaction Entry scrolling window.
 
-![screenshot](media/POage210.jpg)
+![screenshot Purchasing Returns Lot Number Entry](media/POage210.jpg)
 
 *To open the Purchasing Returns Lot Number Entry window manually, choose the Show Details button on the Returns Transaction Entry window and then choose Serial/Lot.*
 
@@ -699,9 +699,10 @@ Use the Purchasing Returns Serial Number Entry window to assign serial numbers f
 
 4.  Enter or select the serial-numbered item to be returned and enter line item information. The Purchasing Returns Serial Number Entry window will open automatically when you leave the line in the Returns Transaction Entry scrolling window.
 
-![screenshot](media/POage212.jpg)
+    ![screenshot Purchasing Returns Serial Number Entry](media/POage212.jpg)
 
-*You can open the Purchasing Returns Serial Number Entry window manually by choosing the Show Details button on the Returns Transaction Entry window and then choosing Serial/Lot.*
+    > [!TIP]
+    > You can open the Purchasing Returns Serial Number Entry window manually by choosing the Show Details button on the Returns Transaction Entry window and then choosing Serial/Lot.
 
 5.  Select a serial number from the Available column and choose Insert. You also can enter an available serial number in the Serial Number field and choose Insert. The Bin columns display the number of the bin containing the serialnumbered item.
 
@@ -730,7 +731,7 @@ For more information about the origin of account default entries, see *Return di
 
 4.  Choose Distributions to open the Purchasing Returns Distribution Entry window.
 
-![screenshot](media/POage214.jpg)
+![screenshot Purchasing Returns Distribution Entry ](media/POage214.jpg)
 
 If you are using Multicurrency Management and if the originating debits and credits balance but the functional equivalents do not balance, the difference will be posted automatically to the Rounding Difference account. This also occurs when Euro currency relationships are enabled and the functional amounts balance, but there are amounts remaining in the originating currency. For more information on multicurrency transactions with Purchase Order Processing, see the Purchase Order Processing documentation.
 
@@ -868,7 +869,7 @@ Regardless of how your system is set up, you will be able to change the account 
 
 4.  Choose the Tax expansion button to open the Returns Tax Summary Entry window where you can view or edit the tax distribution amounts.
 
-![screenshot](media/POage216.jpg)
+![screenshot Returns Tax Summary Entry](media/POage216.jpg)
 
 Currency amounts in this window may be displayed in the functional or originating currency depending on the view selected in the Returns Transaction Entry window.
 
@@ -942,9 +943,10 @@ Use the Returns Line Item Tax Detail Entry window to add, change, delete, or vie
 
 4.  Enter a calculated tax amount or choose the Calculated Tax expansion button to open the Returns Line Item Tax Detail Entry window, where you can view or edit tax distribution amounts.
 
-![screenshot](media/POage219.jpg)
+    ![screenshot Returns Line Item Tax Detail Entry](media/POage219.jpg)
 
-*If your system is set up to enable GST for Australia/New Zealand, you also can change the account.*
+    > [!NOTE]
+    > If your system is set up to enable GST for Australia/New Zealand, you also can change the account.
 
 5.  To edit tax information, enter a tax detail ID, total returns or tax amount for the line item. (The tax amount for the detail will be posted to the account.) See *Entering detail information for a return* for more information on entering these details.
 
