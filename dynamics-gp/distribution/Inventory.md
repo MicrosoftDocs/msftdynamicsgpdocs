@@ -355,61 +355,60 @@ Use the Inventory Control Setup window to specify basic Inventory Control settin
 
 **To specify preferences and default entries:**
 
-1. Open the Inventory Control Setup window.
+1. Open the Inventory Control Setup window. (Inventory \>\> Setup \>\> Inventory Control)
 
-(Inventory \>\> Setup \>\> Inventory Control)
+    ![ Inventory Control Setup ](media/240b1ae2e6f478782457c95f19f4cc54.jpg)
 
-![](media/240b1ae2e6f478782457c95f19f4cc54.jpg)
+2. You can enter up to six user categories to classify related items.
 
-1. You can enter up to six user categories to classify related items.
+    User categories are user-defined item categories that provide a way for you to group your inventory and analyze trends in purchases and sales. Refer to *Defining a user category*.
 
-User categories are user-defined item categories that provide a way for you to group your inventory and analyze trends in purchases and sales. Refer to *Defining a user category*.
+3. Enter the next document number for adjustment, transfer, variance, bin transfer, and in-transit transfer transactions. For more information about inventory transactions, refer to *Inventory Control transactions*
 
-1. Enter the next document number for adjustment, transfer, variance, bin transfer, and in-transit transfer transactions. For more information about inventory transactions, refer to *Inventory Control transactions*
+    The document numbers you enter will be the next numbers assigned to adjustment, transfer, and variance documents. To ensure that enough document numbers will be available for future documents, the document numbers must end with a numeral that includes leading zeros—for example, ADJ0001. Each time you enter transactions, the default document number increases to the next available number. You can change the next document number, if needed, but the same document number can be posted only once.
 
-The document numbers you enter will be the next numbers assigned to adjustment, transfer, and variance documents. To ensure that enough document numbers will be available for future documents, the document numbers must end with a numeral that includes leading zeros—for example, ADJ0001. Each time you enter transactions, the default document number increases to the next available number. You can change the next document number, if needed, but the same document number can be posted only once.
+    The numbers you enter also determine the number of unique document numbers available. For example, if you enter ADJ0001, you can enter only 9,999 unique adjustment transactions.
 
-The numbers you enter also determine the number of unique document numbers available. For example, if you enter ADJ0001, you can enter only 9,999 unique adjustment transactions.
+    In order to use document numbers for bin transfers, you must first select Enable Multiple Bins.
 
-In order to use document numbers for bin transfers, you must first select Enable Multiple Bins.
+4. Enter or select the site ID that is the interim location for items that are being moved from one site to another using an in-transit transfer transaction. You can use the via site to ensure that the items aren't sold before the items reach their destination.
 
-1. Enter or select the site ID that is the interim location for items that are being moved from one site to another using an in-transit transfer transaction. You can use the via site to ensure that the items aren't sold before the items reach their destination.
+    If you leave the Via Site ID field blank, you must enter a site ID when entering new in-transit transfer transactions.
 
-If you leave the Via Site ID field blank, you must enter a site ID when entering new in-transit transfer transactions.
+5. Enter or select an account segment ID to represent sites.
 
-1. Enter or select an account segment ID to represent sites.
+    The account segment ID corresponds to the accounts you set up in Account Segment Setup window to track items by site. Once you've entered this information and moved the pointer out of the field, you can't change it.
 
-The account segment ID corresponds to the accounts you set up in Account Segment Setup window to track items by site. Once you've entered this information and moved the pointer out of the field, you can't change it.
+6. Enter or select the number of decimal places to use as a default number of places for item quantities when creating new item records.
 
-1. Enter or select the number of decimal places to use as a default number of places for item quantities when creating new item records.
+7. If you're not using Multicurrency Management, enter or select the number of decimal places to use as a default number of places for displaying currency amounts associated with items. (If you're using Multicurrency Management, this field won't be available.)
 
-2. If you're not using Multicurrency Management, enter or select the number of decimal places to use as a default number of places for displaying currency amounts associated with items. (If you're using Multicurrency Management, this field won't be available.)
+8. Choose which override options to allow. If you allow overrides, you can allocate quantities that are greater than the quantity available.
 
-3. Choose which override options to allow. If you allow overrides, you can allocate quantities that are greater than the quantity available.
+9. To use multiple bins at each inventory site, mark Enable Multiple Bins. This option must be marked in order to use the next document number for bin transfers.
 
-4. To use multiple bins at each inventory site, mark Enable Multiple Bins. This option must be marked in order to use the next document number for bin transfers.
+    > [!NOTE]
+    > If you're using stock counts, you should be aware of how marking this option will affect your existing stock count records. Refer to Multiple bins and existing stock counts for more information.
 
-*If you're using stock counts, you should be aware of how marking this option will affect your existing stock count records. Refer to Multiple bins and existing stock counts for more information.*
+    Marking this option will change Microsoft Dynamics GP processing so that bin information is required for transactions. Before you mark this option, you should complete several setup tasks related to multiple bins. Refer to *Preparing to use multiple bins* for more information.
 
-Marking this option will change Microsoft Dynamics GP processing so that bin information is required for transactions. Before you mark this option, you should complete several setup tasks related to multiple bins. Refer to *Preparing to use multiple bins* for more information.
+10. Choose whether a task should be created if a picking ticket shortage is entered is found. After the shortage occurs in the Sales Order Fulfillment Entry window or the Manufacturing Component Transaction Entry window, a message will appear, and you will have the option to create a task for the quantity shortage.
 
-1. Choose whether a task should be created if a picking ticket shortage is entered is found. After the shortage occurs in the Sales Order Fulfillment Entry window or the Manufacturing Component Transaction Entry window, a message will appear, and you will have the option to create a task for the quantity shortage.
+    You can use the task to create a stock count or to locate the missing quantities. You must enter a user ID to create tasks for picking ticket shortages.
 
-You can use the task to create a stock count or to locate the missing quantities. You must enter a user ID to create tasks for picking ticket shortages.
+11. Choose whether stock-count variances should be posted automatically.
 
-1. Choose whether stock-count variances should be posted automatically.
+12. Choose whether to use only existing lot numbers and serial numbers on decrease and transfer transactions. By marking this option, you can't enter a new lot number or serial number when entering a decrease transaction or transfer transaction in Inventory Control, Microsoft Dynamics GP Bill of Materials, Sales Order Processing, or Invoicing.
 
-2. Choose whether to use only existing lot numbers and serial numbers on decrease and transfer transactions. By marking this option, you can't enter a new lot number or serial number when entering a decrease transaction or transfer transaction in Inventory Control, Microsoft Dynamics GP Bill of Materials, Sales Order Processing, or Invoicing.
+13. Select to automatically assign lot numbers to transactions by receipt date or expiration date in Sales Order Processing, Microsoft Dynamics GP Bill of Materials, and Invoicing. To use the lot numbers nearing expiration first, select to assign lot numbers by expiration date.
 
-3. Select to automatically assign lot numbers to transactions by receipt date or expiration date in Sales Order Processing, Microsoft Dynamics GP Bill of Materials, and Invoicing. To use the lot numbers nearing expiration first, select to assign lot numbers by expiration date.
+14. Choose whether costs for decrease adjustment transactions should be displayed.
 
-4. Choose whether costs for decrease adjustment transactions should be displayed.
+15. Choose whether to use expired lots when entering inventory adjustments and transfers. In the Password field, you can enter a password for this option if you want to limit the users who can use expired lots. If this option is not marked, expired lots can't be used when entering inventory adjustments and transfers.
 
-5. Choose whether to use expired lots when entering inventory adjustments and transfers. In the Password field, you can enter a password for this option if you want to limit the users who can use expired lots. If this option is not marked, expired lots can't be used when entering inventory adjustments and transfers.
+16. Choose whether to use expired lots when entering transactions in Microsoft Dynamics GP Bill of Materials, Purchase Order Returns, Sales Order Processing, Invoicing, and Manufacturing. In the Password field, you can enter a password for this option if you want to limit the users who can use expired lots. If this option is not marked, expired lots can't be used when entering transactions in other modules.
 
-6. Choose whether to use expired lots when entering transactions in Microsoft Dynamics GP Bill of Materials, Purchase Order Returns, Sales Order Processing, Invoicing, and Manufacturing. In the Password field, you can enter a password for this option if you want to limit the users who can use expired lots. If this option is not marked, expired lots can't be used when entering transactions in other modules.
-
-7. Choose OK to save your changes.
+17. Choose OK to save your changes.
 
 When you've entered your preferences and default settings, you can verify your entries by choosing File \>\> Print to print the Inventory Module Setup Report. You also can print this report by choosing the print icon button in the window.
 
@@ -499,7 +498,7 @@ You can create as many as six user categories. Each category can include unlimit
 
 3. Choose the expansion button to open the Item Category Setup window.
 
-    ![](media/599429c86c5ecd6149be9da7a42afc3b.jpg)
+    ![Item Category Setup window](media/599429c86c5ecd6149be9da7a42afc3b.jpg)
 
 4. Select the Category.
 
@@ -537,7 +536,7 @@ Use the Unit of Measure Schedule Setup window to define a unit of measure schedu
 
     (Inventory \>\> Setup \>\> Unit of Measure Schedule)
 
-    ![](media/0b9e24bf3d5dd6a7c4bc10424a7caaa3.jpg)
+    ![Unit of Measure Schedule Setup window](media/0b9e24bf3d5dd6a7c4bc10424a7caaa3.jpg)
 
 2. Enter an identifier and a description for the unit of measure schedule.
 
@@ -750,17 +749,15 @@ If you are using sales fulfillment workflow, you can use the Date 1 and Date 2 f
 
 **To create a lot category:**
 
-1. Open the Lot Category window.
+1. Open the Lot Category window. (Inventory \>\> Setup \>\> Lot Category)
 
-(Inventory \>\> Setup \>\> Lot Category)
-
-![](media/8d661daf59305e32d06f53ed4edad6ce.jpg)
+    ![Lot Category window](media/8d661daf59305e32d06f53ed4edad6ce.jpg)
 
 2. Enter a name or number for the lot category.
 
 3. Assign up to five attributes, including as many as three alphanumeric and two date attributes. The attributes appear as labels in the Lot Attribute Entry window.
 
-If you are using sales fulfillment workflow, you can use the date attributes to track the shelf life of an item. For more information, see *Minimum shelf life*
+    If you are using sales fulfillment workflow, you can use the date attributes to track the shelf life of an item. For more information, see *Minimum shelf life*
 
 4. Save the lot category.
 
@@ -774,9 +771,7 @@ When you change a lot attribute name, any information you've entered won't chang
 
 **To modify a lot category:**
 
-1. Open the Lot Category window.
-
-(Inventory \>\> Setup \>\> Lot Category)
+1. Open the Lot Category window. (Inventory \>\> Setup \>\> Lot Category)
 
 2. Enter or select a lot category.
 
@@ -790,9 +785,7 @@ Use the Lot Category Setup window to delete a lot category.
 
 **To delete a lot category:**
 
-1. Open the Lot Category window.
-
-(Inventory \>\> Setup \>\> Lot Category)
+1. Open the Lot Category window. (Inventory \>\> Setup \>\> Lot Category)
 
 2. Enter or select a lot category.
 
@@ -842,67 +835,70 @@ Use the Item Class Setup window to create item classes. Creating item classes is
 
 **To create an item class:**
 
-1. Open the Item Class Setup window.
-
-(Inventory \>\> Setup \>\> Item Class)
+1. Open the Item Class Setup window. (Inventory \>\> Setup \>\> Item Class)
 
 2. Enter an identifier and description for the item class.
 
-*We recommend that you set up your first class with the most common entries and mark this class as your default class. If you mark the Default option, the information you define for this class automatically appears as the default for every subsequent class you create. This makes data entry faster if similar entries are required in many classes. You can save only one default item class.*
+    > [!IMPORTANT]
+    > We recommend that you set up your first class with the most common entries and mark this class as your default class. If you mark the Default option, the information you define for this class automatically appears as the default for every subsequent class you create. This makes data entry faster if similar entries are required in many classes. You can save only one default item class.
 
 3. Select an item type. Refer to *Item types* for more information.
 
 4. Select a valuation method for how costs are tracked and how quantities are entered and removed from inventory. Refer to *Valuation methods* for more information.
 
-*If you enter the wrong valuation method, you must use the Change Valuation Methods window to change it. Refer to Changing valuation methods for more information.*
+    > [!TIP]
+    > If you enter the wrong valuation method, you must use the Change Valuation Methods window to change it. Refer to Changing valuation methods for more information.
 
 5. Specify if serial or lot numbers will be tracked for items in this class. The tracking option is available only for sales inventory or discontinued items.
 
-*If you choose to track items by lot number, you can enter or select a lot category—a set of item attributes you want to track for the lot. Refer to Chapter 6, "Lot category setup," for more information about defining lot categories. Refer to Entering lot attribute information for more information about entering lot category values.*
+    > [!TIP]
+    > If you choose to track items by lot number, you can enter or select a lot category—a set of item attributes you want to track for the lot. Refer to Chapter 6, "Lot category setup," for more information about defining lot categories. Refer to Entering lot attribute information for more information about entering lot category values.
 
 6. If you selected to track lot numbers, you can select to be warned before a lot number expires. After marking the Warn option, you can enter the number of days you want to be warned before the lot number expires. You won't receive a warning message if you leave the days before lot expires field blank.
 
-If you marked the Lot Due to Expire reminder in the Reminder Preferences window, the number of days you enter is used when generating the reminder that a lot is nearing its expiration date.
+    If you marked the Lot Due to Expire reminder in the Reminder Preferences window, the number of days you enter is used when generating the reminder that a lot is nearing its expiration date.
 
 7. Specify how the items in this class will be taxed. If you choose Taxable, choose a Tax Schedule ID.
 
-*Refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System) for more information about tax schedules.*
+    > [!TIP]
+    > Refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System) for more information about tax schedules.*
 
 8. If you're using standard pricing, enter or select a price method for the item class. Refer to *Price methods* for more information.
 
-If you're using extended pricing, the price method isn't used.
+    If you're using extended pricing, the price method isn't used.
 
 9. Specify if back orders will be allowed in the Sales Order Processing module for items in this class.
 
 10. If the item class will be for sales inventory or discontinued items, and if the Valuation Method is LIFO Perpetual, FIFO Perpetual, or Average Perpetual, you can specify whether purchase receipts for the item should be revalued when cost variances exceed certain levels. Mark Revalue Inventory for Cost Variance if you want this to occur.
 
-If you mark Revalue Inventory for Cost Variance, enter a Tolerance Percentage. The tolerance percentage determines how large a cost variance must be— greater or less than the shipment receipt amount—before the purchase receipt is revalued. Refer to *Cost variance tolerances* for more information.
+    If you mark Revalue Inventory for Cost Variance, enter a Tolerance Percentage. The tolerance percentage determines how large a cost variance must be— greater or less than the shipment receipt amount—before the purchase receipt is revalued. Refer to *Cost variance tolerances* for more information.
 
 11. If the item class will be for sales inventory or discontinued items, you can specify quantity tolerances for shortages and overages for the quantity ordered when receiving against a standard or blanket purchase order.
 
-**Shortage** Mark Shortage and then enter the percentage to use when the quantity received is less than the quantity ordered. If the difference between the quantity received and quantity ordered falls within the quantity tolerance percentage, the difference between the quantities is canceled and the status of a line item is automatically changed to change order, received, or closed. The status of the line item depends on whether or not the line item has been invoiced.
-
-**Overage** Mark Overage and then enter the percentage to use when the quantity received is more than the quantity ordered. If the quantity received is over the overage tolerance, you will receive a message that you can't enter a quantity greater than the combined total of the Remaining to Receive quantity and the overage tolerance set up for the item.
+    - **Shortage**
+      Mark Shortage and then enter the percentage to use when the quantity received is less than the quantity ordered. If the difference between the quantity received and quantity ordered falls within the quantity tolerance percentage, the difference between the quantities is canceled and the status of a line item is automatically changed to change order, received, or closed. The status of the line item depends on whether or not the line item has been invoiced.
+    - **Overage**
+      Mark Overage and then enter the percentage to use when the quantity received is more than the quantity ordered. If the quantity received is over the overage tolerance, you will receive a message that you can't enter a quantity greater than the combined total of the Remaining to Receive quantity and the overage tolerance set up for the item.
 
 12. Mark the history types to keep for this item class.
 
-You must keep transaction history to print the Transaction History Report or to print details for the Historical Stock Status Report. You must keep distribution history to print the Distribution History Report. Both transaction and distribution history are kept automatically if you specify at the system level that you want to reprint posting journals. Refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.
+    You must keep transaction history to print the Transaction History Report or to print details for the Historical Stock Status Report. You must keep distribution history to print the Distribution History Report. Both transaction and distribution history are kept automatically if you specify at the system level that you want to reprint posting journals. Refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.
 
 13. Enter or select decimal places for quantities and currencies.
 
-If you're using Multicurrency Management, the Currency Decimals field isn't available because the number of currency decimals will vary from one currency to another. Refer to *Assigning a currency to an item class* for more information.
+    If you're using Multicurrency Management, the Currency Decimals field isn't available because the number of currency decimals will vary from one currency to another. Refer to *Assigning a currency to an item class* for more information.
 
 14. Enter or select a unit of measure schedule and price group. The number of decimals used to track quantity information for the item and for the unit of measure schedule must be the same.
 
 15. If you're using standard pricing, enter the price level that you use most often when selling items in this class. The price level you select should be one that will be in the price list of each item in the class.
 
-If you're using Sales Order Processing and standard pricing, this price level will be the default entry if you enter a sales transaction for a customer that has no assigned price level.
+    If you're using Sales Order Processing and standard pricing, this price level will be the default entry if you enter a sales transaction for a customer that has no assigned price level.
 
 16. Enter values for user categories, if needed. Refer to *Defining a user category* for more information about user categories.
 
 17. If you're tracking Intrastat statistics, enter or select a tax commodity code and a country or region of origin.
 
-These fields are available only if you've marked the Enable Intrastat Tracking option in the Company Setup Options window.
+    These fields are available only if you've marked the Enable Intrastat Tracking option in the Company Setup Options window.
 
 18. Choose Currency to open the Item Class Currency Setup window, where you can assign a currency to an item class, if you're using Multicurrency Management. Refer to *Assigning a currency to an item class* for more information.
 
@@ -920,11 +916,9 @@ If you're using Multicurrency Management, use the Item Class Currency Setup wind
 
 **To assign a currency to an item class:**
 
-1. Open the Item Class Currency Setup window.
+1. Open the Item Class Currency Setup window. (Inventory \>\> Setup \>\> Item Class Currency)
 
-(Inventory \>\> Setup \>\> Item Class Currency)
-
-![](media/d4c120456160299b6da36d22c2c9bcab.jpg)
+    ![Item Class Currency Setup window](media/d4c120456160299b6da36d22c2c9bcab.jpg)
 
 2. Enter or select a class ID.
 
@@ -942,17 +936,16 @@ Use the Item Class Accounts Setup window to specify default posting accounts for
 
 **To specify default accounts for an item class:**
 
-1. Open the Item Class Setup window.
-
-(Inventory \>\> Setup \>\> Item Class)
+1. Open the Item Class Setup window. (Inventory \>\> Setup \>\> Item Class)
 
 2. Enter or select an item class.
 
 3. Choose Accounts to open the Item Class Accounts Setup window.
 
-![](media/e501999c70d05273d8b29fab0a8ed8dd.jpg)
+    ![Item Class Accounts Setup](media/e501999c70d05273d8b29fab0a8ed8dd.jpg)
 
 4. Enter or select the account numbers to be used for items in the class.
+
     Later, when you create individual item records, you can accept or change the
     default posting account selections.
 
@@ -964,9 +957,7 @@ Use the Item Class Setup window to change item class information. When you chang
 
 **To modify an item class:**
 
-1. Open the Item Class Setup window.
-
-(Inventory \>\> Setup \>\> Item Class)
+1. Open the Item Class Setup window. (Inventory \>\> Setup \>\> Item Class)
 
 2. Enter or select an item class.
 
@@ -1018,9 +1009,7 @@ Use the Item Class Currency Setup window to remove a currency from an item class
 
 **To remove a currency from an item class:**
 
-1. Open the Item Class Currency Setup window.
-
-(Inventory \>\> Setup \>\> Item Class Currency)
+1. Open the Item Class Currency Setup window. (Inventory \>\> Setup \>\> Item Class Currency)
 
 2. Enter or select a class ID.
 
