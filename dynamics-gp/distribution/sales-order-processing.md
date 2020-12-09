@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.date: 01/22/2019
-ms.author: tnistler
+ms.author: theley
 
 ---
 # Sales Order Processing in Dynamics GP

@@ -1,6 +1,6 @@
 ---
 title: "Purchase Order Processing"
-description: "Purchasing for Dynamics GP"
+description: "Learn about Purchasing for Dynamics GP, more specifically purchase return orders."
 keywords: "purchase order"
 author: tnistler
 manager: edupont
@@ -8,7 +8,7 @@ manager: edupont
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
-ms.author: tnistler
+ms.author: theley
 ms.date: 01/23/2019
 
 ---
@@ -16,13 +16,13 @@ ms.date: 01/23/2019
 
 This part of the documentation includes information about using purchase order returns. The following topics are discussed:
 
-- *Chapter 23, “Returns transactions,”* describes how to process returns from Purchase Order Processing.
+- *Chapter 23, "Returns transactions,"* describes how to process returns from Purchase Order Processing.
 
-- *Chapter 24, “Taxes for returns,”* contains information about tax calculation in purchase order returns.
+- *Chapter 24, "Taxes for returns,"* contains information about tax calculation in purchase order returns.
 
 ## Chapter 23: Returns transactions
 
-Returning goods to vendors is a common event during the purchase order life cycle. Returns can occur anytime—before or after receipt of the vendor’s invoice—and returns may or may not involve credit. purchase order returns makes it possible for you to process purchase order returns quickly and easily, with or without credit to the vendor, based on the specific circumstances of that return.
+Returning goods to vendors is a common event during the purchase order life cycle. Returns can occur anytime—before or after receipt of the vendor's invoice—and returns may or may not involve credit. purchase order returns makes it possible for you to process purchase order returns quickly and easily, with or without credit to the vendor, based on the specific circumstances of that return.
 
 *You will have to make a manual adjustment within Payables Management for restocking fees charged by the vendor. This release of purchase order returns does not include a field for these fees.*
 
@@ -88,7 +88,7 @@ When you process a Return w/Credit return document, a return transaction is crea
 
 ### Purchase order returns and Project Accounting
 
-If you are using Project Accounting, you can enter project information on standard purchase orders and drop-ship purchase orders in Purchase Order Processing. Items received from a standard purchase order are stored in inventory. To transfer items to a project, you’ll use the Inventory Transfer Entry window in Projecting Accounting. Items from a drop-ship purchase order are invoiced and transferred to a project automatically.
+If you are using Project Accounting, you can enter project information on standard purchase orders and drop-ship purchase orders in Purchase Order Processing. Items received from a standard purchase order are stored in inventory. To transfer items to a project, you'll use the Inventory Transfer Entry window in Projecting Accounting. Items from a drop-ship purchase order are invoiced and transferred to a project automatically.
 
 You can use purchase order returns to return an item that is in inventory. This is called a project return-from inventory transaction. If the item has been transferred to a project, you can use Project Accounting to return the item. See the Project Accounting documentation for more information.
 
@@ -122,13 +122,13 @@ Select Return w/Credit for shipment receipts that are matched with an invoice, o
 
 **Inventory**
 
-Select Inventory for inventory adjustment receipts, variance receipts, transfer receipts and sales return receipts when the item is not matched to an invoice and vendor credit is not applicable. An example would be when the item is being replaced. If you are using Project Accounting, you can’t enter this return document type for project return-from-inventory transactions.
+Select Inventory for inventory adjustment receipts, variance receipts, transfer receipts and sales return receipts when the item is not matched to an invoice and vendor credit is not applicable. An example would be when the item is being replaced. If you are using Project Accounting, you can't enter this return document type for project return-from-inventory transactions.
 
 When you process an Inventory return, if the items being returned will be replaced by the vendor, you must make adjusting journal entries to remove the accrual created by the new shipment receipt.
 
 **Inventory w/Credit**
 
-Select Inventory w/Credit for inventory adjustment receipts, variance receipts, transfer receipts and sales return receipts when vendor credit is applicable. If you are using Project Accounting, you can’t enter this return document type for project return-from-inventory transactions.
+Select Inventory w/Credit for inventory adjustment receipts, variance receipts, transfer receipts and sales return receipts when vendor credit is applicable. If you are using Project Accounting, you can't enter this return document type for project return-from-inventory transactions.
 
 When you process a Return w/Credit return document or Inventory w/Credit return document type, a return transaction is created in Payables Management. The return transaction must be manually applied to the invoice from the vendor. See the Payables Management documentation (Help \>\> Printable Manuals) for more information.
 
@@ -234,7 +234,7 @@ To verify the transactions you entered, print a returns Edit List. For more info
 
 Use the Returns Transaction Entry window to process purchasing return transactions.
 
-If you’re using multiple bins and a default purchase returns bin exists at either the item-site or the site, the quantity at the default bin will decrease by the extended quantity for an item that is not tracked by serial or lot numbers. You can modify the default bin selections. If a default purchase returns bin doesn’t exist, you will be required to enter one. For serial- and lot-numbered items, the purchase returns bin is the bin associated with the serial or lot number, and you can’t to change the bin.
+If you're using multiple bins and a default purchase returns bin exists at either the item-site or the site, the quantity at the default bin will decrease by the extended quantity for an item that is not tracked by serial or lot numbers. You can modify the default bin selections. If a default purchase returns bin doesn't exist, you will be required to enter one. For serial- and lot-numbered items, the purchase returns bin is the bin associated with the serial or lot number, and you can't to change the bin.
 
 If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Returns Transaction Entry window. To enter a return for a project return-from-inventory transaction, see *Processing project return from-inventory transactions*.
 
@@ -258,17 +258,17 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 To enter a General Ledger posting date or a tax date that is different from the return date, choose the Date expansion button; the Returns Date Entry window will open.
 
-For multicurrency transactions and for document types Return w/Credit, Inventory, and Inventory w/Credit, the return document date determines the exchange rate that will be used, based on the currency ID that’s entered for the transaction and the associated rate type. For a Return document type, the exchange rate of the original receipt will be assigned to each return line. There is no overall exchange rate for the transaction.
+For multicurrency transactions and for document types Return w/Credit, Inventory, and Inventory w/Credit, the return document date determines the exchange rate that will be used, based on the currency ID that's entered for the transaction and the associated rate type. For a Return document type, the exchange rate of the original receipt will be assigned to each return line. There is no overall exchange rate for the transaction.
 
 8.  Enter or select a batch ID (optional). See *Creating a purchasing returns batch* for more information.
 
 9.  Enter or select a vendor ID.
 
-10.  Enter or accept the currency ID. The default currency ID will be the currency ID assigned to the vendor you selected. If no currency ID has been assigned for this vendor, the company’s functional currency will be used.
+10.  Enter or accept the currency ID. The default currency ID will be the currency ID assigned to the vendor you selected. If no currency ID has been assigned for this vendor, the company's functional currency will be used.
 
 The currency ID assigned to the return must match the currency ID of the receipts in the scrolling window.
 
-If the selected currency ID is not the company’s functional currency, a rate type and associated exchange rate table will be assigned to the transaction. The rate type is based on the rate type assigned to the selected vendor. If the vendor does not have a rate type assigned, the default rate type for the Purchasing series specified in the Multicurrency Setup window is used.
+If the selected currency ID is not the company's functional currency, a rate type and associated exchange rate table will be assigned to the transaction. The rate type is based on the rate type assigned to the selected vendor. If the vendor does not have a rate type assigned, the default rate type for the Purchasing series specified in the Multicurrency Setup window is used.
 
 For Return w/Credit, Inventory, and Inventory w/Credit returns, you can view or modify the default exchange rate by choosing the currency ID expansion button to open the Exchange Rate Entry window. For more information about exchange rates, refer to the Multicurrency Management documentation.
 
@@ -279,13 +279,13 @@ The following table shows which options to choose.
 | **Options marked**                                             | **When to use**   | **Results**   | **Notes**      |
 |----------------------------------------------------------------|-------------------|---------------|----------------|
 | Replace Returned Goods and Invoice Expected for Returned Goods | When you want to replace the returned goods, using the original purchase order. When you have yet to process the invoice for the original goods. When you want to process an invoice for all of the original quantity of goods received (even though you have returned some of them). | Returned goods are replaced. The same purchase order is used for the replaced goods. You can process the invoice for all of the original goods, including the goods that will be replaced. | If the original purchase order is no longer available (for example, moved to history), a new one is created automatically. The new purchase order includes only the returned goods and quantity that you want to replace. The Invoice Expected from Vendor option is available only for return types Return or Inventory.   |
-| Replace Returned Goods                                         | When you want to replace the returned goods, using the original purchase order. When you do not expect to receive an invoice for the goods you’re returning, or when you do not expect the invoice to match the original quantity of goods.                                           | Returned items are replaced. The same purchase order is used for the replaced items.     | You can process an invoice for only the goods you kept, not the returned goods. If the original purchase order is no longer available (for example, moved to history), a new one is created automatically. The new purchase order includes only the returned goods and quantity that you want to replace. Invoices that you already have processed are not affected by choosing this option. |
+| Replace Returned Goods                                         | When you want to replace the returned goods, using the original purchase order. When you do not expect to receive an invoice for the goods you're returning, or when you do not expect the invoice to match the original quantity of goods.                                           | Returned items are replaced. The same purchase order is used for the replaced items.     | You can process an invoice for only the goods you kept, not the returned goods. If the original purchase order is no longer available (for example, moved to history), a new one is created automatically. The new purchase order includes only the returned goods and quantity that you want to replace. Invoices that you already have processed are not affected by choosing this option. |
 | Invoice Expected for Returned Goods                            | When you do not want to replace the returned goods. For example, when you expect a refund or a credit. When you want to close the purchase order when the invoice is processed.                                                                                                       | The credit or refund occurs separately from the original invoice. When you process the invoice, the purchase order is automatically closed.       | You returned some goods, but did not ask to replace them. Thus, the transaction is complete and the purchase order is closed.         |
 | Neither option is marked                                       | When you do not want to replace the returned goods. For example, when you expect a refund or a credit. When you have already processed the invoice, or when you do not expect to receive an invoice from the vendor.        | The credit or refund occurs separately from the original invoice.       | You can process an invoice for only the goods that you kept, not the returned goods. Invoices that you already have processed are not affected by choosing this option.             |
 
 12.  If the item being returned was purchased from an EU vendor, mark EU Transaction. See *Entering Intrastat trade statistics for returns* for more information.
 
-13.  If the item being returned is subject to withholding tax, mark the Subject to Withholding option and enter or accept the tax rate. If a withholding vendor hasn’t been specified in the Company Setup Options window, these fields will not be available.
+13.  If the item being returned is subject to withholding tax, mark the Subject to Withholding option and enter or accept the tax rate. If a withholding vendor hasn't been specified in the Company Setup Options window, these fields will not be available.
 
 14.  Use the scrolling window to select the items to be returned and to match the items to receipts.
 
@@ -295,9 +295,9 @@ The PO Number field is not available for document types Inventory and Inventory 
 
 Only standard purchase orders that have been received can be returned. You cannot process returns for drop-ship, canceled, or on-hold purchase orders.
 
-15.  Enter or select the items you want to return using either the vendor’s item number or your company’s item number.
+15.  Enter or select the items you want to return using either the vendor's item number or your company's item number.
 
-*You can display the vendor’s item number by marking Display Vendor Items (Options \>\> Display Vendor Item). If the option is not marked, your company’s item number will be displayed. You can change this selection at any time.*
+*You can display the vendor's item number by marking Display Vendor Items (Options \>\> Display Vendor Item). If the option is not marked, your company's item number will be displayed. You can change this selection at any time.*
 
 Non-inventoried items cannot be selected from the lookup window, however, you can return these by entering the item number.
 
@@ -321,7 +321,7 @@ The only way to change a receipt number after it has been entered is to delete t
 
 18.  Enter the quantity to be returned or accept the default entry, that is, the total quantity available on the selected receipt.
 
-If you’re using multiple bins, the total quantity selected for bins must equal the extended quantity of the line item.
+If you're using multiple bins, the total quantity selected for bins must equal the extended quantity of the line item.
 
 19.  The default entry for unit cost of the item or vendor item is based on the document type.
 
@@ -349,13 +349,13 @@ If you change the default unit cost, a purchase price variance will occur. Also,
 
 If the returned item is tracked by lot or serial number, the Returns Lot or Returns Serial Number Entry window will open when you leave the line. Select the lot or serial numbers to be returned. See *Assigning lot numbers to a return* or *Assigning serial numbers to a return* for more information.
 
-If you are using multiple bins, the Bin Quantity Entry window will open if a returned item that isn’t tracked by lot or serial numbers requires you to enter bin information. The total quantity selected for bins must equal the line’s extended quantity.
+If you are using multiple bins, the Bin Quantity Entry window will open if a returned item that isn't tracked by lot or serial numbers requires you to enter bin information. The total quantity selected for bins must equal the line's extended quantity.
 
 *You also can open the Purchasing Returns Lot Number Entry window or the **Purchasing Returns Serial Entry window by choosing Show Details on the Returns Transaction Entry window and then choosing Serial/Lot. To open the Bin Quantity Entry window, choose Show Details \>\> Bins.*
 
 20.  Enter or accept the 1099 amount if applicable for a 1099 vendor and returns with credit.
 
-21.  If your system is set up to calculate taxes using the Advanced tax calculation method and you’re entering a return with credit, enter or accept the Tax Schedule ID.
+21.  If your system is set up to calculate taxes using the Advanced tax calculation method and you're entering a return with credit, enter or accept the Tax Schedule ID.
 
 22.  Enter or accept trade discount, freight and miscellaneous amounts for returns with credit.
 
@@ -363,7 +363,7 @@ If your system is using the Advanced tax calculation method, taxes on freight an
 
 23.  Taxes will be calculated automatically as you enter items.
 
-    - To change the tax amounts for the document, see *Calculating and distributing summary taxes for returns* for more information. If you are using Project Accounting, you can’t change the tax amount in the Returns Transaction Entry window for return and return with credit transactions even if your system is set up to allow editing summary-level taxes.
+    - To change the tax amounts for the document, see *Calculating and distributing summary taxes for returns* for more information. If you are using Project Accounting, you can't change the tax amount in the Returns Transaction Entry window for return and return with credit transactions even if your system is set up to allow editing summary-level taxes.
 
     - To change the tax amounts for a line item, use the Returns Line Item Tax Detail Entry window. See *Calculating and distributing detail taxes for return line items* for more information.
 
@@ -381,13 +381,13 @@ For an Inventory document type, if the items being returned will be replaced by 
 
 *Refer to the General Ledger documentation for information about correcting General Ledger entries.*
 
-If you’re using multiple bins and posting fails, bin quantities will revert to their previous values.
+If you're using multiple bins and posting fails, bin quantities will revert to their previous values.
 
 ### Processing project return-from-inventory transactions
 
 If you are using Project Accounting, you can use the Returns Transaction Entry window to process project return-from-inventory transactions.
 
-If you’re using multiple bins and a default purchase returns bin exists at either the item-site or the site, the quantity at the default bin will decrease by the extended quantity for an item that is not tracked by serial or lot numbers. You can modify the default bin selections. If a default purchase returns bin doesn’t exist, you will be required to enter one. For serial- and lot-numbered items, the purchase returns bin is the bin associated with the serial or lot number and you won’t be able to change the bin.
+If you're using multiple bins and a default purchase returns bin exists at either the item-site or the site, the quantity at the default bin will decrease by the extended quantity for an item that is not tracked by serial or lot numbers. You can modify the default bin selections. If a default purchase returns bin doesn't exist, you will be required to enter one. For serial- and lot-numbered items, the purchase returns bin is the bin associated with the serial or lot number and you won't be able to change the bin.
 
 **To process project return-from-inventory transactions:**
 
@@ -452,7 +452,7 @@ The only way to change a receipt number after it has been entered is to delete t
 
 15.  Enter the quantity to be returned or accept the default entry.
 
-If you’re using multiple bins, the total quantity selected for bins must equal the extended quantity of the line item.
+If you're using multiple bins, the total quantity selected for bins must equal the extended quantity of the line item.
 
 16.  Enter or accept the unit cost.
 
@@ -479,7 +479,7 @@ If you change the default unit cost, a purchase price variance will occur. Also,
 
 If the returned item is tracked by lot or serial number, the PA Purchasing Returns Lot Number Entry or PA Purchasing Returns Serial Number Entry window will open when you leave the line. Select the lot or serial numbers to be returned. See *Assigning lot numbers to a return* or *Assigning serial numbers to a return* for more information.
 
-If you are using multiple bins, the Bin Quantity Entry window will open if a returned item that isn’t tracked by lot or serial numbers requires you to enter bin information. The total quantity selected at bins must equal the line’s extended quantity.
+If you are using multiple bins, the Bin Quantity Entry window will open if a returned item that isn't tracked by lot or serial numbers requires you to enter bin information. The total quantity selected at bins must equal the line's extended quantity.
 
 *You also can open the Purchasing Returns Lot Entry window or the Purchasing*
 
@@ -507,7 +507,7 @@ See *Returns for Australia/New Zealand* if your system is set up for GST for Aus
 
 Manual adjustments may be necessary for return documents with the Return document type. See *Processing manual adjustments for returns when closing purchase order lines* for more information.
 
-If you’re using multiple bins and posting fails, bin quantities will revert to their previous values.
+If you're using multiple bins and posting fails, bin quantities will revert to their previous values.
 
 ### Printing purchasing returns transactions
 
@@ -546,7 +546,7 @@ Selecting Originating prints amounts in the currency your vendor uses. This an h
 
 ### Entering detail information for a return
 
-Use the Returns Transaction Entry scrolling detail view to add or modify ine item information such as extended cost or to change a line item’s posting accounts.
+Use the Returns Transaction Entry scrolling detail view to add or modify ine item information such as extended cost or to change a line item's posting accounts.
 
 **To enter detail information for a return:**
 
@@ -616,19 +616,19 @@ The Line Mass field displays the total mass per item and is calculated automatic
 
 ### Multiple bins in purchase order returns
 
-Use multiple bins to add another level of detail to item quantity tracking. Besides tracking items within inventory sites, with multiple bins you can track item quantities in bins that reside within each site. Bin quantities are processed and displayed in the item’s base unit of measure.
+Use multiple bins to add another level of detail to item quantity tracking. Besides tracking items within inventory sites, with multiple bins you can track item quantities in bins that reside within each site. Bin quantities are processed and displayed in the item's base unit of measure.
 
 *You can set up bin information when multiple bins functionality has been installed and registered. However, you must also enable this feature in Inventory Control before you can use bins to track items. For more information about enabling multiple bins, see the Inventory Control documentation.*
 
 Default bins for transaction types at each site can be identified for use in transactions. For example, a default bin could be created for return transactions at your warehouse site. Default bins also can be identified for a particular item and transaction type at a site. If you always use Bin A when returning a certain item from your main site, for example, you can set up Bin A as the default purchase purchase returns bin for the item at the main site. Microsoft Dynamics GP automatically creates item-site-bin relationships the first time a bin is used for a transaction.
 
-If you’re using multiple bins and a default purchase returns bin exists at either the item-site or the site, the quantity at the default bin will decrease by the extended quantity for an item that is not tracked by serial or lot numbers. You can modify the default bin selections. If a default purchase returns bin doesn’t exist, you will be required to enter one. For serial- and lot-numbered items, the purchase returns bin is the bin associated with the serial or lot number and you won’t be able to change the bin.
+If you're using multiple bins and a default purchase returns bin exists at either the item-site or the site, the quantity at the default bin will decrease by the extended quantity for an item that is not tracked by serial or lot numbers. You can modify the default bin selections. If a default purchase returns bin doesn't exist, you will be required to enter one. For serial- and lot-numbered items, the purchase returns bin is the bin associated with the serial or lot number and you won't be able to change the bin.
 
 For more information about setting up and using multiple bins, see the Inventory Control documentation
 
 ### Changing bins for a return transaction
 
-If you’re using multiple bins, use the Bin Quantity Entry window to verify or change bin allocations for items that are not tracked by serial or lot numbers. For items that are tracked by serial or lot numbers, you can verify bins in the Purchasing Returns Serial Number Entry window or the Purchasing Returns Lot Number Entry window. For more information, see *Assigning lot numbers to a return* or *Assigning serial numbers to a return*.
+If you're using multiple bins, use the Bin Quantity Entry window to verify or change bin allocations for items that are not tracked by serial or lot numbers. For items that are tracked by serial or lot numbers, you can verify bins in the Purchasing Returns Serial Number Entry window or the Purchasing Returns Lot Number Entry window. For more information, see *Assigning lot numbers to a return* or *Assigning serial numbers to a return*.
 
 You can select from more than one bin per site for an item that tracks serial or lot numbers. For example, if the quantity returned is 20, you can select 15 from Site A, Bin 1 and 5 from Site A, Bin 2.
 
@@ -639,9 +639,9 @@ You can select from more than one bin per site for an item that tracks serial or
 
 2.  Enter document information, including return type, return number, vendor document number, date, and vendor ID.
 
-3.  Select a sales inventory or discontinued item that isn’t tracked by serial or lot numbers and choose the Bins button to open the Bin Quantity Entry window.
+3.  Select a sales inventory or discontinued item that isn't tracked by serial or lot numbers and choose the Bins button to open the Bin Quantity Entry window.
 
-4.  From the list of available bins, select one to use. You also can enter a bin that hasn’t been created yet.
+4.  From the list of available bins, select one to use. You also can enter a bin that hasn't been created yet.
 
 5.  Enter a quantity for the item.
 
@@ -746,7 +746,7 @@ To distribute a transaction to multiple posting accounts, change the default amo
 
 8.  Enter a distribution reference (optional). This reference will be posted to the General Ledger as the distribution reference for the account.
 
-9.  Choose OK to save your entries and continue entering the return. You can save the return if it’s not fully distributed, but you won’t be allowed to post until the full amount is distributed and debits equal credits.
+9.  Choose OK to save your entries and continue entering the return. You can save the return if it's not fully distributed, but you won't be allowed to post until the full amount is distributed and debits equal credits.
 
 ### Return distribution accounts
 
@@ -755,17 +755,17 @@ The posting accounts will distribute as shown in the following table:
 | **Account**          | **Document type**               | **Default entry**   |
 |----------------------|---------------------------------|----------------------------------------------------------|
 | PURCH (Inventory)    | Return, Return w/Credit         | Shipment receipt.  |
-|                      | Inventory, Inventory w/         | Accounts set up for the item or vendor item. If accounts haven’t been set up for the item or vendor item, then the accounts assigned in the Posting Setup window will be used.                                                           |
-| PURCH (PPV)          | Return, Return w/Credit         | Shipment receipt. If not found then the accounts set up for the item or vendor item will be used. If accounts haven’t been set up for the item or vendor item, then the accounts assigned in the Posting Setup window will be used.      |
-|                      | Inventory w/Credit              | Accounts set up for the item/vendor item. If accounts haven’t been set up for the item or vendor item, then the accounts assigned in the Posting Setup window will be used.                                                              |
+|                      | Inventory, Inventory w/         | Accounts set up for the item or vendor item. If accounts haven't been set up for the item or vendor item, then the accounts assigned in the Posting Setup window will be used.                                                           |
+| PURCH (PPV)          | Return, Return w/Credit         | Shipment receipt. If not found then the accounts set up for the item or vendor item will be used. If accounts haven't been set up for the item or vendor item, then the accounts assigned in the Posting Setup window will be used.      |
+|                      | Inventory w/Credit              | Accounts set up for the item/vendor item. If accounts haven't been set up for the item or vendor item, then the accounts assigned in the Posting Setup window will be used.                                                              |
 | PURCH (UPPV)         | Return                          | Shipment receipt. Applicable to item types Sales Inventory and Discontinued using the Periodic valuation method.                                                                                                                         |
 | ACCRUED              | Return                          | Shipment receipt. If not found, then the accounts assigned in the Posting Setup window for the Purchasing Series will be used.                                                                                                           |
-|                      | Inventory (if Variance)         | Variance account set up for the item or vendor item. If an account hasn’t been set up for the item or vendor item, then the variance account assigned in the Posting Setup window for the Inventory Series will be used.                 |
-|                      | Inventory (if                   | Inventory offset account set up for the item or vendor item. If an account hasn’t been set up for the item or vendor item, then the inventory offset account assigned in the Posting Setup window for the Inventory Series will be used. |
-| PAY, TRADE, FREIGHT, | Return w/Credit,                | Accounts set up for the vendor. If accounts haven’t been set up for the vendor, then the accounts assigned in the Posting Setup window will be used.                                                                                     |
-| ROUND                | All return document types       | Rate type. If the rate type hasn’t been set up, then the rounding account set up in the Currency setup window will be used.                                                                                                              |
+|                      | Inventory (if Variance)         | Variance account set up for the item or vendor item. If an account hasn't been set up for the item or vendor item, then the variance account assigned in the Posting Setup window for the Inventory Series will be used.                 |
+|                      | Inventory (if                   | Inventory offset account set up for the item or vendor item. If an account hasn't been set up for the item or vendor item, then the inventory offset account assigned in the Posting Setup window for the Inventory Series will be used. |
+| PAY, TRADE, FREIGHT, | Return w/Credit,                | Accounts set up for the vendor. If accounts haven't been set up for the vendor, then the accounts assigned in the Posting Setup window will be used.                                                                                     |
+| ROUND                | All return document types       | Rate type. If the rate type hasn't been set up, then the rounding account set up in the Currency setup window will be used.                                                                                                              |
 | OVHD, APP-OVHD       | Return or Return w/             | Posted shipment receipt.    |
-|                      | Inventory or Inventory w/Credit | Accounts set up for the item or vendor item. If accounts haven’t been set up for the item or vendor item, then the accounts assigned in the Posting Setup window for the Manufacturing Series will be used.                              |
+|                      | Inventory or Inventory w/Credit | Accounts set up for the item or vendor item. If accounts haven't been set up for the item or vendor item, then the accounts assigned in the Posting Setup window for the Manufacturing Series will be used.                              |
 
 Credit
 
@@ -833,25 +833,25 @@ This information is divided into the following sections:
 
 ### Default tax schedules for return documents
 
-The tax calculation option assigned in the Purchase Order Processing Setup window is used to determine which default tax schedule will be assigned to the return document. The shipping method assigned to the vendor’s purchase address is checked as well to determine where the exchange of goods took place. Together the shipping method and the tax calculation option determine which tax schedule appears as a default tax schedule for the return document.
+The tax calculation option assigned in the Purchase Order Processing Setup window is used to determine which default tax schedule will be assigned to the return document. The shipping method assigned to the vendor's purchase address is checked as well to determine where the exchange of goods took place. Together the shipping method and the tax calculation option determine which tax schedule appears as a default tax schedule for the return document.
 
 Refer to the following table for the default tax schedules for a return document.
 
 | **Tax Calculation option** | **Shipping method**          | **Default tax schedule for the return**                                            |
 |----------------------------|------------------------------|------------------------------------------------------------------------------------|
 | Single                     | Not applicable               | Single tax schedule assigned in the Purchase Order Processing Setup Options window |
-| Advanced                   | Pickup OR No shipping method | Tax schedule assigned to the vendor’s purchase address                             |
+| Advanced                   | Pickup OR No shipping method | Tax schedule assigned to the vendor's purchase address                             |
 | Advanced                   | Delivery                     | Purchases tax schedule assigned in the Company Setup window                        |
 
-*If you decided not to use the shipping method to determine the default tax schedule, the tax schedule assigned to the vendor’s purchase address will be the default tax schedule no matter what tax calculation method you selected to use.*
+*If you decided not to use the shipping method to determine the default tax schedule, the tax schedule assigned to the vendor's purchase address will be the default tax schedule no matter what tax calculation method you selected to use.*
 
 ### Calculating and distributing summary taxes for returns
 
-Use the Returns Tax Summary Entry window to add, change, delete, or view summarized tax amounts and the posting accounts for a return. Taxes are calculated automatically as you enter each tax detail or edit the Total Returns amount. Summary tax edits won’t change the taxes calculated for each line item in the Returns Line Item Tax Detail Entry window.
+Use the Returns Tax Summary Entry window to add, change, delete, or view summarized tax amounts and the posting accounts for a return. Taxes are calculated automatically as you enter each tax detail or edit the Total Returns amount. Summary tax edits won't change the taxes calculated for each line item in the Returns Line Item Tax Detail Entry window.
 
-If your system isn’t set up to allow editing summary-level taxes, you can’t change the tax amount in the Returns Transaction Entry window or the tax information in the Returns Tax Summary Entry window, except for the account.
+If your system isn't set up to allow editing summary-level taxes, you can't change the tax amount in the Returns Transaction Entry window or the tax information in the Returns Tax Summary Entry window, except for the account.
 
-If you are using Project Accounting, you can’t change the tax amount in the Returns
+If you are using Project Accounting, you can't change the tax amount in the Returns
 
 Transaction Entry window or the tax information in the Returns Tax Summary Entry window for return and return with credit transactions even if your system is set up to allow editing summary-level taxes.
 
@@ -929,7 +929,7 @@ No shipping method
 
 ### Calculating and distributing detail taxes for return line items
 
-Use the Returns Line Item Tax Detail Entry window to add, change, delete, or view tax amounts calculated on an individual line item. Taxes are calculated automatically as you enter each tax detail or edit the Total Returns amount. Summary tax edits won’t change the taxes calculated for each line item in the Returns Line Item Tax Detail Entry window. However, tax edits made for each return line will change the summary tax amounts in the Returns Tax Summary Entry window.
+Use the Returns Line Item Tax Detail Entry window to add, change, delete, or view tax amounts calculated on an individual line item. Taxes are calculated automatically as you enter each tax detail or edit the Total Returns amount. Summary tax edits won't change the taxes calculated for each line item in the Returns Line Item Tax Detail Entry window. However, tax edits made for each return line will change the summary tax amounts in the Returns Tax Summary Entry window.
 
 **To calculate and distribute detail taxes for return line items:**
 

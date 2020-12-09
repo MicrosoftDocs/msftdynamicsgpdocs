@@ -1,6 +1,6 @@
 ---
 title: "Purchase Order Processing"
-description: "Purchasing for Dynamics GP"
+description: "Learn about Purchasing for Dynamics GP, more specifically inquiries and reports."
 keywords: "purchase order"
 author: tnistler
 manager: edupont
@@ -8,7 +8,7 @@ manager: edupont
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
-ms.author: tnistler
+ms.author: theley
 ms.date: 01/23/2019
 
 ---
@@ -19,13 +19,13 @@ This part of the documentation explains how to use inquiries and reports to anal
 In Purchase Order Processing, inquiries allow you to quickly view both current and historical purchase order information. You can review
 information in summary or detailed form, with the option of printing the information in the window by choosing File \>\> Print.
 
-Purchase Order Processing reports help you analyze your overall business activity. Some reports are important for the audit trail, to ensure that you’re tracking every transaction that’s been entered.
+Purchase Order Processing reports help you analyze your overall business activity. Some reports are important for the audit trail, to ensure that you're tracking every transaction that's been entered.
 
 The following topics are discussed:
 
-- *Chapter 25, “Inquiries,”* explains how to use Purchase Order Processing inquiry windows to view document and item information.
+- *Chapter 25, "Inquiries,"* explains how to use Purchase Order Processing inquiry windows to view document and item information.
 
-- *Chapter 26, “Reports,”* describes how to use reports to analyze purchasing and receiving activity and pinpoint errors in transaction entry.
+- *Chapter 26, "Reports,"* describes how to use reports to analyze purchasing and receiving activity and pinpoint errors in transaction entry.
 
 ## Chapter 25: Inquiries
 
@@ -61,13 +61,13 @@ The first time you open these windows after registering Multicurrency Management
 
 A reporting currency is used to convert functional or originating currency amounts to another currency on inquiries and reports. For example, if the Canadian dollar is the functional currency for a company, you can set up the euro as your reporting currency to view an inquiry window with currency amounts displayed in the euro currency.
 
-During the reporting currency setup in Multicurrency Management, you’ll set up a reporting currency and enter a default exchange rate and rate calculation method. Depending on how your system is set up, you may be able to override the default reporting currency exchange rate or rate calculation method on inquiries and reports. To change the default reporting currency exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate to open the Modify Reporting Rate window.
+During the reporting currency setup in Multicurrency Management, you'll set up a reporting currency and enter a default exchange rate and rate calculation method. Depending on how your system is set up, you may be able to override the default reporting currency exchange rate or rate calculation method on inquiries and reports. To change the default reporting currency exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate to open the Modify Reporting Rate window.
 
 For more information about the reporting currency, see the Multicurrency Management documentation.
 
 ### Viewing purchasing documents
 
-Use the Purchase Order Processing Document Inquiry window to view information about documents you’ve entered in Purchase Order Processing. This window provides easy access to detailed or summarized information about purchase orders and receipts.
+Use the Purchase Order Processing Document Inquiry window to view information about documents you've entered in Purchase Order Processing. This window provides easy access to detailed or summarized information about purchase orders and receipts.
 
 You can view information as it was originally entered by clicking on link fields. For example, you can select a purchase order and click on the PO Number label to the Purchase Order Inquiry Zoom window to view the purchase order as it was entered.
 
@@ -84,7 +84,7 @@ To view a receipt, select it in the Purchase Order Processing Document Inquiry w
 
 2.  Select all vendors or a range of vendors.
 
-*To view in-transit transfer inventory receipts, select to view all vendors or leave the From field blank if you want to view a specific range. In-transit transfer inventory receipts aren’t assigned to vendor IDs.*
+*To view in-transit transfer inventory receipts, select to view all vendors or leave the From field blank if you want to view a specific range. In-transit transfer inventory receipts aren't assigned to vendor IDs.*
 
 3.  In the Documents list, select PO Number, Receipt Number, or Purchase Order Date as the sorting order.
 
@@ -129,9 +129,9 @@ The following table shows the link field and the window that the link opens:
 
 ### Viewing item information for purchasing documents
 
-Use the Purchase Order Processing Item Inquiry window to view items assigned to purchase orders and receipts. Control blanket line items for blanket and drop-ship blanket purchase orders won’t be displayed in the window. If you are restricting by the on-order quantity, line items that don’t have an on-order quantity won’t be displayed. Line items entered on drop-ship purchase orders or drop-ship blanket purchase orders won’t be displayed because the line items don’t update the onorder quantity. Line items entered on a standard or blanket purchase orders with a status of New, Canceled, Closed, or Received also won’t be displayed because they don’t have an on-order quantity.
+Use the Purchase Order Processing Item Inquiry window to view items assigned to purchase orders and receipts. Control blanket line items for blanket and drop-ship blanket purchase orders won't be displayed in the window. If you are restricting by the on-order quantity, line items that don't have an on-order quantity won't be displayed. Line items entered on drop-ship purchase orders or drop-ship blanket purchase orders won't be displayed because the line items don't update the onorder quantity. Line items entered on a standard or blanket purchase orders with a status of New, Canceled, Closed, or Received also won't be displayed because they don't have an on-order quantity.
 
-To view items by the vendor’s item number, choose Options \>\> Display Vendor Item. The Vendor Item label will be displayed in the Purchase Order Processing Item Inquiry scrolling window. If Display Vendor Item isn’t selected, the Item label will be displayed in the Purchase Order Item Inquiry scrolling window and you can view items using your item number.
+To view items by the vendor's item number, choose Options \>\> Display Vendor Item. The Vendor Item label will be displayed in the Purchase Order Processing Item Inquiry scrolling window. If Display Vendor Item isn't selected, the Item label will be displayed in the Purchase Order Item Inquiry scrolling window and you can view items using your item number.
 
 If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Purchase Order Processing Item Inquiry scrolling window.
 
@@ -146,7 +146,7 @@ You can view information as it was originally entered by clicking on link fields
 
 ![screenshot](media/POage225.jpg)
 
-2.  From the Items list, select Item (your item number) or Vendor Item (your vendor’s item number).
+2.  From the Items list, select Item (your item number) or Vendor Item (your vendor's item number).
 
 3.  Select All to view all items or select a range of items.
 
@@ -156,7 +156,7 @@ You can view information as it was originally entered by clicking on link fields
 
 **Required Date** To view items from the date you must receive all the items.
 
-**Promised Ship Date** To view items from the date the vendor promised to ship the merchandise or services you’ve ordered.
+**Promised Ship Date** To view items from the date the vendor promised to ship the merchandise or services you've ordered.
 
 **Requested By** To view the items ordered by a department or person.
 
@@ -206,7 +206,7 @@ Reports information is divided into the following sections:
 
 - *Specifying a Purchase Order Processing report option*
 
-- *Microsoft SQL Server® Reporting Services reports in Purchase Order Processing*
+- *Microsoft SQL Server&reg; Reporting Services reports in Purchase Order Processing*
 
 #### Purchase Order Processing standard reports summary
 
@@ -228,7 +228,7 @@ Blanket Purchase Order Delivery Schedule\*
 
 Purchase Order Entry window and choose File \>\> Print to print a single document or choose File \>\> Print in the Purchase Order Inquiry Zoom window. Choose Transactions \>\> Print Purchasing Documents to print a range of documents.
 
-† Indicates reports that can be assigned to named printers. For more information, refer to your System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).
+† Indicates reports that can be assigned to named printers. For more information, refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration).
 
 
 
@@ -318,7 +318,7 @@ Returns Trx History – Summary
 
 Returns Trx History – Detail
 
-† Indicates reports that can be assigned to named printers. For more information, refer to your System Administrator’s Guide (Help \>\> Contents \>\> select System Administration).
+† Indicates reports that can be assigned to named printers. For more information, refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration).
 
 
 | **Report type**      | **Report**    | **Printing method**      |
@@ -327,13 +327,13 @@ Returns Trx History – Detail
 | Analysis reports   | Back-Ordered Items Received† Expected Shipments† Purchase Order Analysis† Purchase Order Status Report† PO Line Items to Release Report† Received/Not Invoiced Report† Shipment/Invoice Matching Activity Report† | Create report options in the Purchasing Analysis Reports window.             |
 | Processing reports  | Print Documents Exception Report Purchase Order Edited Status Journal Purchase Order Generated Purchase Order Generated Error Log Purchasing Voided Journal\* Purchasing Voided Journal Currency Summary\*        | These reports will be printed when you complete the corresponding procedure. |
 | Inquiry reports     | Purchase Order Processing Item Inquiry Document Inquiry Report     | Choose File \>\> Print in the corresponding Inquiry window.                  |
-| \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. For more information, refer to your System Administrator’s Guide (Help \>\> Contents \>\> select System Administration). |        |    |
+| \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. For more information, refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration). |        |    |
 
 #### Specifying a Purchase Order Processing report option
 
 Report options include specifications for sorting options and range restrictions for a particular report. In order to print several Purchase Order Processing reports, you must first create a report option. Each report can have several different options so that you can easily print the information you need. For example, you can create report options for the Purchase Order Status Report that show either detailed or summary information.
 
-*A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.*
+*A single report option can't be used by multiple reports. If you want identical options for several reports, you must create them separately.*
 
 Use the Purchasing series report options windows to create sorting, restriction, and printing options for the reports that have been included with Purchase Order Processing.
 
@@ -349,7 +349,7 @@ Use the Purchasing series report options windows to create sorting, restriction,
 
 3.  Choose New to open the report options window. Your selection in step 2 determines which report options window appears.
 
-4.  Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
+4.  Name the option and enter information to define the option. The name you choose for the option won't appear on the report. The selections available for defining report options vary, depending on the report type you've selected.
 
 5.  Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
@@ -361,9 +361,9 @@ Use the Purchasing series report options windows to create sorting, restriction,
 
 For more information about printing reports, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
-8.  To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
+8.  To print the report option from the report options window, choose Print before saving it. If you don't want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
-#### Microsoft SQL Server® Reporting Services reports in Purchase Order Processing
+#### Microsoft SQL Server&reg; Reporting Services reports in Purchase Order Processing
 
 You can view Purchase Order Processing Reporting Services reports from the Reporting Services Reports list. If you are using Reporting Services 2008, purchasing metrics for your home page also appear in the Reporting Services Reports list. You can access the Reporting Services Reports list from the navigation pane or from an area page in the Microsoft Dynamics GP application window. This report list appears if you specified the location of your Reporting Services reports using the Reporting Tools Setup window. See your System Setup Guide (Help \>\> Contents \>\> select Setting up the System) for more information.
 

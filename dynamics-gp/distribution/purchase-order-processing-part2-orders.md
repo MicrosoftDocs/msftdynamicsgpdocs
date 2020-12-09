@@ -1,6 +1,6 @@
 ---
 title: "Purchase Order Processing"
-description: "Purchasing for Dynamics GP"
+description: "Learn about Purchasing for Dynamics GP, more specifcally purchase orders."
 keywords: "purchase order"
 author: tnistler
 manager: edupont
@@ -8,7 +8,7 @@ manager: edupont
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
-ms.author: tnistler
+ms.author: theley
 ms.date: 01/23/2019
 
 ---
