@@ -1,6 +1,6 @@
 ---
 title: "Inventory Control"
-description: "Inventory Control for Dynamics GP"
+description: "Learn about Inventory for Dynamics GP, more specifically inquiries and reports, utilities, and routines."
 keywords: "items"
 author: tnistler
 manager: edupont
@@ -8,13 +8,13 @@ manager: edupont
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
-ms.author: tnistler
+ms.author: theley
 ms.date: 12/02/2019
 
 ---
 # Inventory Control in Dynamics GP - Parts 4-6
 
-You can use Inventory Control to help manage your company’s inventoried items. Many Inventory Control tasks help you create records for your items, such as how the items are to be tracked and what pricing should be used for the items that are sold. this article continues where [Inventory Control in Dynamics GP - Parts 1-3](Inventory.md) stopped.
+You can use Inventory Control to help manage your company's inventoried items. Many Inventory Control tasks help you create records for your items, such as how the items are to be tracked and what pricing should be used for the items that are sold. this article continues where [Inventory Control in Dynamics GP - Parts 1-3](Inventory.md) stopped.
 
 The manual is divided into the following parts:
 
@@ -38,19 +38,19 @@ Inventory Control also includes several reports that summarize information about
 
 The following information is discussed:
 
-- *Chapter 26, “Item inquiries,”* includes information about viewing item records, including windows for viewing more detailed information about items tracked by lot and serial numbers. If you’re using multiple bins, you also can view information about bin quantities.
+- *Chapter 26, "Item inquiries,"* includes information about viewing item records, including windows for viewing more detailed information about items tracked by lot and serial numbers. If you're using multiple bins, you also can view information about bin quantities.
 
-- *Chapter 27, “Standard pricing inquiries,”* describes how you can use the Item Price List Inquiry window to view information about the pricing structures you’ve set up for your inventoried items, if you’re using standard pricing.
+- *Chapter 27, "Standard pricing inquiries,"* describes how you can use the Item Price List Inquiry window to view information about the pricing structures you've set up for your inventoried items, if you're using standard pricing.
 
-- *Chapter 28, “Extended pricing inquiries,”* describes how you can view information about the extended pricing structures you’ve set up for your items.
+- *Chapter 28, "Extended pricing inquiries,"* describes how you can view information about the extended pricing structures you've set up for your items.
 
-- *Chapter 29, “Transaction inquiries,”* contains information about viewing records for inventory transactions and transfers. Information about viewing purchase receipt information also is included.
+- *Chapter 29, "Transaction inquiries,"* contains information about viewing records for inventory transactions and transfers. Information about viewing purchase receipt information also is included.
 
-- *Chapter 30, “Reports,”* describes how you can print reports based on inventory records. Key reports for the module also are listed.
+- *Chapter 30, "Reports,"* describes how you can print reports based on inventory records. Key reports for the module also are listed.
 
 ### Chapter 26: Item inquiries
 
-If you want to find information in your system but don’t need to change the information, you can use the windows in the Inquiry menu. With those windows, you can search your inventory records to see quantity information for inventoried items, to view the lot and serial numbers assigned to items at specific sites, and to review pricing information.
+If you want to find information in your system but don't need to change the information, you can use the windows in the Inquiry menu. With those windows, you can search your inventory records to see quantity information for inventoried items, to view the lot and serial numbers assigned to items at specific sites, and to review pricing information.
 
 The following information is discussed:
 
@@ -82,7 +82,7 @@ The following information is discussed:
 
 #### Viewing item information
 
-To view general information about items, use the inquiry windows. You can view quantity information for inventoried items, lot and serial numbers assigned to items at specific sites, pricing, and stock count information. If you’re using multiple bins, you also can view information about the quantities of items in bins.
+To view general information about items, use the inquiry windows. You can view quantity information for inventoried items, lot and serial numbers assigned to items at specific sites, pricing, and stock count information. If you're using multiple bins, you also can view information about the quantities of items in bins.
 
 **To view item information:**
 
@@ -91,21 +91,21 @@ To view general information about items, use the inquiry windows. You can view q
 
 2. Enter or select the item to view.
 
-3. Decide which site’s information to view.
+3. Decide which site's information to view.
 
 **To view quantity information for all sites** Mark All. Information in the window will include quantity information across all sites.
 
 **To view site-specific information** Mark Site ID, then select a specific site. Information about the item quantities for the specific item-site combination are displayed in the window.
 
-4. Review the information. If needed, you also can review serial number information, or go to related windows to make changes. If you’re using multiple bins, you can view information about bin quantities.
+4. Review the information. If needed, you also can review serial number information, or go to related windows to make changes. If you're using multiple bins, you can view information about bin quantities.
 
 **To view serial or lot number information** If the item is tracked by serial or lot numbers, choose the expansion button on the Track field to open the Item Serial/Lot Number Definition Inquiry Zoom window.
 
 ![](media/97fa4a6778b0119f89da91d5ed9c05db.jpg)
 
-**To go to the Item Maintenance window** If you need to change item information, click the Item Number link to open the Item Maintenance window. Refer to *Chapter 10, “Item cards,”* for more information about using the Item Maintenance window.
+**To go to the Item Maintenance window** If you need to change item information, click the Item Number link to open the Item Maintenance window. Refer to *Chapter 10, "Item cards,"* for more information about using the Item Maintenance window.
 
-**To go to the Site Maintenance window** If you need to change site information, click the Site ID link to open the Site Maintenance window. Refer to *Chapter 14, “Sites and beginning quantities,”* for more information about using the Site Maintenance window.
+**To go to the Site Maintenance window** If you need to change site information, click the Site ID link to open the Site Maintenance window. Refer to *Chapter 14, "Sites and beginning quantities,"* for more information about using the Site Maintenance window.
 
 **To view item allocation information** If you need to view where item quantities have been allocated, click the Allocated link to open the Item Allocation Inquiry window. Refer to *Viewing item allocation information* for more information.
 
@@ -113,11 +113,11 @@ To view general information about items, use the inquiry windows. You can view q
 
 **To view attachments** If you need to view attachments for an item, choose the Attachment Management icon to open the Document Attachment Inquiry window. Refer to the System Manager documentation for more information.
 
-**To view bin quantity information** If you’re using multiple bins, you can use the Bin Quantity Inquiry window to view information about the quantities in bins at a specific site. From the Go To button, choose Bin Quantity Inquiry to open the Bin Quantity Inquiry window. Refer to *Viewing bin quantity information* for more information.
+**To view bin quantity information** If you're using multiple bins, you can use the Bin Quantity Inquiry window to view information about the quantities in bins at a specific site. From the Go To button, choose Bin Quantity Inquiry to open the Bin Quantity Inquiry window. Refer to *Viewing bin quantity information* for more information.
 
 **To view stock count information** If you need to view stock count information for an item, choose Stock Count to open the Item Stock Count Inquiry window.
 
-5. When you’ve finished reviewing information, close the windows.
+5. When you've finished reviewing information, close the windows.
 
 #### Viewing item allocation information
 
@@ -144,11 +144,11 @@ Use the Item Allocation Inquiry window to view where item quantities have been a
 
 8. You can choose File \>\> Print to print the Item Allocation Inquiry Report, if needed.
 
-9. When you’ve finished reviewing information, close the window.
+9. When you've finished reviewing information, close the window.
 
 #### Viewing bin quantity information
 
-If you’re using multiple bins, you can use the Bin Quantity Inquiry window to view information about the quantities in bins at a specific site.
+If you're using multiple bins, you can use the Bin Quantity Inquiry window to view information about the quantities in bins at a specific site.
 
 **To view bin quantity information:**
 
@@ -167,7 +167,7 @@ If you’re using multiple bins, you can use the Bin Quantity Inquiry window to 
 
     - If the item is tracked by lot numbers, the Inventory Lot Number/Bin Inquiry window opens.
 
-5. When you’ve finished viewing information, close the windows.
+5. When you've finished viewing information, close the windows.
 
 #### Viewing item stock information
 
@@ -190,11 +190,11 @@ Stock information can be displayed for all the sites that the item is assigned t
 
 5. You can choose File \>\> Print to print the Item Stock Inquiry Report, if needed.
 
-6. When you’ve finished reviewing information, close the window.
+6. When you've finished reviewing information, close the window.
 
 #### Viewing serial number information
 
-If you’re using serial-numbered items, you can use the Serial Number Inquiry window to view information about the items. For example, you can use this window to view the serial numbers of available items at a specific site. If you’re using multiple bins, you also can view the bin where each item is stored.
+If you're using serial-numbered items, you can use the Serial Number Inquiry window to view information about the items. For example, you can use this window to view the serial numbers of available items at a specific site. If you're using multiple bins, you also can view the bin where each item is stored.
 
 **To view serial number information:**
 
@@ -215,7 +215,7 @@ If you’re using serial-numbered items, you can use the Serial Number Inquiry w
 
 4. Select a range of dates to restrict the information in the scrolling window by date, if needed.
 
-5. If you’re viewing information for a specific site, decide if you want to see serial number information for all items at the site, or for only those items whose item type is Available.
+5. If you're viewing information for a specific site, decide if you want to see serial number information for all items at the site, or for only those items whose item type is Available.
 
 **To view all serial numbers** For Display, mark All.
 
@@ -223,17 +223,17 @@ If you’re using serial-numbered items, you can use the Serial Number Inquiry w
 
 6. Review information as needed. You also can go to other windows to make changes, if needed.
 
-**To make changes to the item record** Click the Item Number link to open the Item Maintenance window, where you can modify the item record. Refer to *Chapter 10, “Item cards,”* for more information about using the Item Maintenance window.
+**To make changes to the item record** Click the Item Number link to open the Item Maintenance window, where you can modify the item record. Refer to *Chapter 10, "Item cards,"* for more information about using the Item Maintenance window.
 
-**To make changes to the site record** Click the Site ID link to open the Site Maintenance window, where you can modify the site record. Refer to *Chapter 14, “Sites and beginning quantities,”* for more information about using the Site Maintenance window.
+**To make changes to the site record** Click the Site ID link to open the Site Maintenance window, where you can modify the site record. Refer to *Chapter 14, "Sites and beginning quantities,"* for more information about using the Site Maintenance window.
 
 7. You can choose File \>\> Print to print the Serial Number Inquiry Report, if needed.
 
-8. When you’ve finished reviewing information, close the window.
+8. When you've finished reviewing information, close the window.
 
 #### Viewing lot number information
 
-If you use lot-numbered items, you can use the Lot Number Inquiry window to view information about those items. For example, you can use this window to view the available quantity in a particular lot. If you’re using multiple bins, you also can view information about the bins where lot quantities are stored.
+If you use lot-numbered items, you can use the Lot Number Inquiry window to view information about those items. For example, you can use this window to view the available quantity in a particular lot. If you're using multiple bins, you also can view information about the bins where lot quantities are stored.
 
 You also can consolidate lot numbers by selecting to sort them by lot. Lot numbers can be consolidated if the lot number, site, bin, quantity type, manufactured date, and expiration date are the same.
 
@@ -254,7 +254,7 @@ You also can consolidate lot numbers by selecting to sort them by lot. Lot numbe
 
 **To view information for a specific site** For the Site ID, mark Site ID, then select a site.
 
-4. If you’re viewing information for a specific site, decide if you want to see lot number information for all items at the site, or for only those items whose item type is Available.
+4. If you're viewing information for a specific site, decide if you want to see lot number information for all items at the site, or for only those items whose item type is Available.
 
 **To view all lot numbers** For Display, mark All.
 
@@ -266,13 +266,13 @@ You also can consolidate lot numbers by selecting to sort them by lot. Lot numbe
 
 7. Review information as needed. You also can go to other windows to make changes, if needed.
 
-**To make changes to the item record** Click the Item Number link to open the Item Maintenance window, where you can modify the item record. Refer to *Chapter 10, “Item cards,”* for more information about using the Item Maintenance window.
+**To make changes to the item record** Click the Item Number link to open the Item Maintenance window, where you can modify the item record. Refer to *Chapter 10, "Item cards,"* for more information about using the Item Maintenance window.
 
-**To make changes to the site record** Click the Site ID link to open the  Site Maintenance window, where you can modify the site record. Refer to *Chapter 14, “Sites and beginning quantities,”* for more information about using the Site Maintenance window.
+**To make changes to the site record** Click the Site ID link to open the  Site Maintenance window, where you can modify the site record. Refer to *Chapter 14, "Sites and beginning quantities,"* for more information about using the Site Maintenance window.
 
 8. You can choose File \>\> Print to print the Lot Number Inquiry Report, if needed.
 
-9. When you’ve finished reviewing information, close the window.
+9. When you've finished reviewing information, close the window.
 
 #### Viewing lot attribute information
 
@@ -293,7 +293,7 @@ You can use the Lot Attribute Inquiry window to see a manufactured date, an expi
 
 5. Review the information as needed.
 
-6. When you’ve finished, close the windows.
+6. When you've finished, close the windows.
 
 #### Viewing planning information for an item
 
@@ -308,11 +308,11 @@ Use the Item Resource Planning Inquiry window to view planning information for a
 
 2. Enter or select an item.
 
-Information about the item that is the same for all sites—such as the item’s order policy—will be displayed.
+Information about the item that is the same for all sites—such as the item's order policy—will be displayed.
 
 3. To view site-specific information, be sure the Site ID option in the Sites field is marked, and then enter or select a site.
 
-4. When you’ve finished viewing the information, close the window.
+4. When you've finished viewing the information, close the window.
 
 #### Viewing a life cycle serial or lot number trace
 
@@ -345,7 +345,7 @@ The type of life cycle trace you select determines the type of information displ
 
 3. Select or enter an item number if you know the number of the item to trace serial or lot information for.
 
-4. Depending on the life cycle trace you’ve selected in the I Need To field, enter or select a customer ID or vendor ID.
+4. Depending on the life cycle trace you've selected in the I Need To field, enter or select a customer ID or vendor ID.
 
 5. Enter or select the range of serial or lot numbers to trace. Select All to include all lot or serial numbers.
 
@@ -406,13 +406,13 @@ Receipt Entry
 
 Entry
 
-The Document Number link isn’t available for the Purchasing Return Entry and Stock Count Entry transaction sources.
+The Document Number link isn't available for the Purchasing Return Entry and Stock Count Entry transaction sources.
 
 9. If a transaction is a manufacturing or assembly transaction, choose the View BOM Trace button to open the Serial/Lot Bill of Materials Trace window, where you can view additional serial- or lot numbered items used by or assembled from the serial or lot number that you are tracing. Refer to *Viewing a bill of materials trace* for more information.
 
 10. You can choose File \>\> Print to print the Serial/Lot Trace Inquiry Report.
 
-11. When you’ve finished reviewing information, close the window.
+11. When you've finished reviewing information, close the window.
 
 #### The bill of materials trace tree view
 
@@ -438,7 +438,7 @@ If a lot number is used multiple times on a transaction, each occurrence of the 
 
 \- LOT 10 : CIRCUIT BOARD - ASM00038 - LOT 55 : SWITCH SYSTEM ORDER005 INV015 ADJ029 + LOT 55 : SWITCH SYSTEM
 
-If an item doesn’t track serial or lot numbers, that information will be displayed in the tree view, as shown in the following example.
+If an item doesn't track serial or lot numbers, that information will be displayed in the tree view, as shown in the following example.
 
 \- LOT 12 : ITEM - ASM00038 \<Not Tracked\> : Brush
 
@@ -503,11 +503,11 @@ The Serial/Lot Bill of Materials Trace window uses a tree view to show the seria
 
 2. You can highlight a serial number, a lot number, or a transaction in the tree view to view additional information.You also can collapse and expand the tree view to control the amount of information you see.
 
-    - For an item that doesn’t track serial or lot numbers, \<Not Tracked\> will be displayed next to the item number.
+    - For an item that doesn't track serial or lot numbers, \<Not Tracked\> will be displayed next to the item number.
 
     - For assembly transactions, a link icon might appear next to a specific serial or lot number that is matched to another serial or lot number. Refer to the Bill of Materials documentation for more information about linking serial and lot numbers.
 
-3. When you’ve finished reviewing information, close the window.
+3. When you've finished reviewing information, close the window.
 
 #### Viewing a recall serial or lot number trace
 
@@ -559,11 +559,11 @@ Refer to the table for more information.
 
 2. In the Serial/Lot Trace Inquiry window, you can choose File \>\> Print to print the Serial/Lot Trace Inquiry Report.
 
-3. When you’ve finished reviewing information, close the window.
+3. When you've finished reviewing information, close the window.
 
 #### Viewing inventory available to promise information
 
-If you’re using Available To Promise, use the Inventory Available to Promise Inquiry window to view available to promise information, such as inventory onhand quantity, allocated quantity, available quantity, and free-forward quantity.
+If you're using Available To Promise, use the Inventory Available to Promise Inquiry window to view available to promise information, such as inventory onhand quantity, allocated quantity, available quantity, and free-forward quantity.
 
 Free-forward quantity is the total of available and pending quantities of an item, plus any additional quantities from purchase orders, assembly receipts, manufacturing orders, and sales returns displayed in the scrolling window. The total sum is reduced by the item quantities from unallocated sales orders, sales back orders, and unallocated manufacturing components displayed in the scrolling window.
 
@@ -586,9 +586,9 @@ You also can view pending purchase orders, pending purchase order receipts, and 
 
 ### Chapter 27: Standard pricing inquiries
 
-If you’re using standard pricing, you can use the Item Price List Inquiry window to view information about the pricing structures you’ve set up for your items. You can use the window to view high-level price list information for an item—such as the unit of measure schedule, base unit of measure, and standard and current cost of the item. You also can use the tree view to control how much information is displayed in the scrolling window. For example, you can highlight the item number in the tree view to see all price list records for an item, or only those price list records for a specific currency, price level, or unit of measure. If you’re using Multicurrency Management, you also can check pricing in different currencies, if that’s been set up.
+If you're using standard pricing, you can use the Item Price List Inquiry window to view information about the pricing structures you've set up for your items. You can use the window to view high-level price list information for an item—such as the unit of measure schedule, base unit of measure, and standard and current cost of the item. You also can use the tree view to control how much information is displayed in the scrolling window. For example, you can highlight the item number in the tree view to see all price list records for an item, or only those price list records for a specific currency, price level, or unit of measure. If you're using Multicurrency Management, you also can check pricing in different currencies, if that's been set up.
 
-*If you’re using extended pricing, refer to Chapter 28, “Extended pricing inquiries,” for information about viewing pricing information.*
+*If you're using extended pricing, refer to Chapter 28, "Extended pricing inquiries," for information about viewing pricing information.*
 
 To review the rounding options for price list calculations, you can use the Item Price List Options Inquiry window. Price list records in the Item Price List Inquiry window also reflect the rounding options.
 
@@ -600,7 +600,7 @@ The following information is discussed:
 
 #### Viewing price list information
 
-If you’re using standard pricing, use the Item Price List Inquiry window to view price levels and quantity breaks for a particular item. For example, if you wanted to offer different pricing alternatives to customers, you could use this window to view the different price levels available for a particular item.
+If you're using standard pricing, use the Item Price List Inquiry window to view price levels and quantity breaks for a particular item. For example, if you wanted to offer different pricing alternatives to customers, you could use this window to view the different price levels available for a particular item.
 
 **To view price list information:**
 
@@ -623,17 +623,17 @@ If you’re using standard pricing, use the Item Price List Inquiry window to vi
 
 **To view or change the default price level** Click the Default Price Level link to open the Price Level Setup window.
 
-**To view or change a price level** Click the Price Level link to open the Price Level Setup window, if you’re using Multicurrency Management.
+**To view or change a price level** Click the Price Level link to open the Price Level Setup window, if you're using Multicurrency Management.
 
 **To view or change a currency ID** Click the Currency ID link to open the Item Currency Maintenance window.
 
 1. To print the Item Price List Report, which displays the information displayed in the window, choose File \>\> Print.
 
-2. When you’ve finished viewing information, close the windows.
+2. When you've finished viewing information, close the windows.
 
 #### Viewing pricing option information
 
-If you’re using standard pricing, you can use the Item Price List Option Inquiry window to view the rounding rules set up for a pricing calculation.
+If you're using standard pricing, you can use the Item Price List Option Inquiry window to view the rounding rules set up for a pricing calculation.
 
 **To view pricing option information:**
 
@@ -650,19 +650,19 @@ Enter or select an item number.
 
 4. If needed, you can go to other windows to view more information, or to make changes.
 
-**To view or change multicurrency information** If you’re using Multicurrency Management, click the Currency ID field label to open the Item Currency Maintenance window.
+**To view or change multicurrency information** If you're using Multicurrency Management, click the Currency ID field label to open the Item Currency Maintenance window.
 
 **To view or change price level information** Click the Price Level field label to open the Price Level Setup window.
 
-5. When you’ve finished viewing information, close the windows.
+5. When you've finished viewing information, close the windows.
 
 ### Chapter 28: Extended pricing inquiries
 
-If you’re using extended pricing, you can trace how prices are calculated in your pricing structures. You also can view information about price sheets: the items and price groups that are assigned to a price sheet, and the customers, prospects, and price books that a price sheet is assigned to.
+If you're using extended pricing, you can trace how prices are calculated in your pricing structures. You also can view information about price sheets: the items and price groups that are assigned to a price sheet, and the customers, prospects, and price books that a price sheet is assigned to.
 
 Some extended pricing information is better viewed with a report. To check pricing structures for missing prices, for example, you can use the Extended Pricing Error Reports window. Refer to *Checking for missing prices*.
 
-*If you’re using standard pricing, refer to Chapter 27, “Standard pricing inquiries,” for information about viewing pricing information.*
+*If you're using standard pricing, refer to Chapter 27, "Standard pricing inquiries," for information about viewing pricing information.*
 
 This information is divided into the following sections:
 
@@ -678,7 +678,7 @@ This information is divided into the following sections:
 
 #### Tracing a price calculation
 
-Use the Price Trace Inquiry window to find out how an item’s price is calculated for a customer. You can use this window to view the total price, the steps taken to calculate the price, and the price sheets used to calculate the price. This is useful if you want to test the pricing structure before you enter transactions in the Sales Transaction Entry window.
+Use the Price Trace Inquiry window to find out how an item's price is calculated for a customer. You can use this window to view the total price, the steps taken to calculate the price, and the price sheets used to calculate the price. This is useful if you want to test the pricing structure before you enter transactions in the Sales Transaction Entry window.
 
 The number of currency decimals used to display information in the Price Trace Inquiry window depends on the source of the information.
 
@@ -705,7 +705,7 @@ The number of currency decimals used to display information in the Price Trace I
 
 6. Enter a quantity, if you want. The quantity is used if quantity break pricing is set up for the selected item. The price per item will be calculated.
 
-*If a promotion exists for the item and quantity-break pricing is used on the promotional price sheet, it won’t be displayed in the Price Trace Inquiry window if the quantity is zero or blank.*
+*If a promotion exists for the item and quantity-break pricing is used on the promotional price sheet, it won't be displayed in the Price Trace Inquiry window if the quantity is zero or blank.*
 
 7. Enter a date for the price inquiry.
 
@@ -715,23 +715,23 @@ Any errors encountered while calculating the price will be displayed in the
 
 Price Trace Error field. Click the Price Sheet ID link to open the Price Sheet
 
-Detail Maintenance window, where you can correct the errors. If you’re using Multicurrency Management, you might have errors for the originating currency. Refer to *Originating currency errors in price trace inquiries* for more information.
+Detail Maintenance window, where you can correct the errors. If you're using Multicurrency Management, you might have errors for the originating currency. Refer to *Originating currency errors in price trace inquiries* for more information.
 
 #### Originating currency errors in price trace inquiries
 
-Price-trace errors—errors in how prices for items are calculated when you’re using extended pricing—can be reported for the originating currency in certain situations.
+Price-trace errors—errors in how prices for items are calculated when you're using extended pricing—can be reported for the originating currency in certain situations.
 
-If you’ve marked the Sales Order Processing setup option so that a price isn’t required for each currency for an item, and if you’ve marked the option to convert the originating currency to the functional currency, then pricing calculations are “round-tripped” from the originating currency to the functional currency and back to the originating currency.
+If you've marked the Sales Order Processing setup option so that a price isn't required for each currency for an item, and if you've marked the option to convert the originating currency to the functional currency, then pricing calculations are "round-tripped" from the originating currency to the functional currency and back to the originating currency.
 
-For example, suppose you’ve created price sheets for US dollars, but haven’t created them for British pounds. If you have these options marked, you could enter a price trace inquiry in British pounds. The inquiry would calculate the pricing in US dollars, then convert it to British pounds based on your exchange tables.
+For example, suppose you've created price sheets for US dollars, but haven't created them for British pounds. If you have these options marked, you could enter a price trace inquiry in British pounds. The inquiry would calculate the pricing in US dollars, then convert it to British pounds based on your exchange tables.
 
-Rules for price sheets still apply: you can’t use two price sheets with identical date ranges, and you must have a net price for the items. If either of these rules are broken—and if you’re using the “round-tripping” calculations—then the Originating Currency Errors button will appear on the Price Trace Inquiry window.
+Rules for price sheets still apply: you can't use two price sheets with identical date ranges, and you must have a net price for the items. If either of these rules are broken—and if you're using the "round-tripping" calculations—then the Originating Currency Errors button will appear on the Price Trace Inquiry window.
 
 You can choose that button to open the Price Trace Originating Currency Trace window, where you can view information about the errors.
 
 ![](media/071e40940aee41f2d63e8332f7c207b1.jpg)
 
-When you’ve finished viewing information, choose OK to close the window.
+When you've finished viewing information, choose OK to close the window.
 
 #### Viewing the items and price groups in a price sheet
 
@@ -762,7 +762,7 @@ For example, you might want to know the effect of a value off the base price at 
 
 - Enter an As of Date to see how pricing would be calculated on a specific date.
 
-5. When you’ve finished viewing information, close the window.
+5. When you've finished viewing information, close the window.
 
 #### Viewing price sheets for a selected item or price group
 
@@ -781,7 +781,7 @@ Use the Item Price Sheet Inquiry window to view the price sheets that have been 
 
 4. Mark an option to restrict the price sheets displayed in the scrolling window based on whether the price sheets are promotional or not.
 
-5. If you’re using Multicurrency Management, mark an option to restrict the price sheets displayed in the scrolling window based on the currency of each price sheet. If you mark Currency, enter or select a currency.
+5. If you're using Multicurrency Management, mark an option to restrict the price sheets displayed in the scrolling window based on the currency of each price sheet. If you mark Currency, enter or select a currency.
 
 6. View information in the scrolling window.
 
@@ -791,7 +791,7 @@ You also can view more information, if needed.
 
 **To view price sheet details** Highlight the price sheet in the scrolling window and choose the Price Sheet ID expansion button to open the Price Sheet Detail Maintenance window, where you can view and edit price sheet information.
 
-7. When you’ve finished viewing information, close the window.
+7. When you've finished viewing information, close the window.
 
 #### Viewing promotions for a prospect or customer
 
@@ -804,11 +804,11 @@ You can use the Promotion Price Sheet Inquiry window to view all the promotions 
 
 ![](media/0ffc411d9bc41144af82ff8f34b2d557.jpg)
 
-2. Mark Customer or Prospect, depending on who’s promotions you want to view.
+2. Mark Customer or Prospect, depending on who's promotions you want to view.
 
 3. Enter or select a customer or prospect.
 
-4. If you’re using Multicurrency Management, you can enter or select a Currency ID.
+4. If you're using Multicurrency Management, you can enter or select a Currency ID.
 
 5. Choose the items to view. Mark All to see promotions for all items, or mark From and enter a range of items to view.
 
@@ -816,17 +816,17 @@ You can use the Promotion Price Sheet Inquiry window to view all the promotions 
 
 7. Choose Redisplay to update the scrolling window, and then view the information in the scrolling window.
 
-8. When you’ve finished, close the window.
+8. When you've finished, close the window.
 
 ### Chapter 29: Transaction inquiries
 
-You can use the inquiry windows to view information about your adjustment and variance transactions, transfers, and purchase receipts. If you’re using other Microsoft Dynamics GP modules, you also can use links to open other windows that display more details about specific transactions.
+You can use the inquiry windows to view information about your adjustment and variance transactions, transfers, and purchase receipts. If you're using other Microsoft Dynamics GP modules, you also can use links to open other windows that display more details about specific transactions.
 
-The inquiry window you’ll use to view transactions depends on the source of the transaction information you want to see.
+The inquiry window you'll use to view transactions depends on the source of the transaction information you want to see.
 
 **To view transactions entered throughout the system** Use the Item Transaction Inquiry window. Any posted transaction for an item—such as transactions from Sales Order Processing—will be available. Inventory Control transactions also can be viewed in the Item Transaction Inquiry window.
 
-**To view transactions entered in Inventory Control** Use the Inventory Transaction Inquiry window to see transactions that are specific to Inventory Control: adjustments, variances, and transfers. If you’re using multiple bins, you also can view information about the bins used for a transaction. You can use the InTransit Transfer History Inquiry window to view in-transit transfers.
+**To view transactions entered in Inventory Control** Use the Inventory Transaction Inquiry window to see transactions that are specific to Inventory Control: adjustments, variances, and transfers. If you're using multiple bins, you also can view information about the bins used for a transaction. You can use the InTransit Transfer History Inquiry window to view in-transit transfers.
 
 **To view transactions resulting from purchase receipts** Use the Purchase Receipts Inquiry window.
 
@@ -883,7 +883,7 @@ You can use any of these windows to view the transaction information as it was e
 
 7. You can choose File \>\> Print to print the Item Transaction Inquiry Report.
 
-8. When you’ve finished viewing information, close the windows.
+8. When you've finished viewing information, close the windows.
 
 #### Viewing inventory transaction information
 
@@ -900,7 +900,7 @@ Use the Inventory Transaction Inquiry window to view any transaction that has be
 
 **Adjustment** Select Adjustment to view adjustment transactions for an item—transactions to record an increase or decrease to inventory levels.
 
-**Variance** Select Variance to view variance transactions for an item— transactions to bring inventory records in line with inventory levels. For example, if you’re using stock counts, you might have variance transactions to record transactions made so inventory accounting records match actual inventory levels.
+**Variance** Select Variance to view variance transactions for an item— transactions to bring inventory records in line with inventory levels. For example, if you're using stock counts, you might have variance transactions to record transactions made so inventory accounting records match actual inventory levels.
 
 **Transfer** Select Transfer to view transfer transactions for an item— transactions that record the movement of items from one site to another, from one quantity type to another, or both.
 
@@ -925,7 +925,7 @@ Refer to the table for more information.
 
 6. You can choose File \>\> Print to print the Transaction Inquiry Report.
 
-7. When you’ve finished viewing information, close the windows.
+7. When you've finished viewing information, close the windows.
 
 #### Viewing in-transit transfer transaction information
 
@@ -954,7 +954,7 @@ Refer to the table for more information.
 
 4. You can print the Service Inventory Pack List - Reprint report.
 
-5. When you’ve finished viewing information, close the windows.
+5. When you've finished viewing information, close the windows.
 
 #### Viewing purchase receipt information
 
@@ -1004,7 +1004,7 @@ Details
 
 7. You can choose File \>\> Print to print the Purchase Receipts Inquiry Report.
 
-8. When you’ve finished reviewing information, close the windows.
+8. When you've finished reviewing information, close the windows.
 
 ### Chapter 30: Reports
 
@@ -1028,13 +1028,13 @@ The following information is discussed:
 
 - *Specifying an Inventory Control report option*
 
-- *Microsoft SQL Server® Reporting Services reports for Inventory Control*
+- *Microsoft SQL Server&reg; Reporting Services reports for Inventory Control*
 
 #### Inventory Control report summary
 
 You can print several types of reports using Inventory Control. Some reports automatically are printed when you complete certain procedures; for example, posting journals can be printed automatically when you post transactions, depending on how your posting options are set up. You can choose to print some reports during procedures; for example, you can print an edit list when entering transactions by choosing the Print button in the batch entry window. In order to print some reports, such as analysis or history reports, you must set up report options to specify sorting options and ranges of information to include on the report. For more information, refer to *Specifying an Inventory Control report option*.
 
-*If you’re using extended pricing, standard item price list reports won’t contain up-to-date pricing information. To print an accurate pricing report, you must use the Extended Pricing Reports window.*
+*If you're using extended pricing, standard item price list reports won't contain up-to-date pricing information. To print an accurate pricing report, you must use the Extended Pricing Reports window.*
 
 The following table lists the report types available in Inventory Control and the reports in each category.
 
@@ -1132,7 +1132,7 @@ Item Stock Inquiry Report
 
 Serial/Lot Trace Inquiry Report
 
-† Indicates reports that can be assigned to named printers. See your System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.
+† Indicates reports that can be assigned to named printers. See your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.
 
 | **Report Type**     | **Report**      | **Printing method**       |
 |---------------------|-----------------|---------------------------|
@@ -1140,17 +1140,17 @@ Serial/Lot Trace Inquiry Report
 | History reports   | Transaction History Report Distribution History Report Sales Summary Report Item Period History Cost Change History Report     | Create report options in the Inventory History Reports window.    |
 | Edit lists    | Transaction Edit List Transfer Edit List  | Choose File \>\> Print in the window you used to complete the procedure.  |
 | Posting reports    | Transaction Posting Journal† Transfer Posting Journal† Cost Variance Journal Distribution Breakdown Register   | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure **or** create report options in the Reprint Inventory Journals window. |
-| Utility reports   | Reconcile Report Cost Adjustment Audit Report Valuation Method Change Audit Report Decimal Places Change Audit Report\* Unit of Measure Schedule Audit Report Add Price List Wizard Audit Report\* Update Price List Wizard Audit Report\* Remove Price List Wizard Audit Report\* Copy Price List Wizard Audit Report\* Assign Currency Audit Report (available only if you’re using Multicurrency Management) Replace Resource Planning Buyer/ Planner Exception Report Resource Planning Site Roll Down Exception Report | These reports will be printed when you complete the corresponding procedure.      |
+| Utility reports   | Reconcile Report Cost Adjustment Audit Report Valuation Method Change Audit Report Decimal Places Change Audit Report\* Unit of Measure Schedule Audit Report Add Price List Wizard Audit Report\* Update Price List Wizard Audit Report\* Remove Price List Wizard Audit Report\* Copy Price List Wizard Audit Report\* Assign Currency Audit Report (available only if you're using Multicurrency Management) Replace Resource Planning Buyer/ Planner Exception Report Resource Planning Site Roll Down Exception Report | These reports will be printed when you complete the corresponding procedure.      |
 | Extended Pricing    | Pricing Reports Error Reports    | Enter report ranges and selections in the Extended Pricing Reports window. Refer to *Checking for missing prices* and *Printing extended pricing summary reports*.       |
 | Purchase Order Generator Item     | Purchase Order Generator Item Report   | Enter report ranges and selections in the Purchase Order Generator Item Report window. Refer to *Printing a purchase order generator item report*.        |
 
-\* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See your System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information. 
+\* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. See your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information. 
 
 #### Accuracy Comparison report
 
 The Accuracy Comparison report can be the most valuable result of performing stock counts. The report helps you spot trends in the accuracy of your inventory records over time, measured by the results of your stock counts.
 
-For example, suppose your business has several warehouses and stores. For each site, you implement cycle counting and stock counts. Once you’ve completed several counts, you print the Accuracy Comparison report, which shows that all sites and warehouses have about the same inventory-record accuracy.
+For example, suppose your business has several warehouses and stores. For each site, you implement cycle counting and stock counts. Once you've completed several counts, you print the Accuracy Comparison report, which shows that all sites and warehouses have about the same inventory-record accuracy.
 
 If you notice a sharp decrease in the accuracy at one site, you might need to investigate further. The change could be caused by changes in how inventory is managed at that site—perhaps more training is needed for those inventory personnel—or might be caused by employee theft. If you implement new inventory management policies, the Accuracy comparison report also can help you measure the success of those changes.
 
@@ -1158,7 +1158,7 @@ The Accuracy Comparison report is printed from the Inventory Analysis Reports wi
 
 The following fields are of particular importance when analyzing your accuracy.
 
-**To Reconcile** This field displays the absolute difference between the captured quantity and the counted quantity. Ideally, this difference should be zero, meaning that the captured quantity and the counted quantity are the same. A large number in this field doesn’t necessarily mean that there was a large variance, however. If unposted transactions or transaction history showed that other entries in the system accounted for the amount, then your inventory records are still accurate.
+**To Reconcile** This field displays the absolute difference between the captured quantity and the counted quantity. Ideally, this difference should be zero, meaning that the captured quantity and the counted quantity are the same. A large number in this field doesn't necessarily mean that there was a large variance, however. If unposted transactions or transaction history showed that other entries in the system accounted for the amount, then your inventory records are still accurate.
 
 **Net Variance** This field is the item quantity that was actually included in the variance transaction. A large number in this field might signify inventory control problems.
 
@@ -1174,7 +1174,7 @@ The report can be used to report information about Sales Inventory and Discontin
 
 *To generate a Historical Stock Status Report, you must be maintaining transaction history for the items in the report. To set options to maintain history for an item class, refer to Creating an item class. To set options to maintain history for an item, refer to Entering item options.*
 
-For an item with a LIFO Perpetual valuation method or a FIFO Perpetual valuation method, the extended cost of inventory as of a certain day is calculated in two steps. First, the extended cost is calculated *at the time the report is run*, much like the regular Stock Status Report. Then, transactions posted since the “as of date” are added to or subtracted from the extended cost. However, only transactions that affect the quantity on hand are listed in the report. A transaction that affected a different quantity type—such as a sales return document that added items to the returned quantity—would not be included in the report.
+For an item with a LIFO Perpetual valuation method or a FIFO Perpetual valuation method, the extended cost of inventory as of a certain day is calculated in two steps. First, the extended cost is calculated *at the time the report is run*, much like the regular Stock Status Report. Then, transactions posted since the "as of date" are added to or subtracted from the extended cost. However, only transactions that affect the quantity on hand are listed in the report. A transaction that affected a different quantity type—such as a sales return document that added items to the returned quantity—would not be included in the report.
 
 Inventory cost (extended cost) calculations for the Historical Stock Status Report are influenced by the valuation method for an item. For more information about valuation methods and item costs, refer to *Valuation methods*.
 
@@ -1186,25 +1186,25 @@ Refer to the following table for more information.
 |----------------------|----------------------------------------------------------------|
 | FIFO perpetual       | Layered cost using purchase receipts                           |
 | LIFO perpetual       | Layered cost using purchase receipts                           |
-| Average perpetual    | Quantity x Item’s historical current cost for a selected date  |
-| FIFO periodic        | Quantity x Item’s historical standard cost for a selected date |
-| LIFO periodic        | Quantity x Item’s historical standard cost for a selected date |
+| Average perpetual    | Quantity x Item's historical current cost for a selected date  |
+| FIFO periodic        | Quantity x Item's historical standard cost for a selected date |
+| LIFO periodic        | Quantity x Item's historical standard cost for a selected date |
 
-When the current cost of an item that uses average perpetual valuation method changes or when the standard cost of a LIFO periodic or FIFO periodic item changes, the new value is saved to history. When an item that uses LIFO perpetual or FIFO perpetual valuation method is received into stock, the transaction is valued at the actual cost. This becomes the “historical cost” for the item. The historical cost is always used for both increase transactions (receipts) and decrease transactions (issues) for items that have a LIFO Perpetual or FIFO Perpetual valuation method.
+When the current cost of an item that uses average perpetual valuation method changes or when the standard cost of a LIFO periodic or FIFO periodic item changes, the new value is saved to history. When an item that uses LIFO perpetual or FIFO perpetual valuation method is received into stock, the transaction is valued at the actual cost. This becomes the "historical cost" for the item. The historical cost is always used for both increase transactions (receipts) and decrease transactions (issues) for items that have a LIFO Perpetual or FIFO Perpetual valuation method.
 
 If your report includes items with an Average Perpetual or periodic valuation methods, however, you can choose to use either the historical cost or the standard cost (for items with periodic valuation methods) or the average cost (for items with the Average Cost valuation method). In those cases, the unit costs and extended values are calculated according to the following table:
 
 | **Valuation method**                                                   | **Cost type used** | **Calculations \***                                                                          |
 |------------------------------------------------------------------------|--------------------|----------------------------------------------------------------------------------------------|
-| Average perpetual                                                      | Today’s            | Unit cost: Current cost for item on the user date                                            |
+| Average perpetual                                                      | Today's            | Unit cost: Current cost for item on the user date                                            |
 | Average perpetual                                                      | Historical         | Unit cost: Historical current cost for item on the selected date                             |
-| FIFO periodic                                                          | Today’s            | Unit cost: Standard cost for item on the user date                                           |
+| FIFO periodic                                                          | Today's            | Unit cost: Standard cost for item on the user date                                           |
 | FIFO periodic                                                          | Historical         | Unit cost: Historical standard cost for item on the selected date                            |
-| FIFO perpetual                                                         | Today’s            | Unit cost: Unit cost for transaction                                                         |
+| FIFO perpetual                                                         | Today's            | Unit cost: Unit cost for transaction                                                         |
 | FIFO perpetual                                                         | Historical         | Unit cost: Historical unit cost for transaction Extended cost: Extended cost for transaction |
-| LIFO periodic                                                          | Today’s            | Unit cost: Standard cost for item on the user date                                           |
+| LIFO periodic                                                          | Today's            | Unit cost: Standard cost for item on the user date                                           |
 | LIFO periodic                                                          | Historical         | Unit cost: Historical standard cost for item on the selected date                            |
-| LIFO perpetual                                                         | Today’s            | Unit cost: Unit cost for the transaction                                                     |
+| LIFO perpetual                                                         | Today's            | Unit cost: Unit cost for the transaction                                                     |
 | LIFO perpetual                                                         | Historical         | Unit cost: Unit cost for the transaction Extended cost: Extended cost for transaction        |
 | \* All calculations are converted to reflect the base unit of measure. |                    |                                                                                              |
 
@@ -1254,9 +1254,9 @@ Extended cost: Extended cost for transaction
 
 #### Checking for missing prices
 
-If you’re using extended pricing, you can use the Extended Pricing Error Report to identify the items for which prices cannot be calculated.
+If you're using extended pricing, you can use the Extended Pricing Error Report to identify the items for which prices cannot be calculated.
 
-For example, if an item has a value-off price in a price sheet but no net price in the base price book, or if an item has entries in two price sheets with the same date range in the same price book, prices can’t be calculated and errors will be reported.
+For example, if an item has a value-off price in a price sheet but no net price in the base price book, or if an item has entries in two price sheets with the same date range in the same price book, prices can't be calculated and errors will be reported.
 
 You can view price error results on screen or on a printed report. When a pricing error report is generated, a complete price book is calculated for the date you enter. This price book is recalculated when an Extended Pricing report is generated for a different date or if the Refresh Pricing Tables option is marked.
 
@@ -1286,8 +1286,8 @@ A customer report can be printed using the following options:
 | **Option**                             | **Description**                                                                                                                                                                                           |
 |----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Price Sheets Only                      | Prices will be reported for price sheets assigned directly to the customer or prospect.                                                                                                                  |
-| Price Sheets and Price Book            | Prices will be reported for price sheets assigned directly to the customer or prospect, and price sheets assigned to the customer or prospect’s price book.                                              |
-| Price Sheets, Price Book and Base Book | Prices will be reported for price sheets assigned directly to the customer or prospect, price sheets assigned to the customer or prospect’s price book, and price sheets assigned to the base price book. |
+| Price Sheets and Price Book            | Prices will be reported for price sheets assigned directly to the customer or prospect, and price sheets assigned to the customer or prospect's price book.                                              |
+| Price Sheets, Price Book and Base Book | Prices will be reported for price sheets assigned directly to the customer or prospect, price sheets assigned to the customer or prospect's price book, and price sheets assigned to the base price book. |
 
 A price book report can be printed using the following options:
 
@@ -1302,7 +1302,7 @@ To print a report, choose Destination to select a report destination, then choos
 
 #### Printing extended pricing summary reports
 
-If you’re using extended pricing, you can use the Extended Pricing Report window to print reports that summarize pricing information for a customer or for a price book.
+If you're using extended pricing, you can use the Extended Pricing Report window to print reports that summarize pricing information for a customer or for a price book.
 
 **To print extended pricing summary reports:**
 
@@ -1315,17 +1315,17 @@ If you’re using extended pricing, you can use the Extended Pricing Report wind
 
 *You can use the customer report type to print reports for prospects, as well.*
 
-3. Mark Refresh Pricing Tables to recalculate pricing in a price book. You shouldn’t have to mark this option unless you have made changes to pricing information since the last time you generated the report.
+3. Mark Refresh Pricing Tables to recalculate pricing in a price book. You shouldn't have to mark this option unless you have made changes to pricing information since the last time you generated the report.
 
 2. Enter the date that information in the report should be based on.
 
 3. Mark Print Errors if problems in calculating prices should be included in the report.
 
-If you don’t mark this option, the first net price that is found will be printed on the report.
+If you don't mark this option, the first net price that is found will be printed on the report.
 
-4. If you’re using Multicurrency Management, enter or select the currency ID for the report. If you don’t select a currency, information about all currencies will be included on the report.
+4. If you're using Multicurrency Management, enter or select the currency ID for the report. If you don't select a currency, information about all currencies will be included on the report.
 
-5. Enter additional information for the report, based on the kind of report you’re printing.
+5. Enter additional information for the report, based on the kind of report you're printing.
 
 Refer to the table for more information.
 
@@ -1341,17 +1341,17 @@ Refer to the table for more information.
 
 7. Choose the report destination.
 
-*If you don’t choose a destination for the report at this point, you’ll be prompted to select a destination when the report is generated.*
+*If you don't choose a destination for the report at this point, you'll be prompted to select a destination when the report is generated.*
 
 8. Choose OK to save the report destination and close the Report Destination window.
 
 9. In the Extended Pricing Report window, choose Print to generate the report.
 
-10. When you’ve finished, close the window.
+10. When you've finished, close the window.
 
 #### Printing a purchase order generator item report
 
-You can use the Purchase Order Generator Item Report to print the Purchase Order Generator Item Report, which summarizes the purchase order generator options you’ve set up for items.
+You can use the Purchase Order Generator Item Report to print the Purchase Order Generator Item Report, which summarizes the purchase order generator options you've set up for items.
 
 **To print a purchase order generator item report:**
 
@@ -1368,13 +1368,13 @@ You can use the Purchase Order Generator Item Report to print the Purchase Order
 
 5. In the Report Destination window, choose OK. The report will be printed to the destination you selected.
 
-6. When you’ve finished, close the window.
+6. When you've finished, close the window.
 
 #### Specifying an Inventory Control report option
 
 Report options include specifications for sorting options and range restrictions for a particular report. In order to print several Inventory Control reports, you must first create a report option. Each report can have several different options so that you can easily print the information you need. For example, you can create report options for the Purchase Receipts Report that show either detailed or summary information.
 
-*A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.*
+*A single report option can't be used by multiple reports. If you want identical options for several reports, you must create them separately.*
 
 Use the Inventory Control report options windows to create sorting, restriction, printing, and email options for the reports that have been included with Inventory Control.
 
@@ -1394,7 +1394,7 @@ Use the Inventory Control report options windows to create sorting, restriction,
 
 3. Choose New to open the report options window. Your selection in step 2 determines which report options window appears.
 
-4. Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
+4. Name the option and enter information to define the option. The name you choose for the option won't appear on the report. The selections available for defining report options vary, depending on the report type you've selected.
 
 5. Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
@@ -1402,15 +1402,15 @@ Use the Inventory Control report options windows to create sorting, restriction,
 
 6. Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-7. Choose Email Options to enter email options for the report option. Once the email options are set up, you’ll be able to send the report in an email message from this window by choosing Email. You can also send this report from any list view where the report option is displayed.
+7. Choose Email Options to enter email options for the report option. Once the email options are set up, you'll be able to send the report in an email message from this window by choosing Email. You can also send this report from any list view where the report option is displayed.
 
 8. Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
 
 For more information about printing report options, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
-9. To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
+9. To print the report option from the report options window, choose Print before saving it. If you don't want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
-#### Microsoft SQL Server® Reporting Services reports for Inventory Control
+#### Microsoft SQL Server&reg; Reporting Services reports for Inventory Control
 
 You can view Inventory Control Reporting Services reports from the Reporting Services Reports list. If you are using Reporting Services 2008, inventory metrics for your home page also appear in the Reporting Services Reports list. You can access the Reporting Services Reports list from the navigation pane or from an area page in the Microsoft Dynamics GP application window. This report list appears if you specified the location of your Reporting Services reports using the Reporting Tools Setup window. For more information, see your System Setup Guide (Help \>\> Contents \>\> select Setting up the System).
 
@@ -1440,21 +1440,21 @@ This part of the documentation contains the procedures you need for maintaining 
 
 The following information is discussed:
 
-- *Chapter 31, “Item cost adjustments,”* contains information about updating cost information on posted purchase receipts, and about updating average or standard cost information for an item.
+- *Chapter 31, "Item cost adjustments,"* contains information about updating cost information on posted purchase receipts, and about updating average or standard cost information for an item.
 
-- *Chapter 32, “Standard pricing wizards,”* describes how you can use wizards to work with price list records, if you’re using standard pricing. You can add, copy, update, and remove price lists. You also can assign a currency to a range of items, if you’re using Multicurrency Management.
+- *Chapter 32, "Standard pricing wizards,"* describes how you can use wizards to work with price list records, if you're using standard pricing. You can add, copy, update, and remove price lists. You also can assign a currency to a range of items, if you're using Multicurrency Management.
 
-- *Chapter 33, “Extended pricing utilities,”* contains information about utilities you can use to transfer and remove price sheets.
+- *Chapter 33, "Extended pricing utilities,"* contains information about utilities you can use to transfer and remove price sheets.
 
-- *Chapter 34, “History utilities,”* includes information about removing fiscal- and calendar-year history, as well as removing other inventory history information: for transactions, distributions, posting journals, and stock counts.
+- *Chapter 34, "History utilities,"* includes information about removing fiscal- and calendar-year history, as well as removing other inventory history information: for transactions, distributions, posting journals, and stock counts.
 
-- *Chapter 35, “Reconciling inventory records,”* explains how you can reconcile inventory records so posted quantity information matches actual inventory levels.
+- *Chapter 35, "Reconciling inventory records,"* explains how you can reconcile inventory records so posted quantity information matches actual inventory levels.
 
-- *Chapter 36, “Inventory Control setup changes,”* contains information about changing the number of decimal places used to track currency and quantity information for items. You also can change the valuation method assigned to an item, or replace the buyer or planner IDs that have been assigned in resource planning windows. You also can remove bins from sites, from item-site combinations, or both.
+- *Chapter 36, "Inventory Control setup changes,"* contains information about changing the number of decimal places used to track currency and quantity information for items. You also can change the valuation method assigned to an item, or replace the buyer or planner IDs that have been assigned in resource planning windows. You also can remove bins from sites, from item-site combinations, or both.
 
 ### Chapter 31: Item cost adjustments
 
-You might need to adjust the costs of inventoried items in certain circumstances. For example, if you learn that the cost of an item in a posted transaction was entered incorrectly, you’ll want to correct the information.
+You might need to adjust the costs of inventoried items in certain circumstances. For example, if you learn that the cost of an item in a posted transaction was entered incorrectly, you'll want to correct the information.
 
 Certain situations also can cause inventory to be revalued. Those situations and their effect on accounts are included in this document.
 
@@ -1489,7 +1489,7 @@ Use the Inventory Adjust Costs window to change the cost information for a purch
 
 **To see transactions for a specified period** Mark From, then enter starting and ending dates.
 
-Once you’ve entered a range, detailed information for all receipts within the range are displayed in the scrolling window.
+Once you've entered a range, detailed information for all receipts within the range are displayed in the scrolling window.
 
 5. Find a transaction that has incorrect cost information. In the Cost column for the transaction line, enter the correct cost.
 
@@ -1515,7 +1515,7 @@ The average cost of an item will be recalculated under the following situations.
 
 - Using the Inventory Adjust Costs window to change the cost of a purchase receipt
 
-- Closing a purchase order line item when you haven’t invoiced the entire quantity of the item
+- Closing a purchase order line item when you haven't invoiced the entire quantity of the item
 
 - Posting a purchase order return
 
@@ -1550,9 +1550,9 @@ An adjusting transaction will be created for updating Inventory and General Ledg
 
 ### Chapter 32: Standard pricing wizards
 
-Inventory Control includes a series of wizards you can use to work with item price lists if you’re using standard pricing. You can add a price list to a group of items, copy a price list from one item to another, and so on.
+Inventory Control includes a series of wizards you can use to work with item price lists if you're using standard pricing. You can add a price list to a group of items, copy a price list from one item to another, and so on.
 
-*For information about utilities available if you’re using extended pricing, refer to Chapter 33, “Extended pricing utilities.”*
+*For information about utilities available if you're using extended pricing, refer to Chapter 33, "Extended pricing utilities."*
 
 Most of the information you need to use a wizard is included in the window, but you can refer to this information as needed for more information.
 
@@ -1587,7 +1587,7 @@ To use any of the price list wizards available in Microsoft Dynamics GP, you ope
 
 2. Choose Next to open the Price List Utilities Main Menu.
 
-*If you’re not using Multicurrency Management, the last option—Assign Currency Wizard—won’t be displayed.*
+*If you're not using Multicurrency Management, the last option—Assign Currency Wizard—won't be displayed.*
 
 3. Select the price list procedure to complete.
 
@@ -1607,25 +1607,25 @@ You can use a price list wizard to add price list information to several items a
 
 You can end a price list wizard session at any time by choosing Cancel. Your records will be unchanged until you choose Finish in the last price list wizard window.
 
-*Use this procedure only if you’re using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, “Extended pricing utilities.”*
+*Use this procedure only if you're using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, "Extended pricing utilities."*
 
 **To add a price list to several items:**
 
 1. Refer to *Getting started with a price list wizard*, selecting the option for adding a price list to several items. The Add Price List Wizard - Price Method window opens.
 
-2. Select a price method from the list. All items you’re adding a price list to must share the same price method. Choose Next.
+2. Select a price method from the list. All items you're adding a price list to must share the same price method. Choose Next.
 
 *To add price list records for multiple currencies to an item, you must be using Multicurrency Management and you must select Currency Amount or Percent of List for the price method, and the items must already have the appropriate currencies assigned to them.*
 
-The window that appears depends on whether you’re using multicurrency features and the price method you selected.
+The window that appears depends on whether you're using multicurrency features and the price method you selected.
 
-**If you’re using Multicurrency Management and you selected percent of list or currency amount** The Add Price List Wizard - Currency and Price Level window opens.
+**If you're using Multicurrency Management and you selected percent of list or currency amount** The Add Price List Wizard - Currency and Price Level window opens.
 
-**If you’re not using multicurrency features** The Add Price List Wizard - Price Level window opens.
+**If you're not using multicurrency features** The Add Price List Wizard - Price Level window opens.
 
 ![](media/5cd1f027687470fbc824f114374c4e14.jpg)
 
-3. Enter or select a currency (if you’re using Multicurrency Management and have selected a price method of Current Amount or Percent of List) and price level. Choose Next.
+3. Enter or select a currency (if you're using Multicurrency Management and have selected a price method of Current Amount or Percent of List) and price level. Choose Next.
 
 The window that appears depends on the price method you selected earlier.
 
@@ -1635,19 +1635,19 @@ The window that appears depends on the price method you selected earlier.
 
 ![](media/af90614fcd54c262d4bc2ab818f16479.jpg)
 
-4. Enter information to calculate the default price for the items you’re adding the price list to.
+4. Enter information to calculate the default price for the items you're adding the price list to.
 
 **If you selected currency amount earlier** Enter an amount to be the default price for the items. Choose Next.
 
 **If you selected another price method** Enter a default percentage to be used to calculate pricing for items. Choose Next.
 
-*This is default pricing for the items that you’re adding price lists to. Later, you can adjust the pricing for specific items in the group.*
+*This is default pricing for the items that you're adding price lists to. Later, you can adjust the pricing for specific items in the group.*
 
-5. In the Add Price List Wizard - Restrictions window, enter restrictions to define the items to be included in the group that you’re adding the price list to. You can add as many restrictions as you like, but you can use each range type only once. For example, you can define only one range of item numbers.
+5. In the Add Price List Wizard - Restrictions window, enter restrictions to define the items to be included in the group that you're adding the price list to. You can add as many restrictions as you like, but you can use each range type only once. For example, you can define only one range of item numbers.
 
 ![](media/eec7f923650251582aab4763c9fa4b85.jpg)
 
-You can use item numbers, descriptions, short descriptions, generic descriptions, class IDs, and price groups to define the group of items that you’re adding the price list to. *Refer to Items updated by price list wizards for more information.* Choose Next.
+You can use item numbers, descriptions, short descriptions, generic descriptions, class IDs, and price groups to define the group of items that you're adding the price list to. *Refer to Items updated by price list wizards for more information.* Choose Next.
 
 ![](media/fd662f1148d27e21b43b72df15fb0736.jpg)
 
@@ -1659,7 +1659,7 @@ You can use item numbers, descriptions, short descriptions, generic descriptions
 
 **To adjust the price for an item** Change the amount or percentage directly in the scrolling window. Choose Next.
 
-7. In the Add Price List Wizard - Finish window, review the summary of the price list modification you’re making.
+7. In the Add Price List Wizard - Finish window, review the summary of the price list modification you're making.
 
 ![](media/a42adfe0435da5d3a0daa6dfd3285b46.jpg)
 
@@ -1667,11 +1667,11 @@ Choose Finish to add the price lists to the items. The Add Price List Audit Repo
 
 ### Updating price lists for several items
 
-You can update price list records for a group of items that share a common price method. To be updated, the combination of currency, price level, unit of measure, and quantity breaks must already exist in each item’s price list.
+You can update price list records for a group of items that share a common price method. To be updated, the combination of currency, price level, unit of measure, and quantity breaks must already exist in each item's price list.
 
 You can end a price list wizard session at any time by choosing Cancel. Your records will be unchanged until you choose Finish in the last price list wizard window.
 
-*Use this procedure only if you’re using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, “Extended pricing utilities.”*
+*Use this procedure only if you're using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, "Extended pricing utilities."*
 
 **To update price lists for several items:**
 
@@ -1683,13 +1683,13 @@ You can end a price list wizard session at any time by choosing Cancel. Your rec
 
 **To adjust prices by a percentage** Mark Percentage and enter the percentage change. Choose Next.
 
-**To adjust prices by a fixed percentage** Mark Fixed Percentage and enter the percentage change. Choose Next. This option isn’t available if you’re using the Currency Amount price method.
+**To adjust prices by a fixed percentage** Mark Fixed Percentage and enter the percentage change. Choose Next. This option isn't available if you're using the Currency Amount price method.
 
-**To adjust prices by a fixed amount** This option is available only if you’re using the Currency Amount price method. Mark Fixed Amount and enter the amount of increase or decrease. Choose Next.
+**To adjust prices by a fixed amount** This option is available only if you're using the Currency Amount price method. Mark Fixed Amount and enter the amount of increase or decrease. Choose Next.
 
 *Refer to Fixed percentages versus percentages for more information.*
 
-4. If you selected the Currency Amount price method, use the Update Price List Wizard - Rounding Information window to enter and select rounding options for the records you’re updating. If you don’t want rounding to occur, select None for the Round Policy. Choose Next.
+4. If you selected the Currency Amount price method, use the Update Price List Wizard - Rounding Information window to enter and select rounding options for the records you're updating. If you don't want rounding to occur, select None for the Round Policy. Choose Next.
 
 ![](media/6c13fc5387a78a3eaf216fd748da2b27.jpg)
 
@@ -1699,7 +1699,7 @@ You can end a price list wizard session at any time by choosing Cancel. Your rec
 
 ![](media/d0030d26a70f259a770dcf78049d8ce2.jpg)
 
-When you’re updating price list records for a group of items, you can choose the specific items and the specific price list records to be updated. For example, if you’re using Multicurrency Management, you might want to update all price lists for a specific currency. To do this, you’d include that currency in the restrictions list.
+When you're updating price list records for a group of items, you can choose the specific items and the specific price list records to be updated. For example, if you're using Multicurrency Management, you might want to update all price lists for a specific currency. To do this, you'd include that currency in the restrictions list.
 
 *Refer to Items updated by price list wizards for more information.*
 
@@ -1713,7 +1713,7 @@ When you’re updating price list records for a group of items, you can choose t
 
 **To adjust the price for an item** Change the amount or percentage directly in the scrolling window. Choose Next.
 
-7. In the Update Price List Wizard - Finish window, review the summary of the price list modification you’re making.
+7. In the Update Price List Wizard - Finish window, review the summary of the price list modification you're making.
 
 ![](media/f7187498cbb5034e754e43c2b3c43686.jpg)
 
@@ -1721,7 +1721,7 @@ Choose Finish to update the price lists. The Update Price List Audit Report auto
 
 ### Fixed percentages versus percentages
 
-If you’re updating price lists that have a price method based on a percentage—any price method other than Currency Amount—you can choose to specify either a fixed percentage or a percentage change. If you use the Fixed Percent update option, the percentage you enter is added to the percentage in each price list. If you use the Percent update option, the percentage in each price list is multiplied by the percentage you enter, and the result is added to the percentage in each price list.
+If you're updating price lists that have a price method based on a percentage—any price method other than Currency Amount—you can choose to specify either a fixed percentage or a percentage change. If you use the Fixed Percent update option, the percentage you enter is added to the percentage in each price list. If you use the Percent update option, the percentage in each price list is multiplied by the percentage you enter, and the result is added to the percentage in each price list.
 
 Refer to the table for information about how those options will affect your price lists.
 
@@ -1733,7 +1733,7 @@ Refer to the table for information about how those options will affect your pric
 
 ### Rounding calculations for updating price lists
 
-You can use rounding options to make your pricing seem more even and consistent if you’re using the Currency Amount price method. Refer to the table for information about how different rounding options will affect pricing for items.
+You can use rounding options to make your pricing seem more even and consistent if you're using the Currency Amount price method. Refer to the table for information about how different rounding options will affect pricing for items.
 
 | **Calculated price** | **Rounding policy** | **Round option** | **Round amount** | **New price** |
 |----------------------|---------------------|------------------|------------------|---------------|
@@ -1751,7 +1751,7 @@ You can copy a price list from one item to others as needed, as long as all item
 
 You can end a price list wizard session at any time by choosing Cancel. Your records will be unchanged until you choose Finish in the last price list wizard window.
 
-*Use this procedure only if you’re using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, “Extended pricing utilities.”*
+*Use this procedure only if you're using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, "Extended pricing utilities."*
 
 **To copy a price list from one item to others:**
 
@@ -1761,7 +1761,7 @@ You can end a price list wizard session at any time by choosing Cancel. Your rec
 
 9. Enter or select an item number that includes the price list information you want to copy. Choose Next.
 
-10. In the Copy Price List Wizard - Restrictions window, choose the restrictions that define which items you’re adding the price list to. You can add as many restrictions as you like, but you can use each range type only once. For example, you can define only one range of item numbers. Choose Next.
+10. In the Copy Price List Wizard - Restrictions window, choose the restrictions that define which items you're adding the price list to. You can add as many restrictions as you like, but you can use each range type only once. For example, you can define only one range of item numbers. Choose Next.
 
 *Refer to Items updated by price list wizards for more information.*
 
@@ -1769,7 +1769,7 @@ You can end a price list wizard session at any time by choosing Cancel. Your rec
 
 11. In the Copy Price List Wizard - Preview window, review the information in the scrolling window. Only items that had the same unit of measure schedule as the source item number, and that met all the restrictions you defined are listed in the scrolling window. Make any modifications as needed.
 
-*Be sure to carefully review the information in the preview window, because the price lists of all destination items are deleted before the copying process begins. You must be sure that the Include option is cleared for all price lists that you don’t want to change.*
+*Be sure to carefully review the information in the preview window, because the price lists of all destination items are deleted before the copying process begins. You must be sure that the Include option is cleared for all price lists that you don't want to change.*
 
 ![](media/0b9b2bc1e1693352f530b5cebabf70ec.jpg)
 
@@ -1777,7 +1777,7 @@ You can end a price list wizard session at any time by choosing Cancel. Your rec
 
 **To adjust the price for an item** Change the amount or percentage directly in the scrolling window. Choose Next.
 
-12. In the Copy Price List Wizard - Finish window, review the summary of the price list modification you’re making.
+12. In the Copy Price List Wizard - Finish window, review the summary of the price list modification you're making.
 
 ![](media/93e3bc8f072bfe359536f85181254f5c.jpg)
 
@@ -1785,7 +1785,7 @@ Choose Finish to copy the price list of the source item to the other items. The 
 
 ### Removing price list records from several items
 
-You can remove price list records from several items, if needed. For example, suppose you’ve always offered special pricing to employees for all products, but then you decide to cut the program, offering special pricing to employees only for certain items. You can use the Remove Price List Wizard to remove the Employee price list records from certain items.
+You can remove price list records from several items, if needed. For example, suppose you've always offered special pricing to employees for all products, but then you decide to cut the program, offering special pricing to employees only for certain items. You can use the Remove Price List Wizard to remove the Employee price list records from certain items.
 
 *You can end a price list wizard session at any time by choosing Cancel. Your records will be unchanged until you choose Finish in the last price list wizard window.*
 
@@ -1799,11 +1799,11 @@ You can remove price list records from several items, if needed. For example, su
 
 *Refer to Items updated by price list wizards for more information.*
 
-3. In the Remove Price List Wizard - Preview window, review the information in the scrolling window. To print a preview report, choose File \>\> Print or choose the print icon button. Clear the check box at the beginning of the scrolling window lines that you don’t want to be removed. Choose Next.
+3. In the Remove Price List Wizard - Preview window, review the information in the scrolling window. To print a preview report, choose File \>\> Print or choose the print icon button. Clear the check box at the beginning of the scrolling window lines that you don't want to be removed. Choose Next.
 
 ![](media/e7b139cdeaca32ca47acde6aad1a5d8e.jpg)
 
-4. In the Remove Price List Wizard - Finish window, review the summary of the price list modification you’re making.
+4. In the Remove Price List Wizard - Finish window, review the summary of the price list modification you're making.
 
 ![](media/e0d1c6c2537671008876511e2670bea4.jpg)
 
@@ -1813,11 +1813,11 @@ Choose Finish to remove the price list records. The Remove Price List Audit Repo
 
 Before you can add price list information in multiple currencies to items or purchase items in a different currency, you must assign the alternate currencies to the items. You can use this price list wizard to add a currency to several items at once.
 
-*You can assign a currency to a group of items only if you’re using Multicurrency Management.*
+*You can assign a currency to a group of items only if you're using Multicurrency Management.*
 
 You can end a price list wizard session at any time by choosing Cancel. Your records will be unchanged until you choose Finish in the last price list wizard window.
 
-*Use this procedure only if you’re using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, “Extended pricing utilities.”*
+*Use this procedure only if you're using standard pricing. For information about pricing utilities you can use with extended pricing, refer to Chapter 33, "Extended pricing utilities."*
 
 **To assign a currency to a group of items:**
 
@@ -1833,11 +1833,11 @@ You can end a price list wizard session at any time by choosing Cancel. Your rec
 
 **To use a different number of currency decimals** Mark Enter and select the number of currency decimals to be used.
 
-4. Enter an initial list price for the items you’re assigning the currency to. Choose Next.
+4. Enter an initial list price for the items you're assigning the currency to. Choose Next.
 
-*This is the default list price for the items that you’re adding a currency to. Later, you can adjust the list price for specific items in the group.*
+*This is the default list price for the items that you're adding a currency to. Later, you can adjust the list price for specific items in the group.*
 
-5. In the Assign Currency Wizard - Select Restrictions window, choose the items to be included in the group that you’re assigning the currency to. You can add as many restrictions as you like, but you can use each range type only once. For example, you can define only one range of item numbers. Choose Next.
+5. In the Assign Currency Wizard - Select Restrictions window, choose the items to be included in the group that you're assigning the currency to. You can add as many restrictions as you like, but you can use each range type only once. For example, you can define only one range of item numbers. Choose Next.
 
 *Refer to Items updated by price list wizards for more information.*
 
@@ -1849,7 +1849,7 @@ To print a preview report, choose File \>\> Print or choose the print icon butto
 
 ![](media/5d29d5409479a5c76b900f1b4c1f6417.jpg)
 
-*If a currency is already assigned to an item, that item won’t appear in the scrolling window.*
+*If a currency is already assigned to an item, that item won't appear in the scrolling window.*
 
 **To adjust the number of currency decimals** Select a different number from the Decimals list in the appropriate scrolling window line.
 
@@ -1859,7 +1859,7 @@ To print a preview report, choose File \>\> Print or choose the print icon butto
 
 Choose Next.
 
-7. In the Assign Currency Wizard - Finish window, review the summary of the price list modification you’re making.
+7. In the Assign Currency Wizard - Finish window, review the summary of the price list modification you're making.
 
 ![](media/73e5a82defea1a73a23f42f285c6082a.jpg)
 
@@ -1867,31 +1867,31 @@ Choose Finish to assign currencies to items. The Assign Currency Audit Report au
 
 ### Items updated by price list wizards
 
-When you’re completing any of the price list wizards, you have the option to select groups of items to change. For example, you can add a price list to several items, or copy a price list from an existing item to several other items.
+When you're completing any of the price list wizards, you have the option to select groups of items to change. For example, you can add a price list to several items, or copy a price list from an existing item to several other items.
 
 You can select a large group of items using a restrictions window. Each of the price list wizards includes a restrictions window. The Add Price List Wizard - Restrictions window—shown here—is typical. You can use the window to select groups of items based on item numbers, class IDs, and other attributes. Items that meet all restrictions in the window are included in the list of candidate items to be changed.
 
 ![](media/eec7f923650251582aab4763c9fa4b85.jpg)
 
-Depending on the price list wizard you’re using, however, the items might also need to meet other criteria before the items can be updated. For example, you can add a price list only to items that have the same price method as the price list you’re adding.
+Depending on the price list wizard you're using, however, the items might also need to meet other criteria before the items can be updated. For example, you can add a price list only to items that have the same price method as the price list you're adding.
 
 Refer to the table for more information about the criteria items must meet to be updated.
 
-| **If you’re using this price list wizard...** | **... items must meet these requirements:**                                                                                           |
+| **If you're using this price list wizard...** | **... items must meet these requirements:**                                                                                           |
 |-----------------------------------------------|-------------------------------------------------------------------------------------|
 | Adding a price list                           | The item has the same price method as selected in the wizard.                      |
 | Copying a price list                          | The destination items must have the same unit of measure schedule as the source item|
 | Updating a price list                         | The item has the same price method as selected in the wizard.                      |
-| Removing a price list                         | The combination of currency, price level, unit of measure, and quantity breaks to be updated already exists in the item’s price list. |
-| Assigning a currency                          | The currency can’t already be assigned to the item.                                |
+| Removing a price list                         | The combination of currency, price level, unit of measure, and quantity breaks to be updated already exists in the item's price list. |
+| Assigning a currency                          | The currency can't already be assigned to the item.                                |
 
-If you’re using Multicurrency Management, the currency must already be assigned to the item.
+If you're using Multicurrency Management, the currency must already be assigned to the item.
 
-The unit of measure can’t already exist for the currency-price level combination.
+The unit of measure can't already exist for the currency-price level combination.
 
 The source item price list and destination item must have at least one currency in common.
 
-The combination of currency, price level, unit of measure, and quantity breaks to be updated already exists in the item’s price list.
+The combination of currency, price level, unit of measure, and quantity breaks to be updated already exists in the item's price list.
 
 ### Chapter 33: Extended pricing utilities
 
@@ -1911,9 +1911,9 @@ You can transfer customer, prospect, or price book assignments—or all of these
 
 To prevent some pricing errors that could occur, there are restrictions on transfers to the base price book.
 
-**Items** If the price sheet details for an item are not net-price details, that information can’t be transferred to the base price book. For example, you can’t transfer promotional price information to the base price book. This is because the base price book contains only net prices.
+**Items** If the price sheet details for an item are not net-price details, that information can't be transferred to the base price book. For example, you can't transfer promotional price information to the base price book. This is because the base price book contains only net prices.
 
-**Assignments** Non-net price sheets can’t be assigned to the base price book by transferring assignments.
+**Assignments** Non-net price sheets can't be assigned to the base price book by transferring assignments.
 
 **To transfer price sheet details:**
 
@@ -1926,7 +1926,7 @@ To prevent some pricing errors that could occur, there are restrictions on trans
 
 3. Enter or select a destination price sheet ID. If the price sheet does not already exist, it will be created when you transfer information.
 
-4. If you’re using Multicurrency Management and the destination price sheet will be a new price sheet, enter or select the currency for the new price sheet.
+4. If you're using Multicurrency Management and the destination price sheet will be a new price sheet, enter or select the currency for the new price sheet.
 
 If the currency you select is not the same as the currency of the source price sheet, Exchange Rate and Calculation Method fields will appear. If you have set up an exchange table for the currency conversion, that information will be displayed in the fields. You can accept the default values, or change them.
 
@@ -1948,7 +1948,7 @@ Refer to the Multicurrency Management documentation for more information about e
 
 If you marked Transfer Price Sheet Item Details, choose what information will be transferred and how it will affect the source price sheet.
 
-**Transfer Overwrite Mode** Mark Overwrite Existing Items if the new price sheet information should replace existing price sheet information. Mark New Item Only if information only about items that aren’t already on the destination price sheet should be transferred.
+**Transfer Overwrite Mode** Mark Overwrite Existing Items if the new price sheet information should replace existing price sheet information. Mark New Item Only if information only about items that aren't already on the destination price sheet should be transferred.
 
 **Items to Transfer** Mark All Items to transfer information about all items from the source price list to the destination price list. Mark Active Items to transfer only price sheet lines that are active. Mark Selected Items to transfer only price sheet lines that you specify. Refer to step 8 for information about specifying the lines to transfer.
 
@@ -1993,7 +1993,7 @@ Use the Mass Remove Price Sheets window to remove price sheet information from I
 
 History records provide useful information for audit purposes, and can be maintained for an unlimited number of years. In Inventory Control, history can be kept for calendar or fiscal years. You can keep history for transactions, posting journals, and account distributions (debits and credits that have been posted to posting accounts). When you remove history records, the system removes the records only for the year you specify.
 
-*For more information about history, refer to Chapter 17, “History.”*
+*For more information about history, refer to Chapter 17, "History."*
 
 The following information is discussed:
 
@@ -2015,7 +2015,7 @@ The following information is discussed:
 
 Use the Remove Inventory Calendar-Fiscal Summary History window to remove calendar- or fiscal-year history.
 
-Cost, quantity, and sales information is recorded for each item you’ve chosen to keep history for. If you’re keeping calendar-year history, the information is displayed in month-by-month summaries. If you’re keeping fiscal-year history, the information is displayed in the fiscal periods defined in the Fiscal Periods Setup window.
+Cost, quantity, and sales information is recorded for each item you've chosen to keep history for. If you're keeping calendar-year history, the information is displayed in month-by-month summaries. If you're keeping fiscal-year history, the information is displayed in the fiscal periods defined in the Fiscal Periods Setup window.
 
 You can remove calendar-year history, fiscal-year history, or both.
 
@@ -2031,15 +2031,15 @@ You can remove calendar-year history, fiscal-year history, or both.
 
 3. Create range restrictions to define the group of history records to be removed. You can add as many restrictions as you like, but you can use each range only once. For example, you can define only one range of item numbers.
 
-*Only history records that meet all the restrictions you’ve defined and added to the list will be removed. If you don’t define any restrictions, all calendar-year or fiscal-year history records will be removed.*
+*Only history records that meet all the restrictions you've defined and added to the list will be removed. If you don't define any restrictions, all calendar-year or fiscal-year history records will be removed.*
 
 4. Decide whether to remove history now, print a report based on the records, or both.
 
-*Once history is removed for an item, you can’t generate the Sales Summary Report for the item.*
+*Once history is removed for an item, you can't generate the Sales Summary Report for the item.*
 
 5. Choose Process to remove history, print the report or both.
 
-*When you’ve finished removing history records, you can shrink the Inventory Sales Summary History table to free disk space. Refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.*
+*When you've finished removing history records, you can shrink the Inventory Sales Summary History table to free disk space. Refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.*
 
 ### Removing inventory transaction history
 
@@ -2056,15 +2056,15 @@ Transaction history is detailed information about transactions posted in the Inv
 
 2. Create range restrictions to define the group of history records to be removed. You can add as many restrictions as you like, but you can use each range only once. For example, you can define only one range of item numbers.
 
-*Only history records that meet all the restrictions you’ve defined and added to the list will be removed.*
+*Only history records that meet all the restrictions you've defined and added to the list will be removed.*
 
 3. Decide whether to remove transaction and transaction distribution history, print a report based on the records, or both. You can mark as many options as you like.
 
-*Once you remove transaction history for a range of items, you can’t print the Transaction History Report or reprint journals for those items.*
+*Once you remove transaction history for a range of items, you can't print the Transaction History Report or reprint journals for those items.*
 
 4. Choose Process to remove history, print the report, or both.
 
-*When you’ve finished removing history records, you can shrink the Transaction History table to free disk space. Refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.*
+*When you've finished removing history records, you can shrink the Transaction History table to free disk space. Refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.*
 
 ### Removing inventory distribution history
 
@@ -2079,15 +2079,15 @@ Distribution history is a detailed record of how Inventory Control transactions 
 
 2. Create range restrictions to define the group of history records to be removed. You can add as many restrictions as you like, but you can use each range only once. For example, you can define only one range of item numbers.
 
-*Only history records that meet all the restrictions you’ve defined and added to the list will be removed.*
+*Only history records that meet all the restrictions you've defined and added to the list will be removed.*
 
 3. Decide whether to remove history, print a report based on the records, or both.
 
-*Once you remove transaction history for a range of items, you can’t print the Distribution History Report for those items.*
+*Once you remove transaction history for a range of items, you can't print the Distribution History Report for those items.*
 
 4. Choose Process to remove history, print the report, or both.
 
-*When you’ve finished removing history records, you can shrink the Inventory Transaction History table to free disk space. Refer to your System Administrator’s Guide for more information.*
+*When you've finished removing history records, you can shrink the Inventory Transaction History table to free disk space. Refer to your System Administrator's Guide for more information.*
 
 ### Removing inventory journal history
 
@@ -2102,11 +2102,11 @@ Use the Remove Inventory Posting Journal History window to remove inventory post
 
 2. Create range restrictions to define the group of history records to be removed. You can add as many restrictions as you like, but you can use each range only once. For example, you can define only one range of item numbers.
 
-*Only history records that meet all the restrictions you’ve defined and added to the list will be removed.*
+*Only history records that meet all the restrictions you've defined and added to the list will be removed.*
 
 3. Decide if you want to remove history now, print a report based on the records, or both.
 
-*Once you remove transaction history for a range of items, you can’t print the Transaction Posting Journal–Reprint or the Transfer Posting Journal–Reprint reports for those items.*
+*Once you remove transaction history for a range of items, you can't print the Transaction Posting Journal–Reprint or the Transfer Posting Journal–Reprint reports for those items.*
 
 4. Choose Process to remove history, print the report, or both.
 
@@ -2123,7 +2123,7 @@ You can use the Remove Stock Count History window to remove information about th
 
 2. Create range restrictions to define the stock count records to be removed. You can add as many restrictions as you like, but you can use each range only once. For example, you can define only one range of stock count start dates.
 
-*Only stock count records that meet all the restrictions you’ve defined and added to the list will be removed.*
+*Only stock count records that meet all the restrictions you've defined and added to the list will be removed.*
 
 3. Decide if you want to remove history now, print a report based on the records, or both.
 
@@ -2167,13 +2167,13 @@ Reconciling is a process that recalculates inventory quantities for a range of i
 
 - Your data has been damaged.
 
-- You’ve changed the number of decimal places tracked for an item.
+- You've changed the number of decimal places tracked for an item.
 
-- You’re preparing to complete year-end closing tasks.
+- You're preparing to complete year-end closing tasks.
 
-- You’re preparing to use multiple bins.
+- You're preparing to use multiple bins.
 
-You also might need to reconcile inventory quantities if inventory reports show conflicting quantity information, or if you suspect that quantities might not be in balance. However, you shouldn’t have to reconcile inventory quantities unless your data has been damaged, or some other unusual problem has occurred.
+You also might need to reconcile inventory quantities if inventory reports show conflicting quantity information, or if you suspect that quantities might not be in balance. However, you shouldn't have to reconcile inventory quantities unless your data has been damaged, or some other unusual problem has occurred.
 
 The following information is discussed:
 
@@ -2183,41 +2183,41 @@ The following information is discussed:
 
 ### Effects of reconciling inventory records
 
-When quantities are reconciled, the quantities recorded for the item will be reset to match purchase receipt and serial number or lot number quantities. Purchase receipts won’t be removed during the reconcile procedures. Item quantities for unposted transactions are included in the reconciliation.
+When quantities are reconciled, the quantities recorded for the item will be reset to match purchase receipt and serial number or lot number quantities. Purchase receipts won't be removed during the reconcile procedures. Item quantities for unposted transactions are included in the reconciliation.
 
 The following rules also apply.
 
 **Multiple bins**
 
-If you’re using multiple bins, the quantities in the bins can be adjusted to match the quantity for the site. For example, suppose that the receipt quantity of Item A at the Warehouse is 45, the quantity at the Warehouse site is 50, and the total of the bin quantities for the item-site combination is 51. In this case, the site quantity would be adjusted to 45 and the bin quantity would be adjusted by six units.
+If you're using multiple bins, the quantities in the bins can be adjusted to match the quantity for the site. For example, suppose that the receipt quantity of Item A at the Warehouse is 45, the quantity at the Warehouse site is 50, and the total of the bin quantities for the item-site combination is 51. In this case, the site quantity would be adjusted to 45 and the bin quantity would be adjusted by six units.
 
 However, the allocated quantities for bins are not reconciled to the allocated quantities for the site, but to the allocated quantities in unposted transactions. This is because items can be allocated at the site level before they are allocated at the bin level. Generally, items are allocated at the site level at the instant the allocation occurs, but items are allocated at the bin level when the fulfillment of the allocation occurs.
 
-After you mark the option to enable multiple bins, you should reconcile inventory records. Doing so will create a bin for every item-site quantity that hasn’t already been assigned to a bin. For more information about what happens when you reconcile inventory after marking the options, refer to *Handling existing quantities for multiple bins*.
+After you mark the option to enable multiple bins, you should reconcile inventory records. Doing so will create a bin for every item-site quantity that hasn't already been assigned to a bin. For more information about what happens when you reconcile inventory after marking the options, refer to *Handling existing quantities for multiple bins*.
 
 **Serial and lot numbers**
 
-If serial numbers or lot numbers are missing, new serial numbers or lot numbers will be added during the reconciliation process. If you don’t want to use the numbers that have been added, you can enter decrease transactions to “back out” those changes, and then enter increase transactions for the correct numbers in the Item Transaction Entry window.
+If serial numbers or lot numbers are missing, new serial numbers or lot numbers will be added during the reconciliation process. If you don't want to use the numbers that have been added, you can enter decrease transactions to "back out" those changes, and then enter increase transactions for the correct numbers in the Item Transaction Entry window.
 
 *Refer to Entering an adjustment or variance transaction for more information.*
 
 **Purchase order information**
 
-Items entered on drop-ship purchase orders or drop-ship blanket purchase orders are reconciled to the Drop-Ship PO quantity in Inventory Control. The on-order quantities for items on a drop-ship purchase order or a drop-ship blanket purchase order aren’t reconciled. The remaining on-order quantity of released and change order purchase order line items and blanket line items are reconciled to the on-order quantity for the all-site of an item and each item-site combination of an item.
+Items entered on drop-ship purchase orders or drop-ship blanket purchase orders are reconciled to the Drop-Ship PO quantity in Inventory Control. The on-order quantities for items on a drop-ship purchase order or a drop-ship blanket purchase order aren't reconciled. The remaining on-order quantity of released and change order purchase order line items and blanket line items are reconciled to the on-order quantity for the all-site of an item and each item-site combination of an item.
 
-Blanket line items are included in the reconcile process. The control line item for blanket purchase orders and drop-ship blanket purchase orders aren’t included.
+Blanket line items are included in the reconcile process. The control line item for blanket purchase orders and drop-ship blanket purchase orders aren't included.
 
-If you’re using Purchase Order Processing, reconcile purchasing information using the Reconcile Purchasing Documents window before reconciling inventory quantities. It’s important that purchasing documents are correct because purchasing information might be altered and will be used when reconciling quantities for inventoried items.
+If you're using Purchase Order Processing, reconcile purchasing information using the Reconcile Purchasing Documents window before reconciling inventory quantities. It's important that purchasing documents are correct because purchasing information might be altered and will be used when reconciling quantities for inventoried items.
 
 **Sales order information**
 
-If you’re using Sales Order Processing, you also should reconcile that module before reconciling inventory.
+If you're using Sales Order Processing, you also should reconcile that module before reconciling inventory.
 
 ### Reconciling inventory records
 
 You can use the Reconcile Inventory Quantities window to reconcile inventory records.
 
-Before reconciling quantities in Inventory Control, back up all your company’s accounting data. You should reconcile modules in this order:
+Before reconciling quantities in Inventory Control, back up all your company's accounting data. You should reconcile modules in this order:
 
 - Sales Order Processing
 
@@ -2234,7 +2234,7 @@ Before reconciling quantities in Inventory Control, back up all your company’s
 
 2. Enter or select the range of item numbers to reconcile.
 
-3. If you’re reconciling inventory because you’ve changed the number of quantity decimals for an item, mark the Include Item History option so the item’s history records also are updated.
+3. If you're reconciling inventory because you've changed the number of quantity decimals for an item, mark the Include Item History option so the item's history records also are updated.
 
 4. Choose Process to reconcile inventory quantities.
 
@@ -2242,8 +2242,8 @@ Actual quantities and the quantities resulting from posted transactions are comp
 
 ### Chapter 36: Inventory Control setup changes
 
-When you define each item, you can specify the number of decimal places that should be tracked for the currency and quantity information of the item, and you select the valuation method to be used to track item costs. Once these selections are made, they aren’t often changed. You might need to change them, however, if an error was made during setup. You might want to change
-the number of decimal places used to track item quantities if an item’s base unit of measure has changed.
+When you define each item, you can specify the number of decimal places that should be tracked for the currency and quantity information of the item, and you select the valuation method to be used to track item costs. Once these selections are made, they aren't often changed. You might need to change them, however, if an error was made during setup. You might want to change
+the number of decimal places used to track item quantities if an item's base unit of measure has changed.
 
 The following information is discussed:
 
@@ -2267,9 +2267,9 @@ The following information is discussed:
 
 ### Changing currency or quantity decimal places for items
 
-Use the Change Decimal Places window to change the number of decimal places used for keeping quantity or currency amounts for items. You might need to complete this procedure if an item was set up improperly, or if you’re changing the units of measurement for an item.
+Use the Change Decimal Places window to change the number of decimal places used for keeping quantity or currency amounts for items. You might need to complete this procedure if an item was set up improperly, or if you're changing the units of measurement for an item.
 
-*If an item is on an unposted transaction, you can’t change its decimal place settings.*
+*If an item is on an unposted transaction, you can't change its decimal place settings.*
 
 **To change currency or quantity decimal places for items:**
 
@@ -2286,7 +2286,7 @@ When you mark the Change Quantity Decimal Places window, an alert message appear
 
 When you mark the Change Currency Decimal Places window, an alert message appears, warning that changing the number of currency decimal places will mean that prices are rounded or padded with zeros. If you choose to continue, you can refer to *Effects of changing decimal places for currencies for items* for more information.
 
-4. If you’re using Multicurrency Management, specify which currency the change will apply to.
+4. If you're using Multicurrency Management, specify which currency the change will apply to.
 
 5. Enter or select the range of items you want to change. You can select items by specifying a range of item numbers, descriptions, generic descriptions, and class IDs. You can set as many of the ranges as needed. If you enter more than one range restriction, Microsoft Dynamics GP changes the decimal places only for the items that meet all the selected criteria.
 
@@ -2300,7 +2300,7 @@ When you mark the Change Currency Decimal Places window, an alert message appear
 
 ### Handling effects of changing quantity decimals for items
 
-If you change quantity decimal places for an item, the unit of measure schedule, price list, and purchasing options for the item are cleared. You might need to create a new unit of measure schedule, if a suitable one doesn’t already exist. For each of the items with changed quantity decimal place settings, you must assign a unit of measure schedule, create a price list, and set purchasing options. Refer to the table for more information.
+If you change quantity decimal places for an item, the unit of measure schedule, price list, and purchasing options for the item are cleared. You might need to create a new unit of measure schedule, if a suitable one doesn't already exist. For each of the items with changed quantity decimal place settings, you must assign a unit of measure schedule, create a price list, and set purchasing options. Refer to the table for more information.
 
 | **To do this ...**                           | **...refer to this section:**             |
 |----------------------------------------------|-------------------------------------------|
@@ -2311,9 +2311,9 @@ If you change quantity decimal places for an item, the unit of measure schedule,
 
 ### Effects of changing decimal places for currencies for items
 
-If you change the number of decimal places used to keep currency information for an item, the effect of your change will depend on whether you’re increasing or decreasing the number of decimal places.
+If you change the number of decimal places used to keep currency information for an item, the effect of your change will depend on whether you're increasing or decreasing the number of decimal places.
 
-**If you’re decreasing the number of decimal places** All receipts are rounded, and all item records, purchase receipts, quantities, vendor information, and kits are updated. Refer to the table for information about how currency amounts are rounded when the number of decimal places is decreased.
+**If you're decreasing the number of decimal places** All receipts are rounded, and all item records, purchase receipts, quantities, vendor information, and kits are updated. Refer to the table for information about how currency amounts are rounded when the number of decimal places is decreased.
 
 | **Original amount** | **Rounded to**     | **Result** |
 |---------------------|--------------------|------------|
@@ -2321,11 +2321,11 @@ If you change the number of decimal places used to keep currency information for
 | .6045               | Two decimal places | .60        |
 | .6455               | Two decimal places | .65        |
 
-**If you’re increasing the number of decimal places** Zeros are added for all amounts on the purchase receipts. For example, moving from two to three decimal places would change cost information from \$4.57 to \$4.570.
+**If you're increasing the number of decimal places** Zeros are added for all amounts on the purchase receipts. For example, moving from two to three decimal places would change cost information from \$4.57 to \$4.570.
 
 ### Changing valuation methods
 
-You also can change the valuation method used for a single item or for a group of items—as long as the item or items aren’t on an unposted transaction. Refer to *Valuation methods* for more information.
+You also can change the valuation method used for a single item or for a group of items—as long as the item or items aren't on an unposted transaction. Refer to *Valuation methods* for more information.
 
 *You should use the Change Valuation Method window only when you want to correct an item record that was set up with the wrong valuation method. If you want to change valuation methods for other reasons, we recommend that you consult your tax adviser, because changing valuation methods has legal restrictions in some areas.*
 
@@ -2342,7 +2342,7 @@ If you change the valuation method for an item and then generate the historical 
 
 3. Enter or select the range of items you want to change. You can select items by specifying a range of item numbers, descriptions, generic descriptions, and class IDs. You can set as many of the ranges as needed. If you enter more than one range restriction, Microsoft Dynamics GP changes the valuation method only for the items that meet all the selected criteria.
 
-*You can change valuation methods only for those Sales Inventory or Discontinued items that aren’t on an unposted transaction.*
+*You can change valuation methods only for those Sales Inventory or Discontinued items that aren't on an unposted transaction.*
 
 4. You can choose File \>\> Print to generate the Valuation Method Change Audit report to verify the ranges before processing the changes.
 
@@ -2367,11 +2367,11 @@ Average Perpetual
 
 ### Removing bins
 
-If you’re using multiple bins, you can use the Remove Bins window to remove bins. You can remove them from the item-site combinations they’re assigned to, or from the sites entirely. You can remove all bins or a range of bins for all sites or for a range of sites. You also can choose to remove bins from all items or from a range of items.
+If you're using multiple bins, you can use the Remove Bins window to remove bins. You can remove them from the item-site combinations they're assigned to, or from the sites entirely. You can remove all bins or a range of bins for all sites or for a range of sites. You also can choose to remove bins from all items or from a range of items.
 
 To be removed, a bin must meet the following requirements:
 
-- The bin can’t be included in any pending (unposted) transactions.
+- The bin can't be included in any pending (unposted) transactions.
 
 - The item quantities of the bin must be zero.
 
@@ -2390,17 +2390,17 @@ To be removed, a bin must meet the following requirements:
 
 4. Choose the sites to remove bins from.
 
-5. If you’re removing bins from item-site combinations, choose the items to remove bins from.
+5. If you're removing bins from item-site combinations, choose the items to remove bins from.
 
 6. Choose Process. A progress window will display the progress of the process.
 
-7. When you’ve finished, close the window.
+7. When you've finished, close the window.
 
 ### Replacing all buyers or planners
 
-If you’ve assigned buyers or planners to sites or to item-site combinations, then you can use the Replace Resource Planning Buyer/Planner window to change all instances of one buyer with another buyer, or one planner with another.
+If you've assigned buyers or planners to sites or to item-site combinations, then you can use the Replace Resource Planning Buyer/Planner window to change all instances of one buyer with another buyer, or one planner with another.
 
-*This procedure affects only the buyer and planner selections made in the Item Resource Planning Maintenance window and the Resource Planning Site Maintenance window. It doesn’t affect any buyer or planner selections that might exist in Purchase Order Processing.*
+*This procedure affects only the buyer and planner selections made in the Item Resource Planning Maintenance window and the Resource Planning Site Maintenance window. It doesn't affect any buyer or planner selections that might exist in Purchase Order Processing.*
 
 **To replace all buyers or planners:**
 
@@ -2417,7 +2417,7 @@ If you’ve assigned buyers or planners to sites or to item-site combinations, t
 
 5. Choose Replace.
 
-If any records couldn’t be updated, the Replace Resource Buyer/Planner Exception report will be generated. The report will list all records that couldn’t be updated. You can change those using the Item Resource Planning Maintenance window or the Resource Planning Site Maintenance window, or you can repeat the replacement later, when other users are no longer working with the records that need to be changed.
+If any records couldn't be updated, the Replace Resource Buyer/Planner Exception report will be generated. The report will list all records that couldn't be updated. You can change those using the Item Resource Planning Maintenance window or the Resource Planning Site Maintenance window, or you can repeat the replacement later, when other users are no longer working with the records that need to be changed.
 
 6. Close the window.
 
@@ -2440,13 +2440,13 @@ You can use the Purchase Order Item Mass Update window to modify how items are s
 
 4. Choose the values to update. To select a value, mark the Update checkbox, and then enter the information that should be used for that value.
 
-For example, you can mark the Update checkbox for the Order Method value, and then select the order method that the items should have when they’re updated.
+For example, you can mark the Update checkbox for the Order Method value, and then select the order method that the items should have when they're updated.
 
-*Item information won’t be updated if the change would cause the item record to be invalid. Refer to Overview of the purchase order generator and How quantities are calculated for suggested purchase orders.*
+*Item information won't be updated if the change would cause the item record to be invalid. Refer to Overview of the purchase order generator and How quantities are calculated for suggested purchase orders.*
 
-5. Choose Process. A status window will display information about the records as they’re updated. When the changes are complete, a report destination window appears so you can select how the Purchase Order Generator Item Mass Update report is printed.
+5. Choose Process. A status window will display information about the records as they're updated. When the changes are complete, a report destination window appears so you can select how the Purchase Order Generator Item Mass Update report is printed.
 
-*The report won’t include information for items that have the Not Planned order method, but will include items that have the Discontinued item type.*
+*The report won't include information for items that have the Not Planned order method, but will include items that have the Discontinued item type.*
 
 ### Modifying lot number attributes
 
@@ -2477,15 +2477,15 @@ This part of the documentation includes information about Inventory Control rout
 
 The following information is discussed:
 
-- *Chapter 37, “ABC analysis,”* describes how you can perform an ABC analysis on inventoried items, so you can adjust your business practices to more closely monitor those items that are most important to your organization.
+- *Chapter 37, "ABC analysis,"* describes how you can perform an ABC analysis on inventoried items, so you can adjust your business practices to more closely monitor those items that are most important to your organization.
 
-- *Chapter 38, “Year-end closing,”* includes information about the tasks and procedures you need to complete to close your inventory records for a fiscal period or for a year.
+- *Chapter 38, "Year-end closing,"* includes information about the tasks and procedures you need to complete to close your inventory records for a fiscal period or for a year.
 
-- *Chapter 39, “Inventory control checklists,”* contains information about using Inventory Control Checklists.
+- *Chapter 39, "Inventory control checklists,"* contains information about using Inventory Control Checklists.
 
 ### Chapter 37: ABC analysis
 
-ABC analysis is a method of prioritizing items based on parameters that you specify. ABC analysis is based on the Pareto principle, a broad generalization that recognizes “predictable imbalance”—that, for example, 80 percent of the value of your inventory might come from 20 percent of the items. With ABC analysis, you can identify which items are most critical to your business, which are somewhat critical and which are least important. Then you can manage those items accordingly.
+ABC analysis is a method of prioritizing items based on parameters that you specify. ABC analysis is based on the Pareto principle, a broad generalization that recognizes "predictable imbalance"—that, for example, 80 percent of the value of your inventory might come from 20 percent of the items. With ABC analysis, you can identify which items are most critical to your business, which are somewhat critical and which are least important. Then you can manage those items accordingly.
 
 Inventory Control includes a wizard you can use to complete ABC analysis of Sales Inventory and Discontinued items. Most of the information you need to use a wizard is built into the windows, but you can refer to this information as needed.
 
@@ -2507,13 +2507,13 @@ The following information is discussed:
 
 - *ABC analysis and zero or negative item quantities*
 
-- *Modifying an item’s ABC code*
+- *Modifying an item's ABC code*
 
 - *Using ABC analysis information*
 
 ### ABC analysis overview
 
-You can sort items into A, B, and C classifications. “A” items are the most important items in your inventory. They should be tightly controlled, with accurate records. “B” items might be less controlled, with good records, and “C” items might have minimal records with periodic review. If the on-hand quantities and usage of some items is zero or negative, an ABC code doesn't need to be assigned to them.
+You can sort items into A, B, and C classifications. "A" items are the most important items in your inventory. They should be tightly controlled, with accurate records. "B" items might be less controlled, with good records, and "C" items might have minimal records with periodic review. If the on-hand quantities and usage of some items is zero or negative, an ABC code doesn't need to be assigned to them.
 
 ABC analysis helps you group the type of information that the ABC analysis of items will be based on. You can group items using the following options in the ABC Analysis Options window.
 
@@ -2582,7 +2582,7 @@ If you select Weighted Average, enter the weighting percentage for historical an
 
 A breakpoint is the boundary between two adjacent ABC classifications—for example, if you want A items to be those that reflect 80 percent of inventory value, 80 percent would be the breakpoint. Enter the percentages or amounts for the A and B breakpoints.
 
-*If you’re using percentages to define breakpoints, be sure to enter the percentage of inventory value. For example, if you want your A items to be those that make up 75 percent of your inventory valuation, you’d enter 75 as the A Breakpoint.*
+*If you're using percentages to define breakpoints, be sure to enter the percentage of inventory value. For example, if you want your A items to be those that make up 75 percent of your inventory valuation, you'd enter 75 as the A Breakpoint.*
 
 7. Decide if you want to preview the results of the analysis before having item records updated with new ABC codes.
 
@@ -2606,16 +2606,16 @@ Refer to the following table for more information.
 |-------------------------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Unit cost               | Not applicable   | If valuation method is Average Perpetual or Perpetual (LIFO or FIFO), then current cost is used. If valuation method is Periodic (LIFO or FIFO), then standard cost is used.                                                                                                                                        |
 | On-hand inventory value | Not applicable   | Unit cost x On-hand inventory quantity                                                                                                                                                                                                                                                                               |
-| Usage quantity          | Historical usage | Annual usage quantity is calculated from the last completed month or period plus all previous months or periods for the previous one year of sales and dependent usage (except current); or, all available information if a full year of information isn’t available. If no usage exists, the default value is zero. |
-|                         | Projected usage  | Projected usage quantity is calculated from the current month or period plus all future months or periods for one year of projected usage (including current); or, all available information if a full year of projections isn’t available. If no projected usage exists, the default value is zero.                |
+| Usage quantity          | Historical usage | Annual usage quantity is calculated from the last completed month or period plus all previous months or periods for the previous one year of sales and dependent usage (except current); or, all available information if a full year of information isn't available. If no usage exists, the default value is zero. |
+|                         | Projected usage  | Projected usage quantity is calculated from the current month or period plus all future months or periods for one year of projected usage (including current); or, all available information if a full year of projections isn't available. If no projected usage exists, the default value is zero.                |
 |                         | Weighted average | (Annual usage x Annual usage weight) + (Projected usage x Projected usage weight)                                                                                                                                                                                                                                    |
 | Usage value             |                  | Usage quantity x Unit cost                                                                                                                                                                                                                                                                                           |
 
 ### ABC analysis and large inventories
 
-If you have many inventoried items—10,000 or more—calculating ABC analysis information can take several minutes. If you’re using a process server, you might want to consider using it to make the analysis process a remote process—one that will allow you to continue working with your computer while the analysis is being completed.
+If you have many inventoried items—10,000 or more—calculating ABC analysis information can take several minutes. If you're using a process server, you might want to consider using it to make the analysis process a remote process—one that will allow you to continue working with your computer while the analysis is being completed.
 
-*If you’re using a process server, go to Administration \>\> Setup \>\> System \>\> Process Server, and be sure to mark the option for Inventory: Item ABC Analysis. Refer to the process server documentation for more information about using process server functions.*
+*If you're using a process server, go to Administration \>\> Setup \>\> System \>\> Process Server, and be sure to mark the option for Inventory: Item ABC Analysis. Refer to the process server documentation for more information about using process server functions.*
 
 ### Previewing and adjusting ABC analysis results
 
@@ -2635,19 +2635,19 @@ Use the ABC Analysis Preview window to preview analysis results, and to make cha
 
 **To change the ABC code for an item** Select a different classification in the appropriate scrolling window line.
 
-**To remove an item so it isn’t updated** Clear the Include option in the appropriate scrolling window line.
+**To remove an item so it isn't updated** Clear the Include option in the appropriate scrolling window line.
 
 4. You can choose File \>\> Print to generate the Item ABC Analysis Preview report. The report includes information about the effects of changes.
 
-5. When you’ve finished adjusting the ABC classifications, select a sorting order for the final report.
+5. When you've finished adjusting the ABC classifications, select a sorting order for the final report.
 
-6. Choose OK to save your changes. You’ll be returned to the ABC Analysis Breakpoints window.
+6. Choose OK to save your changes. You'll be returned to the ABC Analysis Breakpoints window.
 
 7. Refer to *Finalizing ABC analysis results* to update item records with the new ABC codes and to generate the Item ABC Analysis Breakpoints Report.
 
 ### Finalizing ABC analysis results
 
-Use the ABC Print Options window when you’re ready to complete your ABC analysis. Finalizing the ABC analysis results updates item records with new ABC codes, and generates the Item ABC Analysis Results Report.
+Use the ABC Print Options window when you're ready to complete your ABC analysis. Finalizing the ABC analysis results updates item records with new ABC codes, and generates the Item ABC Analysis Results Report.
 
 **To finalize ABC analysis results:**
 
@@ -2665,23 +2665,23 @@ Use the ABC Print Options window when you’re ready to complete your ABC analys
 
 When the analysis is complete, the Item ABC Analysis Results Report is printed. You can use this report view the analysis results and to ensure that items were prioritized correctly.
 
-*The report can’t be reprinted.*
+*The report can't be reprinted.*
 
 ### ABC analysis and zero or negative item quantities
 
-If you have items with zero or negative on-hand quantities and usage, you can use options in the ABC wizard so those items aren’t assigned an ABC code. This can be helpful because you might use ABC codes to establish business practices such as the frequency of cycle counts. If an item has no usage—or negative usage—it might be better to omit it from your cycle-count plans entirely.
+If you have items with zero or negative on-hand quantities and usage, you can use options in the ABC wizard so those items aren't assigned an ABC code. This can be helpful because you might use ABC codes to establish business practices such as the frequency of cycle counts. If an item has no usage—or negative usage—it might be better to omit it from your cycle-count plans entirely.
 
-*Refer to Chapter 18, “Count intervals,” for more information.*
+*Refer to Chapter 18, "Count intervals," for more information.*
 
-If you don’t use these options, however, the items with zero or negative on-hand quantities are included in the analysis. This can lead to unexpected results when you preview the analysis results or review the Item ABC Analysis Results Report, because then cumulative percentages are based on rankings for all items—even items with negative usage or on-hand quantities.
+If you don't use these options, however, the items with zero or negative on-hand quantities are included in the analysis. This can lead to unexpected results when you preview the analysis results or review the Item ABC Analysis Results Report, because then cumulative percentages are based on rankings for all items—even items with negative usage or on-hand quantities.
 
 To avoid this, mark both options in the ABC System Options window.
 
-### Modifying an item’s ABC code
+### Modifying an item's ABC code
 
 Use the Item Maintenance Options window to verify or modify the ABC code assigned to a specific item.
 
-**To modify an item’s ABC code:**
+**To modify an item's ABC code:**
 
 1. Open the Item Maintenance window.
 
@@ -2701,9 +2701,9 @@ Use the Item Maintenance Options window to verify or modify the ABC code assigne
 
 ### Using ABC analysis information
 
-The value of completing an ABC analysis is more than just the report that’s generated when the results are finalized. You’ll get the most use from completing the analysis if you use the ABC codes in your business practices.
+The value of completing an ABC analysis is more than just the report that's generated when the results are finalized. You'll get the most use from completing the analysis if you use the ABC codes in your business practices.
 
-For example, you might want to set up cycle counts to monitor the accuracy of inventory records. You can set up different frequencies for counting different items. You might set up one cycle for counting items every 30 days, another for counting items every 60 days, and so on. If you’ve completed the ABC analysis procedure, you can easily assign all “A” items to the 30-day cycle count, and all “B” items to the 60-day cycle count. You might set up a 120-day cycle count for “C” items—or you might not count them at all.
+For example, you might want to set up cycle counts to monitor the accuracy of inventory records. You can set up different frequencies for counting different items. You might set up one cycle for counting items every 30 days, another for counting items every 60 days, and so on. If you've completed the ABC analysis procedure, you can easily assign all "A" items to the 30-day cycle count, and all "B" items to the 60-day cycle count. You might set up a 120-day cycle count for "C" items—or you might not count them at all.
 
 ### Chapter 38: Year-end closing
 
@@ -2725,7 +2725,7 @@ The following information is discussed:
 
 Closing fiscal periods prevents transactions from being posted inadvertently to the wrong period or year. Some companies also might complete a physical inventory before closing a period.
 
-Before closing a fiscal period, be sure you’ve posted all the transactions for the period. To post transactions to a fiscal period you’ve already closed, you must reopen the period before the transaction can be posted.
+Before closing a fiscal period, be sure you've posted all the transactions for the period. To post transactions to a fiscal period you've already closed, you must reopen the period before the transaction can be posted.
 
 **To close a fiscal period:**
 
@@ -2749,19 +2749,19 @@ Before you can close the Inventory Control module for the year, you must complet
 
 You must complete this step to ensure that historical information is accurate and that year-to-date amounts are updated correctly.
 
-*You can enter transactions for a new year before closing the previous year by entering them in separate batches, however, you should not post these batches until you’ve closed the year. Refer to other module documentation for information about entering and posting transactions in those modules. Refer to Chapter 21, “Transaction entry,” and Chapter 24, “Posting,” for more information about completing these tasks for Inventory Control.*
+*You can enter transactions for a new year before closing the previous year by entering them in separate batches, however, you should not post these batches until you've closed the year. Refer to other module documentation for information about entering and posting transactions in those modules. Refer to Chapter 21, "Transaction entry," and Chapter 24, "Posting," for more information about completing these tasks for Inventory Control.*
 
 2. If you need to enter future-period transactions before closing a year, create a new batch for those transactions.
 
 3. Reconcile inventory quantities. Refer to *Reconciling inventory records*.
 
-4. Print the Physical Inventory Checklist. Choose Inventory \>\> Reports \>\> Activity to open the Inventory Activity Reports window. Refer to your System User’s Guide (Help \>\> Contents \>\> select Using The System) for more information about printing reports.
+4. Print the Physical Inventory Checklist. Choose Inventory \>\> Reports \>\> Activity to open the Inventory Activity Reports window. Refer to your System User's Guide (Help \>\> Contents \>\> select Using The System) for more information about printing reports.
 
-5. If needed, complete a stock count, then enter and post any adjustments. Refer to *Chapter 23, “Stock count processing,”* for more information.
+5. If needed, complete a stock count, then enter and post any adjustments. Refer to *Chapter 23, "Stock count processing,"* for more information.
 
 6. Print the following reports for your permanent records. Refer to the table for information about navigating to the reports.
 
-Refer to your System User’s Guide (Help \>\> Contents \>\> select Using The System) for more information about printing reports.
+Refer to your System User's Guide (Help \>\> Contents \>\> select Using The System) for more information about printing reports.
 
 | **Report**                 | **Path**                                |
 |----------------------------|-----------------------------------------|
@@ -2772,15 +2772,15 @@ Refer to your System User’s Guide (Help \>\> Contents \>\> select Using The Sy
 | Serial Number List         | Inventory \>\> Reports \>\> Serial/Lots |
 | Lot Number List            | Inventory \>\> Reports \>\> Serial/Lots |
 
-7. Make a complete backup of your company data, following your company’s backup procedures.
+7. Make a complete backup of your company data, following your company's backup procedures.
 
-Once you’ve completed these preliminary steps, you’re ready to close the year. Refer to *Closing a year*.
+Once you've completed these preliminary steps, you're ready to close the year. Refer to *Closing a year*.
 
 ### Closing a year
 
 Closing a year transfers all summarized current-year quantity, cost, and sales amounts to transaction history for the items that have summarized sales history. When you close a year, you also have the options to remove certain records and update standard costs.
 
-*Before continuing, be sure you’ve completed the tasks described in Preparing to close a year.*
+*Before continuing, be sure you've completed the tasks described in Preparing to close a year.*
 
 **To close a year:**
 
@@ -2791,29 +2791,29 @@ Closing a year transfers all summarized current-year quantity, cost, and sales a
 
 2. Choose records to remove. You can remove records for discontinued items, sold lot attributes, and sold receipts and historical cost changes, as needed.
 
-*Discontinued items aren’t removed if they are assigned to kits, if they are components of bills of materials, or if they have bills of materials of their own. Refer to Removal of discontinued items for more information.*
+*Discontinued items aren't removed if they are assigned to kits, if they are components of bills of materials, or if they have bills of materials of their own. Refer to Removal of discontinued items for more information.*
 
 Sold lot attributes is the information that you might have kept for items tracked by lot numbers—for example, if you track the expiration dates for items tracked by lots. In this case, deleting the sold lot attributes would remove the information about the expiration dates of the sold items.
 
 Sold receipts are records of items that have been both received and then sold. Cost change information is saved to history when the standard cost is changed for a LIFO periodic item or a FIFO periodic item, or when the current cost is changed for an average perpetual item.
 
-3. To update the standard cost information for items with FIFO Periodic or LIFO Periodic valuation methods, mark Item’s Standard Cost.
+3. To update the standard cost information for items with FIFO Periodic or LIFO Periodic valuation methods, mark Item's Standard Cost.
 
 The updated standard cost of each item automatically is adjusted to the current cost, or the amount you most recently paid for the item.
 
 4. Choose Process to close the year.
 
-While the year-end closing is in process, you won’t be able to post transactions or batches, reconcile quantities, change valuation methods, or change decimal places. If you attempt to begin one of these procedures, an alert message will appear, warning you that you must wait until the year-end closing process has been completed.
+While the year-end closing is in process, you won't be able to post transactions or batches, reconcile quantities, change valuation methods, or change decimal places. If you attempt to begin one of these procedures, an alert message will appear, warning you that you must wait until the year-end closing process has been completed.
 
-*After you’ve closed the year, you can close fiscal periods for inventory, if you like. Refer to Closing a fiscal period.*
+*After you've closed the year, you can close fiscal periods for inventory, if you like. Refer to Closing a fiscal period.*
 
-5. After you’ve closed the year, you should make a final backup of your company data.
+5. After you've closed the year, you should make a final backup of your company data.
 
 ### Effects of closing a year
 
 Processing that occurs when you close a year will complete these tasks:
 
-- All summarized current-year quantities, costs, and sales information of items you’ve been keeping summarized sales history are transferred to transaction history.
+- All summarized current-year quantities, costs, and sales information of items you've been keeping summarized sales history are transferred to transaction history.
 
 - The Beginning Quantity of each item is updated to be the On Hand quantity at each site. (Some reports—such as the Turnover Report—use the beginning quantity field in calculations.)
 
@@ -2833,7 +2833,7 @@ The following tasks might be accomplished, depending on the options you select w
 
 ### Removal of discontinued items
 
-When you close a year, you have the option to remove discontinued items—that is, items that have the Discontinued item type. If the item is assigned to a kit, is a component of a bill of materials, or has a bill of materials of its own, it won’t be removed.
+When you close a year, you have the option to remove discontinued items—that is, items that have the Discontinued item type. If the item is assigned to a kit, is a component of a bill of materials, or has a bill of materials of its own, it won't be removed.
 
 **Assigned to a kit** Print the Component Report from the Inventory Item Reports window to see if the item is assigned to a kit. Refer to your System User's Guide (Help \>\> Contents \>\> select Using The System) for more information about printing reports. Refer to *Assigning kit components* for information about removing component items from a kit.
 
@@ -2849,7 +2849,7 @@ Use Inventory Control checklists to ensure that your business practices are bein
 
 Inventory Control includes basic checklists, but you can tailor them to the needs of your business. You also can create your own checklists for tasks that are specific to your business.
 
-*Refer to your System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about customizing checklists.*
+*Refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information about customizing checklists.*
 
 The following information is discussed:
 
@@ -2878,7 +2878,7 @@ Use the Inventory Checklists window to open specific Inventory Control checklist
 
 4. Choose Open to begin performing the selected routine.
 
-Depending on the routine you’ve selected, choosing Open will open a window or start a macro in the Microsoft Dynamics GP system, or start an external application.
+Depending on the routine you've selected, choosing Open will open a window or start a macro in the Microsoft Dynamics GP system, or start an external application.
 
 ## Glossary
 
@@ -2892,11 +2892,11 @@ The code assigned to each item—A, B, or C— that denotes the importance of th
 
 #### Account
 
-The type of record—asset, liability, revenue, expense, or owner’s equity—traditionally used for recording individual transactions in an accounting system. Also, the identifying alphanumeric characters assigned to the record. *See also Posting account*.
+The type of record—asset, liability, revenue, expense, or owner's equity—traditionally used for recording individual transactions in an accounting system. Also, the identifying alphanumeric characters assigned to the record. *See also Posting account*.
 
 #### Account alias
 
-A 20-character “short name” for a posting account in the chart of accounts. If the account format has a large number of segments, using aliases can speed data entry.
+A 20-character "short name" for a posting account in the chart of accounts. If the account format has a large number of segments, using aliases can speed data entry.
 
 #### Account segment
 
@@ -3016,7 +3016,7 @@ User-defined descriptions that identify groups of items. Categories also can be 
 
 #### Category value
 
-The characteristics of a user category that describe the items assigned to that category. For example, the values teal, blue, and green could be assigned to the user category “Color.”
+The characteristics of a user category that describe the items assigned to that category. For example, the values teal, blue, and green could be assigned to the user category "Color."
 
 #### Class
 
@@ -3036,11 +3036,11 @@ The price a business pays for an item.
 
 #### Currency amount
 
-A pricing method in which a monetary amount is specified as the item’s price.
+A pricing method in which a monetary amount is specified as the item's price.
 
 #### Current cost
 
-The current cost is the item’s cost as stated on the most recent invoice if a company uses the LIFO or FIFO valuation method. For companies using the weighted average valuation method, the current cost is the average cost of the entire inventory of this item. In Australia and New Zealand, current cost is known as last/average cost.
+The current cost is the item's cost as stated on the most recent invoice if a company uses the LIFO or FIFO valuation method. For companies using the weighted average valuation method, the current cost is the average cost of the entire inventory of this item. In Australia and New Zealand, current cost is known as last/average cost.
 
 #### Cycle count
 
@@ -3072,7 +3072,7 @@ A number that identifies a group of entries that have been posted as a single, c
 
 #### Document type
 
-A selection that identifies a document’s purpose and how document amounts are posted. In Inventory Control, the document types include adjustment, variance and transfer transactions.
+A selection that identifies a document's purpose and how document amounts are posted. In Inventory Control, the document types include adjustment, variance and transfer transactions.
 
 #### Double-entry accounting
 
@@ -3140,7 +3140,7 @@ A file format that can be viewed using a Web browser. With this file format, you
 
 #### In service
 
-Item that is currently being used or repaired by your company’s service department. The item is usually returned to Quantity On Hand when service is complete.
+Item that is currently being used or repaired by your company's service department. The item is usually returned to Quantity On Hand when service is complete.
 
 #### In use
 
@@ -3228,11 +3228,11 @@ A window that displays a list of accounts, customers, jobs, or other items in th
 
 #### Lot attributes
 
-Descriptions assigned to a lot category that can be used to further identify the lotnumbered items assigned to the category. For example, the category “color” could have the attributes teal, blue, and green. *See also Lot category*.
+Descriptions assigned to a lot category that can be used to further identify the lotnumbered items assigned to the category. For example, the category "color" could have the attributes teal, blue, and green. *See also Lot category*.
 
 #### Lot category
 
-Lot-numbered items that are grouped according to a broad characteristic, such as “Carpet.” *See also Lot attributes*.
+Lot-numbered items that are grouped according to a broad characteristic, such as "Carpet." *See also Lot attributes*.
 
 #### Lot number
 
@@ -3244,7 +3244,7 @@ A series of actions performed within an application that have been recorded for 
 
 #### Main segment
 
-The segment of posting accounts that has been designated as the sorting option for accounts on financial statements. Typically, the main segment is used to indicate whether the account is an asset, liability, owners’ equity, revenue, or expense account.
+The segment of posting accounts that has been designated as the sorting option for accounts on financial statements. Typically, the main segment is used to indicate whether the account is an asset, liability, owners' equity, revenue, or expense account.
 
 **Margin**
 
@@ -3264,7 +3264,7 @@ A limited length of time that an item can be stored to meet specification requir
 
 #### Miscellaneous charges
 
-An item type assigned to items that aren’t being tracked by quantity or current cost, such as shipping costs, customizing costs, or other costs that occur infrequently.
+An item type assigned to items that aren't being tracked by quantity or current cost, such as shipping costs, customizing costs, or other costs that occur infrequently.
 
 #### Module
 
@@ -3272,7 +3272,7 @@ An application that can be used to perform a specific set of tasks. Modules are 
 
 #### Non-inventoried item
 
-An Item that doesn’t have card set up in Inventory Control. This item is not usually carried in your inventory, but is stocked or ordered on a one-time basis.
+An Item that doesn't have card set up in Inventory Control. This item is not usually carried in your inventory, but is stocked or ordered on a one-time basis.
 
 #### Note
 
@@ -3304,11 +3304,11 @@ A price method used to automatically determine item prices based on a desired pr
 
 #### Percent markup
 
-A pricing method in which an item’s price is determined by the item’s current cost plus a fixed percentage. You can set up this method to calculate prices using either current or standard costs, depending on your valuation method.
+A pricing method in which an item's price is determined by the item's current cost plus a fixed percentage. You can set up this method to calculate prices using either current or standard costs, depending on your valuation method.
 
 #### Percent of list
 
-A price method in which an item’s price is determined by a percentage of the item’s list price.
+A price method in which an item's price is determined by a percentage of the item's list price.
 
 #### Phantom bill
 
@@ -3386,7 +3386,7 @@ A price sheet that contains special offers for individual products. Promotions c
 
 #### Purchase receipt
 
-A “document” created by Microsoft Dynamics GP each time you enter an increase transaction for an item. The system uses this “document” internally to track the quantity and the cost of an item, which allows you to accurately assess the value of your entire inventory and of individual items. You can view information about individual purchase receipts using the Purchase Receipt Inquiry window.
+A "document" created by Microsoft Dynamics GP each time you enter an increase transaction for an item. The system uses this "document" internally to track the quantity and the cost of an item, which allows you to accurately assess the value of your entire inventory and of individual items. You can view information about individual purchase receipts using the Purchase Receipt Inquiry window.
 
 #### Quantity allocated
 
@@ -3446,7 +3446,7 @@ A collection of entries that specify the amount of information or the type of in
 
 #### Return
 
-The act of giving back merchandise to the seller after the sales invoice has been posted. The seller must then either exchange the merchandise or give back the customer’s money.
+The act of giving back merchandise to the seller after the sales invoice has been posted. The seller must then either exchange the merchandise or give back the customer's money.
 
 #### Rolldown
 
@@ -3498,7 +3498,7 @@ A calendar that specifies the up and down days for a production floor.
 
 #### Shortage
 
-Occurs when you have less quantity available in Inventory for an item than you enter on a transaction. For example, if you have 5 recorded in inventory and create an assembly transaction that requires 10, you will receive a message saying that you have a shortage. Depending on how you’ve set up your system, you may not be able to override the shortage. *See also Override*.
+Occurs when you have less quantity available in Inventory for an item than you enter on a transaction. For example, if you have 5 recorded in inventory and create an assembly transaction that requires 10, you will receive a message saying that you have a shortage. Depending on how you've set up your system, you may not be able to override the shortage. *See also Override*.
 
 #### Single-use batch
 
@@ -3626,7 +3626,7 @@ An interim location for items that are being moved from one site to another.
 
 #### Wizard
 
-A series of windows that lead you through decisions you need to make to complete a procedure. A wizard narrows your options as you go, so that you aren’t overwhelmed with options. You’ll also have the option to move backward in the decision-making process, so that if you make a mistake you can undo it before any changes are saved.
+A series of windows that lead you through decisions you need to make to complete a procedure. A wizard narrows your options as you go, so that you aren't overwhelmed with options. You'll also have the option to move backward in the decision-making process, so that if you make a mistake you can undo it before any changes are saved.
 
 #### Year-end closing
 

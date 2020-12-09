@@ -1,6 +1,6 @@
 ---
-title: "Purchase Order Processing"
-description: "Purchasing for Dynamics GP"
+title: "Purchase Order Processing Part 3"
+description: "Learn about Purchasing for Dynamics GP, more specifically receipts."
 keywords: "purchase order"
 author: tnistler
 manager: edupont
@@ -8,7 +8,7 @@ manager: edupont
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
-ms.author: tnistler
+ms.author: theley
 ms.date: 02/28/2020
 
 ---
@@ -18,33 +18,33 @@ This part of the documentation explains how to enter and manage receipts. The da
 
 Following is a list of topics that are discussed:
 
-- *Chapter 12, “Receipt batches,”* explains how to use batches to group purchasing documents for posting.
+- *Chapter 12, "Receipt batches,"* explains how to use batches to group purchasing documents for posting.
 
-- *Chapter 13, “Shipment and in-transit inventory receipt entry,”* describes how to enter shipment, shipment/invoice, and in-transit inventory receipts.
+- *Chapter 13, "Shipment and in-transit inventory receipt entry,"* describes how to enter shipment, shipment/invoice, and in-transit inventory receipts.
 
-- *Chapter 14, “Shipment receipt entry for projects,”* describes how to enter shipment and shipment/invoice receipts for projects.
+- *Chapter 14, "Shipment receipt entry for projects,"* describes how to enter shipment and shipment/invoice receipts for projects.
 
-- *Chapter 15, “Shipment receipt detail entry,”* describes how to enter detailed information about a document, line item, or other elements of a transaction.
+- *Chapter 15, "Shipment receipt detail entry,"* describes how to enter detailed information about a document, line item, or other elements of a transaction.
 
-- *Chapter 16, “Invoice receipt entry,”* explains how to enter invoice receipts and match them to shipment receipts.
+- *Chapter 16, "Invoice receipt entry,"* explains how to enter invoice receipts and match them to shipment receipts.
 
-- *Chapter 17, “Invoice receipt entry for projects,”* explains how to enter invoice receipts and match them to shipment receipts for projects.
+- *Chapter 17, "Invoice receipt entry for projects,"* explains how to enter invoice receipts and match them to shipment receipts for projects.
 
-- *Chapter 18, “Invoice receipt detail entry,”* describes how to enter detailed information about a document, or other elements of a transaction.
+- *Chapter 18, "Invoice receipt detail entry,"* describes how to enter detailed information about a document, or other elements of a transaction.
 
-- *Chapter 19, “Landed costs for receipts,”* describes how to enter, apportion, and match landed costs.
+- *Chapter 19, "Landed costs for receipts,"* describes how to enter, apportion, and match landed costs.
 
-- *Chapter 20, “Taxes for receipts,”* explains how tax is calculated, modified, and distributed for receipts.
+- *Chapter 20, "Taxes for receipts,"* explains how tax is calculated, modified, and distributed for receipts.
 
-- *Chapter 21, “Receipt posting,”* describes the methods of posting transactions in Purchase Order Processing.
+- *Chapter 21, "Receipt posting,"* describes the methods of posting transactions in Purchase Order Processing.
 
-- *Chapter 22, “Receipt maintenance,”* includes procedures for correcting, deleting, and voiding shipment, in-transit inventory, and invoice receipts.
+- *Chapter 22, "Receipt maintenance,"* includes procedures for correcting, deleting, and voiding shipment, in-transit inventory, and invoice receipts.
 
 ## Chapter 12: Receipt batches
 
 All receipt document types can be entered in a batch. Batches are groups of transactions, identified by a name or a number, that are used for identification purposes and to make the posting process easier. You can enter receipts in batches to group similar transactions during data entry and review them before posting at a later time. Batches can be identified as a group of transactions entered by a specific employee, or a group of transactions entered on a particular date.
 
-To post invoice receipts in a batch if you are using vendor approval workflow, the vendors assigned to invoice receipts must have the workflow status of Approved or No Approval Needed. If you post a batch and a vendor isn’t approved, invoice receipts for that vendor aren’t posted and remain in the batch. For more information about vendor approval workflow, see *Vendor approval workflow*.
+To post invoice receipts in a batch if you are using vendor approval workflow, the vendors assigned to invoice receipts must have the workflow status of Approved or No Approval Needed. If you post a batch and a vendor isn't approved, invoice receipts for that vendor aren't posted and remain in the batch. For more information about vendor approval workflow, see *Vendor approval workflow*.
 
 This information is divided into the following sections:
 
@@ -56,15 +56,15 @@ This information is divided into the following sections:
 
 ### Using batches to group receipts
 
-Receipts can be entered individually or in batches. Individual transactions are entered and posted immediately, so your records are always up to date. You can’t print edit lists for transactions that aren’t entered in a batch. Batches can be used to group and save transactions, which allows you to review the transactions and make corrections before they’re posted. More than one person can enter transactions in the same batch; however, a batch can’t be posted if anyone is making changes to it.
+Receipts can be entered individually or in batches. Individual transactions are entered and posted immediately, so your records are always up to date. You can't print edit lists for transactions that aren't entered in a batch. Batches can be used to group and save transactions, which allows you to review the transactions and make corrections before they're posted. More than one person can enter transactions in the same batch; however, a batch can't be posted if anyone is making changes to it.
 
 Purchase Order Processing batches originate in either the Receivings Transaction
 
 Entry window or the Purchasing Invoice Entry window. A batch with a Receivings Transaction Entry origin can contain a mix of different receipt document types. A batch with a Purchasing Invoice Entry origin can contain only invoice receipt documents. Since batches can have only one origin, you can have batches with the same name, but different origins.
 
-- For information about entering transactions with the Receivings Transaction Entry origin, see *Chapter 13, “Shipment and in-transit inventory receipt entry.”*
+- For information about entering transactions with the Receivings Transaction Entry origin, see *Chapter 13, "Shipment and in-transit inventory receipt entry."*
 
-- For information about entering transactions with the Purchasing Invoice Entry origin, see *Chapter 16, “Invoice receipt entry.”*
+- For information about entering transactions with the Purchasing Invoice Entry origin, see *Chapter 16, "Invoice receipt entry."*
 
 ### Creating a receipt batch
 
@@ -75,7 +75,7 @@ Use the Purchasing Batch Entry window to create a receipt batch. Each transactio
 1. Open the Purchasing Batch Entry window.
     (Purchasing \>\> Transactions \>\> Purchasing Batches)
 
-    ![screenshot](media/POage100.jpg)
+    ![screenshot Purchasing Batch Entry](media/POage100.jpg)
 
 2. Enter a batch ID to identify the batch.
 
@@ -95,7 +95,7 @@ Use the Purchasing Batch Entry window to create a receipt batch. Each transactio
 
 ### Modifying or deleting a batch
 
-Use the Purchasing Batch Entry window to change or delete an unposted batch. See *Chapter 22, “Receipt maintenance,”* for information about changing the transactions in a batch.
+Use the Purchasing Batch Entry window to change or delete an unposted batch. See *Chapter 22, "Receipt maintenance,"* for information about changing the transactions in a batch.
 
 **To modify or delete a batch:**
 
@@ -104,17 +104,17 @@ Use the Purchasing Batch Entry window to change or delete an unposted batch. See
 
 2. Enter or select a batch ID. If you enter a batch, you also must enter the batch origin before information about the batch will be displayed.
 
-3. If you select a batch that has been marked for posting, you won’t be able to edit it.
+3. If you select a batch that has been marked for posting, you won't be able to edit it.
 
 4. To correct the batch, replace the incorrect information with correct information. Choose Save to save your changes. To delete the batch, choose Delete.
 
 ## Chapter 13: Shipment and in-transit inventory receipt entry
 
-A shipment receipt is a document used to record shipments received for purchase orders. You can enter two types of shipment receipts in Purchase Order Processing: shipment/invoice and shipment. Enter a shipment/invoice receipt to record the receipt of goods and services accompanied by an invoice. Enter a shipment receipt to record the receipt of goods and services without an invoice. You can enter receipt transactions in a batch or enter and post them individually. Receipts can’t be saved unless they’re in a batch.
+A shipment receipt is a document used to record shipments received for purchase orders. You can enter two types of shipment receipts in Purchase Order Processing: shipment/invoice and shipment. Enter a shipment/invoice receipt to record the receipt of goods and services accompanied by an invoice. Enter a shipment receipt to record the receipt of goods and services without an invoice. You can enter receipt transactions in a batch or enter and post them individually. Receipts can't be saved unless they're in a batch.
 
 If you are transferring material from one site to another and want to use a via site, you can enter in-transit transfers in Inventory Control. A via site is an interim location to prevent the material from being sold while the material is in-transit. After you post the in-transit transfer, you can use the Receivings Transaction Entry window to enter an in-transit inventory receipt. An in-transit inventory receipt is a document used to record the receipt of the material into the final destination site.
 
-If you are using Project Accounting and want to enter shipment/invoice receipts or shipment receipts for projects, see *Chapter 14, “Shipment receipt entry for projects.”*
+If you are using Project Accounting and want to enter shipment/invoice receipts or shipment receipts for projects, see *Chapter 14, "Shipment receipt entry for projects."*
 
 This information is divided into the following sections:
 
@@ -140,15 +140,15 @@ This information is divided into the following sections:
 
 ### Receiving a shipment/invoice
 
-Use the Receivings Transaction Entry window to record a shipment/invoice if you’ve received an invoice and merchandise at the same time. The inventory quantity on hand will be updated for the items received and the vendor’s account will be increased. You can include items from multiple purchase orders (from a single vendor) on a shipment/invoice receipt.
+Use the Receivings Transaction Entry window to record a shipment/invoice if you've received an invoice and merchandise at the same time. The inventory quantity on hand will be updated for the items received and the vendor's account will be increased. You can include items from multiple purchase orders (from a single vendor) on a shipment/invoice receipt.
 
-You can receive against line items with New, Released, Change Order, or Received statuses; however, only active items can be entered. You can continue processing if the item is inactive, but you can’t change the quantity.
+You can receive against line items with New, Released, Change Order, or Received statuses; however, only active items can be entered. You can continue processing if the item is inactive, but you can't change the quantity.
 
-If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don’t need approval.
+If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don't need approval.
 
-You can’t enter a shipment/invoice receipt for a purchase order that is on hold. If a purchase order is placed on hold after its shipment/invoice receipt is saved to a batch, the receipt for that purchase order will not be posted and will remain in the batch.
+You can't enter a shipment/invoice receipt for a purchase order that is on hold. If a purchase order is placed on hold after its shipment/invoice receipt is saved to a batch, the receipt for that purchase order will not be posted and will remain in the batch.
 
-If you are using Project Accounting, you can enter a shipment/invoice for blanket purchase orders. The Project Number field and the Cost Category ID field will be displayed in the Receivings Transaction Entry window, but you can’t enter project information. To enter a shipment/invoice for a purchase order with project information, see *Chapter 14, “Shipment receipt entry for projects.”*
+If you are using Project Accounting, you can enter a shipment/invoice for blanket purchase orders. The Project Number field and the Cost Category ID field will be displayed in the Receivings Transaction Entry window, but you can't enter project information. To enter a shipment/invoice for a purchase order with project information, see *Chapter 14, "Shipment receipt entry for projects."*
 
 You can use the View \>\> Currency menu option or the currency list button to view currency amounts in the Receivings Transaction Entry window in the originating or functional currency.
 
@@ -158,7 +158,7 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 2. In the New group or its overflow menu, choose Shipment and Invoice Receipt to open the Receivings Transaction Entry window.
 
-    ![screenshot](media/POage102.jpg)
+    ![screenshot Receivings Transaction Entry](media/POage102.jpg)
 
 3. Enter a vendor document number.
 
@@ -171,32 +171,32 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 5. Enter or select a batch ID (optional).
 
-    In multi-currency transactions, if the batch posting date does not fall on or before the exchange rate’s expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt. See *Creating a receipt batch* for more information.
+    In multi-currency transactions, if the batch posting date does not fall on or before the exchange rate's expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt. See *Creating a receipt batch* for more information.
 
 6. Enter or select a vendor ID.
 
 7. Enter or select a currency ID. If a currency ID is assigned to the vendor you select, it will appear in the Currency ID field. The currency ID assigned to the shipment/invoice must match the currency ID of the purchase orders being received against.
 
-8. Enter or select the purchase order number for which you’re receiving a shipment/invoice. You can receive items from multiple purchase orders by entering or selecting a different purchase order number in a new row. See *Receiving items from multiple purchase orders* for more information.
+8. Enter or select the purchase order number for which you're receiving a shipment/invoice. You can receive items from multiple purchase orders by entering or selecting a different purchase order number in a new row. See *Receiving items from multiple purchase orders* for more information.
 
     If the Allow Receiving Without a Purchase Order option is marked in Purchase Order Processing Setup, you can leave the PO Number field blank.
 
     Before you can receive against the purchase order that has an unposted prepayment, you must post the prepayment or remove the prepayment from the purchase order.
 
-9. Enter items using either the vendor’s item number or your company’s item number. You also can enter a non-inventoried item.
+9. Enter items using either the vendor's item number or your company's item number. You also can enter a non-inventoried item.
 
-    You can display the vendor’s item number by marking Options \>\> Display Vendor Item. If the option is not marked, your company’s item number will be displayed. You can change this selection at any time.
+    You can display the vendor's item number by marking Options \>\> Display Vendor Item. If the option is not marked, your company's item number will be displayed. You can change this selection at any time.
 
     To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
 10. Enter the quantity shipped.
 
     > [!NOTE]
-    > The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window will open if an item that isn’t tracked by lot or serial numbers requires that you enter bin information.
+    > The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window will open if an item that isn't tracked by lot or serial numbers requires that you enter bin information.
 
     An icon will be displayed in the Qty Shipped field for purchase order line items with sales commitments. Select a line item and choose the button next to the Qty Shipped heading to view or prioritize commitments in the Sales Commitments for Purchase Order window. For more information, see *Committing purchase orders to sales documents*.
 
-    If you’re using multiple bins and you change the quantity shipped or the unit of measure after selecting bins for an item, you might have to modify the bin information.
+    If you're using multiple bins and you change the quantity shipped or the unit of measure after selecting bins for an item, you might have to modify the bin information.
 
 11. You can change the site ID to receive line items to a location other than the location specified on the purchase order, if the option is marked in Purchase Order Processing Setup. Changing the site on the receipt will not change the site on the purchase order.
 
@@ -204,11 +204,11 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 12. You can edit the unit cost or extended cost, if the Allow Editing of Costs in Receiving option is marked in the Purchase Order Processing Setup window.
 
-13. Enter the quantity invoiced, which is the number of items on the vendor’s invoice.
+13. Enter the quantity invoiced, which is the number of items on the vendor's invoice.
 
 14. Enter trade discount, freight, miscellaneous, and tax amounts.
 
-    Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, “Taxes for receipts.”* If you want to change the tax amounts for the document, see *Calculating and distributing summary taxes for shipment/invoice receipts*. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for shipment/invoice line items*.
+    Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, "Taxes for receipts."* If you want to change the tax amounts for the document, see *Calculating and distributing summary taxes for shipment/invoice receipts*. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for shipment/invoice line items*.
 
 15. The Prepayment field displays the total of all posted prepayments consumed for the purchase orders you are receiving against. The prepayment amount is recalculated if you change the quantity shipped, quantity invoiced, unit cost, or extended cost for a line item. The prepayment amount is also recalculated if you change the trade discount.
 
@@ -218,7 +218,7 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 17. Enter or accept the payment terms and tax schedule ID.
 
-18. If you are using Project Accounting, choose the Amount Received expansion button to open the PA Receivings Amount Received Entry window, where you can enter an amount received. You can enter the amount you’re paying by cash, check, or credit card.
+18. If you are using Project Accounting, choose the Amount Received expansion button to open the PA Receivings Amount Received Entry window, where you can enter an amount received. You can enter the amount you're paying by cash, check, or credit card.
 
 19. If you are using landed costs, choose Landed Cost to open the Receivings Landed Cost Apportionment Entry window, where you can add landed costs to all line items on a receipt. See *Entering landed costs for a shipment receipt* for more information. If you want to enter landed costs for an item, see *Entering landed costs for a shipment item*.
 
@@ -232,7 +232,7 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
     - To restore the original distributions, choose Default.
 
-    If you are using landed costs, the distributions for a landed cost won’t be displayed in the Purchasing Distribution Entry window. To view landed cost distributions, print the Receivings Edit List.
+    If you are using landed costs, the distributions for a landed cost won't be displayed in the Purchasing Distribution Entry window. To view landed cost distributions, print the Receivings Edit List.
 
     See *Distributing transaction amounts for shipment receipts* for more information.
 
@@ -240,19 +240,19 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 23. Choose Save or Post. If you post the receipt, one or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window.
 
-If you’ve entered a batch ID, you can’t post the transaction individually; you must use batch posting, series posting, or master posting. For more information, see *Chapter 12, “Receipt batches.”*
+If you've entered a batch ID, you can't post the transaction individually; you must use batch posting, series posting, or master posting. For more information, see *Chapter 12, "Receipt batches."*
 
 #### Receiving a shipment
 
-Use the Receivings Transaction Entry window to record a shipment if you’ve received merchandise but haven’t received the invoice for the merchandise. A shipment transaction will increase the quantity on hand for the items received for sales and discontinued item types. You can include items from multiple purchase orders (from a single vendor) on a shipment receipt.
+Use the Receivings Transaction Entry window to record a shipment if you've received merchandise but haven't received the invoice for the merchandise. A shipment transaction will increase the quantity on hand for the items received for sales and discontinued item types. You can include items from multiple purchase orders (from a single vendor) on a shipment receipt.
 
 You can receive against line items with New, Released, Change Order, or Received statuses.
 
-If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don’t need approval.
+If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don't need approval.
 
-You can’t enter a shipment receipt for a purchase order that is on hold. If a purchase order is placed on hold after its shipment receipt is saved to a batch, the receipt for that purchase order will not be posted and will remain in the batch.
+You can't enter a shipment receipt for a purchase order that is on hold. If a purchase order is placed on hold after its shipment receipt is saved to a batch, the receipt for that purchase order will not be posted and will remain in the batch.
 
-If you are using Project Accounting, you can enter a shipment for blanket purchase orders. The Project Number field and the Cost Category ID field will be displayed in the Receivings Transaction Entry window, but you can’t enter project information. To enter a shipment for a purchase order with project information, see *Chapter 14, “Shipment receipt entry for projects.”*
+If you are using Project Accounting, you can enter a shipment for blanket purchase orders. The Project Number field and the Cost Category ID field will be displayed in the Receivings Transaction Entry window, but you can't enter project information. To enter a shipment for a purchase order with project information, see *Chapter 14, "Shipment receipt entry for projects."*
 
 You can use the View \>\> Currency menu option or the currency list button to view amounts in the Receivings Transaction Entry window in originating or functional currency.
 
@@ -262,7 +262,7 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 2. In the New group or its overflow menu, choose Shipment Receipt to open the Receivings Transaction Entry window.
 
-    ![screenshot](media/POage104.jpg)
+    ![screenshot Receivings Transaction Entry ](media/POage104.jpg)
 
 3. Enter a vendor document number (optional).
 
@@ -271,25 +271,25 @@ You can use the View \>\> Currency menu option or the currency list button to vi
     > [!NOTE]
     > To enter a General Ledger posting date that is different from the transaction date, choose the Date expansion button; the Receivings Date Entry window will open, where you can enter date information.
 
-    For multicurrency transactions, the document date determines which exchange rate is used, based on the currency ID and associated rate type that’s entered for the transaction.
+    For multicurrency transactions, the document date determines which exchange rate is used, based on the currency ID and associated rate type that's entered for the transaction.
 
 5. Enter or select a batch ID (optional). See *Creating a receipt batch* for more information.
 
-In multicurrency transactions, if the batch posting date does not fall on or before the exchange rate’s expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt.
+    In multicurrency transactions, if the batch posting date does not fall on or before the exchange rate's expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt.
 
 6. Enter or select the vendor ID.
 
 7. Enter or select a currency ID. If a currency ID is assigned to the vendor you select, it will appear in the Currency ID field. The currency ID assigned to the invoice must match the currency ID of the purchase order being received against.
 
-8. Enter the purchase order number for which you’re receiving a shipment. You can receive items from multiple purchase orders by entering or selecting a different purchase order number in a new row. See *Receiving items from multiple purchase orders* for more information.
+8. Enter the purchase order number for which you're receiving a shipment. You can receive items from multiple purchase orders by entering or selecting a different purchase order number in a new row. See *Receiving items from multiple purchase orders* for more information.
 
     If the Allow Receiving Without a Purchase Order option is marked in Purchase Order Processing Setup, you can leave the PO Number field blank.
 
     Before you can receive against the purchase order that has an unposted prepayment, you must post the prepayment or remove the prepayment from the purchase order.
 
-9. Enter items using either the vendor’s item number or your company’s item number. You also can enter a non-inventoried item.
+9. Enter items using either the vendor's item number or your company's item number. You also can enter a non-inventoried item.
 
-    You can display the vendor’s item number by marking Options \>\> Display Vendor Item. If the option is not marked, your company’s item number will be displayed. You can change this selection at any time.
+    You can display the vendor's item number by marking Options \>\> Display Vendor Item. If the option is not marked, your company's item number will be displayed. You can change this selection at any time.
 
     To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
@@ -300,7 +300,7 @@ In multicurrency transactions, if the batch posting date does not fall on or bef
 11. Enter the quantity shipped.
 
     > [!NOTE]
-    > The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window will open if an item that isn’t tracked by lot or serial numbers requires that you enter bin information.
+    > The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window will open if an item that isn't tracked by lot or serial numbers requires that you enter bin information.
 
     An icon will be displayed in the Qty Shipped field for purchase order line items with sales commitments. Select a line item and choose the button next to the Qty Shipped heading to view or prioritize commitments in the Sales Commitments for Purchase Order window. For more information, see *Committing purchase orders to sales documents*.
 
@@ -320,7 +320,7 @@ In multicurrency transactions, if the batch posting date does not fall on or bef
 
     - To restore the original distributions, choose Default.
 
-    If you are using landed costs, the distributions for a landed cost won’t be displayed in the Purchasing Distribution Entry window. To view landed cost distributions, print the Receivings Edit List.
+    If you are using landed costs, the distributions for a landed cost won't be displayed in the Purchasing Distribution Entry window. To view landed cost distributions, print the Receivings Edit List.
 
     See *Distributing transaction amounts for shipment receipts* for more information.
 
@@ -328,15 +328,15 @@ In multicurrency transactions, if the batch posting date does not fall on or bef
 
 17. Choose Save or Post. If you post the receipt, one or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window.
 
-If you’ve entered a batch ID, you can’t post the transaction individually; you must use batch posting, series posting, or master posting. For more information, see *Chapter 12, “Receipt batches.”*
+If you've entered a batch ID, you can't post the transaction individually; you must use batch posting, series posting, or master posting. For more information, see *Chapter 12, "Receipt batches."*
 
 ### Receiving items without a purchase order
 
-In the Receivings Transaction Entry window, you have the option to receive items that weren’t included on the original purchase order or receive items without a purchase order.
+In the Receivings Transaction Entry window, you have the option to receive items that weren't included on the original purchase order or receive items without a purchase order.
 
 To set up this option, you must select to allow receiving items without a purchase order in the Purchase Order Processing Setup window. You may assign a password that must be entered before entering a line item not assigned to a purchase order.
 
-If you are using Project Accounting, you can receive items without project information. The Project Number field and the Cost Category ID field will be displayed in the Receivings Transaction Entry window. To enter a shipment/invoice or shipment with project information, see *Chapter 14, “Shipment receipt entry for projects.”*
+If you are using Project Accounting, you can receive items without project information. The Project Number field and the Cost Category ID field will be displayed in the Receivings Transaction Entry window. To enter a shipment/invoice or shipment with project information, see *Chapter 14, "Shipment receipt entry for projects."*
 
 **To receive items without a purchase order:**
 
@@ -347,7 +347,7 @@ If you are using Project Accounting, you can receive items without project infor
 
 3. Enter the receipt number, vendor document number, date, and vendor ID.
 
-4. To add vendor items or items that weren’t included on the original purchase order, simply leave the PO number field blank. You don’t have to enter a purchase order if you’ve set up the system to allow receiving items without a purchase order.
+4. To add vendor items or items that weren't included on the original purchase order, simply leave the PO number field blank. You don't have to enter a purchase order if you've set up the system to allow receiving items without a purchase order.
 
 5. Continue entering the receipt.
 
@@ -359,9 +359,9 @@ If you are using Project Accounting, you can receive items without project infor
 
 Use the Select Purchase Order window to select a purchase order to quickly enter line items on a shipment or shipment/invoice. See *Receiving a shipment* or *Receiving a shipment/invoice* for more information.
 
-If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don’t need approval.
+If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don't need approval.
 
-If you are using Project Accounting, you can receive items for blanket purchase orders. The Project Number field and the Cost Category ID field will be displayed in the Receivings Transaction Entry window, but you can’t enter project information. To receive items for purchase orders with project information, see *Chapter 14, “Shipment receipt entry for projects.”*
+If you are using Project Accounting, you can receive items for blanket purchase orders. The Project Number field and the Cost Category ID field will be displayed in the Receivings Transaction Entry window, but you can't enter project information. To receive items for purchase orders with project information, see *Chapter 14, "Shipment receipt entry for projects."*
 
 **To receive items using the Select Purchase Order window:**
 
@@ -377,7 +377,7 @@ If you are using Project Accounting, you can receive items for blanket purchase 
     > [!NOTE]
     > If you entered a vendor ID, the Select Purchase Order Items window will open instead of the Select Purchase Order window.
 
-    ![screenshot](media/POage106.jpg)
+    ![screenshot Select Purchase Order Items](media/POage106.jpg)
 
 5. Enter or select a purchase order for which you want to receive line items.
 
@@ -385,11 +385,11 @@ If you are using Project Accounting, you can receive items for blanket purchase 
 
 You cannot receive against a purchase order that has an unposted prepayment. You can remove the prepayment from the purchase order using the Purchase Order Entry window or complete a computer check run for the prepayment.
 
-The control blanket line item for a blanket purchase order or a drop-ship blanket purchase order isn’t included when you automatically receive items. Blanket line items with a New status won’t be included, either. You can use the Receivings Transaction Entry window to enter blanket line items with a New status.
+The control blanket line item for a blanket purchase order or a drop-ship blanket purchase order isn't included when you automatically receive items. Blanket line items with a New status won't be included, either. You can use the Receivings Transaction Entry window to enter blanket line items with a New status.
 
 If you choose to view details in the Select Purchase Order window, the Select Purchase Order Items window will open, and the purchase order line items will be marked to receive. Choose Receive to automatically receive items on the selected purchase order.
 
-Blanket line items with a New status or line items with a New status for a standard purchase order with an expired contract date won’t be marked. To receive these items, you must mark the items individually.
+Blanket line items with a New status or line items with a New status for a standard purchase order with an expired contract date won't be marked. To receive these items, you must mark the items individually.
 
 In the Receivings Transaction Entry window, continue entering receipt information, if necessary, and save or post the transaction.
 
@@ -405,27 +405,27 @@ The sorting option you select determines the order in which objects appear in th
 
 - **PO/Items** Objects in the tree view and scrolling window are sorted first by purchase order number, then by the order items were entered on the purchase orders.
 
-    ![screenshot](media/POage108.jpg)
+    ![screenshot PO/Items](media/POage108.jpg)
 
 - **Item Number/PO** Objects in the tree view and scrolling window are sorted first by item number, then by purchase order number under each item.
 
-    ![screenshot](media/POage110.jpg)
+    ![screenshot Item Number/PO](media/POage110.jpg)
 
 - **Site/PO/Item Number** Objects in the tree view and scrolling window are sorted first by site, then by purchase order number under each site, then by item number under each purchase order.
 
-    ![screenshot](media/POage112.jpg)
+    ![screenshot Site/PO/Item Number](media/POage112.jpg)
 
 - **Site/Item Number/PO** Objects in the tree view and scrolling window are sorted first by site, then by item number under each site, then by purchase order number under each item.
 
-    ![screenshot](media/POage114.jpg)
+    ![screenshot Site/Item Number/PO](media/POage114.jpg)
 
 ### Receiving items from multiple purchase orders
 
 Use the Select Purchase Order Items window to receive line items on multiple purchase orders. New, Released, or Change Order purchase orders that have one or more items with a quantity remaining to receive will be displayed. See *Receiving a shipment* or *Receiving a shipment/invoice* for more information.
 
-If you are using Workflow, purchase orders must be approved before you can receive against them. You can receive against purchase orders that don’t need approval.
+If you are using Workflow, purchase orders must be approved before you can receive against them. You can receive against purchase orders that don't need approval.
 
-If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Select Purchase Order Items window. To receive items from purchase orders with project information, see *Chapter 14, “Shipment receipt entry for projects.”*
+If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Select Purchase Order Items window. To receive items from purchase orders with project information, see *Chapter 14, "Shipment receipt entry for projects."*
 
 **To receive items from multiple purchase orders:**
 
@@ -439,20 +439,20 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 5. Choose the Auto-Rcv button. The Select Purchase Order Items window will open.
 
-    New, Released, or Change Order purchase orders that have one or more items with a quantity remaining to receive will be displayed. The control blanket line item for a blanket purchase order or a drop-ship blanket purchase order isn’t included when you automatically receive items.
+    New, Released, or Change Order purchase orders that have one or more items with a quantity remaining to receive will be displayed. The control blanket line item for a blanket purchase order or a drop-ship blanket purchase order isn't included when you automatically receive items.
 
     If only a Vendor ID is displayed, the selected vendor does not have any New, Released, or Change Order purchase orders with items to receive. Only purchase orders with currency IDs that match the receipt will be displayed. Purchase orders with posted prepayments that have currency IDs that match the receipt will be displayed.
 
     > [!NOTE]
     > If you know the purchase order number but not the vendor ID, you can choose AutoRcv without entering a vendor ID. The Select Purchase Order window will open. The vendor and currency ID for the receipt will come from the purchase order you select.
 
-    ![screenshot](media/POage116.jpg)
+    ![screenshot Select Purchase Orde](media/POage116.jpg)
 
 6. Select a sorting option.
 
 7. Mark the check boxes next to the items you want to receive. To select all items displayed in the scrolling window, choose Mark All.
 
-    Blanket line items with a New status or line items with a New status for a standard purchase order with an expired contract date won’t be marked. To receive these items, you must mark the items individually.
+    Blanket line items with a New status or line items with a New status for a standard purchase order with an expired contract date won't be marked. To receive these items, you must mark the items individually.
 
     > [!NOTE]
     > When you choose Mark All or Unmark All in the Select Purchase Order Items window, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.
@@ -469,11 +469,11 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 ### Receiving items from a purchase order
 
-Use the Select Purchase Order Items window and the Receivings Transaction Entry window to receive items. After you enter or select a standard or blanket purchase order with a New, Released, or Change Order status in the Purchase Order Entry window, you can select to receive items or receive and invoice items. From the Actions button, you can select the Receive the PO Items option to enter a shipment receipt. You can select the Receive and Invoice the PO Items option to enter a shipment/invoice receipt for a purchase order. If you are using Workflow, the purchase order must be approved before you can receive against it. You can receive against a purchase order that doesn’t need approval.
+Use the Select Purchase Order Items window and the Receivings Transaction Entry window to receive items. After you enter or select a standard or blanket purchase order with a New, Released, or Change Order status in the Purchase Order Entry window, you can select to receive items or receive and invoice items. From the Actions button, you can select the Receive the PO Items option to enter a shipment receipt. You can select the Receive and Invoice the PO Items option to enter a shipment/invoice receipt for a purchase order. If you are using Workflow, the purchase order must be approved before you can receive against it. You can receive against a purchase order that doesn't need approval.
 
 For more information about a shipment receipt or a shipment/invoice receipt, see *Receiving a shipment* or *Receiving a shipment/invoice*. For more information about the Select Purchase Order Items window, see *Using the Select Purchase Order Items window*.
 
-If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Select Purchase Order Items window and the Receivings Transaction Entry window. To receive items with project information, see *Chapter 14, “Shipment receipt entry for projects.”*
+If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Select Purchase Order Items window and the Receivings Transaction Entry window. To receive items with project information, see *Chapter 14, "Shipment receipt entry for projects."*
 
 **To receive items from a purchase order:**
 
@@ -490,13 +490,13 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 4. The Select Purchase Order Items window and the Receivings Transaction Entry window will open.
 
-    In the Select Purchase Order Items window, New, Released, or Change Order purchase orders that have one or more items with a quantity remaining to receive will be displayed. The purchase order that you entered in the Purchase Order Entry window will be selected in the tree view. Each item on the purchase order that is available to be received in the scrolling window is marked, except for blanket line items that have a status of New. The control blanket line item for a blanket purchase order isn’t included when you receive items.
+    In the Select Purchase Order Items window, New, Released, or Change Order purchase orders that have one or more items with a quantity remaining to receive will be displayed. The purchase order that you entered in the Purchase Order Entry window will be selected in the tree view. Each item on the purchase order that is available to be received in the scrolling window is marked, except for blanket line items that have a status of New. The control blanket line item for a blanket purchase order isn't included when you receive items.
 
 5. Select a sorting option.
 
 6. Mark the check boxes next to the items to receive. To select all items displayed in the scrolling window, choose Mark All.
 
-    Blanket line items with a New status or line items with a New status for a standard purchase order with an expired contract date won’t be marked. To receive these items, you must mark the items individually.
+    Blanket line items with a New status or line items with a New status for a standard purchase order with an expired contract date won't be marked. To receive these items, you must mark the items individually.
 
     > [!NOTE]
     > When you choose Mark All or Unmark All, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.
@@ -507,15 +507,15 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 9. Choose Receive to add the items to your receipt. The Select Purchase Order Items window will close, and the items will appear in the Receivings Transaction Entry window. Taxes are calculated at this time.
 
-To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
+    To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
 
 10. In the Receivings Transaction Entry window, continue entering receipt information, if necessary, and save or post the transaction. For a shipment/invoice, you must enter the vendor document number.
 
 ### Entering an in-transit inventory receipt
 
-If you’ve entered an in-transit transfer transaction in Inventory Control, you can record the receipt of the material into the final destination site using an in-transit inventory receipt type in the Receivings Transaction Entry window. Any landed costs incurred as a result of the in-transit transfer can be recorded on the in-transit inventory receipt, as well. After you post the in-transit inventory receipt, the goods are removed from the via site and placed in the final destination site. Landed costs from in-transit transfer receipts can be invoiced just like landed costs incurred on shipments or shipment invoices in the Purchasing Invoice Entry window.
+If you've entered an in-transit transfer transaction in Inventory Control, you can record the receipt of the material into the final destination site using an in-transit inventory receipt type in the Receivings Transaction Entry window. Any landed costs incurred as a result of the in-transit transfer can be recorded on the in-transit inventory receipt, as well. After you post the in-transit inventory receipt, the goods are removed from the via site and placed in the final destination site. Landed costs from in-transit transfer receipts can be invoiced just like landed costs incurred on shipments or shipment invoices in the Purchasing Invoice Entry window.
 
-If you are using Project Accounting, the Project Number field and the Cost Category ID field are displayed in the Receivings Transaction Entry window, but you can’t enter project information for an in-transit inventory receipt.
+If you are using Project Accounting, the Project Number field and the Cost Category ID field are displayed in the Receivings Transaction Entry window, but you can't enter project information for an in-transit inventory receipt.
 
 **To enter an in-transit inventory receipt:**
 
@@ -523,7 +523,7 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 2. In the New group or its overflow menu, choose In-Transit Inventory to open the Receivings Transaction Entry window.
 
-    ![screenshot](media/POage118.jpg)
+    ![screenshot Receivings Transaction Entry](media/POage118.jpg)
 
 3. Enter the receipt date.
 
@@ -534,18 +534,18 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
     See *Creating a receipt batch* for more information.
 
-5. Enter or select the transfer number for which you’re entering a receipt. You can receive items from multiple transfer numbers by entering or selecting a different transfer number in a new row.
+5. Enter or select the transfer number for which you're entering a receipt. You can receive items from multiple transfer numbers by entering or selecting a different transfer number in a new row.
 
-6. Enter items using either the vendor’s item number or your company’s item number. You also can enter a non-inventoried item.
+6. Enter items using either the vendor's item number or your company's item number. You also can enter a non-inventoried item.
 
     To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
 7. Enter the quantity shipped.
 
     > [!NOTE]
-    > The In-Transit Lot Number Entry window or the In-Transit Serial Number Entry window opens if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window opens if an item that isn’t tracked by lot or serial numbers requires that you enter bin information.
+    > The In-Transit Lot Number Entry window or the In-Transit Serial Number Entry window opens if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window opens if an item that isn't tracked by lot or serial numbers requires that you enter bin information.
 
-    If you’re using multiple bins and you change the quantity shipped or the unit of measure after selecting bins for an item, you might have to modify the bin information.
+    If you're using multiple bins and you change the quantity shipped or the unit of measure after selecting bins for an item, you might have to modify the bin information.
 
 8. You can change the site ID to receive line items to a location other than the location specified on the in-transit transfer, if the Change Site ID in Receiving option is marked in Purchase Order Processing Setup window. Changing the site on the receipt will not change the site on the in-transit transfer.
 
@@ -559,7 +559,7 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 12. Choose Save or Post. If you post the receipt, one or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window.
 
-If you’ve entered a batch ID, you can’t post the transaction individually; you must use batch posting, series posting, or master posting. For more information, see *Chapter 12, “Receipt batches.”*
+If you've entered a batch ID, you can't post the transaction individually; you must use batch posting, series posting, or master posting. For more information, see *Chapter 12, "Receipt batches."*
 
 ### Using the Select In-Transit Items window
 
@@ -571,19 +571,19 @@ The sorting option you select determines the order in which objects appear in th
 
 - **Transfer/Items** Objects in the tree view and scrolling window are sorted first by transfer number, then by the order items were entered on the transfers.
 
-    ![screenshot](media/POage120.jpg)
+    ![screenshot Transfer/Items](media/POage120.jpg)
 
 - **Item Number/Transfer** Objects in the tree view and scrolling window are sorted first by item number, then by transfer number under each item.
 
-    ![screenshot](media/POage122.jpg)
+    ![screenshot Item Number/Transfer](media/POage122.jpg)
 
 - **Site/Transfer/Item Number** Objects in the tree view and scrolling window are sorted first by site, then by transfer number under each site, then by item number under each transfer.
 
-    ![screenshot](media/POage124.jpg)
+    ![screenshot Site/Transfer/Item Number](media/POage124.jpg)
 
 - **Site/Item Number/Transfer** Objects in the tree view and scrolling window are sorted first by site, then by item number under each site, then by transfer number under each item.
 
-    ![screenshot](media/POage126.jpg)
+    ![screenshot Site/Item Number/Transfer](media/POage126.jpg)
 
 ### Receiving items from in-transit transfers
 
@@ -601,7 +601,7 @@ Use the Select In-Transit Items window to receive line items on multiple in-tran
 
     In the Select In-Transit Items window, in-transit transfers that have one or more items with a quantity remaining to receive will be displayed. Each item on the in-transit transfer that is available to be received in the scrolling window is marked.
 
-    ![screenshot](media/POage128.jpg)
+    ![screenshot Select In-Transit Items ](media/POage128.jpg)
 
 5. Select a sorting option.
 
@@ -612,7 +612,7 @@ Use the Select In-Transit Items window to receive line items on multiple in-tran
 
 7. Select whether to display all items or only items marked to receive.
 
-8. Edit Quantity Shipped, if necessary. You can’t enter a quantity shipped that is greater than the quantity remaining to be received. If you edit an item in the scrolling window, it will be marked to receive.
+8. Edit Quantity Shipped, if necessary. You can't enter a quantity shipped that is greater than the quantity remaining to be received. If you edit an item in the scrolling window, it will be marked to receive.
 
 9. Choose the Receive button to add the items to your receipt. The Select In-Transit Items window will close, and the items will appear in the Receivings Transaction Entry window.
 
@@ -622,9 +622,9 @@ Use the Select In-Transit Items window to receive line items on multiple in-tran
 
 ## Chapter 14: Shipment receipt entry for projects
 
-If you are using Project Accounting, you can enter a shipment receipt to record shipments received for purchase orders entered for projects. You can enter shipment receipts and shipment/invoice receipts in Purchase Order Processing. Enter a shipment/invoice receipt to record the receipt of goods and services accompanied by an invoice. Enter a shipment receipt to record the receipt of goods and services without an invoice. You can enter receipt transactions in a batch or enter and post them individually. Receipts can’t be saved unless they’re in a batch.
+If you are using Project Accounting, you can enter a shipment receipt to record shipments received for purchase orders entered for projects. You can enter shipment receipts and shipment/invoice receipts in Purchase Order Processing. Enter a shipment/invoice receipt to record the receipt of goods and services accompanied by an invoice. Enter a shipment receipt to record the receipt of goods and services without an invoice. You can enter receipt transactions in a batch or enter and post them individually. Receipts can't be saved unless they're in a batch.
 
-To enter a shipment/invoice receipt or a shipment receipt for a blanket purchase order, refer to *Chapter 13, “Shipment and in-transit inventory receipt entry.”*
+To enter a shipment/invoice receipt or a shipment receipt for a blanket purchase order, refer to *Chapter 13, "Shipment and in-transit inventory receipt entry."*
 
 This information is divided into the following sections:
 
@@ -642,13 +642,13 @@ This information is divided into the following sections:
 
 ### Receiving a shipment/invoice for projects
 
-Use the Receivings Transaction Entry window to record a shipment/invoice if you’ve received an invoice and merchandise at the same time. The inventory quantity on hand will be updated for the items received and the vendor’s account will be increased. You can include items from multiple purchase orders (from a single vendor) on a shipment/invoice receipt. To enter a shipment/invoice receipt for a blanket purchase order, refer to *Chapter 13, “Shipment and in-transit inventory receipt entry.”*
+Use the Receivings Transaction Entry window to record a shipment/invoice if you've received an invoice and merchandise at the same time. The inventory quantity on hand will be updated for the items received and the vendor's account will be increased. You can include items from multiple purchase orders (from a single vendor) on a shipment/invoice receipt. To enter a shipment/invoice receipt for a blanket purchase order, refer to *Chapter 13, "Shipment and in-transit inventory receipt entry."*
 
 When you enter a shipment/invoice receipt for a non-inventoried item and then save or post the transaction, the project costs will be updated automatically. For an inventoried item, the actual costs for the item will be updated automatically. You can receive against line items with New, Released, Change Order, or Received statuses.
 
-If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don’t need approval.
+If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don't need approval.
 
-You can’t enter a shipment/invoice receipt for a purchase order that is on hold. If a purchase order is placed on hold after its shipment/invoice receipt is saved to a batch, the receipt for that purchase order will not be posted and will remain in the batch.
+You can't enter a shipment/invoice receipt for a purchase order that is on hold. If a purchase order is placed on hold after its shipment/invoice receipt is saved to a batch, the receipt for that purchase order will not be posted and will remain in the batch.
 
 You can use the View \>\> Currency menu option or the currency list button to view currency amounts in the Receivings Transaction Entry window in the originating or functional currency.
 
@@ -657,7 +657,7 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 1. Open the Receivings Transaction Entry window.
     (Purchasing \>\> Transactions \>\> Receivings Transaction Entry)
 
-![screenshot](media/POage130.jpg)
+    ![screenshot Receivings Transaction Entry](media/POage130.jpg)
 
 2. Select Shipment/Invoice as the document type for the transaction.
 
@@ -667,59 +667,61 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 5. Enter the receipt date.
 
-*To enter a General Ledger posting date that is different from the transaction date, choose the Date expansion button; the Receivings Date Entry window will open, where you can enter date information.*
+    > [!NOTE]
+    > To enter a General Ledger posting date that is different from the transaction date, choose the Date expansion button; the Receivings Date Entry window will open, where you can enter date information.
 
-For multicurrency transactions, the document date determines which exchange rate is used, based on the currency ID and the associated rate type entered for the transaction.
+    For multicurrency transactions, the document date determines which exchange rate is used, based on the currency ID and the associated rate type entered for the transaction.
 
 6. Enter or select a batch ID (optional).
 
-In multicurrency transactions, if the batch posting date does not fall on or before the exchange rate’s expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt.
+    In multicurrency transactions, if the batch posting date does not fall on or before the exchange rate's expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt.
 
-See *Creating a receipt batch* for more information.
+    See *Creating a receipt batch* for more information.
 
 7. Enter or select a vendor ID.
 
 8. Enter or select a currency ID. If a currency ID is assigned to the vendor you select, it will appear in the Currency ID field. The currency ID assigned to the shipment/invoice must match the currency ID of the purchase orders being received against.
 
-9. Enter or select the purchase order number for which you’re receiving a shipment/invoice. You can receive items from multiple purchase orders by entering or selecting a different purchase order number in a new row. See *Receiving items for projects from multiple purchase orders* for more information.
+9. Enter or select the purchase order number for which you're receiving a shipment/invoice. You can receive items from multiple purchase orders by entering or selecting a different purchase order number in a new row. See *Receiving items for projects from multiple purchase orders* for more information.
 
-If the Allow Receiving Without a Purchase Order option is marked in the Purchase Order Processing Setup window, you can leave the PO Number field blank.
+    If the Allow Receiving Without a Purchase Order option is marked in the Purchase Order Processing Setup window, you can leave the PO Number field blank.
 
-You can enter a purchase order that hasn’t been printed if the Allow Receiving of Unprinted PO option is marked in the PA Purchase Order Processing Setup Options window.
+    You can enter a purchase order that hasn't been printed if the Allow Receiving of Unprinted PO option is marked in the PA Purchase Order Processing Setup Options window.
 
 10. Enter a project number and cost category ID.
 
-You can’t enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display the vendor items.
+    You can't enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display the vendor items.
 
-11. Enter one or more items using your company’s item number.s You also can enter non-inventoried items.
+11. Enter one or more items using your company's item number.s You also can enter non-inventoried items.
 
-Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn’t assigned to a budget, you must add the item to the budget.
+    Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn't assigned to a budget, you must add the item to the budget.
 
-To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
+    To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
 12. Enter the quantity shipped.
 
-*The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window will open if an item that isn’t tracked by lot or serial numbers requires you to enter bin information.*
+    > [!NOTE]
+    > The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window will open if an item that isn't tracked by lot or serial numbers requires you to enter bin information.
 
-If you’re using multiple bins and you change the quantity shipped or the unit of measure after selecting bins for an item, you might have to modify the bin information.
+    If you're using multiple bins and you change the quantity shipped or the unit of measure after selecting bins for an item, you might have to modify the bin information.
 
 13. You can edit the unit cost or extended cost, if the Allow Editing of Costs in Receiving option is marked in the Purchase Order Processing Setup window.
 
 14. You can change the site ID to receive line items to a location other than the location specified on the purchase order, if the option is marked in Purchase Order Processing Setup. Changing the site on the receipt will not change the site on the purchase order.
 
-If you are using multiple bins and you change the site ID, the default purchase receipts bin assigned to the new site ID will replace your previous bin selections. If the item is tracked by serial or lot numbers, your previous lot number or serial number selections are removed. The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open for you to assign lot numbers or serial numbers. You can change the bin.
+    If you are using multiple bins and you change the site ID, the default purchase receipts bin assigned to the new site ID will replace your previous bin selections. If the item is tracked by serial or lot numbers, your previous lot number or serial number selections are removed. The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open for you to assign lot numbers or serial numbers. You can change the bin.
 
-15. Enter the quantity invoiced, which is the number of items on the vendor’s invoice.
+15. Enter the quantity invoiced, which is the number of items on the vendor's invoice.
 
 16. Enter trade discount, freight, miscellaneous, and tax amounts.
 
-Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, “Taxes for receipts.”* You can't change the Tax amount in the Receivings Transaction Entry window even if your system is set up to allow editing summary-level taxes. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for shipment/ invoice line items*.
+    Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, "Taxes for receipts."* You can't change the Tax amount in the Receivings Transaction Entry window even if your system is set up to allow editing summary-level taxes. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for shipment/ invoice line items*.
 
 17. Enter or accept the 1099 amount, if applicable.
 
 18. Enter or accept the payment terms and tax schedule ID.
 
-19. To enter an amount received, choose the Amount Received expansion button to open the PA Receivings Amount Received Entry window. You can enter the amount you’re paying by cash, check, or credit card.
+19. To enter an amount received, choose the Amount Received expansion button to open the PA Receivings Amount Received Entry window. You can enter the amount you're paying by cash, check, or credit card.
 
 20. Choose the Attachment Management icon to attach documents to the shipment/invoice, if applicable.
 
@@ -733,27 +735,27 @@ Taxes will be calculated automatically as you enter items. For more information 
 
     - To restore the original distributions, choose Default.
 
-If you are using landed costs, the distributions for a landed cost won’t be displayed in the Purchasing Distribution Entry window. To view landed cost distributions, print the Receivings Edit List.
+    If you are using landed costs, the distributions for a landed cost won't be displayed in the Purchasing Distribution Entry window. To view landed cost distributions, print the Receivings Edit List.
 
-See *Distributing transaction amounts for shipment receipts* for more information.
+    See *Distributing transaction amounts for shipment receipts* for more information.
 
 23. Choose User-Defined to open the Receivings User-Defined Fields Entry window, where you can enter user-defined information for this receipt.
 
 24. Choose Save or Post. If you post the receipt, one or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window.
 
-If you’ve entered a batch ID, you can’t post the transaction individually; you must use batch posting, series posting, or master posting. For more information, see *Chapter 12, “Receipt batches.”*
+If you've entered a batch ID, you can't post the transaction individually; you must use batch posting, series posting, or master posting. For more information, see *Chapter 12, "Receipt batches."*
 
 ### Receiving a shipment for projects
 
-Use the Receivings Transaction Entry window to record a shipment if you’ve received merchandise but haven’t received the invoice for the merchandise. A shipment receipt will increase the quantity on hand for the items received for sales and discontinued item types. You can include items from multiple purchase orders (from a single vendor) on a shipment receipt. To enter a shipment receipt for a blanket purchase order, refer to *Chapter 13, “Shipment and in-transit inventory receipt entry.”*
+Use the Receivings Transaction Entry window to record a shipment if you've received merchandise but haven't received the invoice for the merchandise. A shipment receipt will increase the quantity on hand for the items received for sales and discontinued item types. You can include items from multiple purchase orders (from a single vendor) on a shipment receipt. To enter a shipment receipt for a blanket purchase order, refer to *Chapter 13, "Shipment and in-transit inventory receipt entry."*
 
 When you enter a shipment receipt for a non-inventoried item and then save or post the transaction, the project costs will be updated automatically. For an inventoried item, the actual costs for the item will be updated automatically.
 
 You can receive against line items with New, Released, Change Order, or Received statuses.
 
-If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don’t need approval.
+If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don't need approval.
 
-You can’t enter a shipment receipt for a purchase order that is on hold. If a purchase order is placed on hold after its shipment receipt is saved to a batch, the receipt for that purchase order will not be posted and will remain in the batch.
+You can't enter a shipment receipt for a purchase order that is on hold. If a purchase order is placed on hold after its shipment receipt is saved to a batch, the receipt for that purchase order will not be posted and will remain in the batch.
 
 You can use the View \>\> Currency menu option or the currency list button to view amounts in the Receivings Transaction Entry window in originating or functional currency.
 
@@ -762,7 +764,7 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 1. Open the Receivings Transaction Entry window.
     (Purchasing \>\> Transactions \>\> Receivings Transaction Entry)
 
-![screenshot](media/POage132.jpg)
+    ![screenshot  Receivings Transaction Entry](media/POage132.jpg)
 
 2. Select Shipment as the document type for the transaction.
 
@@ -772,43 +774,44 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 5. Enter the receipt date.
 
-*To enter a General Ledger posting date that is different from the transaction date, choose the Date expansion button; the Receivings Date Entry window will open, where you can enter date information.*
+    To enter a General Ledger posting date that is different from the transaction date, choose the Date expansion button; the Receivings Date Entry window will open, where you can enter date information.*
 
-For multicurrency transactions, the document date determines which exchange rate is used, based on the currency ID and associated rate type that’s entered for the transaction.
+    For multicurrency transactions, the document date determines which exchange rate is used, based on the currency ID and associated rate type that's entered for the transaction.
 
 6. Enter or select a batch ID (optional). See *Creating a receipt batch* for more information.
 
-In multicurrency transactions, if the batch posting date does not fall on or before the exchange rate’s expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt.
+    In multicurrency transactions, if the batch posting date does not fall on or before the exchange rate's expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt.
 
 7. Enter or select the vendor ID.
 
 8. Enter or select a currency ID. If a currency ID is assigned to the vendor you select, it will appear in the Currency ID field. The currency ID assigned to the invoice must match the currency ID of the purchase order being received against.
 
-9. Enter the purchase order number for which you’re receiving a shipment. You can receive items from multiple purchase orders by entering or selecting a different purchase order number in a new row. See *Receiving items for projects from multiple purchase orders* for more information.
+9. Enter the purchase order number for which you're receiving a shipment. You can receive items from multiple purchase orders by entering or selecting a different purchase order number in a new row. See *Receiving items for projects from multiple purchase orders* for more information.
 
-If the Allow Receiving Without a Purchase Order option is marked in the Purchase Order Processing Setup window, you can leave the PO Number field blank.
+    If the Allow Receiving Without a Purchase Order option is marked in the Purchase Order Processing Setup window, you can leave the PO Number field blank.
 
-You can enter a purchase order that hasn’t been printed if the Allow Receiving of Unprinted PO option is marked in the PA Purchase Order Processing Setup Options window.
+    You can enter a purchase order that hasn't been printed if the Allow Receiving of Unprinted PO option is marked in the PA Purchase Order Processing Setup Options window.
 
 10. Enter a project number and cost category ID.
 
-You can’t enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display the vendor items.
+    You can't enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display the vendor items.
 
-11. Enter one or more items using your company’s item numbers. You also can enter non-inventoried items.
+11. Enter one or more items using your company's item numbers. You also can enter non-inventoried items.
 
-Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn’t assigned to a budget, you must add the item to the budget.
+    Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn't assigned to a budget, you must add the item to the budget.
 
-To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
+    To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
 12. You can change the site ID to receive line items to a location other than the location specified on the purchase order, if the option is marked in Purchase Order Processing Setup. Changing the site on the receipt will not change the site on the purchase order.
 
-If you are using multiple bins and you change the site ID, the default purchase receipts bin assigned to the new site ID will replace your previous bin selections. If the item is tracked by serial or lot numbers, your previous lot number or serial number selections are removed. The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open for you to assign lot numbers or serial numbers. You can change the bin.
+    If you are using multiple bins and you change the site ID, the default purchase receipts bin assigned to the new site ID will replace your previous bin selections. If the item is tracked by serial or lot numbers, your previous lot number or serial number selections are removed. The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open for you to assign lot numbers or serial numbers. You can change the bin.
 
 13. Enter the quantity shipped.
 
-*The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window will open if an item that isn’t tracked by lot or serial numbers requires you to enter bin information.*
+    > [!NOTE]
+    > The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window will open if an item that isn't tracked by lot or serial numbers requires you to enter bin information.
 
-If you're using multiple bins and you change the quantity shipped or the unit of measure after selecting bins for an item, you might have to modify the bin information.
+    If you're using multiple bins and you change the quantity shipped or the unit of measure after selecting bins for an item, you might have to modify the bin information.
 
 14. You can edit the unit cost or extended cost, if the Allow Editing of Costs in Receiving option is marked in Purchase Order Processing Setup.
 
@@ -824,19 +827,19 @@ If you're using multiple bins and you change the quantity shipped or the unit of
 
     - To restore the original distributions, choose Default.
 
-If you are using landed costs, the distributions for a landed cost won’t be displayed in the Purchasing Distribution Entry window. To view landed cost distributions, print the Receivings Edit List.
+    If you are using landed costs, the distributions for a landed cost won't be displayed in the Purchasing Distribution Entry window. To view landed cost distributions, print the Receivings Edit List.
 
-See *Distributing transaction amounts for shipment receipts* for more information.
+    See *Distributing transaction amounts for shipment receipts* for more information.
 
 18. Choose User-Defined to open the Receivings User-Defined Fields Entry window, where you can enter user-defined information for this receipt.
 
 19. Choose Save or Post. If you post the receipt, one or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window.
 
-If you’ve entered a batch ID, you can’t post the transaction individually; you must use batch posting, series posting, or master posting. For more information, see *Chapter 12, “Receipt batches.”*
+If you've entered a batch ID, you can't post the transaction individually; you must use batch posting, series posting, or master posting. For more information, see *Chapter 12, "Receipt batches."*
 
 ### Receiving project items without a purchase order
 
-In the Receivings Transaction Entry window, you have the option to receive items that weren’t included on the original purchase order or receive items without a purchase order.
+In the Receivings Transaction Entry window, you have the option to receive items that weren't included on the original purchase order or receive items without a purchase order.
 
 To set up this option, you must select to allow receiving items without a purchase order in the Purchase Order Processing Setup window. You may assign a password that must be entered before entering a line item not assigned to a purchase order.
 
@@ -849,25 +852,25 @@ To set up this option, you must select to allow receiving items without a purcha
 
 3. Enter the receipt number, vendor document number, date, and vendor ID.
 
-4. Enter a project number and cost category ID. If the item that you’re receiving isn’t assigned to a project because the item isn’t assigned to a budget, enter \<NONE\> or leave the Project No. field blank. If there isn’t a project number, you can leave the Cost Category field blank. If the item is assigned to a project, you must enter a cost category.
+4. Enter a project number and cost category ID. If the item that you're receiving isn't assigned to a project because the item isn't assigned to a budget, enter \<NONE\> or leave the Project No. field blank. If there isn't a project number, you can leave the Cost Category field blank. If the item is assigned to a project, you must enter a cost category.
 
-You can’t enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display vendor items.
+    You can't enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display vendor items.
 
-5. To add items that weren’t included on the original purchase order, leave the PO number field blank. You don’t have to enter a purchase order if you’ve set up the system to allow receiving items without a purchase order.
+5. To add items that weren't included on the original purchase order, leave the PO number field blank. You don't have to enter a purchase order if you've set up the system to allow receiving items without a purchase order.
 
-Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn’t assigned to a budget, you must add the item to the budget. You cannot add a new inventoried item if the Allow Entry of New Budgets/Materials option is not marked in the User Purchase Order Settings window. See *Inventoried items and non-inventoried items for projects* for more information.
+    Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn't assigned to a budget, you must add the item to the budget. You cannot add a new inventoried item if the Allow Entry of New Budgets/Materials option is not marked in the User Purchase Order Settings window. See *Inventoried items and non-inventoried items for projects* for more information.
 
 6. Continue entering the receipt.
 
-You must enter the unit cost of non-inventoried items.
+    You must enter the unit cost of non-inventoried items.
 
 7. In the Receivings Transaction Entry window, save or post the transaction.
 
 ### Receiving items for projects using the Select Purchase Order window
 
-Use the Select Purchase Order window to select a purchase order to quickly enter line items on a shipment or shipment/invoice. See *Receiving a shipment for projects* or *Receiving a shipment/invoice for projects* for more information. To receive items on a blanket purchase order, refer to *Chapter 13, “Shipment and intransit inventory receipt entry.”*
+Use the Select Purchase Order window to select a purchase order to quickly enter line items on a shipment or shipment/invoice. See *Receiving a shipment for projects* or *Receiving a shipment/invoice for projects* for more information. To receive items on a blanket purchase order, refer to *Chapter 13, "Shipment and intransit inventory receipt entry."*
 
-If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don’t need approval.
+If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don't need approval.
 
 **To receive items for projects using the Select Purchase Order window:**
 
@@ -880,15 +883,16 @@ If you are using Workflow, the purchase order must be approved before you can re
 
 4. Choose Auto-Rcv to automatically receive items. The Select Purchase Order window will open.
 
-*If you entered a vendor ID, the Select Purchase Order Items window will open instead of the Select Purchase Order window.*
+    > [!NOTE]
+    > If you entered a vendor ID, the Select Purchase Order Items window will open instead of the Select Purchase Order window.
 
-![screenshot](media/POage134.jpg)
+    ![screenshot Select Purchase Order](media/POage134.jpg)
 
 5. Enter or select a purchase order for which you want to receive line items.
 
 6. Choose Receive All in the Select Purchase Order window to automatically receive all items on the selected purchase order.
 
-If you choose to view details in the Select Purchase Order window, the Select Purchase Order Items window will open, and the purchase order line items will be marked to receive. Choose Receive to automatically receive items on the selected purchase order.
+    If you choose to view details in the Select Purchase Order window, the Select Purchase Order Items window will open, and the purchase order line items will be marked to receive. Choose Receive to automatically receive items on the selected purchase order.
 
 7. In the Receivings Transaction Entry window, continue entering receipt information, if necessary, and save or post the transaction.
 
@@ -896,9 +900,9 @@ If you choose to view details in the Select Purchase Order window, the Select Pu
 
 Use the Select Purchase Order Items window to receive line items for projects on multiple purchase orders. New, Released, or Change Order purchase orders that have one or more items with a quantity remaining to receive will be displayed. See *Receiving a shipment for projects* or *Receiving a shipment/invoice for projects* for more information.
 
-To receive items from multiple blanket purchase orders, refer to *Chapter 13, “Shipment and in-transit inventory receipt entry.”*
+To receive items from multiple blanket purchase orders, refer to *Chapter 13, "Shipment and in-transit inventory receipt entry."*
 
-If you are using Workflow, the purchase orders must be approved before you can receive against them. You can receive against purchase orders that don’t need approval.
+If you are using Workflow, the purchase orders must be approved before you can receive against them. You can receive against purchase orders that don't need approval.
 
 **To receive items for projects from multiple purchase orders for
 projects:**
@@ -914,17 +918,19 @@ projects:**
 
 5. Choose the Auto-Rcv button. The Select Purchase Order Items window will open.
 
-New, Released, or Change Order purchase orders that have one or more items with a quantity remaining to receive will be displayed.
+    New, Released, or Change Order purchase orders that have one or more items with a quantity remaining to receive will be displayed.
 
-If only a Vendor ID is displayed, the selected vendor does not have any New, Released, or Change Order purchase orders with items to receive. Only purchase orders with currency IDs that match the receipt will be displayed.
+    If only a Vendor ID is displayed, the selected vendor does not have any New, Released, or Change Order purchase orders with items to receive. Only purchase orders with currency IDs that match the receipt will be displayed.
 
-*If you know the purchase order number but not the vendor ID, you can choose AutoRcv without entering a vendor ID. The Select Purchase Order window will open. The vendor and currency ID for the receipt will come from the purchase order you select.*
+    > [!TIP]
+    > If you know the purchase order number but not the vendor ID, you can choose AutoRcv without entering a vendor ID. The Select Purchase Order window will open. The vendor and currency ID for the receipt will come from the purchase order you select.
 
 6. Select a sorting option.
 
 7. Mark the check boxes next to the items you want to receive. To select all items displayed in the scrolling window, choose Mark All.
 
-*When you choose Mark All or Unmark All in the Select Purchase Order Items window, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.*
+    > [!NOTE]
+    > When you choose Mark All or Unmark All in the Select Purchase Order Items window, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.
 
 8. Select whether to display all items or only items marked to receive.
 
@@ -932,7 +938,7 @@ If only a Vendor ID is displayed, the selected vendor does not have any New, Rel
 
 10. Choose the Receive button to add the items to your receipt. The Select Purchase Order Items window will close, and the items will appear in the Receivings Transaction Entry window. Taxes are calculated at this time.
 
-To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
+    To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
 
 11. In the Receivings Transaction Entry window, save or post the receipt.
 
@@ -940,11 +946,11 @@ To cancel your selections, choose Cancel. To revert all displayed items to unmar
 
 Use the Select Purchase Order Items window and the Receivings Transaction Entry window to receive items. After you enter or select a standard order with New, Released, or Change Order statuses in the Purchase Order Entry window, you can select to receive items or receive and invoice items. From the Actions button, you can select the Receive the PO Items option from the Actions button to enter a shipment receipt. You can select the Receive and Invoice the PO Items option to enter a shipment/invoice receipt for a purchase order.
 
-If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don’t need approval.
+If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don't need approval.
 
 For more information about a shipment receipt or a shipment/invoice receipt, see *Receiving a shipment for projects* or *Receiving a shipment/invoice for projects*. For more information about the Select Purchase Order Items window, see *Using the Select Purchase Order Items window*.
 
-To receive items from a blanket purchase order, refer to *Chapter 13, “Shipment and in-transit inventory receipt entry.”*
+To receive items from a blanket purchase order, refer to *Chapter 13, "Shipment and in-transit inventory receipt entry."*
 
 **To receive items for projects from a purchase order:**
 
@@ -955,19 +961,20 @@ To receive items from a blanket purchase order, refer to *Chapter 13, “Shipmen
 
 3. Choose Actions, and then select one of the following options.
 
-- If you are receiving goods and services without an invoice, select Receive the PO Items.
+    - If you are receiving goods and services without an invoice, select Receive the PO Items.
 
-- If you are receiving goods and services accompanied by an invoice, select Receive and Invoice the PO Items.
+    - If you are receiving goods and services accompanied by an invoice, select Receive and Invoice the PO Items.
 
 4. The Select Purchase Order Items window and the Receivings Transaction Entry window will open.
 
-In the Select Purchase Order Items window, New, Released, or Change Order purchase orders that have one or more items with a quantity remaining to receive will be displayed. The purchase order that you entered in the Purchase Order Entry window will be selected in the tree view. Each item on the purchase order that is available to be received in the scrolling window is marked.
+    In the Select Purchase Order Items window, New, Released, or Change Order purchase orders that have one or more items with a quantity remaining to receive will be displayed. The purchase order that you entered in the Purchase Order Entry window will be selected in the tree view. Each item on the purchase order that is available to be received in the scrolling window is marked.
 
 5. Select a sorting option.
 
 6. Mark the check boxes next to the items to receive. To select all items displayed in the scrolling window, choose Mark All.
 
-*When you choose Mark All or Unmark All, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.*
+    > [!NOTE]
+    > When you choose Mark All or Unmark All, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.
 
 7. Select whether to display all items or only items marked to receive.
 
@@ -975,7 +982,7 @@ In the Select Purchase Order Items window, New, Released, or Change Order purcha
 
 9. Choose Receive to add the items to your receipt. The Select Purchase Order Items window will close, and the items will appear in the Receivings Transaction Entry window. Taxes are calculated at this time.
 
-To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
+    To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
 
 10. In the Receivings Transaction Entry window, continue entering receipt information, if necessary, and save or post the transaction. For a shipment/invoice, you must enter the vendor document number.
 
@@ -1023,9 +1030,9 @@ This information is divided into the following sections:
 
 ### Entering detail information for a purchasing receipt
 
-Use the Receivings Item Detail Entry window to add or modify line item information such as rejected quantities, or to change a line item’s posting accounts. If you select an item in the Receivings Transaction Entry window before opening this window, information for that item will be displayed.
+Use the Receivings Item Detail Entry window to add or modify line item information such as rejected quantities, or to change a line item's posting accounts. If you select an item in the Receivings Transaction Entry window before opening this window, information for that item will be displayed.
 
-If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Receivings Item Detail Entry window, but you can’t enter project information for blanket purchase order line items. To enter additional information for a line item assigned to a project, see *Entering project item detail information for a purchasing receipt*.
+If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Receivings Item Detail Entry window, but you can't enter project information for blanket purchase order line items. To enter additional information for a line item assigned to a project, see *Entering project item detail information for a purchasing receipt*.
 
 **To enter detail information for a purchasing receipt:**
 
@@ -1034,49 +1041,51 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 2. Enter or select a receipt number and vendor and open the Receivings Item Detail Entry window by choosing the Vendor Item or Item expansion button.
 
-![screenshot](media/POage136.jpg)
+    ![screenshot Receivings Item Detail Entry](media/POage136.jpg)
 
-Currency amounts in this window may be displayed in the functional or originating currency, depending on the view selected in the Receivings Transaction Entry window.
+    Currency amounts in this window may be displayed in the functional or originating currency, depending on the view selected in the Receivings Transaction Entry window.
 
-3. Enter the purchase order number for which you’re receiving a shipment. You can receive items from multiple purchase orders by entering or selecting a different purchase order number in a new row. See *Receiving items from multiple purchase orders* for more information.
+3. Enter the purchase order number for which you're receiving a shipment. You can receive items from multiple purchase orders by entering or selecting a different purchase order number in a new row. See *Receiving items from multiple purchase orders* for more information.
 
-If the Allow Receiving Without a Purchase Order option is marked in Purchase Order Processing Setup, you can leave the PO Number field blank.
+    If the Allow Receiving Without a Purchase Order option is marked in Purchase Order Processing Setup, you can leave the PO Number field blank.
 
-If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don’t need approval.
+    If you are using Workflow, the purchase order must be approved before you can receive against the purchase order. You can receive against purchase orders that don't need approval.
 
 4. If you are entering an item for a project, assign a project number and cost category ID.
 
-You can’t enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display the vendor items.
+    You can't enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display the vendor items.
 
-5. Enter or select the number of the vendor item or item you’re receiving. You also can enter a non-inventoried item.
+5. Enter or select the number of the vendor item or item you're receiving. You also can enter a non-inventoried item.
 
-Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn’t assigned to a budget, you must add the item to the budget. See *Inventoried items and non-inventoried items for projects* for more information.
+    Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn't assigned to a budget, you must add the item to the budget. See *Inventoried items and non-inventoried items for projects* for more information.
 
 6. Enter the quantity shipped.
 
-*The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window will open if an item that isn’t tracked by lot or serial numbers requires you to enter bin information. You can't assign serial or lot numbers to a non-inventoried item.*
+    > [!NOTE]
+    > The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window will open if an item that isn't tracked by lot or serial numbers requires you to enter bin information. You can't assign serial or lot numbers to a non-inventoried item.
 
-An icon will be displayed in the Qty Shipped field for purchase order line items with sales commitments. Select a line item and choose the button next to the Qty Shipped heading to view or prioritize commitments in the Sales Commitments for Purchase Order window. For more information, see *Committing purchase orders to sales documents*. If you are using Project Accounting, you can’t commit purchase order line items for projects to Sales Order Processing line items.
+    An icon will be displayed in the Qty Shipped field for purchase order line items with sales commitments. Select a line item and choose the button next to the Qty Shipped heading to view or prioritize commitments in the Sales Commitments for Purchase Order window. For more information, see *Committing purchase orders to sales documents*. If you are using Project Accounting, you can't commit purchase order line items for projects to Sales Order Processing line items.
 
-If you're using multiple bins and you change the quantity shipped or the unit of measure after selecting bins for an item, you might have to modify the bin information.
+    If you're using multiple bins and you change the quantity shipped or the unit of measure after selecting bins for an item, you might have to modify the bin information.
 
 7. If you want to enter landed costs for an item, choose the Unit Cost expansion button to open the Receivings Landed Cost Entry window. See *Entering landed costs for a shipment item* for more information.
 
 8. You can change the site ID to receive line items to a location other than the location specified on the purchase order, if the option is marked in Purchase Order Processing Setup. Changing the site on the receipt will not change the site on the purchase order.
 
-If you are using multiple bins and you change the site ID, the default purchase receipts bin assigned to the new site ID will replace your previous bin selections. If the item is tracked by serial or lot numbers, your previous lot number or serial number selections are removed. The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open for you to assign lot numbers or serial numbers. You can change the bin.
+    If you are using multiple bins and you change the site ID, the default purchase receipts bin assigned to the new site ID will replace your previous bin selections. If the item is tracked by serial or lot numbers, your previous lot number or serial number selections are removed. The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open for you to assign lot numbers or serial numbers. You can change the bin.
 
-If you’re using landed costs and change the site ID, the landed cost group ID will change to the landed cost group ID assigned to the item at the new site. You can specify a landed cost group for each item-site combination in the Item Quantities Maintenance window.
+    If you're using landed costs and change the site ID, the landed cost group ID will change to the landed cost group ID assigned to the item at the new site. You can specify a landed cost group for each item-site combination in the Item Quantities Maintenance window.
 
-9. Enter the quantity invoiced, which is the number of items on the vendor’s invoice.
+9. Enter the quantity invoiced, which is the number of items on the vendor's invoice.
 
 10. The default accounts for posting the receipt and for posting purchase price variances will be displayed. If no accounts are displayed, you can enter them.
 
-Default accounts come from the purchase order. If you’re receiving without a purchase order, the default accounts will come from the item. If there are no accounts associated with an inventoried item, the accounts will come from Posting Accounts Setup. If there are no accounts associated with a noninventoried item, the accounts will come from the vendor or Posting Accounts Setup.
+    Default accounts come from the purchase order. If you're receiving without a purchase order, the default accounts will come from the item. If there are no accounts associated with an inventoried item, the accounts will come from Posting Accounts Setup. If there are no accounts associated with a noninventoried item, the accounts will come from the vendor or Posting Accounts Setup.
 
 11. Enter the quantity rejected, if any, and a rejected comment ID. You also can enter a comment explaining the reason for rejecting the goods. For more information about comments, see *Adding comments to purchasing documents*.
 
-*Rejecting an item assumes that the vendor will be replacing the goods. If the goods won’t be replaced, you should enter a quantity canceled instead.*
+    > [!NOTE]
+    > Rejecting an item assumes that the vendor will be replacing the goods. If the goods won't be replaced, you should enter a quantity canceled instead.
 
 12. In the BOL/Pro No. field, enter the bill of lading or progressive number assigned to the shipment by the carrier.
 
@@ -1084,7 +1093,7 @@ Default accounts come from the purchase order. If you’re receiving without a p
 
 14. Enter or accept the item tax option and the tax schedule IDs. The tax information is available only for shipment/invoices.
 
-Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, “Taxes for receipts.”* If you want to change the tax amounts for the document, see *Calculating and distributing summary taxes for shipment/invoice receipts*. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for shipment/invoice line items*.
+    Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, "Taxes for receipts."* If you want to change the tax amounts for the document, see *Calculating and distributing summary taxes for shipment/invoice receipts*. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for shipment/invoice line items*.
 
 15. Enter the actual date the vendor shipped the order (optional).
 
@@ -1092,7 +1101,7 @@ Taxes will be calculated automatically as you enter items. For more information 
 
 ### Entering detail information for an in-transit inventory receipt
 
-Use the Receivings Item Detail Entry window to modify line item information such as rejected quantities, or to change a line item’s posting account. If you select an item in the Receivings Transaction Entry window before opening this window, information for that item will be displayed.
+Use the Receivings Item Detail Entry window to modify line item information such as rejected quantities, or to change a line item's posting account. If you select an item in the Receivings Transaction Entry window before opening this window, information for that item will be displayed.
 
 **To enter detail information for an in-transit inventory receipt:**
 
@@ -1101,31 +1110,33 @@ Use the Receivings Item Detail Entry window to modify line item information such
 
 2. Enter or select a receipt number and open the Receivings Item Detail Entry window by choosing the Item expansion button.
 
-3. Enter the transfer number for which you’re entering a receipt. You can receive items from multiple in-transit transfers by entering or selecting a different transfer number in a new row.
+3. Enter the transfer number for which you're entering a receipt. You can receive items from multiple in-transit transfers by entering or selecting a different transfer number in a new row.
 
 4. Enter or select the number of the item.
 
 5. Enter the quantity shipped.
 
-*The In-Transit Lot Number Entry window or the In-Transit Serial Number Entry window opens if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window opens if an item that isn’t tracked by lot or serial numbers requires you to enter bin information.*
+    > [!NOTE]
+    > The In-Transit Lot Number Entry window or the In-Transit Serial Number Entry window opens if the item requires that you assign lot or serial numbers. If you are using multiple bins, you also can enter a bin number for the serial or lot number. The Bin Quantity Entry window opens if an item that isn't tracked by lot or serial numbers requires you to enter bin information.
 
-If you’re using multiple bins and you change the quantity shipped after selecting bins for an item, you might have to modify the bin information.
+    If you're using multiple bins and you change the quantity shipped after selecting bins for an item, you might have to modify the bin information.
 
 6. If you want to enter landed costs for an item, choose the Unit Cost expansion button to open the Receivings Landed Cost Entry window. See *Entering landed costs for a shipment item* for more information.
 
 7. You can change the site ID to receive line items to a location other than the location specified on the purchase order, if the Change Site ID in Receiving option is marked in Purchase Order Processing Setup window. Changing the site on the receipt will not change the site on the in-transit transfer.
 
-If you are using multiple bins and you change the site ID, the default purchase receipts bin assigned to the new site ID will replace your previous bin selections. If the item is tracked by serial or lot numbers, your previous lot number or serial number selections are removed. The In-Transit Lot Number Entry window or the In-Transit Serial Number Entry window opens for you to assign lot numbers or serial numbers. You can change the bin.
+    If you are using multiple bins and you change the site ID, the default purchase receipts bin assigned to the new site ID will replace your previous bin selections. If the item is tracked by serial or lot numbers, your previous lot number or serial number selections are removed. The In-Transit Lot Number Entry window or the In-Transit Serial Number Entry window opens for you to assign lot numbers or serial numbers. You can change the bin.
 
-If you’re using landed costs and change the site ID, the landed cost group ID changes to the landed cost group ID assigned to the item at the new site. You can specify a landed cost group for each item-site combination in the Item Quantities Maintenance window.
+    If you're using landed costs and change the site ID, the landed cost group ID changes to the landed cost group ID assigned to the item at the new site. You can specify a landed cost group for each item-site combination in the Item Quantities Maintenance window.
 
 8. The default account for posting the receipt is displayed. If no account is displayed, you can enter it.
 
-The inventory account assigned to the item in the Item Account Maintenance window is the default posting account. If you didn’t enter posting accounts in the Item Account Maintenance window, the inventory account entered in the Posting Setup window is used as the default entry.
+    The inventory account assigned to the item in the Item Account Maintenance window is the default posting account. If you didn't enter posting accounts in the Item Account Maintenance window, the inventory account entered in the Posting Setup window is used as the default entry.
 
 9. Enter the quantity rejected, if any, and a rejected comment ID. You also can enter a comment explaining the reason for rejecting the goods. For more information about comments, see *Adding comments to purchasing documents*.
 
-*Rejecting an item assumes that the item will be replaced. If the item won’t be replaced, you should enter a quantity canceled instead.*
+    > [!NOTE]
+    > Rejecting an item assumes that the item will be replaced. If the item won't be replaced, you should enter a quantity canceled instead.
 
 10. In the BOL/Pro No. field, enter the bill of lading or progressive number assigned to the shipment by the carrier.
 
@@ -1148,7 +1159,7 @@ You can use the PA Receivings Item Detail Entry window to add a billing note or 
 
 3. Choose the Cost Category expansion button to open the PA Receivings Item Detail Entry window.
 
-![screenshot](media/POage139.jpg)
+    ![screenshot PA Receivings Item Detail Entry](media/POage139.jpg)
 
 4. Enter or modify a billing note.
 
@@ -1173,9 +1184,9 @@ You also can enter a lot split quantity, which is the breakpoint for creating se
 
 3. Choose Lot Numbers from the Track drop-down list, then choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-![screenshot](media/POage141.jpg)
+    ![screenshot Item Serial/Lot Number Definition](media/POage141.jpg)
 
-Information for the item you selected, including the last lot number that was generated and any current mask information, will appear.
+    Information for the item you selected, including the last lot number that was generated and any current mask information, will appear.
 
 4. Enter a lot split quantity, if applicable.
 
@@ -1183,33 +1194,33 @@ Information for the item you selected, including the last lot number that was ge
 
 6. Enter a size, if you selected a character type of Alpha or Numeric.
 
-Symbol and Space character types must have a size of 1. The size of a User Date segment depends on the date format you select.
+    Symbol and Space character types must have a size of 1. The size of a User Date segment depends on the date format you select.
 
 7. Mark Increment if you want this segment to increase each time a lot number is generated. You must have at least one segment marked to increment in order to automatically generate lot numbers for an item.
 
-You can use the Increment option only if the character type is Alpha or Numeric. Symbol and space characters do not change. User date segments automatically increment when the user date changes.
+    You can use the Increment option only if the character type is Alpha or Numeric. Symbol and space characters do not change. User date segments automatically increment when the user date changes.
 
-If more than one segment is marked to increment, the segments increment from right to left. For example, assume you have incrementing segments 0001-0001. The next lot number contains the segments 0001-0002. The first segment increments when the second reaches its maximum value (from 0001-9999 to 0002-0000). If the mask contains a date segment, other incrementing segments will reset when the date segment increments.
+    If more than one segment is marked to increment, the segments increment from right to left. For example, assume you have incrementing segments 0001-0001. The next lot number contains the segments 0001-0002. The first segment increments when the second reaches its maximum value (from 0001-9999 to 0002-0000). If the mask contains a date segment, other incrementing segments will reset when the date segment increments.
 
 8. Enter starting and ending values.
 
-If you selected a type of User Date or Space, you won’t be able to set starting and ending values. If you selected a type of Symbol, you will be able to enter a single character in the starting value field.
+    If you selected a type of User Date or Space, you won't be able to set starting and ending values. If you selected a type of Symbol, you will be able to enter a single character in the starting value field.
 
 9. If you selected a character type of User Date, select a date format.
 
-10. Choose the Insert button to add the segment to the lot number mask. The segment’s starting value appears in the Lot Number Mask field.
+10. Choose the Insert button to add the segment to the lot number mask. The segment's starting value appears in the Lot Number Mask field.
 
 11. Define and insert the remaining segments. lot number masks can be a maximum of 20 characters long.
 
 12. To move a segment to a different position in the lot number mask, select the segment, then choose Up or Down.
 
-Choose Remove to delete the selected segment or choose Modify to change the selected segment’s information.
+Choose Remove to delete the selected segment or choose Modify to change the selected segment's information.
 
 ### Generating lot numbers automatically for a shipment or shipment/invoice receipt
 
 Use the Purchasing Lot Number Entry window to assign lot numbers for lottracked line items. You can assign lot numbers automatically, manually, or a combination of the two. In order to automatically generate lot numbers, you must first set up the item and its lot number mask. For more information, see *Defining a lot number mask*.
 
-If you’re using multiple bins and are generating lot numbers automatically, the bin number entered in the Purchasing Lot Number Entry window will be used with each generated lot number.
+If you're using multiple bins and are generating lot numbers automatically, the bin number entered in the Purchasing Lot Number Entry window will be used with each generated lot number.
 
 **To generate lot numbers automatically for a shipment or shipment/invoice receipt:**
 
@@ -1222,21 +1233,22 @@ If you’re using multiple bins and are generating lot numbers automatically, th
 
 4. Enter a site ID. Press TAB or choose the Quantity Shipped expansion button to open the Purchasing Lot Number Entry window. (This window will automatically open when you choose the Auto-Rcv button in the Receivings Transaction Entry window and lot-numbered items are entered for the receipt.)
 
-![screenshot](media/POage143.jpg)
+    ![screenshot Purchasing Lot Number Entry](media/POage143.jpg)
 
 5. If you are using multiple bins, enter a bin number or accept the default bin number.
 
-*To set up a lot number mask for the item, click the Lot Number Mask link in the Purchasing Lot Number Entry window to open the Item Serial/Lot Number Definition window.*
+    > [!NOTE]
+    > To set up a lot number mask for the item, click the Lot Number Mask link in the Purchasing Lot Number Entry window to open the Item Serial/Lot Number Definition window.
 
 6. Enter the lot(s) to generate (optional). The default lot(s) to generate is the Remaining to Select quantity divided by the Lot Split Quantity rounded to the next whole number.
 
 7. Edit the starting lot number, if necessary.
 
-If you modify the starting lot number, it must conform to the lot number mask. If you delete the starting lot number, you will not be able to automatically generate lot numbers for the item.
+    If you modify the starting lot number, it must conform to the lot number mask. If you delete the starting lot number, you will not be able to automatically generate lot numbers for the item.
 
 8. Choose Auto-Generate. Lot numbers for the items are inserted in the scrolling window. Numbers that already exist will be skipped.
 
-The Total Quantity Selected must equal the item’s extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
+    The Total Quantity Selected must equal the item's extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
 
 9. Choose OK to save the lot numbers that were automatically generated.
 
@@ -1264,11 +1276,11 @@ Use the Purchasing Lot Number Entry window to assign lot numbers for shipment or
 
 8. To assign values to the lot attributes for the item, choose the Lot expansion button to open the Lot Attribute Entry window.
 
-If you are using sales workflow and are tracking the minimum shelf life for the lot item, the dates that you enter in this window and the number of days entered in the Item Maintenance Options window are used to determine whether or not the item meets the minimum shelf life when you receive the item. If you are using Project Accounting, you can’t use sales workflow with project items.
+    If you are using sales workflow and are tracking the minimum shelf life for the lot item, the dates that you enter in this window and the number of days entered in the Item Maintenance Options window are used to determine whether or not the item meets the minimum shelf life when you receive the item. If you are using Project Accounting, you can't use sales workflow with project items.
 
-9. Continue entering lot numbers for the item. The Total Quantity Selected must equal the item’s extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
+9. Continue entering lot numbers for the item. The Total Quantity Selected must equal the item's extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
 
-10. Choose OK to save the lot numbers you’ve added.
+10. Choose OK to save the lot numbers you've added.
 
 ### Entering lot numbers for an in-transit inventory receipt
 
@@ -1285,7 +1297,7 @@ Use the In-Transit Lot Number Entry window to assign lot numbers for in-transit 
 
 4. Press TAB or choose the Quantity Shipped expansion button to open the InTransit Lot Number Entry window.
 
-![screenshot](media/POage145.jpg)
+    ![screenshot InTransit Lot Number Entry](media/POage145.jpg)
 
 5. If you are using multiple bins, enter a bin number or accept the default bin number.
 
@@ -1295,11 +1307,11 @@ Use the In-Transit Lot Number Entry window to assign lot numbers for in-transit 
 
 8. To assign values to the lot attributes for the item, choose the Available expansion button or the Lot Numbers Selected expansion button to open the Lot Attribute Entry window.
 
-If you are using the sales fulfillment workflow and are tracking the minimum shelf life for the lot item, the dates that you enter in this window and the number of days entered in the Item Maintenance Options window are used to determine whether or not the item meets the minimum shelf life when you receive the item.
+    If you are using the sales fulfillment workflow and are tracking the minimum shelf life for the lot item, the dates that you enter in this window and the number of days entered in the Item Maintenance Options window are used to determine whether or not the item meets the minimum shelf life when you receive the item.
 
-9. Continue entering lot numbers for the item. The Quantity Selected must equal the item’s extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
+9. Continue entering lot numbers for the item. The Quantity Selected must equal the item's extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
 
-10. Choose OK to save the lot numbers you’ve added.
+10. Choose OK to save the lot numbers you've added.
 
 ### Removing lot numbers from a shipment or shipment/ invoice receipt
 
@@ -1335,41 +1347,41 @@ Use the Item Serial/Lot Number Definition window to set up serial number masks f
 
 3. Choose Serial Numbers from the Track drop-down list, then choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-![screenshot](media/POage147.jpg)
+    ![screenshot Item Serial/Lot Number Definition](media/POage147.jpg)
 
-Information for the item you selected, including the last serial number that was generated and any current mask information, will appear.
+    Information for the item you selected, including the last serial number that was generated and any current mask information, will appear.
 
 4. Select a character type for the first segment: Numeric, Alpha, Symbol, User Date, or Space. The character type will determine which of the remaining fields are editable.
 
 5. Enter a size, if you selected a character type of Alpha or Numeric.
 
-Symbol and Space character types must have a size of 1. The size of a User Date segment depends on the date format you select.
+    Symbol and Space character types must have a size of 1. The size of a User Date segment depends on the date format you select.
 
 6. Mark Increment if you want this segment to increase each time a serial number is generated. You must have at least one segment marked to increment in order to automatically generate serial numbers for an item.
 
-You can use the Increment option only if the character type is Alpha or Numeric. Symbol and space characters do not change. User date segments automatically increment when the user date changes.
+    You can use the Increment option only if the character type is Alpha or Numeric. Symbol and space characters do not change. User date segments automatically increment when the user date changes.
 
-If more than one segment is marked to increment, the segments increment from right to left. For example, assume you have incrementing segments 0001-0001. The next serial number contains the segments 0001-0002. The first segment increments when the second reaches its maximum value (from 0001-9999 to 0002-0000). If the mask contains a date segment, other incrementing segments will reset when the date segment increments.
+    If more than one segment is marked to increment, the segments increment from right to left. For example, assume you have incrementing segments 0001-0001. The next serial number contains the segments 0001-0002. The first segment increments when the second reaches its maximum value (from 0001-9999 to 0002-0000). If the mask contains a date segment, other incrementing segments will reset when the date segment increments.
 
 7. Enter starting and ending values.
 
-If you selected a type of User Date or Space, you won’t be able to set starting and ending values. If you selected a type of Symbol, you will be able to enter a single character in the starting value field.
+    If you selected a type of User Date or Space, you won't be able to set starting and ending values. If you selected a type of Symbol, you will be able to enter a single character in the starting value field.
 
 8. If you selected a character type of User Date, select a date format.
 
-9. Choose the Insert button to add the segment to the serial number mask. The segment’s starting value appears in the Serial Number Mask field.
+9. Choose the Insert button to add the segment to the serial number mask. The segment's starting value appears in the Serial Number Mask field.
 
 10. Define and insert the remaining segments. Serial number masks can be a maximum of 20 characters long.
 
 11. To move a segment to a different position in the serial number mask, select the segment, then choose Up or Down.
 
-Choose Remove to delete the selected segment or choose Modify to change the selected segment’s information.
+Choose Remove to delete the selected segment or choose Modify to change the selected segment's information.
 
 ### Generating serial numbers automatically for a shipment or shipment/invoice receipt
 
 Use the Purchasing Serial Number Entry window to assign serial numbers for serial-tracked line items. You can assign serial numbers automatically, manually, or a combination of the two. In order to automatically generate serial numbers, you must first set up the item and its serial number mask. For more information, see *Defining a serial number mask*.
 
-If you’re using multiple bins and are generating serial numbers automatically, the bin number entered in the Purchasing Serial Number Entry window will be used with each generated serial number.
+If you're using multiple bins and are generating serial numbers automatically, the bin number entered in the Purchasing Serial Number Entry window will be used with each generated serial number.
 
 **To generate serial numbers automatically for a shipment or shipment/invoice receipt:**
 
@@ -1382,21 +1394,22 @@ If you’re using multiple bins and are generating serial numbers automatically,
 
 4. Enter a site ID. Press TAB or choose the Qty Shipped expansion button to open the Purchasing Serial Number Entry window. (This window automatically opens when you choose the Auto-Rcv. button in the Receivings Transaction Entry window and serial-numbered items are entered for the receipt.)
 
-![screenshot](media/POage149.jpg)
+    ![screenshot Purchasing Serial Number Entry](media/POage149.jpg)
 
 5. If you are using multiple bins, enter a bin number or accept the default bin number.
 
-*To set up a serial number mask for the item, click the Serial Number Mask link in the Purchasing Serial Number Entry window to open the Item Serial/Lot Number Definition window.*
+    > [!TIP]
+    > To set up a serial number mask for the item, click the Serial Number Mask link in the Purchasing Serial Number Entry window to open the Item Serial/Lot Number Definition window.
 
 6. Enter the Quantity to Generate (optional). The default Quantity to Generate is the Remaining to Select quantity.
 
 7. Edit the starting serial number, if necessary.
 
-If you modify the starting serial number, it must conform to the serial number mask. If you delete the starting serial number, you will not be able to automatically generate serial numbers for the item.
+    If you modify the starting serial number, it must conform to the serial number mask. If you delete the starting serial number, you will not be able to automatically generate serial numbers for the item.
 
 8. Choose Auto-Generate. Serial numbers for the items are inserted in the scrolling window. Numbers that already exist will be skipped.
 
-The number of serial numbers must equal the item’s extended quantity before you can return to the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
+    The number of serial numbers must equal the item's extended quantity before you can return to the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
 
 9. Choose OK to save the serial numbers that were automatically generated.
 
@@ -1415,7 +1428,7 @@ Use the Purchasing Serial Number Entry window to assign serial numbers manually 
 
 4. Enter a site ID. Press TAB or choose the Quantity Shipped expansion button to open the Purchasing Serial Number Entry window.
 
-(This window automatically opens when you choose the Auto-Rcv. button in the Receivings Transaction Entry window and serial-numbered items are entered for the receipt.)
+    This window automatically opens when you choose the Auto-Rcv. button in the Receivings Transaction Entry window and serial-numbered items are entered for the receipt.
 
 5. If you are using multiple bins, enter a default bin number or accept the default bin number.
 
@@ -1425,9 +1438,9 @@ Use the Purchasing Serial Number Entry window to assign serial numbers manually 
 
 8. Continue entering serial numbers for the item.
 
-The number of serial numbers entered must equal the item’s extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
+    The number of serial numbers entered must equal the item's extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
 
-9. Choose OK to save the serial numbers you’ve added.
+9. Choose OK to save the serial numbers you've added.
 
 ### Entering serial numbers for an in-transit inventory receipt
 
@@ -1438,13 +1451,13 @@ Use the In-Transit Serial Number Entry window to assign serial numbers for intra
 1. Open the Receivings Transaction Entry window.
     (Purchasing \>\> Transactions \>\> Receivings Transaction Entry)
 
-2. Enter or select an in-transit inventory receipt that includes at least one serialnumbered item.
+2. Enter or select an in-transit inventory receipt that includes at least one serial-numbered item.
 
 3. Enter the quantity shipped for the line items that contain a serial number.
 
 4. Press TAB or choose the Qty Shipped expansion button to open the In-Transit Serial Number Entry window.
 
-![screenshot](media/POage151.jpg)
+    ![screenshot In-Transit Serial Number Entry](media/POage151.jpg)
 
 5. If you are using multiple bins, enter a default bin number or accept the default bin number.
 
@@ -1452,9 +1465,9 @@ Use the In-Transit Serial Number Entry window to assign serial numbers for intra
 
 7. Continue entering serial numbers for the item.
 
-The number of serial numbers entered must equal the item’s extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
+    The number of serial numbers entered must equal the item's extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
 
-8. Choose OK to save the serial numbers you’ve added.
+8. Choose OK to save the serial numbers you've added.
 
 ### Removing serial numbers from a shipment or shipment/invoice receipt
 
@@ -1473,40 +1486,40 @@ Use the Purchasing Serial Number Entry window to remove serial numbers for shipm
 
 5. Select the serial number from the serial number selected list and choose Remove. To remove all the serial numbers from the serial number selected list, choose Remove All.
 
-6. Enter new serial numbers for the item. The number of serial numbers entered must equal the item’s extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
+6. Enter new serial numbers for the item. The number of serial numbers entered must equal the item's extended quantity before you can move to the next line item in the Receivings Transaction Entry window or the Receivings Item Detail Entry window.
 
 7. Choose OK to save your changes.
 
 ### Multiple bins in Purchase Order Processing
 
-Use multiple bins to add another level of detail to item quantity tracking. Besides tracking items within inventory sites, with multiple bins you can track item quantities in bins that reside within each site. Bin quantities are processed and displayed in the item’s base unit of measure.
+Use multiple bins to add another level of detail to item quantity tracking. Besides tracking items within inventory sites, with multiple bins you can track item quantities in bins that reside within each site. Bin quantities are processed and displayed in the item's base unit of measure.
 
 *You can set up bin information when multiple bins functionality has been installed and registered. However, you must also enable this feature in Inventory Control before you can use bins to track items. For more information about enabling multiple bins, see the Inventory Control documentation.*
 
 Default bins for transaction types at each site can be identified for use in transactions. For example, a default bin could be created for purchasing transactions at your warehouse site. Default bins can also be identified for a particular item and transaction type at a site. If you always use Bin A when purchasing a certain item from your main site, for example, you can set up Bin A as the default purchase receipts bin for the item at the main site. Microsoft Dynamics GP automatically creates item-site-bin relationships the first time a bin is used for a transaction.
 
-When you enter a transaction, the default bin for the transaction type at the itemsite or the site is used automatically. If there isn’t a default bin at the item-site or at the site, you will be required to enter a bin. If the site’s default bin is used, an itemsite-bin record is created automatically. If you delete the line or document after the item-site-bin record is automatically created, that item-site-bin record is not deleted. The on-hand quantity of the item increases at the bin within the site when you post a shipment or shipment/invoice.
+When you enter a transaction, the default bin for the transaction type at the itemsite or the site is used automatically. If there isn't a default bin at the item-site or at the site, you will be required to enter a bin. If the site's default bin is used, an itemsite-bin record is created automatically. If you delete the line or document after the item-site-bin record is automatically created, that item-site-bin record is not deleted. The on-hand quantity of the item increases at the bin within the site when you post a shipment or shipment/invoice.
 
 For more information about setting up and using multiple bins, see the Inventory Control documentation.
 
 ### Changing bins for a receipt
 
-If you’re using multiple bins, use the Bin Quantity Entry window to verify or change bin allocations for items that are not tracked by serial or lot numbers.
+If you're using multiple bins, use the Bin Quantity Entry window to verify or change bin allocations for items that are not tracked by serial or lot numbers.
 
 For items that are tracked by serial or lot numbers, you can verify or change bins in the Purchasing Serial Number Entry window or the Purchasing Lot Number Entry window for shipment receipts and shipment/invoice receipts. You can use the InTransit Serial Number Entry window or the In-Transit Lot Number Entry window to verify or change bins for items that tracked serials or lot numbers for in-transit inventory receipt.
 
 You can distribute a line item quantity to multiple bins. For example, if the quantity shipped is 20, you can receive 15 items into Bin 1, and five into Bin 2 at site A. You might need to change bin selections manually if you change quantities, the unit of measure, or the site after you already selected bins.
 
-**To change bins for a receipt item that isn’t tracked by serial or lot numbers:**
+**To change bins for a receipt item that isn't tracked by serial or lot numbers:**
 
 1. Open the Receivings Transaction Entry window.
     (Purchasing \>\> Transactions \>\> Receivings Transaction Entry)
 
 2. Enter or select a shipment receipt, a shipment/invoice receipt, or an in-transit inventory receipt.
 
-3. Select an item that isn’t tracked by serial or lot numbers and choose the Qty Shipped expansion button to open the Bin Quantity Entry window.
+3. Select an item that isn't tracked by serial or lot numbers and choose the Qty Shipped expansion button to open the Bin Quantity Entry window.
 
-You also can select an item that isn’t tracked by serial or lot numbers and choose the item expansion button to open the Receivings Item Detail Entry window. Choose Bins.
+    You also can select an item that isn't tracked by serial or lot numbers and choose the item expansion button to open the Receivings Item Detail Entry window. Choose Bins.
 
 4. Select the bin to change and choose Remove.
 
@@ -1529,7 +1542,7 @@ You also can select an item that isn’t tracked by serial or lot numbers and ch
 
 3. Select an item that is tracked by serial or lot numbers and choose the Qty Shipped expansion button to open the Purchasing Serial Number Entry window or Purchasing Lot Number Entry window.
 
-You also can select an item that is tracked by serial or lot numbers and choose the item expansion button to open the Purchasing Item Detail Entry window. Choose Serial/Lot.
+    You also can select an item that is tracked by serial or lot numbers and choose the item expansion button to open the Purchasing Item Detail Entry window. Choose Serial/Lot.
 
 4. Select the serial number or lot number to change and choose Remove.
 
@@ -1552,7 +1565,7 @@ You also can select an item that is tracked by serial or lot numbers and choose 
 
 3. Select an item that is tracked by serial or lot numbers and choose the Qty Shipped expansion button to open the In-Transit Serial Number Entry window or In-Transit Lot Number Entry window.
 
-You also can select an item that is tracked by serial or lot numbers and choose the item expansion button to open the Purchasing Item Detail Entry window. Choose Serial/Lot.
+    You also can select an item that is tracked by serial or lot numbers and choose the item expansion button to open the Purchasing Item Detail Entry window. Choose Serial/Lot.
 
 4. Select the serial number or lot number to change and choose Remove.
 
@@ -1568,16 +1581,16 @@ You also can select an item that is tracked by serial or lot numbers and choose 
 
 ### Merging trade discount and purchase distributions
 
-If you’ve marked the Merge Trade Discount Distributions in Purchasing option in the Company Setup Options window, the trade discount distributions will be merged with the purchases distribution for shipment/invoice receipts. If you are using Project Accounting, the trade discount distributions won’t be merged with the purchases distributions for shipment/invoice receipts.
+If you've marked the Merge Trade Discount Distributions in Purchasing option in the Company Setup Options window, the trade discount distributions will be merged with the purchases distribution for shipment/invoice receipts. If you are using Project Accounting, the trade discount distributions won't be merged with the purchases distributions for shipment/invoice receipts.
 
-For example, assume that you’ve entered a purchase transaction of \$100.00 with a trade discount of \$15.00. If you’ve marked the Merge Trade Discount Distributions in Purchasing option, the trade discount distributions will be merged as in the following example.
+For example, assume that you've entered a purchase transaction of \$100.00 with a trade discount of \$15.00. If you've marked the Merge Trade Discount Distributions in Purchasing option, the trade discount distributions will be merged as in the following example.
 
 | **Account**     | **Debit** | **Credit** |
 |-----------------|-----------|------------|
 | Account A PURCH | \$85      |            |
 | Account C PAY   |           | \$85       |
 
-If you didn’t mark the Merge Trade Discount Distributions in Purchasing option, the trade discount distributions are separated from the purchase distribution.
+If you didn't mark the Merge Trade Discount Distributions in Purchasing option, the trade discount distributions are separated from the purchase distribution.
 
 | **Account**     | **Debit** | **Credit** |
 |-----------------|-----------|------------|
@@ -1587,9 +1600,9 @@ If you didn’t mark the Merge Trade Discount Distributions in Purchasing option
 
 ### Distributing transaction amounts for shipment receipts
 
-Use the Purchasing Distribution Entry window to redistribute transaction amounts to posting accounts. Transactions will be distributed automatically to the posting accounts assigned in the Vendor Account Maintenance window or the Item Account Maintenance window. If accounts aren’t assigned to vendor or item records, the accounts assigned in the Posting Accounts Setup window will be used instead.
+Use the Purchasing Distribution Entry window to redistribute transaction amounts to posting accounts. Transactions will be distributed automatically to the posting accounts assigned in the Vendor Account Maintenance window or the Item Account Maintenance window. If accounts aren't assigned to vendor or item records, the accounts assigned in the Posting Accounts Setup window will be used instead.
 
-If you are using landed costs, the distributions are calculated for a landed cost but won’t be displayed in the Purchasing Distribution Entry window. To view landed cost distributions, print the Receivings Edit List.
+If you are using landed costs, the distributions are calculated for a landed cost but won't be displayed in the Purchasing Distribution Entry window. To view landed cost distributions, print the Receivings Edit List.
 
 Currency amounts in the Purchasing Distribution Entry window are displayed in both the functional and originating currencies.
 
@@ -1602,7 +1615,7 @@ Currency amounts in the Purchasing Distribution Entry window are displayed in bo
 
 3. Choose Distributions to open the Purchasing Distribution Entry window.
 
-![screenshot](media/POage153.jpg)
+    ![screenshot Purchasing Distribution Entry](media/POage153.jpg)
 
 4. Enter a reference for the receipt, or accept the default. The reference entered will be posted to General Ledger.
 
@@ -1610,15 +1623,15 @@ Currency amounts in the Purchasing Distribution Entry window are displayed in bo
 
 6. In the next available line, enter or select another purchasing distribution account, choose the distribution type and enter the next amount.
 
-If you want to remove a distribution, select it and choose Edit \>\> Delete Row. If you changed distribution accounts and amounts and decide you want to use the original distributions, choose Default.
+    If you want to remove a distribution, select it and choose Edit \>\> Delete Row. If you changed distribution accounts and amounts and decide you want to use the original distributions, choose Default.
 
 7. Continue entering distribution accounts until your transaction is fully distributed.
 
 8. Enter a distribution reference (optional).
 
-This is the reference that will post as the General Ledger distribution reference for the account. If you leave this field blank, the reference information entered in the Reference field will post to General Ledger.
+    This is the reference that will post as the General Ledger distribution reference for the account. If you leave this field blank, the reference information entered in the Reference field will post to General Ledger.
 
-9. Choose OK to save your entries. Continue entering the transaction. You can save the transaction if it’s not fully distributed, but you won’t be able to post until the full amount is distributed and debits equal credits.
+9. Choose OK to save your entries. Continue entering the transaction. You can save the transaction if it's not fully distributed, but you won't be able to post until the full amount is distributed and debits equal credits.
 
 ### Entering Intrastat trade statistics
 
@@ -1626,7 +1639,7 @@ Use the Purchasing Intrastat Entry window to enter the information required to c
 
 Intrastat is the system for collecting statistics on the trade of goods between European Union (EU) countries. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries. The government uses these statistics as an economic indicator.
 
-If Intrastat information was entered for the vendor’s ship from address ID, that information appears in this window. Each time you enter a new line item, the Intrastat statistics from the previous line item will be the default Intrastat entry for the new line item. You can use the Purchasing Intrastat Entry window to change Intrastat information for an individual transaction, or to enter Intrastat information if none was entered for the vendor.
+If Intrastat information was entered for the vendor's ship from address ID, that information appears in this window. Each time you enter a new line item, the Intrastat statistics from the previous line item will be the default Intrastat entry for the new line item. You can use the Purchasing Intrastat Entry window to change Intrastat information for an individual transaction, or to enter Intrastat information if none was entered for the vendor.
 
 *You can enter Intrastat statistics only if you have marked to enable Intrastat tracking in the Company Setup Options window.*
 
@@ -1639,7 +1652,7 @@ If Intrastat information was entered for the vendor’s ship from address ID, th
 
 3. Choose the EU button to open the Purchasing Intrastat Entry window. You can also open the Purchasing Intrastat Entry window by choosing the EU button in the Receivings Item Detail Entry window.
 
-![screenshot](media/POage155.jpg)
+    ![screenshot Receivings Item Detail Entry](media/POage155.jpg)
 
 4. Enter Intrastat information, or change the default entries, if necessary.
 
@@ -1647,7 +1660,7 @@ If Intrastat information was entered for the vendor’s ship from address ID, th
 
 6. Enter the quantity of the goods being purchased.
 
-The line mass displays the total mass per item and is calculated automatically when you press TAB on the Quantity field. The line mass total is equal to the amount entered in the Unit Mass field multiplied by the amount entered in the Quantity field.
+    The line mass displays the total mass per item and is calculated automatically when you press TAB on the Quantity field. The line mass total is equal to the amount entered in the Unit Mass field multiplied by the amount entered in the Quantity field.
 
 7. Enter a supplementary units amount, if applicable. The supplementary units amount is simply a second quantity. Supplementary unit amounts are required by the EU Combined Nomenclature for certain goods.
 
@@ -1659,11 +1672,11 @@ The line mass displays the total mass per item and is calculated automatically w
 
 ## Chapter 16: Invoice receipt entry
 
-Enter an invoice receipt to record an invoice received for a shipment receipt entered and posted earlier, or to record an invoice received for a shipment that you have not yet received. You also can enter an invoice for drop-ship purchase order line items and blanket drop-ship purchase order line items. You can enter invoice receipt transactions in a batch or enter and post them individually. Invoice receipts can’t be saved unless they’re in a batch.
+Enter an invoice receipt to record an invoice received for a shipment receipt entered and posted earlier, or to record an invoice received for a shipment that you have not yet received. You also can enter an invoice for drop-ship purchase order line items and blanket drop-ship purchase order line items. You can enter invoice receipt transactions in a batch or enter and post them individually. Invoice receipts can't be saved unless they're in a batch.
 
 *If you are using vendor approval workflow, the vendor must have the workflow status of Approved or No Approval Needed before you can post the invoice receipt.*
 
-If you are using Project Accounting, see *Chapter 17, “Invoice receipt entry for projects”* to enter invoice receipts for projects.
+If you are using Project Accounting, see *Chapter 17, "Invoice receipt entry for projects"* to enter invoice receipts for projects.
 
 This information is divided into the following sections:
 
@@ -1685,13 +1698,13 @@ This information is divided into the following sections:
 
 Use the Purchasing Invoice Entry window to enter, save, and post invoice receipts. You can enter detailed information for each invoice. You can include items from multiple purchase orders (from a single vendor) on an invoice receipt. If you are using landed costs, you can enter a landed cost as a line item.
 
-If you are using Workflow, a drop-ship purchase order or a drop-ship blanket purchase order must be approved before you can invoice against the purchase order. You can invoice against purchase orders that don’t need approval.
+If you are using Workflow, a drop-ship purchase order or a drop-ship blanket purchase order must be approved before you can invoice against the purchase order. You can invoice against purchase orders that don't need approval.
 
 You can enter and save, but not post, invoice receipts for purchase orders that are on hold. If an invoice for an on hold purchase order is saved to a batch, the batch can be posted, but the invoice for the on hold purchase order will remain in the batch.
 
-If you expect to receive multiple invoices for a single shipment, we recommend that you post the shipment receipt and invoice receipts separately instead of entering a shipment/invoice receipt document. If you enter a single shipment/invoice receipt document (with Quantity Shipped greater than Quantity Invoiced) in the Receivings Transaction Entry window and later enter additional invoice documents, amounts in General Ledger and Inventory won’t match.
+If you expect to receive multiple invoices for a single shipment, we recommend that you post the shipment receipt and invoice receipts separately instead of entering a shipment/invoice receipt document. If you enter a single shipment/invoice receipt document (with Quantity Shipped greater than Quantity Invoiced) in the Receivings Transaction Entry window and later enter additional invoice documents, amounts in General Ledger and Inventory won't match.
 
-If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Purchasing Invoice Entry window, but you can’t enter project information for blanket purchase orders. To enter an invoice for a purchase order with project information, see *Chapter 17, “Invoice receipt entry for projects.”*
+If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Purchasing Invoice Entry window, but you can't enter project information for blanket purchase orders. To enter an invoice for a purchase order with project information, see *Chapter 17, "Invoice receipt entry for projects."*
 
 You can use the View \>\> Currency menu option or the currency list button to view amounts in the Purchasing Invoice Entry window in originating or functional currency.
 
@@ -1701,75 +1714,77 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 2. In the New group or its overflow menu, choose Invoice Receipt to open the Purchasing Invoice Entry window.
 
-![screenshot](media/POage158.jpg)
+    ![screenshot Purchasing Invoice Entry](media/POage158.jpg)
 
 3. Enter a vendor document number.
 
 4. Enter the invoice date.
 
-*To enter a General Ledger posting date that is different from the invoice date, choose the Invoice Date expansion button; the Purchasing Invoice Date Entry window will open, where you can enter date information.*
+    > [!TIP]
+    > To enter a General Ledger posting date that is different from the invoice date, choose the Invoice Date expansion button; the Purchasing Invoice Date Entry window will open, where you can enter date information.
 
-For multicurrency transactions, the document date determines which exchange rate is used, based on the currency ID that’s entered for the transaction and the associated rate type.
+    For multicurrency transactions, the document date determines which exchange rate is used, based on the currency ID that's entered for the transaction and the associated rate type.
 
 5. Enter or select a batch ID (optional).
 
-If you’ve received the invoice, but not the shipment, you’ll need to save the invoice receipt in a batch until you receive and post the shipment. Then you can match the invoice to the shipment and post the invoice.
+    If you've received the invoice, but not the shipment, you'll need to save the invoice receipt in a batch until you receive and post the shipment. Then you can match the invoice to the shipment and post the invoice.
 
-Invoices entered for drop-ship purchase orders and drop-ship blanket purchase orders won’t be matched because you can’t enter a shipment receipt for a dropship purchase order or a drop-ship blanket purchase order.
+    Invoices entered for drop-ship purchase orders and drop-ship blanket purchase orders won't be matched because you can't enter a shipment receipt for a dropship purchase order or a drop-ship blanket purchase order.
 
-In multicurrency transactions, if the batch posting date does not fall on or before the exchange rate’s expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt.
+    In multicurrency transactions, if the batch posting date does not fall on or before the exchange rate's expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt.
 
-See *Creating a receipt batch* for more information.
+    See *Creating a receipt batch* for more information.
 
 6. Enter or select a vendor ID.
 
 7. Enter or select a currency ID, or change the currency ID that appears as a default entry.
 
-If the currency ID is not the company’s functional currency, a rate type and associated exchange rate table are assigned to the transaction. The currency ID assigned to the invoice must match the currency ID of the purchase order being received against.
+    If the currency ID is not the company's functional currency, a rate type and associated exchange rate table are assigned to the transaction. The currency ID assigned to the invoice must match the currency ID of the purchase order being received against.
 
 8. Mark the LC option if you want to enter a landed cost.
 
 9. Enter the purchase order number.
 
-You can leave this field blank if you’re entering an invoice for a shipment received without a purchase order. You can receive invoices for multiple purchase orders by entering or selecting a different purchase order number in a new row.
+    You can leave this field blank if you're entering an invoice for a shipment received without a purchase order. You can receive invoices for multiple purchase orders by entering or selecting a different purchase order number in a new row.
 
-You won’t be able to enter a purchase order number if you are invoicing a landed cost. You will specify the purchase order you are matching to the landed cost in the Match Options window.
+    You won't be able to enter a purchase order number if you are invoicing a landed cost. You will specify the purchase order you are matching to the landed cost in the Match Options window.
 
-Before you can invoice against the purchase order that has an unposted prepayment, you must post the prepayment or remove the prepayment from the purchase order.
+    Before you can invoice against the purchase order that has an unposted prepayment, you must post the prepayment or remove the prepayment from the purchase order.
 
-10. Enter items using either the vendor’s item number or your company’s item number. If you marked the LC option, you can enter a landed cost as an item.
+10. Enter items using either the vendor's item number or your company's item number. If you marked the LC option, you can enter a landed cost as an item.
 
-After you enter a drop-ship or drop-ship blanket line item, the drop-ship purchase order icon appears in the PO Number field.
+    After you enter a drop-ship or drop-ship blanket line item, the drop-ship purchase order icon appears in the PO Number field.
 
-You can display the vendor’s item number by marking Options \>\> Display Vendor Item. If the option is not marked, your company’s item number will be displayed. You can change this selection at any time.
+    You can display the vendor's item number by marking Options \>\> Display Vendor Item. If the option is not marked, your company's item number will be displayed. You can change this selection at any time.
 
 11. If a drop-ship or drop-ship blanket line item is tracking serial or lot numbers, mark the S/L option.
 
-12. Enter the quantity invoiced, which is the number of items on the vendor’s invoice.
+12. Enter the quantity invoiced, which is the number of items on the vendor's invoice.
 
-If multiple shipments exist for the line item, you’ll get a message asking if you want to match the invoice line items to items on a shipment or shipment/ invoice before you move to the next line item.
+    If multiple shipments exist for the line item, you'll get a message asking if you want to match the invoice line items to items on a shipment or shipment/ invoice before you move to the next line item.
 
-- Choose Yes and the Match Shipments to Invoice window will open, where you can choose which line items can be matched.
+    - Choose Yes and the Match Shipments to Invoice window will open, where you can choose which line items can be matched.
 
-- Choose No and the line items automatically will be matched in shipment receipt number order.
+    - Choose No and the line items automatically will be matched in shipment receipt number order.
 
-For more information, see *Matching shipments to an invoice receipt*.
+    For more information, see *Matching shipments to an invoice receipt*.
 
-*The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the drop-ship or drop-ship blanket line item requires that you assign lot or serial numbers.*
+    > [!NOTE]
+    > The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the drop-ship or drop-ship blanket line item requires that you assign lot or serial numbers.
 
-An icon will be displayed in the Quantity Invoiced field for drop-ship purchase order line items with sales commitments. Select a line item and choose the button next to the Quantity Invoiced heading to view commitments in the Sales Commitments for Purchase Order window. If the purchase order line item is committed to more than one sales order line item, you can use the Sales Commitments for Purchase Order window to specify the sequence in which the sales line items will be received. For more information, see *Committing purchase orders to sales documents*.
+    An icon will be displayed in the Quantity Invoiced field for drop-ship purchase order line items with sales commitments. Select a line item and choose the button next to the Quantity Invoiced heading to view commitments in the Sales Commitments for Purchase Order window. If the purchase order line item is committed to more than one sales order line item, you can use the Sales Commitments for Purchase Order window to specify the sequence in which the sales line items will be received. For more information, see *Committing purchase orders to sales documents*.
 
 13. Enter trade discount, freight, miscellaneous, and tax amounts.
 
-Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, “Taxes for receipts.”* If you want to change the tax amounts for the document, see *Calculating and distributing summary taxes for invoice receipts*. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for invoice line items*.
+    Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, "Taxes for receipts."* If you want to change the tax amounts for the document, see *Calculating and distributing summary taxes for invoice receipts*. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for invoice line items*.
 
 14. The Prepayment field displays the total of all posted prepayments consumed for the purchase orders you are invoicing against. The prepayment amount is recalculated if you change the quantity shipped, quantity invoiced, unit cost, or extended cost for a line item. The prepayment amount is also recalculated if you change the trade discount.
 
-If a purchase order has a posted prepayment, you can use the Prepayment expansion button to open the Purchasing Prepayment Summary Inquiry window. You can use this window to view the total amount of the prepayments applied and the prepayment applied amount for each purchase order assigned to the invoice.
+    If a purchase order has a posted prepayment, you can use the Prepayment expansion button to open the Purchasing Prepayment Summary Inquiry window. You can use this window to view the total amount of the prepayments applied and the prepayment applied amount for each purchase order assigned to the invoice.
 
 15. Enter or accept the 1099 amount, if applicable.
 
-16. If you are using Project Accounting, choose the Amount Received expansion button to open the PA Purchasing Invoice Amount Received Entry window, where you can enter an amount received. You can enter the amount you’re paying by cash, check, or credit card.
+16. If you are using Project Accounting, choose the Amount Received expansion button to open the PA Purchasing Invoice Amount Received Entry window, where you can enter an amount received. You can enter the amount you're paying by cash, check, or credit card.
 
 17. Choose Distributions to open the Purchasing Invoice Distribution Entry window, where you can make changes to account distributions. See *Distributing transaction amounts for invoice receipts* for more information.
 
@@ -1779,9 +1794,9 @@ One or more posting journals and distribution breakdown registers may be printed
 
 ### Matching shipments to an invoice receipt
 
-Use the Match Shipments to Invoice window if you’ve entered shipments in the Receivings Transaction Entry window and want to match the line items on the shipments to an invoice you’re entering in the Purchasing Invoice Entry window. Invoices entered for drop-ship purchase orders or drop-ship blanket purchase orders won’t be matched because you can’t enter a shipment receipt for a drop-ship purchase order or a drop-ship blanket purchase order. For information about matching shipment line items to landed costs, see *Matching landed costs to shipment line items*. Landed costs aren’t automatically matched.
+Use the Match Shipments to Invoice window if you've entered shipments in the Receivings Transaction Entry window and want to match the line items on the shipments to an invoice you're entering in the Purchasing Invoice Entry window. Invoices entered for drop-ship purchase orders or drop-ship blanket purchase orders won't be matched because you can't enter a shipment receipt for a drop-ship purchase order or a drop-ship blanket purchase order. For information about matching shipment line items to landed costs, see *Matching landed costs to shipment line items*. Landed costs aren't automatically matched.
 
-If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Match Shipments to Invoice window. To match shipments to an invoice receipt with project information, see *Chapter 17, “Invoice receipt entry for projects.”*
+If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Match Shipments to Invoice window. To match shipments to an invoice receipt with project information, see *Chapter 17, "Invoice receipt entry for projects."*
 
 **To match shipments to an invoice receipt:**
 
@@ -1792,17 +1807,17 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 3. Enter the PO number and line items.
 
-Before you can invoice against the purchase order that has an unposted prepayment, you must post the prepayment or remove the prepayment from the purchase order.
+    Before you can invoice against the purchase order that has an unposted prepayment, you must post the prepayment or remove the prepayment from the purchase order.
 
-If you are using Workflow, a drop-ship purchase order or a drop-ship blanket purchase order must be approved before you can invoice against the purchase order. You can invoice against purchase orders that don’t need approval.
+    If you are using Workflow, a drop-ship purchase order or a drop-ship blanket purchase order must be approved before you can invoice against the purchase order. You can invoice against purchase orders that don't need approval.
 
-4. Enter the quantity invoiced. If multiple shipments exist for the line item, you’ll get a message asking whether you want to automatically match the invoice line items to items on a shipment or shipment/invoice when you move to the next line.
+4. Enter the quantity invoiced. If multiple shipments exist for the line item, you'll get a message asking whether you want to automatically match the invoice line items to items on a shipment or shipment/invoice when you move to the next line.
 
 5. Choose Yes and the Match Shipments to Invoice window will open, where you can choose which line items can be matched. (If you choose No, the line items will be matched in shipment receipt number order.)
 
-![screenshot](media/POage160.jpg)
+    ![screenshot Match Shipments to Invoice](media/POage160.jpg)
 
-Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
+    Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
 
 6. Select the shipment line items you want to match to the invoice.
 
@@ -1812,19 +1827,19 @@ Currency amounts in this window may be displayed in functional or originating cu
 
 9. In the Purchasing Invoice Entry window, enter trade discount, freight, miscellaneous, and tax amounts. Also enter a 1099 amount, if applicable.
 
-10. If you are using Project Accounting, choose the Amount Received expansion button to open the PA Purchasing Invoice Amount Received Entry window, where you can enter an amount received. You can enter the amount you’re paying by cash, check, or credit card.
+10. If you are using Project Accounting, choose the Amount Received expansion button to open the PA Purchasing Invoice Amount Received Entry window, where you can enter an amount received. You can enter the amount you're paying by cash, check, or credit card.
 
 11. Choose Distributions to open the Purchasing Invoice Distribution Entry window, where you can make changes to account distributions.
 
-- To add additional accounts, select the account and enter an amount.
+    - To add additional accounts, select the account and enter an amount.
 
-- To remove an account, select the row containing the account and choose Edit \>\> Delete Row.
+    - To remove an account, select the row containing the account and choose Edit \>\> Delete Row.
 
-- To restore the original distributions, choose Default.
+    - To restore the original distributions, choose Default.
 
-If you are using landed costs, the distributions are calculated for a landed cost but won’t be displayed in the Purchasing Invoice Distribution Entry window. To view landed cost distributions, print the Purchasing Invoice Edit List.
+    If you are using landed costs, the distributions are calculated for a landed cost but won't be displayed in the Purchasing Invoice Distribution Entry window. To view landed cost distributions, print the Purchasing Invoice Edit List.
 
-See *Distributing transaction amounts for invoice receipts* for more information.
+    See *Distributing transaction amounts for invoice receipts* for more information.
 
 Save or post the transaction. If you post, the invoiced quantities for each item on the receipt must be fully matched to shipment quantities.
 
@@ -1836,9 +1851,9 @@ In the Purchasing Invoice Entry window, you can enter invoice receipts for items
 
 To set up this option, you must select Allow Receiving Without a Purchase Order in the Purchase Order Processing Setup window. You may assign a password that must be entered before entering a line item not assigned to a purchase order. See *Setting up Purchase Order Processing preferences and default entries* for more information.
 
-If receiving items without a purchase order is allowed, you can enter items, noninventoried items or vendor items that don’t exist on the purchase order on an invoice receipt as long as those items or vendor items are on a shipment that has been posted.
+If receiving items without a purchase order is allowed, you can enter items, noninventoried items or vendor items that don't exist on the purchase order on an invoice receipt as long as those items or vendor items are on a shipment that has been posted.
 
-If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Purchasing Invoice Entry window. To invoice items with project information, see *Chapter 17, “Invoice receipt entry for projects.”*
+If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Purchasing Invoice Entry window. To invoice items with project information, see *Chapter 17, "Invoice receipt entry for projects."*
 
 **To invoice items without a purchase order:**
 
@@ -1847,25 +1862,25 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 2. Enter the receipt number, vendor document number, invoice date, and vendor ID.
 
-3. To add vendor items or items that weren’t included on the original purchase order, simply leave the PO number field blank. You don’t have to enter a purchase order if you’ve set up the system to allow receiving items without a purchase order.
+3. To add vendor items or items that weren't included on the original purchase order, simply leave the PO number field blank. You don't have to enter a purchase order if you've set up the system to allow receiving items without a purchase order.
 
-To enter a landed cost, mark the LC option and enter a landed cost as an item.
+    To enter a landed cost, mark the LC option and enter a landed cost as an item.
 
 4. Continue entering the invoice.
 
-If you enter a non-inventoried item that isn’t assigned to a purchase order, you’ll need to enter a unit cost. If you enter a non-inventoried item that’s assigned to a purchase order, the unit cost from the purchase order will be displayed and you can change the cost.
+    If you enter a non-inventoried item that isn't assigned to a purchase order, you'll need to enter a unit cost. If you enter a non-inventoried item that's assigned to a purchase order, the unit cost from the purchase order will be displayed and you can change the cost.
 
 5. Save or post the transaction. If you post, the invoiced quantities for each item on the receipt must be fully matched to shipment quantities.
 
-One or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window. If you’ve saved the transaction to a batch, you can print an edit list.
+One or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window. If you've saved the transaction to a batch, you can print an edit list.
 
 ### Invoicing items using the Select Purchase Order window
 
 Use the Select Purchase Order window to select a purchase order to quickly enter line items on a invoice receipt.
 
-If you are using Workflow, a drop-ship purchase order or a drop-ship blanket purchase order must be approved before you can invoice against the purchase order. You can invoice against purchase orders that don’t need approval.
+If you are using Workflow, a drop-ship purchase order or a drop-ship blanket purchase order must be approved before you can invoice against the purchase order. You can invoice against purchase orders that don't need approval.
 
-If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Purchasing Invoice window, but you can’t enter project information for blanket purchase orders.To receive items for purchase orders with project information, see *Chapter 14, “Shipment receipt entry for projects.”*
+If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Purchasing Invoice window, but you can't enter project information for blanket purchase orders.To receive items for purchase orders with project information, see *Chapter 14, "Shipment receipt entry for projects."*
 
 **To invoice items using the Select Purchase Order window:**
 
@@ -1876,27 +1891,28 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 3. Choose the Auto-Invoice button. The Select Purchase Order window will open.
 
-*If you entered a vendor ID, the Select Purchase Order Items window will open instead of the Select Purchase Order window.*
+    > [!NOTE]
+    > If you entered a vendor ID, the Select Purchase Order Items window will open instead of the Select Purchase Order window.
 
-![screenshot](media/POage162.jpg)
+    ![screenshot Select Purchase Order](media/POage162.jpg)
 
 4. Enter or select the purchase order for which you want to invoice all line items.
 
-5. Choose Invoice All in the Select Purchase Order window to automatically invoice all items on the selected purchase order. Landed costs aren’t included when you automatically invoice items. You must enter the landed costs on the invoice.
+5. Choose Invoice All in the Select Purchase Order window to automatically invoice all items on the selected purchase order. Landed costs aren't included when you automatically invoice items. You must enter the landed costs on the invoice.
 
-You cannot invoice against a purchase order that has an unposted prepayment. You can remove the prepayment from the purchase order using the Purchase Order Entry window or complete a computer check run for the prepayment.
+    You cannot invoice against a purchase order that has an unposted prepayment. You can remove the prepayment from the purchase order using the Purchase Order Entry window or complete a computer check run for the prepayment.
 
-The control blanket line item for a blanket purchase order or a drop-ship blanket purchase order isn’t included when you automatically invoice items.
+    The control blanket line item for a blanket purchase order or a drop-ship blanket purchase order isn't included when you automatically invoice items.
 
-Blanket line items with a New status won’t be included, either. You can use the Purchasing Invoice Entry window to enter blanket line items with a New status.
+    Blanket line items with a New status won't be included, either. You can use the Purchasing Invoice Entry window to enter blanket line items with a New status.
 
-If you choose to view details in the Select Purchase Order window, the Select Purchase Order Items window will open, and the purchase order line items will be marked to receive. Landed costs won’t appear in the Select Purchase Order Items window.
+    If you choose to view details in the Select Purchase Order window, the Select Purchase Order Items window will open, and the purchase order line items will be marked to receive. Landed costs won't appear in the Select Purchase Order Items window.
 
-Drop-ship blanket line items with a New status and line items with a New status for a drop-ship purchase order with an expired contract date won’t be marked when you choose Mark All. To invoice these items, you must mark the items individually.
+    Drop-ship blanket line items with a New status and line items with a New status for a drop-ship purchase order with an expired contract date won't be marked when you choose Mark All. To invoice these items, you must mark the items individually.
 
 6. Choose OK to save information and to close the Select Purchase Order window.
 
-7. If the Allow Receiving Without a Purchase Order option is marked in Purchase Order Processing Setup, you can enter items or vendor items that don’t exist on the purchase order.
+7. If the Allow Receiving Without a Purchase Order option is marked in Purchase Order Processing Setup, you can enter items or vendor items that don't exist on the purchase order.
 
 8. You can enter blanket line items with a New status if you are invoicing items from a blanket purchase order or a drop-ship blanket purchase order.
 
@@ -1906,7 +1922,7 @@ Drop-ship blanket line items with a New status and line items with a New status 
 
 11. Edit trade discount, freight, miscellaneous, and tax amounts. Also enter a 1099 amount, if applicable.
 
-Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, “Taxes for receipts.”* If you want to change the tax amounts for the document, see *Calculating and distributing summary taxes for shipment/invoice receipts*. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for shipment/invoice line items*.
+    Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, "Taxes for receipts."* If you want to change the tax amounts for the document, see *Calculating and distributing summary taxes for shipment/invoice receipts*. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for shipment/invoice line items*.
 
 12. Choose Distributions to open the Purchasing Invoice Distribution Entry window, where you can make changes to account distributions.
 
@@ -1916,15 +1932,15 @@ Taxes will be calculated automatically as you enter items. For more information 
 
     - To restore the original distributions, choose Default.
 
-If you are using landed costs, the distributions are calculated for a landed cost but won’t be displayed in the Purchasing Invoice Distribution Entry window. To view landed cost distributions, print the Purchasing Invoice Edit List.
+    If you are using landed costs, the distributions are calculated for a landed cost but won't be displayed in the Purchasing Invoice Distribution Entry window. To view landed cost distributions, print the Purchasing Invoice Edit List.
 
-See *Distributing transaction amounts for invoice receipts* for more information.
+    See *Distributing transaction amounts for invoice receipts* for more information.
 
 13. Save or post the transaction. If you post, the invoiced quantities for each item on the receipt must be fully matched to shipment quantities.
 
-One or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window. If you’ve saved the transaction to a batch, you can print an edit list.
+One or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window. If you've saved the transaction to a batch, you can print an edit list.
 
-### Using the Select Purchase Order Items window
+### Use the Select Purchase Order Items window
 
 Use the Select Purchase Order Items window to invoice line items that have been received from multiple purchase orders. In the Select Purchase Order Items window, the tree view and the Sort By option control the information that is displayed. When you change the focus in the tree view, or when you choose a different sorting option, the information in the window is refreshed.
 
@@ -1936,27 +1952,27 @@ The sorting option you select determines the order in which objects appear in th
 
 **PO/Items** Objects in the tree view and scrolling window are sorted first by purchase order number, then by the order items were entered on the purchase orders.
 
-![screenshot](media/POage164.jpg)
+![screenshot PO/Items](media/POage164.jpg)
 
 **Item Number/PO** Objects in the tree view and scrolling window are sorted first by item number, then by purchase order number under each item.
 
-![screenshot](media/POage166.jpg)
+![screenshot Item Number/PO](media/POage166.jpg)
 
 **Site/PO/Item Number** Objects in the tree view and scrolling window are sorted first by site, then by purchase order number under each site, then by item number under each purchase order.
 
-![screenshot](media/POage168.jpg)
+![screenshot Site/PO/Item Number](media/POage168.jpg)
 
 **Site/Item Number/PO** Objects in the tree view and scrolling window are sorted first by site, then by item number under each site, then by purchase order number under each item.
 
-![screenshot](media/POage170.jpg)
+![screenshot Site/Item Number/PO](media/POage170.jpg)
 
 ### Invoicing items from multiple purchase orders
 
-Use the Select Purchase Order Items window to invoice line items that have been received from multiple purchase orders. Only items with posted shipments and quantities remaining to be invoiced will be displayed. See *Entering an invoice receipt* for more information. Landed costs won’t appear in the Select Purchase Order Items window.
+Use the Select Purchase Order Items window to invoice line items that have been received from multiple purchase orders. Only items with posted shipments and quantities remaining to be invoiced will be displayed. See *Entering an invoice receipt* for more information. Landed costs won't appear in the Select Purchase Order Items window.
 
-If you are using Workflow, drop-ship purchase orders or a drop-ship blanket purchase orders must be approved before you can invoice against them. You can invoice against purchase orders that don’t need approval.
+If you are using Workflow, drop-ship purchase orders or a drop-ship blanket purchase orders must be approved before you can invoice against them. You can invoice against purchase orders that don't need approval.
 
-If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Select Purchase Order Items window. To receive items from purchase orders with project information, see *Chapter 17, “Invoice receipt entry for projects.”*
+If you are using Project Accounting, the Project Number field and the Cost Category ID field will be displayed in the Select Purchase Order Items window. To receive items from purchase orders with project information, see *Chapter 17, "Invoice receipt entry for projects."*
 
 **To invoice items from multiple purchase orders:**
 
@@ -1969,21 +1985,23 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 4. Choose the Auto-Invoice button. The Select Purchase Order Items window will open.
 
-Items with posted shipments and quantities remaining to be invoiced will be displayed. The control blanket line item for a blanket purchase order or a dropship blanket purchase order isn’t included when you automatically invoice items.
+    Items with posted shipments and quantities remaining to be invoiced will be displayed. The control blanket line item for a blanket purchase order or a dropship blanket purchase order isn't included when you automatically invoice items.
 
-If only a Vendor ID is displayed, the selected vendor does not have any purchase orders with items that have been received, but not invoiced. Only purchase orders with currency IDs that match the invoice will be displayed. Purchase orders with posted prepayments that have currency IDs that match the invoice will be displayed.
+    If only a Vendor ID is displayed, the selected vendor does not have any purchase orders with items that have been received, but not invoiced. Only purchase orders with currency IDs that match the invoice will be displayed. Purchase orders with posted prepayments that have currency IDs that match the invoice will be displayed.
 
-*If you know the purchase order number but not the vendor ID, you can choose AutoInvoice without entering a vendor ID. The Select Purchase Order window will open. The vendor and currency ID for the invoice will come from the purchase order you select.*
+    > [!NOTE]
+    > If you know the purchase order number but not the vendor ID, you can choose AutoInvoice without entering a vendor ID. The Select Purchase Order window will open. The vendor and currency ID for the invoice will come from the purchase order you select.
 
-![screenshot](media/POage172.jpg)
+    ![screenshot  Select Purchase Order](media/POage172.jpg)
 
 5. Select a sorting option.
 
 6. Mark the check boxes next to the items you want to invoice. To select all items displayed in the scrolling window, choose Mark All.
 
-Drop-ship blanket line items with a New status and line items with a New status for a drop-ship purchase order with an expired contract date won’t be marked when you choose Mark All. To invoice these items, you must mark the items individually.
+    Drop-ship blanket line items with a New status and line items with a New status for a drop-ship purchase order with an expired contract date won't be marked when you choose Mark All. To invoice these items, you must mark the items individually.
 
-*When you choose Mark All or Unmark All in the Select Purchase Order Items window, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.*
+    > [!NOTE]
+    > When you choose Mark All or Unmark All in the Select Purchase Order Items window, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.
 
 7. Select whether to display all items or only items marked to invoice.
 
@@ -1993,9 +2011,9 @@ Drop-ship blanket line items with a New status and line items with a New status 
 
 10. Choose the Invoice button to add the items to your invoice. The Select Purchase Order Items window will close, and the items you marked will appear in the Purchasing Invoice Entry window.
 
-The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if a drop-ship or drop-ship blanket item requires that you assign lot or serial numbers.
+    The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if a drop-ship or drop-ship blanket item requires that you assign lot or serial numbers.
 
-To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
+    To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
 
 11. In the Purchasing Invoice Entry window, save or post the transaction. If you post, the invoiced quantities for each item on the receipt must be fully matched to shipment quantities.
 
@@ -2003,9 +2021,9 @@ To cancel your selections, choose Cancel. To revert all displayed items to unmar
 
 Use the Select Purchase Order Items window and the Purchasing Invoice Entry window to invoice items. After you select a purchase order that has at least one posted shipment received against it in the Purchase Order Entry window, you can select the Invoice the PO Items option from the Actions button. You also can enter or select a drop-ship purchase order or a blanket drop-ship purchase order and select the Invoice the PO Items option from the Actions button to invoice against those items.
 
-For more information about invoice receipts, see *Entering an invoice receipt*. For more information about the Select Purchase Order Items window, see *Using the Select Purchase Order Items window*. Landed costs won’t appear in the Select Purchase Order Items window.
+For more information about invoice receipts, see *Entering an invoice receipt*. For more information about the Select Purchase Order Items window, see *Using the Select Purchase Order Items window*. Landed costs won't appear in the Select Purchase Order Items window.
 
-If you are using Project Accounting, the Project Number field and the Cost Cat. ID field will be displayed in the Select Purchase Order Items window and the Purchasing Invoice Entry window. If you want to receive items with project information, see *Chapter 17, “Invoice receipt entry for projects.”*
+If you are using Project Accounting, the Project Number field and the Cost Cat. ID field will be displayed in the Select Purchase Order Items window and the Purchasing Invoice Entry window. If you want to receive items with project information, see *Chapter 17, "Invoice receipt entry for projects."*
 
 **To invoice items from a purchase order:**
 
@@ -2018,15 +2036,16 @@ If you are using Project Accounting, the Project Number field and the Cost Cat. 
 
 4. The Select Purchase Order Items window and the Purchasing Invoice Entry window will open.
 
-Items with posted shipments and quantities remaining to be invoiced will be displayed. The purchase order that you entered in the Purchase Order Entry window will be selected in the tree view. Each item on the purchase order that is available to be invoiced in the scrolling window is marked. The control blanket line item for a blanket purchase order or a drop-ship blanket purchase order isn’t included when you automatically invoice items.
+    Items with posted shipments and quantities remaining to be invoiced will be displayed. The purchase order that you entered in the Purchase Order Entry window will be selected in the tree view. Each item on the purchase order that is available to be invoiced in the scrolling window is marked. The control blanket line item for a blanket purchase order or a drop-ship blanket purchase order isn't included when you automatically invoice items.
 
 5. Select a sorting option.
 
 6. Mark the check boxes next to the items to invoice. To select all items displayed in the scrolling window, choose Mark All.
 
-Drop-ship blanket line items with a New status and line items with a New status for a drop-ship purchase order with an expired contract date won’t be marked when you choose Mark All. To invoice these items, you must mark the items individually.
+    Drop-ship blanket line items with a New status and line items with a New status for a drop-ship purchase order with an expired contract date won't be marked when you choose Mark All. To invoice these items, you must mark the items individually.
 
-*When you choose Mark All or Unmark All, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.*
+    > [!NOTE]
+    > When you choose Mark All or Unmark All, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.
 
 7. Select whether to display all items or only items marked to invoice.
 
@@ -2036,9 +2055,9 @@ Drop-ship blanket line items with a New status and line items with a New status 
 
 10. Choose the Invoice button to add the items to your invoice. The Select Purchase Order Items window will close, and the items you marked will appear in the Purchasing Invoice Entry window.
 
-The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if a drop-ship or drop-ship blanket item requires that you assign lot or serial numbers.
+    The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if a drop-ship or drop-ship blanket item requires that you assign lot or serial numbers.
 
-To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
+    To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
 
 11. In the Purchasing Invoice Entry window, continue entering invoice information, if necessary, and save or post the transaction. For an invoice, you must enter the vendor document number.
 
@@ -2050,7 +2069,7 @@ If you are using Project Accounting, you can enter an invoice receipt to record 
 
 *If you are using vendor approval workflow, the vendor must have the workflow status of Approved or No Approval Needed before you can post the invoice receipts.*
 
-To enter an invoice receipt for a blanket purchase order or a drop-ship blanket purchase order, refer to *Chapter 16, “Invoice receipt entry.”*
+To enter an invoice receipt for a blanket purchase order or a drop-ship blanket purchase order, refer to *Chapter 16, "Invoice receipt entry."*
 
 This information is divided into the following sections:
 
@@ -2070,11 +2089,11 @@ This information is divided into the following sections:
 
 Use the Purchasing Invoice Entry window to enter, save, and post invoice receipts for projects. You can enter detailed information for each invoice. You can include items from multiple purchase orders (from a single vendor) on an invoice receipt. If you are using landed costs, you can enter a landed cost as a line item.
 
-To enter an invoice receipt for a blanket purchase order, refer to *Chapter 16, “Invoice receipt entry.”*
+To enter an invoice receipt for a blanket purchase order, refer to *Chapter 16, "Invoice receipt entry."*
 
 You can enter and save, but not post, invoice receipts for purchase orders that are on hold. If an invoice for a purchase order that is on hold is saved to a batch, the batch can be posted, but the invoice for the purchase order that is on hold will remain in the batch.
 
-If you expect to receive multiple invoices for a single shipment, we recommend that you post the shipment receipt and invoice receipts separately instead of entering a shipment/invoice receipt document. If you enter a single shipment/invoice receipt document (with quantity shipped greater than quantity invoiced) in the Receivings Transaction Entry window and later enter additional invoice documents, amounts in General Ledger and Inventory won’t match.
+If you expect to receive multiple invoices for a single shipment, we recommend that you post the shipment receipt and invoice receipts separately instead of entering a shipment/invoice receipt document. If you enter a single shipment/invoice receipt document (with quantity shipped greater than quantity invoiced) in the Receivings Transaction Entry window and later enter additional invoice documents, amounts in General Ledger and Inventory won't match.
 
 You can use the View \>\> Currency menu option or the currency list button to view amounts in the Purchasing Invoice Entry window in originating or functional currency.
 
@@ -2089,67 +2108,69 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 4. Enter the invoice date.
 
-*To enter a General Ledger posting date that is different from the invoice date, choose the Invoice Date expansion button; the Purchasing Invoice Date Entry window will open, where you can enter date information.*
+    > [!NOTE]
+    > To enter a General Ledger posting date that is different from the invoice date, choose the Invoice Date expansion button; the Purchasing Invoice Date Entry window will open, where you can enter date information.
 
-For multicurrency transactions, the document date determines which exchange rate is used, based on the currency ID that’s entered for the transaction and the associated rate type.
+    For multicurrency transactions, the document date determines which exchange rate is used, based on the currency ID that's entered for the transaction and the associated rate type.
 
 5. Enter or select a batch ID (optional).
 
-If you’ve received the invoice, but not the shipment, you’ll need to save the invoice receipt in a batch until you receive and post the shipment. Then you can match the invoice to the shipment and post the invoice.
+    If you've received the invoice, but not the shipment, you'll need to save the invoice receipt in a batch until you receive and post the shipment. Then you can match the invoice to the shipment and post the invoice.
 
-Invoices entered for drop-ship purchase orders won’t be matched because you can’t enter a shipment receipt for a drop-ship purchase order.
+    Invoices entered for drop-ship purchase orders won't be matched because you can't enter a shipment receipt for a drop-ship purchase order.
 
-In multicurrency transactions, if the batch posting date does not fall on or before the exchange rate’s expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt.
+    In multicurrency transactions, if the batch posting date does not fall on or before the exchange rate's expiration date, you will receive a message. Choose Yes to open the Batch Entry window and change the batch posting date. If you choose No, you will be able to save but not post the receipt.
 
-See *Creating a receipt batch* for more information.
+    See *Creating a receipt batch* for more information.
 
 6. Enter or select a vendor ID.
 
 7. Enter or select a currency ID, or change the currency ID that appears as a default entry.
 
-If the currency ID is not the company’s functional currency, a rate type and associated exchange rate table are assigned to the transaction. The currency ID assigned to the invoice must match the currency ID of the purchase order being received against.
+    If the currency ID is not the company's functional currency, a rate type and associated exchange rate table are assigned to the transaction. The currency ID assigned to the invoice must match the currency ID of the purchase order being received against.
 
 8. Mark the LC option if you want to enter a landed cost.
 
 9. Enter the purchase order number.
 
-You can leave this field blank if you’re entering an invoice for a shipment received without a purchase order. You can receive invoices for multiple purchase orders by entering or selecting a different purchase order number in a new row.
+    You can leave this field blank if you're entering an invoice for a shipment received without a purchase order. You can receive invoices for multiple purchase orders by entering or selecting a different purchase order number in a new row.
 
-You can’t enter a purchase order number if you are invoicing a landed cost. You will specify the purchase order you are matching the to the landed cost in the Match Options window.
+    You can't enter a purchase order number if you are invoicing a landed cost. You will specify the purchase order you are matching the to the landed cost in the Match Options window.
 
-You can enter a purchase order that hasn’t been printed if Allow Receiving of Unprinted PO option is marked in the PA Purchase Order Processing Setup Options window.
+    You can enter a purchase order that hasn't been printed if Allow Receiving of Unprinted PO option is marked in the PA Purchase Order Processing Setup Options window.
 
 10. Enter a project number and cost category ID.
 
-You can’t enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display the vendor items.
+    You can't enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display the vendor items.
 
-11. Enter one or more items using your company’s item numbers. You also can enter non-inventoried items. If you marked the LC option, you can enter a landed cost as an item.
+11. Enter one or more items using your company's item numbers. You also can enter non-inventoried items. If you marked the LC option, you can enter a landed cost as an item.
 
-Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn’t assigned to a budget, you must add the item to the budget.
+    Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn't assigned to a budget, you must add the item to the budget.
 
-After you enter a drop-ship line item, the drop-ship purchase order icon appears in the PO Number field.
+    After you enter a drop-ship line item, the drop-ship purchase order icon appears in the PO Number field.
 
 12. If a drop-ship line item is tracking serial or lot numbers, mark the S/L option.
 
-13. Enter the quantity invoiced, which is the number of items on the vendor’s invoice.
+13. Enter the quantity invoiced, which is the number of items on the vendor's invoice.
 
-If multiple shipments exist for the line item, you’ll get a message asking if you want to match the invoice line items to items on a shipment or shipment/ invoice before you move to the next line item.
+    If multiple shipments exist for the line item, you'll get a message asking if you want to match the invoice line items to items on a shipment or shipment/ invoice before you move to the next line item.
 
-- Choose Yes and the Match Shipments to Invoice window will open, where you can choose which line items can be matched.
+    - Choose Yes and the Match Shipments to Invoice window will open, where you can choose which line items can be matched.
 
-- Choose No and the line items automatically will be matched in shipment receipt number order.
+    - Choose No and the line items automatically will be matched in shipment receipt number order.
 
-For more information, see *Matching shipments to an invoice receipt for projects*.
+    For more information, see *Matching shipments to an invoice receipt for projects*.
 
-*The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the drop-ship line item requires that you assign lot or serial numbers.*
+    > [!NOTE]
+    > The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if the drop-ship line item requires that you assign lot or serial numbers.
 
 14. Enter trade discount, freight, miscellaneous, and tax amounts.
 
-Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, “Taxes for receipts.”* You can't change the Tax amount in the Purchasing Invoice Entry window even if your system is set up to allow editing summary-level taxes. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for invoice line items*.
+    Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, "Taxes for receipts."* You can't change the Tax amount in the Purchasing Invoice Entry window even if your system is set up to allow editing summary-level taxes. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for invoice line items*.
 
 15. Enter or accept the 1099 amount, if applicable.
 
-16. To enter an amount received, choose the Amount Received expansion button to open the PA Receivings Amount Received Entry window. You can enter the amount you’re paying by cash, check, or credit card.
+16. To enter an amount received, choose the Amount Received expansion button to open the PA Receivings Amount Received Entry window. You can enter the amount you're paying by cash, check, or credit card.
 
 17. Choose Distributions to open the Purchasing Invoice Distribution Entry window, where you can make changes to account distributions. See *Distributing transaction amounts for invoice receipts* for more information.
 
@@ -2159,9 +2180,9 @@ One or more posting journals and distribution breakdown registers may be printed
 
 ### Matching shipments to an invoice receipt for projects
 
-Use the Match Shipments to Invoice window if you’ve entered shipments in the Receivings Transaction Entry window and want to match the line items on the shipments to an invoice you’re entering in the Purchasing Invoice Entry window. Invoices entered for drop-ship purchase orders won’t be matched because you can’t enter a shipment receipt for a drop-ship purchase order. For information about matching shipment line items to landed costs, see *Matching landed costs to shipment line items*. Landed costs aren’t automatically matched.
+Use the Match Shipments to Invoice window if you've entered shipments in the Receivings Transaction Entry window and want to match the line items on the shipments to an invoice you're entering in the Purchasing Invoice Entry window. Invoices entered for drop-ship purchase orders won't be matched because you can't enter a shipment receipt for a drop-ship purchase order. For information about matching shipment line items to landed costs, see *Matching landed costs to shipment line items*. Landed costs aren't automatically matched.
 
-If you want match shipments for blanket purchase orders to an invoice receipt, see *Chapter 16, “Invoice receipt entry.”*
+If you want match shipments for blanket purchase orders to an invoice receipt, see *Chapter 16, "Invoice receipt entry."*
 
 **To match shipments to an invoice receipt for projects:**
 
@@ -2172,13 +2193,13 @@ If you want match shipments for blanket purchase orders to an invoice receipt, s
 
 3. Enter the PO number, project number, cost category ID, and line items.
 
-4. Enter the quantity invoiced. If multiple shipments exist for the line item, you’ll get a message asking whether you want to automatically match the invoice line items to items on a shipment or shipment/invoice when you move to the next line.
+4. Enter the quantity invoiced. If multiple shipments exist for the line item, you'll get a message asking whether you want to automatically match the invoice line items to items on a shipment or shipment/invoice when you move to the next line.
 
 5. Choose Yes and the Match Shipments to Invoice window will open, where you can choose which line items can be matched. (If you choose No, the line items will be matched in shipment receipt number order.)
 
-![screenshot](media/POage174.jpg)
+    ![screenshot Match Shipments to Invoice](media/POage174.jpg)
 
-Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
+    Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
 
 6. Select the shipment line items you want to match to the invoice.
 
@@ -2196,9 +2217,9 @@ Currency amounts in this window may be displayed in functional or originating cu
 
     - To restore the original distributions, choose Default.
 
-If you are using landed costs, the distributions are calculated for a landed cost but won’t be displayed in the Purchasing Invoice Distribution Entry window. To view landed cost distributions, print the Purchasing Invoice Edit List.
+    If you are using landed costs, the distributions are calculated for a landed cost but won't be displayed in the Purchasing Invoice Distribution Entry window. To view landed cost distributions, print the Purchasing Invoice Edit List.
 
-See *Distributing transaction amounts for invoice receipts* for more information.
+    See *Distributing transaction amounts for invoice receipts* for more information.
 
 11. Save or post the transaction. If you post, the invoiced quantities for each item on the receipt must be fully matched to shipment quantities.
 
@@ -2210,7 +2231,7 @@ In the Purchasing Invoice Entry window, you can enter invoice receipts for items
 
 To set up this option, you must select Allow Receiving Without a Purchase Order in the Purchase Order Processing Setup window. You may assign a password that must be entered before entering a line item not assigned to a purchase order. See *Setting up Purchase Order Processing preferences and default entries* for more information.
 
-If receiving items without a purchase order is allowed, you can enter items or noninventoried items that don’t exist on the purchase order on an invoice receipt as long as those items are on a shipment that has been posted.
+If receiving items without a purchase order is allowed, you can enter items or noninventoried items that don't exist on the purchase order on an invoice receipt as long as those items are on a shipment that has been posted.
 
 **To invoice items for projects without a purchase order:**
 
@@ -2219,23 +2240,23 @@ If receiving items without a purchase order is allowed, you can enter items or n
 
 2. Enter the receipt number, vendor document number, invoice date, and vendor ID.
 
-3. Enter a project number and cost category ID. If the item that you’re receiving isn’t assigned to a project because the item isn’t assigned to a budget, enter \<NONE\> or leave the Project Number field blank. If there isn’t a project number, you can leave the Cost Category field blank. If the item is assigned to a project, you must enter a cost category.
+3. Enter a project number and cost category ID. If the item that you're receiving isn't assigned to a project because the item isn't assigned to a budget, enter \<NONE\> or leave the Project Number field blank. If there isn't a project number, you can leave the Cost Category field blank. If the item is assigned to a project, you must enter a cost category.
 
-You can’t enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display vendor items.
+    You can't enter a project number or a cost category if the Options \>\> Display Vendor Item is marked to display vendor items.
 
-4. To add items that weren’t included on the original purchase order, simply leave the PO number field blank. You don’t have to enter a purchase order if you’ve set up the system to allow receiving items without a purchase order.
+4. To add items that weren't included on the original purchase order, simply leave the PO number field blank. You don't have to enter a purchase order if you've set up the system to allow receiving items without a purchase order.
 
-Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn’t assigned to a budget, you must add the item to the budget. You cannot add a new inventoried item if the Allow Entry of New Budgets/Materials option is not marked in the User Purchase Order Settings window. See *Inventoried items and non-inventoried items for projects* for more information.
+    Inventoried items entered for a project must be assigned to a cost category in the Budget Detail IV Items window. If the item isn't assigned to a budget, you must add the item to the budget. You cannot add a new inventoried item if the Allow Entry of New Budgets/Materials option is not marked in the User Purchase Order Settings window. See *Inventoried items and non-inventoried items for projects* for more information.
 
-To enter a landed cost, mark the LC option and enter a landed cost as an item.
+    To enter a landed cost, mark the LC option and enter a landed cost as an item.
 
 5. Continue entering the invoice.
 
-If you enter a non-inventoried item that isn’t assigned to a purchase order, you’ll need to enter a unit cost. If you enter a non-inventoried item that’s assigned to a purchase order, the unit cost from the purchase order will be displayed and you can change the cost.
+    If you enter a non-inventoried item that isn't assigned to a purchase order, you'll need to enter a unit cost. If you enter a non-inventoried item that's assigned to a purchase order, the unit cost from the purchase order will be displayed and you can change the cost.
 
 6. Save or post the transaction. If you post, the invoiced quantities for each item on the receipt must be fully matched to shipment quantities.
 
-One or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window. If you’ve saved the transaction to a batch, you can print an edit list.
+One or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window. If you've saved the transaction to a batch, you can print an edit list.
 
 ### Invoicing items for projects using the Select Purchase Order window
 
@@ -2250,19 +2271,20 @@ Use the Select Purchase Order window to select a purchase order to quickly enter
 
 3. Choose the Auto-Invoice button. The Select Purchase Order window will open.
 
-*If you entered a vendor ID, the Select Purchase Order Items window will open instead of the Select Purchase Order window.*
+    > [!NOTE]
+    > If you entered a vendor ID, the Select Purchase Order Items window will open instead of the Select Purchase Order window.
 
-![screenshot](media/POage162.jpg)
+    ![screenshot Select Purchase Order](media/POage162.jpg)
 
 4. Enter or select the purchase order for which you want to invoice all line items.
 
-5. Choose Invoice All in the Select Purchase Order window to automatically invoice all items on the selected purchase order. Landed costs aren’t included when you automatically invoice items. You must enter the landed costs on the invoice.
+5. Choose Invoice All in the Select Purchase Order window to automatically invoice all items on the selected purchase order. Landed costs aren't included when you automatically invoice items. You must enter the landed costs on the invoice.
 
-If you choose to view details in the Select Purchase Order window, the Select Purchase Order Items window will open, and the purchase order line items will be marked to receive. Landed costs won’t appear in the Select Purchase Order Items window.
+    If you choose to view details in the Select Purchase Order window, the Select Purchase Order Items window will open, and the purchase order line items will be marked to receive. Landed costs won't appear in the Select Purchase Order Items window.
 
 6. Choose OK to save information and to close the Select Purchase Order window.
 
-7. If the Allow Receiving Without a Purchase Order option is marked in Purchase Order Processing Setup, you can enter items or vendor items that don’t exist on the purchase order.
+7. If the Allow Receiving Without a Purchase Order option is marked in Purchase Order Processing Setup, you can enter items or vendor items that don't exist on the purchase order.
 
 8. To enter a landed cost, mark the LC option and enter a landed cost as an item.
 
@@ -2270,7 +2292,7 @@ If you choose to view details in the Select Purchase Order window, the Select Pu
 
 10. Edit trade discount, freight, miscellaneous, and tax amounts. Also enter a 1099 amount, if applicable.
 
-Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, “Taxes for receipts.”* If you want to change the tax amounts for the document, see *Calculating and distributing summary taxes for shipment/invoice receipts*. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for shipment/invoice line items*.
+    Taxes will be calculated automatically as you enter items. For more information about tax calculations, see *Chapter 20, "Taxes for receipts."* If you want to change the tax amounts for the document, see *Calculating and distributing summary taxes for shipment/invoice receipts*. If you want to change the tax amounts for a line item, see *Calculating and distributing detail taxes for shipment/invoice line items*.
 
 11. Choose Distributions to open the Purchasing Invoice Distribution Entry window, where you can make changes to account distributions.
 
@@ -2280,17 +2302,17 @@ Taxes will be calculated automatically as you enter items. For more information 
 
     - To restore the original distributions, choose Default.
 
-If you are using landed costs, the distributions are calculated for a landed cost but won’t be displayed in the Purchasing Invoice Distribution Entry window. To view landed cost distributions, print the Purchasing Invoice Edit List.
+    If you are using landed costs, the distributions are calculated for a landed cost but won't be displayed in the Purchasing Invoice Distribution Entry window. To view landed cost distributions, print the Purchasing Invoice Edit List.
 
-See *Distributing transaction amounts for invoice receipts* for more information.
+    See *Distributing transaction amounts for invoice receipts* for more information.
 
 12. Save or post the transaction. If you post, the invoiced quantities for each item on the receipt must be fully matched to shipment quantities.
 
-One or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window. If you’ve saved the transaction to a batch, you can print an edit list.
+One or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window. If you've saved the transaction to a batch, you can print an edit list.
 
 ### Invoicing items for projects from multiple purchase orders
 
-Use the Select Purchase Order Items window to invoice line items that have been received from multiple purchase orders. Only items with posted shipments and quantities remaining to be invoiced will be displayed. See *Entering an invoice receipt for projects* for more information. Landed costs won’t appear in the Select Purchase Order Items window.
+Use the Select Purchase Order Items window to invoice line items that have been received from multiple purchase orders. Only items with posted shipments and quantities remaining to be invoiced will be displayed. See *Entering an invoice receipt for projects* for more information. Landed costs won't appear in the Select Purchase Order Items window.
 
 **To invoice items for projects from multiple purchase orders:**
 
@@ -2303,17 +2325,19 @@ Use the Select Purchase Order Items window to invoice line items that have been 
 
 4. Choose the Auto-Invoice button. The Select Purchase Order Items window will open.
 
-Items with posted shipments and quantities remaining to be invoiced will be displayed.
+    Items with posted shipments and quantities remaining to be invoiced will be displayed.
 
-If only a Vendor ID is displayed, the selected vendor does not have any purchase orders with items that have been received, but not invoiced. Only purchase orders with currency IDs that match the invoice will be displayed.
+    If only a Vendor ID is displayed, the selected vendor does not have any purchase orders with items that have been received, but not invoiced. Only purchase orders with currency IDs that match the invoice will be displayed.
 
-*If you know the purchase order number but not the vendor ID, you can choose AutoInvoice without entering a vendor ID. The Select Purchase Order window will open. The vendor and currency ID for the invoice will come from the purchase order you select.*
+    > [!NOTE]
+    > If you know the purchase order number but not the vendor ID, you can choose AutoInvoice without entering a vendor ID. The Select Purchase Order window will open. The vendor and currency ID for the invoice will come from the purchase order you select.
 
 5. Select a sorting option.
 
 6. Mark the check boxes next to the items you want to invoice. To select all items displayed in the scrolling window, choose Mark All.
 
-*When you choose Mark All or Unmark All in the Select Purchase Order Items window, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.*
+    > [!NOTE]
+    > When you choose Mark All or Unmark All in the Select Purchase Order Items window, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.
 
 7. Select whether to display all items or only items marked to invoice.
 
@@ -2323,9 +2347,9 @@ If only a Vendor ID is displayed, the selected vendor does not have any purchase
 
 10. Choose the Invoice button to add the items to your invoice. The Select Purchase Order Items window will close, and the items you marked will appear in the Purchasing Invoice Entry window.
 
-The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if a drop-ship item requires that you assign lot or serial numbers.
+    The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if a drop-ship item requires that you assign lot or serial numbers.
 
-To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
+    To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
 
 11. In the Purchasing Invoice Entry window, save or post the transaction. If you post, the invoiced quantities for each item on the receipt must be fully matched to shipment quantities.
 
@@ -2333,9 +2357,9 @@ To cancel your selections, choose Cancel. To revert all displayed items to unmar
 
 Use the Select Purchase Order Items window and the Purchasing Invoice Entry window to invoice items. After you select a purchase order that has at least one posted shipment received against it in the Purchase Order Entry window, you can select the Invoice the PO Items option from the Actions button. You also can enter or select a drop-ship purchase order and select the Invoice the PO Items option from the Actions button to invoice against those items.
 
-For more information about invoice receipts, see *Entering an invoice receipt for projects*. For more information about the Select Purchase Order Items window, see *Using the Select Purchase Order Items window*. Landed costs won’t appear in the Select Purchase Order Items window.
+For more information about invoice receipts, see *Entering an invoice receipt for projects*. For more information about the Select Purchase Order Items window, see *Using the Select Purchase Order Items window*. Landed costs won't appear in the Select Purchase Order Items window.
 
-To receive items from multiple blanket purchase orders, refer to *Chapter 16, “Invoice receipt entry.”*
+To receive items from multiple blanket purchase orders, refer to *Chapter 16, "Invoice receipt entry."*
 
 **To invoice items for projects from a purchase order:**
 
@@ -2348,13 +2372,14 @@ To receive items from multiple blanket purchase orders, refer to *Chapter 16, �
 
 4. The Select Purchase Order Items window and the Purchasing Invoice Entry window will open.
 
-Items with posted shipments and quantities remaining to be invoiced will be displayed. The purchase order that you entered in the Purchase Order Entry window will be selected in the tree view. Each item on the purchase order that is available to be invoiced in the scrolling window is marked.
+    Items with posted shipments and quantities remaining to be invoiced will be displayed. The purchase order that you entered in the Purchase Order Entry window will be selected in the tree view. Each item on the purchase order that is available to be invoiced in the scrolling window is marked.
 
 5. Select a sorting option.
 
 6. Mark the check boxes next to the items to invoice. To select all items displayed in the scrolling window, choose Mark All.
 
-*When you choose Mark All or Unmark All, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.*
+    > [!NOTE]
+    > When you choose Mark All or Unmark All, only items displayed in the scrolling window will be marked or unmarked. For example, if a purchase order is selected in the tree view, only items from that purchase order will be displayed in the scrolling window, and only those items will be marked when you choose Mark All. To mark or unmark all items for a vendor, the vendor ID must be selected in the tree view.
 
 7. Select whether to display all items or only items marked to invoice.
 
@@ -2364,9 +2389,9 @@ Items with posted shipments and quantities remaining to be invoiced will be disp
 
 10. Choose the Invoice button to add the items to your invoice. The Select Purchase Order Items window will close, and the items you marked will appear in the Purchasing Invoice Entry window.
 
-The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if a drop-ship item requires that you assign lot or serial numbers.
+    The Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open if a drop-ship item requires that you assign lot or serial numbers.
 
-To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
+    To cancel your selections, choose Cancel. To revert all displayed items to unmarked, choose Unmark All.
 
 11. In the Purchasing Invoice Entry window, continue entering invoice information, if necessary, and save or post the transaction. For an invoice, you must enter the vendor document number.
 
@@ -2413,19 +2438,20 @@ If you are invoicing a drop-ship or drop-ship blanket purchase order, you can us
 
 4. Press TAB or choose the Quantity Invoiced expansion button to open the Purchasing Lot Number Entry window.
 
-![screenshot](media/POage143.jpg)
+    ![screenshot Purchasing Lot Number Entry](media/POage143.jpg)
 
-*To set up a lot number mask for the item, click the Lot Number Mask link in the Purchasing Lot Number Entry window to open the Item Serial/Lot Number Definition window.*
+    > [!NOTE]
+    > To set up a lot number mask for the item, click the Lot Number Mask link in the Purchasing Lot Number Entry window to open the Item Serial/Lot Number Definition window.
 
 5. Enter the lot(s) to generate (optional). The default lot(s) to generate is the Remaining to Select quantity divided by the Lot Split Quantity rounded to the next whole number.
 
 6. Edit the starting lot number, if necessary.
 
-If you modify the starting lot number, it must conform to the lot number mask. If you delete the starting lot number, you will not be able to automatically generate lot numbers for the item.
+    If you modify the starting lot number, it must conform to the lot number mask. If you delete the starting lot number, you will not be able to automatically generate lot numbers for the item.
 
 7. Choose Auto-Generate. Lot numbers for the items are inserted in the scrolling window. Numbers that already exist will be skipped.
 
-The Total Quantity Selected must equal the item’s extended quantity before you can move to the next line item in the Purchasing Invoice Entry window.
+    The Total Quantity Selected must equal the item's extended quantity before you can move to the next line item in the Purchasing Invoice Entry window.
 
 8. Choose OK to save the lot numbers that were automatically generated.
 
@@ -2450,11 +2476,11 @@ If you are invoicing a drop-ship or drop-ship blanket purchase order, you can us
 
 7. To assign values to the lot attributes for the item, choose the Lot expansion button to open the Lot Attribute Entry window.
 
-If you are using sales workflow and are tracking the minimum shelf life for the lot item, the dates that you enter in this window and the number of days entered in the Item Maintenance Options window are used to determine whether or not the item meets the minimum shelf life when you receive the item. If you are using Project Accounting, you can’t use sales workflow with project items.
+    If you are using sales workflow and are tracking the minimum shelf life for the lot item, the dates that you enter in this window and the number of days entered in the Item Maintenance Options window are used to determine whether or not the item meets the minimum shelf life when you receive the item. If you are using Project Accounting, you can't use sales workflow with project items.
 
-7. Continue entering lot numbers for the item. The Total Quantity Selected must equal the item’s extended quantity before you can move to the next line item in the Purchasing Invoice Entry window.
+8. Continue entering lot numbers for the item. The Total Quantity Selected must equal the item's extended quantity before you can move to the next line item in the Purchasing Invoice Entry window.
 
-8. Choose OK to save the lot numbers you’ve added.
+9. Choose OK to save the lot numbers you've added.
 
 ### Removing lot numbers from an invoice receipt
 
@@ -2493,19 +2519,20 @@ If you are invoicing a drop-ship or drop-ship blanket purchase order, you can us
 
 4. Press TAB or choose the Quantity Invoiced expansion button to open the Purchasing Serial Number Entry window.
 
-![screenshot](media/POage149.jpg)
+    ![screenshot Purchasing Serial Number Entry](media/POage149.jpg)
 
-*To set up a serial number mask for the item, click the Serial Number Mask link in the Purchasing Serial Number Entry window to open the Item Serial/Lot Number Definition window.*
+    > [!NOTE]
+    > To set up a serial number mask for the item, click the Serial Number Mask link in the Purchasing Serial Number Entry window to open the Item Serial/Lot Number Definition window.
 
 5. Enter the Quantity to Generate (optional). The default Quantity to Generate is the Remaining to Select quantity.
 
 6. Edit the starting serial number, if necessary.
 
-If you modify the starting serial number, it must conform to the serial number mask. If you delete the starting serial number, you will not be able to automatically generate serial numbers for the item.
+    If you modify the starting serial number, it must conform to the serial number mask. If you delete the starting serial number, you will not be able to automatically generate serial numbers for the item.
 
 7. Choose Auto-Generate. Serial numbers for the items are inserted in the scrolling window. Numbers that already exist will be skipped.
 
-The number of serial numbers must equal the item’s extended quantity before you can return to the Purchasing Invoice Entry window.
+    The number of serial numbers must equal the item's extended quantity before you can return to the Purchasing Invoice Entry window.
 
 8. Choose OK to save the serial numbers that were automatically generated.
 
@@ -2530,9 +2557,9 @@ Use the Purchasing Serial Number Entry window to assign serial numbers manually 
 
 7. Continue entering serial numbers for the item.
 
-The number of serial numbers entered must equal the item’s extended quantity before you can move to the next line item in the Purchasing Invoice Entry window.
+    The number of serial numbers entered must equal the item's extended quantity before you can move to the next line item in the Purchasing Invoice Entry window.
 
-8. Choose OK to save the serial numbers you’ve added.
+8. Choose OK to save the serial numbers you've added.
 
 ### Removing serial numbers for invoice receipts
 
@@ -2551,22 +2578,22 @@ Use the Purchasing Serial Number Entry window to remove serial numbers for invoi
 
 5. Select the serial number from the serial number selected list and choose Remove. To remove all the serial numbers from the serial number selected list, choose Remove All.
 
-6. Enter new serial numbers for the item. The number of serial numbers entered must equal the item’s extended quantity before you can move to the next line item in the Purchasing Invoice Entry window.
+6. Enter new serial numbers for the item. The number of serial numbers entered must equal the item's extended quantity before you can move to the next line item in the Purchasing Invoice Entry window.
 
 7. Choose OK to save your changes.
 
-### Merging trade discount and purchase distributions
+### Merge trade discount and purchase distributions
 
-If you’ve marked the Merge Trade Discount Distributions in Purchasing option in the Company Setup Options window, the trade discount distributions will be merged with the purchases distribution for invoice receipts. If you are using Project Accounting, the trade discount distributions won’t be merged with the purchases distributions for invoice receipts.
+If you've marked the Merge Trade Discount Distributions in Purchasing option in the Company Setup Options window, the trade discount distributions will be merged with the purchases distribution for invoice receipts. If you are using Project Accounting, the trade discount distributions won't be merged with the purchases distributions for invoice receipts.
 
-For example, assume that you’ve entered a purchase transaction of \$100.00 with a trade discount of \$15.00. If you’ve marked the Merge Trade Discount Distributions in Purchasing option, the trade discount distributions will be merged as in the following example.
+For example, assume that you've entered a purchase transaction of \$100.00 with a trade discount of \$15.00. If you've marked the Merge Trade Discount Distributions in Purchasing option, the trade discount distributions will be merged as in the following example.
 
 | **Account**     | **Debit** | **Credit** |
 |-----------------|-----------|------------|
 | Account A PURCH | \$85      |            |
 | Account C PAY   |           | \$85       |
 
-If you didn’t mark the Merge Trade Discount Distributions in Purchasing option, the trade discount distributions are separated from the purchase distribution.
+If you didn't mark the Merge Trade Discount Distributions in Purchasing option, the trade discount distributions are separated from the purchase distribution.
 
 | **Account**     | **Debit** | **Credit** |
 |-----------------|-----------|------------|
@@ -2587,7 +2614,7 @@ Use the Purchasing Invoice Distribution window to distribute transaction amounts
 
 3. Choose Distributions to open the Purchasing Invoice Distribution Entry  window.
 
-![screenshot](media/POage178.jpg)
+    ![screenshot Purchasing Invoice Distribution Entry](media/POage178.jpg)
 
 4. In the Reference field, change the reference displayed (optional). The reference entered will post to General Ledger as the reference for the receipt.
 
@@ -2597,13 +2624,13 @@ Use the Purchasing Invoice Distribution window to distribute transaction amounts
 
 7. In the next available line, enter or select another purchasing distribution account, choose the distribution type and enter the next amount.
 
-If you want to delete an account, select the row containing it and choose Edit \>\> Delete Row. If you changed distribution accounts and amounts and want to use the original distributions, choose Default.
+    If you want to delete an account, select the row containing it and choose Edit \>\> Delete Row. If you changed distribution accounts and amounts and want to use the original distributions, choose Default.
 
 8. Continue entering distribution accounts until your transaction is fully distributed.
 
 9. Enter a reference or accept the default. This is the reference that will be posted as the General Ledger distribution reference for the account.
 
-10. Choose OK to save your entries and continue entering the transaction. You can save the transaction if it’s not fully distributed, but you won’t be able to post until the full amount is distributed and debits equal credits.
+10. Choose OK to save your entries and continue entering the transaction. You can save the transaction if it's not fully distributed, but you won't be able to post until the full amount is distributed and debits equal credits.
 
 ### Entering project item detail information for an invoice receipt
 
@@ -2618,7 +2645,7 @@ If you are using Project Accounting, you can use the PA Purchasing Invoice Item 
 
 3. Choose the Cost Category expansion button to open the PA Purchasing Invoice Item Detail Entry window.
 
-![screenshot](media/POage180.jpg)
+    ![screenshot PA Purchasing Invoice Item Detail Entry](media/POage180.jpg)
 
 4. Enter or modify a billing note.
 
@@ -2628,13 +2655,13 @@ If you are using Project Accounting, you can use the PA Purchasing Invoice Item 
 
 Choose OK to close the window and return to the Purchasing Invoice Entry window.
 
-### Entering Intrastat trade statistics
+### Enter Intrastat trade statistics
 
 Use the Purchasing Intrastat Entry window to enter the information required to create the Intrastat Trade Report you submit to your government. You can enter Intrastat statistics for each line item. For information about setting up Intrastat codes, refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
 Intrastat is the system for collecting statistics on the trade of goods between European Union (EU) countries. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries. The government uses these statistics as an economic indicator.
 
-If Intrastat information was entered for the vendor’s ship from address ID, that information appears in this window. Each time you enter a new line item, the Intrastat statistics from the previous line item will be the default Intrastat entry for the new line item.You can use the Purchasing Intrastat Entry window to change Intrastat information for an individual transaction, or to enter Intrastat information if none was entered for the vendor.
+If Intrastat information was entered for the vendor's ship from address ID, that information appears in this window. Each time you enter a new line item, the Intrastat statistics from the previous line item will be the default Intrastat entry for the new line item.You can use the Purchasing Intrastat Entry window to change Intrastat information for an individual transaction, or to enter Intrastat information if none was entered for the vendor.
 
 *You can enter Intrastat statistics only if you have marked to enable Intrastat tracking in the Company Setup Options window.*
 
@@ -2653,7 +2680,7 @@ If Intrastat information was entered for the vendor’s ship from address ID, th
 
 6. Enter the quantity of the goods being purchased.
 
-The line mass displays the total mass per item and is calculated automatically when you press TAB on the Quantity field. The line mass total is equal to the amount entered in the Unit Mass field multiplied by the amount entered in the Quantity field.
+    The line mass displays the total mass per item and is calculated automatically when you press TAB on the Quantity field. The line mass total is equal to the amount entered in the Unit Mass field multiplied by the amount entered in the Quantity field.
 
 7. Enter a supplementary units amount, if applicable. The supplementary units amount is simply a second quantity. Supplementary unit amounts are required by the EU Combined Nomenclature for certain goods.
 
@@ -2693,23 +2720,23 @@ This information is divided into the following sections:
 
 Landed costs are the additional costs that might be associated with purchasing a product, such as freight costs, insurance, or duties. To use landed costs, you must set up landed cost records and groups in Inventory Control. You can define different landed costs in the Landed Cost Maintenance window, including information such as the vendor the landed cost is for, the cost calculation method used, and whether invoices must be matched. You can create as many landed cost records as you like.
 
-Once you’ve created landed cost records, you can create landed cost groups using the Landed Cost Group Maintenance window. A landed cost group is a collection of several landed cost records. Each landed cost record can exist in multiple landed cost groups. Each landed cost group can include as many landed cost records as you like. By creating a landed cost group and assigning it to item-site combinations, you can associate many different landed cost records with an item-site combination. For more information about landed cost records and groups, refer to the Inventory Control documentation.
+Once you've created landed cost records, you can create landed cost groups using the Landed Cost Group Maintenance window. A landed cost group is a collection of several landed cost records. Each landed cost record can exist in multiple landed cost groups. Each landed cost group can include as many landed cost records as you like. By creating a landed cost group and assigning it to item-site combinations, you can associate many different landed cost records with an item-site combination. For more information about landed cost records and groups, refer to the Inventory Control documentation.
 
 When the item-site combination is entered on a purchase order or in-transit transfer, the landed cost group information automatically is reflected in the transaction. You can enter a landed cost group or accept the default landed cost group ID for the purchase order or in-transit transfer. You can use the Item Quantities Maintenance window to enter information for each item-site combination.
 
 As you enter a receipt in Purchase Order Processing, you can assign landed costs. To assign a landed cost to all the items on a receipt, use the Receivings Landed Cost Apportionment window. To assign a landed cost to an item on a receipt, use the Receivings Landed Cost Entry window.
 
-You can use the Match Shipments to Invoice window to match the landed costs that you’ve entered in the Purchasing Invoice Entry window to one or more shipment items or in-transit inventory items. Landed costs aren’t automatically matched. To match the landed costs to shipment items or in-transit inventory items, the landed costs must be set up to invoice match. You can mark the landed costs to match when entering landed costs using the Receivings Landed Cost Apportionment window or the Receivings Landed Cost Entry window. More information about landed costs is included in the Inventory Control documentation.
+You can use the Match Shipments to Invoice window to match the landed costs that you've entered in the Purchasing Invoice Entry window to one or more shipment items or in-transit inventory items. Landed costs aren't automatically matched. To match the landed costs to shipment items or in-transit inventory items, the landed costs must be set up to invoice match. You can mark the landed costs to match when entering landed costs using the Receivings Landed Cost Apportionment window or the Receivings Landed Cost Entry window. More information about landed costs is included in the Inventory Control documentation.
 
 ### How landed costs are apportioned
 
 In the Receivings Landed Cost Apportionment window, you can select how to apportion or distribute the landed cost amounts among line items.You can apportion a calculation method of Flat Amount by Value, Quantity, or Weight. If the calculation method is Flat Amount per Unit or Percent of Extended Cost, the landed costs will be created for all line items.
 
-During the apportionment calculation, a remaining amount for the flat amount is tracked. The calculated apportionment amount for each line item is subtracted from the remaining amount. If a remaining amount can’t be distributed across items due to rounding, it will be distributed to the last line item.
+During the apportionment calculation, a remaining amount for the flat amount is tracked. The calculated apportionment amount for each line item is subtracted from the remaining amount. If a remaining amount can't be distributed across items due to rounding, it will be distributed to the last line item.
 
-**Quantity apportionment calculation**
+#### Quantity apportionment calculation
 
-If you selected to apportion landed costs by quantity, the calculation for apportionment is a line item’s quantity shipped - the quantity rejected / the sum of all line items’ quantity shipped - quantity rejected x the Flat Amount.
+If you selected to apportion landed costs by quantity, the calculation for apportionment is a line item's quantity shipped - the quantity rejected / the sum of all line items' quantity shipped - quantity rejected x the Flat Amount.
 
 For example, assume that you have the following receipt line items entered. The calculation amount for the landed cost is Flat Amount and the Flat Amount is \$50.00.
 
@@ -2728,13 +2755,14 @@ The landed cost would be apportioned as follows:
 | Item3     | 6.5467          | 0.000            | 6.5467              | (6.5467/16.5467) x 50 = 19.78 | 19.79 - 19.78 =.01   | 19.79               |
 | **Total** | 18.5467         | 2                | 16.5467             |                               | 50.00                | 50.00               |
 
-Note that the last item received the remaining \$.01.
+> [!NOTE]
+> The last item receives the remaining \$.01.
 
-**Value apportionment calculation**
+#### Value apportionment calculation
 
-If you selected to apportion landed costs by Value, the calculation for apportionment is the percent of the line item’s value to the total of all the line items’ value x the Flat Amount.
+If you selected to apportion landed costs by Value, the calculation for apportionment is the percent of the line item's value to the total of all the line items' value x the Flat Amount.
 
-The percent is calculated as [(Individual Line Item’s Qty Shipped - Individual Line Item’s Qty Rejected) x Originating Unit Cost]/ Sum of all line item’s [Qty Shipped- Qty Rejected) x Originating Unit Cost)].
+The percent is calculated as [(Individual Line Item's Qty Shipped - Individual Line Item's Qty Rejected) x Originating Unit Cost]/ Sum of all line item's [Qty Shipped- Qty Rejected) x Originating Unit Cost)].
 
 For example, assume that you have the following receipt line items entered. The calculation amount for the landed cost is Flat Amount and the Flat Amount is \$50.00.
 
@@ -2753,11 +2781,11 @@ The landed cost would be apportioned as follows
 | Item3     | [[(6.5467-0) x 2.00)]/[(10-2) x 10.00]+ [(5-0) x 20.00]+[(6.5467- 0.0000) x 2.00]] x 50.00 = 3.39 | 3.39 - 3.39 = 0.00    | 3.39                |
 | **Total** |                                                                                                   | 50.00                 | 50.00               |
 
-**Weight apportionment calculation**
+#### Weight apportionment calculation
 
-If you selected to apportion landed costs by Weight, the calculation for apportionment is the (Individual Line Item’s Extended Shipping Weight / Sum of all line items’ Extended Shipping Weight} x the Flat Amount.
+If you selected to apportion landed costs by Weight, the calculation for apportionment is the (Individual Line Item's Extended Shipping Weight / Sum of all line items' Extended Shipping Weight} x the Flat Amount.
 
-The Extended Shipping Weight is calculated as the Individual Line Item’s Shipping Weight x (quantity shipped - quantity rejected).
+The Extended Shipping Weight is calculated as the Individual Line Item's Shipping Weight x (quantity shipped - quantity rejected).
 
 For example, assume that you have the following receipt line items entered. The calculation amount for the landed cost is Flat Amount and the Flat Amount is \$50.00.
 
@@ -2832,13 +2860,14 @@ If you want to enter a landed cost for an individual receivings line item, see *
 
     - Enter or select a vendor ID and enter line item information.
 
-*If you are using Workflow, purchase orders must be approved before you can receive against them. You can receive against purchase orders that don’t need approval.*
+    > [!NOTE]
+    > If you are using Workflow, purchase orders must be approved before you can receive against them. You can receive against purchase orders that don't need approval.
 
 5. Enter total information in the Receivings Transaction Entry window.
 
 6. Choose the Landed Cost button to open the Receivings Landed Cost Apportionment window.
 
-![screenshot](media/POage182.jpg)
+    ![screenshot Receivings Landed Cost Apportionment](media/POage182.jpg)
 
 7. Enter or select a landed cost ID.
 
@@ -2904,11 +2933,11 @@ If you want to remove a landed cost, select the landed cost ID and choose Edit \
 
 4. Choose the Unit Cost button to open the Receivings Landed Cost Entry window.
 
-![screenshot](media/POage184.jpg)
+    ![screenshot Receivings Landed Cost Entry](media/POage184.jpg)
 
 5. Enter or select a landed cost ID.
 
-If a landed cost group ID was assigned to the item you’re receiving against, the landed costs assigned to that group ID will be displayed.
+    If a landed cost group ID was assigned to the item you're receiving against, the landed costs assigned to that group ID will be displayed.
 
 6. Mark the Match option if you want the landed cost assigned to the shipment item to be matched to an invoice.
 
@@ -2939,7 +2968,7 @@ If you want to remove a landed cost, select the landed cost ID and choose Edit \
 
 6. Enter or select a landed cost ID.
 
-If a landed cost group ID was assigned to the item you’re entering an in-transit inventory receipt for, the landed costs assigned to that group ID will be displayed.
+    If a landed cost group ID was assigned to the item you're entering an in-transit inventory receipt for, the landed costs assigned to that group ID will be displayed.
 
 7. Mark the Match option if you want the landed cost assigned to the in-transit inventory item to be matched to an invoice.
 
@@ -2951,7 +2980,7 @@ If a landed cost group ID was assigned to the item you’re entering an in-trans
 
 ### Matching landed costs to shipment line items
 
-If you are using landed costs, you can use the Match Shipments to Invoice window to match the landed costs that you’ve entered in the Purchasing Invoice Entry window to one or more shipment items. All the shipment items that are available to match to the landed cost IDs are displayed in the Match Shipments to Invoice window. Landed costs aren’t automatically matched. To match the landed costs to shipment items, the landed costs must be set up to invoice match. You can mark the landed costs to match when entering landed costs using the Receivings Landed Cost Apportionment window or the Receivings Landed Cost Entry window. You must be keeping receipt history to match landed costs.
+If you are using landed costs, you can use the Match Shipments to Invoice window to match the landed costs that you've entered in the Purchasing Invoice Entry window to one or more shipment items. All the shipment items that are available to match to the landed cost IDs are displayed in the Match Shipments to Invoice window. Landed costs aren't automatically matched. To match the landed costs to shipment items, the landed costs must be set up to invoice match. You can mark the landed costs to match when entering landed costs using the Receivings Landed Cost Apportionment window or the Receivings Landed Cost Entry window. You must be keeping receipt history to match landed costs.
 
 **To match landed costs to shipment line items:**
 
@@ -2960,7 +2989,8 @@ If you are using landed costs, you can use the Match Shipments to Invoice window
 
 2. Enter the receipt number, vendor document number, invoice date, and vendor ID assigned to the landed cost ID.
 
-*The currency ID of the invoice must be the same as the shipment receipt that the landed cost was entered on.*
+    > [!NOTE]
+    > The currency ID of the invoice must be the same as the shipment receipt that the landed cost was entered on.
 
 3. Invoice items (optional).
 
@@ -2970,21 +3000,22 @@ If you are using landed costs, you can use the Match Shipments to Invoice window
 
     - Enter or select a vendor ID and enter line item information.
 
-*If you are using Workflow, drop-ship purchase orders and drop-ship blanket purchase orders must be approved before you can invoice against them. You can invoice against purchase orders that don’t need approval.*
+    > [!NOTE]
+    > If you are using Workflow, drop-ship purchase orders and drop-ship blanket purchase orders must be approved before you can invoice against them. You can invoice against purchase orders that don't need approval.
 
 4. Mark the LC option and enter a landed cost ID.
 
 5. Choose the Match Shipments to Invoice expansion button to open the Match Shipments to Invoice window.
 
-![screenshot](media/POage186.jpg)
+    ![screenshot Match Shipments to Invoice](media/POage186.jpg)
 
-Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
+    Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
 
 6. Mark the Match option for the shipment line items you want to match to the landed cost item entered on the invoice.
 
 7. To quickly match all line items for a shipment or shipment/invoice to the landed cost entered on the invoice, choose the Match Options button to open the Match Options window. You can match the selected landed cost to the items on the shipment or shipment/invoice by either receipt number or PO number.
 
-![screenshot](media/POage188.jpg)
+    ![screenshot Match Options](media/POage188.jpg)
 
 8. Mark Revalue IV if you want to have purchase receipts revalued if the cost variance for a matched invoice is greater than the tolerance percentage.
 
@@ -2994,7 +3025,7 @@ Currency amounts in this window may be displayed in functional or originating cu
 
 ### Matching landed costs to in-transit inventory line items
 
-If you are using landed costs, you can use the Match Shipments to Invoice window to match the landed costs that you’ve entered in the Purchasing Invoice Entry window to one or more in-transit inventory items. All the in-transit inventory items that are available to match to the landed cost IDs are displayed in the Match Shipments to Invoice window. Landed costs aren’t automatically matched. To match the landed costs to in-transit inventory items, the landed costs must be set up to invoice match. You can mark the landed costs to match when entering landed costs using the Receivings Landed Cost Apportionment window or the Receivings Landed Cost Entry window. You must be keeping receipt history to match landed costs.
+If you are using landed costs, you can use the Match Shipments to Invoice window to match the landed costs that you've entered in the Purchasing Invoice Entry window to one or more in-transit inventory items. All the in-transit inventory items that are available to match to the landed cost IDs are displayed in the Match Shipments to Invoice window. Landed costs aren't automatically matched. To match the landed costs to in-transit inventory items, the landed costs must be set up to invoice match. You can mark the landed costs to match when entering landed costs using the Receivings Landed Cost Apportionment window or the Receivings Landed Cost Entry window. You must be keeping receipt history to match landed costs.
 
 **To match landed costs to in-transit inventory line items:**
 
@@ -3041,12 +3072,12 @@ This information is divided into the following sections:
 
 ### Default tax schedules for shipment/invoices
 
-Where the exchange of goods takes place is based on the shipping method assigned to the vendor’s purchase address. The default schedule for the shipment/invoice and the default schedule to compare against the item are selected based on the shipping method. Refer to the following table for the default tax schedule for a shipment/invoice.
+Where the exchange of goods takes place is based on the shipping method assigned to the vendor's purchase address. The default schedule for the shipment/invoice and the default schedule to compare against the item are selected based on the shipping method. Refer to the following table for the default tax schedule for a shipment/invoice.
 
 | **Tax calculation option** | **Shipping method** | **Default tax schedule**       | **Label name**      |
 |----------------------------|---------------------|--------------------------------|---------------------|
-| Advanced                   | Pickup              | Tax schedule assigned to the vendor’s purchase address | Purch Addr Tax      |
-| Advanced                   | No shipping method  | Tax schedule assigned to the vendor’s purchase address | Purch Addr Tax      |
+| Advanced                   | Pickup              | Tax schedule assigned to the vendor's purchase address | Purch Addr Tax      |
+| Advanced                   | No shipping method  | Tax schedule assigned to the vendor's purchase address | Purch Addr Tax      |
 | Advanced                   | Delivery            | Purchases tax schedule assigned in the Company         | Company Tax Sched   |
 | Single schedule            | Not applicable      | Tax schedule assigned as the single schedule tax schedule in the Purchase Order Processing Setup Options window | Single Tax Schedule |
 
@@ -3058,24 +3089,23 @@ Setup window
 
 ID
 <!-- something wrong here-->
-*If you decided not to use the shipping method to determine the default tax schedule and decided to use the advanced tax calculations method, the tax schedule assigned to the vendor’s purchase address will be the default tax schedule.*
+*If you decided not to use the shipping method to determine the default tax schedule and decided to use the advanced tax calculations method, the tax schedule assigned to the vendor's purchase address will be the default tax schedule.*
 
 ### Tax schedules for shipment/invoice items
 
-To calculate tax for an item, the tax schedules assigned to the item are compared. The item’s default tax schedule is as follows:
+To calculate tax for an item, the tax schedules assigned to the item are compared. The item's default tax schedule is as follows:
 
 | **Item**                                                     | **Default tax schedule**                                                                             |
 |--------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | Item is assigned to a purchase order                         | Tax schedule assigned to the item on the purchase order                                              |
-| Inventoried item that isn’t assigned to a purchase order     | Purchase tax schedule assigned to the item in the Item Maintenance window                            |
-| Non-inventoried item that isn’t assigned to a purchase order | Tax schedule assigned to non-inventoried items in the Purchase Order Processing Setup Options window |
+| Inventoried item that isn't assigned to a purchase order     | Purchase tax schedule assigned to the item in the Item Maintenance window                            |
+| Non-inventoried item that isn't assigned to a purchase order | Tax schedule assigned to non-inventoried items in the Purchase Order Processing Setup Options window |
 
-The default tax schedule to mask against the item’s tax schedule is as
+The default tax schedule to mask against the item's tax schedule is as
 follows: <!-- something wrong here-->
 
 | **Tax calculation option** | **Purchase order assigned** | **Shipping method** | **Inventory** |
 |----------------------------|-----------------------------|---------------------|---------------|
-
 
 **Control**
 
@@ -3099,13 +3129,13 @@ Options window
 
 ID
 
-*If you decided not to use the shipping method to determine the default tax schedule and decided to use the advanced tax calculations method, the tax schedule assigned to the vendor’s purchase address will be the default tax schedule.*
+*If you decided not to use the shipping method to determine the default tax schedule and decided to use the advanced tax calculations method, the tax schedule assigned to the vendor's purchase address will be the default tax schedule.*
 
 ### Calculating and distributing summary taxes for shipment/invoice receipts
 
-Use the Receivings Tax Summary Entry window to add, change, delete, or view summarized tax amounts for a shipment/invoice, as well as the accounts to which the amounts will be posted. Taxes are calculated automatically as you enter each tax detail or edit the Total Purchases amount. Summary tax edits won’t change the taxes calculated for each line item in the Receivings Line Item Tax Detail Entry window.
+Use the Receivings Tax Summary Entry window to add, change, delete, or view summarized tax amounts for a shipment/invoice, as well as the accounts to which the amounts will be posted. Taxes are calculated automatically as you enter each tax detail or edit the Total Purchases amount. Summary tax edits won't change the taxes calculated for each line item in the Receivings Line Item Tax Detail Entry window.
 
-If your system isn’t set up to allow editing summary-level taxes, you can’t change the Tax amount in the Receivings Transaction Entry window or the tax information in the Receivings Tax Summary Entry window, except for the account. You’ll be able to change the account for tax included in item taxes at the summary level regardless of how your system is set up. If you want to change tax information, use the Receivings Line Item Tax Detail Entry window. For more information about the setup option to make summary edits to taxes, refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
+If your system isn't set up to allow editing summary-level taxes, you can't change the Tax amount in the Receivings Transaction Entry window or the tax information in the Receivings Tax Summary Entry window, except for the account. You'll be able to change the account for tax included in item taxes at the summary level regardless of how your system is set up. If you want to change tax information, use the Receivings Line Item Tax Detail Entry window. For more information about the setup option to make summary edits to taxes, refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
 If you are using Project Accounting, you can't change the Tax amount in the Receivings Transaction Entry window or the tax information in the Receivings Tax Summary Entry window even if your system is set up to allow editing summarylevel taxes. If you want to change tax information, use the Receivings Line Item Tax Detail Entry window.
 
@@ -3118,7 +3148,7 @@ If you are using Project Accounting, you can't change the Tax amount in the Rece
 
 3. Enter document information, including receipt number, vendor document number, and receipt date.
 
-Choose the Date expansion button to open the Receivings Date Entry window, where you can enter a tax date and posting date that differ from the document date. The tax date you enter is the date your tax records are updated.
+    Choose the Date expansion button to open the Receivings Date Entry window, where you can enter a tax date and posting date that differ from the document date. The tax date you enter is the date your tax records are updated.
 
 4. Receive items.
 
@@ -3134,15 +3164,15 @@ Choose the Date expansion button to open the Receivings Date Entry window, where
 
 7. Choose the Tax expansion button to open the Receivings Tax Summary Entry window, where you can view or edit the tax distribution amounts.
 
-![screenshot](media/POage191.jpg)
+    ![screenshot Receivings Tax Summary Entry](media/POage191.jpg)
 
-Currency amounts in this window may be displayed in the functional or originating currency, depending on the view selected in the Receivings Transaction Entry window.
+    Currency amounts in this window may be displayed in the functional or originating currency, depending on the view selected in the Receivings Transaction Entry window.
 
 8. To edit tax information, enter a tax detail ID, a tax amount, total purchases, or select a new account. (The tax amount for the detail will be posted to the account.)
 
 9. To distribute tax to multiple tax details, change the default amount in the scrolling window and enter or select another tax detail and tax amount in the next available line.
 
-To delete a single tax detail, select the row containing it and choose Edit \>\> Delete Row.
+    To delete a single tax detail, select the row containing it and choose Edit \>\> Delete Row.
 
 10. Choose OK to save your entries and return to the Receivings Transaction Entry window.
 
@@ -3154,7 +3184,7 @@ Choose Default to restore the default tax information.
 
 ### Calculating and distributing detail taxes for shipment/ invoice line items
 
-Use the Receivings Line Item Tax Detail Entry window to add, change, delete, or view tax amounts calculated on an individual line item. Taxes are calculated automatically as you enter each tax detail or edit the Total Purchases amount. Summary tax edits won’t change the taxes calculated for each line item in the Receivings Line Item Tax Detail Entry window. Tax edits made for each line item will change the summary tax amounts in the Receivings Tax Summary Entry window.
+Use the Receivings Line Item Tax Detail Entry window to add, change, delete, or view tax amounts calculated on an individual line item. Taxes are calculated automatically as you enter each tax detail or edit the Total Purchases amount. Summary tax edits won't change the taxes calculated for each line item in the Receivings Line Item Tax Detail Entry window. Tax edits made for each line item will change the summary tax amounts in the Receivings Tax Summary Entry window.
 
 **To calculate and distribute detail taxes for shipment/ invoice line items:**
 
@@ -3177,15 +3207,15 @@ Use the Receivings Line Item Tax Detail Entry window to add, change, delete, or 
 
 6. Choose the Calculated Tax expansion button to open the Receivings Line Item Tax Detail Entry window, where you can view or edit tax distribution amounts.
 
-![screenshot](media/POage193.jpg)
+    ![screenshot Receivings Line Item Tax Detail Entry](media/POage193.jpg)
 
 7. To edit tax information, enter a tax detail ID, total purchases, or tax amount.
 
-(The tax amount for the detail will be posted to the account.)
+    The tax amount for the detail will be posted to the account.
 
 8. To distribute tax to multiple tax details, change the default amount in the scrolling window and enter or select another tax detail and tax amount in the next available line.
 
-To delete a single tax detail, select the row containing it and choose Edit \>\> Delete Row.
+    To delete a single tax detail, select the row containing it and choose Edit \>\> Delete Row.
 
 9. Choose OK to save your entries and return to the Receivings Item Detail Entry window.
 
@@ -3198,15 +3228,15 @@ Choose Default to restore the default tax information.
 ### Default tax schedules for invoices
 
 Where the exchange of goods takes place is based on the shipping method
-assigned to the vendor’s purchase address. The default schedule for the
+assigned to the vendor's purchase address. The default schedule for the
 invoice and the default schedule to compare against the item are selected
 based on the shipping method. Refer to the following table for the default
 tax schedule for an invoice.
 
 | **Tax calculation option** | **Shipping method** | **Default tax schedule**                                                        | **Label name**         |
 |----------------------------|---------------------|---------------------------------------------------------------------------------|------------------------|
-| Advanced                   | Pickup              | Tax schedule assigned to the vendor’s purchase address                          | Purch Addr Tax Sched   |
-| Advanced                   | No shipping method  | Tax schedule assigned to the vendor’s purchase address                          | Purch Addr Tax Sched   |
+| Advanced                   | Pickup              | Tax schedule assigned to the vendor's purchase address                          | Purch Addr Tax Sched   |
+| Advanced                   | No shipping method  | Tax schedule assigned to the vendor's purchase address                          | Purch Addr Tax Sched   |
 | Advanced                   | Delivery            | Purchases tax schedule assigned in the Company Setup window                     | Company Tax Sched      |
 | Single schedule            | Not applicable      | Tax schedule assigned as the single schedule tax schedule in the Purchase Order | Single Tax Schedule ID |
 
@@ -3214,19 +3244,19 @@ Processing Setup
 
 Options window
 
-*If you decided not to use the shipping method to determine the default tax schedule and decided to use the advanced tax calculations method, the tax schedule assigned to the vendor’s purchase address will be the default tax schedule.*
+*If you decided not to use the shipping method to determine the default tax schedule and decided to use the advanced tax calculations method, the tax schedule assigned to the vendor's purchase address will be the default tax schedule.*
 
 ### Tax schedules for invoice items
 
-To calculate tax for an item, the tax schedules assigned to the item are compared. The item’s default tax schedule is as follows:
+To calculate tax for an item, the tax schedules assigned to the item are compared. The item's default tax schedule is as follows:
 
 | **Item**                                                     | **Default tax schedule**                                                                             |
 |--------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | Item is assigned to a purchase order                         | Tax schedule assigned to the item on the purchase order                                              |
-| Inventoried item that isn’t assigned to a purchase order     | Purchase tax schedule assigned to the item in the Item Maintenance window                            |
-| Non-inventoried item that isn’t assigned to a purchase order | Tax schedule assigned to non-inventoried items in the Purchase Order Processing Setup Options window |
+| Inventoried item that isn't assigned to a purchase order     | Purchase tax schedule assigned to the item in the Item Maintenance window                            |
+| Non-inventoried item that isn't assigned to a purchase order | Tax schedule assigned to non-inventoried items in the Purchase Order Processing Setup Options window |
 
-The default tax schedule to mask against the item’s tax schedule is as follows:
+The default tax schedule to mask against the item's tax schedule is as follows:
 
 | **Tax calculation option** | **Purchase order assigned** | **Shipping method** | **Default tax schedule**          | **Label name**         |
 |----------------------------|-----------------------------|---------------------|-----------------------------------|------------------------|
@@ -3240,13 +3270,13 @@ Setup window
 
 Setup Options window
 
-*If you decided not to use the shipping method to determine the default tax schedule and decided to use the advanced tax calculations method, the tax schedule assigned to the vendor’s purchase address will be the default tax schedule.*
+*If you decided not to use the shipping method to determine the default tax schedule and decided to use the advanced tax calculations method, the tax schedule assigned to the vendor's purchase address will be the default tax schedule.*
 
 ### Calculating and distributing summary taxes for invoice receipts
 
-Use the Purchasing Invoice Tax Summary Entry window to add, change, delete, or view summarized tax amounts for an invoice, as well as the accounts to which the amounts will be posted. Taxes are calculated automatically as you enter each tax detail or edit the Total Purchases amount. Summary tax edits won’t change the taxes calculated for each line item in the Purchasing Invoice Line Item Tax Detail Entry window.
+Use the Purchasing Invoice Tax Summary Entry window to add, change, delete, or view summarized tax amounts for an invoice, as well as the accounts to which the amounts will be posted. Taxes are calculated automatically as you enter each tax detail or edit the Total Purchases amount. Summary tax edits won't change the taxes calculated for each line item in the Purchasing Invoice Line Item Tax Detail Entry window.
 
-If your system isn’t set up to allow editing summary-level taxes, you can’t change the Tax amount in the Purchasing Invoice Entry window or the tax information in the Purchasing Invoice Tax Summary Entry window, except for the account. You’ll be able to change the account for tax included in item taxes at the summary level regardless of how your system is set up. If you want to change tax information, use the Purchasing Invoice Line Item Tax Detail Entry window. For more information on the setup option to make summary edits to taxes, refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
+If your system isn't set up to allow editing summary-level taxes, you can't change the Tax amount in the Purchasing Invoice Entry window or the tax information in the Purchasing Invoice Tax Summary Entry window, except for the account. You'll be able to change the account for tax included in item taxes at the summary level regardless of how your system is set up. If you want to change tax information, use the Purchasing Invoice Line Item Tax Detail Entry window. For more information on the setup option to make summary edits to taxes, refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
 If you are using Project Accounting, you can't change the Tax amount in the Purchasing Invoice Entry window or the tax information in the Purchasing Invoice Tax Summary Entry window even if your system is set up to allow editing summary-level taxes. If you want to change tax information, use the Purchasing Invoice Line Item Tax Detail Entry window.
 
@@ -3257,15 +3287,15 @@ If you are using Project Accounting, you can't change the Tax amount in the Purc
 
 2. Enter document information, including receipt number, vendor document number, and invoice date.
 
-Choose the Invoice Date expansion button to open the Purchasing Invoice Date Entry window, where you can enter a tax date and posting date that differ from the document date. The tax date you enter is the date your tax records are updated.
+    Choose the Invoice Date expansion button to open the Purchasing Invoice Date Entry window, where you can enter a tax date and posting date that differ from the document date. The tax date you enter is the date your tax records are updated.
 
 3. Invoice items.
 
-- Choose Auto-Invoice to open the Select Purchase Order window, where you can automatically invoice all shipment line items available for an invoice.
+    - Choose Auto-Invoice to open the Select Purchase Order window, where you can automatically invoice all shipment line items available for an invoice.
 
-- Enter or select a vendor ID and choose Auto-Invoice to open the Select Purchase Order Items window, where you can invoice line items that have been received from multiple purchase orders.
+    - Enter or select a vendor ID and choose Auto-Invoice to open the Select Purchase Order Items window, where you can invoice line items that have been received from multiple purchase orders.
 
-- Enter or select a vendor ID and enter line item information.
+    - Enter or select a vendor ID and enter line item information.
 
 4. Select a line item and choose the Vendor Item or Item expansion button to open the Purchasing Invoice Item Tax Entry window. You can change the tax status, tax schedules, or tax amount for an item.
 
@@ -3273,15 +3303,15 @@ Choose the Invoice Date expansion button to open the Purchasing Invoice Date Ent
 
 6. Choose the Tax expansion button to open the Purchasing Invoice Tax Summary Entry window, where you can view or edit the tax distribution amounts.
 
-![screenshot](media/POage195.jpg)
+    ![screenshot Purchasing Invoice Tax Summary Entry ](media/POage195.jpg)
 
-Currency amounts in this window may be displayed in the functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
+    Currency amounts in this window may be displayed in the functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
 
 7. To edit tax information, enter a tax detail ID, a tax amount, total purchases, or select a new account. (The tax amount for the detail will be posted to the account.)
 
 8. To distribute tax to multiple tax details, change the default amount in the scrolling window and enter or select another tax detail and tax amount in the next available line.
 
-To delete a single tax detail, select the row containing it and choose Edit \>\> Delete Row.
+    To delete a single tax detail, select the row containing it and choose Edit \>\> Delete Row.
 
 9. Choose OK to save your entries and return to the Purchasing Invoice Entry window.
 
@@ -3293,7 +3323,7 @@ Choose Default to restore the default tax information.
 
 ### Calculating and distributing detail taxes for invoice line items
 
-Use the Purchasing Invoice Line Item Tax Detail Entry window to add, change, delete, or view tax amounts calculated on an individual line item. Taxes are calculated automatically as you enter each tax detail or edit the Total Purchases amount. Summary tax edits won’t change the taxes calculated for each line item in the Purchasing Invoice Line Item Tax Detail Entry window. Tax edits made for each line item will change the summary tax amounts in the Purchasing Invoice Tax Summary Entry window.
+Use the Purchasing Invoice Line Item Tax Detail Entry window to add, change, delete, or view tax amounts calculated on an individual line item. Taxes are calculated automatically as you enter each tax detail or edit the Total Purchases amount. Summary tax edits won't change the taxes calculated for each line item in the Purchasing Invoice Line Item Tax Detail Entry window. Tax edits made for each line item will change the summary tax amounts in the Purchasing Invoice Tax Summary Entry window.
 
 **To calculate and distribute detail taxes for invoice line items:**
 
@@ -3302,7 +3332,7 @@ Use the Purchasing Invoice Line Item Tax Detail Entry window to add, change, del
 
 2. Enter document information, including receipt number, vendor document number, and invoice date.
 
-Choose the Invoice Date expansion button to open the Purchasing Invoice Date Entry window, where you can enter a tax date and posting date that differ from the document date. The tax date you enter is the date your tax records are updated.
+    Choose the Invoice Date expansion button to open the Purchasing Invoice Date Entry window, where you can enter a tax date and posting date that differ from the document date. The tax date you enter is the date your tax records are updated.
 
 3. Invoice items.
 
@@ -3316,15 +3346,15 @@ Choose the Invoice Date expansion button to open the Purchasing Invoice Date Ent
 
 5. Choose the Calculated Tax expansion button to open the Purchasing Invoice Line Item Tax Detail Entry window, where you can view or edit the tax amounts.
 
-![screenshot](media/POage197.jpg)
+    ![screenshot Purchasing Invoice Line Item Tax Detail Entry](media/POage197.jpg)
 
 6. To edit tax information, enter a tax detail ID, total purchases, or tax amount.
 
-(The tax amount for the detail will be posted to the account.)
+    The tax amount for the detail will be posted to the account.
 
 7. To distribute tax to multiple tax details, change the default amount in the scrolling window and enter or select another tax detail and tax amount in the next available line.
 
-To delete a single tax detail, select the row containing it and choose Edit \>\> Delete Row.
+    To delete a single tax detail, select the row containing it and choose Edit \>\> Delete Row.
 
 8. Choose OK to save your entries and return to the Purchasing Invoice Item Tax Detail Entry window.
 
@@ -3336,7 +3366,7 @@ Choose Default to restore the default tax information.
 
 ## Chapter 21: Receipt posting
 
-Posting is the process of transferring transactions to permanent records. Until transactions are posted, they can be changed or deleted. After you post transactions in Purchase Order Processing, they can’t be changed or deleted. To print a posting journal after the transaction was posted, use the Purchasing Posting Journals window or the Purchasing Posting Journal Options window.
+Posting is the process of transferring transactions to permanent records. Until transactions are posted, they can be changed or deleted. After you post transactions in Purchase Order Processing, they can't be changed or deleted. To print a posting journal after the transaction was posted, use the Purchasing Posting Journals window or the Purchasing Posting Journal Options window.
 
 Posting reports will be printed when you post transactions, either individually or in batches. For more information about posting reports for Purchase Order Processing, refer to *Purchase Order Processing standard reports summary*.
 
@@ -3352,15 +3382,15 @@ This information is divided into the following sections:
 
 ### Posting a receipt
 
-Transaction-level posting allows you to enter and post transactions individually without ever having to create a batch. Purchasing receipt information always will be up-to-date immediately when you post using this method, because transactions must be posted or deleted immediately. They can’t be saved or posted later.
+Transaction-level posting allows you to enter and post transactions individually without ever having to create a batch. Purchasing receipt information always will be up-to-date immediately when you post using this method, because transactions must be posted or deleted immediately. They can't be saved or posted later.
 
 You can perform transaction-level posting in the Receivings Transaction Entry window and in the Purchasing Invoice Entry window. Purchasing and inventory information will be update immediately every time you post using this method. All transactions posted individually in a single data entry session will have the same audit trail code.
 
-Transaction-level posting is optional and can be selected in the Posting Setup window when you set up Microsoft Dynamics GP. If you aren’t allowed to post individual transactions, you’ll be asked to create a batch when you attempt to post transactions. Also, you can post an individual transaction that was previously entered in a batch. To do so, select the transaction from the batch, clear the Batch ID field and post the transaction.
+Transaction-level posting is optional and can be selected in the Posting Setup window when you set up Microsoft Dynamics GP. If you aren't allowed to post individual transactions, you'll be asked to create a batch when you attempt to post transactions. Also, you can post an individual transaction that was previously entered in a batch. To do so, select the transaction from the batch, clear the Batch ID field and post the transaction.
 
-If you’re posting by transaction date, the posting date and the document date will be the same. If you change the posting date in the date entry window, the document date won’t be affected.
+If you're posting by transaction date, the posting date and the document date will be the same. If you change the posting date in the date entry window, the document date won't be affected.
 
-You can’t post to a year that hasn’t been set up using the Fiscal Periods Setup window. Also, if the year has been set up but the Purchasing period is closed, posting won’t be allowed. The posting journal will indicate the transactions that were posted, as well as the transactions that weren’t posted. Transactions will be posted to General Ledger, even if a Financial series period has been closed. However, transactions will not post through General Ledger.
+You can't post to a year that hasn't been set up using the Fiscal Periods Setup window. Also, if the year has been set up but the Purchasing period is closed, posting won't be allowed. The posting journal will indicate the transactions that were posted, as well as the transactions that weren't posted. Transactions will be posted to General Ledger, even if a Financial series period has been closed. However, transactions will not post through General Ledger.
 
 The reports for individually posted transactions contain information only for the transactions that were entered and posted since the Receivings Transaction Entry window or the Purchasing Invoice Entry window was opened. These reports are printed when you close the window.
 
@@ -3370,7 +3400,7 @@ Use the Purchasing Batch Entry window to post a single batch. Before you post, b
 
 **To post a purchasing batch:**
 
-1. Make a backup of your company’s data. Refer your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
+1. Make a backup of your company's data. Refer your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
 2. Open the Purchasing Batch Entry window.
     (Purchasing \>\> Transactions \>\> Purchasing Batches)
@@ -3381,9 +3411,9 @@ Use the Purchasing Batch Entry window to post a single batch. Before you post, b
 
 5. Choose Post. Your Purchase Order Processing records will be updated to reflect the information from the transactions. Your General Ledger accounts will be updated depending on your posting setup selections.
 
-If you’re set up to post to General Ledger in the Posting Setup window, the batch appears in the Financial Series Posting and Master Posting windows; you can edit the transactions in the General Ledger Transaction Entry window before posting them again. Your accounts are updated when you post the transactions in General Ledger.
+    If you're set up to post to General Ledger in the Posting Setup window, the batch appears in the Financial Series Posting and Master Posting windows; you can edit the transactions in the General Ledger Transaction Entry window before posting them again. Your accounts are updated when you post the transactions in General Ledger.
 
-If you post through General Ledger, your accounts are updated at once and you don’t need to post the batch again in General Ledger.
+    If you post through General Ledger, your accounts are updated at once and you don't need to post the batch again in General Ledger.
 
 6. One or more posting journals may be printed, depending on the options selected in the Posting Setup window. A Report Destination window may appear for each posting journal that was selected to print, depending on how they were set up.
 
@@ -3393,18 +3423,18 @@ Use the Purchasing Series Posting window to post multiple batches in the Purchas
 
 **To post Purchasing series batches:**
 
-1. Make a backup of your company’s data. Refer your System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
+1. Make a backup of your company's data. Refer your System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
 2. Print an edit list to review the transactions in the batch. An edit list can be printed from the Purchasing Batch Entry window by choosing File \>\> Print with the appropriate batch ID displayed. If you need to make corrections, do so at this time.
 
-3. Open the Purchasing Series Posting window. 
-    (Purchasing \>\> Transactions \>\> Series Post)
+3. Open the Purchasing Series Posting window. (Purchasing \>\> Transactions \>\> Series Post)
 
-![screenshot](media/POage199.jpg)
+    ![screenshot Purchasing Series Posting](media/POage199.jpg)
 
 4. Mark the box next to the batch ID for each batch you want to post. The status changes to Marked, which indicates to other users that the batch is ready to be posted.
 
-*If a batch was marked previously, the User ID column identifies the person who marked it. If you want to post that batch, unmark it and mark it again so the batch is assigned to you. Series posting allows you to post only those batches that you’ve marked; you can’t post batches marked by another user.*
+    > [!NOTE]
+    > If a batch was marked previously, the User ID column identifies the person who marked it. If you want to post that batch, unmark it and mark it again so the batch is assigned to you. Series posting allows you to post only those batches that you've marked; you can't post batches marked by another user.
 
 5. Choose Post. One or more posting journals may be printed, depending on the options selected in the Posting Setup window. A Report Destination window may appear for each posting journal that was selected to print, depending on how they were set up.
 
@@ -3412,7 +3442,7 @@ Use the Purchasing Series Posting window to post multiple batches in the Purchas
 
 Proper maintenance of your receiving information is essential for preserving the accuracy of your records. This chapter focuses on the tasks that allow you to maintain your records effectively.
 
-Throughout the receiving process, you can print a variety of reports you can use to double-check documents you’ve entered. If you identify errors on these reports, the errors must be corrected to ensure accurate reporting of your receiving activity. You also may want to delete or void shipment, shipment/invoice and invoice receipts that are no longer valid.
+Throughout the receiving process, you can print a variety of reports you can use to double-check documents you've entered. If you identify errors on these reports, the errors must be corrected to ensure accurate reporting of your receiving activity. You also may want to delete or void shipment, shipment/invoice and invoice receipts that are no longer valid.
 
 If you are using Purchase Order Enhancements, you can process returns against Purchase Order Processing receipts. Items that have been received on a shipment or shipment/invoice receipt can be returned as a Return or a Return w/Credit document type. For more information, see the Purchase Order Enhancements documentation.
 
@@ -3445,14 +3475,14 @@ Use the Receivings Transaction Entry window to correct shipment, shipment/invoic
 
 3. Highlight the fields you want to change and enter the correct information.
 
-• If you changed a quantity shipped or quantity rejected for a lot-numbered item or a serial-numbered item, the Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open; you can assign lot or serial numbers to the item. The In-Transit Serial Number Entry window or the In-Transit Lot Number Entry window opens for an in-transit inventory receipt, where you can assign lot or serial numbers to an item.
+    > [!NOTE]
+    > If you changed a quantity shipped or quantity rejected for a lot-numbered item or a serial-numbered item, the Purchasing Lot Number Entry window or the Purchasing Serial Number Entry window will open; you can assign lot or serial numbers to the item. The In-Transit Serial Number Entry window or the In-Transit Lot Number Entry window opens for an in-transit inventory receipt, where you can assign lot or serial numbers to an item.
 
+    - If receiving items without a purchase order is allowed, you can enter items, non-inventoried items or vendor items that don't exist on the purchase order. If you are using Project Accounting, you can't enter vendor items for projects.
 
-- If receiving items without a purchase order is allowed, you can enter items, non-inventoried items or vendor items that don’t exist on the purchase order. If you are using Project Accounting, you can’t enter vendor items for projects.
+    - If you delete an item when you are using landed costs, all line and apportioned landed costs assigned to the item also are deleted. Deleting an item that has apportioned landed costs will cause the unapportioned amount and the document's landed cost functional total to recalculate.
 
-- If you delete an item when you are using landed costs, all line and apportioned landed costs assigned to the item also are deleted. Deleting an item that has apportioned landed costs will cause the unapportioned amount and the document’s landed cost functional total to recalculate.
-
-4. Choose File \>\> Print to verify the corrections you’ve entered with a Receivings Edit List.
+4. Choose File \>\> Print to verify the corrections you've entered with a Receivings Edit List.
 
 5. Choose Save to save the corrected transaction.
 
@@ -3469,11 +3499,11 @@ Use the Purchasing Invoice Entry window to correct invoice receipts before posti
 
 3. Highlight the fields you want to change and enter the correct information.
 
-    - If receiving items without a purchase order is allowed, you can enter items, non-inventoried items, or vendor items that don’t exist on the purchase order as long as those items or vendor items are on a shipment that has been posted. If you are using Project Accounting, you can’t enter vendor items for projects.
+    - If receiving items without a purchase order is allowed, you can enter items, non-inventoried items, or vendor items that don't exist on the purchase order as long as those items or vendor items are on a shipment that has been posted. If you are using Project Accounting, you can't enter vendor items for projects.
 
     - You can match or unmatch shipment line items to invoices. You also can match or unmatch landed cost items.
 
-4. Choose File \>\> Print to verify the corrections you’ve entered with a Purchasing Invoice Edit List.
+4. Choose File \>\> Print to verify the corrections you've entered with a Purchasing Invoice Edit List.
 
 5. Choose Save to save the corrected transaction.
 
@@ -3501,12 +3531,11 @@ Deleting and voiding receipts increases the following quantities in the Purchasi
 
 Use the Receivings Transaction Entry window to delete unposted shipment. shipment/invoice, or in-transit inventory receipts. Deleting removes receipt information from the system and makes receipt numbers available for reuse.
 
-To delete receipts or line items linked to jobs, you must have authority to unlink line items from a job. Security is set in the Job Costing Preference Defaults window. You can’t link line item jobs to in-transit inventory receipts. If you are using Project Accounting, you can’t link line items to jobs.
+To delete receipts or line items linked to jobs, you must have authority to unlink line items from a job. Security is set in the Job Costing Preference Defaults window. You can't link line item jobs to in-transit inventory receipts. If you are using Project Accounting, you can't link line items to jobs.
 
 **To delete shipment, shipment/invoice, or in-transit inventory receipts:**
 
-1. Open the Receivings Transaction Entry window.
-    (Purchasing \>\> Transactions \>\> Receivings Transaction Entry) 
+1. Open the Receivings Transaction Entry window. (Purchasing \>\> Transactions \>\> Receivings Transaction Entry)
 
 2. Enter or select the receipt number of the receipt you want to delete.
 
@@ -3514,11 +3543,11 @@ To delete receipts or line items linked to jobs, you must have authority to unli
 
 ### Voiding shipment, shipment/invoice, or in-transit inventory receipts
 
-Use the Receivings Transaction Entry window to void unposted shipment, shipment/invoice, and in-transit inventory receipts. Voiding moves receipt information to history and does not make receipt numbers available for reuse until history is removed, if you’re keeping history. If you’re not keeping history, voiding removes receipt information from the system.
+Use the Receivings Transaction Entry window to void unposted shipment, shipment/invoice, and in-transit inventory receipts. Voiding moves receipt information to history and does not make receipt numbers available for reuse until history is removed, if you're keeping history. If you're not keeping history, voiding removes receipt information from the system.
 
-If you track voided receipts, you’ll know why a receipt number is missing or out of sequence. If you’ve selected to track receipts in history, you can view information about voided receipts using the purchasing inquiry windows or by printing the Receivings Voided Journal or the Receivings Transaction History Report.
+If you track voided receipts, you'll know why a receipt number is missing or out of sequence. If you've selected to track receipts in history, you can view information about voided receipts using the purchasing inquiry windows or by printing the Receivings Voided Journal or the Receivings Transaction History Report.
 
-To void receipts or line items linked to jobs, you must have authority to unlink line items from a job. Security is set in the Job Costing Preference Defaults window. You can’t link line item jobs to in-transit inventory receipts. If you are using Project Accounting, you can’t link line items to jobs.
+To void receipts or line items linked to jobs, you must have authority to unlink line items from a job. Security is set in the Job Costing Preference Defaults window. You can't link line item jobs to in-transit inventory receipts. If you are using Project Accounting, you can't link line items to jobs.
 
 **To void shipment, shipment/invoice, or in-transit inventory receipts:**
 
@@ -3527,13 +3556,13 @@ To void receipts or line items linked to jobs, you must have authority to unlink
 
 2. Enter or select the receipt number of the receipt you want to void.
 
-3. Choose Void. The Receivings Voided Journal is printed when you close the Receivings Transaction Entry window after voiding, if you’ve marked the option to print it in the Posting Setup window.
+3. Choose Void. The Receivings Voided Journal is printed when you close the Receivings Transaction Entry window after voiding, if you've marked the option to print it in the Posting Setup window.
 
 ### Deleting invoice receipts
 
 Use the Purchasing Invoice Entry window to delete unposted invoice receipts. Deleting removes receipt information from the system and makes receipt numbers available for reuse.
 
-To delete invoice receipts or line items linked to jobs, you must have authority to unlink line items from a job. Security is set in the Job Costing Preference Defaults window. If you are using Project Accounting, you can’t link line items to jobs.
+To delete invoice receipts or line items linked to jobs, you must have authority to unlink line items from a job. Security is set in the Job Costing Preference Defaults window. If you are using Project Accounting, you can't link line items to jobs.
 
 **To delete invoice receipts:**
 
@@ -3548,9 +3577,9 @@ To delete invoice receipts or line items linked to jobs, you must have authority
 
 Use the Purchasing Invoice Entry window to void unposted invoice receipts.
 
-If you track voided receipts, you’ll know why a receipt number is missing or out of sequence. If you’ve selected to track receipts in history, you can view information about voided receipts using the purchasing inquiry windows or by printing the Voided Invoice Journal or the Receivings Transaction History Report.
+If you track voided receipts, you'll know why a receipt number is missing or out of sequence. If you've selected to track receipts in history, you can view information about voided receipts using the purchasing inquiry windows or by printing the Voided Invoice Journal or the Receivings Transaction History Report.
 
-To void invoice receipts or line items linked to jobs, you must have authority to unlink line items from a job. Security is set in the Job Costing Preference Defaults window. If you are using Project Accounting, you can’t link line items to jobs.
+To void invoice receipts or line items linked to jobs, you must have authority to unlink line items from a job. Security is set in the Job Costing Preference Defaults window. If you are using Project Accounting, you can't link line items to jobs.
 
 **To void invoice receipts:**
 
@@ -3559,7 +3588,7 @@ To void invoice receipts or line items linked to jobs, you must have authority t
 
 2. Enter or select the receipt number of the receipt you want to void.
 
-3. Choose Void. The Voided Invoice Journal is printed when you close the Purchasing Invoice Entry window after voiding invoice receipts, if you’ve marked the option to print it in the Posting Setup window.
+3. Choose Void. The Voided Invoice Journal is printed when you close the Purchasing Invoice Entry window after voiding invoice receipts, if you've marked the option to print it in the Posting Setup window.
 
 ## See Also
 
