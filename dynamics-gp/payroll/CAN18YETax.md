@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/8/2020
+ms.date: 12/10/2020
 
 ---
 
@@ -339,11 +339,11 @@ Effective January 1, 2021 the federal tax rate is unchanged. The federal index f
 
 Federal personal amounts have been increased by fixed amounts as shown in the following table.
 
-The Basic Personal amount is updated to \$13,808 (formerly \$12,298).
+The Basic Personal amount is updated to \$13,808 (formerly \$13,229).
 
-The Spouse Common Law Partner amount increases by the index factor to \$13,808 (formerly \$12,298), if the original amount was not zero.
+The Spouse Common Law Partner amount increases by the index factor to \$13,808 (formerly \$13,229), if the original amount was not zero.
 
-The Eligible Dependent amount increases by the index factor to \$13,808 (formerly \$12,298), if the original amount was not zero.
+The Eligible Dependent amount increases by the index factor to \$13,808 (formerly \$13,229), if the original amount was not zero.
 
 Canada Employment Credit
 
