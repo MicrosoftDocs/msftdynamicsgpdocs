@@ -1,6 +1,6 @@
 ---
 title: "Purchase Order Processing"
-description: "Purchasing for Dynamics GP"
+description: "Learn about the Purchasing module for Dynamics GP."
 keywords: "purchase order"
 author: tnistler
 manager: edupont
@@ -8,13 +8,13 @@ manager: edupont
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
-ms.author: tnistler
+ms.author: theley
 ms.date: 01/23/2019
 
 ---
 # Purchase Order Processing in Dynamics GP
 
-You can use Purchase Order Processing to enter standard, drop-ship, and blanket purchase orders for items. When necessary, you can change the status of a purchase order or the individual line items on the purchase order. For example, you might cancel a line item on a purchase order if the item that you’ve ordered has been discontinued or if you won’t be receiving part of the quantity ordered for the purchase order.
+You can use Purchase Order Processing to enter standard, drop-ship, and blanket purchase orders for items. When necessary, you can change the status of a purchase order or the individual line items on the purchase order. For example, you might cancel a line item on a purchase order if the item that you've ordered has been discontinued or if you won't be receiving part of the quantity ordered for the purchase order.
 
 You also can use Purchase Order Processing to complete the following tasks:
 
@@ -38,11 +38,11 @@ If you are using Purchase Order Enhancements, you can approve and commit purchas
 
 This content is designed to give you an understanding of how to use the features of Purchase Order Processing, and how it integrates with the Dynamics GP system.
 
-To make best use of Purchase Order Processing, you should be familiar with system-wide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide.
+To make best use of Purchase Order Processing, you should be familiar with system-wide features described in the System User's Guide, the System Setup Guide, and the System Administrator's Guide.
 
 Some features described in the documentation are optional and can be purchased through your Dynamics GP partner.
 
-To view information about the release of Dynamics GP that you’re using and which modules or features you are registered to use, choose Help\>\> About Microsoft Dynamics GP.
+To view information about the release of Dynamics GP that you're using and which modules or features you are registered to use, choose Help\>\> About Microsoft Dynamics GP.
 
 The content is divided into the following parts:
 
@@ -64,13 +64,13 @@ Use the following information to set up Purchase Order Processing. Setup procedu
 
 The following topics are discussed:
 
-- *Chapter 1, “Module setup,”* provides instructions for setting up the Purchase Order Processing module.
+- *Chapter 1, "Module setup,"* provides instructions for setting up the Purchase Order Processing module.
 
-- *Chapter 2, “Buyers,”* describes how to set up and manage buyer IDs. Identifying a buyer on a purchase order makes it easier to track orders.
+- *Chapter 2, "Buyers,"* describes how to set up and manage buyer IDs. Identifying a buyer on a purchase order makes it easier to track orders.
 
-- *Chapter 3, “Purchase order generator setup,”* provides instructions for setting up the purchase order generator.
+- *Chapter 3, "Purchase order generator setup,"* provides instructions for setting up the purchase order generator.
 
-- *Chapter 4, “Project setup for Purchase Order Processing,”* provides instructions for setting up project information in the Purchase Order Processing module.
+- *Chapter 4, "Project setup for Purchase Order Processing,"* provides instructions for setting up project information in the Purchase Order Processing module.
 
 ## Chapter 1: Module setup
 
@@ -98,15 +98,15 @@ This information is divided into the following sections:
 
 ### Purchase Order Processing document types
 
-Use Purchase Order Processing to track your company’s purchasing activity. You can enter and manage purchase orders, track shipments and invoices received, and match shipments to invoices that were received separately. There are seven types of documents in Purchase Order Processing.
+Use Purchase Order Processing to track your company's purchasing activity. You can enter and manage purchase orders, track shipments and invoices received, and match shipments to invoices that were received separately. There are seven types of documents in Purchase Order Processing.
 
 - Standard purchase orders list items that will be shipped to your business to be received into your inventory. For more information, see *Entering a standard purchase order*. If you are using Project Accounting, see *Entering a standard purchase order for projects* for more information.
 
 - Drop-ship purchase orders list items that will be shipped directly to the customer. The vendor sends you an invoice and you, in turn, send an invoice to the customer. For more information, see *Entering a drop-ship purchase order*. If you are using Project Accounting, see *Entering a drop-ship purchase order for projects* for more information.
 
-- Blanket purchase orders list a single item and the quantities that will be delivered in a series of shipments, usually on specific dates. The items will be shipped to your business to be received into your inventory. For more information, see *Entering a blanket purchase order*. If you are using Project Accounting, you can’t enter blanket purchase orders for projects.
+- Blanket purchase orders list a single item and the quantities that will be delivered in a series of shipments, usually on specific dates. The items will be shipped to your business to be received into your inventory. For more information, see *Entering a blanket purchase order*. If you are using Project Accounting, you can't enter blanket purchase orders for projects.
 
-- Drop-Ship blanket purchase orders list a single item and the quantities that will be delivered to the customer in a series of shipments, usually on specific dates. The vendor sends you an invoice and you, in turn, send an invoice to the customer. For more information, see *Entering a drop-ship blanket purchase order*. If you are using Project Accounting, you can’t enter drop-ship blanket purchase orders for projects.
+- Drop-Ship blanket purchase orders list a single item and the quantities that will be delivered to the customer in a series of shipments, usually on specific dates. The vendor sends you an invoice and you, in turn, send an invoice to the customer. For more information, see *Entering a drop-ship blanket purchase order*. If you are using Project Accounting, you can't enter drop-ship blanket purchase orders for projects.
 
 - Shipment/invoice receipts record the receipt of goods and services accompanied by an invoice. For more information, see *Receiving a shipment/invoice*. If you are using Project Accounting, see *Receiving a shipment/invoice for project* for more information.
 
@@ -118,7 +118,7 @@ Use Purchase Order Processing to track your company’s purchasing activity. You
 
 ### Purchase Order Processing history types
 
-When setting up Purchase Order Processing, you’ll have the option to maintain the following types of history. If you are using Project
+When setting up Purchase Order Processing, you'll have the option to maintain the following types of history. If you are using Project
 Accounting, historical information for project line items will be maintained in Project Accounting.
 
 **Purchase Order** This option keeps a detailed copy of each purchase order in history. When you transfer a purchase order to history using the Remove Completed Purchase Orders window, or when you void a purchase order using the Purchase Order Entry window, purchase order history will include line-by-line detail of all information entered for each purchase order.
@@ -127,11 +127,11 @@ Accounting, historical information for project line items will be maintained in 
 
 **Receipt** This option keeps a detailed copy of each receipt in history. When you post or void a receipt using the Receivings Transaction Entry window or the Purchasing Invoice Entry window, receipt history will include line-by-line detail of all the information entered for each receipt, including serial numbers, lot numbers, and bin information.
 
-*Keeping history will increase the amount of hard disk space needed. You should periodically remove the historical records you no longer need. For more information, see Chapter 27, “Purchase order history removal.”*
+*Keeping history will increase the amount of hard disk space needed. You should periodically remove the historical records you no longer need. For more information, see Chapter 27, "Purchase order history removal."*
 
 ### Before you set up Purchase Order Processing
 
-You should complete setup procedures in Payables Management and Inventory Control before you set up Purchase Order Processing. If you haven’t completed all of the following tasks, be sure to do so before continuing.
+You should complete setup procedures in Payables Management and Inventory Control before you set up Purchase Order Processing. If you haven't completed all of the following tasks, be sure to do so before continuing.
 
 - Set up Payables Management
 
@@ -147,11 +147,11 @@ You should complete setup procedures in Payables Management and Inventory Contro
 
 *To view the Posting Accounts Setup window, choose Administration \>\> Setup\>\> Posting \>\> Posting Accounts and then select to view Inventory or Purchasing accounts.*
 
-Be sure you’ve also completed the setup procedures for your company, currency, checkbooks, and posting options. Tax schedules and tax details also should be set up. For more information about completing these procedures, refer your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
+Be sure you've also completed the setup procedures for your company, currency, checkbooks, and posting options. Tax schedules and tax details also should be set up. For more information about completing these procedures, refer your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
-If you’re using landed costs, be sure to set up landed cost records and groups before you set up Purchase Order Processing. For details, see the Inventory Control documentation.
+If you're using landed costs, be sure to set up landed cost records and groups before you set up Purchase Order Processing. For details, see the Inventory Control documentation.
 
-If you’re using Multicurrency Management, be sure to set up currencies, exchange rate tables, and rate types before you set up Purchase Order Processing. For details, see the Multicurrency Management documentation.
+If you're using Multicurrency Management, be sure to set up currencies, exchange rate tables, and rate types before you set up Purchase Order Processing. For details, see the Multicurrency Management documentation.
 
 ### Setting up Purchase Order Processing preferences and default entries
 
@@ -164,9 +164,9 @@ Use the Purchase Order Processing Setup window to set preferences and default en
 
 2.  Accept or change the default document code and enter the next document number you want to use for purchase orders.
 
-The document code can be used to identify the documents on reports and inquiries. The next number will be the starting document number when receipts are entered. You can reuse a document number if the document has been deleted or removed from history (if you’re keeping history).
+The document code can be used to identify the documents on reports and inquiries. The next number will be the starting document number when receipts are entered. You can reuse a document number if the document has been deleted or removed from history (if you're keeping history).
 
-By defining the next document number, you also are determining the number of unique document numbers that will be available. For example, if you enter PO001 as the next purchase order number, you’ll be able to enter up to 999 purchase orders; if you enter PO0001 as the next purchase order number, you’ll be able to enter up to 9,999 purchase orders. Be sure to enter a next number that will accommodate your business volume.
+By defining the next document number, you also are determining the number of unique document numbers that will be available. For example, if you enter PO001 as the next purchase order number, you'll be able to enter up to 999 purchase orders; if you enter PO0001 as the next purchase order number, you'll be able to enter up to 9,999 purchase orders. Be sure to enter a next number that will accommodate your business volume.
 
 3.  Select the format you want to use when purchase orders are printed. If you are using Project Accounting, the default document format for a purchase order with project information will be the document format specified for the vendor record in the PA Vendor Options window.
 
@@ -174,11 +174,11 @@ By defining the next document number, you also are determining the number of uni
 
 4.  Accept or change the default document code that appears and enter the next document number you want to use for receipts.
 
-The document code can be used to identify the documents on reports and inquiries. The next number will be the starting document number when receipts are entered. You can reuse a document number if the document has been deleted or removed from history (if you’re keeping history).
+The document code can be used to identify the documents on reports and inquiries. The next number will be the starting document number when receipts are entered. You can reuse a document number if the document has been deleted or removed from history (if you're keeping history).
 
 5.  Enter the number of decimal places to use when displaying and entering quantity and currency amounts for non-inventoried items.
 
-If you’re using Multicurrency Management, choose the expansion button to open the Purchasing Non-Inventoried Currency Decimals Setup window. Use this window to define currency decimal places for each currency to which you have access. For more information, see *Setting up currency decimal places for non-inventoried items*.
+If you're using Multicurrency Management, choose the expansion button to open the Purchasing Non-Inventoried Currency Decimals Setup window. Use this window to define currency decimal places for each currency to which you have access. For more information, see *Setting up currency decimal places for non-inventoried items*.
 
 6.  Mark Shortage and then enter the percentage to use when the quantity received is less than the quantity ordered for non-inventoried items when receiving against a standard or blanket purchase order. If the difference between the quantity received and quantity ordered falls within the quantity shortage percentage, the difference between the quantities is canceled and the status of a line item is automatically changed to change order, received, or closed. The status of the line item depends on whether or not the line item has been invoiced.
 
@@ -186,33 +186,33 @@ If you’re using Multicurrency Management, choose the expansion button to open 
 
 8.  Select which date to use as a default date each time that you open the Purchase Order Entry window to work with purchase orders. You can use the date from the last document you entered or the user date.
 
-9.  Select a default site ID for purchase order line items. You can select either the default site ID set up for the item in Item Quantities Maintenance window or the previous purchase order line’s site ID.
+9.  Select a default site ID for purchase order line items. You can select either the default site ID set up for the item in Item Quantities Maintenance window or the previous purchase order line's site ID.
 
 10.  Select which item numbers to use during transaction entry—the item numbers your company uses or the item numbers used by your vendors.
 
-If you are using Project Accounting and select Vendor Items, you can’t enter a project number and a cost category for purchase orders, shipment receipts, shipment/invoice receipts, or invoice receipts.
+If you are using Project Accounting and select Vendor Items, you can't enter a project number and a cost category for purchase orders, shipment receipts, shipment/invoice receipts, or invoice receipts.
 
 11.  Indicate whether you want New purchase orders generated in Sales Order Processing to be placed on hold when they appear in the Purchase Order Entry window. If you mark this option, committing a Sales Order Processing line item to an existing purchase order line item will not cause the purchase order to be placed on hold.
 
-If you mark this option and you’ve assigned a password to the option “Allow Hold/Remove Hold of Purchase Orders,” you will not need to enter the password during the purchase order generation process in Sales Order Processing. However, the password to remove holds will apply when a purchase order is viewed in the Purchase Order Entry window.
+If you mark this option and you've assigned a password to the option "Allow Hold/Remove Hold of Purchase Orders," you will not need to enter the password during the purchase order generation process in Sales Order Processing. However, the password to remove holds will apply when a purchase order is viewed in the Purchase Order Entry window.
 
-If you are using Project Accounting, you can’t create purchase orders for projects from Sales Order Processing.
+If you are using Project Accounting, you can't create purchase orders for projects from Sales Order Processing.
 
-12.  Indicate whether you want the system to search for uncommitted purchase order quantities when you attempt to create a link between a sales line and a purchase order. If you don’t mark the option, you’ll be able to create a new purchase order for the sales document, but you won’t be able to link the sales line to an existing purchase order. Refer to the Sales Order Processing documentation for information about linking an item to an existing purchase order.
+12.  Indicate whether you want the system to search for uncommitted purchase order quantities when you attempt to create a link between a sales line and a purchase order. If you don't mark the option, you'll be able to create a new purchase order for the sales document, but you won't be able to link the sales line to an existing purchase order. Refer to the Sales Order Processing documentation for information about linking an item to an existing purchase order.
 
-If you are using Project Accounting, you can’t commit purchase orders for projects to sales documents.
+If you are using Project Accounting, you can't commit purchase orders for projects to sales documents.
 
 13.  Indicate whether you want to transfer line item comments from sales documents to new purchase orders. If you mark this option, existing purchase order line comments will not change if linked to sales line items with comments.
 
-If you are using Project Accounting, you can’t transfer line comments from sales line items to purchase order line items that are assigned to projects.
+If you are using Project Accounting, you can't transfer line comments from sales line items to purchase order line items that are assigned to projects.
 
-14.  Indicate whether the release by date for a purchase order line item should be calculated by subtracting the vendor’s planning lead time from the required date. By marking this option, you can use the PO Line Items to Release Report to identify purchase order line items that should be released to the vendor. If you don’t mark this option, the release by date isn’t calculated automatically.
+14.  Indicate whether the release by date for a purchase order line item should be calculated by subtracting the vendor's planning lead time from the required date. By marking this option, you can use the PO Line Items to Release Report to identify purchase order line items that should be released to the vendor. If you don't mark this option, the release by date isn't calculated automatically.
 
-If you are using Project Accounting, the release by date isn’t calculated for purchase order line items that are assigned to projects.
+If you are using Project Accounting, the release by date isn't calculated for purchase order line items that are assigned to projects.
 
 15.  Select the types of historical information you want to maintain for your purchase transactions. If you are using Project Accounting, historical information for project line items will be maintained in Project Accounting. For information about history types, see *Purchase Order Processing history types*.
 
-*If you’ve selected to reprint Purchase Order Processing posting journals in the Audit Trail Codes Setup window, the system will maintain the history necessary to reprint posting journals whether or not you’ve marked to maintain history in the Purchase Order Processing Setup window.*
+*If you've selected to reprint Purchase Order Processing posting journals in the Audit Trail Codes Setup window, the system will maintain the history necessary to reprint posting journals whether or not you've marked to maintain history in the Purchase Order Processing Setup window.*
 
 16.  Mark Allow Purchase Order Prepayments to enter a prepayment amount for a purchase order and generate the prepayment as computer check in Payables Management.
 
@@ -232,19 +232,19 @@ This option is available when the Allow Purchase Order Prepayments option is mar
 
 20.  In the Options scrolling window, mark the check boxes next to the options you want to enable. You can assign passwords to the options to restrict who has access to them. If an option is marked, but no password is entered, anyone with access to the affected window can perform the action. You can select to allow the following:
 
-**Receiving items without a purchase order** Select this option to allow line items not assigned to a purchase order to be entered on a shipment, shipment/invoice or invoice receipt. If the option isn’t selected, you won’t be able to receive or invoice line items not associated with a purchase order.
+**Receiving items without a purchase order** Select this option to allow line items not assigned to a purchase order to be entered on a shipment, shipment/invoice or invoice receipt. If the option isn't selected, you won't be able to receive or invoice line items not associated with a purchase order.
 
 **Changing the site ID in receiving** Select this option to allow receiving line items to different locations than indicated on the original purchase order.
 
 **Allowing/removing holds on purchase orders** Select this option to allow users to place and remove holds on New, Released or Change Order purchase orders of either type—standard or drop-ship.
 
-When you mark this option, you also can indicate whether you want to allow editing of purchase orders on hold. If you don’t allow editing on-hold purchase orders, you will be able to view purchase orders that have been placed on hold, but you won’t be able to edit, delete or void them.
+When you mark this option, you also can indicate whether you want to allow editing of purchase orders on hold. If you don't allow editing on-hold purchase orders, you will be able to view purchase orders that have been placed on hold, but you won't be able to edit, delete or void them.
 
-**Editing costs in receiving** Select this option to allow changing an item’s Unit Cost and Extended Cost in the Receivings Transaction Entry window.
+**Editing costs in receiving** Select this option to allow changing an item's Unit Cost and Extended Cost in the Receivings Transaction Entry window.
 
 *When deciding whether to allow the editing of costs in receiving, keep in mind that purchase price variances are calculated by comparing the cost posted from receiving with the standard cost for items with periodic valuation methods. For more information about standard cost and valuation methods, see the Inventory Control documentation.*
 
-If you allow receiving without a purchase order, you should allow editing of costs in receiving, or you won’t be able to enter costs for items without purchase orders. To restrict access, you can require a password.
+If you allow receiving without a purchase order, you should allow editing of costs in receiving, or you won't be able to enter costs for items without purchase orders. To restrict access, you can require a password.
 
 **Warning when purchase order line item is not fully Invoiced** Select this option to receive a warning message that a purchase order line item has a remaining quantity to invoice when closing a purchase order or a purchase order line item in the Edit Purchase Order Status window.
 
@@ -254,21 +254,21 @@ If you allow receiving without a purchase order, you should allow editing of cos
 
 23.  Choose Receivings User-Defined to enter labels for user-defined fields, lists, and dates that will be used when entering shipments and shipment/invoices. See *Setting up user-defined fields for receivings* for more information.
 
-24.  Choose OK to save the entries you’ve made in the Purchase Order Processing Setup window.
+24.  Choose OK to save the entries you've made in the Purchase Order Processing Setup window.
 
 25.  Print a Purchase Order Processing Setup List (optional).
 
-Choose File \>\> Print while the Purchase Order Processing Setup window is displayed to print a Purchase Order Processing Setup List to review the setup options you’ve entered. If you’ve identified errors in the setup list, simply enter or select the correct information.
+Choose File \>\> Print while the Purchase Order Processing Setup window is displayed to print a Purchase Order Processing Setup List to review the setup options you've entered. If you've identified errors in the setup list, simply enter or select the correct information.
 
 This report also can be printed using the Purchasing Setup Reports window.
 
 ### Setting up currency decimal places for non-inventoried items
 
-Use the Purchasing Non-Inventoried Currency Decimals Setup window to define currency decimal places for non-inventoried items for each currency to which your company has access. This window is available only if you are using Multicurrency Management. If you aren’t using Multicurrency Management, use the Purchase Order Processing Setup window to define the number of decimal places when displaying currency amounts for non-inventoried items.
+Use the Purchasing Non-Inventoried Currency Decimals Setup window to define currency decimal places for non-inventoried items for each currency to which your company has access. This window is available only if you are using Multicurrency Management. If you aren't using Multicurrency Management, use the Purchase Order Processing Setup window to define the number of decimal places when displaying currency amounts for non-inventoried items.
 
 The default number of decimal places for each currency was determined when the currencies were set up. Use this window to change the number of decimal places used to display currency amounts for non-inventoried items. You can change the non-inventoried currency decimal places for a currency at any time.
 
-Changing the decimal place setting for a currency won’t change the decimal place settings of non-inventoried items already entered on existing documents. Only new items added to existing transactions or new transactions will use the new settings.
+Changing the decimal place setting for a currency won't change the decimal place settings of non-inventoried items already entered on existing documents. Only new items added to existing transactions or new transactions will use the new settings.
 
 **To set up currency decimal places for non-inventoried items:**
 
@@ -287,7 +287,7 @@ Changing the decimal place setting for a currency won’t change the decimal pla
 
 ### Setting up Purchase Order Processing tax options
 
-Use the Purchase Order Processing Setup Options window to set up the tax calculations that will be used on documents. Depending on the tax calculation selected, you can enter default tax schedules for non-inventoried items, freight, and miscellaneous items. For information about setting up the purchase order generator, see *Chapter 3, “Purchase order generator setup.”*
+Use the Purchase Order Processing Setup Options window to set up the tax calculations that will be used on documents. Depending on the tax calculation selected, you can enter default tax schedules for non-inventoried items, freight, and miscellaneous items. For information about setting up the purchase order generator, see *Chapter 3, "Purchase order generator setup."*
 
 **To set up Purchase Order Processing tax options:**
 
@@ -301,7 +301,7 @@ Use the Purchase Order Processing Setup Options window to set up the tax calcula
 **Advanced** Mark Advanced to specify a tax schedule to use for noninventoried items, freight, and miscellaneous charges. For inventory
 items, the tax schedule you chose for each item in the Item Maintenance window will be used.
 
-**Single Schedule** Mark Single Schedule to specify one tax schedule for all items on all documents. Items on each document will be taxed using the tax details in the schedule you specify here, even if the item is nontaxable or if the vendor is tax exempt. Taxes won‘t be calculated on freight or miscellaneous charges.
+**Single Schedule** Mark Single Schedule to specify one tax schedule for all items on all documents. Items on each document will be taxed using the tax details in the schedule you specify here, even if the item is nontaxable or if the vendor is tax exempt. Taxes won't be calculated on freight or miscellaneous charges.
 
 3.  If you marked Advanced in step 2, enter or select tax options for non-inventoried items, freight, and miscellaneous charges. You can change the tax schedules used for a transaction in a tax schedule entry window during transaction entry. The tax options are:
 
@@ -309,7 +309,7 @@ items, the tax schedule you chose for each item in the Item Maintenance window w
 
 **Nontaxable** No taxes will be calculated.
 
-**Base on vendor** The tax schedule assigned to the vendor’s purchase address will be used calculating taxes.
+**Base on vendor** The tax schedule assigned to the vendor's purchase address will be used calculating taxes.
 
 4.  Choose OK.
 
@@ -332,7 +332,7 @@ Use the Receivings User-Defined Fields Setup window to enter labels for up to 35
 
 ![screenshot](media/POage017.jpg)
 
-2.  Enter as many as five list fields. Choose the expansion button next to each list name you‘ve entered; the Receivings User-Defined List Setup window will appear. Use this window to enter values for each list.
+2.  Enter as many as five list fields. Choose the expansion button next to each list name you've entered; the Receivings User-Defined List Setup window will appear. Use this window to enter values for each list.
 
 3.  Enter as many as 10 text fields to track additional information about your customers.
 
@@ -367,9 +367,9 @@ Use the Comment Setup window to define comments for each company. You can use th
 
 ## Chapter 2: Buyers
 
-Large companies typically have several buyers working in the purchasing department, with each buyer assuming responsibility for certain items. A buyer’s job may include vendor selection, negotiation, and purchase order placement and follow-up.
+Large companies typically have several buyers working in the purchasing department, with each buyer assuming responsibility for certain items. A buyer's job may include vendor selection, negotiation, and purchase order placement and follow-up.
 
-Identifying a buyer on a purchase order makes it easier to track orders. For example, if your company employs ten buyers who enter purchase orders in the same system, the purchase order numbers are not an effective way of locating a particular buyer’s documents. If buyers are assigned to purchase orders, you can print a report sorted by Buyer ID.
+Identifying a buyer on a purchase order makes it easier to track orders. For example, if your company employs ten buyers who enter purchase orders in the same system, the purchase order numbers are not an effective way of locating a particular buyer's documents. If buyers are assigned to purchase orders, you can print a report sorted by Buyer ID.
 
 This information is divided into the following sections:
 
@@ -396,7 +396,7 @@ Use the Buyer Maintenance window to add new buyer IDs. For example, a buyer ID c
 
 4.  Choose Insert to insert the buyer ID in the scrolling window and save the record.
 
-5.  Choose OK when you’re finished adding buyer IDs.
+5.  Choose OK when you're finished adding buyer IDs.
 
 ### Modifying buyer IDs
 
@@ -415,13 +415,13 @@ Use the Buyer Maintenance window to modify existing buyer IDs.
 
 5.  Choose Insert to insert the buyer ID in the scrolling window and save the record.
 
-6.  Choose OK when you’re finished modifying a buyer ID.
+6.  Choose OK when you're finished modifying a buyer ID.
 
 ### Removing buyer IDs
 
 Use the Buyer Maintenance window to delete buyer IDs you no longer want to use.
 
-If you remove a buyer ID that is linked to an active purchase order (one that isn’t in history), the buyer ID will remain attached to that purchase order. If the Manufacturing Series is registered and you delete a buyer ID that is linked to items in Item Engineering, the buyer ID will be removed from those items.
+If you remove a buyer ID that is linked to an active purchase order (one that isn't in history), the buyer ID will remain attached to that purchase order. If the Manufacturing Series is registered and you delete a buyer ID that is linked to items in Item Engineering, the buyer ID will be removed from those items.
 
 **To remove buyer IDs:**
 
@@ -432,7 +432,7 @@ If you remove a buyer ID that is linked to an active purchase order (one that is
 
 ## Chapter 3: Purchase order generator setup
 
-If you are using the purchase order generator, you can automatically generate purchase orders to replenish inventory based on a reorder point you specify. If you are using Project Accounting, you can’t generate purchase orders for projects.
+If you are using the purchase order generator, you can automatically generate purchase orders to replenish inventory based on a reorder point you specify. If you are using Project Accounting, you can't generate purchase orders for projects.
 
 Use the purchase order generator to analyze inventory levels and suggest purchase order line items based on default settings and reorder levels; the suggested purchase orders can be modified before they are created.
 
@@ -446,14 +446,14 @@ This information is divided into the following sections:
 
 ### Sites and purchase order generator
 
-You’ll use master sites, subordinate sites, and independent sites when generating suggested purchase orders. How the demand is purchased, received, and distributed depends on how you use these sites.
+You'll use master sites, subordinate sites, and independent sites when generating suggested purchase orders. How the demand is purchased, received, and distributed depends on how you use these sites.
 
 A **master site** is a central location where its requirements are consolidated with the net demand from subordinate sites. A purchase order is placed from the total net demand at the master site. You can have more than one master site. A **subordinate site** is a location that passes its requirements to a central location, the master site, to be purchased, received, and distributed. An **independent site** is a location that has requirements that must be fulfilled by the items that are to be purchased. A master site is an independent site.
 
-The order method you select for an item decides which site will be used when generating purchase orders. If you select Order to Master Site, suggested purchase order quantities will be based on requirements for this site and other sites that have the same master site. When you are ordering to a master site, you’ll need to set up your master site before setting up your subordinate sites in the Purchase Order Generator Item Maintenance window. The master site must have an order method of Order To Independent Site. Assume that your default master site is Warehouse. If you didn’t set up Warehouse as an independent site, any subordinate site that would have used
+The order method you select for an item decides which site will be used when generating purchase orders. If you select Order to Master Site, suggested purchase order quantities will be based on requirements for this site and other sites that have the same master site. When you are ordering to a master site, you'll need to set up your master site before setting up your subordinate sites in the Purchase Order Generator Item Maintenance window. The master site must have an order method of Order To Independent Site. Assume that your default master site is Warehouse. If you didn't set up Warehouse as an independent site, any subordinate site that would have used
 Warehouse as their master site will use order to independent site as their order method.
 
-If you select Order to Independent, suggested purchase orders can be generated for the site where the material is required or if the site is a master site for subordinate sites as well as the master site. Requirements from subordinate sites will not be required is the site isn’t a master site.
+If you select Order to Independent, suggested purchase orders can be generated for the site where the material is required or if the site is a master site for subordinate sites as well as the master site. Requirements from subordinate sites will not be required is the site isn't a master site.
 
 ### Setting up purchase order generator default entries
 
@@ -463,7 +463,7 @@ You also can select how purchase orders should be created when you generate sugg
 
 You should set up general default information before you define preferences for a specific item-site combination or a group of items and sites. You can change the entries for individual item-site combinations, if necessary. Use the Purchase Order Generator Item Maintenance window to set up reorder preferences for each item at a specific site. Use the Purchase Order Item Mass Update window to set up or change reorder preferences for a group of items. For more information, see the Inventory Control documentation.
 
-If you are using Project Accounting, you can’t generate purchase orders for projects.
+If you are using Project Accounting, you can't generate purchase orders for projects.
 
 **To set up purchase order generator default entries:**
 
@@ -486,7 +486,7 @@ If you are using Project Accounting, you can’t generate purchase orders for pr
 
 **Order-Up-To-Level** Select this level to order a quantity that will bring available inventory up to the order-up-to level defined in the Item Resource Planning Maintenance window. The Order Point Quantity will be used if the Order-Up-To Level is zero or less than the Order Point Quantity.
 
-**Vendor EOQ** Select this level to order a quantity that is equal to the economic order quantity defined in the Item Vendors Maintenance window for the selected vendor. The vendor economic quantity is used when it is greater than the required quantity otherwise, the required quantity is used.You won’t be able to select this option if the order method is Order To Master Site.
+**Vendor EOQ** Select this level to order a quantity that is equal to the economic order quantity defined in the Item Vendors Maintenance window for the selected vendor. The vendor economic quantity is used when it is greater than the required quantity otherwise, the required quantity is used.You won't be able to select this option if the order method is Order To Master Site.
 
 Refer to *How quantities are calculated for suggested purchase orders* for information about how replenishment levels affect required quantity.
 
@@ -498,7 +498,7 @@ Refer to *How quantities are calculated for suggested purchase orders* for infor
 
 **Vendor with Shortest Lead Time** The vendor with the shortest planning lead time will be selected based on the Planning Lead Time field in the Item Vendors Maintenance window.
 
-You won’t be able to select a vendor selection if the order method is Order To Master Site. The master site’s vendor selection will be used to determine the vendor.
+You won't be able to select a vendor selection if the order method is Order To Master Site. The master site's vendor selection will be used to determine the vendor.
 
 If the order method is Order To Independent Site, indicate which item cost to use for purchase orders.
 
@@ -510,7 +510,7 @@ If the order method is Order To Independent Site, indicate which item cost to us
 
 **Specified Cost (In Functional Currency)** The cost specified in the Purchase Order Generator Item Maintenance window will be used regardless of the vendor.
 
-You won’t be able to select a cost selection if the order method is Order To Master Site. The master site’s cost selection will be used to determine the cost.
+You won't be able to select a cost selection if the order method is Order To Master Site. The master site's cost selection will be used to determine the cost.
 
 6.  Mark Allocations to subtract the allocated quantity from the current supply when the required quantity is calculated.
 
@@ -524,13 +524,13 @@ You won’t be able to select a cost selection if the order method is Order To M
 
 ### Mapping inventory sites to addresses
 
-Use the Purchase Order Generator Map Sites window to define the relationship between inventory site IDs and company addresses. The company address you assign to an inventory site is used as the ship-to address on suggested purchase orders for that site. If there is no company address mapped to a site, the company’s primary address ID is used on purchase orders for that site.
+Use the Purchase Order Generator Map Sites window to define the relationship between inventory site IDs and company addresses. The company address you assign to an inventory site is used as the ship-to address on suggested purchase orders for that site. If there is no company address mapped to a site, the company's primary address ID is used on purchase orders for that site.
 
-When suggested purchase order line items are generated, all items for the same vendor, buyer ID, and ship-to address will be grouped together on a single purchase order. The ship-to address for a purchase order line is determined by the item’s site ID.
+When suggested purchase order line items are generated, all items for the same vendor, buyer ID, and ship-to address will be grouped together on a single purchase order. The ship-to address for a purchase order line is determined by the item's site ID.
 
 For example, if an item needs to be replenished at three sites and all sites have the same address ID, three lines for the item will be created on the same purchase order—one line for each site.
 
-If you are using Project Accounting, you can’t generate purchase orders for projects.
+If you are using Project Accounting, you can't generate purchase orders for projects.
 
 **To map inventory sites to addresses:**
 
@@ -545,7 +545,7 @@ All inventory site IDs defined for the current company will be displayed.
 
 Any site that is left unmapped will use the primary company address. Suggested purchase order line items for these sites will be consolidated as lines on a purchase order.
 
-3.  Choose OK to save changes and to close the window when you’re finished mapping sites.
+3.  Choose OK to save changes and to close the window when you're finished mapping sites.
 
 ## Chapter 4: Project setup for Purchase Order Processing
 
@@ -563,26 +563,26 @@ This information is divided into the following sections:
 
 You can set up, enter and maintain project records and transactions using Project Accounting. You also can budget resources, manage purchases, schedule tasks, monitor costs, bill customers, and recognize revenue. For more information about Project Accounting, projects, and cost categories, refer to the Project Accounting documentation.
 
-You can acquire goods and services to be used in projects or you can buy them on behalf of customers. You can enter standard and drop-ship purchase orders for projects. As you receive the goods and services that you purchase for projects, you can enter the receipt of shipments and invoices. Items received from a standard purchase order are stored in inventory. To transfer these items to a project to make the items billable, you’ll use the Inventory Transfer Entry window in Projecting Accounting. Items from a drop-ship purchase order are automatically invoiced and transferred to a project.
+You can acquire goods and services to be used in projects or you can buy them on behalf of customers. You can enter standard and drop-ship purchase orders for projects. As you receive the goods and services that you purchase for projects, you can enter the receipt of shipments and invoices. Items received from a standard purchase order are stored in inventory. To transfer these items to a project to make the items billable, you'll use the Inventory Transfer Entry window in Projecting Accounting. Items from a drop-ship purchase order are automatically invoiced and transferred to a project.
 
-You can complete the following tasks if you aren’t entering project information for purchase orders, shipment receipts, shipment/invoice
+You can complete the following tasks if you aren't entering project information for purchase orders, shipment receipts, shipment/invoice
 receipts, or invoice receipts.
 
 - Enter blanket and drop-ship blanket purchase orders
 
 - Commit purchase orders to sales documents
 
-- Enter manufacturers’ item numbers for purchase orders
+- Enter manufacturers' item numbers for purchase orders
 
 - Enter manufacturing job links for purchase orders, shipment, shipment/invoice, and invoice receipts
 
-- Open the MRP Item Inquiry window to view Material Requirements Planning information for an item if you’re using the Manufacturing Series
+- Open the MRP Item Inquiry window to view Material Requirements Planning information for an item if you're using the Manufacturing Series
 
 - Automatically generate purchase orders to replenish inventory, based on a reorder point that you specify
 
 ### Before you set up Purchase Order Processing for projects
 
-You should complete setup procedures in Project Accounting before you set up Purchase Order Processing for projects. If you haven’t completed all of the following tasks, be sure to do so before continuing. Refer to the Project Accounting documentation for more information about setting up Project Accounting.
+You should complete setup procedures in Project Accounting before you set up Purchase Order Processing for projects. If you haven't completed all of the following tasks, be sure to do so before continuing. Refer to the Project Accounting documentation for more information about setting up Project Accounting.
 
 | **Task to complete**                                                           | **Window used**                               |
 |--------------------------------------------------------------------------------|-----------------------------------------------|
@@ -633,7 +633,7 @@ Use the PA Purchase Order Processing Setup window to set up preferences and defa
 
 **Cost Category** Select to use the unit cost entered for the cost category record.
 
-**None** Select if you don’t want to use a default unit cost.
+**None** Select if you don't want to use a default unit cost.
 
 7.  Enter a percentage of how much the unit cost of an invoice receipt can exceed the unit cost of a purchase order that the invoice receipt is matched to. To vary the unit cost by an unlimited amount, mark the Exceed PO Unit Cost option in the scrolling window.
 
@@ -657,9 +657,9 @@ Use the PA Purchase Order Processing Setup window to set up preferences and defa
 
 11.  In the scrolling window, mark the Allow check boxes next to the options that you want to use. You can assign passwords to the options to restrict who has access to them. If an option is marked, but no password is entered, anyone with access to the affected window can perform the action. You can select to allow the following options.
 
-**Override Document Number PO** Select this option to change the purchase order number that appears as a default entry in the Purchase Order Entry window. If you don't mark this option, the PO Number field in the Purchase Order Entry window will display the next number available. The number can’t be changed.
+**Override Document Number PO** Select this option to change the purchase order number that appears as a default entry in the Purchase Order Entry window. If you don't mark this option, the PO Number field in the Purchase Order Entry window will display the next number available. The number can't be changed.
 
-**Override Document Number PI** Select this option to change the document number that appears as a default entry in the Purchasing Invoice Entry window. If you don't mark this option, the Document Number field in the Purchasing Invoice Entry window will display the next number available. The number can’t be changed.
+**Override Document Number PI** Select this option to change the document number that appears as a default entry in the Purchasing Invoice Entry window. If you don't mark this option, the Document Number field in the Purchasing Invoice Entry window will display the next number available. The number can't be changed.
 
 **Allow Zero Quantity** Select this option to enter a zero quantity for purchase orders and invoice receipts.
 

@@ -6,7 +6,7 @@ author: tnistler
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
-ms.author: tnistler
+ms.author: theley
 ms.date: 06/16/2020
 
 ---
