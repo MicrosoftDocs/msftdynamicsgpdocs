@@ -58,7 +58,7 @@ The T4A, T4 and RL-1 XML has changed for the 2020 reporting year.
 The T4 and T4A forms have not changed for the 2020 reporting year.  
 
 - Software Development Number for XML - RQ-20-01-132
-- RL-1 Slip Authorization number Coming Soon  (enter this in the Payroll T4/R1 Print window)  
+- RL-1 Slip Authorization number -  FS2001172 (enter this in the Payroll T4/R1 Print window)  
 
 #### Installation notes
 
