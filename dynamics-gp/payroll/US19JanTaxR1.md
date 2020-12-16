@@ -239,14 +239,27 @@ Withholding rates for taxpayers filing as *SINGLE*
 | 169,865     | And over         | 11,700.19      | 9.85%        | 169,865            |
 
 
+#### Withholding changes for Mississippi
+
+No changes to Personal Exempptions or Standard Deductions
+
+Withholding rates for taxpayers filing as HOH, MAR1, MAR2 and SINGLE are as follows:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 4,000            | 0              | 0            | 0                  |
+| 4,000       | 5,000            | 0              | 3%           | 4,000              |
+| 5,000       | 10,000           | 30             | 4%           | 5,000              |
+| 10,000      | And over         | 230            | 5%           | 10,000             |
+
 
 #### Withholding changes for Missouri
 
-The Standard Deduction is \$18,650 for filing status HOH
-The Standard Deduction is \$24,800 for filing status MAR1
-The Standard Deduction is \$12,400 for filing status MAR2 and SINGLE
+The Standard Deduction is \$18,800 for filing status HOH
+The Standard Deduction is \$25,100 for filing status MAR1
+The Standard Deduction is \$12,550 for filing status MAR2 and SINGLE
 
-Withholding rates for all filing status
+Withholding rates for all filing status remain the same.
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -305,19 +318,19 @@ Withholding rates for taxpayers filing as *HOHHR*
 
 #### Withholding changes for South Carolina
 
-The Personal Exemption is $2,590 for Filing Status ONE.
-The Standard Deduction Maximum is $3,820 for ONE Filing Status.
+The Personal Exemption is $2,670 for Filing Status ONE.
+The Standard Deduction Maximum is $4,200 for ONE Filing Status.
 
 Tax Type rates for all Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 2,620            | 0              | 0.8%         | 0                  |
-| 2,620       | 5,240            | -57.64         | 3.0%         | 0                  |
-| 5,240       | 7,860            | -110.04        | 4.0%         | 0                  |
-| 7,860       | 10,490           | -188.64        | 5.0%         | 0                  |
-| 10,490      | 13,110           | -293.54        | 6.0%         | 0                  |
-| 13,110      | And over         | -424.64        | 7.0%         | 0                  |
+| 0           | 2,800            | 0              | 0.5%         | 0                  |
+| 2,800       | 5,610            | -70.00         | 3.0%         | 0                  |
+| 5,610       | 8,410            | -126.10        | 4.0%         | 0                  |
+| 8,410       | 11,220           | -210.20        | 5.0%         | 0                  |
+| 11,220      | 14,030           | -322.40        | 6.0%         | 0                  |
+| 14,030      | And over         | -462.70        | 7.0%         | 0                  |
 
 ## Resources to assist you
 
