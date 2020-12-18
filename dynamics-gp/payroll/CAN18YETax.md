@@ -94,7 +94,7 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 |----------|--------------|
 | 1.       | Complete all 2020 pay runs. |
 | 2.       | Note: Any batch with a cheque date of 2021 should be processed after the Year End File Reset. For example, if the cheque date of your final pay period for 2020 is January 1, 2021, the 2021 tax tables must be used for that pay run. |
-| 3.       | Complete any necessary 2019 payroll reports.        |
+| 3.       | Complete any necessary 2020 payroll reports.        |
 | 4.       | Install the 2020 Canadian Payroll Year-End Update. See [Installing the update](#installing-the-update).      |
 | 5.       | Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application.       |
 | 6.       | Complete the Year End File Reset.                                       |
