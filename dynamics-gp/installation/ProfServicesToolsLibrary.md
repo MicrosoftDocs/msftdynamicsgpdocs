@@ -21,13 +21,6 @@ To download the tool go to [CustomerSource](https://mbs.microsoft.com/customerso
 
 As of March 26, 2012 the Microsoft Dynamics GP PSTL and the additional Microsoft Dynamics GP Tools listed above are available to partners at no additional cost.
 
-
-### Your current service plan does not allow access to this information
-
-To learn more about Microsoft Dynamics Service Plans, review our [service plan offerings](https://go.microsoft.com/fwlink/?LinkID=532453).
-
-All the listed Microsoft Dynamics GP tools are free as is, any further functionality outside of this download will be taken on a limited basis and be considered an Advisory Service
-
 ## Before you begin
 
 This section includes information and precautions that will help you use Professional Services Tools Library more effectively.
