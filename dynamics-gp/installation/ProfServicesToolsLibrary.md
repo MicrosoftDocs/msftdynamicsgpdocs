@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/16/2019
+ms.date: 12/31/2020
 ---
 
 # Professional Services Tools Library
@@ -17,19 +17,10 @@ The Professional Services Tools Library is designed for use with Microsoft Dynam
 
 ## Introduction
 
-To download the tool go to [PartnerSource](https://mbs.microsoft.com/partnersource/northamerica/support/support-news/NOAM_PSTL).
+To download the tool go to [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/support/support-news/NOAM_PSTL).
 
 As of March 26, 2012 the Microsoft Dynamics GP PSTL and the additional Microsoft Dynamics GP Tools listed above are available to partners at no additional cost.
 
-The content of this page is locked.
-
-To access this information, log in to [CustomerSource](https://mbs.microsoft.com/partnersource/_layouts/15/Authenticate.aspx?Source=/partnersource/northamerica/support/support-news/NOAM_PSTL).
-
-### Unable to log in to CustomerSource?
-
-Visit our CustomerSource [Help Page](https://mbs.microsoft.com/partnersource/northamerica/help/help).
-
-To access this information log in to [CustomerSource](https://mbs.microsoft.com/partnersource/_layouts/15/Authenticate.aspx?Source=/partnersource/northamerica/support/support-news/NOAM_PSTL).
 
 ### Your current service plan does not allow access to this information
 
