@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/10/2020
+ms.date: 12/22/2020
 ---
 
 # Canadian Payroll 2020 Year-end Update & 2021 Tax Update
@@ -293,7 +293,7 @@ This chapter lists changes to federal, provincial, and territorial tax rates for
 
 #### CPP
 
-Contribution rates for both employers and employees for 2021 is 5.25%. The following changes are in effect for CPP for 2021:
+Contribution rates for both employers and employees for 2021 is 5.45%. The following changes are in effect for CPP for 2021:
 
 - The maximum pensionable earnings amount will be updated to \$61,600, from \$58,700.
 
