@@ -422,7 +422,7 @@ Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-
 
 Before you begin, ask all Microsoft Dynamics GP users to exit the application until the update is complete. Exit all other applications, turn off the screen saver, and back up important data (including Forms.dic, Reports.dic, and Dynamics.vba if they exist) before you proceed with the installation.
 
-1. Log onto Microsoft Dynamics GP with the system administrator rights, and open the Payroll Tax Update window.
+1. Log onto Microsoft Dynamics GP with the system administrator rights, (user SA) and open the Payroll Tax Update window.
     (Microsoft Dynamics GP menu \>\> Maintenance \>\> U.S. Payroll Updates \>\> Check for Tax Updates)
 
 2. Select an update method, and then choose Next.
