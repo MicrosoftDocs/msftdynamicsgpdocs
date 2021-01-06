@@ -17,7 +17,7 @@ ms.reviewer:
 
 Use this guide to install the Dynamics GP Web Client. This documentation explains how to install the web components in the most common configurations.
 
-You can also find content in [PartnerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#gp2018rtm).
+You can also find content in the [Microsoft Dynamics GP Resource Directory](../resources.md) article.
 
 ## Main steps in installing the Microsoft Dynamics GP Web Components
 
@@ -63,7 +63,7 @@ Provides you with instant access to the same database our support engineers use.
 
 [Dynamics GP Support](https://mbs.microsoft.com/customersource/northamerica/GP/support)
 
-For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.
+For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That's a big benefit during the critical year-end season.
 
 ### Community
 

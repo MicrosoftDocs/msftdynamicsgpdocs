@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: edupont
 ms.topic: article
 ms.prod: dynamics-gp
-ms.author: plindgre
+ms.author: edupont
 ms.date: 09/26/2019
 
 ---

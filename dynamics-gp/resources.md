@@ -18,8 +18,8 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Product Management & Marketing Blog](https://community.dynamics.com/gp/b/gpteamblog)
 - [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp)
-<!-- [Dynamics GP Developer Blog](https://msdn.microsoft.com/en-us/library/aa496082.aspx)
-- [Dynamics Financial Reporting - Management Reporter](http://blogs.msdn.com/b/dynamics_financial_reporting/)-->
+<!-- [Dynamics GP Developer Blog](https://msdn.microsoft.com/library/aa496082.aspx)
+- [Dynamics Financial Reporting - Management Reporter](https://blogs.msdn.com/b/dynamics_financial_reporting/)-->
 - [Microsoft Dynamics GP Product Idea](https://experience.dynamics.com/ideas/categories/?forum=771cc5ac-c117-e811-8105-3863bb2e0320&forumName=Dynamics%20GP)
 - [Microsoft Dynamics GP Docs (Documentation)](index.md)
 
@@ -43,7 +43,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Canadian Payroll Taxes and Year - End](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/cagptuye2018)
 - [Management Reporter Install and Service Packs](https://mbs.microsoft.com/customersource/northamerica/MR/downloads/service-packs/MROverview)
 
-## Microsoft Dynamics GP 2018 R2 and RTM
+## <a name="GP2018"></a>Microsoft Dynamics GP 2018 R2 and RTM
 
 - [GP 2018 R2 - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2018/09/24/microsoft-dynamics-gp-2018-r2-new-feature-blog-series-schedule)
 

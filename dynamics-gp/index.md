@@ -27,7 +27,8 @@ Go to our [Dynamics GP Support and Services](https://community.dynamics.com/gp/b
 ### Resource Page
 
 The following page shows a list of resources that can help you find the information that you need:
-[https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource)
+
+- [Microsoft Dynamics GP Resource Directory](resources.md)
 
 The page will be updated going forward as new links become available, while some of the target pages will be added to the Docs.microsoft.com site.  
 
