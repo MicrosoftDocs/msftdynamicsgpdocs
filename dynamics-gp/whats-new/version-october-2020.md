@@ -172,7 +172,7 @@ For more information, see [Copy/Paste Purchasing transactions from Excel](copypa
 
 ## See also
 
-[System requirements](../installation/system-requirements.md)  
+[System requirements](../installation/system-requirements-core.md)  
 [Upgrade introduction](../upgrade/introduction.md)  
 [Dynamics GP community on https://community.dynamics.com](https://community.dynamics.com/gp)  
 [Dynamics GP User Group](https://www.gpug.com/home)  
