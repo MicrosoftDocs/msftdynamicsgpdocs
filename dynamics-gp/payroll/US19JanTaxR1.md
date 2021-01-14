@@ -279,6 +279,76 @@ Withholding rates for taxpayers filing as *HOH*
 #### Withholding changes for Oregon
 
 
+The Standard Deduction Amount is \$4,700 from \$4,630 for MS3 and S3 Filing Status.
+
+The Standard Deduction Amount is \$2,350 from  \$2,315 for S2 Filing Status.
+
+The Personal Exemption amount is \$213.00 for all Filing Status.
+
+HB2119 requires employers to withhold income tax at a rate of 8 percent of employee wages if they employee has not provided a withholding statement or exemption certificate.  Use filing status of NOWH.  (same as 2020)
+
+Continue withholding at the 8 percent rate until the employee submits a withholding statement and exemption certificate.
+
+
+Special Tax Type rates for MS3 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 49,999           | 7,050          | 0%           | 0                  |
+| 49,999      | 249,999          | 7,050          | 0%           | 0                  |
+| 249,999     | 259,999          | 5,650          | 0%           | 0                  |
+| 259,999     | 269,999          | 4,200          | 0%           | 0                  |
+| 269,999     | 279,999          | 2,800          | 0%           | 0                  |
+| 279,999     | 289,999          | 1,400          | 0%           | 0                  |
+| 289,999     | And over         | 0              | 0%           | 0                  |
+|             |                  |                |              |                    |
+
+Special Tax Type rates for S2 and S3 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 49,999           | 7,050          | 0%           | 0                  |
+| 49,999      | 124,999          | 7,050          | 0%           | 0                  |
+| 124,999     | 129,999          | 5,650          | 0%           | 0                  |
+| 129,999     | 134,999          | 4,200          | 0%           | 0                  |
+| 134,999     | 139,999          | 2,800          | 0%           | 0                  |
+| 139,999     | 144,999          | 1,400          | 0%           | 0                  |
+| 144,999     | And over         | 0              | 0%           | 0                  |
+
+Tax Type rates for MS3 and S3 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 38,250           | 0              | 0%           | 0                  |
+| 38,250      | 250,000          | 1,096          | 8.75%        | 18,400             |
+| 250,000     | And over         | 21,361         | 9.9%         | 250,000            |
+|             |                  |                |              |                    |
+
+Tax Type rates for S2 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 40,600           | 0              | 0%           | 0                  |
+| 40,600      | 125,000          | 548            | 8.75%        | 9,200              |
+| 125,000     | And Over         | 10,681         | 9.9%         | 125,000            |
+
+Low Income Type rates for MS3 and S3 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 7,300            | 213            | 4.75%        | 0                  |
+| 7,300       | 18,400           | 560            | 6.75%        | 7,300              |
+| 18,400      | 50,000           | 1,309          | 8.75%        | 18,400             |
+
+Low Income Type rates for S2 Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,650            | 213            | 4.75%        | 0                  |
+| 3,650       | 9,200            | 386            | 6.75%        | 3,650              |
+| 9,200       | 50,000           | 761            | 8.75%        | 9,200              |
+
+
 
 #### Withholding changes for Rhode Island
 
