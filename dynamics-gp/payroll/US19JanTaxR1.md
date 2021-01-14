@@ -44,6 +44,63 @@ The following tax changes are included in this update:
 
 #### Withholding changes for California
 
+For Filing Status of HOH  and MAR2
+Personal Exemption is \$136.40 from \$134.20
+Standard Deduction is \$9,202 from \$9,074  
+Low Income Limit is \$30,534 from \$30,083
+
+For Filing Status of MAR1 and SINGLE
+Personal Exemption is \$136.40 from \$134.20
+Standard Deduction is \$4,601 from \$4,537
+Low Income Limit is \$15,267 from \$15,042
+
+
+Withholding rates for taxpayers filing as *HOH*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 17,876           | 0              | 1.1%         | 0                  |
+| 17,876      | 42,353           | 196.64         | 2.2%         | 17,876             |
+| 42,353      | 54,597           | 735.13         | 4.4%         | 42,353             |
+| 54,597      | 67,569           | 1,273.87       | 6.6%         | 54,597             |
+| 67,569      | 79,812           | 2,130.02       | 8.8%         | 67,569             |
+| 79,812      | 407,329          | 3,207.40       | 10.23%       | 79,812             |
+| 407,329     | 488,796          | 36,712.39      | 11.33%       | 407,329            | 
+| 488,796     | 814,658          | 45,942.60      | 12.43%       | 488,796            |
+| 814,658     | 1,000,000        | 86,447.25      | 13.53%       | 814,658            |
+| 1,000,000   | And Over         | 111,524.02     | 14.63%       | 1,000,000          |
+
+Withholding rates for taxpayers filing as *MAR1* and *MAR2*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 17,864           | 0              | 1.1%         | 0                  |
+| 17,864      | 42,350           | 196.50         | 2.2%         | 17,864             |
+| 42,350      | 66,842           | 735.19         | 4.4%         | 42,350             |
+| 66,842      | 92,788           | 1,812.84       | 6.6%         | 66,842             |
+| 92,788      | 117,268          | 3,525.28       | 8.8%         | 92,788             |
+| 117,268     | 599,016          | 5,679.52       | 10.23%       | 117,268            |
+| 599,016     | 718,814          | 54,962.34      | 11.33%       | 599,016            | 
+| 718,814     | 1,000,000        | 68,535.45      | 12.43%       | 718,814            |
+| 1,000,000   | 1,198,024        | 103,486.87     | 13.53%       | 1,000,000          |
+| 1,198,024   | And Over         | 130,279.52     | 14.63%       | 1,198,024          |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     | 
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 8,932            | 0              | 1.1%         | 0                  |
+| 8,932       | 21,175           | 98.25          | 2.2%         | 8,932              |
+| 21,175      | 33,421           | 367.60         | 4.4%         | 21,175             |
+| 33,421      | 46,394           | 906.42         | 6.6%         | 33,421             |
+| 46,394      | 58,634           | 1,762.64       | 8.8%         | 46,394             |
+| 58,634      | 299,506          | 2,839.76       | 10.23%       | 58,634             |
+| 299,506     | 359,407          | 27,481.17      | 11.33%       | 299,508            |
+| 359,407     | 599,012          | 34,267.73      | 12.43%       | 359,407            |
+| 599,012     | 1,000,000        | 64,050.63      | 13.53%       | 599,012            |
+| 1,000,000   | And Over         | 118,304.31     | 14.63%       | 1,000,000          |
+
+
 
 #### Withholding changes for Colorado
 
@@ -63,6 +120,25 @@ The Personal Exemption changed from \$4750 to \$4900 for Filing Status NA
 
 
 #### Withholding changes for Missouri
+
+The Standard Deduction is \$18,800 for filing status HOH
+The Standard Deduction is \$25,100 for filing status MAR1
+The Standard Deduction is \$12,550 for filing status MAR2 and SINGLE
+
+Withholding rates for all filing status
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 1,088            | 0              | 1.5%         | 0                  |
+| 1,088       | 2,176            | 16.00          | 2.0%         | 1.088              |
+| 2,176       | 3,264            | 38.00          | 2.5%         | 2,176              |
+| 3,264       | 4,352            | 65.00          | 3.0%         | 3,264              |
+| 4,352       | 5,440            | 98.00          | 3.5%         | 4,352              |
+| 5,440       | 6,528            | 136.00         | 4.0%         | 5,440              |
+| 6,528       | 7,616            | 180.00         | 4.50%        | 6,528              |
+| 7,616       | 8,704            | 229.00         | 5.0%         | 7,616              |
+| 8,704       | And over         | 283.00         | 5.4%         | 8,704              |
+
 
 
 #### Withholding changes for New York and New York-Yonkers
@@ -108,6 +184,44 @@ Withholding rates for taxpayers filing as *SINGLE*
 
 
 #### Withholding changes for New Jersey
+
+For all Filing Status only the last two withholding brackets changed the rest remain unchanged.
+
+Withholding rates for taxpayers filing as *A*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 500,000     | 1,000,000        | 32,680.00      | 9.9%         | 500,000            |
+| 1,000,000   | And over         | 82,180.00      | 11.8%        | 1,000,000          |
+
+Withholding rates for taxpayers filing as *B*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 500,000     | 1,000,000        | 30,600.00      | 9.9%         | 500,000            |
+| 1,000,000   | And over         | 80,100.00      | 11.8%        | 1,000,000          |
+
+Withholding rates for taxpayers filing as *C*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 500,000     | 1,000,000        | 29,530.00      | 9.9%         | 500,000            |
+| 1,000,000   | And over         | 79,030.00      | 11.8%        | 1,000,000          |
+
+Withholding rates for taxpayers filing as *D*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 500,000     | 1,000,000        | 29,400.00      | 9.9%         | 500,000            |
+| 1,000,000   | And over         | 78,900.00      | 11.8%        | 1,000,000          |
+
+Withholding rates for taxpayers filing as *E*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 500,000     | 1,000,000        | 30,370.00      | 9.9%         | 500,000            |
+| 1,000,000   | And over         | 79,870.00      | 11.8%        | 1,000,000          |
+
 
 
 #### Withholding changes for New Mexico
