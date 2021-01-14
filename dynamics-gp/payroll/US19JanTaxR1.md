@@ -46,9 +46,18 @@ The following tax changes are included in this update:
 
 #### Withholding changes for Colorado
 
+- Flat tax rate of 4.55 for all filing status
+- For Filing Status of MAR, the Personal Exemption amount is \$8,000 per exemption entered (unchanged from 2020)
+- For Filing Status of SINGLE, the Personal Exemption amount is \$4,000 per exemption entered (unchanged from 2020)
+
+
 #### Withholding changes for Illinois
 
+The Dependent Exemptions is \$2,375
+
 #### Withholding changes for Michigan
+
+The Personal Exemption changed from \$4750 to \$4900 for Filing Status NA
 
 #### Withholding changes for Missouri
 
@@ -57,6 +66,54 @@ The following tax changes are included in this update:
 #### Withholding changes for New Jersey
 
 #### Withholding changes for New Mexico
+
+The withholding tables for New Mexico have been updated for all Filing Status.
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 12,550           | 0              | 0            | 0                  |
+| 12,550      | 20,550           | 0              | 1.7%         | 12,550             |
+| 20,550      | 28,550           | 136.00         | 3.2%         | 20,550             |
+| 28,550      | 36,550           | 392.00         | 4.7%         | 28,550             |
+| 36,550      | 52,550           | 768.00         | 4.9%         | 36,550             |
+| 52,550      | 76,550           | 1,552.00       | 4.9%         | 52,550             |
+| 76,550      | 112,550          | 2,728.00       | 4.9%         | 76,550             |
+| 112,550     | 212,550          | 4,492.00       | 4.9%         | 112,550            |
+| 212,550     | 327,550          | 9,392.00       | 4.9%         | 212,550            |
+| 327,550     | And over         | 15,027.00      | 5.9%         | 327,550            |
+
+
+Withholding rates for taxpayers filing as *SINGLE* 
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 6,275            | 0              | 0            | 0                  |
+| 6,275       | 11,775           | 0              | 1.7%         | 6,200              |
+| 11,775      | 17,275           | 93.50          | 3.2%         | 11,700             |
+| 17,275      | 22,275           | 269.50         | 4.7%         | 17,200             |
+| 22,275      | 32,275           | 504.50         | 4.9%         | 22,200             |
+| 32,275      | 48,275           | 994.50         | 4.9%         | 32,200             |
+| 48,275      | 71,275           | 1,778.50       | 4.9%         | 48,200             |
+| 71,275      | 131,275          | 2,905.50       | 4.9%         | 71,200             |
+| 131,275     | 216,275          | 5,845.50       | 4.9%         | 71,200             |
+| 216,275     | And over         | 10,010.50      | 4.9%         | 71,200             |
+
+Withholding rates for taxpayers filing as *HOH* 
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 9,325            | 0              | 0            | 0                  |
+| 9,325       | 17,325           | 0              | 1.7%         | 9,325              |
+| 17,325      | 25,325           | 136.00         | 3.2%         | 17,325             |
+| 25,325      | 33,325           | 392.00         | 4.7%         | 25,325             |
+| 33,325      | 49,325           | 768.00         | 4.9%         | 33,325             |
+| 49,325      | 73,325           | 1,552.00       | 4.9%         | 49,325             |
+| 73,325      | 109,325          | 2,728.00       | 4.9%         | 73,325             |
+| 109,325     | And over         | 4,492.00       | 4.9%         | 109,325            |
+
+
 
 #### Withholding changes for Oregon
 
@@ -461,14 +518,14 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 1 2021 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The Round 2 2021 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
 
 Before you begin, ask all Microsoft Dynamics GP users to exit the application until the update is complete. Exit all other applications, turn off the screen saver, and back up important data (including Forms.dic, Reports.dic, and Dynamics.vba if they exist) before you proceed with the installation.
 
-1. Log onto Microsoft Dynamics GP with the system administrator rights, and open the Payroll Tax Update window.
+1. Log onto Microsoft Dynamics GP with the system administrator rights, (user SA) and open the Payroll Tax Update window.
     (Microsoft Dynamics GP menu \>\> Maintenance \>\> U.S. Payroll Updates \>\> Check for Tax Updates)
 
 2. Select an update method, and then choose Next.
@@ -484,7 +541,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *12/18/2020*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *1/22/2021*.
 
 ## What’s next
 
