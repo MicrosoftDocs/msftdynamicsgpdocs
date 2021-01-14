@@ -44,6 +44,7 @@ The following tax changes are included in this update:
 
 #### Withholding changes for California
 
+
 #### Withholding changes for Colorado
 
 - Flat tax rate of 4.55 for all filing status
@@ -55,11 +56,14 @@ The following tax changes are included in this update:
 
 The Dependent Exemptions is \$2,375
 
+
 #### Withholding changes for Michigan
 
 The Personal Exemption changed from \$4750 to \$4900 for Filing Status NA
 
+
 #### Withholding changes for Missouri
+
 
 #### Withholding changes for New York and New York-Yonkers
 
@@ -104,6 +108,7 @@ Withholding rates for taxpayers filing as *SINGLE*
 
 
 #### Withholding changes for New Jersey
+
 
 #### Withholding changes for New Mexico
 
@@ -159,11 +164,46 @@ Withholding rates for taxpayers filing as *HOH*
 
 #### Withholding changes for Oregon
 
+
+
 #### Withholding changes for Rhode Island
+
+For all Filing Status the Personal Exemption ($1,000) wage limit increased to $234,750
+
+Withholding rates for taxpayers filing as *MAR* and *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 66,200           | 0              | 3.75%        | 0                  |
+| 66,200      | 150,550          | 2,482.50       | 4.75%        | 66,200             |
+| 150,550     | And Over         | 6,489.13       | 5.99%        | 150,550            |
+
+
 
 #### Withholding changes for Vermont
 
-#### Withholding changes for Yonkers
+The Personal Exemption amount is $4,400
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 9,525            | 0              | 0%           | 0                  |
+| 9,525       | 77,925           | 0              | 3.35%        | 9,525              |
+| 77,925      | 174,875          | 2,291.40       | 6.60%        | 77,925             |
+| 174,875     | 261,475          | 8,690.10       | 7.60%        | 174,875            |
+| 261,475     | And Over         | 15,271.70      | 8.75%        | 261,475            |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,175            | 0              | 0%           | 0                  |
+| 3,175       | 44,125           | 0              | 3.35%        | 3,175              |
+| 44,125      | 102,375          | 1,371.83       | 6.60%        | 44,125             |
+| 102,375     | 210,125          | 5,216.33       | 7.60%        | 102,375            |
+| 210,125     | And Over         | 13,405.33      | 8.75%        | 210,125            |
+
 
 
 
