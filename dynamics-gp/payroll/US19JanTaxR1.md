@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/17/2020
+ms.date: 1/14/2021
 ---
 # U.S. 2021 Payroll Tax Update
 
@@ -19,9 +19,54 @@ This tax update applies to:
 
 This document contains instructions for installing the 2021 U.S. Payroll Tax Update for Microsoft Dynamics GP.
 
-The first tax update for 2021 replaces all previous tax updates. It includes state tax table changes that took effect January 1, 2021. It is recommended you install this update before processing payrolls for the year 2021.
+The second tax update for 2021 replaces all previous tax updates. It includes state tax table changes that took effect January 1, 2021. It is recommended you install this update as soon as you can for the year 2021.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+## Changes in January Round 2 update
+
+- California
+- Colorado
+- Illinois
+- Michigan
+- Missouri
+- New York
+- New Jersey
+- New Mexico
+- Oregon
+- Rhode Island
+- Vermont
+- Yonkers
+
+### 2020 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for California
+
+#### Withholding changes for Colorado
+
+#### Withholding changes for Illinois
+
+#### Withholding changes for Michigan
+
+#### Withholding changes for Missouri
+
+#### Withholding changes for New York
+
+#### Withholding changes for New Jersey
+
+#### Withholding changes for New Mexico
+
+#### Withholding changes for Oregon
+
+#### Withholding changes for Rhode Island
+
+#### Withholding changes for Vermont
+
+#### Withholding changes for Yonkers
+
+
 
 ## Changes in January Round 1 update
 
@@ -35,6 +80,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - Missouri
 - North Dakota
 - South Carolina
+
 
 ### 2021 Federal tax changes
 
