@@ -17,9 +17,9 @@ This tax update applies to:
 - Microsoft Dynamics GP on Microsoft SQL Server
 - Microsoft Dynamics GP 2016 on Microsoft SQL Server
 
-This document contains instructions for installing the 2021 U.S. Payroll Tax Update for Microsoft Dynamics GP.
+This article provides guidance for how to install the 2021 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-The second tax update for 2021 replaces all previous tax updates. It includes state tax table changes that took effect January 1, 2021. It is recommended you install this update as soon as you can for the year 2021.
+The second tax update for 2021 replaces all previous tax updates. It includes state tax table changes that took effect January 1, 2021. We recommend that you install this update as soon as you can for the year 2021.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
