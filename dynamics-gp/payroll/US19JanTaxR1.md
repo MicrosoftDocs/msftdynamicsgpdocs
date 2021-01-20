@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 1/14/2021
+ms.date: 01/14/2021
 ---
 # U.S. 2021 Payroll Tax Update
 
@@ -44,15 +44,17 @@ The following tax changes are included in this update:
 
 #### Withholding changes for California
 
-For Filing Status of HOH  and MAR2
-Personal Exemption is \$136.40 from \$134.20
-Standard Deduction is \$9,202 from \$9,074  
-Low Income Limit is \$30,534 from \$30,083
+For Filing Status of HOH and MAR2:
 
-For Filing Status of MAR1 and SINGLE
-Personal Exemption is \$136.40 from \$134.20
-Standard Deduction is \$4,601 from \$4,537
-Low Income Limit is \$15,267 from \$15,042
+- Personal Exemption is \$136.40 from \$134.20
+- Standard Deduction is \$9,202 from \$9,074  
+- Low Income Limit is \$30,534 from \$30,083
+
+For Filing Status of MAR1 and SINGLE:
+
+- Personal Exemption is \$136.40 from \$134.20
+- Standard Deduction is \$4,601 from \$4,537
+- Low Income Limit is \$15,267 from \$15,042
 
 
 Withholding rates for taxpayers filing as *HOH*
