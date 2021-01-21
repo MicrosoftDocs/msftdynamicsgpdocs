@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/14/2021
+ms.date: 01/21/2021
 ---
 # U.S. 2021 Payroll Tax Update
 
