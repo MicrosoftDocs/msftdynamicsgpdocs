@@ -16,15 +16,15 @@ ms.reviewer:
 
 <span id="_Toc498615780" class="anchor"></span>
 
-We recommend that you complete the steps in this chapter before you upgrade your system. Be sure to follow the instructions on how to prepare your data in [Data preparation](data-preparation.md) before preparing your system. After you’ve completed the steps in this chapter, see [Installing Dynamics GP on the first computer](installing-on-first-computer.md) for instructions to upgrade Dynamics GP.  
+We recommend that you complete the steps in this chapter before you upgrade your system. Be sure to follow the instructions on how to prepare your data in [Data preparation](data-preparation.md) before preparing your system. After you've completed the steps in this chapter, see [Installing Dynamics GP on the first computer](installing-on-first-computer.md) for instructions to upgrade Dynamics GP.  
 
 ## Updates
 
 We recommend that you check for and install the most current Dynamics GP update for the release you are upgrading to. For the latest update information, see [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/service-packs).
 
-Be sure that you have installed the most current updates for your Dynamics GP system before using Dynamics GP Utilities to upgrade your databases. If you don’t install the update before using Dynamics GP Utilities, the fixes will not take effect. After upgrading your database, install the update on your client computers.
+Be sure that you have installed the most current updates for your Dynamics GP system before using Dynamics GP Utilities to upgrade your databases. If you don't install the update before using Dynamics GP Utilities, the fixes will not take effect. After upgrading your database, install the update on your client computers.
 
-You can’t log in to Dynamics GP on a client computer if a Dynamics GP feature or additional component installed on the client has different version information than the server. For more information about upgrading Dynamics GP features and additional components, see [Additional features and components upgrade]additional-features-and-components-upgrade.md).  
+You can't log in to Dynamics GP on a client computer if a Dynamics GP feature or additional component installed on the client has different version information than the server. For more information about upgrading Dynamics GP features and additional components, see [Additional features and components upgrade]additional-features-and-components-upgrade.md).  
 
 ## Reviewing the Readme file
 
@@ -32,27 +32,27 @@ To view additional information, use the Readme file on the Dynamics GP media. Be
 
 ## Installing components on all client computers
 
-We recommend that you install each registered Dynamics GP feature and additional components on all client computers. If you’re using Project Accounting, you should install Project Accounting on every computer that you have installed Dynamics GP on. You must install Bank Management on all clients for Direct Debits and Refunds to work properly.
+We recommend that you install each registered Dynamics GP feature and additional components on all client computers. If you're using Project Accounting, you should install Project Accounting on every computer that you have installed Dynamics GP on. You must install Bank Management on all clients for Direct Debits and Refunds to work properly.
 
 ## Upgrading Integration Manager
 
-Before you install Integration Manager 2018, we recommend that you make a backup copy your existing Integration Manager database (usually called IM.mdb) and then remove any previous versions of Integration Manager. You can remove earlier versions of Integration Manager, but it’s not required.
+Before you install Integration Manager 2018, we recommend that you make a backup copy your existing Integration Manager database (usually called IM.mdb) and then remove any previous versions of Integration Manager. You can remove earlier versions of Integration Manager, but it's not required.
 
-To remove Integration Manager, use your system’s Add/Remove Programs utility, and select Integration Manager.
+To remove Integration Manager, use your system's Add/Remove Programs utility, and select Integration Manager.
 
 After you install Integration Manager 2018, you must convert the database you backed up. After you convert your SQL Optimized data to Integration Manager
 
-2018 for the eConnect adapter, review your destination settings and verify that they are correct. For more information about installing Integration Manager and converting a database, refer to the Integration Manager User ’s Guide.
+2018 for the eConnect adapter, review your destination settings and verify that they are correct. For more information about installing Integration Manager and converting a database, refer to the Integration Manager User 's Guide.
 
 ## Upgrading in a test environment
 
 It is recommended that you use a test environment to practice the process of upgrading Dynamics GP, additional components, modified forms and reports, and customizations. By using a test environment, you can resolve any potential issues that may occur before you upgrade your current release of Dynamics GP. You also can estimate the time it will take to upgrade your current release to Dynamics GP. A test environment also allows users to test their day-to-day tasks to ensure that processes are working properly, and to learn the new features and modules in Dynamics GP.
 
-A test environment can be a single server or a server with one or more client computers where an upgrade takes place. The client computers can be used for testing and training purposes. There isn’t a required number of computers that need to be involved in a test environment.
+A test environment can be a single server or a server with one or more client computers where an upgrade takes place. The client computers can be used for testing and training purposes. There isn't a required number of computers that need to be involved in a test environment.
 
 ## Backups
 
-You should make at least one complete backup of all your databases before upgrading. You also should make a backup of all your modified dictionaries as well. It’s a good idea to make a backup before completing table maintenance procedures, in case you encounter any problems in that process. You also should make a backup of eConnect pre and post procedures and your existing Integration Manager database.
+You should make at least one complete backup of all your databases before upgrading. You also should make a backup of all your modified dictionaries as well. It's a good idea to make a backup before completing table maintenance procedures, in case you encounter any problems in that process. You also should make a backup of eConnect pre and post procedures and your existing Integration Manager database.
 
 If you are upgrading a company that has previously deployed SQL Server Reporting Services reports and Microsoft Excel reports, the deployed reports are automatically upgraded. If you have modified reports, those reports will be overwritten during the upgrade. Be sure to make a backup of your reports.
 
@@ -60,18 +60,18 @@ If you are upgrading a company that has previously deployed SQL Server Reporting
 
 For your SQL database, you should run the following database maintenance routine against the DYNAMICS database and all company databases in or Microsoft SQL Server Management Studio. The database maintenance routine will help to ensure that your table structure is ready to be upgraded if there are no errors indicated. Be sure that there are no allocation or consistency errors in the results.
 
-If you prefer to perform table maintenance only on the tables that have changed, lists of tables that have changed from previous releases are available on the Dynamics GP media as part of the Software Developers’ Kit (SDK).
+If you prefer to perform table maintenance only on the tables that have changed, lists of tables that have changed from previous releases are available on the Dynamics GP media as part of the Software Developers' Kit (SDK).
 
 > [!NOTE]
-> It’s a good idea to make a second backup after performing table maintenance, but before upgrading to a new version. If you have this backup and an expected problem occurs while upgrading, you won’t have to repeat the table maintenance step.  
+> It's a good idea to make a second backup after performing table maintenance, but before upgrading to a new version. If you have this backup and an expected problem occurs while upgrading, you won't have to repeat the table maintenance step.  
 
 ## Known issues
 
-Review the following known issues before upgrading to Dynamics GP. To be sure that you review the most current known issues, download the latest version of this manual from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018).
+Review the following known issues before upgrading to Dynamics GP.
 
-### Records that aren’t valid in purchase order tables
+### Records that aren't valid in purchase order tables
 
-If records that aren’t valid exist in the Purchase Order Line table (POP10110), or in the Purchase Order Line History table (POP30110), or in both tables, the upgrade can fail.
+If records that aren't valid exist in the Purchase Order Line table (POP10110), or in the Purchase Order Line History table (POP30110), or in both tables, the upgrade can fail.
 
 You can download an upgrade preparation script that will help you determine the disk space requirements from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade).
 
@@ -83,7 +83,7 @@ To verify purchase order tables:
 
 3.  Run the script against all company databases.
 
-4.  If results aren’t returned after running the script, invalid records don’t exist. You can upgrade to Dynamics GP.
+4.  If results aren't returned after running the script, invalid records don't exist. You can upgrade to Dynamics GP.
 
 If results are returned after running the script, invalid records exist and you can use Microsoft SQL Server Management Studio to remove these records. You also can check links in the Purchasing series before upgrading to Dynamics GP to remove invalid records.
 
@@ -229,7 +229,7 @@ Microsoft SQL Server Management Studio.
 
 3. Run the script against any database.
 
-4. If results aren’t returned after running the script, the tables are in the correct format.
+4. If results aren't returned after running the script, the tables are in the correct format.
 
 If results are returned after running the script, the tables do not match the account framework information. Contact the Dynamics GP Update Technical Support Team for instructions before upgrading. You can contact Dynamics GP Technical Support using one of the following methods.
 
@@ -255,7 +255,7 @@ To validate budget date records in the Analytical Accounting:
 
 2. Run the script against the company database.
 
-3. If results aren’t returned after running the script, you can upgrade to Dynamics GP.
+3. If results aren't returned after running the script, you can upgrade to Dynamics GP.
 
     If results show that there are budget date records that do not exist in the AAG00500 table, continue with the next step.
 
@@ -263,7 +263,7 @@ To validate budget date records in the Analytical Accounting:
 
     select \* from SY40101
 
-5. If there a fiscal or calendar year isn’t set up for the date, you must set up the fiscal or calendar year for those budget record dates before you can upgrade.
+5. If there a fiscal or calendar year isn't set up for the date, you must set up the fiscal or calendar year for those budget record dates before you can upgrade.
 
     If there is a fiscal or calendar year set up for the date, the records are missing from the AAG00500 table. Complete the following steps.
 

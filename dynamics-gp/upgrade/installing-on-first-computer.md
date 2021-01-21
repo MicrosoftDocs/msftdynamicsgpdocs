@@ -19,19 +19,19 @@ Use the information in this chapter to install Dynamics GP.
 
 ## Installation overview
 
-In a multiuser local area network environment, Dynamics GP applications are typically installed on a server, and then on each client. However, Dynamics GP is not required to be installed on the server. You must install the Dynamics GP databases on one computer first. After the Dynamics GP databases are installed on that computer, you’ll be using the Dynamics GP installation media or using an installation package to install on all remaining clients. For more about creating an installation package for your clients, see [Installation package](installation-package.md).
+In a multiuser local area network environment, Dynamics GP applications are typically installed on a server, and then on each client. However, Dynamics GP is not required to be installed on the server. You must install the Dynamics GP databases on one computer first. After the Dynamics GP databases are installed on that computer, you'll be using the Dynamics GP installation media or using an installation package to install on all remaining clients. For more about creating an installation package for your clients, see [Installation package](installation-package.md).
 
-The program files of the previous release aren’t removed by the Dynamics GP upgrade process.
+The program files of the previous release aren't removed by the Dynamics GP upgrade process.
 
 ## Installing Dynamics GP (first computer)
 
-Before you begin, be sure you’ve completed the preparation steps listed in [Data preparation](data-preparation.md) and [System preparation](system-preparation.md). You must be logged in to Windows as a user with system administrator privileges.
+Before you begin, be sure you've completed the preparation steps listed in [Data preparation](data-preparation.md) and [System preparation](system-preparation.md). You must be logged in to Windows as a user with system administrator privileges.
 
 To install Dynamics GP (first computer):
 
 1. From the Dynamics GP installation media, double-click the Setup.exe file to open the Dynamics GP installation window.
 
-2. If one or more of the following components isn’t installed on your computer, the Dynamics GP Bootstrapper Setup window opens and you can choose to install the missing component or components.
+2. If one or more of the following components isn't installed on your computer, the Dynamics GP Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
     - Dexterity Shared Components 18.0
 
@@ -65,17 +65,17 @@ To install Dynamics GP (first computer):
 
 6. In the Select Features window, select the features to install.
 
-![choose the features to add or remove.](media/add-remove-features.png "Feature selector")  
+    ![choose the features to add or remove.](media/add-remove-features.png "Feature selector")  
 
-When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
+    When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
-| Option      | What happens          |
-|-------------|-----------------------|
-| ![component icon](media/installed-component.png "Component icon") Run from My Computer      | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |
-| ![component icon](media/installed-component.png "Component icon") Run all from My Computer       | Will install the feature and all of its sub–features.|
-| ![component icon](media/not-installed-component.png "Component icon") Not Available | Will not install the selected feature or sub–feature.|  
+    | Option      | What happens          |
+    |-------------|-----------------------|
+    | ![component icon](media/installed-component.png "Component icon") Run from My Computer      | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |
+    | ![component icon](media/installed-component.png "Component icon") Run all from My Computer       | Will install the feature and all of its sub–features.|
+    | ![component icon](media/not-installed-component.png "Component icon") Not Available | Will not install the selected feature or sub–feature.|  
 
-If you’ve installed a feature in a previous release, be sure that you’ve selected to install that feature in the Select Feature window. You can review the DYNAMICS.SET file for a list of features you have installed.  
+    If you've installed a feature in a previous release, be sure that you've selected to install that feature in the Select Feature window. You can review the DYNAMICS.SET file for a list of features you have installed.  
 
 7. Specify a new folder where the Dynamics GP files should be installed. To select a different folder, click Browse.
 
@@ -83,7 +83,7 @@ If you’ve installed a feature in a previous release, be sure that you’ve sel
 
 8. In the SQL Server window, you can set up an ODBC data source in the SQL Server window by entering the name you assigned to the SQL Server when you installed Microsoft SQL Server.
 
-    If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
+    If you don't want to set up an ODBC data source, mark the Do not create a data source option.
 
 9. Select the system database name that you are upgrading.
 
@@ -91,9 +91,9 @@ If you’ve installed a feature in a previous release, be sure that you’ve sel
 
 10. If you have selected to install the Service Based Architecture feature, provide the Windows account that will be used as the service account for the Service Based Architecture service.
 
-![login screen for service based architecture service.](media/service-based-architecture-login.png "Login screen")  
+    ![login screen for service based architecture service.](media/service-based-architecture-login.png "Login screen")  
 
-The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
+    The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
 
 11. In the Install Program window, click Install.
 
@@ -101,10 +101,10 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 13. In the Installation Complete window, click Exit.
 
-14. Before you start Dynamics GP Utilities, check for and install the most current Dynamics GP update for Dynamics GP. See [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018) for the latest update information.
+14. Before you start Dynamics GP Utilities, check for and install the most current Dynamics GP update for Dynamics GP. See [Microsoft Dynamics GP Resource Directory](../resources.md) for the latest update information.
 
-> [!NOTE]
-> To start Dynamics GP Utilities, you must have appropriate privileges. Typically this means being prat of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control, (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system documentation for more information.  
+    > [!NOTE]
+    > To start Dynamics GP Utilities, you must have appropriate privileges. Typically this means being prat of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control, (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system documentation for more information.  
 
 15. After installing Dynamics GP and the most recent update, you can perform the following steps.
 

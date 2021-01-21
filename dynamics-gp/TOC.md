@@ -1,5 +1,5 @@
 # [Welcome to Dynamics GP](index.md)
-
+## [Resource Directory](resources.md)
 <!--- what's new-->
 ## What's new
 ### [Introduction](whats-new/introduction.md)
@@ -126,7 +126,8 @@
 <!--- installation -->
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)
-#### [System requirements](installation/system-requirements.md)
+#### [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)
+#### [System requirements](upgrade/system-requirements.md)
 #### [Network configuration](installation/network-configuration.md)
 #### [SQL Server configuration](installation/microsoft-sql-server-configuration.md)
 #### [Account framework](installation/account-framework.md)

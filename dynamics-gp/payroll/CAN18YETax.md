@@ -137,7 +137,7 @@ Canadian Payroll for Microsoft Dynamics GP has the ability to generate the XML f
 
 If you plan to use the Internet to submit RL-1 records, you need to obtain the Software Developer Number and the RL-1 Slip authorization number. Both numbers change every year.
 
-Both numbers are available with the Canadian year-end update on the [Microsoft Dynamics GP Directory page on CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#top).
+Both numbers are available with the Canadian year-end update in the [Microsoft Dynamics GP Resource Directory](../resources.md) article.
 
 You also can see [XML and form changes](#xml-and-form-changes) for the RL-1 authorization number and the steps for entering it.
 

@@ -14,11 +14,11 @@ ms.reviewer:
 ---
 # Additional features and components upgrade
 
-Depending on your organization’s needs, you may have purchased additional features or components that add specialized functionality to your Dynamics GP system. After you’ve installed Dynamics GP and upgraded your data using Dynamics GP Utilities, you can install additional features and components that integrate with Dynamics GP.
+Depending on your organization's needs, you may have purchased additional features or components that add specialized functionality to your Dynamics GP system. After you've installed Dynamics GP and upgraded your data using Dynamics GP Utilities, you can install additional features and components that integrate with Dynamics GP.
 
 ## Dynamics GP features
 
-After you’ve upgrade Dynamics GP, you may decide to purchase an additional feature or remove a feature. Some features add a single function to your Dynamics GP system while some, such as Manufacturing, allow you to complete a range of related business and accounting tasks that use one or more modules. Dynamics GP Utilities upgrades the tables for the features along with the Dynamics GP tables. If you choose to add a feature, we recommend that you install each registered Dynamics GP feature and additional component on all client computers. You can use the Select Features window to install or uninstall a feature. See the **Adding or removing additional features** section for more information.
+After you've upgrade Dynamics GP, you may decide to purchase an additional feature or remove a feature. Some features add a single function to your Dynamics GP system while some, such as Manufacturing, allow you to complete a range of related business and accounting tasks that use one or more modules. Dynamics GP Utilities upgrades the tables for the features along with the Dynamics GP tables. If you choose to add a feature, we recommend that you install each registered Dynamics GP feature and additional component on all client computers. You can use the Select Features window to install or uninstall a feature. See the **Adding or removing additional features** section for more information.
 
 ### The following table lists the Dynamics GP features. The features available depends on the country or region you selected when installing Dynamics GP
 
@@ -58,7 +58,7 @@ For Belgium and France:
 
 Use the installation wizard to add or remove features from your Dynamics GP installation. You also can use the Program Maintenance window, opened from the Add or Remove Programs control panel, to add or remove features. You should make a complete backup of your data before adding or removing features. Removing a feature does not remove tables from the database. Dynamics GP Utilities upgrades the tables for the feature along with the Dynamics GP tables.
 
-You can’t log in to Dynamics GP on a client computer if a component installed on the client has different version information than the server. You can use the GP\_LoginErrors.log file in your temporary directory to help resolve the version information issue. The log file will contain the product name, along with the dictionary version and the database version.
+You can't log in to Dynamics GP on a client computer if a component installed on the client has different version information than the server. You can use the GP\_LoginErrors.log file in your temporary directory to help resolve the version information issue. The log file will contain the product name, along with the dictionary version and the database version.
 
 To add or remove additional features:
 
@@ -74,7 +74,7 @@ To add or remove additional features:
 
 2. Click Add/Remove Features.
 
-3. In the Select Features window, select the features to install or uninstall. When you install a new feature, you won’t reinstall features that have been installed previously.
+3. In the Select Features window, select the features to install or uninstall. When you install a new feature, you won't reinstall features that have been installed previously.
 
 ### When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
@@ -98,7 +98,7 @@ To start Dynamics GP Utilities, you must have appropriate user privileges. If yo
 
 8. The Welcome To Dynamics GP Utilities window opens when you are logged into the server you selected. Read the message and click Next.
 
-9. Follow the instructions in the Dynamics GP Utilities windows. Depending on the feature and whether you’re installing the feature on your server or a client, you may have to upgrade tables and upgrade your companies and register the feature. You do not have to reapply the update for the features you selected.
+9. Follow the instructions in the Dynamics GP Utilities windows. Depending on the feature and whether you're installing the feature on your server or a client, you may have to upgrade tables and upgrade your companies and register the feature. You do not have to reapply the update for the features you selected.
 
 10. After the upgrade process is finished, the Additional Tasks window opens, and you can perform additional tasks, start Dynamics GP, or exit the installation. See [Company data conversion](company-data-conversion.md) for more detailed information about each task in the Additional Tasks window.
 
@@ -123,11 +123,11 @@ The following table lists the additional components.
 | GP PowerShell  | PowerShell cmdlets that perform various configuration tasks for a Dynamics GP web client installation.    |
 | OData Services     |     |
 
-There are some additional components that are released only on the [CustomerSource Web site](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018).
+There are some additional components that are released only in the [Microsoft Dynamics GP Resource Directory](../resources.md#GP2018) article.
 
 ## Installing an additional component
 
-Use this procedure to install an additional component after you’ve installed Dynamics GP and upgraded your company data using Dynamics GP Utilities. Before installing additional components, you should make a complete backup of your data.
+Use this procedure to install an additional component after you've installed Dynamics GP and upgraded your company data using Dynamics GP Utilities. Before installing additional components, you should make a complete backup of your data.
 
 Each additional component has its own installation instructions and documentation that you can access before you install the component. After you review the documentation you can install the component.
 

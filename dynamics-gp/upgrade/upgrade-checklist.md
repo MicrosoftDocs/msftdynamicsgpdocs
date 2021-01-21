@@ -27,13 +27,13 @@ Use this checklist as your guide to upgrading to Dynamics GP.
 | Step    | For more information  |
 |----------|--------------|
 | 1. Verify the security of your system.   | Download the [Security Planning](https://www.microsoft.com/en-us/download/details.aspx?id=45025) PDF file.|
-| 2. Refer to these Web sites for new or updated information relating to the upgrade.  | [System Requirements](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018)  |
-| 3. Ensure that you have the latest version of the Upgrade Guide.   | <https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource#GP2018>   |
+| 2. Refer to these Web sites for new or updated information relating to the upgrade.  | [Core System Requirements for Microsoft Dynamics GP](../installation/system-requirements-core.md)  |
+| 3. Ensure that you have the latest version of the Upgrade Guide.   | [Microsoft Dynamics GP Resource Directory](../resources.md)   |
 | 4. View the Readme file and make a note of the items that pertain to you.    | Media\\GreatPlains\\Documentation\\GPReadme.chm      |
-| 5. Obtain your new registration keys for Dynamics GP.     | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP. <https://mbs.microsoft.com/customersource>              |
+| 5. Obtain your new registration keys for Dynamics GP.     | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP. [https://mbs.microsoft.com/customersource](https://mbs.microsoft.com/customersource)            |
 | 6. Verify system requirements and expand your SQL database size, if necessary.    | <https://go.microsoft.com/fwlink/?LinkId=521785>  |
 | 7. Identify all integrating products and customizations and ensure that they are compatible with Dynamics GP.     | Contact the provider of the integrating products and customizations.       |
-| 8. Complete pre-upgrade procedures in the release of Dynamics GP that you are currently using and review known issues. | <https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentat20ion/system-requirements/dynamicsgpresource#GP2018>      |
+| 8. Complete pre-upgrade procedures in the release of Dynamics GP that you are currently using and review known issues. | [Microsoft Dynamics GP Resource Directory](../resources.md)      |
 | 9. Install Dynamics GP on the server and upgrade your accounting data.       | [Installing Dynamics GP (first computer)](installing-on-first-computer.md) |  
 | 10. Complete post-upgrade procedures for Dynamics GP modules.     | [Module upgrades from Dynamics GP 2013](module-upgrades-from-microsoft-dynamics-gp-2013.md)|  
 | 11. Upgrade additional components and verify customized reports.   | [Installing an additional components](additional-features-and-components-upgrade.md) |  
