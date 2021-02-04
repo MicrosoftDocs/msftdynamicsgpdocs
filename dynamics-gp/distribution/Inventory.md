@@ -1,5 +1,5 @@
 ---
-title: "Inventory Control"
+title: "Inventory Control - Parts 1-3"
 description: "Learn about Inventory for Dynamics GP, more specifically setup, cards, and transactions."
 keywords: "items"
 author: tnistler

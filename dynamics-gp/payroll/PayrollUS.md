@@ -2023,8 +2023,7 @@ You don't need to set up state and federal taxes, but can download the latest fe
 
 Before setting up workers' compensation codes, you should have completed *Setting up Payroll default entries* . To ensure reports are printed in the correct order, be sure that each deduction code has the same number of characters. The characters are sorted from left to right, and numbers take priority over letters.
 
-If taxes are not calculating as expected, review below:
-<https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly>
+If taxes are not calculating as expected, see [https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
 
 Workers' compensation codes are used to track the amount of workers'
 compensation taxes for which your company, as an employer, is liable.
@@ -6935,12 +6934,9 @@ Payroll code updates are distributed as Microsoft Windows Installer patch
 updates do not contain tax table information. You must install each type of
 update separately.
 
-You can obtain the latest downloads at:
-https://mbs.microsoft.com/customersource/downloads/taxupdates
+You can obtain the latest downloads at [this location](/dynamics/s-e/gp/tugp2018_391).
 
-For additional instructions, refer to the instructions that accompany a
-specific update. Instructions for year-end updates contain detailed
-checklists and procedures for completing year-end payroll processing.
+For additional instructions, refer to the instructions that accompany a specific update. Instructions for year-end updates contain detailed checklists and procedures for  completing year-end payroll processing.
 
 ## Part 6: Routines
 

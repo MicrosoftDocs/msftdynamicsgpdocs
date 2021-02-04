@@ -23,15 +23,15 @@ In a multiuser local area network environment, Dynamics GP applications are typi
 
 ## Installing Dynamics GP (first computer)
 
-Before beginning the installation, be sure you’ve completed the installation preparation steps listed in Part 1, Preparation, and that no other applications are running.
+Before beginning the installation, be sure you've completed the installation preparation steps listed in Part 1, Preparation, and that no other applications are running.
 
 To install Dynamics GP (first computer):
 
-1. Be sure that you’re logged in to Windows as a user with system administrator privileges.
+1. Be sure that you're logged in to Windows as a user with system administrator privileges.
 
 2. From the Dynamics GP installation media, double-click the Setup.exe file to open the Dynamics GP installation window.
 
-3. If one or more of the following components isn’t installed on your computer, the Dynamics GP Bootstrapper Setup window opens and you can choose to install the missing component or components.
+3. If one or more of the following components isn't installed on your computer, the Dynamics GP Bootstrapper Setup window opens and you can choose to install the missing component or components.
 
     - Dexterity Shared Components 18.0
 
@@ -85,7 +85,7 @@ To install Dynamics GP (first computer):
 
 11. In the SQL Server window, you can set up an ODBC data source, enter the name you assigned to the SQL Server when you installed Microsoft SQL Server. A data source name called Dynamics GP also is created using SQL Native Client.
 
-    If you don’t want to set up an ODBC data source, mark the Do not create a data source option.
+    If you don't want to set up an ODBC data source, mark the Do not create a data source option.
 
 12. Select to use DYNAMICS as the system database name or enter a different name for the system database name.
 
@@ -95,9 +95,9 @@ To install Dynamics GP (first computer):
 
 13. If you have selected to install the Service Based Architecture feature, provide the Windows account that will be used as the service account for the Service Based Architecture service.
 
-![login screen for service based architecture service](media/service-based-architecture-login.png "Login screen")  
+    ![login screen for service based architecture service](media/service-based-architecture-login.png "Login screen")  
 
-The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
+    The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
 
 14. In the Install Program window, click Install.
 
@@ -105,10 +105,10 @@ The Service Based Architecture feature will create a Windows service on the comp
 
 16. In the Installation Complete window, click Exit.
 
-17. Before you start Dynamics GP Utilities, check for and install current update for Dynamics GP. See [CustomerSource](https://mbs.microsoft.com/customersource) for the latest update information.
+17. Before you start Dynamics GP Utilities, check for and install current update for Dynamics GP. See [Product Release Downloads for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_release_download_378) for the latest update information.
 
-> [!NOTE]
-> To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system’s documentation for more information.  
+    > [!NOTE]
+    > To start Dynamics GP Utilities, you must have appropriate user privileges. Typically, this means being part of the Administrators group or the Power Users group. If you are using an operating system that has User Account Control (UAC) enabled, you will be prompted to run the program as a user with administrative privileges. Refer to your operating system's documentation for more information.  
 
 18. Start Dynamics GP Utilities. Choose Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 R2&gt;&gt; GP Utilities.
 

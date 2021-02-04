@@ -1,5 +1,5 @@
 ---
-title: "Invoicing in Dynamics GP"
+title: "Invoicing in Dynamics GP - Part 3"
 description: "Examine how the Invoicing module works in Microsoft Dynamics GP."
 keywords: "invoicing"
 author: theley502

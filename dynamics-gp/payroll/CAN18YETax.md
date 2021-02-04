@@ -74,9 +74,9 @@ Save backup copies of your Reports.dic, R7131.dic, F7131.dic, Forms.dic, and Dyn
 
 If you have questions about Canadian Payroll year-end closing procedures and your Microsoft Business Solutions Partner isn't available, there are several resources, in addition to this document, to assist in answering your year-end questions.
 
-#### 2020 year-end information on CustomerSource
+#### 2020 year-end information
 
-Look at [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/downloads) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
+Look at [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
 
 Look for "2020 Canadian Payroll Year End Update for Microsoft Dynamics GP".
 
@@ -153,7 +153,7 @@ The update must be installed on each client workstation where Microsoft Dynamics
 
 #### To install the update
 
-1. Download the update from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/downloads).
+1. Download the update from [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378).
 
     | **Language** | **Microsoft Dynamics GP**                  | **Microsoft Dynamics GP 2016**            |
     |--------------|--------------------------------------------|-------------------------------------------|
@@ -163,7 +163,7 @@ The update must be installed on each client workstation where Microsoft Dynamics
     Save the .msp file to a folder on the local disk drive of the server  workstation that runs Microsoft Dynamics GP.
 
     > [!NOTE]
-    > The year-end update file also includes all prior Microsoft Dynamics GP updates. A document describing the service pack changes is available from CustomerSource.  This update is inclusive of the Fall / October 2020 release for Microsoft Dynamics GP.
+    > The year-end update file also includes all prior Microsoft Dynamics GP updates. See also [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_patchreleases_377). This update is inclusive of the Fall / October 2020 release for Microsoft Dynamics GP.
 
 2. Double-click the file that you just downloaded. Progress windows appear as space requirements are verified and files are installed.
 
@@ -260,7 +260,7 @@ By using the XML format, the CRA is able to validate the file as soon as you sub
 
 ### Filing the RL-1 in XML format
 
-Before you use the Internet to submit RL-1 records, you need an RL-1 Authorization number. The RL-1 Authorization number and the Software Developer Number can be found with the year-end update at [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/downloads).
+Before you use the Internet to submit RL-1 records, you need an RL-1 Authorization number. The RL-1 Authorization number and the Software Developer Number can be found with the year-end update at [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378).
 
 Both numbers change every year.
 

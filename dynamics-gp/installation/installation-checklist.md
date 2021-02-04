@@ -25,7 +25,7 @@ Use this checklist as your guide to installing and setting up Dynamics GP
 | 1. Plan the security of your system.  | Download the SecurityPlanning.pdf, titled Planning for Security, from the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45025) by expanding the Details option.                     |
 | 2. Refer to the this content for new or updated information relating to the installation. You also can use CustomerSource for additional information. | [https://docs.microsoft.com/en-us/dynamics-gp/](../index.md) |
 | 3. View the Readme file and make a note of the items that pertain to you. | \\Media\\GreatPlains\\Documentation\\GPReadme.chm |
-| 4. Obtain your need registration keys for Dynamics GP.   | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP. [https://mbs.microsoft.com/customersource](https://mbs.microsoft.com/customersource)  My Account  |
+| 4. Obtain your need registration keys for Dynamics GP.   | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP. [CustomerSource Help and How-To Resources](/dynamics/s-e/howto) |
 | 5. Verify system requirements. | [Core System Requirements](system-requirements-core.md)   |
 | 6. Install a networking protocol.    | [Network Requirements](network-configuration.md)   |
 | 7. Install and set up Microsoft SQL Server.    | Note: Make sure that you install Microsoft SharePoint if you want to use SharePoint Integrated Mode when deploying SQL Server Reporting Services reports. |
@@ -33,7 +33,7 @@ Use this checklist as your guide to installing and setting up Dynamics GP
 | 9. Design the account framework.  | [Account framework](account-framework.md) |
 | 10. Install Dynamics GP Tenant Services. | This step is required if you want to host Dynamics GP for multiple, unrelated organizations. Tenant Services Installation and Administration Guide  |
 | 11. Install the data server and initial client.  | [Install Dynamics GP on the first computer](installing-on-first-computer.md)|
-| 12. Be sure to download and install the latest Dynamics GP update.     | [Dynamics GP Downloads](https://mbs.microsoft.com/customersource/northamerica/gp/downloads)    |
+| 12. Be sure to download and install the latest Dynamics GP update.     | [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378)    |
 | 13. Set up the account framework and Dynamics GP system data tables.  | [Account framework](account-framework.md) |
 | 14. Create your first company. | Adding a company using [Dynamics GP Utilities](using-microsoft-dynamics-utilities.md)      |
 | 15. Install additional components.  | [Installing an additional component](installing-additional-components.md)  |
@@ -61,13 +61,13 @@ You can choose Help &gt;&gt; Printable Manuals to find a printable version of pr
 
 To view and download documentation, visit the [Documentation Resources for Dynamics GP](https://go.microsoft.com/fwlink/?LinkId=249465) page.
 
-### CustomerSource
+<!--### CustomerSource
 
 CustomerSource is a Web site for registered Dynamics GP customers. CustomerSource is available 24 hours a day. You must have a user name and password to enter the site. You can access [CustomerSource](https://mbs.microsoft.com/customersource) with your Internet browser.
 
 From the CustomerSource start page, select the Support option. From the Support page, you can look for information on your own or you can use e-mail to send a question to the Dynamics GP Technical Support team.
 
-You'll find links to Support Hot Topics and Knowledge Base—the best source of information for error messages, troubleshooting guides, workarounds, and answers to common Report Writer questions. You'll also find links for automated fixes, hardware compatibility, and downloads. Use the New Support Request link to contact Dynamics GP Technical Support electronically. You also can view recent support requests for yourself and your company.
+You'll find links to Support Hot Topics and Knowledge Base—the best source of information for error messages, troubleshooting guides, workarounds, and answers to common Report Writer questions. You'll also find links for automated fixes, hardware compatibility, and downloads. Use the New Support Request link to contact Dynamics GP Technical Support electronically. You also can view recent support requests for yourself and your company.-->
 
 ### Microsoft SQL Server troubleshooting resources
 
