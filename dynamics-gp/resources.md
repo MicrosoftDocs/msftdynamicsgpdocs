@@ -49,7 +49,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
   Includes What's New and documentation to all the features for this release.  
 - [GP 2018 RTM - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/10/25/microsoft-dynamics-gp-2018-new-feature-blog-series-schedule)
 
-  Includes What's New, Videos, documentation to all features for this release 
+  Includes What's New, Videos, documentation to all features for this release
 - [Product Release Downloads for Microsoft Dynamics GP 2018](/dynamics/s-e/gp/MDGP2018_Release_Download_378)
 
   Includes Install, Upgrade and What's New Guides
@@ -71,7 +71,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [GP 2016 RTM - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/03/30/microsoft-dynamics-gp-2016-new-features-blog-series-schedule)
 
   Includes What's New, Videos, documentation to all features for this release
-- [Product Release Downloads for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_Release_Download_371
+- [Product Release Downloads for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_Release_Download_371)
 
   Includes Install, Upgrade, and Azure Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_PatchReleases_370)
@@ -90,7 +90,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Microsoft Dynamics GP VIDEO Learning](https://mbs.microsoft.com/_layouts/15/DocIdRedir.aspx?ID=MBSDYN-3-11073)
 
-- [Professional Services Tools Library (PSTL) and other FREE Tools](https://mbs.microsoft.com/customersource/northamerica/GP/support/support-news/NOAM_PSTL)
+- [Professional Services Tools Library (PSTL) and other FREE Tools](/dynamics/s-e/gp/noam_pstl_delta)
 
 - [Microsoft Dynamics GP Performance white paper](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/white-papers/MDGP2010_WhitePaper_Performance)
 
