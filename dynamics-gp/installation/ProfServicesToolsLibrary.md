@@ -17,7 +17,7 @@ The Professional Services Tools Library is designed for use with Microsoft Dynam
 
 ## Introduction
 
-To download the tool go to [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/support/support-news/NOAM_PSTL).
+To download the tool, go to [this location](/dynamics/s-e/gp/NOAM_PSTL_delta).
 
 As of March 26, 2012 the Microsoft Dynamics GP PSTL and the additional Microsoft Dynamics GP Tools listed above are available to partners at no additional cost.
 
@@ -27,7 +27,7 @@ This section includes information and precautions that will help you use Profess
 
 - Making backups
 
-    Before running any tool, make a backup of the databases that will be affected. It is important to make a backup of your Microsoft SQL Server® data. Many of the tools will prompt users to back up their data before being allowed to execute the command selected. Make a backup before continuing with the tool operation. The tools that do not prompt users with a warning message either have another type of warning or assume that the user has taken steps to appropriately backup the data.
+    Before running any tool, make a backup of the databases that will be affected. It is important to make a backup of your Microsoft SQL Server&reg; data. Many of the tools will prompt users to back up their data before being allowed to execute the command selected. Make a backup before continuing with the tool operation. The tools that do not prompt users with a warning message either have another type of warning or assume that the user has taken steps to appropriately backup the data.
 
 - Additional users
 
@@ -38,7 +38,7 @@ This section includes information and precautions that will help you use Profess
 
 - Using the *sa* login
 
-  Regardless of how role-based Security is defined in Microsoft Dynamics GP, there are certain tools that will require users to be logged in as “sa.” These tools are:
+  Regardless of how role-based Security is defined in Microsoft Dynamics GP, there are certain tools that will require users to be logged in as "sa." These tools are:
 
   - Toolkit
 
@@ -178,8 +178,8 @@ Information is divided into the following sections:
 
 ### Installation
 
-Professional Services Tools Library can be installed directly from the Microsoft Dynamics GP installation media. The Professional Services Tools Library can also be downloaded at no charge from PartnerSource at the following website:
-[https:/mbs.microsoft.com/partnersource/downloads/releases/noam_pstl.hlm.](https://mbs.microsoft.com/partnersource/downloads/releases/noam_pstl.hlm.)
+Professional Services Tools Library can be installed directly from the Microsoft Dynamics GP installation media. The Professional Services Tools Library can also be downloaded at no charge from PartnerSource at [this location](/dynamics/s-e/gp/NOAM_PSTL_delta).  
+
 If you are a customer, contact your partner of record.
 
 **Installing Professional Services Tools Library:**
@@ -264,8 +264,8 @@ The Next button will be unavailable once the second check box is marked for cert
 You can add a Professional Services Tools Library task to an existing security task or create a new task. Once a security task is created, you can either add the task to an existing role ID or create a new role ID. The instructions provided demonstrate how to create a new task, new role ID, and apply the new role ID to a user through User Security Setup.
 
 > [!IMPORTANT]
-> Predefined security tasks and roles are not set up in Microsoft Dynamics GP for Professional Services Tools Library. If you want to log in as a user other than “sa,” you must set up security tasks and roles specific for each desired user(s).
-Regardless of how role-based security is defined in Microsoft Dynamics GP, there are multiple Professional Services Tools that require the user be logged in as “sa.” Refer to Before you begin on page 1 for information on the specific tools.
+> Predefined security tasks and roles are not set up in Microsoft Dynamics GP for Professional Services Tools Library. If you want to log in as a user other than "sa," you must set up security tasks and roles specific for each desired user(s).
+Regardless of how role-based security is defined in Microsoft Dynamics GP, there are multiple Professional Services Tools that require the user be logged in as "sa." Refer to Before you begin on page 1 for information on the specific tools.
 In order for a tool to execute properly and run reports as designed, all operations relating to the Reports and Files associated to the tools must be given access along with the Window Type.
 
 Some of the options in creating a security task illustrated below can be changed depending on what type of security you need.
@@ -345,7 +345,7 @@ This chapter explains how to use the System Series Professional Services Tools. 
 
 ### Using Shortcuts Copy
 
-Use this tool to copy the Shortcuts options from one user to another user with the click of a button. With the Shortcuts Copy tool, you don’t have to manually set the shortcuts up for each user on the system. This is especially useful when macros are used with a window (e.g., Purchase Order entry to always add item).
+Use this tool to copy the Shortcuts options from one user to another user with the click of a button. With the Shortcuts Copy tool, you don't have to manually set the shortcuts up for each user on the system. This is especially useful when macros are used with a window (e.g., Purchase Order entry to always add item).
 
 #### To copy a shortcut
 
@@ -367,7 +367,7 @@ Use this tool to copy the Shortcuts options from one user to another user with t
 Use Toolkit to rebuild the GL00105 table, re-create Dex Procs, rebuild indexes, re-create tables, and check identities of tables all within Microsoft Dynamics GP.
 
 > [!IMPORTANT]
-> This tool requires that the user be logged in as “sa.”
+> This tool requires that the user be logged in as "sa."
 
 #### To rebuild the GL00105 table
 
@@ -620,7 +620,7 @@ This tool allows you to create General Ledger account master records and replica
 2. In the Replicate To DB field, choose the database to which the master records will be copied.
 
     > [!NOTE]
-    > To use General Ledger Master Triggers, the “Replicate To” database must have the same company account structure setup as the Master database. This information can be found using query analyzer and doing a query on the SY00300 table against each database, or in Microsoft Dynamics GP you can go to Microsoft Dynamics GP menu \>\>Tools \>\> Setup \>\> Company \>\> Account Format. The same number of Segments must be setup, and each Segment must be the same length.
+    > To use General Ledger Master Triggers, the "Replicate To" database must have the same company account structure setup as the Master database. This information can be found using query analyzer and doing a query on the SY00300 table against each database, or in Microsoft Dynamics GP you can go to Microsoft Dynamics GP menu \>\>Tools \>\> Setup \>\> Company \>\> Account Format. The same number of Segments must be setup, and each Segment must be the same length.
 
 3. Mark the Accounts option.
 
@@ -657,7 +657,7 @@ Information is divided into the following sections:
 Use this tool to change the Customer Name. You can change an existing customer name to a new customer name without any loss of work, open, or historical records.
 
 > [!IMPORTANT]
-> This tool requires that the user be logged in as “sa.”
+> This tool requires that the user be logged in as "sa."
 
 #### To change a customer name
 
@@ -758,7 +758,7 @@ within Sales Order Processing Entry and the Sales Item Detail windows.
 3. Choose Create Initial Data from the Additional menu. This process could take sometime depending on how much historical SOP Line Item data exists. You will receive a message when processing is finished.
 
     > [!IMPORTANT]
-    > You must be logged in as “sa” do the initial data creation.
+    > You must be logged in as "sa" do the initial data creation.
 
 4. The new Customer Item Lookup window is now available from the SOP Entry and the SOP Item Detail windows. You can open the lookup window by pressing CTRL H or by choosing Additional \>\> Customer Item Lookup.
 
@@ -839,15 +839,15 @@ Use the SOP PO Number Check to verify the Customer PO Number field for duplicate
 
     - **Warn Only**
 
-        Presents the user with the message defined in the Message column for that SOP Type. Only an “OK” button is displayed in the message, because it is only a warning.
+        Presents the user with the message defined in the Message column for that SOP Type. Only an "OK" button is displayed in the message, because it is only a warning.
 
     - **Warn and Ask**
 
-        If a duplicate is found, the message defined in the Message column for that SOP Type will be displayed. The user will be given a choice of “Yes” or “No”, or “Display”. If “Yes” is clicked, the Customer PO Number is accepted. If “No” is clicked, then the user must re-enter a different Customer PO Number. If “Display” is clicked, a window will open that shows the records that the PO Number was found on.
+        If a duplicate is found, the message defined in the Message column for that SOP Type will be displayed. The user will be given a choice of "Yes" or "No", or "Display". If "Yes" is clicked, the Customer PO Number is accepted. If "No" is clicked, then the user must re-enter a different Customer PO Number. If "Display" is clicked, a window will open that shows the records that the PO Number was found on.
 
     - **Warn and Reject**
 
-        Presents the user with the message defined in the Message column for that SOP Type. An “OK” button and a “Display” button are displayed with the message. If “OK” is clicked, the focus will return to the Customer PO Number and they user would have to enter a different number (or leave it blank). If “Display” is clicked, a window will open that shows the records that the PO Number was found on.
+        Presents the user with the message defined in the Message column for that SOP Type. An "OK" button and a "Display" button are displayed with the message. If "OK" is clicked, the focus will return to the Customer PO Number and they user would have to enter a different number (or leave it blank). If "Display" is clicked, a window will open that shows the records that the PO Number was found on.
 
     - **Warn and Password**
 
@@ -1008,7 +1008,7 @@ Item Number Modifier is like other modifier tools in that it allows the user to 
 
 ### Using Item Reconciler
 
-Item Reconciler allows you to reconcile Inventory. The Reconciler ’s function is the same as the reconcile functions built into Microsoft Dynamics GP with one exception: only those items that need reconciling will be reconciled using Professional Services Tools Library. This can increase performance if all items don’t need to be reconciled.
+Item Reconciler allows you to reconcile Inventory. The Reconciler 's function is the same as the reconcile functions built into Microsoft Dynamics GP with one exception: only those items that need reconciling will be reconciled using Professional Services Tools Library. This can increase performance if all items don't need to be reconciled.
 
 #### To reconcile Inventory
 
@@ -1038,7 +1038,7 @@ This chapter explains how to use the Purchasing Series Professional Services Too
 
 This tool allows you to update the 1099 amounts for vendors who are not set up as a 1099 vendor for the year or a portion of the year.
 
-This tool will only modify records that are already paid and should be 1099 records for the year selected. If you have any work or open records that haven’t been paid but were entered/posted while the vendor was not set up as a 1099 vendor, those records will not be changed. You need to execute this tool the next year prior to printing 1099 reports to be sure that work and open records that were paid in the new year, get updated.
+This tool will only modify records that are already paid and should be 1099 records for the year selected. If you have any work or open records that haven't been paid but were entered/posted while the vendor was not set up as a 1099 vendor, those records will not be changed. You need to execute this tool the next year prior to printing 1099 reports to be sure that work and open records that were paid in the new year, get updated.
 
 #### To update 1099 amounts
 
@@ -1114,7 +1114,7 @@ You can turn the minimum check amount on or off by marking or unmarking the Use 
 Use this tool to consolidate checks to match the same vendor when users are appending to an existing checks batch. This can be useful if users frequently build batches of Payables checks and select different document number ranges or date ranges.
 
 > [!IMPORTANT]
-> You cannot use the Select Checks Combiner tool and the feature One check per Invoice that was added in Microsoft Dynamics GP 2018 RTM at the same time. What happens is that when the Select Checks Combiner tool in PSTL is enabled, you cannot have the Vendor option for ‘One Payment Per’ set to Invoice. If you do, Dynamics GP creates a Payment per each Invoice per your setup; then PSTL will remove the transactions from the Keys (PM00400) and Work (PM10300) records for all of the payments created after the first. The only real records for the payments will be found in the apply table (PM10200) and remittance table (PM20100). 
+> You cannot use the Select Checks Combiner tool and the feature One check per Invoice that was added in Microsoft Dynamics GP 2018 RTM at the same time. What happens is that when the Select Checks Combiner tool in PSTL is enabled, you cannot have the Vendor option for 'One Payment Per' set to Invoice. If you do, Dynamics GP creates a Payment per each Invoice per your setup; then PSTL will remove the transactions from the Keys (PM00400) and Work (PM10300) records for all of the payments created after the first. The only real records for the payments will be found in the apply table (PM10200) and remittance table (PM20100). 
 
 #### To activate Select Checks Combiner
 
@@ -1201,7 +1201,7 @@ buttons](#using-the-validate-and-import-buttons) to use the Validate and Import 
 
 ### Using the Certified Payroll Report
 
-Use the Certified Payroll Report with US Payroll to add a project number to employees’ hourly transactions and track them on a per project basis. This tool will also capture information posted from the Timesheet Entry window in Project Accounting Timesheet Entry. You can print these transactions on a weekly report and view employees, departments, job titles, and pay codes by project.
+Use the Certified Payroll Report with US Payroll to add a project number to employees' hourly transactions and track them on a per project basis. This tool will also capture information posted from the Timesheet Entry window in Project Accounting Timesheet Entry. You can print these transactions on a weekly report and view employees, departments, job titles, and pay codes by project.
 
 #### To set up the Certified Payroll report
 
@@ -1369,7 +1369,7 @@ To activate this tool, simply mark the second check box next to Decimal Place To
 This tool allows the setup and report option information from one company to be copied to another company within Microsoft Dynamics GP. You can choose the modules for which information will be copied from the source company to the destination company.
 
 > [!IMPORTANT]
-> This tool requires that the user be logged in as “sa.”
+> This tool requires that the user be logged in as "sa."
 
 Before using the Company Copy tool, be aware of the following important issues:
 

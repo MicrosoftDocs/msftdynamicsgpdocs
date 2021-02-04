@@ -20,7 +20,7 @@ We recommend that you complete the steps in this chapter before you upgrade your
 
 ## Updates
 
-We recommend that you check for and install the most current Dynamics GP update for the release you are upgrading to. For the latest update information, see [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/service-packs).
+We recommend that you check for and install the most current Dynamics GP update for the release you are upgrading to. For the latest update information, see [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378).
 
 Be sure that you have installed the most current updates for your Dynamics GP system before using Dynamics GP Utilities to upgrade your databases. If you don't install the update before using Dynamics GP Utilities, the fixes will not take effect. After upgrading your database, install the update on your client computers.
 

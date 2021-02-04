@@ -130,7 +130,7 @@ complete this process as quickly and efficiently as possible.
 
 #### Plan
 
-Some materials have been provided to help you plan for implementing Microsoft Dynamics GP. If you haven't yet reviewed these resources, visit the CustomerSource Web site to review them. In addition to defining a schedule for setting up and using the software, many businesses make detailed assignments for specific tasks, such as defining customer and vendor numbers, creating vendor, item and customer records, entering and posting beginning balances.
+Some materials have been provided to help you plan for implementing Microsoft Dynamics GP. Check the navigation panel to the left to get an overview of available material. In addition to defining a schedule for setting up and using the software, many businesses make detailed assignments for specific tasks, such as defining customer and vendor numbers, creating vendor, item and customer records, entering and posting beginning balances.
 
 The procedures in *Chapter 2, "Setting up Microsoft Dynamics GP,"* can help
 you assign specific setup tasks to users from within Microsoft Dynamics GP

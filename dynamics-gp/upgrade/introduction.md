@@ -15,9 +15,9 @@ ms.reviewer:
 
 Use this section to upgrade your Dynamics GP system. Review the introductory information about the resources available to you, then use the [Dynamics GP upgrade checklist](upgrade-checklist.md) as your guide to the parts that apply to you.  
 
-To review new Dynamics GP features, refer to the [What’s New section](../whats-new/introduction.md).
+To review new Dynamics GP features, refer to the [What's New section](../whats-new/introduction.md).
 
-## What’s in this guide?
+## What's in this guide?
 
 This upgrade guide provides guidelines for upgrading your Dynamics GP system to a newer version. It lists the latest system requirements, contains a step-by-step look at the upgrade process, and provides tips for troubleshooting your upgrade. The manual is divided into the following parts:
 
@@ -37,17 +37,17 @@ This manual uses the following conventions to refer to sections, navigation and 
 
 A number of resources are available to help in addition to this document.
 
-#### Knowledge Base
+<!--#### Knowledge Base
 
 [https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx](https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx)
 
-Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
+Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.-->
 
 #### eSupport
 
 [https://mbs.microsoft.com/support/newstart.aspx](https://mbs.microsoft.com/support/newstart.aspx)
 
-For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That’s a big benefit during the critical year-end season.
+For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That's a big benefit during the critical year-end season.
 
 #### Community
 

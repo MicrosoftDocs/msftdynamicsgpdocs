@@ -3178,22 +3178,14 @@ This part of the documentation contains the following information:
 
 ### Chapter 15: General troubleshooting
 
-This information explains how to troubleshoot problems on your own, where to
-look for more information, and what information you should gather before
-calling Microsoft Dynamics GP Technical Support.
+This information explains how to troubleshoot problems on your own, where to look for more information, and what information you should gather before calling Microsoft Dynamics GP Technical Support.
 
-You also can visit the CustomerSource Web site and search the Knowledge Base
-for answers to your most common technical questions including
-troubleshooting steps, solutions to common issues, and how-to articles.
+You also can visit the [Additional Resources for Microsoft Dynamics On-Premise Customers](/dynamics/s-e/global/additionalresources) article and look for answers to your most common technical questions including troubleshooting steps, solutions to common issues, and how-to articles.
 
 ![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-
-
-*When you install or use Microsoft Dynamics GP, alert messages may appear
-that are caused by errors in other applications, such as the file handler or
-operating system. To deal with errors not caused by Microsoft Dynamics GP,
-refer to the documentation for the application causing the error.*
+> [!NOTE]
+> When you install or use Microsoft Dynamics GP, alert messages may appear that are caused by errors in other applications, such as the file handler or operating system. To deal with errors not caused by Microsoft Dynamics GP, refer to the documentation for the application causing the error.
 
 The troubleshooting information is divided into the following sections:
 
@@ -3248,7 +3240,7 @@ product and series,
 the names assigned to each window, the fields each window contains, and the
 tables linked to each window.
 
-**CustomerSource**
+<!--**CustomerSource**
 
 CustomerSource is a Web site for registered Microsoft Dynamics GP customers.
 CustomerSource is available 24 hours a day. You must have a user name and
@@ -3266,7 +3258,7 @@ information for error messages, troubleshooting guides, work-arounds, and
 answers to common Report Writer questions. You'll also find links for automated
 fixes, hardware compatibility, and downloads. Use the New Support Request link
 to contact Microsoft Dynamics GP Technical Support electronically. You also can
-view recent support requests for yourself and your company.
+view recent support requests for yourself and your company.-->
 
 **Microsoft SQL Server troubleshooting resources**
 
@@ -3454,10 +3446,7 @@ options.
 
 **Microsoft Dynamics GP messages**
 
-The best source of information for troubleshooting Microsoft Dynamics GP
-alert messages is the Knowledge Base database on CustomerSource. Go to the
-Technical Q&A page, where you can type in the message number or message text
-to search for the alert message you're receiving.
+The best source of information for troubleshooting Microsoft Dynamics GP alert messages is the Knowledge Base database on CustomerSource. Go to the Technical Q&A page, where you can type in the message number or message text to search for the alert message you're receiving.
 
 **DBMS messages**
 

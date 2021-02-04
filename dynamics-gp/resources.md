@@ -31,17 +31,16 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Dynamics GP October 2019 - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-r3-new-feature-blog-series-schedule)
 
   Includes What's New and documentation to all the features for this release.
-- [Product Release Downloads for Microsoft Dynamics GP](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/product-releases/MDGP2018_Release_Download)
+- [Product Release Downloads for Microsoft Dynamics GP](/dynamics/s-e/gp/MDGP2018_Release_Download_378)
 
   Includes Install, Upgrade and What's New Guides
-- [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/service-packs/MDGP2018_PatchReleases)
-- [System Requirements for Microsoft Dynamics GP](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/MDGP2018_System_Requirements)
-- [System Requirements for Microsoft Dynamics GP Web Components](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/MDGP2018_system_requirements_web_apps)
+- [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
+- [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)
 - [Upgrade Hot Topic](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGPUpgrade)
-- [US Year-End](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/usgpye2018)
-- [US Taxes](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/usgpye2018)
-- [Canadian Payroll Taxes and Year - End](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/cagptuye2018)
-- [Management Reporter Install and Service Packs](https://mbs.microsoft.com/customersource/northamerica/MR/downloads/service-packs/MROverview)
+- [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
+- [US Taxes](/dynamics/s-e/gp/usgpye2018_396)
+- [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
+<!--- [Management Reporter Install and Service Packs](https://mbs.microsoft.com/customersource/northamerica/MR/downloads/service-packs/MROverview)-->
 
 ## <a name="GP2018"></a>Microsoft Dynamics GP 2018 R2 and RTM
 
@@ -51,17 +50,16 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [GP 2018 RTM - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/10/25/microsoft-dynamics-gp-2018-new-feature-blog-series-schedule)
 
   Includes What's New, Videos, documentation to all features for this release 
-- [Product Release Downloads for Microsoft Dynamics GP 2018](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/product-releases/MDGP2018_Release_Download)
+- [Product Release Downloads for Microsoft Dynamics GP 2018](/dynamics/s-e/gp/MDGP2018_Release_Download_378)
 
   Includes Install, Upgrade and What's New Guides
-- [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2018](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/service-packs/MDGP2018_PatchReleases)
-- [System Requirements for Microsoft Dynamics GP 2018](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/MDGP2018_System_Requirements)
-- [System Requirements for Microsoft Dynamics GP 2018 Web Components](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/MDGP2018_system_requirements_web_apps)
+- [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2018](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
+- [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)  
 - [Upgrade Hot Topic](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade)
-- [US Year-End](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/usgpye2018)
-- [US Taxes](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/TUGP2018)
-- [Canadian Payroll Taxes and Year - End](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/cagptuye2018)
-- [Management Reporter Install and Service Packs](https://mbs.microsoft.com/customersource/northamerica/MR/downloads/service-packs/MROverview) 
+- [US Year-End](/dynamics/s-e/gp/tugp2018_391)
+- [US Taxes](/dynamics/s-e/gp/tugp2018_391)
+- [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
+<!--- [Management Reporter Install and Service Packs](https://mbs.microsoft.com/customersource/northamerica/MR/downloads/service-packs/MROverview) -->
 
 ## Microsoft Dynamics GP 2016 R2 and RTM
 
@@ -73,17 +71,16 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [GP 2016 RTM - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/03/30/microsoft-dynamics-gp-2016-new-features-blog-series-schedule)
 
   Includes What's New, Videos, documentation to all features for this release
-- [Product Release Downloads for Microsoft Dynamics GP 2016](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/product-releases/MDGP2016_Release_Download)
+- [Product Release Downloads for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_Release_Download_371
 
   Includes Install, Upgrade, and Azure Guides
-- [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2016](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/service-packs/MDGP2016_PatchReleases)
-- [System Requirements for Microsoft Dynamics GP 2016](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/MDGP2016_System_Requirements)
-- [System Requirements for Microsoft Dynamics GP 2016 Web Components](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/MDGP2016_system_requirements_web_apps)
+- [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_PatchReleases_370)
+- [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)  
 - [Upgrade Hot Topic](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2016Upgrade)
-- [​​US Year-End](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/usgpye2016) 
-- [US Taxes​](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/TUGP2016)
-- [Canadian Payroll Taxes and Year - End](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/cagptuye2016)
-- [Management Reporter Install and Service Packs](https://mbs.microsoft.com/customersource/northamerica/MR/downloads/service-packs/MROverview)
+- [​​US Year-End](/dynamics/s-e/gp/usgpye2016_395)  
+- [US Taxes​](/dynamics/s-e/gp/TUGP2016_390)  
+- [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2016_284)
+<!--- [Management Reporter Install and Service Packs](https://mbs.microsoft.com/customersource/northamerica/MR/downloads/service-packs/MROverview)-->
 
 ## Important Links
 
