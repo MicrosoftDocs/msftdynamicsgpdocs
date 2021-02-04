@@ -1643,9 +1643,9 @@ The following information contains answers to questions about windows within Mic
 
     When the requirements for using the User Access window are not met, the check boxes are unavailable. Within the User Access window, you have the ability to grant and deny access to companies. This action of granting and denying access is nothing more than adding and removing user accounts to the database and making the user a member of the DYNGRP. This action making check boxes available is determined by the following two factors:
 
-        - What database permissions the current user has when the window is opened.
+      - What database permissions the current user has when the window is opened.
 
-        - The user performing the action has the correct database permissions that are described in the User Access section of this document. We don't have the ability to individually make each check box unavailable based on the permissions that are set at the database window.
+      - The user performing the action has the correct database permissions that are described in the User Access section of this document. We don't have the ability to individually make each check box unavailable based on the permissions that are set at the database window.
 
 - Why is the Save button unavailable in the User Setup window?
 
