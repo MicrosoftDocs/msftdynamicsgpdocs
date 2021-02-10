@@ -269,7 +269,7 @@ Jobs are customizable, and you can select how frequently they should be complete
 
 SQL Server Agent is not available for SQL Server Express. For information about how to schedule backups for SQL Server Express, see the Microsoft Knowledge Base article [How to schedule and automate backups of SQL Server databases in SQL Server Express](https://support.microsoft.com/kb/2019698/en-us).
 
-<!--Microsoft SQL Server 2008 Express doesn't include SQL Server Agent. Refer to [Support Hot Topic on CustomerSource](https://mbs.microsoft.com/customersource) for more information about scheduling a backup.-->
+<!--Microsoft SQL Server 2008 Express doesn't include SQL Server Agent. Refer to [Support Hot Topic on CustomerSource](https://docs.microsoft.com/dynamics/s-e/) for more information about scheduling a backup.-->
 
 ## Enabling Delete PJournal job
 

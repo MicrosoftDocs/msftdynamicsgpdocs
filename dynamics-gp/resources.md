@@ -36,11 +36,11 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
   Includes Install, Upgrade and What's New Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
 - [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)
-- [Upgrade Hot Topic](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGPUpgrade)
+- [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
 - [US Taxes](/dynamics/s-e/gp/usgpye2018_396)
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
-<!--- [Management Reporter Install and Service Packs](https://mbs.microsoft.com/customersource/northamerica/MR/downloads/service-packs/MROverview)-->
+<!--- [Management Reporter Install and Service Packs](https://docs.microsoft.com/dynamics/s-e/)-->
 
 ## <a name="GP2018"></a>Microsoft Dynamics GP 2018 R2 and RTM
 
@@ -55,11 +55,11 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
   Includes Install, Upgrade and What's New Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2018](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
 - [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)  
-- [Upgrade Hot Topic](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade)
+- [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/tugp2018_391)
 - [US Taxes](/dynamics/s-e/gp/tugp2018_391)
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
-<!--- [Management Reporter Install and Service Packs](https://mbs.microsoft.com/customersource/northamerica/MR/downloads/service-packs/MROverview) -->
+<!--- [Management Reporter Install and Service Packs](https://docs.microsoft.com/dynamics/s-e/) -->
 
 ## Microsoft Dynamics GP 2016 R2 and RTM
 
@@ -76,11 +76,11 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
   Includes Install, Upgrade, and Azure Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_PatchReleases_370)
 - [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)  
-- [Upgrade Hot Topic](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2016Upgrade)
+- [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
 - [​​US Year-End](/dynamics/s-e/gp/usgpye2016_395)  
 - [US Taxes​](/dynamics/s-e/gp/TUGP2016_390)  
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2016_284)
-<!--- [Management Reporter Install and Service Packs](https://mbs.microsoft.com/customersource/northamerica/MR/downloads/service-packs/MROverview)-->
+<!--- [Management Reporter Install and Service Packs](https://docs.microsoft.com/dynamics/s-e/)-->
 
 ## Important Links
 
@@ -92,7 +92,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Professional Services Tools Library (PSTL) and other FREE Tools](/dynamics/s-e/gp/noam_pstl_delta)
 
-- [Microsoft Dynamics GP Performance white paper](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/white-papers/MDGP2010_WhitePaper_Performance)
+- [Microsoft Dynamics GP Performance white paper](https://docs.microsoft.com/dynamics/s-e/)
 
 - [Product Release Downloads for Microsoft SQL Server](https://businesscenter.mbs.microsoft.com/#contentdetail/SQLdownloadOverview)
 

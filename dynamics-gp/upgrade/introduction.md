@@ -39,7 +39,7 @@ A number of resources are available to help in addition to this document.
 
 <!--#### Knowledge Base
 
-[https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx](https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx)
+[https://docs.microsoft.com/dynamics/s-e/](https://docs.microsoft.com/dynamics/s-e/)
 
 Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.-->
 

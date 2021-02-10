@@ -334,7 +334,7 @@ After the upgrade or if the upgrade fails, the Update Company Tables window will
 
 If no icon appears between the check box and the name of the company, the company needs to be upgraded.
 
-If errors do occur, download the Failed\_Tables\_List.txt script from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade>, and save it to your hard disk. Copy all of the contents of the script and paste the contents them into Microsoft SQL Server Management Studio. Run the script and save the results to a file before you contact Dynamics GP for further assistance.
+If errors do occur, download the Failed\_Tables\_List.txt script from <https://docs.microsoft.com/dynamics/s-e/>, and save it to your hard disk. Copy all of the contents of the script and paste the contents them into Microsoft SQL Server Management Studio. Run the script and save the results to a file before you contact Dynamics GP for further assistance.
 
 You also should have the results of the DexSQL.log file ready, as well, if you decided to use the DexSQL.log file. (The DexSQL.log file is located in the same folder as the Dex.ini file.)
 
