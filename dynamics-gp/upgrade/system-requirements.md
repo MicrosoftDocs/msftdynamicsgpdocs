@@ -21,7 +21,7 @@ This chapter contains a list of prerequisites and system requirement changes for
 
 ## Releases supported by the upgrade
 
-You can upgrade to Dynamics GP from selected previous releases. To review whether or not you can upgrade your release, see [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGPUpgrade).
+You can upgrade to Dynamics GP from selected previous releases. To review whether or not you can upgrade your release, see [CustomerSource](https://docs.microsoft.com/dynamics/s-e/).
 
 If you are upgrading to Dynamics GP, you must install the latest update or hotfix for Dynamics GP before starting Dynamics GP Utilities. See the [Microsoft Dynamics GP Resource Directory](../resources.md) article for the latest update information.
 
@@ -49,7 +49,7 @@ Microsoft Office 2013, Microsoft Office 2016 and Microsoft Office 2019 are suppo
 
 ## Home page prerequisites
 
-To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with Dynamics GP. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP documentation resource Web site](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGPUpgrade) for the most current documentation.
+To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with Dynamics GP. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP documentation resource Web site](https://docs.microsoft.com/dynamics/s-e/) for the most current documentation.
 
 The following versions of SQL Server Reporting Services are supported.
 
@@ -169,7 +169,7 @@ You also should refer to the documentation provided by Citrix for more informati
 For the upgrade process, be sure that you have enough disk space before you begin. To determine the disk space required for the upgrade, you need to find the size of the largest table for all Dynamics GP databases. To determine disk space, use Microsoft SQL Server Management Studio for Microsoft SQL Server.
 
 > [!NOTE]
-> You can download an upgrade preparation script that will help you determine the disk space requirements from <https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGPUpgrade>. For more information about disk space, see [Core System Requirements for Microsoft Dynamics GP](../installation/system-requirements-core.md).  
+> You can download an upgrade preparation script that will help you determine the disk space requirements from <https://docs.microsoft.com/dynamics/s-e/>. For more information about disk space, see [Core System Requirements for Microsoft Dynamics GP](../installation/system-requirements-core.md).  
 
 To determine disk space for the upgrade process using Microsoft SQL Server Management Studio:
 

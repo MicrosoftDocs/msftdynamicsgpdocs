@@ -14,7 +14,7 @@ ms.reviewer:
 ---
 # Upgrade checklist
 
-You can upgrade to Dynamics GP 2018 and later from specific versions of Dynamics GP. For the supported upgrade paths, see [Upgrading to Microsoft Dynamics GP 2018](https://mbs.microsoft.com/customersource/northamerica/GP/support/hot-topics/HOT_TOPIC_MDGP2018Upgrade) (requires access to CustomerSource).  
+You can upgrade to Dynamics GP 2018 and later from specific versions of Dynamics GP. For the supported upgrade paths, see [Upgrading to Microsoft Dynamics GP 2018](https://docs.microsoft.com/dynamics/s-e/) (requires access to CustomerSource).  
 
 ## When to upgrade
 

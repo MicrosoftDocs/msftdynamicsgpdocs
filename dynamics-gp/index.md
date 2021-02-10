@@ -34,7 +34,7 @@ The page will be updated going forward as new links become available, while some
 
 ### Knowledge Base
 
-Available at [https://mbs.microsoft.com/customersource/](https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx), the knowledge base provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.  
+Available at [https://mbs.microsoft.com/customersource/](https://docs.microsoft.com/dynamics/s-e/), the knowledge base provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.  
 
 ### eSupport
 
