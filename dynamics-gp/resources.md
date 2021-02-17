@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 02/16/2021
+ms.date: 02/17/2021
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -84,7 +84,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 ## Important Links
 
-- [Microsoft Dynamics GP Lifecycle information.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/10/03/microsoft-dynamics-gp-2018-and-year-end-update-lifecycle-and-upgrade-services)
+- [Microsoft Dynamics GP Lifecycle information.](https://docs.microsoft.com/en-us/dynamics-gp/terms/lifecycle)
 
 - [Microsoft Dynamics GP GDPR white paper](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5068db5f-cc6b-45d9-9916-fb8dcd801d03&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
