@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/25/2021
+ms.date: 02/16/2021
 ---
 # U.S. 2021 Payroll Tax Update
 
@@ -291,6 +291,7 @@ HB2119 requires employers to withhold income tax at a rate of 8 percent of emplo
 
 Continue withholding at the 8 percent rate until the employee submits a withholding statement and exemption certificate.
 
+(Changes made to Oregon on 2/1/2021)
 
 Special Tax Type rates for MS3 Filing Status:
 
@@ -678,18 +679,8 @@ The Personal Exemption amount is \$4,300 for Filing Status MAR and SINGLE
 ***Per the state of North Dakota, there is no HOH filing status with exemptions.  If an employee on the W4 chooses 
 Filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.***
 
-Withholding rates for taxpayers filing as *MAR*
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 12,750           | 0              | 0            | 0                  |
-| 12,750      | 46,600           | 0              | 1.10%        | 12,750             |
-| 46,600      | 94,525           | 372.35         | 2.04%        | 46,600             |
-| 94,525      | 137,325          | 1,350.02       | 2.27%        | 94,525             |
-| 137,325     | 235,250          | 2,321.58       | 2.64%        | 137,325            |
-| 235,250     | And over         | 4,906.80       | 2.90%        | 235,250            |
-
-Withholding rates for taxpayers filing as *MARHR*
+Withholding rates for taxpayers filing as *MARHR* and *MAR*
+(MAR wage brackets changed 2/19/2021)
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
