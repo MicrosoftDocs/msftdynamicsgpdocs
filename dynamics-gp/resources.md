@@ -14,13 +14,13 @@ ms.date: 02/17/2021
 
 This page offers easy access to Microsoft Dynamics GP resources. This page is intended to provide a consolidated view of relevant documentation, videos, solutions to known issues, links to related resources, as well as community sites for implementing Microsoft Dynamics GP. These resources compliment the content here on the Docs.microsoft.com site.
 
-## Microsoft Blogs that you should follow
+## Microsoft sites that you should follow
 
 - [Product Management & Marketing Blog](https://community.dynamics.com/gp/b/gpteamblog)
 - [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp)
 <!-- [Dynamics GP Developer Blog](https://msdn.microsoft.com/library/aa496082.aspx)
 - [Dynamics Financial Reporting - Management Reporter](https://blogs.msdn.com/b/dynamics_financial_reporting/)-->
-- [Microsoft Dynamics GP Product Idea](https://experience.dynamics.com/ideas/categories/?forum=771cc5ac-c117-e811-8105-3863bb2e0320&forumName=Dynamics%20GP)
+- [Microsoft Dynamics GP Product Ideas](https://experience.dynamics.com/ideas/categories/?forum=771cc5ac-c117-e811-8105-3863bb2e0320&forumName=Dynamics%20GP)
 - [Microsoft Dynamics GP Docs (Documentation)](index.md)
 
 ## Microsoft Dynamics GP
@@ -84,7 +84,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 ## Important Links
 
-- [Microsoft Dynamics GP Lifecycle information.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/10/03/microsoft-dynamics-gp-2018-and-year-end-update-lifecycle-and-upgrade-services)
+- [Software Lifecycle Policy for Microsoft Dynamics GP](terms/lifecycle.md)  
 
 - [Microsoft Dynamics GP GDPR white paper](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5068db5f-cc6b-45d9-9916-fb8dcd801d03&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
