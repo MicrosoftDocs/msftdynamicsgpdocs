@@ -8,19 +8,22 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 02/16/2021
+ms.date: 02/17/2021
 ---
 # Microsoft Dynamics GP Resource Directory
 
 This page offers easy access to Microsoft Dynamics GP resources. This page is intended to provide a consolidated view of relevant documentation, videos, solutions to known issues, links to related resources, as well as community sites for implementing Microsoft Dynamics GP. These resources compliment the content here on the Docs.microsoft.com site.
 
-## Microsoft Blogs that you should follow
+## Microsoft sites that you should follow
 
 - [Product Management & Marketing Blog](https://community.dynamics.com/gp/b/gpteamblog)
+
 - [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp)
 <!-- [Dynamics GP Developer Blog](https://msdn.microsoft.com/library/aa496082.aspx)
 - [Dynamics Financial Reporting - Management Reporter](https://blogs.msdn.com/b/dynamics_financial_reporting/)-->
-- [Microsoft Dynamics GP Product Idea](https://experience.dynamics.com/ideas/categories/?forum=771cc5ac-c117-e811-8105-3863bb2e0320&forumName=Dynamics%20GP)
+
+- [Microsoft Dynamics GP Product Ideas](https://experience.dynamics.com/ideas/categories/?forum=771cc5ac-c117-e811-8105-3863bb2e0320&forumName=Dynamics%20GP)
+
 - [Microsoft Dynamics GP Docs (Documentation)](index.md)
 
 ## Microsoft Dynamics GP
@@ -56,7 +59,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2018](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
 - [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)  
 - [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
-- [US Year-End](/dynamics/s-e/gp/tugp2018_391)
+- [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
 - [US Taxes](/dynamics/s-e/gp/tugp2018_391)
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
 - [Management Reporter Install and Service Packs](/dynamics/s-e/mr/mroverview_435)
@@ -78,13 +81,13 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)  
 - [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2016_395)  
-- [US Taxes](/dynamics/s-e/gp/tugp2018_391) 
+- [US Taxes](/dynamics/s-e/gp/tugp2016_390)  
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2016_284)
 - [Management Reporter Install and Service Packs](/dynamics/s-e/mr/mroverview_435)
 
 ## Important Links
 
-- [Microsoft Dynamics GP Lifecycle information.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/10/03/microsoft-dynamics-gp-2018-and-year-end-update-lifecycle-and-upgrade-services)
+- [Software Lifecycle Policy for Microsoft Dynamics GP](terms/lifecycle.md)  
 
 - [Microsoft Dynamics GP GDPR white paper](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5068db5f-cc6b-45d9-9916-fb8dcd801d03&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
