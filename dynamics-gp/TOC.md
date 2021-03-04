@@ -118,6 +118,7 @@
 ## Discreet Manufacturing
 ### [Manufacturing Setup - Part 1: Manufacturing setup](distribution/manufacturing-setup-part-1.md)
 ### [Manufacturing Setup - Part 2: User setup](distribution/manufacturing-setup-part-2.md)
+### [Manufacturing Setup - Check data and correct errors](distribution/manufacturing-setup-checkdata.md)
 ### [Accounts Used for Manufacturing in Dynamics GP](distribution/manufacturing-accounts-used.md)
 ### [Glossary of Terms in Manufacturing](distribution/glossary-manufacturing.md)
 
