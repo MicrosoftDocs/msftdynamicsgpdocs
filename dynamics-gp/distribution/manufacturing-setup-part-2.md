@@ -553,5 +553,5 @@ If you're using MRP, each user with purchase order entry responsibilities will n
 
 [Manufacturing Setup - Part 1: Manufacturing setup](manufacturing-setup-part-1.md)  
 [Manufacturing Setup - Check data and correct errors](manufacturing-setup-checkdata.md)  
-[Accounts Used for Manufacturing in Dynamics GP](manufacturing-accounts-used.md) 
+[Accounts Used for Manufacturing in Dynamics GP](manufacturing-accounts-used.md)  
 [Glossary of Terms in Manufacturing](glossary-manufacturing.md)  
