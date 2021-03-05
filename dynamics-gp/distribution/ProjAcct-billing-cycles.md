@@ -118,7 +118,7 @@ You can specify information to include for cost transactions on an invoice forma
 
 ## Options for summarizing cost transaction information on invoice formats
 
-When you specify information to include for cost transactions on an invoice format, you can select how the information should be summarized, as outlined in the following table. 
+When you specify information to include for cost transactions on an invoice format, you can select how the information should be summarized, as outlined in the following table.  
 
 | Option | Description |
 |--|--|
@@ -136,7 +136,7 @@ When you specify information to include for cost transactions on an invoice form
 | Trx    Detail | Amounts will not be summarized. Information about every line item entered for every cost transaction will be displayed. |
 | Trx  Summary | All line items entered for the cost transaction type will be summarized on a single line. |
 
-## Options for summarizing cost transaction information on invoice formats
+You can summarize cost transaction information on invoice formats in two ways:
 
 1. Enter names for fee types on an invoice format
 
@@ -198,39 +198,36 @@ It also includes information about how to grant all users permission to various 
 You can configure general settings for billing customers, such as how to calculate taxes on billing invoices.
 
 1. Open the Billing Setup window.  Tools > Setup > Project > Billing
-2. In the Billing field enter the next document number to use for billing invoices and billing returns. In the Revenue Recognition field, enter the next document number to use for revenue recognition transactions. 
+2. In the Billing field enter the next document number to use for billing invoices and billing returns. In the Revenue Recognition field, enter the next document number to use for revenue recognition transactions.  
 3. Select Recalculate Billing Rate during write up in TM to adjust the billing rate or markup percentage for a billing invoice line item if you enter a write up amount or percentage for the line item. You can enter write up amounts and percentages for line items that are for Time and Materials projects. If you don't select this option, the quantity for the line item will be adjusted if you enter a write up amount or percentage.
 4. Select Recalculate Billing Rate during write down in TM to adjust the billing rate or markup percentage for a billing invoice line item if you enter a write down amount or percentage for the line item. You can enter write down amounts and percentages for line items that are for Time and Materials projects. If you don't select this option, the quantity for the line item will be adjusted if you enter a write down amount or percentage.
-5. In the Cycle Billing and RR Log file field, enter the path name where a log file will be saved after you complete a billing or revenue recognition cycle. The log file will list any errors that were encountered while generating billing invoices or revenue recognition transactions. 
-6. In the Discount From field, select whether discounts for billing amounts will be based on discount amounts entered for the customer, contract, or project record. 
+5. In the Cycle Billing and RR Log file field, enter the path name where a log file will be saved after you complete a billing or revenue recognition cycle. The log file will list any errors that were encountered while generating billing invoices or revenue recognition transactions.  
+6. In the Discount From field, select whether discounts for billing amounts will be based on discount amounts entered for the customer, contract, or project record.  
 7. Select the default cutoff date to use for billing invoices.
 
     For example, if you enter a billing invoice and the user date is 9/22/2010, which is a Wednesday, then the following dates will be used.
 
-    Document  Date   
-    The date 09/22/2021 will be used.
+    |Date format  |Description  |
+    |---------|---------|
+    |Document  Date     |The date 09/22/2021 will be used.         |
+    |Beginning of week | The date 09/20/2021, which is the Monday for the week that the user date is in, will be used.|
+    |Beginning of month | The date 09/01/2021 will be used.|
+    |End of month | The date 09/30/2021 will be used.|
 
-    Beginning of week 
-    The date 09/20/2021, which is the Monday for the week that the user date is in, will be used.
-
-    Beginning of month 
-    The date 09/01/2021 will be used.
-
-    End of month 
-    The date 09/30/2021 will be used.
-
-    The cutoff date that you select in this window does not affect the cutoff date that you select to use with billing cycles. 
+    The cutoff date that you select in this window does not affect the cutoff date that you select to use with billing cycles.  
 
 8. Select Calculate retainer commission to calculate commissions on Retainer fees for salespeople. 
 9. Select Retainer fee taxable to calculate taxes on Retainer fees.
 10. Select Include fully billed fees to include on billing invoices information about fees that already have been billed.
 11. Indicate whether to specify individual tax options for non-inventoried items, freight, and miscellaneous charges on billing invoices and billing returns or to use a single tax schedule for all charges.
 
-    Advanced    
-    Specify whether non-inventoried items, freight, and miscellaneous charges are taxable, non-taxable, or based on the tax schedule for the customer record. If you select Taxable, select a tax schedule.
+    * Advanced  
 
-    Single Schedule 
-    Select a tax schedule.
+        Specify whether non-inventoried items, freight, and miscellaneous charges are taxable, non-taxable, or based on the tax schedule for the customer record. If you select Taxable, select a tax schedule.
+
+    * Single Schedule  
+
+        Select a tax schedule.
 
 12. In the Update Periodics Using list, select whether to use the document date or the posting date on billing invoices and billing returns to update information in the Project Periodic Budget window.
 13. Select the Apply Project First to option to specify whether customer payments will be applied first to amounts for cost categories in project budgets or to amounts for fees for projects.
