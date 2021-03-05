@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 08/08/2019
+ms.date: 03/04/2021
 ---
 
 # Project Accounting Cost Management
@@ -24,7 +24,7 @@ You can purchase items for projects and receive them using Purchase Order Proces
 Projects must be assigned to a contract. You can create multiple contracts for a customer, and a contract can include one or more projects.
 This introduction is divided into the following sections:
 
-- *What’s in this manual*
+- *What's in this manual*
 
 - *Symbols and conventions*
 
@@ -34,13 +34,13 @@ This introduction is divided into the following sections:
 
 This manual is designed to give you an understanding of how to use the cost management features of Project Accounting, and how it integrates with the Microsoft Dynamics GP system.
 
-To make best use of Project Accounting, you should be familiar with systemwide features described in the System User’s Guide, the System Setup Guide, and the System Administrator’s Guide. 
+To make best use of Project Accounting, you should be familiar with systemwide features described in the System User's Guide, the System Setup Guide, and the System Administrator's Guide. 
 
 You might also need to be familiar with features described in General Ledger, Bank Reconciliation, Multicurrency Management, Purchase Order Processing, Purchase Order Enhancements, Payables Management, Receivables Management, Inventory Control, United States Payroll, Canadian Payroll, or Report Writer.
 
-Some features described in the documentation are optional and can be purchased through your Microsoft® Business Solutions partner.
+Some features described in the documentation are optional and can be purchased through your Microsoft&reg; Business Solutions partner.
 
-To view information about the release of Microsoft Dynamics GP that you’re using and which modules or features you are registered to use, choose **Help
+To view information about the release of Microsoft Dynamics GP that you're using and which modules or features you are registered to use, choose **Help
 
 About Microsoft Dynamics GP.**
 
@@ -62,13 +62,13 @@ This part of the documentation includes information for project managers about s
 
 It also includes information about how to create unit of measure schedules and about default unit costs and how overhead is calculated.
 
-- *Chapter 1, “Unit quantities, costs, and overhead,”* includes information about how to create unit of measure schedules. It also includes information about default unit costs and how overhead is calculated.
+- *Chapter 1, "Unit quantities, costs, and overhead,"* includes information about how to create unit of measure schedules. It also includes information about default unit costs and how overhead is calculated.
 
-- *Chapter 2, “Employees and vendors,”* includes information about how to set up employee and vendor records for tracking project costs and billing customers.
+- *Chapter 2, "Employees and vendors,"* includes information about how to set up employee and vendor records for tracking project costs and billing customers.
 
-- *Chapter 3, “Equipment and miscellaneous records,”* includes information about how to set up equipment and miscellaneous records for tracking project costs and billing customers.
+- *Chapter 3, "Equipment and miscellaneous records,"* includes information about how to set up equipment and miscellaneous records for tracking project costs and billing customers.
 
-- *Chapter 4, “Rate tables,”* includes information about how to create employee, position, and equipment rate tables to calculate costs, overhead, and profit for projects.
+- *Chapter 4, "Rate tables,"* includes information about how to create employee, position, and equipment rate tables to calculate costs, overhead, and profit for projects.
 
 ### Chapter 1: Unit quantities, costs, and overhead
 
@@ -95,7 +95,7 @@ You can set up a unit of measure schedule to define the quantities that your bus
 
 2. You can click **Copy** to select a unit of measure schedule to copy information from.
 
-3. Select the number of decimal places for the quantities that you’re entering in the unit of measure schedule.
+3. Select the number of decimal places for the quantities that you're entering in the unit of measure schedule.
 
 4. Enter the name for the base unit of measure. It is the smallest quantity in the schedule and typically has a quantity of 1. For example, **EACH** might be used as the base unit of measure. The name that you enter for the base unit of measure will be displayed on the first line of the scrolling window. 
 
@@ -115,7 +115,7 @@ Total cost = (Quantity x Unit Cost) + Overhead
 
 When you set up cost transactions for tracking project costs, you can select the default unit cost to use for cost transactions.
 
-**None** Don’t use a default unit cost for the cost transaction.
+**None** Don't use a default unit cost for the cost transaction.
 
 **Employee** Use the unit cost for the employee record. 
 
@@ -174,9 +174,9 @@ The following topics are discussed:
 
 You can set up an employee class for tracking project costs and billing customers. If you assign an employee to the class, the employee record will inherit information from the class. See *Set up an employee record for tracking project costs and billing customers*.
 
-1. If you’re using U.S. Payroll, open the PA Employee Class Options window. **Microsoft Dynamics GP menu \> Tools \> Setup \> Payroll \> Employee Class \> select Class ID \> Project button**
+1. If you're using U.S. Payroll, open the PA Employee Class Options window. **Microsoft Dynamics GP menu \> Tools \> Setup \> Payroll \> Employee Class \> select Class ID \> Project button**
 
-If you’re using Canadian Payroll, open the PA Employee Class Options - Canada window.
+If you're using Canadian Payroll, open the PA Employee Class Options - Canada window.
 
 **Cards \> Payroll - Canada \> Employee Class \> Project button**
 
@@ -190,7 +190,7 @@ If you’re using Canadian Payroll, open the PA Employee Class Options - Canada 
 
 5. Enter a unit of measure and the corresponding unit cost.
 
-1. In the **Amount per Unit** field, enter a flat overhead amount for each hour that an employee in the class works on a project. In the **Percentage of Actual Cost** field, enter a percentage to be used with the employee’s pay rate to calculate overhead. 
+1. In the **Amount per Unit** field, enter a flat overhead amount for each hour that an employee in the class works on a project. In the **Percentage of Actual Cost** field, enter a percentage to be used with the employee's pay rate to calculate overhead. 
 
 2. Select profit types for the employee class for **Time and Materials**, **Cost Plus**, and **Fixed Price** projects and enter amounts or percentages in the corresponding fields. See *Profit types for calculating billing amounts* for more information.
 
@@ -202,9 +202,9 @@ If you’re using Canadian Payroll, open the PA Employee Class Options - Canada 
 
 You can set up an employee record for tracking project costs and billing customers.
 
-If you’re using U.S. Payroll, open the PA Employee Options window. **Cards \> Payroll \> Employee \> select an Employee ID \> Project button**
+If you're using U.S. Payroll, open the PA Employee Options window. **Cards \> Payroll \> Employee \> select an Employee ID \> Project button**
 
-If you’re using Canadian Payroll, open the PA Employee Options - Canada window.
+If you're using Canadian Payroll, open the PA Employee Options - Canada window.
 
 Cards \> Payroll - Canada \> Employee \> Project button
 
@@ -234,7 +234,7 @@ You must select **Use Pay Codes for Unit Cost** in the Project Setup window to u
 
 7. Select whether the employee will be listed as project manager or business manager on reports.
 
-8. In the **Amount per Unit** field, enter a flat overhead amount for each hour that the employee works on a project. In the **Percentage of Actual Cost** field, enter a percentage to be used with the employee’s pay rate to calculate overhead. See *Overhead calculation methods* for more information.
+8. In the **Amount per Unit** field, enter a flat overhead amount for each hour that the employee works on a project. In the **Percentage of Actual Cost** field, enter a percentage to be used with the employee's pay rate to calculate overhead. See *Overhead calculation methods* for more information.
 
 9. Select profit types for the employee record for **Time and Materials**, **Cost Plus**, and **Fixed Price** projects and enter amounts or percentages in the corresponding fields. See *Profit types for calculating billing amounts* for more information.
 
@@ -370,7 +370,7 @@ You can set up an equipment record for tracking project costs and billing
 customers.
 
 > [!NOTE]
-> If you don’t have permission to enter equipment records, you can use the Equipment Maintenance Inquiry window (Inquiry \> Project \> Maintenance \> Equipment) to
+> If you don't have permission to enter equipment records, you can use the Equipment Maintenance Inquiry window (Inquiry \> Project \> Maintenance \> Equipment) to
 view them.
 
 1. Open the Equipment Maintenance window. **Cards \> Project \> Equipment**
@@ -432,7 +432,7 @@ You can set up a miscellaneous record for tracking project costs and billing
 customers.
 
 > [!NOTE]
-> If you don’t have permission to enter miscellaneous records, you can use the Miscellaneous Maintenance Inquiry window (Inquiry \> Project \>
+> If you don't have permission to enter miscellaneous records, you can use the Miscellaneous Maintenance Inquiry window (Inquiry \> Project \>
 Maintenance \> Miscellaneous) to view them.
 
 1. Open the Miscellaneous Maintenance window. **Cards \> Project \> Miscellaneous**
@@ -519,7 +519,7 @@ PACM 10.JPEG
 
 - If the employee is paid hourly, you can modify the hourly rate.
 
-- You can modify the SUTA state and workers’ compensation code for the employee.
+- You can modify the SUTA state and workers' compensation code for the employee.
 
 > [!NOTE]
 > To update pay rates in an existing employee rate table based on pay codes,
@@ -527,7 +527,7 @@ click the Rate Table ID wizard button. See [Update pay rates in an employee
 rate table based on pay codeS](#update-pay-rates-in-an-employee-rate-table-based-on-pay-codes) for more information.
 
 See the U.S. Payroll or Canadian Payroll documentation (**Help \> Printable
-Manuals**) for more information about pay codes and SUTA state and workers’
+Manuals**) for more information about pay codes and SUTA state and workers'
 compensation codes.
 
 1. Select the profit type for the employee.
@@ -684,12 +684,12 @@ This part of the documentation includes information for project managers
 about how to create contract and project templates, and how to apply those
 templates to contract and project records.
 
-- *Chapter 5, “Contract templates,”* includes information about how to create
+- *Chapter 5, "Contract templates,"* includes information about how to create
     contract templates and how to include project templates in contract
     templates. It also includes information about applying contract templates to
     contracts.
 
-- *Chapter 6, “Project templates,”* includes information for project managers
+- *Chapter 6, "Project templates,"* includes information for project managers
     about how to create project templates and apply those templates to projects.
 
 ### Chapter 5: Contract templates
@@ -769,7 +769,7 @@ settings for a contract* on page 64 for more information.
 
 You can apply a contract template to a contract.
 
-If you’ve specified a billing currency other than the functional currency
+If you've specified a billing currency other than the functional currency
 for a contract record, and you copy a template to that contract record, only
 cost categories with **Billing Rate** or **None** profit types in project
 budgets in the template will be copied. Only fees that use the **Fee
@@ -914,7 +914,7 @@ billing settings for a project* on page 71 for more information.
 You can create a project template based on a project record and include the
 project template in a contract template.
 
-If you create a project template based on a project record that you’ve
+If you create a project template based on a project record that you've
 specified a billing currency ID for, the billing currency ID will not be
 copied to the template. Project templates use the currency ID that you
 specified in the **Functional Currency** field in the Multicurrency Setup
@@ -952,13 +952,13 @@ A screenshot of a cell phone Description automatically generated
 
 You can select a project template to apply to a project record.
 
-If you’re using a billing currency other than the functional currency for
-the project record that you’re applying a template to, only cost categories
+If you're using a billing currency other than the functional currency for
+the project record that you're applying a template to, only cost categories
 with **Billing Rate** or **None** profit types in the template will be
 copied. Only fees that use the **Fee Amount** fee calculation method in the
 template will be copied.
 
-Forecast budget amounts in the project template that you’re applying to the
+Forecast budget amounts in the project template that you're applying to the
 project record will be converted to the billing currency specified for the
 project record, using the exchange rate that you specified for the billing
 currency for the project record. If the project record status is
@@ -998,39 +998,39 @@ profits. The documentation also includes information about how to enter
 contract and project records, and how to assign employees, equipment, cost
 categories, and fees to projects.
 
-- *Chapter 7, “General cost management setup,”* includes information about how
+- *Chapter 7, "General cost management setup,"* includes information about how
     to configure general settings for managing project costs. It also includes
     information about contract, project, and cost category statuses and about
     the various lists of records and transactions that you can complete common
     tasks from.
 
-- *Chapter 8, “Profit types,”* includes information about how billing amounts
+- *Chapter 8, "Profit types,"* includes information about how billing amounts
     and profit are calculated based on profit types.
 
-- *Chapter 9, “Cost categories,”* includes information about how to set up
+- *Chapter 9, "Cost categories,"* includes information about how to set up
     cost categories that you can include in project budgets to track expenses.
 
-- *Chapter 10, “Benefit Allocation,”* includes information about how you can
+- *Chapter 10, "Benefit Allocation,"* includes information about how you can
     allocate employee benefits to specific projects.
 
-- *Chapter 11, “Fees,”* includes information about fees, including
+- *Chapter 11, "Fees,"* includes information about fees, including
     **Project**, **Retainer**, **Retentions**, and **Service** fees, and how to
     create fee records for them.
 
-- *Chapter 12, “Contracts,”* includes information about how to enter contract
+- *Chapter 12, "Contracts,"* includes information about how to enter contract
     records and how to create third-party customer lists for billing
 
-- *Chapter 13, “Projects,”* includes information about how to enter project
+- *Chapter 13, "Projects,"* includes information about how to enter project
     records and how to copy information between projects.
 
-- *Chapter 14, “Project resources,”* includes information about how to assign
+- *Chapter 14, "Project resources,"* includes information about how to assign
     equipment and employees to projects.
 
-- *Chapter 15, “Project budgets,”* includes information about how to assign
+- *Chapter 15, "Project budgets,"* includes information about how to assign
     cost categories to project budgets and how to enter baseline, forecast, and
     actual project budget amounts for cost categories.
 
-- *Chapter 16, “Project fees,”* includes information about how to assign fees
+- *Chapter 16, "Project fees,"* includes information about how to assign fees
     to projects, how to modify the fee frequency, fee calculation method, and
     other settings for fees in projects. You also can enter baseline, forecast,
     and actual amounts for fees in a project budget. You also can modify a fee
@@ -1066,7 +1066,7 @@ transactions in the total cost amounts for the projects that they are
 entered for, and whether to allow users to modify the default change order
 number when entering change orders. You can specify whether to allow users
 to close a **Time and Materials** project, even though the checklist of
-project closing requirements isn’t complete.
+project closing requirements isn't complete.
 
 1. Open the Project Setup window.
 
@@ -1097,12 +1097,12 @@ customers on page 120 for more information.*
 
 2. Select **Allow Override Change Order Number** to allow users to modify the
     default change order number when entering change orders. You also can
-    require a password to limit user access. See *Chapter 18, “Project change
-    control,”* for more information.
+    require a password to limit user access. See *Chapter 18, "Project change
+    control,"* for more information.
 
 3. Select **Allow Proj Closing checklist override for TM proj** to allow users
     to close a **Time and Materials** project, even though the checklist of
-    project closing requirements isn’t complete. You also can require a password
+    project closing requirements isn't complete. You also can require a password
     to limit user access. See *Close projects* on page 114 and *Project closing
     checklist* on page 115 for more information.
 
@@ -1147,7 +1147,7 @@ has an **Estimate** status, you can assign new cost categories to project
 budgets and enter baseline budget amounts. You also can delete cost
 categories from project budgets.
 
-When you’re ready to enter cost transactions, bill customers, and recognize
+When you're ready to enter cost transactions, bill customers, and recognize
 revenue, change the status to **Open**.
 
 Because the **Estimate** status prevents users from entering cost transactions,
@@ -1160,15 +1160,15 @@ even after changing the status of the contract to **Closed**.
 
 ##### Open
 
-You typically select the **Open** status after you’ve entered baseline amounts
-for a project budget and you’re ready to enter cost transactions for the
+You typically select the **Open** status after you've entered baseline amounts
+for a project budget and you're ready to enter cost transactions for the
 project.
 
 When you change the status of a contract from **Estimate** to **Open**, you will
 be asked whether to change the status of all projects in the contract to
 **Open**.
 
-If you select the **Open** status, you can’t modify baseline budget amounts or
+If you select the **Open** status, you can't modify baseline budget amounts or
 delete cost categories from project budgets. You can modify forecast budget
 amounts and, as you post cost transactions, actual amounts will be updated. You
 can enter new projects for contracts that are in the **Open** status. You also
@@ -1271,7 +1271,7 @@ The following table lists windows with user-defined fields.
 #### Lists of records and transactions
 
 You can use lists of records and transactions in the navigation pane to
-complete common tasks. See the System User’s Guide (**Help \> Printable
+complete common tasks. See the System User's Guide (**Help \> Printable
 Manuals**) for more information.
 
 ##### Project Accounting lists
@@ -1448,7 +1448,7 @@ PACM 26.JPEG
 You can create a cost category record that you can assign to project budgets
 to track project costs.
 
-*If you don’t have permission to create cost categories, you can use the
+*If you don't have permission to create cost categories, you can use the
 Cost Category Inquiry window (Inquiry \> Project \> Maintenance \> Cost
 Category) to view them.*
 
@@ -1650,7 +1650,7 @@ about fees, including **Project**, **Retainer**, **Retentions**, and
 **Service** fees, and how to create fee records for them.
 
 The types of fees that you can include in a project depends on whether
-you’re using a **Cost Plus**, **Fixed Price**, or **Time and Materials**
+you're using a **Cost Plus**, **Fixed Price**, or **Time and Materials**
 project. Various fee frequencies and fee calculation methods can be used for
 fees, depending on the fee type.
 
@@ -1679,7 +1679,7 @@ amounts are held on account and can be applied to billing amounts. See
 *Enter payments, taxes, and other charges for a billing invoice* on page 36
 in the Project Accounting Billing Guide for more information.
 
-**Retentions** A percentage of total baseline project costs that isn’t
+**Retentions** A percentage of total baseline project costs that isn't
 billed until the project status is **Completed**. This fee is for **Cost
 Plus** and **Fixed Price** projects only. You also can hold a portion of a
 **Project** fee in retention.
@@ -1740,7 +1740,7 @@ A screenshot of a cell phone Description automatically generated
         **Frequency** list. Select the transaction types to include in the
         calculation of total project revenue.
 
-• If the fee is to be a percentage of total baseline project revenue that
+* If the fee is to be a percentage of total baseline project revenue that
 you can bill during each billing cycle, first select **% of Baseline
 Revenue** and enter a percentage, then select **At Project Completion** in
 the **Frequency** list. Select the transaction types to include in the
@@ -1858,8 +1858,8 @@ are calculated for a specific activity. You can assign cost categories to a
 project budget and use the budget to estimate and track project performance.
 You also can assign fees to a project.
 
-A contract includes one or more projects that you’re carrying out for a
-customer. You can create multiple contracts for a customer. You can’t create
+A contract includes one or more projects that you're carrying out for a
+customer. You can create multiple contracts for a customer. You can't create
 a contract for multiple customers, but you can create a third-party customer
 list for billing. See *Create a third-party customer list for billing* on
 page 65 for more information.
@@ -1903,7 +1903,7 @@ You can create a contract to group and track various projects for a
 customer. See *About contracts, projects, and cost categories* on page 61
 for more information.
 
-If you’re using Multicurrency Management, you can specify the billing
+If you're using Multicurrency Management, you can specify the billing
 currency to use when billing customers for project costs for the contract.
 You can use billing currency IDs with **Time and Materials** projects that
 use the **When Performed** or **When Billed** accounting methods and that
@@ -1915,7 +1915,7 @@ in project budgets.
 You can apply a template to the contract. See *Apply a contract template to
 a contract* on page 32 for more information.
 
-*If you don’t have permission to enter contracts, you can use the PA
+*If you don't have permission to enter contracts, you can use the PA
 Contract Inquiry window (Inquiry \> Project \> Maintenance \> Contract) to
 view them.*
 
@@ -1974,7 +1974,7 @@ recognizing revenue for projects in the contract.*
 
 The default currency ID is the currency ID that you specified for the
 customer the contract is for using the Customer Maintenance Options window
-(**Cards \> Sales \> Customer \> Options button**). If you haven’t specified
+(**Cards \> Sales \> Customer \> Options button**). If you haven't specified
 a currency ID for the customer, the default currency will be the functional
 currency.
 
@@ -1982,7 +1982,7 @@ You can choose commands in the **View \> Currency** menu to enter or view
 amounts using the functional or originating currency if Multicurrency
 Management is registered.
 
-*After you’ve entered a project for a contract, you can’t change the billing
+*After you've entered a project for a contract, you can't change the billing
 currency ID for the contract.*
 
 1. You can enter a project ID and name and click the **Project ID** expansion
@@ -2020,7 +2020,7 @@ currency.
 
 You can specify billing settings for a contract.
 
-*If you don’t have permission to specify billing settings for a contract,
+*If you don't have permission to specify billing settings for a contract,
 you can use the Contract Settings-Inquiry window (Inquiry \> Project \>
 Maintenance \> Contract \> Contract Settings button) to view the billing
 settings.*
@@ -2051,7 +2051,7 @@ Select **Restrict to Customer List** to indicate that only customers that
 are included on a third-party customer list for the contract can be billed
 for projects in the contract.
 
-1. If you’re giving the customer a discount for the contract, enter the
+1. If you're giving the customer a discount for the contract, enter the
     percentage in the **Discount Percent** field.
 
 2. In the **Tax Address ID** field select the customer address that billing
@@ -2170,14 +2170,14 @@ project types for specific projects.
 
 The customer pays for actual project costs plus a fee. Each billing invoice
 is for a percentage of the final total that is calculated using forecast
-budget amounts. As costs rise for the project, your company’s profit remains
+budget amounts. As costs rise for the project, your company's profit remains
 the same.
 
 ##### Fixed Price
 
 The customer pays a predetermined amount for the entire project. Each
 billing invoice is for a percentage of the predetermined total billing
-amount. As costs rise for the project, your company’s profit decreases.
+amount. As costs rise for the project, your company's profit decreases.
 
 ##### Time and Materials
 
@@ -2223,7 +2223,7 @@ costs.
 You can apply a template to a project. See *Apply a template to a project*
 on page 38 for more information.
 
-*If you don’t have permission to enter project records, you can use the Project
+*If you don't have permission to enter project records, you can use the Project
 Inquiry window (Inquiry \> Project \> Maintenance \> Project) to view them.*
 
 1. Open the Project Maintenance window. **Cards \> Project \> Project**
@@ -2280,16 +2280,16 @@ A screenshot of a computer Description automatically generated
 14. You can select **Closed to Project Costs** or **Closed to Billings** to
     prevent the accrual of costs or to prevent billing for the project.
 
-15. If you’re using Project Accounting with U.S. Payroll, assign a SUTA code for
+15. If you're using Project Accounting with U.S. Payroll, assign a SUTA code for
     the project. See the U.S. Payroll documentation (**Help \> Printable
     Manuals**) for more information.
 
-16. If you’re using Project Accounting with U.S. Payroll or Canadian Payroll,
-    assign a workers’ compensation code for the project. See the U.S. Payroll or
+16. If you're using Project Accounting with U.S. Payroll or Canadian Payroll,
+    assign a workers' compensation code for the project. See the U.S. Payroll or
     Canadian Payroll documentation (**Help \> Printable Manuals**) for more
     information.
 
-17. If you’re using Multicurrency Management, the **Billing Currency ID** field
+17. If you're using Multicurrency Management, the **Billing Currency ID** field
     will display the currency ID that you specified using the Contract
     Maintenance window (**Cards \> Project \> Contract**) for the contract that
     the project is for.
@@ -2316,7 +2316,7 @@ currency for the project.
     **Cost% Compl**, **Committed Cost**, and **Profit** fields, based on
     **Posted** or **Unposted** (saved) transactions.
 
-If you’re using Multicurrency Management, you can choose commands in the
+If you're using Multicurrency Management, you can choose commands in the
 **View \> Currency** menu to enter or view amounts using the functional or
 originating currency.
 
@@ -2362,7 +2362,7 @@ currency.
 
 You can specify billing settings for a project.
 
-*If you don’t have permission to specify billing settings for a project, you
+*If you don't have permission to specify billing settings for a project, you
 can use the Project Billing Settings Inquiry window (Inquiry \> Project \>
 Maintenance \> Project \> Billing Settings button) to view billing
 settings.*
@@ -2395,20 +2395,20 @@ Select **Accept Replacements** to allow users to update the rate table for
 the project after the rate table record has been updated. See *Replace a
 rate table used with projects* on page 72 for more information.
 
-See *Chapter 4, “Rate tables,”* for more information.
+See *Chapter 4, "Rate tables,"* for more information.
 
-*If you don’t assign a rate table to a project, you can’t assign a rate
+*If you don't assign a rate table to a project, you can't assign a rate
 table to a cost category in the project budget. See Assign a rate table to a
 cost category in a project budget on page 85 for more information.*
 
-1. If you’re giving the customer a discount for the project, enter the
+1. If you're giving the customer a discount for the project, enter the
     percentage in the **Discount Percent** field.
 
 2. In the **Tax Address ID** field select the customer address that billing
     invoices for the project will be sent to.
 
 3. Select the default billing format to use for billing the customer for the
-    project. See *Chapter 2, “Invoice and billing formats,”* in the Project
+    project. See *Chapter 2, "Invoice and billing formats,"* in the Project
     Accounting Billing Guide for more information.
 
 4. Select the default billing note for the project and for cost transactions
@@ -2458,7 +2458,7 @@ For an equipment rate table, choose **Cards \> Project \> Equipment Rate Table
 #### Copy information between projects
 
 You can create a new project record based on an existing project record. For
-example, if you’ve been asked by a customer to complete a new project that
+example, if you've been asked by a customer to complete a new project that
 is similar to an existing project, you can copy the existing project and
 then modify the new project as necessary.
 
@@ -2513,7 +2513,7 @@ You can assign equipment to a project. Use the Equipment Maintenance window
 to set up equipment records. See *Set up an equipment record for tracking
 project costs and billing customers* on page 20 for more information.
 
-*If you don’t have permission to assign equipment records to a project, you
+*If you don't have permission to assign equipment records to a project, you
 can use the Equipment List Inquiry window (Inquiry \> Project \> Maintenance
 \> Project \> Equip List button) to view the assignments.*
 
@@ -2536,10 +2536,10 @@ set up employee records for projects. See *Set up an employee record for
 tracking project costs and billing customers* on page 14 for more
 information.
 
-If you don’t specify employees for a project, all employees can enter
+If you don't specify employees for a project, all employees can enter
 timesheets and employee expense transactions for the project.
 
-*If you don’t have permission to assign employees to a project, you can use the
+*If you don't have permission to assign employees to a project, you can use the
 Employee Access List Inquiry window (Inquiry \> Project \> Maintenance \>
 Project \> Access List button) to view the assignments.*
 
@@ -2657,7 +2657,7 @@ used for. Abbreviations are used and some transactions are grouped together.
 You can assign cost categories to a project budget to estimate, manage, and
 track project costs.
 
-*If you don’t have permission to assign cost categories to a project budget,
+*If you don't have permission to assign cost categories to a project budget,
 you can use the Budget Inquiry window (Inquiry \> Project \> Maintenance \>
 Project \> Budget button) to view them.*
 
@@ -2705,7 +2705,7 @@ will be used for the forecast.
 
 4. You can modify the unit cost for the cost category.
 
-You can’t modify the amount in the **Unit Cost** column if you used the
+You can't modify the amount in the **Unit Cost** column if you used the
 **Extras \> View \> Currency** menu or the **Currency** list button in the
 Project Maintenance window to select to view amounts using the originating
 currency.
@@ -2718,7 +2718,7 @@ column.
 
 If you used the **Extras \> View \> Currency** menu or the **Currency** list
 button in the Project Maintenance window to select to view amounts using the
-functional currency for a **Time and Materials** project, you can’t modify
+functional currency for a **Time and Materials** project, you can't modify
 the amount in the **Profit Amount** column in this window unless the
 currency ID displayed in the **Billing Currency ID** field is the functional
 currency.
@@ -2729,7 +2729,7 @@ currency.
 
 Total cost = ((**Qty** amount) x (**Unit Cost** amount)) + overhead
 
-You can’t modify the amount in the **Total Cost** column if you used the
+You can't modify the amount in the **Total Cost** column if you used the
 **Extras \> View \> Currency** menu or the **Currency** list button in the
 Project Maintenance window to select to view amounts using the originating
 currency.
@@ -2745,12 +2745,12 @@ You can create a budget for each cost category in a project budget.
 
 If you used the **Extras \> View \> Currency** menu or the **Currency** list
 button in the Project Maintenance window to select to view amounts using the
-functional currency for a **Time and Materials** project, you can’t modify
+functional currency for a **Time and Materials** project, you can't modify
 the amount in the **Billing Rate** field in the Budget Detail Entry window
 unless the currency ID displayed in the **Billing Currency ID** field is the
 functional currency.
 
-*If you don’t have permission to enter budget amounts for cost categories in
+*If you don't have permission to enter budget amounts for cost categories in
 a project budget, you can use the Budget Detail Inquiry window (Inquiry \>
 Project \> Maintenance \> Project \> Budget button \> Cost Category
 expansion button) to view the budget amounts.*
@@ -2797,7 +2797,7 @@ A screenshot of a computer Description automatically generated
 
 9. Enter the unit cost.
 
-You can’t modify the amount in the **Unit Cost** column if you used the
+You can't modify the amount in the **Unit Cost** column if you used the
 **Extras \> View \> Currency** menu or the **Currency** list button in the
 Project Maintenance window to select to view amounts using the originating
 currency.
@@ -2808,7 +2808,7 @@ currency.
 Total cost = ((**Qty** amount) x (**Unit Cost** amount)) + **Overhead**
 amount
 
-You can’t modify the amount in the **Total Cost** column if you used the
+You can't modify the amount in the **Total Cost** column if you used the
 **Extras \> View \> Currency** menu or the **Currency** list button in the
 Project Maintenance window to select to view amounts using the originating
 currency.
@@ -2817,7 +2817,7 @@ currency.
     calculated for the cost category. See *Overhead calculation methods* on page
     11 for more information.
 
-You can’t modify the amounts in the **Billings**, **Overhead**, **Total
+You can't modify the amounts in the **Billings**, **Overhead**, **Total
 Cost**, **Total Profit**, and **Unit Cost** columns if you used the **Extras
 \> View \> Currency** menu or the **Currency** list button in the Project
 Maintenance window to select to view amounts using the originating currency.
@@ -2913,13 +2913,13 @@ PACM 446.JPEG
 #### Assign a rate table to a cost category in a project budget
 
 You can select to use a rate table with a cost category. See *Chapter 4,
-“Rate tables,”* for more information.
+"Rate tables,"* for more information.
 
 You must assign a rate table to a project to assign a rate table to a cost
 category in the project budget. See *Specify billing settings for a project*
 on page 71 for more information.
 
-*If you don’t have permission to assign a rate table to a cost category in a
+*If you don't have permission to assign a rate table to a cost category in a
 project budget, you can use the Budget Rates Inquiry window (Inquiry \>
 Project \> Maintenance \> Project \> Budget button \> Cost Category
 expansion button \> Rate Table button) to view the assignment.*
@@ -2959,7 +2959,7 @@ See *Cost categories and cost transactions* on page 79 for more information.
 You can select the inventoried items for a cost category in a project
 budget.
 
-*If you don’t have permission to select inventoried items for cost
+*If you don't have permission to select inventoried items for cost
 categories in a project budget, you can use the Budget Detail IV Items
 Inquiry window (Inquiry \> Project \> Maintenance \> Project \> Budget
 button \> Cost Category expansion button \> IV Items button) to view the
@@ -3010,7 +3010,7 @@ the baseline amounts will be used for forecast amounts.
 You can modify baseline, forecast, and actual amounts for cost categories
 used for a project.
 
-*If you don’t have permission to modify budget amounts for cost categories
+*If you don't have permission to modify budget amounts for cost categories
 in a project budget, you can use the Forecasting Inquiry window (Inquiry \>
 Project \> Maintenance \> Project \> Forecast button) to view the budget
 amounts.*
@@ -3044,7 +3044,7 @@ button.*
 
 You can modify project budget amounts for a cost category by fiscal period.
 
-*If you don’t have permission to enter budget amounts by fiscal period for a
+*If you don't have permission to enter budget amounts by fiscal period for a
 cost category in a project budget, you can use the Project Periodic Budget
 Inquiry window (Inquiry \> Project \> Maintenance \> Project \> Budget
 button \> Qty periodic budget button) to view budget information by fiscal
@@ -3103,7 +3103,7 @@ The following topics are discussed:
 
 You can assign fees to a project.
 
-*If you don’t have permission to assign fees to a project, you can use the
+*If you don't have permission to assign fees to a project, you can use the
 Fee Inquiry window (Inquiry \> Project \> Maintenance \> Project \> Fees
 button) to view the assignments.*
 
@@ -3121,14 +3121,14 @@ PACM 50.JPEG
     *Types of fees* on page 57 for more information.
 
 2. Depending on the fee you assign, you can modify information in the **Fee
-    %**, **Frequency**, and **Fee Amount** fields. See *Chapter 11, “Fees,”* for
+    %**, **Frequency**, and **Fee Amount** fields. See *Chapter 11, "Fees,"* for
     more information.
 
 If you used the **View \> Currency** menu or the **Currency** list button in the
 
 Project Maintenance window to select to view amounts using the functional
 
-currency, you can’t modify the amount in the **Fee Amount** field, unless
+currency, you can't modify the amount in the **Fee Amount** field, unless
 the functional currency is the same as the billing currency.
 
 1. Click the **Fee ID** expansion button to modify settings for a fee in the
@@ -3156,7 +3156,7 @@ PACM 51.JPEG
 
 ![A screenshot ](media/6e54ff9c4c0b5e11c1ef75563502a750.jpg)
 
-1. The information you can modify depends on the fee type. See *Chapter 11,“Fees,”* for more information.
+1. The information you can modify depends on the fee type. See *Chapter 11,"Fees,"* for more information.
 
 If you used the **View \> Currency** menu or the **Currency** list button in
 the Project Maintenance window to select to view amounts using the currency
@@ -3164,7 +3164,7 @@ ID that you specified in the **Functional Currency** field in the
 Multicurrency Setup window (**Microsoft Dynamics GP menu \> Tools \> Setup
 \> Financial \>**
 
-**Multicurrency**), you can’t modify the amount in the **Fee Amount** field,
+**Multicurrency**), you can't modify the amount in the **Fee Amount** field,
 unless the functional currency is the same as the billing currency.
 
 1. Click **Accounts** to open the Project Fee Accounts window, where you can
@@ -3188,7 +3188,7 @@ true.
 
 - There are no actual amounts for the fee.
 
-*If you don’t have permission to modify budget amounts for a fee by fiscal
+*If you don't have permission to modify budget amounts for a fee by fiscal
 period, you can use the Project Periodic Fee Inquiry window (Inquiry \>
 Project \> Maintenance \> Project \> Fees button \> Fee Amount periodic
 budget button) to view the budget amounts.*
@@ -3210,7 +3210,7 @@ PACM 52.JPEG
 You can modify the scheduled billing for a **Project**, **Retainer**, or
 **Service** fee that uses the **Scheduled** fee frequency.
 
-*If you don’t have permission to modify a fee schedule, you can use the Fee
+*If you don't have permission to modify a fee schedule, you can use the Fee
 Schedule Inquiry window (Inquiry \> Project \> Maintenance \> Project \>
 Fees button \> Frequency expansion button) to view a fee schedule.*
 
@@ -3226,7 +3226,7 @@ PACM 53.JPEG
 
 If you used the **View \> Currency** menu or the **Currency** list button in
 the Project Maintenance window to select to view amounts using the
-functional currency, you can’t modify the amount in the **Fee Amount**
+functional currency, you can't modify the amount in the **Fee Amount**
 field, unless the functional currency is the same as the billing currency.
 
 1. Click **OK**.
@@ -3239,14 +3239,14 @@ transactions, how to control the use of change orders for projects, and how
 to close customer, contract, and project records to control the accrual of
 project costs.
 
-- *Chapter 17, “Cost transaction entry control,”* includes information about
+- *Chapter 17, "Cost transaction entry control,"* includes information about
     how to grant data entry permissions for cost transactions.
 
-- *Chapter 18, “Project change control,”* includes information about how to
+- *Chapter 18, "Project change control,"* includes information about how to
     specify whether change orders can be entered for contracts and projects, and
     how to enter change orders.
 
-- *Chapter 19, “Cost suspension and project closure,”* includes information
+- *Chapter 19, "Cost suspension and project closure,"* includes information
     about how to close customer records and contracts to suspend project cost
     accrual and how to close projects to end project cost accrual.
 
@@ -3305,13 +3305,13 @@ PACM 55.JPEG
 
 **Allow Set Closed to Project Costs** Allow the user to select an option in
 a record entry window to suspend cost accrual for all projects for a
-customer or contract or for a specific project. See *Chapter 19, “Cost
-suspension and project closure,”* for more information.
+customer or contract or for a specific project. See *Chapter 19, "Cost
+suspension and project closure,"* for more information.
 
 **Allow Set Closed to Project Billings** Allow the user to select an option
 in a record entry window to suspend billings for all projects for a customer
-or contract or for a specific project. See *Chapter 6, “Billing
-suspension,”* in the Project Accounting Billing Guide for more information.
+or contract or for a specific project. See *Chapter 6, "Billing
+suspension,"* in the Project Accounting Billing Guide for more information.
 
 **Allow Change Status** Allow the user to change the status of a project.
 See *Contract, project, and cost category statuses* on page 44 for more
@@ -3377,12 +3377,12 @@ inventory transfer.
 
 **Allow Entry of New Budget Items** Allow the user to include a cost
 category on a timesheet, equipment log, miscellaneous log, or employee
-expense transaction that hasn’t been assigned to the project budget.
+expense transaction that hasn't been assigned to the project budget.
 
 **Allow Entry of None Project** Allow the user to press **TAB** to enter
 **\<NONE\>** or type **\<NONE\>** for the project number on a timesheet,
 equipment log, miscellaneous log, employee expense transaction, or inventory
-transfer to enter a line item that isn’t for a project.
+transfer to enter a line item that isn't for a project.
 
 **Allow Change of Pay Code** Allow the user to modify the pay code for a
 line item on a timesheet.
@@ -3401,7 +3401,7 @@ line items for projects.
 
 **Allow Entry of New Budgets/Materials** Allow the user to include a cost
 category or inventoried item on a purchase order, shipment/invoice receipt,
-invoice receipt, or inventory transfer that hasn’t been assigned to the
+invoice receipt, or inventory transfer that hasn't been assigned to the
 project budget.
 
 **Allow blank Project and Cost Category** Allow the user to press **TAB** to
@@ -3431,7 +3431,7 @@ timesheets, employee expense transactions, equipment logs, miscellaneous
 logs, and inventory transfers. You also can require a password for each data
 entry option to limit user access.
 
-Open the window for the transaction that you’re granting data entry
+Open the window for the transaction that you're granting data entry
 permissions for.
 
 **Timesheets** Open the Timesheet Setup Options window (**Microsoft Dynamics
@@ -3460,7 +3460,7 @@ Inventory \> Options button**).
 1. Select the data entry tasks to grant permission for.
 
 **Allow Add Access on the fly** Allow users to include an employee or
-equipment record that isn’t on the employee or equipment access list for the
+equipment record that isn't on the employee or equipment access list for the
 project when entering a timesheet, employee expense transaction, or
 equipment log.
 
@@ -3522,7 +3522,7 @@ transaction.
 
 #### Grant purchasing document and transaction data entry permissions
 
-If you’re using Project Accounting with Purchase Order Processing, you can
+If you're using Project Accounting with Purchase Order Processing, you can
 grant users permission to various data entry options for purchase orders,
 shipment/ invoice receipts, and invoice receipts. See the Purchase Order
 Processing documentation (**Help \> Printable Manuals**) for more
@@ -3614,7 +3614,7 @@ in the change order.
 You can specify change order settings for a contract.
 
 If you specified a billing currency ID for a contract that is not the
-functional currency, you can’t specify change order settings for the
+functional currency, you can't specify change order settings for the
 contract.
 
 1. Open the Change Order Contract Information window.
@@ -3699,13 +3699,13 @@ for the projects.
 
 The default status for a new change order.
 
-You can’t include a cost category on a cost, billing, or revenue recognition
-transaction for a project if you’ve entered change order amounts for the
-cost category and project. You also can’t modify budget settings for the
+You can't include a cost category on a cost, billing, or revenue recognition
+transaction for a project if you've entered change order amounts for the
+cost category and project. You also can't modify budget settings for the
 cost category using the Budget Detail Entry window.
 
-You can’t modify fee assignments for the project using the Fee Entry window
-if you’ve entered a change order to modify fee assignments for the project.
+You can't modify fee assignments for the project using the Fee Entry window
+if you've entered a change order to modify fee assignments for the project.
 
 Clicking Process in the Change Order Entry window will not update project
 budget amounts.
@@ -3714,11 +3714,11 @@ You can delete the change order.
 
 ##### Unapproved
 
-You can’t include a cost category on a billing transaction for a project if
-you’ve entered change order amounts for the cost category and project.
+You can't include a cost category on a billing transaction for a project if
+you've entered change order amounts for the cost category and project.
 
-You also can’t modify fee assignments for the project using the Fee Entry
-window if you’ve entered a change order to modify fee assignments for the
+You also can't modify fee assignments for the project using the Fee Entry
+window if you've entered a change order to modify fee assignments for the
 project.
 
 ##### Approved
@@ -3728,24 +3728,24 @@ revenue recognition transactions for cost categories and projects on the
 change order. You also can modify budget settings and fee assignments for
 the projects.
 
-You can’t delete the change order.
+You can't delete the change order.
 
 ##### Canceled
 
-You can’t modify budget settings for the cost category using the Budget
+You can't modify budget settings for the cost category using the Budget
 Detail Entry window.
 
 ##### Completed
 
-Change order amounts have been billed. You can’t modify the change order.
+Change order amounts have been billed. You can't modify the change order.
 
-You can’t include a cost category on a cost or billing transaction for a
-project if you’ve entered change order amounts for the cost category and
-project. You also can’t modify budget settings for the cost category using
+You can't include a cost category on a cost or billing transaction for a
+project if you've entered change order amounts for the cost category and
+project. You also can't modify budget settings for the cost category using
 the Budget Detail Entry window.
 
-You can’t modify fee assignments for the project using the Fee Entry window
-if you’ve entered a change order to modify fee assignments for the project.
+You can't modify fee assignments for the project using the Fee Entry window
+if you've entered a change order to modify fee assignments for the project.
 
 You can, however, recognize revenue for the cost categories and projects on
 the change order.
@@ -3786,11 +3786,11 @@ A screenshot of a computer Description automatically generated
     approving it in the **Approved By** field and enter the approval date.
     Select the **Approved** change order status.
 
-*After you change the status of a change order to Approved, you can’t cancel
+*After you change the status of a change order to Approved, you can't cancel
 it. You must enter another change order to make revisions.*
 
 1. In the **Revised By** field select the employee who is entering the change
-    order, and enter the employee’s title in the **Position** field. Enter the
+    order, and enter the employee's title in the **Position** field. Enter the
     reason for the change order.
 
 2. You can view contract totals for the change order. See *Contract totals and
@@ -3833,7 +3833,7 @@ PACM 59.JPEG
 will be included in the project budget after you click Process to process
 the change order when it has an Unapproved or Approved status.*
 
-When you select a cost category to enter a budget change for, you can’t
+When you select a cost category to enter a budget change for, you can't
 modify budget settings for the cost category using the Budget Detail Entry
 window until you click **Process** in the Change Order Entry window to apply
 change order amounts. See *Enter project budget settings for a cost
@@ -3997,7 +3997,7 @@ A screenshot of a social media post Description automatically generated
         The **Fee Amount** field will be updated based on the variance amount.
 
 *The information that you can enter for a fee depends on the fee type. See
-Chapter 11, “Fees,” for more information.*
+Chapter 11, "Fees," for more information.*
 
 1. Click the **Fee ID** expansion button to open the PA Change Order Fee
     Details window, where you can modify settings for the fee in the project.
@@ -4082,7 +4082,7 @@ The following topics are discussed:
 #### Suspend cost accrual for a customer
 
 You can suspend the accrual of costs for a customer. After you close a
-customer record to project costs, cost transactions can’t be entered or
+customer record to project costs, cost transactions can't be entered or
 posted for projects for the customer.
 
 1. Open the PA Customer Options window.
@@ -4100,7 +4100,7 @@ PACM 66.JPEG
 #### Suspend cost accrual for a contract
 
 You can suspend the accrual of costs for a contract. After you close a
-contract to project costs, cost transactions can’t be entered or posted for
+contract to project costs, cost transactions can't be entered or posted for
 projects for the contract.
 
 1. Open the Contract Maintenance window. **Cards \> Project \> Contract**
@@ -4116,7 +4116,7 @@ projects for the contract.
 #### Suspend cost accrual for a project
 
 You can suspend the accrual of costs for a project. After you close a
-project to project costs, cost transactions can’t be entered or posted for
+project to project costs, cost transactions can't be entered or posted for
 the project.
 
 1. Open the Project Maintenance window. **Cards \> Project \> Project**
@@ -4155,7 +4155,7 @@ PACM 67.JPEG
     listed in the scrolling window.
 
 The closing date must be no later than the date that the last transactions
-were entered for the projects that you’re closing.
+were entered for the projects that you're closing.
 
 1. If all requirements for closing a project have been met, the check box in
     the **C\*** column will be selected for the project. You can select a
@@ -4172,7 +4172,7 @@ were entered for the projects that you’re closing.
 
 4. Click **Process** and close the window.
 
-*After you’ve closed all projects in a contract, the contract status will be
+*After you've closed all projects in a contract, the contract status will be
 changed to Closed.*
 
 #### Project closing checklist
@@ -4227,38 +4227,38 @@ and billing customers. It also includes information about how to view
 detailed information about cost, billing, revenue, and profit amounts for
 contracts, projects, and cost categories.
 
-- *Chapter 20, “Timesheets,”* includes information about how to set up and
+- *Chapter 20, "Timesheets,"* includes information about how to set up and
     enter timesheets for tracking project costs and billing customers. It also
     includes information about how to specify payroll posting options.
 
-- *Chapter 21, “Employee expense transactions,”* includes information about
+- *Chapter 21, "Employee expense transactions,"* includes information about
     how to set up and enter employee expense transactions for tracking project
     costs and billing customers. It also includes information about how to
     specify a personal expense and how to enter payments and additional charges.
 
-- *Chapter 22, “Equipment logs,”* includes information about how to set up and
+- *Chapter 22, "Equipment logs,"* includes information about how to set up and
     enter equipment logs for tracking project costs and billing customers.
 
-- *Chapter 23, “Miscellaneous logs,”* includes information about how to set up
+- *Chapter 23, "Miscellaneous logs,"* includes information about how to set up
     and enter miscellaneous logs for tracking project costs and billing
     customers.
 
-- *Chapter 24, “Purchasing documents and transactions,”* includes information
+- *Chapter 24, "Purchasing documents and transactions,"* includes information
     about how to set up purchase orders, shipment/invoice receipts, and invoice
     receipts for tracking project costs and billing customers.
 
-- *Chapter 25, “Inventory transfers,”* includes information about how to set
+- *Chapter 25, "Inventory transfers,"* includes information about how to set
     up and enter inventory transfers for tracking project costs and billing
     customers.
 
-- *Chapter 26, “Item returns,”* includes information about how to return items
+- *Chapter 26, "Item returns,"* includes information about how to return items
     from projects to vendors.
 
-- *Chapter 27, “Cost, billing, revenue, and profit inquiries,”* includes
+- *Chapter 27, "Cost, billing, revenue, and profit inquiries,"* includes
     information about how to view detailed information about cost, billing,
     revenue, and profit amounts for contracts, projects, and cost categories.
 
-- *Chapter 28, “Project cost allocation,”* includes information about how you
+- *Chapter 28, "Project cost allocation,"* includes information about how you
     can allocate costs from one project to other projects.
 
 ### Chapter 20: Timesheets
@@ -4297,7 +4297,7 @@ complete the following tasks.
     information.
 
 - Select **Company** in the **Employed By** list in the PA Employee Options
-    window for the employees that you’re posting timesheets to payroll for. See
+    window for the employees that you're posting timesheets to payroll for. See
     *Set up an employee record for tracking project costs and billing customers*
     on page 14 for more information.
 
@@ -4324,8 +4324,8 @@ employees or position codes in the rate tables. See *Specify billing
 settings for a project* on page 71 and *Create an employee rate table* on
 page 23, and *Create a position rate table* on page 25 for more information.
 
-If a pay code hasn’t been selected for the employee, the pay code for the
-cost category in the project budget will be used. If a pay code hasn’t been
+If a pay code hasn't been selected for the employee, the pay code for the
+cost category in the project budget will be used. If a pay code hasn't been
 selected for the cost category in the project budget, the pay code for the
 cost category record will be used.
 
@@ -4342,9 +4342,9 @@ codes selected for the employees or position codes in the rate tables. See
 *Create an employee rate table* on page 23, and *Create a position rate
 table* on page 25 for more information.
 
-If a pay code hasn’t been selected for the cost category in the project
+If a pay code hasn't been selected for the cost category in the project
 budget, the pay code for the cost category record will be used. If a pay
-code hasn’t been selected for the cost category record, the pay code for the
+code hasn't been selected for the cost category record, the pay code for the
 employee record will be used.
 
 ##### Cost Category
@@ -4352,8 +4352,8 @@ employee record will be used.
 The pay code for the cost category record. See *Create a cost category
 record* on page 51 for more information.
 
-If a pay code hasn’t been selected for the cost category record, the pay
-code for the employee record will be used. If a pay code hasn’t been
+If a pay code hasn't been selected for the cost category record, the pay
+code for the employee record will be used. If a pay code hasn't been
 selected for the cost category in the project budget, the pay code for the
 cost category record will be used.
 
@@ -4388,7 +4388,7 @@ Budget Maintenance window and other windows.
         window, select the default pay code for timesheets. See *Default pay
         codes for timesheets* on page 119 for more information.
 
-    - If didn’t select **Use Pay Codes for Unit Cost** in the Project Setup
+    - If didn't select **Use Pay Codes for Unit Cost** in the Project Setup
         window, select the default unit cost for timesheets. See *Default unit
         costs* on page 10 for more information.
 
@@ -4401,7 +4401,7 @@ information.
 2. Specify the frequency and number of reporting periods in a year and specify
     the first day of the first reporting period for timesheets.
 
-3. If you’re using Project Accounting with U.S. Payroll or Canadian Payroll,
+3. If you're using Project Accounting with U.S. Payroll or Canadian Payroll,
     select whether to post timesheets to payroll and then select **US Payroll**
     or **Canadian Payroll**. **Post to Payroll** will not be available unless
     you selected **Use Pay Codes for Unit Cost** in the Project Setup window.
@@ -4424,7 +4424,7 @@ documentation (**Help \> Printable Manuals**) for more information.
 #### Enter a timesheet
 
 You can enter a timesheet to track the cost of time for an employee on a
-project. The data that you can enter depends on the permissions that you’ve
+project. The data that you can enter depends on the permissions that you've
 been granted. See *Grant cost transaction data entry permissions* on page 98
 for more information.
 
@@ -4461,13 +4461,13 @@ timesheet that you're modifying amounts for.
     will be displayed if there are multiple timesheets for the same employee in
     the same reporting period.
 
-5. If you’re using Multicurrency Management, you can select a currency ID for
+5. If you're using Multicurrency Management, you can select a currency ID for
     the timesheet. The functional currency is used by default.
 
 6. For each line item on the timesheet, enter the date.
 
 Click the **Date** expansion button to modify the exchange rate for the line
-item if you’ve specified a billing currency for the project that the line
+item if you've specified a billing currency for the project that the line
 item is for.
 
 If you don't have a billing currency specified for the project, the currency
@@ -4475,7 +4475,7 @@ ID that you selected for the timesheet will be used.
 
 1. Select the project and cost category that the time entry is for.
 
-*You can enter a line item that isn’t for a specific project. Press TAB to
+*You can enter a line item that isn't for a specific project. Press TAB to
 enter \<NONE\> for the project number.*
 
 1. Enter the beginning and ending time for the task, or enter the amount oEnter
@@ -4492,7 +4492,7 @@ enter \<NONE\> for the project number.*
     also the unit cost. Modify the pay code, department, and position code for
     the employee.
 
-If you’re posting timesheets to payroll, click the **Pay Code** expansion
+If you're posting timesheets to payroll, click the **Pay Code** expansion
 button to specify how to update payroll accounts. See *Specify how to update
 payroll for salaried employees when posting timesheets* on page 123 for more
 information.
@@ -4504,14 +4504,14 @@ information.
 
 2. If the transaction is in a batch, click **Save**. Otherwise, click **Post**.
 
-If you click **Post** and you’re posting timesheets to payroll, the Payroll
+If you click **Post** and you're posting timesheets to payroll, the Payroll
 Batch IDs window will open, where you must select the payroll batch to
 update payroll accounts. See *Set up timesheets for tracking project costs
 and billing customers* on page 120 for more information.
 
 #### Specify how to update payroll for salaried employees when posting timesheets
 
-If you’re posting timesheets to payroll, you can specify how to update
+If you're posting timesheets to payroll, you can specify how to update
 payroll information for salaried employees when you post. See *Set up
 timesheets for tracking project costs and billing customers* on page 120 for
 more information.
@@ -4521,15 +4521,15 @@ more information.
 You can select the following U.S. Payroll posting options for salaried
 employees in the Salary Posting window.
 
-**No Post** Don’t post timesheet information to payroll. This is the default
+**No Post** Don't post timesheet information to payroll. This is the default
 option.
 
-**Reallocate Dollars** If you’re using U.S. Payroll to track the departments
+**Reallocate Dollars** If you're using U.S. Payroll to track the departments
 that employees are working in, pay employees using payroll accounts for the
 departments that the employees worked for, relative to time entered on
 timesheets.
 
-**Reallocate Hours** If you’re using U.S. Payroll to track the number of
+**Reallocate Hours** If you're using U.S. Payroll to track the number of
 hours that salaried employees work, update the hours worked for employees
 based on time entered on timesheets.
 
@@ -4541,7 +4541,7 @@ cost entered on timesheets.
 You can select the following Canadian Payroll posting options for salaried
 employees in the Salary Posting window.
 
-**No Post** Don’t post timesheet information to payroll. This is the default
+**No Post** Don't post timesheet information to payroll. This is the default
 option.
 
 **Additional Amount** Pay employees additional amounts based on the total
@@ -4652,7 +4652,7 @@ information.
 
 You can enter an employee expense transaction to track expenses, such as for
 travel and meals, that an employee incurs while working on a project. The
-data that you can enter depends on the permissions that you’ve been granted.
+data that you can enter depends on the permissions that you've been granted.
 See *Grant cost transaction data entry permissions* on page 98 for more
 information.
 
@@ -4699,7 +4699,7 @@ modifying amounts for.
     transactions for the same employee within the same starting and ending
     dates.
 
-6. If you’re using Multicurrency Management, you can select a currency ID for
+6. If you're using Multicurrency Management, you can select a currency ID for
     the employee expense transaction. The functional currency is used by
     default.
 
@@ -4714,7 +4714,7 @@ information.*
 1. For each line item on the employee expense transaction, enter the date.
 
 Click the **Date** expansion button to modify the exchange rate for the line
-item if you’ve specified a billing currency for the project that the line
+item if you've specified a billing currency for the project that the line
 item is for.
 
 If you don't have a billing currency specified for the project, the currency
@@ -4722,8 +4722,8 @@ ID that you selected for the employee expense transaction will be used.
 
 1. Select the project and cost category that the line item is for.
 
-*You can enter a line item that isn’t for a specific project. Press TAB to
-enter \<NONE\> for the project number. If you enter a line item that isn’t
+*You can enter a line item that isn't for a specific project. Press TAB to
+enter \<NONE\> for the project number. If you enter a line item that isn't
 for a project, you also can press TAB to enter \<NONE\> for the cost
 category ID.*
 
@@ -4770,7 +4770,7 @@ PACM 73.JPEG
 
 ![A screenshot of a social media post Description automatically generated](media/c1a6cd822a91a88556951c5b207c254e.jpg)
 
-If you’re viewing the transaction amounts in their originating currency in
+If you're viewing the transaction amounts in their originating currency in
 the Employee Expense Entry window, the Employee Expense Detail Entry window
 also will display the amounts in their originating currency.
 
@@ -4815,12 +4815,12 @@ PACM 74.JPEG
 
 ![A screenshot ](media/6af2dc88ef52429faa773229996417c2.jpg)
 
-If you’re viewing the transaction amounts in their originating currency in
+If you're viewing the transaction amounts in their originating currency in
 the Employee Expense Entry window, the Employee Expense Entry - More Info
 window also will display the amounts in their originating currency.
 
 1. The default tax schedule and shipping method are for the vendor record for
-    the employee. If you haven’t specified them for the vendor record, you can
+    the employee. If you haven't specified them for the vendor record, you can
     select them in this window.
 
 *To reimburse an employee for employee expenses, the employee also must be a
@@ -4898,7 +4898,7 @@ PACM 75.JPEG
 
 You can enter an equipment log to track when equipment is used for a project
 so that you can bill customers for using the equipment. The data that you
-can enter depends on the permissions that you’ve been granted. See *Grant
+can enter depends on the permissions that you've been granted. See *Grant
 cost transaction data entry permissions* on page 98 for more information.
 
 *You can use the Equipment Log Inquiry window (Inquiry \> Project \> PA
@@ -4936,14 +4936,14 @@ equipment log that you're modifying amounts for.
     will be displayed if there are multiple equipment logs for the same
     equipment in the same reporting period.
 
-5. If you’re using Multicurrency Management, you can select a currency ID for
+5. If you're using Multicurrency Management, you can select a currency ID for
     the equipment log. The functional currency is used by default.
 
 6. For each line item on the equipment log, enter the date that the equipment
     was used.
 
 Click the **Date** expansion button to modify the exchange rate for the line
-item if you’ve specified a billing currency for the project that the line
+item if you've specified a billing currency for the project that the line
 item is for.
 
 If you don't have a billing currency specified for the project, the currency
@@ -4951,7 +4951,7 @@ ID that you selected for the equipment log will be used.
 
 1. Select the project and cost category that the time entry is for.
 
-*You can enter a line item that isn’t for a specific project. Press TAB to
+*You can enter a line item that isn't for a specific project. Press TAB to
 enter \<NONE\> for the project number.*
 
 1. Enter the beginning and ending time that the equipment was used, or enter
@@ -5006,9 +5006,9 @@ for more information.
 #### Enter a miscellaneous log
 
 You can enter a miscellaneous log to track miscellaneous expenses and
-benefit allocations for a project that can’t be tracked using other cost
+benefit allocations for a project that can't be tracked using other cost
 transactions. The data that you can enter depends on the permissions that
-you’ve been granted. See *Grant cost transaction data entry permissions* on
+you've been granted. See *Grant cost transaction data entry permissions* on
 page 98 for more information.
 
 *You can use the Miscellaneous Log Inquiry window (Inquiry \> Project \> PA
@@ -5045,14 +5045,14 @@ In the **Reference Doc. No.** field, enter the document number for the
     number will be displayed if there are multiple miscellaneous logs for the
     same miscellaneous expense type in the same reporting period.
 
-5. If you’re using Multicurrency Management, you can select a currency ID for
+5. If you're using Multicurrency Management, you can select a currency ID for
     the miscellaneous log. The functional currency is used by default.
 
 6. For each line item on the miscellaneous log, enter the date that the
     miscellaneous expense was incurred.
 
 Click the **Date** expansion button to modify the exchange rate for the line
-item if you’ve specified a billing currency for the project that the line
+item if you've specified a billing currency for the project that the line
 item is for.
 
 If you don't have a billing currency specified for the project, the currency
@@ -5060,7 +5060,7 @@ ID that you selected for the miscellaneous log will be used.
 
 1. Select the project and cost category the miscellaneous expense is for.
 
-*You can enter a line item that isn’t for a specific project. Press TAB to
+*You can enter a line item that isn't for a specific project. Press TAB to
 enter \<NONE\> for the project number.*
 
 1. Enter the quantity.
@@ -5136,7 +5136,7 @@ You can enter a standard purchase order for an item for a project using
 Purchase Order Processing. When you enter the corresponding shipment receipt
 or shipment/invoice receipt, inventory will be updated. You must then enter
 an inventory transfer to track the item as a cost for the project and to
-make the item billable. See *Chapter 25, “Inventory transfers,”* for more
+make the item billable. See *Chapter 25, "Inventory transfers,"* for more
 information.
 
 #### View a list of shipment, shipment/invoice, and invoice receipts
@@ -5191,7 +5191,7 @@ PACM 79.JPEG
 
 4. Select the default price level for items.
 
-**None** Don’t use default price levels.
+**None** Don't use default price levels.
 
 **Budget** Use the price level selected for the cost category in the project
 budget.
@@ -5215,7 +5215,7 @@ budget.
     more information.
 
 4. You can select **Do not allow Non-Inventory Items** to prevent users from
-    including cost categories that aren’t for inventoried items on inventory
+    including cost categories that aren't for inventoried items on inventory
     transfers. **Inventory Item** must be selected for a cost category in the
     Cost Category Maintenance window if it is for inventoried items. See *Create
     a cost category record* on page 51 for more information.
@@ -5228,14 +5228,14 @@ budget.
 
 #### Enter an inventory transfer
 
-You must enter an inventory transfer to make inventoried items that you’ve
+You must enter an inventory transfer to make inventoried items that you've
 purchased for projects available for those projects. You also can enter an
 inventory transfer to return items from projects to inventory. See the
 Inventory Control documentation (**Help \> Printable Manuals**) for more
 information.
 
 *You can enter an inventory transfer to make any inventoried item available
-for projects, not just inventoried items that you’ve purchased for
+for projects, not just inventoried items that you've purchased for
 projects.*
 
 You also can enter an inventory transfer to correct project or cost category
@@ -5245,7 +5245,7 @@ non-inventoried item using an inventory transfer, information about the
 vendor that you purchased the noninventoried item from and related
 purchasing accounts will be unaffected.
 
-The data that you can enter depends on the permissions that you’ve been
+The data that you can enter depends on the permissions that you've been
 granted. See *Grant cost transaction data entry permissions* on page 98 for
 more information.
 
@@ -5264,7 +5264,7 @@ PACM 80. JPEG
 ![A screenshot of a computer Description automatically generated](media/ada93c7ebc38499698458cd9f732295d.jpg)
 
 1. Select the **Standard** transaction type to enter an inventory transfer to
-    make inventoried items that you’ve purchased for projects available for
+    make inventoried items that you've purchased for projects available for
     those projects.
 
 Select the **Return** transaction type to enter a **Return** inventory
@@ -5278,20 +5278,20 @@ transfer to return items from projects to inventory.
 
 3. Enter the site ID that will be used for line items.
 
-    - If you’re entering a **Standard** inventory transfer, the site ID will
+    - If you're entering a **Standard** inventory transfer, the site ID will
         be where you obtain your items from.
 
-    - If you’re entering a **Return** inventory transfer, the site ID will be
+    - If you're entering a **Return** inventory transfer, the site ID will be
         where you send the items to.
 
 4. For each line item on the inventory transfer, select the project and cost
     category that the item is for.
 
-*You can enter a line item that isn’t for a specific project. Press TAB to
+*You can enter a line item that isn't for a specific project. Press TAB to
 enter \<NONE\> for the project number.*
 
 Click the **Project Number** expansion button to modify the exchange rate
-for the line item if you’ve specified a billing currency for the project
+for the line item if you've specified a billing currency for the project
 that the line item is for.
 
 1. Select the inventoried item to transfer, or type the name of a
@@ -5301,7 +5301,7 @@ that the line item is for.
     transfers for tracking project costs and billing customers* on page 141 for
     more information.
 
-3. Enter the unit of measure, quantity, and unit cost for the item that you’re
+3. Enter the unit of measure, quantity, and unit cost for the item that you're
     transferring.
 
 4. Select the billing type for the item. See *Billing types* on page 68 for
@@ -5330,7 +5330,7 @@ that the line item is for.
     distributions for transactions* on page 20 in the Project Accounting
     Accounting Control Guide for more information.
 
-11. If you’re tracking units or lot quantities of the item, you can click
+11. If you're tracking units or lot quantities of the item, you can click
     **Serial/Lot** to enter a serial number for each unit of the item or to
     enter lot numbers for various lot quantities of the item. See *Enter lot
     numbers for lot quantities on an inventory transfer* on page 144 and *Enter
@@ -5349,7 +5349,7 @@ data entry permissions on page 98 for more information.*
 
 #### Enter lot numbers for lot quantities on an inventory transfer
 
-If you’re tracking lot quantities of an item using lot numbers, you can
+If you're tracking lot quantities of an item using lot numbers, you can
 enter lot numbers for various lot quantities on an inventory transfer.
 
 See the Inventory Control documentation (**Help \> Printable Manuals**) for
@@ -5371,10 +5371,10 @@ A screenshot of a cell phone Description automatically generated
 
 1. Enter or select a lot number.
 
-2. If you’re using multiple bins for inventoried items, select a bin number.
+2. If you're using multiple bins for inventoried items, select a bin number.
 
 The lot quantities that are available will be displayed in the upper
-scrolling window. If you’re using multiple bins for inventoried items, you
+scrolling window. If you're using multiple bins for inventoried items, you
 can select **Restrict to Bin** and select a bin number to limit the
 available lot quantities to lots in the selected bin.
 
@@ -5391,7 +5391,7 @@ the **Lots Selected** field equals the amount in the **Extended Qty** field.
 
 #### Enter serial numbers for items on an inventory transfer
 
-If you’re tracking an item using serial numbers, you can enter a serial
+If you're tracking an item using serial numbers, you can enter a serial
 number for each unit of the item on an inventory transfer.
 
 See the Inventory Control documentation (**Help \> Printable Manuals**) for
@@ -5412,7 +5412,7 @@ PACM 82.jpeg
 A screenshot of a computer Description automatically generated
 
 The serial numbers that are available will be displayed in the leftmost
-scrolling window. If you’re using multiple bins for inventoried items, you
+scrolling window. If you're using multiple bins for inventoried items, you
 can select **Restrict to Bin** and select a bin number to limit the
 available serial numbers to items in the selected bin.
 
@@ -5509,7 +5509,7 @@ customers* on page 141 for more information.
 #### Return items from projects to vendors
 
 You can return items from projects to vendors. The data that you can enter
-depends on the permissions that you’ve been granted. See *Grant cost
+depends on the permissions that you've been granted. See *Grant cost
 transaction data entry permissions* on page 98 for more information.
 
 *You can use the Inventory Transfer Inquiry window (Inquiry \> Project \> PA
@@ -5542,7 +5542,7 @@ PACM 84.JPEG
 5. For each line item on the transaction, select the project and cost category
     that the item is for.
 
-*You can enter a line item that isn’t for a specific project. Press TAB to
+*You can enter a line item that isn't for a specific project. Press TAB to
 enter \<NONE\> for the project number.*
 
 1. Select the inventoried item to return, or type the name of a non-inventoried
@@ -5558,7 +5558,7 @@ enter \<NONE\> for the project number.*
     more information.
 
 5. In the **Tax Option** column, select whether the item is taxable,
-    non-taxable, or to use the vendor’s tax schedule for calculating taxes for
+    non-taxable, or to use the vendor's tax schedule for calculating taxes for
     the item. If you select **Taxable**, select a tax schedule in the **Tax
     Schedule ID** column.
 
@@ -5772,15 +5772,15 @@ A screenshot of a cell phone Description automatically generated
 #### View committed costs for a project based on purchasing documents and transactions
 
 You can view the committed costs for a project based on the purchase orders,
-shipment/invoice receipts, and invoice receipts that you’ve entered for the
+shipment/invoice receipts, and invoice receipts that you've entered for the
 project.
 
-Committed costs include the cost for items on purchase orders that haven’t
+Committed costs include the cost for items on purchase orders that haven't
 been received.
 
 This window also includes information about actual costs. These actual costs
 reflect the cost for items that have been received for purchase orders.
-However, they don’t affect the actual costs incurred for a project. You must
+However, they don't affect the actual costs incurred for a project. You must
 enter an inventory transfer to make inventoried items available for
 projects, which will increase the actual costs for the projects. See *Enter
 an inventory transfer* on page 142 for more information.
@@ -5848,11 +5848,11 @@ cost, billing, and revenue for line items on cost transactions for a range
 of dates, you can select to limit the line items to view by billing status.
 
 **Billable** Cost transaction line items for **Time and Materials** projects
-that haven’t been billed.
+that haven't been billed.
 
 **In Process** Cost transaction line items for **Time and Materials**
 projects that are included on transactions that have been saved in batches
-but haven’t been posted.
+but haven't been posted.
 
 **Closed** Cost transaction line items for **Time and Materials** projects
 that have been billed.
@@ -5957,7 +5957,7 @@ the project.
 
 The following topics are discussed:
 
-• *Set up allocation IDs* • *Allocate project costs*
+* *Set up allocation IDs* * *Allocate project costs*
 
 #### Set up allocation IDs
 
@@ -6038,6 +6038,7 @@ A screenshot of a social media post Description automatically generated
 
 7. Click **OK** to close the window.
 
+
 ## Glossary
 
 **access list**
@@ -6049,7 +6050,7 @@ project.
 
 **account**
 
-The type of record—asset, liability, revenue, expense or owner’s
+The type of record—asset, liability, revenue, expense or owner's
 equity—traditionally used for recording individual transactions in an
 accounting system.
 
@@ -6103,7 +6104,7 @@ transactions that require employee IDs.
 **actual**
 
 A project budget amount that represents cost and billing amounts based on
-the transactions that you’ve entered. You can use actual amounts to measure
+the transactions that you've entered. You can use actual amounts to measure
 project performance against forecast and baseline budget amounts.
 
 **adjusting transaction**
@@ -6119,7 +6120,7 @@ allocations.
 
 **age**
 
-To subtract the document date from the date you’re aging from to determine
+To subtract the document date from the date you're aging from to determine
 the age of the document.
 
 **aging**
@@ -6158,7 +6159,7 @@ considered received.
 Typically, the smallest quantity on a Unit of Measure schedule in which
 items can be bought or sold. The base unit of measure is common to all named
 quantities entered for a Unit of Measure schedule. For example, for the item
-“soda,” the base unit of measure might be “Can” because all the other units
+"soda," the base unit of measure might be "Can" because all the other units
 of measure are multiples of a single can.
 
 **baseline**
@@ -6399,7 +6400,7 @@ shipment receipts, and shipment/invoice receipts.
 **credit**
 
 To enter an amount that decreases the balance of an asset or expense account
-or increases a liability, owners’ equity, or revenue account; the right side
+or increases a liability, owners' equity, or revenue account; the right side
 of any T account.
 
 **credit card**
@@ -6412,7 +6413,7 @@ bank cards or charge cards.
 
 **credit memo**
 
-A document that credits a customer’s or vendor’s account and explains the
+A document that credits a customer's or vendor's account and explains the
 reason for the credit.
 
 **currency**
@@ -6440,7 +6441,7 @@ services.
 **debit**
 
 To enter an amount that increases an asset or expense account, or decreases
-the balance of a liability, owners’ equity or income account; the left side
+the balance of a liability, owners' equity or income account; the left side
 of any T account.
 
 **department**
@@ -6683,7 +6684,7 @@ wire).
 
 The segment of posting accounts that has been designated as the sorting
 option for accounts on financial statements. Typically, the main segment is
-used to indicate whether the account is an asset, liability, owners’ equity,
+used to indicate whether the account is an asset, liability, owners' equity,
 revenue or expense account.
 
 **miscellaneous class**
@@ -6693,20 +6694,20 @@ define parameters for miscellaneous records within the group.
 
 **miscellaneous expense**
 
-An additional expense for a project that can’t or shouldn’t be tracked using
+An additional expense for a project that can't or shouldn't be tracked using
 timesheets, employee expense transactions, equipment logs, inventory
 transfers, shipment receipts, or shipment/invoice receipts.
 
 **miscellaneous log**
 
-A transaction to track additional expenses for a project that can’t or
-shouldn’t be tracked using timesheets, employee expense transactions,
+A transaction to track additional expenses for a project that can't or
+shouldn't be tracked using timesheets, employee expense transactions,
 equipment logs, inventory transfers, shipment receipts, or shipment/ invoice
 receipts.
 
 **non-inventoried item**
 
-An item that quantities aren’t tracked for.
+An item that quantities aren't tracked for.
 
 **\<NONE\> cost category**
 
@@ -6773,7 +6774,7 @@ in a specific position on a project.
 
 **posting**
 
-A procedure to make temporary transactions a part of a business’s permanent
+A procedure to make temporary transactions a part of a business's permanent
 records; to update accounts by transaction amounts. In manual accounting,
 posting transfers journal entries to the proper accounts in a general
 ledger.
@@ -6797,9 +6798,9 @@ invoices; and billable worksheets, which include all billing invoices.
 **price level**
 
 Used to specify different prices for an item or group of items, depending
-upon who it’s being sold to. For example, you might charge one price if
-you’re selling to a retail customer and another price to a wholesale
-customer. You don’t need to assign all price levels to all units of measure;
+upon who it's being sold to. For example, you might charge one price if
+you're selling to a retail customer and another price to a wholesale
+customer. You don't need to assign all price levels to all units of measure;
 be sure that each unit of measure can be used with every price level at
 which you might want to sell it.
 
@@ -6882,7 +6883,7 @@ items.
 **purchasing document**
 
 A purchase order that you enter to purchase items from vendors for projects.
-General ledger accounts and inventory quantities aren’t updated when you
+General ledger accounts and inventory quantities aren't updated when you
 enter a purchase order, which is why it is referred to as a document and not
 a transaction.
 
@@ -6900,10 +6901,10 @@ profit for whenever they are used for a project.
 **reconcile**
 
 A procedure that compares corresponding data in different logical tables and
-removes any “orphan” records. Reconciling also verifies that information
+removes any "orphan" records. Reconciling also verifies that information
 stored in two different tables is the same, and if there are discrepancies,
 changes the information in the table being reconciled to match the
-information in the table it’s being compared to.
+information in the table it's being compared to.
 
 **recurring batch**
 
@@ -6968,12 +6969,12 @@ company.
 
 **salary pay**
 
-A pay code that’s used for employees who are paid a specific amount each pay
+A pay code that's used for employees who are paid a specific amount each pay
 period.
 
 **salesperson**
 
-A person who sells a company’s goods or services.
+A person who sells a company's goods or services.
 
 **serial number**
 
@@ -7016,7 +7017,7 @@ The calculated total amounts for a transaction.
 
 **SUTA**
 
-An acronym for “state unemployment tax.” This is the state unemployment tax
+An acronym for "state unemployment tax." This is the state unemployment tax
 paid by an employer to provide for payments of unemployment compensation to
 workers who have lost their jobs.
 
@@ -7038,7 +7039,7 @@ or fee record.
 
 **territory**
 
-A division of the regions in which a company’s products are sold, often
+A division of the regions in which a company's products are sold, often
 separated from other divisions by geographical location.
 
 **third-party customer**
@@ -7107,9 +7108,9 @@ transactions.
 
 **unbilled revenue**
 
-Revenue that has been realized for Time and Materials projects but hasn’t
+Revenue that has been realized for Time and Materials projects but hasn't
 been billed, or revenue that has been recognized for Cost Plus and Fixed
-Price projects but hasn’t been billed.
+Price projects but hasn't been billed.
 
 **unit**
 
@@ -7117,7 +7118,7 @@ A single quantity of an item.
 
 **unit cost**
 
-The amount per unit that you paid for an item you’re planning to sell or
+The amount per unit that you paid for an item you're planning to sell or
 consume.
 
 **unit of measure**
@@ -7151,7 +7152,7 @@ The method by which you track the cost of an item from the time you receive
 it until you sell it. Different businesses and industries typically use
 different valuation methods, which are sometimes specified by law. In most
 locations, strict legal limits are in place concerning changing the
-valuation method once you’ve begun using a particular one. Valuation methods
+valuation method once you've begun using a particular one. Valuation methods
 include FIFO Perpetual, FIFO Periodic, LIFO Perpetual, LIFO Periodic, and
 Average Perpetual.
 
@@ -7166,12 +7167,12 @@ vendors within the group.
 
 **WIP (Work In Progress)**
 
-The project costs that customers haven’t been billed for.
+The project costs that customers haven't been billed for.
 
-**workers’ compensation tax**
+**workers' compensation tax**
 
 Taxes paid by the employer for insurance covering injuries incurred on the
-job. Workers’ compensation is paid to the state government.
+job. Workers' compensation is paid to the state government.
 
 **write down**
 
@@ -7186,3 +7187,9 @@ To arbitrarily increase a calculated billing amount on a billing invoice.
 A process used to adjust small differences between an invoice amount and a
 payment or an amount that a business chooses not to pay on a vendor account.
 A writeoff is deducted from the account total.
+
+## See also
+
+[Project Accounting Administrator's Guide](ProjAcctAdministration.md)  
+[Project Accounting Billing Guide](ProjAcct-billing-cycles.md)  
+[Project Accounting - Accounting Control Guide](ProjAcctAccountingControl.md)  
