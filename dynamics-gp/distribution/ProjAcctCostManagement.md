@@ -6085,25 +6085,25 @@ You can specify the information to include on an invoice format
 3.	In the Billing Report Name field, you can enter the name for the invoice format to be displayed on the printed billing invoice.
 4.	If the invoice format includes information grouped by contract, select the following options.
 
-•	Select Contract Notes to include billing notes for the contract record.
+    •	Select Contract Notes to include billing notes for the contract record.
 
-•	Select Contract Transaction Notes to include billing notes entered for the contract record for cost transactions.
+    •	Select Contract Transaction Notes to include billing notes entered for the contract record for cost transactions.
 
-•	Select how to sort contracts on the invoice format.
+    •	Select how to sort contracts on the invoice format.
 
 5.	If the invoice format includes information grouped by project, select the following options.
 
-•	Select Project Notes to include billing notes for the project record.
+    •	Select Project Notes to include billing notes for the project record.
 
-•	Select Project Transaction Notes to include billing notes entered for the project record for cost transactions.
+    •	Select Project Transaction Notes to include billing notes entered for the project record for cost transactions.
 
-•	Select how to sort projects on the invoice format.
+    •	Select how to sort projects on the invoice format.
  
 6.	If the invoice format includes fee information, select the following options.
 
-•	Select Detailed to display itemized fee amounts or Totals to display summarized fee amounts.
+    •	Select Detailed to display itemized fee amounts or Totals to display summarized fee amounts.
 
-•	Select Fee Notes to include billing notes for fees for projects. 
+    •	Select Fee Notes to include billing notes for fees for projects. 
 
 7.	Click Transactions to specify information to include for cost transactions on the invoice format.
 8.	Click Fees to enter descriptive names to be displayed on the invoice format for fees. See Enter names for fee types on an invoice format on page 15 for more information.
@@ -6246,44 +6246,43 @@ You can configure general settings for billing customers, such as how to calcula
 6.	In the Discount From field, select whether discounts for billing amounts will be based on discount amounts entered for the customer, contract, or project record. 
 7.	Select the default cutoff date to use for billing invoices.
 
-For example, if you enter a billing invoice and the user date is 9/22/2010, which is a Wednesday, then the following dates will be used.
+    For example, if you enter a billing invoice and the user date is 9/22/2010, which is a Wednesday, then the following dates will be used.
 
-Document  Date   
-The date 09/22/2010 will be used.
+    Document  Date   
+    The date 09/22/2021 will be used.
 
-Beginning of week 
-The date 09/20/2010, which is the Monday for the week that the user date is in, will be used.
+    Beginning of week 
+    The date 09/20/2021, which is the Monday for the week that the user date is in, will be used.
 
-Beginning of month 
-The date 09/01/2010 will be used.
+    Beginning of month 
+    The date 09/01/2021 will be used.
 
-End of month 
-The date 09/30/2010 will be used.
+    End of month 
+    The date 09/30/2021 will be used.
 
-The cutoff date that you select in this window does not affect the cutoff date that you select to use with billing cycles. 
+    The cutoff date that you select in this window does not affect the cutoff date that you select to use with billing cycles. 
 
 8.	Select Calculate retainer commission to calculate commissions on Retainer fees for salespeople. 
 9.	Select Retainer fee taxable to calculate taxes on Retainer fees.
 10.	Select Include fully billed fees to include on billing invoices information about fees that already have been billed.
 11.	Indicate whether to specify individual tax options for non-inventoried items, freight, and miscellaneous charges on billing invoices and billing returns or to use a single tax schedule for all charges.
- 
-Advanced	
-Specify whether non-inventoried items, freight, and miscellaneous charges are taxable, non-taxable, or based on the tax schedule for the customer record. If you select Taxable, select a tax schedule.
 
-Single Schedule 
-Select a tax schedule.
+    Advanced	
+    Specify whether non-inventoried items, freight, and miscellaneous charges are taxable, non-taxable, or based on the tax schedule for the customer record. If you select Taxable, select a tax schedule.
+
+    Single Schedule 
+    Select a tax schedule.
 
 12.	In the Update Periodics Using list, select whether to use the document date or the posting date on billing invoices and billing returns to update information in the Project Periodic Budget window.
 13.	Select the Apply Project First to option to specify whether customer payments will be applied first to amounts for cost categories in project budgets or to amounts for fees for projects.
 14.	You can enter names for user-defined fields that you can use in the Billing Entry window. You must use Modifier to display user-defined fields in the Billing Entry window and you must use Report Writer to include information entered in those fields on reports. See the Modifier and Report Writer documentation (Help > Printable Manuals) for more information.
 15.	Select the Currency to use in Cycle Biller option to specify whether to use the currency ID selected for the customer in the Customer Maintenance Options window (Cards > Sales > Customer > Options button) or the functional currency selected in the Multicurrency Setup window (Tools > Setup > Financial > Multicurrency) when generating invoices using billing cycles.
 
-**NOTE** If you select Functional Currency, all billing invoices generated using billing cycles will use the functional currency even though you’ve specified billing currency IDs for the contracts and projects that you’re generating billing invoices for.
+    **NOTE** If you select Functional Currency, all billing invoices generated using billing cycles will use the functional currency even though you’ve specified billing currency IDs for the contracts and projects that you’re generating billing invoices for.
 
 16.	Select Post to Receivables Management to post billing invoices and billing returns to Receivables Management.
 17.	Click Billing Report to specify information to include on invoice formats. 
-18.	Click Billing Format to group sets of invoice formats into billing formats. See
-Group invoice formats into a billing format on page 15 for more information.
+18.	Click Billing Format to group sets of invoice formats into billing formats. See _Group invoice formats into a billing format_ for more information.
 
 19.	Click Billing Options to grant billing invoice and billing return data entry permissions. 
 20.	Click RR Options to grant revenue recognition transaction data entry permissions. 
@@ -6295,11 +6294,11 @@ You can grant all users permission to various data entry options for billing inv
 1.	Open the Billing Setup Options window.  Tools > Setup > Project > Billing > Billing Options button
 2.	Select the data entry tasks to grant permission for.
 
-Override Document Number 
-Allow users to modify the default document number for a billing invoice or billing return.
+    Override Document Number 
+    Allow users to modify the default document number for a billing invoice or billing return.
 
-Allow Actual Billings to Exceed Projected Billings  
-Allow users to enter a billing amount that exceeds the calculated billing amount for a billing invoice line item for a Time and Materials project.
+    Allow Actual Billings to Exceed Projected Billings  
+    Allow users to enter a billing amount that exceeds the calculated billing amount for a billing invoice line item for a Time and Materials project.
 
 3.	Click OK.
 
@@ -6356,20 +6355,20 @@ Before you generate billing invoices, you can age customer balances and the Work
 7.	Select Print Report to create a log file after you generate billing invoices. You can modify the path to where the log file will be saved. The log file will list any errors that are encountered. 
 8.	In the One Invoice Per options, specify whether to print one invoice per customer, contract, or project. The option that you select also will limit billing to the customers, contracts, or projects that are assigned to the billing cycle.
 
-If you specified various billing currency IDs for contracts for a customer, a separate invoice will be printed for each billing currency. Each separate invoice will include only contracts that use the same billing currency ID.
+    If you specified various billing currency IDs for contracts for a customer, a separate invoice will be printed for each billing currency. Each separate invoice will include only contracts that use the same billing currency ID.
 
-If you select to print one invoice per contract or project, you can select the billing address to use.
+    If you select to print one invoice per contract or project, you can select the billing address to use.
 
-Customer 
-The address selected in the Bill To field in the Customer Maintenance window. 
+    Customer 
+    The address selected in the Bill To field in the Customer Maintenance window. 
 
-Contract 
-The address selected in the Tax Address ID field in the Contract Settings window. 
+    Contract 
+    The address selected in the Tax Address ID field in the Contract Settings window. 
 
-Project 
-The address selected in the Tax Address ID field in the Project Billing Settings window. 
+    Project 
+    The address selected in the Tax Address ID field in the Project Billing Settings window. 
 
-If you select to print one invoice per customer, the address selected in the Bill To field in the Customer Maintenance window will be used. See the Receivables Management documentation (Help > Printable Manuals) for more information.
+    If you select to print one invoice per customer, the address selected in the Bill To field in the Customer Maintenance window will be used. See the Receivables Management documentation (Help > Printable Manuals) for more information.
 
 9.	Click Process.
 
@@ -6386,24 +6385,23 @@ You can use the Billing Inquiry window (Inquiry > Project > PA Transaction Docum
 1.	Open the Billing Entry window.  Transactions > Project > Billing > Billing Entry
 2.	Select the Invoice transaction type.
 
-Select the TM Return transaction type to modify amounts on a billing invoice for a Time and Materials project. In the Reference Document No. field, enter the document number for the billing invoice that you're modifying amounts for.
+    Select the TM Return transaction type to modify amounts on a billing invoice for a Time and Materials project. In the Reference Document No. field, enter the document number for the billing invoice that you're modifying amounts for.
 
 3.	Enter a document number and date.
 4.	Enter or select a batch ID. 
 5.	Select the customer that the billing invoice is for. You can enter the purchase order number from the customer.
 6.	Select the billing address for the billing invoice.
-7.	You can modify the cutoff date for billing. Cost transaction line items with dates after the cutoff date won’t be billed. 
-The cutoff date must be on or before the billing date specified for the billing cycle. 
+7.	You can modify the cutoff date for billing. Cost transaction line items with dates after the cutoff date won’t be billed. The cutoff date must be on or before the billing date specified for the billing cycle. 
 
 8.	Select the billing currency for the invoice.
 
-The default currency will be the currency that you specified for the customer that the invoice is for in the Customer Maintenance Options window (Cards > Sales > Customer > Options button). If you haven’t specified a currency for the customer, the functional currency will be used. 
+    The default currency will be the currency that you specified for the customer that the invoice is for in the Customer Maintenance Options window (Cards > Sales > Customer > Options button). If you haven’t specified a currency for the customer, the functional currency will be used. 
 
-You can click the Currency ID expansion button to enter or select an exchange rate to use.
+    You can click the Currency ID expansion button to enter or select an exchange rate to use.
 
 9.	For each line item on the billing invoice, select the projects to bill the customer for.
 
-You bill only projects that use the same billing currency as the currency ID that you selected in the Currency ID field.
+    You bill only projects that use the same billing currency as the currency ID that you selected in the Currency ID field.
 
 10.	Click the Billings expansion button to select the cost categories to bill for the project and to modify billing amounts. 
 11.	Click the Fees expansion button to select the fees to bill for a project and to modify fee billing amounts. 
@@ -6416,7 +6414,7 @@ You bill only projects that use the same billing currency as the currency ID tha
 18.	Click Distribution to modify the allocation of transaction amounts to specific posting accounts. 
 19.	You can click Print to print the billing invoice. The billing format that will be used depends on the billing formats that you’ve selected for the customer, contract, or project that the billing invoice is for. The printer that will be used depends on the printer that you specified for the user that is printing. 
 
-Use the Print Billing Range window to print a batch of billing invoices. 
+    Use the Print Billing Range window to print a batch of billing invoices. 
 
 20.	If the transaction is in a batch, click Save. Otherwise, click Post.
 
