@@ -99,6 +99,8 @@
 ## Project Accounting
 ### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
 ### [Project Accounting Cost Management](distribution/ProjAcctCostManagement.md)
+### [Project Accounting Billing Guide](distribution/ProjAcct-billing-cycles.md)
+### [Project Accounting - Accounting Control Guide](distribution/ProjAcctAccountingControl.md)
 
 <!--- payroll -->
 ## Payroll
