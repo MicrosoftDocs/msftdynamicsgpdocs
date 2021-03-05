@@ -26,16 +26,9 @@ Starting with the Dynamics GP October 2020 release, you will have the ability to
     <img src="media/image49.png" alt="App registration form in Azure portal" width="673" height="276" />
 
 4. You will then choose settings for your new application.
+    a. Enter a display name for the application (e.g. GPMFAApp)
+    b. For **Supported account types** select the second option (**Account in any organizational directory (Any azure AD account – Multitenant)**) for most all configurations.             Choosing the wrong option can lead to an Unknown Error when using MFA in Dynamics GP.
 
-    1. Enter the name of Application Name (e.g. GPMBAApp)
-
-    2. Support account types: Based on the domain or accounts used in the organization, user can select the respective option.
-
-    3. Account in any organizational directory (Single tenant)
-
-    4. Account in any organizational directory (Any azure AD account – Multitenant)
-
-    5. Account in any organizational directory (Any azure AD account – Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox).
 
     <img src="media/image51.png" alt="Account types in wizard for registering an app" width="437" height="320" />
 
