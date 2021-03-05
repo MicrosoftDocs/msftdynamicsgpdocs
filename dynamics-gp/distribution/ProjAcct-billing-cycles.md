@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/04/2021
+ms.date: 03/05/2021
 ---
 
 # Project Accounting Billing Guide
@@ -25,7 +25,7 @@ When you use a billing cycle, you must specify whether to limit billing to the c
 
 You also can enter a batch of billing invoices manually, if necessary. 
 
-## Creating a billing cycle
+### Creating a billing cycle
 
 You can create billing cycles that you can use to generate billing invoices. 
 
@@ -40,7 +40,7 @@ You can create billing cycles that you can use to generate billing invoices.
 
 This part of the documentation includes information for an accounts receivable administrator about invoice formats and how to specify the information to include on them for printing billing invoices. It also includes information about grouping invoice formats into billing formats so that when you print billing invoices, all invoice formats in the billing format will be included.
 
-## Invoice formats
+### Invoice formats
 
 An invoice format is the framework that contains information for the layout and content of a printed billing invoice. There are 55 predefined invoice formats. The invoice formats that you can choose from are listed in the Standard Billing Reports Lookup window (Tools > Setup > Project > Billing > Billing Report button > Billing Report Key lookup button).
 
@@ -52,7 +52,7 @@ You can specify the content to be included on an invoice format.
 
 You also can use Report Writer to modify the layout of invoice formats, including five blank invoice formats. 
 
-## Specify information to include on an invoice format
+### Specify information to include on an invoice format
 
 You can specify the information to include on an invoice format
 
@@ -86,7 +86,7 @@ You can specify the information to include on an invoice format
 9. Click Print Setup to specify settings for users and printers for the invoice format. 
 10. Click Save and close the window.
 
-## Specify information to include for cost transactions on an invoice format
+### Specify information to include for cost transactions on an invoice format
 
 You can specify information to include for cost transactions on an invoice format.
 
@@ -116,7 +116,7 @@ You can specify information to include for cost transactions on an invoice forma
 
 5. Click OK.
 
-## Options for summarizing cost transaction information on invoice formats
+### Options for summarizing cost transaction information on invoice formats
 
 When you specify information to include for cost transactions on an invoice format, you can select how the information should be summarized, as outlined in the following table.  
 
@@ -177,7 +177,7 @@ When you set up cost transactions for tracking project costs billing customers, 
 
     Use the billing note entered for a cost category record.
 
-## Group invoice formats into a billing format
+### Group invoice formats into a billing format
 
 You can create a group of invoice formats, called a billing format. You can assign billing formats to customers, contracts, and projects and to individual billing cycles for those customers, contracts, and projects. When you print billing invoices, all invoice formats in the billing format will be included.
 
@@ -193,7 +193,7 @@ You can create a group of invoice formats, called a billing format. You can assi
 This part of the documentation includes information for an accounts receivable administrator about how to set up Project Accounting to bill customers for projects.  
 It also includes information about how to grant all users permission to various data entry options for billing invoices and billing returns.
 
-## Configure general settings for billing customers
+### Configure general settings for billing customers
 
 You can configure general settings for billing customers, such as how to calculate taxes on billing invoices.
 
@@ -245,7 +245,7 @@ You can configure general settings for billing customers, such as how to calcula
 20. Click RR Options to grant revenue recognition transaction data entry permissions. 
 21. Click OK.
 
-## Grant billing invoice and return data entry permissions
+### Grant billing invoice and return data entry permissions
 
 You can grant all users permission to various data entry options for billing invoices and billing returns. You also can require a password for each data entry option to limit user access.
 
@@ -262,13 +262,13 @@ You can grant all users permission to various data entry options for billing inv
 
 3. Click OK.
 
-## Set up a customer class for billing
+### Set up a customer class for billing
 
 You can use the PA Customer Class Options window (Tools > Setup > Sales > Customer Class > Project button) to set up a customer class for billing. If you assign a customer to the class, the customer record will inherit information from the class.
 
 The window is similar to the PA Customer Options window. 
  
-## Set up a customer record for billing
+### Set up a customer record for billing
 
 You can set up a customer record for billing.
 
@@ -285,19 +285,23 @@ You also can assign billing cycles to contracts and projects.
  
 
 ## Billing processes
+
 This part of the documentation includes information for an accounts receivable administrator about how to bill customers for projects. It also includes information about how to apply customer payments to billing invoices and to project balances, and how to determine the number of days that billing amounts are past due. You also can suspend billing for customers, contracts, and projects.
 
 ## Billing invoices
+
 This part of the documentation includes information for an accounts receivable administrator about creating and printing billing invoices to bill customers for project costs.
 
-## Default billing formats for customers, contracts, and projects
+### Default billing formats for customers, contracts, and projects
+
 The billing format that will be used when you print billing invoices depends on the billing formats that you've selected for customers, contracts, and projects. 
 
 You can select the overall default billing format in the Biller Setup window. The default billing format will be used when you print billing invoices if no billing format has been specified for a customer, contract, or project. 
 
 The billing format that you specify for a customer will be the default billing format for contracts for that customer. 
 
-## Use a billing cycle to generate billing invoices
+### Use a billing cycle to generate billing invoices
+
 You can generate a batch of billing invoices using a billing cycle. 
 
 You can generate billing invoices for a customer, even though the customer record is on hold. 
@@ -335,7 +339,7 @@ Before you generate billing invoices, you can age customer balances and the Work
 
 9. Click Process.
 
-## Enter or modify a billing invoice
+### Enter or modify a billing invoice
 You can enter a billing invoice manually. However, we recommend that you use billing cycles to generate a batch of billing invoices using the billing frequency that you specified for the billing cycle. After the batch of billing invoices has been generated, you can modify the individual billing invoices, as necessary.
 
 The data that you can enter depends on the permissions that you've been granted. 
@@ -348,7 +352,7 @@ You can use the Billing Inquiry window (Inquiry > Project > PA Transaction Docum
 1. Open the Billing Entry window.  Transactions > Project > Billing > Billing Entry
 2. Select the Invoice transaction type.
 
-    Select the TM Return transaction type to modify amounts on a billing invoice for a Time and Materials project. In the Reference Document No. field, enter the document number for the billing invoice that you're modifying amounts for.
+Select the TM Return transaction type to modify amounts on a billing invoice for a Time and Materials project. In the Reference Document No. field, enter the document number for the billing invoice that you're modifying amounts for.
 
 3. Enter a document number and date.
 4. Enter or select a batch ID. 
@@ -380,6 +384,288 @@ You can use the Billing Inquiry window (Inquiry > Project > PA Transaction Docum
     Use the Print Billing Range window to print a batch of billing invoices.  
 
 20. If the transaction is in a batch, click Save. Otherwise, click Post.  
+
+
+### Select line items to bill and modify billing amounts for a Time and Materials project
+
+You can select the line items to bill and modify billing amounts on a billing invoice for a Time and Materials project.
+
+> [!NOTE]
+> Use the Time and Materials Billing Inquiry window (Inquiry > Project > PA Transaction Documents > T&M Billing) to view billing invoice line item details for Time and Materials projects.
+
+1.	Open the Time and Materials Billing window.   Transactions > Project > Billing > Billing Entry > select a Time and Materials project > Billings expansion button
+2.	Select the cost transactions to display line items for in the scrolling window.
+
+   The amounts and percentages displayed in the Current column are totals for all posted cost transactions for the employee, equipment, miscellaneous, or vendor record that is listed in the Cost Owner column for the project. Click the Cost Owner expansion button to view a list of the cost transaction line items that have been entered for the cost owner.
+
+3.	In the Bill column, select the check box for line items to bill. Click Bill All or Do Not Bill All to select or clear all check boxes.
+
+   If the line item is for a change order, C- will be displayed next to the date in the Date column. You can’t select a change order line item for billing if the status of the corresponding change order is Unapproved. 
+
+4.	In the Write Up/Down $ or Write Up/Down % column, enter a positive write- up amount or percentage or a negative write-down amount or percentage to modify the total amount to be billed.
+
+   If you enter a write-up amount or percentage and you’ve selected Recalculate Billing Rate during write up in TM in the Billing Settings window, the billing rate or markup percentage will be recalculated. If you haven’t selected this option, the quantity for the line item will be adjusted.
+
+   If you enter a write-down amount or percentage and you’ve selected Recalculate Billing Rate during write down in TM in the Billing Settings window, the billing rate or markup percentage will be recalculated. If you haven’t selected this option, the quantity for the line item will be adjusted.
+
+
+5.	You can modify the quantity and amount to bill.   You can choose Extras > Options > Split or press CTRL + S to bill a partial quantity. 
+6.	You can modify the tax schedule used to calculate taxes for the line item.
+
+   You can click the Tax Amount expansion button to modify tax details for the tax schedule for the line item.
+
+7.	You can modify the trade discount amount for the line item.
+8.	You can modify the billing type for the line item. 
+9.	A visual cue will be displayed in the Billing Rate column if the line item is for a Time and Materials project that uses the Billing Rate profit type. 
+10. A visual cue will be displayed in the Markup% column if the line item is for a Time and Materials project that uses the Markup % profit type. You can modify the markup percentage. 
+11.	Click OK.
+
+### Bill a partial quantity for a billing invoice line item for  a Time and Materials project
+
+You can bill a partial quantity for a billing invoice line item for a Time and Materials project.
+
+1.	Open the Time and Materials Billing window by choosing Transactions > Project > Billing > Billing Entry > select a Time and Materials project > Billings expansion button
+2.	Select the cost transactions to display line items for in the scrolling window.
+3.	Select the line item to bill a partial quantity for and choose Extras > Options > Split or press CTRL + S to open the Billing Entry Split window.
+4.	In the Move to Split field, enter the quantity to create a new billing invoice line item for. The original line item will be reduced by the quantity that you enter.
+5.	Click OK. The line item in the Time and Materials Billing window will be split into two line items. Select the check box in the Bill column for line items to bill.
+
+### Modify billing amounts for cost categories for a Cost Plus or Fixed Price project
+
+You can modify billing amounts for cost categories for a Cost Plus or Fixed Price project. Billing amounts for Cost Plus and Fixed Price projects are determined by a percentage of completion calculation. 
+
+You can use the Progress Billing Inquiry window (Inquiry > Project > PA Transaction Documents > Progress Billing) to view billing invoice line item details for Cost Plus and Fixed Price projects.
+
+1.	Open the Progress Billing Entry window by choosing Transactions > Project > Billing > Billing Entry > select a Cost Plus or Fixed Price project > Billings expansion button
+2.	Select the cost transactions to display cost categories for in the scrolling window.
+
+   If the cost category includes amounts from a change order, C- will be displayed next to the cost category ID in the Cost Category ID column. The cost category won’t be billed if the status of the corresponding change order is Unapproved. 
+
+3.	You can modify billing amounts.
+4.	You can modify the tax schedule used to calculate taxes for a cost category.
+
+   Choose the Tax expansion button to modify tax details for the tax schedule for the cost category.
+
+5.	If the project includes a Retentions fee and the project status is Completed, you can modify the retention amount for a cost category.
+
+   You can click Recalculate to display the original amounts that were calculated for the cost categories before you made changes.
+
+6.	Click OK.
+
+### Select fees to bill and modify fee billing amounts for a project
+
+You can select the Project, Retainer, and Service fees to bill for a project and modify fee billing amounts on a billing invoice. To modify Retentions fee billing amounts for Cost Plus and Fixed Price projects, use the Progress Billing Entry window. 
+
+You can use the Billable Fees Inquiry window (Inquiry > Project > PA Transaction Documents > Fee Billing) to view fees billed for projects.
+
+1.	Open the Billable Fees window by choosing Transactions > Project > Billing > Billing Entry > Fees field > select a Project Number > Fees expansion button
+
+   The fees to be billed for the project will be displayed.
+
+   If a fee is the result of a change order, C- will be displayed next to the fee ID in the Fee ID column. The fee won’t be billed if the status of the corresponding change order is Unapproved. 
+
+2.	You can modify the billing note for a fee.
+3.	You can modify billing amounts.
+4.	You can modify the tax schedule used to calculate taxes for a fee.
+
+   You can click the Tax Amount expansion button to modify tax details for the tax schedule for the fee.
+
+5.	If a Project fee includes a retention amount and the status for the project that the fee is assigned to is Completed, you can modify the retention amount for the fee.
+
+   You can click Default to display the original amounts for the fees before you made changes.
+
+6.	Click OK.
+
+### Enter payments, taxes, and other charges for a billing invoice
+
+You can enter payments, taxes, and other charges for a billing invoice.
+
+1.	Open the Billing Entry – More Info window.   Transactions > Project > Billing > Billing Entry > More Info button
+2.	Enter freight and miscellaneous charges for the billing invoice. Click the Freight or Miscellaneous expansion button to specify whether an amount is taxable, non-taxable, or based on the tax schedule for the customer record. If you select Taxable, select a tax schedule.
+3.	Click the Total Tax expansion button to view information about the tax details that are included in calculating tax for the billing invoice.
+4.	Click the Applied Retainer expansion button to enter the Retainer fee amount to be credited to the billing invoice. The On Account Amount in the Retainer Billings window includes Retainer fee amounts that have been paid by the customer. 
+5.	Select the payment terms for the billing invoice. You can click the Payment Terms ID expansion button to enter the amount or percentage discount that the customer will receive if payment terms are met.
+6.	Select a shipping method.
+7.	Enter cash, check, and credit card payments that have been made for the billing invoice. You can click the Cash, Check, or Credit Card expansion button to enter additional information about the payment.
+8.	If the customer will be given a discount for the billing invoice, enter the amount in the Terms Disc Taken field.
+9.	Click OK.
+
+### Modify salespeople commissions for a billing invoice
+
+You can modify the commission amounts that salespeople will receive for a billing invoice. And while you can assign only one salesperson per contract, you can use the Commission Detail window to divide commissions among multiple salespeople. 
+
+1.	Open the Billing Commissions window by choosing Transactions > Project > Billing > Billing Entry > Commissions button
+2.	Select a contract and click the Total Commissions expansion button to open the Commission Detail window.
+3.	Select the salespeople to receive commissions for the billing invoice. Select the sales territories to track commissions for.
+4.	In the Percent of Billing column, enter the percentage of the total billing amount to calculate commissions on or modify the total billing amount in the Commission Billing Amt column. Enter the percentage commission that a salesperson will receive in the Commission Percent column.
+
+   The Commission Amount column will be updated based on your entries.
+
+5.	Click OK.
+
+### Modify billing amounts for a posted billing invoice for a Time and Materials project
+
+You can use the TM Return billing transaction type to modify billing amounts for a posted billing invoice for a Time and Materials project.
+
+1.	Open the Billing Entry window by choosing Transactions > Project > Billing > Billing Entry
+2.	Select the TM Return transaction type.
+3.	Enter a document number and date.
+4.	Enter or select a batch ID. 
+5.	In the Reference Document No. field, enter the document number for the billing invoice that you're modifying amounts for.
+6.	Select a project to modify billing amounts for.
+7.	Click the Billings expansion button to open the Time and Materials Return window.
+8.	Select the cost transactions to display line items for in the scrolling window.
+
+   The amounts and percentages displayed in the Invoiced column are totals for all posted billing invoice line items for the employee, equipment, miscellaneous, or item record that is listed in the Cost Owner column for the project. Click the Cost Owner expansion button to view a list of the billing invoice line items that have been entered.
+
+9.	In the **Rtn** column, select the check box for line items to return. Choose **Return All** or **Do Not Return All** to select or clear all check boxes.
+
+10.	You can modify the quantity for the line item.
+11.	You can modify the tax schedule used to calculate taxes for the line item.
+
+   Choose the **Tax Amount** expansion button to modify tax details for the tax schedule for the line item.
+
+12.	You can modify the trade discount amount for the line item.
+13.	Click OK.
+
+### Modify payments and charges for a posted invoice for a Time and Materials project
+
+You can use the TM Return billing invoice transaction type to modify payments, taxes, and other charges for a posted billing invoice for a Time and Materials project.
+
+1.	Open the Billing Entry window by choosing Transactions > Project > Billing > Billing Entry
+2.	Select the TM Return transaction type.
+3.	Enter a document number and date.
+4.	Enter or select a batch ID. 
+5.	In the Reference Document No. field, enter the document number for the billing invoice that you're modifying amounts for.
+6.	Click More Info to open the Billing Entry - More Info window.
+7.	Modify freight and miscellaneous charges. Click the Freight or Miscellaneous expansion button to specify whether an amount is taxable, non-taxable, or based on the tax schedule for the customer record. If you select Taxable, select a tax schedule.
+8.	Click the Total Tax expansion button to view information about the tax details that are included in calculating tax.
+9.	Select a shipping method.
+10.	Modify cash, check, and credit card payments that have been made for the billing invoice. You can click the Cash, Check, or Credit Card expansion button to enter additional information about the payment.
+11.	In the Discount Returned field you can modify the discount that the customer was given for the billing invoice.
+12.	Click OK.
+
+## Print billing invoices
+
+You can print a batch of billing invoices or select a range of document numbers to print billing invoices for.
+
+1.	Open the Print Billing Range window.  Transactions > Project > Billing > Print Biller Documents
+2.	Select whether to print Work (saved) or Open (posted) billing invoices, or invoices that have been moved to history. 
+3.	Select Document Range to print billing invoices based on a range of document numbers and enter the range. Select Batch to print a batch of billing invoices and select the batch.
+4.	Choose the billing format to use.
+
+   - Choose a billing format, and then choose **Override** to use that billing format instead of the billing formats that have been assigned to the customers, contracts, or projects that the billing invoices are for.
+
+   - Select **Use Document Bill Format** to use the billing formats that have been assigned to the customers, contracts, or projects that the billing invoices are for.
+
+   - Select **Multicurrency** to use the version of the billing format that is set up for multiple currencies. You must have Include Multicurrency Info selected in the Posting Setup window (Tools > Setup > Posting > Posting) for the Billing Entry origin for the Project series. See the System Setup documentation (Help > Printable Manuals) for more information.
+
+5.	In the Collate by and then by lists, select the sequence to print the billing invoices in.
+6.	Click Print.
+ 
+## Applying and aging
+
+This part of the documentation includes information for an accounts receivable administrator about applying payments from customers to projects. It also includes information about how to use aging to determine the number of days that billing invoice balances are past due and the number of days that work in progress and accrued revenue amounts have remained unbilled.
+
+### Apply payments, credits, and returns to billing invoices and project balances
+
+You can apply customer payments, credit memos, and billing returns to billing invoices and project balances.
+
+You can use the Billings and Payments Inquiry window (Inquiry > Project > PA Transaction Documents > Billings and Payments) to view billing invoices and customer payments for projects.
+
+1.	Open the Apply Sales Documents window by choosing Transactions > Sales > Apply Sales Documents
+2.	Select a customer ID.
+3.	Select the document type and the document number to apply.
+4.	Enter an apply date.
+5.	Select the billing invoices to apply amounts to. You can modify the amount to apply in the Apply Amount column. You also can enter amounts in the Terms Taken and Writeoffs columns to increase or decrease the amount remaining to be applied to the billing invoice.
+6.	Click the Apply Amount expansion button to select the projects to apply amounts to. The Apply Projects window will open.
+7.	In the Default Apply First To list, select whether to apply amounts first to cost categories in project budgets or to fees for projects.
+8.	In the scrolling window, select the projects to apply amounts to. You can click Auto Apply to distribute amounts among projects in the scrolling window. Click Unapply to clear applied amounts for all projects in the scrolling window.
+9.	You can modify the amounts to be applied to cost categories in project budgets or to fees for projects.
+10. You can modify the discounts or writeoff amounts to be applied to each project.
+11. Click OK to close the Apply Projects window.
+12. Click OK to close the Apply Sales Documents window.
+
+### Age billing invoice balances
+
+You can age billing invoice balances to determine the number of days that the balances are past due. To be sure that calculations are accurate, you must enter and post all billing returns and customer payments before aging balances.
+
+1.	Open the Project Aging Process window.   Tools > Routines > Project > Aging
+2.	Enter the date to age balances from. The document date for each billing invoice will be compared to this date to determine the age of each document.
+
+   Use the Receivables Management Setup window (Tools > Setup > Sales > Receivables) to set up aging periods
+
+3.	Select the customers to include billing invoices for.
+4.	An aging report will be printed after you age balances. Select Detailed to list billing invoices for each customer or Summary to display only customer totals. Select No Report to age without printing a report.
+5.	Click Process.
+
+### Age work in progress amounts for projects that use the When Billed accounting method
+
+You can age work in progress amounts for cost transactions to determine the number of days that the amounts have remained unbilled for Time and Materials projects that use the When Billed accounting method.
+
+To be sure that calculations are accurate, you must post all cost transactions before aging work in progress amounts.
+
+1.	Open the Project Aging WIP Process window.   Tools > Routines > Project > Aging WIP
+2.	Enter the date to age work in progress amounts from. The document date for each cost transaction will be compared to this date to determine the age of each document.
+
+   Use the Receivables Management Setup window (Tools > Setup > Sales > Receivables) to set up aging periods. 
+
+3.	Select the customers to include work in progress for.
+4.	A report will be printed after you age work in progress amounts. Select whether to summarize work in progress by customer, contract, project, or cost category.
+5.	Click Process.
+ 
+
+### Age unbilled accrued revenue amounts for Time and Materials projects
+
+You can age accrued revenue amounts for cost transactions to determine the number of days that accrued revenue amounts have remained unbilled for Time and Materials projects that use the When Billed or When Performed accounting method.
+
+1.	Open the Project Aging Accrued Revenue window.  Tools > Routines > Project > Aging Accrued Revenues
+2.	Enter the date to age accrued revenue amounts from. The document date for each cost transaction will be compared to this date to determine the age of each document.
+
+   Use the Receivables Management Setup window (Tools > Setup > Sales > Receivables) to set up aging periods. 
+
+3.	Select the customers to include accrued revenue for.
+4.	A report will be printed after you age accrued revenue amounts. Select whether to summarize accrued revenue by customer, contract, project, or cost category.
+5.	Click Process.
+
+
+## Billing suspension
+
+This part of the documentation includes information for an accounts receivable administrator about how to suspend billing for customers, contracts, and projects.
+
+When you suspend billing, you can’t enter or post billing transactions for the project or projects until you clear the Closed to Billings option for the customer, contract, or project record.
+
+The following topics are discussed:
+
+•	Suspend billing for a customer
+•	Suspend billing for a contract
+•	Suspend billing for a project
+
+### Suspend billing for a customer
+
+You can suspend billing for a customer. When you close a customer record to billing, billing transactions can’t be entered or posted for projects for the customer.
+
+1.	Open the PA Customer Options window by choosing  Cards > Sales > Customer > select a Customer ID > Project button
+2.	Select Closed to Billings.
+3.	Click OK.
+
+### Suspend billing for a contract
+
+You can suspend billing for a contract. When you close a contract to billing, billing transactions can’t be entered or posted for projects for the contract.
+
+1.	Open the Contract Maintenance window by choosing Cards > Project > Contract
+2.	Select a customer ID and enter a contract ID.
+3.	Select Closed to Billings.
+4.	Click Save and close the window.
+
+### Suspend billing for a project
+
+You can suspend billing for a project. When you close a project to billing, billing transactions can’t be entered or posted for the project.
+
+1.	Open the Project Maintenance window.  Cards > Project > Project
+2.	Select a project number.
+3.	Select Closed to Billings.
+4.	Click Save and close the window.
 
 ## See also
 
