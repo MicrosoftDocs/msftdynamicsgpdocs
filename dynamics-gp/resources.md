@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 02/17/2021
+ms.date: 03/9/2021
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -89,7 +89,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Software Lifecycle Policy for Microsoft Dynamics GP](terms/lifecycle.md)  
 
-- [Microsoft Dynamics GP GDPR white paper](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5068db5f-cc6b-45d9-9916-fb8dcd801d03&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- [Microsoft Dynamics GP GDPR white paper](https://docs.microsoft.com/en-us/dynamics/s-e/gp/mdgp2010_whitepaper_performance)
 
 - [Microsoft Dynamics GP VIDEO Learning](https://mbs.microsoft.com/_layouts/15/DocIdRedir.aspx?ID=MBSDYN-3-11073)
 
