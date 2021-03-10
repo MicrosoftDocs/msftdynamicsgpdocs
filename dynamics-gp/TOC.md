@@ -132,7 +132,7 @@
 <!--- installation -->
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)
-#### [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)
+#### [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)
 #### [System requirements](upgrade/system-requirements.md)
 #### [Network configuration](installation/network-configuration.md)
 #### [SQL Server configuration](installation/microsoft-sql-server-configuration.md)
