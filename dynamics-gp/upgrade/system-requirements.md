@@ -17,7 +17,7 @@ ms.reviewer:
 This chapter contains a list of prerequisites and system requirement changes for Dynamics GP, as well as disk space requirements for SQL Server computers.
 
 > [!NOTE]
-> Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software will improve performance. For more information, see [Core System Requirements for Microsoft Dynamics GP](../installation/system-requirements-core.md).  
+> Recommended system requirements depend on the number of users and transactions. If there will be many users performing concurrent tasks, such as depreciation, posting, or heavy reporting, enhancing your hardware and system software will improve performance.  
 
 ## Releases supported by the upgrade
 
@@ -27,11 +27,11 @@ If you are upgrading to Dynamics GP, you must install the latest update or hotfi
 
 ## System requirement changes
 
-The following changes are new with Dynamics GP. For a complete list of all system requirements, see [System Requirements for Microsoft Dynamics GP (Complete)](../installation/system-requirements-core.md). You may want to consider upgrading your hardware for improved performance.
+The following changes are new with Dynamics GP. You may want to consider upgrading your hardware for improved performance.
 
-### Operating system requirement changes
+<!--### Operating system requirement changes
 
-For the latest updates of supported client operating system changes, see [Core System Requirements for Microsoft Dynamics GP](../installation/system-requirements-core.md).
+For the latest updates of supported client operating system changes, see [Core System Requirements for Microsoft Dynamics GP](../installation/system-requirements-core.md).-->
 
 ### Database configuration changes
 
@@ -169,7 +169,7 @@ You also should refer to the documentation provided by Citrix for more informati
 For the upgrade process, be sure that you have enough disk space before you begin. To determine the disk space required for the upgrade, you need to find the size of the largest table for all Dynamics GP databases. To determine disk space, use Microsoft SQL Server Management Studio for Microsoft SQL Server.
 
 > [!NOTE]
-> You can download an upgrade preparation script that will help you determine the disk space requirements from <https://docs.microsoft.com/dynamics/s-e/>. For more information about disk space, see [Core System Requirements for Microsoft Dynamics GP](../installation/system-requirements-core.md).  
+> You can download an upgrade preparation script that will help you determine the disk space requirements from <https://docs.microsoft.com/dynamics/s-e/>.  
 
 To determine disk space for the upgrade process using Microsoft SQL Server Management Studio:
 
@@ -235,5 +235,4 @@ To determine disk space for the upgrade process using Microsoft SQL Server Manag
 
 ## See also
 
-[Core System Requirements for Microsoft Dynamics GP](../installation/system-requirements-core.md)  
 [Upgrade checklist](upgrade-checklist.md)  

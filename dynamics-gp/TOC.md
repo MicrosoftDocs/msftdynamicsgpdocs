@@ -103,9 +103,12 @@
 ### [Project Accounting - Accounting Control Guide](distribution/ProjAcctAccountingControl.md)
 
 <!--- payroll -->
-## Payroll
-### [Advanced Payroll](payroll/AdvancedPayroll.md)
+## Payroll and Human Resources
+### [Human Resources](payroll/HumanResource.md)
+### [Human Resources - Company Setup and Organizational Structure](payroll/human-resources-company-setup.md)
+### [Human Resources - Position Control Setup](payroll/human-resources-position-control.md)
 ### [Advanced Human Resource](payroll/AdvancedHumanResource.md)
+### [Advanced Payroll](payroll/AdvancedPayroll.md)
 ### [Canadian Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
 ### [U.S. Payroll](payroll/PayrollUS.md)
@@ -117,7 +120,7 @@
 ### [Position Control](payroll/PositionControl.md)
 
 <!-- Manufacturing-->
-## Discreet Manufacturing
+## Discrete Manufacturing
 ### [Manufacturing Setup - Part 1: Manufacturing setup](distribution/manufacturing-setup-part-1.md)
 ### [Manufacturing Setup - Part 2: User setup](distribution/manufacturing-setup-part-2.md)
 ### [Manufacturing Setup - Check data and correct errors](distribution/manufacturing-setup-checkdata.md)
@@ -129,7 +132,7 @@
 <!--- installation -->
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)
-#### [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)
+#### [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)
 #### [System requirements](upgrade/system-requirements.md)
 #### [Network configuration](installation/network-configuration.md)
 #### [SQL Server configuration](installation/microsoft-sql-server-configuration.md)

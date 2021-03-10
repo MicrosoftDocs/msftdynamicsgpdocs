@@ -311,7 +311,7 @@ You can now insert rows from Excel into the General Journal using the Dynamics G
 
 ## See also
 
-[System requirements](../installation/system-requirements-core.md)  
+[System requirements](../upgrade/system-requirements.md)  
 [Upgrade introduction](../upgrade/introduction.md)  
 [Dynamics GP community on https://community.dynamics.com](https://community.dynamics.com/gp)  
 [Dynamics GP User Group](https://www.gpug.com/home)  

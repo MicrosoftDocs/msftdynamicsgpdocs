@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 02/17/2021
+ms.date: 03/10/2021
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -38,7 +38,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
   Includes Install, Upgrade and What's New Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
-- [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)
+- [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)
 - [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
 - [US Taxes](/dynamics/s-e/gp/tugp2018_391)
@@ -57,7 +57,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
   Includes Install, Upgrade and What's New Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2018](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
-- [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)  
+- [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)  
 - [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
 - [US Taxes](/dynamics/s-e/gp/tugp2018_391)
@@ -78,7 +78,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
   Includes Install, Upgrade, and Azure Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_PatchReleases_370)
-- [Core System Requirements for Microsoft Dynamics GP](installation/system-requirements-core.md)  
+- [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)  
 - [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2016_395)  
 - [US Taxes](/dynamics/s-e/gp/tugp2016_390)  
@@ -89,13 +89,13 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Software Lifecycle Policy for Microsoft Dynamics GP](terms/lifecycle.md)  
 
-- [Microsoft Dynamics GP GDPR white paper](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5068db5f-cc6b-45d9-9916-fb8dcd801d03&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- [Microsoft Dynamics GP GDPR white paper](/dynamics/s-e/gp/mdgp2010_whitepaper_performance)
 
 - [Microsoft Dynamics GP VIDEO Learning](https://mbs.microsoft.com/_layouts/15/DocIdRedir.aspx?ID=MBSDYN-3-11073)
 
 - [Professional Services Tools Library (PSTL) and other FREE Tools](/dynamics/s-e/gp/noam_pstl_delta)
 
-- [Microsoft Dynamics GP Performance white paper](https://docs.microsoft.com/dynamics/s-e/)
+- [Microsoft Dynamics GP Performance white paper](/dynamics/s-e/)
 
 - [Product Release Downloads for Microsoft SQL Server](https://businesscenter.mbs.microsoft.com/#contentdetail/SQLdownloadOverview)
 
