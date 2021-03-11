@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/10/2021
+ms.date: 03/11/2021
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -89,13 +89,9 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Software Lifecycle Policy for Microsoft Dynamics GP](terms/lifecycle.md)  
 
-- [Microsoft Dynamics GP GDPR white paper](/dynamics/s-e/gp/mdgp2010_whitepaper_performance)
-
-- [Microsoft Dynamics GP VIDEO Learning](https://mbs.microsoft.com/_layouts/15/DocIdRedir.aspx?ID=MBSDYN-3-11073)
-
 - [Professional Services Tools Library (PSTL) and other FREE Tools](/dynamics/s-e/gp/noam_pstl_delta)
 
-- [Microsoft Dynamics GP Performance white paper](/dynamics/s-e/)
+- [Microsoft Dynamics GP Performance white paper](/dynamics/s-e/gp/mdgp2010_whitepaper_performance)
 
 - [Product Release Downloads for Microsoft SQL Server](https://businesscenter.mbs.microsoft.com/#contentdetail/SQLdownloadOverview)
 
