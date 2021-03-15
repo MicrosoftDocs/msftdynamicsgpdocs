@@ -99,43 +99,25 @@ include the following scenarios and if one of these scenarios is
 encountered, the system prompts with "This code is open by another user.
 Please try again later."
 
-**Multi User Access Denied Scenarios:**
+Access denied scenarios:
 
-- If the benefit code is opened in the Future Effective mode in the
+- If the benefit code is opened in the Future Effective mode in the Human Resources Benefit Setup, Payroll Benefit Setup or Payroll Deduction Setup window, no other employee is able to open that benefit code in any of the three areas at the core setup level.
 
-Human Resources Benefit Setup, Payroll Benefit Setup or Payroll Deduction
-Setup window, no other employee is able to open that benefit code in any of
-the three areas at the core setup level.
+- If more than one employee currently has the benefit code open in the Human Resources Benefit Setup, Payroll Benefit Setup or Payroll Deduction Setup
+    window and there is an attempt to create a new or display the existing Future Effective record in any of the three areas for that benefit code.
 
-- If more than one employee currently has the benefit code open in the Human
-    Resources Benefit Setup, Payroll Benefit Setup or Payroll Deduction Setup
-    window and there is an attempt to create a new or display the existing
-    Future Effective record in any of the three areas for that benefit code.
+When the Human Resources to Payroll Integration is happening for a Future Effective record, if another employee would open that benefit code in one of the subsequent windows before the Human Resources to Payroll Integration gets to that level, when the Human Resources to Payroll Integration hits that level, the integration is stopped.
 
-When the Human Resources to Payroll Integration is happening for a Future
-Effective record, if another employee would open that benefit code in one of
-the subsequent windows before the Human Resources to Payroll Integration
-gets to that level, when the Human Resources to Payroll Integration hits
-that level, the integration is stopped.
+## Certification, License, and Training Manager
 
-## Certification, License and Training Manager
+The Certification, License, and Training Manager tracks all Certifications, Licensing and Training requirements. This product completes certain areas
+and fills additional areas that core Microsoft Dynamics GP skills and certification tracking does not currently handle.
 
-The Certification, License and Training Manager tracks all Certifications,
-Licensing and Training requirements. This product completes certain areas
-and fills additional areas that core Microsoft Dynamics GP skills and
-certification tracking does not currently handle.
-
-Certification, License and Training Manager integrates with Microsoft
-
-Dynamics GP Human Resources. The Certification, License and Training Manager
-will create the link between the skills, training and certifications as well
-as provide a means to track employee certifications, licensing and training.
-It will also enable the tracking of certifications or licenses to the extent
-of reporting on expiration, renewal periods and whether the certifications
-or licenses are required. You may query on required certifications,
-licenses, training and dates of expiration. In addition, you may query on a
-specific list of employees with a particular certification, license or
-training.
+Certification, License and Training Manager integrates with Microsoft Dynamics GP Human Resources. The Certification, License and Training Manager
+will create the link between the skills, training and certifications as well as provide a means to track employee certifications, licensing and training.
+It will also enable the tracking of certifications or licenses to the extent of reporting on expiration, renewal periods and whether the certifications
+or licenses are required. You may query on required certifications, licenses, training and dates of expiration. In addition, you may query on a
+specific list of employees with a particular certification, license or training.
 
 ### Features in Certification, License, and Training Manager
 
@@ -247,7 +229,7 @@ for a particular immunization, vaccination or test. The requirements per
 employee are more easily assigned and tracked by the utilization of health
 and wellness templates.
 
-## Features in Employee Health and Wellness Manager
+### Features in Employee Health and Wellness Manager
 
 The features and capabilities of Employee Health and Wellness Manager include:
 

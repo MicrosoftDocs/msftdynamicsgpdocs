@@ -73,7 +73,7 @@ To open the Training History window, click the **HR and Payroll** series
 button, click **Human Resources** on the Inquiry content pane and then click
 **Training History**.
 
-### FIGURE 4.3 TRAINING HISTORY WINDOW
+<!--### FIGURE 4.3 TRAINING HISTORY WINDOW-->
 
 > [!NOTE]
 > Training that the employee has taken will appear on the Employee Training window.
@@ -88,9 +88,7 @@ for all positions within a department vs. position by position. To open this
 window, click the **HR and Payroll** series button, click **Human
 Resources** on the Inquiry content pane and then click **Percent Current**.
 
-IMAGE - ADVHRPC.jpg
-
-![A screenshot of a cell phone Description automatically generated](media/232fbd0fb458f93e27b3d063fe7c83c6.jpg)
+<!--![IMAGE - ADVHRPC.jpg](media/232fbd0fb458f93e27b3d063fe7c83c6.jpg)-->
 
 Enter or select a **Department** and **Position**.
 
@@ -131,11 +129,9 @@ Enter or select a **Code**, **Employee ID** and **Expiration Date**.
 Select the **Printer** button to print the Percent Current Inquiry Report
 and Percent Current Totals Report.
 
-IMAGE – ADVHRPCR.jpg and ADVHRPCR2.jpg
+<!--![IMAGE – ADVHRPCR.jpg](media/69da87abc6a0daeda941826219b9d7e4.jpg)-->
 
-![A screenshot of a cell phone Description automatically generated](media/69da87abc6a0daeda941826219b9d7e4.jpg)
-
-![A screenshot of a cell phone Description automatically generated](media/84f06a0657467fa18d5077df794f1753.jpg)
+<!--![ADVHRPCR2.jpg](media/84f06a0657467fa18d5077df794f1753.jpg)-->
 
 ### Employee Certifications, Licenses and Training
 

@@ -21,78 +21,77 @@ information is required for outputs in the form of inquiries and reports.
 
 ## Security Setup for Advanced Human Resources
 
+Use the Security Task Setup window to select a default security task or
+modify the default security task.  
+
 ### Setting up a Security Task
 
-Use the Security Task Setup window to select a default security task or
-modify the default security task. To open this window, click the
-**Administration** series button, click **System** on the Setup content
-pane, and then click **Security Tasks**.
+1. Choose the **Administration** series button, click **System** on the Setup content pane, and then choose **Security Tasks**.
 
-Enter a **Task ID**.
+2. Enter a **Task ID**.
 
-Select **HRM Solutions Series** for the **Product**.
+3. Select **HRM Solutions Series** for the **Product**.
 
-- Select **Windows** for the **Type**
+    - Select **Windows** for the **Type**
 
-- Select **3rd Party** for the **Series**
+    - Select **3rd Party** for the **Series**
 
-- Select the following from the **Access List**:
+    - Select the following from the **Access List**:
 
-  - **Benefit Options**
-  - **Effective Date**
-  - **Employee Beneficiaries**
-  - **Employee Benefit Dependents**
-  - **Employee Dependents**
-  - **Future Effective Activation**
-  - **Plan Status Reason Lookup**
-  - **Plan StatusReasons**
+      - **Benefit Options**
+      - **Effective Date**
+      - **Employee Beneficiaries**
+      - **Employee Benefit Dependents**
+      - **Employee Dependents**
+      - **Future Effective Activation**
+      - **Plan Status Reason Lookup**
+      - **Plan StatusReasons**
 
-- Change the **Type** to **Reports**
+    - Change the **Type** to **Reports**
 
-- Select the following from the **Access List**:
+    - Select the following from the **Access List**:
 
-  - **Future Effective Activation Reports**
+      - **Future Effective Activation Reports**
 
-- Change the **Product** to **Certification Manager**.
+    - Change the **Product** to **Certification Manager**.
 
-- Select **Windows** for the **Type**.
+    - Select **Windows** for the **Type**.
 
-- Select **3rd Party** for the **Series**.
+    - Select **3rd Party** for the **Series**.
 
-- Select the following from the **Access List**:
+    - Select the following from the **Access List**:
 
-  - **Certification Endorsement**
-  - **Certification Entry**
-  - **Certification History**
-  - **Certification Setup**
-  - **Certification, License and Training Required by Department and Position**
-  - **Certification, License and Training Inquiry**
-  - **Certifications**
-  - **Class Point**
-  - **Course and Class Employee Entry**
-  - **Employee Certification Endorsements**
-  - **Employee License Endorsements**
-  - **Employee Training**
-  - **Endorsement Setup**
-  - **Instructor Lookup**
-  - **Instructor Setup**
-  - **Issued By Lookup**
-  - **Issued by Setup**
-  - **License Endorsements**
-  - **License Entry**
-  - **License History**
-  - **License Type Setup**
-  - **License Types**
-  - **Percent Current Inquiry**
-  - **Training Course Definition Additional Information**
-  - **Training Courses**
-  - **Training History**
+      - **Certification Endorsement**
+      - **Certification Entry**
+      - **Certification History**
+      - **Certification Setup**
+      - **Certification, License and Training Required by Department and Position**
+      - **Certification, License and Training Inquiry**
+      - **Certifications**
+      - **Class Point**
+      - **Course and Class Employee Entry**
+      - **Employee Certification Endorsements**
+      - **Employee License Endorsements**
+      - **Employee Training**
+      - **Endorsement Setup**
+      - **Instructor Lookup**
+      - **Instructor Setup**
+      - **Issued By Lookup**
+      - **Issued by Setup**
+      - **License Endorsements**
+      - **License Entry**
+      - **License History**
+      - **License Type Setup**
+      - **License Types**
+      - **Percent Current Inquiry**
+      - **Training Course Definition Additional Information**
+      - **Training Courses**
+      - **Training History**
+    - Change the **Type** to **Reports**
 
-- Change the **Type** to **Reports**
+    - Select the following from the **Access List**:
 
-- Select the following from the **Access List**:
-
-  - **CLM Certification History**
+      - **CLM Certification History**
 
 ### CLM Certification License and Training Inquiry
 
@@ -187,7 +186,7 @@ series button, click **Human Resources** on the Setup content pane, click
 Insurance**, **Life Insurance** or **Retirement Plans**, enter or select a
 **Code**, click the **Benefits icon** and then click **Future Effective**.
 
-![IMAGE ADVHRMBS.jpg](media/9fc14a3a23676cb02b8177f72b72a1d1.jpg)
+<!-- ADVHRMBS.jpg](media/9fc14a3a23676cb02b8177f72b72a1d1.jpg)-->
 
 ### FIGURE 2.1 BENEFIT SETUP (FUTURE EFFECTIVE) WINDOW
 
@@ -365,7 +364,7 @@ set up dependents associated with the employee. To open this window, click
 the **HR and Payroll** series button, click **Human Resources** on the Cards
 content pane, click **Employee** and then click **Dependents**.
 
-![IMAGE – ADVHRDEP](media/aef7d41c75511a0b9c39b7e944629bb0.jpg)
+<!--![IMAGE – ADVHRDEP](media/aef7d41c75511a0b9c39b7e944629bb0.jpg)-->
 
 ### FIGURE 2.2 EMPLOYEE DEPENDENTS WINDOW
 
@@ -395,7 +394,7 @@ button, click **Human Resources** on the Cards content pane, click
 **Employee - Benefits**, select a **Benefit**, select an **Employee ID**,
 click the **Benefit** icon, and click **Beneficiary Definition**.
 
-![IMAGE - ADVHRBENF.jpg](media/4341819673bb483f27befe0e7bf70ece.jpg)
+<!--![IMAGE - ADVHRBENF.jpg](media/4341819673bb483f27befe0e7bf70ece.jpg)-->
 
 ### FIGURE 2.3 EMPLOYEE BENEFICIARIES WINDOW
 
@@ -429,7 +428,7 @@ Resources** on the Cards content pane, click **Employee -**
 **Benefits**, select a **Benefit**, select an **Employee ID**, select a
 **Benefit Code**, click the **Benefit** icon, and click **Dependents**.
 
-![IMAGE – ADVHRBD](media/b1ed05943d5e7de57ef712998bb236ca.jpg)
+<!--![IMAGE – ADVHRBD](media/b1ed05943d5e7de57ef712998bb236ca.jpg)-->
 
 ### FIGURE 2.4 EMPLOYEE BENEFIT DEPENDENTS WINDOW
 
@@ -454,7 +453,7 @@ button, click **Human Resources** on the Setup content pane, select a
 **Benefit** window, select a **Benefit Code**, click the **Benefits** icon
 and then click **Benefit Options**.
 
-![IMAGE – ADVHRBO.jpg](media/faf062154592f53ea4f1a15d66bca5d4.jpg)
+<!--![IMAGE – ADVHRBO.jpg](media/faf062154592f53ea4f1a15d66bca5d4.jpg)-->
 
 Each of the Benefit Setup windows (Miscellaneous Benefits, Health Insurance,
 Life Insurance and Retirement Plans) has the Benefit Options item added to
@@ -506,7 +505,7 @@ the **HR and Payroll** series button, click **Human Resources** on the Setup
 content pane, click **Certifications, Licenses and Training** and then click
 **Issuers**.
 
-![IMAGE – ADVHRISS.jpg](media/da6d7897048bebdeb57e7d4db16c7719.jpg)
+<!--![IMAGE – ADVHRISS.jpg](media/da6d7897048bebdeb57e7d4db16c7719.jpg)-->
 
 Enter or select an **Issued By Agency**.
 
@@ -545,7 +544,7 @@ the **HR and Payroll** series button, click **Human Resources** on the Setup
 content pane, click **Certifications, Licenses and Training** and then click
 **Instructors**.
 
-![IMAGE – ADVHRINS](media/1cd28ed5b5629e37581c7374f930f486.jpg)
+<!--[IMAGE – ADVHRINS](media/1cd28ed5b5629e37581c7374f930f486.jpg)-->
 
 Enter or select **Instructor ID**.
 
@@ -602,7 +601,7 @@ Payroll** series button, click **Human Resources** on the Setup content
 pane, click **Certifications, Licenses and Training** and then click
 **Certifications**.
 
-![IMAGE – ADVHRCS.jpg](media/442e889d717a4be412c2448f61e209cb.jpg)
+<!--![IMAGE – ADVHRCS.jpg](media/442e889d717a4be412c2448f61e209cb.jpg)-->
 
 When entering a new Certification Code, enter a **Description** and select
 any **Required** options.
@@ -643,7 +642,7 @@ Payroll** series button, click **Human Resources** on the Setup content
 pane, click **Certifications, Licenses and Training** and then click
 **License Types**.
 
-![IMAGE – ADVHRLS.jpg](media/31780b0c27992aefbc525bd2adbf7a77.jpg)
+<!-- – ADVHRLS.jpg](media/31780b0c27992aefbc525bd2adbf7a77.jpg)-->
 
 Enter or select a **License Type**.
 
@@ -689,7 +688,7 @@ Payroll** series button, click **Human Resources** on the Setup content
 pane, click **Certifications, Licenses and Training** and then click
 **Training Additional Info**.
 
-![IMAGE – ADVHRTCS.jpg](media/aaab29d5481f1423098576df5af5f4ed.jpg)
+<!--![IMAGE – ADVHRTCS.jpg](media/aaab29d5481f1423098576df5af5f4ed.jpg)-->
 
 Enter or select a **Course ID**. The **description** field displays from the
 Training Course and Class Definition window. Check the boxes for fields that
@@ -773,7 +772,7 @@ to Active or Inactive. To open this window, click the **HR and Payroll**
 series button, click **Human Resources** on the Setup content pane, click
 **Health and Wellness** and then click **Codes**.
 
-![IMAGE – ADVHRHCS.jpg](media/e200fd48fb3a0f3622532c5d5f5c7b1c.jpg)
+<!--![IMAGE – ADVHRHCS.jpg](media/e200fd48fb3a0f3622532c5d5f5c7b1c.jpg)-->
 
 Examples of Health and Wellness Codes are Rubeola, Rubella, Booster,
 Hepatitis C, Pertussis Exposure, Laser Screening, Hearing Protection and Eye
