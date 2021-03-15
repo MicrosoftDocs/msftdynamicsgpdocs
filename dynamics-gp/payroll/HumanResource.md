@@ -62,8 +62,8 @@ window, the default number will increase by one to the next available number as 
 
 If you are registered for Payroll, the same settings in the Payroll Setup window will be updated with your settings in the Human Resources Setup window.
 
-*If you use Microsoft Dynamics GP on a network where more than one person is entering new employee records at the same time, the default number might
-appear to increase by two or more.*
+> [!NOTE]
+> If you use Dynamics GP on a network where more than one person is entering new employee records at the same time, the default number might appear to increase by two or more.
 
 ### To set up an employee number
 

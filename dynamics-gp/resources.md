@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/11/2021
+ms.date: 03/15/2021
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -18,7 +18,8 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Product Management & Marketing Blog](https://community.dynamics.com/gp/b/gpteamblog)
 
-- [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp)
+- [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp)  
+
 <!-- [Dynamics GP Developer Blog](https://msdn.microsoft.com/library/aa496082.aspx)
 - [Dynamics Financial Reporting - Management Reporter](https://blogs.msdn.com/b/dynamics_financial_reporting/)-->
 
