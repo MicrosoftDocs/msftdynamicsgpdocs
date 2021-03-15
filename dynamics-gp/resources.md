@@ -104,27 +104,27 @@ Important links on [Microsoft Dynamics GP 2015, 2013, 2010 & 10.0](https://mbs.m
 
 ## Detailed Module Information
 
-- [Affordable Care Act/Year End](https://mbs.microsoft.com/Files/customer/GP/Downloads/Updates/ACAYEAREND.docx)
+- [Affordable Care Act/Year End](https://mbs2.microsoft.com/fileexchange/?fileID=b6386ed9-7351-46b2-8682-6e74ca756d1c)
 
-- [Distribution](https://mbs.microsoft.com/Files/customer/GP/Downloads/Updates/Distribution.docx)
+- [Distribution](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=9d7d9c2c-2bd2-4e82-8006-8bfcdd33b795)
 
-- [Human Resource and Payroll / Employee Self Service](https://mbs.microsoft.com/Files/customer/GP/Downloads/Updates/HRPSelfServe.docx)
+- [Human Resource and Payroll / Employee Self Service](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=85d7a05b-e10c-4ee9-a049-849d8cd24640)
 
-- [Financials](https://mbs.microsoft.com/Files/customer/GP/Downloads/Updates/Financials.docx)
+- [Financials](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=13a2c75a-41ef-471d-80a6-af3b8fa5918f)
 
-- [Power BI / ODATA](https://mbs.microsoft.com/_layouts/15/DocIdRedir.aspx?ID=MBSDYN-3-10876)
+- [Power BI / ODATA](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=00ff6afe-29bb-4506-a88d-031a8309e0bc)
 
-- [Project Accounting / Time and Expense](https://mbs.microsoft.com/Files/customer/GP/Downloads/Updates/ProjectTE.docx)
+- [Project Accounting / Time and Expense](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=038ca038-5022-44ea-acf0-066a0766acd6)
 
-- [Service Based Architecture (SBA)](https://mbs.microsoft.com/Files/customer/GP/Downloads/Updates/SBA.docx)
+- [Service Based Architecture (SBA)](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=361e60af-ccf3-4711-af7a-6cfd5d651b56)
 
-- [System Manager](https://mbs.microsoft.com/Files/customer/GP/Downloads/Updates/SystemManager.docx)
+- [System Manager](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=7e1180b3-4112-4e79-be9d-aee98206d859)
 
-- [Upgrade](https://mbs.microsoft.com/Files/customer/GP/Downloads/Updates/Update.docx)
+- [Upgrade](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=945af5e6-c00c-4a42-9b95-989e25d03979)
 
-- [Web Client](https://mbs.microsoft.com/Files/customer/GP/Downloads/Updates/WEBCLIENT.docx)
+- [Web Client](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=0e30e8ec-4782-4257-be70-afc0ed3f7137)
 
-- [Workflow](https://mbs.microsoft.com/Files/customer/GP/Downloads/Updates/WORKFLOW%202.docx)
+- [Workflow](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=e31215fd-91df-4607-9e8a-339fa226b263)
 
 ## See also
 
