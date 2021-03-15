@@ -107,7 +107,12 @@
 ### [Human Resources](payroll/HumanResource.md)
 ### [Human Resources - Company Setup and Organizational Structure](payroll/human-resources-company-setup.md)
 ### [Human Resources - Position Control Setup](payroll/human-resources-position-control.md)
-### [Advanced Human Resource](payroll/AdvancedHumanResource.md)
+### Advanced HR
+#### [Advanced Human Resources](payroll/AdvancedHumanResource.md)
+#### [Setup](payroll/advanced-hr-setup.md)
+#### [Employee Maintenance](payroll/advanced-hr-employee-maintenance.md)
+#### [Inquiries and Reports](payroll/advanced-hr-inquiries-reports.md)
+#### [Training and Certification for Employee Self Service](payroll/advanced-hr-inquiries-training-certification.md)
 ### [Advanced Payroll](payroll/AdvancedPayroll.md)
 ### [Canadian Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
