@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 08/26/2020
+ms.date: 03/17/2021
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -1140,8 +1140,7 @@ The following are some examples of pay codes you might use:
 
     If the amount must be reported in multiple locations on the W-2 statement, use the browse buttons to select an additional location, and enter the appropriate box number and label. You can specify as many as four locations.
 
-    The Report as Wages field is available only for the Business Expense pay type. You can skip this step if the pay type isn't a business expense.
-
+   
 1. Choose Save to store the pay code.
 
 2. Choose File \>\> Print to print a Company Pay Codes List to verify your information.
@@ -1192,6 +1191,51 @@ assigned to her. The following is an example of how you could set up the
 minimum wage balance pay code.
 
 ![A screenshot](media/049e78b866469e8ae7e3a82f53a5b715.jpg)
+
+
+Note:
+Once you setup a pay code pay type, you cannot change the Pay type it will grey out.  
+
+You can change it in SQL if need be.
+
+There are two tables the pay type is stored in:
+
+Pay code Setup - UPR40600
+Pay code Employee - UPR00400
+
+These scripts should be run against the company database.
+
+This is an example of changing the type to Holiday pay type for a specific code.
+
+Update UPR00400
+Set PAYTYPE = '10' where PAYRCORD = 'FLOAT'
+ 
+Update UPR40600
+Set PAYTYPE = '10' where PAYRCORD = 'FLOAT'
+
+
+Below is a list of Pay types with the associated number in SQL
+
+Hour = 1
+Salary = 2
+Piecework = 3
+Commission = 4
+Business Expense = 5
+Overtime = 6
+Double Time = 7
+Vacation = 8
+Sick = 9
+Holiday = 10
+Pension = 11
+Other = 12
+Earned Income Credit = 13
+Charged tips = 14
+Reported tips = 15
+Minimum Wage Balance = 16 
+
+
+
+
 
 #### Setting up shift codes
 
@@ -3272,6 +3316,24 @@ employee works in two states, you might need to set up two state tax cards.
     state tax amounts or financial information for an employee.*
 
 9. Choose Save to save the employee state tax information you've entered.
+
+Note: 
+If you have state flat tax rates that are set up for this pay code, the resolution steps will not take effect. To verify your state flat tax rates, click Cards, point to Payroll, and then click Pay Codes.
+
+Note:
+If you need to set up and employee exempt from paying state taxes.
+There is only exempt status for Federal, not on each state.
+We can still accomplish it with a workaround.
+
+1. Click Cards, point to Payroll, click State Tax, and then select the appropriate state.
+
+
+2.In the Additional Withholding box, type -$1.00 (negative one dollar). This offsets the Estimated Withholding amount in the next step.
+
+3. In the Estimated Withholding box, type $1.00 (positive one dollar), and then click Save. (If you enter an amount in the Estimated Withholding box, the system will withhold this amount per pay run instead of using the state tax calculations.)
+
+This method will not withhold state tax, but will update wages.
+
 
 #### Entering an employee local tax card
 
