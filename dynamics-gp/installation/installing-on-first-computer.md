@@ -123,19 +123,19 @@ To set up an ODBC data source connection for SQL Server by using the ODBC data s
 
 1. If the operating system is 32-bit follow these steps:
 
-    a. Click Start, and then click Control Panel.
-    b. Double-click Administrative Tools, and then double-click Data Sources (ODBC).
+    a. Click Start, and then click Control Panel.  
+    b. Double-click Administrative Tools, and then double-click Data Sources (ODBC).  
 
 2. If the operating system is x64, follow these steps:
-    a. Right-click Start and then click Explore. 
-    b. Locate the following folder:  C:\Windows\SysWOW64 
-    c. Right-click the Odbcad32.exe file and then click Create Shortcut. 
-    d. Right-click the shortcut file, and then click Rename. 
-    e. To rename the shortcut file, type Data Sources (ODBC) 32-bit.
-    f. Right-click the shortcut file, and then click Copy. 
-    g. Expand My Computer, expand Control Panel, and then click Administrative Tools. 
-    h. Paste the shortcut file in the Administrative Tools folder. 
-    i. Close Windows Explorer. 
+    a. Right-click Start and then click Explore.  
+    b. Locate the following folder:  C:\Windows\SysWOW64  
+    c. Right-click the Odbcad32.exe file and then click Create Shortcut.  
+    d. Right-click the shortcut file, and then click Rename.  
+    e. To rename the shortcut file, type Data Sources (ODBC) 32-bit.  
+    f. Right-click the shortcut file, and then click Copy.  
+    g. Expand My Computer, expand Control Panel, and then click Administrative Tools.  
+    h. Paste the shortcut file in the Administrative Tools folder.  
+    i. Close Windows Explorer.  
     j. Click Start, click Control Panel, double-click Administrative Tools, and then double-click Data Sources (ODBC) 32-bit. 
 
     > [!NOTE]
@@ -145,9 +145,9 @@ To set up an ODBC data source connection for SQL Server by using the ODBC data s
 
 4. Follow the appropriate step: 
 
-    a. If the computer is running SQL Server 2000, select SQL Server, and then click Finish.
+    a. If the computer is running SQL Server 2000, select SQL Server, and then click Finish.  
     b. If the computer is running SQL Server 2008 or SQL Server 2005, select SQL Native Client or SQL Native Client 10.0, and then click Finish.
-
+    
     > [!NOTE]
     > The ODBC DSN must be setup using the SQL Native Client or SQL Native Client 10.0 for Microsoft Dynamics GP 2010.
 
