@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 08/26/2020
+ms.date: 03/17/2021
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -1140,8 +1140,7 @@ The following are some examples of pay codes you might use:
 
     If the amount must be reported in multiple locations on the W-2 statement, use the browse buttons to select an additional location, and enter the appropriate box number and label. You can specify as many as four locations.
 
-    The Report as Wages field is available only for the Business Expense pay type. You can skip this step if the pay type isn't a business expense.
-
+   
 1. Choose Save to store the pay code.
 
 2. Choose File \>\> Print to print a Company Pay Codes List to verify your information.
@@ -1192,6 +1191,51 @@ assigned to her. The following is an example of how you could set up the
 minimum wage balance pay code.
 
 ![A screenshot](media/049e78b866469e8ae7e3a82f53a5b715.jpg)
+
+
+> [!NOTE]
+> Once you setup a pay code pay type, you cannot change the Pay type it will grey out.  
+
+You can change it in the database if need be.
+
+There are two tables the pay type is stored in:
+
+Pay code Setup - UPR40600
+Pay code Employee - UPR00400
+
+These scripts should be run against the company database.
+
+This is an example of changing the type to Holiday pay type for a specific code.
+
+Update UPR00400
+Set PAYTYPE = '10' where PAYRCORD = 'FLOAT'
+ 
+Update UPR40600
+Set PAYTYPE = '10' where PAYRCORD = 'FLOAT'
+
+
+Below is a list of Pay types with the associated number in SQL
+
+Hour = 1
+Salary = 2
+Piecework = 3
+Commission = 4
+Business Expense = 5
+Overtime = 6
+Double Time = 7
+Vacation = 8
+Sick = 9
+Holiday = 10
+Pension = 11
+Other = 12
+Earned Income Credit = 13
+Charged tips = 14
+Reported tips = 15
+Minimum Wage Balance = 16 
+
+
+
+
 
 #### Setting up shift codes
 
@@ -3272,6 +3316,22 @@ employee works in two states, you might need to set up two state tax cards.
 
 9. Choose Save to save the employee state tax information you've entered.
 
+> [!NOTE]
+> If you have state flat tax rates that are set up for this pay code, the resolution steps will not take effect. To verify your state flat tax rates, click Cards, point to Payroll, and then click Pay Codes.
+
+> [!NOTE]
+> If you need to set up and employee exempt from paying state taxes, there is only exempt status for Federal, not on each state. We can still accomplish it with the following workaround.
+
+1. Click Cards, point to Payroll, click State Tax, and then select the appropriate state.
+
+
+2.In the Additional Withholding box, type -$1.00 (negative one dollar). This offsets the Estimated Withholding amount in the next step.
+
+3. In the Estimated Withholding box, type $1.00 (positive one dollar), and then click Save. (If you enter an amount in the Estimated Withholding box, the system will withhold this amount per pay run instead of using the state tax calculations.)
+
+This method will not withhold state tax, but will update wages.
+
+
 #### Entering an employee local tax card
 
 Use the Employee Local Tax Maintenance window to enter and maintain employee
@@ -4318,7 +4378,8 @@ Here's what you need to know about each Check Type:
 - Recording a manually written paycheck
 - Making a negative adjustment 
 
-    Note: Negative Manual Checks cannot be saved to a batch
+    > [!NOTE]
+    > Negative Manual Checks cannot be saved to a batch.
 - Most Commonly Used
 - Do not enter positive and negative amounts at the same time:
     - Post only positive amounts
@@ -4376,15 +4437,16 @@ Detailed steps and a description of how each adjustment works and effects amount
 
 2.    Next to 'Code' select the appropriate pay code.
 
-    Note: as soon as you select the pay code the following fields will automatically be populated (Pulling in from Employee Pay Code Maintenance window):
-        - State (this does NOT mean state tax will be calculated for you – it won't).
-        - SUTA State SUTA is not calculated during a pay run. 
-            If you want wages associated with this pay code to be subject to SUTA be sure this field is populated appropriately.
-        - Workers' Comp - Workers Comp is not calculated during a pay run. 
-            If you want wages associated with this pay code to be subject to Workers Comp be sure this field is populated appropriately.
-        - Shift Code - Informational Only
-        - Department
-        - Position
+    > [!NOTE]
+    > As soon as you select the pay code the following fields will automatically be populated (Pulling in from Employee Pay Code Maintenance window):
+    >  - State (this does NOT mean state tax will be calculated for you – it won't).
+    >  - SUTA State SUTA is not calculated during a pay run. 
+    >      If you want wages associated with this pay code to be subject to SUTA be sure this field is populated appropriately.
+    >  - Workers' Comp - Workers Comp is not calculated during a pay run. 
+    >      If you want wages associated with this pay code to be subject to Workers Comp be sure this field is populated appropriately.
+    >  - Shift Code - Informational Only
+    >  - Department
+    >  - Position
 
 3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
 
@@ -4644,15 +4706,18 @@ o    Negative Amount = Decrease in Local Taxable Wages
 
 
 
-**To enter/adjust an amount for a specific Pay Advance:*
+To enter/adjust an amount for a specific Pay Advance:
 
-1.    Next to 'Transaction Type' select 'Pay Advance'.
-2.    Next to 'Code' select the appropriate pay code.
-o    Note: Employees can receive a Pay Advance for Salary or Commission Pay Types only.
-3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-4.    In the 'Amount' field: Enter the total amount by which you need to adjust the wages associated with this pay advance:
-o    Positive Amount = Increase in gross and net wages
-o    Negative Amount = Decrease in gross and net wages
+1. Next to 'Transaction Type' select 'Pay Advance'.
+2. Next to 'Code' select the appropriate pay code.
+
+    > [!NOTE]
+    > Employees can receive a Pay Advance for Salary or Commission Pay Types only.
+3. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4. In the 'Amount' field: Enter the total amount by which you need to adjust the wages associated with this pay advance:
+
+     - Positive Amount = Increase in gross and net wages
+     - Negative Amount = Decrease in gross and net wages
 5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
@@ -4675,14 +4740,17 @@ o    Negative Amount = Decrease in gross and net wages
 
 **To enter/adjust an amount for a specific Withhold Advance:*
 
-1.    Next to 'Transaction Type' select 'Withhold Advance'.
-2.    Next to 'Code' select the appropriate pay code.
-o    Note: It is not possible to withhold more from an employee than he/she has been advanced for a specific salary or commission pay code.
-3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-4.    In the 'Amount' field: Enter the total amount by which you need to adjust the wages associated with this withhold advance:
-o    Positive Amount = Decrease in Net Wages
-o    Negative Amount = Increase in Net Wages
-5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+1. Next to 'Transaction Type' select 'Withhold Advance'.
+2. Next to 'Code' select the appropriate pay code.
+
+    > [!NOTE]
+    > It is not possible to withhold more from an employee than he/she has been advanced for a specific salary or commission pay code.
+3. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4. In the 'Amount' field: Enter the total amount by which you need to adjust the wages associated with this withhold advance:
+
+    - Positive Amount = Decrease in Net Wages
+    - Negative Amount = Increase in Net Wages
+5. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this withhold advance, you'll need to do so manually with the appropriate tax in this window.

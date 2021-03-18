@@ -6,7 +6,7 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.date: 08/23/2018
+ms.date: 03/17/2021
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 12e47cac-e147-466f-93f5-c09251cbc7a9
@@ -115,3 +115,94 @@ To install Dynamics GP (first computer):
 19. Follow the instructions in [Using Dynamics GP Utilities](using-microsoft-dynamics-utilities.md). You can use the Dynamics GP Utilities windows to set up your account framework and the Dynamics GP system data tables, and to create your companies.
 
 20. After using Dynamics GP Utilities, you can install additional features or components that add specialized functionality to your Dynamics GP system on the server computer. See [Installing additional components](installing-additional-components.md) for more information.  
+
+
+## How to set up an ODBC Data Source on SQL Server for Microsoft Dynamics GP
+
+To set up an ODBC data source connection for SQL Server by using the ODBC data sources, follow these steps: 
+
+1. If the operating system is 32-bit follow these steps:
+
+    a. Click Start, and then click Control Panel.  
+    b. Double-click Administrative Tools, and then double-click Data Sources (ODBC).  
+
+2. If the operating system is x64, follow these steps:
+    a. Right-click Start and then click Explore.  
+    b. Locate the following folder:  C:\Windows\SysWOW64  
+    c. Right-click the Odbcad32.exe file and then click Create Shortcut.  
+    d. Right-click the shortcut file, and then click Rename.  
+    e. To rename the shortcut file, type Data Sources (ODBC) 32-bit.  
+    f. Right-click the shortcut file, and then click Copy.  
+    g. Expand My Computer, expand Control Panel, and then click Administrative Tools.  
+    h. Paste the shortcut file in the Administrative Tools folder.  
+    i. Close Windows Explorer.  
+    j. Click Start, click Control Panel, double-click Administrative Tools, and then double-click Data Sources (ODBC) 32-bit. 
+
+    > [!NOTE]
+    > To clearly identify the names of the shortcut files of the ODBC data sources, rename the shortcut file of the x64 version Data Sources (ODBC) x64. 
+
+3. Click the System DSN tab, and then click Add to create a new ODBC data source.
+
+4. Follow the appropriate step: 
+
+    a. If the computer is running SQL Server 2000, select SQL Server, and then click Finish.  
+    b. If the computer is running SQL Server 2008 or SQL Server 2005, select SQL Native Client or SQL Native Client 10.0, and then click Finish.
+    
+    > [!NOTE]
+    > The ODBC DSN must be setup using the SQL Native Client or SQL Native Client 10.0 for Microsoft Dynamics GP 2010.
+
+5. Provide an ODBC name and description. For "Server," enter the instance of SQL Server to which Microsoft Dynamics GP or Microsoft Business Solutions - Great Plains will connect. Then click Next.
+
+    > [!NOTE]
+    > For the information that is required in this step, specify the following parameters:
+    > 
+    > Name: Type the name that you want to use for the data source. This name is stored in the ODBC.ini file. If you use process servers, use the same name for the 32-bit ODBC Data Source for all client workstations.
+    > 
+    > Description: Type a description of the data source. This field is optional.
+    > 
+    > Server: Type the name that you assigned to the instance of SQL Server when you installed Microsoft SQL Server to run together with Microsoft Dynamics GP.  Use either the server name or the IP address for all ODBC setup on each workstation.  Do not use the IP address on some workstations and the server name on others.
+
+6. Click the With SQL Server Authentication using a login ID and password entered by the user option.
+
+7. In the Connect to SQL Server to obtain default settings for the additional configuration options area, type the user name and password for the sa user.
+Note: The sa user name and password are not required. However, we recommend that you use them. If the sa user name and password are entered, the credentials are not stored in the ODBC setup.
+
+8. Click Client Configuration. 
+
+    > [!NOTE]
+    > The Client Configuration option is not available if you create an ODBC connection by using the SQL Native Client. If you are using the SQL Native Client or the SQL Native Client 10.0, proceed to Step 10.
+
+9. In the Network libraries section, click TCP/IP. Verify that the instance of SQL Server that you are using for or Microsoft Dynamics GP or for Microsoft Business Solutions - Great Plains appears in the Server alias section and in the Server name section. Verify that the Dynamically Determine Port box is cleared, and then enter the appropriate port number. Click OK, and then click Next.
+
+10. Clear all the options, and then click Next.
+
+    > [!NOTE]
+    > Do not change the default database even if you will use this ODBC for only one company.
+
+11. Clear all the options, and then click Finish.
+
+12. Verify all the information, and then click Test Data Source. If the connection tests successfully, click OK.
+
+13. Click OK two times to exit the ODBC Data Source Administrator.
+ 
+    > [!NOTE]
+    > If the SQL Server Browser service is not running, you will receive the following error message when you try to test the ODBC connection: 
+    > Connection failed:
+    > SQLState: '08001' 
+    > SQL Server Error: -1 
+    > [Microsoft][SQL Native Client]SQL Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF]. 
+    > 
+    > Connection failed: 
+    > SQLState: 'HYT00' 
+    > SQL Server Error: 0 
+    > [Microsoft][SQL Native Client]Login timeout expired 
+    > Connection failed: SQLState: '08001' 
+    > SQL Server Error: -1 
+    > [Microsoft][SQL Native Client]An error has occurred while establishing a connection to the server. When connecting to SQL Server 2005, this failure may be caused by the fact that under the default settings SQL Server does not allow remote connections.
+    > 
+    > To resolve this issue, proceed to step 14 to start the SQL Browser Service.
+14. To start the SQL Browser Service.
+    a. Click Start, click Administrative Tools, and then click Services.
+    b. Right-click the SQL Server Browser service, and then click Start.
+
+
