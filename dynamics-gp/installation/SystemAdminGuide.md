@@ -13,7 +13,7 @@ ms.date: 05/14/2019
 
 # System Administration Guide
 
-The System Administrator’s Guide is designed to give an experienced computer
+The System Administrator's Guide is designed to give an experienced computer
 user the information that is needed to maintain Microsoft Dynamics GP.
 
 This manual includes detailed information about maintaining data, optimizing
@@ -23,7 +23,7 @@ solving problems that may arise within Microsoft Dynamics GP.
 Some features described in the documentation are optional and can be purchased
 through your Microsoft Dynamics GP partner.
 
-To view information about the release of Microsoft Dynamics GP that you’re using
+To view information about the release of Microsoft Dynamics GP that you're using
 and which modules or features you are registered to use, choose Help \>\> About
 Microsoft Dynamics GP.
 
@@ -51,17 +51,17 @@ The manual is divided into the following parts:
 This part of the documentation describes how to customize the Microsoft Dynamics
 GP system to fit your needs. The following topics are discussed:
 
-- *Chapter 1, “System customization,”* describes how to modify the routine
+- *Chapter 1, "System customization,"* describes how to modify the routine
     checklists, and default printers in Microsoft Dynamics GP.
 
-- *Chapter 2, “Printers,”* describes how to use named printers and how to set
+- *Chapter 2, "Printers,"* describes how to use named printers and how to set
     up default printers for an entire system, for each user, or for each
     company.
 
 ### Chapter 1: System customization
 
 Microsoft Dynamics GP allows you to tailor routine checklists, and report
-printing to your business’s specific needs. This enables you to provide
+printing to your business's specific needs. This enables you to provide
 different access levels to Microsoft Dynamics GP and to work more
 efficiently.
 
@@ -83,7 +83,7 @@ record macros and add them to your checklists.
 ![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
 > [!NOTE]
-> While you can open the appropriate windows to perform the tasks from a checklist window, the actual tasks aren’t performed automatically.
+> While you can open the appropriate windows to perform the tasks from a checklist window, the actual tasks aren't performed automatically.
 
 The checklist of routines acts as a sort of audit trail, recording the time
 each task was selected, the date the task was completed and the user ID of
@@ -131,7 +131,7 @@ The following table presents subsequent required actions for each option:
 
 | **Option**                   | **Action**                                                                                                                                                                                       |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Microsoft Dynamics GP Window | The Select Microsoft Dynamics GP Window window appears. To add a window from an integrating product, select it from the Product list. Select the window’s series, then select the window to add. |
+| Microsoft Dynamics GP Window | The Select Microsoft Dynamics GP Window window appears. To add a window from an integrating product, select it from the Product list. Select the window's series, then select the window to add. |
 | Microsoft Dynamics GP Macro  | A dialog box appears. Select the macro you want to add.                                                                                                                                         |
 | External Task                | A dialog box appears. Select the application file.                                                                                                                                              |
 
@@ -140,7 +140,7 @@ The following table presents subsequent required actions for each option:
 ![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
 > [!NOTE]
-> Choosing the Revert button in a list of routines removes all the additions and modifications you’ve made, and resets the list of routines to the Microsoft Dynamics GP default settings. The original settings are denoted by a 0/0/0 in the Date Done column and 12: 00: 00 AM in the Time column. Original settings don’t have an entry in the User ID column.
+> Choosing the Revert button in a list of routines removes all the additions and modifications you've made, and resets the list of routines to the Microsoft Dynamics GP default settings. The original settings are denoted by a 0/0/0 in the Date Done column and 12: 00: 00 AM in the Time column. Original settings don't have an entry in the User ID column.
 
 #### Printing reports without dialog boxes
 
@@ -156,7 +156,7 @@ illustration.
 ![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
 > [!NOTE]
-> You need to complete these steps on each computer where you don’t want print dialog boxes to appear.
+> You need to complete these steps on each computer where you don't want print dialog boxes to appear.
 
 **To print reports without dialog boxes:**
 
@@ -171,7 +171,7 @@ link)
 
 2. Choose OK.
 
-If you haven’t set up the default printer, the Setup Named Printers window
+If you haven't set up the default printer, the Setup Named Printers window
 will open along with the Microsoft Windows Print Setup window. The default
 printer is used if there is not a printer specified for the report or
 company. See *[Setting up printers for a workstation](#setting-up-printers-for-a-workstation) for more
@@ -223,10 +223,10 @@ You have many choices when you print reports or documents in Microsoft Dynamics 
     workstation.
 
 - You can specify certain printers for certain types of reports or forms. For
-    example, you may have one printer that’s only used for printing checks.
+    example, you may have one printer that's only used for printing checks.
 
 To get started, you first need to set up your printers and give them names.
-Then, you’ll assign those printers to the particular functions they’ll be
+Then, you'll assign those printers to the particular functions they'll be
 used for.
 
 #### Printer classes
@@ -258,7 +258,7 @@ report to a printer.
 
 For example, if you have marked only the Send to Screen option for a posting
 journal in the Posting Setup window, even though you have selected a printer in
-the Assign Named Printers window for the posting journal, the report won’t be
+the Assign Named Printers window for the posting journal, the report won't be
 sent to the printer, only to the screen.
 
 In general, the printer class will be checked first. If the printer class is
@@ -344,7 +344,7 @@ tasks.
 Use the Named Printer Options window to set up a machine ID for each
 workstation that will be used to print reports or documents. After setting
 up named printers, Microsoft Dynamics GP will always print to the named
-printers default printer, not the workstation’s default printer.
+printers default printer, not the workstation's default printer.
 
 **To set up printers for a workstation:**
 
@@ -362,7 +362,7 @@ printers default printer, not the workstation’s default printer.
 Administration \>\> Setup \>\> System \>\> Named Printers \>\> Machine ID
 link to open the Named Printer Options window.*
 
-1. Enter a machine ID. The default ID is the workstation’s network or computer
+1. Enter a machine ID. The default ID is the workstation's network or computer
     name.
 
 The machine ID is used to associate the named printer with the actual
@@ -453,7 +453,7 @@ given a Printer ID and used as a named printer.*
 Once you have set up the printer IDs for the workstation, you can assign a
 printer to specific reports.
 
-If you’re using advanced picking, you can specify a default printer for a
+If you're using advanced picking, you can specify a default printer for a
 site. This is necessary only if you want a different printer to be used for
 a specific site.
 
@@ -462,7 +462,7 @@ specify a default printer for a company by selecting Company as the task
 series and selecting the company name. Specifying a default printer for a
 company is optional and is necessary only if you want a different default
 printer to be used for a specific user, company, or user and company
-combination. When choosing the default printer for a company, you can’t use
+combination. When choosing the default printer for a company, you can't use
 Any Printer or Manual Selection for the printer class.
 
 The printer settings will be used only if you print the report to a printer.
@@ -493,7 +493,7 @@ server. If you want to send reports to the process server, you must select
 Process as the task series. You should not leave the printer ID field empty
 or use the Manual Selection printer class when using the process server. For
 information about setting up the Distributed Process Server, see [Chapter
-10, “Remote processing setup](#chapter-10-remote-processing-setup).
+10, "Remote processing setup](#chapter-10-remote-processing-setup).
 
 1. Select a task description.
 
@@ -528,23 +528,23 @@ the printers assigned to the printer class will be listed.
 **User, Company, or User & Company** If you select the printer class of
 User, Company, or User & Company, the user ID and company name in this
 window must match the user ID and company name assigned to the printer
-class, or the printer ID won’t be listed.
+class, or the printer ID won't be listed.
 
 If you select the printer class of System, User, Company, or User & Company
-but don’t select a printer ID, you can choose from any available printer ID
+but don't select a printer ID, you can choose from any available printer ID
 in that class set up on the workstation when you print the report.
 
 **Any Printer ID** If you select Any Printer ID for the printer class, you
 can choose from any available printer ID set up on the workstation when you
-print the report. You can’t assign a printer to a task with the Any Printer
+print the report. You can't assign a printer to a task with the Any Printer
 ID class.
 
 **Manual Selection** If you select Manual Selection for the printer class,
-you won’t assign a printer to the task. Instead, when you print the report,
+you won't assign a printer to the task. Instead, when you print the report,
 the Print Setup window will open and you can choose the printer and printer
 settings.
 
-**None** This is the default entry, indicating that you haven’t selected a
+**None** This is the default entry, indicating that you haven't selected a
 default printer for the task.
 
 1. Select a printer from the list and choose Select.
@@ -586,7 +586,7 @@ if the workstation is removed from the system.
 
 If the workstation is renamed on the network, you can change the machine ID
 in the Named Printer Options window and all the existing settings will be
-moved to the new machine ID. You don’t need to remove the old machine ID.
+moved to the new machine ID. You don't need to remove the old machine ID.
 
 #### Setting up a template user for named printers
 
@@ -639,7 +639,7 @@ icons are used.
 1. Choose OK to save your changes.
 
 Once a user ID has been assigned as the template user or has been linked to
-a template user, its role can’t be changed unless the link is removed. To
+a template user, its role can't be changed unless the link is removed. To
 remove a link, unmark the user ID in the Setup Named Printers – Advanced
 window.
 
@@ -664,7 +664,7 @@ Use the Named Printer Options window to change machine ID settings.
 
 If a workstation is renamed on the network, you can change the machine ID in
 the Named Printer Options window and all the existing settings will be moved
-to the new machine ID. You don’t need to remove the old machine ID.
+to the new machine ID. You don't need to remove the old machine ID.
 
 **To change machine ID settings:**
 
@@ -723,21 +723,21 @@ automatically on your client computers.
 
 The following topics are discussed:
 
-- *Chapter 3, “Microsoft Dynamics GP tables,”* provides the basics of data
+- *Chapter 3, "Microsoft Dynamics GP tables,"* provides the basics of data
     storage in Microsoft Dynamics GP.
 
-- *Chapter 4, “Maintenance procedures,”* describes the steps you should take
+- *Chapter 4, "Maintenance procedures,"* describes the steps you should take
     to protect and maintain your data.
 
-- *Chapter 5, “Database Maintenance Utility,”* provides information about the
+- *Chapter 5, "Database Maintenance Utility,"* provides information about the
     Database Maintenance Utility for Microsoft Dynamics GP so you can reload
     database objects such as stored procedures and triggers.
 
-- *Chapter 6, “Companies offline,”* provides information about taking one or
+- *Chapter 6, "Companies offline,"* provides information about taking one or
     multiple companies offline for maintenance or administrative tasks such as a
     year-end close or an update.
 
-- *Chapter 7, “Client updates,”* describes client updates and how to set up
+- *Chapter 7, "Client updates,"* describes client updates and how to set up
     updates to be installed automatically on client computers.
 
 ### Chapter 3: Microsoft Dynamics GP tables
@@ -768,14 +768,14 @@ The tables information contains the following sections:
 #### How records are stored in Microsoft Dynamics GP tables
 
 As you enter transactions, accounts, and customer information in Microsoft
-Dynamics GP, you’ll make entries or selections for many individual fields.
+Dynamics GP, you'll make entries or selections for many individual fields.
 These fields represent the smallest unit of information stored by Microsoft
 Dynamics GP.
 
 All the fields that describe a transaction, account, or customer make up a
 **record**. Similar records are stored together in a **table**.
 
-For example, assume you have a new customer, Blue Yonder Airlines. You’ll
+For example, assume you have a new customer, Blue Yonder Airlines. You'll
 enter a customer ID, the company name, the city where the company is
 located, the phone number, and other facts about the company and your
 business relationship. Each of these facts is entered in a field, and
@@ -787,7 +787,7 @@ transaction, that information would be stored in the Transaction Work table.
 ![A screenshot ](media/a36ee3792d20a3dad35be1e289df5aef.jpg)
 
 Just as windows you use to make entries (input) are linked to a particular
-table, the information displayed on reports and documents you’ll print
+table, the information displayed on reports and documents you'll print
 (output) is drawn from specific tables.
 
 #### Table groups and tables
@@ -801,7 +801,7 @@ of four tables: Transaction Work, Transaction Amounts Work, Transaction Clearing
 Amounts Work, and Audit Trail Code Temporary. General information about each
 transaction, such as the audit trail code and date is stored in the Transaction
 Work table, and transaction amounts are stored in the Transaction Amounts Work
-or Transaction Clearing Amounts Work table, depending on whether you’ve entered
+or Transaction Clearing Amounts Work table, depending on whether you've entered
 a standard transaction or a clearing transaction.
 
 ![A screenshot ](media/708ea670a694e9c158021345c5733c0f.gif)
@@ -828,7 +828,7 @@ Description online documentation for detailed steps that can help you view
 technical table and field information using the resource description windows.
 
 Tables in the Microsoft Dynamics GP system are divided into different categories
-based on how they’re used by Microsoft Dynamics GP and the information each
+based on how they're used by Microsoft Dynamics GP and the information each
 stores. The purpose of each table can be determined by its name. Technical table
 names typically are composed of a two-character module abbreviation (such as GL
 for General Ledger), followed by a descriptive term for the main contents of the
@@ -871,7 +871,7 @@ following types of tables. Knowing which type of table contains each type of
 information will help you find the data you need.
 
 **Setup tables** These tables contain all the default settings and module
-options you’ve specified in the setup windows for each series.
+options you've specified in the setup windows for each series.
 
 **Master tables** These tables contain all the permanent data about your
 business, such as information about accounts, vendors, customers, and items.
@@ -900,7 +900,7 @@ indicates the relationship a table has with another table in its table group.
 The subtable type abbreviation will always appear before the main type
 abbreviation and is used in instances where several tables are grouped to form a
 table group. For instance, the General Ledger Transaction Work table group is
-made up of three work tables, but each one has a specific function that’s
+made up of three work tables, but each one has a specific function that's
 indicated by its subtable type:
 
 | **Table group**        | **Tables**                                                   |
@@ -911,7 +911,7 @@ indicated by its subtable type:
 
 The following table lists some of the more common subtable types used for
 tables. In many instances, a descriptive term is used rather than an
-abbreviation, such as “Clearing” for the GL_TRX_Clearing_WORK table:
+abbreviation, such as "Clearing" for the GL_TRX_Clearing_WORK table:
 
 | **Subtable type** | **Abbreviation** |
 |-------------------|------------------|
@@ -924,7 +924,7 @@ abbreviation, such as “Clearing” for the GL_TRX_Clearing_WORK table:
 | Line Tax          | LTAX             |
 | Address           | ADDR             |
 
-Use the help to learn more about the type of table information that’s available
+Use the help to learn more about the type of table information that's available
 in the resource description windows. Then follow the step-by-step instructions
 in the help to find the technical table information you need.
 
@@ -939,11 +939,11 @@ Microsoft Dynamics GP manages records using optimistic concurrency control or
 passive record locking. Optimistic concurrency control enables many people to
 work with the same records—customer accounts, for example—without competing for
 records. Coworkers update records one field at a time, so two or more people can
-change a record simultaneously if they’re changing different fields. However, if
+change a record simultaneously if they're changing different fields. However, if
 they are changing the same field, the second person to save the record receives
 a message saying that changes have been made to the record since he or she
 accessed it. When the second person chooses OK in response to the alert message,
-the window is updated with the first person’s changes.
+the window is updated with the first person's changes.
 
 #### Effects of denying table access
 
@@ -959,12 +959,12 @@ will be affected by the security option. For example, if you are denied
 access to the Account Master table, you can still use financial cards and
 post transactions, but a message indicating a table security error will
 appear if you attempt to print a report using the Account Master table. If
-you don’t have access to a table, you won’t be able to use other
+you don't have access to a table, you won't be able to use other
 applications to write data to that table.
 
 **SmartList**
 
-Removing access to tables may mean some SmartList objects won’t be
+Removing access to tables may mean some SmartList objects won't be
 displayed. Multiple SmartList objects may be affected by removing access to
 a single logical table. In some cases, multiple logical tables affect a
 SmartList object and removing access to any one of the logical tables will
@@ -981,7 +981,7 @@ and integrity of your accounting data. Hardware failures, power surges, and
 other problems might require maintenance procedures to be perform on data
 tables.
 
-It’s necessary to take measures to protect your data. Regularly back up your
+It's necessary to take measures to protect your data. Regularly back up your
 accounting data and perform table maintenance to help minimize risk of data
 loss.
 
@@ -1001,13 +1001,13 @@ Maintenance information is divided into the following sections:
 
 If you discover a problem with your accounting data tables during
 maintenance or if a problem persists after performing maintenance, see
-*Chapter 16, “Data recovery,”* for information on resolving the problem.
+*Chapter 16, "Data recovery,"* for information on resolving the problem.
 
 #### Backups overview
 
 A backup is a copy of your SQL Server databases on another medium separate
 from the hard disk where you have the original databases. You can help
-prevent loss of your company’s data by making frequent, regular backups.
+prevent loss of your company's data by making frequent, regular backups.
 Having a good set of backups is like having insurance—without it, you risk
 losing your information and spending a great deal of time reentering it.
 
@@ -1019,7 +1019,7 @@ losing your information and spending a great deal of time reentering it.
 In addition to making backups of your tables, you should back up your
 transactions-related information by printing and storing posting journals and
 reports, or by sending them to a file. Then, if you need to restore a
-backup, finding and reentering the information that’s been entered since the
+backup, finding and reentering the information that's been entered since the
 backup will be much simpler and quicker. Also, keep all of the reports that
 you usually use, either as printed copies or in files. Detailed reports from
 open tables, tables containing current posted transactions, and history
@@ -1028,11 +1028,11 @@ tables contain the most complete information.
 To help ensure that you always have current backups, you should design and
 follow a formal backup schedule or create a schedule for automated backups.
 
-Be sure to incorporate a rotation plan so that you aren’t copying over the
+Be sure to incorporate a rotation plan so that you aren't copying over the
 same backup every day. This will eliminate the loss of data if an issue
-isn’t detected for several days. Backups should be clearly labeled so that
+isn't detected for several days. Backups should be clearly labeled so that
 you can distinguish one set from another. We also recommend that you label
-daily, weekly, and monthly backups separately so that they don’t become
+daily, weekly, and monthly backups separately so that they don't become
 mixed together.
 
 #### Database backup procedures
@@ -1082,13 +1082,13 @@ procedures:
 
 Each database should be backed up just after it is created, and on a fixed
 schedule thereafter. For example, if you create a database on Monday and
-wait until Friday afternoon to back it up, you risk losing a whole week’s
+wait until Friday afternoon to back it up, you risk losing a whole week's
 work if there is a media failure on Friday morning.
 
-**Performing an operation that isn’t logged**
+**Performing an operation that isn't logged**
 
 You must back up a database any time you perform an operation that is not
-logged. If you don’t, the transaction log backup isn’t useful.
+logged. If you don't, the transaction log backup isn't useful.
 
 **Database maintenance procedures**
 
@@ -1111,14 +1111,14 @@ to it later or in case your current backup is damaged.
 Back up your entire Microsoft Dynamics GP system before and after updating
 to a new version of Microsoft Dynamics GP or installing additional products.
 Power fluctuations and hardware failure can cause detrimental damage during
-an update. If your data is damaged before you update your system, you’ll
+an update. If your data is damaged before you update your system, you'll
 need to restore the backup to fix any damage.
 
 #### Backing up your data
 
 Use the Back Up Company window to back up data. You can store the backup
 file on your local hard drive, local network, or Microsoft Azure storage.
-Complete this procedure for each company you’re backing up and for the
+Complete this procedure for each company you're backing up and for the
 system database. You also can use SQL Server Management Studio to back up
 data.
 
@@ -1208,7 +1208,7 @@ As you make changes to your database that affect statistics, your stored
 procedures may lose efficiency. By recompiling the stored procedures that
 act on a table, you can optimize queries. This optimization happens
 automatically in some cases. However, if a new index is added, the stored
-procedure isn’t automatically optimized.
+procedure isn't automatically optimized.
 
 You can recompile stored procedures if you are having performance issues.
 
@@ -1253,7 +1253,7 @@ following database objects.
 | Function            | A function is a command that returns a value.                                                                                                                       |
 
 The process of reloading database objects deletes and reloads the objects in
-the selected databases and components. Any customizations you’ve made to
+the selected databases and components. Any customizations you've made to
 objects, including Pre and Post procedures in eConnect for Microsoft
 Dynamics GP, are removed, as well. Before you reload database objects, you
 should make a backup of the system (DYNAMICS) and company databases. After
@@ -1302,7 +1302,7 @@ password.
 4. In the Select Database Objects window, mark the database objects to reload,
     and then choose Next.
 
-5. In the Confirmation window, review the selections you’ve made, and then
+5. In the Confirmation window, review the selections you've made, and then
     choose Next to reload objects.
 
 6. The Progress window appears, where you can view the status of the database
@@ -1344,7 +1344,7 @@ This information is divided into the following sections:
 
 When a company is offline, you might want a user other than the system
 administrator to be able to log in to the company. You can use the Company
-Setup window to assign a user who can still log in to the company while it’s
+Setup window to assign a user who can still log in to the company while it's
 offline.
 
 **To assign a user for offline company access:**
@@ -1366,7 +1366,7 @@ You can take one or more companies offline for maintenance or administrative
 tasks, such as a year-end close or an update. You can use the Take Company
 Offline for Maintenance window to select the companies that you want to take
 offline. You also can send a default or custom message to the users who
-attempt to log in to a company while it’s offline.
+attempt to log in to a company while it's offline.
 
 When a company has been taken offline, the current users can continue working in
 the company. Once those users log out of the company, they will not be able to
@@ -1409,7 +1409,7 @@ offline company* for more information.
 
 #### Sending a message to users currently logged in to an offline company
 
-You can use the Send Message window to send messages to users. You can select the users and type of message you would like to send. For example, you can send a task with reminder message of an upcoming event to all users or a “please log out of Microsoft Dynamics GP” notification message to users currently logged into a company that has been taken offline.
+You can use the Send Message window to send messages to users. You can select the users and type of message you would like to send. For example, you can send a task with reminder message of an upcoming event to all users or a "please log out of Microsoft Dynamics GP" notification message to users currently logged into a company that has been taken offline.
 
 You must be an administrator to send messages to your users about an offline
 company.
@@ -1473,12 +1473,12 @@ install the update.
     displayed to show the status of the update. After the update is installed,
     the user can start Microsoft Dynamics GP again.
 
-- By choosing No, the update isn’t applied and Microsoft Dynamics GP closes.
+- By choosing No, the update isn't applied and Microsoft Dynamics GP closes.
 
-You can’t use Microsoft Dynamics GP on the client computer until it is
+You can't use Microsoft Dynamics GP on the client computer until it is
 updated.
 
-If an update isn’t successfully installed on a client, a log file will be
+If an update isn't successfully installed on a client, a log file will be
 created that describes errors in the temporary directory for the client. The
 log file will use the name of the update file plus a .log extension. For
 example, if a service pack is named GP_SP1.msp, the log file will be named
@@ -1526,7 +1526,7 @@ update, review the following information.
 
 **Client version information and database setup**
 
-You can’t log in to Microsoft Dynamics GP on a client computer if a product
+You can't log in to Microsoft Dynamics GP on a client computer if a product
 installed on the client computer has different version information than the
 server. You can use the GP_LoginErrors.log file in your temporary directory
 (typically
@@ -1536,10 +1536,10 @@ to help resolve the version information issue. The log file will contain the
 product name, along with the dictionary and database versions.
 
 To log in to Microsoft Dynamics GP or a company, the product must be installed
-on the server. If the database hasn’t been set up, you can use Microsoft
+on the server. If the database hasn't been set up, you can use Microsoft
 Dynamics GP Utilities to complete the database setup. You can use the
 GP_LoginErrors.log file in your temporary directory to determine which products
-aren’t installed.
+aren't installed.
 
 The following is an example of a GP_LoginErrors.log file.
 
@@ -1554,7 +1554,7 @@ independent software vendor or a customization developed by you or your
 partner. You can use the Manage Automated Client Updates window to set up a
 .cnk file to be installed automatically on your client computers. If the
 .cnk file has an .ini file, be sure that there is a carriage return after
-the build number in the .ini file. If there isn’t a carriage return after
+the build number in the .ini file. If there isn't a carriage return after
 the build number, you may have problems starting or updating Microsoft
 Dynamics GP.
 
@@ -1564,17 +1564,17 @@ Review this part of the documentation for information you need to set up and
 use the distributed processing features available with Microsoft Dynamics
 GP. The following topics are discussed:
 
-- *Chapter 8, “Distributed Process Server overview,”* provides information on
+- *Chapter 8, "Distributed Process Server overview,"* provides information on
     how you can use the process server in your Microsoft Dynamics GP system.
 
-- *Chapter 9, “Process server configuration,”* provides information to help
-    you decide which computers you’ll use as process servers and how to set up
+- *Chapter 9, "Process server configuration,"* provides information to help
+    you decide which computers you'll use as process servers and how to set up
     your clients, servers, and process servers.
 
-- *Chapter 10, “Remote processing setup,”* describes how to set up remote
+- *Chapter 10, "Remote processing setup,"* describes how to set up remote
     processing.
 
-- *Chapter 11, “Processing and monitoring remote processes,”* describes how to
+- *Chapter 11, "Processing and monitoring remote processes,"* describes how to
     start the process server, view tasks being completed, and view logged
     information about remote processes.
 
@@ -1608,17 +1608,17 @@ use of network processing power by allowing you to perform certain tasks
 that require a large amount of processing power on separate computers. This
 reduces the workload of client computers and improves Microsoft Dynamics GP
 performance. The client computer used for data entry will be immediately
-available to perform other tasks, so you don’t have to wait to continue
+available to perform other tasks, so you don't have to wait to continue
 working while the task is completed, or work more slowly while the task is
 completed in the background.
 
-The computers where you’ll complete these processes are **process servers**,
-computers with high processing power. To take advantage of DPS, it’s
+The computers where you'll complete these processes are **process servers**,
+computers with high processing power. To take advantage of DPS, it's
 important that your process server be a computer with a fast processor and
 sufficient RAM, so that tasks can be completed as quickly as possible.
 
 A computer you use as a process server can be a dedicated process server—a
-computer used only for remote processing—or a client computer that’s also
+computer used only for remote processing—or a client computer that's also
 used for data entry or other tasks. However, to use the power of the process
 server as efficiently as possible, we recommend that process servers be
 dedicated. You can set up as many process servers as necessary, but may be
@@ -1626,7 +1626,7 @@ limited by your network protocol.
 
 To set up a computer as a process server, install the standard Microsoft
 Dynamics GP client applications. (Refer to the Installation Instructions
-documentation for more information.) Then you’ll specify which computers in
+documentation for more information.) Then you'll specify which computers in
 your system are process servers, and which tasks will be completed on those
 process servers. Sending a task to a process server is called processing a
 task remotely, or **remote processing**.
@@ -1646,15 +1646,15 @@ Installation Instructions documentation.*
 #### Tasks that can be performed remotely
 
 Tasks within Microsoft Dynamics GP that have a specific start and end point
-and that you don’t need to continue monitoring by choosing a response in a
+and that you don't need to continue monitoring by choosing a response in a
 dialog box,
 
 or by interacting with the process in other ways, can be processed remotely.
-Because you can’t interact with the process once it’s sent to a process
+Because you can't interact with the process once it's sent to a process
 server, any alert messages that may be generated during the process will be
 saved in the Process Server Activity Table.
 
-After you’ve assigned processes to process servers, each user can then
+After you've assigned processes to process servers, each user can then
 choose to perform remote processes locally, on the designated process
 server, or on a specified service (a group of one or more process servers).
 
@@ -1665,12 +1665,12 @@ server, or on a specified service (a group of one or more process servers).
 
 #### Using the Distributed Process Server
 
-The Dps.exe application is installed on each client computer when you install Microsoft Dynamics GP. If you’re using the load balancing feature, be sure the 
+The Dps.exe application is installed on each client computer when you install Microsoft Dynamics GP. If you're using the load balancing feature, be sure the 
 Distributed Process Manager application—Dpm.exe—is running, as well. The Dpm.exe application also is installed automatically on each client computer. For more information see [Load balancing and services](#load-balancing-and-services).
 
 Complete the task, such as posting batches or printing reports, as you typically do.
 
-The task will be processed on the process server you’ve designated during setup. For more information, see [Designating process servers](#designating-process-servers). 
+The task will be processed on the process server you've designated during setup. For more information, see [Designating process servers](#designating-process-servers). 
 
 In the User Preferences window, you must select Remote as the Distributed Processes
 option to process tasks remotely. You can use the Process Monitor window on
@@ -1678,7 +1678,7 @@ your client computer to view the tasks currently assigned to each process
 server. You also can use the Process Monitor window on the process server to
 view all processes being completed on that computer.
 
-You don’t need to monitor a process while it’s being completed. Instead of
+You don't need to monitor a process while it's being completed. Instead of
 displaying any dialog boxes that might appear if you were processing a task
 locally, DPS records the information about the message in a file, which you
 can view after the task is completed. If an interruption, such as a power
@@ -1689,7 +1689,7 @@ If you want to record the start and end times of remote process activity in
 the
 
 Process Server Activity Table, mark the Track Start and End Times option in
-the DPS Setup window. If you didn’t mark the Track Start and End Times
+the DPS Setup window. If you didn't mark the Track Start and End Times
 option, only alert messages will be recorded in the table.
 
 #### Load balancing and services
@@ -1732,7 +1732,7 @@ process.
     current processing load for the servers in the specified service, and tells
     the client to send the process to the process server with the lightest load.
 
-If load balancing isn’t enabled or DPM isn’t operational, the process will
+If load balancing isn't enabled or DPM isn't operational, the process will
 be sent to the first server in the specified service. If no process servers
 are available, the process will be processed locally on the client.
 
@@ -1781,7 +1781,7 @@ Manager, see the Installation Instructions documentation.
 
 ### Chapter 9: Process server configuration
 
-Use this information to help you determine the types of computers you’ll use
+Use this information to help you determine the types of computers you'll use
 as process servers and how to set up your Microsoft Dynamics GP clients,
 servers, and process servers.
 
@@ -1789,7 +1789,7 @@ servers, and process servers.
 
 
 
-*For information about system requirements for process servers, see [system requirements for Microsoft Dynamics GP](system-requirements.md). 
+*For information about system requirements for process servers, see [Core system requirements for Microsoft Dynamics GP](system-requirements-core.md). 
 
 The process server configuration information contains the following
 sections:
@@ -1814,7 +1814,7 @@ or more process servers, results in the fastest and most efficient
 processing.
 
 The following information describes different ways you can set up process
-servers. If performance isn’t satisfactory in one configuration, you may
+servers. If performance isn't satisfactory in one configuration, you may
 want to try a different configuration, which may improve performance. You
 may find that a combination of these configurations works best for your
 circumstances. You can set up as many process servers as necessary—as many
@@ -1836,28 +1836,28 @@ Typically, the best way to process tasks remotely is to use two to three or
 more process servers to form one or more services. If you simply assign
 processes to different process servers, one process server may have several
 processes in its queue while another process server is idle. With a service,
-you’ll use the Distributed Process Manager to determine which process server
+you'll use the Distributed Process Manager to determine which process server
 in a group the remote process should be sent to.
 
 To decide how many computers to use in a service, evaluate the number of
 users who will be processing tasks remotely, the processing speed of the
-computers you’ll use, and the length of the tasks you want to complete, such
-as financial reports. In addition, consider whether it’s important that the
+computers you'll use, and the length of the tasks you want to complete, such
+as financial reports. In addition, consider whether it's important that the
 tasks be completed as quickly as possible, or whether you simply want them
 to be completed on computers other than your client computers.
 
 For instance, if you have two Pentium class 2.8 GHz computers and two
 Pentium class 3 GHz computers, you may want to create two services, one
-containing the Pentium class 2.8s and one containing the Pentium 3s. You’d
+containing the Pentium class 2.8s and one containing the Pentium 3s. You'd
 then send tasks that need to be done quickly and which typically take more
 time to the Pentium class 3 service, and other processes to the Pentium
 class 2.8 service.
 
-If it doesn’t matter which tasks are completed more quickly, then you may
+If it doesn't matter which tasks are completed more quickly, then you may
 want to create one service containing all four computers.
 
-To determine how many process servers you’ll need, estimate how many process
-servers could be kept completely busy by the processes you’ll complete
+To determine how many process servers you'll need, estimate how many process
+servers could be kept completely busy by the processes you'll complete
 remotely, then add one computer to that number, and group them in one or
 more services.
 
@@ -1869,7 +1869,7 @@ servers:
 #### DPS on dedicated servers
 
 If you use one computer for your data server and separate computers for your
-process servers, processing power won’t need to be shared between data
+process servers, processing power won't need to be shared between data
 processing tasks such as data entry, and remote process tasks such as
 posting or printing.
 
@@ -1898,13 +1898,13 @@ server, install the DPS engine and assign processes to it.
 
 If you use this configuration, performance will likely be slower than in a
 system with dedicated process servers. The client you use as a process
-server shouldn’t be used for frequent data entry; if it’s used for data
+server shouldn't be used for frequent data entry; if it's used for data
 entry only during the day, for instance, you can use it for remote processes
 you complete overnight.
 
 ### Chapter 10: Remote processing setup
 
-When you set up remote processing for your system, you’ll specify which
+When you set up remote processing for your system, you'll specify which
 tasks will be completed on the process servers, and which process servers
 will be grouped in services.
 
@@ -1953,7 +1953,7 @@ C:\\DPS3\\Dex.ini DPSInstance=3
 
 Once these changes are made, define the DPS instances in the DPS Setup
 window or the DPS Server Setup window. Each instance should be given the
-host name of the DPS machine, followed by the “\#” symbol and the instance
+host name of the DPS machine, followed by the "\#" symbol and the instance
 number.
 
 Server1\#1 (for DPS1) Server1\#2 (for DPS2) Server1\#3 (for DPS3)
@@ -1964,7 +1964,7 @@ services.
 #### Designating process servers
 
 Use the DPS Server Setup window to enter the host names of the computers
-you’ll use as process servers. A host name is the unique name by which a
+you'll use as process servers. A host name is the unique name by which a
 computer is known on a network.
 
 **To designate process servers:**
@@ -1977,16 +1977,16 @@ button)
 ![A screenshot ](media/dd2bf3db7c50ffdeea57e6d23e5fafa6.jpg)
 
 1. Type the host name (sometimes known as the computer name) of a process
-    server you’ll use in the Server Host field.
+    server you'll use in the Server Host field.
 
 2. Mark the Verify Connection On Add option to verify that you can connect to
-    that process server from the computer you’re currently using.
+    that process server from the computer you're currently using.
 
 3. Choose Add.
 
 If the connection is working and the process server is active, the server
 host name will be added to the list. If not, a message will alert you that
-the computer can’t be contacted. Verify that you entered a valid host name;
+the computer can't be contacted. Verify that you entered a valid host name;
 if necessary, refer to the network protocol information in your Installation
 Instructions documentation and the documentation provided with your network
 protocol to determine the cause of the problem.
@@ -1995,16 +1995,16 @@ protocol to determine the cause of the problem.
 
 
 
-*If the Verify Connection On Add option isn’t marked, the server will be
-added to the list even if you can’t currently contact the process server.*
+*If the Verify Connection On Add option isn't marked, the server will be
+added to the list even if you can't currently contact the process server.*
 
-1. Repeat these steps to add the host name of each computer you’ll use as a
+1. Repeat these steps to add the host name of each computer you'll use as a
     process server, then choose OK to return to the DPS Setup window.
 
 #### Removing a server
 
 To remove a server, select it in the DPS Setup window and choose Delete. It
-will be removed from the list and from any service it’s part of. If you make
+will be removed from the list and from any service it's part of. If you make
 any modification to a service, such as deleting a server, restart the
 Distributed Process Manager.
 
@@ -2027,7 +2027,7 @@ button)
 
 1. Type the name of the service in the Services field.
 
-2. Choose the Add button. The names of the process servers you’ve set up will
+2. Choose the Add button. The names of the process servers you've set up will
     be listed in the Configured Servers list.
 
 3. Select each process server you want to add to the service and choose Insert.
@@ -2048,9 +2048,9 @@ service, such as deleting a server, restart the Distributed Process Manager.
 Use the DPS Setup window to specify which processes you want to complete on
 process servers, such as batch posting and printing reports for each client.
 
-Before you begin, be sure you’ve set up process servers and services. You
+Before you begin, be sure you've set up process servers and services. You
 can enter servers in the DPS Setup window without setting them up in the DPS
-Server Setup window, but the existence of those servers won’t be verified.
+Server Setup window, but the existence of those servers won't be verified.
 
 **To set up remote processing:**
 
@@ -2079,13 +2079,13 @@ information, see Enabling remote processes on page 59.*
 1. Enter the server ID (host name) or service where each task will be
     processed.
 
-If you’ve entered servers in this window without setting up the servers in
-the DPS Server Setup window, the existence of those servers won’t be
+If you've entered servers in this window without setting up the servers in
+the DPS Server Setup window, the existence of those servers won't be
 verified. All services you enter must have been set up already in the DPS
 Service Setup window.
 
 If more than one instance of Distributed Process Server exists on a process
-server, specify which instance of DPS you’re using on the server. For
+server, specify which instance of DPS you're using on the server. For
 example:
 
 Server1\# (for DPS1) Server1\#2 (for DPS2)
@@ -2095,7 +2095,7 @@ see [Multiple instances of DPS on the same client](#multiple-instances-of-dps-on
 
 1. Mark the Track Start and End Times option if you want to record the start
     and end times of remote process activity in the Process Server Activity
-    Table. If this option isn’t marked, only alert messages will be recorded in
+    Table. If this option isn't marked, only alert messages will be recorded in
     the table.
 
 ![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
@@ -2105,11 +2105,11 @@ see [Multiple instances of DPS on the same client](#multiple-instances-of-dps-on
 > [!NOTE]
 > The Process Server Activity Table can become large in a short time if you choose to track the start and end times of all processes.
 
-See [Chapter 11, “Processing and monitoring remote processes](#chapter-11-processing-and-monitoring-remote-processes), for
+See [Chapter 11, "Processing and monitoring remote processes](#chapter-11-processing-and-monitoring-remote-processes), for
 information about viewing, printing, and removing the information in the
 Process Server Activity Table.
 
-1. Mark the Enable Load Balancing option if you’re using services.
+1. Mark the Enable Load Balancing option if you're using services.
 
 The Manager Host field will appear if Enable Load Balancing is marked; enter
 the host name of the computer where you are using the Distributed Process
@@ -2122,10 +2122,10 @@ illustration:
     selected series, select another series and set up the processes you want to
     distribute to a remote processor or service.
 
-2. When you’ve finished entering setup information for all series, choose OK to
+2. When you've finished entering setup information for all series, choose OK to
     save the entries and close the window.
 
-To review the process information you’ve entered, choose File \>\> Print
+To review the process information you've entered, choose File \>\> Print
 while the DPS Setup window is displayed to print the Process Server Setup
 List.
 
@@ -2148,7 +2148,7 @@ Setup window are ignored and the processes will occur on the local computer.
 
 1. Mark Local or Remote for the Distributed Processes option.
 
-2. Choose OK to save the information you’ve entered and close the User
+2. Choose OK to save the information you've entered and close the User
     Preferences window.
 
 #### Setting up printers for remote processing
@@ -2156,10 +2156,10 @@ Setup window are ignored and the processes will occur on the local computer.
 Once you begin a remote process, no additional input—such as responding to
 dialog boxes or specifying print destinations—is required. All processes
 sent to a printer will be printed to the default printer for the
-corresponding process server; users can’t specify the printer when they
+corresponding process server; users can't specify the printer when they
 begin the process. For this reason, you may want to set up several process
-servers if it’s important that certain processes be sent to a specific
-printer. For more information about printers, see [Chapter 2, “Printers](#chapter-2-printers).
+servers if it's important that certain processes be sent to a specific
+printer. For more information about printers, see [Chapter 2, "Printers](#chapter-2-printers).
 
 #### Setting up report destinations for remote processing
 
@@ -2172,9 +2172,9 @@ the report file name, for instance, the report will be stored on the C:
 drive of the process server, not the C: drive of the client you used to
 begin the process.
 
-In addition, be sure you don’t print reports to the screen if the report
-will be processed remotely. Typically, the Screen option won’t be available
-if you’ve set up a process to be performed remotely. However, if you set up
+In addition, be sure you don't print reports to the screen if the report
+will be processed remotely. Typically, the Screen option won't be available
+if you've set up a process to be performed remotely. However, if you set up
 a report to be printed to the screen and processed locally, then decide to
 process it remotely, you must change the report destination, as well.
 
@@ -2197,39 +2197,39 @@ stored in a dictionary file called Reports.dic. (Reports.dic is the name of
 the Microsoft Dynamics GP reports dictionary; reports dictionaries for
 integrating products have different names.) You can process only primary
 copies of reports on process servers; secondary copies and custom reports
-can’t be processed remotely.
+can't be processed remotely.
 
 For information about creating primary copies and configuring reports
 dictionaries, refer to your Report Writer documentation.
 
 If the processes that you complete remotely contain reports that are primary
-copies—for instance, if you’re using a primary copy of a posting journal—the
+copies—for instance, if you're using a primary copy of a posting journal—the
 process server must be set up to access the correct reports dictionary. This
 may be on the client, at a network location, or on the process server.
 
-If you’re using two or more reports dictionaries—for instance, if each user
-has a separate local reports dictionary—you’ll need to set up your process
+If you're using two or more reports dictionaries—for instance, if each user
+has a separate local reports dictionary—you'll need to set up your process
 servers so that each one accesses the correct reports dictionary.
 
 **Modified reports**
 
 If you want to process primary copies of reports remotely, the client and
-server must access the same reports dictionary. For instance, if a user’s
+server must access the same reports dictionary. For instance, if a user's
 launch file on a client lists J:\\Microsoft Dynamics GP as the location for
 the reports dictionary, the launch file on the process server must specify
 that location for the reports dictionary, as well. If the process server
-can’t access the reports dictionary where a primary copy is stored, the
+can't access the reports dictionary where a primary copy is stored, the
 original report will be printed instead.
 
 You can allow users to print primary copies remotely by storing a reports
 dictionary on a process server. If you store the reports dictionary on the
-process server, printing will be faster than if it’s stored at the user’s
+process server, printing will be faster than if it's stored at the user's
 computer.
 
 To be sure the process server is accessing the correct reports dictionary,
 open the launch file. The launch file, typically called Dynamics.set,
 contains the location of the application dictionaries, forms dictionaries,
-and reports dictionaries you’re using. In the following example, the reports
+and reports dictionaries you're using. In the following example, the reports
 dictionary is stored at a central network location.
 
 ![A screenshot ](media/ce0aaeb901d0b0c3f548cc57ed00b8a0.jpg)
@@ -2249,7 +2249,7 @@ file using a text editor* on page 82 for instructions.
 
 **One reports dictionary that all users access**
 
-If you’re using one reports dictionary that all users access, be sure that
+If you're using one reports dictionary that all users access, be sure that
 the launch file on each process server contains the location of that reports
 dictionary. In the following example, all clients and process servers access
 a dictionary stored at a network location.
@@ -2261,7 +2261,7 @@ network traffic.
 
 **Two or more reports dictionaries**
 
-If you’re using two or more reports dictionaries, you can use one process
+If you're using two or more reports dictionaries, you can use one process
 server for each user, or have some users process tasks only locally (see
 *Enabling remote processes* on page 59).
 
@@ -2273,7 +2273,7 @@ that the client and process server use the same reports dictionary.
 In the next example, the first and third clients process locally all tasks
 that include primary copies of reports. The second client remotely processes
 tasks including primary copies, and the process server accesses that
-client’s report dictionary.
+client's report dictionary.
 
 Reports.dic Reports.dic Reports.dic
 
@@ -2297,7 +2297,7 @@ The information contains the following sections:
 
 #### Starting the Distributed Process Manager
 
-When you’ve configured your process servers and are ready to begin using
+When you've configured your process servers and are ready to begin using
 your multiuser system, follow the instructions in this procedure to start
 the components of the system in the correct order.
 
@@ -2358,8 +2358,8 @@ sent the process to that process server. If you select Process Server as the
 location, you will not be able to view process details in the Process Detail
 window.
 
-1. If you’ve selected Process Server as the Location, specify the server for
-    which you want to display processes. If you’re using the Process Monitor
+1. If you've selected Process Server as the Location, specify the server for
+    which you want to display processes. If you're using the Process Monitor
     window on the process server computer, you can view only the processes
     performed on that server—Local.
 
@@ -2384,9 +2384,9 @@ Process Monitor window on the process server, you can suspend the processes
 on that server.
 
 1. To remove processes, highlight the process and choose Remove. You can remove
-    reports from the queue as long as they aren’t currently active.
+    reports from the queue as long as they aren't currently active.
 
-Processes that can be removed are indicated with a “\>” sign:
+Processes that can be removed are indicated with a "\>" sign:
 
 \> General Ledger: Trial Balance Report(2)
 
@@ -2433,7 +2433,7 @@ entry is a recurring or scheduled process.*
 #### Viewing process information
 
 The Process Server Inquiry window shows information about the outcome of
-processes that have been sent to process servers. Processes that weren’t
+processes that have been sent to process servers. Processes that weren't
 completed because an error occurred will be displayed. For example, as a process
 is performed by a process server, any alert messages generated by the process
 are recorded in the Process Server Activity Table.
@@ -2459,7 +2459,7 @@ displayed; to view these processes, use the Process Monitor window.
     Times option in the DPS Setup window.
 
 You can use the Remove Process Server Detail window to remove or print the
-information displayed in this window. Only the information that’s been
+information displayed in this window. Only the information that's been
 written to the Process Server Activity Table since the last time you removed
 data from the table will be displayed. See *Removing and printing remote
 process information* on page 69.
@@ -2480,7 +2480,7 @@ need to remove data from the table periodically.
 
 ![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-*Before removing process server detail, back up your company’s data.*
+*Before removing process server detail, back up your company's data.*
 
 **To remove and print remote process information:**
 
@@ -2498,7 +2498,7 @@ need to remove data from the table periodically.
 
 
 
-*If you don’t specify any server or date restrictions, all records will be
+*If you don't specify any server or date restrictions, all records will be
 included. You can enter only one range of dates and one range of server
 IDs.*
 
@@ -2511,18 +2511,18 @@ IDs.*
 ## Part 4: Technical reference
 
 This part of the documentation contains technical information on how
-Microsoft Dynamics GP runs. In it, you’ll find detailed information about
+Microsoft Dynamics GP runs. In it, you'll find detailed information about
 integrating products, launch files, and defaults files.
 
 The following topics are discussed:
 
-- *Chapter 12, “Integrating products,”* provides an overview of the
+- *Chapter 12, "Integrating products,"* provides an overview of the
     multidictionary environment.
 
-- *Chapter 13, “Launch files,”* provides information about how to use, create,
+- *Chapter 13, "Launch files,"* provides information about how to use, create,
     and edit launch files.
 
-- *Chapter 14, “Defaults files,”* describes how to use and edit the Dex.ini
+- *Chapter 14, "Defaults files,"* describes how to use and edit the Dex.ini
     file, which contains setup and operating information about Microsoft
     Dynamics GP.
 
@@ -2548,7 +2548,7 @@ The integrating products information is divided into the following sections:
 
 An application dictionary contains all the resources that make a product
 unique, including its windows, reports, and how it works. In the
-multidictionary environment of Microsoft Dynamics GP, you’ll use two types
+multidictionary environment of Microsoft Dynamics GP, you'll use two types
 of application dictionaries:
 
 - A **main dictionary** is used to access resources in integrating
@@ -2568,7 +2568,7 @@ the launch file (typically Dynamics.set) so that the product will be started
 with Microsoft Dynamics GP. For more information about launch files, see
 *Chapter 13,*
 
-*“Launch files.”*
+*"Launch files."*
 
 #### Multidictionary environment example
 
@@ -2594,7 +2594,7 @@ products can have other names, but must use the extension .DIC. The
 locations of the reports dictionaries for other products are stored in the
 launch file, as well.
 
-When you’ve installed integrating products, you must select which products’
+When you've installed integrating products, you must select which products'
 reports you want to modify when you use Report Writer. For more information,
 refer to your Report Writer documentation.
 
@@ -2606,9 +2606,9 @@ Forms.dic; dictionaries for other products can have other names, but must
 use the extension .DIC. The locations of the forms dictionaries for other
 products are stored in the launch file, as well.
 
-When you’ve installed integrating products, you must select which products’
+When you've installed integrating products, you must select which products'
 windows you want to modify when you use the Modifier. For more information
-about the Modifier and the forms dictionaries, refer to your Modifier User’s
+about the Modifier and the forms dictionaries, refer to your Modifier User's
 Guide documentation. For more information about setting access to modified
 windows and reports, refer to your System Setup Guide (Help \>\> Contents
 \>\> Select Setting up the System).
@@ -2659,7 +2659,7 @@ created each time you install Microsoft Dynamics GP or its engine. A launch
 file for Microsoft Dynamics GP Utilities with local dictionary locations is
 created each time you install either application.
 
-When you start Microsoft Dynamics GP, you indicate the launch file you’re
+When you start Microsoft Dynamics GP, you indicate the launch file you're
 using by double-clicking a program item that lists the Microsoft Dynamics GP
 engine and the corresponding launch file in its properties. You also can
 start Microsoft Dynamics GP by dragging the launch file, typically
@@ -2668,14 +2668,14 @@ engine reads the launch file to determine which dictionaries will be used,
 then opens those dictionaries to present the functioning application.
 
 A separate launch file is also created for Microsoft Dynamics GP Utilities
-and functions the same way, except that integrating products can’t be used.
+and functions the same way, except that integrating products can't be used.
 When you drag the Dynutils.set file (the launch file for Microsoft Dynamics
 GP Utilities) over the engine, the resources in the Microsoft Dynamics GP
 Utilities application dictionary (Dynutils.set) will be used.
 
-If you’re using two or more launch files to use Microsoft Dynamics GP in
+If you're using two or more launch files to use Microsoft Dynamics GP in
 different configurations, you can modify the existing Microsoft Dynamics GP
-item’s or shortcut’s properties, create additional items or shortcuts that
+item's or shortcut's properties, create additional items or shortcuts that
 will access other launch files, and modify the Microsoft Dynamics GP item or
 shortcut so that you can select the launch file you want to use each time
 you start Microsoft Dynamics GP.
@@ -2698,7 +2698,7 @@ network software in order to allow the Microsoft Dynamics GP engine on each
 client to locate forms and reports dictionaries on the network. The
 Dynamics.dic and the Microsoft Dynamics GP engine must be on the client.
 Refer to your operating system documentation for information about
-connecting volumes in a network. If your system hasn’t been set up to allow
+connecting volumes in a network. If your system hasn't been set up to allow
 client computers to access files other than Microsoft Dynamics GP tables on
 the server or network volumes, you must store dictionaries locally on all
 clients.
@@ -2714,10 +2714,10 @@ documentation and the Modifier documentation.*
 
 #### Lines in a launch file
 
-A launch file is composed of a number of lines, depending on whether you’re
+A launch file is composed of a number of lines, depending on whether you're
 using only Microsoft Dynamics GP, or integrating products, as well. In the
 launch files for Microsoft Dynamics GP and Microsoft Dynamics GP Utilities,
-the forms and reports dictionary lines must be included, but don’t affect
+the forms and reports dictionary lines must be included, but don't affect
 how either application works. Some lines in the Microsoft Dynamics GP
 Utilities launch file may not contain dictionary locations until after you
 start each application for the first time.
@@ -2727,10 +2727,10 @@ in the Dynamics.set file.
 
 | **Line**                              | **Description**                                                                                                                                                                                                                            | **When to use**                                                  | **Example**                               |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|-------------------------------------------|
-| Number of products in the launch file | The number of products listed in the launch file. If you’ve installed Microsoft Dynamics GP and three integrating products, but want to start only two of them with a particular launch file, list only those products in the launch file. | This line will always appear.                                   | 1 (if only Microsoft Dynamics GP is used) |
+| Number of products in the launch file | The number of products listed in the launch file. If you've installed Microsoft Dynamics GP and three integrating products, but want to start only two of them with a particular launch file, list only those products in the launch file. | This line will always appear.                                   | 1 (if only Microsoft Dynamics GP is used) |
 | Product ID for Microsoft              | This line is always 0 (zero).                                                                                                                                                                                                             | This line will always appear.                                   | 0                                         |
 | Product name for Microsoft            | This line is always Microsoft Dynamics GP.                                                                                                                                                                                                | This line will always appear.                                   | Microsoft Dynamics GP                     |
-| Integrating products’ product IDs     | If you’ve installed an integrating product, its product name will be added to the launch file.                                                                                                                                            | This line will appear only if you’re using integrating products. | Lead Tracking                             |
+| Integrating products' product IDs     | If you've installed an integrating product, its product name will be added to the launch file.                                                                                                                                            | This line will appear only if you're using integrating products. | Lead Tracking                             |
 
 3 (if Microsoft Dynamics GP and two integrating products are used)
 
@@ -2743,12 +2743,12 @@ Dynamics GP
 | Dictionary location ID                                      | This line identifies the group of dictionary locations that follows it, and is stored in the                                                                                                                                                                                                                                       | This line will always appear.                                   | Windows (this is the default)                    |
 | Location of Forms.dic                                       | This line specifies the location of the Microsoft Dynamics GP forms dictionary, and must be written in generic format.                                                                                                                                                                                                            | This line will always appear.                                   | :J:Program Files/Microsoft                       |
 | Location of Reports.dic                                     | This line specifies the location of the Microsoft Dynamics GP reports dictionary, and must be written in generic format.                                                                                                                                                                                                          | This line will always appear.                                   | :V:Program Files/Microsoft                       |
-| Location of application dictionary for integrating products | If you’re using integrating products, this line specifies the location of the product’s application dictionary.                                                                                                                                                                                                                   | This line will appear only if you’re using integrating products. | :C:Program Files/Microsoft                       |
-| Location of forms dictionary for integrating products       | If you’re using integrating products, this line specifies the location of the product’s forms dictionary.                                                                                                                                                                                                                         | This line will appear only if you’re using integrating products. | :J:Program Files/Microsoft                       |
-| Location of reports dictionary for integrating products     | If you’re using integrating products, this line specifies the location of the product’s reports dictionary.                                                                                                                                                                                                                       | This line will appear only if you’re using integrating products. | :VOL1:Program Files/Microsoft                    |
-| Additional dictionary location                              | This line identifies the group of dictionary locations that follows it. Only one dictionary location ID, typically “Windows,” is provided with Microsoft                                                                                                                                                                           | This line is optional.                                          | Windows Users                                    |
-| Dictionary locations for                                    | If you’re using an additional dictionary location ID, list another set of locations for the Microsoft Dynamics GP application, forms and reports dictionaries.                                                                                                                                                                    | This line is optional.                                          | :C:Program Files/Microsoft                       |
-| Dictionary locations for integrating products               | If you’re using an additional dictionary location ID, list another set of locations for integrating products. You must list the same dictionaries for each dictionary location ID; for instance, don’t list the dictionaries for three products under one dictionary location ID, and the dictionaries for only two under another. | This line is optional.                                          | :C:Program Files/Microsoft Dynamics/GP/LEADS.dic |
+| Location of application dictionary for integrating products | If you're using integrating products, this line specifies the location of the product's application dictionary.                                                                                                                                                                                                                   | This line will appear only if you're using integrating products. | :C:Program Files/Microsoft                       |
+| Location of forms dictionary for integrating products       | If you're using integrating products, this line specifies the location of the product's forms dictionary.                                                                                                                                                                                                                         | This line will appear only if you're using integrating products. | :J:Program Files/Microsoft                       |
+| Location of reports dictionary for integrating products     | If you're using integrating products, this line specifies the location of the product's reports dictionary.                                                                                                                                                                                                                       | This line will appear only if you're using integrating products. | :VOL1:Program Files/Microsoft                    |
+| Additional dictionary location                              | This line identifies the group of dictionary locations that follows it. Only one dictionary location ID, typically "Windows," is provided with Microsoft                                                                                                                                                                           | This line is optional.                                          | Windows Users                                    |
+| Dictionary locations for                                    | If you're using an additional dictionary location ID, list another set of locations for the Microsoft Dynamics GP application, forms and reports dictionaries.                                                                                                                                                                    | This line is optional.                                          | :C:Program Files/Microsoft                       |
+| Dictionary locations for integrating products               | If you're using an additional dictionary location ID, list another set of locations for integrating products. You must list the same dictionaries for each dictionary location ID; for instance, don't list the dictionaries for three products under one dictionary location ID, and the dictionaries for only two under another. | This line is optional.                                          | :C:Program Files/Microsoft Dynamics/GP/LEADS.dic |
 
 Workstation2 setting in the Microsoft Dynamics GP defaults file. Typically,
 the dictionary location ID will be stored in the defaults file. However, if
@@ -2768,8 +2768,8 @@ Dynamics/GP/Data/4549R.dic
 
 IDs
 
-Dynamics GP. The ID that’s used depends on the ID stored in the Workstation2
-setting of the computer’s defaults file.
+Dynamics GP. The ID that's used depends on the ID stored in the Workstation2
+setting of the computer's defaults file.
 
 Microsoft Dynamics GP
 
@@ -2791,7 +2791,7 @@ Dynamics/GP/4549R.dic
 
 #### Example launch file using integrating products
 
-If you’ve installed integrating products, dictionary location information
+If you've installed integrating products, dictionary location information
 will be listed for those products. Each product has a separate application
 dictionary, forms dictionary, and reports dictionary, and the location for
 each must be listed in the launch file for each user to access that product.
@@ -2807,7 +2807,7 @@ Windows, all three sets of dictionary locations will be used, so that the
 Lead Tracking and Time and Billing products can be opened. Since Microsoft
 Dynamics GP is the main product (indicated by its product ID of 0), it will
 be opened first. For more information on defaults files, see *Chapter 14,
-“Defaults files.”*
+"Defaults files."*
 
 #### Example launch file using multiple location IDs
 
@@ -2817,11 +2817,11 @@ file and distribute the launch file to the affected users. In addition, you
 can control which integrating products users access. For example, you can
 create a launch file for one group of users listing only Microsoft Dynamics
 GP, and a launch file for another group of users listing Microsoft Dynamics
-GP and the integrating products you’ve installed.
+GP and the integrating products you've installed.
 
 If you add dictionary location IDs to a launch file or change an existing
 dictionary location ID, you must make the same change in the defaults file
-where it’s stored.
+where it's stored.
 
 For more information, see *How launch files and defaults files work
 together* on page 85.
@@ -2898,9 +2898,9 @@ launch file and choose OK; the Login window will be displayed.
     - The number of application dictionaries on your hard disk, the product
         ID, and the product name corresponding to each application dictionary.
 
-    - A dictionary location ID, typically “Windows.”
+    - A dictionary location ID, typically "Windows."
 
-    - The location of the main product’s application dictionary, forms
+    - The location of the main product's application dictionary, forms
         dictionary, and reports dictionary (the folder where the Microsoft
         Dynamics GP engine is located).
 
@@ -2910,10 +2910,10 @@ launch file and choose OK; the Login window will be displayed.
 
 #### Editing a launch file using the Edit Launch File window
 
-Typically, it’s not necessary to edit launch files unless one is damaged or
+Typically, it's not necessary to edit launch files unless one is damaged or
 deleted, or if you change the location of your forms or reports
 dictionaries. If you move dictionaries or create additional launch files,
-you’ll need to enter current information about where your dictionaries are
+you'll need to enter current information about where your dictionaries are
 located, or modify the launch file to start only certain products. A launch
 file is any file with a .SET extension that was installed with Microsoft
 Dynamics GP or that you've created using the instructions in this section.
@@ -2937,7 +2937,7 @@ a text editor* on page 82 for more information.
     box where you can select a launch file. Choose OK.
 
 2. Select a product. The scrolling window displays the products, including
-    Microsoft Dynamics GP and any integrating products you’re using with
+    Microsoft Dynamics GP and any integrating products you're using with
 
 Microsoft Dynamics GP, that are opened using the launch file displayed in
 the Launch File field. Select the product you want to edit dictionary
@@ -2952,8 +2952,8 @@ name of an integrating product you deleted from the launch file you're
 editing, you must use a text editor.*
 
 1. Select your dictionary location ID. The name displayed corresponds to a set
-    of locations for the selected product’s application dictionary, forms
-    dictionary, and reports dictionary. If you’re not sure of your dictionary
+    of locations for the selected product's application dictionary, forms
+    dictionary, and reports dictionary. If you're not sure of your dictionary
     location ID, you can check it by viewing the **Workstation2** setting in
     your Dex.ini file.
 
@@ -2976,13 +2976,13 @@ dictionaries opened on your computer.*
 file button. A dialog box will be displayed; specify the new location and
 choose OK.*
 
-If you want to be able to access windows or reports you’ve already created,
+If you want to be able to access windows or reports you've already created,
 move the dictionary containing them to the new location. If you enter a
 location for the forms and reports dictionaries where a forms or reports
-dictionary doesn’t exist, a new, empty dictionary will be created there the
+dictionary doesn't exist, a new, empty dictionary will be created there the
 next time you access Modifier or Report Writer.
 
-1. If you’re editing the launch file you used to start the current session of
+1. If you're editing the launch file you used to start the current session of
     Microsoft Dynamics GP, restart Microsoft Dynamics GP to allow the changes to
     take effect.
 
@@ -2991,18 +2991,18 @@ next time you access Modifier or Report Writer.
 Use the following information to make extensive changes to a launch file
 using a text editor.
 
-Typically, it’s not necessary to edit launch files unless one is damaged or
+Typically, it's not necessary to edit launch files unless one is damaged or
 deleted, or if you change the location of your forms or reports
 dictionaries. If you move dictionaries or create additional launch files,
-you’ll need to edit the launch files to enter current information about
+you'll need to edit the launch files to enter current information about
 where your dictionaries are located, or modify the launch file to start only
 certain products.
 
 You can add dictionary location IDs so that different locations will be used
-for a product’s dictionaries, depending on which dictionary location ID is
-selected by the user and stored in the computer’s Dex.ini file. If you add
+for a product's dictionaries, depending on which dictionary location ID is
+selected by the user and stored in the computer's Dex.ini file. If you add
 dictionary location IDs to a launch file or change an existing dictionary
-location ID, you must make the same change in the defaults files where it’s
+location ID, you must make the same change in the defaults files where it's
 stored. For more information, see *How launch files and defaults files work
 together* on page 85.
 
@@ -3027,9 +3027,9 @@ you must create a launch file for each.*
 
 *We recommend that you do not edit a launch file using Write for Windows.*
 
-1. Remove integrating products. If you don’t want an integrating product to be
+1. Remove integrating products. If you don't want an integrating product to be
     available to certain users, create a launch file for them without the
-    product’s ID, name, dictionary location ID, or dictionary locations. Be sure
+    product's ID, name, dictionary location ID, or dictionary locations. Be sure
     to modify the number at the beginning of the launch file, which indicates
     the total number of application dictionaries in the launch file.
 
@@ -3039,15 +3039,15 @@ you must create a launch file for each.*
 3. Be sure there are no blank lines in the launch file, then save changes and
     close it.
 
-4. If you want to be able to access windows or reports you’ve already created,
+4. If you want to be able to access windows or reports you've already created,
     move the dictionary containing them to the new location.
 
 If you entered a location for the forms and reports dictionaries where a
-forms or reports dictionary doesn’t exist, a new, empty dictionary will be
+forms or reports dictionary doesn't exist, a new, empty dictionary will be
 created there the next time you access Modifier or Report Writer.
 
 1. Start Microsoft Dynamics GP using the new launch file. If you removed the
-    dictionary location ID from the **Workstation2** setting, you’ll be prompted
+    dictionary location ID from the **Workstation2** setting, you'll be prompted
     to select a dictionary location ID from the IDs currently in the launch
     file.
 
@@ -3056,31 +3056,31 @@ created there the next time you access Modifier or Report Writer.
 If you made changes to a launch file, use these instructions to be sure
 Microsoft Dynamics GP is working properly.
 
-**Product listed in the launch file isn’t installed**
+**Product listed in the launch file isn't installed**
 
-If a product listed in the launch file isn’t installed in the specified
+If a product listed in the launch file isn't installed in the specified
 location, a dialog box will appear when you start Microsoft Dynamics GP.
-Choose OK; you’ll be able start Microsoft Dynamics GP without installing the
+Choose OK; you'll be able start Microsoft Dynamics GP without installing the
 product or removing it from the launch file.
 
 **Existing dictionary location IDs are modified**
 
-If you’ve modified existing dictionary location IDs, edit the
-**Workstation2** setting of the Dex.ini file for each user’s computer.
-Dictionary location IDs are case-sensitive; if “Windows” appears in your
-Dex.ini file, for instance, and “windows” appears in your launch file, the
-dictionary locations for the Windows dictionary location ID won’t be used.
+If you've modified existing dictionary location IDs, edit the
+**Workstation2** setting of the Dex.ini file for each user's computer.
+Dictionary location IDs are case-sensitive; if "Windows" appears in your
+Dex.ini file, for instance, and "windows" appears in your launch file, the
+dictionary locations for the Windows dictionary location ID won't be used.
 
 If the defaults file **Workstation2** setting contains a dictionary location
-ID that’s no longer in the launch file, when you start Microsoft Dynamics GP
+ID that's no longer in the launch file, when you start Microsoft Dynamics GP
 a message will prompt you to add it to the launch file. If this occurs,
-don’t add the ID; choose No and verify the **Workstation2** setting and the
+don't add the ID; choose No and verify the **Workstation2** setting and the
 dictionary location IDs in the launch file to be sure you edited each
 correctly. (If you add the ID, that dictionary location ID will be added for
 all products in the launch file.) Then restart Microsoft Dynamics GP and, if
 you wish, add the dictionary location ID to the launch file.
 
-If you add dictionary location IDs, change each user’s **Workstation2**
+If you add dictionary location IDs, change each user's **Workstation2**
 setting in the defaults file to the correct ID, or remove the ID so that
 each user will be prompted to select from the IDs in the launch file. For
 more information, see *How launch files and defaults files work together* on
@@ -3111,21 +3111,21 @@ The defaults files information is divided into the following sections:
 A launch file (Dynamics.set) works in conjunction with the **Workstation2**
 line in the defaults file (Dex.ini) on each client computer. If you add
 dictionary location IDs to a launch file or change an existing dictionary
-location ID, you must make the same change in the defaults file where it’s
+location ID, you must make the same change in the defaults file where it's
 stored.
 
-For example, if you modify the dictionary location ID “Windows” in the
-launch file and change it to “Windows Users,” the “Windows” ID is still
+For example, if you modify the dictionary location ID "Windows" in the
+launch file and change it to "Windows Users," the "Windows" ID is still
 stored in the
 
 **Workstation2** setting in the defaults file of all Windows computers. In
 this situation, you would change the **Workstation2** setting on each
-Windows computer from “Windows” to “Windows Users,” so that the dictionary
-locations for the “Windows” dictionary location ID are used.
+Windows computer from "Windows" to "Windows Users," so that the dictionary
+locations for the "Windows" dictionary location ID are used.
 
 If you add another dictionary ID to the launch file, you must change the
 
-**Workstation2** setting in the intended users’ defaults files to reflect
+**Workstation2** setting in the intended users' defaults files to reflect
 the dictionary ID they should use. Alternately, you can delete the
 **Workstation2** setting. Users with no **Workstation2** line and launch
 files with multiple dictionary location IDs must select a dictionary
@@ -3145,7 +3145,7 @@ equal sign for each setting, before the parameter.
 
 *We recommend that you do not edit the Dex.ini file using Windows Write. The
 defaults file is essential for Microsoft Dynamics GP to run correctly;
-always make a backup before you edit it, and don’t edit any setting unless
+always make a backup before you edit it, and don't edit any setting unless
 you're instructed to do so by your reseller, or by Microsoft Dynamics GP
 Technical Support.*
 
@@ -3160,40 +3160,32 @@ Other settings that must be reentered vary, depending on your configuration.
 
 
 > [!IMPORTANT]
-> We recommend that you do not delete the defaults file if you want to re-create it. The defaults file is essential for Microsoft Dynamics GP to run correctly; always make a backup before you edit it, and don’t edit any setting unless you're instructed to do so by your reseller, or by Microsoft Dynamics GP Technical Support.
+> We recommend that you do not delete the defaults file if you want to re-create it. The defaults file is essential for Microsoft Dynamics GP to run correctly; always make a backup before you edit it, and don't edit any setting unless you're instructed to do so by your reseller, or by Microsoft Dynamics GP Technical Support.
 
 ## Part 5: Troubleshooting
 
 This part of the documentation contains the following information:
 
-- *Chapter 15, “General troubleshooting,”* helps you identify common problems
+- *Chapter 15, "General troubleshooting,"* helps you identify common problems
     and includes a reference to resources where you can get more information.
 
-- *Chapter 16, “Data recovery,”* provides information about how to repair
+- *Chapter 16, "Data recovery,"* provides information about how to repair
     data.
 
-- *Chapter 17, “Process server troubleshooting,”* provides information to help
+- *Chapter 17, "Process server troubleshooting,"* provides information to help
     solve problems that may occur when installing, setting up, or using
     Distributed Process Server.
 
 ### Chapter 15: General troubleshooting
 
-This information explains how to troubleshoot problems on your own, where to
-look for more information, and what information you should gather before
-calling Microsoft Dynamics GP Technical Support.
+This information explains how to troubleshoot problems on your own, where to look for more information, and what information you should gather before calling Microsoft Dynamics GP Technical Support.
 
-You also can visit the CustomerSource Web site and search the Knowledge Base
-for answers to your most common technical questions including
-troubleshooting steps, solutions to common issues, and how-to articles.
+You also can visit the [Additional Resources for Microsoft Dynamics On-Premise Customers](/dynamics/s-e/global/additionalresources) article and look for answers to your most common technical questions including troubleshooting steps, solutions to common issues, and how-to articles.
 
 ![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
-
-
-*When you install or use Microsoft Dynamics GP, alert messages may appear
-that are caused by errors in other applications, such as the file handler or
-operating system. To deal with errors not caused by Microsoft Dynamics GP,
-refer to the documentation for the application causing the error.*
+> [!NOTE]
+> When you install or use Microsoft Dynamics GP, alert messages may appear that are caused by errors in other applications, such as the file handler or operating system. To deal with errors not caused by Microsoft Dynamics GP, refer to the documentation for the application causing the error.
 
 The troubleshooting information is divided into the following sections:
 
@@ -3214,9 +3206,9 @@ resources.
 
 **Microsoft Dynamics GP documentation**
 
-If you’ve installed Microsoft Dynamics GP, you can use the help to access
+If you've installed Microsoft Dynamics GP, you can use the help to access
 contextsensitive assistance about windows. You can choose Help \>\> About
-This Window or press F1 to access help for the window you’re currently
+This Window or press F1 to access help for the window you're currently
 viewing. Use the Search tab to find more information on alert messages and
 procedures.
 
@@ -3248,7 +3240,7 @@ product and series,
 the names assigned to each window, the fields each window contains, and the
 tables linked to each window.
 
-**CustomerSource**
+<!--**CustomerSource**
 
 CustomerSource is a Web site for registered Microsoft Dynamics GP customers.
 CustomerSource is available 24 hours a day. You must have a user name and
@@ -3261,19 +3253,19 @@ From the CustomerSource start page, select the Support option. From the Support
 page, you can look for information on your own or you can use e-mail to send a
 question to the Microsoft Dynamics GP Technical Support team.
 
-You’ll find links to Support Hot Topics and Knowledge Base—the best source of
+You'll find links to Support Hot Topics and Knowledge Base—the best source of
 information for error messages, troubleshooting guides, work-arounds, and
-answers to common Report Writer questions. You’ll also find links for automated
+answers to common Report Writer questions. You'll also find links for automated
 fixes, hardware compatibility, and downloads. Use the New Support Request link
 to contact Microsoft Dynamics GP Technical Support electronically. You also can
-view recent support requests for yourself and your company.
+view recent support requests for yourself and your company.-->
 
 **Microsoft SQL Server troubleshooting resources**
 
 SQL Server Books Online is a documentation resource installed with SQL Server.
 
 Use Books Online to troubleshoot SQL error messages and other issues related to
-SQL Server. Microsoft’s web site,
+SQL Server. Microsoft's web site,
 [www.microsoft.com,](https://www.microsoft.com/) is also a good source of
 information for issues related to SQL Server or your operating system.
 
@@ -3284,15 +3276,15 @@ that indicates an error in a specific table. However, data problems may not
 always be this obvious and it may be more difficult to identify in which table
 or tables it has occurred. Other indicators of data problems include:
 
-- Alert messages that you can’t explain
+- Alert messages that you can't explain
 
 - Inaccurate data in windows or on reports
 
 - Unusual characters in windows or on reports
 
-- Windows you’re unable to open
+- Windows you're unable to open
 
-Once you’ve determined that a problem exists, you can use the following
+Once you've determined that a problem exists, you can use the following
 questions to direct your troubleshooting effort.
 
 If you are unable to fix the problem yourself, see *Before you call support* on
@@ -3343,7 +3335,7 @@ tables require maintenance* on page 92.
 
 If an error occurs consistently, you probably need data maintenance. To
 determine if a table is corrupt, try isolating records within the tables
-you’re working with. For more information on determining where the
+you're working with. For more information on determining where the
 maintenance is needed, see *Finding which tables require maintenance* on
 page 92.
 
@@ -3377,7 +3369,7 @@ these files later, if necessary.*
 If customizations exist on your system, contact the person who made the
 customizations for troubleshooting assistance.
 
-**If you’re having printing problems, are you able to print to the screen, a
+**If you're having printing problems, are you able to print to the screen, a
 file, or another printer?**
 
 When you notice a problem on a report or inquiry window, verify whether the
@@ -3403,8 +3395,8 @@ or a result of differing MDAC versions.
 
 #### Finding which tables require maintenance
 
-Once you’ve established that a table requires maintenance in Microsoft Dynamics
-GP, the next step is to find out which table or tables are affected. Once you’ve
+Once you've established that a table requires maintenance in Microsoft Dynamics
+GP, the next step is to find out which table or tables are affected. Once you've
 determined which tables need to be repaired, see the data recovery checklist in
 *Recovering data* on page 95.
 
@@ -3413,15 +3405,15 @@ determined which tables need to be repaired, see the data recovery checklist in
 
 - If unusual results on a report indicate a table that a table requires
     maintenance, refer to the sample reports provided with the module to see
-    which table groups’ data is printed in that report.
+    which table groups' data is printed in that report.
 
-- If you’re having trouble opening a window, use the Window Descriptions
+- If you're having trouble opening a window, use the Window Descriptions
     window (Microsoft Dynamics GP menu \>\> Tools \>\> Resource Descriptions
     \>\> Windows) to determine the physical and table groups accessed by a
     window.
 
-- If you still can’t determine which table is causing the problem, try to
-    isolate the problem. For example, if you’re working in Sales Order
+- If you still can't determine which table is causing the problem, try to
+    isolate the problem. For example, if you're working in Sales Order
     Processing, try entering different types of transactions with various items
     for various customers. If the error occurs only for a specific customer
     record, you can conclude that the data in the RM Customer MSTR table is
@@ -3447,17 +3439,14 @@ or tables.
 
 #### Alert message troubleshooting
 
-If you receive an error message that indicates a problem you can’t explain, use
+If you receive an error message that indicates a problem you can't explain, use
 the following resources for more information. If you are unable to resolve the
 problem yourself, contact Microsoft Dynamics GP Technical Support for other
 options.
 
 **Microsoft Dynamics GP messages**
 
-The best source of information for troubleshooting Microsoft Dynamics GP
-alert messages is the Knowledge Base database on CustomerSource. Go to the
-Technical Q&A page, where you can type in the message number or message text
-to search for the alert message you’re receiving.
+The best source of information for troubleshooting Microsoft Dynamics GP alert messages is the Knowledge Base database on CustomerSource. Go to the Technical Q&A page, where you can type in the message number or message text to search for the alert message you're receiving.
 
 **DBMS messages**
 
@@ -3466,14 +3455,14 @@ Dynamics GP. Always use the SQL Server Books Online to troubleshoot DBMS
 errors (Start \>\> Programs \>\> Microsoft SQL Server \>\> Books Online).
 Select the Search tab and enter the error number, then choose List Topics.
 Either highlight and select Display or double-click an entry to open the
-topic. In the description column of the error message table, you’ll see more
+topic. In the description column of the error message table, you'll see more
 information about the error. You can also use the SQL Query Analyzer to find
 the same information.
 
 #### Before you call support
 
 Have the answers ready to the following questions to help your support
-specialist quickly narrow down the source of the problem you’ve
+specialist quickly narrow down the source of the problem you've
 experiencing.
 
 - What is the exact error message?
@@ -3522,7 +3511,7 @@ issue occurred, then determine the appropriate procedures to complete. For
 more information on determining the location of tables that need
 maintenance, see *Finding which tables require maintenance* on page 92.
 
-*It’s very important that the data recovery functions be performed carefully
+*It's very important that the data recovery functions be performed carefully
 by an authorized user. Refer to your System Setup documentation (Help \>\>
 Contents \>\> select Setting Up the System) for information about setting up
 security to determine users with access to these functions.*
@@ -3541,9 +3530,9 @@ The data recovery information contains the following sections:
 
 #### Recovering data
 
-When you’ve determined the table or tables that are causing the problem,
-follow the steps in this checklist. If it’s possible that one or more tables
-are need maintenance, but you can’t determine which, perform the data
+When you've determined the table or tables that are causing the problem,
+follow the steps in this checklist. If it's possible that one or more tables
+are need maintenance, but you can't determine which, perform the data
 recovery procedures on all tables that may be affected.
 
 ![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
@@ -3553,13 +3542,13 @@ recovery procedures on all tables that may be affected.
 *If you have a current backup that you made before your table issues
 occurred, you could restore it instead of completing the procedures in the
 recovering data checklist. The more recent your backup is, the fewer
-transactions you’ll need to reenter.*
+transactions you'll need to reenter.*
 
 **To recover data:**
 
 1. Make a backup.
 
-Always be sure you have a current backup of your company’s data before
+Always be sure you have a current backup of your company's data before
 performing any table maintenance or utility procedures. These procedures
 deal directly with the data, and if there is an interruption during
 processing you will need to restore the current backup.
@@ -3581,8 +3570,8 @@ Instead, continue to the next step: Reconcile data.
     see [Reconciling tables](#reconciling-tables).
 
 2. Restore a backup. If reconciling is unsuccessful, restore your most recent
-    backup. The more recent your backup, the fewer transactions you’ll have to
-    reenter, and if you’ve printed or saved all of your posting journals,
+    backup. The more recent your backup, the fewer transactions you'll have to
+    reenter, and if you've printed or saved all of your posting journals,
     reentering the transactions can be a fairly simple process. For more
     information, see [Restoring backups](#restoring-backups) or [Restoring data](#restoring-data).
 
@@ -3593,7 +3582,7 @@ related tables and, if possible, changing the data to match the
 corresponding data in a table.
 
 If you were alerted to damage by an alert message indicating damage to a
-specific table, the name of the table won’t be listed in the Check Links
+specific table, the name of the table won't be listed in the Check Links
 window.
 
 ![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
@@ -3648,7 +3637,7 @@ and choose Remove.
 
 *We recommend that you send the Check Links Report to the screen, and then
 print it if necessary, because it may be very large. Each report can only be
-printed once each time you check links, so it’s a good idea to send the
+printed once each time you check links, so it's a good idea to send the
 report to a file as well.*
 
 1. To determine what information to reenter, use the Table Descriptions window
@@ -3656,7 +3645,7 @@ report to a file as well.*
     Tables) to view information for the table you checked links for, then use a
     window that accesses the table to reenter information. Some records are
     created through processes such as posting or aging, and this information
-    can’t be reentered manually in a window.
+    can't be reentered manually in a window.
 
 ![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
@@ -3672,16 +3661,16 @@ documentation.*
 
 #### Reconciling tables
 
-You should reconcile your data when checking links didn’t resolve the
+You should reconcile your data when checking links didn't resolve the
 problem. Reconciling compares corresponding data in different table groups
-and removes any lone, or “orphan,” records. For example, a report option
+and removes any lone, or "orphan," records. For example, a report option
 that was created for a report that no longer exists is an orphan record, and
 would be removed.
 
 Reconciling also checks to be sure that corresponding or identical
 information stored in two different tables is the same, and if there are
-discrepancies, changes the information in the table you’re reconciling to
-match the information in the table it’s being compared with.
+discrepancies, changes the information in the table you're reconciling to
+match the information in the table it's being compared with.
 
 For example, the number of periods in your fiscal year is stored in the
 Fiscal Periods Table and the Company Master Table. If you reconcile the
@@ -3691,7 +3680,7 @@ be changed to match the number in the Company Master Table.
 
 Refer to the Table Descriptions window (Microsoft Dynamics GP menu \>\>
 Tools \>\> Resource Descriptions \>\> Tables) for more information on table
-groups and tables. Some tables can’t be reconciled. If you can’t reconcile
+groups and tables. Some tables can't be reconciled. If you can't reconcile
 the table, restore a backup. For more information, see *Restoring backups*
 on page 99 or *Restoring data* on page 99.
 
@@ -3703,7 +3692,7 @@ on page 99 or *Restoring data* on page 99.
 
 2. Make a backup.
 
-It’s very important that you back up your tables before reconciling or
+It's very important that you back up your tables before reconciling or
 performing any other table maintenance procedure.
 
 1. Open the Reconcile window.
@@ -3729,7 +3718,7 @@ enter a report table location.
 
 
 *Always send the Reconcile Report to the printer, since it can be printed
-only once. It’s a good idea to send the report to a file, as well, in case
+only once. It's a good idea to send the report to a file, as well, in case
 of a printer malfunction.*
 
 The reconcile report will display any information that was changed, and list
@@ -3740,7 +3729,7 @@ Use the Table Descriptions window (Microsoft Dynamics GP menu \>\> Tools
 \>\> Resource Descriptions \>\> Tables) to view information for a table,
 then use a window that accesses that table to reenter information. Some
 records are created through processes such as posting or aging, and this
-information can’t be reentered manually in a window.
+information can't be reentered manually in a window.
 
 1. If the original problem continues to occur, restore backups. For more
     information, see *Restoring backups* on page 99 or *Restoring data* on page
@@ -3750,7 +3739,7 @@ information can’t be reentered manually in a window.
 
 Always restore the entire database containing the affected table or tables.
 The information in your Microsoft Dynamics GP system is so interrelated that
-it’s necessary to restore the database; we recommend that you restore a
+it's necessary to restore the database; we recommend that you restore a
 complete backup of your tables, if possible.
 
 **To restore backups:**
@@ -3765,8 +3754,8 @@ complete backup of your tables, if possible.
 case you need to refer to it later. Your current backup may have become
 damaged, or may contain the same damage currently in your Microsoft Dynamics
 GP system. Making an additional backup before you restore a previous backup
-will ensure that you’ll be able to restore your data to its current state,
-if the backup that you restore is also damaged. Don’t make this backup over
+will ensure that you'll be able to restore your data to its current state,
+if the backup that you restore is also damaged. Don't make this backup over
 a backup you have on hand.*
 
 1. Consult your reseller or qualified installer, or the manual for your backup
@@ -3785,7 +3774,7 @@ a backup you have on hand.*
 
     - The reports containing information from each table. Use the reports
         listed to determine which data is missing, or as a source of the data
-        you’ll need to reenter. The sample reports for each module also lists
+        you'll need to reenter. The sample reports for each module also lists
         each report and the tables from which it draws data.
 
     - The window used to enter information in the table. To determine the
@@ -3798,7 +3787,7 @@ a backup you have on hand.*
 
 *On rare occasions, you may not be able to reenter information into every
 table. Some records are created through processes such as posting or aging,
-and this information can’t be reentered manually in a window. If you were
+and this information can't be reentered manually in a window. If you were
 unable to reenter some of your accounting information, reports using
 non-editable tables, such as history tables, could be inaccurate until the
 end of the year, or until the next time you clear history.*
@@ -3844,7 +3833,7 @@ Microsoft Dynamics GP installation on the SQL Server.*
 
 ### Chapter 17: Process server troubleshooting
 
-Use this information to help solve problems that may occur when you’re
+Use this information to help solve problems that may occur when you're
 installing, setting up, or using the Distributed Process Server. If the
 errors continue to occur, review the installation and setup documentation,
 then contact your designated technical support source.
@@ -3866,40 +3855,40 @@ sections:
 
 **Situation:** A process was set up to be completed remotely; however, it
 was processed locally on a client computer instead. A message stating that
-the process server wasn’t available didn’t appear.
+the process server wasn't available didn't appear.
 
 **Solution:** An error may have occurred in the network protocol connection
 between the process server and your computer, before the process was
-started. Use a “ping” application to be sure that the two computers are
+started. Use a "ping" application to be sure that the two computers are
 connected.
 
 If the network protocol connection is running correctly, restart the DPS
 application on the process server computer.
 
 Another possible cause of the problem is that the user initiating the
-process isn’t set up to process tasks remotely. Choose Home \>\> User
+process isn't set up to process tasks remotely. Choose Home \>\> User
 Preferences to open the User Preferences window and be sure the Remote
 selection is marked for the Distributed Processes option.
 
 #### Process server information not appearing in Process Server Inquiry window
 
-**Situation:** You’ve entered or selected the process server you want to
+**Situation:** You've entered or selected the process server you want to
 view information about in the Process Server Inquiry window, but no
 information is appearing in the scrolling window.
 
-**Solution:** If you’ve enabled load balancing, add the “\#” symbol at the
+**Solution:** If you've enabled load balancing, add the "\#" symbol at the
 end of the process server name in the Server ID field in the Process Server
-Inquiry window. For example, if you’ve entered Server1 in the Server ID
-field, add the “\#” symbol so the name is Server1\#. You don’t have to add
-the “\#” symbol for the process server in the DPS Setup window or the DPS
+Inquiry window. For example, if you've entered Server1 in the Server ID
+field, add the "\#" symbol so the name is Server1\#. You don't have to add
+the "\#" symbol for the process server in the DPS Setup window or the DPS
 Server Setup window.
 
 #### Report errors
 
-If you’re using modified reports, be sure that the client that initiated the
+If you're using modified reports, be sure that the client that initiated the
 remote process and the process server that you sent it to are accessing the
 same reports dictionary (Reports.dic). For more information, see *Chapter 9,
-“Process server configuration.”*
+"Process server configuration."*
 
 If a process includes a report, verify the report destination. For more
 information, see *Setting up report destinations for remote processing* on
@@ -3907,8 +3896,8 @@ page 60.
 
 Restrictions, calculated fields, additional headers and footers and field
 types that are set up incorrectly can prevent a report from being printed.
-Before using a process server to print a report you’ve modified or created,
-print it locally first to be sure it can be printed without errors. You’ll
+Before using a process server to print a report you've modified or created,
+print it locally first to be sure it can be printed without errors. You'll
 be able to determine how to correct the error more easily if you print the
 report locally and view the alert message than if you print it remotely and
 view the information in the Process Server Activity Table. The alert
@@ -3927,8 +3916,8 @@ DPS application is running on each one, that the process is set up to be
 processed remotely in the Process Server Setup window, and that users are
 set up to use DPS.
 
-If you’re using the Distributed Process Manager application (Dpm.exe), be
-sure it’s running, then restart each process server and client.
+If you're using the Distributed Process Manager application (Dpm.exe), be
+sure it's running, then restart each process server and client.
 
 #### Adjusting processing
 
@@ -3986,7 +3975,7 @@ a computer screen and will be stored in a table when saved.
 A file that stores preferences, startup information and application settings
 specific to the current workstation.
 
-#### Dexterity® dictionary
+#### Dexterity&reg; dictionary
 
 The Microsoft Dexterity dictionary contains resources, such as fields,
 tables, windows, text and reports, used by the Dexterity development system.
@@ -4053,7 +4042,7 @@ dictionary.
 
 The dictionary that stores user-modified resources. This dictionary is
 created when the Modifier is accessed for the first time. Only copies of a
-dictionary’s resources are stored in the forms dictionary.
+dictionary's resources are stored in the forms dictionary.
 
 #### Generic pathnames
 
@@ -4099,7 +4088,7 @@ Dynamics.dic.
 
 The Microsoft Dynamics GP engine, also known as the runtime or executable,
 interprets the resources in each application dictionary and presents a
-functioning application. The engine is the method you’ll use to start
+functioning application. The engine is the method you'll use to start
 Microsoft Dynamics GP so you can use the windows, reports and other
 resources, just as a car engine is used to activate the frame, wheels and
 other elements of the car. The file name is Dynamics.exe.
@@ -4114,7 +4103,7 @@ GP tables and dictionaries. The file name is Dynutils.dic.
 
 #### Modifier
 
-A tool that allows users to modify an application’s interface. A forms
+A tool that allows users to modify an application's interface. A forms
 dictionary is used to store the modifications.
 
 #### Multidictionary
@@ -4133,7 +4122,7 @@ with access to the record moves to another record or closes the table.
 
 #### Pathname
 
-A specified location on a computer’s hard disk or on a network where tables
+A specified location on a computer's hard disk or on a network where tables
 will be created and stored. The pathname for each table in Microsoft
 Dynamics GP is stored in the Pathnames Table (SY02100).
 
@@ -4152,7 +4141,7 @@ text network connectivity between the two on a TCP/IP network.
 
 #### Product ID
 
-The ID that’s used to uniquely identify an application dictionary.
+The ID that's used to uniquely identify an application dictionary.
 
 #### Read/write
 
@@ -4171,7 +4160,7 @@ A tool that allows you to design and print reports in your application.
 
 The dictionary that stores user-modified resources for reports. This
 dictionary is created when the Report Writer is accessed for the first time.
-Only copies of a dictionary’s resources are stored in the reports
+Only copies of a dictionary's resources are stored in the reports
 dictionary.
 
 **Runtime engine**

@@ -1,5 +1,5 @@
 # [Welcome to Dynamics GP](index.md)
-
+## [Resource Directory](resources.md)
 <!--- what's new-->
 ## What's new
 ### [Introduction](whats-new/introduction.md)
@@ -99,11 +99,21 @@
 ## Project Accounting
 ### [Project Accounting Administration](distribution/ProjAcctAdministration.md)
 ### [Project Accounting Cost Management](distribution/ProjAcctCostManagement.md)
+### [Project Accounting Billing Guide](distribution/ProjAcct-billing-cycles.md)
+### [Project Accounting - Accounting Control Guide](distribution/ProjAcctAccountingControl.md)
 
 <!--- payroll -->
-## Payroll
+## Payroll and Human Resources
+### [Human Resources](payroll/HumanResource.md)
+### [Human Resources - Company Setup and Organizational Structure](payroll/human-resources-company-setup.md)
+### [Human Resources - Position Control Setup](payroll/human-resources-position-control.md)
+### Advanced HR
+#### [Advanced Human Resources](payroll/AdvancedHumanResource.md)
+#### [Setup](payroll/advanced-hr-setup.md)
+#### [Employee Maintenance](payroll/advanced-hr-employee-maintenance.md)
+#### [Inquiries and Reports](payroll/advanced-hr-inquiries-reports.md)
+#### [Training and Certification for Employee Self Service](payroll/advanced-hr-inquiries-training-certification.md)
 ### [Advanced Payroll](payroll/AdvancedPayroll.md)
-### [Advanced Human Resource](payroll/AdvancedHumanResource.md)
 ### [Canadian Year-End](payroll/CAN18YETax.md)
 ### [Payroll Connect](payroll/PayrollConnect.md)
 ### [U.S. Payroll](payroll/PayrollUS.md)
@@ -115,9 +125,10 @@
 ### [Position Control](payroll/PositionControl.md)
 
 <!-- Manufacturing-->
-## Discreet Manufacturing
+## Discrete Manufacturing
 ### [Manufacturing Setup - Part 1: Manufacturing setup](distribution/manufacturing-setup-part-1.md)
 ### [Manufacturing Setup - Part 2: User setup](distribution/manufacturing-setup-part-2.md)
+### [Manufacturing Setup - Check data and correct errors](distribution/manufacturing-setup-checkdata.md)
 ### [Accounts Used for Manufacturing in Dynamics GP](distribution/manufacturing-accounts-used.md)
 ### [Glossary of Terms in Manufacturing](distribution/glossary-manufacturing.md)
 
@@ -126,7 +137,8 @@
 <!--- installation -->
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)
-#### [System requirements](installation/system-requirements.md)
+#### [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)
+#### [System requirements](upgrade/system-requirements.md)
 #### [Network configuration](installation/network-configuration.md)
 #### [SQL Server configuration](installation/microsoft-sql-server-configuration.md)
 #### [Account framework](installation/account-framework.md)

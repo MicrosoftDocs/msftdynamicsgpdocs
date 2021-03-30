@@ -14,17 +14,22 @@ ms.reviewer:
 ---
 # Data preparation
 
-We recommend that you complete the steps in this section to prepare your data before you upgrade your system. After you’ve completed these steps, see [System preparation](system-preparation.md), for instructions to prepare your system before upgrading to the latest version of Dynamics GP. Be sure to review the known issues before upgrade.  
+We recommend that you complete the steps in this section to prepare your data before you upgrade your system. After you've completed these steps, see [System preparation](system-preparation.md), for instructions to prepare your system before upgrading to the latest version of Dynamics GP. Be sure to review the known issues before upgrade.  
 
 ## Payroll
 
-If you’re upgrading to Dynamics GP or Dynamics GP 2018 R2, you need to determine whether the payroll tax update tables are current. To do so, check the Last Tax Update field in the Payroll Tax Setup window (Tools &gt;&gt; Setup &gt;&gt; System &gt;&gt; Payroll Tax). If your tax tables are not current, update them after you upgrade to Dynamics GP. Review the latest tax update documentation for the date of the last tax update.
+If you're upgrading to Dynamics GP or Dynamics GP 2018 R2, you need to determine whether the payroll tax update tables are current. To do so, check the Last Tax Update field in the Payroll Tax Setup window (Tools &gt;&gt; Setup &gt;&gt; System &gt;&gt; Payroll Tax). If your tax tables are not current, update them after you upgrade to Dynamics GP. Review the latest tax update documentation for the date of the last tax update.
 
-Tax tables are not included on the Dynamics GP media; to update tax tables, you must download them from CustomerSource [US Payroll](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/taxregulatory-updates/TUGP2018); [Canadian Payroll](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/tax-regulatory-updates/cagptuye2018). Choose Tax and Regulatory Updates. Follow instructions for installing the tax update to ensure that clients and servers are updated properly.
+Tax tables are not included on the Dynamics GP media; to update tax tables, you must download them from the following locations:
+
+- [US Payroll](/dynamics/s-e/gp/tugp2018_391)  
+- [Canadian Payroll](/dynamics/s-e/gp/cagptuye2018_285)  
+
+Choose Tax and Regulatory Updates. Follow instructions for installing the tax update to ensure that clients and servers are updated properly.
 
 ## 1099 amounts in Payables Management
 
-After you upgrade, the 1099 amounts might be transferred to a different month if you have transactions that are posted in one month and applied in another month after you upgrade. You might have to make adjustments to your 1099 amounts so that the 1099 amounts aren’t overstated or understated.
+After you upgrade, the 1099 amounts might be transferred to a different month if you have transactions that are posted in one month and applied in another month after you upgrade. You might have to make adjustments to your 1099 amounts so that the 1099 amounts aren't overstated or understated.
 
 For example, you enter and post the following transaction in December.
 
@@ -60,17 +65,17 @@ If you are using Analytical Accounting, be sure to post all saved batches that y
 
 You may want to reconcile your accounting records before upgrading to Dynamics GP to verify that your accounting records are accurate. Refer to the documentation of the modules you are using for specific information.
 
-Before reconciling, back up your company’s accounting data.  
+Before reconciling, back up your company's accounting data.  
 
 ## Backups
 
-You should make at least one complete backup of all your databases before upgrading. It’s a good idea to make a backup before completing table maintenance procedures, in case you encounter any problems in that process. You also should make a backup of your modified forms and reports, eConnect pre and post procedures and your existing Integration Manager database.
+You should make at least one complete backup of all your databases before upgrading. It's a good idea to make a backup before completing table maintenance procedures, in case you encounter any problems in that process. You also should make a backup of your modified forms and reports, eConnect pre and post procedures and your existing Integration Manager database.
 
 If you are upgrading a company that has previously deployed SQL Server Reporting Services reports and Microsoft Excel reports, the deployed reports are automatically upgraded. If you have modified reports, those reports will be overwritten during the upgrade. Be sure to make a backup of your reports.
 
 ## Reports you should print
 
-Before you upgrade, it’s a good idea to print the following reports to a printer or to a file. You can use them to verify that your system was upgraded properly or to re- create modifications.
+Before you upgrade, it's a good idea to print the following reports to a printer or to a file. You can use them to verify that your system was upgraded properly or to re- create modifications.
 
 | Module         | Reports                   |
 |----------------|---------------------------|

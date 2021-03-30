@@ -27,17 +27,18 @@ Go to our [Dynamics GP Support and Services](https://community.dynamics.com/gp/b
 ### Resource Page
 
 The following page shows a list of resources that can help you find the information that you need:
-[https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource](https://mbs.microsoft.com/customersource/northamerica/GP/learning/documentation/system-requirements/dynamicsgpresource)
+
+- [Microsoft Dynamics GP Resource Directory](resources.md)
 
 The page will be updated going forward as new links become available, while some of the target pages will be added to the Docs.microsoft.com site.  
 
 ### Knowledge Base
 
-Available at [https://mbs.microsoft.com/customersource/](https://mbs.microsoft.com/customersource/northamerica/search/Pages/resultskb.aspx), the knowledge base provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.  
+Available at [https://mbs.microsoft.com/customersource/](https://docs.microsoft.com/dynamics/s-e/), the knowledge base provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.  
 
 ### eSupport
 
-Available at [https://mbs.microsoft.com/support](https://mbs.microsoft.com/support/newstart.aspx), you can find different ways to get support, including requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That's a big benefit during the critical year-end season.  
+Available at [https://support.serviceshub.microsoft.com/supportforbusiness](https://support.serviceshub.microsoft.com/supportforbusiness), you can find different ways to get support, including requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That's a big benefit during the critical year-end season.  
 
 ### Community
 
@@ -55,10 +56,10 @@ An email address was available in previous versions to provide an option for con
 
 ## Contributions to the Dynamics GP content
 
-We welcome contributions to the Dynamics GP content. You can find the source files in GitHub at [https://github.com/MicrosoftDocs/msftdynamicsgpdocs/](https://github.com/MicrosoftDocs/msftdynamicsgpdocs), and the ReadMe.md file in the root of the repo contains tips and tricks for working with the content. If you want to add a new article, then the repo contains a template.md file that can help you get started.  
+We welcome contributions to the Dynamics GP content. You can find the source files in GitHub at [https://github.com/MicrosoftDocs/msftdynamicsgpdocs/](https://github.com/MicrosoftDocs/msftdynamicsgpdocs), and the ReadMe.md file in the root of the repo contains tips and tricks for working with the content. If you want to add a new article, then the repo contains a template.md file that can help you get started. See also the [Microsoft Docs contributor guide overview](/contribute/).  
 
 > [!TIP]
-> Microsoft is gradually working our way through converting the legacy manuals. We believe in the strength of the Dynamics GP community, and we welcome additional contributions. the future is online for the Dynamics GP content because it's easier to maintain, so if you can't wait for us to convert a manual, then help us. For more information, see the [Microsoft Docs contributor guide overview](/contribute/).  
+> At Microsoft, we're gradually working our way through converting the legacy manuals. We believe in the strength of the Dynamics GP community, and we welcome additional contributions. The Dynamics GP content is online because it's easier to maintain, so if you can't wait for us to convert a manual, then help us. For more information, see the [Microsoft Docs contributor guide overview](/contribute/).  
 
 ## See also
 

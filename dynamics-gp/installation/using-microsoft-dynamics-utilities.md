@@ -13,14 +13,14 @@ ms.reviewer: edupont
 ---
 # Using Microsoft Dynamics Utilities
 
-After you’ve installed Dynamics GP, you need to complete a number of additional configuration procedures. To do this, you’ll use an application called [!INCLUDE[gputilities](../includes/gputilities.md)].
+After you've installed Dynamics GP, you need to complete a number of additional configuration procedures. To do this, you'll use an application called [!INCLUDE[gputilities](../includes/gputilities.md)].
 
 > [!NOTE]  
 > One of the most important—and difficult to change later—configuration tasks is setting up an account framework. So before you start using the [!INCLUDE[gputilities](../includes/gputilities.md)], see [Account framework](account-framework.md).
 
 ## [!INCLUDE[gputilities](../includes/gputilities.md)] overview
 
-You’ll use [!INCLUDE[gputilities](../includes/gputilities.md)] to complete the following tasks after you’ve installed software and data on a server computer.
+You'll use [!INCLUDE[gputilities](../includes/gputilities.md)] to complete the following tasks after you've installed software and data on a server computer.
 
 - Select whether to use default or custom settings to configure the system database.
 
@@ -52,7 +52,7 @@ You’ll use [!INCLUDE[gputilities](../includes/gputilities.md)] to complete the
 
 ## Installation options in Dynamics Utilities
 
-When using [!INCLUDE[gputilities](../includes/gputilities.md)], you can select an installation option to use default settings or to provide your own custom settings. If you select the Basic option, the default settings for the system database, the account framework, and system password are provided. If you select the Advanced option, you’ll provide the settings to create the database, the account framework, and system password.
+When using [!INCLUDE[gputilities](../includes/gputilities.md)], you can select an installation option to use default settings or to provide your own custom settings. If you select the Basic option, the default settings for the system database, the account framework, and system password are provided. If you select the Advanced option, you'll provide the settings to create the database, the account framework, and system password.
 
 The following table compares the default settings of the Basic option with the custom settings of the Advanced option.
 
@@ -66,16 +66,16 @@ The following table compares the default settings of the Basic option with the c
 
 Use [!INCLUDE[gputilities](../includes/gputilities.md)] to prepare Dynamics GP for use. Complete this procedure when you install Dynamics GP for the first time. You need to do this only once.
 
-With this procedure, you’ll select the Basic option in the Installation Options window to use default settings for the system database, account framework, and system password. For more information about the Basic option, see the **Installation options** section.
+With this procedure, you'll select the Basic option in the Installation Options window to use default settings for the system database, account framework, and system password. For more information about the Basic option, see the **Installation options** section.
 
-Before you use [!INCLUDE[gputilities](../includes/gputilities.md)], check for and install the most current update for Dynamics GP. See [CustomerSource] (https://mbs.microsoft.com/customersource) for the latest update information. After installing the update, start [!INCLUDE[gputilities](../includes/gputilities.md)].
+Before you use [!INCLUDE[gputilities](../includes/gputilities.md)], check for and install the most current update for Dynamics GP. See [Product Release Downloads for Microsoft Dynamics GP ](/dynamics/s-e/gp/mdgp2018_release_download_378) for the latest update information. After installing the update, start [!INCLUDE[gputilities](../includes/gputilities.md)].
 
 To prepare Dynamics GP for use with default settings:
 
 1. Start [!INCLUDE[gputilities](../includes/gputilities.md)].
 (Start &gt;&gt; All Programs &gt;&gt; Microsoft Dynamics &gt;&gt; GP 2018 &gt;&gt; GP Utilities)
 
-![login screen to dynamics gp utilities](media/gp-utilities-2.png "Login screen")  
+    ![login screen to dynamics gp utilities](media/gp-utilities-2.png "Login screen")  
 
 2. In the Welcome to [!INCLUDE[gputilities](../includes/gputilities.md)] window, verify your server name, and enter a system administrator user ID and password; then click OK.
 
@@ -86,7 +86,7 @@ To prepare Dynamics GP for use with default settings:
 
 4. The Installation Options window appears. Mark Basic and then click Next.
 
-5. If the DYNSA user doesn’t have a password, the Enter DYNSA User Password window opens. Use this window to enter the password for the DYNSA user. The DYNSA user is the database owner and can perform tasks, such as table maintenance procedures. If you have multiple Dynamics GP system databases on the same SQL Server instance, the DYNSA user is the database owner for all of the system databases. This password is case-sensitive.
+5. If the DYNSA user doesn't have a password, the Enter DYNSA User Password window opens. Use this window to enter the password for the DYNSA user. The DYNSA user is the database owner and can perform tasks, such as table maintenance procedures. If you have multiple Dynamics GP system databases on the same SQL Server instance, the DYNSA user is the database owner for all of the system databases. This password is case-sensitive.
 
     ![screen to enter dynsa user password](media/gp-utilities-3.png "SA user setup")  
 
@@ -114,7 +114,7 @@ To prepare Dynamics GP for use with default settings:
 
     ![screen to set up business intelligence](media/gp-utilities-6.png "BI report setup")  
 
-    If you don’t want to deploy business intelligence components, leave the components unmarked and click Next. The Additional Tasks window will reappear. Skip to step 11.
+    If you don't want to deploy business intelligence components, leave the components unmarked and click Next. The Additional Tasks window will reappear. Skip to step 11.
 
 10. The SQL Server Reporting Services Reports Setup window appears if you marked to deploy Reporting Services reports.
 
@@ -137,14 +137,14 @@ To prepare Dynamics GP for use with default settings:
     | Report Library        | ReportsLibrary |
 
     >[!NOTE]  
-    > Make sure that your locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
+    > Make sure that your locations don't end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
 
 11. If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple Dynamics GP instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must to provide access to the folder.
 
 12. Click Next.
 
     >[!NOTE]  
-    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don't have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
       The Excel Reports Setup window appears if you marked to deploy Microsoft Excel reports.
 
@@ -165,10 +165,10 @@ To prepare Dynamics GP for use with default settings:
     | Data Connections Library |                |
     | Report Library           | ReportsLibrary |
 
-    Make sure that you use backwards slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn’t end in a slash.
+    Make sure that you use backwards slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn't end in a slash.
 
     > [!NOTE]  
-    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don't have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 13. In the Additional Tasks window, you can choose to perform additional procedures, start Dynamics GP, or end the installation. If you select any task, click Process; otherwise, click Exit.
 
@@ -178,9 +178,9 @@ For more information, see [Additional installation tasks](#additional-installati
 
 Use [!INCLUDE[gputilities](../includes/gputilities.md)] to prepare Dynamics GP for use. Complete this procedure when you install Dynamics GP for the first time. You need to do this only once.
 
-With this procedure, you’ll select the Advanced option in the Installation Options window to use custom settings for the system database, account framework, and system password. For more information about the Advanced option, see the **Installation options** section.
+With this procedure, you'll select the Advanced option in the Installation Options window to use custom settings for the system database, account framework, and system password. For more information about the Advanced option, see the **Installation options** section.
 
-Before you use [!INCLUDE[gputilities](../includes/gputilities.md)], check for and install the most current update for Dynamics GP. See CustomerSource (<https://mbs.microsoft.com/customersource>) for the latest update information. After installing the update, start [!INCLUDE[gputilities](../includes/gputilities.md)].
+Before you use [!INCLUDE[gputilities](../includes/gputilities.md)], check for and install the most current update for Dynamics GP. See [Product Release Downloads for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_release_download_378) for the latest update information. After installing the update, start [!INCLUDE[gputilities](../includes/gputilities.md)].
 
 To prepare Dynamics GP for use with custom settings:
 
@@ -206,11 +206,11 @@ To prepare Dynamics GP for use with custom settings:
 
 ![screen to specify maximum values for accounts](media/gp-utilities-9.png "Account framework")  
 
-Enter the maximum account length (up to 66 characters) and the maximum number of segments (up to 10) that you’ll need for the charts of accounts in companies you set up now or in the future. Maximums you enter now will apply to all companies you plan to set up.
+Enter the maximum account length (up to 66 characters) and the maximum number of segments (up to 10) that you'll need for the charts of accounts in companies you set up now or in the future. Maximums you enter now will apply to all companies you plan to set up.
 
 For more information, see [Planning your account framework](account-framework.md).
 
-7. In the Set Up Account Segment Lengths window, enter a name for each segment of the account, as well as the maximum length you’ll use for each segment in the charts of accounts for your companies.
+7. In the Set Up Account Segment Lengths window, enter a name for each segment of the account, as well as the maximum length you'll use for each segment in the charts of accounts for your companies.
 
 ![screen to specify account segment length](media/gp-utilities-10.png "Account framework")  
 
@@ -225,7 +225,7 @@ The length of each segment can be no longer than 66 characters. Maximums you ent
 
 ![set up sorting](media/gp-utilities-11.png "Account framework")  
 
-- If the displayed sorting options include the ways you’ll need to sort account information, leave the No option marked and click Next, then continue to step 10.
+- If the displayed sorting options include the ways you'll need to sort account information, leave the No option marked and click Next, then continue to step 10.
 
 - To select segments of your account framework to sort by, as well, mark Yes, then click Next. The Set Up Additional Sorting Options window appears. Continue to step 9.
 
@@ -235,14 +235,14 @@ The length of each segment can be no longer than 66 characters. Maximums you ent
 
     If you select more than one segment, use the Up and Down buttons to specify in what order the segments will be used to sort account information. Sorting options are used to control the way accounts are displayed in Dynamics GP windows, in all your companies.
 
-10. When you’ve finished selecting segments, click Next to verify your account framework in the Verify Account Framework window.
+10. When you've finished selecting segments, click Next to verify your account framework in the Verify Account Framework window.
 
 > [!NOTE]
 > To make corrections if necessary, click Back until the appropriate window is displayed, then click Next in each window until the Verify Account Framework window is displayed again.  
 
 A report file called Acctfram.txt is created in the Data folder inside of the GP folder, which contains the same account framework information. This file, which is created only on the first client, stores account framework information for your reference. Be sure to make a backup of the Acctfram.txt file.
 
-11. If the DYNSA user doesn’t have a password, the Enter DYNSA User Password window opens. Use this window to enter the password for the DYNSA user. The DYNSA user is the database owner and can perform tasks, such as table maintenance procedures. If you have multiple Dynamics GP system databases on the same SQL Server instance, the DYNSA user is the database owner for all of the system databases. This password is case-sensitive.
+11. If the DYNSA user doesn't have a password, the Enter DYNSA User Password window opens. Use this window to enter the password for the DYNSA user. The DYNSA user is the database owner and can perform tasks, such as table maintenance procedures. If you have multiple Dynamics GP system databases on the same SQL Server instance, the DYNSA user is the database owner for all of the system databases. This password is case-sensitive.
 
     ![screen to enter dynsa user password](media/gp-utilities-3.png "SA user setup")  
 
@@ -272,7 +272,7 @@ A report file called Acctfram.txt is created in the Data folder inside of the GP
 
     ![screen to set up business intelligence](media/gp-utilities-6.png "BI report setup")  
 
-    If you don’t want to deploy business intelligence components, leave the components unmarked and click Next. The Additional Tasks window will reappear. Skip to step 19.
+    If you don't want to deploy business intelligence components, leave the components unmarked and click Next. The Additional Tasks window will reappear. Skip to step 19.
 
 17. The SQL Server Reporting Services Reports Setup window appears if you marked to deploy Reporting Services reports.
 
@@ -300,7 +300,7 @@ A report file called Acctfram.txt is created in the Data folder inside of the GP
 19. Click Next.
 
     > [!NOTE]  
-    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don't have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 20. The Excel Reports Setup window appears if you marked to deploy Excel reports.
 
@@ -324,7 +324,7 @@ A report file called Acctfram.txt is created in the Data folder inside of the GP
     Click Next.
 
     > [!NOTE]  
-    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don't have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 22. In the Additional Tasks window, you can choose to perform additional procedures, start Dynamics GP, or end the installation. If you select any task, click Process; otherwise, click Exit.
 
@@ -348,9 +348,9 @@ The Additional Tasks window in [!INCLUDE[gputilities](../includes/gputilities.md
 
 - Manage user authentication
 
-The Update modified forms and reports option is used when upgrading from a previous release; it isn’t used when you initially install Dynamics GP. The Synchronize forms and report dictionaries option can be used at anytime when you want to synchronize your forms and reports to your account framework.
+The Update modified forms and reports option is used when upgrading from a previous release; it isn't used when you initially install Dynamics GP. The Synchronize forms and report dictionaries option can be used at anytime when you want to synchronize your forms and reports to your account framework.
 
-Start [!INCLUDE[gputilities](../includes/gputilities.md)] if you haven’t already and follow the instructions in the [!INCLUDE[gputilities](../includes/gputilities.md)] windows until you open the Additional Tasks window. The following procedures assume that the Additional Tasks window is open.
+Start [!INCLUDE[gputilities](../includes/gputilities.md)] if you haven't already and follow the instructions in the [!INCLUDE[gputilities](../includes/gputilities.md)] windows until you open the Additional Tasks window. The following procedures assume that the Additional Tasks window is open.
 
 ## Adding sample company data
 
@@ -364,7 +364,7 @@ To add sample company data:
 
 2. In the Database Setup window, enter or accept the sample company database name and then select a default location for new files that will be created for the sample company.
 
-    TWO is the default sample company database name if the TWO database doesn’t exist. You can only create LessonUser1 and LessonUser2 as sample users for the TWO sample company database using the [!INCLUDE[gputilities](../includes/gputilities.md)].
+    TWO is the default sample company database name if the TWO database doesn't exist. You can only create LessonUser1 and LessonUser2 as sample users for the TWO sample company database using the [!INCLUDE[gputilities](../includes/gputilities.md)].
 
     If the sample company database has a different name than TWO, you must use the User Setup window to create lesson users for the sample company and then use the User Access Setup window to set up user access to the sample company.
 
@@ -380,7 +380,7 @@ To add sample company data:
 
 6. In the Business Intelligence Reports Setup window, select the business intelligence components to deploy. Click Next. The window that opens depends on the components you selected.
 
-    If you don’t want to deploy business intelligence components, leave the components unmarked and click Next. The Additional Tasks window will reappear.
+    If you don't want to deploy business intelligence components, leave the components unmarked and click Next. The Additional Tasks window will reappear.
 
 7. The SQL Server Reporting Services Reports Setup window appears if you marked to deploy Reporting Services reports. After selecting your report server mode, enter the locations to deploy the reports to.
 
@@ -400,14 +400,14 @@ To add sample company data:
     | Report Library        | ReportsLibrary |
 
     > [!NOTE]  
-    > Be sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
+    > Be sure that your URL locations don't end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
 
 8. If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple Dynamics GP instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must provide access to the folder.
 
 9. Click Next.
 
     > [!NOTE]  
-    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don't have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 10. The CRM Reports Setup window appears, if you marked to deploy SQL Server Reporting Services reports with CRM data. Enter the CRM connection information. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
 
@@ -417,7 +417,7 @@ To add sample company data:
 
     If you have selected SharePoint as the location to deploy reports to, you can mark the Using SharePoint Online option if you are using Microsoft 365 and want to deploy Excel reports to a reports library in SharePoint Online 2010. Mark the Using SharePoint Online option to deploy reports only in the Dynamics GP desktop client. Reports will not be deployed for the Dynamics GP Web Client.
 
-    Be sure to use back slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn’t end in a slash.
+    Be sure to use back slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn't end in a slash.
 
     Network share location example:
 
@@ -434,7 +434,7 @@ To add sample company data:
 
 12. Click Next.
 
-    If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\username and the password you use to log in to Microsoft Windows.
+    If you don't have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\username and the password you use to log in to Microsoft Windows.
 
 13. The Verify SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 
@@ -448,7 +448,7 @@ This option will create SQL tables that are needed for your company data. You mu
 
 When you create a new company, you can deploy business intelligence components, such as SQL Server Reporting Services reports. If you deployed reports for your system database, you can use the default report locations for the company.
 
-When adding a company, you can select how to configure your company. You can use wizards to migrate data from Intuit QuickBooks or Peachtree and enter basic configuration options, or you can configure the company later using the Setup Checklist window in Dynamics GP. To use a wizard to migrate or configure data, you must download and install the Rapid Implementation Tools for Dynamics GP. If you haven’t installed the Rapid Implementation Tools, click the Download and install the wizards link in the Company Setup Options window.
+When adding a company, you can select how to configure your company. You can use wizards to migrate data from Intuit QuickBooks or Peachtree and enter basic configuration options, or you can configure the company later using the Setup Checklist window in Dynamics GP. To use a wizard to migrate or configure data, you must download and install the Rapid Implementation Tools for Dynamics GP. If you haven't installed the Rapid Implementation Tools, click the Download and install the wizards link in the Company Setup Options window.
 
 For each company you create, be sure the folder you specify must exist on the hard disk.
 
@@ -471,7 +471,7 @@ The Server Installation Progress window appears, showing progress as tables load
 
 6. In the Business Intelligence Reports Setup window, select the business intelligence components to deploy. Click Next. The window that opens depends on the components you selected.
 
-If you don’t want to deploy business intelligence components, leave the components unmarked and click Next. The Company Setup Options window appears. Skip to step 13.
+If you don't want to deploy business intelligence components, leave the components unmarked and click Next. The Company Setup Options window appears. Skip to step 13.
 
 7. The SQL Server Reporting Services Reports Setup window appears if you marked to deploy Reporting Services reports. After selecting your report server mode, enter the locations to deploy the reports to.
 
@@ -491,14 +491,14 @@ If you don’t want to deploy business intelligence components, leave the compon
     | Report Library        | ReportsLibrary |
 
     > [!NOTE]  
-    > Make sure that your URL locations don’t end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
+    > Make sure that your URL locations don't end with a slash. You can use the Reporting Services Configuration Manager to verify the Report Server Mode being used and the URL locations.  
 
 8. If you have selected Native as the report server mode, you can enter the name of the folder to deploy the reports to. By using a folder, you can deploy Reporting Services reports for multiple Dynamics GP instances to a single Microsoft SQL Server Reporting Server. The default folder name is the name of the system database. If DYNAMICS is the system database name, the Folder Name field is blank. After deploying reports to the folder, you must provide access to the folder.
 
 9. Click Next.
 
     > [!NOTE]  
-    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don't have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 10. The CRM Reports Setup window appears, if you marked to deploy SQL Server Reporting Services reports with CRM data. Enter the CRM connection information. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
 
@@ -508,7 +508,7 @@ If you don’t want to deploy business intelligence components, leave the compon
 
     If you have selected SharePoint as the location to deploy reports to, you can mark the Using SharePoint Online option if you are using Microsoft 365 and want to deploy Excel reports to a reports library in SharePoint Online 2010. Mark the Using SharePoint Online option to deploy reports only in the Dynamics GP desktop client. Reports will not be deployed for the Dynamics GP Web Client.
 
-    Make sure that you use backwards slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn’t end in a slash.
+    Make sure that you use backwards slashes when you are entering the location for reports even if you are using a UNC path. You should also be sure that the location doesn't end in a slash.
 
     Network share location example:
 
@@ -526,7 +526,7 @@ If you don’t want to deploy business intelligence components, leave the compon
 12. Click Next.
 
     > [!NOTE]  
-    > If you don’t have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
+    > If you don't have the appropriate permissions to deploy reports, a window opens where you can enter a domain\\user name and the password you use to log in to Microsoft Windows.  
 
 13. The Verify SQL Server window appears. Confirm your selections. If the selections are correct, click Finish.
 
@@ -534,7 +534,7 @@ If you don’t want to deploy business intelligence components, leave the compon
 
 14. The Company Setup Options window appears, where you can select to use a wizard to migrate data from QuickBooks or Peachtree, use a wizard to enter basic configuration options, or configure the company later using the Setup Checklist window in Dynamics GP.
 
-    To use a wizard to migrate or configure data, you must download and install the Rapid Implementation Tools for Dynamics GP. If you haven’t installed the Rapid Implementation Tools, click the Download and install the wizards link in the Company Setup Options window before you click Next.
+    To use a wizard to migrate or configure data, you must download and install the Rapid Implementation Tools for Dynamics GP. If you haven't installed the Rapid Implementation Tools, click the Download and install the wizards link in the Company Setup Options window before you click Next.
 
 15. Click Next. If you decided to configure your company later, the Additional Tasks window reappears. You can click Create a company to set up a second company, start Dynamics GP, or Exit.
 
@@ -542,7 +542,7 @@ If you don’t want to deploy business intelligence components, leave the compon
 
 ## Removing SOP and Invoicing message
 
-Return to [!INCLUDE[gputilities](../includes/gputilities.md)] and complete this task after you’ve set up Sales Order Processing. The following message will appear every time you enter a transaction in Sales Order Processing or Invoicing, if both modules are registered: “Sales Order Processing and Invoicing modules are both installed. They do not share information. Transactions should be entered in one module only.” To remove this message, select Remove SOP and Invoicing message in the Additional Tasks window and click Process, then follow the instructions in the window.
+Return to [!INCLUDE[gputilities](../includes/gputilities.md)] and complete this task after you've set up Sales Order Processing. The following message will appear every time you enter a transaction in Sales Order Processing or Invoicing, if both modules are registered: "Sales Order Processing and Invoicing modules are both installed. They do not share information. Transactions should be entered in one module only." To remove this message, select Remove SOP and Invoicing message in the Additional Tasks window and click Process, then follow the instructions in the window.
 
 ## Managing the Web Client SQL Server login
 

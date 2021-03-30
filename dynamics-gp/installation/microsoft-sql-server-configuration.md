@@ -16,9 +16,9 @@ ms.reviewer: edupont
 
 ### 
 
-This chapter guides you through the Microsoft SQL Server 2012 and the Microsoft SQL Server 2012 Express Installation and setup process for Dynamics GP. It’s important that you install and set up Microsoft SQL Server according to these instructions.
+This chapter guides you through the Microsoft SQL Server 2012 and the Microsoft SQL Server 2012 Express Installation and setup process for Dynamics GP. It's important that you install and set up Microsoft SQL Server according to these instructions.
 
-If you’ve already installed and set up SQL Server using different options, you may have to change those options. Changing options after they’ve been set sometimes involves reinstalling SQL Server.
+If you've already installed and set up SQL Server using different options, you may have to change those options. Changing options after they've been set sometimes involves reinstalling SQL Server.
 
 This chapter contains the following sections:
 
@@ -44,9 +44,9 @@ Because Dynamics GP relies on SQL Server to maintain databases and make database
 
 We recommend that you use a Storage Area Network (SAN) or locally attached disk to store your Microsoft SQL Server database files because this configuration optimizes SQL Server performance. By default, use of network database files stored on a networked server or Network Attached Storage (NAS) is not enabled for SQL Server. However, you can configure SQL Server to store a database on a networked server or NAS storage server. Servers used for this purpose must meet SQL Server requirements for data write ordering and write-through guarantees.
 
-If you are using Microsoft SQL Server Express Edition, SAN and NAS disk support isn’t typically used.
+If you are using Microsoft SQL Server Express Edition, SAN and NAS disk support isn't typically used.
 
-For more information, see Microsoft Knowledge Base article, “Description of support for network database files in SQL Server,” (go to <https://support.microsoft.com> and search for the article) or contact the SQL Server Support Team.
+For more information, see Microsoft Knowledge Base article, "Description of support for network database files in SQL Server," (go to <https://support.microsoft.com> and search for the article) or contact the SQL Server Support Team.
 
 ## Selecting a SQL Server collation
 
@@ -56,7 +56,7 @@ The SQL Server collation you select determines how information is presented in r
 
 The code page for character data is defined by the Windows locale selected when the operating system was installed. The code page contains the valid set of characters in your SQL Server database. A character set consists of 256 uppercase and lowercase letters, numbers, and symbols. The first 128 characters are the same for all character sets. The supported character set in the United States is the 1252/ ISO character set.
 
-It is important to select the correct collation for Dynamics GP when you’re installing SQL Server. Using SQL Server collations that include Binary (sort order 50) or Dictionary Order, Case-Insensitive (sort order 52) sorting is required for Dynamics GP. To change these settings later, you must reinstall SQL Server and Dynamics GP.
+It is important to select the correct collation for Dynamics GP when you're installing SQL Server. Using SQL Server collations that include Binary (sort order 50) or Dictionary Order, Case-Insensitive (sort order 52) sorting is required for Dynamics GP. To change these settings later, you must reinstall SQL Server and Dynamics GP.
 
 > [!NOTE]
 > You should check the compatibility of all the products you have that will use SQL Server before deciding on the collation option.  
@@ -149,7 +149,7 @@ Click OK after you make your selections, and then click Next.
 
 15. In the Database Engine Configuration window, select Mixed Mode as the authentication mode in the Server Configuration tab. Mixed Mode is required by Dynamics GP.
 
-    With Mixed Mode, users can connect using Windows Authentication or SQL Server Authentication. You must enter and confirm the system administrator password when you select Mixed Mode. You’ll use this is the password to log in to Dynamics GP Utilities as the system administrator.
+    With Mixed Mode, users can connect using Windows Authentication or SQL Server Authentication. You must enter and confirm the system administrator password when you select Mixed Mode. You'll use this is the password to log in to Dynamics GP Utilities as the system administrator.
 
     You must specify at least one system administrator. To add the account, click Add Current User to add accounts to the list of system administrators.
 
@@ -207,7 +207,7 @@ To install Microsoft SQL Server 2012 Express Edition:
 
 10. In the Account Provisioning tab, select Mixed Mode as the authentication mode. Mixed Mode is required by Dynamics GP.
 
-    With Mixed Mode, users can connect using Windows Authentication or SQL Server Authentication. You must enter and confirm the system administrator password when you select Mixed Mode. You’ll use this is the password to log in to Dynamics GP Utilities as the system administrator.
+    With Mixed Mode, users can connect using Windows Authentication or SQL Server Authentication. You must enter and confirm the system administrator password when you select Mixed Mode. You'll use this is the password to log in to Dynamics GP Utilities as the system administrator.
 
     You must specify at least one system administrator. To add the account, click Add Current User to add accounts to the list of system administrators.
 
@@ -269,7 +269,7 @@ Jobs are customizable, and you can select how frequently they should be complete
 
 SQL Server Agent is not available for SQL Server Express. For information about how to schedule backups for SQL Server Express, see the Microsoft Knowledge Base article [How to schedule and automate backups of SQL Server databases in SQL Server Express](https://support.microsoft.com/kb/2019698/en-us).
 
-Microsoft SQL Server 2008 Express doesn’t include SQL Server Agent. Refer to [Support Hot Topic on CustomerSource](https://mbs.microsoft.com/customersource) for more information about scheduling a backup.
+<!--Microsoft SQL Server 2008 Express doesn't include SQL Server Agent. Refer to [Support Hot Topic on CustomerSource](https://docs.microsoft.com/dynamics/s-e/) for more information about scheduling a backup.-->
 
 ## Enabling Delete PJournal job
 

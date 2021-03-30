@@ -1,0 +1,14 @@
+{
+    "redirections": [
+        {
+            "source_path": "dynamics-gp/installation/system-requirements.md",
+            "redirect_url": "/dynamics-gp/upgrade/system-requirements",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "dynamics-gp/installation/system-requirements-core.md",
+            "redirect_url": "/dynamics-gp/upgrade/system-requirements",
+            "redirect_document_id": false
+        }
+    ]
+}

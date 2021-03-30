@@ -733,11 +733,11 @@ Tax Type rates for all Filing Status:
 
 ## Resources to assist you
 
-If you have questions about U.S. Payroll tax updates and your Microsoft Partner isn’t available, there are several resources, in addition to this document, to assist in answering your questions.
+If you have questions about U.S. Payroll tax updates and your Microsoft Partner isn't available, there are several resources, in addition to this document, to assist in answering your questions.
 
-### U.S. Payroll Tax Updates on CustomerSource
+### U.S. Payroll Tax Updates
 
-Take a look at [CustomerSource](https://mbs.microsoft.com/customersource/support/downloads/taxupdates/) to find out the tax changes included in each update and to download the update. All instructions for downloading and installing the tax updates also are provided here.
+Take a look at [this location](/dynamics/s-e/gp/tugp2018_391) to find out the tax changes included in each update and to download the update. All instructions for downloading and installing the tax updates also are provided here.
 
 ### Knowledge Base
 
@@ -761,17 +761,17 @@ Use the instructions in this section to prepare for the U.S. Payroll Tax Update.
 
 ### Are you using a supported version?
 
-To identify the version, you’re using, start Microsoft Dynamics GP. Choose Help\>\> About Microsoft Dynamics GP. The information window displays the version number in the lower right corner.
+To identify the version, you're using, start Microsoft Dynamics GP. Choose Help\>\> About Microsoft Dynamics GP. The information window displays the version number in the lower right corner.
 
 This U.S. Payroll Tax Update is supported for Microsoft Dynamics GP and Microsoft Dynamics GP 2016 on Microsoft SQL Server.
 
-If you’re not using one of the supported versions, you must upgrade to a supported version before installing this tax update.
+If you're not using one of the supported versions, you must upgrade to a supported version before installing this tax update.
 
 ### Have you obtained the update files?
 
 If your computer is connected to the Internet, the Payroll Update Utility (PUE) automatically can download the tax table update file (TX.cab) from the Internet.
 
-If your computer isn’t connected to the Internet, you can obtain the file from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/GP/downloads) or your Microsoft Partner and copy it to your computer before running what’s known as a “manual” installation.
+If your computer isn't connected to the Internet, you can obtain the file from [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378) or your Microsoft Partner and copy it to your computer before running what's known as a "manual" installation.
 
 Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a folder that you can readily access, such as the folder that contains Dynamics.exe. Copying the .CAB file to your computer does not complete the installation. Refer to the following section for instructions on how to install the tax update.
 
@@ -792,7 +792,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
     ![A screenshot](media/a6b6f3f85d529f49182c1e66d23df8b5.jpg)
 
     - The Automatic option downloads the current tax table update from the Internet to the default location. An Internet connection is required.
-    - The Manual option processes the tax table update from a location you choose. You might choose Manual if you need to update a computer that isn’t connected to the Internet. To use this method, you should already have obtained the tax table update file, TX.cab, and copied it to a location your computer can readily access.
+    - The Manual option processes the tax table update from a location you choose. You might choose Manual if you need to update a computer that isn't connected to the Internet. To use this method, you should already have obtained the tax table update file, TX.cab, and copied it to a location your computer can readily access.
 
 3. If you selected Automatic, enter your 10-digit authorized telephone number. Choose Log in to start the download.
 
@@ -802,6 +802,6 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *1/22/2021*.
 
-## What’s next
+## What's next
 
 If you upgrade to another version of Microsoft Dynamics GP, you must install the most recent service pack (if any), as well as the most recent tax table updates for that release, to ensure you have the latest tax information. Newer releases of Microsoft Dynamics GP do not include current payroll tax information.

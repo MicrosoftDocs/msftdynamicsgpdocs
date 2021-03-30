@@ -41,9 +41,9 @@ To view information about the release of Dynamics GP that you're using and which
 
 If you have questions about Payroll year-end closing procedures and your Microsoft Partner isn't available, there are several resources, in addition to this document, to assist in answering your year-end questions.
 
-- Year-end information on CustomerSource
+- Year-end information
 
-    [https://mbs.microsoft.com/customersource/northamerica/GP/downloads/](https://mbs.microsoft.com/customersource/northamerica/GP/downloads/)
+    [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378)
 
     Look here to find year-end updates, instructions, and tax updates. Instructions for downloading and installing the updates are also provided here.
 
@@ -171,13 +171,11 @@ To identify the release that you're using, start Dynamics GP. Choose Help \>\> A
 
 If you're not using one of the supported releases, upgrade to a supported version before installing this update.
 
-For more information about product discontinuation dates, refer to the discontinuation chart on [CustomerSource](https://mbs.microsoft.com/customersource/support)
-
-Look for *Effectively predict support availability with the Microsoft Support Lifecycle Policy.*.
+For more information about product discontinuation dates, see [Software Lifecycle Policy for Microsoft Dynamics GP](../terms/lifecycle.md).
 
 ### Obtaining the year-end update
 
-Download update files and documentation from CustomerSource at [https://mbs.microsoft.com/customersource/northamerica/GP/downloads](https://mbs.microsoft.com/customersource/northamerica/GP/downloads), or obtain them from your Microsoft Partner.
+Download update files and documentation from [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378), or obtain them from your Microsoft Partner.
 
 ### Obtaining a User Identification Number to submit EFW2 files electronically
 
@@ -384,7 +382,7 @@ You will need to install the year-end update on every workstation that runs Dyna
 
 **To install the year-end update:**
 
-1. Download the update from CustomerSource at [https://mbs.microsoft.com/customersource/northamerica/GP/downloads](https://mbs.microsoft.com/customersource/northamerica/GP/downloads).
+1. Download the update from [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378).
     The filenames for the supported versions are as follows:
 
     | **Language**    | **Dynamics GP**   | **Dynamics GP 2016** |
@@ -394,7 +392,7 @@ You will need to install the year-end update on every workstation that runs Dyna
     Save the relevant file to a folder on the local disk drive of the server workstation that runs Dynamics GP.
 
     > [!NOTE]
-    > The year-end update file also includes all prior Microsoft Dynamics updates, such as Dynamics GP 2016 R2, Dynamics GP 2018 R2, or Dynamics GP October release 18.2.1013 and 18.3.1173. Documents describing the service packs are available from CustomerSource.
+    > The year-end update file also includes all prior Microsoft Dynamics updates, such as Dynamics GP 2016 R2, Dynamics GP 2018 R2, or Dynamics GP October release 18.2.1013 and 18.3.1173.
 
 2. Double-click the file that you just downloaded. Progress windows appear as space requirements are verified and files are installed.
 

@@ -144,49 +144,31 @@ general rules for administration:
     security features. Also, operating system editions that are for business
     purposes typically have more security features.
 
-- Use the Windows Update tool provided with Windows Vista&reg;, Windows 7, Windows
-    8, Windows Server 2008, and Windows Server 2012 to maintain the most current
-    security patches.
+- Use the Windows Update tool provided with Windows Vista&reg;, Windows 7, Windows 8, Windows Server 2008, and Windows Server 2012 to maintain the most current security patches.
 
-- If you plan to use Microsoft Dynamics GP Business Portal, we recommend that
-    you implement the security recommendations mentioned in the Business Portal
-    Installation Guide, which can be found on the CustomerSource Web site.
+- If you plan to use Microsoft Dynamics GP Business Portal, we recommend that you implement the security recommendations mentioned in the Business Portal Installation Guide.
 
 > [!NOTE]
-> The remainder of this document contains recommendations on various methods
-to improve the security of your Microsoft Dynamics GP installation. Although
-these recommendations are strongly encouraged, they are not mandatory.
+> The remainder of this document contains recommendations on various methods to improve the security of your Microsoft Dynamics GP installation. Although these recommendations are strongly encouraged, they are not mandatory.
 
 ### Physical security
 
-Physical security represents the best place to start preventing malicious
-attacks. For example, if a hard disk drive is stolen, eventually the data on
-that drive will be stolen, as well. Discuss the following physical security
+Physical security represents the best place to start preventing malicious attacks. For example, if a hard disk drive is stolen, eventually the data on that drive will be stolen, as well. Discuss the following physical security
 issues when developing a policy with users:
 
-- For larger deployments with dedicated IT departments, ensure that server
-    rooms and places where software and manuals are stored are locked.
+- For larger deployments with dedicated IT departments, ensure that server rooms and places where software and manuals are stored are locked.
 
-- Keep unauthorized users away from the power and reset switches on the
-    server.
+- Keep unauthorized users away from the power and reset switches on the server.
 
-- Consider removing any removable storage devices, including CD burners, from
-    client workstations.
+- Consider removing any removable storage devices, including CD burners, from client workstations.
 
-- Ensure that burglar alarms are installed, regardless of how sensitive the
-    data is.
+- Ensure that burglar alarms are installed, regardless of how sensitive the data is.
 
-- Ensure that backups of critical data are stored offsite and that software is
-    stored in fire and waterproof containers when not in use.
+- Ensure that backups of critical data are stored offsite and that software is stored in fire and waterproof containers when not in use.
 
 ### Employees
 
-It is a good idea to limit administrative rights across all products and
-features. By default, you should give employees read-only access to system
-functions, unless they require greater access to perform their jobs. We
-recommend following the principle of least privilege: give users only the
-minimum privileges required to access data and functionality. For example, avoid
-requiring administrative rights to run features.
+It is a good idea to limit administrative rights across all products and features. By default, you should give employees read-only access to system functions, unless they require greater access to perform their jobs. We recommend following the principle of least privilege: give users only the minimum privileges required to access data and functionality. For example, avoid requiring administrative rights to run features.
 
 Disgruntled and former employees are a threat to network security. We recommend using the following policy regarding employees:
 
@@ -318,14 +300,7 @@ quickly as possible, while maintaining the stability of the environment.
 
 ### Microsoft Dynamics GP service packs
 
-Microsoft Dynamics GP security patches are released as part of service packs
-or hotfixes. Service packs and hotfixes are located in the Downloads and
-Updates area of the CustomerSource Web site. You should regularly check this
-site to ensure that you are fully up to date on any security issues
-specifically affecting Microsoft Dynamics GP. All service packs and hotfixes
-are cumulative patches. Up-to-date instructions on upgrading to the most
-recent release of Microsoft Dynamics GP can be found at
-[https://go.microsoft.com/fwlink/?LinkId=249465](https://go.microsoft.com/fwlink/?LinkId=161199).
+Microsoft Dynamics GP security patches are released as part of service packs or hotfixes. Service packs and hotfixes are can be found [here](/dynamics/s-e/gp/mdgp2018_release_download_378). You should regularly check this site to ensure that you are fully up to date on any security issues specifically affecting Microsoft Dynamics GP. All service packs and hotfixes are cumulative patches. Up-to-date instructions on upgrading to the most recent release of Microsoft Dynamics GP can be found at [Upgrade checklist](../upgrade/upgrade-checklist.md) <!--[https://go.microsoft.com/fwlink/?LinkId=249465](https://go.microsoft.com/fwlink/?LinkId=161199)-->.
 
 ### Client-side security patches
 
@@ -1076,12 +1051,9 @@ For step-by-step instructions on setting up security within the Microsoft
 Dynamics GP application, see Part 2: User Setup of the Microsoft Dynamics GP
 System Setup manual.
 
-The Microsoft Dynamics GP System Setup manual can be accessed by choosing
-the Printable Manuals option from the Microsoft Dynamics GP Help menu, or by
-downloading it from the CustomerSource Web Site.
+The Microsoft Dynamics GP System Setup manual can be accessed by choosing the Printable Manuals option from the Microsoft Dynamics GP Help menu, or [here](SystemSetup.md).
 
-Microsoft Dynamics GP uses Microsoft SQL Server fixed and database roles for
-more effective security management.
+Microsoft Dynamics GP uses Microsoft SQL Server fixed and database roles for more effective security management.
 
 This information is divided into the following sections.
 
@@ -1671,9 +1643,9 @@ The following information contains answers to questions about windows within Mic
 
     When the requirements for using the User Access window are not met, the check boxes are unavailable. Within the User Access window, you have the ability to grant and deny access to companies. This action of granting and denying access is nothing more than adding and removing user accounts to the database and making the user a member of the DYNGRP. This action making check boxes available is determined by the following two factors:
 
-        - What database permissions the current user has when the window is opened.
+      - What database permissions the current user has when the window is opened.
 
-        - The user performing the action has the correct database permissions that are described in the User Access section of this document. We don't have the ability to individually make each check box unavailable based on the permissions that are set at the database window.
+      - The user performing the action has the correct database permissions that are described in the User Access section of this document. We don't have the ability to individually make each check box unavailable based on the permissions that are set at the database window.
 
 - Why is the Save button unavailable in the User Setup window?
 

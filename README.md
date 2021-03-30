@@ -4,9 +4,9 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 # msftdynamicsgpdocs
-Welcome to the repository for documentation and guides for Microsoft Dynamics GP! The content is available as markdown files (.md), where each file represents an article in the help that publishes to https://docs.microsoft.com/en-us/dynamics-gp/. This repo also provides a way for you to actively contribute to the Dynamics GP content, and we welcome your contributions.
+Welcome to the repository for documentation and guides for Microsoft Dynamics GP! The content is available as markdown files (.md), where each file represents an article in the help that publishes to [https://docs.microsoft.com/en-us/dynamics-gp/](https://docs.microsoft.com/en-us/dynamics-gp/). This repo also provides a way for you to actively contribute to the Dynamics GP content, and we welcome your contributions.
 
-The *live* branch has been updated for the release of Dynamics GP 2018 R2. Content still in process of being updated for that release is currently in the *master-installation* branch.
+The *live* branch has been updated for the latest release of Dynamics GP with most recent tax updates.
 
 If you have any questions, please contact the Dynamics SMB User Assistance (UA) team at nav-olh@microsoft.com.
 
@@ -38,8 +38,8 @@ One way you can build the HTML files is by using DocFX, which is an open source 
 
     By default the files will be saved in the folder *c:/output*. The output folder is set in the docfx.json file. If you want to change this folder, do the following:
 
-    a. In the folder *[clone path]\msftdynamicsgpdocs\dynamics-gp\*, open the docfx.json file in your editor.  
-    b.  Set the "dest:" parameter to your output folder, and save the changes.  
+    a. In the folder [clone path\msftdynamicsgpdocs\dynamics-gp\, open the docfx.json file in your editor.  
+    b.  Set the *"dest:"* parameter to your output folder, and save the changes.  
 
 3.  Go to your desktop and open a command prompt.
 

@@ -13,7 +13,7 @@ ms.topic: article
 ms.date: 10/01/2019
 ---
 
-# What’s New in Dynamics GP in October 2019
+# What's New in Dynamics GP in October 2019
 
 This page lists enhancements to Dynamics GP in the October 2019 release. The Dynamics GP October 2019 release enhances specific areas of the product.
 
@@ -311,7 +311,7 @@ You can now insert rows from Excel into the General Journal using the Dynamics G
 
 ## See also
 
-[System requirements](../installation/system-requirements.md)  
+[System requirements](../upgrade/system-requirements.md)  
 [Upgrade introduction](../upgrade/introduction.md)  
 [Dynamics GP community on https://community.dynamics.com](https://community.dynamics.com/gp)  
 [Dynamics GP User Group](https://www.gpug.com/home)  
