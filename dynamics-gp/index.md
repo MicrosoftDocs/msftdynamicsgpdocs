@@ -38,7 +38,7 @@ Available at [https://mbs.microsoft.com/customersource/](https://docs.microsoft.
 
 ### eSupport
 
-Available at [https://mbs.microsoft.com/support](https://mbs.microsoft.com/support/newstart.aspx), you can find different ways to get support, including requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That's a big benefit during the critical year-end season.  
+Available at [https://support.serviceshub.microsoft.com/supportforbusiness](https://support.serviceshub.microsoft.com/supportforbusiness), you can find different ways to get support, including requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That's a big benefit during the critical year-end season.  
 
 ### Community
 
