@@ -107,8 +107,9 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 
 > [!NOTE]
 > By law, you must be able to reproduce original or amended T4, T4A, and RL-1 slips for a predefined (agency assigned) number of years after the original filing. To meet this requirement, be sure to keep backups of all your Canadian Payroll data files, as well as copies of reports, tax forms, and filings. Canadian Payroll will only allow you to re-create a prior year filing if you save backup copies of the prior reporting year data.  
-> 
-To make it easier to determine CPP and EI maximums between running a payroll in a new year (2021 maximums) and printing T4's from prior years (2020 aximum), two constants are created each with the year maximum in place.
+
+To make it easier to determine CPP and EI maximums between running a payroll in a new year (2021 maximums) and printing T4's from prior years (2020 maximum), two constants are created each with the year maximum in place.
+
 Example:
 Constant 1 2020 Maximum
 Constant 2 2021 Maximum
@@ -329,11 +330,11 @@ Contribution rates for both employers and employees for 2021 is 5.45%. The follo
 - The maximum annual premium amount is \664.34, from \$650.40.
 
 > [!NOTE]
-> To make it easier to determine CPP and EI maximums between running a payroll in a new year (2021 maximums) and printing T4's from prior years (2020 aximum), two constants are created each with the year maximum in place.
+> To make it easier to determine CPP and EI maximums between running a payroll in a new year (2021 maximums) and printing T4's from prior years (2020 maximum), two constants are created each with the year maximum in place.
 >
 > Example:
 > Constant 1 2020 Maximum
->Constant 2 2021 Maximum
+> Constant 2 2021 Maximum
 
 To determine when you run a 2021 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
 As an example for the 2021 year numbers if you are using the "lower" value of $12,421.00 when you run 2021 payroll the 2020 maximum will be in place.
