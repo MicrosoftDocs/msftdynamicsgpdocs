@@ -1,6 +1,6 @@
 ---
-title: "Client installation"
-description: "Get Dynamics GP on the first computer and synchronize data with the server."
+title: "Install Dynamics GP on the first computer"
+description: "Get Dynamics GP on the first client computer and synchronize data with the server."
 keywords: "install"
 author: edupont04
 ms.author: edupont
@@ -13,7 +13,7 @@ ms.assetid: 12e47cac-e147-466f-93f5-c09251cbc7a9
 ms.reviewer: edupont
 ---
 
-# Install Dynamics GP on the first computer
+# Install Dynamics GP on the first client computer
 
 Use the information in this chapter to install Dynamics GP on the first computer.  
 
@@ -73,9 +73,9 @@ To install Dynamics GP (first computer):
 
     | Option   | What happens   |
     |---------|-------------|
-    | ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-    | ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features. |  
-    | ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features. |  
+    | ![component icon 1](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+    | ![component icon 2](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features. |  
+    | ![component icon 3](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features. |  
 
 9. Specify the folder where you want the Dynamics GP files installed. The default folder is C:\\Program Files\\Microsoft Dynamics\\GP 2018. To select a different folder, click Browse.
 
@@ -115,6 +115,7 @@ To install Dynamics GP (first computer):
 19. Follow the instructions in [Using Dynamics GP Utilities](using-microsoft-dynamics-utilities.md). You can use the Dynamics GP Utilities windows to set up your account framework and the Dynamics GP system data tables, and to create your companies.
 
 20. After using Dynamics GP Utilities, you can install additional features or components that add specialized functionality to your Dynamics GP system on the server computer. See [Installing additional components](installing-additional-components.md) for more information.  
+
 
 ## How to set up an ODBC Data Source on SQL Server for Microsoft Dynamics GP
 
