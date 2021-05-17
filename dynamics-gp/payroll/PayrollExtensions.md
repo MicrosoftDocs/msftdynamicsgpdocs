@@ -834,6 +834,7 @@ Some key points to remember from this course include:
 
 • Mandatory Arrears functionality only supports fixed amount deductions.
 
+
 ### Overtime Rate Manager Setup Examples and Calculations
 
 
@@ -948,6 +949,27 @@ You would just key a transaction for the hours of overtime.
 
 **Overtime example #6: Overtime and Minimum Net pay, Tips/Tip Credit**
 
+
+
+The employer pays a cash wage of $2.13 per hour
+claims an FLSA 3(m) tip credit of $5.12
+and the employee works 45 hours in a tipped occupation
+Tips reported : $100.00
+45 hours (total hours worked) × $7.25 (regular rate) = $326.25 (straight time wages due) 
+5 hours (overtime hours) × .5 × $7.25 (regular rate) = $18.13 (overtime wages due) 
+$326.25 (straight time wages due) + $18.13 (overtime wages due) = $344.38 (total wages due) 
+Generally, employers display the “Tip Credit” as a reduced hourly rate to the employee. 
+Thus, in this example, they pay the employee $2.13/hour (minimum wage rate of $7.25 – tip credit of $5.12). When a state has a higher minimum wage, generally the tip credit amount stays the same. 
+Regardless, this just results in a higher hourly rate for hours worked. The GP minimum wage functionality ensures the employee is paid the minimum amount. 
+The Tip Credit is inherently “included in determining the regular rate” by the nature of the fact that the hourly rate is reduced by the Tip Credit amount. In addition, the tips wages are also included via the ORM Method as is the Minimum Wage amount.
+Below is a spreadsheet that details the calculation for the following scenarios:
+•	No tips
+•	Tips with rate set to $2.13/hour
+•	Tips with rate set to $7.25/hour (breaking out the tip credit separately) 
+
+The target gross wages is correct if $2.13/hour is used.
+
+![Form](media/ORM6.jpg)
 
 
 
