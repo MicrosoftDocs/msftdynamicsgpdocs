@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/15/2021
+ms.date: 04/26/2021
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -95,6 +95,8 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Microsoft Dynamics GP Performance white paper](/dynamics/s-e/gp/mdgp2010_whitepaper_performance)
 
 - [Product Release Downloads for Microsoft SQL Server](https://businesscenter.mbs.microsoft.com/#contentdetail/SQLdownloadOverview)
+
+- [Microsoft Dynamics Database Maintenance Utility](https://mbs2.microsoft.com/fileexchange/?fileID=cde6687d-abb6-46bf-ae0f-6588838cb174)
 
 ## Documentation, resources, printable guides
 
