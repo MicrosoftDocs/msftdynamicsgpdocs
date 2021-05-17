@@ -1,6 +1,6 @@
 ---
-title: "Receivables Management in Dynamics GP"
-description: "Managing receivables in Dynamics GP."
+title: "Receivables Management Part 5: Utilities and routines"
+description: "Part 5 of Managing receivables in Dynamics GP."
 keywords: "receivables"
 author: theley502
 ms.prod: dynamics-gp
@@ -12,17 +12,17 @@ ms.date: 01/28/2019
 
 # Microsoft Dynamics GP Receivables Management Part 5: Utilities and routines
 
-You can help ensure the integrity of your Receivables Management data by reconciling your records. Once you’ve decided how much historical information is necessary, you can remove the information that’s no longer needed. Be sure to back up your accounting data before performing any of these procedures, because they might remove data from your system.
+You can help ensure the integrity of your Receivables Management data by reconciling your records. Once you've decided how much historical information is necessary, you can remove the information that's no longer needed. Be sure to back up your accounting data before performing any of these procedures, because they might remove data from your system.
 
 This part of the documentation also includes procedures you complete at the end of a month or period and at the end of your calendar or fiscal year. This information includes the following topics:
 
-- *Chapter 27, “Reconciling,”* describes reconciliation, the process of verifying that your accounting records are accurate.
+- *Chapter 27, "Reconciling,"* describes reconciliation, the process of verifying that your accounting records are accurate.
 
-- *Chapter 28, “History removal,”* explains the different types of historical information you can keep in Receivables Management, and describes how to remove historical information that is no longer needed.
+- *Chapter 28, "History removal,"* explains the different types of historical information you can keep in Receivables Management, and describes how to remove historical information that is no longer needed.
 
-- *Chapter 29, “Month-end closing,”* includes tasks usually completed at the end of the month or period, such as aging accounts and printing statements.
+- *Chapter 29, "Month-end closing,"* includes tasks usually completed at the end of the month or period, such as aging accounts and printing statements.
 
-- *Chapter 30, “Year-end closing,”* includes tasks completed when you close fiscal or calendar years.
+- *Chapter 30, "Year-end closing,"* includes tasks completed when you close fiscal or calendar years.
 
 ## Chapter 26: Reports
 
@@ -34,13 +34,13 @@ Reports information is divided into the following sections:
 
 - *Specifying a Receivables Management report option*
 
-- *Microsoft SQL Server® Reporting Services reports for Receivables Management*
+- *Microsoft SQL Server&reg; Reporting Services reports for Receivables Management*
 
-| **Report type**       | **Report**       | **Printing method**          |
-|-----------------------|------------------|------------------------------|
-| Setup reports  | Customer Setup List </br>Salesperson List </br>Sales Territory List </br>Customer Address List </br>Receivables Setup list </br>Quick Customer Setup List | Choose File \>\> Print in the setup windows or create report options using the Sales Setup Reports window. |
-| Trial Balances    | Aged Trial Balance† </br>Aged Trial Balance with Options Aging Report\* </br>Historical Aged Trial Balance\* </br>Quick Aged Trial Balance      | Create report options using the Receivables Trial Balance Report Options window. |
-| Analysis reports      | Accounts Due Report†   | Create report options using the Sales Analysis Report Options window.    |
+| **Report type** | **Report** | **Printing method** |
+|--|--|--|
+| Setup reports | Customer Setup List </br>Salesperson List </br>Sales Territory List </br>Customer Address List </br>Receivables Setup list </br>Quick Customer Setup List | Choose File \>\> Print in the setup windows or create report options using the Sales Setup Reports window. |
+| Trial Balances | Aged Trial Balance† </br>Aged Trial Balance with Options Aging Report\* </br>Historical Aged Trial Balance\* </br>Quick Aged Trial Balance | Create report options using the Receivables Trial Balance Report Options window. |
+| Analysis reports | Accounts Due Report† | Create report options using the Sales Analysis Report Options window. |
 \* Indicates reports that can be printed with multicurrency information displayed. 
 
 Receivables Transactions List†
@@ -51,7 +51,7 @@ Period Sales Analysis Report†
 
 Unapplied Documents List†
 
-† Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide for more information.
+† Indicates reports that can be assigned to named printers. See "Printers" in the System Administrator's Guide for more information.
 
 ### Receivables Management standard report summary
 
@@ -150,13 +150,13 @@ Returns†
 
 Reprinted statements\*†
 
-† Indicates reports that can be assigned to named printers. See “Printers” in the System Administrator’s Guide for more information.
+† Indicates reports that can be assigned to named printers. See "Printers" in the System Administrator's Guide for more information.
 
 ### Specifying a Receivables Management report option
 
 Report options include specifications for sorting options and range restrictions for a particular report. To print several Receivables Management reports, you must first create a report option. Each report can have several different options, so you can easily print the information you need. For example, you can create report options for the Aged Trial Balance that show either detailed or summary information.
 
-*A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.*
+*A single report option can't be used by multiple reports. If you want identical options for several reports, you must create them separately.*
 
 Use the Sales report options windows to create sorting, restriction, printing and email options for the reports that are included in Receivables Management.
 
@@ -174,7 +174,7 @@ Use the Sales report options windows to create sorting, restriction, printing an
 
 3. Choose New to open the report options window. Your selection in step 2 determines the report options window that appears.
 
-4. Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
+4. Name the option and enter information to define the option. The name you choose for the option won't appear on the report. The selections available for defining report options vary, depending on the report type you've selected.
 
 5. Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary depending on the type of report.
 
@@ -183,13 +183,13 @@ Use the Sales report options windows to create sorting, restriction, printing an
 
 6. Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-7. Choose Email Options to enter email options for the report option. Once the email options are set up, you’ll be able to send the reports in an email message by choosing Email. You’ll also be able to send this report option in an email from any list view where the report option is displayed.
+7. Choose Email Options to enter email options for the report option. Once the email options are set up, you'll be able to send the reports in an email message by choosing Email. You'll also be able to send this report option in an email from any list view where the report option is displayed.
 
 8. Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file, or to any combination of these options. If you select Ask Each Time, you can select printing options each time you print this report option.
 
-9. To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
+9. To print the report option from the report options window, choose Print before saving it. If you don't want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
-#### Microsoft SQL Server® Reporting Services reports for Receivables Management
+#### Microsoft SQL Server&reg; Reporting Services reports for Receivables Management
 
 You can view Receivables Management Reporting Services reports from the  Reporting Services Reports list. If you are using Reporting Services 2008, sales metrics for your home page also appear in the Reporting Services Reports list. You can access the Reporting Services Reports list from the  navigation pane or from an area page in the Microsoft Dynamics GP application window. This report list appears if you specified the location of your Reporting Services reports using the Reporting Tools Setup window.
 
@@ -225,22 +225,22 @@ This information is divided into the following sections:
 
 Select the type of information to reconcile using the Reconcile Receivables Amounts window.
 
-- **Current Customer Information** If marked, the aging periods for each customer card are verified with the amounts recorded for the customer’s transactions. Summary information about outstanding amounts, unpaid finance charges, and current balances is verified. If the amounts don’t match, the system sets the balances as calculated. The Reconcile Customer Balances report displays only the customers whose balances were changed during the process.
+- **Current Customer Information** If marked, the aging periods for each customer card are verified with the amounts recorded for the customer's transactions. Summary information about outstanding amounts, unpaid finance charges, and current balances is verified. If the amounts don't match, the system sets the balances as calculated. The Reconcile Customer Balances report displays only the customers whose balances were changed during the process.
 
-- **Outstanding Document Amounts** If marked, the transaction balances are verified with the amounts applied to them for each customer card in the range. If the calculated transaction balance does not equal the amount on the transaction, the system sets the balances as calculated. Each document that’s changed is printed on the Outstanding Documents Reconciliation report.
+- **Outstanding Document Amounts** If marked, the transaction balances are verified with the amounts applied to them for each customer card in the range. If the calculated transaction balance does not equal the amount on the transaction, the system sets the balances as calculated. Each document that's changed is printed on the Outstanding Documents Reconciliation report.
 
-- **Batch Information** If marked, the system verifies the batch each transaction is assigned to, the number of transactions in the batch, and the batch total. If any of the system calculations don’t match the original amounts, the batches are reconciled. Also, any batches that were missing are added. Any batches that are changed or added are printed on the Batch Reconciliation Report.
+- **Batch Information** If marked, the system verifies the batch each transaction is assigned to, the number of transactions in the batch, and the batch total. If any of the system calculations don't match the original amounts, the batches are reconciled. Also, any batches that were missing are added. Any batches that are changed or added are printed on the Batch Reconciliation Report.
 
--  **Fiscal Year** If marked, the summary information for the selected fiscal year is verified with the detail transaction information. If the amounts don’t match, the period summary amounts are adjusted based on the posted detail transactions.
+-  **Fiscal Year** If marked, the summary information for the selected fiscal year is verified with the detail transaction information. If the amounts don't match, the period summary amounts are adjusted based on the posted detail transactions.
 
-- **Calendar Year** If marked, the summary information for the selected calendar year is verified with the detail transaction information. If the amounts don’t match, the period summary amounts are adjusted based on the posted detail transactions.
+- **Calendar Year** If marked, the summary information for the selected calendar year is verified with the detail transaction information. If the amounts don't match, the period summary amounts are adjusted based on the posted detail transactions.
 
 ### Reconciling receivables amounts
 
-Use the Reconcile Receivables Amounts window to compare the aging period amounts for each customer card with the amounts recorded for the customer’s transactions, the outstanding document amounts, batch totals and amounts, fiscal year summary information, and calendar-year summary information.
+Use the Reconcile Receivables Amounts window to compare the aging period amounts for each customer card with the amounts recorded for the customer's transactions, the outstanding document amounts, batch totals and amounts, fiscal year summary information, and calendar-year summary information.
 
 > [!NOTE]
-> Before reconciling, back up all your company’s accounting data.
+> Before reconciling, back up all your company's accounting data.
 
  To reconcile receivables amounts:**
 
@@ -255,7 +255,7 @@ Use the Reconcile Receivables Amounts window to compare the aging period amounts
 
 *Age Finance Charges is only available when Current Customer Information is marked and Compound Finance Charge is not marked in the Receivables Management Setup window.*
 
-4. Select a range of customer cards if you’re reconciling current customer information, outstanding document amounts, fiscal year, or calendar year.
+4. Select a range of customer cards if you're reconciling current customer information, outstanding document amounts, fiscal year, or calendar year.
 
 5. Enter a reconcile date if it is a current customer balance. If you marked to reconcile fiscal-year or calendar-year information, enter a valid year to reconcile.
 
@@ -263,7 +263,7 @@ Use the Reconcile Receivables Amounts window to compare the aging period amounts
 
     - If you mark All, both open item and balance forward accounts are reconciled.
 
-    - If you mark Open Item, the system checks that the balances for each aging period are correct. If they’re incorrect, the aging period amounts are recalculated.
+    - If you mark Open Item, the system checks that the balances for each aging period are correct. If they're incorrect, the aging period amounts are recalculated.
 
     - If you mark Balance Forward accounts, the system calculates the age of each document in the current aging period and verifies the balance of the current and non-current periods.
 
@@ -273,7 +273,7 @@ Use the Reconcile Receivables Amounts window to compare the aging period amounts
 
 ## Chapter 28: History removal
 
-History records provide useful information for audit and analysis purposes. If you’re keeping one of the types of history available in Receivables Management, you can keep these records for an unlimited number of years.
+History records provide useful information for audit and analysis purposes. If you're keeping one of the types of history available in Receivables Management, you can keep these records for an unlimited number of years.
 
 When you remove historical records, the system removes records only for the range you specify. Normally, history is removed before the year-end closing process; however, at other times during the accounting cycle, you might find it necessary to remove ranges of history that are no longer useful.
 
@@ -295,7 +295,7 @@ This information is divided into the following sections:
 
 ### History removal overview
 
-When you removal history, you can set up restrictions to limit the historical records to be removed. Depending on the type of history you’re removing, you can set up the following ranges:
+When you removal history, you can set up restrictions to limit the historical records to be removed. Depending on the type of history you're removing, you can set up the following ranges:
 
 - Audit trail codes
 
@@ -324,11 +324,11 @@ When you removal history, you can set up restrictions to limit the historical re
 
 ### Removing transaction history
 
-Use the Remove Receivables Transaction History window to remove transaction history. If you’re keeping transaction history, detailed information has been kept for all transactions that were posted and paid during the year. If you remove transaction history, complete information might not be available to print Historical Aged Trial Balances or reprint posting journals.
+Use the Remove Receivables Transaction History window to remove transaction history. If you're keeping transaction history, detailed information has been kept for all transactions that were posted and paid during the year. If you remove transaction history, complete information might not be available to print Historical Aged Trial Balances or reprint posting journals.
 
 #### To remove transaction history:**
 
-1. Back up your company’s accounting data. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
+1. Back up your company's accounting data. See the System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
 2. Open the Remove Receivables Transaction History window. 
 (Sales \>\> Utilities \>\> Remove Transaction History)
@@ -340,9 +340,9 @@ Use the Remove Receivables Transaction History window to remove transaction hist
 4. Choose Insert; the range restriction is displayed in the Restrictions list. You can select another range type and insert another restriction.
 
     > [!NOTE]
-    > You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that history for customer records 100 through 300 should be removed, you can’t enter another restriction for customer records 500 through 800. To remove multiple ranges of history, you must remove each range separately.*
+    > You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that history for customer records 100 through 300 should be removed, you can't enter another restriction for customer records 500 through 800. To remove multiple ranges of history, you must remove each range separately.*
 
-5. Mark the type of records to remove—transactions, distributions, or both. If you mark Distributions, any distributions for the transaction history records you’re removing also are removed.
+5. Mark the type of records to remove—transactions, distributions, or both. If you mark Distributions, any distributions for the transaction history records you're removing also are removed.
 
 6. Mark Print Report to print the Transaction History Report for the range of records you specified after history has been removed.
 
@@ -350,17 +350,17 @@ To print the Transaction History Report to verify the ranges you entered before 
 
 7. Choose Process to begin removing history.
 
-Once history has been removed, you can’t print the Transaction History Report for the ranges of information you removed.
+Once history has been removed, you can't print the Transaction History Report for the ranges of information you removed.
 
 ### Removing distribution history
 
-Use the Remove Receivables Distribution History window to remove distribution history. If you’re keeping distribution history, a detailed record has been kept of how Receivables Management transactions have affected the balances of posting accounts. If you remove distribution history, you might not have all the information needed to reprint posting journals in the future.
+Use the Remove Receivables Distribution History window to remove distribution history. If you're keeping distribution history, a detailed record has been kept of how Receivables Management transactions have affected the balances of posting accounts. If you remove distribution history, you might not have all the information needed to reprint posting journals in the future.
 
-If you’re using General Ledger, those history records aren’t affected when you remove distribution history in Receivables Management. This information is kept separately from transaction history for General Ledger, so you can keep distribution history for Receivables Management regardless of whether you use General Ledger.
+If you're using General Ledger, those history records aren't affected when you remove distribution history in Receivables Management. This information is kept separately from transaction history for General Ledger, so you can keep distribution history for Receivables Management regardless of whether you use General Ledger.
 
 #### To remove distribution history
 
-1. Back up your company’s accounting data. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
+1. Back up your company's accounting data. See the System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
 2. Open the Remove Receivables Distribution History window. 
 (Sales \>\> Utilities \>\> Remove Distributions)
@@ -369,7 +369,7 @@ If you’re using General Ledger, those history records aren’t affected when y
 
 4. Choose Insert; the range restriction is displayed in the Restrictions list. You can select another range type and insert another restriction.
 
-*You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that history for customer records 100 through 300 should be removed, you can’t enter another restriction for customer records 500 through 800. To remove multiple ranges of history, you must remove each range separately.*
+*You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that history for customer records 100 through 300 should be removed, you can't enter another restriction for customer records 500 through 800. To remove multiple ranges of history, you must remove each range separately.*
 
 5. Mark Distributions to remove distributions.
 
@@ -379,17 +379,17 @@ To print the Transaction Distribution History Report to verify the ranges you en
 
 7. Choose Process to begin removing history.
 
-Once history has been removed, you can’t print the Transaction Distribution History Report for the ranges of information you removed.
+Once history has been removed, you can't print the Transaction Distribution History Report for the ranges of information you removed.
 
 ### Removing period history
 
-Use the Remove Receivables Calendar/Fiscal History window to remove period history. If you’re keeping calendar year history, customer sales, salesperson, and sales territory information has been recorded in a month-by-month format. If you’re keeping fiscal year history, the same information has been recorded according to the fiscal period format you specified using the Fiscal Period Setup window.
+Use the Remove Receivables Calendar/Fiscal History window to remove period history. If you're keeping calendar year history, customer sales, salesperson, and sales territory information has been recorded in a month-by-month format. If you're keeping fiscal year history, the same information has been recorded according to the fiscal period format you specified using the Fiscal Period Setup window.
 
-Comparative totals (year to date, last year, and life to date) aren’t removed when you remove calendar/fiscal history. These totals are kept independently; they are updated when you close the year. This window clears the balances displayed in the Customer Period Summary window.
+Comparative totals (year to date, last year, and life to date) aren't removed when you remove calendar/fiscal history. These totals are kept independently; they are updated when you close the year. This window clears the balances displayed in the Customer Period Summary window.
 
  To remove period history:**
 
-1. Back up your company’s accounting data. See the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
+1. Back up your company's accounting data. See the System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information about making backups.
 
 2. Open the Remove Receivables Calendar/Fiscal History window. 
 (Sales \>\> Utilities \>\> Remove Period History)
@@ -402,7 +402,7 @@ Comparative totals (year to date, last year, and life to date) aren’t removed 
 
 6. Choose Insert; the range restriction is displayed in the Restrictions list. You can select another range type and insert another restriction.
 
-*You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that history for customer records 100 through 300 should be removed, you can’t enter another restriction for customer records 500 through 800. To remove multiple ranges of history, you must remove each range separately.*
+*You can enter only one restriction for each restriction type. For example, if you enter a restriction specifying that history for customer records 100 through 300 should be removed, you can't enter another restriction for customer records 500 through 800. To remove multiple ranges of history, you must remove each range separately.*
 
 7. Mark History to remove history.
 
@@ -412,12 +412,12 @@ To print the History Removal Report to verify the ranges you entered before you 
 
 9. Choose Process to begin removing history.
 
-Once history has been removed, you can’t print the History Removal Report for the ranges of information you removed.
+Once history has been removed, you can't print the History Removal Report for the ranges of information you removed.
 
 ### Removing journal history
 
 Use the Remove Receivables Journal History window to remove journal history.
-If you’re keeping journal history for customer records, you can reprint
+If you're keeping journal history for customer records, you can reprint
 posting journals for Receivables Management transactions. Posting journals
 are valuable audit trail tools that include the audit trail codes assigned
 to transactions during the posting process. Using posting journals, you can
@@ -427,15 +427,15 @@ you can remove that information.
 
 #### To remove journal history
 
-1. Back up your company’s accounting data. See the System Administrator’s Guide
+1. Back up your company's accounting data. See the System Administrator's Guide
     (Help \>\> Contents \>\> select System Administration) for more information
     about making backups.
 
 2. Open the Remove Receivables Journal History window. (Sales \>\> Utilities
     \>\> Remove Journal History)
 
-A message appears that reads, “Removing this information might affect your
-historical aged trial balance. Do you want to continue?” Choose Yes.
+A message appears that reads, "Removing this information might affect your
+historical aged trial balance. Do you want to continue?" Choose Yes.
 
 1. To limit the historical records to be removed, select a type of range and
     enter a range restriction.
@@ -445,7 +445,7 @@ historical aged trial balance. Do you want to continue?” Choose Yes.
 
 *You can enter only one restriction for each restriction type. For example,
 if you enter a restriction specifying that history for batch IDs 100 through
-300 should be removed, you can’t enter another restriction for batch IDs 500
+300 should be removed, you can't enter another restriction for batch IDs 500
 through 800. To remove multiple ranges of history, remove each range
 separately.*
 
@@ -459,8 +459,8 @@ you remove history, mark only Print Report and choose Process.
 
 1. Choose Process to begin removing history.
 
-Once history has been removed, you can’t reprint posting journals for the
-ranges of information you’ve removed.
+Once history has been removed, you can't reprint posting journals for the
+ranges of information you've removed.
 
 ### Removing Intrastat history
 
@@ -468,12 +468,12 @@ Use the Remove Intrastat History window to remove Intrastat history records
 that are no longer necessary. Only the Intrastat records for the range you
 specify are removed.
 
-Once history has been removed, you can’t print the Intrastat removal reports
+Once history has been removed, you can't print the Intrastat removal reports
 for the ranges of information you removed.
 
  To remove Intrastat history:**
 
-1. Back up your company’s accounting data. See the System Administrator’s Guide
+1. Back up your company's accounting data. See the System Administrator's Guide
     (Help \>\> Contents \>\> select System Administration) for more information
     about making backups.
 
@@ -486,7 +486,7 @@ for the ranges of information you removed.
 *You can enter and insert additional ranges. However, you can enter only one
 range for each range type. For example, if you enter a restriction
 specifying that history should be deleted for customer records COMPUTER0003
-through GRAHAMAR0001, you can’t*
+through GRAHAMAR0001, you can't*
 
 *enter another restriction for customer IDs CONTINEN0001 through
 EXECUTIV0001.*
@@ -507,10 +507,10 @@ Print Report and choose Process.
 
 Use the Tax History Removal window to remove tax detail transactions. Only
 the tax history for the range you specify will be removed. Once tax history
-has been removed, the tax details in the range you’ve removed won’t be
+has been removed, the tax details in the range you've removed won't be
 printed on tax reports.
 
-*Before removing history, back up your company*’*s accounting data.*
+*Before removing history, back up your company*'*s accounting data.*
 
 #### To remove tax history:**
 
@@ -530,7 +530,7 @@ printed on tax reports.
 
 ## Chapter 29: Month-end closing
 
-This information includes tasks that are usually completed at the end of the  month or period. You can, however, complete these tasks whenever they’re needed.
+This information includes tasks that are usually completed at the end of the  month or period. You can, however, complete these tasks whenever they're needed.
 
 This information is divided into the following sections:
 
@@ -582,7 +582,7 @@ Unapplied Credit Amounts in the Receivables Management Setup window.
     document, and the documents are transferred to the correct aging period.
 
 - When you age balance forward accounts, the system calculates the age of each
-    document in the current aging period, but doesn’t actually move them to the
+    document in the current aging period, but doesn't actually move them to the
     noncurrent aging periods. Noncurrent balances for these accounts are
     consolidated after you remove paid transactions. See *Removing paid
     transactions* for more information.
@@ -623,7 +623,7 @@ marked in the Receivables Management Setup window.*
         period.
 
     - If a customer has a balance forward accounts, the system calculates the
-        age of each document in the current aging period, but doesn’t actually
+        age of each document in the current aging period, but doesn't actually
         move them to the noncurrent aging periods. Noncurrent balances for these
         accounts are consolidated after you remove paid transactions. See
         *Removing paid transactions* for more information.
@@ -655,19 +655,19 @@ balances for multicurrency transactions, the functional currency amount is
 used.
 
 *The option to include unapplied credits in aged balances is not available
-if you’re assessing finance charges for balance forward accounts, or for the
+if you're assessing finance charges for balance forward accounts, or for the
 current aging period.*
 
 If you marked Compound Finance Charges in the Receivables Management Setup
-window, unapplied finance charges are included in the balance that’s
-assessed a finance charge. If you don’t mark this option, unapplied finance
+window, unapplied finance charges are included in the balance that's
+assessed a finance charge. If you don't mark this option, unapplied finance
 charges are not included in the balance.
 
 #### Example
 
 On January 2, a customer purchased goods on account for a total of \$100.00.
 On February 5, after you age balances, you assess a 5% finance charge on the
-31-60 days and older aging period. The customer’s outstanding balances is
+31-60 days and older aging period. The customer's outstanding balances is
 now \$105.00, with the following aging period balances:
 
 | **Aging period** | **Balance** |
@@ -689,7 +689,7 @@ Depending on whether you marked Compound Finance Charges in the Receivables
 Management Setup window and Include Unapplied Credits in Aged Balances in
 the Assess Finance Charges window, the following situations would occur:
 
-- If you didn’t mark either option, a \$5.00 finance charge would be assessed
+- If you didn't mark either option, a \$5.00 finance charge would be assessed
     (\$100.00 x 5%).
 
 - If you marked only Compound Finance Charges, a \$5.25 finance charge would
@@ -701,7 +701,7 @@ the Assess Finance Charges window, the following situations would occur:
     (61-90 days) until that balance was zero, and then to the 31-60-days aging
     period. After calculating the applied amounts, the balances of both aging
     periods would be zero. (Receivables Management goes through the apply
-    process for the purpose of assessing finance charges but doesn’t actually
+    process for the purpose of assessing finance charges but doesn't actually
     apply any amounts).
 
 - If you marked both options, no finance charges would be assessed.
@@ -709,7 +709,7 @@ the Assess Finance Charges window, the following situations would occur:
     be pseudoapplied to the oldest aging period (61-90 days) and then to the
     31-60-days aging period. Since the balance is zero for both periods, no
     finance charges are assessed. (Receivables Management goes through the apply
-    process for the purpose of assessing finance charges but doesn’t actually
+    process for the purpose of assessing finance charges but doesn't actually
     apply any amounts.)
 
 ### Assessing finance charges
@@ -729,12 +729,12 @@ page 82 for more information on individual finance charges.
 
 1. Select a range of customer cards to assess finance charges for.
 
-If you’re using national accounts and you marked Base Finance Charge on
+If you're using national accounts and you marked Base Finance Charge on
 Consolidated National Account in the National Accounts Maintenance window,
 the parent customer must be in the customer ID range for finance charges to
 be assessed against the national account. The finance charge calculation
 method from the parent customer card will be used to calculate the finance
-charge and only the parent customer’s summary records will be updated with
+charge and only the parent customer's summary records will be updated with
 the finance charge amounts.
 
 1. Select a range of customer class IDs to further restrict the customer
@@ -747,7 +747,7 @@ the finance charge amounts.
 3. Mark whether to include unapplied credits in aged balances when you assess
     finance charges.
 
-If you’re using national accounts and you marked Base Finance Charge on
+If you're using national accounts and you marked Base Finance Charge on
 Consolidated National Account in the National Accounts Maintenance window,
 finance charges will be assessed based on the consolidated national account.
 If you also mark Include Unapplied Credits in Aged Balances, receivables
@@ -756,11 +756,11 @@ the national account aging period balances—oldest aging period first—and the
 remaining balance will be assessed a finance charge.
 
 1. Enter the minimum balance that a customer must owe to be charged a finance
-    charge. Any customer having a balance that is less than this amount won’t be
+    charge. Any customer having a balance that is less than this amount won't be
     charged.
 
 2. Enter the minimum amount that you can charge a customer. Any customer who
-    would be assessed a finance charge that is less than this amount won’t be
+    would be assessed a finance charge that is less than this amount won't be
     charged.
 
 3. Mark Print Register to print the Finance Charge Detail Report once the
@@ -795,7 +795,7 @@ window.
 4. Enter the minimum amount that you can charge a customer.
 
 5. Enter the minimum balance that a customer must owe to be charged a finance
-    charge. Any customer having a balance that is less than this amount won’t be
+    charge. Any customer having a balance that is less than this amount won't be
     charged.
 
 6. In the Includes Balances field, select the aging period of the balances to
@@ -838,16 +838,16 @@ mark this option, the following conditions apply:
 
 - The aging periods will not be reduced to less than zero.
 
-You can mark this option only if you didn’t mark Age Unapplied Credit
+You can mark this option only if you didn't mark Age Unapplied Credit
 Amounts in the Receivables Management Setup window.
 
 Use the multicurrency versions of the Receivables Management customer
-statements to print statements in your customer’s currency. If you conduct
+statements to print statements in your customer's currency. If you conduct
 business with customers in multiple currencies, you can print statements
 that include a subtotal for each currency with activity by marking Include
 Multicurrency Info in the Posting Setup window.
 
-If you’re using national accounts, you can print consolidated statements or
+If you're using national accounts, you can print consolidated statements or
 individual customer statements. If you mark Consolidated National Account
 and leave Individual Child Statements unmarked, only one statement will be
 printed for each national account. Parent and all child documents will be
@@ -865,7 +865,7 @@ You can set up different statements for different groups of customers. For
 example, you can set up statements that include information specific to each
 customer class, or for customers with different statement cycles.
 
-Once you set up your statement selections, you don’t need to reenter the
+Once you set up your statement selections, you don't need to reenter the
 same information each time. Instead, you can just select the appropriate
 statement ID, change the dates if necessary, and begin printing.
 
@@ -884,10 +884,10 @@ statement ID, change the dates if necessary, and begin printing.
     blank paper, short continuous, side continuous, multicurrency long, or
     multicurrency blank.
 
-The Multicurrency Long Form has a page break separating each currency’s
+The Multicurrency Long Form has a page break separating each currency's
 activity, if the customer has conducted business with you in multiple
 currencies. The Multicurrency Blank form contains a summary of current
-activity and each currency’s outstanding balances.
+activity and each currency's outstanding balances.
 
 1. In the Customers and Documents fields, select the order to print the
     customer statements in, and a method for listing documents for each customer
@@ -907,11 +907,11 @@ on statements.
     is displayed. Transactions after this date are displayed in detail. Select a
     cutoff date to print statements for transactions through the specified date.
 
-3. Enter or select the address ID for your company’s address to appear on the
+3. Enter or select the address ID for your company's address to appear on the
     statement.
 
 4. Mark whether to reduce the oldest aging period amounts by unapplied credit
-    amounts. This option is available only if you didn’t mark Age Unapplied
+    amounts. This option is available only if you didn't mark Age Unapplied
     Credit Amounts in the Receivables Management Setup window. See *Customer
     statements overview* for more information.
 
@@ -919,7 +919,7 @@ on statements.
     balance forward accounts.
 
 Mark the information to print on the statements—credit limits, payment
-terms, finance charges, and messages. If you’re using national accounts, you
+terms, finance charges, and messages. If you're using national accounts, you
 also can include individual child statements.
 
 1. Choose E-mail Options to open the E-mail Statements Options window, where
@@ -941,11 +941,11 @@ you finish.
 
 *You can enter only one restriction for each restriction type. For example,
 if you enter a restriction specifying that only customer IDs 100 through 300
-should be printed, you can’t enter another restriction for customer IDs 500
+should be printed, you can't enter another restriction for customer IDs 500
 through 800. To print multiple ranges of customer records, you must print
 each range separately.*
 
-If you’re printing statements for national account customers, the parent
+If you're printing statements for national account customers, the parent
 customer ID must be in the range selected for either consolidated or
 individual national account statements to print.
 
@@ -961,21 +961,21 @@ Setup window.
 For example, if a customer misplaces a statement, but they need the
 statement to receive approval for payment, you could send the customer a
 reprinted statement that includes the same information as the original.
-Reprinted statements are marked with “Reprint” in the header.
+Reprinted statements are marked with "Reprint" in the header.
 
 When you mark to reprint statements, statement data is saved each time you
 print statements, so that the information is available for reprinting. You
 also can remove the statements using the Reprint Statements window if you no
 longer want the statement to be available for reprinting.
 
-If you’re using national accounts and you select to reprint or remove a
-parent customer’s statement, you cannot separate that statement into
+If you're using national accounts and you select to reprint or remove a
+parent customer's statement, you cannot separate that statement into
 individual child customer statements.
 
-*If you’re using Multicurrency Management, and if you originally printed a
-multicurrency statement and you’re now reprinting it in a non-multicurrency
+*If you're using Multicurrency Management, and if you originally printed a
+multicurrency statement and you're now reprinting it in a non-multicurrency
 format, the amounts will be the same as they were on the original
-multicurrency statement. The amounts won’t be converted to the functional
+multicurrency statement. The amounts won't be converted to the functional
 currency.*
 
 #### To reprint or remove statements
@@ -987,7 +987,7 @@ currency.*
 
 3. Enter a range of statements dates, or mark All. Choose Redisplay.
 
-4. Select which form to print statements on, if you’re printing statements.
+4. Select which form to print statements on, if you're printing statements.
 
 5. Mark which statements in the scrolling window to reprint or remove.
 
@@ -1008,7 +1008,7 @@ select to send a customer statement for a customer, you can specify a
 message ID and the document format to use for the customer. A message ID is
 a predefined message that you can assign to a document that you want to send
 in e-mail. For more information about setting up documents for e-mail, refer
-to your System User’s Guide (Help \>\> Contents \>\> select Using The
+to your System User's Guide (Help \>\> Contents \>\> select Using The
 System).
 
 If you are using MAPI as your mail service, you can decide to send customer
@@ -1036,7 +1036,7 @@ option is not available.
     Mass Customer E-Mail Settings window to set up email settings for customer
     records.
 
-  - At least one e-mail address, To, Cc, or Bcc, is assigned to the customer’s
+  - At least one e-mail address, To, Cc, or Bcc, is assigned to the customer's
     statement address ID using the Internet Information window.
 
   - The Print option is marked in the Print Receivables Statements window.
@@ -1056,8 +1056,8 @@ Customer Maintenance Options window before you can send customer statements
 by e-mail. You also must have Adobe PDFWriter installed to be able to send
 statements by email.
 
-When you send customer statements by e-mail, they’re created as PDF files
-using Adobe Distiller or PDFWriter, and they’re attached to the message sent
+When you send customer statements by e-mail, they're created as PDF files
+using Adobe Distiller or PDFWriter, and they're attached to the message sent
 to the customer. These files are stored in a folder within the Windows temp
 folder.
 
@@ -1070,7 +1070,7 @@ path name of this folder typically will be*
 
 The statements will be sent to the customer e-mail addresses you set up in
 the Customer Maintenance Options window, and the From address will be the
-e-mail address of the user who’s logged in to the MAPI-compliant mail
+e-mail address of the user who's logged in to the MAPI-compliant mail
 service. When the e-mail statement is sent, the PDF file will be removed
 from your hard disk. If, for some reason, the PDF file is not removed, it
 will be overwritten if you regenerate the statement.
@@ -1081,7 +1081,7 @@ report includes a list of the e-mail statements that were sent successfully
 and information about any errors that might have occurred during the process
 of sending the e-mail statements.
 
-If you didn’t specify an e-mail address in the Receivables Management Setup
+If you didn't specify an e-mail address in the Receivables Management Setup
 window or if sending the status report by e-mail failed, Receivables
 Management will print the status report to the default printer and leave the
 status report file in the folder that you specified or in the default folder
@@ -1201,8 +1201,8 @@ salespeople.
 Use the Paid Sales Transaction Removal window to transfer paid transactions
 to history and to consolidate balance forward accounts.
 
-*If you aren’t keeping history, this procedure removes paid transactions
-from the system, and you can’t print reports containing information about
+*If you aren't keeping history, this procedure removes paid transactions
+from the system, and you can't print reports containing information about
 the transactions that are removed.*
 
 #### To remove paid transactions
@@ -1222,9 +1222,9 @@ the transactions that are removed.*
     the cutoff date will be removed.
 
 *Checks have a separate cutoff date because those that are transferred to
-history or removed from the system can’t be marked as NSF. Therefore, we
+history or removed from the system can't be marked as NSF. Therefore, we
 recommend that you enter a cutoff date that is one month prior to the
-transaction cutoff date. That way you won’t remove any potential NSF
+transaction cutoff date. That way you won't remove any potential NSF
 checks.*
 
 1. Mark whether to consolidate balance forward customer accounts. If you mark
@@ -1258,7 +1258,7 @@ You can save VAT report IDs and reprint reports at a later time.
 
 3. Enter starting and ending dates for the report.
 
-Each VAT Report ID you create must have a unique starting date. You can’t
+Each VAT Report ID you create must have a unique starting date. You can't
 use the same starting date on more than one report ID.
 
 1. Choose Calculate. VAT return information is displayed in the VAT Return
@@ -1277,7 +1277,7 @@ use the same starting date on more than one report ID.
 
 ## Chapter 30: Year-end closing
 
-This information includes tasks completed at the end of the year. These procedures transfer current-year balances to last year’s balance, and clear out the current-year balances. There are two closing procedures for Receivables Management—fiscal year and calendar year. You must close both the calendar and fiscal year, even if you use only fiscal periods.
+This information includes tasks completed at the end of the year. These procedures transfer current-year balances to last year's balance, and clear out the current-year balances. There are two closing procedures for Receivables Management—fiscal year and calendar year. You must close both the calendar and fiscal year, even if you use only fiscal periods.
 
 This information is divided into the following sections:
 
@@ -1301,21 +1301,21 @@ year. The Last Year column is updated to display totals for the year you
 closed.
 
 You must enter and post transactions before those amounts are included in
-the year you’re closing. You should close the calendar year after you print
-the final statements for the year you’re closing.
+the year you're closing. You should close the calendar year after you print
+the final statements for the year you're closing.
 
 Be sure to complete the following procedures in this order to close your
-company’s calendar year.
+company's calendar year.
 
-- **Post all transactions for the current year** Before closing the year, post all transactions for the calendar year. To enter future period transactions before closing the year, create a batch with new transactions, but don’t post it until after the previous year has been closed.
+- **Post all transactions for the current year** Before closing the year, post all transactions for the calendar year. To enter future period transactions before closing the year, create a batch with new transactions, but don't post it until after the previous year has been closed.
 
-- **Make a backup** Make a backup of all data for your company’s permanent records. This gives you a record of the company’s financial position at the end of the year so you can restore it later, if necessary.
+- **Make a backup** Make a backup of all data for your company's permanent records. This gives you a record of the company's financial position at the end of the year so you can restore it later, if necessary.
 
 - **Close the calendar year** Use the Receivables Year-End Closing window to close the calendar year or, if your calendar and fiscal years coincide, both years. See *Closing a calendar year* on page 215 for more information.
 
 - **Close the sales tax periods for the year (optional)** Use the Tax Year-End Closing window to close the sales tax periods and print the Tax Year-End Closing Report. Be sure to complete the year-end closing procedures for alL sales and purchasing modules before closing the sales tax periods for the  year. See *Closing a tax year* for more information.
 
-- **Make a final backup** Make a final backup of all data for your company’s records.
+- **Make a final backup** Make a final backup of all data for your company's records.
 
 > [!NOTE]
 > Before you close the year, make a backup of all company data. If you have a current backup, you can restore information, if necessary.*
@@ -1354,21 +1354,21 @@ The amounts in the Year to Date column will be updated to display totals for the
 new fiscal year. The amounts in the Last Year column will display totals for the
 year you closed.
 
-If it’s the end of the fiscal year and you must enter transactions for the next
+If it's the end of the fiscal year and you must enter transactions for the next
 year, we recommend that you create a batch for the transactions and wait to post
-them until after you close the year, to avoid posting the new year’s
+them until after you close the year, to avoid posting the new year's
 transactions to the previous year.
 
 Be sure to complete the following procedures in this order to close your
-company’s calendar year.
+company's calendar year.
 
 **Post all transactions for the current year** Before closing the year, post all
 transactions for the fiscal year. To enter future period transactions before
-closing the year, create a batch with new transactions, but don’t post it until
+closing the year, create a batch with new transactions, but don't post it until
 after the previous year has been closed.
 
-**Make a backup** Make a backup of all data for your company’s permanent
-records. This gives you a record of the company’s financial position at the end
+**Make a backup** Make a backup of all data for your company's permanent
+records. This gives you a record of the company's financial position at the end
 of the year so you can restore it later, if necessary.
 
 **Close the fiscal year** Use the Receivables Year-End Closing window to close
@@ -1390,7 +1390,7 @@ Closing Report. Be sure to complete the year-end closing procedures for all
 sales and purchasing modules before closing the sales tax periods for the
 year. See *Closing a tax year* on page 216 for more information.
 
-**Make a final backup** Make a final backup of all data for your company’s
+**Make a final backup** Make a final backup of all data for your company's
 records.
 
 *Before you close the year, make a backup of all company data. If you have a
@@ -1411,13 +1411,13 @@ have a current backup, you can restore information, if necessary.
     ![A screenshot of a cell phone Description automatically generated](media/575bde0d83376ccf27fee01112f9e355.jpg)
 
 1. Mark Calendar or, if the calendar year coincides with your fiscal year, mark
-    All. If they don’t coincide, close the fiscal year separately. See *Closing
+    All. If they don't coincide, close the fiscal year separately. See *Closing
     a fiscal year* for more information about closing a fiscal year.
 
 2. Mark Print Report to print the Year-End Closing Report when the closing
     process is complete. This report lists the records that have been closed.
     The Year-End Closing Report is part of the audit trail and should be saved
-    with your company’s permanent records.
+    with your company's permanent records.
 
 3. Choose Process to begin the closing process.
 
@@ -1458,7 +1458,7 @@ current backup, you can restore information, if necessary.
 3. Mark Print Report to print the Year-End Closing Report when the closing
     process is complete. This report lists the records that have been closed.
     The Year-End Closing Report is part of the audit trail and should be saved
-    with your company’s permanent records.
+    with your company's permanent records.
 
 4. Choose Process to begin the closing process.
 
@@ -1472,12 +1472,12 @@ Printable Manuals) for more information.
 Use the Tax Year-End Closing window to prepare your tax records for a new year.
 
 When you close the tax year, the accumulated year-to-date tax totals in the Tax
-Detail Maintenance window are cleared and transferred to last year’s tax totals.
+Detail Maintenance window are cleared and transferred to last year's tax totals.
 Separate year-to-date tax totals can then be recorded for the new year. Any tax
 amounts you enter after closing the tax year are added to the new year-to-date
 total.
 
-If you’re keeping historical data, you can view tax totals for historical years
+If you're keeping historical data, you can view tax totals for historical years
 using the Tax Detail History window.
 
 Closing a tax year affects all the tax details you entered. To help ensure the
@@ -1490,13 +1490,13 @@ years, and before posting any documents to the next year.
 1. Open the Tax Year-End Closing window. (Administration \>\> Routines \>\>
     Company \>\> Tax Year-End Close)
 
-2. Mark Close Year. You can’t close the tax year unless you mark this option.
+2. Mark Close Year. You can't close the tax year unless you mark this option.
 
 3. Mark Print Report to print the Tax Year-End Closing Report when the closing
-    process is complete. This report shows year-to-date and last year’s tax
+    process is complete. This report shows year-to-date and last year's tax
     amounts as they appeared in the Tax Detail Maintenance window before the tax
     year was closed. The report is part of the audit trail and should be saved
-    with your company’s permanent records.
+    with your company's permanent records.
 
 4. Choose Process to begin the closing process.
 
@@ -1522,7 +1522,7 @@ based on your setup of the Payment Terms.
 [Customer Credit Limit
 Visual](https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/06/16/microsoft-dynamics-gp-2015-r2-visual-customer-over-credit-limit)
 
-Wouldn’t it be great if when a Customer calls in you have an easy way to know if
+Wouldn't it be great if when a Customer calls in you have an easy way to know if
 they are over their credit limit? With GP 2015 R2, now there is!
 
 Introducing the Visual Customer Over Credit Limit!!

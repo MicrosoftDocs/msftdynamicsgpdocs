@@ -1,5 +1,5 @@
 ---
-title: "System requirements"
+title: "Prerequisite software"
 description: "See the prerequisite software that you must install before you can deploy Dynamics GP web components."
 keywords: "web components"
 author: edupont04
@@ -13,7 +13,7 @@ ms.assetid: 219626ce-5dbe-4b61-b67b-6bee6d628e3b
 ms.reviewer: 
 ---
 
-# Prerequisite software
+# Prerequisite software for installing Dynamics GP
 
 Before you can install the Dynamics GP web components, you must install other software on the web server and the session host servers. The prerequisite software to install will depend on the components you will be installing on the server.  
 
@@ -53,17 +53,17 @@ To install these items, complete the following steps for Windows Server 2008 R2:
 
     In **Common HTTP Features**:
 
-        - Static Content
+      - Static Content
 
-        - Default Document
+      - Default Document
 
     In Application Development:
 
-        - ASP.NET
+      - ASP.NET
 
     In **Security**:
 
-        - **Windows Authentication**
+      - **Windows Authentication**
 
     Other role services will already be marked. Some are marked by default. Others are marked depending on how the web server is configured. Click **Next**.
 
@@ -99,17 +99,17 @@ To install these items, complete the following steps for Windows Server 2012 and
 
     In **Common HTTP Features**:
 
-        - Static Content
+      - Static Content
 
-        - Default Document
+      - Default Document
 
     In **Security**:
 
-        - **Windows Authentication**
+      - **Windows Authentication**
 
     In **Application Development**:
 
-        - **ASP.NET 4.5**
+      - **ASP.NET 4.5**
 
     Other role services will already be marked. Some are marked by default. Others are marked depending on how the web server is configured. Click **Next**.
 
