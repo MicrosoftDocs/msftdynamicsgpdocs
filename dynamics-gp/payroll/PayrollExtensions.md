@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 02/11/2019
+ms.date: 05/17/2021
 ---
 
 # Microsoft Dynamics GP Payroll Extensions
@@ -833,6 +833,123 @@ This chapter explains how to use the Mandatory Arrears window to process the man
 Some key points to remember from this course include:
 
 • Mandatory Arrears functionality only supports fixed amount deductions.
+
+### Overtime Rate Manager Setup Examples and Calculations
+
+
+With Overtime Rate Manager (ORM) in Microsoft Dynamics GP gives customers the ability to calculate a blended overtime rate to pay their employees with.  This meets requirements for FLSA, Fair Labor Standards.
+Many times in support we get questions on how to set this up.  Below I have provided you some basic examples of a setup and also the calculation we use to back into these figures.
+One with overtime, and one with double overtime, bonus and shift pay.  These are just examples, and guidelines for you to follow as you start to use this product, the system is more rules based in this area and your setup may fluctuate based off your need of calculation.
+It is very important when working with overtime rate manager that you know the rate that was keyed into the payroll transaction, as you can see examples below, once you get to the calculate checks report it shows the BLENDED rate, not the actual rate that is keyed into the system and that seems to confuse a lot of users.
+
+
+**Overtime example #1:**
+1 hour of OT---40 reg hours at 39.47 and bonus  pay of 166.86
+40.00 * 39.47=1578.80
+1.00 * 39.47 = 39.47   
+Blended rate is total wages / hours to get average
+1578.80 + 39.47+ bonus pay 166.86=1785.13 / 41.00  =43.54  this is my blended rate
+The overtime premium for this employee is  43.54 *.5 = 21.77
+Then you take this times your OT hours in this example  1 * 21.77 = 21.77 this is your premium
+The employee’s gross pay is 1578.80 + 39.47+ bonus pay 166.86 + 21.77= 1806.90, matches calc checks
+If you need to back into 1806.90
+It would be 1806.90-1578.80  -166.86=61.24/ 1.00=61.24 per the OT rate on calc checks
+
+![Form](media/ORM1.jpg)
+
+
+**Overtime example #2: Double Time**
+
+1 hour of OT, 1 hour DT , 40 reg and bonus pay of 166.86
+40.00 * 39.47=1578.80
+1.00 * 39.47 = 39.47   
+1.00 * 39.47 = 39.47   
+**Notice how the blended rate did not change as in our DT calc method we are NOT including the prior hours, just DT straight at double time …it is not blended or included in the OT blend.
+
+Blended rate is total wages / hours to get average this would be the same as DT is not in the reg. OT code nor blended 1578.80 + 39.47 bonus  pay 166.86=1785.13 / 41.00  =43.54  this is my blended rate
+The overtime premium for this employee is  43.54 *.5 = 21.77
+Then you take this times your OT hours 1. * 21.77 = 21.77 this is your premium
+The employees gross pay is 1578.80 + 39.47+ bonus  pay 166.86 + 21.77 + 78.94 (DT)= 1885.84 matches calc checks
+
+![Form](media/ORM2.jpg)
+
+
+
+**Overtime example #3: Overtime and Double Time**
+
+14 hour of OT, 15 hour DT , 40 reg and bonus  pay of 177.63
+40.00 * 39.47=1578.80
+14.00 * 39.47 = 552.58 OT   
+15.00 * 39.47 = 592.05 DT   
+**Notice how the blended rate did not change as in our DT calc method we are NOT including the prior hours, just DT straight at double time …it is not blended
+Blended rate is total wages / hours to get average this would be the same as DT is not in the reg. OT code nor blended
+1578.80 + 552.58  bonus  pay 177.63=2309.01 / 54.00  =42.76  this is my blended rate
+The overtime premium for this employee is  42.76 *.5 = 21.38
+Then you take this times your OT hours 14 * 21.38 = 299.32 this is your premium
+The employees gross pay is 1578.80 + 552.58+ bonus pay 177.63 + 299.32 +1184.10(DT not blended)= 3792.43 matches calc checks
+
+Use same screen shot setup as ones noted above for setup.
+
+![Form](media/ORM3.jpg)
+
+
+**Overtime example #4: Overtime and Shift Differential**
+
+
+The premium or shift is just added to the rate, you would get the same results if you took off  the shift and just updated the OT rate to 16.59  1st calculate checks screen shot ….2nd Screen on bottom  is with shift, same thing
+27.75 * 14.09=391.00
+3.75 * 16.59 = 62.21   or       14.09 + 2.50 * 3.75 = 62.21
+
+Blended rate is total wages / hours to get average
+391.00 + 62.21=453.21 / 31.50  =14.39  this is my blended rate
+The overtime premium for this employee is  14.39 *.5 = 7.195
+Then you take this times your OT hours 3.75 * 7.195 = 26.98 this is your premium
+The employees gross pay is 391.00 + 62.21 + 26.98 = 480.19
+If you need to back into 480.19
+It would be 480.19-391.00=89.19/ 3.75 =23.78 – 2.50 = 21.28     A penny off,  rounding     
+
+![Form](media/ORM4.jpg)
+
+![Form](media/ORM4A.jpg)
+
+
+**Overtime example #5: Overtime and Salary Pay**
+
+
+Employee worked 41 hours, Salary pay code, weekly at 53,000 annually, 1,000 weekly pay
+Gross Salary needs to be 1012.20 for the week
+1000.00/41 hours = 24.39
+24.39*.50 for the premium is 12.20
+
+
+![Form](media/ORM5.jpg)
+
+
+
+Employee worked 44 hours, Salary pay code, weekly at 53,000 annually, 1,000 weekly pay
+Gross Salary needs to be 1045.44 for the week.
+1000.00/44 hours =  22.73
+22.73 *.50 for the premium is 11.37
+11.37 * 4hours = 45.48 overtime
+
+
+![Form](media/ORM5A.jpg)
+
+
+
+
+The setup is the same for both examples
+You would just key a transaction for the hours of overtime.
+
+
+
+![Form](media/ORM5B.jpg)
+
+
+**Overtime example #6: Overtime and Minimum Net pay, Tips/Tip Credit**
+
+
+
 
 ## Chapter 5: Reports
 
