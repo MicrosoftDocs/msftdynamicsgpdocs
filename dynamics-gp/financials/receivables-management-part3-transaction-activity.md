@@ -458,16 +458,15 @@ Use the Customer/Vendor Relationships window to link a customer to a vendor or a
 
 #### To create a customer/vendor relationship
 
-1. Open the Customer/Vendor Relationships window. 
-(Sales \>\> Cards \>\> Customer/Vendor)
+1. Open the Customer/Vendor Relationships window. (Sales \>\> Cards \>\> Customer/Vendor)
 
-    ![](media/1e7d912d783aeb7fb89d71205efe68a4.jpg)
+   ![1e7d912d783aeb7fb89d71205efe68a4.jpg](media/1e7d912d783aeb7fb89d71205efe68a4.jpg)
 
 2. Enter or select a vendor and a customer. You can create more than one customer/vendor relationship at a time in this window by entering multiple customers and vendors.
 
 3. Verify that the default currency IDs for both the customer and vendor are the same. If the default currency is not the functional currency, you must select a rate type.
 
-If you have Multicurrency Management registered and have entered a default currency for the customer, the Currency field will display that currency. You can change the currency.
+    If you have Multicurrency Management registered and have entered a default currency for the customer, the Currency field will display that currency. You can change the currency.
 
 4. Choose OK to create and save the customer/vendor relationship and close the window.
 
@@ -477,8 +476,7 @@ Use the Customer/Vendor Relationships window to automatically create customer ca
 
 #### To auto-create a customer or vendor
 
-1. Open the Customer/Vendor Relationships window. 
-(Sales \>\> Cards \>\> Customer/Vendor)
+1. Open the Customer/Vendor Relationships window. (Sales \>\> Cards \>\> Customer/Vendor)
 
 2. Enter or select a customer or vendor. This procedure requires you to use an existing customer or an existing vendor, but you don't need to have both an existing customer and vendor.
 
@@ -496,8 +494,7 @@ Use the Customer/Vendor Consolidations window to create consolidation documents 
 
 #### To consolidate customer and vendor documents
 
-1. Open the Customer/Vendor Consolidations window. 
-(Sales \>\> Transactions \>\> Customer/Vendor Trx.)
+1. Open the Customer/Vendor Consolidations window. (Sales \>\> Transactions \>\> Customer/Vendor Trx.)
 
     ![91622f2488ad897b2334f1007d0d7e36.jpg](media/91622f2488ad897b2334f1007d0d7e36.jpg)
 
@@ -507,11 +504,11 @@ Use the Customer/Vendor Consolidations window to create consolidation documents 
 
 4. Verify the default currency ID that was set up in the Customer/Vendor Relationships window. You can enter or select the functional currency even if it isn't the default currency.
 
-If you select the functional currency, you can view all the transactions including transactions entered in the alternate currency. For more information on setting up the default currency for the customer/vendor relationship, refer to *Creating customer/vendor relationships* .
+    If you select the functional currency, you can view all the transactions including transactions entered in the alternate currency. For more information on setting up the default currency for the customer/vendor relationship, refer to *Creating customer/vendor relationships* .
 
 5. Accept the default transfer date or enter a different date. If you enter the date, it must be in an open period in Receivables Transaction Entry and Payables Transaction Entry.
 
-If you have Multicurrency Management registered, the sub-module revaluation must be greater than the last revaluation date for both the customer and vendor. For more information, refer to the Multicurrency Management documentation.
+    If you have Multicurrency Management registered, the sub-module revaluation must be greater than the last revaluation date for both the customer and vendor. For more information, refer to the Multicurrency Management documentation.
 
 6. Mark the Transfer to Payables, Transfer to Receivables, or Consolidate Documents option. If you mark the transfer to Payables option, the Receivables documents will be displayed, and if you mark the Transfer to Receivables option, the Payables documents will be displayed. If you mark the Consolidate Documents option, both Payables and Receivables documents will be displayed.
 
@@ -529,8 +526,7 @@ You can link the selected receivables consolidation document to the correspondin
 
 #### To use the cross-module link
 
-1. Open the Receivables Transaction Inquiry - Customer window. 
-(Sales \>\> Inquiry \>\> Transaction by Customer)
+1. Open the Receivables Transaction Inquiry - Customer window. (Sales \>\> Inquiry \>\> Transaction by Customer)
 
 2. Select a consolidation document. Consolidation documents will have the prefix that you assigned in the Customer/Vendor Consolidation Setup window.
 
@@ -578,10 +574,9 @@ Use the Refund Checks Setup window to specify your preferences and default entri
 
 #### To set up refund checks
 
-1. Open the Refund Checks Setup window. 
-(Sales \>\> Setup \>\> Refund Checks)
+1. Open the Refund Checks Setup window. (Sales \>\> Setup \>\> Refund Checks)
 
-    ![efca27cbe1af7aef5c52b7ee89424bfb.jpg](media/efca27cbe1af7aef5c52b7ee89424bfb.jpg)
+   ![efca27cbe1af7aef5c52b7ee89424bfb.jpg](media/efca27cbe1af7aef5c52b7ee89424bfb.jpg)
 
 2. Enter or select a default suspense account number, which is an offset account for your Accounts Receivable and Accounts Payable amounts. The account you enter or select must be a posting account, and must be set up to use all the currencies in which you're writing checks.
 
@@ -607,7 +602,7 @@ Use the Refund Checks Setup window to specify your preferences and default entri
 
     - If you want vendor IDs to be the next available vendor ID, select Vendor ID=Next Default Vendor ID. You also must enter a default vendor ID to use, which increments by one.
 
-The information that you enter here will replace any information that might have been entered in the same field in the Customer/Vendor Consolidation Setup window.
+    The information that you enter here will replace any information that might have been entered in the same field in the Customer/Vendor Consolidation Setup window.
 
 12. Choose OK to save your changes and close the window.
 
@@ -625,8 +620,7 @@ If you're using national accounts, you have two options for mapping customer IDs
 
 #### To map customer cards to vendor cards
 
-1. Open the Customer/Vendor Relationships window. 
-(Sales \>\> Cards \>\> Customer/Vendor)
+1. Open the Customer/Vendor Relationships window. (Sales \>\> Cards \>\> Customer/Vendor)
 
 2. Enter or select the customer ID for the customer card you're mapping to a vendor card. If you enter a new customer ID, the Customer Maintenance window will open, where you can enter information for that customer.
 
@@ -664,15 +658,15 @@ If you're using national accounts, the documents that will appear in the Edit Re
 
 If the child customer of a national account is listed in the Create Refund Checks window, the vendor ID that will be displayed for the customer depends on whether the parent and child customers of the national account have been assigned to vendor IDs, and whether the Default Parent's Vendor for Children's Refund Checks option is marked for the national account in the National Account Maintenance window. The following table lists the vendor ID that will be displayed.
 
-| **Parent customer**     | **Child customer**      | **Default parent's vendor for children's refund checks option** | **Vendor ID displayed**       |
-|-------------------------|-------------------------|-----------------------------------------------------------------|-------------------------------|
-| Mapped to vendor ID     | Not mapped to vendor ID | Marked                                                          | Vendor ID for parent customer |
-| Mapped to vendor ID     | Mapped to vendor ID     | Not marked                                                      | Vendor ID for child customer  |
-| Mapped to vendor ID     | Not mapped to vendor ID | Not marked                                                      | No vendor ID displayed        |
-| Not mapped to vendor ID | Mapped to vendor ID     | Marked                                                          | No vendor ID displayed        |
-| Not mapped to vendor ID | Not mapped to vendor ID | Marked                                                          | No vendor ID displayed        |
-| Not mapped to vendor ID | Mapped to vendor ID     | Not marked                                                      | Vendor ID for child customer  |
-| Not mapped to vendor ID | Not mapped to vendor ID | Not marked                                                      | No vendor ID displayed        |
+| **Parent customer** | **Child customer** | **Default parent's vendor for children's refund checks option** | **Vendor ID displayed** |
+|--|--|--|--|
+| Mapped to vendor ID | Not mapped to vendor ID | Marked | Vendor ID for parent customer |
+| Mapped to vendor ID | Mapped to vendor ID | Not marked | Vendor ID for child customer |
+| Mapped to vendor ID | Not mapped to vendor ID | Not marked | No vendor ID displayed |
+| Not mapped to vendor ID | Mapped to vendor ID | Marked | No vendor ID displayed |
+| Not mapped to vendor ID | Not mapped to vendor ID | Marked | No vendor ID displayed |
+| Not mapped to vendor ID | Mapped to vendor ID | Not marked | Vendor ID for child customer |
+| Not mapped to vendor ID | Not mapped to vendor ID | Not marked | No vendor ID displayed |
 
 If a vendor ID is associated with a parent customer, a P will appear after the vendor ID.
 
@@ -696,8 +690,7 @@ If you choose to select a range of credit balance customers, when you select the
 
 #### To create refund checks
 
-1. Open the Create Refund Checks window. 
-(Sales \>\> Transactions \>\> Refund Checks)
+1. Open the Create Refund Checks window. (Sales \>\> Transactions \>\> Refund Checks)
 
 2. Enter or select a payables computer check batch ID to include the refund check payments in.
 
@@ -707,9 +700,9 @@ If you choose to select a range of credit balance customers, when you select the
 
 5. Select the customers to calculate balances for.
 
-**Customer** Select the customer to calculate balances for if you marked the Create Refund for Specific Documents option.
+    - **Customer** Select the customer to calculate balances for if you marked the Create Refund for Specific Documents option.
 
-**Customers** Select a range of customers to calculate balances for if you marked the Create Refund for Credit Balance Customers option.
+    - **Customers** Select a range of customers to calculate balances for if you marked the Create Refund for Credit Balance Customers option.
 
 6. Enter an amount in the Minimum Credit Balance Required field.
 
@@ -719,13 +712,13 @@ If you choose to select a range of credit balance customers, when you select the
 
     - If you marked the Create Refund Checks for Credit Balance Customers option in step 4, the customers that match the search and calculation criteria will be displayed in the scrolling window, along with the refund check amount. You can select a customer in the scrolling window and choose the Customer ID link to open the Edit Refund Checks window, where you can mark and unmark the credit documents to create refund checks for. Click OK to save your changes and close the Edit Refund Checks window. The customer and associated refund check amount will be displayed in the scrolling window in the Create Refund Checks window.
 
-If a customer is on hold, a message will be displayed and you'll have the option to create a refund check for that customer. You must enter a password to override the hold if a password was entered in the Remove Customer Hold field in the Receivables Management Setup window.
+    If a customer is on hold, a message will be displayed and you'll have the option to create a refund check for that customer. You must enter a password to override the hold if a password was entered in the Remove Customer Hold field in the Receivables Management Setup window.
 
 8. If a customer ID that's displayed in the Create Refund Checks window isn't mapped to a vendor ID, you can create a new vendor to assign the customer to. Select the customer ID and choose Create Vendor. The Vendor Maintenance window will open, where you can enter information for the vendor you're creating.
 
-If a customer ID that's displayed in the window is the child customer of a national account, you can enter a new vendor ID in the Vendor ID column and the Vendor Maintenance window will open.
+    If a customer ID that's displayed in the window is the child customer of a national account, you can enter a new vendor ID in the Vendor ID column and the Vendor Maintenance window will open.
 
-You also can use the Customer/Vendor Relationships window to map child customers to vendor IDs. See *Mapping customer cards to vendor cards* for more information.
+    You also can use the Customer/Vendor Relationships window to map child customers to vendor IDs. See *Mapping customer cards to vendor cards* for more information.
 
 9. If you don't want a refund check to be processed for a customer card that's displayed in the scrolling window, select the card and choose Remove. Any documents that were applied during the calculation process will be unapplied.
 
@@ -735,25 +728,29 @@ You also can use the Customer/Vendor Relationships window to map child customers
 
 12. To change the refund amount for a document, enter the new amount in the Refund Amount column.
 
-To exclude a document from being included in the customer's refund amount, unmark the check box. Unmarked documents will not be applied during the refund checks apply and posting processes.
+    To exclude a document from being included in the customer's refund amount, unmark the check box. Unmarked documents will not be applied during the refund checks apply and posting processes.
 
-Choose OK to save your changes and close the window. The Create Refund Checks window will be redisplayed.
+    Choose OK to save your changes and close the window. The Create Refund Checks window will be redisplayed.
 
 13. Choose Print to open the Refund Checks Print Options window and select from the following options.
 
-**Customer/Vendor List** Mark All to print the list for all customers, including customers mapped to vendor IDs that are on hold or inactive. Mark Vendors with Errors Only to print the list for customers who haven't been mapped to vendor IDs, or that have vendor IDs that meet one of the following criteria.
+    - **Customer/Vendor List**  
 
-- Vendor ID is on hold
+        Mark All to print the list for all customers, including customers mapped to vendor IDs that are on hold or inactive. Mark Vendors with Errors Only to print the list for customers who haven't been mapped to vendor IDs, or that have vendor IDs that meet one of the following criteria.
 
-- Vendor ID is inactive
+        - Vendor ID is on hold
 
-- Invalid bank information has been entered for the vendor ID
+        - Vendor ID is inactive
 
-- Vendor ID does not exist
+        - Invalid bank information has been entered for the vendor ID
 
-**Refund Checks Edit List** Print the Refund Checks Edit List.
+        - Vendor ID does not exist
 
-1. Choose Process to transfer the receivables balances to Payables Management. Depending on your setup options, posting journals might be printed.
+    - **Refund Checks Edit List**  
+
+        Print the Refund Checks Edit List.
+
+14. Choose Process to transfer the receivables balances to Payables Management. Depending on your setup options, posting journals might be printed.
 
 A receivables debit document will be generated in Receivables Management for each customer and a payables miscellaneous charge document will be generated in Payables Management for each vendor.
 
@@ -779,7 +776,8 @@ A vendor can be considered invalid for any of the following reasons:
 
 Only valid vendor cards are processed in the refund checks batch.
 
-*When you integrate refund checks with EFT, the PMEFT.dic file must be installed on the workstation that is being used to process refund checks. Refer to the eBanking documentation for further information.*
+> [!NOTE]
+> When you integrate refund checks with EFT, the PMEFT.dic file must be installed on the workstation that is being used to process refund checks. Refer to the eBanking documentation for further information.
 
 ## Chapter 23: Transaction maintenance
 
@@ -805,7 +803,7 @@ This information is divided into the following sections:
 
 - *Writing off outstanding credit or debit amounts*
 
-#### Handling NSF checks
+### Handling NSF checks
 
 You can process a payment as having non-sufficient funds (NSF), and to assess a charge for the check. The NSF charge is a service charge amount for checks having non-sufficient funds. You can assess NSF charges only for payments. The default NSF charge amount is entered in the Receivables Management Setup window.
 
@@ -817,8 +815,7 @@ If you void a multicurrency document, any realized gains or losses that original
 
 #### To handle an NSF check
 
-1. Open the Receivables Posted Transaction Maintenance window. 
-(Sales \>\> Transactions \>\> Posted Transactions)
+1. Open the Receivables Posted Transaction Maintenance window. (Sales \>\> Transactions \>\> Posted Transactions)
 
     ![e639181598d120a6361701c309eed2e7.jp](media/e639181598d120a6361701c309eed2e7.jpg)
 
@@ -830,9 +827,9 @@ If you void a multicurrency document, any realized gains or losses that original
 
     ![586b43b1da4b84e6722d4f6151174a13.jpg](media/586b43b1da4b84e6722d4f6151174a13.jpg)
 
-The payment is unapplied and distributions are reversed. Using the NSF Debit Charge window, you can change the default charge for the NSF check, and view the document number assigned to the debit memo that's created.
+    The payment is unapplied and distributions are reversed. Using the NSF Debit Charge window, you can change the default charge for the NSF check, and view the document number assigned to the debit memo that's created.
 
-If you're using Multicurrency Management and you assess an NSF charge on a multicurrency cash receipt, any realized gains or losses that were posted when the cash receipt was applied also are reversed.
+    If you're using Multicurrency Management and you assess an NSF charge on a multicurrency cash receipt, any realized gains or losses that were posted when the cash receipt was applied also are reversed.
 
 5. Choose OK. The Receivables Posted Transaction Maintenance window is redisplayed and cleared. You can handle additional NSF payments or close the window.
 
@@ -881,8 +878,7 @@ If a realized gain or loss is recognized as a result of euro conversion and you 
 
 #### To void a posted transaction
 
-1. Open the Receivables Posted Transaction Maintenance window. 
-(Sales \>\> Transactions \>\> Posted Transactions)
+1. Open the Receivables Posted Transaction Maintenance window. (Sales \>\> Transactions \>\> Posted Transactions)
 
 2. Enter or select a customer ID.
 
@@ -902,8 +898,7 @@ You can waive a posted finance charge transaction. Documents are not transferred
 
 #### To waive a finance charge
 
-1. Open the Receivables Posted Transaction Maintenance window. 
-(Sales \>\> Transactions \>\> Posted Transactions)
+1. Open the Receivables Posted Transaction Maintenance window. (Sales \>\> Transactions \>\> Posted Transactions)
 
 2. Enter or select a customer ID.
 
@@ -945,10 +940,9 @@ Use the Edit Receivables Transaction window to change the discount date, due dat
 
 #### To edit discount date and reference information
 
-1. Open the Edit Receivables Transaction window. 
-(Sales \>\> Transactions \>\> Edit Transaction Information)
+1. Open the Edit Receivables Transaction window. (Sales \>\> Transactions \>\> Edit Transaction Information)
 
-    ![da196509e1d0f1b7d4121cacec00db80.jpg](media/da196509e1d0f1b7d4121cacec00db80.jpg)
+   ![da196509e1d0f1b7d4121cacec00db80.jpg](media/da196509e1d0f1b7d4121cacec00db80.jpg)
 
 2. Enter or select a customer ID.
 
@@ -964,12 +958,12 @@ Use the Receivables Transaction Entry window to correct or delete a transaction.
 
 Errors often are identified on transaction edit lists. If the error involves an unbalanced distribution, you'll receive an alert message that the transaction can't be posted because the debits and credits are unequal.
 
-*You can't delete an unposted transaction if the Delete Unposted Printed Documents option is unmarked in the Receivables Management Setup window, and if the document has already been printed. See Deleting an unposted printed transaction for more information.*
+> [!NOTE]
+> You can't delete an unposted transaction if the Delete Unposted Printed Documents option is unmarked in the Receivables Management Setup window, and if the document has already been printed. See Deleting an unposted printed transaction for more information.
 
 #### To correct or delete an unposted transaction
 
-1. Open the Receivables Transaction Entry window. 
-(Sales \>\> Transactions \>\> Transaction Entry)
+1. Open the Receivables Transaction Entry window. (Sales \>\> Transactions \>\> Transaction Entry)
 
 2. Enter or select the information, including the document number associated with the erroneous transaction.
 
@@ -977,9 +971,9 @@ Errors often are identified on transaction edit lists. If the error involves an 
 
     - To correct the transactions, make any corrections by replacing the incorrect information with correct information. Depending on your change, you might need to modify the distributions or commissions that were originally calculated. See *Modifying transaction distributions* or *Editing a commission amount* for more information.
 
-To post the transaction, you must post the batch using the Receivables Batch Entry window. See *Receivables Management posting* for more information.
+        To post the transaction, you must post the batch using the Receivables Batch Entry window. See *Receivables Management posting* for more information.
 
-- To delete the transaction, choose Delete. Any applied amounts also are unapplied.
+    - To delete the transaction, choose Delete. Any applied amounts also are unapplied.
 
 4. Choose Save. To view a corrected transaction, print an edit list by redisplaying the transaction and choosing File \>\> Print.
 
@@ -993,8 +987,7 @@ You can't delete a transaction after it has been printed if the Delete Unposted 
 
 1. In the Receivables Transaction Entry window, assign the transaction to a batch and close the window.
 
-2. Open the Receivables Management Setup window. 
-(Sales \>\> Setup \>\> Receivables)
+2. Open the Receivables Management Setup window. (Sales \>\> Setup \>\> Receivables)
 
 3. Mark the Delete Unposted Printed Document option and click OK.
 
@@ -1012,14 +1005,15 @@ Use the Cash Receipts Entry window to correct or delete an unposted cash receipt
 
 #### To correct or delete an unposted cash receipt
 
-1. Open the Cash Receipts Entry window. 
-(Sales \>\> Transactions \>\> Cash Receipts)
+1. Open the Cash Receipts Entry window. (Sales \>\> Transactions \>\> Cash Receipts)
 
 2. Enter or select the receipt to correct.
 
 3. Select one of the following options:
 
-    - To correct the cash receipt, replace the incorrect information with correct information. Depending on your changes, you might need to modify the distributions or apply additional amounts. To change the amount of the cash receipt to an amount that's less than the amount already applied, you must unapply the original cash receipt, change the amount, and reapply.
+    - To correct the cash receipt, replace the incorrect information with correct information.  
+
+      Depending on your changes, you might need to modify the distributions or apply additional amounts. To change the amount of the cash receipt to an amount that's less than the amount already applied, you must unapply the original cash receipt, change the amount, and reapply.
 
     - To delete the cash receipt, choose Delete. Any applied amounts also are unapplied.
 
@@ -1033,8 +1027,7 @@ Use the Write Off Documents window to write off outstanding document credit or d
 
 #### To write off outstanding credit or debit amounts
 
-1. Open the Write Off Documents window. 
-(Sales \>\> Routines \>\> Write Off Documents)
+1. Open the Write Off Documents window. (Sales \>\> Routines \>\> Write Off Documents)
 
     ![7e6639d4c44c587c8c3e7a51f73aeb6d.jpg](media/7e6639d4c44c587c8c3e7a51f73aeb6d.jpg)
 
