@@ -281,7 +281,7 @@ A Payroll Vendor Setup report can be printed from this window. This report conta
 
 Use the Posting Setup window to specify which pre-posting reports print after calculation separately from the reports which print during the posting process. The user can differentiate between how the system prints the pre-posting report from the posting report. To open this window, click the **Administration** series button, click **Posting** on the Setup content pane and then click **Posting**.
 
-![PS.jpg](media/PS.jpg)
+![Posting Setup window ](media/PS.jpg)
 
 ### Setup for Multiple Account Distributions
 
@@ -301,7 +301,7 @@ The distributions created are based on the Account setup for the particular corr
 
 Many methods are used to calculate overtime hours and overtime pay rates to apply to those hours. The methods are framed by federal law, state law, corporate policies, collective bargaining agreements and rules according to certain positions and employee classifications. To open the Calculation Method Setup window, click the **HR and Payroll** series button and then click **Overtime Methods** on the Setup content pane.
 
-![CMS.jpg](media/CMS.jpg)
+![Calculation Method Setup window](media/CMS.jpg)
 
 Overtime Rate Manager is used to:
 
@@ -410,17 +410,19 @@ The Calculation Method window allows further restrictions to the calculation met
 
 - Select one of the following items to base exception upon:
 
-o Department Exceptions o Position Exceptions o Shift Exceptions
+  - Department Exceptions
+  - Position Exceptions
+  - Shift Exceptions
 
 In the following example, the calculation method is set up to include all selected Pay Code Hours and Dollars excluding payroll transactions where the Department is ADMN. When the transaction Department is ADMN the calculation method includes only the Dollars from that transaction when calculating the overtime rate.
 
-![CMSS.jpg](media/CMSS.jpg)
+![Calculation Method window again](media/CMSS.jpg)
 
 ### Overtime Rate Manager Options
 
 The Overtime Rate Manager Options window extends the functionality provided in the Overtime Rate Manager by allowing the overtime average to be calculated by only transactions within a batch or across all batches in the current build. To open this window, click the **HR and Payroll** series button and then click **Overtime Options** on the Setup content pane.
 
-![ORMO.jpg](media/ORMO.jpg)
+![Overtime Rate Manager Options window](media/ORMO.jpg)
 
 The standard Overtime Rate Manager Calculation uses all transactions across all batches in the current build. If the Batch Only Average Calculation option is selected on the ORM Options window, the overtime average is calculated based only on transactions within the same batch as the overtime transaction being calculated.
 
@@ -430,22 +432,22 @@ Fabrikam, Inc. uses a blended overtime methodology to determine overtime rates. 
 
 The Pay Code Setup window allows the user to determine the pay factor associated with overtime and how the calculation for overtime will be performed. In this example showing one of Fabrikam’s choices, the pay factor for the pay code OVER is set to 0.00. When the pay factor on the Pay Code Setup window is less than or equal to 1, this pay factor is added to the factor found on the Calculation Method window. Next, the user must attach one or more calculation methods using the Pay Code Options window. This is specified in the Pay Code Setup window (Microsoft Dynamics GP \> Tools \> Setup \> Payroll \> Pay Code), as shown in the following illustration.
 
-![PCS.jpg](media/PCS.jpg)
+![Pay Code Setup window](media/PCS.jpg)
 
 The Pay Code Options window includes functionality for Payroll Extensions and for Advanced Payroll. For this example, the fields applicable to blended overtime are the two Calculation Method fields. These two fields are active only if the selected pay code has an associated pay type of overtime or double time. Use the lookup button to select the appropriate Calculation Method, in this example OT. This is specified in the Pay Code Options window (Microsoft Dynamics GP \> Tools \> Setup \> Payroll \> Pay Code \> GoTo \>
 Pay Code Options), as shown in the following illustration.
 
-![PCOO.jpg](media/PCOO.jpg)
+![Pay Code Options window](media/PCOO.jpg)
 
 Fabrikam has chosen to apply a factor of 1.50 to this particular calculation method. In addition, they determined that of the pay codes
 available, BONS, COMM, HOUR, OVER, SICK and VACN would be used to determine the average. As indicated in the illustration below, the
 dollars associated with each pay code will be used to calculate the average,but only the hours for the pay codes HOUR, OVER and VACN will be used.This is specified in the Calculation Method Setup window (Microsoft Dynamics GP \> Tools \> Setup \> Payroll \> Overtime Methods), as shown in the following illustration.
 
-![/CMS.jpg](media/CMS.jpg)
+![Calculation Method Setup window](media/CMS.jpg)
 
 To enter the time for this example, in the Payroll Transaction Entry window, Fabrikam will enter at least two transactions. One or more entries will be for straight time worked (HOUR, SICK, VACN), and there will be another entry for overtime hours.
 
-![PTE.jpg](media/PTE.jpg)
+![Payroll Transaction Entry window](media/PTE.jpg)
 
 Fabrikam can choose other combinations of pay factors in the Pay Code Setup window and the factor in the Calculation Method window depending on their particular business practices. If necessary more than one Calculation Method can be assigned to the overtime pay code, which causes the results of each Calculation Method assigned to be added together for a total overtime rate.
 
@@ -453,7 +455,7 @@ Fabrikam can choose other combinations of pay factors in the Pay Code Setup wind
 
 Use the Pay Code Options Setup window to enter Linked Pay Codes and their associated Pay Percentages or Minimum Amounts, enter AddOn Codes and Calculation Methods to Pay Codes, to exclude hours from payroll accruals, to select pay codes that will not post hours to the General Ledger, to calculate FTE by pay code and to enter whether a pay code is considered productive or non-productive time. The Pay Code Options window includes functionality for Payroll Extensions and for Advanced Payroll. The functionality specific to Payroll Extensions is discussed here.
 
-![PCOO.jpg](media/PCOO.jpg)
+![Pay Code Options Setup window](media/PCOO.jpg)
 
 - **Pay Code**
   Displays the pay code that you entered or selected in the Pay Code Setup window.
@@ -483,7 +485,7 @@ Use the Pay Code Options Setup window to enter Linked Pay Codes and their associ
 
 Use the Deduction Setup window to enter and maintain company deduction in arrears records to use as default entries for setting up employee deductions. To open this window, click the **HR and Payroll** series button and then click **Deduction Setup** on the Setup content pane.
 
-![DSS.jpg](media/DSS.jpg)
+![Deduction Setup window (media/DSS.jpg)
 
 Use the Deductions In Arrears feature to track deduction balances when the employee's net pay cannot meet all deductions, or to collect mandatory arrears for employee deductions where the employee does not receive a pay check. The Deduction In Arrears feature is available for only standard deduction types. This feature is unavailable to use with garnishment deduction types.
 
@@ -538,7 +540,7 @@ The Employee Pay Code Options window also allows an add-on code to be specified 
 
 To open the Employee Pay Code Options window, click the **HR and Payroll** series button, click **Pay Code** on the Cards content pane, then click the **Go To** button and finally click **Employee Pay Code Options**.
 
-![PCOO.jpg](media/PCOO.jpg)
+![Employee Pay Code Options window](media/PCOO.jpg)
 
 When Payroll Transactions are created with this Employee and Pay Code, the pay rate is adjusted based on that Calculation Method. If there is a Calculation Method assigned to this Pay Code at the Pay Code Setup level when the Employee Pay Code record is created, the
 
@@ -565,7 +567,7 @@ Employee Pay Code Option records are created when an Employee Class ID is assign
 
 Use the Employee Deduction Maintenance window to enter and maintain employee>   deduction records. To open this window, click the **HR and Payroll** series button and then click **Deduction** on the Setup content pane.
 
-![DM.jpg](media/DM.jpg)
+![Employee Deduction Maintenance window](media/DM.jpg)
 
 Use the Employee Deduction Maintenance window to enter Payroll deduction information for a specific employee. For example, the amount an employee wants deducted for charitable contributions or union dues can be entered. A deduction can be set up as a percentage of gross, net, or earnings wages, as a fixed amount, or as an amount per unit of wages.
 
@@ -594,7 +596,7 @@ Refer to the Payroll / Human Resources printable manuals for the other deduction
 
 Use the Arrear Transactions window to edit or add new uncollected deductions in arrears. To open this window, click the **HR and Payroll** series button and then click **Arrears Transactions** on the Cards content pane.
 
-![AR.jpg](media/AR.jpg)
+![Arrear Transactions window](media/AR.jpg)
 
 A new arrear adjustment for an uncollected deduction can be created when it is paid by the employee outside of a pay check, or if it is forgiven by the employer, or if it needs to be edited or removed. The Arrears Amount can be edited or the record can be deleted to handle these situations. The uncollected deductions in arrears amounts can be increased or reduced or the entire arrears record can be deleted.
 
@@ -636,7 +638,7 @@ The View option defaults to Open. However, the option exists to view either Open
 
 The Arrear Transaction Summary window allows the current or all arrears for an employee to be viewed, as in the Arrear Transactions window, but they are summarized by the deductions. To open this window, click the **HR and Payroll** series button and then click **Arrears Transactions** on the Cards content pane, then click **Go To** on the Arrear Transactions window, and then click **Arrear Transaction Summary.**
 
-![ARS.jpg](media/ARS.jpg)
+![Arrear Transactions Summary window](media/ARS.jpg)
 
 The scrolling window allows multiple sorting options by clicking on the column headings. Both ascending and descending sorts are available for these columns, the current sort indicated by the arrow on the column heading pointing up or down.
 
@@ -644,7 +646,7 @@ The scrolling window allows multiple sorting options by clicking on the column h
 
 The Arrears Transaction Activity GoTo option is available when a record/row is selected in the scrolling window and is used to view all the activity of a specific arrear transaction. To open this window, click the **HR and Payroll** series button and then click **Arrears Transactions** on the Cards content pane, then click **Go To** on the Arrear Transactions window, and then click **Arrear Transaction Activity.**
 
-![ATA.jpg](media/ATA.jpg)
+![Arrear Transactions Activity window](media/ATA.jpg)
 
 A record/row can be selected by clicking on the created date or the row. New activity arrears records can be created. The scrolling window allows multiple sorting options by clicking on the column headings. Both ascending and descending sorts are available for these columns, the current sort indicated by the arrow on the column heading pointing up or down.
 
@@ -783,7 +785,7 @@ This chapter describes how to use the Mandatory Arrears window to process the ma
 
 Deduction In Arrears allows mandatory arrears to be captured for collection during the pay run for an employee. Use the Mandatory Arrears window to process the mandatory arrears. To open this window, click the **HR and Payroll** series button, and click **Mandatory Arrears** on the Transactions content pane.
 
-![MA.jpg](media/MA.jpg)
+![Mandatory Arrears](media/MA.jpg)
 
 The Mandatory Arrears feature is used for a standard deduction like health insurance that is a required per pay period deduction even though the employee does not receive a pay check for that pay period.
 
