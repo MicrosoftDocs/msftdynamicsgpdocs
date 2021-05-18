@@ -826,8 +826,6 @@ The scrolling window in the Calculate Arrears section of the Mandatory Arrears w
 
 By selecting or deselecting the Include \$0.00 option, it further expands or restricts the Mark All selection. Mandatory Arrears functionality only supports Fixed Amount deductions.
 
-### Summary
-
 This chapter explains how to use the Mandatory Arrears window to process the mandatory arrears.
 
 Some key points to remember from this course include:
@@ -838,63 +836,68 @@ Some key points to remember from this course include:
 ### Overtime Rate Manager Setup Examples and Calculations
 
 
-With Overtime Rate Manager (ORM) in Microsoft Dynamics GP gives customers the ability to calculate a blended overtime rate to pay their employees with.  This meets requirements for FLSA, Fair Labor Standards.
-Many times in support we get questions on how to set this up.  Below I have provided you some basic examples of a setup and also the calculation we use to back into these figures.
-One with overtime, and one with double overtime, bonus and shift pay.  These are just examples, and guidelines for you to follow as you start to use this product, the system is more rules based in this area and your setup may fluctuate based off your need of calculation.
-It is very important when working with overtime rate manager that you know the rate that was keyed into the payroll transaction, as you can see examples below, once you get to the calculate checks report it shows the BLENDED rate, not the actual rate that is keyed into the system and that seems to confuse a lot of users.
+With Overtime Rate Manager (ORM), you can calculate a blended overtime rate to pay employees with. This meets requirements for FLSA, Fair Labor Standards.
+Many times in support we get questions on how to set this up. In the following sections, we provide some basic examples of a setup and also the calculation we use to back into these figures. One with overtime, and one with double overtime, bonus and shift pay.  
+
+These are just examples, and guidelines for you to follow as you start to use this product, the system is more rules based in this area and your setup may fluctuate based off your need of calculation.  
+
+It is very important when working with overtime rate manager that you know the rate that was keyed into the payroll transaction, as you can see examples below, once you get to the calculate checks report it shows the BLENDED rate, not the actual rate that is keyed into the system and that seems to confuse a lot of users.  
 
 
-**Overtime example #1:**
+#### Overtime example 1
+
 1 hour of OT---40 reg hours at 39.47 and bonus  pay of 166.86
 40.00 * 39.47=1578.80
 1.00 * 39.47 = 39.47   
 Blended rate is total wages / hours to get average
 1578.80 + 39.47+ bonus pay 166.86=1785.13 / 41.00  =43.54  this is my blended rate
-The overtime premium for this employee is  43.54 *.5 = 21.77
-Then you take this times your OT hours in this example  1 * 21.77 = 21.77 this is your premium
+The overtime premium for this employee is  43.54 \*.5 = 21.77
+Then you take this times your OT hours in this example  1 \* 21.77 = 21.77 this is your premium
 The employee’s gross pay is 1578.80 + 39.47+ bonus pay 166.86 + 21.77= 1806.90, matches calc checks
 If you need to back into 1806.90
 It would be 1806.90-1578.80  -166.86=61.24/ 1.00=61.24 per the OT rate on calc checks
 
-![Form](media/ORM1.jpg)
+![Form ORM1](media/ORM1.jpg)
 
 
-**Overtime example #2: Double Time**
+#### Overtime example 2: Double Time
 
 1 hour of OT, 1 hour DT , 40 reg and bonus pay of 166.86
 40.00 * 39.47=1578.80
 1.00 * 39.47 = 39.47   
 1.00 * 39.47 = 39.47   
-**Notice how the blended rate did not change as in our DT calc method we are NOT including the prior hours, just DT straight at double time …it is not blended or included in the OT blend.
+
+Notice how the blended rate did not change as in our DT calc method we are NOT including the prior hours, just DT straight at double time …it is not blended or included in the OT blend.
 
 Blended rate is total wages / hours to get average this would be the same as DT is not in the reg. OT code nor blended 1578.80 + 39.47 bonus  pay 166.86=1785.13 / 41.00  =43.54  this is my blended rate
-The overtime premium for this employee is  43.54 *.5 = 21.77
-Then you take this times your OT hours 1. * 21.77 = 21.77 this is your premium
+The overtime premium for this employee is  43.54 \*.5 = 21.77
+Then you take this times your OT hours 1. \* 21.77 = 21.77 this is your premium
 The employees gross pay is 1578.80 + 39.47+ bonus  pay 166.86 + 21.77 + 78.94 (DT)= 1885.84 matches calc checks
 
-![Form](media/ORM2.jpg)
+![Form ORM2](media/ORM2.jpg)
 
 
 
-**Overtime example #3: Overtime and Double Time**
+#### Overtime example 3: Overtime and Double Time
 
 14 hour of OT, 15 hour DT , 40 reg and bonus  pay of 177.63
 40.00 * 39.47=1578.80
 14.00 * 39.47 = 552.58 OT   
 15.00 * 39.47 = 592.05 DT   
-**Notice how the blended rate did not change as in our DT calc method we are NOT including the prior hours, just DT straight at double time …it is not blended
+
+Notice how the blended rate did not change as in our DT calc method we are NOT including the prior hours, just DT straight at double time …it is not blended
 Blended rate is total wages / hours to get average this would be the same as DT is not in the reg. OT code nor blended
 1578.80 + 552.58  bonus  pay 177.63=2309.01 / 54.00  =42.76  this is my blended rate
-The overtime premium for this employee is  42.76 *.5 = 21.38
-Then you take this times your OT hours 14 * 21.38 = 299.32 this is your premium
+The overtime premium for this employee is  42.76 \*.5 = 21.38
+Then you take this times your OT hours 14 \* 21.38 = 299.32 this is your premium
 The employees gross pay is 1578.80 + 552.58+ bonus pay 177.63 + 299.32 +1184.10(DT not blended)= 3792.43 matches calc checks
 
 Use same screen shot setup as ones noted above for setup.
 
-![Form](media/ORM3.jpg)
+![Form ORM3](media/ORM3.jpg)
 
 
-**Overtime example #4: Overtime and Shift Differential**
+#### Overtime example 4: Overtime and Shift Differential
 
 
 The premium or shift is just added to the rate, you would get the same results if you took off  the shift and just updated the OT rate to 16.59  1st calculate checks screen shot ….2nd Screen on bottom  is with shift, same thing
@@ -903,38 +906,38 @@ The premium or shift is just added to the rate, you would get the same results i
 
 Blended rate is total wages / hours to get average
 391.00 + 62.21=453.21 / 31.50  =14.39  this is my blended rate
-The overtime premium for this employee is  14.39 *.5 = 7.195
-Then you take this times your OT hours 3.75 * 7.195 = 26.98 this is your premium
+The overtime premium for this employee is  14.39 \*.5 = 7.195
+Then you take this times your OT hours 3.75 \* 7.195 = 26.98 this is your premium
 The employees gross pay is 391.00 + 62.21 + 26.98 = 480.19
 If you need to back into 480.19
 It would be 480.19-391.00=89.19/ 3.75 =23.78 – 2.50 = 21.28     A penny off,  rounding     
 
-![Form](media/ORM4.jpg)
+![Form ORM4](media/ORM4.jpg)
 
-![Form](media/ORM4A.jpg)
-
-
-**Overtime example #5: Overtime and Salary Pay**
+![Form ORM4A](media/ORM4A.jpg)
 
 
-Employee worked 41 hours, Salary pay code, weekly at 53,000 annually, 1,000 weekly pay
-Gross Salary needs to be 1012.20 for the week
-1000.00/41 hours = 24.39
-24.39*.50 for the premium is 12.20
+#### Overtime example 5: Overtime and Salary Pay
+
+
+Employee worked 41 hours, Salary pay code, weekly at 53,000 annually, 1,000 weekly pay. Gross Salary must be 1012.20 for the week.
+
+- 1000.00/41 hours = 24.39
+- 24.39*.50 for the premium is 12.20
 
 
 ![Form](media/ORM5.jpg)
 
 
 
-Employee worked 44 hours, Salary pay code, weekly at 53,000 annually, 1,000 weekly pay
-Gross Salary needs to be 1045.44 for the week.
-1000.00/44 hours =  22.73
-22.73 *.50 for the premium is 11.37
-11.37 * 4hours = 45.48 overtime
+Employee worked 44 hours, Salary pay code, weekly at 53,000 annually, 1,000 weekly pay. Gross Salary must be 1045.44 for the week.
+
+- 1000.00/44 hours =  22.73
+- 22.73 \*.50 for the premium is 11.37
+- 11.37 \* 4hours = 45.48 overtime
 
 
-![Form](media/ORM5A.jpg)
+![Form ORM5A](media/ORM5A.jpg)
 
 
 
@@ -944,32 +947,35 @@ You would just key a transaction for the hours of overtime.
 
 
 
-![Form](media/ORM5B.jpg)
+![Form ORM5B](media/ORM5B.jpg)
 
 
-**Overtime example #6: Overtime and Minimum Net pay, Tips/Tip Credit**
+#### Overtime example 6: Overtime and Minimum Net pay, Tips/Tip Credit
 
 
 
-The employer pays a cash wage of $2.13 per hour
-claims an FLSA 3(m) tip credit of $5.12
-and the employee works 45 hours in a tipped occupation
-Tips reported : $100.00
-45 hours (total hours worked) × $7.25 (regular rate) = $326.25 (straight time wages due) 
-5 hours (overtime hours) × .5 × $7.25 (regular rate) = $18.13 (overtime wages due) 
-$326.25 (straight time wages due) + $18.13 (overtime wages due) = $344.38 (total wages due) 
+The employer pays a cash wage of $2.13 per hour claims an FLSA 3(m) tip credit of $5.12, and the employee works 45 hours in a tipped occupation.
+
+- Tips reported : $100.00
+- 45 hours (total hours worked) × $7.25 (regular rate) = $326.25 (straight time wages due) 
+- 5 hours (overtime hours) × .5 × $7.25 (regular rate) = $18.13 (overtime wages due) 
+- $326.25 (straight time wages due) + $18.13 (overtime wages due) = $344.38 (total wages due) 
+
 Generally, employers display the “Tip Credit” as a reduced hourly rate to the employee. 
+
 Thus, in this example, they pay the employee $2.13/hour (minimum wage rate of $7.25 – tip credit of $5.12). When a state has a higher minimum wage, generally the tip credit amount stays the same. 
+
 Regardless, this just results in a higher hourly rate for hours worked. The GP minimum wage functionality ensures the employee is paid the minimum amount. 
 The Tip Credit is inherently “included in determining the regular rate” by the nature of the fact that the hourly rate is reduced by the Tip Credit amount. In addition, the tips wages are also included via the ORM Method as is the Minimum Wage amount.
 Below is a spreadsheet that details the calculation for the following scenarios:
-•	No tips
-•	Tips with rate set to $2.13/hour
-•	Tips with rate set to $7.25/hour (breaking out the tip credit separately) 
+
+- No tips
+- Tips with rate set to $2.13/hour
+- Tips with rate set to $7.25/hour (breaking out the tip credit separately) 
 
 The target gross wages is correct if $2.13/hour is used.
 
-![Form](media/ORM6.jpg)
+![Form ORM6](media/ORM6.jpg)
 
 
 
