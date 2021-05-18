@@ -1,6 +1,6 @@
 ---
-title: "Client installation"
-description: "Get Dynamics GP on each user's computer and synchronize data with the server."
+title: "CInstall the Dynamics GP client on subsequent computers"
+description: "Get the Dynamics GP client on each user's computer and synchronize data with the server."
 keywords: "upgrade"
 author: edupont04
 ms.author: edupont
@@ -13,7 +13,7 @@ ms.assetid: 6f2f7511-6871-4d78-a9b9-824e479348e5
 ms.reviewer: 
 ---
 
-# Install Dynamics GP on subsequent computers
+# Install the Dynamics GP client on subsequent computers
 
 Use the information in this chapter to install to Dynamics GP on each client computer. You also can use Dynamics GP Utilities to synchronize the Dynamics GP dictionary on each additional client with your account framework.
 
@@ -61,13 +61,13 @@ To install Dynamics GP (additional computers):
 
     When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 
-| Option                                                                         | What happens                                                                                                             |
-|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
+    | Option | What happens |
+    |--|--|
+    | ![component icon1](media/installed-component.png "Component icon") Run from My computer | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  |
+    | ![component icon2](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features. |  |
+    | ![component icon3](media/not-installed-component.png "Component icon") Not available | Will not install the selected feature or sub–features. |  |
 
-If you've installed a feature in a previous release, use the Select Features window to install that component. See [Dynamics GP features](/dynamics-gp/installation/installing-additional-components#dynamics-gp-features) for a list of Dynamics GP features.
+    If you've installed a feature in a previous release, use the Select Features window to install that component. See [Dynamics GP features](/dynamics-gp/installation/installing-additional-components#dynamics-gp-features) for a list of Dynamics GP features.
 
 7. Specify the folder where the Dynamics GP files should be installed. To select a different folder, click Browse.
 
@@ -83,13 +83,13 @@ If you've installed a feature in a previous release, use the Select Features win
 
 10. If you have selected to install the Service Based Architecture feature, provide the Windows account that will be used as the service account for the Service Based Architecture service.
 
-![login screen for service based architecture service.](media/service-based-architecture-login.png "Login screen")  
+    ![login screen for service based architecture service.](media/service-based-architecture-login.png "Login screen")  
 
-The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
+    The Service Based Architecture feature will create a Windows service on the computer. The Windows account provided will be the identity used for this service.
 
 11. In the Install Program window, click Install.
 
-        The Installation Progress window appears, where you can view the status of the installation.
+    The Installation Progress window appears, where you can view the status of the installation.
 
 12. In the Installation Complete window, click Exit.
 

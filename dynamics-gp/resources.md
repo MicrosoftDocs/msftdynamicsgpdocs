@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/15/2021
+ms.date: 04/26/2021
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -40,7 +40,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
   Includes Install, Upgrade and What's New Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
 - [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)
-- [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
+- [Upgrade Hot Topic](/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
 - [US Taxes](/dynamics/s-e/gp/tugp2018_391)
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
@@ -59,7 +59,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
   Includes Install, Upgrade and What's New Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2018](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
 - [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)  
-- [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
+- [Upgrade Hot Topic](/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
 - [US Taxes](/dynamics/s-e/gp/tugp2018_391)
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
@@ -80,7 +80,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
   Includes Install, Upgrade, and Azure Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_PatchReleases_370)
 - [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)  
-- [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
+- [Upgrade Hot Topic](/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2016_395)  
 - [US Taxes](/dynamics/s-e/gp/tugp2016_390)  
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2016_284)
@@ -95,6 +95,8 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Microsoft Dynamics GP Performance white paper](/dynamics/s-e/gp/mdgp2010_whitepaper_performance)
 
 - [Product Release Downloads for Microsoft SQL Server](https://businesscenter.mbs.microsoft.com/#contentdetail/SQLdownloadOverview)
+
+- [Microsoft Dynamics Database Maintenance Utility](https://mbs2.microsoft.com/fileexchange/?fileID=cde6687d-abb6-46bf-ae0f-6588838cb174)
 
 ## Documentation, resources, printable guides
 

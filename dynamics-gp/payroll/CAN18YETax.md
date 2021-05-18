@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 3/25/2021
+ms.date: 05/17/2021
 ---
 
 # Canadian Payroll 2020 Year-end Update & 2021 Tax Update
@@ -329,6 +329,7 @@ Contribution rates for both employers and employees for 2021 is 5.45%. The follo
 
 - The maximum annual premium amount is \664.34, from \$650.40.
 
+
 > [!NOTE]
 > To make it easier to determine CPP and EI maximums between running a payroll in a new year (2021 maximums) and printing T4's from prior years (2020 maximum), two constants are created each with the year maximum in place.
 >
@@ -336,10 +337,12 @@ Contribution rates for both employers and employees for 2021 is 5.45%. The follo
 > Constant 1 2020 Maximum
 > Constant 2 2021 Maximum
 
+
 To determine when you run a 2021 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
 As an example for the 2021 year numbers if you are using the "lower" value of $12,421.00 when you run 2021 payroll the 2020 maximum will be in place.
 The system expects the amount of $13,808 for Federal Basic personal Amount in the control and then it will pull the 2021 maximum.
 
+If you notice when you run payroll that the CPP is off compared to PDOC and is not calculating the correct amount based on yearly rate.  Verify the Payroll Control Frequency window (Tools \>\> Setup \>\> Payroll-Canada \>\> Control click Frequency button)and make sure the pay periods are setup for the per year option.  For example in year 2020 you may have set it to 26 pay periods, but this did not get changed and it should be 26/27 pay periods for year 2021 this will cause CPP to calculate incorrectly until you update it for the new year.
 #### QPIP
 
 - The QPIP Maximum Annual Insurable Earnings amount increases to \$83,500, from \$78,500.
