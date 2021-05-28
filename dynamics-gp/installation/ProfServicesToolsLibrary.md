@@ -1489,7 +1489,7 @@ module in the Company Copy tool.
   - IV41102  
   - IV00111
 
-- Fixed Assest
+- Fixed Assets
 
   - FA00100  
   - FA00200  
