@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/31/2020
+ms.date: 5/27/2021
 ---
 
 # Professional Services Tools Library
@@ -1489,7 +1489,7 @@ module in the Company Copy tool.
   - IV41102  
   - IV00111
 
-- Inventory
+- Fixed Assets
 
   - FA00100  
   - FA00200  
@@ -1511,6 +1511,7 @@ module in the Company Copy tool.
   - FA41000  
   - FA41100  
   - FA41200
+ Retirement tables FA00700 and FA41700 are not brought over.
 
 - Multicurrency
 
