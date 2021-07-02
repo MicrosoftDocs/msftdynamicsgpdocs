@@ -1,23 +1,19 @@
 ---
 title: "Software lifecycle policy"
 description: "Learn about the lifecycle and product life of Microsoft Dynamics GP."
-author: plindgre
+author: edupont04
 ms.custom: na
 ms.reviewer: edupont
 ms.topic: article
 ms.prod: dynamics-gp
 ms.author: edupont
-ms.date: 09/26/2019
+ms.date: 07/01/2021
 
 ---
 
 # Understanding the Lifecycle Policies for Dynamics GP
 
-Beginning with the October 2019 release, Microsoft Dynamics GP follows the Modern Policy. The Modern Policy offers continuous support and servicing, including bug fixes, new features and the latest tax updates. Customers may stay current by taking at least one of the three yearly planned Dynamics GP releases. Before the October 2019 release, any older release will continue to follow their existing Lifecycle timelines under the Fixed Policy. You can see those dates in the table below. We commit to 3 updates per year with additional updates as needed.  
-
-## Understanding the Lifecycle Policies for Dynamics GP
-
-In October 2019 Microsoft introduced the Modern Lifecycle Policy for Microsoft Dynamics GP. Before this date, the solution was governed by the Fixed Lifecycle Policy. The Modern Policy offers continuous support and servicing, including bug fixes, new features and the latest tax updates. Customers may stay current by taking at least one of the three yearly planned Dynamics GP releases. Before the October 2019 release, any older release will continue to follow their existing Lifecycle timelines under the Fixed Policy. You can see those dates in the table below.  
+In October 2019, Microsoft introduced the Modern Lifecycle Policy for Microsoft Dynamics GP. Before this date, the solution was governed by the Fixed Lifecycle Policy. The Modern Policy offers continuous support and servicing, including bug fixes, new features and the latest tax updates. Customers may stay current by taking at least one of the three yearly planned Dynamics GP releases.  
 
 The following illustration shows the lifecycle of the various versions of Dynamics GP:
 
