@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.topic: article
 ms.prod: dynamics-gp
 ms.author: edupont
-ms.date: 07/01/2021
+ms.date: 07/07/2021
 
 ---
 
@@ -19,31 +19,31 @@ The following illustration shows the lifecycle of the various versions of Dynami
 
 :::image type="content" source="media/gp_versions_lifecycle.png" alt-text="Overview of lifecycles across GP versions.":::
 
-For more information about the lifecycle of the version of Dynamics GP that you are using, see [here](/lifecycle/products/?terms=Dynamics%20GP).  
+The [Lifecycle](/lifecycle/products/?terms=Dynamics%20GP) site shows key information about each version of Dynamics GP. The following sections provide direct links for each listed version.  
 
 ## If your Dynamics GP solution is governed by Fixed Lifecycle
 
 The following older versions of Dynamics GP are governed by the **Fixed Lifecycle Policy**:
 
-| **Product** | **Mainstream support** | **Extended support** |
-|--|--|--|
-| Dynamics GP 2013 and GP 2013 R2 | Ended April 4, 2018 | Extended support ends April 11, 2023 |
-| Dynamics GP 2015 and GP 2015 R2 | Ended April 14, 2020 | Extended support ends April 8, 2025 |
-| Dynamics GP 2016 and GP 2016 R2 | Mainstream support ends July 13, 2021 | Extended support ends July 14, 2026 |
-| Dynamics GP 2018 and GP 2018 R2 | Mainstream support ends January 10, 2023 | Extended support ends January 11, 2028 |
+| **Product** | **Mainstream support** | **Extended support** |Lifecycle definition|
+|--|--|--|-- |
+| Dynamics GP 2013 and GP 2013 R2 | Ended April 4, 2018 | Ends April 11, 2023 |[Dynamics GP 2013](/lifecycle/products/dynamics-gp-2013)/[Dynamics GP 2013 R2](/lifecycle/products/dynamics-gp-2013-r2)|
+| Dynamics GP 2015 and GP 2015 R2 | Ended April 14, 2020 | Ends April 8, 2025 |[Dynamics GP 2015](/lifecycle/products/dynamics-gp-2015)/[Dynamics GP 2015 R2](/lifecycle/products/dynamics-gp-2015-r2)|
+| Dynamics GP 2016 and GP 2016 R2 | Mainstream support ends July 13, 2021 | Ends July 14, 2026 |[Dynamics GP 2016](/lifecycle/products/dynamics-gp-2016)/[Dynamics GP 2016 R2](/lifecycle/products/dynamics-gp-2016-r2)|
+| Dynamics GP 2018 and GP 2018 R2 | Mainstream support ends January 10, 2023 | Ends January 11, 2028 |[Dynamics GP 2018](/lifecycle/products/dynamics-gp-2018)/[Dynamics GP 2018 R2](/lifecycle/products/dynamics-gp-2018-r2)|
 
-Installing any compatible Dynamics GP tax release or hotfix on Dynamics GP 2018 or Dynamics GP 2018 R2 will bring you to at least version 18.2 which enacts the Modern lifecycle policy. There are no tax releases or hotfixes available for Dynamics GP 2018 or Dynamics GP 2018 R2 that would allow you to stay on the fixed lifecycle.
+Installing any compatible Dynamics GP tax release or hotfix on Dynamics GP 2018 or Dynamics GP 2018 R2 will bring you to version 18.2 or later, which enacts the Modern Lifecycle Policy. There are no tax releases or hotfixes available for Dynamics GP 2018 or Dynamics GP 2018 R2 that would allow you to stay on the fixed lifecycle.
 
 ## If your Dynamics GP solution is governed by Modern Lifecycle
 
-The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers continues support and servicing, including bug fixes, new features, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three yearly planned Dynamics GP updates, typically released in June, October, and December. The October update typically delivers new capabilities. The two other updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates.
+The current version of Dynamics GP is governed by the [Modern Lifecycle Policy](/lifecycle/products/dynamics-gp). The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers support and servicing, including bug fixes, new features, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three all-inclusive Dynamics GP updates, typically released in June, October, and December each year. The October update typically delivers new capabilities. The two other updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates.
 
-The following table outlines the update schedule for the three annual updates of Dynamics GP.
+The following table outlines the release schedule for the three committed all-inclusive updates of Dynamics GP each year.
 
 |Milestone |Example date  |Description |
 |---------|---------|---------|
 |June update|June 1 | Tax updates, regulatory updates, hotfixes        |
-|October update|October 1 | Feature update (new capabilities and hotfixes)        |
+|October update|October 1 | New capabilities, hotfixes        |
 |December update|December 1 | Tax updates, regulatory updates, hotfixes        |
 
 <!--
@@ -65,4 +65,4 @@ The following table outlines the update schedule for the three annual updates of
 [Microsoft Lifecycle Policies for Microsoft Dynamics GP](/lifecycle/products/?terms=Dynamics%20GP)  
 [Migrate to Business Central Online from Dynamics GP](/dynamics365/business-central/dev-itpro/administration/migrate-dynamics-gp)  
 [System requirements](../upgrade/system-requirements.md)  
-[Modified Forms and Reports Update Now Required for All Microsoft Dynamics GP Service Pack, Hotfix and Compliance Releases](/dynamics/s-e/gp/hot_topic_mdgp10_modifiedreportsformsupdaterequiredforpatchreleases_407)  
+<!--[Modified Forms and Reports Update Now Required for All Microsoft Dynamics GP Service Pack, Hotfix and Compliance Releases](/dynamics/s-e/gp/hot_topic_mdgp10_modifiedreportsformsupdaterequiredforpatchreleases_407)  -->
