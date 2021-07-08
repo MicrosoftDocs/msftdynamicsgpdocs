@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.topic: article
 ms.prod: dynamics-gp
 ms.author: edupont
-ms.date: 07/07/2021
+ms.date: 07/08/2021
 
 ---
 
@@ -36,7 +36,7 @@ Installing any compatible Dynamics GP tax release or hotfix on Dynamics GP 2018 
 
 ## If your Dynamics GP solution is governed by Modern Lifecycle
 
-The current version of Dynamics GP is governed by the [Modern Lifecycle Policy](/lifecycle/products/dynamics-gp). The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers support and servicing, including bug fixes, new features, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three all-inclusive Dynamics GP updates, typically released in June, October, and December each year. The October update typically delivers new capabilities. The two other updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates.
+The current version of Dynamics GP is governed by the Modern Lifecycle Policy. The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers support and servicing, including bug fixes, new features, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three all-inclusive Dynamics GP updates, typically released in June, October, and December each year. The October update typically delivers new capabilities. The two other updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates.
 
 The following table outlines the release schedule for the three committed all-inclusive updates of Dynamics GP each year.
 
@@ -46,6 +46,7 @@ The following table outlines the release schedule for the three committed all-in
 |October update|October 1 | New capabilities, hotfixes        |
 |December update|December 1 | Tax updates, regulatory updates, hotfixes        |
 
+For more information, see [Modern Lifecycle Policy for Dynamics GP](/lifecycle/products/dynamics-gp).  
 <!--
 ## Microsoft Dynamics GP Servicing
 
