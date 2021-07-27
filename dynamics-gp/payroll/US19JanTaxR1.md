@@ -22,6 +22,7 @@ The fourth tax update for 2021 replaces all previous tax updates. It includes st
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
+
 ## Changes in July Round 4 update
 
 - Idaho
