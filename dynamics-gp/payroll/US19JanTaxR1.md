@@ -8,20 +8,40 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 05/25/2021
+ms.date: 07/26/2021
 ---
 # U.S. 2021 Payroll Tax Update
 
 This tax update applies to:
 
 - Microsoft Dynamics GP on Microsoft SQL Server
-- Microsoft Dynamics GP 2016 on Microsoft SQL Server
 
 This article provides guidance for how to install the 2021 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-The third tax update for 2021 replaces all previous tax updates. It includes state tax table changes that took effect January 1, 2021. We recommend that you install this update as soon as you can for the year 2021.
+The fourth tax update for 2021 replaces all previous tax updates. It includes state tax table changes that took effect July 1, 2021. We recommend that you install this update as soon as you can for the year 2021.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+## Changes in July Round 4 update
+
+- Idaho
+- Kansas
+- New York
+- Yonkers
+
+
+### 2021 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for Idaho
+
+#### Withholding changes for Kansas
+
+#### Withholding changes for New York
+
+#### Withholding changes for Yonkers
+
 
 ## Changes in June Round 3 update
 
