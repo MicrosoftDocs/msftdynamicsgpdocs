@@ -61,6 +61,24 @@ Withholding rates for taxpayers filing as *MAR*
 
 #### Withholding changes for Kansas
 
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 8,000            | 0              | 0%           | 0                  |
+| 8,000       | 38,000           | 0              | 3.10%        | 8,000              |
+| 38,000      | 68,000           | 930.00         | 5.25%        | 38,000             |
+| 68,000      | And Over         | 2,505.00       | 5.70%        | 68,000             |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,500            | 0              | 0%           | 0                  |
+| 3,500       | 18,500           | 0              | 3.10%        | 3,500              |
+| 18,500      | 33,500           | 465.00         | 5.25%        | 18,500             |
+| 33,500      | And Over         | 1252.50        | 5.75%        | 33,500             |
+
 #### Withholding changes for New York
 
 #### Withholding changes for Yonkers
