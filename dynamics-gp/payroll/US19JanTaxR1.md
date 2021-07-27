@@ -36,6 +36,29 @@ The following tax changes are included in this update:
 
 #### Withholding changes for Idaho
 
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 12,550           | 0              | 0%           | 0                  |
+| 12,550      | 14,138           | 0              | 1.000%       | 12,550             |
+| 14,138      | 17,313           | 16.00          | 3.100%       | 14,138             |
+| 17,313      | 18,901           | 114.00         | 4.500%       | 17,313             |
+| 18,901      | 20,489           | 185.00         | 5.500%       | 18,901             |
+| 20,489      | And Over         | 272.00         | 6.500%       | 20,489             |
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 25,100           | 0              | 0%           | 0                  |
+| 25,100      | 28,276           | 0              | 1.000%       | 25,100             |
+| 28,276      | 34,626           | 32.00          | 3.100%       | 28,276             |
+| 34,626      | 37,802           | 229.00         | 4.500%       | 34,626             |
+| 37,802      | 40,978           | 372.00         | 5.500%       | 37,802             |
+| 40,978      | And Over         | 547.00         | 6.500%       | 40,978             |
+
+
 #### Withholding changes for Kansas
 
 #### Withholding changes for New York
