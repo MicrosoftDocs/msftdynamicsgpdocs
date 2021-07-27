@@ -8,20 +8,123 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 05/25/2021
+ms.date: 07/26/2021
 ---
 # U.S. 2021 Payroll Tax Update
 
 This tax update applies to:
 
 - Microsoft Dynamics GP on Microsoft SQL Server
-- Microsoft Dynamics GP 2016 on Microsoft SQL Server
 
 This article provides guidance for how to install the 2021 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-The third tax update for 2021 replaces all previous tax updates. It includes state tax table changes that took effect January 1, 2021. We recommend that you install this update as soon as you can for the year 2021.
+The fourth tax update for 2021 replaces all previous tax updates. It includes state tax table changes that took effect July 1, 2021. We recommend that you install this update as soon as you can for the year 2021.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+
+## Changes in July Round 4 update
+
+- Idaho
+- Kansas
+- New York
+- Yonkers
+
+
+### 2021 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+
+#### Withholding changes for Idaho
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 12,550           | 0              | 0%           | 0                  |
+| 12,550      | 14,138           | 0              | 1.000%       | 12,550             |
+| 14,138      | 17,313           | 16.00          | 3.100%       | 14,138             |
+| 17,313      | 18,901           | 114.00         | 4.500%       | 17,313             |
+| 18,901      | 20,489           | 185.00         | 5.500%       | 18,901             |
+| 20,489      | And Over         | 272.00         | 6.500%       | 20,489             |
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 25,100           | 0              | 0%           | 0                  |
+| 25,100      | 28,276           | 0              | 1.000%       | 25,100             |
+| 28,276      | 34,626           | 32.00          | 3.100%       | 28,276             |
+| 34,626      | 37,802           | 229.00         | 4.500%       | 34,626             |
+| 37,802      | 40,978           | 372.00         | 5.500%       | 37,802             |
+| 40,978      | And Over         | 547.00         | 6.500%       | 40,978             |
+
+
+#### Withholding changes for Kansas
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 8,000            | 0              | 0%           | 0                  |
+| 8,000       | 38,000           | 0              | 3.10%        | 8,000              |
+| 38,000      | 68,000           | 930.00         | 5.25%        | 38,000             |
+| 68,000      | And Over         | 2,505.00       | 5.70%        | 68,000             |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,500            | 0              | 0%           | 0                  |
+| 3,500       | 18,500           | 0              | 3.10%        | 3,500              |
+| 18,500      | 33,500           | 465.00         | 5.25%        | 18,500             |
+| 33,500      | And Over         | 1252.50        | 5.70%        | 33,500             |
+
+
+#### Withholding changes for New York and New York-Yonkers
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 8,500            | 0              | .0400        | 0                  |
+| 8,500       | 11,700           | 340.00         | .0450        | 8,500              |
+| 11,700      | 13,900           | 484.00         | .0525        | 11,700             |
+| 13,900      | 21,400           | 600.00         | .0590        | 13,900             |
+| 21,400      | 80,650           | 1,042.00       | .0597        | 21,400             |
+| 80,650      | 96,800           | 4,579.00       | .0633        | 80,650             |
+| 96,800      | 107,650          | 5,602.00       | .0728        | 96,800             |
+| 107,650     | 157,650          | 6,391.00       | .0778        | 107,650            |
+| 157,650     | 211,550          | 10,281.00      | .0799        | 157,650            |
+| 211,550     | 323,200          | 14,588.00      | .0683        | 211,550            |
+| 323,200     | 373,200          | 22,214.00      | .1071        | 323,200            |
+| 373,200     | 1,077,550        | 27,569.00      | .0735        | 373,200            |
+| 1,077,550   | 2,155,350        | 79,338.00      | .0765        | 1,077,550          |
+| 2,155,350   | 5,000,000        | 240,030.00     | .1128        | 2,155,350          |
+| 5,000,000   | 25,000,000       | 625,907.00     | .1258        | 5,000,000          |
+| 25,000,000  | And over         | 3,441,907.00   | .1378        | 25,000,000         |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 8,500            | 0              | .0400        | 0                  |
+| 8,500       | 11,700           | 340.00         | .0450        | 8,500              |
+| 11,700      | 13,900           | 484.00         | .0525        | 11,700             |
+| 13,900      | 21,400           | 600.00         | .0590        | 13,900             |
+| 21,400      | 80,650           | 1,042.00       | .0597        | 21,400             |
+| 80,650      | 96,800           | 4,579.00       | .0633        | 80,650             |
+| 96,800      | 107,650          | 5,602.00       | .0738        | 96,800             |
+| 107,650     | 157,650          | 6,402.00       | .0788        | 107,650            |
+| 157,650     | 215,400          | 10,342.00      | .0683        | 157,650            |
+| 215,400     | 265,400          | 14,287.00      | .0959        | 215,400            |
+| 265,400     | 1,077,550        | 19,082.00      | .0735        | 265,400            |
+| 1,077,550   | 5,000,000        | 117,889.00     | .1128        | 1,077,550          |
+| 5,000,000   | 25,000,000       | 625,341.00     | .1258        | 5,000,000          |
+| 25,000,000  | And over         | 3,441,341.00   | .1378        | 25,000,000         |
+
+
 
 ## Changes in June Round 3 update
 
@@ -758,9 +861,6 @@ If you have questions about U.S. Payroll tax updates and your Microsoft Partner 
 
 Take a look at [this location](/dynamics/s-e/gp/tugp2018_391) to find out the tax changes included in each update and to download the update. All instructions for downloading and installing the tax updates also are provided here.
 
-### Knowledge Base
-
-[https://mbs.microsoft.com/knowledgebase/search.aspx](https://mbs.microsoft.com/knowledgebase/search.aspx) provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
 
 ### eSupport
 
@@ -782,7 +882,7 @@ Use the instructions in this section to prepare for the U.S. Payroll Tax Update.
 
 To identify the version, you're using, start Microsoft Dynamics GP. Choose Help\>\> About Microsoft Dynamics GP. The information window displays the version number in the lower right corner.
 
-This U.S. Payroll Tax Update is supported for Microsoft Dynamics GP and Microsoft Dynamics GP 2016 on Microsoft SQL Server.
+This U.S. Payroll Tax Update is supported for Microsoft Dynamics GP on Microsoft SQL Server.
 
 If you're not using one of the supported versions, you must upgrade to a supported version before installing this tax update.
 
@@ -796,7 +896,7 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 2 2021 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The Round 4 2021 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -819,7 +919,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *5/28/2021*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *7/20/2021*.
 
 ## What's next
 
