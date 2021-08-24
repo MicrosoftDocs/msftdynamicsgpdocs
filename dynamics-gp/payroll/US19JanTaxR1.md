@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 07/26/2021
+ms.date: 08/22/2021
 ---
 # U.S. 2021 Payroll Tax Update
 
@@ -18,9 +18,35 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2021 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-The fourth tax update for 2021 replaces all previous tax updates. It includes state tax table changes that took effect July 1, 2021. We recommend that you install this update as soon as you can for the year 2021.
+The fifth tax update for 2021 replaces all previous tax updates. It includes state tax table changes that take effect September 1, 2021. We recommend that you install this update as soon as you can for the year 2021.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+
+## Changes in September Round 5 update
+
+- Ohio
+
+### 2021 state or territorial tax changes
+
+The following tax changes are included in this update
+
+
+#### Withholding changes for Ohio
+
+Withholding rates for taxpayers filing as *NA*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | .501%        | 0                  |
+| 5,000       | 10,000           | 25.00          | 1.001%       | 5,000              |
+| 10,000      | 15,000           | 75.00          | 2.005%       | 10,000             |
+| 15,000      | 20,000           | 175.00         | 2.505%       | 15,000             |
+| 20,000      | 40,000           | 300.00         | 3.006%       | 20,000             |
+| 40,000      | 80,000           | 900.00         | 3.506%       | 40,000             |
+| 80,000      | 100,000          | 2300.00        | 4.008%       | 80,000             |
+| 100,000     | And over         | 3100.00        | 5.009%       | 100,000            |
+
 
 
 ## Changes in July Round 4 update
@@ -896,7 +922,7 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 4 2021 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The Round 5 2021 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -919,7 +945,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *7/20/2021*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *8/20/2021*.
 
 ## What's next
 
