@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 08/22/2021
+ms.date: 08/25/2021
 ---
 # U.S. 2021 Payroll Tax Update
 
@@ -23,7 +23,7 @@ The fifth tax update for 2021 replaces all previous tax updates. It includes sta
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
 
-## Changes in September Round 5 update
+## Changes in September Round 5 update (Released 8/23/2021)
 
 - Ohio
 
@@ -49,7 +49,7 @@ Withholding rates for taxpayers filing as *NA*
 
 
 
-## Changes in July Round 4 update
+## Changes in July Round 4 update (Released 7/28/2021)
 
 - Idaho
 - Kansas
@@ -152,7 +152,7 @@ Withholding rates for taxpayers filing as *SINGLE*
 
 
 
-## Changes in June Round 3 update
+## Changes in June Round 3 update (Released 5/27/2021)
 
 - Maryland
 
@@ -171,7 +171,7 @@ For each Filing Status of Maryland
 The Standard Deduction Percent remains at 15 percent.
 
 
-## Changes in January Round 2 update
+## Changes in January Round 2 update (Released 1/21/2021)
 
 - California
 - Colorado
@@ -542,7 +542,7 @@ Withholding rates for taxpayers filing as *SINGLE*
 
 
 
-## Changes in January Round 1 update
+## Changes in January Round 1 update (Released 12/20/2020)
 
 - Federal changes and FICA Limit
 - Arkansas
