@@ -6,7 +6,7 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.date: 08/23/2018
+ms.date: 08/31/2021
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: d8f8ba40-5a92-47ee-9e2d-4a052c3d7acf
@@ -68,7 +68,7 @@ If you decide not to use the default framework, review the sections [Planning yo
 When planning an account framework, think about the account format you’ve used with your previous accounting system and consider future expansions and the account format for additional companies you may add to your system later. Plan the maximum number of segments you’ll use in any company, and the maximum length of each segment.
 
 > [!WARNING]
-> It’s important to consider what your current and future needs are for the framework; after you’ve entered the framework, it’s unlikely that you’ll be able to change it. If you find that you need to change your account framework, contact your reseller or Dynamics GP Technical Support.  
+> It’s important to consider what your current and future needs are for the framework; after you’ve entered the framework, it’s unlikely that you’ll be able to change it. 
 
 To use one of the default charts of accounts provided with Dynamics GP, set up the account framework with maximums that are at least the size listed below.  
 
