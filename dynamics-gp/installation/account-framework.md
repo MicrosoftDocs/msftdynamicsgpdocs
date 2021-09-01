@@ -25,7 +25,7 @@ The framework you’ll enter includes maximums for the account length, the numbe
 
 Maximums you enter for account framework during installation will apply to additional companies you set up later. For example, you could enter the account framework maximums shown in the following table during the installation process.
 
-| Account framework example  |     |
+| Account framework example  |   Value  |
 |----------------------------|-----|
 | Maximum account length     | 20  |
 | Maximum number of segments | 3   |
@@ -35,7 +35,7 @@ Maximums you enter for account framework during installation will apply to addit
 
 With these maximums for the account framework defined during installation, you wouldn’t be able to set up the following account format for a company.
 
-| Invalid account format for the corresponding framework ||
+| Invalid account format for the corresponding framework |Value|
 |--------------------------------------------------------|-----|
 | Maximum account length                                 | 20  |
 | Maximum number of segments                             | 3   |
@@ -92,7 +92,7 @@ If you have more than one company, you may need to enter maximum segment lengths
 
 In this case, you’d enter the following account framework maximums.
 
-| Account framework accommodating both account formats |                     |
+| Account framework accommodating both account formats |   Value                  |
 |-------------------------|--------------------------------------------|
 | Maximum account length                               | 66  |
 | Maximum number of segments                           | 3   |
