@@ -41,7 +41,7 @@ HMRC maintains a list of VAT obligations for companies, which are the periods fo
 
 In order to use the Making Tax Digital service, you must connect to the service from the **VAT Return** window.
 
-![VAT Return window](media/uk-tax-vat-return.png)
+![VAT Return window 1](media/uk-tax-vat-return.png)
 
 To enable the connection, you must create a new VAT return.
 
@@ -53,7 +53,7 @@ To enable the connection, you must create a new VAT return.
 
     ![HMRC Log in window 1](media/uk-tax-gov1.png)
 
-    ![HMRC Log in window 1](media/uk-tax-gov2.png)
+    ![HMRC Log in window 2](media/uk-tax-gov2.png)
 
 3. Grant authority to the software application to access your VAT information. 
 
@@ -67,7 +67,7 @@ To enable the connection, you must create a new VAT return.
 
 5. When you return to the **VAT Return** window, click Calculate to have the system calculate VAT for you as shown in the following picture.
 
-    ![VAT Return window](media/uk-tax-vat-return2.png)
+    ![VAT Return window with Calculate button](media/uk-tax-vat-return2.png)
 
     If the calculations are not correct, you can clear the window at this time. Then repeat steps above when ready. Click **Save** to save the information.
 
