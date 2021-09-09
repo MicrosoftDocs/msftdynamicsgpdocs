@@ -25,3 +25,40 @@ System Preferences can be found under Dynamics GP Tools -> Setup -> System -> Sy
 (keep in mind this setting is stored in the DYNAMICS database and is system wide, so changing this setting will affect all users) 
 
 
+![Form](media/syspref.jpg)
+
+
+### MAPI Specific Errors 
+
+## Dynamics GP uses MAPI to open Outlook to send emails directly from the Outlook client.  
+
+Emails Stuck in Outbox within Outlook 
+
+Note: Issue appears to be unique to Gmail email accounts.  
+
+Issue:  
+Emails are getting stuck in the Outbox in Outlook. 
+
+When you use the Send/Receive button, or close/reopen Outlook, the email sends without delays. 
+
+Cause: 
+Add-in for Gmail Multi-factor authentication. This is a paid add-in that we believe causes the issue.  
+
+Solution: 
+Compare a clean Outlook add-in list to the client having the issue to make sure there are no extra add-ins. 
+Recommend that they [remove the add-in as it appears like it is no longer needed] (https://support.office.com/en-us/article/add-a-gmail-account-to-outlook-701916679c52-4581-990e-e30318c2c081)
+
+
+## Either there is no default mail client, or the current mail client cannot fulfill the message request. Please run Microsoft Outlook and set it as the default mail client. 
+ 
+Note: Recommend you review Outlook version first – MAPI only works with 32bit! 
+
+Issue:  Error appears when attempting to email using MAPI anywhere in GP Cause: Either a Profile is not setup, or Outlook cannot reach it using MAPI.  
+
+Solution: You can go through the [following KB] (https://support.microsoft.com/en-us/help/4052892/e-mail-error-in-microsoftdynamics-gp-either-there-is-no-default-mail), focus on A and B as these are common causes. 
+You will want to make sure that Outlook is also setup as the default application for Mail when you search for Default Apps in Windows 10. 
+
+
+
+
+
