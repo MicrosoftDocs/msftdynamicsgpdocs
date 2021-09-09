@@ -1,0 +1,27 @@
+Microsoft Dynamics GP Email Troubleshooting Guide
+
+This document is meant to walk through most of the errors you may run into when emailing out of Microsoft Dynamics GP.  
+
+The goal is to make everyone an emailing expert!  
+
+This document can be leveraged with all email functionality in Microsoft Dynamics GP, from the old Standard Report Writer Statement emailing method, to Word Templates.
+
+Notes:
+Currently TLS 1.0 and Basic Authentication (no MFA) are required for Exchange and Workflow emailing within Microsoft Dynamics GP. 
+We are aware of the changes that are coming to the supportability of TLS 1.0 and Basic Authentication within our other Microsoft applications.  
+TLS 1.2 and Multi-Factor Authentication (MFA) functionality was included in the 18.3 update released.
+
+All email issues can be safely split up into three sets of issues:
+
+Items unique to MAPI
+Issues unique to Exchange
+Or those that both methods have in common. 
+
+This is how the documentation is organized.  
+
+Starting with MAPI, moving onto Exchange, and ending with the common errors. 
+
+System Preferences can be found under Dynamics GP Tools -> Setup -> System -> System Preferences. 
+(keep in mind this setting is stored in the DYNAMICS database and is system wide, so changing this setting will affect all users) 
+
+
