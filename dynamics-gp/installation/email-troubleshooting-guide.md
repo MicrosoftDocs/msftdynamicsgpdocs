@@ -19,7 +19,6 @@ The goal is to make everyone an emailing expert!
 
 This document can be leveraged with all email functionality in Microsoft Dynamics GP, from the old Standard Report Writer Statement emailing method, to Word Templates.
 
-
 > [!NOTE]
 > Currently, TLS 1.0 and Basic Authentication (no MFA) are required for Exchange and Workflow emailing in Dynamics GP.
 >
@@ -31,22 +30,22 @@ All email issues can be safely split up into three sets of issues:
 * Issues unique to Exchange  
 * Those that both methods have in common  
 
-This is how the documentation is organized: Starting with MAPI, moving onto Exchange, and ending with the common errors. 
+This is how the documentation is organized: Starting with MAPI, moving onto Exchange, and ending with the common errors.  
 
-System Preferences can be found under Dynamics GP Tools -> Setup -> System -> System Preferences. 
-(keep in mind this setting is stored in the DYNAMICS database and is system wide, so changing this setting will affect all users) 
+Find system preferences under Dynamics GP Tools -> Setup -> System -> System Preferences.  
 
+> [!IMPORTANT]
+> This setting is stored in the DYNAMICS database and is system-wide, so changing this setting will affect all users.  
 
 ![Form](media/syspref.jpg)
 
+## MAPI Specific Errors
 
-## MAPI Specific Errors 
+### Dynamics GP uses MAPI to open Outlook to send emails directly from the Outlook client
 
-### Dynamics GP uses MAPI to open Outlook to send emails directly from the Outlook client.  
+Emails Stuck in Outbox within Outlook.  
 
-Emails Stuck in Outbox within Outlook 
-
-Note: Issue appears to be unique to Gmail email accounts.  
+Note: Issue appears to be unique to Gmail accounts.  
 
 Issue:  
 Emails are getting stuck in the Outbox in Outlook. 
@@ -58,21 +57,16 @@ Add-in for Gmail Multi-factor authentication. This is a paid add-in that we beli
 
 Solution: 
 Compare a clean Outlook add-in list to the client having the issue to make sure there are no extra add-ins. 
-Recommend that they [remove the add-in as it appears like it is no longer needed] (https://support.office.com/en-us/article/add-a-gmail-account-to-outlook-701916679c52-4581-990e-e30318c2c081)
-
+Recommend that they [remove the add-in as it appears like it is no longer needed](https://support.office.com/article/add-a-gmail-account-to-outlook-701916679c52-4581-990e-e30318c2c081)
 
 ### No default mail client, or the current mail client cannot fulfill the message request
 
 Please run Microsoft Outlook and set it as the default mail client. 
- 
+
 Note: Recommend you review Outlook version first – MAPI only works with 32bit! 
 
 Issue:  Error appears when attempting to email using MAPI anywhere in GP Cause: Either a Profile is not setup, or Outlook cannot reach it using MAPI.  
 
-Solution: You can go through the [following KB] (https://support.microsoft.com/en-us/help/4052892/e-mail-error-in-microsoftdynamics-gp-either-there-is-no-default-mail), focus on A and B as these are common causes. 
-You will want to make sure that Outlook is also setup as the default application for Mail when you search for Default Apps in Windows 10. 
+Solution: You can go through [this KB](https://support.microsoft.com/en-us/help/4052892/e-mail-error-in-microsoftdynamics-gp-either-there-is-no-default-mail), focus on A and B as these are common causes.  
 
-
-
-
-
+You will want to make sure that Outlook is also set up as the default application for mail when you search for Default Apps in Windows 10.  
