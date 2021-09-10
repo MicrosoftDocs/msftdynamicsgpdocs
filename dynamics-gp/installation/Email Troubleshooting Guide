@@ -1,4 +1,17 @@
-Microsoft Dynamics GP Email Troubleshooting Guide
+---
+title: Dynamics GP Email Troubleshooting Guide
+description: Get tips and tricks about some of the errors you may run into when emailing out of Microsoft Dynamics GP.
+keywords: "email"
+author: theley502
+manager: edupont
+ms.prod: dynamics-gp
+ms.topic: article
+ms.reviewer: edupont
+ms.author: theley
+ms.date: 09/10/2021
+---
+
+# Microsoft Dynamics GP Email Troubleshooting Guide
 
 This document is meant to walk through most of the errors you may run into when emailing out of Microsoft Dynamics GP.  
 
@@ -6,20 +19,19 @@ The goal is to make everyone an emailing expert!
 
 This document can be leveraged with all email functionality in Microsoft Dynamics GP, from the old Standard Report Writer Statement emailing method, to Word Templates.
 
-Notes:
-Currently TLS 1.0 and Basic Authentication (no MFA) are required for Exchange and Workflow emailing within Microsoft Dynamics GP. 
-We are aware of the changes that are coming to the supportability of TLS 1.0 and Basic Authentication within our other Microsoft applications.  
-TLS 1.2 and Multi-Factor Authentication (MFA) functionality was included in the 18.3 update released.
+
+> [!NOTE]
+> Currently, TLS 1.0 and Basic Authentication (no MFA) are required for Exchange and Workflow emailing in Dynamics GP.
+>
+> We are aware of the changes that are coming to the supportability of TLS 1.0 and Basic Authentication within our other Microsoft applications. TLS 1.2 and Multi-Factor Authentication (MFA) functionality was included in the 18.3 update released.
 
 All email issues can be safely split up into three sets of issues:
 
-Items unique to MAPI
-Issues unique to Exchange
-Or those that both methods have in common. 
+* Items unique to MAPI  
+* Issues unique to Exchange  
+* Those that both methods have in common  
 
-This is how the documentation is organized.  
-
-Starting with MAPI, moving onto Exchange, and ending with the common errors. 
+This is how the documentation is organized: Starting with MAPI, moving onto Exchange, and ending with the common errors. 
 
 System Preferences can be found under Dynamics GP Tools -> Setup -> System -> System Preferences. 
 (keep in mind this setting is stored in the DYNAMICS database and is system wide, so changing this setting will affect all users) 
@@ -28,9 +40,9 @@ System Preferences can be found under Dynamics GP Tools -> Setup -> System -> Sy
 ![Form](media/syspref.jpg)
 
 
-### MAPI Specific Errors 
+## MAPI Specific Errors 
 
-## Dynamics GP uses MAPI to open Outlook to send emails directly from the Outlook client.  
+### Dynamics GP uses MAPI to open Outlook to send emails directly from the Outlook client.  
 
 Emails Stuck in Outbox within Outlook 
 
@@ -49,7 +61,9 @@ Compare a clean Outlook add-in list to the client having the issue to make sure 
 Recommend that they [remove the add-in as it appears like it is no longer needed] (https://support.office.com/en-us/article/add-a-gmail-account-to-outlook-701916679c52-4581-990e-e30318c2c081)
 
 
-## Either there is no default mail client, or the current mail client cannot fulfill the message request. Please run Microsoft Outlook and set it as the default mail client. 
+### No default mail client, or the current mail client cannot fulfill the message request
+
+Please run Microsoft Outlook and set it as the default mail client. 
  
 Note: Recommend you review Outlook version first – MAPI only works with 32bit! 
 
