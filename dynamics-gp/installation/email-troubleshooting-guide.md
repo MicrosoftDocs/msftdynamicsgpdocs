@@ -37,7 +37,7 @@ Find system preferences under Dynamics GP Tools -> Setup -> System -> System Pre
 > [!IMPORTANT]
 > This setting is stored in the DYNAMICS database and is system-wide, so changing this setting will affect all users.  
 
-<!--![Form](media/syspref.jpg)-->
+![Form](media/syspref.jpg)
 
 ## MAPI Specific Errors
 
