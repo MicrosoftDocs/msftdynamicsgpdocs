@@ -149,6 +149,7 @@
 #### [Installing additional components](installation/installing-additional-components.md)
 #### [Uninstall or reinstall the sample company](installation/uninstall-or-reinstall-sample-company.md)
 #### [Recommended maintenance of your databases](installation/database-maintenance-recommendations.md)
+#### [Email Troubleshooting Guide](installation/email-troubleshooting-guide.md)
 #### Additional clients
 ##### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)
 ##### [Creating an installation package](installation/creating-an-installation-package.md)

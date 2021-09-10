@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: jchrist
-ms.date: 02/12/2019
+ms.date: 09/05/2021
 ---
 
 # VAT in the UK Version of Microsoft Dynamics GP
@@ -16,8 +16,9 @@ Her Majesty's Revenue and Customs (HMRC) is implementing the first step of Makin
 
 * Keeping records digitally - Businesses must now keep all their records digitally. For users of ERP systems this will not have any impact since they already keep their records digitally in these systems.  
 * Submit VAT return electronically using [software recognized by HMRC](https://www.gov.uk/guidance/software-for-sending-income-tax-updates).
-* If you are new to VAT 100 setup, review [How to setup VAT 100 Return](https://community.dynamics.com/gp/b/dynamicsgp/archive/2019/01/29/microsoft-dynamics-gp-information-about-the-vat-100-return)
-* If you are having issues using the Making Tax Digital review [Troubleshooting Making Tax Digital]( https://community.dynamics.com/gp/b/dynamicsgp/archive/2019/03/12/microsoft-dynamics-gp-39-making-tax-digital-39-functionality-for-uk-vat)
+* If you are new to VAT 100 setup, review [How to set up VAT 100 Return](https://community.dynamics.com/gp/b/dynamicsgp/archive/2019/01/29/microsoft-dynamics-gp-information-about-the-vat-100-return)
+* If you are having issues using the Making Tax Digital, see [Troubleshooting Making Tax Digital]( https://community.dynamics.com/gp/b/dynamicsgp/archive/2019/03/12/microsoft-dynamics-gp-39-making-tax-digital-39-functionality-for-uk-vat)
+* Group VAT functionality added to Microsoft Dynamics GP. For more information, see [Group VAT filing for multiple companies with VAT 100 Return] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-group-vat-filing-for-multiple-companies-with-vat-100-return)
 
 ## Set up Making Tax Digital for VAT
 
@@ -25,11 +26,11 @@ The Making Tax Digital feature uses a service connection to communicate with HMR
 
 In the **Company Setup** window, you must specify your company's tax registration number.
 
-![Screenshot](media/uk-tax-company-setup.png)
+![Company Setup window](media/uk-tax-company-setup.png)
 
 In the **UK Digital VAT Setup** window (Cards -> Company-UK Electronic VAT Setup), you must specify that you want to use the Making Tax Digital service.  
 
-![Screenshot](media/uk-tax-digital-tax-setup.png)
+![UK Digital VAT Setup window](media/uk-tax-digital-tax-setup.png)
 
 ### Set up VAT returns
 
@@ -40,7 +41,7 @@ HMRC maintains a list of VAT obligations for companies, which are the periods fo
 
 In order to use the Making Tax Digital service, you must connect to the service from the **VAT Return** window.
 
-![Screenshot](media/uk-tax-vat-return.png)
+![VAT Return window 1](media/uk-tax-vat-return.png)
 
 To enable the connection, you must create a new VAT return.
 
@@ -50,43 +51,43 @@ To enable the connection, you must create a new VAT return.
 
 2. Once you tab off the **Year** field, the **HMRC Log in** window appears where you can login to the HMRC site.
 
-    ![Screenshot](media/uk-tax-gov1.png)
+    ![HMRC Log in window 1](media/uk-tax-gov1.png)
 
-    ![Screenshot](media/uk-tax-gov2.png)
+    ![HMRC Log in window 2](media/uk-tax-gov2.png)
 
 3. Grant authority to the software application to access your VAT information. 
 
-    ![Screenshot](media/uk-tax-gov3.png)
+    ![Screenshot 1](media/uk-tax-gov3.png)
 
 4. After you have successfully logged in, then the **VAT Obligations** window opens, and you can choose your obligation period. This comes from the HMRC site and will return your company’s VAT periods.
 
-    ![Screenshot](media/uk-tax-obligations.png)
+    ![VAT Obligations window](media/uk-tax-obligations.png)
 
     The screenshot above is based on a test environment with quarterly VAT tax and only 2 obligation periods open. Your view will be different.
 
 5. When you return to the **VAT Return** window, click Calculate to have the system calculate VAT for you as shown in the following picture.
 
-    ![Screenshot](media/uk-tax-vat-return2.png)
+    ![VAT Return window with Calculate button](media/uk-tax-vat-return2.png)
 
     If the calculations are not correct, you can clear the window at this time. Then repeat steps above when ready. Click **Save** to save the information.
 
 6. When you save the VAT return, VAT box fields are now editable so any further corrections can be made.
 
-    ![Screenshot](media/uk-tax-vat-return3.png)
+    ![VAT box fields](media/uk-tax-vat-return3.png)
 
     The **Final Return** checkbox is also editable and it must be marked before you can submit. 
 
-    ![Screenshot](media/uk-tax-vat-return4.png)
+    ![Final Return checkbox ](media/uk-tax-vat-return4.png)
 
 7. Click **Submit** to start the submission. You must supply your HMRC credentials again.
 
-    You will get a mandatory message required by HMRC, click ok and then you will see a progress bar for the VAT information being submitted to HMRC.
+    You will get a mandatory message required by HMRC, where you just choose the OK button, so that you will see a progress bar for the VAT information being submitted to HMRC.
 
-    ![Screenshot](media/uk-vat-submit.png)
+    ![Progress bar for the VAT information being submitted to HMRC](media/uk-vat-submit.png)
 
-When the submission is complete you will see the VAT Response window.
+When the submission is complete you will see the **VAT Response** window.
 
-![Screenshot](media/uk-tax-vat-response.png)
+![VAT Response window.](media/uk-tax-vat-response.png)
 
 ### To submit VAT Daybook returns
 
