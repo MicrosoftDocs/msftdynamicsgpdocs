@@ -81,14 +81,17 @@ Cause: Simply put, Outlook does not start with any Microsoft Dynamics GP specifi
 Solution: There are two solutions to get this message to stop appearing, we currently recommend the Outlook solution (first one in the list) as it has no side-effects. 
 The Microsoft Dynamics GP solution does have side effects which are mentioned in the link provided 
 
-1.	Outlook solution (recommended) –  
-a.	Use the following link to solve the issue by telling Outlook that GP is a [trusted program] (https://support.microsoft.com/en-us/help/3189806/a-program-is-trying-tosend-an-e-mail-message-on-your-behalf-warning-i)
+1.	Outlook solution (recommended)  
 
-Note: This may need to be redone anytime you upgrade GP/Office versions.
+  1.	Use the following link to solve the issue by telling Outlook that GP is a [trusted program] (https://support.microsoft.com/en-us/help/3189806/a-program-is-trying-tosend-an-e-mail-message-on-your-behalf-warning-i)  
 
-2.	Dynamics GP Workaround (Has side-effect of the emailed document containing the file path that it was sent from) – 
-a.	[Force Outlook to use a different version of MAPI](https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/08/13/drafta-program-is-trying-to-send-an-e-mail-message-on-your-behalf-when-trying-tosend-a-template-via-e-mail) 
-This has many side effects which are mentioned in the above article.
+    Note: This may need to be redone anytime you upgrade GP/Office versions.
+
+2.	Dynamics GP Workaround (Has side-effect of the emailed document containing the file path that it was sent from)  
+
+  1.	[Force Outlook to use a different version of MAPI](https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/08/13/drafta-program-is-trying-to-send-an-e-mail-message-on-your-behalf-when-trying-tosend-a-template-via-e-mail)  
+
+    This has many side effects which are mentioned in the above article.
 
 Note: This may need to be redone anytime you upgrade Office 
 
@@ -121,15 +124,17 @@ Cause: There are a multitude of possible causes for this issue. The most common 
 
 Solution: The following path is the best route for generic login issues: 
 
-1.	Confirm MFA is disabled 
-If it is enabled, attempt to use an App Password instead of the account’s normal password 
-More information on [App Passwords] (https://support.microsoft.com/en-us/help/12409/microsoft-account-apppasswords-and-two-step-verification)
+1.	Confirm MFA is disabled  
+
+  If it is enabled, attempt to use an App Password instead of the account’s normal password. For more information, see [App Passwords] (https://support.microsoft.com/en-us/help/12409/microsoft-account-apppasswords-and-two-step-verification)  
  
-2.	Confirm that Basic Authentication is enabled.  
-Most Exchange Administrators can answer this for you, although the [following link outlines other routes to confirm the status of Basic Authentication] (https://community.dynamics.com/gp/b/dynamicsgp/posts/exchange-online-o365emailing-inside-dynamics-gp)
+2.	Confirm that Basic Authentication is enabled  
+
+  Most Exchange Administrators can answer this for you, although the [following link outlines other routes to confirm the status of Basic Authentication] (https://community.dynamics.com/gp/b/dynamicsgp/posts/exchange-online-o365emailing-inside-dynamics-gp)  
  
-3.	Confirm that Autodiscover is working. 
-You can do this by removing the user from the SY04920 table (Dynamics/System database) and attempting to login again. If this table does not repopulate, then there are Autodiscover issues in the system (or the user doesn’t work). The [following link outlines how this all works, along with other tests] (https://community.dynamics.com/gp/b/dynamicsgp/posts/exchange-emailinginside-dynamics-gp)
+3.	Confirm that Autodiscover is working  
+
+  You can do this by removing the user from the SY04920 table (Dynamics/System database) and attempting to login again. If this table does not repopulate, then there are Autodiscover issues in the system (or the user doesn’t work). For insights into how this all works, along with other tests, see [this blog post](https://community.dynamics.com/gp/b/dynamicsgp/posts/exchange-emailinginside-dynamics-gp)  
 
 
 ## Generic Errors
@@ -150,11 +155,9 @@ To get around this, the users need to follow these steps to update the customer 
 3.	Use the E-mail Settings option (top navigation bar) here to update all customers. 
 4.	Here you will need to check ‘Customer Statements’ then select ‘PDF’ and uncheck the Customer Statement option:  Then Click OK.
 5.	You should see that the customer cards were updated: 
- 
 6.	Running the following script should show the EmailDocumentEnabled field has been set to 0 for all customers: 
 
-select * from SY04905 where EmailDocumentID = '10'
-
+ ```select * from SY04905 where EmailDocumentID = '10'```
 
 7.	Disable the Customer Statement option on the E-Mail Settings window in Sales Setup. 
 8.	The statements should generate as a PDF file now for all customers.   
