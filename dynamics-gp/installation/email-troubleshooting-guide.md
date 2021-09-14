@@ -83,15 +83,15 @@ The Microsoft Dynamics GP solution does have side effects which are mentioned in
 
 1. Outlook solution (recommended)  
 
-  1. Use the following link to solve the issue by telling Outlook that GP is a [trusted program](https://support.microsoft.com/en-us/help/3189806/a-program-is-trying-tosend-an-e-mail-message-on-your-behalf-warning-i)  
+      1. Use the following link to solve the issue by telling Outlook that GP is a [trusted program](https://support.microsoft.com/help/3189806/a-program-is-trying-tosend-an-e-mail-message-on-your-behalf-warning-i)  
 
-    Note: This may need to be redone anytime you upgrade GP/Office versions.
+          Note: This may need to be redone anytime you upgrade GP/Office versions.
 
 2. Dynamics GP Workaround (Has side-effect of the emailed document containing the file path that it was sent from)  
 
-  1. [Force Outlook to use a different version of MAPI](https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/08/13/drafta-program-is-trying-to-send-an-e-mail-message-on-your-behalf-when-trying-tosend-a-template-via-e-mail)  
+    1. [Force Outlook to use a different version of MAPI](https://community.dynamics.com/gp/b/dynamicsgp/archive/2015/08/13/drafta-program-is-trying-to-send-an-e-mail-message-on-your-behalf-when-trying-tosend-a-template-via-e-mail)  
 
-    This has many side effects which are mentioned in the above article.
+        This has many side effects which are mentioned in the above article.
 
 Note: This may need to be redone anytime you upgrade Office  
 
