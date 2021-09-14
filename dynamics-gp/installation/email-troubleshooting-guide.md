@@ -157,7 +157,7 @@ To get around this, the users need to follow these steps to update the customer 
 5.	You should see that the customer cards were updated: 
 6.	Running the following script should show the EmailDocumentEnabled field has been set to 0 for all customers: 
 
- ```select * from SY04905 where EmailDocumentID = '10'```
+    ```select * from SY04905 where EmailDocumentID = '10'```
 
 7.	Disable the Customer Statement option on the E-Mail Settings window in Sales Setup. 
 8.	The statements should generate as a PDF file now for all customers.   
