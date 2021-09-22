@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 05/10/2019
+ms.date: 09/21/2021
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -4111,6 +4111,179 @@ Before you close the year, make a backup of all company data. As long as you hav
 4. Choose Close Year to begin the closing process. The Year-End Closing Report is printed after the year has been closed, if you selected to print the report.
 
 5. You can close the fiscal periods for the year using the Fiscal Periods Setup window. This prevents transactions from being posted to the closed year. See the System Setup documentation for more information.
+
+## Part 5: Electronic Banking
+
+You can use Electronic Banking to complete electronic banking activities. 
+Electronic Banking includes electronic funds transfer (EFT) payments for Payables Management and Receivables Management, both inside and outside North America, as well as Electronic Reconcile and Safe Pay, for customers that use EFT transactions in North America.
+
+You also can use Electronic Banking to complete the following tasks:
+•	Pay vendors by EFT payments for banks in North America and Europe
+•	Debit customer accounts using EFT transactions for banks in North America and Europe
+•	Print non-negotiable check advices and remittances for EFT transactions to vendors
+•	Reconcile bank statements using Electronic Reconcile
+•	Confirm the authenticity of a check using Safe Pay
+
+If you use Multicurrency Management, you can view functional and originating information.
+
+### EFT checkbook setup
+Processing transactions electronically requires some additional setup steps. This part of the documentation describes the process of setting up checkbooks to use in processing payables or receivables transactions. 
+
+#### EFT checkbook setup overview
+
+Transferring funds electronically can make it easier to pay vendors, process payments from customers, and send refunds to customers. This process includes the following tasks.
+•	Enable EFT payments using the Company Setup Options window if you’re using Direct Debits and Refunds or if you’re completing EFT transactions in Europe. 
+•	Set up one or more checkbooks for EFT transactions. Set up a basic checkbook record using the Checkbook Maintenance window, then specify a checkbook to use for EFT transactions using the Checkbook EFT Maintenance window.  
+•	When you set up an EFT checkbook, you’ll also select the country/region that holds the account for the checkbook that checkbook and enter additional information required by the bank using the Checkbook EFT Bank Maintenance window. 
+
+#### Enabling European EFT and Direct Debits and Refunds
+
+Use the Company Setup Options window to enable EFT payments to European vendors using European banks and to process EFT refunds using Direct Debits and Refunds. This procedure isn’t necessary if you don’t need to pay vendors or process refunds for customers outside North America.
+
+Direct Debits and Refunds is allowed only for customers who operate on an open item basis.
+
+To enable European EFT and Direct Debits and Refunds:
+1.	Open the Company Setup Options window. 
+(Microsoft Dynamics GP menu >> Tools >> Setup >> Company >> Company >> Options button)
+2.	Mark the Enable DDR and European Electronic Funds Transfer option.
+3.	Choose OK to save the changes and close the window.
+
+#### Setting up a cash-in-transit account for an existing checkbook
+
+If you have enabled European EFT and Direct Debits and Refunds, use the Checkbook Maintenance window to assign a cash-in-transit account for an existing checkbook. A cash-in-transit account is a temporary holding account used to record the cash until the funds are transferred electronically. This account will be used instead of the cash account when EFT payments are recorded in Payables Management. 
+
+If you don’t use a cash-in-transit account, enter the cash account. You won’t be able to send transactions to banks in Europe if you attempt to enter EFT payments without setting up a cash-in-transit account for the checkbook.
+
+To set up a cash-in-transit account for an existing checkbook:
+1.	Open the Checkbook Maintenance window.  (Cards >> Financial >> Checkbook)
+2.	Enter or select a checkbook ID.
+3.	Assign a Cash in Transit account to the checkbook. A cash-in-transit account is a temporary holding account used to record the cash until the funds are transferred electronically. If you don’t use a cash-in-transit account, enter the cash account.
+The Cash In Transit Account field is displayed if the Enable DDR and European 
+Electronic Funds Transfer option is marked in the Company Setup Options window (Microsoft Dynamics GP menu >> Tools >> Setup >> Company >> Company >> Options button).
+4.	To print a Checkbook List, choose File >> Print.
+5.	Choose Save to save the checkbook.
+
+#### Setting up bank information for EFT transactions
+
+Use the EFT Checkbook Bank Maintenance window to enter bank information for both payables and receivables EFT transactions, both within and outside North America. If you haven’t set up any checkbooks yet, use the Checkbook Maintenance window to do so before completing this procedure. 
+
+To set up bank information for EFT transactions:
+1.	Open the Checkbook EFT Bank Maintenance window. (Cards >> Financial >> Checkbook >> EFT Bank)
+2.	Select the country/region of the bank that holds the account for the selected checkbook. 
+3.	Enter the bank account number for the checkbook. The number you enter should be the checkbook account number at the bank that holds the account. 
+4.	Enter additional bank information. The required fields depend on the country/ region selected. 
+5.	
+6.	The required information typically is provided by the bank.
+If you need to specify a country or currency code, use the two-character ISO country code and three-character alphabetic ISO currency code formats. 
+
+Be aware that Microsoft Dynamics GP does not verify the ISO codes you enter, and your bank will reject a file format that has an incorrect code. 
+
+7.	Choose the Payables Options button to open the Checkbook EFT Payables Options window, where you can specify EFT output file locations, file formats, and options for payment numbers. See Entering payables EFT options on page 17 for more information. 
+Choose the Receivables Options button to open the Checkbook EFT Receivables Options window, where you can specify EFT output file locations, file formats, and payment numbers. See Entering receivables EFT options on page 23 for more information.
+8.	Choose OK to save your changes. 
+
+#### Checkbook setup for Direct Debits and Refunds
+
+If you’re using Direct Debits and Refunds, be sure to set up the company checkbook for direct debits and refunds by choosing Cards >> Financial >> Checkbook. All the refunds will be debited from this checkbook. You can collect funds only if the country format for the company checkbook and the debtor’s bank account is same.
+
+
+### EFT file format setup
+
+This part of the documentation describes how to set up EFT file formats used to generate EFT files for EFT transactions. You also can set up EFT file formats for IAT transactions. An IAT transaction is an ACH transaction whose funding is transmitted to or received from a financial agency located outside the territorial jurisdiction of the United State and is processed through the U.S. ACH Network. 
+
+#### EFT File reference
+
+Use the following in formation as a reference when setting up EFT file formats and for help in understanding the way information in EFT files is organized.
+
+EFT files are text files that contain record lines. Each record line is a specific record type. A record type code indicates each line’s record type.
+
+Record type codes
+In the file you upload to your bank, each line is a separate record. When you work with a bank to make EFT payments, the bank provides a file format specification that indicates which type of record each line is. Not all bank formats include all record types. The EFT File Format Maintenance window supports the following record types.
+
+Some banks might use different names for this information. To learn which record type to use for your bank, compare the following record descriptions to the specification your bank provides. 
+
+Record types for flat files
+Flat files can include the following record type codes.
+
+Header labels 
+The header label identifies the data file and is used to verify that the file is valid.
+
+File header
+The file header designates the physical file characteristics and identifies the origin and destination of the entries.
+
+Batch header 
+The batch header identifies the originator and briefly describes the purpose of the entry. The information contained in the batch header record applies uniformly to all subsequent detail records in the batch.
+
+Detail lines 
+Detail lines contain that information sufficient to relate the entry to the receiver, such as the vendor’s bank information and payment amount.
+
+Addenda lines 
+Addenda lines are used by the originator to supply additional information about the detail lines that are sent electronically. Information in addenda lines can be used only for the purpose of transmitting payment information.
+
+Settlement lines 
+Settlement lines contain information that’s used to balance the detail line (if generating an auto-settlement for each detail) or information sufficient to balance the sum of all detail lines (if generating an auto-settlement for the sum of all detail lines).
+
+Batch control 
+The batch control contains the counts, hash totals, and total dollar controls for the preceding detail entries with the indicated batch.
+
+File control 
+The file control contains dollar, entry, and hash total accumulations from the batch control records in the file. This record includes the number of blocks and the number of batches within the file.
+
+Trailer label 
+The trailer label identifies the data file and is used to verify that the file is valid.
+
+IAT batch header 
+The batch header identifies the originator and briefly describes the purpose of the entry. The information contained in the batch header record applies to all subsequent detail records in the batch.
+
+IAT detail lines 
+Detail lines contain information that relate the entry to the receiver, such as the vendor’s bank information and payment amount.
+
+IAT addenda lines 
+Addenda lines are used by the originator to supply additional information about the detail lines that are sent electronically. Information in addenda lines should be used only for the purpose of transmitting payment information.
+
+RBC IAT address records RBC IAT address records are addenda lines used by the Royal Bank of Canada. These lines are used by the originator to supply additional information about the detail lines that are sent electronically. 
+
+Record types for XML files
+
+XML files can include the following record type codes.
+
+Header label 
+The header label defines XML file parameters used for file processing.
+
+Group header 
+The group header is required. It includes the group identification, and the creation date and time.
+
+Payment information 
+Payment information is required and contains information related to the debit entries of payment transactions. This information includes your company’s name, bank information and the payment method.
+
+Payment transaction 
+Payment transaction information is required and contains information related to the credit side of payment transactions. This includes the vendor, vendor’s bank information and references for the transaction.
+
+Remittance information 
+Optional remittance information can be repeated in the file. This includes the invoices that are being paid. This information can be structured or unstructured. 
+
+Fields per line
+You can set up mapping specifications for EFT bank record types. The formatting required for each field is based on how the field is mapped. Use one of the following mappings to define each field of your bank format. This information applies to both flat files and XML files.
+
+Constant 
+The constant is any value required by your bank that’s the same for every file created. 
+
+Data field 
+This field includes map-to-fields information that has been set up or entered on payment transactions. In the EFT File Format Maintenance window, choose the Show Details button in the scrolling window. You can then choose from a list of tables that contain bank, checkbook, vendor, and payment information. After selecting the table, you can choose from the list of fields within that table. 
+
+System date 
+This field displays the system date when the file was created.
+
+System time 
+This field displays the system time when the file was created.
+
+Transmission date 
+This field displays the date entered in the Transmission Date field in the Generate EFT Files window. 
+
+Calculation 
+You can use any of the following calculations. The calculations often are located in the batch footers or file footers of flat files
+
+
 
 ## Additional Feature Functionality added to Payables Management
 
