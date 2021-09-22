@@ -6,7 +6,7 @@ author: edupont04
 ms.author: edupont
 manager: edupont
 applies_to: 
-ms.date: 08/24/2018
+ms.date: 09/21/2021
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 4af5a255-4233-4158-b7d7-660a67e226d0
@@ -77,10 +77,22 @@ If you are upgrading a company that has previously deployed SQL Server Reporting
 
 Before you upgrade, it's a good idea to print the following reports to a printer or to a file. You can use them to verify that your system was upgraded properly or to re- create modifications.
 
-| Module         | Reports                   |
-|----------------|---------------------------|
-| System         | Process Server Setup List |
-| General Ledger | Detailed Trial Balance    |
-|                |                           |
-
-
+| Module                  | Reports                            |
+|----------------         |---------------------------         |
+| System                  | Process Server Setup List          |
+| General Ledger          | Detailed Trial Balance             |
+| Receivables Management  | Aged Trial Balance with Options    |
+| Payables Management     | Aged Trial Balance with Options    |
+| Inventory Control       | Pricing Reports                    |
+                          | Extended Pricing Error Reprots     |
+                          | Purchase Receipts                  |
+| Purchase Order Proc.    | Purchase order                     |
+                          | Purchase Order Status Report       |
+| Payroll                 | Benefit & Deduction Summary        |
+                          | FUTA,SUTA & Workers Comp Period End|
+                          | Check and Transaction History      |
+                          | Employee Pay History               |                          
+                          | 941 and 941 Schedule B             |    
+| Manufacturing           | WIP Report                         |  
+                          | Manufacturing Order Summary        |  
+                          | Standard Cost Pending              |  
