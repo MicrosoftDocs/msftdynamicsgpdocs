@@ -234,7 +234,7 @@ Review the Template for any issues:
 
 * If using a terminal server/Citrix environment, Outlook must be open on the server for using MAPI
 
-* Another common issue with e-mail is when users get a new workstation. They made need to update the Registry when using MAPI.  They can do this by following the steps in the MAPI Specific issues above.
+* Another common issue with e-mail is when users get a new workstation. They may have to update the Registry when using MAPI.  They can do this by following the steps in the MAPI Specific issues above.
 
 
 ### Send Documents in email check box is grayed out when trying to send a Remittance
@@ -243,7 +243,7 @@ Note: Common issues for PM EFT Remittances
 
 Issue: User is attempting to email Remittances, but the checkbox is grayed out:
 
-![Form](media/email1.jpg)
+![Form 1](media/email1.jpg)
 
 Cause: This issue has a few different causes, usually setup or 3rd party involvement Solution: 
 
@@ -253,12 +253,11 @@ Go to Purchasing >> Cards >> Vendor >> select a vendor >> E-mail.
 In the Send Forms as Email section confirm that Vendor Remittance check box is checked.
 
 
-![Form](media/email2.jpg)
+![Form 2](media/email2.jpg)
 
-If this is correct, check to see if Mekorma MICR is installed, if so make sure the Mekorma MICR System Options are set to have email enabled, or else the "Send Document in email' checkbox in the Remittance window will not be available to mark (or grayed out). To check this setting, go to Microsoft Dynamics GP | Tools | Setup | System | Mekorma MICR | System Options. Mark the checkbox for 'Enable Email Remittance' and click Save.
+If this is correct, check to see if Mekorma MICR is installed, if so make sure the Mekorma MICR System Options are set to have email enabled, or else the **Send Document in email** checkbox in the Remittance window will not be available to mark (or grayed out). To check this setting, go to Microsoft Dynamics GP | Tools | Setup | System | Mekorma MICR | System Options. Choose the **Enable Email Remittance** field, and then click Save.
 
-[More information regarding issues with this process can be found below:]
-(https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/10/24/quick-step-guide-to-ehttps://community.dynamics.com/gp/b/dynamicsgp/archive/2016/10/24/quick-step-guide-to-e-mail-pm-eft-remittances-in-mdgp-2015-2016mail-pm-eft-remittances-in-mdgp-2015-2016)
+[For more information, see this blog post about this process](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/10/24/quick-step-guide-to-ehttps://community.dynamics.com/gp/b/dynamicsgp/archive/2016/10/24/quick-step-guide-to-e-mail-pm-eft-remittances-in-mdgp-2015-2016mail-pm-eft-remittances-in-mdgp-2015-2016)
 
 
 ### Email button is grayed out in Sales Order Processing
@@ -274,7 +273,7 @@ Solution: Try the following:
 2. Document Type they are trying to send (quote, order, invoice etc)
 3. Make sure the Format is set to Blank Paper
 
-![Form](media/email3.jpg)
+![Form 3](media/email3.jpg)
 
 
 ### You must activate e-mail functionality for this document before it can be sent in email
@@ -299,7 +298,7 @@ Solution: Try the following:
 
 To resolve-Tools>>Setup>>Company>>E-mail Settings. Here you will need to enable the document type you are attempting to send
 
-![Form](media/email4.jpg)
+![Form 4](media/email4.jpg)
 
 
 ###  A word template must be assigned before sending this document
@@ -362,7 +361,7 @@ Issue: User is attempting to send out a large set of emails
 
 Cause: Performance problem
 
-Solution: [The following KB can sometimes resolve the issue] (https://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-ashttps://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-as-pdf-or-xps-add-in-for-2007-microsopdf-or-xps-add-in-for-2007-microso https://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-as-pdf-or-xps-add-in-for-2007-microso)
+Solution: [This KB article can sometimes resolve the issue](https://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-ashttps://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-as-pdf-or-xps-add-in-for-2007-microsopdf-or-xps-add-in-for-2007-microso https://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-as-pdf-or-xps-add-in-for-2007-microso)
 
 The more consistent solution is to simply cut down on the number of emails you are sending out at once. 
 
