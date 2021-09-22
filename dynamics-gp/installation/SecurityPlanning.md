@@ -874,9 +874,7 @@ single firewall between the Internet and your data. This firewall may not
 provide any level of advanced security and should not be considered very
 secure. But it is better than nothing.
 
-![A close up of a device-](media/d639b66f5b6f54d33b387752ce3c5b9d.jpg)
-
-(SPONE.jpg)
+![SPONE.jpg](media/d639b66f5b6f54d33b387752ce3c5b9d.jpg)
 
 Hopefully, your budget will allow for a more secure solution that will
 protect your corporate data. One such solution is ISA Server. The increased
@@ -884,9 +882,7 @@ cost of this additional server provides a great deal more security than a
 typical consumer firewall, since it usually provides only network address
 translation (NAT) and packet filtering.
 
-![A screenshot of a cell phone-](media/52f56b0aad40b534c291ef527f4f8278.jpg)
-
-(SPISA.jpg)
+![SPISA.jpg](media/52f56b0aad40b534c291ef527f4f8278.jpg)
 
 This single firewall solution is more secure than an entry-level firewall
 appliance and provides Windows-specific security services.
@@ -909,9 +905,7 @@ network. You can configure Web publishing and server publishing rules that
 determine which requests should be sent to a server on the local network,
 providing an increased layer of security for the internal servers.
 
-![A screenshot of a cell phone-](media/82957aacd4aa2fa30aa1fa9ae08988d1.jpg)
-
-(SPNAISA.jpg)
+![SPNAISA.jpg](media/82957aacd4aa2fa30aa1fa9ae08988d1.jpg)
 
 **Two Existing Firewalls** The fourth scenario involves the two firewalls
 implemented with an established perimeter network (DMZ). One or more of
@@ -921,9 +915,7 @@ firewalls, ideally the internal firewall, is intercepting network requests
 for internal servers, inspecting those packets, and then forwarding them on
 behalf of the Internet host.
 
-![A screenshot of a cell phone-](media/0dfa2e7bd362b63da3d8985496d1d34e.jpg)
-
-(SPTWONA.jpg)
+![SPTWONA.jpg](media/0dfa2e7bd362b63da3d8985496d1d34e.jpg)
 
 This scenario is similar to the preceding scenario after the second firewall
 is added.
@@ -1029,7 +1021,7 @@ with your organization.
     to either enable or disable the macros as the document is opened.
 
 - Use virus-scanning software to detect and remove macro viruses.
-    Virusscanning software can detect and often remove macro viruses from
+    Virus-scanning software can detect and often remove macro viruses from
     documents. Microsoft recommends the use of antivirus software that is
     certified by the International Computer Security Association (ICSA).
 
@@ -1641,23 +1633,23 @@ The following information contains answers to questions about windows within Mic
 
 - When I open the User Access window, why aren't the check boxes available?
 
-    When the requirements for using the User Access window are not met, the check boxes are unavailable. Within the User Access window, you have the ability to grant and deny access to companies. This action of granting and denying access is nothing more than adding and removing user accounts to the database and making the user a member of the DYNGRP. This action making check boxes available is determined by the following two factors:
+  When the requirements for using the User Access window are not met, the check boxes are unavailable. Within the User Access window, you have the ability to grant and deny access to companies. This action of granting and denying access is nothing more than adding and removing user accounts to the database and making the user a member of the DYNGRP. This action making check boxes available is determined by the following two factors:
 
-      - What database permissions the current user has when the window is opened.
+  - What database permissions the current user has when the window is opened.
 
-      - The user performing the action has the correct database permissions that are described in the User Access section of this document. We don't have the ability to individually make each check box unavailable based on the permissions that are set at the database window.
+  - The user performing the action has the correct database permissions that are described in the User Access section of this document. We don't have the ability to individually make each check box unavailable based on the permissions that are set at the database window.
 
 - Why is the Save button unavailable in the User Setup window?
 
-    The Save button is unavailable when the current user doesn't have the correct permissions to create a user account. If the current user doesn't belong to the SysAdmin Fixed Server role, then a combination of SQL Server roles must be used to create the login. The current user must be a member of the SecurityAdmin Fixed Server role and at least a member of the Db_Owner role or member of Db_AccessAdmin and Db_SecurityAdmin roles for the DYNAMICS database.
+  The Save button is unavailable when the current user doesn't have the correct permissions to create a user account. If the current user doesn't belong to the SysAdmin Fixed Server role, then a combination of SQL Server roles must be used to create the login. The current user must be a member of the SecurityAdmin Fixed Server role and at least a member of the Db_Owner role or member of Db_AccessAdmin and Db_SecurityAdmin roles for the DYNAMICS database.
 
 - Why is the Delete button unavailable in the User Setup window?
 
-    The Delete button is unavailable when the current user doesn't have the correct permissions to delete a user account. If the current user doesn't belong to the SysAdmin Fixed Server role, then a combination of SQL Server roles must be used to create the login. The current user must be a member of the SecurityAdmin Fixed Server role and at least a member of the Db_Owner role or member of Db_AccessAdmin for all databases that exist in the Company Master table (SY01500). If there are records in the Company Master table that do not have a corresponding database, those records must be removed in order for the Delete button to be available.
+  The Delete button is unavailable when the current user doesn't have the correct permissions to delete a user account. If the current user doesn't belong to the SysAdmin Fixed Server role, then a combination of SQL Server roles must be used to create the login. The current user must be a member of the SecurityAdmin Fixed Server role and at least a member of the Db_Owner role or member of Db_AccessAdmin for all databases that exist in the Company Master table (SY01500). If there are records in the Company Master table that do not have a corresponding database, those records must be removed in order for the Delete button to be available.
 
 - Why is the Password field unavailable in the User Setup window?
 
-    The Password field is unavailable if the system administrator ("sa") user ID is entered in the User Setup window. The "sa" user password cannot be changed within the Microsoft Dynamics GP application because it would be encrypted and rendered useless with any other Microsoft SQL Server tool.
+  The Password field is unavailable if the system administrator ("sa") user ID is entered in the User Setup window. The "sa" user password cannot be changed within the Microsoft Dynamics GP application because it would be encrypted and rendered useless with any other Microsoft SQL Server tool.
 
 ### Security in Microsoft Dynamics GP
 
@@ -1665,20 +1657,19 @@ The following information contains answers to questions about security in Micros
 
 - Will the Microsoft Dynamics GP application recognize any SQL Server role?
 
-    Microsoft Dynamics GP recognizes and uses the following Microsoft SQL Server roles. No other roles are checked to permit or deny access to functionality within the Microsoft Dynamics GP product. It is required that each Microsoft Dynamics GP user be a member of the DYNGRP database role for each Microsoft Dynamics GP database.
+  Microsoft Dynamics GP recognizes and uses the following Microsoft SQL Server roles. No other roles are checked to permit or deny access to functionality within the Microsoft Dynamics GP product. It is required that each Microsoft Dynamics GP user be a member of the DYNGRP database role for each Microsoft Dynamics GP database.
 
-        - SysAdmin Fixed Server–Performs any activity in SQL Server. The permissions of this role span all of the other fixed server roles.
+  - SysAdmin Fixed Server–Performs any activity in SQL Server. The permissions of this role span all of the other fixed server roles.
 
-        - SecurityAdmin Fixed Server–Manages server logins.
+  - SecurityAdmin Fixed Server–Manages server logins.
 
-        - Db_Owner–Performs the activities of all database roles, as well as other maintenance and configuration activities in the database. The permissions of this role span all of the other fixed database roles.
+  - Db_Owner–Performs the activities of all database roles, as well as other maintenance and configuration activities in the database. The permissions of this role span all of the other fixed database roles.
 
-        - Db_BackupOperator–Has permission to back up the database.
+  - Db_BackupOperator–Has permission to back up the database.
 
 - Do integrating products support all of the security features in Microsoft Dynamics GP?
 
-    Some security features are not "rolled" into all of the additional products right away, but will most likely be added in a future release. This means that an administrator might need to use the system administrator ("sa") login to initialize or convert any tables that require a conversion. In order for additional product dictionaries to utilize the security features, a new function, called syUserInRole, has been created, which can determine what database roles the user is a member of.
-
+  Some security features are not "rolled" into all of the additional products right away, but will most likely be added in a future release. This means that an administrator might need to use the system administrator ("sa") login to initialize or convert any tables that require a conversion. In order for additional product dictionaries to utilize the security features, a new function, called syUserInRole, has been created, which can determine what database roles the user is a member of.
 
 ### Kerberos with Dynamics GP and Business Intelligence
 
@@ -1696,7 +1687,7 @@ Microsoft Dynamics GP SQL Server 2008 or 2008 R2 instance or later.
 NOTE: This environment would only be recommended for testing and development purposes.
 
 
-![Screenshot](media/KERB1.jpg)
+![KERB1.jpg](media/KERB1.jpg)
     
     
 
@@ -1713,7 +1704,7 @@ Microsoft SQL Server Reporting Services 2008 or 2008 R2 or later.
 Server 2:
 Microsoft Dynamics GP SQL Server 2008 or 2008 R2 database instance or later.
 
-![Screenshot](media/KERB2.jpg)
+![KERB2.jpg](media/KERB2.jpg)
 
 
 This scenario requires Kerberos to be enabled because the user's Windows credentials need to be passed more than once:
@@ -1765,7 +1756,7 @@ Microsoft SQL Server Reporting Services 2008 or 2008 R2 or later.
 Server 3:
 Microsoft Dynamics GP SQL Server 2008 or 2008 R2 database instance or later.
 
-![Screenshot](media/KERB4.jpg)
+![KERB4.jpg](media/KERB4.jpg)
 
 
 This scenario requires Kerberos to be enabled because the user's Windows credentials need to be passed more than once:
@@ -1790,141 +1781,154 @@ When you switch the data sources to use a specific account the result is that ev
 In order to restrict user access to the SQL Reporting Services reports you'll need to use the security in Report Manager (Native Mode instance) or SharePoint (Integrated Mode instance) to define what company and series folders and individual reports each user or group of users will be able to see, keeping in mind that users will be able to pull data into any report they can see.
 
 To do accomplish this refer to the following steps:
-1)	First, create a new SQL Server login to run your data sources
-a.	Log onto your Microsoft Dynamics GP SQL Server as a user who has permission to administrate SQL Server
-b.	Click Start, then All Programs, then Microsoft SQL Server 2008 (or 2008 R2)and click on SQL Server Management Studio 
-c.	Select the SQL Server instance where your Microsoft Dynamics GP 2010 data is held and connect to it using either Windows or SQL Server authentication
-d.	Expand your SQL Server instance in the Object Explorer
-e.	Expand Security, then Logins
-f.	Right-click on the Logins folder and select New Login…
-g.	Enter a Login name: (e.g. SSRSUser)
-h.	Select SQL Server Authenticate and provide a password for the new login
-i.	Then, select the User Mapping tab on the left
-j.	Place a check by the DYNAMICS database to map a user to that database for this login
-k.	Next, scroll down the list of database roles at the bottom of this window and place a check by rpt_power user
-l.	Repeat steps i-j for each company database you want to report against in Business Portal
-m.	Click OK to create the login and map it to each of these databases
-2)	Next, change the SQL Server Reporting Services data sources to use this new login
-a.	Native Mode:
-i.	Log onto your Microsoft SQL Server Reporting Services server as a user who has administrative rights to the Reporting Services
-ii.	Open Internet Explorer and navigate to your Report Manager site
-1.	If you are unsure of the URL for your Report Manager site you can click on Start, then All Program, then Microsoft SQL Server 2008 (or 2008 R2), then Configuration Tools and open the Reporting Services Configuration Manager
-2.	Connect to your SQL Reporting Services instance and select the Report Manager URL link on the left to view a link to this site
-iii.	Click on the Data Sources folder
-iv.	Click on the GPDYNAMICS data source
-v.	In the Connection string: section make the following change:
-1.	Old text: Integrated Security=True
-2.	New text: Integrated Security=False
-vi.	Then, mark Credentials stored securely in the report server
-vii.	Provide the user name and password for the SQL Server login you created in Step 1 above
-viii.	Click Test Connection to verify your password
-ix.	If the test is successful click Apply
-x.	Repeat steps iv - ix for each Dynamics GP company data source as well
-b.	SharePoint Integrated Mode
-i.	Log onto a server or workstation as a user who has administrative rights to your  Microsoft SharePoint Server 2010 or SharePoint Foundation 2010 and Business Portal 5.1 sites
-ii.	Open Internet Explorer and navigate to your top-level SharePoint Server 2010 or SharePoint Foundation 2010 site
-iii.	Navigate to the folder where you've deployed the Dynamics GP 2010 R2 or later SQL Server Reporting Services reports to
-1.	If you are not sure what SharePoint Server 2010 or SharePoint Foundation 2010 site you deployed the Microsoft Dynamics GP 2010 reports to you can log into Microsoft Dynamics GP 2010 and click on Microsoft Dynamics GP, then point to Tools, then Setup, then System and click on Reporting Tools Setup.
-2.	Click on the Reporting Services tab and note the values of the SharePoint Site and Report Library fields.  If you put these together you'll have the full URL of your SSRS reports in SharePoint
-iv.	Click on the Data Sources folder
-v.	Click on the GPDYNAMICS data source
-vi.	In the Connection string: section make the following change:
-1.	Old text: Integrated Security=True
-2.	New text: Integrated Security=False
-vii.	Then, mark Stored credentials
-viii.	Provide the user name and password for the SQL Server login you created in Step 1 above
-ix.	Click Test Connection to verify your password
-x.	If the test is successful click OK
-xi.	Repeat steps iv - ix for each Microsoft Dynamics GP company data source as well
+
+1. First, create a new SQL Server login to run your data sources
+
+  1. Log onto your Microsoft Dynamics GP SQL Server as a user who has permission to administrate SQL Server
+  2. Click Start, then All Programs, then Microsoft SQL Server 2008 (or 2008 R2)and click on SQL Server Management Studio 
+  3. Select the SQL Server instance where your Microsoft Dynamics GP 2010 data is held and connect to it using either Windows or SQL Server authentication
+  4. Expand your SQL Server instance in the Object Explorer
+  5. Expand Security, then Logins
+  6. Right-click on the Logins folder and select New Login…
+  7. Enter a Login name: (e.g. SSRSUser)
+  8. Select SQL Server Authenticate and provide a password for the new login
+  9. Then, select the User Mapping tab on the left
+  10. Place a check by the DYNAMICS database to map a user to that database for this login
+  11. Next, scroll down the list of database roles at the bottom of this window and place a check by rpt_power user
+  12. Repeat step 1-11 for each company database you want to report against in Business Portal
+  13. Click OK to create the login and map it to each of these databases
+
+2. Next, change the SQL Server Reporting Services data sources to use this new login
+
+  1. Native Mode:
+
+    1. Log onto your Microsoft SQL Server Reporting Services server as a user who has administrative rights to the Reporting Services
+    2. Open Internet Explorer and navigate to your Report Manager site
+    3. If you are unsure of the URL for your Report Manager site you can click on Start, then All Program, then Microsoft SQL Server 2008 (or 2008 R2), then Configuration Tools and open the Reporting Services Configuration Manager
+    4. Connect to your SQL Reporting Services instance and select the Report Manager URL link on the left to view a link to this site
+      1. Click on the Data Sources folder
+      2. Click on the GPDYNAMICS data source
+      3. In the `Connection string:` section make the following change:
+
+          |Old text|New text |
+          |---------|---------|
+          |Integrated Security=True| Integrated Security=False|
+      4. Then, mark Credentials stored securely in the report server
+      5. Provide the user name and password for the SQL Server login you created in Step 1 above
+      6. Click Test Connection to verify your password
+      7. If the test is successful, click Apply
+
+    5. Repeat step 4 for each Dynamics GP company data source as well
+
+  2. SharePoint Integrated Mode
+
+    1. Log onto a server or workstation as a user who has administrative rights to your SharePoint Server and Business Portal sites
+    2. In a browser, navigate to your top-level SharePoint Server or SharePoint Foundation site
+    3. Navigate to the folder where you've deployed the Dynamics GP 2010 R2 or later SQL Server Reporting Services reports to
+
+        If you are not sure what SharePoint Server or SharePoint Foundation site you deployed the Microsoft Dynamics GP reports to, log into Microsoft Dynamics GP, and click on Microsoft Dynamics GP, then point to Tools, then Setup, then System and click on Reporting Tools Setup.
+
+    4. Click on the Reporting Services tab and note the values of the SharePoint Site and Report Library fields.  If you put these together you'll have the full URL of your SSRS reports in SharePoint
+
+    5. Click on the Data Sources folder
+    6. Click on the GPDYNAMICS data source
+    7. In the Connection string: section make the following change:
+
+          |Old text|New text |
+          |---------|---------|
+          |Integrated Security=True| Integrated Security=False|
+
+    8. Then, mark Stored credentials
+    9. Provide the user name and password for the SQL Server login you created in Step 1 above
+    10. Click Test Connection to verify your password
+    11. If the test is successful, click OK
+
+12. Repeat steps 4-11 for each Microsoft Dynamics GP company data source as well
 
 Once you've made this change you've essentially removed the "hop" that needs to occur when SQL Reporting Services needs to fetch data from your Microsoft Dynamics GP SQL Server instance.
-
-
 
 Configuring Kerberos Delegation
 In order to configure Kerberos delegation you need to go through the following steps.
 
-1.	First, you need to find the accounts that are running the services involved in the process of displaying the SQL Server Reporting Services reports:
+1. First, you need to find the accounts that are running the services involved in the process of displaying the SQL Server Reporting Services reports:
 
-Microsoft SQL Server - To find the service account for SQL Server you'll need to log onto the server where SQL Server is installed and running, then go to Start > Administrative Tools > Services.  Find the service that corresponds to your SQL Server instance.
+    - Microsoft SQL Server - To find the service account for SQL Server you'll need to log onto the server where SQL Server is installed and running, then go to Start > Administrative Tools > Services.  Find the service that corresponds to your SQL Server instance.
 
-Microsoft SQL Server Reporting Services - To find the service account for SQL Server Reporting Services you'll need to log onto the server where SQL Server Reporting Services is installed, then click on Start, then All Programs, then point to Microsoft SQL Server 2008 (or R2). Then Configuration Tools, then click on Reporting Services Configuration Manager.  When this window opens connect to the Reporting Services instance that holds your Microsoft Dynamics GP 2010 R2 reports, then click on the Service Account tab on the left.
+    - Microsoft SQL Server Reporting Services - To find the service account for SQL Server Reporting Services you'll need to log onto the server where SQL Server Reporting Services is installed, then click on Start, then All Programs, then point to Microsoft SQL Server 2008 (or R2). Then Configuration Tools, then click on Reporting Services Configuration Manager.  When this window opens connect to the Reporting Services instance that holds your Microsoft Dynamics GP 2010 R2 reports, then click on the Service Account tab on the left.
 
+    ![KERB5.jpg](media/KERB5.jpg)
 
-![Screenshot](media/KERB5.jpg)
+    In this example the SQL Server Reporting Services service is run by the CTS\SSRS domain account.  Please note that you cannot configure Kerberos delegation for a local account, so if this, or any, service is running by a local service account (e.g. NT AUTHORITY\Network Service) you must change them to a domain account.  Review your application documentation for information on changing service accounts.
 
-In this example the SQL Server Reporting Services service is run by the CTS\SSRS domain account.  Please note that you cannot configure Kerberos delegation for a local account, so if this, or any, service is running by a local service account (e.g. NT AUTHORITY\Network Service) you must change them to a domain account.  Review your application documentation for information on changing service accounts.
+    IIS Application Pool for the SharePoint - To find the account that is running the IIS application pool for the site SharePoint is running on you need to log onto your SharePoint server and click on Start, then Administration Tools, then Internet Information Services (IIS) Manager.  Expand the server name node and click on Application Pools.
 
-IIS Application Pool for the SharePoint - To find the account that is running the IIS application pool for the site SharePoint is running on you need to log onto your SharePoint server and click on Start, then Administration Tools, then Internet Information Services (IIS) Manager.  Expand the server name node and click on Application Pools.
+2. Once you have identified the service account for the applicable services you need to go to the domain controller and set up Service Principal Names (SPN).  SPNs tell the domain where services are located in order to delegate the Windows credentials from one machine or service to another.
 
+    1. First, open ADSI Edit by clicking on Start, then Run, then type adsiedit.msc and click OK
+    2. Click on the Action menu and select Connect to…
+    3. Ensure the Default (Domain or server that you are logged into) is selected and click OK
+    4. Expand the menu on the left until you see CN=Users, then click on that node
+    5. Find the record for one of the service accounts you identified (e.g. CN=SQL), right-click on it and select Properties 
+    6. Scroll down to servicePrincipalName, highlight it and click Edit
+    7. You need to enter Service Principal Name for each service as indicated below:
 
-2.	Once you have identified the service account for the applicable services you need to go to the domain controller and set up Service Principal Names (SPN).  SPNs tell the domain where services are located in order to delegate the Windows credentials from one machine or service to another.
-a.	First, open ADSI Edit by clicking on Start, then Run, then type adsiedit.msc and click OK
-b.	Click on the Action menu and select Connect to…
-c.	Ensure the Default (Domain or server that you are logged into) is selected and click OK
-d.	Expand the menu on the left until you see CN=Users, then click on that node
-e.	Find the record for one of the service accounts you identified (e.g. CN=SQL), right-click on it and select Properties 
-f.	Scroll down to servicePrincipalName, highlight it and click Edit
-g.	You need to enter Service Principal Name for each service as indicated below:
-i.	SQL Server - In this example SQL Server is running on a server named SQL and it is using the default port 1443.  You would enter the following SPNs on the CN=SQL account:
-1.	MSSQLSvc/sql:1443
-2.	MSSQLSvc/sql.cts.lab:1443
-a.	sql.cts.lab is the fully qualified domain name of this server
+        1. SQL Server - In this example SQL Server is running on a server named SQL and it is using the default port 1443.  You would enter the following SPNs on the CN=SQL account:
 
-Once you've added these items click OK twice to save the change.
+        - MSSQLSvc/sql:1443
+        - MSSQLSvc/sql.cts.lab:1443
 
-ii.	SQL Server Reporting Services - In this example SQL Server Reporting Services is running on the server named SQL on the default port, 80. You would enter the following SPNs on the CN=SSRS account
-1.	HTTP/sql
-2.	HTTP/sql.cts.lab
+        `sql.cts.lab` is the fully qualified domain name of this server
 
-Once you've added these items click OK twice to save the change.
+        Once you've added these items click OK twice to save the change.
 
-iii.	IIS Application Pool - In this example IIS and SharePoint are running on the server named GPMEMBER on port 84. You would enter the following SPNs on the CN=WebAdmin account
-1.	HTTP/gpmember:84
-2.	HTTP/gpmember.cts.lab:84
+        2. SQL Server Reporting Services - In this example SQL Server Reporting Services is running on the server named SQL on the default port, 80. You would enter the following SPNs on the CN=SSRS account
 
-Once you've added these items click OK twice to save the change.
+        - HTTP/sql
+        - HTTP/sql.cts.lab
 
+        Once you've added these items click OK twice to save the change.
 
-3.	The final step is to enable delegation for each of the service account.
-a.	On the domain controller click on Start, then Administrative Tools and click on Active Directory Users and Computers.
-b.	Click on the Users folder so you can see your service accounts.
-c.	Right-click on one of your service accounts, e.g. SQL and click on Properties
-d.	Click on the Delegation tab
-e.	Mark Trust this user for delegation to specified service only and Use any authentication protocol
-f.	This will enable the bottom part of this window.  Click Add… 
-g.	In this field you need to enter the services that this account will present data to using delegation.  Use the following rules:
-i.	The IIS Application Pool account must present data to SQL Server Reporting Services in order to see if the user has access to the reports that are displayed on the SharePoint pages
-ii.	SQL Server Reporting Services must present data to SQL Server so it can pull data from your Dynamics GP databases into the reports
+        3.  IIS Application Pool - In this example IIS and SharePoint are running on the server named GPMEMBER on port 84. You would enter the following SPNs on the CN=WebAdmin account
 
+        - HTTP/gpmember:84
+        - HTTP/gpmember.cts.lab:84
 
-Example 1: The CTS\WebAdmin user needs to be setup to present delegated credentials to the SQL Server Reporting Services service:
-Click Add… and specify the account that is running the SQL Server Reporting Services service:
-This will pull in the Service Principal Name information that you previously specified.  Just highlight the correct entry and click OK, then click OK again to save the change.
+        Once you've added these items click OK twice to save the change.
 
-You'll also need to set this up for the account that is running SQL Server Reporting Services so it can present delegated credentials to the service that is running SQL Server.
+3.    The final step is to enable delegation for each of the service account.
 
-4.	Finally, you'll need to verify that SQL Server Reporting Services allows the Negotiate authentication protocol.
-a.	Log onto your SQL Server Reporting Services server
-b.	Navigate to the folder where SQL Server Reporting Services is installed
-i.	E.g. C:\Program Files\Microsoft SQL Server\MSRS10_50.SSRS\Reporting Services\ReportServer
-c.	Open the rsreportserver.config file in Visual Studio or Notepad
-d.	Search the file for <AuthenticationTypes>
-e.	This section should look like the following if you're going to use Kerberos delegation:
+    1. On the domain controller click on Start, then Administrative Tools and click on Active Directory Users and Computers.
+    2. Click on the Users folder so you can see your service accounts.
+    3. Right-click on one of your service accounts, e.g. SQL and click on Properties
+    4. Click on the Delegation tab
+    5. Mark Trust this user for delegation to specified service only and Use any authentication protocol
+    6. This will enable the bottom part of this window.  Click Add… 
+    7. In this field you need to enter the services that this account will present data to using delegation.  Use the following rules:
+    8. The IIS Application Pool account must present data to SQL Server Reporting Services in order to see if the user has access to the reports that are displayed on the SharePoint pages
+    9. SQL Server Reporting Services must present data to SQL Server so it can pull data from your Dynamics GP databases into the reports
 
-		<AuthenticationTypes>
-			<RSWindowsNegotiate/>
-			<RSWindowsNTLM/>
-		</AuthenticationTypes>
+        Example 1: The CTS\WebAdmin user needs to be setup to present delegated credentials to the SQL Server Reporting Services service:
+        Click Add… and specify the account that is running the SQL Server Reporting Services service:
+        This will pull in the Service Principal Name information that you previously specified.  Just highlight the correct entry and click OK, then click OK again to save the change.
 
-f.	You may need to add the <RSWindowsNegotiate/> line.  If so, save and close this file.
+        You'll also need to set this up for the account that is running SQL Server Reporting Services so it can present delegated credentials to the service that is running SQL Server.
+
+4. Finally, you'll need to verify that SQL Server Reporting Services allows the Negotiate authentication protocol.
+
+    1. Log onto your SQL Server Reporting Services server
+    2. Navigate to the folder where SQL Server Reporting Services is installed, such as C:\Program Files\Microsoft SQL Server\MSRS10_50.SSRS\Reporting Services\ReportServer
+    3. Open the rsreportserver.config file in Visual Studio or Notepad
+    4. Search the file for <AuthenticationTypes>
+    5. This section should look like the following if you're going to use Kerberos delegation:
+
+        ```xml
+        <AuthenticationTypes>
+            <RSWindowsNegotiate/>
+            <RSWindowsNTLM/>
+        </AuthenticationTypes>
+        ```
+
+    6. You may need to add the <RSWindowsNegotiate/> line.  If so, save and close this file.
 
 Once you've gone through the above configuration you should be able to access the SQL Server Reporting Services reports using Kerberos delegation
-
-
-
-
-
-
-
 

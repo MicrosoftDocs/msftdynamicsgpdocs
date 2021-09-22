@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 04/26/2021
+ms.date: 07/08/2021
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -39,8 +39,8 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
   Includes Install, Upgrade and What's New Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
-- [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)
-- [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
+- [Core System Requirements for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_system_requirements)
+- [Upgrade Hot Topic](/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
 - [US Taxes](/dynamics/s-e/gp/tugp2018_391)
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
@@ -58,8 +58,8 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
   Includes Install, Upgrade and What's New Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2018](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
-- [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)  
-- [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
+- [Core System Requirements for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_system_requirements)  
+- [Upgrade Hot Topic](/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
 - [US Taxes](/dynamics/s-e/gp/tugp2018_391)
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
@@ -79,8 +79,8 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
   Includes Install, Upgrade, and Azure Guides
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_PatchReleases_370)
-- [Core System Requirements for Microsoft Dynamics GP](upgrade/system-requirements.md)  
-- [Upgrade Hot Topic](https://docs.microsoft.com/dynamics/s-e/)
+- [Core System Requirements for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2016_system_requirements)  
+- [Upgrade Hot Topic](/dynamics/s-e/)
 - [US Year-End](/dynamics/s-e/gp/usgpye2016_395)  
 - [US Taxes](/dynamics/s-e/gp/tugp2016_390)  
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2016_284)

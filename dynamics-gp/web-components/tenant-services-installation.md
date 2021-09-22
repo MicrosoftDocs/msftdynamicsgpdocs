@@ -16,11 +16,11 @@ ms.reviewer:
 # Tenant Services Installation
 This portion of the documentation explains how to install the Microsoft Dynamics
 GP Tenant Services. The following information is discussed:
-- Chapter 4, “Prerequisites,” describes the software required and the actions you
+- Chapter 4, "Prerequisites," describes the software required and the actions you
 must perform before you install the Microsoft Dynamics GP Tenant Services.
-- Chapter 5, “Tenant Services Installation,” describes the steps to install Tenant
+- Chapter 5, "Tenant Services Installation," describes the steps to install Tenant
 Services.
-- Chapter 6, “Tenant Manager Installation,” describes the steps to install the
+- Chapter 6, "Tenant Manager Installation," describes the steps to install the
 Tenant Manager and the Web Management Console.
 
 ## Chapter 4 Prerequisites
@@ -259,7 +259,7 @@ To install Tenant Services, complete the following procedure:
     Run all from My Computer | Installs the feature and all of its sub features. Not Available Do not install the selected feature. You can install the feature later using Add or Remove Programs.
     Not Available | Do not install the selected feature. You can install the feature later using Add or Remove Programs.
 
-    To include a feature, click the button and select “Run from My Computer” To exclude a feature, click the button and select “Not Available”
+    To include a feature, click the button and select "Run from My Computer" To exclude a feature, click the button and select "Not Available"
 
 5. Configure the Tenant Discovery Service settings.
 
@@ -279,14 +279,15 @@ To install Tenant Services, complete the following procedure:
 6. Configure the Tenant Management Service settings.
 
     To install the management service you have to specify the following settings:
-    Setting | Description
-    -|-
-    Port | The default port value is 48631. If the port is in use, the next available port is selected. In addition, you can enter the port number that you want the service to use.
-    Certificate | Specify a certificate when you want the connections to the service to use SSL. A certificate is optional. The default value is Not Selected. If you do not specify a certificate, SSL will not be used to encrypt messages to and from the service. To review information about available certificates, click the certificate in the drop-down list, and then click the View button. A dialog window opens that provides detailed information about the certificate.
-    Host name | The fully qualified domain name of the server where you have installed the security certificate.
-    Domain | Enter the domain name associated with login ID you want to use with the service.
-    User name | Specify the login name for the service.
-    Password | Enter the password for the specified login ID.
+
+    |Setting | Description|
+    |-|-|
+    |Port | The default port value is 48631. If the port is in use, the next available port is selected. In addition, you can enter the port number that you want the service to use.|
+    |Certificate | Specify a certificate when you want the connections to the service to use SSL. A certificate is optional. The default value is Not Selected. If you do not specify a certificate, SSL will not be used to encrypt messages to and from the service. To review information about available certificates, click the certificate in the drop-down list, and then click the View button. A dialog window opens that provides detailed information about the certificate.|
+    |Host name | The fully qualified domain name of the server where you have installed the security certificate.|
+    |Domain | Enter the domain name associated with login ID you want to use with the service.
+    |User name | Specify the login name for the service.|
+    |Password | Enter the password for the specified login ID.|
 
     ![install three](media/tenant-services-install-03.PNG "installation three")
 
@@ -296,14 +297,14 @@ To install Tenant Services, complete the following procedure:
 
     If you specified that you want to install the public discovery service, you have to supply the following settings:
 
-    Setting | Description
-    -|-
-    Port | The default port value is 48632. If the port is in use, the next available port is selected. In addition, you can enter the port number that you want the service to use.
-    Certificate | If you install the public discovery service, you have to use SSL. SSL insures that messages to and from the service are encrypted. Specify the security certificate you want the service to use. If you do not specify a certificate, you will not be able to proceed with the install. To review information about available certificates, click the certificate in the drop-down list, and then click the View button. A dialog window opens that provides detailed information about the certificate.
-    Host name  | The fully qualified domain name of the server where you have installed the security certificate.
-    Domain | Enter the domain name associated with login ID you want to use with the service.
-    User name | Specify the login name for the service.
-    Password | Enter the password for the specified login ID.
+    |Setting | Description|
+    |-|-|
+    |Port | The default port value is 48632. If the port is in use, the next available port is selected. In addition, you can enter the port number that you want the service to use.|
+    |Certificate | If you install the public discovery service, you have to use SSL. SSL insures that messages to and from the service are encrypted. Specify the security certificate you want the service to use. If you do not specify a certificate, you will not be able to proceed with the install. To review information about available certificates, click the certificate in the drop-down list, and then click the View button. A dialog window opens that provides detailed information about the certificate.|
+    |Host name  | The fully qualified domain name of the server where you have installed the security certificate.
+    |Domain | Enter the domain name associated with login ID you want to use with the service.
+    |User name | Specify the login name for the service.|
+    |Password | Enter the password for the specified login ID.|
 
     ![install four](media/tenant-services-install-04.PNG "installation four")
 
@@ -425,7 +426,7 @@ in the Tenant Manager Installation section.
 ### What to do next
 After you install and configure Microsoft Dynamics GP Tenant Services, consider taking the following steps:
 
-- Install or upgrade the Tenant Manager snap-in for the Microsoft Dynamics GP Web Management Console. You use the Tenant Manager to create, update, and remove tenants, users, and multitenant applications. For information about how to install the Tenant Manager snap-in, see Chapter 6, “Tenant Manager Installation”.
+- Install or upgrade the Tenant Manager snap-in for the Microsoft Dynamics GP Web Management Console. You use the Tenant Manager to create, update, and remove tenants, users, and multitenant applications. For information about how to install the Tenant Manager snap-in, see Chapter 6, "Tenant Manager Installation".
 
 - Learn about developing multitenant applications that use the Microsoft Dynamics GP Tenant Services. To learn about the services and the application programming interface (API) they provide, find and review the Microsoft Dynamics GP Web Client Services Reference.
 
@@ -442,13 +443,13 @@ Management Console.
 The following information describes how to install the Web Management Console
 and the Tenant Manager:
 
-• Add the security certificate to the web site
-• Configure the web site to use SSL.
-• Install Tenant Manager and the Web Management Console
-• Configure the Web Management Console database
-• Upgrading an earlier installation
-• Start the Tenant Manager
-• What to do next
+* Add the security certificate to the web site
+* Configure the web site to use SSL.
+* Install Tenant Manager and the Web Management Console
+* Configure the Web Management Console database
+* Upgrading an earlier installation
+* Start the Tenant Manager
+* What to do next
 
 ### Add the security certificate to the web site
 
@@ -701,9 +702,9 @@ To upgrade Tenant Manager, complete the following steps:
     The wizard shows the existing SQL connection information for the Web
     Management Console. Verify the following values and then click Next:
 
-    • Server name
-    • Database name
-    • Type of authentication
+    * Server name
+    * Database name
+    * Type of authentication
 
 7. View the Configuration Status and Actions.
 
@@ -737,18 +738,18 @@ After you install the Tenant Manager console, you have to specify the services y
 
     The default address for the Web Management Console is:
 
-        https://ServerName:PortNumber/WebManagementConsole
+      `https://ServerName:PortNumber/WebManagementConsole`
 
     The address requires that you specify the following information:
 
-    URL component | Description
-    -|-
-    ServerName | The fully-qualified domain name (FQDN) for the server that hosts the web site. The name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
-    PortNumber | The port for the web site that you are using. If you chose to install on the default web site (port 80) then you do not need to supply the port number.
+    |URL component | Description|
+    |-|-|
+    |ServerName | The fully-qualified domain name (FQDN) for the server that hosts the web site. The name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.|
+    |PortNumber | The port for the web site that you are using. If you chose to install on the default web site (port 80) then you do not need to supply the port number.|
 
     A typical URL to access the Microsoft Dynamics GP Web Management Console looks similar to the following:
-    
-        https://gpweb.contoso.com/WebManagementConsole
+
+      `https://gpweb.contoso.com/WebManagementConsole`
 
 3. View the Web Management Console home page.
 
@@ -770,7 +771,7 @@ After you install the Tenant Manager console, you have to specify the services y
 
     The following example shows the format of the URL:
 
-        https://<servername>:<port>/TenantManagementService
+      `https://<servername>:<port>/TenantManagementService`
 
     ![install ten](media/tenant-services-install-10.PNG "installation 10")
 

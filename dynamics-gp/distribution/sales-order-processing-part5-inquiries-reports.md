@@ -1,5 +1,5 @@
 ---
-title: Sales order processing part 6| Microsoft Docs
+title: Sales order processing part 5 inquiries and reports
 description: Learn about inquiries and reports in the sales order processing module in Dynamics GP.
 author: tnistler
 
@@ -15,9 +15,9 @@ ms.author: theley
 
 This part of the sales order processing documentation explains how to use inquiries and reports to analyze your sales activity. The inquiry windows and reports in Sales Order Processing allow you to access information quickly and to display the information either on screen or on a printed report. The following topics are discussed:
 
-- *Chapter 28, “Inquiries,”* explains how to use the Sales Order Processing inquiry windows to view document and item information.
+- *Chapter 28, "Inquiries,"* explains how to use the Sales Order Processing inquiry windows to view document and item information.
 
-- *Chapter 29, “Reports,”* describes how to use reports to analyze sales activity and determine the status of sales documents.
+- *Chapter 29, "Reports,"* describes how to use reports to analyze sales activity and determine the status of sales documents.
 
 ## Chapter 28: Inquiries
 
@@ -67,7 +67,7 @@ The first time you open these windows after registering Multicurrency Management
 
 A reporting currency is used to convert functional currency amounts to another currency on inquiries and reports. For example, if the British pound is the functional currency for a company, you can set up the euro as your reporting currency to view an inquiry window with currency amounts displayed in the euro currency.
 
-During the reporting currency setup in Multicurrency Management, you’ll set up a reporting currency and enter a default exchange rate and rate calculation method. Depending on how your system is set up, you may be able to override the default reporting currency exchange rate or rate calculation method on inquiries and reports. To change the default reporting currency exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate to open the Modify Reporting Rate window.
+During the reporting currency setup in Multicurrency Management, you'll set up a reporting currency and enter a default exchange rate and rate calculation method. Depending on how your system is set up, you may be able to override the default reporting currency exchange rate or rate calculation method on inquiries and reports. To change the default reporting currency exchange rate, choose View \>\> Currency \>\> Modify Reporting Rate to open the Modify Reporting Rate window.
 
 For more information about reporting currency, see the Multicurrency Management documentation.
 
@@ -82,7 +82,7 @@ You can view information as it was originally entered by clicking on link fields
 1. Open the Salesperson Inquiry window.
     (Sales \>\> Inquiry \>\> Salesperson)
 
-    ![](media/SOage189.jpg)
+    ![SOage189.jpg](media/SOage189.jpg)
 
 2. Select the Sales Order Processing module.
 
@@ -116,7 +116,7 @@ You can view information as it was originally entered by clicking on link fields
 
 3. Mark to include unposted documents or documents that have been moved to history.
 
-    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven't been transferred or invoices and returns that haven't been posted.
 
     - **History** These documents have been completely processed and moved to history. They include quotes, orders, and back orders that have been completely transferred, cancelled, or voided, and invoices and returns that have been posted or voided.
 
@@ -137,20 +137,20 @@ You can set up an inquiry with multiple restrictions, save it, and use this inqu
 1. Open the Sales Inquiry Restrictions window.
     (Sales \>\> Inquiry \>\> Restrict Sales Documents)
 
-    ![](media/SOage191.jpg)
+    ![SOage191.jpg](media/SOage191.jpg)
 
 2. Enter or select an Inquiry ID.
 
 3. Mark to include unposted documents or documents that have been moved to history.
 
-    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven't been transferred or invoices and returns that haven't been posted.
     - **History** These documents have been completely processed and moved to history. They can include quotes, orders, and back orders that have been completely transferred, cancelled, or voided, and invoices and returns that have been posted or voided.
 
 4. Select a sorting option and a range restriction for this inquiry ID. You can sort by document type, customer ID, document date, or document number. Choose Insert after defining each restriction. You can enter an unlimited number of restrictions.
 
     > [!NOTE]
-    > You can enter only one restriction for each restriction type. For example, if you enter a restriction for document numbers INV1000 through INV1010, you can’t enter another restriction for document numbers INV1100 through INV1150. To specify multiple ranges, you must create separate inquiry IDs for each range.
-    > To enter the range for a restriction during the actual inquiry, insert a restriction without entering a range. When you use the Inquiry ID, you’ll be asked to enter the starting and ending values. For example, you can insert a range restriction for the master number. When you use the Inquiry ID, you will be asked to enter a starting and ending master number.
+    > You can enter only one restriction for each restriction type. For example, if you enter a restriction for document numbers INV1000 through INV1010, you can't enter another restriction for document numbers INV1100 through INV1150. To specify multiple ranges, you must create separate inquiry IDs for each range.
+    > To enter the range for a restriction during the actual inquiry, insert a restriction without entering a range. When you use the Inquiry ID, you'll be asked to enter the starting and ending values. For example, you can insert a range restriction for the master number. When you use the Inquiry ID, you will be asked to enter a starting and ending master number.
 
 5. Choose Inquiry to process the inquiry or choose Save to save the inquiry ID.
 
@@ -167,15 +167,15 @@ You can set up inquiry IDs in the Sales Inquiry Restriction window. For more inf
 
 2. Choose an Inquiry ID. The documents included in the inquiry range will appear in the scrolling window.
 
-    If the inquiry ID has a restriction without a range, you’ll be asked to enter the starting and ending values. For example, you can insert a range restriction for the master number. When you use the Inquiry ID to process an inquiry, you’ll be asked to enter a starting and ending master number.
+    If the inquiry ID has a restriction without a range, you'll be asked to enter the starting and ending values. For example, you can insert a range restriction for the master number. When you use the Inquiry ID to process an inquiry, you'll be asked to enter a starting and ending master number.
 
     To view more information about a document or customer ID in the list, select the record and click a link to a window showing more information. If you click the Customer ID link, you can view the information about the customer in the Customer Inquiry or Sales Prospect Maintenance window. If you click the Document Number link, you can view the original sales document in the Sales Transaction Inquiry Zoom window.
 
 3. You can further restrict the documents in the scrolling window by marking Unposted or History and choosing Redisplay to include unposted documents or documents that have been moved to history.
 
-    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven't been transferred or invoices and returns that haven't been posted.
     - **History** These documents have been completely processed and moved to history. They can include quotes, orders, and back orders that have been completely transferred, cancelled, or voided, and invoices and returns that have been posted or voided.
-    If you want to see the purchase orders that would be created from these documents, choose the Purchase button. For more information about creating purchase orders, see *Chapter 21, “New purchase orders.”*
+    If you want to see the purchase orders that would be created from these documents, choose the Purchase button. For more information about creating purchase orders, see *Chapter 21, "New purchase orders."*
 
 4. To print the contents of this window, choose File \>\> Print or the printer icon button or press CTRL+P. The Sales Document Inquiry Report by Range will be printed.
 
@@ -188,13 +188,13 @@ Use the Sales Order Processing Item Inquiry window to view all documents entered
 1. Open the Sales Order Processing Item Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Items)
 
-    ![](media/SOage193.jpg)
+    ![SOage193.jpg](media/SOage193.jpg)
 
 2. Choose a range of item numbers, document numbers, or document types to view.
 
 3. Choose which document types to include in the inquiry by using the SHIFT or CTRL key in conjunction with the arrow keys. Mark to include unposted documents or documents that have been moved to history.
 
-    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven't been transferred or invoices and returns that haven't been posted.
     - **History** These documents have been completely processed and moved to history. They include quotes, orders, and back orders that have been completely transferred, cancelled, or voided and invoices and returns that have been posted or voided.
 
 4. Choose Redisplay. The documents included in the inquiry range will be displayed in the scrolling window.
@@ -218,12 +218,12 @@ You can use the Sales Serial-Lot Number Inquiry window to view sold items that a
 1. Open the Sales Serial-Lot Number Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Serial/Lots)
 
-    ![](media/SOage195.jpg)
+    ![SOage195.jpg](media/SOage195.jpg)
 
 2. Enter or select an item number.
 
 3. Select the sites to include and mark to include unposted documents or documents that have been moved to history.
-    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven't been transferred or invoices and returns that haven't been posted.
     - **History** These documents have been completely processed and moved to history. They can include quotes, orders, and back orders that have been completely transferred, cancelled, or voided and invoices and returns that have been posted or voided.
 
 4. Choose to view all the serial/lot number information for this item or choose a range of serial/lot numbers, customers, or document types. You also can choose a specific site and a date range.
@@ -236,20 +236,20 @@ You can use the Sales Serial-Lot Number Inquiry window to view sold items that a
 
 ### Viewing sales process holds
 
-Use the Sales Process Holds Inquiry window to view documents that have a process hold assigned to them. For example, your company might assign a process hold to all discounted orders, which prevents them from being transferred to an invoice until the transaction is approved. If you’re responsible for approving orders, this window can provide you with a list of orders that have been assigned that particular process hold.
+Use the Sales Process Holds Inquiry window to view documents that have a process hold assigned to them. For example, your company might assign a process hold to all discounted orders, which prevents them from being transferred to an invoice until the transaction is approved. If you're responsible for approving orders, this window can provide you with a list of orders that have been assigned that particular process hold.
 
 #### To view sales process holds
 
 1. Open the Sales Process Holds Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Process Holds)
 
-    ![](media/SOage197.jpg)
+    ![SOage197.jpg](media/SOage197.jpg)
 
 2. Choose a process hold to view.
 
 3. Mark to display assigned or removed holds and mark to include unposted documents or documents that have been moved to history.
 
-    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven’t been transferred or invoices and returns that haven’t been posted.
+    - **Unposted** These documents are still in process. They can be quotes, orders, or back orders that haven't been transferred or invoices and returns that haven't been posted.
     - **History** These documents have been completely processed and moved to history. They include quotes, orders, and back orders that have been completely transferred, cancelled, or voided, and invoices and returns that have been posted or voided.
 
 4. You can enter or select a range of documents to view.
@@ -262,33 +262,33 @@ Use the Sales Process Holds Inquiry window to view documents that have a process
 
 ### Viewing bulk picking ticket details
 
-If you’re using advanced picking, use the Sales Bulk Pick Detail window to view the details of groups of picking tickets that have already been printed. This is useful if the physical picking ticket is unavailable and you don’t want to reprint the ticket.
+If you're using advanced picking, use the Sales Bulk Pick Detail window to view the details of groups of picking tickets that have already been printed. This is useful if the physical picking ticket is unavailable and you don't want to reprint the ticket.
 
 #### To view bulk picking ticket details
 
 1. Open the Sales Bulk Pick Detail window.
     (Sales \>\> Transactions \>\> Bulk Print \>\> select an available pick \>\> click the Available Pick link)
 
-    ![](media/SOage199.jpg)
+    ![SOage199.jpg](media/SOage199.jpg)
 
 2. Choose OK to close the window.
 
 ### Viewing document status details for a document
 
-If you’re using sales fulfillment workflow, use the Sales Document Status Inquiry window to view the document status details for a document. You can view information such as the date and time that a document status was changed. You can open this window from the Sales Document Range Inquiry window, the Sales Transaction Entry window, and the Sales Order Fulfillment window.
+If you're using sales fulfillment workflow, use the Sales Document Status Inquiry window to view the document status details for a document. You can view information such as the date and time that a document status was changed. You can open this window from the Sales Document Range Inquiry window, the Sales Transaction Entry window, and the Sales Order Fulfillment window.
 
 #### To view document status details for a document
 
 1. Open the Sales Document Status Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Range Inquiry \>\> click the Document Status Link)
 
-    ![](media/SOage201.jpg)
+    ![SOage201.jpg](media/SOage201.jpg)
 
-2. When you’ve finished, close the window.
+2. When you've finished, close the window.
 
 ## Chapter 29: Reports
 
-You can use Sales Order Processing reports to analyze sales activity and identify errors in transaction entry. You can also use reports to review setup, posting, and historical information. Other Sales Order Processing reports are important for the audit trail to ensure that you’re accurately tracking financial data. Use this information to guide you through printing reports and working with report options.
+You can use Sales Order Processing reports to analyze sales activity and identify errors in transaction entry. You can also use reports to review setup, posting, and historical information. Other Sales Order Processing reports are important for the audit trail to ensure that you're accurately tracking financial data. Use this information to guide you through printing reports and working with report options.
 
 For more information about creating and printing reports and the various reporting tools that you can use with Microsoft Dynamics GP, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
@@ -308,25 +308,25 @@ The following table lists the report types available in Sales Order Processing a
 
 | **Report type**    | **Report**                                       | **Printing method**               |
 |--------------------|--------------------------------------------------|-----------------------------------|
-|Activity reports|Sales Quote Report \* </br>Sales Open Order Report \*</br> Sales Back Order Report \* </br>Sales Order Fulfillment Report Sales Document Status Report |Create report options in the Sales Activity Reports window.   </br> \* Indicates reports that can be printed with multicurrency information displayed. </br>† Indicates reports that can be assigned to named printers. </br>See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.|
+|Activity reports|Sales Quote Report \* </br>Sales Open Order Report \*</br> Sales Back Order Report \* </br>Sales Order Fulfillment Report Sales Document Status Report |Create report options in the Sales Activity Reports window.   </br> \* Indicates reports that can be printed with multicurrency information displayed. </br>† Indicates reports that can be assigned to named printers. </br>See "Printers" in the System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.|
 |Setup reports|Sales Order Processing Setup List </br>Sales Quote Setup List </br>Sales Order Setup List</br> Sales Invoice Setup List</br> Sales Back Order Setup List</br> Sales Return Setup List</br> Sales Process Holds Setup List</br> Prospect Setup List</br> Prospect List-Detailed Sales User-defined Fields Setup Lists Picking Instructions Report Customer Picking Instructions List Advanced Picking Setup Sales Fulfillment Workflow Setup List|Choose \>\> Print in the setup windows **or** create report options in the Sales Setup Reports window.|
 |Documents|Quote \*†</br> Order \*†</br> Invoice \*†</br> Back order \*†</br> Return \*†</br> Picking ticket †</br> Packing slip †</br> Bulk Picking ticket †</br> Fulfillment order †|Select a document in the Sales Transaction Entry window and choose File \>\> Print to print a single document, select a batch in the Sales Batch Entry window and choose File \>\> Print to print an entire batch **or** choose Sales \>\> Transactions \>\> Print Sales Documents to print a range of documents **or** choose Sales \>\> Inquiry \>\> Sales Documents to print from history.|
 |Labels|Address labels COD labels Prospect mailing labels|Choose Administration \>\> Reports \>\> Company \>\> Mailing labels and choose a label type from the reports list.|
 |Posting reports|Sales Edit List \*</br> Sales Batch List \*</br> Sales Posting Journal \*†</br> Sales Voided Journal \*†</br> Distribution Breakdown Register \*†</br> Inventory Sales Register \*†</br> Salesperson Register \*†</br> Sales Deposits Journal \*† |Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure.|
 |Edit lists|Sales Edit List\*</br> Sales Batch List\*</br> Sales Edit List Currency Summary\*†</br> Edit Sales Document Status|Choose File \>\> Print in the window you used to complete the procedure.|
-|History reports|Sales Transaction History Report\*</br> Sales History Register\*</br> Distribution Detail History Report\*</br> Sales Quote History Report\*</br> Sales Order History Report\*</br> Sales Serial/Lot History Report\*|Create report options in the Sales History Reports window. </br> \* Indicates reports that can be printed with multicurrency information displayed. </br>† Indicates reports that can be assigned to named printers. </br>See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.|
+|History reports|Sales Transaction History Report\*</br> Sales History Register\*</br> Distribution Detail History Report\*</br> Sales Quote History Report\*</br> Sales Order History Report\*</br> Sales Serial/Lot History Report\*|Create report options in the Sales History Reports window. </br> \* Indicates reports that can be printed with multicurrency information displayed. </br>† Indicates reports that can be assigned to named printers. </br>See "Printers" in the System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.|
 |Utility reports|Transaction Removal Report|These reports will be printed when you complete the corresponding procedure.|
 |Analysis reports|Sales Document Analysis Reports †|Create report options in the MISSINGCONTENT|
 |Processing reports|Holds Processing Preview List |These reports will be printed when you complete the corresponding procedure.|
 |Inquiry reports|Sales Document Inquiry Report|Choose File \>\> Print in the corresponding Inquiry window. </br> \* Indicates reports that can be printed with multicurrency information displayed.|
-|<!--something wrong here-->|Journal Removal Report</br> Account Distribution Removal Report</br> Deposits Removal Report</br> Reconcile-Remove Sales Documents Report</br> Edit Sales Document Status Report</br> Salesperson Report \*†</br>Inventory Sales Report \*†</br> Sales Analysis Reports window</br> Sales Holds Processing Journal</br> Sales Transfer Log</br> Order Fulfillment Status Report</br> Allocation/Fulfillment Exception Report</br> Print Documents Exception Report</br> Purchase Orders Preview List †</br> Purchase Orders Generation Register †</br> Instruction ID Preview List</br> Instruction ID Processing Journal</br> Item Print Option Preview List</br> Item Print Option Processing Journal</br> Sales Bulk Exception Report</br> Automatic Order Allocation Report</br> Document Inquiry Report</br> Item Inquiry Report</br> Serial-Lot Number Inquiry Report</br> Process Holds Inquiry Report</br> Sales Document Status Inquiry Report</br> Automatic Allocation Preview Report|† Indicates reports that can be assigned to named printers.</br> See “Printers” in the System Administrator’s Guide (Help \>\> Contents \>\> select System Administration) for more information.|
+|<!--something wrong here-->|Journal Removal Report</br> Account Distribution Removal Report</br> Deposits Removal Report</br> Reconcile-Remove Sales Documents Report</br> Edit Sales Document Status Report</br> Salesperson Report \*†</br>Inventory Sales Report \*†</br> Sales Analysis Reports window</br> Sales Holds Processing Journal</br> Sales Transfer Log</br> Order Fulfillment Status Report</br> Allocation/Fulfillment Exception Report</br> Print Documents Exception Report</br> Purchase Orders Preview List †</br> Purchase Orders Generation Register †</br> Instruction ID Preview List</br> Instruction ID Processing Journal</br> Item Print Option Preview List</br> Item Print Option Processing Journal</br> Sales Bulk Exception Report</br> Automatic Order Allocation Report</br> Document Inquiry Report</br> Item Inquiry Report</br> Serial-Lot Number Inquiry Report</br> Process Holds Inquiry Report</br> Sales Document Status Inquiry Report</br> Automatic Allocation Preview Report|† Indicates reports that can be assigned to named printers.</br> See "Printers" in the System Administrator's Guide (Help \>\> Contents \>\> select System Administration) for more information.|
 
 ### Specifying a Sales Order Processing report option
 
 Report options include specifications for sorting options and range restrictions for a particular report. In order to print Sales Order Processing reports, you must first create a report option. Each report can have several different options so that you can easily print the information you need. For example, you can create report options for the Sales Quote Report that show either detailed or summary information.
 
 > [!NOTE]
-> A single report option can’t be used by multiple reports. If you want identical options for several reports, you must create them separately.*
+> A single report option can't be used by multiple reports. If you want identical options for several reports, you must create them separately.*
 
 Use the Sales report options windows to create sorting, restriction, printing and emailing options for the reports that have been included with Sales Order Processing.
 
@@ -343,7 +343,7 @@ Use the Sales report options windows to create sorting, restriction, printing an
 3. Choose New to open the report options window. Your selection in step 2 determines which report options window appears.
     For report options window information choose Help \>\> Index; then enter the name of the specific report options window.
 
-4. Name the option and enter information to define the option. The name you choose for the option won’t appear on the report. The selections available for defining report options vary, depending on the report type you’ve selected.
+4. Name the option and enter information to define the option. The name you choose for the option won't appear on the report. The selections available for defining report options vary, depending on the report type you've selected.
 
 5. Enter range restrictions. The Ranges list shows the available options for each report. The available ranges vary, depending on the type of report.
 
@@ -352,13 +352,13 @@ Use the Sales report options windows to create sorting, restriction, printing an
 
 6. Choose Insert to insert the range in the Restrictions List. To remove an existing range from the list, select the range and choose Remove.
 
-7. Choose Email to enter email options for the report option. Once the email options are set up, you’ll be able to send the reports in an email message. You’ll also be able to send this report option in an email from any list view where the report option is displayed.
+7. Choose Email to enter email options for the report option. Once the email options are set up, you'll be able to send the reports in an email message. You'll also be able to send this report option in an email from any list view where the report option is displayed.
 
 8. Choose Destination to select a printing destination. Reports can be printed to the screen, to the printer, to a file or to any combination of these options. If you mark Ask Each Time, you can select printing options each time you print this report option.
 
     For more information about creating and printing reports, refer to your System User's Guide (Help \>\> Contents \>\> select Using The System).
 
-9. To print the report option from the report options window, choose Print before saving it. If you don’t want to print the option now, choose Save and close the window. The report window will be redisplayed.
+9. To print the report option from the report options window, choose Print before saving it. If you don't want to print the option now, choose Save and close the window. The report window will be redisplayed.
 
 ### Microsoft SQL Server Reporting Services reports for Sales Order Processing
 
