@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 09/21/2021
+ms.date: 09/22/2021
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -368,4 +368,51 @@ The more consistent solution is to simply cut down on the number of emails you a
 For example, run your Invoices for one half of your customers, then the other half.
 
 In rare cases the issue is caused by a conflict with a third party add-in. The easiest way to confirm if this may be the case is to rename the GP code folder and then run a repair of GP. This will recreate a new GP code folder without third parties. If the issue continues you can just delete the new folder and rename the old folder back. If the issue is resolved then you can add third parties one-by-one until the issue reoccurs.
+
+
+## Workflow
+
+Workflow email issues usually fall into two possible causes: SMTP issues and Setup issues, overall you can figure out which is which by using the ‘Test E-mail’ button on the Workflow Setup window (GP -> Tools -> Setup -> System -> Workflow Setup). The following steps are split depending on if the test email is received or not.
+
+### My SMTP Test Failed
+
+If you never received the Test E-mail, then you are likely having an issue with SMTP.
+
+First, confirm that you are not using MFA on the account used in the SMTP setup.
+
+Next, make sure that TLS 1.0 is enabled on the SQLserver and on the SMTP server.
+
+Then walk through the following articles:
+[Workflow Notification Email Troubleshooting – Microsoft Dynamics GP Community] (https://community.dynamics.com/gp/b/markpolino/posts/workflow-notification-email-troubleshooting-microsoft-dynamics-gp-community)
+
+[Workflow Notification Email Troubleshooting] (https://community.dynamics.com/gp/b/dynamicsgp/posts/workflow-notification-email-troubleshooting)
+
+
+### My SMTP Test Passed
+
+If you received the test email, then you are now looking at an issue with Active Directory or Message IDs.
+
+First, make sure your SQL Server Service account is setup as a domain account in the same Active Directory as your Approvers (Two-way-trust domains also work). 
+This account will need permission to query the domain holding the Approvers.
+
+Next, try changing your Message IDs on the Workflow Notifications. 
+
+You can do this by opening the Workflow Maintenance window (GP -> Tools -> Setup -> Company -> Workflow Maintenance). 
+Under each step there will be a Send Message field, make sure this is marked and using a default message with a *. 
+
+There are also notification options under the main Workflow tab called ‘Send notifications for completed actions’ make sure these are also using default messages.
+
+Then, check Active Directory and make sure that the Email field on the front of every Approver’s card is filled out with the correct value. 
+
+If it is grayed out, then you are tied to Exchange Online, so these should be correct.
+
+
+![Form 5](media/emailjohn6.jpg)
+
+
+## MFA - Multi-Factor Authentication
+
+- [Set up the application in the Azure Portal](https://docs.microsoft.com/en-us/dynamics-gp/whats-new/multi-factor-authentication)  
+- [Configure MFA in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)  
+
 
