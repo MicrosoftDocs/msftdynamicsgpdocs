@@ -350,7 +350,7 @@ Cause: Setup issue on the Customer/Vendor card
 Solution: To resolve this simply open the Customer/Vendor Card (cards -> Customer or Vendor) and click the Internet Information button next to the Address lookup (looks like a planet). You will also want to check for the Email Address based on Doc Type setting found in the email submenu (email button) on the customer/vendor card. If this is enabled, then check all the ‘…’ email addresses to make sure an email address is check boxed.
 
 
-![Form](media/email5.jpg)
+![Form 5](media/email5.jpg)
 
 
 ###  You must have the Microsoft Save as PDF or XPS add-in for 2007 Microsoft Office
