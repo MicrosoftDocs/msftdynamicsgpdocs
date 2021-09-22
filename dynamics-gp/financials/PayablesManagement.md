@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 09/21/2021
+ms.date: 09/22/2021
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -4282,6 +4282,122 @@ This field displays the date entered in the Transmission Date field in the Gener
 
 Calculation 
 You can use any of the following calculations. The calculations often are located in the batch footers or file footers of flat files
+
+Format options are available when the file format is mapped to data or to calculations that are related to money and dates. 
+
+
+| **Calculation**                           | **Description**                                                                |
+|-------------------------------------------|--------------------------------------------------------------------------------|
+| Addenda record indicator                  | 0 or 1 depending on whether the addenda record type is defined for the format. |
+| Batch count                               | The number of batches in the file.                                             |
+| Block count                               | The number of physical blocks in the file, including the file header           |
+                                                 and the file control records. A block contains 940 characters.              |
+| Hash total                                | Each detail record is hashed to provide a check against inadvertent            |
+                                                 alteration of data contents.                                                |
+| Detail count                              | Total number of detail lines in the file.                                      |
+| Addenda count                             | Total number of addenda lines for each detail line.                            |
+| Line Count                                | Total number of lines in the file.                                             |
+| Total credit amount                       | Total amount of all credit lines in the file.                                  |
+| Total debit amount                        | Total amount of all debit lines in the file.                                   |
+| US-NACHA trace number                     | Uniquely identifies each entry with the batch.                                 |
+| Total number of credits                   | Total number of credits in the file.                                           |
+| Total number of debits                    | Total number of debits in the file.                                            |
+
+Field formats for dates
+
+When you map to a date field you’re asked to choose a date format. The following field formats for the date field type can be used. In the following list, Y represents the year, M represents the month, D represents the day of the month, day number represents the Julian date, and ISO date time follows ISO date time formatting requirements.
+•	YYMM
+•	YYMMDD
+•	YYYYMMDD •	MMYY
+•	MMDDYYYY •	DDMMYY
+•	DDMMYYYY
+•	Day number
+•	YY + Day number
+•	YYYY + Day number
+•	ISO date time
+
+Field formats for amounts
+
+When you map to an amount field, you have the option of removing the decimal place indicator. Two decimal places are provided for amount fields by default. If you choose to remove the decimal place indicator, you must specify the number of places after the decimal.
+
+The following table illustrates the change in amounts when the format is changed to remove the two default decimal places. 
+
+|------------------------|----------------|
+|Unformatted amount      | 123.45         |
+|Remove decimal places   | Yes            |
+|Decimal places          | 2              |
+|Formatted amoun         | 12345          |
+
+
+#### Setting up an EFT file format
+
+1.	Open the EFT File Format Maintenance window  (Cards >> Financial >> EFT File Format)
+2.	Enter or select a format ID and description.
+3.	Select a series. 
+4.	Select a format type. The number of fields, field lengths, starting and ending positions, and other information is displayed for the selected format type. 
+5.	Select to automatically generate a settlement for each transaction, if needed.
+6.	Choose Import/Export to import or export a file format to use in another company.
+7.	Choose Save to save your changes. 
+
+ ![screenshot](media/eftfileformat1.jpg)
+ 
+OPTIONAL:
+If you want, insert this additional information in-between the existing steps 5 and 6 to add some info about some of the other newer fields in the above window. 
+
+A. Select to include the Detail line for Addenda information.  With this marked, as many addenda lines will print for each invoice that makes up the payment.  Map the fields for the Addenda Line type as needed. 
+
+B. Mark Use Pad Blocks to add padded lines to the end of the EFT file as specified by the bank. 
+                Pad Character –  Enter the character or filler to pad the line with.  
+                Number of Pad Chars –  Enter how many characters across the line should be. 
+                Pad lines in Multiple of -  Enter the block count or blocking factor as specified by the bank.  
+
+C. Mark the checkbox for Delimit Fields and select from Comma, Tab, Space, or Other character as specified by the bank.   For the Text Qualifier, ‘None’ will default, or select from a single apostrophe or a double apostrophe to signify text.  Expand the lines in the EFT file, and mark the checkbox for Text Qualifier for each field that should be printed with the Text Qualifier around it.  
+
+
+#### Importing or exporting an EFT file format
+
+Use the EFT File Format Import/Export window to transfer file formats electronically. This is useful when setting up EFT information for multiple companies—if the same bank is used. You can create EFT file formats in one company, export them, and then import them in another company to reduce setup time
+
+To import or export an EFT file format
+
+1.	Open the EFT File Format Import/Export window. (Cards >> Financial >> EFT File Format >> select an EFT Format ID >> Import/ Export button)
+2.	If you’re importing a file format, enter or select the location of the format you’re importing.
+3.	If you’re exporting a file format, enter or select the location of the format you’re exporting to. 
+4.	Choose Import to import the format from the selected location, or Export to export the format to the selected location. 
+
+
+## Part 6: EFT setup for Payables Management
+
+This part of the documentation describes how to set up information making electronic payments to vendors using Payables Management. 
+
+#### Entering payables EFT options
+
+Use Checkbook EFT Payables Options window to specify options and output file locations for payables EFT transactions. 
+
+To enter payables EFT options:
+
+1.	Open the Checkbook EFT Payables Options window. (Cards >> Financial >> Checkbook >> select a checkbook >> EFT Bank >> Payables Options)
+
+2.	Select to use check numbers or EFT numbers for payables EFT transactions. If you select EFT numbers, enter the next EFT payment number. 
+Selecting Use Check Number will cause a non-negotiable check to be printed for each EFT transaction. If you use paper checks, you might want to use EFT numbers to minimize the number of paper checks used for transactions that are sent electronically. If Use EFT Numbers is selected, you can print a remittance to send to the vendor. The remittance number will be the next available EFT number.
+
+3.	Mark the Payables Prenote Required option if your bank requires prenotes. 
+
+4.	Enter the prenote grace period: the number of days to wait after generating a prenote for a new vendor record before transferring funds to the vendor electronically. The prenote date is compared to the payment date. 
+
+5.	Enter the paths and the filenames to use for EFT files generated in Payables Management. Because EFT files contain sensitive information, save them in a secure location. If you are using Microsoft Windows Vista®, Windows® 7, or Windows Server® 2008, files can’t be saved to the folder where Microsoft Dynamics GP program files are stored, typically C:\Program Files\Microsoft Dynamics\GP.
+
+6.	Select a single format for the output file or enter multiple formats to tailor a format to a vendor. 
+
+If you are using multiple formats and are in the United States, use Business, Corporate, or Personal for standard ACH transactions and Foreign for international ACH transactions (IAT) transactions. 
+
+If you are using an IAT file format and a standard ACH file format, a separate output file is generated for the IAT file format and the standard ACH file format. For the IAT file format, an output file is created for each destination country. 
+
+Use the expansion buttons to open the EFT File Format Setup window, where you can enter information for the selected output file format. 
+
+7.	Choose the Generate Prenotes button to generate a prenote file that you can send to your bank.
+
+8.	Choose OK to save your changes. 
 
 
 
