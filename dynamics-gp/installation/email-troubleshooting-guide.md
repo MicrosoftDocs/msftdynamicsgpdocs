@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 09/14/2021
+ms.date: 09/21/2021
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -234,7 +234,139 @@ Review the Template for any issues:
 
 * If using a terminal server/Citrix environment, Outlook must be open on the server for using MAPI
 
-* Another common issue with e-mail is when users get a new workstation. They made need to update the Registry when using MAPI.  They can do this by following the steps in the MAPI Specific issues above or in the Word document.
+* Another common issue with e-mail is when users get a new workstation. They made need to update the Registry when using MAPI.  They can do this by following the steps in the MAPI Specific issues above.
 
 
+### Send Documents in email check box is grayed out when trying to send a Remittance
+
+Note: Common issues for PM EFT Remittances
+
+Issue: User is attempting to email Remittances, but the checkbox is grayed out:
+
+![Form](media/email1.jpg)
+
+Cause: This issue has a few different causes, usually setup or 3rd party involvement Solution: 
+
+Try the following:
+1. Check to see if the vendor is setup to allow for emailing:
+Go to Purchasing >> Cards >> Vendor >> select a vendor >> E-mail.
+In the Send Forms as Email section confirm that Vendor Remittance check box is checked.
+
+
+![Form](media/email2.jpg)
+
+If this is correct, check to see if Mekorma MICR is installed, if so make sure the Mekorma MICR System Options are set to have email enabled, or else the "Send Document in email' checkbox in the Remittance window will not be available to mark (or grayed out). To check this setting, go to Microsoft Dynamics GP | Tools | Setup | System | Mekorma MICR | System Options. Mark the checkbox for 'Enable Email Remittance' and click Save.
+
+[More information regarding issues with this process can be found below:]
+(https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/10/24/quick-step-guide-to-ehttps://community.dynamics.com/gp/b/dynamicsgp/archive/2016/10/24/quick-step-guide-to-e-mail-pm-eft-remittances-in-mdgp-2015-2016mail-pm-eft-remittances-in-mdgp-2015-2016)
+
+
+### Email button is grayed out in Sales Order Processing
+
+Note: Unique to Sales Order Processing
+
+Issue: User is attempting to from a Sales Order Processing window, but the option to email is grayed out.
+
+Cause: GP will only email the Blank Paper options for reports.
+
+Solution: Try the following:
+1. Go to: Sales >> Setup >> Sales Order Processing >> Sales Document Setup button >> select the
+2. Document Type they are trying to send (quote, order, invoice etc)
+3. Make sure the Format is set to Blank Paper
+
+![Form](media/email3.jpg)
+
+
+### You must activate e-mail functionality for this document before it can be sent in email
+
+Note: Companywide setup issue
+
+Issue: User is attempting to email out a document that is not allowed in the company Cause: GP will only allow emailing on documents you tell it to.
+
+Solution: Try the following:
+
+1.	For Sales: Tools>>Setup>>Sales>>E-mail Settings. The document type you are trying to send needs to be selected in this window
+2.	For Purchasing:  Tools>>Setup>>Purchasing>>E-mail Settings. The document you are trying to send needs to be selected in this window.
+
+
+###  The company does not allow the sending of (DOCX, HTML, PDF, XPS) files
+
+Note: Companywide setup issue
+
+Issue: User is attempting to email out a document type that is not allowed in the company Cause: GP will only allow emailing on document types you tell it to.
+
+Solution: Try the following:
+
+To resolve-Tools>>Setup>>Company>>E-mail Settings. Here you will need to enable the document type you are attempting to send
+
+![Form](media/email4.jpg)
+
+
+###  A word template must be assigned before sending this document
+
+Note: Companywide setup issue, usually happens to new Template users. 
+
+Issue: User is attempting to email out a modified report that has no corresponding template.
+
+Cause: There is no template assigned to email Solution: Try one the following:
+
+1.	Use the Standard report in the Alternate/Modified Forms and Reports setup window Tools -> setup -> System -> Alternate/Modified Forms and Reports
+2.	Create a modified template using the New button on the Template Maintenance window
+3.	Reports -> Template Maintenance
+
+Don’t forget to assign the template for either option by using the Assign button on the Template Maintenance window (Reports -> Template Maintenance)
+
+
+###  Dynamics GP shows Templates Processing, but they never complete or an error appears
+
+Note: There is a template setup, but none are assigned to the company
+
+Issue: User is attempting to email out a report that has no assigned template, but one exists
+
+Cause: There is a template setup, but none are assigned to the company
+
+Solution: To resolve this simply assign a template for the report by using the Assign button on the Template Maintenance window (Reports -> Template Maintenance)
+Also check to make sure that that Dexterity Shared Components is installed at a version that matches your version of Microsoft Dynamics GP.
+
+
+###  This document type cannot be sent in e-mail for this customer/vendor
+
+Note: Common for newly entered customers/vendors, or those that have been imported. 
+
+Issue: User is attempting to email out a document type that has not been enabled for the customer/vendor
+
+Cause: Setup issue on the Customer/Vendor card
+
+Solution: To resolve this simply open the Customer/Vendor Card (cards -> Customer or Vendor) and click the email button. Each document you are attempting to email must be check marked. If these are grayed out, then the Company wide setting is also unmarked. You can find out about this here.
+
+
+###  A To, CC, or Bcc address could not be found
+
+Note: Common for newly entered customers/vendors, or those that have been imported. 
+
+Issue: User is attempting to email out for a customer/vendor that does not have an email address.
+
+Cause: Setup issue on the Customer/Vendor card
+
+Solution: To resolve this simply open the Customer/Vendor Card (cards -> Customer or Vendor) and click the Internet Information button next to the Address lookup (looks like a planet). You will also want to check for the Email Address based on Doc Type setting found in the email submenu (email button) on the customer/vendor card. If this is enabled, then check all the ‘…’ email addresses to make sure an email address is check boxed.
+
+
+![Form](media/email5.jpg)
+
+
+###  You must have the Microsoft Save as PDF or XPS add-in for 2007 Microsoft Office
+
+Note: Either caused by an item in the KB below or is a performance problem.
+
+Issue: User is attempting to send out a large set of emails
+
+Cause: Performance problem
+
+Solution: [The following KB can sometimes resolve the issue] (https://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-ashttps://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-as-pdf-or-xps-add-in-for-2007-microsopdf-or-xps-add-in-for-2007-microso https://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-as-pdf-or-xps-add-in-for-2007-microso)
+
+The more consistent solution is to simply cut down on the number of emails you are sending out at once. 
+
+For example, run your Invoices for one half of your customers, then the other half.
+
+In rare cases the issue is caused by a conflict with a third party add-in. The easiest way to confirm if this may be the case is to rename the GP code folder and then run a repair of GP. This will recreate a new GP code folder without third parties. If the issue continues you can just delete the new folder and rename the old folder back. If the issue is resolved then you can add third parties one-by-one until the issue reoccurs.
 
