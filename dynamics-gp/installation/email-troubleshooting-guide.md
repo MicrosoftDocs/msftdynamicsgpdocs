@@ -126,7 +126,7 @@ Solution: The following path is the best route for generic login issues:
 
 1. Confirm MFA is disabled  
 
-    If it is enabled, attempt to use an App Password instead of the account’s normal password. For more information, see [App Passwords] (https://support.microsoft.com/en-us/help/12409/microsoft-account-apppasswords-and-two-step-verification)  
+    If it is enabled, attempt to use an App Password instead of the account’s normal password. For more information, see [App Passwords] (https://support.microsoft.com/help/12409/microsoft-account-apppasswords-and-two-step-verification)  
 
 2. Confirm that Basic Authentication is enabled  
 
@@ -361,7 +361,7 @@ Issue: User is attempting to send out a large set of emails
 
 Cause: Performance problem
 
-Solution: [This KB article can sometimes resolve the issue](https://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-ashttps://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-as-pdf-or-xps-add-in-for-2007-microsopdf-or-xps-add-in-for-2007-microso https://support.microsoft.com/en-us/help/2424823/you-must-have-the-microsoft-save-as-pdf-or-xps-add-in-for-2007-microso)
+Solution: [This KB article can sometimes resolve the issue](https://support.microsoft.com/topic/you-must-have-the-microsoft-save-as-pdf-or-xps-add-in-for-2007-microsoft-office-0d9311d8-265e-1cc0-5df2-a5df3297db24)
 
 The more consistent solution is to simply cut down on the number of emails you are sending out at once. 
 
@@ -407,12 +407,12 @@ Then, check Active Directory and make sure that the Email field on the front of 
 If it is grayed out, then you are tied to Exchange Online, so these should be correct.
 
 
-![Form 5](media/emailjohn6.jpg)
+![Form 6](media/emailjohn6.jpg)
 
 
 ## MFA - Multi-Factor Authentication
 
-- [Set up the application in the Azure Portal](https://docs.microsoft.com/en-us/dynamics-gp/whats-new/multi-factor-authentication)  
+- [Set up the application in the Azure Portal](/dynamics-gp/whats-new/multi-factor-authentication)  
 - [Configure MFA in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)  
 
 
