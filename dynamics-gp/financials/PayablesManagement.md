@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 09/22/2021
+ms.date: 09/24/2021
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -4172,15 +4172,14 @@ To set up bank information for EFT transactions:
 2.	Select the country/region of the bank that holds the account for the selected checkbook. 
 3.	Enter the bank account number for the checkbook. The number you enter should be the checkbook account number at the bank that holds the account. 
 4.	Enter additional bank information. The required fields depend on the country/ region selected. 
-5.	
-6.	The required information typically is provided by the bank.
+5.	The required information typically is provided by the bank.
 If you need to specify a country or currency code, use the two-character ISO country code and three-character alphabetic ISO currency code formats. 
 
 Be aware that Microsoft Dynamics GP does not verify the ISO codes you enter, and your bank will reject a file format that has an incorrect code. 
 
-7.	Choose the Payables Options button to open the Checkbook EFT Payables Options window, where you can specify EFT output file locations, file formats, and options for payment numbers. See Entering payables EFT options on page 17 for more information. 
+6.	Choose the Payables Options button to open the Checkbook EFT Payables Options window, where you can specify EFT output file locations, file formats, and options for payment numbers. See Entering payables EFT options on page 17 for more information. 
 Choose the Receivables Options button to open the Checkbook EFT Receivables Options window, where you can specify EFT output file locations, file formats, and payment numbers. See Entering receivables EFT options on page 23 for more information.
-8.	Choose OK to save your changes. 
+7.	Choose OK to save your changes. 
 
 #### Checkbook setup for Direct Debits and Refunds
 
@@ -4400,6 +4399,189 @@ Use the expansion buttons to open the EFT File Format Setup window, where you ca
 8.	Choose OK to save your changes. 
 
 
+#### Setting up vendor records for EFT
+
+Use the Vendor EFT Bank Maintenance window to enter EFT information for a vendor that you pay using EFT transactions.
+
+You can print an authorization letter using the Letter Writing Assistant (Reports >> Letter Writing Assistant), which can be used to formalize an agreement with a vendor to use EFT payments.
+
+
+To set up vendor records for EFT:
+
+1.	Open the Vendor EFT Bank Maintenance window. (Cards >> Purchasing >> Vendor >> enter a vendor ID >> Address button >> EFT Bank button)
+
+2.	Enter or select the country/region for the bank that processes EFT transactions for the selected vendor. Fields that are required in this window depend on the selected bank country/region. 
+EFT transactions will be created through the select checks process using the remit-to address on the invoice being paid. When a payment is created manually, the vendor’s default remit-to address is used. 
+
+3.	Select the file transfer method. 
+You can create unique EFT file formats for each file transfer method using the EFT File Format Maintenance window. The file format specifies how and where specific types of information are stored in the file that's sent to the bank to transfer funds electronically. 
+
+4.	Enter the required information for the selected bank country/region. The vendor can provide this information for EFT transactions. 
+If you need to specify country codes, use the two-character ISO country code formats. Be aware that Microsoft Dynamics GP does not verify the ISO codes you enter, and your bank will reject a file format that has an incorrect code. 
+
+5.	Choose OK to save changes. 
+
+
+#### Generating prenotes to test vendor records
+
+Use the Generate EFT Prenotes window to generate a prenote for your bank to test the accuracy of your vendors’ bank account and transit numbers.
+
+To generate prenotes to test vendor records:
+
+1.	Open the Generate EFT Prenotes window. (Microsoft Dynamics GP menu >> Tools >> Routines >> Financial >> Generate EFT Prenotes)
+
+2.	To generate prenotes for vendors—either for the first time or for vendors whose information has changed—leave the Recreate prenote for any record dated on or before field blank. To regenerate prenotes for vendors a second or subsequent time, enter a date in the Recreate pre-note for any record dated on or before field. Prenotes will be recreated for all vendors whose last prenotes were created on or before the date entered in the field. You also can use this window to generate prenotes for customers, or for both customers and vendors at the same time. 
+
+3.	Enter the prenote file format to use. See Setting up an EFT file format on page 14 for more information about creating EFT file formats.
+
+4.	To generate a prenote edit list, choose File >> Print.
+
+5.	Choose OK to generate the prenote. 
+You must transmit the sample EFT file to your bank in order to complete the test. Be sure your communications software is set up to transmit the EFT file to your bank.
+
+
+#### Prenote rejections for Payables Management
+
+Your bank will reject a prenote if you made any mistakes entering information in the Vendor EFT Bank Maintenance window. 
+
+Common mistakes include:
+•	An incorrect account number
+•	An incorrect transit routing number
+•	Selecting the incorrect account type (for example, checking instead of savings) 
+
+When you receive a prenote rejection, verify the information you have on file with your vendor and correct the information in the Vendor EFT Bank Maintenance window. 
+
+If you’re unable to correct the information before you need to complete a check run, select the Inactive option in the window to prevent the program from generating electronic payments to that vendor.
+
+It takes between six and 10 days to receive prenote rejections from your bank. Set cutoff dates for making electronic payments to vendors prior to a check run.
+
+
+#### Transmitting a sample EFT file to your bank for Payables Management
+
+Before allowing you to transfer funds electronically, banks require you to transmit a sample EFT file. 
+The sample enables you and the bank to verify the accuracy of the information. 
+
+This process is different from generating prenotes. Prenotes are generated to confirm the accuracy of the information you have on file for each vendor. A sample EFT file is generated to verify that the file’s format matches the bank’s requirements.
+
+This process requires you to create actual transactions. You can set up the sample company to use EFT first so you can run the test. When generating a sample EFT file, the vendor account numbers need not be real, but the transit routing numbers for your vendors must be actual bank transit numbers.
+
+To transmit a sample EFT file to your bank for Payables Management:
+
+1.	Enter and post payables transaction vouchers in Payables Management for each of five vendors in varying currency amounts. 
+2.	Create a batch of EFT payments for the transactions created in step 1.
+3.	Open the Generate EFT Files window.  (Transactions >> Purchasing >> Generate EFT Files)
+4.	Select Purchasing as the series.
+5.	Select the ID of the checkbook you’re generating sample electronic payments from.
+6.	Mark the batches you’re including. Only pending EFT batches will appear in the Generate EFT Files window. Choose the Batch ID link to review the transactions in each batch.
+7.	To generate an EFT Batches Marked for EFT File Generation report, choose File >> Print.
+8.	Choose Generate EFT File. The sample EFT file will be written to the path and filename specified. 
+9.	After the sample EFT file is generated, the program will remind you to transmit the EFT file to the bank, if you entered a communication method in the Checkbook EFT Bank Maintenance window. If you specified the path and filename for your communications software, the program will start your communications software
+
+*You must transmit the sample EFT file to your bank in order to complete the test. Be sure your communications software is set up to transmit the EFT file to your bank.*
+
+#### Setting up the EFT Payment Register report
+
+Use the Posting Setup window to set up the EFT Payment Register report to be printed after you post EFT payment information.
+
+To set up the EFT Payment Register report:
+
+1.	Open the Posting Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Posting >> Posting)
+2.	Select Purchasing from the Series list.
+3.	Select Computer Checks from the Origin list.
+4.	Mark EFT Payment Register in the Reports list.
+5.	Set the report destination options and choose OK.
+
+## Part 7: EFT setup for Receivables Management
+
+Set up EFT for Receivables Management so you can receive electronic payments from customers and send electronic refunds to customers.
+
+#### Entering receivables EFT options
+
+Use Checkbook EFT Receivables Options window to specify options and output file locations for sales EFT transactions. Before completing this procedure, you should have entered bank information for any checkbooks that you’ll be using for EFT transactions.
+
+To enter receivables EFT options:
+
+1.	Open the Checkbook EFT Receivables Options window. (Cards >> Financial >> Checkbook >> select a checkbook >> EFT Bank >> Receivables Options)
+2.	Select to use EFT numbers for sales EFT transactions and enter the next EFT payment number (optional).
+3.	Mark the Receivables Prenote Required option if your bank requires prenotes. 
+4.	Enter the prenote grace period for receivables EFT transactions. The prenote grace period specifies the number of days to wait after generating a prenote for a new customer before transferring refunds to the customer electronically. 
+5.	Enter the paths and the filenames to use for EFT files generated in Receivables Management. Because EFT files contain sensitive information, save them in a secure location 
+6.	Select a single format for the output file or enter multiple formats to tailor a format to a customer. 
+
+If you are using multiple formats and are in the United States, use Business, Corporate, or Personal for standard ACH transactions and Foreign for international ACH transactions (IAT) transactions. 
+
+If you are using an IAT file format and a standard ACH file format, a separate output file is generated for the IAT file format and the standard ACH file format. For the IAT file format, an output file is created for each destination country. 
+
+Use the expansion buttons to open the EFT File Format Setup window, where you can enter information for the selected output file format. 
+Choose the Generate Prenotes button to generate a prenote file that you can send to your bank. 
+7.	Choose OK to save your changes.
+
+#### Setting up customer records for EFT
+
+Use the Customer EFT Bank Maintenance window to set up records for customers that pay or receive refunds electronically.
+
+To set up customer records for EFT:
+
+1.	Open the Customer EFT Bank Maintenance window.  (Cards >> Sales >> Customer >> enter a customer ID >> Address button >> EFT Bank button)
+
+2.	Enter or select the country/region for the bank that processes EFT transactions for the selected customer. Fields that are required in this window depend on the selected bank country/region.
+
+Select the file transfer method. You can create unique EFT file formats for each file transfer method using the EFT File Format Maintenance window. The file format specifies how and where specific types of information are stored in the file that's sent to the bank to transfer funds electronically. 
+
+3.	Enter the required information for the selected bank country/region. The customer can provide information for EFT transactions. Choose OK to save changes.
+
+*If you need to specify country codes, use the two-character ISO country code formats. Be aware that Microsoft Dynamics GP does not verify the ISO codes you enter, and your bank will reject a file format that has an incorrect code.*
+
+#### Generating prenotes to test customer records
+
+Use the Generate EFT Prenotes window to generate a prenote for your bank to test the accuracy of your customers’ bank account and transit numbers.
+
+To generate prenotes to test customer records:
+
+1.	Open the Generate EFT Prenotes window. (Microsoft Dynamics GP menu >> Tools >> Routines >> Financial >> Generate EFT Prenotes)
+2.	Select the ID for the checkbook you’re generating prenotes for.
+3.	To generate prenotes for customers—either for the first time or for customers whose information has changed—leave the Recreate prenote for any record dated on or before field blank. To regenerate prenotes for customers a second or subsequent time, enter a date in the Recreate pre-note for any record dated on or before field. Prenotes will be recreated for all customers whose last prenotes were created on or before the date entered in the field. You also can use this window to generate prenotes for customers, or for both vendors and customers at the same time. 
+4.	Enter the prenote file format to use. 
+5.	To generate a prenote edit list, choose File >> Print.
+6.	Choose OK. If you defined a communications link and you’ve configured your communications software correctly, the program will transmit the prenote to your bank
+
+#### Prenote rejections for Receivables Management
+
+Your bank will reject a prenote if any mistakes were made entering information in the Customer EFT Bank Maintenance window. Common mistakes include:
+•	An incorrect customer account number
+•	An incorrect transit routing number
+•	Selecting the incorrect account type (for example, checking instead of savings) 
+
+When you receive a prenote rejection, verify the information you have on file with your customer and correct the information for the customer in the Customer EFT Bank Maintenance window. If you’re unable to correct the information before you need to generate electronic debits from the customer, select the Inactive option in the window to prevent the program from generating electronic debits from that customer.
+
+*It takes between six and 10 days to receive prenote rejections from your bank. Set cutoff dates for debiting customer accounts prior to posting EFT payments.*
+
+#### Transmitting a sample EFT file to your bank for Receivables Management
+
+Before allowing you to transfer funds electronically, banks require you to transmit a sample EFT file. The sample enables you and the bank to verify the accuracy of the information. This process is different from generating prenotes. Prenotes are generated to confirm the accuracy of the information you have on file for each customer. A sample EFT file is generated to confirm that the file’s format matches the bank’s requirements. 
+
+*This process requires you to create actual transactions. You can set up the sample company to use EFT first so you can run the test. When generating a sample EFT file, the customer account numbers need not be real, but the transit routing numbers for your customers must be actual bank transit numbers.*
+
+To transmit a sample EFT file to your bank for Receivables Management:
+
+1.	Use the Invoice Batch Entry window, Sales Batch Entry window, or the Receivables Batch Entry window to create batches for sample payments that you can send to your bank. 
+
+2.	Create and post sample payments in the Invoice Payment Entry window, Sales 
+Payment Entry window, Cash Receipts Entry window, or the Receivables Transaction Entry window for each of five customers in varying currency amounts. See the Invoicing, Sales Order Processing, and Receivables Management documentation for more information.
+
+3.	Open the Generate EFT Files window. (Transactions >> Sales >> Generate EFT Files)
+
+4.	Select Sales as the series and Select the ID of the checkbook you’re generating sample electronic payments for.
+
+5.	Mark the batches you’re including. Only pending EFT batches will appear in the Generate EFT Files window. Choose the Batch ID link to review the transactions in each batch.
+
+7.	To generate an EFT Batches Marked for EFT File Generation report, choose File >> Print.
+
+8.	Choose Generate EFT File. The sample EFT file will be written to the path and filename specified. 
+
+9.	After the sample EFT file is generated, the program will remind you to transmit the EFT file to the bank, if you entered a communication method in the Checkbook EFT Bank Maintenance window. If you specified the path and filename for your communications software, the program will start your communications software. 
+
+*You must transmit the sample EFT file to your bank in order to complete the test. Be sure your communications software is set up to transmit the EFT file to your bank. *
 
 ## Additional Feature Functionality added to Payables Management
 
