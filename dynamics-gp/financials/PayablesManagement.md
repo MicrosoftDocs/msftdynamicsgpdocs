@@ -309,7 +309,7 @@ Vendor classes provide defaults for the data that groups of vendors use. You als
 1. Open the Vendor Class Setup window.
 (Purchasing \>\> Setup \>\> Vendor Class)
 
-    ![A screenshot of a cell phone Description automatically generated](media/a5b6b5a9bed9a1d7a3d2b169197ff741.jpg)
+    ![Description automatically generated 1](media/a5b6b5a9bed9a1d7a3d2b169197ff741.jpg)
 
 2. Enter an ID for the class, and enter a description that further identifies the class.
 
@@ -342,7 +342,7 @@ For example, assume you have two employees working in separate departments who b
 1. Open the Vendor Class Accounts Setup window. 
 (Purchasing \>\> Setup \>\> Vendor Class \>\> Accounts button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/291e916d25fdd320d9a16c10b45b041e.jpg)
+    ![Description automatically generated 2](media/291e916d25fdd320d9a16c10b45b041e.jpg)
 
 2. Mark whether to use the Cash account from the checkbook or vendor.
 
@@ -498,7 +498,7 @@ Once you decide the most appropriate numbering system, be sure that all the IDs 
 
 10. Choose Options to open the Vendor Maintenance Options window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/0426a70a9ba6c0e9b97a8a996613dd26.jpg)
+    ![Description automatically generated  3](media/0426a70a9ba6c0e9b97a8a996613dd26.jpg)
 
 11. Enter vendor options or change vendor options from those that are provided as default values from the class. When you’re satisfied with the entries, choose OK.
 
@@ -530,7 +530,7 @@ If you entered a class ID for this vendor, the posting accounts you entered usin
 1. Open the Vendor Account Maintenance window. 
 (Purchasing \>\> Cards \>\> Vendor \>\> Accounts)
 
-    ![A screenshot of a cell phone Description automatically generated](media/4124969b6e75e97b5ebec03fbe800b69.jpg)
+    ![Description automatically generated 4](media/4124969b6e75e97b5ebec03fbe800b69.jpg)
 
 2. Mark whether to use the Cash account from the checkbook or vendor.
 
@@ -564,7 +564,7 @@ The options available in this window depend on the selections you made in the Co
 1. Open the Vendor E-mail Options window.
     (Purchasing \>\> Cards \>\> Vendor \>\> Select a vendor ID \>\> E-mail)
 
-    ![A screenshot of a cell phone Description automatically generated](media/9efd86a50bfcfd169d5e4699a28f0b37.jpg)
+    ![Description automatically generated  5](media/9efd86a50bfcfd169d5e4699a28f0b37.jpg)
 
 2. Select to send documents as attachments or embed documents in the message body. The options available depend on the selections in the Company E-mail Setup window.
 
@@ -600,7 +600,7 @@ You can either send documents as attachments or embed documents in the message b
 
 3. In the Modify group, click the overflow menu and then select E-mail Settings to open the Mass Vendor E-mail Settings window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/9558d65a7d354a05f406bdcf62b5bc08.jpg)
+    ![Description automatically generated 6](media/9558d65a7d354a05f406bdcf62b5bc08.jpg)
 
 4. Select to send documents as attachments or embed documents in the body of e-mail messages.
 
@@ -635,7 +635,7 @@ See the GST and Australian Taxes documentation for more information about settin
 1. Open the Vendor Withholding Options window. 
 (Purchasing \>\> Cards \>\> Vendor \>\> Withholding button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/38eca694cb3889f90aeaaba86b60e839.jpg)
+    ![Description automatically generated 7](media/38eca694cb3889f90aeaaba86b60e839.jpg)
 
 2. Mark Subject To Withholding Deduction.
 
@@ -692,7 +692,7 @@ Use the 1099 Setup window to specify the 1099 statement box descriptions and the
 1. Open the 1099 Setup window. 
 (Purchasing \>\> Setup \>\> Payables \>\> 1099 Setup button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/aded4c40591900066cdf272f553ede1b.jpg)
+    ![Description automatically generated 8](media/aded4c40591900066cdf272f553ede1b.jpg)
 
 2. Select a tax type to enter information for a specific 1099 statement: Dividend, Miscellaneous, and Interest.
 
@@ -755,7 +755,7 @@ Enter beginning balances for each outstanding transaction for each vendor or ent
 1. Open the Posting Setup window. 
 (Administration \>\> Setup \>\> Posting \>\> Posting)
 
-    ![A screenshot of a cell phone Description automatically generated](media/de9b7c4d82b4ef41e42a32b2ea09e00a.jpg)
+    ![Description automatically generated 9](media/de9b7c4d82b4ef41e42a32b2ea09e00a.jpg)
 
 2. Choose Purchasing as the series and Payables Trx Entry as the origin. Unmark Post to General Ledger if General Ledger is part of your system. Change the origin to Payment Entry and unmark the option again.
 
@@ -827,7 +827,7 @@ Use the Vendor Period Summary window to enter historical amounts per period— f
 1. Open the Vendor Period Summary window. 
 (Purchasing \>\> Cards \>\> Summary \>\> Select a vendor ID \>\> Period button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/c04bfa7f350d43c67f7d5b2d3b3e6515.jpg)
+    ![Description automatically generated 10](media/c04bfa7f350d43c67f7d5b2d3b3e6515.jpg)
 
 2. Mark Calendar or Fiscal, depending on the type of history you’re entering.
 
@@ -859,7 +859,7 @@ If you’re required by the US Internal Revenue Service to send this vendor a 10
 1. Open the Vendor Yearly Summary window. 
 (Purchasing \>\> Cards \>\> Summary \>\> Select a vendor ID \>\> Yearly button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/1a1e477dca3f31490abcf93a7fae6b8e.jpg)
+    ![Description automatically generated 11](media/1a1e477dca3f31490abcf93a7fae6b8e.jpg)
 
 2. Select Amounts Since Last Close as the summary view, if you’re entering vendor yearly summary history.
 
@@ -1502,7 +1502,7 @@ Use the Payables Transaction Entry Distribution window to distribute transaction
 1. Open the Payables Transaction Entry Distribution window. 
 (Purchasing \>\>Transactions \>\> Transaction Entry \>\> Distributions button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/53237ab6d1dc88eb2dddcfb9c9558594.jpg)
+    ![Description automatically generated 12](media/53237ab6d1dc88eb2dddcfb9c9558594.jpg)
 
     The scrolling window displays the default distributions created based on the posting accounts assigned to the vendor. You can distribute a transaction to multiple posting accounts.
 
@@ -1562,7 +1562,7 @@ Sometimes a purchase includes items that are exempt from input or output tax. Yo
 
 3. Enter a tax amount in the Tax field and choose the Tax expansion button to open the Payables Tax Entry window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/ac6b525296bab65b09dcb3ebf356e92d.jpg)
+    ![Description automatically generated 13](media/ac6b525296bab65b09dcb3ebf356e92d.jpg)
 
 4. Enter or select a tax detail ID.
 
@@ -1961,13 +1961,13 @@ If you are using vendor approval workflow, the vendor must have the workflow sta
 
 2. Enter the amount you’re paying. When you enter an amount, the Payables Check Entry window opens, where you can specify a checkbook.
 
-    ![A screenshot of a cell phone Description automatically generated](media/c22757e0cec643c945673adba67729ea.jpg)
+    ![Description automatically generated 14](media/c22757e0cec643c945673adba67729ea.jpg)
 
     Verify that the information is correct; then choose OK to close the window. This amount is posted to a Cash account.
 
 3. Choose Print Check to open the Print Payables Transaction Check window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/5f08439d5885577e233b9240e6101302.jpg)
+    ![Description automatically generated 15](media/5f08439d5885577e233b9240e6101302.jpg)
 
     If you choose not to print the check, Payables Management considers the check a manual check when it’s posted.
 
@@ -1981,7 +1981,7 @@ If you are using vendor approval workflow, the vendor must have the workflow sta
 
     After the check has been printed, the Print Payables Remittance window opens if you have selected to print a separate remittance.
 
-    ![A screenshot of a cell phone Description automatically generated](media/fef636cbbb69d99695d45a0d067d2741.jpg)
+    ![Description automatically generated 16](media/fef636cbbb69d99695d45a0d067d2741.jpg)
 
 7. In the Print Payables Remittance window, select the Remittance Form option.
 
@@ -2002,7 +2002,7 @@ If you are using vendor approval workflow, the vendor must have the workflow sta
 1. Open the Payables Manual Payment Entry window. 
 (Purchasing \>\> Transactions \>\> Manual Payments)
 
-    ![A screenshot of a cell phone Description automatically generated](media/c39106bf0cf9800ba3556b5aaf454475.jpg)
+    ![Description automatically generated 17](media/c39106bf0cf9800ba3556b5aaf454475.jpg)
 
 2. Enter or select a payment number and date.
 
@@ -2029,7 +2029,7 @@ Use the Edit Payables Checks window to make a prepayment—a payment on account 
 1. Open the Edit Payables Checks window. 
 (Purchasing \>\> Transactions \>\> Edit Check)
 
-    ![A screenshot of a cell phone Description automatically generated](media/e2658205a636f897c0eedf56b8bba5e8.jpg)
+    ![Description automatically generated 18](media/e2658205a636f897c0eedf56b8bba5e8.jpg)
 
 2. Enter or select a payment number and a batch ID.
 
@@ -2107,7 +2107,7 @@ To divide payments between several documents, mark the check box, and change the
 
 10. Choose Check Stub to open the Payables Check Stub Documents window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/23b8f02c13f37ee3f0573e29a1e0429c.jpg)
+    ![Description automatically generated 19](media/23b8f02c13f37ee3f0573e29a1e0429c.jpg)
 
 11. Unmark any vouchers that you don’t want to print on the check stub. Choose OK to close the window.
 
@@ -2226,7 +2226,7 @@ If you are using vendor approval workflow, vendors must have the workflow status
 
 5. Choose Transactions. Choose Select Payables Checks from the Go To window to open the Select Payables Checks window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/57896a91eeff7500f390ca16b4ec2141.jpg)
+    ![Description automatically generated 20](media/57896a91eeff7500f390ca16b4ec2141.jpg)
 
 6. Specify the group of vendors and vouchers you want to include in the batch by selecting the type of range you want to include, and then enter restrictions for the range. You can insert a range of each type into the Restrictions list.
 
@@ -2384,7 +2384,7 @@ Checks that you use as alignment forms automatically are voided.
 
 7. When you’re ready to print the checks, mark Checks in the Print options and choose Print. After the checks have been printed, the Post Payables Checks window opens.
 
-    ![A screenshot of a cell phone Description automatically generated](media/223bfbc17e402e9daff75841e82d2f66.jpg)
+    ![Description automatically generated 21](media/223bfbc17e402e9daff75841e82d2f66.jpg)
 
 8. Select a posting option.
 
@@ -2392,7 +2392,7 @@ Checks that you use as alignment forms automatically are voided.
 
     If you have selected to print a separate remittance, the Process Payables Remittance window opens.
 
-    ![A screenshot of a cell phone Description automatically generated](media/52a0335a34bf3e16c984337547eec5f4.jpg)
+    ![Description automatically generated 22](media/52a0335a34bf3e16c984337547eec5f4.jpg)
 
 
 9. In the Process Payables Remittance window, select the Remittance Form option.
@@ -2586,7 +2586,7 @@ Use the Payables Scheduled Payments Entry window to enter payment schedules. Whe
 1. Open the Payables Scheduled Payments Entry window. 
 (Purchasing \>\> Transactions \>\> Scheduled Payments)
 
-    ![A screenshot of a cell phone Description automatically generated](media/d06f07a082b12f7ca91d6c0a02b819f9.jpg)
+    ![Description automatically generated 23](media/d06f07a082b12f7ca91d6c0a02b819f9.jpg)
 
 2. Enter a schedule number and description.
 
@@ -2627,7 +2627,7 @@ Amortization schedules are created when you choose the Calculate button in the P
 
 3. Choose Amortization to open the Payables Amortization Schedule window.
 
-![A screenshot of a cell phone Description automatically generated](media/fb6a5be9cf511d671ccb398b22b4e022.jpg)
+![Description automatically generated 24](media/fb6a5be9cf511d671ccb398b22b4e022.jpg)
 
 If there is no interest, you can edit the Due Date and Payment Amount fields by entering the appropriate information in those fields.
 
@@ -2790,7 +2790,7 @@ When you close the Apply Payables Documents window, the changes to discounts ava
 1. Open the Apply Payables Documents window. 
 (Purchasing \>\> Transactions \>\> Apply Payables Documents)
 
-    ![A screenshot of a cell phone Description automatically generated](media/3be2111372b5e2704d4aa75880df65ce.jpg)
+    ![Description automatically generated 25](media/3be2111372b5e2704d4aa75880df65ce.jpg)
 
 2. Enter or select a vendor ID.
 
@@ -2904,7 +2904,7 @@ Use the Customer/Vendor Consolidation Setup window to create default entries for
 1. Open the Customer/Vendor Consolidation Setup window. 
 (Administration \>\> Setup \>\> Company \>\> Customer/Vendor Setup)
 
-    ![A screenshot of a cell phone Description automatically generated](media/06fd7e2e106f443d776cd9e6c7aa7673.jpg)
+    ![Description automatically generated 26](media/06fd7e2e106f443d776cd9e6c7aa7673.jpg)
 
 2. Enter or select a posting or allocation account as the default suspense account.
 
@@ -3420,7 +3420,7 @@ For example, you can select a vendor ID in the Vendor Inquiry window, then open 
 
 3. Select a transaction in the scrolling window and choose either the Document Number or Voucher/Payment Number link. The Payables Transaction Entry Zoom window opens.
 
-    ![A screenshot of a cell phone Description automatically generated](media/c20c1b8ea98e3b2255d34380ea081df6.jpg)
+    ![Description automatically generated 27](media/c20c1b8ea98e3b2255d34380ea081df6.jpg)
 
 The transaction as it was originally entered is displayed. You can open several other windows from the Payables Transaction Entry Zoom window, as is listed in the following table:
 
@@ -3657,7 +3657,7 @@ If you are using vendor approval workflow, you can reconcile the workflow status
 1. Open the Reconcile Payables Accounts window. 
 (Purchasing \>\> Utilities \>\> Reconcile)
 
-    ![A screenshot of a cell phone Description automatically generated](media/1389801400e3ee191f4c252356878767.png)
+    ![Description automatically generated 28](media/1389801400e3ee191f4c252356878767.png)
 
 2. Select an option and enter a range, or mark All.
 
@@ -3878,7 +3878,7 @@ Use the Tax History Removal window to remove tax detail transactions. Only the t
 1. Open the Tax History Removal window. 
 (Administration \>\> Utilities \>\> Company \>\> Remove Tax History)
 
-    ![A screenshot of a cell phone Description automatically generated](media/b45ebd43260fd23649d20642bb94fccf.jpg)
+    ![Description automatically generated 29](media/b45ebd43260fd23649d20642bb94fccf.jpg)
 
 2. Select whether you want to remove tax detail transactions and print the Tax History Removal Report, remove the tax detail transactions, or print the Tax History Removal Report.
 
@@ -3953,7 +3953,7 @@ You can use the first report for editing and keep the second as part of your com
 1. Open the Print 1099 window. 
 (Purchasing \>\> Routines \>\> Print 1099)
 
-    ![A screenshot of a cell phone Description automatically generated](media/146e9cb40e4556f01cc36c52bc336ccb.jpg)
+    ![Description automatically generated 30](media/146e9cb40e4556f01cc36c52bc336ccb.jpg)
 
 2. Enter the payer’s information, including the address ID and the payer’s Federal ID number, which is your company’s tax registration number.
 
