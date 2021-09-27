@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -309,7 +309,7 @@ Vendor classes provide defaults for the data that groups of vendors use. You als
 1. Open the Vendor Class Setup window.
 (Purchasing \>\> Setup \>\> Vendor Class)
 
-    ![A screenshot of a cell phone Description automatically generated](media/a5b6b5a9bed9a1d7a3d2b169197ff741.jpg)
+    ![Description automatically generated 1](media/a5b6b5a9bed9a1d7a3d2b169197ff741.jpg)
 
 2. Enter an ID for the class, and enter a description that further identifies the class.
 
@@ -342,7 +342,7 @@ For example, assume you have two employees working in separate departments who b
 1. Open the Vendor Class Accounts Setup window. 
 (Purchasing \>\> Setup \>\> Vendor Class \>\> Accounts button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/291e916d25fdd320d9a16c10b45b041e.jpg)
+    ![Description automatically generated 2](media/291e916d25fdd320d9a16c10b45b041e.jpg)
 
 2. Mark whether to use the Cash account from the checkbook or vendor.
 
@@ -498,7 +498,7 @@ Once you decide the most appropriate numbering system, be sure that all the IDs 
 
 10. Choose Options to open the Vendor Maintenance Options window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/0426a70a9ba6c0e9b97a8a996613dd26.jpg)
+    ![Description automatically generated  3](media/0426a70a9ba6c0e9b97a8a996613dd26.jpg)
 
 11. Enter vendor options or change vendor options from those that are provided as default values from the class. When you’re satisfied with the entries, choose OK.
 
@@ -530,7 +530,7 @@ If you entered a class ID for this vendor, the posting accounts you entered usin
 1. Open the Vendor Account Maintenance window. 
 (Purchasing \>\> Cards \>\> Vendor \>\> Accounts)
 
-    ![A screenshot of a cell phone Description automatically generated](media/4124969b6e75e97b5ebec03fbe800b69.jpg)
+    ![Description automatically generated 4](media/4124969b6e75e97b5ebec03fbe800b69.jpg)
 
 2. Mark whether to use the Cash account from the checkbook or vendor.
 
@@ -564,7 +564,7 @@ The options available in this window depend on the selections you made in the Co
 1. Open the Vendor E-mail Options window.
     (Purchasing \>\> Cards \>\> Vendor \>\> Select a vendor ID \>\> E-mail)
 
-    ![A screenshot of a cell phone Description automatically generated](media/9efd86a50bfcfd169d5e4699a28f0b37.jpg)
+    ![Description automatically generated  5](media/9efd86a50bfcfd169d5e4699a28f0b37.jpg)
 
 2. Select to send documents as attachments or embed documents in the message body. The options available depend on the selections in the Company E-mail Setup window.
 
@@ -600,7 +600,7 @@ You can either send documents as attachments or embed documents in the message b
 
 3. In the Modify group, click the overflow menu and then select E-mail Settings to open the Mass Vendor E-mail Settings window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/9558d65a7d354a05f406bdcf62b5bc08.jpg)
+    ![Description automatically generated 6](media/9558d65a7d354a05f406bdcf62b5bc08.jpg)
 
 4. Select to send documents as attachments or embed documents in the body of e-mail messages.
 
@@ -635,7 +635,7 @@ See the GST and Australian Taxes documentation for more information about settin
 1. Open the Vendor Withholding Options window. 
 (Purchasing \>\> Cards \>\> Vendor \>\> Withholding button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/38eca694cb3889f90aeaaba86b60e839.jpg)
+    ![Description automatically generated 7](media/38eca694cb3889f90aeaaba86b60e839.jpg)
 
 2. Mark Subject To Withholding Deduction.
 
@@ -692,7 +692,7 @@ Use the 1099 Setup window to specify the 1099 statement box descriptions and the
 1. Open the 1099 Setup window. 
 (Purchasing \>\> Setup \>\> Payables \>\> 1099 Setup button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/aded4c40591900066cdf272f553ede1b.jpg)
+    ![Description automatically generated 8](media/aded4c40591900066cdf272f553ede1b.jpg)
 
 2. Select a tax type to enter information for a specific 1099 statement: Dividend, Miscellaneous, and Interest.
 
@@ -755,7 +755,7 @@ Enter beginning balances for each outstanding transaction for each vendor or ent
 1. Open the Posting Setup window. 
 (Administration \>\> Setup \>\> Posting \>\> Posting)
 
-    ![A screenshot of a cell phone Description automatically generated](media/de9b7c4d82b4ef41e42a32b2ea09e00a.jpg)
+    ![Description automatically generated 9](media/de9b7c4d82b4ef41e42a32b2ea09e00a.jpg)
 
 2. Choose Purchasing as the series and Payables Trx Entry as the origin. Unmark Post to General Ledger if General Ledger is part of your system. Change the origin to Payment Entry and unmark the option again.
 
@@ -827,7 +827,7 @@ Use the Vendor Period Summary window to enter historical amounts per period— f
 1. Open the Vendor Period Summary window. 
 (Purchasing \>\> Cards \>\> Summary \>\> Select a vendor ID \>\> Period button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/c04bfa7f350d43c67f7d5b2d3b3e6515.jpg)
+    ![Description automatically generated 10](media/c04bfa7f350d43c67f7d5b2d3b3e6515.jpg)
 
 2. Mark Calendar or Fiscal, depending on the type of history you’re entering.
 
@@ -859,7 +859,7 @@ If you’re required by the US Internal Revenue Service to send this vendor a 10
 1. Open the Vendor Yearly Summary window. 
 (Purchasing \>\> Cards \>\> Summary \>\> Select a vendor ID \>\> Yearly button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/1a1e477dca3f31490abcf93a7fae6b8e.jpg)
+    ![Description automatically generated 11](media/1a1e477dca3f31490abcf93a7fae6b8e.jpg)
 
 2. Select Amounts Since Last Close as the summary view, if you’re entering vendor yearly summary history.
 
@@ -1502,7 +1502,7 @@ Use the Payables Transaction Entry Distribution window to distribute transaction
 1. Open the Payables Transaction Entry Distribution window. 
 (Purchasing \>\>Transactions \>\> Transaction Entry \>\> Distributions button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/53237ab6d1dc88eb2dddcfb9c9558594.jpg)
+    ![Description automatically generated 12](media/53237ab6d1dc88eb2dddcfb9c9558594.jpg)
 
     The scrolling window displays the default distributions created based on the posting accounts assigned to the vendor. You can distribute a transaction to multiple posting accounts.
 
@@ -1562,7 +1562,7 @@ Sometimes a purchase includes items that are exempt from input or output tax. Yo
 
 3. Enter a tax amount in the Tax field and choose the Tax expansion button to open the Payables Tax Entry window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/ac6b525296bab65b09dcb3ebf356e92d.jpg)
+    ![Description automatically generated 13](media/ac6b525296bab65b09dcb3ebf356e92d.jpg)
 
 4. Enter or select a tax detail ID.
 
@@ -1961,13 +1961,13 @@ If you are using vendor approval workflow, the vendor must have the workflow sta
 
 2. Enter the amount you’re paying. When you enter an amount, the Payables Check Entry window opens, where you can specify a checkbook.
 
-    ![A screenshot of a cell phone Description automatically generated](media/c22757e0cec643c945673adba67729ea.jpg)
+    ![Description automatically generated 14](media/c22757e0cec643c945673adba67729ea.jpg)
 
     Verify that the information is correct; then choose OK to close the window. This amount is posted to a Cash account.
 
 3. Choose Print Check to open the Print Payables Transaction Check window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/5f08439d5885577e233b9240e6101302.jpg)
+    ![Description automatically generated 15](media/5f08439d5885577e233b9240e6101302.jpg)
 
     If you choose not to print the check, Payables Management considers the check a manual check when it’s posted.
 
@@ -1981,7 +1981,7 @@ If you are using vendor approval workflow, the vendor must have the workflow sta
 
     After the check has been printed, the Print Payables Remittance window opens if you have selected to print a separate remittance.
 
-    ![A screenshot of a cell phone Description automatically generated](media/fef636cbbb69d99695d45a0d067d2741.jpg)
+    ![Description automatically generated 16](media/fef636cbbb69d99695d45a0d067d2741.jpg)
 
 7. In the Print Payables Remittance window, select the Remittance Form option.
 
@@ -2002,7 +2002,7 @@ If you are using vendor approval workflow, the vendor must have the workflow sta
 1. Open the Payables Manual Payment Entry window. 
 (Purchasing \>\> Transactions \>\> Manual Payments)
 
-    ![A screenshot of a cell phone Description automatically generated](media/c39106bf0cf9800ba3556b5aaf454475.jpg)
+    ![Description automatically generated 17](media/c39106bf0cf9800ba3556b5aaf454475.jpg)
 
 2. Enter or select a payment number and date.
 
@@ -2029,7 +2029,7 @@ Use the Edit Payables Checks window to make a prepayment—a payment on account 
 1. Open the Edit Payables Checks window. 
 (Purchasing \>\> Transactions \>\> Edit Check)
 
-    ![A screenshot of a cell phone Description automatically generated](media/e2658205a636f897c0eedf56b8bba5e8.jpg)
+    ![Description automatically generated 18](media/e2658205a636f897c0eedf56b8bba5e8.jpg)
 
 2. Enter or select a payment number and a batch ID.
 
@@ -2107,7 +2107,7 @@ To divide payments between several documents, mark the check box, and change the
 
 10. Choose Check Stub to open the Payables Check Stub Documents window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/23b8f02c13f37ee3f0573e29a1e0429c.jpg)
+    ![Description automatically generated 19](media/23b8f02c13f37ee3f0573e29a1e0429c.jpg)
 
 11. Unmark any vouchers that you don’t want to print on the check stub. Choose OK to close the window.
 
@@ -2226,7 +2226,7 @@ If you are using vendor approval workflow, vendors must have the workflow status
 
 5. Choose Transactions. Choose Select Payables Checks from the Go To window to open the Select Payables Checks window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/57896a91eeff7500f390ca16b4ec2141.jpg)
+    ![Description automatically generated 20](media/57896a91eeff7500f390ca16b4ec2141.jpg)
 
 6. Specify the group of vendors and vouchers you want to include in the batch by selecting the type of range you want to include, and then enter restrictions for the range. You can insert a range of each type into the Restrictions list.
 
@@ -2384,7 +2384,7 @@ Checks that you use as alignment forms automatically are voided.
 
 7. When you’re ready to print the checks, mark Checks in the Print options and choose Print. After the checks have been printed, the Post Payables Checks window opens.
 
-    ![A screenshot of a cell phone Description automatically generated](media/223bfbc17e402e9daff75841e82d2f66.jpg)
+    ![Description automatically generated 21](media/223bfbc17e402e9daff75841e82d2f66.jpg)
 
 8. Select a posting option.
 
@@ -2392,7 +2392,7 @@ Checks that you use as alignment forms automatically are voided.
 
     If you have selected to print a separate remittance, the Process Payables Remittance window opens.
 
-    ![A screenshot of a cell phone Description automatically generated](media/52a0335a34bf3e16c984337547eec5f4.jpg)
+    ![Description automatically generated 22](media/52a0335a34bf3e16c984337547eec5f4.jpg)
 
 
 9. In the Process Payables Remittance window, select the Remittance Form option.
@@ -2586,7 +2586,7 @@ Use the Payables Scheduled Payments Entry window to enter payment schedules. Whe
 1. Open the Payables Scheduled Payments Entry window. 
 (Purchasing \>\> Transactions \>\> Scheduled Payments)
 
-    ![A screenshot of a cell phone Description automatically generated](media/d06f07a082b12f7ca91d6c0a02b819f9.jpg)
+    ![Description automatically generated 23](media/d06f07a082b12f7ca91d6c0a02b819f9.jpg)
 
 2. Enter a schedule number and description.
 
@@ -2627,7 +2627,7 @@ Amortization schedules are created when you choose the Calculate button in the P
 
 3. Choose Amortization to open the Payables Amortization Schedule window.
 
-![A screenshot of a cell phone Description automatically generated](media/fb6a5be9cf511d671ccb398b22b4e022.jpg)
+![Description automatically generated 24](media/fb6a5be9cf511d671ccb398b22b4e022.jpg)
 
 If there is no interest, you can edit the Due Date and Payment Amount fields by entering the appropriate information in those fields.
 
@@ -2790,7 +2790,7 @@ When you close the Apply Payables Documents window, the changes to discounts ava
 1. Open the Apply Payables Documents window. 
 (Purchasing \>\> Transactions \>\> Apply Payables Documents)
 
-    ![A screenshot of a cell phone Description automatically generated](media/3be2111372b5e2704d4aa75880df65ce.jpg)
+    ![Description automatically generated 25](media/3be2111372b5e2704d4aa75880df65ce.jpg)
 
 2. Enter or select a vendor ID.
 
@@ -2904,7 +2904,7 @@ Use the Customer/Vendor Consolidation Setup window to create default entries for
 1. Open the Customer/Vendor Consolidation Setup window. 
 (Administration \>\> Setup \>\> Company \>\> Customer/Vendor Setup)
 
-    ![A screenshot of a cell phone Description automatically generated](media/06fd7e2e106f443d776cd9e6c7aa7673.jpg)
+    ![Description automatically generated 26](media/06fd7e2e106f443d776cd9e6c7aa7673.jpg)
 
 2. Enter or select a posting or allocation account as the default suspense account.
 
@@ -3420,7 +3420,7 @@ For example, you can select a vendor ID in the Vendor Inquiry window, then open 
 
 3. Select a transaction in the scrolling window and choose either the Document Number or Voucher/Payment Number link. The Payables Transaction Entry Zoom window opens.
 
-    ![A screenshot of a cell phone Description automatically generated](media/c20c1b8ea98e3b2255d34380ea081df6.jpg)
+    ![Description automatically generated 27](media/c20c1b8ea98e3b2255d34380ea081df6.jpg)
 
 The transaction as it was originally entered is displayed. You can open several other windows from the Payables Transaction Entry Zoom window, as is listed in the following table:
 
@@ -3657,7 +3657,7 @@ If you are using vendor approval workflow, you can reconcile the workflow status
 1. Open the Reconcile Payables Accounts window. 
 (Purchasing \>\> Utilities \>\> Reconcile)
 
-    ![A screenshot of a cell phone Description automatically generated](media/1389801400e3ee191f4c252356878767.png)
+    ![Description automatically generated 28](media/1389801400e3ee191f4c252356878767.png)
 
 2. Select an option and enter a range, or mark All.
 
@@ -3878,7 +3878,7 @@ Use the Tax History Removal window to remove tax detail transactions. Only the t
 1. Open the Tax History Removal window. 
 (Administration \>\> Utilities \>\> Company \>\> Remove Tax History)
 
-    ![A screenshot of a cell phone Description automatically generated](media/b45ebd43260fd23649d20642bb94fccf.jpg)
+    ![Description automatically generated 29](media/b45ebd43260fd23649d20642bb94fccf.jpg)
 
 2. Select whether you want to remove tax detail transactions and print the Tax History Removal Report, remove the tax detail transactions, or print the Tax History Removal Report.
 
@@ -3953,7 +3953,7 @@ You can use the first report for editing and keep the second as part of your com
 1. Open the Print 1099 window. 
 (Purchasing \>\> Routines \>\> Print 1099)
 
-    ![A screenshot of a cell phone Description automatically generated](media/146e9cb40e4556f01cc36c52bc336ccb.jpg)
+    ![Description automatically generated 30](media/146e9cb40e4556f01cc36c52bc336ccb.jpg)
 
 2. Enter the payer’s information, including the address ID and the payer’s Federal ID number, which is your company’s tax registration number.
 
@@ -4172,15 +4172,14 @@ To set up bank information for EFT transactions:
 2.	Select the country/region of the bank that holds the account for the selected checkbook. 
 3.	Enter the bank account number for the checkbook. The number you enter should be the checkbook account number at the bank that holds the account. 
 4.	Enter additional bank information. The required fields depend on the country/ region selected. 
-5.	
-6.	The required information typically is provided by the bank.
+5.	The required information typically is provided by the bank.
 If you need to specify a country or currency code, use the two-character ISO country code and three-character alphabetic ISO currency code formats. 
 
 Be aware that Microsoft Dynamics GP does not verify the ISO codes you enter, and your bank will reject a file format that has an incorrect code. 
 
-7.	Choose the Payables Options button to open the Checkbook EFT Payables Options window, where you can specify EFT output file locations, file formats, and options for payment numbers. See Entering payables EFT options on page 17 for more information. 
+6.	Choose the Payables Options button to open the Checkbook EFT Payables Options window, where you can specify EFT output file locations, file formats, and options for payment numbers. See Entering payables EFT options on page 17 for more information. 
 Choose the Receivables Options button to open the Checkbook EFT Receivables Options window, where you can specify EFT output file locations, file formats, and payment numbers. See Entering receivables EFT options on page 23 for more information.
-8.	Choose OK to save your changes. 
+7.	Choose OK to save your changes. 
 
 #### Checkbook setup for Direct Debits and Refunds
 
@@ -4283,7 +4282,306 @@ This field displays the date entered in the Transmission Date field in the Gener
 Calculation 
 You can use any of the following calculations. The calculations often are located in the batch footers or file footers of flat files
 
+Format options are available when the file format is mapped to data or to calculations that are related to money and dates. 
 
+
+| **Calculation**                           | **Description**                                                                |
+|-------------------------------------------|--------------------------------------------------------------------------------|
+| Addenda record indicator                  | 0 or 1 depending on whether the addenda record type is defined for the format. |
+| Batch count                               | The number of batches in the file.                                             |
+| Block count                               | The number of physical blocks in the file, including the file header           |
+                                                 and the file control records. A block contains 940 characters.              |
+| Hash total                                | Each detail record is hashed to provide a check against inadvertent            |
+                                                 alteration of data contents.                                                |
+| Detail count                              | Total number of detail lines in the file.                                      |
+| Addenda count                             | Total number of addenda lines for each detail line.                            |
+| Line Count                                | Total number of lines in the file.                                             |
+| Total credit amount                       | Total amount of all credit lines in the file.                                  |
+| Total debit amount                        | Total amount of all debit lines in the file.                                   |
+| US-NACHA trace number                     | Uniquely identifies each entry with the batch.                                 |
+| Total number of credits                   | Total number of credits in the file.                                           |
+| Total number of debits                    | Total number of debits in the file.                                            |
+
+Field formats for dates
+
+When you map to a date field you’re asked to choose a date format. The following field formats for the date field type can be used. In the following list, Y represents the year, M represents the month, D represents the day of the month, day number represents the Julian date, and ISO date time follows ISO date time formatting requirements.
+•	YYMM
+•	YYMMDD
+•	YYYYMMDD •	MMYY
+•	MMDDYYYY •	DDMMYY
+•	DDMMYYYY
+•	Day number
+•	YY + Day number
+•	YYYY + Day number
+•	ISO date time
+
+Field formats for amounts
+
+When you map to an amount field, you have the option of removing the decimal place indicator. Two decimal places are provided for amount fields by default. If you choose to remove the decimal place indicator, you must specify the number of places after the decimal.
+
+The following table illustrates the change in amounts when the format is changed to remove the two default decimal places. 
+
+|------------------------|----------------|
+|Unformatted amount      | 123.45         |
+|Remove decimal places   | Yes            |
+|Decimal places          | 2              |
+|Formatted amoun         | 12345          |
+
+
+#### Setting up an EFT file format
+
+1.	Open the EFT File Format Maintenance window  (Cards >> Financial >> EFT File Format)
+2.	Enter or select a format ID and description.
+3.	Select a series. 
+4.	Select a format type. The number of fields, field lengths, starting and ending positions, and other information is displayed for the selected format type. 
+5.	Select to automatically generate a settlement for each transaction, if needed.
+6.	Choose Import/Export to import or export a file format to use in another company.
+7.	Choose Save to save your changes. 
+
+ ![screenshot](media/eftfileformat1.jpg)
+ 
+OPTIONAL:
+If you want, insert this additional information in-between the existing steps 5 and 6 to add some info about some of the other newer fields in the above window. 
+
+A. Select to include the Detail line for Addenda information.  With this marked, as many addenda lines will print for each invoice that makes up the payment.  Map the fields for the Addenda Line type as needed. 
+
+B. Mark Use Pad Blocks to add padded lines to the end of the EFT file as specified by the bank. 
+                Pad Character –  Enter the character or filler to pad the line with.  
+                Number of Pad Chars –  Enter how many characters across the line should be. 
+                Pad lines in Multiple of -  Enter the block count or blocking factor as specified by the bank.  
+
+C. Mark the checkbox for Delimit Fields and select from Comma, Tab, Space, or Other character as specified by the bank.   For the Text Qualifier, ‘None’ will default, or select from a single apostrophe or a double apostrophe to signify text.  Expand the lines in the EFT file, and mark the checkbox for Text Qualifier for each field that should be printed with the Text Qualifier around it.  
+
+
+#### Importing or exporting an EFT file format
+
+Use the EFT File Format Import/Export window to transfer file formats electronically. This is useful when setting up EFT information for multiple companies—if the same bank is used. You can create EFT file formats in one company, export them, and then import them in another company to reduce setup time
+
+To import or export an EFT file format
+
+1.	Open the EFT File Format Import/Export window. (Cards >> Financial >> EFT File Format >> select an EFT Format ID >> Import/ Export button)
+2.	If you’re importing a file format, enter or select the location of the format you’re importing.
+3.	If you’re exporting a file format, enter or select the location of the format you’re exporting to. 
+4.	Choose Import to import the format from the selected location, or Export to export the format to the selected location. 
+
+
+## Part 6: EFT setup for Payables Management
+
+This part of the documentation describes how to set up information making electronic payments to vendors using Payables Management. 
+
+#### Entering payables EFT options
+
+Use Checkbook EFT Payables Options window to specify options and output file locations for payables EFT transactions. 
+
+To enter payables EFT options:
+
+1.	Open the Checkbook EFT Payables Options window. (Cards >> Financial >> Checkbook >> select a checkbook >> EFT Bank >> Payables Options)
+
+2.	Select to use check numbers or EFT numbers for payables EFT transactions. If you select EFT numbers, enter the next EFT payment number. 
+Selecting Use Check Number will cause a non-negotiable check to be printed for each EFT transaction. If you use paper checks, you might want to use EFT numbers to minimize the number of paper checks used for transactions that are sent electronically. If Use EFT Numbers is selected, you can print a remittance to send to the vendor. The remittance number will be the next available EFT number.
+
+3.	Mark the Payables Prenote Required option if your bank requires prenotes. 
+
+4.	Enter the prenote grace period: the number of days to wait after generating a prenote for a new vendor record before transferring funds to the vendor electronically. The prenote date is compared to the payment date. 
+
+5.	Enter the paths and the filenames to use for EFT files generated in Payables Management. Because EFT files contain sensitive information, save them in a secure location. If you are using Microsoft Windows Vista®, Windows® 7, or Windows Server® 2008, files can’t be saved to the folder where Microsoft Dynamics GP program files are stored, typically C:\Program Files\Microsoft Dynamics\GP.
+
+6.	Select a single format for the output file or enter multiple formats to tailor a format to a vendor. 
+
+If you are using multiple formats and are in the United States, use Business, Corporate, or Personal for standard ACH transactions and Foreign for international ACH transactions (IAT) transactions. 
+
+If you are using an IAT file format and a standard ACH file format, a separate output file is generated for the IAT file format and the standard ACH file format. For the IAT file format, an output file is created for each destination country. 
+
+Use the expansion buttons to open the EFT File Format Setup window, where you can enter information for the selected output file format. 
+
+7.	Choose the Generate Prenotes button to generate a prenote file that you can send to your bank.
+
+8.	Choose OK to save your changes. 
+
+
+#### Setting up vendor records for EFT
+
+Use the Vendor EFT Bank Maintenance window to enter EFT information for a vendor that you pay using EFT transactions.
+
+You can print an authorization letter using the Letter Writing Assistant (Reports >> Letter Writing Assistant), which can be used to formalize an agreement with a vendor to use EFT payments.
+
+
+To set up vendor records for EFT:
+
+1.	Open the Vendor EFT Bank Maintenance window. (Cards >> Purchasing >> Vendor >> enter a vendor ID >> Address button >> EFT Bank button)
+
+2.	Enter or select the country/region for the bank that processes EFT transactions for the selected vendor. Fields that are required in this window depend on the selected bank country/region. 
+EFT transactions will be created through the select checks process using the remit-to address on the invoice being paid. When a payment is created manually, the vendor’s default remit-to address is used. 
+
+3.	Select the file transfer method. 
+You can create unique EFT file formats for each file transfer method using the EFT File Format Maintenance window. The file format specifies how and where specific types of information are stored in the file that's sent to the bank to transfer funds electronically. 
+
+4.	Enter the required information for the selected bank country/region. The vendor can provide this information for EFT transactions. 
+If you need to specify country codes, use the two-character ISO country code formats. Be aware that Microsoft Dynamics GP does not verify the ISO codes you enter, and your bank will reject a file format that has an incorrect code. 
+
+5.	Choose OK to save changes. 
+
+
+#### Generating prenotes to test vendor records
+
+Use the Generate EFT Prenotes window to generate a prenote for your bank to test the accuracy of your vendors’ bank account and transit numbers.
+
+To generate prenotes to test vendor records:
+
+1.	Open the Generate EFT Prenotes window. (Microsoft Dynamics GP menu >> Tools >> Routines >> Financial >> Generate EFT Prenotes)
+
+2.	To generate prenotes for vendors—either for the first time or for vendors whose information has changed—leave the Recreate prenote for any record dated on or before field blank. To regenerate prenotes for vendors a second or subsequent time, enter a date in the Recreate pre-note for any record dated on or before field. Prenotes will be recreated for all vendors whose last prenotes were created on or before the date entered in the field. You also can use this window to generate prenotes for customers, or for both customers and vendors at the same time. 
+
+3.	Enter the prenote file format to use. See Setting up an EFT file format on page 14 for more information about creating EFT file formats.
+
+4.	To generate a prenote edit list, choose File >> Print.
+
+5.	Choose OK to generate the prenote. 
+You must transmit the sample EFT file to your bank in order to complete the test. Be sure your communications software is set up to transmit the EFT file to your bank.
+
+
+#### Prenote rejections for Payables Management
+
+Your bank will reject a prenote if you made any mistakes entering information in the Vendor EFT Bank Maintenance window. 
+
+Common mistakes include:
+•	An incorrect account number
+•	An incorrect transit routing number
+•	Selecting the incorrect account type (for example, checking instead of savings) 
+
+When you receive a prenote rejection, verify the information you have on file with your vendor and correct the information in the Vendor EFT Bank Maintenance window. 
+
+If you’re unable to correct the information before you need to complete a check run, select the Inactive option in the window to prevent the program from generating electronic payments to that vendor.
+
+It takes between six and 10 days to receive prenote rejections from your bank. Set cutoff dates for making electronic payments to vendors prior to a check run.
+
+
+#### Transmitting a sample EFT file to your bank for Payables Management
+
+Before allowing you to transfer funds electronically, banks require you to transmit a sample EFT file. 
+The sample enables you and the bank to verify the accuracy of the information. 
+
+This process is different from generating prenotes. Prenotes are generated to confirm the accuracy of the information you have on file for each vendor. A sample EFT file is generated to verify that the file’s format matches the bank’s requirements.
+
+This process requires you to create actual transactions. You can set up the sample company to use EFT first so you can run the test. When generating a sample EFT file, the vendor account numbers need not be real, but the transit routing numbers for your vendors must be actual bank transit numbers.
+
+To transmit a sample EFT file to your bank for Payables Management:
+
+1.	Enter and post payables transaction vouchers in Payables Management for each of five vendors in varying currency amounts. 
+2.	Create a batch of EFT payments for the transactions created in step 1.
+3.	Open the Generate EFT Files window.  (Transactions >> Purchasing >> Generate EFT Files)
+4.	Select Purchasing as the series.
+5.	Select the ID of the checkbook you’re generating sample electronic payments from.
+6.	Mark the batches you’re including. Only pending EFT batches will appear in the Generate EFT Files window. Choose the Batch ID link to review the transactions in each batch.
+7.	To generate an EFT Batches Marked for EFT File Generation report, choose File >> Print.
+8.	Choose Generate EFT File. The sample EFT file will be written to the path and filename specified. 
+9.	After the sample EFT file is generated, the program will remind you to transmit the EFT file to the bank, if you entered a communication method in the Checkbook EFT Bank Maintenance window. If you specified the path and filename for your communications software, the program will start your communications software
+
+*You must transmit the sample EFT file to your bank in order to complete the test. Be sure your communications software is set up to transmit the EFT file to your bank.*
+
+#### Setting up the EFT Payment Register report
+
+Use the Posting Setup window to set up the EFT Payment Register report to be printed after you post EFT payment information.
+
+To set up the EFT Payment Register report:
+
+1.	Open the Posting Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Posting >> Posting)
+2.	Select Purchasing from the Series list.
+3.	Select Computer Checks from the Origin list.
+4.	Mark EFT Payment Register in the Reports list.
+5.	Set the report destination options and choose OK.
+
+## Part 7: EFT setup for Receivables Management
+
+Set up EFT for Receivables Management so you can receive electronic payments from customers and send electronic refunds to customers.
+
+#### Entering receivables EFT options
+
+Use Checkbook EFT Receivables Options window to specify options and output file locations for sales EFT transactions. Before completing this procedure, you should have entered bank information for any checkbooks that you’ll be using for EFT transactions.
+
+To enter receivables EFT options:
+
+1.	Open the Checkbook EFT Receivables Options window. (Cards >> Financial >> Checkbook >> select a checkbook >> EFT Bank >> Receivables Options)
+2.	Select to use EFT numbers for sales EFT transactions and enter the next EFT payment number (optional).
+3.	Mark the Receivables Prenote Required option if your bank requires prenotes. 
+4.	Enter the prenote grace period for receivables EFT transactions. The prenote grace period specifies the number of days to wait after generating a prenote for a new customer before transferring refunds to the customer electronically. 
+5.	Enter the paths and the filenames to use for EFT files generated in Receivables Management. Because EFT files contain sensitive information, save them in a secure location 
+6.	Select a single format for the output file or enter multiple formats to tailor a format to a customer. 
+
+If you are using multiple formats and are in the United States, use Business, Corporate, or Personal for standard ACH transactions and Foreign for international ACH transactions (IAT) transactions. 
+
+If you are using an IAT file format and a standard ACH file format, a separate output file is generated for the IAT file format and the standard ACH file format. For the IAT file format, an output file is created for each destination country. 
+
+Use the expansion buttons to open the EFT File Format Setup window, where you can enter information for the selected output file format. 
+Choose the Generate Prenotes button to generate a prenote file that you can send to your bank. 
+7.	Choose OK to save your changes.
+
+#### Setting up customer records for EFT
+
+Use the Customer EFT Bank Maintenance window to set up records for customers that pay or receive refunds electronically.
+
+To set up customer records for EFT:
+
+1.	Open the Customer EFT Bank Maintenance window.  (Cards >> Sales >> Customer >> enter a customer ID >> Address button >> EFT Bank button)
+
+2.	Enter or select the country/region for the bank that processes EFT transactions for the selected customer. Fields that are required in this window depend on the selected bank country/region.
+
+Select the file transfer method. You can create unique EFT file formats for each file transfer method using the EFT File Format Maintenance window. The file format specifies how and where specific types of information are stored in the file that's sent to the bank to transfer funds electronically. 
+
+3.	Enter the required information for the selected bank country/region. The customer can provide information for EFT transactions. Choose OK to save changes.
+
+*If you need to specify country codes, use the two-character ISO country code formats. Be aware that Microsoft Dynamics GP does not verify the ISO codes you enter, and your bank will reject a file format that has an incorrect code.*
+
+#### Generating prenotes to test customer records
+
+Use the Generate EFT Prenotes window to generate a prenote for your bank to test the accuracy of your customers’ bank account and transit numbers.
+
+To generate prenotes to test customer records:
+
+1.	Open the Generate EFT Prenotes window. (Microsoft Dynamics GP menu >> Tools >> Routines >> Financial >> Generate EFT Prenotes)
+2.	Select the ID for the checkbook you’re generating prenotes for.
+3.	To generate prenotes for customers—either for the first time or for customers whose information has changed—leave the Recreate prenote for any record dated on or before field blank. To regenerate prenotes for customers a second or subsequent time, enter a date in the Recreate pre-note for any record dated on or before field. Prenotes will be recreated for all customers whose last prenotes were created on or before the date entered in the field. You also can use this window to generate prenotes for customers, or for both vendors and customers at the same time. 
+4.	Enter the prenote file format to use. 
+5.	To generate a prenote edit list, choose File >> Print.
+6.	Choose OK. If you defined a communications link and you’ve configured your communications software correctly, the program will transmit the prenote to your bank
+
+#### Prenote rejections for Receivables Management
+
+Your bank will reject a prenote if any mistakes were made entering information in the Customer EFT Bank Maintenance window. Common mistakes include:
+•	An incorrect customer account number
+•	An incorrect transit routing number
+•	Selecting the incorrect account type (for example, checking instead of savings) 
+
+When you receive a prenote rejection, verify the information you have on file with your customer and correct the information for the customer in the Customer EFT Bank Maintenance window. If you’re unable to correct the information before you need to generate electronic debits from the customer, select the Inactive option in the window to prevent the program from generating electronic debits from that customer.
+
+*It takes between six and 10 days to receive prenote rejections from your bank. Set cutoff dates for debiting customer accounts prior to posting EFT payments.*
+
+#### Transmitting a sample EFT file to your bank for Receivables Management
+
+Before allowing you to transfer funds electronically, banks require you to transmit a sample EFT file. The sample enables you and the bank to verify the accuracy of the information. This process is different from generating prenotes. Prenotes are generated to confirm the accuracy of the information you have on file for each customer. A sample EFT file is generated to confirm that the file’s format matches the bank’s requirements. 
+
+*This process requires you to create actual transactions. You can set up the sample company to use EFT first so you can run the test. When generating a sample EFT file, the customer account numbers need not be real, but the transit routing numbers for your customers must be actual bank transit numbers.*
+
+To transmit a sample EFT file to your bank for Receivables Management:
+
+1.	Use the Invoice Batch Entry window, Sales Batch Entry window, or the Receivables Batch Entry window to create batches for sample payments that you can send to your bank. 
+
+2.	Create and post sample payments in the Invoice Payment Entry window, Sales 
+Payment Entry window, Cash Receipts Entry window, or the Receivables Transaction Entry window for each of five customers in varying currency amounts. See the Invoicing, Sales Order Processing, and Receivables Management documentation for more information.
+
+3.	Open the Generate EFT Files window. (Transactions >> Sales >> Generate EFT Files)
+
+4.	Select Sales as the series and Select the ID of the checkbook you’re generating sample electronic payments for.
+
+5.	Mark the batches you’re including. Only pending EFT batches will appear in the Generate EFT Files window. Choose the Batch ID link to review the transactions in each batch.
+
+7.	To generate an EFT Batches Marked for EFT File Generation report, choose File >> Print.
+
+8.	Choose Generate EFT File. The sample EFT file will be written to the path and filename specified. 
+
+9.	After the sample EFT file is generated, the program will remind you to transmit the EFT file to the bank, if you entered a communication method in the Checkbook EFT Bank Maintenance window. If you specified the path and filename for your communications software, the program will start your communications software. 
+
+*You must transmit the sample EFT file to your bank in order to complete the test. Be sure your communications software is set up to transmit the EFT file to your bank. *
 
 ## Additional Feature Functionality added to Payables Management
 
