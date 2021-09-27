@@ -29,7 +29,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 ## Microsoft Dynamics GP
 
-  Includes What's New and documentation to all the features for this release. 
+  Includes What's New and documentation of all features for this release. 
 
 - [Dynamics GP October 2021- Feature Blog Series - 18.4] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2021-new-feature-blog-series-schedule)
 
@@ -44,7 +44,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [System Requirements for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_system_requirements)
 
-- [Upgrade Hot Topic](https://docs.microsoft.com/en-us/dynamics/s-e/gp/hot_topic_mdgpupgrade_415)
+- [Upgrade Hot Topic](/dynamics/s-e/gp/hot_topic_mdgpupgrade_415)
 
 - [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
 
@@ -64,7 +64,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Product Release Downloads for Microsoft Dynamics GP 2018](/dynamics/s-e/gp/MDGP2018_Release_Download_378)
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2018](/dynamics/s-e/gp/MDGP2018_PatchReleases_377)
 - [System Requirements for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_system_requirements)  
-- [Upgrade Hot Topic](https://docs.microsoft.com/en-us/dynamics/s-e/gp/hot_topic_mdgpupgrade_415)
+- [Upgrade Hot Topic](/dynamics/s-e/gp/hot_topic_mdgpupgrade_415)
 - [US Year-End](/dynamics/s-e/gp/usgpye2018_396)
 - [US Taxes](/dynamics/s-e/gp/tugp2018_391)
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
@@ -82,7 +82,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Product Release Downloads for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_Release_Download_371)
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_PatchReleases_370)
 - [Core System Requirements for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2016_system_requirements)  
-- [Upgrade Hot Topic](https://docs.microsoft.com/en-us/dynamics/s-e/gp/hot_topic_mdgpupgrade_415)
+- [Upgrade Hot Topic](/dynamics/s-e/gp/hot_topic_mdgpupgrade_415)
 - [US Year-End](/dynamics/s-e/gp/usgpye2016_395)  
 - [US Taxes](/dynamics/s-e/gp/tugp2016_390)  
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2016_284)
@@ -102,7 +102,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 ## Documentation and Resources
 
-- [Application](https://docs.microsoft.com/en-us/dynamics-gp/)
+- [Application](/dynamics-gp/)
 - [Developer](/previous-versions/dynamicsgp/developer/bb219081%28v=msdn.10%29)
 
 Important links on [Microsoft Dynamics GP 2015, 2013, 2010 & 10.0](https://mbs.microsoft.com/_layouts/15/DocIdRedir.aspx?ID=MBSDYN-3-5969).
