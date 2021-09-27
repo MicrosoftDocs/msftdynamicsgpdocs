@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 09/26/2021
+ms.date: 09/27/2021
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -31,7 +31,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
   Includes What's New and documentation of all features for this release. 
 
-- [Dynamics GP October 2021- Feature Blog Series - 18.4] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2021-new-feature-blog-series-schedule)
+- [Dynamics GP October 2021- Feature Blog Series - 18.4](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2021-new-feature-blog-series-schedule)
 
 - [Dynamics GP October 2020- Feature Blog Series - 18.3](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2020-new-feature-blog-series-schedule-410418203)
  
