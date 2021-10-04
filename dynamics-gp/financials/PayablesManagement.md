@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 09/24/2021
+ms.date: 10/04/2021
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -4582,6 +4582,145 @@ Payment Entry window, Cash Receipts Entry window, or the Receivables Transaction
 9.	After the sample EFT file is generated, the program will remind you to transmit the EFT file to the bank, if you entered a communication method in the Checkbook EFT Bank Maintenance window. If you specified the path and filename for your communications software, the program will start your communications software. 
 
 *You must transmit the sample EFT file to your bank in order to complete the test. Be sure your communications software is set up to transmit the EFT file to your bank. *
+
+
+#### Changing the posting settings for Direct Debits and Refunds
+
+To change the posting settings for Direct Debits and Refunds:
+1.	Open the Posting Setup window.   (Microsoft Dynamics GP menu >> Tools >> Setup >> Posting >> Posting)
+2.	From the Series drop-down list, select Sales, and from the Origin drop-down list, select Direct Debit.
+3.	To print multicurrency posting journals, mark the Include Multicurrency Info option.
+4.	To mark all reports in the scrolling window, choose Mark All.
+5.	In the Print column of the Reports scrolling window, unmark any reports you do not want to print. 
+6.	To unmark all the reports that are currently displayed in the scrolling window, choose Unmark All.
+7.	In the Send To column, specify one or more destinations for the reports you want to print. The options are File, Printer, Screen, or Ask each time.
+8.	If you select File as the destination, make the following selections: 
+•	In the Type column, select a file format: text, tab delimited, comma delimited, Adobe PDF File, or HTML. 
+•	In the Append/Replace column, select what to do if the report file already exists. 
+•	In the Path column, enter the location and the file name for the report file. Because the reports can contain sensitive information, save them in a secure location. 
+9.	To print the Posting Settings Report, showing the posting and reporting options for the selected series and origin, choose File >> Print.
+10.	Choose Save. 
+11.	Select Direct Debits and Refunds and repeat steps 3 through 10.
+12.	Choose OK to save and close the window.
+
+#### Setting up audit trail codes for Direct Debits and Refunds
+
+Audit trail codes update the Microsoft Dynamics GP Batch IDs in Receivables Management. These codes appear on all reports and Inquiry windows.
+
+To set up audit trail codes for Direct Debits and Refunds:
+1.	Open the Audit Trail Codes Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Posting >> Audit Trail Codes)
+2.	Select Sales in the Display field.
+3.	Verify if the Direct Debit and Direct Debit Refunds are updated and marked in the scrolling window.
+4.	Choose OK to save and close the window.
+
+#### Editing Direct Debit setup information
+
+Use the Direct Debits Setup window to view or edit the Description, Code and the Next number for direct debit receipts and refunds. You can open this window only if you’ve marked the Enable European Funds Transfer option in the Company Setup Options window. The Additional menu will also appear only if this option is marked. 
+
+To edit Direct Debit setup information:
+1.	Open the Direct Debits Setup window.
+(Microsoft Dynamics GP menu >> Tools >> Setup >> Sales >> Receivables >> Options >> Additional menu >> Direct Debit Setup)
+2.	The Description, Code, and Next Number information will appear as default entries for Direct Debit and Refunds. You can change this information if required.
+3.	Mark the Transaction Code Message option to indicate the transaction code that’s used as the default during transaction entry. You can unmark this option if required.
+4.	Choose OK to save and close the window.
+
+#### Understanding transaction codes
+
+Each transaction that appears in a direct debit instruction must have a transaction code assigned to it. A transaction code allows the bank to determine the status of each transaction in a direct debit instruction.
+
+The following codes can be assigned to a transaction:
+01 This code is assigned to the first transaction in a direct debit instruction.
+17	This code is assigned to a transaction that is neither the first nor the last transaction in a direct debit instruction.
+18	This code is assigned to a transaction that previously was assigned the code 01, but the direct debit instruction was rejected. When you resubmit such a transaction, the code will be 18. 
+19	This code is assigned to the last transaction in a direct debit instruction.
+99 This code is assigned to transactions that have the nature of a refund.
+
+When you enter a direct debit transaction, the transaction code defaults depending on the transaction type, and transaction document number for the customer. 
+
+The following table displays the transaction codes that will default for each transaction type, depending on the document number and the customer.
+
+| **Module**     |   **Document Types**         |       **Transaction Condition**   |**Transaction Code**|
+|----------------|------------------------------|-----------------------------------|--------------------|
+| Receivable     | Sales/Invoice,Debit Memo,    | The first direct debit trx of the |    01              |
+| Management      Service/Repair                  doc type entered for the customer                      |
+| Receivable     | Sales/Invoice,Debit Memo,    | The previous direct debit trx of  |    01              |
+| Management      Service/Repair                  doc type entered for the customer                      |
+|                                                 had a trx code of 19                                   |
+| Sales Order    | Invoice                      | The first direct debit trx of the |    01              |
+| Processing                                      doc type entered for the customer                      |
+| Sales Order    | Invoice                      | The previous direct debit trx of  |    01              |
+| Processing                                      doc type entered for the customer                      |
+|                                                 had a trx code of 19                                   |
+| Receivable     | Sales/Invoice,Debit Memo,    | The previous direct debit trx of  |    17              |
+| Management      Service/Repair                  doc type entered for the customer                      |
+|                                                  was either 01, 17, or 18                              |  
+| Sales Order    | Invoice                      | The previous direct debit trx of  |    17              |
+| Processing                                      doc type entered for the customer                      |
+|                                                 was either 01, 17, or 18                               |                                                   
+| Receivable     | Credit Memo / Return         | Return type of the transactions.  |    99              |
+| Management                                      You cannot change this value.                          |
+| Sales Order    | Returns                      | Return type of the transactions.  |    99              |
+| Processing                                     You cannot change this value.                           |
+
+
+
+## Part 8: Safe Pay Setup
+
+This information explains how to set up Safe Pay to confirm with your bank the authenticity of a check before paying it.
+
+### Record type codes
+In the file you upload to your bank, each line is a separate record. The bank’s file format specification indicates which type of record (transmission header, transmission footer, account header, account footer, or account detail) each line is.
+
+Not all bank formats include all record types. Some bank formats include both transmission and account headers and footers, which need to be defined separately. 
+
+Safe Pay handles the following five record types:
+
+Header transmission 
+The header transmission record type includes information about the type of file being transmitted, the date of transmission, your company name, and other information applicable to the entire file. There is usually only one record line of this type per bank format.
+
+Header account 
+The header account record type is used to distinguish between various accounts and will appear once for each checking account included in the file. The header account record line precedes the detail record line for each account.
+
+Detail account 
+The detail account record type details each transaction for the account. Detail account record line information can include check amount, void amount, check number, payee, date, branch, account number, and so on.
+
+Footer account 
+The footer account record type summarizes account details, such as number of checks, total dollar value of checks, number of voids, total dollar amount of voids, and so on. This record line will appear once for each checking account included in the file.
+
+Footer transmission 
+The footer transmission record type contains information concerning the total number of records for all accounts in a file and may also include the total dollar amount. Usually there is a field or character in this line that indicates it is the final line in the file.
+
+*Different banks use different names to refer to the record type of each line, (for example, “footer transmission” may be called “trailer record”). To find out which record type to use, compare the preceding record type descriptions to the specification provided by your bank.*
+
+### Fields per line
+When creating a bank format you need to know the number of fields per record line. Determining how many fields are on each line depends on the file format, as follows:
+
+Fixed field file formats 
+If your bank’s file format is a fixed field format, the fields per line is the total number of fields on the line. You’ll specify in Electronic Reconcile the exact position of each item of useful data. Identify fields not used as “filler.” 
+
+Comma-delimited or tab-delimited file formats 
+If your bank’s file format is a comma-delimited or tab-delimited file format, determine the right-most field Safe Pay will use on a record line. Then count the fields, from left to right, through the right-most field used. This is the number of fields for the record line. If fields with irrelevant data appear before the right-most field, you must define those fields.
+
+### Standard Field Types
+
+Use one of the following standard field types to define each field of your bank format
+
+| **Standard Field Type**      | **Datatype** | **Description**                                                 |
+|------------------------------|--------------------------------------------------------------------------------|
+| Account Number               | TEXT         | Bank Account Number                                             |
+| Bank Name                    | TEXT         | Name of the bank                                                |
+| Check Amount                 | CURRENCY     | Amount of the transaction (check or void)                       |
+| Check Date                   | DATE         | Date printed on check                                           |
+| Check Issue Date             | DATE         | Date printed on check                                           |
+| Check Number                 | TEXT         | Check number for the check displayed in Checkbook Register Inq. |
+| Constant                     | TEXT         | Constant value given to you by the bank                         |
+| Filler                       | TEXT         | Spaces/zeros in fixed field formats to fill in unused field     |
+| Payee                        | TEXT         | Person to whom check was written                                |
+| Today's Date                 | DATE         | Date file is generated                                          |
+| Trasaction Type              | TEXT         | Single-digit code indicating the transaction is check/void      |
+| Your Company Name            | TEXT         | Often banks have a fixed field size for their company name/Abbre|
+
+
 
 ## Additional Feature Functionality added to Payables Management
 
