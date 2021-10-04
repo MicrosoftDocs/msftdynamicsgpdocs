@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 09/22/2021
+ms.date: 10/2/2021
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -414,5 +414,12 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 
 - [Set up the application in the Azure Portal](/dynamics-gp/whats-new/multi-factor-authentication)  
 - [Configure MFA in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)  
+
+
+## Emailing Setup Guide by Module
+
+The below document covers setup of email starting with System Wide Setup, Purchasing, Sales, and Workflow setup.
+Depending what area of email you need to setup, please review the steps outlined below.
+- [Emailing Setup Guide](https://community.dynamics.com/gp/b/dynamicsgp/posts/emailing-setup-guide#_Toc71192006)  
 
 
