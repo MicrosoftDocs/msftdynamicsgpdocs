@@ -130,7 +130,7 @@ Solution: The following path is the best route for generic login issues:
 
 2. Confirm that Basic Authentication is enabled  
 
-    Most Exchange Administrators can answer this for you, although the [this blog post outlines other routes to confirm the status of Basic Authentication](https://community.dynamics.com/gp/b/dynamicsgp/posts/exchange-online-o365emailing-inside-dynamics-gp)  
+    Most Exchange Administrators can answer this for you, although the [this blog post outlines other routes to confirm the status of Basic Authentication](https://community.dynamics.com/gp/b/dynamicsgp/posts/exchange-online-o365-emailing-inside-dynamics-gp)  
 
 3. Confirm that Autodiscover is working  
 
