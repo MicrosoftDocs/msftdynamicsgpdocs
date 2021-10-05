@@ -82,7 +82,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Product Release Downloads for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_Release_Download_371)
 - [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_PatchReleases_370)
 - [Core System Requirements for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2016_system_requirements)  
-- [Upgrade Hot Topic](https://docs.microsoft.com/en-us/dynamics/s-e/gp/hot_topic_mdgp2016upgrade_413)
+- [Upgrade Hot Topic](/dynamics/s-e/gp/hot_topic_mdgp2016upgrade_413)
 - [US Year-End](/dynamics/s-e/gp/usgpye2016_395)  
 - [US Taxes](/dynamics/s-e/gp/tugp2016_390)  
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2016_284)
