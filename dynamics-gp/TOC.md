@@ -142,6 +142,7 @@
 #### [Network configuration](installation/network-configuration.md)
 #### [SQL Server configuration](installation/microsoft-sql-server-configuration.md)
 #### [Account framework](installation/account-framework.md)
+#### [Service Based Architecture (SBA)](installation/SBA.md)
 ### Installation
 #### [Install Dynamics GP on the first computer](installation/installing-on-first-computer.md)
 #### [Installing Dynamics GP on subsequent computers](installation/installing-on-subsequent-computers.md)

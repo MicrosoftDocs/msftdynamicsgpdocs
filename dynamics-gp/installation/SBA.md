@@ -1,4 +1,5 @@
-title: Dynamics GP Service Based Architecture (SBA)
+---
+title: Dynamics GP Service Based Architecture
 description: This provides an introduction for Service Based Architecture in Microsoft Dynamics GP.
 keywords: "SBA"
 author: theley502
@@ -7,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/12/2021
+ms.date: 10/13/2021
 ---
 
 # Service Based Architecture for Dynamics GP
@@ -37,68 +38,71 @@ The second is the nature of the connection. The Web Client requires a stateful c
 ## What can be done with Service Based Architecture?
 
 The following actions can be done with SBA:
-•	GET – Obtain a list of objects or details on a specific object. Examples of this would be to get a list of customers or to get information on a specific transaction
-•	POST – This action is used for the creation of an object. An example would be to create a vendor address 
-•	PATCH – When an update needs to be done, this HTTP Request Type is used. The object (i.e. Customer) must exist for this to be used.
-•	DELETE – This is used when an object needs to be deleted. The object must exist and must meet the rules in order to be deleted.
+
+- GET – Obtain a list of objects or details on a specific object. Examples of this would be to get a list of customers or to get information on a specific transaction
+- POST – This action is used for the creation of an object. An example would be to create a vendor address 
+- PATCH – When an update needs to be done, this HTTP Request Type is used. The object (i.e. Customer) must exist for this to be used.
+- DELETE – This is used when an object needs to be deleted. The object must exist and must meet the rules in order to be deleted.
 
 Here is what is exposed to SBA with Dynamics GP 2015 RTM:
 
-•	Administration
-  o	Countries
-  o	Currencies
-  o	Payment Terms
-•	Companies
-•	Financials
-  o	Checkbooks
-  o	Setup
-  	Currency Accounts
-•	Inventory
-  o	Classes
-  o	Item Currencies
-  o	Item Price Lists
-  o	Items
-  o	Item Sites
-  o	Item Vendors
-  o	Lot Categories
-  o	Price Groups
-  o Price Levels
-  o	Sites
-  o	Transaction Headers
-  o	Transaction Lines
-  o	Transactions
-  o	Unit of Measure Headers
-  o	Unit of Measure Lines
-  o	Unit of Measures
-•	Modules
-•	Products
-•	Purchasing
-  o	Payables
-  	Transactions
-  o	Requisitions
-  	Transaction Headers
-  	Transaction Lines
-  	Transactions
-  o	Vendor Addresses
-  o	Vendors
-•	Sales
-  o	Classes
-  o	Customer Addresses
-  o	Customers
-  o	Receivables
-  	Transactions
+- Administration
+  - Countries
+  - Currencies
+  - Payment Terms
+- Companies
+- Financials
+  - Checkbooks
+  - Setup
+  -	Currency Accounts
+- Inventory
+  - Classes
+  - Item Currencies
+  - Item Price Lists
+  - Items
+  - Item Sites
+  - Item Vendors
+  - Lot Categories
+  - Price Groups
+  - Price Levels
+  - Sites
+  - Transaction Headers
+  - Transaction Lines
+  - Transactions
+  - Unit of Measure Headers
+  - Unit of Measure Lines
+  - Unit of Measures
+- Modules
+- Products
+- Purchasing
+  - Payables
+  - Transactions
+  - Requisitions
+  - Transaction Headers
+  - Transaction Lines
+  - Transactions
+  - Vendor Addresses
+  - Vendors
+- Sales
+  - Classes
+  - Customer Addresses
+  - Customers
+  - Receivables
+  - Transactions
 
 Not all actions above are available on each of the objects.
 
-##  What technologies should be understood before deploying Service Based Architecture?
+## What technologies should be understood before deploying Service Based Architecture?
 
-The technologies for deploying the Web Client are the same for deploying Service Based Architecture. 
+The technologies for deploying the Web Client are the same for deploying Service Based Architecture.  
+
 An understanding of the following technologies is needed for the installation:
-•	Internet Information Systems (IIS)
-•	Creation and implementation of SSL Certificates
-•	Hardware\Software Firewalls (if they are in the environment)
-•	Installation of a Dynamics GP Client
-•	Tenant Services (if having a Multitenant environment is desired)
+
+- Internet Information Systems (IIS)
+- Creation and implementation of SSL Certificates
+- Hardware\Software Firewalls (if they are in the environment)
+- Installation of a Dynamics GP Client
+- Tenant Services (if having a Multitenant environment is desired)
 
 ## Prerequisites
 
@@ -114,4 +118,3 @@ The user that is created\specified in this window should NOT be a GP user.
 Once the information has been entered on this window, click the Save button.
 Once this user is saved, the user will be given access to the System and Company databases and will have access to all of the objects in those databases.
 This user cannot log into Dynamics GP and this user cannot be used in another application, like Microsoft Office Excel, to access the data because of the encryption on the password.
-
