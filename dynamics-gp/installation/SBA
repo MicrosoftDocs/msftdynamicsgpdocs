@@ -10,9 +10,9 @@ ms.author: theley
 ms.date: 10/12/2021
 ---
 
-# What is Service Based Architecture?
+# Service Based Architecture for Dynamics GP
 
-SBA is a method for enabling applications and services that Microsoft and its partners create to be able to access GP functionality through a standards-based services model.
+Service Based Architecture (SBA) is a method for enabling applications and services that Microsoft and its partners create to be able to access GP functionality through a standards-based services model.
 
 To boil this down, it means that we can utilize the logic that is already created in a dictionary in a GP client and expose that to an endpoint for consumption.
 
@@ -43,49 +43,50 @@ The following actions can be done with SBA:
 •	DELETE – This is used when an object needs to be deleted. The object must exist and must meet the rules in order to be deleted.
 
 Here is what is exposed to SBA with Dynamics GP 2015 RTM:
+
 •	Administration
-o	Countries
-o	Currencies
-o	Payment Terms
+  o	Countries
+  o	Currencies
+  o	Payment Terms
 •	Companies
 •	Financials
-o	Checkbooks
-o	Setup
-	Currency Accounts
+  o	Checkbooks
+  o	Setup
+  	Currency Accounts
 •	Inventory
-o	Classes
-o	Item Currencies
-o	Item Price Lists
-o	Items
-o	Item Sites
-o	Item Vendors
-o	Lot Categories
-o	Price Groups
-o	Price Levels
-o	Sites
-o	Transaction Headers
-o	Transaction Lines
-o	Transactions
-o	Unit of Measure Headers
-o	Unit of Measure Lines
-o	Unit of Measures
+  o	Classes
+  o	Item Currencies
+  o	Item Price Lists
+  o	Items
+  o	Item Sites
+  o	Item Vendors
+  o	Lot Categories
+  o	Price Groups
+  o Price Levels
+  o	Sites
+  o	Transaction Headers
+  o	Transaction Lines
+  o	Transactions
+  o	Unit of Measure Headers
+  o	Unit of Measure Lines
+  o	Unit of Measures
 •	Modules
 •	Products
 •	Purchasing
-o	Payables
-	Transactions
-o	Requisitions
-	Transaction Headers
-	Transaction Lines
-	Transactions
-o	Vendor Addresses
-o	Vendors
+  o	Payables
+  	Transactions
+  o	Requisitions
+  	Transaction Headers
+  	Transaction Lines
+  	Transactions
+  o	Vendor Addresses
+  o	Vendors
 •	Sales
-o	Classes
-o	Customer Addresses
-o	Customers
-o	Receivables
-	Transactions
+  o	Classes
+  o	Customer Addresses
+  o	Customers
+  o	Receivables
+  	Transactions
 
 Not all actions above are available on each of the objects.
 
