@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/10/2021
+ms.date: 10/14/2021
 ---
 # Human Resources in Microsoft Dynamics GP
 
@@ -187,6 +187,100 @@ To set up Human Resources user preferences:
 3. Mark the Roll Personal To Do List Forward option to move personal to do list entries that aren't cancelled or finished to the next day in the to do list.
 4. Select the Code option to display the organizational codes in the Employee Maintenance window. Select the Description option to display the organizational descriptions in the Employee Maintenance window.
 5. Choose OK to save your changes.
+
+## Organizational structure
+Your company’s organizational structure might include multiple levels, such as divisions, departments, positions, supervisors, and locations. You can create these levels and store additional information for each level.
+
+A division is a branch of a company, usually including several departments. A department is a specialized portion of a division or company, which usually concentrates on one type of task. You’ll use several windows to enter the various types of organizational information for your business. Some companies conduct business from more than one site or location and each site has a different address.
+
+Each position has certain physical requirements. The Americans with Disabilities Act (ADA) prohibits employers from discriminating against qualified individuals with disabilities. Use the Position Setup window to enter employee positions, and use the ADA Physical Requirements window to define the physical requirements for each position.
+
+Many positions require special skills and training and you can link training courses and classes to position codes. You can use the Position Course Link window and the Courses Available to Link window to link skill and training requirements to position codes.
+
+You can use position control to plan future positions and roll down information from the planned positions and position seats to employees. Position control is optional. 
+
+Use the Company Human Resources Setup window to set up company human resources information, such as the type of business and Standard Industrial Classification (SIC), Dun & Bradstreet (DUNS), North America Industry Classification System (NAICS), and Vets-100 numbers. You can set up human resources information for each company.
+
+## To set up company human resources information:
+1.	Open the Company Human Resources Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Company >> Company >> Human Resources button)
+ 
+2.	Enter the type of business and the SIC number for this company. 
+
+3.	Enter the DUNS number and Vets-100 number for this company.
+
+## Setting up an operating procedure
+Use the Operating Procedures Setup window to set up an operating procedure. You can use the OLE (Object Linking and Embedding) Container to attach files created in other applications. 
+
+To set up an operating procedure:  
+1.	Open the Operating Procedures Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Operating Procedures)
+2.	Enter a category name that describes the operating procedure.
+3.	Enter the operating procedure information.
+
+## Setting up a division code
+Use the Division Setup window to set up a division. A division is an organizational level between a company and a department. A company can have several divisions, and each division can have several departments. You also can add information using extra fields. 
+To set up a division code:
+
+1.	Open the Division Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Division)
+2.	Enter a name that identifies the division and a code or accept the default code.
+3.	Enter an address, city, state, and postal code for this division.
+4.	Enter a phone number, fax number, and e-mail address for this division.
+5.	Choose Extra Fields to open the Division Extra Fields window. 
+
+## Setting up a department code
+Use the Department Setup window to set up a department code. A department is a specialized unit of a division or company, which usually concentrates on one type of task. For example, accounting and purchasing are typical departments. You can use up to six letters and numbers to create a department code. You also can add information using extra fields. 
+
+To set up a department code: 
+1.	Open the Department Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Department)
+2.	Enter a code that identifies the department and a description.
+3.	Choose Extra Fields to open the Department Extra Fields window. Setting up a position code
+
+## Setting up a position code
+Use the Position Setup window to set up a position code. A position is a defined role within a company. You can create multiple positions for a single position plan. You can link training courses and specify which skill sets, if any, are required for a position. You also can link pay codes and Americans with Disabilities Act (ADA) physical requirements to a position code.
+
+If your company uses salary matrices, you can link the low, middle, and high salaries for each position to a position code. You also can add information using extra fields. 
+To set up a position code:
+
+1.	Open the Position Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Position)
+2.	Enter a code that identifies the position, and a description. Choose the notes button to add additional comments.
+3.	Select an Equal Employment Opportunity (EEO) class and a Fair Labor Standards Act (FLSA) status.
+4.	Enter or select a position the individuals in the position report to.
+5.	Enter or select the review type to be used for employees in this position and enter or select a required skill set.
+6.	Enter a description of the position in the Position Description field.
+
+Choose the paperclip button to open the OLE (Object Linking and Embedding) container and store a position description file.
+7.	Choose Linked Pay Codes to open the Position \ Pay Code Setup window and link pay codes and salary ranges to this position code. 
+8.	Choose ADA to open the ADA Physical Requirements window. 
+9.	Choose Training to open the Courses Available to Link window. 
+10.	Choose Extra Fields to open the Position Extra Fields window. 
+
+## Setting up a location code
+Use the Company Addresses Setup window to set up a location code, which includes an address, phone numbers, and a contact person for each location. If your company has multiple sites, you can track which employees are working from which sites by setting up location IDs.
+
+To set up a location code:
+1.	Open the Company Addresses Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Location)
+2.	Enter an identification and name for the company’s location.
+3.	Enter contact, address and phone information.
+4.	Choose Address ID Internet to enter or view Internet information for this address. 
+
+## Setting up company Internet information
+Use the Internet Information window to track Internet-related information about your company, such as e-mail addresses, Web page URLs, and FTP sites. If you’ve set up multiple addresses for your company, you can track Internet information for each address.
+
+To set up company Internet information:
+1.	Open the Internet Information window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Company >> Internet Information)
+2.	Select a company in the Select Information for field.
+The company you’re currently logged in to is displayed in the Company ID field.
+3.	Enter or select an address in the Address ID field.
+4.	Enter Internet information.
+5.	To print Internet information for the current company, choose File >> Print or the printer button. The Internet Information Report is printed, showing Internet information for the current company.
+
+## Deleting an organizational code
+Use the Division Setup, Department Setup, Position Setup or Company Addresses Setup windows to delete a division, department, position, or location code. You cannot delete a division code, department code, or position code that is assigned to an employee record.
+To delete an organizational code:
+
+1.	Open the Human Resources Organization Setup menu.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization)
+2.	Select Division, Department, Position, or Location.
+3.	Enter or select the code you want to delete.
+
 
 ## See also
 
