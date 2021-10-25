@@ -18,8 +18,7 @@ Her Majesty's Revenue and Customs (HMRC) is implementing the first step of Makin
 * Submit VAT return electronically using [software recognized by HMRC](https://www.gov.uk/guidance/software-for-sending-income-tax-updates).
 * If you are new to VAT 100 setup, review [How to set up VAT 100 Return](https://community.dynamics.com/gp/b/dynamicsgp/archive/2019/01/29/microsoft-dynamics-gp-information-about-the-vat-100-return)
 * If you are having issues using the Making Tax Digital, see [Troubleshooting Making Tax Digital]( https://community.dynamics.com/gp/b/dynamicsgp/archive/2019/03/12/microsoft-dynamics-gp-39-making-tax-digital-39-functionality-for-uk-vat)
-* Group VAT functionality added to Microsoft Dynamics GP. For more information:
-* [Group VAT filing for multiple companies with VAT 100 Return](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-group-vat-filing-for-multiple-companies-with-vat-100-return)
+* Group VAT functionality added to Microsoft Dynamics GP. For more information, see [Group VAT filing for multiple companies with VAT 100 Return](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-group-vat-filing-for-multiple-companies-with-vat-100-return)
 
 ## Set up Making Tax Digital for VAT
 
