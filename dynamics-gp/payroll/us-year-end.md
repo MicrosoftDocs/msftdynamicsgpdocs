@@ -21,7 +21,7 @@ This document contains instructions for updating the U.S. Payroll module for Dyn
 
 Also included in this document are instructions for completing payroll year-end procedures. These instructions assume that you are already familiar with U.S. Payroll for Dynamics GP.
 
-You can find information about year-end payroll procedures in the [Payroll Company Routines]([U.S. 2021 Year-end Update in Dynamics GP](PayrollUS.md#payrollcompanyroutine) and [Government Form and Report Routines](PayrollUS.md#govformreportroutines) sections in the [U.S. Payroll](PayrollUS.md) documentation for Dynamics GP.
+You can find information about year-end payroll procedures in the [Payroll Company Routines (U.S. 2021 Year-end Update in Dynamics GP)](PayrollUS.md#payrollcompanyroutine) and [Government Form and Report Routines](PayrollUS.md#govformreportroutines) sections in the [U.S. Payroll](PayrollUS.md) documentation for Dynamics GP.
 
 > [!NOTE]
 > The instructions in this article expand on the instructions in your Payroll documentation, and in some cases, supersede them.
