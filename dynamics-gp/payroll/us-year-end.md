@@ -484,7 +484,7 @@ Use the Payroll Year-end Closing window to create a table of annual wage informa
 
     ![Remove Inactive Records window](media/a4d9e20a94bd7bdf275d5a701f20fbdb.jpg)
 
-You can install 2022 tax tables any time after you've created the Year-end Wage file. You also may need to process 2022 pay runs before printing 2021 wage statements. For more information, see the checklist [Processing 2022 pay runs before printing 2021 statements](##printnewbeforeold).
+You can install 2022 tax tables any time after you've created the Year-end Wage file. You also may need to process 2022 pay runs before printing 2021 wage statements. For more information, see the checklist [Processing 2022 pay runs before printing 2021 statements](#printnewbeforeold).
 
 ### Editing W-2 records
 
