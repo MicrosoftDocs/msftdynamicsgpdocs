@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/26/2021
+ms.date: 10/28/2021
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -135,6 +135,10 @@ Solution: The following path is the best route for generic login issues:
 3. Confirm that Autodiscover is working  
 
     You can do this by removing the user from the SY04920 table (Dynamics/System database) and attempting to login again. If this table does not repopulate, then there are Autodiscover issues in the system (or the user doesn’t work). For insights into how this all works, along with other tests, see [this blog post](https://community.dynamics.com/gp/b/dynamicsgp/posts/exchange-emailinginside-dynamics-gp)  
+
+[!NOTE]
+> With Login Failed type of error messages we have seen some cases where TLS 1.0 was disabled, due to the looming end date and vulnerabilities.  If you are still on an older version of Microsoft Dyanmics GP, this needs to be enabled on your local exchange servers. [TLS completely disabled in 2022](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth)
+
 
 ## Generic Errors
 
