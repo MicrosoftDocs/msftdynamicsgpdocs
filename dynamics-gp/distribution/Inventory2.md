@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/02/2019
+ms.date: 10/30/2021
 
 ---
 # Inventory Control in Dynamics GP - Parts 4-6
@@ -2880,6 +2880,128 @@ Use the Inventory Checklists window to open specific Inventory Control checklist
 
 Depending on the routine you've selected, choosing Open will open a window or start a macro in the Microsoft Dynamics GP system, or start an external application.
 
+
+## Part 6: How to determine, maintain, and report accurate costing in Inventory 
+
+This section has been provided to address questions about the calculation and maintenance of Inventory item costs and how those changes affect your inventory valuation. 
+
+With Microsoft Dynamics GP there are several costing enhancements in Inventory module that provide or capture information in the Inventory module that improve the ability to maintain accurate costs when you increase or you decrease inventory quantities. 
+
+The enhancements added business logic that automatically determines, at the time of posting, when a cost variance is encountered in inventory. This business logic handles any currency variance amounts based on the individual item setup or inventory posting setup and cost adjustments are automatically created in the General Ledger module in a summary manner, by default, to the correct accounts. Although some of this logic did exist, the automatic posting of these cost adjustments to the General Ledger module is a significant. 
+
+The following list describes the types of transactions. These five types can cause an inventory revaluation to occur for perpetual items: 
+ 
+1.	Post a purchasing invoice that has been matched to a receipt at a different cost with some of the items from the receipt already being sold.  This scenario will cause a revaluation to occur against the items that were sold prior to matching the invoice if the item is marked to revalue. 
+ 
+2.	Post a purchasing invoice for a Landed Cost amount on a Purchase Receipt Inventory layer that has quantities that have already been sold. This scenario will cause a revaluation to occur for those items that have been sold if the item is marked to revalue. 
+ 
+3.	Close a Purchase Order line short with a shipment quantity greater than the invoiced quantity. When some of these items are sold, this scenario will also cause a revaluation to occur for the sold items. 
+ 
+4.	Use the Adjust Cost Utility and manually adjust the unit cost for a layer. This scenario will cause a revaluation to occur if quantity has been sold on that layer. 
+ 
+5.	Post a transaction that relieves an override purchase receipts layer that resulted in a negative Inventory balance at the Inventory site. 
+This scenario will **always** cause a revaluation to occur for the negative quantities.  
+
+**Note: Inventory overrides should be kept at a minimum and should be the exception to usual processing. 
+In addition, the following list displays three more transaction types when you use average perpetual as the valuation method: 
+ 
+6.	Post back-dated transactions (either increases or decreases) that affect the quantity on hand as of a specific date and also have inventory sold after the back-dated transaction. This scenario may cause those previously sold items to revalue if the average cost changes based on the backdated transaction. 
+ 
+7.	Post any batch that contains an assortment of increases and decreases to inventory quantities spanning multiple document dates where the document numbers do not coincide with the document dates.   This can occur because the documents in the batch post in order by the Document Number and not the Document Date. 
+  
+8.	Post a Purchase Order return transaction for subsequent receipts that have been sold and it may cause a revaluation to occur.  
+Whenever these costing scenarios occur and a cost adjustment is identified, we calculate a new cost, update the outflow record in the Inventory Purchase Receipt Detail (IV10201) table, and then push this data to the general ledger. We call this process the Inventory Ripple primarily because of what occurs when a revaluation is encountered on an item that uses an Average Valuation method.   
+ 
+The Inventory Ripple has been designed to work with perpetual valuation methods as stated above. But the most prevalent and profound effect is when an item uses Average Perpetual as the valuation method. The calculation or re-calculation of the Average Cost is not only updated with new inflow transactions, but now also outflow transactions such as Inventory decrease adjustments or posting sales invoice transactions can cause an Inventory Ripple.  These changes are driven by our costing enhancements to calculate or maintain an Average Cost on each layer record in the Inventory Purchase Receipt (IV10200) table. This fundamental change allows us to continuously watch and update the average cost whenever Inventory quantity changes back in time essentially making Inventory date sensitive. For example, the following sets of tables demonstrate how an inflow and outflow transaction can change the Average Cost and essentially trigger an Inventory Ripple to occur and force cost adjustments down to the general ledger. This example assumes the item is using 2 decimal places for currency. You can follow this example by entering your own transactions as Inventory adjustments. 
+
+
+![](media/INVIV10200.JPG)
+
+In the Inventory Purchase Receipt (IV10200) table, three new columns have been added (VCTNMTHD, QTYONHND and ADJUNITCOST). The Qty On Hand (QTYONHND) column and the Average Cost column (ADJUNITCOST) are displayed in the table above. The valuation method (VCTNMTHD) column (not displayed above) is used to determine how the costs are calculated and tracked in the IV10200. The addition of these columns enables us to calculate an Average Cost on each layer.  The Qty On Hand column represents the TOTAL quantity on hand at the time the receipt layer was created and also adjusts whenever quantity is sold based on the transaction date.  In the table above, on March 10th, we processed a transaction quantity of 68 and the Qty On Hand column moved to 118.  Subsequently, the Average Cost column also changed to $1.46.  
+
+The formula used to calculate this new cost is: 
+ 
+![](media/INVFORMULA.JPG)
+
+The Qty On Hand column also decreases whenever quantity is sold or adjusted.  However, it decreases based on the Document Date of the transaction that decreases the inventory.  At the time of posting, we look for and find the closest receipt record that is BEFORE or EQUAL to the Document Date of the transaction. For example, if you post a sales invoice with a Document Date of March 12th with a quantity of 25, the March 10th layer would be used and the Qty On Hand field for that layer would have a value of 93 = (118 – 25).  In addition, because the Qty On Hand field is a running or real time quantity field, the receipt layers after March 10th would also be reduced by a quantity of 25. So the March 15th layer of 133 would update to 108, the March 20th layer of 983 would change to 958, and the March 26th layer of 3583 would change to 3558.  After the Inventory Ripple process is finished, the quantity of 3558 should be the TOTAL quantity you have On Hand for the item for all sites. 
+ 
+The key here is that because the quantity On Hand changed for each layer, the Average Cost may also need to be updated; hence, we now start the Inventory Ripple starting at the 10 March receipt moving from layer to layer until we get to the last receipt layer for the item. When finished, the current cost in the Item Maintenance window will be updated to match the Average Cost of the last layer (ordered by the DATERECD, RCTSEQNM column), which would be $.95.  The new table below reflects the change after the sale of 25 is posted on March 12th. 
+
+![](media/INVIV102002.JPG)
+
+ 
+This is a very simple example of how back-dated outflow transaction can have an impact on the Average Cost calculation because we are now holding and calculating that cost for each inflow layer.  In addition, this example also demonstrates how cost adjustments can occur on some layers and not others and NOT have the current cost on the item card updated. 
+ 
+Another enhancement of our costing changes is that because we have an Average Cost calculated for each receipt layer, we no longer get the cost from the item card when we post a transaction that decreases inventory.  We now determine the cost of the item at the time of posting and get the cost value from the Inventory Purchase receipt (IV10200) table based on the Document Date of the outflow transaction.  For example, for the sale of 25 that occurred on March 12th, the cost used for that transaction was $1.46 even though the item card has a current cost of $.95 (or the calculated Average Cost for the last receipt layer). 
+ 
+To take this one step farther, if the March 15th or 20th layers had any quantity consumed from them, the costing enhancements would have detected that state and a cost adjustment would be in order.  For example, if we had posted a sales invoice dated March 18th for a quantity of 75, before the March 12th sales, the cost at the time of that sale would have been $1.48. Because we have now posted a sales invoice dated March 12th and caused an Inventory Ripple to occur, the outflow quantity of 75 needs to have a cost adjustment.  
+
+The calculation is as follows: 
+
+March 18th:   	 	Qty: 75  	Avg Cost: $1.48  	Extended Cost: $111.00 
+Inventory Ripple: 	Qty: 75  	Avg Cost: $1.49  	Extended Cost: $111.75 
+ 
+Because the Average Cost for that layer went up one penny, we have a $.75 difference that needs to be booked to the general ledger.  The $.75 difference will be automatically created as a journal transaction and posted to the General Ledger.  Because the outflow transaction that was revalued was a sales invoice, the following accounts would be updated. 
+  
+ 	 	 	 	        Debit 	Credit
+ 	  	Cost of Goods   .75 
+ 	  	Inventory 	 	        .75 
+ 
+These accounts are taken from the default posting accounts on the posted transaction line items so it is imperative that the Inventory and Sales distributions are set up correctly.  For example, for each item, you should be using separate accounts for: 
+ 
+Purchase Price Variance 
+Cost of Goods 
+Inventory 
+Inventory Variance 
+Inventory Offset  
+ 
+In the event there were multiple outflow transactions that were revalued, the default action is to create a single journal entry that is summarized by account number. Because these accounts are summarized, if you were to use the same account number for each account type on the item, the potential exist that a “wash out” may occur and end up with a $0.00 journal entry. Also, because these entries that have been summarized, it is impossible to identify, reconcile, and determine where they came from. 
+
+The field mapping for the additional data is as follows:
+
+**GL20000 table:** 
+Field:  ORCTRNUM: Contains the originating document number of the outflow transaction such as the SOP number or the Inventory document number 
+Field: ORMSTRID:  This field will contains the item number that was re-valued on the outflow transaction Field: ORDOCNUM: contains the receipt number from the Inventory                         Purchase Receipt (IV10200) table that had a revaluation and forced the cost adjustment 
+Field: ORMSTRNM:  Contains the text string “IV Ripple Transaction” to make it easier to identify the cost adjustments flowing into the general ledger. 
+ 
+**Inventory Reporting**
+Currently, there are two reports within Microsoft Dynamics GP that can provide a snapshot of either current or historical quantity information and also costing information.  Those reports are: 
+•	Stock Status Report 
+•	Historical Stock Status Report 
+
+The Stock Status report is intended to provide a current snapshot of the inventory currently on hand and the current cost for each item.  The report then aggregates the quantity and costs (Quantity * Current Cost) for each item to provide an inventory value amount and then summarizes the value for all items for an overall picture of what the inventory value truly is at that moment.  
+
+The expectations for this report to balance to the general ledger are as follows: 
+
+FIFO/LIFO Perpetual Items – This should balance to the general ledger 
+Average Perpetual and Periodic – It is expected that these items will not balance to the general ledger 
+ 
+The reason average perpetual and periodic items do not balance to the general ledger is because these valuation methods do not use actual costs when you are processing outflow transactions. They use either a current average cost or a standard cost and because of rounding and other issues, it is highly likely that costs posted for items using these valuation methods will not balance to the general ledger. The Historical Stock Status report was designed to provide an inventory snapshot (picture) AS OF a specific historical date.  An example would be determining what was on hand for a specific item last month or last fiscal quarter and what the inventory cost was associated with that quantity. This report uses the transactional data that is contained within the inventory history tables (IV30300 and IV30301) which contain the actual costs that were used for all inflow and outflow transactions. This report also has the ability to print in detail or in summary for the given item. 
+ 
+What makes this Historical Stock Status report unique is that it runs backward. It starts with the current quantity and cost for a given item and then aggregates through the detail historical transactions starting with the most recent transactions and then moving back in time to the specified date. The Historical Stock Status report does not and will not run forward exactly like the Payables Management Historical Aged Trial Balance report or the Receivables Management Historical Aged Trial Balance report. Because of the way this report calculates its data, there are challenges and assumptions made to determine what costs are used and printed on this report when it deals with items that use an average perpetual or periodic valuation method. 
+ 
+When using an Average Perpetual or Periodic valuation method for your inventory, there is an option on the report options window that the end-user must choose on how they want to determine their cost of the inventory.  
+
+Those choices are as follows: 
+•	Historical Cost 
+•	Today’s Standard/Average Cost 
+
+The option you choose is a determining factor about what costs will be used to determine the total extended cost for the item. 
+ 
+The Today’s Standard/Average Cost option uses the current cost from the item card to determine what the extended cost starting amount will be. Any time the cost changes in the Item Maintenance window, that change is tracked and stored in the IV00118 table. When the historical cost option is selected, we look to this table to determine whether we have a cost that fits the report requirements. We use the cost associated with the date that is equal to or before the As of Date on the report. If no record exists in the IV00118 table, then we use the Current Cost in the Item Maintenance window. Another note is that the IV00118 uses the Microsoft Dynamics GP user date instead of a document date or posting date to fill the date fields in this table. Therefore, it is critical that the user date matches the current date when you post transactions that affect inventory. 
+ 
+The challenge or assumption when using these valuation methods is that this report uses the same logic as the Stock Status report for its beginning quantity and cost (Today’s or Historical).  We have already stated above that the expectation is that the Stock Status report will not balance or tie out to the general ledger and because we use the same logic as the starting point and then process backwards, the same assumption for the Historical Stock Status holds true.  This report will not balance or tie out to the general ledger and should not be used as a reconciliation tool or used to adjust the general ledger inventory account balances based on the results of the report. 
+ 
+The focal point of this issue is around the following question:  What is the correct method of determining inventory value?  Is the correct method to always use the (quantity * current cost), which will not balance to the general ledger with some valuation methods. Or is the correct method to always aggregate through the history transactions to determine the value when it should balance to the general ledger?  These questions can spur a significant amount of debate or confusion on which method is correct. The key concept to keep in mind when discussing or pondering these questions is this; if the entire inventory was sold today, what would be the impact on the general ledger?  For FIFO/LIFO perpetual valuation methods, the general ledger should have a $0.00 balance. But for the other valuation methods, some differences would exist.   
+ 
+For example, if the valuation methods being used were Average Perpetual/Periodic and a historical report was run with an AS OF DATE for March 1st that aggregates through the detail historical inventory transactions, will the Stock Status report get the same numbers if the report was run on March 1st? The answer would be NO. This is because the historical report uses the actual costs to determine value and the Stock Status report uses the current cost to determine its value. 
+Additionally, if you make manual adjustments to the general ledger and those adjustments are not present within inventory history, complications occur with the ability to have an inventory historical report that balances to the general ledger 
+ 
+In conclusion, we recommend that customers do not use the Inventory Historical Stock Status report to adjust or balance to the general ledger.  The report was not designed for that purpose. While FIFO/LIFO perpetual inventories may be very close in balancing, there are issues still pending that would keep this report from balancing to the general ledger.  The recommendation is that on a daily basis, the Stock Status report is processed at the end of the day once all general ledger batches that affect inventory have been posted.  This report would be the most accurate report there is to date in determining your inventory value. 
+ 
+Additional reporting solution called the Historical Inventory Trial Balance (HITB) report gives the ability to better maintain and track the costs used within inventory in conjunction with the data moving to the general ledger. 
+
+        
 ## Glossary
 
 #### ABC analysis
