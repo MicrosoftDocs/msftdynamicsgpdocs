@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/14/2021
+ms.date: 10/31/2021
 ---
 # Human Resources in Microsoft Dynamics GP
 
@@ -162,7 +162,7 @@ Use the Employee Filter Divisions window and the Employee Filter Departments win
 4. Select a user ID. Mark divisions or departments in the Employee Filter Divisions window and Employee Filters Departments window to grant user access. To remove access, unmark a division or department.
 5. Choose OK to save your changes.
 
-## Copying user access to employee information
+### Copying user access to employee information
 
 Use the Human Resources Preferences window to copy user access to employee information by divisions and departments from one user to another.
 
@@ -173,7 +173,7 @@ To copy user access to employee information:
 3. Choose the Like user lookup button to open the User Lookup window. Then select a user from which to copy access information in the Like user field.
 4. A message gives you the option to copy the access information to the Grant user field.
 
-## Setting up Human Resources user preferences
+### Setting up Human Resources user preferences
 
 Use the Human Resources User Preferences window to set up Human Resources preferences for each user. You can select windows to be displayed when you start Human Resources and choose whether employee information will be displayed by descriptions or codes in the Employee Maintenance window.
 
@@ -201,14 +201,14 @@ You can use position control to plan future positions and roll down information 
 
 Use the Company Human Resources Setup window to set up company human resources information, such as the type of business and Standard Industrial Classification (SIC), Dun & Bradstreet (DUNS), North America Industry Classification System (NAICS), and Vets-100 numbers. You can set up human resources information for each company.
 
-## To set up company human resources information:
+### To set up company human resources information:
 1.	Open the Company Human Resources Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Company >> Company >> Human Resources button)
  
 2.	Enter the type of business and the SIC number for this company. 
 
 3.	Enter the DUNS number and Vets-100 number for this company.
 
-## Setting up an operating procedure
+### Setting up an operating procedure
 Use the Operating Procedures Setup window to set up an operating procedure. You can use the OLE (Object Linking and Embedding) Container to attach files created in other applications. 
 
 To set up an operating procedure:  
@@ -216,7 +216,7 @@ To set up an operating procedure:
 2.	Enter a category name that describes the operating procedure.
 3.	Enter the operating procedure information.
 
-## Setting up a division code
+### Setting up a division code
 Use the Division Setup window to set up a division. A division is an organizational level between a company and a department. A company can have several divisions, and each division can have several departments. You also can add information using extra fields. 
 To set up a division code:
 
@@ -226,7 +226,7 @@ To set up a division code:
 4.	Enter a phone number, fax number, and e-mail address for this division.
 5.	Choose Extra Fields to open the Division Extra Fields window. 
 
-## Setting up a department code
+### Setting up a department code
 Use the Department Setup window to set up a department code. A department is a specialized unit of a division or company, which usually concentrates on one type of task. For example, accounting and purchasing are typical departments. You can use up to six letters and numbers to create a department code. You also can add information using extra fields. 
 
 To set up a department code: 
@@ -234,7 +234,7 @@ To set up a department code:
 2.	Enter a code that identifies the department and a description.
 3.	Choose Extra Fields to open the Department Extra Fields window. Setting up a position code
 
-## Setting up a position code
+### Setting up a position code
 Use the Position Setup window to set up a position code. A position is a defined role within a company. You can create multiple positions for a single position plan. You can link training courses and specify which skill sets, if any, are required for a position. You also can link pay codes and Americans with Disabilities Act (ADA) physical requirements to a position code.
 
 If your company uses salary matrices, you can link the low, middle, and high salaries for each position to a position code. You also can add information using extra fields. 
@@ -253,7 +253,7 @@ Choose the paperclip button to open the OLE (Object Linking and Embedding) conta
 9.	Choose Training to open the Courses Available to Link window. 
 10.	Choose Extra Fields to open the Position Extra Fields window. 
 
-## Setting up a location code
+### Setting up a location code
 Use the Company Addresses Setup window to set up a location code, which includes an address, phone numbers, and a contact person for each location. If your company has multiple sites, you can track which employees are working from which sites by setting up location IDs.
 
 To set up a location code:
@@ -262,7 +262,7 @@ To set up a location code:
 3.	Enter contact, address and phone information.
 4.	Choose Address ID Internet to enter or view Internet information for this address. 
 
-## Setting up company Internet information
+### Setting up company Internet information
 Use the Internet Information window to track Internet-related information about your company, such as e-mail addresses, Web page URLs, and FTP sites. If you’ve set up multiple addresses for your company, you can track Internet information for each address.
 
 To set up company Internet information:
@@ -273,13 +273,157 @@ The company you’re currently logged in to is displayed in the Company ID field
 4.	Enter Internet information.
 5.	To print Internet information for the current company, choose File >> Print or the printer button. The Internet Information Report is printed, showing Internet information for the current company.
 
-## Deleting an organizational code
+### Deleting an organizational code
 Use the Division Setup, Department Setup, Position Setup or Company Addresses Setup windows to delete a division, department, position, or location code. You cannot delete a division code, department code, or position code that is assigned to an employee record.
 To delete an organizational code:
 
 1.	Open the Human Resources Organization Setup menu.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization)
 2.	Select Division, Department, Position, or Location.
 3.	Enter or select the code you want to delete.
+
+### Linking pay codes to a position code
+Use the Position and Pay Code Setup window to link pay codes to a position code.
+If you marked the Auto Create Position/Pay Code links option in the Human Resources Preferences window, you do not need to link pay codes to a position code manually with this procedure.
+To link pay codes to a position code:
+1.	Open the Position\Pay Code Setup window.
+(Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Position and Pay Code)
+2.	Enter or select a position code.
+3.	Enter or select a pay code and choose the Salary Range lookup button. The Salary Matrix Lookup window will open.
+4.	Select a table.
+5.	Select a salary to use as the low salary indicator and choose the Low select button.
+6.	Select a salary to use as the middle salary indicator and choose the Medium select button.
+7.	Select a salary to use as the high salary indicator and choose the High select button.
+8.	Choose Select to display the salary information in the Position\Pay Code Setup window.
+
+### Understanding pay steps
+Before you can begin using the pay steps feature, you need to activate it in the Human Resources Preferences window. 
+(Microsoft Dynamics GP menu >> Tools >> Setup >> System >> Human Resources Preferences)
+
+The pay steps feature integrates with U.S. Payroll, but is not available with Canadian Payroll.
+
+You can use pay steps to associate an employee’s amount of time in a position with a rate of pay. A pay step table lists pay steps (or grades) by number, the assigned duration of each step, and the dollar amounts for each step under successive effective dates.
+
+For example, after an employee has served in a position for the full duration of a pay step, the employee advances to the next pay step and its corresponding pay rate under the current effective date. When the next effective date arrives, the employee advances to the new pay rate for the current pay step.
+
+When you assign an employee and an associated pay code to a pay step table (in the Employee/Pay Step Table Entry window or the Employee Pay Code Maintenance window), you can base the step increases on the employee’s hire date, adjusted hire date, seniority date, or a manually entered date.
+
+The Payroll system creates post-dated pay rates for the future increases indicated in the pay steps table. A reminder on your Microsoft Dynamics GP home page lists employee post-dated pay rates eligible for activation. After you activate an employee’s post-dated pay rate, it becomes effective, on the designated date, for all future pay periods.
+
+You can use multiple pay step tables to associate pay rates with other employee qualifications, such as education, in addition to time in a position. For example, if you base employee pay rates, in part, on education level, you can create a pay step table for “Bachelor’s Degree” and another for “Master’s Degree.”
+
+You can use multiple pay step tables to associate pay rates with other employee qualifications, such as education, in addition to time in a position. For example, if you base employee pay rates, in part, on education level, you can create a pay step table for “Bachelor’s Degree” and another for “Master’s Degree.”
+
+### Setting up pay step tables
+
+You can create, save, modify, and delete pay step tables. In the Pay Step Table Entry window, you can create pay step tables having as many steps, number of months in each step, and effective dates, as you want. You can also enter past effective dates to record historical pay rate information.
+
+You can export pay step table information to a Microsoft Excel® file, for further analysis and review.
+Within a pay step table, you can add, copy, and delete columns, and delete rows.
+
+To set up a pay step table:
+1.	Open the Pay Step Table Entry window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Pay Step Table)
+2.	Enter a pay step table ID and a short description.
+3.	Select a unit of pay, either Hourly Rate or Salary.
+4.	Enter the effective date. This date indicates when a new column of pay rates becomes effective, typically 01 January of successive years. You can enter any past, present, or future date.
+5.	Enter the step (or grade) number into the pay step table.
+6.	Enter the duration of this pay step as a range of months. For example, a range of 0 to 11 indicates that a new employee remains at this pay step for the first 12 months of employment.
+7.	Enter a dollar amount in the cell across from the step number and below the effective date.
+8.	Press the TAB key to begin a new row.
+9.	To add additional effective date columns, select the Add Column tab, enter a date, and choose Add.
+Choose Clear to remove all selections from the window.  
+
+### Modifying or deleting pay step table data
+You can add and remove columns in existing pay step tables by selecting the appropriate tab. You also can copy and adjust the amounts from an existing column to create a new column in the same table
+You cannot change or delete pay step data in columns with effective dates earlier than the user date. Such data is preserved as historic data.
+
+**To add a column**
+1.	Open the Pay Step Table Entry window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Pay Step Table)
+2.	Select a pay step table ID.
+3.	Choose the Add Column tab. 
+4.	Enter the effective date.
+5.	Choose Add to add the new column to the table.
+
+**To copy a column**
+1.	Open the Pay Step Table Entry window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Pay Step Table)
+2.	Select a pay step table ID.
+3.	Choose the Copy Column tab.
+4.	Select the effective date of the pay step column you are copying.
+5.	Enter or select the effective date of the column you are creating.
+6.	Enter the amount or percentage of adjustment to apply to the copied amounts.
+7.	Choose Copy to create the new column.
+
+**To remove a column**
+1.	Open the Pay Step Table Entry window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Pay Step Table)
+2.	Select a pay step table ID.
+3.	Choose the Remove Column tab.
+4.	Select the effective date of the pay step column you are removing.
+5.	Choose Remove.
+
+### Adding an ADA physical requirements record
+Use the ADA Physical Requirements window, the ADA Physical Requirements Page 2 window, and the ADA Physical Requirements Page 3 window to add an ADA physical requirements record. The Americans with Disabilities Act (ADA) prohibits employers from discriminating against qualified individuals with disabilities.
+
+**To add an ADA physical requirements record**
+
+1.	Open the Position Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Position)
+2.	Enter or select a position code and choose ADA. The ADA Physical Requirements window will open.
+3.	Enter a description of the position in the Job Purpose field and mark the appropriate requirements for this position.
+4.	Choose the page turn button to open the ADA Physical Requirements Page 2 window and mark the appropriate requirements.
+5.	Choose the page turn button to open ADA Physical Requirements Page 3 and mark the appropriate requirements for the position.
+
+**Duplicating an ADA requirements record**
+
+Use the Duplicate ADA window to duplicate an ADA requirements record. If your company has multiple positions with the same ADA physical requirements, you can duplicate an ADA physical requirements record.
+
+To duplicate an ADA requirements record:
+1.	Open the Position Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Position)
+2.	Enter or select a position code and choose ADA. The ADA Physical Requirements window will open.
+3.	Choose Duplicate to open the Duplicate ADA window.
+4.	Select the position to which you want to copy the ADA requirements.
+5.	Choose Duplicate. A message will be displayed. Choose OK and close the Duplicate ADA window.
+
+### Linking courses to a position code
+
+Use the Position Course Link window to link courses to a position code. You also must mark Course as the position training link in the Human Resources Preferences window to link courses to position codes. 
+
+Before you can link a course to a position code, you must first set up the course and assign an ID to it.
+
+**To link courses to a position code**
+1.	Open the Position Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Position)
+2.	Enter or select a position code and choose Training to open the Position Course Link window. Courses that have been defined are displayed in the window.
+3.	Select a course ID to link to this position; a black dot appears next to the course 
+ID. To select all courses, choose Mark All. To unmark all courses, choose UnMark All.
+4.	Choose Print to print the HRP Position Classes report.
+5.	Choose OK. The Position Setup window is displayed.
+
+**Linking classes to a position code**
+Use the Courses Available to Link window to link classes to position codes. You also must mark Class as the position training link in the Human Resources Preferences window to link classes to position codes. 
+To link classes to a position code:
+1.	Open the Position Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Position)
+2.	Enter or select a position code and choose Training to open the Courses Available to Link window.
+3.	Select a course and choose the zoom button to open the Position Class Link window.
+4.	Select a class ID to link to this position. A black dot appears next to the class ID. 5. To select all classes, choose Mark All. To unmark all classes, choose UnMark All.
+6.	Choose Print to print the HRP Position Classes report.
+7.	Choose OK. The Courses Available to Link window is displayed.
+
+### Setting up a supervisor record
+Use the Supervisor Setup window to set up a supervisor record. You can set up a supervisor record and assign the record of an individual to the position.
+
+**To set up a supervisor record**
+1.	Open the Supervisor Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Supervisor)
+2.	Enter the code and description of the supervisor.
+3.	Enter or select the employee ID of the employee that holds this supervisor position.
+4.	Choose Save. Continue entering codes for all your supervisors.
+5.	Choose File >> Print to print a Supervisor Codes List to verify your information.
+
+**Modifying or deleting a supervisor record**
+Use the Supervisor Setup window to modify or delete a supervisor record. You can modify a supervisor record to reflect changes such as a change in employees for this position.
+If you want to delete a supervisor record, make sure the supervisor isn’t assigned on any Employee Maintenance cards (Cards >> Human Resources >> Employee >> Employee).
+
+To modify or delete a supervisor record:
+1.	Open the Supervisor Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Supervisor)
+2.	Enter or select a supervisor description.
+3.	To change the employee that holds the supervisory position, select a different employee ID.
+4.	To delete a supervisor record, choose Delete.
 
 
 ## See also
