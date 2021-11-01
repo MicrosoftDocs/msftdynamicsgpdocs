@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/10/2021
+ms.date: 10/31/2021
 ---
 # Human Resources - Position Control Setup
 
@@ -18,6 +18,8 @@ Position control is optional. For companies other than the sample company, you u
 
 You can create one current position plan and an unlimited number of other position plans. The other position plans are used for future planning and what-if scenarios.
 You also can import position plans from Microsoft Excel. You can set up fund account information to specify the general ledger accounts that are affected during payroll processing for employees who hold a seat for a position.
+
+[Human Resources Position Control, what is it and should I be using it?](https://community.dynamics.com/gp/b/dynamicsgp/posts/human-resources-position-control-what-is-it-and-should-i-be-using-it)
 
 ## Positions, position seats, and position plans
 
