@@ -49,7 +49,7 @@ If you have questions about Payroll year-end closing procedures and your Microso
 
 - Knowledge Base
 
-    [https://mbs.microsoft.com/knowledgebase/search.aspx](https://docs.microsoft.com/en-us/dynamics/s-e/)
+    [https://mbs.microsoft.com/knowledgebase/search.aspx](/dynamics/s-e/)
 
     Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
 
@@ -296,7 +296,7 @@ As you complete year-end tasks, refer to the answers in this section.
 
   The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn't update each user's Dex.ini file. In these situations, you should manually update each user's Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/19/2021.
 
-For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/en-us/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
+For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
 
 ## Chapter 4: Payroll year-end procedures
 
