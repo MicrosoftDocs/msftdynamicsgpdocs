@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/26/2021
+ms.date: 10/29/2021
 ---
 
 # U.S. 2021 Year-end Update in Dynamics GP
@@ -49,7 +49,7 @@ If you have questions about Payroll year-end closing procedures and your Microso
 
 - Knowledge Base
 
-    [https://mbs.microsoft.com/knowledgebase/search.aspx](https://mbs.microsoft.com/knowledgebase/search.aspx)
+    [https://mbs.microsoft.com/knowledgebase/search.aspx](/dynamics/s-e/)
 
     Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
 
@@ -86,6 +86,8 @@ The formats of a number of forms are not changing for the 2021 tax year. The for
 - W-3 statement
 - W-4 statement
 - W-2 statement
+
+If you choose not to install the 2021 year-end update, you can still apply the 2022 Payroll Tax Update.
 
 ### Year-end blog
 
@@ -145,7 +147,7 @@ Detailed instructions for completing each step are found in the chapters and sec
 | 9        | Archive Human Resources information for inactive employees (optional). |
 | 10       | Set up fiscal periods for 2022.|
 | 11       | Clear Human Resources information for inactive employees (optional).  |
-| 12       | Close the fiscal periods for the Payroll series of the 2020 year (optional).   |
+| 12       | Close the fiscal periods for the Payroll series of the 2021 year (optional).   |
 | 13       | Install the 2022 Payroll tax update.|
 | 14       | Process 2022 pay runs.              |
 | 15       | Print the W-2 Validation Report, W-2 statements, and W-3 Transmittal forms. See [Chapter 6 Report procedures](#chapter-6-report-procedures). |
@@ -158,7 +160,7 @@ Use the instructions in this chapter to prepare for the U.S. 2020 Year-end Updat
 
 ### Supported releases
 
-The U.S. 2021 Year-end Update supports Dynamics GP.
+The U.S. 2021 Year-end Update supports Dynamics GP (18.2.1013 or higher)
 
 To identify the release that you're using, start Dynamics GP. Choose Help \>\> About Dynamics GP.
 
@@ -207,13 +209,6 @@ Jacksonville FL 32256
 Telephone: (888) 255-3815  
 E-mail: *sales\@greenshades.com*  
 Web site: [www.greenshades.com](https://www.greenshades.com/)
-
-MasterTax, LLC  
-7150 East Camelback Road, Suite 160  
-Scottsdale, AZ 85251  
-Telephone: (480) 778-8723  
-E-mail: *emailus\@mastertax.net*  
-Web site: [www.mastertax.net](https://www.mastertax.net/)
 
 ### Frequently asked questions
 
@@ -275,7 +270,7 @@ As you complete year-end tasks, refer to the answers in this section.
   1. Open the Deduction Setup window. (Dynamics GP menu \>\> Tools \>\>  Setup \>\> Payroll \>\> Deduction. Verify that all deductions are marked as TSA are marked correctly.
   2. Make sure that the pay frequency of the employee's pay codes matches the pay period of your company.  
 
-    For example, if you pay your employees semimonthly, the pay frequency for the employee's pay code, deduction, and benefit should also be semimonthly. For additional information, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx). See the Dynamics GP Support and Service blog "How to Verify Dynamics GP is Calculating Payroll Taxes Correctly."
+    For example, if you pay your employees semimonthly, the pay frequency for the employee's pay code, deduction, and benefit should also be semimonthly. For additional information, review the blog [How to Verify Dynamics GP is Calculating Payroll Taxes Correctly](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly). 
 
 - What will happen if I have deductions and/or benefits set to print in the same box on the W-2 statement with the same label?
 
@@ -297,11 +292,11 @@ As you complete year-end tasks, refer to the answers in this section.
 
   It will print this information on the additional W-2.
 
-- The correct Last Year-end Update date doesn't appear in the Payroll Setup window, even though I installed the 2020 year-end update and see the changes included in the update. Is there something I need to do?
+- The correct Last Year-end Update date doesn't appear in the Payroll Setup window, even though I installed the 2021 year-end update and see the changes included in the update. Is there something I need to do?
 
   The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn't update each user's Dex.ini file. In these situations, you should manually update each user's Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/19/2021.
 
-For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/en-us/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
+For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
 
 ## Chapter 4: Payroll year-end procedures
 
@@ -361,7 +356,7 @@ Next, print the W-2 statements and W-3 Transmittal form. You should print a W-2 
 
     If you need to post Payroll transactions to a fiscal period you've already closed, use the Fiscal Periods Setup window to reopen the period before posting the transaction.
 
-7. Install the 2021 Payroll tax update.  
+7. Install the 2022 Payroll tax update.  
 
 You also can print W-2 statements and 1099-R forms and create an EFW2 transmission file after you've installed the 2022 Tax Update and performed pay runs for the year 2022. To view the checklist, see [Processing 2022 pay runs before printing 2021 statements](#printoldbeforenew).
 
@@ -436,9 +431,9 @@ You will need to install the year-end update on every workstation that runs Dyna
     > [!NOTE]
     > To install the update on an operating system with User Account Control (UAC) activated, a user must be running Dynamics GP with administrative privileges. (From the Start menu, select and right-click the Dynamics GP shortcut, and then select Run as Administrator.) For other ways to install the update on Windows clients with UAC activated, see Installing with UAC activated.
 
-18. To confirm that the update is installed, open the Payroll Setup window. (Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll \>\> Payroll). Check the Last Year-end Update date. It should be 11/20/2020.
+18. To confirm that the update is installed, open the Payroll Setup window. (Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll \>\> Payroll). Check the Last Year-end Update date. It should be 11/19/2021.
 
-If the date does not appear changed to 11/20/2020, search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx) and view article number 981312.
+If the date does not appear changed, verify the version under Help | About Microsoft Dynamics GP or search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx) and view article number 981312.
 
 #### Installing with UAC activated
 
@@ -678,7 +673,8 @@ When processing is complete, the Remove Inactive Employee Records Utility Log wi
 
 ## Chapter 5: Submitting W-2 reports electronically
 
-If your company has more than 250 employees, the Social Security Administration (SSA) requires you to create and submit federal W-2 wage reports electronically. If your company has fewer than 250 employees, you can submit W-2 wage reports either manually or electronically.
+The Taxpayer First Act mandates electronic filing of IRS forms including W-2s.
+Beginning in 2022, if you send 100 or more W-2s you must send them electronically, the Social Security Administration (SSA) requires you to create and submit federal W-2 wage reports electronically. In 2023 that limit is lowered to 10.  
 
 Dynamics GP currently supports electronic filing of W-2 information in the federal EFW2 format. Some states also accept this format for state W-2 electronic filing. For states that require other electronic formats for W-2 filing, see [Non-supported electronic filing](#non-supported-electronic-filing).
 
@@ -817,10 +813,11 @@ If you're submitting W-2 wage reports electronically, you can also use AccuWage 
 
 8. Select a form type to print.
 
-    - **Wide-Continuous** Select this option to print your form or report in a continuous form, with one copy of the form or report for each page printed.
-    - **Wide-Continuous** Select this option, also called Alternate Format, to print your form or report in a continuous form, with two copies of the form or report for each page printed.
+    - **1 Wide-Continuous** Select this option to print your form or report in a continuous form, with one copy of the form or report for each page printed.
+    - **2 Wide-Continuous** Select this option, also called Alternate Format, to print your form or report in a continuous form, with two copies of the form or report for each page printed.
     - **1-Wide Single Feed** Select this option to print your form or report on a single sheet of paper. To print all forms for all employees using this format, repeat the procedure for each form. For example, to print the A, B, and C copies of the W-2 statements, first put the Copy A sheets in the printer and complete this procedure; next put the Copy B sheets into the printer and complete this procedure; finally, put the Copy C sheets into the printer and complete this procedure.  
     - **4-Up Laser Forms** Select this option to print your form or report in a sheet of paper, but with four forms or reports for each page. The page contains Copy B, Copy C, and two Copy 2 forms. Copy A and Copy D must be printed separately. Copy A will be included in EFW2 files, if you are submitting federal W-2 files electronically.
+    -  **1 Wide - Form with Box** Select this option to print your W2 form on blank paper.  When you choose this type the W2 will print the in the current year’s format with boxes and labels
 
 9. Select the form or report to print.
 
