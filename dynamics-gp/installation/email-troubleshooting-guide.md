@@ -22,7 +22,7 @@ This document can be leveraged with all email functionality in Microsoft Dynamic
 > [!NOTE]
 > Currently, TLS 1.0 and Basic Authentication (no MFA) are required for Exchange and Workflow emailing in Dynamics GP.
 >
-> We are aware of the changes that are coming to the supportability of TLS 1.0 and Basic Authentication within our other Microsoft applications. TLS 1.2 and Multi-Factor >Authentication (MFA) functionality was included in the 18.3 update released.  If you are still on an older version of Microsoft Dyanmics GP, you must enable TLS on your local >Exchange server. [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in->exchange-online-endpoint-for-legacy-tls-using-smtp-auth)
+> We are aware of the changes that are coming to the supportability of TLS 1.0 and Basic Authentication within our other Microsoft applications. TLS 1.2 and Multi-Factor Authentication (MFA) functionality was included in the 18.3 update released.  If you are still on an older version of Microsoft Dyanmics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in->exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 
 All email issues can be safely split up into three sets of issues:
 
@@ -137,7 +137,7 @@ Solution: The following path is the best route for generic login issues:
     You can do this by removing the user from the SY04920 table (Dynamics/System database) and attempting to login again. If this table does not repopulate, then there are Autodiscover issues in the system (or the user doesn’t work). For insights into how this all works, along with other tests, see [this blog post](https://community.dynamics.com/gp/b/dynamicsgp/posts/exchange-emailinginside-dynamics-gp)  
 
 >[!NOTE]
-> With *Login Failed* type of error messages, we have seen some cases where TLS 1.0 was disabled, due to the looming end date and vulnerabilities. If you are still on an older >version of Microsoft Dyanmics GP, you must enable TLS on your local Exchange server. [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in->exchange-online-endpoint-for-legacy-tls-using-smtp-auth)
+> With *Login Failed* type of error messages, we have seen some cases where TLS 1.0 was disabled, due to the looming end date and vulnerabilities. If you are still on an older version of Microsoft Dyanmics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 
 
 ## Generic Errors
@@ -178,8 +178,7 @@ Solution: Try the following:
 
 Error messages when you email RM Statements in Microsoft Dynamics GP: [Unknown Error or Insufficient Memory](https://community.dynamics.com/gp/b/dynamicsgp/posts/error-messages-when-you-email-rm-statements-in-microsoft-dynamics-gp-unknown-error-or-insufficient-memory)
 
-Use default report and Template and make sure the Template is the one marked with an Asterisk (*).
-[If the default works, check the bookmarks on the modified template](https://community.dynamics.com/gp/b/dynamicsgp/posts/what-are-bookmarks-and-how-are-they-used-in-microsoft-dynamics-gp-s-word-templates) 
+Use default report and Template and make sure the Template is the one marked with an asterisk (`*`). [If the default works, check the bookmarks on the modified template](https://community.dynamics.com/gp/b/dynamicsgp/posts/what-are-bookmarks-and-how-are-they-used-in-microsoft-dynamics-gp-s-word-templates) 
 
 Remove all email addresses being used and reenter them. Make sure that there are no odd characters such as ^ or a Tab.
 This issue can occur with all reports, and these can be caused by MessageID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.  
