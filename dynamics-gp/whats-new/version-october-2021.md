@@ -13,7 +13,8 @@ ms.date: 10/12/2021
 
 # What's New in Dynamics GP in October 2021
 
-This page lists enhancements to Dynamics GP in the October 2021 release. The Dynamics GP October 2021 release enhances different areas of the product.
+This page lists enhancements to Dynamics GP in the October 2021 release. The Dynamics GP October 2021 release enhances different areas of the product. 
+To view additional detail for these enhancements go to the Dynamics GP Blog - https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2021-new-feature-blog-series-schedule.
 
 ## Ease of Use
 
@@ -35,6 +36,9 @@ This save window preferences option is available in Receivables – Transaction 
 Payables – Transaction by Vendor, Transaction by Document.  
 Bank Reconciliation – Checkbook Register, Checkbook Balance.
 
+![image](https://user-images.githubusercontent.com/28811495/140556185-d6a33c38-eb72-4054-87f0-733cf3cdfcca.png)
+
+
 ### Default 1099 to Single Feed Form Type
 
 For ease of use, often the option that defaults is the one that people use most often.  We changed the default form type to Single Feed instead of continuous.  
@@ -50,6 +54,9 @@ We have adjusted the functionality for the Payables Form 1096.  Now, the email a
 In Sales Inquiry, today, the default action on the zoom for the transaction is to navigate the user to the associated Inquiry window for the document that is selected in the window.  In Dynamics GP October 2021, we have added a GoTo drop down to the Sales Documents and Sales Document Range Inquiry to allow the user to choose where to navigate to.  
 
 This allows the user to use the Inquiry window to search and find a work transaction and then navigate to Sales Transaction Entry to continue editing or complete the transaction.  The Sales Transaction Entry window will honor the users security settings; in order to navigate to it, that user must have permissions to the window itself. 
+
+![image](https://user-images.githubusercontent.com/28811495/140558331-4577ca6d-8681-46ec-9979-7b7f46967931.png)
+
 
 ## Customer Requests
 
@@ -73,7 +80,7 @@ In US Payroll Transaction entry, there are transaction defaults at the header th
 
 In Dynamics GP October 2021 the Transaction Defaults will be saved with the batch and display the next time you enter Payroll Transaction Entry and select a batch.  This should help with entering payroll transactions and reduce the mistakes with the defaults being consistently used. 
   
-### Copy/Paste US Payroll Transactions frmo Excel
+### Copy/Paste US Payroll Transactions from Excel
 
 Many people use alternate methods to track hours for employees.  Because of this, we have added the ability to paste US Payroll transactions from Microsoft Excel directly into Payroll Transaction Entry.  
 
@@ -82,6 +89,9 @@ A paste action item has been added to the ribbon in Payroll Transaction Entry. W
 During the paste, the system will create each line and default existing information from Payroll for fields that are not included in Excel.  A validation report will print and display any errors found prior to pasting the transactions.  If there are any validation errors, the paste process will not complete and no transactions will be added to the payroll batch.  
 
 This will help you add transactions more quickly and accurately into Payroll Transaction Entry to complete the payroll processes.
+
+![image](https://user-images.githubusercontent.com/28811495/140557647-cbc1fe04-d8c5-47d4-8405-2f29d98e374a.png)
+
   
 ### Mask Social Security Number on US W-2
 
@@ -102,6 +112,9 @@ You now can update the following Project fields:  Contract Number, Contract ID, 
 Once you select the code type, you can enter or select from the lookup an existing Old Code and then type in the New Code you want to replace it with.  This update will require you to enter a completely New Code, you cannot enter an existing code to combine two codes. 
 
 A Code Modification report will be printed which tells you what was changed and where it was changed once you select the Update action button.
+
+![image](https://user-images.githubusercontent.com/28811495/140557995-5193cd82-337f-4748-9b5b-810fd564d822.png)
+
 
 ## Extend Functionality
 
@@ -124,6 +137,9 @@ When this is selected and the final step of the workflow is completed setting th
 In Dynamics GP October 2021 we have added an option to the workflow completion policy. Now, you can set a Number of Approvers with a count instead of the existing options for only one response, majority or all must approve.  
 
 For this completion option, when the number of approvals replied has reached this count, then the workflow step will be marked as complete and will be sent to the next step in the workflow.
+
+![image](https://user-images.githubusercontent.com/28811495/140558166-ad711c33-7970-4a6e-9131-eae3f4dd1ca7.png)
+
   
 ### Remove Carbon Copy email in Workflow Maintenance
 
@@ -140,23 +156,3 @@ Now, you can delete the carbon copy emails with the delete option added to the l
 [Upgrade introduction](../upgrade/introduction.md)  
 [Dynamics GP community on https://community.dynamics.com](https://community.dynamics.com/gp)  
 [Dynamics GP User Group](https://www.gpug.com/home)  
-[Additional User Defined fields in General Ledger Transaction Entry](additional-user-defined-fields-in-general-ledger-transaction-entry.md)  
-[Import Credit Card Transactions](import-credit-card-transactions.md)  
-[Automate Financial Full Reconcile](automate-financial-full-reconcile.md)  
-[Match Excel copy and paste decimal places to Currency Setup](match-excel-copy-and-paste-decimal-places-currency-setup.md)  
-[Form 1099 NEC now supported](form-1099-nec-now-supported.md)  
-[1099 MISC Form Updates](1099-misc-form-updates.md)  
-[DBA for Vendor](dba-for-vendor.md)  
-[Removed fully applied Multicurrency documents from PM HATB](removed-fully-applied-multicurrency-documents-from-pm-hatb.md)  
-[Copy/Paste Purchasing transactions from Excel](copypaste-purchasing-transactions-from-excel.md)  
-[Export/Import stock counts to Excel](exportimport-stock-counts-excel.md)  
-[Print all Sales Documents](print-all-sales-documents.md)  
-[Human Resource Social Security Number mask](human-resource-social-security-number-mask.md)  
-[Schedule Check Links](schedule-check-links.md)  
-[Multi-Factor Authentication](multi-factor-authentication.md)  
-[TLS 1.2](tls-1.2.md)  
-[Save per user column layouts on Home Page](save-per-user-column-layouts-on-home-page.md)  
-[Disable print dialog when printing to word](disable-print-dialog-when-printing-word.md)  
-[Enable Self Service user type access to User Preference](enable-self-service-user-type-access-user-preference.md)  
-[Maximum print output screen](maximum-print-output-screen.md)  
-[Bulk edit SmartList Columns](bulk-edit-smartlist-columns.md)  
