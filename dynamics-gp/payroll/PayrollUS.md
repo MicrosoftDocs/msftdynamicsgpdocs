@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/17/2021
+ms.date: 11/5/2021
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -1750,6 +1750,131 @@ in the Garnishment Maximum Setup window.
 Be aware that when there are separate state and federal maximums, Payroll
 will always apply the maximum that deducts the smallest amount from an
 employee's pay.
+
+#### Garnishment Setup Examples
+
+**Tax Levies**
+
+A federal tax levy is accomplished by ‘garnishing’ an employee’s wages to the extent that they are not exempt from the levy.  For example, there may be a tax levy that is for $25,000.  The tax levy deduction will be taken from the employees ‘take-home pay’ until it reaches the exempt amount.
+
+The exempt amount is an amount that comes from the table (after looking at form 668-W that the employee fills out – (according to the number of exemptions, the pay period, and the filing status)).  
+
+The ‘take-home pay’ will be calculated as Wages, minus all Taxes and Deductions (both voluntary and involuntary) that were in effect at the time of receiving the tax levy.  Once an employee’s take-home pay has been determined, all but the exempt amount is subject to the levy.
+
+Any new payroll deductions that are initiated by the employee after the levy has been received by the employer must be deducted from the exempt amount when determining the employee’s net pay, unless they are required as a condition of employment.  (This also includes increases in elective deductions such as a 401k.) 
+
+It looks like Tax Levies are always an amount (by looking at the form 668-W).
+
+Ex:  Employee Arthur receives $1,211.54 every two weeks.  On Aug 1, 2010, the employer receives form 668-W stating that a federal tax levy was being issued against Arthur’s wages for $25,000.  Arthur claimed married filing jointly with 3 personal exemptions on Part 3 of the form.  (The exempt amount taken from the table is $657.69.)  As of Aug 1, Arthur had the following deductions:
+
+Federal income tax	    $44.44
+Social security tax	    50.88
+Medicare tax	        17.57
+State income taxes	    30.00
+401K plan(3% of salary)	36.35
+Health INS (after tax)	45.00
+Total:	                $224.24
+
+Prior to the Tax Levy, Arthur’s take-home pay is $987.30 ($1,211.54 - $224.24).  The exempt amount of Arthur’s take-home pay (taken from the table) is $657.69.  Therefore, the amount subject to the tax levy is $329.61 ($987.30 - $657.69).  And the take home pay after the Tax Levy is $657.69.
+
+How would we set up this deduction?
+
+**In Employee Deduction Maintenance**
+Deduction Type:	     Garnishment
+Original Amount	     $25,000
+Method:	             Fixed Amount
+Garnishment Category:Tax Levy
+Amount	             $25,000
+Percent	             N/A
+Earnings	         N/A
+Maximum Deduction Codes
+Federal	             FEDLEVY (this is just an example)
+State	             N/A
+
+![A screenshot ](media/DEDLEVY01.JPG)
+
+
+**In Garnishment Maximum Setup**
+Code:	            FEDLEVY
+State/Fed	        FED
+Method	            Percent of Earnings
+Max Withholding %	100%
+Max Exempt Amount	$657.69 (This is the amount taken from the table)
+Min Wage Rule Amt	$0
+Earnings Code	    FEDLEVY
+
+![A screenshot ](media/DEDLEVY02.JPG)
+
+**In Earnings Setup**
+Code:	            FEDLEVY
+Include in Earnings
+Pay Codes	        All
+Deductions	        401K & Health Insurance 
+(According to the info we have about Federal Tax Levies, it should be all deductions that are being taken at the time the tax levy was issued.  New deductions after the tax levy is in place would not be included.)
+Taxes	            All Checkboxes Marked
+
+![A screenshot ](media/DEDLEVY03.JPG)
+
+**Calculate Checks report Recap**
+Prior to the Tax Levy, Arthur’s take-home pay is $987.30 ($1,211.54 - $224.24).  The exempt amount of Arthur’s take-home pay (taken from the table) is $657.69.  Therefore, the amount subject to the tax levy is $329.61 ($987.30 - $657.69).  And the take home pay after the Tax Levy is $657.69.
+
+![A screenshot ](media/DEDLEVY04.JPG)
+
+
+**Child Support Withholding Orders**
+
+Maximum amount to withhold:  Under the CCPA, the maximum amount that can be withheld from an employee’s wages for spousal or child support is:
+•	50% of the employee’s ‘disposable earnings’ if the employee is supporting another spouse and/or children.
+•	60% if the employee is not supporting another spouse and/or children.
+Note:  These amount increase to 55% and 65%, respectively, if the employee is at least 12 weeks late in making support payments.  State laws may impose lower limits.
+
+Disposable earnings are determined by subtracting all deductions required by law from an employee’s gross earnings (wages, commissions, bonuses, sick pay, and periodic pension payments).  Deductions required by law include withholding for federal, state, or local income tax, social security or Medicare tax, state unemployment or disability tax, and mandated payments for state employee retirement systems.  
+
+Voluntary deductions, such as health and life insurance premiums, union dues, and retirement plan contributions, are not subtracted from earnings to calculate disposable earnings.  (State law needs to be checked, as some states require health insurance premiums to be deducted when determining disposable earnings.)  Wages already subject to withholding for tax levies, bankruptcy orders, other child support withholding orders, or wage garnishments are not considered deductions required by law.  Therefore, they should not be subtracted from gross earnings when determining the maximum amount subject to child support withholding.  
+
+However, if the tax levy, bankruptcy order, etc. has priority over the current child support withholding order, the amount required to be deducted under the order having priority must be taken into account when determining whether the CCPA maximum has been reached.  Tips may or may not be earnings (depends on whether they are given directly to employees vs being added to the bill and paid to the employee later as earnings). 
+
+It looks like Child Support Withholding Orders are always an amount (according to the form that is filled out).
+
+Ex:  Gary’s employer receives a child support withholding order from his home state of Arkansas, demanding that $800  in current support with no arrears, of Gary’s earnings be withheld each pay period if paid bi-weekly.  The amounts of Gary’s income are determined as follows:
+
+![A screenshot ](media/DEDCHILDSUP.JPG)
+
+Since the child support withholding maximum calculated is less than the $800 demanded in the withholding notice, the system compares the numbers between state and federal.  The lowest maximum available amount to garnish between the two is the amount available for garnishment. Gary has $728.85 available for garnishment on his paycheck.
+
+His final take home pay is $405.90  ($1134.75 - $728.85).  The amount remaining of $71.15 ($800.00 - $728.85) is the responsibility of the employee.  We do not arrear child support.  
+
+How would we set up this deduction?
+
+**In Employee Deduction Maintenance**
+Deduction Type:	        Garnishment
+Original Amount:	    $0
+Method:	                Fixed Amount
+Garnishment Category:	Child Support
+Amount	                $800.00
+Percent	                N/A
+Earnings	            N/A
+Maximum Deduction Codes
+Federal	                FEDCS
+State	                AKCSWHLTH
+
+
+![A screenshot ](media/DEDCHILDSUP1.JPG)
+
+**In Garnishment Maximum Setup**
+
+![A screenshot ](media/DEDCHILDSUP2.JPG)
+
+**In Earnings Setup**
+
+![A screenshot ](media/DEDCHILDSUP3.JPG)
+
+
+**Calculate Checks report Recap**
+
+![A screenshot ](media/DEDCHILDSUP4.JPG)
+
+
 
 #### Setting up a company-level deduction sequence
 
