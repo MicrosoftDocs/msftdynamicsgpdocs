@@ -1,11 +1,11 @@
 ---
 title: "What's new in Dynamics GP in October 2021"
-description: "Learn about enhancements that were added to the product in this release of Dynamics GP."
+description: "Learn about enhancements that were added to the product in the October 2021 release of Dynamics GP."
 author: edupont04
 
 ms.author: edupont
 ms.reviewer: edupont
-manager: annbe
+manager: margoc
 ms.prod: dynamics-gp
 ms.topic: article
 ms.date: 10/12/2021
@@ -14,7 +14,7 @@ ms.date: 10/12/2021
 # What's New in Dynamics GP in October 2021
 
 This page lists enhancements to Dynamics GP in the October 2021 release. The Dynamics GP October 2021 release enhances different areas of the product. 
-To view additional detail for these enhancements go to the Dynamics GP Blog - https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2021-new-feature-blog-series-schedule.
+To view additional detail for these enhancements, see the [Dynamics GP Blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2021-new-feature-blog-series-schedule).
 
 ## Ease of Use
 
@@ -36,7 +36,7 @@ This save window preferences option is available in Receivables – Transaction 
 Payables – Transaction by Vendor, Transaction by Document.  
 Bank Reconciliation – Checkbook Register, Checkbook Balance.
 
-![image](https://user-images.githubusercontent.com/28811495/140556185-d6a33c38-eb72-4054-87f0-733cf3cdfcca.png)
+![image 1](https://user-images.githubusercontent.com/28811495/140556185-d6a33c38-eb72-4054-87f0-733cf3cdfcca.png)
 
 
 ### Default 1099 to Single Feed Form Type
@@ -55,7 +55,7 @@ In Sales Inquiry, today, the default action on the zoom for the transaction is t
 
 This allows the user to use the Inquiry window to search and find a work transaction and then navigate to Sales Transaction Entry to continue editing or complete the transaction.  The Sales Transaction Entry window will honor the users security settings; in order to navigate to it, that user must have permissions to the window itself. 
 
-![image](https://user-images.githubusercontent.com/28811495/140558331-4577ca6d-8681-46ec-9979-7b7f46967931.png)
+![image 2](https://user-images.githubusercontent.com/28811495/140558331-4577ca6d-8681-46ec-9979-7b7f46967931.png)
 
 
 ## Customer Requests
@@ -90,7 +90,7 @@ During the paste, the system will create each line and default existing informat
 
 This will help you add transactions more quickly and accurately into Payroll Transaction Entry to complete the payroll processes.
 
-![image](https://user-images.githubusercontent.com/28811495/140557647-cbc1fe04-d8c5-47d4-8405-2f29d98e374a.png)
+![image 3](https://user-images.githubusercontent.com/28811495/140557647-cbc1fe04-d8c5-47d4-8405-2f29d98e374a.png)
 
   
 ### Mask Social Security Number on US W-2
@@ -113,7 +113,7 @@ Once you select the code type, you can enter or select from the lookup an existi
 
 A Code Modification report will be printed which tells you what was changed and where it was changed once you select the Update action button.
 
-![image](https://user-images.githubusercontent.com/28811495/140557995-5193cd82-337f-4748-9b5b-810fd564d822.png)
+![image 4](https://user-images.githubusercontent.com/28811495/140557995-5193cd82-337f-4748-9b5b-810fd564d822.png)
 
 
 ## Extend Functionality
@@ -138,7 +138,7 @@ In Dynamics GP October 2021 we have added an option to the workflow completion p
 
 For this completion option, when the number of approvals replied has reached this count, then the workflow step will be marked as complete and will be sent to the next step in the workflow.
 
-![image](https://user-images.githubusercontent.com/28811495/140558166-ad711c33-7970-4a6e-9131-eae3f4dd1ca7.png)
+![image 5](https://user-images.githubusercontent.com/28811495/140558166-ad711c33-7970-4a6e-9131-eae3f4dd1ca7.png)
 
   
 ### Remove Carbon Copy email in Workflow Maintenance
