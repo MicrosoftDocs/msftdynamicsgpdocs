@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/5/2021
+ms.date: 11/08/2021
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -36,7 +36,7 @@ If you are using Bank Reconciliation, your checkbook is automatically updated wh
 **What's in this manual**
 
 This manual is designed to give you an understanding of how to use the features
-of U.S. Payroll, and how it integrates with the Microsoft Dynamics&reg; GP system.
+of U.S. Payroll, and how it integrates with the Microsoft Dynamics GP system.
 
 Some features described in the documentation are optional and can be
 purchased through your Microsoft Dynamics GP partner.
@@ -1753,7 +1753,7 @@ employee's pay.
 
 #### Garnishment Setup Examples
 
-**Tax Levies**
+##### Tax Levies
 
 A federal tax levy is accomplished by ‘garnishing’ an employee’s wages to the extent that they are not exempt from the levy.  For example, there may be a tax levy that is for $25,000.  The tax levy deduction will be taken from the employees ‘take-home pay’ until it reaches the exempt amount.
 
@@ -1765,67 +1765,75 @@ Any new payroll deductions that are initiated by the employee after the levy has
 
 It looks like Tax Levies are always an amount (by looking at the form 668-W).
 
-Ex:  Employee Arthur receives $1,211.54 every two weeks.  On Aug 1, 2010, the employer receives form 668-W stating that a federal tax levy was being issued against Arthur’s wages for $25,000.  Arthur claimed married filing jointly with 3 personal exemptions on Part 3 of the form.  (The exempt amount taken from the table is $657.69.)  As of Aug 1, Arthur had the following deductions:
+Example:  Employee Arthur receives $1,211.54 every two weeks.  On Aug 1, 2010, the employer receives form 668-W stating that a federal tax levy was being issued against Arthur’s wages for $25,000.  Arthur claimed married filing jointly with 3 personal exemptions on Part 3 of the form.  (The exempt amount taken from the table is $657.69.)  As of Aug 1, Arthur had the following deductions:
 
-Federal income tax	    $44.44
-Social security tax	    50.88
-Medicare tax	        17.57
-State income taxes	    30.00
-401K plan(3% of salary)	36.35
-Health INS (after tax)	45.00
-Total:	                $224.24
+| Type | Amount |
+|--|--|
+| Federal income tax | $44.44 |
+| Medicare tax | 17.57 |
+| State income taxes | 30.00 |
+| 401K plan(3% of salary) | 36.35 |
+| Health INS (after tax) | 45.00 |
+| Total: | $224.24 |
 
 Prior to the Tax Levy, Arthur’s take-home pay is $987.30 ($1,211.54 - $224.24).  The exempt amount of Arthur’s take-home pay (taken from the table) is $657.69.  Therefore, the amount subject to the tax levy is $329.61 ($987.30 - $657.69).  And the take home pay after the Tax Levy is $657.69.
 
 How would we set up this deduction?
 
-**In Employee Deduction Maintenance**
-Deduction Type:	     Garnishment
-Original Amount	     $25,000
-Method:	             Fixed Amount
-Garnishment Category:Tax Levy
-Amount	             $25,000
-Percent	             N/A
-Earnings	         N/A
-Maximum Deduction Codes
-Federal	             FEDLEVY (this is just an example)
-State	             N/A
+In the **Employee Deduction Maintenance** window:
 
-![A screenshot ](media/DEDLEVY01.JPG)
+| Field | Value |
+|--|--|
+|Deduction Type|  Garnishment|
+|Original Amount|$25,000|
+|Method |      Fixed Amount|
+|Garnishment Category|Tax Levy|
+|Amount |$25,000|
+|Percent |N/A|
+|Earnings |N/A|
+|Maximum Deduction Codes||
+|Federal|FEDLEVY (this is just an example)|
+|State |N/A|
 
+![A screenshot ?](media/DEDLEVY01.JPG)
 
-**In Garnishment Maximum Setup**
-Code:	            FEDLEVY
-State/Fed	        FED
-Method	            Percent of Earnings
-Max Withholding %	100%
-Max Exempt Amount	$657.69 (This is the amount taken from the table)
-Min Wage Rule Amt	$0
-Earnings Code	    FEDLEVY
+In the **Garnishment Maximum Setup** window:
 
-![A screenshot ](media/DEDLEVY02.JPG)
+| Field | Value |
+|--|--|
+| Code|FEDLEVY |
+| Method |Percent of Earnings |
+| Max Withholding %	|100% |
+| Max Exempt Amount|	$657.69 (This is the amount taken from the table) |
+| Min Wage Rule Amt	|$0 |
+| Earnings Code |FEDLEVY |
 
-**In Earnings Setup**
-Code:	            FEDLEVY
-Include in Earnings
-Pay Codes	        All
-Deductions	        401K & Health Insurance 
-(According to the info we have about Federal Tax Levies, it should be all deductions that are being taken at the time the tax levy was issued.  New deductions after the tax levy is in place would not be included.)
-Taxes	            All Checkboxes Marked
+![A screenshot again](media/DEDLEVY02.JPG)
 
-![A screenshot ](media/DEDLEVY03.JPG)
+In the **Earnings Setup** window:
 
-**Calculate Checks report Recap**
+| Field | Value |
+|--|--|
+| Code |FEDLEVY |
+| Pay Codes| All |
+| Deductions </br>(According to the info we have about Federal Tax Levies, it should be all deductions that are being taken at the time the tax levy was issued.  New deductions after the tax levy is in place would not be included.) |        401K & Health Insurance |
+| Taxes |      All Checkboxes Marked |
+
+![A screenshot also](media/DEDLEVY03.JPG)
+
+Recap of the **Calculate Checks** report:
+
 Prior to the Tax Levy, Arthur’s take-home pay is $987.30 ($1,211.54 - $224.24).  The exempt amount of Arthur’s take-home pay (taken from the table) is $657.69.  Therefore, the amount subject to the tax levy is $329.61 ($987.30 - $657.69).  And the take home pay after the Tax Levy is $657.69.
 
-![A screenshot ](media/DEDLEVY04.JPG)
+![A screenshot more ](media/DEDLEVY04.JPG)
 
-
-**Child Support Withholding Orders**
+##### Child Support Withholding Orders
 
 Maximum amount to withhold:  Under the CCPA, the maximum amount that can be withheld from an employee’s wages for spousal or child support is:
-•	50% of the employee’s ‘disposable earnings’ if the employee is supporting another spouse and/or children.
-•	60% if the employee is not supporting another spouse and/or children.
+
+- 50% of the employee’s ‘disposable earnings’ if the employee is supporting another spouse and/or children.
+- 60% if the employee is not supporting another spouse and/or children.
+- 
 Note:  These amount increase to 55% and 65%, respectively, if the employee is at least 12 weeks late in making support payments.  State laws may impose lower limits.
 
 Disposable earnings are determined by subtracting all deductions required by law from an employee’s gross earnings (wages, commissions, bonuses, sick pay, and periodic pension payments).  Deductions required by law include withholding for federal, state, or local income tax, social security or Medicare tax, state unemployment or disability tax, and mandated payments for state employee retirement systems.  
@@ -1838,7 +1846,7 @@ It looks like Child Support Withholding Orders are always an amount (according t
 
 Ex:  Gary’s employer receives a child support withholding order from his home state of Arkansas, demanding that $800  in current support with no arrears, of Gary’s earnings be withheld each pay period if paid bi-weekly.  The amounts of Gary’s income are determined as follows:
 
-![A screenshot ](media/DEDCHILDSUP.JPG)
+![A screenshot ...](media/DEDCHILDSUP.JPG)
 
 Since the child support withholding maximum calculated is less than the $800 demanded in the withholding notice, the system compares the numbers between state and federal.  The lowest maximum available amount to garnish between the two is the amount available for garnishment. Gary has $728.85 available for garnishment on his paycheck.
 
@@ -1846,35 +1854,33 @@ His final take home pay is $405.90  ($1134.75 - $728.85).  The amount remaining 
 
 How would we set up this deduction?
 
-**In Employee Deduction Maintenance**
-Deduction Type:	        Garnishment
-Original Amount:	    $0
-Method:	                Fixed Amount
-Garnishment Category:	Child Support
-Amount	                $800.00
-Percent	                N/A
-Earnings	            N/A
-Maximum Deduction Codes
-Federal	                FEDCS
-State	                AKCSWHLTH
+In the **Employee Deduction Maintenance** window:
 
+| Field | Value |
+|--|--|
+| Deduction Type | Garnishment |
+| Method | Fixed Amount |
+| Garnishment Category | Child Support |
+| Amount | $800.00 |
+| Percent | N/A |
+| Earnings | N/A |
+| Maximum Deduction Codes |  |
+| Federal | FEDCS |
+| State | AKCSWHLTH |
 
-![A screenshot ](media/DEDCHILDSUP1.JPG)
+![A screenshot again](media/DEDCHILDSUP1.JPG)
 
-**In Garnishment Maximum Setup**
+In the **Garnishment Maximum Setup** window:
 
-![A screenshot ](media/DEDCHILDSUP2.JPG)
+![one screenshot ](media/DEDCHILDSUP2.JPG)
 
-**In Earnings Setup**
+In the  **Earnings Setup** window:
 
-![A screenshot ](media/DEDCHILDSUP3.JPG)
+![Another screenshot ](media/DEDCHILDSUP3.JPG)
 
+Recap of **Calculate Checks** report:
 
-**Calculate Checks report Recap**
-
-![A screenshot ](media/DEDCHILDSUP4.JPG)
-
-
+![Also a screenshot ](media/DEDCHILDSUP4.JPG)
 
 #### Setting up a company-level deduction sequence
 
@@ -4528,7 +4534,6 @@ There will be no check number associated with a beginning balance.
 
 - Don't want to update Bank Rec or GL
 
-    
 > [!IMPORTANT]
 > Manual Checks is that they are exactly that: manual. Microsoft Dynamics GP does not automatically calculate anything for you when you process a Manual Check. As such, you need to know exactly what amounts need to be entered/adjusted.
 
@@ -4536,18 +4541,18 @@ There will be no check number associated with a beginning balance.
 
 Enter appropriate information in the Payroll Manual Check-Adjustment Entry Window:
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD1.jpg)
+![ Description automatically generated](media/MCADD1.jpg)
 
-1.    To open the Payroll Manual Check Adjustment Entry window: on the Transactions menu, point to Payroll, and then click on Manual Checks.
-2.    Select the appropriate Check Type.
-3.    Enter a Batch ID if applicable (*Remember you cannot enter a negative manual check in a batch).
-4.    Enter a Checkbook ID if applicable (Not available if processing an Adjustment or Beginning Balance).
-5.    Ensure the Check Number is accurate (Not available if processing an Adjustment or Beginning Balance).
-6.    Enter an appropriate Check Date (The date the check was issued) and Posted Date (The date you want the check will be posted). 
-7.    Next to Employee ID, enter the appropriate Employee ID.
-8.    Click on the Transactions button to open the 'Payroll Manual Check Transaction Entry Window'.
-9.    Enter/Save all applicable transactions in the Payroll Manual Check Adjustment Entry window **(DETAILS ON HOW TO DO THAT BELOW)**
-10.    After all transactions have been entered/saved in the Payroll Manual Check Adjustment Entry window:
+1. To open the Payroll Manual Check Adjustment Entry window: on the Transactions menu, point to Payroll, and then click on Manual Checks.
+2. Select the appropriate Check Type.
+3. Enter a Batch ID if applicable (*Remember you cannot enter a negative manual check in a batch).
+4. Enter a Checkbook ID if applicable (Not available if processing an Adjustment or Beginning Balance).
+5. Ensure the Check Number is accurate (Not available if processing an Adjustment or Beginning Balance).
+6. Enter an appropriate Check Date (The date the check was issued) and Posted Date (The date you want the check will be posted).  
+7. Next to Employee ID, enter the appropriate Employee ID.
+8. Click on the Transactions button to open the 'Payroll Manual Check Transaction Entry Window'.
+9. Enter/Save all applicable transactions in the Payroll Manual Check Adjustment Entry window **(DETAILS ON HOW TO DO THAT BELOW)**
+10. After all transactions have been entered/saved in the Payroll Manual Check Adjustment Entry window:
 
     IF transactions are NOT saved in a batch, click 'Post' in the Payroll Manual Check – Adjustment Entry Window.
     IF transactions ARE saved in a batch, click 'Save' in the Payroll Manual Check – Adjustment Entry Window, and 'Post' the batch from the Payroll Batch Entry Window (Transactions >> Payroll >> Batch Entry).
@@ -4558,12 +4563,13 @@ Detailed steps and a description of how each adjustment works and effects amount
 
 ##### To enter/adjust an amount for a specific Pay Code
 
-1.    Next to 'Transaction Type' select 'Pay Code'.
+1. Next to 'Transaction Type' select 'Pay Code'.
 
-2.    Next to 'Code' select the appropriate pay code.
+2. Next to 'Code' select the appropriate pay code.
 
     > [!NOTE]
     > As soon as you select the pay code the following fields will automatically be populated (Pulling in from Employee Pay Code Maintenance window):
+    >
     >  - State (this does NOT mean state tax will be calculated for you – it won't).
     >  - SUTA State SUTA is not calculated during a pay run. 
     >      If you want wages associated with this pay code to be subject to SUTA be sure this field is populated appropriately.
@@ -4573,25 +4579,25 @@ Detailed steps and a description of how each adjustment works and effects amount
     >  - Department
     >  - Position
 
-3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
 
-4.    In the 'Amount' field: Enter the total amount by which you need to adjust the wages associated with this pay code:
+4. In the 'Amount' field: Enter the total amount by which you need to adjust the wages associated with this pay code:
 
     - Positive Amount = Increase in gross and net wages
     - Negative Amount = Decrease in gross and net wages
 
-5.    You can enter data in the following fields. However, be aware that GP does NOT calculate wages based off what you enter in these 
+5. You can enter data in the following fields. However, be aware that GP does NOT calculate wages based off what you enter in these fields:
 
     - Hours/Units
     - Days Worked
     - Weeks Worked
 
-6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+6. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
     > [!NOTE]
     > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay code, you'll need to do so manually with the appropriate tax in this window.
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD2.jpg)
+![Description automatically generated....](media/MCADD2.jpg)
 
 **Pay Code transaction in Manual Check Transaction Entry Window**
 
@@ -4612,20 +4618,19 @@ Detailed steps and a description of how each adjustment works and effects amount
 
 **To enter/adjust an amount for a specific Deduction:**
 
-1.    Next to 'Transaction Type' select Deduction.
-2.    Next to 'Code' select the appropriate deduction.
-3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-4.    In the 'Amount' field: Enter the total amount by which you need to adjust the Deduction Code:
+1. Next to 'Transaction Type' select Deduction.
+2. Next to 'Code' select the appropriate deduction.
+3. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4. In the 'Amount' field: Enter the total amount by which you need to adjust the Deduction Code:
 
     - Positive Amount = Decrease in Net Wages
     - Negative Amount = Increase in Net Wages
-5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+5. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this deduction, you'll need to do so manually with the appropriate tax in this window
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD3.jpg)
-
+![Also description automatically generated](media/MCADD3.jpg)
 
 **Deduction transaction in Manual Check Transaction Entry Window**
 
@@ -4637,13 +4642,13 @@ Detailed steps and a description of how each adjustment works and effects amount
 
 **To enter/adjust an amount for a specific Benefit:**
 
-1.    Next to 'Transaction Type' select 'Benefit'.
-2.    Next to 'Code' select the appropriate benefit.
-3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-4.    In the 'Amount' field: Enter the total amount by which you need to adjust the Benefit Code:
+1. Next to 'Transaction Type' select 'Benefit'.
+2. Next to 'Code' select the appropriate benefit.
+3. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4. In the 'Amount' field: Enter the total amount by which you need to adjust the Benefit Code:
 o    Positive Amount = No effect on wages
 o    Negative Amount = No effect on wages 
-5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+5. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this benefit, you'll need to do so manually with the appropriate tax in this window.
@@ -4659,15 +4664,15 @@ o    Negative Amount = No effect on wages
 
 **To enter/adjust an amount for Federal Tax:**
 
-1.    Next to 'Transaction Type' select 'Federal Tax'.
-2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-3.    In the 'Amount' field: Enter the total amount by which you need to adjust Federal Tax:
+1. Next to 'Transaction Type' select 'Federal Tax'.
+2. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3. In the 'Amount' field: Enter the total amount by which you need to adjust Federal Tax:
 o    Positive Amount = Decrease in Net Wages
 o    Negative Amount = Increase in Net Wages
-4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust Federal Taxable Wages:
+4. In the 'Taxable Wage' field: Enter the total amount by which you need to adjust Federal Taxable Wages:
 o    Positive Amount = Increase in Federal Taxable Wages 
 o    Negative Amount = Decrease in Federal Taxable Wages
-5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+5. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tax and Federal Taxable Wages need to be adjusted. GP will not calculate Federal Tax for you automatically in this window.
@@ -4685,26 +4690,24 @@ o    Negative Amount = Decrease in Federal Taxable Wages
 | Taxable Wage-post | No  Effect    | No  Effect   | Increase              |
 | Taxable Wage-nega | No  Effect    | No  Effect   | Decrease              |
 
-
-
 **To enter/adjust an amount for FICA Social Security Tax:**
 
-1.    Next to 'Transaction Type' select 'FICA Soc Sec Tax'.
-2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-3.    In the 'Amount' field: Enter the total amount by which you need to adjust FICA Social Security Tax owed by the employee:
+1. Next to 'Transaction Type' select 'FICA Soc Sec Tax'.
+2. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3. In the 'Amount' field: Enter the total amount by which you need to adjust FICA Social Security Tax owed by the employee:
 o    Positive Amount = Decrease in Net Wages
 o    Negative Amount = Increase in Net Wages
-4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Social Security Taxable Wages:
+4. In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Social Security Taxable Wages:
 o    Positive Amount = Increase in FICA Social Security Taxable Wages 
 o    Negative Amount = Decrease in FICA Social Security Taxable Wages
 
     > [!NOTE]
     > If the employee has already met his/her maximum Social Security Taxable Wages, GP will not record additional Social Security Taxable Wages regardless of what is entered in the Taxable Wage field.
 
-5.    In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Social Security Taxes owed by the employer.
+5. In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Social Security Taxes owed by the employer.
 o    Positive Amount = Increase in Employer owed FICA Social Security Tax
 o    Negative Amount = Decrease in Employer owed FICA Social Security Tax
-6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+6. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
     > [!NOTE]
     > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tax, the FICA Social Security Taxable Wages, and the Employer FICA Social Security Taxes need to be adjusted. GP will not calculate FICA Social Security Tax for you automatically in this window.
@@ -4739,18 +4742,18 @@ o    GP will still post the employee and employer tax amounts (not wages) regard
 
 **To enter/adjust an amount for FICA Medicare Tax:**
 
-1.    Next to 'Transaction Type' select 'FICA Medicare Tax'.
-2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-3.    In the 'Amount' field: Enter the total amount by which you need to adjust FICA Medicare Tax owed by the employee:
+1. Next to 'Transaction Type' select 'FICA Medicare Tax'.
+2. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3. In the 'Amount' field: Enter the total amount by which you need to adjust FICA Medicare Tax owed by the employee:
 o    Positive Amount = Decrease in Net Wages
 o    Negative Amount = Increase in Net Wages
-4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Medicare Taxable Wages:
+4. In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Medicare Taxable Wages:
 o    Positive Amount = Increase in FICA Medicare Taxable Wages 
 o    Negative Amount = Decrease in FICA Medicare Taxable Wages
-5.    In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Medicare Taxes owed by the employer.
+5. In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Medicare Taxes owed by the employer.
 o    Positive Amount = Increase in Employer owed FICA Medicare Tax
 o    Negative Amount = Decrease in Employer owed FICA Medicare Tax
-6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+6. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tax, the FICA Medicare Taxable Wages, and the Employer FICA Medicare Taxes need to be adjusted. GP will not calculate FICA Medicare Tax for you automatically in this window.
@@ -4774,16 +4777,16 @@ o    Negative Amount = Decrease in Employer owed FICA Medicare Tax
 **To enter/adjust an amount for State Tax:*
 
 
-1.    Next to 'Transaction Type' select 'State Tax'.
-2.    Next to 'Code' select the appropriate state tax.
-3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-4.    In the 'Amount' field: Enter the total amount by which you need to adjust State Tax owed by the employee:
+1. Next to 'Transaction Type' select 'State Tax'.
+2. Next to 'Code' select the appropriate state tax.
+3. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4. In the 'Amount' field: Enter the total amount by which you need to adjust State Tax owed by the employee:
 o    Positive Amount = Decrease in Net Wages
 o    Negative Amount = Increase in Net Wages
-5.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust State Taxable Wages:
+5. In the 'Taxable Wage' field: Enter the total amount by which you need to adjust State Taxable Wages:
 o    Positive Amount = Increase in State Taxable Wages 
 o    Negative Amount = Decrease in State Taxable Wages
-6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+6. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the State Tax and State Taxable Wages need to be adjusted. GP will not calculate State Tax for you automatically in this window.
@@ -4803,16 +4806,16 @@ o    Negative Amount = Decrease in State Taxable Wages
 
 **To enter/adjust an amount for Local Tax:*
 
-1.    Next to 'Transaction Type' select 'Local Tax'.
-2.    Next to 'Code' select the appropriate local tax.
-3.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-4.    In the 'Amount' field: Enter the total amount by which you need to adjust Local Tax owed by the employee:
+1. Next to 'Transaction Type' select 'Local Tax'.
+2. Next to 'Code' select the appropriate local tax.
+3. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+4. In the 'Amount' field: Enter the total amount by which you need to adjust Local Tax owed by the employee:
 o    Positive Amount = Decrease in Net Wages
 o    Negative Amount = Increase in Net Wages
-5.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust Local Taxable Wages:
+5. In the 'Taxable Wage' field: Enter the total amount by which you need to adjust Local Taxable Wages:
 o    Positive Amount = Increase in Local Taxable Wages 
 o    Negative Amount = Decrease in Local Taxable Wages
-6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+6. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Local Tax and Local Taxable Wages need to be adjusted. GP will not calculate Local Tax for you automatically in this window.
@@ -4843,7 +4846,7 @@ To enter/adjust an amount for a specific Pay Advance:
 
      - Positive Amount = Increase in gross and net wages
      - Negative Amount = Decrease in gross and net wages
-5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+5. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay advance, you'll need to do so manually with the appropriate tax in this window.
@@ -4896,18 +4899,18 @@ To enter/adjust an amount for a specific Pay Advance:
 
 **To enter/adjust an amount for FICA Social Security Tips:*
 
-1.    Next to 'Transaction Type' select 'FICA Soc Sec Tips'.
-2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-3.    In the 'Amount' field: Enter the total amount by which you need to adjust FICA Social Security Tips tax  owed by the employee:
+1. Next to 'Transaction Type' select 'FICA Soc Sec Tips'.
+2. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3. In the 'Amount' field: Enter the total amount by which you need to adjust FICA Social Security Tips tax  owed by the employee:
 o    Positive Amount = Decrease in Net Wages
 o    Negative Amount = Increase in Net Wages
-4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Social Security Tips Taxable Wages:
+4. In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Social Security Tips Taxable Wages:
 o    Positive Amount = Increase in FICA Social Security Tips Taxable Wages 
 o    Negative Amount = Decrease in FICA Social Security Tips Taxable Wages
-5.    In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Social Security Tips Taxes owed by the employer.
+5. In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Social Security Tips Taxes owed by the employer.
 o    Positive Amount = Increase in Employer owed FICA Social Security Tips Tax
 o    Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
-6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+6. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tips Tax, the FICA Social Security Tips Taxable Wages, and the Employer FICA Social Security Tips Taxes need to be adjusted. GP will not calculate FICA Social Security Tips Tax for you automatically in this window.
@@ -4929,18 +4932,18 @@ o    Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
 
 **To enter/adjust an amount for FICA Medicare Tips:*
 
-1.    Next to 'Transaction Type' select 'FICA Medicare Tips'.
-2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-3.    In the 'Amount' field: Enter the total amount by which you need to adjust FICA Medicare Tips Tax owed by the employee:
+1. Next to 'Transaction Type' select 'FICA Medicare Tips'.
+2. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3. In the 'Amount' field: Enter the total amount by which you need to adjust FICA Medicare Tips Tax owed by the employee:
 o    Positive Amount = Decrease in Net Wages
 o    Negative Amount = Increase in Net Wages
-4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Medicare Tips Taxable Wages:
+4. In the 'Taxable Wage' field: Enter the total amount by which you need to adjust FICA Medicare Tips Taxable Wages:
 o    Positive Amount = Increase in FICA Medicare Tips Taxable Wages 
 o    Negative Amount = Decrease in FICA Medicare Tips Taxable Wages
-5.    In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Medicare Tips Taxes owed by the employer.
+5. In the 'EFIC Amount' field: Enter the total amount by which you need to adjust FICA Medicare Tips Taxes owed by the employer.
 o    Positive Amount = Increase in Employer owed FICA Medicare Tips Tax
 o    Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
-6.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+6. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tips Tax, the FICA Medicare Tips Taxable Wages, and the Employer FICA Medicare Tips Taxes need to be adjusted. GP will not calculate FICA Medicare Tips Tax for you automatically in this window.
@@ -4961,15 +4964,15 @@ o    Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
 
 **To enter/adjust an amount for Federal Tax/Tips:*
 
-1.    Next to 'Transaction Type' select 'Federal Tax/Tips'.
-2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-3.    In the 'Amount' field: Enter the total amount by which you need to adjust Federal Tax owed by the employee on Tips:
+1. Next to 'Transaction Type' select 'Federal Tax/Tips'.
+2. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3. In the 'Amount' field: Enter the total amount by which you need to adjust Federal Tax owed by the employee on Tips:
 o    Positive Amount = Decrease in Net Wages
 o    Negative Amount = Increase in Net Wages
-4.    In the 'Taxable Wage' field: Enter the total amount by which you need to adjust Federal Taxable Tips Wages:
+4. In the 'Taxable Wage' field: Enter the total amount by which you need to adjust Federal Taxable Tips Wages:
 o    Positive Amount = Increase in Federal Taxable Tips Wages 
 o    Negative Amount = Decrease in Federal Taxable Tips Wages
-5.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+5. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tips Tax and Federal Taxable Tips Wages need to be adjusted. GP will not calculate Federal Tips Tax for you automatically in this window.
@@ -4990,12 +4993,12 @@ o    Negative Amount = Decrease in Federal Taxable Tips Wages
 
 **To enter/adjust an amount for Uncollected FICA Social Security Tax:*
 
-1.    Next to 'Transaction Type' select 'Uncollected FICA Soc Sec Tax'.
-2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-3.    In the 'Amount' field: Enter the total amount by which you need to adjust Uncollected FICA Social Security tax  owed by the employee:
+1. Next to 'Transaction Type' select 'Uncollected FICA Soc Sec Tax'.
+2. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3. In the 'Amount' field: Enter the total amount by which you need to adjust Uncollected FICA Social Security tax  owed by the employee:
 o    Positive Amount = Increase Uncollected FICA Soc Sec Tax on Tips
 o    Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
-4.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+4. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Social Security Tax needs to be adjusted. GP will not calculate Uncollected FICA Social Security Tax for you automatically in this window.
@@ -5014,12 +5017,12 @@ o    Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
 **To enter/adjust an amount for Uncollected FICA Medicare Tax:*
 
 
-1.    Next to 'Transaction Type' select 'Uncollected FICA Medicare Tax'.
-2.    Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
-3.    In the 'Amount' field: Enter the total amount by which you need to adjust Uncollected FICA Medicare tax  owed by the employee:
+1. Next to 'Transaction Type' select 'Uncollected FICA Medicare Tax'.
+2. Enter appropriate dates in the 'Date From' and 'Date To' fields. These dates reflect the pay period the transaction is associated with. These are 'informational' dates and DO NOT drive 'when' the transaction is posted.
+3. In the 'Amount' field: Enter the total amount by which you need to adjust Uncollected FICA Medicare tax  owed by the employee:
 o    Positive Amount = Increase Uncollected FICA Medicare Tax on Tips
 o    Negative Amount = Decrease Uncollected FICA Medicare Tax on Tips
-4.    Click 'Save' in the Payroll Manual Check Transaction Entry Window.
+4. Click 'Save' in the Payroll Manual Check Transaction Entry Window.
 
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Medicare Tax needs to be adjusted. GP will not calculate Uncollected FICA Medicare Tax for you automatically in this window.
@@ -7634,10 +7637,10 @@ deposit and a deduction direct deposit.
 
 |                          | **Regular direct deposits**                                                                                                                                                                                                                                     | **Deduction direct deposits**                                                                                                               |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| **Effect on wages**      | Sends net wages to direct deposit accounts.                                                                                                                                                                                                                    | Reduces net wages.                                                                                                                         |
-| **Setup location**       | Employee Direct Deposit Maintenance window.                                                                                                                                                                                                                    | Employee Deduction                                                                                                                          |
-| **Payment order**        | Paid in the order they appear in the Employee Direct Deposit Maintenance window, after any deduction direct deposits.                                                                                                                                          | Paid first.                                                                                                                                |
-| **Remainder of net pay** | Remainder of net pay over the amount of deductions and direct deposits will be sent to the direct deposit account indicated by the Remainder of Net Line Number field in the Employee Direct Deposit Maintenance window.                                       | Net pay over the amount of the direct deposits cannot be sent to any direct deposit account, but is paid with a "real" check.              |
+| **Effect on wages**      | Sends net wages to direct deposit accounts.                                                                                                                                                                                                                 | Reduces net wages.                                                                                                                      |
+| **Setup location**       | Employee Direct Deposit Maintenance window.                                                                                                                                                                                                                 | Employee Deduction                                                                                                                          |
+| **Payment order**        | Paid in the order they appear in the Employee Direct Deposit Maintenance window, after any deduction direct deposits.                                                                                                                                       | Paid first.                                                                                                                             |
+| **Remainder of net pay** | Remainder of net pay over the amount of deductions and direct deposits will be sent to the direct deposit account indicated by the Remainder of Net Line Number field in the Employee Direct Deposit Maintenance window.                                    | Net pay over the amount of the direct deposits cannot be sent to any direct deposit account, but is paid with a "real" check.           |
 | **Checks**               | If an employee has "regular" direct deposit accounts, any net pay over the amount will be sent to the direct deposit account specified in the Remainder of Net Line Number field; the employee might get a voided check or a direct deposit earnings statement. | If an employee has only a deduction direct deposit account, any net pay over the amount of the deductions will be paid with a "real" check. |
 
 #### Remainder of net
@@ -8616,11 +8619,11 @@ Payroll Direct Deposit reports available are:
 
 | **Report**           | **Report information**  |
 |----------------------|-------------------------|
-| Direct Deposit ACH File Report                                                                                                                                              | A printout of the ACH file. Creating a printout at the time you generate your ACH file saves you the work of opening and printing your ACH destination file later.                                                                                                                                                       |
+| Direct Deposit ACH File Report                                                                                                                                              | A printout of the ACH file. Creating a printout at the time you generate your ACH file saves you the work of opening and printing your ACH destination file later.                                                                                                                                                    |
 | Direct Deposit ACH Transmittal                                                                                                                                              | A combination of smaller reports, based on information you've entered during the Payroll process. Use transmittal reports to see the effect of the direct deposit transactions on your company's accounts, and your employees' savings and checking accounts. Each report is separated from the others with a page break. |
-| Direct Deposit Check Register                                                                                                                                               | A check register with an asterisk (\*) next to checks that have been voided during the Payroll process. A "D" indicates a check that has been voided due to direct deposit.                                                                                                                                              |
-| Direct Deposit Exceptions Report                                                                                                                                            | Lists any employee direct deposits that were not completed. Exceptions are divided into three categories— Insufficient Funds, Amount Deducted, Not Deposited, and Other.                                                                                                                                                 |
-| Direct Deposit Detail List                                                                                                                                                  | A list of all employee accounts—including those belonging to the employees who aren't part of the current pay run— that have "prenote" status for any account in the Status dropdown list in the Employee Direct Deposit Maintenance window.                                                                             |
+| Direct Deposit Check Register                                                                                                                                               | A check register with an asterisk (\*) next to checks that have been voided during the Payroll process. A "D" indicates a check that has been voided due to direct deposit.                                                                                                                                           |
+| Direct Deposit Exceptions Report                                                                                                                                            | Lists any employee direct deposits that were not completed. Exceptions are divided into three categories— Insufficient Funds, Amount Deducted, Not Deposited, and Other.                                                                                                                                              |
+| Direct Deposit Detail List                                                                                                                                                  | A list of all employee accounts—including those belonging to the employees who aren't part of the current pay run— that have "prenote" status for any account in the Status dropdown list in the Employee Direct Deposit Maintenance window.                                                                          |
 | † Indicates reports that can be assigned to named printers. For more information, refer to your System User's Guide (Help \>\> Contents \>\> select System Administration). |                                                                                                                                                                                                                                                                                                                           |
 
 A descriptive summary of all employee accounts that are involved in Payroll
@@ -8631,10 +8634,10 @@ items.
 
 | **Report** | **Report information**     |
 |------------|----------------------------|
-| Direct Deposit List                                                                                                                                                         | A list of all employees and their direct deposit statuses. In this report, one line item is created for each employee. It is possible for an employee to have an Active status even if their account status is set to Inactive. For an employee to have an Inactive status, Inactive must be marked in the Employee Direct Deposit Maintenance window.                                                                                                                                               |
-| Direct Deposit Register                                                                                                                                                     | Shows the amount deposited for each employee. The report lists the employee ID, Social Security number, gross pay, net pay, and check number.                                                                                                                                                                                                                                                                                                                                                        |
+| Direct Deposit List                                                                                                                                                         | A list of all employees and their direct deposit statuses. In this report, one line item is created for each employee. It is possible for an employee to have an Active status even if their account status is set to Inactive. For an employee to have an Inactive status, Inactive must be marked in the Employee Direct Deposit Maintenance window.                                                                                                                                            |
+| Direct Deposit Register                                                                                                                                                     | Shows the amount deposited for each employee. The report lists the employee ID, Social Security number, gross pay, net pay, and check number.                                                                                                                                                                                                                                                                                                                                                     |
 | Direct Deposit Statement of                                                                                                                                                 | Generated when Payroll checks are posted. Instead of printing voided checks for employees who have all their earnings deposited using direct deposit, users can print checks for only those employees who are paid with a "real" Payroll check. Employees paid entirely through direct deposit transactions can be given earnings statements that can be printed on regular printer paper. The direct deposit earnings statements include the same information as the Payroll checks and check stubs. |
-| Direct Deposit Trxs Register                                                                                                                                                | A list of all direct deposit transactions completed during the pay period. The report lists all employees who were enrolled in either type of direct deposit transaction in alphabetical order. Other information is included for each employee record—the employee's Social Security or employee ID number; the types of accounts to which the funds were deposited; and the amount deposited to each account. Prenotification transactions will also appear on this report.                        |
+| Direct Deposit Trxs Register                                                                                                                                                | A list of all direct deposit transactions completed during the pay period. The report lists all employees who were enrolled in either type of direct deposit transaction in alphabetical order. Other information is included for each employee record—the employee's Social Security or employee ID number; the types of accounts to which the funds were deposited; and the amount deposited to each account. Prenotification transactions will also appear on this report.                     |
 | † Indicates reports that can be assigned to named printers. For more information, refer to your System User's Guide (Help \>\> Contents \>\> select System Administration). |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 The Direct Deposit ACH Transmittal Report is a combination of smaller reports,
