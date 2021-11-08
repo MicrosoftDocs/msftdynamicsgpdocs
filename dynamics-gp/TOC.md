@@ -3,6 +3,8 @@
 <!--- what's new-->
 ## What's new
 ### [Introduction](whats-new/introduction.md)
+### What's New in Dynamics GP in October 2021
+#### [October 2021 capability overview](whats-new/version-october-2021.md)
 ### What's New in Dynamics GP in October 2020
 #### [October 2020 capability overview](whats-new/version-october-2020.md)
 #### Financials enhancements
