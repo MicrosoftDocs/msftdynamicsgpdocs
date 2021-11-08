@@ -5059,78 +5059,55 @@ deleted.
     (HR & Payroll \>\> Transactions \>\> Payroll \>\> Manual Check \>\> Choose the Distributions button \>\> Choose the Analytical Accounting button)
 
     ![A screenshot of a computer Description automatically generated](media/3e3fb21a87f45dc6186c5861d8800dd4.jpg)
+2. Depending on how you opened the Analytical Payroll Transaction Entry window, the information displayed will be either for the distribution or transaction that you selected. To view the other distributions or transactions, enter or select a different number in the Distribution or Transaction field.
 
+    - **Functional Amount** This field displays the amount in the originating or functional currency based on the option selected in the currency view.
 
+        > [!TIP]
+        > You can choose the expansion button to view multicurrency information if the originating currency differs from the functional currency. The currency icon is not displayed if the displayed account is a unit account.
 
-2. Depending on how you opened the Analytical Payroll Transaction Entry window, the information displayed will be either for the distribution or transaction
-    that you selected. To view the other distributions or transactions, enter or select a different number in the Distribution or Transaction field.
+    - **Account** This field displays the account related to the distribution or transaction. The expansion button will open the Account Entry window. The balance type is also displayed.
 
-**Functional Amount** This field displays the amount in the originating or functional currency based on the option selected in the currency view.
+    - **Assigned** This field displays the total amount in value and percentage that has been assigned.
 
-    > [!TIP]
-    > You can choose the expansion button to view multicurrency information if the originating currency differs from the functional currency. The currency icon is not displayed if the displayed account is a unit account.
+    - **Unassigned** This field displays the remaining amount that is to be assigned in value and percentage.
 
-**Account** This field displays the account related to the distribution or transaction. The expansion button will open the Account Entry window. The balance type is also displayed.
+    In the assignment list view, an arrow next to the Number field indicates that the analysis information displayed is for the selected assignment. Each assignment created for the distribution or transaction is displayed separately.
 
-**Assigned** This field displays the total amount in value and percentage that has been assigned.
+3. Select how to assign the amount, either as hours/units or as a percentage. 
 
-**Unassigned** This field displays the remaining amount that is to be assigned in value and percentage.
+    - **Number** This field displays the number of the assignment.
 
-In the assignment list view, an arrow next to the Number field indicates that the analysis information displayed is for the selected assignment. Each assignment created for the distribution or transaction is displayed separately.
+    - **Hours/Units or Percentage** This field displays the assignment as an integer or percentage, based on the option you selected in the Assignment Type field. Enter the amount to assign in this field. Assignments can be entered in the functional or originating currency.
 
-1. Select how to assign the amount, either as hours/units or as a percentage. 
-    **Number** This field displays the number of the assignment.
+4. Enter the assignment in percentage value in the Assign% field. Initially, a single assignment is created by default. You can overwrite the assignment with more than one assignment. You can save analysis information even if the assignment is not 100%.
 
-**Hours/Units or Percentage** This field displays the assignment as an
-integer or percentage, based on the option you selected in the Assignment
-Type field. Enter the amount to assign in this field. Assignments can be
-entered in the functional or originating currency.
+5. Enter or select an alias.
 
-1. Enter the assignment in percentage value in the Assign% field. Initially, a
-    single assignment is created by default. You can overwrite the assignment
-    with more than one assignment. You can save analysis information even if the
-    assignment is not 100%.
+6. Enter reference information for the assignment in the Reference field.
 
-2. Enter or select an alias.
+7. Choose Remaining to add one assignment for the remaining unassigned amount. The new assignment will ensure that the total assigned amount equals the distribution amount. For example, the distribution amount is \$100 and
+you've entered four assignments that total \$75. When you choose Remaining, a fifth assignment for the remaining value, \$25 is created. This button is not available if the Distribution field is blank or has a zero value.
 
-3. Enter reference information for the assignment in the Reference field.
+8. Choose Default to use the current setup information specified for the account class and create a single assignment.
 
-4. Choose Remaining to add one assignment for the remaining unassigned amount.
-    The new assignment will ensure that the total assigned amount equals the
-    distribution amount. For example, the distribution amount is \$100 and
-    you've entered four assignments that total \$75. When you choose Remaining,
-    a fifth assignment for the remaining value, \$25 is created. This button is
-    not available if the Distribution field is blank or has a zero value.
+    - **Trx Dimension** This field displays transaction dimension ID for the transaction dimensions that are available.
 
-5. Choose Default to use the current setup information specified for the
-    account class and create a single assignment.
+    - **Trx Dimension Description** This field displays the first description for the selected transaction dimension.
 
-**Trx Dimension** This field displays transaction dimension ID for the
-transaction dimensions that are available.
+9. Enter or select the code for each alphanumeric transaction dimension in the Alphanumeric column.
 
-**Trx Dimension Description** This field displays the first description for
-the selected transaction dimension.
+    *You can only add an alphanumeric code that the user ID you're logged in as, and the selected account, both have access to. For more information, see the Analytical Accounting documentation.*
 
-1. Enter or select the code for each alphanumeric transaction dimension in the
-    Alphanumeric column.
+10. Enter a transaction dimension code in the Numeric, Yes/No or Date field for a Numeric, Boolean or Date type transaction dimension.
 
-*You can only add an alphanumeric code that the user ID you're logged in as,
-and the selected account, both have access to. For more information, see the
-Analytical Accounting documentation.*
+11. To validate that the information you've entered can be saved, choose Validate. If errors are found, the Analytical Accounting Validation Log window opens, where you can view the errors or changes. For more information about validation, see the Analytical Accounting documentation.
 
-1. Enter a transaction dimension code in the Numeric, Yes/No or Date field for
-    a Numeric, Boolean or Date type transaction dimension.
+12. To save changes and close the window, choose OK.
 
-2. To validate that the information you've entered can be saved, choose
-    Validate. If errors are found, the Analytical Accounting Validation Log
-    window opens, where you can view the errors or changes. For more information
-    about validation, see the Analytical Accounting documentation.
+13. To save changes and clear the window, choose Save.
 
-3. To save changes and close the window, choose OK.
-
-4. To save changes and clear the window, choose Save.
-
-5. To clear the window and close it without saving changes, choose Clear.
+14. To clear the window and close it without saving changes, choose Clear.
 
 #### Modifying a specific transaction in Payroll
 
@@ -5140,27 +5117,17 @@ number or Analytical Accounting information as necessary.
 
 **To modify a specific transaction in Payroll:**
 
-1. Open the Payroll Posting Edit List window. (HR & Payroll \>\> Transactions
-    \>\> Payroll \>\> Posting Edit List)
+1. Open the Payroll Posting Edit List window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Posting Edit List)
 
-2. In the Restrictions group, enter or select a value for each field for which
-    you want to display data. For example, entering or selecting a range in the
-    Employee ID field restricts the data shown in the scrolling window to a
-    corresponding range of employee IDs.
+2. In the Restrictions group, enter or select a value for each field for which you want to display data. For example, entering or selecting a range in the Employee ID field restricts the data shown in the scrolling window to a corresponding range of employee IDs.
 
-3. To make changes to the Analytical Accounting information for the selected
-    transaction, choose the Analytical Accounting button in the scrolling
-    window. The Analytical Payroll Transactions Entry window opens. For
-    information on this window, see *Entering Analytical Accounting information
-    for Payroll transactions* .
+3. To make changes to the Analytical Accounting information for the selected transaction, choose the Analytical Accounting button in the scrolling window. The Analytical Payroll Transactions Entry window opens. For information on this window, see *Entering Analytical Accounting information for Payroll transactions* .
 
-4. To make changes to the account number for the selected transaction, choose
-    the Account Number lookup button in the scrolling window.
+4. To make changes to the account number for the selected transaction, choose the Account Number lookup button in the scrolling window.
 
 5. Choose Redisplay to update the window with any changes.
 
-6. Choose Clear to remove your entries and continue working in the window, or
-    choose OK to save your changes and close the window.
+6. Choose Clear to remove your entries and continue working in the window, or choose OK to save your changes and close the window.
 
 #### Processing an advance pay run
 
@@ -6084,21 +6051,20 @@ Vacation/Sick Time List\*
 the accrue type in the Attendance Setup window. Refer to the "Attendance setup"
 chapter in the Human Resources manual.
 
-| *Wage and Hour*                                                                                                                                    |   |   |
-|----------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
-| Department Wage and Hour Report                                                                                                                    |   |   |
-| State Wage Report                                                                                                                                  |   |   |
-| FICA Wage Report                                                                                                                                   |   |   |
-| Earnings Register                                                                                                                                  |   |   |
-| Employee Wage and Hour *History Reports*                                                                                                           |   |   |
-| Transaction History                                                                                                                                |   |   |
-| Check History                                                                                                                                      |   |   |
-| Employee Pay History                                                                                                                               |   |   |
-| Distribution Breakdown History *Audit Trail Reports*                                                                                               |   |   |
-| Choose File \>\> Print in the window you use to complete the procedure **or** some might automatically be printed when you complete the procedure. |   |   |
-| Employee Mass Update Audit                                                                                                                         |   |   |
-| Payroll FUTA Posting Journal                                                                                                                       |   |   |
-| Benefit Summary                                                                                                                                    |   |   |
+*Wage and Hour*
+Department Wage and Hour Report
+State Wage Report
+FICA Wage Report
+Earnings Register
+Employee Wage and Hour *History Reports*
+Transaction History
+Check History
+Employee Pay History
+Distribution Breakdown History *Audit Trail Reports*
+Choose File \>\> Print in the window you use to complete the procedure **or** some might automatically be printed when you complete the procedure.
+Employee Mass Update Audit
+Payroll FUTA Posting Journal
+Benefit Summary
 
 Payroll Benefit Posting Journal
 
