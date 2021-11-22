@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 02/28/2020
+ms.date: 11/22/2021
 
 ---
 # Purchase Order Processing Part 3: Receipts
@@ -1791,6 +1791,10 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 18. Choose Save or Post. If you post, the invoiced quantities for each item on the receipt must be fully matched to shipment quantities.
 
 One or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window. If you saved the transaction to a batch, you can print an edit list.
+
+**NOTE:**
+If you receive a **Cannot insert the value NULL into column 'UseQtyOverageTolerance'** error when you post an invoice receipt review [blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/are-you-unable-to-invoice-a-purchase-order-because-of-the-following-error-cannot-insert-the-value-null-into-column-useqtyoveragetolerance-table-460621404) for suggested troubleshooting.
+
 
 ### Matching shipments to an invoice receipt
 
