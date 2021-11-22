@@ -8,9 +8,9 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 08/25/2021
+ms.date: 11/22/2022
 ---
-# U.S. 2021 Payroll Tax Update
+# U.S. 2022 Payroll Tax Update
 
 This tax update applies to:
 
