@@ -1792,8 +1792,8 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 One or more posting journals and distribution breakdown registers may be printed, depending on the options selected in the Posting Setup window. If you saved the transaction to a batch, you can print an edit list.
 
-**NOTE:**
-If you receive a **Cannot insert the value NULL into column 'UseQtyOverageTolerance'** error when you post an invoice receipt review [blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/are-you-unable-to-invoice-a-purchase-order-because-of-the-following-error-cannot-insert-the-value-null-into-column-useqtyoveragetolerance-table-460621404) for suggested troubleshooting.
+> [!NOTE]  
+> If you receive the error message *Cannot insert the value NULL into column 'UseQtyOverageTolerance'*  when you post an invoice receipt, review the [blog post](https://community.dynamics.com/gp/b/dynamicsgp/posts/are-you-unable-to-invoice-a-purchase-order-because-of-the-following-error-cannot-insert-the-value-null-into-column-useqtyoveragetolerance-table-460621404) for suggested troubleshooting.
 
 
 ### Matching shipments to an invoice receipt
