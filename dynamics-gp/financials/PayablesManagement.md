@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/04/2021
+ms.date: 11/22/2021
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -4792,3 +4792,77 @@ To view the 'Document Number' of an Invoice/Finance Charge/Misc. Charge, simply 
 With the release of Microsoft Dynamics GP 2018 R2, users can now easily tell whether a vendor is on 'Hold' in the following windows: Payables Transaction Inquiry - Vendor, Purchasing All-in-One View, and Payables Transaction Entry Zoom windows.
 
 Additionally, Microsoft Dynamics GP will now throw a warning message when a user attempts to enter a transaction when the vendor is on hold, "Vendor XXXX is currently on hold. Do you want to continue?"
+
+[Checkbook ID Defaults on Computer Check Batch](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-r2-checkbook-id-defaults-on-computer-check-batch)
+
+With the release of Microsoft Dynamics GP 2018 R2, when a Computer Check batch is created from any Payables Payment window, the Checkbook ID will default into the appropriate field in the Payables Batch Entry window.
+
+In prior versions of Microsoft Dynamics GP, when a Payables batch is created with a 'Computer Check' origin, the default Checkbook ID does not default into the Payables Batch Entry window.
+
+[Long Description Field on Payables Transaction Entry](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---long-description-field-on-payables-transaction-entry-1531554908)
+
+With the release of Microsoft Dynamics GP 18.2 October 2019, In the Payables Setup, you now have the option of enabling a longer description field for the Payables Transaction Entry window.  
+
+Marking this option in setup will enable a new field called long description to the Payables Transaction Entry window that will also be viewable when inquiring on the transaction.  The traditional description field will hold a maximum of 30 characters, where the long description field will hold up to 200 characters. 
+
+[Visual Cue for EFT Vendor on Edit Payment Batch] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---visual-cue-for-eft-vendor-on-edit-payment-batch)
+
+With the release of Microsoft Dynamics GP 18.2 October 2019, A new visual cue has been added to the Edit Payment Batch window to show if a Vendor is set up for EFT.  This will be a huge time saver for those who have many Vendors and cannot remember which ones are set up for EFT or not.  Now you can tell right away and can avoid the warning message stating that the Vendor is not set up for EFT if you would accidently select a non-EFT Vendor in this window.
+
+[Non-Employee Compensation - NEC - for 1099 form] (https://community.dynamics.com/gp/b/dynamicsgp/posts/non-employee-compensation-nec-for-1099-form)
+
+With the release of Microsoft Dynamics GP 18.3 October 2020, The IRS is releasing a new 1099 NEC form for the 2020 tax year. Non-Employee Compensation, which had been included in the 1099 MISC form, has been moved to its own form.
+
+In the Vendor Card in Options, you now have the option of selecting Non-employee Compensation as a 1099 tax type. The Utility "Update 1099 Information" also includes selecting Non-employee Compensation.
+
+[Add DBA Name field on Vendor Maintenance window for 1099 Vendors] (https://community.dynamics.com/gp/b/dynamicsgp/posts/add-dba-name-field-on-vendor-maintenance-window-for-1099-vendors)
+
+With the release of Microsoft Dynamics GP 18.3 October 2020, When a business is created in the United States or Canada many times, they have the option of using a DBA, or “Doing Business As” name, in addition to the legal entity name. The DBA name is the operating name of the business, or how the business is known to customers, or operating name. As opposed to the legal name of the business. Vendors that have a DBA name, in addition to the legal company name, and want to have the DBA name appear on the 1099 that is issued to them, can now do so.
+
+[1099-MISC form updates for Tax Year 2020] (https://community.dynamics.com/gp/b/dynamicsgp/posts/1099-misc-form-updates-for-tax-year-2020)
+
+With the release of Microsoft Dynamics GP 18.3 October 2020, The 1099-MISC form has been revised to meet the IRS regulatory changes for the 2020 tax year. In the Vendor Card point to Options, point to Tax Type: Miscellaneous, point to 1099 Box, click the drop-down menu.
+
+Box 9: Crop insurance proceeds are reported in.
+
+Box 10: Gross proceeds to an attorney are reported in.
+
+Box 12: Section 409A deferrals are reported.
+
+Box 14: Nonqualified deferred compensation income is reported.
+
+Boxes 15, and 17 report state taxes withheld, and amount of income earned in the state, respectively.
+
+Box 7 was moved to the 1099 NEC form as a checkbox Payer made Direct Sales of $5,000 or more, etc.
+
+Box 16 the state number is not a currency field and it is available at the header level of the 1099 details window. Therefore, the data entered in the header will be shown in the form.
+
+[Copy and Paste Purchasing Transactions and Distributions] (https://community.dynamics.com/gp/b/dynamicsgp/posts/copy-and-paste-purchasing-transactions-and-distributions)
+
+With the release of Microsoft Dynamics GP 18.3 October 2020, Copy and Paste feature enables users to define purchase transactions, along with distributions, and import them into the Payables Transaction entry window in GP. This will improve efficiency, reduce rekeying errors, and enhancement user experience.
+
+With this feature, you can choose to do distributions or not, similar to our General Ledger copy paste.
+
+[Import Credit Card Transactions] (https://community.dynamics.com/gp/b/dynamicsgp/posts/import-credit-card-transactions)
+
+With the release of Microsoft Dynamics GP 18.3 October 2020, Importing a credit card statement to a vendor account in Dynamics GP makes it fast and easy to enter invoice transactions. Users can import the credit card transactions as payable invoices or manual payments. Using the import functionality helps reduce the chances of data entry errors and brings invoices for a vendor into a batch.
+
+The imported transactions must be saved as a batch and appropriate distributions must be created for each transaction.
+
+[Remove MC Fully applied documents from PM HATB] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020-remove-mc-fully-applied-documents-from-hatb)
+
+With the release of Microsoft Dynamics GP 18.3 October 2020, you will now have the ability to remove fully applied Multicurrency documents from your Payables Historical Aged Trial Balance making it easier to focus just on those documents that are outstanding.
+
+[Default Inquiry sort Options] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2021---default-inquiry-sort-options-ap-ar-br)
+
+With the release of Microsoft Dynamics GP 18.4 October 2021, When users go into the Inquiry windows with these sorting options, the first thing they most often do is change the sort type to be Document Number or Document Date and select descending, as they want to display the most recent documents.  Now, these sort option settings can be saved as default, saving the user a lot of time when trying to locate transactions.
+
+[Payables 1099 Default to Single Feed] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2021---payables-1099-default-to-single-feed)
+
+With the release of Microsoft Dynamics GP 18.4 October 2021, When printing 1099's, the form type will default to 'Single Feed' instead of 'Continuous',  saving the user time and hassle from printing the incorrect 1099 form layout.  This default setting can be found by going into Purchasing Routines and selecting Print 1099.
+
+[Payables 1096 form print email address] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2021---payables-1096-form-print-email-address)
+
+With the release of Microsoft Dynamics GP 18.4 October 2021, The Payables 1096 Form will print your company's email address for the Address ID which is selected in the Print 1099 window.  Also, that email address will be displayed on the Print 1099 window.  You can locate the 1096 Form by going to Purchasing Routines and selecting Print 1099. 
+
+
