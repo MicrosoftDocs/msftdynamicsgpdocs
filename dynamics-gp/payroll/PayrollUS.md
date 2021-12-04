@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/08/2021
+ms.date: 12/3/2021
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -1881,6 +1881,83 @@ In the  **Earnings Setup** window:
 Recap of **Calculate Checks** report:
 
 ![Also a screenshot ](media/DEDCHILDSUP4.JPG)
+
+
+##### Creditor Garnishments
+
+There is a limit on the amount that can be garnished.  The CCPA states that the maximum amount of an employee’s ‘disposable earnings’ that can be garnished to repay a debt is the lesser of:
+•	25% of the employee’s disposable earnings for the week; or
+•	The amount by which the employee’s disposable earnings for the week exceed 30 times the federal minimum hourly wage then in effect.
+
+Note:  There is a table in the book for this depending on if the employee is paid weekly, biweekly, semimonthly or monthly.
+Note:  State Laws may still apply.
+
+Disposable earnings are determined by subtracting all deductions required by law from an employee’s gross earnings (wages, commissions, bonuses, sick pay, and periodic pension payments).  Deductions required by law include withholding for federal, state, or local income tax, social security or Medicare tax, state unemployment or disability tax, and mandated payments for state employee retirement systems (but not amounts designated for direct deposit into an employee’s bank account).  Voluntary deductions, such as health and life insurance premiums, union dues, and retirement plan contributions, are generally not subtracted from earnings to calculate disposable earnings.  In some states, health insurance contributions may be included in the calculation of disposable pay, especially if the contributions are mandated under a child support order.  Tips may or may not be earnings (depends on whether they are given directly to employees vs being added to the bill and paid to the employee later as earnings).
+
+In determining an employee’s disposable earnings, wages already subject to withholding for child support, tax levies, or bankruptcy orders are not considered deductions required by law.  Therefore, they should not be subtracted from gross earnings when determining the maximum amount subject to garnishment.  However, if the child support withholding order, tax levy, or bankruptcy order has priority over the creditor garnishment and constitutes at least 25% of the employee’s disposable wages, no amount can be withheld for the creditor garnishment.
+
+When looking at information, it looks like Creditor Garnishments will be an amount.  
+
+Ex:  Employee Michelle’s Disposable Earnings bi-weekly is $769.23. Her employer in Illinois receives a garnishment order on March 10, 2020 requiring that $1000 total be withheld at 15% per pay period.  
+
+The maximum amount of Michelle’s disposable earnings that can be garnished is determined as follows:
+
+Creditor Deduction Calculation:
+•	$769.23 x 15% = $115.38 (this is the amount calculated for the Creditor Garnishment Deduction prior to looking at the Maximum rules)
+
+Federal Creditor Garnishment Withholding Maximum:  Use the lesser of:
+•	(25% of Disposable Earnings) $769.23 x 25% = $192.31
+•	(The amount by which earnings are greater than 30 times the Federal Minimum Wage) (for bi-weekly 60 times the Federal Minimum Wage) 60 x $7.25= $435.00		$769.23-$435.00 = $334.23
+
+IL Creditor Garnishment Withholding Maximum:  Use the lesser of:
+•	(25% of Disposable Earnings) $769.23 x 25% = $192.31
+•	(The amount by which earnings are greater than 30 times the State Minimum Wage)(for bi-weekly 60 times the State Minimum Wage) 60 x 8.25 = $495.00		$769.23-$495.00 = $274.23
+
+The computer calculates the Withholding Maximums and compares the numbers between state and federal.  The lowest maximum available amount to garnish is the amount available for garnishment.
+
+Typically if you have multiple garnishments with creditor garnishments in your setup as this example you would not mark the box to include previously sequenced garnishment deductions when using the Min Wage Rule Amount.  If you do, you will notice unexpected results.  What you will want to do with this example if you have more garnishments is include the first garnishment in your earnings code and reduce from earnings by that garnishment.  Then in this example, it still would only take the maximum of the two of 115.38, it adds them together and reduces the 2nd garnishment to take only as much as it can to keep the Min Wage Rule Amount you have set.
+
+How would we set up this deduction?
+
+In the **Employee Deduction Maintenance** window:
+
+| Field | Value |
+|--|--|
+| Deduction Type | Garnishment |
+| Method | Percent of Earnings |
+| Garnishment Category | Garnishment |
+| Amount | N/A |
+| Percent | 15 % |
+| Earnings | FEDCREDIT  |
+| Maximum Deduction Codes |  |
+| Federal | FEDCEDIT |
+| State | STATECRED |
+
+![A screenshot again](media/CREDITOR.JPG)
+
+In the **Garnishment Maximum Setup** window:
+
+![one screenshot ](media/CREDITOR1.JPG)
+
+In the  **Earnings Setup** window:
+
+![Another screenshot ](media/CREDITOR2.JPG)
+
+Recap of **Calculate Checks** report:
+
+![Also a screenshot ](media/CREDITOR3.JPG)
+
+If you need to take another garnishment before this Credit garnishment of 115.38 but still have the total of the two are 115.38 so you meet the Min Wage Rule Amount you set in Garnishment Maximum setup.  Create your other deduction, in this example it was a fixed amount of 30.00 I want that out first, then my credit deduction listed above.  In your Earnings Setup code, insert over this deduction under the Reduce from Earnings area.
+
+In this example, I lowered my pay so you can see the minimum kick in
+Federal Creditor Garnishment Withholding Maximum:  Use the lesser of:
+•	(25% of Disposable Earnings) $480.77 x 25% = $120.19
+•	(The amount by which earnings are greater than 30 times the Federal Minimum Wage) (for bi-weekly 60 times the Federal Minimum Wage) 
+60 x $7.25= $435.00		$480.77-$435.00 = $45.77
+
+![Also a screenshot ](media/CREDITOR4.JPG)
+
+
 
 #### Setting up a company-level deduction sequence
 
