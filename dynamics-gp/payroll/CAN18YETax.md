@@ -9,12 +9,12 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 05/17/2021
+ms.date: 12/6/2021
 ---
 
-# Canadian Payroll 2020 Year-end Update & 2021 Tax Update
+# Canadian Payroll 2021 Year-end Update & 2022 Tax Update
 
-This document contains instructions for updating the Canadian Payroll module for Microsoft Dynamics GP and Microsoft Dynamics GP 2016 for 2020 filing requirements. This update also includes Round 1 tax updates for 2021 federal, provincial, and territorial taxes.
+This document contains instructions for updating the Canadian Payroll module for Microsoft Dynamics GP and Microsoft Dynamics GP for 2021 filing requirements. This update also includes Round 1 tax updates for 2022 federal, provincial, and territorial taxes.
 
 These instructions assume that you are already familiar with Microsoft Dynamics GP Canadian Payroll.
 
@@ -38,31 +38,31 @@ This document contains the following chapters:
 
 ### What's changed
 
-The 2020 Year-End Update/2021 Tax Update contains changes in the information that's submitted to the Canada Revenue Agency (CRA) and Ministère du Revenu du Québec.
+The 2021 Year-End Update/2022 Tax Update contains changes in the information that's submitted to the Canada Revenue Agency (CRA) and Ministère du Revenu du Québec.
 
 > [!NOTE]
-> For more information, see the [updated blog of recent changes for Canadian Payroll](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-year-end-update-2019-canadian-payroll).
+> For more information, see the [updated blog of recent changes for Canadian Payroll](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-year-end-update-2021-canadian-payroll).
 
 #### Tax changes
 
-See [Chapter 4: Tax updates](#chapter-4-tax-updates) for a description of the 2021 federal, provincial, and territorial tax changes.
+See [Chapter 4: Tax updates](#chapter-4-tax-updates) for a description of the 2022 federal, provincial, and territorial tax changes.
 
 #### General application changes
 
-The 2020 Year-End Update/2021 Tax Update contains application bug fixes and functionality updates to comply with regulatory changes.
+The 2021 Year-End Update/2022 Tax Update contains application bug fixes and functionality updates to comply with regulatory changes.
 
 #### XML and form changes
 
-The T4A, T4 and RL-1 XML has changed for the 2020 reporting year.  
+The T4A and RL-1 XML has changed for the 2021 reporting year.  
 
-The T4 and T4A forms have not changed for the 2020 reporting year.  
+The T4 form have not changed for the 2021 reporting year.  
 
-- Software Development Number for XML - RQ-20-01-132
-- RL-1 Slip Authorization number -  FS2001172 (enter this in the Payroll T4/R1 Print window)  
+- Software Development Number for XML - RQ-21-01-122
+- RL-1 Slip Authorization number -  PENDING (enter this in the Payroll T4/R1 Print window)  
 
 #### Installation notes
 
-The 2021 Canadian Payroll Tax Update must be installed on the server and on each client workstation where Microsoft Dynamics GP is used. Before installing the update, be sure to complete the following tasks:
+The 2022 Canadian Payroll Tax Update must be installed on the server and on each client workstation where Microsoft Dynamics GP is used. Before installing the update, be sure to complete the following tasks:
 
 All users should exit Microsoft Dynamics GP until the update has been installed on all workstations.
 
@@ -74,11 +74,11 @@ Save backup copies of your Reports.dic, R7131.dic, F7131.dic, Forms.dic, and Dyn
 
 If you have questions about Canadian Payroll year-end closing procedures and your Microsoft Business Solutions Partner isn't available, there are several resources, in addition to this document, to assist in answering your year-end questions.
 
-#### 2020 year-end information
+#### 2021 year-end information
 
-Look at [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
+Look at [Dynamics GP Downloads](https://docs.microsoft.com/en-us/dynamics/s-e/gp/cagptuye2018_285) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
 
-Look for "2020 Canadian Payroll Year End Update for Microsoft Dynamics GP".
+Look for "2021 Canadian Payroll Year End Update for Microsoft Dynamics GP".
 
 #### Microsoft Canadian Payroll support team
 
@@ -92,10 +92,10 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 
 |**Step**|**Description** |
 |----------|--------------|
-| 1.       | Complete all 2020 pay runs. |
-| 2.       | Note: Any batch with a cheque date of 2021 should be processed after the Year End File Reset. For example, if the cheque date of your final pay period for 2020 is January 1, 2021, the 2021 tax tables must be used for that pay run. |
-| 3.       | Complete any necessary 2020 payroll reports.        |
-| 4.       | Install the 2020 Canadian Payroll Year-End Update. See [Installing the update](#installing-the-update).      |
+| 1.       | Complete all 2021 pay runs. |
+| 2.       | Note: Any batch with a cheque date of 2022 should be processed after the Year End File Reset. For example, if the cheque date of your final pay period for 2021 is January 1, 2022, the 2022 tax tables must be used for that pay run. |
+| 3.       | Complete any necessary 2021 payroll reports.        |
+| 4.       | Install the 2021 Canadian Payroll Year-End Update. See [Installing the update](#installing-the-update).      |
 | 5.       | Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application.       |
 | 6.       | Complete the Year End File Reset.                                       |
 | 7.       | Note: To ensure that all tables are available for resetting, make sure that the Year End File Reset window is the only window open in Microsoft Dynamics GP.|
@@ -108,13 +108,13 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 > [!NOTE]
 > By law, you must be able to reproduce original or amended T4, T4A, and RL-1 slips for a predefined (agency assigned) number of years after the original filing. To meet this requirement, be sure to keep backups of all your Canadian Payroll data files, as well as copies of reports, tax forms, and filings. Canadian Payroll will only allow you to re-create a prior year filing if you save backup copies of the prior reporting year data.  
 
-To make it easier to determine CPP and EI maximums between running a payroll in a new year (2021 maximums) and printing T4's from prior years (2020 maximum), two constants are created each with the year maximum in place.
+To make it easier to determine CPP and EI maximums between running a payroll in a new year (2022 maximums) and printing T4's from prior years (2021 maximum), two constants are created each with the year maximum in place.
 
 Example:
-Constant 1 2020 Maximum
-Constant 2 2021 Maximum
+Constant 1 2021 Maximum
+Constant 2 2022 Maximum
 
-To determine when you run a 2021 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window.
+To determine when you run a 2022 payroll what maximum to use, the system looks to the **Federal Basic Personal Amount** in the Tax Credit Control window.
 Tools | Setup | Payroll Canada | Control | Tax Credits.
 As an example for the 2021 year numbers if you are using the "lower" value of $12,421.00 when you run 2021 payroll the 2020 maximum will be in place.
 The system expects the amount of $13,808 for Federal Basic personal Amount in the control and then it will pull the 2021 maximum.
@@ -122,11 +122,11 @@ The system expects the amount of $13,808 for Federal Basic personal Amount in th
 
 ## Chapter 2: Preparation and installation
 
-This portion of the documentation specifies the requirements for installing the 2020 Year-End Update / 2021 Tax Update.
+This portion of the documentation specifies the requirements for installing the 2021 Year-End Update / 2022 Tax Update.
 
 ### Supported versions
 
-The 2020 Year-End Update / 2021 Tax Update supports Microsoft Dynamics GP and Microsoft Dynamics GP 2016. To identify the Microsoft Dynamics GP release you're using, start the application and choose Help \>\> About Microsoft Dynamics GP.
+The 2021 Year-End Update / 2022 Tax Update supports Microsoft Dynamics GP (18.4). To identify the Microsoft Dynamics GP release you're using, start the application and choose Help \>\> About Microsoft Dynamics GP.
 
 To identify the Canadian Payroll release you're using, start Microsoft Dynamics GP, then open the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\>Tools \>\> Setup \>\> Payroll – Canada \>\> Control). You should see the release number in the upper left corner of the window.
 
@@ -167,15 +167,15 @@ The update must be installed on each client workstation where Microsoft Dynamics
 
 1. Download the update from [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378).
 
-    | **Language** | **Microsoft Dynamics GP**                  | **Microsoft Dynamics GP 2016**            |
-    |--------------|--------------------------------------------|-------------------------------------------|
-    | English      | MicrosoftDynamicsGP18- KB4569478-ENU.msp   | MicrosoftDynamicsGP16- KB4569480-ENU.msp  |
-    | French       | MicrosoftDynamicsGP18- KB4569479-FRCA.msp  | MicrosoftDynamicsGP16- KB4569481-FRCA.msp |
+    | **Language** | **Microsoft Dynamics GP**                  | 
+    |--------------|--------------------------------------------|
+    | English      | MicrosoftDynamicsGP18- KB4569478-ENU.msp   | 
+    | French       | MicrosoftDynamicsGP18- KB4569479-FRCA.msp  | 
 
     Save the .msp file to a folder on the local disk drive of the server  workstation that runs Microsoft Dynamics GP.
 
     > [!NOTE]
-    > The year-end update file also includes all prior Microsoft Dynamics GP updates. See also [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_patchreleases_377). This update is inclusive of the Fall / October 2020 release for Microsoft Dynamics GP.
+    > The year-end update file also includes all prior Microsoft Dynamics GP updates. See also [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_patchreleases_377). This update is inclusive of the Fall / October 2021 release for Microsoft Dynamics GP.
 
 2. Double-click the file that you just downloaded. Progress windows appear as space requirements are verified and files are installed.
 
@@ -225,9 +225,9 @@ The update must be installed on each client workstation where Microsoft Dynamics
     > [!Note]
     > To install the update on an operating system with User Account Control (UAC) activated, see [Installing with UAC activated](#installing-with-uac-activated).
 
-To verify that you've installed the latest year-end update and tax update, check the **Last Year-End Update** field in the **Payroll Reset Files – Canada** window (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll – Canada \>\> Year End File Reset). It should be 12/14/2019 or later.
+To verify that you've installed the latest year-end update and tax update, check the **Last Year-End Update** field in the **Payroll Reset Files – Canada** window (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll – Canada \>\> Year End File Reset). It should be 12/17/2021 or later.
 
-For the tax update, check the Last Tax Update field in the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll – Canada \>\> Control). It should be 12/14/2019 or later.
+For the tax update, check the Last Tax Update field in the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll – Canada \>\> Control). It should be 12/17/2021 or later.
 
 ### Installing with UAC activated
 
