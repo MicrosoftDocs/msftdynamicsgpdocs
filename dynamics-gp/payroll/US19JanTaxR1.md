@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/2/2021
+ms.date: 12/6/2021
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -26,12 +26,17 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 ## Changes in January Round 1 update (Target Release 12/17/2021)
 
 - Federal changes and FICA Social Security Limit $147,000
+- California
+- Georgia
 - Iowa
 - Maine
 - Nebraska
+- New Mexica
+- New York
 - Oklahoma
 - South Carolina
-- Wisconsin
+- Yonkers
+
 
 
 ### 2022 Federal tax changes
@@ -154,23 +159,89 @@ Withholding rates for taxpayers filing as *HOHHR*
 
 The following tax changes are included in this update:
 
+#### Withholding changes for California
+
+For Filing Status of HOH and MAR2:
+•	Personal Exemption is $141.90 from $136.40
+•	Standard Deduction is $9,606  from $9,202
+•	Low Income Limit is $31,831 from $30,534
+
+For Filing Status of MAR1 and SINGLE:
+•	Personal Exemption is $141.90 from $136.40
+•	Standard Deduction is $4,803 from $4,601
+•	Low Income Limit is $15,916 from $15,267
+
+
+Withholding rates for taxpayers filing as *HOH*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 18,663           | 0              | 1.1%         | 0                  |
+| 18,663      | 44,217           | 205.29         | 2.2%         | 18,663             |
+| 44,217      | 56,999           | 767.48         | 4.4%         | 44,217             |
+| 56,999      | 70,542           | 1,329.89       | 6.6%         | 56,999             |
+| 70,542      | 83,324           | 2,223.73       | 8.8%         | 70,542             |
+| 83,324      | 425,251          | 3,348.55       | 10.23%       | 83,324             |
+| 425,251     | 510,303          | 38,327.68      | 11.33%       | 425,251            | 
+| 510,303     | 850,503          | 47,964.07      | 12.43%       | 510,303            |
+| 850,503     | 1,000,000        | 90,250.93      | 13.53%       | 850,503            |
+| 1,000,000   | And Over         | 110,477.87     | 14.63%       | 1,000,000          |
+
+Withholding rates for taxpayers filing as *MAR1* and *MAR2*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 18,650           | 0              | 1.1%         | 0                  |
+| 18,650      | 44,214           | 205.15         | 2.2%         | 18,650             |
+| 44,214      | 69,784           | 767.56         | 4.4%         | 44,214             |
+| 69,784      | 96,870           | 1,892.64       | 6.6%         | 69,784             |
+| 96,870      | 122,428          | 3,680.32       | 8.8%         | 96,870             |
+| 122,428     | 625,372          | 5,929.42       | 10.23%       | 122,428            |
+| 625,372     | 750,442          | 57,380.59      | 11.33%       | 625,372            | 
+| 750,442     | 1,000,000        | 71,551.02      | 12.43%       | 750,442            |
+| 1,000,000   | 1,250,738        | 102,571.08     | 13.53%       | 1,000,000          |
+| 1,250,738   | And Over         | 136,495.93     | 14.63%       | 1,250,738         |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     | 
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 9,325            | 0              | 1.1%         | 0                  |
+| 9,325       | 22,107           | 102.58         | 2.2%         | 9,325              |
+| 22,107      | 34,892           | 383.78         | 4.4%         | 22,107             |
+| 34,892      | 48,435           | 946.32         | 6.6%         | 34,892             |
+| 48,435      | 61,214           | 1,840.16       | 8.8%         | 48,435             |
+| 61,214      | 312,686          | 2,964.71       | 10.23%       | 61,214             |
+| 312,686     | 375,221          | 28,690.30      | 11.33%       | 312,686            |
+| 375,221     | 625,369          | 35,775.52      | 12.43%       | 375,221            |
+| 625,369     | 1,000,000        | 66,868.92      | 13.53%       | 625,369            |
+| 1,000,000   | And Over         | 117,556.49     | 14.63%       | 1,000,000          |
+
+
+#### Withholding changes for Georgia
+
+The Standard Deduction Amount for Filing Status:
+HOH and SINGLE     is \$5,400
+MFJ1I              is \$7,100
+MFJ2I and MFS      is \$3,550
+
 
 #### Withholding changes for Iowa
 
-The Standard Deduction Amount for Filing Status EXP1 is \$2,130, and Filing Status EXP2 is \$5,240
+The Standard Deduction Amount for Filing Status EXP1 is \$2,210, and Filing Status EXP2 is \$5,450
 Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 1,676            | 0              | 0.33%        | 0                  |
-| 1,676       | 3,352            | 5.53           | 0.67%        | 1,676              |
-| 3,352       | 6,704            | 16.76          | 2.25%        | 3,352              |
-| 6,704       | 15,084           | 92.18          | 4.14%        | 6,704              |
-| 15,084      | 25,140           | 439.11         | 5.63%        | 15,084             |
-| 25,140      | 33,520           | 1,005.26       | 5.96%        | 25,140             |
-| 33,520      | 50,280           | 1,504.71       | 6.25%        | 33,520             |
-| 50,280      | 75,420           | 2,552.21       | 7.44%        | 50,280             |
-| 75,420      |                  | 4,422.63       | 8.53%        | 75,420             |
+| 0           | 1,743            | 0              | 0.33%        | 0                  |
+| 1,743       | 3,486            | 5.75           | 0.67%        | 1,743              |
+| 3,486       | 6,972            | 17.43          | 2.25%        | 3,486              |
+| 6,972       | 15,687           | 95.87          | 4.14%        | 6,972              |
+| 15,687      | 26,145           | 456.67         | 5.63%        | 15,687             |
+| 26,145      | 34,860           | 1,045.46       | 5.96%        | 26,145             |
+| 34,860      | 52,290           | 1,564.87       | 6.25%        | 34,860             |
+| 52,290      | 78,435           | 2,654.25       | 7.44%        | 52,290             |
+| 78,435      |                  | 4,599.44       | 8.53%        | 78,435             |
 
 
 #### Withholding changes for Maine
