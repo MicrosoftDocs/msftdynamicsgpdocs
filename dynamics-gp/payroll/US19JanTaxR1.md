@@ -161,15 +161,17 @@ The following tax changes are included in this update:
 
 #### Withholding changes for California
 
-For Filing Status of HOH and MAR2:
-•	Personal Exemption is $141.90 from $136.40
-•	Standard Deduction is $9,606  from $9,202
-•	Low Income Limit is $31,831 from $30,534
+For Filing Status of HOH and MAR2:  
+
+- Personal Exemption is $141.90 from $136.40
+- Standard Deduction is $9,606  from $9,202
+- Low Income Limit is $31,831 from $30,534
 
 For Filing Status of MAR1 and SINGLE:
-•	Personal Exemption is $141.90 from $136.40
-•	Standard Deduction is $4,803 from $4,601
-•	Low Income Limit is $15,916 from $15,267
+
+- Personal Exemption is $141.90 from $136.40
+- Standard Deduction is $4,803 from $4,601
+- Low Income Limit is $15,916 from $15,267
 
 
 Withholding rates for taxpayers filing as *HOH*
