@@ -244,21 +244,23 @@ Review the Template for any issues:
 
 * If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
 
-You can run a fiddler trace and that too will tell us if basic auth is not enabled or a DNS issue may appear, it may also tell us other problems in your environement.
- 
-[Download Classic Fiddler from the web](https://link.edgepilot.com/s/f99e35b8/m5C9Pdgkk0KDdSC2qiW_Kg?u=http://www.telerik.com/download/fiddler)
+You can run a Fiddler trace, and that will tell us if basic auth is not enabled or a DNS issue may appear, for example. It can also inform us about other problems in your environment.
 
-1. Open Fiddler, In Tools->Fiddler Options->HTTPS, check “Decrypt HTTPS traffic”.
-2. Click “Yes” on the prompt for trust Fiddler Root Certificate.
-3. Click “Yes” to install the certificate.
-4. Click “Yes” to confirm.
-5. Click “OK” and “OK” to back.
-6. Reproduce the issue.
-7. Stop Fiddler Trace: File->Capture Traffic F12, Save trace: File->Save>All Sessions. Save the trace out as .saz file.
+#### To run Fiddler
 
-[More detail](https://link.edgepilot.com/s/763b2cb2/Ynops4n_gESVopu0h5_JRQ?u=https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/)
+1. [Download Classic Fiddler](https://www.telerik.com/download/fiddler)  
+2. Open Fiddler.  
+3. In Tools->Fiddler Options->HTTPS, choose the **Decrypt HTTPS traffic** field.  
+4. Choose **Yes** on the prompt for trust Fiddler Root Certificate.  
+5. Choose **Yes** to install the certificate.  
+6. Choose **Yes** to confirm.  
+7. Choose **OK**, and then choose **OK** to go back.  
+8. Reproduce the issue.  
+9. Stop the Fiddler trace:   
+      1. File->Capture Traffic F12, Save trace: File->Save>All Sessions.   
+      2. Save the trace out as .saz file.  
 
-
+For more information, see [this blog post](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).  
 
 ### Send Documents in email check box is grayed out when trying to send a Remittance
 
