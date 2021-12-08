@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/22/2021
+ms.date: 12/7/2021
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -4673,6 +4673,8 @@ In the file you upload to your bank, each line is a separate record. The bank’
 
 Not all bank formats include all record types. Some bank formats include both transmission and account headers and footers, which need to be defined separately. 
 
+NOTE: Safe Pay will not pick up a payroll check if the check number is the same as a Voucher number that has been processed through Payables Management as an EFT Payment
+
 Safe Pay handles the following five record types:
 
 Header transmission 
@@ -4691,6 +4693,8 @@ Footer transmission
 The footer transmission record type contains information concerning the total number of records for all accounts in a file and may also include the total dollar amount. Usually there is a field or character in this line that indicates it is the final line in the file.
 
 *Different banks use different names to refer to the record type of each line, (for example, “footer transmission” may be called “trailer record”). To find out which record type to use, compare the preceding record type descriptions to the specification provided by your bank.*
+
+NOTE: Safe Pay will not pick up a payroll check if the check number is the same as a Voucher number that has been processed through Payables Management as an EFT Payment
 
 ### Fields per line
 When creating a bank format you need to know the number of fields per record line. Determining how many fields are on each line depends on the file format, as follows:
