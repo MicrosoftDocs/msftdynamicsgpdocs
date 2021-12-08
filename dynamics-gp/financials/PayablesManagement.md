@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/7/2021
+ms.date: 12/8/2021
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -4672,8 +4672,6 @@ This information explains how to set up Safe Pay to confirm with your bank the a
 In the file you upload to your bank, each line is a separate record. The bank’s file format specification indicates which type of record (transmission header, transmission footer, account header, account footer, or account detail) each line is.
 
 Not all bank formats include all record types. Some bank formats include both transmission and account headers and footers, which need to be defined separately. 
-
-NOTE: Safe Pay will not pick up a payroll check if the check number is the same as a Voucher number that has been processed through Payables Management as an EFT Payment
 
 Safe Pay handles the following five record types:
 
