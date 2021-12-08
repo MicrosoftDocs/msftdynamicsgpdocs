@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/18/2021
+ms.date: 12/7/2021
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -242,6 +242,25 @@ Review the Template for any issues:
 
 * Another common issue with e-mail is when users get a new workstation. They may have to update the Registry when using MAPI.  They can do this by following the steps in the MAPI Specific issues above.
 
+* If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
+
+You can run a Fiddler trace, and that will tell us if basic auth is not enabled or a DNS issue may appear, for example. It can also inform us about other problems in your environment.
+
+#### To run Fiddler
+
+1. [Download Classic Fiddler](https://www.telerik.com/download/fiddler)  
+2. Open Fiddler.  
+3. In Tools->Fiddler Options->HTTPS, choose the **Decrypt HTTPS traffic** field.  
+4. Choose **Yes** on the prompt for trust Fiddler Root Certificate.  
+5. Choose **Yes** to install the certificate.  
+6. Choose **Yes** to confirm.  
+7. Choose **OK**, and then choose **OK** to go back.  
+8. Reproduce the issue.  
+9. Stop the Fiddler trace:   
+      1. File->Capture Traffic F12, Save trace: File->Save>All Sessions.   
+      2. Save the trace out as .saz file.  
+
+For more information, see [this blog post](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).  
 
 ### Send Documents in email check box is grayed out when trying to send a Remittance
 
@@ -423,6 +442,7 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 
 > When Basic Authentication is deprecated you will need to be on a version of Dynamics GP where you can use MFA (18.3 or later).
 > You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication.
+> MFA is only supported with Exchange.
 
 ## Emailing Setup Guide by Module
 
