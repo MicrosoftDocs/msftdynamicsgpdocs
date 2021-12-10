@@ -76,7 +76,7 @@ If you have questions about Canadian Payroll year-end closing procedures and you
 
 #### 2021 year-end information
 
-Look at [Dynamics GP Downloads](https://docs.microsoft.com/en-us/dynamics/s-e/gp/cagptuye2018_285) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
+Look at [Dynamics GP Downloads](/dynamics/s-e/gp/cagptuye2018_285) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
 
 Look for "2021 Canadian Payroll Year End Update for Microsoft Dynamics GP".
 
