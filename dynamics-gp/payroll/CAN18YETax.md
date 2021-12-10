@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/6/2021
+ms.date: 12/9/2021
 ---
 
 # Canadian Payroll 2021 Year-end Update & 2022 Tax Update
@@ -58,7 +58,7 @@ The T4A and RL-1 XML has changed for the 2021 reporting year.
 The T4 form have not changed for the 2021 reporting year.  
 
 - Software Development Number for XML - RQ-21-01-122
-- RL-1 Slip Authorization number -  PENDING (enter this in the Payroll T4/R1 Print window)  
+- RL-1 Slip Authorization number -  FS2101178 (enter this in the Payroll T4/R1 Print window)  
 
 #### Installation notes
 
