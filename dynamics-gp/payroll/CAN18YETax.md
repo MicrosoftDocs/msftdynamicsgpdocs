@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/6/2021
+ms.date: 12/9/2021
 ---
 
 # Canadian Payroll 2021 Year-end Update & 2022 Tax Update
@@ -58,7 +58,7 @@ The T4A and RL-1 XML has changed for the 2021 reporting year.
 The T4 form have not changed for the 2021 reporting year.  
 
 - Software Development Number for XML - RQ-21-01-122
-- RL-1 Slip Authorization number -  PENDING (enter this in the Payroll T4/R1 Print window)  
+- RL-1 Slip Authorization number -  FS2101178 (enter this in the Payroll T4/R1 Print window)  
 
 #### Installation notes
 
@@ -76,7 +76,7 @@ If you have questions about Canadian Payroll year-end closing procedures and you
 
 #### 2021 year-end information
 
-Look at [Dynamics GP Downloads](https://docs.microsoft.com/en-us/dynamics/s-e/gp/cagptuye2018_285) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
+Look at [Dynamics GP Downloads](/dynamics/s-e/gp/cagptuye2018_285) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
 
 Look for "2021 Canadian Payroll Year End Update for Microsoft Dynamics GP".
 
