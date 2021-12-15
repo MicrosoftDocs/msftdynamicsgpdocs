@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/13/2021
+ms.date: 12/14/2021
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -260,7 +260,7 @@ Withholding rates for taxpayers filing as *SINGLE*, Tax table type
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 |  0          | 23,000           | 0              | 5.8%         | 0                  |
-| 22,000      | 54,450           | 1,334          | 6.75%        | 23,000             |
+| 23,000      | 54,450           | 1,334          | 6.75%        | 23,000             |
 | 54,450      | And over         | 3,457          | 7.15%        | 54,450             |
 
 Special table type
@@ -471,7 +471,7 @@ Withholding rates for taxpayers filing as *SINGLE*:
 | 265,400     | 1,077,550        | 19,085.00      | .0735        | 265,400            |
 | 1,077,550   | 5,000,000        | 0              | .1045        | 0                  |
 | 5,000,000   | 25,000,000       | 0              | .1110        | 0                  |
-| 1,127,550   | And over         | 0              | .1170        | 0                  |
+| 25,000,000  | And over         | 0              | .1170        | 0                  |
 
 #### Withholding changes for Oklahoma
 
@@ -558,7 +558,7 @@ Low Income Type rates for MS3 and S3 Filing Status:
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 7,500            | 219            | 4.75%        | 0                  |
-| 7,50 0      | 18,900           | 575            | 6.75%        | 7,500              |
+| 7,500       | 18,900           | 575            | 6.75%        | 7,500              |
 | 18,900      | 50,000           | 1,345          | 8.75%        | 18,900             |
 
 Low Income Type rates for S2 Filing Status:
@@ -571,15 +571,15 @@ Low Income Type rates for S2 Filing Status:
 
 #### Withholding changes for South Carolina
 
-The Personal Exemption is $2,670 for Filing Status ONE.
-The Standard Deduction Maximum is $4,200 for ONE Filing Status.
+The Personal Exemption is $2,750 for Filing Status ONE.
+The Standard Deduction Maximum is $4,580 for ONE Filing Status.
 
 Tax Type rates for all Filing Status:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 2,900            | 0              | 0.2%         | 0                  |
-| 2,900       | 5,960b           | -83.44         | 3.0%         | 0                  |
+| 0           | 2,980            | 0              | 0.2%         | 0                  |
+| 2,980       | 5,960            | -83.44         | 3.0%         | 0                  |
 | 5,960       | 8,940            | -143.04        | 4.0%         | 0                  |
 | 8,940       | 11,920           | -232.44        | 5.0%         | 0                  |
 | 11,920      | 14,900           | -351.64        | 6.0%         | 0                  |
@@ -650,7 +650,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *12/17/2021*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *12/16/2021*.
 
 ## What's next
 
