@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/9/2021
+ms.date: 12/14/2021
 ---
 
 # Canadian Payroll 2021 Year-end Update & 2022 Tax Update
@@ -186,8 +186,7 @@ The update must be installed on each client workstation where Microsoft Dynamics
 5. Start Microsoft Dynamics GP Utilities.
 
     | Microsoft Dynamics GP | Start \>\> All Programs \>\> Microsoft Dynamics \>\> GP \>\> GP Utilities |
-    |----------------------------|--------------------------------------------------------------------------------|
-    | Microsoft Dynamics GP 2016 | Start \>\> All Programs \>\> Microsoft Dynamics \>\> GP 2016 \>\> GP Utilities |
+
 
 6. In the **Welcome to Microsoft Dynamics GP Utilities** window, verify your server name, enter the system administrator user ID and password, and click OK.
 
@@ -225,9 +224,9 @@ The update must be installed on each client workstation where Microsoft Dynamics
     > [!Note]
     > To install the update on an operating system with User Account Control (UAC) activated, see [Installing with UAC activated](#installing-with-uac-activated).
 
-To verify that you've installed the latest year-end update and tax update, check the **Last Year-End Update** field in the **Payroll Reset Files – Canada** window (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll – Canada \>\> Year End File Reset). It should be 12/17/2021 or later.
+To verify that you've installed the latest year-end update and tax update, check the **Last Year-End Update** field in the **Payroll Reset Files – Canada** window (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll – Canada \>\> Year End File Reset). It should be 12/20/2021 or later.
 
-For the tax update, check the Last Tax Update field in the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll – Canada \>\> Control). It should be 12/17/2021 or later.
+For the tax update, check the Last Tax Update field in the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll – Canada \>\> Control). It should be 12/20/2021 or later.
 
 ### Installing with UAC activated
 
@@ -237,17 +236,17 @@ User Account Control (UAC) is an enhanced security feature in Windows. UAC is ac
 
 - Start the Command Prompt (located in the Accessories group) as a user that has administrative privileges on the local computer. (To do this,right-click on the Command Prompt shortcut and select Run as administrator.) Set the current directory to the location where you copied the .msp file.
 
-Example, for Microsoft Dynamics GP 2016 (English), enter the following command.
+Example, for Microsoft Dynamics GP 2018 (English), enter the following command.
 
 ```cmd
-Msiexec /p MicrosoftDynamicsGP16-KB4569480-ENU.msp /l\*v C:\\MSPErrorlog.txt
+Msiexec /p MicrosoftDynamicsGP18-KB4569480-ENU.msp /l\*v C:\\MSPErrorlog.txt
 ```
 
 If you want the user to install updates and service packs without having administrative privileges on the local computer, you can change permissions for the folder where Microsoft Dynamics GP is installed. Be aware that doing this makes your computer less secure.
 
 ## Chapter 3: Electronic filing in XML format
 
-Canadian Payroll can generate electronic files in the XML format. You are responsible for submitting the file to the CRA or Revenue Quebec using one of the supported media types (diskettes, CD-ROMs, or DVD-ROMs) or over the Internet (if you have under 5 Mb of data to file).
+Canadian Payroll can generate electronic files in the XML format. You are responsible for submitting the file to the CRA or Revenue Quebec.
 
 You don't need to have any special knowledge of XML to generate an XML electronic file using Canadian Payroll.
 
@@ -272,8 +271,7 @@ By using the XML format, the CRA is able to validate the file as soon as you sub
 
 ### Filing the RL-1 in XML format
 
-Before you use the Internet to submit RL-1 records, you need an RL-1 Authorization number. The RL-1 Authorization number and the Software Developer Number can be found with the year-end update at [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378).
-
+Before you use the Internet to submit RL-1 records, you need an RL-1 Authorization number and form number (found above). 
 Both numbers change every year.
 
 #### Data validation features
@@ -305,57 +303,57 @@ This chapter lists changes to federal, provincial, and territorial tax rates for
 
 #### CPP
 
-Contribution rates for both employers and employees for 2021 is 5.45%. The following changes are in effect for CPP for 2021:
+Contribution rates for both employers and employees for 2022 is 5.70%. The following changes are in effect for CPP for 2022:
 
-- The maximum pensionable earnings amount will be updated to \$61,600, from \$58,700.
+- The maximum pensionable earnings amount will be updated to \$64,900, from \$61,600.
 
 - The basic exemption remains unchanged at \$3,500.
 
-- The maximum contribution amount for the year increases to \$3,166.45, from \$2,898.00.
+- The maximum contribution amount for the year increases to \$3,499.80, from \$3,166.45.
 
 #### EI for non-Quebec employees
 
-- The EI Maximum Annual Insurable Earnings amount increases to \$56,300, from \$54,200.
+- The EI Maximum Annual Insurable Earnings amount increases to \$60,300, from \$56,300.
 
-- The EI premium amount will be 1.58%. The EI maximum annual premium amount will be \$889.54 from \$856.36.
+- The EI premium amount remains at 1.58%. The EI maximum annual premium amount will be \$952.74 from \$889.54
 
 - The EI Employer Premium Rate amount will change to 2.212%. The employer EI premium is set using the Employer EI Factor field in the Payroll Employer Number Setup – Canada window (Tools \>\> Setup \>\> Payroll-Canada \>\> Employer). This factor must be set to 1.4 to meet the official EI Employer Premium.
 
 #### EI for Quebec employees
 
-- The EI maximum annual insurable earnings amount increases to \$56,300, from \$54,200.
+- The EI maximum annual insurable earnings amount increases to \$60,300 from \$56,300.
 
-- The EI (Quebec) Premium Rate amount decreases to 1.18%, from 1.20%.
+- The EI (Quebec) Premium Rate amount increases to 1.20%, from 1.18%.
 
-- The maximum annual premium amount is \664.34, from \$650.40.
+- The maximum annual premium amount is \$723.60, from \$664.34.
 
 
 > [!NOTE]
-> To make it easier to determine CPP and EI maximums between running a payroll in a new year (2021 maximums) and printing T4's from prior years (2020 maximum), two constants are created each with the year maximum in place.
+> To make it easier to determine CPP and EI maximums between running a payroll in a new year (2022 maximums) and printing T4's from prior years (2021 maximum), two constants are created each with the year maximum in place.
 >
 > Example:
-> Constant 1 2020 Maximum
+> Constant 1 2022 Maximum
 > Constant 2 2021 Maximum
 
 
-To determine when you run a 2021 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
-As an example for the 2021 year numbers if you are using the "lower" value of $12,421.00 when you run 2021 payroll the 2020 maximum will be in place.
-The system expects the amount of $13,808 for Federal Basic personal Amount in the control and then it will pull the 2021 maximum.
+To determine when you run a 2022 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
+The system expects the amount of $14,398 for Federal Basic personal Amount in the control and then it will pull the 2022 maximum.
 
 If you notice when you run payroll that the CPP is off compared to PDOC and is not calculating the correct amount based on yearly rate.  Verify the Payroll Control Frequency window (Tools \>\> Setup \>\> Payroll-Canada \>\> Control click Frequency button)and make sure the pay periods are setup for the per year option.  For example in year 2020 you may have set it to 26 pay periods, but this did not get changed and it should be 26/27 pay periods for year 2021 this will cause CPP to calculate incorrectly until you update it for the new year.
+
 #### QPIP
 
-- The QPIP Maximum Annual Insurable Earnings amount increases to \$83,500, from \$78,500.
+- The QPIP Maximum Annual Insurable Earnings amount increases to \$88,000, from \$83,500.
 
-- The Premium Rate amount is 0.494%.
+- The Premium Rate amount remains at 0.494%.
 
-- The Max Premium is \$412.49 from \$387.79.
+- The Max Premium is \$434.72 from \$412.49.
 
-- The Employer Premium Rate is 0.692%. The maximum employer amount will change to \$577.82 from \$543.22.
+- The Employer Premium Rate remains at 0.692%. The maximum employer amount will change to \$608.96 from \$577.82.
 
 ### Federal tax rates and income thresholds
 
-Effective January 1, 2021 the federal tax rate is unchanged. The federal index factor is 1.010. The income thresholds are revised as follows.
+Effective January 1, 2022 the federal tax rate is unchanged. The federal index factor is 1.010. The income thresholds are revised as follows.
 
 ![income thresholds](media/FED2021.JPG)
 
@@ -363,19 +361,19 @@ Effective January 1, 2021 the federal tax rate is unchanged. The federal index f
 
 Federal personal amounts have been increased by fixed amounts as shown in the following table.
 
-The Basic Personal amount is updated to \$13,808 (formerly \$13,229).
+The Basic Personal amount is updated to \$14,398 (formerly \$13,808.
 
-The Spouse Common Law Partner amount increases by the index factor to \$13,808 (formerly \$13,229), if the original amount was not zero.
+The Spouse Common Law Partner amount increases by the index factor to \$14,398  (formerly \$13,808), if the original amount was not zero.
 
-The Eligible Dependent amount increases by the index factor to \$13,808 (formerly \$13,229), if the original amount was not zero.
+The Eligible Dependent amount increases by the index factor to \$14,398 (formerly \$13,808), if the original amount was not zero.
 
 Canada Employment Credit
 
-The Canada Employment credit has been increased to \$1,257 at the lowest rate of 15.0%. The employment credit has been updated so that the Canada employment credit (factor K4) is the lesser of:
+The Canada Employment credit has been increased to \$1,287 at the lowest rate of 15.0%. The employment credit has been updated so that the Canada employment credit (factor K4) is the lesser of:
 
 - 0.15 X A; or
 
-- 0.15 X \$1,257
+- 0.15 X \$1,287
 
 ### Provincial and territorial tax changes
 
