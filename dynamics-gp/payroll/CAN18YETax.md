@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/15/2021
+ms.date: 12/20/2021
 ---
 
 # Canadian Payroll 2021 Year-end Update & 2022 Tax Update
@@ -99,7 +99,7 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 | 5.       | Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application.       |
 | 6.       | Complete the Year End File Reset.                                       |
 | 7.       | Note: To ensure that all tables are available for resetting, make sure that the Year End File Reset window is the only window open in Microsoft Dynamics GP.|
-| 8.       | Make a backup of your data titled "Post 2020 Year-End Update."\*|
+| 8.       | Make a backup of your data titled "Post 2021 Year-End Update."\*|
 | 9.       | Note: The following steps can be done any time after the Year End File Reset has been completed.|
 | 10.      | Create T4, T4A, and RL-1 statements, and print the T4, T4A, and RL-1 reports.  |
 | 11.      | Edit the T4, T4A, and RL-1 records, as necessary. You can print an edit list from the Payroll Routines - Canada window. |
@@ -116,8 +116,7 @@ Constant 2 2022 Maximum
 
 To determine when you run a 2022 payroll what maximum to use, the system looks to the **Federal Basic Personal Amount** in the Tax Credit Control window.
 Tools | Setup | Payroll Canada | Control | Tax Credits.
-As an example for the 2021 year numbers if you are using the "lower" value of $12,421.00 when you run 2021 payroll the 2020 maximum will be in place.
-The system expects the amount of $13,808 for Federal Basic personal Amount in the control and then it will pull the 2021 maximum.
+The system expects the amount of $14,398 for Federal Basic personal Amount in the control and then it will pull the 2022 maximum.
 
 
 ## Chapter 2: Preparation and installation
@@ -169,8 +168,8 @@ The update must be installed on each client workstation where Microsoft Dynamics
 
     | **Language** | **Microsoft Dynamics GP**                  | 
     |--------------|--------------------------------------------|
-    | English      | MicrosoftDynamicsGP18- KB4569478-ENU.msp   | 
-    | French       | MicrosoftDynamicsGP18- KB4569479-FRCA.msp  | 
+    | English      | MicrosoftDynamicsGP18- KB4576803-ENU.msp   | 
+    | French       | MicrosoftDynamicsGP18- KB4576804-FRCA.msp  | 
 
     Save the .msp file to a folder on the local disk drive of the server  workstation that runs Microsoft Dynamics GP.
 
@@ -297,7 +296,7 @@ You use the **Payroll R1 Edit** window to make changes to RL records. You use th
 
 ## Chapter 4: Tax updates
 
-This chapter lists changes to federal, provincial, and territorial tax rates for 2021. For detailed information about taxes, refer to the Canada Revenue Agency Web site at [www.cra-arc.gc.ca](https://www.cra-arc.gc.ca/) and Revenue Quebec's Web site at [www.revenu.gouv.qc.ca.](https://www.revenu.gouv.qc.ca/)
+This chapter lists changes to federal, provincial, and territorial tax rates for 2022. For detailed information about taxes, refer to the Canada Revenue Agency Web site at [www.cra-arc.gc.ca](https://www.cra-arc.gc.ca/) and Revenue Quebec's Web site at [www.revenu.gouv.qc.ca.](https://www.revenu.gouv.qc.ca/)
 
 ### Pension Plan, Employment Insurance, and Parental Insurance changes
 
@@ -341,6 +340,29 @@ The system expects the amount of $14,398 for Federal Basic personal Amount in th
 
 If you notice when you run payroll that the CPP is off compared to PDOC and is not calculating the correct amount based on yearly rate.  Verify the Payroll Control Frequency window (Tools \>\> Setup \>\> Payroll-Canada \>\> Control click Frequency button)and make sure the pay periods are setup for the per year option.  For example in year 2020 you may have set it to 26 pay periods, but this did not get changed and it should be 26/27 pay periods for year 2021 this will cause CPP to calculate incorrectly until you update it for the new year.
 
+[The CRA accepts different tax calculation methods, and these are outlined on their website](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/t4127-payroll-deductions-formulas-computer-programs.html)
+
+You really cannot compare Microsoft Dynamics GP to the online calculator as we do a different calculation.
+Revenue Canada states this is just a guide/estimate, you cannot compare what Microsoft Dynamics GP does to the online calculator.
+
+Dynamics GP uses the method for ‘Cumulative Averaging’ tax calculation method, so it is a complex calculation. Click on the link above, and then click on the link to find the pdf. The method used by GP is similar to OPTION 2 – TAX FORMULA BASED ON CUMULATIVE AVERAGING in Chapter 6. (Please review the information in their documentation to see how it calculates.)
+
+The CRA online calculator uses a ‘simple tax’ method, so you will see differences between the tax estimates versus the ‘Cumulative Averaging’ method used by GP. This is expected and normal behavior for Dynamics GP since Dynamics GP uses a complex tax calculation method.
+
+The Cumulative Averaging convention is quite complex and takes several factors into account that the simple tax method does not. The Cumulative Averaging method takes into account the prior pay period history, the date used, a projected income and how many pay periods have occurred, etc…. So if two employees are getting paid the same rate and same number of hours, their tax calculations would be different if one employee is a new hire, and the other employee is not and has pay history. Refer to the information in the CRA’s handbook. The calculations are in the GP code, so I don’t have a way to see exactly what it did for you, so I would encourage you to review the Cumulative Averaging convention method in the CRA’s handbook so you can get a general idea of what it does.
+
+The CRA defines a ‘range’ of taxes that is acceptable. We have verified that the tax calculations done by Dynamics GP are within the acceptable ranges defined by the CRA.
+
+Taxes are an ‘estimate’, as employees typically overpay or underpay, and have to file a tax return to get to the exact amount due. But the tax calculations done by Dynamics GP reside in the code, and will not be changed since they have met the acceptable ranges as published by the CRA. We have many customers using the Canadian Payroll product and this is not a concern that comes up across a large base of our payroll customers.
+
+The explanation of the Cumulative Averaging convention is the best resource.
+
+[The above information is published in this article](https://support.microsoft.com/en-us/help/2773319/income-tax-calculations-or-discrepancies-with-the-cra-in-canadian-payr)
+ 
+Really only the 1st payroll of the year will tie with the calculator as we use the average method
+See our notation in this blog below
+
+
 #### QPIP
 
 - The QPIP Maximum Annual Insurable Earnings amount increases to \$88,000, from \$83,500.
@@ -353,9 +375,9 @@ If you notice when you run payroll that the CPP is off compared to PDOC and is n
 
 ### Federal tax rates and income thresholds
 
-Effective January 1, 2022 the federal tax rate is unchanged. The federal index factor is 1.010. The income thresholds are revised as follows.
+Effective January 1, 2022 the federal tax rate noted below. The federal index factor is 1.024. The income thresholds are revised as follows.
 
-![income thresholds](media/FED2021.JPG)
+![income thresholds](media/FED2022.JPG)
 
 ### Federal personal amounts
 
