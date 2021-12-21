@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/16/2021
+ms.date: 12/21/2021
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -22,7 +22,7 @@ The first tax update for 2022 replaces all previous tax updates. It includes sta
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
-## Changes in January Round 1 update (Target Release 12/22/2021)
+## Changes in January Round 1 update (Released 12/21/2021)
 
 - FICA Social Security Limit $147,000
 - California
