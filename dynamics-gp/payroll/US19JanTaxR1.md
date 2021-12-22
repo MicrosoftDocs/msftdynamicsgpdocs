@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/20/2021
+ms.date: 12/21/2021
 ---
 # U.S. 2022 Payroll Tax Update
 
