@@ -46,7 +46,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 The maximum taxable earnings for Social Security increase in 2022 to \$147,000 from \$142,800.  
 
 > [!NOTE]
-> As of December 16, 2021, Federal tax tables for the 2022 year are still in DRAFT form. Round 1 tax update will only change Social Security at this time until the [15-T](https://www.irs.gov/forms-pubs/about-publication-15-t) (formerly called the Circular E) is published in final form. 2021 Federal Tax Tables still apply till published.
+> As of December 20, 2021, Federal tax tables for the 2022 year are still in DRAFT form. Round 1 tax update will only change Social Security at this time until the [15-T](https://www.irs.gov/forms-pubs/about-publication-15-t) (formerly called the Circular E) is published in final form. 2021 Federal Tax Tables still apply till 2022 tax tables are published.
 
 ### 2022 state or territorial tax changes
 
