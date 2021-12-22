@@ -375,9 +375,9 @@ See our notation in this blog below
 
 ### Federal tax rates and income thresholds
 
-Effective January 1, 2022 the federal tax rate noted below. The federal index factor is 1.024. The income thresholds are revised as follows.
+Effective January 1, 2022 the federal tax rate noted below. The federal index factor is 1.024. <!--The income thresholds are revised as follows.
 
-![income thresholds](media/FED2022.JPG)
+![income thresholds](media/FED2022.JPG)-->
 
 ### Federal personal amounts
 
