@@ -383,7 +383,7 @@ Effective January 1, 2022 the federal tax rate noted below. The federal index fa
 
 Federal personal amounts have been increased by fixed amounts as shown in the following table.
 
-The Basic Personal amount is updated to \$14,398 (formerly \$13,808.
+The Basic Personal amount is updated to \$14,398 (formerly \$13,808).
 
 The Spouse Common Law Partner amount increases by the index factor to \$14,398  (formerly \$13,808), if the original amount was not zero.
 
