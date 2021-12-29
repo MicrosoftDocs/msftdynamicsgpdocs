@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/21/2021
+ms.date: 12/28/2021
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -25,6 +25,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 ## Changes in January Round 1 update (Released 12/21/2021)
 
 - FICA Social Security Limit $147,000
+- Federal tax tables added 12/30/2021
 - California
 - Georgia
 - Iowa
@@ -45,8 +46,116 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 
 The maximum taxable earnings for Social Security increase in 2022 to \$147,000 from \$142,800.  
 
-> [!NOTE]
-> As of December 20, 2021, Federal tax tables for the 2022 year are still in DRAFT form. Round 1 tax update will only change Social Security at this time until the [15-T](https://www.irs.gov/forms-pubs/about-publication-15-t) (formerly called the Circular E) is published in final form. 2021 Federal Tax Tables still apply till 2022 tax tables are published.
+**Federal tax tables released 12/30/2021**
+
+The Personal Exemption is $4,300 for SINGLE, MAR, HOH, NRA
+
+Withholding rates for taxpayers filing as *NRA*
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over|
+|------------|-----------------|---------------|-------------|-------------------|
+| 0          | 13,000          | 0             | 0%          | 0                 |
+| 13,000     | 23,275          | 0             | 10%         | 13,000            |
+| 23,275     | 54,775          | 1,027.00      | 12%         | 23,275            |
+| 54,775     | 102,075         | 4,807.50      | 22%         | 54,775            |
+| 102,075    | 183,050         | 15,213.50     | 24%         | 102,075           |
+| 183,050    | 228,950         | 34,647.50     | 32%         | 183,050           |
+| 228,950    | 552,900         | 49,335.50     | 35%         | 228,950           |
+| 552,900    | And Over        | 162,718.00    | 37%         | 552,900           |
+
+Withholding rates for taxpayers filing as *NRAHR*
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+|             | 19,425           | 0              | 0%           | 0                  |
+| 19,425      | 24,563           | 0              | 10%          | 19,425             |
+| 24,563      | 40,313           | 513.75         | 12%          | 24,563             |
+| 40,313      | 63,963           | 2,403.75       | 22%          | 40,313             |
+| 63,963      | 104,450          | 7,606.75       | 24%          | 63,963             |
+| 104,450     | 127,400          | 17,323.75      | 32%          | 104,450            |
+| 127,400     | 289,375          | 24,667.75      | 35%          | 127,400            |
+| 289,375     | And Over         | 81,359.00      | 37%          | 289,375            |
+
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over|
+|------------|-----------------|---------------|-------------|-------------------|
+| 0          | 13,000          | 0             | 0%          | 0                 |
+| 13,000     | 33,550          | 0             | 10%         | 13,000            |
+| 33,550     | 96,550          | 2,055.00      | 12%         | 33,550            |
+| 96,550     | 191,150         | 9,615.00      | 22%         | 96,550            |
+| 191,150    | 353,100         | 30,427.00     | 24%         | 191,150           |
+| 353,100    | 444,900         | 69,295.00     | 32%         | 353,100           |
+| 444,900    | 660,850         | 98,671.00     | 35%         | 444,900           |
+| 60,850     | And Over        | 174,253.50    | 37%         | 660,850            |
+
+Withholding rates for taxpayers filing as *MARHR*:
+
+| If Over  | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 12,950           | 0              | 0%           | 0                  |
+| 12,950      | 23,225           | 0              | 10%          | 12,950             |
+| 23,225      | 54,725           | 1,027.50       | 12%          | 23,225             |
+| 54,725      | 102,025          | 4,807.50       | 22%          | 54,725             |
+| 102,025     | 183,000          | 15,213.50      | 24%          | 102,025            |
+| 183,000     | 228,900          | 34,647.50      | 32%          | 183,000            |
+| 228,900     | 336,875          | 49,335.50      | 35%          | 228,900            |
+| 336,875     | And Over         | 87,126.75      | 37%          | 336,875             |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 4,350        | 0          | 0%       | 0              |
+| 4,350   | 14,625       | 0          | 10%      | 4,350          |
+| 14,625  | 46,125       | 1,027.50   | 12%      | 14,625         |
+| 46,125  | 93,425       | 4,807.50   | 22%      | 46,125         |
+| 93,425  | 174,400      | 15,213.50  | 24%      | 93,425         |
+| 174,400 | 220,300      | 34,647.50  | 32%      | 174,400        |
+| 220,300 | 544,250      | 49,335.50  | 35%      | 220,300        |
+| 544,250 | And Over     | 162,718.00 | 37%      | 544,250        |
+
+Withholding rates for taxpayers filing as *SGLHHR*:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|----------|----------------|
+| 0           | 6,475            | 0              | 0%       | 0              |
+| 6,475       | 11,613           | 0              | 10%      | 6,475          |
+| 11,613      | 27,363           | 513.75         | 12%      | 11,613         |
+| 27,363      | 51,013           | 2,403.75       | 22%      | 27,363         |
+| 51,013      | 91,500           | 7,606.75       | 24%      | 51,013         |
+| 91,500      | 114,450          | 17,323.75      | 32%      | 91,500         |
+| 114,450     | 276,425          | 24,667.75      | 35%      | 114,450        |
+| 276,425     | And Over         | 81,359.00      | 37%      | 276,425        |
+
+Withholding rates for taxpayers filing as *HOH*:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|------------------|----------------|----------|--------------------|
+| 0           | 10,800           | 0              | 0%       | 0                  |
+| 10,800      | 24,450           | 0              | 10%      | 10,800             |
+| 24,450      | 66,700           | 1,465.00       | 12%      | 24,450             |
+| 66,700      | 99,850           | 6,415.00       | 22%      | 66,700             |
+| 99,850      | 180,850          | 13,708.00      | 24%      | 99,850             |
+| 180,850     | 226,750          | 33,148.00      | 32%      | 180,850            |
+| 226,750     | 550,700          | 47,836.00      | 35%      | 226,750            |
+| 550,700     | And Over         | 161,218.50     | 37%      | 550,700           |
+
+Withholding rates for taxpayers filing as *HOHHR*:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|------------------|----------------|----------|--------------------|
+| 0           | 9,700            | 0              | 0%       | 0                  |
+| 9,700       | 17,025           | 0              | 10%      | 9,700              |
+| 17,025      | 37,650           | 732.50         | 12%      | 17,025             |
+| 37,650      | 54,225           | 3,207.50       | 22%      | 37,650             |
+| 54,225      | 94,725           | 6,854.00       | 24%      | 54,225             |
+| 94,725      | 117,675          | 16,574.00      | 32%      | 94,725             |
+| 117,675     | 279,650          | 23,918.00      | 35%      | 117,675            |
+| 279,650     | And Over         | 80,609.25      | 37%      | 279,650            |
+
+
 
 ### 2022 state or territorial tax changes
 
