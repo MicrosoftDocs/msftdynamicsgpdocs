@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 1/4/2022
+ms.date: 01/04/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -52,7 +52,8 @@ The Personal Exemption is $4,300 for SINGLE, MAR, HOH, NRA
 
 Withholding rates for taxpayers filing as *NRA*
 
-**NOTE: For Non-Resident Alien, if the employee filled out a W-4 after 1/1/2020 the filing status Non Resident Alien HR (NRAHR) should always be used.**
+> [!NOTE]
+> For non-resident aliens, if the employee filled out a W-4 after 01/01/2020, the filing status *Non Resident Alien HR (NRAHR)* must always be used.
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over|
 |------------|-----------------|---------------|-------------|-------------------|
