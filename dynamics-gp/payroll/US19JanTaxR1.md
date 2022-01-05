@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/30/2021
+ms.date: 01/04/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -51,6 +51,9 @@ The maximum taxable earnings for Social Security increase in 2022 to \$147,000 f
 The Personal Exemption is $4,300 for SINGLE, MAR, HOH, NRA
 
 Withholding rates for taxpayers filing as *NRA*
+
+> [!NOTE]
+> For non-resident aliens, if the employee filled out a W-4 after 01/01/2020, the filing status *Non Resident Alien HR (NRAHR)* must always be used.
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over|
 |------------|-----------------|---------------|-------------|-------------------|
