@@ -1,6 +1,6 @@
 ---
 title: "US payroll tax update"
-description: "US 2020 January payroll tax update for Microsoft Dynamics GP."
+description: "US 2022 January payroll tax update for Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
 manager: edupont
@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/6/2022
+ms.date: 01/06/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -25,7 +25,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 ## Changes in January Round 1 update (Target Release 1/21/2022)
 
 > [!NOTE]
-> If you have employees setup to withhold Wisconsin state tax, when you apply this update, you also have to apply the January 2022 Hotfix (code) for the Wisconsin state taxes to be correct for the 2022 year. 
+> If you have employees set up to withhold Wisconsin state tax, then, when you apply this update, you must also apply the January 2022 Hotfix (code) for the Wisconsin state taxes to be correct for the year 2022. 
 
 - Illinois
 - Minnesota
