@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/04/2022
+ms.date: 01/6/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -21,6 +21,64 @@ This article provides guidance for how to install the 2022 U.S. Payroll Tax Upda
 The first tax update for 2022 replaces all previous tax updates. It includes state and federal tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+## Changes in January Round 1 update (Target Release 1/21/2022)
+
+> [!NOTE]
+> If you have employees setup to withhold Wisconsin state tax, when you apply this update, you also have to apply the January 2022 Hotfix (code) for the Wisconsin state taxes to be correct for the 2022 year. 
+
+- Illinois
+- Minnesota
+- North Carolina
+- North Dakota
+- Rhode Island
+- Vermont
+- Wisconsin
+
+### 2022 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for Illinois
+
+The Dependent Exemptions is $2,425
+The Flat tax rate remains at 4.95 and allowances at 1,000
+
+#### Withholding changes for Minnesota
+
+The Personal Exemption amount is \$4,450 for all Filing Status.
+
+Withholding rates for taxpayers filing as *MARHR*:
+
+| If Over  | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 12,450           | 0              | 0%           | 0                  |
+| 12,450      | 53,500           | 0              | 5.35         | 12,450             |
+| 53,500      | 175,510          | 2,196.18       | 6.80%        | 53,500             |
+| 175,510     | 297,260          | 10,492.86      | 7.85%        | 175,510            |
+| 297,260     | And Over         | 20,050.24      | 9.85%        | 297,260            |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 4,000        | 0          | 0%       | 0              |
+| 4,000   | 32,080       | 0          | 5.35%    | 4,000          |
+| 32,080  | 96,230       | 1,502.28   | 6.80%    | 32,080         |
+| 96,230  | 175,220      | 5,864.48   | 7.85%    | 96,230         |
+| 175,220 | And Over     | 12,065.20  | 9.85%    | 175,220        |
+
+#### Withholding changes for North Carolina
+
+#### Withholding changes for North Dakota
+
+#### Withholding changes for Rhode Island
+
+#### Withholding changes for Vermont
+
+#### Withholding changes for Wisconsin
+
+
 
 ## Changes in January Round 1 update (Released 12/21/2021)
 
