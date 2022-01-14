@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/5/2021
+ms.date: 12/8/2021
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -22,7 +22,7 @@ This document can be leveraged with all email functionality in Microsoft Dynamic
 > [!NOTE]
 > Currently, TLS 1.0 and Basic Authentication (no MFA) are required for Exchange and Workflow emailing in Dynamics GP.
 >
-> We are aware of the changes that are coming to the supportability of TLS 1.0 and Basic Authentication within our other Microsoft applications. TLS 1.2 and Multi-Factor Authentication (MFA) functionality was included in the 18.3 update released.  If you are still on an older version of Microsoft Dyanmics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in->exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
+> We are aware of the changes that are coming to the supportability of TLS 1.0 and Basic Authentication within our other Microsoft applications. TLS 1.2 and Multi-Factor Authentication (MFA) functionality was included in the 18.3 update released.  If you are still on an older version of Microsoft Dyanmics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 >
 > When Basic Authentication is deprecated you will need to be on a version of Dynamics GP where you can use MFA (18.3 or later).
 > You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication. 
@@ -185,6 +185,26 @@ Use default report and Template and make sure the Template is the one marked wit
 
 Remove all email addresses being used and reenter them. Make sure that there are no odd characters such as ^ or a Tab.
 This issue can occur with all reports, and these can be caused by MessageID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.  
+
+* If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
+
+You can run a Fiddler trace, and that will tell us if basic auth is not enabled or a DNS issue may appear, for example. It can also inform us about other problems in your environment.
+
+#### To run Fiddler
+
+1. [Download Classic Fiddler](https://www.telerik.com/download/fiddler)  
+2. Open Fiddler.  
+3. In Tools->Fiddler Options->HTTPS, choose the **Decrypt HTTPS traffic** field.  
+4. Choose **Yes** on the prompt for trust Fiddler Root Certificate.  
+5. Choose **Yes** to install the certificate.  
+6. Choose **Yes** to confirm.  
+7. Choose **OK**, and then choose **OK** to go back.  
+8. Reproduce the issue.  
+9. Stop the Fiddler trace:   
+      1. File->Capture Traffic F12, Save trace: File->Save>All Sessions.   
+      2. Save the trace out as .saz file.  
+
+For more information, see [this blog post](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).  
 
 ### No Error, but no emails are sent (0 Documents Sent)
 
@@ -423,6 +443,8 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 
 > When Basic Authentication is deprecated you will need to be on a version of Dynamics GP where you can use MFA (18.3 or later).
 > You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication.
+> 
+> MFA is only supported with Exchange.
 
 ## Emailing Setup Guide by Module
 

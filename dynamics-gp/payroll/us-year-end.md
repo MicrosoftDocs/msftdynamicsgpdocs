@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/29/2021
+ms.date: 1/13/2022
 ---
 
 # U.S. 2021 Year-end Update in Dynamics GP
@@ -160,7 +160,7 @@ Use the instructions in this chapter to prepare for the U.S. 2020 Year-end Updat
 
 ### Supported releases
 
-The U.S. 2021 Year-end Update supports Dynamics GP (18.2.1013 or higher)
+The U.S. 2021 Year-end Update supports Dynamics GP (18.4 or higher)
 
 To identify the release that you're using, start Dynamics GP. Choose Help \>\> About Dynamics GP.
 
@@ -291,6 +291,27 @@ As you complete year-end tasks, refer to the answers in this section.
 - If I add information in the Edit W-2 Special Information window (Special button in the Edit W-2 Information window) without entering information in the Edit W-2 Information window, where will that information appear?
 
   It will print this information on the additional W-2.
+  
+  - Where should I report the cost of coverage of an employer-sponsored group health plan on the W-2?
+
+Applicable employer-sponsored group health plan values should be reported in Box 12 DD on the W-2. 
+To add a W-2 box and label to a specific Employee:
+Navigate to Cards >> Payroll >> Deduction or Benefit
+Pull up the appropriate Employee ID, and the appropriate Code.
+Next to W-2 Box: Use arrows to navigate to desired W-2 box space, and enter the appropriate W-2 box.
+Next to W-2 Label: Enter appropriate W-2 label.
+Remember: There are 4 possible labels available for every deduction, so verify the label is assigned only once to avoid duplication of values – See FAQ 2. It would be recommended to keep the codes consistent at the setup level, versus changing them at the employee level, just roll it down from setup.
+
+- Should box 12DD print on the W-3 it seems to be missing?
+
+Not every box and label that prints on the W-2 is summed on the W-3.  Review the instructions for details but examples that do not print on the W-3 are codes A-C, J-R, T-W, Z, DD, FF, GG, and HH are not reported on the form W-3.
+
+- How does the Retirement Plan checkbox get marked on the W-2, when I do not have it marked  under Cards | Payroll | Tax?
+
+Per the W-2 instructions this box should be marked if the employee was an "active participant" for any part of the year. 
+Example 401K, 403B, SEP, 457B, 501C,etc.  
+For example if you have a $100.00 on the employee W2 in Box 12 D, the retirement plan box will be marked when you create the year end wage file, even if it is not marked under Cards | Payroll | Tax.
+Also on the validation report it will warn you when you have labels for retirement plans and the box is not marked.  Special Codes are deferred comp, but W-2 Retirement Plan is not checked.
 
 - The correct Last Year-end Update date doesn't appear in the Payroll Setup window, even though I installed the 2021 year-end update and see the changes included in the update. Is there something I need to do?
 
