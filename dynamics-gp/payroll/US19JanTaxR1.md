@@ -131,16 +131,16 @@ Special Type rates for EXEMPT and SM1 Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 50,000           | 0              | 1.65%        | 0                  |
-| 50,000      | And Over         | 0              | .075%        | 0                  |
+| 0           | 50,000           | 0              | 1.65%        | 12,500             |
+| 50,000      | And Over         | 0              | .075%        | 50,000             |
 
 
 Special Type rates for M2 Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 1000,000         | 0              | 1.65%        | 0                  |
-| 100,000     | And Over         | 0              | .075%        | 0                  |
+| 0           | 1000,000         | 0              | 1.65%        | 25,000             |
+| 100,000     | And Over         | 0              | .075%        | 100,000            |
 
 
 #### Withholding changes for Minnesota
