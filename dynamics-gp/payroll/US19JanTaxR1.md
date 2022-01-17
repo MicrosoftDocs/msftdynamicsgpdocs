@@ -131,23 +131,23 @@ Special Type rates for EXEMPT and SM1 Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 50,000           | 0              | 1.65%        | 0                  |
-| 50,000      | And Over         | 0              | .075%        | 0                  |
+| 0           | 50,000           | 0              | 1.65%        | 12,500             |
+| 50,000      | And Over         | 0              | .075%        | 50,000             |
 
 
 Special Type rates for M2 Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 1000,000         | 0              | 1.65%        | 0                  |
-| 100,000     | And Over         | 0              | .075%        | 0                  |
+| 0           | 1000,000         | 0              | 1.65%        | 25,000             |
+| 100,000     | And Over         | 0              | .075%        | 100,000            |
 
 
 #### Withholding changes for Minnesota
 
 The Personal Exemption amount is \$4,450 for all Filing Status.
 
-Withholding rates for taxpayers filing as *MARHR*:
+Withholding rates for taxpayers filing as *MAR*:
 
 | If Over  | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -207,10 +207,10 @@ Withholding rates for taxpayers filing as *HOHHR*:
 |---------|--------------|------------|----------|----------------|
 | 0       | 9,700        | 0          | 0%       | 0              |
 | 9,700   | 65,600       | 0          | 1.10%    | 9,700          |
-| 65,600  | 154,100      | 1,502.28   | 2.04%    | 65,600         |
-| 154,100 | 243,450      | 5,864.48   | 2.27%    | 154,100        |
-| 243,450 | 468,050      | 5,864.48   | 2.645%    | 243,450        |
-| 468,050 | And Over     | 12,065.20  | 2.90%    | 468,050        |
+| 65,600  | 154,100      | 614.90     | 2.04%    | 65,600         |
+| 154,100 | 243,450      | 2,420.30   | 2.27%    | 154,100        |
+| 243,450 | 468,050      | 4,448.55   | 2.64%    | 243,450        |
+| 468,050 | And Over     | 10,377.99  | 2.90%    | 468,050        |
 
 
 #### Withholding changes for Rhode Island
