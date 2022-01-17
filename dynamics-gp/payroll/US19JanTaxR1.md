@@ -147,7 +147,7 @@ Special Type rates for M2 Filing Status:
 
 The Personal Exemption amount is \$4,450 for all Filing Status.
 
-Withholding rates for taxpayers filing as *MARHR*:
+Withholding rates for taxpayers filing as *MAR*:
 
 | If Over  | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
