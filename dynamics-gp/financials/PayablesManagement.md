@@ -4809,11 +4809,11 @@ With the release of Microsoft Dynamics GP 18.3 October 2020, The IRS is releasin
 
 In the Vendor Card in Options, you now have the option of selecting Non-employee Compensation as a 1099 tax type. The Utility "Update 1099 Information" also includes selecting Non-employee Compensation.
 
-[Add DBA Name field on Vendor Maintenance window for 1099 Vendors] (https://community.dynamics.com/gp/b/dynamicsgp/posts/add-dba-name-field-on-vendor-maintenance-window-for-1099-vendors)
+[Add DBA Name field on Vendor Maintenance window for 1099 Vendors](https://community.dynamics.com/gp/b/dynamicsgp/posts/add-dba-name-field-on-vendor-maintenance-window-for-1099-vendors)
 
 With the release of Microsoft Dynamics GP 18.3 October 2020, When a business is created in the United States or Canada many times, they have the option of using a DBA, or “Doing Business As” name, in addition to the legal entity name. The DBA name is the operating name of the business, or how the business is known to customers, or operating name. As opposed to the legal name of the business. Vendors that have a DBA name, in addition to the legal company name, and want to have the DBA name appear on the 1099 that is issued to them, can now do so.
 
-[1099-MISC form updates for Tax Year 2020] (https://community.dynamics.com/gp/b/dynamicsgp/posts/1099-misc-form-updates-for-tax-year-2020)
+[1099-MISC form updates for Tax Year 2020](https://community.dynamics.com/gp/b/dynamicsgp/posts/1099-misc-form-updates-for-tax-year-2020)
 
 With the release of Microsoft Dynamics GP 18.3 October 2020, The 1099-MISC form has been revised to meet the IRS regulatory changes for the 2020 tax year. In the Vendor Card point to Options, point to Tax Type: Miscellaneous, point to 1099 Box, click the drop-down menu.
 
