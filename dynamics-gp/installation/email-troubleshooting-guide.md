@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/8/2021
+ms.date: 1/18/2021
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -205,6 +205,10 @@ You can run a Fiddler trace, and that will tell us if basic auth is not enabled 
       2. Save the trace out as .saz file.  
 
 For more information, see [this blog post](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).  
+
+> [!NOTE]
+> Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
+> 
 
 ### No Error, but no emails are sent (0 Documents Sent)
 
