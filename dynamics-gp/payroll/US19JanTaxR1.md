@@ -25,7 +25,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 ## Changes in January Round 2 update (Released 1/20/2022)
 
 > [!NOTE]
-> If you have employees set up to withhold Wisconsin state tax, then, when you apply this update, you must also apply the [January 2022 Hotfix (code) for the Wisconsin state](https://docs.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_patchreleases_377) taxes to be correct for the year 2022. 
+> If you have employees set up to withhold Wisconsin state tax, then, when you apply this update, you must also apply the [January 2022 Hotfix (code) for the Wisconsin state](/dynamics/s-e/gp/mdgp2018_patchreleases_377) taxes to be correct for the year 2022. 
 
 - Arkansas
 - Illinois
@@ -35,7 +35,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - North Dakota
 - Rhode Island
 - Vermont
-- [Wisconsin - CODE CHAGE REQUIRED](https://docs.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_patchreleases_377)
+- [Wisconsin - CODE CHAGE REQUIRED](/dynamics/s-e/gp/mdgp2018_patchreleases_377)
 
 ### 2022 state or territorial tax changes
 
