@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/14/2022
+ms.date: 01/20/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -18,14 +18,14 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2022 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-The first tax update for 2022 replaces all previous tax updates. It includes state and federal tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
+The second tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
-## Changes in January Round 2 update (Target Release 1/21/2022)
+## Changes in January Round 2 update (Released 1/20/2022)
 
 > [!NOTE]
-> If you have employees set up to withhold Wisconsin state tax, then, when you apply this update, you must also apply the January 2022 Hotfix (code) for the Wisconsin state taxes to be correct for the year 2022. 
+> If you have employees set up to withhold Wisconsin state tax, then, when you apply this update, you must also apply the [January 2022 Hotfix (code) for the Wisconsin state](https://docs.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_patchreleases_377) taxes to be correct for the year 2022. 
 
 - Arkansas
 - Illinois
@@ -35,7 +35,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 - North Dakota
 - Rhode Island
 - Vermont
-- Wisconsin
+- [Wisconsin - CODE CHAGE REQUIRED](https://docs.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_patchreleases_377)
 
 ### 2022 state or territorial tax changes
 
@@ -920,7 +920,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *12/16/2021*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *1/18/2022*.
 
 ## What's next
 
