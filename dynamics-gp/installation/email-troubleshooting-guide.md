@@ -17,25 +17,28 @@ This document is meant to walk through most of the errors you may run into when 
 
 The goal is to make everyone an emailing expert!  
 
-This document can be leveraged with all email functionality in Microsoft Dynamics GP, from the old Standard Report Writer Statement emailing method, to Word Templates.
+This document can be leveraged to aid in troubleshooting all areas of emailing out of Microsoft Dynamics GP from the legacy Standard Report Writer Statements to Word Templates, or Workflow.
 
 > [!NOTE]
-> Currently, TLS 1.0 and Basic Authentication (no MFA) are required for Exchange and Workflow emailing in Dynamics GP.
->
-> We are aware of the changes that are coming to the supportability of TLS 1.0 and Basic Authentication within our other Microsoft applications. TLS 1.2 and Multi-Factor Authentication (MFA) functionality was included in the 18.3 update released.  If you are still on an older version of Microsoft Dyanmics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
+> Before Microsoft Dynamics GP's October 2020 (18.3 and later) release, Dynamics GP required that both TLS 1.0 and Basic Authication (no MFA) be enabled for Exchange and Workflow emailing in Dynamics GP.
+
+> After Microsoft Dynamics GP's October 2020 (18.3 and later) release, Dynamics GP has added the functionality to use both  TLS 1.2 and/or Multi-Factor Authentication (MFA).
+> You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dynamics GP, but it does use Modern Authentication. 
+> 
+> If you are still on an older version of Microsoft Dynamics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 >
 > When Basic Authentication is deprecated you will need to be on a version of Dynamics GP where you can use MFA (18.3 or later).
-> You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication. 
+> 
 
 All email issues can be safely split up into three sets of issues:
 
-* Items unique to MAPI  
+* Issues unique to MAPI  
 * Issues unique to Exchange  
-* Those that both methods have in common  
+* Issues that both methods have in common  
 
 This is how the documentation is organized: Starting with MAPI, moving onto Exchange, and ending with the common errors.  
 
-Find system preferences under Dynamics GP Tools -> Setup -> System -> System Preferences.  
+To determine whether MAPI or Exchange is being used check the System Preference window. (Administration >> Setup >> System >> System Preferences)
 
 > [!IMPORTANT]
 > This setting is stored in the DYNAMICS database and is system-wide, so changing this setting will affect all users.  
@@ -106,7 +109,7 @@ This ONLY effect emailing functionality. This includes any time where an email a
 
 Issue: Office no longer allows for sideloading of VBA.
 
-Cause: The Microsoft Dynamics GP attempt to use its own packaged version of VBA, and Office no longer allows this.
+Cause: Microsoft Dynamics GP attempts to use its own packaged version of VBA, and Office no longer allows this.
 
 Solution: The solution is to remove VBA, stay on a version of Office prior to 1810, or to use Exchange rather than MAPI functionality. 
 
@@ -171,9 +174,9 @@ To get around this, the users need to follow these steps to update the customer 
 
 ### Unknown Error Occurred
 
-Note: Issue usually happens to EFT Remittances in Payables.  
+Note: Issue usually happens to EFT Remittances in Payables or Statements in Receivables.  
 
-Issue:  User is attempting to e-mail remittances but the error above appears on the Email Exception Report.  
+Issue:  User is attempting to e-mail remittances and/or statements but the error above appears on the Email Exception Report.  
 
 Cause: This error has many causes, usually comes down to customizations on the Template, or odd characters in the email addresses used.  
 
@@ -181,9 +184,54 @@ Solution: Try the following:
 
 Error messages when you email RM Statements in Microsoft Dynamics GP: [Unknown Error or Insufficient Memory](https://community.dynamics.com/gp/b/dynamicsgp/posts/error-messages-when-you-email-rm-statements-in-microsoft-dynamics-gp-unknown-error-or-insufficient-memory)
 
-Use default report and Template and make sure the Template is the one marked with an asterisk (`*`). [If the default works, check the bookmarks on the modified template](https://community.dynamics.com/gp/b/dynamicsgp/posts/what-are-bookmarks-and-how-are-they-used-in-microsoft-dynamics-gp-s-word-templates) 
+Use default report and Template and make sure the Template is the one marked with an asterisk (`*`).
+If default emails, review modified template for [bookmarks](https://community.dynamics.com/gp/b/dynamicsgp/posts/what-are-bookmarks-and-how-are-they-used-in-microsoft-dynamics-gp-s-word-templates) hyperlinks, anchors, and even the size of the document example. RM Statement to show line item detail for all invoices would a very large statement for some customers.
 
-Remove all email addresses being used and reenter them. Make sure that there are no odd characters such as ^ or a Tab.
+**Set Template to Default Original/Canned Report.**
+1. Microsoft Dynamics GP menu >> Tools >> Setup >> System >> User Security
+2. Select the username and company.
+3. Click on the 'Alternate/Modified Forms and Reports ID:' link at the bottom of the window.
+4. In the Alternate/Modified Forms and Reports window select the following:
+      Product: Microsoft Dynamics GP
+      Type: Reports
+      Series: All
+5. CLick the plus button to expand the module folder. i.e. Purchasing
+6. Click the plus button to expand the report. i.e. Check Remittance
+(If the report is not on the list at all then you do not have a modified option, please move to step 10.)
+7. Select the default/canned 'Microsoft Dynamics GP' optiopn. (Do NOT select modified here)
+8. Click Save, Save, and Close.
+9. Go to Reports >> Template Maintenance
+10. In the Report Template Maintenance window, click the bar at the top that says 'Click here to select a report'.
+11. Select the option for 'More Reports' on the Drop-Down list.
+      Product: Microsoft Dynamics GP
+      Series: Purchasing
+      Status: Original
+12. Select '*Check Remittance' from the list and Click 'Select'.
+13. In the Report Template Maintenance window, highlight 'Check Remittance*'
+14. Click on the Assign >> Company button on the menu bar.
+15. Check the company that you are testing the process in.
+16. Highlight a company ans click 'Set Default'.
+17. Check the box next to 'Check Remittance*'
+18. Click Save, Save, and Close
+
+**Remove Have Replies Sent to on both the Message ID and E-mail setup.**
+The Message Setup window can be found using the either pathing:
+System wide
+Administration >> Setup >> Company >> E-mail Message Setup
+Administration >> Setup >> Company >> Workflow >> E-mail Message Setup
+
+Module specific
+Sales >> Setup >> E-mail Settings
+Purchasing >> Setup E-mail Settings
+
+Remove and re-enter all associated email addresses. Make sure that there are no odd characters such as ^ or a Tab.
+Email Addresses can be found using either pathing:
+Administration >> Setup >> Company >> Internet Information
+
+**NOTE**
+If **Email Addresss based on Doc Type** is enabled:
+(Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address)
+(Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address)
 This issue can occur with all reports, and these can be caused by MessageID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.  
 
 * If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
@@ -410,7 +458,7 @@ If you never received the Test E-mail, then you are likely having an issue with 
 
 First, confirm that you are not using MFA on the account used in the SMTP setup.
 
-Next, make sure that TLS 1.0 is enabled on the SQLserver and on the SMTP server.
+Next, make sure that TLS 1.0 is enabled on the SQL server and on the SMTP server.
 
 Then walk through the following articles:
 [Workflow Notification Email Troubleshooting – Microsoft Dynamics GP Community] (https://community.dynamics.com/gp/b/markpolino/posts/workflow-notification-email-troubleshooting-microsoft-dynamics-gp-community)
@@ -452,8 +500,8 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 
 ## Emailing Setup Guide by Module
 
-The below document covers setup of email starting with System Wide Setup, Purchasing, Sales, and Workflow setup.
-Depending what area of email you need to setup, please review the steps outlined below.
+The document below covers setup of email starting with System Wide Setup, Purchasing, Sales, and Workflow setup.
+Depending on what area of email you need to setup, please review the steps outlined below.
 - [Emailing Setup Guide](https://community.dynamics.com/gp/b/dynamicsgp/posts/emailing-setup-guide#_Toc71192006)  
 
 
