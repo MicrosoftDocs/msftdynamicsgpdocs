@@ -425,10 +425,29 @@ Issue: User is attempting to email out for a customer/vendor that does not have 
 
 Cause: Setup issue on the Customer/Vendor card
 
-Solution: To resolve this simply open the Customer/Vendor Card (cards -> Customer or Vendor) and click the Internet Information button next to the Address lookup (looks like a planet). You will also want to check for the Email Address based on Doc Type setting found in the email submenu (email button) on the customer/vendor card. If this is enabled, then check all the ‘…’ email addresses to make sure an email address is check boxed.
+Solution: 
+**Make sure that there is a valid email address listed on the vendor/customer.**
 
+Microsoft Dynamics GP will determine what email will be used when emailing differently depending on whether the Email Address based on Doc Type setting is enabled or not. This is found in the following path:
+* Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type
+* Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type 
 
 ![Form 5](media/email5.jpg)
+
+If **Email Address based on Doc Type** is **disabled**:
+When this feature is disabled, Microsoft Dynamics GP determines the email address based on what is listed in the Internet Information widow for the Address ID on the Customer or Vendor card.
+The Internet Information window can be found using either of the following paths:
+* Administration >> Setup >> Company >> Internet Information >> select vendor/customer >> select address ID
+* Purchasing >> Cards>> Vendor >> click Internet Information button next to the Address lookup (looks like a little planet earth). 
+* Sales >> Cards>> Customer >> click Internet Information button next to the Address lookup (looks like a little planet earth). 
+
+If **Email Address based on Doc Type** is **enabled**:
+When this feature is enabled, Microsoft Dynamics GP determines the email address based on what is listed in the Email Address Based on Doc Type window for the vendor/customer.
+The Email Address Based on Doc Type window can be found using either of the following paths:
+* Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address
+* Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address
+
+For further information on the Email Address based on Doc Type feature, check out Andrea’s [blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/draft-microsoft-dynamics-gp-2013-r2-email-document-new-features#:~:text=When%20you%20click%20on%20an%20ellipsis%20button%20next,to%20assign%20them%20to%20a%20specific%20document%20type.)
 
 
 ###  You must have the Microsoft Save as PDF or XPS add-in for 2007 Microsoft Office
