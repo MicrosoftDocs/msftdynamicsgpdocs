@@ -6,7 +6,7 @@ author: edupont04
 ms.author: edupont
 manager: annbe
 applies_to: 
-ms.date: 08/31/2021
+ms.date: 01/26/2022
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: d8f8ba40-5a92-47ee-9e2d-4a052c3d7acf
@@ -142,3 +142,92 @@ However, if you use all odd-numbered segment lengths, you can incorporate larger
 ## See also
 
 [Installation checklist](installation-checklist.md)  
+
+# Multilingual Installs in Microsoft Dynamics GP
+
+It is possible to use Microsoft Dynamics GP in a Multilingual Installation environment, there are some important things to keep in mind.
+
+A Multilingual Installation is an environment in which multiple language release installations (unique language code folders) share the same DYNAMICS database, and potentially the same company databases.
+
+Each unique release contains specific words and phrases to match the language of that country. 
+
+As an example, the United Kingdom installation uses "cheque" instead of "check." 
+
+There are 27 unique languages to choose from when you install Microsoft Dynamics GP:
+
+Andean	
+Argentina	
+Australia	
+Austria	
+Belgium	
+Canada	
+Chile
+China	
+France	
+Germany	
+Hong Kong	
+Indonesia	
+Japan	
+Latin America
+Luxembourg	
+Malaysia	
+Middle East	
+Netherlands	
+New Zealand	
+Philippines	
+Singapore
+South Africa	
+Spain	
+Taiwan	
+Thailand	
+United Kingdom and Ireland	
+United States	
+
+The DYNAMICS (system) database, and all company databases should be created/installed/upgraded using one PRIMARY language code folder only.
+
+If the DYNAMICS (system) and Company databases are not installed/created/upgraded correctly you will run into problems (errors associated with audit trail codes, and/or problems closing the year in General Ledger).
+
+While different country code installations (unique language code folders) can be used to connect to the same company database within a SQL instance: ALL company databases that are located on the same SQL instance should be created/upgraded using the same Primary Code Folder. This is because Audit Trail codes must match across all company databases within the same SQL instance.
+
+If you accidentally upgraded/installed a company database with the secondary code folder, the following may occur:
+
+You may receive the error message, “Violation of PRIMARY KEY constraint 'PKSY40100', Cannot insert duplicate key in object 'dbo.SY40100'” when you attempt to create a new fiscal year (Microsoft Dynamics GP >> Tools >> Setup >> Company >> Fiscal Periods).
+
+When you try to close the year in General Ledger, nothing happens (because the audit trail codes between DYNAMICS..MESSAGES and the SY01000 are no longer in synch).
+
+Below is detailed information around how to re-synchronize the audit trail codes for company databases that were incorrectly installed/upgraded with the secondary code folder.
+
+Multilingual Resynchronize Audit Trail Codes with Primary Code Folder:
+*Always make a backup of the databases prior to making any changes. All changes should be tested when no users are in the system*
+
+1.	Clear the MESSAGES table in the DYNAMICS database:
+
+DELETE DYNAMICS..MESSAGES
+
+
+2.	Change the following line in the Dex.ini file for ALL language code folders being used in the Multilingual environment:
+
+Synchronize=TRUE
+
+3.	Launch into GP Utilities as ‘sa’ first with the Primary language code folder. An easy way to ensure you are launching into GP Utilities with a specific code folder is to simply drag and drop the DYNUTILS.SET file over the DynUtils.exe file within that specific code folder:
+
+
+4.	While in GP Utilities (accessed via the primary code folder), click on the ‘Launch Microsoft Dynamics GP’ button to launch into the company. This will synchronize the audit trail codes with the primary code folder.
+
+5.	Next, launch into GP Utilities via secondary language folder. (Be sure that SYNCHRONIZE = TRUE in the Dex.ini file) Again, a simple way to do this is to drag and drop the DYNUTILS.SET file over the DynUtils.exe file within that specific code folder:
+
+6.	While in GP Utilities (accessed via the secondary code folder), click on the ‘Launch Microsoft Dynamics GP’ button to launch into the company database(s). This will synch the audit trail codes in the MESSAGES table to those created when the company was installed with the primary code folder.
+
+An effective way to verify the audit trails are synchronized between the primary and secondary code folders is to run the following SQL statement against the DYNAMICS database:
+SELECT * FROM DYNAMICS..MESSAGES WHERE SQL_MSG LIKE '%GLT%'
+
+![Messages](media/multilang2022.JPG)
+
+             
+In the example above:
+•	Language ID 0 = United States Install
+•	Language ID 1 = United Kingdom Install
+Overall, the SQL_MSG’s should match across Language ID’s when the Multilingual environment has been set up correctly.
+7.	Repeat steps 5 and 6 for all secondary code folders.
+
+
