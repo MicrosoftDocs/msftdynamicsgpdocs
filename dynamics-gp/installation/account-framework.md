@@ -230,4 +230,40 @@ In the example above:
 Overall, the SQL_MSG’s should match across Language ID’s when the Multilingual environment has been set up correctly.
 7.	Repeat steps 5 and 6 for all secondary code folders.
 
+**Multilingual Installation Steps in Detail**
 
+Important: Every new Company database should be created/installed via GP Utilities using the Primary Language Code folder.  
+
+1.	Decide what the primary language will be (there are 27 to choose from). This is the code folder from which you will install/create ALL DYNAMICS and Company databases. This is important, so make note of this and keep a record of it. You’ll need this information when it’s time to upgrade.
+
+2.	Install the Primary language code folder.  The United States code folder is my primary code folder in this example.
+*Note: We recommend you label the country associated with each code folder appropriately (so you can tell which language is associated with each folder easily).
+
+3.	Run GP Utilities with the Primary language code folder to create:
+
+•	The DYNAMICS (system) database
+•	All Company databases:
+•	After the company databases are created, the appropriate audit trail codes are created in the SY01000 table for each company database. 
+•	If all company databases are created with the same primary code folder, the values in the SY01000 between companies should match.
+•	Additionally, the MESSAGES table in the DYNAMICS (system) database gets updated with messages specific to the primary code folder’s audit trail codes. 
+Example Script:
+SELECT * FROM DYNAMICS..MESSAGES WHERE SQL_MSG LIKE '%GLT%'
+
+4. Once all company databases are created: Install the secondary language code folder. We recommend you label it appropriately, so the secondary code folder is easy to identify. 
+When you do the installation, in the Instance Selection window choose Create a new instance and give it an Instance Name.
+In this example we are going to create another instance for UK the name will be GP2018UK to identify this instance and code folder.
+
+5. Launch into GP Utilities via the secondary language folder created above (PG2018UK). An easy way to ensure you are launching into GP Utilities with a specific code folder is to simply go to the location you installed it above and drag and drop the DYNUTILS.SET file over the DynUtils.exe file within the secondary code folder.
+
+6. While in GP Utilities (accessed via the secondary code folder), click on the ‘Launch Microsoft Dynamics GP’ button to launch into GP. This will synch the audit trail codes in the MESSAGES table to those created when the company was installed with the primary code folder.
+
+An effective way to verify the audit trails are synchronized between the primary and secondary code folders is to run the following SQL statement against the DYNAMICS (system) database:
+
+SELECT * FROM DYNAMICS..MESSAGES WHERE SQL_MSG LIKE '%GLT%'
+
+In the example of an United States install as Primary and United Kingdom Install as Secondary, you will see the following:
+
+•	Language ID 0 = United States Install
+•	Language ID 1 = United Kingdom Install
+
+Overall, the SQL_MSG’s should match across Language ID’s when the Multilingual environment has been set up correctly.
