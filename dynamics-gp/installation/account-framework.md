@@ -143,7 +143,7 @@ However, if you use all odd-numbered segment lengths, you can incorporate larger
 
 [Installation checklist](installation-checklist.md)  
 
-# Multilingual Installs in Microsoft Dynamics GP
+## Multilingual Installs in Microsoft Dynamics GP
 
 It is possible to use Microsoft Dynamics GP in a Multilingual Installation environment, there are some important things to keep in mind.
 
