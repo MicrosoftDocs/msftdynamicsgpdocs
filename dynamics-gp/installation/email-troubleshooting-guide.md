@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 1/18/2021
+ms.date: 1/30/2021
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -27,8 +27,14 @@ This document can be leveraged to aid in troubleshooting all areas of emailing o
 > 
 > If you are still on an older version of Microsoft Dynamics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 >
-> When Basic Authentication is deprecated you will need to be on a version of Dynamics GP where you can use MFA (18.3 or later).
-> 
+> When Basic Authentication is deprecated (October 1, 2022) you will need to be on a version of Dynamics GP where you can use MFA (18.3 or later).
+
+We have seen an increase in cases where emails are beginning to fail from within Dynamics GP.  This is especially true for older versions of GP (18.2 and prior) that have not enabled MFA for Dynamics GP.  The Exchange team is temporarily disabling basic authentication as a way to remind us that a bigger change is coming.
+
+[**WORKFLOW emails intermittently fail**](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-workflow-intermittent-emails-failing)
+
+[**Other emails intermittently fail**](https://community.dynamics.com/gp/b/dynamicsgp/posts/emails-intermittent-failing-when-sending-out-of-dynamics-gp-not-workflow-emails)
+
 
 All email issues can be safely split up into three sets of issues:
 
@@ -446,6 +452,28 @@ The more consistent solution is to simply cut down on the number of emails you a
 For example, run your Invoices for one half of your customers, then the other half.
 
 In rare cases the issue is caused by a conflict with a third party add-in. The easiest way to confirm if this may be the case is to rename the GP code folder and then run a repair of GP. This will recreate a new GP code folder without third parties. If the issue continues you can just delete the new folder and rename the old folder back. If the issue is resolved then you can add third parties one-by-one until the issue reoccurs.
+
+
+### Shared Mailbox for email
+
+As far as what address the email is sent from in Dynamics GP for Templates, there isn’t a field within GP that can be changed. 
+
+GP determines who the email will be sent from depending on the Server Type selected in setup (Tools>>Setup>>System>>System Preferences). 
+
+With MAPI, Dynamics GP will use Outlook on the client’s machine to send the email. 
+Therefore whatever email account 'on the computer itself' is set up as default in (Control Panel>>Mail – Email Accounts) will be the email address 
+that the email is sent from. 
+(In this window, BOTH the E-mail tab and the Data Files tab must be the desired email address) 
+
+With MAPI you could set up a general account such as payables@xyz.com and set that as the default profile on the computer, and Dynamics GP will 
+use this to send out the emails. Keep in mind that MAPI is designed for 32-bit Office. 
+
+With Exchange, Dynamics GP actually contacts the Exchange server and does it’s emailing through it.  It does not look to your default mail profile in Outlook. For Exchange when the user tries to send an email in Dynamics GP, they are prompted to log in to Exchange. 
+
+Whatever credentials you log in with, are going to determine what email address is sending the documents. 
+
+With MFA, we are unable to get the true shared mailboxes to work with the MFA feature in Dynamics GP and it is currently considered an unsupported functionality.  
+Please vote on the following [product suggestion](https://experience.dynamics.com/ideas/idea/?ideaid=546251fd-5633-ec11-b76a-0003ff45ac6d)
 
 
 ## Workflow
