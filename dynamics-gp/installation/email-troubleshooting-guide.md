@@ -164,19 +164,19 @@ Cause: When disabling the customer statements via Tools>>Setup>>Sales>>E-mail se
 
 Solution: Use the steps below to workaround around the error message:
 
-To get around this, the users need to follow these steps to update the customer cards before they disable the Customer Statement:  
-
-1. Verify that the Customer Statements are enabled to be emailed(Tools>>Setup>>Sales>>E-mail Settings)  
-2. Go to the Customer Navigation List and select all customers.  
-3. Use the E-mail Settings option (top navigation bar) here to update all customers.  
-4. Here you will need to check **Customer Statements**, then select **PDF**, and uncheck the **Customer Statement** option. Then click OK.
-5. You should see that the customer cards were updated
-6. Running the following script should show the EmailDocumentEnabled field has been set to 0 for all customers:  
-
-    ```select * from SY04905 where EmailDocumentID = '10'```
-
-7. Disable the **Customer Statement** option on the **E-Mail Settings** window in **Sales Setup**.  
-8. The statements should generate as a PDF file now for all customers.  
+To get around this, the users need to follow these steps to update the customer cards before they disable the Customer Statement:
+1.	Verify that the Customer Statements are enabled to be emailed (Tools >> Setup >> Sales >> E-mail Settings)
+2.	Go to the Customer Navigation List and select all customers.
+3.	Use the E-mail Settings option (top navigation bar) here to update all customers.
+4.	Here you will need to check Customer Statements, then select PDF, and uncheck the Customer Statement option. Then click OK.
+5.	You should see that the customer cards were updated
+6.	Running the following script should show the EmailDocumentEnabled field has been set to 0 for all customers:
+SELECT * FROM SY04905 WHERE EmailDocumentID = '10'
+7.	Disable the Customer Statement option on the E-Mail Settings window in Sales Setup.
+8.	The statements should generate as a PDF file now for all customers.
+Missing Records in either the SY04904 and/or SY04905 table can also generate this issue:
+SELECT * FROM RM00101 WHERE CUSTNMBR not in (SELECT EmailCardID FROM SY04904)
+SELECT * FROM RM00101 WHERE CUSTNMBR not in (SELECT EmailCardID FROM SY04905)
 
 ### Unknown Error Occurred
 
@@ -201,13 +201,13 @@ If default emails, review modified template for [bookmarks](https://community.dy
       Product: Microsoft Dynamics GP
       Type: Reports
       Series: All
-5. CLick the plus button to expand the module folder. i.e. Purchasing
-6. Click the plus button to expand the report. i.e. Check Remittance
+5. Click the plus button to expand the module folder. i.e., Purchasing
+6. Click the plus button to expand the report. i.e., Check Remittance
 (If the report is not on the list at all then you do not have a modified option, please move to step 10.)
-7. Select the default/canned 'Microsoft Dynamics GP' optiopn. (Do NOT select modified here)
+7. Select the default/canned 'Microsoft Dynamics GP' option. (Do NOT select modified here)
 8. Click Save, Save, and Close.
 9. Go to Reports >> Template Maintenance
-10. In the Report Template Maintenance window, click the bar at the top that says 'Click here to select a report'.
+10. In the Report Template Maintenance window, click the bar at the top that says, 'Click here to select a report'.
 11. Select the option for 'More Reports' on the Drop-Down list.
       Product: Microsoft Dynamics GP
       Series: Purchasing
@@ -216,7 +216,7 @@ If default emails, review modified template for [bookmarks](https://community.dy
 13. In the Report Template Maintenance window, highlight 'Check Remittance*'
 14. Click on the Assign >> Company button on the menu bar.
 15. Check the company that you are testing the process in.
-16. Highlight a company ans click 'Set Default'.
+16. Highlight a company and click 'Set Default'.
 17. Check the box next to 'Check Remittance*'
 18. Click Save, Save, and Close
 
@@ -264,6 +264,53 @@ For more information, see [this blog post](https://blogs.msdn.microsoft.com/mahe
 > Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
 > 
 
+### Insufficient Memory
+Remove Have Replies Sent to on both the Message ID and E-mail setup. The Message Setup window can be found using the either pathing: System wide Administration >> Setup >> Company >> E-mail Message Setup Administration >> Setup >> Company >> Workflow >> E-mail Message Setup
+Module specific Sales >> Setup >> E-mail Settings Purchasing >> Setup E-mail Settings
+Remove and re-enter all associated email addresses. Make sure that there are no odd characters such as ^ or a Tab. Email Addresses can be found using either pathing: Administration >> Setup >> Company >> Internet Information
+NOTE If Email Addresses based on Doc Type is enabled: (Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address) (Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address) This issue can occur with all reports, and these can be caused by MessageID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.
+The following SQL can be used to view the listed Have Replies Sent To email address.
+SELECT EmailReplyToAddress, * FROM SY04901
+WHERE EmailSeriesID = 3 and EmailDocumentID in (10,15)
+
+SELECT EmailReplyToAddress, * FROM SY04902
+WHERE EmailSeriesID = 3
+
+EmailSeriesID =
+2 – Financial
+3 – Sales
+4 – Purchasing
+5 – Inventory
+6 – Payroll
+7 – Project
+10 – 3rd Party
+99 – All
+
+EmailDocumentID – This is a unique integer indicating each type of document displayed in the window
+
+### Invalid Recipients
+This error can be cause by multiple things. Check the following:
+Make sure that there is a valid email address entered on the customer/vendor 
+Microsoft Dynamics GP will determine what email will be used when emailing differently depending on whether the Email Address based on Doc Type setting is enabled or not. This is found in the following path:
+Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type 
+
+Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type 
+
+If Email Address based on Doc Type is disabled:
+When this feature is disabled, Microsoft Dynamics GP determines the email address based on what is listed in the Internet Information widow for the Address ID on the Customer or Vendor card.
+The Internet Information window can be found using either of the following paths:
+Administration >> Setup >> Company >> Internet Information >> select vendor/customer >> select address ID
+Purchasing >> Cards>> Vendor >> click Internet Information button next to the Address lookup (looks like a little planet earth). 
+Sales >> Cards>> Customer >> click Internet Information button next to the Address lookup (looks like a little planet earth). 
+
+If Email Address based on Doc Type is enabled:
+When this feature is enabled, Microsoft Dynamics GP determines the email address based on what is listed in the Email Address Based on Doc Type window for the vendor/customer.
+The Email Address Based on Doc Type window can be found using either of the following paths:
+ 
+Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address
+
+Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address
+
 ### No Error, but no emails are sent (0 Documents Sent)
 
 Note: Common issues for RM Statements or EFT Remittances.  
@@ -272,54 +319,59 @@ Issue:  User is attempting to e-mail documents, but nothing happens. All excepti
 
 Cause: This issue has many different causes, and there are no errors.  
 
-Solution: Try the following:
+Solution: As there are many potentials causes it would be best to start with determining whether the original/canned report will email. 
+Set Template to Default Original/Canned Report.
+1.	Microsoft Dynamics GP menu >> Tools >> Setup >> System >> User Security
+2.	Select the username and company.
+3.	Click on the 'Alternate/Modified Forms and Reports ID:' link at the bottom of the window.
+4.	In the Alternate/Modified Forms and Reports window select the following: Product: Microsoft Dynamics GP Type: Reports Series: All
+5.	Click the plus button to expand the module folder. i.e., Purchasing
+6.	Click the plus button to expand the report. i.e., Check Remittance (If the report is not on the list at all then you do not have a modified option, please move to step 10.)
+7.	Select the default/canned 'Microsoft Dynamics GP' option. (Do NOT select modified here)
+8.	Click Save, Save, and Close.
+9.	Go to Reports >> Template Maintenance
+10.	In the Report Template Maintenance window, click the bar at the top that says, 'Click here to select a report'.
+11.	Select the option for 'More Reports' on the Drop-Down list. Product: Microsoft Dynamics GP Series: Purchasing Status: Original
+12.	Select '*Check Remittance' from the list and Click 'Select'.
+13.	In the Report Template Maintenance window, highlight 'Check Remittance*'
+14.	Click on the Assign >> Company button on the menu bar.
+15.	Check the company that you are testing the process in.
+16.	Highlight a company and click 'Set Default'.
+17.	Check the box next to 'Check Remittance*'
+18.	Click Save, Save, and Close
 
+If the default email sends out successfully, then we can deduce that the issue lies within the modification to either the RW report or directly on the template. The following are possible modifications that have caused this issue:
+* Check Section Options in RW for the modified report and make sure they mimic what is setup in our default report. Further details on this can be found in the problem section of [this blog](https://blogs.msdn.microsoft.com/developingfordynamicsgp/2013/02/25/copying-report-formats-between-reports-and-a-warning-about-word-templates/)
+* Check the Font sizes in RW (keep all fonts over size 5).
+* Missing Bookmarks [Verify all bookmarks are present](https://community.dynamics.com/gp/b/dynamicsgp/posts/what-are-bookmarks-and-how-are-they-used-in-microsoft-dynamics-gp-s-word-templates)
+* Text Boxes will cause the template to fail; text boxes should not be used as it can cause an error that is not seen within Microsoft Dynamics GP.
+* Remove Have Replies Sent to on both the Message ID and E-mail setup. The Message Setup window can be found using either path: 
+### System wide 
+* Administration >> Setup >> Company >> E-mail Message Setup
+* Administration >> Setup >> Company >> Workflow >> E-mail Message Setup
+### Module specific
+* Purchasing >> Setup >> E-mail Settings Purchasing >> Setup E-mail Settings
+* Sales >> Setup >> E-mail Settings >> Setup E-mail Settings
+* Default e-mail profile not setup as required, for more information on this you can review this [E-mail error in Microsoft Dynamics GP: "Either there is no default mail client or the current mail client cannot fulfill the message request. Please run Microsoft Outlook and set it as the default mail client."](https://support.microsoft.com/en-us/topic/e-mail-error-in-microsoft-dynamics-gp-either-there-is-no-default-mail-client-or-the-current-mail-client-cannot-fulfill-the-message-request-please-run-microsoft-outlook-and-set-it-as-the-default-mail-client-ade64dfb-58c4-26f6-7584-38db2310d0f0) Knowledge article.
+* If using either a Terminal Server or Citrix environment, Outlook must be open on the server if using the MAPI Server Type in System Preferences.
+* If using GP 2010, only 32-bit Office can be used.
+* If using GP 2013 or later, either 32 or 64-bit Office can be used. If using 32-bit Office either MAPI or Exchange can be used as the Server Type, however if using 64-bit Office the Server Type must be set to Exchange. 
+(Microsoft Dynamics GP >> Tools >> System >> Setup >> System Preferences 
+You can obtain further information on email requirements in this [System requirements - Dynamics GP | Microsoft Docs](/dynamics-gp/upgrade/system-requirements) section of our doc site.
+
+If the default does not email, then test a default report in GP to verify whether the basic email functionality is working, we generally recommend the User Report:
 Test a default report in GP, we recommend the User Report:
-
-1. Go to Administration >> Reports >> System >> Users  
-2. Under Reports: Select User Notes  
-3. Click New  
-4. Option: Enter TEST  
-5. Ranges: Select a User ID  
-6. Click Insert  
-7. Click Email Options  
-8. If using Exchange, it will prompt you for your Exchange Log On  
-9. Enter your own email address in the To field  
-10. Click OK  
-11. Bring up the TEST report and click Email  
-
-If the test email works, you will want to check the modified report in Report Writer:
-First, [check the Sections within Report Writer](https://blogs.msdn.microsoft.com/developingfordynamicsgp/2013/02/25/copying-report-formats-between-reports-and-a-warning-about-word-templates/)
-
-Check the Font sizes in Report Writer (keep all fonts over size 5).
-
-Review the Template for any issues:
-
-* Missing Bookmarks is the most frequent cause for the e-mails to fail outside of system issues.  
-
-    [Verify all bookmarks are present](https://community.dynamics.com/gp/b/dynamicsgp/posts/what-are-bookmarks-and-how-are-they-used-in-microsoft-dynamics-gp-s-word-templates)
-
-* Text Boxes will cause the template to fail.  
-
-    A user should never put a text box inside of a template.  It will cause an error when generating that may not show within GP
-
-* GP 2010 - 32-Bit Office must be used for GP2010 - Uninstall and reinstall >> Click 32 bit install
-
-* GP 2013 or newer 32 or 64-bit Office can be used with GP2013. If using 64 bit the server type in System Preferences (Microsoft Dynamics GP | Tools | System | Setup | System Preferences) must be set to Exchange.
-
-* Special characters in the reply to email address cause the e-mail to fail in Outlook.  If the user is using a reply to address, remove this from both the E-mail Message ID and module e-mail setup.  
-
-    Go to Sales >> Cards >> Customer >> E-Mail button and remove the Message ID
-
-    Also go to Sales >> Setup >> E-mail Settings Remove the any Reply To email address entered. Enter a new invoice for the customer and test the email. 
-
-* Default e-mail profile not setup
-    Review the  MAPI Specific issues Above for more information on this.
-
-* If using a terminal server/Citrix environment, Outlook must be open on the server for using MAPI
-
-* Another common issue with e-mail is when users get a new workstation. They may have to update the Registry when using MAPI.  They can do this by following the steps in the MAPI Specific issues above.
-
+1.	Go to Administration >> Reports >> System >> Users
+2.	Under Reports: Select User Notes
+3.	Click New
+4.	Option: Enter TEST
+5.	Ranges: Select a User ID
+6.	Click Insert
+7.	Click Email Options
+8.	If using Exchange, it will prompt you for your Exchange Log On
+9.	Enter your own email address in the To field
+10.	Click OK
+11.	Bring up the TEST report and click Email
 
 ### Send Documents in email check box is grayed out when trying to send a Remittance
 
@@ -368,8 +420,13 @@ Issue: User is attempting to email out a document that is not allowed in the com
 
 Solution: Try the following:
 
-1.	For Sales: Tools>>Setup>>Sales>>E-mail Settings. The document type you are trying to send needs to be selected in this window
-2.	For Purchasing:  Tools>>Setup>>Purchasing>>E-mail Settings. The document you are trying to send needs to be selected in this window.
+Verify that the document type that is expected to be emailed is selected in the Vendor and/or Customer E-mail Options window(s)
+
+Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> Send Forms as E-mail section >> Format drop down column
+Tools >> Setup >> Purchasing >> E-mail Settings
+
+Sales >> Cards >> Customer >> select a customer >> E-mail >> Send Forms as E-mail section >> Format drop down column
+Tools >> Setup >> Sales >> E-mail Settings
 
 
 ###  The company does not allow the sending of (DOCX, HTML, PDF, XPS) files
@@ -378,9 +435,9 @@ Note: Companywide setup issue
 
 Issue: User is attempting to email out a document type that is not allowed in the company Cause: GP will only allow emailing on document types you tell it to.
 
-Solution: Try the following:
-
-To resolve-Tools>>Setup>>Company>>E-mail Settings. Here you will need to enable the document type you are attempting to send
+Solution: 
+Verify that the document type that is expected to be emailed has a check mark in the File Formats Allowed option on the Company E-mail Setup window.
+Tools >> Setup >> Company >> E-mail Settings >> place a check mark next to the desired format.
 
 ![Form 4](media/email4.jpg)
 
@@ -420,8 +477,60 @@ Issue: User is attempting to email out a document type that has not been enabled
 
 Cause: Setup issue on the Customer/Vendor card
 
-Solution: To resolve this simply open the Customer/Vendor Card (cards -> Customer or Vendor) and click the email button. Each document you are attempting to email must be check marked. If these are grayed out, then the Company wide setting is also unmarked. You can find out about this here.
+Solution: 
+Verify that the document being emailed has a check mark in the Send Forms as E-mail on the Vendor and/or Customer E-mail Options window(s). 
+* Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> Send Forms as E-mail section
+* Sales >> Cards >> Customer >> select a customer >> E-mail >> Send Forms as E-mail section
+Each document you are attempting to email must have a check mark. If these are grayed out, then review the Purchase and/or Sales E-mail Setup window(s).
+* Sales >> Setup >> E-mail Settings
+* Purchasing >> Setup >> E-mail Settings
 
+
+### Document type cannot be sent.
+
+Solution:
+
+Verify that the document being emailed has a check mark in the Send Forms as E-mail on the Vendor and/or Customer E-mail Options window(s). 
+* Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> Send Forms as E-mail section
+* Sales >> Cards >> Customer >> select a customer >> E-mail >> Send Forms as E-mail section
+
+Each document you are attempting to email must have a check mark. If these are grayed out, then review the Purchase and/or Sales E-mail Setup window(s).
+* Sales >> Setup >> E-mail Settings
+* Purchasing >> Setup >> E-mail Settings
+
+A lot of times we see the table data gets flagged incorrectly between the two methods. If this happens, you should review the two tables below and make sure the EmailDocumentEnabled and EmailDocumentFormat columns are flagged correctly. 
+
+SELECT EmailDocumentEnabled, * FROM SY04903
+WHERE EmailSeriesID = 3 and EmailDocumentID = 10
+
+SELECT EmailDocumentEnabled, EmailDocumentFormat, * FROM SY04905
+WHERE EmailSeriesID = 3 and EmailDocumentID = 10
+
+If using **Word template**, the fields should be set like below: 
+EmailDocumentEnabled = 1
+EmailDocumentFormat = 
+1-DOCX
+2-HTML
+3-PDF
+4-XPS
+
+_The EmailDocumentFormat field will be set to either 1,2,3 or 4 depending on what document format you have selected for the customer in the Customer Email Options window._
+
+EmailSeriesID =
+2 – Financial
+3 – Sales
+4 – Purchasing
+5 – Inventory
+6 – Payroll
+7 – Project
+10 – 3rd Party
+99 – All
+
+EmailDocumentID – This is a unique integer indicating each type of document displayed in the window
+
+If using **Adobe Writer**, the fields should be set:
+EmailDocumentEnabled = 0
+EmailDocumentFormat = 0
 
 ###  A To, CC, or Bcc address could not be found
 
@@ -472,6 +581,29 @@ For example, run your Invoices for one half of your customers, then the other ha
 
 In rare cases the issue is caused by a conflict with a third party add-in. The easiest way to confirm if this may be the case is to rename the GP code folder and then run a repair of GP. This will recreate a new GP code folder without third parties. If the issue continues you can just delete the new folder and rename the old folder back. If the issue is resolved then you can add third parties one-by-one until the issue reoccurs.
 
+### Emails not showing in Sent Folder (successfully sent)
+deleted the old .OST file and let Outlook recreate it.
+•	Set the Sync Slider in Outlook to download all the data from the mailbox to the data file. 
+•	Switched between Online mode and then back to Cached mode. 
+•	Disabled Download shared folders.
+
+[Repair Outlook Data Files (.pst and .ost)](https://support.microsoft.com/en-us/office/repair-outlook-data-files-pst-and-ost-25663bc3-11ec-4412-86c4-60458afc5253)
+[Create an Outlook Data File (.pst) to save your information](https://support.microsoft.com/en-us/office/create-an-outlook-data-file-pst-to-save-your-information-17a13ca2-df52-48e8-b933-4c84c2aabe7c)
+
+### E-mail attachment contains file path name vs. document information.
+
+If e-mail contains a 'path name'
+
+The current only cause we’ve encountered for this is the Dynamics GP Workaround solution provided for [A program is trying to send an e-mail message on your behalf.](/dynamics-gp/installation/email-troubleshooting-guide#a-program-is-trying-to-send-an-e-mail-message-on-your-behalf) 
+1)	Open a Windows Explorer window on the Dynamics GP PC and go to C:\Windows. 
+2)	Open the WIN.ini file found in this folder. 
+3)	Look for the MAPIX setting in the file under the [Mail] section of the file 
+a)	Try Leaving this blank under [Mail], making sure that there is nothing under the [Mail] section not even the MAPIX (see attachment below). 
+b)	Close Dynamics GP and Outlook then relaunch them prior to re-testing. 
+
+### Unable to email from the Navigation list.
+
+Try turning off Business Analyzer. Also try marking the **Exclude Historic Transactions** restriction on the navigation list you are emailing from.
 
 ### Shared Mailbox for email
 
