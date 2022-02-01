@@ -357,7 +357,7 @@ If the default email sends out successfully, then we can deduce that the issue l
 * If using GP 2010, only 32-bit Office can be used.
 * If using GP 2013 or later, either 32 or 64-bit Office can be used. If using 32-bit Office either MAPI or Exchange can be used as the Server Type, however if using 64-bit Office the Server Type must be set to Exchange. 
 (Microsoft Dynamics GP >> Tools >> System >> Setup >> System Preferences 
-You can obtain further information on email requirements in this [System requirements - Dynamics GP | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics-gp/upgrade/system-requirements) section of our doc site.
+You can obtain further information on email requirements in this [System requirements - Dynamics GP | Microsoft Docs](/dynamics-gp/upgrade/system-requirements) section of our doc site.
 
 If the default does not email, then test a default report in GP to verify whether the basic email functionality is working, we generally recommend the User Report:
 Test a default report in GP, we recommend the User Report:
@@ -594,7 +594,7 @@ deleted the old .OST file and let Outlook recreate it.
 
 If e-mail contains a 'path name'
 
-The current only cause we’ve encountered for this is the Dynamics GP Workaround solution provided for [A program is trying to send an e-mail message on your behalf.](https://docs.microsoft.com/en-us/dynamics-gp/installation/email-troubleshooting-guide#a-program-is-trying-to-send-an-e-mail-message-on-your-behalf) 
+The current only cause we’ve encountered for this is the Dynamics GP Workaround solution provided for [A program is trying to send an e-mail message on your behalf.](/dynamics-gp/installation/email-troubleshooting-guide#a-program-is-trying-to-send-an-e-mail-message-on-your-behalf) 
 1)	Open a Windows Explorer window on the Dynamics GP PC and go to C:\Windows. 
 2)	Open the WIN.ini file found in this folder. 
 3)	Look for the MAPIX setting in the file under the [Mail] section of the file 
