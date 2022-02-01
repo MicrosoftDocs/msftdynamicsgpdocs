@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 1/30/2021
+ms.date: 1/31/2021
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -119,8 +119,10 @@ Cause: Microsoft Dynamics GP attempts to use its own packaged version of VBA, an
 
 Solution: The solution is to remove VBA, stay on a version of Office prior to 1810, or to use Exchange rather than MAPI functionality. 
 
-For more information regarding the cause of this issue, see [this blog post](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-crashes-closeswhen-emailing-after-office-update)
-and [blog post about Microsoft’s stance on the solutions](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-vba-futureconsiderations)
+For more information regarding the cause of this issue, see the following blog posts:
+
+- [Dynamics GP crashes closes when emailing after Office update](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-crashes-closes-when-emailing-after-office-update)  
+- [Microsoft’s stance on the solutions](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-vba-future-considerations)
 
 ## Exchange Specific Errors
 
