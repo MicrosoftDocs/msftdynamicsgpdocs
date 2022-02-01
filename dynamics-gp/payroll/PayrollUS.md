@@ -8761,7 +8761,7 @@ The GREAT news is that Human Resources is FREE with Microsoft Dynamics GP.
 Recommended to Track ACA Information:
 •	Install the Year End Updates each year for noted ACA changes.
 •	Install Human Resources
-•	Install Human Resources and Payroll Suite to utilize [Deductions In Arrears (DIA)](https://docs.microsoft.com/en-us/dynamics-gp/payroll/payrollextensions)
+•	Install Human Resources and Payroll Suite to utilize [Deductions In Arrears (DIA)](/dynamics-gp/payroll/payrollextensions)
     Deductions In Arrears allows you to track uncollected deductions to ensure they are recovered in a future pay run, vital for ACA coverage.
 •	Add all Employee Dependents
 •	Ensure Benefits and Deductions exist both in Human Resources and Payroll (Integration between HR and PR complete)
