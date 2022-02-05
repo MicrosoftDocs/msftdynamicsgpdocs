@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 1/31/2021
+ms.date: 2/4/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -678,6 +678,32 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 > You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication.
 > 
 > MFA is only supported with Exchange.
+
+### Dynamics GP, MFA and Third Party Authentication
+
+As more users start to use MFA a common question that may come up is does GP work or is compatible with a 3rd party authentication provider.  There are many, but a common one that comes up is DUO as an example.
+
+Microsoft Dynamics GP is not tested with any 3rd party authentication provider, thus they are not supported, but they may work in the environment depending on how it is setup.  Microsoft Dynamics GP support cannot assist with this process but below are recommendations for the setup.
+
+Dynamics GP makes a direct call to Azure for OAuth, we need OAuth to be there. That isn’t to say that DUO and GP are mutually exclusive. In general, if you have a single user setup with OAuth MFA, you can setup our MFA as normal, then everything appears to work after setup.
+
+The generic steps to get it to work are as follows:
+
+1. Disable the 3rd Party Authentication for a single Admin user
+2. Setup this user with classic Exchange/O365 MFA
+3. Use this user to setup the application registration in Azure and get an App ID setup
+4. Setup the App ID in GP, and follow the usual prompts
+5. Confirm this user can send a test email using the MFA functionality
+6. Confirm a user setup with 3rd Party Authentication can email out of GP
+
+(Optional) Swap the Admin user back to the 3rd Party Authentication after disabling O365 Authentication.
+
+Some items to watch out for:
+
+1. The new MFA functionality in Dynamics GP MUST be setup for DUO to work. It blocks Basic Auth, and the new functionality is needed to bypass this block
+2. A single user MUST be setup with OAuth MFA to complete the initial MFA setup within Azure and GP (the Email Settings window) This user can be swapped back to DUO after the setup.
+3. We cannot guarantee this will work in all environments since it hasn't really been fully tested.
+
 
 ## Emailing Setup Guide by Module
 
