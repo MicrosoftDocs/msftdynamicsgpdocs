@@ -598,12 +598,14 @@ For example, run your Invoices for one half of your customers, then the other ha
 In rare cases the issue is caused by a conflict with a third party add-in. The easiest way to confirm if this may be the case is to rename the GP code folder and then run a repair of GP. This will recreate a new GP code folder without third parties. If the issue continues you can just delete the new folder and rename the old folder back. If the issue is resolved then you can add third parties one-by-one until the issue reoccurs.
 
 ### Emails not showing in Sent Folder (successfully sent)
-Solution
 
-deleted the old .OST file and let Outlook recreate it.
-•	Set the Sync Slider in Outlook to download all the data from the mailbox to the data file. 
-•	Switched between Online mode and then back to Cached mode. 
-•	Disabled Download shared folders.
+**Solution**
+
+Delete the old .OST file and let Outlook recreate it.
+
+- Set the Sync Slider in Outlook to download all the data from the mailbox to the data file.  
+- Switched between Online mode and then back to Cached mode.  
+- Disabled Download shared folders.
 
 [Repair Outlook Data Files (.pst and .ost)](https://support.microsoft.com/en-us/office/repair-outlook-data-files-pst-and-ost-25663bc3-11ec-4412-86c4-60458afc5253)
 [Create an Outlook Data File (.pst) to save your information](https://support.microsoft.com/en-us/office/create-an-outlook-data-file-pst-to-save-your-information-17a13ca2-df52-48e8-b933-4c84c2aabe7c)
