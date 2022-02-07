@@ -64,27 +64,19 @@ When you use the Send/Receive button, or close/reopen Outlook, the email sends w
 **Cause**
 Add-in for Gmail Multi-factor authentication. This is a paid add-in that we believe causes the issue.  
 
-<details><summary>Solution</summary>
-      <p>
-
+**Solution**
 Compare a clean Outlook add-in list to the client having the issue to make sure there are no extra add-ins.  
 Recommend that they [remove the add-in as it appears like it is no longer needed](https://support.office.com/article/add-a-gmail-account-to-outlook-701916679c52-4581-990e-e30318c2c081)
-  </p>
-      </details>
-
 ### No default mail client, or the current mail client cannot fulfill the message request Please run Microsoft Outlook and set it as the default mail client.  
 
 **Note** Recommend you review Outlook version first – MAPI only works with 32bit!  
 
 **Issue** Error appears when attempting to email using MAPI anywhere in GP Cause: Either a Profile is not setup, or Outlook cannot reach it using MAPI.  
 
-<details><summary>Solution</summary>
-      <p>
+**Solution**
 You can go through [this KB](https://support.microsoft.com/help/4052892/e-mail-error-in-microsoftdynamics-gp-either-there-is-no-default-mail), focus on A and B as these are common causes.  
 
 You will want to make sure that Outlook is also set up as the default application for mail when you search for Default Apps in Windows 10.  
-  </p>
-      </details>
 
 ### A program is trying to send an e-mail message on your behalf
 
@@ -94,9 +86,7 @@ You will want to make sure that Outlook is also set up as the default applicatio
 
 **Cause** Simply put, Outlook does not start with any Microsoft Dynamics GP specific trusts, so they need to be added.  
 
-<details><summary>Solution</summary>
-      <p>
-
+**Solution**
 There are two solutions to get this message to stop appearing, we currently recommend the Outlook solution (first one in the list) as it has no side-effects.  
 The Microsoft Dynamics GP solution does have side effects which are mentioned in the link provided  
 
@@ -113,8 +103,6 @@ The Microsoft Dynamics GP solution does have side effects which are mentioned in
         This has many side effects which are mentioned in the above article.
 
 Note: This may need to be redone anytime you upgrade Office  
-  </p>
-      </details>
 
 ### Microsoft Dynamics GP Crashes after an Office Update
 
@@ -126,16 +114,13 @@ This ONLY effect emailing functionality. This includes any time where an email a
 
 **Cause** Microsoft Dynamics GP attempts to use its own packaged version of VBA, and Office no longer allows this.
 
-<details><summary>Solution</summary>
-      <p>
+**Solution**
 The solution is to remove VBA, stay on a version of Office prior to 1810, or to use Exchange rather than MAPI functionality. 
 
 For more information regarding the cause of this issue, see the following blog posts:
 
 - [Dynamics GP crashes closes when emailing after Office update](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-crashes-closes-when-emailing-after-office-update)  
 - [Microsoft’s stance on the solutions](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-vba-future-considerations)
-  </p>
-      </details>
 
 ## Exchange Specific Errors
 
@@ -149,8 +134,7 @@ Issue: Something is keeping Microsoft Dynamics GP from being able to successfull
 
 Cause: There are a multitude of possible causes for this issue. The most common issues are an Autodiscover issue, an issue with MFA (Multifactor Authentication), or Basic Authentication being disabled.  
 
-<details><summary>Solution</summary>
-      <p>
+**Solution**
 The following path is the best route for generic login issues: 
 
 1. Confirm MFA is disabled  
@@ -167,8 +151,6 @@ The following path is the best route for generic login issues:
 
 >[!NOTE]
 > With *Login Failed* type of error messages, we have seen some cases where TLS 1.0 was disabled, due to the looming end date and vulnerabilities. If you are still on an older version of Microsoft Dyanmics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
-  </p>
-      </details>
 
 
 ## Generic Errors
@@ -181,8 +163,7 @@ Issue:  User is attempting to e-mail the customer statement but is receiving an 
 
 Cause: When disabling the customer statements via Tools>>Setup>>Sales>>E-mail settings, it doesn’t update the SY04905 table. 
 
-<details><summary>Solution</summary>
-      <p>
+**Solution**
 Use the steps below to workaround around the error message:
 
 To get around this, the users need to follow these steps to update the customer cards before they disable the Customer Statement:
@@ -198,8 +179,6 @@ SELECT * FROM SY04905 WHERE EmailDocumentID = '10'
 Missing Records in either the SY04904 and/or SY04905 table can also generate this issue:
 SELECT * FROM RM00101 WHERE CUSTNMBR not in (SELECT EmailCardID FROM SY04904)
 SELECT * FROM RM00101 WHERE CUSTNMBR not in (SELECT EmailCardID FROM SY04905)
-  </p>
-      </details>
 
 ### Unknown Error Occurred
 
@@ -209,8 +188,7 @@ Issue:  User is attempting to e-mail remittances and/or statements but the error
 
 Cause: This error has many causes, usually comes down to customizations on the Template, or odd characters in the email addresses used.  
 
-<details><summary>Solution</summary>
-      <p>
+**Solution**
 Try the following:
 
 Error messages when you email RM Statements in Microsoft Dynamics GP: [Unknown Error or Insufficient Memory](https://community.dynamics.com/gp/b/dynamicsgp/posts/error-messages-when-you-email-rm-statements-in-microsoft-dynamics-gp-unknown-error-or-insufficient-memory)
@@ -287,13 +265,10 @@ For more information, see [this blog post](https://blogs.msdn.microsoft.com/mahe
 
 > [!NOTE]
 > Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
-> 
-  </p>
-      </details>
+ 
 
 ### Insufficient Memory
-<details><summary>Solution</summary>
-      <p>
+**Solution**
 
 1. Remove Have Replies Sent to on both the Message ID and E-mail setup. The Message Setup window can be found using the either pathing:
 System wide Administration >> Setup >> Company >> E-mail Message Setup Administration >> Setup >> Company >> Workflow >> E-mail Message Setup
@@ -315,12 +290,11 @@ EmailSeriesID =
 99 – All
 
 EmailDocumentID – This is a unique integer indicating each type of document displayed in the window
-  </p>
-      </details>
+
 
 ### Invalid Recipients
-<details><summary>Invalid Recipients</summary>
-      <p>
+
+Invalid Recipients
 This error can be cause by multiple things. Check the following:
 Make sure that there is a valid email address entered on the customer/vendor 
 Microsoft Dynamics GP will determine what email will be used when emailing differently depending on whether the Email Address based on Doc Type setting is enabled or not. This is found in the following path:
@@ -342,11 +316,10 @@ The Email Address Based on Doc Type window can be found using either of the foll
 Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address
 
 Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address
-      </p>
-      </details>
+
 ### No Error, but no emails are sent (0 Documents Sent)
-<details><summary>No Error, but no emails are sent (0 Documents Sent)</summary>
-      <p>
+
+No Error, but no emails are sent (0 Documents Sent)<
 Note: Common issues for RM Statements or EFT Remittances.  
 
 Issue:  User is attempting to e-mail documents, but nothing happens. All exception reports will show that no documents were sent.  
@@ -406,12 +379,12 @@ Test a default report in GP, we recommend the User Report:
 9.	Enter your own email address in the To field
 10.	Click OK
 11.	Bring up the TEST report and click Email
-      </p>
-      </details>
+
       
 ### Send Documents in email check box is grayed out when trying to send a Remittance
-<details><summary>Send Documents in email check box is grayed out when trying to send a Remittance</summary>
-      <p>
+
+Send Documents in email check box is grayed out when trying to send a Remittance
+
 Note: Common issues for PM EFT Remittances
 
 Issue: User is attempting to email Remittances, but the checkbox is grayed out:
@@ -430,9 +403,8 @@ In the Send Forms as Email section confirm that Vendor Remittance check box is c
 
 If this is correct, check to see if Mekorma MICR is installed, if so make sure the Mekorma MICR System Options are set to have email enabled, or else the **Send Document in email** checkbox in the Remittance window will not be available to mark (or grayed out). To check this setting, go to Microsoft Dynamics GP | Tools | Setup | System | Mekorma MICR | System Options. Choose the **Enable Email Remittance** field, and then click Save.
 
-[For more information, see this blog post about this process](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/10/24/quick-step-guide-to-ehttps://community.dynamics.com/gp/b/dynamicsgp/archive/2016/10/24/quick-step-guide-to-e-mail-pm-eft-remittances-in-mdgp-2015-2016mail-pm-eft-remittances-in-mdgp-2015-2016)
-  </p>
-      </details>
+[For more information, see this blog post about this process](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/10/24/quick-step-guide-to-e-mail-pm-eft-remittances-in-mdgp-2015-2016)
+
 
 ### Email button is grayed out in Sales Order Processing
 
@@ -441,8 +413,6 @@ Note: Unique to Sales Order Processing
 Issue: User is attempting to from a Sales Order Processing window, but the option to email is grayed out.
 
 Cause: GP will only email the Blank Paper options for reports.
-<details><summary>Solution</summary>
-      <p>
 
 Solution: Try the following:
 1. Go to: Sales >> Setup >> Sales Order Processing >> Sales Document Setup button >> select the
@@ -451,17 +421,11 @@ Solution: Try the following:
 
 ![Form 3](media/email3.jpg)
 
-</p>
-      </details>
-
 ### You must activate e-mail functionality for this document before it can be sent in email
 
 Note: Companywide setup issue
 
 Issue: User is attempting to email out a document that is not allowed in the company Cause: GP will only allow emailing on documents you tell it to.
-
-<details><summary>Solution</summary>
-      <p>
 
 Solution: Try the following:
 
@@ -472,8 +436,6 @@ Tools >> Setup >> Purchasing >> E-mail Settings
 
 Sales >> Cards >> Customer >> select a customer >> E-mail >> Send Forms as E-mail section >> Format drop down column
 Tools >> Setup >> Sales >> E-mail Settings
-  </p>
-      </details>
 
 
 ###  The company does not allow the sending of (DOCX, HTML, PDF, XPS) files
@@ -481,16 +443,13 @@ Tools >> Setup >> Sales >> E-mail Settings
 Note: Companywide setup issue
 
 Issue: User is attempting to email out a document type that is not allowed in the company Cause: GP will only allow emailing on document types you tell it to.
-<details><summary>Solution</summary>
-      <p>
+Solution
 
 Solution: 
 Verify that the document type that is expected to be emailed has a check mark in the File Formats Allowed option on the Company E-mail Setup window.
 Tools >> Setup >> Company >> E-mail Settings >> place a check mark next to the desired format.
 
 ![Form 4](media/email4.jpg)
-</p>
-      </details>
 
 
 ###  A word template must be assigned before sending this document
@@ -501,8 +460,7 @@ Issue: User is attempting to email out a modified report that has no correspondi
 
 Cause: There is no template assigned to email
 
-<details><summary>Solution</summary>
-      <p>
+Solution
 
 Solution: Try one the following:
 
@@ -511,8 +469,6 @@ Solution: Try one the following:
 3.	Reports -> Template Maintenance
 
 Don’t forget to assign the template for either option by using the Assign button on the Template Maintenance window (Reports -> Template Maintenance)
-</p>
-      </details>
 
 
 ###  Dynamics GP shows Templates Processing, but they never complete or an error appears
@@ -523,14 +479,10 @@ Issue: User is attempting to email out a report that has no assigned template, b
 
 Cause: There is a template setup, but none are assigned to the company
 
-<details><summary>Solution</summary>
-      <p>
+Solution
 
 To resolve this simply assign a template for the report by using the Assign button on the Template Maintenance window (Reports -> Template Maintenance)
 Also check to make sure that that Dexterity Shared Components is installed at a version that matches your version of Microsoft Dynamics GP.
-
-</p>
-      </details>
 
 ###  This document type cannot be sent in e-mail for this customer/vendor
 
@@ -539,8 +491,7 @@ Note: Common for newly entered customers/vendors, or those that have been import
 Issue: User is attempting to email out a document type that has not been enabled for the customer/vendor
 
 Cause: Setup issue on the Customer/Vendor card
-<details><summary>Solution</summary>
-      <p>
+Solution
 
 Verify that the document being emailed has a check mark in the Send Forms as E-mail on the Vendor and/or Customer E-mail Options window(s). 
 * Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> Send Forms as E-mail section
@@ -548,15 +499,10 @@ Verify that the document being emailed has a check mark in the Send Forms as E-m
 Each document you are attempting to email must have a check mark. If these are grayed out, then review the Purchase and/or Sales E-mail Setup window(s).
 * Sales >> Setup >> E-mail Settings
 * Purchasing >> Setup >> E-mail Settings
-</p>
-      </details>
-
 
 ### Document type cannot be sent.
 
-<details><summary>Solution</summary>
-      <p>
-
+Solution
 
 Verify that the document being emailed has a check mark in the Send Forms as E-mail on the Vendor and/or Customer E-mail Options window(s). 
 * Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> Send Forms as E-mail section
@@ -599,8 +545,6 @@ EmailDocumentID – This is a unique integer indicating each type of document di
 If using **Adobe Writer**, the fields should be set:
 EmailDocumentEnabled = 0
 EmailDocumentFormat = 0
-</p>
-      </details>
 
 ###  A To, CC, or Bcc address could not be found
 
@@ -610,8 +554,7 @@ Issue: User is attempting to email out for a customer/vendor that does not have 
 
 Cause: Setup issue on the Customer/Vendor card
 
-<details><summary>Solution</summary>
-      <p>
+Solution
 
 **Make sure that there is a valid email address listed on the vendor/customer.**
 
@@ -635,8 +578,6 @@ The Email Address Based on Doc Type window can be found using either of the foll
 - Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address
 
 For further information on the Email Address based on Doc Type feature, check out Andrea’s [blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/draft-microsoft-dynamics-gp-2013-r2-email-document-new-features#:~:text=When%20you%20click%20on%20an%20ellipsis%20button%20next,to%20assign%20them%20to%20a%20specific%20document%20type.)
-  </p>
-      </details>
 
 
 ###  You must have the Microsoft Save as PDF or XPS add-in for 2007 Microsoft Office
@@ -647,8 +588,7 @@ Issue: User is attempting to send out a large set of emails
 
 Cause: Performance problem
 
-<details><summary>Solution</summary>
-      <p>
+Solution
 [This KB article can sometimes resolve the issue](https://support.microsoft.com/topic/you-must-have-the-microsoft-save-as-pdf-or-xps-add-in-for-2007-microsoft-office-0d9311d8-265e-1cc0-5df2-a5df3297db24)
 
 The more consistent solution is to simply cut down on the number of emails you are sending out at once. 
@@ -656,12 +596,9 @@ The more consistent solution is to simply cut down on the number of emails you a
 For example, run your Invoices for one half of your customers, then the other half.
 
 In rare cases the issue is caused by a conflict with a third party add-in. The easiest way to confirm if this may be the case is to rename the GP code folder and then run a repair of GP. This will recreate a new GP code folder without third parties. If the issue continues you can just delete the new folder and rename the old folder back. If the issue is resolved then you can add third parties one-by-one until the issue reoccurs.
-  </p>
-      </details>
 
 ### Emails not showing in Sent Folder (successfully sent)
-<details><summary>Solution</summary>
-      <p>
+Solution
 
 deleted the old .OST file and let Outlook recreate it.
 •	Set the Sync Slider in Outlook to download all the data from the mailbox to the data file. 
@@ -670,12 +607,9 @@ deleted the old .OST file and let Outlook recreate it.
 
 [Repair Outlook Data Files (.pst and .ost)](https://support.microsoft.com/en-us/office/repair-outlook-data-files-pst-and-ost-25663bc3-11ec-4412-86c4-60458afc5253)
 [Create an Outlook Data File (.pst) to save your information](https://support.microsoft.com/en-us/office/create-an-outlook-data-file-pst-to-save-your-information-17a13ca2-df52-48e8-b933-4c84c2aabe7c)
-  </p>
-      </details>
 
 ### E-mail attachment contains file path name vs. document information.
-<details><summary>Solution</summary>
-      <p>
+Solution
 
 If e-mail contains a 'path name'
 
@@ -685,16 +619,11 @@ The current only cause we’ve encountered for this is the Dynamics GP Workaroun
 3)	Look for the MAPIX setting in the file under the [Mail] section of the file 
 a)	Try Leaving this blank under [Mail], making sure that there is nothing under the [Mail] section not even the MAPIX (see attachment below). 
 b)	Close Dynamics GP and Outlook then relaunch them prior to re-testing. 
-  </p>
-      </details>
+
 
 ### Unable to email from the Navigation list.
-<details><summary>Solution</summary>
-      <p>
-
+Solution
 Try turning off Business Analyzer. Also try marking the **Exclude Historic Transactions** restriction on the navigation list you are emailing from.
-  </p>
-      </details>
 
 ### Shared Mailbox for email
 
