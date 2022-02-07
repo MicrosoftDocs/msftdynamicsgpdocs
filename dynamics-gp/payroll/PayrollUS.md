@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/3/2021
+ms.date: 1/31/2021
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -8744,6 +8744,145 @@ Microsoft Dynamics GP check forms are listed here:
 - DD_Mask_Dollar
 
 - DD_Mask_Words
+
+
+## Part 8: Affordable Care Act - ACA
+
+It is mandatory as an Employer that you report 1095-C information to your employees each year.  
+Typically each year changes will be made to the 1095-C form that will require you to install an update to be current with these changes.
+
+The 1095-C form can be printed out of Dynamics GP and includes all the lines on the form with instructions so no extra form needs to be purchased and you can print them on blank paper.  There is also an Employer summary form (1094-C), that you can also print in Dynamics GP.
+
+Requirements to Implement Changes Associated with the Affordable Care Act:
+
+In addition to Payroll, the Human Resources module is required to track Affordable Care Act information in Microsoft Dynamics GP.
+The GREAT news is that Human Resources is FREE with Microsoft Dynamics GP.
+
+Recommended to Track ACA Information:
+•	Install the Year End Updates each year for noted ACA changes.
+•	Install Human Resources
+•	Install Human Resources and Payroll Suite to utilize [Deductions In Arrears (DIA)](/dynamics-gp/payroll/payrollextensions)
+    Deductions In Arrears allows you to track uncollected deductions to ensure they are recovered in a future pay run, vital for ACA coverage.
+•	Add all Employee Dependents
+•	Ensure Benefits and Deductions exist both in Human Resources and Payroll (Integration between HR and PR complete)
+
+**Health Insurance Setup Window**
+The Offer Of Coverage Code (line 14)
+Safe Harbor Code (line 16) 
+Employee Required Contribution line 15 (Lowest Cost Premium)
+fields were added to accommodate ACA changes implemented in the Health Insurance Setup window. 
+
+To open the Health Insurance Setup window, click the HR and Payroll series button, click Human Resources on the Setup content pane, click Benefits and Deductions and then click Health Insurance.
+
+The codes you assign in this window will be stored in the BE020230 - HR Benefit Setup table. Users can ‘roll down’ changes made here to the Health Insurance Enrollment Window to update the employee level if desired.
+
+The same above fields are also added to the Human Resource Health Insurance Enrollment window.  
+To open the Health Insurance Enrollment window, click the HR and Payroll series button, click Human Resources on the Cards content pane, click Employee -Benefits and then click Health Insurance.
+
+Users can assign appropriate Affordable Care codes in this window, or code changes can be ‘rolled down’ from the Health Insurance Setup window. ACA codes in the employee enrollment window are stored in the BE010130 - HR Benefit Master table.
+
+
+**Employee Dependents Window**
+The Health Insurance Coverage field was added accommodate ACA changes implemented in the Employee Dependents window. To open the Employee Dependents window, click the HR and Payroll series button, click Human Resources on the Cards content pane, click Employee, and then click Dependents.
+
+Things to know about this window:
+•	Dependents in this window will default to ‘covered’.
+•	If the dependent is not covered, you will need to change the ‘Health Ins. Coverage’ to ‘not covered’ in this window. Dependent coverage information is stored in the UPR00904 table and can be updated throughout the year.
+•	Dependent coverage data in the UPR00904 is not updated retroactively. As such, if the dependent is entered into the system on 03/15/2021: the UPR00904 will store records for that dependent starting in March of 2021 and going forward.
+
+
+**Table Information for ACA Tracking**
+
+UPR40105 - UPR 1095 Setup File
+The UPR40105 holds ACA codes and descriptions. You can see the data stored in this table when you open the Affordable Care Act Codes window.
+This table is utilized to allow users to fill out boxes that will show on the Federal Government’s 1095-C form.
+
+UPR00904 – Payroll Master Dependent ACA
+The UPR00904 table stores a record for every dependent associated with each employee.
+Things to know about this table:
+•	Health Insurance Dependent Coverage (HealthInsDependentCov) field meaning:
+o	1 = Covered			2 = Not Covered
+•	Dependents are marked as ‘covered’ in this table by default
+•	This information can be updated throughout the year, and is tracked on a monthly basis
+
+UPR00905 – Payroll Master Employee ACA
+The UPR00905 table stores Affordable Care Act Codes assigned in the Health Insurance Enrollment window.
+•	ACA Codes can be updated in the Health Insurance Enrollment window.
+•	These codes are tracked monthly throughout the year.
+•	As you make changes to employee benefit records for ACA it will store the GP user date of the change to this table to determine what code will print each month.
+•	If there are multiple date lines in a month, we will take the "latest" date of change for that month.
+
+
+UPR10110 – Payroll Master Dependent ACA History and UPR10111 - Payroll Master Employee ACA History tables
+•	The UPR10110 will be updated during the year-end close is process in Payroll using data from the UPR00904 (Payroll Master Dependent ACA) table. 
+•	The UPR10111 will be updated during the year-end close is process in Payroll using data from the UPR00905 (Payroll Master Employee ACA) table. 
+
+The 1095-C (given to employee from the employer - like a W2- to show Employer Provided Health Insurance Offer and Coverage) and 1094-C (summary the employer fills out of all employees that received the 1095-C) forms will be added in Quarter 1 of 2015.
+When you create the Year End Wage File for the year, all Affordable Care Act information you've been tracking will be accumulated to the year end tables, similar to how we accumulate the W2 information. 
+
+Just like the W2:
+•	You can edit 1095-C information if needed in the Edit W2 window.
+•	Edits will lost if the Year End Wage File is removed and recreated.
+
+***Make sure you are printing the ORIGINAL form and you do not have security set to an older modified version of the 1095-C form***
+
+**Items to help you as you track ACA Information**
+
+1. We do not use the benefit start date for ACA tracking, when a user updates Benefit ACA fields in the window, we track the GP user date at the time and save the changes to the UPR0095 table, this table is then used when you create the year end wage file for the year.
+
+2. There is no electronic filing for ACA in Dynamics GP.  There are ISV products that offer this solution if you need it.
+Greenshades and Integrity-Data will allow you to track ACA in Microsoft Dynamics GP, and just do the electronic filing for you at a lower cost option.
+Thanks to both ISV's for doing this!!
+[Greenshades](https://www.greenshades.com)             
+
+[Integrity Data](http://www.integrity-data.com)
+
+3. You can now add a dependent on the fly in the Edit W2 window under the Dependents button (if one was forgot and the year end wage file has been created), this was a large request from our customers.
+
+4. The all 12 month checkbox is not required for employee so we are populating each individual amount for employee,but on the dependent the covered all 12 month box will be populated.
+
+5. One of the items we still struggle with is inactive employees and to not print a 1095-C form.  With how the ACA rules changed, now you cannot leave a box blank/empty, so when employee Joe leaves the company, what customers do is put 2A in Box 16 - meaning Employee not employed during the month.  When you click the PRINT button for the 1095-C form, if an employee is 2A for all 12 months, the form will NOT print.  I feel this is a great indicator to go by.  You will see the employees get complied in the year end, (incase you need to edit this employee and make changes to the record) but when you go to print, those employees will not be included.
+
+Remember, it is when you click the PRINT button for the 1095-C form, if an employee is 2A for all 12 months, the form will not print. 
+
+If you have not been doing this all year, you can use this script too and remove employees for 1095-C printing.
+This removes employees that have no wages in the year, if you are using payroll we assume employees would have wages.  Back up's are always recommended.
+
+delete a from UPR10111 a
+inner join UPR10101 b
+on a.EMPLOYID = b.EMPLOYID
+and a.YEAR1 = b.RPTNGYR
+where b.RPTNGYR = '2021'
+and b.WGTPCOMP = 0
+
+
+6. Multiple insurance plans (dental and vision examples) dishevel the 1095-C reporting.
+As you review your ACA process YOY another area that was causing ACA data inconsistencies was insurance codes that are non ACA reportable, such as Vision or Dental as an example.  How Dynamics GP will decide to "identify" true ACA recordable codes is from the Health Insurance Setup on the Human Resource side. The field we will use to determine if the code is ACA recordable is at the Setup, None and None for line 14 and 16.  Then we will NOT include this code when we create the year end wage file.
+
+7. When you need to change what is reporting for an employee for a month, change the Dynamics GP user date to the end of that month (lower left of GP window), example, you want to change the month of March and on, set the Microsoft Dynamics GP user date to 3/31/2022 make your record change, and recreate the year end wage file and you will see the change, you can also do this by rolling down from setup by a date.  We always take the last record of the month for what should print on the form.
+
+8. We have had a couple of requests where a few forms have been rejected by the IRS.  Make sure if you are submitting forms, the 1094-C, we only print 1 page as that is all that is in Dynamics GP for information, but the form is actually more pages.  Make sure to complete the entire 1094-C prior to sending in to the IRS.
+
+9. If you print Dependents, they now all moved to their own page (as of 2020 reporting year), no dependents will print on the first page of the 1095-C form as they have in years past.  To print Dependents, make sure to mark the box in the Print W-2 window - Employer provided self-insured coverage.
+
+10. Employee's Age will be calculated and printed on the form (as of 2020 reporting year).  If the employee date of birth is not populated on the employee record, the age will not calculate correctly.
+
+The age will be calculated on the fly when you print the 1095-C form, it is not stored when you create the year end wage file.  It takes the year the year end wage file is created minus birthday year.
+
+The employee birth date is stored under the Additional Information window from the main employee maintenance record, table UPR00100 field brthdate
+
+select brthdate, * from UPR00100
+
+11. The Plan Start Month was required starting with the 2020 year.  We made some modifications to this in the 2021 year.  It will no longer calculate as the "employee" plan start month but Employer plan start month.  
+
+Plan Start Month should indicate the beginning of the plan year for the health plan that was offered to the employee. 
+
+For example, if an employer’s plan year begins in January for all of its employees, the employer will complete the plan start month box for all of its Forms 1095-C with 01. However, if an employer’s plan year operates on a fiscal year of July through June for all of its employees, the employer will complete the plan start month box for all its Forms 1095-C with 07.
+
+We also added this as a field in the Print W-2 window for you to populate to print on the forms.    
+
+ ![ACA](media/ACA2022.JPG)
+
 
 ## Additional Feature Functionality added to Payroll
 
