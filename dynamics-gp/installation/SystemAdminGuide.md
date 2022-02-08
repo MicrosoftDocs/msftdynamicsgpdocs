@@ -616,25 +616,23 @@ User A.
 
 1. Open the Assign Named Printers window.
 
-(Administration \>\> Setup \>\> System \>\> Named Printers)
+   (Administration \>\> Setup \>\> System \>\> Named Printers)
 
 1. Choose Setup to open the Setup Named Printers window, then choose Advanced
     to open the Setup Named Printers – Advanced window.
 
-2. Select a user ID to use as the template. A list of all other users will
+1. Select a user ID to use as the template. A list of all other users will
     appear in the bottom of the window.
 
-3. Mark the user IDs that will be linked to this template.
+1. Mark the user IDs that will be linked to this template.
 
-Visual cues help you distinguish the different types of users. The following
+   Visual cues help you distinguish the different types of users. The following
 icons are used.
 
-| **Icon**                                   | **Description**                           |
-|--------------------------------------------|-------------------------------------------|
-| [./media/image12.jpg](./media/image12.jpg) | The user ID is linked to a template user. |
-| [](./media/image10.jpg)                    | The user ID is a template user.          |
-
-~   
+   | **Icon**                                              | **Description**                           |
+   |-------------------------------------------------------|-------------------------------------------|
+   | :::image type="icon" source="./media/image12.jpg""::: | The user ID is linked to a template user. |
+   | :::image type="icon" source="./media/image10.jpg""::: | The user ID is a template user.           |
 
 1. Choose OK to save your changes.
 
@@ -651,12 +649,13 @@ Use the Setup Named Printers window to change printer ID settings.
 
 1. Open the Assign Named Printers window.
 
-(Administration \>\> Setup \>\> System \>\> Named Printers) 2. Choose Setup
-to open the Setup Named Printers window.
+   (Administration \>\> Setup \>\> System \>\> Named Printers)
+
+1. Choose Setup to open the Setup Named Printers window.
 
 1. Using the lookup button, select the printer ID.
 
-2. Make your changes and choose Save.
+1. Make your changes and choose Save.
 
 #### Changing machine ID settings
 
