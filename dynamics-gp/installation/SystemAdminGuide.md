@@ -631,8 +631,8 @@ icons are used.
 
    | **Icon**                                              | **Description**                           |
    |-------------------------------------------------------|-------------------------------------------|
-   | :::image type="icon" source="./media/image12.jpg""::: | The user ID is linked to a template user. |
-   | :::image type="icon" source="./media/image10.jpg""::: | The user ID is a template user.           |
+   | :::image type="icon" source="./media/image12.jpg"::: | The user ID is linked to a template user. |
+   | :::image type="icon" source="./media/image10.jpg"::: | The user ID is a template user.           |
 
 1. Choose OK to save your changes.
 
