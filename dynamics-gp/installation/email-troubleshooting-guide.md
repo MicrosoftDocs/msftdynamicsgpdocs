@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 2/4/2022
+ms.date: 2/14/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -20,16 +20,18 @@ The goal is to make everyone an emailing expert!
 This document can be leveraged to aid in troubleshooting all areas of emailing out of Microsoft Dynamics GP from the legacy Standard Report Writer Statements to Word Templates, or Workflow.
 
 > [!NOTE]
-> Before Microsoft Dynamics GP's October 2020 (18.3 and later) release, Dynamics GP required that both TLS 1.0 and Basic Authication (no MFA) be enabled for Exchange and Workflow emailing in Dynamics GP.
+> Before Microsoft Dynamics GP's October 2020 (18.3 and later) release, Dynamics GP required that both TLS 1.0 and Basic Authentication (no Modern Authentication) be enabled for Exchange and Workflow emailing in Dynamics GP.
 
 > After Microsoft Dynamics GP's October 2020 (18.3 and later) release, Dynamics GP has added the functionality to use both  TLS 1.2 and/or Multi-Factor Authentication (MFA).
-> You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dynamics GP, but it does use Modern Authentication. 
+> You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dynamics GP, but it does use Modern Authentication vs Basic Authentication.
 > 
 > If you are still on an older version of Microsoft Dynamics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 >
-> When Basic Authentication is deprecated (October 1, 2022) you will need to be on a version of Dynamics GP where you can use MFA (18.3 or later).
+> When Basic Authentication is deprecated (October 1, 2022) you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
 
-We have seen an increase in cases where emails are beginning to fail from within Dynamics GP.  This is especially true for older versions of GP (18.2 and prior) that have not enabled MFA for Dynamics GP.  The Exchange team is temporarily disabling basic authentication as a way to remind us that a bigger change is coming.
+We have seen an increase in cases where emails are beginning to fail from within Dynamics GP.  This is especially true for older versions of GP (18.2 and prior) that do not have Modern Authentication for Dynamics GP.  The Exchange team is temporarily disabling Basic Authentication as a way to remind us that a bigger change is coming.
+
+Review the below blogs for workarounds if you are on an older version of Microsoft Dyanmics GP:
 
 [**WORKFLOW emails intermittently fail**](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-workflow-intermittent-emails-failing)
 
@@ -38,11 +40,10 @@ We have seen an increase in cases where emails are beginning to fail from within
 
 All email issues can be safely split up into three sets of issues:
 
-* Issues unique to MAPI  
-* Issues unique to Exchange  
-* Issues that both methods have in common  
-
-This is how the documentation is organized: Starting with MAPI, moving onto Exchange, and ending with the common errors.  
+* [Issues unique to MAPI](#mapispecificerrors) 
+* [Issues unique to Exchange](#exchangespecificerrors)
+* [Workflow](#workflow)
+* [Issues unique to MFA-Multi-Factor Authentication](#mfa) 
 
 To determine whether MAPI or Exchange is being used check the System Preference window. (Administration >> Setup >> System >> System Preferences)
 
@@ -51,7 +52,7 @@ To determine whether MAPI or Exchange is being used check the System Preference 
 
 ![Form](media/syspref.jpg)
 
-## MAPI Specific Errors
+## <a name=mapispecificerrors></a>MAPI Specific Errors
 Dynamics GP uses MAPI to open Outlook to send emails directly from the Outlook client.
 
 ### Emails Stuck in Outbox within Outlook. 
@@ -122,7 +123,7 @@ For more information regarding the cause of this issue, see the following blog p
 - [Dynamics GP crashes closes when emailing after Office update](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-crashes-closes-when-emailing-after-office-update)  
 - [Microsoft’s stance on the solutions](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-vba-future-considerations)
 
-## Exchange Specific Errors
+## <a name=exchangespecificerrors></a>Exchange Specific Errors
 
 Dynamics GP uses Exchange Autodiscover to find the Exchange EWS endpoint, then uses this endpoint to login to, and send emails through, Exchange.  
 
@@ -649,7 +650,7 @@ With MFA, we are unable to get the true shared mailboxes to work with the MFA fe
 Please vote on the following [product suggestion](https://experience.dynamics.com/ideas/idea/?ideaid=546251fd-5633-ec11-b76a-0003ff45ac6d)
 
 
-## Workflow
+## <a name=workflow></a>Workflow
 
 Workflow email issues usually fall into two possible causes: SMTP issues and Setup issues, overall you can figure out which is which by using the ‘Test E-mail’ button on the Workflow Setup window (GP -> Tools -> Setup -> System -> Workflow Setup). The following steps are split depending on if the test email is received or not.
 
@@ -689,13 +690,15 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 ![Form 6](media/emailjohn6.jpg)
 
 
-## MFA - Multi-Factor Authentication
+## <a name=mfa></a>MFA - Multi-Factor Authentication
 
 - [Set up the application in the Azure Portal](/dynamics-gp/whats-new/multi-factor-authentication)  
 - [Configure MFA in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)  
 
-> When Basic Authentication is deprecated you will need to be on a version of Dynamics GP where you can use MFA (18.3 or later).
+> When Basic Authentication is deprecated you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
 > You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication.
+
+By turning MFA on in Microsoft Dynamics GP you are then telling the system to use Modern Authentication vs Basic Authentication(depreciated as of October 2022).  If you recently upgraded and set up MFA, we recommend to be on the latest version if you can of Dynamics GP to encompass all the fixes released around MFA.
 > 
 > MFA is only supported with Exchange.
 
