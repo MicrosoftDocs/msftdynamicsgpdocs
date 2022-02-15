@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 1/31/2021
+ms.date: 2/14/2022
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -8882,6 +8882,185 @@ For example, if an employer’s plan year begins in January for all of its emplo
 We also added this as a field in the Print W-2 window for you to populate to print on the forms.    
 
  ![ACA](media/ACA2022.JPG)
+
+## Part 9: Employee Self Service 
+
+**Employee Self Service Timecard Setup**
+
+Here is a quick guide of what needs to be setup for Time Cards to work.
+
+We will go through each area in detail.
+1.	Setup Payroll Timecard Approval Workflow
+2.	Timecard Options in Payroll Setup
+3.	Setup up the employee Pay Schedules in Pay Schedule setup and assign to the employees.
+4.	Create a timecard restriction and assign to your employees
+5.	Create Batch Prefixes and assign to the appropriate employee
+6.	Create Timecard Assignments and make sure to choose one of them as a default option, assign to employees as necessary.
+
+Assign Timecard Assignments to employees if you do not want to use the default option, under Cards | Payroll | Timecard Assignments
+7.	Assign your employee a GP User ID under Employee Maintenance | Additional Information
+8.	For Managers direct report, create a Supervisor Codes and assign the Supervisor code to the correctly employees in employee maintenance
+9.	Optional, create a time on behalf code, assign to employee if created
+
+**Timecard Options Setup**
+
+Navigate to HR & Payroll, click Payroll from the Setup area page.  
+
+This will bring you into the Payroll Setup window.  
+
+From this window click Timecard Options, this will bring you into the Timecard Options window.  
+Use the Timecard Options window to specify how direct reports are displayed in the My Team navigation lists and specify an assignment priority. 
+
+The assignment priority indicates which assignment type–employee, position, department, location, or division—takes precedence when an employee enters a timecard.
+Choose Timecard Options to open the Timecard Options window to specify how direct reports are displayed in the My Team navigation list for historical and current timecards and to specify an assignment priority. 
+
+The assignment priority indicates which assignment type–employee, position, department, location, or division—takes precedence when an employee enters a timecard.
+
+This is held in the UPR40200 table Payroll Setup
+VIEWMULTDIR and INCINEMP
+For the direct report options.
+The Timecard Options is stored in the UPR40202 
+
+**Time on Behalf Setup**
+
+Navigate to HR & Payroll, click Time on Behalf  from the Setup area page.  This will bring you into the Time on Behalf Setup window.  Use the Time on Behalf Setup window to define and maintain time on behalf codes for your company. You can use the time on behalf codes you define in this window to create specific time on behalf codes for each employee.
+
+This information is stored in the following tables:
+UPR42200
+UPR42201 - Department
+UPR42202 - Class
+UPR42203 – Employee
+Use the Time on Behalf Setup window to define and maintain time on behalf codes for your company. You can use the time on behalf codes you define in this window to create specific time on behalf codes for each employee.
+
+> [!TIP]
+> Admin Code
+> Mark to designate a time on behalf code as an administrator code. This means that all active employees, employee classes, and departments for the time on behalf code are selected. Any new employees, employee classes or departments that are added to the code are selected. 
+
+[Blog to setup a delegate for approval of timecards](https://community.dynamics.com/gp/b/dynamicsgp/posts/create-a-delegate-account-for-39-timecards-pending-approval-39)
+
+**Timecard Assignment Setup**
+
+Navigate to HR & Payroll, click Timecard Assignment Setup  from the Setup area page.  This will bring you into the Timecard Assignment Setup window. 
+ 
+Use the Timecard Assignment Setup window to define and maintain assignment codes for your company.
+
+If you mark DEFAULT for the assignment code, this code acts as a default assignment code for employees that are NOT assigned codes.
+
+The Default checkbox is nice to use and less setup is needed when the box is marked.  
+
+This information is stored in the following tables:
+UPR42300
+UPR42301
+
+**Pay Schedule Setup**
+
+Navigate to HR & Payroll, click Pay Schedule Setup from the Setup area page.  This will bring you into the Pay Schedule Setup window.  
+
+Use the Pay Schedule Setup window to create a pay schedule. A pay schedule is a record of the beginning and ending dates of each pay period, for a specific pay period frequency, and for a specific year. You must create a pay schedule for each pay period your company uses, and assign your employees to it. For example, create a weekly pay schedule for employees who are paid weekly, and a monthly pay schedule for employees who are paid monthly. You also can specify how many past and future pay periods will be available to employees to enter time against. 
+
+You can restrict which pay schedule an employee will use when entering timecards based on location, department, position, employee class, an employee ID.
+
+Here are the tables it stores the schedule data
+SELECT * FROM UPR42100—header
+SELECT * FROM UPR42101—detail
+SELECT * FROM UPR42102—location
+SELECT * FROM UPR42103—department
+SELECT * FROM UPR42104—position
+SELECT * FROM UPR42105—class
+SELECT * FROM UPR42106—employee
+
+Be sure enough past pay periods are displayed to employees. For example, an employee may need to view past pay periods so that she can enter vacation hours for time already taken. Or an employee may have saved—and not yet submitted—a timecard for a previous pay period. If you choose to no longer display past pay periods, the employee will not be able to submit the saved timecard.
+
+You can clear the Use Only Full Pay Periods option to create pay periods that can be shorter than a standard pay period. If this option is cleared, the pay schedule will be 365 days long—or 366 days long for leap years. The last pay period for the year will be one or two days long.
+
+When you use different categories to assign employees to pay schedules, some employees may be assigned to multiple pay schedules. For example, suppose you assigned MonthlyPaySchedule to all employees in the Sales department and BiweeklyPaySchedule to all employees who are managers. Now assume that Michael is the manager of the Sales department. This means he is assigned to both MonthlyPaySchedule and BiweeklyPaySchedule. However, only one pay schedule can be used when entering timecards. The pay schedule an employee will use when entering timecards is determined by the assignment priority.
+
+> [!TIP]
+> Pay Schedules are very flexible.  Once setup, when the Navigation list appears of all open timecards, if it is slow or seems to hang, review the tables above.  You should only pick 1 way to assign pay schedules.  For example, do not assign pay schedules by Department and Position, just pick 1 way to assign.  If we have enteries in multiple tables above, it will cause timecards to load slow.
+
+[Blog with tips on how you can change the timecard pay period calendar in employee self-service](https://community.dynamics.com/gp/b/dynamicsgp/posts/payroll-timecard-schedule-setup-tips)
+
+[Blog on Employee to Direct Manager Workflow and how it works](https://community.dynamics.com/gp/b/dynamicsgp/posts/employee-to-direct-manager-workflow-process-how-it-works)
+
+
+**Timecard Restriction Setup**
+
+Navigate to HR & Payroll, click Timecard Restriction Setup  from the Setup area page.  This will bring you into the Timecard Restriction Setup window.  
+
+A timecard restriction is a group of rules controlling timecards. For example, a timecard restriction specifies whether employees must enter start and stop times on their timecards. A timecard restriction also specifies whether employees must electronically sign their timecards.
+You must create timecard restrictions and assign them to employees. The following information explains more about timecard restrictions, including how to create them and assign them to 
+employees.
+
+Set hour requirements  
+Indicate the minimum and maximum number of hours that an employee can enter on a timecard.
+
+Indicate whether start and stop times are required  
+Indicate whether employees must enter the time they started and stopped working each day. For example, instead of entering eight hours of work for a specific day, they’ll need to enter 8:00 A.M. as the starting time and 5:00 P.M. as the stopping time.
+
+Indicate which fields are editable  
+Indicate whether employees will be able to view and edit specific fields on their timecards.
+
+When an employee enters time against a pay code, the fields that you select will be available on the employee’s timecard. When an employee enters time against a time code, only the Notes field will be available (that is, if you select the Notes check box).
+
+When you use different categories to assign employees to timecard restrictions, some employees may be assigned to multiple timecard restrictions. For example, let’s say you assigned TimecardRestrictionSales to all employees in the Sales department and TimecardRestrictionManagers to all employees who are managers. Now assume that Michael is the manager of the Sales department. This means he is assigned to both TimecardRestrictionSales and TimecardRestrictionManagers. However, only one timecard restriction can be used when entering time cards. The timecard restriction an employee will use when entering timecards is determined by the assignment priority. You specify the assignment priority in the Timecard Options window.
+SELECT * FROM UPR42400--Restriction Setup
+SELECT * FROM UPR42401--Required Start / Stop times
+SELECT * FROM UPR42403--Restriction by Department
+SELECT * FROM UPR42402--Restriction by Location ID
+SELECT * FROM UPR42404--Restriction by Jobtitle/Position
+SELECT * FROM UPR42405--Restriction by Employee Class
+SELECT * FROM UPR42406--Restriction by Employee ID
+
+**Timecard Batches**
+
+Navigate to HR & Payroll, click Timecard Batches  from the Setup area page.  This will bring you into the Batch Prefix Setup window.  
+
+The Batch Prefix Setup window to create batch prefixes to identify the Payroll batches in which timecards will be saved in. The batch prefix you create will identify the Payroll batches in which timecards will be saved in. After you create a batch prefix, you’ll need to assign it to employees. For example, you can create a batch prefix named SALESTIME to identify timecards submitted by the Sales department.
+
+When employee timecards are approved, they are saved in batches. Batches are used to group transactions for posting, and are identified by a name or a number.
+
+After creating batch prefixes, assign them to your employees. If an employee is not assigned to a batch prefix, he or she can’t enter timecards.
+You can assign batch prefixes to each employee individually, or to specific groups of employees. For example, you can assign a batch prefix to all employees in a certain location or department.
+
+This is stored in the following tables
+SELECT * FROM UPR42500 – Batch Prefix
+SELECT * FROM UPR42501 - Location ID
+SELECT * FROM UPR42502 -  Department
+SELECT * FROM UPR42503 - Jobtitle/Position
+SELECT * FROM UPR42504 - Employee Class
+SELECT * FROM UPR42505 - Employee ID
+
+**Employee Setup**
+
+Each employee will need to be tied to a Microsoft Dynamics GP user.  This will be the identification between what information you will see on your Time Management area.
+Navigate to HR & Payroll, click Time on Behalf  from the Card area page.  This will bring you into the Employee Time on Behalf  window.  Use the Employee Time on Behalf Setup window to define and maintain time on behalf codes for a specific employee. You can use the time on behalf codes you define in this window to create specific time on behalf codes for each employee.
+
+Admin Code
+Mark to designate a time on behalf code as an administrator code. This means that all active employees, employee classes, and departments for the time on behalf code are selected. Any new employees, employee classes or departments that are added to the code are selected. 
+
+This is stored in the following tables
+SELECT * FROM UPR00200 –
+SELECT * FROM UPR00201 - Department
+SELECT * FROM UPR00202 - Class
+SELECT * FROM UPR00203 - Employee
+
+Navigate to HR & Payroll, click  Timecard Assignment from the Card area page.  This will bring you into the Employee Timecard Assignment  window.  Use the Employee Timecard Assignment window to enter timecard assignment information for a specific employee.
+
+Note:	With the new default code in the setup, there is less need to do this by specific employee, exceptions from the default code you have setup.
+
+This is stored in the following tables   
+SELECT * FROM UPR00210 –
+SELECT * FROM UPR00211 – Detail  
+
+Navigate to HR & Payroll, click  Employee  from the Card area page.  This will bring you into the Employee Maintenance window, choose Additional Information.  
+
+Assign a GP User ID to the employee they are associated with.
+
+This is stored in the UPR00100 Payroll Master table column USERID and each employee that wants access to enter timecards needs to have a GP User ID setup.
+
+The manager / supervisor field off the employee record is important about where the employee timecard will appear and what is under your Navigation list as a manager.
+In this example Terry is a manager of a select group of employees.
+For the workflow piece, it will be using activity directory to determine who is the manager and where the timecard will go based on active directory settings.
 
 
 ## Additional Feature Functionality added to Payroll
