@@ -8925,10 +8925,12 @@ The Timecard Options is stored in the UPR40202
 Navigate to HR & Payroll, click Time on Behalf  from the Setup area page.  This will bring you into the Time on Behalf Setup window.  Use the Time on Behalf Setup window to define and maintain time on behalf codes for your company. You can use the time on behalf codes you define in this window to create specific time on behalf codes for each employee.
 
 This information is stored in the following tables:
-UPR42200
-UPR42201 - Department
-UPR42202 - Class
-UPR42203 – Employee
+
+- UPR42200  
+- UPR42201 - Department  
+- UPR42202 - Class  
+- UPR42203 – Employee  
+
 Use the Time on Behalf Setup window to define and maintain time on behalf codes for your company. You can use the time on behalf codes you define in this window to create specific time on behalf codes for each employee.
 
 > [!TIP]
@@ -8948,8 +8950,9 @@ If you mark DEFAULT for the assignment code, this code acts as a default assignm
 The Default checkbox is nice to use and less setup is needed when the box is marked.  
 
 This information is stored in the following tables:
-UPR42300
-UPR42301
+
+- UPR42300  
+- UPR42301  
 
 ### Pay Schedule Setup
 
@@ -8997,10 +9000,12 @@ You must create timecard restrictions and assign them to employees. The followin
 
     Indicate the minimum and maximum number of hours that an employee can enter on a timecard.
 - Indicate whether start and stop times are required  
-- Indicate whether employees must enter the time they started and stopped working each day. For example, instead of entering eight hours of work for a specific day, they’ll need to enter 8:00 A.M. as the starting time and 5:00 P.M. as the stopping time.  
+
+    Indicate whether employees must enter the time they started and stopped working each day. For example, instead of entering eight hours of work for a specific day, they’ll need to enter 8:00 A.M. as the starting time and 5:00 P.M. as the stopping time.  
 
 - Indicate which fields are editable  
-- Indicate whether employees will be able to view and edit specific fields on their timecards.
+
+    Indicate whether employees will be able to view and edit specific fields on their timecards.
 
 When an employee enters time against a pay code, the fields that you select will be available on the employee’s timecard. When an employee enters time against a time code, only the Notes field will be available (that is, if you select the Notes check box).
 
@@ -9029,14 +9034,16 @@ You can assign batch prefixes to each employee individually, or to specific grou
 
 This is stored in the following tables
 
+```sql
 SELECT * FROM UPR42500 – Batch Prefix
 SELECT * FROM UPR42501 - Location ID
 SELECT * FROM UPR42502 -  Department
 SELECT * FROM UPR42503 - Jobtitle/Position
 SELECT * FROM UPR42504 - Employee Class
 SELECT * FROM UPR42505 - Employee ID
+```
 
-**Employee Setup**
+### Employee Setup
 
 Each employee will need to be tied to a Microsoft Dynamics GP user.  This will be the identification between what information you will see on your Time Management area.
 Navigate to HR & Payroll, click Time on Behalf  from the Card area page.  This will bring you into the Employee Time on Behalf  window.  Use the Employee Time on Behalf Setup window to define and maintain time on behalf codes for a specific employee. You can use the time on behalf codes you define in this window to create specific time on behalf codes for each employee.
@@ -9055,7 +9062,8 @@ SELECT * FROM UPR00203 - Employee
 
 Navigate to HR & Payroll, click  Timecard Assignment from the Card area page.  This will bring you into the Employee Timecard Assignment  window.  Use the Employee Timecard Assignment window to enter timecard assignment information for a specific employee.
 
-Note:	With the new default code in the setup, there is less need to do this by specific employee, exceptions from the default code you have setup.
+> [!NOTE]
+> With the new default code in the setup, there is less need to do this by specific employee, exceptions from the default code you have setup.
 
 This is stored in the following tables   
 
