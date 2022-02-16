@@ -693,7 +693,7 @@ The number of currency decimals used to display information in the Price Trace I
 1. Open the Price Trace Inquiry window.
 (Inventory \>\> Inquiry \>\> Extended Pricing \>\> Price Trace)
 
-![Screenshot of the Item Price List Options Inquiry window.](media/8a3e68609967346f4662af725541c1cc.jpg)
+![Screenshot of the Price Trace Inquiry window.](media/8a3e68609967346f4662af725541c1cc.jpg)
 
 2. Select Customer or Prospect, and enter or select a customer ID or prospect ID.
 
