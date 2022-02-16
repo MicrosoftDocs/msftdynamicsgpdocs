@@ -693,7 +693,7 @@ The number of currency decimals used to display information in the Price Trace I
 1. Open the Price Trace Inquiry window.
 (Inventory \>\> Inquiry \>\> Extended Pricing \>\> Price Trace)
 
-![](media/8a3e68609967346f4662af725541c1cc.jpg)
+![Screenshot of the Item Price List Options Inquiry window.](media/8a3e68609967346f4662af725541c1cc.jpg)
 
 2. Select Customer or Prospect, and enter or select a customer ID or prospect ID.
 
@@ -729,7 +729,7 @@ Rules for price sheets still apply: you can't use two price sheets with identica
 
 You can choose that button to open the Price Trace Originating Currency Trace window, where you can view information about the errors.
 
-![](media/071e40940aee41f2d63e8332f7c207b1.jpg)
+![Screenshot of the Price Trace Originating Currency Trace window.](media/071e40940aee41f2d63e8332f7c207b1.jpg)
 
 When you've finished viewing information, choose OK to close the window.
 
@@ -742,7 +742,7 @@ The Price Sheet Inquiry window shows all items and price groups within a price s
 1. Open the Price Sheet Inquiry window.
 (Inventory \>\> Inquiry \>\> Extended Pricing \>\> Price Sheets)
 
-![](media/9991591514b6194f652356bed2d99328.jpg)
+![Screenshot of the Price Sheet Inquiry window.](media/9991591514b6194f652356bed2d99328.jpg)
 
 2. Enter or select a price sheet ID. The items and price groups assigned to the price sheet will be displayed in the scrolling window.
 
@@ -773,7 +773,7 @@ Use the Item Price Sheet Inquiry window to view the price sheets that have been 
 1. Open the Item Price Sheet Inquiry window.
 (Inventory \>\> Inquiry \>\> Extended Pricing \>\> Items)
 
-![](media/79e161e6f823f9a1cd952f135c26b4b5.jpg)
+![Screenshot of the Item Price Sheet Inquiry window.](media/79e161e6f823f9a1cd952f135c26b4b5.jpg)
 
 2. Select to view an item or a price group.
 
@@ -802,7 +802,7 @@ You can use the Promotion Price Sheet Inquiry window to view all the promotions 
 1. Open the Promotion Price Sheet Inquiry window.
 (Inventory \>\> Inquiry \>\> Extended Pricing \>\> Promotions)
 
-![](media/0ffc411d9bc41144af82ff8f34b2d557.jpg)
+![Screenshot of the Promotion Price Sheet Inquiry window.](media/0ffc411d9bc41144af82ff8f34b2d557.jpg)
 
 2. Mark Customer or Prospect, depending on who's promotions you want to view.
 
@@ -851,7 +851,7 @@ Transactions entered in Sales Order Processing, Purchase Order Processing, Bill 
 1. Open the Item Transaction Inquiry window.
 (Inventory \>\> Inquiry \>\> Item Transaction)
 
-![](media/800e8df5dfa8c70fe00a49daf7d01b87.jpg)
+![Screenshot of the Item Transaction Inquiry window.](media/800e8df5dfa8c70fe00a49daf7d01b87.jpg)
 
 2. Enter or select an item number.
 
@@ -894,7 +894,7 @@ Use the Inventory Transaction Inquiry window to view any transaction that has be
 1. Open the Inventory Transaction Inquiry window.
 (Inventory \>\> Inquiry \>\> Transaction)
 
-![](media/007374bdc0cdfce70c59c9c5ac2860d2.jpg)
+![Screenshot of the Inventory Transaction Inquiry window.](media/007374bdc0cdfce70c59c9c5ac2860d2.jpg)
 
 2. Select the transaction type you want to view. You can choose from these inventory transaction types:
 
@@ -936,7 +936,7 @@ Use the In-Transit Transfer History Inquiry window to view an in-transit transfe
 1. Open the In-Transit Transfer History Inquiry window.
 (Inventory \>\> Inquiry \>\> In-Transit Transfer History)
 
-![](media/6796b891c285c41198c0a6bcc4170365.jpg)
+![Screenshot of the In-Transit Transfer History Inquiry window.](media/6796b891c285c41198c0a6bcc4170365.jpg)
 
 2. Enter or select the document number of the specific transaction to view.
 
@@ -967,7 +967,7 @@ Use the Purchase Receipts Inquiry window to view all the purchase receipts that 
 1. Open the Purchase Receipts Inquiry window.
 (Inventory \>\> Inquiry \>\> Receipts)
 
-![](media/607cfbb997ce2e2f3dfd66c6153be9fa.jpg)
+![Screenshot of the Purchase Receipts Inquiry window.](media/607cfbb997ce2e2f3dfd66c6153be9fa.jpg)
 
 2. Enter or select an item number.
 
@@ -1265,7 +1265,7 @@ You can view price error results on screen or on a printed report. When a pricin
 1. Open the Extended Pricing Error Report window.
 (Inventory \>\> Reports \>\> Extended Pricing \>\> Error Reports)
 
-![](media/546c8a7ba62e2dd0ee1feabc97e157cd.jpg)
+![Screenshot of the Extended Pricing Error Report window.](media/546c8a7ba62e2dd0ee1feabc97e157cd.jpg)
 
 2. Choose to report on errors for customers or price books.
 
@@ -1309,7 +1309,7 @@ If you're using extended pricing, you can use the Extended Pricing Report window
 1. Open the Extended Pricing Report window.
 (Inventory \>\> Reports \>\> Extended Pricing \>\> Pricing Reports)
 
-![](media/ee9c7b195ca5b21478533bb52969e19a.jpg)
+![Screenshot of the Extended Pricing Report window.](media/ee9c7b195ca5b21478533bb52969e19a.jpg)
 
 2. Choose the report type: Customer or Price Book.
 
@@ -1358,7 +1358,7 @@ You can use the Purchase Order Generator Item Report to print the Purchase Order
 1. Open the Purchase Order Generator Item Report window.
 (Inventory \>\> Reports \>\> Purchase Order Generator Item)
 
-![](media/1e74020f0aa91b4d664c33d425e46bcc.jpg)
+![Screenshot of the Purchase Order Generator Item Report window.](media/1e74020f0aa91b4d664c33d425e46bcc.jpg)
 
 2. Use the range fields to select the group of items to include in the report. You can select a range of items, sites, classes, or generic descriptions.
 
@@ -1477,7 +1477,7 @@ Use the Inventory Adjust Costs window to change the cost information for a purch
 1. Open the Inventory Adjust Costs window.
 (Inventory \>\> Utilities \>\> Adjust Costs)
 
-![](media/bafa6625fb134cda815132b3a94b1412.jpg)
+![Screenshot of the Inventory Adjust Costs window.](media/bafa6625fb134cda815132b3a94b1412.jpg)
 
 2. Enter or select an item number.
 
@@ -1623,7 +1623,7 @@ The window that appears depends on whether you're using multicurrency features a
 
 **If you're not using multicurrency features** The Add Price List Wizard - Price Level window opens.
 
-![](media/5cd1f027687470fbc824f114374c4e14.jpg)
+![Screenshot of the Add Price List Wizard - Price Level window.](media/5cd1f027687470fbc824f114374c4e14.jpg)
 
 3. Enter or select a currency (if you're using Multicurrency Management and have selected a price method of Current Amount or Percent of List) and price level. Choose Next.
 
@@ -1633,7 +1633,7 @@ The window that appears depends on the price method you selected earlier.
 
 **If you selected another price method** The Add Price List Wizard - Initial Percentage window opens.
 
-![](media/af90614fcd54c262d4bc2ab818f16479.jpg)
+![Screenshot of the Add Price List Wizard - Initial Percentage window.](media/af90614fcd54c262d4bc2ab818f16479.jpg)
 
 4. Enter information to calculate the default price for the items you're adding the price list to.
 
@@ -1645,11 +1645,11 @@ The window that appears depends on the price method you selected earlier.
 
 5. In the Add Price List Wizard - Restrictions window, enter restrictions to define the items to be included in the group that you're adding the price list to. You can add as many restrictions as you like, but you can use each range type only once. For example, you can define only one range of item numbers.
 
-![](media/eec7f923650251582aab4763c9fa4b85.jpg)
+![Screenshot of the Add Price List Wizard - Restrictions window.](media/eec7f923650251582aab4763c9fa4b85.jpg)
 
 You can use item numbers, descriptions, short descriptions, generic descriptions, class IDs, and price groups to define the group of items that you're adding the price list to. *Refer to Items updated by price list wizards for more information.* Choose Next.
 
-![](media/fd662f1148d27e21b43b72df15fb0736.jpg)
+![Screenshot of the Add Price List Wizard - Preview window.](media/fd662f1148d27e21b43b72df15fb0736.jpg)
 
 6. Review the information in the scrolling window. Make any modifications as needed.
 
@@ -1661,7 +1661,7 @@ You can use item numbers, descriptions, short descriptions, generic descriptions
 
 7. In the Add Price List Wizard - Finish window, review the summary of the price list modification you're making.
 
-![](media/a42adfe0435da5d3a0daa6dfd3285b46.jpg)
+![Screenshot of the Add Price List Wizard - Finish window.](media/a42adfe0435da5d3a0daa6dfd3285b46.jpg)
 
 Choose Finish to add the price lists to the items. The Add Price List Audit Report automatically will be generated.
 
@@ -1691,13 +1691,13 @@ You can end a price list wizard session at any time by choosing Cancel. Your rec
 
 4. If you selected the Currency Amount price method, use the Update Price List Wizard - Rounding Information window to enter and select rounding options for the records you're updating. If you don't want rounding to occur, select None for the Round Policy. Choose Next.
 
-![](media/6c13fc5387a78a3eaf216fd748da2b27.jpg)
+![Screenshot of the Update Price List Wizard - Rounding Information window.](media/6c13fc5387a78a3eaf216fd748da2b27.jpg)
 
 *Refer to Rounding calculations for updating price lists for more information about how rounding options affect pricing.*
 
 5. In the Update Price List Wizard - Restrictions window, select the ranges of price list records to be updated. You can define as many range restrictions as needed, but only items that meet all restrictions will be updated. Choose Next.
 
-![](media/d0030d26a70f259a770dcf78049d8ce2.jpg)
+![Screenshot of the Update Price List Wizard - Restrictions window.](media/d0030d26a70f259a770dcf78049d8ce2.jpg)
 
 When you're updating price list records for a group of items, you can choose the specific items and the specific price list records to be updated. For example, if you're using Multicurrency Management, you might want to update all price lists for a specific currency. To do this, you'd include that currency in the restrictions list.
 
@@ -1707,7 +1707,7 @@ When you're updating price list records for a group of items, you can choose the
 
 *To print a preview report, choose File \>\> Print or choose the print iconton.*
 
-![](media/17a52fb7cbd00619d53cb48d203c64b9.jpg)
+![Screenshot of the Update Price List Wizard - Preview window.](media/17a52fb7cbd00619d53cb48d203c64b9.jpg)
 
 **To remove an item from the list to be updated** Clear the check box at the beginning of the appropriate line. Choose Next.
 
@@ -1715,7 +1715,7 @@ When you're updating price list records for a group of items, you can choose the
 
 7. In the Update Price List Wizard - Finish window, review the summary of the price list modification you're making.
 
-![](media/f7187498cbb5034e754e43c2b3c43686.jpg)
+![Screenshot of the Update Price List Wizard - Finish window](media/f7187498cbb5034e754e43c2b3c43686.jpg)
 
 Choose Finish to update the price lists. The Update Price List Audit Report automatically will be generated.
 
