@@ -86,7 +86,7 @@ Use the Intercompany Setup window to define relationships between companies that
 1. Open the Intercompany Setup window. 
 (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Intercompany)
 
-    ![](media/SS.jpg)
+   ![Screenshot of the Intercompany Setup window.](media/SS.jpg)
 
 2. Enter or select an Originating Company ID. When you select an originating company ID, other companies you have access to appear in the Destination Company Name list.
 
@@ -217,7 +217,7 @@ Reversing intercompany transactions can be used in situations where cash will be
 1. Open the Transaction Entry window. 
 (Transactions \>\> Financial \>\> General)
 
-    ![](media/TT.jpg)
+   ![Screenshot of the Transaction Entry window.](media/TT.jpg)
 
 2. Enter or select a journal entry number.
 
@@ -258,7 +258,7 @@ For more information about entering various types of Payables Management transac
 1. Open the Payables Transaction Entry window. 
 (Transactions \>\> Purchasing \>\> Transaction Entry)
 
-    ![](media/PP.jpg)
+   ![Screenshot of the Payables Transaction Entry window.](media/PP.jpg)
 
 2. Enter a voucher number and mark the Intercompany option. You can unmark the Intercompany option only if you haven’t entered distributions to companies other than the originating company; that is, the one in which you are entering the transaction.
 
@@ -272,7 +272,7 @@ For more information about entering various types of Payables Management transac
 
 7. Choose the Distributions button to open the Payables Transaction Entry Distribution window.
 
-    ![](media/DIS.jpg)
+    ![Screenshot of the Payables Transaction Entry Distribution window.](media/DIS.jpg)
 
     By default, the scrolling window displays the distributions that were created automatically based on the posting accounts assigned to the vendor you chose in the Payables Transaction Entry window or on posting accounts assigned in the Posting Accounts Setup window.
 

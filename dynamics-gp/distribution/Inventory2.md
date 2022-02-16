@@ -101,7 +101,7 @@ To view general information about items, use the inquiry windows. You can view q
 
 **To view serial or lot number information** If the item is tracked by serial or lot numbers, choose the expansion button on the Track field to open the Item Serial/Lot Number Definition Inquiry Zoom window.
 
-![](media/97fa4a6778b0119f89da91d5ed9c05db.jpg)
+![Screenshot of the Item Serial/Lot Number Definition Inquiry Zoom window.](media/97fa4a6778b0119f89da91d5ed9c05db.jpg)
 
 **To go to the Item Maintenance window** If you need to change item information, click the Item Number link to open the Item Maintenance window. Refer to *Chapter 10, "Item cards,"* for more information about using the Item Maintenance window.
 
@@ -128,7 +128,7 @@ Use the Item Allocation Inquiry window to view where item quantities have been a
 1. Open the Item Allocation Inquiry window.
 (Inventory \>\> Inquiry \>\> Item Allocation)
 
-![](media/285fd579eab9fea4a6d19211868528d5.jpg)
+![Screenshot of the Item Allocation Inquiry window.](media/285fd579eab9fea4a6d19211868528d5.jpg)
 
 2. Select All to view all items or select a range of items.
 
@@ -155,7 +155,7 @@ If you're using multiple bins, you can use the Bin Quantity Inquiry window to vi
 1. Open the Bin Quantity Inquiry window.
 (Inventory \>\> Inquiry \>\> Bin Quantities)
 
-![](media/edf42f16e96e7f5066c67d97515454ee.jpg)
+![Screenshot of the Bin Quantity Inquiry window.](media/edf42f16e96e7f5066c67d97515454ee.jpg)
 
 2. Specify a range to restrict information. You can limit the items, sites, bins, and quantity type information that is displayed.
 
@@ -180,7 +180,7 @@ Stock information can be displayed for all the sites that the item is assigned t
 1. Open the Item Stock Inquiry window.
 (Inventory \>\> Inquiry \>\> Item Stock)
 
-![](media/6f62e6cf6e37e7f688638904c2961b77.jpg)
+![Screenshot of the Item Stock Inquiry window.](media/6f62e6cf6e37e7f688638904c2961b77.jpg)
 
 2. Enter or select the item to view.
 
@@ -201,7 +201,7 @@ If you're using serial-numbered items, you can use the Serial Number Inquiry win
 1. Open the Serial Number Inquiry window.
 (Inventory \>\> Inquiry \>\> Serials)
 
-![](media/f7154d7891501fb003187c5be82d4f3a.jpg)
+![Screenshot of the Serial Number Inquiry window.](media/f7154d7891501fb003187c5be82d4f3a.jpg)
 
 2. Enter or select an item.
 
@@ -242,7 +242,7 @@ You also can consolidate lot numbers by selecting to sort them by lot. Lot numbe
 1. Open the Lot Number Inquiry window.
 (Inventory \>\> Inquiry \>\> Lots)
 
-![](media/c3495d95212a72360f1240f7b2d2226c.jpg)
+![Screenshot of the Lot Number Inquiry window.](media/c3495d95212a72360f1240f7b2d2226c.jpg)
 
 2. Enter or select the item to view.
 
@@ -289,7 +289,7 @@ You can use the Lot Attribute Inquiry window to see a manufactured date, an expi
 
 4. Select the lot and choose the Lot Number expansion button to open the Lot Attribute Inquiry window.
 
-![](media/b7aeb2c55340d491c4f6307a80412fed.jpg)
+![Screenshot of the Lot Attribute Inquiry window.](media/b7aeb2c55340d491c4f6307a80412fed.jpg)
 
 5. Review the information as needed.
 
@@ -304,7 +304,7 @@ Use the Item Resource Planning Inquiry window to view planning information for a
 1. Open the Item Resource Planning Inquiry window.
 (Inventory \>\> Inquiry \>\> Item Resource Planning)
 
-![](media/762b2055c48f426594deb577ffc8455b.jpg)
+![Screenshot of the Item Resource Planning Inquiry window.](media/762b2055c48f426594deb577ffc8455b.jpg)
 
 2. Enter or select an item.
 
@@ -325,7 +325,7 @@ A life cycle trace allows you to view all the transactions that have serial- or 
 1. Open the Serial/Lot Trace Inquiry window.
 (Inventory \>\> Inquiry \>\> Serial/Lot Trace)
 
-![](media/de4327bb1c81954f3b5815d68e72ad4b.jpg)
+![Screenshot of the Serial/Lot Trace Inquiry window.](media/de4327bb1c81954f3b5815d68e72ad4b.jpg)
 
 2. Select one of the following life cycle trace options from the I Need To field.
 
@@ -446,7 +446,7 @@ For assembly transactions, a link icon might appear next to a specific serial or
 
 \- LOT 10 : CIRCUIT BOARD - ASM00038 +
 
-![](media/a7035a7282d50e7c24fcbd0c6872714c.jpg)
+![Link icon.](media/a7035a7282d50e7c24fcbd0c6872714c.jpg)
 
 LOT 55 : SWITCH SYSTEM + \<Not Tracked\> : PANEL
 
@@ -497,7 +497,7 @@ The Serial/Lot Bill of Materials Trace window uses a tree view to show the seria
 
 2. Highlight a manufacturing or assembly transaction in the scrolling window and choose the View BOM Trace button to open the Serial/Lot Bill of Materials Trace window.
 
-![](media/500357041985537b1c3c610ef3d0a270.jpg)
+![Screenshot of the Serial/Lot Bill of Materials Trace window.](media/500357041985537b1c3c610ef3d0a270.jpg)
 
 1. Select Consumed into the serial/lot or Produced from the serial/lot as the serial/lot trace.
 
@@ -574,7 +574,7 @@ You also can view pending purchase orders, pending purchase order receipts, and 
 1. Open the Inventory Available to Promise Inquiry window.
 (Inventory \>\> Inquiry \>\> Available to Promise)
 
-![](media/f0496b96880cd19b7adb7962b389b6fc.jpg)
+![Screenshot of the Inventory Available to Promise Inquiry window.](media/f0496b96880cd19b7adb7962b389b6fc.jpg)
 
 1. You can select to view items by various units of measure and at various sites.
 
@@ -607,7 +607,7 @@ If you're using standard pricing, use the Item Price List Inquiry window to view
 1. Open the Item Price List Inquiry window.
 (Inventory \>\> Inquiry \>\> Price List)
 
-![](media/8523964472bc8616c0a04dcb98a29e46.jpg)
+![Screenshot of the Item Price List Inquiry window.](media/8523964472bc8616c0a04dcb98a29e46.jpg)
 
 1. Enter or select an item number.
 
@@ -644,7 +644,7 @@ Enter or select an item number.
 
 2. Choose Options to open the Item Price List Options Inquiry window.
 
-![](media/677930cb39c047bcbf191c63e19483a9.jpg)
+![Screenshot of the Item Price List Options Inquiry window.](media/677930cb39c047bcbf191c63e19483a9.jpg)
 
 3. Review information in the window.
 
