@@ -975,7 +975,7 @@ for forecast budget amounts will be used.
 
 **PACM 20.JPEG**
 
-![Screenshot showing an automatically generated cell phone Description.](media/919311ca836400f112815f77c239d0a1.jpg)
+![Screenshot of the Project Maintenance window..](media/919311ca836400f112815f77c239d0a1.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1457,7 +1457,7 @@ Category) to view them.*
 
 **PACM 27.JPEG**
 
-![Screenshot showing an automatically generated computer Description.](media/baad6b9551b7a05290f642545adfc5db.jpg)
+![Screenshot of the Cost Category Maintenance window.](media/baad6b9551b7a05290f642545adfc5db.jpg)
 
 A screenshot of a computer Description automatically generated
 
