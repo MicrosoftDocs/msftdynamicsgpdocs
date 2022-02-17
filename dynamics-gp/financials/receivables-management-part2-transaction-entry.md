@@ -1402,7 +1402,7 @@ Use the Maps To window to select the Microsoft Dynamics GP fields that the field
 
 Your bank sent a lockbox file that included the following transaction:
 
-![](media/2708fcde1e1cb9bd548cfdd9065a531a.jpg)
+![Screenshot of the transaction file.](media/2708fcde1e1cb9bd548cfdd9065a531a.jpg)
 
 The bank also sent an export definition list, which included the following information:
 

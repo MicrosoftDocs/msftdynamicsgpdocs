@@ -808,7 +808,7 @@ a service call is invoiced for the current customer and site combination.
 
 IMAGE – FARM6.jpg
 
-![](media/bf7177d7d41bb05716aff3c9f813f4f7.jpg)
+![Screenshot of the Customer Extensions window.](media/bf7177d7d41bb05716aff3c9f813f4f7.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -829,7 +829,7 @@ sold by your company.
 
 IMAGE – FARM7.jpg
 
-![](media/b2fbf0d4a807ab4b46829b998a6f5952.jpg)
+![Screenshot of the Warranty Maintenance window.](media/b2fbf0d4a807ab4b46829b998a6f5952.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
