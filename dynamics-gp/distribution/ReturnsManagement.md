@@ -877,7 +877,7 @@ location for the equipment.
 
 IMAGE – FARM8.jpg
 
-![](media/f81109484a788f0390fa3aa1a0a2b290.jpg)
+![Screenshot of the Equipment Maintenance window.](media/f81109484a788f0390fa3aa1a0a2b290.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -1083,7 +1083,7 @@ Installed.
 
 IMAGE – FARM9.jpg
 
-![](media/b72e6312ea19a7ddc0bb56859d884192.jpg)
+![Screenshot of the RMA Entry/Update window.](media/b72e6312ea19a7ddc0bb56859d884192.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1877,7 +1877,7 @@ in the RMA – Kit Components window to specify bins for kit components.
 
 IMAGE – FARM11.jpg
 
-![](media/574168f6abc6cfef05ccb6bbd3bcf9ba.jpg)
+![Screenshot of the Sales Order Processing Setup window.](media/574168f6abc6cfef05ccb6bbd3bcf9ba.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1935,7 +1935,7 @@ The following table explains how the account field is populated.
 
 IMAGE – FARM12.jpg
 
-![](media/2f6243c4d1229b40fe723fb30ddb660f.jpg)
+![Screenshot of the RMA Closing window.](media/2f6243c4d1229b40fe723fb30ddb660f.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2212,7 +2212,7 @@ You can access the Internet tracking pages for delivery services.
 
 IMAGE – FARM14.jpg
 
-![](media/232dcba71dd1014742f0f29895589897.jpg)
+![Screenshot of the In–Transit Transfer Entry window.](media/232dcba71dd1014742f0f29895589897.jpg)
 
 A screenshot of a cell phone Description automatically generated
 

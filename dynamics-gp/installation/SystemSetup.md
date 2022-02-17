@@ -6964,7 +6964,7 @@ of the specified conditions will be routed to the alternate final approver
 in the workflow. For more information about the alternate final approver,
 see the next step.
 
-![](media/8819081df0bdea850d1b8e75252175b4.jpg)
+![Diagram showing the approver workflow.](media/8819081df0bdea850d1b8e75252175b4.jpg)
 
 1. Specify an alternate final approver.
 
@@ -6975,7 +6975,7 @@ approved by Frank and Sue. Because the purchase order is not greater than
 \$10,000, Ann's approval is not required. In this scenario, Sue is the final
 approver.
 
-![](media/3fd05b6b6930ad162ceaf5a9710f2e82.jpg)
+![Diagram showing the approval workflow.](media/3fd05b6b6930ad162ceaf5a9710f2e82.jpg)
 
 Mark the Use alternate final approver option and enter the name of an
 alternate final approver if you want a different escalation approver. The

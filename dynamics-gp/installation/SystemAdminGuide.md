@@ -394,7 +394,7 @@ save your changes and close the Print Setup window.
 
 1. Select a printer class.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![Screenshot of the Setup Named Printers window with printer class selected.](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
 *For the default printer, the printer class must be System.*
 
@@ -1887,7 +1887,7 @@ remote processes more quickly.
 
 The following illustration shows the DPS installed on the data server:
 
-![](media/e323d6cf753295eddd0b803e8f8a738d.png)
+![Illustration showing the DPS installed on the data server.](media/e323d6cf753295eddd0b803e8f8a738d.png)
 
 #### DPS on a client
 
@@ -2477,7 +2477,7 @@ activities are performed by process servers, especially if you have the
 Track Start and End Times option marked in the DPS Setup window, so you may
 need to remove data from the table periodically.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![Screenshot of the Remove Process Server Detail window.](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
 *Before removing process server detail, back up your company's data.*
 
@@ -3022,7 +3022,7 @@ you must create a launch file for each.*
 2. Open the launch file by choosing File \>\> Open in Notepad or another text
     editor.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+![Screenshot of launch file data in a text editor.](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
 
 *We recommend that you do not edit a launch file using Write for Windows.*
 
@@ -3346,7 +3346,7 @@ recent modifications have been done, check the modifications for errors. If
 the modifications have worked in the past, rename the dictionary and restore
 it from a backup.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![Screenshot showing a renamed dictionary.](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
 *Do not delete dictionaries. Renaming files allows you to restore these files
 later, if necessary.*
@@ -3584,7 +3584,7 @@ If you were alerted to damage by an alert message indicating damage to a
 specific table, the name of the table won't be listed in the Check Links
 window.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+![Screenshot of an alert message.](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
 
 *If the table is in the System or Company series, see Reconciling tables on page
 97.*
