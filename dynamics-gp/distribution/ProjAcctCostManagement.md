@@ -758,7 +758,7 @@ You can specify billing settings for a contract template.
 
 PACM 15. JPEG
 
-![](media/83df8e4dc0425a7a50e20576b2f9fe93.jpg)
+![Screenshot of the Contract Template Maintenance window.](media/83df8e4dc0425a7a50e20576b2f9fe93.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -838,7 +838,7 @@ You can create a project template to apply to project records.
 
 PACM 17.JPEG
 
-![](media/8928b33a3547bae98e9d69d7b26a243a.jpg)
+![Screenshot of the Project Template Maintenance window.](media/8928b33a3547bae98e9d69d7b26a243a.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -975,7 +975,7 @@ for forecast budget amounts will be used.
 
 **PACM 20.JPEG**
 
-![](media/919311ca836400f112815f77c239d0a1.jpg)
+![Screenshot showing an automatically generated cell phone Description.](media/919311ca836400f112815f77c239d0a1.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1457,7 +1457,7 @@ Category) to view them.*
 
 **PACM 27.JPEG**
 
-![](media/baad6b9551b7a05290f642545adfc5db.jpg)
+![Screenshot showing an automatically generated computer Description.](media/baad6b9551b7a05290f642545adfc5db.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -1696,7 +1696,7 @@ See *Assign fees to a project* on page 89 for more information.
 
 **PACM 31.JPEG**
 
-![](media/b2d7f77a6063fe7d96ffd2b01c4f6d31.jpg)
+![Screenshot of the Fee Maintenance window.](media/b2d7f77a6063fe7d96ffd2b01c4f6d31.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1923,7 +1923,7 @@ view them.*
 
 **PACM 33.JPEG**
 
-![](media/206ae5d8deefcc108c1a08b23dc3e275.jpg)
+![Screenshot of the Contract Maintenance window.](media/206ae5d8deefcc108c1a08b23dc3e275.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2033,7 +2033,7 @@ settings.*
 
 PACM 34.JPEG
 
-![](media/4bb6d6184354988e1735deab0bc8a2e0.jpg)
+![Screenshot of the Contract Settings window.](media/4bb6d6184354988e1735deab0bc8a2e0.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -2230,7 +2230,7 @@ Inquiry window (Inquiry \> Project \> Maintenance \> Project) to view them.*
 
 **PACM 37.JPEG**
 
-![](media/23989310712cf59a6f0ebd98b5a16cbc.jpg)
+![Screenshot of the Project Maintenance window.](media/23989310712cf59a6f0ebd98b5a16cbc.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2478,7 +2478,7 @@ that use the **Fee Amount** fee calculation method will be copied.
 
 **PACM 39.JPEG**
 
-![](media/711906c69a5bdf16843cda1df66dc0df.jpg)
+![Screenshot of the Duplicate Existing Project window.](media/711906c69a5bdf16843cda1df66dc0df.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2583,7 +2583,7 @@ You can assign an employee to projects.
 
 **PACM 42.JPEG**
 
-![](media/92bae8d4430fd86eaafff4c0c0ac968e.jpg)
+![Screenshot of the Project Access List window.](media/92bae8d4430fd86eaafff4c0c0ac968e.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2669,7 +2669,7 @@ Project \> Budget button) to view them.*
 
 PACM 44.JPEG
 
-![](media/a7adcbeeab02088b387680a8f88fd924.jpg)
+![Screenshot of the Budget Maintenance window.](media/a7adcbeeab02088b387680a8f88fd924.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2936,7 +2936,7 @@ expansion button \> Rate Table button) to view the assignment.*
 
 PACM 46. JPEG
 
-![](media/d909084f610a6323ee2a1f908c3467cb.jpg)
+![Screenshot of the Budget Rates window.](media/d909084f610a6323ee2a1f908c3467cb.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2978,7 +2978,7 @@ items that have been selected.*
 
 PACM 47.JPEG
 
-![](media/23e5b41d1d92279635da0a427e685193.jpg)
+![Screenshot of the Budget Detail IV Items window.](media/23e5b41d1d92279635da0a427e685193.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -3023,7 +3023,7 @@ amounts.*
 
 PACM 48.JPEG
 
-![](media/0db207251297d78216b92fca5d5a409b.jpg)
+![Screenshot of the Forecasting window.](media/0db207251297d78216b92fca5d5a409b.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -3063,7 +3063,7 @@ period.*
 
 PACM 49.JPEG
 
-![](media/414aecd31afcf23f7f79f4ae237c5916.jpg)
+![Screenshot of the Project Periodic Budget window.](media/414aecd31afcf23f7f79f4ae237c5916.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -3764,7 +3764,7 @@ currency to enter a change order for the contract.
 
 **PACM 58.JPEG**
 
-![](media/ad8f14587d13adfeb7b0b3d6821047d1.jpg)
+![Screenshot of the Change Order Entry window.](media/ad8f14587d13adfeb7b0b3d6821047d1.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -3907,7 +3907,7 @@ in a project budget.
 
 PACM 61.JPEG
 
-![](media/8cde689d9612b16d989b3a48dc0a7928.jpg)
+![Screenshot of the Change Order Budget Detail Entry window.](media/8cde689d9612b16d989b3a48dc0a7928.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -3974,7 +3974,7 @@ You can enter a change order to modify fee assignments for a project.
 
 PACM 62.JPEG
 
-![](media/5dc241e1406fac3fcaf134bb3c8b5d64.jpg)
+![Screenshot of the Change Order Fee Entry window.](media/5dc241e1406fac3fcaf134bb3c8b5d64.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -4019,7 +4019,7 @@ You can view a list of change orders.
 
 **PACM 63.JPEG**
 
-![](media/c480881236d97d4f76c7a5ed1e3cf9f8.jpg)
+![Screenshot of the Change Order Inquiry window.](media/c480881236d97d4f76c7a5ed1e3cf9f8.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5365,7 +5365,7 @@ more information.
 
 PACM 81. JPEG
 
-![](media/4e2db0e9219c7ed69183a5a671d24dcf.jpg)
+![Screenshot of the PA Item Lot Number Entry window.](media/4e2db0e9219c7ed69183a5a671d24dcf.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5407,7 +5407,7 @@ more information.
 
 PACM 82.jpeg
 
-![](media/cb882cdeaa38cf5d3049b4ea2b4b3f4c.jpg)
+![Screenshot of the PA Item Serial Number Entry window.](media/cb882cdeaa38cf5d3049b4ea2b4b3f4c.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5441,7 +5441,7 @@ more information.
 
 PACM83. JPEG
 
-![](media/1f8a87142f15da927fdcecaa329186bd.jpg)
+![Screenshot of the PA Bin Quantity Entry window.](media/1f8a87142f15da927fdcecaa329186bd.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5633,7 +5633,7 @@ categories in project budgets.
 
 **PACM 85. JPEG**
 
-![](media/bf7989dfde3adde5e771b5a77c6332e6.jpg)
+![Screenshot of the Budget-Detail Inquiry window.](media/bf7989dfde3adde5e771b5a77c6332e6.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5654,7 +5654,7 @@ amounts accrued for projects for a list of customers.
 
 **PACM 86.JPEG**
 
-![](media/5ef9827fb8d30029283d9fdd30eafc4e.jpg)
+![Screenshot of the Corporate Inquiry window.](media/5ef9827fb8d30029283d9fdd30eafc4e.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5679,7 +5679,7 @@ amounts accrued for projects for a list of contracts.
 
 **PACM 87. JPEG**
 
-![](media/7c1e858bd21786ee82f222a3faadcd0e.jpg)
+![Screenshot of the Customer Inquiry window.](media/7c1e858bd21786ee82f222a3faadcd0e.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5704,7 +5704,7 @@ amounts accrued for a list of projects.
 
 **PACM 88. JPEG**
 
-![](media/963e061bebdeeab68aa90ced14783102.jpg)
+![Screenshot of the Contract Inquiry window.](media/963e061bebdeeab68aa90ced14783102.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5729,7 +5729,7 @@ amounts accrued for the cost categories in a project budget.
 
 **PACM 89. JPEG**
 
-![](media/a048fe2d3fac7d25a0ccd1b89c87a415.jpg)
+![Screenshot of the Project Inquiry window.](media/a048fe2d3fac7d25a0ccd1b89c87a415.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5760,7 +5760,7 @@ fees that are assigned to a project.
 
 PACM 90. JPEG
 
-![](media/e468da8ee74550badc04c544f63bee8a.jpg)
+![Screenshot of the Project Inquiry-Fees window.](media/e468da8ee74550badc04c544f63bee8a.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5794,7 +5794,7 @@ an inventory transfer* on page 142 for more information.
 
 PACM 91.JPEG
 
-![](media/db8547c5647efb6f0ccd5090a013b5bd.jpg)
+![Screenshot of the Committed Cost Detail window.](media/db8547c5647efb6f0ccd5090a013b5bd.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5878,7 +5878,7 @@ items by date on page 158 for more information.*
 
 **PACM 95. JPEG**
 
-![](media/b7f8fdb9a440dae59cee4d0362e02c51.jpg)
+![Screenshot of the Combined History Inquiry window.](media/b7f8fdb9a440dae59cee4d0362e02c51.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5969,7 +5969,7 @@ allocations that you have set up in the PA Allocations SmartList.
 
 **PACM 98. JPEG**
 
-![](media/2c2fb690aab1b245360145ee4c242ced.jpg)
+![Screenshot of the Project Allocation Maintenance window.](media/2c2fb690aab1b245360145ee4c242ced.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -6015,7 +6015,7 @@ allocation.
 
 **PACM 99. JPEG**
 
-![](media/b653166875d6757e68e917814b906f16.jpg)
+![Screenshot of the Project Allocation window.](media/b653166875d6757e68e917814b906f16.jpg)
 
 A screenshot of a social media post Description automatically generated
 
