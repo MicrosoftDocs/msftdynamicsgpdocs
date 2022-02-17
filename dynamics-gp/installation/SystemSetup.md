@@ -6975,7 +6975,7 @@ approved by Frank and Sue. Because the purchase order is not greater than
 \$10,000, Ann's approval is not required. In this scenario, Sue is the final
 approver.
 
-![Diagram showing the approval workflow.](media/3fd05b6b6930ad162ceaf5a9710f2e82.jpg)
+![Diagram showing the approval workflow with alternate approvers.](media/3fd05b6b6930ad162ceaf5a9710f2e82.jpg)
 
 Mark the Use alternate final approver option and enter the name of an
 alternate final approver if you want a different escalation approver. The
