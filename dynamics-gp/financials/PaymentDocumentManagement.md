@@ -81,7 +81,7 @@ You must enable payment documents before you can start using them in purchasing 
 
 1.  Open the Company Payment Document Management Setup window. (Administration \>\> Setup \>\> Company \>\> Payment Document Setup)
 
-![Screenshot](media/SPDMS.jpg)
+![Screenshot of the Company Payment Document Management Setup window.](media/SPDMS.jpg)
 
 1.  Mark the respective options to enable Payment Document Management for purchasing and sales. The setup windows will be available only for the module/s for which you have marked the required option.
 
@@ -112,7 +112,7 @@ The Purchasing Payment Document Management Setup window allows you to set up def
 1.  Open the Purchasing Payment Document Management Setup window.
     (Administration \>\> Setup \>\> Purchasing \>\> Payment Document Setup)
 
-![Screenshot](media/PPDSET.jpg)
+![Screenshot of the Purchasing Payment Document Management Setup window.](media/PPDSET.jpg)
 
 2.  Select whether to set the General Ledger Entry Level to per Settlement or per Payment Document. If you select per Settlement, all the documents will be posted as a single summary entry. If you select per Payment Document, the payment documents will be posted as a single entry per document.
 
@@ -145,7 +145,7 @@ The Purchasing Payment Document Maintenance window allows you to create and defi
 
 1.  Open the Purchasing Payment Document Maintenance window. (Cards \>\> Purchasing \>\> Payment Document Maintenance)
 
-![Screenshot generated](media/PPDM.jpg)
+![Screenshot of the Purchasing Payment Document Maintenance window.](media/PPDM.jpg)
 
 2.  Enter or select the payment document ID.
 
@@ -168,7 +168,7 @@ You can establish a more specific set up level by selecting the options that wil
 1.  Open the Purchasing Chequebook Payment Document Setup window. (Cards \>\>
     Financial \>\> Chequebook \>\> Additional \>\> Purchasing Pmnt. Doc. Setup)
 
-![Screenshot](media/PCPDS.jpg)
+![Screenshot of the Purchasing Chequebook Payment Document Setup window.](media/PCPDS.jpg)
 
 2.  Enter or select the payment document ID.
 
