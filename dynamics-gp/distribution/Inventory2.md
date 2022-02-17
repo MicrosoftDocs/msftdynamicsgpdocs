@@ -2921,13 +2921,13 @@ In the Inventory Purchase Receipt (IV10200) table, three new columns have been a
 
 The formula used to calculate this new cost is: 
  
-![Formula and example for calculating Average Cost.](media/INVFORMULA.JPG)
+![Formula used for calculating Average Cost and an example.](media/INVFORMULA.JPG)
 
 The Qty On Hand column also decreases whenever quantity is sold or adjusted.  However, it decreases based on the Document Date of the transaction that decreases the inventory.  At the time of posting, we look for and find the closest receipt record that is BEFORE or EQUAL to the Document Date of the transaction. For example, if you post a sales invoice with a Document Date of March 12th with a quantity of 25, the March 10th layer would be used and the Qty On Hand field for that layer would have a value of 93 = (118 – 25).  In addition, because the Qty On Hand field is a running or real time quantity field, the receipt layers after March 10th would also be reduced by a quantity of 25. So the March 15th layer of 133 would update to 108, the March 20th layer of 983 would change to 958, and the March 26th layer of 3583 would change to 3558.  After the Inventory Ripple process is finished, the quantity of 3558 should be the TOTAL quantity you have On Hand for the item for all sites. 
  
 The key here is that because the quantity On Hand changed for each layer, the Average Cost may also need to be updated; hence, we now start the Inventory Ripple starting at the 10 March receipt moving from layer to layer until we get to the last receipt layer for the item. When finished, the current cost in the Item Maintenance window will be updated to match the Average Cost of the last layer (ordered by the DATERECD, RCTSEQNM column), which would be $.95.  The new table below reflects the change after the sale of 25 is posted on March 12th. 
 
-![Chart showing changes to the change in values on Example IV10200.](media/INVIV102002.JPG)
+![Chart showing changes to the values in Example IV10200.](media/INVIV102002.JPG)
 
  
 This is a very simple example of how back-dated outflow transaction can have an impact on the Average Cost calculation because we are now holding and calculating that cost for each inflow layer.  In addition, this example also demonstrates how cost adjustments can occur on some layers and not others and NOT have the current cost on the item card updated. 
