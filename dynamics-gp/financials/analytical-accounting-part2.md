@@ -114,7 +114,7 @@ Use the following information to enter analysis information for distribution
 accounts that are linked to an account class. You can save transactions
 individually or in a batch with or without analysis information.
 
-![A screenshot IMAGE – AAGL.jpg](media/97b4689fdbffcca4429782637cfff5d8.jpg)
+![Screenshot of the Analytical General Transaction Entry window.](media/AAGL.jpg)
 
 The Analytical General Transaction Entry window opens automatically when you
 press TAB from a field in the Transaction Entry window (Transactions \>\>
@@ -376,7 +376,7 @@ transactions* for more information.
     (Transactions \>\> Financial \>\> Quick Journal \>\> Additional \>\>
     Analytical Transaction or CTRL+T)
 
-    ![A screenshot IMAGE – AAQJ.jpg](media/ef36732ec761feef512536666e7f26fb.jpg)
+    ![Screenshot of the Analytical Quick Journal Entry window.](media/AAQJ.jpg)
 
     The Analytical Quick Journal Entry window will open only if you have entered an account and amount in the scrolling window of the Quick Journal Entry window.
 
@@ -507,7 +507,7 @@ you cannot void miscellaneous checks.
       
     IMAGE – AAMC.jpg
 
-![A Screenshot](media/4f0bb1113c8457c9f1e66ad5e9742a04.jpg)
+![Screenshot of the Analytical Miscellaneous Check Entry window](media/AAMC.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -1124,7 +1124,7 @@ all analysis information created for the document will be deleted.
     (Transactions \>\> Purchasing \>\> Transaction Entry \>\> Tax expansion button \>\>CTRL+T or Additional \>\> Analytical Transaction)  
     (Transactions \>\> Purchasing \>\> Transaction Entry \>\> Distributions button \>\> CTRL+T or Additional \>\> Analytical Transaction)
 
-    ![A screenshot IMAGE – AAPT.jpg](media/b36decfcaa4e5996c8bbf5270c52a410.jpg)
+    ![Screenshot of the Analytical Payables Transaction Entry window.](media/AAPT.jpg)
 
 1. Refer to *Entering analysis information for General Ledger transactions* for more information about entering the analysis information.
 
@@ -1169,7 +1169,7 @@ previously entered analysis information and create a single assignment of
 
 IMAGE – AAPMT.jpg
 
-![A screenshot of a computer Description automatically generated](media/d65c6f939de93ef703fa4f561765aa0b.jpg)
+![Screenshot of the Analytical Payables Manual Payment Entry window.](media/AAPMT.jpg)
 
 The Analytical Payables Transaction Entry window displays the distribution
 account selected. To view other distributions, enter or select a
@@ -1404,7 +1404,7 @@ deleted when the distributions are recreated.
     (Transactions \>\> Purchasing \>\> Enter/Match Invoice \>\> Enter quantity
     invoiced \>\> CTRL+T or Additional \>\> Analytical Transaction)
 
-    ![A screenshot IMAGE – AART.jpg](media/2fa8ff57d57bb2bec022a56619308942.jpg)
+    ![Screenshot of the Analytical Receivings Transaction Entry window.](media/AART.jpg)
 
 1. Refer to *Entering analysis information for General Ledger transactions* for
     more information on entering analysis information for transactions.
@@ -1475,7 +1475,7 @@ for the new purchase order.
     a purchase order \>\> Item or Vendor Item expansion button \>\> CTRL+T or
     Additional \>\> Analytical Transaction)
 
-    ![A screenshot oIMAGE – AAPO.jpg](media/aa259ae274731113d94ade624c55fac5.jpg)
+    ![Screenshot of the Analytical Purchase Order Entry window.](media/AAPO.jpg)
 
     When you open the Analytical Purchase Order Entry window from the Purchasing Item Detail Entry window, it displays only the account for the selected item.
 
@@ -1722,7 +1722,7 @@ Order Line Items:**
     (Transactions \>\> Purchasing \>\> Purchase Order Entry \>\> enter a
     purchase order \>\> Actions \>\> Copy PO Lines to Current PO)  
 
-    ![A Screenshot IMAGE – AACP.jpg](media/6593ad6049c79a4053c364b47d7fe479.jpg)
+    ![Screenshot of the Purchase Order Entry window.](media/AACP.jpg)
 
 1. Choose Actions and select Create and Copy New PO or Copy PO lines to Current
     PO to open the Copy Purchase Order window.
@@ -1820,7 +1820,7 @@ analysis information created for the document will be deleted.
     (Transactions \>\> Sales \>\> Transaction Entry \>\> Tax expansion button
     \>\> Additional \>\> Analytical Transaction)  
 
-    ![A Screenshot  IMAGE – AARTE.jpg](media/e7030d940008b7c4f45bf9d701a13a9c.jpg)
+    ![Screenshot of the Analytical Receivables Transaction Entry window.](media/AARTE.jpg)
 
 1. To enter analysis information for receivables transactions, refer to *Entering analysis information for General Ledger transactions* .
 
@@ -2260,7 +2260,7 @@ these accounts can be determined only after the invoice is posted.
     (Transactions \>\> Sales \>\> Sales Transaction Entry \>\> Distributions
     \>\>Additional \>\> Analytical Transaction or CTRL+T)
 
-    ![A screenshot IMAGE – AAST.jpg](media/be24d97b079718b840e31a6b32831e2c.jpg)
+    ![Screenshot of the Analytical Sales Transaction Entry window.](media/AAST.jpg)
 
     The distribution accounts of each item number linked to an account class that you enter on an invoice or return, will be added to the total distributions in the Analytical Sales Transaction Entry window only after you tab off the Line Item in the Sales Transaction Entry window.
 
@@ -2592,11 +2592,11 @@ from one sales order document to another.
 
 **To copy analytical accounting information for sales order:**
 
-1. Open copy a Sales Order window  
+1. Open Copy a Sales Order window.  
     (Transaction\>\> Sales \>\> Sales Transaction Entry \>\>enter a sales order
     number \>\> Actions \>\> Copy)
 
-    ![A Screenshot IMAGE – AACSO.jpg](media/2de46d8fe2a52c2cd480699da271aef8.jpg)
+    ![Screenshot of the Copy a Sales Order window](media/AACSO.jpg)
 
 1. Choose Actions and select copy to open the Copy a Sales Order window.
 
@@ -2719,7 +2719,7 @@ information created for such item number also will be deleted.
     Additional \>\>Analytical Transaction Entry)
 
 
-    ![A screenshotIMAGE – AAIE.jpg](media/459376694b78cc322336cc0b6848f7c6.jpg)
+    ![Screenshot of the Analytical Item Transaction Entry window.](media/AAIE.jpg)
 
     The Analytical Item Transaction Entry window displays the first distribution account of the Item Number selected that is linked to an account class. To view other distributions enter or select a distribution number. The distribution lookup displays all distribution accounts of the transaction linked to an account class.
 
@@ -3141,14 +3141,14 @@ number, or master asset ID to another.
 
 **To enter analysis information on asset transfer**
 
-1. Open the Analytical Transfer Maintenance window  
+1. Open the Analytical Transfer Maintenance window. 
     (Transactions \>\> Fixed Asset \>\> Transfer \>\> enter or select an asset
     ID\>\>Additional \>\> Analytical Transaction or CTRL+T)  
     (Transactions \>\> Fixed Assets \>\> Transfer \>\> enter or select an asset
     ID \>\> G/L Accounts expansion button\>\> Expand Transfer\>\> Analytical
     Accounting Button)
 
-    ![A Screenshot IMAGE – AATM.jpg](media/2e1b0bce0f68b61920a1d3a969bf0993.jpg)
+    ![Screenshot of the Analytical Transfer Maintenance window.](media/AATM.jpg)
 
 1. The Distribution field displays the first distribution account of the Item
     Number selected one of the account associated to Asset ID.To view other
@@ -3257,7 +3257,7 @@ deleted when the distributions are re-created.
     (Administration \>\> Routines\>\> Fixed Assets\>\> GL Posting\>\>
     Additional\>\> Analytical Transaction or CTRL+T)
 
-    ![A Screenshot IMAGE – AAFAT.jgp](media/95d3b57608389dbfe5fe9be1c8f20e8b.jpg)
+    ![Screenshot of the Analytical Fixed Asset Transaction Entry window.](media/AAFAT.jpg)
 
 1. The Distribution field displays the first distribution account of the one of
     the account associated to Asset ID. To view other distributions for the
@@ -3523,7 +3523,7 @@ the existing analysis information for a transaction or receipt:
     (Transactions \>\> Financial \>\> Bank Transactions \>\> Additional \>\>
     Analytical Transaction or CTRL+T)
 
-    ![A Screenshot IMAGE – AABTE.jpg](media/a129760d67ac1b1acd0f2935fd4c162c.jpg)
+    ![Screenshot of the Analytical Bank Transaction Entry window.](media/AABTE.jpg)
 
     The Analytical Bank Transaction Entry window will only display distribution accounts of a transaction or receipt that are linked to an account class.
 
@@ -4606,7 +4606,7 @@ transaction for the specific combination.
     (Administration \>\> Setup \>\> Posting \>\> Analytical Accounting Default
     Dimensions button)  
 
-    ![A Screenshot IMAGE – AAPR.jpg](media/8ddcef4c4dc549199c07d8e7c1112a2f.jpg)
+    ![Screenshot of the Analytical Payroll Default Dimensions window.](media/AAPR.jpg)
 
 1. Select a payroll posting account type in the Payroll Posting Type field. The posting types available in the U.S. Payroll module are available for selection. Refer to U.S. Payroll documentation for more information.
 
@@ -4661,7 +4661,7 @@ transactions.
     (Transactions \>\> Payroll \>\> Payroll Posting Edits \>\> Analytical
     Accounting Button)
 
-    ![A Screenshot IMAGE – AAPRT.jpg](media/aaaa96c29f019c4bec396ab702f5c947.jpg)
+    ![Screenshot of he Analytical Payroll Transaction Entry window.](media/AAPRT.jpg)
 
 1. The Distribution field displays the distribution account selected in the
     Payroll Transaction Entry window. To view other distributions for the
@@ -4784,7 +4784,7 @@ Payroll module.
     (Inquiry \>\> Payroll \>\> Check History \>\> Select a transaction \>\>
     Additional \>\>Analytical Transaction)  
 
-    ![A Screenshot IMAGE – AAPRI.jpg](media/1ba894bb2b5e18ed65172a6533e7bf7e.jpg)
+    ![Screenshot of the Analytical Payroll Transaction Entry Zoom window.](media/AAPRI.jpg)
 
     The Analytical Payroll Transaction Entry Zoom window displays all analysis information created for a distribution account. The first distribution account of the document linked to an account class is displayed. Enter or select a distribution number to view analysis information for other distribution accounts.
 
