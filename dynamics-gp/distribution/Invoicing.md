@@ -182,7 +182,7 @@ The following diagrams show how tax details are compared to determine the amount
 
 - For a pickup shipping method
 
-    ![Image](media/INVSM.jpg)
+    ![Image](media/INVPSM.jpg)
 
     The tax calculated on the line item would be the amount or percentage assigned to tax detail TAX002, the tax calculated on the freight charge will be the amount or percentage assigned to tax detail TAX002, and the tax on the miscellaneous charge will be the amount or percentage assigned to tax detail TAX004. These details are used because they appear in both the site schedule and in the item, freight, or miscellaneous schedule.
 
@@ -197,7 +197,7 @@ Use the Invoicing Setup Options window to specify a method for calculating taxes
 
 1. Open the Invoicing Setup Options window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Sales \>\> Invoicing \>\> Options button)
 
-    ![Image](media/INVISO.jpg)
+    ![Image](media/INVSETO.jpg)
 
 2. Choose advanced tax calculations or a single schedule for use for all sales.
 
