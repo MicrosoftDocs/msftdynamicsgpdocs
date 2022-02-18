@@ -342,7 +342,7 @@ information.
 
 PACM 6.JPEG
 
-![A screenshot ](media/d8b89b896044100f36b1b958e7a7dc2c.jpg)
+![A screenshot ](media/PACM6.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -375,7 +375,7 @@ view them.
 
 1. Open the Equipment Maintenance window. **Cards \> Project \> Equipment**
 
-    ![A screenshot of a computer Description automatically generated](media/PACM 7.JPEG)
+![A screenshot of a computer Description automatically generated](media/PACM 7.JPEG)
 
 1. Select an equipment ID.
 
@@ -500,7 +500,7 @@ page 85 for more information.
 
 PACM 10.JPEG
 
-![A screenshot ](media/b72ae65a548ccd7de909fcef542bd876.jpg)
+![A screenshot ](PACM 10.jpg)
 
 1. Enter a rate table ID, date, and description. The date is for information
     only.
@@ -569,7 +569,7 @@ based on pay code* on page 27 for more information.
 
 PACM 11. JPEG
 
-![A screenshot of a social media post Description automatically generated](media/153b8b891ea7eca8abd9dea356704d69.jpg)
+![A screenshot of the PA Position Rate Table Maintenance window.](media/PACM 11.jpg)
 
 The window is similar to the PA Employee Rate Table Maintenance window. See
 *Create an employee rate table* on page 23 for more information.
@@ -591,7 +591,7 @@ Equipment Rate Table**
 
 PACM 12.JPEG
 
-![A picture containing screenshot Description automatically generated](media/e0ca55484b39509f048f2965d619c21e.jpg)
+![Screenshot of the PA Equipment Rate Table Maintenance window.](media/PACM 12.jpg)
 
 The window is similar to the PA Employee Rate Table Maintenance window.
 
@@ -616,7 +616,7 @@ The following table lists the windows and how to open them.
 | Position       | Cards \> Project \> Position Rate Table \> Enter a rate table ID \> Rate Table ID wizard button                |
 | Equipment      | Cards \> Project \> Equipment Rate Table \> Enter a rate table ID \> Rate Table ID wizard button PACM 13. JPEG |
 
-![A screenshot ](media/20ef112b6a2f11329b9bc8c716e2c908.jpg)
+![A screenshot ](media/PACM 13.jpg)
 
 1. Select **Copy existing entries from this rate table** and select the rate
     table.
@@ -718,7 +718,7 @@ in it.
 
 PACM 14.JPEG
 
-![A screenshot ](media/440792b76abaf3ddd8871e077ae22066.jpg)
+![A screenshot ](PACM 14.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -758,7 +758,7 @@ You can specify billing settings for a contract template.
 
 PACM 15. JPEG
 
-![](media/83df8e4dc0425a7a50e20576b2f9fe93.jpg)
+![](media/PACM 15.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -784,7 +784,7 @@ Amount** fee calculation method in projects in the template will be copied.
 
 PACM 16. JPEG
 
-![A screenshot ](media/8fdf934bcfaf86ada62cd2e20d89438c.jpg)
+![A screenshot ](media/PACM 16.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -838,7 +838,7 @@ You can create a project template to apply to project records.
 
 PACM 17.JPEG
 
-![](media/8928b33a3547bae98e9d69d7b26a243a.jpg)
+![](PACM 17.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -900,7 +900,7 @@ You can specify billing settings for a project template.
 
 PACM 18.JPEG
 
-![A screenshot ](media/25966d693da1a9be845dbe936e6ceae1.jpg)
+![A screenshot ](media/PACM 18.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -930,7 +930,7 @@ Multicurrency**).
 
 PACM 19.JPEG
 
-![A screenshot ](media/48e08b71a2ff599f1e0b07e8ba8b499b.jpg)
+![A screenshot ](media/PACM 19.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -975,7 +975,7 @@ for forecast budget amounts will be used.
 
 **PACM 20.JPEG**
 
-![](media/919311ca836400f112815f77c239d0a1.jpg)
+![](media/PACM 20.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1074,7 +1074,7 @@ project closing requirements isn't complete.
 
 PACM 21.JPEG
 
-![A screenshot ](media/c384f0cc8a7ee7e2e9cb38e456791270.jpg)
+![A screenshot ](media/PACM 21.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1217,7 +1217,7 @@ Status button**
 
 PACM 24.JPEG
 
-![A screenshot of a computer Description automatically generated](media/c455e81242ba6fc6a21a2b23fe4df466.jpg)
+![A screenshot of a computer Description automatically generated](media/PACM 24.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -1244,7 +1244,7 @@ Labels button**
 
 PACM 25.JPEG
 
-![A screenshot ](media/52ffca86ab9102e7c71245d9412bc314.jpg)
+![A screenshot ](media/PACM 25.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1433,7 +1433,7 @@ Class**
 
 PACM 26.JPEG
 
-![A screenshot ](media/60df6b2a725402ca4541f74cf287604b.jpg)
+![A screenshot ](media/PACM 26.jpg)
 
 1. Enter a class ID and description.
 
@@ -1457,7 +1457,7 @@ Category) to view them.*
 
 **PACM 27.JPEG**
 
-![](media/baad6b9551b7a05290f642545adfc5db.jpg)
+![](media/PACM 27.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -1535,7 +1535,7 @@ Class \> Go To button \> Benefits**
 
 PACM 28.JPEG
 
-![A screenshot ](media/83f90b4dac44c7671e549ef9d3029015.jpg)
+![A screenshot ](media/PACM 28.jpg)
 
 1. Select whether to allocate benefits based on currency amounts or hours
     posted.
@@ -1571,7 +1571,7 @@ Class \> Go To button \> Benefits \> Go To button \> Accounts**
 
 PACM 29.JPEG
 
-![A screenshot of a social media post Description automatically generated](media/5fdb882a62bee24ed223b5569d72689a.jpg)
+![A screenshot of a social media post Description automatically generated](media/PACM 29.jpg)
 
 1. Select a benefit code.
 
@@ -1621,7 +1621,7 @@ Allocation**
 
 PACM 30.JPEG
 
-![A screenshot of a computer Description automatically generated](media/f758239c31b573391cf6c8c059ce30fb.jpg)
+![A screenshot of a computer Description automatically generated](media/PACM 30.jpg)
 
 1. Enter or select ranges of projects, employees, check dates, or cost
     categories.
@@ -1696,7 +1696,7 @@ See *Assign fees to a project* on page 89 for more information.
 
 **PACM 31.JPEG**
 
-![](media/b2d7f77a6063fe7d96ffd2b01c4f6d31.jpg)
+![](media/PACM 31.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1876,7 +1876,7 @@ See *Create a contract record* on page 62 for more information.
 
 PACM 32.JPEG
 
-![A screenshot of a computer Description automatically generated](media/206ae5d8deefcc108c1a08b23dc3e275.jpg)
+![A screenshot of a computer Description automatically generated](media/PACM 32.jpg)
 
 1. Enter a class ID and description.
 
@@ -1923,7 +1923,7 @@ view them.*
 
 **PACM 33.JPEG**
 
-![](media/206ae5d8deefcc108c1a08b23dc3e275.jpg)
+![](media/PACM 33.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2033,7 +2033,7 @@ settings.*
 
 PACM 34.JPEG
 
-![](media/4bb6d6184354988e1735deab0bc8a2e0.jpg)
+![](media/PACM 34.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -2094,7 +2094,7 @@ button \> Customer ID expansion button**
 
 PACM 35.JPEG
 
-![A screenshot of a computer Description automatically generated](media/2effd7a4f400a7543699d31420ebe0f4.jpg)
+![A screenshot of a computer Description automatically generated](media/PACM 35.jpg)
 
 1. Select customers to include on the third-party customer list for the
     contract.
@@ -2138,7 +2138,7 @@ See *Create a project record* on page 68 for more information.
 
 PACM 36.JPEG
 
-![A screenshot ](media/237e387149c618873c57f67f43528b9d.jpg)
+![A screenshot ](media/PACM 36.jpg)
 
 1. Enter a class ID and description.
 
@@ -2230,7 +2230,7 @@ Inquiry window (Inquiry \> Project \> Maintenance \> Project) to view them.*
 
 **PACM 37.JPEG**
 
-![](media/23989310712cf59a6f0ebd98b5a16cbc.jpg)
+![](media/PACM 37.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2373,7 +2373,7 @@ settings.*
 
 PACM 38.JPEG
 
-![A screenshot ](media/2432376bce9e4653a8d56937dc77ed30.jpg)
+![A screenshot ](media/PACM 38.jpg)
 
 1. Click the **Customer ID** expansion button to create a third-party customer
     list for the project. See *Create a third-party customer list for billing*
@@ -2478,7 +2478,7 @@ that use the **Fee Amount** fee calculation method will be copied.
 
 **PACM 39.JPEG**
 
-![](media/711906c69a5bdf16843cda1df66dc0df.jpg)
+![](media/PACM 39.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2523,7 +2523,7 @@ Cards \> Project \> Project \> Equip List button
 
 PACM40.JPEG
 
-![A screenshot ](media/f79f7fa9757f831aed3b9130758bdba0.jpg)
+![A screenshot ](media/PACM 40.jpg)
 
 1. Select the equipment records for the project.
 
@@ -2549,7 +2549,7 @@ Project \> Access List button) to view the assignments.*
 
 PACM 41.JPEG
 
-![A screenshot ](media/f79f7fa9757f831aed3b9130758bdba0.jpg)
+![A screenshot ](media/PACM 41.jpg)
 
 1. Select the employees for the project.
 
@@ -2583,7 +2583,7 @@ You can assign an employee to projects.
 
 **PACM 42.JPEG**
 
-![](media/92bae8d4430fd86eaafff4c0c0ac968e.jpg)
+![](media/PACM 42.jpg)
 
 A screenshot of a computer Description automatically generated
 
