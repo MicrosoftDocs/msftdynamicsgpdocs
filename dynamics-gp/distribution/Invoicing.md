@@ -197,7 +197,7 @@ Use the Invoicing Setup Options window to specify a method for calculating taxes
 
 1. Open the Invoicing Setup Options window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Sales \>\> Invoicing \>\> Options button)
 
-    ![Image](media/INVSETO.jpg)
+    ![Screenshot of the Invoicing Setup Options window.](media/INVSETO.jpg)
 
 2. Choose advanced tax calculations or a single schedule for use for all sales.
 
