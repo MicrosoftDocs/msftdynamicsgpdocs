@@ -1389,7 +1389,7 @@ This table is based on the Posting Accounts **From** option (**Item** or
 
 IMAGE – FARM10.jpg
 
-![A screenshot of a cell phone - ](media/a52bdb0ea4df751d5e4697df9c7451cd.jpg)
+![Table showing the Location information for each Posting Account.](media/FARM10.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
