@@ -144,7 +144,7 @@ and Depot Management), many new options and paths become available.
 
 IMAGE – FARM1.jpg
 
-![A close up of a logo - ](media/00a7f706f144330c6f17db09b3b43451.jpg)
+![Outline of the RMA life cycle.](media/FARM1.jpg)
 
 A close up of a logo Description automatically generated
 
@@ -203,7 +203,7 @@ and Depot Management), many new options and paths become available.
 
 IMAGE – FARM2.jpg
 
-![A screenshot of a cell phone - ](media/f12018aae2b49de01e869ece9a2df275.jpg)
+![Outline of the RTV life cycle.](media/FARM2.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -296,7 +296,7 @@ automatically.
 1. Open the Service Setup – Returns window. Microsoft Dynamics GP menu \> Tools
     \> Setup \> Project \> Service Setup \> Return button
 
-![A screenshot of a cell phone - ](media/c769b7d3f57331e85f2ee591920f156e.png)
+![Screenshot of the Service Setup – Returns window.](media/FARM3.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -472,7 +472,7 @@ common entries in the RMA Entry/Update windows.
 
 IMAGE – FARM4.jpg
 
-![A screenshot of a cell phone - ](media/e7b2929f2289ce9e817505e610809dd0.jpg)
+![Screenshot of the RMA Type Maintenance window.](media/FARM4.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -808,7 +808,7 @@ a service call is invoiced for the current customer and site combination.
 
 IMAGE – FARM6.jpg
 
-![](media/bf7177d7d41bb05716aff3c9f813f4f7.jpg)
+![](media/FARM6.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -829,7 +829,7 @@ sold by your company.
 
 IMAGE – FARM7.jpg
 
-![](media/b2fbf0d4a807ab4b46829b998a6f5952.jpg)
+![](media/FARM7.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -877,7 +877,7 @@ location for the equipment.
 
 IMAGE – FARM8.jpg
 
-![](media/f81109484a788f0390fa3aa1a0a2b290.jpg)
+![](media/FARM8.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -1083,7 +1083,7 @@ Installed.
 
 IMAGE – FARM9.jpg
 
-![](media/b72e6312ea19a7ddc0bb56859d884192.jpg)
+![](media/FARM9.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
