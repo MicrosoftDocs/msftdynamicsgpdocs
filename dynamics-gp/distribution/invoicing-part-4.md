@@ -186,7 +186,7 @@ gain more detailed information about individual fields on the invoice.
     (Inquiry \>\> Sales \>\> Invoiced Items \>\> click Document Number link)
     (Inquiry \>\> Sales \>\> Salesperson \>\> click Document Number link)
 
-    ![A screenshot INVINQ.jpg](media/bb3b2302a95a7f4a0903252d1d018f69.jpg)
+    ![A screenshot INVINQ.jpg](media/INVINQ.jpg)
 
 2. Choose expansion buttons to view additional inquiry windows.
 
@@ -239,7 +239,7 @@ ranges of information to include on the report.
 The following table lists the report types available in Invoicing and the
 reports that fall into those categories.
 
-![A screenshot INVRPTS.jpg](media/9e22f7a16c489ea2fec8b5b57f133815.jpg)
+![A screenshot INVRPTS.jpg](media/INVRPTS.jpg)
 
 ### Specifying an Invoicing report option
 
