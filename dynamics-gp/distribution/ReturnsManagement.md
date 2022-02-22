@@ -1877,7 +1877,7 @@ in the RMA – Kit Components window to specify bins for kit components.
 
 IMAGE – FARM11.jpg
 
-![](media/574168f6abc6cfef05ccb6bbd3bcf9ba.jpg)
+![](media/FARM11.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1935,7 +1935,7 @@ The following table explains how the account field is populated.
 
 IMAGE – FARM12.jpg
 
-![](media/2f6243c4d1229b40fe723fb30ddb660f.jpg)
+![](media/FARM12.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2212,7 +2212,7 @@ You can access the Internet tracking pages for delivery services.
 
 IMAGE – FARM14.jpg
 
-![](media/232dcba71dd1014742f0f29895589897.jpg)
+![](media/FARM14.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2440,7 +2440,7 @@ and the reports included in those categories.
 
 IMAGE – FARM15.jpg
 
-![A screenshot of a cell phone - ](media/526a8c7b538b8fc4e8b3147de1553154.jpg)
+![A screenshot of a cell phone - ](media/FARM15.jpg)
 
 #### Reports you can use with named printers
 
