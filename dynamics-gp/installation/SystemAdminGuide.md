@@ -2475,7 +2475,7 @@ activities are performed by process servers, especially if you have the
 Track Start and End Times option marked in the DPS Setup window, so you may
 need to remove data from the table periodically.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+<!--![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *Before removing process server detail, back up your company's data.*
 
@@ -2485,15 +2485,13 @@ need to remove data from the table periodically.
 
 (Administration \>\> Utilities \>\> System \>\> Process Server)
 
-![A screenshot ](media/91eccc90ebd5005ee56b5a5a0d326c72.jpg)
+![A screenshot ](media/sys admin guide 47.jpg)
 
 1. Enter server and date restrictions by selecting Server ID or Date from the
     Ranges listing and enter a range in the From and To fields. Choose Insert
     and the range will appear in the Restrictions box.
 
-![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
-
-
+<!--![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
 *If you don't specify any server or date restrictions, all records will be
 included. You can enter only one range of dates and one range of server
@@ -2700,9 +2698,7 @@ client computers to access files other than Microsoft Dynamics GP tables on
 the server or network volumes, you must store dictionaries locally on all
 clients.
 
-![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
-
-
+![A Screenshot](media/sys admin guide 54.gif)
 
 *We recommend that you always store application dictionaries locally for
 best performance; storing forms and reports dictionaries locally improves
@@ -2797,7 +2793,7 @@ The following example shows the information in the Dynamics.set file on a
 Windows client after product information has been added for two integrating
 products, Lead Tracking and Time and Billing.
 
-![A screenshot ](media/e86b980227ef135617849572b100d4df.jpg)
+![A screenshot ](media/sys admin guide 55.jpg)
 
 On client computers where the defaults file **Workstation2** setting is
 Windows, all three sets of dictionary locations will be used, so that the
@@ -2832,7 +2828,7 @@ common reports dictionary on a network volume. You may want to set up launch
 files in this way if certain users need specialized reports while others use
 a common set.
 
-![A screenshot ](media/628e7d401bf34793e0b2aa1dd8b89500.jpg)
+<!--![A screenshot ](media/628e7d401bf34793e0b2aa1dd8b89500.jpg)-->
 
 #### Example launch file using central dictionaries
 
@@ -2855,7 +2851,7 @@ indicated.
 The following example shows the launch files for Windows clients accessing
 dictionaries stored on a data server.
 
-![A screenshot ](media/b425984db2e4c6c323d1c0d1d93efd11.jpg)
+<!--![A screenshot ](media/b425984db2e4c6c323d1c0d1d93efd11.jpg)-->
 
 #### Creating a launch file
 
@@ -2877,9 +2873,7 @@ a launch file.
 
 4. Accept the name or enter a new one, then choose OK or Save.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *If you don't accept the default name, be sure to modify the properties of
 the Microsoft Dynamics GP program item so that the correct launch file will
@@ -2926,7 +2920,7 @@ a text editor* on page 82 for more information.
 
 (Administration \>\> Setup \>\> System \>\> Edit Launch File)
 
-![A screenshot ](media/913f27c7a19f592a619ab746a57635f0.jpg)
+![A screenshot ](media/sys admin guide 56.jpg)
 
 1. Select a launch file. The launch file used to start the current session of
     Microsoft Dynamics GP will be displayed in the Launch File field. To select
@@ -2934,15 +2928,9 @@ a text editor* on page 82 for more information.
     box where you can select a launch file. Choose OK.
 
 2. Select a product. The scrolling window displays the products, including
-    Microsoft Dynamics GP and any integrating products you're using with
+    Microsoft Dynamics GP and any integrating products you're using with Microsoft Dynamics GP, that are opened using the launch file displayed in the Launch File field. Select the product you want to edit dictionary location information for.
 
-Microsoft Dynamics GP, that are opened using the launch file displayed in
-the Launch File field. Select the product you want to edit dictionary
-location information for.
-
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *To remove a product from the launch file, or to restore a product ID and
 name of an integrating product you deleted from the launch file you're
@@ -2954,9 +2942,7 @@ editing, you must use a text editor.*
     location ID, you can check it by viewing the **Workstation2** setting in
     your Dex.ini file.
 
-![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
-
-
+<!--![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
 *The changes you make to the dictionary location ID will affect only the
 dictionaries opened on your computer.*
@@ -2965,9 +2951,7 @@ dictionaries opened on your computer.*
     dictionary, forms dictionary, and reports dictionary for the launch file and
     product you selected are displayed in the Dictionary Locations fields.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+<!-- ![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *To specify a different location for a dictionary, choose the corresponding
 file button. A dialog box will be displayed; specify the new location and
@@ -3003,7 +2987,7 @@ location ID, you must make the same change in the defaults files where it's
 stored. For more information, see *How launch files and defaults files work
 together* on page 85.
 
-![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+<!--![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
 
 
@@ -3020,7 +3004,7 @@ you must create a launch file for each.*
 2. Open the launch file by choosing File \>\> Open in Notepad or another text
     editor.
 
-![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+<!--![](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *We recommend that you do not edit a launch file using Write for Windows.*
 
@@ -3136,9 +3120,7 @@ To edit the Dex.ini file, use Windows Notepad to open the file, then edit
 existing parameters or add settings and parameters. Be sure to include an
 equal sign for each setting, before the parameter.
 
-![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
-
-
+<!--![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
 *We recommend that you do not edit the Dex.ini file using Windows Write. The
 defaults file is essential for Microsoft Dynamics GP to run correctly;
@@ -3152,9 +3134,7 @@ If your defaults file is damaged or deleted, we recommend that you restore a
 backup; if you re-create the file, you must reenter several of the settings.
 Other settings that must be reentered vary, depending on your configuration.
 
-![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
-
-
+<!--![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
 > [!IMPORTANT]
 > We recommend that you do not delete the defaults file if you want to re-create it. The defaults file is essential for Microsoft Dynamics GP to run correctly; always make a backup before you edit it, and don't edit any setting unless you're instructed to do so by your reseller, or by Microsoft Dynamics GP Technical Support.
@@ -3179,7 +3159,7 @@ This information explains how to troubleshoot problems on your own, where to loo
 
 You also can visit the [Additional Resources for Microsoft Dynamics On-Premise Customers](/dynamics/s-e/global/additionalresources) article and look for answers to your most common technical questions including troubleshooting steps, solutions to common issues, and how-to articles.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 > [!NOTE]
 > When you install or use Microsoft Dynamics GP, alert messages may appear that are caused by errors in other applications, such as the file handler or operating system. To deal with errors not caused by Microsoft Dynamics GP, refer to the documentation for the application causing the error.
@@ -3304,9 +3284,7 @@ documentation.
 If the error does not occur for all users, a security problem may exist. You
 should also check customizations, such as modified reports and forms.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *Remember that you have security options within SQL Server and within
 Microsoft Dynamics GP.*
@@ -3344,7 +3322,7 @@ recent modifications have been done, check the modifications for errors. If
 the modifications have worked in the past, rename the dictionary and restore
 it from a backup.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+<!--![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
 *Do not delete dictionaries. Renaming files allows you to restore these files
 later, if necessary.*
@@ -3356,9 +3334,7 @@ to see if errors still occur. If integrating applications are present,
 remove the dictionaries from the Dynamics.set file and rename the associated
 file extensions in Windows Explorer.
 
-![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
-
-
+<!--![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
 *Do not delete these files. Renaming file extensions allows you to restore
 these files later, if necessary.*
@@ -3416,9 +3392,7 @@ determined which tables need to be repaired, see the data recovery checklist in
     record, you can conclude that the data in the RM Customer MSTR table is
     corrupt.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *Each Microsoft Dynamics GP table has three names: a display name, a
 technical name, and a physical name. Display names are displayed in the
@@ -3532,9 +3506,7 @@ follow the steps in this checklist. If it's possible that one or more tables
 are need maintenance, but you can't determine which, perform the data
 recovery procedures on all tables that may be affected.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *If you have a current backup that you made before your table issues
 occurred, you could restore it instead of completing the procedures in the
