@@ -1,5 +1,5 @@
 ---
-title: "Receivables Management in Dynamics GP"
+title: "Receivables Management Part 2: Transaction entry"
 description: "Managing receivables in Dynamics GP."
 keywords: "receivables"
 author: theley502

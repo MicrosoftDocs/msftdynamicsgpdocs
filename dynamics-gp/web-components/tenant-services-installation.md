@@ -580,8 +580,8 @@ following steps:
     Enter the URL for the discovery and management services. The URL should use
     the format of the following URLs.
 
-    - https://<servername>:<port>/TenantDiscoveryService    
-    - https://<servername>:<port>/TenantManagementService
+    - https://\<servername\>:\<port\>/TenantDiscoveryService    
+    - https://\<servername\>:\<port\>/TenantManagementService
 
         To get the URL for the Tenant Discovery Service you can use the Microsoft.Dynamics.MultitenantService.Discovery.config file. The baseAddress node contains the URL of the service. The file is found in the c:\Program Files\Microsoft Dynamics\Tenant  Services\DiscoveryService folder on the server where you installed Tenant Services. To get the URL for the Tenant Management Service, you can use the Microsoft.Dynamics.MultitenantServices.Management.config file. The file is found in the C:\Program Files\Microsoft Dynamics\Tenant Services\ManagementService folder.
 

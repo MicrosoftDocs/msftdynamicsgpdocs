@@ -1,5 +1,5 @@
 ---
-title: "Client installation"
+title: "Installing Dynamics GP on the first computer"
 description: "Get Dynamics GP on the first computer and synchronize data with the server."
 keywords: "upgrade"
 author: edupont04

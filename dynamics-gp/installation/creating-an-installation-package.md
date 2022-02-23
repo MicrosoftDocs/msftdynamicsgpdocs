@@ -1,5 +1,5 @@
 ---
-title: "Installation package"
+title: "Creating an installation package"
 description: "Prepare the Dynamics GP installation by building an installation package."
 keywords: "install"
 author: edupont04
