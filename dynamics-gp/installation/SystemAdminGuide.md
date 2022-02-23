@@ -1121,7 +1121,7 @@ Complete this procedure for each company you're backing up and for the
 system database. You also can use SQL Server Management Studio to back up
 data.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 
 
