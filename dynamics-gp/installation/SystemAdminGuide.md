@@ -3554,7 +3554,7 @@ If you were alerted to damage by an alert message indicating damage to a
 specific table, the name of the table won't be listed in the Check Links
 window.
 
-![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
+<!--![](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
 *If the table is in the System or Company series, see Reconciling tables on page
 97.*
@@ -3573,7 +3573,7 @@ Always make a backup before checking links.
 
 (Microsoft Dynamics GP menu \>\> Maintenance \>\> Check Links)
 
-![A screenshot ](media/950ecb44b521a20b70d741d62d212440.jpg)
+![A screenshot ](media/sys admin guide 57.jpg)
 
 1. Select the series containing the tables to check.
 
@@ -3600,9 +3600,7 @@ and choose Remove.
 
     - The Check Links Report will display any information that was re-created.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *We recommend that you send the Check Links Report to the screen, and then
 print it if necessary, because it may be very large. Each report can only be
@@ -3616,9 +3614,7 @@ report to a file as well.*
     created through processes such as posting or aging, and this information
     can't be reentered manually in a window.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *You may want to create a report using Report Writer that lists all fields
 included in the table that you checked links for. This report can serve as a
@@ -3668,7 +3664,7 @@ performing any other table maintenance procedure.
 
 (Administration \>\> Utilities \>\> System \>\> Reconcile)
 
-![A screenshot ](media/3a86aab9ce0e6ad7af063fe066660c75.jpg)
+![A screenshot ](media/sys admin guide 58.jpg)
 
 1. Highlight each table to be reconciled and choose Insert.
 
@@ -3682,9 +3678,7 @@ The Report Destination window appears; specify where the reconcile report
 should be printed. If you mark File, select the appropriate file format and
 enter a report table location.
 
-![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)
-
-
+<!--![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
 *Always send the Reconcile Report to the printer, since it can be printed
 only once. It's a good idea to send the report to a file, as well, in case
@@ -3715,9 +3709,7 @@ complete backup of your tables, if possible.
 
 1. Back up your current data.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *Always make a backup of current data before restoring an earlier backup, in
 case you need to refer to it later. Your current backup may have become
@@ -3750,9 +3742,7 @@ a backup you have on hand.*
         physical and table groups accessed by a window, use the procedures in
         the Resource Descriptions documentation.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+<!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *On rare occasions, you may not be able to reenter information into every
 table. Some records are created through processes such as posting or aging,
@@ -3768,9 +3758,7 @@ end of the year, or until the next time you clear history.*
 
 Use the Restore Company window to restore data from a backup file.
 
-![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
-
-
+![A Screenshot](media/sys admin guide 59.jpg)
 
 *Only the system administrator can open the Restore Company window and
 restore data. The Restore Company window is only available when using a
@@ -3782,7 +3770,7 @@ Microsoft Dynamics GP installation on the SQL Server.*
 
 (Microsoft Dynamics GP menu \>\> Maintenance \>\> Restore)
 
-![A screenshot ](media/d500d7795a2e3508eb777ea4bbc687a4.jpg)
+<!--![A screenshot ](media/d500d7795a2e3508eb777ea4bbc687a4.jpg)-->
 
 1. Select the company to restore, or select System Database to restore system
     data.
