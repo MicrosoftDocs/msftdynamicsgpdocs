@@ -123,7 +123,7 @@ Commitments are amounts from purchase order documents that are committed to be p
 
 3. Choose Commitment Setup—the PO Commitments Setup window will open.
 
-    ![Screenshot of the PO Commitments Setup window.](media/POEge012.jpg)
+![Screenshot of the PO Commitments Setup window.](media/POEge012.jpg)
 
 4. Select one of the following authorization types:
 
@@ -500,7 +500,7 @@ To use purchase order approvals, be sure that purchase order approval workflow i
 
     The window displays a list of all the users who have access to the company.
 
-    ![Screenshot of the Purchase Order Approval User Setup window.](media/POEge039.jpg)
+![Screenshot of the Purchase Order Approval User Setup window.](media/POEge039.jpg)
 
 4. Select a user.
 
@@ -786,7 +786,7 @@ You can obtain detailed item information for purchasing documents using the Purc
 
 5. To view more detailed information, highlight a record and click on the PO Number heading link—the Purchase Order Inquiry Zoom window will open. The Approvals Status field displays the purchase order approval status.
 
-    ![Screenshot of the Purchase Order Inquiry Zoom window.](media/POEge056.jpg)
+![Screenshot of the Purchase Order Inquiry Zoom window.](media/POEge056.jpg)
 
 6.  When you are finished viewing the information, choose OK.
 
