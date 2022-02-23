@@ -569,7 +569,7 @@ based on pay code* on page 27 for more information.
 
 PACM 11. JPEG
 
-![A screenshot of a social media post Description automatically generated](media/153b8b891ea7eca8abd9dea356704d69.jpg)
+![Screenshot of the PA Position Rate Table Maintenance window.](media/153b8b891ea7eca8abd9dea356704d69.jpg)
 
 The window is similar to the PA Employee Rate Table Maintenance window. See
 *Create an employee rate table* on page 23 for more information.
@@ -591,7 +591,7 @@ Equipment Rate Table**
 
 PACM 12.JPEG
 
-![A picture containing screenshot Description automatically generated](media/e0ca55484b39509f048f2965d619c21e.jpg)
+![Screenshot of the PA Equipment Rate Table Maintenance window.](media/e0ca55484b39509f048f2965d619c21e.jpg)
 
 The window is similar to the PA Employee Rate Table Maintenance window.
 
