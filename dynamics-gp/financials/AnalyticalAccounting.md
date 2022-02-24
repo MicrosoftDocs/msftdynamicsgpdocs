@@ -780,7 +780,7 @@ of special characters.
 1. Open the Transaction Dimension Maintenance window. (Cards \>\> Financial
     \>\> Analytical Accounting \>\> Transaction Dimension)
 
-    ![A Screenshot IMAGE – jpg](media/b77da2c964d58d499e229a18e3091a31AATDM.jpg)
+    ![A Screenshot IMAGE – jpg](media/AATDM.jpg)
 
 1. Enter the name of a transaction dimension.
 
@@ -2516,7 +2516,7 @@ re-assign the codes.
 1. Open the Assign Budget Tree codes window. (Cards \>\> Financial \>\>
     Analytical Accounting \>\> Assign Budget Tree Codes)
 
-    ![A screenshot IMAGE – AABT.jpg](media/69124bee71206a3c37be4b2b773e19f2.jpg)
+    ![A screenshot IMAGE – AABT.jpg](media/AABT.jpg)
 
 1. Enter or select the budget tree ID for which you are assigning codes. The
     Description field displays the description for the selected budget tree ID.
@@ -2632,7 +2632,7 @@ assigned to it:
 Based on the valid relationships that the codes have with one another, the
 tree will look as follows:
 
-![A screenshot IMAGE – AABTR.jpg](media/77cfbf2c0c1a346f47d831e9f2e9c5ad.jpg)
+![A screenshot IMAGE – AABTR.jpg](media/AABTR.jpg)
 
 - The budget tree ID is the highest level of the dimension code tree, and is
     also called the root node of the tree.
@@ -2697,7 +2697,7 @@ assign amounts and accounts to the budget tree that you have created.
 1. Open the Analytical Accounting Budget Maintenance window. (Cards \>\>
     Financial \>\> Analytical Accounting \>\> Budget)
 
-    ![A Screenshot IMAGE – AABM.jpg](media/d00cebec54be3bd8c1a107a73f46e8b8.jpg)
+    ![A Screenshot IMAGE – AABM.jpg](media/AABM.jpg)
 
 1. Enter or select a budget ID and enter a description for the budget ID in the
     Description field.
@@ -3514,11 +3514,11 @@ Class that is attached to all the dimensions within the budget tree ID. The
 total amounts entered against the accounts being imported should not exceed
 the budget total of the relevant nodes.
 
-![A screenshot IMAGE – AABIT.jpg](media/6e66a95340ee9afe3d711b9941c545d3.jpg)
+![A screenshot IMAGE – AABIT.jpg](media/AABIT.jpg)
 
 **Template 2** Budget tree without accounts.
 
-![A Screenshot IMAGE – AABIT2.jpg](media/c28cd897162dcd58e59d73992e34fb59.jpg)
+![A Screenshot IMAGE – AABIT2.jpg](media/AABIT2.jpg)
 
 A close up of a piece of paper Description automatically generated
 
