@@ -375,7 +375,7 @@ view them.
 
 1. Open the Equipment Maintenance window. **Cards \> Project \> Equipment**
 
-![A screenshot of a computer Description automatically generated](media/PACM 7.JPEG)
+![Screenshot of the Equipment Maintenance window.](media/PACM 7.JPEG)
 
 1. Select an equipment ID.
 
@@ -408,7 +408,7 @@ page 22 for more information.
 
     **Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Miscellaneous Class**
 
-    ![A screenshot ](media/PACM 8 .JPEG)
+    ![Screenshot of the Miscellaneous Class Setup window.](media/PACM 8 .JPEG)
 
 1. Select a class ID.
 
@@ -437,7 +437,7 @@ Maintenance \> Miscellaneous) to view them.
 
 1. Open the Miscellaneous Maintenance window. **Cards \> Project \> Miscellaneous**
 
-![A screenshot of a computer Description automatically generated](media/PACM 9. JPEG)
+![Screenshot of the Miscellaneous Maintenance window.](media/PACM 9. JPEG)
 
 1. Select a miscellaneous ID.
 
@@ -500,7 +500,7 @@ page 85 for more information.
 
 PACM 10.JPEG
 
-![A screenshot ](PACM 10.jpg)
+![Screenshot of the PA Employee Rate Table Maintenance window.](PACM 10.jpg)
 
 1. Enter a rate table ID, date, and description. The date is for information
     only.
