@@ -80,7 +80,7 @@ payday, at the end of a period, month, quarter, fiscal year or calendar
 year, during setup, or at a frequency you choose. In addition, you can
 record macros and add them to your checklists.
 
-![A Screenshot](media/sys admin guide 5.jpg)
+![Screenshot of the Company Checklists screen.](media/sys admin guide 5.jpg)
 
 > [!NOTE]
 > While you can open the appropriate windows to perform the tasks from a checklist window, the actual tasks aren't performed automatically.
@@ -89,7 +89,7 @@ The checklist of routines acts as a sort of audit trail, recording the time
 each task was selected, the date the task was completed and the user ID of
 the user who completed the procedure.
 
-![A Screenshot](media/sys admin guide 6.jpg)
+![Screenshot of the Add-Modify Company Routines.](media/sys admin guide 6.jpg)
 
 > [!NOTE]
 > A checklist registers the ID of the user who performed a routine and when it was completed only if a user performed it by selecting the routine in the checklists window and choosing Open. The checklist will not be updated if a user performs a routine by opening a window any other way, such as from a menu.
@@ -151,7 +151,7 @@ and print posting journals overnight, you may want to prevent the print
 dialog box from appearing. The dialog box is shown in the following
 illustration.
 
-![A screenshot ](media/sys admin guide 9.jpg)
+![Screenshot showing the Named Printer Options screen.](media/sys admin guide 9.jpg)
 
 <!---![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)--->
 
@@ -165,7 +165,7 @@ illustration.
 (Administration \>\> Setup \>\> System \>\> Named Printers \>\> Machine ID
 link)
 
-![A screenshot ](media/sys admin guide10.jpg)
+![Screenshot of a generic Named Printer Options screen.](media/sys admin guide10.jpg)
 
 1. Mark the Do Not Display System Print Dialog option.
 
@@ -352,7 +352,7 @@ printers default printer, not the workstation's default printer.
 
 (Administration \>\> Setup \>\> System \>\> Named Printers)
 
-![A screenshot ](media/sys admin guide 9.jpg)
+![Screenshot of the Named Printer Options window.](media/sys admin guide 9.jpg)
 
 <!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
@@ -383,14 +383,14 @@ In the Print Setup window, the default printer from Windows will be the
 initial selection. You can change the printer and its settings. Choose OK to
 save your changes and close the Print Setup window.
 
-![A screenshot ](media/sys admin guide 12.jpg)
+![Screenshot showing the Print Setup window.](media/sys admin guide 12.jpg)
 
 1. In the Setup Named Printers window, DEFAULT is entered as the printer ID and
     the printer name automatically comes from the Print Setup window in Step 5.
     You can change the printer and enter extra descriptive information for the
     printer.
 
-![A screenshot ](media/sys admin guide 13.jpg)
+![Screenshot of the Setup Named Printers window.](media/sys admin guide 13.jpg)
 
 1. Select a printer class.
 
@@ -414,7 +414,7 @@ one with portrait orientation, for the same printer.
 
 (Administration \>\> Setup \>\> System \>\> Named Printers)
 
-![A screenshot ](media/sys admin guide 15.jpg)
+![Screenshot showing the Assign Named Printers window](media/sys admin guide 15.jpg)
 
 1. Choose Setup to open the Setup Named Printers window.
 
@@ -477,7 +477,7 @@ See *[How printers are selected](#how-printers-are-selected) for more informatio
 The user ID and company name you used to log in to Microsoft Dynamics GP
 appear in the user ID and company name fields, but you can change them.
 
-![A Screenshot](media/sys admin guide 15.jpg)
+![Screenshot of the Assign Named Printers window.](media/sys admin guide 15.jpg)
 
 > [!TIP]
 > You also can assign a printer by choosing the Assign button in the Setup
@@ -560,7 +560,7 @@ You can import the printer settings from one workstation to another. This
 allows you to set up a machine ID and printer settings on one workstation
 and duplicate the printer settings on other workstations in your system.
 
-![A Screenshot](media/sys admin guide 19.jpg)
+<!--![A Screenshot](media/sys admin guide 19.jpg)-->
 
 > [!NOTE]
 > Because printer settings are not always compatible between different Windows platforms, we recommend that you import settings only from workstations that are running the same version of Windows and have identical printer configurations in the control panel settings.
@@ -574,7 +574,7 @@ and duplicate the printer settings on other workstations in your system.
 1. Choose Setup to open the Setup Named Printers window, then choose Advanced
     to open the Setup Named Printers – Advanced window.
 
-![A Screenshot](media/sys admin guide 19.jpg)
+![Screenshot of the Assign Named Printers window showing example data.](media/sys admin guide 15.jpg)
 
 1. Enter the machine ID of the workstation you want to import the settings from
     and choose Import.
@@ -783,7 +783,7 @@ your customer records are stored together in a table group called the
 Receivables Customer Master Files. If you were entering a General Ledger
 transaction, that information would be stored in the Transaction Work table.
 
-![A screenshot ](media/sys admin guide 22.jpg)
+![Diagram showing example information.](media/sys admin guide 22.jpg)
 
 Just as windows you use to make entries (input) are linked to a particular
 table, the information displayed on reports and documents you'll print
@@ -1135,7 +1135,7 @@ Dynamics GP installation on the SQL Server.*
 
 (Microsoft Dynamics GP menu \>\> Maintenance \>\> Backup)
 
-![A screenshot ](media/sys admin guide 25.jpg)
+![Screenshot of the Back Up Company window.](media/sys admin guide 25.jpg)
 
 1. Select the company you want to back up, or System Database to back up system
     data.
@@ -1164,7 +1164,7 @@ Dynamics GP installation on the SQL Server.*
 Use the SQL Maintenance window to reconfigure your data table keys for better
 performance.
 
-![A Screenshot](media/sys admin guide 28.jpg)
+![Screenshot showing the SQL Maintenance window.](media/sys admin guide 28.jpg)
 
 *Microsoft SQL Server updates statistics automatically. For more
 information, see your SQL Server documentation.*
@@ -1183,7 +1183,7 @@ A system administrator can update statistics if there are performance issues.
 
 (Microsoft Dynamics GP menu \>\> Maintenance \>\> SQL)
 
-![A screenshot ](media/sys admin guide 28.jpg)
+![Screenshot of the SQL Maintenance window.](media/sys admin guide 28.jpg)
 
 1. Select a database and at least one table, and mark the Update Statistics
     option.
@@ -1275,7 +1275,7 @@ installed, as the products to reload database objects for.
 (Choose Start \>\> All Programs \>\> Microsoft Dynamics \>\> GP \>\>
 Database Maintenance.)
 
-![A screenshot ](media/sys admin guide 30.jpg)
+![Screenshot of the Microsoft Dynamics GP Database Maintenance Utility window.](media/sys admin guide 30.jpg)
 
 *You must be a member of the sysadmin fixed server role and be the only user
 connected to the database to reload database objects. For more information
@@ -1350,7 +1350,7 @@ offline.
 
 (Administration \>\> Setup \>\> Company \>\> Company)
 
-![A screenshot ](media/sys admin guide 31.jpg)
+![Screenshot of the Company Setup window.](media/sys admin guide 31.jpg)
 
 1. In the User with offline access field, select the user that will have access
     to the company when it offline.
@@ -1377,7 +1377,7 @@ You must be an administrator to take a company offline.
 
 (Administration \>\> Utilities \>\> System \>\> Take Company Offline)
 
-![A screenshot ](media/sys admin guide 32.jpg)
+![Screenshot of the Take Company Offline for Maintenance window.](media/sys admin guide 32.jpg)
 
 1. Select a company and choose Insert to move it to the Offline Companies list.
     Choose Insert All to move all companies to the Offline Companies list.
@@ -1417,7 +1417,7 @@ company.
 
 (Administration \>\> Utilities \>\> System \>\> Send Users Message)
 
-![A screenshot](media/sys admin guide 33.jpg)
+![Screenshot of the Send Message window.](media/sys admin guide 33.jpg)
 
 1. Select the users you want to send a message to.
 
@@ -1628,7 +1628,7 @@ your system are process servers, and which tasks will be completed on those
 process servers. Sending a task to a process server is called processing a
 task remotely, or **remote processing**.
 
-![A Screenshot](media/sys admin guide 34.png)
+![Illustration of Distributed Process Manager](media/sys admin guide 34.png)
 
 
 
@@ -1782,7 +1782,7 @@ Use this information to help you determine the types of computers you'll use
 as process servers and how to set up your Microsoft Dynamics GP clients,
 servers, and process servers.
 
-![A Screenshot](media/sys admin guide 35.png)
+![Illustration showing Data and Process servers.](media/sys admin guide 35.png)
 
 
 
@@ -2020,7 +2020,7 @@ server in a service the process should be sent to.
 (Administration \>\> Setup \>\> System \>\> Process Server \>\> Services
 button)
 
-![A screenshot ](media/sys admin guide 37.jpg)
+![Screenshot of the DPS Service Setup window.](media/sys admin guide 37.jpg)
 
 1. Type the name of the service in the Services field.
 
@@ -2055,7 +2055,7 @@ Server Setup window, but the existence of those servers won't be verified.
 
 (Administration \>\> Setup \>\> System \>\> Process Server)
 
-![A screenshot ](media/sys admin guide 38.jpg)
+![Screenshot of the DPS Setup window.](media/sys admin guide 38.jpg)
 
 1. In the DPS Setup window, select the series for the processes you want to set
     up for remote processing, or select All to display all processes.
@@ -2065,7 +2065,7 @@ Server Setup window, but the existence of those servers won't be verified.
     series to be processed remotely, choose Mark All. If you want to deactivate
     remote processing for all processes, choose Unmark All.
 
-![A Screenshot](media/sys admin guide 39.jpg)
+![Screenshot of the DPS Setup window with Track Start and End Times selected.](media/sys admin guide 39.jpg)
 
 
 
@@ -2141,7 +2141,7 @@ Setup window are ignored and the processes will occur on the local computer.
 
 (Home \>\> User Preferences)
 
-![A screenshot ](media/sys admin guide 40.jpg)
+![Screenshot of the User Preferences window.](media/sys admin guide 40.jpg)
 
 1. Mark Local or Remote for the Distributed Processes option.
 
@@ -2175,7 +2175,7 @@ if you've set up a process to be performed remotely. However, if you set up
 a report to be printed to the screen and processed locally, then decide to
 process it remotely, you must change the report destination, as well.
 
-![A Screenshot](media/sys admin guide 41.jpg)
+![Diagram of the location of the reports dictionary.](media/sys admin guide 41.jpg)
 
 
 
@@ -2229,7 +2229,7 @@ contains the location of the application dictionaries, forms dictionaries,
 and reports dictionaries you're using. In the following example, the reports
 dictionary is stored at a central network location.
 
-![A screenshot ](media/sys admin guide 42.png)
+![Illustration of the Reports.dic location.](media/sys admin guide 42.png)
 
 To edit the launch file, you can use the Edit Launch File window in
 Microsoft
@@ -2251,7 +2251,7 @@ the launch file on each process server contains the location of that reports
 dictionary. In the following example, all clients and process servers access
 a dictionary stored at a network location.
 
-![A Screenshot](media/sys admin guide 43.png)
+![Illustration showing clients and process servers accessing the Reports.dic. file](media/sys admin guide 43.png)
 
 You also can store the reports dictionary on the process server, to reduce
 network traffic.
@@ -2328,7 +2328,7 @@ background, or remotely by process servers.
 (Microsoft Dynamics GP menu \>\> Process Monitor or drag the Dynamics.set
 file onto the Dps.exe file on the client.)
 
-![A screenshot ](media/sys admin guide 44.jpg)
+![Screenshot of the Process Monitor window.](media/sys admin guide 44.jpg)
 
 The name of the processes will be displayed in the Process list. The
 currently active process will appear at the top of the list. The number of
@@ -2413,7 +2413,7 @@ To view detailed information about a process, select the process in the
 Process Monitor window and choose Detail. The Process Detail window will
 appear, displaying detailed information about the selected process.
 
-![A screenshot ](media/sys admin guide 45.jpg)
+![Screenshot of the Process Monitor window](media/sys admin guide 45.jpg)
 
 If the process is a procedure, only the name of the procedure will appear in
 the window. A procedure is a script that can be called from other scripts to
@@ -2444,7 +2444,7 @@ displayed; to view these processes, use the Process Monitor window.
 
 (Administration \>\> Inquiry \>\> System \>\> Process Server)
 
-![A screenshot ](media/sys admin guide 46.jpg)
+![Screenshot of the Process Server Inquiry window.](media/sys admin guide 46.jpg)
 
 1. Select a sorting option. You can view information about the processes sent
     to this server by date or by user ID.
@@ -2485,7 +2485,7 @@ need to remove data from the table periodically.
 
 (Administration \>\> Utilities \>\> System \>\> Process Server)
 
-![A screenshot ](media/sys admin guide 47.jpg)
+![Screenshot of the Remove Process Server Detail window.](media/sys admin guide 47.jpg)
 
 1. Enter server and date restrictions by selecting Server ID or Date from the
     Ranges listing and enter a range in the From and To fields. Choose Insert
@@ -2698,7 +2698,7 @@ client computers to access files other than Microsoft Dynamics GP tables on
 the server or network volumes, you must store dictionaries locally on all
 clients.
 
-![A Screenshot](media/sys admin guide 54.gif)
+![Diagram showing the dictionary locations.](media/sys admin guide 54.gif)
 
 *We recommend that you always store application dictionaries locally for
 best performance; storing forms and reports dictionaries locally improves
@@ -2793,7 +2793,7 @@ The following example shows the information in the Dynamics.set file on a
 Windows client after product information has been added for two integrating
 products, Lead Tracking and Time and Billing.
 
-![A screenshot ](media/sys admin guide 55.jpg)
+![Diagram showing information in the Dynamics set file.](media/sys admin guide 55.jpg)
 
 On client computers where the defaults file **Workstation2** setting is
 Windows, all three sets of dictionary locations will be used, so that the
@@ -2920,7 +2920,7 @@ a text editor* on page 82 for more information.
 
 (Administration \>\> Setup \>\> System \>\> Edit Launch File)
 
-![A screenshot ](media/sys admin guide 56.jpg)
+![Screenshot of the Edit Launch File window.](media/sys admin guide 56.jpg)
 
 1. Select a launch file. The launch file used to start the current session of
     Microsoft Dynamics GP will be displayed in the Launch File field. To select
@@ -3573,7 +3573,7 @@ Always make a backup before checking links.
 
 (Microsoft Dynamics GP menu \>\> Maintenance \>\> Check Links)
 
-![A screenshot ](media/sys admin guide 57.jpg)
+![Screenshot of the Check Links window.](media/sys admin guide 57.jpg)
 
 1. Select the series containing the tables to check.
 
@@ -3664,7 +3664,7 @@ performing any other table maintenance procedure.
 
 (Administration \>\> Utilities \>\> System \>\> Reconcile)
 
-![A screenshot ](media/sys admin guide 58.jpg)
+![Screenshot of the Reconcile window.](media/sys admin guide 58.jpg)
 
 1. Highlight each table to be reconciled and choose Insert.
 
