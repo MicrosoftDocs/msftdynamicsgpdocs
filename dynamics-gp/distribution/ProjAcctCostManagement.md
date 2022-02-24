@@ -180,7 +180,7 @@ If you're using Canadian Payroll, open the PA Employee Class Options - Canada wi
 
 **Cards \> Payroll - Canada \> Employee Class \> Project button**
 
-![IAMGE](media/PACM 2.jpg)
+![Screenshot of the PA Employee Class Options window.](media/PACM2.jpg)
 
 2. Select whether the employee is paid hourly or is salaried.
 
@@ -208,7 +208,7 @@ If you're using Canadian Payroll, open the PA Employee Options - Canada window.
 
 Cards \> Payroll - Canada \> Employee \> Project button
 
-![IMAGE](media/PACM 3.jpg)
+![Screenshot of the PA Employee Options window.](media/PACM3.jpg)
 
 
 Select **Files Employee Expense** to grant the employee permission to enter employee expense transactions. After you save the employee record, a vendor record will be created for the employee automatically using the employee ID as the vendor ID. To reimburse an employee for employee expenses, the employee must also be a vendor.
@@ -258,7 +258,7 @@ project costs and billing customers* on page 17 for more information.
 
     PACM 4.JPEG
 
-    ![A screenshot ](media/051e992556a8e343d2f4096c675d8d78.jpg)
+    ![Screenshot of the PA Vendor Class Options window showing Default PO Format to Use highlighted.](media/051e992556a8e343d2f4096c675d8d78.jpg)
 
 
 1. Select the default purchase order format to use when printing purchase
@@ -287,7 +287,7 @@ customers.
 
     Cards \> Purchasing \> Vendor \> select a Vendor ID \> Project button
 
-    ![A screenshot ](media/PACM 5.JPEG)
+    ![Screenshot of the PA Vendor Class Options window.](media/PACM 5.JPEG)
 
 1. Select the default purchase order format to use when printing purchase
     orders for the vendor.
@@ -342,7 +342,7 @@ information.
 
 PACM 6.JPEG
 
-![A screenshot ](media/PACM6.jpg)
+![Screenshot of the Equipment Class Setup window.](media/PACM6.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
