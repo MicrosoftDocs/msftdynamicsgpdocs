@@ -119,7 +119,7 @@ select a **Benefit Enrollment** option, enter an **Employee ID**, select a
 
 The Future Effective Activation window is used to activate the future effective date records. The following steps should be followed. To open this window, click the **HR and Payroll** series button, click **Human Resources** on the Utilities content pane and then click **Activate Future Effective Benefits**.
 
-![IMAGE – ADVHRFES.jpg](media/1ade2b756a776e7e0a648332366d701c.jpg)
+![Screenshot of the Future Effective Activation window.](media/ADVHRFES.jpg)
 
 Within the Future Effective Activation scrolling window, the records can be
 sorted ascending or descending by columns. This window will display all
@@ -173,7 +173,7 @@ To open the Certification Entry window, click the **HR and Payroll** series
 button, click **Human Resources** on the Cards content pane, click
 **Employee** and then click **Certifications**.
 
-![IMAGE – ADVHRCE.jpg](media/98a5dbc9b7beb772987bd6f60ceafdb3.jpg)
+![Screenshot of the Certification Entry window.](media/ADVHRCE.jpg)
 
 Enter or select an **Employee ID** to assign the Certification Code. The
 **Department** and **Position** fields displays from the Employee
@@ -220,7 +220,7 @@ To open this window, click the **HR and Payroll** series button, click
 **Human Resources** on the Cards content pane, click **Employee** and then
 click **Licenses**.
 
-![IMAGE – ADVHRLE.jpg](media/994e2eac7970533aaad91c7453d9f2ba.jpg)
+![Screenshot of the License Entry window.](media/ADVHRLE.jpg)
 
 1. Enter or select an **Employee ID** to assign the License Number. The
     **Department** and **Position** fields displays from the Employee
@@ -249,7 +249,7 @@ window. To open the Employee Training window, click the **HR and Payroll**
 series button, click **Human Resources** on the Cards content pane, click
 **Employee** and then click the second **Training** option.
 
-![IMAGE- ADVHRET.jpg](media/390bb07315226e87967e6126fbeb485a.jpg)
+![Screenshot of the Employee Training window.](media/ADVHRET.jpg)
 
 The additional fields include the following:
 
@@ -362,7 +362,7 @@ To open the Injury and Illness Details window, click the **HR and Payroll**
 series button, click **Human Resources** on the Cards content pane, click
 **Employee** and then click **Injury and Illness Details**.
 
-![IMAGE – ADVHRII.jpg](media/01f4a8079047950b6cc79763cae9b080.jpg)
+![Screenshot of the Injury and Illness Details window.](media/ADVHRII.jpg)
 
 Enter or select an **Employee ID**. The **Description** displays from the
 Employee Maintenance window.
