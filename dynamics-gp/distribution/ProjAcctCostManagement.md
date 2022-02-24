@@ -3113,7 +3113,7 @@ Cards \> Project \> Project \> Fees button
 
 PACM 50.JPEG
 
-![A screenshot of a computer Description automatically generated](media/PACM 50.jpg)
+![Screenshot of the Fee Entry window.](media/PACM 50.jpg)
 
 1. Select the fees to include in the project. The fees that you can assign
     depend on the project type and project status.You can assign fees to a
@@ -3154,7 +3154,7 @@ Cards \> Project \> Project \> Fees button \> Fee ID expansion button
 
 PACM 51.JPEG
 
-![A screenshot ](media/PACM 51.jpg)
+![Screenshot of the Fee Details window.](media/PACM 51.jpg)
 
 1. The information you can modify depends on the fee type. See *Chapter 11,"Fees,"* for more information.
 
@@ -3220,7 +3220,7 @@ Cards \> Project \> Project \> Fees button \> Frequency expansion button
 
 PACM 53.JPEG
 
-![A screenshot ](media/PACM 53.jpg)
+![Screenshot of the Fee Schedule window.](media/PACM 53.jpg)
 
 1. You can modify the dates to bill the fee, and the amounts to bill.
 
@@ -3282,7 +3282,7 @@ class. See *Grant user permissions* on page 95 for more information.
 
 PACM 54.JPEG
 
-![A screenshot ](media/PACM 54.jpg)
+![Screenshot of the User Class Project Accounting Settings window.](media/PACM 54.jpg)
 
 The window is similar to the User Project Accounting Settings window. See
 *Grant user permissions* on page 95 for more information.
@@ -3297,7 +3297,7 @@ You can grant individual users permission to various data entry options.
 
 PACM 55.JPEG
 
-![A screenshot ](media/PACM 55.jpg)
+![Screenshot of the User Project Accounting Settings window.](media/PACM 55.jpg)
 
 1. Select the user to grant permissions to.
 
@@ -3624,7 +3624,7 @@ button**
 
 PACM 56.JPEG
 
-![A screenshot ](media/PACM 56.jpg)
+![Screenshot of the Change Order Contract Information window.](media/PACM 56.jpg)
 
 1. Enter the next document number to use for change orders for the contract.
 
@@ -3661,7 +3661,7 @@ button**
 
 PACM 57.JPEG
 
-![A screenshot ](media/PACM 57.jpg)
+![Screenshot of the Change Order Project Information window.](media/PACM 57.jpg)
 
 1. Select **Track Change Orders** to begin using change orders for the project.
     Select **Track Change Orders for new Budget add on the fly** to have change
@@ -3825,7 +3825,7 @@ Cards \> Project \> Change Order Entry \> Budget Changes Button
 
 PACM 59.JPEG
 
-![A screenshot ](media/PACM 59.jpg)
+![Screenshot of the Budget Changes Entry window.](media/PACM 59.jpg)
 
 1. Select the project and cost category to enter a budget change for.
 
@@ -3879,11 +3879,11 @@ You can use a change order to enter quote information for a project.
 1. Open the Change Order Budget Information window.
 
 **Cards \> Project \> Change Order Entry \> Budget Changes button \> Project
-Number expansion butto**n
+Number expansion button**
 
 PACM 60.JPEG
 
-![A screenshot ](media/PACM 60.jpg)
+![Screenshot of the Change Order Budget Information window.](media/PACM 60.jpg)
 
 1. You can enter initial and final quote amounts and enter the names of the
     people who prepared and approved the quote. You can click the
@@ -4038,7 +4038,7 @@ You can view approval history for a change order.
 
 PACM 64.JPEG
 
-![A screenshot ](media/PACM 64.jpg)
+![Screenshot of the Change Order Approval Info window.](media/PACM 64.jpg)
 
 1. You can view the employee or customer who approved the change order and when they approved it.
 
@@ -4054,7 +4054,7 @@ Cards \> Project \> Change Order Entry \> Revision History button
 
 PACM 65.JPEG
 
-![A screenshot ](media/PACM 65.jpg)
+![Screenshot of the Change Order Revision Info window.](media/PACM 65.jpg)
 
 1. You can view the names of the people who revised the change order and when
     and why they revised it.
@@ -4091,7 +4091,7 @@ posted for projects for the customer.
 
 PACM 66.JPEG
 
-![A screenshot ](media/PACM 66.jpg)
+![Screenshot of the PA Customer Options window.](media/PACM 66.jpg)
 
 1. Select **Closed to Project Costs**.
 
@@ -4149,7 +4149,7 @@ Transactions \> Project \> Project Closing
 
 PACM 67.JPEG
 
-![A screenshot ](media/PACM 67.jpg)
+![Screenshot of the Project Closing window.](media/PACM 67.jpg)
 
 1. Select a contract number. **Completed** projects for the contract will be
     listed in the scrolling window.
@@ -4183,7 +4183,7 @@ button**) to view the project closing checklist for the project.
 
 PACM 68.JPEG
 
-![A screenshot ](media/PACM 68.jpg)
+![Screenshot of the Project Closing More Info window.](media/PACM 68.jpg)
 
 All options in the **Checklist** area of the window will be selected if all
 requirements for closing the project have been met.
@@ -4368,7 +4368,7 @@ timesheets.
 
 PACM 69.JPEG
 
-![A screenshot ](media/PACM 69.jpg)
+![Screenshot of the Timesheet Setup window.](media/PACM 69.jpg)
 
 1. Enter the next document number to use for timesheets.
 
@@ -4440,7 +4440,7 @@ details.*
 
 PACM 70.JPEG
 
-![A picture containing screenshot Description automatically generated](media/PACM 70.jpg)
+![Screenshot of the Timesheet Entry window.](media/PACM 70.jpg)
 
 1. Select the **Standard** transaction type to enter a new timesheet.
 
@@ -4598,7 +4598,7 @@ expense transactions.
 
 PACM 71. JPEG
 
-![A screenshot ](media/PACM 71.jpg)
+![Screenshot of the Employee Expense Setup window.](media/PACM 71.jpg)
 
 1. Enter the next document number to use for employee expense transactions.
 
@@ -4668,7 +4668,7 @@ Expense-Detail) to view employee expense transaction line item details.*
 
 PACM 72.JPEG
 
-![A picture containing screenshot Description automatically generated](media/PACM 72.jpg)
+![Screenshot of the Employee Expense Entry window.](media/PACM 72.jpg)
 
 1. Select the **Standard** transaction type to enter a new employee expense
     transaction.
@@ -4813,7 +4813,7 @@ Transactions \> Project \> Employee Expense \> More Info button
 
 PACM 74.JPEG
 
-![A screenshot ](media/PACM 74.jpg)
+![Screenshot of the Employee Expense Entry – More Info window.](media/PACM 74.jpg)
 
 If you're viewing the transaction amounts in their originating currency in
 the Employee Expense Entry window, the Employee Expense Entry - More Info
@@ -4861,7 +4861,7 @@ logs.
 
 PACM 75.JPEG
 
-![A screenshot ](media/PACM 75.jpg)
+![Screenshot of the Equipment Log Setup window.](media/PACM 75.jpg)
 
 1. Enter the next document number to use for equipment logs.
 
@@ -4915,7 +4915,7 @@ item details.*
 
 PACM 76. JPEG
 
-![A screenshot of a computer Description automatically generated](media/PACM 76.jpg)
+![Screenshot of the Equipment Log Entry window.](media/PACM 76.jpg)
 
 1. Select the **Standard** transaction type to enter a new equipment log.
 
@@ -4997,7 +4997,7 @@ miscellaneous logs.
 
 PACM 77.JPEG
 
-![A screenshot ](media/PACM 77.jpg)
+![Screenshot of the Miscellaneous Log Setup window.](media/PACM 77.jpg)
 
 This window is similar to the Equipment Log Setup window. See *Set up
 equipment logs for tracking project costs and billing customers* on page 131
@@ -5023,7 +5023,7 @@ Transactions \> Project \> Miscellaneous Log Entry
 
 PACM 78.JPEG
 
-![A picture containing screenshot Description automatically generated](media/PACM 78.jpg)
+![Screenshot of the Miscellaneous Log Entry window.](media/PACM 78.jpg)
 
 1. Select the **Standard** transaction type to enter a new miscellaneous log.
 
@@ -5177,7 +5177,7 @@ Transfer**
 
 PACM 79.JPEG
 
-![A screenshot ](media/PACM 79.jpg)
+![Screenshot of the Inventory Transfer Setup window.](media/PACM 79.jpg)
 
 1. Enter the next document number to use for inventory transfers.
 
@@ -5261,7 +5261,7 @@ Transfer-Detail) to view inventory transfer line item details.*
 
 PACM 80. JPEG
 
-![A screenshot of a computer Description automatically generated](media/PACM 80.jpg)
+![Screenshot of the Inventory Transfer Entry window.](media/PACM 80.jpg)
 
 1. Select the **Standard** transaction type to enter an inventory transfer to
     make inventoried items that you've purchased for projects available for
@@ -5526,7 +5526,7 @@ Transfer-Detail) to view return from project line item details.*
 
 PACM 84.JPEG
 
-![A screenshot of a computer Description automatically generated](media/PACM 84.jpg)
+![Screenshot of the Returns From Project Entry window.](media/PACM 84.jpg)
 
 1. Enter a document number and date.
 
@@ -5833,7 +5833,7 @@ Combined History**
 
 PACM 94. JPEG
 
-![A screenshot ](media/PACM 94.jpg)
+![Screenshot of the Combined History Utility window.](media/PACM 94.jpg)
 
 1. Enter the dates to assemble information for.
 
@@ -5921,7 +5921,7 @@ cost transaction line items by date* on page 159 for more information.
 
 PACM 96.JPEG
 
-![A screenshot ](media/PACM 96.jpg)
+![Screenshot of the Combined History Inquiry Filters window.](media/PACM 96.jpg)
 
 1. Select the information to limit viewing cost transaction line items by.
 
@@ -5940,7 +5940,7 @@ Inquiry \> Project \> Combined History \> Qty expansion button
 
 PACM 97. JPEG
 
-![A screenshot ](media/PACM 97.jpg)
+![Screenshot of the Combined History Detail window.](media/PACM 97.jpg)
 
 1. Click **More Info** to view additional information about the line item.
 
