@@ -569,7 +569,7 @@ based on pay code* on page 27 for more information.
 
 PACM 11. JPEG
 
-![A screenshot of the PA Position Rate Table Maintenance window.](media/PACM 11.jpg)
+![Screenshot of the PA Position Rate Table Maintenance window.](media/PACM 11.jpg)
 
 The window is similar to the PA Employee Rate Table Maintenance window. See
 *Create an employee rate table* on page 23 for more information.
@@ -616,7 +616,7 @@ The following table lists the windows and how to open them.
 | Position       | Cards \> Project \> Position Rate Table \> Enter a rate table ID \> Rate Table ID wizard button                |
 | Equipment      | Cards \> Project \> Equipment Rate Table \> Enter a rate table ID \> Rate Table ID wizard button PACM 13. JPEG |
 
-![A screenshot ](media/PACM 13.jpg)
+![Screenshot of the Employee Rate Table Wizard window.](media/PACM 13.jpg)
 
 1. Select **Copy existing entries from this rate table** and select the rate
     table.
@@ -718,7 +718,7 @@ in it.
 
 PACM 14.JPEG
 
-![A screenshot ](PACM 14.jpg)
+![Screenshot of the Contract Template Maintenance window.](PACM 14.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -784,7 +784,7 @@ Amount** fee calculation method in projects in the template will be copied.
 
 PACM 16. JPEG
 
-![A screenshot ](media/PACM 16.jpg)
+![Screenshot of the Copy Contract from Template window.](media/PACM 16.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -900,7 +900,7 @@ You can specify billing settings for a project template.
 
 PACM 18.JPEG
 
-![A screenshot ](media/PACM 18.jpg)
+![Screenshot of the Billing Template Settings window.](media/PACM 18.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -930,7 +930,7 @@ Multicurrency**).
 
 PACM 19.JPEG
 
-![A screenshot ](media/PACM 19.jpg)
+![Screenshot of the Add Existing Project to Template window.](media/PACM 19.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1074,7 +1074,7 @@ project closing requirements isn't complete.
 
 PACM 21.JPEG
 
-![A screenshot ](media/PACM 21.jpg)
+![Screenshot of the Project Setup window.](media/PACM 21.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1217,7 +1217,7 @@ Status button**
 
 PACM 24.JPEG
 
-![A screenshot of a computer Description automatically generated](media/PACM 24.jpg)
+![Screenshot of the Project Setup – Status Options window.](media/PACM 24.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -1244,7 +1244,7 @@ Labels button**
 
 PACM 25.JPEG
 
-![A screenshot ](media/PACM 25.jpg)
+![Screenshot of the Project Setup – Label Options window.](media/PACM 25.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1433,7 +1433,7 @@ Class**
 
 PACM 26.JPEG
 
-![A screenshot ](media/PACM 26.jpg)
+![Screenshot of the Cost Category Class Setup window.](media/PACM 26.jpg)
 
 1. Enter a class ID and description.
 
@@ -1535,7 +1535,7 @@ Class \> Go To button \> Benefits**
 
 PACM 28.JPEG
 
-![A screenshot ](media/PACM 28.jpg)
+![Screenshot of the Benefit Setup window.](media/PACM 28.jpg)
 
 1. Select whether to allocate benefits based on currency amounts or hours
     posted.
@@ -1571,7 +1571,7 @@ Class \> Go To button \> Benefits \> Go To button \> Accounts**
 
 PACM 29.JPEG
 
-![A screenshot of a social media post Description automatically generated](media/PACM 29.jpg)
+![Screenshot of the Benefit Cost Category Accounts window.](media/PACM 29.jpg)
 
 1. Select a benefit code.
 
@@ -1621,7 +1621,7 @@ Allocation**
 
 PACM 30.JPEG
 
-![A screenshot of a computer Description automatically generated](media/PACM 30.jpg)
+![Screenshot of the Benefit Allocation window.](media/PACM 30.jpg)
 
 1. Enter or select ranges of projects, employees, check dates, or cost
     categories.
@@ -1876,7 +1876,7 @@ See *Create a contract record* on page 62 for more information.
 
 PACM 32.JPEG
 
-![A screenshot of a computer Description automatically generated](media/PACM 32.jpg)
+![Screenshot of the Contract Class Setup window.](media/PACM 32.jpg)
 
 1. Enter a class ID and description.
 
@@ -2094,7 +2094,7 @@ button \> Customer ID expansion button**
 
 PACM 35.JPEG
 
-![A screenshot of a computer Description automatically generated](media/PACM 35.jpg)
+![Screenshot of the Third Party Customer List window.](media/PACM 35.jpg)
 
 1. Select customers to include on the third-party customer list for the
     contract.
@@ -2138,7 +2138,7 @@ See *Create a project record* on page 68 for more information.
 
 PACM 36.JPEG
 
-![A screenshot ](media/PACM 36.jpg)
+![Screenshot of the Project Class Setup window.](media/PACM 36.jpg)
 
 1. Enter a class ID and description.
 
@@ -2373,7 +2373,7 @@ settings.*
 
 PACM 38.JPEG
 
-![A screenshot ](media/PACM 38.jpg)
+![Screenshot of the Project Billing Settings window.](media/PACM 38.jpg)
 
 1. Click the **Customer ID** expansion button to create a third-party customer
     list for the project. See *Create a third-party customer list for billing*
@@ -2523,7 +2523,7 @@ Cards \> Project \> Project \> Equip List button
 
 PACM40.JPEG
 
-![A screenshot ](media/PACM 40.jpg)
+![Screenshot of the Equipment List window.](media/PACM 40.jpg)
 
 1. Select the equipment records for the project.
 
@@ -2549,7 +2549,7 @@ Project \> Access List button) to view the assignments.*
 
 PACM 41.JPEG
 
-![A screenshot ](media/PACM 41.jpg)
+![Screenshot of the Employee Access List window.](media/PACM 41.jpg)
 
 1. Select the employees for the project.
 
@@ -2873,7 +2873,7 @@ Update**
 
 PACM 446.JPEG
 
-![A screenshot ](media/PACM 446.jpg)
+![Screenshot of the Update Budget Lines window.](media/PACM 446.jpg)
 
 1. Enter or select the cost category to add to the budget lines.
 
