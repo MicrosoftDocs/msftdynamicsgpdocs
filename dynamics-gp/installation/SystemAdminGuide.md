@@ -414,7 +414,7 @@ one with portrait orientation, for the same printer.
 
 (Administration \>\> Setup \>\> System \>\> Named Printers)
 
-![Screenshot showing the Assign Named Printers window](media/sys admin guide 15.jpg)
+![Screenshot showing the Assign Named Printers window.](media/sys admin guide 15.jpg)
 
 1. Choose Setup to open the Setup Named Printers window.
 
@@ -1628,7 +1628,7 @@ your system are process servers, and which tasks will be completed on those
 process servers. Sending a task to a process server is called processing a
 task remotely, or **remote processing**.
 
-![Illustration of Distributed Process Manager](media/sys admin guide 34.png)
+![Illustration of Distributed Process Manager.](media/sys admin guide 34.png)
 
 
 
@@ -2251,7 +2251,7 @@ the launch file on each process server contains the location of that reports
 dictionary. In the following example, all clients and process servers access
 a dictionary stored at a network location.
 
-![Illustration showing clients and process servers accessing the Reports.dic. file](media/sys admin guide 43.png)
+![Illustration showing clients and process servers accessing the Reports.dic file.](media/sys admin guide 43.png)
 
 You also can store the reports dictionary on the process server, to reduce
 network traffic.
@@ -2413,7 +2413,7 @@ To view detailed information about a process, select the process in the
 Process Monitor window and choose Detail. The Process Detail window will
 appear, displaying detailed information about the selected process.
 
-![Screenshot of the Process Monitor window](media/sys admin guide 45.jpg)
+![Screenshot of the Process Monitor window.](media/sys admin guide 45.jpg)
 
 If the process is a procedure, only the name of the procedure will appear in
 the window. A procedure is a script that can be called from other scripts to
