@@ -2175,7 +2175,7 @@ if you've set up a process to be performed remotely. However, if you set up
 a report to be printed to the screen and processed locally, then decide to
 process it remotely, you must change the report destination, as well.
 
-![Diagram of the location of the reports dictionary.](media/sys admin guide 41.jpg)
+![Diagram showing the location of the reports dictionary.](media/sys admin guide 41.jpg)
 
 
 
@@ -2229,7 +2229,7 @@ contains the location of the application dictionaries, forms dictionaries,
 and reports dictionaries you're using. In the following example, the reports
 dictionary is stored at a central network location.
 
-![Illustration of the Reports.dic location.](media/sys admin guide 42.png)
+![Illustration showing the Reports.dic location.](media/sys admin guide 42.png)
 
 To edit the launch file, you can use the Edit Launch File window in
 Microsoft
