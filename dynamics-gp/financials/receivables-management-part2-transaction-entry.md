@@ -1164,7 +1164,7 @@ If the customer added an extra amount in the payment to apply towards the princi
 1. Open the Cash Receipts Entry window. 
 (Transactions \>\> Sales \>\> Cash Receipts)
 
-    ![A screenshot of a cell phone Description automatically generated](media/9c696b7f9ab8087ef88a81a3ece25ee4.jpg)
+    ![Screenshot of the Cash Receipts Entry window.](media/9c696b7f9ab8087ef88a81a3ece25ee4.jpg)
 
 2. Enter or select a batch ID and a document date.
 
@@ -1402,11 +1402,11 @@ Use the Maps To window to select the Microsoft Dynamics GP fields that the field
 
 Your bank sent a lockbox file that included the following transaction:
 
-![](media/2708fcde1e1cb9bd548cfdd9065a531a.jpg)
+![Screenshot of the contents of the transaction text file.](media/2708fcde1e1cb9bd548cfdd9065a531a.jpg)
 
 The bank also sent an export definition list, which included the following information:
 
-![Screenshot showing the export definitions text file contents.](media/80126c6f8fc11bd1bfca84ad260fdde7.jpg)
+![Screenshot of the contents in the export definition text file.](media/80126c6f8fc11bd1bfca84ad260fdde7.jpg)
 
 In this example, you would map the fields as follows:
 

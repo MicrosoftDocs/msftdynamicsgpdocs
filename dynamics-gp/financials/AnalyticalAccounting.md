@@ -119,7 +119,7 @@ The following flowchart shows you the sequence in which you will set up
 Analytical Accounting, enter analysis information, and generate queries and
 reports.
 
-![A screenshot](media/AAFLOW.jpg)
+![Diagram showing the task flow for setting up analytical accounting.](media/AAFLOW.jpg)
 
 
 ### Creating default records
@@ -185,7 +185,7 @@ level of posting set to detail. Refer to *Linking accounts to an account class* 
 
     After Analytical Accounting has been activated, any account that has a level of posting set to summary in the Account Maintenance window cannot be linked to an account class. After you have linked an account to an account class, you cannot change the level of posting from detail to summary in the Account Maintenance window.
 
-    ![A screenshot](media/AAPOST.jpg)
+    ![Screenshot of the Posting Setup window.](media/AAPOST.jpg)
 
 1. Complete the setup procedures and choose OK or Save to save the posting setup.
 
@@ -214,10 +214,10 @@ Accounting system tables.
 
 **To activate Analytical Accounting:**
 
-1. Open the Analytical Accounting Setup wizard window. (Administration \>\>
+1. Open the Analytical Accounting Setup Wizard window. (Administration \>\>
     Setup \>\> Company \>\> Analytical Accounting \>\> Setup)
 
-    ![A Screenshot](media/AAWIZ.jpg)
+    ![Screenshot of the Analytical Accounting Setup Wizard window.](media/AAWIZ.jpg)
 
 1. Mark the Activate Analytical Accounting option to activate the product for
     the company you are logged into. If you have not registered Analytical
@@ -433,7 +433,7 @@ or half year.
 1. Open the Reporting Periods window. (Administration \>\> Setup \>\> Company
     \>\> Analytical Accounting \>\> Options \>\> Reporting Periods button)
 
-![A Screenshot](media/AARP.jpg)
+![Screenshot of the Reporting Periods window.](media/AARP.jpg)
 
 1. The Year field displays the current open year. Select a year from the fiscal
     years set up in Microsoft Dynamics GP. The Fiscal View and the Calendar view
@@ -554,7 +554,7 @@ Fixed Asset will be marked by default on a new install or a new company.
 1. Open the Assignment Setup window. (Administration \>\> Setup \>\> Company
     \>\> Analytical Accounting \>\> Assignment)
 
-    ![A Screenshot](media/AAAS.jpg)
+    ![Screenshot of the Assignment Setup window.](media/AAAS.jpg)
 
     All the Microsoft Dynamics GP modules that integrate with Analytical Accounting are listed in the scrolling window. The Full option is marked for all by default. This indicates that the distributions must be fully assigned before you can post the transactions.
 
@@ -626,7 +626,7 @@ have permission to distribute or adjust those codes.*
 
     The Type field displays Transaction Dimension as the default selection. 
 
-    ![A screenshot](media/AAUA.jpg)
+    ![Screenshot of the User Access to Trx Dimension Codes window.](media/AAUA.jpg)
 
 1. Select an alphanumeric transaction dimension in the Transaction Dimension
     field. You can select an active or an inactive transaction dimension.
@@ -1073,7 +1073,7 @@ Order)
 (Cards \>\> Financial \>\> Analytical Accounting \>\> Transaction Dimension
 \>\> Order Button
 
-![A screenshot](media/AATDO.jpg)
+![Screenshot of the Transaction Dimension Order window.](media/AATDO.jpg)
 
 1. The transaction dimensions and their descriptions are displayed in the
     scrolling window in the order they were created.
@@ -1117,7 +1117,7 @@ Code)
 (Cards \>\> Financial \>\> Analytical Accounting \>\> Transaction Dimension
 \>\> Codes button)
 
-![A screenshot](media/AATDC.jpg)
+![Screenshot of the Transaction Dimension Code Maintenance window.](media/AATDC.jpg)
 
 1. Enter or select an alphanumeric transaction dimension in the Trx Dimension
     field.

@@ -91,7 +91,7 @@ Use the Invoicing Setup window to set general default entries that will appear t
 
 1. Open the Invoicing Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Sales \>\> Invoicing) Mark Preferences settings:
 
-    ![Image](media/INVSET.jpg)
+    ![Screenshot of the Invoicing Setup window.](media/INVSET.jpg)
 
     - **Display Item Unit Cost** Mark to view the cost of each item as you're entering it on an invoice. The unit cost displayed will depend on the inventory valuation method assigned to each item, which can have its own valuation method.
 
@@ -182,7 +182,7 @@ The following diagrams show how tax details are compared to determine the amount
 
 - For a pickup shipping method
 
-    ![Image](media/INVPSM.jpg)
+    ![Diagram showing details of the pickup shipping method.](media/INVPSM.jpg)
 
     The tax calculated on the line item would be the amount or percentage assigned to tax detail TAX002, the tax calculated on the freight charge will be the amount or percentage assigned to tax detail TAX002, and the tax on the miscellaneous charge will be the amount or percentage assigned to tax detail TAX004. These details are used because they appear in both the site schedule and in the item, freight, or miscellaneous schedule.
 
