@@ -38,21 +38,22 @@ For all countries and regions:
 
 For all countries and regions except Canada and the United States:
 
-| Bank Management      | Scheduled Installments |
-|----------------------|-----------------------|
-| Direct Debit Refunds |                       |
+| Bank Management      | Scheduled Installments  |
+|----------------------|-------------------------|
+| Direct Debit Refunds |                         |
 
 For the United States:
 
-|                                   |     |
-|-----------------------------------|-----|
-| Human Resources and Payroll suite |     |
+| Bank Management      | Scheduled Installments  |
+|----------------------|-------------------------|
+| Human Resources      |                         |
+| Payroll Suite        |                         |
 
 For Belgium and France:
 
-|                       |     |
-|-----------------------|-----|
-| Export Financial Data |     |
+| Bank Management      | Scheduled Installments  |
+|----------------------|-------------------------|
+| Export Financial Data|                         |
 
 ## Adding or removing additional features
 
