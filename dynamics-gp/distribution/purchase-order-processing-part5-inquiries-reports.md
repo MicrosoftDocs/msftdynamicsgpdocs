@@ -217,7 +217,11 @@ The following table lists the report types available in Purchase Order Processin
 | **Report type**    | **Report**         | **Printing method**    |
 |-----------------------|--------------------|-----|
 | Setup reports/Lists      | Buyer ID List      | Choose File \>\> Print in the setup windows **or** create report options in the Purchasing Setup Reports window. |
-| Documents    | Purchase Order \*† | Select a document in the MISSINGCONTENT </br> \* Indicates reports that can be printed with multicurrency information displayed. |
+| Documents    | Purchase Order \*† | Select a document in the MISSINGCONTENT </br> 
+
+\* Indicates reports that can be printed with multicurrency information displayed. 
+
+
 Purchase Order Generator Site Mapping List
 
 Purchase Order Processing Setup List
@@ -236,9 +240,11 @@ Purchase Order Entry window and choose File \>\> Print to print a single documen
 |------------------------|--------------------------------|---------------------------------|
 | Posting reports   | Back Ordered Items Received    | Choose File \>\> Print in the window you use to complete the procedure **or** some will be printed automatically when you complete the procedure. |
 | Edit lists  | Purchasing Invoice Edit List\* | Choose File \>\> Print in the window you used to complete the procedure.   |
-| History reports   | Distribution History Report    | Create report options in the Purchasing History Reports window. </br>
- \* Indicates reports that can be printed with multicurrency information displayed. |
-Report
+| History reports   | Distribution History Report    | Create report options in the Purchasing History Reports window. </br> 
+
+\* Indicates reports that can be printed with multicurrency information displayed. 
+
+**Report**
 
 Purchasing Voided Journal\*
 
@@ -327,7 +333,8 @@ Returns Trx History – Detail
 | Analysis reports   | Back-Ordered Items Received† Expected Shipments† Purchase Order Analysis† Purchase Order Status Report† PO Line Items to Release Report† Received/Not Invoiced Report† Shipment/Invoice Matching Activity Report† | Create report options in the Purchasing Analysis Reports window.             |
 | Processing reports  | Print Documents Exception Report Purchase Order Edited Status Journal Purchase Order Generated Purchase Order Generated Error Log Purchasing Voided Journal\* Purchasing Voided Journal Currency Summary\*        | These reports will be printed when you complete the corresponding procedure. |
 | Inquiry reports     | Purchase Order Processing Item Inquiry Document Inquiry Report     | Choose File \>\> Print in the corresponding Inquiry window.                  |
-| \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. For more information, refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration). |        |    |
+
+ \* Indicates reports that can be printed with multicurrency information displayed. † Indicates reports that can be assigned to named printers. For more information, refer to your System Administrator's Guide (Help \>\> Contents \>\> select System Administration). 
 
 #### Specifying a Purchase Order Processing report option
 

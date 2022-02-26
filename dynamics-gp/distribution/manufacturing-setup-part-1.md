@@ -163,12 +163,11 @@ When you enter item information in Inventory Control, you can specify shrinkage 
 Refer to the table for more information about where the shrinkage percentage information comes from, and how it’s determined if the shrinkage percentage is reflected in quantities or costs.
 
 
-|
-| **Component**                                                                                                                                                                                           | **Finished good**                                  |
-|----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| **Shrinkage information comes from ...**                             | ... the Item Resource Planning Maintenance window, but you can change the shrinkage percentage for a component when you add the component to a bill of materials in the Bill of Materials Entry window. | ... the Item Resource Planning Maintenance window. |
-| **Shrinkage is reflected in the quantities if ...**                  | ... the scheduling preference you use for the manufacturing order includes the options to apply shrinkage to the quantity. Refer to *Setting up scheduling preferences.*                                |                                                    |
-| **Shrinkage is reflected in costs for standard cost rollups if ...** | ... you’ve marked options to include shrinkage in standard cost rollups. Refer to *Setting up costing system default settings.*                                                                         |                                                    |
+| | **Component** | **Finished good** |
+|-----------------|-------------------|------------------|
+| **Shrinkage information comes from ...** | ... the Item Resource Planning Maintenance window, but you can change the shrinkage percentage for a component when you add the component to a bill of materials in the Bill of Materials Entry window. | ... the Item Resource Planning Maintenance window. |
+| **Shrinkage is reflected in the quantities if ...** | ... the scheduling preference you use for the manufacturing order includes the options to apply shrinkage to the quantity. Refer to *Setting up scheduling preferences.*                                |                              |
+| **Shrinkage is reflected in costs for standard cost rollups if ...** | ... you’ve marked options to include shrinkage in standard cost rollups. Refer to *Setting up costing system default settings.*                                                                         |                              |
 
 ### Shop calendars
 

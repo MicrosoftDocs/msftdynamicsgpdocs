@@ -4284,15 +4284,13 @@ You can use any of the following calculations. The calculations often are locate
 
 Format options are available when the file format is mapped to data or to calculations that are related to money and dates. 
 
-
+[!div class="mx-tdCol2BreakAll"]
 | **Calculation**                           | **Description**                                                                |
 |-------------------------------------------|--------------------------------------------------------------------------------|
 | Addenda record indicator                  | 0 or 1 depending on whether the addenda record type is defined for the format. |
 | Batch count                               | The number of batches in the file.                                             |
-| Block count                               | The number of physical blocks in the file, including the file header           |
-                                                 and the file control records. A block contains 940 characters.              |
-| Hash total                                | Each detail record is hashed to provide a check against inadvertent            |
-                                                 alteration of data contents.                                                |
+| Block count                               | The number of physical blocks in the file, including the file header and the file control records. A block contains 940 characters.          |                                                               |
+| Hash total                                | Each detail record is hashed to provide a check against inadvertent alteration of data contents.           |                                                                                                 |
 | Detail count                              | Total number of detail lines in the file.                                      |
 | Addenda count                             | Total number of addenda lines for each detail line.                            |
 | Line Count                                | Total number of lines in the file.                                             |
@@ -4321,11 +4319,12 @@ When you map to an amount field, you have the option of removing the decimal pla
 
 The following table illustrates the change in amounts when the format is changed to remove the two default decimal places. 
 
-|------------------------|----------------|
-|Unformatted amount      | 123.45         |
-|Remove decimal places   | Yes            |
-|Decimal places          | 2              |
-|Formatted amoun         | 12345          |
+|Decimal place formatting | Result  |
+|:------------------------|---------|
+|Unformatted amount       | 123.45  |
+|Remove decimal places    | Yes     |
+|Decimal places           | 2       |
+|Formatted amount         | 12345   |
 
 
 #### Setting up an EFT file format
