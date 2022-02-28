@@ -2440,7 +2440,7 @@ and the reports included in those categories.
 
 IMAGE – FARM15.jpg
 
-![A screenshot of a cell phone - ](media/FARM15.jpg)
+![List of reports and printing methods by Report type.](media/FARM15.jpg)
 
 #### Reports you can use with named printers
 
