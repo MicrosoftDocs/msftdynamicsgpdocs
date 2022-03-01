@@ -758,7 +758,7 @@ You can specify billing settings for a contract template.
 
 PACM 15. JPEG
 
-![Screenshot of the Contract Template Maintenance window.](media/83df8e4dc0425a7a50e20576b2f9fe93.jpg)
+![Screenshot of the Contract Template Maintenance window.](media/PACM 15.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -838,7 +838,7 @@ You can create a project template to apply to project records.
 
 PACM 17.JPEG
 
-![Screenshot of the Project Template Maintenance window.](media/8928b33a3547bae98e9d69d7b26a243a.jpg)
+![Screenshot of the Project Template Maintenance window.](media/PACM 17.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
