@@ -4284,21 +4284,21 @@ You can use any of the following calculations. The calculations often are locate
 
 Format options are available when the file format is mapped to data or to calculations that are related to money and dates. 
 
-[!div class="mx-tdCol2BreakAll"]
+
 | **Calculation**                           | **Description**                                                                |
 |-------------------------------------------|--------------------------------------------------------------------------------|
-| Addenda record indicator                  | 0 or 1 depending on whether the addenda record type is defined for the format. |
-| Batch count                               | The number of batches in the file.                                             |
-| Block count                               | The number of physical blocks in the file, including the file header and the file control records. A block contains 940 characters.          |                                                               |
-| Hash total                                | Each detail record is hashed to provide a check against inadvertent alteration of data contents.           |                                                                                                 |
-| Detail count                              | Total number of detail lines in the file.                                      |
-| Addenda count                             | Total number of addenda lines for each detail line.                            |
-| Line Count                                | Total number of lines in the file.                                             |
-| Total credit amount                       | Total amount of all credit lines in the file.                                  |
-| Total debit amount                        | Total amount of all debit lines in the file.                                   |
-| US-NACHA trace number                     | Uniquely identifies each entry with the batch.                                 |
-| Total number of credits                   | Total number of credits in the file.                                           |
-| Total number of debits                    | Total number of debits in the file.                                            |
+|Addenda record indicator                  | 0 or 1 depending on whether the addenda record type is defined for the format. |
+|Batch count                               | The number of batches in the file.                                             |
+|Block count                               | The number of physical blocks in the file, including the file header and the file control records. A block contains 940 characters.          |                                                               |
+|Hash total                                | Each detail record is hashed to provide a check against inadvertent alteration of data contents.           |                                                                                                 |
+|Detail count                              | Total number of detail lines in the file.                                      |
+|Addenda count                             | Total number of addenda lines for each detail line.                            |
+|Line Count                                | Total number of lines in the file.                                             |
+|Total credit amount                       | Total amount of all credit lines in the file.                                  |
+|Total debit amount                        | Total amount of all debit lines in the file.                                   |
+|US-NACHA trace number                     | Uniquely identifies each entry with the batch.                                 |
+|Total number of credits                   | Total number of credits in the file.                                           |
+|Total number of debits                    | Total number of debits in the file.                                            |
 
 Field formats for dates
 
