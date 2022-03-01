@@ -4285,8 +4285,8 @@ You can use any of the following calculations. The calculations often are locate
 Format options are available when the file format is mapped to data or to calculations that are related to money and dates. 
 
 
-| **Calculation**                           | **Description**                                                                |
-|-------------------------------------------|--------------------------------------------------------------------------------|
+|Calculation                               |Description                                                                     |
+|------------------------------------------|--------------------------------------------------------------------------------|
 |Addenda record indicator                  | 0 or 1 depending on whether the addenda record type is defined for the format. |
 |Batch count                               | The number of batches in the file.                                             |
 |Block count                               | The number of physical blocks in the file, including the file header and the file control records. A block contains 940 characters.          |                                                               |
