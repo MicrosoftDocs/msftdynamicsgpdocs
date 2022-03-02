@@ -248,7 +248,7 @@ You can send documents in e-mail if the following conditions are met.
 
 Whenever you see the Send document in e-mail button near the printer icon in the upper right area in the window, you can choose the button (shown below) to send the document in e-mail.
 
-![A screenshot of a cell phone Description automatically generated](media/a4d977060d2963d4b8dbe643033bed7e.jpg)
+![Screenshot showing the location of the e-mail button.](media/a4d977060d2963d4b8dbe643033bed7e.jpg)
 
 ### National accounts customer transactions in Receivables Management
 
@@ -616,7 +616,7 @@ You can change the subject, message ID, and message if the Allow Update of E-mai
 
 4. Choose the E-mail Detail Entry expansion button to open the Receivables E-mail Detail Entry window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/ae46103511a6ac684d9778d298e984e9.jpg)
+    ![Screenshot of the Receivables E-mail Detail Entry window.](media/ae46103511a6ac684d9778d298e984e9.jpg)
 
 5. Enter a To, Cc, or Bcc address to send the transaction in e-mail. You must enter at least one e-mail address to send transactions in e-mail.
 
@@ -653,7 +653,7 @@ If Intrastat information was entered for the customer’s primary address ID, th
 
 3. Choose Intrastat to open the Receivables Intrastat Entry window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/f1f587b00a82130afd52f2ee7a29329f.jpg)
+    ![Screenshot of the Receivables Intrastat Entry window.](media/f1f587b00a82130afd52f2ee7a29329f.jpg)
 
 4. Enter an item number in the Item field.
 
@@ -766,7 +766,7 @@ Use the Receivables Scheduled Payments Entry window to enter payment schedules. 
 
 2. In the New group or its overflow menu, choose Scheduled Payments to open the Receivables Scheduled Payments Entry window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/41e4b5b314ec3c55f0d2e4fe2ac5d887.jpg)
+    ![Screenshot of the Receivables Scheduled Payments Entry window.](media/41e4b5b314ec3c55f0d2e4fe2ac5d887.jpg)
 
 3. Enter a schedule number and description.
 
@@ -805,7 +805,7 @@ Amortization schedules are created when you choose the Calculate button in the R
 
 3. Choose Amortization to open the Receivables Amortization Schedule window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/c2a5784e42ca4012cfd17d1a71a626d6.jpg)
+    ![Screenshot of the Receivables Amortization Schedule window.](media/c2a5784e42ca4012cfd17d1a71a626d6.jpg)
 
 If there is no interest, you can edit the Due Date and Payment Amount fields by entering the appropriate information in those fields.
 
@@ -820,7 +820,7 @@ Use the Post Receivables Scheduled Payments window to post payments. You can pos
 1. Open the Post Receivables Scheduled Payments window. 
     (Sales \>\> Routines \>\> Post Scheduled Payments)
 
-    ![A screenshot of a cell phone Description automatically generated](media/5ae3aef97ad72654572adeb8088ad5df.jpg)
+    ![Screenshot of the Post Receivables Scheduled Payments window.](media/5ae3aef97ad72654572adeb8088ad5df.jpg)
 
 2. Select Customer ID or Schedule Number.
 
@@ -931,7 +931,7 @@ Sometimes a sale includes items that are exempt from input or output tax. You st
 
 3. Enter a tax amount in the Tax field and choose the Tax expansion button to open the Receivables Tax Entry window.
 
-    ![A screenshot of a social media post Description automatically generated](media/872c65bba3a8e1afc25e5d24fa7027da.jpg)
+    ![Screenshot of the Receivables Tax Entry window.](media/872c65bba3a8e1afc25e5d24fa7027da.jpg)
 
 4. Enter or select a tax detail ID.
 
@@ -1022,7 +1022,7 @@ If you marked the Calculate Tax Rebates option in the Company Setup Options wind
 
 4. Choose Distribution to open the Sales Transaction Distribution Entry window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/cc7c01d18e1101d54d832b685cc80c83.jpg)
+    ![Screenshot of the Sales Transaction Distribution Entry window.](media/cc7c01d18e1101d54d832b685cc80c83.jpg)
 
 5. The scrolling window displays the distributions that were entered based on the posting accounts assigned to the customer card. You can change the debit or credit amounts for any of the accounts.
 
@@ -1164,7 +1164,7 @@ If the customer added an extra amount in the payment to apply towards the princi
 1. Open the Cash Receipts Entry window. 
 (Transactions \>\> Sales \>\> Cash Receipts)
 
-    ![A screenshot of a cell phone Description automatically generated](media/9c696b7f9ab8087ef88a81a3ece25ee4.jpg)
+    ![Screenshot of the Cash Receipts Entry window.](media/9c696b7f9ab8087ef88a81a3ece25ee4.jpg)
 
 2. Enter or select a batch ID and a document date.
 
@@ -1402,11 +1402,11 @@ Use the Maps To window to select the Microsoft Dynamics GP fields that the field
 
 Your bank sent a lockbox file that included the following transaction:
 
-![Screenshot of the transaction file.](media/2708fcde1e1cb9bd548cfdd9065a531a.jpg)
+![Screenshot of the contents of the transaction text file.](media/2708fcde1e1cb9bd548cfdd9065a531a.jpg)
 
 The bank also sent an export definition list, which included the following information:
 
-![A screenshot of a cell phone Description automatically generated](media/80126c6f8fc11bd1bfca84ad260fdde7.jpg)
+![Screenshot of the contents in the export definition text file.](media/80126c6f8fc11bd1bfca84ad260fdde7.jpg)
 
 In this example, you would map the fields as follows:
 
@@ -1432,7 +1432,7 @@ Use the Lockbox Maintenance window to set up properties for any number of bank o
 1. Open the Lockbox Maintenance window. 
 (Sales \>\> Cards \>\> Lockbox)
 
-    ![A screenshot of a social media post Description automatically generated](media/70be02f4b75402b0d9ed95b2d1700772.jpg)
+    ![Screenshot of the Lockbox Maintenance window.](media/70be02f4b75402b0d9ed95b2d1700772.jpg)
 
 2. Enter or select a lockbox ID for the lockbox profile you’re creating, and enter a description.
 
@@ -1463,7 +1463,7 @@ Use the Lockbox Entry window to import cash receipts transactions from bank lock
 1. Open the Lockbox Entry window. 
 (Sales \>\> Transactions \>\> Lockbox Entry)
 
-    ![A screenshot of a cell phone Description automatically generated](media/e10fcbfebe5b74449d9a7e52cbcf9dc6.jpg)
+    ![Screenshot of the Lockbox Entry window.](media/e10fcbfebe5b74449d9a7e52cbcf9dc6.jpg)
 
 2. Enter or select a lockbox ID for a lockbox profile you created using the Lockbox Maintenance window.
 
@@ -1475,7 +1475,7 @@ If you’re using national accounts and you import a payment for a child custome
 
 The Lockbox Transactions window opens.
 
-![A screenshot of a social media post Description automatically generated](media/07522da4c6bc06ba1bb73ce13d254ce2.jpg)
+![Screenshot of the Lockbox Transactions window.](media/07522da4c6bc06ba1bb73ce13d254ce2.jpg)
 
 The imported transactions are displayed, and are marked with one of the following indicators:
 
@@ -1530,7 +1530,7 @@ Use the Lockbox Inquiry window to view details about your importing activities, 
 1. Open the Lockbox Inquiry window. 
 (Sales \>\> Inquiry \>\> Lockbox)
 
-    ![A screenshot of a cell phone Description automatically generated](media/0dec52948eaf9f7eb64adb6d3ea982e4.jpg)
+    ![Screenshot of the Lockbox Inquiry window.](media/0dec52948eaf9f7eb64adb6d3ea982e4.jpg)
 
 2. Select a range of information to display, and choose Redisplay.
 

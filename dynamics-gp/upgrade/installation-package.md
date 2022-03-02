@@ -79,9 +79,9 @@ To create an installation package:
 
 | Option                                                                         | What happens                                                                                                             |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
+| ![Run icon.](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+| ![Run all icon.](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
+| ![Not available icon.](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
 
 7. Specify the location on the client computer where you want the Dynamics GP files installed. If you don’t enter the location, the default location is \\Program Files\\Microsoft Dynamics\\GP on the hard disk that has the operating system installed.
 

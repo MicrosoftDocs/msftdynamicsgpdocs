@@ -92,7 +92,7 @@ Default costing settings determine how costs are tracked throughout your manufac
 
 1. Open the Costing Preference Defaults window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Costing)
 
-    ![Screenshot](media/MFGCD.jpg)
+    ![Screenshot of the Costing Preference Defaults window.](media/MFGCD.jpg)
 
 2. Mark the options to apply shrinkage, as needed, for standard cost rollups.
     > [!IMPORTANT]
@@ -186,7 +186,7 @@ You need to define one shop calendar for each company, but you can adjust the sh
 
 1. Open the Shop Calendar window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Calendar)
 
-    ![Screenshot](media/MFGCAL.jpg)
+    ![Screenshot of the Shop Calendar window.](media/MFGCAL.jpg)
 
     The window will open to the current month and year.
 
@@ -214,7 +214,7 @@ Use work center default options to create two fields that will be linked to  rou
 
     (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Work Centers)
 
-    ![Screenshot](media/MFGWC.jpg)
+    ![Screenshot of the Work Center Preference Defaults window.](media/MFGWC.jpg)
 
 2. In the User-Defined Prompt fields, enter the label or labels for the additional fields you’re creating. These fields will appear in the Operations Setup window and choose OK.
 
@@ -406,7 +406,7 @@ You’ll use the BOM Preference Defaults window to complete these tasks.
     Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Bill of
     Materials)
 
-    ![A screenshot of a cell phone Description automatically generated](media/ad05a25ecf94b6674192d1e77f8455cb.jpg)
+    ![Screenshot of the BOM Preference Defaults window.](media/MFGBOM.jpg)
 
 2. Specify which visual cue should be used by default in the Bill of Materials Entry window and the Bill of Materials View window.
 
@@ -526,7 +526,7 @@ Use the **Manufacturing Series Sales Order Preferences** window to specify how d
 
 IMAGE – MFGSOP.jpg
 
-![A screenshot of a cell phone Description automatically generated](media/11e4e8e3673094ecc02c4f9337ec81df.jpg)
+![Screenshot of the Manufacturing Series Sales Order Preferences window.](media/MFGSOP.jpg)
 
 1. To be warned when you schedule a sales order due date on a date that is a
     company-wide down day, mark Check “Down Days.” You also can specify how the
@@ -632,7 +632,7 @@ documentation for more information.*
 
 IMAGE – MFGOFS.jpg
 
-![A screenshot of a cell phone Description automatically generated](media/a52df266f547d8a3c9978f9e0100909c.jpg)
+![Screenshot of the Order Fulfillment Setup window.](media/MFGOFS.jpg)
 
 1. Enter or select the default shipping method.
 
@@ -690,7 +690,7 @@ IMAGE – MFGOFS.jpg
 
 IMAGE – MFGRPD.jpg
 
-![A screenshot of a cell phone Description automatically generated](media/a2ab0984c7944fade6bb1f40b1e9bb9b.jpg)
+![Screenshot of the Routing Preference Defaults window.](media/MFGRPD.jpg)
 
 1. Determine how planning routings should be updated.
  **Compare as Number** If all planning routing sequence numbers are numeric, mark Compare as Number.
@@ -804,7 +804,7 @@ information.*
     Prefs)
  IMAGE - MFGSP.jpg
 
-![A screenshot of a cell phone Description automatically generated](media/66babca6de2ed03cfbc56271d6c2ba7d.jpg)
+![Screenshot of the Scheduling Preferences window.](media/MFGSP.jpg)
 
 1. Enter the name of the scheduling preference.
 
@@ -887,7 +887,7 @@ information.
     Manufacturing Orders)
  IMAGE – MFGOPD.jpg
 
-![A screenshot of a social media post Description automatically generated](media/55bf80301c52d087d8fdb675407688b5.jpg)
+![A screenshot of a social media post Description automatically generated](media/MFGOPD.jpg)
 
 1. Enter beginning identifiers for manufacturing orders, for receipts, and for
     pick documents. You can use letters and numbers.
@@ -1051,7 +1051,7 @@ Choose OK.
     Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> WIP)
  IMAGE – MFGWIP.jpg
 
-![A screenshot of a cell phone Description automatically generated](media/4be79d01041c43492eb6665335d94b86.jpg)
+![Screenshot of the WIP Preference Defaults window.](media/MFGWIP.jpg)
 
 1. Mark Always Use Standard Labor Rate if costs associated with a job should
     reflect the standard labor rate rather than the specific labor rate for each
@@ -1181,7 +1181,7 @@ Refer to*
 
 IMAGE – MFGECM.jpg
 
-![A screenshot of a cell phone Description automatically generated](media/16d612c45442124e29db5c28d021dec0.jpg)
+![Screenshot of the ECM System Preferences window.](media/MFGECM.jpg)
 
 1. To change order numbers to be generated automatically, enter the first
     number to be used in the Next EC Number field.
@@ -1454,7 +1454,7 @@ If you use different terminology for MRP quantities, you can change the labels o
 
 2. Choose **Redefine MRP Labels** to open the Redefine MRP Labels window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/19a5e4ca7d736395d9c686c7fb3983f8.jpg)
+    ![Screenshot of the Redefine MRP Labels screens](media/MFGMRPL.jpg)
 
 3. Change the terminology for as many or as few labels as you like. To reset the labels, choose **Restore Original Values**.
 
