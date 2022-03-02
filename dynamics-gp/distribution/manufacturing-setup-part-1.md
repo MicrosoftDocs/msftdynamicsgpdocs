@@ -163,12 +163,11 @@ When you enter item information in Inventory Control, you can specify shrinkage 
 Refer to the table for more information about where the shrinkage percentage information comes from, and how it’s determined if the shrinkage percentage is reflected in quantities or costs.
 
 
-|
-| **Component**                                                                                                                                                                                           | **Finished good**                                  |
-|----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| **Shrinkage information comes from ...**                             | ... the Item Resource Planning Maintenance window, but you can change the shrinkage percentage for a component when you add the component to a bill of materials in the Bill of Materials Entry window. | ... the Item Resource Planning Maintenance window. |
-| **Shrinkage is reflected in the quantities if ...**                  | ... the scheduling preference you use for the manufacturing order includes the options to apply shrinkage to the quantity. Refer to *Setting up scheduling preferences.*                                |                                                    |
-| **Shrinkage is reflected in costs for standard cost rollups if ...** | ... you’ve marked options to include shrinkage in standard cost rollups. Refer to *Setting up costing system default settings.*                                                                         |                                                    |
+| | **Component** | **Finished good** |
+|-----------------|-------------------|------------------|
+|**Shrinkage information comes from ...**| ... the Item Resource Planning Maintenance window, but you can change the shrinkage percentage for a component when you add the component to a bill of materials in the Bill of Materials Entry window. | ... the Item Resource Planning Maintenance window. |
+|**Shrinkage is reflected in the quantities if ...**| ... the scheduling preference you use for the manufacturing order includes the options to apply shrinkage to the quantity. Refer to *Setting up scheduling preferences.*                                |                              |
+|**Shrinkage is reflected in costs for standard cost rollups if ...**| ... you’ve marked options to include shrinkage in standard cost rollups. Refer to *Setting up costing system default settings.*                                                                         |                              |
 
 ### Shop calendars
 
@@ -459,13 +458,24 @@ Refer to the following examples for more information.
 
 For these examples, assume that the following is your bill of materials for the finished good. Note that it includes a phantom subassembly item that has its own phantom subassembly item.
 
-| Finished good |           |                           |                           |                           |
-|---------------|-----------|---------------------------|---------------------------|---------------------------|
-|               | Phantom 1 | Issued to work center 100 |                           |                           |
-|               |           | Component A               | Issued to work center 200 |                           |
-|               |           | Phantom 2                 | Issued to work center 300 |                           |
-|               |           |                           | Component B               | Issued to work center 400 |
-|               |           |                           | Component C               | Issued to work center 400 |
+- Finished good  
+
+  - Phantom 1
+
+    - Component A
+    - Phantom 2
+
+      - Component B
+      - Component C
+<!--
+|Finished good |           |                           |                           |                           |
+|--------------|-----------|---------------------------|---------------------------|---------------------------|
+|              | Phantom 1 | Issued to work center 100 |                           |                           |
+|              |           | Component A               | Issued to work center 200 |                           |
+|              |           | Phantom 2                 | Issued to work center 300 |                           |
+|              |           |                           | Component B               | Issued to work center 400 |
+|              |           |                           | Component C               | Issued to work center 400 |
+-->
 
 #### Example 1
 
