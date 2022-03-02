@@ -458,6 +458,16 @@ Refer to the following examples for more information.
 
 For these examples, assume that the following is your bill of materials for the finished good. Note that it includes a phantom subassembly item that has its own phantom subassembly item.
 
+- Finished good  
+
+  - Phantom 1
+
+    - Component A
+    - Phantom 2
+
+      - Component B
+      - Component C
+<!--
 |Finished good |           |                           |                           |                           |
 |--------------|-----------|---------------------------|---------------------------|---------------------------|
 |              | Phantom 1 | Issued to work center 100 |                           |                           |
@@ -465,6 +475,7 @@ For these examples, assume that the following is your bill of materials for the 
 |              |           | Phantom 2                 | Issued to work center 300 |                           |
 |              |           |                           | Component B               | Issued to work center 400 |
 |              |           |                           | Component C               | Issued to work center 400 |
+-->
 
 #### Example 1
 
