@@ -36,11 +36,12 @@ Reports information is divided into the following sections:
 
 - *Microsoft SQL Server&reg; Reporting Services reports for Receivables Management*
 
-| **Report type** | **Report** | **Printing method** |
+|Report type |Report |Printing method |
 |--|--|--|
 | Setup reports | Customer Setup List </br>Salesperson List </br>Sales Territory List </br>Customer Address List </br>Receivables Setup list </br>Quick Customer Setup List | Choose File \>\> Print in the setup windows or create report options using the Sales Setup Reports window. |
 | Trial Balances | Aged Trial Balance† </br>Aged Trial Balance with Options Aging Report\* </br>Historical Aged Trial Balance\* </br>Quick Aged Trial Balance | Create report options using the Receivables Trial Balance Report Options window. |
 | Analysis reports | Accounts Due Report† | Create report options using the Sales Analysis Report Options window. |
+
 \* Indicates reports that can be printed with multicurrency information displayed. 
 
 Receivables Transactions List†
@@ -59,7 +60,7 @@ You can print several types of reports using Receivables Management. Some report
 
 The following table lists the report types available in Receivables Management and the reports that fall into those categories. Reports printed using Sales Order Processing or Invoicing are printed using many of the same windows. See the Sales Order Processing and Invoicing manuals for more information:
 
-| **Report type**      | **Report**       | **Printing method**         |
+|Report type |Report |Printing method |
 |----------------------|------------------|-----------------------------|
 | Posting journals    | Receivables Posting Journal\*†        | Printed when you post Receivables transactions or create report options using the Sales Posting Journal Options window. |
 | History reports   | Account History Report by Transaction | Create report options using the Sales History Report Options window. |
@@ -70,6 +71,7 @@ The following table lists the report types available in Receivables Management a
 | Edit lists  | Cash Receipts Edit List               | Choose File \>\> Print in the window you use to complete the procedure. |
 | Documents   | Sales/Invoices†                       | Choose Print in the Receivables    |
 | Statements    | Statement forms\*†                    | Choose Print in the Print      |
+
  \* Indicates reports that can be printed with multicurrency information displayed.
 
 Cash Receipts Posting Journal\*†

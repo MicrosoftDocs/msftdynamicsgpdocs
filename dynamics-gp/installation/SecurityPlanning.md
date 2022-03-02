@@ -1918,7 +1918,7 @@ In order to configure Kerberos delegation you need to go through the following s
     1. Log onto your SQL Server Reporting Services server
     2. Navigate to the folder where SQL Server Reporting Services is installed, such as C:\Program Files\Microsoft SQL Server\MSRS10_50.SSRS\Reporting Services\ReportServer
     3. Open the rsreportserver.config file in Visual Studio or Notepad
-    4. Search the file for <AuthenticationTypes>
+    4. Search the file for \<AuthenticationTypes\>
     5. This section should look like the following if you're going to use Kerberos delegation:
 
         ```xml
@@ -1928,7 +1928,7 @@ In order to configure Kerberos delegation you need to go through the following s
         </AuthenticationTypes>
         ```
 
-    6. You may need to add the <RSWindowsNegotiate/> line.  If so, save and close this file.
+    6. You may need to add the \<RSWindowsNegotiate\/> line.  If so, save and close this file.
 
 Once you've gone through the above configuration you should be able to access the SQL Server Reporting Services reports using Kerberos delegation
 

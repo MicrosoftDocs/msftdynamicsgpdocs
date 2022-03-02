@@ -144,7 +144,7 @@ and Depot Management), many new options and paths become available.
 
 IMAGE – FARM1.jpg
 
-![A close up of a logo - ](media/00a7f706f144330c6f17db09b3b43451.jpg)
+![Outline of the RMA life cycle.](media/FARM1.jpg)
 
 A close up of a logo Description automatically generated
 
@@ -203,7 +203,7 @@ and Depot Management), many new options and paths become available.
 
 IMAGE – FARM2.jpg
 
-![A screenshot of a cell phone - ](media/f12018aae2b49de01e869ece9a2df275.jpg)
+![Outline of the RTV life cycle.](media/FARM2.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -296,7 +296,7 @@ automatically.
 1. Open the Service Setup – Returns window. Microsoft Dynamics GP menu \> Tools
     \> Setup \> Project \> Service Setup \> Return button
 
-![A screenshot of a cell phone - ](media/c769b7d3f57331e85f2ee591920f156e.png)
+![Screenshot of the Service Setup – Returns window.](media/FARM3.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -472,7 +472,7 @@ common entries in the RMA Entry/Update windows.
 
 IMAGE – FARM4.jpg
 
-![A screenshot of a cell phone - ](media/e7b2929f2289ce9e817505e610809dd0.jpg)
+![Screenshot of the RMA Type Maintenance window.](media/FARM4.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -808,7 +808,7 @@ a service call is invoiced for the current customer and site combination.
 
 IMAGE – FARM6.jpg
 
-![](media/bf7177d7d41bb05716aff3c9f813f4f7.jpg)
+![Screenshot of the Customer Extensions window.](media/FARM6.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -829,7 +829,7 @@ sold by your company.
 
 IMAGE – FARM7.jpg
 
-![](media/b2fbf0d4a807ab4b46829b998a6f5952.jpg)
+![Screenshot of the Warranty Maintenance window.](media/FARM7.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -877,7 +877,7 @@ location for the equipment.
 
 IMAGE – FARM8.jpg
 
-![](media/f81109484a788f0390fa3aa1a0a2b290.jpg)
+![Screenshot of the Equipment Maintenance window.](media/FARM8.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -1083,7 +1083,7 @@ Installed.
 
 IMAGE – FARM9.jpg
 
-![](media/b72e6312ea19a7ddc0bb56859d884192.jpg)
+![Screenshot of the RMA Entry/Update window.](media/FARM9.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1389,7 +1389,7 @@ This table is based on the Posting Accounts **From** option (**Item** or
 
 IMAGE – FARM10.jpg
 
-![A screenshot of a cell phone - ](media/a52bdb0ea4df751d5e4697df9c7451cd.jpg)
+![Table showing the Location information for each Posting Account.](media/FARM10.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1877,7 +1877,7 @@ in the RMA – Kit Components window to specify bins for kit components.
 
 IMAGE – FARM11.jpg
 
-![](media/574168f6abc6cfef05ccb6bbd3bcf9ba.jpg)
+![Screenshot of the Sales Order Processing Setup window.](media/FARM11.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1935,7 +1935,7 @@ The following table explains how the account field is populated.
 
 IMAGE – FARM12.jpg
 
-![](media/2f6243c4d1229b40fe723fb30ddb660f.jpg)
+![Screenshot of the RMA Closing window.](media/FARM12.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2212,7 +2212,7 @@ You can access the Internet tracking pages for delivery services.
 
 IMAGE – FARM14.jpg
 
-![](media/232dcba71dd1014742f0f29895589897.jpg)
+![Screenshot of the In–Transit Transfer Entry window.](media/FARM14.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2440,7 +2440,7 @@ and the reports included in those categories.
 
 IMAGE – FARM15.jpg
 
-![A screenshot of a cell phone - ](media/526a8c7b538b8fc4e8b3147de1553154.jpg)
+![List of reports and printing methods by Report type.](media/FARM15.jpg)
 
 #### Reports you can use with named printers
 
