@@ -251,7 +251,7 @@ ms.date: 12/1/2019
 
 >   The following table lists the windows and how to open them.
 
-![A screenshot of a cell phone Description automatically generated](media/99c24e8d3c5079072de5c4039e71c310.jpg)
+![List of Accounts, balance types, and statement types. ](media/99c24e8d3c5079072de5c4039e71c310.jpg)
 
 (IMAGE PACTAB.jpg)
 
@@ -294,7 +294,7 @@ ms.date: 12/1/2019
 >   **Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Project \>
 >   Accounts button**
 
-![A screenshot of a cell phone Description automatically generated](media/65084aad41c0388e3fcfd4be829ec420.jpg)
+![Screenshot of the Project Setup Cost Budget Accounts window.](media/65084aad41c0388e3fcfd4be829ec420.jpg)
 
 (IMAGE PACSET.jpg)
 
@@ -335,7 +335,7 @@ ms.date: 12/1/2019
 1.  Open the Budget Accounts window. **Cards \> Project \> Project \> Budget
     Button \> Cost Category expansion button \> Accounts button**
 
-![A screenshot of a computer Description automatically generated](media/14606a1ba80f18fdc4024ee039abb363.jpg)
+![Screenshot of the Budget Accounts window.](media/14606a1ba80f18fdc4024ee039abb363.jpg)
 
 (IMAGE PACBUD.jpg)
 
@@ -389,7 +389,7 @@ ms.date: 12/1/2019
 1.  Open the Project Setup Fee Accounts window. **Microsoft Dynamics GP menu \>
     Tools \> Setup \> Project \> Project \> Fee Accounts button**
 
-![A screenshot of a cell phone Description automatically generated](media/fa5ecd753047923749bc09e524e9dccf.jpg)
+![Screenshot of the Project Setup Fee Accounts window.](media/fa5ecd753047923749bc09e524e9dccf.jpg)
 
 (IMAGE PACFEE.jpg)
 
@@ -422,7 +422,7 @@ ms.date: 12/1/2019
 >   **Cards \> Project \> Project \> Fees button \> Fee ID expansion button \>
 >   Accounts button**
 
-![A screenshot of a cell phone Description automatically generated](media/8983c05bb009ec6434a1cd6d416055f3.jpg)
+![Screenshot of the Project Fee Accounts window.](media/8983c05bb009ec6434a1cd6d416055f3.jpg)
 
 (IMAGE PACFEE2.jpg)
 
@@ -464,7 +464,7 @@ ms.date: 12/1/2019
 1.  Open the Account Segment Overrides window. **Cards \> Project \> Contract \>
     Sub Acct Format expansion button**
 
-![A screenshot of a cell phone Description automatically generated](media/28c8b6c20616f5a884c281adb5faaa3a.jpg)
+![Screenshot of the Account Segment Overrides window. ](media/28c8b6c20616f5a884c281adb5faaa3a.jpg)
 
 (IMAGE PACSEG.jpg)
 
@@ -653,7 +653,7 @@ ms.date: 12/1/2019
 1.  Open the Project Series Posting window. **Transactions \> Project \> Series
     Post**
 
-![A screenshot of a cell phone Description automatically generated](media/53a3b73eb986a3f4dd5684317fb811ce.jpg)
+![Screenshot of the Project Series Posting window.](media/53a3b73eb986a3f4dd5684317fb811ce.jpg)
 
 (IMAGE PACPOST.jpg)
 
@@ -1024,7 +1024,7 @@ ms.date: 12/1/2019
 1.  Open the Revenue Recognition Entry per Budget Item window. **Transactions \>
     Project \> Billing \> Revenue Recognition \> Budget expansion button**
 
-![A screenshot of a cell phone Description automatically generated](media/170192cf63675b34e39bdee5f94af1fb.jpg)
+![Screenshot of the Revenue Recognition Entry per Budget Item window.](media/170192cf63675b34e39bdee5f94af1fb.jpg)
 
 (IMAGE PACRRBUG.jpg)
 

@@ -161,7 +161,7 @@ Use the Customer Payment Summary Inquiry window to view details of the payments 
 1. Open the Customer Payment Summary Inquiry window. 
 (Sales \>\> Inquiry \>\> Payment Summary)
 
-![A screenshot of a cell phone Description automatically generated](media/448b64ce3d5718d08dd5e3f048993940.jpg)
+![Screenshot of the Customer Payment Summary Inquiry window.](media/448b64ce3d5718d08dd5e3f048993940.jpg)
 
 2. Enter or select a customer ID.
 
@@ -214,7 +214,7 @@ Use the Receivables Summary Inquiry window to view the total number of documents
 1. Open the Receivables Summary Inquiry window. 
 (Sales \>\> Inquiry \>\> Receivables Summary)
 
-![A screenshot of a cell phone Description automatically generated](media/67079460b7933cb008434b468f35fdcf.jpg)
+![Screenshot of the Receivables Summary Inquiry window.](media/67079460b7933cb008434b468f35fdcf.jpg)
 
 2. Select a range of customers and choose Calculate to display the correct information in the window.
 
@@ -227,7 +227,7 @@ Use the Receivables Transaction Inquiry - Document window to view unposted, post
 1. Open the Receivables Transaction Inquiry - Document window. 
 (Sales \>\> Inquiry \>\> Transaction by Document)
 
-![A screenshot of a cell phone Description automatically generated](media/8cc4c007d0a0402f805130dc3b26e36b.jpg)
+![Screenshot of the Receivables Transaction Inquiry - Document window.](media/8cc4c007d0a0402f805130dc3b26e36b.jpg)
 
 2. Select a range of documents to limit the information displayed. You can view documents by number, date, or customer ID.
 
