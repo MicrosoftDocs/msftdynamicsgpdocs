@@ -881,7 +881,7 @@ ms.date: 12/1/2019
 1.  Open the RR Cycle Batch Processing window. **Transactions \> Project \>
     Billing \> Cycle Revenue Recognition**
 
-![](media/e6b1c51d70f87bd7d83c835edc8e18f8.jpg)
+![Screenshot of the RR Cycle Batch Processing window.](media/e6b1c51d70f87bd7d83c835edc8e18f8.jpg)
 
 >   A screenshot of a cell phone Description automatically generated
 
@@ -945,7 +945,7 @@ ms.date: 12/1/2019
 1.  Open the Revenue Recognition Entry window. **Transactions \> Project \>
     Billing \> Revenue Recognition**
 
-![](media/38374053c59c8d23144a08e689d2aec3.jpg)
+![Screenshot of the Revenue Recognition Entry window.](media/38374053c59c8d23144a08e689d2aec3.jpg)
 
 >   A screenshot of a cell phone Description automatically generated
 

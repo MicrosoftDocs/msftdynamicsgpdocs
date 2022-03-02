@@ -758,7 +758,7 @@ You can specify billing settings for a contract template.
 
 PACM 15. JPEG
 
-![](media/PACM 15.jpg)
+![Screenshot of the Contract Template Maintenance window.](media/PACM 15.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -838,7 +838,7 @@ You can create a project template to apply to project records.
 
 PACM 17.JPEG
 
-![](PACM 17.jpg)
+![Screenshot of the Project Template Maintenance window.](media/PACM 17.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -975,7 +975,7 @@ for forecast budget amounts will be used.
 
 **PACM 20.JPEG**
 
-![](media/PACM 20.jpg)
+![Screenshot of the Project Maintenance window.](media/PACM 20.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1457,7 +1457,7 @@ Category) to view them.*
 
 **PACM 27.JPEG**
 
-![](media/PACM 27.jpg)
+![Screenshot of the Cost Category Maintenance window.](media/PACM 27.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -1696,7 +1696,7 @@ See *Assign fees to a project* on page 89 for more information.
 
 **PACM 31.JPEG**
 
-![](media/PACM 31.jpg)
+![Screenshot of the Fee Maintenance window.](media/PACM 31.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1923,7 +1923,7 @@ view them.*
 
 **PACM 33.JPEG**
 
-![](media/PACM 33.jpg)
+![Screenshot of the Contract Maintenance window.](media/PACM 33.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2033,7 +2033,7 @@ settings.*
 
 PACM 34.JPEG
 
-![](media/PACM 34.jpg)
+![Screenshot of the Contract Settings window.](media/PACM 34.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -2230,7 +2230,7 @@ Inquiry window (Inquiry \> Project \> Maintenance \> Project) to view them.*
 
 **PACM 37.JPEG**
 
-![](media/PACM 37.jpg)
+![Screenshot showing the Project Maintenance window.](media/PACM 37.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2478,7 +2478,7 @@ that use the **Fee Amount** fee calculation method will be copied.
 
 **PACM 39.JPEG**
 
-![](media/PACM 39.jpg)
+![Screenshot of the Duplicate Existing Project window.](media/PACM 39.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2583,7 +2583,7 @@ You can assign an employee to projects.
 
 **PACM 42.JPEG**
 
-![](media/PACM 42.jpg)
+![Screenshot of the Project Access List window.](media/PACM 42.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2669,7 +2669,7 @@ Project \> Budget button) to view them.*
 
 PACM 44.JPEG
 
-![](media/PACM 44.jpg)
+![Screenshot of the Budget Maintenance window.](media/PACM 44.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2936,7 +2936,7 @@ expansion button \> Rate Table button) to view the assignment.*
 
 PACM 46. JPEG
 
-![](media/PACM 46.jpg)
+![Screenshot of the Budget Rates window.](media/PACM 46.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2978,7 +2978,7 @@ items that have been selected.*
 
 PACM 47.JPEG
 
-![](media/PACM 47.jpg)
+![Screenshot of the Budget Detail IV Items window.](media/PACM 47.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -3023,7 +3023,7 @@ amounts.*
 
 PACM 48.JPEG
 
-![](media/PACM 48.jpg)
+![Screenshot of the Forecasting window.](media/PACM 48.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -3063,7 +3063,7 @@ period.*
 
 PACM 49.JPEG
 
-![](media/PACM 49.jpg)
+![Screenshot of the Project Periodic Budget window.](media/PACM 49.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -3764,7 +3764,7 @@ currency to enter a change order for the contract.
 
 **PACM 58.JPEG**
 
-![](media/PACM 58.jpg)
+![Screenshot of the Change Order Entry window.](media/PACM 58.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -3907,7 +3907,7 @@ in a project budget.
 
 PACM 61.JPEG
 
-![](media/PACM 61.jpg)
+![Screenshot of the Change Order Budget Detail Entry window.](media/PACM 61.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -3974,7 +3974,7 @@ You can enter a change order to modify fee assignments for a project.
 
 PACM 62.JPEG
 
-![](media/PACM 62.jpg)
+![Screenshot of the Change Order Fee Entry window.](media/PACM 62.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -4019,7 +4019,7 @@ You can view a list of change orders.
 
 **PACM 63.JPEG**
 
-![](media/PACM 63.jpg)
+![Screenshot of the Change Order Inquiry window.](media/PACM 63.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5365,7 +5365,7 @@ more information.
 
 PACM 81. JPEG
 
-![](media/PACM 81.jpg)
+![Screenshot of the PA Item Lot Number Entry window.](media/PACM 81.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5407,7 +5407,7 @@ more information.
 
 PACM 82.jpeg
 
-![](media/PACM 82.jpg)
+![Screenshot of the PA Item Serial Number Entry window.](media/PACM 82.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5441,7 +5441,7 @@ more information.
 
 PACM83. JPEG
 
-![](media/PACM 83.jpg)
+![Screenshot of the PA Bin Quantity Entry window.](media/PACM 83.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5633,7 +5633,7 @@ categories in project budgets.
 
 **PACM 85. JPEG**
 
-![](media/PACM 85.jpg)
+![Screenshot of the Budget-Detail Inquiry window.](media/PACM 85.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5654,7 +5654,7 @@ amounts accrued for projects for a list of customers.
 
 **PACM 86.JPEG**
 
-![](media/PACM 86.jpg)
+![Screenshot of the Corporate Inquiry window.](media/PACM 86.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5679,7 +5679,7 @@ amounts accrued for projects for a list of contracts.
 
 **PACM 87. JPEG**
 
-![](media/PACM 87.jpg)
+![Screenshot of the Customer Inquiry window.](media/PACM 87.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5704,7 +5704,7 @@ amounts accrued for a list of projects.
 
 **PACM 88. JPEG**
 
-![](media/PACM 88.jpg)
+![Screenshot of the Contract Inquiry window.](media/PACM 88.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5729,7 +5729,7 @@ amounts accrued for the cost categories in a project budget.
 
 **PACM 89. JPEG**
 
-![](media/PACM 89.jpg)
+![Screenshot of the Project Inquiry window.](media/PACM 89.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5760,7 +5760,7 @@ fees that are assigned to a project.
 
 PACM 90. JPEG
 
-![](media/PACM 90.jpg)
+![Screenshot of the Project Inquiry-Fees window.](media/PACM 90.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5794,7 +5794,7 @@ an inventory transfer* on page 142 for more information.
 
 PACM 91.JPEG
 
-![](media/PACM 91.jpg)
+![Screenshot of the Committed Cost Detail window.](media/PACM 91.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5878,7 +5878,7 @@ items by date on page 158 for more information.*
 
 **PACM 95. JPEG**
 
-![](media/PACM 95.jpg)
+![Screenshot of the Combined History Inquiry window.](media/PACM 95.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5969,7 +5969,7 @@ allocations that you have set up in the PA Allocations SmartList.
 
 **PACM 98. JPEG**
 
-![](media/PACM 98.jpg)
+![Screenshot of the Project Allocation Maintenance window.](media/PACM 98.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -6015,7 +6015,7 @@ allocation.
 
 **PACM 99. JPEG**
 
-![](media/PACM 99.jpg)
+![Screenshot of the Project Allocation window.](media/PACM 99.jpg)
 
 A screenshot of a social media post Description automatically generated
 
