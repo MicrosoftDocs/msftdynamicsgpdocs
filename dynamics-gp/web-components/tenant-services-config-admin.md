@@ -74,8 +74,8 @@ The following steps describe how to add a service administrator or delegating us
 3. Start the Web Management Console.
 
     In a browser, open the Web Management Console. To start the Web
-    Management Console, you use a URL similar to the following: https://<web
-    server name>/WebManagementConsole/
+    Management Console, you use a URL similar to the following: https://\<web
+    server name\>/WebManagementConsole/
 
 4. Click Tenant Manager.
 

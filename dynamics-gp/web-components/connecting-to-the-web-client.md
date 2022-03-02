@@ -1,5 +1,5 @@
 ---
-title: "Working with Dynamics GP web client"
+title: "Connecting to the Dynamics GP web client"
 description: "Learn how to safely connect to and signing out from Dynamics GP in a browser."
 keywords: "web components"
 author: edupont04

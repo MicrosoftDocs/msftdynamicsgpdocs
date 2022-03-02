@@ -1,5 +1,5 @@
 ---
-title: "Client installation"
+title: "Installing Dynamics GP on subsequent computers"
 description: "Get Dynamics GP on each user's computer and synchronize data with the server."
 keywords: "install"
 author: edupont04

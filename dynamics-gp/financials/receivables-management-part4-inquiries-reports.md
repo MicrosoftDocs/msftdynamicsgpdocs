@@ -1,5 +1,5 @@
 ---
-title: "Receivables Management in Dynamics GP"
+title: "Receivables Management Part 4: Inquiries and reports"
 description: "Managing receivables in Dynamics GP."
 keywords: "receivables"
 author: theley502

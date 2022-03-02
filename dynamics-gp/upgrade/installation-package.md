@@ -1,5 +1,5 @@
 ---
-title: "Installation package"
+title: "Using an installation package to install Dynamics GP on multiple client computers"
 description: "Use an installation package to install Dynamics GP on multiple client computers."
 keywords: "upgrade"
 author: edupont04
