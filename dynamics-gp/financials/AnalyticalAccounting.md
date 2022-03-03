@@ -3249,7 +3249,7 @@ The Budget Tree A has the following nodes under it: PCTR \>\> PROJ \>\> PROD
 The following accounts are assigned to the node Budget Tree A \>\> PCTR \>\>
 PROJ:
 
-| **Node: Budget Tree A \>\> PCTR \>\> PROJ** |                  |
+| Node: Budget Tree A \>\> PCTR \>\> PROJ     |                  |
 |---------------------------------------------|------------------|
 | **Account No**                              | **Account Type** |
 | Account A                                   | Profit and Loss  |

@@ -4414,7 +4414,7 @@ templates."*
 
 You can send the following documents in e-mail.
 
-| **Documents**           |                                  |
+| Documents               |                                  |
 |-------------------------|----------------------------------|
 | Sales quote             | Receivables finance charges      |
 | Sales order             | Receivables service/repair       |
@@ -4915,7 +4915,7 @@ order or sales document in email.
 
 You can attach documents to the following master records.
 
-| **Master records** |               |
+| Master records     |               |
 |--------------------|---------------|
 | Item record        | Vendor record |
 | Customer record    |               |
@@ -4924,7 +4924,7 @@ You can attach documents to the following documents and transactions. You
 also can attach documents to the line items assigned to the documents and
 transactions.
 
-| **Transactions**                 |                               |
+| Transactions                     |                               |
 |----------------------------------|-------------------------------|
 | Sales quote                      | Purchasing Invoice receipt    |
 | Sales order                      | In-transit transfer receipt   |
@@ -5840,9 +5840,9 @@ customer's. To calculate the taxes, Microsoft Dynamics GP compares the tax
 schedules that are assigned to each item with the tax schedules assigned to
 the store and calculates taxes only for the details that appear for both.
 
-| **Item**         | **Tax details in the tax schedule assigned to the:** | **Calculated tax** |              |                                                                                                  |
+| Item         | Tax details in the tax schedule assigned to the: | Calculated tax |              |                                                                                                  |
 |------------------|------------------------------------------------------|--------------------|--------------|--------------------------------------------------------------------------------------------------|
-|                  | **Item**                                             | **Store**          | **Customer** |                                                                                                  |
+|                  | Item                                             | Store          | Customer |                                                                                                  |
 | Shirt (Clothing) |                                                      | 5% State           | 5% State     | US\$0 because the shirt isn't taxable.                                                          |
 |                  |                                                      | 1% City            |              |                                                                                                  |
 | Radio (General)  | 5% State                                             | 5% State           | 5% State     | US\$3.00 because the tax schedules for both the item and the store contain the same tax details. |
@@ -6116,7 +6116,7 @@ the \$100 minimum and \$500 maximum—\$400—is taxable.
 
 Refer to the following tables for more information.
 
-| **Full Amount**         |                 |                           |
+| Full Amount             |                 |                           |
 |-------------------------|-----------------|---------------------------|
 | Minimum = \$100         | Maximum = \$500 |                           |
 | Sale amount             | Tax calculated? | Tax calculated on:        |
@@ -9407,11 +9407,11 @@ Native mode location:
 
 SharePoint Integrated mode location:
 
-| **SharePoint Integrated** |                                       |
-|---------------------------|---------------------------------------|
-| **Location**              | **Example**                           |
+| SharePoint Integrated     |                                        |
+|---------------------------|----------------------------------------|
+| **Location**              | **Example**                            |
 | SharePoint Site           | https://\<servername\>/SharePoint site |
-| Report Library            | ReportsLibrary                        |
+| Report Library            | ReportsLibrary                         |
 
 1. If you selected Native as the report server mode, you can enter the name of
     the folder to deploy the reports to. By using a folder, you can deploy
@@ -9599,7 +9599,7 @@ Network Share location:
 
 SharePoint location:
 
-| **SharePoint Integrated** |                                          |
+| SharePoint Integrated     |                                          |
 |---------------------------|------------------------------------------|
 | **Location**              | **Example**                              |
 | SharePoint Site           | http:\\\\\<servername\>\\SharePoint site |

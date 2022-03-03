@@ -72,7 +72,7 @@ To discontinue the DexSQL.log:
 
 After you upgrade, we recommend printing the following reports to a printer or to a file. You can use them to verify that your system was upgraded properly, or to re-create modifications.
 
-| Module                    | Reports                                                                                                         |
+| Module                    |Reports                                                                                                         |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------|
 | System                    | Shortcut Bar                                                                                                    |
 | General Ledger            | Detailed Trial Balance                                                                                          |

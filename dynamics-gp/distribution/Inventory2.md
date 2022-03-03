@@ -1725,7 +1725,7 @@ If you're updating price lists that have a price method based on a percentage—
 
 Refer to the table for information about how those options will affect your price lists.
 
-|                                                               | **Fixed percentage** | **Percentage**                                     |
+| Options                                                              | Fixed percentage | Percentage                                     |
 |---------------------------------------------------------------|----------------------|----------------------------------------------------|
 | If, before updating, the price method uses this percentage:   | 75%                  | 75%                                                |
 | ... and the percent change entered in the wizard is ...      | 10%                  | 10%                                                |
