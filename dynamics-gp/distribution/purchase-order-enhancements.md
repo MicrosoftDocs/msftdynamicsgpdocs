@@ -110,7 +110,7 @@ Commitments are amounts from purchase order documents that are committed to be p
 1. Open the PO Enhancements Setup window. 
 (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Purchasing \>\> Purchase Order Enhancements)
 
-     ![](media/POEge009.jpg)
+![Screenshot of the PO Enhancements Setup window.](media/POEge009.jpg)
 
 2. Mark the Activate Commitments option. This option must be selected to use purchase order commitments.
 
@@ -123,7 +123,7 @@ Commitments are amounts from purchase order documents that are committed to be p
 
 3. Choose Commitment Setup—the PO Commitments Setup window will open.
 
-    ![](media/POEge012.jpg)
+![Screenshot of the PO Commitments Setup window.](media/POEge012.jpg)
 
 4. Select one of the following authorization types:
 
@@ -211,7 +211,7 @@ The following information applies to purchase order commitments:
 1. Open the Purchase Order Entry window. 
 (Transactions \>\> Purchasing \>\> Purchase Order Entry)
 
-    ![](media/POEge018.jpg)
+![Screenshot of the the Purchase Order Entry window.](media/POEge018.jpg)
 
 2. Process the purchase order. For information about processing purchase orders, please refer to the Purchase Order Processing documentation.
 
@@ -258,7 +258,7 @@ If only purchase order commitments is activated, the Purchase Order Enhancements
 1. Open the Purchase Order Enhancements Entry window. 
 (Transactions \>\> Purchasing \>\> Purchase Order Enhancements Entry)
 
-    ![](media/POEge023.jpg)
+![Screenshot of the Purchase Order Enhancements Entry window.](media/POEge023.jpg)
 
 2. Select your purchase order restriction preference.
 
@@ -361,7 +361,7 @@ Use the Budget vs Actual and Committed Inquiry window to view the following info
 1. Open the Budget vs Actual & Committed Inquiry window. 
 (Inquiry \>\> Purchasing \>\> Budget vs Actual & Committed)
 
-    ![](media/POEge030.jpg)
+![Screenshot of the Budget vs Actual & Committed Inquiry window.](media/POEge030.jpg)
 
 2. Select to view information by budget or by year.
 
@@ -397,7 +397,7 @@ Use the Committed Detail Inquiry window to view committed detail information. No
 1. Open the Committed Detail Inquiry window. 
 (Inquiry \>\> Purchasing \>\> Committed Detail)
 
-    ![](media/POEge034.jpg)
+![Screenshot of the Committed Detail Inquiry window.](media/POEge034.jpg)
 
     You also can open this window by clicking on the Committed heading link in the Budget vs Actual & Committed Inquiry window.
 
@@ -428,7 +428,7 @@ Occasionally, hardware failures, power surges, and other problems can damage or 
 2. Open the PO Enhancements Maintenance window. 
 (Microsoft Dynamics GP menu \>\> Maintenance \>\> Purchase Order Enhancements)
 
-    ![](media/POEge036.jpg)
+![Screenshot of the PO Enhancements Maintenance window.](media/POEge036.jpg)
 
 3. Select Reconcile and then Process.
 
@@ -500,7 +500,7 @@ To use purchase order approvals, be sure that purchase order approval workflow i
 
     The window displays a list of all the users who have access to the company.
 
-    ![](media/POEge039.jpg)
+![Screenshot of the Purchase Order Approval User Setup window.](media/POEge039.jpg)
 
 4. Select a user.
 
@@ -654,7 +654,7 @@ Use the Edit Purchase Order Status window to modify purchase orders. The Approva
 1. Open the Edit Purchase Order Status window. 
 (Transactions \>\> Purchasing \>\> Edit Purchase Orders)
 
-    ![](media/POEge045.jpg)
+![Screenshot of the Edit Purchase Order Status window.](media/POEge045.jpg)
 
 2. Select a purchase order.
 
@@ -724,7 +724,7 @@ Use the Unapproved Purchase Order Inquiry window to view and report unapproved p
 1. Open the Unapproved Purchase Order Document Inquiry window. 
 (Inquiry \>\> Purchasing \>\> Unapproved Purchase Order Document)
 
-    ![](media/POEge049.jpg)
+![Screenshot of the Unapproved Purchase Order Document Inquiry window.](media/POEge049.jpg)
 
 2. Select from the following purchase order filter preferences on the Restricted By drop-down menu.
 
@@ -752,7 +752,7 @@ You can view detailed purchase order information using the Purchase Order Inquir
 1. Open the Purchase Order Processing Document Inquiry window. 
 (Inquiry \>\> Purchasing \>\> Purchase Order Documents)
 
-    ![](media/POEge051.jpg)
+![Screenshot of the Purchase Order Processing Document Inquiry window.](media/POEge051.jpg)
 
 2.  Select the applicable fields to complete your inquiry—refer to the Purchase Order Processing documentation for complete instructions.
 
@@ -776,7 +776,7 @@ You can obtain detailed item information for purchasing documents using the Purc
 1. Open the Purchase Order Processing Item Inquiry window. 
 (Inquiry \>\> Purchasing \>\> Purchase Order Items)
 
-    ![](media/POEge054.jpg)
+![Screenshot of the Purchase Order Processing Item Inquiry window.](media/POEge054.jpg)
 
 2. Select the applicable fields to complete your inquiry. For information on Purchase Order Inquiry, refer to the Purchase Order Processing documentation.
 
@@ -786,7 +786,7 @@ You can obtain detailed item information for purchasing documents using the Purc
 
 5. To view more detailed information, highlight a record and click on the PO Number heading link—the Purchase Order Inquiry Zoom window will open. The Approvals Status field displays the purchase order approval status.
 
-    ![](media/POEge056.jpg)
+![Screenshot of the Purchase Order Inquiry Zoom window.](media/POEge056.jpg)
 
 6.  When you are finished viewing the information, choose OK.
 
@@ -802,7 +802,7 @@ Use the Print Purchasing Documents window to print purchasing documents.
 1.  Open the Print Purchasing Documents window. 
 (Transactions \>\> Purchasing \>\> Print Purchasing Documents)
 
-    ![](media/POEge059.jpg)
+![Screenshot of the Print Purchasing Documents window.](media/POEge059.jpg)
 
     Select your printing preferences. For more information on printing preferences, refer to the Purchase Order Processing documentation.
 

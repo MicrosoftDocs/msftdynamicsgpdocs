@@ -1,5 +1,5 @@
 ---
-title: "What's new in Dynamics GP"
+title: "Overview to the what's new section"
 description: "Learn about updates and enhancements in Dynamics GP across releases from GP 2015 and forward."
 keywords: ""
 author: edupont04

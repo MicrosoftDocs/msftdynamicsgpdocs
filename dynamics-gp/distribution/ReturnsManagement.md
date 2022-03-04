@@ -808,7 +808,7 @@ a service call is invoiced for the current customer and site combination.
 
 IMAGE – FARM6.jpg
 
-![](media/FARM6.jpg)
+![Screenshot of the Customer Extensions window.](media/FARM6.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -829,7 +829,7 @@ sold by your company.
 
 IMAGE – FARM7.jpg
 
-![](media/FARM7.jpg)
+![Screenshot of the Warranty Maintenance window.](media/FARM7.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -877,7 +877,7 @@ location for the equipment.
 
 IMAGE – FARM8.jpg
 
-![](media/FARM8.jpg)
+![Screenshot of the Equipment Maintenance window.](media/FARM8.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -1083,7 +1083,7 @@ Installed.
 
 IMAGE – FARM9.jpg
 
-![](media/FARM9.jpg)
+![Screenshot of the RMA Entry/Update window.](media/FARM9.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1877,7 +1877,7 @@ in the RMA – Kit Components window to specify bins for kit components.
 
 IMAGE – FARM11.jpg
 
-![](media/FARM11.jpg)
+![Screenshot of the Sales Order Processing Setup window.](media/FARM11.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1935,7 +1935,7 @@ The following table explains how the account field is populated.
 
 IMAGE – FARM12.jpg
 
-![](media/FARM12.jpg)
+![Screenshot of the RMA Closing window.](media/FARM12.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2212,7 +2212,7 @@ You can access the Internet tracking pages for delivery services.
 
 IMAGE – FARM14.jpg
 
-![](media/FARM14.jpg)
+![Screenshot of the In–Transit Transfer Entry window.](media/FARM14.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2440,7 +2440,7 @@ and the reports included in those categories.
 
 IMAGE – FARM15.jpg
 
-![A screenshot of a cell phone - ](media/FARM15.jpg)
+![List of reports and printing methods by Report type.](media/FARM15.jpg)
 
 #### Reports you can use with named printers
 

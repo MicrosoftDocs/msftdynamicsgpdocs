@@ -1,5 +1,5 @@
 ---
-title: "Upgrade Dynamics GP web components"
+title: "Upgrading Dynamics GP web components on multiple computers"
 description: "Learn how to upgrade the Dynamics GP web components  in the scale out configuration."
 keywords: "web components"
 author: edupont04
