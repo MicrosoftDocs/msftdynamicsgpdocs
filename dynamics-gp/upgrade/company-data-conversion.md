@@ -242,7 +242,7 @@ If you have selected Native as the report server mode, you can enter the name of
 
 Network share location example:
 
-|               |                                                             |
+| Network Share Location |                                                    |
 |---------------|-------------------------------------------------------------|
 | Network share | [\\\\Servername\\sharename](file:///\\Servername\sharename) |  
 
