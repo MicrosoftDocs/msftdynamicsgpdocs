@@ -120,7 +120,7 @@ Be sure to use back slashes when you are entering the location for reports even 
 
 Network share location example:
 
-|               |                           |
+|Network        |Location                   |
 |---------------|---------------------------|
 | Network share | \\\\Servername\\sharename |
 

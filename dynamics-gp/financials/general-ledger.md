@@ -4251,7 +4251,7 @@ The information used to match transactions with General Ledger differs depending
 
 **Bank Reconciliation**
 
-| **Transaction Date**   | GL Post Date       | Posted Date        | Posting Date       | Date               |   |   |
+|Transaction Date  | GL Post Date             | Posted Date        | Posting Date       | Date               |   |   |
 |------------------------|--------------------|--------------------|--------------------|--------------------|---|---|
 | **Journal Entry**      | Journal Entry      |                    |                    |                    |   |   |
 | **Orig. Transaction**  | Transaction Source | Transaction Source | Transaction Source | Transaction Source |   |   |

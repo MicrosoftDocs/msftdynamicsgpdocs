@@ -875,7 +875,7 @@ The revaluation posting date is January 31, 2017. The cutoff date is February 1,
 | Document Posting Date:                                          | January 31, 2017      |
 
 **Example 2:**
-The credit document has a document date or posting date before the cutoff date. The credit document is applied to a document after the cutoff date. 
+The credit document has a document date or posting date before the cutoff date. The credit document is applied to a document after the cutoff date.
 
 The revaluation posting date is January 31, 2017. The cutoff date is February 1, 2017.
 

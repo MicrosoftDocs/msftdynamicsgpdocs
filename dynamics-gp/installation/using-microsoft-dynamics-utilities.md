@@ -152,7 +152,7 @@ To prepare Dynamics GP for use with default settings:
 
     Select the location to deploy the reports to. Network share location example:
 
-    |               |                           |
+    | Location              | Example           |
     |---------------|---------------------------|
     | Network share | \\\\Servername\\sharename |
 
@@ -160,7 +160,7 @@ To prepare Dynamics GP for use with default settings:
 
     SharePoint location example:
 
-    | SharePoint Site          |                |
+    | Location          | Example               |
     |--------------------------|----------------|
     | Data Connections Library |                |
     | Report Library           | ReportsLibrary |
@@ -289,7 +289,7 @@ A report file called Acctfram.txt is created in the Data folder inside of the GP
 
     SharePoint Integrated mode location example.
 
-    | SharePoint Integrated |
+    | Location              | Example        |
     |-----------------------|----------------|
     | Location              | Example        |
     | SharePoint Site       |                |
@@ -310,13 +310,13 @@ A report file called Acctfram.txt is created in the Data folder inside of the GP
 
     Network share location example:
 
-    |               |                           |
+    | Location      | Example                   |
     |---------------|---------------------------|
     | Network share | \\\\Servername\\sharename |
 
     SharePoint location example:
 
-    | SharePoint Site          |                |
+    | Location                 | Example        |
     |--------------------------|----------------|
     | Data Connections Library |                |
     | Report Library           | ReportsLibrary |
@@ -393,7 +393,7 @@ To add sample company data:
 
     SharePoint Integrated mode location example.
 
-    | SharePoint Integrated |
+    | Location              | Example        |
     |-----------------------|----------------|
     | Location              | Example        |
     | SharePoint Site       |                |
@@ -421,13 +421,13 @@ To add sample company data:
 
     Network share location example:
 
-    |               |                           |
+    | Location      | Example                   |
     |---------------|---------------------------|
     | Network share | \\\\Servername\\sharename |
 
     SharePoint location example.
 
-    | SharePoint Site          |                 |
+    | Location                 | Example         |
     |--------------------------|-----------------|
     | Data Connections Library | DataConnections |
     | Report Library           | ReportsLibrary  |
@@ -484,7 +484,7 @@ If you don't want to deploy business intelligence components, leave the componen
 
     SharePoint Integrated mode location example.
 
-    | SharePoint Integrated |
+    | Location              | Example        |
     |-----------------------|----------------|
     | Location              | Example        |
     | SharePoint Site       |                |
@@ -512,7 +512,7 @@ If you don't want to deploy business intelligence components, leave the componen
 
     Network share location example:
 
-    |               |                           |
+    | Location      | Example                   |
     |---------------|---------------------------|
     | Network share | \\\\Servername\\sharename |
 

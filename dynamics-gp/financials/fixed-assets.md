@@ -1493,20 +1493,20 @@ If by Receipt line is marked in the Fixed Assets Company Setup window, you can c
 
 The following table displays the information that’s transferred to Fixed Asset Management from Purchase Order Processing.
 
-| **From Purchase Order Processing**     | **To Fixed Asset Management**         |
-|----------------------------------------|---------------------------------------|
-| Vendor ID  | Vendor ID                             |
-| POP Receipt Number  | Control Number                        |
-| Receipt Date  | Document Date                         |
-| Receipt Date  | Acquisition Date                      |
-| Vendor Document Number | Document Number                       |
-| Transaction Source (RECVG Prefix)  | Transaction Source                    |
-| Purchase Order Type  | Control Type                          |
-| Item Description or Vendor Item Description | Description (Asset Purchase window). Only if there are multiple transactions, the primary transaction’s voucher description will be displayed in the Asset Description field in the Asset General Information window.|
-| Purchase Order Number  | Purchase Order Number                 |
-| Quantity Shipped   | Quantity                              |                              |
-| Extended Cost (Create Multiple Assets = No)| Acquisition Cost                      |
-| Unit Cost (Create Multiple Assets = Yes) | Acquisition Cost                      |
+| **From Purchase Order Processing**             | **To Fixed Asset Management** |
+|------------------------------------------------|-------------------------------|
+| Vendor ID                                      | Vendor ID                     |
+| POP Receipt Number                             | Control Number                |
+| Receipt Date                                   | Document Date                 |
+| Receipt Date                                   | Acquisition Date              |
+| Vendor Document Number                         | Document Number               |
+| Transaction Source (RECVG Prefix)              | Transaction Source            |
+| Purchase Order Type                            | Control Type                  |
+| Item Description or Vendor Item Description    | Description (Asset Purchase window). Only if there are multiple transactions, the primary transaction’s voucher description will be displayed in the Asset Description field in the Asset General Information window.|
+| Purchase Order Number                          | Purchase Order Number         |
+| Quantity Shipped                               | Quantity |                    |
+| Extended Cost (Create Multiple Assets = No)    | Acquisition Cost              |
+| Unit Cost (Create Multiple Assets = Yes)       | Acquisition Cost              |
 
 If the purchasing transaction uses Multicurrency Management, the following fields are transferred.
 
@@ -2072,21 +2072,21 @@ To add an asset to the group, all field information must match the selection cri
 
 **“And” logic** To build an asset group that includes all assets with the same asset ID and the same class ID, enter the following information in the Asset Group Search window. Assets with both the matching asset ID and the matching class ID will be displayed in the Select Assets window.
 
-|    | **Field Selection**                                                       | **Value** | **Action**                   |
-|----|---------------------------------------------------------------------------|-----------|------------------------------|
-| 1. | Asset ID                                                                  | Equal     | Enter or select an Asset ID. |
-| 2. | Class ID                                                                  | Equal     | Enter or select a Class ID. |
-| 3. | Choose Search. The results will be displayed in the Select Assets window. |           |                              |
+| **Field Selection**                                                                   | **Value** | **Action**                   |
+|---------------------------------------------------------------------------------------|-----------|------------------------------|
+| 1. | Asset ID                                                                         | Equal     | Enter or select an Asset ID. |
+| 2. | Class ID                                                                         | Equal     | Enter or select a Class ID.  |
+| 3. | Choose Search. The results will be displayed in the Select Assets window.        |           |                              |
 
 **“Or” logic** To build an asset group to include assets with either a specific asset ID or a specific class ID, enter the following information in the Asset Group Search window. Assets with the matching class ID will be displayed with the assets that have the matching asset ID.
 
-|    | **Field Selection**                                                                                              | **Value** | **Action**                   |
-|----|------------------------------------------------------------------------------------------------------------------|-----------|------------------------------|
-| 1. | Asset ID                                                                                                         | Equal     | Enter or select an Asset ID. |
-| 2. | Choose Search. The results will be displayed in the Select Assets window.                                       |           |                              |
-| 3. | In the Select Assets window, choose Search.                                                                     |           |                              |
-| 4. | Class ID                                                                                                         | Equal     | Enter or select a Class ID. |
-| 5. | Choose Search. The results of this search and the previous search will be displayed in the Select Assets window. |           |                              |
+| **Field Selection**                                                                   | **Value** | **Action**                   |
+|---------------------------------------------------------------------------------------|-----------|------------------------------|
+| 1. | Asset ID                                                                         | Equal     | Enter or select an Asset ID. |
+| 2. | Choose Search. The results will be displayed in the Select Assets window.        |           |                              |
+| 3. | In the Select Assets window, choose Search.                                      |           |                              |
+| 4. | Class ID                                                                         | Equal     | Enter or select a Class ID.  |
+| 5. | Choose Search. The results of this search and the previous search will be displayed in the Select Assets window. |
 
 ### Building an asset group
 
@@ -2464,7 +2464,7 @@ Use the Fixed Assets Mass Transfer window to transfer a group of assets to a dif
 During the intercompany transfer process, asset information is created in the destination company’s Asset General Information window. Asset information from the originating company’s Asset Insurance window, Asset Lease window, and Asset User Data window is not transferred to the destination company.
 
 | **Asset General Information window**   |            |
-|---------------------------------------|-------------|
+|----------------------------------------|------------|
 | **Field**                                                               | **Value**                                                                                       |
 | Asset ID                                                                | **The Mark to create a new asset ID for destination company option is marked.**                 |
 | Description                                                             | The description entered in the originating company's Asset General Information window.         |

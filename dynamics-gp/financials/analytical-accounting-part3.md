@@ -170,7 +170,7 @@ On performing the year-end close, one assignment is created with the
 consolidated amount for each unique combination of transaction dimension
 codes.
 
-|                   | **Account**            | **Dr.** | **Cr.** |
+| **Journal**                  | **Account**            | **Dr.** | **Cr.** |
 |-------------------|------------------------|---------|---------|
 | **Journal Entry** | **Account 1011**       | 490000  | \-    |
 | Assignment 1      | LOC 1 - PDT 1 - PRJ 1  | 250000  | \-    |
@@ -197,7 +197,7 @@ consolidated amount for each unique combination of transaction dimension
 codes. One assignment also is created for the amount to which no codes are
 assigned.
 
-|                   | **Account**           | **Dr.** | **Cr.** |
+| **Journal**                  | **Account**           | **Dr.** | **Cr.** |
 |-------------------|-----------------------|---------|---------|
 | **Journal Entry** | **Account 1011**      | 490000  | \-    |
 |                   | **Account**           | **Dr.** | **Cr.** |
