@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/7/2022
+ms.date: 03/07/2022
 ---
 
 # Microsoft Dynamics GP Receivables Management Part 3: Transaction activity
@@ -1026,9 +1026,10 @@ If you are using Workflow, you must resubmit the batch if you modify or delete a
 Use the Write Off Documents window to write off outstanding document credit or debit balance amounts for one or more customers. You can specify a writeoff limit and cut-off date, and whether to create a credit or debit memo for each customer or document.
 
 > [!TIP]
-> You may receive an error message Unhandled script exception:  SCRIPTS - data area  EXCEPTION_CLASS_SCRIPT_BAD_PARAM SCRIPT_CMD_DEREF_TABLE
-> When you attempt to write off a document in the Child Customer window when the Parent Customer is Inactive.  In this case the Parent company can be activated again and the process will complete successfully, or the option to Create Writeoff from Child can be used in the Write Off window.
+> You may receive an error message Unhandled script exception:  `SCRIPTS - data area  EXCEPTION_CLASS_SCRIPT_BAD_PARAM SCRIPT_CMD_DEREF_TABLE`
 > 
+> When you attempt to write off a document in the Child Customer window when the Parent Customer is Inactive.  In this case, the Parent company can be activated again and the process will complete successfully, or the option to Create Writeoff from Child can be used in the Write Off window.
+
 #### To write off outstanding credit or debit amounts
 
 1. Open the Write Off Documents window. (Sales \>\> Routines \>\> Write Off Documents)
