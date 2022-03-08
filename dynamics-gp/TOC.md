@@ -162,6 +162,7 @@
 ### [Security Planning](installation/SecurityPlanning.md)
 ### [System Setup](installation/SystemSetup.md)
 ### [System Administration Guide](installation/SystemAdminGuide.md)
+### [Introduction to Word Templates](installation/word-templates.md)
 
 <!--- web components -->
 ### Web components
