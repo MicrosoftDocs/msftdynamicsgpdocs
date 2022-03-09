@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/31/2021
+ms.date: 3/8/2022
 ---
 # Human Resources in Microsoft Dynamics GP
 
@@ -425,6 +425,195 @@ To modify or delete a supervisor record:
 3.	To change the employee that holds the supervisory position, select a different employee ID.
 4.	To delete a supervisor record, choose Delete.
 
+## Attendance Setup
+
+You can accrue benefit time using Payroll or the Human Resources attendance feature. To accrue benefit time using Human Resources, you must set up accrual periods, accruals, accrual schedules, and time codes.
+
+**Setting up attendance**
+
+Use the Attendance Setup window to specify if your company accrues benefit time using U.S. Payroll or the Human Resources attendance system. You can set up attendance transactions to update the vacation calendar, set up default hours per day and default days per week, and set up reasons and types to use when creating attendance transactions.
+
+If you mark the Update Vacation Calendar option, an entry appears in the calendar for each benefit or absent time code transaction. Any absences that are created if this option is marked will appear in the Attendance Transaction Entry window. Absence transactions that are created when this option is not marked will appear in the Absence Entry window.
+
+To set up attendance:
+
+1. Open the Attendance Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Setup)
+2. Select Human Resources, or select Payroll to choose your accrue type if U.S. Payroll is registered.
+3. Mark the Allow entry of attendance type and reason in Payroll option to link attendance type and reason codes to payroll transactions in the Payroll Transaction Entry window. This option is available only when the accrue type is Human Resources and U.S. Payroll is registered.
+4. Enter the current accrual year and the last day that you accrued attendance, and indicate if seniority should be based on months or days.
+These fields are available when U.S. Payroll is not registered, or when U.S. Payroll is registered and the accrue type is Human Resources.
+5. Enter the number of days that equal a week and the number of hours that equal a day to define your organization’s work schedule. For example, a standard 40 hour work week might be Number of days in a week = 5 and Number of hours in a day = 8.
+6. Enter the next transaction number. This number also appears in the Attendance Transaction Entry window and is the number of the next transaction to be posted.
+7. To update the vacation calendar with attendance transactions, mark Update Vacation Calendar.
+8. Choose Options to open the Attendance Setup Options window.
+9. Enter an attendance reason for absence—such as Jury Duty—and choose Insert to add it to the Reason list. Then, enter an attendance type for the reason—such as Miscellaneous—and choose Insert to add it to the Type list.
+
+The reasons and types that you enter will be displayed in the Attendance Transaction Entry window. If you marked the Allow entry of attendance type and reason in Payroll option in the Attendance Setup window and you’re using U.S. Payroll, the reasons and types will be displayed in the Payroll Transaction Entry window.
+To remove an attendance reason or type from a list, select it and choose Remove. Predefined reasons and types cannot be removed.
+10.	Choose OK to close the window. The Attendance Setup window is displayed.   Choose OK again to save your changes
+
+**Setting up accrual periods**
+
+Use the Accrual Period Setup window to set up your company’s accrual period structure. You’ll use the accrual periods when creating transactions and time accruals.
+You should set up your accrual periods for the current year and the next year, and at the end of each year, set up the following year. You must have at least the current year and the following year set up.
+
+To set up accrual periods:
+
+1.	Open the Accrual Period Setup window   (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Accrual Periods)
+2.	Enter the current year and choose the button for the accrual period intervals that your organization uses. The appropriate accrual period setup window will open.
+3.	Enter the starting date of the first accrual period for this year in the Start Date #1 field. Press TAB to display dates in the rest of the fields. If you chose 
+Semimonthly Setup, you also must enter the starting date for the #2 field, or the end date for the #1 field.
+4.	Mark the * check box—for Accrued—next to previous periods to indicate accrued attendance transactions. As you accrue attendance transactions, each accrued transaction will be displayed with an asterisk that is for reference only.
+To mark all accrual periods, choose Mark All. To unmark all accrual periods, choose Unmark All.
+5.	Choose OK to save your changes in the accrual period setup window where you entered accrual period dates.
+6.	Choose OK to save your changes in the Accrual Period Setup window.
+
+> [!TIP]
+> We recommend three years of accrual periods or pay periods are set up: 
+> The previous year
+> The current year
+> The upcoming year
+> This is something you will want to update as you start to Accrue in a new year, example January or after year end close.
+
+**Setting up accruals**
+
+Use the Accrual Setup window to create accruals that determine the rate at which benefit time, such as vacation time or sick time, is earned. An accrual is how an employee earns benefit time. Time codes indicate what is earned and accruals indicate how that time is earned. 
+
+For example, suppose that employees earn 24 hours of vacation time after they work six months. After they work 12 months, they earn another 40 hours of vacation time, and after working two to five years, they earn 80 hours of vacation time. Each of these accruals can be added to an accrual schedule.
+
+To use the Accrual Setup window, you must have marked Human Resources as the accrue type in the Attendance Setup window.
+
+To set up accruals:
+1.	Open the Accrual Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Accruals)
+2.	Enter or select an accrual code and description.
+3.	Select an option in the Accrue By field, such as Pay Period, to accrue benefit time.
+4.	If you selected Post Once, Interval, or Pay Period in the Accrue By field, enter the number of hours to accrue.
+5.	If you selected Interval in the Accrue By field, enter the number of days per interval.
+6.	Enter the maximum accrual hours per year that an employee can earn.
+7.	Enter the maximum hours available that an employee can have at any given time for the accrual you selected.
+8.	If you selected Hour/Yr in the Accrue By field, enter the standard work hours per year an employee works in the Work Hours per Year field. 
+9.	If you selected Pay Period in the Accrue By field, select the frequency that the accrual happens in the Accrual Period field.
+10.	If you selected Hour/Yr in the Accrue By field, select one or more time codes in the Based on Time Codes list to base the accrual on. Transactions for these time codes will be used to calculate benefit hours earned.
+Choose Mark All to mark all the time codes in the list, or choose Unmark All to unmark all the time codes in the list and choose Save.
+
+There are 4 types of Accruals you can set up on HR:   
+(Go to Microsoft Dynamics GP | Tools | Setup | Human Resources | Attendance | Accruals and refer to the ACCRUE BY field.)
+
+1. POST ONCE -  The 'Number of Hours to Accrue' amount will be awarded ONE TIME only and stop.
+
+2. INTERVAL -  The 'Number of Hours to Accrue' amount will be awarded repeatedly for each interval set, defined by the fixed 'Number Of Days per Interval' set.  For monthly, set to 30, for yearly, set to 365, etc. 
+
+3. HOUR/YR - This is the 'Hours Worked' accrual and will be awarded based on transactions keyed (so is typically used for Hourly employees).  With this type, the 'Based on Time Codes' section will become available and you can mark which Time Codes should be accrued on.   The transactions must exist in the HR transaction table (TATX1030) BEFORE the Accrual process is run.  Once the transactions are accrued on, they are marked off in the table so they are not accrued on again.  This type is most common for hourly employees.  For the Hours/Yr accrual type, the amount accrued per hour/unit will equal the YEAR MAX / Hour per Year base (fields in the Accrual Setup window):  
+
+Hours Accrued =  'Maximum Accrual Hours Per Year' / 'Work Hours Per Year'
+
+Example:  If you wanted the employee to earn '4' Accrual hours for every 40 hours worked, and they can only earn a maximum of '80' accrual hours per calendar year, then you would use the equation above to figure out what to enter for the 'Work Hours Per Year' field on the Accrual setup.   In the Accrual Setup, the 'Maximum Accrual Hours per year' would be 80 according to our example, and the 'Work Hours Per Year' would be calculated out to be '800'.  Enter 800 in this field in the Accrual setup window.   So 80/800 = .01 hours per unit, and .01 x 40 total hrs = 4 hours earned.     
+
+Here is how we back into our accrual amount
+If you are going to user Human Resources
+ 
+We need to figure out the accrual rate per hour worked as I think that is how we should accrue this.
+
+Hours worked * Vacation/sick hours per year / 2080 = accrue amount.
+
+For an example, I worked 20 hours you would need to back into it as follows (20 * 48 / 2080 = .46).
+I worked 30 hours you would need to back into it as follows (30 * 48 / 2080 = .69
+I worked 60 hours you would need to back into it as follows (60* 48 / 2080 = 1.39
+
+For example, when you setup the accrual in the Accrual Setup window you would say Accrue by Hours/Yr and select 48 in the Maximum Accrual Hours per Year field and then 2080 in work hours per year
+
+> [!TIP]
+> If you import transactions to payroll, usually that does not update Human Resource information (TATX1030).  Then your hours worked accruals will not work.  This could happen if you are using Integration Manager or eConnect.  Once you have completed the import go to Tool | Utilites | Human Resource and Reconcile to update HR information from the payroll batch.
+
+NOTE:  Keep in mind that salaried employees typically do not have transactions created in the TATX1030 table so the Hrs/Yr type is typically not used for salaried employees.     
+
+4. PAY PERIOD -  The type will simply award a 'fixed amount' per pay period.  This type is most commonly used for salaried employees.
+
+
+**Modifying or deleting an accrual**
+
+Use the Accrual Setup window to modify or delete an accrual. You can modify an accrual to reflect changes, such as an increase in the maximum number of hours that can be earned.
+
+To modify or delete an accrual:
+1.	Open the Accrual Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Accruals)
+2.	Enter or select an accrual.
+3.	To modify the accrual, make your changes and choose Save.
+4.	To delete the accrual, choose Delete.
+
+**Setting up an accrual schedule**
+
+After you’ve defined the benefit times tracked in your organization and how employees can earn those different types of benefit times, you can set up accrual schedules to show how employees can earn benefit times at various rates. For more information, refer to Setting up accruals on page 58.
+Use the Accrual Schedule Setup window to create tiered structures that define how employees earn benefit time based on seniority.
+
+Before you set up accrual schedules, you must indicate whether seniority is based on months or days in the Attendance Setup window. For more information, refer to Setting up attendance on page 55. 
+
+To set up an accrual schedule:
+1.	Open the Accrual Schedule Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Accrual Schedule)
+2.	Enter or select a schedule code and description that identifies the accrual schedule.
+3.	Enter the starting date and ending date for the accrual schedule. If it’s a continuous accrual schedule, leave the End Date field blank.
+4.	In the Attendance Setup window, you selected to base seniority on months or days. In the Seniority column, enter the number of months or days of seniority an employee must have to be eligible for the accrual.
+5.	Enter or select an accrual code in the Accrual column. Press TAB to display information in remaining columns and choose Save
+
+**Modifying or deleting an accrual schedule**
+Use the Accrual Schedule Setup window to modify or delete an accrual schedule. You can modify an accrual schedule to include changes, such as adding an accrual to an existing schedule.
+To modify or delete an accrual schedule:
+1.	Open the Accrual Schedule Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Accrual Schedule)
+2.	Enter or select a schedule.
+3.	To modify the schedule information, make your changes and choose Save.
+4.	To delete schedule information, choose Delete. To delete a row of information, select the line and from the Edit menu, choose Delete Row.
+
+**Setting up a time code**
+You can set up a time code to categorize how employees use their time. For instance, time codes can be used to track vacation time, hourly time, Family and Medical Leave Act (FMLA) time, and sick time.
+
+Use the Time Code Setup window to create time codes and define the various ways that employees in your organization account for their time. You also can link a default accrual schedule to each time code.
+
+If your company employs both hourly workers and salaried workers, you might need to set up separate time codes for each of the different types of time tracked, such as vacation time and sick time. For example, you might set up a vacation time code for salaried employees and a vacation time code for hourly employees. You also might set up a sick time code for salaried employees and a sick time code for hourly employees.
+
+You can select a pay code in the Linked Pay Code field to link an attendance time code to a U.S. or Canadian Payroll pay code. When you create a transaction for a pay code that is linked to a time code, a transaction also will be created for the time code. Then, you don’t have to enter transactions in both Human Resources and U.S. or Canadian Payroll. 
+To link pay codes to time codes, pay codes and pay types must match the corresponding time codes and time types. For example, if the time type is Hourly, you only can link pay codes with a pay type of Hourly. Or, if the time type is Benefit, you only can link pay codes with a pay type of Vacation, Sick Time, or Holiday.
+
+To set up a time code:
+1.	Open the Time Code Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Time Code)
+2.	Enter or select a time code and description to identify the time record.
+3.	Select a time type that the time code is based on and select an accrual period.
+4.	If the time type is Benefit, enter or select a default accrual schedule.
+5.	Enter or select a code in the Linked Pay Code field to link pay codes to time codes. 
+
+If U.S. or Canadian Payroll is registered and you selected Human Resources for the accrue type in the Attendance Setup window, you can link one pay code per time code and vice versa using this option.
+
+Linked pay codes and pay types must match the corresponding time codes and time types. For Canadian Payroll, the following table shows the pay types that correspond to a given time type.
+
+The Time Code pay code relationship is 1 to 1.  Once a time code is linked to a pay code, you cannot link it to another pay code and it will not appear in the looking up to be linked.
+
+Create Time Code that link to the Pay Code in Payroll.  Such as Sick, Vacation, and Holiday.  Select the Time Type and the Accrual Period for how often this code accrues.  If the Time Type is a Benefit, you will select a Default Accrual Schedule that you will setup after this window. Then select the Linked Pay Code.  If you mark Warn When Available Time Falls Below Zero, you will see warnings on your Payroll Batch Build report that states the Pay Code hours are below zero.  Continue to setup codes for all time that to accrue.
+
+Anything you want visible on the employee check/earnings statement with a balance should be a time type of BENEFT which is a 4 in the table TATM1030.  If you set up a code with Absent as an example, you will not be able to accrue with this code or make it visible to the employee.  This cannot be changed once setup, unless you do this is SQL tables.
+
+An example of an absent time type is maying you want to track how many times and employee is Tardy, but keep this as internal reporting in Dynamics GP.
+
+select  * From tatm1030 where TIMECODE_I='XXX' 
+If it is a BENEFIT type it will be a 4 in this table.
+TIMETYPE_I='4' 
+
+Time type	    Pay type
+Absent	        Regular Pay
+Hourly	        Regular Pay or Bonus
+Salary	        Regular Pay or Bonus
+Overtime	    Overtime
+Benefit	        Benefit pay codes (Vacation and Sick)
+Other	        Commission, Advance, or EI Rebate
+
+6.	Mark the Warn When Available Time Falls Below Zero option if warning messages should be displayed when benefit hours are less than zero and click Save.
+
+**Modifying or deleting a time code**
+
+Use the Time Code Setup window to modify or delete a time code. You also can inactivate a time code if the time code is no longer being used. However, if you have Payroll transactions for employees with pay codes linked to time codes, you cannot inactivate these records. An inactive time code cannot be assigned to an employee.
+To modify or delete a time code:
+
+1.	Open the Time Code Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Time Code)
+2.	Enter or select a time code.
+3.	Make your changes in the window as needed, or to inactivate the time code, mark Inactive. Choose Save.
+4.	Choose Delete to delete the time code. If the time code is attached to an employee, this option is not available.
 
 ## See also
 
