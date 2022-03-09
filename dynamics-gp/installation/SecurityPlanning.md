@@ -1800,48 +1800,46 @@ To do accomplish this refer to the following steps:
 
 2. Next, change the SQL Server Reporting Services data sources to use this new login
 
-  1. Native Mode:
+Native Mode:
 
-    1. Log onto your Microsoft SQL Server Reporting Services server as a user who has administrative rights to the Reporting Services
-    2. Open Internet Explorer and navigate to your Report Manager site
-    3. If you are unsure of the URL for your Report Manager site you can click on Start, then All Program, then Microsoft SQL Server 2008 (or 2008 R2), then Configuration Tools and open the Reporting Services Configuration Manager
-    4. Connect to your SQL Reporting Services instance and select the Report Manager URL link on the left to view a link to this site
-      1. Click on the Data Sources folder
-      2. Click on the GPDYNAMICS data source
-      3. In the `Connection string:` section make the following change:
+1. Log onto your Microsoft SQL Server Reporting Services server as a user who has administrative rights to the Reporting Services
+2. Open Internet Explorer and navigate to your Report Manager site
+3. If you are unsure of the URL for your Report Manager site you can click on Start, then All Program, then Microsoft SQL Server 2008 (or 2008 R2), then Configuration Tools and open the Reporting Services Configuration Manager
+4. Connect to your SQL Reporting Services instance and select the Report Manager URL link on the left to view a link to this site
+    1. Click on the Data Sources folder
+    2. Click on the GPDYNAMICS data source
+    3. In the `Connection string:` section make the following change:
 
           |Old text|New text |
           |---------|---------|
           |Integrated Security=True| Integrated Security=False|
-      4. Then, mark Credentials stored securely in the report server
-      5. Provide the user name and password for the SQL Server login you created in Step 1 above
-      6. Click Test Connection to verify your password
-      7. If the test is successful, click Apply
+    4. Then, mark Credentials stored securely in the report server
+    5. Provide the user name and password for the SQL Server login you created in Step 1 above
+    6. Click Test Connection to verify your password
+    7. If the test is successful, click Apply
 
     5. Repeat step 4 for each Dynamics GP company data source as well
 
-  2. SharePoint Integrated Mode
+SharePoint Integrated Mode
 
-    1. Log onto a server or workstation as a user who has administrative rights to your SharePoint Server and Business Portal sites
-    2. In a browser, navigate to your top-level SharePoint Server or SharePoint Foundation site
-    3. Navigate to the folder where you've deployed the Dynamics GP 2010 R2 or later SQL Server Reporting Services reports to
+1. Log onto a server or workstation as a user who has administrative rights to your SharePoint Server and Business Portal sites
+2. In a browser, navigate to your top-level SharePoint Server or SharePoint Foundation site
+3. Navigate to the folder where you've deployed the Dynamics GP 2010 R2 or later SQL Server Reporting Services reports to
 
-        If you are not sure what SharePoint Server or SharePoint Foundation site you deployed the Microsoft Dynamics GP reports to, log into Microsoft Dynamics GP, and click on Microsoft Dynamics GP, then point to Tools, then Setup, then System and click on Reporting Tools Setup.
+    If you are not sure what SharePoint Server or SharePoint Foundation site you deployed the Microsoft Dynamics GP reports to, log into Microsoft Dynamics GP, and click on Microsoft Dynamics GP, then point to Tools, then Setup, then System and click on Reporting Tools Setup.
 
-    4. Click on the Reporting Services tab and note the values of the SharePoint Site and Report Library fields.  If you put these together you'll have the full URL of your SSRS reports in SharePoint
+4. Click on the Reporting Services tab and note the values of the SharePoint Site and Report Library fields.  If you put these together you'll have the full URL of your SSRS reports in SharePoint
+5. Click on the Data Sources folder
+6. Click on the GPDYNAMICS data source
+7. In the `Connection string:` section make the following change:
 
-    5. Click on the Data Sources folder
-    6. Click on the GPDYNAMICS data source
-    7. In the Connection string: section make the following change:
-
-          |Old text|New text |
-          |---------|---------|
-          |Integrated Security=True| Integrated Security=False|
-
-    8. Then, mark Stored credentials
-    9. Provide the user name and password for the SQL Server login you created in Step 1 above
-    10. Click Test Connection to verify your password
-    11. If the test is successful, click OK
+    |Old text|New text |
+    |---------|---------|
+    |Integrated Security=True| Integrated Security=False|
+8. Then, mark Stored credentials
+9. Provide the user name and password for the SQL Server login you created in Step 1 above
+10. Click Test Connection to verify your password
+11. If the test is successful, click OK
 
 12. Repeat steps 4-11 for each Microsoft Dynamics GP company data source as well
 
@@ -1895,7 +1893,7 @@ In order to configure Kerberos delegation you need to go through the following s
 
         Once you've added these items click OK twice to save the change.
 
-3.    The final step is to enable delegation for each of the service account.
+3. The final step is to enable delegation for each of the service account.
 
     1. On the domain controller click on Start, then Administrative Tools and click on Active Directory Users and Computers.
     2. Click on the Users folder so you can see your service accounts.

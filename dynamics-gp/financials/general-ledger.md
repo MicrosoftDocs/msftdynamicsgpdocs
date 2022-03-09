@@ -1649,7 +1649,7 @@ Select a segment for sorting the accounts. Enter or select the starting and endi
 
 Choose Next to open the Account Verification window.
 
-    ![screenshot](media/glage077.jpg)
+   ![screenshot](media/glage077.jpg)
 
 15. Mark the accounts to include in the budget. All accounts will be marked, but you can clear the option for any account to exclude it from the budget.
 

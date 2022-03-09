@@ -195,9 +195,9 @@ If the currency ID is not the company's functional currency, a rate type and ass
 
 11.  Enter or select the number of the vendor item or item you're purchasing. If a vendor item or an item hasn't been set up in your inventory, see *Adding a vendor item*, *Adding an item to inventory*, or *Using non-inventoried items* for more information.
 
-    - The item number will be displayed if Options \>\> Display Vendor Item is unmarked. If Display Vendor Item is marked, the vendor item will be displayed.
+- The item number will be displayed if Options \>\> Display Vendor Item is unmarked. If Display Vendor Item is marked, the vendor item will be displayed.
 
-    - To indicate that an item must be a specific manufacturer's item, choose the Manufacturer's Item Number expansion button to open the Purchasing Manufacturer's Item Number Entry window. See *Specifying the manufacturer's item numbers to print on a purchase order* for more information.
+- To indicate that an item must be a specific manufacturer's item, choose the Manufacturer's Item Number expansion button to open the Purchasing Manufacturer's Item Number Entry window. See *Specifying the manufacturer's item numbers to print on a purchase order* for more information.
 
 - To view or enter additional information for a vendor item, item, or noninventoried item, open the Purchasing Item Detail Entry window by choosing Item or Vendor Item expansion button. For more information, see *Entering line item detail information*.
 
@@ -381,9 +381,9 @@ The Link Purchase Order icon will be displayed in the Quantity Ordered field for
 
 10.  Enter or select the number of the vendor item or item you're purchasing that will be the control blanket line item. If a vendor item or an item hasn't been set up in your inventory, see *Adding a vendor item*, *Adding an item to inventory*, or *Using non-inventoried items* for more information.
 
-    - The item number will be displayed if Options \>\> Display Vendor Item is unmarked. If Display Vendor Item is marked, the vendor item will be displayed.
+- The item number will be displayed if Options \>\> Display Vendor Item is unmarked. If Display Vendor Item is marked, the vendor item will be displayed.
 
-    - To indicate that an item must be a specific manufacturer's item, choose the Manufacturer's Item Number expansion button to open the Purchasing Manufacturer's Item Number Entry window. See *Specifying the manufacturer's item numbers to print on a purchase order* for more information.
+- To indicate that an item must be a specific manufacturer's item, choose the Manufacturer's Item Number expansion button to open the Purchasing Manufacturer's Item Number Entry window. See *Specifying the manufacturer's item numbers to print on a purchase order* for more information.
 
 - To add an attachment to the item, select the item and choose the Attachment Management icon to open the Document Attachment Management window.
 
