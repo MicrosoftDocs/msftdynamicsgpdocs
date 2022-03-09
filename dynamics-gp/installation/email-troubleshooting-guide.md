@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 2/28/2022
+ms.date: 3/9/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -38,7 +38,7 @@ Review the below blogs for workarounds if you are on an older version of Microso
 [**Other emails intermittently fail**](https://community.dynamics.com/gp/b/dynamicsgp/posts/emails-intermittent-failing-when-sending-out-of-dynamics-gp-not-workflow-emails)
 
 
-All email issues can be safely split up into three sets of issues:
+All email issues can be safely split up into the following set of categories:
 
 * [Issues unique to MAPI](#mapispecificerrors) 
 * [Issues unique to Exchange](#exchangespecificerrors)
