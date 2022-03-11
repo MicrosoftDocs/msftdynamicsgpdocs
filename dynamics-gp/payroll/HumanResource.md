@@ -435,7 +435,7 @@ Use the Attendance Setup window to specify if your company accrues benefit time 
 
 If you mark the Update Vacation Calendar option, an entry appears in the calendar for each benefit or absent time code transaction. Any absences that are created if this option is marked will appear in the Attendance Transaction Entry window. Absence transactions that are created when this option is not marked will appear in the Absence Entry window.
 
-![the User Setup window](media/ATTDSETUP34.jpg)
+![the User Setup window 1](media/ATTDSETUP34.jpg)
 
 To set up attendance:
 
@@ -556,7 +556,7 @@ To set up an accrual schedule:
 4.	In the Attendance Setup window, you selected to base seniority on months or days. In the Seniority column, enter the number of months or days of seniority an employee must have to be eligible for the accrual.
 5.	Enter or select an accrual code in the Accrual column. Press TAB to display information in remaining columns and choose Save
 
-![the User Setup window](media/ACCRUASECH45.jpg)
+![the User Setup window 2](media/ACCRUASECH45.jpg)
 
 **Modifying or deleting an accrual schedule**
 Use the Accrual Schedule Setup window to modify or delete an accrual schedule. You can modify an accrual schedule to include changes, such as adding an accrual to an existing schedule.
