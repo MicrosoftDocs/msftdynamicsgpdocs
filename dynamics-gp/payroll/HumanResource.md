@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 3/8/2022
+ms.date: 3/10/2022
 ---
 # Human Resources in Microsoft Dynamics GP
 
@@ -435,6 +435,8 @@ Use the Attendance Setup window to specify if your company accrues benefit time 
 
 If you mark the Update Vacation Calendar option, an entry appears in the calendar for each benefit or absent time code transaction. Any absences that are created if this option is marked will appear in the Attendance Transaction Entry window. Absence transactions that are created when this option is not marked will appear in the Absence Entry window.
 
+![the User Setup window 1](media/ATTDSETUP34.jpg)
+
 To set up attendance:
 
 1. Open the Attendance Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Setup)
@@ -554,6 +556,8 @@ To set up an accrual schedule:
 4.	In the Attendance Setup window, you selected to base seniority on months or days. In the Seniority column, enter the number of months or days of seniority an employee must have to be eligible for the accrual.
 5.	Enter or select an accrual code in the Accrual column. Press TAB to display information in remaining columns and choose Save
 
+![the User Setup window 2](media/ACCRUASECH45.jpg)
+
 **Modifying or deleting an accrual schedule**
 Use the Accrual Schedule Setup window to modify or delete an accrual schedule. You can modify an accrual schedule to include changes, such as adding an accrual to an existing schedule.
 To modify or delete an accrual schedule:
@@ -614,6 +618,116 @@ To modify or delete a time code:
 2.	Enter or select a time code.
 3.	Make your changes in the window as needed, or to inactivate the time code, mark Inactive. Choose Save.
 4.	Choose Delete to delete the time code. If the time code is attached to an employee, this option is not available.
+
+## Benefit Setup
+
+Before you set up the benefits that your company provides for employees, you must define benefit preferences. You will use benefit preferences to define a standard work week and work day for your organization, select a Family and Medical Leave Act (FMLA) year and select a method for tracking FMLA and Consolidated Omnibus Reconciliation Act (COBRA) payments. 
+
+Use the following tips:
+•	Human Resources includes deductions as options within the benefit setup windows. Therefore, all types of Human Resources benefits may funded by the employer, the employee, or both. Garnishments, though they are deductions, are set up in Human Resources as a type of miscellaneous benefit. U.S. Payroll, however, uses separate windows to set up benefits and deductions.
+•	Benefits can be taxable, that is, the employee can be taxed on the value of the benefit received. Benefits can be calculated from net or gross pay or a deduction, as an amount per unit or as a fixed amount. Examples of benefits include insurance premiums and 401(k) matching contributions.
+•	A deduction is an amount that is withheld from an employee’s net, unit or gross pay. For example, a donation to a charity, union dues and contributions to retirement plans could be set up as deductions.
+•	You can set up default benefit and deduction cards and use them for setting up employee benefits and deductions. These cards also can be used to apply changes to several employees’ benefit and deduction cards.
+•	If you’re using U.S. Payroll and you choose the Automatically Update Payroll Benefits and Deductions option in the Benefit Preferences window, the benefit modifications you make using Human Resources will automatically update the corresponding information in Payroll.
+•	If you’ve marked the Payroll View for Human Resources option in the User Setup window, a message will appear to indicate that you must set up the corresponding codes in Payroll after you’ve defined the benefit or deduction in Human Resources to complete the integration.
+•	If you didn’t mark the Payroll View for Human Resources option in the User Setup window, or you set up the benefit or deduction in Payroll, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups.
+
+**Granting Payroll view access to a user**
+
+Use the User Setup window to grant Payroll view access to a Human Resources user, where U.S. Payroll is, or is being, set up. You must mark the Payroll View for Human Resources option to completely set up Human Resources benefit or deduction codes and the corresponding Payroll codes.
+
+If you don’t mark the Payroll View for Human Resources option in the User Setup window, the benefit enrollment will be incomplete. The benefit enrollment also will be incomplete if you set up the benefit or deduction in Payroll. To update benefit setups, use the Reconcile Human Resources window. 
+
+To grant Payroll view access to a user:
+1.	Open the User Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> System >> User >> enter system password)
+2.	Enter or select a User ID.
+3.	Mark the Payroll View for Human Resources option and choose Save.
+Repeat for every user who will enter or update benefit information in Human Resources.
+
+![the benefit setup](media/HRBENSETUP26.jpg)
+
+**Setting up benefit preferences**
+
+Use the Benefit Preferences window to set up benefit preferences. You can specify FMLA preferences, such as the 12-month period used by your company to calculate FMLA benefits and your company’s down days. You also can determine the prompts that will be available to users for posting specific benefits dates to the To Do list.
+
+To set up benefit preferences: 
+1.	Open the Benefit Preferences window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Benefit Preferences)
+2.	Mark Never, Always, or Ask Each Time to prompt the user for posting the FMLA return date and the payment dates to the To Do List.
+3.	Choose Set FMLA 12-month Period to open the Setting FMLA 12-Month Period window. Mark the method used to calculate the FMLA 12-month period.
+If you change the FMLA 12-month period, you’ll need to delete all of the employees’ previous leave instances and enter them again or the FMLA benefits won’t be calculated correctly.
+4.	Choose Save. The Benefit Preferences window will be displayed.
+5.	Choose FMLA Calendar to open the FMLA Calendar window. Mark None, 
+Sundays Only, or Saturdays and Sundays to indicate your company-wide “down days.”
+6.	Select individual calendar days to designate specific days as down days. Down days include weekends and holidays which are not counted as part of an FMLA leave. A message will appear to indicate that changing this selection will affect all employees’ FMLA leave. Choose Yes to continue.
+7.	Choose OK. The Benefit Preferences window will be displayed.
+8.	Accept the default number of working days in a week or the number of hours in a work day, or choose Override to make changes. The default numbers are defined in the Attendance Setup window. Refer to Setting up attendance on page 55.
+9.	Mark Never, Always, or Ask Each Time to prompt the user for posting the eligibility date and the paperwork deadline dates to the To Do list.
+10.	Mark the Automatically Update Payroll Benefits & Deductions option to update payroll benefit and deduction records without displaying integration messages.
+11.	Choose COBRA Preferences to open the COBRA Preferences window. Mark Never, Always, or Ask Each Time to prompt the user for posting the COBRA payment dates and the coverage end date to the To Do list.
+12.	Choose OK. The Benefit Preferences window will be displayed.  Choose OK to save.
+
+Once benefit preferences are established for FMLA, they should not be changed. If they are, all entries will need to be entered again or FMLA benefits won’t be calculated correctly.
+
+![The Benefit Preferences](media/HRUSERSETUPFILL5.jpg)
+
+
+**Setting up miscellaneous benefits and garnishments**
+
+Use the Miscellaneous Benefits Setup window to set up benefits, deductions, and combinations of both. For example, a parking allowance might be a benefit, union dues might be a deduction, and a donation to a charity with matching funds from the employer might be both a benefit and a deduction.
+
+To set up a miscellaneous benefit:
+1.	Open the Miscellaneous Benefits Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Miscellaneous Benefits)
+2.	Enter an account name and description and select a frequency.
+3.	Enter or select a group or agency with which the miscellaneous benefit is affiliated. If a company isn’t listed, select Affiliation and add the benefit carrier’s contact information in the Card Catalog window.
+4.	Enter the beginning date and the ending date for the miscellaneous benefit. If it’s a continuous plan, leave the ending field blank.
+5.	Mark Employee if the employee will contribute to the miscellaneous benefit. Select a method and mark single deduction tier or multiple tiers. If you mark a single amount or percent, enter an amount or percent. If you mark multiple tiers, choose Tiers to open the Tiered Deduction Setup window, where you can enter tiered deductions.
+Enter deduction maximums. You can enter the maximum amount an employee can have deducted each pay period, each calendar year, each fiscal year, and for the entire time the employee works for your company.
+6.	Mark Employer if the employer will contribute to the miscellaneous benefit. Select a method and mark a single deduction tier or multiple tiers. If you mark a single amount or percent, enter an amount or percent. If you mark multiple tiers, choose Tiers to open the Tiered Deduction Setup window, where you can enter tiered deductions.
+Enter benefit maximums. You can enter the maximum amount an employer can have deducted each pay period, each calendar year, each fiscal year, and for the entire time the employee works for your company.
+•	If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources option in the User Setup window, you’ll be prompted to set up the corresponding account codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter contribution amounts, you will not be prompted to set up the corresponding account codes in Payroll. However, you will need to set them up before you can enroll an employee in the miscellaneous benefit. To set up in Payroll, re-select the miscellaneous benefit, choose the Benefits button in the upper, right corner of the Miscellaneous Benefits Setup window, and select Payroll.
+
+To set up a miscellaneous benefit as a garnishment:
+1.	Open the Miscellaneous Benefits Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Miscellaneous Benefits)
+2.	Enter an account name and description, and select a frequency.
+3.	Enter or select the garnishment recipient in the Affiliation field. If a recipient is not listed, choose the Affiliation link and add the recipient’s contact information in the Card Catalog window.
+4.	Mark Garnishment.
+5.	Mark Employee.
+6.	Select the method of calculating the garnishment amount. The Amount Per Unit method is not permitted for garnishments.
+
+Setting up a copayment record
+
+Use the CoPay Setup window to define copayment codes for benefits within your company. A copayment is the amount of money that must be paid by an employee. For example, a health insurance benefit might have a $10 copayment.
+To set up a copayment record:
+1.	Open the CoPay Setup window.   (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> CoPay)
+2.	Enter a copayment code and description. 
+3.	Enter the amount of the copayment.
+
+Setting up a health insurance coverage type
+
+Use the Health Coverage Types Entry window to set up health insurance benefits and other insurance coverage types. Health insurance benefits can include medical insurance, dental insurance, and vision insurance. You can define coverage types by the coverage provided, such as health employee, health employee plus one, health employee family, dental employee, and so on.
+To set up a health insurance coverage type:
+1.	Open the Health Coverage Type Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Health Coverage Type)
+2.	Enter a coverage type code and description.
+
+**Setting up a health insurance benefit**
+
+Use the Health Insurance Setup window to enter and maintain health insurance benefit records. The plans set up in this window can be used as default entries for setting up employee benefits. They also can be used to apply changes to employee benefit cards and can be included in employee classes. Health insurance benefits can include medical insurance, dental insurance and vision insurance.
+
+To set up a health insurance benefit:
+1.	Open the Health Insurance Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Health Insurance)
+2.	Enter a benefit code and a description of the benefit.
+3.	Select a frequency and enter or select a benefit carrier, such as the name of the insurance company. If a company isn’t listed, choose Carrier and add the benefit carrier in the Card Catalog window.
+4.	Enter the group number of the plan and the maximum age to enter the plan for an employee and an employee’s dependent.
+5.	Enter the number of days an employee must work for the company before he or she is eligible for health insurance benefits in the Waiting Period field.
+6.	Enter or select a type of coverage.
+7.	Enter the employee and employer amounts, the deductible, COBRA premium and maximum benefit amounts.
+8.	Enter the percentage of the costs that the major medical benefits will cover in the Major Medical Coverage field.
+9.	Enter the maximum out-of-pocket expense the employee must pay in the Maximum Out-of-Pocket field. For example, if the major medical insurance will cover 80 percent of expenses until the employee’s paid $5,000 and then the major medical insurance will cover 100 percent, enter 80% in the Major Medical Coverage field and $5,000 in the Max. Out-of-Pocket field.
+10.	Select a copayment code and enter a copayment amount or accept the default amount.
+•	If you’ve entered amounts for your Employee or Employer fields and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter amounts for both the Employee and Employer fields, the corresponding codes will not have to be completed in Payroll.
+
 
 ## See also
 
