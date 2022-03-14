@@ -1061,7 +1061,7 @@ Open the Stock Calendar Maintenance window.
 
 (Inventory \>\> Setup \>\> Stock Calendar)
 
-![14699085d48228ae2aa7849da57f610b.jpg](media/14699085d48228ae2aa7849da57f610b.jpg)
+![Screenshot of Stock Calendar Maintenance window.](media/14699085d48228ae2aa7849da57f610b.jpg)
 
 The window opens with the current month and year displayed.
 
@@ -1279,7 +1279,7 @@ You can use the Copy button in the Item Maintenance window to create a new inven
 
 2. In the New group, choose Item to open the Item Maintenance window.
 
-    ![09fc580c4ab7ac00490b3a80d3b5a458.jpg](media/09fc580c4ab7ac00490b3a80d3b5a458.jpg)
+    ![Screenshot of Item Maintenance window.](media/09fc580c4ab7ac00490b3a80d3b5a458.jpg)
 
 3. Enter an alphanumeric item number. You can't change the item number after the item number has been saved. To change the item number, you must delete the item and reenter it.
 
@@ -1380,7 +1380,7 @@ Use the Internet Information window to track Internet-related information about 
 
 3. Choose the Internet information icon in the Description field to open the Internet Information window.
 
-    ![6bc7a94aa645001ae71f017acc5d43fa.jpg](media/6bc7a94aa645001ae71f017acc5d43fa.jpg)
+    ![Screenshot of the Internet Information window.](media/6bc7a94aa645001ae71f017acc5d43fa.jpg)
 
 4. Enter Internet information for the item.
 
@@ -1416,7 +1416,7 @@ Use the Item Maintenance Options window to enter additional information about it
 
     Choose Options to open the Item Maintenance Options window.
 
-    ![a0feba184b1823410e608c9d6559c902.jpg](media/a0feba184b1823410e608c9d6559c902.jpg)
+    ![Screenshot of the Item Maintenance Options window.](media/a0feba184b1823410e608c9d6559c902.jpg)
 
 3. Enter or select up to two substitutes for the item. The substitutes are suggested replacements for the item.
 
@@ -1466,7 +1466,7 @@ Use the Item Serial/Lot Number Definition window to set up serial number masks f
 
     Choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-    ![3183fe81593268fac38bb351ca10cb3b.jpg](media/3183fe81593268fac38bb351ca10cb3b.jpg)
+    ![Screenshot of the Item Serial/Lot Number Definition window.](media/3183fe81593268fac38bb351ca10cb3b.jpg)
 
     *You also can open this window by clicking the Serial Number Mask field label in the Purchasing Serial Number Entry window.*
 
@@ -1514,7 +1514,7 @@ You also can enter a lot split quantity, which is the breakpoint for creating se
 
     Choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-    ![34d88e83dca8bbcf180372ebf2d25dd8.jpg](media/34d88e83dca8bbcf180372ebf2d25dd8.jpg)
+    ![Screenshot of the Item Serial/Lot Number Definition window used to define a lot number mask.](media/34d88e83dca8bbcf180372ebf2d25dd8.jpg)
 
 *You also can open this window by clicking the Lot Number Mask field label in the Purchasing Lot Number Entry window.*
 
@@ -1564,7 +1564,7 @@ If you don't enter posting accounts in the Item Account Maintenance window, the 
 
     Choose Accounts to open the Item Account Maintenance window.
 
-    ![276ea12842fee082251a00651260a51e.jpg(media/276ea12842fee082251a00651260a51e.jpg)
+    ![Screenshot of the Item Account Maintenance window.](media/276ea12842fee082251a00651260a51e.jpg)
 
 3. Review the default accounts. You can accept or change each default account.
 
@@ -1608,7 +1608,7 @@ Use the Item Currency Maintenance window to assign each currency to the items yo
 
 1. Open the Item Currency Maintenance window. (Inventory \>\> Cards \>\> Item Currency)
 
-    ![4b12d7ecd939eb30621c23077a7a1192.jpg](media/4b12d7ecd939eb30621c23077a7a1192.jpg)
+    ![Screenshot of Item Currency Maintenance window used to assign a currency to an item.](media/4b12d7ecd939eb30621c23077a7a1192.jpg)
 
 2. Enter or select an item number.
 
@@ -1644,7 +1644,7 @@ Use the Item Print Option Preview window to change the item print option that yo
 
 1. Open the Override Item Print Option window. (Inventory \>\> Cards \>\> Modify Item Print Option)
 
-    ![cbaec99aef569be29fdaee941a41432b.jpg](media/cbaec99aef569be29fdaee941a41432b.jpg)
+    ![Screenshot of Override Item Print Option window.](media/cbaec99aef569be29fdaee941a41432b.jpg)
 
 2. Enter or select a site ID.
 
@@ -1656,7 +1656,7 @@ Use the Item Print Option Preview window to change the item print option that yo
 
 4. Choose Preview to open the Item Print Option Preview window and view the records that match your criteria.
 
-    ![ecef106c3a9be73d591d27df447c1eb9.jpg](media/ecef106c3a9be73d591d27df447c1eb9.jpg)
+    ![Screenshot of Item Print Option Preview window used to view records.](media/ecef106c3a9be73d591d27df447c1eb9.jpg)
 
     The printing option for the item will be saved with the item record as displayed.
 
@@ -2032,7 +2032,7 @@ Use the Item Price List Maintenance window to create a price list for an item.
 
 1. Open the Item Price List Maintenance window. (Inventory \>\> Cards \>\> Price List)
 
-    ![fff05db34a27f7737c20c6d164ef8486.jpg](media/fff05db34a27f7737c20c6d164ef8486.jpg)
+    ![Screenshot of Item Price List Maintenance window used to create a price list.](media/fff05db34a27f7737c20c6d164ef8486.jpg)
 
 2. Enter or select an item number.
 
@@ -2161,7 +2161,7 @@ Use the Item Price List Options Maintenance window to specify rounding options a
 
 3. Choose Options to open the Item Price List Options Maintenance window.
 
-    ![41be94db8d9e52249802460234bf2b8d.jpg](media/41be94db8d9e52249802460234bf2b8d.jpg)
+    ![Screenshot of Item Price List Options Maintenance window used to specify price list options. ](media/41be94db8d9e52249802460234bf2b8d.jpg)
 
     Each record in the scrolling window represents a combination of a currency (if you're using Multicurrency Management), price level, unit of measure and pricing—also known as a price list record.
 
