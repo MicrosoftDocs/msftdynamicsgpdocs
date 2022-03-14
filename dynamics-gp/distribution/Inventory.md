@@ -2265,7 +2265,7 @@ When you copy a price list to a destination item, any existing price list for th
 
 3. Choose Copy to open the Item Price List Copy Maintenance window.
 
-    ![b3fc5db7a86cd78a4d979490fd52bc87.jpg)](media/b3fc5db7a86cd78a4d979490fd52bc87.jpg)
+    ![Screenshot of Price List Copy Maintenance window used to copy price list.](media/b3fc5db7a86cd78a4d979490fd52bc87.jpg)
 
 4. Enter or select a Source Item Number—the item number that has the price list you want to copy.
 
@@ -2416,7 +2416,7 @@ Price groups and individual item prices can be combined to create price sheets. 
 
 1. Open the Price Group Maintenance window.(Inventory \>\> Cards \>\> Extended Pricing \>\> Price Groups)
 
-    ![759d38cbefedc5deb3e64f3340a2134a.jpg](media/759d38cbefedc5deb3e64f3340a2134a.jpg)
+    ![Screenshot of Price Group Maintenance window.](media/759d38cbefedc5deb3e64f3340a2134a.jpg)
 
 2. Enter or select a price group ID.
 
@@ -2448,7 +2448,7 @@ To be assigned to a price group, the quantity decimals and currency decimals of 
 
 1. Open the Price Group Assignment window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Group Assignment)
 
-    ![9470e2c54daa32543957a1445ebd54f2.jpg](media/9470e2c54daa32543957a1445ebd54f2.jpg)
+    ![Screenshot of Price Group Assignment window.](media/9470e2c54daa32543957a1445ebd54f2.jpg)
 
 2. Enter or select an item number.
 
@@ -2466,7 +2466,7 @@ Use the Price Group Items Maintenance window to assign multiple items to a price
 
 1. Open the Price Group Items Maintenance window.(Inventory \>\> Cards \>\> Extended Pricing \>\> Group Items)
 
-    ![9edc702fad3c020892e76b006d557297.jpg](media/9edc702fad3c020892e76b006d557297.jpg)
+    ![Screenshot of Price Group Items Maintenance window used to assign multiple items to a price group.](media/9edc702fad3c020892e76b006d557297.jpg)
 
 2. Enter or select a price group ID.
 
@@ -2492,7 +2492,7 @@ Use the Price Group Item Ranges window to assign a range of items to a price gro
 
 3. Choose Ranges to open the Price Group Item Ranges window.
 
-    ![d3bd62eefeea5908be97318cfbd42092.jpg](media/d3bd62eefeea5908be97318cfbd42092.jpg)
+    ![Screenshot of Price Group Item Ranges window.](media/d3bd62eefeea5908be97318cfbd42092.jpg)
 
 4. Enter or select the item numbers, generic descriptions, and class IDs to assign to the price group.
 
@@ -2541,7 +2541,7 @@ If you don't set up a price sheet for a particular currency, the price of the it
 
 1. Open the Price Sheet Maintenance window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Price Sheets)
 
-    ![153e182c6f7287af8c711d7f7b31ebf5.jpg](media/153e182c6f7287af8c711d7f7b31ebf5.jpg)
+    ![Screenshot of Price Sheet Maintenance window.](media/153e182c6f7287af8c711d7f7b31ebf5.jpg)
 
 2. Enter or select a price sheet ID and description.
 
@@ -2605,7 +2605,7 @@ Use the Price Sheet Detail Maintenance window to set up net price, percentage of
 
 3. Highlight an item or price group in the scrolling window and choose the Item Number/Price Group ID expansion button to open the Price Sheet Detail Maintenance window.
 
-    ![8249947d72b48ab082591d0ff994c1e7.jpg](media/8249947d72b48ab082591d0ff994c1e7.jpg)
+    ![Screenshot of Price Sheet Maintenance window.](media/8249947d72b48ab082591d0ff994c1e7.jpg)
 
     The item or price group you selected in the Price Sheet Maintenance window will be displayed.
 
@@ -2681,7 +2681,7 @@ This procedure assumes that you're setting up a price sheet that is a promotion,
 
 1. Open the Price Sheet Assign Free Item window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Price Sheets \>\> Item Number/ Price Group ID expansion button \>\> Quantity Free expansion button)
 
-    ![4c31fdb794e12c8a6023c83caaad9481.jpg](media/4c31fdb794e12c8a6023c83caaad9481.jpg)
+    ![Screenshot of Price Sheet Assign Free Item window.](media/4c31fdb794e12c8a6023c83caaad9481.jpg)
 
 2. Enter or select the Free Item Number, the item to be given away with the promotion.
 
@@ -2759,7 +2759,7 @@ Use the Price Book Maintenance window to create price books and to assign price 
 
 1. Open the Price Book Maintenance window.(Inventory \>\> Cards \>\> Extended Pricing \>\> Price Books)
 
-    ![9f861346ed1fedb8473666fadf133b3a.jpg](media/9f861346ed1fedb8473666fadf133b3a.jpg)
+    ![Screenshot of Price Book Maintenance window.](media/9f861346ed1fedb8473666fadf133b3a.jpg)
 
 2. Enter or select a price book ID.
 
@@ -2783,7 +2783,7 @@ You can use the Price Sheet Assignment window to assign price sheets to price bo
 
 1. Open the Price Sheet Assignment window.(Inventory \>\> Cards \>\> Extended Pricing \>\> Sheet Assignment)
 
-    ![6f4d2b500d7192d4e42aec267f9a855e.jpg](media/6f4d2b500d7192d4e42aec267f9a855e.jpg)
+    ![Screenshot of Price Sheet Assignment window.](media/6f4d2b500d7192d4e42aec267f9a855e.jpg)
 
 2. Enter or select a price sheet ID.
 
@@ -2809,7 +2809,7 @@ Use the Price Sheet Assignment Ranges window to assign a price sheet to a range 
 
 3. Choose Ranges to open the Price Sheet Assignment Ranges window.
 
-    ![29f27610ca0ed67a479946aa595e5105.jpg](media/29f27610ca0ed67a479946aa595e5105.jpg)
+    ![Screenshot of Price Sheet Assignment Ranges window.](media/29f27610ca0ed67a479946aa595e5105.jpg)
 
 4. Mark Price Books, Customers, or Prospects, depending on the type or record you want to assign the price sheet to.
 
@@ -2833,7 +2833,7 @@ If you're using Multicurrency Management, you can assign price sheets with diffe
 
 1. Open the Customer Pricing Maintenance window or the Prospect Pricing Maintenance window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Customer Pricing or Prospect Pricing)
 
-    ![b1550ab479666301b12413a2e1bf716c.jpg](media/b1550ab479666301b12413a2e1bf716c.jpg)
+    ![Screenshot of Customer Pricing Maintenance window.](media/b1550ab479666301b12413a2e1bf716c.jpg)
 
 2. Enter or select a customer ID or prospect ID.
 
@@ -2853,7 +2853,7 @@ Use the Price Book Assignment window to assign a price book ID to multiple custo
 
 1. Open the Price Book Assignment window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Book Assignment)
 
-    ![0ba36deafa7be81c75ce7b9d0e21b114.jpg](media/0ba36deafa7be81c75ce7b9d0e21b114.jpg)
+    ![Screenshot of Price Book Assignment window used to assign a price book.](media/0ba36deafa7be81c75ce7b9d0e21b114.jpg)
 
 2. Enter or select a price book ID.
 
@@ -2879,7 +2879,7 @@ Use the Price Book Assignment Ranges window to assign a price book to a range of
 
 3. Select Ranges to open the Price Book Assignment Ranges window.
 
-    ![cad4543eb32fa16460f8201a11227186.jpg](media/cad4543eb32fa16460f8201a11227186.jpg)
+    ![Screenshot of Price Book Assignment Ranges window.](media/cad4543eb32fa16460f8201a11227186.jpg)
 
 4. Mark Customers or Prospects.
 
@@ -2969,7 +2969,7 @@ Use the Manufacturer's Item Number Maintenance window to enter item numbers that
 
 2. Enter or select an sales inventory or discontinued item and choose the Manufacturer's Item Number expansion button.
 
-    ![9b331c7e7859343abb6336ed58cf0dfc.jpg](media/9b331c7e7859343abb6336ed58cf0dfc.jpg)
+    ![Screenshot of Item Purchasing Options Maintenance window.](media/9b331c7e7859343abb6336ed58cf0dfc.jpg)
 
 3. Enter the name of the manufacturer, the manufacturer's item number, and a description of the item.
 
@@ -3001,7 +3001,7 @@ If you're using Purchasing Order Processing, several fields automatically will b
 
 1. Open the Item Vendors Maintenance window. (Inventory \>\> Cards \>\> Vendors)
 
-    ![ee450ac66f11970c09ca0263cace5b32.jpg)](media/ee450ac66f11970c09ca0263cace5b32.jpg)
+    ![Screenshot of Item Vendors Maintenance window.](media/ee450ac66f11970c09ca0263cace5b32.jpg)
 
 2. Enter or select an item number.
 
@@ -3102,7 +3102,7 @@ Use the Planner Maintenance window to create a planner ID. You can create as man
 
 1. Open the Planner Maintenance window. (Inventory \>\> Cards \>\> Planners)
 
-    ![eeb2ad633e2fea2658fe7f9af7706799.jpg](media/eeb2ad633e2fea2658fe7f9af7706799.jpg)
+    ![Screenshot of Planner Maintenance window.](media/eeb2ad633e2fea2658fe7f9af7706799.jpg)
 
 2. Enter a planner ID.
 
@@ -3218,7 +3218,7 @@ You must define at least one site. Use the Site Maintenance window to complete t
 
 1. Open the Site Maintenance window. (Inventory \>\> Cards \>\> Site)
 
-    ![dc46c013c9dbff3da5f504f0add1ed2a.jpg](media/dc46c013c9dbff3da5f504f0add1ed2a.jpg)
+    ![Screenshot of Site Maintenance window.](media/dc46c013c9dbff3da5f504f0add1ed2a.jpg)
 
 2. Enter an identifier and a brief description for the site.
 
@@ -3257,7 +3257,7 @@ You can define as many bins for each site as necessary. Later, you can transfer 
 
 1. Open the Site Bin Maintenance window. (Inventory \>\> Cards \>\> Bins/Site)
 
-    ![7e5c68a1b433917cfb9da448f35af3ba.jpg](media/7e5c68a1b433917cfb9da448f35af3ba.jpg)
+    ![Screenshot of Site Bin Maintenance window.](media/7e5c68a1b433917cfb9da448f35af3ba.jpg)
 
     *You also can open the window by choosing Site Bin Maintenance from the Go To button in the Site Maintenance window.*
 
@@ -3291,7 +3291,7 @@ You can use the Site Default Bins window to specify the default bins for a site.
 
 3. Choose Bins to open the Site Default Bins window.
 
-    ![154062169512ff5309044b25eb1822b0.jpg](media/154062169512ff5309044b25eb1822b0.jpg)
+    ![Screenshot of Site Default Bins window.](media/154062169512ff5309044b25eb1822b0.jpg)
 
 4. Enter or select a bin for each type of transaction.
 
@@ -3327,7 +3327,7 @@ Use the Item Site Assignment window to assign items to a site. Each item must be
 
 3. Choose Assign to open the Item Site Assignments window.
 
-    ![3d3477914668200ea39f5e8bccff134b.jpg](media/3d3477914668200ea39f5e8bccff134b.jpg)
+    ![Screenshot of Item Site Assignments window.](media/3d3477914668200ea39f5e8bccff134b.jpg)
 
 4. Specify which items should be assigned to the site. For example, you can choose to have only the items in certain item classes assigned to the site.
 
@@ -3359,13 +3359,13 @@ If you're using Invoicing or Sales Order Processing, history information for Inv
 
 1. Open the Inventory Batch Entry window. (Inventory \>\> Transactions \>\> Batches)
 
-    ![18694fbb93342c2d9d4ca5ea945758f7.jpg](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
+    ![Screenshot of Inventory Batch Entry window.](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
 
 2. Enter an identifier and brief description for the batch, and from the Origin list, choose Transaction entry. Then unmark the Post to General Ledger option so any transactions that have been accounted for in General Ledger won't be duplicated.
 
 3. Choose Transactions to open the Item Transaction Entry window.
 
-    ![30240561ca150826302ea019631b2128.jpg](media/30240561ca150826302ea019631b2128.jpg)
+    ![Screenshot of Item Transaction Entry window.](media/30240561ca150826302ea019631b2128.jpg)
 
 4. From the Document Type list, choose Adjustment.
 
@@ -3422,7 +3422,7 @@ If you enter an adjustment transaction to specify the beginning quantities of an
 
 2. Enter an adjustment transaction for an item tracked by lot numbers. Choose Serial/Lot to open the Item Lot Number Entry window.
 
-    ![3b422855ccd819ac69012d787cc6e964.jpg](media/3b422855ccd819ac69012d787cc6e964.jpg)
+    ![Screenshot of Item Lot Number Entry window.](media/3b422855ccd819ac69012d787cc6e964.jpg)
 
     The window also will open automatically when you move out of the transaction line.
 
@@ -3430,7 +3430,7 @@ If you enter an adjustment transaction to specify the beginning quantities of an
 
 4. You can choose the expansion button on the Lot Number field to open the Lot Attribute Entry window to enter a manufactured date and an expiration date. If you're using lot categories, enter lot attribute information. When you have finished entering information, choose OK to close the window and return to the Item Lot Number Entry window.
 
-    ![15f4081baf23e8b8e92e6898843c7c02.jpg](media/15f4081baf23e8b8e92e6898843c7c02.jpg)
+    ![Screenshot of Lot Attribute Entry window.](media/15f4081baf23e8b8e92e6898843c7c02.jpg)
 
 5. Enter quantity information.
 
@@ -3455,7 +3455,7 @@ If you enter an adjustment transaction to specify the beginning quantities of an
 
 2. Enter an adjustment transaction for an item tracked by serial numbers. Choose Serial/Lot to open the Item Serial Number Entry window.
 
-    ![eaee372bf3b6b75ebe6477a8e701ee8f.jpg](media/eaee372bf3b6b75ebe6477a8e701ee8f.jpg)
+    ![Screenshot of Item Serial Number Entry window used to specify serial numbers for inventory control.](media/eaee372bf3b6b75ebe6477a8e701ee8f.jpg)
 
     The window also will open automatically when you move out of the transaction line.
 
@@ -3482,7 +3482,7 @@ If you're entering beginning quantities and you're using multiple bins, you'll n
 
 2. Enter an adjustment transaction for an item that is not tracked by lot or serial numbers. Choose Bins to open the Bin Quantity Entry window.
 
-    ![4c03f8a6c0d60cb7ea4a52396d21bf0b.jpg](media/4c03f8a6c0d60cb7ea4a52396d21bf0b.jpg)
+    ![Screenshot of Bin Quantity Entry window.](media/4c03f8a6c0d60cb7ea4a52396d21bf0b.jpg)
 
     The window also will open automatically when you move out of the transaction line.
 
@@ -3642,7 +3642,7 @@ Use the Item Quantities Maintenance window to enter all-site information for an 
 
 1. Open the Item Quantities Maintenance window. (Inventory \>\> Cards \>\> Quantities/Sites)
 
-    ![9dc9820e50bae50aa18db95bca243d0e.jpg](media/9dc9820e50bae50aa18db95bca243d0e.jpg)
+    ![Screenshot of Item Quantities Maintenance window.](media/9dc9820e50bae50aa18db95bca243d0e.jpg)
 
 2. Enter or select an item.
 
@@ -3715,7 +3715,7 @@ You can use bin priority to help decide which bins that items should be picked f
 
 4. Choose Bins to open the Item Site Default Bins window.
 
-    ![d72fd2e581225b4f2e8265f832332d21.jpg](media/d72fd2e581225b4f2e8265f832332d21.jpg)
+    ![Screenshot of Item Site Default Bins window.](media/d72fd2e581225b4f2e8265f832332d21.jpg)
 
 5. Enter or select a bin for each type of transaction.
 
@@ -3792,7 +3792,7 @@ You can set up default values for the fields in this window. Refer to *Entering 
 1. Open the Item Resource Planning Maintenance window.
 (Inventory \>\> Cards \>\> Item Resource Planning)
 
-    ![4c27aef17ba81a49c36b96dbd815cbde.jpg](media/4c27aef17ba81a49c36b96dbd815cbde.jpg)
+   ![Screenshot of Item Resource Planning Maintenance window.](media/4c27aef17ba81a49c36b96dbd815cbde.jpg)
 
 2. Enter or select an item number.
 
@@ -3844,7 +3844,7 @@ If you're using the purchase order generator to suggest purchase orders, use the
 
     - **To set up options for an item-site combination** Be sure the Site ID option is marked in the Sites field. Enter or select the site and choose PO Gen Item to open the Purchase Order Generator Item Maintenance window, where you can enter information for the item-site combination.
 
-    ![43331ca93a99c04b60490587b45f75e0.](media/43331ca93a99c04b60490587b45f75e0.jpg)
+    ![Screenshot of Purchase Order Generator Item Maintenance window.](media/43331ca93a99c04b60490587b45f75e0.jpg)
 
 4. Accept the default order method or change it. Choices include the following order methods:
 
@@ -3942,7 +3942,7 @@ Refer to Resource planning windows for information about how the information in 
 1. Open the Resource Planning Site Maintenance window.
 (Inventory \>\> Cards \>\> Site Resource Planning)
 
-    ![83aa0b3623ba4ad3eb16ddbe509948c5.jpg](media/83aa0b3623ba4ad3eb16ddbe509948c5.jpg)
+   ![Screenshot of Resource Planning Site Maintenance window.](media/83aa0b3623ba4ad3eb16ddbe509948c5.jpg)
 
 2. Determine whether to enter default information for the all site—also known as the default values—or for a specific site.
 
@@ -4012,7 +4012,7 @@ Use the Item Kit Maintenance window to assign component items to the kit. You ca
 1. Open the Item Kit Maintenance window.
 (Inventory \>\> Cards \>\> Kits)
 
-  ![2d21e2523afbe035d8984737cf674971.jp](media/2d21e2523afbe035d8984737cf674971.jpg)
+  ![Screenshot of Item Kit Maintenance window.](media/2d21e2523afbe035d8984737cf674971.jpg)
 
 2. Enter or select an item number.
 
@@ -4077,7 +4077,7 @@ Use the Item History window to enter beginning history for items.You can enter i
 
 1. Open the Item History window (Inventory \>\> Cards \>\> History)
 
-    ![5e646ae95d89b00c8b0476696f524a6b.jpg](media/5e646ae95d89b00c8b0476696f524a6b.jpg)
+    ![Screenshot of Item History window.](media/5e646ae95d89b00c8b0476696f524a6b.jpg)
 
 2. Select an item number.
 
@@ -4095,7 +4095,7 @@ Use the Item History window to enter beginning history for items.You can enter i
 
     To add more periods to the scrolling window, choose the Add Period button. Enter information to select the appropriate period and close the window.
 
-    ![07fa3c720ebdc5bad74c53a65d50d09d.jpg](media/07fa3c720ebdc5bad74c53a65d50d09d.jpg)
+    ![Screenshot of Items History Periods window.](media/07fa3c720ebdc5bad74c53a65d50d09d.jpg)
 
     *You can enter history only for periods that have been set up in the Fiscal Periods Setup or Item History Periods windows.*
 
@@ -4175,7 +4175,7 @@ When you specify the count intervals for items, you can begin by selecting items
 
 6. You can remove items from the resulting list, if you like. Choose Details to open the Cycle Assignment Details window.
 
-    ![817b983556aa2127fa526650a1081adb.jpg](media/817b983556aa2127fa526650a1081adb.jpg)
+    ![Screenshot of the Cycle Assignment Details window.](media/817b983556aa2127fa526650a1081adb.jpg)
 
 7. To remove any item from the cycle-count group, clear the appropriate Include option in the scrolling window.
 
@@ -4200,7 +4200,7 @@ Use the Item Quantities Stock Count window to specify the cycle counting interva
 
 4. Choose Stock Count to open the Item Quantities Stock Count window.
 
-    ![0e6b25763c0c4d34b2549f4d2e84a6b3.jpg](media/0e6b25763c0c4d34b2549f4d2e84a6b3.jpg)
+    ![Screenshot of the Item Quantities Stock Count window.](media/0e6b25763c0c4d34b2549f4d2e84a6b3.jpg)
 
 5. Enter the Last Stock Count Date and Time. The first scheduled stock count for the item at this site will be based on this date and the interval.
 
@@ -4350,7 +4350,7 @@ Once you've created landed cost records, you can create landed cost groups. A la
 1. Open the Landed Cost Group Maintenance window.
 (Inventory \>\> Cards \>\> Landed Cost Group)
 
-  ![8860169b1033d727b6ee0c8a93fe4260.jpg](media/8860169b1033d727b6ee0c8a93fe4260.jpg)
+  ![Screenshot of the Landed Cost Group Maintenance window.](media/8860169b1033d727b6ee0c8a93fe4260.jpg)
 
 2. Enter or select an identifier for the landed cost group.
 
@@ -4441,7 +4441,7 @@ Use the Inventory Batch Entry window to create batches that you use just once (s
 
 1. Open the Inventory Batch Entry window. (Inventory \>\> Transactions \>\> Batches)
 
-    ![18694fbb93342c2d9d4ca5ea945758f7.jpg](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
+    ![Screenshot of Inventory Batch Entry window.](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
 
 2. Enter the batch ID and origin.
 
@@ -4606,7 +4606,7 @@ Use the Item Transaction Entry window to enter transactions about adjustments an
 
 2. Choose Adjustment or Variance to open the Item Transaction Entry window.
 
-    ![30240561ca150826302ea019631b2128.jpg](media/30240561ca150826302ea019631b2128.jpg)
+    ![Screenshot of the Item Transaction Entry window.](media/30240561ca150826302ea019631b2128.jpg)
 
 3. Enter the document type and date. The document number appears automatically when you move to the field.
 
@@ -4665,7 +4665,7 @@ Use the Item Transfer Entry window to enter transactions to move inventoried ite
 
 2. Choose Site Transfer to open the Item Transfer Entry window.
 
-    ![9847e7e74b678d003cffbd19772ec29e.jpg](media/9847e7e74b678d003cffbd19772ec29e.jpg)
+    ![Screenshot of the Item Transfer Entry window.](media/9847e7e74b678d003cffbd19772ec29e.jpg)
 
 3. Enter the document number and date.
 
@@ -4733,7 +4733,7 @@ Use the Item Transfer Entry window to enter transactions to change the quantity 
 
 8. Choose Quantity Type. The Item Transfer Quantity Type Entry window opens.
 
-    ![4ef2f4135920ccc3ae6b5277f1b9ce8f.jpg](media/4ef2f4135920ccc3ae6b5277f1b9ce8f.jpg)
+    ![Screenshot of the Item Transfer Quantity Type Entry window.](media/4ef2f4135920ccc3ae6b5277f1b9ce8f.jpg)
 
 9. Enter or select the quantity type for the item at the sites. Choices include On Hand, Returned, In Use, In Service, and Damaged.
 
@@ -4769,7 +4769,7 @@ You can choose File \>\> Print to print picking tickets and packing slips. The c
 
 2. In the New group, choose Transfer to open the In-Transit Transfer Entry window.
 
-    ![0cde0d919ac2585bde1711ee959d0805.jpg](media/0cde0d919ac2585bde1711ee959d0805.jpg)
+    ![Screenshot of the In-Transit Transfer Entry window.](media/0cde0d919ac2585bde1711ee959d0805.jpg)
 
 3. Enter a document number or choose New and accept the default document number.
 
@@ -4827,7 +4827,7 @@ Use the Item Transfer Lot Number Entry window to specify which items—from whic
 
     When you move off the scrolling window line, the Item Transfer Lot Number Entry window opens.
 
-    ![0ea517b1c890abe988589a39fe13d0ac.jpg](media/0ea517b1c890abe988589a39fe13d0ac.jpg)
+    ![Screenshot of the Item Transfer Lot Number Entry window.](media/0ea517b1c890abe988589a39fe13d0ac.jpg)
 
 3. Enter or select a lot number.
 
@@ -4859,7 +4859,7 @@ Use the Item Transfer Serial Number Entry window to specify which items—by the
 
     When you move off the scrolling window line, the Item Transfer Serial Number Entry window opens.
 
-    ![7feef2f1f9cde78aa3c244846fbf047d.jpg](media/7feef2f1f9cde78aa3c244846fbf047d.jpg)
+    ![Screenshot of the Item Transfer Serial Number Entry window.](media/7feef2f1f9cde78aa3c244846fbf047d.jpg)
 
 3. Choose serial number information to view.
 
@@ -4888,7 +4888,7 @@ Use the Transfer Lot Number Entry window to specify which items—from which lot
 
 3. Select an item for which lot numbers are tracked and choose Serial/Lot to open the Transfer Lot Number Entry window.
 
-    ![6395ef9b31d4feb12390410ce5fabfed.jpg)](media/6395ef9b31d4feb12390410ce5fabfed.jpg)
+    ![Screenshot of the Transfer Lot Number Entry window used to change lot numbers for an in-transit transfer.)](media/6395ef9b31d4feb12390410ce5fabfed.jpg)
 
 4. Select a lot number to change and choose Remove.
 
@@ -4924,7 +4924,7 @@ If you're not using multiple bins, information about the available serial number
 
 3. Select an item for which serial numbers are tracked and choose Serial/Lot to open the Transfer Line Entry – Serial window.
 
-    ![8a7f147a5d04387a557f6b3a6a8a9193.jpg](media/8a7f147a5d04387a557f6b3a6a8a9193.jpg)
+    ![Screenshot of the Transfer Line Entry – Serial window.](media/8a7f147a5d04387a557f6b3a6a8a9193.jpg)
 
 4. Select the serial number to change and choose Remove.
 
@@ -4951,7 +4951,7 @@ If you're entering an item transfer and you're using multiple bins, you'll need 
 
 3. Enter a transfer for an item that is not tracked by lot or serial numbers. Choose Bins to open the Bin Quantity Transfer Entry window.
 
-    ![8d9e50aef2e71f7c67adfac378575532.jpg](media/8d9e50aef2e71f7c67adfac378575532.jpg)
+    ![Screenshot of Bin Quantity Transfer Entry window.](media/8d9e50aef2e71f7c67adfac378575532.jpg)
 
     The window also will open automatically when you move out of the transaction line.
 
@@ -5019,11 +5019,11 @@ When inventory transactions are posted, the posting accounts you select are upda
 
 4. Choose Distributions. If you're entering a transaction in the Item Transaction Entry window, the Item Transaction Distribution Entry window opens.
 
-    ![c1f76f1686cd80920e8ad4c0953c40db.jpg](media/c1f76f1686cd80920e8ad4c0953c40db.jpg)
+    ![Screenshot of Item Transaction Distribution Entry window.](media/c1f76f1686cd80920e8ad4c0953c40db.jpg)
 
     If you're entering a transfer transaction in the Item Transfer Entry window, the Item Transfer Distribution window opens.
 
-    ![a66b6ee366f9284bee2fd44c523880e8.jpg](media/a66b6ee366f9284bee2fd44c523880e8.jpg)
+    ![Screenshot of Item Transfer Distribution window used for transfer transactions.](media/a66b6ee366f9284bee2fd44c523880e8.jpg)
 
 5. Review the account information, making any necessary changes.
 
@@ -5085,7 +5085,7 @@ Use the Item Bin Transfer Lot Number Entry window to specify the lot numbers of 
 
     The Item Bin Transfer Lot Number Entry window opens automatically for an item tracked by lot numbers.
 
-    ![edcbe1ffa8cf2e2be96182e54f07594d.jpg](media/edcbe1ffa8cf2e2be96182e54f07594d.jpg)
+    ![Screenshot of Item Bin Transfer Lot Number Entry window.](media/edcbe1ffa8cf2e2be96182e54f07594d.jpg)
 
 3. Select a lot number to transfer. You can use either of the following methods:
 
@@ -5117,7 +5117,7 @@ Use the Item Bin Transfer Serial Number Entry window to specify the serial numbe
 
     The Item Bin Transfer Serial Number Entry window opens automatically for items tracked by serial numbers.
 
-    ![42c06a75bbfcc3135039a52127c73b8e.jpg)](media/42c06a75bbfcc3135039a52127c73b8e.jpg)
+    ![Screenshot of Item Bin Transfer Serial Number Entry used for items tracked by serial numbers.](media/42c06a75bbfcc3135039a52127c73b8e.jpg)
 
 3. Select a serial number to transfer. You can use either of the following methods:
 
@@ -5147,7 +5147,7 @@ If you assign an expiration date to a lot, a message will be displayed if the ex
 
     (In the Item Transfer Lot Number Entry window, enter or select a lot, then choose the expansion button on the Lot Number field.)
 
-    ![15f4081baf23e8b8e92e6898843c7c02.jpg](media/15f4081baf23e8b8e92e6898843c7c02.jpg)
+    ![Screenshot of Lot Attribute Entry window.](media/15f4081baf23e8b8e92e6898843c7c02.jpg)
 
 2. Enter a manufactured date and an expiration date, if applicable.
 
@@ -5262,7 +5262,7 @@ When you're ready to begin a stock count, use the Stock Count Schedule window to
 1. Open the Stock Count Schedule window.
 (Inventory \>\> Transactions \>\> Stock Count Schedule)
 
-    ![a2473bfba6a58a2fbcb8ac0c4858caa1.jpg](media/a2473bfba6a58a2fbcb8ac0c4858caa1.jpg)
+   ![Screenshot of Stock Count Schedule window.](media/a2473bfba6a58a2fbcb8ac0c4858caa1.jpg)
 
 2. Enter or select a stock count ID.
 
@@ -5308,7 +5308,7 @@ Use the Stock Count Mass Add window to add many item-site combinations to a stoc
 
 3. Choose Mass Add to open the Stock Count Mass Add window.
 
-    ![b32e03db7370a1ccffe90f49a7f0305d.jpg](media/b32e03db7370a1ccffe90f49a7f0305d.jpg)
+    ![Screenshot of the Stock Count Mass Add window.](media/b32e03db7370a1ccffe90f49a7f0305d.jpg)
 
 4. Define the range of items to add to the stock count. Select a Stock Count Range, and then enter or select the beginning and end of the range for that type of range.
 
@@ -5400,7 +5400,7 @@ When you successfully start a stock count, stock forms are generated for you to 
 
 Use the Stock Count Print Options window to specify how you want the stock count forms formatted. You can choose how the items will be sorted on the report. Item can be sorted by site ID, then bin and then item number, or they can be sorted by item number, then bin and then site ID.
 
-![74c79f3ddf13ba90495e3389fb27c58d.jpg](media/74c79f3ddf13ba90495e3389fb27c58d.jpg)
+![Screenshot of Stock Count Print Options window.](media/74c79f3ddf13ba90495e3389fb27c58d.jpg)
 
 You can determine if page breaks should occur between items. If you have several warehouse personnel who will be counting items, this can make it easier for you to split up the task.
 
@@ -5511,7 +5511,7 @@ Use the Stock Count Entry window to enter the results of the stock count, based 
 1. Open the Stock Count Entry window.
 (Inventory \>\> Transactions \>\> Stock Count Entry)
 
-  ![a2473bfba6a58a2fbcb8ac0c4858caa1.jpg](media/a2473bfba6a58a2fbcb8ac0c4858caa1.jpg)
+  ![Screenshot of Stock Count Entry window.](media/a2473bfba6a58a2fbcb8ac0c4858caa1.jpg)
 
 2. Enter or select a stock count ID with Started or Entered status. The combinations included in the stock count are displayed in the scrolling window.
 
@@ -5577,7 +5577,7 @@ Use the Stock Count Date Entry window to change the document date or the default
 1. Open the Stock Count Date Entry window.
 (Inventory \>\> Transactions \>\> Stock Count Entry \>\> enter or select a stock count ID \>\> Document Date expansion button)
 
-    ![74efbd378e81338bc4900de489ebc5ce.jpg](media/74efbd378e81338bc4900de489ebc5ce.jpg)
+![Screenshot of Stock Count Date Entry window.](media/74efbd378e81338bc4900de489ebc5ce.jpg)
 
 2. Enter a document date. This date appears in the Document Date field in the Stock Count Entry window.
 
@@ -5602,7 +5602,7 @@ Use the Stock Count Unit of Measure Entry window to select a different unit of m
 
 4. Choose the U of M expansion button to open the Stock Count Unit of Measure Entry window.
 
-    ![30e00a1a0065b8fb307aed7582c91549.jpg](media/30e00a1a0065b8fb307aed7582c91549.jpg)
+    ![Screenshot of Stock Count Unit of Measure Entry window.](media/30e00a1a0065b8fb307aed7582c91549.jpg)
 
 5. Enter or select a unit of measure for the results, and then enter the counted quantity for that unit of measure.
 
@@ -5629,7 +5629,7 @@ Use the Stock Count Lot Number Entry window to enter lot number information for 
 
 1. Open the Stock Count Lot Number Entry window. (Inventory \>\> Transactions \>\> Stock Count Entry \>\> select an item that tracks lot numbers \>\> Serial/Lot button)
 
-  ![af3f9a5559d8d1c2ba05e91e4e6ba301.jpg](media/af3f9a5559d8d1c2ba05e91e4e6ba301.jpg)
+  ![Screenshot of Stock Count Lot Number Entry window.](media/af3f9a5559d8d1c2ba05e91e4e6ba301.jpg)
 
   > [!NOTE]
   > When you enter results for a lot- or serial-numbered item, a small S/L symbol appears in the item number field in the Stock Count Entry scrolling window.*
@@ -5657,7 +5657,7 @@ Use the Stock Count Serial Number Entry window to enter serial number informatio
 1. Open the Stock Count Serial Number Entry window.
 (Inventory \>\> Transactions \>\> Stock Count Entry \>\> select an item that tracks lot numbers \>\> Serial/Lot button)
 
-  ![bd7d3ca31a788f329f66630d0522e915.jpg](media/bd7d3ca31a788f329f66630d0522e915.jpg)
+  ![Screenshot of Stock Count Serial Number Entry window.](media/bd7d3ca31a788f329f66630d0522e915.jpg)
 
   > [!NOTE]
   > When you enter results for a lot- or serial-numbered item, a small S/L symbol appears in the item number field in the Stock Count Entry scrolling window.
@@ -5708,7 +5708,7 @@ Use the Stock Count Distribution Entry window to change the inventory and varian
 
 4. Choose Distribution to open the Stock Count Distribution Entry window. If you've set up default accounts, those accounts are displayed. Enter or select the accounts to use.
 
-    ![747d3569bae2162c1f7bd9140319e531.jpg](media/747d3569bae2162c1f7bd9140319e531.jpg)
+    ![Screenshot of Stock Count Distribution Entry window.](media/747d3569bae2162c1f7bd9140319e531.jpg)
 
 5. Choose OK to save your changes and return to the Stock Count Entry window.
 
@@ -5738,11 +5738,11 @@ Use the Unposted Item Transactions window to view unposted inventory transaction
 
   To view unposted transactions, choose Unposted Trx to open the Unposted Item Transactions window. Review the information as needed. To view information about the quantities for specific transactions, select a document and then click the Document Number label.
 
-  ![5b942040ca5f46ca7bc5c6db572a8fa4.jpg](media/5b942040ca5f46ca7bc5c6db572a8fa4.jpg)
+  ![Screenshot of the Unposted Item Transactions window.](media/5b942040ca5f46ca7bc5c6db572a8fa4.jpg)
 
   To view transaction history, choose Trx History to open the Item Transaction Inquiry by Date window. Information about transactions for the item-site combination posted after the stock count was started and before the stock count results were entered are displayed in the scrolling window. Review the information as needed. To view information about the quantities for specific transactions, select a document and then click the Document Number label.
 
-  ![5d8510407c9367b2ce76c7bd2b775de4.jp](media/5d8510407c9367b2ce76c7bd2b775de4.jpg)
+  ![Screenshot of Item Transaction Inquiry by Date window.](media/5d8510407c9367b2ce76c7bd2b775de4.jpg)
 
 5. If you find an unposted transaction or a transaction in inventory history that would account for all or a portion of the variance, select the variance amount for the item-site combination and change it as needed.
 
@@ -5834,7 +5834,7 @@ Depending on your fiscal period setup, you might not be able to post to a closed
 2. Open the Inventory Batch Entry window.
 (Inventory \>\> Transactions \>\> Batches)
 
-  ![18694fbb93342c2d9d4ca5ea945758f7.jpg](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
+  ![Screenshot of Inventory Batch Entry window used to post a single batch.](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
 
 3. Select an existing batch ID.
 
@@ -5859,7 +5859,7 @@ Use the Inventory Series Posting window to post several Inventory Control batche
 2. Open the Inventory Series Posting window.
 (Inventory \>\> Transactions \>\> Series Post)
 
-  ![d6dbcbed9e12a1cf037d2130848003f9.jpg](media/d6dbcbed9e12a1cf037d2130848003f9.jpg)
+  ![Screenshot of Inventory Series Posting window.](media/d6dbcbed9e12a1cf037d2130848003f9.jpg)
 
 3. Choose whether to view all batches or just the ones marked for posting.
 
