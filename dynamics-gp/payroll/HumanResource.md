@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 3/10/2022
+ms.date: 3/15/2022
 ---
 # Human Resources in Microsoft Dynamics GP
 
@@ -644,7 +644,7 @@ To grant Payroll view access to a user:
 3.	Mark the Payroll View for Human Resources option and choose Save.
 Repeat for every user who will enter or update benefit information in Human Resources.
 
-![the benefit setup](media/HRBENSETUP26.jpg)
+![the benefit setup](media/HRUSERSETUPFILL5.jpg)
 
 **Setting up benefit preferences**
 
@@ -668,7 +668,7 @@ Sundays Only, or Saturdays and Sundays to indicate your company-wide “down day
 
 Once benefit preferences are established for FMLA, they should not be changed. If they are, all entries will need to be entered again or FMLA benefits won’t be calculated correctly.
 
-![The Benefit Preferences](media/HRUSERSETUPFILL5.jpg)
+![The Benefit Preferences](media/HRBENSETUP26.jpg)
 
 
 **Setting up miscellaneous benefits and garnishments**
@@ -727,6 +727,185 @@ To set up a health insurance benefit:
 10.	Select a copayment code and enter a copayment amount or accept the default amount.
 •	If you’ve entered amounts for your Employee or Employer fields and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
 •	If you didn’t enter amounts for both the Employee and Employer fields, the corresponding codes will not have to be completed in Payroll.
+
+
+**Setting up an age-based life insurance benefit**
+
+Use the Life Insurance Setup window to set up an aged-based life insurance benefit. Premiums for an aged-based benefit change with the employee’s age. 
+For example, an employee whose age is 21-34 might pay $3.00 per $1,000 of life insurance coverage and an employee whose age is 35-44 might pay $4.00 per $1,000 of life insurance coverage.
+
+To set up an age-based life insurance benefit:
+1.	Open the Life Insurance Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Life Insurance)
+2.	Enter a plan name and description of the benefit.
+3.	Select the benefit frequency and enter or select the life insurance benefits carrier. 
+If a company isn’t listed, choose Carrier and add the benefit carrier in the Card Catalog window.
+4.	Enter the group number of the plan and the plan start date.
+5.	Mark Age-Based to indicate the premium method for this benefit is based on age.
+
+> [!TIP]
+> A process runs when the first user of the day logs into a company, everyday.  It is driven from the HR Module and pertains to life insurance.  The process is called HR_Update_Age_Based_Employee.  When this process runs, it will look at all employees to see if there was a birthday and if based on your age base tables, should the employee premium get updated.  Basically the first person who logs for the day, into GP triggers a stored procedure that updates age based life insurance premiums in HR(which is linked to payroll). We do not check to see if this person has HR access or not, so you may see some random user that may have changed the age base life insurance tables as the system does this automatically for you each day at login.  [You can find more details on the Update Age Based Employee Procedure](https://community.dynamics.com/gp/f/microsoft-dynamics-gp-forum/72411/update-age-based-employee-procedure)
+
+
+To set up a fixed amounts life insurance
+
+6.	Enter the increment amounts for the employee, employee’s spouse and children, if applicable. For example, if an employee can purchase insurance in $1,000 increments, enter $1,000. The Life Insurance Premiums Table window will display these amounts.
+7.	Choose Table to open the Life Insurance Premiums Table window. Enter the minimum age and basic premiums for the employee and the employee’s spouse, if applicable.
+8.	Choose the insert button to save your changes. Continue entering premium information and then close the window. The Life Insurance Setup window will be displayed. 
+9.	Enter the maximum amount of life insurance coverage that this plan offers.
+10.	Enter a multiplication factor to define the employee’s maximum amount of life insurance coverage under this plan. The factor, multiplied by the employee’s annual salary, is the employee’s maximum coverage, up to the plan’s maximum.
+For example, assume that an employee has an annual income of $25,000. A factor of 2 would mean that the employee’s maximum life insurance coverage under this plan would be $50,000 (or the plan’s maximum coverage, whichever is smaller).
+Enter 0 to use the value in the Coverage Max Amt. field as the employee’s maximum coverage value.
+11.	If you enter a factor other than 0, select a rounding option and to indicate whether the calculated maximum coverage should be rounded up or down to match predetermined life insurance coverage increments.
+
+For example, assume that an employee has an annual income of $52,000, the factor is set to 2, and coverage increments are set at $10,000. The calculated maximum coverage in this case is $104,000. If you choose to round up, the employee’s maximum coverage would be set to $110,000, which is the nearest higher increment. If you choose to round down, the employee’s maximum coverage would be set to $100,000, which is the nearest lower increment.
+12.	Mark Portable Plan if the employee can continue the life insurance plan after leaving the company.
+13.	Mark how the employer pays for this benefit.
+•	If you marked Increment Employee or Increment Whole Family, enter the employer Increments and Fixed Premium amounts.
+•	If you marked Portion of Employee Premium, enter the employer portion of the employee premium.
+You can enter zero in the fields for employee’s and employer’s contributions. 
+•	If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
+•	If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+Setting up a fixed-amount life insurance benefit
+
+Use the Life Insurance Setup window to set up a fixed amount life insurance benefit. You can define the maximum coverage amount and indicate if the plan is portable—if the employee can continue receiving this benefit after leaving the company.
+
+To set up a fixed-amount life insurance benefit:
+1.	Open the Life Insurance Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Life Insurance)
+2.	Enter a plan name and select the benefit frequency.
+3.	Enter a description of the benefit and enter or select the life insurance benefits carrier. If a company isn’t listed, choose Carrier and add the benefit carrier in the Card Catalog window.
+4.	Enter the group number of the plan and the plan start and end dates. If it’s a continuous plan, leave the end date blank.
+5.	Mark Fixed Amounts to indicate the premium method for this benefit.
+6.	Enter the premium increments and fixed premium amounts for the employee, employee’s spouse, and employee’s children. For example, if the premium amount is $3.00 per $1,000 of insurance, enter $1,000 in the Increments field and $3.00 in the Fixed Premium field. If the premium for smokers is different, use the Smoker field as applicable.
+Enter the full premium amounts in the Employee, Spouse, and Children fields. Any fixed premium amount contributed by the employer will be subtracted from the full premium amounts, either automatically or manually, according to the Employer Pays selection.
+7.	Enter the maximum amount of life insurance coverage that this plan offers.
+8.	Enter a multiplication factor to define the employee’s maximum amount of life insurance coverage under this plan. The factor, multiplied by the employee’s annual salary, is the employee’s maximum coverage, up to the plan’s maximum.
+For example, assume that an employee has an annual income of $25,000. A factor of 2 would mean that the employee’s maximum life insurance coverage under this plan would be $50,000 (or the plan’s maximum coverage, whichever is smaller).
+Enter 0 to use the value in the Coverage Max Amt. field as the employee’s maximum coverage value.
+9.	If you enter a factor other than 0, select a rounding option and to indicate whether the calculated maximum coverage should be rounded up or down to match predetermined life insurance coverage increments.
+For example, assume that an employee has an annual income of $52,000, the factor is set to 2, and coverage increments are set at $10,000. The calculated maximum coverage in this case is $104,000. If you choose to round up, the employee’s maximum coverage would be set to $110,000, which is the nearest higher increment. If you choose to round down, the employee’s maximum coverage would be set to $100,000, which is the nearest lower increment.
+10.	Mark Portable Plan if the employee can continue the life insurance plan after leaving the company.
+11.	Mark how the employer pays for this benefit.
+•	If you marked Increment Employee or Increment Whole Family, specify the portion of the insurance premium that the employer pays for each increment. The employer’s portion of the premium is automatically subtracted from the employee’s total premium (including, if applicable, Spouse, and Children, but not including Smoker) and must be less than or equal to the employee’s total premium.
+•	If you marked Portion of Employee Premium, enter the employer fixed premium, and change the employee total fixed premium entries (including, if applicable, Spouse, and Children, but not including Smoker) so their total is reduced by the amount of the employer fixed premium.
+You can enter zero in the fields for employee’s and employer’s contributions. For information about how this affects Payroll records
+•	If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
+•	If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+Modifying or deleting a life insurance benefit
+
+Use the Life Insurance Setup window to modify or delete a life insurance benefit. You can modify a life insurance benefit to reflect changes such as the group number or premium information. You can’t delete a benefit if employees are enrolled in the benefit.
+	 	Delete the life insurance code or codes from Payroll first, and then follow these instructions.
+
+To modify or delete a life insurance benefit:
+1.	Open the Life Insurance Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Life Insurance)
+2.	Enter or select a plan name.
+3.	Make your changes and choose Save.
+•	You will have the option to apply the changes to all active benefit records.
+•	If you’ve entered amounts for your Employee or Employer fields and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to update the corresponding codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter amounts for both the Employee and Employer fields, the corresponding codes will not have to be completed in Payroll.
+•	If you marked the Automatically Update Payroll Benefits & Deductions option in the Benefit Preferences window, the corresponding payroll information will be updated automatically. Continue to step 5.
+•	If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. For more information, refer to Reconciling Human Resources information on page 323.
+4.	Choose Delete to delete the benefit.  Close the window.
+
+**Setting up a retirement plan insurance benefit**
+
+Use the Retirement Plans Setup window to set up a retirement plan. You can add funds to a plan to which the employee can contribute, as well as enter the employee match percent and maximum match amounts.
+
+To set up a retirement plan:
+1.	Open the Retirement Plans Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Retirement Plans)
+2.	Enter a benefit code and description. Select a frequency.
+3.	Enter or select the retirement plan trustee and enter the retirement plan account number. If a company isn’t listed, choose Trustee and add the trustee in the Card Catalog window.
+4.	Mark Fixed or Tiers to indicate the premium structure. 
+5.	Mark Amount or Percent to indicate the premium method and enter a premium amount or percentage. Enter the annual maximum contribution the employee can make to the plan during the calendar and fiscal year.
+6.	Enter the percentage the employer matches for each employee dollar and enter the maximum percentage of the employee contribution that the employer will match. Enter maximum employer contributions for the calendar and fiscal year.
+7.	Mark Bonus Elections Active if employees have the option to contribute a percentage of their bonus pay. Mark Loans Allowed if employees are allowed to withdraw contributions as loans. Mark Hardship Withdrawals OK if employees are allowed to withdraw contributions for hardship cases.
+You can enter zero in the fields for employee’s and employer’s contributions. 
+8.	Enter the minimum employee age required to participate in the retirement plan and the number of days the employee must be employed by your company to be eligible for the retirement plan.
+9.	Enter a plan entrance date and choose the insert button to save the date.
+10.	Choose Add A Fund to activate a row in the scrolling window and enter a fund code and the name of the fund. Mark Active if the fund is active.
+11.	Choose Save.
+•	If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
+•	If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+Setting up a benefit tier
+
+Use the Tiered Benefit Setup window to enter, maintain or delete a benefit tier.
+This benefit tier is for reference only and is not required. If most employee benefits use the same tier structure, setting up this tier will reduce your data entry time.
+To set up a benefit tier:
+1.	Open the Miscellaneous Benefit Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions)
+2.	Choose Miscellaneous Benefits or Retirement Plans.
+3.	Enter or select a benefit code. Mark Employer, select Multiple, and then choose Tiers to open the Tiered Benefit Setup window.
+4.	Enter the To amounts for each tier. For example, if the first tier is from zero to $100, you would enter $100 in the To column. The next From amount automatically will be displayed.
+5.	Enter the dollar amount or percentage that employees contribute to the plan for each tier.
+6.	Choose OK to save your changes. The Miscellaneous Benefit Setup window will be displayed.
+7.	Choose Save.
+•	If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
+•	If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+Setting up a deduction tier
+
+Use the Tiered Deduction Setup window to enter maintain or delete a deduction tier.
+This deduction tier is for reference only and is not required. If most employee deductions use the same tier structure, setting up this tier will reduce your data entry time.
+To set up a deduction tier:
+1.	Open a deduction setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Miscellaneous Benefits)
+You can assign a deduction tier to a Miscellaneous Benefit deduction and a Retirement Plan.
+2.	Enter or select a deduction code. 
+•	In the Miscellaneous Benefit Setup window, mark Employee and Multiple and choose Tiers to open the Tiered Deduction Setup window. 
+•	In the Retirement Plans Setup window, select Tiers for the Premium Structure and choose Tiers to open the Tiered Deduction Setup window.
+3.	Enter the To amounts for each tier. For example, if the first tier is from zero to $100, you would enter $100 in the To column. The next From amount automatically will be displayed.
+4.	Enter the dollar amount or percentage that employees contribute to the plan for each tier.
+5.	Choose OK to save your changes. The Miscellaneous Benefit Setup or Retirement Plans Setup window will be displayed.
+6.	Choose Save.
+•	If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
+•	If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+Modifying or deleting a retirement plan
+Use the Retirement Plans Setup window to modify or delete a retirement plan. You can inactivate certain funds, change the available entry dates, or change any of the other fields in the window. You can’t delete a benefit if employees are enrolled in the benefit.
+	 	Delete the retirement plan code or codes from Payroll first, and then follow these steps.
+
+To modify or delete a retirement plan:
+1.	Open the Retirement Plans Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Retirement Plans)
+2.	Enter or select a benefit code for the retirement plan.
+3.	To inactivate a fund, unmark the Active check box for the fund and choose Save.
+To delete a fund, select the fund, choose Delete a Fund and choose Save.
+4.	Make your changes and choose Save.
+•	You will have the option to apply the changes to all active benefit records.
+•	If you’ve entered amounts for your Employee or Employer fields and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to update the corresponding codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter amounts for both the Employee and Employer fields, the corresponding codes will not have to be completed in Payroll.
+•	If you marked the Automatically Update Payroll Benefits & Deductions option in the Benefit Preferences window, the corresponding payroll information will be updated automatically. Continue to step 5.
+•	If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+5.	Choose Delete to delete the retirement plan. Close the window.
+
+
+**Completing a benefit or deduction setup**
+
+Use the Incomplete Setup Codes window to complete a benefit or deduction setup. A benefit or deduction set up is incomplete when you create a benefit or deduction in Human Resources and the Payroll View for Human Resources check box is not marked in the User Setup window. A benefit or deduction also is incomplete when you create a benefit or deduction in Payroll, but don’t apply the information to Human Resources. 
+
+To complete a benefit or deduction setup: 
+1.	Open any benefits setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions)
+2.	Choose Miscellaneous Benefits or Health Insurance or Life Insurance or Retirement Plans.
+3.	Choose the benefits button and select Incompletes to open the Incomplete Setup Codes window.
+4.	Highlight the code and choose Select.
+•	If the code is a benefit, the Benefit Setup window will open. If the code is a deduction, the Deduction Setup window will open.
+•	If a benefit is also a deduction, the Deduction Setup window will open. After you enter and save information in this window, the Benefit Setup window will open.
+5.	Enter additional information in the Benefit Setup window and choose Save.
+
+> [!TIP]
+> The main benefit information for Human Resource is stored in the following two tables.
+> Benefit Setup BE020230
+> Employee Enrollment BE010130
+> The column BENEFITKIND_I determins what type of benefit it is, there are 4 types
+> 1=Health Insurance
+> 2=Life Insurance
+> 3=Retirement Plan
+> 4=Miscellaneous Benefit/Deduction
+> 
 
 
 ## See also
