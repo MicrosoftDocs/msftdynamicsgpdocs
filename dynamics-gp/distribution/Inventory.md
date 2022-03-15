@@ -2541,7 +2541,7 @@ If you don't set up a price sheet for a particular currency, the price of the it
 
 1. Open the Price Sheet Maintenance window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Price Sheets)
 
-    ![Screenshot of Price Sheet Maintenance window.](media/153e182c6f7287af8c711d7f7b31ebf5.jpg)
+    ![Screenshot of Price Sheet Maintenance window used to create or edit a price sheet.](media/153e182c6f7287af8c711d7f7b31ebf5.jpg)
 
 2. Enter or select a price sheet ID and description.
 
@@ -3770,7 +3770,7 @@ If you're using resource planning features such as the purchase order generator 
 
 Refer to the table for information about how the information in the windows is used.
 
-|                                                                      | **All-site information\***                                                                                                                                                                 | **Item-site combination**                                                                                                                                                                                             |
+|                                                                      | **All-site information**                                                                                                                                                                 | **Item-site combination**                                                                                                                                                                                             |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Resource Planning Site Maintenance window**                        | Default value information is the default all-site information for new sites. (This default all-site information can be viewed or edited in the Item Resource Planning Maintenance window.) | Site-specific information is the default planning information for the site, and can be rolled down to all items assigned to the site. (This default information can be viewed or edited in the Item Resource Planning |
 | **Item Resource Planning Maintenance window**                        | Information is used for default values for item-site combinations.                                                                                                                        | Site-specific information (Replenishment Method and Order Policy) is used by the purchase order generator and Material Requirements Planning module of the Manufacturing Series.                                     |
@@ -4157,7 +4157,7 @@ When you specify the count intervals for items, you can begin by selecting items
 1. Open the Stock Count Cycle Assignment window.
 (Inventory \>\> Cards \>\> Count Cycle Assignment)
 
-    ![0cd306013fb7f5ae6f25e12e4beac2c9.jpg](media/0cd306013fb7f5ae6f25e12e4beac2c9.jpg)
+  ![Screenshot of Stock Count Cycle Assignment window.](media/0cd306013fb7f5ae6f25e12e4beac2c9.jpg)
 
 2. Enter the number of days for the stock count interval.
 
@@ -4262,7 +4262,7 @@ Use the Landed Cost Maintenance window to define a landed cost record. Each land
 1. Open the Landed Cost Maintenance window.
 (Inventory \>\> Cards \>\> Landed Cost)
 
-    ![7652ef66f617100cc03be33afdd93031.jpg](media/7652ef66f617100cc03be33afdd93031.jpg)
+  ![Screenshot of Landed Cost Maintenance window.](media/7652ef66f617100cc03be33afdd93031.jpg)
 
 2. Enter or select a landed cost ID.
 

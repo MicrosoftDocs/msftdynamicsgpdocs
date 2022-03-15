@@ -165,7 +165,7 @@ Use the View \>\> Currency menu option or the currency list button to view amoun
 
 2.  In the New group or its overflow menu, choose Standard Purchase Order to open the Purchase Order Entry window.
 
-![screenshot](media/POage033.jpg)
+![Screenshot of Purchase Order Entry window.](media/POage033.jpg)
 
 3.  Enter a purchase order number or accept the default entry.
 
@@ -277,7 +277,7 @@ The Link Purchase Order icon will be displayed in the Quantity Ordered field for
 
 9.  Moving from the Vendor ID field opens the Enter Drop-Ship Customer window.
 
-![screenshot](media/POage035.jpg)
+![Screenshot of Enter Drop-Ship Customer window.](media/POage035.jpg)
 
 In the Enter Drop-Ship Customer window, enter or select the customer ID and ship-to address ID where the vendor is shipping the items. Choose OK to return to the Purchase Order Entry window.
 
@@ -399,7 +399,7 @@ The Link Purchase Order icon will be displayed in the Quantity Ordered field for
 
 15.  Choose Blanket to open the Purchasing Blanket Detail Entry window to enter line items for the blanket purchase order and to select which line items will be released to the vendor when the blanket purchase order is printed.
 
-![screenshot](media/POage037.jpg)
+![Screenshot of Purchasing Blanket Detail Entry window.](media/POage037.jpg)
 
 16.  If the agreement you made with the vendor is based on the total quantity, mark Quantity to control the blanket by. If the agreement you made with the vendor is based on the total cost of the item, mark Value to control the blanket by. If you are managing the blanket by value, you still must enter quantities for the blanket purchase order's delivery schedule.
 
@@ -635,7 +635,7 @@ You can copy a purchase order if you are using Workflow. The new purchase order 
 
 3.  Enter or select a purchase order with a status of New, Released, or Change Order to copy. You can't create a new purchase order from a purchase order that has project information.
 
-![screenshot](media/POage039.jpg)
+![Screenshot of the Copy a Purchase Order window.](media/POage039.jpg)
 
 4.  You can change the vendor, currency, and document date for the new order.
 
@@ -692,11 +692,11 @@ If a purchase order line item is committed to more than one sales order line ite
 
 The item number, description, available quantity, and other information for the item will be displayed. If you selected a line item with existing commitments, sales item information will be displayed in the scrolling window.
 
-![screenshot](media/POage041.jpg)
+![Screenshot of the Sales Commitments for Purchase Order window.](media/POage041.jpg)
 
 4.  In the Sales Commitments for Purchase Order window, choose the Add Sales Doc button to open the Sales Assignments for Purchase Order window, where you can select sales line items.
 
-![screenshot](media/POage043.jpg)
+![Screenshot of the Sales Assignments for Purchase Order window.](media/POage043.jpg)
 
 5.  In the Sales Assignments for Purchase Order window, select a sales line item and choose the Select button to create a link between the purchase order and the line item. The window will close, and information for the sales line item you chose will appear in the Sales Commitments for Purchase Order window.
 
@@ -986,7 +986,7 @@ You also can print and send a historical purchase order in e-mail, which is a cl
 
 3.  Choose File \>\> Print to open the Purchase Order Print Options window.
 
-![screenshot](media/Poage045.jpg)
+![Screenshot of Purchase Order Entry window.](media/Poage045.jpg)
 
 *If you're using preprinted purchase order forms, we recommend that you print an alignment form. Xs will be printed in the place of the actual purchase order information. Verify that the purchase order forms are aligned correctly.*
 
@@ -1025,7 +1025,7 @@ You also can print or send a range of historical purchase orders. A historical p
 1.  Open the Print Purchasing Documents window.
     (Purchasing \>\> Transactions \>\> Print Purchasing Documents)
 
-![screenshot](media/POage047.jpg)
+![Screenshot of the Print Purchasing Documents window.](media/POage047.jpg)
 
 *If you're using preprinted purchase order forms, we recommend that you print an alignment form. X's will be printed in the place of the actual purchase order information. Verify that the purchase order forms are aligned correctly.*
 
@@ -1072,7 +1072,7 @@ Printing the delivery schedule won't release the items to the vendor. To release
 
 3.  Choose File \>\> Print to open the Purchase Order Print Options window.
 
-![screenshot](media/POage045.jpg)
+![Screenshot of the Purchase Order Print Options window.](media/POage045.jpg)
 
 4.  Select to print a delivery schedule.
 
@@ -1095,7 +1095,7 @@ Printing the delivery schedule won't release the items to the vendor. To release
 
 2.  Select to print delivery schedules.
 
-![screenshot](media/POage051.jpg)
+![Screenshot of Purchase Order Print Options window used to print multiple blanket purchase order delivery schedules.](media/POage051.jpg)
 
 3.  From the currency list button, select whether to print the delivery schedules in functional, originating, or reporting currency.
 
@@ -1142,7 +1142,7 @@ Use the View \>\> Currency menu option or the currency list button to view amoun
 1.  Open the Purchase Order Entry window.
     (Purchasing \>\> Transactions \>\> Purchase Order Entry)
 
-![screenshot](media/POage054.jpg)
+![Screenshot of the Purchase Order Entry window.](media/POage054.jpg)
 
 2.  Select Standard as the document type.
 
@@ -1235,7 +1235,7 @@ In multicurrency transactions, the exchange rate used is based on the document d
 
 7.  Moving from the Vendor ID field opens the Enter Drop-Ship Customer window.
 
-![screenshot](media/Poage035.jpg)
+![Screenshot of the Enter Drop-Ship Customer window.](media/Poage035.jpg)
 
 In the Enter Drop-Ship Customer window, enter or select the customer ID and ship-to address ID where the vendor is shipping the items. Choose OK to return to the Purchase Order Entry window.
 
@@ -1330,7 +1330,7 @@ Any changes you make in the Purchasing Vendor Detail Entry window will be applie
 
 3.  Choose the Vendor ID expansion button to open the Purchasing Vendor Detail Entry window.
 
-![screenshot](media/POage057.jpg)
+![Screenshot of the Purchasing Vendor Detail Entry window.](media/POage057.jpg)
 
 Currency amounts in this window appear in the functional or originating currency, depending on the view selected in the Purchase Order Entry window.
 
@@ -1359,7 +1359,7 @@ You can change the subject, message ID, and message if the Allow Update of E-mai
 
 4.  Choose the E-mail Detail Entry expansion button to open the Purchasing E-mail Detail Entry window.
 
-![screenshot](media/POage059.jpg)
+![Screenshot of Purchasing E-mail Detail Entry window.](media/POage059.jpg)
 
 5.  Enter a To, Cc, or Bcc address to send the transaction in e-mail. You must enter at least one e-mail address to send transactions in e-mail. The default e-mail addresses entered in the Internet Information window are displayed for the vendor. You can update the To, Cc, and Bcc e-mail addresses, if applicable.
 
@@ -1404,7 +1404,7 @@ If you are using Project Accounting, you can enter blanket purchase order line i
 
 2.  Enter or select a purchase order number, select a line item, and choose the Vendor Item or Item expansion button to open the Purchasing Item Detail Entry window.
 
-![screenshot](media/POage061.jpg)
+![Screenshot of the Purchasing Item Detail Entry window.](media/POage061.jpg)
 
 Currency amounts in this window appear in the functional or originating currency, depending on the view selected in the Purchase Order Entry window.
 
@@ -1473,7 +1473,7 @@ You can enter more specific information, such as the required and promised shipp
 
 2.  Enter or select a purchase order number, select a line item, and choose the Item expansion button to open the Purchasing Item Detail Entry window.
 
-![screenshot](media/POage063.jpg)
+![Screenshot of the Purchasing Item Detail Entry window.](media/POage063.jpg)
 
 Currency amounts in this window appear in the functional or originating currency, depending on the view selected in the Purchase Order Entry window.
 
@@ -1548,7 +1548,7 @@ You also can open the Purchasing Manufacturer's Item Number Entry window from th
 
 2.  Enter or select a purchase order number, select a line item, and choose the Manufacturer's Item Number expansion button to open the Purchasing Manufacturer's Item Number Entry window.
 
-![screenshot](media/POage065.jpg)
+![Screenshot of Purchasing Manufacturer's Item Number Entry window.](media/POage065.jpg)
 
 3.  Enter or modify the name of the manufacturer, manufacturer's item number, and description of the item.
 
@@ -1577,7 +1577,7 @@ If the agreement you made with the vendor is based on the total cost of the item
 
 4.  Choose Blanket to open the Purchasing Blanket Detail Entry window.
 
-![screenshot](media/POage037.jpg)
+![Screenshot of Purchasing Blanket Detail Entry window.](media/POage037.jpg)
 
 Currency amounts in this window appear in the functional or originating currency, depending on the view selected in the Purchase Order Entry window.
 
@@ -1608,7 +1608,7 @@ If you are using Workflow and you've copied line items to a purchase order that 
 
 3.  Choose Actions and select Copy PO Lines to Current PO to open the Copy a Purchase Order window.
 
-![screenshot](media/POage068.jpg)
+![Screenshot of the Copy a Purchase Order window.](media/POage068.jpg)
 
 *You also can press ALT + P to copy purchase order line items.*
 
@@ -1642,7 +1642,7 @@ If the line items are assigned to project, the line items will be copied except 
 
 4.  Choose Preview.
 
-![screenshot](media/POage070.jpg)
+![Screenshot of the Preview Line Items window.](media/POage070.jpg)
 
 5.  If you selected the Mark All Line Items for Copy option, all line items will be marked. You can unmark any line item that shouldn't be copied.
 
@@ -1758,7 +1758,7 @@ You can create new comments while you are entering transactions. You also can cr
 
 1.  In the Purchase Order Entry window, the Purchasing Item Detail Entry window or the Receivings Item Detail Entry window, choose the Comment ID expansion button to open the Purchasing Comment Entry window.
 
-![screenshot](media/POage072.jpg)
+![Screenshot of the Purchasing Comment Entry window.](media/POage072.jpg)
 
 If the Comment ID field contained a value, you'll be able to modify the existing comment. If the Comment ID field was blank, you'll be able to create a new, one-time comment.
 
@@ -1902,7 +1902,7 @@ Use the Generate Suggested Purchase Orders window to generate suggested purchase
 1.  Open the Generate Suggested Purchase Orders window.
     (Purchasing \>\> Transactions \>\> Purchase Order Generator)
 
-![screenshot](media/POage074.jpg)
+![Screenshot of the Generate Suggested Purchase Orders window.](media/POage074.jpg)
 
 2.  Select all item numbers or enter a range of item numbers for which you want to generate suggested purchase order line items.
 
@@ -1956,7 +1956,7 @@ If you are using Project Accounting, you can't generate purchase orders for proj
 1.  Open the Suggested Purchase Orders Preview window.
     (Purchasing \>\> Transactions \>\> Purchase Order Generator \>\> Suggest Purchase Orders)
 
-![screenshot](media/POage078.jpg)
+![Screenshot of Suggested Purchase Orders Preview window.](media/POage078.jpg)
 
 2.  In the Display field, select how you want to view the suggested purchase orders.
 
@@ -1991,7 +1991,7 @@ The Suggested Purchase Order Detail window provides additional information about
 1.  Open the Suggested Purchase Order Detail window.
     (Purchasing \>\> Transactions \>\> Purchase Order Generator \>\> Suggest Purchase Orders \>\> select an item and choose the Item Number expansion button)
 
-![screenshot](media/POage080.jpg)
+![Screenshot of the  Suggested Purchase Order Detail window.](media/POage080.jpg)
 
 2.  In the Suggested Purchase Order Detail window, make any necessary changes.
 
@@ -2011,11 +2011,11 @@ Use the Subordinate Required Quantity Detail window or the Required Quantity Det
 
 The Subordinate Required Quantity Detail window shows the sources of demand from subordinate sites if ordering by master site. In the Suggested Purchase Order Detail window, you can choose the Required Qty in Base U of M expansion button to open the Subordinate Required Quantity Detail window. The Subordinate Required Quantity Detail window will open if a master site is used for the item-site combination.
 
-![screenshot](media/POage082.jpg)
+![Screenshot of the Subordinate Required Quantity Detail window.](media/POage082.jpg)
 
 The Required Quantity Detail window shows the details of the required quantity calculation for a site. The quantities that are displayed in this window were saved at the time the suggested purchase order line item was generated. In the Suggested Purchase Order Detail window, you can choose the Required Qty in Base U of M expansion button to open the Required Quantity Detail window if a master site isn't used for the item-site combination. This window also can be opened by choosing the Required Quantity field expansion button for the subordinate site ID in the Subordinate Required Quantity Detail window.
 
-![screenshot](media/POage084.jpg)
+![Screenshot of the Required Quantity Detail window.](media/POage084.jpg)
 
 ## Chapter 10: Taxes for purchase orders
 
@@ -2109,7 +2109,7 @@ Choose the Date expansion button to open the Purchasing Date Entry window, where
 
 6.  Choose the Tax expansion button in the Purchase Order Entry window to open the Purchase Order Tax Summary Entry window, where you can view or edit the tax distribution amounts.
 
-![screenshot](media/POage087.jpg)
+![Screenshot of the Purchase Order Tax Summary Entry window.](media/POage087.jpg)
 
 Currency amounts in this window may be displayed in the functional or originating currency, depending on the view selected in the Purchase Order Entry window.
 
@@ -2144,7 +2144,7 @@ Taxes will be calculated automatically as you enter items. If you change the tax
 
 4.  Choose the Calculated Tax expansion button to open the Purchase Order Line Item Tax Detail Entry window, where you can view or edit tax distribution amounts.
 
-![screenshot](media/POage089.jpg)
+![Screenshot of the Purchase Order Line Item Tax Detail Entry window.](media/POage089.jpg)
 
 5.  To edit tax distributions, enter or select a tax detail ID. Continue entering tax details until your tax is fully distributed.
 
@@ -2363,7 +2363,7 @@ If a purchase order has a prepayment is included in a computer check batch, you 
 
 3.  In the Modify group, choose Edit Purchase Order Status to open the Edit Purchase Order Status window.
 
-![screenshot](media/POage092.jpg)
+![Screenshot of the Edit Purchase Order Status window.](media/POage092.jpg)
 
 4.  Change the purchase order status.
 
@@ -2416,7 +2416,7 @@ After you've transferred the completed purchase orders to history, you can use t
 1.  Open the Remove Completed Purchase Orders window.
     (Purchasing \>\> Routines \>\> Remove Completed Purchase Orders)+
 
-![screenshot](media/POage095.jpg)
+![Screenshot of the Remove Completed Purchase Orders window.](media/POage095.jpg)
 
 2.  Select a type of range to remove information for purchase orders, then enter the first and last records in the selected range.
 
@@ -2426,7 +2426,7 @@ You can insert only one restriction for each document range. For example, you ca
 
 4.  Choose Restrictions to open the Restrict Purchasing Documents window to select documents you want to remove from the range you've entered (optional).
 
-![screenshot](media/POage097.jpg)
+![Screenshot of the Restrict Purchasing Documents window.](media/POage097.jpg)
 
 For example, assume that you entered a range restriction to include purchase order numbers PO0990 through PO1010. Purchase order PO1000 was canceled because the vendor was out of stock of the items, but now the vendor can fill the order. You can remove the mark from the Process box for PO1000 so that purchase order won't be removed, as in the following example.
 

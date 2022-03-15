@@ -1141,7 +1141,7 @@ This information is divided into the following sections:
 
 - *Entering a return*
 
-### !Note. A
+### Return quantity types
 
 When a customer returns an item, you must enter the returned item into one or more return quantity types. Quantity types are used to track whether an item is ready for resale or whether it is damaged, being serviced, or in use.
 
