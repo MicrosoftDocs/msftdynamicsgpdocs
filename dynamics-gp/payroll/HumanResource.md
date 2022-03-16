@@ -623,14 +623,15 @@ To modify or delete a time code:
 
 Before you set up the benefits that your company provides for employees, you must define benefit preferences. You will use benefit preferences to define a standard work week and work day for your organization, select a Family and Medical Leave Act (FMLA) year and select a method for tracking FMLA and Consolidated Omnibus Reconciliation Act (COBRA) payments. 
 
-Use the following tips:
-•	Human Resources includes deductions as options within the benefit setup windows. Therefore, all types of Human Resources benefits may funded by the employer, the employee, or both. Garnishments, though they are deductions, are set up in Human Resources as a type of miscellaneous benefit. U.S. Payroll, however, uses separate windows to set up benefits and deductions.
-•	Benefits can be taxable, that is, the employee can be taxed on the value of the benefit received. Benefits can be calculated from net or gross pay or a deduction, as an amount per unit or as a fixed amount. Examples of benefits include insurance premiums and 401(k) matching contributions.
-•	A deduction is an amount that is withheld from an employee’s net, unit or gross pay. For example, a donation to a charity, union dues and contributions to retirement plans could be set up as deductions.
-•	You can set up default benefit and deduction cards and use them for setting up employee benefits and deductions. These cards also can be used to apply changes to several employees’ benefit and deduction cards.
-•	If you’re using U.S. Payroll and you choose the Automatically Update Payroll Benefits and Deductions option in the Benefit Preferences window, the benefit modifications you make using Human Resources will automatically update the corresponding information in Payroll.
-•	If you’ve marked the Payroll View for Human Resources option in the User Setup window, a message will appear to indicate that you must set up the corresponding codes in Payroll after you’ve defined the benefit or deduction in Human Resources to complete the integration.
-•	If you didn’t mark the Payroll View for Human Resources option in the User Setup window, or you set up the benefit or deduction in Payroll, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups.
+Use the following tips:  
+
+- Human Resources includes deductions as options within the benefit setup windows. Therefore, all types of Human Resources benefits may funded by the employer, the employee, or both. Garnishments, though they are deductions, are set up in Human Resources as a type of miscellaneous benefit. U.S. Payroll, however, uses separate windows to set up benefits and deductions.  
+- Benefits can be taxable, that is, the employee can be taxed on the value of the benefit received. Benefits can be calculated from net or gross pay or a deduction, as an amount per unit or as a fixed amount. Examples of benefits include insurance premiums and 401(k) matching contributions.  
+- A deduction is an amount that is withheld from an employee’s net, unit or gross pay. For example, a donation to a charity, union dues and contributions to retirement plans could be set up as deductions.  
+- You can set up default benefit and deduction cards and use them for setting up employee benefits and deductions. These cards also can be used to apply changes to several employees’ benefit and deduction cards.  
+- If you’re using U.S. Payroll and you choose the Automatically Update Payroll Benefits and Deductions option in the Benefit Preferences window, the benefit modifications you make using Human Resources will automatically update the corresponding information in Payroll.  
+- If you’ve marked the Payroll View for Human Resources option in the User Setup window, a message will appear to indicate that you must set up the corresponding codes in Payroll after you’ve defined the benefit or deduction in Human Resources to complete the integration.  
+- If you didn’t mark the Payroll View for Human Resources option in the User Setup window, or you set up the benefit or deduction in Payroll, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups.  
 
 **Granting Payroll view access to a user**
 
@@ -869,13 +870,13 @@ This deduction tier is for reference only and is not required. If most employee 
 
 To set up a deduction tier:  
 
-1. Open a deduction setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Miscellaneous Benefits)
+1. Open a deduction setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Miscellaneous Benefits)  
 
-  You can assign a deduction tier to a Miscellaneous Benefit deduction and a Retirement Plan.
-2. Enter or select a deduction code. 
+    You can assign a deduction tier to a Miscellaneous Benefit deduction and a Retirement Plan.
+2. Enter or select a deduction code.  
 
-  - In the Miscellaneous Benefit Setup window, mark Employee and Multiple and choose Tiers to open the Tiered Deduction Setup window. 
-  - In the Retirement Plans Setup window, select Tiers for the Premium Structure and choose Tiers to open the Tiered Deduction Setup window.
+    - In the Miscellaneous Benefit Setup window, mark Employee and Multiple and choose Tiers to open the Tiered Deduction Setup window.  
+    - In the Retirement Plans Setup window, select Tiers for the Premium Structure and choose Tiers to open the Tiered Deduction Setup window.  
 3. Enter the To amounts for each tier. For example, if the first tier is from zero to $100, you would enter $100 in the To column. The next From amount automatically will be displayed.
 4. Enter the dollar amount or percentage that employees contribute to the plan for each tier.
 5. Choose OK to save your changes. The Miscellaneous Benefit Setup or Retirement Plans Setup window will be displayed.
