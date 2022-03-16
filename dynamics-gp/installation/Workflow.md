@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 08/10/2020
+ms.date: 03/15/2022
 ---
 
 # Workflow Administrator's Guide
@@ -91,3 +91,187 @@ It's important that you know and understand how the Workflow system is deployed 
 In a single-server configuration, all the server-side components (such as Microsoft Dynamics GP, Web Services for Microsoft Dynamics GP, SharePoint, and Workflow) are installed on one server.
 This configuration is recommended for testing and demonstration purposes only. This configuration does not provide the best security or performance.
 
+### Separate web server configuration
+The separate web server configuration consists of two servers. The back office server hosts your Microsoft Dynamics GP database. The web server hosts Web Services for Microsoft Dynamics GP and Workflow.
+This configuration provides better security and performance than the single-server configuration.
+
+### Multiple web server configuration
+The multiple web server configuration consists of one back office server and two or more web servers. The back office server hosts your Microsoft Dynamics GP database and your SharePoint database. The web servers host Web Services for Microsoft Dynamics GP, SharePoint, and Workflow.
+Of the three configurations described in this section, the multiple web server configuration provides the best security and performance.
+
+## Workflow Types
+
+**Purchase Order Approval**
+A purchase order approval workflow is used to gain approval for purchase orders before they are processed. Users can submit purchase orders for approval in the Purchase Order Entry window in Microsoft Dynamics GP.
+
+After purchase orders are approved, you can process them according to your company’s business practices. For example, you can print them and receive shipments.
+Before you can use this workflow, you must clear the Activate Approvals check box in the PO Enhancements Setup window (Purchasing > Setup > Purchase Order Enhancements).
+
+
+![Form](media/WORKPO0001.png)
+
+
+**Sales Quote Approval**
+
+A sales quote approval workflow is used to gain approval for sales quotes before they are processed. Users can submit sales quotes for approval in the Sales Transaction Entry window in Microsoft Dynamics GP.
+
+After sales quotes are approved, you can process them according to your company’s business practices. For example, you can transfer them to orders
+
+
+![Form](media/WORKSALES0001.png)
+
+
+**Customer Credit Limit Override Approval**
+
+A customer credit limit override approval workflow is used to gain approval for orders, fulfillment orders, and invoices that exceed the set credit limits for customers. Users can submit documents that require credit limit override approval in the Sales Transaction Entry window in Microsoft Dynamics GP.
+
+After these documents that exceed credit limits are approved, you can process them according to your company’s business practices.
+Before you can use this workflow, you must remove the password from the Exceed Credit 
+Limit field in the Receivables Management Setup window (Sales > Setup > Receivables).
+
+![Form](media/WORKCCL0001.png)
+
+
+**General Ledger Batch Approval**
+
+A General Ledger batch approval workflow is used to gain approval for General Ledger batches before they are posted. Users can submit General Ledger batches for approval in the Batch Entry window in Microsoft Dynamics GP.
+
+After General Ledger batches are approved, you can post them.  Before you can use this workflow, you must turn off the batch approval feature in Microsoft Dynamics GP. To do so, open the Posting Setup window (Administration > Setup > Posting > Posting) and select the Financial series. Clear the Require Batch Approval check box for the General Entry and Clearing Entry origins.
+
+![Form](media/WORKGLB0001.png)
+
+
+**General Ledger Account Approval**
+
+In Microsoft Dynamics GP 2018, we have a new workflow, General Ledger Account Approval which provides an approval process for adding or editing posting accounts.
+
+If an account is pending approval or rejected then it cannot be posted against.
+
+To access the Workflow Maintenance, from the Administration navigation pane, under setup, choose Company, expand Workflow, and then click Workflow Maintenance, select Financial from the drop down.
+
+[General Ledger Account Workflow](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-general-ledger-account-approval-workflow)
+
+
+**Vendor Approval**
+
+A vendor approval workflow is used to gain approval for new vendor records and modified vendor records. Users can submit vendor records that require approval in the Vendor Maintenance window in Microsoft Dynamics GP.
+
+After the vendor records are approved, you can process them according to your company’s business practices
+
+![Form](media/WORKVENDOR0001.png)
+
+**Payables Transaction Approval**
+
+Microsoft Dynamics GP 2015 R2 now includes the ability to setup workflow for Accounts Payable transactions.  
+
+This is the workflow many customers have been waiting for.  Most companies have a very manual approval process for their AP invoices. Now, you can automate that process based on a variety of criteria.
+
+Simply set up a workflow in Dynamics GP to automate the review process for Accounts Payable Transaction approvals. When invoices meet your customized criteria, such as hitting a specific dollar amount, they can be automatically routed to the appropriate manager for approval. Invoices that don’t meet the criteria can be flagged for review by an authorized user. With the workflow defined, you’ll be able to eliminate the lag time of waiting for a signature and then manually entering the information into Dynamics to process the payment.
+
+To automate your accounts payable approval process, start by creating a workflow with the desired criteria. Attach the vendor invoice to the workflow by scanning it into Dynamics GP directly or by receiving it electronically.  Remember to set up your workflow to include document attachments when the email is sent.
+
+The approving manager can approve, reject, or delegate AP transactions in the following ways:
+
+In the Accounts Payables Transaction Entry window,
+Through the email notification automatically generated by the workflow
+Through the PM Batch Approval workflow.
+
+The approving manager can add comments which will be tracked as part of the approval process. After the invoice is approved, you can easily post it in Dynamics with one click. A complete history of the workflow activities will be maintained for each transaction.
+
+**Payables Management Batch Approval**
+
+A Payables Management batch approval workflow is used to gain approval for Payables Management batches before they are posted. Users can submit Payables Management batches for approval in the Payables Batch Entry window in Microsoft Dynamics GP.
+
+After Payables Management batches are approved, you can post them.  Before you can use this workflow, you must turn off the batch approval feature in Microsoft 
+Dynamics GP. To do so, open the Posting Setup window (Administration > Setup > Posting > Posting) and select the Purchasing series. Clear the Require Batch Approval check box for the Payables Trx Entry, Payment Entry, and Computer Checks origins.
+
+![Form](media/WORKPAYB0001.png)
+
+**Purchase Order Approval**
+
+New enhancements to Purchase orders allow you to set up a limited way to allow purchase order approvals in Microsoft Dynamics GP without having to add on any additional software.
+
+The approval set up button will show you the list of users you have available in Microsoft Dynamics GP. There you will see the approval type where you can set up levels and restrictions based on dollar amounts. Then you assign who that user reports to.
+
+Then you can choose the security type:
+
+The user can only approve POs for users that report to them
+The user can approve POs for any user up to the approval authority.
+Keep in mind the approval settings are specifically based on dollar amount and security type.
+
+If you don’t mark anyone, it will tell you it recommends you set up one user with unlimited approval authority. Without that person, you won’t have anyone that can go in and fix any errors or stuck approvals in the system.
+
+**Purchase Requisition Approval**
+
+Purchase Requisition function in Dynamics GP can be controlled by workflow to help you better control your procurement function in your organization.
+
+Any employee with security permission to enter requisitions into Microsoft Dynamics GP can do so. Go to Purchasing > Setup > Purchase Order Processing to open the Purchase Order Processing Setup window, and click the Requisitions button at the bottom to open the Requisition Setup window. Here you can select to limit each user to seeing only requisitions that they requested themselves, or you can select to enable them to see all requisitions (or you can prohibit a user from seeing any).
+
+**Purchase Receiving Approval**
+
+In Microsoft Dynamics GP 2018, we have a new workflow, Receivings Transaction Approval for purchase receiving transactions (PO Invoices)
+
+The Purchase Receivings Transaction Approval workflow allows users to define workflows for shipment receipts and shipment/invoice receipts in the Receivings Transaction Entry window. To open the Receivings Transaction Entry window: On the Transactions menu, point to Purchasing, click Receivings Transaction Entry.
+
+Along with this new workflow, we also have a corresponding email message for Purchase Receiving Transactions workflow: To access the Message Setup, from the Administration navigation pane, under setup, choose Company, expand Workflow, and then click E-mail Message Setup.
+
+[Purchase Receiving Approval Workflow](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-purchasing-receivings-transaction-workflow)
+
+**Receivables Management Batch Approval**
+
+A Receivables Management batch approval workflow is used to gain approval for Receivables Management batches before they are posted. Users can submit Receivables Management batches for approval in the Receivables Batch Entry window in Microsoft Dynamics GP.
+
+After Receivables Management batches are approved, you can post them. Before you can use this workflow, you must turn off the batch approval feature in Microsoft Dynamics GP. To do so, open the Posting Setup window (Administration > Setup > Posting > Posting) and select the Sales series. Clear the Require Batch Approval check box for the Receivables Sales Entry and Receivables Cash Receipts origins
+
+![Form](media/WORKRECEB0001.png)
+
+**Sales Transaction Approval**
+
+In Microsoft Dynamics GP 2018 R2, we have added a new Sales Transaction Approval workflow where you can create approvals based on several conditions such as whether or not a Customer Credit Limit is exceeded on the transaction.
+
+[Sales Transaction Approval Workflow Including Credit Limit](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-r2-sales-transaction-workflow-including-credit-limit)
+
+**Employee Approval**
+
+An employee onboard approval workflow helps you manage the process of onboarding a new employee. Users can submit employee records that require additional onboarding steps in the Employee Maintenance window in Microsoft Dynamics GP.
+
+After the employee onboard approval process is complete, you can include the employee in payroll builds.
+
+An employee personnel approval workflow helps you manage the process of making changes to employee records. Users can submit changed employee records that require additional steps in the Employee Maintenance window in Microsoft Dynamics GP
+
+This workflow includes the following types that you can Activate:
+Employee Profile Approval for onboarding and employee maintenance changes.
+Employee Skills Approval
+Payroll Direct Deposit Approval
+Payroll Timecard Approval
+Payroll W4 Approval
+
+**Project Expense Report Approval**
+
+Dynamics GP 2015 R2 allows Project Accounting employees to create expense reports for any projects to which they are assigned. Employees can also be set up to allow delegates to enter expense reports on their behalf.
+
+Workflow approvals and task assignments are defined for expense reports; workflow actions are executed on the documents from the Expense Entry window or from the Navigation lists.
+
+**Project Timesheet Approval**
+
+This feature allows an employee easy access to Project time entry. Time for a single week, or multiple weeks within a reporting period can be saved on a single document. Timesheets can be saved as templates for even easier future use.
+
+Project employee timesheets are submitted to workflow for approval and then are automatically sent for processing to payroll.
+
+There is also a new Project Time and Expense section that can be added to the Home page. This allows users to quickly see the active Timesheets and Expenses they have entered. Users can also enter or approve Timesheets and Expenses, and they can see a list of recent documents.
+
+**Administration Approval**
+
+In Microsoft Dynamics GP, we've added four new workflows around users and user security. These new workflows are:
+
+--Security Roles Approval - You can also add an Approval Workflow for additions and changes to Security Roles to better control access to your system and processes.
+
+--Security Task Approval - You can add an Approval Workflow for additions and changes to Security Tasks to better control access to your system and processes.
+
+--User Approval - You can add an Approval Workflow for changes in User Security to better control your system processes.
+
+--User Security Approval - You can add an Approval Workflow for changes in User Security to better control your system processes.
+
+These will be helpful if you want to add an approval component to various security settings in GP.
+
+[Administration Workflow Approval](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---user-workflow-user-security-workflow-security-task-workflow-and-security-role-workflow-1033134577)
