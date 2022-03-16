@@ -8,7 +8,7 @@ Welcome to the repository for documentation and guides for Microsoft Dynamics GP
 
 The *live* branch has been updated for the latest release of Dynamics GP with most recent tax updates.
 
-If you have any questions, please contact the Dynamics SMB User Assistance (UA) team at nav-olh@microsoft.com.
+If you have any questions, you can submit feedback as an Issue or a pull request.
 
 ## Getting started
 
