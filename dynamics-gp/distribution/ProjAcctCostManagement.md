@@ -256,9 +256,7 @@ project costs and billing customers* on page 17 for more information.
 **Microsoft Dynamics GP menu \> Tools \> Setup \> Purchasing \> Vendor Class
 \> select a Class ID \> Project button**
 
-    PACM 4.JPEG
-
-    ![Screenshot of the PA Vendor Class Options window showing Default PO Format to Use highlighted.](media/051e992556a8e343d2f4096c675d8d78.jpg)
+![Screenshot of the PA Vendor Class Options window showing Default PO Format to Use highlighted.](media/PACM4.jpg)
 
 
 1. Select the default purchase order format to use when printing purchase
@@ -285,9 +283,9 @@ customers.
 
 1. Open the PA Vendor Options window.
 
-    Cards \> Purchasing \> Vendor \> select a Vendor ID \> Project button
+**Cards \> Purchasing \> Vendor \> select a Vendor ID \> Project button**
 
-    ![Screenshot of the PA Vendor Class Options window.](media/PACM 5.JPEG)
+![Screenshot of the PA Vendor Class Options window.](media/PACM4.jpg)
 
 1. Select the default purchase order format to use when printing purchase
     orders for the vendor.
@@ -340,11 +338,7 @@ information.
 
 **Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Equipment Class**
 
-PACM 6.JPEG
-
 ![Screenshot of the Equipment Class Setup window.](media/PACM6.jpg)
-
-A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
@@ -375,7 +369,7 @@ view them.
 
 1. Open the Equipment Maintenance window. **Cards \> Project \> Equipment**
 
-![Screenshot of the Equipment Maintenance window.](media/PACM 7.JPEG)
+![Screenshot of the Equipment Maintenance window.](media/PACM 7.jpg)
 
 1. Select an equipment ID.
 
@@ -406,9 +400,9 @@ page 22 for more information.
 
 1. Open the Miscellaneous Class Setup window.
 
-    **Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Miscellaneous Class**
+ **Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Miscellaneous Class**
 
-    ![Screenshot of the Miscellaneous Class Setup window.](media/PACM 8 .JPEG)
+![Screenshot of the Miscellaneous Class Setup window.](media/PACM 8.jpg)
 
 1. Select a class ID.
 
@@ -437,7 +431,7 @@ Maintenance \> Miscellaneous) to view them.
 
 1. Open the Miscellaneous Maintenance window. **Cards \> Project \> Miscellaneous**
 
-![Screenshot of the Miscellaneous Maintenance window.](media/PACM 9. JPEG)
+![Screenshot of the Miscellaneous Maintenance window.](media/PACM 9.jpg)
 
 1. Select a miscellaneous ID.
 
@@ -498,14 +492,12 @@ page 85 for more information.
 1. Open the PA Employee Rate Table Maintenance window. **Cards \> Project \>
     Employee Rate Table**
 
-PACM 10.JPEG
-
-![Screenshot of the PA Employee Rate Table Maintenance window.](PACM 10.jpg)
+![Screenshot of the PA Employee Rate Table Maintenance window.](media/PACM 10.jpg)
 
 1. Enter a rate table ID, date, and description. The date is for information
     only.
 
-    You can click the **Rate Table ID** wizard button to copy information from another rate table or to include all employee records and their corresponding pay codes in the rate table. See [Copy information from another rate table](#copy-information-from-another-rate-table) and [Include all employees in a rate table](#include-all-employees-in-a-rate-table)  for more information.
+You can click the **Rate Table ID** wizard button to copy information from another rate table or to include all employee records and their corresponding pay codes in the rate table. See ![Copy information from another rate table](#copy-information-from-another-rate-table) and ![Include all employees in a rate table](#include-all-employees-in-a-rate-table)  for more information.
 
 1. Select the default profit type to be displayed in the **Profit Type** column
     when entering line items.
