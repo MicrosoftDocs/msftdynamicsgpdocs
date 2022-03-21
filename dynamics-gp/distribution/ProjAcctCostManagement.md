@@ -369,7 +369,7 @@ view them.
 
 1. Open the Equipment Maintenance window. **Cards \> Project \> Equipment**
 
-![Screenshot of the Equipment Maintenance window.](media/PACM 7.jpg)
+![Screenshot of the Equipment Maintenance window.](media/PACM6.jpg)
 
 1. Select an equipment ID.
 
