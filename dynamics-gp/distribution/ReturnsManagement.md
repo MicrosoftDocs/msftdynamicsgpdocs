@@ -142,8 +142,6 @@ Management is integrated with the other modules of the Field Service Series
 (Service Call Management, Preventive Maintenance, Contract Administration,
 and Depot Management), many new options and paths become available.
 
-IMAGE – FARM1.jpg
-
 ![Outline of the RMA life cycle.](media/FARM1.jpg)
 
 A close up of a logo Description automatically generated
@@ -200,8 +198,6 @@ greater stages of the RTV document life cycle are covered. When Returns
 Management is integrated with the other modules of the Field Service Series
 (Service Call Management, Preventive Maintenance, Contract Administration,
 and Depot Management), many new options and paths become available.
-
-IMAGE – FARM2.jpg
 
 ![Outline of the RTV life cycle.](media/FARM2.jpg)
 
@@ -469,8 +465,6 @@ common entries in the RMA Entry/Update windows.
 
 1. Open the RMA Type Maintenance window. Cards \> Returns Management \> RMA
     Types
-
-IMAGE – FARM4.jpg
 
 ![Screenshot of the RMA Type Maintenance window.](media/FARM4.jpg)
 
@@ -806,8 +800,6 @@ a service call is invoiced for the current customer and site combination.
 
 3. Click **Save**.
 
-IMAGE – FARM6.jpg
-
 ![Screenshot of the Customer Extensions window.](media/FARM6.jpg)
 
 A screenshot of a cell phone Description automatically generated
@@ -826,8 +818,6 @@ sold by your company.
     the Service Call Management manual.
 
 3. Click **Save**.
-
-IMAGE – FARM7.jpg
 
 ![Screenshot of the Warranty Maintenance window.](media/FARM7.jpg)
 
@@ -874,8 +864,6 @@ location for the equipment.
     maintenance cards* of the Contract Administration manual.
 
 4. Click **Save**.
-
-IMAGE – FARM8.jpg
 
 ![Screenshot of the Equipment Maintenance window.](media/FARM8.jpg)
 
@@ -1080,8 +1068,6 @@ Installed.
     RMA transaction.
 
 14. Click **Save**.
-
-IMAGE – FARM9.jpg
 
 ![Screenshot of the RMA Entry/Update window.](media/FARM9.jpg)
 
@@ -1386,8 +1372,6 @@ This table is based on the Posting Accounts **From** option (**Item** or
 **Customer**) selected in the Sales Order Processing Setup window.
 
 (Microsoft Dynamics GP menu \> Tools \> Setup \> Sales \> Sales Order Processing)
-
-IMAGE – FARM10.jpg
 
 ![Table showing the Location information for each Posting Account.](media/FARM10.jpg)
 
@@ -1875,8 +1859,6 @@ in the RMA – Kit Components window to specify bins for kit components.
 
 5. Click **Post**.
 
-IMAGE – FARM11.jpg
-
 ![Screenshot of the Sales Order Processing Setup window.](media/FARM11.jpg)
 
 A screenshot of a cell phone Description automatically generated
@@ -1932,8 +1914,6 @@ The following table explains how the account field is populated.
     records posted during the closing process.
 
 6. Click **Post**.
-
-IMAGE – FARM12.jpg
 
 ![Screenshot of the RMA Closing window.](media/FARM12.jpg)
 
@@ -2210,8 +2190,6 @@ You can access the Internet tracking pages for delivery services.
     transfer the inventory quantities specified and the **Shipped** field will
     be updated to reflect the quantity actually shipped.
 
-IMAGE – FARM14.jpg
-
 ![Screenshot of the In–Transit Transfer Entry window.](media/FARM14.jpg)
 
 A screenshot of a cell phone Description automatically generated
@@ -2437,8 +2415,6 @@ the **Printer** icon in the RMA Type Maintenance window.
 
 The following table lists the report types available in Returns Management
 and the reports included in those categories.
-
-IMAGE – FARM15.jpg
 
 ![List of reports and printing methods by Report type.](media/FARM15.jpg)
 
