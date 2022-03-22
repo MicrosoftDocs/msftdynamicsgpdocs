@@ -599,7 +599,7 @@ The following table lists the windows and how to open them.
 |----------------|----------------------------------------------------------------------------------------------------------------|
 | Employee       | Cards \> Project \> Employee Rate Table \> Enter a rate table ID \> Rate Table ID wizard button                |
 | Position       | Cards \> Project \> Position Rate Table \> Enter a rate table ID \> Rate Table ID wizard button                |
-| Equipment      | Cards \> Project \> Equipment Rate Table \> Enter a rate table ID \> Rate Table ID wizard button PACM 13. JPEG |
+| Equipment      | Cards \> Project \> Equipment Rate Table \> Enter a rate table ID \> Rate Table ID wizard button |
 
 ![Screenshot of the Employee Rate Table Wizard window.](media/PACM%2013.jpg)
 
@@ -1175,8 +1175,6 @@ business processes.
 Status button**
 
 ![Screenshot of the Project Setup – Status Options window.](media/PACM%2024.jpg)
-
-A screenshot of a computer Description automatically generated
 
 A screenshot of a computer Description automatically generated
 
@@ -1815,7 +1813,7 @@ See *Create a contract record* on page 62 for more information.
 
 1. Open the Contract Class Setup window.
 
-**Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Contract ClasS**
+**Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Contract Class**
 
 ![Screenshot of the Contract Class Setup window.](media/PACM%2032.jpg)
 
@@ -3768,8 +3766,6 @@ You can use a change order to enter quote information for a project.
 **Cards \> Project \> Change Order Entry \> Budget Changes button \> Project
 Number expansion button**
 
-PACM 60.JPEG
-
 ![Screenshot of the Change Order Budget Information window.](media/PACM%2060.jpg)
 
 1. You can enter initial and final quote amounts and enter the names of the
@@ -3791,8 +3787,6 @@ in a project budget.
 
 3. Select a project and cost category. Click the **Cost Category ID** expansion
     button to open the Change Order Budget Detail Entry window.
-
-PACM 61.JPEG
 
 ![Screenshot of the Change Order Budget Detail Entry window.](media/PACM%2061.jpg)
 
