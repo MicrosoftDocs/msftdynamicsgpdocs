@@ -494,7 +494,7 @@ page 85 for more information.
 1. Enter a rate table ID, date, and description. The date is for information
     only.
 
-You can click the **Rate Table ID** wizard button to copy information from another rate table or to include all employee records and their corresponding pay codes in the rate table. See ![Copy information from another rate table](#copy-information-from-another-rate-table) and ![Include all employees in a rate table](#include-all-employees-in-a-rate-table)  for more information.
+You can click the **Rate Table ID** wizard button to copy information from another rate table or to include all employee records and their corresponding pay codes in the rate table. See [Copy information from another rate table](#copy-information-from-another-rate-table) and [Include all employees in a rate table](#include-all-employees-in-a-rate-table)  for more information.
 
 1. Select the default profit type to be displayed in the **Profit Type** column
     when entering line items.
