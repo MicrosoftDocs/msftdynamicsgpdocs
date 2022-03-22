@@ -938,7 +938,7 @@ for forecast budget amounts will be used.
 3. Open the Copy Project from Template window. **Template \> Copy from
     Template**
 
-![Screenshot of the Project Maintenance window.](media/PACM%2020.jpg)
+![Screenshot of the Project Template window.](media/PACM%2020.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
