@@ -737,7 +737,7 @@ You can specify billing settings for a contract template.
 
 3. Click **Contract Settings** to open the Contract Template Settings window.
 
-![Screenshot of the Contract Template Maintenance window.](media/PACM%2015.jpg)
+![Screenshot of the Contract Template Settings window.](media/PACM%2015.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2588,7 +2588,7 @@ Project \> Budget button) to view them.*
 
 3. Click **Budget** to open the Budget Maintenance window.
 
-![Screenshot of the Budget Maintenance window.](media/PACM%2044.jpg)
+![Screenshot of the Project Maintenance window.](media/PACM%2044.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
