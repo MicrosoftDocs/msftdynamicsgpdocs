@@ -523,9 +523,7 @@ Use the **Manufacturing Series Sales Order Preferences** window to specify how d
 1. Open the Manufacturing Series Sales Order Preferences window.
  (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Sales \>\> Sales Order Processing \>\> Additional \>\> Manufacturing Sales Order Prefs)
 
-IMAGE – MFGSOP.jpg
-
-![Screenshot of the Manufacturing Series Sales Order Preferences window.](media/MFGSOP.jpg)
+    ![Screenshot of the Manufacturing Series Sales Order Preferences window.](media/MFGSOP.jpg)
 
 1. To be warned when you schedule a sales order due date on a date that is a
     company-wide down day, mark Check “Down Days.” You also can specify how the
@@ -629,9 +627,7 @@ documentation for more information.*
     Tools \>\> Setup \>\> Sales \>\> Sales Order Processing \>\> Additional \>\>
     Order Fulfillment Setup)
 
-IMAGE – MFGOFS.jpg
-
-![Screenshot of the Order Fulfillment Setup window.](media/MFGOFS.jpg)
+    ![Screenshot of the Order Fulfillment Setup window.](media/MFGOFS.jpg)
 
 1. Enter or select the default shipping method.
 
@@ -687,9 +683,7 @@ IMAGE – MFGOFS.jpg
 1. Open the Routing Preference Defaults window. (Microsoft Dynamics GP menu
     \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> Routings)
 
-IMAGE – MFGRPD.jpg
-
-![Screenshot of the Routing Preference Defaults window.](media/MFGRPD.jpg)
+    ![Screenshot of the Routing Preference Defaults window.](media/MFGRPD.jpg)
 
 1. Determine how planning routings should be updated.
  **Compare as Number** If all planning routing sequence numbers are numeric, mark Compare as Number.
@@ -801,9 +795,8 @@ information.*
 1. Open the Scheduling Preferences window. (Microsoft Dynamics GP menu \>\>
     Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> MO Schedule
     Prefs)
- IMAGE - MFGSP.jpg
 
-![Screenshot of the Scheduling Preferences window.](media/MFGSP.jpg)
+    ![Screenshot of the Scheduling Preferences window.](media/MFGSP.jpg)
 
 1. Enter the name of the scheduling preference.
 
@@ -884,9 +877,8 @@ information.
 1. Open the Manufacturing Order Preference Defaults window. (Microsoft Dynamics
     GP menu \>\> Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\>
     Manufacturing Orders)
- IMAGE – MFGOPD.jpg
 
-![A screenshot of a social media post Description automatically generated](media/MFGOPD.jpg)
+    ![A screenshot of a social media post Description automatically generated](media/MFGOPD.jpg)
 
 1. Enter beginning identifiers for manufacturing orders, for receipts, and for
     pick documents. You can use letters and numbers.
@@ -1048,9 +1040,8 @@ Choose OK.
 
 1. Open the WIP Preference Defaults window. (Microsoft Dynamics GP menu \>\>
     Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> WIP)
- IMAGE – MFGWIP.jpg
 
-![Screenshot of the WIP Preference Defaults window.](media/MFGWIP.jpg)
+    ![Screenshot of the WIP Preference Defaults window.](media/MFGWIP.jpg)
 
 1. Mark Always Use Standard Labor Rate if costs associated with a job should
     reflect the standard labor rate rather than the specific labor rate for each
@@ -1178,9 +1169,7 @@ Refer to*
 1. Open the ECM System Preferences window. (Microsoft Dynamics GP menu \>\>
     Tools \>\> Setup \>\> Manufacturing \>\> System Defaults \>\> ECM)
 
-IMAGE – MFGECM.jpg
-
-![Screenshot of the ECM System Preferences window.](media/MFGECM.jpg)
+    ![Screenshot of the ECM System Preferences window.](media/MFGECM.jpg)
 
 1. To change order numbers to be generated automatically, enter the first
     number to be used in the Next EC Number field.
