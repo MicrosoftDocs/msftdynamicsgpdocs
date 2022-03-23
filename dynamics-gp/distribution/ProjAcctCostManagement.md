@@ -260,7 +260,6 @@ PACM 4.JPEG
 
 ![Screenshot of the PA Vendor Class Options window showing Default PO Format to Use highlighted.](media/PACM4.jpg)
 
-
 1. Select the default purchase order format to use when printing purchase
     orders for vendors in the class.
 
@@ -287,7 +286,7 @@ customers.
 
     Cards \> Purchasing \> Vendor \> select a Vendor ID \> Project button
 
-    ![Screenshot of the PA Vendor Class Options window.](media/PACM%205.JPEG)
+![Screenshot of the PA Vendor Class Options window.](media/PACM5.jpg)
 
 1. Select the default purchase order format to use when printing purchase
     orders for the vendor.
