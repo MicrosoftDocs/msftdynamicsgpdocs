@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 01/20/2022
+ms.date: 03/22/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -21,6 +21,39 @@ This article provides guidance for how to install the 2022 U.S. Payroll Tax Upda
 The second tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+## Changes in March Round 3 update (Released 3/23/2022)
+
+- Colorado
+
+### 2022 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for Colorado
+
+In January the state of Colorado released a new form for 2022 called [DR-0004](https://tax.colorado.gov/withholding-forms) this is optional for an employee to complete.  This new form does not coincide with our tax tables very well, so a new tax update was released.
+
+All filing status have the same fixed flat tax of 4.55%
+
+**The following new filing status were added:**
+HOH1J - Head of Household 1 Job - Exemption amount  $16,500
+MAR1J - Married Filing Jointly 1 Job - Exemption amount  $23,000
+SIN1J - Single/Mar filing Single 1 Job - Exemption amount  $10,500
+
+**Existing Filing Status remain unchanged:**
+MAR - Married  - Exemption amount  $8,000
+SINGLE - Single  - Exemption amount  $4,000
+
+There are 2 other parts to this form that have many different exemption amounts, we cannot accommodate all of them in the tax tables.
+A new “OTHER” filing status was added (OTH1J) with Exemption increments of $500 that will accommodate all the "other" amounts on the form if an employee enters.  
+OTH1J - OTH, +1 Jobs or Child Cr Allow - Exemption amount of $500
+
+As an example, lets say I fill out the form and choose an amount of 2500 – it does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances.
+Which is 2500/500 = 5
+
+Another example, I put 5500 on the form, again does not match the other filing status, so I choose other and put 11.
+
 
 ## Changes in January Round 2 update (Released 1/20/2022)
 
@@ -897,7 +930,7 @@ Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a f
 
 ## Installing the tax update
 
-The Round 1 2022 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The Round 3 2022 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -920,7 +953,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *1/18/2022*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *3/15/2022*.
 
 ## What's next
 
