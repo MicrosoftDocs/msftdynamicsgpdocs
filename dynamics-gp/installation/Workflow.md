@@ -115,7 +115,7 @@ Workflow includes functionality to remotely approve a workflow step. The remote 
 
 This documentation describes how to use Web Services for Microsoft Dynamics GP, which you can use to build database integrations. 
 
-[WebService](http://www.microsoft.com/en-us/download/details.aspx?id=36223)
+[WebService](https://www.microsoft.com/en-us/download/details.aspx?id=36223)
 
 
 ## Workflow Types
