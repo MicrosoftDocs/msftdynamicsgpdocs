@@ -407,7 +407,7 @@ page 22 for more information.
 
     **Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Miscellaneous Class**
 
-    ![Screenshot of the Miscellaneous Class Setup window.](media/PACM%208 .JPEG)
+![Screenshot of the Miscellaneous Class Setup window.](media/PACM%208.jpg)
 
 1. Select a class ID.
 
@@ -499,7 +499,7 @@ page 85 for more information.
 
 PACM 10.JPEG
 
-![Screenshot of the PA Employee Rate Table Maintenance window.](PACM 10.jpg)
+![Screenshot of the PA Employee Rate Table Maintenance window.](media/PACM%2010.jpg)
 
 1. Enter a rate table ID, date, and description. The date is for information
     only.
@@ -716,7 +716,7 @@ in it.
 
 PACM 14.JPEG
 
-![Screenshot of the Contract Template Maintenance window.](PACM 14.jpg)
+![Screenshot of the Contract Template Maintenance window.](media/PACM%2014.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
