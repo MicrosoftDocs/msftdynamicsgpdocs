@@ -159,7 +159,7 @@ The following steps describe how to configure the web client for a tenant:
     |CustomRuntimeSettings | Specify whether enable more detailed logging for the application. To enable logging, set one or more values to true. The default value is: ScriptLogEnabled=false<br>TimingLogEnabled=false<br>SqlLogEnabled=false|
     |SQLUserName | The name for the SQL login that was specified to be used for the web client when the web client runtime was installed for the Microsoft Dynamics GP instance.|
     |SQLPassword | The password for the SQL login being used for the web client for the Microsoft Dynamics GP instance.|
-    |RuntimeProcessUserName | The name of the Windows account that the runtime process will run as when a user logs in using an |Organizational Account. You only need to provide a value if you are using Organizational Accounts.|
+    |RuntimeProcessUserName | The name of the Windows account that the runtime process will run as when a user logs in using an Organizational Account. You only need to provide a value if you are using Organizational Accounts.|
     |RuntimeProcessPassword | The password for the Windows account used to run the runtime process.|
 
 8. Click Save.
