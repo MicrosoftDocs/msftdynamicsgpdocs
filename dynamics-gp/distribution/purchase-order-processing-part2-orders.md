@@ -896,11 +896,11 @@ For example, assume that two different departments submitted requests for a fax 
 
 **Requested by**
 
-| 1 | FAX001   | FAX           | Each | North | 1 | \$450.75 | \$450.75 | Support |   |   |
-|---|----------|---------------|------|-------|---|----------|----------|---------|---|---|
-| 2 | PHONE001 | TELEPHONE     | Each | North | 1 | \$ 75.87 | \$ 75.87 | Support |   |   |
-| 3 | FAX001   | FAX           | Each | North | 1 | \$450.75 | \$450.75 | Admin   |   |   |
-| 4 | DESK001  | COMPUTER DESK | Each | South | 1 | \$750.99 | \$750.99 | Admin   |   |   |
+| 1 | FAX001   | FAX           | Each | North | 1 | \$450.75 | \$450.75 | Support |
+|---|----------|---------------|------|-------|---|----------|----------|---------|
+| 2 | PHONE001 | TELEPHONE     | Each | North | 1 | \$ 75.87 | \$ 75.87 | Support |
+| 3 | FAX001   | FAX           | Each | North | 1 | \$450.75 | \$450.75 | Admin   |
+| 4 | DESK001  | COMPUTER DESK | Each | South | 1 | \$750.99 | \$750.99 | Admin   |
 
 If you choose to combine similar items on a purchase order and the shipping method and address information are the same for both line items, the following line items would be printed on the purchase order as.
 
