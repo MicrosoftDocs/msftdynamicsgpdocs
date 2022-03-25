@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 2/14/2022
+ms.date: 3/23/2022
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -5522,6 +5522,74 @@ To void checks, the checks must meet several conditions.
 If you're keeping check and transaction history, information for the original check and the voided check will be printed on history reports. The voided check amounts will be negative. The voided checks also will be indicated by an asterisk on the Check History Report.
 
 Depending on how your Payroll system has been set up, several reports might be printed when you choose Process—including the Check Posting Register and Check Register. The Check Posting Register is like the Void Payroll Checks Edit List and shows the details for each transaction that has been posted.
+
+If you receive an error message:
+“There are no checks in this range to void for this checkbook ID and year”. 
+
+“One or more checks cannot be voided because errors exist. To verify the checks that cannot be voided, print an Edit List, and unmark the checks that contain errors. Then, choose Process to continue.” 
+
+Several things must exist for the Void Check feature to work in Payroll. If any of the below data conditions exist or are missing, this maybe the reason why a check cannot be voided. If a payroll interruption occurred this could have created bad data in the tables by not updating the tables correctly.  
+
+The check you are trying to void must exist in both:  
+
+Check History table UPR30100 HR & Payroll >> Inquiry >> Payroll >> Check History and 
+Transaction History table UPR30300 HR & Payroll >> Inquiry >> Payroll >> Transaction History. 
+
+The check cannot have a duplicate check number in the check history table. Execute this statement to see if duplicates exist. 
+Select * from UPR30100 where CHEKNMBR ='XXXX' –replace XXXX with the check number you are trying to void. 
+
+If leading zeros are not used in the check number (Cards >> Financial >> Checkbook), the system may see duplicate check numbers because GP reads check numbers from left to right. This is why it is highly recommended to use leading zeros in check numbers. 
+
+If no leading zeros are used GP will see duplicate check numbers: 
+101 
+1011 
+
+If leading zeros are used GP will not see duplicate check numbers: 
+00101 
+01011 
+
+The check must be available to be reconciled in the Bank Reconciliation module. 
+
+Go into SQL Server Management Studio execute these statements:  
+
+The data results for these columns RECONUM, Recond, VOIDED must all equal 0 for the check to appear in the void window. If any of these columns has a ‘1’ the check will not appear in the void window. 
+
+Select RECONUM, Recond, VOIDED, * from CM20200 where SRCDOCNUM  = 'XXXX' –replace XXXX with the check number you are trying to void. 
+
+If the data returned displays duplicate check numbers, you cannot void the check even if the duplicate check numbers are from different modules. 
+
+Select * from CM20200 where CMTrxNum ='XXXX'–replace XXXX with the check number you are trying to void. 
+
+The check must fall within the current year. 
+
+The check you are trying to void contains a pay code, deduction code, and/or benefit code that has not been assigned to the employee in GP. This can only occur when payroll transactions are imported into GP. Core Dynamics GP will not allow a user to manually enter a transaction which contains a pay code, deduction code, and/or benefit code that is not currently assigned to the employee (but transactions with codes not assigned to the employee can be imported and posted in GP). 
+
+Go to Check History Inquiry window: Inquiry >> Payroll >> Check History.  
+
+Select the employee id with the check that needs to be voided. 
+
+Highlight the line that contains the problem check number >> click on the Transactions button to open the Payroll Transaction Inquiry window.  
+
+Note all the pay codes, deduction codes, and benefits codes associated with the check. 
+
+Run the following select statements in SQL Server Management Studio replacing XXX with the problem employee id: The data returned is telling what codes are assigned to the employee. 
+
+SELECT * FROM UPR00400 WHERE EMPLOYID = 'XXX' /*PAY CODE MASTER*/ 
+
+SELECT * FROM UPR00500 WHERE EMPLOYID = 'XXX' /*DEDUCTION MASTER*/ 
+
+SELECT * FROM UPR00600 WHERE EMPLOYID = 'XXX' /*BENEFIT MASTER*/ 
+
+Look for any codes included in the check that are not assigned to the employee.  
+
+If there are codes in the check that are not assigned to the employee, you should be able to resolve the problem by assigning the employee to the code(s) included on the check that the employee is not currently assigned to.  
+
+To add codes to the employee record, go to: 
+Cards >> Payroll >> Pay Code 
+Cards >> Payroll >> Deduction  
+Cards >> Payroll >> Benefits. 
+
+After adding the code(s) to the employee record, try voiding the check again. If the check still cannot be voided you will have to back out the check by creating a negative manual check, noted in this section above.
 
 #### Reprinting paystubs and earnings statements
 
