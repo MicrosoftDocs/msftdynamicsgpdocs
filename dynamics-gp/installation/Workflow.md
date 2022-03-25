@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/17/2022
+ms.date: 03/25/2022
 ---
 
 # Workflow Administrator's Guide
@@ -127,7 +127,7 @@ A purchase order approval workflow is used to gain approval for purchase orders 
 After purchase orders are approved, you can process them according to your company’s business practices. For example, you can print them and receive shipments.
 Before you can use this workflow, you must clear the Activate Approvals check box in the PO Enhancements Setup window (Purchasing > Setup > Purchase Order Enhancements).
 
-![Form](media/WORKPO0001.png)
+![Purchase Order Enhancements](media/WORKPO0001.png)
 
 ### Sales Quote Approval
 
@@ -136,7 +136,7 @@ A sales quote approval workflow is used to gain approval for sales quotes before
 After sales quotes are approved, you can process them according to your company’s business practices. For example, you can transfer them to orders
 
 
-![Form](media/WORKSALES0001.png)
+![Form Sales Transaction Entry](media/WORKSALES0001.png)
 
 ### Customer Credit Limit Override Approval
 
@@ -146,7 +146,7 @@ After these documents that exceed credit limits are approved, you can process th
 Before you can use this workflow, you must remove the password from the Exceed Credit 
 Limit field in the Receivables Management Setup window (Sales > Setup > Receivables).
 
-![Form](media/WORKCCL0001.png)
+![Exceed Credit Limit field in the Receivables Management Setup window](media/WORKCCL0001.png)
 
 ### General Ledger Batch Approval
 
@@ -154,7 +154,7 @@ A General Ledger batch approval workflow is used to gain approval for General Le
 
 After General Ledger batches are approved, you can post them.  Before you can use this workflow, you must turn off the batch approval feature in Microsoft Dynamics GP. To do so, open the Posting Setup window (Administration > Setup > Posting > Posting) and select the Financial series. Clear the Require Batch Approval check box for the General Entry and Clearing Entry origins.
 
-![Form](media/WORKGLB0001.png)
+![The Require Batch Approval check box ](media/WORKGLB0001.png)
 
 ### General Ledger Account Approval
 
@@ -172,7 +172,7 @@ A vendor approval workflow is used to gain approval for new vendor records and m
 
 After the vendor records are approved, you can process them according to your company’s business practices
 
-![Form](media/WORKVENDOR0001.png)
+![Vendor Maintenance window](media/WORKVENDOR0001.png)
 
 ### Payables Transaction Approval
 
@@ -199,7 +199,7 @@ A Payables Management batch approval workflow is used to gain approval for Payab
 After Payables Management batches are approved, you can post them.  Before you can use this workflow, you must turn off the batch approval feature in Microsoft 
 Dynamics GP. To do so, open the Posting Setup window (Administration > Setup > Posting > Posting) and select the Purchasing series. Clear the Require Batch Approval check box for the Payables Trx Entry, Payment Entry, and Computer Checks origins.
 
-![Form](media/WORKPAYB0001.png)
+![Require Batch Approval check box](media/WORKPAYB0001.png)
 
 ### Purchase Order Approval
 
@@ -237,7 +237,7 @@ A Receivables Management batch approval workflow is used to gain approval for Re
 
 After Receivables Management batches are approved, you can post them. Before you can use this workflow, you must turn off the batch approval feature in Microsoft Dynamics GP. To do so, open the Posting Setup window (Administration > Setup > Posting > Posting) and select the Sales series. Clear the Require Batch Approval check box for the Receivables Sales Entry and Receivables Cash Receipts origins
 
-![Form](media/WORKRECEB0001.png)
+![Require Batch Approval check box for sales](media/WORKRECEB0001.png)
 
 ### Sales Transaction Approval
 
@@ -312,7 +312,7 @@ When you set up the Workflow system, you’ll specify a manager for each type of
 The originator is the person who submits a document, master record, or batch for approval. For example, in the following workflow illustration, Sam is the purchase order originator.
 You’ll specify who the originators are when you create and configure a workflow
 
-![Form](media/WORKORIG0001.png)
+![Diagram](media/WORKORIG0001.png)
 
 
 ### Approver
@@ -321,7 +321,7 @@ The approver is the person responsible for reviewing a document, master record, 
 In the following workflow illustration, Frank, Sue, and Ann are approvers.
 You’ll specify who the approvers are when you create and configure each workflow step.
 
-![Form](media/WORKORIG0001.png)
+![Diagram again](media/WORKORIG0001.png)
 
 ### Delegate
 
@@ -329,7 +329,7 @@ A delegate is a person who can act on a workflow task on behalf of someone else.
 For example, if Sue will be on vacation for a couple of weeks, she can delegate her tasks to Frank or Ann.
 
 Approvers can specify who their tasks should be delegated to on the Workflow User Delegation.
-![Form](media/WORKORIG0001.png)
+![Diagram again again](media/WORKORIG0001.png)
 
 
 ## Workflow Security
@@ -352,7 +352,7 @@ Microsoft Dynamics GP. Because Frank is assigned to the Purchasing Manager role,
 
 A workflow approval process involves two main groups of people: the originators and the approvers. For example, in the following purchase order workflow, Sam is the originator and Frank, Sue, and Ann are the approvers.
 
-![Form](media/WORKORIG0001.png)
+![Workflwo diagram](media/WORKORIG0001.png)
 
 **Actions an originator can take**
 
@@ -360,7 +360,7 @@ The originator starts the workflow approval process by submitting a document, ma
 
 These windows have buttons that enable originators to submit the document, master record, or batch, or save it.
 
-![Form](media/WORKACTION0001.png)
+![Button for save or submit the document](media/WORKACTION0001.png)
 
 Submit for approval
 When the originator submits the document, master record, or batch for approval, the Workflow system evaluates the document, master record, or batch and determines if it requires approval. If so, the document, master record, or batch is assigned to the appropriate approver with a status of Pending Approval.
@@ -377,7 +377,7 @@ Approve
 When an approver approves a document, master record, or batch, the document, master record, or batch is assigned to the next approver in the workflow, if necessary. If no additional approval is required, the document, master record, or batch is given the status of Approved and the workflow approval process is complete.
 For example, suppose Sam submits a purchase order for $6,000. In this scenario, the purchase order must be approved by Frank and Sue. When Frank approves the purchase order, it is assigned to Sue for approval. When Sue approves the purchase order, it is given the status of Approved, and the workflow process is complete.
 
-![Form](media/WORKORIG0001.png)
+![Approval workflow diagram](media/WORKORIG0001.png)
 
 Reject
 When an approver rejects a document, master record, or batch, the document, master record, or batch is given the status of Rejected and the workflow process is complete.
@@ -420,7 +420,7 @@ When a user submits a document, master record, or batch for approval, the Workfl
 Simple example
 Using the workflow illustrated below, suppose Sam submits a purchase order totaling $8,000. The Workflow system evaluates step 1 to determine if the purchase order meets the condition specified. In this scenario, the purchase order is more than $1,000, so the Workflow system creates a task for Frank.
 
-![Form](media/WORKORIG0001.png)
+![Again the diagram](media/WORKORIG0001.png)
 
 
 Assume that Frank approves the purchase order. The Workflow system then evaluates step 2 to determine if the purchase order meets the condition specified. Because the purchase order is more than $5,000, Sue’s approval is required. The Workflow system creates a task for Sue.
@@ -429,7 +429,7 @@ After Sue approves the purchase order, the purchase order is given the Approved 
 Complex example
 Using the workflow illustrated below, suppose Sam submits a purchase order totaling $8,000 for Adventure Works. The Workflow system evaluates step 1 to determine if the purchase order meets the condition specified. In this scenario, the purchase order is more than $1,000, so the Workflow system creates a task for Frank.
 
-![Form](media/WORKORIG0002.png)
+![Another workflow diagram](media/WORKORIG0002.png)
 
 Assume that Frank approves the purchase order. The Workflow system then evaluates steps 2a and 2b simultaneously. Because the purchase order is more than $5,000 and the vendor is Adventure Works, the Workflow system creates tasks for Sue and Bob.
 Both Sue and Bob must approve the purchase order before it can move on to Ann. This is because step 2a (Sue) and step 2b (Bob) converge at step 3 (Ann). For example, assume that Sue approves the purchase order first. The purchase order cannot be assigned to Ann until Bob approves it, as well. When Bob approves the purchase order, the Workflow system creates a task for Ann.
@@ -440,7 +440,7 @@ Each task has a due date. The due date indicates the date by which the approver 
 Default due dates
 When you configure a workflow step, you’ll specify how many days the approver has to respond to the task. For example, the following workflow shows the number of days each approver has to act on assigned tasks.
 
-![Form](media/WORKORIG0003.png)
+![A third workflow diagram](media/WORKORIG0003.png)
 
 Overriding default due dates
 Approvers can override the default due dates. For example, using the previous workflow illustration, suppose Sam submits a purchase order for $18,000. When Frank approves the purchase order, he can specify how many days Sue will have to approve or reject the purchase order. Similarly, when Sue approves the purchase order, she can specify how many days Ann will have to approve or reject the purchase order.
