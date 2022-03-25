@@ -986,7 +986,7 @@ You also can print and send a historical purchase order in e-mail, which is a cl
 
 3.  Choose File \>\> Print to open the Purchase Order Print Options window.
 
-![Screenshot that shows the Purchase Order Print Options window.](media/Poage045.jpg)
+![Screenshot of the Purchase Order Print Options window.](media/Poage045.jpg)
 
 *If you're using preprinted purchase order forms, we recommend that you print an alignment form. Xs will be printed in the place of the actual purchase order information. Verify that the purchase order forms are aligned correctly.*
 
@@ -1095,7 +1095,7 @@ Printing the delivery schedule won't release the items to the vendor. To release
 
 2.  Select to print delivery schedules.
 
-![Screenshot that shows the Print Purchasing Documents window.](media/POage051.jpg)
+![Screenshot of the Print Purchasing Documents window.](media/POage051.jpg)
 
 3.  From the currency list button, select whether to print the delivery schedules in functional, originating, or reporting currency.
 
@@ -1404,7 +1404,7 @@ If you are using Project Accounting, you can enter blanket purchase order line i
 
 2.  Enter or select a purchase order number, select a line item, and choose the Vendor Item or Item expansion button to open the Purchasing Item Detail Entry window.
 
-![Screenshot that shows the Purchasing Item Detail Entry window.](media/POage061.jpg)
+![Screenshot of the Purchasing Item Detail Entry window.](media/POage061.jpg)
 
 Currency amounts in this window appear in the functional or originating currency, depending on the view selected in the Purchase Order Entry window.
 
