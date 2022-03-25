@@ -1279,7 +1279,7 @@ You can use the Copy button in the Item Maintenance window to create a new inven
 
 2. In the New group, choose Item to open the Item Maintenance window.
 
-    ![09fc580c4ab7ac00490b3a80d3b5a458.jpg](media/09fc580c4ab7ac00490b3a80d3b5a458.jpg)
+    ![Screenshot that shows the Item Maintenance window.](media/09fc580c4ab7ac00490b3a80d3b5a458.jpg)
 
 3. Enter an alphanumeric item number. You can't change the item number after the item number has been saved. To change the item number, you must delete the item and reenter it.
 
@@ -1380,7 +1380,7 @@ Use the Internet Information window to track Internet-related information about 
 
 3. Choose the Internet information icon in the Description field to open the Internet Information window.
 
-    ![6bc7a94aa645001ae71f017acc5d43fa.jpg](media/6bc7a94aa645001ae71f017acc5d43fa.jpg)
+    ![Screenshot that shows the Internet Information window.](media/6bc7a94aa645001ae71f017acc5d43fa.jpg)
 
 4. Enter Internet information for the item.
 
@@ -1416,7 +1416,7 @@ Use the Item Maintenance Options window to enter additional information about it
 
     Choose Options to open the Item Maintenance Options window.
 
-    ![a0feba184b1823410e608c9d6559c902.jpg](media/a0feba184b1823410e608c9d6559c902.jpg)
+    ![Screenshot that shows the Item Maintenance Options window.](media/a0feba184b1823410e608c9d6559c902.jpg)
 
 3. Enter or select up to two substitutes for the item. The substitutes are suggested replacements for the item.
 
@@ -1466,7 +1466,7 @@ Use the Item Serial/Lot Number Definition window to set up serial number masks f
 
     Choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-    ![3183fe81593268fac38bb351ca10cb3b.jpg](media/3183fe81593268fac38bb351ca10cb3b.jpg)
+    ![Screenshot that shows the Item Serial/Lot Number Definition window.](media/3183fe81593268fac38bb351ca10cb3b.jpg)
 
     *You also can open this window by clicking the Serial Number Mask field label in the Purchasing Serial Number Entry window.*
 
@@ -1514,7 +1514,7 @@ You also can enter a lot split quantity, which is the breakpoint for creating se
 
     Choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-    ![34d88e83dca8bbcf180372ebf2d25dd8.jpg](media/34d88e83dca8bbcf180372ebf2d25dd8.jpg)
+    ![Screenshot of the Item Serial/Lot Number Definition window.](media/34d88e83dca8bbcf180372ebf2d25dd8.jpg)
 
 *You also can open this window by clicking the Lot Number Mask field label in the Purchasing Lot Number Entry window.*
 
@@ -1608,7 +1608,7 @@ Use the Item Currency Maintenance window to assign each currency to the items yo
 
 1. Open the Item Currency Maintenance window. (Inventory \>\> Cards \>\> Item Currency)
 
-    ![4b12d7ecd939eb30621c23077a7a1192.jpg](media/4b12d7ecd939eb30621c23077a7a1192.jpg)
+    ![Screenshot that shows the Item Currency Maintenance window.](media/4b12d7ecd939eb30621c23077a7a1192.jpg)
 
 2. Enter or select an item number.
 
@@ -1644,7 +1644,7 @@ Use the Item Print Option Preview window to change the item print option that yo
 
 1. Open the Override Item Print Option window. (Inventory \>\> Cards \>\> Modify Item Print Option)
 
-    ![cbaec99aef569be29fdaee941a41432b.jpg](media/cbaec99aef569be29fdaee941a41432b.jpg)
+    ![Screenshot that shows the Override Item Print Option window.](media/cbaec99aef569be29fdaee941a41432b.jpg)
 
 2. Enter or select a site ID.
 
@@ -1656,7 +1656,7 @@ Use the Item Print Option Preview window to change the item print option that yo
 
 4. Choose Preview to open the Item Print Option Preview window and view the records that match your criteria.
 
-    ![ecef106c3a9be73d591d27df447c1eb9.jpg](media/ecef106c3a9be73d591d27df447c1eb9.jpg)
+    ![Screenshot that shows the Item Print Option Preview window.](media/ecef106c3a9be73d591d27df447c1eb9.jpg)
 
     The printing option for the item will be saved with the item record as displayed.
 
@@ -2032,7 +2032,7 @@ Use the Item Price List Maintenance window to create a price list for an item.
 
 1. Open the Item Price List Maintenance window. (Inventory \>\> Cards \>\> Price List)
 
-    ![fff05db34a27f7737c20c6d164ef8486.jpg](media/fff05db34a27f7737c20c6d164ef8486.jpg)
+    ![Screenshot that shows the Item Price List Maintenance window.](media/fff05db34a27f7737c20c6d164ef8486.jpg)
 
 2. Enter or select an item number.
 
@@ -2161,7 +2161,7 @@ Use the Item Price List Options Maintenance window to specify rounding options a
 
 3. Choose Options to open the Item Price List Options Maintenance window.
 
-    ![41be94db8d9e52249802460234bf2b8d.jpg](media/41be94db8d9e52249802460234bf2b8d.jpg)
+    ![Screenshot that shows the Item Price List Options Maintenance window.](media/41be94db8d9e52249802460234bf2b8d.jpg)
 
     Each record in the scrolling window represents a combination of a currency (if you're using Multicurrency Management), price level, unit of measure and pricing—also known as a price list record.
 
@@ -2416,7 +2416,7 @@ Price groups and individual item prices can be combined to create price sheets. 
 
 1. Open the Price Group Maintenance window.(Inventory \>\> Cards \>\> Extended Pricing \>\> Price Groups)
 
-    ![759d38cbefedc5deb3e64f3340a2134a.jpg](media/759d38cbefedc5deb3e64f3340a2134a.jpg)
+    ![Screenshot that shows Price Group Maintenance window.](media/759d38cbefedc5deb3e64f3340a2134a.jpg)
 
 2. Enter or select a price group ID.
 
@@ -2448,7 +2448,7 @@ To be assigned to a price group, the quantity decimals and currency decimals of 
 
 1. Open the Price Group Assignment window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Group Assignment)
 
-    ![9470e2c54daa32543957a1445ebd54f2.jpg](media/9470e2c54daa32543957a1445ebd54f2.jpg)
+    ![Screenshot that shows the Price Group Assignment window.](media/9470e2c54daa32543957a1445ebd54f2.jpg)
 
 2. Enter or select an item number.
 
@@ -2466,7 +2466,7 @@ Use the Price Group Items Maintenance window to assign multiple items to a price
 
 1. Open the Price Group Items Maintenance window.(Inventory \>\> Cards \>\> Extended Pricing \>\> Group Items)
 
-    ![9edc702fad3c020892e76b006d557297.jpg](media/9edc702fad3c020892e76b006d557297.jpg)
+    ![Screenshot that shows the Price Group Items Maintenance window.](media/9edc702fad3c020892e76b006d557297.jpg)
 
 2. Enter or select a price group ID.
 
@@ -2492,7 +2492,7 @@ Use the Price Group Item Ranges window to assign a range of items to a price gro
 
 3. Choose Ranges to open the Price Group Item Ranges window.
 
-    ![d3bd62eefeea5908be97318cfbd42092.jpg](media/d3bd62eefeea5908be97318cfbd42092.jpg)
+    ![Screenshot that shows the Price Group Item Ranges window.](media/d3bd62eefeea5908be97318cfbd42092.jpg)
 
 4. Enter or select the item numbers, generic descriptions, and class IDs to assign to the price group.
 
@@ -2541,7 +2541,7 @@ If you don't set up a price sheet for a particular currency, the price of the it
 
 1. Open the Price Sheet Maintenance window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Price Sheets)
 
-    ![153e182c6f7287af8c711d7f7b31ebf5.jpg](media/153e182c6f7287af8c711d7f7b31ebf5.jpg)
+    ![Screenshot that shows the Price Sheet Maintenance window.](media/153e182c6f7287af8c711d7f7b31ebf5.jpg)
 
 2. Enter or select a price sheet ID and description.
 
@@ -2605,7 +2605,7 @@ Use the Price Sheet Detail Maintenance window to set up net price, percentage of
 
 3. Highlight an item or price group in the scrolling window and choose the Item Number/Price Group ID expansion button to open the Price Sheet Detail Maintenance window.
 
-    ![8249947d72b48ab082591d0ff994c1e7.jpg](media/8249947d72b48ab082591d0ff994c1e7.jpg)
+    ![Screenshot that shows the Price Sheet Detail Maintenance window.](media/8249947d72b48ab082591d0ff994c1e7.jpg)
 
     The item or price group you selected in the Price Sheet Maintenance window will be displayed.
 
@@ -2681,7 +2681,7 @@ This procedure assumes that you're setting up a price sheet that is a promotion,
 
 1. Open the Price Sheet Assign Free Item window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Price Sheets \>\> Item Number/ Price Group ID expansion button \>\> Quantity Free expansion button)
 
-    ![4c31fdb794e12c8a6023c83caaad9481.jpg](media/4c31fdb794e12c8a6023c83caaad9481.jpg)
+    ![Screenshot that shows the Price Sheet Assign Free Item window.](media/4c31fdb794e12c8a6023c83caaad9481.jpg)
 
 2. Enter or select the Free Item Number, the item to be given away with the promotion.
 
@@ -2759,7 +2759,7 @@ Use the Price Book Maintenance window to create price books and to assign price 
 
 1. Open the Price Book Maintenance window.(Inventory \>\> Cards \>\> Extended Pricing \>\> Price Books)
 
-    ![9f861346ed1fedb8473666fadf133b3a.jpg](media/9f861346ed1fedb8473666fadf133b3a.jpg)
+    ![Screenshot that shows the Price Book Maintenance window.](media/9f861346ed1fedb8473666fadf133b3a.jpg)
 
 2. Enter or select a price book ID.
 
@@ -2783,7 +2783,7 @@ You can use the Price Sheet Assignment window to assign price sheets to price bo
 
 1. Open the Price Sheet Assignment window.(Inventory \>\> Cards \>\> Extended Pricing \>\> Sheet Assignment)
 
-    ![6f4d2b500d7192d4e42aec267f9a855e.jpg](media/6f4d2b500d7192d4e42aec267f9a855e.jpg)
+    ![Screenshot that shows Price Sheet Assignment window.](media/6f4d2b500d7192d4e42aec267f9a855e.jpg)
 
 2. Enter or select a price sheet ID.
 
@@ -2809,7 +2809,7 @@ Use the Price Sheet Assignment Ranges window to assign a price sheet to a range 
 
 3. Choose Ranges to open the Price Sheet Assignment Ranges window.
 
-    ![29f27610ca0ed67a479946aa595e5105.jpg](media/29f27610ca0ed67a479946aa595e5105.jpg)
+    ![Screenshot that shows the Price Sheet Assignment Ranges window.](media/29f27610ca0ed67a479946aa595e5105.jpg)
 
 4. Mark Price Books, Customers, or Prospects, depending on the type or record you want to assign the price sheet to.
 
@@ -2833,7 +2833,7 @@ If you're using Multicurrency Management, you can assign price sheets with diffe
 
 1. Open the Customer Pricing Maintenance window or the Prospect Pricing Maintenance window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Customer Pricing or Prospect Pricing)
 
-    ![b1550ab479666301b12413a2e1bf716c.jpg](media/b1550ab479666301b12413a2e1bf716c.jpg)
+    ![Screenshot that shows the Customer Pricing Maintenance window.](media/b1550ab479666301b12413a2e1bf716c.jpg)
 
 2. Enter or select a customer ID or prospect ID.
 
@@ -2853,7 +2853,7 @@ Use the Price Book Assignment window to assign a price book ID to multiple custo
 
 1. Open the Price Book Assignment window. (Inventory \>\> Cards \>\> Extended Pricing \>\> Book Assignment)
 
-    ![0ba36deafa7be81c75ce7b9d0e21b114.jpg](media/0ba36deafa7be81c75ce7b9d0e21b114.jpg)
+    ![Screenshot that shows the Price Book Assignment window.](media/0ba36deafa7be81c75ce7b9d0e21b114.jpg)
 
 2. Enter or select a price book ID.
 
@@ -2879,7 +2879,7 @@ Use the Price Book Assignment Ranges window to assign a price book to a range of
 
 3. Select Ranges to open the Price Book Assignment Ranges window.
 
-    ![cad4543eb32fa16460f8201a11227186.jpg](media/cad4543eb32fa16460f8201a11227186.jpg)
+    ![Screenshot that shows the Price Book Assignment Ranges window.](media/cad4543eb32fa16460f8201a11227186.jpg)
 
 4. Mark Customers or Prospects.
 
@@ -2969,7 +2969,7 @@ Use the Manufacturer's Item Number Maintenance window to enter item numbers that
 
 2. Enter or select an sales inventory or discontinued item and choose the Manufacturer's Item Number expansion button.
 
-    ![9b331c7e7859343abb6336ed58cf0dfc.jpg](media/9b331c7e7859343abb6336ed58cf0dfc.jpg)
+    ![Screenshot that shows the Manufacturer's Item Number Maintenance window.](media/9b331c7e7859343abb6336ed58cf0dfc.jpg)
 
 3. Enter the name of the manufacturer, the manufacturer's item number, and a description of the item.
 
@@ -3102,7 +3102,7 @@ Use the Planner Maintenance window to create a planner ID. You can create as man
 
 1. Open the Planner Maintenance window. (Inventory \>\> Cards \>\> Planners)
 
-    ![eeb2ad633e2fea2658fe7f9af7706799.jpg](media/eeb2ad633e2fea2658fe7f9af7706799.jpg)
+    ![Screenshot that shows the Planner Maintenance window.](media/eeb2ad633e2fea2658fe7f9af7706799.jpg)
 
 2. Enter a planner ID.
 
@@ -3218,7 +3218,7 @@ You must define at least one site. Use the Site Maintenance window to complete t
 
 1. Open the Site Maintenance window. (Inventory \>\> Cards \>\> Site)
 
-    ![dc46c013c9dbff3da5f504f0add1ed2a.jpg](media/dc46c013c9dbff3da5f504f0add1ed2a.jpg)
+    ![Screenshot that shows the Site Maintenance window.](media/dc46c013c9dbff3da5f504f0add1ed2a.jpg)
 
 2. Enter an identifier and a brief description for the site.
 
@@ -3257,7 +3257,7 @@ You can define as many bins for each site as necessary. Later, you can transfer 
 
 1. Open the Site Bin Maintenance window. (Inventory \>\> Cards \>\> Bins/Site)
 
-    ![7e5c68a1b433917cfb9da448f35af3ba.jpg](media/7e5c68a1b433917cfb9da448f35af3ba.jpg)
+    ![Screenshot that shows the Site Bin Maintenance window.](media/7e5c68a1b433917cfb9da448f35af3ba.jpg)
 
     *You also can open the window by choosing Site Bin Maintenance from the Go To button in the Site Maintenance window.*
 
@@ -3291,7 +3291,7 @@ You can use the Site Default Bins window to specify the default bins for a site.
 
 3. Choose Bins to open the Site Default Bins window.
 
-    ![154062169512ff5309044b25eb1822b0.jpg](media/154062169512ff5309044b25eb1822b0.jpg)
+    ![Screenshot that shows the Site Default Bins window.](media/154062169512ff5309044b25eb1822b0.jpg)
 
 4. Enter or select a bin for each type of transaction.
 
@@ -3327,7 +3327,7 @@ Use the Item Site Assignment window to assign items to a site. Each item must be
 
 3. Choose Assign to open the Item Site Assignments window.
 
-    ![3d3477914668200ea39f5e8bccff134b.jpg](media/3d3477914668200ea39f5e8bccff134b.jpg)
+    ![Screenshot that shows the Item Site Assignments window.](media/3d3477914668200ea39f5e8bccff134b.jpg)
 
 4. Specify which items should be assigned to the site. For example, you can choose to have only the items in certain item classes assigned to the site.
 
@@ -3359,13 +3359,13 @@ If you're using Invoicing or Sales Order Processing, history information for Inv
 
 1. Open the Inventory Batch Entry window. (Inventory \>\> Transactions \>\> Batches)
 
-    ![18694fbb93342c2d9d4ca5ea945758f7.jpg](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
+    ![Screenshot that shows the Inventory Batch Entry window.](media/18694fbb93342c2d9d4ca5ea945758f7.jpg)
 
 2. Enter an identifier and brief description for the batch, and from the Origin list, choose Transaction entry. Then unmark the Post to General Ledger option so any transactions that have been accounted for in General Ledger won't be duplicated.
 
 3. Choose Transactions to open the Item Transaction Entry window.
 
-    ![30240561ca150826302ea019631b2128.jpg](media/30240561ca150826302ea019631b2128.jpg)
+    ![Screenshot that shows the Item Transaction Entry window.](media/30240561ca150826302ea019631b2128.jpg)
 
 4. From the Document Type list, choose Adjustment.
 
@@ -3422,7 +3422,7 @@ If you enter an adjustment transaction to specify the beginning quantities of an
 
 2. Enter an adjustment transaction for an item tracked by lot numbers. Choose Serial/Lot to open the Item Lot Number Entry window.
 
-    ![3b422855ccd819ac69012d787cc6e964.jpg](media/3b422855ccd819ac69012d787cc6e964.jpg)
+    ![Screenshot that shows the Item Lot Number Entry window.](media/3b422855ccd819ac69012d787cc6e964.jpg)
 
     The window also will open automatically when you move out of the transaction line.
 
@@ -3430,7 +3430,7 @@ If you enter an adjustment transaction to specify the beginning quantities of an
 
 4. You can choose the expansion button on the Lot Number field to open the Lot Attribute Entry window to enter a manufactured date and an expiration date. If you're using lot categories, enter lot attribute information. When you have finished entering information, choose OK to close the window and return to the Item Lot Number Entry window.
 
-    ![15f4081baf23e8b8e92e6898843c7c02.jpg](media/15f4081baf23e8b8e92e6898843c7c02.jpg)
+    ![Screenshot that shows the Lot Attribute Entry window.](media/15f4081baf23e8b8e92e6898843c7c02.jpg)
 
 5. Enter quantity information.
 
@@ -3455,7 +3455,7 @@ If you enter an adjustment transaction to specify the beginning quantities of an
 
 2. Enter an adjustment transaction for an item tracked by serial numbers. Choose Serial/Lot to open the Item Serial Number Entry window.
 
-    ![eaee372bf3b6b75ebe6477a8e701ee8f.jpg](media/eaee372bf3b6b75ebe6477a8e701ee8f.jpg)
+    ![Screenshot that shows the Item Serial Number Entry window.](media/eaee372bf3b6b75ebe6477a8e701ee8f.jpg)
 
     The window also will open automatically when you move out of the transaction line.
 
@@ -3482,7 +3482,7 @@ If you're entering beginning quantities and you're using multiple bins, you'll n
 
 2. Enter an adjustment transaction for an item that is not tracked by lot or serial numbers. Choose Bins to open the Bin Quantity Entry window.
 
-    ![4c03f8a6c0d60cb7ea4a52396d21bf0b.jpg](media/4c03f8a6c0d60cb7ea4a52396d21bf0b.jpg)
+    ![Screenshot that shows the Bin Quantity Entry window.](media/4c03f8a6c0d60cb7ea4a52396d21bf0b.jpg)
 
     The window also will open automatically when you move out of the transaction line.
 
@@ -3642,7 +3642,7 @@ Use the Item Quantities Maintenance window to enter all-site information for an 
 
 1. Open the Item Quantities Maintenance window. (Inventory \>\> Cards \>\> Quantities/Sites)
 
-    ![9dc9820e50bae50aa18db95bca243d0e.jpg](media/9dc9820e50bae50aa18db95bca243d0e.jpg)
+    ![Screenshot that shows the Item Quantities Maintenance window.](media/9dc9820e50bae50aa18db95bca243d0e.jpg)
 
 2. Enter or select an item.
 
@@ -3715,7 +3715,7 @@ You can use bin priority to help decide which bins that items should be picked f
 
 4. Choose Bins to open the Item Site Default Bins window.
 
-    ![d72fd2e581225b4f2e8265f832332d21.jpg](media/d72fd2e581225b4f2e8265f832332d21.jpg)
+    ![Screenshot that shows the Item Site Default Bins window.](media/d72fd2e581225b4f2e8265f832332d21.jpg)
 
 5. Enter or select a bin for each type of transaction.
 
@@ -3792,7 +3792,7 @@ You can set up default values for the fields in this window. Refer to *Entering 
 1. Open the Item Resource Planning Maintenance window.
 (Inventory \>\> Cards \>\> Item Resource Planning)
 
-    ![4c27aef17ba81a49c36b96dbd815cbde.jpg](media/4c27aef17ba81a49c36b96dbd815cbde.jpg)
+    ![Screenshot that shows the Item Resource Planning Maintenance window.](media/4c27aef17ba81a49c36b96dbd815cbde.jpg)
 
 2. Enter or select an item number.
 
@@ -3878,9 +3878,9 @@ If you're using the purchase order generator to suggest purchase orders, use the
 
     - **Item Standard Cost** The amount of the Standard Cost from the Item Maintenance window will be used for suggested purchase orders.
 
-- **Specified Cost** An amount you specify (in functional currency) will be used for suggested purchase orders, regardless of the vendor selection.
+    - **Specified Cost** An amount you specify (in functional currency) will be used for suggested purchase orders, regardless of the vendor selection.
 
-        If the order method is Order to Master Site, the cost selection is not available. The cost selection method will come from the master site.
+    If the order method is Order to Master Site, the cost selection is not available. The cost selection method will come from the master site.
 
 7. Mark the quantities that should be included in calculations for purchase order quantities.
 
