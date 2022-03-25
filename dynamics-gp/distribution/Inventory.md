@@ -4827,7 +4827,7 @@ Use the Item Transfer Lot Number Entry window to specify which items—from whic
 
     When you move off the scrolling window line, the Item Transfer Lot Number Entry window opens.
 
-    ![Screenshot that shows the Item Transfer Lot Number Entry window.](media/0ea517b1c890abe988589a39fe13d0ac.jpg)
+    ![Screenshot of the Item Transfer Lot Number Entry window.](media/0ea517b1c890abe988589a39fe13d0ac.jpg)
 
 3. Enter or select a lot number.
 
