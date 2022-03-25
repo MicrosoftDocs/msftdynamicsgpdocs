@@ -222,7 +222,7 @@ Use the Picking Instruction Preview window to assign the instruction ID to the r
 1. Open the Instruction ID Processing window.
     (Sales \>\> Cards \>\> Process Instructions)
 
-    ![screenshot](media/SOage064.jpg)
+    ![Screenshot that shows the Instruction ID Processing window.](media/SOage064.jpg)
 
 2. Enter or select an instruction ID.
 
@@ -236,7 +236,7 @@ Use the Picking Instruction Preview window to assign the instruction ID to the r
 
 6. Choose Preview to open the Picking Instruction Preview window and view the records that match your restrictions.
 
-    ![screenshot](media/SOage065.jpg)
+    ![Screenshot that shows the Picking Instruction Preview window.](media/SOage065.jpg)
 
     Unmark records that shouldn’t be assigned to the instruction ID or choose Unmark All.
 
@@ -342,7 +342,7 @@ Use the Sales Batch Entry window to create a batch. You must save quotes, orders
 1. Open the Sales Batch Entry window.
     (Sales \>\> Transactions \>\> Sales Batches)
 
-    ![screenshot](media/SOage068.jpg)
+    ![Screenshot that shows the Sales Batch Entry window.](media/SOage068.jpg)
 
 2. Enter a batch ID, such as your name or the date, to identify the batch.
 
@@ -448,7 +448,7 @@ Use the Sales Prospect Maintenance window to enter prospect customer records. Fo
 2. In the New group, choose Prospect to open the Sales Prospect Maintenance
     window.
 
-    ![screenshot](media/SOage070.jpg)
+    ![Screenshot that shows the Sales Prospect Maintenance Window.](media/SOage070.jpg)
 
 3. Enter a prospect ID, name, and contact for the prospect customer.
 
@@ -492,7 +492,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Quote to open the Sales Transaction Entry window.
 
-    ![screenshot](media/SOage070.jpg)
+    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage070.jpg)
 
 3. Select the ID of the type of quote you want to enter.
 
@@ -573,7 +573,7 @@ You can’t have repeating multicurrency documents. Only documents whose currenc
 6. Choose the document expansion button to open the Sales Document Detail Entry
     window.
 
-    ![screenshot](media/SOage075.jpg)
+    ![Screenshot that shows the Sales Document Detail Entry window.](media/SOage075.jpg)
 
 7. Mark **Repeating**. Enter how many times to repeat the quote and the frequency.
  Leave the Frequency field blank to use the quote an unlimited number of times.
@@ -624,7 +624,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Order to open the Sales Transaction Entry window.
 
-    ![screenshot](media/SOage077.jpg)
+    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage077.jpg)
 
 3. Enter or select the ID of the type of order to enter.
 
@@ -817,7 +817,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Fulfillment Order or Invoice to open the Sales Transaction Entry window.
 
-    ![screenshot](media/SOage079.jpg)
+    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage079.jpg)
 
 3. Enter or select the ID of the type of fulfillment order or invoice to enter.
 
@@ -972,7 +972,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 2. In the New group or its overflow menu, choose Invoice to open the Sales
     Transaction Entry window.
 
-    ![screenshot](media/SOage082.jpg)
+    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage082.jpg)
 
 3. Enter or select the ID of the type of invoice to enter.
 
@@ -1080,7 +1080,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Back Order to open the Sales Transaction Entry window.
 
-    ![screenshot](media/SOage084.jpg)
+    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage084.jpg)
 
 3. Select Back Order and enter or select the ID of the type of back order to enter.
 
@@ -1178,7 +1178,7 @@ If you’re using Multicurrency Management, you can only change the distribution
 
 2. In the New group or its overflow menu, choose Return to open the Sales Transaction Entry window.
 
-    ![screenshot](media/SOage087.jpg)
+    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage087.jpg)
 
 3. Select Return and enter or select the ID of the type of return to enter.
 
@@ -1310,7 +1310,7 @@ You can change the subject, message ID, and message if the Allow Update of E-mai
 
 5. Choose the E-mail expansion button to open the Sales E-mail Detail Entry window.
 
-    ![screenshot](media/SOage089.jpg)
+    ![Screenshot that shows the Sales E-mail Detail Entry window.](media/SOage089.jpg)
 
 6. Enter a To, Cc, or Bcc address to send the transaction in e-mail. You must enter at least one e-mail address to send transactions in e-mail. The e-mail addresses displayed in the window are assigned to the address you entered on the transaction. You can update the To, Cc, and Bcc e-mail addresses, if applicable.
 
@@ -1335,7 +1335,7 @@ Use the Sales Item Detail Entry window to view or edit item information such as 
 1. Open the Sales Item Detail Entry window.
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Item Number expansion button)
 
-    ![screenshot](media/SOage091.jpg)
+    ![Screenshot that shows the Sales Item Detail Entry window.](media/SOage091.jpg)
 
     > [TIP]
     > You also can press CTRL+E to open this window.
@@ -1371,7 +1371,7 @@ Use the Sales Customer Detail Entry window to view and edit information about th
 1. Open the Sales Customer Detail Entry window.
     (Sales \>\> Transactions \>\> Sales Transaction Entry \>\> Customer ID expansion button)
 
-     ![screenshot](media/SOage093.jpg)
+     ![Screenshot that shows the Sales Customer Detail Entry window.](media/SOage093.jpg)
 
 2. Choose the expansion button next to Ship To Address ID to open the Sales Ship To Address Entry window, where you can make changes to the ship-to address for the document.
 
@@ -1410,7 +1410,7 @@ Use the Sales Markdown Entry window to enter a markdown for an individual line i
 
 3. Select an item and choose the Markdown expansion button to open the Sales Markdown Entry window.
 
-    ![screenshot](media/SOage095.jpg)
+    ![Screenshot that shows the Sales Markdown Entry window.](media/SOage095.jpg)
 
 4. Select the markdown type—percentage or amount—and enter the percentage or amount. The unit price, markdown amount, adjusted unit price, and revised extended price are shown in the window.
 
@@ -1545,7 +1545,7 @@ You can’t delete or void an order or back order until all deposits on the docu
 
 2. Select the document and enter the entire deposit or payment amount in the Amount Received field or choose the Amount Received expansion button to open the Sales Payment Entry window.
 
-    ![screenshot](media/SOage097.jpg)
+    ![Screenshot that shows the Sales Payment Entry window.](media/SOage097.jpg)
 
 3. Enter or accept the amount in the Amount Received field.
 
@@ -1581,7 +1581,7 @@ If a customer pays all or a portion of an invoice balance before the items are s
 
 2. Select a document and enter the payment amount in the Amount Received field or choose the expansion button for the Amount Received field to open the Sales Payment Entry window.
 
-    ![screenshot](media/SOage099.jpg)
+    ![Screenshot that shows the Sales Payment Entry window.](media/SOage099.jpg)
 
 3. Enter or accept the amount in the Amount Received field.
 
@@ -1694,7 +1694,7 @@ You can’t change the Tax amount in the Sales Transaction Entry window or the t
 
 6. Choose the Tax expansion button in the Sales Transaction Entry window to open the Sales Tax Summary Entry window, where you can view or edit the tax distribution accounts and amounts.
 
-    ![screenshot](media/SOage101.jpg)
+    ![Screenshot that shows the Sales Tax Summary Entry window.](media/SOage101.jpg)
 
 7. When you’re finished, choose OK to save changes and return to the Sales Transaction Entry window.
 
@@ -1717,7 +1717,7 @@ Use the Sales Line Item Tax Detail Entry window to add, change, delete, or view 
 
 4. Choose the Calculated Tax expansion button in the Sales Item Detail Entry window to open the Sales Line Item Tax Detail Entry window, where you can view or edit tax distribution accounts and amounts.
 
-    ![screenshot](media/SOage103.jpg)
+    ![Screenshot that shows the Sales Line Item Tax Detail Entry window.](media/SOage103.jpg)
 
 5. When you’re finished, choose OK to save changes and return to the Sales Item
     Detail Entry window.
