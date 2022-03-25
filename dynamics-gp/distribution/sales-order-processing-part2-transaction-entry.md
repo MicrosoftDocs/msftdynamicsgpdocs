@@ -492,7 +492,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Quote to open the Sales Transaction Entry window.
 
-    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage070.jpg)
+    ![Screenshot that shows the Sales Prospect Maintenance window.](media/SOage070.jpg)
 
 3. Select the ID of the type of quote you want to enter.
 
@@ -624,7 +624,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Order to open the Sales Transaction Entry window.
 
-    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage077.jpg)
+    ![Screenshot of the Sales Transaction Entry window.](media/SOage077.jpg)
 
 3. Enter or select the ID of the type of order to enter.
 
@@ -972,7 +972,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 2. In the New group or its overflow menu, choose Invoice to open the Sales
     Transaction Entry window.
 
-    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage082.jpg)
+    ![Screenshot that shows the Sales Transaction Entry window after choosing Invoice.](media/SOage082.jpg)
 
 3. Enter or select the ID of the type of invoice to enter.
 
@@ -1080,7 +1080,7 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
 2. In the New group or its overflow menu, choose Back Order to open the Sales Transaction Entry window.
 
-    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage084.jpg)
+    ![Screenshot that shows the Sales Transaction Entry window after choosing Back Order.](media/SOage084.jpg)
 
 3. Select Back Order and enter or select the ID of the type of back order to enter.
 
@@ -1178,7 +1178,7 @@ If you’re using Multicurrency Management, you can only change the distribution
 
 2. In the New group or its overflow menu, choose Return to open the Sales Transaction Entry window.
 
-    ![Screenshot that shows the Sales Transaction Entry window.](media/SOage087.jpg)
+    ![Screenshot that shows the Sales Transaction Entry window after choosing Return.](media/SOage087.jpg)
 
 3. Select Return and enter or select the ID of the type of return to enter.
 
