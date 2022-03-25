@@ -1545,7 +1545,7 @@ You can’t delete or void an order or back order until all deposits on the docu
 
 2. Select the document and enter the entire deposit or payment amount in the Amount Received field or choose the Amount Received expansion button to open the Sales Payment Entry window.
 
-    ![Screenshot that shows the Sales Payment Entry window.](media/SOage097.jpg)
+    ![Screenshot of the Sales Payment Entry window.](media/SOage097.jpg)
 
 3. Enter or accept the amount in the Amount Received field.
 
