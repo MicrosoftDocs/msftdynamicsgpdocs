@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 3/15/2022
+ms.date: 3/16/2022
 ---
 # Human Resources in Microsoft Dynamics GP
 
@@ -796,6 +796,8 @@ To set up a fixed-amount life insurance benefit:
 10. Mark Portable Plan if the employee can continue the life insurance plan after leaving the company.
 11. Mark how the employer pays for this benefit.  
 
+![The Life Setup](media/HRLIFE0001.jpg)
+
   - If you marked Increment Employee or Increment Whole Family, specify the portion of the insurance premium that the employer pays for each increment. The employer’s portion of the premium is automatically subtracted from the employee’s total premium (including, if applicable, Spouse, and Children, but not including Smoker) and must be less than or equal to the employee’s total premium.
   - If you marked Portion of Employee Premium, enter the employer fixed premium, and change the employee total fixed premium entries (including, if applicable, Spouse, and Children, but not including Smoker) so their total is reduced by the amount of the employer fixed premium.
 You can enter zero in the fields for employee’s and employer’s contributions. For information about how this affects Payroll records
@@ -843,6 +845,8 @@ To set up a retirement plan:
 -  If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
 - If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
 - If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+![The Retire Setup](media/HRRETIRE0001.jpg)
 
 **Setting up a benefit tier**
 
@@ -929,6 +933,366 @@ To complete a benefit or deduction setup:
 > - 2=Life Insurance
 > - 3=Retirement Plan
 > - 4=Miscellaneous Benefit/Deduction 
+
+
+## Interviews
+
+Different positions require various skills, and therefore, different types of interviews. For instance, a production position might require the ability to perform repetitive tasks and a clerical position might require the ability to perform keyboarding activities. Customizing interview forms for different positions can help the interviewer determine the best candidate for a position.
+
+**Creating an interview form**
+
+Use the Interview Types window to create an interview form. You can enter interview categories and assign a weight to each category. You also can indicate an interview range; for example, suppose you set an interview range at 10. You can then assign a rating for each interview category—between 1 and 10—per applicant interviewed. Usually, the higher the number, the better the rating.
+To create an interview form:
+1.	Open the Interview Types window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Interview)
+2.	Enter a name that identifies the interview type.
+3.	Enter a number from 2-99 for the top interview range.
+4.	Enter a category description and a weight for each category.
+The sequence of your categories is determined by the order you enter them and they are numbered in increments of 10. Choose Save.
+
+**Modifying or deleting an interview form**
+
+Use the Interview Types window to modify interview forms. You can change the category name, the scale on which a category is measured, the weight or the sequence. You also can add or remove categories, change the category order, or copy and delete interview forms.
+
+To modify or delete an interview form:
+1.	Open the Interview Types window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Interview)
+2.	Enter or select the name of the interview type to modify.
+3.	To remove a category, highlight the category and select the remove button.
+4.	To add a category, enter a category name.
+5.	To change the category sequence, enter a unique number in the Sequence field that reflects where you want the item to appear in the list and choose Reorder.
+6.	To copy the interview form, choose Duplicate and enter a name for the new form and choose Save.
+
+## Skills, skill sets and test
+
+Use the Skills Setup window to define applicant and employee skills and link compensation values to specific skills. For example, suppose your company offers an additional $200 a year to an employee who can type 70 or more words per minute. You also can specify which skills are required skills.
+
+After defining skills, you’ll need to group them into skill sets. A skill set should contain skills necessary for a certain task or position. For example, you can set up a skill set called Office Skills and include skills such as keyboarding, communication skills, organization, and telephone operation. Use the Skill Set Setup - Page 1 window to create a skill set.
+Because applicants, and employees have all types of training, education, skills and work experience, standardized testing is a method of measuring competencies. You can use the Tests Setup window to create tests.
+Skills, skill sets, and tests that you set up can be used for both applicants and employees.
+
+Skills are stored across multiple companies.  If you create a Skill in company A you will also see it in Company B.
+This is because when you use the Skills Query window you can search on the best Applicant (stored in Dynamics/System database) across all companies or employees in a company will be searched.  If I want to do a Skills search on who as SQL 2019 skill mastered it will search all areas to bring up the best qualified candidate.
+
+**Defining a skill**
+
+Use the Skills Setup window to define the skills required in your organization. You also can attach a compensation value to each skill. The skills you define can be used for both applicants and employees.
+
+Skills must be included in a skill set to be assigned to an applicant or employee.
+
+To define a skill:
+1.	Open the Skills Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Skills)
+2.	Enter a skill name and choose the insert button to save the skill.
+3.	If your company offers additional compensation for possessing certain skills, enter a compensation value for the skill. The compensation values are for reference only.
+4.	Choose OK.
+
+Deleting a skill
+Use the Skills Setup window to delete a skill. You can delete a skill that is no longer required.
+To delete a skill: 
+1.	Open the Skills Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Skills)
+2.	Highlight the skill and choose the remove button and choose OK.
+
+Creating a skill set
+Use the Skill Set Setup - Page 1 window to create a skill set and include skills. You can indicate which skills are required skills. The skill sets you create can be used for both applicants and employees.
+Skills must be included in a skill set to be assigned to an applicant or employee.
+
+To create a skill set:
+1.	Open the Skill Set Setup - Page 1 window.  Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Skill Sets)
+2.	Enter the name of the skill set you want to create. A message will be displayed and you’ll have the option to add the skill set. Choose Yes.
+3.	Select a skill to include in the skill set and choose the insert button. Continue adding skills to the skill set.
+4.	To view the skills in order of their sequence, select Sequence Number from the Skills in Skill Set dropdown list. To view the skills in alphabetical order, select the Alphabetical Order option. 
+5.	Choose the page turn button to open the Skill Set Setup - Page 2 window.
+6.	Mark Required for each required skill. You can enter additional comments about each skill.
+7.	Close the window to save your changes.
+
+Modifying or deleting a skill set
+Use the Skill Set Setup - Page 1 window to modify or delete a skill set. You can add skills to a skill set or remove skills from a skill set. You also can reorder skills in a skill set or delete the entire skill set.
+
+To modify or delete a skill set:
+1.	Open the Skill Set Setup - Page 1 window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Skill Sets)
+2.	Enter or select a skill set name.
+3.	To add a skill, highlight an available skill and choose the insert button.
+4.	To remove a skill, highlight the skill in the skill set and choose the remove button.
+5.	To reorder skills, choose the page turn button to open the Skill Set Setup - Page 2 window and enter unique sequence numbers to reflect the order in which they should appear. Choose Reorder and close the window.
+6.	To delete an entire skill set, choose Delete.
+
+
+Synchronizing skills and skill sets
+A benefit of the skills feature is the ability to compare the skills in a skill set with the skills that a particular employee has. This information is displayed in the Percent Completed/Required and Percent Completed/Skill Set fields in the Employee Skills window.
+
+To ensure that information is accurate in skills reports, use the Synchronize button to update the skills information. If you make changes to information in a skills window, you can update the skill information by closing the window and opening it again.
+
+If you’re not sure you need to synchronize your skill records, choose Synchronize to be sure all employee skill records are updated. 
+
+To be sure that the sequence of skills is printed accurately on skills reports, you should synchronize skills when you’ve completed any of the following tasks:
+•	Adding skills to a previously-defined skill set
+•	Removing skills from a previously-defined skill set
+•	Marking or unmarking required skills in a skill set
+•	Changing the number of skills assigned to an employee
+
+While the skills synchronization process takes place, you can continue to use Human Resources; however, you can’t exit Human Resources and shouldn’t print any skills reports until the synchronization process is complete. Choose Microsoft Dynamics GP menu >> Process Monitor to see if the synchronization process is complete. Choose Redisplay to refresh the window.
+
+To synchronize skills and skill sets:
+1.	Open the Skill Set Setup - Page 1 window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Skill Sets)
+2.	Choose Synchronize.
+When the progress window closes, the synchronization is complete.
+
+
+**Defining a Company Test**
+
+Defining a company test
+Use the Tests Setup window to enter the kinds of tests you use in your company. The tests can be used for both applicants and employees. 
+
+To define a company test:
+1.	Open the Tests Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Tests)
+2.	Enter a description that identifies the test.
+3.	Enter a code or accept the default code.  Choose Save.
+
+Deleting a company test
+Use the Tests Setup window to delete a company test.
+To delete a company test:
+1.	Open the Tests Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Tests)
+2.	Enter or select a test.	Choose Delete.
+
+## Orientation and termination checklists
+
+An orientation program gives a new employee an opportunity to learn about your organization and makes the transition into a new position smoother for you and the employee.
+Orientation checklists will help you be sure new employees are introduced to your organization’s policies and procedures. You can use the default orientation checklists included with your Human Resources program, or you can modify the checklists to suit your company’s specific needs.
+
+Termination checklists will help you be sure you’ve completed tasks like notifying the payroll department of an employee’s termination and notifying the employee of his or her COBRA rights. You can use the default termination checklists included with your Human Resources program, or you can modify the checklists to suit your company’s specific needs.
+Default orientation checklists
+
+There are three default orientation checklists included with your Human Resources program. You can use these checklists or you can modify them to suit your company’s specific needs.
+Setting up an orientation checklist using default options
+Use the Orientation Setup window to set up an orientation checklist using default setups. There are three default checklists included in your Human Resources program.
+
+To set up an orientation checklist using default options:
+1.	Open the Orientation Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Orientation)
+2.	Enter a name to identify the orientation checklist.
+3.	Choose Default Setups to open the Orientation Default Select window.
+4.	Browse to select the default number of the checklist you want to use and choose Select.
+5.	Choose the hide and show buttons to view all the fields in the scrolling window. 
+You can enter or select a person responsible for each task. 
+
+Setting up an orientation checklist
+Use the Orientation Setup window to set up an orientation checklist. You can select predefined checklist items or create your own items. You also can assign responsibility for each item to other employees.
+To set up an orientation checklist:
+1.	Open the Orientation Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Orientation)
+2.	Enter a name to identify the orientation checklist.
+3.	Mark the User Defined option to enter a unique item. Mark the Predefined option to select a predefined item.
+4.	Enter or select an item to include in the checklist and choose the insert button.
+5.	Choose the hide and show buttons to view all the fields in the scrolling window. You can enter or select a person responsible for each task.
+6.	Enter the date and time the checklist item will start. If there is an end date and time, you can enter those and choose Save.
+
+Modifying or deleting an orientation checklist
+Use the Orientation Setup window to modify or delete an orientation checklist. You can change the order of the checklist items or add and delete checklist items.
+To modify or delete an orientation checklist:
+1.	Open the Orientation Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Orientation)
+2.	Enter or select a checklist name.
+3.	To change the order of the items in the checklist, enter unique sequence numbers to reflect the order in which you want the items to appear and choose Reorder.
+4.	To add an item, mark User Defined or Predefined and enter or select a checklist item. Choose the insert button.
+5.	To delete an item, highlight the item and choose the remove button. Items in the checklist will be renumbered.
+6.	To delete the entire checklist, choose Delete and Save.
+
+**Default termination checklists**
+There are seven default termination checklists included with your Human Resources program. You can use those checklists or you can modify them to suit your company’s specific needs.  
+
+Setting up a termination checklist using default options
+Use the Termination Setup window to set up a termination checklist using default information. There are seven default checklist entries included with your Human Resources program. For more information about the items included in the default checklists, refer to Default termination checklists on page 98.
+
+To set up a termination checklist using default options:
+1.	Open the Termination Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Termination)
+2.	Enter a name that identifies the termination checklist you’re creating.
+3.	Choose Default Setups to open the Termination Default Select window.
+4.	Browse to select the default number of the checklist you want to use and choose Select and choose Save.
+
+Setting up a termination checklist
+Use the Termination Setup window to set up an termination checklist. You can select predefined checklist items or create your own items. You also can assign responsibility for each item to other employees.
+Information entered in the Date Completed field will appear in the Termination Checklist window. You should not enter a date in this field until you’ve completed the checklist. Therefore, you might want to leave that field empty.
+
+To set up a termination checklist:
+1.	Open the Termination Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Termination)
+2.	Enter a name that identifies the termination checklist.
+3.	Mark the User Defined option to enter a unique item. Mark the Predefined option to select a predefined item.
+4.	Enter or select an item to include in the checklist and choose the insert button.
+5.	Choose the hide and show buttons to view all the fields in the scrolling window. You can enter or select a person responsible for each task.
+6.	Enter the date and time the checklist item will start in the scrolling window. If there is an end date and time, you can enter those.
+7.	When you’ve finished adding items, choose Save.
+8.	
+Modifying or deleting a termination checklist
+Use the Termination Setup window to modify or delete a termination checklist. You can change the order of the checklist items or add and delete checklist items. You also can enter the date each item on a termination checklist is completed and the person responsible for the task.
+To modify or delete a termination checklist:
+1.	Open the Termination Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Termination)
+2.	Enter or select a checklist name.
+3.	To change the order of the items in the checklist, enter unique sequence numbers to reflect the order in which you want the items to appear and choose Reorder.
+4.	To add an item, mark User Defined or Predefined and enter or select a termination item. Choose the insert button.
+5.	To delete an item, highlight the item and choose the remove button. Items in the checklist will be renumbered.
+6.	To delete an entire checklist, choose Delete.  Choose Save.
+
+## Training Classes and Courses
+
+To help your employees improve their skills and acquire new skills, your company will probably offer a variety of training classes. Training classes can be one-time classes or part of a more comprehensive course. For instance, your company might offer a cardiopulmonary resuscitation (CPR) class and an injury class as parts of a first aid course. Or, your company might offer a course on the telephone system and set up various times for each class.
+Setting up a training course
+
+Use the Training Course and Class Definition window to set up a training course. 
+You can specify a default instructor and location and assign credits for each course. You also can assign costs to each course, such as tuition costs, supply costs, and instructor fees.
+
+To set up a training course:
+1.	Open the Training Course and Class Definition window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Training)
+2.	Enter a code that identifies the course and enter a description.
+3.	Enter additional information about the course as needed. For example, you can enter the instructor and location, as well as different costs for the course and Save.
+
+Setting up a training class
+Use the Training Course and Class Definition window to set up a training class after you’ve set up a course. You can specify start and end dates for each class and indicate a maximum number of employees that can enroll in a class at a time.
+To set up a training class:
+1.	Open the Training Course and Class Definition window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Training)
+2.	Enter or select a Course ID.
+3.	In the scrolling window, enter a code that identifies the class and a description of the class.
+4.	Enter the start date and start and end times for the class. If the class has an end date, you can enter that.
+5.	Choose the hide and show buttons to enter the instructor name, the maximum number of employees that can sign up for the class and the location of the class.
+After you’ve enrolled employees in the class, the Enrolled field will display the number of employees enrolled using the Training Batch Signup window. Choose Save.
+
+Modifying or deleting a training course
+Use the Training Course and Class Definition window to modify or delete a training course. You can add or delete a class.
+To modify or delete a training course:
+1.	Open the Training Course and Class Definition window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Training)
+2.	Enter or select a Course ID.
+3.	To add a class, enter a code and name that identifies the class in the scrolling window.
+4.	To remove a class, select a class in the scrolling window and choose the remove button and Save
+
+Linking skills to a training class
+Use the Class Skills window to link skills to a training class. When you mark the class as completed for an employee in the Training Batch Signup window or the Employee Training window, the skills that are linked to the class will be added to the employee’s skill record.
+
+To link skills to a training class:
+1.	Open the Training Course and Class Definition window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Training)
+2.	Enter or select a course ID and choose Class Skills to open the Class Skills window. Select a Class ID.
+3.	Select a skill in the Available Skills list and choose the insert button.
+4.	To remove a skill from a class, highlight the skill in the Skills in Class Skill Set list and choose the remove button, close window.
+
+## Extra fields and user defined fields setup
+
+To track additional organizational and employee information that isn’t included in predefined windows, use the Extra Fields Setup windows. The Extra Fields windows help you track information for your company, divisions, departments, positions, employees, and applicants. 
+
+The twenty-five fields for you to use are:
+•	Five fields for storing dates
+•	Five fields for storing numbers
+•	Five fields for storing yes/no information
+•	Five fields for storing currency figures
+•	Five fields for storing words or phrases
+
+Use the Applicant User Defined Setup window and the Employee User Defined Setup window to track additional applicant and employee information in the following 36 additional fields:
+•	Five “string” fields for storing characters and numbers
+•	Five currency fields for storing dollar amounts
+•	Five date fields for storing dates
+•	Five integer fields for storing whole numbers
+•	Ten check box fields for storing yes/no information
+•	Five time fields for storing time information
+•	A notes area for storing longer text entries
+
+Setting up organizational extra fields
+Use the Extra Fields Setup windows to set up company, division, department or position extra fields. Your selection in the Extra Fields Setup menu determines the organizational level at which you create the extra fields. You can enter up to 15 characters or spaces per field. The labels you enter here will appear in the Extra 
+Fields Setup windows, and you can enter information about the label in the field.
+
+To set up organizational extra fields:
+1.	Open the Extra Fields Setup menu. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Extra Fields)
+2.	Choose Company, Division, Department, or Position.
+3.	Enter labels for each field.  Choose OK.
+
+Modifying or deleting organizational extra fields
+Use the Extra Fields Setup window to modify or delete company, division, department or position extra fields.
+To modify or delete organizational extra fields:
+1.	Open the Extra Fields Setup menu. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Extra Fields)
+2.	Choose Company, Division, Department, or Position.
+3.	Make your changes and choose OK.
+To delete all the entries in this window, choose Delete.
+
+Setting up applicant or employee extra fields
+Use the Extra Fields Setup window to set up applicant or employee extra fields. You can enter up to 15 characters or spaces per field.
+You also can use the Applicant User Defined Setup window and Employee User Defined Setup window to create a customized window to store additional information. For more information, refer to
+ 
+To set up applicant or employee extra fields:
+1.	Open the Extra Fields Setup menu. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Extra Fields)
+2.	Choose Applicant or Employee.
+3.	Enter labels for each field you’re creating and choose OK.
+
+Defining the Applicant User Defined window
+Use the Applicant User Defined Setup window and the Applicant User Defined Setup Page - 2 window to create customized windows that you can use to store additional information. You can customize the information to include a combination of string, date, currency, integer, and up to ten check boxes. After you mark Enable for a field, you can enter up to 15 characters or spaces per field. The labels you enter here will appear in the Applicant User Defined window and you can enter information about the label in the fields. You can print reports that include user-defined information.
+
+To define the Applicant User Defined window:
+1.	Open the Applicant User Defined Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Applicant User Defined)
+2.	Enter a name for this window. This name will be displayed in the Applicant User Defined window.
+3.	Mark Multi Record to store multiple records for each applicant.
+4.	Mark Enable for each field you want to use and enter a label for that field.
+5.	Choose the page turn button to open the Applicant User Defined Setup Page - 2 window and create additional fields.
+6.	When you’ve finished, choose the page turn button to return to the Applicant User Defined Setup window and Save.
+
+As you add fields to the window, choose Window Layout to view how the fields will appear in the window. The Applicant User Defined Window Layout window will be displayed.
+7.	Choose Report Setup to open the Applicant User Defined Report Setup window and define a user-defined report. 
+Defining the Employee User Defined window
+
+Use the Employee User Defined Setup window and the Employee User Defined Setup Page - 2 window to create customized windows that you can use to store additional information. You can customize the information to include a combination of string, date, currency, integer, and up to ten check boxes. After you mark Enable for a field, you can enter up to 15 characters or spaces per field. The labels you enter here will appear in the Employee User Defined window and you can enter information about the label in the field. You can print reports that include user-defined information.
+
+To define the Employee User Defined window:
+1.	Open the Employee User Defined Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Employee User Defined)
+2.	Enter a name for this window. This name will be displayed in the Employee User Defined window.
+3.	Mark Multi Record to store multiple records for each employee.
+4.	Mark Enable for each field you want to use and enter a label for that field.
+5.	Choose the page turn button to open the Employee User Defined Setup - 2 window and create additional fields.
+6.	When you’ve finished, choose the page turn button to return to the Employee User Defined Setup window and Save.
+
+As you add fields to the window, choose Window Layout to view how the fields will appear in the Employee User Defined window.
+7.	Choose Report Setup to open the Employee User Defined Report Setup window and define a user-defined report. 
+
+Modifying the Applicant or Employee User Defined windows
+Use the Applicant User Defined Setup window to modify the Applicant User Defined window and use the Employee User Defined Setup window to modify the employee user-defined window.
+To modify the Applicant or Employee User Defined windows:
+1.	Open a User Defined Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources)
+2.	Choose Applicant User Defined or Employee User Defined.
+3.	Mark Enable for each field you want to use and enter a label for that field.
+4.	Unmark Enable for each field you want to remove and Save.
+
+Defining an applicant or employee user-defined report
+Use the Applicant User Defined Report Setup window or the Employee User Defined Report Setup window to create reports for your user-defined information. You can include any of the user-defined fields you’ve created in this report. 
+To define an applicant or employee user-defined report:
+1.	Open a User Defined Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources)
+2.	Choose Applicant User Defined or Employee User Defined. Choose Report 
+Setup to open the Applicant User Defined Report Setup window or the Employee User Defined Report Setup window.
+3.	Select any Field Code lookup button to open the User Defined Field Lookup window. Select a user-defined field. Continue adding user-defined fields to the report.
+4.	Choose Save.
+5.	Choose the print button to print the Applicant User Defined Test Report or the Employee User Defined Test Report.
+
+Modifying an applicant or employee user-defined report
+Use the Applicant User Defined Report Setup window or the Employee User Defined Report Setup window to modify the applicant or employee user-defined report.
+To modify an applicant or employee user-defined report:
+1.	Open a User Defined Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources)
+2.	Choose Applicant User Defined or Employee User Defined and choose Report Setup to open the User Defined Report Setup window for applicants or employees.
+3.	Select the Field Code lookup button to open the User Defined Field Lookup window for applicants or employees. Select a user-defined field to include on the report.
+4.	Choose the clear button by the field code to remove a user-defined field from the report and Save.
+5.	Choose Print to print the Applicant User Defined Test Report or the Employee User Defined Test Report.
+
+Adding a company extra fields record
+Use the Company Extra Fields window to create a company extra field record. You can track any additional information, like a company’s date of incorporation. 
+To add a company extra fields record:
+1.	Open the Company Extra Fields window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Company >> Company >> Extra Fields)
+2.	Enter information in the fields.  Choose OK.
+
+Adding a division extra fields record
+Use the Division Extra Fields window to create a division extra field record. You can track any additional information, like the number of days without injury for a division. 
+To add a division extra fields record:
+1.	Open the Division Extra Fields window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Division >> enter or select a division name >> Extra Fields)
+2.	Enter information in the fields. Choose OK.
+
+Adding a department extra fields record
+Use the Department Extra Fields window to create a department extra field record. You can track any additional information, like the location of a department’s Material Safety Data Sheets. 
+To add a department extra fields record:
+1.	Open the Department Extra Fields window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> 
+Organization >> Department >> enter or select a department code >> Extra Fields)
+2.	Enter information in the fields and Choose OK.
+
+Adding a position extra fields record
+Use the Position Extra Fields window to create a position extra field record. You can track any additional information, like a position’s total budget. 
+To add a position extra fields record:
+1.	Open the Position Extra Fields window.
+(Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Position >> enter or select a position code >> Extra Fields)
+2.	Enter information in the fields and choose OK.
 
 
 ## See also
