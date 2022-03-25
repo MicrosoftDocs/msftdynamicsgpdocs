@@ -1061,7 +1061,7 @@ Open the Stock Calendar Maintenance window.
 
 (Inventory \>\> Setup \>\> Stock Calendar)
 
-![14699085d48228ae2aa7849da57f610b.jpg](media/14699085d48228ae2aa7849da57f610b.jpg)
+![Screenshot that shows the Stock Calendar Maintenance window.](media/14699085d48228ae2aa7849da57f610b.jpg)
 
 The window opens with the current month and year displayed.
 
