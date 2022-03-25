@@ -2944,8 +2944,8 @@ Inventory Ripple: 	Qty: 75  	Avg Cost: $1.49  	Extended Cost: $111.75
 Because the Average Cost for that layer went up one penny, we have a $.75 difference that needs to be booked to the general ledger.  The $.75 difference will be automatically created as a journal transaction and posted to the General Ledger.  Because the outflow transaction that was revalued was a sales invoice, the following accounts would be updated. 
   
 Debit 	        Credit
-Cost of Goods   .75 
-Inventory        .75 
+Cost of Goods   $0.75 
+Inventory        $0.75 
  
 These accounts are taken from the default posting accounts on the posted transaction line items so it is imperative that the Inventory and Sales distributions are set up correctly.  For example, for each item, you should be using separate accounts for: 
  

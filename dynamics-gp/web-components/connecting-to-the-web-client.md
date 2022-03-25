@@ -37,7 +37,7 @@ To sign in to the web client, use the following procedure.
 
 2. Enter the URL of the Dynamics GP web client site. The default address of the site is:
 
-    [https://ServerName:PortNumber/GP](https://ServerName:PortNumber/GP)  
+    `https://ServerName:PortNumber/GP`
 
     **ServerName**   is the fully-qualified domain name (FQDN) for the server that is hosting the web site. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
 
