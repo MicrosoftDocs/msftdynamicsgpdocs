@@ -165,7 +165,7 @@ Use the View \>\> Currency menu option or the currency list button to view amoun
 
 2.  In the New group or its overflow menu, choose Standard Purchase Order to open the Purchase Order Entry window.
 
-![Screenshot that shows the Purchase Order Entry window.](media/POage033.jpg)
+![Screenshot of the Purchase Order Entry window.](media/POage033.jpg)
 
 3.  Enter a purchase order number or accept the default entry.
 
@@ -277,7 +277,7 @@ The Link Purchase Order icon will be displayed in the Quantity Ordered field for
 
 9.  Moving from the Vendor ID field opens the Enter Drop-Ship Customer window.
 
-![Screenshot that shows the Enter Drop-Ship Customer window.](media/POage035.jpg)
+![Screenshot of the Enter Drop-Ship Customer window.](media/POage035.jpg)
 
 In the Enter Drop-Ship Customer window, enter or select the customer ID and ship-to address ID where the vendor is shipping the items. Choose OK to return to the Purchase Order Entry window.
 
@@ -635,7 +635,7 @@ You can copy a purchase order if you are using Workflow. The new purchase order 
 
 3.  Enter or select a purchase order with a status of New, Released, or Change Order to copy. You can't create a new purchase order from a purchase order that has project information.
 
-![Screenshot that shows the Copy a Purchase Order window.](media/POage039.jpg)
+![Screenshot of the Copy a Purchase Order window.](media/POage039.jpg)
 
 4.  You can change the vendor, currency, and document date for the new order.
 
