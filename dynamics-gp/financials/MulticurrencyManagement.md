@@ -862,7 +862,7 @@ A credit document has a document date or posting date that is after the cutoff d
 
 The revaluation posting date is January 31, 2017. The cutoff date is February 1, 2017.
 
-| Credit document (Applied From Document on the exception report) |                       |
+| Credit document (Applied From Document on the exception report) |     Details           |
 |-----------------------------------------------------------------|-----------------------|
 | Document Type:                                                  | Payment               |
 | Document Date:                                                  | **February 5, 2017**  |
@@ -879,7 +879,7 @@ The credit document has a document date or posting date before the cutoff date. 
 
 The revaluation posting date is January 31, 2017. The cutoff date is February 1, 2017.
 
-| Credit document (Applied From Document on the exception report) |                      |
+| Credit document (Applied From Document on the exception report) |     Details          |
 |-----------------------------------------------------------------|----------------------|
 | Document Type:                                                  | Payment              |
 | Document Date:                                                  | January 31, 2017     |
@@ -897,7 +897,7 @@ The credit document and the debit document have document dates and posting dates
 
 The revaluation posting date is December 10, 2017. The cutoff date is December 10, 2017.
 
-| Credit document (Applied From Document on the exception report) |                       |
+| Credit document (Applied From Document on the exception report) |   Details             |
 |-----------------------------------------------------------------|-----------------------|
 | Document Type:                                                  | Payment               |
 | Document Date:                                                  | November 15, 2017     |
